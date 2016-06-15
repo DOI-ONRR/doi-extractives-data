@@ -36,6 +36,17 @@ header,
     @include outer-container($max-width);
   }
 }
+.logo_text {
+  display:inline;
+  font-size: 12px;
+  font-weight: bold;
+  float: left;
+  width: 100px;
+  line-height: 1;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: black;
+}
 
 .header-image_link {
   &:hover,
@@ -49,7 +60,7 @@ header,
   margin-top: $base-padding / 2;
   max-width: 280px;
   width: $eiti-logo-width;
-
+  float: left;
   @include respond-to(huge-plus-up) {
     width: 100%;
   }
@@ -57,7 +68,6 @@ header,
 
 .header-left {
   @include span-columns(6);
-
   @include respond-to(medium-up) {
     @include span-columns(3);
   }
@@ -104,7 +114,7 @@ header,
   @include heading('para-md');
   display: inline-block;
   float: right;
-
+  margin-top: 30px;
   @include respond-to(huge-plus-up) {
     padding-right: 0;
   }
@@ -112,9 +122,33 @@ header,
 
 .header-nav_top {
   margin-bottom: 0;
-
+  // margin-top: 30px
   @include respond-to(huge-plus-up) {
     margin-bottom: 1em;
+  }
+}
+nav {
+  margin-top: 20px;
+  ul{
+      width: 100%;
+      background-color: #0492d2;
+      padding: 10px;
+      color: #FFF;
+      text-shadow: none;
+      li {
+       display: inline-block;
+       padding-left: 20px;
+       padding-right: 20px;
+       -webkit-font-smoothing: antialiased;
+       border-right: 1px solid white;
+      }
+      a {
+        padding: 15px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal;
+        text-decoration: none;
+      }
   }
 }
 

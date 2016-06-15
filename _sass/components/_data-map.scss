@@ -9,3 +9,30 @@ data-map {
     }
   }
 }
+
+$legend-row-height: 1em;
+
+.legend-swatch {
+	display: inline-block;
+  float: left;
+  height: $legend-row-height;
+  margin-right: $base-padding-lite;
+  width: $legend-row-height;
+}
+
+.legend-swatch-thresholds {
+
+}
+
+[threshold-start] {
+  display: inline-block;
+  float: left;
+  line-height: $legend-row-height;
+}
+
+[threshold-end] {
+  clear: both;
+  float: left;
+  padding-left: $legend-row-height + $base-padding-lite;
+  padding-bottom: $base-padding-lite;
+}

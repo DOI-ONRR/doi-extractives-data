@@ -68,9 +68,21 @@
           marks.attr('fill', scale);
 
 
+<<<<<<< 459c209440dce3833f2d31cc5ed36c539e3d7395
           // var quantize = d3.scale.quantize()
           //   .domain(domain)
           //   .range(d3.range(steps).map(function(i) { return "q" + i + "-" + steps; }));
+=======
+          d3.select(this).selectAll('[threshold-start]')
+            .text(function (d) {
+              console.log(d)
+              return format.commaSeparatedDollars(textScaleStart(d)) + ' –';
+            });
+          d3.select(this).selectAll('[threshold-end]')
+            .text(function (d) {
+              return format.commaSeparatedDollars(textScaleEnd(d));
+            });
+>>>>>>> hide NaN values, align swatches
 
           // var svgLegend = d3.select("svg");
 

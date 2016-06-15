@@ -1,7 +1,19 @@
+{% assign _inherit_width = include.inherit_width %}
 {% assign _width = include.width | default: 100 %}
-{% assign _viewbox = include.viewbox | default: site.data.viewboxes[include.state] %}
+{% assign steps = include.steps | default: 9 %}
+{% assign caption = include.caption %}
+{% assign toggle = include.toggle %}
+
+{% if _inherit_width %}
+  {% assign __width = '' %}
+{% else %}
+  {% capture __width %}
+    {{_width}}%
+  {% endcapture %}
+{% endif %}
+
 <div class="svg-container county map-container"{% if _viewbox %}
-  style="width: {{ _width }}%; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
+  style="width: {{ __width }}; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
@@ -43,15 +55,26 @@
     </g>
   </svg>
 
+  {% if include.toggle %}
+    <h4>
+      <button is="aria-toggle"
+        aria-controls="{{ include.toggle }}">&plus; Details</button>
+    </h4>
+  {% endif %}
+
 </div>
 
- <dl>
-    {% for step in (1...include.steps) %}
-      <dt class="legend-swatch" style="display: inline-block;
-      height: 0.7em;
-      margin-right: 0.41667em;
-      width: 0.7em;
-      background-color: red"></dt>
-      <dd>Swatch {{step}}</dd>
-    {% endfor %}
-  </dl>
+ <dl class="legend-container">
+  {% if include.caption %}
+    <figcaption>
+      {{ include.caption }}
+    </figcaption>
+  {% endif %}
+  {% for step in (1...steps) %}
+    <div class="container">
+      <dt data-step="{{step | threshold:steps}}" class="legend-swatch"></dt>
+      <dd step-threshold="{{step | threshold:steps}}" threshold-start class="legend-swatch-thresholds"></dd>
+      <dd step-threshold="{{step | threshold:steps}}" threshold-end class="legend-swatch-thresholds"></dd>
+    </div>
+  {% endfor %}
+</dl>

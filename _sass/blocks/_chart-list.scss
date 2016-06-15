@@ -44,6 +44,22 @@
     > :nth-child(3) {
       @include omega();
     }
+
+    > .map-container {
+      @include span-columns(8);
+      @include omega();
+
+      .svg-container {
+        @include span-columns(8);
+      }
+
+      .legend-container {
+        @include span-columns(4);
+        @include omega();
+      }
+    }
+
+
   }
 
   &.has-intro {

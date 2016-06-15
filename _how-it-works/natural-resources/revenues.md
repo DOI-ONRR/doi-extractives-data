@@ -47,10 +47,10 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 Corporations operating in the extractive industries pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:
 
 
-* C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS</li>
-* S-corporations with 100 shareholders or less who own the company; shareholders pay personal income taxes to the IRS</li>
-* Partnerships where two or more members own the business; members individually pay income taxes to the IRS</li>
-* Sole proprietorships with one individual owner; the individual owner pays personal income tax to the IRS</li>
+* C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS
+* S-corporations with 100 shareholders or less who own the company; shareholders pay personal income taxes to the IRS
+* Partnerships where two or more members own the business; members individually pay income taxes to the IRS
+* Sole proprietorships with one individual owner; the individual owner pays personal income tax to the IRS
 
 Only income taxes from C-corporations are included in the 2015 USEITI Report.
 
@@ -77,7 +77,7 @@ The Treasury estimates the total dollar amount of each tax expenditure in a give
 
 * **Fossil fuels:** For FY 2013, expensing of exploration and development costs for fuels, totaling $550 million, was the largest of five expenditures. See analysis and estimates of [fossil fuel tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#fossil-fuels)
 * **Renewable energy:** For FY 2013, the energy investment credit, totaling $2 billion, was the largest of four expenditures. The energy production credit was the second largest, totaling $1.7 billion. See analysis and estimates of [renewable energy tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#renewables)
-* **Nonenergy materials:** For FY 2013, the excess of percentage-over-cost depletion for nonenergy minerals, totaling $580 million, was the largest of two expenditures. See analysis and estimates of <a href="{{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#nonenergy">nonenergy mineral tax expenditures.</a><
+* **Nonenergy materials:** For FY 2013, the excess of percentage-over-cost depletion for nonenergy minerals, totaling $580 million, was the largest of two expenditures. See analysis and estimates of <a href="{{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#nonenergy">nonenergy mineral tax expenditures.</a>
 
 
 The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in [United States – Progress Report on Fossil Fuel Subsidies](https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf). When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, [Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government](https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf). The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.

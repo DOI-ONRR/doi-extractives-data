@@ -1,3 +1,7 @@
+$opacity-federal: 0.5;
+$opacity-state: 0.25;
+$legend-row-height: 1em;
+
 // scss-lint:disable QualifyingElement
 svg.map {
   background: none;
@@ -73,11 +77,11 @@ svg.map {
   // To make land ownership more green!
   &.ownership {
     .ownership {
-      opacity: 0.25;
+      opacity: $opacity-state;
     }
 
     .federal.ownership {
-      opacity: 0.5;
+      opacity: $opacity-federal;
     }
 
     .counties.features {
@@ -105,22 +109,32 @@ svg.map {
     }
   }
 
+  figure {
+    margin-top: 0;
+  }
+
   .legend-swatch {
-    height: $base-padding;
-    width: $base-padding;
     background-color: $green-land;
+    height: $legend-row-height;
+    margin-bottom: $base-padding-lite;
     position: relative;
+    width: $legend-row-height;
+  }
+
+  .legend-text {
+    line-height: $legend-row-height;
   }
 
   .swatch-layer {
-    position: absolute;
-    height: $base-padding;
-    width: $base-padding;
+    // layer black to emulate svg layers
     background-color: $blackest-black;
-    opacity: .5;
+    height: $legend-row-height;
+    opacity: $opacity-federal;
+    position: absolute;
+    width: $legend-row-height;
 
     &.state {
-      opacity: .25;
+      opacity: $opacity-state;
     }
   }
 }

@@ -85,3 +85,42 @@ svg.map {
     }
   }
 }
+
+// Land ownership map
+#ownership {
+  > .text-container {
+    @include span-columns(4);
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    > * {
+      @include span-columns(6);
+
+      &:last-child {
+        @include omega();
+      }
+    }
+  }
+
+  .legend-swatch {
+    height: $base-padding;
+    width: $base-padding;
+    background-color: $green-land;
+    position: relative;
+  }
+
+  .swatch-layer {
+    position: absolute;
+    height: $base-padding;
+    width: $base-padding;
+    background-color: $blackest-black;
+    opacity: .5;
+
+    &.state {
+      opacity: .25;
+    }
+  }
+}

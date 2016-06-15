@@ -39,6 +39,10 @@
 
     > * {
       @include span-columns(4);
+
+      &[aria-hidden=true] {
+        display: none;
+      }
     }
 
     > :nth-child(3) {
@@ -94,5 +98,17 @@
     > :last-child {
       text-align: right;
     }
+  }
+}
+
+#revenue,
+#employment {
+  .svg-container {
+    @include span-columns(6);
+  }
+
+  .legend-container {
+    @include span-columns(6);
+    @include omega();
   }
 }

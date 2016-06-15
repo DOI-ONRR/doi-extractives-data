@@ -22,21 +22,25 @@
 
   <aside class="container-half county-map-table">
 
-    <figure>
-      <data-map color-scheme="Blues" steps="{{steps}}">
+  <section class="county-map-table">
+    <figure class="container">
+      <data-map color-scheme="Blues" steps="{{ steps }}">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
+        {% capture caption %}County extractives revenue (dollars, {{ year }}){% endcapture %}
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
+
         {%
           include county-map.html
           state=state_id
           counties=county_revenue
           value=value_key
           steps=steps
+          inherit_width=true
+          caption=caption
         %}
       </data-map>
-      <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
     </figure>
-  </aside>
+  </section>
 
   <section>
     <div>

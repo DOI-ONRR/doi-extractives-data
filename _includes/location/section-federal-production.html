@@ -71,12 +71,13 @@
 
           {% if volume %}
             <div class="map-container">
+              {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
               <figure>
                 {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
                 {% assign _width ='inherit' %}
                 {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
-                {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
-                <data-map color-scheme="Blues" steps="{{steps}}">
+
+                <data-map color-scheme="Blues" steps="{{ steps }}">
                   {% assign federal_county_production = site.data.federal_county_production[state_id] %}
 
                   {%
@@ -94,7 +95,7 @@
               </figure>
 
 
-              <div id="federal-production-{{ product_slug }}-counties" aria-hidden="true">
+              <div id="{{ toggle }}" aria-hidden="true">
                 {%
                   include location/display-production.html
                   units=units

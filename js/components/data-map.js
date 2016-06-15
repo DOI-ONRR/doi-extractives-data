@@ -65,7 +65,17 @@
 
           // console.log('scale  :',scale)
 
+<<<<<<< d0f4f2f84a4168c2bf8257b3aaef65c0dea59db6
           marks.attr('fill', scale);
+=======
+          var swatches = d3.select(this)
+            .selectAll('dl [data-step]')
+            .datum(function() {
+              return +this.getAttribute('data-step') * domain[1] || 0;
+            });
+
+          swatches.style('background-color', scale);
+>>>>>>> clean up padding hack with js
 
 
 <<<<<<< 459c209440dce3833f2d31cc5ed36c539e3d7395
@@ -75,7 +85,6 @@
 =======
           d3.select(this).selectAll('[threshold-start]')
             .text(function (d) {
-              console.log(d)
               return format.commaSeparatedDollars(textScaleStart(d)) + ' –';
             });
           d3.select(this).selectAll('[threshold-end]')
@@ -84,6 +93,7 @@
             });
 >>>>>>> hide NaN values, align swatches
 
+<<<<<<< d0f4f2f84a4168c2bf8257b3aaef65c0dea59db6
           // var svgLegend = d3.select("svg");
 
           // svgLegend.append("g")
@@ -94,6 +104,22 @@
           //   .labelFormat(d3.format(".2f"))
           //   .useClass(true)
           //   .scale(quantize);
+=======
+          var container = d3.select(this)
+            .selectAll('.svg-container[data-dimensions]')
+            .datum(function() {
+              return (this.getBoundingClientRect().width
+                * +this.getAttribute('data-dimensions')
+                / 100)
+                + 50;
+            });
+
+          function pixelize(d) {
+            return d + 'px';
+          }
+
+          container.style('padding-bottom', pixelize)
+>>>>>>> clean up padding hack with js
 
           // svg:egend.select(".legendQuant")
           //   .call(legend);

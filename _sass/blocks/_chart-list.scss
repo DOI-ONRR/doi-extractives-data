@@ -49,6 +49,8 @@
       @include span-columns(8);
       @include omega();
 
+      position: relative;
+
       .svg-container {
         @include span-columns(8);
       }

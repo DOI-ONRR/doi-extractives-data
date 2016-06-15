@@ -10,6 +10,13 @@ data-map {
   }
 }
 
+.details-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
 $legend-row-height: 1em;
 
 .legend-swatch {
@@ -18,10 +25,6 @@ $legend-row-height: 1em;
   height: $legend-row-height;
   margin-right: $base-padding-lite;
   width: $legend-row-height;
-}
-
-.legend-swatch-thresholds {
-
 }
 
 [threshold-start] {

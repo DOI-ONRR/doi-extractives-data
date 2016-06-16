@@ -40,7 +40,7 @@ $z-negative: -1;
 
 // v3
 $white: #ffffff;
-$blackest-black: black;
+$blackest-black: #000000;
 $black: #040404;
 $green: #9fa63b;
 $blue: #157bac;
@@ -120,3 +120,9 @@ $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-radius: $base-border-radius;
 $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
+
+// Map legend
+$opacity-federal: 0.5;
+$opacity-state: 0.25;
+$legend-row-height: 1em;
+

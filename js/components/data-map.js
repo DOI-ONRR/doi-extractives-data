@@ -1,27 +1,14 @@
 (function(exports) {
 
+  require('d3-svg-legend');
+
+  var eiti = require('./../eiti');
+  var format = eiti.format;
+
   exports.EITIDataMap = document.registerElement('data-map', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
-        createdCallback: function() {
-          var svg = d3.select(this).append('svg');
-
-          var legend = d3.select(this).append('svg')
-          // for (step in steps.length) {
-          var swatch = legend.append('rect')
-
-          swatch.attr('class', 'swatch')
-            .attr('height', 10)
-            .attr('width', 10)
-            .attr('fill', '#ccc');
-          // }
-
-
-          this.values = this.getAttribute('values') || [];
-          this.dot = this.getAttribute('dot');
-          this.line = this.getAttribute('line');
-        },
         attachedCallback: {value: function() {
           this.update();
         }},
@@ -63,90 +50,91 @@
             .domain(domain)
             .range(colors);
 
-
-          // console.log('scale  :',scale)
-
-
-
-          var intervals = createIntervals(steps);
-          var _steps = createSteps(steps);
-          console.log(intervals)
-
-          var uniqueSteps = getUnique(marks.data(), _steps, domain)
-          var domains = createDomains(intervals, domain);
-
-          var textScaleStart = d3.scale[type]()
+          var scaleSteps = d3.scale[type]()
             .domain(stepDomain)
-            .range(domains[0]);
+            .range(colors);
 
-          var textScaleEnd = d3.scale[type]()
-            .domain(stepDomain)
-            .range(domains[1]);
+          marks.attr('fill', scale);
 
-          var swatches = d3.select(this)
-            .selectAll('dl [data-step]')
-            .datum(function() {
-              return +this.getAttribute('data-step') || 1;
+
+          // start map legend
+          function uniq(value, index, self) {
+            return self.indexOf(value) === index;
+          }
+
+          function getUnique(data, steps, domain) {
+            var getSteps = d3.scale[type]()
+              .domain(domain)
+              .range(steps);
+
+            var values = [];
+            data.forEach(function(d){
+              values.push(getSteps(d));
             });
 
-          swatches.style('background-color', scaleSteps);
+            return values.filter(uniq);
+          }
 
-          format.start = function(value, units) {
-            if (units === '$' || units.includes('dollar')) {
-              return [format.dollars(value), ' –'].join(' ');
-            } else {
-              return [format.si(value), ' –'].join(' ');
+          var legend = d3.select(this)
+            .select(".legend-svg");
+
+          legend.append("g")
+            .attr("class", "legendScale");
+
+          var legendColor = d3.legend.color()
+            .labelFormat(format.si)
+            .useClass(false)
+            .ascending(true)
+            .labelDelimiter('-')
+            .shapePadding(6)
+            .scale(scale);
+
+          legend.select(".legendScale")
+            .call(legendColor);
+
+          // reverse because the scale is in ascending order
+          var _steps = d3.range(0,9).reverse();
+
+          // find which steps are represented in the map
+          var uniqueSteps = getUnique(marks.data(), _steps, domain);
+
+          // start consolidate (translate) visible cells
+          var cells = legend.selectAll('.cell')
+          var cellHeight = legendColor.shapeHeight() +
+            legendColor.shapePadding();
+          var count = 0;
+          cells.each(function(cell, i){
+            var present = uniqueSteps.indexOf(i) > -1;
+
+            if (!present) {
+              // hide cells swatches that aren't in the map
+              cells[0][i].setAttribute('aria-hidden', true);
+              count++
+            } else  {
+              // trim spacing between swatches that are visible
+              var translateHeight = (i * cellHeight) - (count * cellHeight)
+              cells[0][i].setAttribute('transform', 'translate(0,' + translateHeight + ')');
             }
-          }
+          });
+          // end consolidation
+          // end map legend
 
-          format.end = function(value, units) {
-            if (units === '$' || units.includes('dollar')) {
-              return format.si(value);
-            } else if (units.includes('kilowatt')) {
-              return [format.si(value), 'kWh'].join(' ');
-            } else if(units.includes('thousands of pounds')) {
-              return [format.si(value), 'thousands of pounds'].join(' ');
-            } else if(units.includes('millions of btus')) {
-              return [format.si(value), 'millions of btus'].join(' ');
-            } else {
-              return [format.si(value), units].join(' ');
-            }
-          }
+           // start trim height on map container
+           var svgContainer = d3.select(this)
+             .selectAll('.svg-container[data-dimensions]')
+             .datum(function() {
+               return (this.getBoundingClientRect().width
+                 * +this.getAttribute('data-dimensions')
+                 / 100)
+                 + 50;
+             });
 
-          d3.select(this)
-              .selectAll('dl [legend-threshold]')
-              .datum(function() {
-                return +this.getAttribute('legend-threshold') || 1;
-              });
+           function pixelize(d) {
+             return d + 'px';
+           }
 
-          d3.select(this).selectAll('[legend-start]')
-            .text(function (d) {
-              return format.start(textScaleStart(d), units);
-            });
-          d3.select(this).selectAll('[legend-end]')
-            .text(function (d) {
-              return format.end(textScaleEnd(d), units);
-            });
-
-          // only show swatches that show up in map
-          filterSteps(uniqueSteps, this);
-
-          // trim height on map container
-          var svgContainer = d3.select(this)
-            .selectAll('.svg-container[data-dimensions]')
-            .datum(function() {
-              return (this.getBoundingClientRect().width
-                * +this.getAttribute('data-dimensions')
-                / 100)
-                + 50;
-            });
-
-          function pixelize(d) {
-            return d + 'px';
-          }
-
-          svgContainer.style('padding-bottom', pixelize);
-
+           svgContainer.style('padding-bottom', pixelize);
+           // end trim
         }}
       }
     )

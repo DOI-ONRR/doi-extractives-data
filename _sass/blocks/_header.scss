@@ -135,12 +135,18 @@ nav {
       padding: 10px;
       color: #FFF;
       text-shadow: none;
+      height: 58px;
+      padding-top: 17px;
       li {
        display: inline-block;
        padding-left: 20px;
        padding-right: 20px;
        -webkit-font-smoothing: antialiased;
        border-right: 1px solid white;
+       padding-bottom: 0px;
+       &:last-child {
+         border-right: none;
+       }
       }
       a {
         padding: 15px;

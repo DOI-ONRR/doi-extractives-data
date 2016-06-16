@@ -30,6 +30,7 @@
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
+          var units = this.getAttribute('units') || '';
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {

@@ -24,7 +24,7 @@
 
     <aside class="map-container">
       <figure>
-        <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+        <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}" tester="revenue">
           {% assign county_revenue = site.data.county_revenue[state_id] %}
           {% capture caption %}County extractives revenue (dollars, {{ year }}){% endcapture %}
           {% capture value_key %}revenue.{{ year }}{% endcapture %}

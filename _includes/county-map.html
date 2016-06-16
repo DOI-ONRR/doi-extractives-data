@@ -74,9 +74,9 @@
   {% endif %}
   {% for step in (1...steps) %}
     <div class="container">
-      <dt legend-swatch data-step="{{step | threshold:steps}}"></dt>
-      <dd legend-swatch legend-threshold="{{step | threshold:steps}}" legend-start></dd>
-      <dd legend-swatch legend-threshold="{{step | threshold:steps}}" legend-end></dd>
+      <dt legend-swatch data-step="{{ step }}"></dt>
+      <dd legend-swatch legend-threshold="{{ step }}" legend-start></dd>
+      <dd legend-swatch legend-threshold="{{ step }}" legend-end></dd>
     </div>
   {% endfor %}
 </dl>

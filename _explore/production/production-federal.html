@@ -109,16 +109,9 @@ permalink: /explore/federal-production/
         <section id="US" class="region active">
           <div class="map-wrapper">
             <eiti-map id="US-map" class="region-map" simplify="1e-2"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <svg class="region-map" viewBox="20 55 945 535">
-                <g class="offshore areas" data-url="offshore-regions.json"
-                  data-object="regions"
-                  data-id="'US-' + id"
-                  data-href="'#?region=' + id"
-                  data-title="properties.name"
-                  data-mesh="true">
-                </g>
-                <g class="onshore states" data-url="us-topology.json"
+              projection="mercator" data-path="{{ site.baseurl }}/data/geo/">
+              <svg class="region-map" viewBox="500 77 30 33">
+                <g class="onshore states" data-url="de-topology.json"
                   data-object="states"
                   data-id="'US-' + id"
                   data-href="'#?region=' + id"
@@ -223,4 +216,3 @@ permalink: /explore/federal-production/
 </script>
 
 <script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>
-

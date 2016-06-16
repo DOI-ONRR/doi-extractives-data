@@ -19,7 +19,8 @@ data-map {
 
 $legend-row-height: 1em;
 
-[legend-swatch][data-step] {
+[legend-swatch][data-step],
+.legend-swatch {
 	display: inline-block;
   float: left;
   height: $legend-row-height;

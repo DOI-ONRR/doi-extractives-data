@@ -11,71 +11,72 @@
 
   <h3 id="federal-revenue">Revenue from federal land</h3>
 
-  <section class="container-half">
+  <section class="row-container">
+    <section class="text-container">
 
-    <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land.</p>
+      <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land.</p>
 
-    <p>Laws and policies govern how rights are awarded to companies and what fees they pay to the government in order to extract natural resources on federal land. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
+      <p>Laws and policies govern how rights are awarded to companies and what fees they pay to the government in order to extract natural resources on federal land. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
 
-    <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+      <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+    </section>
+
+    <aside class="map-container">
+      <figure>
+        <data-map color-scheme="Blues" steps="{{ steps }}">
+          {% assign county_revenue = site.data.county_revenue[state_id] %}
+          {% capture caption %}County extractives revenue (dollars, {{ year }}){% endcapture %}
+          {% capture value_key %}revenue.{{ year }}{% endcapture %}
+
+          {%
+            include county-map.html
+            state=state_id
+            counties=county_revenue
+            value=value_key
+            steps=steps
+            inherit_width=true
+            caption=caption
+          %}
+        </data-map>
+      </figure>
+    </aside>
   </section>
 
-  <aside class="container-half county-map-table">
-
-  <section class="county-map-table">
-    <figure class="container">
-      <data-map color-scheme="Blues" steps="{{ steps }}">
-        {% assign county_revenue = site.data.county_revenue[state_id] %}
-        {% capture caption %}County extractives revenue (dollars, {{ year }}){% endcapture %}
-        {% capture value_key %}revenue.{{ year }}{% endcapture %}
-
-        {%
-          include county-map.html
-          state=state_id
-          counties=county_revenue
-          value=value_key
-          steps=steps
-          inherit_width=true
-          caption=caption
-        %}
-      </data-map>
-    </figure>
-  </section>
-
-  <section>
+  <section class="container-outer">
     <div>
       <p>The federal government collects different fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
 
       <!-- <p><strong>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</strong></p> -->
     </div>
+
+    <div id="fee-summaries" class="tab-interface">
+      <ul class="eiti-tabs info-tabs" role="tablist">
+        <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
+        <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
+      </ul>
+
+      <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+        {%
+          include location/revenue-type-table.html
+          id='revenue-types'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+
+      <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+        {%
+          include location/revenue-process-table.html
+          id='revenue-process'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+    </div>
   </section>
 
-  <div id="fee-summaries" class="tab-interface">
-    <ul class="eiti-tabs info-tabs" role="tablist">
-      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
-      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
-    </ul>
-
-    <article class="eiti-tab-panel" id="revenues" role="tabpanel">
-      {%
-        include location/revenue-type-table.html
-        id='revenue-types'
-        location_id=state_id
-        location_name=state_name
-        year=year
-      %}
-    </article>
-
-    <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
-      {%
-        include location/revenue-process-table.html
-        id='revenue-process'
-        location_id=state_id
-        location_name=state_name
-        year=year
-      %}
-    </article>
-  </div>
   <p><em>* Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</em></p>
 
   <section id="commodities-revenue" class="chart-list has-intro">
@@ -129,8 +130,7 @@
       </div>
 
     </section>
-    {% endfor %}
-  </section>
+  {% endfor %}
 
 </section>
 

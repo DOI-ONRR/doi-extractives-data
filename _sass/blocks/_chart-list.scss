@@ -34,40 +34,6 @@
     @include omega();
   }
 
-  .row-container {
-    @include outer-container();
-
-    > * {
-      @include span-columns(4);
-
-      &[aria-hidden=true] {
-        display: none;
-      }
-    }
-
-    > :nth-child(3) {
-      @include omega();
-    }
-
-    > .map-container {
-      @include span-columns(8);
-      @include omega();
-
-      position: relative;
-
-      .svg-container {
-        @include span-columns(8);
-      }
-
-      .legend-container {
-        @include span-columns(4);
-        @include omega();
-      }
-    }
-
-
-  }
-
   &.has-intro {
     .chart-item:first-of-type,
     .chart-item:nth-of-type(3n + 1) {
@@ -97,6 +63,38 @@
 
     > :last-child {
       text-align: right;
+    }
+  }
+}
+
+.row-container {
+  @include outer-container();
+
+  > * {
+    @include span-columns(4);
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+  }
+
+  > :nth-child(3) {
+    @include omega();
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    position: relative;
+
+    .svg-container {
+      @include span-columns(8);
+    }
+
+    .legend-container {
+      @include span-columns(4);
+      @include omega();
     }
   }
 }

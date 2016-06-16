@@ -19,7 +19,7 @@ data-map {
 
 $legend-row-height: 1em;
 
-.legend-swatch {
+[legend-swatch][data-step] {
 	display: inline-block;
   float: left;
   height: $legend-row-height;
@@ -27,15 +27,21 @@ $legend-row-height: 1em;
   width: $legend-row-height;
 }
 
-[threshold-start] {
+[legend-swatch] {
+  &[aria-hidden=true] {
+    display: none;
+  }
+}
+
+[legend-start],
+[legend-end]
+ {
   display: inline-block;
   float: left;
   line-height: $legend-row-height;
+  padding-bottom: $base-padding-lite;
 }
 
-[threshold-end] {
-  clear: both;
-  float: left;
-  padding-left: $legend-row-height + $base-padding-lite;
-  padding-bottom: $base-padding-lite;
+[legend-end] {
+  padding-left: 0.1em;
 }

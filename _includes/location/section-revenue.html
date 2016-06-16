@@ -1,5 +1,6 @@
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign units = '$' %}
 
 {% capture year_range %}[2006, 2015]{% endcapture %}
 
@@ -23,7 +24,7 @@
 
     <aside class="map-container">
       <figure>
-        <data-map color-scheme="Blues" steps="{{ steps }}">
+        <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
           {% assign county_revenue = site.data.county_revenue[state_id] %}
           {% capture caption %}County extractives revenue (dollars, {{ year }}){% endcapture %}
           {% capture value_key %}revenue.{{ year }}{% endcapture %}

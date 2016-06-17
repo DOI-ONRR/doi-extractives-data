@@ -36,7 +36,7 @@
       <p>
         {% if volume %}{{ volume | intcomma }} {{ units }} of
         {% else %}No{% endif %}
-        {{ product[0] | downcase }} was extracted in {{ state_name }} in {{ year }}.
+        {{ product_name | downcase }} was extracted in {{ state_name }} in {{ year }}.
       </p>
       <h4>
         <button is="aria-toggle"

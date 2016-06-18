@@ -6,6 +6,7 @@
 
   <div class="chart-list has-intro">
 
+  {% if export_commodities %}
     <div class="chart-list-intro">
       <p>{{ exports_summary | strip_html }}</p>
     </div>
@@ -43,10 +44,12 @@
           percent=false
         %}
       </div>
-
     </section><!-- /.chart-item -->
     {% endfor %}
-
+  {% else %}
+    <p>In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.</p>
+  {% endif %}
   </div><!-- /.chart-list -->
 
+  <p><a href="{{ site.baseurl }}/downloads/#exports">Exports data comes from the U.S. Census Bureau</a>.</p>
 </section>

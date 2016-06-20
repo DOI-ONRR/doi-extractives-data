@@ -14,37 +14,41 @@
     {% for commodity in export_commodities %}
       {% assign exports = commodity[1] %}
       {% assign commodity_slug = commodity[0] | slugify %}
-    <section id="exports-{{ commodity_slug }}" class="chart-item">
 
-      <h3 class="chart-title">{{ commodity[0] }}</h3>
+      {% if commodity[0] != "Total" and commodity[0] != "All" %}
+        <section id="exports-{{ commodity_slug }}" class="chart-item">
 
-      <figure class="chart chart-{{ _metric }}">
-        <eiti-line-chart
-          data='{% include location/line-chart-data.json values=exports key="dollars" %}'
-          data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">
-            ${{ exports[year].dollars | intcomma }}
-          </span>
-        </figcaption>
-      </figure>
+          <h3 class="chart-title">{{ commodity[0] }}</h3>
 
-      <h4>
-        <button is="aria-toggle" aria-controls="exports-detail-{{ commodity_slug }}">
-          &plus; Details
-        </button>
-      </h4>
-      <div id="exports-detail-{{ commodity_slug }}" aria-hidden="true">
-        {%
-          include location/display-exports.html
-          values=exports
-          percent=false
-        %}
-      </div>
-    </section><!-- /.chart-item -->
+          <figure class="chart chart-{{ _metric }}">
+            <eiti-line-chart
+              data='{% include location/line-chart-data.json values=exports key="dollars" %}'
+              data-x-range="{{ year_range }}"
+              selected="{{ year }}">
+            </eiti-line-chart>
+            <figcaption>
+              <span class="eiti-line-chart-x-value">{{ year }}</span>
+              <span class="eiti-line-chart-y-value">
+                ${{ exports[year].dollars | intcomma }}
+              </span>
+            </figcaption>
+          </figure>
+
+          <h4>
+            <button is="aria-toggle" aria-controls="exports-detail-{{ commodity_slug }}">
+              &plus; Details
+            </button>
+          </h4>
+          <div id="exports-detail-{{ commodity_slug }}" aria-hidden="true">
+            {%
+              include location/display-exports.html
+              values=exports
+              percent=false
+            %}
+          </div>
+
+        </section><!-- /.chart-item -->
+      {% endif %}
     {% endfor %}
   {% else %}
     <p>In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.</p>

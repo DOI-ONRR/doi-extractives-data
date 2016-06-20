@@ -13,6 +13,14 @@
       {% else %}
         <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
       {% endif %}
+
+      {% if item.subnav_items %}
+        <ul>
+          {% for subnav_item in item.subnav_items %}
+            <a href="#{{subnav_item.name}}" class="sticky_nav-nav_item" data-nav-item="{{subnav_item.name}}">{{subnav_item.title}}</a>
+          {% endfor %}
+        </ul>
+      {% endif %}
     {% endfor %}
   {% endif %}
 </ul>

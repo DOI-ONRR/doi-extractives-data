@@ -106,7 +106,8 @@
         // initialize nav status as not updated
         var updated = false;
 
-         Array.prototype.forEach.call(this.navHeaders, function(header){
+         Array.prototype.forEach.call(this.navItems, function(header){
+          console.log(header)
            var inViewPort = isElementInViewport(header);
            if (inViewPort && !self.navIsSelect && !updated) {
               var newName = header.name || header.id;

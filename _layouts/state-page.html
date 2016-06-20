@@ -7,8 +7,18 @@ nav_items:
     title: Land Ownership
   - name: revenue
     title: Revenue
-  - name: all-production
+    subnav_items:
+      - name: revenue-commodities
+        title: Revenue commodities
+  - name: production
     title: Production
+    subnav_items:
+      - name: all-production
+        title: All lands production
+      - name: state-local-production
+        title: State local production
+      - name: private-land-production
+        title: Private land production
   - name: employment
     title: Employment
   - name: gdp
@@ -43,12 +53,13 @@ nav_items:
     {% include location/section-revenue.html %}
 
     <!-- {% include location/section-process.html %} -->
+    <section id="production">
+      {% include location/section-all-production.html %}
 
-    {% include location/section-all-production.html %}
+      {% include location/section-federal-production.html %}
 
-    {% include location/section-federal-production.html %}
-
-    {% include location/section-state-production.html %}
+      {% include location/section-state-production.html %}
+    </section>
 
     {% include location/section-jobs.html %}
 

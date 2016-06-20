@@ -7,7 +7,7 @@
     <p>{{ include.location_name }} leads the nation in production of these resources:</p>
       <ul>
       {% for product in top_all_products %}
-        {% if product.rank < 3 %}
+        {% if product.rank < 2 %}
           <li><a href="#all-production-{{ product.product | slugify }}">{{ product.name }}</a>: {{ product.percent | floor }} percent of U.S. production</li>
         {% endif %}
       {% if forloop.index == include.top %}{% break %}{% endif %}

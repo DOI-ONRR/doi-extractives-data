@@ -7,14 +7,7 @@
           || document.body).scrollTop;
     }
 
-    function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
 
-      return rect.bottom > 0 &&
-          rect.right > 0 &&
-          rect.left < (window.innerWidth || document. documentElement.clientWidth) &&
-          rect.top < (window.innerHeight || document. documentElement.clientHeight);
-    }
 
     exports.OpenListNav = function() {
       // init OpenListNav Properties
@@ -23,6 +16,9 @@
       this.navSelect = $('[data-nav-options]');
       this.navIsSelect = !!this.navSelect.length;
       this.navHeaders = document.querySelectorAll('[data-nav-header]');
+      // initialize at maximum value
+      this.defaultMid = (window.innerHeight || document.documentElement.clientHeight) / 2;
+      this.closestToMid = this.defaultMid;
       this.scrollTop = {
         current: getScrollTop(),
         prev: getScrollTop(),
@@ -39,6 +35,37 @@
         this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
           ? 'down'
           : 'up';
+      },
+
+      isActiveElement: function(el) {
+        var rect = el.getBoundingClientRect();
+
+
+
+        var elementInViewport = rect.bottom > 0 &&
+            rect.right > 0 &&
+            rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.top < (window.innerHeight || document.documentElement.clientHeight);
+
+        if (elementInViewport) {
+          console.log(el.id, rect)
+          console.log('mid', this.closestToMid)
+          console.log('top', Math.abs(rect.top))
+        }
+
+        if (elementInViewport && (Math.abs(rect.top) < this.closestToMid)) {
+          this.closestToMid = Math.abs(rect.top);
+          console.log('chosen----------')
+          // console.log(this.closestToMid)
+          return true;
+        } else {
+          return false;
+        }
+
+      },
+
+      resetMid: function(){
+        this.closestToMid = this.defaultMid;
       },
 
       removeActive: function(){
@@ -60,6 +87,7 @@
       },
 
       update: function(el, name){
+        this.resetMid();
         this.removeActive();
         this.addActive(el, name);
       },
@@ -106,18 +134,21 @@
         // initialize nav status as not updated
         var updated = false;
 
-         Array.prototype.forEach.call(this.navItems, function(header){
-          console.log(header)
-           var inViewPort = isElementInViewport(header);
-           if (inViewPort && !self.navIsSelect && !updated) {
+        Array.prototype.forEach.call(this.navItems, function(item){
+          var header = document.getElementById(item.dataset.navItem);
+
+          var isActiveElement = self.isActiveElement(header);
+
+          if (isActiveElement && !self.navIsSelect && !updated) {
               var newName = header.name || header.id;
               self.update(null, newName);
-              updated = true;
-           } else if(inViewPort && self.navIsSelect && !updated) {
-             var newName = header.name || header.id;
+              // updated = true;
+
+          } else if (isActiveElement && self.navIsSelect && !updated) {
+            var newName = header.name || header.id;
             self.updateSelectField(newName);
-             updated = true;
-           }
+            updated = true;
+          }
         });
       }
     };

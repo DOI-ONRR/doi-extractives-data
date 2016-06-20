@@ -1,6 +1,11 @@
 
 // Land ownership map
-#ownership {
+.land-ownership {
+
+  figure {
+    margin-top: 0;
+  }
+
   > .text-container {
     @include span-columns(4);
   }
@@ -16,13 +21,6 @@
         @include omega();
       }
     }
-  }
-}
-
-#ownership {
-
-  figure {
-    margin-top: 0;
   }
 
   .legend-swatch {

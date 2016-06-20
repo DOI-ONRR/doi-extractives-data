@@ -89,24 +89,12 @@
     position: relative;
 
     .svg-container {
-      @include span-columns(8);
+      @include span-columns(6);
     }
 
     .legend-container {
-      @include span-columns(4);
+      @include span-columns(6);
       @include omega();
     }
-  }
-}
-
-#revenue,
-#employment {
-  .svg-container {
-    @include span-columns(6);
-  }
-
-  .legend-container {
-    @include span-columns(6);
-    @include omega();
   }
 }

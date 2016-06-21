@@ -38,6 +38,10 @@
       },
 
       isActiveElement: function(el) {
+        if (!el) {
+          return;
+        }
+
         var status = false;
         var rect = el.getBoundingClientRect();
 

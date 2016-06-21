@@ -7,7 +7,7 @@ resource: gold
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,13 +28,13 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total {{ "resource potential" | term:"mineral resource potential" }} that exceeds 3,200 {{ "metric tons" | term:"metric ton" }} (100,000,000 ounces) of gold.[^5]
 
 The major gold mines in Humboldt and Lander counties represent more recent production operations. The counties’ two largest mines, the Twin Creeks Mine in Humboldt and the Pipeline/Cortez Hills Mine in Lander, did not start producing gold until the early 1990s. These mines are now two of the largest gold producers in the state.
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 Nevada is currently experiencing the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands.[^6] This surge in production is largely the result of discovering deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
@@ -42,15 +42,15 @@ The two major gold-mining companies behind this development are Newmont Mining C
 
 <img src="{{ site.baseurl }}/img/counties/nv-humboldt-production.png" alt="Humboldt and Lander Counties Gold Production from 2008–2012" class="case_studies_content-graph">
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 In 2012, gold extraction provided jobs for 3,704 workers and 2,156 contractors, which represented 25% of the entire county population of 22,981, and 58% of total employment in the two counties.[^10] [^11]
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 Gold-mining serves as a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2012, Nevada counties received $117 million in revenue from minerals taxes.[^12] [^13] Of that total, $71 million went to these two counties.[^14]
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 A number of state-level resources, which are listed below, shed light on Humboldt and Lander County transportation systems, {{ "reclamation" | term }} procedures, and emergency services. While these government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Humboldt and Lander county governments.
 
@@ -59,7 +59,7 @@ A number of state-level resources, which are listed below, shed light on Humbold
 	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation & Reclamation Cost Estimator</a></li>
 </ul>
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 

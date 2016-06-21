@@ -15,11 +15,9 @@
       this.navItems = document.querySelectorAll('[data-nav-item]');
       this.navSelect = $('[data-nav-options]');
       this.navIsSelect = !!this.navSelect.length;
-      this.navHeaders = document.querySelectorAll('[data-nav-header]');
       // initialize at maximum value
-      // this.defaultMid = (window.innerHeight || document.documentElement.clientHeight) / 2;
-      this.defaultMid = window.innerHeight || document.documentElement.clientHeight;
-      this.closestToMid = this.defaultMid;
+      this.defaultTop = window.innerHeight || document.documentElement.clientHeight;
+      this.closestToTop = this.defaultTop;
       this.viewportElements = 0;
       this.scrollTop = {
         current: getScrollTop(),
@@ -40,6 +38,7 @@
       },
 
       isActiveElement: function(el) {
+        var status = false;
         var rect = el.getBoundingClientRect();
 
         var elementInViewport = rect.bottom > 0 &&
@@ -47,36 +46,22 @@
             rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
             rect.top < (window.innerHeight || document.documentElement.clientHeight);
 
-        var elMid = Math.abs( rect.top + (Math.abs( rect.top - rect.bottom ) / 2) );
-        var elTop = Math.abs(rect.top)
+        var elTop = Math.abs(rect.top);
 
-        if (elementInViewport) {
-          console.log(el.id, rect)
-          console.log('mid', this.closestToMid)
-          console.log('top', Math.abs(rect.top))
-          console.log('rect mid', elMid)
+        if (elementInViewport && (elTop < this.closestToTop) ) {
+          this.closestToTop = elTop;
+          this.viewportElements++;
+          status = true;
+        } else if (elementInViewport && (this.viewportElements < 1) && (elTop >= this.closestToTop) ) {
+          this.viewportElements++;
+          status = true;
         }
 
-
-
-        if (elementInViewport && (elTop < this.closestToMid) ) {
-          this.closestToMid = elTop;
-          this.viewportElements++;
-          console.log('---------- chosen ----------')
-          // console.log(this.closestToMid)
-          return true;
-        } else if (elementInViewport && (this.viewportElements < 1) && (elTop >= this.closestToMid) ) {
-          console.log('-------------- only one -------------')
-          this.viewportElements++;
-          return true;
-        } else {
-          return false;
-        }
-
+        return status;
       },
 
-      resetMid: function(){
-        this.closestToMid = this.defaultMid;
+      resetTop: function(){
+        this.closestToTop = this.defaultTop;
         this.viewportElements = 0;
       },
 
@@ -99,7 +84,6 @@
       },
 
       update: function(el, name){
-        // this.resetMid();
         this.removeActive();
         this.addActive(el, name);
       },
@@ -163,8 +147,7 @@
           }
         });
 
-        // this.viewportElements = 0;
-        this.resetMid();
+        this.resetTop();
       }
     };
 

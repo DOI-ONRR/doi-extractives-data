@@ -136,17 +136,10 @@ permalink: /explore/federal-production/
         <section id="{{ region.id }}" class="region onshore">
           <div class="map-wrapper">
             <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-              <svg class="region-map">
-                <g class="onshore states" data-url="us-topology.json"
-                  data-object="states"
-                  data-filter="id === '{{ region.id }}'">
-                </g>
-                <g class="onshore counties" data-url="us-topology.json"
-                  data-object="counties"
-                  data-filter="properties.state === '{{ region.id }}'"
-                  data-title="properties.name"
-                  data-mesh="true">
+              projection="mercator" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+              <svg class="region-map" viewBox="500 77 30 33">
+                <g class="onshore states" data-url="de-topology.json"
+                  data-object="states">
                 </g>
               </svg>
             </eiti-map>

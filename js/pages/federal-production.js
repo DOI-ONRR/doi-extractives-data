@@ -122,6 +122,8 @@
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
       formatNumber = eiti.format(',.0f');
+    } else if (state.get('region')) {
+      formatNumber = eiti.format(',.0f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -184,6 +186,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
+    var isState = !!state.get('region');
     var product = state.get('product');
     var fields = getFields(regionId);
 
@@ -226,41 +229,56 @@
             break;
         }
 
-        var features = subregions.data();
-        var rollup = product
-          ? function(d) {
-              return d3.sum(d, getter(fields.value));
-            }
-          : function(d) {
-              return unique(d, 'Product').length;
-            };
+        var features = [];
 
-        var dataByFeatureId = d3.nest()
+        if (isState) {
+          features = data.map(function(d) {
+            return {
+              id: d.Product,
+              value: d.Volume,
+              properties: {
+                name: d.Product
+              }
+            };
+          });
+        }
+        else {
+          features = subregions.data();
+          var rollup = product
+            ? function(d) {
+                return d3.sum(d, getter(fields.value));
+              }
+            : function(d) {
+                return unique(d, 'Product').length;
+              };
+
+          var dataByFeatureId = d3.nest()
           .key(getter(fields.subregion || fields.region))
           .rollup(rollup)
           .map(data);
 
 
-        var featureId = getter(fields.featureId);
-        features.forEach(function(f) {
-          var id = featureId(f);
-          f.value = dataByFeatureId[id];
-        });
-
-        if (state.get('product')) {
-          var withheld = data.filter(function(d) {
-            return d[fields.region] === 'Withheld';
+          var featureId = getter(fields.featureId);
+          features.forEach(function(f) {
+            var id = featureId(f);
+            f.value = dataByFeatureId[id];
           });
 
-          if (withheld.length) {
-            console.log('got %d withheld rows:', withheld);
-            features.push({
-              id: 'W',
-              value: rollup(withheld),
-              properties: {
-                name: '(Withheld)'
-              }
+          if (state.get('product')) {
+            var withheld = data.filter(function(d) {
+              return d[fields.region] === 'Withheld';
             });
+
+            if (withheld.length) {
+              console.log('got %d withheld rows:', withheld);
+              features.push({
+                id: 'W',
+                value: rollup(withheld),
+                properties: {
+                  name: '(Withheld)'
+                }
+              });
+            }
           }
         }
 
@@ -746,11 +764,12 @@
     function getDataURL(state) {
       var region = state.get('region');
       var path = eiti.data.path;
-      path += (!region || region === 'US')
-        ? 'regional/'
-        : region.length === 2
-          ? 'county/by-state/' + region + '/'
-          : 'offshore/';
+      path = '/data/regional/';
+      // path += (!region || region === 'US')
+      //   ? 'regional/'
+      //   : region.length === 2
+      //     ? 'county/by-state/' + region + '/'
+      //     : 'offshore/';
       return path + 'production.tsv';
     }
 
@@ -784,7 +803,7 @@
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d[fields.region] === region;
         });
       }
 

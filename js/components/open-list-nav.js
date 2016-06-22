@@ -13,7 +13,7 @@
       // init OpenListNav Properties
       this.active = this.stripHash(window.location.hash) || 'intro';
       this.navItems = document.querySelectorAll('[data-nav-item]');
-      this.navSelect = $('[data-nav-options]');
+      this.navSelect = document.querySelectorAll('[data-nav-options]');
       this.navIsSelect = !!this.navSelect.length;
       // initialize at maximum value
       this.defaultTop = 1e8;
@@ -129,6 +129,7 @@
         window.addEventListener('scroll', function() {
           self.updateScrollTop();
           // TODO: throttle
+          console.log('detect')
           self.detectNavChange();
         });
 
@@ -146,31 +147,52 @@
       detectNavChange: function(){
 
         var self = this;
-        var newName;
 
         // initialize nav status as not updated
         var updated = false;
 
-        Array.prototype.forEach.call(this.navItems, function(item){
-          var header = document.getElementById(item.dataset.navItem);
+        console.log(this.navSelect)
+        console.log(this.navItems)
+        console.log('-------------')
+        var items = this.navIsSelect
+          ? this.navSelect
+          : this.navItems;
 
-          var isActiveElement = self.isActiveElement(header);
+        Array.prototype.forEach.call(items, function(item){
+          var parentName,
+            newName,
+            header,
+            isActiveElement;
 
-          if (isActiveElement && !self.navIsSelect) {
-            newName = header.id;
+          var updated = false;
 
-            if (item.classList.contains(self.subnavItemClass)) {
-              var parentName = item.parentElement.previousElementSibling
-              .getAttribute('data-nav-item');
+          if (!self.navIsSelect) {
+            header = document.getElementById(item.dataset.navItem);
+
+            isActiveElement = self.isActiveElement(header);
+
+            if (isActiveElement) {
+              newName = header.id;
+
+              if (item.classList.contains(self.subnavItemClass)) {
+                parentName = item.parentElement.previousElementSibling
+                .getAttribute('data-nav-item');
+              }
+
+              self.update(null, newName, parentName);
+
             }
-
-            self.update(null, newName, parentName);
-
-          } else if (isActiveElement && self.navIsSelect && !updated) {
-            newName = header.name || header.id;
-            self.updateSelectField(newName);
-            updated = true;
+          } else if (self.navIsSelect) {
+            Array.prototype.forEach.call(items, function(item){
+              if (isActiveElement && self.navIsSelect && !updated) {
+                newName = header.name || header.id;
+                console.log(newName)
+                self.updateSelectField(newName);
+                updated = true;
+              }
+            });
           }
+
         });
 
         this.resetTop();

@@ -32,9 +32,9 @@ layout: default
     {% if page.title_display %}
       {% if page.nav_items %}
         {% if page.selector == 'hash' %}
-          <h1 id="{{nav_slug}}" data-nav-header="{{nav_slug}}">{{page.title_display}}</h1>
+          <h1 id="{{nav_slug}}">{{page.title_display}}</h1>
         {% elsif page.selector == 'list' %}
-          <h1><a name="{{nav_slug}}" class="case_studies_content-heading" data-nav-header="{{nav_slug}}">{{ page.title_display }}</a></h1>
+          <h1 id="{{nav_slug}}">{{ page.title_display }}</a></h1>
         {% endif %}
       {% else %}
         <h1>{{page.title_display}}</h1>
@@ -42,17 +42,14 @@ layout: default
     {% elsif page.title %}
       {% if page.nav_items %}
         {% if page.selector == 'hash' %}
-          <h1 id="{{nav_slug}}" data-nav-header="{{nav_slug}}">{{page.title_display}}</h1>
+          <h1 id="{{nav_slug}}">{{page.title_display}}</h1>
         {% elsif page.selector == 'list' %}
-          <h1><a name="{{nav_slug}}" class="case_studies_content-heading" data-nav-header="{{nav_slug}}">{{ page.title_display }}</a></h1>
+          <h1 id="{{nav_slug}}">{{ page.title_display }}</a></h1>
         {% endif %}
       {% else %}
         <h1>{{page.title}}</h1>
       {% endif %}
     {% endif %}
-
-
-
 
 
     {{ content | markdownify }}

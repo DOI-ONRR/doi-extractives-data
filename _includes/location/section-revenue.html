@@ -3,13 +3,13 @@
 
 {% capture year_range %}[2006, 2015]{% endcapture %}
 
-<section id="revenue" class="federal revenue" data-nav-header="revenue">
+<section id="revenue" class="federal revenue">
 
   <h2>Revenue</h2>
 
   <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called ‘revenue’ because they represent revenue to the American public.</p>
 
-  <h3>Revenue from federal land</h3>
+  <h3 id="federal-revenue">Revenue from federal land</h3>
 
   <section class="container-half">
 
@@ -45,7 +45,7 @@
     </div>
   </section>
 
-  <div class="tab-interface">
+  <div id="fee-summaries" class="tab-interface">
     <ul class="eiti-tabs info-tabs" role="tablist">
       <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
       <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
@@ -73,7 +73,7 @@
   </div>
   <p><em>* Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</em></p>
 
-  <section id="revenue-commodities" class="chart-list has-intro">
+  <section id="commodities-revenue" class="chart-list has-intro">
 
     <h4>Revenue from extraction on federal land in {{ state_name }} over time</h3>
     <p class="chart-list-intro">In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government, and companies that extract natural resources on federal land pay fees to the federal government. This chart shows how much federal revenue was collected each year in {{ state_name }}.</p>
@@ -130,12 +130,12 @@
 </section>
 
 <section id="state-local-revenue" class="state revenue">
-  <h3>Revenue from state land</h3>
+  <h3 >Revenue from state land</h3>
   <p>Natural resource extraction on land owned by the state of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
   <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">state legal and fiscal information</a>.</p>
 </section>
 
-<section id="" class="private-lands revenue">
+<section id="private-revenue" class="private-lands revenue">
   <h3>Revenue from private land</h3>
   <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
 </section>

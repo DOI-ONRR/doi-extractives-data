@@ -29,8 +29,20 @@
   margin-bottom: 0;
   padding: $base-padding-lite;
 
+  + ul {
+    display: none;
+  }
+
   &[data-active=true] {
     color: $dark-gray;
     font-weight: $weight-book;
+
+    + ul {
+      display: inline-block;
+    }
   }
+}
+
+.sticky_nav-nav_item-sub {
+  border-left: 3px solid $neutral-gray;
 }

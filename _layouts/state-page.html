@@ -7,8 +7,28 @@ nav_items:
     title: Land ownership
   - name: revenue
     title: Revenue
-  - name: all-production
+    subnav_items:
+      - name: federal-revenue
+        title: Federal land
+      - name: fee-summaries
+        title: Fee summaries
+      - name: commodities-revenue
+        title: Commodities
+      - name: state-local-revenue
+        title: State land
+      - name: private-revenue
+        title: Private land
+  - name: production
     title: Production
+    subnav_items:
+      - name: all-production
+        title: Entire state
+      - name: federal-production
+        title: Federal land
+      - name: state-local-production
+        title: State land
+      - name: private-land-production
+        title: Private land
   - name: gdp
     title: Economic impact
   - name: employment
@@ -43,12 +63,13 @@ nav_items:
     {% include location/section-revenue.html %}
 
     <!-- {% include location/section-process.html %} -->
+    <section id="production">
+      {% include location/section-all-production.html %}
 
-    {% include location/section-all-production.html %}
+      {% include location/section-federal-production.html %}
 
-    {% include location/section-federal-production.html %}
-
-    {% include location/section-state-production.html %}
+      {% include location/section-state-production.html %}
+    </section>
 
     {% include location/section-gdp.html %}
 

@@ -30,7 +30,7 @@ selector: hash
 
 {% include selector.html %}
 
-<h2 id="federal-lands-and-waters" data-nav-header="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
+<h2 id="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
 
 When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).
 
@@ -40,9 +40,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 
 <img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
 
-<h2 id="all-lands-and-waters" data-nav-header="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
+<h2 id="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 
-<h3 id="corporate-income-tax" data-nav-header="corporate-income-tax">Corporate income taxes</h3>
+### Corporate income taxes
 
 Corporations operating in the extractive industries pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:
 
@@ -54,7 +54,7 @@ Corporations operating in the extractive industries pay taxes to the IRS on thei
 
 Only income taxes from C-corporations are included in the 2015 USEITI Report.
 
-<h3 id="revenue-policy-provisions" data-nav-header="revenue-policy-provisions">Revenue policy provisions</h3>
+### Revenue policy provisions
 
 While royalty rates can reach as high as 18.75%, and the federal corporate income tax rate can reach as high as 35% depending on company income, companies may pay less. Revenue policy provisions, including royalty relief and tax expenditures, can result in smaller revenue and tax payments to the federal government to promote other policy goals.
 
@@ -69,7 +69,7 @@ To incentivize companies to produce additional oil and gas on certain leases on 
 
 In some situations, if oil and gas prices rise above certain thresholds, lease holders that previously gained royalty relief must start paying royalties at the regular rate again.
 
-<h3 id="tax-expenditures" data-nav-header="tax-expenditures">Tax expenditures</h3>
+### Tax expenditures
 
 Tax expenditures are [defined in the law](https://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2017-Revised.pdf) as “revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.” These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.
 
@@ -84,7 +84,7 @@ The federal budget also includes annual estimates of the net revenue effects of 
 
 ## After a payment, what happens to the revenue?
 
-<h3 id="federal-budget-process" data-nav-header="federal-budget-process">Federal budget process</h3>
+### Federal budget process
 
 Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can [explore disbursement data here]({{ site.baseurl }}/explore/disbursements/).
 

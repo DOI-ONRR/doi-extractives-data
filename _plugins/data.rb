@@ -49,27 +49,6 @@ module EITI
       (start..finish).to_a
     end
 
-    # filter a list of objects by whether a key is above or below a value:
-    #
-    # threshold([...], 'foo', '>', 10) # or 'gt'
-    # threshold([...], 'foo', '<', 10) # or 'lt'
-    # threshold([...], 'foo', '>=', 10) # or 'gte'
-    # threshold([...], 'foo', '<=', 10) # or 'lte'
-    def threshold(list, key, op, value=nil)
-      if not list.is_a? Array
-        return []
-      elsif op == '<' or op == 'lt'
-        return list.select { |d| d[key] < value }
-      elsif op == '<=' or op == 'lte'
-        return list.select { |d| d[key] <= value }
-      elsif op == '>' or op == 'gt'
-        return list.select { |d| d[key] > value }
-      elsif op == '>=' or op == 'gte'
-        return list.select { |d| d[key] >= value }
-      end
-      list.select { |d| d[key] >= op }
-    end
-
     def to_f(x)
       (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end

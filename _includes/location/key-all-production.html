@@ -2,16 +2,16 @@
 {% assign all_products_num = all_products | size %}
 
 {% if include.top %}
-    {% assign top_all_products = site.data.top_state_products[include.location_id].all_production[include.year] %}
-    {% if top_all_products %}
-    <p>{{ include.location_name }} leads the nation in production of these resources:</p>
-      <ul>
-      {% for product in top_all_products %}
-        {% if product.rank < 2 %}
-          <li><a href="#all-production-{{ product.product | slugify }}">{{ product.name }}</a>: {{ product.percent | floor }} percent of U.S. production</li>
-        {% endif %}
-      {% if forloop.index == include.top %}{% break %}{% endif %}
-      {% endfor %}
-      </ul>
-    {% endif %}
+  {% assign top_all_products = site.data.top_state_products[include.location_id].all_production[include.year] %}
+  {% if top_all_products %}
+  <p>{{ include.location_name }} leads the nation in production of these resources:</p>
+    <ul>
+    {% for product in top_all_products %}
+      {% if product.rank < 2 %}
+        <li><a href="#all-production-{{ product.product | slugify }}">{{ product.name }}</a>: {{ product.percent | floor }} percent of U.S. production</li>
+      {% endif %}
+    {% if forloop.index == include.top %}{% break %}{% endif %}
+    {% endfor %}
+    </ul>
   {% endif %}
+{% endif %}

@@ -794,10 +794,6 @@
         });
       }
 
-      var products = unique(data, 'Product')
-        .sort(d3.ascending);
-      dispatch.products(products);
-
       var region = state.get('region');
       if (region && region.length !== 2) {
         var fields = getFields(region);
@@ -806,6 +802,10 @@
           return d[fields.region] === region;
         });
       }
+
+      var products = unique(data, 'Product')
+        .sort(d3.ascending);
+      dispatch.products(products);
 
       var product = state.get('product');
       if (product) {

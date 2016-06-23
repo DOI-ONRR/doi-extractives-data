@@ -33,7 +33,8 @@
   left: -20px;
   tbody {
     tr {
-      td{
+      td {
+        vertical-align: middle;
         height: 15px;
         width: 15px;
         font-size: 12px;
@@ -58,7 +59,7 @@
 
 @media only screen and (max-width: 480px) {
     .graph {
-        width: 100%;
+      width: 100%;
     }
     .legend {
       width: 100%;
@@ -70,7 +71,8 @@
       tbody {
         border: none !important;
         tr {
-          td{
+          td {
+            vertical-align: middle;
             height: 15px;
             width: 15px;
             font-size: 12px;

@@ -1,0 +1,181 @@
+{% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+
+{% assign commodity_groups = site.data.commodities.groups %}
+
+{% assign oilgas_list = commodity_groups.oilgas.commodities %}
+{% assign minerals_list = commodity_groups.minerals.commodities %}
+
+{% assign oilgas_checked = false %}
+{% assign coal_checked = false %}
+{% assign minerals_checked = false %}
+{% assign geothermal_checked = false %}
+
+<table is="bar-chart-table" class="revenue table-arrow_box"
+  {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th class="arrow_box">Phase:</th>
+      <th class="arrow_box">Securing a lease</th>
+      <th class="arrow_box">Before production</th>
+      <th class="arrow_box-last">During production</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+
+      {% if oilgas_list contains commodity_name and oilgas_checked != true %}
+
+        {% assign oilgas_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Oil and Gas
+          <icon class="icon-padded icon-oil"></icon>
+        </td></tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Onshore</th>
+          <td>
+            <strong>Bonus</strong><br/>
+            Amount paid for the lease by the highest bidder
+          </td>
+          <td>
+            <strong>$1.50</strong> annual rent per acre for the first 5 years.<br/>
+            <strong>$2</strong> annual rent per acre thereafter
+          </td>
+          <td>
+            <strong>12.5%</strong> of production value in royalties
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Offshore</th>
+          <td>
+            <strong>Bonus</strong>
+          </td>
+          <td>
+            <strong>$7</strong> or <strong>$11</strong> annual rent per acre
+            increasing over time up to<strong>$44</strong> per acre in some cases
+          </td>
+          <td>
+            <strong>12.5%</strong>, <strong>16.67%</strong>, or
+            <strong>18.75%</strong> of production value in royalties
+          </td>
+          <td></td>
+        </tr>
+      {% endif %}
+
+      {% if commodity_name == 'Coal' and coal_checked != true %}
+
+        {% assign coal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Coal
+          <icon class="icon-padded icon-coal"></icon>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Surface</th>
+          <td>
+            <strong>Bonus</strong>
+          </td>
+          <td>
+            <strong>$3</strong> annual rent per acre
+          </td>
+          <td>
+            <strong>12.5%</strong> of production value in royalties<br/>
+            <strong>$0.28</strong> per ton Abandoned Mine Land Fee
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Subsurface</th>
+          <td>
+            <strong>Bonus</strong>
+          </td>
+          <td>
+            <strong>$3</strong> annual rent per acre
+          </td>
+          <td>
+            <strong>8%</strong> of production value in royalties<br/>
+            <strong>$0.12</strong> per ton Abandoned Mine Land Fee
+          </td>
+          <td></td>
+        </tr>
+      {% endif %}
+
+      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+        {% assign geothermal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Geothermal
+          <icon class="icon-padded icon-geo"></icon>
+        </td></tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are established on a case-by-case basis
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">After August 8, 2005</th>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are <strong>1.75%</strong> for the first
+            10 years of production, and <strong>3.5%</strong> thereafter
+          </td>
+          <td></td>
+        </tr>
+      {% endif %}
+
+      {% if minerals_list contains commodity_name and minerals_checked != true %}
+
+        {% assign minerals_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Hardrock Minerals
+          <icon class="icon-padded icon-minerals"></icon>
+        </td></tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Public Domain Lands</th>
+          <td>
+            <strong>$20</strong> processing fee<br/>
+            <strong>$37</strong> location fee<br/>
+            <strong>$155</strong> initial maintenance fee
+          </td>
+          <td>
+            <strong>$155</strong> annual maintenance fee per claim
+          </td>
+          <td>
+            <strong>No royalties</strong> are required to be paid
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Acquired Lands</th>
+          <td>
+            <strong>$6,500</strong> prospecting permit fee
+          </td>
+          <td>
+            <strong>$0.50</strong> annual prospecting fee per acre<br/>
+            <strong>$37</strong> annual rent per acre
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
+          </td>
+          <td></td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+
+    <tr class="table-arrow_box-category"><td colspan="5">Income Tax</td></tr>
+    <tr>
+      <td colspan="5"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,59 @@
+{% assign all_products = site.data.state_all_production[state_id].products %}
+
+<section id="all-production" class="all-lands production">
+
+  <h2>Natural resource production in {{ state_name }}</h2>
+
+  <h3>Production in all of {{ state_name }}</h3>
+
+  <p>The federal government collects data about all energy-related natural resources produced in each state on all lands, including federal, state, and privately owned property. (For coal, there is also data about mining in each county.)</p>
+
+  <p>In some cases, the specific amount of a resource produced in a state or county is withheld to protect trade secrets.</p>
+
+  <div class="chart-list">
+
+  {% for product in all_products %}
+    {% assign product_slug = product[0] | slugify %}
+    {% assign product_name = product[1].name | default: product[0] %}
+    {% assign production_values = product[1].volume %}
+    {% assign volume = production_values[year].volume %}
+    {% assign units = product[1].units | downcase | default: 'units' %}
+    <section id="all-production-{{ product_slug }}" class="chart-item">
+
+      <h3 class="chart-title">{{ product_name }}</h3>
+
+      <figure class="chart">
+        <eiti-line-chart
+          data='{% include location/line-chart-data.json values=production_values key="volume" %}'
+          data-x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
+        </figcaption>
+      </figure>
+      <p>
+        {% if volume %}{{ volume | intcomma }} {{ units }} of
+        {% else %}No{% endif %}
+        {{ product_name | downcase }} was extracted in {{ state_name }} in {{ year }}.
+      </p>
+      <h4>
+        <button is="aria-toggle"
+          aria-controls="all-production-detail-{{ product_slug }}">&plus; Historical details</button>
+      </h4>
+      <div id="all-production-detail-{{ product_slug }}" aria-hidden="true">
+        {%
+          include location/display-production.html
+          units=units
+          year=year
+          values=production_values
+          percent=false
+          rank=false
+        %}
+      </div>
+    </section>
+  {% endfor %}
+
+  </div>
+</section>

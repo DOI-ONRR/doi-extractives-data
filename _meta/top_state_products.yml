@@ -1,0 +1,8 @@
+'{category}':
+  '{year}':
+    - product: '{product}'
+      name: '{name}'
+      units: '{units}'
+      value: '{value}'
+      rank: '{rank}'
+      percent: '{percent}'

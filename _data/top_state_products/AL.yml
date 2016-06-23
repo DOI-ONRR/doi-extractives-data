@@ -1,0 +1,126 @@
+all_production:
+  '2005':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3630000
+      rank: 2
+      percent: 9.34
+  '2006':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3865000
+      rank: 1
+      percent: 9.97
+  '2007':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3784000
+      rank: 2
+      percent: 9.7
+  '2008':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3324000
+      rank: 3
+      percent: 8.91
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3035000
+      rank: 3
+      percent: 8.42
+  '2012':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 5041
+      rank: 2
+      percent: 12.1
+  '2014':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 181054000
+      rank: 1
+      percent: 28.56
+revenue:
+  '2006':
+    - product: Clay
+      name: null
+      units: null
+      value: 20117.1
+      rank: 1
+      percent: 84.47
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1193.1
+      rank: 3
+      percent: 6.24
+  '2007':
+    - product: Clay
+      name: null
+      units: null
+      value: 12892.8
+      rank: 1
+      percent: 67.95
+    - product: Sulfur
+      name: null
+      units: null
+      value: 369.54
+      rank: 3
+      percent: 0.54
+  '2008':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 12259.8
+      rank: 3
+      percent: 1.06
+  '2009':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2877.54
+      rank: 2
+      percent: 0.04
+  '2010':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1448.44
+      rank: 3
+      percent: 0.38
+  '2012':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4038.52
+      rank: 3
+      percent: 0.2
+  '2013':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2679.68
+      rank: 3
+      percent: 0.55
+  '2014':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1609.3
+      rank: 3
+      percent: 0.37
+  '2015':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1161.64
+      rank: 2
+      percent: null

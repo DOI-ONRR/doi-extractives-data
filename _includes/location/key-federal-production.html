@@ -1,0 +1,23 @@
+{% assign federal_products = site.data.state_federal_production[include.location_id].products %}
+{% assign federal_products_num = federal_products | size %}
+
+{% if federal_products_num > 0 %}
+  {{ include.location_name }} produced
+  <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
+  on federal lands in {{ include.year }}.
+  {% if include.top %}
+    {% assign top_federal_products = site.data.top_state_products[include.location_id].federal_production[include.year] %}
+    {% if top_federal_products %}
+    These are some of the most notable:
+    <ul class="list-bullet">
+      {% for product in top_federal_products %}
+      <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
+        #{{ product.rank }} ({{ product.percent | floor }}%)</li>
+      {% if forloop.index == include.top %}{% break %}{% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endif %}
+{% else %}
+  We have no record of federal production in {{ include.location_name }} in {{ include.year }}.
+{% endif %}

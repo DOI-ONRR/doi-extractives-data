@@ -1,0 +1,128 @@
+{% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
+
+{% assign commodity_groups = site.data.commodities.groups %}
+
+{% assign oilgas_list = commodity_groups.oilgas.commodities %}
+{% assign minerals_list = commodity_groups.minerals.commodities %}
+
+{% assign oilgas_checked = false %}
+{% assign coal_checked = false %}
+{% assign minerals_checked = false %}
+{% assign geothermal_checked = false %}
+
+
+<table is="bar-chart-table" class="revenue table-arrow_box"
+  {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th class="arrow_box">Phase:</th>
+      <th class="arrow_box">Securing a lease</th>
+      <th class="arrow_box">Before production</th>
+      <th class="arrow_box-last">During production</th>
+      <th>Other revenues</th>
+    </tr>
+  </thead>
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
+
+      {% if oilgas_list contains commodity_name and oilgas_checked != true %}
+        {% assign oilgas_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Oil and Gas
+          <icon class="icon-padded icon-oil"></icon>
+        </td></tr>
+      {% endif %}
+
+      {% if oilgas_list contains commodity_name %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          {% if commodity_name == oilgas %}
+              {% include location/revenue-type-row-oilgas.html %}
+          {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
+              {% include location/revenue-type-row.html %}
+          {% endif %}
+        </tbody>
+      {% endif %}
+    {% endfor %}
+
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
+      {% if commodity_name == 'Coal' and coal_checked != true %}
+        {% assign coal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Coal
+          <icon class="icon-padded icon-coal"></icon>
+        </td></tr>
+      {% endif %}
+
+
+      {% if commodity_name == 'Coal' %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          {% include location/revenue-type-row.html %}
+        </tbody>
+      {% endif %}
+    {% endfor %}
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
+      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+        {% assign geothermal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Geothermal
+          <icon class="icon-padded icon-geo"></icon>
+        </td></tr>
+      {% endif %}
+
+      {% if commodity_name == 'Geothermal' %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          {% include location/revenue-type-row.html %}
+        </tbody>
+      {% endif %}
+    {% endfor %}
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
+      {% if minerals_list contains commodity_name and minerals_checked != true %}
+        {% assign minerals_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5">
+          Hardrock Minerals
+          <icon class="icon-padded icon-minerals"></icon>
+        </td></tr>
+      {% endif %}
+
+      {% if minerals_list contains commodity_name %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          {% include location/revenue-type-row.html %}
+         </tbody>
+      {% endif %}
+
+    {% endfor %}
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
+      {% if commodity_name == 'All' %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          <tr class="table-arrow_box-category"><td colspan="5">
+            All commodities
+            <icon class="icon-oil"></icon>
+            <icon class="icon-coal"></icon>
+            <icon class="icon-minerals"></icon>
+            <icon class="icon-geo"></icon>
+          </td></tr>
+          {% include location/revenue-type-row.html %}
+        </tbody>
+      {% endif %}
+    {% endfor %}
+</table>

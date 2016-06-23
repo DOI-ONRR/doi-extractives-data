@@ -1,0 +1,15 @@
+{% assign all_products = site.data.state_all_production[include.location_id].products %}
+{% assign all_products_num = all_products | size %}
+
+{% if include.top %}
+  {% assign top_all_products = site.data.top_state_products[include.location_id].all_production[include.year] | where: 'rank', 1 %}
+  {% if top_all_products.size > 0 %}
+  <p>{{ include.location_name }} leads the nation in production of these resources:</p>
+    <ul>
+    {% for product in top_all_products %}
+    <li><a href="#all-production-{{ product.product | slugify }}">{{ product.name }}</a>: {{ product.percent | floor }} percent of U.S. production</li>
+      {% if forloop.index == include.top %}{% break %}{% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}

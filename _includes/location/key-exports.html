@@ -1,0 +1,12 @@
+{% assign exports = site.data.state_exports[include.location_id].commodities %}
+{% assign exports_total = exports.All[include.year].dollars %}
+{% assign exports_commodities_num = exports | size | minus: 2 %}
+
+{% if exports_commodities_num > 0 %}
+  In {{ include.year }}, 
+  {{ exports_commodities_num }} extractive industries 
+  product{{ exports_commodities_num | plural }} ranked among the top 25 exports from {{ include.location_name }}, generating
+  <a href="#exports">${{ exports.All[include.year].dollars | intcomma }}</a>
+  in export revenue, or
+  {{ exports.All[include.year].percent | percent }} percent of all export revenue.
+{% endif %}

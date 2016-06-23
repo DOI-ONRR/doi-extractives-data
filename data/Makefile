@@ -18,10 +18,8 @@ REVENUE_FILES = \
 	state/revenues.tsv \
 	county/revenues.tsv \
 	offshore/revenues.tsv \
-	regional/resource-revenues.tsv \
 	regional/revenues.tsv \
 	county-revenues-by-state \
-	county-resource-revenues-by-state \
 	company/revenue \
 	reconciliation/revenue.tsv
 
@@ -237,15 +235,6 @@ regional/production.tsv: state/production.tsv offshore/production.tsv
 			--sum 'Volume' \
 			-o $@
 
-# regional (state and offshore) revenues by resource group
-regional/resource-revenues.tsv: regional/revenues.tsv
-	cat $< \
-		| bin/add-resource-group.js \
-		| bin/sum.js \
-			--group 'Year,Region,Resource' \
-			--sum 'Revenue' \
-			-o $@
-
 # county listings
 county/counties.tsv: geo/us-topology.json
 	bin/extract-properties.js --layer counties $< | \
@@ -291,21 +280,6 @@ county-products-by-state: county/production.tsv
 			--of ndjson \
 		| bin/divvy.js \
 			--path 'county/by-state/{{ State }}/products.tsv' \
-			--of tsv
-
-county-resource-revenues-by-state: county/revenues.tsv
-	$(tito) --read tsv $< \
-		| bin/add-resource-group.js \
-			--if ndjson \
-			--of ndjson \
-		| bin/sum.js \
-			--if ndjson \
-			--group 'Year,State,County,FIPS,Resource' \
-			--sum 'Revenue' \
-			--of ndjson \
-		| bin/divvy.js \
-			--if ndjson \
-			--path 'county/by-state/{{ State }}/resource-revenues.tsv' \
 			--of tsv
 
 # county production volumes
@@ -460,6 +434,5 @@ distclean: clean
 	revenue production exports gdp \
 	counties-by-state \
 	county-revenues-by-state \
-	county-resource-revenues-by-state \
 	geo \
 	svg

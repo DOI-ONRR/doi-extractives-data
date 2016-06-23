@@ -117,49 +117,23 @@ $(document).ready(function(){
         return 0;
      }
   }
-  jsonData1.sort( orderData("Value"));
-  jsonData.sort( orderData("Value"));
+  function legendTable(element,data) {
+      var table = document.getElementById(element);
+      for(var i=0; i<data.length;i++){
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
 
-  console.log(jsonData);
-  console.log(jsonData1);
-// Start First Graph
-    var dataSlices = [];
-    var ticks = [];
-    var colors = [];
-
-    // setting color values
-    for (var i = 0; i < jsonData.length; i++) {
-      for (var j = 0; j < category.length; j++) {
-        // console.log(jsonData[i]);
-        if (jsonData[i].cat == category[j].cat) {
-          colors.push(category[j].color);
-        }
+        var div = document.createElement("div");
+        div.style.width = '15px';
+        div.style.height = '15px';
+        div.style.background = data[i].color;
+        cell1.appendChild(div);
+        cell2.innerHTML = data[i].cat;
       }
-    }
-
-    $.each(jsonData, function (entryindex, entry) {
-        dataSlices.push(entry['Value']);
-        ticks.push(entry['Label']);
-    });
-
-    function legendTable() {
-        var table = document.getElementById("legend1");
-        for(var i=0; i<category.length;i++){
-          var row = table.insertRow(0);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-
-          var div = document.createElement("div");
-          div.style.width = '15px';
-          div.style.height = '15px';
-          div.style.background = category[i].color;
-          cell1.appendChild(div);
-          cell2.innerHTML = category[i].cat;
-        }
-    }
-
-    legendTable();
-    var plot1 = $.jqplot('chart1', [dataSlices], {
+  }
+  function plotGraph(chart,slices,colorsData,title,ticksData){
+    var plot2 = $.jqplot(chart, [slices], {
         animate: !$.jqplot.use_excanvas,
         seriesDefaults:{
             renderer:$.jqplot.BarRenderer,
@@ -171,11 +145,11 @@ $(document).ready(function(){
             },
             pointLabels: {show: true, edgeTolerance: -15, location: 'e'}
         },
-        seriesColors: colors,
+        seriesColors: colorsData,
         series:[
             {label: ['A','B']}
         ],
-        title:'Wert der in Deutschland produzierten Rohstoffe im Jahr 2014',
+        title: title,
         grid: {
             background: '#fff',
         },
@@ -187,21 +161,42 @@ $(document).ready(function(){
             },
             yaxis: {
                 renderer: $.jqplot.CategoryAxisRenderer,
-                ticks: ticks
+                ticks: ticksData
             }
         }
     });
-// end First Graph
+  }
 
-// Start Second Graph
+/* Start First Graph */
+    var dataSlices = [];
+    var ticks = [];
+    var colors = [];
+    jsonData.sort( orderData("Value"));
+
+    // setting color values
+    for (var i = 0; i < jsonData.length; i++) {
+      for (var j = 0; j < category.length; j++) {
+        if (jsonData[i].cat == category[j].cat) {
+          colors.push(category[j].color);
+        }
+      }
+    }
+    $.each(jsonData, function (entryindex, entry) {
+        dataSlices.push(entry['Value']);
+        ticks.push(entry['Label']);
+    });
+    legendTable("legend1",category);
+    plotGraph('chart1',dataSlices,colors,'Wert der in Deutschland produzierten Rohstoffe im Jahr 2014',ticks)
+/* end First Graph */
+
+/* Start Second Graph */
     var dataSlices1 = [];
     var ticks1 = [];
     var colors1 = [];
+    jsonData1.sort( orderData("Value"));
 
-    // setting color values
     for (var i = 0; i < jsonData1.length; i++) {
       for (var j = 0; j < category1.length; j++) {
-        // console.log(jsonData[i]);
         if (jsonData1[i].cat == category1[j].cat) {
           colors1.push(category1[j].color);
         }
@@ -211,58 +206,9 @@ $(document).ready(function(){
         dataSlices1.push(entry['Value']);
         ticks1.push(entry['Label']);
     });
-
-    function legendTable1() {
-        var table = document.getElementById("legend2");
-        for(var i=0; i<category1.length;i++){
-          var row = table.insertRow(0);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-
-          var div = document.createElement("div");
-          div.style.width = '15px';
-          div.style.height = '15px';
-          div.style.background = category1[i].color;
-          cell1.appendChild(div);
-          cell2.innerHTML = category1[i].cat;
-        }
-    }
-
-    legendTable1();
-    var plot2 = $.jqplot('chart2', [dataSlices1], {
-        animate: !$.jqplot.use_excanvas,
-        seriesDefaults:{
-            renderer:$.jqplot.BarRenderer,
-            shadowAngle: 135,
-            rendererOptions: {
-                barDirection: 'horizontal',
-                varyBarColor: true,
-                fillToZero: true
-            },
-            pointLabels: {show: true, edgeTolerance: -15, location: 'e'}
-        },
-        seriesColors: colors1,
-        series:[
-            {label: ['A','B']}
-        ],
-        title:'Rohstoffproduktion im Jahr 2014',
-        grid: {
-            background: '#fff',
-        },
-        axes: {
-            xaxis: {
-              // pad: 1.05,
-              // tickOptions: {formatString: '%d (t)'}
-              showTicks: false,
-            },
-            yaxis: {
-                renderer: $.jqplot.CategoryAxisRenderer,
-                ticks: ticks1
-            }
-        }
-    });
+    legendTable("legend2",category1);
+    plotGraph('chart2',dataSlices1,colors1,'Rohstoffproduktion im Jahr 2014',ticks1)
 });
-
-// // end Second Graph
+/* end Second Graph */
 
 </script>

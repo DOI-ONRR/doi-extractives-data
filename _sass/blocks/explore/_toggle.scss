@@ -76,8 +76,17 @@
 
   .clear-filters {
     margin-top: 5px;
-    display: block;
     text-align: center;
     display: none;
+  }
+}
+
+.back-btn {
+  display: none;
+  position: relative;
+  top: 3px;
+
+  img {
+    height: 30px;
   }
 }

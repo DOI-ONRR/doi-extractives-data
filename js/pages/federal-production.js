@@ -121,6 +121,7 @@
     root.select('#region-selector').attr('disabled', product ? true : null);
     root.select('#product-selector').attr('disabled', region ? true : null);
     root.select('.clear-filters').style('display', (product || region) ? 'block' : null);
+    root.select('.back-btn').style('display', (product || region) ? 'inline-block' : null);
 
     var units;
     if (product) {

@@ -220,7 +220,7 @@
             name: 'Total'
           }
         })
-        .call(updateRegionRow);
+        .call(updateRegionRow, isState);
 
       var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
@@ -392,7 +392,7 @@
     }
   }
 
-  function updateRegionRow(selection) {
+  function updateRegionRow(selection, isState) {
     selection.select('.subregion-name .text')
       .text(function(f) {
         return isOffshore(f);
@@ -411,7 +411,8 @@
 
     selection.select('.value')
       .text(function(d) {
-        return d.value ? formatNumber(d.value) : '(withheld)';
+        var val = isState ? d.value + ' products' : formatNumber(d.value);
+        return d.value ? val : '0 products';
       });
   }
 

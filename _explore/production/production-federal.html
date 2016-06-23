@@ -63,15 +63,19 @@ permalink: /explore/federal-production/
             </select>
           </div>
         </div>
-
-        <div class="container-left">
+        {% if site.data.production.years.size > 1 %}
+        {% assign year_sel_display = 'block' %}
+        {% else %}
+        {% assign year_sel_display = 'none' %}
+        {% endif %}
+        <div class="container-left" style="display: {{year_sel_display}}">
           <label for="year-selector">Years <span class="units"></span></label>
         </div>
-        <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
+        <svg id="timeline" class="timeline" viewBox="0 0 1024 60" style="display: {{year_sel_display}}"></svg>
 
-        <div class="filter container filters-last">
+        <div class="filter container filters-last" style="display: {{year_sel_display}}">
           <eiti-slider id="year-selector" name="year"
-            min="2005" max="2014" snap="1" value="2014">
+            min="{{ site.data.production.years | sort | first }}" max="{{ site.data.production.years | sort | last }}" snap="1" value={{ site.data.production.years | sort | last }}>
           </eiti-slider>
         </div>
 
@@ -80,7 +84,7 @@ permalink: /explore/federal-production/
       <h1 data-filter-description="" class="filter-description">
         <span href="#product-selector" class="filter-part" data-key="product">All</span>
         production on federal lands in
-        <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </h1>
 
@@ -94,7 +98,7 @@ permalink: /explore/federal-production/
       <h1 data-filter-description="" class="filter-description filter-description_open">
         <span href="#product-selector" class="filter-part" data-key="product">All</span>
         production on federal lands in
-        <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </h1>
     </div>

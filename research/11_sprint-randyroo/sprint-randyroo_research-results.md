@@ -31,29 +31,36 @@ With this round of usability testing, we saw a major sea change in how users rea
 
 ### Specific feedback
 
-Maps (general):
+#### Maps (general):
 
 - Bothered by the tilt of West Virginia (very used to seeing their state a certain way)
 
-Federal land ownership:
+#### Federal land ownership:
 
-- Wants to know how state land ownership stats compare nationally
-- The phrase "much like they would to any land owner" is very clear
-- Because the federal land percentage was the first thing visible, one user expressed confusion about whether the entire scope of the page would be limited to federal land: "Is this all about the natural resources that are on federal land?" [Scrolls down to revenue almost immediately] "Whoa! With so much gas extraction going on in our state, and if this just reports on what’s being done on federal land, that’s alarming!
-- "What might be helpful is a little intro, like, on this site we’ll talk about the extractive industries on federal land, state land, private land, because otherwise people will see this federal land thing and think this isn’t relevant to me."
-- "People in PA...if they just see these specs of federal land at the top they’re gonna go, eeeeh this isn’t that interesting."
+- One user wondered how state land ownership stats compare nationally.
+- One user commented that the phrase "much like they would to any land owner" was very clear.
+- Possibly because the federal land percentage was the first thing visible, one user expressed confusion about whether the entire scope of the page would be limited to federal land.
 
-Revenue introduction:
+Quotes:
 
-- "I like that you define revenue here — this is so well written!"
-- Two people wondered what year the revenue chart data is from
-- Revenue chart: "This is an interesting and good way to show the phases of owning land and getting money — but I’m confused as to what the whole represents" (what the bars are adding up to; expected them to add up horizontally to the commodity totals)
-- One user toggled repeatedly between the numbers and the explanations; might have been easier to see them side-by-side
+> What might be helpful is a little intro, like, on this site we’ll talk about the extractive industries on federal land, state land, private land, because otherwise people will see this federal land thing and think this isn’t relevant to me. People in PA...if they just see these specs of federal land at the top they’re gonna go, eeeeh this isn’t that interesting."
+
+#### Revenue introduction:
+
+- Two people wondered what year the revenue chart data is from. [Note: We've already changed the title of this chart to make it clearer.]
+- At least two people expressed confusion about what the bars represented in the revenue process chart. One person expected them to add up horizontally to the commodity totals.
+- One user toggled repeatedly between the numbers and the explanations; might have been easier to see them side-by-side.
 - Still some confusion about what the process phases mean and how to understand these numbers:
     - "What! That’s bullshit" (looking at rent amounts)..."okay, I guess if we’re getting royalties that’s less bad...is that the tax rate, though?"
     - "What does _Bonus_ mean?" (Definition doesn’t seem to make sense related to word)
     - "It's not exactly breaking it down, but maybe I’m not familiar with it."
-- Likely don't need to repeat federal land percentage ("Okay, you said that before")
+- Likely don't need to repeat federal land percentage ("Okay, you said that before").
+
+Quotes:
+
+> I like that you define revenue here — this is so well written!
+
+> "This is an interesting and good way to show the phases of owning land and getting money — but I’m confused as to what the whole represents."
 
 Revenue by commodity:
 

@@ -72,10 +72,10 @@
           }
 
           var svgLegend = d3.select(this)
-            .select(".legend-svg");
+            .select('.legend-svg');
 
-          svgLegend.append("g")
-            .attr("class", "legendScale");
+          svgLegend.append('g')
+            .attr('class', 'legendScale');
 
           var legendSettings = d3.legend.color()
             .labelFormat(format.si)
@@ -85,7 +85,7 @@
             .shapePadding(6)
             .scale(scale);
 
-          svgLegend.select(".legendScale")
+          svgLegend.select('.legendScale')
             .call(legendSettings);
 
           // reverse because the scale is in ascending order
@@ -95,7 +95,7 @@
           var uniqueSteps = getUnique(marks.data(), _steps, domain);
 
           // start consolidate (translate) visible cells
-          var cells = svgLegend.selectAll('.cell')
+          var cells = svgLegend.selectAll('.cell');
           var cellHeight = legendSettings.shapeHeight() +
             legendSettings.shapePadding();
           var count = 0;

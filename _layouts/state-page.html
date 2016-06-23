@@ -46,6 +46,22 @@ nav_items:
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
 
+<!-- Special cases -->
+{% assign is_case_study = page.is_case_study %}
+{% assign is_opt_in = page.is_opt_in %}
+{% assign is_priority_state = page.is_priority_state %}
+<!-- End special cases -->
+
+<!-- Special cases from site.data -->
+{% assign state_is_special = site.data.special_states[state_id] %}
+{% for special_state in site.data.special_states[state_id] %}
+  {% assign is_case_study = special_state.is_case_study %}
+  {% assign is_opt_in = special_state.is_opt_in %}
+  {% assign is_priority_state = special_state.is_priority_state %}
+{% endfor %}
+<!-- End special cases from site.data -->
+
+
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
 
   <div>

@@ -50,15 +50,10 @@ permalink: /explore/federal-production/
           <div class="filter">
             <label for="region-selector">Region</label>
             <select id="region-selector" name="region">
-              <option value="">All U.S.</option>
+              <option value="">All Germany</option>
               <optgroup label="States">
                 {% for state in site.data.states %}
                 <option value="{{ state.id }}">{{ state.name }}</option>
-                {% endfor %}
-              </optgroup>
-              <optgroup label="Offshore Areas">
-                {% for area in site.data.offshore_regions %}
-                <option value="{{ area.id }}">{{ area.display_name }}</option>
                 {% endfor %}
               </optgroup>
             </select>
@@ -80,7 +75,7 @@ permalink: /explore/federal-production/
 
       <h1 data-filter-description="" class="filter-description">
         <span href="#product-selector" class="filter-part" data-key="product">All</span>
-        production on federal lands and waters in
+        production on federal lands in
         <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </h1>
@@ -94,7 +89,7 @@ permalink: /explore/federal-production/
     <div class="filter-description_wrapper">
       <h1 data-filter-description="" class="filter-description filter-description_open">
         <span href="#product-selector" class="filter-part" data-key="product">All</span>
-        production on federal lands and waters in
+        production on federal lands in
         <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </h1>
@@ -106,14 +101,14 @@ permalink: /explore/federal-production/
 
         <!-- <p class="map-intro_text">This map shows which states, counties, and offshore areas have production on federal lands or waters. Select a product in the filter above to show production amounts for your selected year. (We can't sum multiple products, because they're measured in different units.)</p> -->
 
-        <section id="US" class="region active">
+        <section id="DE" class="region active">
           <div class="map-wrapper">
-            <eiti-map id="US-map" class="region-map" simplify="1e-2"
+            <eiti-map id="DE-map" class="region-map" simplify="1e-2"
               projection="mercator" data-path="{{ site.baseurl }}/data/geo/">
-              <svg class="region-map" viewBox="500 77 30 33">
+              <svg class="region-map" viewBox="493 77 30 33">
                 <g class="onshore states" data-url="de-topology.json"
                   data-object="states"
-                  data-id="'US-' + id"
+                  data-id="'DE-' + id"
                   data-href="'#?region=' + id"
                   data-title="properties.name"
                   data-mesh="true">
@@ -124,7 +119,7 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h2 class="region-header-category">Production by state or offshore area <span class="units"></span></h2>
+          <h2 class="region-header-category">Production by state <span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -147,7 +142,7 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h2 class="region-header-category">Production in a state <span class="units"></span></h2>
+          <h2 class="region-header-category">Production in <span class="state"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -204,7 +199,7 @@ permalink: /explore/federal-production/
     {% for area in site.data.offshore_areas %}
     '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
-    'US': 'the entire U.S.'
+    'DE': 'the entire Germany'
   };
 </script>
 

@@ -1,209 +1,116 @@
 ---
+title: Explore Data
 layout: default
-title: Home
 ---
+
 <section class="slab-delta">
-  <div class="container-outer">
-    <div class="container-left-8 hero">
-      <h2 class="hero-title_text">The United States Extractive Industries Transparency Initiative</h2>
-      <h3>USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about how the U.S. manages {{ "extractive industries" | term_end:"extractive industry" }}
-      .</h3>
-      <a href="{{ site.baseurl }}/about/">Learn more about the initiative.</a>
+  <div class="container-outer landing-section_top">
+    <div class="container-left-8 hero-left">
+      <h1>{{ page.title }}</h1>
+      <p class="hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
+      <p class="hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
     </div>
-    <div class="container-right-4 carousel">
-      <a href="{{ site.baseurl }}/how-it-works/" class="carousel-button button-primary">See how it works</a>
-      <img class="carousel-image" src="{{ site.baseurl }}/img/placeholders/how-it-works-home.png" alt="How it works">
+    <div class="container-right-4 hero-right">
+      <div class="hero-right_square">
+        <figure>
+          <a href="{{site.baseurl}}/explore/federal-production/">
+            <img class="hero-right_image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+          </a>
+          <figcaption class="hero-right_caption">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-production/" class="link-alpha">View the data.</a></figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
-<section class="slab-alpha container-padded">
-  <div class="container-outer tab-interface">
 
-    <p class="h5 explore_home-subhead">Explore data</p>
-    <h2 class="h3 explore_home-heading explore_home-explore_heading">Learn about extractive industries throughout the country</h2>
-
-    <ul class="explore_home-tabs" role="tablist">
-      <li role="presentation"><a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true" class="link-charlie">Revenue</a></li>
-      <li role="presentation"><a href="#production" tabindex="-1" role="tab" aria-controls="production" class="link-charlie">Production</a></li>
-      <li role="presentation"><a href="#impact" tabindex="-1" role="tab" aria-controls="impact" class="link-charlie"><span class="explore_home-tab_mobile">Impact</span><span class="explore_home-tab_desktop">Economic Impact</span></a></li>
-    </ul>
-
-    <section class="explore_home-main" id="revenue" role="tabpanel">
-      <div class="container-left-3">
-        <p>Revenue data shows where federal revenue from extractive industries is coming from, who pays it, and where it goes.</p>
-        <a href="{{ site.baseurl }}/explore/#revenue" class="button-primary explore_home-button">Explore data</a>
+<section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
+  <section class="container">
+    <a id="revenue" class="link-no_under"><h2 class="h3 landing-section_category">Revenue data</h2></a>
+    <div class="container-half landing-section" accordion-item aria-expanded="true">
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h3>
+      <button><label class="sr-only">Toggle for federal revenue by location section</label></button>
+      <div>
+        <p class="landing-description">Revenue from extractive industries on federal lands and waters in fiscal year 2013 totaled about $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenue on federal lands and waters</a> from 2004 to 2013 by state, county, or offshore area.</p>
       </div>
-      <div  class="container-left-6">
-        <a href="{{ site.baseurl }}/explore/federal-revenue-by-location/" class="explore_home-img">
-          <!-- <h4>Revenue from all commodities on U.S. federal lands</h4> -->
-          <img src="{{ site.baseurl }}/img/explore-home-revenue.png" alt="Map showing revenues from extractive resources on federal lands">
-        </a>
-      </div>
-      <div class="container-left-3">
-        <p class="explore_home-fact">In 2013, the federal government collected over <strong>$12 billion</strong> from those extracting resources on federal lands and waters.</p>
-        <aside class="explore_home-links">
-          <div><a href="{{ site.baseurl }}/explore/federal-revenue-by-location/">Federal revenue from all lands →</a></div>
-        </div>
-      </aside>
-    </section>
-
-    <section class="explore_home-main" id="production" role="tabpanel" aria-hidden="true">
-      <div class="container-left-3">
-        <p>For the first time, data on all production on federal lands is available publicly. See how much energy was produced nationally, or explore all resources extracted on federal lands.</p>
-        <a href="{{ site.baseurl }}/explore/#production" class="button-primary explore_home-button">Explore data</a>
-      </div>
-      <div  class="container-left-6">
-        <a href="{{ site.baseurl }}/explore/federal-production/" class="explore_home-img">
-          <h4>Production from federal vs. non-federal lands and waters</h4>
-          <img src="{{ site.baseurl }}/img/explore-home-production.png" alt="Chart showing percentage of production occuring on federal versus non-federal lands and waters">
-        </a>
-      </div>
-      <div class="container-left-3">
-        <p class="explore_home-fact">Natural resources located on federal lands belong to all U.S. citizens. Explore how much of 55 specific products is produced on federal lands and waters.</p>
-        <aside class="explore_home-links">
-          <div><a href="{{ site.baseurl }}/explore/federal-production/">Federal production data →</a></div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="explore_home-main" id="impact" role="tabpanel" aria-hidden="true">
-      <div class="container-left-3">
-        <p>Extractive industries account for 2.6 percent of the national GDP, and contribute to exports and employment in many parts of the country.</p>
-        <a href="{{ site.baseurl }}/explore/#economic-impact" class="button-primary explore_home-button">Explore data</a>
-      </div>
-      <div  class="container-left-6">
-        <a href="{{ site.baseurl }}/explore/jobs/" class="explore_home-img">
-          <h4>Employment in extractive industries vs. all other industries</h4>
-          <img src="{{ site.baseurl }}/img/explore-home-impact.png" alt="Chart showing employment in extractive industries vs. all other industries">
-        </a>
-      </div>
-      <div class="container-left-3">
-        <p class="explore_home-fact">Over <strong>800,000 people</strong> worked in the extractive industries in 2013. Texas and Oklahoma stand out as the states with the most jobs in these industries.</p>
-        <aside class="explore_home-links">
-          <div><a href="{{ site.baseurl }}/explore/jobs/">Jobs data →</a></div>
-        </aside>
-      </div>
-    </section>
-
-  </div>
-</section>
-
-<section class="slab-beta-dark container-padded">
-  <div class="container-outer">
-
-    <div class="container-left-3">
-      <h4>The U.S. ranks at or near the top worldwide in the production of many natural resources. Explore this site to learn about U.S. natural gas, oil, coal, copper, gold, iron, and renewables.</h4>
     </div>
-
-    <div class="container-left-9">
-
-      <article class="card" class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/about/report/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-exec_summary.png" alt="USEITI 2015 Executive Summary"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">About</p>
-
-          <a href="{{ site.baseurl }}/about/report/"><h3 class="card-title">Download the USEITI 2015 Executive Summary</h3></a>
-
-          <p>This document includes an overview of the contextual narrative and an account of the reporting and reconciliation process for the EITI Standard in the U.S.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card" class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/production/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-nat_res.png" alt="U.S. natural resource sectors"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">How it works</p>
-
-          <a href="{{ site.baseurl }}/how-it-works/production/"><h3 class="card-title">What natural resources are extracted?</h3></a>
-
-          <p>The U.S. is one of the top producers of oil, gas, and coal as well as nonenergy minerals like gold, iron, and copper.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/case-studies/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-placeholder.png" alt="Placeholder"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">Case studies</p>
-
-          <a href="{{ site.baseurl }}/case-studies/"><h3 class="card-title">How does natural resource extraction affect local communities?</h3></a>
-
-          <p>Learn about 12 communities that led the U.S. in production of iron, copper, gold, coal, oil, and natural gas over the last decade.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/revenues/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-oil.png" alt="Oil operation in the mountains"/></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">How it works</p>
-
-          <a href="{{ site.baseurl }}/how-it-works/revenues/"><h3 class="card-title">How do natural resources result in federal revenues?</h3></a>
-
-          <p>Companies pay for the right to explore on federal lands. If they find and extract resources, they may pay royalties, fees, taxes, and other revenues, depending on the resource.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a href="{{ site.baseurl }}/how-it-works/ownership/" class="card-image_link"><img class="card-image" src="{{ site.baseurl }}/img/home-card-usa.png" alt="Partial map of the United States"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">How it works</p>
-
-          <a href="{{ site.baseurl }}/how-it-works/ownership/"><h3 class="card-title">Who owns natural resources in the U.S.?</h3></a>
-
-          <p>Natural resources can be owned by citizens and corporations, the federal government, state and local governments, or Indian tribes and individuals.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/explore/disbursements/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-disbursements.png" alt="Circles of various sizes and shapes"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">Explore data</p>
-
-          <a href="{{ site.baseurl }}/explore/disbursements/"><h3 class="card-title">Where does the money go?</h3></a>
-
-          <p>Revenue from natural resources goes to federal, state, and county governments, as well as to a range of funds that work at the local and national levels.</p>
-
-        </div>
-
-      </article>
-
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Federal revenue by company</a></h3>
+      <button><label class="sr-only">Toggle for federal revenue by company section</label></button>
+      <div>
+        <p class="landing-description">In 2015, the federal government
+        collected over $6.1 billion in royalties from resources extracted on
+        federal lands. Some of the companies that paid the most include Shell,
+        Peabody Energy, Chevron, and BP. <a
+        href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Explore
+        revenues on federal lands and waters in 2015 by company</a> and revenue
+        type.</p>
+      </div>
     </div>
-
-  </div>
-
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/reconciliation/">Reconciliation</a></h3>
+      <button><label class="sr-only">Toggle for reconciliation section</label></button>
+      <div>
+        <p class="landing-description">As part of USEITI, companies report payments to the government and the government reports what it received. These figures are compiled, reconciled, and published. In the future, this dataset will be interactive. For now, you can <a href="{{site.baseurl}}/explore/reconciliation/">learn about the reconciliation process</a> or <a href="{{site.baseurl}}/downloads/#reconciliation">download the dataset</a>.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/corporate-income-tax/">Corporate income tax</a></h3>
+      <button><label class="sr-only">Toggle for corporate income tax section</label></button>
+      <div>
+        <p class="landing-description">Publicly listed companies are required to report tax information in their annual financial statement filings, including cash flows, income statements, and balance sheets. <a href="{{site.baseurl}}/explore/corporate-income-tax/">See information on federal corporate income taxes</a> and data from 2009 to 2013.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/disbursements/">Disbursements</a></h3>
+      <button><label class="sr-only">Toggle for disbursements section</label></button>
+      <div>
+        <p class="landing-description">In FY 2013, ONRR disbursed over $14 billion in revenue earned from extraction of natural resources on federal land. <a href="{{site.baseurl}}/explore/disbursements/">Explore how money was disbursed to local governments, conservation and preservation</a> in 2012 and 2013.</p>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <a id="production" class="link-no_under"><h2 class="h3 landing-section_category">Production data</h2></a>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands and waters</a></h3>
+      <button><label class="sr-only">Toggle for all lands production section</label></button>
+      <div>
+        <p class="landing-description">In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). <a href="{{site.baseurl}}/explore/all-lands-production/">Explore production on all U.S. lands and waters</a> from 2004 to 2013 by state and county.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h3>
+      <button><label class="sr-only">Toggle for federal production section</label></button>
+      <div>
+        <p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and {{ "lease condensate" | term_end }}, and 15.9% of natural gas extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 36 individual products.</p>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <a id="economic-impact" name="economic-impact" class="link-no_under"><h2 class="h3 landing-section_category">Economic impact</h2></a>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h3>
+      <button><label class="sr-only">Toggle for GDP section</label></button>
+      <div>
+        <p class="landing-description">Extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contributions to the national GDP. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from extractive insustries</a> by state from 2004 to 2013.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/exports/">Exports</a></h3>
+      <button><label class="sr-only">Toggle for exports section</label></button>
+      <div>
+        <p class="landing-description">Commodities from extractive industries are among the top exports in 22 states — and, for a few states, these industries accounted for more than 40% of all exports in 2013. <a href="{{site.baseurl}}/explore/exports/">Explore extractive industries exports</a> by state from 2011 to 2013.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h3>
+      <button><label class="sr-only">Toggle for jobs section</label></button>
+      <div>
+        <p class="landing-description">Over 800,000 people worked in the extractive industries in 2013, along with thousands of self-employed people. Texas and Oklahoma are the states with the most jobs in these industries. <a href="{{site.baseurl}}/explore/jobs/">Explore jobs in extractive industries</a> from 2004 to 2013 by state.</p>
+      </div>
+    </div>
+  </section>
 </section>
-<section class="slab-alpha container-padded u-centered u-padding-small_screen home-bottom-links">
-
-    <h2>Not sure where to go? Start&nbsp;here&nbsp;&#8230;</h2>
-
-    <h3 class="h2"><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenue <icon class="icon-chevron-lg icon-padded"></icon></a></h3>
-
-</section>
-
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/homepage.min.js" charset="utf-8"></script>
+<!-- <section class="slab-alpha container-outer container-padded u-centered">
+    <h3>Not sure where to go? Start here &#8230;</h2>
+    <h2><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenues</a></h2>
+</section> -->

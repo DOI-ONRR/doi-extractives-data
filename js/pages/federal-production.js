@@ -3,6 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+  var COUNTRY = 'DE';
   var colorscheme = colorbrewer.GnBu;
   var lightestGreen = '#e6f2e1';
   colorscheme[3][0] = colorscheme[5][0] = colorscheme[7][0] = lightestGreen;
@@ -112,9 +113,15 @@
   function render(state, previous) {
     // console.time('render');
     var product = state.get('product');
+    var region = state.get('region');
     root
       .classed('non-product', !product)
       .classed('has-product', !!product);
+
+    root.select('#region-selector').attr('disabled', product ? true : null);
+    root.select('#product-selector').attr('disabled', region ? true : null);
+    root.select('.clear-filters').style('display', (product || region) ? 'block' : null);
+    root.select('.back-btn').style('display', (product || region) ? 'inline-block' : null);
 
     var units;
     if (product) {
@@ -122,6 +129,9 @@
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
       formatNumber = eiti.format(',.0f');
+    } else if (region) {
+      formatNumber = eiti.format(',.0f');
+      root.selectAll('.state').text(REGION_ID_NAME[region]);
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -136,7 +146,7 @@
       this.value = state.get(this.name) || '';
     });
 
-    var region = state.get('region') || 'US';
+    var region = state.get('region') || COUNTRY;
     var selected = regionSections
       .classed('active', function() {
         return this.id === region;
@@ -183,7 +193,8 @@
   }
 
   function renderRegion(selection, state) {
-    var regionId = state.get('region') || 'US';
+    var regionId = state.get('region') || COUNTRY;
+    var isState = !!state.get('region');
     var product = state.get('product');
     var fields = getFields(regionId);
 
@@ -214,53 +225,68 @@
             name: 'Total'
           }
         })
-        .call(updateRegionRow);
+        .call(updateRegionRow, isState);
 
       var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
 
         switch (regionId) {
-          case 'US':
+          case COUNTRY:
             subregions.on('click.mutate', eventMutator('region', 'id'));
             break;
         }
 
-        var features = subregions.data();
-        var rollup = product
-          ? function(d) {
-              return d3.sum(d, getter(fields.value));
-            }
-          : function(d) {
-              return unique(d, 'Product').length;
-            };
+        var features = [];
 
-        var dataByFeatureId = d3.nest()
+        if (isState) {
+          features = data.map(function(d) {
+            return {
+              id: d.Product,
+              value: d.Volume,
+              properties: {
+                name: d.Product
+              }
+            };
+          });
+        }
+        else {
+          features = subregions.data();
+          var rollup = product
+            ? function(d) {
+                return d3.sum(d, getter(fields.value));
+              }
+            : function(d) {
+                return unique(d, 'Product').length;
+              };
+
+          var dataByFeatureId = d3.nest()
           .key(getter(fields.subregion || fields.region))
           .rollup(rollup)
           .map(data);
 
 
-        var featureId = getter(fields.featureId);
-        features.forEach(function(f) {
-          var id = featureId(f);
-          f.value = dataByFeatureId[id];
-        });
-
-        if (state.get('product')) {
-          var withheld = data.filter(function(d) {
-            return d[fields.region] === 'Withheld';
+          var featureId = getter(fields.featureId);
+          features.forEach(function(f) {
+            var id = featureId(f);
+            f.value = dataByFeatureId[id];
           });
 
-          if (withheld.length) {
-            console.log('got %d withheld rows:', withheld);
-            features.push({
-              id: 'W',
-              value: rollup(withheld),
-              properties: {
-                name: '(Withheld)'
-              }
+          if (state.get('product')) {
+            var withheld = data.filter(function(d) {
+              return d[fields.region] === 'Withheld';
             });
+
+            if (withheld.length) {
+              console.log('got %d withheld rows:', withheld);
+              features.push({
+                id: 'W',
+                value: rollup(withheld),
+                properties: {
+                  name: '(Withheld)'
+                }
+              });
+            }
           }
         }
 
@@ -371,7 +397,7 @@
     }
   }
 
-  function updateRegionRow(selection) {
+  function updateRegionRow(selection, isState) {
     selection.select('.subregion-name .text')
       .text(function(f) {
         return isOffshore(f);
@@ -390,7 +416,8 @@
 
     selection.select('.value')
       .text(function(d) {
-        return d.value ? formatNumber(d.value) : '(withheld)';
+        var val = isState ? d.value + ' products' : formatNumber(d.value);
+        return d.value ? val : '0 products';
       });
   }
 
@@ -498,7 +525,7 @@
     }
     switch (regionId.length) {
       case 2:
-        if (regionId !== 'US') {
+        if (regionId !== COUNTRY) {
           fields.region = 'FIPS';
           fields.featureId = function(f) {
             return f.properties.FIPS;
@@ -555,7 +582,7 @@
       h = viewBox[3];
     } else {
       // otherwise, set up the viewBox with our default dimensions
-      selection.attr('viewBox', [0, 0, w, h].join(' '));
+      // selection.attr('viewBox', [0, 0, w, h].join(' '));
     }
 
     var left = 0; // XXX need to make room for axis labels
@@ -746,11 +773,12 @@
     function getDataURL(state) {
       var region = state.get('region');
       var path = eiti.data.path;
-      path += (!region || region === 'US')
-        ? 'regional/'
-        : region.length === 2
-          ? 'county/by-state/' + region + '/'
-          : 'offshore/';
+      path = '/data/regional/';
+      // path += (!region || region === COUNTRY)
+      //   ? 'regional/'
+      //   : region.length === 2
+      //     ? 'county/by-state/' + region + '/'
+      //     : 'offshore/';
       return path + 'production.tsv';
     }
 
@@ -775,18 +803,18 @@
         });
       }
 
-      var products = unique(data, 'Product')
-        .sort(d3.ascending);
-      dispatch.products(products);
-
       var region = state.get('region');
       if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d[fields.region] === region;
         });
       }
+
+      var products = unique(data, 'Product')
+        .sort(d3.ascending);
+      dispatch.products(products);
 
       var product = state.get('product');
       if (product) {
@@ -837,7 +865,7 @@
     var data = {
       commodity: commodity,
       product: product,
-      region: isOffshore(state.get('region'), true) || REGION_ID_NAME[state.get('region') || 'US'],
+      region: isOffshore(state.get('region'), true) || REGION_ID_NAME[state.get('region') || COUNTRY],
       year: state.get('year')
     };
 

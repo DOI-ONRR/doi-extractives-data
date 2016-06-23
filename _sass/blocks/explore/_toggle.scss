@@ -55,7 +55,7 @@
   padding-right: $base-padding;
   -webkit-font-smoothing: antialiased;
 
-  @include respond-to(medium-up){
+  @include respond-to(medium-up) {
     display: inline-block;
   }
 }
@@ -64,4 +64,20 @@
   background: transparent;
   color: $blue-alt;
   float: right;
+}
+
+.toggle-filters-container {
+  float:right;
+
+  .toggle-desktop {
+    float: none;
+    display: block;
+  }
+
+  .clear-filters {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    display: none;
+  }
 }

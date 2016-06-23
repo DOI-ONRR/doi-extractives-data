@@ -27,9 +27,13 @@ permalink: /explore/federal-production/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
 
-      <button class="toggle-filters toggle-desktop" is="eiti-toggle"
-        aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
-        data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
+
+      <div class="toggle-filters-container">
+        <button class="toggle-filters toggle-desktop" is="eiti-toggle"
+          aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
+          data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
+        <a class="clear-filters" href="#year=2014">(Clear filters)</a>
+      </div>
 
       <form id="filters" aria-hidden="true" class="filters">
 

@@ -118,6 +118,10 @@
       .classed('non-product', !product)
       .classed('has-product', !!product);
 
+    root.select('#region-selector').attr('disabled', product ? true : null);
+    root.select('#product-selector').attr('disabled', region ? true : null);
+    root.select('.clear-filters').style('display', (product || region) ? 'block' : null);
+
     var units;
     if (product) {
       var match = product.match(/ (\(.+\))\s*$/);

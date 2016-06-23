@@ -19,7 +19,6 @@
           var steps = this.getAttribute('steps') || 5;
           var units = this.getAttribute('units') || '';
 
-          var stepDomain = [1, 9];
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
@@ -50,9 +49,6 @@
             .domain(domain)
             .range(colors);
 
-          var scaleSteps = d3.scale[type]()
-            .domain(stepDomain)
-            .range(colors);
 
           marks.attr('fill', scale);
 
@@ -75,13 +71,13 @@
             return values.filter(uniq);
           }
 
-          var legend = d3.select(this)
-            .select('.legend-svg');
+          var svgLegend = d3.select(this)
+            .select(".legend-svg");
 
-          legend.append('g')
-            .attr('class', 'legendScale');
+          svgLegend.append("g")
+            .attr("class", "legendScale");
 
-          var legendColor = d3.legend.color()
+          var legendSettings = d3.legend.color()
             .labelFormat(format.si)
             .useClass(false)
             .ascending(true)
@@ -89,8 +85,8 @@
             .shapePadding(6)
             .scale(scale);
 
-          legend.select('.legendScale')
-            .call(legendColor);
+          svgLegend.select(".legendScale")
+            .call(legendSettings);
 
           // reverse because the scale is in ascending order
           var _steps = d3.range(0,9).reverse();
@@ -99,9 +95,9 @@
           var uniqueSteps = getUnique(marks.data(), _steps, domain);
 
           // start consolidate (translate) visible cells
-          var cells = legend.selectAll('.cell');
-          var cellHeight = legendColor.shapeHeight() +
-            legendColor.shapePadding();
+          var cells = svgLegend.selectAll('.cell')
+          var cellHeight = legendSettings.shapeHeight() +
+            legendSettings.shapePadding();
           var count = 0;
           cells.each(function(cell, i){
             var present = uniqueSteps.indexOf(i) > -1;
@@ -109,12 +105,11 @@
             if (!present) {
               // hide cells swatches that aren't in the map
               cells[0][i].setAttribute('aria-hidden', true);
-              count++;
+              count++
             } else  {
               // trim spacing between swatches that are visible
-              var translateHeight = (i * cellHeight) - (count * cellHeight);
-              cells[0][i].setAttribute('transform',
-                'translate(0,' + translateHeight + ')');
+              var translateHeight = (i * cellHeight) - (count * cellHeight)
+              cells[0][i].setAttribute('transform', 'translate(0,' + translateHeight + ')');
             }
           });
           // end consolidation

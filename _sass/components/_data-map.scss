@@ -34,34 +34,26 @@ data-map {
       }
     }
   }
+}
 
-  .legend-swatch {
-    background-color: $green-land;
-    height: $legend-row-height;
-    margin-bottom: $base-padding-lite;
-    position: relative;
-    width: $legend-row-height;
-  }
+.legend-ownership-svg {
+  .cell {
+    .swatch {
+      fill: $green-land;
+    }
 
-  .legend-text {
-    line-height: $legend-row-height;
-  }
+    &.federal .swatch:last-of-type {
+      fill: $blackest-black;
+      opacity: $opacity-federal;
+    }
 
-  .swatch-layer {
-    // layer black to emulate svg layers
-    background-color: $blackest-black;
-    height: $legend-row-height;
-    opacity: $opacity-federal;
-    position: absolute;
-    width: $legend-row-height;
-
-    &.state {
+    &.state .swatch:last-of-type {
+      fill: $blackest-black;
       opacity: $opacity-state;
     }
+
   }
 }
-// end land owernship map
-
 
 // map legend
 .details-container {
@@ -71,33 +63,18 @@ data-map {
   right: 0;
 }
 
-$legend-row-height: 1em;
+.legend-svg,
+.legend-ownership-svg {
+  border: none;
+  padding: $base-padding-lite;
+  width: 200px;
 
-[legend-swatch][data-step],
-.legend-swatch {
-  display: inline-block;
-  float: left;
-  height: $legend-row-height;
-  margin-right: $base-padding-lite;
-  width: $legend-row-height;
-}
-
-[legend-swatch] {
-  &[aria-hidden=true] {
-    display: none;
+  .swatch {
+    stroke: $neutral-gray;
+    stroke-width: 1;
   }
 }
 
-[legend-start],
-[legend-end]
- {
-  display: inline-block;
-  float: left;
-  line-height: $legend-row-height;
-  padding-bottom: $base-padding-lite;
-}
 
-[legend-end] {
-  padding-left: 0.1em;
-}
-// end map legend
+
+

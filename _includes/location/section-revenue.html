@@ -75,7 +75,7 @@
 
   <section id="commodities-revenue" class="chart-list has-intro">
 
-    <h4>Revenue from extraction on federal land in Utah over time</h3>
+    <h4>Revenue from extraction on federal land in {{ state_name }} over time</h3>
     <p class="chart-list-intro">In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government, and companies that extract natural resources on federal land pay fees to the federal government. This chart shows how much federal revenue was collected each year in {{ state_name }}.</p>
 
     {% for commodity in revenue_commodities %}

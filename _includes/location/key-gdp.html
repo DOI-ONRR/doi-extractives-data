@@ -2,10 +2,10 @@
 {% assign gdp_dollars = gdp[include.year].dollars %}
 
 {% if gdp_dollars > 0 %}
-  The extractives industry contributed
-  <a href="#gdp">${{ gdp_dollars | intcomma }}</a>
-  toward {{ include.location_name }}'s GDP in {{ include.year }}, or
-  {{ gdp[include.year].percent | percent }}%.
+  Extractive industries accounted for
+  <a href="#gdp">{{ gdp[include.year].percent | percent }} percent</a>
+  of {{ include.location_name }}'s gross domestic product (GDP) in {{ include.year }}.
+  <!-- ${{ gdp_dollars | intcomma }} -->
 {% else %}
   The extractives industry did not have any effect on GDP in
   {{ include.location_name }} in {{ include.year }}.

@@ -1,12 +1,18 @@
 {% assign revenue_commodities = site.data.state_revenues[include.location_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[include.year].revenue %}
 
-{% if revenue_total %}
-  {{ include.location_name }} generated
-  <strong>${{ revenue_total | intcomma }} in federal revenue</strong>
-  from
-  <a href="#revenue">{{ revenue_commodities | size }} commodit{{ revenue_commodities | size | plural: 'ies', 'y' }}</a>
-  in {{ include.year }}.
+
+In {{ include.year }},
+natural resource extraction on federal land in
+{{ include.location_name }} generated 
+  {% if revenue_total %}
+    <a href="#revenue">${{ revenue_total | intcomma }} in federal revenue</a>.
+  {% else %}
+    no federal revenue.
+  {% endif %}
+
+
+<!-- {% if revenue_total %}
   {% if include.top %}
     {% assign top_revenue_products = site.data.top_state_products[include.location_id].revenue[include.year] %}
     {% if top_revenue_products %}
@@ -23,4 +29,4 @@
   {% endif %}
 {% else %}
   {{ include.location_name }} generated no federal revenue in {{ include.year }}.
-{% endif %}
+{% endif %} -->

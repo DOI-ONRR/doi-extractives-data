@@ -41,55 +41,24 @@ permalink: /explore/production-charts/
       <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h2 class="h3">Filter federal production</h2>
-          <p>Select a product to see production levels in the appropriate unit of measure.</p>
+          <h2 class="h3">Filter by year</h2>
         </div>
 
         <div class="container-left-6">
           <div id="product-filter" class="filter">
-            <label for="product-selector">Product</label>
+            <label for="product-selector">Year</label>
             <select id="product-selector" name="product">
-              <option value="">All products</option>
+              <option value="">2014</option>
             </select>
           </div>
         </div>
-        <div class="container-right-6">
-          <div class="filter">
-            <label for="region-selector">Region</label>
-            <select id="region-selector" name="region">
-              <option value="">All Germany</option>
-              <optgroup label="States">
-                {% for state in site.data.states %}
-                <option value="{{ state.id }}">{{ state.name }}</option>
-                {% endfor %}
-              </optgroup>
-            </select>
-          </div>
-        </div>
-        {% if site.data.production.years.size > 1 %}
-        {% assign year_sel_display = 'block' %}
-        {% else %}
-        {% assign year_sel_display = 'none' %}
-        {% endif %}
-        <div class="container-left" style="display: {{year_sel_display}}">
-          <label for="year-selector">Years <span class="units"></span></label>
-        </div>
-        <svg id="timeline" class="timeline" viewBox="0 0 1024 60" style="display: {{year_sel_display}}"></svg>
-
-        <div class="filter container filters-last" style="display: {{year_sel_display}}">
-          <eiti-slider id="year-selector" name="year"
-            min="{{ site.data.production.years | sort | first }}" max="{{ site.data.production.years | sort | last }}" snap="1" value={{ site.data.production.years | sort | last }}>
-          </eiti-slider>
-        </div>
-
       </form>
 
       <h1 data-filter-description="" class="filter-description">
         <a class="back-btn" href="#year=2014">
           <img src="/img/left-arrow.png" alt="">
         </a>
-        <span href="#product-selector" class="filter-part" data-key="product">All</span>
-        production on federal lands in
+        Production on federal lands in
         <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </h1>
@@ -116,7 +85,6 @@ permalink: /explore/production-charts/
             <div id="chart1"></div>
             <table class="legend" id="legend1"></table>
           </div>
-          <hr/>
           <div class="container">
             <div id="chart2"></div>
             <table class="legend" id="legend2"></table>
@@ -315,7 +283,7 @@ $(document).ready(function(){
         ticks.push(entry['Label']);
     });
     legendTable("legend1",category);
-    plotGraph('chart1',dataSlices,colors,'Wert der in Deutschland produzierten Rohstoffe im Jahr 2014',ticks,jsonData)
+    plotGraph('chart1',dataSlices,colors,'Wert der in Deutschland produzierten Rohstoffe',ticks,jsonData)
 /* end First Graph */
 
 /* Start Second Graph */
@@ -336,8 +304,9 @@ $(document).ready(function(){
         ticks1.push(entry['Label']);
     });
     legendTable("legend2",category1);
-    plotGraph('chart2',dataSlices1,colors1,'Rohstoffproduktion im Jahr 2014',ticks1,jsonData1)
+    plotGraph('chart2',dataSlices1,colors1,'Rohstoffproduktion',ticks1,jsonData1)
 });
 /* end Second Graph */
 
 </script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>

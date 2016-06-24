@@ -9,7 +9,7 @@ module EITI
     #
     # style="padding-bottom: {{ viewbox | svg_viewbox_padding }}%;"
     def svg_viewbox_padding(viewbox, width = nil)
-      if !width
+      if !width || width == "inherit"
         width = 100
       end
 

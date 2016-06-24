@@ -73,11 +73,11 @@ svg.map {
   // To make land ownership more green!
   &.ownership {
     .ownership {
-      opacity: 0.25;
+      opacity: $opacity-state;
     }
 
     .federal.ownership {
-      opacity: 0.5;
+      opacity: $opacity-federal;
     }
 
     .counties.features {

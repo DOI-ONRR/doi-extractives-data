@@ -71,8 +71,33 @@
     <h3 class="chart-title">County-Level Employment</h3>
 
     <div class="row-container">
+      {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
 
-      <div class="table-container">
+      <div class="text-container">
+        <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
+      </div>
+
+      <div class="map-container">
+        <figure class="container">
+          <data-map color-scheme="Reds" steps="{{ steps }}">
+            {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+            {% capture caption %}County extractives employment (jobs, {{ year }}){% endcapture %}
+
+            {%
+              include county-map.html
+              state=state_id
+              counties=county_jobs
+              value=value_key
+              steps=steps
+              inherit_width=true
+              caption=caption
+              toggle=toggle
+            %}
+          </data-map>
+        </figure>
+      </div><!-- /.map-container -->
+
+      <div class="table-container" id="{{ toggle }}" aria-hidden="true">
         {%
           include location/display-jobs-county.html
           year=year
@@ -81,24 +106,7 @@
         %}
       </div><!-- /.table-container -->
 
-      <div class="map-container">
-        <figure>
-          <data-map color-scheme="Reds" steps="9">
-            {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-            {%
-              include county-map.html
-              state=state_id
-              counties=county_jobs
-              value=value_key
-            %}
-          </data-map>
-          <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
-        </figure>
-      </div><!-- /.map-container -->
 
-      <div class="text-container">
-        <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
-      </div>
 
     </div><!-- /.row-container -->
 

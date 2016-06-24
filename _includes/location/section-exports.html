@@ -2,13 +2,14 @@
 
 <section id="exports" class="economic exports">
 
-  <h2>Exports</h2>
+  <h3>Exports</h3>
 
   <div class="chart-list has-intro">
 
-  {% if export_commodities %}
     <div class="chart-list-intro">
-      <p>{{ exports_summary | strip_html }}</p>
+
+      {% include location/key-exports.html %}
+    
     </div>
 
     {% for commodity in export_commodities %}
@@ -50,9 +51,7 @@
         </section><!-- /.chart-item -->
       {% endif %}
     {% endfor %}
-  {% else %}
-    <p>In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.</p>
-  {% endif %}
+
   </div><!-- /.chart-list -->
 
   <p><a href="{{ site.baseurl }}/downloads/#exports">Exports data comes from the U.S. Census Bureau</a>.</p>

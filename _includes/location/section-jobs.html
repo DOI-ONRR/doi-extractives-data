@@ -6,16 +6,17 @@
 
 <section id="employment" class="economic employment">
 
-  <h2>Employment</h2>
+  <h3>Employment</h3>
 
   <div class="chart-list">
 
     <div class="chart-list-intro">
-      <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
+      <p>In {{ year }},
         {% if jobs_count %}
           there were
           {{ jobs_count | intcomma }}
-          jobs in the extractive industries, which represented
+          jobs in extractive industries in 
+          {{ state_name }}, or
           {{ jobs_percent | percent }}% of state-wide employment.
         {% else %}
           there were no jobs in the extractive industries.
@@ -27,7 +28,7 @@
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title">Extractives employment ({{ _metric }})</h3>
+      <h3 class="chart-title">Number of jobs in extractive industries</h3>
 
       <figure class="chart">
         <eiti-line-chart

@@ -4,21 +4,128 @@ layout: default
 permalink: /explore/production-charts/
 ---
 
-<section id="reconciliation" class="explore-subpage container container-margin">
+<section id="federal-production" class="explore-subpage container container-margin">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <h1>Rohstoffgewinnung in Deutschland</h1>
+      <p>Der Gesamtwert der in Deutschland produzierten Rohstoffe beträgt ca. 13,5 Mrd. Euro (Jahr 2014, Quelle BGR). Informationen aus der Berichterstattung im Rahmen der D-EITI werden voraussichtlich ab 2017 verfügbar sein.</p>
+      <p>Aktuelle Daten aller Produktionsbetriebe des Bergbaus in Deutschland und eine Beschreibung der Lage des deutschen Bergbaus im Zusammenhang mit der gesamtwirtschaftlichen Entwicklung bietet das Bundesministerium für Wirtschaft und Energie (BMWi) in Zusammenarbeit mit den Bergbehörden der Bundesländer im 66. Jahresbericht 2015 in der Reihe
+        <a class="links" href="http://www.bmwi.de/DE/Mediathek/publikationen,did=747128.html">
+          „Der Bergbau in der Bundesrepublik Deutschland – Bergwirtschaft und Statistik„.
+        </a>
+      </p>
+      <p>Ausführliche Fachinformationen und Karten zu den Bodenschätzen in Deutschland sind bei den
+        <a class="links" href="http://www.infogeo.de/home/index_html">
+        Staatlichen Geologischen Diensten Deutschlands
+        </a>
+        verfügbar.
+      </p>
+      <p>Die Bundesanstalt für Geowissenschaften und Rohstoffe (BGR) legt seit 1980 in jährlicher Folge den Bericht zur „
+        <a class="links" href="http://www.bgr.bund.de/DE/Themen/Min_rohstoffe/Produkte/produkte_node.html#rohstoffsituation">
+          Rohstoffsituation in Deutschland“ </a>
+          vor.</p>
 
-  <div class="graph">
-    <div class="container">
-      <div id="chart1"></div>
-      <table class="legend" id="legend1"></table>
     </div>
-    <div class="container-margin">
-      <div id="chart2"></div>
-      <table class="legend" id="legend2"></table>
-    </div>
-
   </div>
-</section>
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
 
+
+      <div class="toggle-filters-container">
+        <button class="toggle-filters toggle-desktop" is="eiti-toggle"
+          aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
+          data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
+        <a class="clear-filters" href="#year=2014">(Clear filters)</a>
+      </div>
+
+      <form id="filters" aria-hidden="true" class="filters">
+
+        <div class="filters-heading">
+          <h2 class="h3">Filter federal production</h2>
+          <p>Select a product to see production levels in the appropriate unit of measure.</p>
+        </div>
+
+        <div class="container-left-6">
+          <div id="product-filter" class="filter">
+            <label for="product-selector">Product</label>
+            <select id="product-selector" name="product">
+              <option value="">All products</option>
+            </select>
+          </div>
+        </div>
+        <div class="container-right-6">
+          <div class="filter">
+            <label for="region-selector">Region</label>
+            <select id="region-selector" name="region">
+              <option value="">All Germany</option>
+              <optgroup label="States">
+                {% for state in site.data.states %}
+                <option value="{{ state.id }}">{{ state.name }}</option>
+                {% endfor %}
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        {% if site.data.production.years.size > 1 %}
+        {% assign year_sel_display = 'block' %}
+        {% else %}
+        {% assign year_sel_display = 'none' %}
+        {% endif %}
+        <div class="container-left" style="display: {{year_sel_display}}">
+          <label for="year-selector">Years <span class="units"></span></label>
+        </div>
+        <svg id="timeline" class="timeline" viewBox="0 0 1024 60" style="display: {{year_sel_display}}"></svg>
+
+        <div class="filter container filters-last" style="display: {{year_sel_display}}">
+          <eiti-slider id="year-selector" name="year"
+            min="{{ site.data.production.years | sort | first }}" max="{{ site.data.production.years | sort | last }}" snap="1" value={{ site.data.production.years | sort | last }}>
+          </eiti-slider>
+        </div>
+
+      </form>
+
+      <h1 data-filter-description="" class="filter-description">
+        <a class="back-btn" href="#year=2014">
+          <img src="/img/left-arrow.png" alt="">
+        </a>
+        <span href="#product-selector" class="filter-part" data-key="product">All</span>
+        production on federal lands in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+      </h1>
+
+      <div class="container">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+      </div>
+
+    </div>
+
+    <div class="filter-description_wrapper">
+      <h1 data-filter-description="" class="filter-description filter-description_open">
+        <span href="#product-selector" class="filter-part" data-key="product">All</span>
+        production on federal lands in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+      </h1>
+    </div>
+
+    <div class="explore-exploration slab-alpha">
+      <div class="regions container">
+        <div class="graph">
+          <div class="container">
+            <div id="chart1"></div>
+            <table class="legend" id="legend1"></table>
+          </div>
+          <hr/>
+          <div class="container">
+            <div id="chart2"></div>
+            <table class="legend" id="legend2"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.js"></script>
@@ -27,24 +134,39 @@ permalink: /explore/production-charts/
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pointLabels.min.js"></script>
-<script>
 
+<script>
 $(document).ready(function(){
 
-  //   function loadJSON(callback) {
-  //     var xobj = new XMLHttpRequest();
-  //     xobj.overrideMimeType("application/json");
-  //     xobj.open('GET', 'category.json', true);
-  //     xobj.onreadystatechange = function () {
-  //           if (xobj.readyState == 4 && xobj.status == "200") {
-  //             callback(xobj.responseText);
-  //           }
-  //     };
-  //     xobj.send(null);
-  //  }
-  //  loadJSON(function(response) {
-  //   var category = JSON.parse(response);
-  //   });
+  // $.ajax({
+  //       type: "GET",
+  //       url: "../data.tsv",
+  //       dataType: "text",
+  //       success: function(data) {processData(data);}
+  //       });
+  //   function processData(data) {
+  //       var lines = data.split(/\r\n|\n/);
+  //
+  //       var time = [];
+  //       var data1 = [];
+  //       var data2 = [];
+  //       var data3 = [];
+  //
+  //       var headings = lines[0].split(' '); // Splice up the first row to get the headings
+  //
+  //       for (var j=1; j<lines.length; j++) {
+  //       var values = lines[j].split(' '); // Split up the comma seperated values
+  //          // We read the key,1st, 2nd and 3rd rows
+  //          time.push(values[0]); // Read in as string
+  //          // Recommended to read in as float, since we'll be doing some operations on this later.
+  //          data1.push(parseFloat(values[1]));
+  //          data2.push(parseFloat(values[2]));
+  //          data3.push(parseFloat(values[3]));
+  //
+  //       }
+  //       var x= 0;
+  //     console.log(headings[0]+" : "+time[x]+headings[1]+" : "+data1[x]+headings[2]+" : "+data2[x]+headings[4]+" : "+data2[x]);
+  //     }
 
   var category = [
       {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}

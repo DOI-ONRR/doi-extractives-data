@@ -11,6 +11,10 @@
 {% assign minerals_checked = false %}
 {% assign geothermal_checked = false %}
 
+{% assign oilgas_content_checked = false %}
+{% assign minerals_content_checked = false %}
+
+
 
 <table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
@@ -44,40 +48,43 @@
           {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
               {% include location/revenue-type-row.html %}
           {% endif %}
+
+          {% if oilgas_content_checked != true %}
+            {% assign oilgas_content_checked = true %}
+            <tr>
+              <th class="table-arrow_box-subcategory">Onshore</th>
+              <td>
+                <strong>Bonus</strong><br/>
+                Amount paid for the lease by the highest bidder
+              </td>
+              <td>
+                <strong>$1.50</strong> annual rent per acre for the first 5 years.<br/>
+                <strong>$2</strong> annual rent per acre thereafter
+              </td>
+              <td>
+                <strong>12.5%</strong> of production value in royalties
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="table-arrow_box-subcategory">Offshore</th>
+              <td>
+                <strong>Bonus</strong>
+              </td>
+              <td>
+                <strong>$7</strong> or <strong>$11</strong> annual rent per acre
+                increasing over time up to<strong>$44</strong> per acre in some cases
+              </td>
+              <td>
+                <strong>12.5%</strong>, <strong>16.67%</strong>, or
+                <strong>18.75%</strong> of production value in royalties
+              </td>
+              <td></td>
+            </tr>
+          {% endif %}
         </tbody>
       {% endif %}
     {% endfor %}
-
-    <tr>
-      <th class="table-arrow_box-subcategory">Onshore</th>
-      <td>
-        <strong>Bonus</strong><br/>
-        Amount paid for the lease by the highest bidder
-      </td>
-      <td>
-        <strong>$1.50</strong> annual rent per acre for the first 5 years.<br/>
-        <strong>$2</strong> annual rent per acre thereafter
-      </td>
-      <td>
-        <strong>12.5%</strong> of production value in royalties
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <th class="table-arrow_box-subcategory">Offshore</th>
-      <td>
-        <strong>Bonus</strong>
-      </td>
-      <td>
-        <strong>$7</strong> or <strong>$11</strong> annual rent per acre
-        increasing over time up to<strong>$44</strong> per acre in some cases
-      </td>
-      <td>
-        <strong>12.5%</strong>, <strong>16.67%</strong>, or
-        <strong>18.75%</strong> of production value in royalties
-      </td>
-      <td></td>
-    </tr>
 
 
     {% for commodity in revenue_types %}
@@ -96,6 +103,34 @@
       {% if commodity_name == 'Coal' %}
         <tbody id="revenue-types-{{ commodity_name | slugify }}">
           {% include location/revenue-type-row.html %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Surface</th>
+            <td>
+              <strong>Bonus</strong>
+            </td>
+            <td>
+              <strong>$3</strong> annual rent per acre
+            </td>
+            <td>
+              <strong>12.5%</strong> of production value in royalties<br/>
+              <strong>$0.28</strong> per ton Abandoned Mine Land Fee
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="table-arrow_box-subcategory">Subsurface</th>
+            <td>
+              <strong>Bonus</strong>
+            </td>
+            <td>
+              <strong>$3</strong> annual rent per acre
+            </td>
+            <td>
+              <strong>8%</strong> of production value in royalties<br/>
+              <strong>$0.12</strong> per ton Abandoned Mine Land Fee
+            </td>
+            <td></td>
+          </tr>
         </tbody>
       {% endif %}
     {% endfor %}
@@ -115,6 +150,29 @@
       {% if commodity_name == 'Geothermal' %}
         <tbody id="revenue-types-{{ commodity_name | slugify }}">
           {% include location/revenue-type-row.html %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+              <strong>Royalty rates</strong> are established on a case-by-case basis
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="table-arrow_box-subcategory">After August 8, 2005</th>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+              <strong>Royalty rates</strong> are <strong>1.75%</strong> for the first
+              10 years of production, and <strong>3.5%</strong> thereafter
+            </td>
+            <td></td>
+          </tr>
         </tbody>
       {% endif %}
     {% endfor %}
@@ -134,6 +192,38 @@
       {% if minerals_list contains commodity_name %}
         <tbody id="revenue-types-{{ commodity_name | slugify }}">
           {% include location/revenue-type-row.html %}
+          {% if minerals_content_checked != true %}
+            {% assign minerals_content_checked = true %}
+            <tr>
+              <th class="table-arrow_box-subcategory">Public Domain Lands</th>
+              <td>
+                <strong>$20</strong> processing fee<br/>
+                <strong>$37</strong> location fee<br/>
+                <strong>$155</strong> initial maintenance fee
+              </td>
+              <td>
+                <strong>$155</strong> annual maintenance fee per claim
+              </td>
+              <td>
+                <strong>No royalties</strong> are required to be paid
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="table-arrow_box-subcategory">Acquired Lands</th>
+              <td>
+                <strong>$6,500</strong> prospecting permit fee
+              </td>
+              <td>
+                <strong>$0.50</strong> annual prospecting fee per acre<br/>
+                <strong>$37</strong> annual rent per acre
+              </td>
+              <td>
+                <strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
+              </td>
+              <td></td>
+            </tr>
+          {% endif %}
          </tbody>
       {% endif %}
 
@@ -156,4 +246,11 @@
         </tbody>
       {% endif %}
     {% endfor %}
+
+    <tr class="table-arrow_box-category"><td colspan="5">Income Tax</td></tr>
+    <tr>
+      <td colspan="5"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
+      </td>
+    </tr>
+
 </table>

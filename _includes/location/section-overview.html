@@ -1,13 +1,8 @@
 <section id="overview">
 
-<!-- <p>USEITI reporting includes data about extractive industries in each state. This page summarizes information from the USEITI reporting process about natural resources in {{ state_name }} and what role extractive industries play in the state economy.</p> -->
-
-<!-- <p>The USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state, so this page also includes state legal and fiscal information.</p>
-<p>To learn more about communities in {{ state_name }} with significant extractive activity, see case studies.</p>
-<p>{{ state_name }} has opted into USEITI sub-national reporting, so this page also includes information about extractive industries activity on state-owned land.</p> -->
-
   <section class="panel-gray container-outer">
 
+    <!-- Includes the GDP percentage, then outputs employment percentage if it's over 2%. If the state leads US production for any commodities, those commodities are listed along with percentage of US production. -->
     <p>
       {%
         include location/key-gdp.html
@@ -32,25 +27,18 @@
       %}
     </p>
 
+    <!-- Sets up the federal-land focus of USEITI data, specifies what percentage of land is federally owned, and outputs the total revenue from federal land. -->
     <p>
-      USEITI focuses on <!-- has the most --> data about natural resource extraction on federal land, which represents {{ site.data.land_stats[state_id].federal_percent | percent }} percent of all land in {{ state_name }}. 
+      USEITI focuses on data about natural resource extraction on {{ "federal land" | term }}, which represents {{ site.data.land_stats[state_id].federal_percent | percent }}% of all land in {{ state_name }}. 
       {%
         include location/key-revenue.html
         location_id=state_id
         location_name=state_name
         year=year
         top=top_products
-      %}</p>
-
-    <!--
-      {% capture disbursements_summary %}
-      {%
-        include location/key-disbursements.html
-        location_id=state_id
-        location_name=state_name
-        year=year
       %}
-      {% endcapture %}{{ disbursements_summary }}
-    -->
+    </p>
+
   </section>
+
 </section>

@@ -2,14 +2,14 @@
 
 <section id="gdp" class="economic gdp">
 
-  <h2>Gross Domestic Product (GDP)</h2>
+  <h3>Gross Domestic Product (GDP)</h3>
 
   <div class="chart-list has-intro">
 
     <div class="chart-list-intro">
       <p>Extractive industries accounted for
         {% if gdp[year].dollars %}
-          {{ gdp[year].percent | percent }} percent (or
+          {{ gdp[year].percent | percent }}% (or
           ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
         {% else %}
           The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.

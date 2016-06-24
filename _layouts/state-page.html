@@ -3,40 +3,35 @@ layout: default
 nav_items:
   - name: overview
     title: Overview
-  - name: ownership
-    title: Land ownership
-  - name: revenue
-    title: Revenue
-    subnav_items:
-      - name: federal-revenue
-        title: Federal land
-      - name: fee-summaries
-        title: Fee summaries
-      - name: commodities-revenue
-        title: Commodities
-      - name: state-local-revenue
-        title: State land
-      - name: private-revenue
-        title: Private land
   - name: production
     title: Production
     subnav_items:
-      - name: all-production
-        title: Entire state
       - name: federal-production
         title: Federal land
       - name: state-local-production
         title: State land
       - name: private-land-production
         title: Private land
-  - name: gdp
-    title: Economic impact
-  - name: employment
-    title: Employment
-  - name: exports
-    title: Exports
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal land
+      - name: state-local-revenue
+        title: State land
+      - name: private-revenue
+        title: Private land
   - name: disbursements
     title: Disbursements
+  - name: economic-impact
+    title: Economic impact
+    subnav_items:
+    - name: gdp
+      title: GDP
+    - name: employment
+      title: Jobs
+    - name: exports
+      title: Exports
 ---
 
 {% assign state_name = page.title %}
@@ -59,11 +54,8 @@ nav_items:
 
     {% include location/section-overview.html %}
 
-    {% include location/section-ownership.html %}
-
-    {% include location/section-revenue.html %}
-
     <!-- {% include location/section-process.html %} -->
+
     <section id="production">
       {% include location/section-all-production.html %}
 
@@ -72,13 +64,20 @@ nav_items:
       {% include location/section-state-production.html %}
     </section>
 
-    {% include location/section-gdp.html %}
-
-    {% include location/section-jobs.html %}
-
-    {% include location/section-exports.html %}
+    {% include location/section-revenue.html %}
 
     {% include location/section-disbursements.html %}
+
+    <section id="economic-impact">
+    <h2>Economic Impact</h2>
+
+      {% include location/section-gdp.html %}
+
+      {% include location/section-jobs.html %}
+
+      {% include location/section-exports.html %}
+    </section>
+
 
     <!-- XXX setting display: none on this prevents the mask from working -->
     <svg width="0" height="0">

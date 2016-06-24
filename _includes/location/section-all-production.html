@@ -4,11 +4,7 @@
 
   <h2>Natural resource production in {{ state_name }}</h2>
 
-  <h3>Production in all of {{ state_name }}</h3>
-
-  <p>The federal government collects data about all energy-related natural resources produced in each state on all lands, including federal, state, and privately owned property. (For coal, there is also data about mining in each county.)</p>
-
-  <p>In some cases, the specific amount of a resource produced in a state or county is withheld to protect trade secrets.</p>
+  <p>The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
 
   <div class="chart-list">
 
@@ -55,5 +51,6 @@
     </section>
   {% endfor %}
 
+  <p><a href="{{ site.baseurl }}/downloads/#production-all">Data about energy production on all land comes from the Energy Information Administration.</a></p>
   </div>
 </section>

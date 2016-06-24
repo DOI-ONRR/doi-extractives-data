@@ -1,16 +1,20 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
+{% assign federal_products_num = federal_products | size %}
 
 <section id="federal-production" class="federal production">
 
-  <h3>Natural resource production on federal land</h2>
+  <h3>Production on federal land in {{ state_name }}</h2>
 
-  <p>When companies extract natural resources on federal land, they report how much of each resource was extracted in each county.</p>
-  <p>In a few cases, usually where one company is extracting a resource in a county, production data is withheld to ensure there are no violations of the Trade Secrets Act.</p>
+  {% include location/section-ownership.html %}
 
   <section class="county-map-table">
 
-    <h3>Products</h3>
-
+    <h4>Natural resources extracted on federal land</h4>
+    
+    {% if federal_products_num == 0 %}
+      <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+    {% endif %}
+  
     <div class="chart-list">
 
     {% for product in federal_products %}

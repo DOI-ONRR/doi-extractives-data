@@ -3,18 +3,18 @@
   position: relative;
   top: -300px;
   left: -20px;
-  tbody {
-    tr {
-      td {
-        vertical-align: middle;
-        height: 15px;
-        width: 15px;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 0 10px 0 5px;
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+          height: 15px;
+          width: 15px;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 0 10px 0 5px;
+      }
+      }
     }
-    }
-  }
 }
 
 .graph {
@@ -40,17 +40,17 @@
       position: relative;
       top:0;
       left: 0;
-      tbody {
-        border: none !important;
-        tr {
-          td {
-            vertical-align: middle;
-            height: 15px;
-            width: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            padding: 0 10px 0 5px;
-        }
+        tbody {
+          border: none !importan;
+          tr {
+            td {
+              vertical-align: middle;
+              height: 15px;
+              width: 15px;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 0 10px 0 5px;
+          }
         }
       }
     }
@@ -65,11 +65,13 @@
   }
 }
 
-.jqplot-axis, .jqplot-title, .jqplot-point-label{
-  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+.jqplot-axis, .jqplot-point-label, .jqplot-yaxis-tick{
+  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 200;
 }
 
 .jqplot-title {
   text-align: left !important;
   padding-bottom: 20px !important;
+  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
 }

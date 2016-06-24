@@ -57,6 +57,12 @@ module EITI
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
+    # attempts to find a substring
+    # returns the value true if the key exists; otherwise, return false
+    def is_in(term, str)
+      (str.include? term) ? true : nil
+    end
+
   end
 
 end

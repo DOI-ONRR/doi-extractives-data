@@ -42,23 +42,14 @@ nav_items:
 {% assign top_products = 10 %}
 {% assign steps=9 %}
 
-<!-- Special cases -->
-{% assign is_case_study = page.is_case_study %}
-{% assign is_opt_in = page.is_opt_in %}
-{% assign is_priority_state = page.is_priority_state %}
-<!-- End special cases -->
 
-<!-- Special cases from site.data -->
-{% assign state_is_special = site.data.special_states[state_id] %}
-{% for special_state in site.data.special_states[state_id] %}
-  {% assign is_case_study = special_state.is_case_study %}
-  {% assign is_opt_in = special_state.is_opt_in %}
-  {% assign is_priority_state = special_state.is_priority_state %}
-{% endfor %}
-<!-- End special cases from site.data -->
+
+{% capture variable_path %}state_cases/{{ state_id }}/regulations.md{% endcapture %}
 
 
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
+
+
 
   <div>
     <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
@@ -66,9 +57,19 @@ nav_items:
   </div>
   <h1 id="title">{{ state_name }}</h1>
 
+  <h3>{{variable_path}}</h3>
+  <h3>{{state_id}}</h3>
+
+
+
+
   <div class="container-left-9">
 
     {% include location/section-overview.html %}
+
+    <!-- {% if is_priority_state %}
+      {{ state_regulations | markdownify }}
+    {% endif %} -->
 
     <!-- {% include location/section-process.html %} -->
 

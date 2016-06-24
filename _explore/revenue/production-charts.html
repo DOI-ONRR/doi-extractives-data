@@ -112,12 +112,12 @@ permalink: /explore/production-charts/
     <div class="explore-exploration slab-alpha">
       <div class="regions container">
         <div class="graph">
-          <div class="container">
+          <div class="container chart-container">
             <div id="chart1"></div>
             <table class="legend" id="legend1"></table>
           </div>
-          <hr/>
-          <div class="container">
+
+          <div class="container chart-container">
             <div id="chart2"></div>
             <table class="legend" id="legend2"></table>
           </div>
@@ -261,6 +261,7 @@ $(document).ready(function(){
       }
       return val;
     }
+    $('#'+chart).height(jsonDatas.length * 40);
     var plot2 = $.jqplot(chart, [slices], {
         animate: !$.jqplot.use_excanvas,
         seriesDefaults:{

@@ -1,8 +1,17 @@
-.legend {
-  float: right;
+.graph {
+  width: 650px;
+}
+
+.chart-container {
   position: relative;
-  top: -300px;
-  left: -20px;
+  margin-bottom: 30px;
+
+  table.legend {
+    margin-bottom: 0;
+    position: absolute;
+    top: 300px;
+    right: 20px;
+
     tbody {
       tr {
         td {
@@ -15,45 +24,21 @@
       }
       }
     }
-}
-
-.graph {
-  width: 650px;
-}
-
-#chart1 {
-  height: 600px;
-}
-
-#chart2 {
-  height: 700px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .graph {
-      width: 100%;
-    }
-    .legend {
+  .graph {
+    width: 100%;
+  }
+  .chart-container {
+    table.legend {
+      position: static;
       width: 100%;
       height: 100%;
       margin: 0 auto;
-      position: relative;
-      top:0;
-      left: 0;
-        tbody {
-          border: none !importan;
-          tr {
-            td {
-              vertical-align: middle;
-              height: 15px;
-              width: 15px;
-              font-size: 12px;
-              font-weight: bold;
-              padding: 0 10px 0 5px;
-          }
-        }
-      }
     }
+  }
 }
 
 .links {

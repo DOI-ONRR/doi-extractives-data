@@ -35,6 +35,11 @@
       background: $green-dark;
     }
 
+    .bar .bar .bar {
+      background: $green-darkest;
+      border-right: 1px solid $neutral-gray;
+    }
+
     &:not([data-value="0"]) {
       .bar {
         min-width: 1px;

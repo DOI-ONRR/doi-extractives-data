@@ -2,6 +2,9 @@
 
   var initialize = function() {
     this._cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
+    this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
+    this._cells = this._cells.concat(this.nested_cells)
+
     this.update();
   };
 
@@ -79,7 +82,11 @@
         if (!cell) {
           console.warn('no cell @', i);
           return;
+        } else if (cell.parentNode.hasAttribute('data-value')) {
+          console.warn('cell is child', i);
         }
+
+        var childCell = cell.querySelector('[data-value]');
 
         // TODO only do this if autolabel="true"?
         if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
@@ -93,6 +100,7 @@
             span.appendChild(text);
           }
         }
+
 
         var barExtent = cell.querySelector('.bar');
         if (barExtent) {
@@ -111,9 +119,28 @@
           }
         }
 
+        if (childCell) {
+          var childBar = document.createElement('div');
+          childBar.className = 'bar';
+          bar.appendChild(childBar);
+        }
+
         var value = +cell.dataset.value;
         var size = width(value);
-        bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+
+        if (childCell) {
+          var childValue = +childCell.dataset.value;
+          size = width(value) + width(childValue);
+          var diff = childValue - value;
+          var largerSize = diff > 0
+            ? width(childValue) / (size / 100)
+            : width(value) / (size / 100);
+          bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+          childBar.style.setProperty(sizeProperty, Math.abs(largerSize) + '%');
+        } else {
+          bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+        }
+
         if (offset) {
           bar.style.setProperty(offsetProperty, offset(value) + '%');
         } else {

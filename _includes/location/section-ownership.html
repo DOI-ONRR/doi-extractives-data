@@ -1,6 +1,7 @@
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
 
+<section class="container-outer land-ownership">
   <section class="text-container">
     <p><strong>In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government.</strong></p>
 
@@ -48,3 +49,4 @@
 
 
   </aside>
+</section>

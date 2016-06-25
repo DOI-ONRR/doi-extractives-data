@@ -46,10 +46,10 @@ nav_items:
 {% assign top_products = 10 %}
 {% assign steps=9 %}
 
-{% assign is_special_states = site.data.special_states[state_id] %}
-{% assign is_priority_state = 'priority' | is_in: is_special_states %}
-{% assign is_case_study_state = 'case_study' | is_in: is_special_states %}
-{% assign is_opt_in_state = 'opt_in' | is_in: is_special_states %}
+{% assign is_special_state = site.data.special_states[state_id] %}
+{% assign is_priority_state = 'priority' | is_in: is_special_state %}
+{% assign is_case_study_state = 'case_study' | is_in: is_special_state %}
+{% assign is_opt_in_state = 'opt_in' | is_in: is_special_state %}
 
 
 {% capture regulations %}

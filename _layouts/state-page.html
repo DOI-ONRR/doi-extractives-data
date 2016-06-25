@@ -32,6 +32,8 @@ nav_items:
       title: Jobs
     - name: exports
       title: Exports
+  - name: regulations
+    title: Regulations
 ---
 
 {% assign state_name = page.title %}
@@ -42,15 +44,15 @@ nav_items:
 {% assign top_products = 10 %}
 {% assign steps=9 %}
 
+{% capture regulations %}
+  {% include location/state-regulations.html state_ref = state_id %}
+{% endcapture %}
 
 
 {% capture variable_path %}state_cases/{{ state_id }}/regulations.md{% endcapture %}
 
 
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
-
-
-
   <div>
     <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
     /
@@ -66,12 +68,6 @@ nav_items:
   <div class="container-left-9">
 
     {% include location/section-overview.html %}
-
-    <!-- {% if is_priority_state %}
-      {{ state_regulations | markdownify }}
-    {% endif %} -->
-
-    <!-- {% include location/section-process.html %} -->
 
     <section id="production">
       {% include location/section-all-production.html %}
@@ -93,6 +89,11 @@ nav_items:
       {% include location/section-jobs.html %}
 
       {% include location/section-exports.html %}
+    </section>
+
+    <section id="regulations">
+      <h2>Regulations</h2>
+      {{ regulations | markdownify }}
     </section>
 
 

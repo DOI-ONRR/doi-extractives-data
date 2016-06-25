@@ -64,9 +64,7 @@ module EITI
         (str.include? term) ? true : nil
       end
     end
-
   end
-
 end
 
 Liquid::Template.register_filter(EITI::Data)

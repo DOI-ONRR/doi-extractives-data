@@ -29,15 +29,15 @@
       background: $mid-gray;
       display: block;
       height: 1em;
-    }
 
-    .bar .bar {
-      background: $green-dark;
-    }
+      .bar {
+        background: $green-dark;
 
-    .bar .bar .bar {
-      background: $green-darkest;
-      border-right: 1px solid $neutral-gray;
+        .bar {
+          background: $green-darkest;
+          border-right: 1px solid $neutral-gray;
+        }
+      }
     }
 
     &:not([data-value="0"]) {

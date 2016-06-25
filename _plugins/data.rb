@@ -58,7 +58,7 @@ module EITI
     end
 
     # attempts to find a substring
-    # returns the value true if the key exists; otherwise, return false
+    # returns the value true if the key exists; otherwise, return nil
     def is_in(term, str)
       if str
         (str.include? term) ? true : nil

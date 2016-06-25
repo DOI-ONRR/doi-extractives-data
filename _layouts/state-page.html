@@ -38,6 +38,8 @@ nav_items:
 
 {% assign state_name = page.title %}
 {% assign state_id = page.id %}
+
+{% assign state_ref = page.id | upcase %}
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
@@ -55,21 +57,12 @@ nav_items:
 {% endcapture %}
 
 
-{% capture variable_path %}state_cases/{{ state_id }}/regulations.md{% endcapture %}
-
-
-
-
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
   <div>
     <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
     /
   </div>
   <h1 id="title">{{ state_name }}</h1>
-
-  <h3>{{variable_path}}</h3>
-
-
 
   <div class="container-left-9">
 
@@ -97,11 +90,12 @@ nav_items:
       {% include location/section-exports.html %}
     </section>
 
-    <section id="regulations">
-      <h2>Regulations</h2>
-      {{ regulations | markdownify }}
-    </section>
-
+    {% if is_priority_state %}
+      <section id="regulations">
+        <h2>Regulations</h2>
+        {{ regulations | markdownify }}
+      </section>
+    {% endif %}
 
     <!-- XXX setting display: none on this prevents the mask from working -->
     <svg width="0" height="0">

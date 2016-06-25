@@ -51,6 +51,14 @@ nav_items:
 
 {% capture variable_path %}state_cases/{{ state_id }}/regulations.md{% endcapture %}
 
+{% assign state_is_special = site.data.special_states[state_id] %}
+{% for special_state in site.data.special_states[state_id] %}
+  {% capture is_case_study_state %}{{ 'case_study' | is_in: special_state }}{% endcapture %}
+  {% capture is_opt_in_state %}{{ 'opt_in' | is_in: special_state }}{% endcapture %}
+  {% capture is_priority_state %}{{ 'priority' | is_in: special_state }}{% endcapture %}
+{% endfor %}
+
+
 
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
   <div>
@@ -59,8 +67,13 @@ nav_items:
   </div>
   <h1 id="title">{{ state_name }}</h1>
 
-  <h3>{{variable_path}}</h3>
-  <h3>{{state_id}}</h3>
+  {% if is_case_study_state %}
+    {{is_case_study_state}}
+
+    <h3>{{variable_path}}</h3>
+  {% else %}
+    <h3>{{state_id}}</h3>
+  {% endif %}
 
 
 

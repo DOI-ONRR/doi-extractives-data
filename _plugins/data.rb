@@ -57,8 +57,14 @@ module EITI
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
+    # attempts to find a substring
+    # returns the value true if the key exists; otherwise, return nil
+    def is_in(term, str)
+      if str
+        (str.include? term) ? true : nil
+      end
+    end
   end
-
 end
 
 Liquid::Template.register_filter(EITI::Data)

@@ -11,15 +11,17 @@
   <div class="chart-list">
 
     <div class="chart-list-intro">
+      <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
+      <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies. This data comes from the Bureau of Labor Statistics.</p>
       <p>In {{ year }},
         {% if jobs_count %}
           there were
           {{ jobs_count | intcomma }}
-          jobs in extractive industries in 
+          jobs in extractive industries that paid a wage or salary in 
           {{ state_name }}, or
           {{ jobs_percent | percent }}% of state-wide employment.
         {% else %}
-          there were no jobs in the extractive industries.
+          there were no wage or salary jobs in the extractive industries.
         {% endif %}
       </p>
     </div>
@@ -75,7 +77,7 @@
       {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
 
       <div class="text-container">
-        <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
+        <p>County-level data shows how many wage and salary jobs in each county are related to extractive industries, as well as what percentage of the county's total employment is in extractive industries.</p>
       </div>
 
       <div class="map-container">
@@ -107,10 +109,15 @@
         %}
       </div><!-- /.table-container -->
 
-
-
     </div><!-- /.row-container -->
 
   </div><!-- /.chart-list -->
+  <div class="chart-list">
+    <div class="chart-list-intro">
+
+      <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies. Some people may be double-counted (for instance, if they appear on multiple tax forms). This data comes from the Bureau of Economic Analysis.</p>
+
+    </div>
+  </div>
 
 </section>

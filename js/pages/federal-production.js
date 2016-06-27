@@ -303,6 +303,7 @@
         });
 
         selection.select('.map-legend')
+          .style('display', isState ? 'none' : null)
           .call(updateLegend, scale);
 
         selection

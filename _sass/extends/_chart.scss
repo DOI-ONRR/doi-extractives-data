@@ -11,7 +11,7 @@
     position: absolute;
     top: 300px;
     right: 20px;
-
+    
     tbody {
       tr {
         td {
@@ -21,6 +21,7 @@
           font-size: 12px;
           font-weight: bold;
           padding: 0 10px 0 5px;
+          border: 1px solid #292626;
       }
       }
     }
@@ -59,4 +60,8 @@
   text-align: left !important;
   padding-bottom: 20px !important;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+.legend1 .legend2{
+  background-color: #000;
 }

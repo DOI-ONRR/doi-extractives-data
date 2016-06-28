@@ -32,8 +32,6 @@ nav_items:
       title: Jobs
     - name: exports
       title: Exports
-  - name: regulations
-    title: Regulations
 ---
 
 {% assign state_name = page.title %}
@@ -89,13 +87,6 @@ nav_items:
 
       {% include location/section-exports.html %}
     </section>
-
-    {% if is_priority_state %}
-      <section id="regulations">
-        <h2>Regulations</h2>
-        {{ regulations | markdownify }}
-      </section>
-    {% endif %}
 
     <!-- XXX setting display: none on this prevents the mask from working -->
     <svg width="0" height="0">

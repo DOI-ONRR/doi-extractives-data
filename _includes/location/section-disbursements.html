@@ -1,14 +1,27 @@
 <section id="disbursements" class="disbursements">
   <h2>Disbursements</h2>
-  <p>{{ disbursements_summary | strip_html }}</p>
+  <p>After collecting revenue, the Office of Natural Resources Revenue distributes it to different agencies, funds, and local governments through a process called &ldquo;disbursement.&rdquo;</p>
+  <p>About 38% of revenue from onshore natural resource extraction on federal land is disbursed to state governments. For offshore revenue, from natural resource extraction on the Outer Continental Shelf, less than 1% of revenue is disbursed to state governments.</p>
 
-  {% assign disbursements = site.data.state_disbursements[state_id] %}
-  {% if disbursements %}
-    {%
-      include location/display-disbursements.html
-      values=disbursements
-    %}
-  {% endif %}
+  <p>
+    {% assign disbursements = site.data.state_disbursements[state_id] %}
+
+    In {{ year }}, the state of {{ state_name }}
+    {% if disbursements %}
+      received
+      ${{ disbursements.All[year] | round | intcomma }}
+      in federal disbursements.
+    {% else %}
+       did not receive any federal disbursements.
+    {% endif %}
+
+    {% if disbursements %}
+      {%
+        include location/display-disbursements.html
+        values=disbursements
+      %}
+    {% endif %}
+  </p>
 
   <a href="{{site.baseurl}}/downloads/disbursements/">
 	<icon class="fa fa-file-text-o u-padding-right"></icon>Disbursements data comes from the Office of Natural Resources Revenue

@@ -1,6 +1,6 @@
 <section id="disbursements" class="disbursements">
   <h2>Disbursements</h2>
-  <p>After collecting revenue, the Office of Natural Resources Revenue distributes it to different agencies, funds, and local governments through a process called &ldquo;disbursement.&rdquo;</p>
+  <p>After collecting revenue, the Office of Natural Resources Revenue (ONRR) distributes it to different agencies, funds, and local governments through a process called &ldquo;disbursement.&rdquo;</p>
   <p>About 38% of revenue from onshore natural resource extraction on federal land is disbursed to state governments. For offshore revenue, from natural resource extraction on the Outer Continental Shelf, less than 1% of revenue is disbursed to state governments.</p>
 
   <p>
@@ -10,10 +10,11 @@
     {% if disbursements %}
       received
       ${{ disbursements.All[year] | round | intcomma }}
-      in federal disbursements.
+      in 
     {% else %}
-       did not receive any federal disbursements.
+       did not receive any 
     {% endif %}
+    federal disbursements from ONRR.
 
     {% if disbursements %}
       {%

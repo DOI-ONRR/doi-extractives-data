@@ -303,10 +303,18 @@
         });
 
         selection.select('.map-legend')
+          .style('display', isState ? 'none' : null)
           .call(updateLegend, scale);
 
         selection
           .call(updateSubregions, features, scale);
+
+        var hrefFunc = product ?
+          function() { return null; } :
+          function(d) { return '#' + d.id; };
+
+        map.selectAll('a').attr('href', hrefFunc);
+        map.selectAll('a').classed('disabled', !!product);
 
         // console.timeEnd('render regions');
       });

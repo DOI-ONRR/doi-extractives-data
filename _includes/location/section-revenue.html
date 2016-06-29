@@ -127,9 +127,8 @@
 
   <!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
   {% if is_priority_state %}
-    <p>
-      However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land. Learn more about natural resource regulation, production, and revenue in {{ state_name }}:
-    </p>
+    <p>However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land.</p>
+    <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
 
     {{ regulations | markdownify }}
   

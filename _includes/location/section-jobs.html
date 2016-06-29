@@ -12,7 +12,7 @@
 
     <div class="chart-list-intro">
       <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
-      <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies. This data comes from the Bureau of Labor Statistics.</p>
+      <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
       <p>In {{ year }},
         {% if jobs_count %}
           there were
@@ -30,7 +30,7 @@
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title">Number of jobs in extractive industries</h3>
+      <h3 class="chart-title">Number of jobs in extractives</h3>
 
       <figure class="chart">
         <eiti-line-chart
@@ -71,14 +71,10 @@
 
   <div class="chart-list">
 
-    <h3 class="chart-title">County-Level Employment</h3>
+    <h3 class="chart-title">County-level employment in extractives</h3>
 
     <div class="row-container">
       {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
-
-      <div class="text-container">
-        <p>County-level data shows how many wage and salary jobs in each county are related to extractive industries, as well as what percentage of the county's total employment is in extractive industries.</p>
-      </div>
 
       <div class="map-container">
         <figure class="container">
@@ -115,7 +111,7 @@
   <div class="chart-list">
     <div class="chart-list-intro">
 
-      <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies. Some people may be double-counted (for instance, if they appear on multiple tax forms). This data comes from the Bureau of Economic Analysis.</p>
+      <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.</p>
 
     </div>
   </div>

@@ -1,0 +1,42 @@
+$tab-color-default: $green-sea;
+$tab-color-selected: $green-dark;
+
+
+.info-tabs {
+  @include heading('para-md');
+
+  border-bottom: 5px solid $tab-color-selected;
+  font-weight: $weight-bold;
+  margin-bottom: $base-padding-lite;
+  padding: 0;
+
+  li {
+    padding-bottom: $base-padding-lite;
+    padding-top: $base-padding-lite;
+  }
+
+  a {
+    background-color: $tab-color-default;
+    border: 0;
+    border-bottom: 2px solid $tab-color-default;
+    color: $base-font-color;
+    padding: $base-padding-lite $base-padding;
+    padding-bottom: 7px;
+
+
+    &[aria-selected="true"] {
+      @include active-tab('info');
+    }
+  }
+
+  a:not([aria-selected="true"]):focus,
+  a:not([aria-selected="true"]):hover {
+    background-color: $tab-color-default;
+    border: 0;
+    color: $base-font-color;
+    padding-bottom: 7px;
+    text-decoration: underline;
+  }
+}
+
+

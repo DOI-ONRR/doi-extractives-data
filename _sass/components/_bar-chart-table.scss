@@ -1,0 +1,150 @@
+// scss-lint:disable NestingDepth SelectorDepth
+[is=bar-chart-table] {
+  $cell-padding: 5px;
+  $border-radius: 3px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 2em;
+
+  tbody tr:focus,
+  tbody tr:hover {
+    background: $white;
+  }
+
+  .bar {
+    background: $light-gray;
+  }
+
+  .numeric,
+  [data-value] {
+    text-align: left;
+  }
+
+  [data-value] {
+    min-width: 120px;
+    position: relative;
+
+    .bar {
+      background: $mid-gray;
+      display: block;
+      height: 1em;
+
+      .bar {
+        background: $green-dark;
+
+        .bar {
+          background: $green-darkest;
+          border-right: 1px solid $neutral-gray;
+        }
+      }
+    }
+
+    &:not([data-value="0"]) {
+      .bar {
+        min-width: 1px;
+      }
+    }
+  }
+
+  // negative values
+  [data-value^="-"] .bar {
+    background: transparent;
+    border: 1px solid;
+  }
+
+  &[orient=vertical] {
+    display: block;
+    height: 6em;
+    position: relative;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: flex;
+      height: 100%;
+
+      td,
+      th {
+        border: 0;
+        display: none;
+        padding: 0;
+        width: auto;
+      }
+
+
+      tr {
+        border-radius: $border-radius;
+        display: flex;
+        height: 100%;
+        padding: 0 0 1.5em;
+        position: relative;
+        width: 100%;
+
+        + tr {
+          margin-left: 10px;
+        }
+      }
+
+      .label {
+        bottom: 0;
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+
+      [data-value] {
+        display: flex;
+        height: 100%;
+        margin: $border-radius;
+        margin-bottom: 0;
+        min-width: auto;
+        width: 100%;
+
+        .bar {
+          align-self: flex-end;
+          border-radius: $border-radius;
+          display: block;
+          position: relative;
+          width: 100%;
+        }
+
+        // hide text in vertical
+        .text {
+          display: none;
+        }
+
+        + [data-value] {
+          margin-left: 2px;
+        }
+      }
+
+      tr:hover,
+      tr:focus {
+        [aria-label]::after {
+          content: attr(aria-label);
+        }
+
+        [aria-label]::after,
+        [data-value] .text {
+          background: $black;
+          border-radius: $border-radius;
+          bottom: 100%;
+          color: $white;
+          display: block;
+          left: 0;
+          margin-bottom: $border-radius * 2;
+          position: absolute;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+    } // tbody
+
+  } // &[orient=vertical]
+
+} // table[is=bar-chart-table]

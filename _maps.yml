@@ -1,0 +1,22 @@
+exclude:
+  - lib
+  - node_modules
+  - package.json
+  - show
+  - test
+  - styleguide-template
+  - 'Gemfile*'
+  - pages
+  - img
+  - _case-studies
+  - _downloads
+  - _explore
+  - _how-it-works
+  - _federal-revenue-by-company
+  - _meta
+  - _sass/blocks
+  - _includes/case-studies
+  - _includes/how-it-works
+  - _includes/layout
+  - _includes/glossary.html
+  - _includes/hash_selector.html

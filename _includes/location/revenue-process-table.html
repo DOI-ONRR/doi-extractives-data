@@ -1,0 +1,271 @@
+{% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
+
+{% assign commodity_groups = site.data.commodities.groups %}
+
+{% assign oilgas_list = commodity_groups.oilgas.commodities %}
+{% assign minerals_list = commodity_groups.minerals.commodities %}
+
+{% assign oilgas_exists = false %}
+{% assign coal_exists = false %}
+{% assign minerals_exists = false %}
+{% assign geothermal_exists = false %}
+{% assign all_exists = false %}
+
+{% for commodity in revenue_types %}
+  {% assign commodity_name = commodity[0] %}
+  {% if oilgas_list contains commodity_name %}
+    {% assign oilgas_exists = true %}
+  {% endif %}
+
+  {% if minerals_list contains commodity_name %}
+    {% assign minerals_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'Coal' %}
+    {% assign coal_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'Geothermal' %}
+    {% assign geothermal_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'All' %}
+    {% assign all_exists = true %}
+  {% endif %}
+
+{% endfor %}
+
+
+<table is="bar-chart-table" class="revenue table-arrow_box"
+  {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th class="arrow_box">Phase:</th>
+      <th class="arrow_box">Securing a lease</th>
+      <th class="arrow_box">Before production</th>
+      <th class="arrow_box-last">During production</th>
+      <th>Other revenues</th>
+    </tr>
+  </thead>
+
+    {% if oilgas_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Oil and Gas
+        <icon class="icon-padded icon-oil"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if oilgas_list contains commodity_name %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% if commodity_name == oilgas %}
+                {% include location/revenue-type-row-oilgas.html %}
+            {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
+                {% include location/revenue-type-row.html %}
+            {% endif %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+
+      <tbody>
+        <tr>
+          <th class="table-arrow_box-subcategory">Onshore</th>
+          <td>
+            <strong>Bonus</strong><br/>
+            Amount paid for the lease by the highest bidder
+          </td>
+          <td>
+            <strong>$1.50</strong> annual rent per acre for the first 5 years.<br/>
+            <strong>$2</strong> annual rent per acre thereafter
+          </td>
+          <td>
+            <strong>12.5%</strong> of production value in royalties
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Offshore</th>
+          <td>
+            <strong>Bonus</strong>
+          </td>
+          <td>
+            <strong>$7</strong> or <strong>$11</strong> annual rent per acre
+            increasing over time up to<strong>$44</strong> per acre in some cases
+          </td>
+          <td>
+            <strong>12.5%</strong>, <strong>16.67%</strong>, or
+            <strong>18.75%</strong> of production value in royalties
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    {% endif %}
+
+    {% if coal_exists == true %}
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Coal' %}
+          <tr class="table-arrow_box-category"><td colspan="5">
+            Coal
+            <icon class="icon-padded icon-coal"></icon>
+          </td></tr>
+
+
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+            <tr>
+              <th class="table-arrow_box-subcategory">Surface</th>
+              <td>
+                <strong>Bonus</strong>
+              </td>
+              <td>
+                <strong>$3</strong> annual rent per acre
+              </td>
+              <td>
+                <strong>12.5%</strong> of production value in royalties<br/>
+                <strong>$0.28</strong> per ton Abandoned Mine Land Fee
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="table-arrow_box-subcategory">Subsurface</th>
+              <td>
+                <strong>Bonus</strong>
+              </td>
+              <td>
+                <strong>$3</strong> annual rent per acre
+              </td>
+              <td>
+                <strong>8%</strong> of production value in royalties<br/>
+                <strong>$0.12</strong> per ton Abandoned Mine Land Fee
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+          {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if geothermal_exists == true %}
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Geothemal' %}
+          <tr class="table-arrow_box-category"><td colspan="5">
+            Geothermal
+            <icon class="icon-padded icon-geo"></icon>
+          </td></tr>
+
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+            <tr>
+              <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+                <strong>Royalty rates</strong> are established on a case-by-case basis
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="table-arrow_box-subcategory">After August 8, 2005</th>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+                <strong>Royalty rates</strong> are <strong>1.75%</strong> for the first
+                10 years of production, and <strong>3.5%</strong> thereafter
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if minerals_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Hardrock Minerals
+        <icon class="icon-padded icon-minerals"></icon>
+      </td></tr>
+
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if minerals_list contains commodity_name %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+           </tbody>
+        {% endif %}
+      {% endfor %}
+
+      <tbody>
+        <tr>
+          <th class="table-arrow_box-subcategory">Public Domain Lands</th>
+          <td>
+            <strong>$20</strong> processing fee<br/>
+            <strong>$37</strong> location fee<br/>
+            <strong>$155</strong> initial maintenance fee
+          </td>
+          <td>
+            <strong>$155</strong> annual maintenance fee per claim
+          </td>
+          <td>
+            <strong>No royalties</strong> are required to be paid
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Acquired Lands</th>
+          <td>
+            <strong>$6,500</strong> prospecting permit fee
+          </td>
+          <td>
+            <strong>$0.50</strong> annual prospecting fee per acre<br/>
+            <strong>$37</strong> annual rent per acre
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    {% endif %}
+
+    {% if all_exists == true %}
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'All' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            <tr class="table-arrow_box-category"><td colspan="5">
+              All commodities
+              <icon class="icon-oil"></icon>
+              <icon class="icon-coal"></icon>
+              <icon class="icon-minerals"></icon>
+              <icon class="icon-geo"></icon>
+            </td></tr>
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+
+    <tr class="table-arrow_box-category"><td colspan="5">Income Tax</td></tr>
+    <tr>
+      <td colspan="5"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
+      </td>
+    </tr>
+
+</table>

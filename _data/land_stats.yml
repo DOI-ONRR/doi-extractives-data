@@ -1,0 +1,208 @@
+AL:
+  total_acres: 32678400
+  federal_acres: 844026
+  federal_percent: 2.6
+AK:
+  total_acres: 365481600
+  federal_acres: 223803098
+  federal_percent: 61.2
+AZ:
+  total_acres: 72688000
+  federal_acres: 28064307
+  federal_percent: 38.6
+AR:
+  total_acres: 33599360
+  federal_acres: 3151685
+  federal_percent: 9.4
+CA:
+  total_acres: 100206720
+  federal_acres: 45864800
+  federal_percent: 45.8
+CO:
+  total_acres: 66485760
+  federal_acres: 23870652
+  federal_percent: 35.9
+CT:
+  total_acres: 3135360
+  federal_acres: 8752
+  federal_percent: 0.3
+DE:
+  total_acres: 1265920
+  federal_acres: 29864
+  federal_percent: 2.4
+DC:
+  total_acres: 39040
+  federal_acres: 8182
+  federal_percent: 21
+FL:
+  total_acres: 34721280
+  federal_acres: 4599919
+  federal_percent: 13.2
+GA:
+  total_acres: 37295360
+  federal_acres: 1474225
+  federal_percent: 4
+HI:
+  total_acres: 4105600
+  federal_acres: 820725
+  federal_percent: 20
+ID:
+  total_acres: 52933120
+  federal_acres: 32621631
+  federal_percent: 61.6
+IL:
+  total_acres: 35795200
+  federal_acres: 411387
+  federal_percent: 1.1
+IN:
+  total_acres: 23158400
+  federal_acres: 384365
+  federal_percent: 1.7
+IA:
+  total_acres: 35860480
+  federal_acres: 122076
+  federal_percent: 0.3
+KS:
+  total_acres: 52510720
+  federal_acres: 272987
+  federal_percent: 0.5
+KY:
+  total_acres: 25512320
+  federal_acres: 1094036
+  federal_percent: 4.3
+LA:
+  total_acres: 28867840
+  federal_acres: 1325780
+  federal_percent: 4.6
+ME:
+  total_acres: 19847680
+  federal_acres: 211125
+  federal_percent: 1.1
+MD:
+  total_acres: 6319360
+  federal_acres: 197894
+  federal_percent: 3.1
+MA:
+  total_acres: 5034880
+  federal_acres: 61802
+  federal_percent: 1.2
+MI:
+  total_acres: 36492160
+  federal_acres: 3633323
+  federal_percent: 10
+MN:
+  total_acres: 51205760
+  federal_acres: 3491586
+  federal_percent: 6.8
+MS:
+  total_acres: 30222720
+  federal_acres: 1546433
+  federal_percent: 5.1
+MO:
+  total_acres: 44248320
+  federal_acres: 1635122
+  federal_percent: 3.7
+MT:
+  total_acres: 93271040
+  federal_acres: 27003251
+  federal_percent: 29
+NE:
+  total_acres: 49031680
+  federal_acres: 546759
+  federal_percent: 1.1
+NV:
+  total_acres: 70264320
+  federal_acres: 59681502
+  federal_percent: 84.9
+NH:
+  total_acres: 5768960
+  federal_acres: 798718
+  federal_percent: 13.8
+NJ:
+  total_acres: 4813440
+  federal_acres: 179374
+  federal_percent: 3.7
+NM:
+  total_acres: 77766400
+  federal_acres: 26981490
+  federal_percent: 34.7
+NY:
+  total_acres: 30680960
+  federal_acres: 104590
+  federal_percent: 0.3
+NC:
+  total_acres: 31402880
+  federal_acres: 2429341
+  federal_percent: 7.7
+ND:
+  total_acres: 44452480
+  federal_acres: 1736611
+  federal_percent: 3.9
+OH:
+  total_acres: 26222080
+  federal_acres: 305641
+  federal_percent: 1.2
+OK:
+  total_acres: 44087680
+  federal_acres: 701365
+  federal_percent: 1.6
+OR:
+  total_acres: 61598720
+  federal_acres: 32614185
+  federal_percent: 52.9
+PA:
+  total_acres: 28804480
+  federal_acres: 617339
+  federal_percent: 2.1
+RI:
+  total_acres: 677120
+  federal_acres: 5157
+  federal_percent: 0.8
+SC:
+  total_acres: 19374080
+  federal_acres: 846420
+  federal_percent: 4.4
+SD:
+  total_acres: 48881920
+  federal_acres: 2642601
+  federal_percent: 5.4
+TN:
+  total_acres: 26727680
+  federal_acres: 1273175
+  federal_percent: 4.8
+TX:
+  total_acres: 168217600
+  federal_acres: 2998280
+  federal_percent: 1.8
+UT:
+  total_acres: 52696960
+  federal_acres: 34202920
+  federal_percent: 64.9
+VT:
+  total_acres: 5936640
+  federal_acres: 464644
+  federal_percent: 7.8
+VA:
+  total_acres: 25496320
+  federal_acres: 2514596
+  federal_percent: 9.9
+WA:
+  total_acres: 42693760
+  federal_acres: 12176293
+  federal_percent: 28.5
+WV:
+  total_acres: 15410560
+  federal_acres: 1133587
+  federal_percent: 7.4
+WI:
+  total_acres: 35011200
+  federal_acres: 1793100
+  federal_percent: 5.1
+WY:
+  total_acres: 62343040
+  federal_acres: 30013219
+  federal_percent: 48.1
+US:
+  total_acres: 2271343360
+  federal_acres: 623313931
+  federal_percent: 27.4

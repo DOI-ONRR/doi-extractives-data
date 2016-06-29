@@ -1,0 +1,21 @@
+---
+# this is CSS for our standalone SVGs
+---
+
+@import 'variables';
+
+.feature {
+  fill: $light-gray !important;
+  stroke: none !important;
+}
+
+.mesh {
+  fill: none !important;
+  stroke: $another-gray !important;
+  stroke-width: 1 !important;
+}
+
+.bbox {
+  fill: none;
+  stroke: $red;
+}

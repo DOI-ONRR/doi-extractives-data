@@ -1,0 +1,127 @@
+{% assign jobs = site.data.state_jobs[state_id] %}
+{% assign county_jobs = site.data.county_jobs[state_id] %}
+
+{% assign jobs_count = jobs[year].count | default: 0 %}
+{% assign jobs_percent = jobs[year].percent | default: 0 %}
+
+<section id="employment" class="economic employment">
+
+  <h3>Employment</h3>
+
+  <div class="chart-list">
+
+    <div class="chart-list-intro">
+      <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
+      <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies. This data comes from the Bureau of Labor Statistics.</p>
+      <p>In {{ year }},
+        {% if jobs_count %}
+          there were
+          {{ jobs_count | intcomma }}
+          jobs in extractive industries that paid a wage or salary in 
+          {{ state_name }}, or
+          {{ jobs_percent | percent }}% of state-wide employment.
+        {% else %}
+          there were no wage or salary jobs in the extractive industries.
+        {% endif %}
+      </p>
+    </div>
+
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
+
+      <h3 class="chart-title">Number of jobs in extractive industries</h3>
+
+      <figure class="chart">
+        <eiti-line-chart
+          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
+          data-x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">
+            {% if _metric == 'count' %}
+              {{ jobs[year].jobs | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ jobs[year].percent | percent }}%
+            {% endif %}
+          </span>
+        </figcaption>
+      </figure>
+
+      {% if forloop.last %}
+      <h4>
+        <button is="aria-toggle"
+          aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
+      </h4>
+      <div id="employment-detail-{{ _metric }}" aria-hidden="true">
+        {%
+          include location/display-jobs.html
+          values=jobs
+          percent=true
+        %}
+      </div>
+      {% endif %}
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
+
+  </div><!-- /.chart-list.has-intro -->
+
+  <div class="chart-list">
+
+    <h3 class="chart-title">County-Level Employment</h3>
+
+    <div class="row-container">
+      {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
+
+      <div class="text-container">
+        <p>County-level data shows how many wage and salary jobs in each county are related to extractive industries, as well as what percentage of the county's total employment is in extractive industries.</p>
+      </div>
+
+      <div class="map-container">
+        <figure class="container">
+          <data-map color-scheme="Reds" steps="{{ steps }}">
+            {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+            {% capture caption %}County extractives employment (jobs, {{ year }}){% endcapture %}
+
+            {%
+              include county-map.html
+              state=state_id
+              counties=county_jobs
+              value=value_key
+              steps=steps
+              inherit_width=true
+              caption=caption
+              toggle=toggle
+            %}
+          </data-map>
+        </figure>
+      </div><!-- /.map-container -->
+
+      <div class="table-container" id="{{ toggle }}" aria-hidden="true">
+        {%
+          include location/display-jobs-county.html
+          year=year
+          values=county_jobs
+          percent=true
+        %}
+      </div><!-- /.table-container -->
+
+    </div><!-- /.row-container -->
+
+  </div><!-- /.chart-list -->
+  <div class="chart-list">
+    <div class="chart-list-intro">
+
+      <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies. Some people may be double-counted (for instance, if they appear on multiple tax forms). This data comes from the Bureau of Economic Analysis.</p>
+
+    </div>
+  </div>
+
+
+  <a href="{{site.baseurl}}/downloads/#jobs">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+  </a>
+</section>

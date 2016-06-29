@@ -20,24 +20,24 @@
   <td data-value="{{
     revenue_types.Oil.Royalties[include.year] | default: 0
   }}">
-    <a href="#revenue-oil"><strong>Oil</strong></a>
+    <span class="tester" data-value="{{
+    revenue_types.Gas.Royalties[include.year] | default: 0
+  }}"></span>
+
     <span class="text">
+    <a href="#revenue-oil"><strong>Oil</strong></a>
     ${{
       revenue_types.Oil.Royalties[include.year]
       | default: 0
       | intcomma
     }}</span>
+
+    <span class="text">
+    <a href="#revenue-gas"><strong>Gas</strong></a>
+    ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+
   </td>
   <td rowspan="2" data-value="{{
     values['Other Revenues'][include.year] | default: 0
   }}"><span class="text">${{ values['Other Revenues'][include.year] | default: 0 | intcomma }}</span></td>
-</tr>
-<tr>
-  <td data-value="{{
-    revenue_types.Gas.Royalties[include.year] | default: 0
-  }}">
-    <a href="#revenue-gas"><strong>Gas</strong></a>
-    <span class="text">
-    ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
-  </td>
 </tr>

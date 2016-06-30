@@ -53,7 +53,7 @@
                 </eiti-bar-chart>
                 <figcaption id="federal-production-figures-{{ product_slug }}">
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                  <span class="eiti-bar-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
+                  <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
                 </figcaption>
               </figure>
 

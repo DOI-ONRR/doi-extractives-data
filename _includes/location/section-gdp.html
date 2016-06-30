@@ -23,14 +23,21 @@
       <h3 class="chart-title">GDP ({{ _metric }})</h3>
 
       <figure class="chart chart-{{ _metric }}">
-        <eiti-line-chart
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
           data='{% include location/line-chart-data.json values=gdp key=_metric %}'
           data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+        <figcaption id="gdp-figures-{{ _metric }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          {% assign _format = ',' %}
+          {% if _metric == 'dollars' %}
+            {% assign _format = '$,' %}
+          {% elsif _metric == 'percent' %}
+            {% assign _format = '%' %}
+          {% endif %}
+          <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
             {% if _metric == 'dollars' %}
               ${{ gdp[year].dollars | intcomma }}
             {% elsif _metric == 'percent' %}

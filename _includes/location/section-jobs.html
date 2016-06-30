@@ -33,14 +33,20 @@
       <h3 class="chart-title">Number of jobs in extractives</h3>
 
       <figure class="chart">
-        <eiti-line-chart
+        <eiti-bar-chart
+          aria-controls="jobs-figures-{{ _metric }}"
           data='{% include location/line-chart-data.json values=jobs key=_metric %}'
           data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+        <figcaption id="jobs-figures-{{ _metric }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value"
+            {% if _metric == 'count' %}
+              data-format=","
+            {% elsif _metric == 'percent' %}
+              data-format="%"
+            {% endif %}>
             {% if _metric == 'count' %}
               {{ jobs[year].jobs | intcomma }}
             {% elsif _metric == 'percent' %}

@@ -19,14 +19,15 @@
       <h3 class="chart-title">{{ product_name }}</h3>
 
       <figure class="chart">
-        <eiti-line-chart
+        <eiti-bar-chart
+          aria-controls="all-production-figures-{{ product_slug }}"
           data='{% include location/line-chart-data.json values=production_values key="volume" %}'
           data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+        <figcaption id="all-production-figures-{{ product_slug }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
       <p>

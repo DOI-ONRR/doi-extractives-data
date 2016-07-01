@@ -1,0 +1,35 @@
+$tab-color-default: $white;
+$tab-color-selected: $mid-light-gray;
+
+
+.info-tabs {
+  @include heading('para-md');
+
+  border: none;
+  margin-bottom: $base-padding-lite;
+  padding: 0;
+
+  li {
+    padding-bottom: $base-padding-lite;
+    padding-top: $base-padding-lite;
+  }
+
+  a {
+    background-color: $tab-color-default;
+    border: 2px solid $tab-color-selected;
+    color: $base-font-color;
+    padding: ($base-padding-lite * 2) $base-padding;
+
+    &[aria-selected="true"] {
+      @include active-tab('info');
+    }
+  }
+
+  a:not([aria-selected="true"]):focus,
+  a:not([aria-selected="true"]):hover {
+    background-color: $tab-color-default;
+    border: 2px solid $tab-color-selected;
+    color: $base-font-color;
+    text-decoration: underline;
+  }
+}

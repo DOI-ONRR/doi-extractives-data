@@ -1,0 +1,141 @@
+{% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign units = '$' %}
+
+{% capture year_range %}[2006, 2015]{% endcapture %}
+
+<section id="revenue" class="federal revenue">
+
+  <h2>Revenue</h2>
+
+  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+
+  <h3 id="federal-revenue">Revenue from federal land</h3>
+
+  <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
+<!--   <aside class="container-half county-map-table">
+
+    <figure>
+      <data-map color-scheme="Blues" steps="9">
+        {% assign county_revenue = site.data.county_revenue[state_id] %}
+        {% capture value_key %}revenue.{{ year }}{% endcapture %}
+        {%
+          include county-map.html
+          state=state_id
+          counties=county_revenue
+          value=value_key
+        %}
+      </data-map>
+      <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
+    </figure>
+  </aside> -->
+
+  <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
+
+  <div id="fee-summaries" class="tab-interface">
+    <ul class="eiti-tabs info-tabs" role="tablist">
+      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Phases of production</a></li>
+      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Phases of production with explanations</a></li>
+    </ul>
+
+    <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+
+    <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+      {%
+        include location/revenue-process-table.html
+        id='revenue-process'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+  </div>
+
+  <section id="commodities-revenue" class="chart-list has-intro">
+
+    <h4>Revenue from resources extracted on federal land in {{ state_name }}</h4>
+
+    <p class="chart-list-intro">In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Federal revenue data comes from the Office of Natural Resources Revenue
+    </a></p>
+
+    {% for commodity in revenue_commodities %}
+      {% assign revenue = commodity[1][year].revenue %}
+      {% assign commodity_name = commodity[0] | lookup: commodity_names %}
+      {% assign commodity_slug = commodity[0] | slugify %}
+
+    <section id="revenue-{{ commodity_slug }}" class="chart-item">
+
+      <h3 class="chart-title">{{ commodity_name }}</h3>
+
+      <figure class="chart">
+        {% assign annual_revenue = commodity[1] %}
+        <eiti-bar-chart
+          data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
+          aria-controls="revenue-figures-{{ commodity_slug }}"
+          x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+        <figcaption id="revenue-figures-{{ commodity_slug }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span>
+        </figcaption>
+      </figure>
+      <p class="chart-list_caption">
+        In {{ year }},
+          {% if revenue %}
+            companies paid the federal government ${{ revenue | intcomma }} to extract
+          {% else %}
+            the federal government did not collect any revenue from extraction of
+          {% endif %}
+          {{ commodity_name | downcase }} on federal land in {{ state_name }}.
+      </p>
+
+      <!-- <h4>
+        <button is="aria-toggle"
+          aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
+      </h4>
+      <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
+        {% assign revenue_values = commodity[1] %}
+        {%
+          include location/display-revenue.html
+          year=year
+          values=revenue_values
+          percent=false
+          rank=false
+        %}
+      </div> -->
+
+    </section>
+
+  {% endfor %}
+
+</section>
+
+<section id="state-local-revenue" class="state revenue">
+  <h3>Revenue from extraction on state land</h3>
+
+  <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state of {{ state_name }}.</p>
+
+  <!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
+  {% if is_priority_state %}
+    <p>However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land.</p>
+    <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
+
+    {{ regulations | markdownify }}
+
+  {% endif %}
+</section>
+
+<section id="private-revenue" class="private-lands revenue">
+  <h3>Revenue from extraction on private land</h3>
+  <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+</section>

@@ -1,0 +1,69 @@
+// XXX reducing the selector depth here would require going overboard on the
+// classes. -- @shawnbot
+// scss-lint:disable SelectorDepth
+eiti-bar-chart {
+
+  svg {
+    display: block;
+    font-size: inherit;
+    font-weight: $weight-light;
+    height: auto;
+    opacity: 0.75;
+    transition: opacity 0.5s;
+    width: 100%;
+  }
+
+  &:hover svg {
+    opacity: 1;
+  }
+
+  .bar {
+    cursor: pointer;
+  }
+
+  .bar-value {
+    fill: $neutral-gray;
+    pointer-events: none;
+    transition: fill 0.1s;
+  }
+
+  .bar-mask {
+    fill: transparent;
+    stroke: $white;
+    stroke-width: 2;
+  }
+
+  .axis {
+    line,
+    path {
+      fill: none;
+      stroke: none;
+    }
+
+    .tick line {
+      stroke: $white;
+    }
+
+    .tick:first-child line,
+    .tick:last-child line {
+      stroke: none;
+    }
+
+    text {
+      @include font-size(1);
+      fill: $dark-gray;
+      font-weight: $weight-light;
+    }
+  }
+
+  .bar-selected .bar-value,
+  .tick-selected text {
+    fill: $green-dark;
+    font-weight: $weight-bold;
+  }
+}
+
+.eiti-bar-chart-x-value,
+.eiti-bar-chart-y-value {
+  color: $green-dark;
+}

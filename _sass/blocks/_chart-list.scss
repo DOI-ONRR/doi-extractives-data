@@ -1,0 +1,108 @@
+.chart-list {
+  @include font-size(0.8);
+  @include outer-container();
+
+  padding-top: $base-padding-jumbo;
+
+  .chart-list_caption {
+    @include heading(para-sm);
+
+    padding-bottom: $base-padding-jumbo;
+  }
+
+  .chart-title {
+    border-bottom: 1px solid $mid-gray;
+    font-size: inherit;
+    font-weight: $weight-book;
+    margin-bottom: $base-padding;
+    text-transform: uppercase;
+  }
+
+  .chart-list-intro {
+    @include span-columns(8);
+  }
+
+  .chart-item {
+    @include span-columns(4);
+
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+
+    button {
+      background: $white;
+      color: $dark-gray;
+      font-size: small;
+      //FIXME
+    }
+  }
+
+  .full-width {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  &.has-intro {
+    .chart-item:first-of-type,
+    .chart-item:nth-of-type(3n + 1) {
+      @include omega();
+    }
+  }
+
+  &:not(.has-intro) {
+    .chart-item:nth-of-type(3n) {
+      @include omega();
+    }
+  }
+
+  figure {
+    margin-top: 0;
+  }
+
+  figcaption {
+    display: flex;
+    font-weight: $weight-bold;
+    padding: $base-padding-lite;
+
+    > * {
+      flex: 1;
+      width: 50%;
+    }
+
+    > :last-child {
+      text-align: right;
+    }
+  }
+}
+
+.row-container {
+  @include outer-container();
+
+  > * {
+    @include span-columns(4);
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+  }
+
+  > :nth-child(3) {
+    @include omega();
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    position: relative;
+
+    .svg-container {
+      @include span-columns(8);
+    }
+
+    .legend-container {
+      @include span-columns(4);
+      @include omega();
+    }
+  }
+}

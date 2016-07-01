@@ -1,0 +1,43 @@
+<tr>
+  {%
+    assign total = values.All[include.year]
+    | default: 0
+    | plus: revenue_types.Oil.All[include.year]
+    | plus: revenue_types.Gas.All[include.year]
+  %}
+  <th scope="row" rowspan="2" data-value="{{ total }}">
+    <a href="#revenue-{{ commodity_name | slugify }}">
+      <strong>Oil &amp; Gas </strong><br>
+    </a>
+    <strong>${{ total | intcomma }}</strong>
+  </th>
+  <td rowspan="2" data-value="{{
+    values.Bonus[include.year] | default: 0
+  }}"><span class="text">${{ values.Bonus[include.year] | default: 0 | intcomma }}</span></td>
+  <td rowspan="2" data-value="{{
+    values.Rents[include.year] | default: 0
+  }}"><span class="text">${{ values.Rents[include.year] | default: 0 | intcomma }}</span></td>
+  <td data-value="{{
+    revenue_types.Oil.Royalties[include.year] | default: 0
+  }}">
+    <span class="tester" data-value="{{
+    revenue_types.Gas.Royalties[include.year] | default: 0
+  }}"></span>
+
+    <span class="text">
+    <a href="#revenue-oil"><strong>Oil</strong></a>
+    ${{
+      revenue_types.Oil.Royalties[include.year]
+      | default: 0
+      | intcomma
+    }}</span>
+
+    <span class="text">
+    <a href="#revenue-gas"><strong>Gas</strong></a>
+    ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+
+  </td>
+  <td rowspan="2" data-value="{{
+    values['Other Revenues'][include.year] | default: 0
+  }}"><span class="text">${{ values['Other Revenues'][include.year] | default: 0 | intcomma }}</span></td>
+</tr>

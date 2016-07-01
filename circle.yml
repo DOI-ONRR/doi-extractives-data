@@ -1,0 +1,19 @@
+## Customize the test machine
+machine:
+  # Version of ruby to use
+  ruby:
+    version:
+      2.2.3
+
+## Customize dependencies
+dependencies:
+  pre:
+    - gem install jekyll -v '3.0.5'
+    - bundle install
+    - bundle exec jekyll build
+
+## Customize test commands
+test:
+  pre:
+    # - npm run test-html
+    - npm run test

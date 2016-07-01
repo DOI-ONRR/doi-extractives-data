@@ -1,0 +1,10 @@
+'{fips}':
+  name: '{county}'
+  products:
+    '{product}':
+      name: '{product_name}'
+      units: '{units}'
+      volume:
+        '{year}': '{value}'
+
+

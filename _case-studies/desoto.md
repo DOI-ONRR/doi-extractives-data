@@ -7,7 +7,7 @@ resource: gas
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -29,11 +29,11 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,112 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 From 2007 to 2011, natural gas production quadrupled in northern Louisiana, where DeSoto Parish is located.[^2] More recently, declining natural gas prices have resulted in lower production numbers. In 2013, northern Louisiana produced a total of 1,858,222,187 thousand cubic feet (or Mcf) of natural gas.[^3]
 
@@ -41,13 +41,13 @@ In 2013, the U.S. Energy Information Administration estimated that there were 16
 
 <img src="{{ site.baseurl }}/img/counties/la-production.png" alt="Northern Louisiana Natural Gas Production" class="case_studies_content-graph">
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 Out of DeSoto’s nearly 28,000 residents, 548 people (about 2%) are employed in mining-support activities, which include oil and gas extraction.[^5] [^6] Of this group, 271 people are employed specifically in support activities for oil and gas extraction.[^7] Employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries — specifically mining, quarrying, and oil and gas extraction — in DeSoto Parish between 2004 and 2013.[^8]
 
 <img src="{{ site.baseurl }}/img/counties/la-wage.png" alt="DeSoto Parish Mining, Quarrying, and Oil and Gas Extraction Industries vs. All Other Industries Wage and Salary Employment 2004–2013" class="case_studies_content-graph">
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 The Haynesville Shale natural gas boom has increased revenue for the State of Louisiana and DeSoto Parish through state severance taxes and royalties, parish property taxes, and sales and use taxes.
 
@@ -61,7 +61,7 @@ The DeSoto Parish School Board reports receiving the largest percentage of its a
 
 Property taxes also contribute substantially to the school board’s revenue, funding employee salaries, operations, and debt service payments on capital bonds for the local education system.[^20] The DeSoto Parish School Board estimated that 26.8% of the school budget would come from property taxes, and 49.1% would come from sales and use taxes in FY 2012–2013.[^21] State tax documents do not specify what percentage of property taxes comes from the gas industry.
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 Since 2008, Louisiana has invested $1.1 billion in transportation projects in the seven parishes located in the northwest region of the state, including DeSoto Parish.[^22] While Louisiana’s latest comprehensive state transportation plan acknowledges that the state must pay adequate attention to the transportation needs of the rapidly expanding oil and gas industry, it does not specify the types or costs of projects supported.[^23]
 
@@ -69,7 +69,7 @@ Louisiana completed a Hydraulic Fracturing State Review in March 2011, which exp
 
 The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent {{ "millage tax" | term_end }}.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 

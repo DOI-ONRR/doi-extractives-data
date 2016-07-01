@@ -1,0 +1,130 @@
+{% assign federal_products = site.data.state_federal_production[state_id].products %}
+{% assign federal_products_num = federal_products | size %}
+
+<section id="federal-production" class="federal production">
+
+  <h3>Production on federal land in {{ state_name }}</h2>
+
+  {% include location/section-ownership.html %}
+
+  <section class="county-map-table">
+
+    <h4>Natural resources extracted on federal land</h4>
+
+    {% if federal_products_num == 0 %}
+      <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+    {% endif %}
+
+    <div class="chart-list">
+
+    {% for product in federal_products %}
+      {% assign product_slug = product[0] | slugify %}
+      {% assign product_name = product[1].name | default: product[0] %}
+      {% assign production_values = product[1].volume %}
+      {% assign volume = production_values[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+      <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
+
+        <h4 class="chart-title">{{ product_name }} ({{ units }})</h4>
+
+        <div class="row-container">
+
+          <div class="chart-container">
+
+            <div class="text-container">
+              <p>
+                {% if volume %}
+                  {{ volume | intcomma }} {{ units }}
+                  of {{ product_name | downcase }} were
+                {% else %}
+                  No {{ product_name | downcase }} was
+                {% endif %}
+                produced on federal land in {{ state_name }} in {{ year }}.
+              </p>
+            </div>
+
+            {% if volume %}
+              <figure class="chart">
+                <eiti-bar-chart
+                  aria-controls="federal-production-figures-{{ product_slug }}"
+                  data='{% include location/line-chart-data.json values=production_values key="volume" %}'
+                  data-x-range="{{ year_range }}"
+                  x-value="{{ year }}">
+                </eiti-bar-chart>
+                <figcaption id="federal-production-figures-{{ product_slug }}">
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                </figcaption>
+              </figure>
+
+              <!-- <h4>
+                <button is="aria-toggle"
+                  aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
+              </h4>
+              <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
+                {%
+                  include location/display-production.html
+                  units=units
+                  year=year
+                  values=production_values
+                  percent=true
+                  rank=true
+                %}
+              </div> -->
+            {% endif %}
+          </div><!-- /.chart-container -->
+
+          {% if volume %}
+            <div class="map-container">
+              {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
+              <figure>
+                {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
+                {% assign _width ='inherit' %}
+                {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
+
+                <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+                  {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+
+                  {%
+                    include county-map.html
+                    state=state_id
+                    counties=federal_county_production
+                    value=value_key
+                    steps=steps
+                    inherit_width=true
+                    caption=caption
+                    toggle=toggle
+                  %}
+                </data-map>
+
+              </figure>
+
+
+              <div id="{{ toggle }}" aria-hidden="true">
+                {%
+                  include location/display-production.html
+                  units=units
+                  year=year
+                  values=production_values
+                  percent=true
+                  rank=true
+                %}
+              </div>
+
+            </div><!-- /.map-container -->
+          {% endif %}
+
+        </div><!-- /.row-container -->
+
+      </section>
+    {% endfor %}
+
+    </div><!-- /.chart-list -->
+
+  </section>
+
+  <a href="{{site.baseurl}}/downloads/federal-production/">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal production data comes from the Office of Natural Resources Revenue
+  </a>
+
+</section>

@@ -35,8 +35,8 @@
 
   <div id="fee-summaries" class="tab-interface">
     <ul class="eiti-tabs info-tabs" role="tablist">
-      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
-      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
+      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Phases of production</a></li>
+      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Phases of production with explanations</a></li>
     </ul>
 
     <article class="eiti-tab-panel" id="revenues" role="tabpanel">
@@ -64,12 +64,14 @@
 
     <h4>Revenue from resources extracted on federal land in {{ state_name }}</h4>
 
-    <p class="chart-list-intro">In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}.</p>
+    <p class="chart-list-intro">In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Federal revenue data comes from the Office of Natural Resources Revenue
+    </a></p>
 
     {% for commodity in revenue_commodities %}
       {% assign revenue = commodity[1][year].revenue %}
       {% assign commodity_name = commodity[0] | lookup: commodity_names %}
       {% assign commodity_slug = commodity[0] | slugify %}
+
     <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
       <h3 class="chart-title">{{ commodity_name }}</h3>
@@ -87,21 +89,21 @@
           <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
-
-      <h4>
-        <button is="aria-toggle"
-          aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
-      </h4>
-      <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
-        <p>In {{ year }},
+      <p class="chart-list_caption">
+        In {{ year }},
           {% if revenue %}
             companies paid the federal government ${{ revenue | intcomma }} to extract
           {% else %}
             the federal government did not collect any revenue from extraction of
           {% endif %}
           {{ commodity_name | downcase }} on federal land in {{ state_name }}.
-        </p>
+      </p>
 
+      <!-- <h4>
+        <button is="aria-toggle"
+          aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
+      </h4>
+      <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
         {% assign revenue_values = commodity[1] %}
         {%
           include location/display-revenue.html
@@ -110,14 +112,11 @@
           percent=false
           rank=false
         %}
-      </div>
+      </div> -->
 
     </section>
-  {% endfor %}
 
-  <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal revenue data comes from the Office of Natural Resources Revenue
-  </a>
+  {% endfor %}
 
 </section>
 
@@ -132,7 +131,7 @@
     <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
 
     {{ regulations | markdownify }}
-  
+
   {% endif %}
 </section>
 

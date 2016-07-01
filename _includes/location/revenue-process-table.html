@@ -41,11 +41,15 @@
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
-      <th class="arrow_box">Phase:</th>
-      <th class="arrow_box">Securing a lease</th>
-      <th class="arrow_box">Before production</th>
-      <th class="arrow_box-last">During production</th>
-      <th>Other revenues</th>
+      <th class="arrow_box"><span>Commodity</span></th>
+      <th class="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land
+      </th>
+      <th class="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources
+      </th>
+      <th class="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins
+      </th>
+      <th><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments
+      </th>
     </tr>
   </thead>
 
@@ -74,29 +78,28 @@
           <th class="table-arrow_box-subcategory">Onshore</th>
           <td>
             <strong>Bonus</strong><br/>
-            Amount paid for the lease by the highest bidder
+            The amount offered by the highest bidder
           </td>
           <td>
-            <strong>$1.50</strong> annual rent per acre for the first 5 years.<br/>
+            <strong>$1.50</strong> annual rent per acre for 5 years<br/>
             <strong>$2</strong> annual rent per acre thereafter
           </td>
           <td>
-            <strong>12.5%</strong> of production value in royalties
+            <strong>12.5%</strong> of production value
           </td>
           <td></td>
         </tr>
         <tr>
           <th class="table-arrow_box-subcategory">Offshore</th>
           <td>
-            <strong>Bonus</strong>
+            <strong>Bonus</strong><br>The amount offered by the highest bidder
           </td>
           <td>
-            <strong>$7</strong> or <strong>$11</strong> annual rent per acre
-            increasing over time up to<strong>$44</strong> per acre in some cases
+            <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
           </td>
           <td>
             <strong>12.5%</strong>, <strong>16.67%</strong>, or
-            <strong>18.75%</strong> of production value in royalties
+            <strong>18.75%</strong> of production value
           </td>
           <td></td>
         </tr>
@@ -118,30 +121,16 @@
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
             <tr>
-              <th class="table-arrow_box-subcategory">Surface</th>
+              <th></th>
               <td>
-                <strong>Bonus</strong>
+                <strong>Bonus</strong><br> The amount offered by the highest bidder
               </td>
               <td>
                 <strong>$3</strong> annual rent per acre
               </td>
               <td>
-                <strong>12.5%</strong> of production value in royalties<br/>
-                <strong>$0.28</strong> per ton Abandoned Mine Land Fee
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <th class="table-arrow_box-subcategory">Subsurface</th>
-              <td>
-                <strong>Bonus</strong>
-              </td>
-              <td>
-                <strong>$3</strong> annual rent per acre
-              </td>
-              <td>
-                <strong>8%</strong> of production value in royalties<br/>
-                <strong>$0.12</strong> per ton Abandoned Mine Land Fee
+                <strong>Surface mining:</strong> 12.5% of production value + $0.28 per ton in AML fees<br>
+                <strong>Subsurface mining:</strong> 8% of production value + $0.12 per ton in AML fees
               </td>
               <td></td>
             </tr>
@@ -164,10 +153,13 @@
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
             <tr>
-              <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
-              <td>
-              </td>
-              <td>
+              <th class="table-arrow_box-subcategory">Competitive leasing</th>
+              <td><strong>Nomination fee:</strong> $110 per nomination + $0.11 per acre<br>
+              <strong>Bonus:</strong> The amount offered by the highest bidder $160 processing fee
+            </td><strong>$2</strong> per acre for the first year<br>
+            <strong>$3</strong> annual rent per acre for years 2-10<br>
+            <strong>$5</strong> annual rent per acre thereafter
+              <td><strong>If selling electricity:</strong> 1.75% of gross proceeds for the first 10 years of production, then 3.5% of gross proceeds<br><strong>If selling geothermal resources for third-party electricity generation:</strong> 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%) ***
               </td>
               <td>
                 <strong>Royalty rates</strong> are established on a case-by-case basis
@@ -175,14 +167,13 @@
               <td></td>
             </tr>
             <tr>
-              <th class="table-arrow_box-subcategory">After August 8, 2005</th>
-              <td>
+              <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
+              <td><strong>Lease:</strong> $410 payment
+              </td>
+              <td><strong>$1</strong> annual rent per acre for 10 years<br> <strong>$5</strong> annual rent per acre thereafter
               </td>
               <td>
-              </td>
-              <td>
-                <strong>Royalty rates</strong> are <strong>1.75%</strong> for the first
-                10 years of production, and <strong>3.5%</strong> thereafter
+                <strong>If selling electricity:</strong> 1.75% of gross proceeds for the first 10 years of production, then 3.5% of gross proceeds<br><strong>If selling geothermal resources for third-party electricity generation:</strong> 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%) *** 
               </td>
               <td></td>
             </tr>
@@ -210,31 +201,15 @@
 
       <tbody>
         <tr>
-          <th class="table-arrow_box-subcategory">Public Domain Lands</th>
-          <td>
-            <strong>$20</strong> processing fee<br/>
-            <strong>$37</strong> location fee<br/>
-            <strong>$155</strong> initial maintenance fee
-          </td>
-          <td>
-            <strong>$155</strong> annual maintenance fee per claim
-          </td>
-          <td>
-            <strong>No royalties</strong> are required to be paid
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <th class="table-arrow_box-subcategory">Acquired Lands</th>
+          <th class="table-arrow_box-subcategory">Acquired lands *</th>
           <td>
             <strong>$6,500</strong> prospecting permit fee
           </td>
           <td>
-            <strong>$0.50</strong> annual prospecting fee per acre<br/>
-            <strong>$37</strong> annual rent per acre
+            <strong>$37</strong> annual rent per acre +<br> <strong>$0.50</strong> annual prospecting fee per acre
           </td>
           <td>
-            <strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
+            Royalty rates are determined by leasing officers on an individual case basis (no minimums apply)
           </td>
           <td></td>
         </tr>
@@ -262,9 +237,20 @@
     {% endif %}
 
 
-    <tr class="table-arrow_box-category"><td colspan="5">Income Tax</td></tr>
+    <tr class="table-arrow_box-category"><td colspan="5">Other revenue streams</td></tr>
     <tr>
+      <th>Corporate income tax</th>
       <td colspan="5"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
+      </td>
+    </tr>
+    <tr>
+      <th>* Hardrock mining on public domain lands</th>
+      <td colspan="5">Hardrock mining that takes place on public domain lands, which are managed by the Bureau of Land Management, occurs through the claim-staking process. These fees are not included here, because that dataset does not have state-level data. [Learn more about the claim-staking process] or [see revenue by company, which includes those fees].
+      </td>
+    </tr>
+    <tr>
+      <th>*** Notes on geothermal energy leases before 2005</th>
+      <td colspan="5">For leases signed before the Energy Policy Act of 2005: The lessee’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%); for direct use, the lessee pays the equivalent value of least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lessee at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
       </td>
     </tr>
 

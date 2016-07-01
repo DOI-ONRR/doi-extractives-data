@@ -27,9 +27,10 @@ data-map {
     @include omega();
 
     > * {
-      @include span-columns(6);
+      @include span-columns(8);
 
       &:last-child {
+        @include span-columns(4);
         @include omega();
       }
     }
@@ -74,7 +75,3 @@ data-map {
     stroke-width: 1;
   }
 }
-
-
-
-

@@ -3,10 +3,8 @@
   text-decoration: none;
 
   @if $color == 'info' {
-    background-color: $green-dark;
-    border-bottom: 2px solid $green-dark;
-    color: $white;
-    padding-bottom: 7px;
+    background-color: $mid-light-gray;
+    border: 2px solid $mid-light-gray;
   } @else {
     background-color: $white;
     border: 1px solid $neutral-gray;

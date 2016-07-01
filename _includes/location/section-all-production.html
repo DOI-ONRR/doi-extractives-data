@@ -30,12 +30,12 @@
           <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
-      <p>
+      <p class="chart-list_caption">
         {% if volume %}{{ volume | intcomma }} {{ units }} of
         {% else %}No{% endif %}
         {{ product_name | downcase }} was extracted in {{ state_name }} in {{ year }}.
       </p>
-      <h4>
+      <!-- <h4>
         <button is="aria-toggle"
           aria-controls="all-production-detail-{{ product_slug }}">&plus; Historical details</button>
       </h4>
@@ -48,7 +48,7 @@
           percent=false
           rank=false
         %}
-      </div>
+      </div> -->
     </section>
   {% endfor %}
 

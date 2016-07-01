@@ -10,11 +10,11 @@
   <section class="county-map-table">
 
     <h4>Natural resources extracted on federal land</h4>
-    
+
     {% if federal_products_num == 0 %}
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
     {% endif %}
-  
+
     <div class="chart-list">
 
     {% for product in federal_products %}
@@ -57,7 +57,7 @@
                 </figcaption>
               </figure>
 
-              <h4>
+              <!-- <h4>
                 <button is="aria-toggle"
                   aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
               </h4>
@@ -70,7 +70,7 @@
                   percent=true
                   rank=true
                 %}
-              </div>
+              </div> -->
             {% endif %}
           </div><!-- /.chart-container -->
 

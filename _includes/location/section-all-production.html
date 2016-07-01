@@ -30,7 +30,7 @@
           <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
-      <p>
+      <p class="chart-list_caption">
         {% if volume %}{{ volume | intcomma }} {{ units }} of
         {% else %}No{% endif %}
         {{ product_name | downcase }} was extracted in {{ state_name }} in {{ year }}.

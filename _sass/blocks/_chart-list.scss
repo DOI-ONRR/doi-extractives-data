@@ -4,7 +4,7 @@
 
   padding-top: $base-padding-jumbo;
 
-  p {
+  .chart-list_caption {
     @include heading(para-sm);
 
     padding-bottom: $base-padding-jumbo;
@@ -97,11 +97,11 @@
     position: relative;
 
     .svg-container {
-      @include span-columns(6);
+      @include span-columns(8);
     }
 
     .legend-container {
-      @include span-columns(6);
+      @include span-columns(4);
       @include omega();
     }
   }

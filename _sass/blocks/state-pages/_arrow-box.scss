@@ -30,8 +30,8 @@ $ab-border-thick: 4px;
       @include heading('para-sm');
 
       background-color: $ab-color-primary;
-      border-top: 20px solid $ab-color-primary;
       border-right: $ab-gutter solid $white;
+      border-top: 20px solid $ab-color-primary;
       height: $ab-height;
       padding-top: 0;
       padding-left: $ab-padding;
@@ -45,22 +45,6 @@ $ab-border-thick: 4px;
         border-right: none;
       }
     }
-
-    // th:nth-child(2) {
-    //   z-index: 50;
-    // }
-    //
-    // th:nth-child(3) {
-    //   z-index: 40;
-    // }
-    //
-    // th:nth-child(4) {
-    //   z-index: 30;
-    // }
-    //
-    // th:nth-child(5) {
-    //   z-index: 20;
-    // }
 
     th:last-child:not(.arrow_box):not(.arrow_box-last) {
       padding-left: $ab-padding;
@@ -84,7 +68,7 @@ $ab-border-thick: 4px;
       white-space: pre;
 
       &::after {
-        content:'\A';
+        content: '\A';
       }
 
       &:nth-child(4),
@@ -93,15 +77,6 @@ $ab-border-thick: 4px;
       }
     }
   }
-
-  // tr {
-  //   border-top: $ab-border-thin solid $ab-color-primary;
-  // }
-
-  //td,
-  // tbody th {
-  //   padding: $base-padding $base-padding-lite $base-padding-lite $base-padding-lite;
-  // }
 
   tbody th {
     padding: 10px;
@@ -139,20 +114,8 @@ $ab-border-thick: 4px;
       font-size: 20px;
     }
   }
-
-  // .arrow_box-last {
-  //   border-right: $ab-gutter solid $white;
-  // }
 }
 
-
-// // FIXME
-// #revenue-types tbody:first-of-type tr,
-// #revenue-types tbody:first-of-type tr,
-// #revenue-process tr:first-of-type,
-// #revenue-process tr:first-of-type {
-//   border-top: 0;
-// }
 
 // Arrow box
 
@@ -163,40 +126,8 @@ $ab-border-thick: 4px;
 }
 
 .arrow_box:first-of-type {
-  //background: $ab-color-dark;
-  //font-weight: $weight-bold;
   padding-left: $ab-padding-half;
-
-  // &::after {
-  //   border-left-color: $ab-color-dark;
-  // }
 }
-
-// .arrow_box::before,
-// .arrow_box::after {
-//   border: solid transparent;
-//   content: '';
-//   height: 0;
-//   left: 100%;
-//   pointer-events: none;
-//   position: absolute;
-//   top: 50%;
-//   width: 0;
-// }
-
-// .arrow_box::before {
-//   border-color: transparent;
-//   border-left-color: $white;
-//   border-width: $ab-wrap 0 $ab-wrap $ab-w-indent;
-//   margin-top: -$ab-wrap;
-// }
-
-// .arrow_box::after {
-//   border-color: transparent;
-//   border-left-color: $ab-color-primary;
-//   border-width: $ab-height-half 0 $ab-height-half $ab-h-indent;
-//   margin-top: -$ab-height-half;
-// }
 
 // FIXME
 #revenue-types tbody th .bar,

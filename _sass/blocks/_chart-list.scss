@@ -2,6 +2,14 @@
   @include font-size(0.8);
   @include outer-container();
 
+  padding-top: $base-padding-jumbo;
+
+  p {
+    @include heading(para-sm);
+
+    padding-bottom: $base-padding-jumbo;
+  }
+
   .chart-title {
     border-bottom: 1px solid $mid-gray;
     font-size: inherit;

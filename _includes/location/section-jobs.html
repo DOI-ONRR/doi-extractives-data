@@ -1,6 +1,8 @@
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign county_jobs = site.data.county_jobs[state_id] %}
 
+{% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
+
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
@@ -17,7 +19,7 @@
         {% if jobs_count %}
           there were
           {{ jobs_count | intcomma }}
-          jobs in extractive industries that paid a wage or salary in 
+          jobs in extractive industries that paid a wage or salary in
           {{ state_name }}, or
           {{ jobs_percent | percent }}% of state-wide employment.
         {% else %}
@@ -119,11 +121,44 @@
 
       <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.</p>
 
+      <a href="{{site.baseurl}}/downloads/#jobs">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+      </a>
+
     </div>
+
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
+
+      <h3 class="chart-title">Number of self-employment jobs in extractives</h3>
+
+      <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="self-employment-figures-{{ _metric }}"
+          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
+          data-x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+        <figcaption id="self-employment-figures-{{ _metric }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value"
+            {% if _metric == 'count' %}
+              data-format=","
+            {% elsif _metric == 'percent' %}
+              data-format="%"
+            {% endif %}>
+            {% if _metric == 'count' %}
+              {{ self_employment_jobs[year].jobs | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ self_employment_jobs[year].percent | percent }}%
+            {% endif %}
+          </span>
+        </figcaption>
+      </figure>
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
   </div>
 
-
-  <a href="{{site.baseurl}}/downloads/#jobs">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-  </a>
 </section>

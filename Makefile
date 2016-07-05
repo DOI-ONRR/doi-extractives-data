@@ -95,7 +95,8 @@ data/state_gdp.yml:
 
 data/jobs: \
 	data/state_jobs.yml \
-	data/county_jobs
+	data/county_jobs \
+	data/state_self_employment.yml
 
 data/state_jobs.yml:
 	$(query) --format ndjson " \
@@ -129,6 +130,20 @@ data/county_jobs:
 	  | $(nestly) --if ndjson \
 		  -c _meta/county_jobs.yml \
 		  -o '_$@/{state}.yml'
+
+data/state_self_employment.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region AS state, year, \
+		  jobs, \
+		  ROUND(share, 2) AS percent \
+		FROM self_employment \
+		WHERE \
+		  region IS NOT NULL \
+		ORDER BY state, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/state_jobs.yml \
+		  -o _$@
 
 data/revenue: \
 	data/state_revenues.yml \
@@ -291,6 +306,7 @@ $(db): \
 	tables/all-production \
 	tables/company_revenue \
 	tables/jobs \
+	tables/self_employment \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
@@ -394,6 +410,11 @@ tables/jobs: data/_input/bls
 			--config data/db/models/bls_employment.js; \
 	done
 	@$(call load-sql,data/db/rollup-employment.sql)
+
+tables/self_employment: data/jobs/self-employment.tsv
+	@$(call drop-table,self_employment)
+	$(call load-table,$^,self_employment)
+	@$(call load-sql,data/db/rollup-self-employment.sql)
 
 tables/gdp: data/gdp/regional.tsv
 	@$(call drop-table,gdp)

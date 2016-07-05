@@ -2,8 +2,6 @@
 {% assign county_jobs = site.data.county_jobs[state_id] %}
 
 {% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
-{% assign self_employment_jobs_count = self_employment_jobs[year].count | default: 0 %}
-{% assign self_employment_jobs_percent = self_employment_jobs[year].percent | default: 0 %}
 
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
@@ -158,20 +156,6 @@
           </span>
         </figcaption>
       </figure>
-
-      {% if forloop.last %}
-      <h4>
-        <button is="aria-toggle"
-          aria-controls="self-employment-detail-{{ _metric }}">&plus; Detail</button>
-      </h4>
-      <div id="self-employment-detail-{{ _metric }}" aria-hidden="true">
-        {%
-          include location/display-jobs.html
-          values=self_employment_jobs
-          percent=true
-        %}
-      </div>
-      {% endif %}
 
     </section><!-- /.chart-item -->
     {% endfor %}

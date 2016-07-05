@@ -77,8 +77,7 @@
         <tr>
           <th class="table-arrow_box-subcategory">Onshore</th>
           <td>
-            <strong>Bonus</strong><br/>
-            The amount offered by the highest bidder
+            <strong>Bonus:</strong> The amount offered by the highest bidder
           </td>
           <td>
             <strong>$1.50</strong> annual rent per acre for 5 years<br/>
@@ -92,7 +91,7 @@
         <tr>
           <th class="table-arrow_box-subcategory">Offshore</th>
           <td>
-            <strong>Bonus</strong><br>The amount offered by the highest bidder
+            <strong>Bonus:</strong> The amount offered by the highest bidder
           </td>
           <td>
             <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
@@ -123,7 +122,7 @@
             <tr>
               <th></th>
               <td>
-                <strong>Bonus</strong><br> The amount offered by the highest bidder
+                <strong>Bonus:</strong> The amount offered by the highest bidder
               </td>
               <td>
                 <strong>$3</strong> annual rent per acre
@@ -144,7 +143,7 @@
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}
 
-        {% if commodity_name == 'Geothemal' %}
+        {% if commodity_name == 'Geothermal' %}
           <tr class="table-arrow_box-category"><td colspan="5">
             Geothermal
             <icon class="icon-padded icon-geo"></icon>
@@ -154,15 +153,20 @@
             {% include location/revenue-type-row.html %}
             <tr>
               <th class="table-arrow_box-subcategory">Competitive leasing</th>
-              <td><strong>Nomination fee:</strong> $110 per nomination + $0.11 per acre<br>
-              <strong>Bonus:</strong> The amount offered by the highest bidder $160 processing fee
-            </td><strong>$2</strong> per acre for the first year<br>
-            <strong>$3</strong> annual rent per acre for years 2-10<br>
-            <strong>$5</strong> annual rent per acre thereafter
-              <td><strong>If selling electricity:</strong> 1.75% of gross proceeds for the first 10 years of production, then 3.5% of gross proceeds<br><strong>If selling geothermal resources for third-party electricity generation:</strong> 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%) ***
+              <td>
+                <strong>Nomination fee:</strong> $110 per nomination + $0.11 per acre<br>
+                <strong>Bonus:</strong> The amount offered by the highest bidder<br>
+                <strong>$160</strong> processing fee
               </td>
               <td>
-                <strong>Royalty rates</strong> are established on a case-by-case basis
+                <strong>$2</strong> per acre for the first year<br>
+                <strong>$3</strong> annual rent per acre for years 2-10<br>
+                <strong>$5</strong> annual rent per acre thereafter
+              </td>
+              <td rowspan="2">
+                <strong>Electricity sales:</strong> 1.75% of gross proceeds for 10 years, then 3.5%<br>
+                <strong>Arm's length sales</strong> (for 3rd-party generation): 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%)<br>
+                <strong>Other: </strong>Different fee  rates apply to pre-2005 leases and to direct use facilities 
               </td>
               <td></td>
             </tr>
@@ -171,9 +175,6 @@
               <td><strong>Lease:</strong> $410 payment
               </td>
               <td><strong>$1</strong> annual rent per acre for 10 years<br> <strong>$5</strong> annual rent per acre thereafter
-              </td>
-              <td>
-                <strong>If selling electricity:</strong> 1.75% of gross proceeds for the first 10 years of production, then 3.5% of gross proceeds<br><strong>If selling geothermal resources for third-party electricity generation:</strong> 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%) *** 
               </td>
               <td></td>
             </tr>
@@ -206,7 +207,7 @@
             <strong>$6,500</strong> prospecting permit fee
           </td>
           <td>
-            <strong>$37</strong> annual rent per acre +<br> <strong>$0.50</strong> annual prospecting fee per acre
+            <strong>$37</strong> annual rent per acre + <strong>$0.50</strong> annual prospecting fee per acre
           </td>
           <td>
             Royalty rates are determined by leasing officers on an individual case basis (no minimums apply)
@@ -244,14 +245,8 @@
       </td>
     </tr>
     <tr>
-      <th>* Hardrock mining on public domain lands</th>
+      <th>Hardrock mining on public domain lands</th>
       <td colspan="5">Hardrock mining that takes place on public domain lands, which are managed by the Bureau of Land Management, occurs through the claim-staking process. These fees are not included here, because that dataset does not have state-level data. [Learn more about the claim-staking process] or [see revenue by company, which includes those fees].
       </td>
     </tr>
-    <tr>
-      <th>*** Notes on geothermal energy leases before 2005</th>
-      <td colspan="5">For leases signed before the Energy Policy Act of 2005: The lessee’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%); for direct use, the lessee pays the equivalent value of least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lessee at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
-      </td>
-    </tr>
-
 </table>

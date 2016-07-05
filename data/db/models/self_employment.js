@@ -21,13 +21,9 @@ module.exports = {
           type: new sequelize.INTEGER(4).UNSIGNED
         },
         state: {
-          input: 'State',
+          input: 'Region',
           name: 'state',
           type: new sequelize.STRING(32)
-        },
-        region_id: {
-          name: 'region_id',
-          type: new sequelize.STRING(2)
         },
         extractive_jobs: {
           input: 'Jobs',

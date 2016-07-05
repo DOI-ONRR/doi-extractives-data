@@ -98,7 +98,6 @@ data/jobs: \
 	data/county_jobs \
 	data/state_self_employment.yml
 
-
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -411,11 +410,6 @@ tables/jobs: data/_input/bls
 			--config data/db/models/bls_employment.js; \
 	done
 	@$(call load-sql,data/db/rollup-employment.sql)
-
-# tables/self_employment: data/jobs/self-employment.tsv
-# 	@$(call drop-table,self_employment)
-# 	$(call load-model,$^,self_employment,self_employment)
-# 	@$(call load-sql,data/db/rollup-self-employment.sql)
 
 tables/self_employment: data/jobs/self-employment.tsv
 	@$(call drop-table,self_employment)

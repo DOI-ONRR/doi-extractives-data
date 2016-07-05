@@ -5,3 +5,4 @@ UPDATE bls_employment SET
     WHERE states.name = bls_employment.state
     LIMIT 1
   );
+

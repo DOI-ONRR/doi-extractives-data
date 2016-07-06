@@ -18,8 +18,6 @@
     {% assign short_units = units_map.shorten[units] | default 'units' %}
     {% assign long_units = units_map.lengthen[units] | default 'units' %}
     {% assign units_suffix = units_map.suffix[units] | default '' %}
-    {% assign units_title = units_map.title[units] %}
-
 
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
@@ -38,7 +36,7 @@
         </figcaption>
       </figure>
       <p class="chart-list_caption">
-        {% if volume %}{{ volume | intcomma }} {{ long_units }} of
+        {% if volume %}{{ volume | intcomma }} {{ long_units | term }} of
         {% else %}No{% endif %}
         {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in {{ year }}.
       </p>

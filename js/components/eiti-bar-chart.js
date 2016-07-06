@@ -174,8 +174,8 @@
         .attr('fill', 'none');
   };
 
-  var addUnits = function(text, units) {
-    if (units === '$') {
+  var formatUnits = function(text, units) {
+    if (units === '$' || units === 'dollars') {
       text = [units, text].join(' ');
     } else {
       text = [text, units].join(' ');
@@ -208,10 +208,8 @@
       var y = output.select('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
-      console.log(units)
 
-      // y.text(format(value.y));
-      y.text(addUnits(format(value.y),units));
+      y.text(formatUnits(format(value.y),units));
     }
   };
 

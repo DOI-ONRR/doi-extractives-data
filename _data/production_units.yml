@@ -1,0 +1,37 @@
+shorten:
+  billions of barrels: bbl
+  bbl: bbl
+  mcf: mcf
+  tons: tons
+  short tons: short tons
+  kilowatt hours: kWh
+  kwh: kWh
+  electrical generation, thousands of pounds: klb
+  direct utilization, millions of btus: MMBTUs
+  electrical generation, kilowatt hours: kWh
+  electrical generation, other: units
+  sulfur: sulfur
+lengthen:
+  bbl: billions of barrels
+  mcf: mcf
+  tons: tons
+  short tons: short tons
+  kWh: kilowatt hours
+  klb: thousand pounds
+  electrical generation, thousands of pounds: thousand pounds
+  MMBTUs: millions of btus
+  mmbtus: millions of btus
+  direct utilization, millions of btus: millions of btus
+  kWh: kilowatt hours
+  kwh: kilowatt hours
+  electrical generation, kilowatt hours: kilowatt hours
+  electrical generation, other: units
+  sulfur: sulfur
+suffix:
+  kilowatt hours: energy
+  kwh: energy
+  electrical generation, thousands of pounds: energy
+  direct utilization, millions of btus: energy
+  electrical generation, kilowatt hours: energy
+  electrical generation, other: energy
+  sulfur: energy

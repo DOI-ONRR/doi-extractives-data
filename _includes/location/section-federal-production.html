@@ -1,5 +1,6 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 {% assign federal_products_num = federal_products | size %}
+{% assign units_map = site.data.production_units %}
 
 <section id="federal-production" class="federal production">
 
@@ -23,9 +24,12 @@
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
       {% assign units = product[1].units | downcase | default: 'units' %}
+      {% assign short_units = units_map.shorten[units] | default 'units' %}
+      {% assign long_units = units_map.lengthen[units] | default 'units' %}
+      {% assign units_suffix = units_map.suffix[units] | default '' %}
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
-        <h4 class="chart-title">{{ product_name }} ({{ units }})</h4>
+        <h4 class="chart-title">{{ product_name }}</h4>
 
         <div class="row-container">
 
@@ -34,10 +38,10 @@
             <div class="text-container">
               <p>
                 {% if volume %}
-                  {{ volume | intcomma }} {{ units }}
-                  of {{ product_name | downcase }} were
+                  {{ volume | intcomma }} {{ long_units | term }}
+                  of {{ product_name | downcase | suffix:units_suffix }} were
                 {% else %}
-                  No {{ product_name | downcase }} was
+                  No {{ product_name | downcase | suffix:units_suffix }} was
                 {% endif %}
                 produced on federal land in {{ state_name }} in {{ year }}.
               </p>
@@ -53,7 +57,9 @@
                 </eiti-bar-chart>
                 <figcaption id="federal-production-figures-{{ product_slug }}">
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                  <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                  <span class="eiti-bar-chart-y-value"
+                        data-format=","
+                        data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
                 </figcaption>
               </figure>
 

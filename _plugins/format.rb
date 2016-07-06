@@ -34,6 +34,10 @@ module EITI
       num.to_i
     end
 
+    def suffix(text, suffix = "")
+      "#{text} #{suffix}"
+    end
+
   end
 
 end

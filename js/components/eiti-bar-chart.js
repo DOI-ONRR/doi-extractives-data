@@ -208,7 +208,6 @@
       var y = output.select('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
-
       y.text(formatUnits(format(value.y),units));
     }
   };

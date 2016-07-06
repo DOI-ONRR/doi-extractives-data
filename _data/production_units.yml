@@ -1,58 +1,65 @@
-shorten:
-  # units that stay the same
-  bbl: bbl
-  barrels: barrels
-  mcf: mcf
-  tons: tons
-  short tons: short tons
-  # units of energy
-  kilowatt hours: kWh
-  # geothermal energy
-  electrical generation, thousands of pounds: klb
-  direct utilization, millions of btus: MMBTUs
-  electrical generation, kilowatt hours: kWh
-  electrical generation, other: units
-  direct use, millions of gallons: Mgal
-  direct utilization, hundreds of gallons: cgal
-  sulfur: sulfur
-  # misc
-  tickets/pounds: lbs
-  tons- equivalent: tons
-lengthen:
-  # units that stay the same
-  barrels: barrels
-  mcf: mcf
-  tons: tons
-  short tons: short tons
-  kilowatt hours: kilowatt hours
-  tickets/pounds: tickets/pounds
-  # oil
-  bbl: billions of barrels
-  # weight
-  klb: thousand pounds
-  # geothermal
-  electrical generation, thousands of pounds: thousand pounds
-  direct utilization, millions of btus: millions of btus
-  electrical generation, kilowatt hours: kilowatt hours
-  electrical generation, other: units
-  direct use, millions of gallons: millions of gallons
-  direct utilization, hundreds of gallons: hundreds of gallons
-  sulfur: sulfur
-  # misc
-  tons- equivalent: equivalent tons
-suffix:
-  kilowatt hours: energy
-  kwh: energy
-  electrical generation, thousands of pounds: energy
-  direct utilization, millions of btus: energy
-  electrical generation, kilowatt hours: energy
-  electrical generation, other: energy
-  sulfur: energy
-title:
-  electrical generation, thousands of pounds: electrical generation
-  direct utilization, millions of btus: direct utilization
-  electrical generation, kilowatt hours: electrical generation
-  electrical generation, other: electrical generation
-  direct use, millions of gallons: direct use
-  direct utilization, hundreds of gallons: direct use
-  sulfur: sulfur
+# units that stay the same
+barrels:
+  long: barrels
+  short: barrels
+mcf:
+  long: mcf
+  short: mcf
+tons:
+  long: tons
+  short: tons
+short tons:
+  long: short tons
+  short: short tons
+# oil
+bbl:
+  long: billions of barrels
+  short: bbl
+# units of energy
+kilowatt hours:
+  short: kWh
+  long: kilowatt hours
+# geothermal energy
+electrical generation, thousands of pounds:
+  short: klb
+  long: thousand pounds
+  suffix: energy
+  title: electrical generation
+direct utilization, millions of btus:
+  short: MMBTUs
+  long: millions of BTUs
+  suffix: energy
+  title: direct use
+electrical generation, kilowatt hours:
+  short: kWh
+  long: kilowatt hours
+  suffix: energy
+  title: electrical generation
+electrical generation, other:
+  short: units
+  long: units
+  suffix: energy
+  title: electrical generation
+direct use, millions of gallons:
+  short: Mgal
+  long: millions of gallons
+  suffix: energy
+  title: direct use
+direct utilization, hundreds of gallons:
+  short: cgal
+  long: hundreds of gallons
+  suffix: energy
+  title: direct use
+sulfur:
+  short: sulfur
+  long: sulfur
+  suffix: energy
+  title: sulfur
+# misc
+tickets/pounds:
+  short: lbs
+  long: tickets/pounds
+tons- equivalent:
+  short: tons
+  long: equivalent tons
+

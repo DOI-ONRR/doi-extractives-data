@@ -4,7 +4,7 @@
   var DATA = '__es_data__';
   var X = '__es_x__';
 
-  var observedAttributes = ['x-range', 'data', 'x-value'];
+  var observedAttributes = ['x-range', 'data', 'x-value', 'data-units'];
 
   // global dimensions
   var width = 300;
@@ -174,6 +174,15 @@
         .attr('fill', 'none');
   };
 
+  var formatUnits = function(text, units) {
+    if (units === '$' || units === 'dollars') {
+      text = [units, text].join(' ');
+    } else {
+      text = [text, units].join(' ');
+    }
+    return text;
+  }
+
   var updateSelected = function(selection, x) {
     var index;
     var value = {x: x, y: 0};
@@ -198,7 +207,8 @@
         .text(value.x);
       var y = output.select('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
-      y.text(format(value.y));
+      var units = y.attr('data-units');
+      y.text(formatUnits(format(value.y),units));
     }
   };
 

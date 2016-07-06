@@ -2,7 +2,7 @@ AK:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 9000
@@ -46,7 +46,7 @@ AK:
           rank: 47
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 9000
@@ -134,7 +134,7 @@ AK:
           rank: 17
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1498000
@@ -266,7 +266,7 @@ AK:
           rank: 4
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 9000
@@ -310,7 +310,7 @@ AK:
           rank: 39
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2005':
           volume: 1000
@@ -346,7 +346,7 @@ AK:
           rank: 35
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2006':
           volume: 1000
@@ -356,7 +356,7 @@ AL:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3779000
@@ -400,7 +400,7 @@ AL:
           rank: 25
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3779000
@@ -488,7 +488,7 @@ AL:
           rank: 10
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 10626000
@@ -772,7 +772,7 @@ AL:
           rank: 14
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 23000
@@ -816,7 +816,7 @@ AL:
           rank: 43
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3756000
@@ -862,7 +862,7 @@ AR:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1810000
@@ -906,7 +906,7 @@ AR:
           rank: 35
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1810000
@@ -994,7 +994,7 @@ AR:
           rank: 21
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3643000
@@ -1126,7 +1126,7 @@ AR:
           rank: 19
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 33000
@@ -1170,7 +1170,7 @@ AR:
           rank: 28
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1778000
@@ -1216,7 +1216,7 @@ AZ:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 48000
@@ -1260,7 +1260,7 @@ AZ:
           rank: 27
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 44000
@@ -1348,7 +1348,7 @@ AZ:
           rank: 13
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 6973000
@@ -1616,7 +1616,7 @@ AZ:
           rank: 29
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 44000
@@ -1660,7 +1660,7 @@ AZ:
           rank: 34
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4000
@@ -1704,7 +1704,7 @@ AZ:
           rank: 2
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 30000
@@ -1728,7 +1728,7 @@ AZ:
           rank: 29
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2005':
           volume: 12000
@@ -1766,7 +1766,7 @@ CA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 23971000
@@ -1810,7 +1810,7 @@ CA:
           rank: 2
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 5989000
@@ -1854,7 +1854,7 @@ CA:
           rank: 1
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 34141000
@@ -1898,7 +1898,7 @@ CA:
           rank: 4
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 13105000
@@ -2030,7 +2030,7 @@ CA:
           rank: 3
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2162000
@@ -2074,7 +2074,7 @@ CA:
           rank: 1
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 571000
@@ -2118,7 +2118,7 @@ CA:
           rank: 1
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4306000
@@ -2162,7 +2162,7 @@ CA:
           rank: 3
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3827000
@@ -2208,7 +2208,7 @@ CO:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 255000
@@ -2252,7 +2252,7 @@ CO:
           rank: 10
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 35000
@@ -2340,7 +2340,7 @@ CO:
           rank: 8
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1195000
@@ -2472,7 +2472,7 @@ CO:
           rank: 8
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 35000
@@ -2516,7 +2516,7 @@ CO:
           rank: 32
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 2000
@@ -2548,7 +2548,7 @@ CO:
           rank: 7
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 220000
@@ -2592,7 +2592,7 @@ CO:
           rank: 9
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 2000
@@ -2606,7 +2606,7 @@ CT:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 758000
@@ -2650,7 +2650,7 @@ CT:
           rank: 45
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 758000
@@ -2694,7 +2694,7 @@ CT:
           rank: 25
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 463000
@@ -2738,7 +2738,7 @@ CT:
           rank: 40
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 752000
@@ -2782,7 +2782,7 @@ CT:
           rank: 10
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 5000
@@ -2824,7 +2824,7 @@ DE:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 48000
@@ -2856,7 +2856,7 @@ DE:
           rank: 48
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 48000
@@ -2888,7 +2888,7 @@ DE:
           rank: 40
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 48000
@@ -2920,7 +2920,7 @@ DE:
           rank: 38
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2011':
           volume: 8000
@@ -2936,7 +2936,7 @@ DE:
           rank: 15
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 3000
@@ -2958,7 +2958,7 @@ FL:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4502000
@@ -3002,7 +3002,7 @@ FL:
           rank: 16
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4502000
@@ -3046,7 +3046,7 @@ FL:
           rank: 2
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 265000
@@ -3314,7 +3314,7 @@ FL:
           rank: 24
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2285000
@@ -3358,7 +3358,7 @@ FL:
           rank: 2
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 9000
@@ -3382,7 +3382,7 @@ FL:
           rank: 8
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2216000
@@ -3428,7 +3428,7 @@ GA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3192000
@@ -3472,7 +3472,7 @@ GA:
           rank: 19
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3192000
@@ -3516,7 +3516,7 @@ GA:
           rank: 4
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3692000
@@ -3560,7 +3560,7 @@ GA:
           rank: 12
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 83000
@@ -3604,7 +3604,7 @@ GA:
           rank: 15
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 3000
@@ -3616,7 +3616,7 @@ GA:
           rank: 20
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3108000
@@ -3662,7 +3662,7 @@ HI:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 550000
@@ -3706,7 +3706,7 @@ HI:
           rank: 40
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 329000
@@ -3750,7 +3750,7 @@ HI:
           rank: 31
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 94000
@@ -3794,7 +3794,7 @@ HI:
           rank: 45
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 213000
@@ -3838,7 +3838,7 @@ HI:
           rank: 4
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 329000
@@ -3882,7 +3882,7 @@ HI:
           rank: 19
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 1000
@@ -3906,7 +3906,7 @@ HI:
           rank: 18
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 7000
@@ -3952,7 +3952,7 @@ IA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1156000
@@ -3996,7 +3996,7 @@ IA:
           rank: 3
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 106000
@@ -4040,7 +4040,7 @@ IA:
           rank: 34
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 946000
@@ -4084,7 +4084,7 @@ IA:
           rank: 34
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 106000
@@ -4128,7 +4128,7 @@ IA:
           rank: 25
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1050000
@@ -4174,7 +4174,7 @@ ID:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 560000
@@ -4218,7 +4218,7 @@ ID:
           rank: 22
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 560000
@@ -4262,7 +4262,7 @@ ID:
           rank: 25
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 8462000
@@ -4306,7 +4306,7 @@ ID:
           rank: 8
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 86000
@@ -4334,7 +4334,7 @@ ID:
           rank: 6
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 24000
@@ -4354,7 +4354,7 @@ ID:
           rank: 24
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2006':
           volume: 170000
@@ -4390,7 +4390,7 @@ ID:
           rank: 18
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 560000
@@ -4436,7 +4436,7 @@ IL:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 822000
@@ -4480,7 +4480,7 @@ IL:
           rank: 5
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 744000
@@ -4568,7 +4568,7 @@ IL:
           rank: 2
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 154000
@@ -4852,7 +4852,7 @@ IL:
           rank: 15
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 744000
@@ -4896,7 +4896,7 @@ IL:
           rank: 11
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 14000
@@ -4916,7 +4916,7 @@ IL:
           rank: 13
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 78000
@@ -4960,7 +4960,7 @@ IL:
           rank: 5
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 1000
@@ -4974,7 +4974,7 @@ IN:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 137000
@@ -5018,7 +5018,7 @@ IN:
           rank: 18
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 137000
@@ -5106,7 +5106,7 @@ IN:
           rank: 5
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 444000
@@ -5390,7 +5390,7 @@ IN:
           rank: 23
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 137000
@@ -5434,7 +5434,7 @@ IN:
           rank: 18
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2013':
           volume: 31000
@@ -5442,7 +5442,7 @@ IN:
           rank: 16
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 238000
@@ -5472,7 +5472,7 @@ KS:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 359000
@@ -5516,7 +5516,7 @@ KS:
           rank: 7
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 54000
@@ -5580,7 +5580,7 @@ KS:
           rank: 22
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 13000
@@ -5712,7 +5712,7 @@ KS:
           rank: 10
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 54000
@@ -5732,7 +5732,7 @@ KS:
           rank: 37
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 359000
@@ -5778,7 +5778,7 @@ KY:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 411000
@@ -5822,7 +5822,7 @@ KY:
           rank: 46
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 411000
@@ -5866,7 +5866,7 @@ KY:
           rank: 32
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3780000
@@ -6150,7 +6150,7 @@ KY:
           rank: 21
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 62000
@@ -6194,7 +6194,7 @@ KY:
           rank: 29
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 349000
@@ -6240,7 +6240,7 @@ LA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2966000
@@ -6284,7 +6284,7 @@ LA:
           rank: 26
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2966000
@@ -6372,7 +6372,7 @@ LA:
           rank: 15
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1099000
@@ -6504,7 +6504,7 @@ LA:
           rank: 7
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 77000
@@ -6548,7 +6548,7 @@ LA:
           rank: 31
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2890000
@@ -6594,7 +6594,7 @@ MA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1230000
@@ -6638,7 +6638,7 @@ MA:
           rank: 36
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1230000
@@ -6682,7 +6682,7 @@ MA:
           rank: 20
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 998000
@@ -6726,7 +6726,7 @@ MA:
           rank: 33
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1116000
@@ -6770,7 +6770,7 @@ MA:
           rank: 5
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 1000
@@ -6790,7 +6790,7 @@ MA:
           rank: 10
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 4000
@@ -6818,7 +6818,7 @@ MA:
           rank: 34
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 114000
@@ -6864,7 +6864,7 @@ MD:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 589000
@@ -6908,7 +6908,7 @@ MD:
           rank: 42
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 589000
@@ -6996,7 +6996,7 @@ MD:
           rank: 16
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2508000
@@ -7236,7 +7236,7 @@ MD:
           rank: 15
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 397000
@@ -7280,7 +7280,7 @@ MD:
           rank: 16
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2011':
           volume: 3000
@@ -7296,7 +7296,7 @@ MD:
           rank: 12
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 1000
@@ -7316,7 +7316,7 @@ MD:
           rank: 31
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 192000
@@ -7362,7 +7362,7 @@ ME:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3598000
@@ -7406,7 +7406,7 @@ ME:
           rank: 15
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3598000
@@ -7450,7 +7450,7 @@ ME:
           rank: 3
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3430000
@@ -7494,7 +7494,7 @@ ME:
           rank: 13
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 411000
@@ -7538,7 +7538,7 @@ ME:
           rank: 22
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 99000
@@ -7570,7 +7570,7 @@ ME:
           rank: 26
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3187000
@@ -7616,7 +7616,7 @@ MI:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2558000
@@ -7660,7 +7660,7 @@ MI:
           rank: 14
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2557000
@@ -7704,7 +7704,7 @@ MI:
           rank: 8
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1540000
@@ -7988,7 +7988,7 @@ MI:
           rank: 17
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 690000
@@ -8032,7 +8032,7 @@ MI:
           rank: 7
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2000
@@ -8076,7 +8076,7 @@ MI:
           rank: 16
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1867000
@@ -8122,7 +8122,7 @@ MN:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1797000
@@ -8166,7 +8166,7 @@ MN:
           rank: 6
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 985000
@@ -8210,7 +8210,7 @@ MN:
           rank: 16
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 738000
@@ -8254,7 +8254,7 @@ MN:
           rank: 37
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 332000
@@ -8298,7 +8298,7 @@ MN:
           rank: 12
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2013':
           volume: 3000
@@ -8306,7 +8306,7 @@ MN:
           rank: 21
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 812000
@@ -8350,7 +8350,7 @@ MN:
           rank: 7
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 652000
@@ -8396,7 +8396,7 @@ MO:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 10000
@@ -8440,7 +8440,7 @@ MO:
           rank: 39
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 10000
@@ -8528,7 +8528,7 @@ MO:
           rank: 20
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1480000
@@ -8768,7 +8768,7 @@ MO:
           rank: 28
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 9000
@@ -8812,7 +8812,7 @@ MO:
           rank: 36
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 203000
@@ -8840,7 +8840,7 @@ MO:
           rank: 24
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 2000
@@ -8858,7 +8858,7 @@ MS:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1514000
@@ -8902,7 +8902,7 @@ MS:
           rank: 36
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1514000
@@ -9230,7 +9230,7 @@ MS:
           rank: 13
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3000
@@ -9274,7 +9274,7 @@ MS:
           rank: 45
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1511000
@@ -9320,7 +9320,7 @@ MT:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 62000
@@ -9364,7 +9364,7 @@ MT:
           rank: 33
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 62000
@@ -9444,7 +9444,7 @@ MT:
           rank: 4
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 8856000
@@ -9576,7 +9576,7 @@ MT:
           rank: 12
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2006':
           volume: 436000
@@ -9612,7 +9612,7 @@ MT:
           rank: 21
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 62000
@@ -9650,7 +9650,7 @@ NC:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1733000
@@ -9694,7 +9694,7 @@ NC:
           rank: 23
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1733000
@@ -9738,7 +9738,7 @@ NC:
           rank: 9
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 5435000
@@ -9782,7 +9782,7 @@ NC:
           rank: 9
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 112000
@@ -9826,7 +9826,7 @@ NC:
           rank: 17
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 2000
@@ -9854,7 +9854,7 @@ NC:
           rank: 6
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1621000
@@ -9900,7 +9900,7 @@ ND:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 220000
@@ -9944,7 +9944,7 @@ ND:
           rank: 13
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 6000
@@ -10032,7 +10032,7 @@ ND:
           rank: 6
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1546000
@@ -10164,7 +10164,7 @@ ND:
           rank: 2
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 6000
@@ -10208,7 +10208,7 @@ ND:
           rank: 46
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 215000
@@ -10254,7 +10254,7 @@ NE:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 78000
@@ -10298,7 +10298,7 @@ NE:
           rank: 32
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 40000
@@ -10342,7 +10342,7 @@ NE:
           rank: 38
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 913000
@@ -10626,7 +10626,7 @@ NE:
           rank: 22
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 40000
@@ -10670,7 +10670,7 @@ NE:
           rank: 35
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 38000
@@ -10716,7 +10716,7 @@ NH:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 883000
@@ -10760,7 +10760,7 @@ NH:
           rank: 34
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 883000
@@ -10804,7 +10804,7 @@ NH:
           rank: 19
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1316000
@@ -10848,7 +10848,7 @@ NH:
           rank: 25
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 155000
@@ -10892,7 +10892,7 @@ NH:
           rank: 26
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 10000
@@ -10920,7 +10920,7 @@ NH:
           rank: 30
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 728000
@@ -10966,7 +10966,7 @@ NJ:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 806000
@@ -11010,7 +11010,7 @@ NJ:
           rank: 37
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 806000
@@ -11054,7 +11054,7 @@ NJ:
           rank: 22
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 38000
@@ -11098,7 +11098,7 @@ NJ:
           rank: 46
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 806000
@@ -11142,7 +11142,7 @@ NJ:
           rank: 6
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 3000
@@ -11170,7 +11170,7 @@ NJ:
           rank: 4
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2006':
           volume: 16000
@@ -11208,7 +11208,7 @@ NM:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 513000
@@ -11252,7 +11252,7 @@ NM:
           rank: 29
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2005':
           volume: 5000
@@ -11336,7 +11336,7 @@ NM:
           rank: 9
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 139000
@@ -11468,7 +11468,7 @@ NM:
           rank: 6
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2005':
           volume: 5000
@@ -11508,7 +11508,7 @@ NM:
           rank: 44
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 9000
@@ -11528,7 +11528,7 @@ NM:
           rank: 5
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 513000
@@ -11574,7 +11574,7 @@ NV:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1298000
@@ -11618,7 +11618,7 @@ NV:
           rank: 20
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 1000
@@ -11634,7 +11634,7 @@ NV:
           rank: 43
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1615000
@@ -11678,7 +11678,7 @@ NV:
           rank: 16
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1298000
@@ -11866,7 +11866,7 @@ NV:
           rank: 26
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 19000
@@ -11878,7 +11878,7 @@ NV:
           rank: 42
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 44000
@@ -11910,7 +11910,7 @@ NV:
           rank: 3
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 129000
@@ -11922,7 +11922,7 @@ NV:
           rank: 32
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 1000
@@ -11932,7 +11932,7 @@ NY:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1912000
@@ -11976,7 +11976,7 @@ NY:
           rank: 11
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1795000
@@ -12020,7 +12020,7 @@ NY:
           rank: 11
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 23990000
@@ -12304,7 +12304,7 @@ NY:
           rank: 27
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1298000
@@ -12348,7 +12348,7 @@ NY:
           rank: 4
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2011':
           volume: 6000
@@ -12364,7 +12364,7 @@ NY:
           rank: 11
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 116000
@@ -12408,7 +12408,7 @@ NY:
           rank: 13
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 497000
@@ -12454,7 +12454,7 @@ OH:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 428000
@@ -12498,7 +12498,7 @@ OH:
           rank: 31
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 428000
@@ -12586,7 +12586,7 @@ OH:
           rank: 7
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 730000
@@ -12718,7 +12718,7 @@ OH:
           rank: 16
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 30000
@@ -12762,7 +12762,7 @@ OH:
           rank: 14
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 13000
@@ -12782,7 +12782,7 @@ OH:
           rank: 14
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2005':
           volume: 13000
@@ -12822,7 +12822,7 @@ OH:
           rank: 25
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 398000
@@ -12868,7 +12868,7 @@ OK:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 823000
@@ -12912,7 +12912,7 @@ OK:
           rank: 4
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 250000
@@ -13000,7 +13000,7 @@ OK:
           rank: 18
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2977000
@@ -13132,7 +13132,7 @@ OK:
           rank: 5
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2007':
           volume: 4000
@@ -13164,7 +13164,7 @@ OK:
           rank: 27
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 573000
@@ -13208,7 +13208,7 @@ OK:
           rank: 4
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 250000
@@ -13254,7 +13254,7 @@ OR:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1115000
@@ -13298,7 +13298,7 @@ OR:
           rank: 9
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 496000
@@ -13342,7 +13342,7 @@ OR:
           rank: 23
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 33081000
@@ -13386,7 +13386,7 @@ OR:
           rank: 2
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 26000
@@ -13546,7 +13546,7 @@ OR:
           rank: 12
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 86000
@@ -13590,7 +13590,7 @@ OR:
           rank: 20
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 6000
@@ -13602,7 +13602,7 @@ OR:
           rank: 17
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 619000
@@ -13646,7 +13646,7 @@ OR:
           rank: 8
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 410000
@@ -13692,7 +13692,7 @@ PA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2276000
@@ -13736,7 +13736,7 @@ PA:
           rank: 12
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1969000
@@ -13780,7 +13780,7 @@ PA:
           rank: 10
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3155000
@@ -13912,7 +13912,7 @@ PA:
           rank: 20
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1289000
@@ -13956,7 +13956,7 @@ PA:
           rank: 3
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 4000
@@ -13980,7 +13980,7 @@ PA:
           rank: 12
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 306000
@@ -14024,7 +14024,7 @@ PA:
           rank: 15
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 680000
@@ -14070,7 +14070,7 @@ RI:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 102000
@@ -14110,7 +14110,7 @@ RI:
           rank: 49
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 102000
@@ -14150,7 +14150,7 @@ RI:
           rank: 42
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 5000
@@ -14194,7 +14194,7 @@ RI:
           rank: 48
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 102000
@@ -14234,7 +14234,7 @@ RI:
           rank: 40
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2013':
           volume: 2000
@@ -14242,7 +14242,7 @@ RI:
           rank: 22
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 3000
@@ -14264,7 +14264,7 @@ SC:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1763000
@@ -14308,7 +14308,7 @@ SC:
           rank: 30
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1763000
@@ -14352,7 +14352,7 @@ SC:
           rank: 12
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2447000
@@ -14396,7 +14396,7 @@ SC:
           rank: 15
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 69000
@@ -14440,7 +14440,7 @@ SC:
           rank: 23
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1694000
@@ -14486,7 +14486,7 @@ SD:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 158000
@@ -14530,7 +14530,7 @@ SD:
           rank: 28
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 2000
@@ -14542,7 +14542,7 @@ SD:
           rank: 46
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3598000
@@ -14822,7 +14822,7 @@ SD:
           rank: 25
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 2000
@@ -14834,7 +14834,7 @@ SD:
           rank: 43
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 158000
@@ -14880,7 +14880,7 @@ TN:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 830000
@@ -14924,7 +14924,7 @@ TN:
           rank: 41
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 826000
@@ -15012,7 +15012,7 @@ TN:
           rank: 19
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 10408000
@@ -15296,7 +15296,7 @@ TN:
           rank: 26
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 42000
@@ -15340,7 +15340,7 @@ TN:
           rank: 30
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 12000
@@ -15352,7 +15352,7 @@ TN:
           rank: 17
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4000
@@ -15396,7 +15396,7 @@ TN:
           rank: 36
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 784000
@@ -15442,7 +15442,7 @@ TX:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4247000
@@ -15486,7 +15486,7 @@ TX:
           rank: 1
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1109000
@@ -15574,7 +15574,7 @@ TX:
           rank: 3
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1301000
@@ -15706,7 +15706,7 @@ TX:
           rank: 1
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 252000
@@ -15750,7 +15750,7 @@ TX:
           rank: 9
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2010':
           volume: 8000
@@ -15770,7 +15770,7 @@ TX:
           rank: 9
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 3138000
@@ -15814,7 +15814,7 @@ TX:
           rank: 1
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 857000
@@ -15860,7 +15860,7 @@ UT:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 199000
@@ -15904,7 +15904,7 @@ UT:
           rank: 43
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4000
@@ -15992,7 +15992,7 @@ UT:
           rank: 11
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 450000
@@ -16036,7 +16036,7 @@ UT:
           rank: 38
     Geothermal:
       name: Geothermal
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 195000
@@ -16168,7 +16168,7 @@ UT:
           rank: 11
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 4000
@@ -16212,7 +16212,7 @@ UT:
           rank: 33
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2012':
           volume: 2000
@@ -16224,7 +16224,7 @@ UT:
           rank: 22
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2008':
           volume: 24000
@@ -16254,7 +16254,7 @@ VA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2432000
@@ -16298,7 +16298,7 @@ VA:
           rank: 24
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2432000
@@ -16386,7 +16386,7 @@ VA:
           rank: 12
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1583000
@@ -16670,7 +16670,7 @@ VA:
           rank: 30
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 699000
@@ -16714,7 +16714,7 @@ VA:
           rank: 8
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1733000
@@ -16760,7 +16760,7 @@ VT:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 404000
@@ -16804,7 +16804,7 @@ VT:
           rank: 44
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 393000
@@ -16848,7 +16848,7 @@ VT:
           rank: 28
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1187000
@@ -16892,7 +16892,7 @@ VT:
           rank: 27
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2009':
           volume: 24000
@@ -16916,7 +16916,7 @@ VT:
           rank: 41
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2011':
           volume: 2000
@@ -16932,7 +16932,7 @@ VT:
           rank: 19
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 11000
@@ -16976,7 +16976,7 @@ VT:
           rank: 33
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 393000
@@ -17022,7 +17022,7 @@ WA:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2311000
@@ -17066,7 +17066,7 @@ WA:
           rank: 8
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1575000
@@ -17126,7 +17126,7 @@ WA:
           rank: 18
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 71576000
@@ -17170,7 +17170,7 @@ WA:
           rank: 1
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 185000
@@ -17214,7 +17214,7 @@ WA:
           rank: 21
     Solar:
       name: Solar
-      units: null
+      units: kilowatt hours
       volume:
         '2011':
           volume: 1000
@@ -17230,7 +17230,7 @@ WA:
           rank: 23
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 737000
@@ -17274,7 +17274,7 @@ WA:
           rank: 10
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1389000
@@ -17320,7 +17320,7 @@ WI:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1114000
@@ -17364,7 +17364,7 @@ WI:
           rank: 21
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1010000
@@ -17408,7 +17408,7 @@ WI:
           rank: 15
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1981000
@@ -17452,7 +17452,7 @@ WI:
           rank: 20
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 405000
@@ -17496,7 +17496,7 @@ WI:
           rank: 13
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 104000
@@ -17540,7 +17540,7 @@ WI:
           rank: 22
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 605000
@@ -17586,7 +17586,7 @@ WV:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 163000
@@ -17630,7 +17630,7 @@ WV:
           rank: 38
     Biomass (total):
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2000
@@ -17658,7 +17658,7 @@ WV:
           rank: 46
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1318000
@@ -17790,7 +17790,7 @@ WV:
           rank: 18
     Other biomass:
       name: Other biomass
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 2000
@@ -17810,7 +17810,7 @@ WV:
           rank: 47
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 161000
@@ -17854,7 +17854,7 @@ WV:
           rank: 23
     Wood and wood-derived fuels:
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 1000
@@ -17868,7 +17868,7 @@ WY:
   products:
     All Other Renewables:
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 617000
@@ -17956,7 +17956,7 @@ WY:
           rank: 1
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 593000
@@ -18088,7 +18088,7 @@ WY:
           rank: 9
     Wind:
       name: Wind
-      units: null
+      units: kilowatt hours
       volume:
         '2004':
           volume: 617000

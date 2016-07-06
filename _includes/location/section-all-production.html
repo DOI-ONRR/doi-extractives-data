@@ -1,4 +1,5 @@
 {% assign all_products = site.data.state_all_production[state_id].products %}
+{% assign units_map = site.data.production_units %}
 
 <section id="all-production" class="all-lands production">
 
@@ -14,6 +15,10 @@
     {% assign production_values = product[1].volume %}
     {% assign volume = production_values[year].volume %}
     {% assign units = product[1].units | downcase | default: 'units' %}
+    {% assign short_units = units_map[units].short | default 'units' %}
+    {% assign long_units = units_map[units].long | default 'units' %}
+    {% assign units_suffix = units_map[units].suffix | default '' %}
+
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
       <h3 class="chart-title">{{ product_name }}</h3>
@@ -27,13 +32,13 @@
         </eiti-bar-chart>
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
+          <span class="eiti-bar-chart-y-value" data-format="," data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
       <p class="chart-list_caption">
-        {% if volume %}{{ volume | intcomma }} {{ units }} of
+        {% if volume %}{{ volume | intcomma }} {{ long_units | term }} of
         {% else %}No{% endif %}
-        {{ product_name | downcase }} was extracted in {{ state_name }} in {{ year }}.
+        {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in {{ year }}.
       </p>
       <!-- <h4>
         <button is="aria-toggle"

@@ -1,7 +1,4 @@
 # units that stay the same
-barrels:
-  long: barrels
-  short: barrels
 mcf:
   long: mcf
   short: mcf
@@ -13,7 +10,10 @@ short tons:
   short: short tons
 # oil
 bbl:
-  long: billions of barrels
+  long: barrels
+  short: bbl
+barrels:
+  long: barrels
   short: bbl
 # units of energy
 kilowatt hours:
@@ -27,7 +27,7 @@ electrical generation, thousands of pounds:
   title: electrical generation
 direct utilization, millions of btus:
   short: MMBTUs
-  long: millions of BTUs
+  long: million BTUs
   suffix: energy
   title: direct use
 electrical generation, kilowatt hours:
@@ -42,12 +42,12 @@ electrical generation, other:
   title: electrical generation
 direct use, millions of gallons:
   short: Mgal
-  long: millions of gallons
+  long: million gallons
   suffix: energy
   title: direct use
 direct utilization, hundreds of gallons:
   short: cgal
-  long: hundreds of gallons
+  long: hundred gallons
   suffix: energy
   title: direct use
 sulfur:

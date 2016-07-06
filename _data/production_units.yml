@@ -10,7 +10,12 @@ shorten:
   direct utilization, millions of btus: MMBTUs
   electrical generation, kilowatt hours: kWh
   electrical generation, other: units
+  direct use, millions of gallons: Mgal
+  direct utilization, hundreds of gallons: cgal
   sulfur: sulfur
+  tickets/pounds: lbs
+  barrels: barrels
+  tons- equivalent: tons
 lengthen:
   bbl: billions of barrels
   mcf: mcf
@@ -22,11 +27,16 @@ lengthen:
   MMBTUs: millions of btus
   mmbtus: millions of btus
   direct utilization, millions of btus: millions of btus
+  direct use, millions of gallons: millions of gallons
+  direct utilization, hundreds of gallons: hundreds of gallons
   kWh: kilowatt hours
   kwh: kilowatt hours
   electrical generation, kilowatt hours: kilowatt hours
   electrical generation, other: units
   sulfur: sulfur
+  tickets/pounds: tickets/pounds
+  barrels: barrels
+  tons- equivalent: equivalent tons
 suffix:
   kilowatt hours: energy
   kwh: energy
@@ -35,3 +45,11 @@ suffix:
   electrical generation, kilowatt hours: energy
   electrical generation, other: energy
   sulfur: energy
+title:
+  electrical generation, thousands of pounds: electrical generation
+  direct utilization, millions of btus: direct utilization
+  electrical generation, kilowatt hours: electrical generation
+  electrical generation, other: electrical generation
+  direct use, millions of gallons: direct use
+  direct utilization, hundreds of gallons: direct use
+  sulfur: sulfur

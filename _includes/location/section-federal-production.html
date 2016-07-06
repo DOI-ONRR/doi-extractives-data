@@ -27,9 +27,14 @@
       {% assign short_units = units_map.shorten[units] | default 'units' %}
       {% assign long_units = units_map.lengthen[units] | default 'units' %}
       {% assign units_suffix = units_map.suffix[units] | default '' %}
+      {% assign units_title = units_map.title[units] %}
+
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
-        <h4 class="chart-title">{{ product_name }}</h4>
+        <h4 class="chart-title">
+          {{ product_name }}
+          {% if units_title %} ({{ units_title }}){% endif %}
+        </h4>
 
         <div class="row-container">
 

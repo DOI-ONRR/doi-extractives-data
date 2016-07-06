@@ -37,7 +37,6 @@ module EITI
     def suffix(text, suffix = "")
       "#{text} #{suffix}"
     end
-
   end
 
 end

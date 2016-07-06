@@ -29,7 +29,7 @@ UNION
         'Renewables' AS commodity,
         source AS product,
         source AS product_name,
-        NULL AS units,
+        'kilowatt hours' AS units,
         volume * 1000 AS volume
     FROM all_production_renewables
     INNER JOIN states ON

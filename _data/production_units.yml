@@ -6,6 +6,7 @@ shorten:
   short tons: short tons
   kilowatt hours: kWh
   kwh: kWh
+  kWh: kWh
   electrical generation, thousands of pounds: klb
   direct utilization, millions of btus: MMBTUs
   electrical generation, kilowatt hours: kWh
@@ -22,6 +23,7 @@ lengthen:
   tons: tons
   short tons: short tons
   kWh: kilowatt hours
+  kilowatt hours: kilowatt hours
   klb: thousand pounds
   electrical generation, thousands of pounds: thousand pounds
   MMBTUs: millions of btus

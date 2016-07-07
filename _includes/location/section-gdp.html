@@ -23,12 +23,6 @@
       <h3 class="chart-title">GDP ({{ _metric }})</h3>
 
       <figure class="chart chart-{{ _metric }}">
-        <eiti-bar-chart
-          aria-controls="gdp-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
-          data-x-range="{{ year_range }}"
-          x-value="{{ year }}">
-        </eiti-bar-chart>
         <figcaption id="gdp-figures-{{ _metric }}">
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
           {% assign _format = ',' %}
@@ -45,6 +39,13 @@
             {% endif %}
           </span>
         </figcaption>
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
+          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
+          data-x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
       </figure>
 
       {% if forloop.last %}

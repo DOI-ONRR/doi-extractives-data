@@ -8,7 +8,7 @@
 
   // global dimensions
   var width = 300;
-  var height = 100;
+  var height = 150;
 
   var textMargin = 18;
   var baseMargin = 2;

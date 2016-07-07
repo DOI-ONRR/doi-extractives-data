@@ -1,26 +1,29 @@
 .layout-state-pages {
+  padding-bottom: $standard-padding-fluffed;
 
-  section + section {
-    padding-top: $base-padding-extra;
-    padding-top: $standard-padding-large;
+  section + section,
+  h2 + section {
+    padding-top: $standard-padding-fluffed;
   }
 
   h2 {
     border-top: 6px solid $light-green;
-    padding-top: $base-padding;
-    padding-top: $standard-padding;
+    padding-top: $standard-padding-fluffed;
+    padding-bottom: $standard-padding;
   }
 
   h3:not(.chart-title) {
     border-top: 2px solid $light-green;
-    padding-top: $base-padding-large;
-    padding-top: $standard-padding-large;
+    padding-top: $standard-padding-fluffed;
+    padding-bottom: $standard-padding;
+  }
+
+  h4 {
+    padding-bottom: $standard-padding;
   }
 
   hr {
     border-top: 1px solid $neutral-gray;
-    margin-bottom: $base-padding;
-    margin-top: $base-padding;
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
   }
@@ -28,8 +31,6 @@
   p + [class*='panel-'],
   section + [class*='panel-'],
   h3 + [class*='panel-'] {
-    margin-bottom: $base-padding;
-    margin-top: $base-padding;
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
   }
@@ -50,9 +51,7 @@
   }
 
   .tab-interface {
-    margin-bottom: $base-padding-extra;
-    margin-top: $base-padding-extra;
-    margin-bottom: $standard-padding-large;
-    margin-top: $standard-padding-large;
+    margin-bottom: $standard-padding-fluffed;
+    margin-top: $standard-padding-fluffed;
   }
 }

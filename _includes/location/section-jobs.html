@@ -35,12 +35,6 @@
       <h3 class="chart-title">Number of jobs in extractives</h3>
 
       <figure class="chart">
-        <eiti-bar-chart
-          aria-controls="jobs-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
-          data-x-range="{{ year_range }}"
-          x-value="{{ year }}">
-        </eiti-bar-chart>
         <figcaption id="jobs-figures-{{ _metric }}">
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
           <span class="eiti-bar-chart-y-value"
@@ -56,6 +50,13 @@
             {% endif %}
           </span>
         </figcaption>
+        <eiti-bar-chart
+          aria-controls="jobs-figures-{{ _metric }}"
+          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
+          data-x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
       </figure>
 
       {% if forloop.last %}
@@ -116,14 +117,11 @@
     </div><!-- /.row-container -->
 
   </div><!-- /.chart-list -->
+
   <div class="chart-list">
     <div class="chart-list-intro">
 
       <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.</p>
-
-      <a href="{{site.baseurl}}/downloads/#jobs">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-      </a>
 
     </div>
 
@@ -134,12 +132,6 @@
       <h3 class="chart-title">Number of self-employment jobs in extractives</h3>
 
       <figure class="chart">
-        <eiti-bar-chart
-          aria-controls="self-employment-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
-          data-x-range="{{ year_range }}"
-          x-value="{{ year }}">
-        </eiti-bar-chart>
         <figcaption id="self-employment-figures-{{ _metric }}">
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
           <span class="eiti-bar-chart-y-value"
@@ -155,10 +147,20 @@
             {% endif %}
           </span>
         </figcaption>
+        <eiti-bar-chart
+          aria-controls="self-employment-figures-{{ _metric }}"
+          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
+          data-x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
       </figure>
 
     </section><!-- /.chart-item -->
     {% endfor %}
-  </div>
+  </div><!-- /.chart-list -->
+  <a href="{{site.baseurl}}/downloads/#jobs">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+  </a>
 
 </section>

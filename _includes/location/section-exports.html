@@ -9,7 +9,7 @@
     <div class="chart-list-intro">
 
       {% include location/key-exports.html %}
-    
+
     </div>
 
     {% for commodity in export_commodities %}
@@ -22,18 +22,19 @@
           <h3 class="chart-title">{{ commodity[0] }}</h3>
 
           <figure class="chart chart-{{ _metric }}">
-            <eiti-bar-chart
-              aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{% include location/line-chart-data.json values=exports key="dollars" %}'
-              data-x-range="{{ year_range }}"
-              selected="{{ year }}">
-            </eiti-bar-chart>
             <figcaption id="exports-figures-{{ commodity_slug }}">
               <span class="eiti-bar-chart-x-value">{{ year }}</span>
               <span class="eiti-bar-chart-y-value" data-format="$,">
                 ${{ exports[year].dollars | intcomma }}
               </span>
             </figcaption>
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{% include location/line-chart-data.json values=exports key="dollars" %}'
+              data-x-range="{{ year_range }}"
+              selected="{{ year }}">
+            </eiti-bar-chart>
+
           </figure>
 
           <h4>

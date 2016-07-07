@@ -8,7 +8,7 @@ eiti-bar-chart {
     font-size: inherit;
     font-weight: $weight-light;
     height: auto;
-    opacity: 0.75;
+    opacity: 0.85;
     transition: opacity 0.5s;
     width: 100%;
   }
@@ -22,7 +22,7 @@ eiti-bar-chart {
   }
 
   .bar-value {
-    fill: $neutral-gray;
+    fill: $mid-light-gray;
     pointer-events: none;
     transition: fill 0.1s;
   }
@@ -59,6 +59,7 @@ eiti-bar-chart {
   .bar-selected .bar-value,
   .tick-selected text {
     fill: $green-dark;
+    fill: $green-dark-chart;
     font-weight: $weight-bold;
   }
 }
@@ -66,4 +67,5 @@ eiti-bar-chart {
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
   color: $green-dark;
+  color: $green-dark-chart;
 }

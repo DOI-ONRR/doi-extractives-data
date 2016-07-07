@@ -1,8 +1,5 @@
-{% assign federal_products = site.data.state_federal_production[state_id].products %}
 
-{% if national_page %}
-  {% assign federal_products = site.data.national_federal_production[state_id].products %}
-{% endif %}
+{% assign federal_products = site.data.national_federal_production[state_id].products %}
 
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
@@ -11,7 +8,7 @@
 
   <h3>Production on federal land in {{ state_name }}</h2>
 
-  {% include location/section-ownership.html %}
+  {% include location/national-ownership.html %}
 
   <section class="county-map-table">
 
@@ -73,62 +70,9 @@
                 </figcaption>
               </figure>
 
-              <!-- <h4>
-                <button is="aria-toggle"
-                  aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
-              </h4>
-              <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
-                {%
-                  include location/display-production.html
-                  units=units
-                  year=year
-                  values=production_values
-                  percent=true
-                  rank=true
-                %}
-              </div> -->
             {% endif %}
           </div><!-- /.chart-container -->
 
-          {% if volume %}
-            <div class="map-container">
-              {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
-              <figure>
-                {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
-                {% assign _width ='inherit' %}
-                {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
-
-                <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
-                  {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-
-                  {%
-                    include county-map.html
-                    state=state_id
-                    counties=federal_county_production
-                    value=value_key
-                    steps=steps
-                    inherit_width=true
-                    caption=caption
-                    toggle=toggle
-                  %}
-                </data-map>
-
-              </figure>
-
-
-              <div id="{{ toggle }}" aria-hidden="true">
-                {%
-                  include location/display-production.html
-                  units=units
-                  year=year
-                  values=production_values
-                  percent=true
-                  rank=true
-                %}
-              </div>
-
-            </div><!-- /.map-container -->
-          {% endif %}
 
         </div><!-- /.row-container -->
 

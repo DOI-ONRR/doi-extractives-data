@@ -49,6 +49,7 @@ site-data: \
 	data/state_gdp.yml \
 	data/national_gdp.yml \
 	data/state_revenues.yml \
+	data/state_federal_production.yml \
 	data/top_state_products
 
 data/state_all_production.yml:
@@ -222,6 +223,19 @@ data/state_federal_production.yml:
 			state, product, product_name, units, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_federal_production.yml \
+		  -o _$@
+
+
+data/national_federal_production.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  product, product_name, units, year, \
+		  ROUND(volume) AS volume \
+		FROM federal_national_production \
+		ORDER BY \
+			product, product_name, units, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/national_federal_production.yml \
 		  -o _$@
 
 data/federal_county_production:

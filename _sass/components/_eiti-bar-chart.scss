@@ -58,7 +58,6 @@ eiti-bar-chart {
 
   .bar-selected .bar-value,
   .tick-selected text {
-    fill: $green-dark;
     fill: $green-dark-chart;
     font-weight: $weight-bold;
   }
@@ -66,6 +65,5 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
-  color: $green-dark;
   color: $green-dark-chart;
 }

@@ -41,11 +41,13 @@ site-data: \
 	data/jobs \
 	data/revenue \
 	data/state_all_production.yml \
+	data/national_all_production.yml \
 	data/federal_county_production \
 	data/state_disbursements.yml \
 	data/state_exports.yml \
 	data/state_federal_production.yml \
 	data/state_gdp.yml \
+	data/national_gdp.yml \
 	data/state_revenues.yml \
 	data/top_state_products
 
@@ -62,6 +64,19 @@ data/state_all_production.yml:
 			state, product, year" \
 	| $(nestly) --if ndjson \
 		-c _meta/state_all_production.yml \
+		-o _$@
+
+data/national_all_production.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  year, \
+		  product, product_name, units, \
+		  ROUND(volume) AS volume \
+		FROM all_national_production \
+		ORDER BY \
+			product, year" \
+	| $(nestly) --if ndjson \
+		-c _meta/national_all_production.yml \
 		-o _$@
 
 data/state_exports.yml:
@@ -88,6 +103,20 @@ data/state_gdp.yml:
 		FROM gdp \
 		WHERE \
 		  region != 'US' \
+		ORDER BY state, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/state_gdp.yml \
+		  -o _$@
+
+data/national_gdp.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region AS state, year, \
+		  value AS dollars, \
+		  ROUND(share * 100, 2) as percent \
+		FROM gdp \
+		WHERE \
+		  region == 'US' \
 		ORDER BY state, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_gdp.yml \

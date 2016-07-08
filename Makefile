@@ -48,8 +48,7 @@ site-data: \
 	data/state_federal_production.yml \
 	data/state_gdp.yml \
 	data/national_gdp.yml \
-	data/state_revenues.yml \
-	data/state_federal_production.yml \
+	data/national_federal_production.yml \
 	data/top_state_products
 
 data/state_all_production.yml:
@@ -90,6 +89,21 @@ data/state_exports.yml:
 		FROM exports \
 		WHERE \
 		  state != 'US' \
+	  ORDER BY state, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/state_exports.yml \
+		  -o _$@
+
+data/national_exports.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, year, \
+		  ROUND(value, 2) AS dollars, \
+		  ROUND(share * 100, 2) AS percent, \
+		  commodity \
+		FROM exports \
+		WHERE \
+		  state == 'US' \
 	  ORDER BY state, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_exports.yml \
@@ -143,6 +157,20 @@ data/state_jobs.yml:
 		  -c _meta/state_jobs.yml \
 		  -o _$@
 
+data/national_jobs.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region_id AS state, year, \
+		  extractive_jobs AS jobs, \
+		  ROUND(percent, 2) AS percent \
+		FROM national_bls_employment \
+		WHERE \
+		  region_id IS NOT NULL \
+		ORDER BY state, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/national_jobs.yml \
+		  -o _$@
+
 data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
@@ -176,6 +204,7 @@ data/state_self_employment.yml:
 		  -o _$@
 
 data/revenue: \
+	data/national_revenues.yml \
 	data/state_revenues.yml \
 	data/top_state_products.yml \
 	data/county_revenue
@@ -274,6 +303,19 @@ data/state_revenues.yml:
 		  -c _meta/state_revenues.yml \
 		  -o _$@
 
+data/national_revenues.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, year, \
+		  ROUND(revenue) AS revenue \
+		FROM national_revenue \
+		WHERE revenue != 0 \
+		ORDER BY \
+			commodity, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/national_revenues.yml \
+		  -o _$@
+
 data/state_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -285,6 +327,19 @@ data/state_revenues_by_type.yml:
 			state, revenue DESC, commodity, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues_by_type.yml \
+		  -o _$@
+
+data/national_revenues_by_type.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, revenue_type, year, \
+		  ROUND(revenue) AS revenue \
+		FROM national_revenue_type \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			revenue DESC, commodity, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/national_revenues_by_type.yml \
 		  -o _$@
 
 data/top_state_products:

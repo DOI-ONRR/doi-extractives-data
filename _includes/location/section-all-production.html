@@ -1,9 +1,5 @@
 {% assign all_products = site.data.state_all_production[state_id].products %}
 
-{% if national_page %}
-  {% assign all_products = site.data.national_all_production[state_id].products %}
-{% endif %}
-
 {% assign units_map = site.data.production_units %}
 
 <section id="all-production" class="all-lands production">

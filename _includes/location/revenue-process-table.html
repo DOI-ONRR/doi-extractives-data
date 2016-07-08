@@ -1,4 +1,9 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+
+{% if national_page %}
+  {% assign revenue_types = site.data.national_revenues_by_type.US %}
+{% endif %}
+
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 
 {% assign commodity_groups = site.data.commodities.groups %}
@@ -166,7 +171,7 @@
               <td rowspan="2">
                 <strong>Electricity sales:</strong> 1.75% of gross proceeds for 10 years, then 3.5%<br>
                 <strong>Arm's length sales</strong> (for 3rd-party generation): 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%)<br>
-                <strong>Other: </strong>Different fee  rates apply to pre-2005 leases and to direct use facilities 
+                <strong>Other: </strong>Different fee  rates apply to pre-2005 leases and to direct use facilities
               </td>
               <td></td>
             </tr>

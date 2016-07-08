@@ -54,15 +54,23 @@ nav_items:
 
 
     <section id="production">
-      {% include location/section-all-production.html %}
+      {% include location/national-all-production.html %}
 
       {% include location/national-federal-production.html %}
 
     </section>
 
+    {% include location/national-revenue.html %}
+
 
     <section id="economic-impact">
     <h2>Economic Impact</h2>
+
+    {% include location/national-gdp.html %}
+
+    {% include location/national-jobs.html %}
+
+    <!-- {% include location/national-exports.html %} -->
 
     </section>
 

@@ -1,0 +1,5 @@
+'{state}':
+  commodities:
+    '{commodity}':
+      '{year}':
+        dollars: '{dollars}'

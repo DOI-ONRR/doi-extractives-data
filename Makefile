@@ -97,17 +97,15 @@ data/state_exports.yml:
 data/national_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, year, \
-		  ROUND(value, 2) AS dollars, \
-		  ROUND(share * 100, 2) AS percent, \
+		  'US' AS state, year, \
+		  SUM(ROUND(value, 2)) AS dollars, \
 		  commodity \
 		FROM exports \
-		WHERE \
-		  state == 'US' \
-	  ORDER BY state, year" \
+	  GROUP BY year, commodity" \
 	  | $(nestly) --if ndjson \
-		  -c _meta/state_exports.yml \
+		  -c _meta/national_exports.yml \
 		  -o _$@
+
 
 data/state_gdp.yml:
 	$(query) --format ndjson " \

@@ -8,9 +8,9 @@ nav_items:
     title: Top
   - name: tracking
     title: Tracking payments
-  - name: payments
-    title: Understanding payments
-  - name: validation
+  - name: payments-and-managing-agencies
+    title: Payments and managing agencies
+  - name: data-validation
     title: Validation and audits
   - name: disbursement
     title: Revenue disbursement
@@ -75,13 +75,13 @@ Several different agencies collect non-tax payments depending on the type of pay
 
 The types of payments — and the laws and regulations governing them — depend on the location and type of resource. Learn more about which laws, agencies, and payments apply for each natural resource:
 
-<!-- This list repeats a fair bit of info from the diving graphic intros, in order to include BOTH links to those pages (which list the appropriate payment types for each resource) and the names of the laws (which were in the PPT) -->
+<!-- This list repeats a fair bit of info from the diving graphic intros, in order to include BOTH links to those pages (which list the appropriate payment types for each resource) and the names of the laws (which were in the PPT) — full list in "glossary" -->
 
-- [Offshore oil and gas revenues]({{site.baseurl}}/how-it-works/offshore-oil-gas/) are governed by the Outer Continental Shelf Lands Act of 1953, and the agencies that manage, regulate, and collect revenue related to offshore drilling are BOEM, BSEE, and ONRR.
-- [Onshore oil and gas revenues]({{site.baseurl}}/how-it-works/onshore-oil-gas/) are governed by the Federal Oil & Gas Royalty Management Act of 1982, and the agencies that manage, regulate, and collect revenue related to onshore drilling are BLM and ONRR.
-- [Coal revenues]({{site.baseurl}}/how-it-works/coal/) are governed by the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947 (as amended), and the agencies that manage, regulate, and collect revenue related to coal mining are BLM and ONRR.
-- [Mining of nonenergy minerals]({{site.baseurl}}/how-it-works/minerals/) — like gold, silver, and copper — is governed by the General Mining Act of 1872, the Mineral Leasing Act for Acquired Lands of 1947, and the Federal Land Policy and Management Act of 1976. The agencies that manage, regulate, and collect revenue related to coal mining are BLM and ONRR.
-<!-- Was there a reason not all kinds of extraction were included in the initial list of laws and regulations? Do we want to include onshore and offshore renewables? -->
+- [Offshore oil and gas revenues]({{site.baseurl}}/how-it-works/offshore-oil-gas/) are governed by the Outer Continental Shelf Lands Act of 1953.
+- [Onshore oil and gas revenues]({{site.baseurl}}/how-it-works/onshore-oil-gas/) are governed by the Federal Oil & Gas Royalty Management Act of 1982.
+- [Coal revenues]({{site.baseurl}}/how-it-works/coal/) are governed by the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947 (as amended).
+- [Mining of nonenergy minerals]({{site.baseurl}}/how-it-works/minerals/) — like gold, silver, and copper — is governed by the General Mining Act of 1872, the Mineral Leasing Act for Acquired Lands of 1947, and the Federal Land Policy and Management Act of 1976.
+<!-- Do we want to include onshore and offshore renewables? -->
 
 Click here for an extended list of applicable laws & regulations
 
@@ -98,15 +98,17 @@ Click here for an extended list of applicable laws & regulations
 
 ------
 
-## 2. Data validation
+## Data validation
 
-Numerous laws and regulations require companies and Government agencies to assure the accuracy of reported payment data.
+Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data.
+
+Controls and standards (like accounting principles) help companies report correct data on the first attempt, which is important because they may be subject to penalties if they calculate or report payments incorrectly.
+
+Company and government reports are subject to internal and external verification before the government publishes payment data. 
 
 Prior to publication, different revenue payments are verified by high levels of internal and external scrutiny
 
-There are rigorous standards that companies and the U.S. Government must follow, as standards assure revenue payment and collection are verifiable. 
-
-Some standards relate to internal controls (such as accounting principles) while others subject data to additional management—primarily via independent audits. Controls are particularly important for companies as most data is not publically available even once validated and reported to the Government. These controls help companies report correct data on the first attempt, as companies are subject to penalties if found wrongfully calculating or reporting payments.
+Some standards subject data to additional management—primarily via independent audits. Controls are particularly important for companies as most data is not publically available even once validated and reported to the Government.
 
 [IMAGE: Data Validation Standards & Systems — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
 

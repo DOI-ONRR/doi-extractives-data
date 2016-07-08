@@ -26,7 +26,7 @@ A goal of USEITI is to support transparency in extractive industries’ payments
 1. Audits and Standards
 1. Publication and Disclosure
 
-As the U.S. moves towards EITI validation and the implementation of mainstreaming, it is important to highlight that the U.S. employs a system of controls to track money flowing from extractive industries to Government bodies. 
+As the U.S. moves towards EITI validation and the implementation of [mainstreaming](https://eiti.org/about/strategy-update-2015-2016#Mainstreaming), it is important to highlight that the U.S. employs a system of controls to track money flowing from extractive industries to Government bodies. 
 
 This webpage contains information about how payments and revenues are recorded and verified in the extractive industries in the U.S. This includes the types of revenues companies are required to pay and the statutes providing authority to the U.S. Government to collect them. Likewise, it illustrates where these payments are recorded, how they are verified, and how they are publicized. 
 
@@ -53,7 +53,7 @@ agencies report what
 The U.S. Government disburses the extractive industry revenues it collects directly to states and to a number of specific federal accounts
 To promote transparency, regulations require Government agencies to publish certain data while protecting privacy of individual company payments
 
-The Department of the Interior’s Office of Natural Resources Revenue (ONRR) is the primary Government body in charge of collecting and distributing revenues from extractive 
+The Department of the Interior’s [Office of Natural Resources Revenue](http://www.onrr.gov/About/default.htm ) (ONRR) is the primary Government body in charge of collecting and distributing revenues from extractive 
 industries companies’ production on Federal land. 
 
 -----
@@ -67,11 +67,11 @@ Several U.S. agencies are tasked with managing and collecting revenue from compa
 
 __In the U.S., payments come in two types: non-tax and tax__
 
-Companies are required to make certain payments to the U.S. Government in order to do business on Federal land. This begins with paying of bonus bids for a lease to look for oil, gas, or minerals, and moves through paying rents and royalties as companies extract resources. The USEITI focuses on corporate income taxes, although companies can pay other types of taxes as well. 
+Companies are required to make certain [payments](https://useiti.doi.gov/downloads/federal-revenue-by-location/) to the U.S. Government in order to do business on Federal land. This begins with paying of bonus bids for a lease to look for oil, gas, or minerals, and moves through paying rents and royalties as companies extract resources. The USEITI focuses on corporate income taxes, although companies can pay other types of taxes as well. 
 
-A number of U.S. Government agencies are involved in the process of managing these payments. Several different agencies collect non-tax payments depending on the type of payment, the location of exploration and production, and the type of resource being extracted. These include: Department of the Interior’s Office of Natural Resources Revenue (ONRR), the Bureau of Land Management (BLM), and the Office of Surface Mining Reclamation and Enforcement (OSMRE). The Internal Revenue Service (IRS) is responsible for collecting (corporate) income taxes.  Corporations pay Federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, inside or outside of the United States, so long as they have a tax liability.  
+A number of U.S. Government agencies are involved in the process of managing these payments. Several different agencies collect non-tax payments depending on the type of payment, the location of exploration and production, and the type of resource being extracted. These include: Department of the Interior’s Office of Natural Resources Revenue (ONRR), the [Bureau of Land Management](http://www.blm.gov/wo/st/en/info/About_BLM.html) (BLM), and the [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/programs.shtm) (OSMRE). The [Internal Revenue Service](https://www.irs.gov/uac/about-irs) (IRS) is responsible for collecting (corporate) income taxes.  Corporations pay Federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, inside or outside of the United States, so long as they have a tax liability.  
 
-[IMAGE: Tax and Non-Tax Payments & Management in the U.S. — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3", then 2 arrows labeled "1 Non-Tax Payments" and "2 Corporate Income Tax Payments", leading to a "managing agency" area with icons for ONRR, DOI, OSMRE, and IRS]
+[IMAGE: Tax and Non-Tax Payments & Management in the U.S. — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3", then 2 arrows labeled "1 Non-Tax Payments" and "2 Corporate Income Tax Payments", leading to a "managing agency" area with icons for [ONRR](http://www.onrr.gov/Laws_R_D/default.htm), [BLM](http://www.blm.gov/wo/st/en/info/regulations.html), [OSMRE](http://www.osmre.gov/lrg.shtm), and [IRS](https://www.irs.gov/uac/brief-history-of-irs)]
 
 ### 1. Non-tax payments
 
@@ -132,24 +132,26 @@ Some standards relate to internal controls (such as accounting principles) while
 
 Companies follow standards when reporting tax and non-tax payments:
 
-* GAAP – Public companies 
-* GAAS – Private companies
-* Sarbanes-Oxley Act
-* Investment Company Act
+[logo: [OMB logo](https://www.whitehouse.gov/omb/financial_default)]
+
+* [GAAP](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) – Public companies 
+* [GAAS (pdf)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf) – Private companies
+* [Sarbanes-Oxley Act (pdf)](https://www.sec.gov/about/laws/soa2002.pdf)
+* [Investment Company Act (pdf)](https://www.sec.gov/about/laws/ica40.pdf)
 
 #### Transaction audits
 
 Government agencies conduct audits of company production and specific payments:
 
-* ONRR: Examines company records to ensure accuracy of reporting and payments 
-* BLM: Verifies production, permits, conducts onsite inspections
-* IRS: Audits company tax returns
+* [ONRR (ppt)](www.onrr.gov/About/PDFDocs/AGAProDevCon%20042612April.ppt): Examines company records to ensure accuracy of reporting and payments 
+* [BLM](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/Energy_Facts_Enforcement.html): Verifies production, permits, conducts onsite inspections
+* [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits): Audits company tax returns
 
 #### System audits
 
 Companies are also subject to audits of their internal systems (i.e. accounting) to ensure they comply with internal standards:
 
-[logos for IRS and SEC, and an SEC badge (?) that says "Sarbanes-Oxley Compliant"]
+[logos for IRS and [SEC](https://www.sec.gov/about/whatwedo.shtml), and an [SEC badge (?) that says "Sarbanes-Oxley Compliant"](https://www.sec.gov/about/laws/soa2002.pdf)]
 
 Click here for an extended list of data accuracy control systems
 
@@ -159,15 +161,15 @@ Click here for an extended list of data accuracy control systems
 
 The U.S. Government follows standards governing and requiring financial transparency and revenue reporting:
 
-* OMB Circular No. A-123
-* Chief Financial Officers Act of 1990
-* U.S. GAO Green Book
+* [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev)
+* [Chief Financial Officers Act of 1990](http://govinfo.library.unt.edu/npr/library/misc/cfo.html)
+* [U.S. GAO Green Book](http://www.gao.gov/greenbook/overview)
 
 #### Transaction audits
 
 Federal agencies have Offices of Inspector Generals that perform audits which are publicly listed on websites. This is in addition to the audits that GAO performs at agencies.
 
-Click here for more information
+[Click here for more information](https://www.doioig.gov/reports)
 
 #### System audits
 
@@ -175,14 +177,14 @@ The U.S. Government is subject to 3rd party audits to ensure that agencies follo
 
 **3rd party auditors**
 
-[logos for big 4 accounting firms (Deloitte, KPMG, E&Y, PwC), OIG, and GAO]
+[logos for big 4 accounting firms (Deloitte, KPMG, E&Y, PwC), [DOI OIG](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015), and GAO]
 
 Click here for the latest GAO Audit
 
 **System audit standards**
 
-Yellow Book – GAGAS
-OMB Bulletin 14-02
+[Yellow Book – GAGAS](http://www.gao.gov/yellowbook/overview)
+[OMB Bulletin 14-02 (pdf)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf)
 
 Click here for an extended list of data accuracy control systems
 
@@ -218,13 +220,13 @@ Stand-setting bodies shape the transaction and system audit requirements for com
 
 [logos with arrows to words:]
 
-[logos: PCAOB, FASB, SEC] --> GAAP: Common set of accounting principles, standards, and procedures public companies use to compile financial statements.
+[logos: [PCAOB](https://pcaobus.org/Pages/default.aspx), [FASB](http://www.fasb.org/home), SEC] --> GAAP: Common set of accounting principles, standards, and procedures public companies use to compile financial statements.
 
-[logo: AICPA] --> GAAS: Audit standards that apply to non-public companies.
+[logo: [AICPA](http://www.aicpa.org/Pages/default.aspx)] --> GAAS: Audit standards that apply to non-public companies.
 
-[logo: GAO] --> Yellow Book, Green Book: Provide frameworks for conducting audits and internal controls in the Federal Government.
+[logo: [GAO](http://www.gao.gov/)] --> Yellow Book, Green Book: Provide frameworks for conducting audits and internal controls in the Federal Government.
 
-[logo: OMB] --> OMB Circular A-123: Defines management responsibilities for internal controls in the Federal Government.
+[logo: [OMB](https://www.whitehouse.gov/omb)] --> OMB Circular A-123: Defines management responsibilities for internal controls in the Federal Government.
 
 [logo: U.S. Congress] --> Legislation — Sarbanes-Oxley: Enhances corporate responsibility, financial disclosures, and combats fraud.
 
@@ -244,7 +246,7 @@ Every American benefits from the revenues generated from mineral resources, eith
 
 For more information on Federal disbursement of extractive industries revenue, and to see historical disbursement data, click here.
 
-[IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an area labeled "Publication," which contains images of the capitol building and ONRR and Treasury logos, from which 2 arrows labelled "States" and "Federal accounts" go to an image of a dollar bill and some coins]
+[IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an area labeled "Publication," which contains images of the capitol building and [ONRR (pdf)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) and [Treasury](https://www.treasury.gov/about/role-of-treasury/Pages/default.aspx) logos, from which 2 arrows labelled "States" and "Federal accounts" go to an image of a dollar bill and some coins]
 
 ### 1. State recipients
 
@@ -252,7 +254,7 @@ States which have natural resource extraction receive revenue disbursements from
 
 The $1.84 Billion Mineral revenues disbursed to States can be a significant element of a State’s financial resource picture, providing funding for local schools, roads, libraries, public buildings, and general operations, as the States deem necessary. 
 
-**2015 Revenue recipients ($9.9 billion)
+**[2015 Revenue recipients](http://statistics.onrr.gov/ReportTool.aspx) ($9.9 billion)**
 
 [Pie chart showing that 48% went to U.S. Taxpayers, 19% went to states, 14% went to western water users, 9% went to conservation and recreation, 9% went to American Indian tribes, and 1% went to preservation]
 
@@ -274,7 +276,7 @@ The various forms of payments each require different levels of publicity and tra
 
 Payments (non-tax and tax) from companies to the Government are closely monitored in the U.S. However, not all the data is made available to the public. 
 
-Outside of the USEITI process, public companies are required to publish certain data—namely in SEC filings. New U.S. legislation found in the Dodd-Frank Act will require extractives companies to publicize revenue payments data, although these rules have not yet been finalized. Some companies do voluntarily publish data in order to promote transparency in the sector. 
+Outside of the [USEITI process](https://useiti.doi.gov/explore/reconciliation/), public companies are required to publish certain data—namely in SEC filings. New U.S. legislation found in the Dodd-Frank Act will require extractives companies to publicize revenue payments data, although these rules have not yet been finalized. Some companies do voluntarily publish data in order to promote transparency in the sector. 
 
 Different regulations compel the U.S. Government to publicize information. However, the U.S. Government is limited in the amount of data it can disclose by law. As a result, the Government publishes mostly aggregate figures—thus allowing it to publicize receipt of payments without publishing privileged or competitive information. 
 
@@ -284,24 +286,24 @@ The U.S. Government publishes aggregate information in as much detail as allowab
 
 [IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
 
-Federal agencies that report on payments received from U.S. extractive industries include: [IRS, Treasury, DOI, OSMRE, ONRR]
+Federal agencies that report on payments received from U.S. extractive industries include: [[IRS](https://www.irs.gov/publications/), [Treasury](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm), [BLM](http://www.blm.gov/wo/st/en/info/blm-library/publications/blm_publications.html), [OSMRE](http://www.osmre.gov/resources/InformationFor.shtm), [ONRR](http://statistics.onrr.gov/)]
 
 **Applicable laws and regulations** 
 
 The U.S. Government is subject to numerous laws governing data publication, including: 
 
-* Federal Financial Management Improvement Act of 1996 – Ensures federal financial managements systems provide accurate, reliable, and timely information to Government managers
+* [Federal Financial Management Improvement Act of 1996](https://www.whitehouse.gov/omb/financial_ffs_ffmia) – Ensures federal financial managements systems provide accurate, reliable, and timely information to Government managers
 * Government Management Reform Act of 1994 – Requires the audited agency financial statements that cover all accounts and activities of Government agencies
-* 26 U.S. Code § 6103 – Requires confidentiality of tax returns and return information
-* 18 U.S. Code § 1905 – Punishes disclosure of proprietary information by a Government employee
-* Indian Trusts Act of 1882 – Establishes rules for private and public trusts
+* [26 U.S. Code § 6103](https://www.law.cornell.edu/uscode/text/26/6103) – Requires confidentiality of tax returns and return information
+* [18 U.S. Code § 1905](https://www.law.cornell.edu/uscode/text/18/1905) – Punishes disclosure of proprietary information by a Government employee
+* [Indian Trusts Act of 1882 (pdf)](http://www.bu.edu/bucflp/files/2012/01/Indian-Trusts-Act-No.-2.pdf) – Establishes rules for private and public trusts
 * Privacy Act of 1974– Precludes the IRS from gathering information that is not used for tax administration purposes.  
 
 ### Company payment reporting
 
 U.S. companies’ reporting requirements are different for public and non-public companies; some companies publish more data than legally required on a voluntary basis.
 
-**Public companies** are required to file financial reports with the SEC. [SEC logo, not sure why]
+**Public companies** are required to file financial reports with the SEC. [[SEC logo](https://www.sec.gov/edgar/searchedgar/companysearch.html)]
 
 * Annual Disclosure:
   * Form 10-K 
@@ -312,9 +314,66 @@ U.S. companies’ reporting requirements are different for public and non-public
 
 **Non-public companies** typically use GAAP or GAAS to generate financial reports, but are not required to publicly disclose the financial or operational data.
 
-_New legislation—Section 1504 of the Dodd Frank Act—will require U.S. extractive industry companies to publish additional payment data. Click here to learn more_
+_New legislation—Section 1504 of the [Dodd Frank Act (pdf)](https://www.sec.gov/rules/proposed/2015/34-76620.pdf) — will require U.S. extractive industry companies to publish additional payment data. [Click here to learn more](https://www.sec.gov/news/pressrelease/2015-277.html)_
 
 ## Office of Natural Resources Revenue (ONRR)
 
+The Department of the Interior is involved in managing mineral leases in the U.S., led by ONRR
+
+The Federal Oil an Gas Royalty Management Act of 1982 (FOGRMA) requires monthly distribution and disbursement of payments to the Government for mineral leasing revenues and authorizes penalties for violations. The distribution and disbursement functions within ONRR ensure proper distribution of payments. 
+
+ONRR’s mission is to collect, disburse, and verify Federal and Indian energy and other natural resource revenues on behalf of all Americans.  Each month, ONRR receives and processes 49,000 royalty and production reports. To ensure that ONRR collects the proper revenues, it performs automated processes coordinating payments and reporting with industry and the U.S. Government, and may perform further controls such as audits to ensure proper payments.
+
+### Government revenue disbursement
+
+For more information on Federal disbursement of extractive industries revenue, and to see historical disbursement data, click here.
+
+[IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building and an [ONRR](http://onrr.gov/compliance/default.htm) logo, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
+
+### [Verification of payments (see pages 159-160)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf)
+
+To ensure ONRR collects the proper revenues on Federal lands, ONRR performs automated processing of royalty and production reports, coordinating reporting and payment matters with industry, State Governments, American Indian Tribes, and other Federal agencies. 
+
+**Time from payment receipt**
+
+* Company Submits 2014s/ OGORs Companies submit 2014s/ OGORs to ONRR.
+* 1 month: [Up-Front System Edits (pdf; page 160)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) are the first layer of screening that ONRR uses to verify royalty and production reports. They include: transportation/ processing limits, multiple royalty rates, pricing edits, and reviewing agreement numbers.
+* 6-9 months: [Data Mining (pdf; page 159)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) efforts increase the accuracy of company-reported data before data is subjected to compliance reviews and audits. Missing reports, adjustment monitoring, adjustments to completed cases, net negative, and production comparisons are key components of data mining efforts to ensure company payments are accurate and verifiable. 
+* 2-3 years: [Compliance Reviews (pdf; page 163)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) are the first layer of screening that ONRR uses to verify royalty and production reports. They include: transportation/ processing limits, multiple royalty rates, pricing edits, and reviewing agreement numbers.
+* 7 years: [Audits (pdf; page 163)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) have a high standard of verification in the form of evidence from company source document and records–resulting in greater certainty of accurate payment and reporting. Audits are performed in accordance with GAGAS.
+
+#### Internal controls
+
+ONRR’s own processes are subject to standards and verification from 3rd parties
+
+1. [KPMG/third party audits (pdf)](https://www.doioig.gov/sites/doioig.gov/files/2015FIN046Public.pdf) – In addition to annual Office of the Inspector General audits, third parties (external) audit ONRR’s financial functions annually. 
+2. [GAGAS (pdf)](http://www.gao.gov/assets/590/587281.pdf) – Framework used for conducting high quality audits with competence, integrity, objectivity, and independence. Audits have a high standard of verification in the form of evidence for company source documents and records – resulting in greater accuracy of payment and reporting.
+3. [USSGL (pdf)](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/tfm_archive/effective08_dec07/08-01R/2008/part2_ussgl_08-01.pdf) – ONRR uses USSGL accounts to prepare external reports to OMB and the U.S. Treasury to provide financial information for inclusion in its annual consolidated Interior Agency Financial Report.
+4. [CFO Act](https://www.whitehouse.gov/omb/financial_ffs_ffmia) – The CFO Act requires annual audits of Department of the Interior’s financial statements that include a thorough review of ONRR’s mineral revenue custodial accounts.
+
+#### Enforcement mechanisms
+
+If ONRR discovers inaccurate payments, it has several enforcement mechanisms at its disposal:
+
+1. [Alternative Dispute Resolution](http://www.onrr.gov/compliance/ADR.htm) – ONRR establishes meetings with companies and auditors to discuss disputed issues or negotiating settlements of disputes when there was a risk that ONRR might not prevail in litigation.
+2. [Litigation (pdf; see page 164)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf)  – ONRR provides litigation support to the Office of the Solicitor and Department of Justice in appeals before the Department and in Federal Court. Litigation support includes preparing proofs of claims to submit in bankruptcy cases and collecting any monies due.
+3. [Civil Penalties](http://www.onrr.gov/compliance/civil-penalties.htm)  – The Civil Penalty program is a tool ONRR uses to encourage compliance and to deter future violations. ONRR issues civil penalties when companies fail to comply with or knowingly or willfully violate applicable regulations or laws.
+
+#### If a company overpays or underpays ONRR
+
+If a company submits a monthly report in which there is underpayment, it goes to accounts-recievables accountants. If it remains underpaid, it goes on to debt collection staff. If the account is overpaid, the company is asked to use a future obligation or is paid a refund.
+
+## Internal Revenue Service (IRS)
+
+CONTENT TK
+
+
+<!-- 
+Notes about prepping this content for web:
+  - Links will need to be more clearly labeled for accessibility and predictability
+  - Will need to de-duplicate links within the page and content with the rest of the site
+  - 
+
+ -->
 
 

@@ -1,6 +1,6 @@
 {% assign jobs = site.data.national_jobs[state_id] %}
 
-{% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
+{% assign self_employment_jobs = site.data.national_self_employment[state_id] %}
 
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}

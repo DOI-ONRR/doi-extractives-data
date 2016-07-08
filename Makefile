@@ -47,6 +47,7 @@ site-data: \
 	data/state_exports.yml \
 	data/state_federal_production.yml \
 	data/state_gdp.yml \
+	data/state_revenues.yml \
 	data/national_gdp.yml \
 	data/national_federal_production.yml \
 	data/top_state_products
@@ -138,7 +139,8 @@ data/national_gdp.yml:
 data/jobs: \
 	data/state_jobs.yml \
 	data/county_jobs \
-	data/state_self_employment.yml
+	data/state_self_employment.yml \
+	data/national_self_employment.yml
 
 data/state_jobs.yml:
 	$(query) --format ndjson " \
@@ -195,7 +197,23 @@ data/state_self_employment.yml:
 		  ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
-		  region IS NOT NULL \
+		  region IS NOT NULL AND \
+		  region != 'US' \
+		ORDER BY state, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/state_jobs.yml \
+		  -o _$@
+
+data/national_self_employment.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region AS state, year, \
+		  jobs, \
+		  ROUND(share, 2) AS percent \
+		FROM self_employment \
+		WHERE \
+		  region IS NOT NULL AND \
+		  region == 'US' \
 		ORDER BY state, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_jobs.yml \

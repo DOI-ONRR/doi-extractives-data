@@ -1362,37 +1362,6 @@ TX:
   '2013':
     count: 253790
     percent: 1.63
-US:
-  '2004':
-    count: 257400
-    percent: 0.15
-  '2005':
-    count: 275600
-    percent: 0.16
-  '2006':
-    count: 314200
-    percent: 0.18
-  '2007':
-    count: 354300
-    percent: 0.2
-  '2008':
-    count: 497200
-    percent: 0.28
-  '2009':
-    count: 487600
-    percent: 0.28
-  '2010':
-    count: 620000
-    percent: 0.36
-  '2011':
-    count: 518000
-    percent: 0.29
-  '2012':
-    count: 757200
-    percent: 0.42
-  '2013':
-    count: 797000
-    percent: 0.44
 UT:
   '2004':
     count: 1662

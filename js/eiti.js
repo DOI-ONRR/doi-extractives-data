@@ -403,9 +403,9 @@
    * @return {String} the formatted string with replaced SI suffix
    */
   eiti.format.transformMetric = (function() {
-    var suffix = {k: 'k', M: 'm', G: 'b'};
+    var suffix = {k: '000', M: ' Mio.', G: ' Mrd.'};
     return function(str) {
-      return str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
+      return str.replace(/(\0+)?([kMG])$/, function(_, zeroes, s) {
         return suffix[s] || s;
       })
       .replace(/\.0+$/, '');

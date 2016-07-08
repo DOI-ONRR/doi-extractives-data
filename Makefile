@@ -45,12 +45,14 @@ site-data: \
 	data/federal_county_production \
 	data/state_disbursements.yml \
 	data/state_exports.yml \
+	data/national_exports.yml \
 	data/state_federal_production.yml \
 	data/state_gdp.yml \
-	data/state_revenues.yml \
 	data/national_gdp.yml \
+	data/state_revenues.yml \
 	data/national_federal_production.yml \
 	data/top_state_products
+
 
 data/state_all_production.yml:
 	$(query) --format ndjson " \
@@ -138,6 +140,7 @@ data/national_gdp.yml:
 
 data/jobs: \
 	data/state_jobs.yml \
+	data/national_jobs.yml \
 	data/county_jobs \
 	data/state_self_employment.yml \
 	data/national_self_employment.yml
@@ -223,7 +226,9 @@ data/revenue: \
 	data/national_revenues.yml \
 	data/state_revenues.yml \
 	data/top_state_products.yml \
-	data/county_revenue
+	data/county_revenue \
+	data/state_revenues_by_type.yml \
+	data/national_revenues_by_type.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \

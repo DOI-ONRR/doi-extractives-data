@@ -26,7 +26,7 @@ permalink: /explore/federal-production/
         <button class="toggle-filters toggle-desktop" is="eiti-toggle"
           aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
           data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
-        <a class="clear-filters" href="#year=2014">(Clear filters)</a>
+        <a class="clear-filters" href="#year=2014&product=select">(Clear filters)</a>
       </div>
 
       <form id="filters" aria-hidden="true" class="filters">
@@ -40,6 +40,7 @@ permalink: /explore/federal-production/
           <div id="product-filter" class="filter">
             <label for="product-selector">Product</label>
             <select id="product-selector" name="product">
+              <option value="select">Please select</option>
               <option value="">All products</option>
             </select>
           </div>
@@ -48,7 +49,8 @@ permalink: /explore/federal-production/
           <div class="filter">
             <label for="region-selector">Region</label>
             <select id="region-selector" name="region">
-              <option value="">All Germany</option>
+              <option value="">Please select</option>
+              <option value="DE">All Germany</option>
               <optgroup label="States">
                 {% for state in site.data.states %}
                 <option value="{{ state.id }}">{{ state.name }}</option>
@@ -75,7 +77,7 @@ permalink: /explore/federal-production/
 
       </form>
 
-      <h1 data-filter-description="" class="filter-description">
+      <h1 data-filter-description="" class="filter-description selected">
         <a class="back-btn" href="#year=2014">
           <img src="/img/left-arrow.png" alt="">
         </a>
@@ -83,6 +85,10 @@ permalink: /explore/federal-production/
         production on federal lands in
         <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+      </h1>
+
+      <h1 data-filter-description="" class="filter-description for-select" style="display:none">
+        <span>Select an option from the filters:</span>
       </h1>
 
       <div class="container">

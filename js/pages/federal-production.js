@@ -39,7 +39,14 @@
       var prop = this.name;
       var value = this.value;
       mutateState(function(state) {
-        return state.set(prop, value);
+        var newState = state.set(prop, value);
+        if (!state.get('region') && newState.get('product') !== 'select') {
+          newState = newState.set('region', COUNTRY);
+        }
+        else if (state.get('product') === 'select' && !!newState.get('region')) {
+          newState = newState.set('product', '');
+        }
+        return newState;
       });
     });
 
@@ -113,15 +120,24 @@
   function render(state, previous) {
     // console.time('render');
     var product = state.get('product');
+    var productSelected = !!product && product !== 'select';
     var region = state.get('region');
     root
       .classed('non-product', !product)
       .classed('has-product', !!product);
 
-    root.select('#region-selector').attr('disabled', product ? true : null);
-    root.select('#product-selector').attr('disabled', region ? true : null);
-    root.select('.clear-filters').style('display', (product || region) ? 'block' : null);
-    root.select('.back-btn').style('display', (product || region) ? 'inline-block' : null);
+    root.select('#region-selector').attr('disabled', productSelected ? true : null);
+    root.select('#product-selector').attr('disabled', region && region !== 'DE' ? true : null);
+    root.select('.clear-filters').style('display', (productSelected || region) ? 'block' : null);
+    root.select('.back-btn').style('display', (productSelected || region) ? 'inline-block' : null);
+
+    root.select('.region-header-category').style('display', product === 'select' ? 'none' : null);
+    root.select('table.subregions').style('display', product === 'select' ? 'none' : null);
+
+    var displayFilterInstructions = product === 'select' && !region;
+    root.select('.filter-description.for-select').style('display', !displayFilterInstructions ? 'none' : null);
+    root.select('.filter-description.selected').style('display', displayFilterInstructions ? 'none' : null);
+
 
     var units;
     if (product) {
@@ -194,7 +210,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || COUNTRY;
-    var isState = !!state.get('region');
+    var isState = !!state.get('region') && state.get('region') !== 'DE';
     var product = state.get('product');
     var fields = getFields(regionId);
 
@@ -864,7 +880,7 @@
     }
 
     var product = state.get('product');
-    if (product) {
+    if (product && product !== 'select') {
       product = product.replace(/\s*\(.+\)\s*$/, '');
     } else {
       product = 'All';
@@ -897,7 +913,7 @@
   function updateProductList(products) {
     var select = root.select('[name=product]');
 
-    select.select('option:first-child')
+    select.select('option:nth-child(2)')
       .text(products.length > 1
             ? 'All ' + products.length + ' products'
             : products.length + eiti.format.pluralize(products.length, ' product'));

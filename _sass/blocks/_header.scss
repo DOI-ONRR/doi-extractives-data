@@ -288,3 +288,25 @@ nav {
     display: block;
   }
 }
+
+.flag-container {
+  height: 50px;
+  position: relative;
+  float: right;
+  top: -95px;
+
+  li {
+    display: inline;
+
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .flag-container {
+    top: -115px;
+  }
+}

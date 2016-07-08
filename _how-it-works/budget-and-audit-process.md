@@ -58,59 +58,43 @@ industries companies’ production on Federal land.
 
 -----
 
-## 1. Payments and managing agencies
+## Payments and managing agencies
 
-Extractive industries 
-payments include: Taxes, Royalties, Rents, Bonuses, 
-and Fees.
-Several U.S. agencies are tasked with managing and collecting revenue from companies, including some who focus primarily on the extractive industries. 
+<!-- Much of this section is duplicative with the Revenues page -->
 
-__In the U.S., payments come in two types: non-tax and tax__
+In the U.S., there are two major types of revenue: non-tax payments and tax payments. These payments are collected, managed, and validated by [the federal agencies responsible for managing revenue from extractive industries]({{site.baseurl}}/about/#federal-agencies).
 
-Companies are required to make certain [payments](https://useiti.doi.gov/downloads/federal-revenue-by-location/) to the U.S. Government in order to do business on Federal land. This begins with paying of bonus bids for a lease to look for oil, gas, or minerals, and moves through paying rents and royalties as companies extract resources. The USEITI focuses on corporate income taxes, although companies can pay other types of taxes as well. 
+### Non-tax payments
 
-A number of U.S. Government agencies are involved in the process of managing these payments. Several different agencies collect non-tax payments depending on the type of payment, the location of exploration and production, and the type of resource being extracted. These include: Department of the Interior’s Office of Natural Resources Revenue (ONRR), the [Bureau of Land Management](http://www.blm.gov/wo/st/en/info/About_BLM.html) (BLM), and the [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/programs.shtm) (OSMRE). The [Internal Revenue Service](https://www.irs.gov/uac/about-irs) (IRS) is responsible for collecting (corporate) income taxes.  Corporations pay Federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, inside or outside of the United States, so long as they have a tax liability.  
+When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government.
 
-[IMAGE: Tax and Non-Tax Payments & Management in the U.S. — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3", then 2 arrows labeled "1 Non-Tax Payments" and "2 Corporate Income Tax Payments", leading to a "managing agency" area with icons for [ONRR](http://www.onrr.gov/Laws_R_D/default.htm), [BLM](http://www.blm.gov/wo/st/en/info/regulations.html), [OSMRE](http://www.osmre.gov/lrg.shtm), and [IRS](https://www.irs.gov/uac/brief-history-of-irs)]
+* [Learn how revenues work]({{site.baseurl}}/how-it-works/revenues/) 
+* [See how much each company paid in federal revenue]({{site.baseurl}}/explore/federal-revenue-by-company/2015/)
 
-### 1. Non-tax payments
+Several different agencies collect non-tax payments depending on the type of payment, the location of exploration and production, and the type of resource being extracted. These include: Department of the Interior’s Office of Natural Resources Revenue ([ONRR](http://www.onrr.gov/Laws_R_D/default.htm)), the [Bureau of Land Management](http://www.blm.gov/wo/st/en/info/About_BLM.html) ([BLM](http://www.blm.gov/wo/st/en/info/regulations.html)), and the [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/programs.shtm) ([OSMRE](http://www.osmre.gov/lrg.shtm)).
 
-#### Applicable laws and regulations
+The types of payments — and the laws and regulations governing them — depend on the location and type of resource. Learn more about which laws, agencies, and payments apply for each natural resource:
 
-The following laws & regulations require non-tax payments: 
+<!-- This list repeats a fair bit of info from the diving graphic intros, in order to include BOTH links to those pages (which list the appropriate payment types for each resource) and the names of the laws (which were in the PPT) -->
 
-* Mineral Leasing Act of 1920
-* Outer Continental Shelf Lands Act of 1953
-* Federal Oil & Gas Royalty Management Act (FOGRMA) of 1982
-
-Click here for an extended list of applicable laws & regulations
-
-#### Payment types 
-
-Companies may be required to make the following non-tax payments: 
-
-* Abandoned Mine Land Fees
-* Bonuses
-* Fees
-* Penalties
+- [Offshore oil and gas revenues]({{site.baseurl}}/how-it-works/offshore-oil-gas/) are governed by the Outer Continental Shelf Lands Act of 1953, and the agencies that manage, regulate, and collect revenue related to offshore drilling are BOEM, BSEE, and ONRR.
+- [Onshore oil and gas revenues]({{site.baseurl}}/how-it-works/onshore-oil-gas/) are governed by the Federal Oil & Gas Royalty Management Act of 1982, and the agencies that manage, regulate, and collect revenue related to onshore drilling are BLM and ONRR.
+- [Coal revenues]({{site.baseurl}}/how-it-works/coal/) are governed by the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947 (as amended), and the agencies that manage, regulate, and collect revenue related to coal mining are BLM and ONRR.
+- [Mining of nonenergy minerals]({{site.baseurl}}/how-it-works/minerals/) — like gold, silver, and copper — is governed by the General Mining Act of 1872, the Mineral Leasing Act for Acquired Lands of 1947, and the Federal Land Policy and Management Act of 1976. The agencies that manage, regulate, and collect revenue related to coal mining are BLM and ONRR.
+<!-- Was there a reason not all kinds of extraction were included in the initial list of laws and regulations? Do we want to include onshore and offshore renewables? -->
 
 Click here for an extended list of applicable laws & regulations
 
-### 2. Corporate income tax payments
+### Corporate income tax payments
 
-#### Applicable laws & regulations
+<!-- Revisit "focuses on" — this could be misleading, since EITI actually focuses on non-tax revenues -->
+There are many kinds of tax revenue (for instance, property taxes, severance taxes, and county production taxes), but the USEITI process focuses on [corporate income tax]({{site.baseurl}}/explore/corporate-income-tax/).
 
-The following law requires tax payments: 
+The [Internal Revenue Service](https://www.irs.gov/uac/about-irs) (IRS) is responsible for collecting federal corporate income taxes. Corporations pay federal corporate income taxes if they have a tax liability — regardless of whether they are operating on federal, state, or private land (inside or outside of the United States).
 
-* Internal Revenue Code of 1986– the portion of Federal tax regulations, requires public and non-public companies to pay corporate income tax
+Corporate income tax is governed by the Internal Revenue Code of 1986, which requires both publicly traded and privately held companies to pay corporate income tax.
 
 Click here for an extended list of applicable laws & regulations
-
-#### Payment types 
-
-Corporations in the extractive industries are required to pay federal corporate income taxes: 
-
-* Corporate Income Tax
 
 ------
 

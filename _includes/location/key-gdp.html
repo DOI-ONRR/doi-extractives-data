@@ -1,4 +1,9 @@
 {% assign gdp = site.data.state_gdp[include.location_id] %}
+
+{% if is_national_page %}
+	{% assign gdp = site.data.national_gdp[include.location_id] %}
+{% endif %}
+
 {% assign gdp_dollars = gdp[include.year].dollars %}
 
 {% if gdp_dollars > 0 %}

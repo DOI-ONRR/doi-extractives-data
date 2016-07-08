@@ -178,7 +178,7 @@ AK:
         revenue: 4752532
         rank: 9
         percent: 0.4
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 9019503
         rank: 7
@@ -464,7 +464,7 @@ AL:
         revenue: 228079
         rank: 16
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 236229
         rank: 17
@@ -712,7 +712,7 @@ AR:
         revenue: 7
         rank: 23
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 8420719
         rank: 8
@@ -825,7 +825,7 @@ AZ:
         revenue: 2120
         rank: 8
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 61946
         rank: 23
@@ -1148,7 +1148,7 @@ CA:
         revenue: 76891907
         rank: 4
         percent: 7.2
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3365075
         rank: 11
@@ -1550,7 +1550,7 @@ CO:
         revenue: 33964251
         rank: 6
         percent: 3.2
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 33961391
         rank: 4
@@ -1684,7 +1684,7 @@ FL:
         revenue: 80957
         rank: 30
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 18187
         rank: 27
@@ -1875,7 +1875,7 @@ ID:
         revenue: 446
         rank: 7
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 2713
         rank: 29
@@ -2054,7 +2054,7 @@ IL:
         revenue: 92971
         rank: 19
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 175
         rank: 31
@@ -2127,7 +2127,7 @@ IN:
         revenue: 17820
         rank: 23
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2009':
         revenue: 116738
         rank: 21
@@ -2351,7 +2351,7 @@ KS:
         revenue: 1233454
         rank: 14
         percent: 0.1
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 105828
         rank: 21
@@ -2579,7 +2579,7 @@ KY:
         revenue: 56552
         rank: 21
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 86375
         rank: 22
@@ -2786,7 +2786,7 @@ LA:
         revenue: 1680764
         rank: 12
         percent: 0.2
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: -29171
         rank: 32
@@ -2875,7 +2875,7 @@ MD:
         revenue: 18836
         rank: 33
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 12295
         rank: 28
@@ -3091,7 +3091,7 @@ MI:
         revenue: 134956
         rank: 17
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 56867
         rank: 24
@@ -3300,7 +3300,7 @@ MO:
         revenue: 9243923
         rank: 1
         percent: 99.3
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2007':
         revenue: 1680
         rank: 30
@@ -3454,7 +3454,7 @@ MS:
         revenue: 2073195
         rank: 11
         percent: 0.2
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1482800
         rank: 14
@@ -3743,7 +3743,7 @@ MT:
         revenue: 20147570
         rank: 7
         percent: 1.9
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 4968945
         rank: 10
@@ -4130,7 +4130,7 @@ ND:
         revenue: 135319895
         rank: 3
         percent: 12.7
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 16425256
         rank: 5
@@ -4306,7 +4306,7 @@ NE:
         revenue: 114299
         rank: 18
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 166312
         rank: 19
@@ -4636,7 +4636,7 @@ NM:
         revenue: 477323946
         rank: 1
         percent: 44.8
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 119888753
         rank: 1
@@ -4893,7 +4893,7 @@ NV:
         revenue: 1538343
         rank: 13
         percent: 0.1
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 10849612
         rank: 6
@@ -4971,7 +4971,7 @@ NV:
         revenue: 15006
         rank: 3
         percent: 0.1
-    'Sand & Gravel':
+    Sand & Gravel:
       '2006':
         revenue: 2
         rank: 1
@@ -5064,7 +5064,7 @@ NY:
         revenue: 1187
         rank: 23
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 187
         rank: 30
@@ -5240,7 +5240,7 @@ OH:
         revenue: 87549
         rank: 20
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 44037
         rank: 25
@@ -5510,7 +5510,7 @@ OK:
         revenue: 10429790
         rank: 8
         percent: 1
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3103290
         rank: 12
@@ -5635,7 +5635,7 @@ OR:
         revenue: 178259
         rank: 4
         percent: 1.3
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1314905
         rank: 15
@@ -5810,7 +5810,7 @@ PA:
         revenue: 7126
         rank: 22
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 131016
         rank: 20
@@ -6044,7 +6044,7 @@ SD:
         revenue: 403280
         rank: 15
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 221904
         rank: 18
@@ -6100,7 +6100,7 @@ TN:
         revenue: 132
         rank: 38
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2007':
         revenue: 132
         rank: 33
@@ -6279,7 +6279,7 @@ TX:
         revenue: 2215702
         rank: 10
         percent: 0.2
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3040473
         rank: 13
@@ -6710,7 +6710,7 @@ UT:
         revenue: 64882356
         rank: 5
         percent: 6.1
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 103022390
         rank: 2
@@ -7021,7 +7021,7 @@ VA:
         revenue: 92
         rank: 24
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 27894
         rank: 26
@@ -7159,7 +7159,7 @@ WA:
         revenue: 8437
         rank: 8
         percent: 0.1
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 5612250
         rank: 9
@@ -7298,7 +7298,7 @@ WV:
         revenue: 52
         rank: 23
         percent: 0
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 423508
         rank: 16
@@ -7592,7 +7592,7 @@ WY:
         revenue: 232006287
         rank: 2
         percent: 21.8
-    'Oil & Gas (Non-Royalty)':
+    Oil & Gas (Non-Royalty):
       '2006':
         revenue: 49661557
         rank: 3

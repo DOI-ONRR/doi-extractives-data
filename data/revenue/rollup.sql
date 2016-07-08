@@ -99,6 +99,17 @@ CREATE TABLE national_revenue AS
     GROUP BY
         year, commodity;
 
+-- then create national revenue type as an aggregate view
+-- on state_revenue
+DROP TABLE IF EXISTS national_revenue_type;
+CREATE TABLE national_revenue_type AS
+    SELECT
+        year, commodity, SUM(revenue) AS revenue, revenue_type
+    FROM county_revenue
+    GROUP BY
+        year, commodity, revenue_type;
+
+
 -- create regional rankings views
 DROP TABLE IF EXISTS state_revenue_rank;
 CREATE TABLE state_revenue_rank AS

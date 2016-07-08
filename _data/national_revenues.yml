@@ -1,0 +1,428 @@
+US:
+  commodities:
+    All:
+      '2004':
+        revenue: 5611522603
+      '2005':
+        revenue: 6297713331
+      '2006':
+        revenue: 12478363213
+      '2007':
+        revenue: 11337244256
+      '2008':
+        revenue: 22918051782
+      '2009':
+        revenue: 7858826222
+      '2010':
+        revenue: 10452095816
+      '2011':
+        revenue: 11065905356
+      '2012':
+        revenue: 12635093516
+      '2013':
+        revenue: 12286052204
+      '2014':
+        revenue: 4834017057
+      '2015':
+        revenue: 3309997086
+    Asphalt:
+      '2006':
+        revenue: 959
+      '2014':
+        revenue: 1063
+      '2015':
+        revenue: 564
+    CO2:
+      '2006':
+        revenue: 25001687
+      '2007':
+        revenue: 23659941
+      '2008':
+        revenue: 59072221
+      '2009':
+        revenue: 39636042
+      '2010':
+        revenue: 43930385
+      '2011':
+        revenue: 51378771
+      '2012':
+        revenue: 62850534
+      '2013':
+        revenue: 63526560
+      '2014':
+        revenue: 80343973
+      '2015':
+        revenue: 56964833
+    Clay:
+      '2006':
+        revenue: 23814
+      '2007':
+        revenue: 18975
+      '2008':
+        revenue: 5003
+      '2009':
+        revenue: 2272
+      '2010':
+        revenue: 3073
+      '2011':
+        revenue: 4537
+      '2012':
+        revenue: 4641
+      '2013':
+        revenue: 5401
+      '2014':
+        revenue: 752
+      '2015':
+        revenue: 8700
+    Coal:
+      '2006':
+        revenue: 949641548
+      '2007':
+        revenue: 938325098
+      '2008':
+        revenue: 1141532451
+      '2009':
+        revenue: 1082335451
+      '2010':
+        revenue: 876925635
+      '2011':
+        revenue: 1039089740
+      '2012':
+        revenue: 1347964510
+      '2013':
+        revenue: 1132814965
+      '2014':
+        revenue: 1174385193
+      '2015':
+        revenue: 1131925660
+    Gas:
+      '2004':
+        revenue: 3362250638
+      '2005':
+        revenue: 3274732082
+      '2006':
+        revenue: 5101865322
+      '2007':
+        revenue: 4305335935
+      '2008':
+        revenue: 5400261550
+      '2009':
+        revenue: 1885511837
+      '2010':
+        revenue: 2472307040
+      '2011':
+        revenue: 2189563164
+      '2012':
+        revenue: 1299314399
+      '2013':
+        revenue: 1577715131
+      '2014':
+        revenue: 1207187421
+      '2015':
+        revenue: 770402891
+    Geothermal:
+      '2006':
+        revenue: 13515483
+      '2007':
+        revenue: 38221377
+      '2008':
+        revenue: 44372990
+      '2009':
+        revenue: 31193088
+      '2010':
+        revenue: 18544418
+      '2011':
+        revenue: 15734620
+      '2012':
+        revenue: 15104889
+      '2013':
+        revenue: 15142714
+      '2014':
+        revenue: 17183462
+      '2015':
+        revenue: 14014431
+    Gilsonite:
+      '2006':
+        revenue: 511875
+      '2007':
+        revenue: 618914
+      '2008':
+        revenue: 1219362
+      '2009':
+        revenue: 1443917
+      '2010':
+        revenue: 1886154
+      '2011':
+        revenue: 2371521
+      '2012':
+        revenue: 3404833
+      '2013':
+        revenue: 2903028
+      '2014':
+        revenue: 1955180
+      '2015':
+        revenue: 1958982
+    Gold:
+      '2015':
+        revenue: 2604
+    Hardrock:
+      '2006':
+        revenue: 10593171
+      '2007':
+        revenue: 17888801
+      '2008':
+        revenue: 14313212
+      '2009':
+        revenue: 9517115
+      '2010':
+        revenue: 13442595
+      '2011':
+        revenue: 15017955
+      '2012':
+        revenue: 11735662
+      '2013':
+        revenue: 9500111
+      '2014':
+        revenue: 10882632
+      '2015':
+        revenue: 9306593
+    Helium:
+      '2006':
+        revenue: -292
+      '2009':
+        revenue: 20
+      '2011':
+        revenue: 91
+      '2012':
+        revenue: 59
+      '2013':
+        revenue: 67
+      '2014':
+        revenue: 2934
+      '2015':
+        revenue: -2586
+    Limestone:
+      '2010':
+        revenue: 40
+    NGL:
+      '2004':
+        revenue: 159390793
+      '2005':
+        revenue: 143636581
+      '2006':
+        revenue: 299960611
+      '2007':
+        revenue: 405014636
+      '2008':
+        revenue: 547977102
+      '2009':
+        revenue: 234336583
+      '2010':
+        revenue: 428203930
+      '2011':
+        revenue: 569815462
+      '2012':
+        revenue: 550660970
+      '2013':
+        revenue: 398222783
+      '2014':
+        revenue: 292434474
+      '2015':
+        revenue: 105674140
+    Oil:
+      '2004':
+        revenue: 1320336533
+      '2005':
+        revenue: 2272041168
+      '2006':
+        revenue: 4270619156
+      '2007':
+        revenue: 4413664501
+      '2008':
+        revenue: 5831616022
+      '2009':
+        revenue: 2964214261
+      '2010':
+        revenue: 5103466729
+      '2011':
+        revenue: 6425005851
+      '2012':
+        revenue: 6639332936
+      '2013':
+        revenue: 7037172026
+      '2014':
+        revenue: 1674358514
+      '2015':
+        revenue: 1065584809
+    Oil & Gas:
+      '2004':
+        revenue: 769509547
+      '2005':
+        revenue: 607267152
+      '2006':
+        revenue: 1391382852
+      '2007':
+        revenue: 816781379
+      '2008':
+        revenue: 9380794023
+      '2009':
+        revenue: 1296937234
+      '2010':
+        revenue: 1180607365
+      '2011':
+        revenue: 284875866
+      '2012':
+        revenue: 2280157620
+      '2013':
+        revenue: 1698554250
+    Oil & Gas (Non-Royalty):
+      '2006':
+        revenue: 375703218
+      '2007':
+        revenue: 351526660
+      '2008':
+        revenue: 459309910
+      '2009':
+        revenue: 258539583
+      '2010':
+        revenue: 265135786
+      '2011':
+        revenue: 386970604
+      '2012':
+        revenue: 328681125
+      '2013':
+        revenue: 259554966
+      '2014':
+        revenue: 297508570
+      '2015':
+        revenue: 83809303
+    Other:
+      '2004':
+        revenue: 35093
+      '2005':
+        revenue: 36348
+      '2006':
+        revenue: 19484
+      '2007':
+        revenue: 36496
+      '2008':
+        revenue: 275571
+      '2009':
+        revenue: 22142
+      '2010':
+        revenue: 3242
+      '2011':
+        revenue: 67362
+      '2012':
+        revenue: 53821
+      '2013':
+        revenue: 24566
+    Phosphate:
+      '2006':
+        revenue: 2197900
+      '2007':
+        revenue: 2354490
+      '2008':
+        revenue: 2659407
+      '2009':
+        revenue: 3716662
+      '2010':
+        revenue: 9307087
+      '2011':
+        revenue: 9984670
+      '2012':
+        revenue: 12553581
+      '2013':
+        revenue: 10243384
+      '2014':
+        revenue: 11426979
+      '2015':
+        revenue: 10659910
+    Potassium:
+      '2006':
+        revenue: 6608669
+      '2007':
+        revenue: 9584637
+      '2008':
+        revenue: 12609103
+      '2009':
+        revenue: 26924353
+      '2010':
+        revenue: 20543843
+      '2011':
+        revenue: 43279069
+      '2012':
+        revenue: 28897879
+      '2013':
+        revenue: 21764974
+      '2014':
+        revenue: 21601514
+      '2015':
+        revenue: 15396376
+    Sand & Gravel:
+      '2006':
+        revenue: 2
+      '2008':
+        revenue: 321
+    Sodium:
+      '2006':
+        revenue: 30698647
+      '2007':
+        revenue: 14119826
+      '2008':
+        revenue: 20866516
+      '2009':
+        revenue: 17329961
+      '2010':
+        revenue: 17264387
+      '2011':
+        revenue: 30721009
+      '2012':
+        revenue: 52212606
+      '2013':
+        revenue: 52602749
+      '2014':
+        revenue: 44311409
+      '2015':
+        revenue: 44536948
+    Sulfur:
+      '2006':
+        revenue: 19106
+      '2007':
+        revenue: 68087
+      '2008':
+        revenue: 1159223
+      '2009':
+        revenue: 7089649
+      '2010':
+        revenue: 376857
+      '2011':
+        revenue: 1889816
+      '2012':
+        revenue: 2034607
+      '2013':
+        revenue: 484293
+      '2014':
+        revenue: 432988
+      '2015':
+        revenue: -247072
+    Tar Sands:
+      '2007':
+        revenue: 24503
+      '2008':
+        revenue: 7795
+      '2009':
+        revenue: 7732
+      '2010':
+        revenue: 7732
+    Wind:
+      '2009':
+        revenue: 68320
+      '2010':
+        revenue: 139518
+      '2011':
+        revenue: 135248
+      '2012':
+        revenue: 128843
+      '2013':
+        revenue: 5820234

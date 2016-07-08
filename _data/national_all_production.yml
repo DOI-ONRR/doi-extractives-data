@@ -1,0 +1,342 @@
+US:
+  products:
+    All Other Renewables:
+      name: All Other Renewables
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 83068000
+        '2005':
+          volume: 87332000
+        '2006':
+          volume: 96525000
+        '2007':
+          volume: 105241000
+        '2008':
+          volume: 126099000
+        '2009':
+          volume: 144280000
+        '2010':
+          volume: 167176000
+        '2011':
+          volume: 193982000
+        '2012':
+          volume: 218335000
+        '2013':
+          volume: 253508000
+    Biomass (total):
+      name: Biomass (total)
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 53538000
+        '2005':
+          volume: 54277000
+        '2006':
+          volume: 54858000
+        '2007':
+          volume: 55538000
+        '2008':
+          volume: 55034000
+        '2009':
+          volume: 54497000
+        '2010':
+          volume: 56088000
+        '2011':
+          volume: 56669000
+        '2012':
+          volume: 57624000
+        '2013':
+          volume: 60858000
+    Coal (short tons):
+      name: Coal
+      units: short tons
+      volume:
+        '2004':
+          volume: 782876381
+        '2005':
+          volume: 789924343
+        '2006':
+          volume: 822746951
+        '2007':
+          volume: 811671980
+        '2008':
+          volume: 826886692
+        '2009':
+          volume: 769791014
+        '2010':
+          volume: 783738438
+        '2011':
+          volume: 791367375
+        '2012':
+          volume: 41672
+        '2013':
+          volume: 735700696
+    Conventional Hydroelectric:
+      name: Conventional Hydroelectric
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 268420000
+        '2005':
+          volume: 270322000
+        '2006':
+          volume: 289247000
+        '2007':
+          volume: 247507000
+        '2008':
+          volume: 254830000
+        '2009':
+          volume: 273448000
+        '2010':
+          volume: 260202000
+        '2011':
+          volume: 319354000
+        '2012':
+          volume: 276236000
+        '2013':
+          volume: 268565000
+    Geothermal:
+      name: Geothermal
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 14811000
+        '2005':
+          volume: 14693000
+        '2006':
+          volume: 14568000
+        '2007':
+          volume: 14638000
+        '2008':
+          volume: 14840000
+        '2009':
+          volume: 15009000
+        '2010':
+          volume: 15220000
+        '2011':
+          volume: 15315000
+        '2012':
+          volume: 15563000
+        '2013':
+          volume: 15776000
+    Natural Gas (mcf):
+      name: Natural Gas
+      units: mcf
+      volume:
+        '1967':
+          volume: 339601000
+        '1968':
+          volume: 329318000
+        '1969':
+          volume: 311458000
+        '1970':
+          volume: 296347000
+        '1971':
+          volume: 254494000
+        '1972':
+          volume: 254850000
+        '1973':
+          volume: 290023000
+        '1974':
+          volume: 328059000
+        '1975':
+          volume: 361345000
+        '1976':
+          volume: 390005000
+        '1977':
+          volume: 430634000
+        '1978':
+          volume: 540769000
+        '1979':
+          volume: 589730000
+        '1980':
+          volume: 625570000
+        '1981':
+          volume: 652159000
+        '1982':
+          volume: 627062000
+        '1983':
+          volume: 578059000
+        '1984':
+          volume: 622619000
+        '1985':
+          volume: 623741000
+        '1986':
+          volume: 642125000
+        '1987':
+          volume: 673939000
+        '1988':
+          volume: 705483000
+        '1989':
+          volume: 680944000
+        '1990':
+          volume: 701729000
+        '1991':
+          volume: 741807000
+        '1992':
+          volume: 929054000
+        '1993':
+          volume: 971707000
+        '1994':
+          volume: 1098871000
+        '1995':
+          volume: 1109696000
+        '1996':
+          volume: 1133459000
+        '1997':
+          volume: 1049920000
+        '1998':
+          volume: 1024792000
+        '1999':
+          volume: 1017176000
+        '2000':
+          volume: 1012019000
+        '2001':
+          volume: 1014148000
+        '2002':
+          volume: 1036154000
+        '2003':
+          volume: 1063840000
+        '2004':
+          volume: 23969678000
+        '2005':
+          volume: 23456821000
+        '2006':
+          volume: 23535019000
+        '2007':
+          volume: 24663658000
+        '2008':
+          volume: 25636255000
+        '2009':
+          volume: 26056892000
+        '2010':
+          volume: 26816086000
+        '2011':
+          volume: 28479024000
+        '2012':
+          volume: 29542312000
+        '2013':
+          volume: 29522554000
+        '2014':
+          volume: 633855000
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 2315610
+        '2005':
+          volume: 2200374
+        '2006':
+          volume: 2120848
+        '2007':
+          volume: 2111350
+        '2008':
+          volume: 2075520
+        '2009':
+          volume: 2186983
+        '2010':
+          volume: 2213721
+        '2011':
+          volume: 2258749
+        '2012':
+          volume: 2558448
+        '2013':
+          volume: 2903313
+    Other biomass:
+      name: Other biomass
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 15421000
+        '2005':
+          volume: 15421000
+        '2006':
+          volume: 16096000
+        '2007':
+          volume: 16522000
+        '2008':
+          volume: 17735000
+        '2009':
+          volume: 18443000
+        '2010':
+          volume: 18914000
+        '2011':
+          volume: 19221000
+        '2012':
+          volume: 19826000
+        '2013':
+          volume: 20826000
+    Solar:
+      name: Solar
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 575000
+        '2005':
+          volume: 551000
+        '2006':
+          volume: 508000
+        '2007':
+          volume: 612000
+        '2008':
+          volume: 864000
+        '2009':
+          volume: 891000
+        '2010':
+          volume: 1211000
+        '2011':
+          volume: 1818000
+        '2012':
+          volume: 4326000
+        '2013':
+          volume: 9032000
+    Wind:
+      name: Wind
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 14144000
+        '2005':
+          volume: 17809000
+        '2006':
+          volume: 26590000
+        '2007':
+          volume: 34451000
+        '2008':
+          volume: 55361000
+        '2009':
+          volume: 73887000
+        '2010':
+          volume: 94654000
+        '2011':
+          volume: 120175000
+        '2012':
+          volume: 140825000
+        '2013':
+          volume: 167841000
+    Wood and wood-derived fuels:
+      name: Wood and wood-derived fuels
+      units: kilowatt hours
+      volume:
+        '2004':
+          volume: 38114000
+        '2005':
+          volume: 38855000
+        '2006':
+          volume: 38762000
+        '2007':
+          volume: 39011000
+        '2008':
+          volume: 37302000
+        '2009':
+          volume: 36048000
+        '2010':
+          volume: 37172000
+        '2011':
+          volume: 37447000
+        '2012':
+          volume: 37803000
+        '2013':
+          volume: 40028000

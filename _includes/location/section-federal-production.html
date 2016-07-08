@@ -1,4 +1,9 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
+
+{% if national_page %}
+  {% assign federal_products = site.data.national_federal_production[state_id].products %}
+{% endif %}
+
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
 

@@ -1,0 +1,90 @@
+
+{% assign federal_products = site.data.national_federal_production[state_id].products %}
+
+{% assign federal_products_num = federal_products | size %}
+{% assign units_map = site.data.production_units %}
+
+<section id="federal-production" class="federal production">
+
+  <h3>Production on federal land in {{ state_name }}</h2>
+
+  {% include location/national-ownership.html %}
+
+  <section class="county-map-table">
+
+    <h4>Natural resources extracted on federal land</h4>
+
+    {% if federal_products_num == 0 %}
+      <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+    {% endif %}
+
+    <div class="chart-list">
+
+    {% for product in federal_products %}
+      {% assign product_slug = product[0] | slugify %}
+      {% assign product_name = product[1].name | default: product[0] %}
+      {% assign production_values = product[1].volume %}
+      {% assign volume = production_values[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+      {% assign short_units = units_map[units].short | default 'units' %}
+      {% assign long_units = units_map[units].long | default 'units' %}
+      {% assign units_suffix = units_map[units].suffix | default '' %}
+      {% assign units_title = units_map[units].title %}
+
+      <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
+
+        <h4 class="chart-title">
+          {{ product_name }}
+          {% if units_title %} ({{ units_title }}){% endif %}
+        </h4>
+
+        <div class="row-container">
+
+          <div class="chart-container">
+
+            <div class="text-container">
+              <p>
+                {% if volume %}
+                  {{ volume | intcomma }} {{ long_units | term }}
+                  of {{ product_name | downcase | suffix:units_suffix }} were
+                {% else %}
+                  No {{ product_name | downcase | suffix:units_suffix }} was
+                {% endif %}
+                produced on federal land in {{ state_name }} in {{ year }}.
+              </p>
+            </div>
+
+            {% if volume %}
+              <figure class="chart">
+                <eiti-bar-chart
+                  aria-controls="federal-production-figures-{{ product_slug }}"
+                  data='{% include location/line-chart-data.json values=production_values key="volume" %}'
+                  data-x-range="{{ year_range }}"
+                  x-value="{{ year }}">
+                </eiti-bar-chart>
+                <figcaption id="federal-production-figures-{{ product_slug }}">
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  <span class="eiti-bar-chart-y-value"
+                        data-format=","
+                        data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
+                </figcaption>
+              </figure>
+
+            {% endif %}
+          </div><!-- /.chart-container -->
+
+
+        </div><!-- /.row-container -->
+
+      </section>
+    {% endfor %}
+
+    </div><!-- /.chart-list -->
+
+  </section>
+
+  <a href="{{site.baseurl}}/downloads/federal-production/">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal production data comes from the Office of Natural Resources Revenue
+  </a>
+
+</section>

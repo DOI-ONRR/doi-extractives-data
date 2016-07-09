@@ -104,120 +104,64 @@ Companies and government agencies are each legally responsible for reporting acc
 
 Controls and standards (like accounting principles) help companies report correct data on the first attempt, which is important because they may be subject to penalties if they calculate or report payments incorrectly.
 
-Company and government reports are subject to internal and external verification before the government publishes payment data. 
+Once submitted, reports are verified before the government publishes payment data. Finally, independent audits of financial statements, transactions, and systems help ensure compliance with internal and external standards.
 
-Prior to publication, different revenue payments are verified by high levels of internal and external scrutiny
+<!-- Don't love "can be trusted" — work on this phrase -->
+Professional associations and government agencies set standards establishing consistent processes and outcomes, so audit results can be trusted — even when detailed results aren't publicly available.
 
-Some standards subject data to additional management—primarily via independent audits. Controls are particularly important for companies as most data is not publically available even once validated and reported to the Government.
 
-[IMAGE: Data Validation Standards & Systems — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
+### Company standards and systems
 
-### 1. Companies
+**Publicly traded** companies in the U.S. follow the generally accepted accounting principles developed by the [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350). The [Public Company Accounting Oversight Board](https://pcaobus.org/Pages/default.aspx) and [Security and Exchange Commission](https://www.sec.gov/) also provide oversight.
 
-#### Internal standards
+**Privately held** companies in the U.S. follow the [generally accepted auditing standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf) developed by the [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx).
 
-Companies follow standards when reporting tax and non-tax payments:
+Standard-setting bodies shape audit requirements for companies and government agencies. Prior to the [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), the auditing profession was self-regulated. 
 
-[logo: [OMB logo](https://www.whitehouse.gov/omb/financial_default)]
+<!-- Learn more about this link -->
+* [Investment Company Act (PDF)](https://www.sec.gov/about/laws/ica40.pdf)
 
-* [GAAP](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) – Public companies 
-* [GAAS (pdf)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf) – Private companies
-* [Sarbanes-Oxley Act (pdf)](https://www.sec.gov/about/laws/soa2002.pdf)
-* [Investment Company Act (pdf)](https://www.sec.gov/about/laws/ica40.pdf)
+**Auditing**
 
-#### Transaction audits
+ONRR examines company records to verify accuracy of reporting and payments, and the IRS audits company tax returns.
 
-Government agencies conduct audits of company production and specific payments:
+<!-- If inspection/enforcement is in scope for this section, we probably need to include BSEE and mining agencies
+* The Bureau of Land Management [Inspection and Enforcement Program](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/Energy_Facts_Enforcement.html) verifies production, permits, conducts onsite inspections
+-->
 
-* [ONRR (ppt)](www.onrr.gov/About/PDFDocs/AGAProDevCon%20042612April.ppt): Examines company records to ensure accuracy of reporting and payments 
-* [BLM](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/Energy_Facts_Enforcement.html): Verifies production, permits, conducts onsite inspections
-* [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits): Audits company tax returns
+The IRS and [SEC](https://www.sec.gov/about/whatwedo.shtml) also periodically audit companies' internal systems to ensure they comply with standards.
 
-#### System audits
-
-Companies are also subject to audits of their internal systems (i.e. accounting) to ensure they comply with internal standards:
-
-[logos for IRS and [SEC](https://www.sec.gov/about/whatwedo.shtml), and an [SEC badge (?) that says "Sarbanes-Oxley Compliant"](https://www.sec.gov/about/laws/soa2002.pdf)]
+The [Sarbanes-Oxley legislation (PDF)](https://www.sec.gov/about/laws/soa2002.pdf) enhances corporate responsibility, requires financial disclosures, and combats fraud.
 
 Click here for an extended list of data accuracy control systems
 
-### 2. U.S. government
+### Federal standards and systems
 
-#### Internal standards
+The U.S. government follows standards that require financial transparency and govern how revenue is reported:
 
-The U.S. Government follows standards governing and requiring financial transparency and revenue reporting:
+* The [Office of Management and Budget](https://www.whitehouse.gov/omb/financial_default) (OMB) defines management responsibilities for internal controls in the federal government in [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev).
+* The role of OMB and responsibilities of each agency are governed by the [Chief Financial Officers Act of 1990](http://govinfo.library.unt.edu/npr/library/misc/cfo.html).
+* The U.S. Government Accountability Office publishes the _Standards for Internal Control in the Federal Government_, which is also known as the [Green Book](http://www.gao.gov/greenbook/overview).
 
-* [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev)
-* [Chief Financial Officers Act of 1990](http://govinfo.library.unt.edu/npr/library/misc/cfo.html)
-* [U.S. GAO Green Book](http://www.gao.gov/greenbook/overview)
+**Auditing**
 
-#### Transaction audits
+Federal agencies are subject to both transactional and systemic audits, which are conducted by one of these organizations:
 
-Federal agencies have Offices of Inspector Generals that perform audits which are publicly listed on websites. This is in addition to the audits that GAO performs at agencies.
+* Each federal agency has an Office of the Inspector General (OIG), which performs most transaction-level auditing for the agency, though OIGs may also conduct system audits.
+  * [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015)
+* The Government Accountability Office also audits agencies throughout the government.
+* In some situations, private firms are asked to assist in auditing agencies.
 
-[Click here for more information](https://www.doioig.gov/reports)
+Many audits are routine, but they may be triggered by events or disclosures. These audits are supported by standards, such as the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview), and [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), which establishes minimum requirements for audits of federal financial statements.
 
-#### System audits
+Government audit results are publicly disclosed on an annual basis. 
 
-The U.S. Government is subject to 3rd party audits to ensure that agencies follow their own internal standards. Some audits are routine, and some are ad hoc in response to events
+<!-- Click here for the latest GAO Audit — no link -->
 
-**3rd party auditors**
 
-[logos for big 4 accounting firms (Deloitte, KPMG, E&Y, PwC), [DOI OIG](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015), and GAO]
-
-Click here for the latest GAO Audit
-
-**System audit standards**
-
-[Yellow Book – GAGAS](http://www.gao.gov/yellowbook/overview)
-[OMB Bulletin 14-02 (pdf)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf)
-
-Click here for an extended list of data accuracy control systems
-
-## 3. Audits and standards
-
-Reporting standards and third party auditors validate payment data. This includes audits of financial statements.
-
-Standard-setting bodies monitor, regulate, and update audit and controls requirements
-
-Professional associations and Government entities produce audit and control standards for both companies and Government agencies, protecting shareholders and taxpayers from malfeasance, waste, and abuse. Standards are important to transparency as detailed results of company audits may or may not be publically available. The indication of a passed or failed audit sufficiently demonstrates strong or weak data validation and reporting practices because of the standards auditors follow. Government audit results are publically disclosed on an annual basis. 
-
-For more detail on the standards and audits these bodies support, see the graphic above. 
-
-[IMAGE: Audit Standards & Systems — shows three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
-
-**1. Companies**
-
-Internal Standards
-Transaction Audits
-System Audits
-
-**2. U.S. government**
-
-Internal Standards
-Transaction Audits
-System Audits
-
-Standard-setting bodies & standards supporting data accuracy
-
-[BOX]
-
-Stand-setting bodies shape the transaction and system audit requirements for companies and Government agencies. Prior to the Sarbanes-Oxley Act of 2002, the auditing profession was self-regulated. 
-
-[logos with arrows to words:]
-
-[logos: [PCAOB](https://pcaobus.org/Pages/default.aspx), [FASB](http://www.fasb.org/home), SEC] --> GAAP: Common set of accounting principles, standards, and procedures public companies use to compile financial statements.
-
-[logo: [AICPA](http://www.aicpa.org/Pages/default.aspx)] --> GAAS: Audit standards that apply to non-public companies.
-
-[logo: [GAO](http://www.gao.gov/)] --> Yellow Book, Green Book: Provide frameworks for conducting audits and internal controls in the Federal Government.
-
-[logo: [OMB](https://www.whitehouse.gov/omb)] --> OMB Circular A-123: Defines management responsibilities for internal controls in the Federal Government.
-
-[logo: U.S. Congress] --> Legislation — Sarbanes-Oxley: Enhances corporate responsibility, financial disclosures, and combats fraud.
 
 ------
-
+<!-- 
 ## 4. Revenue disbursement
 
 Revenues from natural resource extraction are disbursed to a variety of end recipients across the United States. 
@@ -253,18 +197,18 @@ Mineral leasing revenues are one of the U.S. Government’s greatest sources of 
 * Land and Water Conservation Fund: ONRR transfers nearly $900 million annually to be used by Federal, State, and local Governments to help acquire, develop, and improve outdoor recreation areas.
 * Indian Tribes and Indian Mineral Owners: $853 million collected from mineral leases on Indian lands are distributed regularly to Tribal Governments or IIMOs. These funds provide direct and tangible benefits to thousands of individuals, often as a major source of primary income. 
 * National Historic Preservation Fund: ONRR annually transfers $150 million to NHPF as seed money to preserve and protect our Nation’s irreplaceable heritage for current and future generations.
+ -->
 
-------
 
-## 5. Data publication
+## Data publication
+
+Payments (non-tax and tax) from companies to the Government are closely monitored in the U.S. However, not all the data is made available to the public.
 
 The various forms of payments each require different levels of publicity and transparency
 
-Payments (non-tax and tax) from companies to the Government are closely monitored in the U.S. However, not all the data is made available to the public. 
+Outside of the [USEITI process](https://useiti.doi.gov/explore/reconciliation/), public companies are required to publish certain data — namely in SEC filings. New U.S. legislation found in the Dodd-Frank Act will require extractives companies to publicize revenue payments data, although these rules have not yet been finalized. Some companies do voluntarily publish data in order to promote transparency in the sector. 
 
-Outside of the [USEITI process](https://useiti.doi.gov/explore/reconciliation/), public companies are required to publish certain data—namely in SEC filings. New U.S. legislation found in the Dodd-Frank Act will require extractives companies to publicize revenue payments data, although these rules have not yet been finalized. Some companies do voluntarily publish data in order to promote transparency in the sector. 
-
-Different regulations compel the U.S. Government to publicize information. However, the U.S. Government is limited in the amount of data it can disclose by law. As a result, the Government publishes mostly aggregate figures—thus allowing it to publicize receipt of payments without publishing privileged or competitive information. 
+Different regulations compel the U.S. government to publicize information. However, the U.S. government is limited in the amount of data it can disclose by law. As a result, the Government publishes mostly aggregate figures—thus allowing it to publicize receipt of payments without publishing privileged or competitive information. 
 
 ### Government payment reporting
 

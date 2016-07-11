@@ -15,17 +15,6 @@
     <div class="chart-list-intro">
       <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
       <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
-      <p>In {{ year }},
-        {% if jobs_count %}
-          there were
-          {{ jobs_count | intcomma }}
-          jobs in extractive industries that paid a wage or salary in
-          {{ state_name }}, or
-          {{ jobs_percent | percent }}% of state-wide employment.
-        {% else %}
-          there were no wage or salary jobs in the extractive industries.
-        {% endif %}
-      </p>
     </div>
 
     {% assign _metrics = 'count' | split: ' ' %}
@@ -36,19 +25,13 @@
 
       <figure class="chart">
         <figcaption id="jobs-figures-{{ _metric }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value"
-            {% if _metric == 'count' %}
-              data-format=","
-            {% elsif _metric == 'percent' %}
-              data-format="%"
-            {% endif %}>
-            {% if _metric == 'count' %}
-              {{ jobs[year].jobs | intcomma }}
-            {% elsif _metric == 'percent' %}
-              {{ jobs[year].percent | percent }}%
-            {% endif %}
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          there were
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ jobs[year].jobs | intcomma }}
           </span>
+          jobs in extractive industries that paid a wage or salary in
+          {{ state_name }}.
         </figcaption>
         <eiti-bar-chart
           aria-controls="jobs-figures-{{ _metric }}"
@@ -133,19 +116,13 @@
 
       <figure class="chart">
         <figcaption id="self-employment-figures-{{ _metric }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value"
-            {% if _metric == 'count' %}
-              data-format=","
-            {% elsif _metric == 'percent' %}
-              data-format="%"
-            {% endif %}>
-            {% if _metric == 'count' %}
-              {{ self_employment_jobs[year].jobs | intcomma }}
-            {% elsif _metric == 'percent' %}
-              {{ self_employment_jobs[year].percent | percent }}%
-            {% endif %}
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          there were
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ self_employment_jobs[year].jobs | intcomma }}
           </span>
+          self-employed extractive industries professionals in
+          {{ state_name }}.
         </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"

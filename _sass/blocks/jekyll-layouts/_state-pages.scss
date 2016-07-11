@@ -7,15 +7,13 @@
   }
 
   h2 {
-    border-top: 6px solid $light-green;
-    padding-bottom: $standard-padding;
-    padding-top: $standard-padding-fluffed;
+    border-bottom: 20px solid $light-green;
+    padding-bottom: $standard-padding-lite;
   }
 
   h3:not(.chart-title) {
-    border-top: 2px solid $light-green;
+    border-bottom: 2px solid $light-green;
     padding-bottom: $standard-padding;
-    padding-top: $standard-padding-fluffed;
   }
 
   h4 {

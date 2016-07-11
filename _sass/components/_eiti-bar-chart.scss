@@ -65,5 +65,19 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
+  @include font-size(1.1);
+
   color: $green-dark-chart;
+  font-weight: $weight-bold;
+
+}
+
+.x-axis-label {
+  text-transform: uppercase;
+
+  text {
+    @include font-size(1);
+
+    text-anchor: middle;
+  }
 }

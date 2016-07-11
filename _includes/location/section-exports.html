@@ -23,10 +23,12 @@
 
           <figure class="chart chart-{{ _metric }}">
             <figcaption id="exports-figures-{{ commodity_slug }}">
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              In <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              {{ state_name }} exported
               <span class="eiti-bar-chart-y-value" data-format="$,">
                 ${{ exports[year].dollars | intcomma }}
               </span>
+              of {{ commodity[0] }}.
             </figcaption>
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"

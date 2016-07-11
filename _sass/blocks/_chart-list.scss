@@ -63,14 +63,11 @@
   }
 
   figcaption {
-    display: flex;
-    font-weight: $weight-bold;
-    padding: $base-padding-lite;
+    @include font-size(1);
 
-    > * {
-      flex: 1;
-      width: 50%;
-    }
+    font-weight: $weight-light;
+    min-height: 100px;
+    padding: $base-padding-lite;
 
     > :last-child {
       text-align: right;

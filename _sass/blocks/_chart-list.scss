@@ -11,9 +11,12 @@
   }
 
   .chart-title {
+    @include heading(para-lg);
+
     border-bottom: 1px solid $mid-gray;
     font-size: inherit;
     font-weight: $weight-book;
+    letter-spacing: 1px;
     margin-bottom: $base-padding;
     text-transform: uppercase;
   }

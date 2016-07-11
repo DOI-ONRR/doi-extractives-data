@@ -78,16 +78,17 @@
 
       <figure class="chart">
         {% assign annual_revenue = commodity[1] %}
+        <figcaption id="revenue-figures-{{ commodity_slug }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span>
+        </figcaption>
         <eiti-bar-chart
           data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
           aria-controls="revenue-figures-{{ commodity_slug }}"
           x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
-        <figcaption id="revenue-figures-{{ commodity_slug }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span>
-        </figcaption>
+
       </figure>
       <p class="chart-list_caption">
         In {{ year }},

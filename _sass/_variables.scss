@@ -69,6 +69,7 @@ $green-sea: #b1d39c;
 $green-dark: #657c60;
 $chart-green: #a5d78a;
 $green-darkest: #2f4d26;
+$green-dark-chart: #587f4c;
 
 // v2 - deprecate
 $putty: #f4f4f4;
@@ -88,6 +89,14 @@ $base-padding-lite: $base-padding / 3;
 $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
 $base-padding-jumbo: 3.8em;
+
+// Padding on rem scale
+$standard-padding: 1.25rem;
+$standard-padding-lite: $standard-padding / 3;
+$standard-padding-large: 1.875rem; //30px
+$standard-padding-extra: 3.125rem; //50px
+$standard-padding-jumbo: 3.8rem;
+$standard-padding-fluffed: 5rem;
 
 // Link Colors
 $base-link-color: $dark-gray;

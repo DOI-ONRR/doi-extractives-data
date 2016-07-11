@@ -45,32 +45,21 @@
 
           <div class="chart-container">
 
-            <div class="text-container">
-              <p>
-                {% if volume %}
-                  {{ volume | intcomma }} {{ long_units | term }}
-                  of {{ product_name | downcase | suffix:units_suffix }} were
-                {% else %}
-                  No {{ product_name | downcase | suffix:units_suffix }} was
-                {% endif %}
-                produced on federal land in {{ state_name }} in {{ year }}.
-              </p>
-            </div>
-
             {% if volume %}
               <figure class="chart">
+                <figcaption id="federal-production-figures-{{ product_slug }}">
+                    <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                    <span class="eiti-bar-chart-y-value"
+                          data-format=","
+                          data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
+                </figcaption>
                 <eiti-bar-chart
                   aria-controls="federal-production-figures-{{ product_slug }}"
                   data='{% include location/line-chart-data.json values=production_values key="volume" %}'
                   data-x-range="{{ year_range }}"
                   x-value="{{ year }}">
                 </eiti-bar-chart>
-                <figcaption id="federal-production-figures-{{ product_slug }}">
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                  <span class="eiti-bar-chart-y-value"
-                        data-format=","
-                        data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
-                </figcaption>
+
               </figure>
 
               <!-- <h4>
@@ -88,6 +77,17 @@
                 %}
               </div> -->
             {% endif %}
+            <div class="text-container">
+              <p>
+                {% if volume %}
+                  {{ volume | intcomma }} {{ long_units | term }}
+                  of {{ product_name | downcase | suffix:units_suffix }} were
+                {% else %}
+                  No {{ product_name | downcase | suffix:units_suffix }} was
+                {% endif %}
+                produced on federal land in {{ state_name }} in {{ year }}.
+              </p>
+            </div>
           </div><!-- /.chart-container -->
 
           {% if volume %}

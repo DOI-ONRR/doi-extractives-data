@@ -25,16 +25,16 @@
       <h3 class="chart-title">{{ product_name }}</h3>
 
       <figure class="chart">
+        <figcaption id="all-production-figures-{{ product_slug }}">
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="eiti-bar-chart-y-value" data-format="," data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
+        </figcaption>
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
           data='{% include location/line-chart-data.json values=production_values key="volume" %}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
-        <figcaption id="all-production-figures-{{ product_slug }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value" data-format="," data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
-        </figcaption>
       </figure>
       <p class="chart-list_caption">
         {% if volume %}{{ volume | intcomma }} {{ long_units | term }} of

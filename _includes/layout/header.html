@@ -1,49 +1,45 @@
 <header class="header">
-
-  <div class="header-left">
-    <a class="header-image_link" href="{{ site.baseurl }}/">
-      <img class="header-image" src="{{ site.baseurl }}/img/logo-USEITI-color.svg" alt="USEITI logo">
-    </a>
-  </div>
-
-  <nav class="header-nav header-right">
-    <ul class="header-nav_top">
-      <li class="header-nav_item_top">
-        <a href="javascript:void(0)" class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
-      </li>
-      <span class="header-nav_item_link_spacer"> | </span>
-      <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Downloads</a>
-      </li>
-
-      <li class="header-nav_item_top">
-        <form action='{{ site.baseurl }}/search-results/'>
-          <label class='sr-only' for="q">Search</label>
-          <input type="search" class="q header-nav_search" placeholder="Search" id="q" name="q" role="search"/>
-          <button type="submit" class="header-nav_search_icon" title="search"><span class="icon-search"></span><label class="sr-only">Icon search button</label></button>
-        </form>
-      </li>
-
-    </ul>
+  <nav class="nav-header">
+    <div class="logo-container">
+      <a href="{{ site.baseurl }}/">
+        <img class="header-image" src="{{ site.baseurl }}/img/deiti-logo.svg" alt="Deiti logo">
+      </a>
+      <div class="logo_text">
+        <span>Deutschland</span>
+        <span>Extractive</span>
+        <span>Industries</span>
+        <span>Transparency</span>
+        <span>Initiative</span>
+      </div>
+    </div>
+    <div style="clear:both"></div>
     <ul class="header-nav_bottom">
-      <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
+      <li>
+        <a href="http://www.d-eiti.de/de/">◀ Back to D-EITI.de</a>
       </li>
-      <li class="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
+      <li>
+        <a href="/">Home</a>
       </li>
-      <li class="header-nav_item {% if page.permalink contains '/how-it-works/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>
+      <!-- <li>
+        <a href="{{ site.baseurl }}/explore/federal-production">Produktionsdaten</a>
       </li>
-      <li class="header-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
-      </li>
-      <li class="header-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
-      </li>
-
+      <li>
+        <a href="{{ site.baseurl }}/explore/production-charts">Einnahmen</a>
+      </li> -->
     </ul>
   </nav>
-  <button data-toggler="nav-drawer" is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" title="Global navigation toggle" aria-labelledby="menu-button"><label id="menu-button" class="sr-only">Menu Button</label></button>
-
+  <div class="flag-container container">
+      <ul>
+        <li class="lang-item">
+          <a>
+            <img src="{{ site.baseurl }}/img/counties/de_DE.png" title="Deutsch" alt="Deutsch">
+          </a>
+        </li>
+        <li class="lang-item">
+          <a>
+            <img src="{{ site.baseurl }}/img/counties/en_GB.png" title="English" alt="English">
+          </a>
+        </li>
+      </ul>
+  </div>
 </header>

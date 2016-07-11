@@ -1,0 +1,317 @@
+---
+title: Einnahmen
+layout: default
+permalink: /explore/production-charts/
+---
+
+<section id="federal-production" class="explore-subpage container container-margin">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <h1>Rohstoffgewinnung in Deutschland</h1>
+      <p>Der Gesamtwert der in Deutschland produzierten Rohstoffe beträgt ca. 13,5 Mrd. Euro (Jahr 2014, Quelle BGR). Informationen aus der Berichterstattung im Rahmen der D-EITI werden voraussichtlich ab 2017 verfügbar sein.</p>
+      <p>Aktuelle Daten aller Produktionsbetriebe des Bergbaus in Deutschland und eine Beschreibung der Lage des deutschen Bergbaus im Zusammenhang mit der gesamtwirtschaftlichen Entwicklung bietet das Bundesministerium für Wirtschaft und Energie (BMWi) in Zusammenarbeit mit den Bergbehörden der Bundesländer im 66. Jahresbericht 2015 in der Reihe
+        <a class="links" href="http://www.bmwi.de/DE/Mediathek/publikationen,did=747128.html">
+          „Der Bergbau in der Bundesrepublik Deutschland – Bergwirtschaft und Statistik„.
+        </a>
+      </p>
+      <p>Ausführliche Fachinformationen und Karten zu den Bodenschätzen in Deutschland sind bei den
+        <a class="links" href="http://www.infogeo.de/home/index_html">
+        Staatlichen Geologischen Diensten Deutschlands
+        </a>
+        verfügbar.
+      </p>
+      <p>Die Bundesanstalt für Geowissenschaften und Rohstoffe (BGR) legt seit 1980 in jährlicher Folge den Bericht zur „
+        <a class="links" href="http://www.bgr.bund.de/DE/Themen/Min_rohstoffe/Produkte/produkte_node.html#rohstoffsituation">
+          Rohstoffsituation in Deutschland“
+        </a>
+        vor.
+      </p>
+      <a href="{{site.baseurl}}/downloads/federal-production/">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
+    </div>
+  </div>
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
+
+
+      <div class="toggle-filters-container">
+        <button class="toggle-filters toggle-desktop" is="eiti-toggle"
+          aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
+          data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
+        <a class="clear-filters" href="#year=2014">(Clear filters)</a>
+      </div>
+
+      <form id="filters" aria-hidden="true" class="filters">
+
+        <div class="filters-heading">
+          <h2 class="h3">Filter by year</h2>
+        </div>
+
+        <div class="container-left-6">
+          <div id="product-filter" class="filter">
+            <label for="product-selector">Year</label>
+            <select id="product-selector" name="product">
+              <option value="">2014</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <h1 data-filter-description="" class="filter-description">
+        <a class="back-btn" href="#year=2014">
+          <img src="/img/left-arrow.png" alt="">
+        </a>
+        Production on federal lands in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+      </h1>
+
+      <div class="container">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+      </div>
+
+    </div>
+
+    <div class="filter-description_wrapper">
+      <h1 data-filter-description="" class="filter-description filter-description_open">
+        <span href="#product-selector" class="filter-part" data-key="product">All</span>
+        production on federal lands in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+      </h1>
+    </div>
+
+    <div class="explore-exploration slab-alpha">
+      <div class="regions container">
+        <div class="graph">
+          <div class="container chart-container">
+            <div id="chart1"></div>
+            <table class="legend" id="legend1"></table>
+          </div>
+          <div class="container chart-container">
+            <div id="chart2"></div>
+            <table class="legend" id="legend2"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" /></link>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pointLabels.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  // $.ajax({
+  //       type: "GET",
+  //       url: "../data.tsv",
+  //       dataType: "text",
+  //       success: function(data) {processData(data);}
+  //       });
+  //   function processData(data) {
+  //       var lines = data.split(/\r\n|\n/);
+  //
+  //       var time = [];
+  //       var data1 = [];
+  //       var data2 = [];
+  //       var data3 = [];
+  //
+  //       var headings = lines[0].split(' '); // Splice up the first row to get the headings
+  //
+  //       for (var j=1; j<lines.length; j++) {
+  //       var values = lines[j].split(' '); // Split up the comma seperated values
+  //          // We read the key,1st, 2nd and 3rd rows
+  //          time.push(values[0]); // Read in as string
+  //          // Recommended to read in as float, since we'll be doing some operations on this later.
+  //          data1.push(parseFloat(values[1]));
+  //          data2.push(parseFloat(values[2]));
+  //          data3.push(parseFloat(values[3]));
+  //
+  //       }
+  //       var x= 0;
+  //     console.log(headings[0]+" : "+time[x]+headings[1]+" : "+data1[x]+headings[2]+" : "+data2[x]+headings[4]+" : "+data2[x]);
+  //     }
+
+  var category = [
+      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}
+      ,{"color": "#6CBCE3", "cat":"Energierohstoffe"}
+    ];
+
+  var jsonData = [
+      {"Label": "Naturwerksteine", "Value": 57, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "REA-Gips", "Value": 60, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Quarzsand", "Value": 205, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Kaolin", "Value": 513, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Steinsalz und Industriesole", "Value": 551, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Kalk-,Mergel- und Dolomitstein", "Value": 556, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Steinkohle", "Value": 557, "cat":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Kalisalz", "Value": 795, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Erdöl", "Value": 1353, "cat":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Schwefel", "Value": 79, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Spezialtone", "Value": 162, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Torf", "Value": 182, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "gebrochene Natursteine", "Value": 1467, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Bausande und -kiese", "Value": 1502, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Braunkohle", "Value": 2484, "cat":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Erdgas", "Value": 2787, "cat":"Energierohstoffe","unit":"Mio. €"}
+    ];
+
+  var category1 = [
+      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}
+      ,{"color": "#D54D35", "cat":"Metallrohstoffe"}
+      ,{"color": "#6CBCE3", "cat":"Energierohstoffe"}
+    ];
+  var jsonData1 = [
+ 	    {"Label": "Bausande und -kiese", "Value": 238000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "gebrochene Natursteine", "Value": 211000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Braunkohle", "Value": 178178, "cat":"Energierohstoffe", "unit": "(kt)"}
+      ,{"Label": "Kalk-,Mergel- und Dolomitstein", "Value": 64000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Steinsalz und Industriesole", "Value": 13064, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Quarzsand", "Value": 10400, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Erdgas", "Value": 10060, "cat":"Energierohstoffe", "unit": "Mio. m3"}
+      ,{"Label": "Steinkohle", "Value": 7640, "cat":"Energierohstoffe", "unit": "(kt)"}
+      ,{"Label": "REA-Gips", "Value": 7000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Spezialtone", "Value": 6754, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Torf", "Value": 5759, "cat":"Industrieminerale, Steine und Erden", "unit": "(1000 m3)"}
+      ,{"Label": "Kaolin", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Gips- und Anhydristein", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Kallsalz (K2O)", "Value": 3127, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Erdöl", "Value": 2430, "cat":"Energierohstoffe", "unit": "(kt)"}
+      ,{"Label": "Schwefel", "Value": 708, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Naturwerksteine", "Value": 495, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Eisenerz", "Value": 456, "cat":"Metallrohstoffe", "unit": "(kt)"}
+      ,{"Label": "Bentonit", "Value": 395, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Feldspar", "Value": 350, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Siedesalz", "Value": 274, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Baryt", "Value": 71, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Erdölgas", "Value": 67, "cat":"Energierohstoffe", "unit": "(kt)"}
+      ,{"Label": "Kieselerde", "Value": 54, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Fluorit", "Value": 35, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
+      ,{"Label": "Metalle", "Value": 0.1, "cat":"Metallrohstoffe", "unit": "(kt)"}
+    ];
+
+  function orderData(prop){
+     return function(a,b){
+        if( a[prop] > b[prop]){
+            return 1;
+        }else if( a[prop] < b[prop] ){
+            return -1;
+        }
+        return 0;
+     }
+  }
+  function legendTable(element,data) {
+      var table = document.getElementById(element);
+      for(var i=0; i<data.length;i++){
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        var div = document.createElement("div");
+        div.style.width = '15px';
+        div.style.height = '15px';
+        div.style.background = data[i].color;
+        cell1.appendChild(div);
+        cell2.innerHTML = data[i].cat;
+      }
+  }
+  function plotGraph(chart,slices,colorsData,title,ticksData,jsonDatas){
+
+    function tickFormatter(format, val) {
+      for(var i=0;i<jsonDatas.length; i++){
+        if(jsonDatas[i].Value === val){
+          val= val +" "+ jsonDatas[i].unit;
+        }
+      }
+      return val;
+    }
+    $('#'+chart).height(jsonDatas.length * 40);
+    var plot2 = $.jqplot(chart, [slices], {
+        animate: !$.jqplot.use_excanvas,
+        seriesDefaults:{
+            renderer:$.jqplot.BarRenderer,
+            shadowAngle: 135,
+            rendererOptions: {
+                barDirection: 'horizontal',
+                varyBarColor: true,
+                fillToZero: true
+            },
+            pointLabels: {show: true, edgeTolerance: -15, location: 'e'}
+        },
+        seriesColors: colorsData,
+        series:[
+            {label: ['A','B']}
+        ],
+        title: title,
+        grid: {
+            background: '#fff',
+        },
+        axes: {
+            xaxis: {
+              // pad: 1.05,
+              // tickOptions: {formatString: '%d (t)'}
+              tickOptions:{formatter: tickFormatter},
+              showTicks: false,
+            },
+            yaxis: {
+                renderer: $.jqplot.CategoryAxisRenderer,
+                ticks: ticksData
+            }
+        }
+    });
+  }
+
+/* Start First Graph */
+    var dataSlices = [];
+    var ticks = [];
+    var colors = [];
+    jsonData.sort( orderData("Value"));
+
+    // setting color values
+    for (var i = 0; i < jsonData.length; i++) {
+      for (var j = 0; j < category.length; j++) {
+        if (jsonData[i].cat == category[j].cat) {
+          colors.push(category[j].color);
+        }
+      }
+    }
+    $.each(jsonData, function (entryindex, entry) {
+        dataSlices.push(entry['Value']);
+        ticks.push(entry['Label']);
+    });
+    legendTable("legend1",category);
+    plotGraph('chart1',dataSlices,colors,'Wert der in Deutschland produzierten Rohstoffe',ticks,jsonData)
+/* end First Graph */
+
+/* Start Second Graph */
+    var dataSlices1 = [];
+    var ticks1 = [];
+    var colors1 = [];
+    jsonData1.sort( orderData("Value"));
+
+    for (var i = 0; i < jsonData1.length; i++) {
+      for (var j = 0; j < category1.length; j++) {
+        if (jsonData1[i].cat == category1[j].cat) {
+          colors1.push(category1[j].color);
+        }
+      }
+    }
+    $.each(jsonData1, function (entryindex, entry) {
+        dataSlices1.push(entry['Value']);
+        ticks1.push(entry['Label']);
+    });
+    legendTable("legend2",category1);
+    plotGraph('chart2',dataSlices1,colors1,'Rohstoffproduktion',ticks1,jsonData1)
+});
+/* end Second Graph */
+
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>

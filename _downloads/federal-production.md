@@ -1,18 +1,16 @@
 ---
 title: Federal Production | Documentation
-title_display: Federal Production by Location
+title_display: Data and documentation
 layout: content
 permalink: /downloads/federal-production/
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
 ---
 
 
-> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production.
+<!-- > This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production. -->
 
+>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
+<!-- <p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
   <ul class="downloads-download_links">
     <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
     <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
@@ -76,5 +74,4 @@ Offshore regions are broken out into planning areas. For more information on off
 * Other Coal Products include: Leonardite and Coal Waste (Sub-Econ)
 * Gold Products (tons) includes: Gold Ore
 * Other Potassium Products include: Manure Salts and Sylvite-Raw Ore
-* Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore
-
+* Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore -->

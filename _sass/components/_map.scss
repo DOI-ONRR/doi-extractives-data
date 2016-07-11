@@ -8,6 +8,11 @@
   padding-top: $base-padding-large;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .map-left {
 
   @include span-columns(12);

@@ -202,38 +202,32 @@ Mineral leasing revenues are one of the U.S. Government’s greatest sources of 
 
 ## Data publication
 
-Payments (non-tax and tax) from companies to the Government are closely monitored in the U.S. However, not all the data is made available to the public.
-
-The various forms of payments each require different levels of publicity and transparency
-
-Outside of the [USEITI process](https://useiti.doi.gov/explore/reconciliation/), public companies are required to publish certain data — namely in SEC filings. New U.S. legislation found in the Dodd-Frank Act will require extractives companies to publicize revenue payments data, although these rules have not yet been finalized. Some companies do voluntarily publish data in order to promote transparency in the sector. 
-
-Different regulations compel the U.S. government to publicize information. However, the U.S. government is limited in the amount of data it can disclose by law. As a result, the Government publishes mostly aggregate figures—thus allowing it to publicize receipt of payments without publishing privileged or competitive information. 
-
 ### Government payment reporting
 
-The U.S. Government publishes aggregate information in as much detail as allowable by law. 
+Laws and regulations compel the federal government to publish some information about federal revenue, but they also constrain what data can be disclosed. As a result, most figures the federal government publishes are aggregate figures: they show that payments were received without publishing privileged or competitive information. 
 
-[IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
+Federal agencies that report on payments received from U.S. extractive industries include:
 
-Federal agencies that report on payments received from U.S. extractive industries include: [[IRS](https://www.irs.gov/publications/), [Treasury](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm), [BLM](http://www.blm.gov/wo/st/en/info/blm-library/publications/blm_publications.html), [OSMRE](http://www.osmre.gov/resources/InformationFor.shtm), [ONRR](http://statistics.onrr.gov/)]
+* [IRS](https://www.irs.gov/publications/)
+* [Treasury](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm)
+* [BLM](http://www.blm.gov/wo/st/en/info/blm-library/publications/blm_publications.html)
+* [OSMRE](http://www.osmre.gov/resources/InformationFor.shtm)
+* [ONRR](http://statistics.onrr.gov/)
 
-**Applicable laws and regulations** 
+The U.S. government is subject to numerous laws governing data publication: 
 
-The U.S. Government is subject to numerous laws governing data publication, including: 
-
-* [Federal Financial Management Improvement Act of 1996](https://www.whitehouse.gov/omb/financial_ffs_ffmia) – Ensures federal financial managements systems provide accurate, reliable, and timely information to Government managers
-* Government Management Reform Act of 1994 – Requires the audited agency financial statements that cover all accounts and activities of Government agencies
-* [26 U.S. Code § 6103](https://www.law.cornell.edu/uscode/text/26/6103) – Requires confidentiality of tax returns and return information
-* [18 U.S. Code § 1905](https://www.law.cornell.edu/uscode/text/18/1905) – Punishes disclosure of proprietary information by a Government employee
-* [Indian Trusts Act of 1882 (pdf)](http://www.bu.edu/bucflp/files/2012/01/Indian-Trusts-Act-No.-2.pdf) – Establishes rules for private and public trusts
-* Privacy Act of 1974– Precludes the IRS from gathering information that is not used for tax administration purposes.  
+* The [Federal Financial Management Improvement Act of 1996](https://www.whitehouse.gov/omb/financial_ffs_ffmia) ensures federal financial managements systems provide accurate, reliable, and timely information to government managers.
+* The _Government Management Reform Act of 1994_ requires the audited agency financial statements that cover all accounts and activities of government agencies.
+* [26 U.S. Code § 6103](https://www.law.cornell.edu/uscode/text/26/6103) requires confidentiality of tax returns and return information.
+* [18 U.S. Code § 1905](https://www.law.cornell.edu/uscode/text/18/1905) punishes disclosure of proprietary information by a government employee.
+* The [Indian Trusts Act of 1882 (PDF)](http://www.bu.edu/bucflp/files/2012/01/Indian-Trusts-Act-No.-2.pdf) establishes rules for private and public trusts.
+* The _Privacy Act of 1974_ precludes the IRS from gathering information that is not used for tax administration purposes.
 
 ### Company payment reporting
 
-U.S. companies’ reporting requirements are different for public and non-public companies; some companies publish more data than legally required on a voluntary basis.
+Reporting requirements are different for publicly traded and privately held companies in the U.S.
 
-**Public companies** are required to file financial reports with the SEC. [[SEC logo](https://www.sec.gov/edgar/searchedgar/companysearch.html)]
+**Public companies** are required to file financial reports with the [Securities and Exchange Commission](https://www.sec.gov/edgar/searchedgar/companysearch.html).
 
 * Annual Disclosure:
   * Form 10-K 
@@ -242,39 +236,41 @@ U.S. companies’ reporting requirements are different for public and non-public
 * Quarterly Disclosure
   * Form 10-Q
 
-**Non-public companies** typically use GAAP or GAAS to generate financial reports, but are not required to publicly disclose the financial or operational data.
+**Privately held companies** typically use GAAP or GAAS to generate financial reports, but are not required to publicly disclose the financial or operational data.
 
-_New legislation—Section 1504 of the [Dodd Frank Act (pdf)](https://www.sec.gov/rules/proposed/2015/34-76620.pdf) — will require U.S. extractive industry companies to publish additional payment data. [Click here to learn more](https://www.sec.gov/news/pressrelease/2015-277.html)_
+New legislation (Section 1504 of the Dodd-Frank Act ([PDF](https://www.sec.gov/rules/proposed/2015/34-76620.pdf)) will also require extractives companies to publicize revenue payment data, although these rules are not yet finalized. Learn more about the [new rules for companies in the extractive industries](https://www.sec.gov/news/pressrelease/2015-277.html).
 
-## Office of Natural Resources Revenue (ONRR)
+Some companies voluntarily publish data in order to promote transparency — for instance, by participating in the [USEITI reconciliation process](https://useiti.doi.gov/explore/reconciliation/).
 
-The Department of the Interior is involved in managing mineral leases in the U.S., led by ONRR
 
-The Federal Oil an Gas Royalty Management Act of 1982 (FOGRMA) requires monthly distribution and disbursement of payments to the Government for mineral leasing revenues and authorizes penalties for violations. The distribution and disbursement functions within ONRR ensure proper distribution of payments. 
+## Understanding how ONRR manages revenue
 
-ONRR’s mission is to collect, disburse, and verify Federal and Indian energy and other natural resource revenues on behalf of all Americans.  Each month, ONRR receives and processes 49,000 royalty and production reports. To ensure that ONRR collects the proper revenues, it performs automated processes coordinating payments and reporting with industry and the U.S. Government, and may perform further controls such as audits to ensure proper payments.
+ONRR is responsible for collecting the right amounts of revenue for natural resource extraction on federal and tribal land and for ensuring that money goes to the appropriate funds (including the U.S. Treasury, other federal agencies, 37 states, and 34 American Indian Tribes).
 
-### Government revenue disbursement
+Each month, ONRR receives and processes 49,000 royalty and production reports. Automated processes help ensure that these reports are handled consistently and that ONRR has collected the correct amounts.
 
-For more information on Federal disbursement of extractive industries revenue, and to see historical disbursement data, click here.
+ONRR coordinates reporting and payment matters with companies, state governments, American Indian tribes, and other federal agencies.
 
-[IMAGE: three icons (mountain, diamond, and oil rig) with arrows labeled "Company 1-3" going to an image of the capitol building and an [ONRR](http://onrr.gov/compliance/default.htm) logo, with another arrow labeled "Total Payments" leading to an image of a book in an area labeled "Publication"]
+Additional controls, such as audits, help ensure that normal processes are working properly.
 
-### [Verification of payments (see pages 159-160)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf)
+<!-- distribution from who to who? -->
+The Federal Oil and Gas Royalty Management Act of 1982 requires monthly distribution and disbursement of payments to the Government for mineral leasing revenues and authorizes penalties for violations. The distribution and disbursement functions within ONRR ensure proper distribution of payments. 
 
-To ensure ONRR collects the proper revenues on Federal lands, ONRR performs automated processing of royalty and production reports, coordinating reporting and payment matters with industry, State Governments, American Indian Tribes, and other Federal agencies. 
 
-**Time from payment receipt**
+ 
 
-* Company Submits 2014s/ OGORs Companies submit 2014s/ OGORs to ONRR.
-* 1 month: [Up-Front System Edits (pdf; page 160)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) are the first layer of screening that ONRR uses to verify royalty and production reports. They include: transportation/ processing limits, multiple royalty rates, pricing edits, and reviewing agreement numbers.
-* 6-9 months: [Data Mining (pdf; page 159)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) efforts increase the accuracy of company-reported data before data is subjected to compliance reviews and audits. Missing reports, adjustment monitoring, adjustments to completed cases, net negative, and production comparisons are key components of data mining efforts to ensure company payments are accurate and verifiable. 
-* 2-3 years: [Compliance Reviews (pdf; page 163)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) are the first layer of screening that ONRR uses to verify royalty and production reports. They include: transportation/ processing limits, multiple royalty rates, pricing edits, and reviewing agreement numbers.
-* 7 years: [Audits (pdf; page 163)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf) have a high standard of verification in the form of evidence from company source document and records–resulting in greater certainty of accurate payment and reporting. Audits are performed in accordance with GAGAS.
+After a company submits an Oil and Gas Operations Report to ONRR, that report goes through a number of controls to ensure its accuracy:
+
+ALL from [Verification of payments (see pages 159-160)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf)
+
+1. Automated upfront system edits take place within a month of receiving the report. These screen for issues with transportation and processing limits, multiple royalty rates, pricing edits, and agreement numbers.
+2. Data mining, which may occur 3-6 months after receiving the report, helps ONRR identify missing reports, volume comparisons, high level analyses of sales volumes, royalty values, and adjustments.
+3. Compliance reviews, which tend to happen 2-3 years after a report is submitted, focus on variations from expected norms. They provide assurance that royalties are being reported and paid correctly, and can result in resolution of open issues when companies provide additional documentation or make payments to address variances.
+4. Audits, which can take place up to 7 years or more after reports are filed, examine both specific companies/properties and randomly-selected targets. Performed in accordance with generally accepted government auditing standards, audits help ensure more accurate payment and reporting.
 
 #### Internal controls
 
-ONRR’s own processes are subject to standards and verification from 3rd parties
+ONRR’s own processes are also subject to standards and verification from 3rd parties.
 
 1. [KPMG/third party audits (pdf)](https://www.doioig.gov/sites/doioig.gov/files/2015FIN046Public.pdf) – In addition to annual Office of the Inspector General audits, third parties (external) audit ONRR’s financial functions annually. 
 2. [GAGAS (pdf)](http://www.gao.gov/assets/590/587281.pdf) – Framework used for conducting high quality audits with competence, integrity, objectivity, and independence. Audits have a high standard of verification in the form of evidence for company source documents and records – resulting in greater accuracy of payment and reporting.

@@ -8,12 +8,16 @@ eiti-map {
   }
 
   path {
-    vector-effect: non-scaling-stroke;
+    // vector-effect: non-scaling-stroke;
   }
 
   path {
     fill: transparent;
     stroke: $neutral-gray;
+  }
+
+  path, path.mesh {
+    stroke-width: .1;
   }
 
   &.clickable path.feature {
@@ -26,19 +30,18 @@ eiti-map {
 
   a:hover path.feature {
     stroke: $neutral-gray;
-    stroke-width: 2;
+    stroke-width: .2;
   }
 
   path.mesh {
     fill: none;
     pointer-events: none;
     stroke: lighten($neutral-gray, 10%); // #aaa
-    stroke-width: 1;
   }
 
   path.feature.zoomed {
     stroke: $neutral-gray;
-    stroke-width: 3;
+    stroke-width: .3;
     fill: rgb(67, 162, 202) !important;
   }
 

@@ -290,16 +290,16 @@ nav {
 }
 
 .flag-container {
-  height: 50px;
   position: relative;
   float: right;
   top: -95px;
 
-  li {
-    display: inline;
+  ul {
+    margin-bottom: 0;
 
-    ul {
-      list-style-type: none;
+    list-style-type: none;
+    li {
+      display: inline;
     }
   }
 }

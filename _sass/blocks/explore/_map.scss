@@ -31,6 +31,7 @@ eiti-slider {
   }
 
   &.legend-invalid {
+    display: none;
     .step .label {
       visibility: hidden;
     }

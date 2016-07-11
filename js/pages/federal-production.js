@@ -89,7 +89,7 @@
 
   function parseHash() {
     if (!location.hash) {
-      return {};
+      return {region: '', product: 'select'};
     }
     var hash = location.hash.substr(1);
     return eiti.url.qs.parse(hash);
@@ -325,12 +325,12 @@
         selection
           .call(updateSubregions, features, scale);
 
-        var hrefFunc = product ?
+        var hrefFunc = product && product !== 'select' ?
           function() { return null; } :
           function(d) { return '#' + d.id; };
 
         map.selectAll('a').attr('href', hrefFunc);
-        map.selectAll('a').classed('disabled', !!product);
+        map.selectAll('a').classed('disabled', !!product && product !== 'select');
 
         // console.timeEnd('render regions');
       });

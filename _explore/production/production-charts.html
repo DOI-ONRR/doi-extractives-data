@@ -7,27 +7,12 @@ permalink: /explore/production-charts/
 <section id="federal-production" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
-      <h1>Rohstoffgewinnung in Deutschland</h1>
-      <p>Der Gesamtwert der in Deutschland produzierten Rohstoffe beträgt ca. 13,5 Mrd. Euro (Jahr 2014, Quelle BGR). Informationen aus der Berichterstattung im Rahmen der D-EITI werden voraussichtlich ab 2017 verfügbar sein.</p>
-      <p>Aktuelle Daten aller Produktionsbetriebe des Bergbaus in Deutschland und eine Beschreibung der Lage des deutschen Bergbaus im Zusammenhang mit der gesamtwirtschaftlichen Entwicklung bietet das Bundesministerium für Wirtschaft und Energie (BMWi) in Zusammenarbeit mit den Bergbehörden der Bundesländer im 66. Jahresbericht 2015 in der Reihe
-        <a class="links" href="http://www.bmwi.de/DE/Mediathek/publikationen,did=747128.html">
-          „Der Bergbau in der Bundesrepublik Deutschland – Bergwirtschaft und Statistik„.
-        </a>
-      </p>
-      <p>Ausführliche Fachinformationen und Karten zu den Bodenschätzen in Deutschland sind bei den
-        <a class="links" href="http://www.infogeo.de/home/index_html">
-        Staatlichen Geologischen Diensten Deutschlands
-        </a>
-        verfügbar.
-      </p>
-      <p>Die Bundesanstalt für Geowissenschaften und Rohstoffe (BGR) legt seit 1980 in jährlicher Folge den Bericht zur „
-        <a class="links" href="http://www.bgr.bund.de/DE/Themen/Min_rohstoffe/Produkte/produkte_node.html#rohstoffsituation">
-          Rohstoffsituation in Deutschland“
-        </a>
-        vor.
-      </p>
+      <h1>Rohstoffproduktion in Deutschland</h1>
+      <p>Hier können Sie den Wert und die Menge der gesamten Rohstoffproduktion in Deutschland einsehen.</p>
+      <p>Über den Filter können Sie sich einen Einblick in die zeitliche Entwicklung der Rohstoffförderung in Deutschland verschaffen.</p>
+      <p>Weitere Informationen zu den Datenquellen sowie ein Link zu den Originaldaten sind hier einzusehen:</p>
       <a href="{{site.baseurl}}/downloads/federal-production/">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Daten Einsehen
       </a>
     </div>
   </div>
@@ -37,20 +22,20 @@ permalink: /explore/production-charts/
 
       <div class="toggle-filters-container">
         <button class="toggle-filters toggle-desktop" is="eiti-toggle"
-          aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
-          data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
-        <a class="clear-filters" href="#year=2014">(Clear filters)</a>
+          aria-controls="filters" data-collapsed-text="Filter öffnen" aria-expanded="false"
+          data-expanded-text="Filter schließen" data-toggler="filters">Filter öffnen</button>
+        <a class="clear-filters" href="#year=2014">(Filter zurücksetzen)</a>
       </div>
 
       <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h2 class="h3">Filter by year</h2>
+          <h2 class="h3">Jahr auswählen</h2>
         </div>
 
         <div class="container-left-6">
           <div id="product-filter" class="filter">
-            <label for="product-selector">Year</label>
+            <label for="product-selector">Jahr</label>
             <select id="product-selector" name="product">
               <option value="">2014</option>
             </select>
@@ -58,14 +43,13 @@ permalink: /explore/production-charts/
         </div>
       </form>
 
-      <h1 data-filter-description="" class="filter-description">
+      <div data-filter-description="" class="filter-description">
         <a class="back-btn" href="#year=2014">
           <img src="/img/left-arrow.png" alt="">
         </a>
-        Production on federal lands in
-        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+        Gesamtproduktion in Deutschland
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
-      </h1>
+      </div>
 
       <div class="container">
         <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
@@ -73,13 +57,9 @@ permalink: /explore/production-charts/
 
     </div>
 
-    <div class="filter-description_wrapper">
-      <h1 data-filter-description="" class="filter-description filter-description_open">
-        <span href="#product-selector" class="filter-part" data-key="product">All</span>
-        production on federal lands in
-        <span href="#region-selector" class="filter-part" data-key="region">the entire Germany</span>
+    <div class="filter-description_wrapper" data-filter-description="" class="filter-description filter-description_open">
+        Gesamtproduktion in Deutschland
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
-      </h1>
     </div>
 
     <div class="explore-exploration slab-alpha">

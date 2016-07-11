@@ -8,6 +8,10 @@
   padding-top: $base-padding-large;
 }
 
+eiti-map.empty path {
+  fill: #aecad8 !important;
+}
+
 a.disabled {
   pointer-events: none;
   cursor: default;

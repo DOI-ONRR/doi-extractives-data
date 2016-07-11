@@ -39,14 +39,7 @@
       var prop = this.name;
       var value = this.value;
       mutateState(function(state) {
-        var newState = state.set(prop, value);
-        if (!state.get('region') && newState.get('product') !== 'select') {
-          newState = newState.set('region', COUNTRY);
-        }
-        else if (state.get('product') === 'select' && !!newState.get('region')) {
-          newState = newState.set('product', '');
-        }
-        return newState;
+        return state.set(prop, value);
       });
     });
 
@@ -99,6 +92,14 @@
     mutating = true;
     var old = state;
     state = fn(state);
+
+    if (!old.get('region') && old.get('product') !== 'select') {
+      state = state.set('region', COUNTRY);
+    }
+    else if (old.get('product') === 'select' && !!old.get('region')) {
+      state = state.set('product', '');
+    }
+
     if (!Immutable.is(old, state)) {
       if (rendered && stateChanged(old, state, 'group')) {
         console.warn('commodity group:', old.get('group'), '->', state.get('group'));
@@ -125,6 +126,8 @@
     root
       .classed('non-product', !product)
       .classed('has-product', !!product);
+
+    root.select('eiti-map').classed('empty', !productSelected && !region && region !== 'DE');
 
     root.select('#region-selector').attr('disabled', productSelected ? true : null);
     root.select('#product-selector').attr('disabled', region && region !== 'DE' ? true : null);

@@ -13,13 +13,20 @@
 
   {% include location/section-ownership.html %}
 
-  <section class="county-map-table">
+  <section class="county-map-table" is="year-switcher-section">
 
     <h3>Natural resources extracted on federal land</h3>
 
     {% if federal_products_num == 0 %}
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
     {% endif %}
+
+    <select class="chart-selector selector-all-production">
+      {% for _year in year_list %}
+        {% assign __year = year | to_i %}
+        <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
+      {% endfor %}
+    </select>
 
     <div class="chart-list">
 

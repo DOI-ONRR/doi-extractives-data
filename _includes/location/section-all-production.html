@@ -6,11 +6,11 @@
 
 {% assign year_list = year_range | to_list %}
 
-<section id="all-production" class="all-lands production">
+<section id="all-production" is="year-switcher-section" class="all-lands production">
 
   <h2>Natural resource production in {{ state_name }}</h2>
 
-  <div class="chart-selector-wrapper">
+  <div class="chart-selector-wrapper" aria-controls="all-production">
 
     <select class="chart-selector selector-all-production">
       {% for _year in year_list %}

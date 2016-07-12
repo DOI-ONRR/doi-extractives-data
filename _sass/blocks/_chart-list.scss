@@ -9,7 +9,6 @@
   -ms-justify-content: space-between;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding-top: $base-padding-jumbo;
 
   .chart-list_caption {
     @include heading(para-sm);
@@ -92,6 +91,7 @@
 
 .chart-selector-wrapper {
   display: inline-block;
+  margin-bottom: $base-padding-jumbo;
 
   .chart-selector {
     @include span-columns(2);

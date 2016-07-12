@@ -36,7 +36,17 @@
         {% assign value = county[1] | get: keys %}
         {% if value != nil %}
         <g class="county feature"
-          data-value='{{ value | default: 0 | jsonify }}'>
+          data-value='{{ value | default: 0 | jsonify }}'
+          {% if include.years %}
+            {% assign year_values = county[1] | get: include.years %}
+            {% if include.years_property %}
+              data-year-values='{ {% for year_value in year_values %}
+              "{{ year_value[0] }}": {{ year_value[1] | get: include.years_property | jsonify }}{% unless forloop.last %},{% endunless %}
+              {% endfor %} }'
+            {% else %}
+              data-year-values='{{ year_values | jsonify }}'
+            {% endif %}
+          {% endif %} >
           <title>{{ county[1].name }}</title>
           <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
         </g>

@@ -6,11 +6,20 @@
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
-<section id="employment" class="economic employment">
+{% assign year_list = year_range | to_list %}
+
+<section id="employment" is="year-switcher-section" class="economic employment">
 
   <h3>Employment</h3>
 
   <div class="chart-list">
+
+    <select class="chart-selector selector-all-production">
+      {% for _year in year_list %}
+        {% assign __year = year | to_i %}
+        <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
+      {% endfor %}
+    </select>
 
     <div class="chart-list-intro">
       <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
@@ -79,6 +88,8 @@
               state=state_id
               counties=county_jobs
               value=value_key
+              years="employment"
+              years_property="count"
               steps=steps
               inherit_width=true
               caption=caption

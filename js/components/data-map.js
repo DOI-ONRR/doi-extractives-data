@@ -10,6 +10,26 @@
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
+          this.marks
+            .datum(function() {
+              return +this.getAttribute('data-value') || 0;
+            });
+
+          this.update();
+        }},
+
+        marks: {
+          get: function() {
+            return d3.select(this)
+              .selectAll('svg [data-value]');
+          }
+        },
+
+        setYear: {value: function(year) {
+          this.marks.datum(function() {
+            var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+            return data[year] || 0;
+          });
           this.update();
         }},
 
@@ -27,11 +47,7 @@
             );
           }
 
-          var marks = d3.select(this)
-            .selectAll('svg [data-value]')
-            .datum(function() {
-              return +this.getAttribute('data-value') || 0;
-            });
+          var marks = this.marks;
 
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))

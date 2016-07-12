@@ -220,7 +220,8 @@
       output.select('.eiti-bar-chart-x-value')
         .text(value.x);
       var y = output.select('.eiti-bar-chart-y-value');
-
+      console.log(output, y.attr('data-format'))
+      console.log('-------------')
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
       y.text(formatUnits(format(value.y),units));

@@ -879,14 +879,14 @@
       commodity = state.get('commodity')
         || (state.get('group')
          ? eiti.commodities.groups[state.get('group')].name
-         : 'All');
+         : 'Alle Rohstoffe');
     }
 
     var product = state.get('product');
     if (product && product !== 'select') {
       product = product.replace(/\s*\(.+\)\s*$/, '');
     } else {
-      product = 'All';
+      product = 'Alle Rohstoffe';
     }
 
     var data = {
@@ -918,7 +918,7 @@
 
     select.select('option:nth-child(2)')
       .text(products.length > 1
-            ? 'All ' + products.length + ' products'
+            ? 'Alle ' + products.length + ' Rohstoffe'
             : products.length + eiti.format.pluralize(products.length, ' product'));
 
     var options = select.selectAll('option.product')

@@ -1,12 +1,20 @@
 ---
 title: Federal Production | Documentation
-title_display: Data and Documentation Federal Production
+title_display: Daten Einsehen Federal Production
 layout: content
 permalink: /downloads/federal-production/
 ---
 
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums „
+Der Bergbau in der Bundesrepublik Deutschland
+</p>
+
+<p class="downloads-download_links-intro">
+  Download der Produktionsdaten
+  <ul class="downloads-download_links">
+    <li><a href="{{site.baseurl}}/downloads/Datenbeispiel_Kohlenwasserstoffe_d-eiti.xlsx"><icon class="icon-cloud icon-padded"></icon>Siehe Anhang (xlsx, 10 KB)</a></li>
+  </ul>
 </p>
 
 <!-- <p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:

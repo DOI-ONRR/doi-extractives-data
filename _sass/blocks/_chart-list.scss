@@ -99,13 +99,18 @@
     background-color: $mid-gray;
     border: 0;
     font-weight: $weight-book;
-
+    margin-right: $standard-padding;
+    margin-top: $standard-padding-lite;
   }
 
-  p {
-    @include span-columns(10);
+  .chart-description {
+    float: left;
+    width: 75%;
+    padding-left: 1.25rem;
+    border-left: 1px solid #ebebeb;
   }
 }
+
 
 
 .row-container {

@@ -46,6 +46,10 @@
   padding-bottom: $base-padding-large;
   padding-right: $base-padding-large;
   padding-top: $base-padding-large;
+
+  img {
+    width: 100%;
+  }
 }
 
 .hero-right {

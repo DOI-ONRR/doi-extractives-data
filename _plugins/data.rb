@@ -64,6 +64,25 @@ module EITI
         (str.include? term) ? true : nil
       end
     end
+
+    def to_list(domain)
+      def create_list(domain)
+        arr = []
+        $i = domain[0]
+        $num = domain[1]
+        for i in $i..$num
+          arr.push(i)
+        end
+        arr
+      end
+
+      if domain.is_a? Array
+        create_list(domain)
+      elsif domain.is_a? String
+        domain = JSON.parse(domain)
+        create_list(domain)
+      end
+    end
   end
 end
 

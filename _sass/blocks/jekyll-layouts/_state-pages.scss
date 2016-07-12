@@ -13,7 +13,8 @@
 
   h3:not(.chart-title) {
     border-bottom: 2px solid $light-green;
-    padding-bottom: $standard-padding;
+    margin-bottom: $standard-padding;
+    padding-bottom: $standard-padding-lite;
   }
 
   h4 {

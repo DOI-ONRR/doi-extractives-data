@@ -21,6 +21,7 @@
     @include heading(para-lg);
 
     border-bottom: 1px solid $mid-gray;
+    flex: 1 0 auto;
     font-size: inherit;
     font-weight: $weight-book;
     letter-spacing: 1px;
@@ -88,6 +89,24 @@
     }
   }
 }
+
+.chart-selector-wrapper {
+  display: inline-block;
+
+  .chart-selector {
+    @include span-columns(2);
+
+    background-color: $mid-gray;
+    border: 0;
+    font-weight: $weight-book;
+
+  }
+
+  p {
+    @include span-columns(10);
+  }
+}
+
 
 .row-container {
   @include outer-container();

@@ -2,11 +2,22 @@
 
 {% assign units_map = site.data.production_units %}
 
+{% capture year_range %}[2004, 2013]{% endcapture %}
+
+{% assign year_list = year_range | to_list %}
+
 <section id="all-production" class="all-lands production">
 
   <h2>Natural resource production in {{ state_name }}</h2>
 
-  <p>The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
+  <div class="chart-selector-wrapper">
+    <select class="chart-selector selector-all-production">
+      {% for _year in year_list %}
+        <option value="{{ _year }}" {% if year == _year %}selected{% endif %}>{{ _year }}</option>
+      {% endfor %}
+    </select>
+    <p>The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
+  </div>
 
   <div class="chart-list">
 

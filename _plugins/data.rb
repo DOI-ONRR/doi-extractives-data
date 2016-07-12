@@ -24,6 +24,11 @@ module EITI
       data
     end
 
+    # "unwrap" values in a 2-level hash
+    def map_hash(data, key)
+      data.to_h().map { |_key, value| [_key, value[key]] }.to_h
+    end
+
     # pad the provided string with the provided padding character (or a
     # space, by default) if its length is less than a given length
     def pad_left(str, len, pad = " ")

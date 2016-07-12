@@ -1,3 +1,1 @@
-{ {% for entry in include.values %}
-  "{{ entry[0] }}": {{ entry[1] | get: include.key | default: 0 | jsonify }}{% unless forloop.last %},{% endunless %}
-{% endfor %} }
+{{ include.values | map_hash: include.key | jsonify }}

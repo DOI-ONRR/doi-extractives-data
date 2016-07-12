@@ -17,7 +17,7 @@
 <!--   <aside class="container-half county-map-table">
 
     <figure>
-      <data-map color-scheme="Blues" steps="9">
+      <eiti-data-map color-scheme="Blues" steps="9">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {%
@@ -26,7 +26,7 @@
           counties=county_revenue
           value=value_key
         %}
-      </data-map>
+      </eiti-data-map>
       <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
     </figure>
   </aside> -->

@@ -5,7 +5,7 @@
   var eiti = require('./../eiti');
   var format = eiti.format;
 
-  exports.EITIDataMap = document.registerElement('data-map', {
+  exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
@@ -80,7 +80,7 @@
               .range(steps);
 
             var values = [];
-            data.forEach(function(d){
+            data.forEach(function(d) {
               values.push(getSteps(d));
             });
 
@@ -93,7 +93,7 @@
           svgLegend.append('g')
             .attr('class', 'legendScale');
 
-          var legendSettings = d3.legend.color()
+          var legend = d3.legend.color()
             .labelFormat(format.si)
             .useClass(false)
             .ascending(true)
@@ -102,10 +102,10 @@
             .scale(scale);
 
           svgLegend.select('.legendScale')
-            .call(legendSettings);
+            .call(legend);
 
           // reverse because the scale is in ascending order
-          var _steps = d3.range(0,9).reverse();
+          var _steps = d3.range(0, 9).reverse();
 
           // find which steps are represented in the map
           var uniqueSteps = getUnique(marks.data(), _steps, domain);
@@ -115,8 +115,8 @@
           var cellHeight = legendSettings.shapeHeight() +
             legendSettings.shapePadding();
           var count = 0;
-          cells.each(function(cell, i){
-            var present = uniqueSteps.indexOf(i) > -1;
+          cells.each(function(cell, i) {
+            var present = true; // uniqueSteps.indexOf(i) > -1;
 
             if (!present) {
               // hide cells swatches that aren't in the map

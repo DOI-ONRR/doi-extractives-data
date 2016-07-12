@@ -79,7 +79,7 @@
 
       <div class="map-container">
         <figure class="container">
-          <data-map color-scheme="Reds" steps="{{ steps }}">
+          <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
             {% capture value_key %}employment.{{ year }}.count{% endcapture %}
             {% capture caption %}County extractives employment (jobs, {{ year }}){% endcapture %}
 
@@ -95,7 +95,7 @@
               caption=caption
               toggle=toggle
             %}
-          </data-map>
+          </eiti-data-map>
         </figure>
       </div><!-- /.map-container -->
 

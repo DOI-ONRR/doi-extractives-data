@@ -97,7 +97,7 @@
                 {% assign _width ='inherit' %}
                 {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
 
-                <data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+                <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
                   {% assign federal_county_production = site.data.federal_county_production[state_id] %}
 
                   {%
@@ -111,7 +111,7 @@
                     caption=caption
                     toggle=toggle
                   %}
-                </data-map>
+                </eiti-data-map>
 
               </figure>
 

@@ -6,14 +6,14 @@ layout: default
   <div class="container-outer">
     <h2>US Map</h2>
     <figure>
-      <data-map color-scheme="Greens" steps="9">
+      <eiti-data-map color-scheme="Greens" steps="9">
         {%
           include state-map.html
           states=site.data.state_jobs
           href='#%'
           value='2013.count'
         %}
-      </data-map>
+      </eiti-data-map>
       <figcaption>State employment (number of extractives jobs)</figcaption>
     </figure>
   </div>
@@ -44,7 +44,7 @@ layout: default
           <td rowspan="{{ counties | size | plus: 1 }}">{{ state.name }}</td>
           <td rowspan="{{ counties | size | plus: 1 }}">
             <figure>
-              <data-map color-scheme="Greens" steps="7">
+              <eiti-data-map color-scheme="Greens" steps="7">
                 {%
                   include county-map.html
                   state=state_id
@@ -52,12 +52,12 @@ layout: default
                   value='employment.2013.count'
                   href='#county-%'
                 %}
-              </data-map>
+              </eiti-data-map>
               <figcaption>County extractives employment (number of jobs)</figcaption>
             </figure>
 
             <figure>
-              <data-map color-scheme="Reds" steps="7" domain="[0, 100]">
+              <eiti-data-map color-scheme="Reds" steps="7" domain="[0, 100]">
                 {%
                   include county-map.html
                   state=state_id
@@ -65,7 +65,7 @@ layout: default
                   value='employment.2013.percent'
                   href='#county-%'
                 %}
-              </data-map>
+              </eiti-data-map>
               <figcaption>County employment (percentage of extractives jobs)</figcaption>
             </figure>
           </td>
@@ -100,5 +100,5 @@ layout: default
 </section><!-- /.container-padded -->
 
 <script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
-<script src="{{ site.baseurl }}/js/components/data-map.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-data-map.js"></script>
 <script src="{{ site.baseurl }}/js/components/map-thumbnail.js"></script>

@@ -3,7 +3,7 @@
 
   require('./../components/aria-toggle.js');
   require('./../components/bar-chart-table.js');
-  require('./../components/data-map.js');
+  require('./../components/eiti-data-map.js');
   require('./../components/eiti-bar-chart.js');
   require('./../components/year-switcher-section.js');
 

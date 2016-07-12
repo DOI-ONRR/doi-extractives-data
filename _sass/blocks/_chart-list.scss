@@ -2,6 +2,13 @@
   @include font-size(0.8);
   @include outer-container();
 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   padding-top: $base-padding-jumbo;
 
   .chart-list_caption {
@@ -17,7 +24,9 @@
     font-size: inherit;
     font-weight: $weight-book;
     letter-spacing: 1px;
+    line-height: $standard-padding;
     margin-bottom: $base-padding;
+    padding-bottom: $base-padding-lite;
     text-transform: uppercase;
   }
 
@@ -28,7 +37,12 @@
   .chart-item {
     @include span-columns(4);
 
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $base-padding;
     margin-top: 0;
     padding-top: 0;
 

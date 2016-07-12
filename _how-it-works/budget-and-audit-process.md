@@ -73,32 +73,17 @@ When companies extract natural resources on federal lands and offshore areas, th
 
 Several different agencies collect non-tax payments depending on the type of payment, the location of exploration and production, and the type of resource being extracted. These include: Department of the Interior’s Office of Natural Resources Revenue ([ONRR](http://www.onrr.gov/Laws_R_D/default.htm)), the [Bureau of Land Management](http://www.blm.gov/wo/st/en/info/About_BLM.html) ([BLM](http://www.blm.gov/wo/st/en/info/regulations.html)), and the [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/programs.shtm) ([OSMRE](http://www.osmre.gov/lrg.shtm)).
 
-The types of payments — and the laws and regulations governing them — depend on the location and type of resource. Learn more about which laws, agencies, and payments apply for each natural resource:
-
-<!-- This list repeats a fair bit of info from the diving graphic intros, in order to include BOTH links to those pages (which list the appropriate payment types for each resource) and the names of the laws (which were in the PPT) — full list in "glossary" -->
-
-- [Offshore oil and gas revenues]({{site.baseurl}}/how-it-works/offshore-oil-gas/) are governed by the Outer Continental Shelf Lands Act of 1953.
-- [Onshore oil and gas revenues]({{site.baseurl}}/how-it-works/onshore-oil-gas/) are governed by the Federal Oil & Gas Royalty Management Act of 1982.
-- [Coal revenues]({{site.baseurl}}/how-it-works/coal/) are governed by the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947 (as amended).
-- [Mining of nonenergy minerals]({{site.baseurl}}/how-it-works/minerals/) — like gold, silver, and copper — is governed by the General Mining Act of 1872, the Mineral Leasing Act for Acquired Lands of 1947, and the Federal Land Policy and Management Act of 1976.
-<!-- Do we want to include onshore and offshore renewables? -->
-
-Click here for an extended list of applicable laws & regulations
+The types of payments — and the laws and regulations governing them — depend on the location and type of resource. Learn more about [laws that govern revenue from natural resource extraction on federal lands](http://onrr.gov/Laws_R_D/PubLaws/default.htm).
 
 ### Corporate income tax payments
 
-<!-- Revisit "focuses on" — this could be misleading, since EITI actually focuses on non-tax revenues -->
-There are many kinds of tax revenue (for instance, property taxes, severance taxes, and county production taxes), but the USEITI process focuses on [corporate income tax]({{site.baseurl}}/explore/corporate-income-tax/).
+Corporations pay federal [corporate income taxes]({{site.baseurl}}/explore/corporate-income-tax/) if they have a tax liability — regardless of whether they are operating on federal, state, or private land (inside or outside of the United States). Corporate income tax is governed by the Internal Revenue Code of 1986, which requires both publicly traded and privately held companies to pay corporate income tax.
 
-The [Internal Revenue Service](https://www.irs.gov/uac/about-irs) (IRS) is responsible for collecting federal corporate income taxes. Corporations pay federal corporate income taxes if they have a tax liability — regardless of whether they are operating on federal, state, or private land (inside or outside of the United States).
-
-Corporate income tax is governed by the Internal Revenue Code of 1986, which requires both publicly traded and privately held companies to pay corporate income tax.
-
-Click here for an extended list of applicable laws & regulations
+The [Internal Revenue Service](https://www.irs.gov/uac/about-irs) (IRS) is responsible for collecting federal corporate income taxes. 
 
 ------
 
-## Data validation
+## Data oversight and validation
 
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data.
 
@@ -106,34 +91,23 @@ Controls and standards (like accounting principles) help companies report correc
 
 Once submitted, reports are verified before the government publishes payment data. Finally, independent audits of financial statements, transactions, and systems help ensure compliance with internal and external standards.
 
-<!-- Don't love "can be trusted" — work on this phrase -->
-Professional associations and government agencies set standards establishing consistent processes and outcomes, so audit results can be trusted — even when detailed results aren't publicly available.
-
-
 ### Company standards and systems
 
-**Publicly traded** companies in the U.S. follow the generally accepted accounting principles developed by the [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350). The [Public Company Accounting Oversight Board](https://pcaobus.org/Pages/default.aspx) and [Security and Exchange Commission](https://www.sec.gov/) also provide oversight.
+Standard-setting bodies shape audit requirements for companies and government agencies.
 
-**Privately held** companies in the U.S. follow the [generally accepted auditing standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf) developed by the [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx).
+* **Publicly traded** companies in the U.S. follow the generally accepted accounting principles developed by the [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350). The [Public Company Accounting Oversight Board](https://pcaobus.org/Pages/default.aspx) and [Security and Exchange Commission](https://www.sec.gov/) also provide oversight.
 
-Standard-setting bodies shape audit requirements for companies and government agencies. Prior to the [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), the auditing profession was self-regulated. 
+* **Privately held** companies in the U.S. follow the [generally accepted auditing standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf) developed by the [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx).
 
-<!-- Learn more about this link -->
-* [Investment Company Act (PDF)](https://www.sec.gov/about/laws/ica40.pdf)
+Prior to the [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), the auditing profession was largely self-regulated.
 
-**Auditing**
+**Oversight of company records and systems**
 
-ONRR examines company records to verify accuracy of reporting and payments, and the IRS audits company tax returns.
-
-<!-- If inspection/enforcement is in scope for this section, we probably need to include BSEE and mining agencies
-* The Bureau of Land Management [Inspection and Enforcement Program](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/Energy_Facts_Enforcement.html) verifies production, permits, conducts onsite inspections
--->
+ONRR regularly examines company records to verify accuracy of reporting and payments, and the IRS audits company tax returns.
 
 The IRS and [SEC](https://www.sec.gov/about/whatwedo.shtml) also periodically audit companies' internal systems to ensure they comply with standards.
 
 The [Sarbanes-Oxley legislation (PDF)](https://www.sec.gov/about/laws/soa2002.pdf) enhances corporate responsibility, requires financial disclosures, and combats fraud.
-
-Click here for an extended list of data accuracy control systems
 
 ### Federal standards and systems
 
@@ -143,25 +117,23 @@ The U.S. government follows standards that require financial transparency and go
 * The role of OMB and responsibilities of each agency are governed by the [Chief Financial Officers Act of 1990](http://govinfo.library.unt.edu/npr/library/misc/cfo.html).
 * The U.S. Government Accountability Office publishes the _Standards for Internal Control in the Federal Government_, which is also known as the [Green Book](http://www.gao.gov/greenbook/overview).
 
-**Auditing**
+A number of oversight bodies help ensure the accuracy and transparency of federal revenue reporting:
 
-Federal agencies are subject to both transactional and systemic audits, which are conducted by one of these organizations:
-
-* Each federal agency has an Office of the Inspector General (OIG), which performs most transaction-level auditing for the agency, though OIGs may also conduct system audits.
-  * [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015)
+* Each federal agency has an Office of the Inspector General (OIG), which performs regular audits of the agency.
+* The Chief Financial Officers Act requires annual audits of financial statements.
 * The Government Accountability Office also audits agencies throughout the government.
-* In some situations, private firms are asked to assist in auditing agencies.
+* In some situations, third-party auditors assist in performing audits. For instance, accounting firm KPMG helped provide an [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015).
 
-Many audits are routine, but they may be triggered by events or disclosures. These audits are supported by standards, such as the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview), and [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), which establishes minimum requirements for audits of federal financial statements.
-
-Government audit results are publicly disclosed on an annual basis. 
+Many audits are routine, but they may be triggered by events or disclosures. These audits are supported by standards, such as the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview), and [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), which establishes standards for conducting high quality audits with competence, integrity, objectivity, and independence.
 
 <!-- Click here for the latest GAO Audit — no link -->
 
+The [U.S. Standard General Ledger](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/ussgl_home.htm) provides a uniform chart of accounts and technical guidance for standardizing federal agency accounting to OMB and the U.S. Treasury.
 
+Government audit results are publicly disclosed on an annual basis. 
 
 ------
-<!-- 
+
 ## 4. Revenue disbursement
 
 Revenues from natural resource extraction are disbursed to a variety of end recipients across the United States. 
@@ -197,7 +169,7 @@ Mineral leasing revenues are one of the U.S. Government’s greatest sources of 
 * Land and Water Conservation Fund: ONRR transfers nearly $900 million annually to be used by Federal, State, and local Governments to help acquire, develop, and improve outdoor recreation areas.
 * Indian Tribes and Indian Mineral Owners: $853 million collected from mineral leases on Indian lands are distributed regularly to Tribal Governments or IIMOs. These funds provide direct and tangible benefits to thousands of individuals, often as a major source of primary income. 
 * National Historic Preservation Fund: ONRR annually transfers $150 million to NHPF as seed money to preserve and protect our Nation’s irreplaceable heritage for current and future generations.
- -->
+
 
 
 ## Data publication
@@ -227,20 +199,23 @@ The U.S. government is subject to numerous laws governing data publication:
 
 Reporting requirements are different for publicly traded and privately held companies in the U.S.
 
-**Public companies** are required to file financial reports with the [Securities and Exchange Commission](https://www.sec.gov/edgar/searchedgar/companysearch.html).
+* **Public companies** are required to file financial reports with the [Securities and Exchange Commission](https://www.sec.gov/edgar/searchedgar/companysearch.html).
 
+<!-- 
+Look into whether it's useful to list these forms:
 * Annual Disclosure:
   * Form 10-K 
   * Form 20-F 
   * Form 40-F
 * Quarterly Disclosure
   * Form 10-Q
+-->
 
-**Privately held companies** typically use GAAP or GAAS to generate financial reports, but are not required to publicly disclose the financial or operational data.
-
-New legislation (Section 1504 of the Dodd-Frank Act ([PDF](https://www.sec.gov/rules/proposed/2015/34-76620.pdf)) will also require extractives companies to publicize revenue payment data, although these rules are not yet finalized. Learn more about the [new rules for companies in the extractive industries](https://www.sec.gov/news/pressrelease/2015-277.html).
+* **Privately held companies** are not required to publicly disclose their financial or operational data.
 
 Some companies voluntarily publish data in order to promote transparency — for instance, by participating in the [USEITI reconciliation process](https://useiti.doi.gov/explore/reconciliation/).
+
+New legislation (Section 1504 of the Dodd-Frank Act ([PDF](https://www.sec.gov/rules/proposed/2015/34-76620.pdf)) will also require extractive industry companies to publicize revenue payment data, although these rules are not yet finalized. Learn more about the [new rules for companies in the extractive industries](https://www.sec.gov/news/pressrelease/2015-277.html).
 
 
 ## Understanding how ONRR manages revenue
@@ -249,15 +224,13 @@ ONRR is responsible for collecting the right amounts of revenue for natural reso
 
 Each month, ONRR receives and processes 49,000 royalty and production reports. Automated processes help ensure that these reports are handled consistently and that ONRR has collected the correct amounts.
 
-ONRR coordinates reporting and payment matters with companies, state governments, American Indian tribes, and other federal agencies.
-
 Additional controls, such as audits, help ensure that normal processes are working properly.
 
 <!-- distribution from who to who? -->
 The Federal Oil and Gas Royalty Management Act of 1982 requires monthly distribution and disbursement of payments to the Government for mineral leasing revenues and authorizes penalties for violations. The distribution and disbursement functions within ONRR ensure proper distribution of payments. 
 
 
- 
+<!-- Ask Chris, Nathan, or Bob? Does this process apply to all resources, or just oil and gas? Does BLM manage any of this? -->
 
 After a company submits an Oil and Gas Operations Report to ONRR, that report goes through a number of controls to ensure its accuracy:
 
@@ -268,14 +241,7 @@ ALL from [Verification of payments (see pages 159-160)](https://www.doi.gov/site
 3. Compliance reviews, which tend to happen 2-3 years after a report is submitted, focus on variations from expected norms. They provide assurance that royalties are being reported and paid correctly, and can result in resolution of open issues when companies provide additional documentation or make payments to address variances.
 4. Audits, which can take place up to 7 years or more after reports are filed, examine both specific companies/properties and randomly-selected targets. Performed in accordance with generally accepted government auditing standards, audits help ensure more accurate payment and reporting.
 
-#### Internal controls
 
-ONRR’s own processes are also subject to standards and verification from 3rd parties.
-
-1. [KPMG/third party audits (pdf)](https://www.doioig.gov/sites/doioig.gov/files/2015FIN046Public.pdf) – In addition to annual Office of the Inspector General audits, third parties (external) audit ONRR’s financial functions annually. 
-2. [GAGAS (pdf)](http://www.gao.gov/assets/590/587281.pdf) – Framework used for conducting high quality audits with competence, integrity, objectivity, and independence. Audits have a high standard of verification in the form of evidence for company source documents and records – resulting in greater accuracy of payment and reporting.
-3. [USSGL (pdf)](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/tfm_archive/effective08_dec07/08-01R/2008/part2_ussgl_08-01.pdf) – ONRR uses USSGL accounts to prepare external reports to OMB and the U.S. Treasury to provide financial information for inclusion in its annual consolidated Interior Agency Financial Report.
-4. [CFO Act](https://www.whitehouse.gov/omb/financial_ffs_ffmia) – The CFO Act requires annual audits of Department of the Interior’s financial statements that include a thorough review of ONRR’s mineral revenue custodial accounts.
 
 #### Enforcement mechanisms
 

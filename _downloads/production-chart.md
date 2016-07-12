@@ -1,13 +1,12 @@
 ---
 title: Federal Production | Chart
-title_display: Daten Einsehen Chart
+title_display: Daten zur gesammtdeutschen Rohstoffproduktion
 layout: content
 permalink: /downloads/production-chart/
 ---
 
 <p>
-Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums „
-Der Bergbau in der Bundesrepublik Deutschland
+Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums "Der Bergbau in der Bundesrepublik Deutschland"
 </p>
 
 <p class="downloads-download_links-intro">

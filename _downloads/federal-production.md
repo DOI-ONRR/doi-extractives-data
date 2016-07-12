@@ -1,13 +1,12 @@
 ---
 title: Federal Production | Documentation
-title_display: Daten Einsehen Federal Production
+title_display: Daten zur interaktiven Rohstoffkarte
 layout: content
 permalink: /downloads/federal-production/
 ---
 
 <p>
-Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums „
-Der Bergbau in der Bundesrepublik Deutschland
+Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums "Der Bergbau in der Bundesrepublik Deutschland"
 </p>
 
 <p class="downloads-download_links-intro">

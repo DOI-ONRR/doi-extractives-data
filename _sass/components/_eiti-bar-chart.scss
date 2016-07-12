@@ -81,3 +81,7 @@ eiti-bar-chart {
     text-anchor: middle;
   }
 }
+
+.x-axis-baseline line {
+  stroke: $neutral-gray;
+}

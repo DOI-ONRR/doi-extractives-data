@@ -173,6 +173,13 @@
         return String(x).substr(2);
       });
 
+    svg.append('g')
+      .attr('class', 'x-axis-baseline')
+      .append('line')
+        .attr('x1', 0)
+        .attr('x2', width)
+        .attr('transform', 'translate(' + [0, bottom] + ')');
+
     svg.select('.x-axis')
       .attr('transform', 'translate(' + [0, bottom] + ')')
       .call(axis)
@@ -182,10 +189,10 @@
     svg.append('g')
       .attr('class', 'x-axis-label')
       .append('text')
-      .text(xAxisLabel)
-      .attr('transform', function(d) {
-        return 'translate(' + [labelOffset, xAxisBottom] + ')';
-      });
+        .text(xAxisLabel)
+        .attr('transform', function(d) {
+          return 'translate(' + [labelOffset, xAxisBottom] + ')';
+        });
   };
 
   var formatUnits = function(text, units) {
@@ -220,8 +227,6 @@
       output.select('.eiti-bar-chart-x-value')
         .text(value.x);
       var y = output.select('.eiti-bar-chart-y-value');
-      console.log(output, y.attr('data-format'))
-      console.log('-------------')
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
       y.text(formatUnits(format(value.y),units));

@@ -65,6 +65,12 @@ module EITI
       end
     end
 
+    # takes a domain and returns a list of numbers within that domain
+    # incrimented by 1
+    # e.g '[0,5]' => [0,1,2,3,4,5]
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # If the input is not a string, it returns the input value
+    # e.g 5 => 5
     def to_list(domain)
       def create_list(domain)
         arr = []
@@ -81,6 +87,8 @@ module EITI
       elsif domain.is_a? String
         domain = JSON.parse(domain)
         create_list(domain)
+      else
+        domain
       end
     end
   end

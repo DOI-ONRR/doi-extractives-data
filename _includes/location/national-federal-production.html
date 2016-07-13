@@ -1,22 +1,35 @@
-
 {% assign federal_products = site.data.national_federal_production[state_id].products %}
+{% assign year_range = '[2005, 2014]' %}
 
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
 
-<section id="federal-production" class="federal production">
+<section id="federal-production" is="year-switcher-section" class="federal production">
 
   <h3>Land ownership</h2>
 
   {% include location/national-ownership.html %}
 
-  <section class="county-map-table">
+  <section class="county-map-table" is="year-switcher-section">
 
-    <h4>Natural resources extracted on federal land</h4>
+    <h3>Natural resources extracted on federal land</h3>
 
     {% if federal_products_num == 0 %}
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
     {% endif %}
+
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        {% if federal_products_num == 0 %}
+          No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
+        {% else %}
+          Is there some kind of summary sentence that would be good here? The year selector would update all references to year in the federal production section.
+        {% endif %}
+      </p>
+    </div>
 
     <div class="chart-list">
 
@@ -31,51 +44,45 @@
       {% assign units_suffix = units_map[units].suffix | default '' %}
       {% assign units_title = units_map[units].title %}
 
-      <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
+      <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
 
         <h4 class="chart-title">
           {{ product_name }}
           {% if units_title %} ({{ units_title }}){% endif %}
         </h4>
 
-        <div class="row-container">
+        <figure class="chart">
+          <figcaption id="national-federal-production-figures-{{ product_slug }}">
+          <span class="eiti-bar-chart-y-value"
+                  data-format=",">{{ volume | default: 0 | intcomma }}</span>
+          {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+          produced on federal land in {{ state_name }} in
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
 
-          <div class="chart-container">
+          </figcaption>
+          <eiti-bar-chart
+            aria-controls="national-federal-production-figures-{{ product_slug }}"
+            data='{{ production_values | map_hash: "volume" | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}">
+          </eiti-bar-chart>
 
-            <div class="text-container">
-              <p>
-                {% if volume %}
-                  {{ volume | intcomma }} {{ long_units | term }}
-                  of {{ product_name | downcase | suffix:units_suffix }} were
-                {% else %}
-                  No {{ product_name | downcase | suffix:units_suffix }} was
-                {% endif %}
-                produced on federal land in {{ state_name }} in {{ year }}.
-              </p>
-            </div>
+        </figure>
 
-            {% if volume %}
-              <figure class="chart">
-                <eiti-bar-chart
-                  aria-controls="federal-production-figures-{{ product_slug }}"
-                  data='{{ production_values | map_hash: "volume" | jsonify }}'
-                  data-x-range="{{ year_range }}"
-                  x-value="{{ year }}">
-                </eiti-bar-chart>
-                <figcaption id="federal-production-figures-{{ product_slug }}">
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                  <span class="eiti-bar-chart-y-value"
-                        data-format=","
-                        data-units="{{ short_units }}">{{ volume | default: 0 | intcomma }}</span>
-                </figcaption>
-              </figure>
-
-            {% endif %}
-          </div><!-- /.chart-container -->
-
-
-        </div><!-- /.row-container -->
-
+        <!-- <h4>
+          <button is="aria-toggle"
+            aria-controls="national-federal-production-{{ product_slug }}-years">&plus; Details</button>
+        </h4>
+        <div id="national-federal-production-{{ product_slug }}-years" aria-hidden="true">
+          {%
+            include location/display-production.html
+            units=units
+            year=year
+            values=production_values
+            percent=true
+            rank=true
+          %}
+        </div> -->
       </section>
     {% endfor %}
 

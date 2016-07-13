@@ -7,14 +7,14 @@
 
   <h2>Revenue</h2>
 
-  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+  <p class="full-width-text">Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
 
 
   <h3>Revenue from federal land</h3>
 
   <section id="federal-revenue">
 
-    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+    <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
 <!--   <aside class="container-half county-map-table">
 
@@ -33,7 +33,7 @@
     </figure>
   </aside> -->
 
-    <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
+    <p class="full-width-text">The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
 
     <div id="fee-summaries" class="tab-interface">
       <ul class="eiti-tabs info-tabs" role="tablist">
@@ -131,16 +131,18 @@
   <section id="state-local-revenue" class="state revenue">
     <h3>Revenue from extraction on state land</h3>
 
-    <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state of {{ state_name }}.</p>
+    <div class="full-width-text">
+      <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state of {{ state_name }}.</p>
 
-    <!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
-    {% if is_priority_state %}
-      <p>However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land.</p>
-      <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
+      <!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
+      {% if is_priority_state %}
+        <p>However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land.</p>
+        <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
 
-      {{ regulations | markdownify }}
+        {{ regulations | markdownify }}
 
-    {% endif %}
+      {% endif %}
+    </div>
   </section>
 
   <section id="private-revenue" class="private-lands revenue">

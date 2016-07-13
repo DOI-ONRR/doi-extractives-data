@@ -3,6 +3,6 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 114946000
+      value: 114946
       rank: 3
       percent: 18.13

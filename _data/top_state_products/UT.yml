@@ -143,7 +143,7 @@ revenue:
       value: 343414435.78
       rank: 3
       percent: 2.75
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 103022389.78
@@ -186,7 +186,7 @@ revenue:
       rank: 2
       percent: 15.53
   '2007':
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 46994077.87
@@ -419,7 +419,7 @@ revenue:
       value: 341548770.97
       rank: 3
       percent: 2.7
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 52438848.72
@@ -600,42 +600,42 @@ all_production:
   '2008':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 254000
       rank: 3
       percent: 1.71
   '2009':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 279000
       rank: 3
       percent: 1.86
   '2010':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 277000
       rank: 3
       percent: 1.82
   '2011':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 330000
       rank: 3
       percent: 2.15
   '2012':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 335000
       rank: 3
       percent: 2.15
   '2013':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 319000
       rank: 3
       percent: 2.02

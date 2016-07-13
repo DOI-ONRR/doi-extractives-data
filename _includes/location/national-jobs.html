@@ -36,7 +36,7 @@
       <figure class="chart">
         <eiti-bar-chart
           aria-controls="jobs-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
+          data='{{ jobs | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
@@ -97,7 +97,7 @@
       <figure class="chart">
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
+          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>

@@ -1,1 +1,0 @@
-{{ include.values | map_hash: include.key | jsonify }}

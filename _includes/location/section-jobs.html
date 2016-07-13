@@ -44,12 +44,11 @@
         </figcaption>
         <eiti-bar-chart
           aria-controls="jobs-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
+          data='{{ jobs | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
-
-      </figure>
+      </figure><!-- /.chart -->
 
       {% if forloop.last %}
       <h4>
@@ -137,7 +136,7 @@
         </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
+          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
@@ -147,8 +146,11 @@
     </section><!-- /.chart-item -->
     {% endfor %}
   </div><!-- /.chart-list -->
-  <a href="{{site.baseurl}}/downloads/#jobs">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-  </a>
+
+  <p>
+    <a href="{{site.baseurl}}/downloads/#jobs">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+    </a>
+  </p>
 
 </section>

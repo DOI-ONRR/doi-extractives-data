@@ -63,7 +63,7 @@
       <figure class="chart">
         {% assign annual_revenue = commodity[1] %}
         <eiti-bar-chart
-          data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
+          data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
           aria-controls="revenue-figures-{{ commodity_slug }}"
           x-range="{{ year_range }}"
           x-value="{{ year }}">

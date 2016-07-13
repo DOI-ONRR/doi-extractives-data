@@ -32,7 +32,7 @@
             </figcaption>
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{% include location/line-chart-data.json values=exports key=_metric %}'
+              data='{{ exports | map_hash: _metric | jsonify }}'
               data-x-range="{{ year_range }}"
               x-value="{{ year }}">
             </eiti-bar-chart>

@@ -1,6 +1,6 @@
 {% assign gdp = site.data.state_gdp[state_id] %}
 
-<section id="gdp" class="economic gdp">
+<section id="gdp" is="year-switcher-section" class="economic gdp">
 
   <h3>Gross Domestic Product (GDP)</h3>
 
@@ -33,7 +33,7 @@
         </figcaption>
         <eiti-bar-chart
           aria-controls="gdp-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
+          data='{{ gdp | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>

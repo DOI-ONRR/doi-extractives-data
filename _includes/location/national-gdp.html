@@ -25,7 +25,7 @@
       <figure class="chart chart-{{ _metric }}">
         <eiti-bar-chart
           aria-controls="gdp-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
+          data='{{ gdp | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>

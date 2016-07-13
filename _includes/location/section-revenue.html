@@ -4,7 +4,7 @@
 
 {% capture year_range %}[2006, 2015]{% endcapture %}
 
-<section id="revenue" class="federal revenue">
+<section id="revenue" is="year-switcher-section" class="federal revenue">
 
   <h2>Revenue</h2>
 
@@ -85,7 +85,7 @@
 
         </figcaption>
         <eiti-bar-chart
-          data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
+          data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
           aria-controls="revenue-figures-{{ commodity_slug }}"
           x-range="{{ year_range }}"
           x-value="{{ year }}">

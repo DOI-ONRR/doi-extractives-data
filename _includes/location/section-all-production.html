@@ -46,7 +46,7 @@
         </figcaption>
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
-          data='{% include location/line-chart-data.json values=production_values key="volume" %}'
+          data='{{ production_values | map_hash: "volume" | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>

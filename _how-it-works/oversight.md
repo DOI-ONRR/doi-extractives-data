@@ -57,7 +57,7 @@ The Sarbanes-Oxley Act of 2002 was developed to enhance corporate responsibility
 
 **Privately held** companies in the U.S. follow Generally Accepted Auditing Standards, which define the minimum standards for auditing private companies.[^3] Audits may also require additional work beyond what is defined in these standards.
 
-### Audits of company records and systems
+### Federal audits of company records and systems
 
 The Office of Natural Resources Revenue (ONRR) regularly examines company records to verify accuracy of reporting and payments. The [Internal Revenue Service](https://www.irs.gov/) (IRS) audits company tax returns.
 

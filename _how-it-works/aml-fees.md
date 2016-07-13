@@ -136,7 +136,31 @@ State and tribal AML contacts and programs can be found here.
 Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
 <!-- Image -->
-**Growth of the AML fund's unappropriated balance**[^]
+**Growth of the AML fund's unappropriated balance**[^23]
+
+### Interest on the fund
+
+<!-- duplicative with content above — remove above -->
+In 1990, Congress authorized the federal government to invest the unappropriated balance in U.S. Treasury Securities. Since then, the unappropriated balance has earned $1.5 billion in interest. Since 1996, almost all of the interest on the AML fund has gone toward paying a portion of the cost for select health care plans for the United Mine Workers of America.[^24]
+
+### Grants to states and tribes
+
+By 2007, the state and tribal share of the unappropriated balance had reached $1.34 billion.[^25]
+
+Congress resolved to pay states' and tribes' unappropriated balance out in the form of "Prior Balance Replacement Grants," which pay states and tribes 50% of what companies operating in their jurisdictions paid into the AML Fund from 2008–2014. Payments were made over 7 years in equal, annual installments.[^26]
+
+OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal installments over the course of seven years. This money did not come directly from the AML Fund, but was sourced directly from the Treasury’s General Fund.
+
+### The fund today
+
+As of November 2015, the fund’s balance stood at $2.5 billion.[^27] The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
+
+<!-- Image -->
+**Allocation of unappopriated balance**[^28]
+
+Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
+
+
 
 ## Notes
 
@@ -159,4 +183,12 @@ Prior to 2006, companies often paid more money into the AML fund each year than 
 [^17]: Ibid.
 [^18]: Ibid.
 [^19]: Ibid.
-[^20]: 30 U.S.C. §1231(c)
+[^20]: Ibid.
+[^21]: Ibid.
+[^22]: 30 U.S.C. §1231(c)
+[^23]: Office of Surface Mining Reclamation and Enforcement, “FY2017 OSMRE Budget Justification,” 2016
+[^24]: Ibid.
+[^25]: Office of Surface Mining Reclamation and Enforcement, “FY2008 AML Grant Distribution,” 2008
+[^26]: Office of Surface Mining Reclamation and Enforcement, “FY2016 OSMRE AML Grant Distribution,” 2016
+[^27]: Ibid. This figure includes interest earned but not appropriated.
+[^28]: Ibid.

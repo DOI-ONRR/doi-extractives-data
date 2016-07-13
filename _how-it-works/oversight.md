@@ -35,10 +35,7 @@ breadcrumb:
 selector: list
 ---
 
-> Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
-<!--
-In order to be considered for mainstreaming, the USEITI Independent Administrator has assessed existing systmes for data validation, independent audit, and disclosures. https://eiti.org/about/strategy-update-2015-2016#Mainstreaming
- -->
+> Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments. <!-- In order to be considered for mainstreaming, the USEITI Independent Administrator has assessed existing systmes for data validation, independent audit, and disclosures. https://eiti.org/about/strategy-update-2015-2016#Mainstreaming  -->
 
 # Data validation and auditing
 
@@ -81,8 +78,7 @@ A number of oversight bodies help ensure the accuracy and transparency of federa
 - The GAO also audits agencies throughout the government.
 - In some situations, third-party auditors assist in performing audits. For instance, accounting firm KPMG helped provide an [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015).
 
-Many reviews are routine, but audits may also be triggered by events or disclosures. These audits are required by the Office of Management and Budget (OMB) and supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6]
-<!-- Click here for the latest GAO Audit — no link -->
+Many reviews are routine, but audits may also be triggered by events or disclosures. These audits are required by the Office of Management and Budget (OMB) and supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6] <!-- Click here for the latest GAO Audit -- no link -->
 
 The [U.S. Standard General Ledger](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/ussgl_home.htm) provides a uniform chart of accounts and technical guidance for standardizing federal agency accounting to OMB and the U.S. Treasury.
 
@@ -171,4 +167,26 @@ The IRS is responsible for collecting federal corporate income taxes.
 
 # Notes
 
-[^1]: The [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) Accounting Standards Codification is the single official source of authoritative, nongovernmental U.S. generally accepted accounting principles (GAAP). [^2]: [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx), [Generally Accepted Auditing Standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf), 2001 [^3]: [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), Public Law 107-204 [^4]: [Office of Management and Budget](https://www.whitehouse.gov/omb/financial_default), [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev), 2004 [^5]: Accounting and Financial Management Division, U.S. General Accounting Office, [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf), 1991 [^6]: Office of Management and Budget, [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), 2013 [^7]: The SEC maintains a searchable database of filings by public companies called [EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html). [^8]: Securities and Exchange Commission, [Proposed: Disclosure of Payments by Resource Extraction Issuers (PDF)](https://www.sec.gov/rules/proposed/2015/34-76620.pdf), 2015 [^9]: Securities and Exchange Commission, "[SEC Proposes Rules for Resource Extraction Issuers Under Dodd-Frank Act](https://www.sec.gov/news/pressrelease/2015-277.html)," 2015 [^10]: Learn more about [laws that govern revenue from natural resource extraction on federal lands](http://onrr.gov/Laws_R_D/PubLaws/default.htm). [^11]: Office of the Secretary, U.S. Department of the Interior, [Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf), Fiscal Year 2017, p. 159-163 [^12]: Office of the Secretary, U.S. Department of the Interior, [Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf), Fiscal Year 2017, p. 164
+[^1]: The [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) Accounting Standards Codification is the single official source of authoritative, nongovernmental U.S. generally accepted accounting principles (GAAP).
+
+[^2]: [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx), [Generally Accepted Auditing Standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf), 2001
+
+[^3]: [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), Public Law 107-204
+
+[^4]: [Office of Management and Budget](https://www.whitehouse.gov/omb/financial_default), [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev), 2004
+
+[^5]: Accounting and Financial Management Division, U.S. General Accounting Office, [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf), 1991
+
+[^6]: Office of Management and Budget, [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), 2013
+
+[^7]: The SEC maintains a searchable database of filings by public companies called [EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html).
+
+[^8]: Securities and Exchange Commission, [Proposed: Disclosure of Payments by Resource Extraction Issuers (PDF)](https://www.sec.gov/rules/proposed/2015/34-76620.pdf), 2015
+
+[^9]: Securities and Exchange Commission, "[SEC Proposes Rules for Resource Extraction Issuers Under Dodd-Frank Act](https://www.sec.gov/news/pressrelease/2015-277.html)," 2015
+
+[^10]: Learn more about [laws that govern revenue from natural resource extraction on federal lands](http://onrr.gov/Laws_R_D/PubLaws/default.htm).
+
+[^11]: Office of the Secretary, U.S. Department of the Interior, [Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf), Fiscal Year 2017, p. 159-163
+
+[^12]: Office of the Secretary, U.S. Department of the Interior, [Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OS_Budget_Justification.pdf), Fiscal Year 2017, p. 164

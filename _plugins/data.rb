@@ -24,9 +24,12 @@ module EITI
       data
     end
 
-    # "unwrap" values in a 2-level hash
+    # "unwrap" values in a 2-level hash:
+    #
+    # map_hash({'2011' => {'volume' => 100}}, 'volume')
+    # > {'2011' => 100}
     def map_hash(data, key)
-      data.to_h().map { |_key, value| [_key, value[key]] }.to_h
+      data.to_h().map { |_key, value| [_key, get(value, key)] }.to_h
     end
 
     # pad the provided string with the provided padding character (or a
@@ -54,12 +57,19 @@ module EITI
       (start..finish).to_a
     end
 
+    # convert (or map) a value to floats
     def to_f(x)
       (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
+    # convert (or map) a value to integers
     def to_i(x)
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
+    end
+
+    # convert (or map) a value to strings
+    def to_s(x)
+      (x.is_a? Array) ? x.map(&:to_s) : x.to_s
     end
 
     # attempts to find a substring

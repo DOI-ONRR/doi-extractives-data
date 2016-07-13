@@ -10,7 +10,7 @@
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
-          this.marks
+          this.marks = d3.select(this).selectAll('[data-value]')
             .datum(function() {
               return +this.getAttribute('data-value') || 0;
             });
@@ -18,18 +18,14 @@
           this.update();
         }},
 
-        marks: {
-          get: function() {
-            return d3.select(this)
-              .selectAll('svg [data-value]');
-          }
-        },
-
         setYear: {value: function(year) {
           this.marks.datum(function() {
-            var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
-            return data[year] || 0;
-          });
+              var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+              return data[year] || 0;
+            })
+            .attr('data-value', function(d) {
+              return d;
+            });
           this.update();
         }},
 
@@ -115,7 +111,7 @@
           var cellHeight = legend.shapeHeight() + legend.shapePadding();
           var count = 0;
           cells.each(function(cell, i) {
-            var present = true; // uniqueSteps.indexOf(i) > -1;
+            var present = uniqueSteps.indexOf(i) > -1;
 
             if (!present) {
               // hide cells swatches that aren't in the map

@@ -6,9 +6,10 @@
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -ms-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+
 
   .chart-list_caption {
     @include heading(para-sm);
@@ -86,6 +87,15 @@
     > :last-child {
       text-align: right;
     }
+  }
+
+  eiti-data-map figcaption {
+    min-height: inherit;
+
+    @include heading('para-sm');
+
+    font-weight: $weight-bold;
+    margin: 0;
   }
 }
 

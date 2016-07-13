@@ -7,6 +7,8 @@
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
 
+{% capture year_range %}[2005, 2014]{% endcapture %}
+
 <section id="federal-production" is="year-switcher-section" class="federal production">
 
   <h3>Land ownership</h2>
@@ -21,12 +23,18 @@
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
     {% endif %}
 
-    <select class="chart-selector selector-all-production">
-      {% for _year in year_list %}
-        {% assign __year = year | to_i %}
-        <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
-      {% endfor %}
-    </select>
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        {% if federal_products_num == 0 %}
+          No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
+        {% else %}
+          Is there some kind of summary sentence that would be good here? The year selector would update all references to year in the federal production section.
+        {% endif %}
+      </p>
+    </div>
 
     <div class="chart-list">
 
@@ -43,92 +51,94 @@
 
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
-        <h4 class="chart-title">
-          {{ product_name }}
-          {% if units_title %} ({{ units_title }}){% endif %}
-        </h4>
-
         <div class="row-container">
 
           <div class="chart-container">
 
-            {% if volume %}
-              <figure class="chart">
-                <figcaption id="federal-production-figures-{{ product_slug }}">
-                <span class="eiti-bar-chart-y-value"
-                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-                produced on federal land in {{ state_name }} in
-                <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+            <h4 class="chart-title">
+              {{ product_name }}
+              {% if units_title %} ({{ units_title }}){% endif %}
+            </h4>
 
-                </figcaption>
-                <eiti-bar-chart
-                  aria-controls="federal-production-figures-{{ product_slug }}"
-                  data='{{ production_values | map_hash: "volume" | jsonify }}'
-                  data-x-range="{{ year_range }}"
-                  x-value="{{ year }}">
-                </eiti-bar-chart>
+            <figure class="chart">
+              <figcaption id="federal-production-figures-{{ product_slug }}">
+              <span class="eiti-bar-chart-y-value"
+                      data-format=",">{{ volume | default: 0 | intcomma }}</span>
+              {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+              produced on federal land in {{ state_name }} in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>.
 
-              </figure>
+              </figcaption>
+              <eiti-bar-chart
+                aria-controls="federal-production-figures-{{ product_slug }}"
+                data='{{ production_values | map_hash: "volume" | jsonify }}'
+                data-x-range="{{ year_range }}"
+                x-value="{{ year }}">
+              </eiti-bar-chart>
 
-              <!-- <h4>
-                <button is="aria-toggle"
-                  aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
-              </h4>
-              <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
-                {%
-                  include location/display-production.html
-                  units=units
-                  year=year
-                  values=production_values
-                  percent=true
-                  rank=true
-                %}
-              </div> -->
-            {% endif %}
+            </figure>
+
+            <!-- <h4>
+              <button is="aria-toggle"
+                aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
+            </h4>
+            <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
+              {%
+                include location/display-production.html
+                units=units
+                year=year
+                values=production_values
+                percent=true
+                rank=true
+              %}
+            </div> -->
           </div><!-- /.chart-container -->
 
-          {% if volume %}
-            <div class="map-container">
-              {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
-              <figure>
-                {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
-                {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
-                {% assign _width ='inherit' %}
-                {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
+          <div class="map-container">
 
-                <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
-                  {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-
-                  {%
-                    include county-map.html
-                    state=state_id
-                    counties=federal_county_production
-                    value=value_key
-                    years=years_key
-                    steps=steps
-                    inherit_width=true
-                    caption=caption
-                    toggle=toggle
-                  %}
-                </eiti-data-map>
-
-              </figure>
+            <h4 class="chart-title">
+              By county
+            </h4>
 
 
-              <div id="{{ toggle }}" aria-hidden="true">
+            {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
+            <figure>
+              {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
+              {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
+              {% assign _width ='inherit' %}
+              {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
+
+              <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+                {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+
                 {%
-                  include location/display-production.html
-                  units=units
-                  year=year
-                  values=production_values
-                  percent=true
-                  rank=true
+                  include county-map.html
+                  state=state_id
+                  counties=federal_county_production
+                  value=value_key
+                  years=years_key
+                  steps=steps
+                  inherit_width=true
+                  caption=caption
+                  toggle=toggle
                 %}
-              </div>
+              </eiti-data-map>
 
-            </div><!-- /.map-container -->
-          {% endif %}
+            </figure>
+
+
+            <div id="{{ toggle }}" aria-hidden="true">
+              {%
+                include location/display-production.html
+                units=units
+                year=year
+                values=production_values
+                percent=true
+                rank=true
+              %}
+            </div>
+
+          </div><!-- /.map-container -->
 
         </div><!-- /.row-container -->
 

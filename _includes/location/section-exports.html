@@ -1,13 +1,20 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 
+{% capture year_range %}[2011, 2014]{% endcapture %}
+
 <section id="exports" is="year-switcher-section" class="economic exports">
 
   <h3>Exports</h3>
 
-  <div class="chart-list has-intro">
+  <div class="chart-list">
 
-    <div class="chart-list-intro">
-      {% include location/key-exports.html %}
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        {% include location/key-exports.html %}
+      </p>
     </div>
 
     {% assign _format = '$,' %}
@@ -39,7 +46,7 @@
 
           </figure>
 
-          <h4>
+        <!--   <h4>
             <button is="aria-toggle" aria-controls="exports-detail-{{ commodity_slug }}">
               &plus; Details
             </button>
@@ -50,7 +57,7 @@
               values=exports
               percent=false
             %}
-          </div>
+          </div> -->
 
         </section><!-- /.chart-item -->
       {% endif %}

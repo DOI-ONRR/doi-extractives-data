@@ -49,11 +49,11 @@ Once submitted, reports are verified before the government publishes payment dat
 
 Standard-setting bodies shape accounting and auditing requirements for companies and government agencies.
 
-**Publicly traded** companies in the U.S. follow Generally Accepted Accounting Principles (GAAP).[^1]
+The Sarbanes-Oxley Act of 2002 was developed to enhance corporate responsibility, require financial disclosures, and combat fraud. It requires all financial reports for larger public companies to include an Internal Control over Financial Reporting (ICFR) assertion by company management and an ICFR attestation by an independent auditor.[^1] Prior to 2002, the auditing profession was largely self-regulated.
+
+**Publicly traded** companies in the U.S. follow Generally Accepted Accounting Principles (GAAP).[^2]
 
 The [Public Company Accounting Oversight Board](https://pcaobus.org/Pages/default.aspx), a nonprofit corporation established by Congress, helps confirm that registered public accounting firms are operating in accordance with auditing standards. The [Security and Exchange Commission](https://www.sec.gov/) (SEC) requires public companies to have their financial statements prepared in accordance with GAAP or the International Financial Reporting Standards, and requires annual audits by independent registered public accounting firms.
-
-The Sarbanes-Oxley Act of 2002 was developed to enhance corporate responsibility, require financial disclosures, and combat fraud. It requires all financial reports for larger public companies to include an Internal Control over Financial Reporting (ICFR) assertion by company management and an ICFR attestation by an independent auditor.[^2] Prior to 2002, the auditing profession was largely self-regulated.
 
 **Privately held** companies in the U.S. follow Generally Accepted Auditing Standards, which define the minimum standards for auditing private companies.[^3] Audits may also require additional work beyond what is defined in these standards.
 
@@ -78,7 +78,7 @@ A number of oversight bodies help ensure the accuracy and transparency of federa
 - The GAO also audits agencies throughout the government.
 - In some situations, third-party auditors assist in performing audits. For instance, accounting firm KPMG helped provide an [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015).
 
-Many reviews are routine, but audits may also be triggered by events or disclosures. These audits are required by the Office of Management and Budget (OMB) and supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6] <!-- Click here for the latest GAO Audit -- no link -->
+Many reviews are routine, but audits may also be triggered by events or disclosures. These audits are required by the Office of Management and Budget (OMB) and supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, or [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6]
 
 The [U.S. Standard General Ledger](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/ussgl_home.htm) provides a uniform chart of accounts and technical guidance for standardizing federal agency accounting to OMB and the U.S. Treasury.
 
@@ -167,9 +167,9 @@ The IRS is responsible for collecting federal corporate income taxes.
 
 # Notes
 
-[^1]: The [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) Accounting Standards Codification is the single official source of authoritative, nongovernmental U.S. generally accepted accounting principles (GAAP).
+[^1]: [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx), [Generally Accepted Auditing Standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf), 2001
 
-[^2]: [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx), [Generally Accepted Auditing Standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf), 2001
+[^2]: The [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) Accounting Standards Codification is the single official source of authoritative, nongovernmental U.S. generally accepted accounting principles (GAAP).
 
 [^3]: [Sarbanes-Oxley Act of 2002 (PDF)](https://www.sec.gov/about/laws/soa2002.pdf), Public Law 107-204
 
@@ -177,7 +177,7 @@ The IRS is responsible for collecting federal corporate income taxes.
 
 [^5]: Accounting and Financial Management Division, U.S. General Accounting Office, [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf), 1991
 
-[^6]: Office of Management and Budget, [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), 2013
+[^6]: Office of Management and Budget, [OMB Bulletin 14-02 (PDF)](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2014/b-14-02.pdf), 2013. For an example of a recent government-wide audit, see the [GAO Financial Audit: U.S. Government's Fiscal Years 2015 and 2014 Consolidated Financial Statements](http://www.gao.gov/products/GAO-16-357R)
 
 [^7]: The SEC maintains a searchable database of filings by public companies called [EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html).
 

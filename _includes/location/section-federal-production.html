@@ -1,4 +1,5 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
+{% assign year_range = '[2005, 2014]' %}
 
 {% if national_page %}
   {% assign federal_products = site.data.national_federal_production[state_id].products %}
@@ -6,8 +7,6 @@
 
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
-
-{% capture year_range %}[2005, 2014]{% endcapture %}
 
 <section id="federal-production" is="year-switcher-section" class="federal production">
 
@@ -72,7 +71,7 @@
               <eiti-bar-chart
                 aria-controls="federal-production-figures-{{ product_slug }}"
                 data='{{ production_values | map_hash: "volume" | jsonify }}'
-                data-x-range="{{ year_range }}"
+                x-range="{{ year_range }}"
                 x-value="{{ year }}">
               </eiti-bar-chart>
 

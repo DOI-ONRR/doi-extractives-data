@@ -39,7 +39,7 @@
       <p class="chart-list_caption">
         {% if volume %}{{ volume | intcomma }} {{ long_units | term }} of
         {% else %}No{% endif %}
-        {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in {{ year }}.
+        {{ product_name | downcase | suffix:units_suffix }} was produced in {{ state_name }} in {{ year }}.
       </p>
       <!-- <h4>
         <button is="aria-toggle"

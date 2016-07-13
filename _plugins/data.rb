@@ -29,7 +29,7 @@ module EITI
     # map_hash({'2011' => {'volume' => 100}}, 'volume')
     # > {'2011' => 100}
     def map_hash(data, key)
-      data.to_h().map { |_key, value| [_key, get(value, key)] }.to_h
+      data.to_h.map { |k, v| [k, get(v, key)] }.to_h
     end
 
     # pad the provided string with the provided padding character (or a
@@ -79,31 +79,39 @@ module EITI
         (str.include? term) ? true : nil
       end
     end
+    # takes a range and returns a list of numbers within that range
+    # incrimented by 1
+    # Only accepts an Array. Otherwise returns the range
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # e.g '[0,5]' => '[0,5]'
+    def create_list(range)
+      if range.is_a? Array
+        arr = []
+        min = range[0]
+        max = range[1]
+        (min..max).step(1) do |i|
+          arr.push(i)
+        end
+        arr
+      else
+        range
+      end
+    end
 
-    # takes a domain and returns a list of numbers within that domain
+    # takes a range and returns a list of numbers within that range
     # incrimented by 1
     # e.g '[0,5]' => [0,1,2,3,4,5]
     # e.g [0,5] => [0,1,2,3,4,5]
     # If the input is not a string, it returns the input value
     # e.g 5 => 5
-    def to_list(domain)
-      def create_list(domain)
-        arr = []
-        $i = domain[0]
-        $num = domain[1]
-        for i in $i..$num
-          arr.push(i)
-        end
-        arr
-      end
-
-      if domain.is_a? Array
-        create_list(domain)
-      elsif domain.is_a? String
-        domain = JSON.parse(domain)
-        create_list(domain)
+    def to_list(range)
+      if range.is_a? Array
+        create_list(range)
+      elsif range.is_a? String
+        range = JSON.parse(range)
+        create_list(range)
       else
-        domain
+        range
       end
     end
   end

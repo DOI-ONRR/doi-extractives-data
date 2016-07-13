@@ -1,8 +1,7 @@
 {% assign revenue_commodities = site.data.national_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
 {% assign units = '$' %}
-
-{% capture year_range %}[2006, 2015]{% endcapture %}
+{% assign year_range = '[2006, 2015]' %}
 
 <section id="revenue" class="federal revenue">
 

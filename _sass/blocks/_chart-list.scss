@@ -38,10 +38,11 @@
   .chart-item {
     @include span-columns(4);
 
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
+
     border-top: none;
     display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: $base-padding;
     margin-top: 0;
@@ -90,12 +91,11 @@
   }
 
   eiti-data-map figcaption {
-    min-height: inherit;
-
     @include heading('para-sm');
 
     font-weight: $weight-bold;
     margin: 0;
+    min-height: inherit;
   }
 }
 
@@ -114,14 +114,12 @@
   }
 
   .chart-description {
+    border-left: 1px solid $mid-gray;
     float: left;
-    width: 75%;
     padding-left: 1.25rem;
-    border-left: 1px solid #ebebeb;
+    width: 75%;
   }
 }
-
-
 
 .row-container {
   @include outer-container();

@@ -24,10 +24,16 @@
   var top = margin.top;
   var bottom = height - margin.bottom;
 
+  var xAxisLabel = 'years';
+  var xAxisBottom = height + margin.bottom;
+  var labelOffset = width / 2;
+
+  var fullHeight = height + textMargin;
+
   var attached = function() {
     var svg = d3.select(this)
       .append('svg')
-        .attr('viewBox', [0, 0, width, height].join(' '));
+        .attr('viewBox', [0, 0, width, fullHeight].join(' '));
 
     svg.append('g')
       .attr('class', 'axis x-axis');
@@ -144,7 +150,7 @@
 
     svg.selectAll('.bar-mask')
       // extend all the way to the bottom of the screen
-      .attr('height', barHeight + textMargin * 2)
+      .attr('height', barHeight + textMargin)
       .attr('width', barWidth);
 
     selection.call(updateSelected, this.x);
@@ -167,11 +173,26 @@
         return String(x).substr(2);
       });
 
+    svg.append('g')
+      .attr('class', 'x-axis-baseline')
+      .append('line')
+        .attr('x1', 0)
+        .attr('x2', width)
+        .attr('transform', 'translate(' + [0, bottom] + ')');
+
     svg.select('.x-axis')
       .attr('transform', 'translate(' + [0, bottom] + ')')
       .call(axis)
       .selectAll('path, line')
         .attr('fill', 'none');
+
+    svg.append('g')
+      .attr('class', 'x-axis-label')
+      .append('text')
+        .text(xAxisLabel)
+        .attr('transform', function(d) {
+          return 'translate(' + [labelOffset, xAxisBottom] + ')';
+        });
   };
 
   var formatUnits = function(text, units) {

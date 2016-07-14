@@ -48,6 +48,15 @@ nav_items:
 
   <div class="container-left-9">
 
+    <figure is="data-map" color-scheme="Reds" steps="9">
+      {%
+        include state-map.html
+        states=site.data.state_revenues
+        value='products.All.2013.revenue'
+        href='%/'
+      %}
+      <figcaption>State revenue (2013)</figcaption>
+    </figure>
 
     <section id="production">
       {% include location/national-all-production.html %}
@@ -69,16 +78,6 @@ nav_items:
     {% include location/national-exports.html %}
 
     </section>
-
-    <figure is="data-map" color-scheme="Reds" steps="9">
-        {%
-          include state-map.html
-          states=site.data.state_revenues
-          value='products.All.2013.revenue'
-          href='%/'
-        %}
-        <figcaption>State revenue (2013)</figcaption>
-    </figure>
 
     <!-- XXX setting display: none on this prevents the mask from working -->
     <svg width="0" height="0">

@@ -9,15 +9,15 @@
   </section>
 
   <aside class="map-container">
-    <figure is="data-map" color-scheme="Reds" steps="9">
-        {%
-          include state-map.html
-          states=site.data.state_revenues
-          value='products.All.2013.revenue'
-          href='%/'
-          ownership=true
-        %}
-    </figure>
+    <eiti-data-map color-scheme="Reds" steps="9">
+      {%
+        include state-map.html
+        states=site.data.state_revenues
+        value='products.All.2013.revenue'
+        href='%/'
+        ownership=true
+      %}
+    </eiti-data-map>
     <aside class="legend-container">
       <h5>Land ownership</h5>
 

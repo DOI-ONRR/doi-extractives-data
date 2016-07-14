@@ -3,12 +3,12 @@
 {% assign exports_commodities_num = exports | size %}
 
 {% if exports_commodities_num > 0 %}
-	<p>In {{ include.year }}, 
-	{{ exports_commodities_num }} extractive industries 
+	In {{ include.year }},
+	{{ exports_commodities_num }} extractive industries
 	product{{ exports_commodities_num | plural }} ranked among the top 25 exports from {{ state_name }}, generating
 	${{ exports_total | intcomma }}
 	in export revenue, or
-	{{ exports.All[include.year].percent | percent }}% of all export revenue.</p>
+	{{ exports.All[include.year].percent | percent }}% of all export revenue.
 {% else %}
-	<p>In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.</p>
+	In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.
 {% endif %}

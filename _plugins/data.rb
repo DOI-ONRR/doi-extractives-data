@@ -24,6 +24,14 @@ module EITI
       data
     end
 
+    # "unwrap" values in a 2-level hash:
+    #
+    # map_hash({'2011' => {'volume' => 100}}, 'volume')
+    # > {'2011' => 100}
+    def map_hash(data, key)
+      data.to_h.map { |k, v| [k, get(v, key)] }.to_h
+    end
+
     # pad the provided string with the provided padding character (or a
     # space, by default) if its length is less than a given length
     def pad_left(str, len, pad = " ")
@@ -49,12 +57,19 @@ module EITI
       (start..finish).to_a
     end
 
+    # convert (or map) a value to floats
     def to_f(x)
       (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
+    # convert (or map) a value to integers
     def to_i(x)
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
+    end
+
+    # convert (or map) a value to strings
+    def to_s(x)
+      (x.is_a? Array) ? x.map(&:to_s) : x.to_s
     end
 
     # attempts to find a substring
@@ -62,6 +77,41 @@ module EITI
     def is_in(term, str)
       if str
         (str.include? term) ? true : nil
+      end
+    end
+    # takes a range and returns a list of numbers within that range
+    # incrimented by 1
+    # Only accepts an Array. Otherwise returns the range
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # e.g '[0,5]' => '[0,5]'
+    def create_list(range)
+      if range.is_a? Array
+        arr = []
+        min = range[0]
+        max = range[1]
+        (min..max).step(1) do |i|
+          arr.push(i)
+        end
+        arr
+      else
+        range
+      end
+    end
+
+    # takes a range and returns a list of numbers within that range
+    # incrimented by 1
+    # e.g '[0,5]' => [0,1,2,3,4,5]
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # If the input is not a string, it returns the input value
+    # e.g 5 => 5
+    def to_list(range)
+      if range.is_a? Array
+        create_list(range)
+      elsif range.is_a? String
+        range = JSON.parse(range)
+        create_list(range)
+      else
+        range
       end
     end
   end

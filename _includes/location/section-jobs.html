@@ -6,150 +6,142 @@
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
+{% assign year_range = '[2004, 2013]' %}
+
+
 <section id="employment" class="economic employment">
 
-  <h3>Employment</h3>
+  <h3>Wage and salary jobs</h3>
 
-  <div class="chart-list">
+  <section is="year-switcher-section" class="chart-list">
 
-    <div class="chart-list-intro">
-      <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
-      <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
-      <p>In {{ year }},
-        {% if jobs_count %}
-          there were
-          {{ jobs_count | intcomma }}
-          jobs in extractive industries that paid a wage or salary in
-          {{ state_name }}, or
-          {{ jobs_percent | percent }}% of state-wide employment.
-        {% else %}
-          there were no wage or salary jobs in the extractive industries.
-        {% endif %}
-      </p>
-    </div>
+    <div class="chart-selector-wrapper">
 
-    {% assign _metrics = 'count' | split: ' ' %}
-    {% for _metric in _metrics %}
-    <section class="chart-item">
+      {% include year-selector.html year_range=year_range %}
 
-      <h3 class="chart-title">Number of jobs in extractives</h3>
-
-      <figure class="chart">
-        <figcaption id="jobs-figures-{{ _metric }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value"
-            {% if _metric == 'count' %}
-              data-format=","
-            {% elsif _metric == 'percent' %}
-              data-format="%"
-            {% endif %}>
-            {% if _metric == 'count' %}
-              {{ jobs[year].jobs | intcomma }}
-            {% elsif _metric == 'percent' %}
-              {{ jobs[year].percent | percent }}%
-            {% endif %}
-          </span>
-        </figcaption>
-        <eiti-bar-chart
-          aria-controls="jobs-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
-          data-x-range="{{ year_range }}"
-          x-value="{{ year }}">
-        </eiti-bar-chart>
-
-      </figure>
-
-      {% if forloop.last %}
-      <h4>
-        <button is="aria-toggle"
-          aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
-      </h4>
-      <div id="employment-detail-{{ _metric }}" aria-hidden="true">
-        {%
-          include location/display-jobs.html
-          values=jobs
-          percent=true
-        %}
+      <div class="chart-description">
+        <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
+        <p>In {{ year }}, jobs in the extractive industries that paid a wage or salary made up {{ jobs_percent | percent }} % of statewide employment in {{ state_name }}.</p>
+        <p>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#jobs">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a></p>
       </div>
-      {% endif %}
+    </div><!-- .chart-selector-wrapper -->
 
-    </section><!-- /.chart-item -->
-    {% endfor %}
-
-  </div><!-- /.chart-list.has-intro -->
-
-  <div class="chart-list">
-
-    <h3 class="chart-title">County-level employment in extractives</h3>
 
     <div class="row-container">
+
+      <div class="chart-container">
+
+
+        {% assign _metrics = 'count' | split: ' ' %}
+        {% for _metric in _metrics %}
+        <h3 class="chart-title">Wage and salary jobs</h3>
+
+        <figure class="chart">
+          <figcaption id="jobs-figures-{{ _metric }}">
+            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+            there were
+            <span class="eiti-bar-chart-y-value" data-format=",">
+              {{ jobs[year].jobs | intcomma }}
+            </span>
+            jobs in extractive industries that paid a wage or salary in
+            {{ state_name }}.
+          </figcaption>
+          <eiti-bar-chart
+            aria-controls="jobs-figures-{{ _metric }}"
+            data='{{ jobs | map_hash: _metric | jsonify }}'
+            data-x-range="{{ year_range }}"
+            x-value="{{ year }}">
+          </eiti-bar-chart>
+        </figure><!-- /.chart -->
+
+          {% if forloop.last %}
+          <!-- <h4>
+            <button is="aria-toggle"
+              aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
+          </h4>
+          <div id="employment-detail-{{ _metric }}" aria-hidden="true">
+            {%
+              include location/display-jobs.html
+              values=jobs
+              percent=true
+            %}
+          </div> -->
+          {% endif %}
+
+        {% endfor %}
+
+      </div><!-- /.chart-container -->
+
       {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
 
       <div class="map-container">
         <figure class="container">
-          <data-map color-scheme="Reds" steps="{{ steps }}">
+          <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
             {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-            {% capture caption %}County extractives employment (jobs, {{ year }}){% endcapture %}
+            {% capture caption %}Local employment in extractive industries (jobs, {{ year }}){% endcapture %}
 
             {%
               include county-map.html
               state=state_id
               counties=county_jobs
               value=value_key
+              years="employment"
+              years_property="count"
               steps=steps
               inherit_width=true
               caption=caption
               toggle=toggle
             %}
-          </data-map>
+          </eiti-data-map>
         </figure>
+        <div class="table-container" id="{{ toggle }}" aria-hidden="true">
+          {%
+            include location/display-jobs-county.html
+            year=year
+            values=county_jobs
+            percent=true
+          %}
+        </div><!-- /.table-container -->
       </div><!-- /.map-container -->
-
-      <div class="table-container" id="{{ toggle }}" aria-hidden="true">
-        {%
-          include location/display-jobs-county.html
-          year=year
-          values=county_jobs
-          percent=true
-        %}
-      </div><!-- /.table-container -->
-
     </div><!-- /.row-container -->
 
-  </div><!-- /.chart-list -->
+  </section><!-- /.chart-list -->
 
-  <div class="chart-list">
-    <div class="chart-list-intro">
+  <h3 id="self-employment">Self-employment</h3>
 
-      <p><strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.</p>
+  <section class="chart-list" is="year-switcher-section">
+    <div class="chart-selector-wrapper">
 
-    </div>
+      {% include year-selector.html year_range=year_range %}
+
+      <div class="chart-description">
+        <p>
+          <strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
+        </p>
+        <p>
+          Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#jobs">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        </p>
+      </div>
+    </div><!-- .chart-selector-wrapper -->
 
     {% assign _metrics = 'count' | split: ' ' %}
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title">Number of self-employment jobs in extractives</h3>
+      <h3 class="chart-title">Self-employment</h3>
 
       <figure class="chart">
         <figcaption id="self-employment-figures-{{ _metric }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          <span class="eiti-bar-chart-y-value"
-            {% if _metric == 'count' %}
-              data-format=","
-            {% elsif _metric == 'percent' %}
-              data-format="%"
-            {% endif %}>
-            {% if _metric == 'count' %}
-              {{ self_employment_jobs[year].jobs | intcomma }}
-            {% elsif _metric == 'percent' %}
-              {{ self_employment_jobs[year].percent | percent }}%
-            {% endif %}
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ self_employment_jobs[year].jobs | intcomma }}
           </span>
+          of people were self-employed in the extractive industries
+          {{ state_name }}.
         </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=self_employment_jobs key=_metric %}'
+          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
           data-x-range="{{ year_range }}"
           x-value="{{ year }}">
         </eiti-bar-chart>
@@ -158,9 +150,6 @@
 
     </section><!-- /.chart-item -->
     {% endfor %}
-  </div><!-- /.chart-list -->
-  <a href="{{site.baseurl}}/downloads/#jobs">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-  </a>
+  </section><!-- /.chart-list -->
 
 </section>

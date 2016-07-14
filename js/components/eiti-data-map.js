@@ -5,11 +5,27 @@
   var eiti = require('./../eiti');
   var format = eiti.format;
 
-  exports.EITIDataMap = document.registerElement('data-map', {
+  exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
+          this.marks = d3.select(this).selectAll('[data-value]')
+            .datum(function() {
+              return +this.getAttribute('data-value') || 0;
+            });
+
+          this.update();
+        }},
+
+        setYear: {value: function(year) {
+          this.marks.datum(function() {
+              var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+              return data[year] || 0;
+            })
+            .attr('data-value', function(d) {
+              return d;
+            });
           this.update();
         }},
 
@@ -27,11 +43,7 @@
             );
           }
 
-          var marks = d3.select(this)
-            .selectAll('svg [data-value]')
-            .datum(function() {
-              return +this.getAttribute('data-value') || 0;
-            });
+          var marks = this.marks;
 
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))
@@ -64,7 +76,7 @@
               .range(steps);
 
             var values = [];
-            data.forEach(function(d){
+            data.forEach(function(d) {
               values.push(getSteps(d));
             });
 
@@ -77,7 +89,7 @@
           svgLegend.append('g')
             .attr('class', 'legendScale');
 
-          var legendSettings = d3.legend.color()
+          var legend = d3.legend.color()
             .labelFormat(format.si)
             .useClass(false)
             .ascending(true)
@@ -86,20 +98,19 @@
             .scale(scale);
 
           svgLegend.select('.legendScale')
-            .call(legendSettings);
+            .call(legend);
 
           // reverse because the scale is in ascending order
-          var _steps = d3.range(0,9).reverse();
+          var _steps = d3.range(0, 9).reverse();
 
           // find which steps are represented in the map
           var uniqueSteps = getUnique(marks.data(), _steps, domain);
 
           // start consolidate (translate) visible cells
           var cells = svgLegend.selectAll('.cell');
-          var cellHeight = legendSettings.shapeHeight() +
-            legendSettings.shapePadding();
+          var cellHeight = legend.shapeHeight() + legend.shapePadding();
           var count = 0;
-          cells.each(function(cell, i){
+          cells.each(function(cell, i) {
             var present = uniqueSteps.indexOf(i) > -1;
 
             if (!present) {

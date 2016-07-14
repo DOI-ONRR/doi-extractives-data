@@ -2,7 +2,14 @@
   @include font-size(0.8);
   @include outer-container();
 
-  padding-top: $base-padding-jumbo;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+
 
   .chart-list_caption {
     @include heading(para-sm);
@@ -14,10 +21,13 @@
     @include heading(para-lg);
 
     border-bottom: 1px solid $mid-gray;
+    flex: 1 0 auto;
     font-size: inherit;
     font-weight: $weight-book;
     letter-spacing: 1px;
-    margin-bottom: $base-padding;
+    line-height: $standard-padding;
+    margin-bottom: $base-padding-lite;
+    padding-bottom: $base-padding-lite;
     text-transform: uppercase;
   }
 
@@ -28,7 +38,13 @@
   .chart-item {
     @include span-columns(4);
 
+
     border-top: none;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: $base-padding;
     margin-top: 0;
     padding-top: 0;
 
@@ -63,18 +79,45 @@
   }
 
   figcaption {
-    display: flex;
-    font-weight: $weight-bold;
-    padding: $base-padding-lite;
+    @include font-size(1);
 
-    > * {
-      flex: 1;
-      width: 50%;
-    }
+    font-weight: $weight-light;
+    min-height: 100px;
+    padding: $base-padding-lite;
 
     > :last-child {
       text-align: right;
     }
+  }
+
+  eiti-data-map figcaption {
+    @include heading('para-sm');
+
+    font-weight: $weight-bold;
+    margin: 0;
+    min-height: inherit;
+  }
+}
+
+.chart-selector-wrapper {
+  display: inline-block;
+  margin-bottom: $base-padding-jumbo;
+
+  .chart-selector {
+    @include span-columns(2);
+
+    background-color: $mid-gray;
+    border: 0;
+    font-weight: $weight-book;
+    margin-right: $standard-padding;
+    margin-top: $standard-padding-lite;
+  }
+
+  .chart-description {
+    border-left: 1px solid $mid-gray;
+    float: left;
+    padding-left: 1.25rem;
+    width: 75%;
   }
 }
 

@@ -1,42 +1,37 @@
 {% assign gdp = site.data.national_gdp[state_id] %}
 
-<section id="gdp" class="economic gdp">
+{% assign year_range = '[2004, 2013]' %}
+
+<section id="gdp" is="year-switcher-section" class="economic gdp">
 
   <h3>Gross Domestic Product (GDP)</h3>
 
-  <div class="chart-list has-intro">
+  <div class="chart-selector-wrapper">
 
-    <div class="chart-list-intro">
-      <p>Extractive industries accounted for
-        {% if gdp[year].dollars %}
-          {{ gdp[year].percent | percent }}% (or
-          ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
-        {% else %}
-          The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.
-        {% endif %}
-      </p>
-    </div>
+    {% include year-selector.html year_range=year_range %}
+
+    <p class="chart-description">
+      A revolutionary description of GDP from extractives could go here. The selector should change only the GDP section
+    </p>
+  </div><!-- .chart-selector-wrapper -->
+
+  <div class="chart-list">
 
     {% assign _metrics = 'dollars' | split: ' ' %}
     {% for _metric in _metrics %}
+      {% assign _format = ',' %}
+      {% if _metric == 'dollars' %}
+        {% assign _format = '$,' %}
+      {% elsif _metric == 'percent' %}
+        {% assign _format = '%' %}
+      {% endif %}
+
     <section class="chart-item">
       <h3 class="chart-title">GDP ({{ _metric }})</h3>
 
       <figure class="chart chart-{{ _metric }}">
-        <eiti-bar-chart
-          aria-controls="gdp-figures-{{ _metric }}"
-          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
-          data-x-range="{{ year_range }}"
-          x-value="{{ year }}">
-        </eiti-bar-chart>
         <figcaption id="gdp-figures-{{ _metric }}">
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          {% assign _format = ',' %}
-          {% if _metric == 'dollars' %}
-            {% assign _format = '$,' %}
-          {% elsif _metric == 'percent' %}
-            {% assign _format = '%' %}
-          {% endif %}
+          Extractive industries accounted for
           <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
             {% if _metric == 'dollars' %}
               ${{ gdp[year].dollars | intcomma }}
@@ -44,7 +39,16 @@
               {{ gdp[year].percent | percent }}%
             {% endif %}
           </span>
+          of {{ state_name }}'s GDP in
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
         </figcaption>
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
+          data='{{ gdp | map_hash: _metric | jsonify }}'
+          data-x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
       </figure>
 
       {% if forloop.last %}

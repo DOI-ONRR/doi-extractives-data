@@ -36,14 +36,6 @@ US:
           volume: 376686236
         '2014':
           volume: 375266659
-    Coal Bed Methane (mcf):
-      name: Coal Bed Methane
-      units: mcf
-      volume:
-        '2009':
-          volume: 0
-        '2011':
-          volume: 0
     Condensate (bbl):
       name: Condensate
       units: bbl

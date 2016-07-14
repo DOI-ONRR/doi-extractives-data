@@ -1,42 +1,52 @@
 {% assign export_commodities = site.data.national_exports[state_id].commodities %}
 
-<section id="exports" class="economic exports">
+{% assign year_range = '[2011, 2014]' %}
+
+<section id="exports" is="year-switcher-section" class="economic exports">
 
   <h3>Exports</h3>
 
-  <div class="chart-list has-intro">
+  <div class="chart-list">
 
-    <div class="chart-list-intro">
+    <div class="chart-selector-wrapper">
 
-      {% include location/key-exports.html %}
+      {% include year-selector.html year_range=year_range %}
 
+      <p class="chart-description">
+        {% include location/key-exports.html %}
+      </p>
     </div>
+
+    {% assign _format = '$,' %}
+    {% assign _metric = 'dollars' %}
 
     {% for commodity in export_commodities %}
       {% assign exports = commodity[1] %}
       {% assign commodity_slug = commodity[0] | slugify %}
 
       {% if commodity[0] != "Total" and commodity[0] != "All" %}
-        <section id="exports-{{ commodity_slug }}" class="chart-item">
+        <section class="chart-item">
 
           <h3 class="chart-title">{{ commodity[0] }}</h3>
 
           <figure class="chart chart-{{ _metric }}">
-            <eiti-bar-chart
-              aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{% include location/line-chart-data.json values=exports key="dollars" %}'
-              data-x-range="{{ year_range }}"
-              selected="{{ year }}">
-            </eiti-bar-chart>
             <figcaption id="exports-figures-{{ commodity_slug }}">
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
-              <span class="eiti-bar-chart-y-value" data-format="$,">
+              <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
                 ${{ exports[year].dollars | intcomma }}
               </span>
+              of {{ commodity[0] }} was exported from {{ state_name }}
+              in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </figcaption>
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{{ exports | map_hash: _metric | jsonify }}'
+              data-x-range="{{ year_range }}"
+              x-value="{{ year }}">
+            </eiti-bar-chart>
+
           </figure>
 
-          <h4>
+        <!--   <h4>
             <button is="aria-toggle" aria-controls="exports-detail-{{ commodity_slug }}">
               &plus; Details
             </button>
@@ -47,7 +57,7 @@
               values=exports
               percent=false
             %}
-          </div>
+          </div> -->
 
         </section><!-- /.chart-item -->
       {% endif %}

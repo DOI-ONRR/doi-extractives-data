@@ -7,15 +7,14 @@
   }
 
   h2 {
-    border-top: 6px solid $light-green;
-    padding-bottom: $standard-padding;
-    padding-top: $standard-padding-fluffed;
+    border-bottom: 20px solid $light-green;
+    padding-bottom: $standard-padding-lite;
   }
 
   h3:not(.chart-title) {
-    border-top: 2px solid $light-green;
-    padding-bottom: $standard-padding;
-    padding-top: $standard-padding-fluffed;
+    border-bottom: 2px solid $light-green;
+    margin-bottom: $standard-padding;
+    padding-bottom: $standard-padding-lite;
   }
 
   h4 {
@@ -53,5 +52,10 @@
   .tab-interface {
     margin-bottom: $standard-padding-fluffed;
     margin-top: $standard-padding-fluffed;
+  }
+
+  .full-width-text {
+    margin-right: 25%;
+    width: 75%;
   }
 }

@@ -31,19 +31,21 @@ selector: list
 
 <h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
-The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,112 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
+The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,052 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
 
 <h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
-From 2007 to 2011, natural gas production quadrupled in northern Louisiana, where DeSoto Parish is located.[^2] More recently, declining natural gas prices have resulted in lower production numbers. In 2013, northern Louisiana produced a total of 1,858,222,187 thousand cubic feet (or Mcf) of natural gas.[^3]
+From 2007 to 2011, natural gas production quadrupled in northern Louisiana, where DeSoto Parish is located.[^2] More recently, declining natural gas prices have resulted in lower production numbers. For example, the spot price at the Henry Hub in Louisiana fell by about 35% from 2014 to 2015 (from an average $4.55 per MMBtu to an average of $3 per MMBtu in 2015).[^3n] Production in the region fell from 2.5 trillion cubic feet in 2011 to 1.3 trillion cubic feet in 2015.[^4n]
 
-In 2013, the U.S. Energy Information Administration estimated that there were 16.1 trillion cubic feet of {{ "proved reserves" | term }} in the Haneysville/Bossier Shale in Texas and Louisiana.[^4]
+In 2014, Louisiana had a total of 23.25 trillion cubic feet of proved natural gas reserves.[^5n] Louisiana experienced the largest drop in natural gas production in the country in 2014, with a decline of 16%.[^6n]
+
+In 2014, the U.S. Energy Information Administration estimated that there were 16.6 trillion cubic feet of {{ "proved reserves" | term }} in the Haneysville/Bossier Shale in Texas and Louisiana.[^4-->7n] Louisiana ranked fifth in the nation for proved shale gas reserves.[^8n]
 
 <img src="{{ site.baseurl }}/img/counties/la-production.png" alt="Northern Louisiana Natural Gas Production" class="case_studies_content-graph">
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
-Out of DeSoto’s nearly 28,000 residents, 548 people (about 2%) are employed in mining-support activities, which include oil and gas extraction.[^5] [^6] Of this group, 271 people are employed specifically in support activities for oil and gas extraction.[^7] Employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries — specifically mining, quarrying, and oil and gas extraction — in DeSoto Parish between 2004 and 2013.[^8]
+Out of DeSoto’s 27,000 residents, 548 people (or about 2%) were employed in mining-support activities in 2013, which included oil and gas extraction.[^5-->9n] [^6-->10n] Of this group, about half (271 people) were employed specifically in support activities for oil and gas extraction.[^7-->11n] More recent employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries — specifically mining, quarrying, and oil and gas extraction — in DeSoto Parish between 2005 and 2014.[^8-->12n]
 
 <img src="{{ site.baseurl }}/img/counties/la-wage.png" alt="DeSoto Parish Mining, Quarrying, and Oil and Gas Extraction Industries vs. All Other Industries Wage and Salary Employment 2004–2013" class="case_studies_content-graph">
 

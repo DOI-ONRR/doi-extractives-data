@@ -4,6 +4,9 @@
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
 
+{% assign county_federal_products = site.data.federal_county_production[state_id] %}
+
+
 <section id="federal-production" is="year-switcher-section" class="federal production">
 
   <h3>Production on federal land in {{ state_name }}</h2>
@@ -121,17 +124,16 @@
 
             </figure>
 
-
-            <div id="{{ toggle }}" aria-hidden="true">
+            <div class="table-container" id="{{ toggle }}" aria-hidden="true">
+              {% assign product_ref = product[0] %}
               {%
-                include location/display-production.html
-                units=units
+                include location/display-federal-production-county.html
                 year=year
-                values=production_values
-                percent=false
-                rank=false
+                values=county_federal_products
+                product_ref=product_ref
+                long_units=long_units
               %}
-            </div>
+            </div><!-- /.table-container -->
 
           </div><!-- /.map-container -->
 

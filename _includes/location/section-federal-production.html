@@ -6,7 +6,7 @@
 
 <section id="federal-production" is="year-switcher-section" class="federal production">
 
-  <h3>Land ownership</h2>
+  <h3>Production on federal land in {{ state_name }}</h2>
 
   {% include location/section-ownership.html %}
 
@@ -26,7 +26,7 @@
         {% if federal_products_num == 0 %}
           No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
         {% else %}
-          Is there some kind of summary sentence that would be good here? The year selector would update all references to year in the federal production section.
+          ONRR collects data about what natural resources are produced on federal land in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
         {% endif %}
       </p>
     </div>
@@ -92,7 +92,7 @@
           <div class="map-container">
 
             <h4 class="chart-title">
-              By county
+              Local production
             </h4>
 
 
@@ -101,7 +101,7 @@
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
-              {% capture caption %}County production for {{ product_name }} in {{ year }}{% endcapture %}
+              {% capture caption %}Local production of {{ product_name | downcase | suffix:units_suffix }} in {{ year }}{% endcapture %}
 
               <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
                 {% assign federal_county_production = site.data.federal_county_production[state_id] %}
@@ -128,8 +128,8 @@
                 units=units
                 year=year
                 values=production_values
-                percent=true
-                rank=true
+                percent=false
+                rank=false
               %}
             </div>
 
@@ -143,9 +143,5 @@
     </div><!-- /.chart-list -->
 
   </section>
-
-  <a href="{{site.baseurl}}/downloads/federal-production/">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal production data comes from the Office of Natural Resources Revenue
-  </a>
 
 </section>

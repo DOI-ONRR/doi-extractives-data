@@ -20,8 +20,9 @@
       {% include year-selector.html year_range=year_range %}
 
       <div class="chart-description">
-        <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
         <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
+        <p>In {{ year }}, jobs in the extractive industries that paid a wage or salary made up {{ jobs_percent | percent }} % of statewide employment in {{ state_name }}.</p>
+        <p>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#jobs">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a></p>
       </div>
     </div><!-- .chart-selector-wrapper -->
 
@@ -77,7 +78,7 @@
         <figure class="container">
           <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
             {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-            {% capture caption %}County extractives employment (jobs, {{ year }}){% endcapture %}
+            {% capture caption %}Local employment in extractive industries (jobs, {{ year }}){% endcapture %}
 
             {%
               include county-map.html
@@ -106,39 +107,36 @@
 
   </section><!-- /.chart-list -->
 
-  <p>
-    <a href="{{site.baseurl}}/downloads/#jobs">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-    </a>
-  </p>
-
-
-  <h3>Self-employment jobs</h3>
+  <h3 id="self-employment">Self-employment</h3>
 
   <section class="chart-list" is="year-switcher-section">
     <div class="chart-selector-wrapper">
 
       {% include year-selector.html year_range=year_range %}
 
-      <p class="chart-description">
-        <strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
-      </p>
+      <div class="chart-description">
+        <p>
+          <strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
+        </p>
+        <p>
+          Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#jobs">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        </p>
+      </div>
     </div><!-- .chart-selector-wrapper -->
 
     {% assign _metrics = 'count' | split: ' ' %}
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title">Self-employment jobs</h3>
+      <h3 class="chart-title">Self-employment</h3>
 
       <figure class="chart">
         <figcaption id="self-employment-figures-{{ _metric }}">
           In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-          there were
           <span class="eiti-bar-chart-y-value" data-format=",">
             {{ self_employment_jobs[year].jobs | intcomma }}
           </span>
-          self-employed extractive industries professionals in
+          of people were self-employed in the extractive industries
           {{ state_name }}.
         </figcaption>
         <eiti-bar-chart
@@ -153,11 +151,5 @@
     </section><!-- /.chart-item -->
     {% endfor %}
   </section><!-- /.chart-list -->
-
-  <p>
-    <a href="{{site.baseurl}}/downloads/#jobs">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
-    </a>
-  </p>
 
 </section>

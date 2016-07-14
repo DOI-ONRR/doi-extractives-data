@@ -16,6 +16,24 @@
     background: $light-gray;
   }
 
+  .numberless {
+    vertical-align: middle;
+
+    .text {
+      display: none;
+    }
+  }
+
+  .swatch {
+    background: $neutral-gray;
+    border: 1px solid $neutral-gray;
+    display: inline-block;
+    height: 1rem;
+    margin-right: $standard-padding-lite;
+    vertical-align: text-bottom;
+    width: 1rem;
+  }
+
   .numeric,
   [data-value] {
     text-align: left;

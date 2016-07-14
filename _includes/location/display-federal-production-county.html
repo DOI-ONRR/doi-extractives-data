@@ -1,18 +1,19 @@
 {% assign product_ref = include.product_ref %}
-
-{% assign product_name = county[1].products[1].name %}
+{% assign caption = include.caption %}
 
 {% assign units = county[1].products[1].units %}
 {% if include.long_units %}
   {% assign units = include.long_units %}
 {% endif %}
 
+<label>{{ caption }}</label>
 <table is="bar-chart-table" data-percent-max="100">
   <thead>
     <tr>
       <th>County</th>
 
-      <th class="numeric" data-series="volume">Volume {{ county[1].products[1].name }} ({{ units }})</th>
+      <th class="numeric" data-series="volume">{{ units | capitalize }}</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -21,8 +22,9 @@
 
     {% if product_volume > 0 %}
     <tr>
-      <td>{{ county[1].name }}</td>
-      <td class="numeric" data-series="volume" data-value="{{ product_volume }}">{{ product_volume | intcomma }}</td>
+      <td><div class="swatch" data-value-swatch="{{ product_volume }}"></div>{{ county[1].name }}</td>
+      <td>{{ product_volume | intcomma }}</td>
+      <td class="numberless" data-series="volume" data-value="{{ product_volume }}">{{ product_volume | intcomma }}</td>
     </tr>
     {% endif %}
   {% endfor %}

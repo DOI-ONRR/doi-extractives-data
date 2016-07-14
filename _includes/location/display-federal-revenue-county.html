@@ -1,0 +1,20 @@
+<table is="bar-chart-table" data-percent-max="100">
+  <thead>
+    <tr>
+      <th>County</th>
+      <th class="numeric" data-series="volume">Revenue</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for county in include.values %}
+    {% assign revenue_amount = county[1].revenue[include.year] %}
+
+    {% if revenue_amount > 0 %}
+    <tr>
+      <td>{{ county[1].name }}</td>
+      <td class="numeric" data-series="volume" data-value="{{ revenue_amount }}">${{ revenue_amount | intcomma }}</td>
+    </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>

@@ -62,7 +62,7 @@
       </article>
     </div>
 
-    <section class="chart-list">
+    <section class="chart-list has-intro">
 
       <h4>Revenue from resources extracted on federal land in {{ state_name }}</h4>
 
@@ -75,49 +75,61 @@
         </p>
       </div>
 
+      <section class="county-map-table">
+        {% assign county_revenue = site.data.county_revenue[state_id] %}
+        {%
+          include location/state-federal-revenue-county.html
+          county_revenue=county_revenue
+          state_revenue=revenue_commodities
+          year=year
+          year_range=year_range
+        %}
+      </section>
 
       {% for commodity in revenue_commodities %}
         {% assign revenue = commodity[1][year].revenue %}
         {% assign commodity_name = commodity[0] | lookup: commodity_names %}
         {% assign commodity_slug = commodity[0] | slugify %}
 
-        <section id="revenue-{{ commodity_slug }}" class="chart-item">
+        {% if commodity[0] != 'All' %}
+          <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
-          <h3 class="chart-title">{{ commodity_name }}</h3>
+            <h3 class="chart-title">{{ commodity_name }}</h3>
 
-          <figure class="chart">
-            {% assign annual_revenue = commodity[1] %}
-            <figcaption id="revenue-figures-{{ commodity_slug }}">
-              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-                companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
-              {{ commodity_name | downcase }} on federal land in {{ state_name }}.
+            <figure class="chart">
+              {% assign annual_revenue = commodity[1] %}
+              <figcaption id="revenue-figures-{{ commodity_slug }}">
+                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+                  companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
+                {{ commodity_name | downcase }} on federal land in {{ state_name }}.
 
-            </figcaption>
-            <eiti-bar-chart
-              data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
-              aria-controls="revenue-figures-{{ commodity_slug }}"
-              x-range="{{ year_range }}"
-              x-value="{{ year }}">
-            </eiti-bar-chart>
+              </figcaption>
+              <eiti-bar-chart
+                data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
+                aria-controls="revenue-figures-{{ commodity_slug }}"
+                x-range="{{ year_range }}"
+                x-value="{{ year }}">
+              </eiti-bar-chart>
 
-          </figure>
+            </figure>
 
-          <!-- <h4>
-            <button is="aria-toggle"
-              aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
-          </h4>
-          <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
-            {% assign revenue_values = commodity[1] %}
-            {%
-              include location/display-revenue.html
-              year=year
-              values=revenue_values
-              percent=false
-              rank=false
-            %}
-          </div> -->
+            <!-- <h4>
+              <button is="aria-toggle"
+                aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
+            </h4>
+            <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
+              {% assign revenue_values = commodity[1] %}
+              {%
+                include location/display-revenue.html
+                year=year
+                values=revenue_values
+                percent=false
+                rank=false
+              %}
+            </div> -->
 
-        </section>
+          </section>
+        {% endif %}
 
       {% endfor %}
 

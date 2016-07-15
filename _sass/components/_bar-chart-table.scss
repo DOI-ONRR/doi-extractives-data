@@ -24,6 +24,10 @@
     }
   }
 
+  [data-year-values="null"] {
+    display: none;
+  }
+
   .swatch {
     background: $neutral-gray;
     border: 1px solid $neutral-gray;

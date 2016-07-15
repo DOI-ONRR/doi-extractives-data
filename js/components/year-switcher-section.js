@@ -6,6 +6,7 @@
     var select = root.selectAll('select.chart-selector');
     var charts = root.selectAll('eiti-bar-chart');
     var maps = root.selectAll('eiti-data-map');
+    var chartTables = maps.selectAll('table[is="bar-chart-table"]')
 
     var update = function(year) {
       charts.property('x', year);
@@ -13,6 +14,9 @@
         this.setYear(year);
       });
       select.property('value',  year);
+      chartTables.each(function(){
+        this.setYear(year);
+      })
     };
 
     select.on('change.year', function() {

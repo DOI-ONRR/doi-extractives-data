@@ -5,8 +5,96 @@
     this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
     this._cells = this._cells.concat(this.nested_cells)
 
-    this.update();
+    // this.update();
+    this.setYear();
   };
+
+  var setYear = function(year) {
+    var updateValues = function(year, context, attr, text) {
+      var values = JSON.parse(context.getAttribute('data-year-values'));
+      // var format = d3.format(context.attr('data-format') || ',');
+      if (values) {
+        console.log(values)
+        context.setAttribute(attr, values[year])
+        if (text) {
+          context.innerHTML = values[year];
+        }
+      }
+    }
+    var year = year || '2013';
+    var bars = d3.select(this).selectAll('[data-value]')
+    var texts = d3.select(this).selectAll('[data-value-text]')
+    var swatches = d3.select(this).selectAll('[data-value-swatch]')
+
+    if (bars.attr('data-year-values')) {
+      bars.datum(function() {
+          if (this.getAttribute('data-year-values')) {
+            var data = JSON.parse(this.getAttribute('data-year-values') || null);
+            if (data) {
+              return data[year] || 0;
+            }
+
+          }
+        })
+        .attr('data-value', function(d) {
+          return d;
+        });
+    }
+
+    if (texts.attr('data-year-values')) {
+      texts.datum(function() {
+          if (this.getAttribute('data-year-values')) {
+            var data = JSON.parse(this.getAttribute('data-year-values') || null);
+            if (data) {
+              return data[year] || 0;
+            }
+
+          }
+        })
+        .text(function(d) {
+          var format = d3.format(this.getAttribute('data-format') || ',')
+          if (format) {
+            return format(d);
+          } else {
+            return d;
+          }
+
+        });
+    }
+
+    if (swatches.attr('data-year-values')) {
+      swatches.datum(function() {
+          if (this.getAttribute('data-year-values')) {
+            var data = JSON.parse(this.getAttribute('data-year-values') || null);
+            if (data) {
+              return data[year] || 0;
+            }
+
+          }
+        })
+        .attr('data-value-swatch', function(d) {
+          return d;
+        });
+    }
+
+
+    this.update();
+      // .each(function(){
+      //   // updateValues(year, this, 'data-value')
+
+      //   var values = JSON.parse(this.attr('data-year-values')
+      // });
+
+    // var texts = d3.select(this).selectAll('[data-value-text]')
+    //   .each(function(){
+    //     updateValues(year, this, 'data-value-text', true)
+    //   });
+
+    // var swatches = d3.select(this).selectAll('[data-value-swatch]')
+    //   .each(function(){
+    //     updateValues(year, this, 'data-value-swatch')
+    //   });
+  }
 
   var update = function() {
     if (!this._cells.length) {
@@ -166,6 +254,8 @@
         }},
 
         update: {value: update},
+
+        setYear: {value: setYear},
 
         orient: {
           get: function() {

@@ -10,6 +10,7 @@ var config = {
     'explore.min': './js/src/explore.js',
     'homepage.min': './js/src/homepage.js',
     'state-pages.min': './js/src/state-pages.js',
+    'gdp-react.min': './js/pages/gdp-react.js',
   },
 
   output: {

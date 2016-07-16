@@ -120,6 +120,8 @@ permalink: /explore/gdp/
 
       </section>
 
+      <div id="gdp-react"></div>
+
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
         <div class="map-wrapper">
@@ -159,4 +161,5 @@ permalink: /explore/gdp/
     'US': 'the entire U.S.'
   };
 </script>
+<script src="{{ site.baseurl }}/js/lib/gdp-react.min.js"></script>
 <script src="{{ site.baseurl }}/js/pages/gdp.js"></script>

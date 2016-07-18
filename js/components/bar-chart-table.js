@@ -12,10 +12,13 @@
 
   var setYear = function(year) {
 
+    var root = d3.select(this);
+
     var year = year || '2013';
-    var bars = d3.select(this).selectAll('[data-value]')
-    var texts = d3.select(this).selectAll('[data-value-text]')
-    var swatches = d3.select(this).selectAll('[data-value-swatch]')
+    var bars = root.selectAll('[data-value]');
+    var texts = root.selectAll('[data-value-text]');
+    var swatches = root.selectAll('[data-value-swatch]');
+    var label = d3.select(this.parentElement).select('label');
 
     bars.datum(function() {
         var yearVals = this.getAttribute('data-year-values') &&
@@ -81,6 +84,10 @@
           return that.eitiDataMap.scale(d);
         }
       });
+
+    label.select('[data-year]')
+      .attr('data-year', year)
+      .text(year)
   }
 
   var update = function() {

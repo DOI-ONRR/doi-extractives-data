@@ -19,6 +19,16 @@
       return JSON.parse(yearVals);
     }
 
+    function cellData(data, year, property) {
+      if (data && data[year] && property) {
+        return data[year][property] || 0;
+      } else if (data && !property) {
+        return data[year] || 0;
+      } else {
+        return 0;
+      }
+    }
+
     var root = d3.select(this);
 
     var year = year || '2013';
@@ -31,31 +41,36 @@
 
     bars.datum(function() {
         var data = parseYearVals(this)
-        if (data) {
-          return data[year] || 0;
-        } else {
-          return 0;
-        }
+        var property = this.getAttribute('data-years-property');
+        return cellData(data, year, property);
       })
       .attr('data-value', function(d) {
-        console.log('data-value', d)
         return d;
       });
 
     texts.datum(function() {
         var data = parseYearVals(this)
-        if (data) {
-          return data[year] || 0;
-        } else {
-          return 0;
-        }
+        var property = this.getAttribute('data-years-property');
+        return cellData(data, year, property);
       })
       .attr('data-value-text', function(d) {
         return d;
       })
       .text(function(d) {
         var format = d3.format(this.getAttribute('data-format') || ',')
-        console.log('data-value', d)
+
+        if (this.getAttribute('data-format') === '%') {
+          format = function(d) {
+            if (d === 0) {
+              return 0;
+            } else if (d < 1) {
+              return '<1%';
+            }
+
+            return d3.format('%')(d / 100);
+          }
+        }
+
         if (format) {
           return format(d);
         } else {
@@ -66,14 +81,10 @@
     var that = this;
     swatches.datum(function() {
         var data = parseYearVals(this)
-        if (data) {
-          return data[year] || 0;
-        } else {
-          return 0;
-        }
+        var property = this.getAttribute('data-years-property');
+        return cellData(data, year, property);
       })
       .attr('data-value-swatch', function(d) {
-        console.log('data-value-swatch', d)
         return d;
       })
       .style('background-color', function (d) {
@@ -91,7 +102,6 @@
       return data[year] || 0;
     })
     .attr('aria-hidden', function (d) {
-      console.log(d)
       return !d;
     })
   }

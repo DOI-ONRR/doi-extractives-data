@@ -63,12 +63,12 @@
       </h4>
 
 
-      {% capture toggle %}federal-reveneu-All-counties{% endcapture %}
+      {% capture toggle %}federal-revenue-All-counties{% endcapture %}
       <figure>
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {% capture years_key %}revenue{% endcapture %}
         {% assign _width ='inherit' %}
-        {% capture caption %}Local revenue in {{ year }}{% endcapture %}
+        {% capture caption %}Local revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
         <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
 
@@ -85,15 +85,17 @@
           %}
         </eiti-data-map>
 
+        <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+          {%
+            include location/display-federal-revenue-county.html
+            year=year
+            values=county_revenue
+            caption=caption
+          %}
+        </div><!-- /.table-container -->
       </figure>
 
-      <div class="table-container" id="{{ toggle }}" aria-hidden="true">
-        {%
-          include location/display-federal-revenue-county.html
-          year=year
-          values=county_revenue
-        %}
-      </div><!-- /.table-container -->
+
 
     </div><!-- /.map-container -->
 

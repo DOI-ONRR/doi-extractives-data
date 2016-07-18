@@ -3,7 +3,7 @@
     float: left;
   }
 
-  table[is="bar-chart-table"] {
+  [is="bar-chart-table"] {
     border: 0;
     width: 100%;
 
@@ -18,6 +18,7 @@
 
     thead {
       background-color: transparent;
+
       tr {
         border-bottom: 2px solid $mid-gray;
       }

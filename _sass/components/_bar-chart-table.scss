@@ -26,6 +26,10 @@
     .bar {
       background-color: transparent
     }
+
+    &[data-value^="-"] .bar {
+      border: 0px;
+    }
   }
 
   [data-year-values="null"] {

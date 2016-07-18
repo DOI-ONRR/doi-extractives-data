@@ -5,11 +5,12 @@
     this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
     this._cells = this._cells.concat(this.nested_cells)
 
-    // this.update();
-    this.setYear();
+    this.update();
+    // this.setYear();
   };
 
   var setYear = function(year) {
+    console.log('setYear-==============')
     var updateValues = function(year, context, attr, text) {
       var values = JSON.parse(context.getAttribute('data-year-values'));
       // var format = d3.format(context.attr('data-format') || ',');
@@ -28,31 +29,39 @@
 
     if (bars.attr('data-year-values')) {
       bars.datum(function() {
-          if (this.getAttribute('data-year-values')) {
-            var data = JSON.parse(this.getAttribute('data-year-values') || null);
-            if (data) {
-              return data[year] || 0;
-            }
-
+          var yearVals = this.getAttribute('data-year-values') &&
+            this.getAttribute('data-year-values') !== 'null'
+              ? this.getAttribute('data-year-values')
+              : '{}';
+          var data = JSON.parse(yearVals);
+          if (data) {
+            return data[year] || 0;
+          } else {
+            return 0;
           }
         })
         .attr('data-value', function(d) {
+          console.log('data-value', d)
           return d;
         });
     }
 
     if (texts.attr('data-year-values')) {
       texts.datum(function() {
-          if (this.getAttribute('data-year-values')) {
-            var data = JSON.parse(this.getAttribute('data-year-values') || null);
-            if (data) {
-              return data[year] || 0;
-            }
-
+          var yearVals = this.getAttribute('data-year-values') &&
+            this.getAttribute('data-year-values') !== 'null'
+              ? this.getAttribute('data-year-values')
+              : '{}';
+          var data = JSON.parse(yearVals);
+          if (data) {
+            return data[year] || 0;
+          } else {
+            return 0;
           }
         })
         .text(function(d) {
           var format = d3.format(this.getAttribute('data-format') || ',')
+          console.log('data-value', d)
           if (format) {
             return format(d);
           } else {
@@ -62,23 +71,27 @@
         });
     }
 
-    if (swatches.attr('data-year-values')) {
-      swatches.datum(function() {
-          if (this.getAttribute('data-year-values')) {
-            var data = JSON.parse(this.getAttribute('data-year-values') || null);
-            if (data) {
-              return data[year] || 0;
-            }
+    // if (swatches.attr('data-year-values')) {
+    //   swatches.datum(function() {
+    //       var yearVals = this.getAttribute('data-year-values') &&
+    //           this.getAttribute('data-year-values') !== 'null'
+    //             ? this.getAttribute('data-year-values')
+    //             : '{}';
+    //       var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+    //       if (data) {
+    //         return data[year] || 0;
+    //       } else {
+    //         return 0;
+    //       }
+    //     })
+    //     .attr('data-value-swatch', function(d) {
+    //       console.log('data-value-swatch', d)
+    //       return d;
+    //     });
+    // }
 
-          }
-        })
-        .attr('data-value-swatch', function(d) {
-          return d;
-        });
-    }
 
-
-    this.update();
+    // this.update();
       // .each(function(){
       //   // updateValues(year, this, 'data-value')
 
@@ -97,6 +110,7 @@
   }
 
   var update = function() {
+    console.log('update-------------------------------')
     if (!this._cells.length) {
       return;
     }

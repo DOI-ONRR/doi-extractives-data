@@ -61,8 +61,6 @@
             .domain(domain)
             .range(colors);
 
-          this.setAttribute('scale', scale);
-
           marks.attr('fill', scale);
 
 
@@ -146,13 +144,13 @@
           // end trim
 
 
-          var swatches = d3.select(this).selectAll('.swatch[data-value-swatch]')
-            .datum(function() {
-              return +this.getAttribute('data-value-swatch') || 0;
-            });
+          // var swatches = d3.select(this).selectAll('.swatch[data-value-swatch]')
+          //   .datum(function() {
+          //     return +this.getAttribute('data-value-swatch') || 0;
+          //   });
 
-          swatches.style('background-color', scale);
-          console.log(swatches)
+          // swatches.style('background-color', scale);
+          // console.log(swatches)
         }}
       }
     )

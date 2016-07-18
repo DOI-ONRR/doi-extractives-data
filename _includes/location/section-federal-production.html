@@ -121,23 +121,24 @@
                   toggle=toggle
                 %}
 
-                <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
-                  {% assign product_ref = product[0] %}
-                  {%
-                    include location/display-federal-production-county.html
-                    year=year
-                    years=years_key
-                    values=county_federal_products
-                    product_ref=product_ref
-                    long_units=long_units
-                    caption=caption
-                  %}
-                </div><!-- /.table-container -->
+
+
               </eiti-data-map>
 
+              <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+                {% assign product_ref = product[0] %}
+                {%
+                  include location/display-federal-production-county.html
+                  year=year
+                  years=years_key
+                  values=county_federal_products
+                  product_ref=product_ref
+                  long_units=long_units
+                  caption=caption
+                %}
+              </div><!-- /.table-container -->
+
             </figure>
-
-
 
           </div><!-- /.map-container -->
 

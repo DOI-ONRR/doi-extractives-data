@@ -16,11 +16,15 @@
     background: $light-gray;
   }
 
-  .numberless {
+  .numberless[data-value] {
     vertical-align: middle;
 
     .text {
       display: none;
+    }
+
+    .bar {
+      background-color: transparent
     }
   }
 

@@ -11,6 +11,13 @@
   };
 
   var setYear = function(year) {
+    function parseYearVals(context) {
+      var yearVals = context.getAttribute('data-year-values') &&
+          context.getAttribute('data-year-values') !== 'null'
+            ? context.getAttribute('data-year-values')
+            : '{}';
+      return JSON.parse(yearVals);
+    }
 
     var root = d3.select(this);
 
@@ -20,12 +27,10 @@
     var swatches = root.selectAll('[data-value-swatch]');
     var label = d3.select(this.parentElement).select('label');
 
+    var rows = root.selectAll('tr[data-year-values]');
+
     bars.datum(function() {
-        var yearVals = this.getAttribute('data-year-values') &&
-          this.getAttribute('data-year-values') !== 'null'
-            ? this.getAttribute('data-year-values')
-            : '{}';
-        var data = JSON.parse(yearVals);
+        var data = parseYearVals(this)
         if (data) {
           return data[year] || 0;
         } else {
@@ -38,11 +43,7 @@
       });
 
     texts.datum(function() {
-        var yearVals = this.getAttribute('data-year-values') &&
-          this.getAttribute('data-year-values') !== 'null'
-            ? this.getAttribute('data-year-values')
-            : '{}';
-        var data = JSON.parse(yearVals);
+        var data = parseYearVals(this)
         if (data) {
           return data[year] || 0;
         } else {
@@ -64,11 +65,7 @@
 
     var that = this;
     swatches.datum(function() {
-        var yearVals = this.getAttribute('data-year-values') &&
-            this.getAttribute('data-year-values') !== 'null'
-              ? this.getAttribute('data-year-values')
-              : '{}';
-        var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+        var data = parseYearVals(this)
         if (data) {
           return data[year] || 0;
         } else {
@@ -88,6 +85,15 @@
     label.select('[data-year]')
       .attr('data-year', year)
       .text(year)
+
+    rows.datum(function(){
+      var data = parseYearVals(this);
+      return data[year] || 0;
+    })
+    .attr('aria-hidden', function (d) {
+      console.log(d)
+      return !d;
+    })
   }
 
   var update = function() {

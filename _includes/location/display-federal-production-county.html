@@ -8,13 +8,13 @@
 
 
 <label>{{ caption }}</label>
-<table is="bar-chart-table"
-       data-percent-max="100">
+<table is='bar-chart-table'
+       data-percent-max='100'>
   <thead>
     <tr>
       <th>County</th>
 
-      <th class="numeric" data-series="volume">{{ units | capitalize }}</th>
+      <th class='numeric' data-series='volume'>{{ units | capitalize }}</th>
       <th></th>
     </tr>
   </thead>
@@ -25,14 +25,14 @@
     {% assign years_values =  county[1].products[product_ref].volume %}
     {% if years_values != 'null' years_values != null %}
       <tr data-year-values='{{ years_values | jsonify }}'>
-        <td><div class="swatch"
-                 data-value-swatch="{{ product_volume }}"
-                 data-year-values="{{ years_values | jsonify }}"></div>{{ county[1].name }}</td>
-        <td data-value-text="{{ product_volume }}"
+        <td><div class='swatch'
+                 data-value-swatch='{{ product_volume }}'
+                 data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
+        <td data-value-text='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
-        <td class="numberless"
-            data-series="volume"
-            data-value="{{ product_volume }}"
+        <td class='numberless'
+            data-series='volume'
+            data-value='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
       </tr>
     {% endif %}

@@ -10,9 +10,6 @@
     var mapTables = root.selectAll('.eiti-data-map-table');
 
     var chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
-    console.log(maps)
-    console.log('=============')
-    console.log(chartTables)
 
     var update = function(year) {
       charts.property('x', year);

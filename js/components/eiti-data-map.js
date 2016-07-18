@@ -64,6 +64,8 @@
           marks.attr('fill', scale);
 
 
+          this.scale = scale;
+
           // start map legend
           function uniq(value, index, self) {
             return self.indexOf(value) === index;

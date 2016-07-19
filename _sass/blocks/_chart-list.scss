@@ -97,6 +97,11 @@
     margin: 0;
     min-height: inherit;
   }
+
+  .county-map-table {
+    margin-bottom: $standard-padding-extra;
+    width: 100%;
+  }
 }
 
 .chart-selector-wrapper {

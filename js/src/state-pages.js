@@ -2,10 +2,11 @@
   'use strict';
 
   require('./../components/aria-toggle.js');
-  require('./../components/bar-chart-table.js');
   require('./../components/eiti-data-map.js');
+  require('./../components/bar-chart-table.js');
   require('./../components/eiti-bar-chart.js');
   require('./../components/year-switcher-section.js');
+
 
   require('./../components/aria-tabs.js');
   require('./../components/sticky-nav.js');

@@ -7,7 +7,7 @@
 {% assign county_federal_products = site.data.federal_county_production[state_id] %}
 
 
-<section id="federal-production" is="year-switcher-section" class="federal production">
+<section id="federal-production" class="federal production">
 
   <h3>Production on federal land in {{ state_name }}</h2>
 
@@ -90,7 +90,7 @@
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
-              {% capture caption %}Local production of {{ product_name | downcase | suffix:units_suffix }} in {{ year }}{% endcapture %}
+              {% capture caption %}Local production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
               <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
                 {% assign federal_county_production = site.data.federal_county_production[state_id] %}
@@ -106,20 +106,24 @@
                   caption=caption
                   toggle=toggle
                 %}
+
+
+
               </eiti-data-map>
 
-            </figure>
+              <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+                {% assign product_ref = product[0] %}
+                {%
+                  include location/display-federal-production-county.html
+                  year=year
+                  values=county_federal_products
+                  product_ref=product_ref
+                  long_units=long_units
+                  caption=caption
+                %}
+              </div><!-- /.table-container -->
 
-            <div class="table-container" id="{{ toggle }}" aria-hidden="true">
-              {% assign product_ref = product[0] %}
-              {%
-                include location/display-federal-production-county.html
-                year=year
-                values=county_federal_products
-                product_ref=product_ref
-                long_units=long_units
-              %}
-            </div><!-- /.table-container -->
+            </figure>
 
           </div><!-- /.map-container -->
 

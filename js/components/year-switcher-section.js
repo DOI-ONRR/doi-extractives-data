@@ -7,12 +7,21 @@
     var charts = root.selectAll('eiti-bar-chart');
     var maps = root.selectAll('eiti-data-map');
 
+    var mapTables = root.selectAll('.eiti-data-map-table');
+
+    var chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
+
     var update = function(year) {
       charts.property('x', year);
       maps.each(function() {
         this.setYear(year);
       });
-      select.property('value',  year);
+      select.property('value', year);
+      chartTables.each(function(){
+        console.log(this)
+        this.setYear(year);
+        this.update();
+      })
     };
 
     select.on('change.year', function() {

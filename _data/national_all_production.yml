@@ -1,32 +1,8 @@
 US:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 83068000
-        '2005':
-          volume: 87332000
-        '2006':
-          volume: 96525000
-        '2007':
-          volume: 105241000
-        '2008':
-          volume: 126099000
-        '2009':
-          volume: 144280000
-        '2010':
-          volume: 167176000
-        '2011':
-          volume: 193982000
-        '2012':
-          volume: 218335000
-        '2013':
-          volume: 253508000
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 53538000
@@ -74,7 +50,7 @@ US:
           volume: 735700696
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 268420000
@@ -98,7 +74,7 @@ US:
           volume: 268565000
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 14811000
@@ -244,33 +220,9 @@ US:
           volume: 2558448000
         '2013':
           volume: 2903313000
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 15421000
-        '2005':
-          volume: 15421000
-        '2006':
-          volume: 16096000
-        '2007':
-          volume: 16522000
-        '2008':
-          volume: 17735000
-        '2009':
-          volume: 18443000
-        '2010':
-          volume: 18914000
-        '2011':
-          volume: 19221000
-        '2012':
-          volume: 19826000
-        '2013':
-          volume: 20826000
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 575000
@@ -294,7 +246,7 @@ US:
           volume: 9032000
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 14144000
@@ -316,27 +268,3 @@ US:
           volume: 140825000
         '2013':
           volume: 167841000
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 38114000
-        '2005':
-          volume: 38855000
-        '2006':
-          volume: 38762000
-        '2007':
-          volume: 39011000
-        '2008':
-          volume: 37302000
-        '2009':
-          volume: 36048000
-        '2010':
-          volume: 37172000
-        '2011':
-          volume: 37447000
-        '2012':
-          volume: 37803000
-        '2013':
-          volume: 40028000

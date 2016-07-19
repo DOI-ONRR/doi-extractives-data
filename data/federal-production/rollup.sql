@@ -2,7 +2,9 @@
 DROP TABLE IF EXISTS federal_state_production;
 CREATE TABLE federal_state_production AS
     SELECT
-        year, state, product, product_name, units,
+        year, state,
+        product, product_name,
+        units,
         SUM(volume) AS volume
     FROM federal_county_production
     WHERE
@@ -26,7 +28,22 @@ CREATE TABLE federal_regional_production AS
 UNION
     SELECT
         year, area.id AS region_id, 'offshore' AS region_type,
-        product, product_name, units, SUM(volume) AS volume
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'Salt (tons)'
+            ELSE product
+        END AS product,
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'Salt'
+            ELSE product_name
+        END AS product_name,
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'tons'
+            ELSE units
+        END AS units,
+        SUM(volume) AS volume
     FROM federal_offshore_production AS offshore
     INNER JOIN offshore_planning_areas AS area
     ON

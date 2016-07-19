@@ -116,7 +116,7 @@ federal_production:
       units: tons
       value: 314483
       rank: 1
-      percent: 100
+      percent: 92.09
     - product: Gas (mcf)
       name: Gas
       units: mcf
@@ -153,7 +153,7 @@ federal_production:
       units: tons
       value: 372956
       rank: 1
-      percent: 100
+      percent: 93.01
     - product: Gas (mcf)
       name: Gas
       units: mcf
@@ -190,7 +190,7 @@ federal_production:
       units: tons
       value: 434018
       rank: 1
-      percent: 100
+      percent: 94.19
     - product: Gas (mcf)
       name: Gas
       units: mcf
@@ -233,7 +233,7 @@ federal_production:
       units: tons
       value: 439367
       rank: 1
-      percent: 100
+      percent: 95.73
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -276,7 +276,7 @@ federal_production:
       units: tons
       value: 409345
       rank: 1
-      percent: 100
+      percent: 95.25
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -319,7 +319,7 @@ federal_production:
       units: tons
       value: 425125
       rank: 1
-      percent: 100
+      percent: 94.12
     - product: Oil (bbl)
       name: Oil
       units: bbl

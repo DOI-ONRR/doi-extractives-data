@@ -8,13 +8,16 @@ tons:
 short tons:
   long: short tons
   short: short tons
-# oil
+# oil and gas
 bbl:
   long: barrels
   short: bbl
 barrels:
   long: barrels
   short: bbl
+gal:
+  long: gallons
+  short: gal
 # units of energy
 kilowatt hours:
   short: kWh
@@ -49,6 +52,17 @@ direct use, millions of gallons:
   suffix: energy
   title: direct use
 direct utilization, hundreds of gallons:
+  short: cgal
+  long: hundred gallons
+  suffix: energy
+  title: direct use
+Geothermal - Direct Utilization, Other (cgal):
+  cgal:
+  short: cgal
+  long: hundred gallons
+  suffix: energy
+  title: direct use
+cgal:
   short: cgal
   long: hundred gallons
   suffix: energy

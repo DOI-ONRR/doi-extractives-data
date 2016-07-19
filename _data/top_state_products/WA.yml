@@ -2,63 +2,63 @@ all_production:
   '2005':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 72075000
       rank: 1
       percent: 26.66
   '2006':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 82008000
       rank: 1
       percent: 28.35
   '2007':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 78829000
       rank: 1
       percent: 31.85
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 77637000
       rank: 1
       percent: 30.47
   '2009':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 72933000
       rank: 1
       percent: 26.67
   '2010':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 68288000
       rank: 1
       percent: 26.24
   '2011':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 91818000
       rank: 1
       percent: 28.75
   '2012':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 89464000
       rank: 1
       percent: 32.39
   '2013':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 78155000
       rank: 1
       percent: 29.1

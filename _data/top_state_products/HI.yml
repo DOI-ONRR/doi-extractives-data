@@ -2,21 +2,21 @@ all_production:
   '2005':
     - product: Geothermal
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       value: 222000
       rank: 3
       percent: 1.51
   '2006':
     - product: Geothermal
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       value: 212000
       rank: 3
       percent: 1.46
   '2007':
     - product: Geothermal
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       value: 230000
       rank: 3
       percent: 1.57

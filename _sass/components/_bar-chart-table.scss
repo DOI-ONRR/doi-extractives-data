@@ -16,6 +16,36 @@
     background: $light-gray;
   }
 
+  .numberless[data-value] {
+    vertical-align: middle;
+
+    .text {
+      display: none;
+    }
+
+    .bar {
+      background-color: transparent
+    }
+
+    &[data-value^="-"] .bar {
+      border: 0px;
+    }
+  }
+
+  [data-year-values="null"] {
+    display: none;
+  }
+
+  .swatch {
+    background: $neutral-gray;
+    border: 1px solid $neutral-gray;
+    display: inline-block;
+    height: 1rem;
+    margin-right: $standard-padding-lite;
+    vertical-align: text-bottom;
+    width: 1rem;
+  }
+
   .numeric,
   [data-value] {
     text-align: left;

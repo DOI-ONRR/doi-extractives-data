@@ -61,9 +61,10 @@
             .domain(domain)
             .range(colors);
 
-
           marks.attr('fill', scale);
 
+
+          this.scale = scale;
 
           // start map legend
           function uniq(value, index, self) {
@@ -127,22 +128,31 @@
           // end consolidation
           // end map legend
 
-           // start trim height on map container
-           var svgContainer = d3.select(this)
-             .selectAll('.svg-container[data-dimensions]')
-             .datum(function() {
-               return (this.getBoundingClientRect().width
-                 * +this.getAttribute('data-dimensions')
-                 / 100)
-                 + 50;
-             });
+          // start trim height on map container
+          var svgContainer = d3.select(this)
+            .selectAll('.svg-container[data-dimensions]')
+            .datum(function() {
+              return (this.getBoundingClientRect().width
+                * +this.getAttribute('data-dimensions')
+                / 100)
+                + 50;
+            });
 
-           function pixelize(d) {
-             return d + 'px';
-           }
+          function pixelize(d) {
+            return d + 'px';
+          }
 
-           svgContainer.style('padding-bottom', pixelize);
-           // end trim
+          svgContainer.style('padding-bottom', pixelize);
+          // end trim
+
+
+          // var swatches = d3.select(this).selectAll('.swatch[data-value-swatch]')
+          //   .datum(function() {
+          //     return +this.getAttribute('data-value-swatch') || 0;
+          //   });
+
+          // swatches.style('background-color', scale);
+          // console.log(swatches)
         }}
       }
     )

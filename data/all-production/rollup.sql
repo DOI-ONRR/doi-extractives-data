@@ -28,12 +28,20 @@ UNION
         year, states.abbr AS region,
         'Renewables' AS commodity,
         source AS product,
-        source AS product_name,
-        'kilowatt hours' AS units,
+        CASE
+            WHEN LOWER(source) == 'biomass (total)'
+            THEN 'Biomass'
+            ELSE source
+            END AS product_name,
+        'megawatt hours' AS units,
         volume * 1000 AS volume
     FROM all_production_renewables
     INNER JOIN states ON
         states.name = state
+    WHERE
+        LOWER(source) != 'wood and wood-derived fuels' AND
+        LOWER(source) != 'other biomass' AND
+        LOWER(source) != 'all other renewables'
 UNION
     SELECT
         year, region,

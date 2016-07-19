@@ -1,142 +1,70 @@
 all_production:
   '2005':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2305000
-      rank: 1
-      percent: 14.95
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4327000
       rank: 2
       percent: 7.97
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 4327000
-      rank: 3
-      percent: 4.95
   '2006':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2352000
-      rank: 1
-      percent: 14.61
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4331000
       rank: 2
       percent: 7.89
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 4331000
-      rank: 3
-      percent: 4.49
   '2007':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2373000
-      rank: 1
-      percent: 14.36
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4303000
       rank: 2
       percent: 7.75
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 4303000
-      rank: 3
-      percent: 4.09
   '2008':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2334000
-      rank: 2
-      percent: 13.16
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4303000
       rank: 2
       percent: 7.82
   '2009':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2377000
-      rank: 2
-      percent: 12.89
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4331000
       rank: 2
       percent: 7.95
   '2010':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2387000
-      rank: 2
-      percent: 12.62
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4406000
       rank: 2
       percent: 7.86
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 80000
       rank: 3
       percent: 6.61
   '2011':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2335000
-      rank: 2
-      percent: 12.15
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4544000
       rank: 2
       percent: 8.02
   '2012':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2273000
-      rank: 2
-      percent: 11.46
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4330000
       rank: 2
       percent: 7.51
   '2013':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 2309000
-      rank: 2
-      percent: 11.09
     - product: Biomass (total)
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       value: 4449000
       rank: 2
       percent: 7.31

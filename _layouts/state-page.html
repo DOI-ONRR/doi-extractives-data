@@ -44,14 +44,12 @@ nav_items:
 {% assign top_products = 10 %}
 {% assign steps=9 %}
 
-{% assign is_special_state = site.data.special_states[state_id] %}
-{% assign is_priority_state = 'priority' | is_in: is_special_state %}
-{% assign is_case_study_state = 'case_study' | is_in: is_special_state %}
-{% assign is_opt_in_state = 'opt_in' | is_in: is_special_state %}
-
+{% assign is_priority_state = page.priority %}
+{% assign is_case_study_state = page.case_study %}
+{% assign is_opt_in_state = page.opt_in %}
 
 {% capture regulations %}
-  {% include location/state-regulations.html state_ref = state_id %}
+{{ page.content }}
 {% endcapture %}
 
 
@@ -70,8 +68,6 @@ nav_items:
       {% include location/section-all-production.html %}
 
       {% include location/section-federal-production.html %}
-
-      {% include location/section-state-production.html %}
     </section>
 
     {% include location/section-revenue.html %}

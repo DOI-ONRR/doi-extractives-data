@@ -54,20 +54,6 @@
           </eiti-bar-chart>
         </figure><!-- /.chart -->
 
-          {% if forloop.last %}
-          <!-- <h4>
-            <button is="aria-toggle"
-              aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
-          </h4>
-          <div id="employment-detail-{{ _metric }}" aria-hidden="true">
-            {%
-              include location/display-jobs.html
-              values=jobs
-              percent=true
-            %}
-          </div> -->
-          {% endif %}
-
         {% endfor %}
 
       </div><!-- /.chart-container -->

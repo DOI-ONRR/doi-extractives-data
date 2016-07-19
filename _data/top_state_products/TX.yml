@@ -3,24 +3,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 6006837000
+      value: 6006837
       rank: 1
       percent: 25.61
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 392601
+      value: 392601000
       rank: 1
       percent: 17.84
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 4237000
       rank: 2
       percent: 23.79
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 5336000
       rank: 2
       percent: 6.11
@@ -34,24 +34,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 6326433000
+      value: 6326433
       rank: 1
       percent: 26.88
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 6671000
       rank: 1
       percent: 25.09
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 392481
+      value: 392481000
       rank: 1
       percent: 18.51
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 7818000
       rank: 2
       percent: 8.1
@@ -65,24 +65,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 6960858000
+      value: 6960858
       rank: 1
       percent: 28.22
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 9006000
       rank: 1
       percent: 26.14
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 391270
+      value: 391270000
       rank: 1
       percent: 18.53
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 10288000
       rank: 2
       percent: 9.78
@@ -96,24 +96,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 7800655000
+      value: 7800655
       rank: 1
       percent: 30.43
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 16225000
       rank: 1
       percent: 29.31
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 406007
+      value: 406007000
       rank: 1
       percent: 19.56
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 17639000
       rank: 2
       percent: 13.99
@@ -127,24 +127,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 7653647000
+      value: 7653647
       rank: 1
       percent: 29.37
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 20026000
       rank: 1
       percent: 27.1
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 399344
+      value: 399344000
       rank: 1
       percent: 18.26
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 21104000
       rank: 2
       percent: 14.63
@@ -152,24 +152,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 7593697000
+      value: 7593697
       rank: 1
       percent: 28.32
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 26251000
       rank: 1
       percent: 27.73
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 426666
+      value: 426666000
       rank: 1
       percent: 19.27
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 27705000
       rank: 1
       percent: 16.57
@@ -183,24 +183,24 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 7934689000
+      value: 7934689
       rank: 1
       percent: 27.86
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 30548000
       rank: 1
       percent: 25.42
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 528844
+      value: 528844000
       rank: 1
       percent: 23.41
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 32183000
       rank: 1
       percent: 16.59
@@ -214,24 +214,24 @@ all_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 722130
+      value: 722130000
       rank: 1
       percent: 28.23
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 8143510000
+      value: 8143510
       rank: 1
       percent: 27.57
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 32214000
       rank: 1
       percent: 22.88
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 34017000
       rank: 1
       percent: 15.58
@@ -239,24 +239,24 @@ all_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 923561
+      value: 923561000
       rank: 1
       percent: 31.81
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 8299472000
+      value: 8299472
       rank: 1
       percent: 28.11
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 35874000
       rank: 1
       percent: 21.37
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 37760000
       rank: 1
       percent: 14.89
@@ -268,7 +268,7 @@ all_production:
       percent: 5.82
 revenue:
   '2010':
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 43706522.92

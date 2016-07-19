@@ -21,7 +21,7 @@ UNION
         'Natural Gas (mcf)' AS product,
         'Natural Gas' AS product_name,
         'mcf' AS units,
-        volume * 1000 AS volume
+        volume
     FROM all_production_naturalgas
 UNION
     SELECT
@@ -41,7 +41,7 @@ UNION
         'Oil (bbl)' AS product,
         'Oil' AS product_name,
         'bbl' AS units,
-        volume
+        volume * 1000 AS volume
     FROM all_production_oil;
 
 DROP TABLE IF EXISTS all_national_production;

@@ -2,34 +2,34 @@ all_production:
   '2010':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3054000
       rank: 3
       percent: 8.22
   '2011':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3070000
       rank: 3
       percent: 8.2
   '2012':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3107000
       rank: 2
       percent: 8.22
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 3276000
       rank: 3
       percent: 5.69
   '2013':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3409000
       rank: 3
       percent: 8.52

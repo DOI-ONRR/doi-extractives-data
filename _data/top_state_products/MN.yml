@@ -73,13 +73,7 @@ all_production:
   '2008':
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 4355000
       rank: 3
       percent: 7.87
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 5851000
-      rank: 3
-      percent: 4.64

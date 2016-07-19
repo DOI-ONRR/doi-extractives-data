@@ -1,35 +1,15 @@
 all_production:
-  '2005':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 1358000
-      rank: 3
-      percent: 8.81
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 26723000
       rank: 3
       percent: 10.49
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 1513000
-      rank: 3
-      percent: 8.53
-  '2009':
-    - product: Other biomass
-      name: Other biomass
-      units: kilowatt hours
-      value: 1665000
-      rank: 3
-      percent: 9.03
   '2013':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       value: 24973000
       rank: 3
       percent: 9.3

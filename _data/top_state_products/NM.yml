@@ -804,7 +804,7 @@ all_production:
   '2011':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 128000
       rank: 3
       percent: 7.04

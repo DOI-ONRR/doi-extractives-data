@@ -225,7 +225,6 @@ data/national_self_employment.yml:
 data/revenue: \
 	data/national_revenues.yml \
 	data/state_revenues.yml \
-	data/top_state_products.yml \
 	data/county_revenue \
 	data/state_revenues_by_type.yml \
 	data/national_revenues_by_type.yml

@@ -1,52 +1,8 @@
 AK:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 9000
-          percent: 0.01
-          rank: 49
-        '2005':
-          volume: 6000
-          percent: 0.01
-          rank: 48
-        '2006':
-          volume: 7000
-          percent: 0.01
-          rank: 47
-        '2007':
-          volume: 11000
-          percent: 0.01
-          rank: 50
-        '2008':
-          volume: 5000
-          percent: 0
-          rank: 50
-        '2009':
-          volume: 14000
-          percent: 0.01
-          rank: 50
-        '2010':
-          volume: 19000
-          percent: 0.01
-          rank: 49
-        '2011':
-          volume: 16000
-          percent: 0.01
-          rank: 50
-        '2012':
-          volume: 40000
-          percent: 0.02
-          rank: 50
-        '2013':
-          volume: 197000
-          percent: 0.08
-          rank: 47
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 9000
@@ -134,7 +90,7 @@ AK:
           rank: 17
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1498000
@@ -264,53 +220,9 @@ AK:
           volume: 187954000
           percent: 6.47
           rank: 4
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 9000
-          percent: 0.06
-          rank: 35
-        '2005':
-          volume: 5000
-          percent: 0.03
-          rank: 33
-        '2006':
-          volume: 6000
-          percent: 0.04
-          rank: 38
-        '2007':
-          volume: 10000
-          percent: 0.06
-          rank: 39
-        '2008':
-          volume: 5000
-          percent: 0.03
-          rank: 40
-        '2009':
-          volume: 7000
-          percent: 0.04
-          rank: 42
-        '2010':
-          volume: 6000
-          percent: 0.03
-          rank: 42
-        '2011':
-          volume: 3000
-          percent: 0.02
-          rank: 42
-        '2012':
-          volume: 3000
-          percent: 0.02
-          rank: 46
-        '2013':
-          volume: 52000
-          percent: 0.25
-          rank: 39
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2005':
           volume: 1000
@@ -344,63 +256,11 @@ AK:
           volume: 145000
           percent: 0.09
           rank: 35
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2006':
-          volume: 1000
-          percent: 0
-          rank: 31
 AL:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3779000
-          percent: 4.55
-          rank: 4
-        '2005':
-          volume: 3647000
-          percent: 4.18
-          rank: 5
-        '2006':
-          volume: 3884000
-          percent: 4.02
-          rank: 5
-        '2007':
-          volume: 3801000
-          percent: 3.61
-          rank: 6
-        '2008':
-          volume: 3357000
-          percent: 2.66
-          rank: 9
-        '2009':
-          volume: 3050000
-          percent: 2.11
-          rank: 13
-        '2010':
-          volume: 2377000
-          percent: 1.42
-          rank: 22
-        '2011':
-          volume: 2817000
-          percent: 1.45
-          rank: 20
-        '2012':
-          volume: 2777000
-          percent: 1.27
-          rank: 23
-        '2013':
-          volume: 2876000
-          percent: 1.13
-          rank: 25
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 3779000
@@ -488,7 +348,7 @@ AL:
           rank: 10
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 10626000
@@ -770,143 +630,11 @@ AL:
           volume: 10391000
           percent: 0.36
           rank: 14
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 23000
-          percent: 0.15
-          rank: 34
-        '2005':
-          volume: 16000
-          percent: 0.1
-          rank: 30
-        '2006':
-          volume: 19000
-          percent: 0.12
-          rank: 36
-        '2007':
-          volume: 17000
-          percent: 0.1
-          rank: 36
-        '2008':
-          volume: 34000
-          percent: 0.19
-          rank: 35
-        '2009':
-          volume: 14000
-          percent: 0.08
-          rank: 40
-        '2010':
-          volume: 12000
-          percent: 0.06
-          rank: 41
-        '2011':
-          volume: 10000
-          percent: 0.05
-          rank: 40
-        '2012':
-          volume: 8000
-          percent: 0.04
-          rank: 44
-        '2013':
-          volume: 21000
-          percent: 0.1
-          rank: 43
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3756000
-          percent: 9.85
-          rank: 2
-        '2005':
-          volume: 3630000
-          percent: 9.34
-          rank: 2
-        '2006':
-          volume: 3865000
-          percent: 9.97
-          rank: 1
-        '2007':
-          volume: 3784000
-          percent: 9.7
-          rank: 2
-        '2008':
-          volume: 3324000
-          percent: 8.91
-          rank: 3
-        '2009':
-          volume: 3035000
-          percent: 8.42
-          rank: 3
-        '2010':
-          volume: 2365000
-          percent: 6.36
-          rank: 5
-        '2011':
-          volume: 2807000
-          percent: 7.5
-          rank: 4
-        '2012':
-          volume: 2769000
-          percent: 7.32
-          rank: 4
-        '2013':
-          volume: 2854000
-          percent: 7.13
-          rank: 4
 AR:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1810000
-          percent: 2.18
-          rank: 13
-        '2005':
-          volume: 1736000
-          percent: 1.99
-          rank: 17
-        '2006':
-          volume: 1723000
-          percent: 1.79
-          rank: 19
-        '2007':
-          volume: 1624000
-          percent: 1.54
-          rank: 19
-        '2008':
-          volume: 1513000
-          percent: 1.2
-          rank: 26
-        '2009':
-          volume: 1586000
-          percent: 1.1
-          rank: 27
-        '2010':
-          volume: 1624000
-          percent: 0.97
-          rank: 28
-        '2011':
-          volume: 1668000
-          percent: 0.86
-          rank: 30
-        '2012':
-          volume: 1660000
-          percent: 0.76
-          rank: 33
-        '2013':
-          volume: 1601000
-          percent: 0.63
-          rank: 35
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1810000
@@ -994,7 +722,7 @@ AR:
           rank: 21
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3643000
@@ -1124,143 +852,11 @@ AR:
           volume: 6640000
           percent: 0.23
           rank: 19
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 33000
-          percent: 0.21
-          rank: 32
-        '2005':
-          volume: 28000
-          percent: 0.18
-          rank: 28
-        '2006':
-          volume: 33000
-          percent: 0.21
-          rank: 31
-        '2007':
-          volume: 43000
-          percent: 0.26
-          rank: 31
-        '2008':
-          volume: 47000
-          percent: 0.27
-          rank: 31
-        '2009':
-          volume: 57000
-          percent: 0.31
-          rank: 33
-        '2010':
-          volume: 57000
-          percent: 0.3
-          rank: 33
-        '2011':
-          volume: 81000
-          percent: 0.42
-          rank: 30
-        '2012':
-          volume: 70000
-          percent: 0.35
-          rank: 31
-        '2013':
-          volume: 105000
-          percent: 0.5
-          rank: 28
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1778000
-          percent: 4.66
-          rank: 8
-        '2005':
-          volume: 1708000
-          percent: 4.4
-          rank: 11
-        '2006':
-          volume: 1689000
-          percent: 4.36
-          rank: 11
-        '2007':
-          volume: 1581000
-          percent: 4.05
-          rank: 11
-        '2008':
-          volume: 1466000
-          percent: 3.93
-          rank: 11
-        '2009':
-          volume: 1529000
-          percent: 4.24
-          rank: 10
-        '2010':
-          volume: 1567000
-          percent: 4.22
-          rank: 11
-        '2011':
-          volume: 1587000
-          percent: 4.24
-          rank: 10
-        '2012':
-          volume: 1590000
-          percent: 4.21
-          rank: 10
-        '2013':
-          volume: 1496000
-          percent: 3.74
-          rank: 12
 AZ:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 48000
-          percent: 0.06
-          rank: 47
-        '2005':
-          volume: 74000
-          percent: 0.08
-          rank: 44
-        '2006':
-          volume: 54000
-          percent: 0.06
-          rank: 45
-        '2007':
-          volume: 42000
-          percent: 0.04
-          rank: 48
-        '2008':
-          volume: 114000
-          percent: 0.09
-          rank: 49
-        '2009':
-          volume: 202000
-          percent: 0.14
-          rank: 47
-        '2010':
-          volume: 319000
-          percent: 0.19
-          rank: 46
-        '2011':
-          volume: 529000
-          percent: 0.27
-          rank: 45
-        '2012':
-          volume: 1698000
-          percent: 0.78
-          rank: 32
-        '2013':
-          volume: 2733000
-          percent: 1.08
-          rank: 27
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 44000
@@ -1348,7 +944,7 @@ AZ:
           rank: 13
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 6973000
@@ -1614,53 +1210,9 @@ AZ:
           volume: 60000
           percent: 0
           rank: 29
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 44000
-          percent: 0.29
-          rank: 28
-        '2005':
-          volume: 48000
-          percent: 0.31
-          rank: 25
-        '2006':
-          volume: 32000
-          percent: 0.2
-          rank: 32
-        '2007':
-          volume: 33000
-          percent: 0.2
-          rank: 32
-        '2008':
-          volume: 23000
-          percent: 0.13
-          rank: 37
-        '2009':
-          volume: 22000
-          percent: 0.12
-          rank: 39
-        '2010':
-          volume: 28000
-          percent: 0.15
-          rank: 37
-        '2011':
-          volume: 47000
-          percent: 0.24
-          rank: 37
-        '2012':
-          volume: 54000
-          percent: 0.27
-          rank: 38
-        '2013':
-          volume: 69000
-          percent: 0.33
-          rank: 34
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 4000
@@ -1704,7 +1256,7 @@ AZ:
           rank: 2
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2009':
           volume: 30000
@@ -1726,91 +1278,11 @@ AZ:
           volume: 450000
           percent: 0.27
           rank: 29
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2005':
-          volume: 12000
-          percent: 0.03
-          rank: 30
-        '2006':
-          volume: 8000
-          percent: 0.02
-          rank: 30
-        '2008':
-          volume: 76000
-          percent: 0.2
-          rank: 29
-        '2009':
-          volume: 137000
-          percent: 0.38
-          rank: 27
-        '2010':
-          volume: 140000
-          percent: 0.38
-          rank: 28
-        '2011':
-          volume: 144000
-          percent: 0.38
-          rank: 28
-        '2012':
-          volume: 157000
-          percent: 0.42
-          rank: 29
-        '2013':
-          volume: 102000
-          percent: 0.25
-          rank: 28
 CA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 23971000
-          percent: 28.86
-          rank: 1
-        '2005':
-          volume: 23654000
-          percent: 27.09
-          rank: 1
-        '2006':
-          volume: 23915000
-          percent: 24.78
-          rank: 1
-        '2007':
-          volume: 24845000
-          percent: 23.61
-          rank: 1
-        '2008':
-          volume: 24784000
-          percent: 19.65
-          rank: 1
-        '2009':
-          volume: 25540000
-          percent: 17.7
-          rank: 1
-        '2010':
-          volume: 25450000
-          percent: 15.22
-          rank: 2
-        '2011':
-          volume: 27222000
-          percent: 14.03
-          rank: 2
-        '2012':
-          volume: 29967000
-          percent: 13.73
-          rank: 2
-        '2013':
-          volume: 35578000
-          percent: 14.03
-          rank: 2
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 5989000
@@ -1854,7 +1326,7 @@ CA:
           rank: 1
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 34141000
@@ -1898,7 +1370,7 @@ CA:
           rank: 4
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 13105000
@@ -2028,53 +1500,9 @@ CA:
           volume: 198928000
           percent: 6.85
           rank: 3
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2162000
-          percent: 14.02
-          rank: 2
-        '2005':
-          volume: 2224000
-          percent: 14.42
-          rank: 2
-        '2006':
-          volume: 2294000
-          percent: 14.25
-          rank: 2
-        '2007':
-          volume: 2305000
-          percent: 13.95
-          rank: 2
-        '2008':
-          volume: 2362000
-          percent: 13.32
-          rank: 1
-        '2009':
-          volume: 2468000
-          percent: 13.38
-          rank: 1
-        '2010':
-          volume: 2451000
-          percent: 12.96
-          rank: 1
-        '2011':
-          volume: 2585000
-          percent: 13.45
-          rank: 1
-        '2012':
-          volume: 2514000
-          percent: 12.68
-          rank: 1
-        '2013':
-          volume: 2843000
-          percent: 13.65
-          rank: 1
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 571000
@@ -2118,7 +1546,7 @@ CA:
           rank: 1
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 4306000
@@ -2160,99 +1588,11 @@ CA:
           volume: 12822000
           percent: 7.64
           rank: 3
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3827000
-          percent: 10.04
-          rank: 1
-        '2005':
-          volume: 3609000
-          percent: 9.29
-          rank: 3
-        '2006':
-          volume: 3422000
-          percent: 8.83
-          rank: 3
-        '2007':
-          volume: 3407000
-          percent: 8.73
-          rank: 3
-        '2008':
-          volume: 3484000
-          percent: 9.34
-          rank: 2
-        '2009':
-          volume: 3732000
-          percent: 10.35
-          rank: 1
-        '2010':
-          volume: 3551000
-          percent: 9.55
-          rank: 1
-        '2011':
-          volume: 3445000
-          percent: 9.2
-          rank: 2
-        '2012':
-          volume: 3798000
-          percent: 10.05
-          rank: 1
-        '2013':
-          volume: 3792000
-          percent: 9.47
-          rank: 1
 CO:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 255000
-          percent: 0.31
-          rank: 38
-        '2005':
-          volume: 811000
-          percent: 0.93
-          rank: 26
-        '2006':
-          volume: 896000
-          percent: 0.93
-          rank: 27
-        '2007':
-          volume: 1325000
-          percent: 1.26
-          rank: 23
-        '2008':
-          volume: 3284000
-          percent: 2.6
-          rank: 11
-        '2009':
-          volume: 3246000
-          percent: 2.25
-          rank: 12
-        '2010':
-          volume: 3555000
-          percent: 2.13
-          rank: 14
-        '2011':
-          volume: 5367000
-          percent: 2.77
-          rank: 9
-        '2012':
-          volume: 6192000
-          percent: 2.84
-          rank: 9
-        '2013':
-          volume: 7536000
-          percent: 2.97
-          rank: 10
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 35000
@@ -2340,7 +1680,7 @@ CO:
           rank: 8
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1195000
@@ -2470,53 +1810,9 @@ CO:
           volume: 65257000
           percent: 2.25
           rank: 8
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 35000
-          percent: 0.23
-          rank: 31
-        '2005':
-          volume: 34000
-          percent: 0.22
-          rank: 27
-        '2006':
-          volume: 31000
-          percent: 0.19
-          rank: 33
-        '2007':
-          volume: 31000
-          percent: 0.19
-          rank: 33
-        '2008':
-          volume: 45000
-          percent: 0.25
-          rank: 32
-        '2009':
-          volume: 56000
-          percent: 0.3
-          rank: 34
-        '2010':
-          volume: 58000
-          percent: 0.31
-          rank: 32
-        '2011':
-          volume: 62000
-          percent: 0.32
-          rank: 33
-        '2012':
-          volume: 58000
-          percent: 0.29
-          rank: 36
-        '2013':
-          volume: 81000
-          percent: 0.39
-          rank: 32
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2007':
           volume: 2000
@@ -2548,7 +1844,7 @@ CO:
           rank: 7
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 220000
@@ -2590,67 +1886,11 @@ CO:
           volume: 7204000
           percent: 4.29
           rank: 9
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2010':
-          volume: 2000
-          percent: 0.01
-          rank: 31
-        '2013':
-          volume: 3000
-          percent: 0.01
-          rank: 33
 CT:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 758000
-          percent: 0.91
-          rank: 28
-        '2005':
-          volume: 753000
-          percent: 0.86
-          rank: 30
-        '2006':
-          volume: 763000
-          percent: 0.79
-          rank: 30
-        '2007':
-          volume: 730000
-          percent: 0.69
-          rank: 33
-        '2008':
-          volume: 734000
-          percent: 0.58
-          rank: 35
-        '2009':
-          volume: 759000
-          percent: 0.53
-          rank: 36
-        '2010':
-          volume: 740000
-          percent: 0.44
-          rank: 40
-        '2011':
-          volume: 660000
-          percent: 0.34
-          rank: 44
-        '2012':
-          volume: 667000
-          percent: 0.31
-          rank: 45
-        '2013':
-          volume: 652000
-          percent: 0.26
-          rank: 45
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 758000
@@ -2694,7 +1934,7 @@ CT:
           rank: 25
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 463000
@@ -2736,127 +1976,11 @@ CT:
           volume: 402000
           percent: 0.15
           rank: 40
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 752000
-          percent: 4.88
-          rank: 7
-        '2005':
-          volume: 746000
-          percent: 4.84
-          rank: 6
-        '2006':
-          volume: 755000
-          percent: 4.69
-          rank: 7
-        '2007':
-          volume: 728000
-          percent: 4.41
-          rank: 8
-        '2008':
-          volume: 732000
-          percent: 4.13
-          rank: 10
-        '2009':
-          volume: 758000
-          percent: 4.11
-          rank: 9
-        '2010':
-          volume: 739000
-          percent: 3.91
-          rank: 10
-        '2011':
-          volume: 659000
-          percent: 3.43
-          rank: 11
-        '2012':
-          volume: 666000
-          percent: 3.36
-          rank: 11
-        '2013':
-          volume: 648000
-          percent: 3.11
-          rank: 10
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 5000
-          percent: 0.01
-          rank: 30
-        '2005':
-          volume: 7000
-          percent: 0.02
-          rank: 31
-        '2006':
-          volume: 9000
-          percent: 0.02
-          rank: 29
-        '2007':
-          volume: 2000
-          percent: 0.01
-          rank: 30
-        '2008':
-          volume: 2000
-          percent: 0.01
-          rank: 31
-        '2009':
-          volume: 1000
-          percent: 0
-          rank: 32
-        '2011':
-          volume: 1000
-          percent: 0
-          rank: 30
-        '2012':
-          volume: 1000
-          percent: 0
-          rank: 30
-        '2013':
-          volume: 4000
-          percent: 0.01
-          rank: 32
 DE:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2007':
-          volume: 48000
-          percent: 0.05
-          rank: 47
-        '2008':
-          volume: 163000
-          percent: 0.13
-          rank: 46
-        '2009':
-          volume: 126000
-          percent: 0.09
-          rank: 49
-        '2010':
-          volume: 138000
-          percent: 0.08
-          rank: 48
-        '2011':
-          volume: 158000
-          percent: 0.08
-          rank: 48
-        '2012':
-          volume: 131000
-          percent: 0.06
-          rank: 48
-        '2013':
-          volume: 107000
-          percent: 0.04
-          rank: 48
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2007':
           volume: 48000
@@ -2886,41 +2010,9 @@ DE:
           volume: 57000
           percent: 0.09
           rank: 40
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2007':
-          volume: 48000
-          percent: 0.29
-          rank: 30
-        '2008':
-          volume: 163000
-          percent: 0.92
-          rank: 22
-        '2009':
-          volume: 126000
-          percent: 0.68
-          rank: 27
-        '2010':
-          volume: 136000
-          percent: 0.72
-          rank: 24
-        '2011':
-          volume: 145000
-          percent: 0.75
-          rank: 23
-        '2012':
-          volume: 105000
-          percent: 0.53
-          rank: 26
-        '2013':
-          volume: 57000
-          percent: 0.27
-          rank: 38
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2011':
           volume: 8000
@@ -2936,7 +2028,7 @@ DE:
           rank: 15
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 3000
@@ -2956,53 +2048,9 @@ DE:
           rank: 38
 FL:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 4502000
-          percent: 5.42
-          rank: 2
-        '2005':
-          volume: 4327000
-          percent: 4.95
-          rank: 3
-        '2006':
-          volume: 4331000
-          percent: 4.49
-          rank: 3
-        '2007':
-          volume: 4303000
-          percent: 4.09
-          rank: 3
-        '2008':
-          volume: 4303000
-          percent: 3.41
-          rank: 5
-        '2009':
-          volume: 4340000
-          percent: 3.01
-          rank: 7
-        '2010':
-          volume: 4487000
-          percent: 2.68
-          rank: 9
-        '2011':
-          volume: 4670000
-          percent: 2.41
-          rank: 12
-        '2012':
-          volume: 4524000
-          percent: 2.07
-          rank: 13
-        '2013':
-          volume: 4659000
-          percent: 1.84
-          rank: 16
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 4502000
@@ -3046,7 +2094,7 @@ FL:
           rank: 2
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 265000
@@ -3312,53 +2360,9 @@ FL:
           volume: 2174000
           percent: 0.07
           rank: 24
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2285000
-          percent: 14.82
-          rank: 1
-        '2005':
-          volume: 2305000
-          percent: 14.95
-          rank: 1
-        '2006':
-          volume: 2352000
-          percent: 14.61
-          rank: 1
-        '2007':
-          volume: 2373000
-          percent: 14.36
-          rank: 1
-        '2008':
-          volume: 2334000
-          percent: 13.16
-          rank: 2
-        '2009':
-          volume: 2377000
-          percent: 12.89
-          rank: 2
-        '2010':
-          volume: 2387000
-          percent: 12.62
-          rank: 2
-        '2011':
-          volume: 2335000
-          percent: 12.15
-          rank: 2
-        '2012':
-          volume: 2273000
-          percent: 11.46
-          rank: 2
-        '2013':
-          volume: 2309000
-          percent: 11.09
-          rank: 2
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2009':
           volume: 9000
@@ -3380,99 +2384,11 @@ FL:
           volume: 210000
           percent: 2.33
           rank: 8
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2216000
-          percent: 5.81
-          rank: 6
-        '2005':
-          volume: 2022000
-          percent: 5.2
-          rank: 6
-        '2006':
-          volume: 1979000
-          percent: 5.11
-          rank: 6
-        '2007':
-          volume: 1930000
-          percent: 4.95
-          rank: 6
-        '2008':
-          volume: 1969000
-          percent: 5.28
-          rank: 6
-        '2009':
-          volume: 1954000
-          percent: 5.42
-          rank: 6
-        '2010':
-          volume: 2019000
-          percent: 5.43
-          rank: 6
-        '2011':
-          volume: 2209000
-          percent: 5.9
-          rank: 6
-        '2012':
-          volume: 2058000
-          percent: 5.44
-          rank: 7
-        '2013':
-          volume: 2139000
-          percent: 5.34
-          rank: 7
 GA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3192000
-          percent: 3.84
-          rank: 6
-        '2005':
-          volume: 3272000
-          percent: 3.75
-          rank: 6
-        '2006':
-          volume: 3419000
-          percent: 3.54
-          rank: 6
-        '2007':
-          volume: 3415000
-          percent: 3.24
-          rank: 8
-        '2008':
-          volume: 2782000
-          percent: 2.21
-          rank: 14
-        '2009':
-          volume: 2825000
-          percent: 1.96
-          rank: 17
-        '2010':
-          volume: 3181000
-          percent: 1.9
-          rank: 18
-        '2011':
-          volume: 3190000
-          percent: 1.64
-          rank: 18
-        '2012':
-          volume: 3279000
-          percent: 1.5
-          rank: 19
-        '2013':
-          volume: 3839000
-          percent: 1.51
-          rank: 19
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 3192000
@@ -3516,7 +2432,7 @@ GA:
           rank: 4
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3692000
@@ -3558,53 +2474,9 @@ GA:
           volume: 3714000
           percent: 1.38
           rank: 12
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 83000
-          percent: 0.54
-          rank: 24
-        '2005':
-          volume: 77000
-          percent: 0.5
-          rank: 22
-        '2006':
-          volume: 57000
-          percent: 0.35
-          rank: 28
-        '2007':
-          volume: 53000
-          percent: 0.32
-          rank: 28
-        '2008':
-          volume: 122000
-          percent: 0.69
-          rank: 26
-        '2009':
-          volume: 80000
-          percent: 0.43
-          rank: 29
-        '2010':
-          volume: 127000
-          percent: 0.67
-          rank: 26
-        '2011':
-          volume: 119000
-          percent: 0.62
-          rank: 26
-        '2012':
-          volume: 168000
-          percent: 0.85
-          rank: 23
-        '2013':
-          volume: 415000
-          percent: 1.99
-          rank: 15
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 3000
@@ -3614,99 +2486,11 @@ GA:
           volume: 14000
           percent: 0.16
           rank: 20
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3108000
-          percent: 8.15
-          rank: 4
-        '2005':
-          volume: 3195000
-          percent: 8.22
-          rank: 4
-        '2006':
-          volume: 3362000
-          percent: 8.67
-          rank: 4
-        '2007':
-          volume: 3362000
-          percent: 8.62
-          rank: 4
-        '2008':
-          volume: 2660000
-          percent: 7.13
-          rank: 4
-        '2009':
-          volume: 2746000
-          percent: 7.62
-          rank: 4
-        '2010':
-          volume: 3054000
-          percent: 8.22
-          rank: 3
-        '2011':
-          volume: 3070000
-          percent: 8.2
-          rank: 3
-        '2012':
-          volume: 3107000
-          percent: 8.22
-          rank: 2
-        '2013':
-          volume: 3409000
-          percent: 8.52
-          rank: 3
 HI:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 550000
-          percent: 0.66
-          rank: 32
-        '2005':
-          volume: 538000
-          percent: 0.62
-          rank: 34
-        '2006':
-          volume: 618000
-          percent: 0.64
-          rank: 35
-        '2007':
-          volume: 753000
-          percent: 0.72
-          rank: 32
-        '2008':
-          volume: 777000
-          percent: 0.62
-          rank: 33
-        '2009':
-          volume: 705000
-          percent: 0.49
-          rank: 38
-        '2010':
-          volume: 747000
-          percent: 0.45
-          rank: 39
-        '2011':
-          volume: 881000
-          percent: 0.45
-          rank: 42
-        '2012':
-          volume: 925000
-          percent: 0.42
-          rank: 42
-        '2013':
-          volume: 1127000
-          percent: 0.44
-          rank: 40
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 329000
@@ -3750,7 +2534,7 @@ HI:
           rank: 31
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 94000
@@ -3794,7 +2578,7 @@ HI:
           rank: 45
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 213000
@@ -3836,53 +2620,9 @@ HI:
           volume: 275000
           percent: 1.74
           rank: 4
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 329000
-          percent: 2.13
-          rank: 15
-        '2005':
-          volume: 310000
-          percent: 2.01
-          rank: 13
-        '2006':
-          volume: 326000
-          percent: 2.03
-          rank: 14
-        '2007':
-          volume: 285000
-          percent: 1.72
-          rank: 15
-        '2008':
-          volume: 302000
-          percent: 1.7
-          rank: 15
-        '2009':
-          volume: 284000
-          percent: 1.54
-          rank: 16
-        '2010':
-          volume: 283000
-          percent: 1.5
-          rank: 16
-        '2011':
-          volume: 313000
-          percent: 1.63
-          rank: 18
-        '2012':
-          volume: 281000
-          percent: 1.42
-          rank: 18
-        '2013':
-          volume: 329000
-          percent: 1.58
-          rank: 19
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2009':
           volume: 1000
@@ -3906,7 +2646,7 @@ HI:
           rank: 18
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 7000
@@ -3950,53 +2690,9 @@ HI:
           rank: 28
 IA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1156000
-          percent: 1.39
-          rank: 20
-        '2005':
-          volume: 1764000
-          percent: 2.02
-          rank: 16
-        '2006':
-          volume: 2455000
-          percent: 2.54
-          rank: 13
-        '2007':
-          volume: 2908000
-          percent: 2.76
-          rank: 10
-        '2008':
-          volume: 4251000
-          percent: 3.37
-          rank: 6
-        '2009':
-          volume: 7589000
-          percent: 5.26
-          rank: 3
-        '2010':
-          volume: 9360000
-          percent: 5.6
-          rank: 3
-        '2011':
-          volume: 10870000
-          percent: 5.6
-          rank: 3
-        '2012':
-          volume: 14183000
-          percent: 6.5
-          rank: 3
-        '2013':
-          volume: 15727000
-          percent: 6.2
-          rank: 3
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 106000
@@ -4040,7 +2736,7 @@ IA:
           rank: 34
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 946000
@@ -4082,53 +2778,9 @@ IA:
           volume: 749000
           percent: 0.28
           rank: 34
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 106000
-          percent: 0.69
-          rank: 21
-        '2005':
-          volume: 117000
-          percent: 0.76
-          rank: 18
-        '2006':
-          volume: 137000
-          percent: 0.85
-          rank: 21
-        '2007':
-          volume: 151000
-          percent: 0.91
-          rank: 21
-        '2008':
-          volume: 167000
-          percent: 0.94
-          rank: 21
-        '2009':
-          volume: 168000
-          percent: 0.91
-          rank: 19
-        '2010':
-          volume: 190000
-          percent: 1
-          rank: 22
-        '2011':
-          volume: 161000
-          percent: 0.84
-          rank: 22
-        '2012':
-          volume: 151000
-          percent: 0.76
-          rank: 24
-        '2013':
-          volume: 159000
-          percent: 0.76
-          rank: 25
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1050000
@@ -4172,53 +2824,9 @@ IA:
           rank: 2
 ID:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 560000
-          percent: 0.67
-          rank: 31
-        '2005':
-          volume: 560000
-          percent: 0.64
-          rank: 33
-        '2006':
-          volume: 690000
-          percent: 0.71
-          rank: 33
-        '2007':
-          volume: 653000
-          percent: 0.62
-          rank: 34
-        '2008':
-          volume: 748000
-          percent: 0.59
-          rank: 34
-        '2009':
-          volume: 867000
-          percent: 0.6
-          rank: 35
-        '2010':
-          volume: 1014000
-          percent: 0.61
-          rank: 34
-        '2011':
-          volume: 1892000
-          percent: 0.98
-          rank: 29
-        '2012':
-          volume: 2515000
-          percent: 1.15
-          rank: 26
-        '2013':
-          volume: 3152000
-          percent: 1.24
-          rank: 22
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 560000
@@ -4262,7 +2870,7 @@ ID:
           rank: 25
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 8462000
@@ -4306,7 +2914,7 @@ ID:
           rank: 8
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 86000
@@ -4332,29 +2940,9 @@ ID:
           volume: 40000
           percent: 0.25
           rank: 6
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2010':
-          volume: 24000
-          percent: 0.13
-          rank: 39
-        '2011':
-          volume: 48000
-          percent: 0.25
-          rank: 36
-        '2012':
-          volume: 90000
-          percent: 0.45
-          rank: 30
-        '2013':
-          volume: 198000
-          percent: 0.95
-          rank: 24
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2006':
           volume: 170000
@@ -4388,99 +2976,11 @@ ID:
           volume: 2460000
           percent: 1.47
           rank: 18
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 560000
-          percent: 1.47
-          rank: 20
-        '2005':
-          volume: 560000
-          percent: 1.44
-          rank: 21
-        '2006':
-          volume: 520000
-          percent: 1.34
-          rank: 21
-        '2007':
-          volume: 481000
-          percent: 1.23
-          rank: 22
-        '2008':
-          volume: 455000
-          percent: 1.22
-          rank: 22
-        '2009':
-          volume: 478000
-          percent: 1.33
-          rank: 22
-        '2010':
-          volume: 478000
-          percent: 1.29
-          rank: 22
-        '2011':
-          volume: 474000
-          percent: 1.27
-          rank: 21
-        '2012':
-          volume: 460000
-          percent: 1.22
-          rank: 23
-        '2013':
-          volume: 454000
-          percent: 1.13
-          rank: 23
 IL:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 822000
-          percent: 0.99
-          rank: 26
-        '2005':
-          volume: 783000
-          percent: 0.9
-          rank: 28
-        '2006':
-          volume: 849000
-          percent: 0.88
-          rank: 28
-        '2007':
-          volume: 1285000
-          percent: 1.22
-          rank: 25
-        '2008':
-          volume: 3035000
-          percent: 2.41
-          rank: 12
-        '2009':
-          volume: 3530000
-          percent: 2.45
-          rank: 10
-        '2010':
-          volume: 5138000
-          percent: 3.07
-          rank: 6
-        '2011':
-          volume: 6865000
-          percent: 3.54
-          rank: 6
-        '2012':
-          volume: 8373000
-          percent: 3.83
-          rank: 6
-        '2013':
-          volume: 10285000
-          percent: 4.06
-          rank: 5
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 744000
@@ -4568,7 +3068,7 @@ IL:
           rank: 2
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 154000
@@ -4850,53 +3350,9 @@ IL:
           volume: 9539000
           percent: 0.33
           rank: 15
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 744000
-          percent: 4.82
-          rank: 8
-        '2005':
-          volume: 642000
-          percent: 4.16
-          rank: 9
-        '2006':
-          volume: 594000
-          percent: 3.69
-          rank: 10
-        '2007':
-          volume: 620000
-          percent: 3.75
-          rank: 10
-        '2008':
-          volume: 697000
-          percent: 3.93
-          rank: 11
-        '2009':
-          volume: 710000
-          percent: 3.85
-          rank: 10
-        '2010':
-          volume: 670000
-          percent: 3.54
-          rank: 11
-        '2011':
-          volume: 638000
-          percent: 3.32
-          rank: 12
-        '2012':
-          volume: 615000
-          percent: 3.1
-          rank: 12
-        '2013':
-          volume: 608000
-          percent: 2.92
-          rank: 11
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 14000
@@ -4916,7 +3372,7 @@ IL:
           rank: 13
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 78000
@@ -4958,67 +3414,11 @@ IL:
           volume: 9625000
           percent: 5.73
           rank: 5
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2008':
-          volume: 1000
-          percent: 0
-          rank: 32
-        '2011':
-          volume: 1000
-          percent: 0
-          rank: 30
 IN:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 137000
-          percent: 0.16
-          rank: 43
-        '2005':
-          volume: 68000
-          percent: 0.08
-          rank: 46
-        '2006':
-          volume: 220000
-          percent: 0.23
-          rank: 41
-        '2007':
-          volume: 231000
-          percent: 0.22
-          rank: 42
-        '2008':
-          volume: 511000
-          percent: 0.41
-          rank: 39
-        '2009':
-          volume: 1706000
-          percent: 1.18
-          rank: 26
-        '2010':
-          volume: 3246000
-          percent: 1.94
-          rank: 17
-        '2011':
-          volume: 3621000
-          percent: 1.87
-          rank: 17
-        '2012':
-          volume: 3546000
-          percent: 1.62
-          rank: 18
-        '2013':
-          volume: 3888000
-          percent: 1.53
-          rank: 18
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 137000
@@ -5106,7 +3506,7 @@ IN:
           rank: 5
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 444000
@@ -5388,53 +3788,9 @@ IN:
           volume: 2399000
           percent: 0.08
           rank: 23
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 137000
-          percent: 0.89
-          rank: 19
-        '2005':
-          volume: 68000
-          percent: 0.44
-          rank: 23
-        '2006':
-          volume: 220000
-          percent: 1.37
-          rank: 17
-        '2007':
-          volume: 231000
-          percent: 1.4
-          rank: 17
-        '2008':
-          volume: 273000
-          percent: 1.54
-          rank: 16
-        '2009':
-          volume: 303000
-          percent: 1.64
-          rank: 15
-        '2010':
-          volume: 312000
-          percent: 1.65
-          rank: 15
-        '2011':
-          volume: 336000
-          percent: 1.75
-          rank: 16
-        '2012':
-          volume: 336000
-          percent: 1.69
-          rank: 16
-        '2013':
-          volume: 376000
-          percent: 1.81
-          rank: 18
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2013':
           volume: 31000
@@ -5442,7 +3798,7 @@ IN:
           rank: 16
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 238000
@@ -5470,53 +3826,9 @@ IN:
           rank: 14
 KS:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 359000
-          percent: 0.43
-          rank: 37
-        '2005':
-          volume: 426000
-          percent: 0.49
-          rank: 36
-        '2006':
-          volume: 992000
-          percent: 1.03
-          rank: 25
-        '2007':
-          volume: 1153000
-          percent: 1.1
-          rank: 27
-        '2008':
-          volume: 1759000
-          percent: 1.39
-          rank: 21
-        '2009':
-          volume: 2863000
-          percent: 1.98
-          rank: 16
-        '2010':
-          volume: 3459000
-          percent: 2.07
-          rank: 15
-        '2011':
-          volume: 3779000
-          percent: 1.95
-          rank: 16
-        '2012':
-          volume: 5253000
-          percent: 2.41
-          rank: 11
-        '2013':
-          volume: 9491000
-          percent: 3.74
-          rank: 7
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2010':
           volume: 54000
@@ -5580,7 +3892,7 @@ KS:
           rank: 22
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 13000
@@ -5710,29 +4022,9 @@ KS:
           volume: 46845000
           percent: 1.61
           rank: 10
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2010':
-          volume: 54000
-          percent: 0.29
-          rank: 35
-        '2011':
-          volume: 59000
-          percent: 0.31
-          rank: 34
-        '2012':
-          volume: 57000
-          percent: 0.29
-          rank: 37
-        '2013':
-          volume: 58000
-          percent: 0.28
-          rank: 37
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 359000
@@ -5776,53 +4068,9 @@ KS:
           rank: 6
 KY:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 411000
-          percent: 0.49
-          rank: 35
-        '2005':
-          volume: 421000
-          percent: 0.48
-          rank: 38
-        '2006':
-          volume: 459000
-          percent: 0.48
-          rank: 37
-        '2007':
-          volume: 466000
-          percent: 0.44
-          rank: 38
-        '2008':
-          volume: 460000
-          percent: 0.36
-          rank: 40
-        '2009':
-          volume: 364000
-          percent: 0.25
-          rank: 46
-        '2010':
-          volume: 440000
-          percent: 0.26
-          rank: 45
-        '2011':
-          volume: 436000
-          percent: 0.22
-          rank: 46
-        '2012':
-          volume: 333000
-          percent: 0.15
-          rank: 47
-        '2013':
-          volume: 327000
-          percent: 0.13
-          rank: 46
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 411000
@@ -5866,7 +4114,7 @@ KY:
           rank: 32
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3780000
@@ -6148,143 +4396,11 @@ KY:
           volume: 2893000
           percent: 0.1
           rank: 21
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 62000
-          percent: 0.4
-          rank: 27
-        '2005':
-          volume: 63000
-          percent: 0.41
-          rank: 24
-        '2006':
-          volume: 89000
-          percent: 0.55
-          rank: 25
-        '2007':
-          volume: 95000
-          percent: 0.57
-          rank: 24
-        '2008':
-          volume: 109000
-          percent: 0.61
-          rank: 28
-        '2009':
-          volume: 101000
-          percent: 0.55
-          rank: 28
-        '2010':
-          volume: 91000
-          percent: 0.48
-          rank: 28
-        '2011':
-          volume: 95000
-          percent: 0.49
-          rank: 28
-        '2012':
-          volume: 96000
-          percent: 0.48
-          rank: 28
-        '2013':
-          volume: 98000
-          percent: 0.47
-          rank: 29
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 349000
-          percent: 0.92
-          rank: 25
-        '2005':
-          volume: 358000
-          percent: 0.92
-          rank: 25
-        '2006':
-          volume: 369000
-          percent: 0.95
-          rank: 24
-        '2007':
-          volume: 370000
-          percent: 0.95
-          rank: 25
-        '2008':
-          volume: 351000
-          percent: 0.94
-          rank: 25
-        '2009':
-          volume: 263000
-          percent: 0.73
-          rank: 25
-        '2010':
-          volume: 349000
-          percent: 0.94
-          rank: 25
-        '2011':
-          volume: 341000
-          percent: 0.91
-          rank: 25
-        '2012':
-          volume: 237000
-          percent: 0.63
-          rank: 27
-        '2013':
-          volume: 228000
-          percent: 0.57
-          rank: 25
 LA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2966000
-          percent: 3.57
-          rank: 7
-        '2005':
-          volume: 2887000
-          percent: 3.31
-          rank: 7
-        '2006':
-          volume: 2962000
-          percent: 3.07
-          rank: 8
-        '2007':
-          volume: 2980000
-          percent: 2.83
-          rank: 9
-        '2008':
-          volume: 2710000
-          percent: 2.15
-          rank: 15
-        '2009':
-          volume: 2364000
-          percent: 1.64
-          rank: 20
-        '2010':
-          volume: 2468000
-          percent: 1.48
-          rank: 21
-        '2011':
-          volume: 2443000
-          percent: 1.26
-          rank: 23
-        '2012':
-          volume: 2430000
-          percent: 1.11
-          rank: 27
-        '2013':
-          volume: 2787000
-          percent: 1.1
-          rank: 26
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 2966000
@@ -6372,7 +4488,7 @@ LA:
           rank: 15
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1099000
@@ -6502,143 +4618,11 @@ LA:
           volume: 71815000
           percent: 2.47
           rank: 7
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 77000
-          percent: 0.5
-          rank: 25
-        '2005':
-          volume: 80000
-          percent: 0.52
-          rank: 21
-        '2006':
-          volume: 81000
-          percent: 0.5
-          rank: 26
-        '2007':
-          volume: 82000
-          percent: 0.5
-          rank: 26
-        '2008':
-          volume: 71000
-          percent: 0.4
-          rank: 29
-        '2009':
-          volume: 67000
-          percent: 0.36
-          rank: 31
-        '2010':
-          volume: 74000
-          percent: 0.39
-          rank: 29
-        '2011':
-          volume: 71000
-          percent: 0.37
-          rank: 31
-        '2012':
-          volume: 64000
-          percent: 0.32
-          rank: 32
-        '2013':
-          volume: 82000
-          percent: 0.39
-          rank: 31
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2890000
-          percent: 7.58
-          rank: 5
-        '2005':
-          volume: 2806000
-          percent: 7.22
-          rank: 5
-        '2006':
-          volume: 2881000
-          percent: 7.43
-          rank: 5
-        '2007':
-          volume: 2898000
-          percent: 7.43
-          rank: 5
-        '2008':
-          volume: 2639000
-          percent: 7.07
-          rank: 5
-        '2009':
-          volume: 2297000
-          percent: 6.37
-          rank: 5
-        '2010':
-          volume: 2393000
-          percent: 6.44
-          rank: 4
-        '2011':
-          volume: 2371000
-          percent: 6.33
-          rank: 5
-        '2012':
-          volume: 2366000
-          percent: 6.26
-          rank: 5
-        '2013':
-          volume: 2704000
-          percent: 6.76
-          rank: 5
 MA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1230000
-          percent: 1.48
-          rank: 19
-        '2005':
-          volume: 1258000
-          percent: 1.44
-          rank: 21
-        '2006':
-          volume: 1279000
-          percent: 1.33
-          rank: 22
-        '2007':
-          volume: 1240000
-          percent: 1.18
-          rank: 26
-        '2008':
-          volume: 1255000
-          percent: 1
-          rank: 28
-        '2009':
-          volume: 1229000
-          percent: 0.85
-          rank: 30
-        '2010':
-          volume: 1274000
-          percent: 0.76
-          rank: 31
-        '2011':
-          volume: 1207000
-          percent: 0.62
-          rank: 34
-        '2012':
-          volume: 1843000
-          percent: 0.84
-          rank: 30
-        '2013':
-          volume: 1448000
-          percent: 0.57
-          rank: 36
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1230000
@@ -6682,7 +4666,7 @@ MA:
           rank: 20
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 998000
@@ -6724,53 +4708,9 @@ MA:
           volume: 992000
           percent: 0.37
           rank: 33
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1116000
-          percent: 7.24
-          rank: 5
-        '2005':
-          volume: 1138000
-          percent: 7.38
-          rank: 4
-        '2006':
-          volume: 1154000
-          percent: 7.17
-          rank: 5
-        '2007':
-          volume: 1121000
-          percent: 6.78
-          rank: 5
-        '2008':
-          volume: 1129000
-          percent: 6.37
-          rank: 5
-        '2009':
-          volume: 1108000
-          percent: 6.01
-          rank: 5
-        '2010':
-          volume: 1125000
-          percent: 5.95
-          rank: 5
-        '2011':
-          volume: 1039000
-          percent: 5.41
-          rank: 5
-        '2012':
-          volume: 1065000
-          percent: 5.37
-          rank: 5
-        '2013':
-          volume: 1061000
-          percent: 5.09
-          rank: 5
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 1000
@@ -6790,7 +4730,7 @@ MA:
           rank: 10
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 4000
@@ -6816,99 +4756,11 @@ MA:
           volume: 205000
           percent: 0.12
           rank: 34
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 114000
-          percent: 0.3
-          rank: 28
-        '2005':
-          volume: 120000
-          percent: 0.31
-          rank: 28
-        '2006':
-          volume: 125000
-          percent: 0.32
-          rank: 27
-        '2007':
-          volume: 119000
-          percent: 0.31
-          rank: 28
-        '2008':
-          volume: 123000
-          percent: 0.33
-          rank: 27
-        '2009':
-          volume: 115000
-          percent: 0.32
-          rank: 28
-        '2010':
-          volume: 125000
-          percent: 0.34
-          rank: 29
-        '2011':
-          volume: 101000
-          percent: 0.27
-          rank: 29
-        '2012':
-          volume: 659000
-          percent: 1.74
-          rank: 19
-        '2013':
-          volume: 77000
-          percent: 0.19
-          rank: 29
 MD:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 589000
-          percent: 0.71
-          rank: 30
-        '2005':
-          volume: 623000
-          percent: 0.71
-          rank: 32
-        '2006':
-          volume: 626000
-          percent: 0.65
-          rank: 34
-        '2007':
-          volume: 603000
-          percent: 0.57
-          rank: 37
-        '2008':
-          volume: 612000
-          percent: 0.49
-          rank: 38
-        '2009':
-          volume: 551000
-          percent: 0.38
-          rank: 41
-        '2010':
-          volume: 574000
-          percent: 0.34
-          rank: 42
-        '2011':
-          volume: 822000
-          percent: 0.42
-          rank: 43
-        '2012':
-          volume: 898000
-          percent: 0.41
-          rank: 43
-        '2013':
-          volume: 941000
-          percent: 0.37
-          rank: 42
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 589000
@@ -6996,7 +4848,7 @@ MD:
           rank: 16
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 2508000
@@ -7234,53 +5086,9 @@ MD:
           volume: 20
           percent: 0
           rank: 15
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 397000
-          percent: 2.57
-          rank: 13
-        '2005':
-          volume: 417000
-          percent: 2.7
-          rank: 10
-        '2006':
-          volume: 408000
-          percent: 2.53
-          rank: 12
-        '2007':
-          volume: 400000
-          percent: 2.42
-          rank: 13
-        '2008':
-          volume: 415000
-          percent: 2.34
-          rank: 14
-        '2009':
-          volume: 376000
-          percent: 2.04
-          rank: 14
-        '2010':
-          volume: 407000
-          percent: 2.15
-          rank: 14
-        '2011':
-          volume: 380000
-          percent: 1.98
-          rank: 14
-        '2012':
-          volume: 395000
-          percent: 1.99
-          rank: 14
-        '2013':
-          volume: 413000
-          percent: 1.98
-          rank: 16
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2011':
           volume: 3000
@@ -7296,7 +5104,7 @@ MD:
           rank: 12
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 1000
@@ -7314,99 +5122,11 @@ MD:
           volume: 322000
           percent: 0.19
           rank: 31
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 192000
-          percent: 0.5
-          rank: 27
-        '2005':
-          volume: 206000
-          percent: 0.53
-          rank: 27
-        '2006':
-          volume: 218000
-          percent: 0.56
-          rank: 26
-        '2007':
-          volume: 203000
-          percent: 0.52
-          rank: 27
-        '2008':
-          volume: 198000
-          percent: 0.53
-          rank: 26
-        '2009':
-          volume: 175000
-          percent: 0.49
-          rank: 26
-        '2010':
-          volume: 165000
-          percent: 0.44
-          rank: 27
-        '2011':
-          volume: 168000
-          percent: 0.45
-          rank: 27
-        '2012':
-          volume: 159000
-          percent: 0.42
-          rank: 28
-        '2013':
-          volume: 143000
-          percent: 0.36
-          rank: 27
 ME:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3598000
-          percent: 4.33
-          rank: 5
-        '2005':
-          volume: 4068000
-          percent: 4.66
-          rank: 4
-        '2006':
-          volume: 3968000
-          percent: 4.11
-          rank: 4
-        '2007':
-          volume: 4207000
-          percent: 4
-          rank: 4
-        '2008':
-          volume: 4058000
-          percent: 3.22
-          rank: 7
-        '2009':
-          volume: 3938000
-          percent: 2.73
-          rank: 9
-        '2010':
-          volume: 4152000
-          percent: 2.48
-          rank: 12
-        '2011':
-          volume: 4495000
-          percent: 2.32
-          rank: 14
-        '2012':
-          volume: 4099000
-          percent: 1.88
-          rank: 16
-        '2013':
-          volume: 4893000
-          percent: 1.93
-          rank: 15
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 3598000
@@ -7450,7 +5170,7 @@ ME:
           rank: 3
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3430000
@@ -7492,53 +5212,9 @@ ME:
           volume: 3560000
           percent: 1.33
           rank: 13
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 411000
-          percent: 2.67
-          rank: 11
-        '2005':
-          volume: 290000
-          percent: 1.88
-          rank: 14
-        '2006':
-          volume: 283000
-          percent: 1.76
-          rank: 15
-        '2007':
-          volume: 260000
-          percent: 1.57
-          rank: 16
-        '2008':
-          volume: 258000
-          percent: 1.45
-          rank: 17
-        '2009':
-          volume: 273000
-          percent: 1.48
-          rank: 17
-        '2010':
-          volume: 264000
-          percent: 1.4
-          rank: 18
-        '2011':
-          volume: 277000
-          percent: 1.44
-          rank: 19
-        '2012':
-          volume: 267000
-          percent: 1.35
-          rank: 19
-        '2013':
-          volume: 220000
-          percent: 1.06
-          rank: 22
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2007':
           volume: 99000
@@ -7568,99 +5244,11 @@ ME:
           volume: 1048000
           percent: 0.62
           rank: 26
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3187000
-          percent: 8.36
-          rank: 3
-        '2005':
-          volume: 3778000
-          percent: 9.72
-          rank: 1
-        '2006':
-          volume: 3685000
-          percent: 9.51
-          rank: 2
-        '2007':
-          volume: 3848000
-          percent: 9.86
-          rank: 1
-        '2008':
-          volume: 3669000
-          percent: 9.84
-          rank: 1
-        '2009':
-          volume: 3367000
-          percent: 9.34
-          rank: 2
-        '2010':
-          volume: 3390000
-          percent: 9.12
-          rank: 2
-        '2011':
-          volume: 3511000
-          percent: 9.38
-          rank: 1
-        '2012':
-          volume: 2945000
-          percent: 7.79
-          rank: 3
-        '2013':
-          volume: 3625000
-          percent: 9.06
-          rank: 2
 MI:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2558000
-          percent: 3.08
-          rank: 8
-        '2005':
-          volume: 2494000
-          percent: 2.86
-          rank: 10
-        '2006':
-          volume: 2443000
-          percent: 2.53
-          rank: 14
-        '2007':
-          volume: 2417000
-          percent: 2.3
-          rank: 14
-        '2008':
-          volume: 2591000
-          percent: 2.05
-          rank: 17
-        '2009':
-          volume: 2623000
-          percent: 1.82
-          rank: 18
-        '2010':
-          volume: 2832000
-          percent: 1.69
-          rank: 19
-        '2011':
-          volume: 2962000
-          percent: 1.53
-          rank: 19
-        '2012':
-          volume: 3785000
-          percent: 1.73
-          rank: 17
-        '2013':
-          volume: 5514000
-          percent: 2.18
-          rank: 14
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 2557000
@@ -7704,7 +5292,7 @@ MI:
           rank: 8
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1540000
@@ -7986,53 +5574,9 @@ MI:
           volume: 7706000
           percent: 0.27
           rank: 17
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 690000
-          percent: 4.47
-          rank: 10
-        '2005':
-          volume: 717000
-          percent: 4.65
-          rank: 7
-        '2006':
-          volume: 737000
-          percent: 4.58
-          rank: 8
-        '2007':
-          volume: 722000
-          percent: 4.37
-          rank: 9
-        '2008':
-          volume: 740000
-          percent: 4.17
-          rank: 9
-        '2009':
-          volume: 834000
-          percent: 4.52
-          rank: 8
-        '2010':
-          volume: 802000
-          percent: 4.24
-          rank: 9
-        '2011':
-          volume: 827000
-          percent: 4.3
-          rank: 8
-        '2012':
-          volume: 956000
-          percent: 4.82
-          rank: 8
-        '2013':
-          volume: 988000
-          percent: 4.74
-          rank: 7
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 2000
@@ -8074,99 +5618,11 @@ MI:
           volume: 2800000
           percent: 1.67
           rank: 16
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1867000
-          percent: 4.9
-          rank: 7
-        '2005':
-          volume: 1776000
-          percent: 4.57
-          rank: 8
-        '2006':
-          volume: 1704000
-          percent: 4.4
-          rank: 10
-        '2007':
-          volume: 1692000
-          percent: 4.34
-          rank: 9
-        '2008':
-          volume: 1710000
-          percent: 4.58
-          rank: 9
-        '2009':
-          volume: 1489000
-          percent: 4.13
-          rank: 11
-        '2010':
-          volume: 1670000
-          percent: 4.49
-          rank: 10
-        '2011':
-          volume: 1679000
-          percent: 4.48
-          rank: 9
-        '2012':
-          volume: 1698000
-          percent: 4.49
-          rank: 9
-        '2013':
-          volume: 1727000
-          percent: 4.31
-          rank: 10
 MN:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1797000
-          percent: 2.16
-          rank: 14
-        '2005':
-          volume: 2652000
-          percent: 3.04
-          rank: 8
-        '2006':
-          volume: 3059000
-          percent: 3.17
-          rank: 7
-        '2007':
-          volume: 3933000
-          percent: 3.74
-          rank: 5
-        '2008':
-          volume: 5851000
-          percent: 4.64
-          rank: 3
-        '2009':
-          volume: 6737000
-          percent: 4.67
-          rank: 4
-        '2010':
-          volume: 6640000
-          percent: 3.97
-          rank: 4
-        '2011':
-          volume: 8406000
-          percent: 4.33
-          rank: 4
-        '2012':
-          volume: 9454000
-          percent: 4.33
-          rank: 4
-        '2013':
-          volume: 9871000
-          percent: 3.89
-          rank: 6
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 985000
@@ -8210,7 +5666,7 @@ MN:
           rank: 16
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 738000
@@ -8252,53 +5708,9 @@ MN:
           volume: 511000
           percent: 0.19
           rank: 37
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 332000
-          percent: 2.15
-          rank: 14
-        '2005':
-          volume: 413000
-          percent: 2.68
-          rank: 11
-        '2006':
-          volume: 414000
-          percent: 2.57
-          rank: 11
-        '2007':
-          volume: 566000
-          percent: 3.43
-          rank: 11
-        '2008':
-          volume: 771000
-          percent: 4.35
-          rank: 8
-        '2009':
-          volume: 887000
-          percent: 4.81
-          rank: 7
-        '2010':
-          volume: 915000
-          percent: 4.84
-          rank: 6
-        '2011':
-          volume: 932000
-          percent: 4.85
-          rank: 6
-        '2012':
-          volume: 999000
-          percent: 5.04
-          rank: 6
-        '2013':
-          volume: 574000
-          percent: 2.76
-          rank: 12
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2013':
           volume: 3000
@@ -8306,7 +5718,7 @@ MN:
           rank: 21
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 812000
@@ -8348,99 +5760,11 @@ MN:
           volume: 8259000
           percent: 4.92
           rank: 7
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 652000
-          percent: 1.71
-          rank: 18
-        '2005':
-          volume: 656000
-          percent: 1.69
-          rank: 20
-        '2006':
-          volume: 590000
-          percent: 1.52
-          rank: 19
-        '2007':
-          volume: 727000
-          percent: 1.86
-          rank: 19
-        '2008':
-          volume: 725000
-          percent: 1.94
-          rank: 18
-        '2009':
-          volume: 796000
-          percent: 2.21
-          rank: 16
-        '2010':
-          volume: 933000
-          percent: 2.51
-          rank: 15
-        '2011':
-          volume: 748000
-          percent: 2
-          rank: 18
-        '2012':
-          volume: 839000
-          percent: 2.22
-          rank: 17
-        '2013':
-          volume: 1036000
-          percent: 2.59
-          rank: 16
 MO:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 10000
-          percent: 0.01
-          rank: 48
-        '2005':
-          volume: 9000
-          percent: 0.01
-          rank: 47
-        '2006':
-          volume: 24000
-          percent: 0.02
-          rank: 46
-        '2007':
-          volume: 29000
-          percent: 0.03
-          rank: 49
-        '2008':
-          volume: 246000
-          percent: 0.2
-          rank: 45
-        '2009':
-          volume: 575000
-          percent: 0.4
-          rank: 40
-        '2010':
-          volume: 988000
-          percent: 0.59
-          rank: 35
-        '2011':
-          volume: 1240000
-          percent: 0.64
-          rank: 33
-        '2012':
-          volume: 1299000
-          percent: 0.59
-          rank: 37
-        '2013':
-          volume: 1241000
-          percent: 0.49
-          rank: 39
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 10000
@@ -8528,7 +5852,7 @@ MO:
           rank: 20
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1480000
@@ -8766,53 +6090,9 @@ MO:
           volume: 199000
           percent: 0.01
           rank: 28
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 9000
-          percent: 0.06
-          rank: 35
-        '2005':
-          volume: 9000
-          percent: 0.06
-          rank: 32
-        '2006':
-          volume: 24000
-          percent: 0.15
-          rank: 34
-        '2007':
-          volume: 29000
-          percent: 0.18
-          rank: 34
-        '2008':
-          volume: 41000
-          percent: 0.23
-          rank: 33
-        '2009':
-          volume: 73000
-          percent: 0.4
-          rank: 30
-        '2010':
-          volume: 62000
-          percent: 0.33
-          rank: 31
-        '2011':
-          volume: 62000
-          percent: 0.32
-          rank: 33
-        '2012':
-          volume: 54000
-          percent: 0.27
-          rank: 38
-        '2013':
-          volume: 66000
-          percent: 0.32
-          rank: 36
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 203000
@@ -8838,71 +6118,11 @@ MO:
           volume: 1167000
           percent: 0.7
           rank: 24
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2008':
-          volume: 2000
-          percent: 0.01
-          rank: 31
-        '2009':
-          volume: 2000
-          percent: 0.01
-          rank: 31
-        '2013':
-          volume: 8000
-          percent: 0.02
-          rank: 30
 MS:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1514000
-          percent: 1.82
-          rank: 17
-        '2005':
-          volume: 1522000
-          percent: 1.74
-          rank: 19
-        '2006':
-          volume: 1541000
-          percent: 1.6
-          rank: 20
-        '2007':
-          volume: 1493000
-          percent: 1.42
-          rank: 20
-        '2008':
-          volume: 1391000
-          percent: 1.1
-          rank: 27
-        '2009':
-          volume: 1424000
-          percent: 0.99
-          rank: 29
-        '2010':
-          volume: 1504000
-          percent: 0.9
-          rank: 29
-        '2011':
-          volume: 1506000
-          percent: 0.78
-          rank: 31
-        '2012':
-          volume: 1509000
-          percent: 0.69
-          rank: 34
-        '2013':
-          volume: 1448000
-          percent: 0.57
-          rank: 36
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1514000
@@ -9228,143 +6448,11 @@ MS:
           volume: 24345000
           percent: 0.84
           rank: 13
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 3000
-          percent: 0.02
-          rank: 38
-        '2005':
-          volume: 5000
-          percent: 0.03
-          rank: 33
-        '2006':
-          volume: 6000
-          percent: 0.04
-          rank: 38
-        '2007':
-          volume: 5000
-          percent: 0.03
-          rank: 40
-        '2008':
-          volume: 5000
-          percent: 0.03
-          rank: 40
-        '2009':
-          volume: 7000
-          percent: 0.04
-          rank: 42
-        '2010':
-          volume: 1000
-          percent: 0.01
-          rank: 43
-        '2011':
-          volume: 3000
-          percent: 0.02
-          rank: 42
-        '2012':
-          volume: 16000
-          percent: 0.08
-          rank: 41
-        '2013':
-          volume: 15000
-          percent: 0.07
-          rank: 45
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1511000
-          percent: 3.96
-          rank: 12
-        '2005':
-          volume: 1516000
-          percent: 3.9
-          rank: 12
-        '2006':
-          volume: 1535000
-          percent: 3.96
-          rank: 12
-        '2007':
-          volume: 1488000
-          percent: 3.81
-          rank: 12
-        '2008':
-          volume: 1386000
-          percent: 3.72
-          rank: 12
-        '2009':
-          volume: 1417000
-          percent: 3.93
-          rank: 12
-        '2010':
-          volume: 1503000
-          percent: 4.04
-          rank: 12
-        '2011':
-          volume: 1503000
-          percent: 4.01
-          rank: 12
-        '2012':
-          volume: 1493000
-          percent: 3.95
-          rank: 11
-        '2013':
-          volume: 1433000
-          percent: 3.58
-          rank: 13
 MT:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 62000
-          percent: 0.07
-          rank: 46
-        '2005':
-          volume: 72000
-          percent: 0.08
-          rank: 45
-        '2006':
-          volume: 530000
-          percent: 0.55
-          rank: 36
-        '2007':
-          volume: 607000
-          percent: 0.58
-          rank: 36
-        '2008':
-          volume: 704000
-          percent: 0.56
-          rank: 36
-        '2009':
-          volume: 916000
-          percent: 0.63
-          rank: 34
-        '2010':
-          volume: 1027000
-          percent: 0.61
-          rank: 33
-        '2011':
-          volume: 1265000
-          percent: 0.65
-          rank: 32
-        '2012':
-          volume: 1262000
-          percent: 0.58
-          rank: 40
-        '2013':
-          volume: 1760000
-          percent: 0.69
-          rank: 33
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 62000
@@ -9444,7 +6532,7 @@ MT:
           rank: 4
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 8856000
@@ -9576,7 +6664,7 @@ MT:
           rank: 12
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2006':
           volume: 436000
@@ -9610,91 +6698,11 @@ MT:
           volume: 1755000
           percent: 1.05
           rank: 21
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 62000
-          percent: 0.16
-          rank: 29
-        '2005':
-          volume: 72000
-          percent: 0.19
-          rank: 29
-        '2006':
-          volume: 94000
-          percent: 0.24
-          rank: 28
-        '2007':
-          volume: 111000
-          percent: 0.28
-          rank: 29
-        '2008':
-          volume: 111000
-          percent: 0.3
-          rank: 28
-        '2009':
-          volume: 95000
-          percent: 0.26
-          rank: 29
-        '2010':
-          volume: 97000
-          percent: 0.26
-          rank: 30
-        '2013':
-          volume: 5000
-          percent: 0.01
-          rank: 31
 NC:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1733000
-          percent: 2.09
-          rank: 16
-        '2005':
-          volume: 1807000
-          percent: 2.07
-          rank: 15
-        '2006':
-          volume: 1828000
-          percent: 1.89
-          rank: 18
-        '2007':
-          volume: 1672000
-          percent: 1.59
-          rank: 18
-        '2008':
-          volume: 1922000
-          percent: 1.52
-          rank: 19
-        '2009':
-          volume: 1893000
-          percent: 1.31
-          rank: 23
-        '2010':
-          volume: 2083000
-          percent: 1.25
-          rank: 25
-        '2011':
-          volume: 2345000
-          percent: 1.21
-          rank: 25
-        '2012':
-          volume: 2704000
-          percent: 1.24
-          rank: 24
-        '2013':
-          volume: 2955000
-          percent: 1.17
-          rank: 23
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1733000
@@ -9738,7 +6746,7 @@ NC:
           rank: 9
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 5435000
@@ -9780,53 +6788,9 @@ NC:
           volume: 6901000
           percent: 2.57
           rank: 9
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 112000
-          percent: 0.73
-          rank: 20
-        '2005':
-          volume: 98000
-          percent: 0.64
-          rank: 19
-        '2006':
-          volume: 92000
-          percent: 0.57
-          rank: 24
-        '2007':
-          volume: 87000
-          percent: 0.53
-          rank: 25
-        '2008':
-          volume: 120000
-          percent: 0.68
-          rank: 27
-        '2009':
-          volume: 131000
-          percent: 0.71
-          rank: 25
-        '2010':
-          volume: 195000
-          percent: 1.03
-          rank: 21
-        '2011':
-          volume: 375000
-          percent: 1.95
-          rank: 15
-        '2012':
-          volume: 302000
-          percent: 1.52
-          rank: 17
-        '2013':
-          volume: 410000
-          percent: 1.97
-          rank: 17
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 2000
@@ -9852,99 +6816,11 @@ NC:
           volume: 345000
           percent: 3.82
           rank: 6
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1621000
-          percent: 4.25
-          rank: 11
-        '2005':
-          volume: 1709000
-          percent: 4.4
-          rank: 10
-        '2006':
-          volume: 1737000
-          percent: 4.48
-          rank: 9
-        '2007':
-          volume: 1585000
-          percent: 4.06
-          rank: 10
-        '2008':
-          volume: 1800000
-          percent: 4.83
-          rank: 8
-        '2009':
-          volume: 1757000
-          percent: 4.87
-          rank: 7
-        '2010':
-          volume: 1876000
-          percent: 5.05
-          rank: 7
-        '2011':
-          volume: 1953000
-          percent: 5.22
-          rank: 8
-        '2012':
-          volume: 2262000
-          percent: 5.98
-          rank: 6
-        '2013':
-          volume: 2200000
-          percent: 5.5
-          rank: 6
 ND:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 220000
-          percent: 0.26
-          rank: 39
-        '2005':
-          volume: 230000
-          percent: 0.26
-          rank: 39
-        '2006':
-          volume: 373000
-          percent: 0.39
-          rank: 39
-        '2007':
-          volume: 634000
-          percent: 0.6
-          rank: 35
-        '2008':
-          volume: 1706000
-          percent: 1.35
-          rank: 23
-        '2009':
-          volume: 3009000
-          percent: 2.09
-          rank: 14
-        '2010':
-          volume: 4108000
-          percent: 2.46
-          rank: 13
-        '2011':
-          volume: 5245000
-          percent: 2.7
-          rank: 10
-        '2012':
-          volume: 5280000
-          percent: 2.42
-          rank: 10
-        '2013':
-          volume: 5524000
-          percent: 2.18
-          rank: 13
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 6000
@@ -10032,7 +6908,7 @@ ND:
           rank: 6
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1546000
@@ -10162,53 +7038,9 @@ ND:
           volume: 313823000
           percent: 10.81
           rank: 2
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 6000
-          percent: 0.04
-          rank: 36
-        '2005':
-          volume: 10000
-          percent: 0.06
-          rank: 31
-        '2006':
-          volume: 4000
-          percent: 0.02
-          rank: 39
-        '2007':
-          volume: 14000
-          percent: 0.08
-          rank: 38
-        '2008':
-          volume: 13000
-          percent: 0.07
-          rank: 39
-        '2009':
-          volume: 12000
-          percent: 0.07
-          rank: 41
-        '2010':
-          volume: 12000
-          percent: 0.06
-          rank: 41
-        '2011':
-          volume: 10000
-          percent: 0.05
-          rank: 40
-        '2012':
-          volume: 6000
-          percent: 0.03
-          rank: 45
-        '2013':
-          volume: 5000
-          percent: 0.02
-          rank: 46
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 215000
@@ -10252,53 +7084,9 @@ ND:
           rank: 11
 NE:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 78000
-          percent: 0.09
-          rank: 45
-        '2005':
-          volume: 139000
-          percent: 0.16
-          rank: 43
-        '2006':
-          volume: 313000
-          percent: 0.32
-          rank: 40
-        '2007':
-          volume: 278000
-          percent: 0.26
-          rank: 41
-        '2008':
-          volume: 275000
-          percent: 0.22
-          rank: 44
-        '2009':
-          volume: 449000
-          percent: 0.31
-          rank: 43
-        '2010':
-          volume: 493000
-          percent: 0.29
-          rank: 43
-        '2011':
-          volume: 1116000
-          percent: 0.58
-          rank: 35
-        '2012':
-          volume: 1347000
-          percent: 0.62
-          rank: 36
-        '2013':
-          volume: 1869000
-          percent: 0.74
-          rank: 32
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 40000
@@ -10342,7 +7130,7 @@ NE:
           rank: 38
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 913000
@@ -10624,53 +7412,9 @@ NE:
           volume: 2808000
           percent: 0.1
           rank: 22
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 40000
-          percent: 0.26
-          rank: 30
-        '2005':
-          volume: 43000
-          percent: 0.28
-          rank: 26
-        '2006':
-          volume: 52000
-          percent: 0.32
-          rank: 29
-        '2007':
-          volume: 61000
-          percent: 0.37
-          rank: 27
-        '2008':
-          volume: 61000
-          percent: 0.34
-          rank: 30
-        '2009':
-          volume: 66000
-          percent: 0.36
-          rank: 32
-        '2010':
-          volume: 72000
-          percent: 0.38
-          rank: 30
-        '2011':
-          volume: 65000
-          percent: 0.34
-          rank: 32
-        '2012':
-          volume: 63000
-          percent: 0.32
-          rank: 33
-        '2013':
-          volume: 67000
-          percent: 0.32
-          rank: 35
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 38000
@@ -10714,53 +7458,9 @@ NE:
           rank: 20
 NH:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 883000
-          percent: 1.06
-          rank: 23
-        '2005':
-          volume: 942000
-          percent: 1.08
-          rank: 24
-        '2006':
-          volume: 746000
-          percent: 0.77
-          rank: 32
-        '2007':
-          volume: 1123000
-          percent: 1.07
-          rank: 28
-        '2008':
-          volume: 1175000
-          percent: 0.93
-          rank: 29
-        '2009':
-          volume: 1198000
-          percent: 0.83
-          rank: 31
-        '2010':
-          volume: 1232000
-          percent: 0.74
-          rank: 32
-        '2011':
-          volume: 1091000
-          percent: 0.56
-          rank: 37
-        '2012':
-          volume: 1381000
-          percent: 0.63
-          rank: 35
-        '2013':
-          volume: 1695000
-          percent: 0.67
-          rank: 34
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 883000
@@ -10804,7 +7504,7 @@ NH:
           rank: 19
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1316000
@@ -10846,53 +7546,9 @@ NH:
           volume: 1427000
           percent: 0.53
           rank: 25
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 155000
-          percent: 1.01
-          rank: 18
-        '2005':
-          volume: 156000
-          percent: 1.01
-          rank: 17
-        '2006':
-          volume: 156000
-          percent: 0.97
-          rank: 19
-        '2007':
-          volume: 153000
-          percent: 0.93
-          rank: 20
-        '2008':
-          volume: 155000
-          percent: 0.87
-          rank: 24
-        '2009':
-          volume: 151000
-          percent: 0.82
-          rank: 22
-        '2010':
-          volume: 127000
-          percent: 0.67
-          rank: 26
-        '2011':
-          volume: 108000
-          percent: 0.56
-          rank: 27
-        '2012':
-          volume: 137000
-          percent: 0.69
-          rank: 25
-        '2013':
-          volume: 137000
-          percent: 0.66
-          rank: 26
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 10000
@@ -10918,99 +7574,11 @@ NH:
           volume: 389000
           percent: 0.23
           rank: 30
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 728000
-          percent: 1.91
-          rank: 16
-        '2005':
-          volume: 786000
-          percent: 2.02
-          rank: 15
-        '2006':
-          volume: 590000
-          percent: 1.52
-          rank: 19
-        '2007':
-          volume: 970000
-          percent: 2.49
-          rank: 14
-        '2008':
-          volume: 1010000
-          percent: 2.71
-          rank: 14
-        '2009':
-          volume: 984000
-          percent: 2.73
-          rank: 14
-        '2010':
-          volume: 1030000
-          percent: 2.77
-          rank: 14
-        '2011':
-          volume: 917000
-          percent: 2.45
-          rank: 17
-        '2012':
-          volume: 1035000
-          percent: 2.74
-          rank: 15
-        '2013':
-          volume: 1169000
-          percent: 2.92
-          rank: 14
 NJ:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 806000
-          percent: 0.97
-          rank: 27
-        '2005':
-          volume: 875000
-          percent: 1
-          rank: 25
-        '2006':
-          volume: 917000
-          percent: 0.95
-          rank: 26
-        '2007':
-          volume: 844000
-          percent: 0.8
-          rank: 30
-        '2008':
-          volume: 905000
-          percent: 0.72
-          rank: 32
-        '2009':
-          volume: 960000
-          percent: 0.67
-          rank: 32
-        '2010':
-          volume: 850000
-          percent: 0.51
-          rank: 37
-        '2011':
-          volume: 956000
-          percent: 0.49
-          rank: 40
-        '2012':
-          volume: 1281000
-          percent: 0.59
-          rank: 39
-        '2013':
-          volume: 1447000
-          percent: 0.57
-          rank: 37
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 806000
@@ -11054,7 +7622,7 @@ NJ:
           rank: 22
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 38000
@@ -11096,53 +7664,9 @@ NJ:
           volume: 18000
           percent: 0.01
           rank: 46
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 806000
-          percent: 5.23
-          rank: 6
-        '2005':
-          volume: 875000
-          percent: 5.67
-          rank: 5
-        '2006':
-          volume: 901000
-          percent: 5.6
-          rank: 6
-        '2007':
-          volume: 823000
-          percent: 4.98
-          rank: 6
-        '2008':
-          volume: 882000
-          percent: 4.97
-          rank: 6
-        '2009':
-          volume: 928000
-          percent: 5.03
-          rank: 6
-        '2010':
-          volume: 816000
-          percent: 4.31
-          rank: 7
-        '2011':
-          volume: 876000
-          percent: 4.56
-          rank: 7
-        '2012':
-          volume: 965000
-          percent: 4.87
-          rank: 7
-        '2013':
-          volume: 999000
-          percent: 4.8
-          rank: 6
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 3000
@@ -11170,7 +7694,7 @@ NJ:
           rank: 4
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2006':
           volume: 16000
@@ -11206,53 +7730,9 @@ NJ:
           rank: 37
 NM:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 513000
-          percent: 0.62
-          rank: 33
-        '2005':
-          volume: 799000
-          percent: 0.91
-          rank: 27
-        '2006':
-          volume: 1277000
-          percent: 1.32
-          rank: 23
-        '2007':
-          volume: 1409000
-          percent: 1.34
-          rank: 21
-        '2008':
-          volume: 1662000
-          percent: 1.32
-          rank: 24
-        '2009':
-          volume: 1580000
-          percent: 1.1
-          rank: 28
-        '2010':
-          volume: 1855000
-          percent: 1.11
-          rank: 27
-        '2011':
-          volume: 2242000
-          percent: 1.16
-          rank: 26
-        '2012':
-          volume: 2574000
-          percent: 1.18
-          rank: 25
-        '2013':
-          volume: 2600000
-          percent: 1.03
-          rank: 29
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2005':
           volume: 5000
@@ -11336,7 +7816,7 @@ NM:
           rank: 9
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 139000
@@ -11466,49 +7946,9 @@ NM:
           volume: 101451000
           percent: 3.49
           rank: 6
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2005':
-          volume: 5000
-          percent: 0.03
-          rank: 33
-        '2006':
-          volume: 22000
-          percent: 0.14
-          rank: 35
-        '2007':
-          volume: 16000
-          percent: 0.1
-          rank: 37
-        '2008':
-          volume: 19000
-          percent: 0.11
-          rank: 38
-        '2009':
-          volume: 34000
-          percent: 0.18
-          rank: 37
-        '2010':
-          volume: 14000
-          percent: 0.07
-          rank: 40
-        '2011':
-          volume: 9000
-          percent: 0.05
-          rank: 41
-        '2012':
-          volume: 14000
-          percent: 0.07
-          rank: 42
-        '2013':
-          volume: 19000
-          percent: 0.09
-          rank: 44
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 9000
@@ -11528,7 +7968,7 @@ NM:
           rank: 5
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 513000
@@ -11572,53 +8012,9 @@ NM:
           rank: 19
 NV:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1298000
-          percent: 1.56
-          rank: 18
-        '2005':
-          volume: 1263000
-          percent: 1.45
-          rank: 20
-        '2006':
-          volume: 1344000
-          percent: 1.39
-          rank: 21
-        '2007':
-          volume: 1297000
-          percent: 1.23
-          rank: 24
-        '2008':
-          volume: 1539000
-          percent: 1.22
-          rank: 25
-        '2009':
-          volume: 1808000
-          percent: 1.25
-          rank: 24
-        '2010':
-          volume: 2287000
-          percent: 1.37
-          rank: 23
-        '2011':
-          volume: 2437000
-          percent: 1.26
-          rank: 24
-        '2012':
-          volume: 2969000
-          percent: 1.36
-          rank: 21
-        '2013':
-          volume: 3690000
-          percent: 1.46
-          rank: 20
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2009':
           volume: 1000
@@ -11634,7 +8030,7 @@ NV:
           rank: 43
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1615000
@@ -11678,7 +8074,7 @@ NV:
           rank: 16
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1298000
@@ -11864,21 +8260,9 @@ NV:
           volume: 334000
           percent: 0.01
           rank: 26
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2012':
-          volume: 19000
-          percent: 0.1
-          rank: 40
-        '2013':
-          volume: 24000
-          percent: 0.12
-          rank: 42
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2007':
           volume: 44000
@@ -11910,7 +8294,7 @@ NV:
           rank: 3
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 129000
@@ -11920,63 +8304,11 @@ NV:
           volume: 251000
           percent: 0.15
           rank: 32
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2009':
-          volume: 1000
-          percent: 0
-          rank: 32
 NY:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1912000
-          percent: 2.3
-          rank: 12
-        '2005':
-          volume: 1988000
-          percent: 2.28
-          rank: 13
-        '2006':
-          volume: 2597000
-          percent: 2.69
-          rank: 9
-        '2007':
-          volume: 2775000
-          percent: 2.64
-          rank: 11
-        '2008':
-          volume: 3319000
-          percent: 2.63
-          rank: 10
-        '2009':
-          volume: 4467000
-          percent: 3.1
-          rank: 6
-        '2010':
-          volume: 4815000
-          percent: 2.88
-          rank: 7
-        '2011':
-          volume: 4896000
-          percent: 2.52
-          rank: 11
-        '2012':
-          volume: 5192000
-          percent: 2.38
-          rank: 12
-        '2013':
-          volume: 5888000
-          percent: 2.32
-          rank: 11
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1795000
@@ -12020,7 +8352,7 @@ NY:
           rank: 11
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 23990000
@@ -12302,53 +8634,9 @@ NY:
           volume: 313000
           percent: 0.01
           rank: 27
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1298000
-          percent: 8.42
-          rank: 3
-        '2005':
-          volume: 1358000
-          percent: 8.81
-          rank: 3
-        '2006':
-          volume: 1419000
-          percent: 8.82
-          rank: 4
-        '2007':
-          volume: 1449000
-          percent: 8.77
-          rank: 4
-        '2008':
-          volume: 1513000
-          percent: 8.53
-          rank: 3
-        '2009':
-          volume: 1665000
-          percent: 9.03
-          rank: 3
-        '2010':
-          volume: 1671000
-          percent: 8.83
-          rank: 4
-        '2011':
-          volume: 1619000
-          percent: 8.42
-          rank: 4
-        '2012':
-          volume: 1660000
-          percent: 8.37
-          rank: 4
-        '2013':
-          volume: 1674000
-          percent: 8.04
-          rank: 4
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2011':
           volume: 6000
@@ -12364,7 +8652,7 @@ NY:
           rank: 11
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 116000
@@ -12406,99 +8694,11 @@ NY:
           volume: 3539000
           percent: 2.11
           rank: 13
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 497000
-          percent: 1.3
-          rank: 21
-        '2005':
-          volume: 528000
-          percent: 1.36
-          rank: 22
-        '2006':
-          volume: 522000
-          percent: 1.35
-          rank: 20
-        '2007':
-          volume: 492000
-          percent: 1.26
-          rank: 21
-        '2008':
-          volume: 555000
-          percent: 1.49
-          rank: 21
-        '2009':
-          volume: 536000
-          percent: 1.49
-          rank: 21
-        '2010':
-          volume: 547000
-          percent: 1.47
-          rank: 21
-        '2011':
-          volume: 442000
-          percent: 1.18
-          rank: 22
-        '2012':
-          volume: 488000
-          percent: 1.29
-          rank: 22
-        '2013':
-          volume: 608000
-          percent: 1.52
-          rank: 20
 OH:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 428000
-          percent: 0.52
-          rank: 34
-        '2005':
-          volume: 446000
-          percent: 0.51
-          rank: 35
-        '2006':
-          volume: 459000
-          percent: 0.48
-          rank: 37
-        '2007':
-          volume: 435000
-          percent: 0.41
-          rank: 40
-        '2008':
-          volume: 623000
-          percent: 0.49
-          rank: 37
-        '2009':
-          volume: 633000
-          percent: 0.44
-          rank: 39
-        '2010':
-          volume: 700000
-          percent: 0.42
-          rank: 41
-        '2011':
-          volume: 936000
-          percent: 0.48
-          rank: 41
-        '2012':
-          volume: 1739000
-          percent: 0.8
-          rank: 31
-        '2013':
-          volume: 2009000
-          percent: 0.79
-          rank: 31
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 428000
@@ -12586,7 +8786,7 @@ OH:
           rank: 7
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 730000
@@ -12716,53 +8916,9 @@ OH:
           volume: 7962000
           percent: 0.27
           rank: 16
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 30000
-          percent: 0.19
-          rank: 33
-        '2005':
-          volume: 27000
-          percent: 0.18
-          rank: 29
-        '2006':
-          volume: 34000
-          percent: 0.21
-          rank: 30
-        '2007':
-          volume: 21000
-          percent: 0.13
-          rank: 35
-        '2008':
-          volume: 190000
-          percent: 1.07
-          rank: 18
-        '2009':
-          volume: 210000
-          percent: 1.14
-          rank: 18
-        '2010':
-          volume: 276000
-          percent: 1.46
-          rank: 17
-        '2011':
-          volume: 332000
-          percent: 1.73
-          rank: 17
-        '2012':
-          volume: 366000
-          percent: 1.85
-          rank: 15
-        '2013':
-          volume: 474000
-          percent: 2.28
-          rank: 14
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 13000
@@ -12782,7 +8938,7 @@ OH:
           rank: 14
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2005':
           volume: 13000
@@ -12820,99 +8976,11 @@ OH:
           volume: 1146000
           percent: 0.68
           rank: 25
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 398000
-          percent: 1.04
-          rank: 23
-        '2005':
-          volume: 406000
-          percent: 1.04
-          rank: 24
-        '2006':
-          volume: 410000
-          percent: 1.06
-          rank: 23
-        '2007':
-          volume: 399000
-          percent: 1.02
-          rank: 24
-        '2008':
-          volume: 418000
-          percent: 1.12
-          rank: 23
-        '2009':
-          volume: 410000
-          percent: 1.14
-          rank: 23
-        '2010':
-          volume: 399000
-          percent: 1.07
-          rank: 24
-        '2011':
-          volume: 390000
-          percent: 1.04
-          rank: 23
-        '2012':
-          volume: 351000
-          percent: 0.93
-          rank: 24
-        '2013':
-          volume: 343000
-          percent: 0.86
-          rank: 24
 OK:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 823000
-          percent: 0.99
-          rank: 25
-        '2005':
-          volume: 1137000
-          percent: 1.3
-          rank: 23
-        '2006':
-          volume: 2010000
-          percent: 2.08
-          rank: 15
-        '2007':
-          volume: 2129000
-          percent: 2.02
-          rank: 16
-        '2008':
-          volume: 2551000
-          percent: 2.02
-          rank: 18
-        '2009':
-          volume: 2929000
-          percent: 2.03
-          rank: 15
-        '2010':
-          volume: 4160000
-          percent: 2.49
-          rank: 11
-        '2011':
-          volume: 5919000
-          percent: 3.05
-          rank: 7
-        '2012':
-          volume: 8521000
-          percent: 3.9
-          rank: 5
-        '2013':
-          volume: 11506000
-          percent: 4.54
-          rank: 4
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 250000
@@ -13000,7 +9068,7 @@ OK:
           rank: 18
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 2977000
@@ -13130,41 +9198,9 @@ OK:
           volume: 114486000
           percent: 3.94
           rank: 5
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2007':
-          volume: 4000
-          percent: 0.02
-          rank: 41
-        '2008':
-          volume: 170000
-          percent: 0.96
-          rank: 19
-        '2009':
-          volume: 163000
-          percent: 0.88
-          rank: 21
-        '2010':
-          volume: 97000
-          percent: 0.51
-          rank: 27
-        '2011':
-          volume: 87000
-          percent: 0.45
-          rank: 29
-        '2012':
-          volume: 94000
-          percent: 0.47
-          rank: 29
-        '2013':
-          volume: 126000
-          percent: 0.61
-          rank: 27
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 573000
@@ -13206,99 +9242,11 @@ OK:
           volume: 11162000
           percent: 6.65
           rank: 4
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 250000
-          percent: 0.66
-          rank: 26
-        '2005':
-          volume: 289000
-          percent: 0.74
-          rank: 26
-        '2006':
-          volume: 297000
-          percent: 0.77
-          rank: 25
-        '2007':
-          volume: 276000
-          percent: 0.71
-          rank: 26
-        '2008':
-          volume: 23000
-          percent: 0.06
-          rank: 30
-        '2009':
-          volume: 68000
-          percent: 0.19
-          rank: 30
-        '2010':
-          volume: 255000
-          percent: 0.69
-          rank: 26
-        '2011':
-          volume: 227000
-          percent: 0.61
-          rank: 26
-        '2012':
-          volume: 269000
-          percent: 0.71
-          rank: 26
-        '2013':
-          volume: 218000
-          percent: 0.54
-          rank: 26
 OR:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1115000
-          percent: 1.34
-          rank: 21
-        '2005':
-          volume: 1601000
-          percent: 1.83
-          rank: 18
-        '2006':
-          volume: 1829000
-          percent: 1.89
-          rank: 17
-        '2007':
-          volume: 2228000
-          percent: 2.12
-          rank: 15
-        '2008':
-          volume: 3423000
-          percent: 2.71
-          rank: 8
-        '2009':
-          volume: 4272000
-          percent: 2.96
-          rank: 8
-        '2010':
-          volume: 4757000
-          percent: 2.85
-          rank: 8
-        '2011':
-          volume: 5490000
-          percent: 2.83
-          rank: 8
-        '2012':
-          volume: 7207000
-          percent: 3.3
-          rank: 8
-        '2013':
-          volume: 8635000
-          percent: 3.41
-          rank: 9
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 496000
@@ -13342,7 +9290,7 @@ OR:
           rank: 23
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 33081000
@@ -13386,7 +9334,7 @@ OR:
           rank: 2
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 26000
@@ -13544,53 +9492,9 @@ OR:
           volume: 950
           percent: 0.15
           rank: 12
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 86000
-          percent: 0.56
-          rank: 23
-        '2005':
-          volume: 98000
-          percent: 0.64
-          rank: 19
-        '2006':
-          volume: 99000
-          percent: 0.62
-          rank: 23
-        '2007':
-          volume: 139000
-          percent: 0.84
-          rank: 22
-        '2008':
-          volume: 131000
-          percent: 0.74
-          rank: 25
-        '2009':
-          volume: 128000
-          percent: 0.69
-          rank: 26
-        '2010':
-          volume: 205000
-          percent: 1.08
-          rank: 19
-        '2011':
-          volume: 222000
-          percent: 1.15
-          rank: 20
-        '2012':
-          volume: 232000
-          percent: 1.17
-          rank: 21
-        '2013':
-          volume: 294000
-          percent: 1.41
-          rank: 20
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 6000
@@ -13602,7 +9506,7 @@ OR:
           rank: 17
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 619000
@@ -13644,99 +9548,11 @@ OR:
           volume: 7456000
           percent: 4.44
           rank: 8
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 410000
-          percent: 1.08
-          rank: 22
-        '2005':
-          volume: 768000
-          percent: 1.98
-          rank: 16
-        '2006':
-          volume: 799000
-          percent: 2.06
-          rank: 15
-        '2007':
-          volume: 843000
-          percent: 2.16
-          rank: 17
-        '2008':
-          volume: 717000
-          percent: 1.92
-          rank: 19
-        '2009':
-          volume: 674000
-          percent: 1.87
-          rank: 19
-        '2010':
-          volume: 632000
-          percent: 1.7
-          rank: 20
-        '2011':
-          volume: 492000
-          percent: 1.31
-          rank: 20
-        '2012':
-          volume: 600000
-          percent: 1.59
-          rank: 20
-        '2013':
-          volume: 700000
-          percent: 1.75
-          rank: 19
 PA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2276000
-          percent: 2.74
-          rank: 11
-        '2005':
-          volume: 2329000
-          percent: 2.67
-          rank: 11
-        '2006':
-          volume: 2473000
-          percent: 2.56
-          rank: 11
-        '2007':
-          volume: 2546000
-          percent: 2.42
-          rank: 13
-        '2008':
-          volume: 2804000
-          percent: 2.22
-          rank: 13
-        '2009':
-          volume: 3352000
-          percent: 2.32
-          rank: 11
-        '2010':
-          volume: 4245000
-          percent: 2.54
-          rank: 10
-        '2011':
-          volume: 4099000
-          percent: 2.11
-          rank: 15
-        '2012':
-          volume: 4459000
-          percent: 2.04
-          rank: 14
-        '2013':
-          volume: 5754000
-          percent: 2.27
-          rank: 12
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1969000
@@ -13780,7 +9596,7 @@ PA:
           rank: 10
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3155000
@@ -13910,53 +9726,9 @@ PA:
           volume: 5246000
           percent: 0.18
           rank: 20
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1289000
-          percent: 8.36
-          rank: 4
-        '2005':
-          volume: 1358000
-          percent: 8.81
-          rank: 3
-        '2006':
-          volume: 1429000
-          percent: 8.88
-          rank: 3
-        '2007':
-          volume: 1457000
-          percent: 8.82
-          rank: 3
-        '2008':
-          volume: 1416000
-          percent: 7.98
-          rank: 4
-        '2009':
-          volume: 1579000
-          percent: 8.56
-          rank: 4
-        '2010':
-          volume: 1708000
-          percent: 9.03
-          rank: 3
-        '2011':
-          volume: 1653000
-          percent: 8.6
-          rank: 3
-        '2012':
-          volume: 1765000
-          percent: 8.9
-          rank: 3
-        '2013':
-          volume: 1847000
-          percent: 8.87
-          rank: 3
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2009':
           volume: 4000
@@ -13980,7 +9752,7 @@ PA:
           rank: 12
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 306000
@@ -14022,95 +9794,11 @@ PA:
           volume: 3352000
           percent: 2
           rank: 15
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 680000
-          percent: 1.78
-          rank: 17
-        '2005':
-          volume: 687000
-          percent: 1.77
-          rank: 19
-        '2006':
-          volume: 683000
-          percent: 1.76
-          rank: 18
-        '2007':
-          volume: 620000
-          percent: 1.59
-          rank: 20
-        '2008':
-          volume: 658000
-          percent: 1.76
-          rank: 20
-        '2009':
-          volume: 694000
-          percent: 1.93
-          rank: 18
-        '2010':
-          volume: 675000
-          percent: 1.82
-          rank: 19
-        '2011':
-          volume: 628000
-          percent: 1.68
-          rank: 19
-        '2012':
-          volume: 534000
-          percent: 1.41
-          rank: 21
-        '2013':
-          volume: 492000
-          percent: 1.23
-          rank: 21
 RI:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 102000
-          percent: 0.12
-          rank: 44
-        '2006':
-          volume: 149000
-          percent: 0.15
-          rank: 44
-        '2007':
-          volume: 155000
-          percent: 0.15
-          rank: 45
-        '2008':
-          volume: 158000
-          percent: 0.13
-          rank: 47
-        '2009':
-          volume: 145000
-          percent: 0.1
-          rank: 48
-        '2010':
-          volume: 140000
-          percent: 0.08
-          rank: 47
-        '2011':
-          volume: 130000
-          percent: 0.07
-          rank: 49
-        '2012':
-          volume: 102000
-          percent: 0.05
-          rank: 49
-        '2013':
-          volume: 53000
-          percent: 0.02
-          rank: 49
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 102000
@@ -14150,7 +9838,7 @@ RI:
           rank: 42
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 5000
@@ -14192,49 +9880,9 @@ RI:
           volume: 4000
           percent: 0
           rank: 48
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 102000
-          percent: 0.66
-          rank: 22
-        '2006':
-          volume: 149000
-          percent: 0.93
-          rank: 20
-        '2007':
-          volume: 155000
-          percent: 0.94
-          rank: 19
-        '2008':
-          volume: 158000
-          percent: 0.89
-          rank: 23
-        '2009':
-          volume: 145000
-          percent: 0.79
-          rank: 23
-        '2010':
-          volume: 137000
-          percent: 0.72
-          rank: 23
-        '2011':
-          volume: 127000
-          percent: 0.66
-          rank: 25
-        '2012':
-          volume: 101000
-          percent: 0.51
-          rank: 27
-        '2013':
-          volume: 48000
-          percent: 0.23
-          rank: 40
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2013':
           volume: 2000
@@ -14242,7 +9890,7 @@ RI:
           rank: 22
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 3000
@@ -14262,53 +9910,9 @@ RI:
           rank: 39
 SC:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1763000
-          percent: 2.12
-          rank: 15
-        '2005':
-          volume: 1814000
-          percent: 2.08
-          rank: 14
-        '2006':
-          volume: 1910000
-          percent: 1.98
-          rank: 16
-        '2007':
-          volume: 1996000
-          percent: 1.9
-          rank: 17
-        '2008':
-          volume: 1816000
-          percent: 1.44
-          rank: 20
-        '2009':
-          volume: 1748000
-          percent: 1.21
-          rank: 25
-        '2010':
-          volume: 1873000
-          percent: 1.12
-          rank: 26
-        '2011':
-          volume: 2129000
-          percent: 1.1
-          rank: 28
-        '2012':
-          volume: 2143000
-          percent: 0.98
-          rank: 29
-        '2013':
-          volume: 2226000
-          percent: 0.88
-          rank: 30
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1763000
@@ -14352,7 +9956,7 @@ SC:
           rank: 12
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 2447000
@@ -14394,143 +9998,11 @@ SC:
           volume: 3160000
           percent: 1.18
           rank: 15
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 69000
-          percent: 0.45
-          rank: 26
-        '2005':
-          volume: 88000
-          percent: 0.57
-          rank: 20
-        '2006':
-          volume: 106000
-          percent: 0.66
-          rank: 22
-        '2007':
-          volume: 101000
-          percent: 0.61
-          rank: 23
-        '2008':
-          volume: 120000
-          percent: 0.68
-          rank: 27
-        '2009':
-          volume: 137000
-          percent: 0.74
-          rank: 24
-        '2010':
-          volume: 131000
-          percent: 0.69
-          rank: 25
-        '2011':
-          volume: 141000
-          percent: 0.73
-          rank: 24
-        '2012':
-          volume: 203000
-          percent: 1.02
-          rank: 22
-        '2013':
-          volume: 213000
-          percent: 1.02
-          rank: 23
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1694000
-          percent: 4.44
-          rank: 10
-        '2005':
-          volume: 1726000
-          percent: 4.44
-          rank: 9
-        '2006':
-          volume: 1804000
-          percent: 4.65
-          rank: 7
-        '2007':
-          volume: 1895000
-          percent: 4.86
-          rank: 7
-        '2008':
-          volume: 1696000
-          percent: 4.55
-          rank: 10
-        '2009':
-          volume: 1611000
-          percent: 4.47
-          rank: 9
-        '2010':
-          volume: 1742000
-          percent: 4.69
-          rank: 8
-        '2011':
-          volume: 1988000
-          percent: 5.31
-          rank: 7
-        '2012':
-          volume: 1941000
-          percent: 5.13
-          rank: 8
-        '2013':
-          volume: 2013000
-          percent: 5.03
-          rank: 8
 SD:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 158000
-          percent: 0.19
-          rank: 42
-        '2005':
-          volume: 158000
-          percent: 0.18
-          rank: 41
-        '2006':
-          volume: 149000
-          percent: 0.15
-          rank: 44
-        '2007':
-          volume: 150000
-          percent: 0.14
-          rank: 46
-        '2008':
-          volume: 147000
-          percent: 0.12
-          rank: 48
-        '2009':
-          volume: 427000
-          percent: 0.3
-          rank: 45
-        '2010':
-          volume: 1372000
-          percent: 0.82
-          rank: 30
-        '2011':
-          volume: 2668000
-          percent: 1.38
-          rank: 22
-        '2012':
-          volume: 2915000
-          percent: 1.34
-          rank: 22
-        '2013':
-          volume: 2688000
-          percent: 1.06
-          rank: 28
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2008':
           volume: 2000
@@ -14542,7 +10014,7 @@ SD:
           rank: 46
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3598000
@@ -14820,21 +10292,9 @@ SD:
           volume: 1829000
           percent: 0.06
           rank: 25
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2008':
-          volume: 2000
-          percent: 0.01
-          rank: 41
-        '2009':
-          volume: 6000
-          percent: 0.03
-          rank: 43
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 158000
@@ -14878,53 +10338,9 @@ SD:
           rank: 17
 TN:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 830000
-          percent: 1
-          rank: 24
-        '2005':
-          volume: 766000
-          percent: 0.88
-          rank: 29
-        '2006':
-          volume: 811000
-          percent: 0.84
-          rank: 29
-        '2007':
-          volume: 971000
-          percent: 0.92
-          rank: 29
-        '2008':
-          volume: 965000
-          percent: 0.77
-          rank: 30
-        '2009':
-          volume: 950000
-          percent: 0.66
-          rank: 33
-        '2010':
-          volume: 988000
-          percent: 0.59
-          rank: 35
-        '2011':
-          volume: 1020000
-          percent: 0.53
-          rank: 38
-        '2012':
-          volume: 836000
-          percent: 0.38
-          rank: 44
-        '2013':
-          volume: 1110000
-          percent: 0.44
-          rank: 41
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 826000
@@ -15012,7 +10428,7 @@ TN:
           rank: 19
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 10408000
@@ -15294,53 +10710,9 @@ TN:
           volume: 334000
           percent: 0.01
           rank: 26
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 42000
-          percent: 0.27
-          rank: 29
-        '2005':
-          volume: 68000
-          percent: 0.44
-          rank: 23
-        '2006':
-          volume: 58000
-          percent: 0.36
-          rank: 27
-        '2007':
-          volume: 52000
-          percent: 0.31
-          rank: 29
-        '2008':
-          volume: 36000
-          percent: 0.2
-          rank: 34
-        '2009':
-          volume: 36000
-          percent: 0.2
-          rank: 36
-        '2010':
-          volume: 33000
-          percent: 0.17
-          rank: 36
-        '2011':
-          volume: 36000
-          percent: 0.19
-          rank: 38
-        '2012':
-          volume: 62000
-          percent: 0.31
-          rank: 34
-        '2013':
-          volume: 85000
-          percent: 0.41
-          rank: 30
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 12000
@@ -15352,7 +10724,7 @@ TN:
           rank: 17
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 4000
@@ -15394,99 +10766,11 @@ TN:
           volume: 47000
           percent: 0.03
           rank: 36
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 784000
-          percent: 2.06
-          rank: 15
-        '2005':
-          volume: 695000
-          percent: 1.79
-          rank: 18
-        '2006':
-          volume: 698000
-          percent: 1.8
-          rank: 17
-        '2007':
-          volume: 868000
-          percent: 2.23
-          rank: 16
-        '2008':
-          volume: 879000
-          percent: 2.36
-          rank: 16
-        '2009':
-          volume: 862000
-          percent: 2.39
-          rank: 15
-        '2010':
-          volume: 914000
-          percent: 2.46
-          rank: 16
-        '2011':
-          volume: 930000
-          percent: 2.48
-          rank: 15
-        '2012':
-          volume: 715000
-          percent: 1.89
-          rank: 18
-        '2013':
-          volume: 958000
-          percent: 2.39
-          rank: 18
 TX:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 4247000
-          percent: 5.11
-          rank: 3
-        '2005':
-          volume: 5336000
-          percent: 6.11
-          rank: 2
-        '2006':
-          volume: 7818000
-          percent: 8.1
-          rank: 2
-        '2007':
-          volume: 10288000
-          percent: 9.78
-          rank: 2
-        '2008':
-          volume: 17639000
-          percent: 13.99
-          rank: 2
-        '2009':
-          volume: 21104000
-          percent: 14.63
-          rank: 2
-        '2010':
-          volume: 27705000
-          percent: 16.57
-          rank: 1
-        '2011':
-          volume: 32183000
-          percent: 16.59
-          rank: 1
-        '2012':
-          volume: 34017000
-          percent: 15.58
-          rank: 1
-        '2013':
-          volume: 37760000
-          percent: 14.89
-          rank: 1
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1109000
@@ -15574,7 +10858,7 @@ TX:
           rank: 3
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1301000
@@ -15704,53 +10988,9 @@ TX:
           volume: 923561000
           percent: 31.81
           rank: 1
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 252000
-          percent: 1.63
-          rank: 16
-        '2005':
-          volume: 247000
-          percent: 1.6
-          rank: 15
-        '2006':
-          volume: 256000
-          percent: 1.59
-          rank: 16
-        '2007':
-          volume: 367000
-          percent: 2.22
-          rank: 14
-        '2008':
-          volume: 438000
-          percent: 2.47
-          rank: 13
-        '2009':
-          volume: 429000
-          percent: 2.33
-          rank: 13
-        '2010':
-          volume: 545000
-          percent: 2.88
-          rank: 12
-        '2011':
-          volume: 678000
-          percent: 3.53
-          rank: 10
-        '2012':
-          volume: 700000
-          percent: 3.53
-          rank: 10
-        '2013':
-          volume: 730000
-          percent: 3.51
-          rank: 9
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2010':
           volume: 8000
@@ -15770,7 +11010,7 @@ TX:
           rank: 9
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 3138000
@@ -15812,99 +11052,11 @@ TX:
           volume: 35874000
           percent: 21.37
           rank: 1
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 857000
-          percent: 2.25
-          rank: 14
-        '2005':
-          volume: 852000
-          percent: 2.19
-          rank: 14
-        '2006':
-          volume: 892000
-          percent: 2.3
-          rank: 14
-        '2007':
-          volume: 914000
-          percent: 2.34
-          rank: 15
-        '2008':
-          volume: 976000
-          percent: 2.62
-          rank: 15
-        '2009':
-          volume: 649000
-          percent: 1.8
-          rank: 20
-        '2010':
-          volume: 900000
-          percent: 2.42
-          rank: 17
-        '2011':
-          volume: 928000
-          percent: 2.48
-          rank: 16
-        '2012':
-          volume: 984000
-          percent: 2.6
-          rank: 16
-        '2013':
-          volume: 993000
-          percent: 2.48
-          rank: 17
 UT:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 199000
-          percent: 0.24
-          rank: 40
-        '2005':
-          volume: 189000
-          percent: 0.22
-          rank: 40
-        '2006':
-          volume: 205000
-          percent: 0.21
-          rank: 42
-        '2007':
-          volume: 195000
-          percent: 0.19
-          rank: 43
-        '2008':
-          volume: 302000
-          percent: 0.24
-          rank: 43
-        '2009':
-          volume: 487000
-          percent: 0.34
-          rank: 42
-        '2010':
-          volume: 781000
-          percent: 0.47
-          rank: 38
-        '2011':
-          volume: 961000
-          percent: 0.5
-          rank: 39
-        '2012':
-          volume: 1100000
-          percent: 0.5
-          rank: 41
-        '2013':
-          volume: 932000
-          percent: 0.37
-          rank: 43
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 4000
@@ -15992,7 +11144,7 @@ UT:
           rank: 11
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 450000
@@ -16036,7 +11188,7 @@ UT:
           rank: 38
     Geothermal:
       name: Geothermal
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 195000
@@ -16166,53 +11318,9 @@ UT:
           volume: 34912000
           percent: 1.2
           rank: 11
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 4000
-          percent: 0.03
-          rank: 37
-        '2005':
-          volume: 4000
-          percent: 0.03
-          rank: 34
-        '2006':
-          volume: 15000
-          percent: 0.09
-          rank: 37
-        '2007':
-          volume: 31000
-          percent: 0.19
-          rank: 33
-        '2008':
-          volume: 24000
-          percent: 0.14
-          rank: 36
-        '2009':
-          volume: 48000
-          percent: 0.26
-          rank: 35
-        '2010':
-          volume: 56000
-          percent: 0.3
-          rank: 34
-        '2011':
-          volume: 58000
-          percent: 0.3
-          rank: 35
-        '2012':
-          volume: 60000
-          percent: 0.3
-          rank: 35
-        '2013':
-          volume: 71000
-          percent: 0.34
-          rank: 33
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2012':
           volume: 2000
@@ -16224,7 +11332,7 @@ UT:
           rank: 22
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2008':
           volume: 24000
@@ -16252,53 +11360,9 @@ UT:
           rank: 27
 VA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2432000
-          percent: 2.93
-          rank: 9
-        '2005':
-          volume: 2498000
-          percent: 2.86
-          rank: 9
-        '2006':
-          volume: 2458000
-          percent: 2.55
-          rank: 12
-        '2007':
-          volume: 2566000
-          percent: 2.44
-          rank: 12
-        '2008':
-          volume: 2698000
-          percent: 2.14
-          rank: 16
-        '2009':
-          volume: 2418000
-          percent: 1.68
-          rank: 19
-        '2010':
-          volume: 2220000
-          percent: 1.33
-          rank: 24
-        '2011':
-          volume: 2196000
-          percent: 1.13
-          rank: 27
-        '2012':
-          volume: 2358000
-          percent: 1.08
-          rank: 28
-        '2013':
-          volume: 2906000
-          percent: 1.15
-          rank: 24
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 2432000
@@ -16386,7 +11450,7 @@ VA:
           rank: 12
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1583000
@@ -16668,143 +11732,11 @@ VA:
           volume: 9000
           percent: 0
           rank: 30
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 699000
-          percent: 4.53
-          rank: 9
-        '2005':
-          volume: 695000
-          percent: 4.51
-          rank: 8
-        '2006':
-          volume: 678000
-          percent: 4.21
-          rank: 9
-        '2007':
-          volume: 773000
-          percent: 4.68
-          rank: 7
-        '2008':
-          volume: 782000
-          percent: 4.41
-          rank: 7
-        '2009':
-          volume: 709000
-          percent: 3.84
-          rank: 11
-        '2010':
-          volume: 815000
-          percent: 4.31
-          rank: 8
-        '2011':
-          volume: 790000
-          percent: 4.11
-          rank: 9
-        '2012':
-          volume: 923000
-          percent: 4.66
-          rank: 9
-        '2013':
-          volume: 960000
-          percent: 4.61
-          rank: 8
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1733000
-          percent: 4.55
-          rank: 9
-        '2005':
-          volume: 1803000
-          percent: 4.64
-          rank: 7
-        '2006':
-          volume: 1780000
-          percent: 4.59
-          rank: 8
-        '2007':
-          volume: 1792000
-          percent: 4.59
-          rank: 8
-        '2008':
-          volume: 1916000
-          percent: 5.14
-          rank: 7
-        '2009':
-          volume: 1708000
-          percent: 4.74
-          rank: 8
-        '2010':
-          volume: 1404000
-          percent: 3.78
-          rank: 13
-        '2011':
-          volume: 1406000
-          percent: 3.75
-          rank: 13
-        '2012':
-          volume: 1436000
-          percent: 3.8
-          rank: 12
-        '2013':
-          volume: 1946000
-          percent: 4.86
-          rank: 9
 VT:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 404000
-          percent: 0.49
-          rank: 36
-        '2005':
-          volume: 422000
-          percent: 0.48
-          rank: 37
-        '2006':
-          volume: 450000
-          percent: 0.47
-          rank: 38
-        '2007':
-          volume: 464000
-          percent: 0.44
-          rank: 39
-        '2008':
-          volume: 425000
-          percent: 0.34
-          rank: 41
-        '2009':
-          volume: 429000
-          percent: 0.3
-          rank: 44
-        '2010':
-          volume: 482000
-          percent: 0.29
-          rank: 44
-        '2011':
-          volume: 433000
-          percent: 0.22
-          rank: 47
-        '2012':
-          volume: 465000
-          percent: 0.21
-          rank: 46
-        '2013':
-          volume: 745000
-          percent: 0.29
-          rank: 44
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 393000
@@ -16848,7 +11780,7 @@ VT:
           rank: 28
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1187000
@@ -16890,33 +11822,9 @@ VT:
           volume: 1286000
           percent: 0.48
           rank: 27
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2009':
-          volume: 24000
-          percent: 0.13
-          rank: 38
-        '2010':
-          volume: 25000
-          percent: 0.13
-          rank: 38
-        '2011':
-          volume: 25000
-          percent: 0.13
-          rank: 39
-        '2012':
-          volume: 26000
-          percent: 0.13
-          rank: 39
-        '2013':
-          volume: 26000
-          percent: 0.12
-          rank: 41
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2011':
           volume: 2000
@@ -16932,7 +11840,7 @@ VT:
           rank: 19
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 11000
@@ -16974,99 +11882,11 @@ VT:
           volume: 236000
           percent: 0.14
           rank: 33
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 393000
-          percent: 1.03
-          rank: 24
-        '2005':
-          volume: 410000
-          percent: 1.06
-          rank: 23
-        '2006':
-          volume: 439000
-          percent: 1.13
-          rank: 22
-        '2007':
-          volume: 453000
-          percent: 1.16
-          rank: 23
-        '2008':
-          volume: 415000
-          percent: 1.11
-          rank: 24
-        '2009':
-          volume: 393000
-          percent: 1.09
-          rank: 24
-        '2010':
-          volume: 443000
-          percent: 1.19
-          rank: 23
-        '2011':
-          volume: 372000
-          percent: 0.99
-          rank: 24
-        '2012':
-          volume: 328000
-          percent: 0.87
-          rank: 25
-        '2013':
-          volume: 466000
-          percent: 1.16
-          rank: 22
 WA:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2311000
-          percent: 2.78
-          rank: 10
-        '2005':
-          volume: 2114000
-          percent: 2.42
-          rank: 12
-        '2006':
-          volume: 2503000
-          percent: 2.59
-          rank: 10
-        '2007':
-          volume: 3731000
-          percent: 3.55
-          rank: 7
-        '2008':
-          volume: 4938000
-          percent: 3.92
-          rank: 4
-        '2009':
-          volume: 5045000
-          percent: 3.5
-          rank: 5
-        '2010':
-          volume: 6617000
-          percent: 3.96
-          rank: 5
-        '2011':
-          volume: 8014000
-          percent: 4.13
-          rank: 5
-        '2012':
-          volume: 8214000
-          percent: 3.76
-          rank: 7
-        '2013':
-          volume: 8822000
-          percent: 3.48
-          rank: 8
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1575000
@@ -17126,7 +11946,7 @@ WA:
           rank: 18
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 71576000
@@ -17168,53 +11988,9 @@ WA:
           volume: 78155000
           percent: 29.1
           rank: 1
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 185000
-          percent: 1.2
-          rank: 17
-        '2005':
-          volume: 190000
-          percent: 1.23
-          rank: 16
-        '2006':
-          volume: 184000
-          percent: 1.14
-          rank: 18
-        '2007':
-          volume: 176000
-          percent: 1.07
-          rank: 18
-        '2008':
-          volume: 168000
-          percent: 0.95
-          rank: 20
-        '2009':
-          volume: 167000
-          percent: 0.91
-          rank: 20
-        '2010':
-          volume: 196000
-          percent: 1.04
-          rank: 20
-        '2011':
-          volume: 169000
-          percent: 0.88
-          rank: 21
-        '2012':
-          volume: 239000
-          percent: 1.21
-          rank: 20
-        '2013':
-          volume: 284000
-          percent: 1.36
-          rank: 21
     Solar:
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2011':
           volume: 1000
@@ -17230,7 +12006,7 @@ WA:
           rank: 23
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 737000
@@ -17272,99 +12048,11 @@ WA:
           volume: 7004000
           percent: 4.17
           rank: 10
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1389000
-          percent: 3.64
-          rank: 13
-        '2005':
-          volume: 1425000
-          percent: 3.67
-          rank: 13
-        '2006':
-          volume: 1281000
-          percent: 3.3
-          rank: 13
-        '2007':
-          volume: 1116000
-          percent: 2.86
-          rank: 13
-        '2008':
-          volume: 1113000
-          percent: 2.98
-          rank: 13
-        '2009':
-          volume: 1305000
-          percent: 3.62
-          rank: 13
-        '2010':
-          volume: 1676000
-          percent: 4.51
-          rank: 9
-        '2011':
-          volume: 1582000
-          percent: 4.22
-          rank: 11
-        '2012':
-          volume: 1375000
-          percent: 3.64
-          rank: 13
-        '2013':
-          volume: 1533000
-          percent: 3.83
-          rank: 11
 WI:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1114000
-          percent: 1.34
-          rank: 22
-        '2005':
-          volume: 1182000
-          percent: 1.35
-          rank: 22
-        '2006':
-          volume: 1266000
-          percent: 1.31
-          rank: 24
-        '2007':
-          volume: 1330000
-          percent: 1.26
-          rank: 22
-        '2008':
-          volume: 1754000
-          percent: 1.39
-          rank: 22
-        '2009':
-          volume: 2340000
-          percent: 1.62
-          rank: 21
-        '2010':
-          volume: 2474000
-          percent: 1.48
-          rank: 20
-        '2011':
-          volume: 2765000
-          percent: 1.43
-          rank: 21
-        '2012':
-          volume: 3223000
-          percent: 1.48
-          rank: 20
-        '2013':
-          volume: 3192000
-          percent: 1.26
-          rank: 21
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 1010000
@@ -17408,7 +12096,7 @@ WI:
           rank: 15
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1981000
@@ -17450,53 +12138,9 @@ WI:
           volume: 1979000
           percent: 0.74
           rank: 20
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 405000
-          percent: 2.63
-          rank: 12
-        '2005':
-          volume: 349000
-          percent: 2.26
-          rank: 12
-        '2006':
-          volume: 390000
-          percent: 2.42
-          rank: 13
-        '2007':
-          volume: 435000
-          percent: 2.63
-          rank: 12
-        '2008':
-          volume: 492000
-          percent: 2.77
-          rank: 12
-        '2009':
-          volume: 519000
-          percent: 2.81
-          rank: 12
-        '2010':
-          volume: 508000
-          percent: 2.69
-          rank: 13
-        '2011':
-          volume: 545000
-          percent: 2.84
-          rank: 13
-        '2012':
-          volume: 517000
-          percent: 2.61
-          rank: 13
-        '2013':
-          volume: 484000
-          percent: 2.32
-          rank: 13
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 104000
@@ -17538,99 +12182,11 @@ WI:
           volume: 1558000
           percent: 0.93
           rank: 22
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 605000
-          percent: 1.59
-          rank: 19
-        '2005':
-          volume: 740000
-          percent: 1.9
-          rank: 17
-        '2006':
-          volume: 774000
-          percent: 2
-          rank: 16
-        '2007':
-          volume: 785000
-          percent: 2.01
-          rank: 18
-        '2008':
-          volume: 775000
-          percent: 2.08
-          rank: 17
-        '2009':
-          volume: 769000
-          percent: 2.13
-          rank: 17
-        '2010':
-          volume: 878000
-          percent: 2.36
-          rank: 18
-        '2011':
-          volume: 1032000
-          percent: 2.76
-          rank: 14
-        '2012':
-          volume: 1149000
-          percent: 3.04
-          rank: 14
-        '2013':
-          volume: 1150000
-          percent: 2.87
-          rank: 15
 WV:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 163000
-          percent: 0.2
-          rank: 41
-        '2005':
-          volume: 155000
-          percent: 0.18
-          rank: 42
-        '2006':
-          volume: 174000
-          percent: 0.18
-          rank: 43
-        '2007':
-          volume: 168000
-          percent: 0.16
-          rank: 44
-        '2008':
-          volume: 392000
-          percent: 0.31
-          rank: 42
-        '2009':
-          volume: 742000
-          percent: 0.51
-          rank: 37
-        '2010':
-          volume: 939000
-          percent: 0.56
-          rank: 36
-        '2011':
-          volume: 1112000
-          percent: 0.57
-          rank: 36
-        '2012':
-          volume: 1297000
-          percent: 0.59
-          rank: 38
-        '2013':
-          volume: 1391000
-          percent: 0.55
-          rank: 38
     Biomass (total):
-      name: Biomass (total)
-      units: kilowatt hours
+      name: Biomass
+      units: megawatt hours
       volume:
         '2004':
           volume: 2000
@@ -17658,7 +12214,7 @@ WV:
           rank: 46
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 1318000
@@ -17788,29 +12344,9 @@ WV:
           volume: 7564000
           percent: 0.26
           rank: 18
-    Other biomass:
-      name: Other biomass
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 2000
-          percent: 0.01
-          rank: 39
-        '2011':
-          volume: 9000
-          percent: 0.05
-          rank: 41
-        '2012':
-          volume: 11000
-          percent: 0.06
-          rank: 43
-        '2013':
-          volume: 4000
-          percent: 0.02
-          rank: 47
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 161000
@@ -17852,64 +12388,8 @@ WV:
           volume: 1387000
           percent: 0.83
           rank: 23
-    Wood and wood-derived fuels:
-      name: Wood and wood-derived fuels
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 1000
-          percent: 0
-          rank: 31
-        '2009':
-          volume: -1000
-          percent: 0
-          rank: 33
 WY:
   products:
-    All Other Renewables:
-      name: All Other Renewables
-      units: kilowatt hours
-      volume:
-        '2004':
-          volume: 617000
-          percent: 0.74
-          rank: 29
-        '2005':
-          volume: 717000
-          percent: 0.82
-          rank: 31
-        '2006':
-          volume: 759000
-          percent: 0.79
-          rank: 31
-        '2007':
-          volume: 755000
-          percent: 0.72
-          rank: 31
-        '2008':
-          volume: 963000
-          percent: 0.76
-          rank: 31
-        '2009':
-          volume: 2226000
-          percent: 1.54
-          rank: 22
-        '2010':
-          volume: 3247000
-          percent: 1.94
-          rank: 16
-        '2011':
-          volume: 4612000
-          percent: 2.38
-          rank: 13
-        '2012':
-          volume: 4369000
-          percent: 2
-          rank: 15
-        '2013':
-          volume: 4433000
-          percent: 1.75
-          rank: 17
     Coal (short tons):
       name: Coal
       units: short tons
@@ -17956,7 +12436,7 @@ WY:
           rank: 1
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 593000
@@ -18088,7 +12568,7 @@ WY:
           rank: 9
     Wind:
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       volume:
         '2004':
           volume: 617000

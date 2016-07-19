@@ -14,16 +14,10 @@ all_production:
       percent: 17.84
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 4237000
       rank: 2
       percent: 23.79
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 5336000
-      rank: 2
-      percent: 6.11
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -39,7 +33,7 @@ all_production:
       percent: 26.88
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 6671000
       rank: 1
       percent: 25.09
@@ -49,12 +43,6 @@ all_production:
       value: 392481000
       rank: 1
       percent: 18.51
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 7818000
-      rank: 2
-      percent: 8.1
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -70,7 +58,7 @@ all_production:
       percent: 28.22
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 9006000
       rank: 1
       percent: 26.14
@@ -80,12 +68,6 @@ all_production:
       value: 391270000
       rank: 1
       percent: 18.53
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 10288000
-      rank: 2
-      percent: 9.78
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -101,7 +83,7 @@ all_production:
       percent: 30.43
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 16225000
       rank: 1
       percent: 29.31
@@ -111,12 +93,6 @@ all_production:
       value: 406007000
       rank: 1
       percent: 19.56
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 17639000
-      rank: 2
-      percent: 13.99
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -132,7 +108,7 @@ all_production:
       percent: 29.37
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 20026000
       rank: 1
       percent: 27.1
@@ -142,12 +118,6 @@ all_production:
       value: 399344000
       rank: 1
       percent: 18.26
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 21104000
-      rank: 2
-      percent: 14.63
   '2010':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -157,7 +127,7 @@ all_production:
       percent: 28.32
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 26251000
       rank: 1
       percent: 27.73
@@ -167,12 +137,6 @@ all_production:
       value: 426666000
       rank: 1
       percent: 19.27
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 27705000
-      rank: 1
-      percent: 16.57
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -188,7 +152,7 @@ all_production:
       percent: 27.86
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 30548000
       rank: 1
       percent: 25.42
@@ -198,12 +162,6 @@ all_production:
       value: 528844000
       rank: 1
       percent: 23.41
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 32183000
-      rank: 1
-      percent: 16.59
     - product: Coal (short tons)
       name: Coal
       units: short tons
@@ -225,16 +183,10 @@ all_production:
       percent: 27.57
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 32214000
       rank: 1
       percent: 22.88
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 34017000
-      rank: 1
-      percent: 15.58
   '2013':
     - product: Oil (bbl)
       name: Oil
@@ -250,16 +202,10 @@ all_production:
       percent: 28.11
     - product: Wind
       name: Wind
-      units: kilowatt hours
+      units: megawatt hours
       value: 35874000
       rank: 1
       percent: 21.37
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: kilowatt hours
-      value: 37760000
-      rank: 1
-      percent: 14.89
     - product: Coal (short tons)
       name: Coal
       units: short tons

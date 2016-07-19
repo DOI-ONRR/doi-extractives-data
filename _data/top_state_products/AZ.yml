@@ -2,35 +2,35 @@ all_production:
   '2005':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 14000
       rank: 2
       percent: 2.54
   '2006':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 13000
       rank: 2
       percent: 2.56
   '2007':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 9000
       rank: 3
       percent: 1.47
   '2012':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 955000
       rank: 2
       percent: 22.08
   '2013':
     - product: Solar
       name: Solar
-      units: kilowatt hours
+      units: megawatt hours
       value: 2111000
       rank: 2
       percent: 23.37

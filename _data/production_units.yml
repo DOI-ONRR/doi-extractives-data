@@ -19,6 +19,9 @@ barrels:
 kilowatt hours:
   short: kWh
   long: kilowatt hours
+megawatt hours:
+  short: Mwh
+  long: megawatt hours
 # geothermal energy
 electrical generation, thousands of pounds:
   short: klb

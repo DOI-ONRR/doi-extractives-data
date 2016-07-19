@@ -395,7 +395,7 @@ revenue:
       value: 174693712.76
       rank: 2
       percent: 4.09
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 119888752.87
@@ -438,7 +438,7 @@ revenue:
       value: 199231130.08
       rank: 2
       percent: 4.51
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 133919564.78
@@ -487,7 +487,7 @@ revenue:
       value: 164599129.22
       rank: 1
       percent: 30.04
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 69379138.84
@@ -604,7 +604,7 @@ revenue:
       value: 160960169.82
       rank: 1
       percent: 28.25
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 56992111.04
@@ -653,7 +653,7 @@ revenue:
       value: 121934129.34
       rank: 2
       percent: 22.14
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 85769258.6
@@ -696,7 +696,7 @@ revenue:
       value: 90428259.67
       rank: 1
       percent: 22.71
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 76474927.03
@@ -733,7 +733,7 @@ revenue:
       value: 350157717.03
       rank: 2
       percent: 29.01
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 154012670.35
@@ -776,7 +776,7 @@ revenue:
       value: 230104991.93
       rank: 2
       percent: 29.87
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 73019949.76
@@ -804,7 +804,7 @@ all_production:
   '2011':
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 128000
       rank: 3
       percent: 7.04

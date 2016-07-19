@@ -2,35 +2,35 @@ all_production:
   '2005':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3630000
       rank: 2
       percent: 9.34
   '2006':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3865000
       rank: 1
       percent: 9.97
   '2007':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3784000
       rank: 2
       percent: 9.7
   '2008':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3324000
       rank: 3
       percent: 8.91
   '2009':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3035000
       rank: 3
       percent: 8.42
@@ -45,7 +45,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 181054000
+      value: 181054
       rank: 1
       percent: 28.56
 revenue:

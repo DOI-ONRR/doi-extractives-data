@@ -271,484 +271,484 @@ all_production:
   '2005':
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 537000
       rank: 1
       percent: 97.46
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 13023000
       rank: 1
       percent: 88.63
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 23654000
       rank: 1
       percent: 27.09
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 4262000
       rank: 1
       percent: 23.93
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 5833000
       rank: 1
       percent: 10.75
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 39632000
       rank: 2
       percent: 14.66
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2224000
       rank: 2
       percent: 14.42
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 230230
+      value: 230230000
       rank: 3
       percent: 10.46
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3609000
       rank: 3
       percent: 9.29
   '2006':
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 495000
       rank: 1
       percent: 97.44
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12821000
       rank: 1
       percent: 88.01
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 23915000
       rank: 1
       percent: 24.78
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 5717000
       rank: 1
       percent: 10.42
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 4883000
       rank: 2
       percent: 18.36
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 48047000
       rank: 2
       percent: 16.61
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2294000
       rank: 2
       percent: 14.25
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 223015
+      value: 223015000
       rank: 3
       percent: 10.52
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3422000
       rank: 3
       percent: 8.83
   '2007':
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 557000
       rank: 1
       percent: 91.01
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12991000
       rank: 1
       percent: 88.75
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 24845000
       rank: 1
       percent: 23.61
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 5713000
       rank: 1
       percent: 10.29
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 5585000
       rank: 2
       percent: 16.21
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2305000
       rank: 2
       percent: 13.95
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 27328000
       rank: 3
       percent: 11.04
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 218518
+      value: 218518000
       rank: 3
       percent: 10.35
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3407000
       rank: 3
       percent: 8.73
   '2008':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12883000
       rank: 1
       percent: 86.81
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 670000
       rank: 1
       percent: 77.55
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 24784000
       rank: 1
       percent: 19.65
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2362000
       rank: 1
       percent: 13.32
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 5846000
       rank: 1
       percent: 10.62
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 5385000
       rank: 2
       percent: 9.73
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3484000
       rank: 2
       percent: 9.34
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 214533
+      value: 214533000
       rank: 3
       percent: 10.34
   '2009':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12853000
       rank: 1
       percent: 85.64
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 647000
       rank: 1
       percent: 72.62
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 25540000
       rank: 1
       percent: 17.7
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2468000
       rank: 1
       percent: 13.38
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 6200000
       rank: 1
       percent: 11.38
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3732000
       rank: 1
       percent: 10.35
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 27888000
       rank: 3
       percent: 10.2
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 207262
+      value: 207262000
       rank: 3
       percent: 9.48
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 5840000
       rank: 3
       percent: 7.9
   '2010':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12600000
       rank: 1
       percent: 82.79
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 769000
       rank: 1
       percent: 63.5
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2451000
       rank: 1
       percent: 12.96
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 6002000
       rank: 1
       percent: 10.7
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3551000
       rank: 1
       percent: 9.55
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 25450000
       rank: 2
       percent: 15.22
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 33431000
       rank: 2
       percent: 12.85
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 200050
+      value: 200050000
       rank: 3
       percent: 9.04
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 6079000
       rank: 3
       percent: 6.42
   '2011':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12552000
       rank: 1
       percent: 81.96
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 889000
       rank: 1
       percent: 48.9
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2585000
       rank: 1
       percent: 13.45
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 6029000
       rank: 1
       percent: 10.64
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 27222000
       rank: 2
       percent: 14.03
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 42557000
       rank: 2
       percent: 13.33
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3445000
       rank: 2
       percent: 9.2
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 193996
+      value: 193996000
       rank: 3
       percent: 8.59
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 7752000
       rank: 3
       percent: 6.45
   '2012':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12519000
       rank: 1
       percent: 80.44
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 1382000
       rank: 1
       percent: 31.95
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2514000
       rank: 1
       percent: 12.68
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 6311000
       rank: 1
       percent: 10.95
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3798000
       rank: 1
       percent: 10.05
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 29967000
       rank: 2
       percent: 13.73
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: null
+      units: kilowatt hours
       value: 26837000
       rank: 3
       percent: 9.72
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 197211
+      value: 197211000
       rank: 3
       percent: 7.71
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 9754000
       rank: 3
       percent: 6.93
   '2013':
     - product: Geothermal
       name: Geothermal
-      units: null
+      units: kilowatt hours
       value: 12307000
       rank: 1
       percent: 78.01
     - product: Solar
       name: Solar
-      units: null
+      units: kilowatt hours
       value: 3814000
       rank: 1
       percent: 42.23
     - product: Other biomass
       name: Other biomass
-      units: null
+      units: kilowatt hours
       value: 2843000
       rank: 1
       percent: 13.65
     - product: Biomass (total)
       name: Biomass (total)
-      units: null
+      units: kilowatt hours
       value: 6635000
       rank: 1
       percent: 10.9
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
-      units: null
+      units: kilowatt hours
       value: 3792000
       rank: 1
       percent: 9.47
     - product: All Other Renewables
       name: All Other Renewables
-      units: null
+      units: kilowatt hours
       value: 35578000
       rank: 2
       percent: 14.03
     - product: Wind
       name: Wind
-      units: null
+      units: kilowatt hours
       value: 12822000
       rank: 3
       percent: 7.64
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 198928
+      value: 198928000
       rank: 3
       percent: 6.85
 revenue:

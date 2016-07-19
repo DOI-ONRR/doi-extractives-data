@@ -362,7 +362,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2003826000
+      value: 2003826
       rank: 3
       percent: 8.54
   '2006':
@@ -375,7 +375,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2111766000
+      value: 2111766
       rank: 3
       percent: 8.97
   '2007':
@@ -388,7 +388,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2257884000
+      value: 2257884
       rank: 3
       percent: 9.15
   '2008':
@@ -401,7 +401,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2488267000
+      value: 2488267
       rank: 3
       percent: 9.71
   '2009':
@@ -414,7 +414,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2536336000
+      value: 2536336
       rank: 3
       percent: 9.73
   '2010':
@@ -427,7 +427,7 @@ all_production:
     - product: Natural Gas (mcf)
       name: Natural Gas
       units: mcf
-      value: 2514657000
+      value: 2514657
       rank: 3
       percent: 9.38
   '2011':
@@ -477,7 +477,7 @@ revenue:
       value: 197127988.32
       rank: 1
       percent: 4.62
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 49661556.5
@@ -544,7 +544,7 @@ revenue:
       value: 58637672.7
       rank: 2
       percent: 14.48
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 41243505.95
@@ -593,7 +593,7 @@ revenue:
       value: 354318589.75
       rank: 1
       percent: 6.08
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 95350185.3
@@ -648,7 +648,7 @@ revenue:
       value: 183699381.28
       rank: 1
       percent: 6.2
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 55443027.47
@@ -703,7 +703,7 @@ revenue:
       value: 256931525.83
       rank: 2
       percent: 5.03
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 65210661.5
@@ -752,7 +752,7 @@ revenue:
       value: 320106663.19
       rank: 2
       percent: 4.98
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 136313735.74
@@ -813,7 +813,7 @@ revenue:
       value: 132172213.43
       rank: 1
       percent: 24
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 61028635.86
@@ -862,7 +862,7 @@ revenue:
       value: 341686585.41
       rank: 2
       percent: 4.86
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 63327416.67
@@ -923,7 +923,7 @@ revenue:
       value: 121439972.42
       rank: 1
       percent: 41.53
-    - product: 'Oil & Gas (Non-Royalty)'
+    - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
       value: 68752649.15

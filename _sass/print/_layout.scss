@@ -1,0 +1,35 @@
+section.banner,
+.header-nav,
+.header-bars,
+footer,
+#glossary,
+#nav-drawer,
+.term .icon-book,
+.carousel-button {
+  display: none !important;
+}
+
+header,
+.container-outer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@page {
+  margin: 0.5cm;
+}
+
+img {
+  max-width: 500px !important;
+}
+
+@media print {
+  a:after{
+    content:" (" attr(href) ") ";
+    @include font-size(1);
+  }
+}
+
+.term {
+  border-bottom: 0;
+}

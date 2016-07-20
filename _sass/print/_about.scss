@@ -1,0 +1,25 @@
+.bureau img,
+.bureau-img {
+  width: 100px;
+}
+
+
+.article_img-60 {
+  max-width: 30;
+  width: 250px;
+
+
+  &.article_img-centered {
+    margin: 0;
+  }
+}
+
+
+.about_intro-highlight {
+  padding-left: 0;
+  text-align: left;
+}
+
+.about_intro-callout {
+  padding-left: 0;
+}

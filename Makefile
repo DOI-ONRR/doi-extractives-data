@@ -435,6 +435,16 @@ data/land_stats.yml:
 			-c _meta/land_stats.yml \
 			-o _$@
 
+data/opt_in_state_revenues.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			state, year, source, dest, dollars \
+		FROM opt_in_state_revenue \
+		ORDER BY state, year, dollars DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/opt_in_state_revenues.yml \
+			-o _$@
+
 db: $(db)
 
 $(db): \

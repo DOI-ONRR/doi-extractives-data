@@ -80,9 +80,12 @@ nav_items:
 
     <!--
     Disbursements section: uncomment and add back to the nav to begin work again.
+    {% comment %}
     {% include location/section-disbursements.html %}
+    {% endcomment %}
     -->
 
+    {% unless page.offshore == true %}
     <section id="economic-impact">
       <h2>Economic impact</h2>
 
@@ -92,6 +95,15 @@ nav_items:
 
       {% include location/section-exports.html %}
     </section>
+    {% endunless %}
+
+    {% if page.opt_in == true %}
+    <section id="state-disbursements">
+      <h2>State Disbursements</h2>
+
+      {% include location/opt-in/state-revenues.html location_id=state_id %}
+    </section>
+    {% endif %}
 
     <section>
       {% include location/section-state-governance.html %}

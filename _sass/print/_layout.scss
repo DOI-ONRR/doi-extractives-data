@@ -38,6 +38,6 @@ a::after{
 
 
 [accordion-content],
-[accordion-item] div[aria-hidden=true] {
+[accordion-item] div[aria-hidden='true'] {
   display: block !important;
 }

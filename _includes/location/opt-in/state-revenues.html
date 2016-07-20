@@ -2,35 +2,43 @@
 {% assign revenues = site.data.opt_in_state_revenues[include.location_id][revenue_year] %}
 
 {% if revenues.size > 0 %}
-  {% assign fund_info = site.data.opt_in_state_funds[include.location_id] %}
+  {% assign funds_info = site.data.opt_in_state_funds[include.location_id] %}
 
 <table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
       <th>Fund</th>
-      <th>Disbursements</th>
+      <th>Disbursements ({{ revenue_year }})</th>
     </tr>
   </thead>
 
   {% for _fund in revenues.funds %}
+  <tbody id="revenue-disbursement-fund-{{ fund_slug }}">
     {% assign fund = _fund[0] %}
     {% assign fund_slug = fund | slugify %}
     {% assign fund_sources = _fund[1] %}
-  <tbody id="revenue-disbursement-fund-{{ fund_slug }}">
+    {% assign fund_info = funds_info[fund] %}
     <tr>
       <td>
-        <button is="aria-toggle" aria-controls="fund-{{ fund_slug }}">
-          {{ fund | xml_escape }}
+        {% if fund_info %}
+        <button is="aria-toggle" aria-controls="fund-{{ fund_slug }}"
+          class="not-button-like">
+          <strong>{{ fund | xml_escape }}</strong>
         </button>
+        {% else %}
+        <strong>{{ fund | xml_escape }}</strong>
+        {% endif %}
       </td>
       <td data-value="{{ fund_sources.All }}">
         ${{ fund_sources.All | intcomma }}
       </td>
     </tr>
+    {% if fund_info %}
     <tr id="fund-{{ fund_slug }}" aria-hidden="true">
-      {{ fund_info[fund] | default: 'fund description here' }}
+      <td colspan="2">{{ fund_info }}</td>
     </tr>
+    {% endif %}
   </tbody>
   {% endfor %}
 </table>

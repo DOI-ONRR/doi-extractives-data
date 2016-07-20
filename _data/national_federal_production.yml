@@ -664,9 +664,9 @@ US:
           volume: 6350
         '2007':
           volume: 2400
-    Salt (ton):
+    Salt (tons):
       name: Salt
-      units: ton
+      units: tons
       volume:
         '2004':
           volume: 33299
@@ -677,33 +677,17 @@ US:
         '2007':
           volume: 24254
         '2008':
-          volume: 27030
+          volume: 341513
         '2009':
-          volume: 28039
+          volume: 400995
         '2010':
-          volume: 26761
+          volume: 460779
         '2011':
-          volume: 19601
+          volume: 458968
         '2012':
-          volume: 20410
+          volume: 429755
         '2013':
-          volume: 26546
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008':
-          volume: 314483
-        '2009':
-          volume: 372956
-        '2010':
-          volume: 434018
-        '2011':
-          volume: 439367
-        '2012':
-          volume: 409345
-        '2013':
-          volume: 425125
+          volume: 451671
         '2014':
           volume: 457529
     Soda Ash (tons):

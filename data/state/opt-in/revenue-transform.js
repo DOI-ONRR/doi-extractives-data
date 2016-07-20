@@ -1,17 +1,25 @@
+// XXX state gets passed in as an environment variable
 const STATE = process.env.STATE;
-const YEAR = 2014;
-const parse = require('../../../lib/parse');
-
 if (!STATE) {
   throw new Error('this transform requires the STATE env var to be set');
 }
 
+// FIXME: where does this come from?
+const YEAR = 2014;
+const parse = require('../../../lib/parse');
+
+const SOURCE_COLUMN = 'Revenue Stream';
+
 // columns that *don't* represent a destination fund
 const FIXED_COLUMNS = [
-  'Revenue Stream',
+  SOURCE_COLUMN,
   'Type'
 ];
 
+/**
+ * @param {Object} input row
+ * @return {Array<Object>} one row per "destination" or disbursement
+ */
 module.exports = function(row) {
   return Object.keys(row)
     .filter(function(key) {
@@ -21,7 +29,7 @@ module.exports = function(row) {
       return {
         state:  STATE,
         year:   YEAR,
-        source: row['Revenue Stream'],
+        source: row[SOURCE_COLUMN],
         type:   row.Type,
         dest:   key,
         dollars: parse.dollars(row[key])

@@ -1,3 +1,9 @@
-@import 'print/layout';
-@import 'print/home';
-@import 'print/about';
+@media print {
+  @import 'print/layout';
+  @import 'print/home';
+  @import 'print/about';
+  @import 'print/landing';
+  @import 'print/how-it-works';
+  @import 'print/content';
+  @import 'print/state-page';
+}

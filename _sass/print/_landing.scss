@@ -1,0 +1,34 @@
+.landing-section,
+.landing-section_open {
+  margin-top: 0;
+
+  div[class^="landing-"] {
+    height: initial !important;
+    background: initial !important;
+  }
+}
+
+.landing-section a,
+.landing-section_open a,
+.hero-right a,
+.landing-wrapper section a {
+  &:after {
+    content: '';
+  }
+}
+
+.hero-right_caption {
+  padding-left: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.hero-right_square {
+  border: 0;
+}
+
+.hero-right_image {
+  text-align: left;
+}
+

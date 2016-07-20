@@ -4,8 +4,12 @@ section.banner,
 footer,
 #glossary,
 #nav-drawer,
+iframe,
 .term .icon-book,
-.carousel-button {
+.carousel-button,
+[accordion-button],
+.hash_selector,
+.sticky_nav {
   display: none !important;
 }
 
@@ -23,13 +27,33 @@ img {
   max-width: 500px !important;
 }
 
-@media print {
-  a:after{
-    content:" (" attr(href) ") ";
-    @include font-size(1);
-  }
+a:after{
+  content:" (" attr(href) ") ";
+  @include font-size(1);
 }
 
 .term {
   border-bottom: 0;
+}
+
+
+[accordion-content],
+[accordion-item] div[aria-hidden=true] {
+  display: block !important;
+}
+
+section.chart-item,
+.row-container,
+tr,
+figure,
+eiti-data-map,
+eiti-bar-chart,
+img {
+  page-break-inside: avoid;
+}
+
+h1,
+h2,
+h3 {
+  page-break-after: avoid;
 }

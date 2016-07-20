@@ -87,7 +87,7 @@
           var svgLegend = d3.select(this)
             .select('.legend-svg');
 
-          if (svgLegend[0][0]) {
+          if (!svgLegend.empty()) {
             svgLegend.append('g')
               .attr('class', 'legendScale');
 
@@ -129,10 +129,8 @@
             // end consolidation
             // end map legend
           } else {
-            console.warn('<eiti-data-map> does not exist on this page.')
+            console.warn('this <eiti-data-map> element does not have an associated svg legend.');
           }
-
-
 
           // start trim height on map container
           var svgContainer = d3.select(this)

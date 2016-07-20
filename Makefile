@@ -448,7 +448,8 @@ $(db): \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
-	tables/land_stats
+	tables/land_stats \
+	tables/opt_in_state_revenue
 
 tables/geo: \
 	tables/states \
@@ -585,4 +586,15 @@ tables/land_stats: data/land-stats/land-stats.tsv
 	@$(call drop-table,land_stats)
 	$(tito) --map ./data/land-stats/transform.js -r tsv $^ \
 		| $(tables) -t ndjson -n land_stats
+
+
+tables/opt_in_state_revenue: data/state/opt-in/
+	@$(call drop-table,opt_in_state_revenue)
+	for state_dir in $^??; do \
+		STATE=$${state_dir##$^} \
+		$(tito) --multiple --map ./data/state/opt-in/revenue-transform.js \
+			-r tsv $${state_dir}/revenue-distribution.tsv > $${state_dir}/revenue-distribution.ndjson; \
+		$(tables) -t ndjson -n opt_in_state_revenue -i $${state_dir}/revenue-distribution.ndjson; \
+	done
+
 

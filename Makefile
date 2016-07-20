@@ -595,6 +595,5 @@ tables/opt_in_state_revenue: data/state/opt-in/
 		$(tito) --multiple --map ./data/state/opt-in/revenue-transform.js \
 			-r tsv $${state_dir}/revenue-distribution.tsv > $${state_dir}/revenue-distribution.ndjson; \
 		$(tables) -t ndjson -n opt_in_state_revenue -i $${state_dir}/revenue-distribution.ndjson; \
+		rm $${state_dir}/revenue-distribution.ndjson; \
 	done
-
-

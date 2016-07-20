@@ -27,9 +27,9 @@ img {
   max-width: 500px !important;
 }
 
-a:after{
-  content:" (" attr(href) ") ";
+a::after{
   @include font-size(1);
+  content: ' (' attr(href) ') ';
 }
 
 .term {

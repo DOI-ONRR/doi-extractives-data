@@ -2,9 +2,9 @@
 .landing-section_open {
   margin-top: 0;
 
-  div[class^="landing-"] {
-    height: initial !important;
+  div[class^='landing-'] {
     background: initial !important;
+    height: initial !important;
   }
 }
 
@@ -12,7 +12,7 @@
 .landing-section_open a,
 .hero-right a,
 .landing-wrapper section a {
-  &:after {
+  &::after {
     content: '';
   }
 }

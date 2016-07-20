@@ -6,8 +6,8 @@ figcaption,
 eiti-data-map,
 eiti-bar-chart,
 img {
-  page-break-inside: avoid;
   page-break-before: always;
+  page-break-inside: avoid;
 }
 
 h1:not(#title),

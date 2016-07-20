@@ -71,6 +71,8 @@
         .key(function(d) { return d.x; })
         .rollup(function(d) { return d[0]; })
         .entries(data);
+
+
     } else {
       values = Object.keys(data).reduce(function(map, key) {
         map[key] = {x: +key, y: data[key]};
@@ -81,9 +83,9 @@
       });
     }
 
-    // console.log('data:', data, 'values:', values);
 
     var xrange = this.xrange;
+
     if (!xrange) {
       xrange = d3.extent(data, function(d) {
         return +d.x;
@@ -100,6 +102,12 @@
       if (!values[x]) {
         data.push({x: x, y: 0});
       }
+    });
+
+    // filter the data so that only values within the domain
+    // are included in calculations and rendering
+    data = data.filter(function(d){
+      return xdomain.indexOf(d.x) > -1;
     });
 
     var extent = d3.extent(data, function(d) { return d.y; });
@@ -136,7 +144,11 @@
     bars.exit().remove();
 
     bars.attr('transform', function(d) {
-      return 'translate(' + [x(d.x), 0] + ')';
+      if (x(d.x)) {
+        return 'translate(' + [x(d.x), 0] + ')';
+      } else {
+        console.warn(d.x, 'not in bar chart domain')
+      }
     });
 
     bars.select('.bar-value')

@@ -28,6 +28,7 @@
 
   var click = function(event) {
     toggle(this);
+    event.preventDefault();
   };
 
   exports.ARIAToggle = document.registerElement('aria-toggle', {
@@ -35,6 +36,10 @@
     prototype: Object.create(
       HTMLButtonElement.prototype,
       {
+        createdCallback: {value: function() {
+          this.setAttribute('type', 'button');
+        }},
+
         attachedCallback: {value: function() {
           if (this.hasAttribute(EXPANDED)) {
             toggle(this, this.getAttribute(EXPANDED) === 'true');

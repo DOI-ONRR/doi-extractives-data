@@ -5,12 +5,13 @@
   var CONTROLS = 'aria-controls';
 
   var toggle = function(button, expanded) {
-    if (arguments.length < 2 || typeof expanded !== 'boolean') {
+    if (typeof expanded !== 'boolean') {
       expanded = button.getAttribute(EXPANDED) !== 'true';
     }
     var target = document.getElementById(button.getAttribute(CONTROLS));
     button.setAttribute(EXPANDED, expanded);
     target.setAttribute(HIDDEN, !expanded);
+    return expanded;
   };
 
   var collapse = function(button) {
@@ -26,7 +27,7 @@
   }
 
   var click = function(event) {
-    toggle(event.target);
+    toggle(this);
   };
 
   exports.ARIAToggle = document.registerElement('aria-toggle', {
@@ -39,6 +40,10 @@
             toggle(this, this.getAttribute(EXPANDED) === 'true');
           }
           this.addEventListener('click', click);
+        }},
+
+        toggle: {value: function(expanded) {
+          return toggle(this, expanded);
         }},
 
         detachedCallback: {value: function() {

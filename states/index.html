@@ -40,13 +40,13 @@ nav_items:
 {% assign steps=9 %}
 
 <main id="states" class="container-outer layout-state-pages">
-  <div>
-    <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
-    /
-  </div>
-  <h1 id="title">{{ state_name }}</h1>
 
   <div class="container-left-9">
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
+      /
+    </div>
+    <h1 id="title">{{ state_name }}</h1>
 
     <figure is="data-map" color-scheme="Reds" steps="9">
       {%
@@ -93,7 +93,11 @@ nav_items:
   </div>
 
   <div class="container-right-3">
-    <div class="sticky_nav">
+    <div class="sticky_nav" data-sticky-offset="50">
+      <h3 class="state-page-nav-title container">
+
+        <div class="nav-title">{{ state_name }}</div>
+      </h3>
       <nav class="sticky_nav-nav">
         {% include case-studies/_nav-list.html %}
       </nav>

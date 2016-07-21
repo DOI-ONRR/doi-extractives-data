@@ -1,0 +1,22 @@
+{% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
+{% assign highlighted_state = include.highlighted_state %}
+{% assign offshore = include.offshore %}
+
+<div class="state svg-container map-container"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
+  <a href="{{ site.baseurl }}/states/" title="Explore data main page">
+  <svg class="states map icon"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+    <g class="states features">
+      <use xlink:href="{{ states_svg }}#states"></use>
+    </g>
+    {% for state in site.data.states %}
+      {% if state_id == state.id %}
+      <g class="state feature">
+        <use xlink:href="{{ states_svg }}#state-{{ state.id }}"></use>
+      </g>
+    {% endif %}
+    {% endfor %}
+  </svg>
+  </a>
+</div>
+

@@ -11,7 +11,7 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  h3:not(.chart-title) {
+  h3:not(.chart-title):not(.state-page-nav-title) {
     border-bottom: 2px solid $light-green;
     margin-bottom: $standard-padding;
     padding-bottom: $standard-padding-lite;

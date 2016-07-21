@@ -18,17 +18,10 @@
   }
 
   .chart-title {
-    @include heading(para-lg);
+    @include heading(large-caps);
 
     border-bottom: 1px solid $mid-gray;
     flex: 1 0 auto;
-    font-size: inherit;
-    font-weight: $weight-book;
-    letter-spacing: 1px;
-    line-height: $standard-padding;
-    margin-bottom: $base-padding-lite;
-    padding-bottom: $base-padding-lite;
-    text-transform: uppercase;
   }
 
   .chart-list-intro {

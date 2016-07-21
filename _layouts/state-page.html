@@ -54,13 +54,12 @@ nav_items:
 
 
 <main id="state-{{ state_id }}" class="container-outer layout-state-pages">
-  <div>
-    <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
-    /
-  </div>
-  <h1 id="title">{{ state_name }}</h1>
-
   <div class="container-left-9">
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
+      /
+    </div>
+    <h1 id="title">{{ state_name }}</h1>
 
     {% include location/section-overview.html %}
 
@@ -98,7 +97,21 @@ nav_items:
   </div>
 
   <div class="container-right-3">
-    <div class="sticky_nav">
+    <div class="sticky_nav" data-sticky-offset="50">
+      <h3 class="state-page-nav-title container">
+
+        <div class="nav-title">{{ state_name }}</div>
+        <figure is="data-map">
+
+          {%
+            include icon-map.html
+            state=state_id
+            highlighted_state=state_id
+            offshore=true
+          %}
+        </figure>
+        <label class="nav-prompt">Explore data main page</label>
+      </h3>
       <nav class="sticky_nav-nav">
         {% include case-studies/_nav-list.html %}
       </nav>

@@ -1,6 +1,6 @@
 .sticky_nav {
-  padding-left: $base-padding-extra;
-  padding-top: $base-padding-extra;
+  padding-left: $standard-padding-extra;
+  padding-top: $standard-padding-extra;
   top: 0;
 
   @include respond-to(medium-down) {

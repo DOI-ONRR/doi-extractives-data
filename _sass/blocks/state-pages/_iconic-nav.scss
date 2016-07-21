@@ -9,7 +9,7 @@
   position: relative;
 
   &:hover,
-  &:focus
+  &:focus,
   &:active {
     svg.map .states.features {
       fill: $blackest-black;
@@ -25,10 +25,11 @@
     }
 
     .states.features {
+      @include transition(all, 0.3s);
+
       fill: $neutral-gray;
       fill-opacity: 1;
       stroke: $neutral-gray;
-      @include transition(all, 0.3s);
     }
   }
 
@@ -38,10 +39,10 @@
     width: 33%;
 
     &:hover,
-    &:focus
+    &:focus,
     &:active {
 
-      &+ .nav-prompt {
+      + .nav-prompt {
         visibility: visible;
       }
 

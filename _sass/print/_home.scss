@@ -7,7 +7,6 @@
 }
 
 .card {
-
   display: block;
   float: none;
   height: inherit !important;
@@ -18,7 +17,6 @@
 }
 
 .eiti-tab-panel {
-
   display: block;
   float: none;
   margin-bottom: $base-padding-jumbo;
@@ -36,7 +34,7 @@
 .header-image_link,
 .card > a,
 .explore_home-img {
-  &:after {
+  &::after {
     content: '';
   }
 }

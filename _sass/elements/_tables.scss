@@ -1,7 +1,10 @@
+$table-border: 1px solid $mid-gray;
+
 table {
   @include font-size(0.9);
 
-  border: 1px solid $mid-gray;
+  border: $table-border;
+  border-collapse: collapse;
   border-spacing: 2px;
   color: $dark-gray;
   font-weight: $weight-light;
@@ -31,27 +34,57 @@ th:first-child {
 }
 
 td {
-  border: 1px solid $mid-gray;
+  border: $table-border;
 }
 
 
 .table-basic {
   border: 0;
+  width: 100%;
 
-  thead {
+  td,
+  th {
     border: 0;
-
-    tr {
-      border: 0;
-    }
+    text-align: left;
   }
 
   tr {
-    border: 0;
-    border-bottom: 2px solid $mid-gray;
+    border-bottom: $table-border;
   }
 
-  td {
-    border: 0;
+  thead {
+    background-color: transparent;
+
+    tr {
+      border-bottom: 2px solid $mid-gray;
+    }
+  }
+}
+
+// Accordion group!
+// <table>
+//   <tbody class="table-accordion-group">
+//     <tr>
+//       <td>
+//         <button is="aria-toggle"
+//           aria-controls="group1" aria-expanded="false">
+//           Group 1
+//         </button>
+//       </td>
+//     </tr>
+//     <tr id="group1">
+//       <td>Some info about group 1</td>
+//     </tr>
+//   </tbody>
+// </table>
+.table-accordion-group {
+  border-bottom: $table-border;
+
+  tr {
+    border-bottom: none;
+  }
+
+  tr[aria-hidden] td {
+    padding-top: 0;
   }
 }

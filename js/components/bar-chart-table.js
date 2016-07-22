@@ -119,6 +119,12 @@
 
     this._cells.forEach(function(cell) {
       var key = cell.dataset.series || 'default';
+
+      if (key === 'volume' && +cell.getAttribute('data-year-values')) {
+        console.log(series, key, cell)
+      }
+
+
       if (key in series) {
         series[key].push(cell);
       } else {
@@ -220,6 +226,8 @@
           }
         }
 
+
+
         if (childCell) {
           var childBar = document.createElement('div');
           childBar.className = 'bar';
@@ -228,6 +236,12 @@
 
         var value = +cell.dataset.value;
         var size = width(value);
+
+        // if (+cell.dataset.yearValues) {
+        //   console.log('bar:', bar)
+        //   console.log('-----------')
+
+        // }
 
         if (childCell) {
           var childValue = +childCell.dataset.value;
@@ -239,6 +253,12 @@
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
           childBar.style.setProperty(sizeProperty, Math.abs(largerSize) + '%');
         } else {
+          if (!size) {
+            console.log(size)
+          } else {
+
+          }
+
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
         }
 

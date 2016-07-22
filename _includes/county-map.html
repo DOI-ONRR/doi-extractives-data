@@ -34,16 +34,19 @@
         {% assign fips = county[0] | pad_left: 5, '0' %}
         {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
         {% assign value = county[1] | get: keys %}
-        {% if value != nil %}
+
+        {% assign year_values = null %}
+        {% if include.years %}
+          {% assign year_values = county[1] | get: include.years %}
+          {% if include.years_property %}
+            {% assign year_values = year_values | map_hash: include.years_property %}
+          {% endif %}
+        {% endif %}
+
+        {% if year_values != nil and year_values != null %}
         <g class="county feature"
           data-value='{{ value | default: 0 | jsonify }}'
-          {% if include.years %}
-            {% assign year_values = county[1] | get: include.years %}
-            {% if include.years_property %}
-              {% assign year_values = year_values | map_hash: include.years_property %}
-            {% endif %}
-            data-year-values='{{ year_values | jsonify }}'
-          {% endif %} >
+          data-year-values='{{ year_values | jsonify }}'>
           <title>{{ county[1].name }}</title>
           <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
         </g>

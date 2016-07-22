@@ -1,0 +1,769 @@
+streams:
+  All:
+    Total:
+      '2014': 446883245
+    General Fund:
+      '2014': 176559116
+    County Share / Government:
+      '2014': 133478180
+    Common Schools:
+      '2014': 34725031
+    Coal Trust Fund:
+      '2014': 28838092
+    State Share:
+      '2014': 12276757
+    State School Oil & Gas Distribution:
+      '2014': 11773273
+    Long Range Building:
+      '2014': 6921142
+    Oil and Natural Gas Conservation Account Tax:
+      '2014': 4732701
+    State Orphan Share Fund:
+      '2014': 3583888
+    State Natural Resources Projects:
+      '2014': 3369568
+    Montana University System:
+      '2014': 3219424
+    Public Land Trust:
+      '2014': 3157313
+    Shared Account:
+      '2014': 3149120
+    Board of Oil & Gas Conservation:
+      '2014': 2505508
+    State Natural Resources Operations:
+      '2014': 2454052
+    Coal Board:
+      '2014': 2129440
+    Hard Rock Debt Service:
+      '2014': 1185166
+    Natural Resources Operations:
+      '2014': 976019
+    Park Acquisition Trust:
+      '2014': 732488
+    Renewable Resource Debt Service:
+      '2014': 547924
+    Hazardous Waste/CERCLA special revenue account:
+      '2014': 372716
+    Environmental Quality Protection Fund:
+      '2014': 372716
+    Groundwater Assessment Account:
+      '2014': 366000
+    Cultural and Aesthetic Projects:
+      '2014': 363360
+    Hard Rock Mining:
+      '2014': 348578
+    CERCLA Debt Service:
+      '2014': 272106
+    Coal & Uranium Program:
+      '2014': 250000
+    Water Storage Special Revenue Account (each 2 years):
+      '2014': 150000
+    Public Buildings:
+      '2014': 66684
+    School of Mines:
+      '2014': 60168
+    Pine Hills School:
+      '2014': 45007
+    Montana State University Morrill:
+      '2014': 32738
+    University of Montana:
+      '2014': 24086
+    State Normal School:
+      '2014': 18609
+    Agricultural Experiment Station:
+      '2014': 12990
+    School for Deaf and Blind:
+      '2014': 8840
+    Department of Transportation:
+      '2014': 7468
+    Department of Natural Resources Conservation - Water Resources Division:
+      '2014': 5659
+    Montana State University 2nd Grant:
+      '2014': 2087
+    Veterans Home Income:
+      '2014': 1913
+    'Department of Fish, Wildlife, & Parks':
+      '2014': 210
+    Galen State Hospital:
+      '2014': 42
+  Oil & Natural Gas Production Tax:
+    Total:
+      '2014': 236496773
+    General Fund:
+      '2014': 109606216
+    County Share / Government:
+      '2014': 95997576
+    State School Oil & Gas Distribution:
+      '2014': 11773273
+    Oil and Natural Gas Conservation Account Tax:
+      '2014': 4732701
+    State Orphan Share Fund:
+      '2014': 3583888
+    Montana University System:
+      '2014': 3219424
+    State Natural Resources Projects:
+      '2014': 2624135
+    Board of Oil & Gas Conservation:
+      '2014': 2505508
+    State Natural Resources Operations:
+      '2014': 2454052
+  Coal Severance Tax:
+    Total:
+      '2014': 57676185
+    Coal Trust Fund:
+      '2014': 28838092
+    General Fund:
+      '2014': 14744619
+    Long Range Building:
+      '2014': 6921142
+    Shared Account:
+      '2014': 3149120
+    Coal Board:
+      '2014': 2129440
+    Park Acquisition Trust:
+      '2014': 732488
+    Renewable Resource Debt Service:
+      '2014': 547924
+    Cultural and Aesthetic Projects:
+      '2014': 363360
+    Coal & Uranium Program:
+      '2014': 250000
+  U.S. Mineral Royalties:
+    Total:
+      '2014': 36991806
+    General Fund:
+      '2014': 27743855
+    County Share / Government:
+      '2014': 9247951
+  Oil Royalty:
+    Total:
+      '2014': 20014889
+    Common Schools:
+      '2014': 17611249.23
+    Public Land Trust:
+      '2014': 2395261.99
+    Public Buildings:
+      '2014': 6710.92
+    Department of Transportation:
+      '2014': 1420.77
+    Galen State Hospital:
+      '2014': 141.57
+    'Department of Fish, Wildlife, & Parks':
+      '2014': 104.52
+  Coal Gross Proceeds:
+    Total:
+      '2014': 18812015
+    County Share / Government:
+      '2014': 10043732
+    State Share:
+      '2014': 8768283
+  Metal Mines Gross Proceeds:
+    Total:
+      '2014': 16813993
+    County Share / Government:
+      '2014': 13635986
+    State Share:
+      '2014': 3178007
+  Metalliferous Mines License Tax:
+    Total:
+      '2014': 13943131
+    General Fund:
+      '2014': 7947585
+    County Share / Government:
+      '2014': 3485783
+    Hard Rock Debt Service:
+      '2014': 1185166
+    Natural Resources Operations:
+      '2014': 976019
+    Hard Rock Mining:
+      '2014': 348578
+  Abandoned Mine Land Fees:
+    Total:
+      '2014': 12568841
+    General Fund:
+      '2014': 12568841
+  Coal Royalties:
+    Common Schools:
+      '2014': 8130763.3
+    Total:
+      '2014': 8130763
+  Wind Generation Property Tax:
+    Total:
+      '2014': 7787065
+  Electrical Energy Producers' License Tax:
+    Total:
+      '2014': 3948000
+    General Fund:
+      '2014': 3948000
+  Oil & Gas Bonus Income:
+    Total:
+      '2014': 3709204
+    Common Schools:
+      '2014': 3076763.83
+    Public Land Trust:
+      '2014': 626639.71
+    Montana State University Morrill:
+      '2014': 2160
+    Public Buildings:
+      '2014': 1960
+    School of Mines:
+      '2014': 880
+    University of Montana:
+      '2014': 800
+  Oil & Gas Rental Income:
+    Total:
+      '2014': 3035589
+    Common Schools:
+      '2014': 2816125.86
+    Public Land Trust:
+      '2014': 48687.59
+    School of Mines:
+      '2014': 41300.77
+    Public Buildings:
+      '2014': 33403.35
+    Pine Hills School:
+      '2014': 28981
+    Montana State University Morrill:
+      '2014': 18410.57
+    State Normal School:
+      '2014': 17011.8
+    University of Montana:
+      '2014': 11286.38
+    School for Deaf and Blind:
+      '2014': 5940
+    Agricultural Experiment Station:
+      '2014': 4847.45
+    Department of Transportation:
+      '2014': 3911.26
+    Department of Natural Resources Conservation - Water Resources Division:
+      '2014': 2094.72
+    Veterans Home Income:
+      '2014': 1913.41
+    Montana State University 2nd Grant:
+      '2014': 1675.13
+    'Department of Fish, Wildlife, & Parks':
+      '2014': 100
+  Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+    Total:
+      '2014': 2278971
+    State Natural Resources Projects:
+      '2014': 745433
+    Hazardous Waste/CERCLA special revenue account:
+      '2014': 372716
+    Environmental Quality Protection Fund:
+      '2014': 372716
+    Groundwater Assessment Account:
+      '2014': 366000
+    CERCLA Debt Service:
+      '2014': 272106
+    Water Storage Special Revenue Account (each 2 years):
+      '2014': 150000
+  Gas Royalty:
+    Total:
+      '2014': 1654445
+    Common Schools:
+      '2014': 1587749.35
+    Public Land Trust:
+      '2014': 43167.89
+    Montana State University Morrill:
+      '2014': 8551.91
+    Agricultural Experiment Station:
+      '2014': 5802.82
+    Public Buildings:
+      '2014': 5019.5
+    Department of Natural Resources Conservation - Water Resources Division:
+      '2014': 1854.3
+    State Normal School:
+      '2014': 1296.92
+    Department of Transportation:
+      '2014': 1000.68
+    'Department of Fish, Wildlife, & Parks':
+      '2014': 1.6
+  Miscellaneous Mines Net Proceeds:
+    Total:
+      '2014': 1397619
+    County Share / Government:
+      '2014': 1067152
+    State Share:
+      '2014': 330467
+  Oil & Gas Penalty Income:
+    Total:
+      '2014': 1350124
+    Common Schools:
+      '2014': 1254421.22
+    Public Buildings:
+      '2014': 19070.7
+    Public Land Trust:
+      '2014': 18979.17
+    School of Mines:
+      '2014': 17987.65
+    Pine Hills School:
+      '2014': 16026.45
+    University of Montana:
+      '2014': 12000
+    Montana State University Morrill:
+      '2014': 3615.27
+    School for Deaf and Blind:
+      '2014': 2900
+    Agricultural Experiment Station:
+      '2014': 2339.54
+    Department of Natural Resources Conservation - Water Resources Division:
+      '2014': 1709.53
+    Montana State University 2nd Grant:
+      '2014': 412.12
+    Department of Transportation:
+      '2014': 362.64
+    State Normal School:
+      '2014': 300
+  Condensate Royalty:
+    Total:
+      '2014': 165897
+    Common Schools:
+      '2014': 141316.46
+    Public Land Trust:
+      '2014': 24576.61
+    'Department of Fish, Wildlife, & Parks':
+      '2014': 3.48
+  Coal Rentals / Bonuses:
+    Common Schools:
+      '2014': 49515.39
+    Total:
+      '2014': 49515
+  Land Use Licenses Rental Income:
+    Total:
+      '2014': 14810
+    Common Schools:
+      '2014': 14810
+  Non-Metalliferous Mineral Leases Royalty Income:
+    Total:
+      '2014': 12545
+    Common Schools:
+      '2014': 12384.68
+    Public Buildings:
+      '2014': 160
+  Non-Metalliferous Mineral Leases Rental Income:
+    Total:
+      '2014': 10556
+    Common Schools:
+      '2014': 10196
+    Public Buildings:
+      '2014': 360
+  Oil & Gas Surface Damages:
+    Total:
+      '2014': 9950
+    Common Schools:
+      '2014': 9177.16
+    Department of Transportation:
+      '2014': 772.8
+  Oil & Gas Seismic Permits:
+    Total:
+      '2014': 5688
+    Common Schools:
+      '2014': 5688
+  Metalliferous Mineral Lease Rental Income:
+    Common Schools:
+      '2014': 2842.08
+    Total:
+      '2014': 2842
+  Metalliferous Mineral Lease Royalty Income:
+    Total:
+      '2014': 1029
+    Common Schools:
+      '2014': 1028.79
+  Land Use Licenses Royalty Income:
+    Total:
+      '2014': 1000
+    Common Schools:
+      '2014': 1000
+funds:
+  Total:
+    All:
+      '2014': 446883245
+    Oil & Natural Gas Production Tax:
+      '2014': 236496773
+    Coal Severance Tax:
+      '2014': 57676185
+    U.S. Mineral Royalties:
+      '2014': 36991806
+    Oil Royalty:
+      '2014': 20014889
+    Coal Gross Proceeds:
+      '2014': 18812015
+    Metal Mines Gross Proceeds:
+      '2014': 16813993
+    Metalliferous Mines License Tax:
+      '2014': 13943131
+    Abandoned Mine Land Fees:
+      '2014': 12568841
+    Coal Royalties:
+      '2014': 8130763
+    Wind Generation Property Tax:
+      '2014': 7787065
+    Electrical Energy Producers' License Tax:
+      '2014': 3948000
+    Oil & Gas Bonus Income:
+      '2014': 3709204
+    Oil & Gas Rental Income:
+      '2014': 3035589
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 2278971
+    Gas Royalty:
+      '2014': 1654445
+    Miscellaneous Mines Net Proceeds:
+      '2014': 1397619
+    Oil & Gas Penalty Income:
+      '2014': 1350124
+    Condensate Royalty:
+      '2014': 165897
+    Coal Rentals / Bonuses:
+      '2014': 49515
+    Land Use Licenses Rental Income:
+      '2014': 14810
+    Non-Metalliferous Mineral Leases Royalty Income:
+      '2014': 12545
+    Non-Metalliferous Mineral Leases Rental Income:
+      '2014': 10556
+    Oil & Gas Surface Damages:
+      '2014': 9950
+    Oil & Gas Seismic Permits:
+      '2014': 5688
+    Metalliferous Mineral Lease Rental Income:
+      '2014': 2842
+    Metalliferous Mineral Lease Royalty Income:
+      '2014': 1029
+    Land Use Licenses Royalty Income:
+      '2014': 1000
+  General Fund:
+    All:
+      '2014': 176559116
+    Oil & Natural Gas Production Tax:
+      '2014': 109606216
+    U.S. Mineral Royalties:
+      '2014': 27743855
+    Coal Severance Tax:
+      '2014': 14744619
+    Abandoned Mine Land Fees:
+      '2014': 12568841
+    Metalliferous Mines License Tax:
+      '2014': 7947585
+    Electrical Energy Producers' License Tax:
+      '2014': 3948000
+  County Share / Government:
+    All:
+      '2014': 133478180
+    Oil & Natural Gas Production Tax:
+      '2014': 95997576
+    Metal Mines Gross Proceeds:
+      '2014': 13635986
+    Coal Gross Proceeds:
+      '2014': 10043732
+    U.S. Mineral Royalties:
+      '2014': 9247951
+    Metalliferous Mines License Tax:
+      '2014': 3485783
+    Miscellaneous Mines Net Proceeds:
+      '2014': 1067152
+  Common Schools:
+    All:
+      '2014': 34725031
+    Oil Royalty:
+      '2014': 17611249.23
+    Coal Royalties:
+      '2014': 8130763.3
+    Oil & Gas Bonus Income:
+      '2014': 3076763.83
+    Oil & Gas Rental Income:
+      '2014': 2816125.86
+    Gas Royalty:
+      '2014': 1587749.35
+    Oil & Gas Penalty Income:
+      '2014': 1254421.22
+    Condensate Royalty:
+      '2014': 141316.46
+    Coal Rentals / Bonuses:
+      '2014': 49515.39
+    Land Use Licenses Rental Income:
+      '2014': 14810
+    Non-Metalliferous Mineral Leases Royalty Income:
+      '2014': 12384.68
+    Non-Metalliferous Mineral Leases Rental Income:
+      '2014': 10196
+    Oil & Gas Surface Damages:
+      '2014': 9177.16
+    Oil & Gas Seismic Permits:
+      '2014': 5688
+    Metalliferous Mineral Lease Rental Income:
+      '2014': 2842.08
+    Metalliferous Mineral Lease Royalty Income:
+      '2014': 1028.79
+    Land Use Licenses Royalty Income:
+      '2014': 1000
+  Coal Trust Fund:
+    Coal Severance Tax:
+      '2014': 28838092
+    All:
+      '2014': 28838092
+  State Share:
+    All:
+      '2014': 12276757
+    Coal Gross Proceeds:
+      '2014': 8768283
+    Metal Mines Gross Proceeds:
+      '2014': 3178007
+    Miscellaneous Mines Net Proceeds:
+      '2014': 330467
+  State School Oil & Gas Distribution:
+    Oil & Natural Gas Production Tax:
+      '2014': 11773273
+    All:
+      '2014': 11773273
+  Long Range Building:
+    Coal Severance Tax:
+      '2014': 6921142
+    All:
+      '2014': 6921142
+  Oil and Natural Gas Conservation Account Tax:
+    Oil & Natural Gas Production Tax:
+      '2014': 4732701
+    All:
+      '2014': 4732701
+  State Orphan Share Fund:
+    Oil & Natural Gas Production Tax:
+      '2014': 3583888
+    All:
+      '2014': 3583888
+  State Natural Resources Projects:
+    All:
+      '2014': 3369568
+    Oil & Natural Gas Production Tax:
+      '2014': 2624135
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 745433
+  Montana University System:
+    Oil & Natural Gas Production Tax:
+      '2014': 3219424
+    All:
+      '2014': 3219424
+  Public Land Trust:
+    All:
+      '2014': 3157313
+    Oil Royalty:
+      '2014': 2395261.99
+    Oil & Gas Bonus Income:
+      '2014': 626639.71
+    Oil & Gas Rental Income:
+      '2014': 48687.59
+    Gas Royalty:
+      '2014': 43167.89
+    Condensate Royalty:
+      '2014': 24576.61
+    Oil & Gas Penalty Income:
+      '2014': 18979.17
+  Shared Account:
+    Coal Severance Tax:
+      '2014': 3149120
+    All:
+      '2014': 3149120
+  Board of Oil & Gas Conservation:
+    Oil & Natural Gas Production Tax:
+      '2014': 2505508
+    All:
+      '2014': 2505508
+  State Natural Resources Operations:
+    Oil & Natural Gas Production Tax:
+      '2014': 2454052
+    All:
+      '2014': 2454052
+  Coal Board:
+    Coal Severance Tax:
+      '2014': 2129440
+    All:
+      '2014': 2129440
+  Hard Rock Debt Service:
+    Metalliferous Mines License Tax:
+      '2014': 1185166
+    All:
+      '2014': 1185166
+  Natural Resources Operations:
+    Metalliferous Mines License Tax:
+      '2014': 976019
+    All:
+      '2014': 976019
+  Park Acquisition Trust:
+    Coal Severance Tax:
+      '2014': 732488
+    All:
+      '2014': 732488
+  Renewable Resource Debt Service:
+    Coal Severance Tax:
+      '2014': 547924
+    All:
+      '2014': 547924
+  Hazardous Waste/CERCLA special revenue account:
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 372716
+    All:
+      '2014': 372716
+  Environmental Quality Protection Fund:
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 372716
+    All:
+      '2014': 372716
+  Groundwater Assessment Account:
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 366000
+    All:
+      '2014': 366000
+  Cultural and Aesthetic Projects:
+    Coal Severance Tax:
+      '2014': 363360
+    All:
+      '2014': 363360
+  Hard Rock Mining:
+    Metalliferous Mines License Tax:
+      '2014': 348578
+    All:
+      '2014': 348578
+  CERCLA Debt Service:
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 272106
+    All:
+      '2014': 272106
+  Coal & Uranium Program:
+    Coal Severance Tax:
+      '2014': 250000
+    All:
+      '2014': 250000
+  Water Storage Special Revenue Account (each 2 years):
+    Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
+      '2014': 150000
+    All:
+      '2014': 150000
+  Public Buildings:
+    All:
+      '2014': 66684
+    Oil & Gas Rental Income:
+      '2014': 33403.35
+    Oil & Gas Penalty Income:
+      '2014': 19070.7
+    Oil Royalty:
+      '2014': 6710.92
+    Gas Royalty:
+      '2014': 5019.5
+    Oil & Gas Bonus Income:
+      '2014': 1960
+    Non-Metalliferous Mineral Leases Rental Income:
+      '2014': 360
+    Non-Metalliferous Mineral Leases Royalty Income:
+      '2014': 160
+  School of Mines:
+    All:
+      '2014': 60168
+    Oil & Gas Rental Income:
+      '2014': 41300.77
+    Oil & Gas Penalty Income:
+      '2014': 17987.65
+    Oil & Gas Bonus Income:
+      '2014': 880
+  Pine Hills School:
+    All:
+      '2014': 45007
+    Oil & Gas Rental Income:
+      '2014': 28981
+    Oil & Gas Penalty Income:
+      '2014': 16026.45
+  Montana State University Morrill:
+    All:
+      '2014': 32738
+    Oil & Gas Rental Income:
+      '2014': 18410.57
+    Gas Royalty:
+      '2014': 8551.91
+    Oil & Gas Penalty Income:
+      '2014': 3615.27
+    Oil & Gas Bonus Income:
+      '2014': 2160
+  University of Montana:
+    All:
+      '2014': 24086
+    Oil & Gas Penalty Income:
+      '2014': 12000
+    Oil & Gas Rental Income:
+      '2014': 11286.38
+    Oil & Gas Bonus Income:
+      '2014': 800
+  State Normal School:
+    All:
+      '2014': 18609
+    Oil & Gas Rental Income:
+      '2014': 17011.8
+    Gas Royalty:
+      '2014': 1296.92
+    Oil & Gas Penalty Income:
+      '2014': 300
+  Agricultural Experiment Station:
+    All:
+      '2014': 12990
+    Gas Royalty:
+      '2014': 5802.82
+    Oil & Gas Rental Income:
+      '2014': 4847.45
+    Oil & Gas Penalty Income:
+      '2014': 2339.54
+  School for Deaf and Blind:
+    All:
+      '2014': 8840
+    Oil & Gas Rental Income:
+      '2014': 5940
+    Oil & Gas Penalty Income:
+      '2014': 2900
+  Department of Transportation:
+    All:
+      '2014': 7468
+    Oil & Gas Rental Income:
+      '2014': 3911.26
+    Oil Royalty:
+      '2014': 1420.77
+    Gas Royalty:
+      '2014': 1000.68
+    Oil & Gas Surface Damages:
+      '2014': 772.8
+    Oil & Gas Penalty Income:
+      '2014': 362.64
+  Department of Natural Resources Conservation - Water Resources Division:
+    All:
+      '2014': 5659
+    Oil & Gas Rental Income:
+      '2014': 2094.72
+    Gas Royalty:
+      '2014': 1854.3
+    Oil & Gas Penalty Income:
+      '2014': 1709.53
+  Montana State University 2nd Grant:
+    All:
+      '2014': 2087
+    Oil & Gas Rental Income:
+      '2014': 1675.13
+    Oil & Gas Penalty Income:
+      '2014': 412.12
+  Veterans Home Income:
+    Oil & Gas Rental Income:
+      '2014': 1913.41
+    All:
+      '2014': 1913
+  'Department of Fish, Wildlife, & Parks':
+    All:
+      '2014': 210
+    Oil Royalty:
+      '2014': 104.52
+    Oil & Gas Rental Income:
+      '2014': 100
+    Condensate Royalty:
+      '2014': 3.48
+    Gas Royalty:
+      '2014': 1.6
+  Galen State Hospital:
+    Oil Royalty:
+      '2014': 141.57
+    All:
+      '2014': 42

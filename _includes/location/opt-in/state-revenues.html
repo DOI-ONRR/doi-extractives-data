@@ -1,41 +1,52 @@
 {% assign revenue_year = '2014' %}
-{% assign revenues = site.data.opt_in_state_revenues[include.location_id][revenue_year] %}
+{% assign funds = site.data.opt_in_state_revenues[include.location_id].funds %}
 
-{% if revenues.size > 0 %}
+{% if funds.size > 0 %}
   {% assign funds_info = site.data.opt_in_state_funds[include.location_id] %}
+  {% assign funds_count = funds.size | minus: 1 %}
+  {% assign revenue_total = funds.Total.All[revenue_year] %}
+<p>
+  ${{ revenue_total | default: 0 | intcomma }}
+  in state revenue from the extractives industry was disbursed
+  to the following {{ funds_count }} fund{{ funds_count | plural }}
+  in {{ revenue_year }}:
+</p>
 
-<table is="bar-chart-table" class="revenue table-arrow_box"
+<table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
       <th>Fund</th>
-      <th>Disbursements ({{ revenue_year }})</th>
+      <th class="num">Disbursements</th>
     </tr>
   </thead>
 
-  {% for _fund in revenues.funds %}
-  <tbody id="revenue-disbursement-fund-{{ fund_slug }}">
+  {% for _fund in funds %}
     {% assign fund = _fund[0] %}
+    {% assign fund_name = fund | xml_escape %}
     {% assign fund_slug = fund | slugify %}
     {% assign fund_sources = _fund[1] %}
     {% assign fund_info = funds_info[fund] %}
+    {% assign fund_dollars = fund_sources.All[revenue_year] %}
+  <tbody id="revenue-disbursement-fund-{{ fund_slug }}"
+    class="table-accordion-group">
     <tr>
       <td>
         {% if fund_info %}
         <button is="aria-toggle" aria-controls="fund-{{ fund_slug }}"
-          class="not-button-like">
-          <strong>{{ fund | xml_escape }}</strong>
+          aria-expanded="false" class="not-button-like">
+          <strong>{{ fund_name }}</strong>
         </button>
         {% else %}
-        <strong>{{ fund | xml_escape }}</strong>
+        <strong>{{ fund_name }}</strong>
         {% endif %}
       </td>
-      <td data-value="{{ fund_sources.All }}">
-        ${{ fund_sources.All | intcomma }}
+      <td data-value="{{ fund_dollars }}">
+        ${{ fund_dollars | default: 0 | intcomma }}
       </td>
     </tr>
     {% if fund_info %}
-    <tr id="fund-{{ fund_slug }}" aria-hidden="true">
+    <tr id="fund-{{ fund_slug }}">
       <td colspan="2">{{ fund_info }}</td>
     </tr>
     {% endif %}

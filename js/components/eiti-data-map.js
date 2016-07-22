@@ -26,6 +26,10 @@
             .attr('data-value', function(d) {
               return d;
             });
+
+          d3.select(this).select('figcaption [data-year]')
+            .text(year)
+
           this.update();
         }},
 
@@ -90,22 +94,22 @@
 
           if (!svgLegend.empty()) {
 
-            var legendScale = svgLegend.select('.legendScale');
-
-            if (legendScale.empty()) {
-              svgLegend.append('g')
-              .attr('class', 'legendScale');
-            }
-
             var legend = d3.legend.color()
               .labelFormat(format.si)
               .useClass(false)
               .ascending(true)
-              .labelDelimiter('-')
+              .labelDelimiter('–')
               .shapePadding(6)
               .scale(scale);
 
-            legendScale.call(legend);
+
+            if (svgLegend.select('.legendScale').empty()) {
+              svgLegend.append('g')
+                .attr('class', 'legendScale');
+            }
+
+            svgLegend.select('.legendScale')
+              .call(legend);
 
             // reverse because the scale is in ascending order
             var _steps = d3.range(0, 9).reverse();

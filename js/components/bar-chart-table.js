@@ -196,6 +196,8 @@
         var childCell = cell.querySelector('[data-value]');
 
         // TODO only do this if autolabel="true"?
+
+
         if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
           if (autolabel) {
             cell.setAttribute('aria-label', cell.firstChild.textContent);
@@ -206,6 +208,9 @@
             span.className = 'text';
             span.appendChild(text);
           }
+        } else {
+          var span = cell.appendChild(document.createElement('span'));
+          span.className = 'text';
         }
 
 

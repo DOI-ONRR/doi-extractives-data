@@ -485,10 +485,12 @@ tables/all-production: \
 	tables/all_production_renewables
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/all_production_coal: data/all-production/input/coal.tsv
+tables/all_production_coal: data/all-production/input/coal-????.tsv
 	@$(call drop-table,all_production_coal)
-	tmp=$^.ndjson; \
-	$(tito) --map ./data/all-production/transform-coal.js -r tsv $^ > $$tmp && \
+	tmp=data/all-production/input/coal-all.ndjson; \
+	for filename in $^; do \
+		$(tito) --map ./data/all-production/transform-coal.js -r tsv $$filename >> $$tmp; \
+	done; \
 	$(tables) -t ndjson -n all_production_coal -i $$tmp; \
 	rm $$tmp
 

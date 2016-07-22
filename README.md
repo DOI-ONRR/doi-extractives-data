@@ -105,7 +105,7 @@ For a more detailed roadmap, please see our [repository's wiki](https://github.c
 
 
 ## Contributing
-Content and feature suggestions are welcome via [GitHub Issues](https://github.com/18F/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site.
+Content and feature suggestions are welcome via [GitHub Issues](https://github.com/18F/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site. Take a look at the issues we've tagged [help wanted](https://github.com/18F/doi-extractives-data/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
 
 
 ### Public domain

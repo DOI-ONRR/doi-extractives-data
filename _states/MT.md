@@ -90,7 +90,3 @@ To learn more, find Annual Evaluation Reports for Montana in the [Office of Surf
 The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
 
 The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
-
-
-
-

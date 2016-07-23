@@ -78,8 +78,12 @@
 
 <div class="legend-container">
   {% if include.caption %}
-    <figcaption>
+    <figcaption class="legend-data">
       {{ include.caption }}
+    </figcaption>
+    <figcaption class="legend-no-data" aria-hidden="true">
+      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
+      Select a new year to populate the map.
     </figcaption>
   {% endif %}
 

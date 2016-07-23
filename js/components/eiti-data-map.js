@@ -27,18 +27,47 @@
               return d;
             });
 
-          d3.select(this).select('figcaption [data-year]')
+          // update legend caption
+          d3.select(this).selectAll('figcaption [data-year]')
+            .attr('data-year', year)
             .text(year)
 
           this.update();
         }},
 
         update: {value: function() {
+
+          var noData = this.marks.data().every(function(d){
+            return d == 0;
+          });
+
+          var root = d3.select(this);
+
+          if (noData) {
+            root.select('.legend-no-data')
+              .attr('aria-hidden', false);
+            root.select('.legend-data')
+              .attr('aria-hidden', true);
+            root.select('.details-container')
+              .attr('aria-hidden', true);
+            root.select('.eiti-data-map-table')
+              .attr('aria-hidden', true);
+          } else {
+            root.select('.legend-no-data')
+              .attr('aria-hidden', true);
+            root.select('.legend-data')
+              .attr('aria-hidden', false);
+            root.select('.details-container')
+              .attr('aria-hidden', false);
+            root.select('.eiti-data-map-table')
+              .attr('aria-hidden', false);
+          }
+
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
           var units = this.getAttribute('units') || '';
-
+          var legendDelimiter = '–';
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
@@ -56,6 +85,7 @@
           if (domain[0] > 0) {
             domain[0] = 0;
           } else if (domain[0] < 0) {
+            legendDelimiter = 'to';
             domain[1] = Math.max(0, domain[1]);
           }
 
@@ -98,7 +128,7 @@
               .labelFormat(format.si)
               .useClass(false)
               .ascending(true)
-              .labelDelimiter('–')
+              .labelDelimiter(legendDelimiter)
               .shapePadding(6)
               .scale(scale);
 

@@ -1,0 +1,17 @@
+<!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
+
+{% if is_priority_state %}
+
+<section id="state-governance" class="">
+  
+  <h2>State governance</h2>
+
+  <div class="full-width-text">
+
+	  <p>The USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern natural resource extraction in {{ state_name }}:</p>
+
+	  {{ regulations | markdownify }}
+
+  </div>
+
+{% endif %}

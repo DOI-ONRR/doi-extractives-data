@@ -11,7 +11,8 @@
 
     {% include year-selector.html year_range=year_range %}
 
-    <p class="chart-description">The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
+    <p class="chart-description">The U.S. Energy Information Administration collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned land in {{ state_name }}. <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+    </p>
   </div>
 
   <div class="chart-list">
@@ -49,19 +50,4 @@
 
   </div>
 
-  <a href="{{site.baseurl}}/downloads/#production-all">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data about energy production on all lands and waters comes from the Energy Information Administration
-  </a>
-
-</section>
-
-<section id="state-local-production" class="state production">
-  <h3>Production on state land</h3>
-  <p class="full-width-text">Natural resource extraction on land owned by the State of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
-  <p>We don't have detailed data about natural resource extraction on land owned by the state.</p>
-</section>
-
-<section id="private-land-production" class="production">
-  <h3>Production on private land</h3>
-  <p class="full-width-text">We don't have detailed data about natural resource extraction on land owned by individuals or corporations.</p>
 </section>

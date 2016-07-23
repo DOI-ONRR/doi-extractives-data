@@ -9,30 +9,23 @@
 
 <section id="federal-production" class="federal production">
 
-  <h3>Production on federal land in {{ state_name }}</h2>
-
-  {% include location/section-ownership.html %}
-
   <section class="county-map-table" is="year-switcher-section">
 
     <h3>Natural resources extracted on federal land</h3>
 
     {% if federal_products_num == 0 %}
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+    {% else %}
+      <div class="chart-selector-wrapper">
+
+        {% include year-selector.html year_range=year_range %}
+
+        <p class="chart-description">
+            ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
+            <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        </p>
+      </div>
     {% endif %}
-
-    <div class="chart-selector-wrapper">
-
-      {% include year-selector.html year_range=year_range %}
-
-      <p class="chart-description">
-        {% if federal_products_num == 0 %}
-          No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
-        {% else %}
-          ONRR collects data about what natural resources are produced on federal land in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
-        {% endif %}
-      </p>
-    </div>
 
     <div class="chart-list">
 

@@ -50,44 +50,48 @@ AK:
       volume:
         '2004':
           volume: 1511787
-          percent: 0.19
-          rank: 20
+          percent: 0.14
+          rank: 23
         '2005':
           volume: 1454014
-          percent: 0.18
-          rank: 20
+          percent: 0.13
+          rank: 23
         '2006':
           volume: 1425023
-          percent: 0.17
-          rank: 20
+          percent: 0.12
+          rank: 23
         '2007':
           volume: 1323560
-          percent: 0.16
-          rank: 19
+          percent: 0.12
+          rank: 22
         '2008':
           volume: 1477015
-          percent: 0.18
-          rank: 18
+          percent: 0.13
+          rank: 21
         '2009':
           volume: 1860363
-          percent: 0.24
-          rank: 18
+          percent: 0.17
+          rank: 21
         '2010':
           volume: 2151094
-          percent: 0.27
-          rank: 17
+          percent: 0.2
+          rank: 20
         '2011':
           volume: 2148926
-          percent: 0.27
-          rank: 17
+          percent: 0.2
+          rank: 20
         '2012':
-          volume: 143
-          percent: 0.34
-          rank: 19
+          volume: 2052086
+          percent: 0.2
+          rank: 20
         '2013':
           volume: 1631584
-          percent: 0.22
-          rank: 17
+          percent: 0.17
+          rank: 20
+        '2014':
+          volume: 1501758
+          percent: 0.15
+          rank: 20
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -308,44 +312,48 @@ AL:
       volume:
         '2004':
           volume: 22270612
-          percent: 2.84
-          rank: 11
+          percent: 2
+          rank: 14
         '2005':
           volume: 21338682
-          percent: 2.7
-          rank: 12
+          percent: 1.89
+          rank: 15
         '2006':
           volume: 18829862
-          percent: 2.29
-          rank: 12
+          percent: 1.62
+          rank: 15
         '2007':
           volume: 19327303
-          percent: 2.38
-          rank: 12
+          percent: 1.69
+          rank: 15
         '2008':
           volume: 20611379
-          percent: 2.49
-          rank: 12
+          percent: 1.76
+          rank: 15
         '2009':
           volume: 18796190
-          percent: 2.44
-          rank: 12
+          percent: 1.75
+          rank: 15
         '2010':
           volume: 19914940
-          percent: 2.54
-          rank: 11
+          percent: 1.84
+          rank: 14
         '2011':
           volume: 19071050
-          percent: 2.41
-          rank: 12
+          percent: 1.74
+          rank: 15
         '2012':
-          volume: 5041
-          percent: 12.1
-          rank: 2
+          volume: 19321139
+          percent: 1.9
+          rank: 13
         '2013':
           volume: 18620017
-          percent: 2.53
-          rank: 10
+          percent: 1.89
+          rank: 13
+        '2014':
+          volume: 16362945
+          percent: 1.64
+          rank: 14
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -683,43 +691,47 @@ AR:
         '2004':
           volume: 7328
           percent: 0
-          rank: 23
+          rank: 26
         '2005':
           volume: 2563
           percent: 0
-          rank: 23
+          rank: 26
         '2006':
           volume: 22752
           percent: 0
-          rank: 23
+          rank: 26
         '2007':
           volume: 82677
           percent: 0.01
-          rank: 22
+          rank: 25
         '2008':
           volume: 69181
           percent: 0.01
-          rank: 22
+          rank: 25
         '2009':
           volume: 4638
           percent: 0
-          rank: 22
+          rank: 25
         '2010':
           volume: 32301
           percent: 0
-          rank: 22
+          rank: 25
         '2011':
           volume: 133347
-          percent: 0.02
-          rank: 21
+          percent: 0.01
+          rank: 24
         '2012':
-          volume: 73
-          percent: 0.18
-          rank: 20
+          volume: 98121
+          percent: 0.01
+          rank: 24
         '2013':
           volume: 58578
           percent: 0.01
-          rank: 21
+          rank: 24
+        '2014':
+          volume: 93989
+          percent: 0.01
+          rank: 24
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -904,44 +916,48 @@ AZ:
       volume:
         '2004':
           volume: 12730829
-          percent: 1.63
-          rank: 13
+          percent: 1.15
+          rank: 16
         '2005':
           volume: 12071576
-          percent: 1.53
-          rank: 13
+          percent: 1.07
+          rank: 16
         '2006':
           volume: 8216255
-          percent: 1
-          rank: 13
+          percent: 0.71
+          rank: 16
         '2007':
           volume: 7982584
-          percent: 0.98
-          rank: 13
+          percent: 0.7
+          rank: 16
         '2008':
           volume: 8024973
-          percent: 0.97
-          rank: 13
+          percent: 0.69
+          rank: 16
         '2009':
           volume: 7474029
-          percent: 0.97
-          rank: 13
+          percent: 0.7
+          rank: 16
         '2010':
           volume: 7752277
-          percent: 0.99
-          rank: 13
+          percent: 0.72
+          rank: 16
         '2011':
           volume: 8110942
-          percent: 1.02
-          rank: 13
+          percent: 0.74
+          rank: 16
         '2012':
-          volume: 432
-          percent: 1.04
-          rank: 14
+          volume: 7493276
+          percent: 0.74
+          rank: 16
         '2013':
           volume: 7602722
-          percent: 1.03
-          rank: 13
+          percent: 0.77
+          rank: 16
+        '2014':
+          volume: 8050607
+          percent: 0.81
+          rank: 16
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -1640,44 +1656,48 @@ CO:
       volume:
         '2004':
           volume: 39870097
-          percent: 5.09
-          rank: 4
+          percent: 3.59
+          rank: 7
         '2005':
           volume: 38509970
-          percent: 4.88
-          rank: 4
+          percent: 3.41
+          rank: 7
         '2006':
           volume: 36321783
-          percent: 4.41
-          rank: 4
+          percent: 3.13
+          rank: 7
         '2007':
           volume: 36383903
-          percent: 4.48
-          rank: 4
+          percent: 3.18
+          rank: 7
         '2008':
           volume: 32028460
-          percent: 3.87
-          rank: 6
+          percent: 2.74
+          rank: 9
         '2009':
           volume: 28267207
-          percent: 3.67
-          rank: 7
+          percent: 2.64
+          rank: 10
         '2010':
           volume: 25162526
-          percent: 3.21
-          rank: 8
+          percent: 2.32
+          rank: 11
         '2011':
           volume: 26889632
-          percent: 3.4
-          rank: 8
+          percent: 2.46
+          rank: 11
         '2012':
-          volume: 2505
-          percent: 6.01
-          rank: 8
+          volume: 28566094
+          percent: 2.81
+          rank: 9
         '2013':
           volume: 24236286
-          percent: 3.29
-          rank: 8
+          percent: 2.47
+          rank: 11
+        '2014':
+          volume: 24007495
+          percent: 2.4
+          rank: 10
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -3028,44 +3048,48 @@ IL:
       volume:
         '2004':
           volume: 31852986
-          percent: 4.07
-          rank: 6
+          percent: 2.87
+          rank: 9
         '2005':
           volume: 32013963
-          percent: 4.05
-          rank: 6
+          percent: 2.83
+          rank: 9
         '2006':
           volume: 32728800
-          percent: 3.98
-          rank: 6
+          percent: 2.82
+          rank: 9
         '2007':
           volume: 32445245
-          percent: 4
-          rank: 6
+          percent: 2.83
+          rank: 9
         '2008':
           volume: 32918044
-          percent: 3.98
-          rank: 5
+          percent: 2.81
+          rank: 8
         '2009':
           volume: 33748428
-          percent: 4.38
-          rank: 5
+          percent: 3.15
+          rank: 8
         '2010':
           volume: 33241392
-          percent: 4.24
-          rank: 5
+          percent: 3.07
+          rank: 8
         '2011':
           volume: 37770397
-          percent: 4.77
-          rank: 4
+          percent: 3.45
+          rank: 7
         '2012':
-          volume: 4512
-          percent: 10.83
-          rank: 4
+          volume: 48486048
+          percent: 4.78
+          rank: 5
         '2013':
           volume: 52147193
-          percent: 7.09
-          rank: 2
+          percent: 5.31
+          rank: 4
+        '2014':
+          volume: 57969300
+          percent: 5.81
+          rank: 5
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -3466,44 +3490,48 @@ IN:
       volume:
         '2004':
           volume: 35109641
-          percent: 4.48
-          rank: 5
+          percent: 3.16
+          rank: 8
         '2005':
           volume: 34457358
-          percent: 4.36
-          rank: 5
+          percent: 3.05
+          rank: 8
         '2006':
           volume: 35119060
-          percent: 4.27
-          rank: 5
+          percent: 3.02
+          rank: 8
         '2007':
           volume: 35003099
-          percent: 4.31
-          rank: 5
+          percent: 3.06
+          rank: 8
         '2008':
           volume: 35893112
-          percent: 4.34
-          rank: 4
+          percent: 3.07
+          rank: 7
         '2009':
           volume: 35655272
-          percent: 4.63
-          rank: 3
+          percent: 3.33
+          rank: 6
         '2010':
           volume: 34949969
-          percent: 4.46
-          rank: 4
+          percent: 3.23
+          rank: 7
         '2011':
           volume: 37425683
-          percent: 4.73
-          rank: 5
+          percent: 3.42
+          rank: 8
         '2012':
-          volume: 3935
-          percent: 9.44
-          rank: 5
+          volume: 36720174
+          percent: 3.62
+          rank: 7
         '2013':
           volume: 39101834
-          percent: 5.31
-          rank: 5
+          percent: 3.98
+          rank: 8
+        '2014':
+          volume: 39266977
+          percent: 3.93
+          rank: 8
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -3853,43 +3881,47 @@ KS:
         '2004':
           volume: 70650
           percent: 0.01
-          rank: 22
+          rank: 25
         '2005':
           volume: 170658
           percent: 0.02
-          rank: 22
+          rank: 25
         '2006':
           volume: 425997
-          percent: 0.05
-          rank: 21
+          percent: 0.04
+          rank: 24
         '2007':
           volume: 420436
-          percent: 0.05
-          rank: 20
+          percent: 0.04
+          rank: 23
         '2008':
           volume: 229246
-          percent: 0.03
-          rank: 21
+          percent: 0.02
+          rank: 24
         '2009':
           volume: 184812
           percent: 0.02
-          rank: 21
+          rank: 24
         '2010':
           volume: 132691
-          percent: 0.02
-          rank: 21
+          percent: 0.01
+          rank: 24
         '2011':
           volume: 37257
           percent: 0
-          rank: 22
+          rank: 25
         '2012':
-          volume: 6
-          percent: 0.01
-          rank: 22
+          volume: 15864
+          percent: 0
+          rank: 25
         '2013':
           volume: 22150
           percent: 0
-          rank: 22
+          rank: 25
+        '2014':
+          volume: 66366
+          percent: 0.01
+          rank: 25
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -4112,6 +4144,54 @@ KY:
           volume: 327000
           percent: 0.54
           rank: 32
+    Coal (short tons):
+      name: Coal
+      units: short tons
+      volume:
+        '2004':
+          volume: 114243649
+          percent: 10.28
+          rank: 3
+        '2005':
+          volume: 119733923
+          percent: 10.59
+          rank: 3
+        '2006':
+          volume: 120847953
+          percent: 10.4
+          rank: 3
+        '2007':
+          volume: 115280302
+          percent: 10.06
+          rank: 3
+        '2008':
+          volume: 120322708
+          percent: 10.28
+          rank: 3
+        '2009':
+          volume: 107338054
+          percent: 10.01
+          rank: 3
+        '2010':
+          volume: 104960118
+          percent: 9.7
+          rank: 3
+        '2011':
+          volume: 108766150
+          percent: 9.94
+          rank: 3
+        '2012':
+          volume: 90861804
+          percent: 8.95
+          rank: 3
+        '2013':
+          volume: 80379779
+          percent: 8.18
+          rank: 3
+        '2014':
+          volume: 77334723
+          percent: 7.75
+          rank: 3
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -4448,44 +4528,48 @@ LA:
       volume:
         '2004':
           volume: 3805488
-          percent: 0.49
-          rank: 16
+          percent: 0.34
+          rank: 19
         '2005':
           volume: 4160962
-          percent: 0.53
-          rank: 16
+          percent: 0.37
+          rank: 19
         '2006':
           volume: 4114016
-          percent: 0.5
-          rank: 15
+          percent: 0.35
+          rank: 18
         '2007':
           volume: 3126586
-          percent: 0.39
-          rank: 15
+          percent: 0.27
+          rank: 18
         '2008':
           volume: 3843243
-          percent: 0.46
-          rank: 14
+          percent: 0.33
+          rank: 17
         '2009':
           volume: 3657416
-          percent: 0.48
-          rank: 14
+          percent: 0.34
+          rank: 17
         '2010':
           volume: 3944542
-          percent: 0.5
-          rank: 15
+          percent: 0.36
+          rank: 18
         '2011':
           volume: 3864700
-          percent: 0.49
-          rank: 14
+          percent: 0.35
+          rank: 17
         '2012':
-          volume: 270
-          percent: 0.65
-          rank: 16
+          volume: 3971129
+          percent: 0.39
+          rank: 17
         '2013':
           volume: 2809771
-          percent: 0.38
-          rank: 15
+          percent: 0.29
+          rank: 18
+        '2014':
+          volume: 2604888
+          percent: 0.26
+          rank: 18
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -4808,44 +4892,48 @@ MD:
       volume:
         '2004':
           volume: 5224941
-          percent: 0.67
-          rank: 15
+          percent: 0.47
+          rank: 18
         '2005':
           volume: 5183453
-          percent: 0.66
-          rank: 15
+          percent: 0.46
+          rank: 18
         '2006':
           volume: 5054022
-          percent: 0.61
-          rank: 14
+          percent: 0.43
+          rank: 17
         '2007':
           volume: 2301185
-          percent: 0.28
-          rank: 17
+          percent: 0.2
+          rank: 20
         '2008':
           volume: 2859965
-          percent: 0.35
-          rank: 15
+          percent: 0.24
+          rank: 18
         '2009':
           volume: 2305459
-          percent: 0.3
-          rank: 16
+          percent: 0.22
+          rank: 19
         '2010':
           volume: 2585156
-          percent: 0.33
-          rank: 16
+          percent: 0.24
+          rank: 19
         '2011':
           volume: 2936758
-          percent: 0.37
-          rank: 15
+          percent: 0.27
+          rank: 18
         '2012':
-          volume: 476
-          percent: 1.14
-          rank: 13
+          volume: 2283341
+          percent: 0.22
+          rank: 19
         '2013':
           volume: 1925291
-          percent: 0.26
-          rank: 16
+          percent: 0.2
+          rank: 19
+        '2014':
+          volume: 1977928
+          percent: 0.2
+          rank: 19
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -5812,44 +5900,48 @@ MO:
       volume:
         '2004':
           volume: 578065
-          percent: 0.07
-          rank: 21
+          percent: 0.05
+          rank: 24
         '2005':
           volume: 597618
-          percent: 0.08
-          rank: 21
+          percent: 0.05
+          rank: 24
         '2006':
           volume: 394100
-          percent: 0.05
-          rank: 22
+          percent: 0.03
+          rank: 25
         '2007':
           volume: 236107
-          percent: 0.03
-          rank: 21
+          percent: 0.02
+          rank: 24
         '2008':
           volume: 247049
-          percent: 0.03
-          rank: 20
+          percent: 0.02
+          rank: 23
         '2009':
           volume: 452456
-          percent: 0.06
-          rank: 20
+          percent: 0.04
+          rank: 23
         '2010':
           volume: 458477
-          percent: 0.06
-          rank: 20
+          percent: 0.04
+          rank: 23
         '2011':
           volume: 464738
-          percent: 0.06
-          rank: 20
+          percent: 0.04
+          rank: 23
         '2012':
-          volume: 32
-          percent: 0.08
-          rank: 21
+          volume: 421587
+          percent: 0.04
+          rank: 23
         '2013':
           volume: 413703
-          percent: 0.06
-          rank: 20
+          percent: 0.04
+          rank: 23
+        '2014':
+          volume: 362813
+          percent: 0.04
+          rank: 23
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -6170,44 +6262,48 @@ MS:
       volume:
         '2004':
           volume: 3586363
-          percent: 0.46
-          rank: 17
+          percent: 0.32
+          rank: 20
         '2005':
           volume: 3555351
-          percent: 0.45
-          rank: 17
+          percent: 0.31
+          rank: 20
         '2006':
           volume: 3797455
-          percent: 0.46
-          rank: 16
+          percent: 0.33
+          rank: 19
         '2007':
           volume: 3545266
-          percent: 0.44
-          rank: 14
+          percent: 0.31
+          rank: 17
         '2008':
           volume: 2841512
-          percent: 0.34
-          rank: 16
+          percent: 0.24
+          rank: 19
         '2009':
           volume: 3439987
-          percent: 0.45
-          rank: 15
+          percent: 0.32
+          rank: 18
         '2010':
           volume: 4003505
-          percent: 0.51
-          rank: 14
+          percent: 0.37
+          rank: 17
         '2011':
           volume: 2746744
-          percent: 0.35
-          rank: 16
+          percent: 0.25
+          rank: 19
         '2012':
-          volume: 211
-          percent: 0.51
-          rank: 17
+          volume: 2952818
+          percent: 0.29
+          rank: 18
         '2013':
           volume: 3575069
-          percent: 0.49
-          rank: 14
+          percent: 0.36
+          rank: 17
+        '2014':
+          volume: 3737100
+          percent: 0.37
+          rank: 17
     Natural Gas (mcf):
       name: Natural Gas
       units: mcf
@@ -6492,44 +6588,48 @@ MT:
       volume:
         '2004':
           volume: 39988503
-          percent: 5.11
-          rank: 3
+          percent: 3.6
+          rank: 6
         '2005':
           volume: 40353984
-          percent: 5.11
-          rank: 3
+          percent: 3.57
+          rank: 6
         '2006':
           volume: 41822805
-          percent: 5.08
-          rank: 3
+          percent: 3.6
+          rank: 6
         '2007':
           volume: 43389833
-          percent: 5.35
-          rank: 2
+          percent: 3.79
+          rank: 5
         '2008':
           volume: 44785700
-          percent: 5.42
-          rank: 2
+          percent: 3.83
+          rank: 5
         '2009':
           volume: 39485837
-          percent: 5.13
-          rank: 2
+          percent: 3.68
+          rank: 5
         '2010':
           volume: 44732165
-          percent: 5.71
-          rank: 2
+          percent: 4.13
+          rank: 5
         '2011':
           volume: 42008238
-          percent: 5.31
-          rank: 3
+          percent: 3.84
+          rank: 6
         '2012':
-          volume: 1233
-          percent: 2.96
-          rank: 11
+          volume: 36693982
+          percent: 3.61
+          rank: 8
         '2013':
           volume: 42231483
-          percent: 5.74
-          rank: 4
+          percent: 4.3
+          rank: 7
+        '2014':
+          volume: 44562048
+          percent: 4.46
+          rank: 6
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -6868,44 +6968,48 @@ ND:
       volume:
         '2004':
           volume: 29942871
-          percent: 3.82
-          rank: 8
+          percent: 2.69
+          rank: 11
         '2005':
           volume: 29956259
-          percent: 3.79
-          rank: 7
+          percent: 2.65
+          rank: 10
         '2006':
           volume: 30411056
-          percent: 3.7
-          rank: 7
+          percent: 2.62
+          rank: 10
         '2007':
           volume: 29606266
-          percent: 3.65
-          rank: 7
+          percent: 2.58
+          rank: 10
         '2008':
           volume: 29627097
-          percent: 3.58
-          rank: 7
+          percent: 2.53
+          rank: 10
         '2009':
           volume: 29945292
-          percent: 3.89
-          rank: 6
+          percent: 2.79
+          rank: 9
         '2010':
           volume: 28948944
-          percent: 3.69
-          rank: 6
+          percent: 2.67
+          rank: 9
         '2011':
           volume: 28231419
-          percent: 3.57
-          rank: 6
+          percent: 2.58
+          rank: 9
         '2012':
-          volume: 1228
-          percent: 2.95
-          rank: 12
+          volume: 27528666
+          percent: 2.71
+          rank: 10
         '2013':
           volume: 27639060
-          percent: 3.76
-          rank: 6
+          percent: 2.81
+          rank: 9
+        '2014':
+          volume: 29157193
+          percent: 2.92
+          rank: 9
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -7776,44 +7880,48 @@ NM:
       volume:
         '2004':
           volume: 27249951
-          percent: 3.48
-          rank: 9
+          percent: 2.45
+          rank: 12
         '2005':
           volume: 28518728
-          percent: 3.61
-          rank: 8
+          percent: 2.52
+          rank: 11
         '2006':
           volume: 25912523
-          percent: 3.15
-          rank: 10
+          percent: 2.23
+          rank: 13
         '2007':
           volume: 24450829
-          percent: 3.01
-          rank: 9
+          percent: 2.13
+          rank: 12
         '2008':
           volume: 25644851
-          percent: 3.1
-          rank: 9
+          percent: 2.19
+          rank: 12
         '2009':
           volume: 25124096
-          percent: 3.26
-          rank: 9
+          percent: 2.34
+          rank: 12
         '2010':
           volume: 20990588
-          percent: 2.68
-          rank: 10
+          percent: 1.94
+          rank: 13
         '2011':
           volume: 21922457
-          percent: 2.77
-          rank: 10
+          percent: 2
+          rank: 13
         '2012':
-          volume: 1291
-          percent: 3.1
-          rank: 10
+          volume: 22452275
+          percent: 2.21
+          rank: 12
         '2013':
           volume: 21968641
-          percent: 2.99
-          rank: 9
+          percent: 2.24
+          rank: 12
+        '2014':
+          volume: 21963311
+          percent: 2.2
+          rank: 12
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -8746,44 +8854,48 @@ OH:
       volume:
         '2004':
           volume: 23221850
-          percent: 2.97
-          rank: 10
+          percent: 2.09
+          rank: 13
         '2005':
           volume: 24718239
-          percent: 3.13
-          rank: 10
+          percent: 2.19
+          rank: 13
         '2006':
           volume: 22722049
-          percent: 2.76
-          rank: 11
+          percent: 1.96
+          rank: 14
         '2007':
           volume: 22575386
-          percent: 2.78
-          rank: 11
+          percent: 1.97
+          rank: 14
         '2008':
           volume: 26250924
-          percent: 3.17
-          rank: 8
+          percent: 2.24
+          rank: 11
         '2009':
           volume: 27500563
-          percent: 3.57
-          rank: 8
+          percent: 2.56
+          rank: 11
         '2010':
           volume: 26706556
-          percent: 3.41
-          rank: 7
+          percent: 2.47
+          rank: 10
         '2011':
           volume: 28165714
-          percent: 3.56
-          rank: 7
+          percent: 2.57
+          rank: 10
         '2012':
-          volume: 3191
-          percent: 7.66
-          rank: 6
+          volume: 26327636
+          percent: 2.59
+          rank: 11
         '2013':
           volume: 25112837
-          percent: 3.41
-          rank: 7
+          percent: 2.56
+          rank: 10
+        '2014':
+          volume: 22252365
+          percent: 2.23
+          rank: 11
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -9028,44 +9140,48 @@ OK:
       volume:
         '2004':
           volume: 1792233
-          percent: 0.23
-          rank: 19
+          percent: 0.16
+          rank: 22
         '2005':
           volume: 1856497
-          percent: 0.24
-          rank: 19
+          percent: 0.16
+          rank: 22
         '2006':
           volume: 1998364
-          percent: 0.24
-          rank: 19
+          percent: 0.17
+          rank: 22
         '2007':
           volume: 1647935
-          percent: 0.2
-          rank: 18
+          percent: 0.14
+          rank: 21
         '2008':
           volume: 1463496
-          percent: 0.18
-          rank: 19
+          percent: 0.13
+          rank: 22
         '2009':
           volume: 956205
-          percent: 0.12
-          rank: 19
+          percent: 0.09
+          rank: 22
         '2010':
           volume: 1010411
-          percent: 0.13
-          rank: 19
+          percent: 0.09
+          rank: 22
         '2011':
           volume: 1144665
-          percent: 0.14
-          rank: 19
+          percent: 0.1
+          rank: 22
         '2012':
-          volume: 199
-          percent: 0.48
-          rank: 18
+          volume: 1053973
+          percent: 0.1
+          rank: 22
         '2013':
           volume: 1135797
-          percent: 0.15
-          rank: 18
+          percent: 0.12
+          rank: 21
+        '2014':
+          volume: 904311
+          percent: 0.09
+          rank: 21
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -9594,6 +9710,54 @@ PA:
           volume: 2339000
           percent: 3.84
           rank: 10
+    Coal (short tons):
+      name: Coal
+      units: short tons
+      volume:
+        '2004':
+          volume: 65995922
+          percent: 5.94
+          rank: 4
+        '2005':
+          volume: 67493812
+          percent: 5.97
+          rank: 4
+        '2006':
+          volume: 66028815
+          percent: 5.68
+          rank: 4
+        '2007':
+          volume: 65048039
+          percent: 5.68
+          rank: 4
+        '2008':
+          volume: 65413644
+          percent: 5.59
+          rank: 4
+        '2009':
+          volume: 57979452
+          percent: 5.41
+          rank: 4
+        '2010':
+          volume: 58593111
+          percent: 5.41
+          rank: 4
+        '2011':
+          volume: 59181827
+          percent: 5.41
+          rank: 4
+        '2012':
+          volume: 54718802
+          percent: 5.39
+          rank: 4
+        '2013':
+          volume: 50869584
+          percent: 5.18
+          rank: 5
+        '2014':
+          volume: 60909704
+          percent: 6.1
+          rank: 4
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -10388,44 +10552,48 @@ TN:
       volume:
         '2004':
           volume: 2886638
-          percent: 0.37
-          rank: 18
+          percent: 0.26
+          rank: 21
         '2005':
           volume: 3216844
-          percent: 0.41
-          rank: 18
+          percent: 0.28
+          rank: 21
         '2006':
           volume: 2803944
-          percent: 0.34
-          rank: 17
+          percent: 0.24
+          rank: 20
         '2007':
           volume: 2654451
-          percent: 0.33
-          rank: 16
+          percent: 0.23
+          rank: 19
         '2008':
           volume: 2332776
-          percent: 0.28
-          rank: 17
+          percent: 0.2
+          rank: 20
         '2009':
           volume: 1996099
-          percent: 0.26
-          rank: 17
+          percent: 0.19
+          rank: 20
         '2010':
           volume: 1780178
-          percent: 0.23
-          rank: 18
+          percent: 0.16
+          rank: 21
         '2011':
           volume: 1547035
-          percent: 0.2
-          rank: 18
+          percent: 0.14
+          rank: 21
         '2012':
-          volume: 363
-          percent: 0.87
-          rank: 15
+          volume: 1090247
+          percent: 0.11
+          rank: 21
         '2013':
           volume: 1098437
-          percent: 0.15
-          rank: 19
+          percent: 0.11
+          rank: 22
+        '2014':
+          volume: 839249
+          percent: 0.08
+          rank: 22
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -10818,44 +10986,48 @@ TX:
       volume:
         '2004':
           volume: 45862826
-          percent: 5.86
-          rank: 2
+          percent: 4.13
+          rank: 5
         '2005':
           volume: 45938679
-          percent: 5.82
-          rank: 2
+          percent: 4.06
+          rank: 5
         '2006':
           volume: 45547617
-          percent: 5.54
-          rank: 2
+          percent: 3.92
+          rank: 5
         '2007':
           volume: 41948406
-          percent: 5.17
-          rank: 3
+          percent: 3.66
+          rank: 6
         '2008':
           volume: 39016927
-          percent: 4.72
-          rank: 3
+          percent: 3.33
+          rank: 6
         '2009':
           volume: 35093268
-          percent: 4.56
-          rank: 4
+          percent: 3.27
+          rank: 7
         '2010':
           volume: 40982001
-          percent: 5.23
-          rank: 3
+          percent: 3.79
+          rank: 6
         '2011':
           volume: 45903597
-          percent: 5.8
-          rank: 2
+          percent: 4.2
+          rank: 5
         '2012':
-          volume: 2918
-          percent: 7
-          rank: 7
+          volume: 44178225
+          percent: 4.35
+          rank: 6
         '2013':
           volume: 42850619
-          percent: 5.82
-          rank: 3
+          percent: 4.36
+          rank: 6
+        '2014':
+          volume: 43654013
+          percent: 4.37
+          rank: 7
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -11104,44 +11276,48 @@ UT:
       volume:
         '2004':
           volume: 21746089
-          percent: 2.78
-          rank: 12
+          percent: 1.96
+          rank: 15
         '2005':
           volume: 24521343
-          percent: 3.1
-          rank: 11
+          percent: 2.17
+          rank: 14
         '2006':
           volume: 26017697
-          percent: 3.16
-          rank: 9
+          percent: 2.24
+          rank: 12
         '2007':
           volume: 24306581
-          percent: 2.99
-          rank: 10
+          percent: 2.12
+          rank: 13
         '2008':
           volume: 24365168
-          percent: 2.95
-          rank: 11
+          percent: 2.08
+          rank: 14
         '2009':
           volume: 21717588
-          percent: 2.82
-          rank: 10
+          percent: 2.03
+          rank: 13
         '2010':
           volume: 19350951
-          percent: 2.47
-          rank: 12
+          percent: 1.79
+          rank: 15
         '2011':
           volume: 19648020
-          percent: 2.48
-          rank: 11
+          percent: 1.8
+          rank: 14
         '2012':
-          volume: 1611
-          percent: 3.87
-          rank: 9
+          volume: 17015919
+          percent: 1.68
+          rank: 15
         '2013':
           volume: 16976724
-          percent: 2.31
-          rank: 11
+          percent: 1.73
+          rank: 14
+        '2014':
+          volume: 17934416
+          percent: 1.8
+          rank: 13
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -11410,44 +11586,48 @@ VA:
       volume:
         '2004':
           volume: 31420320
-          percent: 4.01
-          rank: 7
+          percent: 2.83
+          rank: 10
         '2005':
           volume: 27743396
-          percent: 3.51
-          rank: 9
+          percent: 2.45
+          rank: 12
         '2006':
           volume: 29739969
-          percent: 3.61
-          rank: 8
+          percent: 2.56
+          rank: 11
         '2007':
           volume: 25346083
-          percent: 3.12
-          rank: 8
+          percent: 2.21
+          rank: 11
         '2008':
           volume: 24712406
-          percent: 2.99
-          rank: 10
+          percent: 2.11
+          rank: 13
         '2009':
           volume: 21019178
-          percent: 2.73
-          rank: 11
+          percent: 1.96
+          rank: 14
         '2010':
           volume: 22385402
-          percent: 2.86
-          rank: 9
+          percent: 2.07
+          rank: 12
         '2011':
           volume: 22522668
-          percent: 2.85
-          rank: 9
+          percent: 2.06
+          rank: 12
         '2012':
-          volume: 4998
-          percent: 11.99
-          rank: 3
+          volume: 18965105
+          percent: 1.87
+          rank: 14
         '2013':
           volume: 16619072
-          percent: 2.26
-          rank: 12
+          percent: 1.69
+          rank: 15
+        '2014':
+          volume: 15059178
+          percent: 1.51
+          rank: 15
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -11934,16 +12114,16 @@ WA:
       volume:
         '2004':
           volume: 5653221
-          percent: 0.72
-          rank: 14
+          percent: 0.51
+          rank: 17
         '2005':
           volume: 5265672
-          percent: 0.67
-          rank: 14
+          percent: 0.47
+          rank: 17
         '2006':
           volume: 2579549
-          percent: 0.31
-          rank: 18
+          percent: 0.22
+          rank: 21
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -12212,6 +12392,54 @@ WV:
           volume: 4000
           percent: 0.01
           rank: 46
+    Coal (short tons):
+      name: Coal
+      units: short tons
+      volume:
+        '2004':
+          volume: 147993201
+          percent: 13.32
+          rank: 2
+        '2005':
+          volume: 153649647
+          percent: 13.59
+          rank: 2
+        '2006':
+          volume: 152373615
+          percent: 13.11
+          rank: 2
+        '2007':
+          volume: 153479515
+          percent: 13.4
+          rank: 2
+        '2008':
+          volume: 157778087
+          percent: 13.48
+          rank: 2
+        '2009':
+          volume: 137127322
+          percent: 12.79
+          rank: 2
+        '2010':
+          volume: 135219749
+          percent: 12.49
+          rank: 2
+        '2011':
+          volume: 134661745
+          percent: 12.31
+          rank: 2
+        '2012':
+          volume: 120424758
+          percent: 11.86
+          rank: 2
+        '2013':
+          volume: 115925451
+          percent: 11.79
+          rank: 2
+        '2014':
+          volume: 112187373
+          percent: 11.24
+          rank: 2
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours
@@ -12396,43 +12624,47 @@ WY:
       volume:
         '2004':
           volume: 396493092
-          percent: 50.65
+          percent: 35.68
           rank: 1
         '2005':
           volume: 404318534
-          percent: 51.18
+          percent: 35.76
           rank: 1
         '2006':
           volume: 446742253
-          percent: 54.3
+          percent: 38.45
           rank: 1
         '2007':
           volume: 453568259
-          percent: 55.88
+          percent: 39.6
           rank: 1
         '2008':
           volume: 467644168
-          percent: 56.55
+          percent: 39.96
           rank: 1
         '2009':
           volume: 431106631
-          percent: 56
+          percent: 40.21
           rank: 1
         '2010':
           volume: 442522372
-          percent: 56.46
+          percent: 40.88
           rank: 1
         '2011':
           volume: 438673388
-          percent: 55.43
+          percent: 40.1
           rank: 1
         '2012':
-          volume: 7004
-          percent: 16.81
+          volume: 401441611
+          percent: 39.55
           rank: 1
         '2013':
           volume: 387923828
-          percent: 52.73
+          percent: 39.47
+          rank: 1
+        '2014':
+          volume: 395665099
+          percent: 39.63
           rank: 1
     Conventional Hydroelectric:
       name: Conventional Hydroelectric

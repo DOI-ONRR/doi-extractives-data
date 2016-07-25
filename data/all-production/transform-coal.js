@@ -6,7 +6,10 @@ const VOLUME_COLUMN = 'Production (short tons)';
 
 module.exports = {
   year:             'Year',
-  state:            'Mine State',
+  // strip qualifiers like "(Northern)", "(Anthracite)", et al from state names
+  state: function(d) {
+    return d['Mine State'].replace(/\s+\(.+\)\s*$/, '');
+  },
   county:           'Mine County',
   mine_type:        'Mine Type',
   mine_status:      'Mine Status',

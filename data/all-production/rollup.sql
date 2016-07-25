@@ -98,7 +98,7 @@ CREATE TABLE all_production_state_rank AS
 
 UPDATE all_production_state_rank
 SET rank = (
-    SELECT COUNT(distinct inner.percent) AS rank
+    SELECT COUNT(DISTINCT inner.percent) AS rank
     FROM all_production_state_rank AS inner
     WHERE
         inner.year = all_production_state_rank.year AND

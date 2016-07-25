@@ -29,25 +29,27 @@ US:
       units: short tons
       volume:
         '2004':
-          volume: 782876381
+          volume: 1111109153
         '2005':
-          volume: 789924343
+          volume: 1130801725
         '2006':
-          volume: 822746951
+          volume: 1161997334
         '2007':
-          volume: 811671980
+          volume: 1145479836
         '2008':
-          volume: 826886692
+          volume: 1170401131
         '2009':
-          volume: 769791014
+          volume: 1072235842
         '2010':
-          volume: 783738438
+          volume: 1082511416
         '2011':
-          volume: 791367375
+          volume: 1093977097
         '2012':
-          volume: 41672
+          volume: 1015134680
         '2013':
-          volume: 735700696
+          volume: 982875510
+        '2014':
+          volume: 998425149
     Conventional Hydroelectric:
       name: Conventional Hydroelectric
       units: megawatt hours

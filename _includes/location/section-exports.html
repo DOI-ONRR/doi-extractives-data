@@ -13,7 +13,7 @@
       {% include year-selector.html year_range=year_range %}
 
       <p class="chart-description">
-        {% include location/key-exports.html %}
+        {% include location/key-exports.html %} The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
       </p>
     </div>
 
@@ -51,9 +51,5 @@
     {% endfor %}
 
   </div><!-- /.chart-list -->
-
-  <a href="{{site.baseurl}}/downloads/#exports">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Exports data comes from the U.S. Census Bureau
-  </a>
 
 </section>

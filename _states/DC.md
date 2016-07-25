@@ -1,5 +1,5 @@
 ---
 id: DC
-title: District of Columbia
+title: Washington, DC
 FIPS: '11'
 ---

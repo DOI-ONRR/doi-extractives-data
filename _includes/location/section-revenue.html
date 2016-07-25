@@ -10,9 +10,9 @@
   <p class="full-width-text">Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
 
 
-  <h3>Revenue from federal land</h3>
-
   <section id="federal-revenue">
+
+    <h3>Federal revenue from extraction on federal land</h3>
 
     <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
@@ -47,7 +47,7 @@
 
     <section class="chart-list has-intro">
 
-      <h4>Revenue from resources extracted on federal land in {{ state_name }}</h4>
+      <h4>Federal revenue by county</h4>
 
       <div class="chart-selector-wrapper">
 
@@ -72,28 +72,21 @@
     </section>
     <!-- .chart-list -->
 
+    <h3>Federal tax revenue</h3>
+
+    <div class="full-width-text">
+      <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>
+      <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+    </div>
+
   </section>
   <!-- #federal-revenue -->
 
   <section id="state-local-revenue" class="state revenue">
-    <h3>Revenue from extraction on state land</h3>
+    <h3>State revenue from extraction on state land</h3>
 
     <div class="full-width-text">
-      <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state of {{ state_name }}.</p>
-
-      <!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
-      {% if is_priority_state %}
-        <p>However, the USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern extraction on state land.</p>
-        <p>Learn more about natural resource regulation, production, and revenue in {{ state_name }}:</p>
-
-        {{ regulations | markdownify }}
-
-      {% endif %}
+      <p>We don't have detailed data about federal, state, or local revenue from natural resource extraction on land owned by the state of {{ state_name }}, corporations, or individuals. However, all companies must pay state, local, and federal taxes.</p>
     </div>
-  </section>
-
-  <section id="private-revenue" class="private-lands revenue">
-    <h3>Revenue from extraction on private land</h3>
-    <p class="full-width-text">All companies, including those that extract natural resources on private land, must pay state, local, and federal taxes. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
   </section>
 </section>

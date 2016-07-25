@@ -7,7 +7,7 @@ opt_in: true
 priority: true
 ---
 
-State overview
+<!-- State overview
 
 - Where is production happening? (production context)
 - Personal income
@@ -18,7 +18,7 @@ State revenue and disbursements
 - State and local taxes
 - Tax expenditures
 - Revenue sustainability
-- State disbursements
+- State disbursements -->
 
 <!-- State governance -->
 

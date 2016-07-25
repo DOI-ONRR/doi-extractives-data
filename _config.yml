@@ -81,23 +81,16 @@ collections:
 defaults:
   - scope:
       path: ''
-      collection: company-data
+      type: federal-revenue-by-company
     values:
       layout: federal-revenue-by-company
 
   - scope:
       path: ''
-      collection: states
+      type: states
     values:
       layout: state-page
       offshore: false
-
-  - scope:
-      path: ''
-      collection: offshore_regions
-    values:
-      layout: state-page
-      offshore: true
 
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42

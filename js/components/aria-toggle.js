@@ -13,6 +13,18 @@
     target.setAttribute(HIDDEN, !expanded);
   };
 
+  var collapse = function(button) {
+    var target = document.getElementById(button.getAttribute(CONTROLS));
+    button.setAttribute(EXPANDED, false);
+    target.setAttribute(HIDDEN, true);
+  }
+
+  var expand = function(button) {
+    var target = document.getElementById(button.getAttribute(CONTROLS));
+    button.setAttribute(EXPANDED, true);
+    target.setAttribute(HIDDEN, false);
+  }
+
   var click = function(event) {
     toggle(event.target);
   };
@@ -31,6 +43,17 @@
 
         detachedCallback: {value: function() {
           this.removeEventListener('click', click);
+        }},
+
+        attributeChangedCallback: {value: function(attr, old, value) {
+          switch (attr) {
+            case 'aria-expanded':
+              if (value === 'false') {
+                collapse(this);
+              } else if (value === 'true') {
+                expand(this);
+              }
+          }
         }}
       }
     )

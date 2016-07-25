@@ -18,7 +18,6 @@
       });
       select.property('value', year);
       chartTables.each(function(){
-        console.log(this)
         this.setYear(year);
         this.update();
       })

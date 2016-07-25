@@ -225,8 +225,6 @@
               cell.appendChild(barExtent);
             }
             barExtent.appendChild(bar);
-          } else {
-            console.log(cell)
           }
         }
 

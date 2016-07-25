@@ -15,8 +15,21 @@ The U.S. also recently became a part of an international standard called the [Ex
 ## About this website
 This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
 
-## Data
+## Data and Database
 The [data catalog](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
+
+Data for the site is populated via data files in the `_data` directory. These are primarily `yml` files that are generated from commands in the [`Makefile`](Makefile).
+
+To create the database locally, make sure that you have `sqlite` and run `make db`.
+
+If you would like to query the local database instance:
+
+1. Open a new terminal shell and run `sqlite3`
+2. Run `.open data.db`
+3. You can now run sqlite queries from the local instance.
+4. Run `.tables` to see the available tables you can query.
+
+To update site data, run `make site-data`.
 
 ## Running the Site
 This site is made with [Jekyll]. To run it locally, clone this repository then:

@@ -148,5 +148,13 @@
       @include span-columns(4);
       @include omega();
     }
+
+    .legend-container,
+    .no-data-container {
+      &[aria-hidden='true'] {
+        display: none;
+      }
+    }
+
   }
 }

@@ -26,15 +26,46 @@
             .attr('data-value', function(d) {
               return d;
             });
+
+          // update legend caption
+          d3.select(this).selectAll('figcaption [data-year]')
+            .attr('data-year', year)
+            .text(year)
+
           this.update();
         }},
 
         update: {value: function() {
+
+          var noData = this.marks.data().every(function(d){
+            return d == 0;
+          });
+
+          var root = d3.select(this);
+
+          if (noData) {
+            root.select('.legend-no-data')
+              .attr('aria-hidden', false);
+            root.select('.legend-data')
+              .attr('aria-hidden', true);
+            root.select('.details-container')
+              .attr('aria-hidden', true)
+              .select('button')
+                .attr('aria-expanded', false); // unexpand county-chart
+          } else {
+            root.select('.legend-no-data')
+              .attr('aria-hidden', true);
+            root.select('.legend-data')
+              .attr('aria-hidden', false);
+            root.select('.details-container')
+              .attr('aria-hidden', false);
+          }
+
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
           var units = this.getAttribute('units') || '';
-
+          var legendDelimiter = '–';
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
@@ -52,6 +83,7 @@
           if (domain[0] > 0) {
             domain[0] = 0;
           } else if (domain[0] < 0) {
+            legendDelimiter = 'to';
             domain[1] = Math.max(0, domain[1]);
           }
 
@@ -87,20 +119,25 @@
           var svgLegend = d3.select(this)
             .select('.legend-svg');
 
+
           if (!svgLegend.empty()) {
-            svgLegend.append('g')
-              .attr('class', 'legendScale');
 
             var legend = d3.legend.color()
               .labelFormat(format.si)
               .useClass(false)
               .ascending(true)
-              .labelDelimiter('-')
+              .labelDelimiter(legendDelimiter)
               .shapePadding(6)
               .scale(scale);
 
-            svgLegend.select('.legendScale')
-              .call(legend);
+
+            var legendScale = svgLegend.select('.legendScale');
+            if (legendScale.empty()) {
+              legendScale = svgLegend.append('g')
+                .attr('class', 'legendScale');
+            }
+
+            legendScale.call(legend);
 
             // reverse because the scale is in ascending order
             var _steps = d3.range(0, 9).reverse();
@@ -120,10 +157,12 @@
                 cells[0][i].setAttribute('aria-hidden', true);
                 count++;
               } else  {
+
                 // trim spacing between swatches that are visible
                 var translateHeight = (i * cellHeight) - (count * cellHeight);
                 cells[0][i].setAttribute('transform',
                   'translate(0,' + translateHeight + ')');
+                cells[0][i].setAttribute('aria-hidden', false);
               }
             });
             // end consolidation

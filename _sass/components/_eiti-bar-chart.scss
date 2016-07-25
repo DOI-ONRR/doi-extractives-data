@@ -53,6 +53,10 @@ eiti-bar-chart {
       @include font-size(1);
       fill: $dark-gray;
       font-weight: $weight-light;
+
+      &.dataless {
+        fill: $mid-light-gray;
+      }
     }
   }
 
@@ -60,6 +64,10 @@ eiti-bar-chart {
   .tick-selected text {
     fill: $green-dark-chart;
     font-weight: $weight-bold;
+
+    &.dataless {
+      fill: $green-dark-chart;
+    }
   }
 }
 

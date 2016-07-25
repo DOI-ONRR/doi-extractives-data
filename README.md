@@ -25,7 +25,7 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 1. Install all node dependencies: `npm install`
 1. Set the $NODE_ENV to `dev`: `export NODE_ENV=dev`
 1. Package js files with webpack: `webpack --watch`
-1. Run the web server: `bundle exec jekyll serve` (or just `jekyll serve` if you have Jekyll installed globally)
+1. Run the web server: `npm run start` (or `jekyll serve` if you have Jekyll installed globally)
 1. Visit the local site at [http://localhost:4000](http://localhost:4000)
 
 ## Deployment

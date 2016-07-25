@@ -1,0 +1,55 @@
+{% assign export_commodities = site.data.state_exports[state_id].commodities %}
+
+{% assign year_range = '[2011, 2014]' %}
+
+<section id="exports" is="year-switcher-section" class="economic exports">
+
+  <h3>Exports</h3>
+
+  <div class="chart-list">
+
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        {% include location/key-exports.html %} The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+      </p>
+    </div>
+
+    {% assign _format = '$,' %}
+    {% assign _metric = 'dollars' %}
+
+    {% for commodity in export_commodities %}
+      {% assign exports = commodity[1] %}
+      {% assign commodity_slug = commodity[0] | slugify %}
+
+      {% if commodity[0] != "Total" and commodity[0] != "All" %}
+        <section class="chart-item">
+
+          <h3 class="chart-title">{{ commodity[0] }}</h3>
+
+          <figure class="chart chart-{{ _metric }}">
+            <figcaption id="exports-figures-{{ commodity_slug }}">
+              <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
+                ${{ exports[year].dollars | intcomma }}
+              </span>
+              of {{ commodity[0] }} was exported from {{ state_name }}
+              in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+            </figcaption>
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{{ exports | map_hash: _metric | jsonify }}'
+              x-range="{{ year_range }}"
+              x-value="{{ year }}">
+            </eiti-bar-chart>
+
+          </figure>
+
+        </section><!-- /.chart-item -->
+      {% endif %}
+    {% endfor %}
+
+  </div><!-- /.chart-list -->
+
+</section>

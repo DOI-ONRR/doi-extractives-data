@@ -1,0 +1,70 @@
+{% assign all_products = site.data.national_all_production[state_id].products %}
+{% assign units_map = site.data.production_units %}
+{% assign year_range = '[2004, 2013]' %}
+{% assign year_list = year_range | to_list %}
+
+<section id="all-production" is="year-switcher-section" class="all-lands production">
+
+  <h2>Natural resource production in {{ state_name }}</h2>
+
+  <div class="chart-selector-wrapper">
+
+    {% include year-selector.html year_range=year_range %}
+
+    <p class="chart-description">The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
+  </div>
+
+  <div class="chart-list">
+
+  {% for product in all_products %}
+    {% assign product_slug = product[0] | slugify %}
+    {% assign product_name = product[1].name | default: product[0] %}
+    {% assign production_values = product[1].volume %}
+    {% assign volume = production_values[year].volume %}
+    {% assign units = product[1].units | downcase | default: 'units' %}
+    {% assign short_units = units_map[units].short | default 'units' %}
+    {% assign long_units = units_map[units].long | default 'units' %}
+    {% assign units_suffix = units_map[units].suffix | default '' %}
+
+    <section id="all-production-{{ product_slug }}" class="chart-item">
+
+      <h3 class="chart-title">{{ product_name }}</h3>
+
+      <figure class="chart">
+        <figcaption id="all-production-figures-{{ product_slug }}">
+          <span class="eiti-bar-chart-y-value" data-format=","">{{ volume | default: 0 | intcomma }}</span>
+          {{ long_units | term }} of
+          {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+        </figcaption>
+        <eiti-bar-chart
+          aria-controls="all-production-figures-{{ product_slug }}"
+          data='{{ production_values | map_hash: "volume" | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+      </figure>
+      <!-- <h4>
+        <button is="aria-toggle"
+          aria-controls="all-production-detail-{{ product_slug }}">&plus; Historical details</button>
+      </h4>
+      <div id="all-production-detail-{{ product_slug }}" aria-hidden="true">
+        {%
+          include location/display-production.html
+          units=units
+          year=year
+          values=production_values
+          percent=false
+          rank=false
+        %}
+      </div> -->
+    </section>
+  {% endfor %}
+
+  </div>
+
+  <a href="{{site.baseurl}}/downloads/#production-all">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Data about energy production on all lands and waters comes from the Energy Information Administration
+  </a>
+
+</section>

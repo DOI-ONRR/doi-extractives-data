@@ -1,10 +1,25 @@
+{% if layout.nav_items %}
+	{% assign selector_nav_items = layout.nav_items %}
+{% else %}
+	{% assign selector_nav_items = page.nav_items %}
+{% endif %}
+
+
 <ul>
-  {% if page.nav_items %}
-    {% for item in page.nav_items %}
-      {% if item.name == page.nav_items[0].name %}
+  {% if selector_nav_items %}
+    {% for item in selector_nav_items %}
+      {% if item.name == selector_nav_items[0].name %}
         <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
       {% else %}
         <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
+      {% endif %}
+
+      {% if item.subnav_items %}
+        <ul>
+          {% for subnav_item in item.subnav_items %}
+            <a href="#{{subnav_item.name}}" class="sticky_nav-nav_item sticky_nav-nav_item-sub" data-nav-item="{{subnav_item.name}}">{{subnav_item.title}}</a>
+          {% endfor %}
+        </ul>
       {% endif %}
     {% endfor %}
   {% endif %}

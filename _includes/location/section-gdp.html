@@ -1,0 +1,59 @@
+{% assign gdp = site.data.state_gdp[state_id] %}
+
+{% assign year_range = '[2004, 2013]' %}
+
+<section id="gdp" is="year-switcher-section" class="economic gdp">
+
+  <h3>Gross Domestic Product (GDP)</h3>
+
+  <div class="chart-selector-wrapper">
+
+    {% include year-selector.html year_range=year_range %}
+
+    <p class="chart-description">
+      GDP data comes from the U.S. Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#gdp">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+    </p>
+  </div><!-- .chart-selector-wrapper -->
+
+  <div class="chart-list">
+
+    {% assign _metrics = 'dollars' | split: ' ' %}
+    {% for _metric in _metrics %}
+      {% assign _format = ',' %}
+      {% if _metric == 'dollars' %}
+        {% assign _format = '$,' %}
+      {% elsif _metric == 'percent' %}
+        {% assign _format = '%' %}
+      {% endif %}
+
+    <section class="chart-item">
+      <h3 class="chart-title">GDP ({{ _metric }})</h3>
+
+      <figure class="chart chart-{{ _metric }}">
+        <figcaption id="gdp-figures-{{ _metric }}">
+          Extractive industries accounted for
+          <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
+            {% if _metric == 'dollars' %}
+              ${{ gdp[year].dollars | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ gdp[year].percent | percent }}%
+            {% endif %}
+          </span>
+          of {{ state_name }}'s GDP in
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+        </figcaption>
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
+          data='{{ gdp | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
+      </figure>
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
+
+  </div><!-- /.chart-list.has-intro -->
+
+</section>

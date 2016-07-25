@@ -1,0 +1,122 @@
+{% assign jobs = site.data.national_jobs[state_id] %}
+
+{% assign self_employment_jobs = site.data.national_self_employment[state_id] %}
+
+{% assign jobs_count = jobs[year].count | default: 0 %}
+{% assign jobs_percent = jobs[year].percent | default: 0 %}
+
+{% assign year_range = '[2004, 2013]' %}
+
+
+<section id="employment" class="economic employment">
+
+  <h3>Wage and salary jobs</h3>
+
+  <section is="year-switcher-section" class="chart-list">
+
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <div class="chart-description">
+        <p>Two kinds of data help represent the economic role of extractive industries in {{ state_name }}.</p>
+        <p><strong>Wage and salary data</strong> describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
+      </div>
+    </div><!-- .chart-selector-wrapper -->
+
+
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item"
+      <h3 class="chart-title">Wage and salary jobs</h3>
+
+      <figure class="chart">
+        <figcaption id="jobs-figures-{{ _metric }}">
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          there were
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ jobs[year].jobs | intcomma }}
+          </span>
+          jobs in extractive industries that paid a wage or salary in
+          {{ state_name }}.
+        </figcaption>
+        <eiti-bar-chart
+          aria-controls="jobs-figures-{{ _metric }}"
+          data='{{ jobs | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+      </figure><!-- /.chart -->
+
+        {% if forloop.last %}
+        <!-- <h4>
+          <button is="aria-toggle"
+            aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
+        </h4>
+        <div id="employment-detail-{{ _metric }}" aria-hidden="true">
+          {%
+            include location/display-jobs.html
+            values=jobs
+            percent=true
+          %}
+        </div> -->
+        {% endif %}
+    </section><!-- /.chart-item -->
+      {% endfor %}
+  </section><!-- /.chart-list -->
+
+  <p>
+    <a href="{{site.baseurl}}/downloads/#jobs">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+    </a>
+  </p>
+
+
+  <h3>Self-employment jobs</h3>
+
+  <section class="chart-list" is="year-switcher-section">
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        <strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
+      </p>
+    </div><!-- .chart-selector-wrapper -->
+
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
+
+      <h3 class="chart-title">Self-employment jobs</h3>
+
+      <figure class="chart">
+        <figcaption id="self-employment-figures-{{ _metric }}">
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          there were
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ self_employment_jobs[year].jobs | intcomma }}
+          </span>
+          self-employed extractive industries professionals in
+          {{ state_name }}.
+        </figcaption>
+        <eiti-bar-chart
+          aria-controls="self-employment-figures-{{ _metric }}"
+          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}">
+        </eiti-bar-chart>
+
+      </figure>
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
+  </section><!-- /.chart-list -->
+
+  <p>
+    <a href="{{site.baseurl}}/downloads/#jobs">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Employment data comes from the Bureau of Labor Statistics and the Bureau of Economic Analysis
+    </a>
+  </p>
+
+</section>

@@ -2,7 +2,7 @@
   'use strict';
 
   var d3 = require('d3');
-  var queue = require('queue-async');
+  var queue = require('d3-queue');
 
   /*
    * @namespace eiti

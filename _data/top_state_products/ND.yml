@@ -1,0 +1,63 @@
+revenue:
+  '2009':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 94899390.71
+      rank: 1
+      percent: 36.71
+    - product: Sulfur
+      name: null
+      units: null
+      value: 0.01
+      rank: 3
+      percent: 0
+  '2011':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 103702962.35
+      rank: 2
+      percent: 26.8
+  '2013':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 63976335.46
+      rank: 2
+      percent: 24.65
+  '2014':
+    - product: Oil
+      name: null
+      units: null
+      value: 205994943.62
+      rank: 3
+      percent: 12.3
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 27746136.27
+      rank: 3
+      percent: 9.33
+  '2015':
+    - product: Oil
+      name: null
+      units: null
+      value: 135319895.24
+      rank: 3
+      percent: 12.7
+all_production:
+  '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 243236000
+      rank: 2
+      percent: 9.51
+  '2013':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 313823000
+      rank: 2
+      percent: 10.81

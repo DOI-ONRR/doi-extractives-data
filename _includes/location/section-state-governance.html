@@ -1,0 +1,25 @@
+<!-- pulls in state fiscal and legal information if the state is one of the MSG-prioritized states -->
+
+<section id="state-governance">
+	
+	<h2>State governance</h2>
+
+	{% if is_opt_in_state %}
+
+	    <p>The state of {{ state_name }} chose to participate in additional sub-national reporting as part of the USEITI process. The {{ "Independent Administrator" | term:"Independent Administrator (IA)" }} gathered additional information about natural resource governance, revenues, and disbursements in {{ state_name }}.</p>
+
+		{{ regulations | markdownify }}
+
+	{% elsif is_priority_state %}
+  
+  		<div class="full-width-text">
+
+			<p>The USEITI Multi-Stakeholder Group identified {{ state_name }} as a priority state and gathered additional information about state agencies and regulations that govern natural resource extraction in {{ state_name }}:</p>
+
+			{{ regulations | markdownify }}
+
+		</div>
+
+	{% endif %}
+
+</section>

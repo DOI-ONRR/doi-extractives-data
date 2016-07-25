@@ -1,0 +1,86 @@
+revenue:
+  '2006':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 32358.77
+      rank: 3
+      percent: 0.31
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 76645
+      rank: 2
+      percent: 0.43
+  '2008':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 107647.9
+      rank: 2
+      percent: 0.75
+  '2009':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 110497.77
+      rank: 2
+      percent: 1.16
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 117042.69
+      rank: 2
+      percent: 0.87
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 113854.96
+      rank: 2
+      percent: 0.76
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 129846.76
+      rank: 2
+      percent: 1.11
+  '2013':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 57862.52
+      rank: 3
+      percent: 0.61
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 22222.89
+      rank: 3
+      percent: 0.2
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 7049.9
+      rank: 3
+      percent: 0.08
+all_production:
+  '2012':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 4998
+      rank: 3
+      percent: 11.99
+  '2014':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 131885
+      rank: 2
+      percent: 20.81

@@ -1,0 +1,816 @@
+US:
+  products:
+    Brine Barrels (barrels):
+      name: Brine Barrels
+      units: barrels
+      volume:
+        '2006':
+          volume: 66862
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2014':
+          volume: 33520
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2005':
+          volume: 415417017
+        '2006':
+          volume: 422759556
+        '2007':
+          volume: 435839437
+        '2008':
+          volume: 468615143
+        '2009':
+          volume: 429263346
+        '2010':
+          volume: 438489367
+        '2011':
+          volume: 436025533
+        '2012':
+          volume: 403187584
+        '2013':
+          volume: 376686236
+        '2014':
+          volume: 375266659
+    Condensate (bbl):
+      name: Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 49873566
+        '2005':
+          volume: 45647702
+        '2006':
+          volume: 40624959
+        '2007':
+          volume: 38242884
+        '2008':
+          volume: 24196977
+        '2009':
+          volume: 36528730
+        '2010':
+          volume: 54195681
+        '2011':
+          volume: 55564317
+        '2012':
+          volume: 53579431
+        '2013':
+          volume: 43376508
+    Copper Concentrate (tons):
+      name: Copper Concentrate
+      units: tons
+      volume:
+        '2005':
+          volume: 13141
+        '2006':
+          volume: 19002
+        '2007':
+          volume: 10960
+        '2008':
+          volume: 11909
+        '2009':
+          volume: 8726
+        '2010':
+          volume: 8974
+        '2011':
+          volume: 8386
+        '2012':
+          volume: 21424
+        '2013':
+          volume: 15448
+        '2014':
+          volume: 20282
+    Drip or Scrubber Condensate (bbl):
+      name: Drip or Scrubber Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 1318048
+        '2005':
+          volume: 1254765
+        '2006':
+          volume: 1002154
+        '2007':
+          volume: 1341624
+        '2008':
+          volume: 678091
+        '2009':
+          volume: 1576234
+        '2010':
+          volume: 1241033
+        '2011':
+          volume: 876401
+        '2012':
+          volume: 707690
+        '2013':
+          volume: 549079
+    Flash Gas (mcf):
+      name: Flash Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 3661223
+        '2005':
+          volume: 2282838
+        '2006':
+          volume: 2176629
+        '2007':
+          volume: 2558551
+        '2008':
+          volume: 1730238
+        '2009':
+          volume: 2216943
+        '2010':
+          volume: 4102677
+        '2011':
+          volume: 2720891
+        '2012':
+          volume: 1940972
+        '2013':
+          volume: 1363853
+    Fuel Gas (mcf):
+      name: Fuel Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 12873984
+        '2005':
+          volume: 11277353
+        '2006':
+          volume: 9855343
+        '2007':
+          volume: 12576862
+        '2008':
+          volume: 11641986
+        '2009':
+          volume: 13520337
+        '2010':
+          volume: 14257028
+        '2011':
+          volume: 13482874
+        '2012':
+          volume: 12950409
+        '2013':
+          volume: 13564126
+    Fuel Oil (bbl):
+      name: Fuel Oil
+      units: bbl
+      volume:
+        '2010':
+          volume: 5
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2005':
+          volume: 6512469360
+        '2006':
+          volume: 6472023822
+        '2007':
+          volume: 6525771643
+        '2008':
+          volume: 6328776139
+        '2009':
+          volume: 6531108933
+        '2010':
+          volume: 6266529414
+        '2011':
+          volume: 5766751056
+        '2012':
+          volume: 5397876357
+        '2013':
+          volume: 4967395174
+        '2014':
+          volume: 4845632207
+    Gas Lost - Flared or Vented (mcf):
+      name: Gas Lost - Flared or Vented
+      units: mcf
+      volume:
+        '2004':
+          volume: 238150
+        '2005':
+          volume: 272721
+        '2006':
+          volume: 55555
+        '2007':
+          volume: 78957
+        '2008':
+          volume: 54368
+        '2009':
+          volume: 69138
+        '2010':
+          volume: 136359
+        '2011':
+          volume: 680256
+        '2012':
+          volume: 501224
+        '2013':
+          volume: 643531
+    Gas Plant Products (gal):
+      name: Gas Plant Products
+      units: gal
+      volume:
+        '2004':
+          volume: 2626813397
+        '2005':
+          volume: 2115107981
+        '2006':
+          volume: 2253482516
+        '2007':
+          volume: 2607907444
+        '2008':
+          volume: 1938567949
+        '2009':
+          volume: 2345589729
+        '2010':
+          volume: 2550465839
+        '2011':
+          volume: 2191416546
+        '2012':
+          volume: 1984868139
+        '2013':
+          volume: 1942896063
+    Geothermal - Commercially Demineralized H2O (cgal):
+      name: Geothermal - Commercially Demineralized H2O
+      units: cgal
+      volume:
+        '2004':
+          volume: 16451
+    'Geothermal - Direct Use, Millions of Gallons':
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      volume:
+        '2011':
+          volume: 71606330
+        '2012':
+          volume: 113448300
+        '2013':
+          volume: 69920725
+        '2014':
+          volume: 63624483
+    'Geothermal - Direct Utilization, Hundreds of Gallons':
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      volume:
+        '2005':
+          volume: 90021493
+        '2006':
+          volume: 85859889
+        '2007':
+          volume: 106272414
+        '2008':
+          volume: 123838519
+        '2009':
+          volume: 198988743
+        '2010':
+          volume: 163346106
+        '2011':
+          volume: 131014604
+        '2012':
+          volume: 123103803
+        '2013':
+          volume: 57238368
+        '2014':
+          volume: 46536535
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2005':
+          volume: 260242
+        '2006':
+          volume: 238147
+        '2007':
+          volume: 217500
+        '2008':
+          volume: 219089
+        '2009':
+          volume: 179171
+        '2010':
+          volume: 224486
+        '2011':
+          volume: 228011
+        '2012':
+          volume: 271470
+        '2013':
+          volume: 276337
+        '2014':
+          volume: 243504
+    'Geothermal - Direct Utilization, Other (cgal)':
+      name: 'Geothermal - Direct Utilization, Other'
+      units: cgal
+      volume:
+        '2004':
+          volume: 16451
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2005':
+          volume: 1670047947
+        '2006':
+          volume: 1653821447
+        '2007':
+          volume: 1678895823
+        '2008':
+          volume: 1639893566
+        '2009':
+          volume: 1815600792
+        '2010':
+          volume: 2015118208
+        '2011':
+          volume: 2004451294
+        '2012':
+          volume: 2132181179
+        '2013':
+          volume: 2372166723
+        '2014':
+          volume: 2578672344
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2005':
+          volume: 204030
+        '2006':
+          volume: 227562
+        '2007':
+          volume: 207155
+        '2008':
+          volume: 237416
+        '2009':
+          volume: 233954
+        '2010':
+          volume: 223938
+        '2011':
+          volume: 19883
+        '2014':
+          volume: 691756
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2005':
+          volume: 2343379430
+        '2006':
+          volume: 2404278131
+        '2007':
+          volume: 2097093994
+        '2008':
+          volume: 2518754128
+        '2009':
+          volume: 2875731710
+        '2010':
+          volume: 2719032139
+        '2011':
+          volume: 2603301430
+        '2012':
+          volume: 2501855610
+        '2013':
+          volume: 2362410880
+        '2014':
+          volume: 2509148497
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2010':
+          volume: 4670
+        '2011':
+          volume: 3470
+        '2012':
+          volume: 2598
+        '2013':
+          volume: 2448
+        '2014':
+          volume: 2090
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2005':
+          volume: 8041
+        '2006':
+          volume: 8776
+        '2007':
+          volume: 10879
+        '2008':
+          volume: 16957
+        '2009':
+          volume: 13016
+        '2010':
+          volume: 28082
+        '2012':
+          volume: 35927
+    Inlet Scrubber (bbl):
+      name: Inlet Scrubber
+      units: bbl
+      volume:
+        '2004':
+          volume: 32219
+        '2005':
+          volume: 15131
+        '2006':
+          volume: 13206
+        '2007':
+          volume: 36944
+        '2008':
+          volume: 71604
+        '2009':
+          volume: 104204
+        '2010':
+          volume: 203980
+        '2011':
+          volume: 183177
+        '2012':
+          volume: 183797
+        '2013':
+          volume: 256589
+    Langbeinite (tons):
+      name: Langbeinite
+      units: tons
+      volume:
+        '2005':
+          volume: 551675
+        '2006':
+          volume: 734349
+        '2007':
+          volume: 966101
+        '2008':
+          volume: 974982
+        '2009':
+          volume: 648073
+        '2010':
+          volume: 830346
+        '2011':
+          volume: 745606
+        '2012':
+          volume: 859349
+        '2013':
+          volume: 707765
+        '2014':
+          volume: 363289
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2005':
+          volume: 207576
+        '2006':
+          volume: 223123
+        '2007':
+          volume: 221198
+        '2008':
+          volume: 203433
+        '2009':
+          volume: 194150
+        '2010':
+          volume: 184361
+        '2011':
+          volume: 176582
+        '2012':
+          volume: 155035
+        '2013':
+          volume: 145983
+        '2014':
+          volume: 143272
+    Muriate Of Potash-Granular (tons):
+      name: Muriate Of Potash-Granular
+      units: tons
+      volume:
+        '2005':
+          volume: 424981
+        '2006':
+          volume: 327424
+        '2007':
+          volume: 429446
+        '2008':
+          volume: 398253
+        '2009':
+          volume: 233928
+        '2010':
+          volume: 364751
+        '2011':
+          volume: 454506
+        '2012':
+          volume: 424920
+        '2013':
+          volume: 342439
+        '2014':
+          volume: 467320
+    Muriate Of Potash-Standard (tons):
+      name: Muriate Of Potash-Standard
+      units: tons
+      volume:
+        '2005':
+          volume: 476837
+        '2006':
+          volume: 469892
+        '2007':
+          volume: 251708
+        '2008':
+          volume: 177001
+        '2009':
+          volume: 112839
+        '2010':
+          volume: 155054
+        '2011':
+          volume: 170449
+        '2012':
+          volume: 146453
+        '2013':
+          volume: 132492
+        '2014':
+          volume: 127433
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 521460114
+        '2005':
+          volume: 1059024393
+        '2006':
+          volume: 1082083967
+        '2007':
+          volume: 1075087920
+        '2008':
+          volume: 984586232
+        '2009':
+          volume: 1287691444
+        '2010':
+          volume: 1256560882
+        '2011':
+          volume: 1087673333
+        '2012':
+          volume: 1055404614
+        '2013':
+          volume: 1061650261
+        '2014':
+          volume: 696431298
+    Other Liquid Hydrocarbons (bbl):
+      name: Other Liquid Hydrocarbons
+      units: bbl
+      volume:
+        '2004':
+          volume: 16766
+        '2005':
+          volume: 9748
+        '2006':
+          volume: 114982
+        '2007':
+          volume: 12140
+        '2008':
+          volume: 6963
+        '2009':
+          volume: 5469
+        '2010':
+          volume: 6298
+        '2011':
+          volume: 6703
+        '2012':
+          volume: 7622
+        '2013':
+          volume: 6481
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2005':
+          volume: 2621832
+        '2006':
+          volume: 2381392
+        '2007':
+          volume: 2324385
+        '2008':
+          volume: 2424258
+        '2009':
+          volume: 3423741
+        '2010':
+          volume: 3523585
+        '2011':
+          volume: 4690032
+        '2012':
+          volume: 4467766
+        '2013':
+          volume: 4960123
+        '2014':
+          volume: 5777094
+    Potash (tons):
+      name: Potash
+      units: tons
+      volume:
+        '2006':
+          volume: 492294
+    Processed (Residue) Gas (mcf):
+      name: Processed (Residue) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 1876029499
+        '2005':
+          volume: 1660488229
+        '2006':
+          volume: 2027795745
+        '2007':
+          volume: 2021941463
+        '2008':
+          volume: 1501813333
+        '2009':
+          volume: 1598803423
+        '2010':
+          volume: 1410921296
+        '2011':
+          volume: 1182507185
+        '2012':
+          volume: 957299037
+        '2013':
+          volume: 849852684
+    Purge Liquor (tons- equivalent):
+      name: Purge Liquor
+      units: tons- equivalent
+      volume:
+        '2005':
+          volume: 61925
+        '2006':
+          volume: 69814
+        '2007':
+          volume: 97711
+        '2008':
+          volume: 116333
+        '2009':
+          volume: 118021
+        '2010':
+          volume: 104405
+        '2011':
+          volume: 88407
+        '2012':
+          volume: 73594
+        '2013':
+          volume: 88213
+        '2014':
+          volume: 91878
+    Quartz Crystal (tickets/pounds):
+      name: Quartz Crystal
+      units: tickets/pounds
+      volume:
+        '2005':
+          volume: 8065
+        '2006':
+          volume: 6350
+        '2007':
+          volume: 2400
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2004':
+          volume: 33299
+        '2005':
+          volume: 28603
+        '2006':
+          volume: 29258
+        '2007':
+          volume: 24254
+        '2008':
+          volume: 341513
+        '2009':
+          volume: 400995
+        '2010':
+          volume: 460779
+        '2011':
+          volume: 458968
+        '2012':
+          volume: 429755
+        '2013':
+          volume: 451671
+        '2014':
+          volume: 457529
+    Soda Ash (tons):
+      name: Soda Ash
+      units: tons
+      volume:
+        '2005':
+          volume: 3416753
+        '2006':
+          volume: 4755332
+        '2007':
+          volume: 5662599
+        '2008':
+          volume: 7069757
+        '2009':
+          volume: 5545300
+        '2010':
+          volume: 4990309
+        '2011':
+          volume: 5705147
+        '2012':
+          volume: 4740200
+        '2013':
+          volume: 5232597
+        '2014':
+          volume: 6075994
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
+      units: tons
+      volume:
+        '2008':
+          volume: 102512
+        '2010':
+          volume: 46904
+        '2011':
+          volume: 34297
+        '2012':
+          volume: 69262
+        '2013':
+          volume: 71539
+        '2014':
+          volume: 107022
+    Sodium Sesquicarbonate:
+      name: Sodium Sesquicarbonate
+      units: null
+      volume:
+        '2013':
+          volume: 121115
+    Sulfur (lton):
+      name: Sulfur
+      units: lton
+      volume:
+        '2004':
+          volume: 13639
+        '2005':
+          volume: 9818
+        '2006':
+          volume: 8236
+        '2007':
+          volume: 6793
+        '2008':
+          volume: 5109
+        '2009':
+          volume: 3852
+        '2010':
+          volume: 4418
+        '2011':
+          volume: 3436
+        '2012':
+          volume: 2664
+        '2013':
+          volume: 2969
+    Trona Ore (tons):
+      name: Trona Ore
+      units: tons
+      volume:
+        '2009':
+          volume: 139699
+    Unprocessed (Wet) Gas (mcf):
+      name: Unprocessed (Wet) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 2064890440
+        '2005':
+          volume: 1605399447
+        '2006':
+          volume: 934107146
+        '2007':
+          volume: 771255045
+        '2008':
+          volume: 815310402
+        '2009':
+          volume: 826981296
+        '2010':
+          volume: 679937095
+        '2011':
+          volume: 505468788
+        '2012':
+          volume: 432732435
+        '2013':
+          volume: 333762380
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2005':
+          volume: 49449
+        '2006':
+          volume: 54880
+        '2007':
+          volume: 55968
+        '2008':
+          volume: 45452
+        '2009':
+          volume: 50276
+        '2010':
+          volume: 43522
+        '2011':
+          volume: 43763
+        '2012':
+          volume: 32595
+        '2013':
+          volume: 40418
+        '2014':
+          volume: 44651

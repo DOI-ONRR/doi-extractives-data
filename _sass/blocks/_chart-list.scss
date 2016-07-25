@@ -1,0 +1,152 @@
+.chart-list {
+  @include font-size(0.8);
+  @include outer-container();
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+
+
+  .chart-list_caption {
+    @include heading(para-sm);
+
+    padding-bottom: $base-padding-jumbo;
+  }
+
+  .chart-title {
+    @include heading(large-caps);
+
+    border-bottom: 1px solid $mid-gray;
+    flex: 1 0 auto;
+  }
+
+  .chart-list-intro {
+    @include span-columns(8);
+  }
+
+  .chart-item {
+    @include span-columns(4);
+
+
+    border-top: none;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: $base-padding;
+    margin-top: 0;
+    padding-top: 0;
+
+    button {
+      background: $white;
+      color: $dark-gray;
+      font-size: small;
+      //FIXME
+    }
+  }
+
+  .full-width {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  &.has-intro {
+    .chart-item:first-of-type,
+    .chart-item:nth-of-type(3n + 1) {
+      @include omega();
+    }
+  }
+
+  &:not(.has-intro) {
+    .chart-item:nth-of-type(3n) {
+      @include omega();
+    }
+  }
+
+  figure {
+    margin-top: 0;
+  }
+
+  figcaption {
+    @include font-size(1);
+
+    font-weight: $weight-light;
+    min-height: 100px;
+    padding: $base-padding-lite;
+
+    > :last-child {
+      text-align: right;
+    }
+  }
+
+  eiti-data-map figcaption {
+    @include heading('para-sm');
+
+    font-weight: $weight-bold;
+    margin: 0;
+    min-height: inherit;
+  }
+
+  .county-map-table {
+    margin-bottom: $standard-padding-extra;
+    width: 100%;
+  }
+}
+
+.chart-selector-wrapper {
+  display: inline-block;
+  margin-bottom: $base-padding-jumbo;
+
+  .chart-selector {
+    @include span-columns(2);
+
+    background-color: $mid-gray;
+    border: 0;
+    font-weight: $weight-book;
+    margin-right: $standard-padding;
+    margin-top: $standard-padding-lite;
+  }
+
+  .chart-description {
+    border-left: 1px solid $mid-gray;
+    float: left;
+    padding-left: 1.25rem;
+    width: 75%;
+  }
+}
+
+.row-container {
+  @include outer-container();
+
+  > * {
+    @include span-columns(4);
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+  }
+
+  > :nth-child(3) {
+    @include omega();
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    position: relative;
+
+    .svg-container {
+      @include span-columns(8);
+    }
+
+    .legend-container {
+      @include span-columns(4);
+      @include omega();
+    }
+  }
+}

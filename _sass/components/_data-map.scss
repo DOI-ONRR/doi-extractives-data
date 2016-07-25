@@ -1,0 +1,77 @@
+data-map {
+  display: block;
+
+  svg {
+    border: 1px solid $mid-light-gray;
+
+    [data-value] {
+      cursor: pointer;
+    }
+  }
+}
+
+
+// Land ownership map
+.land-ownership {
+
+  figure {
+    margin-top: 0;
+  }
+
+  > .text-container {
+    @include span-columns(4);
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    > * {
+      @include span-columns(8);
+
+      &:last-child {
+        @include span-columns(4);
+        @include omega();
+      }
+    }
+  }
+}
+
+.legend-ownership-svg {
+  .cell {
+    .swatch {
+      fill: $green-land;
+    }
+
+    &.federal .swatch:last-of-type {
+      fill: $blackest-black;
+      opacity: $opacity-federal;
+    }
+
+    &.state .swatch:last-of-type {
+      fill: $blackest-black;
+      opacity: $opacity-state;
+    }
+
+  }
+}
+
+// map legend
+.details-container {
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+
+.legend-svg,
+.legend-ownership-svg {
+  border: none;
+  padding: $base-padding-lite;
+  width: 200px;
+
+  .swatch {
+    stroke: $neutral-gray;
+    stroke-width: 1;
+  }
+}

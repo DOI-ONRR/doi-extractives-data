@@ -1,0 +1,8 @@
+all_production:
+  '2013':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 3259042
+      rank: 2
+      percent: 11.04

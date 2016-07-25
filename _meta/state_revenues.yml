@@ -1,0 +1,7 @@
+'{state}':
+  commodities:
+    '{commodity}':
+      '{year}':
+        revenue: '{revenue}'
+        rank: '{rank}'
+        percent: '{percent}'

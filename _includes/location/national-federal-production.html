@@ -1,0 +1,83 @@
+{% assign federal_products = site.data.national_federal_production[state_id].products %}
+{% assign year_range = '[2005, 2014]' %}
+
+{% assign federal_products_num = federal_products | size %}
+{% assign units_map = site.data.production_units %}
+
+<section id="federal-production" is="year-switcher-section" class="federal production">
+
+  <h3>Land ownership</h2>
+
+  {% include location/national-ownership.html %}
+
+  <section class="county-map-table" is="year-switcher-section">
+
+    <h3>Natural resources extracted on federal land</h3>
+
+    {% if federal_products_num == 0 %}
+      <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+    {% endif %}
+
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        {% if federal_products_num == 0 %}
+          No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
+        {% else %}
+          Is there some kind of summary sentence that would be good here? The year selector would update all references to year in the federal production section.
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="chart-list">
+
+    {% for product in federal_products %}
+      {% assign product_slug = product[0] | slugify %}
+      {% assign product_name = product[1].name | default: product[0] %}
+      {% assign production_values = product[1].volume %}
+      {% assign volume = production_values[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+      {% assign short_units = units_map[units].short | default 'units' %}
+      {% assign long_units = units_map[units].long | default 'units' %}
+      {% assign units_suffix = units_map[units].suffix | default '' %}
+      {% assign units_title = units_map[units].title %}
+
+      <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
+
+        <h4 class="chart-title">
+          {{ product_name }}
+          {% if units_title %} ({{ units_title }}){% endif %}
+        </h4>
+
+        <figure class="chart">
+          <figcaption id="national-federal-production-figures-{{ product_slug }}">
+          <span class="eiti-bar-chart-y-value"
+                  data-format=",">{{ volume | default: 0 | intcomma }}</span>
+          {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+          produced on federal land in {{ state_name }} in
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+
+          </figcaption>
+          <eiti-bar-chart
+            aria-controls="national-federal-production-figures-{{ product_slug }}"
+            data='{{ production_values | map_hash: "volume" | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}">
+          </eiti-bar-chart>
+
+        </figure>
+
+      </section>
+    {% endfor %}
+
+    </div><!-- /.chart-list -->
+
+  </section>
+
+  <a href="{{site.baseurl}}/downloads/federal-production/">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal production data comes from the Office of Natural Resources Revenue
+  </a>
+
+</section>

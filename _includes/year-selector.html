@@ -1,0 +1,14 @@
+{% if include.year_range %}
+	{% assign year_range = include.year_range %}
+{% endif %}
+
+{% if year_range %}
+	{% assign year_list = year_range | to_list %}
+
+	<select class="chart-selector selector-all-production">
+	  {% for _year in year_list %}
+	    {% assign __year = year | to_i %}
+	    <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
+	  {% endfor %}
+	</select>
+{% endif %}

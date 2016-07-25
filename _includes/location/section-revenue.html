@@ -1,0 +1,92 @@
+{% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign units = '$' %}
+{% assign year_range = '[2006, 2015]' %}
+
+<section id="revenue" is="year-switcher-section" class="federal revenue">
+
+  <h2>Revenue</h2>
+
+  <p class="full-width-text">Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+
+
+  <section id="federal-revenue">
+
+    <h3>Federal revenue from extraction on federal land</h3>
+
+    <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
+    <p class="full-width-text">The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
+
+    <div id="fee-summaries" class="tab-interface">
+      <ul class="eiti-tabs info-tabs" role="tablist">
+        <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase ({{ year }})</a></li>
+        <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Revenue details by phase</a></li>
+      </ul>
+
+      <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+        {%
+          include location/revenue-type-table.html
+          id='revenue-types'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+
+      <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+        {%
+          include location/revenue-process-table.html
+          id='revenue-process'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+    </div>
+
+    <section class="chart-list has-intro">
+
+      <h4>Federal revenue by county</h4>
+
+      <div class="chart-selector-wrapper">
+
+        {% include year-selector.html year_range=year_range %}
+
+        <p class="chart-description">
+          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        </p>
+      </div>
+
+      <section class="county-map-table">
+        {% assign county_revenue = site.data.county_revenue[state_id] %}
+        {%
+          include location/state-federal-revenue-county.html
+          county_revenue=county_revenue
+          state_revenue=revenue_commodities
+          year=year
+          year_range=year_range
+        %}
+      </section>
+
+    </section>
+    <!-- .chart-list -->
+
+    <h3>Federal tax revenue</h3>
+
+    <div class="full-width-text">
+      <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>
+      <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+    </div>
+
+  </section>
+  <!-- #federal-revenue -->
+
+  <section id="state-local-revenue" class="state revenue">
+    <h3>State revenue from extraction on state land</h3>
+
+    <div class="full-width-text">
+      <p>We don't have detailed data about federal, state, or local revenue from natural resource extraction on land owned by the state of {{ state_name }}, corporations, or individuals. However, all companies must pay state, local, and federal taxes.</p>
+    </div>
+  </section>
+</section>

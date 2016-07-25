@@ -49,17 +49,15 @@
             root.select('.legend-data')
               .attr('aria-hidden', true);
             root.select('.details-container')
-              .attr('aria-hidden', true);
-            root.select('.eiti-data-map-table')
-              .attr('aria-hidden', true);
+              .attr('aria-hidden', true)
+              .select('button')
+                .attr('aria-expanded', false); // unexpand county-chart
           } else {
             root.select('.legend-no-data')
               .attr('aria-hidden', true);
             root.select('.legend-data')
               .attr('aria-hidden', false);
             root.select('.details-container')
-              .attr('aria-hidden', false);
-            root.select('.eiti-data-map-table')
               .attr('aria-hidden', false);
           }
 

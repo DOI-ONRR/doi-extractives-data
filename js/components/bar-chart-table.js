@@ -5,6 +5,7 @@
     this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
     this._cells = this._cells.concat(this.nested_cells)
     this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
+    this.isCountyTable = d3.select(this).classed('county-table');
 
     this.setYear();
     this.update();
@@ -180,6 +181,7 @@
         offsetProperty = 'bottom';
       }
 
+      var that = this;
       cells.forEach(function(cell, i) {
         if (!cell) {
           console.warn('no cell @', i);
@@ -188,6 +190,7 @@
           console.warn('cell is child', i);
         }
 
+        var cellAlwaysEmpty = JSON.parse(cell.getAttribute('data-year-values'));
         var childCell = cell.querySelector('[data-value]');
 
         // TODO only do this if autolabel="true"?
@@ -201,9 +204,6 @@
             span.className = 'text';
             span.appendChild(text);
           }
-        } else {
-          var span = cell.appendChild(document.createElement('span'));
-          span.className = 'text';
         }
 
 
@@ -218,9 +218,15 @@
           bar = document.createElement('div');
           bar.className = 'bar';
           var span = cell.querySelector('span');
-          if (span && barExtent && bar) {
-            cell.insertBefore(barExtent,span);
+          if (barExtent && bar) {
+            if (span) {
+              cell.insertBefore(barExtent,span);
+            } else if (that.isCountyTable && cellAlwaysEmpty) {
+              cell.appendChild(barExtent);
+            }
             barExtent.appendChild(bar);
+          } else {
+            console.log(cell)
           }
         }
 

@@ -41,7 +41,8 @@
         <strong>{{ fund_name }}</strong>
         {% endif %}
       </td>
-      <td data-value="{{ fund_dollars }}">
+      <td data-value="{{ fund_dollars }}"
+        data-year-values='{{ fund_sources.All | jsonify }}'>
         ${{ fund_dollars | default: 0 | intcomma }}
       </td>
     </tr>

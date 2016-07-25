@@ -55,18 +55,7 @@
                 expand(this);
               }
           }
-        }},
-
-        'aria-expanded': {
-          get: function() {
-            return this.getAttribute('aria-expanded');
-          },
-          set: function(value) {
-            if (value !== this['aria-expanded']) {
-              this.setAttribute('aria-expanded', value);
-            }
-          }
-        }
+        }}
       }
     )
   });

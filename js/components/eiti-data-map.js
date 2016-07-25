@@ -131,13 +131,13 @@
               .scale(scale);
 
 
-            if (svgLegend.select('.legendScale').empty()) {
-              svgLegend.append('g')
+            var legendScale = svgLegend.select('.legendScale');
+            if (legendScale.empty()) {
+              legendScale = svgLegend.append('g')
                 .attr('class', 'legendScale');
             }
 
-            svgLegend.select('.legendScale')
-              .call(legend);
+            legendScale.call(legend);
 
             // reverse because the scale is in ascending order
             var _steps = d3.range(0, 9).reverse();

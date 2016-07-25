@@ -190,7 +190,7 @@
           console.warn('cell is child', i);
         }
 
-        var cellAlwaysEmpty = JSON.parse(cell.getAttribute('data-year-values'));
+        var cellAlwaysEmpty = cell.getAttribute('data-year-values') === 'null';
         var childCell = cell.querySelector('[data-value]');
 
         // TODO only do this if autolabel="true"?
@@ -221,7 +221,7 @@
           if (barExtent && bar) {
             if (span) {
               cell.insertBefore(barExtent,span);
-            } else if (that.isCountyTable && cellAlwaysEmpty) {
+            } else if (that.isCountyTable && !cellAlwaysEmpty) {
               cell.appendChild(barExtent);
             }
             barExtent.appendChild(bar);

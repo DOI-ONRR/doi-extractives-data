@@ -46,12 +46,11 @@
         }},
 
         attributeChangedCallback: {value: function(attr, old, value) {
-          value = JSON.parse(value);
           switch (attr) {
             case 'aria-expanded':
-              if (value === false) {
+              if (value === 'false') {
                 collapse(this);
-              } else if (value === true) {
+              } else if (value === 'true') {
                 expand(this);
               }
           }

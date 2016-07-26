@@ -199,7 +199,6 @@
 
     xAxis.selectAll('text')
       .attr('class', function(d) {
-        console.log(isInSet(d))
         if (!isInSet(d)){
           return 'dataless';
         }

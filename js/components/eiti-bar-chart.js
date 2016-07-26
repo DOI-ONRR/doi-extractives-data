@@ -203,7 +203,6 @@
         if (!isInSet(d)){
           return 'dataless';
         }
-
       });
 
     xAxis.selectAll('path, line')

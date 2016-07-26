@@ -7,10 +7,26 @@
   var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
 
+  var WITHHELD = 'Withheld';
+
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format.dollarsAndCents;
+  var formatDollars = eiti.format('$,.0f');
+  var formatNumber = function(n) {
+    return n === WITHHELD ? n : formatDollars(n);
+  };
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
+
+  var sumRevenue = function(data) {
+    var withheld = 0;
+    return d3.sum(data, function(d) {
+      if (d.Revenue === WITHHELD) {
+        withheld++;
+        return 0;
+      }
+      return d.Revenue;
+    }) || (withheld === data.length ? WITHHELD : 0);
+  };
 
   var state = eiti.explore.stateManager()
     .on('change', update);
@@ -21,7 +37,26 @@
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
-  var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
+  // FIXME: componentize these too
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
+
+  var year = root.attr('data-year');
+  if (!year) {
+    throw new Error('No year found in', root.node());
+  }
+  var dataUrl = eiti.data.path + 'company/revenue/' + year + '.tsv';
+
+  var model = eiti.explore.model(dataUrl)
     .transform(removeRevenueTypePrefix)
     .filter('commodity', function(data, commodity) {
       return data.filter(function(d) {
@@ -49,6 +84,22 @@
     .on('change', filterChange);
 
   var initialState = hash.read();
+  var outerKey = 'Commodity';
+  var innerKey = 'revenueType';
+
+  var withheldComparator = function(key) {
+    var get = getter(key);
+    return function(a, b) {
+      var aa = get(a);
+      var bb = get(b);
+      if (aa === WITHHELD) {
+        return 1;
+      } else if (bb === WITHHELD) {
+        return -1;
+      }
+      return d3.descending(+aa, +bb);
+    };
+  };
 
   state.init(initialState);
 
@@ -59,19 +110,17 @@
     updateFilterDescription(state);
 
     grouper = d3.nest()
-      .rollup(function(d) {
-        return d3.sum(d, getter('Revenue'));
-      })
-      .sortValues(function(a, b) {
-        return d3.descending(+a.Revenue, +b.Revenue);
-      });
+      .rollup(sumRevenue)
+      .sortValues(withheldComparator('Revenue'));
 
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
     if (hasType && !hasCommodity) {
-      grouper.key(getter('Commodity'));
+      outerKey = 'revenueType';
+      grouper.key(getter(innerKey = 'Commodity'));
     } else {
-      grouper.key(getter('revenueType'));
+      outerKey = 'Commodity';
+      grouper.key(getter(innerKey = 'revenueType'));
     }
 
     model.load(state, function(error, data) {
@@ -144,7 +193,7 @@
       .key(getter('Company'))
       .entries(data)
       .map(function(d) {
-        var total = d3.sum(d.values, getter('Revenue'));
+        var total = sumRevenue(d.values);
         return {
           name: d.key,
           total: total,
@@ -155,12 +204,6 @@
                 value: d.values
               };
             })
-            /*
-            .concat([{
-              name: 'Total',
-              value: total
-            }])
-            */
         };
       });
 
@@ -173,12 +216,12 @@
       .attr('class', 'company subgroup')
       .append('tr')
         .attr('class', 'name');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subregion-name')
       .text(getter('name'));
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal value');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {
@@ -210,9 +253,12 @@
 
     items
       .call(updateRevenueItem, extent)
-      .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
-      });
+
+    selection.each(function() {
+      d3.select(this)
+        .selectAll('tr.subtype')
+          .sort(withheldComparator('value'));
+    });
   }
 
   function updateNameSearch() {

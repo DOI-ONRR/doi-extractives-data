@@ -1,13 +1,13 @@
 @import 'lib/neat/neat-helpers';
 
-$max-width: em(1024) !default;
+$max-width: em(960) !default;
 
 // Breakpoints
 $tiny: em(480);
 $small: em(600);
 $medium: em(768);
-$large: em(990);
-$huge: em(1024);
+$large: em(900);
+$huge: em(960);
 $huge-plus: $huge + $base-padding;
 $jumbo: em(1500);
 $massive: em(1800);

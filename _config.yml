@@ -1,36 +1,99 @@
 title: USEITI
 
-description: USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about how the U.S. manages extractive industries.
+description: >
+    USEITI is part of an international effort to promote open and accountable
+    management of natural resources. This site provides data about how the U.S.
+    manages extractive industries.
 
 # permanent url, for use in meta references
 url: https://useiti.doi.gov
 
 # app version number
-version: v1.1.0
+version: v1.3.4
+
+beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
 
 sass:
   style: nested
   sass_dir: _sass
 
 exclude:
+  # top-level log and markdown files
+  - /*.log
+  # ruby dependency files
+  - Gemfile*
+  # KSS (style guide) config and template
+  - kss-config.json
+  - styleguide-template
+  # just ignore the whole JS lib directory
   - lib
+  # Node depenencies
   - node_modules
   - package.json
-  - show
+  # unit tests
   - test
-  - styleguide-template
-  - 'Gemfile*'
+  # webpack configuration
+  - webpack.config.js
+  # all of the source (unbuilt) JS files
+  - js/src
+  # shell and other scripts
+  - /*.sh
+  - /**/bin/*.js
+  - /lib/*.js
+  - data/lib/*.js
+  - maps/lib/*.js
+  - /Makefile
+  - /**/Makefile
+  # data tools and SQLite databases
+  - /*.sql
+  - /*.db*
+  - data/db
+  - data/**/*.js
+  - data/**/*.svg
+  - maps/data
+  - maps/land/*.json
 
 collections:
   case-studies:
     output: true
-    permalink: /case-studies/:case-study/
-  explore:
-    output: true
-    permalink: /explore/:explore/
-  how-it-works:
-    output: true
-    permalink: /how-it-works/:subpage/
+    permalink: /case-studies/:path/
   downloads:
     output: true
-    permalink: /downloads/:subpage/
+    permalink: /downloads/:path/
+  explore:
+    output: true
+    permalink: /explore/:path/
+  federal-revenue-by-company:
+    output: true
+    permalink: /explore/federal-revenue-by-company/:path/
+  how-it-works:
+    output: true
+    permalink: /how-it-works/:path/
+  offshore_areas:
+    output: false
+  offshore_regions:
+    output: false
+    permalink: /offshore/:path/
+  states:
+    output: true
+    permalink: /states/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: federal-revenue-by-company
+    values:
+      layout: federal-revenue-by-company
+
+  - scope:
+      path: ''
+      type: states
+    values:
+      layout: state-page
+      offshore: false
+
+shruggie:
+  - d8394cf27efbf8ae2f96ee12788eb257f4358a42
+  - 11652cb6b75c1e914857a215e8f8eca7a599e0e0
+  - 85f41ebb92208a3508c75114999a560ebd741690
+  - 695ef693b0889d16e60e6d6fff06dc1c79db45d2

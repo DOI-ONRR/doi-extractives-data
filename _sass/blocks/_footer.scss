@@ -46,6 +46,13 @@ footer,
 }
 
 .footer-para_last {
+  .link-beta {
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
   @include heading(para-sm);
   color: $white;
 

@@ -106,7 +106,7 @@ permalink: /explore/disbursements/
     <p class="downloads-download_links-intro">Download fiscal year data:
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/disbursements/">
-          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a></li>
        </ul>
     </p>

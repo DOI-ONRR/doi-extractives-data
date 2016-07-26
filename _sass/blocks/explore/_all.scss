@@ -15,4 +15,13 @@
   @import 'regions-list';
   @import 'filtered-list';
   @import 'hash-offset';
+  @import 'subpage-nav';
+}
+
+.explore-subpage#revenue .explore-exploration {
+  margin-top: 0;
+
+  @include respond-to(medium-up) {
+    margin-top: 230px;
+  }
 }

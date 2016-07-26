@@ -19,7 +19,7 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollarsAndCents;
+  var formatNumber = eiti.format.commaSeparatedDollars;
   var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements

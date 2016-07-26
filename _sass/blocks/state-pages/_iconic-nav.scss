@@ -1,0 +1,77 @@
+.state-page-nav-title {
+  @include heading(large-caps);
+
+  align-items: center;
+  border-bottom: 1px solid $mid-gray;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    svg.map .states.features {
+      fill: $blackest-black;
+      fill-opacity: 1;
+      stroke: $blackest-black;
+    }
+  }
+
+  svg.map {
+    .state.feature {
+      fill: $blackest-black;
+      fill-opacity: 1;
+    }
+
+    .states.features {
+      @include transition(all, 0.3s);
+
+      fill: $neutral-gray;
+      fill-opacity: 1;
+      stroke: $neutral-gray;
+    }
+  }
+
+  figure {
+    align-self: flex-end;
+    margin: 0;
+    width: 33%;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      + .nav-prompt {
+        visibility: visible;
+      }
+
+      svg.map .states.features {
+        fill: $blackest-black;
+        fill-opacity: 1;
+        stroke: $blackest-black;
+      }
+    }
+
+    svg.map {
+      padding: 0;
+    }
+  }
+
+  .nav-title {
+    align-self: center;
+    width: 67%;
+  }
+
+  .nav-prompt {
+    @include font-size(0.8);
+    @include transition(visibility, 0.3s);
+
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    text-transform: capitalize;
+    top: -20px;
+    visibility: hidden;
+  }
+}

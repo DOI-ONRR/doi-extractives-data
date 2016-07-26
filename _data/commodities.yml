@@ -6,9 +6,10 @@ groups:
     # FIXME: should this be listed as Gas as well?
     - "NGL"
     - "Oil & Gas"
+    - "Oil & Gas (Non-Royalty)"
     - "Oil"
     - "Oil Shale"
-    # - "Tar Sands"
+    - "Tar Sands"
 
   coal:
     name: Coal

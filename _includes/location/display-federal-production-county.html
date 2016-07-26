@@ -1,0 +1,40 @@
+{% assign product_ref = include.product_ref %}
+{% assign caption = include.caption %}
+
+{% assign units = county[1].products[1].units %}
+{% if include.long_units %}
+  {% assign units = include.long_units %}
+{% endif %}
+
+
+<label>{{ caption }}</label>
+<table is='bar-chart-table'
+       data-percent-max='100'
+       class="county-table">
+  <thead>
+    <tr>
+      <th>Locality</th>
+      <th colspans="2" class='numeric' data-series='volume'>{{ units | capitalize }}</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for county in include.values %}
+    {% assign product_volume = county[1].products[product_ref].volume[include.year] %}
+
+    {% assign years_values =  county[1].products[product_ref].volume %}
+    {% if years_values != 'null' years_values != null %}
+      <tr data-year-values='{{ years_values | jsonify }}'>
+        <td><div class='swatch'
+                 data-value-swatch='{{ product_volume }}'
+                 data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
+        <td data-value-text='{{ product_volume }}'
+            data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
+        <td class='numberless'
+            data-series='volume'
+            data-value='{{ product_volume }}'
+            data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>

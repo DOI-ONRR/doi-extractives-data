@@ -172,6 +172,7 @@
   }
 
   function renderLayer(path) {
+
     return function(selection) {
       selection.each(function(d) {
         var layer = d3.select(this)
@@ -227,10 +228,11 @@
             .append('path')
               .append('title');
 
-          var href = evaluator(this.getAttribute('data-href'));
           link
             .filter(function(d) { return !d.mesh; })
-            .attr('xlink:href', href);
+            .attr('xlink:href', evaluator('"#" + id'))
+            .attr('xlink:name', evaluator('id'))
+            .attr('xlink:title', evaluator('id'));
 
           feature = link.select('path');
 

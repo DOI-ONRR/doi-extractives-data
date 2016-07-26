@@ -44,30 +44,13 @@ a img {
   outline: 0;
 }
 
+figure {
+  margin: 1em 0;
+}
+
+// XXX: this might be the wrong thing to do
 [aria-hidden="true"] {
   display: none;
-}
-
-table {
-  @include font-size(0.9);
-
-  border: 1px solid $mid-gray;
-  border-spacing: 2px;
-  color: $dark-gray;
-  font-weight: $weight-light;
-  margin-bottom: $base-padding;
-}
-
-thead {
-  background-color: $mid-gray;
-  border-bottom: 2px solid $mid-gray;
-  font-weight: $weight-book;
-  text-align: center;
-}
-
-td {
-  border: 1px solid $mid-gray;
-  padding: 5px;
 }
 
 .hidden {

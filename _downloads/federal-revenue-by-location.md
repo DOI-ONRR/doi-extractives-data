@@ -1,121 +1,140 @@
 ---
 title: Federal Revenue by Location | Documentation
-layout: default
+layout: content
 permalink: /downloads/federal-revenue-by-location/
+title_display: Federal Revenue by Location
+breadcrumb:
+  - title: Downloads
+    permalink: /downloads/
 ---
 
-<div class="container-outer container-margin">
+> There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for calendar years 2004 through 2013, and fiscal years 2004 through 2014. They are both accounting year data.
 
-  <article class="container-left-7 downloads-docs">
+Download calendar year data:
 
-    <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/downloads/">Downloads</a>
-      /
-    </div>
-    <h1>Federal Revenue by Location</h1>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+   Offshore dataset (xlsx, 321 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/data/offshore/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+  Offshore dataset (tsv)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.1 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/data/county/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (tsv)
+  </a></li>
+</ul>
 
-    <p class="case_studies_intro-para">There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for both calendar year and fiscal year 2013, and they are both accounting year data. </p>
+Download fiscal year data:
 
-    <p class="downloads-download_links-intro">Download calendar year data:</p>
-    <ul class="downloads-download_links">
-      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-       Offshore dataset (xlsx, 321 KB)
-     </a></li>
-     <li><a href="{{site.baseurl}}/data/offshore/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
-      Offshore dataset (tsv)
-    </a></li>
-     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-       Onshore dataset (xlsx, 1.1 MB)
-     </a></li>
-    <li><a href="{{site.baseurl}}/data/county/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
-      Onshore dataset (tsv)
-    </a></li>
-    </ul>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Offshore dataset (xlsx, 348 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.1 MB)
+  </a></li>
+</ul>
 
-    <p class="downloads-download_links-intro">Download fiscal year data:</p>
-    <ul class="downloads-download_links">
-      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Offshore dataset (xlsx, 348 KB)
-      </a></li>
-     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-       Onshore dataset (xlsx, 1.1 MB)
-     </a></li>
-    </ul>
+<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
 
-    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">notes on this data</a> from the web development team as they built the interactions on this site.</p>
-
-    <h2 class="h3">Scope</h2>
-
-    <p>These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
-
-    <h2 class="h3">Why are some values negative?</h2>
-
-    <p>Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in the Office of Natural Resource Revenue's revenue summaries.</p>
-
-    <h2 class="h3">Why is there a Gas value, an Oil value and an Oil & Gas value?</h2>
-
-    <p>“Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
-
-    <h2 class="h3">Why is the calendar year revenue by location national total slightly different than the revenue by company total?</h2>
-
-    <p>Our site has two federal revenue datasets. The one on this page is organized by location. <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">This one</a> is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.</p>
+In 2016, USEITI updated its procedure for organizing revenue data for this site. This new data includes types of revenue and better groupings of commodities to help with understanding which commodities are related. Our team is working on new revenue data interactions for this website that use these revenue datasets, but they're not ready for release yet. In the meantime, here are the updated data files. They cover calendar and fiscal years 2006 through 2015, and are accounting year data.
 
 
-    <h2>Offshore data dictionary</h2>
+<p class="u-margin-top">Download new calendar year data:</p>
 
-    <p>The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for calendar year 2013. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+   Offshore dataset (xlsx, 475 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
+  </a></li>
+</ul>
 
-    <h3>Fields and definitions</h3>
+Download new fiscal year data:
 
-    <p><strong>Revenue Type.</strong> Revenues from U.S. natural resources fall into one of several types:
-      <ul class="list-bullet">
-        <li><strong>Royalties. </strong>
-          A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<i class="icon-book"></i></span>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
-        <li><strong>Bonus. </strong>
-          The amount paid by the highest successful bidder for a natural resource lease. The winning bid.</li>
-        <li><strong>Other revenues. </strong>
-          This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.</li>
-        <li><strong>Rents. </strong>
-          A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.</li>
-      </ul>
-    </p>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Offshore dataset (xlsx, 437 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
+  </a></li>
+</ul>
 
-    <p><strong>Commodity Type. </strong>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
-    </p>
+## Scope
 
-    <p><strong>Region. </strong>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.
 
-    <p><strong>Planning Area. </strong>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+### Why are some values negative?
 
-    <p><strong>Revenue. </strong>Total revenue.</p>
+Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in the Office of Natural Resource Revenue's revenue summaries.
+
+### Why is there a Gas value, an Oil value and an Oil & Gas value?
+
+“Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
+
+### Why is the calendar year revenue by location national total slightly different than the revenue by company total?
+
+Our site has two federal revenue datasets. The one on this page is organized by location. [This one]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 
 
-    <h2>Onshore data dictionary</h2>
+## Offshore data dictionary
 
-    <p>The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in calendar year 2013 are not included.</p>
+The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-    <h3>Fields and definitions</h3>
+### Fields and definitions
 
-    <p><span>Row Labels. </span>This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.</p>
+_Revenue Type._ Revenues from U.S. natural resources fall into one of several types:
 
-    <p><span>Sum of Royalty/Revenue. </span>This field provides the total royalty or revenue for the listed state (total) or commodity in that state.</p>
+* _Royalties._ A natural resource lease owner pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
+* _Bonus._ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
+* _Other revenues._ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
+* _Rents._ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
 
-    <h2>Advanced offshore and onshore information</h2>
 
-    <p>Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.</p>
+_Commodity Type._ The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
 
-    <p><span>Coal.</span> Coal (ton), Coal-Bituminous-Raw (ton).</p>
 
-    <p><span>Gas.</span> Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).</p>
+_Region._ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-    <p><span>Oil.</span> Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).</p>
+_Planning Area._ Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-    <p><span>Geothermal.</span> Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).</p>
+_Revenue._ Total revenue.
 
-    <p><span>Wind.</span> Wind.</p>
 
-    <p><span>Other Commodities.</span> Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
+## Onshore data dictionary
 
-  </article>
+The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in the data are not included.
 
-</div>
+### Fields and definitions
+
+_Row Labels._ This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.
+
+_Sum of Royalty/Revenue._ This field provides the total royalty or revenue for the listed state (total) or commodity in that state.
+
+## Advanced offshore and onshore information
+
+Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
+
+_Coal._ Coal (ton), Coal-Bituminous-Raw (ton).
+
+_Gas._ Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
+
+_Oil._ Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
+
+_Geothermal._ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
+
+_Wind._ Wind.
+
+_Other Commodities._ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
+

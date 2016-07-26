@@ -1,0 +1,27 @@
+.eiti-data-map-table {
+  label {
+    float: left;
+  }
+
+  [is="bar-chart-table"] {
+    border: 0;
+    width: 100%;
+
+    td,
+    th {
+      border: 0;
+    }
+
+    tr {
+      border-bottom: 1px solid $mid-gray;
+    }
+
+    thead {
+      background-color: transparent;
+
+      tr {
+        border-bottom: 2px solid $mid-gray;
+      }
+    }
+  }
+}

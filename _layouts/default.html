@@ -51,13 +51,15 @@
 
     <!-- Styles
     ================================================== -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
 
     <!-- Scripts
     ================================================== -->
     <script src="{{ site.baseurl }}/js/lib/main.min.js" charset="utf-8"></script>
 
     <script>
+      eiti.beckleyApiKey = '{{ site.beckley_api_key }}' || '';
       eiti.data = eiti.data || {};
       eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
@@ -80,10 +82,8 @@
 
     {% include layout/footer.html %}
 
-    {{ page.script }}
-
-    <!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->
-    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
+    {% assign ga_id = site.google_analytics[site.branch]|default:site.google_analytics.default %}
+    {% if ga_id %}{% include google_analytics.html id=ga_id %}{% endif %}
 
   </body>
 

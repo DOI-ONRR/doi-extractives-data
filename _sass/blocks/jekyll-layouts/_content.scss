@@ -1,0 +1,26 @@
+.layout-content {
+  position: relative;
+
+  blockquote {
+    margin-bottom: $base-padding-extra;
+
+    p {
+      @include heading('para-xl');
+    }
+  }
+}
+
+h2 + hr,
+h1 + hr,
+h3 + hr,
+h4 + hr {
+  border: 1px solid $neutral-gray;
+  margin-bottom: $base-padding-extra;
+}
+
+blockquote + h2,
+br + h2,
+blockquote + h3,
+br + h3 {
+  margin-top: $base-padding-large;
+}

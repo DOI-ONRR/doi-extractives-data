@@ -5,7 +5,7 @@
 // // Styleguide components.glossary
 
 $drawer-width: 300px;
-$term-width: 200px;
+$term-width: 180px;
 $term-width-max: 220px;
 
 #glossary {
@@ -24,7 +24,7 @@ $term-width-max: 220px;
     border-top: 1px solid $mid-gray;
   }
 
-  .accordion-button {
+  [accordion-button] {
     color: $white;
     margin: 0;
     margin-top: -2px;
@@ -33,6 +33,7 @@ $term-width-max: 220px;
 
 .glossary-term {
   color: $white;
+  cursor: pointer;
   display: inline-block;
   margin: 0;
   max-width: $term-width-max;
@@ -55,12 +56,12 @@ $term-width-max: 220px;
 // Wrap glossary terms with these classes
 //
 // .term          - Standard class -- adds the book icon
-// .term-p        - Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
+// .term-end      - Used when directly followed by punctuation
 //
 // Markup:
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
-//     <i class="icon-book"></i>
+//     <icon class="icon-book"></icon>
 // </span>, Brian asked inquisitively</p>
 //
 // Styleguide components.drawer.term
@@ -71,6 +72,7 @@ $term-width-max: 220px;
   border-bottom: 1px dotted $base-font-color;
   box-shadow: 0 0 0 4px transparent;
   cursor: pointer;
+  margin-right: 0.25rem;
   text-decoration: none;
 
   &:focus,
@@ -79,7 +81,7 @@ $term-width-max: 220px;
     text-decoration: none;
   }
 
-  i {
+  icon {
     font-size: 0.75em;
 
     &:before {
@@ -89,8 +91,9 @@ $term-width-max: 220px;
   }
 }
 
-.term-p {
+.term-end {
   @extend .term;
+
   box-shadow: none;
-  margin-right: 0.25rem;
+  margin-right: 0.15rem;
 }

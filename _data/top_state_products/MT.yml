@@ -1,0 +1,258 @@
+all_production:
+  '2005':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 40353984
+      rank: 3
+      percent: 5.11
+  '2006':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 41822805
+      rank: 3
+      percent: 5.08
+  '2007':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 43389833
+      rank: 2
+      percent: 5.35
+  '2008':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 44785700
+      rank: 2
+      percent: 5.42
+  '2009':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 39485837
+      rank: 2
+      percent: 5.13
+  '2010':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 44732165
+      rank: 2
+      percent: 5.71
+  '2011':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 42008238
+      rank: 3
+      percent: 5.31
+federal_production:
+  '2005':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16886195
+      rank: 3
+      percent: 4.06
+  '2006':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18072165
+      rank: 3
+      percent: 4.27
+  '2007':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18777497
+      rank: 3
+      percent: 4.31
+  '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 19316074
+      rank: 3
+      percent: 4.12
+  '2009':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17319320
+      rank: 2
+      percent: 4.03
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17741873
+      rank: 2
+      percent: 4.05
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17214337
+      rank: 3
+      percent: 3.95
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16004122
+      rank: 3
+      percent: 3.97
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16480119
+      rank: 2
+      percent: 4.38
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 15703781
+      rank: 2
+      percent: 4.18
+revenue:
+  '2006':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 12681
+      rank: 2
+      percent: 0.58
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2321.49
+      rank: 2
+      percent: 12.15
+  '2007':
+    - product: Coal
+      name: null
+      units: null
+      value: 38642208.05
+      rank: 3
+      percent: 4.12
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1881.74
+      rank: 2
+      percent: 2.76
+  '2008':
+    - product: Coal
+      name: null
+      units: null
+      value: 42467233.11
+      rank: 3
+      percent: 3.72
+    - product: Sulfur
+      name: null
+      units: null
+      value: 27255.51
+      rank: 2
+      percent: 2.35
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9863
+      rank: 3
+      percent: 0.37
+  '2009':
+    - product: Coal
+      name: null
+      units: null
+      value: 48576331.67
+      rank: 2
+      percent: 4.49
+  '2010':
+    - product: Coal
+      name: null
+      units: null
+      value: 54177640.22
+      rank: 3
+      percent: 6.18
+    - product: Sulfur
+      name: null
+      units: null
+      value: 3906.01
+      rank: 2
+      percent: 1.04
+  '2011':
+    - product: Coal
+      name: null
+      units: null
+      value: 49309699.64
+      rank: 3
+      percent: 4.75
+    - product: Sulfur
+      name: null
+      units: null
+      value: 9789.04
+      rank: 3
+      percent: 0.52
+  '2012':
+    - product: Coal
+      name: null
+      units: null
+      value: 56440250.92
+      rank: 2
+      percent: 4.19
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4657.08
+      rank: 2
+      percent: 0.23
+  '2013':
+    - product: Coal
+      name: null
+      units: null
+      value: 45012854.62
+      rank: 2
+      percent: 3.97
+    - product: Sulfur
+      name: null
+      units: null
+      value: 5314.96
+      rank: 2
+      percent: 1.1
+  '2014':
+    - product: Coal
+      name: null
+      units: null
+      value: 42644977.3
+      rank: 2
+      percent: 3.63
+    - product: Phosphate
+      name: null
+      units: null
+      value: 4280.21
+      rank: 3
+      percent: 0.04
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2783.01
+      rank: 2
+      percent: 0.64
+  '2015':
+    - product: Coal
+      name: null
+      units: null
+      value: 39853384.36
+      rank: 3
+      percent: 3.52
+    - product: Sulfur
+      name: null
+      units: null
+      value: 9168
+      rank: 1
+      percent: null

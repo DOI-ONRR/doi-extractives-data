@@ -1,15 +1,6 @@
 // Explore data callout on homepage
 //
 // Styleguide blocks.explore-home
-
-@mixin active-tab() {
-  background-color: $white;
-  border: 1px solid $neutral-gray;
-  border-bottom: 1px solid $white;
-  font-weight: $weight-bold;
-  text-decoration: none;
-}
-
 .explore_home-heading {
   margin-bottom: $base-padding;
 
@@ -35,8 +26,6 @@
 }
 
 .explore_home-tabs {
-  @include heading(para-sm);
-  margin-bottom: 3px;
   text-align: right;
 
   @include respond-to(tiny-down) {
@@ -50,20 +39,11 @@
     border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: $base-padding-lite;
-
-    &[aria-selected="true"] {
-      @include active-tab();
-    }
-
-    &:hover,
-    &:focus {
-      @include active-tab();
-    }
   }
 
   li {
     display: inline-block;
+    padding-bottom: 3px;
   }
 }
 
@@ -101,7 +81,6 @@
 }
 
 .explore_home-main {
-  border-top: 1px solid $neutral-gray;
   padding-top: $base-padding-large;
 }
 
@@ -116,15 +95,15 @@
 }
 
 .explore_home-img {
-  h4 {
-    @include heading(para-lg);
-    color: $blue;
-    font-weight: $weight-bold;
-  }
-
   img {
     width: 100%;
   }
+}
+
+.explore_home-main_link {
+  @include heading(para-lg);
+  color: $blue;
+  font-weight: $weight-bold;
 }
 
 .explore_home-links {

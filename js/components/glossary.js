@@ -60,6 +60,7 @@
     // Bind listeners
     self.$toggle.on('click', this.toggle.bind(this));
     self.$body.on('click', '.toggle', this.toggle.bind(this));
+    self.$body.on('click', '.glossary-term', this.toggleTermFromClick.bind(this) );
     self.$search.on('input', this.handleInput.bind(this));
 
     $(document.body).on('keyup', this.handleKeyup.bind(this));
@@ -69,7 +70,9 @@
 
       var hitsTriggers = $target.hasClass('js-glossary-toggle')
         || $target.hasClass('term')
-        || $target.hasClass('icon-bars');
+        || $target.hasClass('icon-bars')
+        || $target.hasClass('drawer-search_button')
+        || $target.hasClass('drawer-search_field');
 
       if (!hitsTriggers) {
         self.hide();
@@ -132,13 +135,24 @@
 
       this.list.visibleItems.forEach(function(item){
         var $elm = $(item.elm);
-        $elm.attr('accordion-open', true);
+        $elm.attr('aria-expanded', true);
       });
     },
 
     toggle: function() {
       var method = this.isOpen ? this.hide : this.show;
       method.apply(this);
+    },
+
+    toggleTermFromClick: function(event){
+      var $target = $(event.target);
+      var doExpand = $target.parent().attr( 'aria-expanded') === 'true' ? 'false' : 'true';
+
+      $target
+        .siblings( 'p' )
+        .attr('aria-hidden', doExpand )
+        .parent()
+        .attr('aria-expanded', doExpand );
     },
 
     show: function() {

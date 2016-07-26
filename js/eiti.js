@@ -2,7 +2,7 @@
   'use strict';
 
   var d3 = require('d3');
-  var queue = require('queue-async');
+  var queue = require('d3-queue');
 
   /*
    * @namespace eiti
@@ -445,6 +445,21 @@
    */
   eiti.format.dollars = eiti.format.transform(
     eiti.format.si,
+    eiti.format.transformDollars
+  );
+
+  /**
+   * Produces dollar strings with thousands separators
+   * e.g. `$1,234,567`.
+   *
+   * @name eiti.format.commaSeparatedDollars
+   * @function
+   *
+   * @param {Number} num
+   * @return {String}
+   */
+  eiti.format.commaSeparatedDollars = eiti.format.transform(
+    ',.0f',
     eiti.format.transformDollars
   );
 

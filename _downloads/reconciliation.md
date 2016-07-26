@@ -14,7 +14,7 @@ permalink: /downloads/reconciliation/
     </div>
     <h1>Reconciliation</h1>
 
-    <p class="case_studies_intro-para">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published.</p>
+    <p class="case_studies_intro-para">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published.</p>
 
     <p class="downloads-download_links-intro">Download calendar year data:</p>
     <ul class="downloads-download_links">
@@ -24,13 +24,13 @@ permalink: /downloads/reconciliation/
 
     <h2 class="h3">Background</h2>
 
-    <p>To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the <span class="term term-p" data-term="independent administrator (IA)" title="Click to define" tabindex="0">IA<i class="icon-book"></i></span>. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.</p>
+    <p>To implement the {{ "EITI Standard" | term_end}}, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the IA. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.</p>
 
-    <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the <span class="term term-p" data-term="multi-stakeholder group" title="Click to define" tabindex="0">Multi-Stakeholder Group<i class="icon-book"></i></span> (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
+    <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the {{ "Multi-Stakeholder Group (MSG)" | term }} (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
 
     <h2 class="h3">Reconciliation Results</h2>
 
-    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
+    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the {{ "margin of variance" | term_end }}. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
 
     <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
@@ -42,9 +42,9 @@ permalink: /downloads/reconciliation/
 
     <p class="u-margin-top">Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
 
-    <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
+    <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 {{ "material variances" | term }} remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
 
-    <h2 class="h3">Scope</h2>
+    <h2 id="scope" class="h3">Scope</h2>
 
     <p>Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for the 2015 USEITI Report.</p>
 
@@ -103,7 +103,7 @@ permalink: /downloads/reconciliation/
 
     <p>The MSG identified that ONRR collects a majority of DOI’s extractive industries-related revenue. The MSG decided to use ONRR’s reported revenue as a proxy for DOI revenue to establish the materiality threshold for reporting. The MSG decided on a materiality threshold for the 2015 USEITI Report of $50 million total annual revenue reported to ONRR by a parent company, including its subsidiaries, which was presented and approved as part of the <a href="http://www.cbuilding.org/sites/default/files/USEITI_Candidacy_Application_Approved_0.pdf">USEITI candidacy application (PDF)</a>. The MSG agreed on this threshold because it would allow at least 80% of ONRR’s revenue to be in-scope for the reconciliation. A more detailed analysis of ONRR revenue data revealed that the $50 million threshold resulted in 84% of ONRR revenue being in-scope for the reconciliation. DOI’s unilateral disclosure covers 100% of revenue from all companies operating within the U.S.</p>
 
-    <h3 class="h4">In-scope companies</h3>
+    <h3 id="in-scope-companies" class="h4">In-scope companies</h3>
 
     <ul class="list-bullet">
         <li>Alpha Natural Resources, Inc.</li>

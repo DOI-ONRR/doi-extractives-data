@@ -1,4 +1,5 @@
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
+{% assign county_revenue = site.data.county_revenue[state_id] %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
 {% assign units = '$' %}
 {% assign year_range = '[2006, 2015]' %}
@@ -45,32 +46,56 @@
       </article>
     </div>
 
-    <section class="chart-list has-intro">
 
-      <h4>Federal revenue by county</h4>
+    <h3>Federal revenue by county</h3>
+
+    <section class="chart-list has-intro">
 
       <div class="chart-selector-wrapper">
 
-        {% include year-selector.html year_range=year_range %}
+        {% if revenue_commodities %}
+          {% assign empty_years = '' | split:'' %}
+          {% for y in year_list %}
+            {% assign s_y = y | to_s %}
+            {% for _commodity in revenue_commodities %}
+              {% unless _commodity[1][s_y].size %}
+                {% if _commodity[0] != "Total" and _commodity[0] != "All" %}
+                  {% assign empty_years = empty_years | push:s_y %}
+                {% endif %}
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
 
-        <p class="chart-description">
-          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
-        </p>
+          {% assign empty_years = empty_years | join:',' %}
+          <!-- {{ empty_years }} -->
+          {% include year-selector.html year_range=year_range empty_years=empty_years %}
+        {% endif %}
+
+        {% if revenue_commodities %}
+          <p class="chart-description">
+            In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+          </p>
+        {% else %}
+          <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+          </p>
+        {% endif %}
       </div>
 
-      <section class="county-map-table">
-        {% assign county_revenue = site.data.county_revenue[state_id] %}
-        {%
-          include location/state-federal-revenue-county.html
-          county_revenue=county_revenue
-          state_revenue=revenue_commodities
-          year=year
-          year_range=year_range
-        %}
-      </section>
-
+      {% if revenue_commodities %}
+        <section class="county-map-table">
+          {%
+            include location/state-federal-revenue-county.html
+            county_revenue=county_revenue
+            state_revenue=revenue_commodities
+            year=year
+            year_range=year_range
+          %}
+        </section>
+      {% endif %}
     </section>
     <!-- .chart-list -->
+
 
     <h3>Federal tax revenue</h3>
 

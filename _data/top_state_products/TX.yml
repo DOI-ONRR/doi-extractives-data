@@ -18,12 +18,6 @@ all_production:
       value: 4237000
       rank: 2
       percent: 23.79
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 45938679
-      rank: 2
-      percent: 5.82
   '2006':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -43,12 +37,6 @@ all_production:
       value: 392481000
       rank: 1
       percent: 18.51
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 45547617
-      rank: 2
-      percent: 5.54
   '2007':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -68,12 +56,6 @@ all_production:
       value: 391270000
       rank: 1
       percent: 18.53
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 41948406
-      rank: 3
-      percent: 5.17
   '2008':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -93,12 +75,6 @@ all_production:
       value: 406007000
       rank: 1
       percent: 19.56
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 39016927
-      rank: 3
-      percent: 4.72
   '2009':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -137,12 +113,6 @@ all_production:
       value: 426666000
       rank: 1
       percent: 19.27
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 40982001
-      rank: 3
-      percent: 5.23
   '2011':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -162,12 +132,6 @@ all_production:
       value: 528844000
       rank: 1
       percent: 23.41
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 45903597
-      rank: 2
-      percent: 5.8
   '2012':
     - product: Oil (bbl)
       name: Oil
@@ -206,12 +170,6 @@ all_production:
       value: 35874000
       rank: 1
       percent: 21.37
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 42850619
-      rank: 3
-      percent: 5.82
 revenue:
   '2010':
     - product: Oil & Gas (Non-Royalty)

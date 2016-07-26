@@ -194,7 +194,11 @@
 
     function isInSet (year, vals) {
       var vals = vals || values;
-      return vals[year]
+      if (vals[year]) {
+        return vals[year].y;
+      } else {
+        return vals[year];
+      }
     }
 
     xAxis.selectAll('text')

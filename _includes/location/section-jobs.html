@@ -7,6 +7,7 @@
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
 {% assign year_range = '[2004, 2013]' %}
+{% assign year_list = year_range | to_list %}
 
 
 <section id="employment" class="economic employment">
@@ -100,9 +101,21 @@
   <section class="chart-list" is="year-switcher-section">
     <div class="chart-selector-wrapper">
 
-      {% include year-selector.html year_range=year_range %}
+      {% if self_employment_jobs %}
+        {% assign empty_years = '' | split:'' %}
+        {% for y in year_list %}
+          {% assign s_y = y | to_s %}
+            {% unless self_employment_jobs[s_y].size %}
+              {% assign empty_years = empty_years | push:s_y %}
+            {% endunless %}
+        {% endfor %}
 
-      <div class="chart-description">
+        {% assign empty_years = empty_years | join:',' %}
+        <!-- {{ empty_years }} -->
+        {% include year-selector.html year_range=year_range empty_years=empty_years %}
+      {% endif %}
+
+      <div class="chart-description {% if self_employment_jobs %} no-selector{% endif %}">
         <p>
           <strong>Self-employment data</strong> describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
         </p>

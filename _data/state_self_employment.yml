@@ -219,9 +219,6 @@ DC:
   '2004':
     count: 207
     percent: 0.03
-  '2005':
-    count: 0
-    percent: 0
   '2006':
     count: 220
     percent: 0.03
@@ -250,33 +247,12 @@ DE:
   '2004':
     count: 142
     percent: 0.03
-  '2005':
-    count: 0
-    percent: 0
   '2006':
     count: 165
     percent: 0.03
   '2007':
     count: 177
     percent: 0.03
-  '2008':
-    count: 0
-    percent: 0
-  '2009':
-    count: 0
-    percent: 0
-  '2010':
-    count: 0
-    percent: 0
-  '2011':
-    count: 0
-    percent: 0
-  '2012':
-    count: 0
-    percent: 0
-  '2013':
-    count: 0
-    percent: 0
 FL:
   '2004':
     count: 7098
@@ -662,21 +638,12 @@ ME:
   '2007':
     count: 626
     percent: 0.08
-  '2008':
-    count: 0
-    percent: 0
-  '2009':
-    count: 0
-    percent: 0
   '2010':
     count: 690
     percent: 0.09
   '2011':
     count: 640
     percent: 0.08
-  '2012':
-    count: 0
-    percent: 0
   '2013':
     count: 1001
     percent: 0.12
@@ -1226,18 +1193,9 @@ RI:
   '2009':
     count: 241
     percent: 0.04
-  '2010':
-    count: 0
-    percent: 0
-  '2011':
-    count: 0
-    percent: 0
   '2012':
     count: 359
     percent: 0.06
-  '2013':
-    count: 0
-    percent: 0
 SC:
   '2004':
     count: 797

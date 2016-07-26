@@ -201,7 +201,8 @@ data/state_self_employment.yml:
 		FROM self_employment \
 		WHERE \
 		  region IS NOT NULL AND \
-		  region != 'US' \
+		  region != 'US' AND \
+		  jobs > 0  \
 		ORDER BY state, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_jobs.yml \

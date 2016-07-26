@@ -11,12 +11,9 @@
   </thead>
   <tbody>
   {% for county in include.values %}
-    {% if county[1].employment[include.year].count > 0 %}
-
     {% assign years_values = county[1].employment %}
 
     {% assign jobs_percent = county[1].employment[year].percent %}
-    <!-- {{ jobs_percent }} -->
     {% assign jobs_count = county[1].employment[year].count %}
 
     <tr data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
@@ -37,7 +34,6 @@
           data-years-property='percent'
           data-format='%'>{{ jobs_percent }}%</td>
     </tr>
-    {% endif %}
   {% endfor %}
   </tbody>
 </table>

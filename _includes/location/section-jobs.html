@@ -13,7 +13,7 @@
 <section id="employment" class="economic employment">
 
   <h3>Wage and salary jobs</h3>
-
+  <!-- {% if jobs %}JOBS{% else %}NO JOBS{% endif %} -->
   <section is="year-switcher-section" class="chart-list">
 
     <div class="chart-selector-wrapper">
@@ -62,6 +62,11 @@
       {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
 
       <div class="map-container">
+
+        <h4 class="chart-title">
+          Local wage and salary jobs
+        </h4>
+
         <figure class="container">
           <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
             {% capture value_key %}employment.{{ year }}.count{% endcapture %}

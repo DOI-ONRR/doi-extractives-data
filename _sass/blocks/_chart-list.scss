@@ -31,7 +31,6 @@
   .chart-item {
     @include span-columns(4);
 
-
     border-top: none;
     display: flex;
     -ms-flex-direction: column;
@@ -40,12 +39,15 @@
     margin-bottom: $base-padding;
     margin-top: 0;
     padding-top: 0;
+  }
 
+  .chart-item,
+  .details-container {
     button {
-      background: $white;
+      @include font-size(0.8);
+
+      background-color: $white;
       color: $dark-gray;
-      font-size: small;
-      //FIXME
     }
   }
 

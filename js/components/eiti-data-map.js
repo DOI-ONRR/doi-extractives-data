@@ -3,7 +3,6 @@
   require('d3-svg-legend');
 
   var eiti = require('./../eiti');
-  var format = eiti.format;
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
@@ -65,7 +64,11 @@
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
           var units = this.getAttribute('units') || '';
+          var format = this.getAttribute('format');
           var legendDelimiter = '–';
+          var legendFormat = format === '$'
+            ? eiti.format.dollars
+            : eiti.format.si;
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
@@ -119,11 +122,10 @@
           var svgLegend = d3.select(this)
             .select('.legend-svg');
 
-
           if (!svgLegend.empty()) {
 
             var legend = d3.legend.color()
-              .labelFormat(format.si)
+              .labelFormat(legendFormat)
               .useClass(false)
               .ascending(true)
               .labelDelimiter(legendDelimiter)

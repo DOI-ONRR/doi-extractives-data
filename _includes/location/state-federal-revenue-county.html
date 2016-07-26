@@ -70,7 +70,7 @@
         {% assign _width ='inherit' %}
         {% capture caption %}Local revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
-        <eiti-data-map color-scheme="Reds" steps="{{ steps }}" units="{{ units }}">
+        <eiti-data-map color-scheme="Reds" steps="{{ steps }}" units="{{ units }}" format="$">
 
           {%
             include county-map.html

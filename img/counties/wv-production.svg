@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="507px" height="300px" viewBox="0 0 507 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-boone-coal-prod</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Line-Chart---Boone-coal-prod" transform="translate(-124.000000, -84.000000)">
+            <g id="chart-boone-coal-prod" transform="translate(124.000000, 84.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="506" height="300"></rect>
+                <text id="Logan-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="230" y="273">Logan County</tspan>
+                </text>
+                <text id="Mingo-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="345" y="273">Mingo County             </tspan>
+                </text>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="91" y="224" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="91" y="194" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="91" y="164" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="91" y="134" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="91" y="104" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="91" y="74" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="91" y="44" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-8" fill="#ECECEC" fill-rule="evenodd" x="91" y="14" width="415.257812" height="1"></rect>
+                <text id="Boone-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="112" y="273">Boone County</tspan>
+                </text>
+                <text id="Coal-(thousand-tons)" transform="translate(10.000000, 114.000000) rotate(-90.000000) translate(-10.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-47.239" y="117">Coal (thousand tons)</tspan>
+                </text>
+                <text id="70,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="30" fill="#4A4A4A">
+                    <tspan x="28.635" y="18">70,000</tspan>
+                    <tspan x="28.635" y="48">60,000</tspan>
+                    <tspan x="28.635" y="78">50,000</tspan>
+                    <tspan x="28.635" y="108">40,000</tspan>
+                    <tspan x="28.635" y="138">30,000</tspan>
+                    <tspan x="28.635" y="168">20,000</tspan>
+                    <tspan x="28.635" y="198">10,000</tspan>
+                    <tspan x="63.88" y="228">0</tspan>
+                </text>
+                <path d="M94,268 L106,268" id="Line-Copy-9" stroke="#96BC7F" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M211,268 L223,268" id="Line-Copy-10" stroke="#157BAC" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M326,268 L338,268" id="Line-Copy-11" stroke="#965080" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M94,288 L106.041595,288" id="Line-Copy-13" stroke="#757575" stroke-width="4" stroke-linecap="round"></path>
+                <text id="2005" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="101.26" y="243">2005</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="460.26" y="243">2014</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="146.9975" y="243">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="185.9975" y="243">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="225.9975" y="243">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="265.9975" y="243">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="305.9975" y="243">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="345.9975" y="243">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="385.9975" y="243">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="425.9975" y="243">’13</tspan>
+                </text>
+                <polyline id="Line" stroke="#96BC7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="118.243545 181.862717 158.040039 178 196.765625 184.666016 237.227539 185.395508 277.053711 200.579102 317.224609 198.464844 357.179687 200.756836 397.109375 203.902344 437.106445 208.951172 477.867188 210.449219"></polyline>
+                <polyline id="Line-Copy" stroke="#965080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="117.981445 187.989258 158.017578 186.28125 197.089844 182.100586 236.958008 169 276.853516 173.90625 316.753906 176.40332 357.055664 173.59082 397.041992 178.385742 436.90918 184.941406 477.478516 186.552734"></polyline>
+                <polyline id="Line-Copy-2" stroke="#157BAC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="118.134688 131.557031 158.015625 132.28418 197.102539 125 237.207031 132.53125 276.963867 146.239258 317.209961 156.97168 356.863281 157.829102 396.867187 174.551758 437.147461 181.266602 477.498047 182.039062"></polyline>
+                <polyline id="Line-Copy-17" stroke="#757575" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="117.960938 50.8779297 157.751953 46.71875 197.617188 41.1386719 236.904297 37 277.088867 71.4824219 317.004883 82.46875 357.026367 82.1972656 397.147461 108.256836 436.783203 125.451172 478.089844 131.365234"></polyline>
+                <text id="All-three-counties" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="112" y="293">All three counties</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

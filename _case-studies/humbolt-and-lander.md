@@ -40,14 +40,19 @@ Nevada is currently experiencing the biggest gold boom in U.S. history, which be
 
 The two major gold-mining companies behind this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate open pit mining operations.[^8] Gold production in Humboldt and Lander counties totaled 2,203,219 ounces in 2014, accounting for 45% of the state’s total gold production that year.[^9]
 
-<img src="{{ site.baseurl }}/img/counties/nv-humboldt-production.png" alt="Humboldt and Lander Counties Gold Production from 2008–2012" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Gold production in Humboldt and Lander counties</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/nv-humboldt-production.svg" alt="Chart shows gold production in Humboldt and Lander counties from 2008 to 2014. The y-axis represents ounces of gold produced, and tops out at 3 million. Annual gold production, which was between 1.5 million and 2.6 million ounces for all years, went up from 2008-2011 then declined in 2012 and 2014. There is no data for 2013. Gold production in Humboldt County was between 600,000 and 1.1 million ounces each year, and production in Lander County was between 500,000 and 1.6 million ounces each year." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 In 2014, gold mining provided jobs for 5,234 workers, which represented 26% of the two counties' population of 23,261.[^10] 2,340 employees and contractors were employed in Humboldt County and 2,894 were employed in Lander County.[^11]
 
-[NEW IMAGE]
-
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in the gold mining industry</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/nv-humboldt-wage.svg" alt="Chart shows the number of jobs in the gold mining industry in Humboldt and Lander counties from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000. The total number of jobs in the mining industry each year ranges from about 1,900 in 2005 to about 6,000 in 2011 and 2012, and rose each year between those points. For 2013 and 2014, the number of jobs in gold mining is about 5,100." class="case_studies_content-graph">
+</figure>
 <h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
 
 Gold-mining serves as a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2014, Nevada counties received a total of $103 million in state and county Net Proceeds of Minerals Taxes. $52.5 million went to the state and $50.5 million went directly to counties.[^12] 

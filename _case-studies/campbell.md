@@ -40,13 +40,19 @@ In 2014, Campbell County produced 348 million tons of coal, accounting for 89% o
 
 Production levels fluctuated little between 2005 and 2014. For instance, 2014’s levels were 4% below 2005 production, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^12] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the U.S.
 
-<img src="{{ site.baseurl }}/img/counties/wy-production.png" alt="Campbell County Coal Production 2004–2013" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Coal production in Campbell County</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2005 to 2014 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2005-2008 then declined most years until 2013, with slight upticks or plateaus in 2010 and 2014." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 The coal mining industry provides employment for 7,398 workers in Campbell County (out of a total population of 48,320), representing approximately 15% of county residents and 31% of total employment.[^13] The chart below shows the county employment trend in the broader mining industry from 2004 through 2014, including mining and mining-support activities.[^14]
 
-<img src="{{ site.baseurl }}/img/counties/wy-wage.png" alt="Campbell County Mining Industry vs. All Other Industries Wage and Salary Employment 2004–2013" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in Campbell County:<br>Mining industry vs. all other industries</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/wy-wage.svg" alt="Chart shows the number of jobs in Campbell County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 35,000, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. The total number of jobs each year ranges from about 23,000 in 2005 to a little under 30,000 in 2008. After 2008, the total number of jobs hovers between 27,500 and 29,000 until 2014, when it drops to under 25,000. The percentage of jobs in the mining industry is between 25% and 27% for all years except 2014, when it rises to 31% (the number of mining industry jobs is steady between 2013 and 2014, but the number of jobs in other industries declines)." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
 

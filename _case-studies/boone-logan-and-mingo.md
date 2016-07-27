@@ -40,13 +40,19 @@ In 2014, 29 underground mines and 29 surface mines were operating across the thr
 
 Cumulatively, mines in Boone, Logan, and Mingo counties produce about 27% of West Virginia’s annual output.[^9] Coal production in these counties reached a high of 62.3 million tons in 2008 before dropping 31.5 million tons (a 50% decrease) to their 2014 output level of 30.7 million tons.[^10] Logan is the only one of the three counties whose production total in 2014 was greater than it had been ten years prior, while while Boone and Mingo production fell 55.7% and 65% respectively.[^11]
 
-<img src="{{ site.baseurl }}/img/counties/wv-production.png" alt="Coal Production: Boone, Logan, and Mingo Counties from 2004-2013" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Coal production for Boone, Logan, and Mingo counties</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/wv-production.svg" alt="Chart of coal production in the three counties from 2005 to 2014. Y-axis represents thousands of tons of coal and the maximum value is 70,000. Coal production rose from under 60,000 in 2005 to over 60,000 in 2008, then declined to just over 30,000 in 2014. Of the three counties, Logan County produced the most coal, and Boone produced the least in most of the years shown." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 Coal extraction has provided employment in these communities for the past century, but employment is declining in tandem with the region’s dropping production levels and the industry’s increased mechanization. Between 2013 and 2014, the number of employees working in the coal industry in southern West Virginia fell by 14%.[^12] In 2014, the combined population of the three counties was 84,778.[^13] That year, 3,031 people were employed at underground mines and 1,998 people were employed at surface mines across the three counties.[^14] This translates to 26.8% of the total employed population, or 6% of the total population. These numbers marked a 22% drop in the sector’s employment since 2005.[^15] Employment in Boone County alone fell by 25% from 2013 to 2014.[^16] The following graph illustrates changes in mining employment across these three counties from 2005 through 2014, compared with employment in all other industries.[^17] [^18] While overall employment rose 1% from 2013 to 2014, mining employment fell 20%.[^19]
 
-<img src="{{ site.baseurl }}/img/counties/wv-wage.png" alt="Boone, Logan, and Mingo Counties Mining Industry vs. All Other Industries Wage and Salary Employment from 2004–2013" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in Boone, Logan, and Mingo counties:<br>Mining industry vs. all other industries</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2005 to 2014. The y-axis goes up to 25,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 17,500 and under 21,000, and the percentage of jobs in the mining industry is between 25%, in 2014, and 39%, in 2008." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
 

@@ -78,3 +78,9 @@ data-map {
     @include font-size(3 / 4);
   }
 }
+
+.legend-svg.horizontal {
+  .cell text {
+    font-size: 10px;
+  }
+}

@@ -41,7 +41,10 @@ In 2014, Louisiana had a total of 23.25 trillion cubic feet of proved natural ga
 
 In 2014, the U.S. Energy Information Administration estimated that there were 16.6 trillion cubic feet of {{ "proved reserves" | term }} in the Haneysville/Bossier Shale in Texas and Louisiana.[^7] Louisiana ranked fifth in the nation for proved shale gas reserves.[^8]
 
-<img src="{{ site.baseurl }}/img/counties/la-production.png" alt="Northern Louisiana Natural Gas Production" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Natural gas production in northern Louisiana</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 

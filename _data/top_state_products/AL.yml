@@ -75,13 +75,6 @@ revenue:
       rank: 2
       percent: null
 all_production:
-  '2012':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 5041
-      rank: 2
-      percent: 12.1
   '2014':
     - product: Natural Gas (mcf)
       name: Natural Gas

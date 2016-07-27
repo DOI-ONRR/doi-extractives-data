@@ -1,18 +1,34 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 
 {% assign year_range = '[2011, 2014]' %}
+{% assign year_list = year_range | to_list %}
 
+{% assign empty_years = ',' | split:',' %}
 <section id="exports" is="year-switcher-section" class="economic exports">
+
 
   <h3>Exports</h3>
 
   <div class="chart-list">
 
     <div class="chart-selector-wrapper">
+      {% if export_commodities.size > 1 %}
+        {% for y in year_list %}
+          {% assign s_y = y | to_s %}
+          {% for _commodity in export_commodities %}
+            {% unless _commodity[1][s_y].size %}
+              {% if _commodity[0] != "Total" and _commodity[0] != "All" %}
+                {% assign empty_years = empty_years | push:s_y %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        {% endfor %}
+        {% assign empty_years = empty_years | join:',' %}
 
-      {% include year-selector.html year_range=year_range %}
+        {% include year-selector.html year_range=year_range empty_years=empty_years %}
+      {% endif %}
 
-      <p class="chart-description">
+      <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
         {% include location/key-exports.html %} The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
       </p>
     </div>

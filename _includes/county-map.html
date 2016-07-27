@@ -69,11 +69,13 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">&plus; Details</button>
+        aria-controls="{{ include.toggle }}">&plus;
+        {% if include.toggle_text %}
+          {{ include.toggle_text}}
+        {% else %}Show table{% endif %}
+      </button>
     </h4>
   {% endif %}
-
-
 </div>
 
 <div class="legend-container">
@@ -88,5 +90,4 @@
   {% endif %}
 
   <svg class="legend-svg"></svg>
-
 </div>

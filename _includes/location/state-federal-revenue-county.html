@@ -39,27 +39,12 @@
         </eiti-bar-chart>
 
       </figure>
-
-      <!-- <h4>
-        <button is="aria-toggle"
-          aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
-      </h4>
-      <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
-        {%
-          include location/display-production.html
-          units=units
-          year=year
-          values=production_values
-          percent=true
-          rank=true
-        %}
-      </div> -->
     </div><!-- /.chart-container -->
 
     <div class="map-container">
 
       <h4 class="chart-title">
-        Revenue collected by county
+        Revenue collected by locality
       </h4>
 
 
@@ -70,7 +55,7 @@
         {% assign _width ='inherit' %}
         {% capture caption %}Local revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
-        <eiti-data-map color-scheme="Reds" steps="{{ steps }}" units="{{ units }}">
+        <eiti-data-map color-scheme="Reds" steps="{{ steps }}" units="{{ units }}" format="$">
 
           {%
             include county-map.html

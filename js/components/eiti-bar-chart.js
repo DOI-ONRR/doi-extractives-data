@@ -188,10 +188,27 @@
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, bottom] + ')');
 
-    svg.select('.x-axis')
+    var xAxis = svg.select('.x-axis')
       .attr('transform', 'translate(' + [0, bottom] + ')')
-      .call(axis)
-      .selectAll('path, line')
+      .call(axis);
+
+    function isInSet (year, vals) {
+      var vals = vals || values;
+      if (vals[year]) {
+        return vals[year].y;
+      } else {
+        return vals[year];
+      }
+    }
+
+    xAxis.selectAll('text')
+      .attr('class', function(d) {
+        if (!isInSet(d)){
+          return 'dataless';
+        }
+      });
+
+    xAxis.selectAll('path, line')
         .attr('fill', 'none');
 
     svg.append('g')

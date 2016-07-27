@@ -15,7 +15,7 @@
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",
     "d3-queue": "^1.0.7",
-    "d3-svg-legend": "^1.10.0",
+    "d3-svg-legend": "github:gemfarmer/d3-legend",
     "document-register-element": "^0.5.3",
     "immutable": "^3.7.6",
     "jquery": "^1.11.3",

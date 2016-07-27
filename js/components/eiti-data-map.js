@@ -14,6 +14,7 @@
               return +this.getAttribute('data-value') || 0;
             });
 
+          this.detectWidth();
           this.update();
         }},
 
@@ -32,6 +33,50 @@
             .text(year)
 
           this.update();
+        }},
+
+        detectWidth: {value: function() {
+          var root = d3.select(this);
+          var svgMap = root.select('svg.county.map');
+          var svgContainer = root.select('.svg-container');
+          var legendContainer = root.select('.legend-container');
+
+          if (!svgMap.empty()) {
+            var svgMapBBox = svgMap.node().getBBox()
+            var svgDimensions = svgMap.attr('viewBox')
+
+            if (svgDimensions) {
+              svgDimensions = svgDimensions.split(' ');
+              if (svgDimensions.length === 4) {
+                var width = +svgDimensions[2];
+                var height = +svgDimensions[3];
+                // if a map's width is more than 50% a map's height
+                // then make it a wide view
+                if (width > height * 1.5) {
+                  this.isWideView = true;
+                  console.log(this, this.isWideView)
+                  if (!svgContainer.empty()) {
+                    svgContainer.classed('wide', true);
+                  }
+
+                  if (!legendContainer.empty()) {
+                    legendContainer.classed('wide', true);
+                  }
+                }
+              }
+
+            }
+
+            // if (svgMapBBox.height < svgMapBBox.width) {
+            //   if (!svgContainer.empty()) {
+            //     svgContainer.classed('wide', true);
+            //   }
+
+            //   if (!legendContainer.empty()) {
+            //     legendContainer.classed('wide', true);
+            //   }
+            // }
+          }
         }},
 
         update: {value: function() {
@@ -69,6 +114,14 @@
           var legendFormat = format === '$'
             ? eiti.format.dollars
             : eiti.format.si;
+          var orient = this.isWideView
+            ? 'horizontal'
+            : 'vertical';
+          var shapeWidth = this.isWideView
+            ? 40
+            : 15;
+
+          console.log('orient', orient)
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
@@ -91,7 +144,6 @@
           }
 
           // FIXME: do something with divergent scales??
-
           var scale = d3.scale[type]()
             .domain(domain)
             .range(colors);
@@ -126,8 +178,11 @@
 
             var legend = d3.legend.color()
               .labelFormat(legendFormat)
+              .labelFloor(false)
               .useClass(false)
               .ascending(true)
+              .orient(orient)
+              .shapeWidth(shapeWidth)
               .labelDelimiter(legendDelimiter)
               .shapePadding(6)
               .scale(scale);
@@ -148,25 +203,25 @@
             var uniqueSteps = getUnique(marks.data(), _steps, domain);
 
             // start consolidate (translate) visible cells
-            var cells = svgLegend.selectAll('.cell');
-            var cellHeight = legend.shapeHeight() + legend.shapePadding();
-            var count = 0;
-            cells.each(function(cell, i) {
-              var present = uniqueSteps.indexOf(i) > -1;
+            // var cells = svgLegend.selectAll('.cell');
+            // var cellHeight = legend.shapeHeight() + legend.shapePadding();
+            // var count = 0;
+            // cells.each(function(cell, i) {
+            //   var present = uniqueSteps.indexOf(i) > -1;
 
-              if (!present) {
-                // hide cells swatches that aren't in the map
-                cells[0][i].setAttribute('aria-hidden', true);
-                count++;
-              } else  {
+            //   if (!present) {
+            //     // hide cells swatches that aren't in the map
+            //     cells[0][i].setAttribute('aria-hidden', true);
+            //     count++;
+            //   } else  {
 
-                // trim spacing between swatches that are visible
-                var translateHeight = (i * cellHeight) - (count * cellHeight);
-                cells[0][i].setAttribute('transform',
-                  'translate(0,' + translateHeight + ')');
-                cells[0][i].setAttribute('aria-hidden', false);
-              }
-            });
+            //     // trim spacing between swatches that are visible
+            //     var translateHeight = (i * cellHeight) - (count * cellHeight);
+            //     cells[0][i].setAttribute('transform',
+            //       'translate(0,' + translateHeight + ')');
+            //     cells[0][i].setAttribute('aria-hidden', false);
+            //   }
+            // });
             // end consolidation
             // end map legend
           } else {

@@ -181,10 +181,10 @@
 
       &.wide {
         @include span-columns(12);
-        height: 100px;
+        height: 130px;
+        padding: 0;
 
         .legend-svg {
-          height: 100%;
           width: 100%;
         }
       }

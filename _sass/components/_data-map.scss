@@ -72,6 +72,26 @@ data-map {
   right: $standard-padding-lite;
 }
 
+eiti-data-map {
+  .svg-container.wide {
+    .details-container {
+      display: none;
+    }
+  }
+
+  .legend-container {
+    .details-container {
+      display: none;
+    }
+
+    &.wide .details-container {
+      display: block;
+      position: static;
+      text-align: right;
+    }
+  }
+}
+
 .legend-svg,
 .legend-ownership-svg {
   border: none;
@@ -95,6 +115,10 @@ data-map {
   .legend-ownership-svg {
     width: 100%;
     height: 100px;
+  }
+
+  .legend-svg.horizontal {
+    height: 50px;
   }
 }
 

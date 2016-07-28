@@ -18,6 +18,8 @@
 
           if (!root.select('.svg-container').classed('wide')) {
             this.detectWidth();
+          } else {
+            this.isWideView = true;
           }
           this.update();
         }},

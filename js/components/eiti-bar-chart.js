@@ -1,5 +1,6 @@
 (function(exports) {
 
+  var eiti = require('./../eiti');
   // symbols for "private" variables
   var DATA = '__es_data__';
   var X = '__es_x__';
@@ -12,8 +13,9 @@
 
   var textMargin = 18;
   var baseMargin = 2;
+  var extentMargin = 18;
   var margin = {
-    top: 0,
+    top: extentMargin,
     right: baseMargin,
     bottom: textMargin,
     left: baseMargin
@@ -144,7 +146,7 @@
     bars.exit().remove();
 
     bars.attr('transform', function(d) {
-      return 'translate(' + [x(d.x), 0] + ')';
+      return 'translate(' + [x(d.x), top] + ')';
     });
 
     bars.select('.bar-value')
@@ -187,6 +189,30 @@
         .attr('x1', 0)
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, bottom] + ')');
+
+    var extentLine = svg.append('g')
+      .attr('class', 'extent-line')
+
+    var dataUnits = this.getAttribute('data-units'),
+    dataFormat = this.getAttribute('data-format') || '';
+
+    if (dataUnits.indexOf('$') > -1) {
+      dataFormat = eiti.format.dollars;
+      dataUnits = null;
+    } else {
+      dataFormat = eiti.format.si;
+    }
+
+    var extentText = [ dataFormat(ymax), dataUnits ].join(' ');
+
+    extentLine.append('text')
+      .text(extentText)
+      .attr('transform', 'translate(' + [0, top - 5] + ')');
+
+    extentLine.append('line')
+      .attr('x1', 0)
+      .attr('x2', width)
+      .attr('transform', 'translate(' + [0, top] + ')');
 
     var xAxis = svg.select('.x-axis')
       .attr('transform', 'translate(' + [0, bottom] + ')')

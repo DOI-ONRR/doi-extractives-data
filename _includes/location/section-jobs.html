@@ -61,13 +61,14 @@
                 {{ jobs[year].jobs | intcomma }}
               </span>
               jobs in extractive industries that paid a wage or salary in
-              {{ state_name }}.
+              {{ state_name }}
             </figcaption>
             <eiti-bar-chart
               aria-controls="jobs-figures-{{ _metric }}"
               data='{{ jobs | map_hash: _metric | jsonify }}'
               x-range="{{ year_range }}"
-              x-value="{{ year }}">
+              x-value="{{ year }}"
+              data-units="jobs">
             </eiti-bar-chart>
           </figure><!-- /.chart -->
 
@@ -159,13 +160,14 @@
             {{ self_employment_jobs[year].jobs | intcomma }}
           </span>
           of people were self-employed in the extractive industries
-          {{ state_name }}.
+          {{ state_name }}
         </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
           data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
           x-range="{{ year_range }}"
-          x-value="{{ year }}">
+          x-value="{{ year }}"
+          data-units="jobs">
         </eiti-bar-chart>
 
       </figure>

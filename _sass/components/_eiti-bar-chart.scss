@@ -73,11 +73,8 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
-  @include font-size(1.1);
-
   color: $green-dark-chart;
   font-weight: $weight-bold;
-
 }
 
 .x-axis-label {
@@ -87,6 +84,18 @@ eiti-bar-chart {
     @include font-size(1);
 
     text-anchor: middle;
+  }
+}
+
+.extent-line {
+  text {
+    @include font-size(0.9);
+  }
+
+  line {
+    stroke: $green-dark-chart;
+    stroke-dasharray: 3,5;
+    stroke-width: 2;
   }
 }
 

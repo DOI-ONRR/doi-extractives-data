@@ -58,7 +58,8 @@
             aria-controls="gdp-figures-{{ _metric }}"
             data='{{ gdp | map_hash: _metric | jsonify }}'
             x-range="{{ year_range }}"
-            x-value="{{ year }}">
+            x-value="{{ year }}"
+            data-units="{{ _metric }}">
           </eiti-bar-chart>
 
         </figure>

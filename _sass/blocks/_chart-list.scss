@@ -76,10 +76,10 @@
   }
 
   figcaption {
-    @include font-size(1);
+    @include font-size(0.9);
 
     font-weight: $weight-light;
-    min-height: 100px;
+    min-height: 90px;
     padding: $base-padding-lite;
 
     > :last-child {

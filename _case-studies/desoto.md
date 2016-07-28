@@ -43,14 +43,17 @@ In 2014, the U.S. Energy Information Administration estimated that there were 16
 
 <figure>
   <figcaption class="case_studies_content-graph-caption">Natural gas production in northern Louisiana</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph." class="case_studies_content-graph">
+  <img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph. The y-axis represents thousands of cubic feet of natural gas, and tops out at 3 trillion cubic feet. From 2005 to 2009, annual natural gas production rose from about 1.2 to 1.4 trillion cubic feet, then rose to levels of over 2.8 trillion in 2011 and 2012. Since 2012, production declined to its 2014 level of under 1.9 trillion." class="case_studies_content-graph">
 </figure>
 
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 Out of DeSoto’s 27,000 residents, 548 people (or about 2%) were employed in mining-support activities in 2013, which included oil and gas extraction.[^9] [^10] Of this group, about half (271 people) were employed specifically in support activities for oil and gas extraction.[^11] More recent employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries — specifically mining, quarrying, and oil and gas extraction — in DeSoto Parish between 2005 and 2014.[^12]
 
-<img src="{{ site.baseurl }}/img/counties/la-wage.png" alt="DeSoto Parish Mining, Quarrying, and Oil and Gas Extraction Industries vs. All Other Industries Wage and Salary Employment 2004–2013" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in DeSoto Parish:<br>Extractive industries vs. all other industries</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 4% (in 2005) and 21% (in 2012). In both 2013 and 2014, there were about 1,000 jobs in the extractive industries, which represented 18% of DeSoto Parish jobs." class="case_studies_content-graph">
+</figure>
 
 <h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
 
@@ -64,7 +67,10 @@ Natural gas exploration and development also spurred greater revenue from sales 
 
 Sales and use taxes are deposited into the General Fund, School Lunch Fund, Debt Service Fund, and Capital Projects Fund.[^25] While sales and use taxes are not solely attributable to the natural gas industry, there is a noticeable decline in this revenue stream when the industry faces slowdowns. For example, sales and use taxes declined by $27 million (40%) in 2013 compared to the prior fiscal year, as exploration for oil and natural gas moved to other parts of the country.[^26]
 
-[NEW BAR GRAPH: Sales and use tax trends]
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Sales and use taxes</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/la-tax.svg" alt="Chart shows sales and use tax trends in DeSoto Parish as a bar graph. The y-axis represents millions of dollars and tops out at $80 million. Sales and use taxes in the parish range from under $10 million in 2005 to over $70 million in 2011. In 2012, tax revenue dropped to under $50 million, then just over $20 million in 2013 and 2014." class="case_studies_content-graph">
+</figure>
 
 Property taxes also contribute substantially to the school board’s revenue, funding employee salaries, operations, and debt service payments on capital bonds for the local education system.[^27] The amount of revenue from property taxes increased by 45% from 2012 ($26.5 million) to 2015 ($38.4 million).[^28] State tax documents do not specify what percentage of property taxes comes from the gas industry.
 

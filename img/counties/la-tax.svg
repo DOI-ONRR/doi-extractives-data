@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="484px" height="257px" viewBox="0 0 484 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-desoto-tax</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="25-Bar-Chart---Sales-and-use-tax-trends" transform="translate(-126.000000, -81.000000)">
+            <g id="chart-desoto-tax" transform="translate(126.000000, 81.000000)">
+                <rect id="Rectangle-9" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="484" height="257"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="68" y="226.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="68" y="200.742692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="68" y="174.492692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="68" y="148.242692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="68" y="121.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="68" y="95.742692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="68" y="69.492692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-8" fill="#ECECEC" fill-rule="evenodd" x="68" y="16.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-9" fill="#ECECEC" fill-rule="evenodd" x="68" y="43.242692" width="415.257812" height="1"></rect>
+                <text id="Millions-of-dollars" transform="translate(12.000000, 114.000000) rotate(-90.000000) translate(-12.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-36.72075" y="117">Millions of dollars</tspan>
+                </text>
+                <text id="$80" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="26.2999992" fill="#4A4A4A">
+                    <tspan x="24.64" y="16.7000008">$80</tspan>
+                    <tspan x="32.76" y="43">70</tspan>
+                    <tspan x="32.76" y="69.2999992">60</tspan>
+                    <tspan x="32.76" y="95.5999985">50</tspan>
+                    <tspan x="32.76" y="121.899998">40</tspan>
+                    <tspan x="32.76" y="148.199997">30</tspan>
+                    <tspan x="32.76" y="174.499996">20</tspan>
+                    <tspan x="32.76" y="200.799995">10</tspan>
+                    <tspan x="40.88" y="227.099995">0</tspan>
+                </text>
+                <text id="2005" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="78.26" y="246">2005</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="123.9975" y="246">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="163.9975" y="246">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="202.9975" y="246">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="242.9975" y="246">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="282.9975" y="246">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="322.9975" y="246">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="362.9975" y="246">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="402.9975" y="246">’13</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="437.26" y="246">2014</tspan>
+                </text>
+                <path d="M94,227 L94,205.976204" id="Line-Copy-11" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M134,227.003658 L134,201.504973" id="Line-Copy-12" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M174,227.000843 L174,190.778465" id="Line-Copy-13" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M214,227.000771 L214,190.944488" id="Line-Copy-14" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M254,227.000843 L254,154" id="Line-Copy-15" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M294,227.000858 L294,84.9859163" id="Line-Copy-16" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M334,227 L334,34.9895836" id="Line-Copy-17" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M374,227.000874 L374,100.964291" id="Line-Copy-18" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M414,227 L414,168.99138" id="Line-Copy-19" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M454,227 L454,166.991667" id="Line-Copy-20" stroke="#96BC7F" stroke-width="14"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,45 +1,45 @@
 {% assign cell_padding = include.cell_padding | default:6 %}
 
 <svg class="legend-ownership-svg">
-	<g class="legendQuant">
-		<g class="legendCells">
-			{% if include.is_wide == 'wide' %}
-				<g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
-					<rect class="swatch" height="12" width="100"></rect>
-					<rect class="swatch" height="12" width="100"></rect>
-					<text class="label"
-						    transform="translate(50,27)"
-						    style="font-size: 12px; text-anchor:middle;">Federally owned</text>
-				</g>
-				<g class="cell state" transform="translate({{ cell_padding | plus: 100 }}, 0)" style="opacity: 1;">
-					<rect class="swatch" height="12" width="100"></rect>
-					<rect class="swatch" height="12" width="100"></rect>
-					<text class="label"
-						    transform="translate(50,27)"
-						    style="font-size: 12px; text-anchor:middle;">State owned</text>
-				</g>
-				<g class="cell" transform="translate({{ cell_padding | times: 2 | plus: 200 }}, 0)" style="opacity: 1;">
-					<rect class="swatch" height="12" width="100"></rect>
-					<text class="label"
-						    transform="translate(50,27)"
-						    style="font-size: 12px; text-anchor:middle;">Private</text>
-				</g>
-			{% else %}
-				<g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
-					<rect class="swatch" height="15" width="15"></rect>
-					<rect class="swatch" height="15" width="15"></rect>
-					<text class="label" transform="translate(25,12.5)">Federally owned</text>
-				</g>
-				<g class="cell state" transform="translate(0, {{ cell_padding | plus: 15 }})" style="opacity: 1;">
-					<rect class="swatch" height="15" width="15"></rect>
-					<rect class="swatch" height="15" width="15"></rect>
-					<text class="label" transform="translate(25,12.5)">State owned</text>
-				</g>
-				<g class="cell" transform="translate(0, {{ cell_padding | times: 2 | plus: 30 }})" style="opacity: 1;">
-					<rect class="swatch" height="15" width="15"></rect>
-					<text class="label" transform="translate(25,12.5)">Private</text>
-				</g>
-			{% endif %}
-		</g>
-	</g>
+  <g class="legendQuant">
+    <g class="legendCells">
+      {% if include.is_wide == 'wide' %}
+        <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
+          <rect class="swatch" height="12" width="100"></rect>
+          <rect class="swatch" height="12" width="100"></rect>
+          <text class="label"
+                transform="translate(50,27)"
+                style="font-size: 12px; text-anchor:middle;">Federally owned</text>
+        </g>
+        <g class="cell state" transform="translate({{ cell_padding | plus: 100 }}, 0)" style="opacity: 1;">
+          <rect class="swatch" height="12" width="100"></rect>
+          <rect class="swatch" height="12" width="100"></rect>
+          <text class="label"
+                transform="translate(50,27)"
+                style="font-size: 12px; text-anchor:middle;">State owned</text>
+        </g>
+        <g class="cell" transform="translate({{ cell_padding | times: 2 | plus: 200 }}, 0)" style="opacity: 1;">
+          <rect class="swatch" height="12" width="100"></rect>
+          <text class="label"
+                transform="translate(50,27)"
+                style="font-size: 12px; text-anchor:middle;">Private</text>
+        </g>
+      {% else %}
+        <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
+          <rect class="swatch" height="15" width="15"></rect>
+          <rect class="swatch" height="15" width="15"></rect>
+          <text class="label" transform="translate(25,12.5)">Federally owned</text>
+        </g>
+        <g class="cell state" transform="translate(0, {{ cell_padding | plus: 15 }})" style="opacity: 1;">
+          <rect class="swatch" height="15" width="15"></rect>
+          <rect class="swatch" height="15" width="15"></rect>
+          <text class="label" transform="translate(25,12.5)">State owned</text>
+        </g>
+        <g class="cell" transform="translate(0, {{ cell_padding | times: 2 | plus: 30 }})" style="opacity: 1;">
+          <rect class="swatch" height="15" width="15"></rect>
+          <text class="label" transform="translate(25,12.5)">Private</text>
+        </g>
+      {% endif %}
+    </g>
+  </g>
 </svg>

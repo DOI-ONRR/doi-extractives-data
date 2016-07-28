@@ -23,10 +23,7 @@
       {% capture is_wide %}
         {% if breakpoint_width > breakpoint_height %}wide{% endif %}
       {% endcapture %}
-
       {% assign is_wide = is_wide | strip %}
-
-
 
       <div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
         style="padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
@@ -51,16 +48,12 @@
             <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
           </g>
         </svg>
-
-
-
       </div>
 
     </figure>
     <aside class="legend-container {{ is_wide }}">
       {% include maps/federal_land_ownership_legend.svg is_wide=is_wide %}
     </aside>
-
 
   </aside>
 </section>

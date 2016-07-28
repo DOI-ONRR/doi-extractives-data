@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="545px" height="280px" viewBox="0 0 545 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-elko-gold-prod</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17-Line-Chart---Elko-gold" transform="translate(-104.000000, -84.000000)">
+            <g id="chart-elko-gold-prod" transform="translate(104.000000, 84.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="545" height="280"></rect>
+                <text id="Eureka-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="270" y="273">Eureka County</tspan>
+                </text>
+                <text id="Both-counties" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="389" y="273">Both counties</tspan>
+                </text>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="129" y="224" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="129" y="194" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="129" y="164" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="129" y="134" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="129" y="104" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="129" y="74" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="129" y="44" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-8" fill="#ECECEC" fill-rule="evenodd" x="129" y="14" width="415.257812" height="1"></rect>
+                <text id="Gold-(ounces)" transform="translate(30.000000, 114.000000) rotate(-90.000000) translate(-30.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-8.17125" y="117">Gold (ounces)</tspan>
+                </text>
+                <text id="3,500,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="30" fill="#4A4A4A">
+                    <tspan x="47.63" y="18">3,500,000</tspan>
+                    <tspan x="47.63" y="48">3,000,000</tspan>
+                    <tspan x="47.63" y="78">2,500,000</tspan>
+                    <tspan x="47.63" y="108">2,000,000</tspan>
+                    <tspan x="47.63" y="138">1,500,000</tspan>
+                    <tspan x="47.63" y="168">1,000,000</tspan>
+                    <tspan x="58.515" y="198">500,000</tspan>
+                    <tspan x="101.88" y="228">0</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="371.664167" y="243">’12</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="476.26" y="243">2014</tspan>
+                </text>
+                <text id="Elko-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="133" y="273">Elko County</tspan>
+                </text>
+                <path d="M115,268 L127,268" id="Line-Copy-9" stroke="#157BAC" stroke-width="12"></path>
+                <path d="M252,268 L264,268" id="Line-Copy-10" stroke="#96BC7F" stroke-width="12"></path>
+                <path d="M371,268 L383,268" id="Line-Copy-11" stroke="#757575" stroke-width="12"></path>
+                <text id="2008" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="142.26" y="243">2008</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="204.664167" y="243">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="260.330833" y="243">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="315.9975" y="243">’11</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="427.330833" y="243">’13</tspan>
+                </text>
+                <text id="no-data-reported" font-family="Lato-LightItalic, Lato" font-size="13" font-style="italic" font-weight="300" line-spacing="14" fill="#6A6A6A">
+                    <tspan x="417.79375" y="207">no data </tspan>
+                    <tspan x="415.4115" y="221">reported</tspan>
+                </text>
+                <path d="M168,186 L168,185" id="Line-Copy-49" stroke="#757575" stroke-width="8"></path>
+                <path d="M150,224 L150,223" id="Line-Copy-59" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M224,224 L224,55.7591013" id="Line-Copy-38" stroke="#757575" stroke-width="8"></path>
+                <path d="M215,224 L215,90.9962407" id="Line-Copy-68" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M206,224 L206,185.790054" id="Line-Copy-58" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M168,224 L168,17.9393293" id="Line-Copy-39" stroke="#757575" stroke-width="8"></path>
+                <path d="M159,224 L159,60.972395" id="Line-Copy-69" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M150,179.988374 L150,223" id="Line-Copy-70" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M280,224 L280,70.9967321" id="Line-Copy-37" stroke="#757575" stroke-width="8"></path>
+                <path d="M271,224 L271,108.995652" id="Line-Copy-67" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M262,224 L262,183.887658" id="Line-Copy-57" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M336,224 L336,77.9691813" id="Line-Copy-36" stroke="#757575" stroke-width="8"></path>
+                <path d="M327,224 L327,115.99537" id="Line-Copy-66" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M318,224 L318,183.987502" id="Line-Copy-56" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M391,224 L391,73.970003" id="Line-Copy-35" stroke="#757575" stroke-width="8"></path>
+                <path d="M382,224 L382,113" id="Line-Copy-65" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M373,224 L373,185.529232" id="Line-Copy-55" stroke="#157BAC" stroke-width="8"></path>
+                <path d="M503,224 L503,99.8992345" id="Line-Copy-33" stroke="#757575" stroke-width="8"></path>
+                <path d="M494,224 L494,135.994318" id="Line-Copy-63" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M485,224 L485,187.503425" id="Line-Copy-53" stroke="#157BAC" stroke-width="8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

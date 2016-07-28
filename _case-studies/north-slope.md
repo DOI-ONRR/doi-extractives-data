@@ -36,10 +36,20 @@ Oil production increased dramatically in 1977 with the opening of the Trans-Alas
 
 In 2014, the North Slope Borough produced 174.5 million bbl of oil on both state-owned and federal land.[^10] Since production at Prudhoe Bay commenced, all of the North Slope's extraction has taken place in the northern portion of the Colville-Canning province, administered by either the Alaska Department of Natural Resources or the Bureau of Land Management. While three major companies account for most production, North Slope exploration and extraction has diversified, with 63 current lease holders from seven countries.[^11] Annual oil production in the borough peaked in 1988 (at 722 million bbl) and has steadily declined since.[^12]
 
-<img src="{{ site.baseurl }}/img/counties/ak-production.png" alt="Oil Production in North Slope" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Oil production in North Slope Borough</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/ak-production.svg" alt="Chart shows oil production in North Slope Borough from 2004 to 2014 as a line graph, and compares that to oil production in all of Alaska. The y-axis represents thousands of barrels of oil produced, and tops out at 350 million. Annual oil production was about 325 million barrels in 2004, and has declines each year to its 2014 level of about 175 million. North Slope represents the bulk of oil production in Alaska, and the two lines are very close or overlapping for all years shown." class="case_studies_content-graph">
+</figure>
+
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 The oil industry is a key driver of jobs throughout the borough. In 2014, mining, quarrying, and oil and gas extraction provided 9,003 jobs on the North Slope, accounting for 65 percent of total employment (13,686).[^13] [^14] The North Slope Borough's population is less than 10,000, so many private jobs are filled by nonresidents. The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
+
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Employment in the extractive industries in North Slope Borough</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/ak-wage.svg" alt="Chart shows the number of jobs in North Slope Borough from 2005 to 2014. The y-axis, which represents the number of wage and salary employees in the extractive industries, tops out at 16,000. Each year, the number of jobs in these industries is between 8,000 and 15,000." class="case_studies_content-graph">
+</figure>
+
 <h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenues</a></h2>
 
 Given the North Slope's relative geographic isolation, oil revenue is critical for supporting local schools, health centers, fire stations, water and sanitation facilities, and infrastructure. In FY 2014, the North Slope government received $528.6 million in revenue. [^16] Of that revenue, the borough received $347 million from local property taxes.[^17] The vast majority of property tax revenue (98%) comes from oil and gas properties.[^18]
@@ -51,7 +61,10 @@ Statewide, the Alaska government collects oil-related revenue for the benefit of
 - Royalties are assessed on state-owned land leased for oil production. In FY 2015, $1 billion was paid to the General Fund, $518.3 million was deposited in the Alaska Permanent Fund and School Fund, and an additional $149 million went to the Constitutional Budget Reserve Fun from royalty settlements.[^23] [^24]
 - Oil and gas corporate net income tax is set at a maximum of 9.4% on Alaskan income more than $90,000. In 2015, $108 million was collected in oil and gas corporate income tax, down from $571 million in 2012.[^25]
 
-[INSERT quarterly severance tax chart here]
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Quarterly severance taxes in Alaska</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/ak-tax.svg" alt="Chart shows quarterly severance tax payments in Alaska from 2011 through 2015. The y-axis represents millions of dollars. The peaks in the last 5 years are in Q2 of 2011 and 2012, both of which exceeded 1,700. 2015 amounts are under 100 for each quarter." class="case_studies_content-graph">
+</figure>
 
 Alaska residents also receive annual dividend payments from the state's Permanent Fund, based on a five-year average of the fund's performance. The state established the Permanent Fund in 1976, as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2015 each Alaska resident received $2,072 as a result of this payout, up from $900 in 2013.[^26]
 <h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>

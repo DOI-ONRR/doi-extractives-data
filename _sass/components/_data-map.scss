@@ -127,3 +127,10 @@ eiti-data-map {
     font-size: 10px;
   }
 }
+
+.legend-container.wide .legend-ownership-svg {
+  .label {
+    @include font-size(0.75);
+    text-anchor: middle;
+  }
+}

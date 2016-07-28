@@ -9,12 +9,16 @@
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
-          this.marks = d3.select(this).selectAll('[data-value]')
+          var root = d3.select(this);
+
+          this.marks = root.selectAll('[data-value]')
             .datum(function() {
               return +this.getAttribute('data-value') || 0;
             });
 
-          this.detectWidth();
+          if (!root.select('.svg-container').classed('wide')) {
+            this.detectWidth();
+          }
           this.update();
         }},
 
@@ -42,8 +46,8 @@
           var legendContainer = root.select('.legend-container');
 
           if (!svgMap.empty()) {
-            var svgMapBBox = svgMap.node().getBBox()
-            var svgDimensions = svgMap.attr('viewBox')
+            var svgMapBBox = svgMap.node().getBBox();
+            var svgDimensions = svgMap.attr('viewBox');
 
             if (svgDimensions) {
               svgDimensions = svgDimensions.split(' ');
@@ -54,7 +58,6 @@
                 // then make it a wide view
                 if (width > height * 1.5) {
                   this.isWideView = true;
-                  console.log(this, this.isWideView)
                   if (!svgContainer.empty()) {
                     svgContainer.classed('wide', true);
                   }
@@ -64,7 +67,6 @@
                   }
                 }
               }
-
             }
           }
         }},
@@ -198,11 +200,6 @@
             shapeHeight = settings[orient].height;
             shapePadding = settings[orient].padding;
           }
-
-          console.log('orient', orient)
-          console.log('shapeWidth', shapeWidth)
-          console.log('shapeHeight',  shapeHeight)
-          console.log('shapePadding', shapePadding)
 
           var svgLegend = d3.select(this)
             .select('.legend-svg')

@@ -20,7 +20,9 @@
   .chart-title {
     @include heading(large-caps);
 
+    align-items: flex-end;
     border-bottom: 1px solid $mid-gray;
+    display: flex;
     flex: 1 0 auto;
   }
 

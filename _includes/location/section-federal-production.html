@@ -47,8 +47,10 @@
           <div class="chart-container">
 
             <h4 class="chart-title">
-              {{ product_name }}
-              {% if units_title %} ({{ units_title }}){% endif %}
+              <span>
+                {{ product_name }}
+                {% if units_title %} ({{ units_title }}){% endif %}
+              </span>
             </h4>
 
             <figure class="chart">
@@ -74,7 +76,7 @@
           <div class="map-container">
 
             <h4 class="chart-title">
-              Local production
+              <span>Local production</span>
             </h4>
 
 

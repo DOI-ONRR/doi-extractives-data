@@ -43,7 +43,7 @@
       {% if commodity[0] != "Total" and commodity[0] != "All" %}
         <section class="chart-item">
 
-          <h3 class="chart-title">{{ commodity[0] }}</h3>
+          <h3 class="chart-title"><span>{{ commodity[0] }}</span></h3>
 
           <figure class="chart chart-{{ _metric }}">
             <figcaption id="exports-figures-{{ commodity_slug }}">

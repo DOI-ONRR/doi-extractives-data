@@ -17,7 +17,18 @@
   <aside class="map-container">
     <figure>
       {% assign _viewbox = site.data.viewboxes[state_id] %}
-      <div class="svg-container county map-container"{% if _viewbox %}
+      {% assign _viewbox_list = _viewbox | split:' ' | to_f %}
+      {% assign breakpoint_width = _viewbox_list[2] %}
+      {% assign breakpoint_height = _viewbox_list[3] | times:1.5 %}
+      {% capture is_wide %}
+        {% if breakpoint_width > breakpoint_height %}wide{% endif %}
+      {% endcapture %}
+
+      {% assign is_wide = is_wide | strip %}
+
+
+
+      <div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
         style="padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
         <svg class="county ownership map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
           <g class="states features">
@@ -46,8 +57,8 @@
       </div>
 
     </figure>
-    <aside class="legend-container">
-      {% include maps/federal_land_ownership_legend.svg %}
+    <aside class="legend-container {{ is_wide }}">
+      {% include maps/federal_land_ownership_legend.svg is_wide=is_wide %}
     </aside>
 
 

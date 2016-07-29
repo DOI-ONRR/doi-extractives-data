@@ -34,7 +34,7 @@ Greenlee County has a long history of copper mining dating back to the mineralâ€
 
 ## Production
 
-The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2015, the Morenci Mine produced 901 million pounds of recoverable copper, up from 537 million pounds in 2012.[^6] [^7] Production at Morenci had significantly declined following the 2008 global recession and associated copper price decline. Recently, production has rebounded and has surpassed pre-2008 levels.[^8] [^9] However, the two leading copper producers in Arizona decreased production in 2015 due to falling prices, despite increases at Morenci.[^10]
+The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2015, the Morenci Mine produced 902 million pounds of recoverable copper, up from 537 million pounds in 2012.[^6] [^7] Production at Morenci had significantly declined following the 2008 global recession and associated copper price decline. Recently, production has rebounded and has surpassed pre-2008 levels.[^8] [^9] However, the two leading copper producers in Arizona decreased production in 2015 due to falling prices, despite increases at Morenci.[^10]
 
 <figure>
   <figcaption class="case_studies_content-graph-caption">Morencini mine copper production and average copper price</figcaption>

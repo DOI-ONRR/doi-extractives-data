@@ -24,7 +24,7 @@ CREATE TABLE federal_regional_production AS
         product, product_name, units, SUM(volume) AS volume
     FROM federal_state_production
     GROUP BY
-        year, product, product_name, units
+        year, region_id, region_type, product, product_name, units
 UNION
     SELECT
         year, area.id AS region_id, 'offshore' AS region_type,
@@ -49,7 +49,7 @@ UNION
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, product, product_name, units
+        year, region_id, region_type, product, product_name, units
 ORDER BY
     year, product, product_name, units, volume DESC;
 

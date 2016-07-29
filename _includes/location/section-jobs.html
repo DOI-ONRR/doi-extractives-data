@@ -87,7 +87,7 @@
           <figure class="container">
             <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
               {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-              {% capture caption %}Local employment in extractive industries (jobs, <span data-year="{{ year }}">{{ year }}</span>){% endcapture %}
+              {% capture caption %}Local employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}
 
               {%
                 include county-map.html

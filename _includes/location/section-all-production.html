@@ -30,18 +30,18 @@
       {% assign long_units = units_map[units].long | default 'units' %}
       {% assign units_suffix = units_map[units].suffix | default '' %}
 
-      <section id="national-all-production-{{ product_slug }}" class="chart-item">
+      <section id="state-all-production-{{ product_slug }}" class="chart-item">
 
         <h3 class="chart-title"><span>{{ product_name }}</span></h3>
         <figure class="chart">
-          <figcaption id="national-all-production-figures-{{ product_slug }}">
+          <figcaption id="state-all-production-figures-{{ product_slug }}">
             <span class="eiti-bar-chart-y-value" data-format=","">{{ volume | default: 0 | intcomma }}</span>
             {{ long_units | term }} of
             {{ product_name | downcase | suffix:units_suffix }} was produced in {{ state_name }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </figcaption>
           <eiti-bar-chart
-            aria-controls="national-all-production-figures-{{ product_slug }}"
+            aria-controls="state-all-production-figures-{{ product_slug }}"
             data='{{ production_values | map_hash: "volume" | jsonify }}'
             x-range="{{ year_range }}"
             x-value="{{ year }}"

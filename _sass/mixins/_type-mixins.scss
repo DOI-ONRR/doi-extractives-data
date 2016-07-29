@@ -63,8 +63,7 @@
   }
 
   @if $level == 'large-caps' {
-    // light 18/27 (12px bottom margin)
-    font-size: inherit;
+    font-size: 0.8125rem; // 13px
     font-weight: $weight-book;
     letter-spacing: 1px;
     line-height: $standard-padding;

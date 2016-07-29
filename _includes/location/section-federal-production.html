@@ -86,7 +86,7 @@
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
-              {% capture caption %}Local production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} ({{ short_units | default:units }}){% endif %}{% endcapture %}
+              {% capture caption %}Local production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
 
               <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
                 {% assign federal_county_production = site.data.federal_county_production[state_id] %}

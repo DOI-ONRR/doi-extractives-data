@@ -7,7 +7,7 @@ resource: gas
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -29,11 +29,11 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,052 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 From 2007 to 2011, natural gas production quadrupled in northern Louisiana, where DeSoto Parish is located.[^2] More recently, declining natural gas prices have resulted in lower production numbers. For example, the spot price at the Henry Hub in Louisiana fell by about 35% from 2014 to 2015 (from an average $4.55 per MMBtu to an average of $3 per MMBtu in 2015).[^3] Production in the region fell from 2.5 trillion cubic feet in 2011 to 1.3 trillion cubic feet in 2015.[^4]
 
@@ -46,7 +46,7 @@ In 2014, the U.S. Energy Information Administration estimated that there were 16
   <img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph. The y-axis represents thousands of cubic feet of natural gas, and tops out at 3 trillion cubic feet. From 2005 to 2009, annual natural gas production rose from about 1.2 to 1.4 trillion cubic feet, then rose to levels of over 2.8 trillion in 2011 and 2012. Since 2012, production declined to its 2014 level of under 1.9 trillion." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 Out of DeSoto’s 27,000 residents, 548 people (or about 2%) were employed in mining-support activities in 2013, which included oil and gas extraction.[^9] [^10] Of this group, about half (271 people) were employed specifically in support activities for oil and gas extraction.[^11] More recent employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries — specifically mining, quarrying, and oil and gas extraction — in DeSoto Parish between 2005 and 2014.[^12]
 
@@ -55,7 +55,7 @@ Out of DeSoto’s 27,000 residents, 548 people (or about 2%) were employed in mi
   <img src="{{ site.baseurl }}/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 4% (in 2005) and 21% (in 2012). In both 2013 and 2014, there were about 1,000 jobs in the extractive industries, which represented 18% of DeSoto Parish jobs." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 The Haynesville Shale natural gas boom has increased revenue for the State of Louisiana and DeSoto Parish through state severance taxes and royalties, parish property taxes, and sales and use taxes.
 
@@ -74,7 +74,7 @@ Sales and use taxes are deposited into the General Fund, School Lunch Fund, Debt
 
 Property taxes also contribute substantially to the school board’s revenue, funding employee salaries, operations, and debt service payments on capital bonds for the local education system.[^27] The amount of revenue from property taxes increased by 45% from 2012 ($26.5 million) to 2015 ($38.4 million).[^28] State tax documents do not specify what percentage of property taxes comes from the gas industry.
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 Since 2008, Louisiana has invested at least $1.1 billion in transportation projects in the seven parishes located in the northwest region of the state, including DeSoto Parish.[^29] While Louisiana’s latest comprehensive state transportation plan acknowledges that the state must pay adequate attention to the transportation needs of the rapidly expanding oil and gas industry, it does not specify the types or costs of projects supported.[^30]
 
@@ -82,7 +82,7 @@ Louisiana completed a Hydraulic Fracturing State Review in March 2011, which exp
 
 The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent {{ "millage tax" | term_end }}.[^32] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 

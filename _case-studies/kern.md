@@ -7,7 +7,7 @@ resource: oil
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,13 +28,13 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Companies began extracting oil at a commercial level in California in the 1850s, inspired by the oil rush in Pennsylvania and a growing market for oil-fueled lighting. In the 1860s, production began in Kern County, where extractors dug holes into oil seeps to remove the fuel. Near the turn of the century, extraction in the county shifted toward commercial drilling, in part because of the 1890 discovery of the Midway-Sunset field, which is still the largest-producing oil field in California today.[^1]
 
 During the beginning of the twentieth century, many other large oil discoveries occurred in Kern County, and continued at a lesser pace through the 1970s. As discoveries of new fields ended in the 1970s, refined steam-injection techniques helped producers extract the substantial heavy oil — a more difficult and costly type of oil to extract and transport — from known Kern County fields.[^2]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 In terms of oil production, Kern County has long been a leader both nationally and within California. California is one of the top oil producing states in the U.S., producing more than 6% of total production in 2014.[^3] The largest-producing region in California is the San Joaquin basin, which contains Kern County. Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend. However, production has rebounded slightly over the past several years, increasing from 141 million {{ "oil barrels" | term:"barrel" }} (bbls) in 2013 to 144 million bbls in 2015.[^4]
 
@@ -45,7 +45,7 @@ In 2013, the largest field in California in terms of proven reserves was Belridg
   <img src="{{ site.baseurl }}/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 In 2014, oil and gas extraction employed over 11,500 of Kern County’s 874,589 residents, up from just over 10,000 in 2013.[^8] This is close to 1.3% of the population and 4.5% of total employment.[^9] In particular, 3,243 people were employed in oil and gas extraction, and 8,321 in support activities (1,863 in drilling for oil and gas, and 6,485 in support activities for oil and gas operations).[^10] This represents a slight dip in extraction-related employment and a minor increase in employment in support activities from 2013.
 
@@ -54,7 +54,7 @@ In 2014, oil and gas extraction employed over 11,500 of Kern County’s 874,589 
   <img src="{{ site.baseurl }}/img/counties/ca-wage.svg" alt="Chart shows the number of jobs in Kern County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 300,000, and each bar compares the number of jobs in the oil and gas industry to the total number of jobs in the county that year. Each bar also identifies the percentage of jobs in the oil and gas industry. For most years, the total number of jobs is between 175,000 and 200,000, but jumps to over 250,000 in 2014. The percentage of jobs in the oil and gas industry is between 2.3% in 2005 and 2006 and 5% in 2013. In 2014, 4.5% of jobs in Kern County were in the oil and gas industry." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 California does not levy a statewide severance tax on oil and gas production, but counties in the state collect ad valorem or property taxes on oil and gas resources and equipment owned in their jurisdictions. The state does levy an annual assessment on oil and gas production to fund the Department of Conservation’s Oil, Gas, and Geothermal Resources Division. The division oversees the drilling, operation, maintenance, and plugging and abandonment of oil, natural gas, and geothermal wells.[^11]
 
@@ -69,7 +69,7 @@ Kern County also collects oil and gas royalties. Compared to property tax revenu
 
 According to the Kern County Treasurer-Tax Collector, the top two payers of property taxes in the county in FY 2015–2016 were Chevron Corporation and California Resources Elk Hills LLC.[^15] The companies received bills for over 10.8% of the total property taxes due to the county. All of the top ten property tax payers were associated with either the extractive or energy sectors, and received combined bills for over $209 million, or 33.28% of total property taxes due to the county.[^16]
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 A number of resources shed light on Kern County’s transportation systems, water infrastructure, {{ "reclamation" | term }} procedures, and emergency services. However, these government publications do not explicitly discuss the fiscal costs of oil extraction to the Kern County government.
 
@@ -80,7 +80,7 @@ A number of resources shed light on Kern County’s transportation systems, wate
 	<li><a href="http://www.co.kern.ca.us/CAO/policy/16.pdf">Kern County Policy and Administrative Procedures Manual: Emergency Preparedness (PDF)</a></li>
 </ul>
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 

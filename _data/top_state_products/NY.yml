@@ -1,0 +1,15 @@
+all_production:
+  '2008':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 26723000
+      rank: 3
+      percent: 10.49
+  '2013':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 24973000
+      rank: 3
+      percent: 9.3

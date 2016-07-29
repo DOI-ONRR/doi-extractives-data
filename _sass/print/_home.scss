@@ -1,0 +1,40 @@
+.carousel,
+.eiti-tabs,
+.card-image_link,
+.eiti-tab-panel .explore_home-button,
+.home-bottom-links {
+  display: none !important;
+}
+
+.card {
+  display: block;
+  float: none;
+  height: inherit !important;
+
+  img {
+    display: none !important;
+  }
+}
+
+.eiti-tab-panel {
+  display: block;
+  float: none;
+  margin-bottom: $base-padding-jumbo;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  &[aria-hidden=true] {
+    display: block !important;
+  }
+}
+
+.header-image_link,
+.card > a,
+.explore_home-img {
+  &::after {
+    content: '';
+  }
+}

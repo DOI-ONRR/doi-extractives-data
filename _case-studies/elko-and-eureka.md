@@ -7,7 +7,7 @@ resource: gold
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,13 +28,13 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 {{ "metric tons" | term:"metric ton"}} (100,000,000 ounces) of gold.[^5]
 
 In 1962, Newmont Mining Corporation discovered large deposits of gold ore along the Carlin Trend, a mineral-rich belt stretching 40 miles across Elko and Eureka counties that soon became one of the largest gold-producing regions in the world. This discovery marked the beginning of a robust gold-mining industry in the region: As of 2012, 87% of Nevada’s total historical gold output had been generated since the Carlin Trend discovery.[^6]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 Nevada is in the midst of the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands. This surge in production is largely the result of discovering sediment-hosted deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
@@ -45,13 +45,13 @@ The two major gold-mining companies driving this development are Newmont Mining 
   <img src="{{ site.baseurl }}/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2014 (there is no data reported for 2013). The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka = County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 In these two counties, gold-mining operations employed approximately 15% of the total population in 2014, or 4,654 workers and 3,334 contractors (about 8,000 people total) within a two-county population of 54,784.[^10]
 
 [NEW IMAGE: ELKO AND EUREKA EMPLOYMENT]
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 Gold mining is a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
 
@@ -59,7 +59,7 @@ The tax rate applied to net proceeds is on a sliding scale from 2-5%.  Eureka C
 
 In 2015, Elko County received $2.5 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.2 million (88%) came from gold mines.[^13] In the same period, Eureka County received $10.6 million in Royalties and Net Proceeds of Minerals tax, of which $10.5 million (99%) came from gold mines.[^14]
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 A number of state-level resources shed light on Elko and Eureka counties’ transportation systems, {{ "reclamation" | term }} procedures, and emergency services. While these government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Elko and Eureka county governments.
 
@@ -68,7 +68,7 @@ A number of state-level resources shed light on Elko and Eureka counties’ tran
 	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation: Reclamation Cost Estimator</a></li>
 </ul>
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 

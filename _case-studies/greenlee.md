@@ -7,7 +7,7 @@ resource: copper
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,11 +28,11 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^5] The modern Morenci Mine was established and has been a significant economic driver in the county ever since.
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2015, the Morenci Mine produced 901 million pounds of recoverable copper, up from 537 million pounds in 2012.[^6] [^7] Production at Morenci had significantly declined following the 2008 global recession and associated copper price decline. Recently, production has rebounded and has surpassed pre-2008 levels.[^8] [^9] However, the two leading copper producers in Arizona decreased production in 2015 due to falling prices, despite increases at Morenci.[^10]
 
@@ -41,11 +41,11 @@ The largest-producing copper mine in North America is the privately owned Morenc
   <img src="{{ site.baseurl }}/img/counties/az-production.svg" alt="Chart shows annual copper production from Morenci mine from 2007 to 2015, with annual average copper price overlaid as a line graph. The y-axis represents millions of recoverable pounds of copper and cents per pound, respectively. Each year, copper production is between 400 and 900 million recoverable pounds; the price each year is between $2 and $4.50 per pound. The highest price shown was in 2011, at over $4 per pound. The year in this period with the most production is 2015, with about 900 million recoverable pounds." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 In 2014, copper production employed 1,893 people in Greenlee County.[^11] Copper mining employed 11,953 workers in Arizona in 2014, comprising less than 1% of statewide employment (out of 2,241,077 total workers).[^12] In Greenlee County, the ebbs and flows of employment mirror trends in the copper industry. County unemployment reached 18% in 2009 at the height of the recession before falling to around 7% in 2013, as global demand and prices stabilized.[^13] Freeport-McMoRan Inc. owns and operates Greenlee County’s Morenci Mine, after merging with Phelps Dodge Corporation in 2007, and serves as the key copper-mining employer.
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 State revenue from copper extraction is directed back to Greenlee County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^14]
 
@@ -53,11 +53,11 @@ Arizona also collects a Transaction Privilege Tax for the right to do business i
 
 In 2014, Greenlee County received $5,537,109 in transaction privilege and severance tax disbursements.[^16] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $3,256,209 in local property taxes levied for general purposes, public health services, and flood control (out of a total $19.7 million in county revenue) in 2014.[^17] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 Copper mining activity is a key consideration in Greenlee County road planning.[^18] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 

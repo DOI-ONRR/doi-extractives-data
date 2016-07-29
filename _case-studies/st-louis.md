@@ -7,7 +7,7 @@ resource: iron
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,11 +28,11 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 All iron mining in St. Louis County takes place along the Mesabi Iron Range. The Mesabi Range is a narrow, 120-mile-long iron deposit stretching from Babbitt to Grand Rapids that has shaped the economic development of the region throughout the past century. Iron ore was first discovered in the Mesabi Range in 1866; extractive operations began in the 1890s, and focused on exploiting the rich reserves of high-grade natural ore that could be easily processed into steel. After extracting approximately 2.5 billion tons of this natural ore, the industry had largely exhausted the supply by the 1950s, and companies began mining a lower-grade iron ore alternative: taconite. Taconite mining targets chert-magnetite ores that are processed and upgraded into higher-grade iron pellets to feed steel mill blast furnaces. To date, the industry has produced approximately 1.6 billion tons of these iron pellets from Mesabi Range ore.[^3]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 In 2013, St. Louis County's eight iron mines produced 41.1 million metric tons of ore. Minnesota currently produces approximately 75% of the iron ore in the U.S.[^4] [^5] Production rates were relatively constant throughout the preceding ten years, averaging 37.8 million metric tons with a compound annual growth rate of -0.05%.[^6] [^7] As shown in the chart, iron production in St. Louis County drives the majority of national iron production. The abnormally low production rate in 2009 was broadly the result of the global economic recession and weak demand from Chinese steel mills.
 
@@ -43,24 +43,27 @@ In Minnesota, the state government is the largest owner of mineral rights. It ow
   <img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 The iron industry employs thousands of people in St. Louis County. The three major companies that operate the county's iron mines and processing facilities are Cliffs Natural Resources, ArcelorMittal USA Inc., and the United States Steel Corporation. The eight mines in St. Louis County operated by these and other companies provided 3,283 jobs in 2014, comprising 4% of the county's total 81,236 employment.[^10] Mining employment has remained steady at around 4% of employment since 2008.
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+
+## Revenue
 
 Annually, the iron ore industry in Minnesota takes in more than $3 billion in sales revenue.[^11] Various state and county tax mechanisms funnel a portion of these dollars back into the counties. The Taconite Production Tax, which is levied on concentrates or pellets produced by taconite companies, is the largest tax paid by the mining industry in Minnesota. The tax rate for taconite production increased in 2013 from $2.46 per taxable long ton of concentrates to $2.56, an increase of 3.8%.[^12] Counties receive 26.05 cents per ton of iron ore from the Taconite Production Tax; in 2015, this amounted to $10 million for St. Louis County, down from $11.6 million in 2012.[^13]
 
 The production tax is distributed to a variety of recipients for public use, including school districts, cities and townships, and the Iron Range Resources and Rehabilitation Board (IRRRB). The IRRRB splits its disbursements between infrastructure-improvement projects and cooperative community projects (such as parks and public trails).[^14]
 
 St. Louis County also collects revenue from various ad valorem and property taxes, including the tax on unmined taconite ($227,126 in 2013) and the ad valorem tax on taconite railroads ($7,286 in 2014).[^15] Taken together with the Taconite Production Tax, this revenue is important for the county's schools, infrastructure, and public services.
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+
+## Costs
 
 Mining operations in Minnesota rely heavily on the state's multimodal transportation system, which includes trucks, trains, ports, and barges: for instance, taconite makes up more than half the tonnage moved by rail across the state. However, keeping the railroads running requires significant financial investment. The Minnesota Department of Transportation (DOT) projects that it will need between $125 million and $433 million from Minnesota state and local governments throughout the next 20 years to fulfill the freight-rail-improvement component of its State Rail Plan.[^16] The state does not itemize how much of that money, if any, is specified for rail improvements that support the mining industry.
 
 The Port of Duluth/Superior is the busiest port on the Great Lakes, and handles more than 40 million tons of taconite shipments per year. Historically, the Port's highest volume commodity was iron ore mined in the nearby Mesabi Range. Since 1996, the Minnesota state government has committed $25 million for 37 projects to increase port efficiency and preserve infrastructure, both for the mining industry and other commercial sectors. In 2013, Minnesota awarded $10 million in Transportation Investment Generating Economic Recovery (TIGER) grants to rebuild and expand the Port of Duluth.[^17]
 
 In Minnesota, the Department of Natural Resources (DNR) has the authority to regulate the {{ "reclamation" | term }} of lands subject to metallic mining operations. The finances for any publicly funded reclamation activities come from a variety of sources, including the General Fund, annual fees directly from the permit holders, application and supplemental fees for permits, and industry and other governmental agencies.[^18] In FY 2012–2013, the Minnesota DNR Resources Land and Minerals Program spent $4.4 million, or 6% of its budget, on mine land reclamation.[^19] In FY 2014-15, the Lands and Minerals Program budget increased to $85.4 million, however it did not publish the allocation to mine land reclamation.[^20] Generally, the mining-operation permit holder bears the cost of reclamation, except in cases in which the mine is abandoned and there is no party under legal obligation to reclaim the site, or the mine operator is fiscally insolvent.
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+
+## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 <table>

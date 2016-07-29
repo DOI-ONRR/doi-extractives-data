@@ -7,7 +7,7 @@ resource: iron
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,13 +28,13 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Marquette County generated 18% of the national iron output in 2013.[^1] This iron ore is located in the Marquette Iron Range, a narrow basin of iron formations running approximately 33 miles through the towns of Negaunee and Ishpeming. Discovered in 1844, this range houses Michigan’s oldest iron-mining operations; the Jackson Mining Company began extraction here in 1848. In the following decades, the development of critical infrastructure — including roads, railroads, and a canal connecting Lake Superior and Lake Huron — spurred additional mining activity. It was iron mining that originally drew settlers to the area.
 
 Although increased production costs and a diversified global supply of iron drove down output in the first half of the twentieth century, the development of new technology in the 1950s made it economically feasible to produce lower-grade taconite, which increased output.[^2]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 Today’s iron mining along the Marquette Iron Range is centered on the Empire and Tilden Mines, operated by Cliffs Natural Resources Inc. In 2013, these two mines generated a combined 10.5 million {{ "metric tons" | term:"metric ton" }} of usable iron ore, which produced a total of 6.4 million metric tons of iron, a decrease of 3% from 2012.[^3] [^4] Marquette County’s usable iron ore output had remained relatively constant over the preceding ten years, averaging 12 million metric tons out of a total annual capacity of 13 million metric tons.[^5] As shown in the chart below, the 2009 economic crisis drove down iron-ore production, but it rebounded the following year.
 
@@ -45,21 +45,21 @@ Major corporate landowners own a significant portion of the land used for natura
   <img src="{{ site.baseurl }}/img/counties/mi-production.svg" alt="Chart shows iron production in Marquette County from 2004 to 2013 as two line graphs. The y-axis represents thousands of metric tons of iron produced, and tops out at 45,000. Annual crude iron production was between 19 and 41 million metric tons for each year in this range, and annual usable iron production was between 7 and 13 million each year. Both reached their lowest points in 2009 (under 20 million and 8 million respectively) and their highest points in 2011 (over 40 million and 12 million respectively)." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 According to the Bureau of Labor Statistics (BLS), total private sector employment in Marquette County stood at 22,172 out of a total population of 67,757 in 2013.[^7] [^8] The iron-mining industry employed 1,300 individuals in 2013, down from 1,500 in 2012.[^9] Mining employment has represented about 6% of total employment in the county in recent years. Iron-ore reserve estimates project a thirty-year supply at Tilden Mine, suggesting continued employment opportunities for the near future.[^10] Empire Mine is slated to be shut down, with its approximately 400 employees expecting to receive layoff notices in 2016.[^11]
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 The State of Michigan assesses mining operations under the same state and local taxes as other commercial ventures in the state (for example, sales, use, and property taxes). However, the state does collect a specific tax on low-grade iron ore at a rate of 1.1% of the value per gross ton produced.[^12] In 2015, Marquette County collected $2,820,000 from that tax, comprising 11% of the total $25,340,726 General Fund operating budget for that year.[^13] The low-grade iron ore tax revenue decreased $229,025 from 2012. These funds supported public services, such as law enforcement, health care, childcare, aging services, and the county’s international airport.[^14]
 
 An estimated $126,000 in county millage taxes was generated from the 2014 ad valorem levy on the Eagle Mine operation, which began mineral extraction in late 2014. Severance tax revenue was not collected until 2015. Marquette County’s administrator recommended that the board restrict the use of those funds for the following purposes: space need changes as decided by the Board of Commissioners, courthouse or annex facility recommended maintenance, unfunded liabilities, and the Sawyer Stabilization Fund.[^15]
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 Public sources specifying the fiscal costs of iron-ore mining in Marquette County were not found.
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 

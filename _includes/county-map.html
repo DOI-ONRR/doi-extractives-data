@@ -1,0 +1,93 @@
+{% assign _inherit_width = include.inherit_width %}
+{% assign _width = include.width | default: 100 %}
+{% assign steps = include.steps | default: 9 %}
+{% assign caption = include.caption %}
+{% assign toggle = include.toggle %}
+{% assign units = include.units %}
+
+{% if _inherit_width %}
+  {% assign __width = '' %}
+{% else %}
+  {% capture __width %}
+    width: {{_width}}%
+  {% endcapture %}
+{% endif %}
+
+<div class="svg-container county map-container"{% if _viewbox %}
+  style="{{ __width }}; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _viewbox | svg_viewbox_padding: _width }}">
+  <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+    {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
+    <g class="states features">
+      <use xlink:href="{{ states_svg }}#states"></use>
+    </g>
+    <g class="states mesh">
+      <use xlink:href="{{ states_svg }}#states-mesh"></use>
+    </g>
+    <g class="counties features">
+      <use xlink:href="{{ state_svg }}#counties"></use>
+    </g>
+
+    {% if include.counties %}
+      {% assign keys = include.value %}
+      {% for county in include.counties %}
+        {% assign fips = county[0] | pad_left: 5, '0' %}
+        {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
+        {% assign value = county[1] | get: keys %}
+
+        {% assign year_values = null %}
+        {% if include.years %}
+          {% assign year_values = county[1] | get: include.years %}
+          {% if include.years_property %}
+            {% assign year_values = year_values | map_hash: include.years_property %}
+          {% endif %}
+        {% endif %}
+
+        {% if year_values %}
+          <g class="county feature"
+            data-value='{{ value | default: 0 | jsonify }}'
+            data-year-values='{{ year_values | jsonify }}'>
+            <title>{{ county[1].name }}</title>
+            <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
+          </g>
+        {% endif %}
+        {% if include.href %}</a>{% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {%
+      include maps/federal_land_ownership.svg
+    %}
+    <g class="counties mesh">
+      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+    </g>
+    <g class="state feature overlay">
+      <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
+    </g>
+  </svg>
+
+  {% if include.toggle %}
+    <h4 class="details-container">
+      <button is="aria-toggle"
+        aria-controls="{{ include.toggle }}">&plus;
+        {% if include.toggle_text %}
+          {{ include.toggle_text}}
+        {% else %}Show table{% endif %}
+      </button>
+    </h4>
+  {% endif %}
+</div>
+
+<div class="legend-container">
+  {% if include.caption %}
+    <figcaption class="legend-data">
+      {{ include.caption }}
+    </figcaption>
+    <figcaption class="legend-no-data" aria-hidden="true">
+      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
+      Select a new year to populate the map.
+    </figcaption>
+  {% endif %}
+
+  <svg class="legend-svg"></svg>
+</div>

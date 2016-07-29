@@ -7,7 +7,7 @@ resource: coal
 nav_items:
   - name: intro
     title: Top
-  - name: geology
+  - name: geology-and-history
     title: Geology and history
   - name: production
     title: Production
@@ -17,7 +17,7 @@ nav_items:
     title: Revenue
   - name: costs
     title: Costs
-  - name: data
+  - name: data-availability
     title: Data
 selector: list
 ---
@@ -28,13 +28,13 @@ selector: list
 
 {% include case-studies/_maps.html screen="mobile" %}
 
-<h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
+## Geology and history
 
 Campbell County’s geographic position atop the Powder River Basin came with such plentiful coal deposits that early cattle ranchers in the area could dig their own coal.[^4] Significant mining operations in the region began in the early twentieth century with the Peerless and Wyodak Mines near the city of Gillette. Further coal development and the discovery of oil spurred population growth in the county throughout the decades that followed.
 
 Most Campbell County coal is sub-bituminous, meaning it contains 35% to 45% carbon. Although sub-bituminous coal has the second lowest energy content of the four main types of coal, it is often found in thick deposits near the surface, which results in lower mining costs.[^5] The low sulfur content of the coal in Campbell County deposits became an advantage in the market after the 1990 revision of the Clean Air Act, which required reduced sulfur emissions from coal-fired power plants.[^6] Today, the Powder River Basin is estimated to have 25 billion tons of economically recoverable coal resources.[^7]
 
-<h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
+## Production
 
 In 2014, Campbell County produced 348 million tons of coal, accounting for 89% of the state’s total production.[^8] Wyoming coal mines operate largely on federal lands managed by the Bureau of Land Management under the U.S. Department of the Interior.[^9] In fact, Wyoming is the site of more coal mining on federal and Indian lands than any other state in the country, constituting 80% of the total coal production on federal and Indian lands in the fiscal year ending in 2014.[^10] [^11]
 
@@ -45,7 +45,7 @@ Production levels fluctuated little between 2005 and 2014. For instance, 2014’
   <img src="{{ site.baseurl }}/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2005 to 2014 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2005-2008 then declined most years until 2013, with slight upticks or plateaus in 2010 and 2014." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
+## Employment
 
 The coal mining industry provides employment for 7,398 workers in Campbell County (out of a total population of 48,320), representing approximately 15% of county residents and 31% of total employment.[^13] The chart below shows the county employment trend in the broader mining industry from 2004 through 2014, including mining and mining-support activities.[^14]
 
@@ -54,7 +54,7 @@ The coal mining industry provides employment for 7,398 workers in Campbell Count
   <img src="{{ site.baseurl }}/img/counties/wy-wage.svg" alt="Chart shows the number of jobs in Campbell County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 35,000, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. The total number of jobs each year ranges from about 23,000 in 2005 to a little under 30,000 in 2008. After 2008, the total number of jobs hovers between 27,500 and 29,000 until 2014, when it drops to under 25,000. The percentage of jobs in the mining industry is between 25% and 27% for all years except 2014, when it rises to 31% (the number of mining industry jobs is steady between 2013 and 2014, but the number of jobs in other industries declines)." class="case_studies_content-graph">
 </figure>
 
-<h2><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
+## Revenue
 
 With $125 million in total government revenue for 2015, Campbell County is the most revenue-rich county in Wyoming.[^15] [^16] [^17] Its wealth is largely due to revenue brought in from coal extraction. In 2015, Campbell County valued its own coal production at $3.3 billion.[^18]
 
@@ -66,13 +66,13 @@ Local communities in Wyoming also benefit from federal mineral royalties and coa
 
 The state of Wyoming does not impose a sales tax on the production of minerals itself, but it does tax supplies and equipment used in extraction. Services rendered under contract for mineral extraction are also taxed. Wyoming sales tax is 4%, with counties being able to collect up to 2% of additional taxes. In 2015, Campbell County collected $75 million in sales tax from the mining industry (which includes solid minerals such as coal and ore, as well as liquid minerals such as oil), up from $53 million in 2013.[^29]
 
-<h2><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
+## Costs
 
 Campbell County and the Wyoming Department of Transportation (DOT) published the Campbell County Coal Belt Transportation Study in 2010.[^30] The report documents recommendations for roadway network improvements in the near and long term, discusses coal industry impacts to the system, and identifies funding options. While Campbell County is expected to be the primary funding source for new transportation improvements, the study includes a wide variety of collaborative funding efforts, including the Bureau of Land Management’s Abandoned Mine Lands program funds, road impact fees, a sinking fund account, and direct state and federal appropriations.[^31] The study estimates that it would require $43.9 million in investment in county roads between 2010 and 2015 to support coal extraction.[^32]
 
 No publicly available government data discussing emergency services, {{ "reclamation" | term }}, or water-infrastructure costs of coal mining in Campbell County was found.
 
-<h2><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
+## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 

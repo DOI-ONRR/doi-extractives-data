@@ -62,6 +62,17 @@
     margin-bottom: 0.75rem; // 12px
   }
 
+  @if $level == 'large-caps' {
+    // light 18/27 (12px bottom margin)
+    font-size: inherit;
+    font-weight: $weight-book;
+    letter-spacing: 1px;
+    line-height: $standard-padding;
+    margin-bottom: $base-padding-lite;
+    padding-bottom: $base-padding-lite;
+    text-transform: uppercase;
+  }
+
   @if $level == 'para-md' {
     // light 16/22 (10px bottom margin)
     font-size: $base-font-size; // 16px

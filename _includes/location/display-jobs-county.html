@@ -1,0 +1,39 @@
+{% assign caption = include.caption %}
+
+<label>{{ caption }}</label>
+<table is='bar-chart-table' data-percent-max='100' class="county-table">
+  <thead>
+    <tr>
+      <th>Locality</th>
+      <th colspans="2" class='numeric' data-series='jobs'>Jobs</th>
+      <th class='numeric' data-series='percent'>Locality %</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for county in include.values %}
+    {% assign years_values = county[1].employment %}
+
+    {% assign jobs_percent = county[1].employment[year].percent %}
+    {% assign jobs_count = county[1].employment[year].count %}
+
+    <tr data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
+      <td><div class='swatch'
+               data-value-swatch='{{ jobs_count }}'
+               data-year-values='{{ years_values | jsonify }}'
+               data-years-property='count'></div>{{ county[1].name }}</td>
+      <td data-value-text='{{ jobs_count }}'
+          data-year-values='{{ years_values | jsonify }}'
+          data-years-property='count'>{{ jobs_count | intcomma }}</td>
+      <td class='numberless'
+          data-series='jobs'
+          data-value='{{ jobs_count }}'
+          data-year-values='{{ years_values | jsonify }}'
+          data-years-property='count'>{{ jobs_count | intcomma }}</td>
+      <td data-value-text='{{ jobs_percent }}'
+          data-year-values='{{ years_values | jsonify }}'
+          data-years-property='percent'
+          data-format='%'>{{ jobs_percent }}%</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

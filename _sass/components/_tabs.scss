@@ -1,0 +1,36 @@
+.eiti-tabs {
+  @include heading(para-sm);
+
+  border-bottom: 1px solid $neutral-gray;
+  margin: 0;
+  padding: $base-padding-lite;
+  padding-bottom: 0;
+  text-align: left;
+
+
+
+  li {
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+
+  a {
+    font-weight: $weight-bold;
+    padding: $base-padding-lite;
+    text-decoration: none;
+
+    &[aria-selected="true"] {
+      @include active-tab();
+    }
+
+    &:hover,
+    &:focus {
+      @include active-tab();
+    }
+  }
+
+}
+
+.eiti-tab-panel {
+  padding: 0;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="503px" height="286px" viewBox="0 0 503 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-kern-valuation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08-Bar-Chart---Kern-assessment-alt" transform="translate(-119.000000, -78.000000)">
+            <g id="chart-kern-valuation" transform="translate(119.000000, 78.000000)">
+                <rect id="Rectangle-4" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="503" height="286"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="87" y="229.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="87" y="194.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="87" y="159.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="87" y="124.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="87" y="88.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="87" y="53.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="87" y="18.992692" width="415.257812" height="1"></rect>
+                <text id="Billion-dollars" transform="translate(19.000000, 114.500000) rotate(-90.000000) translate(-19.000000, -114.500000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="15" fill="#4A4A4A">
+                    <tspan x="-19.63275" y="120">Billion dollars</tspan>
+                </text>
+                <text id="$120" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="35.2999992" fill="#4A4A4A">
+                    <tspan x="35.52" y="14.7000008">$120</tspan>
+                    <tspan x="43.64" y="50">100</tspan>
+                    <tspan x="51.76" y="85.2999992">80</tspan>
+                    <tspan x="51.76" y="120.599998">60</tspan>
+                    <tspan x="51.76" y="155.899998">40</tspan>
+                    <tspan x="51.76" y="191.199997">20</tspan>
+                    <tspan x="59.88" y="226.499996">0</tspan>
+                </text>
+                <text id="2005" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="95.26" y="249">2005</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="140.9975" y="249">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="180.9975" y="249">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="219.9975" y="249">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="259.9975" y="249">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="299.9975" y="249">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="339.9975" y="249">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="379.9975" y="249">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="419.9975" y="249">’13</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="454.26" y="249">2014</tspan>
+                </text>
+                <path d="M124,229.857885 L124,128" id="Line-Copy-39" stroke="#757575" stroke-width="8"></path>
+                <path d="M164,229.857885 L164,105" id="Line-Copy-38" stroke="#757575" stroke-width="8"></path>
+                <path d="M204,229.857885 L204,89.9678282" id="Line-Copy-37" stroke="#757575" stroke-width="8"></path>
+                <path d="M244,229.857885 L244,83.8321249" id="Line-Copy-36" stroke="#757575" stroke-width="8"></path>
+                <path d="M284,229.857885 L284,92.9086948" id="Line-Copy-35" stroke="#757575" stroke-width="8"></path>
+                <path d="M324,229.857885 L324,85" id="Line-Copy-34" stroke="#757575" stroke-width="8"></path>
+                <path d="M364,229.857885 L364,82.8774836" id="Line-Copy-33" stroke="#757575" stroke-width="8"></path>
+                <path d="M404,229.857885 L404,71" id="Line-Copy-32" stroke="#757575" stroke-width="8"></path>
+                <path d="M444,229.857885 L444,67.9969109" id="Line-Copy-31" stroke="#757575" stroke-width="8"></path>
+                <path d="M484,229.857885 L484,57.9970906" id="Line-Copy-30" stroke="#757575" stroke-width="8"></path>
+                <path d="M115,229.857885 L115,154.973287" id="Line-Copy-69" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M155,229.857885 L155,140.859437" id="Line-Copy-68" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M195,229.857885 L195,128.995043" id="Line-Copy-67" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M235,229.857885 L235,126.980558" id="Line-Copy-66" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M275,229.857885 L275,133" id="Line-Copy-65" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M315,229.857885 L315,132.91744" id="Line-Copy-64" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M355,229.857885 L355,133.994784" id="Line-Copy-63" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M395,229.857885 L395,127.995091" id="Line-Copy-62" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M435,229.857885 L435,120.95867" id="Line-Copy-61" stroke="#D1E3CB" stroke-width="8"></path>
+                <path d="M475,229.857885 L475,114" id="Line-Copy-60" stroke="#D1E3CB" stroke-width="8"></path>
+                <text id="Oil-and-gas" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="118" y="279">Oil and gas</tspan>
+                </text>
+                <path d="M100,274 L112,274" id="Line-Copy-9" stroke="#96BC7F" stroke-width="12"></path>
+                <path d="M195,274 L207,274" id="Line-Copy-10" stroke="#D1E3CB" stroke-width="12"></path>
+                <path d="M315,274 L327,274" id="Line-Copy-11" stroke="#757575" stroke-width="12"></path>
+                <path d="M106,230.143161 L106,202.834716" id="Line-Copy-59" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M146,229.867465 L146,194" id="Line-Copy-58" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M186,229.728554 L186,191" id="Line-Copy-57" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M226,229.857885 L226,187" id="Line-Copy-56" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M266,229.86959 L266,189.949868" id="Line-Copy-55" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M306,230 L306,181.905523" id="Line-Copy-54" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M346,229.728554 L346,178.96059" id="Line-Copy-53" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M386,230 L386,172.964488" id="Line-Copy-52" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M426,230 L426,177" id="Line-Copy-51" stroke="#96BC7F" stroke-width="8"></path>
+                <path d="M466,230 L466,173.963941" id="Line-Copy-50" stroke="#96BC7F" stroke-width="8"></path>
+                <text id="Non-oil-and-gas" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="213" y="279">Non oil and gas</tspan>
+                </text>
+                <text id="Total" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="333" y="279">Total</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

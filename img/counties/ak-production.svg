@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="505px" height="283px" viewBox="0 0 505 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-north-slope-oil-prod</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20-Line-Chart---North-Slope-oil" transform="translate(-124.000000, -81.000000)">
+            <g id="chart-north-slope-oil-prod" transform="translate(124.000000, 81.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="505" height="283"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="89" y="227.219842" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-8" fill="#ECECEC" fill-rule="evenodd" x="89" y="197.219842" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-9" fill="#ECECEC" fill-rule="evenodd" x="89" y="167.219842" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-10" fill="#ECECEC" fill-rule="evenodd" x="89" y="137.219842" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-11" fill="#ECECEC" fill-rule="evenodd" x="89" y="107.219842" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-12" fill="#ECECEC" fill-rule="evenodd" x="89" y="76.2198423" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-13" fill="#ECECEC" fill-rule="evenodd" x="89" y="46.2198423" width="415.257812" height="1"></rect>
+                <text id="Oil-production-(thou" transform="translate(10.000000, 117.000000) rotate(-90.000000) translate(-10.000000, -117.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-81.84825" y="120">Oil production (thousand barrels)</tspan>
+                </text>
+                <text id="350,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="30.2000008" fill="#4A4A4A">
+                    <tspan x="28.515" y="14.7999992">350,000</tspan>
+                    <tspan x="28.515" y="45">300,000</tspan>
+                    <tspan x="28.515" y="75.2000008">250,000</tspan>
+                    <tspan x="28.515" y="105.400002">200,000</tspan>
+                    <tspan x="28.515" y="135.600002">150,000</tspan>
+                    <tspan x="28.515" y="165.800003">100,000</tspan>
+                    <tspan x="36.635" y="196.000004">50,000</tspan>
+                    <tspan x="71.88" y="226.200005">0</tspan>
+                </text>
+                <text id="2004" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="99.26" y="246">2004</tspan>
+                </text>
+                <text id="North-Slope" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="110" y="276">North Slope</tspan>
+                </text>
+                <path d="M92,271 L104,271" id="Line-Copy-9" stroke="#96BC7F" stroke-width="4" stroke-linecap="round"></path>
+                <text id="Alaska" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="215" y="276">Alaska</tspan>
+                </text>
+                <path d="M197,271 L209,271" id="Line-Copy-10" stroke="#157BAC" stroke-width="4" stroke-linecap="round"></path>
+                <text id="’05" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="140.9975" y="246">’05</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="176.9975" y="246">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="211.9975" y="246">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="247.9975" y="246">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="283.9975" y="246">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="319.9975" y="246">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="355.9975" y="246">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="391.9975" y="246">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="428.9975" y="246">’13</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="460.26" y="246">2014</tspan>
+                </text>
+                <polyline id="Line" stroke="#96BC7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="115.348633 31.5234375 151.333984 42.2119141 187.587891 68.2285156 223.584961 72.5751953 259.738281 80.5771484 295.120117 87.59375 330.710938 97.3994141 366.960937 105.941406 402.290039 114.336914 438.203125 117.881836 474.553711 122.441406"></polyline>
+                <polyline id="Line-Copy" stroke="#157BAC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="115.348633 26.5234375 151.509766 37.1123047 187.587891 65.2285156 223.584961 69.5751953 259.738281 77.5771484 295.120117 86.59375 330.710938 95.3994141 366.960937 103.941406 402.290039 112.336914 438.203125 114.881836 474.553711 118.441406"></polyline>
+                <rect id="Rectangle-188-Copy-14" fill="#ECECEC" fill-rule="evenodd" x="89" y="16.2198423" width="415.257812" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

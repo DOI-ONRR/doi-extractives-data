@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="552px" height="254px" viewBox="0 0 552 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-louisiana-gas-prod</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="14-Line-Chart---N-Louisiana-gas" transform="translate(-124.000000, -84.000000)">
+            <g id="chart-louisiana-gas-prod" transform="translate(124.000000, 84.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="552" height="254"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="136" y="224" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="136" y="191" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="136" y="159" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="136" y="126" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="136" y="94" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="136" y="61" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="136" y="28" width="415.257812" height="1"></rect>
+                <text id="Gas-production-(thou" transform="translate(10.000000, 114.000000) rotate(-90.000000) translate(-10.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-86.33975" y="117">Gas production (thousand cubic ft.)</tspan>
+                </text>
+                <text id="3,000,000,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="32.7000008" fill="#4A4A4A">
+                    <tspan x="27.505" y="33.6000023">3,000,000,000</tspan>
+                    <tspan x="27.505" y="66.3000031">2,500,000,000</tspan>
+                    <tspan x="27.505" y="99.0000038">2,000,000,000</tspan>
+                    <tspan x="27.505" y="131.700005">1,500,000,000</tspan>
+                    <tspan x="27.505" y="164.400005">1,000,000,000</tspan>
+                    <tspan x="38.39" y="197.100006">500,000,000</tspan>
+                    <tspan x="108.88" y="229.800007">0</tspan>
+                </text>
+                <text id="2005" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="146.26" y="243">2005</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="191.9975" y="243">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="231.9975" y="243">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="270.9975" y="243">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="310.9975" y="243">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="350.9975" y="243">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="390.9975" y="243">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="430.9975" y="243">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="470.9975" y="243">’13</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="505.26" y="243">2014</tspan>
+                </text>
+                <polyline id="Line-Copy-3" stroke="#96BC7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="163 145.787109 202.728516 141.155273 243.103516 141.742188 281.884766 141.496094 321.81543 132.114258 362.15918 92.5107422 402.186523 38.3427734 441.835938 36 481.648438 77.1386719 522.273438 101.614258"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

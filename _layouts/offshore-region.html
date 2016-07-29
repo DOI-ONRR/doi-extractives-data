@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% assign region_name = page.title %}
+{% assign region_id = page.id %}
+
+<main id="offshore-region-{{ region_id }}" class="container-outer layout-state-pages">
+  <div class="container-left-9">
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+      /
+    </div>
+    <h1 id="title">{{ region_name }}</h1>
+
+  </div>
+
+  <div class="container-right-3">
+    <div class="sticky_nav" data-sticky-offset="50">
+      <h3 class="state-page-nav-title container">
+
+        <div class="nav-title">{{ region_name }}</div>
+        <figure is="data-map">
+
+          {%
+            include icon-map.html
+            state=region_id
+            highlighted_state=region_id
+            offshore=true
+          %}
+        </figure>
+        <label class="nav-prompt">Explore data main page</label>
+      </h3>
+      <nav class="sticky_nav-nav">
+        {% include case-studies/_nav-list.html %}
+      </nav>
+    </div>
+  </div>
+
+</main>
+
+<script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

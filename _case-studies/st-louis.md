@@ -27,16 +27,22 @@ selector: list
 {% include case-studies/_selector.html screen="mobile" %}
 
 {% include case-studies/_maps.html screen="mobile" %}
+
 <h2><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 All iron mining in St. Louis County takes place along the Mesabi Iron Range. The Mesabi Range is a narrow, 120-mile-long iron deposit stretching from Babbitt to Grand Rapids that has shaped the economic development of the region throughout the past century. Iron ore was first discovered in the Mesabi Range in 1866; extractive operations began in the 1890s, and focused on exploiting the rich reserves of high-grade natural ore that could be easily processed into steel. After extracting approximately 2.5 billion tons of this natural ore, the industry had largely exhausted the supply by the 1950s, and companies began mining a lower-grade iron ore alternative: taconite. Taconite mining targets chert-magnetite ores that are processed and upgraded into higher-grade iron pellets to feed steel mill blast furnaces. To date, the industry has produced approximately 1.6 billion tons of these iron pellets from Mesabi Range ore.[^3]
+
 <h2><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
 In 2013, St. Louis County's eight iron mines produced 41.1 million metric tons of ore. Minnesota currently produces approximately 75% of the iron ore in the U.S.[^4] [^5] Production rates were relatively constant throughout the preceding ten years, averaging 37.8 million metric tons with a compound annual growth rate of -0.05%.[^6] [^7] As shown in the chart, iron production in St. Louis County drives the majority of national iron production. The abnormally low production rate in 2009 was broadly the result of the global economic recession and weak demand from Chinese steel mills.
 
 In Minnesota, the state government is the largest owner of mineral rights. It owns approximately 12 million acres of mineral rights, which is equivalent to 24% of the mineral rights in the state.[^8] Minnesota policy prohibits selling state-owned mineral rights, although the state does lease lands and mineral rights for exploration and development.[^9]
 
-<img src="{{ site.baseurl }}/img/counties/mn-production.png" alt="Iron Ore Production from 2003 - 2012" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Iron ore production in St. Louis County vs. nationwide production</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
+</figure>
+
 <h2><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 The iron industry employs thousands of people in St. Louis County. The three major companies that operate the county's iron mines and processing facilities are Cliffs Natural Resources, ArcelorMittal USA Inc., and the United States Steel Corporation. The eight mines in St. Louis County operated by these and other companies provided 3,283 jobs in 2014, comprising 4% of the county's total 81,236 employment.[^10] Mining employment has remained steady at around 4% of employment since 2008.

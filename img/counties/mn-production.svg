@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="505px" height="280px" viewBox="0 0 505 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-st-louis-iron-prod</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="23-Line-Chart---St-Louis-Iron-ore" transform="translate(-124.000000, -84.000000)">
+            <g id="chart-st-louis-iron-prod" transform="translate(124.000000, 84.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="505" height="280"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="89" y="224" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="89" y="188" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="89" y="153" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="89" y="118" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="89" y="83" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="89" y="48" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="89" y="12" width="415.257812" height="1"></rect>
+                <text id="St.-Louis-County" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="111" y="273">St. Louis County</tspan>
+                </text>
+                <text id="United-States" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="239" y="273">United States</tspan>
+                </text>
+                <text id="Ore-(thousand-metric" transform="translate(10.000000, 114.000000) rotate(-90.000000) translate(-10.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-64.67525" y="117">Ore (thousand metric tons)</tspan>
+                </text>
+                <text id="60,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="35.2000008" fill="#4A4A4A">
+                    <tspan x="26.635" y="18">60,000</tspan>
+                    <tspan x="26.635" y="53.2000008">50,000</tspan>
+                    <tspan x="26.635" y="88.4000015">40,000</tspan>
+                    <tspan x="26.635" y="123.600002">30,000</tspan>
+                    <tspan x="26.635" y="158.800003">20,000</tspan>
+                    <tspan x="26.635" y="194.000004">10,000</tspan>
+                    <tspan x="61.88" y="229.200005">0</tspan>
+                </text>
+                <path d="M92,268 L104,268" id="Line-Copy-9" stroke="#96BC7F" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M221,268 L233,268" id="Line-Copy-10" stroke="#157BAC" stroke-width="4" stroke-linecap="round"></path>
+                <text id="2004" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="99.26" y="243">2004</tspan>
+                </text>
+                <text id="’05" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="144.9975" y="243">’05</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="184.9975" y="243">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="223.9975" y="243">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="263.9975" y="243">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="303.9975" y="243">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="343.9975" y="243">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="383.9975" y="243">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="423.9975" y="243">’12</tspan>
+                </text>
+                <text id="2013" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="458.26" y="243">2013</tspan>
+                </text>
+                <polyline id="Line-Copy-2" stroke="#157BAC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="116.375977 31.3134766 156.563477 32.8554688 195.420898 38.0341797 235.503906 39.6542969 275.285156 35.8662109 315.927734 129.112305 355.836914 49.359375 395.833984 31.3134766 435.330078 33.9248047 475.992188 37.1738281"></polyline>
+                <polyline id="Line-Copy-3" stroke="#96BC7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="116.347656 78.1503906 156.711914 78.1503906 195.361328 80.1992188 235.336914 83.7373047 275.583984 80.1992188 315.688477 158.518555 355.517578 92.7412109 395.46875 75.7480469 435.357422 77.0605469 476.361328 79.8613281"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

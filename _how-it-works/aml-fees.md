@@ -18,7 +18,7 @@ breadcrumb:
 selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment.
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. Since 1977, coal companies have paid $9.2 billion in AML fees. Those fees have earned $1.5 billion in interest, which has helped pay for health care plans for the United Mine Workers of America (UMWA).
 
 The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
 
@@ -26,7 +26,7 @@ The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this prog
 
 Abandoned mines pose risks to people and the environment. They can contaminate ground water, emit toxic waste, and cause injury when unsteady infrastructures collapse.
 
-State and tribal AML programs rate abandoned mine land areas based on their need, as defined by the law. Mines rated 1 and 2 are high priority and should be addressed first, with a few exceptions.[^1]
+The government rates abandoned mine areas on a priority scale of 1 to 3. State and tribal AML programs rate abandoned mine land areas based on their need, as defined by the law. Mines rated 1 and 2 are high priority and should be addressed first, with a few exceptions.[^1]
 
 1. **Priority 1**: Protection of public health safety, and property from extreme danger of adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 2. **Priority 2**: Protection of public health and safety from adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
@@ -70,7 +70,13 @@ Companies pay a per-ton fee to OSMRE:[^12]
 
 Congress set the current rates when the fee was extended in the Tax Relief and Health Care Act of 2006, lowering the rates 20% from the original amounts set in 1977.
 
+<<<<<<< HEAD
 Since 1978, the coal industry has contributed $9.2 billion in AML fees.[^13] <!-- Image --> **Annual fees received**[^14]
+=======
+Since 1978, the coal industry has contributed $9.2 billion in AML fees.[^13]
+
+The annual fees received rose slowly from $200 million in 1988 to over $310 million in 2007, but has declined most years since 2007 (with a slight rise from 2010-2011), and returned to about $200 million in 2015.[^14]
+>>>>>>> 77df16695627b749a4b81b9041e3209befef45a9
 
 ## Distribution to states
 
@@ -78,7 +84,7 @@ Since passage of the Tax Relief and Health Care Act of 2006, distribution of AML
 
 The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous fiscal year (e.g., FY14 fees fund FY15 grants).
 
-To the right, you can see how the statute requires the government to distribute AML Reclamation Program funds collected during the previous fiscal year.[^15]
+The statute requires the government to distribute AML Reclamation Program funds collected during the previous fiscal year as follows:[^15]
 
 - Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^16]
 - 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^17]

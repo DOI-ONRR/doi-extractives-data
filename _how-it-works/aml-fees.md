@@ -70,13 +70,9 @@ Companies pay a per-ton fee to OSMRE:[^12]
 
 Congress set the current rates when the fee was extended in the Tax Relief and Health Care Act of 2006, lowering the rates 20% from the original amounts set in 1977.
 
-<<<<<<< HEAD
-Since 1978, the coal industry has contributed $9.2 billion in AML fees.[^13] <!-- Image --> **Annual fees received**[^14]
-=======
 Since 1978, the coal industry has contributed $9.2 billion in AML fees.[^13]
 
 The annual fees received rose slowly from $200 million in 1988 to over $310 million in 2007, but has declined most years since 2007 (with a slight rise from 2010-2011), and returned to about $200 million in 2015.[^14]
->>>>>>> 77df16695627b749a4b81b9041e3209befef45a9
 
 ## Distribution to states
 
@@ -110,7 +106,7 @@ In addition to scheduled reclamation projects, states and tribes can use AML fun
 
 Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
-<!-- Image --> **Growth of the AML fund's unappropriated balance**[^21]
+<!-- Image --> **Growth of the AML fund's unappropriated balance**[^21] <img src="{{ site.baseurl }}/img/AML_fund-growth.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
 
 ## Interest on the fund
 
@@ -128,7 +124,7 @@ OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal
 
 As of November 2015, the fund's balance stood at $2.5 billion.[^25] The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
 
-<!-- Image --> **Allocation of unappopriated balance**[^26]
+**Allocation of unappopriated balance**[^26] <img src="{{ site.baseurl }}/img/AML_unappropriations.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
 
 Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
 
@@ -166,7 +162,9 @@ Congress is currently considering multiple proposals that would reallocate money
 
 [^23]: Office of Surface Mining Reclamation and Enforcement, "FY2008 AML Grant Distribution," 2008
 
-[^24]: Office of Surface Mining Reclamation and Enforcement, "FY2016 OSMRE AML Grant Distribution," 2016 [^25]: Ibid. This figure includes interest earned but not appropriated.
+[^24]: Office of Surface Mining Reclamation and Enforcement, "FY2016 OSMRE AML Grant Distribution," 2016
+
+[^25]: Ibid. This figure includes interest earned but not appropriated.
 
 [^14]: Ibid.
 [^15]: Ibid.

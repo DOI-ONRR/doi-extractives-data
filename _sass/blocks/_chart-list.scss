@@ -83,7 +83,7 @@
   }
 
   figcaption {
-    @include font-size(7/8); // 14px
+    @include font-size(7 / 8); // 14px
 
     font-weight: $weight-light;
     line-height: 20px;
@@ -118,7 +118,7 @@
 
   .chart-selector {
     @include span-columns(2);
-    @include font-size(7/8);
+    @include font-size(7 / 8);
 
     background-color: $mid-gray;
     border: 0;

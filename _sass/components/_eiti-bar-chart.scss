@@ -73,7 +73,7 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
-  @include font-size(15/16); // 15px
+  @include font-size(15 / 16); // 15px
   color: $green-dark-chart;
   font-weight: $weight-bold;
 }

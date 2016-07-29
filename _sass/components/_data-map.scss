@@ -75,6 +75,6 @@ data-map {
   }
 
   .cell text {
-    @include font-size(3/4);
+    @include font-size(3 / 4);
   }
 }

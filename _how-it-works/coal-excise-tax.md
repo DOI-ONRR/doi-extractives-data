@@ -15,9 +15,9 @@ This tax originated in 1977 with the Black Lung Revenue Act. The excise tax is t
 
 Coal excise tax payments are collected by the Internal Revenue Service and transferred to the BLDTF. Amounts in the BLDTF are available, as provided in appropriation acts, for benefit payments that are administered by the Department of Labor’s Division of Coal Mine Workers’ Compensation.[^3]
 
-**Coal excise tax revenue trends**[^4]
+**Coal excise tax revenue**[^4]
 
-<img src="{{site.baseurl}}/img/coal-excise-tax-trend.png" alt="" class="">
+<img src="{{site.baseurl}}/img/chart-coal-excise-tax.svg" alt="" class="">
 
 ## Coal excise tax rates
 

@@ -1,0 +1,588 @@
+Alaska:
+  products:
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 4474000
+        '2005':
+          volume: 3999993
+        '2006':
+          volume: 3367673
+        '2007':
+          volume: 2475706
+        '2008':
+          volume: 2923156
+        '2009':
+          volume: 1817257
+        '2010':
+          volume: 1331549
+        '2011':
+          volume: 1039203
+        '2012':
+          volume: 613536
+        '2013':
+          volume: 652368
+Gulf:
+  products:
+    Coal Bed Methane (mcf):
+      name: Coal Bed Methane
+      units: mcf
+      volume:
+        '2009':
+          volume: 0
+        '2011':
+          volume: 0
+    Condensate (bbl):
+      name: Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 49858978
+        '2005':
+          volume: 45632225
+        '2006':
+          volume: 40595408
+        '2007':
+          volume: 38217225
+        '2008':
+          volume: 24173165
+        '2009':
+          volume: 36508595
+        '2010':
+          volume: 54179015
+        '2011':
+          volume: 55550788
+        '2012':
+          volume: 53564116
+        '2013':
+          volume: 43362201
+    Drip or Scrubber Condensate (bbl):
+      name: Drip or Scrubber Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 1245799
+        '2005':
+          volume: 1175651
+        '2006':
+          volume: 949219
+        '2007':
+          volume: 1303414
+        '2008':
+          volume: 663209
+        '2009':
+          volume: 1576234
+        '2010':
+          volume: 1241033
+        '2011':
+          volume: 876401
+        '2012':
+          volume: 707690
+        '2013':
+          volume: 549079
+    Flash Gas (mcf):
+      name: Flash Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 3661223
+        '2005':
+          volume: 2282838
+        '2006':
+          volume: 2176629
+        '2007':
+          volume: 2558551
+        '2008':
+          volume: 1730238
+        '2009':
+          volume: 2216943
+        '2010':
+          volume: 4102677
+        '2011':
+          volume: 2720891
+        '2012':
+          volume: 1940972
+        '2013':
+          volume: 1363853
+    Fuel Gas (mcf):
+      name: Fuel Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 12864153
+        '2005':
+          volume: 11217077
+        '2006':
+          volume: 9806060
+        '2007':
+          volume: 12565461
+        '2008':
+          volume: 11630171
+        '2009':
+          volume: 13514639
+        '2010':
+          volume: 14238916
+        '2011':
+          volume: 13478377
+        '2012':
+          volume: 12936464
+        '2013':
+          volume: 13561561
+    Fuel Oil (bbl):
+      name: Fuel Oil
+      units: bbl
+      volume:
+        '2010':
+          volume: 5
+    Gas Lost - Flared or Vented (mcf):
+      name: Gas Lost - Flared or Vented
+      units: mcf
+      volume:
+        '2004':
+          volume: 238150
+        '2005':
+          volume: 272721
+        '2006':
+          volume: 55555
+        '2007':
+          volume: 78957
+        '2008':
+          volume: 42893
+        '2009':
+          volume: 58969
+        '2010':
+          volume: 115879
+        '2011':
+          volume: 668871
+        '2012':
+          volume: 501224
+        '2013':
+          volume: 643531
+    Gas Plant Products (gal):
+      name: Gas Plant Products
+      units: gal
+      volume:
+        '2004':
+          volume: 2609191148
+        '2005':
+          volume: 2101510709
+        '2006':
+          volume: 2244083118
+        '2007':
+          volume: 2599463909
+        '2008':
+          volume: 1931324604
+        '2009':
+          volume: 2338628238
+        '2010':
+          volume: 2543093445
+        '2011':
+          volume: 2184960160
+        '2012':
+          volume: 1980603974
+        '2013':
+          volume: 1937764682
+    Geothermal - Commercially Demineralized H2O (cgal):
+      name: Geothermal - Commercially Demineralized H2O
+      units: cgal
+      volume:
+        '2004':
+          volume: 16451
+    'Geothermal - Direct Utilization, Other (cgal)':
+      name: 'Geothermal - Direct Utilization, Other'
+      units: cgal
+      volume:
+        '2004':
+          volume: 16451
+    Inlet Scrubber (bbl):
+      name: Inlet Scrubber
+      units: bbl
+      volume:
+        '2004':
+          volume: 32219
+        '2005':
+          volume: 15131
+        '2006':
+          volume: 13206
+        '2007':
+          volume: 36944
+        '2008':
+          volume: 66059
+        '2009':
+          volume: 67151
+        '2010':
+          volume: 155125
+        '2011':
+          volume: 146003
+        '2012':
+          volume: 156631
+        '2013':
+          volume: 225698
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 489644579
+        '2005':
+          volume: 436953733
+        '2006':
+          volume: 454952219
+        '2007':
+          volume: 454313896
+        '2008':
+          volume: 406374276
+        '2009':
+          volume: 565803625
+        '2010':
+          volume: 535551552
+        '2011':
+          volume: 448070091
+        '2012':
+          volume: 423240484
+        '2013':
+          volume: 418017728
+    Other Liquid Hydrocarbons (bbl):
+      name: Other Liquid Hydrocarbons
+      units: bbl
+      volume:
+        '2004':
+          volume: 16766
+        '2005':
+          volume: 9748
+        '2006':
+          volume: 114982
+        '2007':
+          volume: 12140
+        '2008':
+          volume: 6963
+        '2009':
+          volume: 5469
+        '2010':
+          volume: 6298
+        '2011':
+          volume: 6703
+        '2012':
+          volume: 7622
+        '2013':
+          volume: 6481
+    Processed (Residue) Gas (mcf):
+      name: Processed (Residue) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 1849505152
+        '2005':
+          volume: 1637033081
+        '2006':
+          volume: 2004699115
+        '2007':
+          volume: 2000861211
+        '2008':
+          volume: 1484214844
+        '2009':
+          volume: 1581025672
+        '2010':
+          volume: 1394279452
+        '2011':
+          volume: 1170303430
+        '2012':
+          volume: 947355712
+        '2013':
+          volume: 838930833
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2004':
+          volume: 33299
+        '2005':
+          volume: 28603
+        '2006':
+          volume: 29258
+        '2007':
+          volume: 24254
+        '2008':
+          volume: 27030
+        '2009':
+          volume: 28039
+        '2010':
+          volume: 26761
+        '2011':
+          volume: 19601
+        '2012':
+          volume: 20410
+        '2013':
+          volume: 26546
+    Sulfur (lton):
+      name: Sulfur
+      units: lton
+      volume:
+        '2004':
+          volume: 8761
+        '2005':
+          volume: 5791
+        '2006':
+          volume: 3619
+        '2007':
+          volume: 2364
+        '2008':
+          volume: 1490
+        '2009':
+          volume: 233
+        '2010':
+          volume: 646
+        '2011':
+          volume: 101
+        '2012':
+          volume: 81
+        '2013':
+          volume: 69
+    Unprocessed (Wet) Gas (mcf):
+      name: Unprocessed (Wet) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 2061892395
+        '2005':
+          volume: 1601781201
+        '2006':
+          volume: 930060097
+        '2007':
+          volume: 766097292
+        '2008':
+          volume: 810687451
+        '2009':
+          volume: 822375873
+        '2010':
+          volume: 676168212
+        '2011':
+          volume: 502149902
+        '2012':
+          volume: 430092070
+        '2013':
+          volume: 331836563
+Pacific:
+  products:
+    Condensate (bbl):
+      name: Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 14589
+        '2005':
+          volume: 15477
+        '2006':
+          volume: 29551
+        '2007':
+          volume: 25659
+        '2008':
+          volume: 23812
+        '2009':
+          volume: 20134
+        '2010':
+          volume: 16666
+        '2011':
+          volume: 13528
+        '2012':
+          volume: 15316
+        '2013':
+          volume: 14307
+    Drip or Scrubber Condensate (bbl):
+      name: Drip or Scrubber Condensate
+      units: bbl
+      volume:
+        '2004':
+          volume: 72249
+        '2005':
+          volume: 79114
+        '2006':
+          volume: 52935
+        '2007':
+          volume: 38210
+        '2008':
+          volume: 14882
+        '2009':
+          volume: 0
+        '2010':
+          volume: 0
+        '2011':
+          volume: 0
+        '2012':
+          volume: 0
+        '2013':
+          volume: 0
+    Fuel Gas (mcf):
+      name: Fuel Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 9831
+        '2005':
+          volume: 60276
+        '2006':
+          volume: 49283
+        '2007':
+          volume: 11401
+        '2008':
+          volume: 11815
+        '2009':
+          volume: 5698
+        '2010':
+          volume: 18112
+        '2011':
+          volume: 4497
+        '2012':
+          volume: 13945
+        '2013':
+          volume: 2565
+    Gas Lost - Flared or Vented (mcf):
+      name: Gas Lost - Flared or Vented
+      units: mcf
+      volume:
+        '2008':
+          volume: 11475
+        '2009':
+          volume: 10169
+        '2010':
+          volume: 20480
+        '2011':
+          volume: 11385
+    Gas Plant Products (gal):
+      name: Gas Plant Products
+      units: gal
+      volume:
+        '2004':
+          volume: 17622249
+        '2005':
+          volume: 13597272
+        '2006':
+          volume: 9399398
+        '2007':
+          volume: 8443536
+        '2008':
+          volume: 7243346
+        '2009':
+          volume: 6961491
+        '2010':
+          volume: 7372394
+        '2011':
+          volume: 6456386
+        '2012':
+          volume: 4264164
+        '2013':
+          volume: 5131381
+    Inlet Scrubber (bbl):
+      name: Inlet Scrubber
+      units: bbl
+      volume:
+        '2008':
+          volume: 5545
+        '2009':
+          volume: 37053
+        '2010':
+          volume: 48856
+        '2011':
+          volume: 37174
+        '2012':
+          volume: 27166
+        '2013':
+          volume: 30891
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 27341535
+        '2005':
+          volume: 26934881
+        '2006':
+          volume: 26247777
+        '2007':
+          volume: 24646653
+        '2008':
+          volume: 24738668
+        '2009':
+          volume: 22525578
+        '2010':
+          volume: 21661488
+        '2011':
+          volume: 19781762
+        '2012':
+          volume: 17589177
+        '2013':
+          volume: 18623737
+    Processed (Residue) Gas (mcf):
+      name: Processed (Residue) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 26524347
+        '2005':
+          volume: 23455148
+        '2006':
+          volume: 23096630
+        '2007':
+          volume: 21080252
+        '2008':
+          volume: 17598490
+        '2009':
+          volume: 17777751
+        '2010':
+          volume: 16641845
+        '2011':
+          volume: 12203755
+        '2012':
+          volume: 9943325
+        '2013':
+          volume: 10921851
+    Sulfur (lton):
+      name: Sulfur
+      units: lton
+      volume:
+        '2004':
+          volume: 4877
+        '2005':
+          volume: 4027
+        '2006':
+          volume: 4617
+        '2007':
+          volume: 4429
+        '2008':
+          volume: 3618
+        '2009':
+          volume: 3619
+        '2010':
+          volume: 3772
+        '2011':
+          volume: 3334
+        '2012':
+          volume: 2583
+        '2013':
+          volume: 2900
+    Unprocessed (Wet) Gas (mcf):
+      name: Unprocessed (Wet) Gas
+      units: mcf
+      volume:
+        '2004':
+          volume: 2998045
+        '2005':
+          volume: 3618246
+        '2006':
+          volume: 4047050
+        '2007':
+          volume: 5157753
+        '2008':
+          volume: 4622951
+        '2009':
+          volume: 4605423
+        '2010':
+          volume: 3768884
+        '2011':
+          volume: 3318885
+        '2012':
+          volume: 2640365
+        '2013':
+          volume: 1925817

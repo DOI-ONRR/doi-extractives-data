@@ -291,6 +291,33 @@ data/national_federal_production.yml:
 			-c _meta/national_federal_production.yml \
 			-o _$@
 
+# data/offshore_federal_production.yml:
+# 	$(query) --format ndjson " \
+# 		SELECT \
+# 			year, region_id, region_type, \
+# 			product, product_name, units, \
+# 			ROUND(volume) AS volume \
+# 		FROM federal_regional_production \
+# 		WHERE region_type == 'offshore' \
+# 		ORDER BY \
+# 			region_id, product, product_name, units, year" \
+# 		| $(nestly) --if ndjson \
+# 			-c _meta/offshore_federal_production.yml \
+# 			-o _$@
+
+data/offshore_federal_production.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, region_id, \
+			product, product_name, units, \
+			ROUND(volume) AS volume \
+		FROM federal_offshore_region_production \
+		ORDER BY \
+			region_id, product, product_name, units, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_federal_production.yml \
+			-o _$@
+
 data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \

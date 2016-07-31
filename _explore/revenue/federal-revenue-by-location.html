@@ -149,7 +149,7 @@ permalink: /explore/federal-revenue-by-location/
       <section id="{{ region.id }}" class="region onshore">
         <div class="map-wrapper">
           <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+            projection="mercator" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
             <svg class="region-map">
               <g class="onshore states" data-url="us-topology.json"
                 data-object="states"
@@ -182,7 +182,7 @@ permalink: /explore/federal-revenue-by-location/
 
         <div class="map-wrapper">
           <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+            projection="mercator" data-path="{{ site.baseurl }}/data/geo/"
             zoom-to="{{ region.id }}">
             <svg class="region-map">
               <g class="onshore states reference" data-url="us-topology.json"

@@ -118,7 +118,7 @@ $( document ).ready(function() {
         $('.search-no-results').remove();
       }
 
-      $.each(json.hits.hits, function(i, hit){
+      var hits = json.hits.hits.map(function(hit) {
         var tags = (hit._source.tag || [])
           .map(function(tag) {
             return (
@@ -128,21 +128,22 @@ $( document ).ready(function() {
                 '</a>&nbsp;' +
               '</span>'
             );
-          })
-          .join('');
+          });
 
         var contentType = getContentTypeGlyph(hit._source.content_type);
 
-        $('.search-results-container').append(
+        return (
           '<article class="search-result-list">' +
             '<h1><a href="' + hit._source.url + '" target="_blank">' +
               hit._source.title +
             '</a></h1>' +
             '<p>' + hit._source.description + '</p>' +
-            '<p>Tagged&nbsp;/' + tags + '</p>' +
+            '<p>Tagged&nbsp;/' + tags.join('') + '</p>' +
           '</article>'
         );
       });
+
+      $('.search-results-container').append( hits.join('') );
 
       var paging = {
         needsPrevLink: from > 0,

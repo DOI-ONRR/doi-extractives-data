@@ -64,18 +64,34 @@
 
 .landing-oil_gas {
   background: url('../img/how-it-works/cards/oil-gas.png') bottom left no-repeat;
+
+  @include respond-to(tiny-down) {
+    background: url('../img/how-it-works/cards/oil-gas_icon.png') no-repeat;
+  }
 }
 
 .landing-coal {
   background: url('../img/how-it-works/cards/coal.png') bottom left no-repeat;
+
+  @include respond-to(tiny-down) {
+    background: url('../img/how-it-works/cards/coal_icon.png') no-repeat;
+  }
 }
 
 .landing-minerals {
   background: url('../img/how-it-works/cards/minerals.png') bottom left no-repeat;
+
+  @include respond-to(tiny-down) {
+    background: url('../img/how-it-works/cards/minerals_icon.png') no-repeat;
+  }
 }
 
 .landing-renewables {
   background: url('../img/how-it-works/cards/renewables.png') bottom left no-repeat;
+
+  @include respond-to(tiny-down) {
+    background: url('../img/how-it-works/cards/renewables_icon.png') no-repeat;
+  }
 }
 
 .landing-oil_gas,
@@ -93,6 +109,19 @@
   @include respond-to(medium-up) {
     height: 200px;
   }
+
+  @include respond-to(tiny-down) {
+    height: auto;
+    margin-top: -115px;
+    padding-top: 100px;
+
+    background-position: top left;
+    background-size: auto 64px;
+
+    p {
+      width: 100%;
+    }
+  }
 }
 
 .landing-oil_gas-wrapper,
@@ -101,6 +130,10 @@
 .landing-renewables-wrapper {
   .landing-heading {
     margin-bottom: -($base-padding-lite * 1.8);
+
+    @include respond-to(tiny-down) {
+      margin-top: 80px;
+    }
   }
 }
 

@@ -30,7 +30,7 @@ eiti-bar-chart {
   .bar-mask {
     fill: transparent;
     stroke: $white;
-    stroke-width: 2;
+    stroke-width: 4;
   }
 
   .axis {
@@ -91,12 +91,13 @@ eiti-bar-chart {
 .extent-line {
   text {
     @include font-size(0.9);
+    fill: $neutral-gray;
   }
 
   line {
-    stroke: $green-dark-chart;
-    stroke-dasharray: 3,5;
-    stroke-width: 2;
+    stroke: $neutral-gray;
+    stroke-dasharray: 5,5;
+    stroke-width: 1;
   }
 }
 

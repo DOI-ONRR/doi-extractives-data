@@ -1,9 +1,12 @@
 .state-page-nav-title {
   @include heading(large-caps);
-
+  -ms-align-items: center;
+  -webkit-align-items: center;
   align-items: center;
   border-bottom: 1px solid $mid-gray;
   display: flex;
+  -ms-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin: 0;
   position: relative;
@@ -34,6 +37,8 @@
   }
 
   figure {
+    -ms-align-self: flex-end;
+    -webkit-align-self: flex-end;
     align-self: flex-end;
     margin: 0;
     width: 33%;

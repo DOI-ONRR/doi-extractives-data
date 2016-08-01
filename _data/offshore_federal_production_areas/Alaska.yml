@@ -1,0 +1,26 @@
+BFT:
+  products:
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2004':
+          volume: 4474000
+        '2005':
+          volume: 3999993
+        '2006':
+          volume: 3367673
+        '2007':
+          volume: 2475706
+        '2008':
+          volume: 2923156
+        '2009':
+          volume: 1817257
+        '2010':
+          volume: 1331549
+        '2011':
+          volume: 1039203
+        '2012':
+          volume: 613536
+        '2013':
+          volume: 652368

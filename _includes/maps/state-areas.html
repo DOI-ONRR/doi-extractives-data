@@ -3,8 +3,8 @@
     </g>
     {% assign keys = include.value %}
     {% for state in include.states %}
-    {% assign _state = site.data.states | where: 'id', state[0] | first %}
-    {% if include.href %}<a xlink:href="{{ include.href | replace: '%', state[0] }}">{% endif %}
+    {% assign _state = site.states | where: 'id', state[0] | first %}
+    {% if include.href %}<a xlink:href="{{ include.href | format_url: _state }}">{% endif %}
       <g class="state feature" {% if include.value %}
         {% assign value = state[1] | get: keys %}
         data-value='{{ value | default: 0 | jsonify }}'{% endif %}>

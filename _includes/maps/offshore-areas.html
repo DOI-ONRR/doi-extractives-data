@@ -1,5 +1,5 @@
     {% for area in site.offshore_areas %}
-    {% if include.href %}<a xlink:href="{{ include.href | replace: '%', area.id }}">{% endif %}
+    {% if include.href %}<a xlink:href="{{ include.href | format_url: area }}">{% endif %}
       <!-- FIXME: remove fill attribute -->
       <g class="state offshore-area feature" fill="#f0f0f0">
         <title>{{ area.title }}</title>

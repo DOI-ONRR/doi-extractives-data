@@ -51,6 +51,8 @@ site-data: \
 	data/national_gdp.yml \
 	data/state_revenues.yml \
 	data/national_federal_production.yml \
+	data/offshore_federal_production_areas \
+	data/offshore_federal_production_regions.yml \
 	data/top_state_products
 
 
@@ -229,7 +231,9 @@ data/revenue: \
 	data/state_revenues.yml \
 	data/county_revenue \
 	data/state_revenues_by_type.yml \
-	data/national_revenues_by_type.yml
+	data/national_revenues_by_type.yml \
+	data/offshore_revenue_regions \
+	data/offshore_revenue_areas \
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -398,6 +402,34 @@ data/national_revenues_by_type.yml:
 		| $(nestly) --if ndjson \
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
+
+data/offshore_revenue_regions.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, year, \
+		  region_id, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_region_revenue \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenue_regions.yml \
+			-o _$@
+
+data/offshore_revenue_areas:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, year, \
+		  region_id, area_id, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_area_revenue \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenue_areas.yml \
+			-o '_$@/{area_id}.yml'
 
 data/top_state_products:
 	# top N states for each product category in each year

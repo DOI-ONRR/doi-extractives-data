@@ -22,7 +22,7 @@ nav_items:
 selector: list
 ---
 
-> Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth a total value of approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011, with copper output totalling 751,000 {{ "metric tons" | term_end:"metric ton" }}, or 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
+> Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world’s fourth-largest copper producer, mining 1.127 million tons of copper worth a total value of approximately $9.8 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production most in 2014. Arizona's copper output totaled 893,000 {{ "metric tons" | term_end:"metric ton" }}, or 66% of the national total.[^2] Copper represented 89% of the total value of mining in Arizona, with Greenlee and Pima counties generating the majority of that production.[^3] If Arizona were a country, it would be the seventh largest copper producer in the world.[^4]
 
 {% include case-studies/_selector.html screen="mobile" %}
 
@@ -30,29 +30,32 @@ selector: list
 
 ## Geology and history
 
-Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^3] The modern Morenci Mine was thus established and has been a significant economic driver in the county ever since.
+Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^5] The modern Morenci Mine was established and has been a significant economic driver in the county ever since.
 
 ## Production
 
-The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2012, the Morenci Mine produced 537 million pounds of recoverable copper.[^4] This amount reflects a 22% decrease in production from its output five years prior as a result of the 2008 global recession and associated price drop.[^5] [^6] However, production increased 19% between 2010 and 2011, reflecting a healthy rebound in production in conjunction with rising copper prices. Moreover, in 2012 the Morenci Mine maintained a total output capacity of 420,000 metric tons of copper-molybdenum ore — an amount greater than the combined output capacity of the next three largest copper mines in the state.[^7]
+The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2015, the Morenci Mine produced 901 million pounds of recoverable copper, up from 537 million pounds in 2012.[^6] [^7] Production at Morenci had significantly declined following the 2008 global recession and associated copper price decline. Recently, production has rebounded and has surpassed pre-2008 levels.[^8] [^9] However, the two leading copper producers in Arizona decreased production in 2015 due to falling prices, despite increases at Morenci.[^10]
 
-<img src="{{ site.baseurl }}/img/counties/az-production.png" alt="Morencini Copper Production vs. Average Price from 2007-2012" class="case_studies_content-graph">
+<figure>
+  <figcaption class="case_studies_content-graph-caption">Morencini mine copper production and average copper price</figcaption>
+  <img src="{{ site.baseurl }}/img/counties/az-production.svg" alt="Chart shows annual copper production from Morenci mine from 2007 to 2015, with annual average copper price overlaid as a line graph. The y-axis represents millions of recoverable pounds of copper and cents per pound, respectively. Each year, copper production is between 400 and 900 million recoverable pounds; the price each year is between $2 and $4.50 per pound. The highest price shown was in 2011, at over $4 per pound. The year in this period with the most production is 2015, with about 900 million recoverable pounds." class="case_studies_content-graph">
+</figure>
 
 ## Employment
 
-Copper production employed 10,637 workers in Arizona in 2011, comprising less than 1% of statewide private-sector employment (out of 1,992,727 total workers).[^8] [^9] In Greenlee County, the ebbs and flows of employment mirror trends in the copper industry. County unemployment reached 18% in 2009 at the height of the recession before falling to around 7% in 2013, as global demand and prices stabilized.[^10] Freeport-McMoRan Inc. owns and operates Greenlee County’s Morenci Mine, after merging with Phelps Dodge Corporation in 2007, and serves as the key copper-mining employer. In 2011, mining activities in the county employed approximately 2,296 workers out of a population of 8,594.[^11]
+In 2014, copper production employed 1,893 people in Greenlee County.[^11] Copper mining employed 11,953 workers in Arizona in 2014, comprising less than 1% of statewide employment (out of 2,241,077 total workers).[^12] In Greenlee County, the ebbs and flows of employment mirror trends in the copper industry. County unemployment reached 18% in 2009 at the height of the recession before falling to around 7% in 2013, as global demand and prices stabilized.[^13] Freeport-McMoRan Inc. owns and operates Greenlee County’s Morenci Mine, after merging with Phelps Dodge Corporation in 2007, and serves as the key copper-mining employer.
 
 ## Revenue
 
-State revenue from copper extraction is directed back to Greenlee County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^12]
+State revenue from copper extraction is directed back to Greenlee County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^14]
 
-Arizona also collects a Transaction Privilege Tax for the right to do business in the state at a rate of 3.125% on the total gross receipts of taxable business.[^13] However, this tax does not apply to copper mining.
+Arizona also collects a Transaction Privilege Tax for the right to do business in the state, at a rate of 3.125% on the total gross receipts of taxable business.[^15] However, this tax does not apply to copper mining.
 
-In 2012, Greenlee County received $4,376,829 in transaction privilege and severance tax disbursements.[^14] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $2,763,245 in local property taxes levied for general purposes, public health services, and flood control (out of a total $17.1 million in county revenue) in 2012.[^15] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
+In 2014, Greenlee County received $5,537,109 in transaction privilege and severance tax disbursements.[^16] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $3,256,209 in local property taxes levied for general purposes, public health services, and flood control (out of a total $19.7 million in county revenue) in 2014.[^17] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
 
 ## Costs
 
-Copper mining activity is a key consideration in Greenlee County road planning.[^16] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
+Copper mining activity is a key consideration in Greenlee County road planning.[^18] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
 
 ## Data availability
 
@@ -75,7 +78,7 @@ The table below highlights data sources used to compile this narrative, as well 
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) provided Greenlee County copper-mining employment data for 2011. The Arizona State University William Siedman Research Institute provided supplemental information on mining employment trends.</td>
-      <td>Neither BLS nor the U.S. Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004–2013. There are several years and subindustries without data.</td>
+      <td>The Bureau of Labor Statistics (BLS) does not have mining data (NAICS 212, 2122, 21223) for Greenlee County for 2012, 2013, or 2014. Neither BLS nor the U.S. Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004–2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>
@@ -92,19 +95,21 @@ The table below highlights data sources used to compile this narrative, as well 
 
 ## Notes
 
-[^1]: U.S. Geological Survey, [Copper Commodity Summary (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/mcs-2013-coppe.pdf), 2013, p. 48
-[^2]: Arizona State University, [The Economic Impact of Mining in the State of Arizona (PDF)](http://www.azmining.com/uploads/AZMining%20FINAL%202011%20Economic%20Impact%20Study.pdf), 2011, p. 8
-[^3]: Greenlee County, [Morenci Mining District](http://www.co.greenlee.az.us/morencimining.aspx)
-[^4]: [Freeport-McMoRan Copper & Gold Inc. Reports Fourth-Quarter and Year Ended December 31, 2013 Results (PDF)](http://www.fcx.com/news/2014/012214.pdf), table II
-[^5]: U.S. Geological Survey, [2007 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2007-coppe.pdf), table 2; [2008 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2008-coppe.pdf), table 2; [2009 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2009-coppe.pdf), table 2; [2010 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2010-coppe.pdf), table 2; [2011 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2011-coppe.pdf), table 2; [2012 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2012-coppe.pdf), table 2
-[^6]: Production was calculated by multiplying mine capacity (as a percentage of the State of Arizona’s total mine capacity) by Arizona’s total annual copper production.
-[^7]: U.S. Geological Survey, [2012 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2012-coppe.pdf), p. 20.8, table 2
-[^8]: Arizona State University, [The Economic Impact of Mining in the State of Arizona (PDF)](http://www.azmining.com/uploads/AZMining%20FINAL%202011%20Economic%20Impact%20Study.pdf), 2011, p. 11
-[^9]: Bureau of Labor Statistics, [QCEW NAICS-based Data Files (1975-2011) County High-Level, Employment Data](http://www.bls.gov/cew/datatoc.htm#NAICS_BASED), 2011
-[^10]: Bureau of Labor Statistics, [Local Area Unemployment Statistics Map, Counties, Annual Average](http://data.bls.gov/map/MapToolServlet?survey=la&map=state&seasonal=s)
-[^11]: Arizona State University, [The Economic Impact of Mining in the State of Arizona (PDF)](http://www.azmining.com/uploads/AZMining%20FINAL%202011%20Economic%20Impact%20Study.pdf), p. 20, table 5; U.S. Census Bureau, 2011 Greenlee County population
-[^12]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 25
-[^13]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 21
-[^14]: Arizona Department of Revenue, [June 2012 Tax Facts (PDF)](http://www.azdor.gov/Portals/0/TaxFacts/0612Taxfact.pdf), p. 7
-[^15]: Greenlee County, Arizona, [Annual Financial Report](http://azmemory.azlibrary.gov/cdm/ref/collection/statepubs/id/15685), FY 2013, p. 10
-[^16]: [Southern Greenlee County Small Area Transportation Study, Addendum to Transportation Plan (PDF)](http://www.co.greenlee.az.us/engineering/roads/Greenlee%20Addendum%20Final%20Report%200809.pdf), p. 5
+[^1]: U.S. Geological Survey, [Mineral Commodity Summaries (PDF)](http://minerals.usgs.gov/minerals/pubs/mcs/2015/mcs2015.pdf), 2015, p. 48
+[^2]: Arizona State University, [The Economic Impact of the Mining Industry in the State of Arizona (PDF)](http://www.azmining.com/uploads/AMA%20report%202014%20v2%20.pdf), 2014, p. 7
+[^3]: Ibid.
+[^4]: Ibid.
+[^5]: Greenlee County, [Morenci Mining District](http://www.co.greenlee.az.us/morencimining.aspx)
+[^6]: [Freeport-McMoRan Copper & Gold Inc. Reports Fourth-Quarter and Year Ended December 31, 2015 Results (PDF)](http://s2.q4cdn.com/089924811/files/doc_news/2016/012616.pdf), table II
+[^7]: [Freeport-McMoRan Copper & Gold Inc. Reports Fourth-Quarter and Year Ended December 31, 2013 Results (PDF)](http://www.fcx.com/news/2014/012214.pdf), table II
+[^8]: Ibid.
+[^9]: U.S. Geological Survey, [2007 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2007-coppe.pdf), table 2; [2008 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2008-coppe.pdf), table 2; [2009 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2009-coppe.pdf), table 2; [2010 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2010-coppe.pdf), table 2; [2011 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2011-coppe.pdf), table 2; [2012 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/myb1-2012-coppe.pdf), table 2
+[^10]: U.S. Geological Survey, [Mineral Commodities Summaries: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/mcs-2016-coppe.pdf), 2016
+[^11]: Arizona State University, [The Economic Impact of the Mining Industry on the State of Arizona (PDF)](http://www.azmining.com/uploads/AMA%20report%202014%20v2%20.pdf), 2014, p. 16
+[^12]: U.S. Census, [QuickFacts: Arizona](http://www.census.gov/quickfacts/table/PST045215/04,00)
+[^13]: Bureau of Labor Statistics, [Local Area Unemployment Statistics Map, Counties, Annual Average](http://data.bls.gov/map/MapToolServlet?survey=la&map=state&seasonal=s)
+[^14]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 25
+[^15]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 21
+[^16]: Arizona Department of Revenue, [2015 Annual Report (PDF)](https://www.azdor.gov/Portals/0/AnnualReports/FY15%20Annual%20Report_web.pdf), table 24
+[^17]: Greenlee County, Arizona, [Annual Financial Report (PDF)](https://www.azauditor.gov/sites/default/files/GreenleeCountyJune30,2014FinancialReports.pdf), FY 2014, p. 10
+[^18]: [Southern Greenlee County Small Area Transportation Study, Addendum to Transportation Plan (PDF)](http://www.co.greenlee.az.us/engineering/roads/Greenlee%20Addendum%20Final%20Report%200809.pdf), 2009, p. 5

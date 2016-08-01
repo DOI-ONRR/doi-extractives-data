@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="514px" height="283px" viewBox="0 0 514 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-pima-empl</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Charts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="24-Bar-Chart---Pima-wage" transform="translate(-128.000000, -81.000000)">
+            <g id="chart-pima-empl" transform="translate(128.000000, 81.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="514" height="283"></rect>
+                <rect id="Rectangle-188-Copy" fill="#ECECEC" fill-rule="evenodd" x="98" y="226.992692" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-2" fill="#ECECEC" fill-rule="evenodd" x="98" y="200.685755" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-3" fill="#ECECEC" fill-rule="evenodd" x="98" y="174.378818" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-4" fill="#ECECEC" fill-rule="evenodd" x="98" y="148.071881" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-5" fill="#ECECEC" fill-rule="evenodd" x="98" y="121.764945" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-6" fill="#ECECEC" fill-rule="evenodd" x="98" y="95.4580078" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-7" fill="#ECECEC" fill-rule="evenodd" x="98" y="68.4580078" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-8" fill="#ECECEC" fill-rule="evenodd" x="98" y="42.4580078" width="415.257812" height="1"></rect>
+                <rect id="Rectangle-188-Copy-9" fill="#ECECEC" fill-rule="evenodd" x="98" y="15.4580078" width="415.257812" height="1"></rect>
+                <text id="Mining-industry" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="119" y="276">Mining industry</tspan>
+                </text>
+                <text id="All-other-industries" font-family="Lato-Bold, Lato" font-size="13" font-weight="bold" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="243" y="276">All other industries</tspan>
+                </text>
+                <text id="Number-of-wage-and-s" transform="translate(10.000000, 114.000000) rotate(-90.000000) translate(-10.000000, -114.000000) " font-family="Lato-Light, Lato" font-size="13" font-weight="300" line-spacing="20" fill="#4A4A4A">
+                    <tspan x="-104" y="117">Number of wage and salary employees</tspan>
+                </text>
+                <text id="400,000" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="26.5" fill="#4A4A4A">
+                    <tspan x="27.515" y="21">400,000</tspan>
+                    <tspan x="27.515" y="47.5">350,000</tspan>
+                    <tspan x="27.515" y="74">300,000</tspan>
+                    <tspan x="27.515" y="100.5">250,000</tspan>
+                    <tspan x="27.515" y="127">200,000</tspan>
+                    <tspan x="27.515" y="153.5">150,000</tspan>
+                    <tspan x="27.515" y="180">100,000</tspan>
+                    <tspan x="35.635" y="206.5">50,000</tspan>
+                    <tspan x="70.88" y="233">0</tspan>
+                </text>
+                <path d="M101,271 L113,271" id="Line-Copy-9" stroke="#96BC7F" stroke-width="12"></path>
+                <path d="M226,271 L238,271" id="Line-Copy-10" stroke="#D1E3CB" stroke-width="12"></path>
+                <text id="2005" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="108.26" y="246">2005</tspan>
+                </text>
+                <text id="’06" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="153.9975" y="246">’06</tspan>
+                </text>
+                <text id="’07" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="193.9975" y="246">’07</tspan>
+                </text>
+                <text id="’08" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="232.9975" y="246">’08</tspan>
+                </text>
+                <text id="’09" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="272.9975" y="246">’09</tspan>
+                </text>
+                <text id="’10" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="312.9975" y="246">’10</tspan>
+                </text>
+                <text id="’11" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="352.9975" y="246">’11</tspan>
+                </text>
+                <text id="’12" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="392.9975" y="246">’12</tspan>
+                </text>
+                <text id="’13" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="432.9975" y="246">’13</tspan>
+                </text>
+                <text id="2014" font-family="Lato-Light, Lato" font-size="14" font-weight="300" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="467.26" y="246">2014</tspan>
+                </text>
+                <path d="M124,227 L124,40" id="Line-Copy-38" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M164,227 L164,32" id="Line-Copy-37" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M204,227 L204,30" id="Line-Copy-36" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M244,227 L244,32" id="Line-Copy-35" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M284,227 L284,42" id="Line-Copy-34" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M324,227 L324,46" id="Line-Copy-33" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M364,227 L364,47" id="Line-Copy-32" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M404,227 L404,44" id="Line-Copy-31" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M444,227 L444,42" id="Line-Copy-30" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M484,227 L484,42" id="Line-Copy-39" stroke="#D1E3CB" stroke-width="14"></path>
+                <path d="M124,227 L124,226" id="Line-Copy-8" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M124,227 L124,226" id="Line-Copy-11" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M164,227 L164,226" id="Line-Copy-12" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M204,227 L204,226" id="Line-Copy-13" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M244,227 L244,226" id="Line-Copy-14" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M284,227 L284,226" id="Line-Copy-15" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M324,227 L324,225" id="Line-Copy-16" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M364,227 L364,225" id="Line-Copy-17" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M404,227 L404,225" id="Line-Copy-18" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M444,227 L444,225" id="Line-Copy-19" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M484,227 L484,225" id="Line-Copy-20" stroke="#96BC7F" stroke-width="14"></path>
+                <path d="M124,226 L124,205.603922" id="Line-Copy-49" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M124,226 L124,205.603922" id="Line-Copy-50" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M164,226 L164,205.603922" id="Line-Copy-51" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M204,226 L204,205.603922" id="Line-Copy-52" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M244,226 L244,205.603922" id="Line-Copy-53" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M284,226 L284,205.603922" id="Line-Copy-54" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M324,225 L324,204.603922" id="Line-Copy-55" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M364,225 L364,204.603922" id="Line-Copy-56" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M404,225 L404,204.603922" id="Line-Copy-57" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M444,225 L444,204.603922" id="Line-Copy-58" stroke="#FFFFFF" stroke-width="14"></path>
+                <path d="M484,225 L484,204.603922" id="Line-Copy-59" stroke="#FFFFFF" stroke-width="14"></path>
+                <text id="0.4%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="110.184" y="220">0.4%</tspan>
+                </text>
+                <text id="0.4%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="110.184" y="220">0.4%</tspan>
+                </text>
+                <text id="0.4%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="150.184" y="220">0.4%</tspan>
+                </text>
+                <text id="0.5%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="190.184" y="220">0.5%</tspan>
+                </text>
+                <text id="0.5%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="230.184" y="220">0.5%</tspan>
+                </text>
+                <text id="0.5%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="270.184" y="220">0.5%</tspan>
+                </text>
+                <text id="0.7%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="310.184" y="220">0.7%</tspan>
+                </text>
+                <text id="0.6%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="350.184" y="220">0.6%</tspan>
+                </text>
+                <text id="0.6%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="390.184" y="220">0.6%</tspan>
+                </text>
+                <text id="0.6%" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="430.184" y="220">0.6%</tspan>
+                </text>
+                <text id="0.6%-copy" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="25" fill="#4A4A4A">
+                    <tspan x="470.184" y="220">0.6%</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

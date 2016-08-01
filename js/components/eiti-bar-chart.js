@@ -14,6 +14,7 @@
   var textMargin = 18;
   var baseMargin = 2;
   var extentMargin = 18;
+  var tickPadding = 10;
   var margin = {
     top: extentMargin,
     right: baseMargin,
@@ -27,10 +28,9 @@
   var bottom = height - margin.bottom;
 
   var xAxisLabel = 'years';
-  var xAxisBottom = height + margin.bottom;
   var labelOffset = width / 2;
 
-  var fullHeight = height + textMargin;
+  var fullHeight = height + textMargin + tickPadding - (2 * baseMargin);
 
   var attached = function() {
     var svg = d3.select(this)
@@ -160,7 +160,7 @@
 
     svg.selectAll('.bar-mask')
       // extend all the way to the bottom of the screen
-      .attr('height', barHeight + textMargin)
+      .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
     selection.call(updateSelected, this.x);
@@ -178,7 +178,7 @@
       .scale(x)
       .ticks(xdomain.length)
       .tickSize(0)
-      .tickPadding(4)
+      .tickPadding(tickPadding)
       .tickFormat(function(x) {
         return String(x).substr(2);
       });
@@ -242,7 +242,7 @@
       .append('text')
         .text(xAxisLabel)
         .attr('transform', function(d) {
-          return 'translate(' + [labelOffset, xAxisBottom] + ')';
+          return 'translate(' + [labelOffset, fullHeight] + ')';
         });
   };
 

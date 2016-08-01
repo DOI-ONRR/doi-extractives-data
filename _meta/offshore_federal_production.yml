@@ -1,8 +1,0 @@
-'{region_id}':
-  products:
-    '{product}':
-      name: '{product_name}'
-      units: '{units}'
-      volume:
-        '{year}':
-          volume: '{volume}'

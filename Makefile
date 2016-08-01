@@ -192,6 +192,7 @@ data/county_jobs:
 			-c _meta/county_jobs.yml \
 			-o '_$@/{state}.yml'
 
+
 data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -291,21 +292,7 @@ data/national_federal_production.yml:
 			-c _meta/national_federal_production.yml \
 			-o _$@
 
-# data/offshore_federal_production.yml:
-# 	$(query) --format ndjson " \
-# 		SELECT \
-# 			year, region_id, region_type, \
-# 			product, product_name, units, \
-# 			ROUND(volume) AS volume \
-# 		FROM federal_regional_production \
-# 		WHERE region_type == 'offshore' \
-# 		ORDER BY \
-# 			region_id, product, product_name, units, year" \
-# 		| $(nestly) --if ndjson \
-# 			-c _meta/offshore_federal_production.yml \
-# 			-o _$@
-
-data/offshore_federal_production.yml:
+data/offshore_federal_production_regions.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			year, region_id, \
@@ -315,8 +302,27 @@ data/offshore_federal_production.yml:
 		ORDER BY \
 			region_id, product, product_name, units, year" \
 		| $(nestly) --if ndjson \
-			-c _meta/offshore_federal_production.yml \
+			-c _meta/offshore_federal_production_regions.yml \
 			-o _$@
+
+data/offshore_federal_production_areas:
+	$(query) --format ndjson " \
+		SELECT \
+		  year, \
+		  region_id, \
+		  area_id, \
+		  product, product_name, units, \
+		  ROUND(volume) AS volume \
+		FROM federal_offshore_area_production \
+		WHERE \
+			region_id IS NOT NULL AND \
+			volume IS NOT NULL \
+		ORDER BY \
+			region_id, \
+			area_id, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_federal_production_areas.yml \
+			-o '_$@/{region_id}.yml'
 
 data/federal_county_production:
 	$(query) --format ndjson " \

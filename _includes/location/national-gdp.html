@@ -11,7 +11,10 @@
     {% include year-selector.html year_range=year_range %}
 
     <p class="chart-description">
-      A revolutionary description of GDP from extractives could go here. The selector should change only the GDP section
+      Extractive industries accounted for
+      {{ gdp[year].percent | percent }}%
+      of U.S. GDP in {{ year }}.
+      GDP data comes from the U.S. Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#gdp">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
     </p>
   </div><!-- .chart-selector-wrapper -->
 

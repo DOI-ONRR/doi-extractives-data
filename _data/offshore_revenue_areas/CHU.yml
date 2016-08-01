@@ -1,0 +1,28 @@
+CHU:
+  commodities:
+    All:
+      '2008':
+        revenue: 2664850188
+      '2009':
+        revenue: 4186058
+      '2010':
+        revenue: 5569890
+      '2011':
+        revenue: 57600
+      '2012':
+        revenue: 5056476
+      '2013':
+        revenue: 7551791
+    Oil & Gas:
+      '2008':
+        revenue: 2664850188
+      '2009':
+        revenue: 4186058
+      '2010':
+        revenue: 5569890
+      '2011':
+        revenue: 57600
+      '2012':
+        revenue: 5056476
+      '2013':
+        revenue: 7551791

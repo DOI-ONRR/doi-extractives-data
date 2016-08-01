@@ -15,7 +15,7 @@
       %}
     {% endif %}
 
-    {% if true %}
+    {% if include.offshore_areas %}
       {% assign _offshore_href = include.offshore_href | default: include.href %}
       {%
         include maps/offshore-areas.html

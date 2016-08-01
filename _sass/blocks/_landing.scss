@@ -111,12 +111,13 @@
   }
 
   @include respond-to(tiny-down) {
-    height: auto;
-    margin-top: -115px;
-    padding-top: 100px;
-
     background-position: top left;
     background-size: auto 64px;
+
+    height: auto;
+
+    margin-top: -115px;
+    padding-top: 100px;
 
     p {
       width: 100%;

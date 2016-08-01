@@ -65,9 +65,7 @@
       {% endfor %}
     {% endif %}
 
-    {%
-      include maps/federal_land_ownership.svg
-    %}
+    {% include maps/federal_land_ownership.svg %}
     <g class="counties mesh">
       <use xlink:href="{{ state_svg }}#counties-mesh"></use>
     </g>

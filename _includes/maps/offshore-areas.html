@@ -1,0 +1,15 @@
+    {% for area in site.offshore_areas %}
+    {% if include.href %}<a xlink:href="{{ include.href | replace: '%', area.id }}">{% endif %}
+      <!-- FIXME: remove fill attribute -->
+      <g class="state offshore-area feature" fill="#f0f0f0">
+        <title>{{ area.title }}</title>
+        <use xlink:href="{{ include.svg }}#{{ area.id }}"></use>
+      </g>
+    {% if include.href %}</a>{% endif %}
+    {% endfor %}
+
+    {% for _region in site.offshore_regions %}
+    <g class="states mesh">
+      <use xlink:href="{{ include.svg }}#{{ _region.id }}-mesh"></use>
+    </g>
+    {% endfor %}

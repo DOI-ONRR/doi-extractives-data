@@ -18,19 +18,19 @@ breadcrumb:
 selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. Since 1977, coal companies have paid $9.2 billion in AML fees. Those fees have earned $1.5 billion in interest, which has helped pay for health care plans for the United Mine Workers of America (UMWA).
-
-The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
 
 ## Abandoned mine land areas
 
 Abandoned mines pose risks to people and the environment. They can contaminate ground water, emit toxic waste, and cause injury when unsteady infrastructures collapse.
 
-The government rates abandoned mine areas on a priority scale of 1 to 3. State and tribal AML programs rate abandoned mine land areas based on their need, as defined by the law. Mines rated 1 and 2 are high priority and should be addressed first, with a few exceptions.[^1]
+State and tribal AML programs rate abandoned mine areas on a priority scale of 1 to 3, as defined by federal law. Mines rated 1 and 2 are high priority and should be addressed first, with a few exceptions.[^1]
 
 - **Priority 1**: Protection of public health safety, and property from extreme danger of adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 2**: Protection of public health and safety from adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 3**: Restoration of land and water resources and the environment previously degraded by adverse effects of coal mining practices pre-1977
+
+To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).
 
 **To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="" class="article_img-100 u-margin-top u-margin-bottom"></a> <!--**States with unfunded abandoned mine areas today**[^2]-->
 
@@ -70,7 +70,7 @@ Companies pay a per-ton fee to OSMRE:[^12]
 
 Congress set the current rates when the fee was extended in the Tax Relief and Health Care Act of 2006, lowering the rates 20% from the original amounts set in 1977.
 
-Since 1978, the coal industry has contributed $9.2 billion in AML fees.[^13]
+Since 1978, the coal industry has contributed $9.2 billion to the AML fund, which has earned $1.5 billion in interest.[^13]
 
 The annual fees received rose slowly from $200 million in 1988 to over $310 million in 2007, but has declined most years since 2007 (with a slight rise from 2010-2011), and returned to about $200 million in 2015.[^14]
 
@@ -78,17 +78,17 @@ The annual fees received rose slowly from $200 million in 1988 to over $310 mill
 
 Since passage of the Tax Relief and Health Care Act of 2006, distribution of AML grants are mandatory. Prior to 2006, distribution was subject to Congress' annual appropriations process.
 
-The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous fiscal year (e.g., FY14 fees fund FY15 grants).
+The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous FY (e.g., FY 14 fees fund FY 15 grants).
 
-The statute requires the government to distribute AML Reclamation Program funds collected during the previous fiscal year as follows:[^15]
+The statute requires the government to distribute AML Reclamation Program funds collected during the previous FY as follows:[^15]
 
-- Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^16]
-- 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^17]
-- 20% of AML fees goes toward federal expenditures, but must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3M a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^18]
+- State and tribal share grants: Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^16]
+- Historic coal grants: 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^17]
+- Federal expenditures (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures, but must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^18]
 
-The states that received the largest grants from the AML fund in fiscal year 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^19] <!-- Image of states with amounts received? -->
+The states that received the largest grants from the AML fund in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^19] <!-- Image of states with amounts received? -->
 
-<!-- where should this "To see the full breakdown of fiscal year 2016 grants and view grant distribution reports from past years, click here." go? --> To see the full breakdown of fiscal year 2016 grants and view grant distribution reports from past years, click here.
+<!-- where should this "To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, click here." go? --> To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, click here.
 
 ### State and tribal spending
 
@@ -122,7 +122,7 @@ OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal
 
 ### The fund today
 
-As of November 2015, the fund's balance stood at $2.5 billion.[^25] The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
+As of November 2015, the fund's balance stood at $2.5 billion.[^25] The reauthorization for AML fees expires in FY 2021. The unappropriated balance has been divided into different allocations to be used starting in FY 2023, as follows:
 
 **Allocation of unappopriated balance**[^26] <img src="{{ site.baseurl }}/img/AML_unappropriations.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
 

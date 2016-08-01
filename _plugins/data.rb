@@ -114,6 +114,32 @@ module EITI
         range
       end
     end
+
+    # formats a URL-like string with either a data Hash or a
+    # placeholder string:
+    #
+    # format_url("foo/:bar/baz", {"bar" => "x"}) == "foo/x/baz"
+    # format_url("foo/%/baz", {"id" => "x"}) == "foo/x/baz"
+    # format_url("foo/%/baz", "x") == "foo/x/baz"
+    def format_url(format, data)
+      placeholder = "%"
+      pattern = /:\w+/
+      if data.is_a? Hash
+        if !format.match(pattern) and format.include? placeholder
+          return format.gsub(placeholder, data["id"])
+        else
+          return format.gsub(pattern) { |k| data[k[1..k.size]] }
+        end
+      elsif data.is_a? String
+        if !format.include? placeholder
+          puts "EITI::Data::format_url('#{format}', '#{data}':String): no such placeholder '#{placeholder}'"
+        end
+        return format.gsub(placeholder, data)
+      else
+        return format
+      end
+    end
+
   end
 end
 

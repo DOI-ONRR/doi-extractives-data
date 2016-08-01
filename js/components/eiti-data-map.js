@@ -179,12 +179,8 @@
           }
 
 
-          // reverse because the scale is in ascending order
           var _steps = d3.range(0, 9)
 
-          if (!this.isWideView) {
-            _steps = _steps.reverse();
-          }
           // find which steps are represented in the map
           var uniqueSteps = getUnique(marks.data(), _steps, domain);
           var narrowHorizontal = uniqueSteps.length < 6;
@@ -212,7 +208,6 @@
             var legend = d3.legend.color()
               .labelFormat(legendFormat)
               .useClass(false)
-              .ascending(!this.isWideView)
               .orient(orient)
               .shapeWidth(shapeWidth)
               .shapeHeight(shapeHeight)

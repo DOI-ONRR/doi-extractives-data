@@ -42,7 +42,7 @@
       {% assign keys = include.value %}
       {% for county in include.counties %}
         {% assign fips = county[0] | pad_left: 5, '0' %}
-        {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
+        {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
         {% assign value = county[1] | get: keys %}
 
         {% assign year_values = null %}

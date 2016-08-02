@@ -36,19 +36,19 @@ In Pima County, much like nearby Greenlee County, copper mining began in the 187
 
 In 2014, the combined copper production from Pima County's three major mines totaled 175,000 metric tons.[^5] This output constituted 22% of national production for that year.[^6] Freeport-McMoRan Inc. manages the Sierrita mine, the top-producing operation in the county, while ASARCO LLC owns both the Mission Complex and Silver Bell mines.[^7]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Copper production at Pima County's three major mines</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/az-pima-production.svg" alt="Chart shows annual copper production at Sierrita, Mission Complex, and Silver Bell mines. Total copper production for all three mines was between 160,000 and 200,000 metric tons each year." class="case_studies_content-graph">
-</figure>
+### Copper production at Pima County's three major mines
+
+<img src="{{ site.baseurl }}/img/counties/az-pima-production.svg" alt="Chart shows annual copper production at Sierrita, Mission Complex, and Silver Bell mines. Total copper production for all three mines was between 160,000 and 200,000 metric tons each year." class="case_studies_content-graph">
+
 
 ## Employment
 
 Copper mining makes up a relatively small portion of Pima County's overall employment, largely as a result of the Tucson metropolitan area's more diversified economy and workforce. Of Pima County's total 2014 employment of 282,653, copper mining and related activities account for less than 1% (2,328 workers).[^8] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2004 through 2014.[^9]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in Pima County:<br>Mining industry vs. all other industries</figcaption>
+### Wage and salary employment in Pima County:<br>Mining industry vs. all other industries
+
   <img src="{{ site.baseurl }}/img/counties/az-wage.svg" alt="Chart shows the number of jobs in the copper mining industry in Pima County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 400,000. The total number of jobs in Pima County each year ranges from about 325,000 to about 375,000. The percentage of jobs in the mining industry ranges from 0.4% to 0.7%." class="case_studies_content-graph">
-</figure>
+
 
 ## Revenue
 
@@ -102,20 +102,20 @@ The table below highlights data sources used to compile this narrative, as well 
 [^1]:  U.S. Geological Survey, [2015 Copper Commodity Summary (PDF)](http://minerals.usgs.gov/minerals/pubs/mcs/2015/mcs2015.pdf)
 
 [^2]: Arizona State University, [The Economic Impact of Mining in the State of Arizona (PDF)](http://www.azmining.com/uploads/AZMining%20FINAL%202011%20Economic%20Impact%20Study.pdf)
+[^3]: Ibid.
+[^4]: Ibid.
 
 [^5]: U.S. Geological Survey, [2014 Minerals Yearbook: Copper (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/copper/index.html#myb)
+[^6]: Ibid.
+[^7]: Ibid.
 
 [^8]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages for NAICS Codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) 2004–2013](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)
+
+[^9]: Ibid.
 
 [^10]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 25
 
 [^11]: Arizona Department of Revenue, [2014 Annual Report (PDF)](https://www.azdor.gov/Portals/0/AnnualReports/FY14%20Annual%20Report%20W.pdf), p. 39, table 7
 
 [^12]: Pima County, Arizona, [Comprehensive Annual Financial Report (PDF)](https://webcms.pima.gov/UserFiles/Servers/Server_6/File/Government/Finance and Risk Management/Reports/audited financial reports/CAFR/CAFR 2014.pdf), 2014
-
-[^9]: Ibid.
 [^13]: Ibid.
-[^6]: Ibid.
-[^7]: Ibid.
-[^3]: Ibid.
-[^4]: Ibid.

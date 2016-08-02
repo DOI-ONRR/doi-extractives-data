@@ -38,19 +38,19 @@ Oil production increased dramatically in 1977 with the opening of the Trans-Alas
 
 In 2014, the North Slope Borough produced 174.5 million bbl of oil on both state-owned and federal land.[^10] Since production at Prudhoe Bay commenced, all of the North Slope's extraction has taken place in the northern portion of the Colville-Canning province, administered by either the Alaska Department of Natural Resources or the Bureau of Land Management. While three major companies account for most production, North Slope exploration and extraction has diversified, with 63 current lease holders from seven countries.[^11] Annual oil production in the borough peaked in 1988 (at 722 million bbl) and has steadily declined since.[^12]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Oil production in North Slope Borough</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ak-production.svg" alt="Chart shows oil production in North Slope Borough from 2004 to 2014 as a line graph, and compares that to oil production in all of Alaska. The y-axis represents thousands of barrels of oil produced, and tops out at 350 million. Annual oil production was about 325 million barrels in 2004, and has declines each year to its 2014 level of about 175 million. North Slope represents the bulk of oil production in Alaska, and the two lines are very close or overlapping for all years shown." class="case_studies_content-graph">
-</figure>
+### Oil production in North Slope Borough
+
+<img src="{{ site.baseurl }}/img/counties/ak-production.svg" alt="Chart shows oil production in North Slope Borough from 2004 to 2014 as a line graph, and compares that to oil production in all of Alaska. The y-axis represents thousands of barrels of oil produced, and tops out at 350 million. Annual oil production was about 325 million barrels in 2004, and has declines each year to its 2014 level of about 175 million. North Slope represents the bulk of oil production in Alaska, and the two lines are very close or overlapping for all years shown." class="case_studies_content-graph">
+
 
 ## Employment
 
 The oil industry is a key driver of jobs throughout the borough. In 2014, mining, quarrying, and oil and gas extraction provided 9,003 jobs on the North Slope, accounting for 65 percent of total employment (13,686).[^13] [^14] The North Slope Borough's population is less than 10,000, so many private jobs are filled by nonresidents. The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Employment in the extractive industries in North Slope Borough</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ak-wage.svg" alt="Chart shows the number of jobs in North Slope Borough from 2005 to 2014. The y-axis, which represents the number of wage and salary employees in the extractive industries, tops out at 16,000. Each year, the number of jobs in these industries is between 8,000 and 15,000." class="case_studies_content-graph">
-</figure>
+### Employment in the extractive industries in North Slope Borough
+
+<img src="{{ site.baseurl }}/img/counties/ak-wage.svg" alt="Chart shows the number of jobs in North Slope Borough from 2005 to 2014. The y-axis, which represents the number of wage and salary employees in the extractive industries, tops out at 16,000. Each year, the number of jobs in these industries is between 8,000 and 15,000." class="case_studies_content-graph">
+
 
 ## Revenues
 
@@ -63,10 +63,10 @@ Statewide, the Alaska government collects oil-related revenue for the benefit of
 - Royalties are assessed on state-owned land leased for oil production. In FY 2015, $1 billion was paid to the General Fund, $518.3 million was deposited in the Alaska Permanent Fund and School Fund, and an additional $149 million went to the Constitutional Budget Reserve Fun from royalty settlements.[^23] [^24]
 - Oil and gas corporate net income tax is set at a maximum of 9.4% on Alaskan income more than $90,000. In 2015, $108 million was collected in oil and gas corporate income tax, down from $571 million in 2012.[^25]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Quarterly severance taxes in Alaska</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ak-tax.svg" alt="Chart shows quarterly severance tax payments in Alaska from 2011 through 2015. The y-axis represents millions of dollars. The peaks in the last 5 years are in Q2 of 2011 and 2012, both of which exceeded 1,700. 2015 amounts are under 100 for each quarter." class="case_studies_content-graph">
-</figure>
+### Quarterly severance taxes in Alaska
+
+<img src="{{ site.baseurl }}/img/counties/ak-tax.svg" alt="Chart shows quarterly severance tax payments in Alaska from 2011 through 2015. The y-axis represents millions of dollars. The peaks in the last 5 years are in Q2 of 2011 and 2012, both of which exceeded 1,700. 2015 amounts are under 100 for each quarter." class="case_studies_content-graph">
+
 
 Alaska residents also receive annual dividend payments from the state's Permanent Fund, based on a five-year average of the fund's performance. The state established the Permanent Fund in 1976, as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2015 each Alaska resident received $2,072 as a result of this payout, up from $900 in 2013.[^26]
 
@@ -126,6 +126,7 @@ The table below highlights the data sources used to compile this narrative, as w
 [^2]: Department of Energy, [U.S. Domestic Oil Production Exceeds Imports for First Time in 18 Years](http://energy.gov/articles/us-domestic-oil-production-exceeds-imports-first-time-18-years), 2013
 
 [^3]: U.S. Energy Information Administration, [Crude Oil Production](http://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_a.htm), 2015
+[^4]: Ibid.
 
 [^5]: Instead of counties, Alaska's Constitution requires that the entire state be divided into organized or unorganized boroughs, based on standards such as natural geographic boundaries, economic viability, and common interests. (Article X, Section 3). Both cities and boroughs are municipal corporations and political subdivisions of the State of Alaska. (AS 29.04.010 -.020) in a borough, the governing body is the borough assembly (Constitution, Article X, Section 4 and AS 29.20.050). In the unorganized borough, the state legislature serves as the governing body and has oversight of services that would otherwise be provided by the organized borough (e.g. education, planning and zoning). (Alaska Constitution, Article X, Section 6). [Alaska Department of Commerce, Community & Economic Development; Municipal Government Structure in Alaska](https://www.commerce.alaska.gov/web/dcra/LocalGovernmentOnline/MunicipalGovernment/MunicipalGovernmentStructureinAlaska.aspx)
 
@@ -150,6 +151,7 @@ The table below highlights the data sources used to compile this narrative, as w
 [^15]: [North Slope Regional Energy Plan (PDF)](http://www.north-slope.org/assets/images/uploads/Feb2015_draft_NSB_Energy_Plan_2.6.15.pdf), 2015
 
 [^16]: [Comprehensive Annual Financial Report of the North Slope Borough, Alaska (PDF)](http://www.north-slope.org/assets/images/uploads/Final_CAFR.pdf), 2015
+[^17]: Ibid.
 
 [^18]: North Slope Borough Department of Planning & Community Services, [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve (PDF)](http://www.north-slope.org/assets/images/uploads/news/OG_Technical_Report_Public_Review_Draft__4-21-14_Part_1.pdf), 2014.
 
@@ -188,6 +190,3 @@ The table below highlights the data sources used to compile this narrative, as w
 [^35]: Alaska Department of Environmental Conservation, [Contaminated Sites Program, Division of Spill Prevention and Response, Annual Report (PDF)](https://dec.alaska.gov/spar/csp/docs/FY14_End_of_Year_Report_Contaminated_Sites_Final.pdf)
 
 [^36]: North Slope Borough, [Comprehensive Transportation Plan (PDF)](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf), 2005
-
-[^17]: Ibid.
-[^4]: Ibid.

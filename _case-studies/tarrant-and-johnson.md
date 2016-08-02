@@ -38,19 +38,19 @@ For many years, the Barnett Shale acted as an important sealing cap rock for con
 
 In 2014, Tarrant and Johnson counties produced a combined 1 trillion cubic feet of natural gas from state-owned lands, constituting a significant portion of Texas’s total 8 trillion cubic feet output.[^5] [^6] [^7] Almost all other drilling in the state occurs on private lands, as only 1.8% of the acreage in Texas is federal land.[^8] In 2014, output was more than six times the output ten years prior.[^9] [^10] However, production began to drop in 2013 with falling natural gas prices and strong global supplies.
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Natural gas production on state-owned land in Tarrant and Johnson counties</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/tx-production.svg" alt="Chart shows natural gas production on state-owned land in Tarrant and Johnson counties from 2004 to 2014 as a line graph. The y-axis represents cubic feet of natural gas, and tops out at 1.4 trillion. Annual production on state-owned land, which was between 100 billion and 1.3 trillion cubic feet each year, went up from 2004-2011 then declined to its 2014 level of about 1 trillion cubic feet." class="case_studies_content-graph">
-</figure>
+### Natural gas production on state-owned land in Tarrant and Johnson counties
+
+<img src="{{ site.baseurl }}/img/counties/tx-production.svg" alt="Chart shows natural gas production on state-owned land in Tarrant and Johnson counties from 2004 to 2014 as a line graph. The y-axis represents cubic feet of natural gas, and tops out at 1.4 trillion. Annual production on state-owned land, which was between 100 billion and 1.3 trillion cubic feet each year, went up from 2004-2011 then declined to its 2014 level of about 1 trillion cubic feet." class="case_studies_content-graph">
+
 
 ## Employment
 
 The boom in natural gas production in the Barnett Shale over the past decade increased employment in this sector. Based on data from the U.S. Census Bureau, the number of residents employed in the oil and gas industries has more than quadrupled in the past decade.[^11] In 2014, the oil and gas industry (including extraction, drilling, and support services) employed 11,087 residents, up from 9,929 in 2013. This represents 1.5% of the two counties’ total employment of 753,137 and less than 0.01% of the two counties’ total population of 2.1 million.[^12]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in the oil and gas industry</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/tx-employment.svg" alt="Chart shows the number of jobs in the oil and gas industry in Tarrant and Johnson counties from 2005 to 2014." class="case_studies_content-graph">
-</figure>
+### Wage and salary employment in the oil and gas industry
+
+<img src="{{ site.baseurl }}/img/counties/tx-employment.svg" alt="Chart shows the number of jobs in the oil and gas industry in Tarrant and Johnson counties from 2005 to 2014." class="case_studies_content-graph">
+
 
 ## Revenue
 

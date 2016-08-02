@@ -40,19 +40,19 @@ In terms of oil production, Kern County has long been a leader both nationally a
 
 In 2013, the largest field in California in terms of proven reserves was Belridge South Field in Kern County, with estimated 2013 production of 23.7 million bbls.[^5] Belridge South ranked ninth among the top 100 oil fields in the country.[^6] Four of the five largest oil fields in California are found in Kern County: Belridge South, Midway-Sunset, Kern River, and Elk Hills.[^7]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Oil production in Kern County</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
-</figure>
+### Oil production in Kern County
+
+<img src="{{ site.baseurl }}/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
+
 
 ## Employment
 
 In 2014, oil and gas extraction employed over 11,500 of Kern County’s 874,589 residents, up from just over 10,000 in 2013.[^8] This is close to 1.3% of the population and 4.5% of total employment.[^9] In particular, 3,243 people were employed in oil and gas extraction, and 8,321 in support activities (1,863 in drilling for oil and gas, and 6,485 in support activities for oil and gas operations).[^10] This represents a slight dip in extraction-related employment and a minor increase in employment in support activities from 2013.
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in Kern County:<br>Oil and gas industry vs. all other industries</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ca-wage.svg" alt="Chart shows the number of jobs in Kern County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 300,000, and each bar compares the number of jobs in the oil and gas industry to the total number of jobs in the county that year. Each bar also identifies the percentage of jobs in the oil and gas industry. For most years, the total number of jobs is between 175,000 and 200,000, but jumps to over 250,000 in 2014. The percentage of jobs in the oil and gas industry is between 2.3% in 2005 and 2006 and 5% in 2013. In 2014, 4.5% of jobs in Kern County were in the oil and gas industry." class="case_studies_content-graph">
-</figure>
+### Wage and salary employment in Kern County:<br>Oil and gas industry vs. all other industries
+
+<img src="{{ site.baseurl }}/img/counties/ca-wage.svg" alt="Chart shows the number of jobs in Kern County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 300,000, and each bar compares the number of jobs in the oil and gas industry to the total number of jobs in the county that year. Each bar also identifies the percentage of jobs in the oil and gas industry. For most years, the total number of jobs is between 175,000 and 200,000, but jumps to over 250,000 in 2014. The percentage of jobs in the oil and gas industry is between 2.3% in 2005 and 2006 and 5% in 2013. In 2014, 4.5% of jobs in Kern County were in the oil and gas industry." class="case_studies_content-graph">
+
 
 ## Revenue
 
@@ -60,10 +60,10 @@ California does not levy a statewide severance tax on oil and gas production, bu
 
 Like other counties in the state, Kern County collects property taxes for oil and gas properties, the total amount of which fluctuates with changes in the price of these resources over time. Between 2012 and 2015, the assessed property value of oil and gas properties has decreased from 35.4% to 32.2% of countywide assessed property values.[^12] In 2014, property tax revenues from oil and gas properties were approximately $60 million, or 15% of the county’s discretionary revenue.[^13]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Assessed property valuation in Kern County</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2005 to 2014. Total property valuation goes up from under $60 billion in 2005 to just under $100 billion in 2014. Total valuations pleateau or slightly decline between 2008 and 2011. Oil and gas property valuation goes up every year from 2005 to 2012 (from under $20 billion to over $30 billion), then is steady from 2012 to 2014." class="case_studies_content-graph">
-</figure>
+### Assessed property valuation in Kern County
+
+<img src="{{ site.baseurl }}/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2005 to 2014. Total property valuation goes up from under $60 billion in 2005 to just under $100 billion in 2014. Total valuations pleateau or slightly decline between 2008 and 2011. Oil and gas property valuation goes up every year from 2005 to 2012 (from under $20 billion to over $30 billion), then is steady from 2012 to 2014." class="case_studies_content-graph">
+
 
 Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in FY2009-2010 to $628,381 in FY 2013-2014.[^14]
 
@@ -115,9 +115,6 @@ The table below highlights the data sources used to compile this narrative, as w
     </tr>
   </tbody>
 </table>
-
-
-<!-- COREY YOU EDITED THE TEXT BUT YOU HAVEN'T DONE FOOTNOTES YET -->
 
 ## Notes
 

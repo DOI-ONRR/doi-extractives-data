@@ -467,7 +467,7 @@ Metrics/AbcSize:
   Description: A calculated magnitude based on number of assignments, branches, and
     conditions.
   Enabled: true
-  Max: 15
+  Max: 16
 Metrics/BlockNesting:
   Description: Avoid excessive block nesting
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count
@@ -493,11 +493,11 @@ Metrics/LineLength:
   - http
   - https
 Metrics/MethodLength:
-  Description: Avoid methods longer than 10 lines of code.
+  Description: Avoid methods longer than 20 lines of code.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#short-methods
   Enabled: true
-  CountComments: true
-  Max: 10
+  CountComments: false
+  Max: 20
   Exclude:
   - "spec/**/*"
 Metrics/ParameterLists:
@@ -510,7 +510,7 @@ Metrics/PerceivedComplexity:
   Description: A complexity metric geared towards measuring complexity for a human
     reader.
   Enabled: true
-  Max: 7
+  Max: 8
 Lint/AssignmentInCondition:
   Description: Don't use assignment in conditions.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#safe-assignment-in-condition
@@ -764,7 +764,7 @@ Style/SelfAssignment:
     used.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#self-assignment
   Enabled: false
-Lint/SpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Description: Checks that exactly one space is used between a method name and the
     first argument for method calls without parentheses.
   Enabled: true
@@ -932,10 +932,6 @@ Lint/RescueException:
 Lint/ShadowingOuterLocalVariable:
   Description: Do not use the same name as outer local variable for block arguments
     or block local variables.
-  Enabled: true
-Lint/SpaceBeforeFirstArg:
-  Description: Put a space between a method name and the first argument in a method
-    call without parentheses.
   Enabled: true
 Lint/StringConversionInInterpolation:
   Description: Checks for Object#to_s usage in string interpolation.

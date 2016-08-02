@@ -1,12 +1,11 @@
 {% assign caption = include.caption %}
 
-<label>{{ caption }}</label>
 <table is='bar-chart-table' data-percent-max='100' class="county-table">
   <thead>
     <tr>
-      <th>Locality</th>
-      <th colspans="2" class='numeric' data-series='jobs'>Jobs</th>
-      <th class='numeric' data-series='percent'>Percent</th>
+      <th>{{ locality_name }}</th>
+      <th colspan="2" class='numeric' data-series='jobs'>Extracives jobs</th>
+      <th class='numeric' data-series='percent'>% of all jobs in {{ locality_name | downcase }}</th>
     </tr>
   </thead>
   <tbody>
@@ -32,7 +31,8 @@
       <td data-value-text='{{ jobs_percent }}'
           data-year-values='{{ years_values | jsonify }}'
           data-years-property='percent'
-          data-format='%'>{{ jobs_percent }}%</td>
+          data-format='%'
+          class="numeric">{{ jobs_percent }}%</td>
     </tr>
   {% endfor %}
   </tbody>

@@ -79,7 +79,8 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">&plus;
+        aria-controls="{{ include.toggle }}">
+        <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
           {{ include.toggle_text}}
         {% else %}Show table{% endif %}
@@ -104,7 +105,8 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">&plus;
+        aria-controls="{{ include.toggle }}">
+        <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
           {{ include.toggle_text}}
         {% else %}Show table{% endif %}

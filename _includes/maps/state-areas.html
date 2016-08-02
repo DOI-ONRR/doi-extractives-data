@@ -10,7 +10,6 @@
         {% assign value = state[1] | get: keys %}
         data-value='{{ value | default: 0 | jsonify }}'{% endif %}>
         <title>{{ _state.title }}: {{ value }}</title>
-        <!-- {{ _state | jsonify_safe: true }} -->
         <use xlink:href="{{ _svg_path }}#state-{{ state[0] }}"></use>
       </g>
     {% if include.href %}</a>{% endif %}

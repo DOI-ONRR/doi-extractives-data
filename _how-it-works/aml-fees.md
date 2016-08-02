@@ -1,8 +1,8 @@
 ---
-title: 'AML Fees | How it Works'
-title_display: Abandoned Mine Land Fees
+title: 'AML fees | How it Works'
+title_display: Abandoned Mine Land Reclamation Program
 layout: content
-permalink: /how-it-works/aml-fees/
+permalink: /how-it-works/aml-reclamation-program/
 nav_items:
   - name: intro
     title: Top
@@ -11,14 +11,14 @@ nav_items:
   - name: aml-revenue-and-disbursements
     title: Revenue and disbursements
   - name: the-aml-fund
-    title: Fund management and planning
+    title: The AML fund
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
 
 ## Abandoned mine land areas
 
@@ -46,15 +46,19 @@ Five states and three tribes are considered certified: Wyoming, Montana, Texas, 
 
 The federal AML Reclamation Program distributes funds for reclamation to the state and tribal AML programs with remaining Priority 1 and 2 sites.
 
-State and tribal AML programs use funds to prepare for reclamation projects, including permitting processes, environmental assessments, site surveys, and the development of reclamation plans. After completing project preparation, funds are used for construction to reclaim the site. <!-- Image **States where funded reclamation of mine areas is in progress**[^6]-->
+State and tribal AML programs use funds to prepare for reclamation projects, including permitting processes, environmental assessments, site surveys, and the development of reclamation plans. After completing project preparation, funds are used for construction to reclaim the site.
 
-Currently, there are $488M funded but not completed projects,[^7] encompassing 118,901 GPRA[^8] acres with an estimated outstanding $9.8 billion required to reclaim remaining[^9]. <!-- Image  **States with reclaimed mine areas funded by the AML program**[^10]-->
+IMAGE: **States where funded reclamation of mine areas is in progress**[^6]
 
-More information about the process of identifying abandoned mine land areas can be found here. State and tribal contacts and programs can be found here. <!-- ^^ where are "More information about the process of identifying abandoned mine land areas can be found here. State and tribal contacts and programs can be found here." supposed to go? -->
+Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.[^7] [^8] [^9]
+
+IMAGE: **States with reclaimed mine areas funded by the AML program**[^10]
+
+More information about the process of identifying abandoned mine land areas can be found here. State and tribal contacts and programs can be FOUND HERE.
 
 ### AML funding and spending[^11]
 
-The AML database (e-AMLIS) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects (click here for additional types of spending). <!-- ^^ where should "click here for additional types of spending" go? -->
+The AML database (e-AMLIS) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects (CLICK HERE for additional types of spending). 
 
 <img src="{{ site.baseurl }}/img/AML_disbursements.png" alt="" class="article_img-80 u-margin-top u-margin-bottom">
 
@@ -64,31 +68,33 @@ Fees paid by coal mine operators fund the AML Reclamation Program.
 
 Companies pay a per-ton fee to OSMRE:[^12]
 
-- $0.28/ton on surface-mined coal
-- $0.12/ton on deep-mined coal
+- $0.28/ton on surface mined coal
+- $0.12/ton on deep-mined coal (subsurface)
 - $0.08/ton on lignite
 
 Congress set the current rates when the fee was extended in the Tax Relief and Health Care Act of 2006, lowering the rates 20% from the original amounts set in 1977.
 
 Since 1978, the coal industry has contributed $9.2 billion to the AML fund, which has earned $1.5 billion in interest.[^13]
 
-The annual fees received rose slowly from $200 million in 1988 to over $310 million in 2007, but has declined most years since 2007 (with a slight rise from 2010-2011), and returned to about $200 million in 2015.[^14]
+IMAGE: annual AML fee collection[^14]
 
 ### Distribution to states
 
 Since passage of the Tax Relief and Health Care Act of 2006, distribution of AML grants are mandatory. Prior to 2006, distribution was subject to Congress' annual appropriations process.
 
-The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous FY (e.g., FY 14 fees fund FY 15 grants).
+The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous FY (e.g., FY 2014 fees fund FY 2015 grants).
 
 The statute requires the government to distribute AML Reclamation Program funds collected during the previous FY as follows:[^15]
 
-- State and tribal share grants: Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^16]
-- Historic coal grants: 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^17]
-- Federal expenditures (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures, but must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^18]
+- **State and tribal share grants:** Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^16]
+- **Historic coal grants:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^17]
+- **Federal expenditures** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^18]
 
-The states that received the largest grants from the AML fund in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^19] <!-- Image of states with amounts received? -->
+The states that received the largest grants from the AML fund in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^19]
 
-<!-- where should this "To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, click here." go? --> To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, click here.
+IMAGE: states with amounts received?
+
+To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, CLICK HERE.
 
 ### State and tribal spending
 
@@ -100,13 +106,13 @@ In addition to scheduled reclamation projects, states and tribes can use AML fun
 - Funding emergency AML reclamation projects
 - Setting aside annual funds (up to 30%) for projects related to acid mine drainage
 
-<!-- need link --> State and tribal AML contacts and programs can be found here.
+State and tribal AML contacts and programs can be FOUND HERE.
 
 ## The AML fund
 
 Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
-<!-- Image --> **Growth of the AML fund's unappropriated balance**[^21] <img src="{{ site.baseurl }}/img/AML_fund-growth.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
+**Growth of the AML fund's unappropriated balance**[^21] <img src="{{ site.baseurl }}/img/AML_fund-growth.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Interest on the fund
 

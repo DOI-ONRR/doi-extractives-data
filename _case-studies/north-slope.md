@@ -157,7 +157,7 @@ The table below highlights the data sources used to compile this narrative, as w
 
 [^20]: [Comprehensive Annual Financial Report of the North Slope Borough, Alaska (PDF)](http://www.north-slope.org/assets/images/uploads/2013_NSB_CAFR.pdf), 2013.
 
-[^21]: Energy Information Agency, [State severance tax revenues decline as fossil fuel prices drop](http://www.eia.gov/todayinenergy/detail.cfm?id=24512), January 12, 2016
+[^21]: Energy Information Administration, [State severance tax revenues decline as fossil fuel prices drop](http://www.eia.gov/todayinenergy/detail.cfm?id=24512), January 12, 2016
 
 [^22]: [Alaska Department of Revenue Tax Division](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015)
 

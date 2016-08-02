@@ -65,6 +65,7 @@
     "init-styleguide": "kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js || echo '(there were JavaScript linting errors)'",
+    "lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/{format,data}.rb",
     "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
   },
   "repository": {

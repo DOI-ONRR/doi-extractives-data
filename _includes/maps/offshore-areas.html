@@ -4,13 +4,13 @@
       <!-- FIXME: remove fill attribute -->
       <g class="state offshore-area feature" fill="#f0f0f0">
         <title>{{ area.title }}</title>
-        <use xlink:href="{{ site.baseurl }}{{ include.svg }}#{{ area.id }}"></use>
+        <use xlink:href="{{ _svg_path }}#{{ area.id }}"></use>
       </g>
     {% if include.href %}</a>{% endif %}
     {% endfor %}
 
     {% for _region in site.offshore_regions %}
     <g class="states mesh">
-      <use xlink:href="{{ site.baseurl }}{{ include.svg }}#{{ _region.id }}-mesh"></use>
+      <use xlink:href="{{ _svg_path }}#{{ _region.id }}-mesh"></use>
     </g>
     {% endfor %}

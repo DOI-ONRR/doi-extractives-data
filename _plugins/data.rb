@@ -16,14 +16,14 @@ module EITI
     # >> EITI::Data.get({'x' => {'y' => 'z'}}, 'x.0')
     # => nil
     def get(data, *keys)
-      # bail if there"s no data
+      # bail if there's no data
       return nil if data == nil
 
       # coerce all of the keys to strings,
       # and filter out any empty ones
       keys = keys.map(&:to_s).select { |k| !k.empty? }
-      for key in keys
-        key.split(".").each do |k|
+      keys.each do |key|
+        key.split('.').each do |k|
           data = data[k]
           if not data
             return nil
@@ -52,9 +52,9 @@ module EITI
     # => '0100'
     # >> EITI::Data.pad_left('100', 3)
     # => '100'
-    def pad_left(str, len, pad = " ")
+    def pad_left(str, len, pad = ' ')
       pad_by = len - str.size
-      pad_by > 0 ?  pad * pad_by + str : str
+      pad_by > 0 ? pad * pad_by + str : str
     end
     module_function :pad_left
 
@@ -63,7 +63,7 @@ module EITI
     #
     # >> EITI::Data.lookup('hi', {'hi' => 'hello'})
     # => 'hello'
-    # >> EITI::Data.lookup('yo', {"hi" => 'hello'})
+    # >> EITI::Data.lookup('yo', {'hi' => 'hello'})
     # => 'yo'
     def lookup(term, hash)
       hash.key?(term) ? hash[term] : term
@@ -118,19 +118,6 @@ module EITI
     end
     module_function :to_s
 
-    # attempts to find a substring
-    # returns the value true if the key exists; otherwise, return nil
-    #
-    # >> EITI::Data.is_in('foo', 'foo bar')
-    # => true
-    # XXX maybe this should be false?
-    # >> EITI::Data.is_in('baz', 'foo bar')
-    # => nil
-    def is_in(term, str)
-      str && str.include?(term) ? true : nil
-    end
-    module_function :is_in
-
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
     #
@@ -141,13 +128,7 @@ module EITI
     # => '[0,5]'
     def create_list(range)
       if range.is_a?(Array)
-        arr = []
-        min = range[0]
-        max = range[1]
-        (min..max).step(1) do |i|
-          arr.push(i)
-        end
-        arr
+        (range[0]..range[1]).step(1).to_a
       else
         range
       end
@@ -192,7 +173,7 @@ module EITI
     # >> EITI::Data.format_url('foo/%/baz', 'x')
     # => 'foo/x/baz'
     def format_url(format, data)
-      placeholder = "%"
+      placeholder = '%'
       pattern = /:\w+/
       if data.is_a?(Hash)
         if !format.match(pattern) && format.include?(placeholder)
@@ -202,7 +183,8 @@ module EITI
         end
       elsif data.is_a?(String)
         if !format.include?(placeholder)
-          puts "EITI::Data::format_url('#{format}', '#{data}':String): no such placeholder '#{placeholder}'"
+          puts "format_url('#{format}', '#{data}':String): " +
+            "no placeholder '#{placeholder}'"
         end
         return format.gsub(placeholder, data)
       else
@@ -212,6 +194,7 @@ module EITI
     module_function :format_url
 
   end
+
 end
 
 Liquid::Template.register_filter(EITI::Data)

@@ -61,7 +61,7 @@ module EITI
     # >> EITI::Format.suffix('foo')
     # => 'foo'
     def suffix(text, suffix = "")
-      suffix.size > 0 ? "#{text} #{suffix}" : text
+      suffix.empty? ? text : "#{text} #{suffix}"
     end
     module_function :suffix
 

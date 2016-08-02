@@ -9,8 +9,8 @@
       <g class="state feature" {% if include.value %}
         {% assign value = state[1] | get: keys %}
         data-value='{{ value | default: 0 | jsonify }}'{% endif %}>
-        <title>{{ _state.title }}: {{ value }}</title>
-        <use xlink:href="{{ _svg_path }}#state-{{ state[0] }}"></use>
+        <title>{{ _state.name }}: {{ value }}</title>
+        <use xlink:href="{{ site.baseurl }}{{ include.svg }}#state-{{ state[0] }}"></use>
       </g>
     {% if include.href %}</a>{% endif %}
     {% endfor %}
@@ -18,5 +18,5 @@
     {% include maps/federal_land_ownership.svg %}
 
     <g class="states mesh">
-      <use xlink:href="{{ _svg_path }}#states-mesh"></use>
+      <use xlink:href="{{ site.baseurl }}{{ include.svg }}#states-mesh"></use>
     </g>

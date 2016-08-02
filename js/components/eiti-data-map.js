@@ -213,6 +213,7 @@
               .shapeHeight(shapeHeight)
               .labelDelimiter(legendDelimiter)
               .shapePadding(shapePadding)
+              .labelAlign("start")
               .scale(scale);
 
 

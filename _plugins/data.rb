@@ -183,7 +183,7 @@ module EITI
         end
       elsif data.is_a?(String)
         if !format.include?(placeholder)
-          puts "format_url('#{format}', '#{data}':String): " +
+          puts "format_url('#{format}', '#{data}':String): " \
             "no placeholder '#{placeholder}'"
         end
         return format.gsub(placeholder, data)

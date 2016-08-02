@@ -57,6 +57,7 @@
     "rebuild": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
+    "test-ruby": "bundle exec rubydoctest _plugins/{data,format}.rb",
     "webpack": "webpack",
     "watch-webpack": "webpack --watch",
     "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",

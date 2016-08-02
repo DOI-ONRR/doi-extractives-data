@@ -159,13 +159,13 @@
   > * {
     @include span-columns(4);
 
+    -ms-align-self: flex-start;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
     display: flex;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-    -ms-align-self: flex-start;
-    -webkit-align-self: flex-start;
-    align-self: flex-start;
 
     &[aria-hidden=true] {
       display: none;

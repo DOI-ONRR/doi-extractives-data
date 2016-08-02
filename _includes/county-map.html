@@ -8,9 +8,7 @@
 {% if _inherit_width %}
   {% assign __width = '' %}
 {% else %}
-  {% capture __width %}
-    width: {{_width}}%
-  {% endcapture %}
+  {% capture __width %}width: {{ _width }}%;{% endcapture %}
 {% endif %}
 
 {% if _viewbox %}

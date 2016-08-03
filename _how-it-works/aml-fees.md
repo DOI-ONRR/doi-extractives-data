@@ -1,5 +1,5 @@
 ---
-title: 'AML fees | How it Works'
+title: 'AML Reclamation Program | How it Works'
 title_display: Abandoned Mine Land Reclamation Program
 layout: content
 permalink: /how-it-works/aml-reclamation-program/
@@ -60,7 +60,7 @@ More information about the process of identifying abandoned mine land areas can 
 
 The AML database (e-AMLIS) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects (CLICK HERE for additional types of spending). 
 
-<img src="{{ site.baseurl }}/img/AML_disbursements.png" alt="" class="article_img-80 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
 
 ## AML revenue and disbursements
 

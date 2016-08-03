@@ -92,7 +92,7 @@ The statute requires the government to distribute AML Reclamation Program funds 
 
 The states that received the largest grants from the AML fund in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^19]
 
-IMAGE: states with amounts received?
+<img src="{{ site.baseurl }}/img/AML_state-grants.svg" alt="Chart shows the states that received the largest grants from the AML fund in FY 2016. Wyoming received $59.2 million, Pennsylvania received $43.0 million, West Virginia received $29.7 million, Kentucky received $17.1 million, and Illinois received $15.7 million." class="article_img-100 u-margin-top u-margin-bottom">
 
 To see the full breakdown of FY 2016 grants and view grant distribution reports from past years, CLICK HERE.
 

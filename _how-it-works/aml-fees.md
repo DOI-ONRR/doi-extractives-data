@@ -50,8 +50,6 @@ State and tribal AML programs use funds to prepare for reclamation projects, inc
 
 Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.[^5] [^6] [^7]
 
-More information about the process of identifying abandoned mine land areas can be found here. State and tribal contacts and programs can be FOUND HERE.
-
 For more information:
 
 - [GAO report: Agencies should take steps to improve information on usda's and interior's potentially contaminated sites](http://www.gao.gov/products/GAO-15-35)

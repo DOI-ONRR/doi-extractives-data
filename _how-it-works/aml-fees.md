@@ -76,7 +76,7 @@ Congress set the current rates when the fee was extended in the Tax Relief and H
 
 Since 1978, the coal industry has contributed $9.2 billion to the AML fund, which has earned $1.5 billion in interest.[^13]
 
-IMAGE: annual AML fee collection[^14]
+**Annual AML fee collection**[^14]<img src="{{ site.baseurl }}/img/AML-annual-fees.svg" alt="Chart shows annual AML fee collection since 1978." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Distribution to states
 

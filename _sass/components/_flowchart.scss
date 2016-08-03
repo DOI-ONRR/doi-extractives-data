@@ -26,6 +26,11 @@ $dialog-top-padding: 3.8rem;
   ul {
     margin: 0;
   }
+
+  ul:not(.flowchart-bulleted-list) {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 .flowchart-dialog {
@@ -154,12 +159,12 @@ $dialog-top-padding: 3.8rem;
 }
 
 .flowchart-stem_bottom_right_long {
-  height: 250px;
-  bottom: -300px;
+    bottom: -350px;
+    height: 300px;
 
   @media only screen and (min-width: em(460)) {
-    height: 200px;
-    bottom: -250px;
+    bottom: -325px;
+    height: 275px;
   }
 
   right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});

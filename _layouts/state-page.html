@@ -7,7 +7,7 @@ nav_items:
     title: Production
     subnav_items:
       - name: all-production
-        title: All energy production
+        title: Entire state
       - name: federal-production
         title: Federal land
       - name: state-local-production
@@ -66,6 +66,8 @@ nav_items:
     {% include location/section-overview.html %}
 
     <section id="production">
+      <h2>Production</h2>
+
       {% include location/section-all-production.html %}
 
       {% include location/section-ownership.html %}
@@ -81,7 +83,7 @@ nav_items:
     -->
 
     <section id="economic-impact">
-    <h2>Economic Impact</h2>
+      <h2>Economic Impact</h2>
 
       {% include location/section-gdp.html %}
 

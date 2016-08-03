@@ -5,7 +5,7 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h2>Natural resource production in {{ state_name }}</h2>
+  <h3>Production on all land nationwide</h3>
 
   <div class="chart-selector-wrapper">
 
@@ -28,20 +28,21 @@
 
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
-      <h3 class="chart-title">{{ product_name }}</h3>
+      <h3 class="chart-title"><span>{{ product_name }}</span></h3>
 
       <figure class="chart">
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="eiti-bar-chart-y-value" data-format=","">{{ volume | default: 0 | intcomma }}</span>
           {{ long_units | term }} of
           {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
         </figcaption>
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
           data='{{ production_values | map_hash: "volume" | jsonify }}'
           x-range="{{ year_range }}"
-          x-value="{{ year }}">
+          x-value="{{ year }}"
+          data-units="{{ long_units }}">
         </eiti-bar-chart>
       </figure>
       <!-- <h4>

@@ -1,5 +1,6 @@
 (function(exports) {
 
+  var eiti = require('./../eiti');
   // symbols for "private" variables
   var DATA = '__es_data__';
   var X = '__es_x__';
@@ -8,12 +9,14 @@
 
   // global dimensions
   var width = 300;
-  var height = 150;
+  var height = 160;
 
   var textMargin = 18;
   var baseMargin = 2;
+  var extentMargin = 18;
+  var tickPadding = 10;
   var margin = {
-    top: 0,
+    top: extentMargin,
     right: baseMargin,
     bottom: textMargin,
     left: baseMargin
@@ -23,12 +26,20 @@
   var right = width - margin.right;
   var top = margin.top;
   var bottom = height - margin.bottom;
+  var barHeight = bottom - top;
+
+  var extentPercent = 0.05; // 5%
+  var extentMargin = barHeight * extentPercent;
+  var extentLessTop = top;
+  top = top + extentMargin;
+  var extentTop = top - extentMargin;
+
 
   var xAxisLabel = 'years';
-  var xAxisBottom = height + margin.bottom;
   var labelOffset = width / 2;
 
-  var fullHeight = height + textMargin;
+  var fullHeight = height + textMargin + extentMargin + tickPadding - (2 * baseMargin);
+  var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
     var svg = d3.select(this)
@@ -63,6 +74,13 @@
   };
 
   var update = function() {
+
+    // conditional used as proxy for having an extent line
+    if (!this.hasAttribute('data-units')) {
+      top = extentlessHeight;
+      fullHeight = extentlessHeight;
+    }
+
     var data = this.data;
     var values = data;
 
@@ -104,6 +122,9 @@
       }
     });
 
+    var barWidth = x.rangeBand();
+    var barHeight = bottom - top;
+
     // filter the data so that only values within the domain
     // are included in calculations and rendering
     data = data.filter(function(d) {
@@ -117,9 +138,6 @@
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);
     });
-
-    var barWidth = x.rangeBand();
-    var barHeight = bottom - top;
 
     var height = d3.scale.linear()
       .domain([ymin, ymax])
@@ -144,7 +162,7 @@
     bars.exit().remove();
 
     bars.attr('transform', function(d) {
-      return 'translate(' + [x(d.x), 0] + ')';
+      return 'translate(' + [x(d.x), top] + ')';
     });
 
     bars.select('.bar-value')
@@ -158,7 +176,7 @@
 
     svg.selectAll('.bar-mask')
       // extend all the way to the bottom of the screen
-      .attr('height', barHeight + textMargin)
+      .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
     selection.call(updateSelected, this.x);
@@ -176,7 +194,7 @@
       .scale(x)
       .ticks(xdomain.length)
       .tickSize(0)
-      .tickPadding(4)
+      .tickPadding(tickPadding)
       .tickFormat(function(x) {
         return String(x).substr(2);
       });
@@ -188,9 +206,37 @@
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, bottom] + ')');
 
-    var xAxis = svg.select('.x-axis')
-      .attr('transform', 'translate(' + [0, bottom] + ')')
-      .call(axis);
+    // conditional used as proxy for having an extent line
+    if (this.hasAttribute('data-units')) {
+    var extentLine = svg.append('g')
+        .attr('class', 'extent-line')
+
+      var dataUnits = this.getAttribute('data-units'),
+      dataFormat = this.getAttribute('data-format') || '';
+
+      if (dataUnits.indexOf('$') > -1) {
+        dataFormat = eiti.format.dollars;
+        dataUnits = null;
+      } else {
+        dataFormat = eiti.format.si;
+      }
+
+      var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));
+      var extentText = [ dataText, dataUnits ].join(' ');
+
+      extentLine.append('text')
+        .text(extentText)
+        .attr('transform', 'translate(' + [0, extentTop - 5] + ')');
+
+      extentLine.append('line')
+        .attr('x1', 0)
+        .attr('x2', width)
+        .attr('transform', 'translate(' + [0, extentTop] + ')');
+
+      var xAxis = svg.select('.x-axis')
+        .attr('transform', 'translate(' + [0, bottom] + ')')
+        .call(axis);
+    }
 
     function isInSet (year, vals) {
       var vals = vals || values;
@@ -216,7 +262,7 @@
       .append('text')
         .text(xAxisLabel)
         .attr('transform', function(d) {
-          return 'translate(' + [labelOffset, xAxisBottom] + ')';
+          return 'translate(' + [labelOffset, fullHeight] + ')';
         });
   };
 

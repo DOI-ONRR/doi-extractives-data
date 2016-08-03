@@ -30,7 +30,7 @@
       {% endif %}
 
     <section class="chart-item">
-      <h3 class="chart-title">GDP ({{ _metric }})</h3>
+      <h3 class="chart-title"><span>GDP ({{ _metric }})</span></h3>
 
       <figure class="chart chart-{{ _metric }}">
         <figcaption id="gdp-figures-{{ _metric }}">
@@ -49,7 +49,8 @@
           aria-controls="gdp-figures-{{ _metric }}"
           data='{{ gdp | map_hash: _metric | jsonify }}'
           x-range="{{ year_range }}"
-          x-value="{{ year }}">
+          x-value="{{ year }}"
+          data-units="{{ _format }}">
         </eiti-bar-chart>
 
       </figure>
@@ -73,7 +74,7 @@
     </section><!-- /.chart-item -->
     {% endfor %}
 
-  </div><!-- /.chart-list.has-intro -->
+  </div><!-- /.chart-list -->
 
   <a href="{{site.baseurl}}/downloads/#gdp">
     <icon class="fa fa-file-text-o u-padding-right"></icon>GDP data comes from the U.S. Bureau of Economic Analysis

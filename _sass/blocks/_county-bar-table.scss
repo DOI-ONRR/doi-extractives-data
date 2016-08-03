@@ -25,3 +25,7 @@
     }
   }
 }
+
+.county-table {
+  @include heading('para-sm');
+}

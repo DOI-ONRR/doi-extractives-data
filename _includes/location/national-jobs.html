@@ -28,7 +28,7 @@
     {% assign _metrics = 'count' | split: ' ' %}
     {% for _metric in _metrics %}
     <section class="chart-item"
-      <h3 class="chart-title">Wage and salary jobs</h3>
+      <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
 
       <figure class="chart">
         <figcaption id="jobs-figures-{{ _metric }}">
@@ -38,29 +38,16 @@
             {{ jobs[year].jobs | intcomma }}
           </span>
           jobs in extractive industries that paid a wage or salary in
-          {{ state_name }}.
+          {{ state_name }}
         </figcaption>
         <eiti-bar-chart
           aria-controls="jobs-figures-{{ _metric }}"
           data='{{ jobs | map_hash: _metric | jsonify }}'
           x-range="{{ year_range }}"
-          x-value="{{ year }}">
+          x-value="{{ year }}"
+          data-units="jobs">
         </eiti-bar-chart>
       </figure><!-- /.chart -->
-
-        {% if forloop.last %}
-        <!-- <h4>
-          <button is="aria-toggle"
-            aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
-        </h4>
-        <div id="employment-detail-{{ _metric }}" aria-hidden="true">
-          {%
-            include location/display-jobs.html
-            values=jobs
-            percent=true
-          %}
-        </div> -->
-        {% endif %}
     </section><!-- /.chart-item -->
       {% endfor %}
   </section><!-- /.chart-list -->
@@ -88,7 +75,7 @@
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title">Self-employment jobs</h3>
+      <h3 class="chart-title"><span>Self-employment jobs</span></h3>
 
       <figure class="chart">
         <figcaption id="self-employment-figures-{{ _metric }}">
@@ -98,13 +85,14 @@
             {{ self_employment_jobs[year].jobs | intcomma }}
           </span>
           self-employed extractive industries professionals in
-          {{ state_name }}.
+          {{ state_name }}
         </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
           data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
           x-range="{{ year_range }}"
-          x-value="{{ year }}">
+          x-value="{{ year }}"
+          data-units="jobs">
         </eiti-bar-chart>
 
       </figure>

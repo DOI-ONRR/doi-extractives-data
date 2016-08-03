@@ -43,7 +43,7 @@
       {% if commodity[0] != "Total" and commodity[0] != "All" %}
         <section class="chart-item">
 
-          <h3 class="chart-title">{{ commodity[0] }}</h3>
+          <h3 class="chart-title"><span>{{ commodity[0] }}</span></h3>
 
           <figure class="chart chart-{{ _metric }}">
             <figcaption id="exports-figures-{{ commodity_slug }}">
@@ -51,13 +51,14 @@
                 ${{ exports[year].dollars | intcomma }}
               </span>
               of {{ commodity[0] }} was exported from {{ state_name }}
-              in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              in <span class="eiti-bar-chart-x-value">{{ year }}</span>
             </figcaption>
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"
               data='{{ exports | map_hash: _metric | jsonify }}'
               x-range="{{ year_range }}"
-              x-value="{{ year }}">
+              x-value="{{ year }}"
+              data-units="{{ _format }}">
             </eiti-bar-chart>
 
           </figure>

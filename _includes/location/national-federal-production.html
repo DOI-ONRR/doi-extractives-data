@@ -12,7 +12,7 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Natural resources extracted on federal land</h3>
+    <h3>Production on federal land nationwide</h3>
 
     {% if federal_products_num == 0 %}
       <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
@@ -47,8 +47,10 @@
       <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
 
         <h4 class="chart-title">
-          {{ product_name }}
-          {% if units_title %} ({{ units_title }}){% endif %}
+          <span>
+            {{ product_name }}
+            {% if units_title %} ({{ units_title }}){% endif %}
+          </span>
         </h4>
 
         <figure class="chart">
@@ -57,14 +59,15 @@
                   data-format=",">{{ volume | default: 0 | intcomma }}</span>
           {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
           produced on federal land in {{ state_name }} in
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          <span class="eiti-bar-chart-x-value">{{ year }}</span>
 
           </figcaption>
           <eiti-bar-chart
             aria-controls="national-federal-production-figures-{{ product_slug }}"
             data='{{ production_values | map_hash: "volume" | jsonify }}'
             x-range="{{ year_range }}"
-            x-value="{{ year }}">
+            x-value="{{ year }}"
+            data-units="{{ long_units }}">
           </eiti-bar-chart>
 
         </figure>

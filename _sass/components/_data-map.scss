@@ -52,7 +52,6 @@ data-map {
       fill: $blackest-black;
       opacity: $opacity-state;
     }
-
   }
 }
 
@@ -73,5 +72,9 @@ data-map {
   .swatch {
     stroke: $neutral-gray;
     stroke-width: 1;
+  }
+
+  .cell text {
+    @include font-size(3 / 4);
   }
 }

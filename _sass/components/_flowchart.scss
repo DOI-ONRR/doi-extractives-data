@@ -47,6 +47,13 @@ $dialog-top-padding: 3.8rem;
   }
 }
 
+.flowchart-outcomes {
+  ul li {
+    list-style-type: disc;
+    margin-left: $base-padding;
+  }
+}
+
 .flowchart-dialog.para-sm {
   @include respond-to(small-up) {
     font-size: 1em;

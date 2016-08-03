@@ -112,7 +112,7 @@ State and tribal AML contacts and programs can be FOUND HERE.
 
 Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
-**Growth of the AML fund's unappropriated balance**[^21] <img src="{{ site.baseurl }}/img/AML_fund-growth.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
+**Growth of the AML fund's unappropriated balance**[^21] <img src="{{ site.baseurl }}/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2015. It grew from around $0.5 to nearly $2.5 billion dollars." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Interest on the fund
 
@@ -130,7 +130,7 @@ OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal
 
 As of November 2015, the fund's balance stood at $2.5 billion.[^25] The reauthorization for AML fees expires in FY 2021. The unappropriated balance has been divided into different allocations to be used starting in FY 2023, as follows:
 
-**Allocation of unappopriated balance**[^26] <img src="{{ site.baseurl }}/img/AML_unappropriations.png" alt="" class="article_img-100 u-margin-top u-margin-bottom">
+**Allocation of unappropriated balance**[^26] <img src="{{ site.baseurl }}/img/AML-unapprop-alloc.svg" alt="Chart shows the division of allocations in the unappropriated part of the AML reclamation fund. 60.4% is meant for historic coal grants. 16.9% is meant for federal expenses, which are subject to congressional appropriation. 4.7% is meant for a reserve for UMWA health care plans and retirement funds. 18% is meant for states and tribes." class="article_img-100 u-margin-top u-margin-bottom">
 
 Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
 

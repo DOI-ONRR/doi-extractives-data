@@ -45,9 +45,9 @@ UNION
         END AS units,
         SUM(volume) AS volume
     FROM federal_offshore_production AS offshore
-    LEFT JOIN offshore_planning_areas AS area
+    INNER JOIN offshore_planning_areas AS area
     ON
-        LOWER(TRIM(offshore.planning_area)) = LOWER(TRIM(area.name))
+        offshore.planning_area = area.name
     GROUP BY
         year, product, product_name, units
 ORDER BY

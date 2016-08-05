@@ -116,7 +116,7 @@
               padding: 6
             },
             narrowHorizontal: {
-              width: 60,
+              width: 70,
               height: 12,
               padding: 10
             },

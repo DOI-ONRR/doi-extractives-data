@@ -98,19 +98,35 @@ The table below highlights the data sources used to compile this narrative, as w
 ## Notes
 
 [^1]: U.S. Geological Survey, [2013 Minerals Yearbook: Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2013-feore.pdf), p. 39.12, table 2
+
 [^2]: Marquette County Department of Planning, [Economy Chapter of the Marquette County Comprehensive Plan (PDF)](http://www.co.marquette.mi.us/departments/planning/docs/Economy_Plan__updated_format.pdf), 2012
+
 [^3]: U.S. Geological Survey, [2013 Minerals Yearbook: Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2013-feore.pdf), p. 39.11, table 3
+
 [^4]: U.S. Geological Survey, [2012 Minerals Yearbook: Iron Ore (PDF)](http://minerals.er.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2012-feore.pdf), p. 39.11, table 3
+
 [^5]: U.S. Geological Survey, [Iron Ore Statistics Information](http://minerals.er.usgs.gov/minerals/pubs/commodity/iron_ore/), 2003–2013, p. 39.11, table 3
+
 [^6]: Marquette County Michigan, [Chapter of the Marquette County Comprehensive Plan (PDF)](http://www.co.marquette.mi.us/departments/planning/docs/LUVO_Chapter_Adopted_4_01_09.pdf), 2009, p. 3
+
 [^7]: U.S. Geological Survey, [Iron Ore Statistics Information](http://minerals.er.usgs.gov/minerals/pubs/commodity/iron_ore/), 2003–2013, p. 39.11, table 3
+
 [^8]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See Marquette County employment total, 2013 Annual Average
+
 [^9]: U.S. Census Bureau, [American Fact Finder](http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk)
+
 [^10]: U.S. Geological Survey, [2013 Minerals Yearbook: Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2013-feore.pdf), p. 39.12, table 2
+
 [^11]: Marquette County Michigan, [Chapter of the Marquette County Comprehensive Plan (PDF)](http://www.co.marquette.mi.us/departments/planning/docs/Economy_Plan__updated_format.pdf), 2012, p. 10
+
 [^12]: The Mining Journal, [Empire Mine Closing](http://www.miningjournal.net/page/content.detail/id/636992/Empire-Mine-closing.html?nav=5006), March 24, 2016
+
 [^13]: Michigan House of Representatives Fiscal Agency, [State of Michigan Revenue: State Source and Distribution (PDF)](http://www.house.mi.gov/hfa/PDF/Revenue_Forecast/Source_and_Distribution_Jul15.pdf), July 2015, p. 43
+
 [^14]: [Marquette County Administrator’s 2015 Budget Summary (PDF)](http://www.co.marquette.mi.us/departments/administrator/docs/Budget2015/2015_administrative_summary_final.pdf), p. 3
+
 [^15]: Ibid.
+
 [^16]: Ibid.
+
 [^17]: Ibid.

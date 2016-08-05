@@ -14,14 +14,12 @@
       {% assign __year = year | to_i %}
       {% assign s_year = _year | to_s %}
       {% if include.empty_years.size > 0 %}
-        <!-- {{ empty_years }} -->
         {% if empty_years contains s_year %}
           <option disabled value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }} (no data)</option>
         {% else %}
           <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
         {% endif %}
       {% else %}
-      <!-- {{ year_list }} {{ _year }} -->
         <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
       {% endif %}
     {% endfor %}

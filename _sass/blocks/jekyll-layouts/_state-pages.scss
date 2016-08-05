@@ -2,8 +2,13 @@
   padding-bottom: $standard-padding-fluffed;
 
   section + section,
-  h2 + section {
+  h2 + section, {
     padding-top: $standard-padding-fluffed;
+  }
+
+  p + section,
+  p + h3 {
+    padding-top: $standard-padding-extra;
   }
 
   h2 {
@@ -12,6 +17,8 @@
   }
 
   h3:not(.chart-title):not(.state-page-nav-title) {
+    @include heading('h5');
+
     border-bottom: 2px solid $light-green;
     margin-bottom: $standard-padding;
     padding-bottom: $standard-padding-lite;
@@ -32,6 +39,10 @@
   h3 + [class*='panel-'] {
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
+  }
+
+  p {
+    @include heading('para-md');
   }
 
   figure {

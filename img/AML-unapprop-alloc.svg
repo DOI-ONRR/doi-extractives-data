@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="791px" height="206px" viewBox="0 0 791 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-aml-unapprop-alloc</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chart-aml-unapprop-alloc" transform="translate(-106.000000, -83.000000)">
+            <g transform="translate(106.000000, 79.000000)">
+                <polyline id="Rectangle-Copy-60" fill="#2C97CA" fill-rule="evenodd" points="593 43 593 73 462 73 462 43 593 43"></polyline>
+                <polyline id="Rectangle-Copy-59" fill="#157BAC" fill-rule="evenodd" points="462.475248 43 462.475248 73 1 73 1 43 462.475248 43"></polyline>
+                <polyline id="Rectangle-Copy-58" fill="#91CFE8" fill-rule="evenodd" points="631.71967 43 631.71967 73 593 73 593 43 631.71967 43"></polyline>
+                <polyline id="Rectangle-Copy-57" fill="#91CFE8" fill-rule="evenodd" points="595 87.4815341 595 57 593 57 593 87.4815341 595 87.4815341"></polyline>
+                <polyline id="Rectangle-Copy-56" fill="#CEECF6" fill-rule="evenodd" points="776.606114 43 776.606114 73 632 73 632 43 776.606114 43"></polyline>
+                <text id="4.7%-A-reserve-for-U" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold" line-spacing="22" fill="#4A4A4A">
+                    <tspan x="593" y="109">4.7%</tspan>
+                    <tspan x="638.53" y="109" font-family="Lato-Light, Lato" font-weight="300"></tspan>
+                    <tspan x="594.77" y="131" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">A reserve for UMWA </tspan>
+                    <tspan x="594.77" y="150" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">health care plans and </tspan>
+                    <tspan x="594.77" y="169" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">retirement funds</tspan>
+                </text>
+                <polyline id="Rectangle-Copy-55" fill="#CEECF6" fill-rule="evenodd" points="634 71 634 28 632 28 632 71 634 71"></polyline>
+                <text id="18%-States-and-tribe" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold" line-spacing="22" fill="#4A4A4A">
+                    <tspan x="631" y="20">18%</tspan>
+                    <tspan x="670.01" y="20" font-family="Lato-Light, Lato" font-weight="300">  </tspan>
+                    <tspan x="678.134" y="20" font-family="Lato-Light, Lato" font-size="16" font-weight="300">States and tribes</tspan>
+                </text>
+                <polyline id="Rectangle-Copy-54" fill="#2C97CA" fill-rule="evenodd" points="464 87.4815341 464 57 462 57 462 87.4815341 464 87.4815341"></polyline>
+                <text id="16.9%-Federal-expens" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold" line-spacing="22" fill="#4A4A4A">
+                    <tspan x="459" y="109">16.9%</tspan>
+                    <tspan x="516.13" y="109" font-family="Lato-Light, Lato" font-weight="300"></tspan>
+                    <tspan x="460.77" y="131" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">Federal </tspan>
+                    <tspan x="460.77" y="150" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">expenses, </tspan>
+                    <tspan x="460.77" y="169" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">subject to </tspan>
+                    <tspan x="460.77" y="188" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">congressional </tspan>
+                    <tspan x="460.77" y="207" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">appropriation</tspan>
+                </text>
+                <polyline id="Rectangle-Copy-53" fill="#157BAC" fill-rule="evenodd" points="3 87.4815341 3 57 1 57 1 87.4815341 3 87.4815341"></polyline>
+                <text id="60.4%-Historic-coal" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold" line-spacing="22" fill="#4A4A4A">
+                    <tspan x="0" y="109">60.4%</tspan>
+                    <tspan x="57.13" y="109" font-family="Lato-Light, Lato" font-weight="300"></tspan>
+                    <tspan x="1.77" y="131" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="19">Historic coal grants</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

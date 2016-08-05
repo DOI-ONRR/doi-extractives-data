@@ -38,10 +38,10 @@ In 2013, St. Louis County's eight iron mines produced 41.1 million metric tons o
 
 In Minnesota, the state government is the largest owner of mineral rights. It owns approximately 12 million acres of mineral rights, which is equivalent to 24% of the mineral rights in the state.[^9] Minnesota policy prohibits selling state-owned mineral rights, although the state does lease lands and mineral rights for exploration and development.[^10]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Iron ore production in St. Louis County vs. nationwide production</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
-</figure>
+### Iron ore production in St. Louis County vs. nationwide production
+
+<img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
+
 
 ## Employment
 

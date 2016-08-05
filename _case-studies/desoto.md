@@ -41,19 +41,19 @@ In 2014, Louisiana had a total of 23.25 trillion cubic feet of proved natural ga
 
 In 2014, the U.S. Energy Information Administration estimated that there were 16.6 trillion cubic feet of {{ "proved reserves" | term }} in the Haneysville/Bossier Shale in Texas and Louisiana.[^8] Louisiana ranked fifth in the nation for proved shale gas reserves.[^9]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Natural gas production in northern Louisiana [^10]</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph. The y-axis represents thousands of cubic feet of natural gas, and tops out at 3 trillion cubic feet. From 2005 to 2009, annual natural gas production rose from about 1.2 to 1.4 trillion cubic feet, then rose to levels of over 2.8 trillion in 2011 and 2012. Since 2012, production declined to its 2014 level of under 1.9 trillion." class="case_studies_content-graph">
-</figure>
+### Natural gas production in northern Louisiana[^10]
+
+<img src="{{ site.baseurl }}/img/counties/la-production.svg" alt="Chart shows natural gas production in northern Louisiana from 2005 to 2014 as a line graph. The y-axis represents thousands of cubic feet of natural gas, and tops out at 3 trillion cubic feet. From 2005 to 2009, annual natural gas production rose from about 1.2 to 1.4 trillion cubic feet, then rose to levels of over 2.8 trillion in 2011 and 2012. Since 2012, production declined to its 2014 level of under 1.9 trillion." class="case_studies_content-graph">
+
 
 ## Employment
 
-Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 271 people, about 1% of DeSoto’s 27,000 residents, work in support activities for oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries—which includes oil and gas extraction but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2005 and 2014.[^13]
+Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 271 people, about 1% of DeSoto’s 27,000 residents, work in support activities for oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries — which includes oil and gas extraction, but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2005 and 2014.[^13]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Wage and salary employment in DeSoto Parish:<br>Extractive industries vs. all other industries [^14]</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 4% (in 2005) and 21% (in 2012). In both 2013 and 2014, there were about 1,000 jobs in the extractive industries, which represented 18% of DeSoto Parish jobs." class="case_studies_content-graph">
-</figure>
+### Wage and salary employment in DeSoto Parish: Extractive industries vs. all other industries[^14]
+
+<img src="{{ site.baseurl }}/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 4% (in 2005) and 21% (in 2012). In both 2013 and 2014, there were about 1,000 jobs in the extractive industries, which represented 18% of DeSoto Parish jobs." class="case_studies_content-graph">
+
 
 ## Revenue
 
@@ -61,16 +61,16 @@ The Haynesville Shale natural gas boom has increased revenue for the State of Lo
 
 The state of Louisiana levies a severance tax on natural gas owners at a rate of $0.158 per {{ "Mcf" | term }} produced.[^15] In 2015, Louisiana received $190 million from gas severance taxes across the state, up from $99.45 million in 2013.[^16] It also received $85 million from gas royalties for production on state-owned lands and water bottoms, down from $159 million in 2013.[^17] The state distributes some of this revenue to the parishes where extraction took place. For severance taxes, one-fifth of taxes return to the parish, as long as the total does not exceed $750,000.[^18] For royalties, 10% return to the parish.[^19] Royalties are bid on for each lease, and by law they cannot be less than 1/8 of the value of production.[^20] In 2014, DeSoto Parish received $624,592 in royalties, rents, and bonuses — which accounted for 2% of DeSoto Parish’s total revenue. (Taxes made up 69% of parish revenue.)[^21] Louisiana also collects 1% of gross receipts from the operation of natural gas franchises or charters in the state.[^22]
 
-In addition to the state, DeSoto Parish also collects revenue from natural gas production, most notably in the form of property taxes. Revenue from property taxes increases with the assessed value of the property, and is the largest source of revenue for DeSoto Parish. According to the parish school board, property values in DeSoto Parish have increased since the discovery of shale gas in 2008. From FY2009 to FY2015, the taxable value of property within the parish increased by 160%, or from $292 million to $750 million.[^23] [^24] [^25] In 2015, property taxes exceeded $43 million.[^26] Property tax revenues are used for numerous purposes, including to pay off long-term debt which was sold to build new schools.[^27]
+In addition to the state, DeSoto Parish also collects revenue from natural gas production, most notably in the form of property taxes. Revenue from property taxes increases with the assessed value of the property, and is the largest source of revenue for DeSoto Parish. According to the parish school board, property values in DeSoto Parish have increased since the discovery of shale gas in 2008. From FY 2009 to FY 2015, the taxable value of property within the parish increased by 160%, or from $292 million to $750 million.[^23] [^24] [^25] In 2015, property taxes exceeded $43 million.[^26] Property tax revenues are used for numerous purposes, including to pay off long-term debt which was sold to build new schools.[^27]
 
-Natural gas exploration and development also spurred greater revenue from sales and use taxes, which increased from $8 million in FY 2005 to $73 million in FY 2011. This trend has since reversed, and sales and use tax accounted for $23 million in revenue in FY 2014.[^28]
+Sales and use taxes are the second largest source of revenue for DeSoto Parish. Natural gas exploration and development spurred greater revenue from sales and use taxes, which increased from $8 million in FY 2005 to $73 million in FY 2011. This trend has since reversed, and sales and use tax accounted for $23 million in revenue in FY 2014.[^28]
 
 Sales and use taxes are deposited into the General Fund, School Lunch Fund, Debt Service Fund, and Capital Projects Fund.[^29] While sales and use taxes are not solely attributable to the natural gas industry, there is a noticeable decline in this revenue stream when the industry faces slowdowns. For example, sales and use taxes declined by $27 million (40%) in 2013 compared to the prior fiscal year, as exploration for oil and natural gas moved to other parts of the country.[^30]
 
-<figure>
-  <figcaption class="case_studies_content-graph-caption">Sales and use taxes [^31]</figcaption>
-  <img src="{{ site.baseurl }}/img/counties/la-tax.svg" alt="Chart shows sales and use tax trends in DeSoto Parish as a bar graph. The y-axis represents millions of dollars and tops out at $80 million. Sales and use taxes in the parish range from under $10 million in 2005 to over $70 million in 2011. In 2012, tax revenue dropped to under $50 million, then just over $20 million in 2013 and 2014." class="case_studies_content-graph">
-</figure>
+### Sales and use taxes [^31]
+
+<img src="{{ site.baseurl }}/img/counties/la-tax.svg" alt="Chart shows sales and use tax trends in DeSoto Parish as a bar graph. The y-axis represents millions of dollars and tops out at $80 million. Sales and use taxes in the parish range from under $10 million in 2005 to over $70 million in 2011. In 2012, tax revenue dropped to under $50 million, then just over $20 million in 2013 and 2014." class="case_studies_content-graph">
+
 
 Property taxes also contribute substantially to the school board’s revenue, funding employee salaries, operations, and debt service payments on capital bonds for the local education system.[^32] The amount of revenue from property taxes increased by 45% from 2012 ($26.5 million) to 2015 ($38.4 million).[^33] State tax documents do not specify what percentage of property taxes comes from the gas industry.
 
@@ -78,7 +78,7 @@ Property taxes also contribute substantially to the school board’s revenue, fu
 
 Since 2008, Louisiana has invested at least $1.1 billion in transportation projects in the seven parishes located in the northwest region of the state, including DeSoto Parish.[^34] While Louisiana’s latest comprehensive state transportation plan acknowledges that the state must pay adequate attention to the transportation needs of the rapidly expanding oil and gas industry, it does not specify the types or costs of projects supported.[^35]
 
-Louisiana completed a Hydraulic Fracturing State Review in March 2011, which explains the state’s policies around industrial water use and wastewater reuse and disposal. However, the review does not itemize public expenditures on water-related infrastructure for industrial activities.[^36]
+Louisiana completed a [Hydraulic Fracturing State Review (PDF)](http://dnr.louisiana.gov/assets/OC/haynesville_shale/071311_stronger_review.pdf) in March 2011, which explains the state’s policies around industrial water use and wastewater reuse and disposal. However, the review does not itemize public expenditures on water-related infrastructure for industrial activities.[^36]
 
 The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent {{ "millage tax" | term_end }}.[^37] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 

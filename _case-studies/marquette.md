@@ -18,7 +18,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data-availability
-    title: Data
+    title: Data availability
 selector: list
 ---
 

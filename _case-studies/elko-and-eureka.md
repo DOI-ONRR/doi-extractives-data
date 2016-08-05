@@ -18,7 +18,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data-availability
-    title: Data
+    title: Data availability
 selector: list
 ---
 
@@ -40,24 +40,27 @@ Nevada is in the midst of the biggest gold boom in U.S. history, which began in 
 
 The two major gold-mining companies driving this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate both open-pit and underground mining operations.[^8] In 2014, gold production in Elko and Eureka counties totaled 2,027,973 ounces.[^9] In Eureka County, the top-producing mine was the Eastern Nevada Operations (Newmont), while the Meikle Mine (Goldstrike – Barrick Corporation) led production in Elko County.
 
-### Gold production in Elko and Eureka counties
+### Gold production in Elko and Eureka counties[^10]
 
 <img src="{{ site.baseurl }}/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2014 (there is no data reported for 2013). The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka = County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
 
 
 ## Employment
 
-In these two counties, gold-mining operations employed approximately 15% of the total population in 2014, or 4,654 workers and 3,334 contractors (about 8,000 people total) within a two-county population of 54,784.[^10]
+In these two counties, gold-mining operations employed approximately 4% of the total population in 2014, or 4,581 workers and 3,269 contractors within a two-county population of 54,784.[^11] Gold-mining employment represented 14.3% of total employment in Elko and Eureka counties in 2014.[^12]
 
-[NEW IMAGE: ELKO AND EUREKA EMPLOYMENT]
+### Mining industry employment in Elko and Eureka counties[^13]
+
+<img src="{{ site.baseurl }}/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2005 to 2014. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties has risen from just over 4,000 in 2005 to nearly 8,000 in 2014." class="case_studies_content-graph">
+
 
 ## Revenue
 
 Gold mining is a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
 
-The tax rate applied to net proceeds is on a sliding scale from 2-5%.  Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^11] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^12]
+The tax rate applied to net proceeds is on a sliding scale from 2% to 5%.  Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^14] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^15]
 
-In 2015, Elko County received $2.5 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.2 million (88%) came from gold mines.[^13] In the same period, Eureka County received $10.6 million in Royalties and Net Proceeds of Minerals tax, of which $10.5 million (99%) came from gold mines.[^14]
+In 2015, Elko County received $2.5 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.2 million (88%) came from gold mines.[^16] In the same period, Eureka County received $10.6 million in Royalties and Net Proceeds of Minerals tax, of which $10.5 million (99%) came from gold mines.[^17]
 
 ## Costs
 
@@ -108,16 +111,36 @@ The table below highlights the data sources used to compile this narrative, as w
 ## Notes
 
 [^1]: U.S. Geological Survey, [Gold Commodity Summary (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/gold/mcs-2016-gold.pdf), 2016
+
 [^2]: Ibid.
+
 [^3]: U.S. Geological Survey, [Western Region Gold Deposits](http://minerals.usgs.gov/west/projects/nngd.htm)
+
 [^4]: Nevada Bureau of Mines and Geology, [The Nevada Mineral Industry 2011](http://pubs.nbmg.unr.edu/The-NV-mineral-industry-2011-p/mi2011.htm), p. 5
+
 [^5]: Ibid.
-[^6]: Nevada Bureau of Mines and Geology, [The Nevada Mineral Industry 2011](http://pubs.nbmg.unr.edu/The-NV-mineral-industry-2011-p/mi2011.htm)
+
+[^6]: Ibid.
+
 [^7]: Ibid.
+
 [^8]: Ibid.
+
 [^9]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2014 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/Forms_Publications/mm2014_MajorMines2014_9Oct15.pdf)
-[^10]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables), 2015
-[^11]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/Eureka%20FS%202015.pdf), June 30, 2015, p. 50, 62
+
+[^10]: Ibid.
+
+[^11]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables), 2015
+
 [^12]: Ibid.
-[^13]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](http://tax.nv.gov/LocalGovt/PolicyPub/ArchiveFiles/NetProceedsBulletins/2014-15_Net_Proceeds_Bulletin_-_Final/), 2014-15
-[^14]: Ibid.
+
+[^13]: Ibid.
+
+[^14]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/Eureka%20FS%202015.pdf), June 30, 2015, p. 50, 62
+
+[^15]: Ibid.
+
+[^16]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](http://tax.nv.gov/LocalGovt/PolicyPub/ArchiveFiles/NetProceedsBulletins/2014-15_Net_Proceeds_Bulletin_-_Final/), 2014-15
+
+[^17]: Ibid.
+

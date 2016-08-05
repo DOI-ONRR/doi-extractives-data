@@ -75,6 +75,8 @@ A number of state-level resources shed light on Elko and Eureka counties’ tran
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 
+This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
+
 <table>
   <thead>
     <tr>

@@ -18,7 +18,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data-availability
-    title: Data
+    title: Data availability
 selector: list
 ---
 
@@ -36,53 +36,53 @@ During the beginning of the twentieth century, many other large oil discoveries 
 
 ## Production
 
-In terms of oil production, Kern County has long been a leader both nationally and within California. California is one of the top oil producing states in the U.S., producing more than 6% of total production in 2014.[^3] The largest-producing region in California is the San Joaquin basin, which contains Kern County. Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend. However, production has rebounded slightly over the past several years, increasing from 141 million {{ "oil barrels" | term:"barrel" }} (bbls) in 2013 to 144 million bbls in 2015.[^4]
+In terms of oil production, Kern County has long been a leader both nationally and within California. California is one of the top oil producing states in the U.S., producing more than 6% of total production in 2014.[^3] The largest-producing region in California is the San Joaquin basin, which contains Kern County.[^4] Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend. However, production has rebounded slightly over the past several years, increasing from 141 million {{ "oil barrels" | term:"barrel" }} (bbls) in 2013 to 144 million bbls in 2015.[^5]
 
-In 2013, the largest field in California in terms of proven reserves was Belridge South Field in Kern County, with estimated 2013 production of 23.7 million bbls.[^5] Belridge South ranked ninth among the top 100 oil fields in the country.[^6] Four of the five largest oil fields in California are found in Kern County: Belridge South, Midway-Sunset, Kern River, and Elk Hills.[^7]
+In 2013, the largest field in California in terms of proven reserves was Belridge South Field in Kern County, with estimated 2013 production of 23.7 million bbls.[^6] Belridge South ranked ninth among the top 100 oil fields in the country.[^7] Four of the five largest oil fields in California are found in Kern County: Belridge South, Midway-Sunset, Kern River, and Elk Hills.[^8]
 
-### Oil production in Kern County
+### Oil production in Kern County[^9]
 
 <img src="{{ site.baseurl }}/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
 
 
 ## Employment
 
-In 2014, oil and gas extraction employed over 11,500 of Kern County’s 874,589 residents, up from just over 10,000 in 2013.[^8] This is close to 1.3% of the population and 4.5% of total employment.[^9] In particular, 3,243 people were employed in oil and gas extraction, and 8,321 in support activities (1,863 in drilling for oil and gas, and 6,485 in support activities for oil and gas operations).[^10] This represents a slight dip in extraction-related employment and a minor increase in employment in support activities from 2013.
+In 2014, oil and gas extraction employed over 11,500 of Kern County’s 874,589 residents, up from just over 10,000 in 2013.[^10] [^11] This is close to 1.3% of the population and 4.5% of total employment.[^12] In particular, 3,243 people were employed in oil and gas extraction, and 8,321 in support activities (1,863 in drilling for oil and gas, and 6,485 in support activities for oil and gas operations).[^13] This represents a slight dip in extraction-related employment and a minor increase in employment in support activities from 2013.
 
-### Wage and salary employment in Kern County:<br>Oil and gas industry vs. all other industries
+### Wage and salary employment in Kern County:<br>Oil and gas industry vs. all other industries[^14]
 
 <img src="{{ site.baseurl }}/img/counties/ca-wage.svg" alt="Chart shows the number of jobs in Kern County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 300,000, and each bar compares the number of jobs in the oil and gas industry to the total number of jobs in the county that year. Each bar also identifies the percentage of jobs in the oil and gas industry. For most years, the total number of jobs is between 175,000 and 200,000, but jumps to over 250,000 in 2014. The percentage of jobs in the oil and gas industry is between 2.3% in 2005 and 2006 and 5% in 2013. In 2014, 4.5% of jobs in Kern County were in the oil and gas industry." class="case_studies_content-graph">
 
 
 ## Revenue
 
-California does not levy a statewide severance tax on oil and gas production, but counties in the state collect ad valorem or property taxes on oil and gas resources and equipment owned in their jurisdictions. The state does levy an annual assessment on oil and gas production to fund the Department of Conservation’s Oil, Gas, and Geothermal Resources Division. The division oversees the drilling, operation, maintenance, and plugging and abandonment of oil, natural gas, and geothermal wells.[^11]
+California does not levy a statewide severance tax on oil and gas production, but counties in the state collect ad valorem or property taxes on oil and gas resources and equipment owned in their jurisdictions. The state does levy an annual assessment on oil and gas production to fund the Department of Conservation’s Oil, Gas, and Geothermal Resources Division. The division oversees the drilling, operation, maintenance, and plugging and abandonment of oil, natural gas, and geothermal wells.[^15]
 
-Like other counties in the state, Kern County collects property taxes for oil and gas properties, the total amount of which fluctuates with changes in the price of these resources over time. Between 2012 and 2015, the assessed property value of oil and gas properties has decreased from 35.4% to 32.2% of countywide assessed property values.[^12] In 2014, property tax revenues from oil and gas properties were approximately $60 million, or 15% of the county’s discretionary revenue.[^13]
+Like other counties in the state, Kern County collects property taxes for oil and gas properties, the total amount of which fluctuates with changes in the price of these resources over time. Between 2012 and 2015, the assessed property value of oil and gas properties has decreased from 35.4% to 32.2% of countywide assessed property values.[^16] In 2014, property tax revenues from oil and gas properties were approximately $60 million, or 15% of the county’s discretionary revenue.[^17]
 
-### Assessed property valuation in Kern County
+### Assessed property valuation in Kern County[^18]
 
 <img src="{{ site.baseurl }}/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2005 to 2014. Total property valuation goes up from under $60 billion in 2005 to just under $100 billion in 2014. Total valuations pleateau or slightly decline between 2008 and 2011. Oil and gas property valuation goes up every year from 2005 to 2012 (from under $20 billion to over $30 billion), then is steady from 2012 to 2014." class="case_studies_content-graph">
 
 
-Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in FY2009-2010 to $628,381 in FY 2013-2014.[^14]
+Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in FY 2009-2010 to $628,381 in FY 2013-2014.[^19] [^20]
 
-According to the Kern County Treasurer-Tax Collector, the top two payers of property taxes in the county in FY 2015–2016 were Chevron Corporation and California Resources Elk Hills LLC.[^15] The companies received bills for over 10.8% of the total property taxes due to the county. All of the top ten property tax payers were associated with either the extractive or energy sectors, and received combined bills for over $209 million, or 33.28% of total property taxes due to the county.[^16]
+According to the Kern County Treasurer-Tax Collector, the top two payers of property taxes in the county in FY 2015–2016 were Chevron Corporation and California Resources Elk Hills LLC.[^21] The companies received bills for over 10.8% of the total property taxes due to the county. All of the top ten property tax payers were associated with either the extractive or energy sectors, and received combined bills for over $209 million, or 23.28% of total property taxes due to the county.[^22]
 
 ## Costs
 
 A number of resources shed light on Kern County’s transportation systems, water infrastructure, {{ "reclamation" | term }} procedures, and emergency services. However, these government publications do not explicitly discuss the fiscal costs of oil extraction to the Kern County government.
 
-<ul>
-	<li><a href="https://www.co.kern.ca.us/cao/budget/fy1415/adopt/finalbudget.pdf">County of Kern Adopted Budget, 2014–2015 (PDF)</a></li>
-	<li><a href="http://www.arb.ca.gov/cc/sb375/kerncog_2014_rtp.pdf">Kern Council of Governments, 2014 Regional Transportation Plan/Sustainable Communities Strategy (PDF)</a></li>
-  <li><a href="https://www3.epa.gov/region9/cleanup/california.html">Kern County EPA Clean-up Sites</a></li>
-	<li><a href="http://www.co.kern.ca.us/CAO/policy/16.pdf">Kern County Policy and Administrative Procedures Manual: Emergency Preparedness (PDF)</a></li>
-</ul>
+* [County of Kern Adopted Budget, 2014–2015 (PDF)](https://www.co.kern.ca.us/cao/budget/fy1415/adopt/finalbudget.pdf)
+* [Kern Council of Governments, 2014 Regional Transportation Plan/Sustainable Communities Strategy (PDF)](http://www.arb.ca.gov/cc/sb375/kerncog_2014_rtp.pdf)
+* [Kern County EPA Clean-up Sites](https://www3.epa.gov/region9/cleanup/california.html)
+* [Kern County Policy and Administrative Procedures Manual: Emergency Preparedness (PDF)](http://www.co.kern.ca.us/CAO/policy/16.pdf)
 
 ## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
+
+This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
 <table>
   <thead>
@@ -100,8 +100,8 @@ The table below highlights the data sources used to compile this narrative, as w
     </tr>
     <tr>
       <td>Employment</td>
-      <td>U.S. Census Bureau Censtats data on County Business Patterns provides annual county-level employment data for the following industries ({{ "NAICS" | term:"north american industry classification system (naics)" }} codes): 211, 213111, and 213112.</td>
-      <td>Censtats employment data is collected in March each year, and therefore does not take seasonal employment trends into account. Also, the data does not separate employment related to oil extraction from the broader oil and gas sector.</td>
+      <td>U.S. Census Bureau Censtats data on County Business Patterns provides annual county-level employment data for the following industries ({{ "NAICS" | term:"north american industry classification system (naics)" }} codes): 211, 213111, and 213112. 2014 data taken from U.S. Bureau of Labor Statistics, using the same NAICS codes.</td>
+      <td>Censtats employment data is collected in March each year, and therefore does not take seasonal employment trends into account. Also, the data does not separate employment related to oil extraction from the broader oil and gas sector. Censtats is no longer supported by the U.S. Census Bureau for employment information at the county level.</td>
     </tr>
     <tr>
       <td>Revenue</td>
@@ -119,18 +119,45 @@ The table below highlights the data sources used to compile this narrative, as w
 ## Notes
 
 [^1]: [Oil and Gas Production, History in California (PDF)](ftp://ftp.consrv.ca.gov/pub/oil/history/History_of_Calif.pdf)
+
 [^2]: Ibid.
+
 [^3]: U.S. Energy Information Administration, [California State Profile and Energy Estimates](https://www.eia.gov/state/analysis.cfm?sid=CA), 2015
-[^4]: California Department of Conservation, [Well Records, Production, and Injection Data](http://opi.consrv.ca.gov/opi/opi.dll)
-[^5]: U.S. Energy Information Administration,  [Top 100 U.S. Oil and Gas Fields (PDF)](https://www.eia.gov/naturalgas/crudeoilreserves/top100/pdf/top100.pdf), 2015
-[^6]: Ibid.
+
+[^4]: Ibid.
+
+[^5]: California Department of Conservation, [Well Records, Production, and Injection Data](http://opi.consrv.ca.gov/opi/opi.dll)
+
+[^6]: U.S. Energy Information Administration,  [Top 100 U.S. Oil and Gas Fields (PDF)](https://www.eia.gov/naturalgas/crudeoilreserves/top100/pdf/top100.pdf), 2015
+
 [^7]: Ibid.
-[^8]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See All Counties in a State, One Industry
-[^9]: U.S. Census Bureau, [Quick Facts, Kern County, California](http://www.census.gov/quickfacts/table/PST045215/00)
+
+[^8]: Ibid.
+
+[^9]: California Department of Conservation, [Search Well Records, Production, or Injection Data](https://secure.conservation.ca.gov/WellSearch)
+
 [^10]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See All Counties in a State, One Industry
-[^11]: California Department of Conservation, [Division of Oil, Gas, and Geothermal Resources](http://www.conservation.ca.gov/DOG/Pages/Index.aspx)
-[^12]: County of Kern, [FY 2014–2015 Recommended Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1415/rec/RecommendedBudgetFinal.pdf), p.85. Kern County’s fiscal year begins July 1 and ends June 30 of the following year.
-[^13]: Ibid., p. 65
-[^14]: County of Kern, [FY 2010-2011 Final Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1011/adopt/finalbudget.pdf), [FY 2014-2015 Adopted Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1415/adopt/finalbudget.pdf)
-[^15]: Kern County Treasurer, [Top 10 Secured Billing Taxpayers (PDF)](https://www.kcttc.co.kern.ca.us/forms/topten.pdf), 2016
-[^16]: Ibid.
+
+[^11]: U.S. Census Bureau, [Quick Facts, Kern County, California](http://www.census.gov/quickfacts/table/PST045215/00)
+
+[^12]: Ibid.
+
+[^13]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See All Counties in a State, One Industry
+
+[^14]: Ibid.
+
+[^15]: California Department of Conservation, [Division of Oil, Gas, and Geothermal Resources](http://www.conservation.ca.gov/DOG/Pages/Index.aspx)
+
+[^16]: County of Kern, [FY 2014–2015 Recommended Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1415/rec/RecommendedBudgetFinal.pdf), p.85. Kern County’s fiscal year begins July 1 and ends June 30 of the following year.
+
+[^17]: Ibid.
+
+[^18]: County of Kern, [FY 2014–2015 Recommended Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1415/rec/RecommendedBudgetFinal.pdf)
+
+[^19]: County of Kern, [FY 2010-2011 Final Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1011/adopt/finalbudget.pdf)
+
+[^20]: County of Kern, [FY 2014-2015 Adopted Budget (PDF)](http://www.co.kern.ca.us/cao/budget/fy1415/adopt/finalbudget.pdf)
+
+[^21]: Kern County Treasurer, [Top 10 Secured Billing Taxpayers (PDF)](https://www.kcttc.co.kern.ca.us/forms/topten.pdf), 2016
+
+[^22]: Ibid.

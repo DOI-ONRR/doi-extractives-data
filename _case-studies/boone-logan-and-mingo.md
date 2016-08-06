@@ -48,7 +48,7 @@ Cumulatively, mines in Boone, Logan, and Mingo counties produce about 27% of Wes
 
 Coal extraction has provided employment in these communities for the past century, but employment is declining in tandem with the region’s dropping production levels and the industry’s increased mechanization. Between 2013 and 2014, the number of employees working in the coal industry in southern West Virginia fell by 20%.[^13] In 2014, the combined population of the three counties was 84,778.[^14] That year, 4,735 people were employed in the mining industry across the three counties.[^15] This translates to 20% of the total employed population, or 6% of the total population. 2014 employment figures marked a 31% drop in the sector’s employment since 2005.[^16] Mining employment in Boone County in particular fell by 25% from 2013 to 2014.[^17] The following graph illustrates changes in mining employment across these three counties from 2005 through 2014, compared with employment in all other industries.[^18] [^19]
 
-### Wage and salary employment in Boone, Logan, and Mingo counties:<br>Mining industry vs. all other industries[^20]
+### Wage and salary employment in Boone, Logan, and Mingo counties: Mining industry vs. all other industries[^20]
 
 <img src="{{ site.baseurl }}/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2005 to 2014. The y-axis goes up to 35,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 17,500 and under 30,000, and the percentage of jobs in the mining industry is between 25%, in 2014, and 27%, in 2008." class="case_studies_content-graph">
 
@@ -68,6 +68,8 @@ The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is 
 ## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
+
+This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
 <table>
   <thead>

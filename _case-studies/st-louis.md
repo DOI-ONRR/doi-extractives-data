@@ -18,7 +18,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data-availability
-    title: Data
+    title: Data availability
 selector: list
 ---
 
@@ -34,24 +34,24 @@ All iron mining in St. Louis County takes place along the Mesabi Iron Range. The
 
 ## Production
 
-In 2013, St. Louis County's eight iron mines produced 41.1 million metric tons of ore. Minnesota currently produces approximately 75% of the iron ore in the U.S.[^4] [^5] [^6] Production rates were relatively constant throughout the preceding ten years, averaging 37.8 million metric tons with a compound annual growth rate of -0.05%.[^7] [^8] As shown in the graph, iron production in St. Louis County drives the majority of national iron production. The abnormally low production rate in 2009 was broadly the result of the global economic recession and weak demand from Chinese steel mills.
+In 2013, St. Louis County's eight iron mines produced 41.1 million metric tons of ore. Minnesota currently produces approximately 75% of the iron ore in the U.S.[^4] [^5] [^6] Production rates were relatively constant throughout the preceding ten years, averaging 37.8 million metric tons with a compound annual growth rate of -0.05%.[^7] As shown in the graph below, iron production in St. Louis County drives the majority of national iron production. The abnormally low production rate in 2009 was broadly the result of the global economic recession and weak demand from Chinese steel mills.
 
-In Minnesota, the state government is the largest owner of mineral rights. It owns approximately 12 million acres of mineral rights, which is equivalent to 24% of the mineral rights in the state.[^9] Minnesota policy prohibits selling state-owned mineral rights, although the state does lease lands and mineral rights for exploration and development.[^10]
+In Minnesota, the state government is the largest owner of mineral rights. It owns approximately 12 million acres of mineral rights, which is equivalent to 24% of the mineral rights in the state.[^8] Minnesota policy prohibits selling state-owned mineral rights, although the state does lease lands and mineral rights for exploration and development.[^9]
 
-### Iron ore production in St. Louis County vs. nationwide production
+### Iron ore production in St. Louis County vs. nationwide production[^10]
 
 <img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
 
 
 ## Employment
 
-The iron industry employs thousands of people in St. Louis County. The three major companies that operate the county's iron mines and processing facilities are Cliffs Natural Resources, ArcelorMittal USA Inc., and the United States Steel Corporation. The seven mines in St. Louis County operated by these and other companies provided 4,202 jobs in 2014, comprising 5% of the county’s total 81,236 employment.[^11] [^12] Mining employment has remained steady at around 4% of employment since 2008.
+The iron industry employs thousands of people in St. Louis County. The three major companies that operate the county's iron mines and processing facilities are Cliffs Natural Resources, ArcelorMittal USA Inc., and the United States Steel Corporation. The seven mines in St. Louis County operated by these and other companies provided 4,202 jobs in 2014, comprising 5% of the county’s total 81,236 jobs.[^11] [^12] Mining employment has remained steady at around 4% of employment since 2008.
 
 ## Revenue
 
 Annually, the iron ore industry in Minnesota takes in more than $3 billion in sales revenue.[^13] Various state and county tax mechanisms funnel a portion of these dollars back into the counties. The Taconite Production Tax, which is levied on concentrates or pellets produced by taconite companies, is the largest tax paid by the mining industry in Minnesota. The tax rate for taconite production increased in 2013 from $2.46 per taxable long ton of concentrates to $2.56, an increase of 4.1%.[^14] Counties receive 26.05 cents per ton of iron ore from the Taconite Production Tax; in 2015, this amounted to $10 million for St. Louis County, down from $11.6 million in 2012.[^15]
 
-The production tax is distributed to a variety of recipients for public use, including school districts, cities and townships, and the Iron Range Resources and Rehabilitation Board (IRRRB). The IRRRB splits its disbursements between infrastructure-improvement projects and cooperative community projects (such as parks and public trails).[^16]
+The production tax is distributed to a variety of recipients for public use, including school districts, cities and townships, and the Iron Range Resources and Rehabilitation Board, which splits its disbursements between infrastructure-improvement projects and cooperative community projects (such as parks and public trails).[^16]
 
 St. Louis County also collects revenue from various ad valorem and property taxes, including the tax on unmined taconite ($227,126 in 2014) and the ad valorem tax on taconite railroads ($7,286 in 2014).[^17] Taken together with the Taconite Production Tax, this revenue is important for the county's schools, infrastructure, and public services.
 
@@ -66,6 +66,9 @@ In Minnesota, the Department of Natural Resources (DNR) has the authority to reg
 ## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
+
+This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
+
 <table>
   <thead>
     <tr>
@@ -122,9 +125,9 @@ The table below highlights data sources used to compile this narrative, as well 
 
 [^11]: [Annual Report of the Inspector of Mines (PDF)](https://www.leg.state.mn.us/docs/2015/mandated/150544.pdf), Minnesota, 2014
 
-[^12]: Bureau of Labor Statistics, [St. Louis County Employment Total](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)
+[^12]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages: Private, total, all industries, all counties, 2014 annual averages, all establishment sizes](http://data.bls.gov/cew/apps/table_maker/v4/table_maker.htm#type=1&year=2014&qtr=A&own=5&ind=10&supp=0)
 
-[^13]: U.S. Geological Survey, [2012 Minerals Yearbook, Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2012-feore.pdf), p.39
+[^13]: U.S. Geological Survey, [2012 Minerals Yearbook, Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2012-feore.pdf), p. 39.2
 
 [^14]: U.S. Geological Survey, [2013 Minerals Yearbook, Iron Ore (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/myb1-2013-feore.pdf)
 
@@ -142,6 +145,6 @@ The table below highlights data sources used to compile this narrative, as well 
 
 [^21]: Minnesota Department of Transportation, [Minnesota Comprehensive Statewide Freight and Passenger Rail Plan (PDF)](http://www.dot.state.mn.us/planning/railplan/finalreport/MNRailPlanFinalReportFeb2010.pdf), 2010
 
-[^22]: Minnesota Department of Natural Resources, [Where Funds are Spent (PDF)](http://files.dnr.state.mn.us/aboutdnr/budget/fy12-13/budget_spent.pdf), 2012–2013, p. 2
+[^22]: Minnesota Department of Natural Resources, [Where Funds are Spent (PDF)](http://files.dnr.state.mn.us/aboutdnr/budget/fy12-13/budget_spent.pdf), 2012–2013, p. 3
 
-[^23]: Minnesota Department of Natural Resources, [Where Funds are Spent (PDF)](http://files.dnr.state.mn.us/aboutdnr/budget/fy14-15/budget_spent.pdf), 2014–2015, p. 3
+[^23]: Minnesota Department of Natural Resources, [Where Funds are Spent (PDF)](http://files.dnr.state.mn.us/aboutdnr/budget/fy14-15/budget_spent.pdf), 2014–2015, p. 2

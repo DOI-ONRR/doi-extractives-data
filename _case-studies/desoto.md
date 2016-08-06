@@ -18,7 +18,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data-availability
-    title: Data
+    title: Data availability
 selector: list
 ---
 
@@ -80,11 +80,13 @@ Since 2008, Louisiana has invested at least $1.1 billion in transportation proje
 
 Louisiana completed a [Hydraulic Fracturing State Review (PDF)](http://dnr.louisiana.gov/assets/OC/haynesville_shale/071311_stronger_review.pdf) in March 2011, which explains the state’s policies around industrial water use and wastewater reuse and disposal. However, the review does not itemize public expenditures on water-related infrastructure for industrial activities.[^36]
 
-The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent {{ "millage tax" | term_end }}.[^37] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
+The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a 4% {{ "millage tax" | term_end }}.[^37] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 
 ## Data availability
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
+
+This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
 <table>
   <thead>

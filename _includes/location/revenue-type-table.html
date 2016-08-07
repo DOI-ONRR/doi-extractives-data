@@ -41,7 +41,8 @@
 <script>
   window.revenueYear = JSON.parse( '{{ include.year }}' );
   window.revenueData = JSON.parse( '{{ revenue_types | jsonify }}' );
-  window.commodityData = JSON.parse( '{{ commodity_groups | jsonify }}' )
+  window.commodityData = JSON.parse( '{{ commodity_groups | jsonify }}' );
+  window.commodityNames = JSON.parse( '{{ site.data.commodity_names | jsonify }}' );
 </script>
 <script src="/js/lib/state-revenue-table.min.js"></script>
 

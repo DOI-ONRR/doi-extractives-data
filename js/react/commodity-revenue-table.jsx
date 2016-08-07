@@ -22,6 +22,7 @@ export class CommodityRevenueTable extends Component {
 		const {
 			asCurrency,
 			title,
+			type,
 			icons,
 			data
 		} = this.props;
@@ -45,7 +46,7 @@ export class CommodityRevenueTable extends Component {
 				<tr>
 					<th scope="row">
 						<a href={ `#revenue-${ slugify( title ) }` }>
-							<strong>{ title }</strong>
+							<strong>{ type }</strong>
 						</a><br />
 						<strong>{ asCurrency( getRevenue( 'All' ) ) }</strong>
 					</th>

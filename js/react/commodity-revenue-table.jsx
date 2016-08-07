@@ -7,6 +7,8 @@ import {
 import localize from './localize';
 import { slugify } from './utils';
 
+import FilledBar from './filled-bar';
+
 const revenueTypes = [
 	'Bonus',
 	'Rents',
@@ -51,6 +53,12 @@ export class CommodityRevenueTable extends Component {
 						.map( type => (
 							<td key={ `revenue-type-${ slugify( type ) }` } >
 								<span className="text">
+									<FilledBar
+										height={ 15 }
+										width={ 122 }
+										value={ getRevenue( type, year ) }
+										maxValue={ getRevenue( 'All', year ) }
+									/><br />
 									{ asCurrency( getRevenue( type, year ) ) }
 								</span>
 							</td>

@@ -2,10 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
 	clone,
+	compose,
+	defaultTo,
+	filter,
 	flatten,
 	flip,
 	has,
-	propOr
+	head,
+	map,
+	pathOr,
+	pick,
+	propOr,
+	values
 } from 'ramda';
 
 import CommodityTable from '../react/commodity-revenue-table';
@@ -31,6 +39,13 @@ const categoryData = {
 		icons: [ 'oil' ]
 	}
 };
+
+const getCommodityValues = type => map( compose(
+	defaultTo( 0 ),
+	head,
+	values,
+	pick( [ revenueYear ] )
+), propOr( {}, type, revenueData ) );
 
 const stateRevenueTable = () => {
 	const oilgas = propOr( {}, 'oilgas', commodityData );
@@ -58,8 +73,7 @@ const stateRevenueTable = () => {
 					title={ oilgas.name }
 					icons={ categoryData.oilgas.icons }
 					type={ type }
-					data={ propOr( {}, type, revenueData ) }
-					year={ revenueYear }
+					data={ getCommodityValues( type ) }
 				/>
 			) ) ) }
 		</table>,

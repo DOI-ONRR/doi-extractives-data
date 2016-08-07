@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
 	has,
-	pathOr
+	propOr
 } from 'ramda';
 
 import localize from './localize';
@@ -23,11 +23,11 @@ export class CommodityRevenueTable extends Component {
 			asCurrency,
 			title,
 			icons,
-			data,
-			year
+			data
 		} = this.props;
+		console.log( this.props );
 
-		const getRevenue = ( category, year ) => pathOr( 0, [ category, year ], data );
+		const getRevenue = category => propOr( 0, category, data );
 
 		const iconClasses = icons
 			.concat( 'padded' )
@@ -47,7 +47,7 @@ export class CommodityRevenueTable extends Component {
 						<a href={ `#revenue-${ slugify( title ) }` }>
 							<strong>{ title }</strong>
 						</a><br />
-						<strong>{ asCurrency( getRevenue( 'All', year ) ) }</strong>
+						<strong>{ asCurrency( getRevenue( 'All' ) ) }</strong>
 					</th>
 					{ revenueTypes
 						.map( type => (
@@ -56,10 +56,10 @@ export class CommodityRevenueTable extends Component {
 									<FilledBar
 										height={ 15 }
 										width={ 122 }
-										value={ getRevenue( type, year ) }
-										maxValue={ getRevenue( 'All', year ) }
+										value={ getRevenue( type ) }
+										maxValue={ getRevenue( 'All' ) }
 									/><br />
-									{ asCurrency( getRevenue( type, year ) ) }
+									{ asCurrency( getRevenue( type ) ) }
 								</span>
 							</td>
 						) )

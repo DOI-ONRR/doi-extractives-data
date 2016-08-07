@@ -6,7 +6,6 @@ import {
 	compose,
 	defaultTo,
 	filter,
-	flatten,
 	flip,
 	fromPairs,
 	has,
@@ -29,7 +28,6 @@ const commodityNames = clone( window.commodityNames );
 
 console.log( revenueData );
 console.log( commodityData );
-console.log( commodityNames );
 
 const commodityTypes = [
 	'oilgas',
@@ -56,14 +54,18 @@ const getCommodityValues = type => map( compose(
 
 const stateRevenueTable = () => {
 	const oilgas = propOr( {}, 'oilgas', commodityData );
-	const types =
-		propOr( [], 'commodities', oilgas )
-			.filter( flip( has )( revenueData ) );
+	const types = compose (
+		filter( flip( has )( revenueData ) ),
+		propOr( [], 'commodities' )
+	)( oilgas );
 
-	const typesData = filter(
-		compose( any( lt( 0 ) ), values ),
-		fromPairs( types.map( type => [ type, getCommodityValues( type ) ] ) )
-	);
+	const typesData = compose(
+		map( ( [ name, data ] ) => [ mapCommodityNames( name ), data ] ),
+		toPairs,
+		filter( compose( any( lt( 0 ) ), values ) ),
+		fromPairs,
+		map( type => [ type, getCommodityValues( type ) ] )
+	)( types );
 
 	ReactDOM.render(
 		<table className="revenue table-arrow_box">
@@ -76,15 +78,12 @@ const stateRevenueTable = () => {
 				<th><span>Other revenue</span></th>
 			</tr>
 			</thead>
-			{ map( ( [ type, data ] ) => (
-				<CommodityTable
-					key={ type }
-					title={ oilgas.name }
-					icons={ categoryData.oilgas.icons }
-					type={ mapCommodityNames( type ) }
-					data={ data }
-				/>
-			), toPairs( typesData ) ) }
+			<CommodityTable
+				key={ oilgas.name }
+				title={ oilgas.name }
+				icons={ categoryData.oilgas.icons }
+				data={ typesData }
+			/>
 		</table>,
 		document.getElementById( 'state-revenue-table-react' )
 	);

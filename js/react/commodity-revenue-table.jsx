@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import {
 	has,
-	propOr
+	last,
+	map,
+	max,
+	propOr,
+	reduce
 } from 'ramda';
 
 import localize from './localize';
@@ -28,12 +32,14 @@ export class CommodityRevenueTable extends Component {
 		} = this.props;
 		console.log( this.props );
 
-		const getRevenue = category => propOr( 0, category, data );
+		const getRevenue = ( category, data ) => propOr( 0, category, data );
 
 		const iconClasses = icons
 			.concat( 'padded' )
 			.map( icon => `icon-${ icon }` )
 			.join( ' ' );
+
+		const maxRevenue = reduce( max, 0, map( propOr( 0, 'All' ), map( last, data ) ) );
 
 		return (
 			<tbody id={ `revenue-${ slugify( title ) }` }>
@@ -43,29 +49,31 @@ export class CommodityRevenueTable extends Component {
 						<icon className={ iconClasses } />
 					</td>
 				</tr>
-				<tr>
-					<th scope="row">
-						<a href={ `#revenue-${ slugify( title ) }` }>
-							<strong>{ type }</strong>
-						</a><br />
-						<strong>{ asCurrency( getRevenue( 'All' ) ) }</strong>
-					</th>
-					{ revenueTypes
-						.map( type => (
-							<td key={ `revenue-type-${ slugify( type ) }` } >
-								<span className="text">
-									<FilledBar
-										height={ 15 }
-										width={ 122 }
-										value={ getRevenue( type ) }
-										maxValue={ getRevenue( 'All' ) }
-									/><br />
-									{ asCurrency( getRevenue( type ) ) }
-								</span>
-							</td>
-						) )
-					}
-				</tr>
+				{ data.map( ( [ type, typeData ] ) => (
+					<tr key={ `revenue-type-${ slugify( type ) }` }>
+						<th scope="row">
+							<a href={ `#revenue-${ slugify( title ) }` }>
+								<strong>{ type }</strong>
+							</a><br />
+							<strong>{ asCurrency( getRevenue( 'All', typeData ) ) }</strong>
+						</th>
+						{ revenueTypes
+							.map( type => (
+								<td key={ `revenue-type-type-${ slugify( type ) }` } >
+									<span className="text">
+										<FilledBar
+											height={ 15 }
+											width={ 122 }
+											value={ getRevenue( type, typeData ) }
+											maxValue={ maxRevenue }
+										/><br />
+										{ asCurrency( getRevenue( type, typeData ) ) }
+									</span>
+								</td>
+							) )
+						}
+					</tr>
+				) ) }
 			</tbody>
 		);
 	}

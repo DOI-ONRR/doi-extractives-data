@@ -37,6 +37,15 @@
 
 {% endfor %}
 
+<div id="state-revenue-table-react"></div>
+<script>
+  window.revenueYear = JSON.parse( '{{ include.year }}' );
+  window.revenueData = JSON.parse( '{{ revenue_types | jsonify }}' );
+  window.commodityData = JSON.parse( '{{ commodity_groups | jsonify }}' )
+</script>
+<script src="/js/lib/state-revenue-table.min.js"></script>
+
+<div style="margin-bottom: 2em;"></div>
 
 <table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>

@@ -25,16 +25,8 @@
 
 header,
 .header {
-  @include outer-container($max-width);
-
   margin-bottom: $base-padding-large;
   margin-top: $base-padding;
-  margin-left: $base-padding;
-  margin-right: $base-padding;
-
-  @include respond-to(huge-plus-up) {
-    @include outer-container($max-width);
-  }
 }
 
 .header-image_link {

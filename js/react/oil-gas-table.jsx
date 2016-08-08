@@ -19,6 +19,7 @@ import {
 	revenueTypes
 } from './revenue-table-helpers';
 
+import CommodityRow from './commodity-revenue-row';
 import FilledBar from './filled-bar';
 
 const isOilOrGas = flip( contains )( [
@@ -99,27 +100,13 @@ export const OilGasTable = props => {
 			) ) }
 		</tr>
 		{ other.map( ( [ type, typeData ] ) => (
-			<tr key={ `revenue-type-${ slugify( type ) }` }>
-				<th scope="row">
-					<a href={ `#revenue-${ slugify( title ) }` }>
-						<strong>{ type }</strong>
-					</a><br />
-					<strong>{ asCurrency( getRevenue( 'All', typeData ) ) }</strong>
-				</th>
-				{ revenueTypes.map( type => (
-					<td key={ `revenue-type-type-${ slugify( type ) }` } >
-							<span className="text">
-								<FilledBar
-									height={ 15 }
-									width={ 122 }
-									values={ [ getRevenue( type, typeData ) ] }
-									maxValue={ maxRevenue }
-								/><br />
-								{ asCurrency( getRevenue( type, typeData ) ) }
-							</span>
-					</td>
-				) ) }
-			</tr>
+			<CommodityRow { ...{
+				title,
+				type,
+				maxRevenue,
+				key: type,
+				data: typeData
+			} } />
 		) ) }
 		</tbody>
 	);

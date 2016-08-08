@@ -146,4 +146,4 @@ const stateRevenueTable = () => {
 	);
 };
 
-stateRevenueTable();
+revenueData && stateRevenueTable();

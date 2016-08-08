@@ -70,7 +70,7 @@ npm test
 ```
 
 ### Jekyll filters
-We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. These filters are written in ruby and are being tested inline using [rubydoctest](https://github.com/tslocke/rubydoctest) for the [eiti-data.rb](_plugins/eiti-data.rb) and [eiti-format.rb](_plugins/eiti-format.rb).
+We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. The filters in _plugins/eiti-*.rb are tested with [rubydoctest](https://github.com/tslocke/rubydoctest).
 
 As the following example demonstrates, test cases are written in comment blocks immediately preceding a testable function. The test description is on the first line, with an empty comment block below it. Use `>>` syntax to invoke a test case, and follow it with hash rocket syntax, `=>`, to define the expected outcome of the invocation.
 

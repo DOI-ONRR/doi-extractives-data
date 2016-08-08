@@ -16,23 +16,6 @@
 
     <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
-<!--   <aside class="container-half county-map-table">
-
-    <figure>
-      <eiti-data-map color-scheme="Blues" steps="9">
-        {% assign county_revenue = site.data.county_revenue[state_id] %}
-        {% capture value_key %}revenue.{{ year }}{% endcapture %}
-        {%
-          include county-map.html
-          state=state_id
-          counties=county_revenue
-          value=value_key
-        %}
-      </eiti-data-map>
-      <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
-    </figure>
-  </aside> -->
-
     <p class="full-width-text">The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
 
     <div id="fee-summaries" class="tab-interface">

@@ -5,13 +5,13 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3>Production on all land nationwide</h3>
+  <h3>Nationwide energy production</h3>
 
   <div class="chart-selector-wrapper">
 
     {% include year-selector.html year_range=year_range %}
 
-    <p class="chart-description">The federal government collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned property in {{ state_name }}.</p>
+    <p class="chart-description">The Energy Information Administration collects data about <strong>energy-related natural resources on all types of land</strong> (including state and private land). This data does not include information about non-energy mineral mining. <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a></p>
   </div>
 
   <div class="chart-list">
@@ -34,7 +34,7 @@
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="eiti-bar-chart-y-value" data-format=","">{{ volume | default: 0 | intcomma }}</span>
           {{ long_units | term }} of
-          {{ product_name | downcase | suffix:units_suffix }} was extracted in {{ state_name }} in
+          {{ product_name | downcase | suffix:units_suffix }} was extracted in
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
         </figcaption>
         <eiti-bar-chart
@@ -49,9 +49,5 @@
   {% endfor %}
 
   </div>
-
-  <a href="{{site.baseurl}}/downloads/#production-all">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data about energy production on all lands and waters comes from the Energy Information Administration
-  </a>
 
 </section>

@@ -23,11 +23,7 @@
       {% include year-selector.html year_range=year_range %}
 
       <p class="chart-description">
-        {% if federal_products_num == 0 %}
-          No natural resources were produced on federal land in {{  state_name }} in {{ year }}.
-        {% else %}
-          Is there some kind of summary sentence that would be good here? The year selector would update all references to year in the federal production section.
-        {% endif %}
+        ONRR collects detailed data about natural resources extracted on federal lands and waters.  <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
       </p>
     </div>
 
@@ -78,9 +74,5 @@
     </div><!-- /.chart-list -->
 
   </section>
-
-  <a href="{{site.baseurl}}/downloads/federal-production/">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Federal production data comes from the Office of Natural Resources Revenue
-  </a>
 
 </section>

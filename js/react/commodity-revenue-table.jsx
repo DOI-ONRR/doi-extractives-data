@@ -26,12 +26,10 @@ export class CommodityRevenueTable extends Component {
 		const {
 			asCurrency,
 			title,
-			type,
 			icons,
 			data,
 			maxRevenue
 		} = this.props;
-		console.log( this.props );
 
 		const getRevenue = ( category, data ) => propOr( 0, category, data );
 
@@ -64,7 +62,7 @@ export class CommodityRevenueTable extends Component {
 										<FilledBar
 											height={ 15 }
 											width={ 122 }
-											value={ getRevenue( type, typeData ) }
+											values={ [ getRevenue( type, typeData ) ] }
 											maxValue={ maxRevenue }
 										/><br />
 										{ asCurrency( getRevenue( type, typeData ) ) }

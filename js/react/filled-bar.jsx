@@ -1,4 +1,9 @@
 import React, { Component, PropTypes } from 'react';
+import Color from 'color';
+import {
+	last,
+	sort
+} from 'ramda';
 
 export class FilledBar extends Component {
 	constructor( props ) {
@@ -19,7 +24,7 @@ export class FilledBar extends Component {
 		const {
 			backColor,
 			fillColor,
-			value,
+			values,
 			maxValue,
 			height,
 			width
@@ -34,19 +39,29 @@ export class FilledBar extends Component {
 		ctx.fillStyle = backColor;
 		ctx.fillRect( 0, 0, width, height );
 
-		if ( 0 === value ) {
-			return;
-		}
+		sort( (a, b) => b - a, values )
+			.reduce( (t, c) => {
+				const [ , prevWidth, offset ] = last( t ) || [ 0, 0, 0 ];
+				const barWidth = Math.max( 1, width * ( Math.abs( c ) / ( maxValue + Number.EPSILON ) ) );
 
-		const barWidth = Math.max( 1, width * ( Math.abs( value ) / ( maxValue + Number.EPSILON ) ) );
+				return [ ...t, [ c, barWidth, offset + prevWidth ] ];
+			}, [] )
+			.forEach( ( [ value, barWidth, offset ], step ) => {
+				if ( 0 === value ) {
+					return;
+				}
 
-		if ( value > 0 ) {
-			ctx.fillStyle = fillColor;
-			ctx.fillRect( 0, 0, barWidth, height );
-		} else {
-			ctx.fillStyle = '#c00';
-			ctx.fillRect( width - barWidth, 0, width - barWidth, height );
-		}
+				if ( value > 0 ) {
+					ctx.fillStyle = Color( fillColor )
+						.lighten( 0.5 * step )
+						.desaturate( 0.5 * step )
+						.hexString();
+					ctx.fillRect( offset + step, 0, barWidth, height );
+				} else {
+					ctx.fillStyle = '#c00';
+					ctx.fillRect( offset - step + width - barWidth, 0, width - barWidth, height );
+				}
+			} );
 	}
 
 	render() {
@@ -70,7 +85,7 @@ FilledBar.displayName = 'FilledBar';
 FilledBar.propTypes = {
 	backColor: PropTypes.string,
 	fillColor: PropTypes.string,
-	value: PropTypes.number.isRequired,
+	values: PropTypes.arrayOf( PropTypes.number ).isRequired,
 	maxValue: PropTypes.number.isRequired,
 	height: PropTypes.number.isRequired,
 	width: PropTypes.number.isRequired

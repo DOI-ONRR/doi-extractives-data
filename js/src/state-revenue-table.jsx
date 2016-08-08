@@ -27,6 +27,7 @@ import {
 } from 'ramda';
 
 import CommodityTable from '../react/commodity-revenue-table';
+import OilGasTable from '../react/oil-gas-table';
 
 const revenueYear = clone( window.revenueYear );
 const revenueData = clone( window.revenueData );
@@ -120,22 +121,25 @@ const stateRevenueTable = () => {
 				<th><span>Other revenue</span></th>
 			</tr>
 			</thead>
-			{ availableTypes.map( type => (
+			{ availableTypes.map( type => React.createElement(
+				'oilgas' === type ? OilGasTable : CommodityTable,
+				{
+					key: type,
+					title: pathOr( commodityData[ type ].name, [ type, 'label' ], categoryData ),
+					icons: pathOr( [], [ type, 'icons' ], categoryData ),
+					data: commoditiesData[ type ],
+					maxRevenue: maxRevenue
+				}
+			) ) }
+			{ availableTypes.length > 1 &&
 				<CommodityTable
-					key={ type }
-					title={ pathOr( commodityData[ type ].name, [ type, 'label' ], categoryData ) }
-					icons={ pathOr( [], [ type, 'icons' ], categoryData ) }
-					data={ commoditiesData[ type ] }
+					key="All"
+					title="All Commodities"
+					icons={ availableTypes.map( type => pathOr( [], [ type, 'icons' ], categoryData ) )  }
+					data={ [ [ 'All commodities', totals ] ] }
 					maxRevenue={ maxRevenue }
 				/>
-			) ) }
-			<CommodityTable
-				key="All"
-				title="All Commodities"
-				icons={ availableTypes.map( type => pathOr( [], [ type, 'icons' ], categoryData ) )  }
-				data={ [ [ 'All commodities', totals ] ] }
-				maxRevenue={ maxRevenue }
-			/>
+			}
 		</table>,
 		document.getElementById( 'state-revenue-table-react' )
 	);

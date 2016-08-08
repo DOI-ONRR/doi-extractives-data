@@ -38,10 +38,22 @@ const commodityTypes = [
 ];
 
 const categoryData = {
-	oilgas: { icons: [ 'oil' ] },
-	coal: { icons: [ 'coal' ] },
-	minerals: { icons: [ 'minerals' ] },
-	geothermal: { icons: [ 'geo' ] }
+	oilgas: {
+		icons: [ 'oil' ],
+		label: 'Oil and Gas'
+	},
+	coal: {
+		icons: [ 'coal' ],
+		label: 'Coal'
+	},
+	minerals: {
+		icons: [ 'minerals' ],
+		label: 'Hardrock Minerals'
+	},
+	renewables: {
+		icons: [ 'geo' ],
+		label: 'Geothermal'
+	}
 };
 
 const mapCommodityNames = name => propOr( name, name, commodityNames );
@@ -85,7 +97,7 @@ const stateRevenueTable = () => {
 			{ commodityTypes.map( type => (
 				<CommodityTable
 					key={ type }
-					title={ commodityData[ type ].name }
+					title={ pathOr( commodityData[ type ].name, [ type, 'label' ], categoryData ) }
 					icons={ pathOr( [], [ type, 'icons' ], categoryData ) }
 					data={ commoditiesData[ type ] }
 				/>

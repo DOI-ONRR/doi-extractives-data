@@ -59,7 +59,7 @@ export class FilledBar extends Component {
 					ctx.fillRect( offset + step, 0, barWidth, height );
 				} else {
 					ctx.fillStyle = '#c00';
-					ctx.fillRect( offset - step + width - barWidth, 0, width - barWidth, height );
+					ctx.fillRect( offset - step + width - barWidth, 0, barWidth, height );
 				}
 			} );
 	}

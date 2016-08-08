@@ -100,7 +100,7 @@ const stateRevenueTable = () => {
 	)( commodityData );
 
 	const totals = computeTotals( commoditiesData );
-	const maxRevenue = propOr( 0, 'All', totals );
+	const maxRevenue = reduce( max, 0, values( totals ) );
 
 	const myTypes = map( compose(
 		a => !! a.length,

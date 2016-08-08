@@ -81,13 +81,14 @@
         <div class="map-container">
 
           <h4 class="chart-title">
-            <span>Local wage and salary jobs</span>
+            {{ locality_name }} wage and salary jobs
           </h4>
 
           <figure class="container">
             <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
               {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-              {% capture caption %}Local employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}
+
+              {% capture caption %}{{ locality_name }} employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}
 
               {%
                 include county-map.html

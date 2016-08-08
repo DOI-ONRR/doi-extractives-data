@@ -26,12 +26,21 @@ data-map {
     @include span-columns(8);
     @include omega();
 
-    > * {
+    .svg-container {
       @include span-columns(8);
 
-      &:last-child {
-        @include span-columns(4);
+      &.wide {
+        @include span-columns(12);
         @include omega();
+      }
+    }
+
+    .legend-container {
+      @include span-columns(4);
+      @include omega();
+
+      &.wide {
+        @include span-columns(12);
       }
     }
   }
@@ -60,7 +69,27 @@ data-map {
   bottom: 0;
   margin: 0;
   position: absolute;
-  right: $standard-padding-lite;
+  left: $standard-padding-lite;
+}
+
+eiti-data-map {
+  .svg-container.wide {
+    .details-container {
+      display: none;
+    }
+  }
+
+  .legend-container {
+    .details-container {
+      display: none;
+    }
+
+    &.wide .details-container {
+      display: block;
+      position: static;
+      text-align: left;
+    }
+  }
 }
 
 .legend-svg,
@@ -68,6 +97,7 @@ data-map {
   border: none;
   padding: $base-padding-lite;
   width: 200px;
+  height: 215px;
 
   .swatch {
     stroke: $neutral-gray;
@@ -76,5 +106,30 @@ data-map {
 
   .cell text {
     @include font-size(3 / 4);
+  }
+}
+
+.legend-container.wide {
+  padding-top: $standard-padding-lite;
+
+  .legend-ownership-svg {
+    width: 100%;
+    height: 100px;
+  }
+
+  .legend-svg.horizontal {
+    height: 50px;
+  }
+}
+
+.legend-svg.horizontal {
+  .cell text {
+    font-size: 10px;
+  }
+}
+
+.legend-container.wide .legend-ownership-svg {
+  .label {
+    @include font-size(0.75);
   }
 }

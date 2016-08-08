@@ -51,6 +51,10 @@
     text-align: left;
   }
 
+  .numeric[colspan="2"] {
+    text-align: center;
+  }
+
   [data-value] {
     min-width: 120px;
     position: relative;
@@ -81,6 +85,10 @@
   [data-value^="-"] .bar {
     background: transparent;
     border: 1px solid;
+  }
+
+  [data-value-text]:not(.numeric) {
+    text-align: right;
   }
 
   &[orient=vertical] {

@@ -9,11 +9,18 @@
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
-          this.marks = d3.select(this).selectAll('[data-value]')
+          var root = d3.select(this);
+
+          this.marks = root.selectAll('[data-value]')
             .datum(function() {
               return +this.getAttribute('data-value') || 0;
             });
 
+          if (!root.select('.svg-container').classed('wide')) {
+            this.detectWidth();
+          } else {
+            this.isWideView = true;
+          }
           this.update();
         }},
 
@@ -32,6 +39,38 @@
             .text(year)
 
           this.update();
+        }},
+
+        detectWidth: {value: function() {
+          var root = d3.select(this);
+          var svgMap = root.select('svg.county.map');
+          var svgContainer = root.select('.svg-container');
+          var legendContainer = root.select('.legend-container');
+
+          if (!svgMap.empty()) {
+            var svgMapBBox = svgMap.node().getBBox();
+            var svgDimensions = svgMap.attr('viewBox');
+
+            if (svgDimensions) {
+              svgDimensions = svgDimensions.split(' ');
+              if (svgDimensions.length === 4) {
+                var width = +svgDimensions[2];
+                var height = +svgDimensions[3];
+                // if a map's width is more than 50% a map's height
+                // then make it a wide view
+                if (width > height * 1.5) {
+                  this.isWideView = true;
+                  if (!svgContainer.empty()) {
+                    svgContainer.classed('wide', true);
+                  }
+
+                  if (!legendContainer.empty()) {
+                    legendContainer.classed('wide', true);
+                  }
+                }
+              }
+            }
+          }
         }},
 
         update: {value: function() {
@@ -70,6 +109,27 @@
             ? eiti.format.dollars
             : eiti.format.si;
 
+          var settings = {
+            horizontal : {
+              width: 50,
+              height: 12,
+              padding: 6
+            },
+            narrowHorizontal: {
+              width: 70,
+              height: 12,
+              padding: 10
+            },
+            vertical: {
+              width: 15,
+              height: 15,
+              padding: 6
+            }
+          },
+          shapeWidth,
+          shapeHeight,
+          shapePadding;
+
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
             return console.error(
@@ -91,7 +151,6 @@
           }
 
           // FIXME: do something with divergent scales??
-
           var scale = d3.scale[type]()
             .domain(domain)
             .range(colors);
@@ -119,17 +178,42 @@
             return values.filter(uniq);
           }
 
+
+          var _steps = d3.range(0, 9)
+
+          // find which steps are represented in the map
+          var uniqueSteps = getUnique(marks.data(), _steps, domain);
+          var narrowHorizontal = uniqueSteps.length < 6;
+
+          var orient = this.isWideView
+            ? 'horizontal'
+            : 'vertical';
+
+          if (narrowHorizontal && orient === 'horizontal') {
+            shapeWidth = settings.narrowHorizontal.width;
+            shapeHeight = settings.narrowHorizontal.height;
+            shapePadding = settings.narrowHorizontal.padding;
+          } else {
+            shapeWidth = settings[orient].width;
+            shapeHeight = settings[orient].height;
+            shapePadding = settings[orient].padding;
+          }
+
           var svgLegend = d3.select(this)
-            .select('.legend-svg');
+            .select('.legend-svg')
+            .classed(orient, true);
 
           if (!svgLegend.empty()) {
 
             var legend = d3.legend.color()
               .labelFormat(legendFormat)
               .useClass(false)
-              .ascending(true)
+              .orient(orient)
+              .shapeWidth(shapeWidth)
+              .shapeHeight(shapeHeight)
               .labelDelimiter(legendDelimiter)
-              .shapePadding(6)
+              .shapePadding(shapePadding)
+              .labelAlign("start")
               .scale(scale);
 
 
@@ -141,16 +225,13 @@
 
             legendScale.call(legend);
 
-            // reverse because the scale is in ascending order
-            var _steps = d3.range(0, 9).reverse();
-
-            // find which steps are represented in the map
-            var uniqueSteps = getUnique(marks.data(), _steps, domain);
-
             // start consolidate (translate) visible cells
             var cells = svgLegend.selectAll('.cell');
             var cellHeight = legend.shapeHeight() + legend.shapePadding();
+            var cellWidth = legend.shapeWidth() + legend.shapePadding();
             var count = 0;
+
+            var that = this;
             cells.each(function(cell, i) {
               var present = uniqueSteps.indexOf(i) > -1;
 
@@ -159,12 +240,19 @@
                 cells[0][i].setAttribute('aria-hidden', true);
                 count++;
               } else  {
+                if (that.isWideView) {
+                  var translateWidth = (i * cellWidth) - (count * cellWidth);
+                  cells[0][i].setAttribute('transform',
+                    'translate(' + translateWidth + ', 0)');
+                  cells[0][i].setAttribute('aria-hidden', false);
+                } else {
+                  // trim spacing between swatches that are visible
+                  var translateHeight = (i * cellHeight) - (count * cellHeight);
+                  cells[0][i].setAttribute('transform',
+                    'translate(0,' + translateHeight + ')');
+                  cells[0][i].setAttribute('aria-hidden', false);
+                }
 
-                // trim spacing between swatches that are visible
-                var translateHeight = (i * cellHeight) - (count * cellHeight);
-                cells[0][i].setAttribute('transform',
-                  'translate(0,' + translateHeight + ')');
-                cells[0][i].setAttribute('aria-hidden', false);
               }
             });
             // end consolidation

@@ -6,6 +6,8 @@ FIPS: '02'
 case_study: true
 opt_in: true
 priority: true
+
+locality_name: 'Borough or Census Area'
 ---
 * The [Alaska Department of Natural Resources Division of Oil and Gas](http://dog.dnr.alaska.gov/index.htm) is responsible for leasing state lands for oil, gas, and geothermal extraction. Its major functions include evaluating oil and gas resources, fielding and issuing exploration permits, conducting royalty audits, and negotiating contracts.
   - [Oil and gas statutes and regulations](http://dog.dnr.alaska.gov/AboutUs/OGStatutes.htm)

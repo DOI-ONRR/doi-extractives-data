@@ -4,7 +4,7 @@ layout: default
 permalink: /explore/corporate-income-tax/
 ---
 
-<div class="container-outer container-margin">
+<div class="container-page-wrapper container-margin">
 
   <article class="container-left-7">
 

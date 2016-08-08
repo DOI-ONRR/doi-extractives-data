@@ -4,6 +4,7 @@ import {
 	compose,
 	contains,
 	defaultTo,
+	equals,
 	find,
 	flip,
 	has,
@@ -36,6 +37,21 @@ const isOilOrGas = flip( contains )( [
 	'Oil & Gas (Non-Royalty)'
 ] );
 
+// Takes a ( category, data )
+// gets data[ category ] || 0
+const getRevenue = propOr( 0 );
+
+const pullOut = name => compose(
+	last,
+	defaultTo( [ 0, {} ] ),
+	find( compose( equals( name ), head ) )
+);
+
+const totalRevenues = compose(
+	reduce( mergeWith( add ), {} ),
+	map( last )
+);
+
 export class OilGasTable extends Component {
 	render() {
 		const {
@@ -51,11 +67,9 @@ export class OilGasTable extends Component {
 			rawData
 		);
 
-		const oilGas = reduce( mergeWith( add ), {}, map( last, oilGasGroup ) );
-		const oil = last( defaultTo( [0, {}], find( d => d[0] === 'Oil', rawData ) ) );
-		const gas = last( defaultTo( [0, {}], find( d => d[0] === 'Gas', rawData ) ) );
-
-		const getRevenue = ( category, data ) => propOr( 0, category, data );
+		const oilGas = totalRevenues( oilGasGroup );
+		const oil = pullOut( 'Oil' )( rawData );
+		const gas = pullOut( 'Gas' )( rawData );
 
 		return (
 			<tbody id={ `revenue-${ slugify( title ) }` }>

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
 	any,
-	clone,
 	compose,
 	defaultTo,
 	filter,
@@ -28,10 +27,10 @@ import {
 	allRevenueTotals
 } from '../react/revenue-table-helpers';
 
-const revenueYear = clone( window.revenueYear );
-const revenueData = clone( window.revenueData );
-const commodityData = clone( window.commodityData );
-const commodityNames = clone( window.commodityNames );
+const revenueYear = window.revenueYear;
+const revenueData = window.revenueData;
+const commodityData = window.commodityData;
+const commodityNames = window.commodityNames;
 
 const commodityTypes = [
 	'oilgas',

@@ -1,56 +1,31 @@
 import React, { Component, PropTypes } from 'react';
 import {
-	add,
 	compose,
 	contains,
-	defaultTo,
-	equals,
-	find,
 	flip,
-	has,
 	head,
-	last,
 	map,
 	max,
-	mergeWith,
 	partition,
-	propOr,
-	reduce,
 	values
 } from 'ramda';
 
 import localize from './localize';
 import { slugify } from './utils';
+import {
+	getRevenue,
+	pullOut,
+	revenueTotals,
+	revenueTypes
+} from './revenue-table-helpers';
 
 import FilledBar from './filled-bar';
-
-const revenueTypes = [
-	'Bonus',
-	'Rents',
-	'Royalties',
-	'Other Revenues'
-];
 
 const isOilOrGas = flip( contains )( [
 	'Gas',
 	'Oil',
 	'Oil & Gas (Non-Royalty)'
 ] );
-
-// Takes a ( category, data )
-// gets data[ category ] || 0
-const getRevenue = propOr( 0 );
-
-const pullOut = name => compose(
-	last,
-	defaultTo( [ 0, {} ] ),
-	find( compose( equals( name ), head ) )
-);
-
-const totalRevenues = compose(
-	reduce( mergeWith( add ), {} ),
-	map( last )
-);
 
 export const OilGasTable = props => {
 	const {
@@ -66,7 +41,7 @@ export const OilGasTable = props => {
 		rawData
 	);
 
-	const oilGas = totalRevenues( oilGasGroup );
+	const oilGas = revenueTotals( oilGasGroup );
 	const oil = pullOut( 'Oil' )( rawData );
 	const gas = pullOut( 'Gas' )( rawData );
 

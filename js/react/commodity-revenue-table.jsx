@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
 import {
-	has,
-	last,
 	map,
-	max,
-	propOr,
-	reduce
+	max
 } from 'ramda';
 
 import localize from './localize';
 import { slugify } from './utils';
+import {
+	getRevenue,
+	revenueTypes
+} from './revenue-table-helpers';
 
 import FilledBar from './filled-bar';
-
-const revenueTypes = [
-	'Bonus',
-	'Rents',
-	'Royalties',
-	'Other Revenues'
-];
 
 export const CommodityRevenueTable = props => {
 	const {
@@ -28,8 +21,6 @@ export const CommodityRevenueTable = props => {
 		data,
 		maxRevenue
 	} = props;
-
-	const getRevenue = ( category, data ) => propOr( 0, category, data );
 
 	return (
 		<tbody id={ `revenue-${ slugify( title ) }` }>

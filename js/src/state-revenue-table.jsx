@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-	add,
 	any,
 	clone,
 	compose,
 	defaultTo,
 	filter,
-	flatten,
 	flip,
 	fromPairs,
 	has,
@@ -16,18 +14,19 @@ import {
 	lt,
 	map,
 	max,
-	mergeWith,
 	pathOr,
 	pick,
 	propOr,
 	reduce,
-	sum,
 	toPairs,
 	values
 } from 'ramda';
 
 import CommodityTable from '../react/commodity-revenue-table';
 import OilGasTable from '../react/oil-gas-table';
+import {
+	allRevenueTotals
+} from '../react/revenue-table-helpers';
 
 const revenueYear = clone( window.revenueYear );
 const revenueData = clone( window.revenueData );
@@ -69,15 +68,6 @@ const getCommodityValues = type => map( compose(
 	pick( [ revenueYear ] )
 ), propOr( {}, type, revenueData ) );
 
-const computeTotals = compose(
-	reduce( mergeWith( add ), {} ),
-	values,
-	map( compose(
-		reduce( mergeWith( add ), {} ),
-		map( last )
-	) )
-);
-
 const stateRevenueTable = () => {
 	const types = compose (
 		filter( flip( has )( revenueData ) ),
@@ -93,7 +83,7 @@ const stateRevenueTable = () => {
 
 	const commoditiesData = map( compose( typesData, types ), commodityData );
 
-	const totals = computeTotals( commoditiesData );
+	const totals = allRevenueTotals( commoditiesData );
 	const maxRevenue = reduce( max, 0, values( totals ) );
 
 	const myTypes = map( compose(

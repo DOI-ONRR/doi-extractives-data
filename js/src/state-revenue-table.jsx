@@ -6,15 +6,20 @@ import {
 	compose,
 	defaultTo,
 	filter,
+	flatten,
 	flip,
 	fromPairs,
 	has,
 	head,
+	last,
 	lt,
 	map,
+	max,
 	pathOr,
 	pick,
 	propOr,
+	reduce,
+	sum,
 	toPairs,
 	values
 } from 'ramda';
@@ -82,6 +87,18 @@ const stateRevenueTable = () => {
 	const commoditiesData = compose(
 		map( compose( typesData, types ) )
 	)( commodityData );
+	console.log( commoditiesData );
+
+	const maxRevenue = compose(
+		sum,
+		flatten,
+		values,
+		map( compose(
+			map( propOr( 0, 'All' ) ),
+			map( last )
+		) )
+	)( commoditiesData );
+	console.log( maxRevenue );
 
 	ReactDOM.render(
 		<table className="revenue table-arrow_box">
@@ -100,6 +117,7 @@ const stateRevenueTable = () => {
 					title={ pathOr( commodityData[ type ].name, [ type, 'label' ], categoryData ) }
 					icons={ pathOr( [], [ type, 'icons' ], categoryData ) }
 					data={ commoditiesData[ type ] }
+					maxRevenue={ maxRevenue }
 				/>
 			) ) }
 		</table>,

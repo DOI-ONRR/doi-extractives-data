@@ -28,7 +28,8 @@ export class CommodityRevenueTable extends Component {
 			title,
 			type,
 			icons,
-			data
+			data,
+			maxRevenue
 		} = this.props;
 		console.log( this.props );
 
@@ -38,8 +39,6 @@ export class CommodityRevenueTable extends Component {
 			.concat( 'padded' )
 			.map( icon => `icon-${ icon }` )
 			.join( ' ' );
-
-		const maxRevenue = reduce( max, 0, map( propOr( 0, 'All' ), map( last, data ) ) );
 
 		return (
 			<tbody id={ `revenue-${ slugify( title ) }` }>

@@ -24,6 +24,7 @@ export class FilledBar extends Component {
 		const {
 			backColor,
 			fillColor,
+			negativeFillColor,
 			values,
 			maxValue,
 			height,
@@ -58,7 +59,10 @@ export class FilledBar extends Component {
 						.hexString();
 					ctx.fillRect( offset + step, 0, barWidth, height );
 				} else {
-					ctx.fillStyle = '#c00';
+					ctx.fillStyle = Color( negativeFillColor )
+						.lighten( 0.5 * step )
+						.desaturate( 0.5 * step )
+						.hexString();
 					ctx.fillRect( offset - step + width - barWidth, 0, barWidth, height );
 				}
 			} );
@@ -85,6 +89,7 @@ FilledBar.displayName = 'FilledBar';
 FilledBar.propTypes = {
 	backColor: PropTypes.string,
 	fillColor: PropTypes.string,
+	negativeFillColor: PropTypes.string,
 	values: PropTypes.arrayOf( PropTypes.number ).isRequired,
 	maxValue: PropTypes.number.isRequired,
 	height: PropTypes.number.isRequired,
@@ -93,7 +98,8 @@ FilledBar.propTypes = {
 
 FilledBar.defaultProps = {
 	backColor: '#ebebeb',
-	fillColor: '#2e4e24'
+	fillColor: '#2e4e24',
+	negativeFillColor: '#c00'
 };
 
 export default FilledBar;

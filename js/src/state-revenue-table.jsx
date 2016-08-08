@@ -108,7 +108,8 @@ const stateRevenueTable = () => {
 	), commodityData );
 
 	const availableTypes = commodityTypes
-		.filter( type => propOr( false, type, myTypes ) );
+		.filter( type => propOr( false, type, myTypes ) )
+		.filter( type => commoditiesData[ type ].length );
 
 	ReactDOM.render(
 		<table className="revenue table-arrow_box">

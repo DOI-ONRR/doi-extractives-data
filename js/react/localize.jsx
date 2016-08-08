@@ -6,11 +6,9 @@ export const asCurrency = n => n.toLocaleString( 'en-US', {
 	maximumFractionDigits: 0
 } );
 
-export const Localize = Wrapped => class extends Component {
-	render() {
-		return <Wrapped { ...this.props } { ...{ asCurrency } } />;
-	}
-};
+export const Localize = Wrapped => props => (
+	<Wrapped { ...props } { ...{ asCurrency } } />
+);
 
 Localize.displayName = 'Localize';
 

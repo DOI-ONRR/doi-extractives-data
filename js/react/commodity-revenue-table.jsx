@@ -55,21 +55,19 @@ export class CommodityRevenueTable extends Component {
 							</a><br />
 							<strong>{ asCurrency( getRevenue( 'All', typeData ) ) }</strong>
 						</th>
-						{ revenueTypes
-							.map( type => (
-								<td key={ `revenue-type-type-${ slugify( type ) }` } >
-									<span className="text">
-										<FilledBar
-											height={ 15 }
-											width={ 122 }
-											values={ [ getRevenue( type, typeData ) ] }
-											maxValue={ maxRevenue }
-										/><br />
-										{ asCurrency( getRevenue( type, typeData ) ) }
-									</span>
-								</td>
-							) )
-						}
+						{ revenueTypes.map( type => (
+							<td key={ `revenue-type-type-${ slugify( type ) }` } >
+								<span className="text">
+									<FilledBar
+										height={ 15 }
+										width={ 122 }
+										values={ [ getRevenue( type, typeData ) ] }
+										maxValue={ maxRevenue }
+									/><br />
+									{ asCurrency( getRevenue( type, typeData ) ) }
+								</span>
+							</td>
+						) ) }
 					</tr>
 				) ) }
 			</tbody>

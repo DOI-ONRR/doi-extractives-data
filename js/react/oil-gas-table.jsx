@@ -92,39 +92,37 @@ export class OilGasTable extends Component {
 					</a><br />
 					<strong>{ asCurrency( getRevenue( 'All', oilGas ) ) }</strong>
 				</th>
-				{ revenueTypes
-					.map( type => (
-						<td key={ `revenue-type-${ slugify( type ) }` }>
-							<span className="text">
-								<FilledBar
-									height={ 15 }
-									width={ 122 }
-									values={ ( getRevenue( type, oil ) > 0 || getRevenue( type, gas ) > 0 )
-										? [
-											getRevenue( type, oil ),
-											getRevenue( type, gas )
-										  ]
-										: [ getRevenue( type, oilGas ) ]
-									}
-									maxValue={ maxRevenue }
-								/><br />
-								{ getRevenue( type, oil ) > 0 &&
-									<div><strong>Oil</strong> { asCurrency( getRevenue( type, oil ) ) }</div>
-								}
-								{ getRevenue( type, gas ) > 0 &&
-									<div><strong>Gas</strong> { asCurrency( getRevenue( type, gas ) ) }</div>
-								}
-								{ ( getRevenue( type, oil ) <= 0 && getRevenue( type, gas ) <= 0) &&
-									asCurrency(
-										getRevenue( type, oilGas ) -
-										getRevenue( type, oil ) -
+				{ revenueTypes.map( type => (
+					<td key={ `revenue-type-${ slugify( type ) }` }>
+						<span className="text">
+							<FilledBar
+								height={ 15 }
+								width={ 122 }
+								values={ ( getRevenue( type, oil ) > 0 || getRevenue( type, gas ) > 0 )
+									? [
+										getRevenue( type, oil ),
 										getRevenue( type, gas )
-									)
+									  ]
+									: [ getRevenue( type, oilGas ) ]
 								}
-							</span>
-						</td>
-					) )
-				}
+								maxValue={ maxRevenue }
+							/><br />
+							{ getRevenue( type, oil ) > 0 &&
+								<div><strong>Oil</strong> { asCurrency( getRevenue( type, oil ) ) }</div>
+							}
+							{ getRevenue( type, gas ) > 0 &&
+								<div><strong>Gas</strong> { asCurrency( getRevenue( type, gas ) ) }</div>
+							}
+							{ ( getRevenue( type, oil ) <= 0 && getRevenue( type, gas ) <= 0) &&
+								asCurrency(
+									getRevenue( type, oilGas ) -
+									getRevenue( type, oil ) -
+									getRevenue( type, gas )
+								)
+							}
+						</span>
+					</td>
+				) ) }
 			</tr>
 			{ other.map( ( [ type, typeData ] ) => (
 				<tr key={ `revenue-type-${ slugify( type ) }` }>
@@ -134,21 +132,19 @@ export class OilGasTable extends Component {
 						</a><br />
 						<strong>{ asCurrency( getRevenue( 'All', typeData ) ) }</strong>
 					</th>
-					{ revenueTypes
-						.map( type => (
-							<td key={ `revenue-type-type-${ slugify( type ) }` } >
-									<span className="text">
-										<FilledBar
-											height={ 15 }
-											width={ 122 }
-											values={ [ getRevenue( type, typeData ) ] }
-											maxValue={ maxRevenue }
-										/><br />
-										{ asCurrency( getRevenue( type, typeData ) ) }
-									</span>
-							</td>
-						) )
-					}
+					{ revenueTypes.map( type => (
+						<td key={ `revenue-type-type-${ slugify( type ) }` } >
+								<span className="text">
+									<FilledBar
+										height={ 15 }
+										width={ 122 }
+										values={ [ getRevenue( type, typeData ) ] }
+										maxValue={ maxRevenue }
+									/><br />
+									{ asCurrency( getRevenue( type, typeData ) ) }
+								</span>
+						</td>
+					) ) }
 				</tr>
 			) ) }
 			</tbody>

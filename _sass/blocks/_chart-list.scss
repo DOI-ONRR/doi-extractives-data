@@ -168,11 +168,26 @@
 
     .svg-container {
       @include span-columns(8);
+
+      &.wide {
+        @include span-columns(12);
+        @include omega();
+      }
     }
 
     .legend-container {
       @include span-columns(4);
       @include omega();
+
+      &.wide {
+        @include span-columns(12);
+        height: 130px;
+        padding: 0;
+
+        .legend-svg {
+          width: 100%;
+        }
+      }
     }
 
     .legend-container,

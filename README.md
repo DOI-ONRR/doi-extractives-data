@@ -59,12 +59,36 @@ npm run watch
 ```
 
 ## Tests
+
+### JavaScript
+
 The JavaScript tests currently only cover a small portion of data processing utilities. You can run them with [Node]:
 
 ```sh
 npm install --dev
 npm test
 ```
+
+### Jekyll filters
+We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. These filters are written in ruby and are being tested inline using [rubydoctest](https://github.com/tslocke/rubydoctest) for the [eiti-data.rb](_plugins/eiti-data.rb) and [eiti-format.rb](_plugins/eiti-format.rb).
+
+As the following example demonstrates, test cases are written in comment blocks immediately preceding a testable function. The test description is on the first line, with an empty comment block below it. Use `>>` syntax to invoke a test case, and follow it with hash rocket syntax, `=>`, to define the expected outcome of the invocation.
+
+Inline unit test for `to_i`:
+
+```
+# convert (or map) a value to integers
+#
+# >> EITI::Data.to_i('5')
+# => 5
+# >> EITI::Data.to_i(['1', '2'])
+# => [1, 2]
+def to_i(x)
+  x.is_a?(Array) ? x.map(&:to_i) : x.to_i
+end
+module_function :to_i
+```
+
 
 ## Code Style
 We use [Hound CI](https://houndci.com/) to enforce SCSS and JavaScript

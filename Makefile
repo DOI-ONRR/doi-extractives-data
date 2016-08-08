@@ -43,7 +43,7 @@ site-data: \
 	data/state_all_production.yml \
 	data/national_all_production.yml \
 	data/federal_county_production \
-	data/state_disbursements.yml \
+	data/federal_disbursements.yml \
 	data/national_disbursements.yml \
 	data/state_exports.yml \
 	data/national_exports.yml \
@@ -249,19 +249,19 @@ data/county_revenue:
 			-c _meta/county_revenue.yml \
 			-o '_$@/{state}.yml'
 
-data/state_disbursements.yml:
+data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, source, fund, year, \
 		  ROUND(dollars, 2) AS dollars \
-		FROM state_disbursements \
+		FROM federal_disbursements \
 		WHERE \
 		  LENGTH(state) = 2 AND \
 		  source IS NOT NULL AND \
 		  dollars > 0 \
 		ORDER BY state, source, fund, year" \
 		| $(nestly) --if ndjson \
-			-c _meta/state_disbursements.yml \
+			-c _meta/federal_disbursements.yml \
 			-o _$@
 
 data/national_disbursements.yml:
@@ -269,7 +269,7 @@ data/national_disbursements.yml:
 		SELECT \
 			source, fund, year, \
 			ROUND(dollars, 2) AS dollars \
-		FROM state_disbursements \
+		FROM federal_disbursements \
 		WHERE \
 			state IS NULL AND \
 			source IS NOT NULL AND \
@@ -578,19 +578,19 @@ tables/exports: data/state/exports-by-industry.tsv
 	$(call load-table,$^,exports)
 
 tables/disbursements: \
-	tables/state_disbursements \
+	tables/federal_disbursements \
 	tables/disbursements_historic_preservation
-	@$(call load-sql,data/db/rollup-state-disbursements.sql)
+	@$(call load-sql,data/disbursements/rollup.sql)
 
-tables/state_disbursements: data/_input/onrr/disbursements/state.tsv
-	@$(call drop-table,state_disbursements)
-	$(tito) -r tsv --map ./data/transform/state_disbursements.js $^ \
-		| $(tables) -t ndjson -n state_disbursements
+tables/federal_disbursements: data/disbursements/federal.tsv
+	@$(call drop-table,federal_disbursements)
+	$(tito) -r tsv --map ./data/disbursements/transform-federal.js $^ \
+		| $(tables) -t ndjson -n federal_disbursements
 
-tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv
+tables/disbursements_historic_preservation: data/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
-		--map ./data/transform/disbursements_historic_preservation.js \
+		--map ./data/disbursements/transform-hpf.js \
 		 $^ \
 		| $(tables) -t ndjson -n disbursements_historic_preservation
 

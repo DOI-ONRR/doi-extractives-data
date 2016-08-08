@@ -441,7 +441,7 @@ data/opt_in_state_revenues:
 	$(query) --format ndjson " \
 		SELECT \
 			state, year, source, dest, dollars \
-		FROM opt_in_state_revenue \
+		FROM opt_in_state_revenues \
 		ORDER BY state, year, dollars DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/opt_in_state_revenues.yml \
@@ -461,7 +461,7 @@ $(db): \
 	tables/exports \
 	tables/disbursements \
 	tables/land_stats \
-	tables/opt_in_state_revenue
+	tables/opt_in_state_revenues
 
 tables/geo: \
 	tables/states \
@@ -600,12 +600,12 @@ tables/land_stats: data/land-stats/land-stats.tsv
 		| $(tables) -t ndjson -n land_stats
 
 
-tables/opt_in_state_revenue: data/state/opt-in/
-	@$(call drop-table,opt_in_state_revenue)
+tables/opt_in_state_revenues: data/state/opt-in/
+	@$(call drop-table,opt_in_state_revenues)
 	for state_dir in $^??; do \
 		STATE=$${state_dir##$^} \
 		$(tito) --multiple --map ./data/state/opt-in/revenue-transform.js \
 			-r tsv $${state_dir}/revenue-distribution.tsv > $${state_dir}/revenue-distribution.ndjson; \
-		$(tables) -t ndjson -n opt_in_state_revenue -i $${state_dir}/revenue-distribution.ndjson; \
+		$(tables) -t ndjson -n opt_in_state_revenues -i $${state_dir}/revenue-distribution.ndjson; \
 		rm $${state_dir}/revenue-distribution.ndjson; \
 	done

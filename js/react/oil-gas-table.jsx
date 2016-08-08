@@ -46,9 +46,10 @@ export class OilGasTable extends Component {
 			maxRevenue
 		} = this.props;
 
-		const [ oilGasGroup, other ] = compose(
-			partition( compose( isOilOrGas, head ) )
-		)( rawData );
+		const [ oilGasGroup, other ] = partition(
+			compose( isOilOrGas, head ),
+			rawData
+		);
 
 		const oilGas = reduce( mergeWith( add ), {}, map( last, oilGasGroup ) );
 		const oil = last( defaultTo( [0, {}], find( d => d[0] === 'Oil', rawData ) ) );

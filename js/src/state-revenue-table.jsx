@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
+	add,
 	any,
 	clone,
 	compose,
@@ -15,6 +16,7 @@ import {
 	lt,
 	map,
 	max,
+	mergeWith,
 	pathOr,
 	pick,
 	propOr,
@@ -38,8 +40,7 @@ const commodityTypes = [
 	'oilgas',
 	'coal',
 	'renewables',
-	'minerals',
-	'other'
+	'minerals'
 ];
 
 const categoryData = {
@@ -70,6 +71,15 @@ const getCommodityValues = type => map( compose(
 	pick( [ revenueYear ] )
 ), propOr( {}, type, revenueData ) );
 
+const computeTotals = compose(
+	reduce( mergeWith( add ), {} ),
+	values,
+	map( compose(
+		reduce( mergeWith( add ), {} ),
+		map( last )
+	) )
+);
+
 const stateRevenueTable = () => {
 	const oilgas = propOr( {}, 'oilgas', commodityData );
 	const types = compose (
@@ -87,18 +97,17 @@ const stateRevenueTable = () => {
 	const commoditiesData = compose(
 		map( compose( typesData, types ) )
 	)( commodityData );
-	console.log( commoditiesData );
 
-	const maxRevenue = compose(
-		sum,
-		flatten,
-		values,
-		map( compose(
-			map( propOr( 0, 'All' ) ),
-			map( last )
-		) )
-	)( commoditiesData );
-	console.log( maxRevenue );
+	const totals = computeTotals( commoditiesData );
+	const maxRevenue = propOr( 0, 'All', totals );
+
+	const myTypes = map( compose(
+		a => !! a.length,
+		types
+	), commodityData );
+
+	const availableTypes = commodityTypes
+		.filter( type => propOr( false, type, myTypes ) );
 
 	ReactDOM.render(
 		<table className="revenue table-arrow_box">
@@ -111,7 +120,7 @@ const stateRevenueTable = () => {
 				<th><span>Other revenue</span></th>
 			</tr>
 			</thead>
-			{ commodityTypes.map( type => (
+			{ availableTypes.map( type => (
 				<CommodityTable
 					key={ type }
 					title={ pathOr( commodityData[ type ].name, [ type, 'label' ], categoryData ) }
@@ -120,6 +129,13 @@ const stateRevenueTable = () => {
 					maxRevenue={ maxRevenue }
 				/>
 			) ) }
+			<CommodityTable
+				key="All"
+				title="All Commodities"
+				icons={ availableTypes.map( type => pathOr( [], [ type, 'icons' ], categoryData ) )  }
+				data={ [ [ 'All commodities', totals ] ] }
+				maxRevenue={ maxRevenue }
+			/>
 		</table>,
 		document.getElementById( 'state-revenue-table-react' )
 	);

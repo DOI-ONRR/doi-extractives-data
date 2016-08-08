@@ -35,17 +35,18 @@ export class CommodityRevenueTable extends Component {
 
 		const getRevenue = ( category, data ) => propOr( 0, category, data );
 
-		const iconClasses = icons
-			.concat( 'padded' )
-			.map( icon => `icon-${ icon }` )
-			.join( ' ' );
-
 		return (
 			<tbody id={ `revenue-${ slugify( title ) }` }>
 				<tr className="table-arrow_box-category">
 					<td colSpan="5">
-						{ title + ' ' }
-						<icon className={ iconClasses } />
+						{ title }
+						{ icons.map( ( className, index ) => (
+							<icon
+								key={ index }
+								className={ `icon-${ className }` }
+								style={ { marginLeft: '4px' } }
+							/>
+						) ) }
 					</td>
 				</tr>
 				{ data.map( ( [ type, typeData ] ) => (

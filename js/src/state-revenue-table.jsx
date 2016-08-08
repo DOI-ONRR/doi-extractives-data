@@ -38,9 +38,10 @@ const commodityTypes = [
 ];
 
 const categoryData = {
-	oilgas: {
-		icons: [ 'oil' ]
-	}
+	oilgas: { icons: [ 'oil' ] },
+	coal: { icons: [ 'coal' ] },
+	minerals: { icons: [ 'minerals' ] },
+	geothermal: { icons: [ 'geo' ] }
 };
 
 const mapCommodityNames = name => propOr( name, name, commodityNames );
@@ -57,15 +58,18 @@ const stateRevenueTable = () => {
 	const types = compose (
 		filter( flip( has )( revenueData ) ),
 		propOr( [], 'commodities' )
-	)( oilgas );
+	);
 
 	const typesData = compose(
-		map( ( [ name, data ] ) => [ mapCommodityNames( name ), data ] ),
 		toPairs,
 		filter( compose( any( lt( 0 ) ), values ) ),
 		fromPairs,
-		map( type => [ type, getCommodityValues( type ) ] )
-	)( types );
+		map( type => [ mapCommodityNames( type ), getCommodityValues( type ) ] )
+	);
+
+	const commoditiesData = compose(
+		map( compose( typesData, types ) )
+	)( commodityData );
 
 	ReactDOM.render(
 		<table className="revenue table-arrow_box">
@@ -78,12 +82,14 @@ const stateRevenueTable = () => {
 				<th><span>Other revenue</span></th>
 			</tr>
 			</thead>
-			<CommodityTable
-				key={ oilgas.name }
-				title={ oilgas.name }
-				icons={ categoryData.oilgas.icons }
-				data={ typesData }
-			/>
+			{ commodityTypes.map( type => (
+				<CommodityTable
+					key={ type }
+					title={ commodityData[ type ].name }
+					icons={ pathOr( [], [ type, 'icons' ], categoryData ) }
+					data={ commoditiesData[ type ] }
+				/>
+			) ) }
 		</table>,
 		document.getElementById( 'state-revenue-table-react' )
 	);

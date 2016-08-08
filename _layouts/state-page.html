@@ -78,13 +78,6 @@ nav_items:
 
     {% include location/section-revenue.html %}
 
-    <!--
-    Disbursements section: uncomment and add back to the nav to begin work again.
-    {% comment %}
-    {% include location/section-disbursements.html %}
-    {% endcomment %}
-    -->
-
     {% unless page.offshore == true %}
     <section id="economic-impact">
       <h2>Economic impact</h2>
@@ -97,8 +90,14 @@ nav_items:
     </section>
     {% endunless %}
 
+    <section id="federal-disbursements" class="disbursements">
+      <h2>Federal Disbursements</h2>
+
+      {% include location/section-disbursements.html %}
+    </section>
+
     {% if page.opt_in == true %}
-    <section id="state-disbursements">
+    <section id="state-disbursements" class="disbursements">
       <h2>State Disbursements</h2>
 
       {% include location/opt-in/state-revenues.html location_id=state_id %}

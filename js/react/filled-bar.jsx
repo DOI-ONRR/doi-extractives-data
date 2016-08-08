@@ -47,13 +47,13 @@ export class FilledBar extends Component {
 		ctx.fillRect( 0, 0, width, height );
 
 		sort( (a, b) => b - a, values )
+			.filter( v => 0 !== v )
 			.reduce( (t, c) => {
 				const [ , prevWidth, offset ] = last( t ) || [ 0, 0, 0 ];
 				const barWidth = Math.max( 1, width * ( Math.abs( c ) / ( maxValue + Number.EPSILON ) ) );
 
 				return [ ...t, [ c, barWidth, offset + prevWidth ] ];
 			}, [] )
-			.filter( ( [ value, , ] ) => 0 !== value )
 			.forEach( ( [ value, barWidth, offset ], step ) => {
 				if ( value > 0 ) {
 					ctx.fillStyle = stepColor( fillColor, step );

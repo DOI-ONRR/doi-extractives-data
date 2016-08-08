@@ -44,7 +44,6 @@ site-data: \
 	data/national_all_production.yml \
 	data/federal_county_production \
 	data/federal_disbursements.yml \
-	data/national_disbursements.yml \
 	data/state_exports.yml \
 	data/national_exports.yml \
 	data/state_federal_production.yml \
@@ -252,32 +251,15 @@ data/county_revenue:
 data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, source, fund, year, \
+		  region, source, fund, year, \
 		  ROUND(dollars, 2) AS dollars \
 		FROM federal_disbursements \
 		WHERE \
-		  LENGTH(state) = 2 AND \
-		  source IS NOT NULL AND \
 		  dollars > 0 \
-		ORDER BY state, source, fund, year" \
+		ORDER BY dollars DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/federal_disbursements.yml \
 			-o _$@
-
-data/national_disbursements.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			source, fund, year, \
-			ROUND(dollars, 2) AS dollars \
-		FROM federal_disbursements \
-		WHERE \
-			state IS NULL AND \
-			source IS NOT NULL AND \
-			dollars > 0 \
-		ORDER BY source, fund, year" \
-	  | $(nestly) --if ndjson \
-		  -c _meta/national_disbursements.yml \
-		  -o _$@
 
 data/state_federal_production.yml:
 	$(query) --format ndjson " \

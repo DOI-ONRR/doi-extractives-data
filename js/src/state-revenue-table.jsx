@@ -91,9 +91,7 @@ const stateRevenueTable = () => {
 		map( type => [ mapCommodityNames( type ), getCommodityValues( type ) ] )
 	);
 
-	const commoditiesData = compose(
-		map( compose( typesData, types ) )
-	)( commodityData );
+	const commoditiesData = map( compose( typesData, types ), commodityData );
 
 	const totals = computeTotals( commoditiesData );
 	const maxRevenue = reduce( max, 0, values( totals ) );

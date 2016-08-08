@@ -18,15 +18,10 @@
   margin-top: $base-padding;
   width: 100%;
 
-  @include respond-to(small-up) {
+/*  @include respond-to(small-up) {
     width: 80%;
-  }
+  }*/
 
-}
-
-.case_studies_content-graph-caption {
-  font-weight: $weight-bold;
-  padding-top: $base-padding;
 }
 
 .case_studies_content-heading {

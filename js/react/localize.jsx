@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 export const asCurrency = n => n.toLocaleString( 'en-US', {
 	style: 'currency',
 	currency: 'USD',
-	maximumFractionDigits: ( Math.abs( n ) >= 100 || 0 === n ) ? 0 : 2
+	maximumFractionDigits: 0
 } );
 
 export const Localize = Wrapped => class extends Component {

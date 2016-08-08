@@ -52,8 +52,6 @@ Metrics/ModuleLength:
   - spec/**/*
 
 Rails/TimeZone:
-  # The value `strict` means that `Time` should be used with `zone`.
-  # The value `flexible` allows usage of `in_time_zone` instead of `zone`.
   Enabled: true
   EnforcedStyle: flexible
   SupportedStyles:
@@ -61,19 +59,6 @@ Rails/TimeZone:
     - flexible
 
 Style/AlignParameters:
-  # Alignment of parameters in multi-line method calls.
-  #
-  # The `with_first_parameter` style aligns the following lines along the same
-  # column as the first parameter.
-  #
-  #     method_call(a,
-  #                 b)
-  #
-  # The `with_fixed_indentation` style aligns the following lines with one
-  # level of indentation relative to the start of the line with the method call.
-  #
-  #     method_call(a,
-  #       b)
   Description: >-
                  Align the parameters of a method call if they span more
                  than one line.
@@ -82,8 +67,6 @@ Style/AlignParameters:
   SupportedStyles:
     - with_first_parameter
     - with_fixed_indentation
-  # By default, the indentation width from Style/IndentationWidth is used
-  # But it can be overridden by setting this parameter
   IndentationWidth: ~
 
 Style/AndOr:
@@ -109,10 +92,6 @@ Style/DotPosition:
   - leading
   - trailing
 
-# Warn on empty else statements
-# empty - warn only on empty else
-# nil - warn on else with nil in it
-# both - warn on empty else and else with nil in it
 Style/EmptyElse:
   EnforcedStyle: both
   SupportedStyles:
@@ -121,11 +100,7 @@ Style/EmptyElse:
     - both
 
 Style/ExtraSpacing:
-  # When true, allows most uses of extra spacing if the intent is to align
-  # things with the previous or next line, not counting empty lines or comment
-  # lines.
   AllowForAlignment: true
-  # When true, forces the alignment of = in assignments on consecutive lines.
   ForceEqualSignAlignment: false
 
 Style/FrozenStringLiteralComment:
@@ -139,26 +114,12 @@ Style/IfUnlessModifier:
   Enabled: true
   MaxLineLength: 100
 
-# Checks the indentation of the first element in an array literal.
 Style/IndentArray:
-  # The value `special_inside_parentheses` means that array literals with
-  # brackets that have their opening bracket on the same line as a surrounding
-  # opening round parenthesis, shall have their first element indented relative
-  # to the first position inside the parenthesis.
-  #
-  # The value `consistent` means that the indentation of the first element shall
-  # always be relative to the first position of the line where the opening
-  # bracket is.
-  #
-  # The value `align_brackets` means that the indentation of the first element
-  # shall always be relative to the position of the opening bracket.
   EnforcedStyle: special_inside_parentheses
   SupportedStyles:
     - special_inside_parentheses
     - consistent
     - align_brackets
-  # By default, the indentation width from Style/IndentationWidth is used
-  # But it can be overridden by setting this parameter
   IndentationWidth: ~
 
 Style/MultilineOperationIndentation:
@@ -166,8 +127,6 @@ Style/MultilineOperationIndentation:
   SupportedStyles:
     - aligned
     - indented
-  # By default, the indentation width from Style/IndentationWidth is used
-  # But it can be overridden by setting this parameter
   IndentationWidth: ~
 
 Style/SignalException:
@@ -189,10 +148,6 @@ Style/StringLiterals:
   ConsistentQuotesInMultiline: true
 
 Style/TrailingCommaInArguments:
-  # If `comma`, the cop requires a comma after the last argument, but only for
-  # parenthesized method calls where each argument is on its own line.
-  # If `consistent_comma`, the cop requires a comma after the last argument,
-  # for all parenthesized method calls with arguments.
   EnforcedStyleForMultiline: no_comma
   SupportedStyles:
     - comma
@@ -200,10 +155,6 @@ Style/TrailingCommaInArguments:
     - no_comma
 
 Style/TrailingCommaInLiteral:
-  # If `comma`, the cop requires a comma after the last item in an array or
-  # hash, but only when each item is on its own line.
-  # If `consistent_comma`, the cop requires a comma after the last item of all
-  # non-empty array and hash literals.
   EnforcedStyleForMultiline: no_comma
   SupportedStyles:
     - comma

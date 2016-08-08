@@ -5,7 +5,7 @@ permalink: /how-it-works/process-overview/
 ---
 
 <section class="slab-delta">
-	<div class="container-outer container-padded">
+	<div class="container-page-wrapper container-padded">
 
 	  <h5><a href="{{site.baseurl}}/how-it-works/">How It Works</a> /</h5>
 	  <h1>Process Overview</h1>
@@ -32,7 +32,7 @@ permalink: /how-it-works/process-overview/
 
 					<p>BLM and BOEM make long-term plans to identify which federal lands to open for natural resource extraction. BLM and BOEM operate within the laws set by Congress, which specify land uses.</p>
 
-					<p>BLM and BOEM balance energy and economic needs with environmental, community, and other considerations. BLM’s <a href="http://www.blm.gov/wo/st/en/prog/energy/coal_and_non-energy.html">multiple-use planning process for coal extraction</a> and BOEM’s <a href="http://www.boem.gov/five-year-program/">Five-Year Outer Continental Shelf Oil and Gas Leasing Program</a> are examples of how the federal government weighs different public interests.</p>
+					<p>BLM and BOEM balance energy and economic needs with environmental, community, and other considerations. BLM’s <a href="http://www.blm.gov/wo/st/en/prog/energy/coal_and_non-energy.html">multiple-use planning process for coal extraction</a> and BOEM’s <a href="http://www.boem.gov/five-year-program/">Five-Year page-wrapper Continental Shelf Oil and Gas Leasing Program</a> are examples of how the federal government weighs different public interests.</p>
 
 					<p>At this stage, the federal government must often prepare a programmatic EIS in line with the National Environmental Policy Act to estimate the impact of the natural resource extraction program on the environment, and alternatives to the proposed action. The public has many opportunities to engage with and comment on environmental and regulatory reviews.</p>
 

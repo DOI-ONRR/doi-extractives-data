@@ -20,6 +20,11 @@
   border-bottom: 1px solid $mid-gray;
   padding: ($base-padding / 2) $base-padding-large;
   text-align: center;
+
+  @include respond-to(small-to-huge) {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
 }
 
 .banner-left {

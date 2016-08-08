@@ -98,6 +98,12 @@ $standard-padding-extra: 3.125rem; //50px
 $standard-padding-jumbo: 3.8rem;
 $standard-padding-fluffed: 5rem;
 
+// Page padding
+// Use in contexts where the padding/margin
+// of an element would otherwise touch the edge
+// of the screen
+$page-padding: 3vw;
+
 // Link Colors
 $base-link-color: $dark-gray;
 

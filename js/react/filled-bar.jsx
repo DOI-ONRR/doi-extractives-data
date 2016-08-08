@@ -34,8 +34,19 @@ export class FilledBar extends Component {
 		ctx.fillStyle = backColor;
 		ctx.fillRect( 0, 0, width, height );
 
-		ctx.fillStyle = fillColor;
-		ctx.fillRect( 0, 0, width * ( value / maxValue ), height );
+		if ( 0 === value ) {
+			return;
+		}
+
+		const barWidth = Math.max( 1, width * ( Math.abs( value ) / ( maxValue + Number.EPSILON ) ) );
+
+		if ( value > 0 ) {
+			ctx.fillStyle = fillColor;
+			ctx.fillRect( 0, 0, barWidth, height );
+		} else {
+			ctx.fillStyle = '#c00';
+			ctx.fillRect( width - barWidth, 0, width - barWidth, height );
+		}
 	}
 
 	render() {

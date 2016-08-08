@@ -5,6 +5,12 @@ import {
 	sort
 } from 'ramda';
 
+const stepColor = ( color, step ) =>
+	Color( color )
+		.lighten( 0.5 * step )
+		.desaturate( 0.5 * step )
+		.hexString();
+
 export class FilledBar extends Component {
 	constructor( props ) {
 		super( props );
@@ -47,22 +53,13 @@ export class FilledBar extends Component {
 
 				return [ ...t, [ c, barWidth, offset + prevWidth ] ];
 			}, [] )
+			.filter( ( [ value, , ] ) => 0 !== value )
 			.forEach( ( [ value, barWidth, offset ], step ) => {
-				if ( 0 === value ) {
-					return;
-				}
-
 				if ( value > 0 ) {
-					ctx.fillStyle = Color( fillColor )
-						.lighten( 0.5 * step )
-						.desaturate( 0.5 * step )
-						.hexString();
+					ctx.fillStyle = stepColor( fillColor, step );
 					ctx.fillRect( offset + step, 0, barWidth, height );
 				} else {
-					ctx.fillStyle = Color( negativeFillColor )
-						.lighten( 0.5 * step )
-						.desaturate( 0.5 * step )
-						.hexString();
+					ctx.fillStyle = stepColor( negativeFillColor, step );
 					ctx.fillRect( offset - step + width - barWidth, 0, barWidth, height );
 				}
 			} );

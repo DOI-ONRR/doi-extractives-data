@@ -1,9 +1,3 @@
-# This configuration only includes the cops that differ from the Rubocop
-# defaults, which can be found here:
-# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
-# https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml
-# https://github.com/bbatsov/rubocop/blob/master/config/disabled.yml
-
 AllCops:
   Include:
     - '**/Gemfile'

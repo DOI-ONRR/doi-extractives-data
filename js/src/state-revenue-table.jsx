@@ -34,9 +34,6 @@ const revenueData = clone( window.revenueData );
 const commodityData = clone( window.commodityData );
 const commodityNames = clone( window.commodityNames );
 
-console.log( revenueData );
-console.log( commodityData );
-
 const commodityTypes = [
 	'oilgas',
 	'coal',
@@ -82,7 +79,6 @@ const computeTotals = compose(
 );
 
 const stateRevenueTable = () => {
-	const oilgas = propOr( {}, 'oilgas', commodityData );
 	const types = compose (
 		filter( flip( has )( revenueData ) ),
 		propOr( [], 'commodities' )

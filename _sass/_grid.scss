@@ -1,7 +1,7 @@
 @import 'lib/neat/neat-helpers';
 
 $max-width: em(960) !default;
-$max-vw-margins: 960 * 0.06; // 6vw
+$max-vw-margins: 960 * 0.1; // 10vw
 $max-width-huge-px: 960 - $max-vw-margins;
 $max-width-huge: em($max-width-huge-px);
 

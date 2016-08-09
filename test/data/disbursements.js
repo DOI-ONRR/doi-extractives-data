@@ -20,7 +20,7 @@ var load = function(filename, format, done) {
     });
 };
 
-describe('disbursements', function() {
+xdescribe('disbursements', function() {
 
   describe('state rollups', function() {
 

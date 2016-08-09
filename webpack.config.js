@@ -10,6 +10,7 @@ var config = {
     'explore.min': './js/src/explore.js',
     'homepage.min': './js/src/homepage.js',
     'state-pages.min': './js/src/state-pages.js',
+    'state-revenue-table.min': './js/src/state-revenue-table.jsx'
   },
 
   output: {
@@ -18,7 +19,23 @@ var config = {
     chunkFilename: '[id].js'
   },
 
-  plugins: []
+  module: {
+    loaders: [
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loaders: [ 'babel-loader' ]
+      }
+    ]
+  },
+
+  plugins: [],
+
+  resolve: {
+    extensions: [ '', '.js', '.jsx' ]
+  },
+
+  devtool: 'sourcemap'
 
 };
 

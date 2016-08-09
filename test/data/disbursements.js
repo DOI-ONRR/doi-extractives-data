@@ -26,7 +26,7 @@ describe('disbursements', function() {
 
     var dataSource = path.join(
       __dirname,
-      '../../_data/state_disbursements.yml'
+      '../../_data/federal_disbursements.yml'
     );
 
     var pivotSource = path.join(

@@ -1,25 +1,23 @@
-button[is=aria-toggle] {
+[is=aria-toggle] {
   &.not-button-like {
-            appearance: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-        -ms-appearance: none;
+    @include appearance(none);
+
     background: transparent;
     border: none;
-    font: inherit;
     display: block;
+    font: inherit;
     line-height: inherit;
     padding: 0;
     text-align: left;
 
     &::before {
-      content: "▷";
+      content: '▷';
       display: inline-block;
       margin-right: 0.2em;
     }
 
     &[aria-expanded=true]::before {
-      content: "▼";
+      content: '▼';
     }
   }
 }

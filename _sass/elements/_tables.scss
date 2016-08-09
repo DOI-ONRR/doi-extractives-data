@@ -84,7 +84,7 @@ td {
     border-bottom: none;
   }
 
-  tr[aria-hidden] td {
+  [aria-hidden] td {
     padding-top: 0;
   }
 }

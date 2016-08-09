@@ -1,11 +1,12 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
+{% assign exports_total = exports.All[include.year].dollars %}
+{% assign exports_commodities_num = exports | size %}
 
 {% assign year_range = '[2011, 2014]' %}
 {% assign year_list = year_range | to_list %}
 
 {% assign empty_years = ',' | split:',' %}
 <section id="exports" is="year-switcher-section" class="economic exports">
-
 
   <h3>Exports</h3>
 
@@ -29,7 +30,14 @@
       {% endif %}
 
       <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
-        {% include location/key-exports.html %} The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        {% if export_commodities.size > 1 %}
+          In {{ year }}, one or more natural resources
+          ranked among the top 25 exports from {{ state_name }}.
+        {% else %}
+          In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.
+        {% endif %}
+
+        The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
       </p>
     </div>
 
@@ -50,7 +58,8 @@
               <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
                 ${{ exports[year].dollars | intcomma }}
               </span>
-              of {{ commodity[0] }} was exported from {{ state_name }}
+              worth of {{ commodity[0] | downcase }}
+              was exported from {{ state_name }}
               in <span class="eiti-bar-chart-x-value">{{ year }}</span>
             </figcaption>
             <eiti-bar-chart

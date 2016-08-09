@@ -70,7 +70,7 @@ npm test
 ```
 
 ### Jekyll filters
-We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. The filters in _plugins/eiti-*.rb are tested with [rubydoctest](https://github.com/tslocke/rubydoctest).
+We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. The filters in _plugins/eiti_*.rb are tested with [rubydoctest](https://github.com/tslocke/rubydoctest).
 
 #### Testing filters
 

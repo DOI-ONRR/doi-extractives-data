@@ -1,9 +1,7 @@
 require 'liquid'
 
 module EITI
-
   module Format
-
     # returns the singular suffix of a value if the value is 1,
     # otherwise the singular form
     #
@@ -34,7 +32,7 @@ module EITI
     # => '?'
     def percent(num, precision = 1, small = '&lt;1')
       if num.nil?
-        # FIXME what should we represent null % as?
+        # FIXME: what should we represent null % as?
         return '--'
       end
 
@@ -63,9 +61,7 @@ module EITI
       suffix.empty? ? text : "#{text} #{suffix}"
     end
     module_function :suffix
-
   end
-
 end
 
 Liquid::Template.register_filter(EITI::Format)

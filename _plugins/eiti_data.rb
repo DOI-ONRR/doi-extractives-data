@@ -2,9 +2,7 @@ require 'liquid'
 require 'json'
 
 module EITI
-
   module Data
-
     # access a nested property of the (assumed) Hash data:
     #
     # >> EITI::Data.get({'a' => 1000}, 'a')
@@ -25,7 +23,7 @@ module EITI
       keys.each do |key|
         key.split('.').each do |k|
           data = data[k]
-          if not data
+          if !data
             return nil
           end
         end
@@ -192,9 +190,7 @@ module EITI
       end
     end
     module_function :format_url
-
   end
-
 end
 
 Liquid::Template.register_filter(EITI::Data)

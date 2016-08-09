@@ -13,9 +13,11 @@ module EITI
     # => 'z'
     # >> EITI::Data.get({'x' => {'y' => 'z'}}, 'x.0')
     # => nil
+    # >> EITI::Data.get(nil, 'a')
+    # => nil
     def get(data, *keys)
       # bail if there's no data
-      return nil if data == nil
+      return nil if data.nil?
 
       # coerce all of the keys to strings,
       # and filter out any empty ones
@@ -23,9 +25,7 @@ module EITI
       keys.each do |key|
         key.split('.').each do |k|
           data = data[k]
-          if !data
-            return nil
-          end
+          return nil unless data
         end
       end
       data
@@ -76,9 +76,8 @@ module EITI
     # >> EITI::Data.range([1, 4])
     # => [1, 2, 3, 4]
     def range(start, finish = nil)
-      if start.is_a?(Array)
-        (start, finish) = start
-      end
+      (start, finish) = start if start.is_a?(Array)
+
       (start..finish).step(1).to_a
     end
     module_function :range
@@ -180,7 +179,7 @@ module EITI
           return format.gsub(pattern) { |k| data[k[1..k.size]] }
         end
       elsif data.is_a?(String)
-        if !format.include?(placeholder)
+        unless format.include?(placeholder)
           puts "format_url('#{format}', '#{data}':String): " \
             "no placeholder '#{placeholder}'"
         end

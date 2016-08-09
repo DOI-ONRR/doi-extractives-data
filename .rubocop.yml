@@ -40,11 +40,11 @@ Metrics/LineLength:
   - https
 
 Metrics/MethodLength:
-  Description: Avoid methods longer than 10 lines of code.
+  Description: Avoid methods longer than 20 lines of code.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#short-methods
   Enabled: true
   CountComments: false
-  Max: 10
+  Max: 20
   Exclude:
   - 'db/migrate/*'
   - spec/**/*

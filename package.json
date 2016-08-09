@@ -57,6 +57,7 @@
     "rebuild": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
+    "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
     "webpack": "webpack",
     "watch-webpack": "webpack --watch",
     "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
@@ -64,6 +65,7 @@
     "init-styleguide": "kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js || echo '(there were JavaScript linting errors)'",
+    "lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/eiti_*.rb",
     "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
   },
   "repository": {

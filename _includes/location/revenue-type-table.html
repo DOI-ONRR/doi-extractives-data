@@ -1,6 +1,10 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 
+{% if national_page %}
+  {% assign revenue_types = site.data.national_revenues_by_type.US %}
+{% endif %}
+
 {% assign commodity_groups = site.data.commodities.groups %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}

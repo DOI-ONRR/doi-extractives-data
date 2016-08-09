@@ -45,10 +45,12 @@ nav_items:
 
   <div class="container-left-9">
     <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
+      <a class="breadcrumb" href="{{ site.baseurl }}/">Home</a>
       /
     </div>
     <h1 id="title">{{ state_name }}</h1>
+
+    <p>Natural resource extraction — and particularly federal revenue from extraction — varies widely across the country. The scope and source of data about natural resource extraction often depends on property ownership, as well as the type of resource.</p>
 
     <figure is="data-map" color-scheme="Reds" steps="9">
       {%
@@ -57,13 +59,28 @@ nav_items:
         value='products.All.2013.revenue'
         href='%/'
       %}
-      <figcaption>State revenue (2013)</figcaption>
     </figure>
 
+    <p>The USEITI Multi-Stakeholder Group gathered additional information to help illuminate the role of extractive industries in areas with significant extractive activities:</p>
+    <ul>
+      <li>For 18 states, we've included links to state agencies and data, which can help understand the laws and regulations governing extraction on state and local land.</li>
+      <li>For 12 communities in 10 states, there are case studies that shed light on the economic and fiscal effects of oil, gas, and mineral extraction in those communities.</li>
+      <li>A few states have opted in to the USEITI process by providing additional data and contextual information about natural resource extraction on state and local land. Montana is the first of these states, and Wyoming and Alaska are also participating.</li>
+    </ul>
+
     <section id="production">
+
       <h2>Production</h2>
 
+      <p>The U.S. produces more <a href="#all-production-natural-gas-mcf">natural gas</a> and <a href="#all-production-oil-bbl">oil</a> than any other country. The U.S. also ranks second in the world for production of <a href="#all-production-coal-short-tons">coal</a> and renewable energy, and third in the world for gold production.</p>
+
       {% include location/national-all-production.html %}
+
+      <section id="federal-production" is="year-switcher-section" class="federal production">
+
+      <h3>Land ownership</h3>
+
+      {% include location/national-ownership.html %}
 
       {% include location/national-federal-production.html %}
 
@@ -73,13 +90,11 @@ nav_items:
 
 
     <section id="economic-impact">
-    <h2>Economic Impact</h2>
+    <h2>Economic impact</h2>
 
     {% include location/national-gdp.html %}
 
     {% include location/national-jobs.html %}
-
-    {% include location/national-exports.html %}
 
     </section>
 

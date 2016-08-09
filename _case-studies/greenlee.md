@@ -22,7 +22,7 @@ nav_items:
 selector: list
 ---
 
-> Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world’s fourth-largest copper producer, mining 1.127 million tons of copper worth a total value of approximately $9.8 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production most in 2014. Arizona's copper output totaled 893,000 {{ "metric tons" | term_end:"metric ton" }}, or 66% of the national total.[^2] Copper represented 89% of the total value of mining in Arizona, with Greenlee and Pima counties generating the majority of that production.[^3] If Arizona were a country, it would be the seventh largest copper producer in the world.[^4]
+> Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world’s fourth-largest copper producer, mining 1.127 million tons of copper worth a total value of approximately $9.7 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production most in 2014. Arizona's copper output totaled 893,000 {{ "metric tons" | term_end:"metric ton" }}, or 66% of the national total.[^2] Copper represented 89% of the total value of mining in Arizona, with Greenlee and Pima counties generating the majority of that production.[^3] If Arizona were a country, it would be the seventh largest copper producer in the world.[^4]
 
 {% include case-studies/_selector.html screen="mobile" %}
 

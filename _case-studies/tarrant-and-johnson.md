@@ -54,7 +54,7 @@ The boom in natural gas production in the Barnett Shale over the past decade inc
 
 ## Revenue
 
-The State of Texas levies a Natural Gas Production Tax at 7.5% of the market value of the gas, but with the various allowable exemptions and reductions, the effective tax rate hovers below 2%.[^15] In 2014, the state government collected $1.9 billion from this tax, up from $1.5 billion in 2013.[^16] Interest earned on Permanent School Fund investments is distributed by the State Board of Education to every school district on a per-pupil basis.[^17]
+The State of Texas levies a Natural Gas Production Tax at 7.5% of the market value of the gas, but with the various allowable exemptions and reductions, the effective tax rate hovers below 2%.[^15] In 2014, the state government collected $1.9 billion from this tax, up from $1.5 billion in 2013.[^16] Texas earmarks some of these tax revenues for investment in the Permanent School Fund. Interest earned on Permanent School Fund investments is distributed by the State Board of Education to every school district on a per-pupil basis.[^17]
 
 The state also collects royalties from the natural gas produced on state-owned land. The Texas General Land Office typically receives a royalty worth 20-25% of the value of the resources extracted from state land. This can be paid in the form of cash or actual oil and gas for resale to public entities. Oil and gas leases on state-owned lands generate more revenue than any other source of income for the public education endowment. In its history, the Texas General Land Office has deposited more than $16.8 billion into the Permanent School Fund from oil and gas production revenue.[^18]
 
@@ -131,7 +131,7 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 [^11]: Railroad Commission of Texas, [Natural Gas Production Data](http://webapps2.rrc.state.tx.us/EWA/productionQueryAction.do), 2005–2014
 
-[^12]: U.S. Census Bureau, [Censtats Datanases](http://censtats.census.gov/), mid-March employment data for NAICS codes 211, 21311, and 213112 in Johnson and Tarrant counties 2004–2013 using averages for letter-coded ranges (a–f)
+[^12]: U.S. Census Bureau, [Censtats Databases](http://censtats.census.gov/), mid-March employment data for NAICS codes 211, 21311, and 213112 in Johnson and Tarrant counties 2004–2013 using averages for letter-coded ranges (a–f)
 
 [^13]: Ibid.
 

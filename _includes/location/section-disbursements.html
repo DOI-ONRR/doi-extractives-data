@@ -8,7 +8,7 @@
 
   In {{ year }}, ONRR disbursed
   {% if disbursements %}
-    ${{ disbursements.All[year] | round | intcomma }}
+    ${{ disbursements.All.All[year] | round | intcomma }}
   {% else %}
     did not receive any
   {% endif %}

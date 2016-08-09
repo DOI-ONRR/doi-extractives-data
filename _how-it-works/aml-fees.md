@@ -30,7 +30,7 @@ State and tribal AML programs rate abandoned mine areas on a priority scale of 1
 - **Priority 2**: Protection of public health and safety from adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 3**: Restoration of land and water resources and the environment previously degraded by adverse effects of coal mining practices pre-1977
 
-To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).
+To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).[^2]
 
 **To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="" class="article_img-100 u-margin-top u-margin-bottom"></a>
 
@@ -53,7 +53,7 @@ Currently, there are $488M funded but not completed projects, encompassing 118,9
 For more information:
 
 - [GAO report: Agencies should take steps to improve information on usda's and interior's potentially contaminated sites](http://www.gao.gov/products/GAO-15-35)
-- [Contacts for states, Indian tribes, and OSMRE](http://www.osmre.gov/contacts/map.shtm)
+- [Contacts for state and tribal AML programs and OSMRE offices](http://www.osmre.gov/contacts/map.shtm)
 
 ### AML funding and spending[^8]
 
@@ -91,7 +91,7 @@ The statute requires the government to distribute AML Reclamation Program funds 
 - **Historic coal grants:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^14]
 - **Federal expenditures** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^15]
 
-The states that received the largest grants from the AML fund in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^16]
+The states that received the largest grants from OSMRE in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^16]
 
 <img src="{{ site.baseurl }}/img/AML_state-grants.svg" alt="Chart shows the states that received the largest grants from the AML fund in FY 2016. Wyoming received $59.2 million, Pennsylvania received $43.0 million, West Virginia received $29.7 million, Kentucky received $17.1 million, and Illinois received $15.7 million." class="article_img-100 u-margin-top u-margin-bottom">
 
@@ -119,7 +119,7 @@ Prior to 2006, companies often paid more money into the AML fund each year than 
 
 ### Interest on the fund
 
-In 1990, Congress authorized the federal government to invest the unappropriated balance in U.S. Treasury Securities. Since then, the unappropriated balance has earned $1.5 billion in interest. Since 1996, almost all of the interest on the AML fund has gone toward paying a portion of the cost for health care plans for the United Mine Workers of America.[^19]
+In 1990, Congress authorized the federal government to invest the unappropriated balance in U.S. Treasury Securities. Since then, the unappropriated balance has earned $1.5 billion in interest. Since 1996, almost all of the interest on the AML fund has gone toward paying a portion of the cost for some health care plans for the United Mine Workers of America.[^19]
 
 ### Grants to states and tribes
 
@@ -141,25 +141,27 @@ Congress is currently considering multiple proposals that would reallocate money
 
 ## Notes
 
-[^1]: 30 U.S.C. §1233(a)
+[^1]: Legal Information Institute, [30 U.S.C. §1233(a)](https://www.law.cornell.edu/uscode/text/30/1233)
 
-[^2]: e-AMLIS generated report "Cost Summary National;" includes all priorities and problem types; generated February 10, 2016.
+[^2]: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf), 2016
 
-[^3]: 30 U.S.C. §1240(a)
+[^2]: e-AMLIS generated report "Cost Summary National;" includes all priorities and problem types; generated February 10, 2016
 
-[^4]: Office of Surface Mining Reclamation and Enforcement, "FY2016 OSMRE AML Grant Distribution," 2016.
+[^3]: Legal Information Institute, [30 U.S.C. §1240(a)](https://www.law.cornell.edu/uscode/text/30/1240)
 
-[^5]: e-AMLIS generated report "Problem Type Unit & Cost (State) w/ GPRA;" includes all priorities and problem types; generated February 10, 2016.
+[^4]: Office of Surface Mining Reclamation and Enforcement, [FY 2016 AML Grant Distribution (PDF)](http://www.osmre.gov/resources/grants/docs/FY16GrantDist.pdf), 2016
+
+[^5]: e-AMLIS generated report "Problem Type Unit & Cost (State) w/ GPRA;" includes all priorities and problem types; generated February 10, 2016
 
 [^6]: OSMRE is required under the Government Performance and Results Act (GPRA) of 1993 to report measurable goals to Congress. One of their key measures is the number of abandoned mine land acres reclaimed. However, many reclamation projects are reported in units other than acres, such as feet of highwalls. These non-acre measures are converted to GPRA acres to provide a standard unit with which to measure program performance.
 
-[^7]: e-AMLIS generated report "Problem Type Unit & Cost (State) w/ GPRA;" includes all priorities and problem types; generated February 10, 2016.
+[^7]: e-AMLIS generated report “Cost Summary National;” includes all priorities and problem types; generated February 10, 2016. e-AMLIS generated report “Cost Summary National;” including only Priority 1 and Priority 2 and all problem types; generated February 10,2016.
 
-[^8]: Source for Fees Collected, Funds Disbursed, Current Unappropriated Balance: Office of Surface Mining Reclamation and Enforcement, "FY 2017 OSMRE Budget Justification," 2016. Source for Cost of Completed Construction and Estimated Cost of Construction: e-AMLIS generated report "Cost Summary National;" includes all priorities and problem types; generated February 10, 2016.
+[^8]: Source for Fees Collected, Funds Disbursed, Current Unappropriated Balance: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf). Source for Cost of Completed Construction and Estimated Cost of Construction: e-AMLIS generated report "Cost Summary National;" includes all priorities and problem types; generated February 10, 2016
 
-[^9]: 30 U.S.C. §1232
+[^9]: Legal Information Institute, [30 U.S.C. §1232](https://www.law.cornell.edu/uscode/text/30/1232)
 
-[^10]: Office of Surface Mining Reclamation and Enforcement, "FY 2017 SMRE Budget Justification," 2016.
+[^10]: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf), 2016
 [^11]: Ibid.
 [^12]: Ibid.
 [^13]: Ibid.
@@ -167,14 +169,15 @@ Congress is currently considering multiple proposals that would reallocate money
 [^15]: Ibid.
 [^16]: Ibid.
 
-[^17]: 30 U.S.C. §1231(c)
+[^17]: Legal Information Institute, [30 U.S.C. §1231(c)](https://www.law.cornell.edu/uscode/text/30/1231)
 
-[^18]: Office of Surface Mining Reclamation and Enforcement, "FY2017 OSMRE Budget Justification," 2016
+[^18]: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf), 2016
+
 [^19]: Ibid.
 
-[^20]: Office of Surface Mining Reclamation and Enforcement, "FY2008 AML Grant Distribution," 2008
+[^20]: Office of Surface Mining Reclamation and Enforcement, [FY 2008 AML Grant Distribution (PDF)](http://www.osmre.gov/resources/grants/docs/FY08GrantDist.pdf), 2008
 
-[^21]: Office of Surface Mining Reclamation and Enforcement, "FY2016 OSMRE AML Grant Distribution," 2016
+[^21]: Office of Surface Mining Reclamation and Enforcement, [FY 2016 AML Grant Distribution (PDF)](http://www.osmre.gov/resources/grants/docs/FY16GrantDist.pdf), 2016
 
 [^22]: Ibid. This figure includes interest earned but not appropriated.
 

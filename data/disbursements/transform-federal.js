@@ -1,8 +1,15 @@
 var parse = require('../../lib/parse');
+var fundMap = {
+  // map "States" -> "State"
+  'States': 'State'
+};
 
 module.exports = {
   year:   'Fiscal Year',
-  fund:   'Fund Type',
+  fund: function(d) {
+    var fund = d['Fund Type'];
+    return fundMap[fund] || fund;
+  },
   source: 'Source',
   region: function(d) {
     return d.State || 'US';

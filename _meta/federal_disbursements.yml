@@ -1,3 +1,4 @@
 '{region}':
-  '{source}':
-    '{year}': '{dollars}'
+  '{fund}':
+    '{source}':
+      '{year}': '{dollars}'

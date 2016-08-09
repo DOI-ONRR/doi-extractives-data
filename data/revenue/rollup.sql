@@ -109,6 +109,15 @@ CREATE TABLE national_revenue_type AS
     GROUP BY
         year, commodity, revenue_type;
 
+-- create all revenue type by commodity rollups
+INSERT INTO national_revenue_type
+    (year, commodity, revenue_type, revenue)
+SELECT
+    year, commodity, 'All', SUM(revenue)
+FROM county_revenue
+GROUP BY
+    year, commodity;
+
 
 -- create regional rankings views
 DROP TABLE IF EXISTS state_revenue_rank;

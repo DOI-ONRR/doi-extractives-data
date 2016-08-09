@@ -1,11 +1,10 @@
 {% assign caption = include.caption %}
 
-<label>{{ caption }}</label>
 <table is="bar-chart-table" data-percent-max="100" class="county-table">
   <thead>
     <tr>
-      <th>Locality</th>
-      <th colspans="2" class="numeric" data-series="volume">Revenue</th>
+      <th>{{ locality_name }}</th>
+      <th colspan="2" class="numeric" data-series="volume">Revenue</th>
     </tr>
   </thead>
   <tbody>

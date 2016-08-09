@@ -45,7 +45,7 @@
     <div class="map-container">
 
       <h4 class="chart-title">
-        <span>Revenue collected by locality</span>
+        <span>Revenue collected by {{ locality_name }}</span>
       </h4>
 
 
@@ -54,7 +54,7 @@
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {% capture years_key %}revenue{% endcapture %}
         {% assign _width ='inherit' %}
-        {% capture caption %}Local revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
+        {% capture caption %}{{ locality_name }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
         <eiti-data-map color-scheme="Reds" steps="{{ steps }}" units="{{ units }}" format="$">
 

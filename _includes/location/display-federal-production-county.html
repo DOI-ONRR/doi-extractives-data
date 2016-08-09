@@ -7,14 +7,13 @@
 {% endif %}
 
 
-<label>{{ caption }}</label>
 <table is='bar-chart-table'
        data-percent-max='100'
        class="county-table">
   <thead>
     <tr>
-      <th>Locality</th>
-      <th colspans="2" class='numeric' data-series='volume'>{{ units | capitalize }}</th>
+      <th>{{ locality_name }}</th>
+      <th colspan="2" class='numeric' data-series='volume'>{{ units | capitalize }} of {{ product_name | downcase | suffix:units_suffix }}</th>
     </tr>
   </thead>
   <tbody>

@@ -198,9 +198,7 @@
   }
 
 
-
   window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 130, stickyNav));
-
   window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
   // documentation: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver

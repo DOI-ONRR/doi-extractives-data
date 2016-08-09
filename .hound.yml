@@ -4,3 +4,6 @@ scss:
 javascript:
   config_file: .jshintrc
   ignore_file: .jshintignore
+
+ruby:
+  config_file: .rubocop.yml

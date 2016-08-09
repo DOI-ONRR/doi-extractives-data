@@ -55,22 +55,6 @@
 
       </figure>
 
-      {% if forloop.last %}
-      <!-- <h4>
-        <button is="aria-toggle" aria-controls="gdp-detail-{{ _metric }}">
-          &plus; Details
-        </button>
-      </h4>
-      <div id="gdp-detail-{{ _metric }}" aria-hidden="true">
-        {%
-          include location/display-gdp.html
-          values=gdp
-          percent=true
-        %}
-      </div> -->
-      <!-- /#gdp-years -->
-      {% endif %}
-
     </section><!-- /.chart-item -->
     {% endfor %}
 

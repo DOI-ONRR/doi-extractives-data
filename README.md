@@ -72,6 +72,16 @@ npm test
 ### Jekyll filters
 We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. The filters in _plugins/eiti-*.rb are tested with [rubydoctest](https://github.com/tslocke/rubydoctest).
 
+#### Testing filters
+
+You can run the unit tests as follows:
+
+```sh
+npm test-ruby
+```
+
+#### Writing filters
+
 As the following example demonstrates, test cases are written in comment blocks immediately preceding a testable function. The test description is on the first line, with an empty comment block below it. Use `>>` syntax to invoke a test case, and follow it with hash rocket syntax, `=>`, to define the expected outcome of the invocation.
 
 Inline unit test for `to_i`:
@@ -89,6 +99,10 @@ end
 module_function :to_i
 ```
 
+## Continuous Integration
+We are using [CircleCI](https://circleci.com/) to test our code as we push it to Github.
+
+As specified in our [circle.yml](circle.yml) configuration file, we are running our JS and Jekyll filter tests to ensure that functions are working as expected.
 
 ## Code Style
 We use [Hound CI](https://houndci.com/) to enforce SCSS and JavaScript

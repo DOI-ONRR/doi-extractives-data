@@ -12,9 +12,9 @@
 {% endif %}
 
 {% if _viewbox %}
-  {% assign _viewbox_list = _viewbox | split:' ' | to_f %}
-  {% assign breakpoint_width = _viewbox_list[2] %}
-  {% assign breakpoint_height = _viewbox_list[3] | times:1.5 %}
+  {% assign _viewbox_list = _viewbox | split: ' ' %}
+  {% assign breakpoint_width = _viewbox_list[2].to_f %}
+  {% assign breakpoint_height = _viewbox_list[3].to_f | times:1.5 %}
   {% capture is_wide %}
     {% if breakpoint_width > breakpoint_height %}wide{% endif %}
   {% endcapture %}

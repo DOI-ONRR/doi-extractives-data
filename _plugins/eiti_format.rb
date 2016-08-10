@@ -16,7 +16,6 @@ module EITI
     def plural(num, plural = 's', singular = '')
       num.to_i == 1 ? singular : plural
     end
-    module_function :plural
 
     # format a number as a percentage with fixed precision, with an
     # additionally configurable "small" placeholder to indicate values
@@ -51,7 +50,6 @@ module EITI
       # puts "percent(#{num}, #{precision}, "#{small}")"
       num.to_i
     end
-    module_function :percent
 
     # >> EITI::Format.suffix('foo', 'bar')
     # => 'foo bar'
@@ -60,7 +58,6 @@ module EITI
     def suffix(text, suffix = '')
       suffix.empty? ? text : "#{text} #{suffix}"
     end
-    module_function :suffix
   end
 end
 

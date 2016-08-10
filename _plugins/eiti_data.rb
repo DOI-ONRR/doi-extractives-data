@@ -2,7 +2,9 @@ require 'liquid'
 require 'json'
 
 module EITI
+
   module Data
+
     # access a nested property of the (assumed) Hash data:
     #
     # >> EITI::Data.get({'a' => 1000}, 'a')
@@ -30,7 +32,6 @@ module EITI
       end
       data
     end
-    module_function :get
 
     # "unwrap" values in a 2-level hash:
     #
@@ -39,7 +40,6 @@ module EITI
     def map_hash(data, key)
       data.to_h.map { |k, v| [k, get(v, key)] }.to_h
     end
-    module_function :map_hash
 
     # pad the provided string with the provided padding character (or a
     # space, by default) if its length is less than a given length
@@ -54,7 +54,6 @@ module EITI
       pad_by = len - str.size
       pad_by > 0 ? pad * pad_by + str : str
     end
-    module_function :pad_left
 
     # attempt to look up a term in a hash, and return the value if that
     # key exists; otherwise, return the key
@@ -66,7 +65,6 @@ module EITI
     def lookup(term, hash)
       hash.key?(term) ? hash[term] : term
     end
-    module_function :lookup
 
     # create an integer range array from either a start and end number,
     # or a 2-element array
@@ -80,7 +78,6 @@ module EITI
 
       (start..finish).step(1).to_a
     end
-    module_function :range
 
     # convert (or map) a value to floats
     #
@@ -91,7 +88,6 @@ module EITI
     def to_f(x)
       x.is_a?(Array) ? x.map(&:to_f) : x.to_f
     end
-    module_function :to_f
 
     # convert (or map) a value to integers
     #
@@ -102,7 +98,6 @@ module EITI
     def to_i(x)
       x.is_a?(Array) ? x.map(&:to_i) : x.to_i
     end
-    module_function :to_i
 
     # convert (or map) a value to strings
     #
@@ -113,7 +108,6 @@ module EITI
     def to_s(x)
       x.is_a?(Array) ? x.map(&:to_s) : x.to_s
     end
-    module_function :to_s
 
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
@@ -130,14 +124,12 @@ module EITI
         range
       end
     end
-    module_function :create_list
 
     # >> EITI::Data.json_parse('[1,2]')
     # => [1, 2]
     def json_parse(str)
       str.is_a?(String) ? JSON.parse(str) : nil
     end
-    module_function :json_parse
 
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
@@ -152,13 +144,12 @@ module EITI
       if range.is_a?(Array)
         create_list(range)
       elsif range.is_a?(String)
-        range = JSON.parse(range)
+        range = json_parse(range)
         create_list(range)
       else
         range
       end
     end
-    module_function :to_list
 
     # formats a URL-like string with either a data Hash or a
     # placeholder string:
@@ -188,8 +179,9 @@ module EITI
         return format
       end
     end
-    module_function :format_url
+
   end
+
 end
 
 Liquid::Template.register_filter(EITI::Data)

@@ -9,12 +9,13 @@
     <g class="states features">
       <use xlink:href="{{ states_svg }}#states"></use>
     </g>
+
     {% for state in site.data.states %}
       {% if state_id == state.id %}
-      <g class="state feature">
-        <use xlink:href="{{ states_svg }}#state-{{ state.id }}"></use>
-      </g>
-    {% endif %}
+        <g class="state feature">
+          <use xlink:href="{{ states_svg }}#state-{{ state.id }}"></use>
+        </g>
+      {% endif %}
     {% endfor %}
   </svg>
   </a>

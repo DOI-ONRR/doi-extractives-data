@@ -1,7 +1,7 @@
 var parse = require('../../lib/parse');
 var fundMap = {
-  // map "States" -> "State"
-  'States': 'State'
+  // map "State" -> "States"
+  'State': 'States'
 };
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
   },
   source: 'Source',
   region: function(d) {
-    return d.State || 'US';
+    return d.State;
   },
   dollars: function(d) {
     return parse.dollars(d.Total);

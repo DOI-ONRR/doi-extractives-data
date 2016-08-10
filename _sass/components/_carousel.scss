@@ -33,54 +33,75 @@
 }
 
 
+
 .top-ribbon {
+  .top-ribbon-carousel {
+    padding-top: $base-padding-large;
+    position: relative;
+  }
+}
 
-  // padding-top: 0;
-  // position: relative;
+svg {
+  display: inline-block;
 
-  svg {
-    // width: 100%;
-    // position: absolute;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
+  &.small {
+    display: none;
+  }
+}
+
+@include respond-to(tiny-up) {
+
+  .top-ribbon {
 
 
-    #rig-dollars {
-      transform: translateX(90%) scale(0.6) translateY(43%);
+    .top-ribbon-carousel {
+      padding-top: 0;
+      position: relative;
+    }
+
+    svg {
+      display: none;
+
+      #rig-dollars {
+        display: inline-block;
+        transform: scale(.6) translate(300px, 87px);
+      }
+
+      #Symbols {
+        transform: translateY(-24px)
+      }
+
+      rect {
+        height: 43px;
+      }
+
+      &.small {
+        display: inline-block;
+      }
     }
   }
 
+  .carousel-button {
+    float: left;
+    position: absolute;
+    left: 12.5%;
+    bottom: 67%;
+    margin: 0;
+  }
 
 }
-
-// .carousel-button {
-//     float: left;
-//     position: absolute;
-//     left: 12.5%;
-//     bottom: 67%;
-//     margin: 0;
-//   }
 
 @include respond-to(medium-up) {
 
   .top-ribbon {
     align-items: flex-end;
     display: flex;
-    // padding-top: $base-padding-large;
-  }
 
-  .carousel-button {
-    float: none;
-  }
-
-  .top-ribbon-hero {
-    align-self: flex-end;
-  }
-
-  .top-ribbon-carousel {
-    align-self: stretch;
-    position: relative;
+    .top-ribbon-carousel {
+      align-self: stretch;
+      padding-top: $base-padding-large;
+      position: relative;
+    }
 
     svg {
       width: 100%;
@@ -88,10 +109,32 @@
       left: 0;
       bottom: 0;
       right: 0;
+      display: inline-block;
 
-       #rig-dollars {
+      #rig-dollars {
         transform: inherit;
       }
+
+      #Symbols {
+        transform: inherit;
+      }
+
+      rect {
+        height: 72px;
+      }
+
+      &.small {
+        display: none;
+      }
     }
+  }
+
+  .carousel-button {
+    float: none;
+    position: static;
+  }
+
+  .top-ribbon-hero {
+    align-self: flex-end;
   }
 }

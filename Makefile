@@ -256,7 +256,7 @@ data/federal_disbursements.yml:
 		FROM federal_disbursements \
 		WHERE \
 		  dollars > 0 \
-		ORDER BY dollars DESC" \
+		ORDER BY year, dollars DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/federal_disbursements.yml \
 			-o _$@

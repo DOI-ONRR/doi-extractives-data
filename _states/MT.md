@@ -5,6 +5,9 @@ FIPS: '30'
 
 opt_in: true
 priority: true
+
+state_land: |
+    The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
 ---
 
 <!-- State overview
@@ -16,15 +19,14 @@ State revenue and disbursements
 
 - Revenue from production on state land
 - State and local taxes
-- Tax expenditures
 - Revenue sustainability
 - State disbursements -->
 
 <!-- State governance -->
 
-The state of Montana regulates extraction and interacts with extractive industry companies in Montana, particularly when they are operating on state and private lands. For extraction on federal land, state agencies may be involved, but federal agencies are primarily responsible for managing the land. Learn more about how [oil and gas]({{site.baseurl}}/how-it-works/onshore-oil-gas/), [coal]({{site.baseurl}}/how-it-works/coal/), and [hardrock minerals]({{site-baseurl}}/how-it-works/hardrock-minerals/) are managed on federal lands.
-
 ### State agencies
+
+The state of Montana regulates extraction and interacts with extractive industry companies in Montana, particularly when they're operating on state or private land.
 
 The [Montana Department of Revenue](https://revenue.mt.gov/) collects, manages, and distributes  revenue from companies engaged in extraction of oil, natural gas, coal, and non-energy minerals in Montana. It publishes [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports) and other [tax related reports](https://revenue.mt.gov/home/publications). County governments also collect many property taxes.
 
@@ -71,22 +73,29 @@ In addition to generating revenue, extractive industries can bring costs to stat
 
 The USEITI {{ term | "Multi-Stakeholder Group" }} prioritized four types of fiscal costs in the 2015 USEITI report:
 
-**Transportation:** The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.
+* **Transportation:** The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.  
+  
+  To read more, see the [Montana Department of Transportation report (PDF)](http://www.mdt.mt.gov/other/webdata/external/research/docs/research_proj/oil_boom/summary_mdt_efforts.pdf) on efforts to respond to impacts on the state highway system from oil exploration and production in eastern Montana.
 
-To read more, see the [Montana Department of Transportation report (PDF)](http://www.mdt.mt.gov/other/webdata/external/research/docs/research_proj/oil_boom/summary_mdt_efforts.pdf) on efforts to respond to impacts on the state highway system from oil exploration and production in eastern Montana.
+* **Water:** Surveyed communities in eastern Montana reported that water rates increased an average of 86.4% from 2011 to 2014 and sewage rates increased 302.9%. The Eastern Montana Impact Coalition also estimates that $33.8 million to $80.6 million will be needed for incremental improvements to support growing demand on water, sewage, and transportation systems. These figures don’t include large projects.
 
-**Water:** Surveyed communities in eastern Montana reported that water rates increased an average of 86.4% from 2011 to 2014 and sewage rates increased 302.9%. The Eastern Montana Impact Coalition also estimates that $33.8 million to $80.6 million will be needed for incremental improvements to support growing demand on water, sewage, and transportation systems. These figures don’t include large projects.
+  The Department of Environmental Quality plans, monitors, assesses, and enforces [water quality](http://deq.mt.gov/Water) in Montana. It performs targeted water quality monitoring related to oil and gas development in eastern Montana and coal mining near Lake Koocanusa, runs the [Montana Ground Water Pollution Control System](http://deq.mt.gov/Water/WQINFO/mgwpcs) and its permitting process, and produces [Clean Water Act Integrated Reports](http://deq.mt.gov/Water/WQPB/cwaic/reports).
 
-The Department of Environmental Quality plans, monitors, assesses, and enforces [water quality](http://deq.mt.gov/Water) in Montana. It performs targeted water quality monitoring related to oil and gas development in eastern Montana and coal mining near Lake Koocanusa, runs the [Montana Ground Water Pollution Control System](http://deq.mt.gov/Water/WQINFO/mgwpcs) and its permitting process, and produces [Clean Water Act Integrated Reports](http://deq.mt.gov/Water/WQPB/cwaic/reports).
+* **Emergency services:** Increased population near extraction can increase demands on emergency services. Law enforcement at multiple jurisdictional levels in eastern Montana have seen costs rise related to increases in oil and gas activity.
 
-**Emergency services:** Increased population near extraction can increase demands on emergency services. Law enforcement at multiple jurisdictional levels in eastern Montana have seen costs rise related to increases in oil and gas activity.
+  The State Highway Patrol added a new detachment in eastern Montana, county sheriffs' offices have seen costs rise $13.4 million, and surveyed police departments have seen an average budget increase of 128.9% between 2000 and 2013. Surveyed local governments also reported an average increase of 169.2% in emergency spending from 2000 to 2013.
 
-The State Highway Patrol added a new detachment in eastern Montana, county sheriffs' offices have seen costs rise $13.4 million, and surveyed police departments have seen an average budget increase of 128.9% between 2000 and 2013. Surveyed local governments also reported an average increase of 169.2% in emergency spending from 2000 to 2013.
+* **Reclamation:** Multiple organizations in the Montana state government work on the reclamation and remediation of sites related to extraction. The Department of Environmental Quality Waste Management and Remediation Division administers state and federal superfund sites, as well as Montana’s [abandoned mine land projects](http://deq.mt.gov/Land/AbandonedMines). Montana has been “certified” by the federal Abandoned Mine Land Reclamation program, meaning that it has reclaimed its identified, high-priority abandoned coal mine areas. [Current projects](http://deq.mt.gov/Land/AbandonedMines/CurrentProjects) include addressing acid mine drainage in the Great Falls coal field, which is projected to cost $96 million, and managing subsidence events and potential subsidence in Red Lodge.
 
-**Reclamation:** Multiple organizations in the Montana state government work on the reclamation and remediation of sites related to extraction. The Department of Environmental Quality Waste Management and Remediation Division administers state and federal superfund sites, as well as Montana’s [abandoned mine land projects](http://deq.mt.gov/Land/AbandonedMines). Montana has been “certified” by the federal Abandoned Mine Land Reclamation program, meaning that it has reclaimed its identified, high-priority abandoned coal mine areas. [Current projects](http://deq.mt.gov/Land/AbandonedMines/CurrentProjects) include addressing acid mine drainage in the Great Falls coal field, which is projected to cost $96 million, and managing subsidence events and potential subsidence in Red Lodge.
+  To learn more, find Annual Evaluation Reports for Montana in the [Office of Surface Mining Reclamation and Enforcement Oversight Document Database](http://odocs.osmre.gov/) or learn about the bonding of active mines in the [Coal Program Annual Report](http://deq.mt.gov/Land/CoalUranium/annualreports).
 
-To learn more, find Annual Evaluation Reports for Montana in the [Office of Surface Mining Reclamation and Enforcement Oversight Document Database](http://odocs.osmre.gov/) or learn about the bonding of active mines in the [Coal Program Annual Report](http://deq.mt.gov/Land/CoalUranium/annualreports).
+  The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
 
-The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
+  The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
 
-The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
+### Tax expenditures
+
+Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
+
+In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
+

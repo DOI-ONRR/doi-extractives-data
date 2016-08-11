@@ -18,6 +18,23 @@
   padding-bottom: 0;
   padding-top: $base-padding-extra;
   text-align: center;
+
+  &.carousel-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.carousel-top {
+  flex: 1 0 auto;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  // padding-top: $base-padding-large;
+  padding-top: 0;
+}
+
+.carousel-bottom.hero-right_caption {
+  text-align: center;
 }
 
 .carousel-button {
@@ -42,6 +59,10 @@
     padding-left: $base-padding;
     padding-right: $base-padding;
   }
+
+  &.top-ribbon-column {
+    flex-direction: column;
+  }
 }
 
 .container-page-wrapper.top-ribbon {
@@ -57,11 +78,22 @@ svg {
   }
 }
 
+.carousel-column.container-right-4 {
+  @include span-columns(12);
+}
+
+.hero-left-column.container-left-8 {
+  @include span-columns(12);
+}
+
 @include respond-to(tiny-up) {
 
   .top-ribbon {
 
-
+    .top-ribbon-hero {
+      padding-left: $base-padding;
+      padding-right: $base-padding;
+    }
 
     .top-ribbon-carousel {
       padding-top: 0;
@@ -90,14 +122,29 @@ svg {
     }
   }
 
-  .carousel-button {
-    float: left;
-    position: absolute;
-    left: 12.5%;
-    bottom: 67%;
-    margin: 0;
+  .carousel:not(.carousel-column) {
+    .carousel-button {
+      float: left;
+      position: absolute;
+      left: 12.5%;
+      bottom: 67%;
+      margin: 0;
+    }
   }
 
+  .carousel.carousel-column {
+    .carousel-top {
+      padding-top: $base-padding-large;
+    }
+  }
+}
+
+@include respond-to(small-to-huge) {
+  .top-ribbon .top-ribbon-hero,
+  .carousel-top {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
 }
 
 @include respond-to(medium-up) {
@@ -105,6 +152,11 @@ svg {
   .carousel {
     border-left: 4px solid $white;
     border-right: 4px solid $white;
+
+    &:not(.carousel-column) .carousel-button {
+      float: none;
+      position: static;
+    }
   }
 
   .top-ribbon {
@@ -117,7 +169,7 @@ svg {
       position: relative;
     }
 
-    .top-ribbon-hero {
+    .top-ribbon-hero:not(.hero-left-column) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -146,20 +198,59 @@ svg {
         display: none;
       }
     }
-
-    &.container-page-wrapper {
-      padding-left: $base-padding;
-      padding-right: $base-padding;
-
-    }
-  }
-
-  .carousel-button {
-    float: none;
-    position: static;
   }
 
   .top-ribbon-hero {
     align-self: flex-end;
+  }
+}
+
+@include respond-to(medium-to-huge) {
+  .top-ribbon {
+    &.container-page-wrapper:not(.top-ribbon-column) {
+      margin-left: $page-padding;
+      margin-right: $page-padding;
+    }
+  }
+
+  .carousel-column.container-right-4 {
+    @include span-columns(12);
+  }
+
+  .hero-left-column.container-left-8 {
+    @include span-columns(12);
+  }
+}
+
+@include respond-to(huge-up) {
+  // .top-ribbon.container-page-wrapper:not(.top-ribbon-column),
+  // .top-ribbon.top-ribbon-column.container-page-wrapper {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+
+  .carousel-column.container-right-4 {
+    // @include span-columns(4);
+    // @include omega();
+
+    // .carousel-top {
+    //   padding-left: $base-padding;
+    //   padding-right: $base-padding;
+    // }
+  }
+
+  // .hero-left-column.container-left-8 {
+  //   @include span-columns(8);
+  // }
+
+  // .top-ribbon.top-ribbon-column {
+  //   flex-direction: row;
+  // }
+}
+
+@include respond-to(huge-plus-up) {
+  .container-page-wrapper.top-ribbon {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

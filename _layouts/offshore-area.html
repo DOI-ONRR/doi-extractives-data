@@ -2,16 +2,16 @@
 layout: default
 ---
 
-{% assign region_name = page.title %}
-{% assign region_id = page.id %}
+{% assign area_name = page.title %}
+{% assign area_id = page.id %}
 
-<main id="offshore-region-{{ region_id }}" class="container-page-wrapper layout-state-pages">
+<main id="offshore-area-{{ area_id }}" class="container-page-wrapper layout-state-pages">
   <div class="container-left-9">
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
-    <h1 id="title">{{ region_name }}</h1>
+    <h1 id="title">{{ area_name }}</h1>
 
   </div>
 
@@ -19,13 +19,13 @@ layout: default
     <div class="sticky_nav" data-sticky-offset="50">
       <h3 class="state-page-nav-title container">
 
-        <div class="nav-title">{{ region_name }}</div>
+        <div class="nav-title">{{ area_name }}</div>
         <figure is="data-map">
 
           {%
             include icon-map.html
-            state=region_id
-            highlighted_state=region_id
+            state=area_id
+            highlighted_state=area_id
             offshore=true
           %}
         </figure>

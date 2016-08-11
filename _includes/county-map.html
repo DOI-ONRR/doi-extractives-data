@@ -8,15 +8,13 @@
 {% if _inherit_width %}
   {% assign __width = '' %}
 {% else %}
-  {% capture __width %}
-    width: {{_width}}%
-  {% endcapture %}
+  {% capture __width %}width: {{ _width }}%;{% endcapture %}
 {% endif %}
 
 {% if _viewbox %}
-  {% assign _viewbox_list = _viewbox | split:' ' | to_f %}
-  {% assign breakpoint_width = _viewbox_list[2] %}
-  {% assign breakpoint_height = _viewbox_list[3] | times:1.5 %}
+  {% assign _viewbox_list = _viewbox | split: ' ' %}
+  {% assign breakpoint_width = _viewbox_list[2].to_f %}
+  {% assign breakpoint_height = _viewbox_list[3].to_f | times:1.5 %}
   {% capture is_wide %}
     {% if breakpoint_width > breakpoint_height %}wide{% endif %}
   {% endcapture %}
@@ -24,7 +22,7 @@
 {% endif %}
 
 <div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
-  style="{{ __width }}; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _viewbox | svg_viewbox_padding: _width }}">
+  style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _viewbox | svg_viewbox_padding: _width }}">
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
@@ -42,7 +40,7 @@
       {% assign keys = include.value %}
       {% for county in include.counties %}
         {% assign fips = county[0] | pad_left: 5, '0' %}
-        {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
+        {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
         {% assign value = county[1] | get: keys %}
 
         {% assign year_values = null %}
@@ -65,9 +63,7 @@
       {% endfor %}
     {% endif %}
 
-    {%
-      include maps/federal_land_ownership.svg
-    %}
+    {% include maps/federal_land_ownership.svg %}
     <g class="counties mesh">
       <use xlink:href="{{ state_svg }}#counties-mesh"></use>
     </g>

@@ -1,26 +1,30 @@
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
-{% assign _ownership = include.ownership %}
+{% assign states_svg = '/maps/states/all.svg' %}
+{% assign offshore_svg = '/maps/offshore/all.svg' %}
 <div class="state svg-container map-container"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
-  <svg class="states map{% if _ownership %} ownership {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
-    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-    <g class="states features">
-      <use xlink:href="{{ states_svg }}#states"></use>
-    </g>
-    {% assign keys = include.value %}
-    {% for state in include.states %}
-    {% assign _state = site.data.states | where: 'id', state[0] | first %}
-    {% if include.href %}<a xlink:href="{{ include.href | replace: '%', state[0] }}">{% endif %}
-      <g class="state feature" {% if include.value %}
-        {% assign value = state[1] | get: keys %}
-        data-value='{{ value | default: 0 | jsonify }}'{% endif %}>
-        <title>{{ _state.name }}: {{ value }}</title>
-        <use xlink:href="{{ states_svg }}#state-{{ state[0] }}"></use>
-      </g>
-    {% if include.href %}</a>{% endif %}
-    {% endfor %}
-    {% include maps/federal_land_ownership.svg %}
-    <g class="states mesh">
-      <use xlink:href="{{ states_svg }}#states-mesh"></use>
-    </g>
+  <svg class="states map{% if include.ownership %} ownership {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+
+    {% if include.states %}
+      {% assign _states_href = include.states_href | default: include.href %}
+      {%
+        include maps/state-areas.html
+        svg=states_svg
+        value=include.value
+        states=include.states
+        href=_states_href
+      %}
+    {% endif %}
+
+    {% if include.offshore_areas %}
+      {% assign _offshore_href = include.offshore_href | default: include.href %}
+      {%
+        include maps/offshore-areas.html
+        svg=offshore_svg
+        value=include.value
+        areas=include.offshore_areas
+        href=_offshore_href
+      %}
+    {% endif %}
+
   </svg>
 </div>

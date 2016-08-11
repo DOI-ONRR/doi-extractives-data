@@ -1,0 +1,24 @@
+NOA:
+  commodities:
+    All:
+      '2009':
+        revenue: 68320
+      '2010':
+        revenue: 139518
+      '2011':
+        revenue: 135248
+      '2012':
+        revenue: 128843
+      '2013':
+        revenue: 4051036
+    Wind:
+      '2009':
+        revenue: 68320
+      '2010':
+        revenue: 139518
+      '2011':
+        revenue: 135248
+      '2012':
+        revenue: 128843
+      '2013':
+        revenue: 4051036

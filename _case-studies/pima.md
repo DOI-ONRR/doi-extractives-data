@@ -42,7 +42,7 @@ In 2014, the combined copper production from Pima County's three major mines tot
 
 ## Employment
 
-Copper mining makes up a relatively small portion of Pima County's overall employment, largely as a result of the Tucson metropolitan area's more diversified economy and workforce. In 2014, copper mining and related activities accounted for less than 1% (2,299 workers) of Pima County's total private-sector employment of 282,653.[^9] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2004 through 2014.[^10]
+Copper mining makes up a relatively small portion of Pima County's overall employment, largely as a result of the Tucson metropolitan area's more diversified economy and workforce. In 2014, copper mining and related activities accounted for less than 1% (2,299 workers) of Pima County's total private-sector employment of 282,653.[^9] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2005 through 2014.[^10]
 
 ### Wage and salary employment in Pima County:<br>Mining industry vs. all other industries[^11]
 
@@ -52,7 +52,7 @@ Copper mining makes up a relatively small portion of Pima County's overall emplo
 
 State revenue from copper extraction is directed back to Pima County primarily through the state's severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state's General Fund, the other 52.4% is distributed to cities and counties.[^12] In 2014, $19.9 million was distributed to all cities and counties in Arizona from the severance tax on metals.[^13]
 
-Pima County derives revenue from copper mining within its borders. However, in order to protect individual mines' sales information, the state does not disclose what percentage of the $19 million distributed to all cities and counties in Arizona from severance taxes goes to Pima County. In 2014, Phelps Dodge Corporation (now Freeport-McMoRan Inc.) and ASARCO LLC, the two largest copper-mining companies in the country, which operate the three largest mines in Pima County, ranked 2<sup>nd</sup> and 4<sup>th</sup> respectively in terms of largest property tax payers.[^14] [^15] These funds are channeled toward public services such as infrastructure development, public safety, and local schools.
+Pima County derives revenue from copper mining within its borders. However, in order to protect individual mines' sales information, the state does not disclose what percentage of the $19.9 million distributed to all cities and counties in Arizona from severance taxes goes to Pima County. In 2014, Phelps Dodge Corporation (now Freeport-McMoRan Inc.) and ASARCO LLC, the two largest copper-mining companies in the country, which operate the three largest mines in Pima County, ranked 2<sup>nd</sup> and 4<sup>th</sup> respectively in terms of largest property tax payers.[^14] [^15] These funds are channeled toward public services such as infrastructure development, public safety, and local schools.
 
 ASARCO LLC also pays royalties to both the state of Arizona and the Tohono O'odham Nation as part of the leasing agreement to operate the Mission Mine, which is located on both state-owned and Indian land.
 

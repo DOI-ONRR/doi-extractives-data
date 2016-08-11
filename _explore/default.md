@@ -5,7 +5,7 @@ permalink: /explore/
 ---
 
 <section class="slab-delta">
-  <div class="container-outer landing-section_top">
+  <div class="container-page-wrapper landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
       <p class="hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
@@ -24,7 +24,7 @@ permalink: /explore/
   </div>
 </section>
 
-<section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
+<section accordion="explore-landing" accordion-desktop="false" class="container-page-wrapper landing-wrapper">
   <section class="container">
     <a id="revenue" class="link-no_under"><h2 class="h3 landing-section_category">Revenue data</h2></a>
     <div class="container-half landing-section" accordion-item aria-expanded="true">
@@ -111,7 +111,3 @@ permalink: /explore/
     </div>
   </section>
 </section>
-<!-- <section class="slab-alpha container-outer container-padded u-centered">
-    <h3>Not sure where to go? Start here &#8230;</h2>
-    <h2><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenues</a></h2>
-</section> -->

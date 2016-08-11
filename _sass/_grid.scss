@@ -1,6 +1,9 @@
 @import 'lib/neat/neat-helpers';
 
 $max-width: em(960) !default;
+$max-vw-margins: 960 * 0.1; // 10vw
+$max-width-huge-px: 960 - $max-vw-margins;
+$max-width-huge: em($max-width-huge-px);
 
 // Breakpoints
 $tiny: em(480);
@@ -8,7 +11,7 @@ $small: em(600);
 $medium: em(768);
 $large: em(900);
 $huge: em(960);
-$huge-plus: $huge + $base-padding;
+$huge-plus: $huge + em($max-vw-margins);
 $jumbo: em(1500);
 $massive: em(1800);
 
@@ -30,6 +33,8 @@ $massive-up: new-breakpoint(min-width $massive);
     @media only screen and (min-width: $small) { @content; }
   } @else if $media == small-to-large {
     @media only screen and (min-width: $small) and (max-width: $large) { @content; }
+  } @else if $media == small-to-huge {
+    @media only screen and (min-width: $small) and (max-width: $huge) { @content; }
   } @else if $media == medium-down {
     @media only screen and (max-width: $medium) { @content; }
   } @else if $media == medium-up {

@@ -29,6 +29,29 @@
   }
 }
 
+.container-page-wrapper {
+  @extend .container;
+  margin-left: $base-padding;
+  margin-right: $base-padding;
+
+
+  @include respond-to(small-to-huge) {
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+  }
+
+  @include respond-to(huge-plus) {
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+    max-width: $max-width;
+  }
+
+  @include respond-to(huge-plus-up) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 %container-side {
 
   @include span-columns(12);

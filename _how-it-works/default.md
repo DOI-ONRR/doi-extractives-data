@@ -5,7 +5,7 @@ permalink: /how-it-works/
 ---
 
 <section class="slab-delta">
-  <div class="container-outer landing-section_top">
+  <div class="container-page-wrapper landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
       <p class="hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
@@ -24,7 +24,7 @@ permalink: /how-it-works/
   </div>
 </section>
 
-<section accordion="how-it-works-landing" accordion-desktop="false" class="container-outer landing-wrapper">
+<section accordion="how-it-works-landing" accordion-desktop="false" class="container-page-wrapper landing-wrapper">
   <section class="container">
     <h2 id="process" class="h3 landing-section_category">The process</h2>
     <div class="container landing-section_open overview">

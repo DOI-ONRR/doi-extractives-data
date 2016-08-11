@@ -1,0 +1,8 @@
+streams:
+  '{source}':
+    '{dest}':
+      '{year}': '{dollars}'
+funds:
+  '{dest}':
+    '{source}':
+      '{year}': '{dollars}'

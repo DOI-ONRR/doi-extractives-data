@@ -89,6 +89,32 @@ UNION
     GROUP BY
         year, commodity;
 
+-- create federal offshore area revenue table
+DROP TABLE IF EXISTS offshore_area_revenue;
+CREATE TABLE offshore_area_revenue AS
+    SELECT
+        year, commodity,
+        area.region AS region_id,
+        area.id AS area_id,
+        SUM(revenue) AS revenue
+    FROM offshore_revenue AS offshore
+    INNER JOIN offshore_planning_areas AS area
+    ON
+        offshore.planning_area = area.name
+    GROUP BY
+        year, commodity, region_id, area_id;
+
+-- then create regional offshore rollups as an aggregate view
+DROP TABLE IF EXISTS offshore_region_revenue;
+CREATE TABLE offshore_region_revenue AS
+    SELECT
+        year, region_id, SUM(revenue) AS revenue, commodity
+    FROM offshore_area_revenue
+    GROUP BY
+        year, region_id, commodity
+    ORDER BY
+        year, revenue DESC;
+
 -- then create national revenue as an aggregate view
 -- on regional revenue
 DROP TABLE IF EXISTS national_revenue;

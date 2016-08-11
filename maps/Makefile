@@ -1,5 +1,6 @@
 node_bin ?= ../node_modules/.bin/
 svgo ?= $(node_bin)svgo --disable=cleanupIDs
+svgeo ?= $(node_bin)svgeo --projection ../lib/albers-custom.js --mesh --
 topojson ?= $(node_nin)topojson
 raster_scale ?= 4
 states = AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY
@@ -48,6 +49,10 @@ states/all.svg: data/us-topology.json
 states/%.svg: data/us-topology.json
 	./bin/state-map.js --state $* --counties -- $^ \
 		| $(svgo) -i - -o $@
+
+offshore/all.svg: data/offshore.json
+	mkdir -p $(dir $@)
+	$(svgeo) $^ > $@
 
 ../_data/viewboxes.yml:
 	echo "# viewboxes:" > $@

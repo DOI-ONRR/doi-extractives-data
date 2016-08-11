@@ -41,7 +41,8 @@ nav_items:
 {% assign top_products = 10 %}
 {% assign steps=9 %}
 
-<main id="states" class="container-outer layout-state-pages">
+
+<main id="national" class="container-outer layout-state-pages">
 
   <div class="container-left-9">
     <div>
@@ -56,8 +57,8 @@ nav_items:
       {%
         include state-map.html
         states=site.data.state_revenues
-        value='products.All.2013.revenue'
-        href='%/'
+        offshore_areas=site.data.offshore_federal_production_areas
+        href=':url'
       %}
     </figure>
 
@@ -88,6 +89,10 @@ nav_items:
 
     {% include location/national-revenue.html %}
 
+    <section id="federal-disbursements">
+      <h2>Federal Disbursements</h2>
+      {% include location/national-disbursements.html %}
+    </section>
 
     <section id="economic-impact">
     <h2>Economic impact</h2>
@@ -102,7 +107,7 @@ nav_items:
     <svg width="0" height="0">
       <defs>
         <clipPath id="state-outline">
-          <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
+          <use xlink:href="{{ site.baseurl }}/maps/states/all.svg#state-{{ state_id }}"></use>
         </clipPath>
       </defs>
     </svg>

@@ -43,7 +43,7 @@ site-data: \
 	data/state_all_production.yml \
 	data/national_all_production.yml \
 	data/federal_county_production \
-	data/state_disbursements.yml \
+	data/federal_disbursements.yml \
 	data/state_exports.yml \
 	data/national_exports.yml \
 	data/state_federal_production.yml \
@@ -51,6 +51,9 @@ site-data: \
 	data/national_gdp.yml \
 	data/state_revenues.yml \
 	data/national_federal_production.yml \
+	data/opt_in_state_revenues \
+	data/offshore_federal_production_areas \
+	data/offshore_federal_production_regions.yml \
 	data/top_state_products
 
 
@@ -192,6 +195,7 @@ data/county_jobs:
 			-c _meta/county_jobs.yml \
 			-o '_$@/{state}.yml'
 
+
 data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -228,7 +232,9 @@ data/revenue: \
 	data/state_revenues.yml \
 	data/county_revenue \
 	data/state_revenues_by_type.yml \
-	data/national_revenues_by_type.yml
+	data/national_revenues_by_type.yml \
+	data/offshore_revenue_regions \
+	data/offshore_revenue_areas \
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -247,19 +253,17 @@ data/county_revenue:
 			-c _meta/county_revenue.yml \
 			-o '_$@/{state}.yml'
 
-data/state_disbursements.yml:
+data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, source, fund, year, \
+		  region, source, fund, year, \
 		  ROUND(dollars, 2) AS dollars \
-		FROM state_disbursements \
+		FROM federal_disbursements \
 		WHERE \
-		  LENGTH(state) = 2 AND \
-		  source IS NOT NULL AND \
 		  dollars > 0 \
-		ORDER BY state, source, fund, year" \
+		ORDER BY year, dollars DESC" \
 		| $(nestly) --if ndjson \
-			-c _meta/state_disbursements.yml \
+			-c _meta/federal_disbursements.yml \
 			-o _$@
 
 data/state_federal_production.yml:
@@ -290,6 +294,38 @@ data/national_federal_production.yml:
 		| $(nestly) --if ndjson \
 			-c _meta/national_federal_production.yml \
 			-o _$@
+
+data/offshore_federal_production_regions.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, region_id, \
+			product, product_name, units, \
+			ROUND(volume) AS volume \
+		FROM federal_offshore_region_production \
+		ORDER BY \
+			region_id, product, product_name, units, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_federal_production_regions.yml \
+			-o _$@
+
+data/offshore_federal_production_areas:
+	$(query) --format ndjson " \
+		SELECT \
+		  year, \
+		  region_id, \
+		  area_id, \
+		  product, product_name, units, \
+		  ROUND(volume) AS volume \
+		FROM federal_offshore_area_production \
+		WHERE \
+			region_id IS NOT NULL AND \
+			volume IS NOT NULL \
+		ORDER BY \
+			region_id, \
+			area_id, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_federal_production_areas.yml \
+			-o '_$@/{region_id}.yml'
 
 data/federal_county_production:
 	$(query) --format ndjson " \
@@ -366,6 +402,34 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
+data/offshore_revenue_regions.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, year, \
+		  region_id, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_region_revenue \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenue_regions.yml \
+			-o _$@
+
+data/offshore_revenue_areas:
+	$(query) --format ndjson " \
+		SELECT \
+		  commodity, year, \
+		  region_id, area_id, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_area_revenue \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenue_areas.yml \
+			-o '_$@/{area_id}.yml'
+
 data/top_state_products:
 	# top N states for each product category in each year
 	top=3 percent=20; \
@@ -419,6 +483,17 @@ data/land_stats.yml:
 			-c _meta/land_stats.yml \
 			-o _$@
 
+data/opt_in_state_revenues:
+	mkdir -p _$@
+	$(query) --format ndjson " \
+		SELECT \
+			state, year, source, dest, dollars \
+		FROM opt_in_state_revenues \
+		ORDER BY state, year, dollars DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/opt_in_state_revenues.yml \
+			-o '_$@/{state}.yml'
+
 db: $(db)
 
 $(db): \
@@ -432,7 +507,8 @@ $(db): \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
-	tables/land_stats
+	tables/land_stats \
+	tables/opt_in_state_revenues
 
 tables/geo: \
 	tables/states \
@@ -549,19 +625,19 @@ tables/exports: data/state/exports-by-industry.tsv
 	$(call load-table,$^,exports)
 
 tables/disbursements: \
-	tables/state_disbursements \
+	tables/federal_disbursements \
 	tables/disbursements_historic_preservation
-	@$(call load-sql,data/db/rollup-state-disbursements.sql)
+	@$(call load-sql,data/disbursements/rollup.sql)
 
-tables/state_disbursements: data/_input/onrr/disbursements/state.tsv
-	@$(call drop-table,state_disbursements)
-	$(tito) -r tsv --map ./data/transform/state_disbursements.js $^ \
-		| $(tables) -t ndjson -n state_disbursements
+tables/federal_disbursements: data/disbursements/federal.tsv
+	@$(call drop-table,federal_disbursements)
+	$(tito) -r tsv --map ./data/disbursements/transform-federal.js $^ \
+		| $(tables) -t ndjson -n federal_disbursements
 
-tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv
+tables/disbursements_historic_preservation: data/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
-		--map ./data/transform/disbursements_historic_preservation.js \
+		--map ./data/disbursements/transform-hpf.js \
 		 $^ \
 		| $(tables) -t ndjson -n disbursements_historic_preservation
 
@@ -570,3 +646,13 @@ tables/land_stats: data/land-stats/land-stats.tsv
 	$(tito) --map ./data/land-stats/transform.js -r tsv $^ \
 		| $(tables) -t ndjson -n land_stats
 
+
+tables/opt_in_state_revenues: data/state/opt-in/
+	@$(call drop-table,opt_in_state_revenues)
+	for state_dir in $^??; do \
+		STATE=$${state_dir##$^} \
+		$(tito) --multiple --map ./data/state/opt-in/revenue-transform.js \
+			-r tsv $${state_dir}/revenue-distribution.tsv > $${state_dir}/revenue-distribution.ndjson; \
+		$(tables) -t ndjson -n opt_in_state_revenues -i $${state_dir}/revenue-distribution.ndjson; \
+		rm $${state_dir}/revenue-distribution.ndjson; \
+	done

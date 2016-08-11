@@ -24,7 +24,7 @@ CREATE TABLE federal_regional_production AS
         product, product_name, units, SUM(volume) AS volume
     FROM federal_state_production
     GROUP BY
-        year, product, product_name, units
+        year, region_id, region_type, product, product_name, units
 UNION
     SELECT
         year, area.id AS region_id, 'offshore' AS region_type,
@@ -49,9 +49,50 @@ UNION
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, product, product_name, units
+        year, region_id, region_type, product, product_name, units
 ORDER BY
     year, product, product_name, units, volume DESC;
+
+-- create federal offshore area production table
+DROP TABLE IF EXISTS federal_offshore_area_production;
+CREATE TABLE federal_offshore_area_production AS
+    SELECT
+        year, area.region AS region_id, area.id AS area_id,
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'Salt (tons)'
+            ELSE product
+        END AS product,
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'Salt'
+            ELSE product_name
+        END AS product_name,
+        CASE
+            WHEN LOWER(product) == 'salt (ton)'
+            THEN 'tons'
+            ELSE units
+        END AS units,
+        SUM(volume) AS volume
+    FROM federal_offshore_production AS offshore
+    INNER JOIN offshore_planning_areas AS area
+    ON
+        offshore.planning_area = area.name
+    GROUP BY
+        year, region_id, area_id, product, product_name, units
+    ORDER BY
+        year, product, product_name, units, volume DESC;
+
+-- then create regional offshore rollups as an aggregate view
+DROP TABLE IF EXISTS federal_offshore_region_production;
+CREATE TABLE federal_offshore_region_production AS
+    SELECT
+        year, region_id, product, product_name, units, SUM(volume) AS volume
+    FROM federal_offshore_area_production
+    GROUP BY
+        year, region_id, product, product_name, units
+    ORDER BY
+        year, product, product_name, units, volume DESC;
 
 -- then create national revenue rollups as an aggregate view on
 -- regional revenue

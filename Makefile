@@ -43,7 +43,7 @@ site-data: \
 	data/state_all_production.yml \
 	data/national_all_production.yml \
 	data/federal_county_production \
-	data/state_disbursements.yml \
+	data/federal_disbursements.yml \
 	data/state_exports.yml \
 	data/national_exports.yml \
 	data/state_federal_production.yml \
@@ -51,6 +51,7 @@ site-data: \
 	data/national_gdp.yml \
 	data/state_revenues.yml \
 	data/national_federal_production.yml \
+	data/opt_in_state_revenues \
 	data/top_state_products
 
 
@@ -247,19 +248,17 @@ data/county_revenue:
 			-c _meta/county_revenue.yml \
 			-o '_$@/{state}.yml'
 
-data/state_disbursements.yml:
+data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, source, fund, year, \
+		  region, source, fund, year, \
 		  ROUND(dollars, 2) AS dollars \
-		FROM state_disbursements \
+		FROM federal_disbursements \
 		WHERE \
-		  LENGTH(state) = 2 AND \
-		  source IS NOT NULL AND \
 		  dollars > 0 \
-		ORDER BY state, source, fund, year" \
+		ORDER BY year, dollars DESC" \
 		| $(nestly) --if ndjson \
-			-c _meta/state_disbursements.yml \
+			-c _meta/federal_disbursements.yml \
 			-o _$@
 
 data/state_federal_production.yml:
@@ -419,6 +418,17 @@ data/land_stats.yml:
 			-c _meta/land_stats.yml \
 			-o _$@
 
+data/opt_in_state_revenues:
+	mkdir -p _$@
+	$(query) --format ndjson " \
+		SELECT \
+			state, year, source, dest, dollars \
+		FROM opt_in_state_revenues \
+		ORDER BY state, year, dollars DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/opt_in_state_revenues.yml \
+			-o '_$@/{state}.yml'
+
 db: $(db)
 
 $(db): \
@@ -432,7 +442,8 @@ $(db): \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
-	tables/land_stats
+	tables/land_stats \
+	tables/opt_in_state_revenues
 
 tables/geo: \
 	tables/states \
@@ -549,19 +560,19 @@ tables/exports: data/state/exports-by-industry.tsv
 	$(call load-table,$^,exports)
 
 tables/disbursements: \
-	tables/state_disbursements \
+	tables/federal_disbursements \
 	tables/disbursements_historic_preservation
-	@$(call load-sql,data/db/rollup-state-disbursements.sql)
+	@$(call load-sql,data/disbursements/rollup.sql)
 
-tables/state_disbursements: data/_input/onrr/disbursements/state.tsv
-	@$(call drop-table,state_disbursements)
-	$(tito) -r tsv --map ./data/transform/state_disbursements.js $^ \
-		| $(tables) -t ndjson -n state_disbursements
+tables/federal_disbursements: data/disbursements/federal.tsv
+	@$(call drop-table,federal_disbursements)
+	$(tito) -r tsv --map ./data/disbursements/transform-federal.js $^ \
+		| $(tables) -t ndjson -n federal_disbursements
 
-tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv
+tables/disbursements_historic_preservation: data/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
-		--map ./data/transform/disbursements_historic_preservation.js \
+		--map ./data/disbursements/transform-hpf.js \
 		 $^ \
 		| $(tables) -t ndjson -n disbursements_historic_preservation
 
@@ -570,3 +581,13 @@ tables/land_stats: data/land-stats/land-stats.tsv
 	$(tito) --map ./data/land-stats/transform.js -r tsv $^ \
 		| $(tables) -t ndjson -n land_stats
 
+
+tables/opt_in_state_revenues: data/state/opt-in/
+	@$(call drop-table,opt_in_state_revenues)
+	for state_dir in $^??; do \
+		STATE=$${state_dir##$^} \
+		$(tito) --multiple --map ./data/state/opt-in/revenue-transform.js \
+			-r tsv $${state_dir}/revenue-distribution.tsv > $${state_dir}/revenue-distribution.ndjson; \
+		$(tables) -t ndjson -n opt_in_state_revenues -i $${state_dir}/revenue-distribution.ndjson; \
+		rm $${state_dir}/revenue-distribution.ndjson; \
+	done

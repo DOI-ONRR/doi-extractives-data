@@ -4,7 +4,7 @@
 <p>We do have data about disbursements to state governments, which respresent about 38% of federal revenue from onshore natural resource extraction and less than 1% of revenue from offshore natural resource extraction.</p>
 
 <p>
-  {% assign disbursements = site.data.federal_disbursements[state_id] %}
+  {% assign disbursements = site.data.federal_disbursements.US %}
 
   In {{ year }}, ONRR disbursed
   {% if disbursements %}
@@ -12,7 +12,7 @@
   {% else %}
     did not receive any
   {% endif %}
-   to the state of {{ state_name }}.
+    nationwide.
 
   {% if disbursements %}
     {%

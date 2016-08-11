@@ -1,19 +1,23 @@
 <table is="bar-chart-table">
   <thead>
-    <th>Year</th>
-    <th class="numeric" data-series="total">Total</th>
-    <th class="numeric" data-series="onshore">Onshore</th>
-    <th class="numeric" data-series="offshore">Offshore</th>
+    <th>Fund</th>
+    <th class="numeric">Total</th>
+    <th class="numeric">Onshore</th>
+    <th class="numeric">Offshore</th>
   </thead>
   <tbody>
-  {% for _year in include.values.All %}
-    {% assign y = _year[0] %}
+  {% for _fund in include.values %}
+    {% if _fund[0] == 'All' %}{% continue %}{% endif %}
+    {% assign _fund_name = _fund[0] %}
+    {% assign _values = _fund[1] %}
+    {% if _values.All[year] %}
     <tr>
-      <td>{{ y }}</td>
-      <td class="numeric" data-series="total" data-value="{{ include.values.All[y] }}">${{ include.values.All[y] | round | intcomma }}</td>
-      <td class="numeric" data-series="onshore" data-value="{{ include.values.Onshore[y] }}">${{ include.values.Onshore[y] | round | intcomma }}</td>
-      <td class="numeric" data-series="offshore" data-value="{{ include.values.Offshore[y] }}">${{ include.values.Offshore[y] | round | intcomma }}</td>
+      <td>{{ _fund_name | xml_escape }}</td>
+      <td class="numeric" data-value="{{ _values.All[year] | default: 0 }}">${{ _values.All[year] | round | intcomma }}</td>
+      <td class="numeric" data-value="{{ _values.Onshore[year] | default: 0 }}">${{ _values.Onshore[year] | round | intcomma }}</td>
+      <td class="numeric" data-value="{{ _values.Offshore[year] | default: 0 }}">${{ _values.Offshore[year] | round | intcomma }}</td>
     </tr>
+    {% endif %}
   {% endfor %}
   </tbody>
 </table>

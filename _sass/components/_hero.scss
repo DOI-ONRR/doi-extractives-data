@@ -26,11 +26,11 @@
   padding-bottom: $base-padding-large;
   padding-right: $base-padding-large;
   padding-top: $base-padding-jumbo;
+}
 
-  h3 {
-    @include font-size(1.375);
-    font-weight: $weight-light;
-  }
+.hero-description_text {
+  @include font-size(1.375);
+  font-weight: $weight-light;
 }
 
 .hero-title_text {
@@ -46,6 +46,10 @@
   padding-bottom: $base-padding-large;
   padding-right: $base-padding-large;
   padding-top: $base-padding-large;
+
+  @include respond-to(medium-up) {
+    padding-right: 0;
+  }
 }
 
 .hero-right {

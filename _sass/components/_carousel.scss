@@ -14,8 +14,7 @@
 
 .carousel {
   background-color: $pale-blue;
-  border-left: 4px solid $white;
-  border-right: 4px solid $white;
+  border: 0;
   padding-bottom: 0;
   padding-top: $base-padding-extra;
   text-align: center;
@@ -33,12 +32,21 @@
 }
 
 
-
 .top-ribbon {
   .top-ribbon-carousel {
     padding-top: $base-padding-large;
     position: relative;
   }
+
+  .top-ribbon-hero {
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+  }
+}
+
+.container-page-wrapper.top-ribbon {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 svg {
@@ -52,6 +60,7 @@ svg {
 @include respond-to(tiny-up) {
 
   .top-ribbon {
+
 
 
     .top-ribbon-carousel {
@@ -93,6 +102,11 @@ svg {
 
 @include respond-to(medium-up) {
 
+  .carousel {
+    border-left: 4px solid $white;
+    border-right: 4px solid $white;
+  }
+
   .top-ribbon {
     align-items: flex-end;
     display: flex;
@@ -101,6 +115,11 @@ svg {
       align-self: stretch;
       padding-top: $base-padding-large;
       position: relative;
+    }
+
+    .top-ribbon-hero {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     svg {
@@ -126,6 +145,12 @@ svg {
       &.small {
         display: none;
       }
+    }
+
+    &.container-page-wrapper {
+      padding-left: $base-padding;
+      padding-right: $base-padding;
+
     }
   }
 

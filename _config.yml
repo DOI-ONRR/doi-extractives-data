@@ -70,7 +70,8 @@ collections:
     output: true
     permalink: /how-it-works/:path/
   offshore_areas:
-    output: false
+    output: true
+    # permalinks are defined in _offshore_areas/???.md
   offshore_regions:
     output: false
     permalink: /offshore/:path/
@@ -90,7 +91,12 @@ defaults:
       type: states
     values:
       layout: state-page
-      offshore: false
+
+  - scope:
+      path: ''
+      type: offshore_areas
+    values:
+      layout: offshore-area
 
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42

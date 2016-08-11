@@ -4,7 +4,7 @@ require 'json'
 module EITI
 
   module Data
-
+    # module_function
     # access a nested property of the (assumed) Hash data:
     #
     # >> EITI::Data.get({'a' => 1000}, 'a')

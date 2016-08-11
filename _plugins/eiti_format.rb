@@ -2,6 +2,7 @@ require 'liquid'
 
 module EITI
   module Format
+    # module_function
     # returns the singular suffix of a value if the value is 1,
     # otherwise the singular form
     #
@@ -16,6 +17,7 @@ module EITI
     def plural(num, plural = 's', singular = '')
       num.to_i == 1 ? singular : plural
     end
+
 
     # format a number as a percentage with fixed precision, with an
     # additionally configurable "small" placeholder to indicate values

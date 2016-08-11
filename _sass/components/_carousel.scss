@@ -22,6 +22,8 @@
   &.carousel-column {
     display: flex;
     flex-direction: column;
+    border-left: 0;
+    border-right: 0;
   }
 }
 
@@ -29,7 +31,6 @@
   flex: 1 0 auto;
   padding-left: $base-padding;
   padding-right: $base-padding;
-  // padding-top: $base-padding-large;
   padding-top: 0;
 }
 
@@ -77,14 +78,6 @@ svg {
     display: none;
   }
 }
-
-// .carousel-column.container-right-4 {
-//   @include span-columns(12);
-// }
-
-// .hero-left-column.container-left-8 {
-//   @include span-columns(12);
-// }
 
 @include respond-to(tiny-up) {
 
@@ -139,11 +132,24 @@ svg {
   }
 }
 
+@include respond-to(tiny-to-small) {
+  .carousel-top.about_intro-callout > * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+
 @include respond-to(small-to-huge) {
   .top-ribbon .top-ribbon-hero,
   .carousel-top {
     padding-left: $page-padding;
     padding-right: $page-padding;
+
+    &.about_intro-callout > * {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
   }
 }
 
@@ -213,14 +219,6 @@ svg {
       margin-right: $page-padding;
     }
   }
-
-  // .carousel-column.container-right-4 {
-  //   @include span-columns(12);
-  // }
-
-  // .hero-left-column.container-left-8 {
-  //   @include span-columns(12);
-  // }
 }
 
 @include respond-to(medium-to-huge-plus) {
@@ -236,29 +234,7 @@ svg {
 }
 
 @include respond-to(huge-up) {
-  // .top-ribbon.container-page-wrapper:not(.top-ribbon-column),
-  // .top-ribbon.top-ribbon-column.container-page-wrapper {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 
-  .carousel-column.container-right-4 {
-    // @include span-columns(4);
-    // @include omega();
-
-    // .carousel-top {
-    //   padding-left: $base-padding;
-    //   padding-right: $base-padding;
-    // }
-  }
-
-  // .hero-left-column.container-left-8 {
-  //   @include span-columns(8);
-  // }
-
-  // .top-ribbon.top-ribbon-column {
-  //   flex-direction: row;
-  // }
   .top-ribbon.top-ribbon-column {
     flex-direction: row;
     margin-left: $page-padding;
@@ -270,7 +246,10 @@ svg {
     }
   }
 
-
+  .carousel.carousel-column {
+    border-left: 4px solid $white;
+    border-right: 4px solid $white;
+  }
 }
 
 @include respond-to(huge-plus-up) {
@@ -278,8 +257,4 @@ svg {
     margin-left: auto;
     margin-right: auto;
   }
-
-  // .top-ribbon.top-ribbon-column {
-  //   flex-direction: row;
-  // }
 }

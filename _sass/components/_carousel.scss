@@ -231,6 +231,7 @@ svg {
 
   .hero-left-column.container-left-8 {
     @include span-columns(12);
+    margin-right: 0;
   }
 }
 
@@ -260,7 +261,16 @@ svg {
   // }
   .top-ribbon.top-ribbon-column {
     flex-direction: row;
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+
+    .top-ribbon-hero {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
+
+
 }
 
 @include respond-to(huge-plus-up) {

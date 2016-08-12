@@ -5,21 +5,19 @@ permalink: /how-it-works/
 ---
 
 <section class="slab-delta">
-  <div class="container-page-wrapper landing-section_top">
-    <div class="container-left-8 hero-left">
+  <div class="container-page-wrapper landing-section_top top-ribbon top-ribbon-column">
+    <div class="container-left-8 hero-left hero-left-column top-ribbon-hero">
       <h1>{{ page.title }}</h1>
       <p class="hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
       <p class="hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#natural-resources">natural resources</a> are managed, and what <a href="#laws-governance">laws and governance</a> relate to the industry.</p>
     </div>
-    <div class="container-right-4 hero-right">
-      <div class="hero-right_square">
-        <figure>
-          <a href="{{site.baseurl}}/how-it-works/production/">
-            <img class="hero-right_image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
-          </a>
-          <figcaption class="hero-right_caption"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources are produced in the U.S.?</a></figcaption>
-        </figure>
-      </div>
+    <div class="container-right-4 carousel carousel-column carousel-has-image top-ribbon-carousel">
+      <figure class="carousel-top">
+        <a href="{{site.baseurl}}/how-it-works/production/">
+          <img class="hero-right_image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
+        </a>
+      </figure>
+      <figcaption class="carousel-bottom hero-right_caption"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources are produced in the U.S.?</a></figcaption>
     </div>
   </div>
 </section>

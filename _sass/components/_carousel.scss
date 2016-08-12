@@ -83,6 +83,10 @@
   .top-ribbon-hero {
     padding-left: $base-padding;
     padding-right: $base-padding;
+
+    &.hero-left-column {
+      align-self: flex-start;
+    }
   }
 
   &.top-ribbon-column {
@@ -242,10 +246,6 @@ svg {
       }
     }
   }
-
-  .top-ribbon-hero {
-    align-self: flex-end;
-  }
 }
 
 @include respond-to(medium-to-huge) {
@@ -291,6 +291,10 @@ svg {
     &.carousel-column {
       border-left: 4px solid $white;
       border-right: 4px solid $white;
+
+      .carousel-top {
+        padding-top: 0;
+      }
     }
 
     &.carousel-has-image {

@@ -35,6 +35,9 @@
     <g class="counties features">
       <use xlink:href="{{ state_svg }}#counties"></use>
     </g>
+    <g class="counties mesh">
+      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+    </g>
 
     {% if include.counties %}
       {% assign keys = include.value %}
@@ -64,9 +67,6 @@
     {% endif %}
 
     {% include maps/federal_land_ownership.svg %}
-    <g class="counties mesh">
-      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
-    </g>
     <g class="state feature overlay">
       <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
     </g>

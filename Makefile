@@ -233,7 +233,7 @@ data/revenue: \
 	data/county_revenue \
 	data/state_revenues_by_type.yml \
 	data/national_revenues_by_type.yml \
-	data/offshore_revenue_regions \
+	data/offshore_revenue_regions.yml \
 	data/offshore_revenue_areas \
 
 data/county_revenue:
@@ -287,7 +287,6 @@ data/national_federal_production.yml:
 		  ROUND(volume) AS volume \
 		FROM federal_national_production \
 		WHERE \
-		  volume != 0 AND \
 		  volume IS NOT NULL \
 		ORDER BY \
 			product, product_name, units, year" \

@@ -37,6 +37,7 @@
       padding-top: 0;
 
       img {
+        background-color: $pale-blue;
         border: 0;
         padding-left: 20%;
         padding-right: 20%;
@@ -59,7 +60,18 @@
 }
 
 .carousel-bottom.hero-right_caption {
+  @include heading('para-sm');
+
+  background-color: $mid-blue;
+  color: $dark-gray;
+  font-weight: $weight-book;
+  margin-bottom: 0;
+  padding: $base-padding;
   text-align: center;
+
+  a {
+    color: $dark-gray;
+  }
 }
 
 .carousel-button {
@@ -81,8 +93,10 @@
   }
 
   .top-ribbon-hero {
+    padding-bottom: $base-padding-large;
     padding-left: $base-padding;
     padding-right: $base-padding;
+    padding-top: $base-padding-large;
 
     &.hero-left-column {
       align-self: flex-start;
@@ -105,6 +119,16 @@ svg {
   &.small {
     display: none;
   }
+}
+
+.hero-description {
+  @include heading('para-lg');
+}
+
+// used to override .hero-description for homepage
+.hero-description_text {
+  @include font-size(1.375);
+  font-weight: $weight-light;
 }
 
 @include respond-to(tiny-up) {

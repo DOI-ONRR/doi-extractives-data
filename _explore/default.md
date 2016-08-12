@@ -5,19 +5,19 @@ permalink: /explore/
 ---
 
 <section class="slab-delta">
-  <div class="container-page-wrapper landing-section_top top-ribbon top-ribbon-column">
-    <div class="container-left-8 hero-left hero-left-column top-ribbon-hero">
+  <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
+    <div class="container-left-8 ribbon-hero ribbon-hero-column">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
-      <p class="hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
+      <p class="ribbon-hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
+      <p class="ribbon-hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
     </div>
-    <div class="container-right-4 carousel-column carousel-has-image top-ribbon-carousel">
-      <figure class="carousel-top">
+    <div class="container-right-4 ribbon-carousel-column ribbon-carousel-has-image ribbon-carousel">
+      <figure class="ribbon-carousel-top">
         <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+          <img class="ribbon-carousel-image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
         </a>
       </figure>
-      <figcaption class="carousel-bottom hero-right_caption">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
+      <figcaption class="ribbon-carousel-bottom">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
     </div>
   </div>
 </section>

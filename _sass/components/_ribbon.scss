@@ -31,10 +31,10 @@
   text-align: center;
 
   &.ribbon-carousel-column {
-    display: flex;
-    flex-direction: column;
     border-left: 0;
     border-right: 0;
+    display: flex;
+    flex-direction: column;
 
     &:first-child {
       border-bottom: 4px solid $white;
@@ -108,13 +108,12 @@
   padding: 1em;
 }
 
-.ribbon svg {
-  width: 100%;
-  float: left;
-}
-
-
 .ribbon {
+  svg {
+    float: left;
+    width: 100%;
+  }
+
   .ribbon-carousel {
     padding-top: $base-padding-large;
     position: relative;
@@ -273,12 +272,12 @@ svg {
     }
 
     svg {
-      width: 100%;
-      position: absolute;
-      left: 0;
       bottom: 0;
-      right: 0;
       display: inline-block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
 
       .rig-dollars {
         transform: inherit;

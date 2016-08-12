@@ -12,7 +12,7 @@
 //
 // Styleguide components.carousel
 
-.carousel {
+.top-ribbon-carousel {
   background-color: $pale-blue;
   border: 0;
   padding-bottom: 0;
@@ -188,7 +188,7 @@ svg {
     }
   }
 
-  .carousel:not(.carousel-column) {
+  .top-ribbon-carousel:not(.carousel-column) {
     .carousel-button {
       float: left;
       position: absolute;
@@ -198,7 +198,7 @@ svg {
     }
   }
 
-  .carousel {
+  .top-ribbon-carousel {
     &.carousel-column {
       .carousel-top {
         padding-top: $base-padding-large;
@@ -241,7 +241,7 @@ svg {
 
 @include respond-to(medium-up) {
 
-  .carousel {
+  .top-ribbon-carousel {
     border-left: 4px solid $white;
     border-right: 4px solid $white;
 
@@ -332,7 +332,7 @@ svg {
     }
   }
 
-  .carousel {
+  .top-ribbon-carousel {
     &.carousel-column {
       border-left: 4px solid $white;
       border-right: 4px solid $white;

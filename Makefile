@@ -205,8 +205,7 @@ data/state_self_employment.yml:
 		FROM self_employment \
 		WHERE \
 		  region IS NOT NULL AND \
-		  region != 'US' AND \
-		  jobs > 0  \
+		  region != 'US' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -355,7 +354,6 @@ data/state_revenues.yml:
 		  ROUND(revenue) AS revenue, \
 		  rank \
 		FROM state_revenue_rank \
-		WHERE revenue != 0 \
 		ORDER BY \
 			state, commodity, year" \
 		| $(nestly) --if ndjson \
@@ -368,7 +366,7 @@ data/national_revenues.yml:
 		  commodity, year, \
 		  ROUND(revenue) AS revenue \
 		FROM national_revenue \
-		WHERE revenue != 0 \
+		WHERE year IS NOT NULL \
 		ORDER BY \
 			commodity, year" \
 		| $(nestly) --if ndjson \

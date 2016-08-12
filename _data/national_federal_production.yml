@@ -1,15 +1,81 @@
 US:
   products:
+    Borate Products (ton):
+      name: Borate Products
+      units: ton
+      volume:
+        '2005':
+          volume: 33706
+        '2006':
+          volume: 33106
+        '2007':
+          volume: 32736
+        '2008':
+          volume: 33520
+        '2009':
+          volume: 31284
+        '2010':
+          volume: 130833
+        '2011':
+          volume: 157392
+        '2012':
+          volume: 146943
+        '2013':
+          volume: 156530
+        '2014':
+          volume: 162731
     Brine Barrels (barrels):
       name: Brine Barrels
       units: barrels
       volume:
         '2006':
           volume: 66862
+    Brine Products (tons):
+      name: Brine Products
+      units: tons
+      volume:
+        '2005':
+          volume: 52765
+        '2006':
+          volume: 84052
+        '2007':
+          volume: 46600
+        '2008':
+          volume: 77591
+        '2009':
+          volume: 55478
+        '2010':
+          volume: 68328
+        '2011':
+          volume: 73522
+        '2012':
+          volume: 70061
+        '2013':
+          volume: 61077
+        '2014':
+          volume: 51291
     Clay (tons):
       name: Clay
       units: tons
       volume:
+        '2005':
+          volume: 62138
+        '2006':
+          volume: 84876
+        '2007':
+          volume: 67014
+        '2008':
+          volume: 25139
+        '2009':
+          volume: 7021
+        '2010':
+          volume: 15627
+        '2011':
+          volume: 21891
+        '2012':
+          volume: 29990
+        '2013':
+          volume: 28333
         '2014':
           volume: 33520
     Coal (tons):
@@ -17,25 +83,25 @@ US:
       units: tons
       volume:
         '2005':
-          volume: 415417017
+          volume: 440336907
         '2006':
-          volume: 422759556
+          volume: 445195265
         '2007':
-          volume: 435839437
+          volume: 454801297
         '2008':
-          volume: 468615143
+          volume: 489080776
         '2009':
-          volume: 429263346
+          volume: 448430668
         '2010':
-          volume: 438489367
+          volume: 456886171
         '2011':
-          volume: 436025533
+          volume: 451869507
         '2012':
-          volume: 403187584
+          volume: 422508325
         '2013':
-          volume: 376686236
+          volume: 398004424
         '2014':
-          volume: 375266659
+          volume: 409345081
     Coal Bed Methane (mcf):
       name: Coal Bed Methane
       units: mcf
@@ -73,25 +139,25 @@ US:
       units: tons
       volume:
         '2005':
-          volume: 13141
+          volume: 13890
         '2006':
-          volume: 19002
+          volume: 19521
         '2007':
-          volume: 10960
+          volume: 12662
         '2008':
-          volume: 11909
+          volume: 12131
         '2009':
-          volume: 8726
+          volume: 9703
         '2010':
-          volume: 8974
+          volume: 10150
         '2011':
-          volume: 8386
+          volume: 9115
         '2012':
-          volume: 21424
+          volume: 22934
         '2013':
-          volume: 15448
+          volume: 15577
         '2014':
-          volume: 20282
+          volume: 20560
     Drip or Scrubber Condensate (bbl):
       name: Drip or Scrubber Condensate
       units: bbl
@@ -412,8 +478,66 @@ US:
           volume: 13016
         '2010':
           volume: 28082
+        '2011':
+          volume: 22568
         '2012':
           volume: 35927
+        '2013':
+          volume: 24919
+        '2014':
+          volume: 28936
+    Gold Products (ounces):
+      name: Gold Products
+      units: ounces
+      volume:
+        '2009':
+          volume: 7
+        '2011':
+          volume: 10
+    Gold and Silver Products (oz):
+      name: Gold and Silver Products
+      units: oz
+      volume:
+        '2005':
+          volume: 43
+        '2006':
+          volume: 74
+        '2007':
+          volume: 40
+        '2008':
+          volume: 7
+        '2009':
+          volume: 217
+        '2010':
+          volume: 122
+        '2011':
+          volume: 23
+        '2013':
+          volume: 1
+    Hardrock Products (tons):
+      name: Hardrock Products
+      units: tons
+      volume:
+        '2005':
+          volume: 36756
+        '2006':
+          volume: 68941
+        '2007':
+          volume: 142378
+        '2008':
+          volume: 187627
+        '2009':
+          volume: 182432
+        '2010':
+          volume: 158266
+        '2011':
+          volume: 174574
+        '2012':
+          volume: 137956
+        '2013':
+          volume: 71696
+        '2014':
+          volume: 22598
     Inlet Scrubber (bbl):
       name: Inlet Scrubber
       units: bbl
@@ -469,23 +593,23 @@ US:
         '2005':
           volume: 207576
         '2006':
-          volume: 223123
+          volume: 224356
         '2007':
-          volume: 221198
+          volume: 222818
         '2008':
-          volume: 203433
+          volume: 204421
         '2009':
-          volume: 194150
+          volume: 196203
         '2010':
-          volume: 184361
+          volume: 184879
         '2011':
-          volume: 176582
+          volume: 178144
         '2012':
-          volume: 155035
+          volume: 157505
         '2013':
-          volume: 145983
+          volume: 146812
         '2014':
-          volume: 143272
+          volume: 144259
     Muriate Of Potash-Granular (tons):
       name: Muriate Of Potash-Granular
       units: tons
@@ -560,6 +684,26 @@ US:
           volume: 1061650261
         '2014':
           volume: 696431298
+    Other Coal Products (tons):
+      name: Other Coal Products
+      units: tons
+      volume:
+        '2006':
+          volume: 7056
+        '2008':
+          volume: 2232
+        '2009':
+          volume: 6060
+        '2010':
+          volume: 8100
+        '2011':
+          volume: 8496
+        '2012':
+          volume: 7316
+        '2013':
+          volume: 10666
+        '2014':
+          volume: 142273
     Other Liquid Hydrocarbons (bbl):
       name: Other Liquid Hydrocarbons
       units: bbl
@@ -584,12 +728,60 @@ US:
           volume: 7622
         '2013':
           volume: 6481
+    Other Potassium Products (tons):
+      name: Other Potassium Products
+      units: tons
+      volume:
+        '2005':
+          volume: 8213
+        '2006':
+          volume: 237500
+        '2007':
+          volume: 231617
+        '2008':
+          volume: 539195
+        '2009':
+          volume: 353007
+        '2010':
+          volume: 400303
+        '2011':
+          volume: 526581
+        '2012':
+          volume: 158953
+        '2013':
+          volume: 171599
+        '2014':
+          volume: 449740
+    Other Sodium Products (tons):
+      name: Other Sodium Products
+      units: tons
+      volume:
+        '2005':
+          volume: 231283
+        '2006':
+          volume: 362307
+        '2007':
+          volume: 369872
+        '2008':
+          volume: 428533
+        '2009':
+          volume: 239828
+        '2010':
+          volume: 393009
+        '2011':
+          volume: 471675
+        '2012':
+          volume: 371833
+        '2013':
+          volume: 298010
+        '2014':
+          volume: 488493
     Phosphate Raw Ore (tons):
       name: Phosphate Raw Ore
       units: tons
       volume:
         '2005':
-          volume: 2621832
+          volume: 3172458
         '2006':
           volume: 2381392
         '2007':
@@ -599,21 +791,39 @@ US:
         '2009':
           volume: 3423741
         '2010':
-          volume: 3523585
+          volume: 3583213
         '2011':
-          volume: 4690032
+          volume: 4911219
         '2012':
-          volume: 4467766
+          volume: 5209329
         '2013':
-          volume: 4960123
+          volume: 5073310
         '2014':
           volume: 5777094
     Potash (tons):
       name: Potash
       units: tons
       volume:
+        '2005':
+          volume: 440674
         '2006':
-          volume: 492294
+          volume: 507207
+        '2007':
+          volume: 448032
+        '2008':
+          volume: 326418
+        '2009':
+          volume: 278149
+        '2010':
+          volume: 345161
+        '2011':
+          volume: 398067
+        '2012':
+          volume: 254825
+        '2013':
+          volume: 296669
+        '2014':
+          volume: 208401
     Processed (Residue) Gas (mcf):
       name: Processed (Residue) Gas
       units: mcf
@@ -672,6 +882,14 @@ US:
           volume: 6350
         '2007':
           volume: 2400
+        '2008':
+          volume: 11300
+        '2009':
+          volume: 1595
+        '2010':
+          volume: 1000
+        '2014':
+          volume: 960
     Salt (tons):
       name: Salt
       units: tons
@@ -679,65 +897,73 @@ US:
         '2004':
           volume: 33299
         '2005':
-          volume: 28603
+          volume: 442406
         '2006':
-          volume: 29258
+          volume: 542090
         '2007':
-          volume: 24254
+          volume: 730141
         '2008':
-          volume: 341513
+          volume: 661369
         '2009':
-          volume: 400995
+          volume: 669716
         '2010':
-          volume: 460779
+          volume: 824802
         '2011':
-          volume: 458968
+          volume: 884120
         '2012':
-          volume: 429755
+          volume: 770519
         '2013':
-          volume: 451671
+          volume: 920612
         '2014':
-          volume: 457529
+          volume: 897957
     Soda Ash (tons):
       name: Soda Ash
       units: tons
       volume:
         '2005':
-          volume: 3416753
+          volume: 4248250
         '2006':
-          volume: 4755332
+          volume: 5572933
         '2007':
-          volume: 5662599
+          volume: 6420882
         '2008':
-          volume: 7069757
+          volume: 7826519
         '2009':
-          volume: 5545300
+          volume: 6172355
         '2010':
-          volume: 4990309
+          volume: 5703292
         '2011':
-          volume: 5705147
+          volume: 6478218
         '2012':
-          volume: 4740200
+          volume: 5478399
         '2013':
-          volume: 5232597
+          volume: 6027641
         '2014':
-          volume: 6075994
+          volume: 6884396
     Sodium Bi-Carbonate (tons):
       name: Sodium Bi-Carbonate
       units: tons
       volume:
+        '2005':
+          volume: 114001
+        '2006':
+          volume: 130788
+        '2007':
+          volume: 161456
         '2008':
-          volume: 102512
+          volume: 153519
+        '2009':
+          volume: 134148
         '2010':
-          volume: 46904
+          volume: 180737
         '2011':
-          volume: 34297
+          volume: 182790
         '2012':
-          volume: 69262
+          volume: 216439
         '2013':
-          volume: 71539
+          volume: 226279
         '2014':
-          volume: 107022
+          volume: 308484
     Sodium Sesquicarbonate:
       name: Sodium Sesquicarbonate
       units: null
@@ -805,20 +1031,20 @@ US:
         '2005':
           volume: 49449
         '2006':
-          volume: 54880
+          volume: 54927
         '2007':
-          volume: 55968
+          volume: 56096
         '2008':
-          volume: 45452
+          volume: 45524
         '2009':
-          volume: 50276
+          volume: 50344
         '2010':
           volume: 43522
         '2011':
-          volume: 43763
+          volume: 43838
         '2012':
           volume: 32595
         '2013':
-          volume: 40418
+          volume: 40419
         '2014':
-          volume: 44651
+          volume: 44766

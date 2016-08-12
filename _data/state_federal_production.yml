@@ -96,7 +96,7 @@ AL:
       volume:
         '2012':
           volume: 1760930
-          percent: 0.44
+          percent: 0.42
           rank: 6
     Gas (mcf):
       name: Gas
@@ -582,43 +582,43 @@ CO:
       volume:
         '2005':
           volume: 20602881
-          percent: 4.96
+          percent: 4.68
           rank: 2
         '2006':
           volume: 20811927
-          percent: 4.92
+          percent: 4.67
           rank: 2
         '2007':
           volume: 21776477
-          percent: 5
+          percent: 4.79
           rank: 2
         '2008':
           volume: 21138286
-          percent: 4.51
+          percent: 4.32
           rank: 2
         '2009':
           volume: 16946752
-          percent: 3.95
+          percent: 3.78
           rank: 3
         '2010':
           volume: 16137065
-          percent: 3.68
+          percent: 3.53
           rank: 3
         '2011':
           volume: 18017066
-          percent: 4.13
+          percent: 3.99
           rank: 2
         '2012':
           volume: 19192211
-          percent: 4.76
+          percent: 4.54
           rank: 2
         '2013':
           volume: 15479428
-          percent: 4.11
+          percent: 3.89
           rank: 3
         '2014':
           volume: 5881523
-          percent: 1.57
+          percent: 1.44
           rank: 4
     Gas (mcf):
       name: Gas
@@ -714,7 +714,7 @@ CO:
       volume:
         '2008':
           volume: 102512
-          percent: 100
+          percent: 66.77
           rank: 1
 FL:
   products:
@@ -734,7 +734,7 @@ ID:
       volume:
         '2005':
           volume: 2621832
-          percent: 100
+          percent: 82.64
           rank: 1
         '2006':
           volume: 2381392
@@ -754,19 +754,19 @@ ID:
           rank: 1
         '2010':
           volume: 3523585
-          percent: 100
+          percent: 98.34
           rank: 1
         '2011':
           volume: 4690032
-          percent: 100
+          percent: 95.5
           rank: 1
         '2012':
           volume: 4467766
-          percent: 100
+          percent: 85.76
           rank: 1
         '2013':
           volume: 4960123
-          percent: 100
+          percent: 97.77
           rank: 1
         '2014':
           volume: 5777094
@@ -1230,43 +1230,43 @@ MO:
       volume:
         '2005':
           volume: 13141
-          percent: 100
+          percent: 94.61
           rank: 1
         '2006':
           volume: 19002
-          percent: 100
+          percent: 97.34
           rank: 1
         '2007':
           volume: 10960
-          percent: 100
+          percent: 86.56
           rank: 1
         '2008':
           volume: 11909
-          percent: 100
+          percent: 98.17
           rank: 1
         '2009':
           volume: 8726
-          percent: 100
+          percent: 89.93
           rank: 1
         '2010':
           volume: 8974
-          percent: 100
+          percent: 88.41
           rank: 1
         '2011':
           volume: 8386
-          percent: 100
+          percent: 92
           rank: 1
         '2012':
           volume: 21424
-          percent: 100
+          percent: 93.42
           rank: 1
         '2013':
           volume: 15448
-          percent: 100
+          percent: 99.17
           rank: 1
         '2014':
           volume: 20282
-          percent: 100
+          percent: 98.65
           rank: 1
     Lead Concentrate (tons):
       name: Lead Concentrate
@@ -1278,39 +1278,39 @@ MO:
           rank: 1
         '2006':
           volume: 223123
-          percent: 100
+          percent: 99.45
           rank: 1
         '2007':
           volume: 221198
-          percent: 100
+          percent: 99.27
           rank: 1
         '2008':
           volume: 203433
-          percent: 100
+          percent: 99.52
           rank: 1
         '2009':
           volume: 194150
-          percent: 100
+          percent: 98.95
           rank: 1
         '2010':
           volume: 184361
-          percent: 100
+          percent: 99.72
           rank: 1
         '2011':
           volume: 176582
-          percent: 100
+          percent: 99.12
           rank: 1
         '2012':
           volume: 155035
-          percent: 100
+          percent: 98.43
           rank: 1
         '2013':
           volume: 145983
-          percent: 100
+          percent: 99.44
           rank: 1
         '2014':
           volume: 143272
-          percent: 100
+          percent: 99.32
           rank: 1
     Zinc Concentrate (tons):
       name: Zinc Concentrate
@@ -1322,19 +1322,19 @@ MO:
           rank: 1
         '2006':
           volume: 54880
-          percent: 100
+          percent: 99.91
           rank: 1
         '2007':
           volume: 55968
-          percent: 100
+          percent: 99.77
           rank: 1
         '2008':
           volume: 45452
-          percent: 100
+          percent: 99.84
           rank: 1
         '2009':
           volume: 50276
-          percent: 100
+          percent: 99.86
           rank: 1
         '2010':
           volume: 43522
@@ -1342,7 +1342,7 @@ MO:
           rank: 1
         '2011':
           volume: 43763
-          percent: 100
+          percent: 99.83
           rank: 1
         '2012':
           volume: 32595
@@ -1354,7 +1354,7 @@ MO:
           rank: 1
         '2014':
           volume: 44651
-          percent: 100
+          percent: 99.74
           rank: 1
 MS:
   products:
@@ -1454,43 +1454,43 @@ MT:
       volume:
         '2005':
           volume: 16886195
-          percent: 4.06
+          percent: 3.83
           rank: 3
         '2006':
           volume: 18072165
-          percent: 4.27
+          percent: 4.06
           rank: 3
         '2007':
           volume: 18777497
-          percent: 4.31
+          percent: 4.13
           rank: 3
         '2008':
           volume: 19316074
-          percent: 4.12
+          percent: 3.95
           rank: 3
         '2009':
           volume: 17319320
-          percent: 4.03
+          percent: 3.86
           rank: 2
         '2010':
           volume: 17741873
-          percent: 4.05
+          percent: 3.88
           rank: 2
         '2011':
           volume: 17214337
-          percent: 3.95
+          percent: 3.81
           rank: 3
         '2012':
           volume: 16004122
-          percent: 3.97
+          percent: 3.79
           rank: 3
         '2013':
           volume: 16480119
-          percent: 4.38
+          percent: 4.14
           rank: 2
         '2014':
           volume: 15703781
-          percent: 4.18
+          percent: 3.84
           rank: 2
     Gas (mcf):
       name: Gas
@@ -1588,35 +1588,35 @@ ND:
       volume:
         '2005':
           volume: 2169980
-          percent: 0.52
+          percent: 0.49
           rank: 5
         '2006':
           volume: 3196317
-          percent: 0.76
+          percent: 0.72
           rank: 5
         '2007':
           volume: 3532980
-          percent: 0.81
+          percent: 0.78
           rank: 5
         '2010':
           volume: 338405
-          percent: 0.08
+          percent: 0.07
           rank: 6
         '2011':
           volume: 2923257
-          percent: 0.67
+          percent: 0.65
           rank: 5
         '2012':
           volume: 3859278
-          percent: 0.96
+          percent: 0.91
           rank: 5
         '2013':
           volume: 4489551
-          percent: 1.19
+          percent: 1.13
           rank: 5
         '2014':
           volume: 5051711
-          percent: 1.35
+          percent: 1.23
           rank: 5
     Gas (mcf):
       name: Gas
@@ -2064,7 +2064,7 @@ NM:
       volume:
         '2006':
           volume: 492294
-          percent: 100
+          percent: 97.06
           rank: 1
     Salt (tons):
       name: Salt
@@ -2072,31 +2072,31 @@ NM:
       volume:
         '2008':
           volume: 314483
-          percent: 92.09
+          percent: 47.55
           rank: 1
         '2009':
           volume: 372956
-          percent: 93.01
+          percent: 55.69
           rank: 1
         '2010':
           volume: 434018
-          percent: 94.19
+          percent: 52.62
           rank: 1
         '2011':
           volume: 439367
-          percent: 95.73
+          percent: 49.7
           rank: 1
         '2012':
           volume: 409345
-          percent: 95.25
+          percent: 53.13
           rank: 1
         '2013':
           volume: 425125
-          percent: 94.12
+          percent: 46.18
           rank: 1
         '2014':
           volume: 457529
-          percent: 100
+          percent: 50.95
           rank: 1
 NV:
   products:
@@ -2420,11 +2420,11 @@ OK:
       volume:
         '2005':
           volume: 714616
-          percent: 0.17
+          percent: 0.16
           rank: 6
         '2006':
           volume: 725099
-          percent: 0.17
+          percent: 0.16
           rank: 6
         '2007':
           volume: 890762
@@ -2440,7 +2440,7 @@ OK:
           rank: 5
         '2010':
           volume: 516450
-          percent: 0.12
+          percent: 0.11
           rank: 5
         '2011':
           volume: 544641
@@ -2448,15 +2448,15 @@ OK:
           rank: 6
         '2012':
           volume: 266370
-          percent: 0.07
+          percent: 0.06
           rank: 7
         '2013':
           volume: 598961
-          percent: 0.16
+          percent: 0.15
           rank: 6
         '2014':
           volume: 495799
-          percent: 0.13
+          percent: 0.12
           rank: 6
     Gas (mcf):
       name: Gas
@@ -3086,43 +3086,43 @@ UT:
       volume:
         '2005':
           volume: 12469841
-          percent: 3
+          percent: 2.83
           rank: 4
         '2006':
           volume: 10097980
-          percent: 2.39
+          percent: 2.27
           rank: 4
         '2007':
           volume: 6659941
-          percent: 1.53
+          percent: 1.46
           rank: 4
         '2008':
           volume: 8580347
-          percent: 1.83
+          percent: 1.75
           rank: 4
         '2009':
           volume: 6683745
-          percent: 1.56
+          percent: 1.49
           rank: 4
         '2010':
           volume: 6219884
-          percent: 1.42
+          percent: 1.36
           rank: 4
         '2011':
           volume: 7213622
-          percent: 1.65
+          percent: 1.6
           rank: 4
         '2012':
           volume: 8792809
-          percent: 2.18
+          percent: 2.08
           rank: 4
         '2013':
           volume: 8108509
-          percent: 2.15
+          percent: 2.04
           rank: 4
         '2014':
           volume: 8084545
-          percent: 2.15
+          percent: 1.97
           rank: 3
     Gas (mcf):
       name: Gas
@@ -3424,43 +3424,43 @@ WY:
       volume:
         '2005':
           volume: 362573504
-          percent: 87.28
+          percent: 82.34
           rank: 1
         '2006':
           volume: 369856067
-          percent: 87.49
+          percent: 83.08
           rank: 1
         '2007':
           volume: 384201780
-          percent: 88.15
+          percent: 84.48
           rank: 1
         '2008':
           volume: 418915511
-          percent: 89.39
+          percent: 85.65
           rank: 1
         '2009':
           volume: 387746736
-          percent: 90.33
+          percent: 86.47
           rank: 1
         '2010':
           volume: 397535690
-          percent: 90.66
+          percent: 87.01
           rank: 1
         '2011':
           volume: 390112610
-          percent: 89.47
+          percent: 86.33
           rank: 1
         '2012':
           volume: 353311864
-          percent: 87.63
+          percent: 83.62
           rank: 1
         '2013':
           volume: 331529668
-          percent: 88.01
+          percent: 83.3
           rank: 1
         '2014':
           volume: 340049300
-          percent: 90.62
+          percent: 83.07
           rank: 1
     Gas (mcf):
       name: Gas
@@ -3600,43 +3600,43 @@ WY:
       volume:
         '2005':
           volume: 3416753
-          percent: 100
+          percent: 80.43
           rank: 1
         '2006':
           volume: 4755332
-          percent: 100
+          percent: 85.33
           rank: 1
         '2007':
           volume: 5662599
-          percent: 100
+          percent: 88.19
           rank: 1
         '2008':
           volume: 7069757
-          percent: 100
+          percent: 90.33
           rank: 1
         '2009':
           volume: 5545300
-          percent: 100
+          percent: 89.84
           rank: 1
         '2010':
           volume: 4990309
-          percent: 100
+          percent: 87.5
           rank: 1
         '2011':
           volume: 5705147
-          percent: 100
+          percent: 88.07
           rank: 1
         '2012':
           volume: 4740200
-          percent: 100
+          percent: 86.53
           rank: 1
         '2013':
           volume: 5232597
-          percent: 100
+          percent: 86.81
           rank: 1
         '2014':
           volume: 6075994
-          percent: 100
+          percent: 88.26
           rank: 1
     Sodium Bi-Carbonate (tons):
       name: Sodium Bi-Carbonate
@@ -3644,23 +3644,23 @@ WY:
       volume:
         '2010':
           volume: 46904
-          percent: 100
+          percent: 25.95
           rank: 1
         '2011':
           volume: 34297
-          percent: 100
+          percent: 18.76
           rank: 1
         '2012':
           volume: 69262
-          percent: 100
+          percent: 32
           rank: 1
         '2013':
           volume: 71539
-          percent: 100
+          percent: 31.62
           rank: 1
         '2014':
           volume: 107022
-          percent: 100
+          percent: 34.69
           rank: 1
     Sodium Sesquicarbonate:
       name: Sodium Sesquicarbonate

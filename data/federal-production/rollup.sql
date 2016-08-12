@@ -7,9 +7,6 @@ CREATE TABLE federal_state_production AS
         units,
         SUM(volume) AS volume
     FROM federal_county_production
-    WHERE
-        state != 'Withheld' AND
-        volume IS NOT NULL
     GROUP BY
         year, state, product
     ORDER BY
@@ -126,7 +123,8 @@ CREATE TABLE federal_production_state_rank AS
         national.product = state.product
     WHERE
         state.volume IS NOT NULL AND
-        national.volume IS NOT NULL
+        national.volume IS NOT NULL AND
+        state.state != 'Withheld'
     ORDER BY
         state.year,
         state.product,

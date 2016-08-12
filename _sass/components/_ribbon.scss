@@ -175,13 +175,13 @@ svg {
     svg {
       display: none;
 
-      #rig-dollars {
+      .rig-dollars {
         display: inline-block;
-        transform: scale(.6) translate(300px, 87px);
+        transform: scale(0.6) translate(300px, 87px);
       }
 
-      #Symbols {
-        transform: translateY(-24px)
+      .symbols {
+        transform: translateY(-24px);
       }
 
       rect {
@@ -196,11 +196,11 @@ svg {
 
   .ribbon-carousel:not(.ribbon-carousel-column) {
     .ribbon-carousel-button {
-      float: left;
-      position: absolute;
-      left: 12.5%;
       bottom: 50%;
+      float: left;
+      left: 12.5%;
       margin: 0;
+      position: absolute;
     }
   }
 
@@ -280,11 +280,11 @@ svg {
       right: 0;
       display: inline-block;
 
-      #rig-dollars {
+      .rig-dollars {
         transform: inherit;
       }
 
-      #Symbols {
+      .symbols {
         transform: inherit;
       }
 

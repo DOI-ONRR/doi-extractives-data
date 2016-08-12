@@ -7,9 +7,13 @@
 
   <section class="text-container">
 
-    <p><strong>In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government.</strong></p>
+    <p>In {{ state_name }}, <strong>{{ site.data.land_stats[state_id].federal_percent | percent }}% of land</strong> is owned by the federal government.</p>
 
     <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner.</p>
+
+    {% if page.state_land %}
+      {{ page.state_land | markdownify }}
+    {% endif %}
 
     <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/ownership/">natural resources and land ownership</a> in the U.S.</p>
   </section>

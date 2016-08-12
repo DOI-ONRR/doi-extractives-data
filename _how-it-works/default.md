@@ -35,7 +35,6 @@ permalink: /how-it-works/
         <span>Decommission</span>
       </p>
     </div>
-
     <div class="container landing-section_open landing-oil_gas-wrapper">
       <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h3>
       <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
@@ -70,7 +69,6 @@ permalink: /how-it-works/
       </a>
     </div>
   </section>
-
 	<section class="container">
 		<h2 id="natural-resources" class="h3 landing-section_category">Natural resources</h2>
 		<div class="container landing-section" accordion-item aria-expanded="true">
@@ -98,7 +96,6 @@ permalink: /how-it-works/
 			</div>
 		</div>
 	</section>
-
 	<section class="container">
 		<h2 id="laws-governance" class="h3 landing-section_category">Laws and governance</h2>
 		<div class="container landing-section" accordion-item>

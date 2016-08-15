@@ -1,6 +1,5 @@
 {% assign product_ref = include.product_ref %}
 {% assign caption = include.caption %}
-{% assign sentence = include.sentence %}
 
 {% assign units = county[1].products[1].units %}
 {% if include.long_units %}
@@ -36,7 +35,10 @@
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
       </tr>
       <tr data-fips='{{ fips }}'>
-        <td colspan='3' data-year-values='{{ years_values | jsonify }}' data-sentence='{{ product_volume }}' aria-hidden='true'><span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span></td>
+        <td colspan='3'
+            data-year-values='{{ years_values | jsonify }}'
+            data-sentence='{{ product_volume }}'
+            aria-hidden='true'><span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span></td>
       </tr>
     {% endif %}
   {% endfor %}

@@ -83,7 +83,7 @@
             {{ locality_name }} wage and salary jobs
           </h4>
 
-          <figure class="container">
+          <figure is="eiti-data-map-table" class="container">
             <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
               {% capture value_key %}employment.{{ year }}.count{% endcapture %}
 

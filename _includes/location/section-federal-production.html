@@ -41,14 +41,6 @@
       {% assign units_title = units_map[units].title %}
 
 
-      {% capture sentence %}
-      <span class="eiti-bar-chart-y-value"
-              data-format=",">{{ volume | default: 0 | intcomma }}</span>
-      {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-      produced on federal land in {{ state_name }} in
-      <span class="eiti-bar-chart-x-value">{{ year }}</span>
-      {% endcapture %}
-
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
         <div class="row-container">
@@ -65,7 +57,11 @@
             <figure class="chart">
               <figcaption id="federal-production-figures-{{ product_slug }}">
 
-              {{ sentence }}
+              <span class="eiti-bar-chart-y-value"
+                    data-format=",">{{ volume | default: 0 | intcomma }}</span>
+              {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+              produced on federal land in {{ state_name }} in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>
 
               </figcaption>
               <eiti-bar-chart

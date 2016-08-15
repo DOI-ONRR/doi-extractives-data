@@ -11,11 +11,11 @@
   <tbody>
   {% for county in include.values %}
     {% assign years_values = county[1].employment %}
-
+    {% assign fips = county[0] | pad_left: 5, '0' %}
     {% assign jobs_percent = county[1].employment[year].percent %}
     {% assign jobs_count = county[1].employment[year].count %}
 
-    <tr data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
+    <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
       <td><div class='swatch'
                data-value-swatch='{{ jobs_count }}'
                data-year-values='{{ years_values | jsonify }}'
@@ -34,6 +34,13 @@
           data-format='%'
           class="numeric">{{ jobs_percent }}%</td>
     </tr>
+    <tr data-fips='{{ fips }}'>
+        <td colspan='3'
+            data-year-values='{{ years_values | jsonify }}'
+            data-sentence='{{ jobs_count }}'
+            data-years-property='count'
+            aria-hidden='true'>In <span data-year='{{ year }}'>{{ year }}</span>, there were <span data-value='{{ jobs_count }}'>{{ jobs_count | intcomma }}</span> self-employed people working in {{ county[1].name }}</td>
+      </tr>
   {% endfor %}
   </tbody>
 </table>

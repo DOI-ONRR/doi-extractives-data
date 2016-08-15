@@ -51,6 +51,10 @@
           return toggle(this, expanded);
         }},
 
+        expand: {value: function(expanded) {
+          return expand(this);
+        }},
+
         detachedCallback: {value: function() {
           this.removeEventListener('click', click);
         }},

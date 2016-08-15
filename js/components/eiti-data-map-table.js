@@ -2,36 +2,39 @@
 
   var attached = function() {
     var root = d3.select(this);
+    var self = d3.select(this);
 
     var select = root.selectAll('select.chart-selector');
     var maps = root.selectAll('eiti-data-map');
-    var mapToggle = maps.selectAll('button[is="aria-toggle"]');
-    var counties = maps.selectAll('.county.feature');
+    var mapToggles = maps.selectAll('button[is="aria-toggle"]');
     var mapTables = root.selectAll('.eiti-data-map-table');
+    var counties = maps.selectAll('.county.feature')
 
     var chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
 
-    // var update = function(year) {
-    //   charts.property('x', year);
-    //   maps.each(function() {
-    //     this.setYear(year);
-    //   });
-    //   select.property('value', year);
-    //   chartTables.each(function(){
-    //     this.setYear(year);
-    //     this.update();
-    //   })
-    // };
+    var row = chartTables.selectAll('tr[data-year-values]')
 
-    counties.on('click.county', function() {
-      console.log(this)
-      // update('county')
-    });
+    var toggleTable = function(d, i) {
+      console.log(this, d, i)
+      var countyName = this.querySelector('title').textContent;
+      var countyFIPS = this.getAttribute('data-fips');
+      console.log('county name:', countyName)
+      console.log('county fips:', countyFIPS)
+      mapToggles.each(function(){
+        this.expand();
+      });
 
-    // charts.selectAll('g.bar')
-    //   .on('click.year', function(d) {
-    //     update(d.x);
-    //   });
+      chartTables.each(function(){
+        this.show(countyFIPS);
+      })
+    };
+
+    var toggleMap = function() {
+      counties.classed('selected', true)
+    }
+
+    chartTables.on('click.countyTable', toggleMap)
+    counties.on('click.county', toggleTable)
   };
 
   var detached = function() {
@@ -49,3 +52,4 @@
   })
 
 })(this);
+

@@ -110,6 +110,22 @@
     }
   }
 
+  var show = function(fips) {
+    var rows = d3.select(this).selectAll('tbody > tr');
+
+    var hiddenRows = rows.filter(function(row) {
+      return !this.hasAttribute('data-year-values');
+    })
+
+    hiddenRows.attr('aria-hidden', true);
+
+    // show matching row
+    hiddenRows.filter(function(row) {
+      return this.getAttribute('data-fips') === fips;
+    }).attr('aria-hidden', false)
+
+  }
+
   var update = function() {
     if (!this._cells.length) {
       return;
@@ -277,6 +293,8 @@
         update: {value: update},
 
         setYear: {value: setYear},
+
+        show: {value: show},
 
         orient: {
           get: function() {

@@ -21,8 +21,9 @@
     {% assign product_volume = county[1].products[product_ref].volume[include.year] %}
 
     {% assign years_values =  county[1].products[product_ref].volume %}
+    {% assign fips = county[0] | pad_left: 5, '0' %}
     {% if years_values != 'null' years_values != null %}
-      <tr data-year-values='{{ years_values | jsonify }}'>
+      <tr data-fips="{{ fips }}" data-year-values='{{ years_values | jsonify }}'>
         <td><div class='swatch'
                  data-value-swatch='{{ product_volume }}'
                  data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
@@ -32,6 +33,9 @@
             data-series='volume'
             data-value='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
+      </tr>
+      <tr data-fips="{{ fips }}" aria-hidden="true">
+        <td colspan="3">Additional text that fills all the columns</td>
       </tr>
     {% endif %}
   {% endfor %}

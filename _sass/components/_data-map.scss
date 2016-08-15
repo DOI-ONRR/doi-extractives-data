@@ -94,6 +94,7 @@ eiti-data-map {
   .feature.county {
     cursor: pointer;
 
+    &.selected,
     &:hover,
     &:active,
     &:focus {

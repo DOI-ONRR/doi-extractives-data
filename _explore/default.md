@@ -11,13 +11,13 @@ permalink: /explore/
       <p class="ribbon-hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
       <p class="ribbon-hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
     </div>
-    <div class="container-right-4 ribbon-carousel-column ribbon-carousel-has-image ribbon-carousel">
-      <figure class="ribbon-carousel-top">
+    <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
+      <figure class="ribbon-card-top">
         <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
-          <img class="ribbon-carousel-image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+          <img class="ribbon-card-image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
         </a>
       </figure>
-      <figcaption class="ribbon-carousel-bottom">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
+      <figcaption class="ribbon-card-bottom">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
     </div>
   </div>
 </section>

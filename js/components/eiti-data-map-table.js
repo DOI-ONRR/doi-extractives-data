@@ -17,8 +17,6 @@
     var toggleTable = function(d, i) {
       var countyName = this.querySelector('title').textContent;
       var countyFIPS = this.getAttribute('data-fips');
-      console.log('county name:', countyName)
-      console.log('county fips:', countyFIPS)
 
       highlightCounty(countyFIPS);
 

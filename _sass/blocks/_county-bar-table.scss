@@ -3,6 +3,10 @@
     float: left;
   }
 
+  tbody > tr {
+  	cursor: pointer;
+  }
+
   [is="bar-chart-table"] {
     @extend .table-basic;
   }

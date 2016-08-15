@@ -12,14 +12,16 @@
 
     var chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
 
-    var row = chartTables.selectAll('tr[data-year-values]')
+    var chartRows = chartTables.selectAll('tr[data-fips]')
 
     var toggleTable = function(d, i) {
-      console.log(this, d, i)
       var countyName = this.querySelector('title').textContent;
       var countyFIPS = this.getAttribute('data-fips');
       console.log('county name:', countyName)
       console.log('county fips:', countyFIPS)
+
+      highlightCounty(countyFIPS);
+
       mapToggles.each(function(){
         this.expand();
       });
@@ -29,12 +31,29 @@
       })
     };
 
-    var toggleMap = function() {
-      counties.classed('selected', true)
+    var highlightCounty = function(fips) {
+      counties.classed('selected', false);
+
+      counties.each(function(d, i){
+        var county = d3.select(this);
+        if (+county.attr('data-fips') === +fips) {
+          county.classed('selected', true);
+        }
+      });
     }
 
-    chartTables.on('click.countyTable', toggleMap)
-    counties.on('click.county', toggleTable)
+    var toggleMap = function() {
+      var fips = this.getAttribute('data-fips');
+
+      highlightCounty(fips);
+
+      chartTables.each(function(){
+        this.show(fips);
+      });
+    }
+
+    chartRows.on('click.countyTable', toggleMap);
+    counties.on('click.county', toggleTable);
   };
 
   var detached = function() {

@@ -1,5 +1,6 @@
 {% assign product_ref = include.product_ref %}
 {% assign caption = include.caption %}
+{% assign sentence = include.sentence %}
 
 {% assign units = county[1].products[1].units %}
 {% if include.long_units %}
@@ -9,11 +10,11 @@
 
 <table is='bar-chart-table'
        data-percent-max='100'
-       class="county-table">
+       class='county-table'>
   <thead>
     <tr>
       <th>{{ locality_name }}</th>
-      <th colspan="2" class='numeric' data-series='volume'>{{ units | capitalize }} of {{ product_name | downcase | suffix:units_suffix }}</th>
+      <th colspan='2' class='numeric' data-series='volume'>{{ units | capitalize }} of {{ product_name | downcase | suffix:units_suffix }}</th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +24,7 @@
     {% assign years_values =  county[1].products[product_ref].volume %}
     {% assign fips = county[0] | pad_left: 5, '0' %}
     {% if years_values != 'null' years_values != null %}
-      <tr data-fips="{{ fips }}" data-year-values='{{ years_values | jsonify }}'>
+      <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}'>
         <td><div class='swatch'
                  data-value-swatch='{{ product_volume }}'
                  data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
@@ -34,8 +35,8 @@
             data-value='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
       </tr>
-      <tr data-fips="{{ fips }}" aria-hidden="true">
-        <td colspan="3">Additional text that fills all the columns</td>
+      <tr data-fips='{{ fips }}'>
+        <td colspan='3' data-year-values='{{ years_values | jsonify }}' data-sentence='{{ product_volume }}' aria-hidden='true'><span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span></td>
       </tr>
     {% endif %}
   {% endfor %}

@@ -1,118 +1,83 @@
 federal_production:
   '2006':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 526756
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 2345
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 31467
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 97785
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 524373
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 943970
+      value: 696367
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 651141
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 690719
       rank: 1
       percent: 0
   '2009':
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 296652
-      rank: 1
-      percent: 100
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 199792
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 771370
       rank: 1
       percent: 0
   '2010':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 930040
+      value: 850447
       rank: 1
       percent: 0
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 237502
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 774816
       rank: 1
       percent: 0
   '2012':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1042492
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 647642
       rank: 1
       percent: 0
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1007067
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 16
+      value: 433936
       rank: 1
       percent: 0
   '2014':
-    - product: Coal Waste (Sub-Econ) (tons)
-      name: Coal Waste (Sub-Econ)
-      units: tons
-      value: 73692
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 970123
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 380579
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 54079
+      value: 399152
       rank: 1
       percent: 0
   '2015':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 95919
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 405464
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 730035
+      value: 378650
       rank: 1
       percent: 0

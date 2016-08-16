@@ -225,480 +225,204 @@ revenue:
       percent: 0.1
 federal_production:
   '2006':
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 24520
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 145862
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 1673044
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 63213273
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 61929507
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 72215375
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 85859889
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 724804156
+      value: 4999
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 966410787
+      value: 638516396
       rank: 1
       percent: 0
   '2007':
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 3631
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 94869
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 156517
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 1858630
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 76322958
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 751761
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 100866
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 159876
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 24349430
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 65885189
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 62330733
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 1612
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 106272414
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 693365578
+      value: 4573
       rank: 1
       percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 177548690
-      rank: 2
-      percent: 11.01
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 586683437
+      rank: 1
+      percent: 0
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 123838519
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4227
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 569887161
+      rank: 1
+      percent: 0
   '2009':
-    - product: Gold Ore (tons)
-      name: Gold Ore
-      units: tons
-      value: 9891019
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 198988743
       rank: 1
       percent: 100
-    - product: Gold Placer (oz)
-      name: Gold Placer
-      units: oz
-      value: 28876702
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4440
       rank: 1
-      percent: 100
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 763025
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 727532631
       rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 101535
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 167133
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 37820237
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 68365508
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 62383752
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 31605
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 1378926849
-      rank: 3
-      percent: 20.98
+      percent: 0
   '2010':
-    - product: Gold Placer (oz)
-      name: Gold Placer
-      units: oz
-      value: 36634570
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 163346106
       rank: 1
       percent: 100
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 2591159
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4010
       rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 111290
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 167268
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 47423083
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 70087969
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 63278855
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 247400
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1012892582
       rank: 1
       percent: 0
   '2011':
-    - product: Gold Ore (tons)
-      name: Gold Ore
-      units: tons
-      value: 28345950
-      rank: 1
-      percent: 100
-    - product: Gold Placer (oz)
-      name: Gold Placer
-      units: oz
-      value: -8
-      rank: 1
-      percent: 100
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 5469161
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 116343
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 169142
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 55389539
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 75834079
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 65286684
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 131014604
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 694165366
+      value: 3836
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1055633396
       rank: 1
       percent: 0
   '2012':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
       name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 163356111
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 135376
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 180738
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 58314949
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 38004
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 68074251
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 1647989239
-      rank: 2
-      percent: 33.68
-  '2013':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 1031892
-      rank: 1
-      percent: 100
-    - product: Gold and Silver Products (oz)
-      name: Gold and Silver Products
-      units: oz
-      value: 9780456
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 135670
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 188778
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 62174215
-      rank: 1
-      percent: 100
-    - product: Leonardite (tons)
-      name: Leonardite
-      units: tons
-      value: 318293
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 68567919
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 123103803
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 259544998
+      value: 3631
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 137587130
+      value: 1257270031
+      rank: 1
+      percent: 0
+  '2013':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 57238368
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 3422
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1498902938
       rank: 1
       percent: 0
   '2014':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
       name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 3681469
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 136285
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 194476
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 212540600
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 70174728
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 46536535
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 667435338
+      value: 3341
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1049469880
+      value: 1601138054
       rank: 1
       percent: 0
-  '2015':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 42189967
-      rank: 1
-      percent: 100
-    - product: Hardrock Products (tons)
-      name: Hardrock Products
-      units: tons
-      value: 144900
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 194898
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 409513956
-      rank: 1
-      percent: 100
-    - product: Other Coal Products (tons)
-      name: Other Coal Products
-      units: tons
-      value: 71466590
-      rank: 1
-      percent: 100
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 1201383306
+      value: 311307
+      rank: 1
+      percent: 0
+  '2015':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 19439305
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 3774
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1923971577
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 280617
       rank: 1
       percent: 0

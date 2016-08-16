@@ -3,59 +3,81 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 54262
+      value: 3733
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5971
       rank: 1
       percent: 0
   '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 73682
+      value: 5352
       rank: 1
       percent: 0
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 41910
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 2207
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 2432
       rank: 1
       percent: 0
   '2011':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 59858
+      value: 1163
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1125
       rank: 1
       percent: 0
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 43120
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 34237
-      rank: 1
-      percent: 0
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 1125
+      value: 958
       rank: 1
       percent: 0
   '2014':
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 27325
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 994
       rank: 1
       percent: 0
-  '2015':
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 25467
+      value: 27271
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 607
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 24860
       rank: 1
       percent: 0

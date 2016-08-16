@@ -5,102 +5,61 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 5617
-        '2010': 4775
-        '2013': 4354
-        '2015': 3080
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 3233
-        '2011': 2999
-        '2014': 2987
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 3465
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
+        '2006': 6349
+        '2007': 5617
+        '2008': 4775
+        '2009': 4354
+        '2010': 3080
+        '2011': 3465
         '2012': 3545
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 6349
+        '2013': 3233
+        '2014': 2999
+        '2015': 2987
 '26005':
   name: Allegan County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 167
-        '2010': 131
-        '2013': 151
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 120
-        '2011': 116
-        '2014': 115
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2012': 123
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 157
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 136
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 152
+        '2006': 152
+        '2007': 167
+        '2008': 131
+        '2009': 151
+        '2010': 123
+        '2011': 157
+        '2012': 136
+        '2013': 120
+        '2014': 116
+        '2015': 115
 '26025':
   name: Calhoun County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 194
-        '2010': 6670
-        '2013': 14973
-        '2015': 18638
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 17590
-        '2011': 22319
-        '2014': 10520
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
+        '2007': 194
+        '2008': 4842
+        '2009': 3422
+        '2010': 3532
+        '2011': 4360
+        '2012': 3954
+        '2013': 2680
+        '2014': 3066
+        '2015': 1189
+    Gas (mcf):
+      name: Gas
+      units: mcf
       volume:
-        '2012': 3532
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 20277
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 16334
+        '2008': 6670
+        '2009': 14973
+        '2010': 18638
+        '2011': 20277
+        '2012': 16334
+        '2013': 17590
+        '2014': 22319
+        '2015': 10520
 '26035':
   name: Clare County
   products:
@@ -108,37 +67,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 59246
-        '2010': 58075
-        '2013': 57343
-        '2015': 52784
+        '2006': 75270
+        '2007': 59246
+        '2008': 58075
+        '2009': 57343
+        '2010': 52784
+        '2011': 47399
+        '2012': 22722
+        '2013': 13144
+        '2014': 4089
+        '2015': 3699
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 13144
-        '2011': 4089
-        '2014': 3699
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2012': 1474
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 47399
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 22722
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 75270
+        '2006': 1620
+        '2007': 1702
+        '2008': 1697
+        '2009': 1554
+        '2010': 1474
+        '2011': 1537
+        '2012': 1569
+        '2013': 1513
+        '2014': 1486
+        '2015': 1423
 '26039':
   name: Crawford County
   products:
@@ -146,32 +98,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 53982
-        '2010': 81289
-        '2013': 104896
-        '2015': 62408
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 48423
-        '2011': 45850
-        '2014': 42695
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 55918
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 51621
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 107943
+        '2006': 107943
+        '2007': 53982
+        '2008': 81289
+        '2009': 104896
+        '2010': 62408
+        '2011': 55918
+        '2012': 51621
+        '2013': 48423
+        '2014': 45850
+        '2015': 42695
 '26055':
   name: Grand Traverse County
   products:
@@ -179,67 +115,51 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 9354
-        '2010': 8125
-        '2013': 6890
-        '2015': 5373
+        '2006': 11522
+        '2007': 9354
+        '2008': 8125
+        '2009': 6890
+        '2010': 5373
+        '2011': 5189
+        '2012': 4563
+        '2013': 3840
+        '2014': 3548
+        '2015': 3429
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 3840
-        '2011': 3548
-        '2014': 3429
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
+        '2008': 1434
+        '2009': 10
+        '2010': 5
         '2011': 5
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 5189
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 4563
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 11522
+        '2012': 20
+        '2013': 28
+        '2014': 15
+        '2015': 556
 '26075':
   name: Jackson County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 16611
-        '2011': 17168
-        '2014': 23868
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 6465
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013': 8230
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 12156
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2015': 3981
+        '2010': 3981
+        '2011': 6465
+        '2012': 12156
+        '2013': 16611
+        '2014': 17168
+        '2015': 23868
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2010': 8230
+        '2011': 15920
+        '2012': 23743
+        '2013': 24372
+        '2014': 15657
+        '2015': 12810
 '26079':
   name: Kalkaska County
   products:
@@ -247,37 +167,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 41030
-        '2010': 61856
-        '2013': 54153
-        '2015': 67116
+        '2006': 67833
+        '2007': 41030
+        '2008': 61856
+        '2009': 54153
+        '2010': 67116
+        '2011': 56870
+        '2012': 55842
+        '2013': 33053
+        '2014': 26224
+        '2015': 24788
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 33053
-        '2011': 26224
-        '2014': 24788
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 56870
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013': 4817
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 55842
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 67833
+        '2006': 7046
+        '2007': 2629
+        '2008': 3559
+        '2009': 2375
+        '2010': 4817
+        '2011': 3726
+        '2012': 3766
+        '2013': 3340
+        '2014': 2934
+        '2015': 2693
 '26085':
   name: Lake County
   products:
@@ -285,20 +198,20 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 35863
-        '2010': 11658
-        '2013': 9654
-        '2015': 764
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
+        '2006': 150113
+        '2007': 35863
+        '2008': 11658
+        '2009': 9654
+        '2010': 764
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2011': 39
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 150113
+        '2006': 316
+        '2007': 163
+        '2008': 121
+        '2009': 56
+        '2010': 39
 '26119':
   name: Montmorency County
   products:
@@ -306,32 +219,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 769014
-        '2010': 731215
-        '2013': 705720
-        '2015': 651460
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 621003
-        '2011': 578148
-        '2014': 523783
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 707527
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 687235
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 808843
+        '2006': 808843
+        '2007': 769014
+        '2008': 731215
+        '2009': 705720
+        '2010': 651460
+        '2011': 707527
+        '2012': 687235
+        '2013': 621003
+        '2014': 578148
+        '2015': 523783
 '26123':
   name: Newaygo County
   products:
@@ -339,7 +236,7 @@
       name: Oil
       units: bbl
       volume:
-        '2011': 308
+        '2014': 308
 '26135':
   name: Oscoda County
   products:
@@ -347,38 +244,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 1982546
-        '2010': 1773844
-        '2013': 1572709
-        '2015': 1360829
+        '2006': 1690911
+        '2007': 1982546
+        '2008': 1773844
+        '2009': 1572709
+        '2010': 1360829
+        '2011': 1213143
+        '2012': 1178513
+        '2013': 986961
+        '2014': 854208
+        '2015': 795851
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 986961
-        '2011': 854208
-        '2014': 795851
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1213143
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013': 10713
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 1178513
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 1690911
-        '2015': 25436
+        '2006': 25436
+        '2007': 30427
+        '2008': 33211
+        '2009': 15801
+        '2010': 10713
+        '2011': 9725
+        '2012': 8039
+        '2013': 7664
+        '2014': 6456
+        '2015': 8435
 '26137':
   name: Otsego County
   products:
@@ -386,32 +275,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 17758
-        '2010': 13488
-        '2013': 11669
-        '2015': 10704
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 8856
-        '2011': 8010
-        '2014': 7653
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 9852
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 9422
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 18748
+        '2006': 18748
+        '2007': 17758
+        '2008': 13488
+        '2009': 11669
+        '2010': 10704
+        '2011': 9852
+        '2012': 9422
+        '2013': 8856
+        '2014': 8010
+        '2015': 7653
 '26143':
   name: Roscommon County
   products:
@@ -419,34 +292,27 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 11526
-        '2010': 20043
-        '2013': 24192
-        '2015': 18919
+        '2006': 25651
+        '2007': 11526
+        '2008': 20043
+        '2009': 24192
+        '2010': 18919
+        '2011': 18682
+        '2012': 18429
+        '2013': 16945
+        '2014': 16824
+        '2015': 17909
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 16945
-        '2011': 16824
-        '2014': 17909
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2012': 4260
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 18682
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 18429
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014': 25651
+        '2006': 5182
+        '2007': 5157
+        '2008': 5086
+        '2009': 4624
+        '2010': 4260
+        '2011': 3926
+        '2012': 3586
+        '2013': 3206
+        '2014': 2882
+        '2015': 2639

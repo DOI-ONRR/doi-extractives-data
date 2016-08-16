@@ -5,59 +5,37 @@
       name: Gas
       units: mcf
       volume:
+        '2006': 720
         '2007': 720
-        '2008': 20243
-        '2010': 180
-        '2013': 21132
-        '2015': 20469
+        '2008': 180
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 17557
-        '2011': 11250
-        '2014': 8256
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010': 18387
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011': 720
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
+        '2006': 21324
+        '2007': 20243
+        '2008': 19444
+        '2009': 21132
+        '2010': 20469
         '2011': 17044
+        '2012': 18387
+        '2013': 17557
+        '2014': 11250
+        '2015': 8256
 '17051':
   name: Fayette County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007': 162
-        '2010': 44
-        '2015': 18
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 40
-        '2014': 6
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010': 48
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011': 140
+        '2006': 140
+        '2007': 162
+        '2008': 44
+        '2010': 18
+        '2012': 48
+        '2013': 40
+        '2015': 6
 '17055':
   name: Franklin County
   products:
@@ -65,29 +43,27 @@
       name: Gas
       units: mcf
       volume:
+        '2006': 7491
         '2007': 7359
-        '2010': 6785
-        '2013': 12213
-        '2015': 14074
+        '2008': 6785
+        '2009': 12213
+        '2010': 14074
+        '2011': 14336
+        '2012': 14461
+        '2013': 14385
+        '2014': 26776
+        '2015': 23106
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 14385
-        '2011': 26776
-        '2014': 23106
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010': 14461
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011': 7491
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011': 14336
+        '2006': 15732
+        '2007': 18549
+        '2008': 14942
+        '2009': 13110
+        '2010': 11526
+        '2011': 10098
+        '2012': 9484
+        '2013': 8719
+        '2014': 7912
+        '2015': 7774

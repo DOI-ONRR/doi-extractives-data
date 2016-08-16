@@ -652,222 +652,360 @@ revenue:
       percent: 104.23
 federal_production:
   '2006':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 281721675
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 69814
       rank: 1
       percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 3941340
+      value: 369856067
       rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 5739444
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1491455789
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 4755332
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 2123226712
+      value: 31880050
       rank: 2
-      percent: 38.45
+      percent: 2.95
   '2007':
-    - product: Wavellite (tons)
-      name: Wavellite
-      units: tons
-      value: 214740
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 97711
       rank: 1
       percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 74523337
+      value: 384201780
       rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1898017052
+      value: 1664001549
       rank: 1
       percent: 0
-  '2008':
-    - product: Trona Ore (tons)
-      name: Trona Ore
+    - product: Soda Ash (tons)
+      name: Soda Ash
       units: tons
-      value: 281
-      rank: 1
-      percent: 100
-    - product: Wavellite (tons)
-      name: Wavellite
-      units: tons
-      value: 272288
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 491548163
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 399554650
+      value: 5662599
       rank: 1
       percent: 0
-  '2009':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 3364
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 980818562
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2087038923
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1973895714
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 22681
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 47856
-      rank: 1
-      percent: 100
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 1963457735
-      rank: 1
-      percent: 45.61
-  '2011':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 22939
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 971484
-      rank: 1
-      percent: 100
-  '2012':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 27093
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 2549978
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2313427289
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Trona Ore (tons)
-      name: Trona Ore
-      units: tons
-      value: 43145
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 7034640
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 1934932401
+      value: 33075284
       rank: 2
-      percent: 34.91
-  '2014':
-    - product: Sylvite-Raw Ore (tons)
-      name: Sylvite-Raw Ore
+      percent: 3.08
+  '2008':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 116333
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 3129272
+      value: 416957489
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1856646024
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 7069757
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 32637686
+      rank: 2
+      percent: 3.31
+  '2009':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 118021
       rank: 1
       percent: 100
     - product: Trona Ore (tons)
       name: Trona Ore
       units: tons
-      value: 189116
+      value: 139689
       rank: 1
       percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 37501340
+      value: 387746736
       rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 2333253839
+      value: 1938315493
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 5545300
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 31965449
+      rank: 2
+      percent: 2.48
+  '2010':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 104405
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 397535690
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1938304036
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 4990309
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 46904
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 32469020
+      rank: 2
+      percent: 2.58
+  '2011':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 88412
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 390112610
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1837740875
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 5705147
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 34297
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 32442250
+      rank: 3
+      percent: 2.98
+  '2012':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 73596
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 353311864
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1731887115
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 4740200
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 69262
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 33144675
+      rank: 3
+      percent: 3.14
+  '2013':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 88213
+      rank: 1
+      percent: 100
+    - product: Sodium Sesquicarbonate (tons)
+      name: Sodium Sesquicarbonate
+      units: tons
+      value: 121115
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 331529668
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1590795825
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 5232597
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 71539
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 35618778
+      rank: 3
+      percent: 3.36
+  '2014':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 91878
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 340049300
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1547112987
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 41495220
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 6075994
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 107022
       rank: 1
       percent: 0
   '2015':
-    - product: Sylvite-Raw Ore (tons)
-      name: Sylvite-Raw Ore
-      units: tons
-      value: 28939146
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 95877
       rank: 1
       percent: 100
-    - product: Trona Ore (tons)
-      name: Trona Ore
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 197516
+      value: 313790093
       rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 4933648
-      rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 30576849
+      value: 1551815444
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 2261569396
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 48018542
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 4863569
+      rank: 1
+      percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 70079
       rank: 1
       percent: 0

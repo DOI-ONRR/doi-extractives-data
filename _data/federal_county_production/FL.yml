@@ -1,40 +1,28 @@
 '12049':
   name: Hardee County
   products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2012': null
+        '2013': null
+        '2015': null
+'12105':
+  name: Polk County
+  products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2010': null
+        '2011': null
+        '2012': null
+'12113':
+  name: Santa Rosa County
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': null
-        '2014': null
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010': null
-'12105':
-  name: Polk County
-  products:
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011': null
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2015': null
-'12113':
-  name: Santa Rosa County
-  products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011': 77
+        '2006': 77

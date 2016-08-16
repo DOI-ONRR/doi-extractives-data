@@ -1,256 +1,262 @@
 '29055':
   name: Crawford County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': 34
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': null
-        '2010': 604
-        '2013': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 107
-        '2011': null
-        '2014': 328
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 266
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013': 67
-        '2015': 544
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 300
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015': 382
+        '2006': 382
+        '2007': null
+        '2008': 604
+        '2009': null
+        '2010': 67
+        '2011': 266
+        '2012': 300
+        '2013': 107
+        '2014': null
+        '2015': 328
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 134
+        '2007': null
+        '2008': 194
+        '2009': null
+        '2010': 544
+        '2011': 529
+        '2012': 462
+        '2013': null
+        '2014': null
+        '2015': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2007': null
+        '2008': 7
+        '2009': null
+        '2010': 34
+        '2011': 62
+        '2012': 68
+        '2014': null
 '29065':
   name: Dent County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': 5004
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 1416
-        '2010': 1160
-        '2013': 773
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 212
-        '2011': 335
-        '2014': 2
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 880
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 879
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2014': 339
-        '2015': 20288
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015': 519
+        '2006': 519
+        '2007': 1416
+        '2008': 1160
+        '2009': 773
+        '2010': 339
+        '2011': 880
+        '2012': 879
+        '2013': 212
+        '2014': 335
+        '2015': 2
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 27986
+        '2007': 28473
+        '2008': 23395
+        '2009': 19703
+        '2010': 20288
+        '2011': 23069
+        '2012': 17793
+        '2013': 13385
+        '2014': 10509
+        '2015': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006': 4751
+        '2007': 4591
+        '2008': 5215
+        '2009': 5414
+        '2010': 5004
+        '2011': 5335
+        '2012': 3953
+        '2013': 5180
+        '2014': 2882
+        '2015': null
 '29093':
   name: Iron County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': 7997
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 5660
-        '2010': 5515
-        '2013': 5325
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 5515
-        '2011': 4363
-        '2014': 7159
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 2277
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 4655
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2014': 4174
-        '2015': 39587
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015': 11567
+        '2006': 11567
+        '2007': 5660
+        '2008': 5515
+        '2009': 5325
+        '2010': 4174
+        '2011': 2277
+        '2012': 4655
+        '2013': 5515
+        '2014': 4363
+        '2015': 7159
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 55978
+        '2007': 52719
+        '2008': 46910
+        '2009': 37796
+        '2010': 39587
+        '2011': 39787
+        '2012': 41061
+        '2013': 40904
+        '2014': 51865
+        '2015': 50213
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006': 8341
+        '2007': 10555
+        '2008': 9264
+        '2009': 7859
+        '2010': 7997
+        '2011': 8362
+        '2012': 8743
+        '2013': 10800
+        '2014': 10571
+        '2015': 9479
 '29179':
   name: Reynolds County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': 123099
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 3883
-        '2010': 3696
-        '2013': 2629
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 9448
-        '2011': 15585
-        '2014': 16906
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 4553
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 16007
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2014': 4289
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015': 6462
+        '2006': 6462
+        '2007': 3883
+        '2008': 3696
+        '2009': 2629
+        '2010': 4289
+        '2011': 4553
+        '2012': 16007
+        '2013': 9448
+        '2014': 15585
+        '2015': 16906
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 138817
+        '2007': 140006
+        '2008': 132632
+        '2009': 136652
+        '2010': 123099
+        '2011': 112378
+        '2012': 95004
+        '2013': 91694
+        '2014': 80897
+        '2015': 99465
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006': 41788
+        '2007': 40822
+        '2008': 30955
+        '2009': 37003
+        '2010': 30435
+        '2011': 29908
+        '2012': 19726
+        '2013': 24438
+        '2014': 31198
+        '2015': 27634
 '29203':
   name: Shannon County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': null
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': null
-        '2010': null
-        '2013': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': null
-        '2011': null
-        '2014': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': null
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': null
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2014': null
-    Coal (tons):
-      name: Coal
+    Lead Concentrate (tons):
+      name: Lead Concentrate
       units: tons
       volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2011': null
+        '2014': null
+        '2015': null
+    Copper Concentrate (tons):
+      name: Copper Concentrate
+      units: tons
+      volume:
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
         '2015': null
 '29221':
   name: Washington County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2006': 53
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': null
-        '2010': 935
-        '2013': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 166
-        '2011': null
-        '2014': 109
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 411
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013': 104
-        '2015': 843
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013': 463
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015': 591
+        '2006': 591
+        '2007': null
+        '2008': 935
+        '2009': null
+        '2010': 104
+        '2011': 411
+        '2012': 463
+        '2013': 166
+        '2014': null
+        '2015': 109
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 208
+        '2007': null
+        '2008': 301
+        '2009': null
+        '2010': 843
+        '2011': 818
+        '2012': 714
+        '2013': null
+        '2014': null
+        '2015': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2007': null
+        '2008': 10
+        '2009': null
+        '2010': 53
+        '2011': 97
+        '2012': 105
+        '2013': null
+        '2014': null
+        '2015': null

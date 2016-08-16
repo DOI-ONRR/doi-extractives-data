@@ -1,84 +1,77 @@
 '49001':
   name: Beaver County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       volume:
-        '2006': 157927062
-        '2007': 181316757
-        '2009': 6271803
-        '2012': 159528002
-        '2014': 175855871
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 162260180
-        '2009': 553600
-        '2013': 8879200
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2006': 190119336
-        '2007': 191089318
+        '2006': 2350934233
+        '2007': 2046718554
+        '2008': 2468886992
+        '2009': 2827213958
+        '2010': 2670508903
+        '2011': 2554615747
+        '2012': 2453647854
+        '2013': 2316266258
+        '2014': 2463584337
+        '2015': 2139260182
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2008': 186778614
-        '2015': 185534612
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2010': 8164800
-        '2011': 8592800
-        '2012': 11623200
-        '2013': 12698400
-        '2014': 169752656
-        '2015': 185392425
+        '2013': 12986766
+        '2014': 132080000
+        '2015': 130138400
 '49007':
   name: Carbon County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 8195203
+        '2007': 5251531
+        '2008': 7631778
+        '2009': 5839914
+        '2010': 5746980
+        '2011': 4813795
+        '2012': 4364640
+        '2013': 4626265
+        '2014': 4956871
+        '2015': 4185422
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2006': 8195203
-        '2007': 1321
-        '2009': 5251531
-        '2012': 7631778
-        '2014': 5839914
+        '2006': 32141494
+        '2007': 45753536
+        '2008': 48550363
+        '2009': 53881389
+        '2010': 45197425
+        '2011': 50351482
+        '2012': 56718201
+        '2013': 40915906
+        '2014': 33097170
+        '2015': 43944538
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 4364640
-        '2009': 4626265
-        '2013': 4956871
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
+        '2006': 25931
+        '2007': 37376
+        '2008': 44431
+        '2009': 62301
+        '2010': 40984
+        '2011': 60405
+        '2012': 64446
+        '2013': 32935
+        '2014': 51543
+        '2015': 81802
+    Coal Waste (Sub-Econ) (tons):
+      name: Coal Waste (Sub-Econ)
       units: tons
       volume:
-        '2007': 43944538
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 5746980
-        '2015': 4813795
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2010': 81802
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2012': 4185422
+        '2014': null
 '49009':
   name: Daggett County
   products:
@@ -87,33 +80,29 @@
       units: mcf
       volume:
         '2006': 141717
-        '2007': 91
-        '2009': 64832
-        '2012': 131472
-        '2014': 69728
+        '2007': 64832
+        '2008': 131472
+        '2009': 69728
+        '2010': 121555
+        '2011': 114416
+        '2012': 64959
+        '2013': 42809
+        '2014': 174630
+        '2015': 134635
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 64959
-        '2009': 42809
-        '2013': 174630
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 121555
-        '2015': 114416
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2010': 95
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2015': 134635
+        '2006': 91
+        '2007': 46
+        '2008': 94
+        '2009': 48
+        '2010': 57
+        '2011': 74
+        '2012': 42
+        '2013': 52
+        '2014': 114
+        '2015': 95
 '49013':
   name: Duchesne County
   products:
@@ -121,74 +110,75 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 2297
-        '2007': 839
-        '2009': 816
-        '2012': 57936
-        '2014': 620026
+        '2006': 4337088
+        '2007': 5237243
+        '2008': 5596249
+        '2009': 6870722
+        '2010': 5681768
+        '2011': 5830572
+        '2012': 6327879
+        '2013': 6616140
+        '2014': 7706962
+        '2015': 5242789
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 6327879
-        '2009': 6616140
-        '2013': 7706962
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2006': 5242789
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 95613
-        '2015': 14787
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
+        '2006': 1855375
+        '2007': 2762988
+        '2008': 3312242
+        '2009': 3412833
+        '2010': 2478103
+        '2011': 2533856
+        '2012': 2859231
+        '2013': 3121338
+        '2014': 3409304
         '2015': 2853662
 '49015':
   name: Emery County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 1902778
+        '2007': 1408411
+        '2008': 948569
+        '2009': 843831
+        '2010': 472904
+        '2011': 2399827
+        '2012': 4428169
+        '2013': 3482244
+        '2014': 3127674
+        '2015': 1284181
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2006': 1902778
-        '2007': 3703
-        '2009': 1408411
-        '2012': 948569
-        '2014': 843831
+        '2006': 8861822
+        '2007': 9941863
+        '2008': 9313387
+        '2009': 9245687
+        '2010': 8158078
+        '2011': 6949510
+        '2012': 6065178
+        '2013': 5768664
+        '2014': 5212194
+        '2015': 5165812
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 4428169
-        '2009': 3482244
-        '2013': 3127674
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2006': 5165812
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 472904
-        '2015': 2399827
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2011': 1284181
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2011': 184
+        '2006': 3703
+        '2007': 2002
+        '2008': 6584
+        '2009': 11009
+        '2010': 6100
+        '2011': 2906
+        '2012': 2101
+        '2013': 1545
+        '2014': 992
+        '2015': 184
 '49017':
   name: Garfield County
   products:
@@ -197,33 +187,29 @@
       units: mcf
       volume:
         '2006': 9125
-        '2007': 190862
-        '2009': 9131
+        '2007': 9131
+        '2008': 9150
+        '2009': 9125
+        '2010': 9125
+        '2011': 9125
         '2012': 9150
-        '2014': 9125
+        '2013': 7625
+        '2014': 8350
+        '2015': 8350
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 9150
-        '2009': 7625
-        '2013': 8350
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 9125
-        '2015': 9125
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2011': 146922
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2013': 8350
+        '2006': 190862
+        '2007': 188678
+        '2008': 177709
+        '2009': 175154
+        '2010': 169698
+        '2011': 166534
+        '2012': 154566
+        '2013': 152558
+        '2014': 153002
+        '2015': 146922
 '49019':
   name: Grand County
   products:
@@ -231,106 +217,76 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 32256
-        '2007': 48570
-        '2009': 37312
-        '2012': 74652
-        '2014': 10999
+        '2006': 5555014
+        '2007': 5254301
+        '2008': 4955461
+        '2009': 3930030
+        '2010': 3231011
+        '2011': 3039207
+        '2012': 3196375
+        '2013': 3415572
+        '2014': 3539503
+        '2015': 3641766
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 1431
-        '2009': 63
-        '2013': 2551
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2006': 3641766
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2007': 18987
-        '2013': 755494
+        '2006': 72886
+        '2007': 92409
+        '2008': 209587
+        '2009': 120232
+        '2010': 92607
+        '2011': 69172
+        '2012': 298978
+        '2013': 827706
+        '2014': 1127224
+        '2015': 755494
+'49027':
+  name: Millard County
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2008': 3231011
-        '2015': 3039207
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2013': 9898
-'49027':
-  name: Millard County
-  products:
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2007': 2041200
-        '2008': 2148200
-        '2009': 2905800
-        '2010': 3174600
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 138400
-        '2013': 2219800
+        '2013': 3246692
+        '2014': 33020000
+        '2015': 32534600
 '49031':
   name: Piute County
+  products:
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': 33520
+        '2015': 51791
+'49035':
+  name: Salt Lake County
   products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2006': null
-        '2009': null
-        '2012': null
-        '2014': null
+        '2012': 3448
+        '2013': 4800
+        '2014': 2562
+        '2015': 1856
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': null
-        '2009': null
-        '2013': 33520
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': null
-        '2015': null
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2011': 51791
-'49035':
-  name: Salt Lake County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 3448
-        '2009': 4800
-        '2013': 2562
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2012': 1856
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2012': 1755
+        '2012': 4351
+        '2013': 3872
+        '2014': 2194
+        '2015': 1755
 '49037':
   name: San Juan County
   products:
@@ -338,98 +294,78 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 115685
-        '2007': 2597
-        '2009': 1647880
-        '2012': 3307404
-        '2014': 2950011
+        '2006': 7858916
+        '2007': 6424763
+        '2008': 5746790
+        '2009': 4150609
+        '2010': 4588265
+        '2011': 4894865
+        '2012': 5051143
+        '2013': 5790745
+        '2014': 6390967
+        '2015': 6909945
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 778662
-        '2009': 5790745
-        '2013': 55338
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2006': 6909945
-    Sodium Decahydrate (tons):
-      name: Sodium Decahydrate
-      units: tons
-      volume:
-        '2006': 8591
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 1134777
-        '2015': 465875
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2012': 401612
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2014': 84091
+        '2006': 289894
+        '2007': 290525
+        '2008': 292852
+        '2009': 281932
+        '2010': 316514
+        '2011': 429126
+        '2012': 431742
+        '2013': 432535
+        '2014': 439814
+        '2015': 401612
 '49039':
   name: Sanpete County
   products:
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2009': 69935
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2012': 19116
-        '2014': 66297
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
+        '2008': 19116
+        '2009': 66297
         '2015': 669070
-'49041':
-  name: Sevier County
-  products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2006': null
-        '2007': 1661271
-        '2009': null
-        '2012': null
-        '2014': null
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': null
-        '2009': null
-        '2013': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': null
-        '2015': null
-    Soda Ash (tons):
-      name: Soda Ash
+        '2008': 4824
+        '2009': 16549
+        '2015': 69935
+'49041':
+  name: Sevier County
+  products:
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
         '2012': null
-    Sodium Products:
-      name: Sodium Products
-      units: null
+        '2013': null
+        '2014': null
+        '2015': null
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2014': 1114518
+        '2006': 1661271
+        '2007': 1418250
+        '2008': 1665709
+        '2009': 2365384
+        '2010': 2039666
+        '2011': 1961413
+        '2012': 1726200
+        '2013': 1466894
+        '2014': 1251918
+        '2015': 1114518
 '49043':
   name: Summit County
   products:
@@ -438,68 +374,85 @@
       units: mcf
       volume:
         '2006': 223156
-        '2007': 46644
-        '2009': 239906
-        '2012': 235941
-        '2014': 144674
+        '2007': 239906
+        '2008': 235941
+        '2009': 144674
+        '2010': 126855
+        '2011': 157842
+        '2012': 134383
+        '2013': 126874
+        '2014': 123285
+        '2015': 109048
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 134383
-        '2009': 126874
-        '2013': 123285
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 126855
-        '2015': 157842
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2008': 31362
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2015': 109048
+        '2006': 46644
+        '2007': 40315
+        '2008': 38118
+        '2009': 19334
+        '2010': 15930
+        '2011': 13369
+        '2012': 15089
+        '2013': 28291
+        '2014': 36720
+        '2015': 31362
 '49045':
   name: Tooele County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+    Magnesium Chloride Brine (tons):
+      name: Magnesium Chloride Brine
+      units: tons
       volume:
         '2006': null
-        '2009': null
-        '2013': null
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
         '2007': null
+        '2008': null
         '2009': null
+        '2010': null
+        '2011': null
         '2012': null
+        '2013': null
         '2014': null
-    Sodium Sesquicarbonate (tons):
-      name: Sodium Sesquicarbonate
+        '2015': null
+    Manure Salts (tons):
+      name: Manure Salts
       units: tons
       volume:
+        '2006': null
         '2007': null
         '2008': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': null
-        '2015': null
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+    Potash (tons):
+      name: Potash
       units: tons
       volume:
+        '2006': null
+        '2007': null
+        '2008': null
         '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
 '49047':
   name: Uintah County
   products:
@@ -507,49 +460,44 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 267051
-        '2007': 8776
-        '2009': 583888
-        '2012': 698291
-        '2014': 566431
+        '2006': 152243191
+        '2007': 164624889
+        '2008': 214261895
+        '2009': 222463367
+        '2010': 220164429
+        '2011': 227751578
+        '2012': 248285515
+        '2013': 234457092
+        '2014': 223606642
+        '2015': 195773253
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2006': 8776
+        '2007': 10879
+        '2008': 16957
+        '2009': 13016
+        '2010': 28082
+        '2011': null
+        '2012': 35927
+        '2013': null
+        '2014': null
+        '2015': 16078
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 294641
-        '2009': 73830
-        '2013': 37314
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2006': 14803
-    Sodium Sesquicarbonate (tons):
-      name: Sodium Sesquicarbonate
-      units: tons
-      volume:
-        '2006': 5860771
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2007': 195773253
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 121249
-        '2015': 45072
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2008': 16078
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2014': 53239
+        '2006': 2973557
+        '2007': 3427216
+        '2008': 4275060
+        '2009': 4431018
+        '2010': 5580204
+        '2011': 5350718
+        '2012': 5613866
+        '2013': 5957007
+        '2014': 6730991
+        '2015': 5860771
 '49049':
   name: Utah County
   products:
@@ -558,27 +506,15 @@
       units: mcf
       volume:
         '2006': 42859
-        '2009': 41116
-        '2012': 39596
-        '2014': 34867
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 23548
-        '2009': 22468
-        '2013': 20441
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 30605
-        '2015': 27732
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2014': 18585
+        '2007': 41116
+        '2008': 39596
+        '2009': 34867
+        '2010': 30605
+        '2011': 27732
+        '2012': 23548
+        '2013': 22468
+        '2014': 20441
+        '2015': 18585
 '49053':
   name: Washington County
   products:
@@ -587,24 +523,12 @@
       units: mcf
       volume:
         '2006': 4712
-        '2009': 4365
-        '2012': 4648
-        '2014': 3630
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 4035
-        '2009': 4129
-        '2013': 3899
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 4047
-        '2015': 3998
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2013': 3560
+        '2007': 4365
+        '2008': 4648
+        '2009': 3630
+        '2010': 4047
+        '2011': 3998
+        '2012': 4035
+        '2013': 4129
+        '2014': 3899
+        '2015': 3560

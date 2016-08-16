@@ -1,221 +1,83 @@
 federal_production:
   '2006':
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 34722
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 290
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 7070
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 570720
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 490362
+      value: 550374
       rank: 1
       percent: 0
   '2007':
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 61094
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 300
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 56660
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 74649
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 555
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 278198
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 174997
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 1350
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 428
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 566248
+      value: 546642
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 507226
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 456257
       rank: 1
       percent: 0
   '2010':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 724
-      rank: 1
-      percent: 100
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 14
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 1373
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 895
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 2989
-      rank: 1
-      percent: 100
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 59
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 1606
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 4401
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 528252
+      value: 472631
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 445437
       rank: 1
       percent: 0
   '2012':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 3782
-      rank: 1
-      percent: 100
-    - product: Manure Salts (tons)
-      name: Manure Salts
-      units: tons
-      value: 287
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 2923
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 7085
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 4122
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 7253
-      rank: 1
-      percent: 100
-  '2014':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 15097
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 475084
+      value: 394884
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 462724
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 395518
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 363941
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13910
       rank: 1
       percent: 0
   '2015':
-    - product: Magnesium Chloride Brine (tons)
-      name: Magnesium Chloride Brine
-      units: tons
-      value: 22708
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 342217
       rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 289
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 12809
       rank: 1
       percent: 0

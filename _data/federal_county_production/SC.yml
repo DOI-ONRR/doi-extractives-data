@@ -1,14 +1,16 @@
 '45001':
   name: Abbeville County
   products:
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+    Gold Ore (tons):
+      name: Gold Ore
+      units: tons
       volume:
-        '2007': null
-        '2014': null
-    Gas (mcf):
-      name: Gas
-      units: mcf
+        '2009': null
+        '2011': null
+    Gold Placer (oz):
+      name: Gold Placer
+      units: oz
       volume:
-        '2014': null
+        '2009': null
+        '2010': null
+        '2011': null

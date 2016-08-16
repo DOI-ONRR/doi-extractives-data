@@ -1,44 +1,34 @@
 '30003':
   name: Big Horn County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 18072165
+        '2007': 18777497
+        '2008': 19316074
+        '2009': 17319320
+        '2010': 17741873
+        '2011': 17214337
+        '2012': 16004122
+        '2013': 16480119
+        '2014': 15703781
+        '2015': 14477637
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008': 18777497
-        '2010': 19316074
-        '2011': 4918420
-        '2013': 17319320
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 16480119
-        '2011': 15703781
-        '2015': 14477637
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2009': 18072165
-        '2013': 4464894
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2010': 17741873
-        '2013': 4308001
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 17214337
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2014': 16004122
-        '2015': 1713080
+        '2006': 4464894
+        '2007': 4293871
+        '2008': 4918420
+        '2009': 5191090
+        '2010': 4308001
+        '2011': 3002622
+        '2012': 1713080
+        '2013': 551004
+        '2014': 39028
+        '2015': 20751
 '30005':
   name: Blaine County
   products:
@@ -46,44 +36,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 3490674
-        '2011': 2734860
-        '2013': 2905688
+        '2006': 3779515
+        '2007': 3490674
+        '2008': 2734860
+        '2009': 2905688
+        '2010': 2828865
+        '2011': 2691122
+        '2012': 1857973
+        '2013': 1481442
+        '2014': 1282999
+        '2015': 1118963
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 1481442
-        '2011': 1282999
-        '2015': 1118963
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 35662
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 3779515
-        '2015': 41877
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 2691122
-        '2013': 36414
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 2828865
-        '2014': 38318
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 1857973
+        '2006': 41877
+        '2007': 42588
+        '2008': 40792
+        '2009': 38632
+        '2010': 38318
+        '2011': 36414
+        '2012': 35662
+        '2013': 33736
+        '2014': 32734
+        '2015': 30174
 '30009':
   name: Carbon County
   products:
@@ -91,44 +67,30 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 510270
-        '2008': 1309329
-        '2011': 1404216
-        '2013': 1441483
+        '2006': 1384487
+        '2007': 1309329
+        '2008': 1404216
+        '2009': 1441483
+        '2010': 1558525
+        '2011': 1519192
+        '2012': 1449218
+        '2013': 1420976
+        '2014': 1417368
+        '2015': 516242
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 1420976
-        '2011': 1417368
-        '2015': 516242
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2011': 442517
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 1384487
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1519192
-        '2013': 448127
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 1558525
-        '2015': 450430
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 1449218
+        '2006': 510270
+        '2007': 503066
+        '2008': 497161
+        '2009': 469428
+        '2010': 450430
+        '2011': 448127
+        '2012': 442517
+        '2013': 436561
+        '2014': 431016
+        '2015': 171378
 '30011':
   name: Carter County
   products:
@@ -136,44 +98,27 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 82143
-        '2011': 59250
-        '2013': 60903
+        '2006': 14267
+        '2007': 82143
+        '2008': 59250
+        '2009': 60903
+        '2010': 41326
+        '2011': 40343
+        '2012': 20169
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 70101
-        '2011': 117032
+        '2006': 25963
+        '2007': 63557
+        '2008': 127128
+        '2009': 107296
+        '2010': 97295
+        '2011': 83512
+        '2012': 75176
+        '2013': 70101
+        '2014': 117032
         '2015': 158285
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 14267
-        '2014': 25963
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 75176
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 41326
-        '2015': 97295
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 40343
-        '2013': 83512
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 20169
 '30015':
   name: Chouteau County
   products:
@@ -181,36 +126,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 218975
-        '2011': 219075
-        '2013': 188189
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 124845
-        '2011': 103583
+        '2006': 250562
+        '2007': 218975
+        '2008': 219075
+        '2009': 188189
+        '2010': 182562
+        '2011': 205762
+        '2012': 143771
+        '2013': 124845
+        '2014': 103583
         '2015': 98614
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 250562
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 205762
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 182562
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 143771
 '30017':
   name: Custer County
   products:
@@ -218,36 +143,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 33499
-        '2010': 33273
-        '2013': 24994
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 25668
-        '2011': 24609
+        '2006': 29994
+        '2007': 33499
+        '2008': 33273
+        '2009': 24994
+        '2010': 26483
+        '2011': 25904
+        '2012': 19346
+        '2013': 25668
+        '2014': 24609
         '2015': 22420
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 29994
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 26483
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 25904
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 19346
 '30021':
   name: Dawson County
   products:
@@ -255,45 +160,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 22
-        '2011': 120831
-        '2013': 84728
+        '2006': 118572
+        '2007': 124654
+        '2008': 120831
+        '2009': 84728
+        '2010': 56187
+        '2011': 6499
+        '2012': 9928
+        '2013': 6951
+        '2014': 12762
+        '2015': 14570
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 882
-        '2011': 656
-        '2015': 794
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 118572
-        '2015': 351461
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2011': 189487
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 56187
-        '2015': 207299
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1077
-        '2013': 772
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2014': 2413
-        '2015': 9928
+        '2006': 351461
+        '2007': 349118
+        '2008': 273999
+        '2009': 230060
+        '2010': 207299
+        '2011': 188903
+        '2012': 189487
+        '2013': 162124
+        '2014': 179106
+        '2015': 196545
 '30025':
   name: Fallon County
   products:
@@ -301,49 +191,30 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 2697340
-        '2008': 594
-        '2010': 313
-        '2011': 14763265
-        '2013': 543
+        '2006': 12427881
+        '2007': 13911638
+        '2008': 14763265
+        '2009': 13843106
+        '2010': 10236354
+        '2011': 7241879
+        '2012': 4981141
+        '2013': 4390648
+        '2014': 4329680
+        '2015': 4396932
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 1432
-        '2011': 9735
-        '2015': 10140
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2009': 408
-        '2013': 12427881
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 27360
-        '2011': 1690072
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': 542
-        '2013': 10236354
-        '2014': 18823
-        '2015': 1912874
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1493
-        '2013': 13705
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 2877
+        '2006': 2697340
+        '2007': 2483836
+        '2008': 2267323
+        '2009': 2133922
+        '2010': 1912874
+        '2011': 1766860
+        '2012': 1690072
+        '2013': 1558033
+        '2014': 1499350
+        '2015': 1418761
 '30027':
   name: Fergus County
   products:
@@ -351,73 +222,33 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 56986
-        '2010': 24446
-        '2013': 21415
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 19570
-        '2011': 14614
+        '2006': 142729
+        '2007': 56986
+        '2008': 24446
+        '2009': 21415
+        '2010': 29696
+        '2011': 26411
+        '2012': 24740
+        '2013': 19570
+        '2014': 14614
         '2015': 10367
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 142729
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 29696
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 26411
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 24740
 '30033':
   name: Garfield County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 3054
-        '2011': 2793
-        '2013': 2430
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 2092
-        '2011': 1667
+        '2006': 3720
+        '2007': 3054
+        '2008': 2793
+        '2009': 2430
+        '2010': 2147
+        '2011': 2220
+        '2012': 2199
+        '2013': 2092
+        '2014': 1667
         '2015': 1845
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2013': 3720
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2013': 2220
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2014': 2147
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 2199
 '30035':
   name: Glacier County
   products:
@@ -425,40 +256,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 10745
-        '2010': 10827
-        '2011': 4650
-        '2013': 9849
+        '2006': 11576
+        '2007': 10745
+        '2008': 10827
+        '2009': 9849
+        '2010': 10908
+        '2011': 8732
+        '2012': 10108
+        '2013': 15817
+        '2014': 14541
+        '2015': 16149
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 2371
-        '2011': 3817
-        '2015': 3185
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 11576
-        '2014': 4648
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 10908
-        '2014': 4488
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 8732
-        '2013': 4599
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 10108
+        '2006': 4648
+        '2007': 4434
+        '2008': 4650
+        '2009': 4657
+        '2010': 4488
+        '2011': 4599
+        '2012': 4821
+        '2013': 4158
+        '2014': 4108
+        '2015': 4617
 '30041':
   name: Hill County
   products:
@@ -466,36 +287,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 491434
-        '2011': 728548
-        '2013': 685632
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 229676
-        '2011': 197535
+        '2006': 492120
+        '2007': 491434
+        '2008': 728548
+        '2009': 685632
+        '2010': 486630
+        '2011': 347473
+        '2012': 274769
+        '2013': 229676
+        '2014': 197535
         '2015': 171557
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 492120
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 347473
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 486630
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 274769
 '30051':
   name: Liberty County
   products:
@@ -503,118 +304,71 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 120950
-        '2011': 101960
-        '2013': 91480
+        '2006': 172360
+        '2007': 120950
+        '2008': 101960
+        '2009': 91480
+        '2010': 88333
+        '2011': 79225
+        '2012': 81265
+        '2013': 81926
+        '2014': 75038
+        '2015': 78958
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 22150
-        '2011': 17569
-        '2015': 18992
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 8716
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 172360
-        '2013': 4469
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 88333
-        '2014': 6021
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 79225
-        '2013': 11195
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 2776
+        '2006': 4469
+        '2007': 4122
+        '2008': 5326
+        '2009': 5353
+        '2010': 6021
+        '2011': 11195
+        '2012': 8716
+        '2013': 5789
+        '2014': 5753
+        '2015': 5331
 '30065':
   name: Musselshell County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 5129
-        '2011': 6414
-        '2013': 5395
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': null
-        '2011': null
-        '2015': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2013': 5904
-    Copper Concentrate (tons):
-      name: Copper Concentrate
+        '2006': 4704
+        '2007': 5129
+        '2008': 6414
+        '2009': 5395
+        '2010': 5413
+        '2011': 5904
+        '2012': 5386
+        '2013': 4960
+        '2014': 6097
+        '2015': 5882
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2014': 4704
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2014': 5413
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 5386
+        '2013': null
+        '2014': null
+        '2015': null
 '30069':
   name: Petroleum County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 12793
-        '2011': 11001
-        '2013': 10727
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 8222
-        '2011': 8677
+        '2006': 12673
+        '2007': 12793
+        '2008': 11001
+        '2009': 10727
+        '2010': 13208
+        '2011': 10040
+        '2012': 9923
+        '2013': 8222
+        '2014': 8677
         '2015': 9418
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 9923
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2013': 10040
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2014': 12673
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2014': 13208
 '30071':
   name: Phillips County
   products:
@@ -622,38 +376,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 11428528
-        '2011': 11366506
-        '2013': 4191
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 4161
-        '2011': 3846
-        '2015': 3680
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 6366
-        '2013': 10250806
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': 8051
-        '2013': 8593486
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 5873
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 4730
+        '2006': 10250806
+        '2007': 11428528
+        '2008': 11366506
+        '2009': 9624684
+        '2010': 8593486
+        '2011': 7398649
+        '2012': 5392644
+        '2013': 4978948
+        '2014': 5032651
+        '2015': 5030632
 '30073':
   name: Pondera County
   products:
@@ -661,36 +393,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 9588
-        '2010': 6843
-        '2013': 5002
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 3186
-        '2011': 2264
+        '2006': 9087
+        '2007': 9588
+        '2008': 6843
+        '2009': 5002
+        '2010': 4674
+        '2011': 4399
+        '2012': 3518
+        '2013': 3186
+        '2014': 2264
         '2015': 4040
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 9087
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': 4674
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 4399
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 3518
 '30075':
   name: Powder River County
   products:
@@ -698,45 +410,30 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 21542
-        '2010': 16299
-        '2011': 68956
-        '2013': 7621
+        '2006': 21789
+        '2007': 21542
+        '2008': 16299
+        '2009': 7621
+        '2010': 7496
+        '2011': 7444
+        '2012': 14454
+        '2013': 10309
+        '2014': 7538
+        '2015': 5238
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 10309
-        '2011': 7538
-        '2015': 5238
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 21789
-        '2014': 33147
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 60975
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': 7496
-        '2015': 67288
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 7444
-        '2013': 61538
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 14454
+        '2006': 33147
+        '2007': 59957
+        '2008': 68956
+        '2009': 68597
+        '2010': 67288
+        '2011': 61538
+        '2012': 60975
+        '2013': 51301
+        '2014': 100713
+        '2015': 149079
 '30079':
   name: Prairie County
   products:
@@ -744,93 +441,69 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 22
-        '2010': 44496
-        '2011': 144279
-        '2013': 40639
+        '2006': 52611
+        '2007': 49834
+        '2008': 44496
+        '2009': 40639
+        '2010': 40906
+        '2011': 37180
+        '2012': 34725
+        '2013': 29367
+        '2014': 29423
+        '2015': 30305
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 882
-        '2011': 656
-        '2015': 794
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 52611
-        '2015': 169347
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2011': 124313
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 40906
-        '2015': 150663
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1077
-        '2013': 772
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2014': 2413
-        '2015': 34725
+        '2006': 169347
+        '2007': 155388
+        '2008': 144279
+        '2009': 133372
+        '2010': 150663
+        '2011': 135891
+        '2012': 124313
+        '2013': 113782
+        '2014': 109824
+        '2015': 99809
 '30083':
   name: Richland County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': null
+        '2012': null
+        '2014': null
+        '2015': null
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008': 471320
-        '2011': 376725
-        '2013': 326282
+        '2006': 376706
+        '2007': 471320
+        '2008': 376725
+        '2009': 326282
+        '2010': 306870
+        '2011': 284934
+        '2012': 385861
+        '2013': 547142
+        '2014': 670658
+        '2015': 774440
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 547142
-        '2011': null
-        '2015': null
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2009': null
-        '2012': 376706
-        '2015': 479920
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2011': 419660
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 284934
-        '2013': 349264
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 306870
-        '2015': 405157
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2014': null
-        '2015': 385861
+        '2006': 479920
+        '2007': 702046
+        '2008': 553819
+        '2009': 443262
+        '2010': 405157
+        '2011': 349264
+        '2012': 419660
+        '2013': 629789
+        '2014': 717642
+        '2015': 685314
 '30085':
   name: Roosevelt County
   products:
@@ -838,92 +511,75 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 6194
-        '2010': 6237
-        '2011': 6728
-        '2013': 4832
+        '2006': 8262
+        '2007': 6194
+        '2008': 6237
+        '2009': 4832
+        '2010': 4349
+        '2011': 8246
+        '2012': 59539
+        '2013': 121532
+        '2014': 159102
+        '2015': 153356
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 121532
-        '2011': 159102
-        '2015': 153356
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2010': 8262
-        '2014': 9523
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 85285
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': 4349
-        '2014': 4797
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 8246
-        '2013': 14962
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 59539
+        '2006': 9523
+        '2007': 7048
+        '2008': 6728
+        '2009': 5648
+        '2010': 4797
+        '2011': 14962
+        '2012': 85285
+        '2013': 158215
+        '2014': 224364
+        '2015': 186714
 '30087':
   name: Rosebud County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008': null
-        '2010': null
-        '2011': 23440
-        '2013': null
+        '2006': 689
+        '2007': 658
+        '2008': 966
+        '2009': 912
+        '2010': 744
+        '2011': 518
+        '2012': 673
+        '2013': 607
+        '2014': 580
+        '2015': 374
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': null
-        '2011': null
-        '2015': null
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2009': null
-        '2010': 689
-        '2014': 18665
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 16887
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2011': null
-        '2014': 23356
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': null
-        '2013': 16431
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2014': null
+        '2006': 18665
+        '2007': 19112
+        '2008': 23440
+        '2009': 25550
+        '2010': 23356
+        '2011': 16431
+        '2012': 16887
+        '2013': 15222
+        '2014': 12792
+        '2015': 13557
 '30091':
   name: Sheridan County
   products:
@@ -931,82 +587,52 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 36220
-        '2010': 42898
-        '2011': 36696
-        '2013': 33512
+        '2006': 35338
+        '2007': 36220
+        '2008': 42898
+        '2009': 33512
+        '2010': 37217
+        '2011': 12947
+        '2012': 25935
+        '2013': 36170
+        '2014': 66817
+        '2015': 74354
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 36170
-        '2011': 66817
-        '2015': 74354
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 36546
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 35338
-        '2015': 39474
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 37217
-        '2014': 30738
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 12947
-        '2013': 25225
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 25935
+        '2006': 39474
+        '2007': 37070
+        '2008': 36696
+        '2009': 34886
+        '2010': 30738
+        '2011': 25225
+        '2012': 36546
+        '2013': 37121
+        '2014': 39937
+        '2015': 35833
 '30095':
   name: Stillwater County
   products:
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 13
+        '2008': 35
+        '2010': 2811
+        '2011': 9551
+        '2012': 9559
+        '2013': 14949
+        '2014': 10656
+        '2015': 7031
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008': 13
-        '2011': 35
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 3260
-        '2011': 10656
-        '2015': 7031
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 9559
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1146
-        '2013': 9551
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2014': 2811
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 4631
+        '2011': 1146
+        '2012': 4631
+        '2013': 3260
 '30101':
   name: Toole County
   products:
@@ -1014,81 +640,47 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 282259
-        '2011': 284916
-        '2013': 252124
+        '2006': 280814
+        '2007': 282259
+        '2008': 284916
+        '2009': 252124
+        '2010': 229431
+        '2011': 234307
+        '2012': 207895
+        '2013': 195415
+        '2014': 173274
+        '2015': 155864
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 195415
-        '2011': 173274
-        '2015': 155864
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 41370
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 280814
-        '2015': 64821
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 234307
-        '2013': 41403
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 229431
-        '2015': 43436
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 207895
+        '2006': 64821
+        '2007': 61867
+        '2008': 52785
+        '2009': 44978
+        '2010': 43436
+        '2011': 41403
+        '2012': 41370
+        '2013': 43198
+        '2014': 39601
+        '2015': 43177
 '30103':
   name: Treasure County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': null
-        '2010': null
-        '2013': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': null
-        '2011': null
-        '2015': null
-    Copper Concentrate (tons):
-      name: Copper Concentrate
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
+        '2006': null
+        '2007': null
+        '2008': null
         '2009': null
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
+        '2010': null
         '2011': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
         '2012': null
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
+        '2013': null
         '2014': null
+        '2015': null
 '30105':
   name: Valley County
   products:
@@ -1096,36 +688,16 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 2002736
-        '2011': 2023270
-        '2013': 1990399
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008': 1333086
-        '2011': 1244014
+        '2006': 1756777
+        '2007': 2002736
+        '2008': 2023270
+        '2009': 1990399
+        '2010': 1867238
+        '2011': 1770938
+        '2012': 1402537
+        '2013': 1333086
+        '2014': 1244014
         '2015': 942832
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2012': 1756777
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1770938
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 1867238
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 1402537
 '30109':
   name: Wibaux County
   products:
@@ -1133,77 +705,43 @@
       name: Gas
       units: mcf
       volume:
-        '2008': 22
-        '2011': 160372
-        '2013': 144413
+        '2006': 189815
+        '2007': 182206
+        '2008': 160372
+        '2009': 144413
+        '2010': 143866
+        '2011': 138895
+        '2012': 124002
+        '2013': 111066
+        '2014': 106886
+        '2015': 98187
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 882
-        '2011': 656
-        '2015': 794
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010': 109289
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2011': 189815
-        '2015': 145218
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2012': 143866
-        '2015': 133956
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 1077
-        '2013': 772
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 2413
+        '2006': 145218
+        '2007': 133398
+        '2008': 123370
+        '2009': 114688
+        '2010': 133956
+        '2011': 120349
+        '2012': 109289
+        '2013': 100533
+        '2014': 96472
+        '2015': 87298
 '30111':
   name: Yellowstone County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2008': 499
-        '2011': 277
-        '2013': 37
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2008': 369
-        '2011': 123
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012': 56
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2013': 866
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2013': 42
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2015': 104
+        '2006': 866
+        '2007': 499
+        '2008': 277
+        '2009': 37
+        '2010': 42
+        '2011': 56
+        '2012': 104
+        '2013': 369
+        '2014': 123

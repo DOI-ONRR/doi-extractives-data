@@ -1,51 +1,47 @@
 AK:
   products:
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
+    Gas (mcf):
+      name: Gas
+      units: mcf
       volume:
         '2006':
           volume: 39875346
-          percent: 100
+          percent: 0
           rank: 1
         '2007':
-          volume: 343676
-          percent: 100
+          volume: 36868361
+          percent: 0
           rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007':
-          volume: 37140761
+        '2008':
+          volume: 34102133
           percent: 0
           rank: 1
         '2009':
-          volume: 34331662
+          volume: 28155124
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 22767536
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 14054084
           percent: 0
           rank: 1
         '2012':
-          volume: 28358244
+          volume: 14393798
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 13577140
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 15433070
           percent: 0
           rank: 1
         '2015':
-          volume: 23004699
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009':
-          volume: 14295839
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2006':
-          volume: 14711534
+          volume: 14188599
           percent: 0
           rank: 1
     Oil (bbl):
@@ -53,517 +49,417 @@ AK:
       units: bbl
       volume:
         '2006':
-          volume: 14479789
-          percent: 0.26
-          rank: 6
+          volume: 343676
+          percent: 0.03
+          rank: 14
+        '2007':
+          volume: 272400
+          percent: 0.03
+          rank: 16
+        '2008':
+          volume: 229529
+          percent: 0.02
+          rank: 16
+        '2009':
+          volume: 203120
+          percent: 0.02
+          rank: 17
         '2010':
-          volume: 16327095
-          percent: 0.38
-          rank: 4
+          volume: 237163
+          percent: 0.02
+          rank: 15
+        '2011':
+          volume: 241755
+          percent: 0.02
+          rank: 16
+        '2012':
+          volume: 317736
+          percent: 0.03
+          rank: 15
         '2013':
-          volume: 15146653
-          percent: 0.27
-          rank: 6
+          volume: 902649
+          percent: 0.09
+          rank: 10
+        '2014':
+          volume: 894025
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 958054
+          percent: 0
+          rank: 1
 AL:
   products:
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2010':
-          volume: 2309
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 2458
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 4481
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 51808
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 649123
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 28035645
-          percent: 100
-          rank: 1
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2006':
-          volume: 7
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 9
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 483
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 1203
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 10588
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 62559
-          percent: 100
-          rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007':
-          volume: 22446821
-          percent: 0
-          rank: 1
-        '2009':
-          volume: 23005218
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 20609843
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 18813473
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009':
-          volume: 16823919
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2006':
-          volume: 1763044
-          percent: 0
-          rank: 1
-        '2007':
-          volume: 18028648
-          percent: 0
-          rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2007':
-          volume: 12262948
-          percent: 0.54
-          rank: 4
-        '2010':
-          volume: 15203042
-          percent: 0.35
-          rank: 5
-        '2013':
-          volume: 13942831
-          percent: 0.25
-          rank: 7
-AR:
-  products:
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2012':
-          volume: 1677
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 5185
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 21148
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 34328
-          percent: 100
-          rank: 1
-    Borax-Anhydrous (tons):
-      name: Borax-Anhydrous
-      units: tons
-      volume:
-        '2011':
-          volume: 43197
-          percent: 100
-          rank: 1
-    Borax-Decahydrate (tons):
-      name: Borax-Decahydrate
-      units: tons
-      volume:
-        '2006':
-          volume: 120165
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 222908
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 554252
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 672671
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 3642638
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 4628930
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 23
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 6350
-          percent: 100
-          rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007':
-          volume: 9876516
-          percent: 0
-          rank: 1
-        '2009':
-          volume: 12040955
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 17902907
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 18909313
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009':
-          volume: 17840904
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007':
-          volume: 3746
-          percent: 0
-          rank: 1
-        '2008':
-          volume: 6854772
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 8620231
-          percent: 0
-          rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2007':
-          volume: 13661476
-          percent: 0.6
-          rank: 3
-        '2010':
-          volume: 15170982
-          percent: 0.35
-          rank: 6
-        '2013':
-          volume: 13229291
-          percent: 0.24
-          rank: 8
-CA:
-  products:
-    Borax-Pentahydrate (tons):
-      name: Borax-Pentahydrate
-      units: tons
-      volume:
-        '2009':
-          volume: 7
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 1219
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 4164
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 8929
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 10488
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 11198
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 91143
-          percent: 100
-          rank: 1
-    Boric Acid (tons):
-      name: Boric Acid
-      units: tons
-      volume:
-        '2006':
-          volume: 151370
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 161245
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 432591
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 776501
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 2317562
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 3140317
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 10040401
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 94
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 16088
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 17559
-          percent: 100
-          rank: 1
-    Brine Barrels (bbl):
-      name: Brine Barrels
-      units: bbl
-      volume:
-        '2006':
-          volume: 36545
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 20174
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 21083
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 23590
-          percent: 100
-          rank: 1
-    Brine Products (tons):
-      name: Brine Products
-      units: tons
-      volume:
-        '2006':
-          volume: 24272
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 24585
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 25643
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 28513
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 7829707
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 8454667
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 8647918
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 8969302
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 9664964
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 9822859
-          percent: 100
-          rank: 1
-    Clay (tons):
-      name: Clay
-      units: tons
-      volume:
-        '2006':
-          volume: 51255487
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 66624232
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 51893005
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 54900022
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 55624986
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 56020889
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 58306990
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 62961033
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 35515722
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 38387125
-          percent: 100
-          rank: 1
     Coal (tons):
       name: Coal
       units: tons
       volume:
-        '2006':
-          volume: 442590875
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 79748505
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 14432085
+        '2012':
+          volume: 1760930
           percent: 0
           rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 28745824
+          percent: 0
+          rank: 1
         '2007':
-          volume: 1207637794
+          volume: 22393740
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 22960757
           percent: 0
           rank: 1
         '2009':
-          volume: 18384
+          volume: 20576935
           percent: 0
           rank: 1
         '2010':
-          volume: 1181998022
+          volume: 18777684
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 16790164
           percent: 0
           rank: 1
         '2012':
-          volume: 1196069469
+          volume: 18000308
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 12236340
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 15178244
           percent: 0
           rank: 1
         '2015':
-          volume: 1111536487
+          volume: 13902506
           percent: 0
+          rank: 1
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 74849
+          percent: 0.01
+          rank: 19
+        '2007':
+          volume: 53081
+          percent: 0
+          rank: 20
+        '2008':
+          volume: 44461
+          percent: 0
+          rank: 21
+        '2009':
+          volume: 32908
+          percent: 0
+          rank: 21
+        '2010':
+          volume: 35789
+          percent: 0
+          rank: 20
+        '2011':
+          volume: 33755
+          percent: 0
+          rank: 20
+        '2012':
+          volume: 30454
+          percent: 0
+          rank: 20
+        '2013':
+          volume: 26608
+          percent: 0
+          rank: 21
+        '2014':
+          volume: 24798
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 40325
+          percent: 0
+          rank: 1
+AR:
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 9947099
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 9874095
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 12040947
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 17902901
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 18909311
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 17840902
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 15478747
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 13661475
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 15170981
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 13224588
+          percent: 0
+          rank: 1
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 23
+          percent: 0
+          rank: 26
+        '2007':
+          volume: 21
+          percent: 0
+          rank: 25
+        '2008':
+          volume: 8
+          percent: 0
+          rank: 25
+        '2009':
+          volume: 6
+          percent: 0
+          rank: 27
+        '2010':
+          volume: 2
+          percent: 0
+          rank: 27
+        '2011':
+          volume: 2
+          percent: 0
+          rank: 27
+        '2012':
+          volume: 2
+          percent: 0
+          rank: 26
+        '2013':
+          volume: 1
+          percent: 0
+          rank: 26
+        '2014':
+          volume: 1
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 2
+          percent: 0
+          rank: 1
+    Quartz Crystal (tickets/pounds):
+      name: Quartz Crystal
+      units: tickets/pounds
+      volume:
+        '2006':
+          volume: 6350
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 2400
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 4701
+          percent: 100
+          rank: 1
+CA:
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 17147135
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 15547453
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 13696927
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 10922712
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 11203440
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 15720378
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 14658578
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 12360113
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 12803529
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 14548806
+          percent: 0
+          rank: 1
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2006':
+          volume: 238147
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 217500
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 219089
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 179171
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 224486
+          percent: 100
+          rank: 1
+        '2011':
+          volume: 228011
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 271470
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 276337
+          percent: 100
+          rank: 1
+        '2014':
+          volume: 243504
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 170924
+          percent: 100
           rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
+        '2006':
+          volume: 1015891685
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 1092826809
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 1070470822
+          percent: 0
+          rank: 1
         '2009':
-          volume: 39299
+          volume: 1088756553
           percent: 0
           rank: 1
         '2010':
-          volume: 1094558378
-          percent: 100
+          volume: 1003412405
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 980959058
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 918939267
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 918278008
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 896841860
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 796638247
+          percent: 0
           rank: 1
     'Geothermal - Electrical Generation, Other':
       name: Geothermal
       units: 'Electrical Generation, Other'
       volume:
+        '2006':
+          volume: 227562
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 207155
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 237416
+          percent: 100
+          rank: 1
         '2009':
-          volume: 6480
-          percent: 0
+          volume: 233954
+          percent: 100
           rank: 1
         '2010':
-          volume: 4189283
+          volume: 223938
           percent: 100
           rank: 1
         '2011':
-          volume: 10462815
+          volume: 19883
           percent: 100
           rank: 1
         '2014':
-          volume: 154595
+          volume: 691756
           percent: 100
           rank: 1
         '2015':
-          volume: 58656056
+          volume: 666434
           percent: 100
           rank: 1
     'Geothermal - Electrical Generation, Thousands of Pounds':
@@ -571,35 +467,115 @@ CA:
       units: 'Electrical Generation, Thousands of Pounds'
       volume:
         '2006':
-          volume: 871365242
-          percent: 100
+          volume: 91066659
+          percent: 0
           rank: 1
         '2007':
-          volume: 70714858
-          percent: 100
+          volume: 85409498
+          percent: 0
           rank: 1
         '2008':
-          volume: 15200419
+          volume: 83922002
           percent: 0
+          rank: 1
+        '2009':
+          volume: 81943659
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 82522717
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 82747987
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 81672218
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 78144052
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 76875368
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 71061600
+          percent: 0
+          rank: 1
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2010':
+          volume: 4670
+          percent: 100
+          rank: 1
+        '2011':
+          volume: 3470
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 2598
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 2448
+          percent: 100
+          rank: 1
+        '2014':
+          volume: 2090
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 2401
+          percent: 100
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 14464464
+          percent: 1.34
+          rank: 5
         '2007':
-          volume: 1024364574
-          percent: 45.04
-          rank: 1
+          volume: 13429378
+          percent: 1.25
+          rank: 5
+        '2008':
+          volume: 13470154
+          percent: 1.37
+          rank: 5
+        '2009':
+          volume: 14033419
+          percent: 1.09
+          rank: 5
         '2010':
-          volume: 1002137031
-          percent: 23.28
-          rank: 2
+          volume: 13944830
+          percent: 1.11
+          rank: 5
+        '2011':
+          volume: 14918890
+          percent: 1.37
+          rank: 5
+        '2012':
+          volume: 15205616
+          percent: 1.44
+          rank: 6
         '2013':
-          volume: 123303363
-          percent: 2.22
-          rank: 3
+          volume: 15303616
+          percent: 1.44
+          rank: 6
         '2014':
-          volume: 773011492
+          volume: 14678922
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 13226438
           percent: 0
           rank: 1
 CO:
@@ -608,946 +584,1130 @@ CO:
       name: Coal
       units: tons
       volume:
+        '2006':
+          volume: 20811927
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 21776477
+          percent: 0
+          rank: 1
         '2008':
-          volume: 20886116
+          volume: 20925681
           percent: 0
           rank: 1
         '2009':
-          volume: 528380964
-          percent: 100
+          volume: 16946752
+          percent: 0
           rank: 1
         '2010':
-          volume: 762540
-          percent: 100
+          volume: 16137065
+          percent: 0
           rank: 1
         '2011':
-          volume: 3320335
+          volume: 18017066
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 19192211
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 15479428
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 5881523
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 6591181
           percent: 0
           rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 528455147
+          percent: 0
+          rank: 1
         '2007':
-          volume: 564337474
+          volume: 538453776
           percent: 0
           rank: 1
-        '2010':
-          volume: 648565258
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 688835544
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 3932451
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 706809631
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 734910846
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
         '2008':
-          volume: 19583315
+          volume: 623379253
           percent: 0
           rank: 1
         '2009':
-          volume: 713373629
-          percent: 100
+          volume: 671107313
+          percent: 0
           rank: 1
         '2010':
-          volume: 4275747
+          volume: 686882372
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 712842916
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 713759261
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 709765715
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 727898533
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 635425824
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 4082881
+          percent: 0.38
+          rank: 9
         '2007':
-          volume: 729552477
-          percent: 32.07
-          rank: 2
+          volume: 4107221
+          percent: 0.38
+          rank: 9
+        '2008':
+          volume: 4157812
+          percent: 0.42
+          rank: 9
+        '2009':
+          volume: 3932451
+          percent: 0.31
+          rank: 8
         '2010':
-          volume: 733780291
-          percent: 17.05
-          rank: 3
+          volume: 3790194
+          percent: 0.3
+          rank: 8
         '2011':
-          volume: 5318925
-          percent: 0.89
-          rank: 6
+          volume: 4050864
+          percent: 0.37
+          rank: 8
+        '2012':
+          volume: 4281219
+          percent: 0.41
+          rank: 8
+        '2013':
+          volume: 4307334
+          percent: 0.41
+          rank: 8
         '2014':
-          volume: 646883155
+          volume: 5319160
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 4866150
+          percent: 0
+          rank: 1
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
+      units: tons
+      volume:
+        '2008':
+          volume: 102512
           percent: 0
           rank: 1
 FL:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011':
-          volume: 77
-          percent: 0
-          rank: 1
-ID:
-  products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011':
-          volume: 2381392
-          percent: 0
-          rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007':
-          volume: 2324385
-          percent: 0
-          rank: 1
-        '2010':
-          volume: 2424258
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 3423741
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 3523585
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 4690032
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010':
-          volume: 4467766
-          percent: 0
-          rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 77
+          percent: 0
+          rank: 25
+ID:
+  products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2006':
+          volume: 2381392
+          percent: 100
+          rank: 1
         '2007':
-          volume: 4960123
-          percent: 0.22
-          rank: 6
+          volume: 2324385
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 2424258
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 3423741
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 3523585
+          percent: 0
+          rank: 1
         '2011':
-          volume: 5777094
-          percent: 0.96
-          rank: 5
+          volume: 4690032
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 4467766
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 4960123
+          percent: 0
+          rank: 1
         '2014':
+          volume: 5777094
+          percent: 100
+          rank: 1
+        '2015':
           volume: 4903855
           percent: 0
           rank: 1
 IL:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011':
-          volume: 45407
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 8211
+          percent: 0
+          rank: 1
         '2007':
-          volume: 26790
+          volume: 8079
           percent: 0
           rank: 1
         '2008':
-          volume: 20243
+          volume: 6965
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 12213
           percent: 0
           rank: 1
         '2010':
-          volume: 41395
+          volume: 14074
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 14336
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 14461
           percent: 0
           rank: 1
         '2013':
-          volume: 46455
+          volume: 14385
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 26776
           percent: 0
           rank: 1
         '2015':
-          volume: 46087
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 41478
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010':
-          volume: 42380
+          volume: 23106
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007':
-          volume: 40701
+        '2006':
+          volume: 37196
           percent: 0
-          rank: 9
+          rank: 22
+        '2007':
+          volume: 38954
+          percent: 0
+          rank: 22
+        '2008':
+          volume: 34430
+          percent: 0
+          rank: 22
+        '2009':
+          volume: 34242
+          percent: 0
+          rank: 20
+        '2010':
+          volume: 32013
+          percent: 0
+          rank: 22
         '2011':
-          volume: 45938
-          percent: 0.01
-          rank: 12
+          volume: 27142
+          percent: 0
+          rank: 22
+        '2012':
+          volume: 27919
+          percent: 0
+          rank: 21
+        '2013':
+          volume: 26316
+          percent: 0
+          rank: 22
         '2014':
-          volume: 39142
+          volume: 19162
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 16036
           percent: 0
           rank: 1
 KS:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2011':
-          volume: 8796165
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 444650
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 8796164
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 8054336
+          percent: 0
+          rank: 1
         '2008':
-          volume: 8365415
+          volume: 7908716
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 7369920
           percent: 0
           rank: 1
         '2010':
-          volume: 8188182
+          volume: 7112870
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 6316290
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 5678449
           percent: 0
           rank: 1
         '2013':
-          volume: 7600179
+          volume: 5152111
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 4684473
           percent: 0
           rank: 1
         '2015':
-          volume: 7332931
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 6557409
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2010':
-          volume: 1731600
-          percent: 0
-          rank: 1
-        '2011':
-          volume: 4172438
+          volume: 4260777
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 444651
+          percent: 0.04
+          rank: 12
         '2007':
-          volume: 5351754
-          percent: 0.24
-          rank: 5
+          volume: 311079
+          percent: 0.03
+          rank: 14
+        '2008':
+          volume: 279466
+          percent: 0.03
+          rank: 14
+        '2009':
+          volume: 230259
+          percent: 0.02
+          rank: 15
+        '2010':
+          volume: 220061
+          percent: 0.02
+          rank: 16
         '2011':
-          volume: 4854289
-          percent: 0.81
-          rank: 7
+          volume: 241119
+          percent: 0.02
+          rank: 17
+        '2012':
+          volume: 225589
+          percent: 0.02
+          rank: 17
+        '2013':
+          volume: 199643
+          percent: 0.02
+          rank: 17
         '2014':
-          volume: 4415185
+          volume: 169816
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 154408
           percent: 0
           rank: 1
 KY:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2012':
-          volume: 223441
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 212384
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 207550
+          percent: 0
+          rank: 1
         '2008':
-          volume: 220654
+          volume: 205519
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 189884
           percent: 0
           rank: 1
         '2010':
-          volume: 218698
+          volume: 191034
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 173873
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 145703
           percent: 0
           rank: 1
         '2013':
-          volume: 393952
+          volume: 131149
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 126830
           percent: 0
           rank: 1
         '2015':
-          volume: 204082
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 186280
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2011':
-          volume: 157538
+          volume: 150809
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 11057
+          percent: 0
+          rank: 24
         '2007':
-          volume: 142897
-          percent: 0.01
-          rank: 8
+          volume: 13104
+          percent: 0
+          rank: 24
+        '2008':
+          volume: 13179
+          percent: 0
+          rank: 24
+        '2009':
+          volume: 13157
+          percent: 0
+          rank: 24
+        '2010':
+          volume: 13048
+          percent: 0
+          rank: 24
         '2011':
-          volume: 137616
-          percent: 0.02
-          rank: 11
+          volume: 12407
+          percent: 0
+          rank: 24
+        '2012':
+          volume: 11835
+          percent: 0
+          rank: 24
+        '2013':
+          volume: 11748
+          percent: 0
+          rank: 24
         '2014':
-          volume: 159460
+          volume: 10786
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 8651
           percent: 0
           rank: 1
 LA:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2012':
-          volume: 5243
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 31522281
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 501468
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 31525918
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 30616208
+          percent: 0
+          rank: 1
         '2008':
-          volume: 31053226
+          volume: 29475643
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 20534166
           percent: 0
           rank: 1
         '2010':
-          volume: 29856175
+          volume: 16611580
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 20728169
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 20857780
           percent: 0
           rank: 1
         '2013':
-          volume: 20881349
+          volume: 17534860
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 13321383
           percent: 0
           rank: 1
         '2015':
-          volume: 16932115
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2011':
-          volume: 74477
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 20993200
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2011':
-          volume: 27354
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 21192119
+          volume: 14903958
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 503074
+          percent: 0.05
+          rank: 11
         '2007':
-          volume: 2771132
-          percent: 0.12
-          rank: 7
+          volume: 437018
+          percent: 0.04
+          rank: 11
         '2008':
-          volume: 15074736
-          percent: 0.93
-          rank: 5
+          volume: 380532
+          percent: 0.04
+          rank: 12
+        '2009':
+          volume: 347183
+          percent: 0.03
+          rank: 12
+        '2010':
+          volume: 320535
+          percent: 0.03
+          rank: 12
         '2011':
-          volume: 13631996
-          percent: 2.27
-          rank: 3
+          volume: 339508
+          percent: 0.03
+          rank: 13
+        '2012':
+          volume: 361693
+          percent: 0.03
+          rank: 12
+        '2013':
+          volume: 311008
+          percent: 0.03
+          rank: 15
         '2014':
-          volume: 15150626
+          volume: 310613
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 246668
           percent: 0
           rank: 1
 MI:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2014':
-          volume: 2977499
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 25436
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 2963183
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 2985936
+          percent: 0
+          rank: 1
         '2008':
-          volume: 3026375
+          volume: 2771038
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 2566553
           percent: 0
           rank: 1
         '2010':
-          volume: 2821119
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 2594546
-          percent: 0
-          rank: 1
-        '2015':
           volume: 2256056
           percent: 0
           rank: 1
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
         '2011':
-          volume: 44
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 9389
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 23760
+          volume: 2144787
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
         '2012':
-          volume: 2184143
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2012':
-          volume: 3545
+          volume: 2060382
           percent: 0
           rank: 1
         '2013':
-          volume: 2101650
+          volume: 1769659
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 1579387
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 1457182
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 39752
+          percent: 0
+          rank: 21
+        '2007':
+          volume: 40439
+          percent: 0
+          rank: 21
         '2008':
-          volume: 1812582
-          percent: 0.11
-          rank: 6
+          volume: 50081
+          percent: 0.01
+          rank: 20
+        '2009':
+          volume: 27993
+          percent: 0
+          rank: 22
+        '2010':
+          volume: 33193
+          percent: 0
+          rank: 21
         '2011':
-          volume: 1612307
-          percent: 0.27
-          rank: 8
+          volume: 39356
+          percent: 0
+          rank: 19
+        '2012':
+          volume: 44813
+          percent: 0
+          rank: 19
+        '2013':
+          volume: 42923
+          percent: 0
+          rank: 19
         '2014':
-          volume: 1487042
+          volume: 32920
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 29860
           percent: 0
           rank: 1
 MO:
   products:
-    Coal (tons):
-      name: Coal
+    Copper Concentrate (tons):
+      name: Copper Concentrate
       units: tons
       volume:
-        '2015':
-          volume: 297524
+        '2006':
+          volume: 19521
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 10959
           percent: 0
           rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
         '2008':
-          volume: 288125
+          volume: 11910
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 8727
           percent: 0
           rank: 1
         '2010':
-          volume: 260793
+          volume: 8973
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 8387
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 22304
           percent: 0
           rank: 1
         '2013':
-          volume: 253154
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2013':
-          volume: 171
+          volume: 15448
           percent: 0
           rank: 1
         '2014':
-          volume: 8802
-          percent: 100
+          volume: 20283
+          percent: 0
           rank: 1
         '2015':
-          volume: 61262
-          percent: 100
+          volume: 24504
+          percent: 0
           rank: 1
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
       volume:
         '2006':
-          volume: 166622
+          volume: 223123
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 221198
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 203432
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 194151
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 184361
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 176581
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 155034
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 145983
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 143271
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 149678
+          percent: 0
+          rank: 1
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006':
+          volume: 54880
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 55968
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 45451
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 50276
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 43523
           percent: 100
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2012':
-          volume: 228732
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
-        '2013':
-          volume: 209933
-          percent: 0
-          rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008':
-          volume: 201849
-          percent: 0.01
-          rank: 8
         '2011':
-          volume: 208205
-          percent: 0.03
-          rank: 10
+          volume: 43764
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 32595
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 40418
+          percent: 0
+          rank: 1
         '2014':
-          volume: 211295
+          volume: 44651
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 37113
           percent: 0
           rank: 1
 MS:
   products:
-    Coal (tons):
-      name: Coal
-      units: tons
-      volume:
-        '2015':
-          volume: 95919
-          percent: 0
-          rank: 1
-    Coal Waste (Sub-Econ) (tons):
-      name: Coal Waste (Sub-Econ)
-      units: tons
-      volume:
-        '2014':
-          volume: 73692
-          percent: 100
-          rank: 1
-    Copper Concentrate (tons):
-      name: Copper Concentrate
-      units: tons
-      volume:
-        '2006':
-          volume: 526756
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 2345
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 97785
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 199792
-          percent: 0
-          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008':
-          volume: 943970
+        '2006':
+          volume: 696367
           percent: 0
           rank: 1
-        '2010':
-          volume: 930040
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 1007067
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
         '2007':
-          volume: 31467
-          percent: 100
+          volume: 651141
+          percent: 0
           rank: 1
         '2008':
-          volume: 524373
-          percent: 100
+          volume: 690719
+          percent: 0
           rank: 1
         '2009':
-          volume: 296652
-          percent: 100
+          volume: 771370
+          percent: 0
           rank: 1
         '2010':
-          volume: 237502
+          volume: 850447
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
+        '2011':
+          volume: 774816
+          percent: 0
+          rank: 1
         '2012':
-          volume: 1042492
+          volume: 647642
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
         '2013':
-          volume: 16
+          volume: 433936
           percent: 0
           rank: 1
         '2014':
-          volume: 970123
+          volume: 380579
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 405464
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 299922
+          percent: 0.03
+          rank: 16
+        '2007':
+          volume: 292829
+          percent: 0.03
+          rank: 15
         '2008':
-          volume: 858264
-          percent: 0.05
-          rank: 7
+          volume: 239321
+          percent: 0.02
+          rank: 15
+        '2009':
+          volume: 235697
+          percent: 0.02
+          rank: 14
+        '2010':
+          volume: 239547
+          percent: 0.02
+          rank: 14
         '2011':
-          volume: 779731
-          percent: 0.13
-          rank: 9
+          volume: 267676
+          percent: 0.02
+          rank: 15
+        '2012':
+          volume: 322497
+          percent: 0.03
+          rank: 14
+        '2013':
+          volume: 424328
+          percent: 0.04
+          rank: 13
         '2014':
-          volume: 54079
+          volume: 399152
           percent: 0
           rank: 1
         '2015':
-          volume: 730035
+          volume: 378650
           percent: 0
           rank: 1
 MT:
   products:
-    Copper Concentrate (tons):
-      name: Copper Concentrate
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2009':
-          volume: 18072573
+        '2006':
+          volume: 18072165
           percent: 0
           rank: 1
-        '2010':
-          volume: 72036
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 741419
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 8320981
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 27153741
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 109323
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 1292118
-          percent: 100
-          rank: 1
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2006':
-          volume: 3207610
+        '2007':
+          volume: 18777497
           percent: 0
           rank: 1
         '2008':
-          volume: 62062879
+          volume: 19316074
           percent: 0
           rank: 1
-        '2010':
-          volume: 19502672
+        '2009':
+          volume: 17319320
           percent: 0
           rank: 1
-        '2011':
-          volume: 43511634
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 58195947
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
         '2010':
           volume: 17741873
           percent: 0
           rank: 1
         '2011':
-          volume: 25856
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 474922
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 30598004
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 150120
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 3468398
+          volume: 17214337
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
         '2012':
-          volume: 42319757
+          volume: 16004122
           percent: 0
           rank: 1
         '2013':
-          volume: 3348409
+          volume: 16480119
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Thousands of Pounds':
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      volume:
         '2014':
-          volume: 16009621
+          volume: 15703781
           percent: 0
           rank: 1
         '2015':
-          volume: 18277362
-          percent: 100
-          rank: 1
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2010':
-          volume: 516748
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 2866049
+          volume: 14477637
           percent: 0
           rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2008':
-          volume: 35726851
-          percent: 2.21
-          rank: 4
-        '2011':
-          volume: 34437449
-          percent: 5.75
-          rank: 2
-        '2015':
-          volume: 31614436
-          percent: 0
-          rank: 1
-ND:
-  products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
         '2006':
-          volume: 18132691
+          volume: 36278425
           percent: 0
-          rank: 1
-        '2008':
-          volume: 20734447
-          percent: 0
-          rank: 1
-        '2011':
-          volume: 18195078
-          percent: 0
-          rank: 1
-        '2013':
-          volume: 17463861
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      volume:
-        '2015':
-          volume: 338687
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Millions of BTUs':
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      volume:
-        '2006':
-          volume: 7006941
-          percent: 100
           rank: 1
         '2007':
-          volume: 6077708
-          percent: 100
+          volume: 38636643
+          percent: 0
           rank: 1
         '2008':
-          volume: 7939641
+          volume: 39448812
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2013':
-          volume: 29570318
+        '2009':
+          volume: 36983711
           percent: 0
           rank: 1
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
+        '2010':
+          volume: 31098740
+          percent: 0
+          rank: 1
         '2011':
-          volume: 3990337
+          volume: 25105364
           percent: 0
           rank: 1
         '2012':
-          volume: 18244338
-          percent: 100
+          volume: 18259544
+          percent: 0
           rank: 1
         '2013':
-          volume: 16266959
+          volume: 15751371
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 15041899
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 13773524
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 4619211
+          percent: 0.43
+          rank: 8
+        '2007':
+          volume: 4648739
+          percent: 0.43
+          rank: 8
         '2008':
-          volume: 44617318
-          percent: 2.77
-          rank: 3
+          volume: 4249420
+          percent: 0.43
+          rank: 8
+        '2009':
+          volume: 3892916
+          percent: 0.3
+          rank: 9
+        '2010':
+          volume: 3618560
+          percent: 0.29
+          rank: 9
         '2011':
-          volume: 52429536
-          percent: 8.75
+          volume: 3348465
+          percent: 0.31
+          rank: 9
+        '2012':
+          volume: 3406114
+          percent: 0.32
+          rank: 9
+        '2013':
+          volume: 3495361
+          percent: 0.33
+          rank: 9
+        '2014':
+          volume: 3691769
+          percent: 0
           rank: 1
         '2015':
-          volume: 68650721
+          volume: 3363275
+          percent: 0
+          rank: 1
+ND:
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: 3196317
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 3532980
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 338405
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 2923257
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 3859278
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 4489551
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 5051711
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 5261915
+          percent: 0
+          rank: 1
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 8245892
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 10083371
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 10849684
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 9969470
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 11164548
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 14045452
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 18278079
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 21893167
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 26373990
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 38023658
+          percent: 0
+          rank: 1
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 6690482
+          percent: 0.62
+          rank: 7
+        '2007':
+          volume: 7118096
+          percent: 0.66
+          rank: 7
+        '2008':
+          volume: 7345394
+          percent: 0.75
+          rank: 7
+        '2009':
+          volume: 7494391
+          percent: 0.58
+          rank: 7
+        '2010':
+          volume: 9860024
+          percent: 0.78
+          rank: 7
+        '2011':
+          volume: 12601609
+          percent: 1.16
+          rank: 6
+        '2012':
+          volume: 16364277
+          percent: 1.55
+          rank: 5
+        '2013':
+          volume: 18234600
+          percent: 1.72
+          rank: 5
+        '2014':
+          volume: 21003835
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 25365148
           percent: 0
           rank: 1
 NE:
@@ -1557,101 +1717,165 @@ NE:
       units: mcf
       volume:
         '2006':
-          volume: 54262
+          volume: 3733
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 5971
           percent: 0
           rank: 1
         '2008':
-          volume: 73682
+          volume: 5352
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 2207
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 2432
           percent: 0
           rank: 1
         '2011':
-          volume: 59858
+          volume: 1163
           percent: 0
           rank: 1
-        '2013':
-          volume: 43120
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Millions of BTUs':
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      volume:
-        '2008':
-          volume: 41910
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2013':
-          volume: 34237
-          percent: 0
-          rank: 1
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
-        '2013':
+        '2012':
           volume: 1125
           percent: 0
           rank: 1
+        '2013':
+          volume: 958
+          percent: 0
+          rank: 1
         '2014':
-          volume: 27325
+          volume: 994
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 607
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 50529
+          percent: 0
+          rank: 20
+        '2007':
+          volume: 67711
+          percent: 0.01
+          rank: 19
         '2008':
-          volume: 30207
+          volume: 54506
+          percent: 0.01
+          rank: 19
+        '2009':
+          volume: 40913
           percent: 0
-          rank: 9
+          rank: 19
+        '2010':
+          volume: 39478
+          percent: 0
+          rank: 19
         '2011':
-          volume: 28265
+          volume: 33074
           percent: 0
-          rank: 13
+          rank: 21
+        '2012':
+          volume: 27325
+          percent: 0
+          rank: 22
+        '2013':
+          volume: 29249
+          percent: 0
+          rank: 20
+        '2014':
+          volume: 27271
+          percent: 0
+          rank: 1
         '2015':
-          volume: 25467
+          volume: 24860
           percent: 0
           rank: 1
 NM:
   products:
+    Brine Barrels (bbl):
+      name: Brine Barrels
+      units: bbl
+      volume:
+        '2006':
+          volume: 66862
+          percent: 100
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
         '2006':
-          volume: 1048791320
+          volume: 1022198660
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 976014100
           percent: 0
           rank: 1
         '2008':
-          volume: 1002933711
+          volume: 926908300
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 895492823
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 841402133
           percent: 0
           rank: 1
         '2011':
-          volume: 954500527
+          volume: 819775527
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 804093588
           percent: 0
           rank: 1
         '2013':
-          volume: 925338614
+          volume: 779128683
           percent: 0
           rank: 1
-    'Geothermal - Direct Utilization, Millions of BTUs':
+        '2014':
+          volume: 785477514
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 796308478
+          percent: 0
+          rank: 1
+    'Geothermal - Direct Use, Millions of Gallons':
       name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
+      units: 'Direct Use, Millions of Gallons'
       volume:
-        '2009':
-          volume: 11805980
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 830973338
-          percent: 100
-          rank: 1
         '2011':
-          volume: 31923450
+          volume: 71606330
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 113448300
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 69920725
+          percent: 100
+          rank: 1
+        '2014':
+          volume: 63624483
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 281998685
           percent: 100
           rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
@@ -1659,115 +1883,235 @@ NM:
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
         '2013':
-          volume: 928738665
+          volume: 69407
           percent: 0
           rank: 1
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
-      volume:
         '2014':
-          volume: 1104381
+          volume: 8736455
           percent: 0
           rank: 1
         '2015':
-          volume: 821335257
-          percent: 100
+          volume: 10449799
+          percent: 0
           rank: 1
-    Gilsonite (tons):
-      name: Gilsonite
+    Langbeinite (tons):
+      name: Langbeinite
       units: tons
       volume:
         '2006':
-          volume: 27073670
+          volume: 734349
           percent: 100
           rank: 1
         '2007':
-          volume: 30796710
+          volume: 966101
           percent: 100
           rank: 1
         '2008':
-          volume: 37231870
+          volume: 974982
           percent: 100
           rank: 1
         '2009':
-          volume: 859349
+          volume: 648073
           percent: 100
           rank: 1
         '2010':
-          volume: 424920
+          volume: 830346
           percent: 100
           rank: 1
         '2011':
-          volume: 147577
+          volume: 745606
           percent: 100
           rank: 1
         '2012':
-          volume: 6933
+          volume: 859349
           percent: 100
           rank: 1
         '2013':
-          volume: 81459
+          volume: 707765
           percent: 100
           rank: 1
         '2014':
-          volume: 306165
+          volume: 363289
           percent: 100
           rank: 1
         '2015':
-          volume: 737303
+          volume: 553269
           percent: 100
           rank: 1
-    Gold (oz):
-      name: Gold
-      units: oz
+    Muriate Of Potash-Granular (tons):
+      name: Muriate Of Potash-Granular
+      units: tons
       volume:
         '2006':
-          volume: 739734
+          volume: 327424
           percent: 100
           rank: 1
         '2007':
-          volume: 762805
+          volume: 429446
           percent: 100
           rank: 1
         '2008':
-          volume: 3061056
+          volume: 398253
           percent: 100
           rank: 1
         '2009':
-          volume: 12951474
+          volume: 233928
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 364751
           percent: 100
           rank: 1
         '2011':
-          volume: 25806421
+          volume: 454506
           percent: 100
           rank: 1
-    Gold and Silver (tons):
-      name: Gold and Silver
+        '2012':
+          volume: 424920
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 342439
+          percent: 100
+          rank: 1
+        '2014':
+          volume: 467320
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 406045
+          percent: 100
+          rank: 1
+    Muriate Of Potash-Standard (tons):
+      name: Muriate Of Potash-Standard
       units: tons
       volume:
+        '2006':
+          volume: 469892
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 251708
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 177001
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 112839
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 155054
+          percent: 100
+          rank: 1
         '2011':
-          volume: 409345
+          volume: 170449
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 146453
+          percent: 100
+          rank: 1
+        '2013':
+          volume: 132492
+          percent: 100
+          rank: 1
+        '2014':
+          volume: 127433
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 55777
           percent: 100
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 24501839
+          percent: 2.26
+          rank: 4
+        '2007':
+          volume: 25272356
+          percent: 2.35
+          rank: 3
         '2008':
-          volume: 903255052
-          percent: 55.99
+          volume: 25727508
+          percent: 2.61
+          rank: 3
+        '2009':
+          volume: 28477995
+          percent: 2.21
+          rank: 3
+        '2010':
+          volume: 31516466
+          percent: 2.51
+          rank: 3
+        '2011':
+          volume: 35546880
+          percent: 3.27
+          rank: 2
+        '2012':
+          volume: 44454474
+          percent: 4.21
+          rank: 2
+        '2013':
+          volume: 52528416
+          percent: 4.95
+          rank: 2
+        '2014':
+          volume: 67113782
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 80572911
+          percent: 0
+          rank: 1
+    Potash (tons):
+      name: Potash
+      units: tons
+      volume:
+        '2006':
+          volume: 492294
+          percent: 0
+          rank: 1
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2008':
+          volume: 314483
+          percent: 47.55
+          rank: 1
+        '2009':
+          volume: 372956
+          percent: 55.69
+          rank: 1
+        '2010':
+          volume: 434018
+          percent: 52.62
           rank: 1
         '2011':
-          volume: 11183236
-          percent: 1.87
-          rank: 4
+          volume: 439367
+          percent: 49.7
+          rank: 1
         '2012':
-          volume: 915184837
-          percent: 18.7
-          rank: 3
+          volume: 409345
+          percent: 53.13
+          rank: 1
+        '2013':
+          volume: 425125
+          percent: 46.18
+          rank: 1
+        '2014':
+          volume: 457797
+          percent: 0
+          rank: 1
         '2015':
-          volume: 1170722549
+          volume: 377585
           percent: 0
           rank: 1
 NV:
@@ -1777,43 +2121,87 @@ NV:
       units: mcf
       volume:
         '2006':
-          volume: 724804156
+          volume: 4999
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 4573
           percent: 0
           rank: 1
         '2008':
-          volume: 693365578
+          volume: 4227
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 4440
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 4010
           percent: 0
           rank: 1
         '2011':
-          volume: 694165366
+          volume: 3836
           percent: 0
           rank: 1
-        '2013':
-          volume: 259544998
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 667435338
-          percent: 0
-          rank: 1
-    'Geothermal - Direct Utilization, Millions of BTUs':
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      volume:
         '2012':
-          volume: 163356111
+          volume: 3631
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 3422
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 3341
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 3774
+          percent: 0
+          rank: 1
+    'Geothermal - Direct Utilization, Hundreds of Gallons':
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      volume:
+        '2006':
+          volume: 85859889
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 106272414
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 123838519
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 198988743
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 163346106
+          percent: 100
+          rank: 1
+        '2011':
+          volume: 131014604
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 123103803
           percent: 100
           rank: 1
         '2013':
-          volume: 1031892
+          volume: 57238368
           percent: 100
           rank: 1
         '2014':
-          volume: 3681469
+          volume: 46536535
           percent: 100
           rank: 1
         '2015':
-          volume: 42189967
+          volume: 19439305
           percent: 100
           rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
@@ -1821,319 +2209,87 @@ NV:
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
         '2006':
-          volume: 966410787
+          volume: 638516396
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 586683437
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 569887161
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 727532631
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 1012892582
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 1055633396
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 1257270031
           percent: 0
           rank: 1
         '2013':
-          volume: 137587130
+          volume: 1498902938
           percent: 0
           rank: 1
         '2014':
-          volume: 1049469880
+          volume: 1601138054
           percent: 0
           rank: 1
-    Gold Ore (tons):
-      name: Gold Ore
-      units: tons
-      volume:
-        '2009':
-          volume: 9891019
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 28345950
-          percent: 100
-          rank: 1
-    Gold Placer (oz):
-      name: Gold Placer
-      units: oz
-      volume:
-        '2009':
-          volume: 28876702
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 36634570
-          percent: 100
-          rank: 1
-        '2011':
-          volume: -8
-          percent: 100
-          rank: 1
-    Gold and Silver Products (oz):
-      name: Gold and Silver Products
-      units: oz
-      volume:
-        '2007':
-          volume: 3631
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 751761
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 763025
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 2591159
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 5469161
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 9780456
-          percent: 100
-          rank: 1
-    Hardrock Products (tons):
-      name: Hardrock Products
-      units: tons
-      volume:
-        '2006':
-          volume: 24520
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 94869
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 100866
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 101535
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 111290
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 116343
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 135376
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 135670
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 136285
-          percent: 100
-          rank: 1
         '2015':
-          volume: 144900
-          percent: 100
-          rank: 1
-    Langbeinite (tons):
-      name: Langbeinite
-      units: tons
-      volume:
-        '2006':
-          volume: 145862
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 156517
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 159876
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 167133
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 167268
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 169142
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 180738
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 188778
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 194476
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 194898
-          percent: 100
-          rank: 1
-    Lead Concentrate (tons):
-      name: Lead Concentrate
-      units: tons
-      volume:
-        '2006':
-          volume: 1673044
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 1858630
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 24349430
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 37820237
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 47423083
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 55389539
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 58314949
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 62174215
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 212540600
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 409513956
-          percent: 100
-          rank: 1
-    Leonardite (tons):
-      name: Leonardite
-      units: tons
-      volume:
-        '2006':
-          volume: 63213273
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 65885189
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 68365508
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 70087969
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 75834079
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 38004
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 318293
-          percent: 100
+          volume: 1923971577
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 422869
+          percent: 0.04
+          rank: 13
+        '2007':
+          volume: 405154
+          percent: 0.04
+          rank: 12
         '2008':
-          volume: 177548690
-          percent: 11.01
-          rank: 2
+          volume: 435454
+          percent: 0.04
+          rank: 11
         '2009':
-          volume: 1378926849
-          percent: 20.98
-          rank: 3
+          volume: 454522
+          percent: 0.04
+          rank: 11
+        '2010':
+          volume: 427527
+          percent: 0.03
+          rank: 11
+        '2011':
+          volume: 405174
+          percent: 0.04
+          rank: 11
         '2012':
-          volume: 1647989239
-          percent: 33.68
-          rank: 2
-        '2015':
-          volume: 1201383306
+          volume: 356297
+          percent: 0.03
+          rank: 13
+        '2013':
+          volume: 330809
+          percent: 0.03
+          rank: 14
+        '2014':
+          volume: 311307
           percent: 0
           rank: 1
-    Other Coal Products (tons):
-      name: Other Coal Products
-      units: tons
-      volume:
-        '2006':
-          volume: 61929507
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 62330733
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 62383752
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 63278855
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 65286684
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 68074251
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 68567919
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 70174728
-          percent: 100
-          rank: 1
         '2015':
-          volume: 71466590
-          percent: 100
-          rank: 1
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
-        '2006':
-          volume: 72215375
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 76322958
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 1612
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 31605
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 247400
+          volume: 280617
           percent: 0
           rank: 1
 NY:
@@ -2146,76 +2302,40 @@ NY:
           volume: 13507
           percent: 0
           rank: 1
-        '2008':
+        '2007':
           volume: 12690
           percent: 0
           rank: 1
-        '2011':
+        '2008':
           volume: 11162
           percent: 0
           rank: 1
-        '2014':
+        '2009':
           volume: 13790
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
+        '2010':
           volume: 44672
           percent: 0
           rank: 1
-        '2014':
+        '2011':
           volume: 61683
           percent: 0
           rank: 1
-    Leonardite (tons):
-      name: Leonardite
-      units: tons
-      volume:
-        '2014':
-          volume: 96
-          percent: 100
+        '2012':
+          volume: 43904
+          percent: 0
           rank: 1
-        '2015':
-          volume: 3672
-          percent: 100
-          rank: 1
-    Limestone (tons):
-      name: Limestone
-      units: tons
-      volume:
-        '2006':
-          volume: 12421
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 27715
-          percent: 100
-          rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009':
+        '2013':
           volume: 37220
           percent: 0
-          rank: 13
-        '2012':
+          rank: 1
+        '2014':
           volume: 30784
           percent: 0
-          rank: 10
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
-        '2010':
-          volume: 7648
-          percent: 0
           rank: 1
-        '2011':
-          volume: 9207
+        '2015':
+          volume: 16855
           percent: 0
           rank: 1
 OH:
@@ -2225,442 +2345,222 @@ OH:
       units: mcf
       volume:
         '2006':
-          volume: 570720
+          volume: 550374
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 546642
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 507226
           percent: 0
           rank: 1
         '2009':
-          volume: 566248
+          volume: 456257
           percent: 0
           rank: 1
-        '2011':
-          volume: 528252
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 475084
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
-          volume: 490362
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 462724
-          percent: 0
-          rank: 1
-    Magnesium Chloride Brine (tons):
-      name: Magnesium Chloride Brine
-      units: tons
-      volume:
         '2010':
-          volume: 724
-          percent: 100
+          volume: 472631
+          percent: 0
           rank: 1
         '2011':
-          volume: 2989
-          percent: 100
+          volume: 445437
+          percent: 0
           rank: 1
         '2012':
-          volume: 3782
-          percent: 100
+          volume: 394884
+          percent: 0
           rank: 1
         '2013':
-          volume: 4122
-          percent: 100
+          volume: 395518
+          percent: 0
           rank: 1
         '2014':
-          volume: 15097
-          percent: 100
+          volume: 363941
+          percent: 0
           rank: 1
         '2015':
-          volume: 22708
-          percent: 100
-          rank: 1
-    Manure Salts (tons):
-      name: Manure Salts
-      units: tons
-      volume:
-        '2006':
-          volume: 34722
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 61094
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 74649
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 174997
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 14
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 59
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 287
-          percent: 100
-          rank: 1
-    Muriate Of Potash-Granular (tons):
-      name: Muriate Of Potash-Granular
-      units: tons
-      volume:
-        '2006':
-          volume: 290
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 300
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 555
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 1350
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 1373
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 1606
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 2923
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 7253
-          percent: 100
+          volume: 342217
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 20346
+          percent: 0
+          rank: 23
+        '2007':
+          volume: 19606
+          percent: 0
+          rank: 23
+        '2008':
+          volume: 21026
+          percent: 0
+          rank: 23
         '2009':
-          volume: 410556
-          percent: 0.01
-          rank: 10
+          volume: 18827
+          percent: 0
+          rank: 23
+        '2010':
+          volume: 17731
+          percent: 0
+          rank: 23
+        '2011':
+          volume: 17287
+          percent: 0
+          rank: 23
         '2012':
-          volume: 377851
-          percent: 0.01
-          rank: 8
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
-        '2015':
-          volume: 289
+          volume: 16010
+          percent: 0
+          rank: 23
+        '2013':
+          volume: 15038
+          percent: 0
+          rank: 23
+        '2014':
+          volume: 13910
           percent: 0
           rank: 1
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2006':
-          volume: 7070
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 56660
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 278198
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 428
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 895
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 4401
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 7085
+        '2015':
+          volume: 12809
           percent: 0
           rank: 1
 OK:
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: 725099
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 890762
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 664925
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 566793
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 516450
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 544641
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 266370
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 598961
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 495799
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 498360
+          percent: 0
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
         '2006':
-          volume: 15082187
-          percent: 0
-          rank: 1
-        '2009':
-          volume: 15293146
-          percent: 0
-          rank: 1
-        '2011':
-          volume: 15936853
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 16560145
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
-          volume: 7509611
+          volume: 14191892
           percent: 0
           rank: 1
         '2007':
-          volume: 8496403
+          volume: 14225420
           percent: 0
-          rank: 1
-        '2014':
-          volume: 13696514
-          percent: 0
-          rank: 1
-    Muriate Of Potash-Granular (tons):
-      name: Muriate Of Potash-Granular
-      units: tons
-      volume:
-        '2014':
-          volume: 266370
-          percent: 100
-          rank: 1
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2006':
-          volume: 0
-          percent: null
-          rank: 1
-        '2007':
-          volume: 818
-          percent: 100
           rank: 1
         '2008':
-          volume: 1130
-          percent: 100
+          volume: 15087365
+          percent: 0
           rank: 1
         '2009':
-          volume: 3786
-          percent: 100
+          volume: 15781081
+          percent: 0
           rank: 1
         '2010':
-          volume: 3863
-          percent: 100
+          volume: 15273518
+          percent: 0
           rank: 1
         '2011':
-          volume: 5536
-          percent: 100
+          volume: 12793374
+          percent: 0
           rank: 1
         '2012':
-          volume: 5818
-          percent: 100
+          volume: 15828013
+          percent: 0
           rank: 1
         '2013':
-          volume: 7628
-          percent: 100
+          volume: 14511403
+          percent: 0
           rank: 1
         '2014':
-          volume: 15701
-          percent: 100
+          volume: 14547989
+          percent: 0
           rank: 1
         '2015':
-          volume: 19664
-          percent: 100
+          volume: 16564169
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
         '2006':
-          volume: 16336219
-          percent: 0.3
-          rank: 5
+          volume: 165196
+          percent: 0.02
+          rank: 18
+        '2007':
+          volume: 176964
+          percent: 0.02
+          rank: 18
+        '2008':
+          volume: 184563
+          percent: 0.02
+          rank: 17
         '2009':
-          volume: 15656155
-          percent: 0.24
-          rank: 8
+          volume: 212271
+          percent: 0.02
+          rank: 16
+        '2010':
+          volume: 216046
+          percent: 0.02
+          rank: 17
+        '2011':
+          volume: 358499
+          percent: 0.03
+          rank: 12
         '2012':
-          volume: 15785488
-          percent: 0.32
-          rank: 6
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2012':
-          volume: 498360
+          volume: 572150
+          percent: 0.05
+          rank: 11
+        '2013':
+          volume: 545791
+          percent: 0.05
+          rank: 12
+        '2014':
+          volume: 741700
           percent: 0
           rank: 1
-        '2013':
-          volume: 4849
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 12377
-          percent: 100
-          rank: 1
         '2015':
-          volume: 35500
-          percent: 100
-          rank: 1
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2006':
-          volume: 25450
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 26756
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 35071
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 43284
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 43655
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 49204
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 49914
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 97670
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 105286
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 134210
-          percent: 100
-          rank: 1
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2006':
-          volume: 142519
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 149501
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 186127
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 193559
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 237311
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 255427
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 383492
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 462560
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 553283
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 694735
-          percent: 100
-          rank: 1
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2006':
-          volume: 828532
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 1004713
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 3980067
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 6829126
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 68
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 513
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 401
-          percent: 100
-          rank: 1
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006':
-          volume: 7977
-          percent: 21.42
-          rank: 1
-        '2007':
-          volume: 20015
-          percent: 45.21
-          rank: 1
-        '2008':
-          volume: 812390
-          percent: 96.78
+          volume: 841373
+          percent: 0
           rank: 1
 Offshore Alaska:
   products:
@@ -2669,63 +2569,87 @@ Offshore Alaska:
       units: mcf
       volume:
         '2006':
-          volume: 28597046
+          volume: 25229357
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 26817788
           percent: 0
           rank: 1
         '2008':
-          volume: 29293497
+          volume: 32926351
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 30708137
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 30919154
           percent: 0
           rank: 1
         '2011':
-          volume: 35912093
+          volume: 34305968
           percent: 0
           rank: 1
-        '2014':
-          volume: 32580930
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
-          volume: 32302542
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 35460038
-          percent: 0
-          rank: 1
-    Limestone (tons):
-      name: Limestone
-      units: tons
-      volume:
-        '2008':
+        '2012':
           volume: 23913986
-          percent: 100
+          percent: 0
           rank: 1
-        '2009':
-          volume: 695587
-          percent: 100
+        '2013':
+          volume: 31750055
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 34766101
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 36198609
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 3367689
+          percent: 0.31
+          rank: 10
+        '2007':
+          volume: 2475709
+          percent: 0.23
+          rank: 10
+        '2008':
+          volume: 2985742
+          percent: 0.3
+          rank: 10
         '2009':
-          volume: 32502745
-          percent: 0.49
-          rank: 6
-        '2012':
-          volume: 35506174
-          percent: 0.73
-          rank: 5
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
+          volume: 1872793
+          percent: 0.15
+          rank: 10
+        '2010':
+          volume: 1383388
+          percent: 0.11
+          rank: 10
         '2011':
-          volume: 36919942
+          volume: 1154070
+          percent: 0.11
+          rank: 10
+        '2012':
+          volume: 695587
+          percent: 0.07
+          rank: 10
+        '2013':
+          volume: 752690
+          percent: 0.07
+          rank: 11
+        '2014':
+          volume: 740073
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 721333
           percent: 0
           rank: 1
 Offshore Gulf:
@@ -2735,96 +2659,88 @@ Offshore Gulf:
       units: mcf
       volume:
         '2006':
-          volume: 3393164141
+          volume: 2921289137
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 2813193096
           percent: 0
           rank: 1
         '2008':
-          volume: 690126880
+          volume: 2330333629
           percent: 0
           rank: 1
         '2009':
-          volume: 2590980679
+          volume: 2451144595
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 2250585185
           percent: 0
           rank: 1
         '2011':
-          volume: 2753671946
+          volume: 1826635129
           percent: 0
-          rank: 1
-        '2014':
-          volume: 3021366382
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
-          volume: 2817179518
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 2308306976
-          percent: 0
-          rank: 1
-    Limestone (tons):
-      name: Limestone
-      units: tons
-      volume:
-        '2011':
-          volume: 73749514
-          percent: 100
           rank: 1
         '2012':
-          volume: 319123809
-          percent: 100
+          volume: 1535385474
+          percent: 0
           rank: 1
         '2013':
-          volume: 1142512151
-          percent: 100
+          volume: 1327896012
+          percent: 0
           rank: 1
         '2014':
-          volume: 10907
-          percent: 100
+          volume: 1276999048
+          percent: 0
           rank: 1
-    Magnesium Chloride Brine (tons):
-      name: Magnesium Chloride Brine
-      units: tons
-      volume:
-        '2006':
-          volume: 72210975
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 392304025
-          percent: 100
+        '2015':
+          volume: 1307376451
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2009':
-          volume: 1786892242
-          percent: 27.19
-          rank: 2
-        '2012':
-          volume: 1787499819
-          percent: 36.53
+        '2006':
+          volume: 471875004
+          percent: 43.61
           rank: 1
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
+        '2007':
+          volume: 467914463
+          percent: 43.52
+          rank: 1
+        '2008':
+          volume: 423338317
+          percent: 43
+          rank: 1
+        '2009':
+          volume: 570221787
+          percent: 44.28
+          rank: 1
+        '2010':
+          volume: 566594333
+          percent: 45.09
+          rank: 1
+        '2011':
+          volume: 481671847
+          percent: 44.29
+          rank: 1
         '2012':
-          volume: 1307376451
-          percent: 0
+          volume: 464525907
+          percent: 44.02
           rank: 1
         '2013':
-          volume: 99993352
-          percent: 0
+          volume: 458996230
+          percent: 43.29
           rank: 1
         '2014':
-          volume: 452930027
-          percent: 100
+          volume: 510500771
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 552923379
+          percent: 0
           rank: 1
 Offshore Pacific:
   products:
@@ -2833,87 +2749,87 @@ Offshore Pacific:
       units: mcf
       volume:
         '2006':
-          volume: 73145970
+          volume: 47153866
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 45563257
           percent: 0
           rank: 1
         '2008':
-          volume: 405538
+          volume: 46922654
           percent: 0
           rank: 1
         '2009':
-          volume: 69781808
+          volume: 41282846
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 41257762
           percent: 0
           rank: 1
         '2011':
-          volume: 70954534
+          volume: 36591564
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 27267157
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 27502417
           percent: 0
           rank: 1
         '2014':
-          volume: 63589579
+          volume: 28313384
           percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006':
-          volume: 62968737
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 56411834
-          percent: 0
-          rank: 1
-    Limestone (tons):
-      name: Limestone
-      units: tons
-      volume:
-        '2010':
-          volume: 307500
-          percent: 100
           rank: 1
         '2015':
-          volume: 230141
-          percent: 100
-          rank: 1
-    Magnesium Chloride Brine (tons):
-      name: Magnesium Chloride Brine
-      units: tons
-      volume:
-        '2008':
-          volume: 26959657
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 17454856
-          percent: 100
+          volume: 14808085
+          percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
+        '2006':
+          volume: 25992104
+          percent: 2.4
+          rank: 3
+        '2007':
+          volume: 24624089
+          percent: 2.29
+          rank: 4
+        '2008':
+          volume: 24031880
+          percent: 2.44
+          rank: 4
         '2009':
-          volume: 46074202
-          percent: 0.7
+          volume: 22306733
+          percent: 1.73
+          rank: 4
+        '2010':
+          volume: 21710975
+          percent: 1.73
+          rank: 4
+        '2011':
+          volume: 19820270
+          percent: 1.82
           rank: 4
         '2012':
-          volume: 46819924
-          percent: 0.96
+          volume: 17684997
+          percent: 1.68
           rank: 4
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
-      units: tons
-      volume:
-        '2012':
-          volume: 347499
-          percent: 0
-          rank: 1
         '2013':
-          volume: 240677
+          volume: 18571785
+          percent: 1.75
+          rank: 4
+        '2014':
+          volume: 18506540
           percent: 0
           rank: 1
         '2015':
-          volume: 25685782
+          volume: 11465873
           percent: 0
           rank: 1
 PA:
@@ -2926,54 +2842,74 @@ PA:
           volume: 15449
           percent: 0
           rank: 1
-        '2009':
+        '2007':
           volume: 19913
           percent: 0
           rank: 1
-        '2011':
+        '2008':
           volume: 17144
           percent: 0
           rank: 1
-        '2014':
-          volume: 65874
+        '2009':
+          volume: 59564
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007':
-          volume: 70615
+        '2010':
+          volume: 64629
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 37307
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 24786
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 27160
           percent: 0
           rank: 1
         '2014':
-          volume: 39858
+          volume: 18674
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 13151
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006':
-          volume: 26555
-          percent: 0
-          rank: 10
         '2009':
-          volume: 28658
+          volume: 6310
           percent: 0
-          rank: 14
+          rank: 25
+        '2010':
+          volume: 5986
+          percent: 0
+          rank: 25
+        '2011':
+          volume: 2551
+          percent: 0
+          rank: 25
         '2012':
-          volume: 19832
+          volume: 1769
           percent: 0
-          rank: 11
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2009':
-          volume: 14091
-          percent: 0.56
-          rank: 2
+          rank: 25
+        '2013':
+          volume: 1498
+          percent: 0
+          rank: 25
+        '2014':
+          volume: 1158
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 940
+          percent: 0
+          rank: 1
 SD:
   products:
     Gas (mcf):
@@ -2981,31 +2917,43 @@ SD:
       units: mcf
       volume:
         '2006':
-          volume: 1708366
+          volume: 1529459
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 1669547
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 1718266
           percent: 0
           rank: 1
         '2009':
-          volume: 1854306
+          volume: 1882515
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 1737523
           percent: 0
           rank: 1
         '2011':
-          volume: 1897920
+          volume: 1879793
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 2538006
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 2706881
           percent: 0
           rank: 1
         '2014':
-          volume: 2049222
+          volume: 2510082
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007':
-          volume: 1887163
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 2037832
+        '2015':
+          volume: 2334610
           percent: 0
           rank: 1
     Oil (bbl):
@@ -3013,24 +2961,44 @@ SD:
       units: bbl
       volume:
         '2006':
-          volume: 2732872
-          percent: 0.05
-          rank: 7
+          volume: 178907
+          percent: 0.02
+          rank: 17
+        '2007':
+          volume: 184759
+          percent: 0.02
+          rank: 17
+        '2008':
+          volume: 179654
+          percent: 0.02
+          rank: 18
         '2009':
-          volume: 2892467
-          percent: 0.04
-          rank: 9
+          volume: 166707
+          percent: 0.01
+          rank: 18
+        '2010':
+          volume: 149640
+          percent: 0.01
+          rank: 18
+        '2011':
+          volume: 158039
+          percent: 0.01
+          rank: 18
         '2012':
-          volume: 2685623
-          percent: 0.05
-          rank: 7
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2009':
-          volume: 2490260
-          percent: 98.34
+          volume: 194866
+          percent: 0.02
+          rank: 18
+        '2013':
+          volume: 185586
+          percent: 0.02
+          rank: 18
+        '2014':
+          volume: 175541
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 155650
+          percent: 0
           rank: 1
 TX:
   products:
@@ -3039,43 +3007,43 @@ TX:
       units: mcf
       volume:
         '2006':
-          volume: 25719725
+          volume: 25381539
           percent: 0
           rank: 1
-        '2009':
-          volume: 27786903
-          percent: 0
-          rank: 1
-        '2011':
-          volume: 25163494
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 280423
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 23683064
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
         '2007':
-          volume: 21690343
+          volume: 27466407
           percent: 0
           rank: 1
         '2008':
-          volume: 274323
+          volume: 25135527
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 23364386
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 21684733
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 35578611
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 56484061
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 44752786
           percent: 0
           rank: 1
         '2014':
-          volume: 163562
+          volume: 36567935
           percent: 0
           rank: 1
         '2015':
-          volume: 35743022
+          volume: 30432839
           percent: 0
           rank: 1
     Oil (bbl):
@@ -3083,294 +3051,282 @@ TX:
       units: bbl
       volume:
         '2006':
-          volume: 56797913
-          percent: 1.03
-          rank: 3
+          volume: 338186
+          percent: 0.03
+          rank: 15
+        '2007':
+          volume: 320496
+          percent: 0.03
+          rank: 13
+        '2008':
+          volume: 308390
+          percent: 0.03
+          rank: 13
         '2009':
-          volume: 44954441
-          percent: 0.68
-          rank: 5
-        '2012':
-          volume: 125368
-          percent: 0
-          rank: 9
-        '2013':
-          volume: 36580560
-          percent: 0.66
-          rank: 5
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
+          volume: 318678
+          percent: 0.02
+          rank: 13
         '2010':
-          volume: 23635
-          percent: 46.9
-          rank: 1
+          volume: 279933
+          percent: 0.02
+          rank: 13
         '2011':
-          volume: 108027
-          percent: 84.64
-          rank: 1
+          volume: 327973
+          percent: 0.03
+          rank: 14
         '2012':
-          volume: 437496
-          percent: 95.54
-          rank: 1
+          volume: 313852
+          percent: 0.03
+          rank: 16
         '2013':
-          volume: 4922886
-          percent: 99.46
-          rank: 1
+          volume: 201655
+          percent: 0.02
+          rank: 16
         '2014':
-          volume: 24940831
-          percent: 100
+          volume: 137993
+          percent: 0
           rank: 1
         '2015':
-          volume: 611
-          percent: 100
-          rank: 1
-    Silver (oz):
-      name: Silver
-      units: oz
-      volume:
-        '2013':
-          volume: 387
-          percent: 100
-          rank: 1
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
-        '2006':
-          volume: 1598
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 2715
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 4504
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 10571
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 53811
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 51387
+          volume: 125620
           percent: 0
           rank: 1
 UT:
   products:
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2014':
+          volume: 33520
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 51791
+          percent: 100
+          rank: 1
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: 10097981
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 6659942
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 8580347
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 6683745
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 6219884
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 7213622
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 8792809
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 8108509
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 8084545
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 5469603
+          percent: 0
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
         '2006':
-          volume: 558756567
+          volume: 212844173
           percent: 0
           rank: 1
         '2007':
-          volume: 2022304501
+          volume: 243499977
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 296600546
           percent: 0
           rank: 1
         '2009':
-          volume: 2305263544
+          volume: 305017592
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 288664802
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 300827979
           percent: 0
           rank: 1
         '2012':
-          volume: 2784242062
+          volume: 327559310
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 297246717
           percent: 0
           rank: 1
         '2014':
-          volume: 3149901672
+          volume: 279981808
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 261770435
           percent: 0
           rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2008':
-          volume: 2976256905
+        '2013':
+          volume: 16233458
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 165100000
           percent: 0
           rank: 1
         '2015':
-          volume: 2873318972
+          volume: 162673000
           percent: 0
+          rank: 1
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006':
+          volume: 2350934233
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 2046718554
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 2468886992
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 2827213958
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 2670508903
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 2554615747
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 2453647854
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 2316266258
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 2463584337
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 2139260182
+          percent: 0
+          rank: 1
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2006':
+          volume: 8776
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 10879
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 16957
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 13016
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 28082
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 35927
+          percent: 100
+          rank: 1
+        '2015':
+          volume: 16078
+          percent: 100
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
         '2006':
-          volume: 2801244896
-          percent: 50.73
-          rank: 1
+          volume: 7175905
+          percent: 0.66
+          rank: 6
+        '2007':
+          volume: 8374192
+          percent: 0.78
+          rank: 6
+        '2008':
+          volume: 10157220
+          percent: 1.03
+          rank: 6
         '2009':
-          volume: 2649894964
-          percent: 40.32
-          rank: 1
-        '2013':
-          volume: 2930013174
-          percent: 52.87
-          rank: 1
-    Soda Ash (tons):
-      name: Soda Ash
-      units: tons
-      volume:
+          volume: 10973362
+          percent: 0.85
+          rank: 6
+        '2010':
+          volume: 10835234
+          percent: 0.86
+          rank: 6
         '2011':
-          volume: 1335972
+          volume: 10661624
+          percent: 0.98
+          rank: 7
+        '2012':
+          volume: 11208995
+          percent: 1.06
+          rank: 7
+        '2013':
+          volume: 12040021
+          percent: 1.14
+          rank: 7
+        '2014':
+          volume: 13228964
           percent: 0
           rank: 1
-        '2012':
-          volume: 4187278
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 21808
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 155915
-          percent: 100
-          rank: 1
         '2015':
-          volume: 912753
-          percent: 100
-          rank: 1
-    Sodium Bi-Carbonate (tons):
-      name: Sodium Bi-Carbonate
-      units: tons
-      volume:
-        '2006':
-          volume: 20960312
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 243905791
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 9848000
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 11923400
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 23327200
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 39392000
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 47693600
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 320619275
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 711642702
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 752090351
-          percent: 100
-          rank: 1
-    Sodium Bisulfite (tons):
-      name: Sodium Bisulfite
-      units: tons
-      volume:
-        '2006':
-          volume: 190119336
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 191089318
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 16078
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 95
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 184
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 1755
-          percent: 100
-          rank: 1
-    Sodium Decahydrate (tons):
-      name: Sodium Decahydrate
-      units: tons
-      volume:
-        '2006':
-          volume: 8591
-          percent: 100
-          rank: 1
-    Sodium Products:
-      name: Sodium Products
-      units: null
-      volume:
-        '2006':
-          volume: 14803
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 18987
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 31362
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 69935
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 81802
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 146922
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 401612
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 755494
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 1114518
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 2853662
-          percent: 100
-          rank: 1
-    Sodium Sesquicarbonate (tons):
-      name: Sodium Sesquicarbonate
-      units: tons
-      volume:
-        '2006':
-          volume: 5860771
-          percent: 100
+          volume: 11360493
+          percent: 0
           rank: 1
 VA:
   products:
@@ -3378,183 +3334,45 @@ VA:
       name: Gas
       units: mcf
       volume:
-        '2007':
+        '2006':
           volume: 245906
           percent: 0
           rank: 1
-        '2009':
+        '2007':
           volume: 208358
           percent: 0
           rank: 1
-        '2012':
+        '2008':
           volume: 211002
           percent: 0
           rank: 1
-        '2014':
+        '2009':
           volume: 198315
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008':
+        '2010':
           volume: 189294
           percent: 0
           rank: 1
-        '2015':
+        '2011':
           volume: 181632
           percent: 0
           rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006':
+        '2012':
           volume: 173949
           percent: 0
-          rank: 9
-        '2009':
+          rank: 1
+        '2013':
           volume: 162733
           percent: 0
-          rank: 11
-        '2013':
+          rank: 1
+        '2014':
           volume: 149379
           percent: 0
-          rank: 10
-    Sodium Sesquicarbonate (tons):
-      name: Sodium Sesquicarbonate
-      units: tons
-      volume:
-        '2009':
-          volume: 16304
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 113778
-          percent: 100
-          rank: 1
-W:
-  products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007':
-          volume: 24791035
-          percent: 0
-          rank: 1
-        '2009':
-          volume: 21929225
-          percent: 0
-          rank: 1
-        '2012':
-          volume: 23438707
-          percent: 0
-          rank: 1
-        '2014':
-          volume: 20383032
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008':
-          volume: 21189714
-          percent: 0
           rank: 1
         '2015':
-          volume: 18083793
+          volume: 130082
           percent: 0
-          rank: 1
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006':
-          volume: 22469422
-          percent: 0.41
-          rank: 4
-        '2009':
-          volume: 23969663
-          percent: 0.36
-          rank: 7
-        '2013':
-          volume: 37086734
-          percent: 0.67
-          rank: 4
-    Sodium Sesquicarbonate (tons):
-      name: Sodium Sesquicarbonate
-      units: tons
-      volume:
-        '2012':
-          volume: 161433
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 55480
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 29472084
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 1477
-          percent: 100
-          rank: 1
-    Sulfide (tons):
-      name: Sulfide
-      units: tons
-      volume:
-        '2006':
-          volume: 7632
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 3250
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 9375
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 46315
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 21201
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 330910
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 387216
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 826489
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 222323
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 379209
-          percent: 100
-          rank: 1
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
-      units: tons
-      volume:
-        '2006':
-          volume: 80
-          percent: 100
           rank: 1
 WV:
   products:
@@ -3562,130 +3380,150 @@ WV:
       name: Gas
       units: mcf
       volume:
-        '2007':
+        '2006':
           volume: 574301
           percent: 0
           rank: 1
-        '2009':
+        '2007':
           volume: 519848
           percent: 0
           rank: 1
-        '2012':
+        '2008':
           volume: 596923
           percent: 0
           rank: 1
-        '2014':
-          volume: 467861
+        '2009':
+          volume: 467668
           percent: 0
           rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008':
-          volume: 379416
+        '2010':
+          volume: 379408
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 432472
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 204968
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 208899
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 176349
           percent: 0
           rank: 1
         '2015':
-          volume: 432486
+          volume: 153187
           percent: 0
           rank: 1
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006':
-          volume: 204968
-          percent: 0
-          rank: 8
         '2009':
-          volume: 140761
+          volume: 193
           percent: 0
-          rank: 12
+          rank: 26
         '2010':
-          volume: 68138
+          volume: 8
           percent: 0
-          rank: 7
-        '2013':
-          volume: 176349
-          percent: 0
-          rank: 9
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
-      units: tons
-      volume:
-        '2008':
-          volume: 885
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 18783
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 19115
-          percent: 100
-          rank: 1
+          rank: 26
         '2011':
-          volume: 25187
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 36585
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 52632
-          percent: 100
-          rank: 1
+          volume: 14
+          percent: 0
+          rank: 26
 WY:
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: 369856067
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 384201780
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 416957489
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 387746736
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 397535690
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 390112610
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 353311864
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 331529668
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 340049300
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 313790093
+          percent: 0
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006':
+          volume: 1491455789
+          percent: 0
+          rank: 1
         '2007':
-          volume: 1898017052
+          volume: 1664001549
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 1856646024
           percent: 0
           rank: 1
         '2009':
-          volume: 2087038923
+          volume: 1938315493
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 1938304036
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 1837740875
           percent: 0
           rank: 1
         '2012':
-          volume: 2313427289
+          volume: 1731887115
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 1590795825
           percent: 0
           rank: 1
         '2014':
-          volume: 2333253839
+          volume: 1547112987
           percent: 0
           rank: 1
         '2015':
-          volume: 30576849
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008':
-          volume: 399554650
-          percent: 0
-          rank: 1
-        '2009':
-          volume: 1973895714
-          percent: 0
-          rank: 1
-        '2015':
-          volume: 2261569396
-          percent: 0
-          rank: 1
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2006':
-          volume: 5739444
+          volume: 1551815444
           percent: 0
           rank: 1
     Oil (bbl):
@@ -3693,122 +3531,174 @@ WY:
       units: bbl
       volume:
         '2006':
-          volume: 2123226712
-          percent: 38.45
+          volume: 31880050
+          percent: 2.95
+          rank: 2
+        '2007':
+          volume: 33075284
+          percent: 3.08
+          rank: 2
+        '2008':
+          volume: 32637686
+          percent: 3.31
+          rank: 2
+        '2009':
+          volume: 31965449
+          percent: 2.48
           rank: 2
         '2010':
-          volume: 1963457735
-          percent: 45.61
+          volume: 32469020
+          percent: 2.58
+          rank: 2
+        '2011':
+          volume: 32442250
+          percent: 2.98
+          rank: 3
+        '2012':
+          volume: 33144675
+          percent: 3.14
+          rank: 3
+        '2013':
+          volume: 35618778
+          percent: 3.36
+          rank: 3
+        '2014':
+          volume: 41495220
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 48018542
+          percent: 0
+          rank: 1
+    Purge Liquor (tons - equivalent):
+      name: Purge Liquor
+      units: tons - equivalent
+      volume:
+        '2006':
+          volume: 69814
+          percent: 100
+          rank: 1
+        '2007':
+          volume: 97711
+          percent: 100
+          rank: 1
+        '2008':
+          volume: 116333
+          percent: 100
+          rank: 1
+        '2009':
+          volume: 118021
+          percent: 100
+          rank: 1
+        '2010':
+          volume: 104405
+          percent: 100
+          rank: 1
+        '2011':
+          volume: 88412
+          percent: 100
+          rank: 1
+        '2012':
+          volume: 73596
+          percent: 100
           rank: 1
         '2013':
-          volume: 1934932401
-          percent: 34.91
-          rank: 2
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
-      units: tons
-      volume:
+          volume: 88213
+          percent: 100
+          rank: 1
         '2014':
-          volume: 3129272
+          volume: 91878
           percent: 100
           rank: 1
         '2015':
-          volume: 28939146
+          volume: 95877
+          percent: 100
+          rank: 1
+    Soda Ash (tons):
+      name: Soda Ash
+      units: tons
+      volume:
+        '2006':
+          volume: 4755332
+          percent: 0
+          rank: 1
+        '2007':
+          volume: 5662599
+          percent: 0
+          rank: 1
+        '2008':
+          volume: 7069757
+          percent: 0
+          rank: 1
+        '2009':
+          volume: 5545300
+          percent: 0
+          rank: 1
+        '2010':
+          volume: 4990309
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 5705147
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 4740200
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 5232597
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 6075994
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 4863569
+          percent: 0
+          rank: 1
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
+      units: tons
+      volume:
+        '2010':
+          volume: 46904
+          percent: 0
+          rank: 1
+        '2011':
+          volume: 34297
+          percent: 0
+          rank: 1
+        '2012':
+          volume: 69262
+          percent: 0
+          rank: 1
+        '2013':
+          volume: 71539
+          percent: 0
+          rank: 1
+        '2014':
+          volume: 107022
+          percent: 0
+          rank: 1
+        '2015':
+          volume: 70079
+          percent: 0
+          rank: 1
+    Sodium Sesquicarbonate (tons):
+      name: Sodium Sesquicarbonate
+      units: tons
+      volume:
+        '2013':
+          volume: 121115
           percent: 100
           rank: 1
     Trona Ore (tons):
       name: Trona Ore
       units: tons
       volume:
-        '2006':
-          volume: 281721675
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 281
-          percent: 100
-          rank: 1
         '2009':
-          volume: 3364
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 22681
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 22939
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 27093
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 43145
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 189116
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 197516
-          percent: 100
-          rank: 1
-    Wavellite (tons):
-      name: Wavellite
-      units: tons
-      volume:
-        '2007':
-          volume: 214740
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 272288
-          percent: 100
-          rank: 1
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006':
-          volume: 3941340
-          percent: 100
-          rank: 1
-        '2007':
-          volume: 74523337
-          percent: 100
-          rank: 1
-        '2008':
-          volume: 491548163
-          percent: 100
-          rank: 1
-        '2009':
-          volume: 980818562
-          percent: 100
-          rank: 1
-        '2010':
-          volume: 47856
-          percent: 100
-          rank: 1
-        '2011':
-          volume: 971484
-          percent: 100
-          rank: 1
-        '2012':
-          volume: 2549978
-          percent: 100
-          rank: 1
-        '2013':
-          volume: 7034640
-          percent: 100
-          rank: 1
-        '2014':
-          volume: 37501340
-          percent: 100
-          rank: 1
-        '2015':
-          volume: 4933648
+          volume: 139689
           percent: 100
           rank: 1

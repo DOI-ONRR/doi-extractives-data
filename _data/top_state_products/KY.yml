@@ -70,58 +70,85 @@ all_production:
       rank: 3
       percent: 7.75
 federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 212384
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 207550
+      rank: 1
+      percent: 0
   '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 220654
+      value: 205519
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 189884
       rank: 1
       percent: 0
   '2010':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 218698
+      value: 191034
       rank: 1
       percent: 0
   '2011':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 186280
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 157538
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 173873
       rank: 1
       percent: 0
   '2012':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 223441
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 145703
       rank: 1
       percent: 0
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 393952
+      value: 131149
       rank: 1
       percent: 0
   '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 126830
+      rank: 1
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 159460
+      value: 10786
       rank: 1
       percent: 0
   '2015':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 204082
+      value: 150809
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8651
       rank: 1
       percent: 0

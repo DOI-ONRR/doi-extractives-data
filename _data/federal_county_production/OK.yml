@@ -6,64 +6,50 @@
       units: mcf
       volume:
         '2006': 125247
-        '2009': 125426
-        '2011': 195000
-        '2014': 603844
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 225551
-        '2007': 2196
-        '2014': 203696
+        '2007': 125426
+        '2008': 195000
+        '2009': 603844
+        '2010': 225551
+        '2011': 203696
+        '2012': 164084
+        '2013': 235022
+        '2014': 591921
+        '2015': 1579050
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 164084
-        '2009': 235022
-        '2012': 591921
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2008': 1579050
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 338226
+        '2006': 1903
+        '2007': 1989
+        '2008': 2021
+        '2009': 4445
+        '2010': 2196
+        '2011': 1613
+        '2012': 2334
+        '2013': 28872
+        '2014': 126023
+        '2015': 338226
 '40005':
   name: Atoka County
   products:
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 8458
-        '2014': 6341
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 4768
-        '2012': 4362
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2011': 23641
-        '2014': 13339
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
+        '2008': 23641
+        '2009': 13339
+        '2010': 8458
+        '2011': 6341
+        '2012': 5536
+        '2013': 4768
+        '2014': 4362
+        '2015': 2541
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2011': 5536
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2013': 2541
+        '2008': 35
+        '2009': 8
 '40007':
   name: Beaver County
   products:
@@ -72,33 +58,29 @@
       units: mcf
       volume:
         '2006': 193306
-        '2009': 164927
-        '2011': 139555
-        '2014': 133282
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 130212
-        '2007': 3301
-        '2014': 114285
+        '2007': 164927
+        '2008': 139555
+        '2009': 133282
+        '2010': 130212
+        '2011': 114285
+        '2012': 106761
+        '2013': 91234
+        '2014': 155126
+        '2015': 142519
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 106761
-        '2009': 91234
-        '2012': 155126
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2006': 142519
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 2898
+        '2006': 2446
+        '2007': 2951
+        '2008': 2819
+        '2009': 2901
+        '2010': 3301
+        '2011': 3306
+        '2012': 6601
+        '2013': 4303
+        '2014': 3599
+        '2015': 2898
 '40009':
   name: Beckham County
   products:
@@ -107,33 +89,29 @@
       units: mcf
       volume:
         '2006': 1388112
-        '2009': 1028868
-        '2011': 792801
-        '2014': 672591
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 559990
-        '2007': 618
-        '2014': 492281
+        '2007': 1028868
+        '2008': 792801
+        '2009': 672591
+        '2010': 559990
+        '2011': 492281
+        '2012': 438027
+        '2013': 390995
+        '2014': 344567
+        '2015': 462560
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 438027
-        '2009': 390995
-        '2012': 344567
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2013': 462560
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2014': 400
+        '2006': 1009
+        '2007': 2294
+        '2008': 1893
+        '2009': 2086
+        '2010': 618
+        '2011': 571
+        '2012': 419
+        '2013': 461
+        '2014': 386
+        '2015': 400
 '40011':
   name: Blaine County
   products:
@@ -142,33 +120,29 @@
       units: mcf
       volume:
         '2006': 357525
-        '2009': 383170
-        '2011': 339256
-        '2014': 294309
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 294124
-        '2007': 3430
-        '2014': 308945
+        '2007': 383170
+        '2008': 339256
+        '2009': 294309
+        '2010': 294124
+        '2011': 308945
+        '2012': 284625
+        '2013': 237036
+        '2014': 196638
+        '2015': 193559
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 284625
-        '2009': 237036
-        '2012': 196638
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 1820
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2009': 193559
+        '2006': 5149
+        '2007': 4677
+        '2008': 4299
+        '2009': 3356
+        '2010': 3430
+        '2011': 2919
+        '2012': 2398
+        '2013': 1853
+        '2014': 1799
+        '2015': 1820
 '40015':
   name: Caddo County
   products:
@@ -177,33 +151,29 @@
       units: mcf
       volume:
         '2006': 13801
-        '2009': 13467
-        '2011': 12471
-        '2014': 11430
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 60735
-        '2007': 43
-        '2014': 127204
+        '2007': 13467
+        '2008': 12471
+        '2009': 11430
+        '2010': 60735
+        '2011': 127204
+        '2012': 94360
+        '2013': 71372
+        '2014': 56439
+        '2015': 49914
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 94360
-        '2009': 71372
-        '2012': 56439
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2010': 27
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2012': 49914
+        '2006': 29
+        '2007': 10
+        '2008': 35
+        '2009': 19
+        '2010': 43
+        '2011': 28
+        '2012': 39
+        '2013': 29
+        '2014': 26
+        '2015': 27
 '40017':
   name: Canadian County
   products:
@@ -212,33 +182,29 @@
       units: mcf
       volume:
         '2006': 256722
-        '2009': 270645
-        '2011': 232860
-        '2014': 245778
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 256589
-        '2007': 2617
-        '2014': 249459
+        '2007': 270645
+        '2008': 232860
+        '2009': 245778
+        '2010': 256589
+        '2011': 249459
+        '2012': 237852
+        '2013': 280356
+        '2014': 196645
+        '2015': 149501
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 237852
-        '2009': 280356
-        '2012': 196645
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 1600
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2007': 149501
+        '2006': 3416
+        '2007': 3055
+        '2008': 3212
+        '2009': 3282
+        '2010': 2617
+        '2011': 2584
+        '2012': 2436
+        '2013': 2020
+        '2014': 1763
+        '2015': 1600
 '40029':
   name: Coal County
   products:
@@ -247,61 +213,45 @@
       units: mcf
       volume:
         '2006': 104761
-        '2009': 656493
-        '2011': 1310284
-        '2014': 1199692
+        '2007': 656493
+        '2008': 1310284
+        '2009': 1199692
+        '2010': 1376208
+        '2011': 1100711
+        '2012': 3216236
+        '2013': 2034140
+        '2014': 1889707
+        '2015': 2401017
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 3216236
-        '2009': 2034140
-        '2012': 1889707
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 1376208
-        '2014': 1100711
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 4825
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2008': 2401017
+        '2007': 4001
+        '2008': 7373
+        '2009': 2789
+        '2010': 2706
+        '2011': 2932
+        '2012': 15246
+        '2013': 4381
+        '2014': 3868
+        '2015': 4825
 '40031':
   name: Comanche County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2006': 936
-        '2009': 867
-        '2011': 1093
-        '2014': 1037
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 5167
-        '2009': 3846
-        '2012': 3816
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 923
-        '2014': 2308
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 3414
+        '2006': 936
+        '2007': 867
+        '2008': 1093
+        '2009': 1037
+        '2010': 923
+        '2011': 2308
+        '2012': 5167
+        '2013': 3846
+        '2014': 3816
+        '2015': 3414
 '40037':
   name: Creek County
   products:
@@ -310,9 +260,17 @@
       units: mcf
       volume:
         '2006': 39
-        '2009': 37
-        '2011': 28
-        '2014': 23
+        '2007': 37
+        '2008': 28
+        '2009': 23
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 204
+        '2007': 183
+        '2008': 176
+        '2009': 124
 '40039':
   name: Custer County
   products:
@@ -321,33 +279,29 @@
       units: mcf
       volume:
         '2006': 409016
-        '2009': 323955
-        '2011': 300818
-        '2014': 249165
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 238612
-        '2007': 2760
-        '2014': 211034
+        '2007': 323955
+        '2008': 300818
+        '2009': 249165
+        '2010': 238612
+        '2011': 211034
+        '2012': 182672
+        '2013': 168352
+        '2014': 154739
+        '2015': 134210
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 182672
-        '2009': 168352
-        '2012': 154739
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 3005
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2015': 134210
+        '2006': 3426
+        '2007': 2476
+        '2008': 2212
+        '2009': 1660
+        '2010': 2760
+        '2011': 2670
+        '2012': 2745
+        '2013': 2451
+        '2014': 3862
+        '2015': 3005
 '40043':
   name: Dewey County
   products:
@@ -356,33 +310,29 @@
       units: mcf
       volume:
         '2006': 569973
-        '2009': 510809
-        '2011': 494097
-        '2014': 385800
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 380378
-        '2007': 22868
-        '2014': 369367
+        '2007': 510809
+        '2008': 494097
+        '2009': 385800
+        '2010': 380378
+        '2011': 369367
+        '2012': 577527
+        '2013': 548125
+        '2014': 413548
+        '2015': 383492
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 577527
-        '2009': 548125
-        '2012': 413548
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 30731
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2012': 383492
+        '2006': 12631
+        '2007': 10217
+        '2008': 9713
+        '2009': 8014
+        '2010': 22868
+        '2011': 17892
+        '2012': 48177
+        '2013': 36962
+        '2014': 22054
+        '2015': 30731
 '40045':
   name: Ellis County
   products:
@@ -391,33 +341,29 @@
       units: mcf
       volume:
         '2006': 402517
-        '2009': 460108
-        '2011': 374150
-        '2014': 340750
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 326992
-        '2007': 19162
-        '2014': 420296
+        '2007': 460108
+        '2008': 374150
+        '2009': 340750
+        '2010': 326992
+        '2011': 420296
+        '2012': 531217
+        '2013': 477590
+        '2014': 641384
+        '2015': 553283
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 531217
-        '2009': 477590
-        '2012': 641384
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 83128
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2014': 553283
+        '2006': 8883
+        '2007': 11881
+        '2008': 9048
+        '2009': 10379
+        '2010': 19162
+        '2011': 65665
+        '2012': 126147
+        '2013': 103914
+        '2014': 132569
+        '2015': 83128
 '40047':
   name: Garfield County
   products:
@@ -426,32 +372,28 @@
       units: mcf
       volume:
         '2006': 112450
-        '2009': 99041
-        '2011': 76707
-        '2014': 71049
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 68725
-        '2007': 450
-        '2014': 57725
+        '2007': 99041
+        '2008': 76707
+        '2009': 71049
+        '2010': 68725
+        '2011': 57725
+        '2012': 56396
+        '2013': 54746
+        '2014': 52574
+        '2015': 49204
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 56396
-        '2009': 54746
-        '2012': 52574
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2011': 49204
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
+        '2006': 999
+        '2007': 937
+        '2008': 477
+        '2009': 374
+        '2010': 450
+        '2011': 130
+        '2012': 125
+        '2013': 147
+        '2014': 208
         '2015': 401
 '40049':
   name: Garvin County
@@ -461,38 +403,29 @@
       units: mcf
       volume:
         '2006': 17873
-        '2009': 27894
-        '2011': 16581
-        '2014': 12020
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 8785
-        '2007': 1070
-        '2014': 8473
+        '2007': 27894
+        '2008': 16581
+        '2009': 12020
+        '2010': 8785
+        '2011': 8473
+        '2012': 7628
+        '2013': 7535
+        '2014': 6416
+        '2015': 5658
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 1734
-        '2009': 7535
-        '2012': 6416
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 1320
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2013': 7628
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2014': 5658
+        '2006': 3815
+        '2007': 3839
+        '2008': 2181
+        '2009': 1360
+        '2010': 1070
+        '2011': 1752
+        '2012': 1734
+        '2013': 1666
+        '2014': 1419
+        '2015': 1320
 '40051':
   name: Grady County
   products:
@@ -501,38 +434,29 @@
       units: mcf
       volume:
         '2006': 36389
-        '2009': 44257
-        '2011': 25206
-        '2014': 26898
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 23511
-        '2007': 1334
-        '2014': 22232
+        '2007': 44257
+        '2008': 25206
+        '2009': 26898
+        '2010': 23511
+        '2011': 22232
+        '2012': 19664
+        '2013': 20546
+        '2014': 17693
+        '2015': 15044
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 1184
-        '2009': 20546
-        '2012': 17693
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 723
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2015': 19664
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2015': 15044
+        '2006': 950
+        '2007': 1054
+        '2008': 1658
+        '2009': 1805
+        '2010': 1334
+        '2011': 1266
+        '2012': 1184
+        '2013': 955
+        '2014': 904
+        '2015': 723
 '40055':
   name: Greer County
   products:
@@ -541,31 +465,15 @@
       units: mcf
       volume:
         '2006': 4868
-        '2009': 7796
-        '2011': 7099
-        '2014': 5737
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 5102
-        '2014': 4205
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2009': 3786
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 3398
-        '2012': 3369
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2014': 3213
+        '2007': 7796
+        '2008': 7099
+        '2009': 5737
+        '2010': 5102
+        '2011': 4205
+        '2012': 3786
+        '2013': 3398
+        '2014': 3369
+        '2015': 3213
 '40059':
   name: Harper County
   products:
@@ -574,33 +482,29 @@
       units: mcf
       volume:
         '2006': 63194
-        '2009': 55933
-        '2011': 53198
-        '2014': 44997
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 41195
-        '2007': 84
-        '2014': 44500
+        '2007': 55933
+        '2008': 53198
+        '2009': 44997
+        '2010': 41195
+        '2011': 44500
+        '2012': 46695
+        '2013': 43723
+        '2014': 38721
+        '2015': 35071
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 46695
-        '2009': 43723
-        '2012': 38721
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2008': 35071
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2010': 41
+        '2006': 292
+        '2007': 169
+        '2008': 122
+        '2009': 110
+        '2010': 84
+        '2011': 74
+        '2012': 45
+        '2013': 35
+        '2014': 34
+        '2015': 41
 '40061':
   name: Haskell County
   products:
@@ -609,27 +513,15 @@
       units: mcf
       volume:
         '2006': 356067
-        '2009': 345524
-        '2011': 325325
-        '2014': 276069
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 270538
-        '2014': 234211
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 241254
-        '2009': 219748
-        '2012': 213745
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2008': 186127
+        '2007': 345524
+        '2008': 325325
+        '2009': 276069
+        '2010': 270538
+        '2011': 234211
+        '2012': 241254
+        '2013': 219748
+        '2014': 213745
+        '2015': 186127
 '40063':
   name: Hughes County
   products:
@@ -638,31 +530,15 @@
       units: mcf
       volume:
         '2006': 1553
-        '2009': 1912
-        '2011': 1733
-        '2014': 1435
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 1210
-        '2014': 1178
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2007': 818
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 683
-        '2012': 626
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2013': 527
+        '2007': 1912
+        '2008': 1733
+        '2009': 1435
+        '2010': 1210
+        '2011': 1178
+        '2012': 818
+        '2013': 683
+        '2014': 626
+        '2015': 527
 '40073':
   name: Kingfisher County
   products:
@@ -671,33 +547,29 @@
       units: mcf
       volume:
         '2006': 47920
-        '2009': 40626
-        '2011': 49226
-        '2014': 46124
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 46597
-        '2007': 536
-        '2014': 46077
+        '2007': 40626
+        '2008': 49226
+        '2009': 46124
+        '2010': 46597
+        '2011': 46077
+        '2012': 41198
+        '2013': 35178
+        '2014': 33944
+        '2015': 43284
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 41198
-        '2009': 35178
-        '2012': 33944
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 409
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2009': 43284
+        '2006': 654
+        '2007': 676
+        '2008': 580
+        '2009': 445
+        '2010': 536
+        '2011': 560
+        '2012': 373
+        '2013': 354
+        '2014': 378
+        '2015': 409
 '40077':
   name: Latimer County
   products:
@@ -706,76 +578,57 @@
       units: mcf
       volume:
         '2006': 182622
-        '2009': 167237
-        '2011': 200960
-        '2014': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2007': 167237
+        '2008': 200960
+        '2009': 271709
+        '2010': 911589
+        '2011': 409312
+        '2012': 301126
+        '2013': 271473
+        '2014': 219036
+        '2015': 237311
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2006': null
-        '2014': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 301126
         '2009': null
+        '2010': null
+        '2011': null
         '2012': null
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2010': 237311
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
         '2013': null
-    Muriate Of Potash-Granular (tons):
-      name: Muriate Of Potash-Granular
-      units: tons
-      volume:
+        '2014': null
         '2015': null
 '40079':
   name: Le Flore County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 725099
+        '2007': 890762
+        '2008': 664925
+        '2009': 566793
+        '2010': 516450
+        '2011': 544641
+        '2012': 266370
+        '2013': 598961
+        '2014': 495799
+        '2015': 498360
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2006': 725099
-        '2009': 890762
-        '2011': 664925
-        '2014': 566793
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 516450
-        '2014': 544641
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 48476
-        '2009': 598961
-        '2012': 495799
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2010': 43655
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2012': 498360
-    Muriate Of Potash-Granular (tons):
-      name: Muriate Of Potash-Granular
-      units: tons
-      volume:
-        '2014': 266370
+        '2006': 70021
+        '2007': 73678
+        '2008': 59402
+        '2009': 53166
+        '2010': 54538
+        '2011': 50808
+        '2012': 48476
+        '2013': 43219
+        '2014': 41680
+        '2015': 43655
 '40081':
   name: Lincoln County
   products:
@@ -784,33 +637,29 @@
       units: mcf
       volume:
         '2006': 64086
-        '2009': 49902
-        '2011': 40661
-        '2014': 32802
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 28080
-        '2007': 1285
-        '2014': 20036
+        '2007': 49902
+        '2008': 40661
+        '2009': 32802
+        '2010': 28080
+        '2011': 20036
+        '2012': 29361
+        '2013': 36742
+        '2014': 35276
+        '2015': 25450
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 29361
-        '2009': 36742
-        '2012': 35276
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2006': 25450
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 1451
+        '2006': 3029
+        '2007': 2782
+        '2008': 2169
+        '2009': 1738
+        '2010': 1285
+        '2011': 929
+        '2012': 1428
+        '2013': 1825
+        '2014': 1978
+        '2015': 1451
 '40083':
   name: Logan County
   products:
@@ -819,48 +668,37 @@
       units: mcf
       volume:
         '2006': 494
-        '2009': 465
-        '2011': 451
-        '2014': 363
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 235
-        '2007': 5
-        '2014': 53
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2006': 0
+        '2007': 465
+        '2008': 451
+        '2009': 363
+        '2010': 235
+        '2011': 53
+        '2012': 0
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 0
+        '2006': 12
+        '2007': 12
+        '2008': 11
+        '2009': 12
+        '2010': 5
+        '2011': 5
+        '2012': 0
 '40087':
   name: McClain County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2006': 91
-        '2009': 79
-        '2011': 75
-        '2014': 108
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 18
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 116
-        '2014': 29
+        '2006': 91
+        '2007': 79
+        '2008': 75
+        '2009': 108
+        '2010': 116
+        '2011': 29
+        '2012': 18
 '40091':
   name: McIntosh County
   products:
@@ -869,30 +707,14 @@
       units: mcf
       volume:
         '2006': 29162
-        '2009': 29477
-        '2011': 28556
-        '2014': 18811
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 16417
-        '2014': 17880
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 15947
-        '2012': 11135
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2014': 15701
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
+        '2007': 29477
+        '2008': 28556
+        '2009': 18811
+        '2010': 16417
+        '2011': 17880
+        '2012': 15701
+        '2013': 15947
+        '2014': 11135
         '2015': 7889
 '40093':
   name: Major County
@@ -901,49 +723,30 @@
       name: Gas
       units: mcf
       volume:
-        '2006': 5946
-        '2009': 6738
-        '2011': 5964
-        '2014': 3773
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 3502
-        '2007': 149
-        '2014': 4003
+        '2006': 1308536
+        '2007': 1314566
+        '2008': 1424881
+        '2009': 1383044
+        '2010': 1155149
+        '2011': 1037890
+        '2012': 890085
+        '2013': 788554
+        '2014': 774545
+        '2015': 694735
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 890085
-        '2009': 2535
-        '2012': 3893
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 18511
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2010': 3863
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2014': 3506
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2014': 113
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2015': 694735
+        '2006': 38055
+        '2007': 48708
+        '2008': 56286
+        '2009': 46930
+        '2010': 39005
+        '2011': 34722
+        '2012': 32357
+        '2013': 26289
+        '2014': 23597
+        '2015': 18511
 '40109':
   name: Oklahoma County
   products:
@@ -952,38 +755,29 @@
       units: mcf
       volume:
         '2006': 1660
-        '2009': 1510
-        '2011': 1533
-        '2014': 1776
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 1308
-        '2007': 7
-        '2014': 1102
+        '2007': 1510
+        '2008': 1533
+        '2009': 1776
+        '2010': 1308
+        '2011': 1102
+        '2012': 1130
+        '2013': 1108
+        '2014': 1023
+        '2015': 1781
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 8
-        '2009': 1108
-        '2012': 1023
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2008': 1130
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2009': 9
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2013': 1781
+        '2006': 6
+        '2007': 7
+        '2008': 7
+        '2009': 7
+        '2010': 7
+        '2011': 7
+        '2012': 8
+        '2013': 5
+        '2014': 4
+        '2015': 9
 '40119':
   name: Payne County
   products:
@@ -992,38 +786,29 @@
       units: mcf
       volume:
         '2006': 10238
-        '2009': 5010
-        '2011': 23419
-        '2014': 12561
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 7876
-        '2007': 191
-        '2014': 5488
+        '2007': 5010
+        '2008': 23419
+        '2009': 12561
+        '2010': 7876
+        '2011': 5488
+        '2012': 5818
+        '2013': 4180
+        '2014': 28870
+        '2015': 12567
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 97
-        '2009': 4180
-        '2012': 28870
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 1346
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
-      volume:
-        '2012': 5818
-    Potash (tons):
-      name: Potash
-      units: tons
-      volume:
-        '2015': 12567
+        '2006': 341
+        '2007': 0
+        '2008': 311
+        '2009': 239
+        '2010': 191
+        '2011': 155
+        '2012': 97
+        '2013': 29
+        '2014': 6493
+        '2015': 1346
 '40121':
   name: Pittsburg County
   products:
@@ -1032,27 +817,15 @@
       units: mcf
       volume:
         '2006': 1176215
-        '2009': 1289534
-        '2011': 2157553
-        '2014': 2456844
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 1594975
-        '2009': 1390832
-        '2012': 1237052
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 2676168
-        '2014': 1869932
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2007': 1004713
+        '2007': 1289534
+        '2008': 2157553
+        '2009': 2456844
+        '2010': 2676168
+        '2011': 1869932
+        '2012': 1594975
+        '2013': 1390832
+        '2014': 1237052
+        '2015': 1004713
 '40129':
   name: Roger Mills County
   products:
@@ -1061,32 +834,29 @@
       units: mcf
       volume:
         '2006': 4782860
-        '2009': 4274962
-        '2011': 3703530
-        '2014': 3642607
+        '2007': 4274962
+        '2008': 3703530
+        '2009': 3642607
+        '2010': 3034560
+        '2011': 3375891
+        '2012': 5038381
+        '2013': 5440556
+        '2014': 5690278
+        '2015': 6829117
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 5038381
-        '2009': 5440556
-        '2012': 5690278
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 3034560
-        '2014': 3375891
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 292373
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2009': 6829117
+        '2006': 41391
+        '2007': 26623
+        '2008': 22563
+        '2009': 20214
+        '2010': 46004
+        '2011': 171432
+        '2012': 268922
+        '2013': 248513
+        '2014': 341593
+        '2015': 292373
 '40135':
   name: Sequoyah County
   products:
@@ -1095,27 +865,15 @@
       units: mcf
       volume:
         '2006': 31956
-        '2009': 31108
-        '2011': 33468
-        '2014': 31432
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 32026
-        '2014': 30965
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 28010
-        '2009': 18099
-        '2012': 26912
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2007': 26756
+        '2007': 31108
+        '2008': 33468
+        '2009': 31432
+        '2010': 32026
+        '2011': 30965
+        '2012': 28010
+        '2013': 18099
+        '2014': 26912
+        '2015': 26756
 '40139':
   name: Texas County
   products:
@@ -1124,62 +882,46 @@
       units: mcf
       volume:
         '2006': 258937
-        '2009': 218385
-        '2011': 211237
-        '2014': 182487
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 154064
-        '2007': 4022
-        '2014': 149086
+        '2007': 218385
+        '2008': 211237
+        '2009': 182487
+        '2010': 154064
+        '2011': 149086
+        '2012': 138061
+        '2013': 130044
+        '2014': 115191
+        '2015': 105286
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 138061
-        '2009': 130044
-        '2012': 115191
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 2226
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2014': 105286
+        '2006': 2063
+        '2007': 6711
+        '2008': 11547
+        '2009': 4399
+        '2010': 4022
+        '2011': 4004
+        '2012': 3176
+        '2013': 2905
+        '2014': 2621
+        '2015': 2226
 '40141':
   name: Tillman County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2006': 13844
-        '2009': 14805
-        '2011': 13096
-        '2014': 14161
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 17077
-        '2009': 15012
-        '2012': 15243
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 14854
-        '2014': 15977
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 14001
+        '2006': 13844
+        '2007': 14805
+        '2008': 13096
+        '2009': 14161
+        '2010': 14854
+        '2011': 15977
+        '2012': 17077
+        '2013': 15012
+        '2014': 15243
+        '2015': 14001
 '40149':
   name: Washita County
   products:
@@ -1188,32 +930,29 @@
       units: mcf
       volume:
         '2006': 6370
-        '2009': 6452
-        '2011': 44667
-        '2014': 1081625
+        '2007': 6452
+        '2008': 44667
+        '2009': 1081625
+        '2010': 1193421
+        '2011': 321291
+        '2012': 140471
+        '2013': 119977
+        '2014': 96498
+        '2015': 97670
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 140471
-        '2009': 119977
-        '2012': 96498
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 1193421
-        '2014': 321291
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2007': 1827
-    Potassium Products:
-      name: Potassium Products
-      units: null
-      volume:
-        '2013': 97670
+        '2006': 239
+        '2007': 215
+        '2008': 3012
+        '2009': 49179
+        '2010': 21186
+        '2011': 3617
+        '2012': 1968
+        '2013': 1895
+        '2014': 1372
+        '2015': 1827
 '40151':
   name: Woods County
   products:
@@ -1222,33 +961,29 @@
       units: mcf
       volume:
         '2006': 1246843
-        '2009': 1458945
-        '2011': 1412311
-        '2014': 1236954
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 1122902
-        '2007': 22925
-        '2014': 1017173
+        '2007': 1458945
+        '2008': 1412311
+        '2009': 1236954
+        '2010': 1122902
+        '2011': 1017173
+        '2012': 945533
+        '2013': 989722
+        '2014': 951114
+        '2015': 828532
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 945533
-        '2009': 989722
-        '2012': 951114
-    Quartz Crystal (tickets/pounds):
-      name: Quartz Crystal
-      units: tickets/pounds
-      volume:
-        '2006': 828532
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2008': 35420
+        '2006': 15995
+        '2007': 22092
+        '2008': 22833
+        '2009': 28306
+        '2010': 22925
+        '2011': 19314
+        '2012': 30159
+        '2013': 55619
+        '2014': 44585
+        '2015': 35420
 '40153':
   name: Woodward County
   products:
@@ -1257,30 +992,26 @@
       units: mcf
       volume:
         '2006': 554613
-        '2009': 736563
-        '2011': 968736
-        '2014': 736795
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2006': 558171
-        '2007': 2199
-        '2014': 460244
+        '2007': 736563
+        '2008': 968736
+        '2009': 736795
+        '2010': 558171
+        '2011': 460244
+        '2012': 390686
+        '2013': 333868
+        '2014': 303322
+        '2015': 255427
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2006': 390686
-        '2009': 333868
-        '2012': 303322
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006': 1128
-    Purge Liquor:
-      name: Purge Liquor
-      units: null
-      volume:
-        '2011': 255427
+        '2006': 3148
+        '2007': 3398
+        '2008': 3489
+        '2009': 2640
+        '2010': 2199
+        '2011': 1908
+        '2012': 1639
+        '2013': 1352
+        '2014': 1402
+        '2015': 1128

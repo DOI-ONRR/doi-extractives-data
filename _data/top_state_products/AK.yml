@@ -106,56 +106,85 @@ all_production:
       percent: 10.89
 federal_production:
   '2006':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 39875346
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 14711534
-      rank: 1
-      percent: 0
-  '2007':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 343676
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 37140761
+      value: 39875346
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 36868361
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 34102133
       rank: 1
       percent: 0
   '2009':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 34331662
+      value: 28155124
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 14295839
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 22767536
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 14054084
       rank: 1
       percent: 0
   '2012':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 28358244
+      value: 14393798
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13577140
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15433070
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 894025
       rank: 1
       percent: 0
   '2015':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 23004699
+      value: 14188599
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 958054
       rank: 1
       percent: 0
 revenue:

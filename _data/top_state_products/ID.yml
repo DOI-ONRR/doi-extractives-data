@@ -82,57 +82,73 @@ revenue:
       rank: 3
       percent: 4.63
 federal_production:
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2324385
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2424258
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 4467766
-      rank: 1
-      percent: 0
-  '2011':
-    - product: Coal (tons)
-      name: Coal
+  '2006':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
       units: tons
       value: 2381392
       rank: 1
+      percent: 100
+  '2007':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 2324385
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 2424258
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 3423741
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 3523585
+      rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
       value: 4690032
       rank: 1
       percent: 0
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4467766
+      rank: 1
+      percent: 0
   '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 3423741
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4960123
       rank: 1
       percent: 0
   '2014':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 4903855
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 5777094
       rank: 1
-      percent: 0
+      percent: 100
   '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 3523585
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4903855
       rank: 1
       percent: 0

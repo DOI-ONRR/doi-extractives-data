@@ -1,709 +1,799 @@
 '56001':
   name: Albany County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 23054
-        '2010': 22152
-        '2013': 22817
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 6695
-        '2009': 4753
-        '2012': 6606
-        '2014': 14975
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 6695
+        '2007': 4753
+        '2008': 6606
+        '2009': 14975
+        '2010': 19843
+        '2011': 24375
+        '2012': 23054
+        '2013': 22152
+        '2014': 22817
+        '2015': 22939
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2008': 19843
-        '2009': 27416
-        '2015': 24375
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2010': 12842
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2011': 22939
+        '2006': 37653
+        '2007': 31544
+        '2008': 19808
+        '2009': 25855
+        '2010': 27416
+        '2011': 27647
+        '2012': 28096
+        '2013': 17574
+        '2014': 17812
+        '2015': 12842
 '56003':
   name: Big Horn County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 1680116
-        '2010': 1537550
-        '2013': 1411250
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006': 1348316
-        '2012': 555280
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 2758062
-        '2009': 2356639
-        '2012': 2344632
-        '2014': 2216935
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 2758062
+        '2007': 2356639
+        '2008': 2344632
+        '2009': 2216935
+        '2010': 2003667
+        '2011': 1864315
+        '2012': 1680116
+        '2013': 1537550
+        '2014': 1411250
+        '2015': 1348316
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2009': 2003667
-        '2015': 1864315
+        '2006': 812267
+        '2007': 759656
+        '2008': 721055
+        '2009': 699357
+        '2010': 657409
+        '2011': 619936
+        '2012': 612564
+        '2013': 580417
+        '2014': 570491
+        '2015': 555280
 '56005':
   name: Campbell County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 316944576
-        '2010': 300698720
-        '2013': 306733811
-    Trona Ore (tons):
-      name: Trona Ore
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2006': 281721675
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006': 797331
-        '2008': 55289802
-        '2011': 20404
-        '2014': 11225199
+        '2006': 351373163
+        '2007': 360352214
+        '2008': 387199798
+        '2009': 358852747
+        '2010': 365023675
+        '2011': 357071833
+        '2012': 316944576
+        '2013': 300698720
+        '2014': 306733811
+        '2015': 281721675
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 351373163
-        '2009': 360352214
-        '2012': 387199798
-        '2014': 358852747
-        '2015': 3621890
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 94879140
+        '2007': 90257290
+        '2008': 86896506
+        '2009': 79320855
+        '2010': 81904552
+        '2011': 82447253
+        '2012': 72971564
+        '2013': 62995014
+        '2014': 58928101
+        '2015': 55289802
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2008': 365023675
-        '2009': 712665
-        '2015': 357071833
+        '2006': 4679885
+        '2007': 4311758
+        '2008': 3970615
+        '2009': 3621890
+        '2010': 3852320
+        '2011': 3916564
+        '2012': 3984906
+        '2013': 4999216
+        '2014': 8026003
+        '2015': 11225199
 '56007':
   name: Carbon County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': null
-        '2010': 229632
-        '2013': 195109
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 85243
-        '2009': null
-        '2012': null
-        '2014': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 66662492
+        '2007': 69558950
+        '2008': 74266799
+        '2009': 76583340
+        '2010': 75151307
+        '2011': 70843841
+        '2012': 62818774
+        '2013': 61235475
+        '2014': 59964153
+        '2015': 53750003
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
+        '2006': 1078841
+        '2007': 1177964
+        '2008': 977621
+        '2009': 963389
+        '2010': 803399
+        '2011': 831755
+        '2012': 814916
+        '2013': 733661
+        '2014': 744609
+        '2015': 649549
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': null
         '2008': null
-        '2009': 75151307
-        '2015': 320911
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2008': 53750003
-        '2009': 1746
-        '2013': 649549
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2014': 189116
+        '2009': null
+        '2010': null
+        '2012': null
 '56009':
   name: Converse County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2006': 32480454
-        '2010': 27707014
-        '2013': 29704239
+        '2006': 15510275
+        '2007': 20820403
+        '2008': 27570841
+        '2009': 27310525
+        '2010': 30063941
+        '2011': 30150938
+        '2012': 32480454
+        '2013': 27707014
+        '2014': 29704239
+        '2015': 28939146
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 15510275
-        '2009': 20820403
-        '2012': 27570841
-        '2014': 27310525
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 7436405
+        '2007': 6429860
+        '2008': 5707465
+        '2009': 4941456
+        '2010': 4549619
+        '2011': 4677303
+        '2012': 5851242
+        '2013': 6728510
+        '2014': 7557991
+        '2015': 11920597
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 11920597
-        '2014': 5239067
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 30063941
-        '2009': 4549619
-        '2015': 30150938
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
-      units: tons
-      volume:
-        '2015': 28939146
+        '2006': 1073556
+        '2007': 1007539
+        '2008': 984778
+        '2009': 1047869
+        '2010': 1303300
+        '2011': 1683184
+        '2012': 2198988
+        '2013': 2602053
+        '2014': 3282673
+        '2015': 5479884
 '56011':
   name: Crook County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 32916
-        '2010': 26724
-        '2013': 25466
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 41521
-        '2009': 28144
-        '2012': 33157
-        '2014': 31751
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 41521
+        '2007': 28144
+        '2008': 33157
+        '2009': 31751
+        '2010': 35925
+        '2011': 34653
+        '2012': 32916
+        '2013': 26724
+        '2014': 25466
+        '2015': 27093
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2008': 35925
-        '2009': 714802
-        '2015': 34653
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2010': 9930
-        '2012': 581922
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2012': 27093
+        '2006': 820899
+        '2007': 788050
+        '2008': 735722
+        '2009': 696143
+        '2010': 714802
+        '2011': 684167
+        '2012': 750935
+        '2013': 681196
+        '2014': 614809
+        '2015': 581922
 '56013':
   name: Fremont County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 101400197
-        '2010': 98786812
-        '2013': 94322953
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 97225
-        '2009': 12354
-        '2012': 30391
-        '2014': 6399
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 133247209
+        '2007': 113627477
+        '2008': 92597831
+        '2009': 113009895
+        '2010': 101795036
+        '2011': 110005523
+        '2012': 101400197
+        '2013': 98786812
+        '2014': 94322953
+        '2015': 95746440
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2008': 95746440
-        '2009': 1902
-        '2013': 961281
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 101795036
-        '2015': 110005523
+        '2006': 543419
+        '2007': 553736
+        '2008': 654885
+        '2009': 689150
+        '2010': 840807
+        '2011': 895513
+        '2012': 1051390
+        '2013': 918969
+        '2014': 792508
+        '2015': 961281
 '56017':
   name: Hot Springs County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 237310
-        '2010': 233883
-        '2013': 208782
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 282825
-        '2009': 437931
-        '2012': 546986
-        '2014': 385396
-        '2015': 2263120
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 253820
-        '2009': 2195105
-        '2015': 287667
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2009': 1877
-        '2013': 1736135
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
+        '2006': 282825
+        '2007': 437931
+        '2008': 546986
+        '2009': 385396
+        '2010': 253820
+        '2011': 287667
+        '2012': 237310
+        '2013': 233883
+        '2014': 208782
         '2015': 197516
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 2493318
+        '2007': 2446664
+        '2008': 2462560
+        '2009': 2263120
+        '2010': 2195105
+        '2011': 2082970
+        '2012': 2014471
+        '2013': 1944827
+        '2014': 1879078
+        '2015': 1736135
 '56019':
   name: Johnson County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 28421012
-        '2010': 22799473
-        '2013': 16124055
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 1415486
-        '2009': 709603
-        '2012': 615328
-        '2014': 2689458
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 76834990
+        '2007': 141544310
+        '2008': 233080557
+        '2009': 277758430
+        '2010': 266625548
+        '2011': 227502769
+        '2012': 186236045
+        '2013': 145258143
+        '2014': 118445128
+        '2015': 94494177
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 10668066
-        '2008': 94494177
-        '2011': 31684
-        '2013': 1168068
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 12337533
-        '2015': 23800667
+        '2006': 973496
+        '2007': 906453
+        '2008': 902798
+        '2009': 854554
+        '2010': 796012
+        '2011': 729991
+        '2012': 798136
+        '2013': 1243058
+        '2014': 1322298
+        '2015': 1168068
 '56021':
   name: Laramie County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 3215
-        '2010': 4715
-        '2013': 2965
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 3046
-        '2009': 2963
-        '2012': 2886
-        '2014': 3075
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 3046
+        '2007': 2963
+        '2008': 2886
+        '2009': 3075
+        '2010': 2753
+        '2011': 2611
+        '2012': 3215
+        '2013': 4715
+        '2014': 2965
+        '2015': 3364
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2008': 2753
-        '2009': 16072
-        '2015': 2611
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2009': 3364
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2010': 11712
+        '2006': 21103
+        '2007': 19494
+        '2008': 18238
+        '2009': 16816
+        '2010': 16072
+        '2011': 14593
+        '2012': 15250
+        '2013': 15473
+        '2014': 12917
+        '2015': 11712
 '56023':
   name: Lincoln County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
         '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
         '2010': null
+        '2011': null
+        '2012': null
         '2013': null
+        '2014': null
+        '2015': null
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': null
-        '2009': null
-        '2012': null
-        '2014': null
-        '2015': null
-    Trona Ore (tons):
-      name: Trona Ore
+        '2006': 63618481
+        '2007': 65728542
+        '2008': 60650175
+        '2009': 56285736
+        '2010': 52072716
+        '2011': 44995291
+        '2012': 42808007
+        '2013': 37532908
+        '2014': 35050161
+        '2015': 33022542
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 466540
+        '2007': 485378
+        '2008': 447447
+        '2009': 451405
+        '2010': 393044
+        '2011': 327598
+        '2012': 310916
+        '2013': 278532
+        '2014': 262695
+        '2015': 244114
+    Salt (tons):
+      name: Salt
       units: tons
       volume:
+        '2006': null
         '2007': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
         '2008': null
-        '2009': 753476
-        '2015': 1185249
-    Wavellite (tons):
-      name: Wavellite
-      units: tons
-      volume:
-        '2008': 272288
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2008': 33022542
-        '2009': 1862
-        '2011': 244114
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
         '2015': null
 '56025':
   name: Natrona County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 21701746
-        '2010': 16099755
-        '2013': 51875
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 57622
-        '2009': 2956
-        '2012': 13955
-        '2014': 25845850
-        '2015': 4426241
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 33358332
+        '2007': 25218678
+        '2008': 26914256
+        '2009': 25845850
+        '2010': 26125155
+        '2011': 22648517
+        '2012': 21701746
+        '2013': 16099755
+        '2014': 14658823
+        '2015': 12203342
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 12203342
-        '2014': 5156519
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 26125155
-        '2015': 22648517
+        '2006': 3466177
+        '2007': 3807087
+        '2008': 4127924
+        '2009': 4426241
+        '2010': 5151081
+        '2011': 5117686
+        '2012': 4628546
+        '2013': 5251006
+        '2014': 5440269
+        '2015': 5156519
 '56027':
   name: Niobrara County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 20805
-        '2010': 67863
-        '2013': 174724
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006': 462419
-        '2011': 63156
-        '2012': 514637
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 360138
-        '2009': 762637
-        '2012': 737725
-        '2014': 704655
-    Wavellite (tons):
-      name: Wavellite
-      units: tons
+        '2006': 360138
+        '2007': 762637
+        '2008': 737725
+        '2009': 704655
+        '2010': 695634
+        '2011': 597963
+        '2012': 524354
+        '2013': 413049
+        '2014': 403665
+        '2015': 462419
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 214740
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 695634
-        '2009': 335097
-        '2015': 597963
+        '2006': 316898
+        '2007': 296956
+        '2008': 298208
+        '2009': 287695
+        '2010': 335097
+        '2011': 422059
+        '2012': 464121
+        '2013': 459213
+        '2014': 577816
+        '2015': 514637
 '56029':
   name: Park County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 6716
-        '2010': 3839
-        '2013': 5392
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 7872
-        '2009': 5480
-        '2012': 110719
-        '2014': 51727
-        '2015': 4794941
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 9234694
+        '2007': 7955061
+        '2008': 7401805
+        '2009': 6350335
+        '2010': 6165721
+        '2011': 5668489
+        '2012': 5605861
+        '2013': 5480076
+        '2014': 5727696
+        '2015': 4930536
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 4930536
-        '2011': 91966
-        '2014': 3850388
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 38676
-        '2009': 6165721
-        '2015': 24726
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2013': 43145
+        '2006': 5455510
+        '2007': 5450279
+        '2008': 5168488
+        '2009': 4794941
+        '2010': 4622797
+        '2011': 4395661
+        '2012': 4439288
+        '2013': 4293260
+        '2014': 4196774
+        '2015': 3850388
 '56033':
   name: Sheridan County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 5977209
-        '2010': 4266014
-        '2013': 2532569
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 518
-        '2009': 2613
-        '2012': 8004
-        '2014': 5152
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
+        '2006': 8135262
+        '2007': 9575675
+        '2008': 12336425
+        '2009': 10858169
+        '2010': 9178420
+        '2011': 7041662
+        '2012': 5977209
+        '2013': 4266014
+        '2014': 2532569
+        '2015': 1610320
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2007': 1610320
-        '2010': 9307
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 1986
-        '2009': 9178420
-        '2015': 7041662
+        '2006': 3044
+        '2007': 5132
+        '2008': 8311
+        '2009': 7238
+        '2010': 7658
+        '2011': 5885
+        '2012': 4902
+        '2013': 4150
+        '2014': 9257
+        '2015': 9307
 '56035':
   name: Sublette County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 940837
-        '2010': 23715
-        '2013': 232328
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 2265061
-        '2009': 148659
-        '2012': 1892986
-        '2014': 2830710
-        '2015': 7291198
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 799778063
+        '2007': 938554219
+        '2008': 1053727709
+        '2009': 1097658062
+        '2010': 1111751094
+        '2011': 1054661518
+        '2012': 999179120
+        '2013': 923506613
+        '2014': 930191610
+        '2015': 980809441
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2009': 1394288
-        '2015': 36074
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2009': 980809441
-        '2014': 6454406
-    Trona Ore (tons):
-      name: Trona Ore
-      units: tons
-      volume:
-        '2010': 22681
+        '2006': 5365619
+        '2007': 6545441
+        '2008': 7001844
+        '2009': 7291198
+        '2010': 7039985
+        '2011': 6786134
+        '2012': 6327170
+        '2013': 5782508
+        '2014': 5817849
+        '2015': 6454406
 '56037':
   name: Sweetwater County
   products:
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2006': 5705147
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 3886834
-        '2010': 3123934
-        '2013': 3611250
+        '2006': 2972629
+        '2007': 3029163
+        '2008': 2186850
+        '2009': 1583464
+        '2010': 2448074
+        '2011': 2889839
+        '2012': 3886834
+        '2013': 3123934
+        '2014': 3611250
+        '2015': 3129272
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 2972629
-        '2009': 3029163
-        '2012': 2186850
-        '2014': 1583464
-        '2015': 2376449
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
+        '2006': 129312540
+        '2007': 132659248
+        '2008': 138808005
+        '2009': 130297615
+        '2010': 133962154
+        '2011': 133375276
+        '2012': 145580662
+        '2013': 140767937
+        '2014': 131973602
+        '2015': 120729330
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 2312041
+        '2007': 2725898
+        '2008': 2479630
+        '2009': 2376449
+        '2010': 2319632
+        '2011': 2550258
+        '2012': 2718976
+        '2013': 2604691
+        '2014': 2573391
+        '2015': 2519607
+    Purge Liquor (tons - equivalent):
+      name: Purge Liquor
+      units: tons - equivalent
+      volume:
+        '2006': 69814
+        '2007': 97711
+        '2008': 116333
+        '2009': 118021
+        '2010': 104405
+        '2011': 88412
+        '2012': 73596
+        '2013': 88213
+        '2014': 91878
+        '2015': 95877
+    Soda Ash (tons):
+      name: Soda Ash
       units: tons
       volume:
-        '2007': 9532253
-        '2008': 120729330
-        '2011': 195447
-        '2013': 2519607
-        '2014': 95877
+        '2006': 4755332
+        '2007': 5662599
+        '2008': 7069757
+        '2009': 5545300
+        '2010': 4990309
+        '2011': 5705147
+        '2012': 4740200
+        '2013': 5232597
+        '2014': 6075994
         '2015': 4863569
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 2448074
-        '2009': 133962154
-        '2015': 2889839
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
       units: tons
       volume:
-        '2014': 3129272
-'56041':
-  name: Uinta County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 50911
-        '2010': 40154
-        '2013': 40362720
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007': 55004673
-        '2009': 51402104
-        '2012': 75780
-        '2014': 81511
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2008': 63795
-        '2009': 48061813
-        '2015': 56330
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': 46904
+        '2011': 34297
+        '2012': 69262
+        '2013': 71539
+        '2014': 107022
+        '2015': 70079
+    Sodium Bisulfite (tons):
+      name: Sodium Bisulfite
       units: tons
       volume:
-        '2008': 38515869
-        '2012': 395286
-'56043':
-  name: Washakie County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 658228
-        '2010': 616977
-        '2013': 613405
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+    Sodium Decahydrate (tons):
+      name: Sodium Decahydrate
       units: tons
       volume:
-        '2006': 598042
-        '2010': 4065
-        '2012': 502853
-    Gas (mcf):
-      name: Gas
-      units: mcf
+        '2006': null
+    Sodium Sesquicarbonate (tons):
+      name: Sodium Sesquicarbonate
+      units: tons
       volume:
-        '2007': 1125697
-        '2009': 974734
-        '2012': 860847
-        '2014': 781321
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': 121115
+        '2014': null
+        '2015': null
+    Sulfide (tons):
+      name: Sulfide
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
     Trona Ore (tons):
       name: Trona Ore
       units: tons
       volume:
-        '2008': 281
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 740440
-        '2015': 669663
-'56045':
-  name: Weston County
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': 139689
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+'56041':
+  name: Uinta County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 944061
-        '2010': 917196
-        '2013': 829713
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006': 735232
-        '2009': 1723
-        '2011': 324713
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 1144514
-        '2009': 1139036
-        '2012': 922686
-        '2014': 985422
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 55004673
+        '2007': 51402104
+        '2008': 51307129
+        '2009': 44643162
+        '2010': 48061813
+        '2011': 43421322
+        '2012': 43972515
+        '2013': 41630416
+        '2014': 40362720
+        '2015': 38515869
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2009': 999872
-        '2015': 911991
+        '2006': 721474
+        '2007': 592729
+        '2008': 567408
+        '2009': 474798
+        '2010': 459328
+        '2011': 456433
+        '2012': 482711
+        '2013': 456723
+        '2014': 440652
+        '2015': 395286
+'56043':
+  name: Washakie County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 1125697
+        '2007': 974734
+        '2008': 860847
+        '2009': 781321
+        '2010': 740440
+        '2011': 669663
+        '2012': 658228
+        '2013': 616977
+        '2014': 613405
+        '2015': 598042
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 615095
+        '2007': 605412
+        '2008': 562648
+        '2009': 495574
+        '2010': 502099
+        '2011': 462412
+        '2012': 486778
+        '2013': 502900
+        '2014': 545161
+        '2015': 502853
+'56045':
+  name: Weston County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 1144514
+        '2007': 1139036
+        '2008': 922686
+        '2009': 985422
+        '2010': 999872
+        '2011': 911991
+        '2012': 944061
+        '2013': 917196
+        '2014': 829713
+        '2015': 735232
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 545705
+        '2007': 511309
+        '2008': 464548
+        '2009': 423461
+        '2010': 393593
+        '2011': 363131
+        '2012': 350184
+        '2013': 328033
+        '2014': 341402
+        '2015': 324713

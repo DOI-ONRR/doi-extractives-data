@@ -137,167 +137,144 @@ revenue:
       percent: null
 federal_production:
   '2006':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18072165
+      rank: 1
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 3207610
+      value: 36278425
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18777497
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 38636643
       rank: 1
       percent: 0
   '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 19316074
+      rank: 1
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 62062879
+      value: 39448812
       rank: 1
       percent: 0
   '2009':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 18072573
+      value: 17319320
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 36983711
       rank: 1
       percent: 0
   '2010':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 72036
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 516748
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 19502672
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
       value: 17741873
       rank: 1
       percent: 0
-  '2011':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 741419
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 25856
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 43511634
+      value: 31098740
       rank: 1
       percent: 0
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 2866049
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 34437449
-      rank: 2
-      percent: 5.75
-  '2012':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
+  '2011':
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 8320981
+      value: 17214337
       rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 474922
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25105364
       rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 42319757
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16004122
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18259544
       rank: 1
       percent: 0
   '2013':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 27153741
+      value: 16480119
       rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 30598004
-      rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 58195947
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 3348409
+      value: 15751371
       rank: 1
       percent: 0
   '2014':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 109323
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 150120
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 16009621
+      value: 15703781
       rank: 1
       percent: 0
-  '2015':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 1292118
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 18277362
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 3468398
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15041899
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 31614436
+      value: 3691769
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 14477637
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13773524
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 3363275
       rank: 1
       percent: 0

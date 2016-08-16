@@ -70,59 +70,74 @@ revenue:
       rank: 3
       percent: 0.08
 federal_production:
-  '2007':
+  '2006':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 245906
       rank: 1
       percent: 0
-  '2008':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 189294
-      rank: 1
-      percent: 0
-  '2009':
-    - product: Sodium Sesquicarbonate (tons)
-      name: Sodium Sesquicarbonate
-      units: tons
-      value: 16304
-      rank: 1
-      percent: 100
+  '2007':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 208358
       rank: 1
       percent: 0
-  '2010':
-    - product: Sodium Sesquicarbonate (tons)
-      name: Sodium Sesquicarbonate
-      units: tons
-      value: 113778
-      rank: 1
-      percent: 100
-  '2012':
+  '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 211002
       rank: 1
       percent: 0
-  '2014':
+  '2009':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 198315
       rank: 1
       percent: 0
-  '2015':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 189294
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
       value: 181632
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 173949
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 162733
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 149379
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 130082
       rank: 1
       percent: 0
 all_production:

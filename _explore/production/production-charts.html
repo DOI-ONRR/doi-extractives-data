@@ -92,61 +92,61 @@ permalink: /explore/production-charts/
 $(document).ready(function(){
 
   var category = [
-      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}
-      ,{"color": "#6CBCE3", "cat":"Energierohstoffe"}
+      {"color": "#84AD42", "cat":"{% t 'chart.category.industrial-minerals' %}"}
+      ,{"color": "#6CBCE3", "cat":"{% t 'chart.category.energy-resources' %}"}
     ];
 
   var jsonData = [
-      {"Label": "Naturwerksteine", "Value": 57, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "REA-Gips", "Value": 60, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Quarzsand", "Value": 205, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Kaolin", "Value": 513, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Steinsalz und Industriesole", "Value": 551, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Kalk-,Mergel- und Dolomitstein", "Value": 556, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Steinkohle", "Value": 557, "cat":"Energierohstoffe","unit":"Mio. €"}
-      ,{"Label": "Kalisalz", "Value": 795, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Erdöl", "Value": 1353, "cat":"Energierohstoffe","unit":"Mio. €"}
-      ,{"Label": "Schwefel", "Value": 79, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Spezialtone", "Value": 162, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Torf", "Value": 182, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "gebrochene Natursteine", "Value": 1467, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Bausande und -kiese", "Value": 1502, "cat":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
-      ,{"Label": "Braunkohle", "Value": 2484, "cat":"Energierohstoffe","unit":"Mio. €"}
-      ,{"Label": "Erdgas", "Value": 2787, "cat":"Energierohstoffe","unit":"Mio. €"}
+      {"Label": "{% t 'chart.lable.natural-stones' %}", "Value": 57, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.gypsum' %}", "Value": 60, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.quartz-sand' %}", "Value": 205, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.kaolin' %}", "Value": 513, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.rock-salt-and-industrial-salt' %}", "Value": 551, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.limestone-marl-and-dolomite' %}", "Value": 556, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.hard-coal' %}", "Value": 557, "cat":"{% t 'chart.category.energy-resources' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.potash' %}", "Value": 795, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.oil' %}", "Value": 1353, "cat":"{% t 'chart.category.energy-resources' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.sulfur' %}", "Value": 79, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.Specialtone' %}", "Value": 162, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.peat' %}", "Value": 182, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.broken-natural-stones' %}", "Value": 1467, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.construction-sands-and-gravels' %}", "Value": 1502, "cat":"{% t 'chart.category.industrial-minerals' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.lignite' %}", "Value": 2484, "cat":"{% t 'chart.category.energy-resources' %}","unit":"Mio. €"}
+      ,{"Label": "{% t 'chart.lable.natural-gas' %}", "Value": 2787, "cat":"{% t 'chart.category.energy-resources' %}","unit":"Mio. €"}
     ];
 
   var category1 = [
-      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}
-      ,{"color": "#D54D35", "cat":"Metallrohstoffe"}
-      ,{"color": "#6CBCE3", "cat":"Energierohstoffe"}
+      {"color": "#84AD42", "cat":"{% t 'chart.category1.industrial-minerals' %}"}
+      ,{"color": "#D54D35", "cat":"{% t 'chart.category1.metal-raw-materials' %}"}
+      ,{"color": "#6CBCE3", "cat":"{% t 'chart.category1.energy-resources' %}"}
     ];
   var jsonData1 = [
- 	    {"Label": "Bausande und -kiese", "Value": 238000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "gebrochene Natursteine", "Value": 211000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Braunkohle", "Value": 178178, "cat":"Energierohstoffe", "unit": "(kt)"}
-      ,{"Label": "Kalk-,Mergel- und Dolomitstein", "Value": 64000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Steinsalz und Industriesole", "Value": 13064, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Quarzsand", "Value": 10400, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Erdgas", "Value": 10060, "cat":"Energierohstoffe", "unit": "Mio. m3"}
-      ,{"Label": "Steinkohle", "Value": 7640, "cat":"Energierohstoffe", "unit": "(kt)"}
-      ,{"Label": "REA-Gips", "Value": 7000, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Spezialtone", "Value": 6754, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Torf", "Value": 5759, "cat":"Industrieminerale, Steine und Erden", "unit": "(1000 m3)"}
-      ,{"Label": "Kaolin", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Gips- und Anhydristein", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Kallsalz (K2O)", "Value": 3127, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Erdöl", "Value": 2430, "cat":"Energierohstoffe", "unit": "(kt)"}
-      ,{"Label": "Schwefel", "Value": 708, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Naturwerksteine", "Value": 495, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Eisenerz", "Value": 456, "cat":"Metallrohstoffe", "unit": "(kt)"}
-      ,{"Label": "Bentonit", "Value": 395, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Feldspar", "Value": 350, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Siedesalz", "Value": 274, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Baryt", "Value": 71, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Erdölgas", "Value": 67, "cat":"Energierohstoffe", "unit": "(kt)"}
-      ,{"Label": "Kieselerde", "Value": 54, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Fluorit", "Value": 35, "cat":"Industrieminerale, Steine und Erden", "unit": "(kt)"}
-      ,{"Label": "Metalle", "Value": 0.1, "cat":"Metallrohstoffe", "unit": "(kt)"}
+ 	    {"Label": "{% t 'chart.lable.construction-sands-and-gravels' %}", "Value": 238000, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.broken-natural-stones' %}", "Value": 211000, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.lignite' %}", "Value": 178178, "cat":"{% t 'chart.category1.energy-resources' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.limestone-marl-and-dolomite' %}", "Value": 64000, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.rock-salt-and-industrial-salt' %}", "Value": 13064, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.quartz-sand' %}", "Value": 10400, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.natural-gas' %}", "Value": 10060, "cat":"{% t 'chart.category1.energy-resources' %}", "unit": "Mio. m3"}
+      ,{"Label": "{% t 'chart.lable.hard-coal' %}", "Value": 7640, "cat":"{% t 'chart.category1.energy-resources' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.gypsum' %}", "Value": 7000, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.Specialtone' %}", "Value": 6754, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.peat' %}", "Value": 5759, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(1000 m3)"}
+      ,{"Label": "{% t 'chart.lable.kaolin' %}", "Value": 4090, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.gypsum-and-anhydrite-stone' %}", "Value": 4090, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.kallsalz' %}", "Value": 3127, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.oil' %}", "Value": 2430, "cat":"{% t 'chart.category1.energy-resources' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.sulfur' %}", "Value": 708, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.natural-stones' %}", "Value": 495, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.iron-ore' %}", "Value": 456, "cat":"{% t 'chart.category1.metal-raw-materials' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.bentonite' %}", "Value": 395, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.feldspar' %}", "Value": 350, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.siedesalz' %}", "Value": 274, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.barite' %}", "Value": 71, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.natural-ol-gas' %}", "Value": 67, "cat":"{% t 'chart.category1.energy-resources' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.silica' %}", "Value": 54, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.fluorite' %}", "Value": 35, "cat":"{% t 'chart.category1.industrial-minerals' %}", "unit": "(kt)"}
+      ,{"Label": "{% t 'chart.lable.metals' %}", "Value": 0.1, "cat":"{% t 'chart.category1.metal-raw-materials' %}", "unit": "(kt)"}
     ];
 
   function orderData(prop){
@@ -239,7 +239,7 @@ $(document).ready(function(){
         ticks.push(entry['Label']);
     });
     legendTable("legend1",category);
-    plotGraph('chart1',dataSlices,colors,'Wert der in Deutschland produzierten Rohstoffe',ticks,jsonData)
+    plotGraph('chart1',dataSlices,colors,'{% t 'chart.chart-1-tittle' %}',ticks,jsonData)
 /* end First Graph */
 
 /* Start Second Graph */
@@ -260,7 +260,7 @@ $(document).ready(function(){
         ticks1.push(entry['Label']);
     });
     legendTable("legend2",category1);
-    plotGraph('chart2',dataSlices1,colors1,'Menge der in Deutschland produzierten Rohstoffe',ticks1,jsonData1)
+    plotGraph('chart2',dataSlices1,colors1,'{% t 'chart.chart-2-tittle' %}',ticks1,jsonData1)
 });
 /* end Second Graph */
 

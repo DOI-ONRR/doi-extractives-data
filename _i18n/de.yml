@@ -117,3 +117,42 @@ data:
     description-2: Download der Produktionsdaten
     production-icon: Siehe Anhang
     chart-icon: Full dataset
+
+chart:
+  category:
+    industrial-minerals: Industrieminerale, Steine und Erden
+    energy-resources: Energierohstoffe
+  category1:
+    industrial-minerals: Industrieminerale, Steine und Erden
+    metal-raw-materials: Metallrohstoffe
+    energy-resources: Energierohstoffe
+  lable:
+    natural-stones: Naturwerksteine
+    gypsum: REA-Gips
+    quartz-sand: Quarzsand
+    kaolin: Kaolin
+    rock-salt-and-industrial-salt: Steinsalz und Industriesole
+    limestone-marl-and-dolomite: Kalk-,Mergel- und Dolomitstein
+    hard-coal: Steinkohle
+    potash: Kalisalz
+    oil: Erdöl
+    sulfur: Schwefel
+    Specialtone: Spezialtone
+    peat: Torf
+    broken-natural-stones: gebrochene Natursteine
+    construction-sands-and-gravels: Bausande und -kiese
+    lignite: Braunkohle
+    natural-gas: Erdgas
+    gypsum-and-anhydrite-stone: Gips- und Anhydristein
+    kallsalz: Kallsalz (K2O)
+    iron-ore: Eisenerz
+    bentonite: Bentonit
+    feldspar: Feldspar
+    siedesalz: Siedesalz
+    barite: Baryt
+    natural-ol-gas: Erdölgas
+    silica: Kieselerde
+    fluorite: Fluorit
+    metals: Metalle
+  chart-1-tittle: Wert der in Deutschland produzierten Rohstoffe
+  chart-2-tittle: Menge der in Deutschland produzierten Rohstoffe

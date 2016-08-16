@@ -1,3 +1,83 @@
+federal_production:
+  '2006':
+    - product: Limestone (tons)
+      name: Limestone
+      units: tons
+      value: 12421
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13507
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 44672
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Limestone (tons)
+      name: Limestone
+      units: tons
+      value: 27715
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12690
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 7648
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 11162
+      rank: 1
+      percent: 0
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 9207
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Leonardite (tons)
+      name: Leonardite
+      units: tons
+      value: 96
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13790
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 61683
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Leonardite (tons)
+      name: Leonardite
+      units: tons
+      value: 3672
+      rank: 1
+      percent: 100
 all_production:
   '2008':
     - product: Conventional Hydroelectric

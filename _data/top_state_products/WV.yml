@@ -69,3 +69,85 @@ all_production:
       value: 112187373
       rank: 2
       percent: 11.24
+federal_production:
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 574301
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 885
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 379416
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 18783
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 519848
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 19115
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 25187
+      rank: 1
+      percent: 100
+  '2012':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 36585
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 596923
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Sylvite-Raw Ore (tons)
+      name: Sylvite-Raw Ore
+      units: tons
+      value: 52632
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 467861
+      rank: 1
+      percent: 0
+  '2015':
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 432486
+      rank: 1
+      percent: 0

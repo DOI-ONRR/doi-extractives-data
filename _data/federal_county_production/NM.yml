@@ -1,62 +1,82 @@
 '35001':
   name: Bernalillo County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 417
-        '2007': 25855
-        '2008': 16115
-        '2009': 11301
-        '2010': 10416
-        '2011': 6804
-        '2012': 6933
-        '2013': 5337
-        '2014': 4477
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': 35568
-        '2008': 68657
-        '2009': 42401
-        '2010': 31832
-        '2011': 17742
-        '2012': 14113
-        '2013': 14676
-        '2014': 14355
+        '2006': 417
+        '2008': 35568
+        '2011': 68657
+        '2013': 42401
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 14676
+        '2011': 14355
+        '2012': 4477
+        '2015': 7395
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 31832
+        '2010': 10416
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2012': 6933
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 17742
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 14113
 '35005':
   name: Chaves County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 1872
-        '2006': 2007
-        '2007': 1349
-        '2008': 1582
-        '2009': 263
-        '2010': 775245
-        '2011': 626948
-        '2012': 737307
-        '2013': 562871
-        '2014': 605900
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 146010
         '2006': 146163
-        '2007': 129050
-        '2008': 113801
-        '2009': 17692
-        '2010': 10749191
-        '2011': 8816239
-        '2012': 7487835
-        '2013': 6733615
-        '2014': 6131356
+        '2008': 129050
+        '2011': 113801
+        '2013': 17692
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 6732414
+        '2012': 6147434
+        '2015': 4966038
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2010': 10744622
+        '2011': 775306
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 8813536
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 7485631
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2015': 737303
 '35007':
   name: Colfax County
   products:
@@ -65,114 +85,116 @@
       units: mcf
       volume:
         '2006': 73118
-        '2007': 288471
-        '2008': 280223
-        '2009': 280900
-        '2010': 277607
-        '2011': 266600
-        '2012': 264034
-        '2013': 246318
-        '2014': 231177
-'35013':
-  name: Dona Ana County
-  products:
-    'Geothermal - Direct Use, Millions of Gallons':
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      volume:
-        '2011': 71606330
-        '2012': 113448300
-        '2013': 69920725
-        '2014': 63624483
-'35015':
-  name: Eddy County
-  products:
+        '2008': 288471
+        '2011': 280223
+        '2013': 280900
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 83986
-        '2006': 83524
-        '2007': 89309
-        '2008': 94609
-        '2009': 219206
-        '2010': 309819
-        '2011': 886222
-        '2012': 3087824
-        '2013': 5792321
-        '2014': 7394561
-    Muriate Of Potash-Granular (tons):
-      name: Muriate Of Potash-Granular
+        '2008': 246318
+        '2011': 231177
+        '2015': 209929
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 277607
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 266600
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 264034
+'35013':
+  name: Dona Ana County
+  products:
+    Gilsonite (tons):
+      name: Gilsonite
       units: tons
       volume:
-        '2005': 424981
-        '2006': 327424
-        '2007': 429446
-        '2008': 398253
-        '2009': 233928
-        '2010': 364751
-        '2011': 454506
-        '2012': 424920
-        '2013': 342439
-        '2014': 467320
-    Muriate Of Potash-Standard (tons):
-      name: Muriate Of Potash-Standard
-      units: tons
+        '2006': 27073670
+        '2007': 30796710
+        '2008': 37231870
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2005': 476837
-        '2006': 469892
-        '2007': 251708
-        '2008': 177001
-        '2009': 112839
-        '2010': 155054
-        '2011': 170449
-        '2012': 146453
-        '2013': 132492
-        '2014': 127433
+        '2008': 160072
+        '2012': 102973
+        '2015': 15303440
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 8366400
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 18346050
+'35015':
+  name: Eddy County
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 486870
-        '2006': 1563092
-        '2007': 2935719
-        '2008': 3777308
-        '2009': 5142237
-        '2010': 7213693
-        '2011': 6168015
-        '2012': 12851899
-        '2013': 24861480
-        '2014': 27501173
-    Langbeinite (tons):
-      name: Langbeinite
+        '2006': null
+        '2008': 2924928
+        '2011': 3766203
+        '2013': 5132544
+    Gold and Silver Products (oz):
+      name: Gold and Silver Products
+      units: oz
+      volume:
+        '2006': null
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2008': 3061056
+        '2011': 25806421
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 23979352
+        '2012': 26430651
+        '2015': 25860365
+    Gilsonite (tons):
+      name: Gilsonite
       units: tons
       volume:
-        '2005': 551675
-        '2006': 734349
-        '2007': 966101
-        '2008': 974982
-        '2009': 648073
-        '2010': 830346
-        '2011': 745606
-        '2012': 859349
-        '2013': 707765
-        '2014': 363289
-    Potash (tons):
-      name: Potash
+        '2009': 859349
+        '2010': 424920
+        '2011': 146453
+    Gold and Silver (tons):
+      name: Gold and Silver
       units: tons
       volume:
-        '2006': 492294
-    Salt (tons):
-      name: Salt
-      units: tons
+        '2009': null
+        '2011': 409345
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       volume:
-        '2008': 314483
-        '2009': 372956
-        '2010': 434018
-        '2011': 439367
-        '2012': 409345
-        '2013': 425125
-        '2014': 457529
+        '2010': 7204870
+        '2011': 309819
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 6160896
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 12809803
 '35021':
   name: Harding County
   products:
@@ -180,61 +202,89 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 2988534
         '2006': 2847247
-        '2007': 2731819
-        '2008': 2712300
-        '2009': 2864354
-        '2010': 3016753
-        '2011': 4721763
-        '2012': 4894974
-        '2013': 4743881
-        '2014': 4535777
-'35023':
-  name: Hidalgo County
-  products:
+        '2008': 2731819
+        '2011': 2712300
+        '2013': 2864354
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 4743881
+        '2012': 4535777
+        '2015': 3936237
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 3016753
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2013': 69407
-        '2014': 8736455
-'35025':
-  name: Lea County
+        '2013': 4721763
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 4894974
+'35023':
+  name: Hidalgo County
   products:
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 13846
-        '2006': 11784
-        '2007': 12048
-        '2008': 29858
-        '2009': 51654
-        '2010': 34416
-        '2011': 131600
-        '2012': 358900
-        '2013': 1004435
-        '2014': 2151223
+        '2008': 69407
+        '2012': 51702
+        '2015': 23839
+'35025':
+  name: Lea County
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 133103
-        '2006': 163384
-        '2007': 288410
-        '2008': 378696
-        '2009': 512489
-        '2010': 416242
-        '2011': 398680
-        '2012': 588697
-        '2013': 1619363
-        '2014': 4481555
-    Brine Barrels (barrels):
-      name: Brine Barrels
-      units: barrels
-      volume:
         '2006': 66862
+        '2008': null
+        '2011': null
+        '2013': 396015
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': null
+        '2009': 331644
+        '2010': 51693672
+        '2011': 9747398
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 1432997
+        '2012': 4878216
+        '2015': 7937266
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2009': 12951474
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 289218
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 400380
+        '2015': 54830888
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2014': 221330
 '35031':
   name: McKinley County
   products:
@@ -242,37 +292,47 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 600
-        '2006': 18329
-        '2007': 10307
-        '2008': 24857
-        '2009': 53511
-        '2010': 111991
-        '2011': 218200
-        '2012': 210074
-        '2013': 178147
-        '2014': 181980
+        '2006': null
+        '2008': null
+        '2011': 24857
+        '2013': 53511
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 2898
-        '2007': 1016
-        '2008': 1987
-        '2009': 14218
-        '2010': 20686
-        '2011': 12312
-        '2012': 22569
-        '2013': 37846
-        '2014': 53860
+        '2008': 178147
+        '2011': null
+        '2012': 53860
+        '2015': null
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 111991
+        '2011': 20686
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 218200
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2013': 22569
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 210074
 '35035':
   name: Otero County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2014': 14638
+        '2011': 14638
 '35037':
   name: Quay County
   products:
@@ -280,109 +340,154 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 2988534
         '2006': 2847247
-        '2007': 2731819
-        '2008': 2712300
-        '2009': 2739039
-        '2010': 2748175
-        '2011': 2774978
-        '2012': 2771071
-        '2013': 2671068
-        '2014': 2476467
+        '2008': 2731819
+        '2011': 2712300
+        '2013': 2739039
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 2671068
+        '2011': 2476467
+        '2015': 2310078
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 2748175
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 2774978
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 2771071
 '35039':
   name: Rio Arriba County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 1255
-        '2006': 782
-        '2007': 611
-        '2008': 540
-        '2009': 389
-        '2010': 262
-        '2011': 738049
-        '2012': 739848
-        '2013': 818278
-        '2014': 1355697
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 419554
         '2006': 304417
-        '2007': 26563
-        '2008': 71684
-        '2009': 100551
-        '2010': 102867
-        '2011': 83365
-        '2012': 72054
-        '2013': 60057
-        '2014': 54967
+        '2008': 26563
+        '2011': 71684
+        '2013': 100551
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2006': 739734
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 60057
+        '2011': 54967
+        '2012': 216113200
+        '2015': 44370
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 102867
+        '2010': 264749917
+        '2011': 708674
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 83365
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 72054
+        '2015': 253352461
 '35041':
   name: Roosevelt County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 146990
-        '2006': 124812
-        '2007': 145725
-        '2008': 140349
-        '2009': 109979
-        '2010': 105775
-        '2011': 87374
-        '2012': 84283
-        '2013': 77599
-        '2014': 81859
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 1501192
         '2006': 1474115
-        '2007': 1495170
-        '2008': 1602298
-        '2009': 1358747
-        '2010': 1337727
-        '2011': 1104336
-        '2012': 813994
-        '2013': 672372
-        '2014': 856313
+        '2008': 1495170
+        '2011': 1602298
+        '2013': 1358747
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 672372
+        '2011': 859812
+        '2012': 82536
+        '2015': 798910
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 1337727
+        '2011': 105775
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 1104336
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2014': 84835
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 813994
 '35043':
   name: Sandoval County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 44516
-        '2006': 38931
-        '2007': 35432
-        '2008': 36395
-        '2009': 41684
-        '2010': 42181
-        '2011': 38306
-        '2012': 58890
-        '2013': 341012
-        '2014': 107890
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 445245
         '2006': 469145
-        '2007': 428865
-        '2008': 464101
-        '2009': 591817
-        '2010': 947490
-        '2011': 1380109
-        '2012': 1654263
-        '2013': 2085090
-        '2014': 277911
+        '2008': 428865
+        '2011': 464101
+        '2013': 591817
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 2064268
+        '2011': 263119
+        '2012': 107890
+        '2015': 245182
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 947490
+        '2011': 42181
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 1380109
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2013': 58890
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 1654263
 '35045':
   name: San Juan County
   products:
@@ -390,30 +495,46 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 267344
-        '2006': 73957
-        '2007': 72148
-        '2008': 118327
-        '2009': 150147
-        '2010': 151711
-        '2011': 132721
-        '2012': 143726
-        '2013': 117350
-        '2014': 143956
+        '2006': null
+        '2008': null
+        '2011': null
+        '2013': null
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2007': 762805
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 890646
-        '2006': 853715
-        '2007': 803120
-        '2008': 787705
-        '2009': 773444
-        '2010': 697143
-        '2011': 715279
-        '2012': 1124
-        '2013': 518
-        '2014': 56327
+        '2008': null
+        '2011': null
+        '2012': 301947827
+        '2015': null
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': null
+        '2010': 367647103
+        '2011': 697502
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2011': 1124
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': null
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': null
+        '2015': 331622227
 '35059':
   name: Union County
   products:
@@ -421,13 +542,29 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 2988543
         '2006': 2847256
-        '2007': 2731827
-        '2008': 2712308
-        '2009': 2739047
-        '2010': 2748183
-        '2011': 2774987
-        '2012': 2771079
-        '2013': 2671076
-        '2014': 2476474
+        '2008': 2731827
+        '2011': 2712308
+        '2013': 2739047
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 2671076
+        '2011': 2476474
+        '2015': 2310085
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2009': 2748183
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 2774987
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2015': 2771079

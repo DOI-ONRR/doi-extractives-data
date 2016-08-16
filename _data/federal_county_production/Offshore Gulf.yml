@@ -1,31 +1,45 @@
 'null':
-  name: Western Gulf of Mexico
+  name: Eastern Gulf of Mexico
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 42195314
-        '2006': 35198190
-        '2007': 33421155
-        '2008': 25732984
-        '2009': 29415979
-        '2010': 29939476
-        '2011': 38146320
-        '2012': 51532543
-        '2013': 52285111
-        '2014': 53171357
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 481187574
-        '2006': 414581474
-        '2007': 325366229
-        '2008': 236592361
-        '2009': 241812701
-        '2010': 223412501
-        '2011': 194426169
-        '2012': 173417391
-        '2013': 145202610
-        '2014': 144917235
+        '2006': 278136
+        '2008': 45925342
+        '2009': 2123066216
+        '2011': 139073831
+        '2014': 187513782
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2006': 131674748
+        '2014': 107917419
+    Magnesium Chloride Brine (tons):
+      name: Magnesium Chloride Brine
+      units: tons
+      volume:
+        '2006': 72210975
+        '2007': 392304025
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 35829285
+        '2012': 23210680
+    Limestone (tons):
+      name: Limestone
+      units: tons
+      volume:
+        '2011': 73749514
+        '2012': 319123809
+        '2013': 1142512151
+        '2014': 10907
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2012': 22445857
+        '2013': 1808091
+        '2014': 452930027

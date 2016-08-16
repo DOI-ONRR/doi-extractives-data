@@ -104,6 +104,60 @@ all_production:
       value: 3215358
       rank: 3
       percent: 10.89
+federal_production:
+  '2006':
+    - product: Anhydrous Sodium Sulfate (tons)
+      name: Anhydrous Sodium Sulfate
+      units: tons
+      value: 39875346
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 14711534
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Anhydrous Sodium Sulfate (tons)
+      name: Anhydrous Sodium Sulfate
+      units: tons
+      value: 343676
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 37140761
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 34331662
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 14295839
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 28358244
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 23004699
+      rank: 1
+      percent: 0
 revenue:
   '2009':
     - product: Oil & Gas (Non-Royalty)

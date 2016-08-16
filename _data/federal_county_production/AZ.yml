@@ -1,0 +1,32 @@
+'4013':
+  name: Maricopa County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': null
+        '2009': null
+        '2012': null
+        '2015': null
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': null
+        '2010': null
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': null
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': null
+    Borax-Decahydrate (tons):
+      name: Borax-Decahydrate
+      units: tons
+      volume:
+        '2014': null

@@ -272,8 +272,6 @@ data/state_federal_production.yml:
 		  ROUND(volume) AS volume, \
 		  ROUND(percent, 2) AS percent, rank \
 		FROM federal_production_state_rank \
-		WHERE \
-			state != 'Withheld' \
 		ORDER BY \
 			state, product, product_name, units, year" \
 		| $(nestly) --if ndjson \
@@ -339,10 +337,8 @@ data/federal_county_production:
 		FROM federal_county_production \
 		WHERE \
 		  state IS NOT NULL AND \
-		  state != 'Withheld' AND \
 		  county IS NOT NULL AND \
-		  product IS NOT NULL AND \
-		  value IS NOT NULL \
+		  product IS NOT NULL \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_production.yml \

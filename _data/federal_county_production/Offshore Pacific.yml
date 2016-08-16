@@ -1,31 +1,43 @@
 'null':
   name: Southern California
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 26542513
-        '2006': 25992104
-        '2007': 24624090
-        '2008': 24031967
-        '2009': 22306733
-        '2010': 21710971
-        '2011': 19820268
-        '2012': 17685001
-        '2013': 18571781
-        '2014': 18506540
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 54185608
-        '2006': 47153866
-        '2007': 45563230
-        '2008': 46906273
-        '2009': 41233098
-        '2010': 41257256
-        '2011': 36596806
-        '2012': 27267648
-        '2013': 27494558
-        '2014': 28313384
+        '2006': 418145
+        '2008': 405538
+        '2009': 369964
+        '2011': 386261
+        '2014': 389423
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2006': 384020
+        '2014': 345769
+    Magnesium Chloride Brine (tons):
+      name: Magnesium Chloride Brine
+      units: tons
+      volume:
+        '2008': 26959657
+        '2009': 17454856
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 335887
+        '2012': 330437
+    Limestone (tons):
+      name: Limestone
+      units: tons
+      volume:
+        '2010': 307500
+        '2015': 230141
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2012': 347499
+        '2013': 240677
+        '2015': 14460586

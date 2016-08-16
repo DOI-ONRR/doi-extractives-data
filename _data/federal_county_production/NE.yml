@@ -5,64 +5,99 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 2882
         '2006': 3706
-        '2007': 5946
-        '2008': 5330
-        '2009': 2189
-        '2010': 2415
-        '2011': 1145
-        '2012': 1109
-        '2013': 944
-        '2014': 981
+        '2008': 5946
+        '2011': 5330
+        '2013': 2189
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': 2415
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 31601
-        '2006': 42769
-        '2007': 60297
-        '2008': 46703
-        '2009': 33213
-        '2010': 32560
-        '2011': 26558
-        '2012': 20333
-        '2013': 22835
-        '2014': 21668
+        '2008': 944
+        '2011': 981
+        '2015': 594
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 1145
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2013': 1109
+        '2014': 20333
 '31057':
   name: Dundy County
   products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 335
+        '2008': 291
+        '2011': 488
+        '2013': 501
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': 476
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 356
-        '2006': 335
-        '2007': 291
-        '2008': 488
-        '2009': 501
-        '2010': 476
-        '2011': 409
-        '2012': 329
-        '2013': 192
-        '2014': 149
+        '2008': 192
+        '2011': 149
+        '2015': 19
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 409
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 329
 '31087':
   name: Hitchcock County
   products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 5663
+        '2008': 5305
+        '2011': 5148
+        '2013': 4720
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': 4411
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 5740
-        '2006': 5663
-        '2007': 5305
-        '2008': 5148
-        '2009': 4720
-        '2010': 4411
-        '2011': 4120
-        '2012': 4302
-        '2013': 3736
-        '2014': 3424
+        '2008': 3736
+        '2011': 3424
+        '2015': 3135
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 4120
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2014': 4302
 '31105':
   name: Kimball County
   products:
@@ -70,44 +105,63 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 31
         '2006': 27
-        '2007': 25
-        '2008': 22
-        '2009': 18
-        '2010': 17
-        '2011': 18
-        '2012': 16
-        '2013': 14
-        '2014': 13
+        '2008': 25
+        '2011': 22
+        '2013': 18
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': 17
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 3070
-        '2006': 1754
-        '2007': 1812
-        '2008': 2161
-        '2009': 2473
-        '2010': 2026
-        '2011': 1983
-        '2012': 2358
-        '2013': 2483
-        '2014': 2027
+        '2008': 14
+        '2011': 13
+        '2015': 13
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 18
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2013': 16
+        '2014': 2358
 '31145':
   name: Red Willow County
   products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 8
+        '2008': 6
+        '2011': 6
+        '2013': 6
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2008': 5
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 6
-        '2006': 8
-        '2007': 6
-        '2008': 6
-        '2009': 6
-        '2010': 5
-        '2011': 4
-        '2012': 3
-        '2013': 3
+        '2008': 3
+        '2011': 3
+        '2015': 2
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2013': 4
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
         '2014': 3

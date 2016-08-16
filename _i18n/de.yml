@@ -109,3 +109,11 @@ charts-production:
     select-year: Jahr auswählen
     year: Jahre
     total-product-in-germany: Gesamtproduktion in Deutschland
+
+data:
+    production-title: Daten zur interaktiven Rohstoffkarte
+    chart-title: Daten zur gesammtdeutschen Rohstoffproduktion
+    description-1: Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums "Der Bergbau in der Bundesrepublik Deutschland"
+    description-2: Download der Produktionsdaten
+    production-icon: Siehe Anhang
+    chart-icon: Full dataset

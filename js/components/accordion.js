@@ -5,7 +5,7 @@
   exports.Accordion = function() {
     this.accordions = document.querySelectorAll('[accordion]');
     this.EMPTY_STRING = '';
-    this.setAttributes();
+    if (this.accordions.length > 0) this.setAttributes();
   };
 
   exports.Accordion.prototype = {

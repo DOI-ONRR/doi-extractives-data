@@ -25,3 +25,26 @@
     margin-top: 230px;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  svg.region-map {
+    height: 500px;
+  }
+  .explore-exploration.slab-alpha {
+    margin: 20px !important;
+  }
+  .sticky_nav {
+    top: -76px !important;
+  }
+}
+@supports (-ms-accelerator:true) {
+  svg.region-map {
+    height: 500px;
+  }
+  .explore-exploration.slab-alpha {
+    margin: 20px !important;
+  }
+  .sticky_nav {
+    top: -76px !important;
+  }
+}

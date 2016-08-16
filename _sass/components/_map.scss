@@ -8,6 +8,11 @@
   padding-top: $base-padding-large;
 }
 
+svg {
+  overflow: hidden;
+}
+
+
 eiti-map.empty path {
   fill: #aecad8 !important;
 }

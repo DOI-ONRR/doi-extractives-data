@@ -10,8 +10,6 @@
 
     <h3>Production on federal land nationwide</h3>
 
-    <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
-
     <div class="chart-selector-wrapper">
 
       {% include year-selector.html year_range=year_range %}
@@ -48,7 +46,7 @@
           <span class="eiti-bar-chart-y-value"
                   data-format=",">{{ volume | default: 0 | intcomma }}</span>
           {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-          produced on federal land in {{ state_name }} in
+          produced on federal land in
           <span class="eiti-bar-chart-x-value">{{ year }}</span>
 
           </figcaption>

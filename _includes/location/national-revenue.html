@@ -13,6 +13,8 @@
 
   <section id="federal-revenue">
 
+    <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
     <p class="full-width-text">The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in {{ year}} for production or potential production of natural resources on federal land, broken down by phase of production. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon> </a></p>
 
     <div id="fee-summaries" class="tab-interface">
@@ -44,14 +46,14 @@
 
     <section class="chart-list">
 
-      <h4>Revenue from resources extracted on federal land in {{ state_name }}</h4>
+      <h4>Revenue by resource</h4>
 
       <div class="chart-selector-wrapper">
 
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}.
+          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose). 
         </p>
       </div>
 
@@ -70,7 +72,7 @@
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
                 companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
-              {{ commodity_name | downcase }} on federal land in {{ state_name }}
+              {{ commodity_name | downcase }} on federal land
 
             </figcaption>
             <eiti-bar-chart

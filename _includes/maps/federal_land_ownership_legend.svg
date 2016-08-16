@@ -8,33 +8,33 @@
           <rect class="swatch" height="12" width="100"></rect>
           <rect class="swatch" height="12" width="100"></rect>
           <text class="label"
-                transform="translate(0,27)">Federally owned</text>
+                transform="translate(0,27)">Federal lands</text>
         </g>
         <g class="cell state" transform="translate({{ cell_padding | plus: 100 }}, 0)" style="opacity: 1;">
           <rect class="swatch" height="12" width="100"></rect>
           <rect class="swatch" height="12" width="100"></rect>
           <text class="label"
-                transform="translate(0,27)">State owned</text>
+                transform="translate(0,27)">Tribal lands</text>
         </g>
         <g class="cell" transform="translate({{ cell_padding | times: 2 | plus: 200 }}, 0)" style="opacity: 1;">
           <rect class="swatch" height="12" width="100"></rect>
           <text class="label"
-                transform="translate(0,27)">Private</text>
+                transform="translate(0,27)">Other lands (state, private, local)</text>
         </g>
       {% else %}
         <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
           <rect class="swatch" height="15" width="15"></rect>
           <rect class="swatch" height="15" width="15"></rect>
-          <text class="label" transform="translate(25,12.5)">Federally owned</text>
+          <text class="label" transform="translate(25,12.5)">Federal lands</text>
         </g>
         <g class="cell state" transform="translate(0, {{ cell_padding | plus: 15 }})" style="opacity: 1;">
           <rect class="swatch" height="15" width="15"></rect>
           <rect class="swatch" height="15" width="15"></rect>
-          <text class="label" transform="translate(25,12.5)">State owned</text>
+          <text class="label" transform="translate(25,12.5)">Tribal lands</text>
         </g>
         <g class="cell" transform="translate(0, {{ cell_padding | times: 2 | plus: 30 }})" style="opacity: 1;">
           <rect class="swatch" height="15" width="15"></rect>
-          <text class="label" transform="translate(25,12.5)">Private</text>
+          <text class="label" transform="translate(25,12.5)">Other lands (state, private, local)</text>
         </g>
       {% endif %}
     </g>

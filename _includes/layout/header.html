@@ -1,8 +1,8 @@
 <header class="header">
   <nav class="nav-header">
     <div class="logo-container">
-      <a href="{{ site.baseurl }}/">
-        <img class="header-image" src="{{ site.baseurl }}/img/deiti-logo.svg" alt="Deiti logo">
+      <a href="{{ site.baseurl_root }}/">
+        <img class="header-image" src="{{ site.baseurl_root }}/img/deiti-logo.svg" alt="Deiti logo">
       </a>
       <div class="logo_text">
         <span>Deutschland</span>
@@ -18,10 +18,10 @@
         <a href="http://www.d-eiti.de/de/">◀ Zurück zu D-EITI.de</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/explore/about">Über D-EITI</a>
+        <a href="{{ site.baseurl_root }}/explore/about">Über D-EITI</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/explore/how-it-work">Wie funktioniert‘s?</a>
+        <a href="{{ site.baseurl_root }}/explore/how-it-work">Wie funktioniert‘s?</a>
       </li>
       <li>
         <a href="/">Daten entdecken</a>
@@ -31,14 +31,19 @@
   <div class="flag-container container">
       <ul>
         <li class="lang-item">
-          <a>
-            <img src="{{ site.baseurl }}/img/counties/de_DE.png" title="Deutsch" alt="Deutsch">
+          {% if site.lang == "de" %}
+          {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+          <a href="{{ link1 }}" >
+            <img src="{{ site.baseurl_root }}/img/counties/en_GB.png" title="English" alt="English">
           </a>
         </li>
+          {% elsif site.lang == "en" %}
         <li class="lang-item">
-          <a>
-            <img src="{{ site.baseurl }}/img/counties/en_GB.png" title="English" alt="English">
+          {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+          <a href="{{ link2 }}" >
+            <img src="{{ site.baseurl_root }}/img/counties/de_DE.png" title="Deutsch" alt="Deutsch">
           </a>
+          {% endif %}
         </li>
       </ul>
   </div>

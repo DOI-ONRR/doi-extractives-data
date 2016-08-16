@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Daten entdecken
 ---
 
 <section class="slab-delta">
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
-      <h1>{{ page.title }}</h1>
+      <h1>{% translate 'title' %}</h1>
       <p class="hero-description">Herzlich Willkommen auf dem D-EITI Datenportal. Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken und sich so über den deutschen rohstoffgewinnenden Sektor informieren. Derzeit sind
       <a href="#production">Daten zur Rohstoffproduktion in Deutschland</a>
        verfügbar.</p>
@@ -21,7 +20,7 @@ title: Daten entdecken
       <div class="hero-right_square">
         <figure>
           <a href="#production">
-            <img class="hero-right_image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi">
+            <img class="hero-right_image" src="{{ site.baseurl_root }}/img/explore-landing-intro.png" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi">
           </a>
           <figcaption class="hero-right_caption">Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
           <a class="link-alpha" href="#production">Produktionsdaten</a></figcaption>
@@ -35,14 +34,14 @@ title: Daten entdecken
   <section class="container">
     <a id="production" class="link-no_under"><h2 class="h3 landing-section_category">Rohstoffproduktion in Deutschland</h2></a>
     <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{ site.baseurl }}/explore/federal-production">Interaktive Rohstoffkarte</a></h3>
+      <h3 class="h5 landing-heading"><a href="{{ site.baseurl_root }}/explore/federal-production">Interaktive Rohstoffkarte</a></h3>
       <button><label class="sr-only">Die Karte aufrufen</label></button>
       <div>
         <p class="landing-description">Erstmals überhaupt sind Rohstoffproduktionsdaten auf Ebene der Bundesländer in einer interaktiven Rohstoffkarte verfügbar.</p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{ site.baseurl }}/explore/production-charts">Gesamtdeutsche Rohstoffproduktion</a></h3>
+      <h3 class="h5 landing-heading"><a href="{{ site.baseurl_root }}/explore/production-charts">Gesamtdeutsche Rohstoffproduktion</a></h3>
       <button><label class="sr-only">Produktionsdaten einsehen</label></button>
       <div>
         <p class="landing-description">Informieren Sie sich darüber, welche Rohstoffe in Deutschland gefördert werden</p>
@@ -92,4 +91,4 @@ title: Daten entdecken
   </section>
 </section>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/homepage.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/homepage.min.js" charset="utf-8"></script>

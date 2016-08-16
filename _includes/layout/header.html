@@ -42,9 +42,9 @@
   </nav>
   <div class="flag-container container">
         {% if site.lang == "de" %}
-        {% capture link1 %} {{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+        {% capture link1 %} {{ site.baseurl_root }}/en{{page.url}}{% endcapture %}
         {% elsif site.lang == "en" %}
-        {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+        {% capture link2 %}{{ site.baseurl_root }}{{page.url}}{% endcapture %}
         {% endif %}
       <ul>
         <li class="lang-item">

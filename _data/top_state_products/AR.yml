@@ -1,22 +1,143 @@
 federal_production:
-  '2005':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: 8065
-      rank: 1
-      percent: 100
   '2006':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: 6350
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 120165
       rank: 1
       percent: 100
   '2007':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: 2400
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 222908
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 9876516
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 3746
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13661476
+      rank: 3
+      percent: 0.6
+  '2008':
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 554252
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 6854772
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 672671
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12040955
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 17840904
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 8620231
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 3642638
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Borax-Anhydrous (tons)
+      name: Borax-Anhydrous
+      units: tons
+      value: 43197
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 4628930
+      rank: 1
+      percent: 100
+  '2012':
+    - product: Borate Products (tons)
+      name: Borate Products
+      units: tons
+      value: 1677
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 23
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17902907
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Borate Products (tons)
+      name: Borate Products
+      units: tons
+      value: 5185
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate (tons)
+      name: Borax-Decahydrate
+      units: tons
+      value: 6350
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Borate Products (tons)
+      name: Borate Products
+      units: tons
+      value: 21148
+      rank: 1
+      percent: 100
+  '2015':
+    - product: Borate Products (tons)
+      name: Borate Products
+      units: tons
+      value: 34328
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18909313
+      rank: 1
+      percent: 0

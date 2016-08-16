@@ -123,8 +123,7 @@ CREATE TABLE federal_production_state_rank AS
         national.product = state.product
     WHERE
         state.volume IS NOT NULL AND
-        national.volume IS NOT NULL AND
-        state.state != 'Withheld'
+        national.volume IS NOT NULL
     ORDER BY
         state.year,
         state.product,

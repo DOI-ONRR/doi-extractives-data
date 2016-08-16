@@ -1,0 +1,14 @@
+'45001':
+  name: Abbeville County
+  products:
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2007': null
+        '2014': null
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2014': null

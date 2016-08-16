@@ -170,6 +170,155 @@ all_production:
       value: 35874000
       rank: 1
       percent: 21.37
+federal_production:
+  '2006':
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 1598
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25719725
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 56797913
+      rank: 3
+      percent: 1.03
+  '2007':
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 2715
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 21690343
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 4504
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 274323
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 10571
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 27786903
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 53811
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 23635
+      rank: 1
+      percent: 46.9
+  '2011':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 108027
+      rank: 1
+      percent: 84.64
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25163494
+      rank: 1
+      percent: 0
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 51387
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 437496
+      rank: 1
+      percent: 95.54
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 280423
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Silver (oz)
+      name: Silver
+      units: oz
+      value: 387
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 4922886
+      rank: 1
+      percent: 99.46
+  '2014':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 24940831
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 23683064
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 163562
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 611
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 35743022
+      rank: 1
+      percent: 0
 revenue:
   '2010':
     - product: Oil & Gas (Non-Royalty)

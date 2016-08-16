@@ -1,3 +1,51 @@
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15449
+      rank: 1
+      percent: 0
+  '2007':
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 70615
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 19913
+      rank: 1
+      percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 14091
+      rank: 2
+      percent: 0.56
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17144
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 65874
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 39858
+      rank: 1
+      percent: 0
 all_production:
   '2013':
     - product: Natural Gas (mcf)

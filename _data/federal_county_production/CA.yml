@@ -1,63 +1,92 @@
 '6013':
   name: Contra Costa County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2005': 27
-        '2006': 13
-        '2007': 14
-        '2008': 12
-        '2009': 1
-        '2012': 2
-        '2013': 3
-        '2014': 2
+        '2007': 13
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 13338
-        '2006': 11198
         '2007': 11182
-        '2008': 10350
-        '2009': 4534
-        '2010': 2968
-        '2011': 2619
-        '2012': 1910
-        '2013': 1641
-        '2014': 1195
+        '2009': 10350
+        '2010': 12
+        '2012': 4534
+        '2015': 2968
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2007': 2
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 1641
+        '2010': 1195
+        '2013': 637
+        '2014': 1
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 2619
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': 1910
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2014': 11198
 '6019':
   name: Fresno County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 44960
-        '2006': 45345
-        '2007': 21832
-        '2008': 10855
-        '2009': 19079
-        '2010': 19951
-        '2011': 18123
-        '2012': 13102
-        '2013': 13773
-        '2014': 23439
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 594250
-        '2006': 432591
         '2007': 113705
-        '2008': 122984
-        '2009': 182758
-        '2010': 193427
-        '2011': 249999
-        '2012': 74545
-        '2013': 2985
-        '2014': 10934
+        '2010': 122984
+        '2012': 182758
+        '2015': 193427
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 2985
+        '2010': 10934
+        '2013': 30587
+        '2014': 42875
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2008': 432591
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': 45345
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 13102
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 249999
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 74545
 '6021':
   name: Glenn County
   products:
@@ -65,70 +94,116 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 10722
-        '2006': 8929
         '2007': 8104
-        '2008': 14832
-        '2009': 13071
-        '2010': 9655
-        '2011': 8007
-        '2012': 7981
-        '2013': 7582
-        '2014': 6874
-'6025':
-  name: Imperial County
-  products:
+        '2010': 14832
+        '2012': 13071
+        '2015': 9655
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 7582
+        '2010': 6874
+        '2013': 5675
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 8007
     'Geothermal - Electrical Generation, Other':
       name: Geothermal
       units: 'Electrical Generation, Other'
       volume:
-        '2005': 204030
-        '2006': 227562
-        '2007': 207155
-        '2008': 237416
-        '2009': 233954
-        '2010': 223938
-        '2011': 19883
+        '2010': 7981
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2012': 8929
+'6025':
+  name: Imperial County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 14627
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006': 28652718
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2007': 22585982
+        '2008': 25149001
+        '2009': 27324020
+        '2010': 27767979
+        '2011': 27971999
+        '2012': 28080994
+        '2013': 31106015
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 25484007
+        '2010': 29457000
+        '2012': 28329000
+        '2015': 32666570
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 27477513
+        '2010': 23954090
+        '2014': 22186393
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 359593960
-        '2006': 334244017
-        '2007': 440260735
-        '2008': 437685000
-        '2009': 423244000
-        '2010': 422385181
-        '2011': 430545953
-        '2012': 407340165
-        '2013': 385979605
-        '2014': 363631895
+        '2010': 33328024
 '6027':
   name: Inyo County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 38582180
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006': 26503994
+        '2007': 183
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 33632745
+        '2010': 31148854
+        '2012': 34961605
+        '2015': 25126227
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 27125644
+        '2010': 25684848
+        '2014': 20396153
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 537748980
-        '2006': 504915624
-        '2007': 465167156
-        '2008': 449420628
-        '2009': 460346603
-        '2010': 387017462
-        '2011': 368106297
-        '2012': 345868455
-        '2013': 368059512
-        '2014': 337393974
-    Geothermal - sulfur:
-      name: Geothermal
-      units: sulfur
+        '2010': 26357058
+    Clay (tons):
+      name: Clay
+      units: tons
       volume:
-        '2010': 4670
-        '2011': 3470
-        '2012': 2598
-        '2013': 2448
-        '2014': 2090
+        '2014': 35515722
+        '2015': 38387125
 '6029':
   name: Kern County
   products:
@@ -136,240 +211,461 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 2105263
-        '2006': 3140317
         '2007': 3196593
-        '2008': 3684486
-        '2009': 4864027
-        '2010': 149
-        '2011': 3465
-        '2012': 55176
-        '2013': 51395
-        '2014': 25648
+        '2010': 3684486
+        '2012': 4864027
+        '2015': 149
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 13521746
-        '2006': 13437622
-        '2007': 12513256
-        '2008': 12609419
-        '2009': 13200353
-        '2010': 260
-        '2011': 922
-        '2012': 57312
-        '2013': 33134
-        '2014': 20023
-'6031':
-  name: Kings County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+        '2007': 51395
+        '2010': 25648
+        '2013': 9347
+        '2014': 10444
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2005': 37331
-        '2006': 41025
-        '2007': 38055
-        '2008': 32285
-        '2009': 38034
-        '2010': 37066
-        '2011': 35707
-        '2012': 38720
-        '2013': 37194
-        '2014': 56084
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2005': 158499
-        '2006': 161245
-        '2007': 103233
-        '2008': 33586
-        '2009': 36908
-        '2010': 84545
-        '2011': 176321
-        '2012': 105383
-        '2013': 45456
-        '2014': 66303
-'6033':
-  name: Lake County
-  products:
+        '2008': 13437622
     'Geothermal - Electrical Generation, Thousands of Pounds':
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
       volume:
-        '2005': 23325053
-        '2006': 23235179
-        '2007': 21799180
-        '2008': 21265241
-        '2009': 20771778
-        '2010': 20975268
-        '2011': 20965735
-        '2012': 20689289
-        '2013': 19664635
-        '2014': 19550547
-'6035':
-  name: Lassen County
-  products:
-    'Geothermal - Direct Utilization, Millions of BTUs':
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      volume:
-        '2005': 260242
-        '2006': 238147
-        '2007': 217500
-        '2008': 219089
-        '2009': 179171
-        '2010': 224486
-        '2011': 228011
-        '2012': 271470
-        '2013': 276337
-        '2014': 243504
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2014': 691756
-'6037':
-  name: Los Angeles County
-  products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2005': 159479
-        '2006': 151370
-        '2007': 137895
-        '2008': 148187
-        '2009': 129766
-        '2010': 134193
-        '2011': 129810
-        '2012': 172750
-        '2013': 150290
-        '2014': 135499
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 507336
-        '2006': 494001
-        '2007': 424917
-        '2008': 398818
-        '2009': 386843
-        '2010': 403223
-        '2011': 422438
-        '2012': 483130
-        '2013': 477574
-        '2014': 443802
-'6051':
-  name: Mono County
-  products:
+        '2008': 57312
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 90853862
-        '2006': 176732044
-        '2007': 187398918
-        '2008': 183365194
-        '2009': 205165950
-        '2010': 194009762
-        '2011': 182306808
-        '2012': 165730647
-        '2013': 164238891
-        '2014': 195815991
+        '2009': 3465
+        '2010': 10979548
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 55176
+        '2011': 10462815
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2011': 3140317
+'6031':
+  name: Kings County
+  products:
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2007': 161245
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 103233
+        '2010': 33586
+        '2012': 36908
+        '2015': 84545
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 45456
+        '2010': 66303
+        '2013': 107027
+        '2014': 92121
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': 41025
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 38720
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 176321
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 105383
+'6033':
+  name: Lake County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 2721897
+        '2007': 3011097
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006': 2697896
+        '2007': 2781258
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 2744550
+        '2010': 2673752
+        '2012': 2632145
+        '2015': 2620317
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 2452633
+        '2010': 2347637
+        '2014': 1807614
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 2475429
+'6035':
+  name: Lassen County
+  products:
+    Brine Barrels (bbl):
+      name: Brine Barrels
+      units: bbl
+      volume:
+        '2006': 17799
+        '2007': 20174
+        '2008': 21083
+        '2010': 23590
+    Brine Products (tons):
+      name: Brine Products
+      units: tons
+      volume:
+        '2006': 24272
+        '2007': 24585
+        '2008': 25643
+        '2009': 28513
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 4
+        '2010': 4795
+        '2012': 10035
+        '2015': 11329
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 20650
+        '2010': 1149
+        '2013': 6915
+        '2014': 44007
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 13197
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2013': 94
+        '2014': 16088
+        '2015': 17559
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2014': 6577
+        '2015': 28298
+'6037':
+  name: Los Angeles County
+  products:
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2006': 151370
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 137895
+        '2010': 148187
+        '2012': 129766
+        '2015': 134193
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 150290
+        '2010': 135499
+        '2013': 153041
+        '2014': 422981
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': 494001
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 483130
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 129810
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 172750
+'6051':
+  name: Mono County
+  products:
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2006': 15370348
+        '2007': 21917356
+        '2011': 28048890
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006': 14025245
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 12644867
+        '2010': 12227059
+        '2012': 13342393
+        '2015': 10630871
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 10309526
+        '2010': 13348916
+        '2013': 9659346
+        '2014': 17746989
+    Brine Products (tons):
+      name: Brine Products
+      units: tons
+      volume:
+        '2010': 7829707
+        '2011': 8454667
+        '2012': 8647918
+        '2013': 8969302
+        '2014': 9664964
+        '2015': 9822859
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 12176043
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2015': 10428260
 '6053':
   name: Monterey County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': 3683
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 1220
-        '2006': 1219
         '2007': 1403
-        '2008': 2583
-        '2009': 3845
-        '2010': 4199
-        '2011': 3270
-        '2012': 2968
-        '2013': 2657
-        '2014': 1829
+        '2009': 2583
+        '2010': 4589
+        '2012': 3845
+        '2015': 4199
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 4105
-        '2006': 3683
-        '2007': 3068
-        '2008': 4589
-        '2009': 7600
-        '2010': 9312
-        '2011': 11303
-        '2012': 13612
-        '2013': 13491
-        '2014': 14464
+        '2007': 2657
+        '2010': 1829
+        '2013': 1668
+        '2014': 14573
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 13611
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 3270
+        '2010': 11303
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': 2968
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2010': 1219
 '6067':
   name: Sacramento County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
-        '2005': 2769
-        '2006': 2365
-        '2007': 3375
-        '2008': 3103
-        '2009': 1716
-        '2010': 1366
-        '2011': 1144
-        '2012': 815
-        '2013': 846
-        '2014': 670
+        '2007': 2365
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 2703796
-        '2006': 2317562
         '2007': 2126758
-        '2008': 1665286
-        '2009': 820533
-        '2010': 577252
-        '2011': 509691
-        '2012': 428566
-        '2013': 383729
-        '2014': 356105
+        '2010': 1665286
+        '2012': 820533
+        '2015': 577252
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2007': 815
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 383729
+        '2010': 356105
+        '2013': 546344
+        '2014': 155
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2010': 2317562
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 509691
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 428566
 '6069':
   name: San Benito County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': 405
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 41
-        '2006': 7
-        '2008': 116
-        '2009': 225
-        '2010': 139
-        '2011': 148
-        '2012': 12
-        '2013': 7
-        '2014': 1
+        '2007': 16
+        '2009': 116
+        '2010': 745
+        '2012': 225
+        '2015': 139
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2007': 190
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 1923
-        '2006': 405
-        '2007': 16
-        '2008': 745
-        '2009': 1459
-        '2010': 1063
-        '2011': 806
-        '2012': 190
-        '2013': 43
-        '2014': 127
+        '2007': 7
+        '2010': 1
+        '2013': 140
+        '2014': 556
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2009': 7
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 148
+        '2010': 806
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': 12
+'6071':
+  name: San Bernardno County
+  products:
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': null
+        '2009': null
+        '2010': null
+        '2012': null
+        '2015': null
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': null
+        '2010': null
+        '2013': null
+        '2014': null
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': null
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': null
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': null
+        '2010': null
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': null
+    Borax-Decahydrate (tons):
+      name: Borax-Decahydrate
+      units: tons
+      volume:
+        '2015': null
 '6077':
   name: San Joaquin County
   products:
@@ -377,167 +673,265 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 4659
-        '2006': 4164
         '2007': 3949
-        '2008': 3888
-        '2009': 3478
-        '2010': 3480
-        '2011': 3532
-        '2012': 3367
-        '2013': 3466
-        '2014': 3468
+        '2009': 3888
+        '2012': 3478
+        '2015': 3480
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 3466
+        '2010': 3468
+        '2013': 3471
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 3532
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 3367
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2011': 4164
 '6079':
-  name: San Luis Obispo County
+  name: San Luis Ob. County
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': 16393
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 6489
-        '2006': 10488
         '2007': 1773
-        '2008': 1447
-        '2009': 52
-        '2010': 206
-        '2011': 4797
-        '2012': 10989
-        '2013': 13251
-        '2014': 15396
+        '2009': 1447
+        '2010': 11870
+        '2012': 52
+        '2015': 206
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 17091
-        '2006': 16393
-        '2007': 11086
-        '2008': 11870
-        '2009': 13675
-        '2010': 359
-        '2011': 1276
-        '2012': 9245
-        '2013': 11157
-        '2014': 5673
-'6083':
-  name: Santa Barbara
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 91482
-        '2006': 99237
-        '2007': 94862
-        '2008': 81840
-        '2009': 76425
-        '2010': 70837
-        '2011': 70812
-        '2012': 69415
-        '2013': 65637
-        '2014': 50382
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2005': 198177
-        '2006': 91143
-        '2007': 94839
-        '2008': 97295
-        '2009': 46301
-        '2010': 125375
-        '2011': 81281
-        '2012': 66458
-        '2013': 67024
-        '2014': 59323
-'6095':
-  name: Solano County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 11101
-        '2006': 9520
-        '2007': 13173
-        '2008': 12099
-        '2009': 7382
-        '2010': 5985
-        '2011': 5298
-        '2012': 4190
-        '2013': 3658
-        '2014': 3089
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2005': 11344929
-        '2006': 10040401
-        '2007': 8966183
-        '2008': 7139815
-        '2009': 4090838
-        '2010': 3346088
-        '2011': 2934412
-        '2012': 2567718
-        '2013': 2205533
-        '2014': 2035149
-'6097':
-  name: Sonoma County
-  products:
+        '2007': 13251
+        '2010': 18258
+        '2013': 3051
+        '2014': 2642
     'Geothermal - Electrical Generation, Thousands of Pounds':
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
       volume:
-        '2005': 29871686
-        '2006': 30108720
-        '2007': 28576260
-        '2008': 28601895
-        '2009': 27745975
-        '2010': 27547969
-        '2011': 27719948
-        '2012': 27518466
-        '2013': 26479987
-        '2014': 26013613
-'6103':
-  name: Tehama County
+        '2008': 9245
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 4797
+        '2010': 1276
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 10989
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2013': 10488
+'6083':
+  name: Santa Barbar
   products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2008': 27721
-        '2009': 8045
-        '2010': 2108
-        '2011': 3157
-        '2012': 1590
-        '2013': 1
-'6111':
-  name: Ventura County
+        '2007': 94839
+        '2010': 97295
+        '2012': 46301
+        '2015': 125375
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 67024
+        '2010': 72058
+        '2013': 47239
+        '2014': 49355
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': 99237
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 69415
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 81281
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 66458
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2015': 91143
+'6095':
+  name: Solano County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': 9520
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 8966183
+        '2010': 7139815
+        '2012': 4090838
+        '2015': 3346088
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2007': 4190
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 2205533
+        '2010': 2035149
+        '2013': 2382228
+        '2014': 691
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 2934412
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 2567718
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2012': 10040401
+'6097':
+  name: Sonoma County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2007': 3895088
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 3891976
+        '2010': 3879580
+        '2012': 3808971
+        '2015': 3713766
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2007': 3824365
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 3527751
+        '2010': 3326997
+        '2014': 2884190
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 3581845
+'6103':
+  name: Tehama County
   products:
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 313661
-        '2006': 314240
-        '2007': 305724
-        '2008': 304519
-        '2009': 280852
-        '2010': 261561
-        '2011': 261423
-        '2012': 277771
-        '2013': 235106
-        '2014': 369612
+        '2007': 1
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2009': 3157
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2009': 1590
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2005': 743679
-        '2006': 776501
+        '2010': 27721
+        '2012': 8045
+        '2015': 2108
+'6111':
+  name: Ventura County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
         '2007': 781836
-        '2008': 744351
-        '2009': 718331
-        '2010': 651821
-        '2011': 620017
-        '2012': 636217
-        '2013': 515491
-        '2014': 713113
+        '2010': 744351
+        '2012': 718331
+        '2015': 651821
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 515491
+        '2010': 713113
+        '2013': 655499
+        '2014': 331876
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2008': 314855
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2008': 277771
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2009': 776501
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2010': 620017
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2010': 636217

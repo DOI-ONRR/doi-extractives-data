@@ -1,380 +1,3 @@
-federal_production:
-  '2005':
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 551675
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 424981
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 476837
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1028343136.52
-      rank: 3
-      percent: 15.79
-  '2006':
-    - product: Brine Barrels (barrels)
-      name: Brine Barrels
-      units: barrels
-      value: 66862
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 734349
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 327424
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 469892
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 492294
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1022053891.11
-      rank: 3
-      percent: 15.79
-  '2007':
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 966101
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 429446
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 251708
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 975632728.21
-      rank: 3
-      percent: 14.95
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 25308750.26
-      rank: 3
-      percent: 2.35
-  '2008':
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 974982
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 398253
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 177001
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 314483
-      rank: 1
-      percent: 92.09
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 926364691.39
-      rank: 3
-      percent: 14.64
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 25756010.39
-      rank: 3
-      percent: 2.62
-  '2009':
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 648073
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 233928
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 112839
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 372956
-      rank: 1
-      percent: 93.01
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 894821783.92
-      rank: 3
-      percent: 13.7
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 28545971.78
-      rank: 3
-      percent: 2.22
-  '2010':
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 830346
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 364751
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 155054
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 434018
-      rank: 1
-      percent: 94.19
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 840725100.2
-      rank: 3
-      percent: 13.42
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 31575274.29
-      rank: 3
-      percent: 2.51
-  '2011':
-    - product: 'Geothermal - Direct Use, Millions of Gallons'
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      value: 71606330
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 745606
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 454506
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 170449
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 439367
-      rank: 1
-      percent: 95.73
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 35643027.27
-      rank: 2
-      percent: 3.28
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 819458627.33
-      rank: 3
-      percent: 14.21
-  '2012':
-    - product: 'Geothermal - Direct Use, Millions of Gallons'
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      value: 113448300
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 859349
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 424920
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 146453
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 409345
-      rank: 1
-      percent: 95.25
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 44528783.07
-      rank: 2
-      percent: 4.22
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 803628863.73
-      rank: 3
-      percent: 14.89
-  '2013':
-    - product: 'Geothermal - Direct Use, Millions of Gallons'
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      value: 69920724.5
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 707765
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 342439
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 132492
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 425125
-      rank: 1
-      percent: 94.12
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52650332.97
-      rank: 2
-      percent: 4.96
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 779441300.88
-      rank: 3
-      percent: 15.69
-  '2014':
-    - product: 'Geothermal - Direct Use, Millions of Gallons'
-      name: Geothermal
-      units: 'Direct Use, Millions of Gallons'
-      value: 63624483
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 363289
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 467320
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 127433
-      rank: 1
-      percent: 100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 457529
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 64993325.68
-      rank: 2
-      percent: 9.33
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 776068531.97
-      rank: 3
-      percent: 16.02
 revenue:
   '2006':
     - product: All
@@ -800,6 +423,191 @@ revenue:
       value: 784354.12
       rank: 2
       percent: 1.38
+federal_production:
+  '2006':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 27073670
+      rank: 1
+      percent: 100
+    - product: Gold (oz)
+      name: Gold
+      units: oz
+      value: 739734
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1048791320
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 30796710
+      rank: 1
+      percent: 100
+    - product: Gold (oz)
+      name: Gold
+      units: oz
+      value: 762805
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 37231870
+      rank: 1
+      percent: 100
+    - product: Gold (oz)
+      name: Gold
+      units: oz
+      value: 3061056
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 903255052
+      rank: 1
+      percent: 55.99
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1002933711
+      rank: 1
+      percent: 0
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 11805980
+      rank: 1
+      percent: 100
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 859349
+      rank: 1
+      percent: 100
+    - product: Gold (oz)
+      name: Gold
+      units: oz
+      value: 12951474
+      rank: 1
+      percent: 100
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 830973338
+      rank: 1
+      percent: 100
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 424920
+      rank: 1
+      percent: 100
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 31923450
+      rank: 1
+      percent: 100
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 147577
+      rank: 1
+      percent: 100
+    - product: Gold (oz)
+      name: Gold
+      units: oz
+      value: 25806421
+      rank: 1
+      percent: 100
+    - product: Gold and Silver (tons)
+      name: Gold and Silver
+      units: tons
+      value: 409345
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 954500527
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 6933
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 915184837
+      rank: 3
+      percent: 18.7
+  '2013':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 81459
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 925338614
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 928738665
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 306165
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 1104381
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 821335257
+      rank: 1
+      percent: 100
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 737303
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1170722549
+      rank: 1
+      percent: 0
 all_production:
   '2011':
     - product: Solar

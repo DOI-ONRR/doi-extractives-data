@@ -1,3 +1,101 @@
+federal_production:
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 7006941
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18132691
+      rank: 1
+      percent: 0
+  '2007':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 6077708
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 20734447
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 7939641
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 44617318
+      rank: 3
+      percent: 2.77
+  '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 52429536
+      rank: 1
+      percent: 8.75
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18195078
+      rank: 1
+      percent: 0
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 3990337
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 18244338
+      rank: 1
+      percent: 100
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17463861
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 29570318
+      rank: 1
+      percent: 0
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 16266959
+      rank: 1
+      percent: 0
+  '2015':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 338687
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 68650721
+      rank: 1
+      percent: 0
 revenue:
   '2009':
     - product: Oil & Gas (Non-Royalty)

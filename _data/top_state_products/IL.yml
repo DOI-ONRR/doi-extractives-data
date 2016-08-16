@@ -1,8 +1,62 @@
-all_production:
-  '2013':
-    - product: Coal (short tons)
+federal_production:
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 26790
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 20243
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 41395
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 42380
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Coal (tons)
       name: Coal
-      units: short tons
-      value: 52147193
-      rank: 2
-      percent: 7.09
+      units: tons
+      value: 45407
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 41478
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 46455
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 39142
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 46087
+      rank: 1
+      percent: 0

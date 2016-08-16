@@ -1,73 +1,199 @@
 '32001':
   name: Churchill County
   products:
-    'Geothermal - Direct Utilization, Hundreds of Gallons':
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
+    Gas (mcf):
+      name: Gas
+      units: mcf
       volume:
-        '2005': 90021493
-        '2006': 85859889
-        '2007': 106272414
-        '2008': 123838519
-        '2009': 198988743
-        '2010': 163346106
-        '2011': 131014604
-        '2012': 123103803
-        '2013': 57238368
-        '2014': 46536535
+        '2006': 133826
+        '2008': 2657
+        '2011': 14068758
+        '2013': 3075829
+        '2014': 32380714
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 582078464
-        '2006': 567343115
-        '2007': 522299372
-        '2008': 448993875
-        '2009': 567959047
-        '2010': 756799449
-        '2011': 730785289
-        '2012': 754945552
-        '2013': 813846736
-        '2014': 800554841
+        '2006': 47743734
+        '2013': 66732
+        '2014': 53093316
+    Langbeinite (tons):
+      name: Langbeinite
+      units: tons
+      volume:
+        '2006': 145862
+        '2007': 156517
+        '2008': 159876
+        '2009': 167133
+        '2010': 167268
+        '2011': 169142
+        '2012': 180738
+        '2013': 188778
+        '2014': 194476
+        '2015': 194898
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 224846
+        '2007': 259641
+        '2014': 52728685
+        '2015': 54626811
+    Leonardite (tons):
+      name: Leonardite
+      units: tons
+      volume:
+        '2006': 63213273
+        '2008': 65885189
+        '2009': 68365508
+        '2010': 70087969
+        '2011': 75834079
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2006': 72215375
+        '2007': 76322958
+    Hardrock Products (tons):
+      name: Hardrock Products
+      units: tons
+      volume:
+        '2007': 94869
+        '2008': 100866
+        '2009': 101535
+        '2010': 111290
+        '2011': 116343
+        '2012': 135376
+        '2013': 135670
+        '2014': 136285
+        '2015': 144900
+    Gold and Silver Products (oz):
+      name: Gold and Silver Products
+      units: oz
+      volume:
+        '2008': 751761
+        '2009': 763025
+        '2010': 2591159
+        '2011': 5469161
+        '2013': 9780456
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 289133
+        '2009': 56963874
+        '2012': 236771
+        '2015': 236514
+    Gold Ore (tons):
+      name: Gold Ore
+      units: tons
+      volume:
+        '2009': 9891019
+        '2011': 28345950
+    Gold Placer (oz):
+      name: Gold Placer
+      units: oz
+      volume:
+        '2009': 28876702
+        '2010': 36634570
+    Other Coal Products (tons):
+      name: Other Coal Products
+      units: tons
+      volume:
+        '2009': 62383752
+        '2010': 63278855
+        '2011': 65286684
+        '2012': 68074251
+        '2014': 70174728
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2012': 4066930
+        '2013': 5084
+        '2015': 1185161
 '32007':
   name: Elko County
   products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2008': 1612
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2014': 2247
-'32011':
-  name: Eureka County
+        '2012': 2247
+        '2015': 1025
+'32009':
+  name: Esmeralda County
   products:
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 45369
-        '2006': 41492
-        '2007': 39478
-        '2008': 43600
-        '2009': 77730
-        '2010': 57260
-        '2011': 43198
-        '2012': 38004
-        '2013': 40392
-        '2014': 32218
+        '2009': null
+'32011':
+  name: Eureka County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 249464
+        '2008': 167302
+        '2011': 217158
+        '2013': 246872
+        '2014': 77730
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 2424604
-        '2006': 3184205
-        '2007': 2858481
-        '2008': 3114139
-        '2009': 3092972
-        '2010': 3012894
-        '2011': 3216375
-        '2012': 2569343
-        '2013': 3064559
-        '2014': 3010668
+        '2006': 57260
+        '2013': 234079
+        '2014': 289968
+    Hardrock Products (tons):
+      name: Hardrock Products
+      units: tons
+      volume:
+        '2006': 24520
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 231558
+        '2007': 255504
+        '2008': 278883
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 242967
+        '2009': 40392
+        '2012': 240385
+        '2015': 197438
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2009': 31605
+    Gold Placer (oz):
+      name: Gold Placer
+      units: oz
+      volume:
+        '2011': -8
+    Leonardite (tons):
+      name: Leonardite
+      units: tons
+      volume:
+        '2012': 38004
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2013': 234131
+        '2014': 237588
 '32013':
   name: Humboldt County
   products:
@@ -75,47 +201,101 @@
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2009': 25011927
-        '2010': 104166409
-        '2011': 108388144
-        '2012': 100055017
-        '2013': 91901653
-        '2014': 85422511
+        '2006': 4462465
+        '2014': 6556166
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 6613193
+        '2009': 7855361
+        '2012': 6616149
+        '2015': 7348709
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2011': 7766369
+        '2012': 8237892
+        '2013': 8718669
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2013': 291479
+        '2014': 5822491
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2014': 902613
 '32015':
   name: Lander County
   products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': -35199059
+        '2008': -35486863
+        '2011': 3579565
+        '2013': 4069363
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 39966453
-        '2006': 12898466
-        '2007': 7195670
-        '2008': 51332540
-        '2009': 50983619
-        '2010': 49663651
-        '2011': 57045990
-        '2012': 218670408
-        '2013': 336324946
-        '2014': 331291678
+        '2006': 4307223
+        '2014': 5801625
+    Other Coal Products (tons):
+      name: Other Coal Products
+      units: tons
+      volume:
+        '2006': 61929507
+        '2008': 62330733
+        '2013': 68567919
+        '2015': 71466590
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 23855792
+        '2012': 23633638
+        '2015': 33788185
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2011': 7963749
+        '2012': 8248011
+        '2013': 8881408
+        '2014': 22871856
+        '2015': 53065487
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2015': 3859343
 '32019':
   name: Lyon County
   products:
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2013': 1698
-        '2014': 11135
+        '2008': 494
+        '2012': 1759
+        '2015': 3255
 '32021':
   name: Mineral County
   products:
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
-        '2013': 19609001
-        '2014': 150459000
+        '2008': 3669001
+        '2009': 15940000
+        '2012': 5261000
+        '2015': 8716000
 '32023':
   name: Nye County
   products:
@@ -123,55 +303,98 @@
       name: Gas
       units: mcf
       volume:
-        '2005': 5281
         '2006': 4999
-        '2007': 4573
-        '2008': 4227
-        '2009': 4440
-        '2010': 4010
-        '2011': 3836
-        '2012': 3631
-        '2013': 3422
-        '2014': 3341
+        '2008': 4573
+        '2011': 4227
+        '2013': 4440
+        '2014': 376792
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2006': 370267
+        '2013': 3836
+        '2014': 361976
+    Gold and Silver Products (oz):
+      name: Gold and Silver Products
+      units: oz
+      volume:
+        '2007': 3631
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2005': 398777
-        '2006': 381377
-        '2007': 365676
-        '2008': 391854
-        '2009': 376792
-        '2010': 370267
-        '2011': 361976
-        '2012': 318293
-        '2013': 290417
-        '2014': 276842
+        '2008': 3422
+        '2009': 290417
+        '2012': 3341
+        '2015': 2749
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2010': 247400
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2012': 4010
+    Leonardite (tons):
+      name: Leonardite
+      units: tons
+      volume:
+        '2013': 318293
 '32027':
   name: Pershing County
   products:
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2008': 3421704
+        '2009': 5067539
+        '2010': 5901611
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2008': 4057583
+        '2009': 7581709
+        '2012': 3875634
+        '2015': 4389771
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2011': 41560598
-        '2012': 50923705
-        '2013': 68110797
-        '2014': 70194551
+        '2014': 2282320
 '32031':
   name: Washoe County
   products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 2618317
+        '2008': 834000
+        '2011': 4300575
+        '2014': 5595123
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2005': 57381624
-        '2006': 54503974
-        '2007': 53715491
-        '2008': 65982190
-        '2009': 79796674
-        '2010': 98063399
-        '2011': 82495842
-        '2012': 86077886
-        '2013': 107973152
-        '2014': 100069644
+        '2006': 7075565
+        '2014': 5759896
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2009': 5592572
+        '2010': 6212507
+        '2011': 7601853
+        '2013': 8870181
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 8436058
+        '2012': 5698035
+        '2015': 4094992

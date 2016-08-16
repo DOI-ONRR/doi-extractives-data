@@ -1,194 +1,3 @@
-federal_production:
-  '2005':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 13141
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 207576
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 49449
-      rank: 1
-      percent: 100
-  '2006':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 19002
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 223123
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 54880.01
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 10960
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 221198
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 55968.01
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 11909.01
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 203433
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 45452
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 8726.01
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 194150.01
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 50275.99
-      rank: 1
-      percent: 100
-  '2010':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 8973.99
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 184361
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 43522
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 8386.01
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 176582
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 43763
-      rank: 1
-      percent: 100
-  '2012':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 21424.34
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 155035.01
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 32595.01
-      rank: 1
-      percent: 100
-  '2013':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 15448
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 145983.48
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 40418.39
-      rank: 1
-      percent: 100
-  '2014':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 20282
-      rank: 1
-      percent: 100
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 143271.71
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 44650.71
-      rank: 1
-      percent: 100
 revenue:
   '2006':
     - product: Hardrock
@@ -260,3 +69,77 @@ revenue:
       value: 9243922.61
       rank: 1
       percent: 99.33
+federal_production:
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 166622
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 288125
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 260793
+      rank: 1
+      percent: 0
+  '2012':
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 228732
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 253154
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 171
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 209933
+      rank: 1
+      percent: 0
+  '2014':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 8802
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 211295
+      rank: 1
+      percent: 0
+  '2015':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 61262
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 297524
+      rank: 1
+      percent: 0

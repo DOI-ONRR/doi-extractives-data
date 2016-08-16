@@ -1,17 +1,58 @@
 '16029':
   name: Caribou County
   products:
-    Phosphate Raw Ore (tons):
-      name: Phosphate Raw Ore
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 2324385
+        '2010': 2424258
+        '2013': 3423741
+        '2015': 3523585
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': 4960123
+        '2011': 5777094
+        '2014': 4903855
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2010': 4467766
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2005': 2621832
-        '2006': 2381392
-        '2007': 2324385
-        '2008': 2424258
-        '2009': 3423741
-        '2010': 3523585
+        '2011': 2381392
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
         '2011': 4690032
-        '2012': 4467766
-        '2013': 4960123
-        '2014': 5777094
+'16035':
+  name: Clearwater County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': null
+        '2010': null
+        '2013': null
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2007': null
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2011': null
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2011': null

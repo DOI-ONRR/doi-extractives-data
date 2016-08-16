@@ -40,3 +40,326 @@ revenue:
       value: 563.95
       rank: 1
       percent: 100
+federal_production:
+  '2006':
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 25450
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 142519
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 828532
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 7977
+      rank: 1
+      percent: 21.42
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15082187
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 7509611
+      rank: 1
+      percent: 0
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 0
+      rank: 1
+      percent: null
+  '2007':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 818
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 26756
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 149501
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 1004713
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 20015
+      rank: 1
+      percent: 45.21
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 8496403
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 1130
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 35071
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 186127
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 3980067
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 812390
+      rank: 1
+      percent: 96.78
+  '2009':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 3786
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 43284
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 193559
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 6829126
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15293146
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 3863
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 43655
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 237311
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 68
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 5536
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 49204
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 255427
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15936853
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 5818
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 49914
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 383492
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: 498360
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 7628
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: 4849
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 97670
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 462560
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 266370
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 15701
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: 12377
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 105286
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 553283
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 513
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 16560145
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 13696514
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 19664
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: 35500
+      rank: 1
+      percent: 100
+    - product: Potassium Products
+      name: Potassium Products
+      units: null
+      value: 134210
+      rank: 1
+      percent: 100
+    - product: Purge Liquor
+      name: Purge Liquor
+      units: null
+      value: 694735
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 401
+      rank: 1
+      percent: 100

@@ -33,9 +33,15 @@ layout: default
     </a>
     <div class="container-half landing-section" accordion-item>
       <h3 class="h5 landing-heading">
-        <a href="{{ site.baseurl_root }}/explore/federal-production">
-          {% t 'explore-data.production.sub-heading-1' %}
-        </a>
+        {% if site.lang == "de" %}
+          <a href="{{ site.baseurl_root }}/explore/federal-production">
+            {% t 'explore-data.production.sub-heading-1' %}
+          </a>
+        {% elsif site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}/en/explore/federal-production">
+            {% t 'explore-data.production.sub-heading-1' %}
+          </a>
+        {% endif %}
       </h3>
       <div>
         <p class="landing-description">
@@ -45,9 +51,16 @@ layout: default
     </div>
     <div class="container-half landing-section" accordion-item>
       <h3 class="h5 landing-heading">
-        <a href="{{ site.baseurl_root }}/explore/production-charts">
-          {% t 'explore-data.production.sub-heading-2' %}
-        </a>
+
+        {% if site.lang == "de" %}
+          <a href="{{ site.baseurl_root }}/explore/production-charts">
+            {% t 'explore-data.production.sub-heading-2' %}
+          </a>
+        {% elsif site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}/en/explore/production-charts">
+            {% t 'explore-data.production.sub-heading-2' %}
+          </a>
+        {% endif %}
       </h3>
       <div>
         <p class="landing-description">

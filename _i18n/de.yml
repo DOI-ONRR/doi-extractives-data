@@ -1,1 +1,48 @@
 title: "Daten entdecken"
+
+menu:
+    back: "◀ Zurück zu D-EITI.de"
+    about: "Über D-EITI"
+    how-it-work: "Wie funktioniert‘s?"
+    explore-data: "Daten entdecken"
+
+explore-data:
+
+    introduction-first: |
+      Herzlich Willkommen auf dem D-EITI Datenportal.
+      Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken
+      und sich so über den deutschen rohstoffgewinnenden Sektor informieren. Derzeit sind
+      <a href="#production">
+        Daten zur Rohstoffproduktion in Deutschland
+      </a> verfügbar.
+
+    introduction-second: |
+      Daten zu den
+      <a href="#revenue">Einnahmen</a>
+      aus dem deutschen Rohstoffsektor sowie zur
+      <a href="#economic-impact">sozialen und wirtschaftlichen Bedeutung</a>
+      des Sektors werden bis zur Veröffentlichung des 1. D-EITI Berichts im Sommer 2017 stetig ergänzt und hinzugefügt.
+
+    figcaption: |
+      Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
+      <a class="link-alpha" href="#production">Produktionsdaten</a>
+
+    production:
+      heading-1: Rohstoffproduktion in Deutschland
+      sub-heading-1: Interaktive Rohstoffkarte
+      button-lable-1: Die Karte aufrufen
+      description-1: Erstmals überhaupt sind Rohstoffproduktionsdaten auf Ebene der Bundesländer in einer interaktiven Rohstoffkarte verfügbar.
+      sub-heading-2: Gesamtdeutsche Rohstoffproduktion
+      button-lable-2: Produktionsdaten einsehen
+      description-2: Informieren Sie sich darüber, welche Rohstoffe in Deutschland gefördert werden.
+
+    revenue :
+      heading-1: Einnahmen
+      sub-heading-1: Einnahmen aus dem Rohstoffsektor
+      button-lable-1: Einnahmen einsehen
+      description-1: Hier können Sie in Zukunft mehr über die Einnahmen erfahren, die im deutschen Rohstoffsektor erwirtschaftet werden.
+
+    economic-impact:
+      heading-1: Gesellschaftlichte Bedeutung
+      sub-heading-1: Wirtschaftliche und soziale Bedeutung
+      description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.

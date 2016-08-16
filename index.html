@@ -5,25 +5,19 @@ layout: default
 <section class="slab-delta">
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
-      <h1>{% translate 'title' %}</h1>
-      <p class="hero-description">Herzlich Willkommen auf dem D-EITI Datenportal. Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken und sich so über den deutschen rohstoffgewinnenden Sektor informieren. Derzeit sind
-      <a href="#production">Daten zur Rohstoffproduktion in Deutschland</a>
-       verfügbar.</p>
-      <p class="hero-description">Daten zu den
-      <a href="#revenue">Einnahmen</a>
-      aus dem deutschen Rohstoffsektor sowie zur
-      <a href="#economic-impact">sozialen und wirtschaftlichen Bedeutung</a>
-      des Sektors werden bis zur Veröffentlichung des 1. D-EITI Berichts im Sommer 2017 stetig ergänzt und hinzugefügt.
-      </p>
+      <h1>{% t 'title' %}</h1>
+      <p class="hero-description">{% t 'explore-data.introduction-first' %}</p>
+      <p class="hero-description">{% t 'explore-data.introduction-second' %}</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
           <a href="#production">
-            <img class="hero-right_image" src="{{ site.baseurl_root }}/img/explore-landing-intro.png" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi">
+            <img class="hero-right_image" src="{{ site.baseurl_root }}/img/explore-landing-intro.png" alt="Explore landing intro">
           </a>
-          <figcaption class="hero-right_caption">Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
-          <a class="link-alpha" href="#production">Produktionsdaten</a></figcaption>
+          <figcaption class="hero-right_caption">
+            {% t 'explore-data.figcaption' %}
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -32,62 +26,70 @@ layout: default
 
 <section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
-    <a id="production" class="link-no_under"><h2 class="h3 landing-section_category">Rohstoffproduktion in Deutschland</h2></a>
+    <a id="production" class="link-no_under">
+      <h2 class="h3 landing-section_category">
+        {% t 'explore-data.production.heading-1' %}
+      </h2>
+    </a>
     <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{ site.baseurl_root }}/explore/federal-production">Interaktive Rohstoffkarte</a></h3>
-      <button><label class="sr-only">Die Karte aufrufen</label></button>
+      <h3 class="h5 landing-heading">
+        <a href="{{ site.baseurl_root }}/explore/federal-production">
+          {% t 'explore-data.production.sub-heading-1' %}
+        </a>
+      </h3>
+      <button><label class="sr-only">{% t 'explore-data.production.button-lable-1' %}</label></button>
       <div>
-        <p class="landing-description">Erstmals überhaupt sind Rohstoffproduktionsdaten auf Ebene der Bundesländer in einer interaktiven Rohstoffkarte verfügbar.</p>
+        <p class="landing-description">
+          {% t 'explore-data.production.description-1' %}
+        </p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{ site.baseurl_root }}/explore/production-charts">Gesamtdeutsche Rohstoffproduktion</a></h3>
-      <button><label class="sr-only">Produktionsdaten einsehen</label></button>
+      <h3 class="h5 landing-heading">
+        <a href="{{ site.baseurl_root }}/explore/production-charts">
+          {% t 'explore-data.production.sub-heading-2' %}
+        </a>
+      </h3>
+      <button><label class="sr-only">{% t 'explore-data.production.button-lable-2' %}</label></button>
       <div>
-        <p class="landing-description">Informieren Sie sich darüber, welche Rohstoffe in Deutschland gefördert werden</p>
+        <p class="landing-description">
+          {% t 'explore-data.production.description-2' %}
+        </p>
       </div>
     </div>
   </section>
   <section class="container">
-    <a id="revenue" class="link-no_under"><h2 class="h3 landing-section_category">Einnahmen</h2></a>
+    <a id="revenue" class="link-no_under">
+      <h2 class="h3 landing-section_category">
+        {% t 'explore-data.revenue.heading-1' %}
+      </h2></a>
     <div class="container-half landing-section" accordion-item aria-expanded="true">
-      <h3 class="h5 landing-heading"><a href="#"> Einnahmen aus dem Rohstoffsektor </a></h3>
-      <button><label class="sr-only">Einnahmen einsehen</label></button>
+      <h3 class="h5 landing-heading"><a href="#">
+        {% t 'explore-data.revenue.sub-heading-1' %} </a>
+      </h3>
+      <button><label class="sr-only">{% t 'explore-data.revenue.button-lable-1' %}</label></button>
       <div>
-        <p class="landing-description">Hier können Sie in Zukunft mehr über die Einnahmen erfahren, die im deutschen Rohstoffsektor erwirtschaftet werden.</p>
+        <p class="landing-description">
+          {% t 'explore-data.revenue.description-1' %}
+        </p>
       </div>
     </div>
-    <!-- <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Federal revenue by company</a></h3>
-      <button><label class="sr-only">Toggle for federal revenue by company section</label></button>
-      <div>
-        <p class="landing-description">In 2015, the federal government
-        collected over $6.1 billion in royalties from resources extracted on
-        federal lands. Some of the companies that paid the most include Shell,
-        Peabody Energy, Chevron, and BP. <a
-        href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Explore
-        revenues on federal lands and waters in 2015 by company</a> and revenue
-        type.</p>
-      </div>
-    </div>
-    -->
   </section>
   <section class="container">
-    <a id="economic-impact" name="economic-impact" class="link-no_under"><h2 class="h3 landing-section_category">Gesellschaftlichte Bedeutung</h2></a>
+    <a id="economic-impact" name="economic-impact" class="link-no_under">
+      <h2 class="h3 landing-section_category">
+        {% t 'explore-data.economic-impact.heading-1' %}
+      </h2></a>
     <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a>Wirtschaftliche und soziale Bedeutung</a></h3>
+      <h3 class="h5 landing-heading"><a>
+        {% t 'explore-data.economic-impact.sub-heading-1' %}</a>
+      </h3>
       <div>
-        <p class="landing-description"> Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.</p>
+        <p class="landing-description">
+          {% t 'explore-data.economic-impact.description-1' %}
+        </p>
       </div>
     </div>
-    <!-- <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h3>
-      <button><label class="sr-only">Toggle for GDP section</label></button>
-      <div>
-        <p class="landing-description">Extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contributions to the national GDP. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from extractive insustries</a> by state from 2004 to 2013.</p>
-      </div>
-    </div>
-   -->
   </section>
 </section>
 

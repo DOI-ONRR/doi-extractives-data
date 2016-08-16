@@ -49,3 +49,17 @@ how-it-work:
     title: How-it-work?
     description-1: Representation of the context information on the German commodity sector
     description-2: Inform yourself about how commodity projects in Germany planned and what the legal framework and which are government revenues from the extractive industries arise.
+
+about:
+    title: About D-EITI
+    description-1: |
+        Die Extractive Industries Transparency Initiative (EITI) ist ein internationaler Standard zur Förderung des
+        transparenten und verantwortungsvollen Managements von natürlichen Ressourcen. Die Bundesregierung hat im Juli 2014
+        beschlossen der Initiative beizutreten und ist seit dem 23. Februar 2016 offiziell implementierendes EITI-Land.
+        In den nächsten 18 Monaten wird die deutsche EITI (D-EITI) einen Bericht ausarbeiten und veröffentlichen,
+        der sowohl umfassende
+        <a href="{{site.baseurl}}/explore/how-it-work/">Kontextinformationen</a>
+        zum deutschen Rohstoffsektor als auch wichtige
+        <a href="{{ site.baseurl }}/">Daten</a>
+        über den rohstoffgewinnenden Sektor zusammenträgt.
+    description-2:  Besuchen Sie dieses Portal gerne regelmäßig, um über neue Ergebnisse der deutschen EITI Initiative auf dem Laufenden zu bleiben.

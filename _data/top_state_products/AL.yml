@@ -76,127 +76,91 @@ revenue:
       percent: null
 federal_production:
   '2006':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 7
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 1763044
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 28745824
       rank: 1
       percent: 0
   '2007':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 9
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 22446821
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 18028648
+      value: 22393740
       rank: 1
       percent: 0
   '2008':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 483
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 1203
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 23005218
+      value: 22960757
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 16823919
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 20576935
       rank: 1
       percent: 0
   '2010':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 2309
-      rank: 1
-      percent: 100
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 10588
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 2458
-      rank: 1
-      percent: 100
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 62559
-      rank: 1
-      percent: 100
-  '2012':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 4481
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 20609843
+      value: 18777684
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 16790164
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 1760930
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18000308
       rank: 1
       percent: 0
   '2013':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 51808
-      rank: 1
-      percent: 100
-  '2014':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 649123
-      rank: 1
-      percent: 100
-  '2015':
-    - product: Anhydrous Sodium Sulfate (tons)
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      value: 28035645
-      rank: 1
-      percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 18813473
+      value: 12236340
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15178244
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 24798
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13902506
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 40325
       rank: 1
       percent: 0
 all_production:

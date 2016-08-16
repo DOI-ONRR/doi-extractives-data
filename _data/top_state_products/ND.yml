@@ -1,99 +1,132 @@
 federal_production:
   '2006':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 7006941
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 3196317
       rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 18132691
+      value: 8245892
       rank: 1
       percent: 0
   '2007':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 6077708
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 3532980
       rank: 1
-      percent: 100
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 10083371
+      rank: 1
+      percent: 0
   '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 20734447
+      value: 10849684
       rank: 1
       percent: 0
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 7939641
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 44617318
-      rank: 3
-      percent: 2.77
-  '2011':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52429536
-      rank: 1
-      percent: 8.75
+  '2009':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 18195078
+      value: 9969470
       rank: 1
       percent: 0
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 3990337
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 338405
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 11164548
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 2923257
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 14045452
       rank: 1
       percent: 0
   '2012':
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 18244338
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 3859278
       rank: 1
-      percent: 100
-  '2013':
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 17463861
+      value: 18278079
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 29570318
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 4489551
       rank: 1
       percent: 0
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 16266959
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 21893167
       rank: 1
       percent: 0
-  '2015':
-    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
-      name: Geothermal
-      units: 'Direct Utilization, Hundreds of Gallons'
-      value: 338687
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 5051711
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 26373990
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 68650721
+      value: 21003835
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 5261915
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 38023658
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 25365148
       rank: 1
       percent: 0
 revenue:

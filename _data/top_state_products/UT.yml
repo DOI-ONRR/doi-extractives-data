@@ -461,271 +461,277 @@ revenue:
       percent: 100
 federal_production:
   '2006':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
+    - product: Gilsonite (tons)
+      name: Gilsonite
       units: tons
-      value: 20960312
+      value: 8776
       rank: 1
       percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 190119336
+      value: 10097981
       rank: 1
-      percent: 100
-    - product: Sodium Decahydrate (tons)
-      name: Sodium Decahydrate
-      units: tons
-      value: 8591
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 14803
-      rank: 1
-      percent: 100
-    - product: Sodium Sesquicarbonate (tons)
-      name: Sodium Sesquicarbonate
-      units: tons
-      value: 5860771
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 2801244896
-      rank: 1
-      percent: 50.73
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 558756567
+      value: 212844173
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2350934233
       rank: 1
       percent: 0
   '2007':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
+    - product: Gilsonite (tons)
+      name: Gilsonite
       units: tons
-      value: 243905791
+      value: 10879
       rank: 1
       percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
+    - product: Coal (tons)
+      name: Coal
       units: tons
-      value: 191089318
+      value: 6659942
       rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 18987
-      rank: 1
-      percent: 100
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 2022304501
+      value: 243499977
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2046718554
       rank: 1
       percent: 0
   '2008':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
+    - product: Gilsonite (tons)
+      name: Gilsonite
       units: tons
-      value: 9848000
+      value: 16957
       rank: 1
       percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 8580347
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 296600546
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2468886992
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 13016
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 6683745
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 305017592
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2827213958
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 28082
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 6219884
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 288664802
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2670508903
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 7213622
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 300827979
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2554615747
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 35927
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 8792809
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 327559310
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2453647854
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 8108509
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 297246717
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 16233458
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2316266258
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: 33520
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 8084545
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 279981808
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 165100000
+      rank: 1
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2463584337
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13228964
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: 51791
+      rank: 1
+      percent: 100
+    - product: Gilsonite (tons)
+      name: Gilsonite
       units: tons
       value: 16078
       rank: 1
       percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 31362
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 5469603
       rank: 1
-      percent: 100
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 261770435
+      rank: 1
+      percent: 0
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 2976256905
+      value: 162673000
       rank: 1
       percent: 0
-  '2009':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 11923400
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 69935
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 2649894964
-      rank: 1
-      percent: 40.32
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2305263544
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 23327200
-      rank: 1
-      percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
-      units: tons
-      value: 95
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 81802
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 39392000
-      rank: 1
-      percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
-      units: tons
-      value: 184
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 146922
-      rank: 1
-      percent: 100
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 1335972
-      rank: 1
-      percent: 0
-  '2012':
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 4187278
-      rank: 1
-      percent: 100
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 47693600
-      rank: 1
-      percent: 100
-    - product: Sodium Bisulfite (tons)
-      name: Sodium Bisulfite
-      units: tons
-      value: 1755
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 401612
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 2784242062
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 21808
-      rank: 1
-      percent: 100
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 320619275
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 755494
-      rank: 1
-      percent: 100
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 2930013174
-      rank: 1
-      percent: 52.87
-  '2014':
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 155915
-      rank: 1
-      percent: 100
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 711642702
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 1114518
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 3149901672
-      rank: 1
-      percent: 0
-  '2015':
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 912753
-      rank: 1
-      percent: 100
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 752090351
-      rank: 1
-      percent: 100
-    - product: Sodium Products
-      name: Sodium Products
-      units: null
-      value: 2853662
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 2873318972
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 2139260182
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 11360493
       rank: 1
       percent: 0
 all_production:

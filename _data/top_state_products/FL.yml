@@ -118,11 +118,3 @@ revenue:
       value: 80956.84
       rank: 2
       percent: 0.76
-federal_production:
-  '2011':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 77
-      rank: 1
-      percent: 0

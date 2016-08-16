@@ -1,29 +1,28 @@
 '42053':
   name: Forest County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 15649
-        '2009': 12847
-        '2012': 10914
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 52424
-        '2014': 22210
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2009': 8782
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2014': 43720
+        '2009': 43720
+        '2010': 52424
+        '2011': 22210
+        '2012': 15649
+        '2013': 12847
+        '2014': 10914
+        '2015': 8782
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 6310
+        '2010': 5986
+        '2011': 2551
+        '2012': 1769
+        '2013': 1498
+        '2014': 1158
+        '2015': 940
 '42063':
   name: Indiana County
   products:
@@ -32,27 +31,15 @@
       units: mcf
       volume:
         '2006': 5977
-        '2009': 6778
-        '2011': 6391
-        '2014': 5593
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 3953
-        '2009': 5121
-        '2012': 3379
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 4954
-        '2014': 5426
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2009': 2209
+        '2007': 6778
+        '2008': 6391
+        '2009': 5593
+        '2010': 4954
+        '2011': 5426
+        '2012': 3953
+        '2013': 5121
+        '2014': 3379
+        '2015': 2209
 '42129':
   name: Westmoreland County
   products:
@@ -61,24 +48,12 @@
       units: mcf
       volume:
         '2006': 9472
-        '2009': 13135
-        '2011': 10753
-        '2014': 10251
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 5184
-        '2009': 9192
-        '2012': 4381
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2007': 7251
-        '2014': 9671
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2009': 2160
+        '2007': 13135
+        '2008': 10753
+        '2009': 10251
+        '2010': 7251
+        '2011': 9671
+        '2012': 5184
+        '2013': 9192
+        '2014': 4381
+        '2015': 2160

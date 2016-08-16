@@ -1,13 +1,9 @@
 '53041':
   name: Lewis County
   products:
-    Sylvite-Raw Ore (tons):
-      name: Sylvite-Raw Ore
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2007': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2013': null
+        '2014': null
+        '2015': null

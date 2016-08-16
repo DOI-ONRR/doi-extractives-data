@@ -1,143 +1,101 @@
 federal_production:
   '2006':
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 120165
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 222908
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 6350
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 9876516
+      value: 9947099
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 3746
+  '2007':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 2400
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 9874095
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12040947
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17902901
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18909311
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17840902
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15478747
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13661475
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15170981
       rank: 1
       percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13661476
-      rank: 3
-      percent: 0.6
-  '2008':
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 554252
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 6854772
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 672671
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12040955
+      value: 1
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 17840904
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 8620231
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 3642638
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Borax-Anhydrous (tons)
-      name: Borax-Anhydrous
-      units: tons
-      value: 43197
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 4628930
-      rank: 1
-      percent: 100
-  '2012':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 1677
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 23
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17902907
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 5185
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate (tons)
-      name: Borax-Decahydrate
-      units: tons
-      value: 6350
-      rank: 1
-      percent: 100
-  '2014':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 21148
-      rank: 1
-      percent: 100
   '2015':
-    - product: Borate Products (tons)
-      name: Borate Products
-      units: tons
-      value: 34328
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 4701
       rank: 1
       percent: 100
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 18909313
+      value: 13224588
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 2
       rank: 1
       percent: 0

@@ -1,62 +1,83 @@
 federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 8211
+      rank: 1
+      percent: 0
   '2007':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 26790
+      value: 8079
       rank: 1
       percent: 0
   '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 20243
+      value: 6965
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12213
       rank: 1
       percent: 0
   '2010':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 41395
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 42380
+      value: 14074
       rank: 1
       percent: 0
   '2011':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 45407
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 14336
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 41478
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 14461
       rank: 1
       percent: 0
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 46455
+      value: 14385
       rank: 1
       percent: 0
   '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 26776
+      rank: 1
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 39142
+      value: 19162
       rank: 1
       percent: 0
   '2015':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 46087
+      value: 23106
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 16036
       rank: 1
       percent: 0

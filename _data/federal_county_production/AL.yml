@@ -1,66 +1,51 @@
 '1003':
   name: Baldwin County
   products:
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2007': 9
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006': 51808
         '2007': 66305
-        '2009': 61347
-        '2012': 60034
-        '2015': 48367
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007': 41802
+        '2008': 61347
+        '2009': 60034
+        '2010': 48367
+        '2011': 43324
+        '2012': 41802
+        '2013': 51251
+        '2014': 40642
+        '2015': 23365
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 51251
-        '2010': 40642
-        '2013': 23365
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 43324
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2013': 51808
+        '2006': 9
+        '2007': 8
+        '2008': 10
+        '2009': 7
+        '2010': 24
+        '2011': 15
+        '2012': 19
+        '2013': 19
+        '2014': 16
+        '2015': 9
 '1007':
   name: Bibb County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007': null
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
+    Clay (tons):
+      name: Clay
       units: tons
       volume:
-        '2008': null
+        '2006': null
+        '2007': null
 '1023':
   name: Choctaw County
   products:
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
+    Oil (bbl):
+      name: Oil
+      units: bbl
       volume:
         '2006': 7
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
         '2007': 9
 '1035':
   name: Conecuh County
@@ -69,42 +54,26 @@
       name: Oil
       units: bbl
       volume:
-        '2007': 900
-        '2010': 2411
-        '2013': 1182
+        '2013': 900
+        '2014': 2411
+        '2015': 1182
 '1039':
   name: Covington County
   products:
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007': 42008
-        '2009': 33576
-        '2012': 22996
-        '2015': 21809
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007': 14984
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 11296
-        '2010': 6431
-        '2013': 3856
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 18188
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2011': 62559
+        '2006': 62559
+        '2007': 42008
+        '2008': 33576
+        '2009': 22996
+        '2010': 21809
+        '2011': 18188
+        '2012': 14984
+        '2013': 11296
+        '2014': 6431
+        '2015': 3856
 '1053':
   name: Escambia County
   products:
@@ -112,136 +81,101 @@
       name: Gas
       units: mcf
       volume:
+        '2006': 2309
         '2007': 2158
-        '2009': 2131
-        '2012': 1935
-        '2015': 1844
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007': 9507
+        '2008': 2131
+        '2009': 1935
+        '2010': 1844
+        '2011': 711
+        '2014': 971
+        '2015': 9319
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 8818
-        '2010': 971
-        '2013': 9319
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 711
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2010': 2309
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2010': 10588
+        '2006': 10588
+        '2007': 9902
+        '2008': 9771
+        '2009': 8879
+        '2010': 8459
+        '2011': 9558
+        '2012': 9507
+        '2013': 8818
+        '2014': 10353
+        '2015': 30673
 '1057':
   name: Fayette County
   products:
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2006': 1760930
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': null
-    Gas (mcf):
-      name: Gas
-      units: mcf
-      volume:
-        '2007': null
-        '2009': null
-        '2012': null
-        '2015': null
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
+    Coal (tons):
+      name: Coal
       units: tons
       volume:
-        '2009': null
-        '2012': 4481
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': null
-'1073':
-  name: Jefferson County
-  products:
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
         '2006': null
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
         '2010': null
+        '2011': null
+        '2012': 1760930
         '2013': null
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007': null
-        '2009': null
-        '2012': null
-        '2015': null
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
+        '2006': 4481
+        '2007': 4737
+        '2008': 4509
+        '2009': 3931
+        '2010': 3246
+        '2011': 3896
+        '2012': 1453
+'1073':
+  name: Jefferson County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
       volume:
+        '2007': null
+        '2008': null
         '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
 '1075':
   name: Lamar County
   products:
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2006': 661
-        '2007': 778
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
+        '2006': 2458
         '2007': 1659
-        '2009': 976
-        '2012': 663
-        '2015': 661
+        '2008': 976
+        '2009': 663
+        '2010': 661
+        '2011': 566
+        '2012': 661
+        '2013': 651
+        '2014': 434
+        '2015': 243
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 651
-        '2010': 434
-        '2013': 243
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2009': 1203
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 566
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2011': 2458
+        '2006': 1203
+        '2007': 1146
+        '2008': 1094
+        '2009': 1019
+        '2010': 917
+        '2011': 838
+        '2012': 778
+        '2013': 696
+        '2014': 667
+        '2015': 597
 '1097':
   name: Mobile County
   products:
@@ -249,37 +183,30 @@
       name: Gas
       units: mcf
       volume:
+        '2006': 28035645
         '2007': 21627470
-        '2009': 22277408
-        '2012': 19941926
-        '2015': 18167855
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007': 17477538
+        '2008': 22277408
+        '2009': 19941926
+        '2010': 18167855
+        '2011': 16216344
+        '2012': 17477538
+        '2013': 11746676
+        '2014': 14735738
+        '2015': 13477155
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007': 11746676
-        '2010': 14735738
-        '2013': 13477155
-    Borate Products (tons):
-      name: Borate Products
-      units: tons
-      volume:
-        '2008': 483
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 16216344
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2015': 28035645
+        '2006': 483
+        '2007': 8
+        '2008': 10
+        '2009': 7
+        '2010': 4580
+        '2011': 5156
+        '2012': 5166
+        '2013': 4879
+        '2014': 4920
+        '2015': 4008
 '1125':
   name: Tuscaloosa County
   products:
@@ -287,29 +214,13 @@
       name: Gas
       units: mcf
       volume:
+        '2006': 649123
         '2007': 691411
-        '2009': 614386
-        '2012': 568446
-        '2015': 555711
-    'Geothermal - Electrical Generation, Other':
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      volume:
-        '2007': 478854
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2007': 437762
-        '2010': 400459
-        '2013': 392424
-    'Geothermal - Electrical Generation, Kilowatt Hours':
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      volume:
-        '2009': 525323
-    Anhydrous Sodium Sulfate (tons):
-      name: Anhydrous Sodium Sulfate
-      units: tons
-      volume:
-        '2014': 649123
+        '2008': 614386
+        '2009': 568446
+        '2010': 555711
+        '2011': 525323
+        '2012': 478854
+        '2013': 437762
+        '2014': 400459
+        '2015': 392424

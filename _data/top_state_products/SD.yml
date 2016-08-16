@@ -3,46 +3,81 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1708366
+      value: 1529459
       rank: 1
       percent: 0
   '2007':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1887163
-      rank: 1
-      percent: 0
-  '2009':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 2490260
-      rank: 1
-      percent: 98.34
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1854306
+      value: 1669547
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1718266
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1882515
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1737523
       rank: 1
       percent: 0
   '2011':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1897920
+      value: 1879793
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 2538006
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 2706881
       rank: 1
       percent: 0
   '2014':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 2049222
+      value: 2510082
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 2037832
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 175541
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 2334610
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 155650
       rank: 1
       percent: 0

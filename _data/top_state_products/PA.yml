@@ -7,43 +7,78 @@ federal_production:
       rank: 1
       percent: 0
   '2007':
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 70615
-      rank: 1
-      percent: 0
-  '2009':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 19913
       rank: 1
       percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: 14091
-      rank: 2
-      percent: 0.56
-  '2011':
+  '2008':
     - product: Gas (mcf)
       name: Gas
       units: mcf
       value: 17144
       rank: 1
       percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 59564
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 64629
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 37307
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 24786
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 27160
+      rank: 1
+      percent: 0
   '2014':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 65874
+      value: 18674
       rank: 1
       percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 39858
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1158
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13151
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 940
       rank: 1
       percent: 0
 all_production:

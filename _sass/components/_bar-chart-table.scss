@@ -12,6 +12,14 @@
     background: $white;
   }
 
+  tbody > tr.selected {
+    font-weight: $weight-book;
+
+    &[data-year-values] {
+      border-bottom: 0;
+    }
+  }
+
   .bar {
     background: $light-gray;
   }
@@ -34,6 +42,12 @@
 
   [data-year-values="null"] {
     display: none;
+  }
+
+  [data-sentence] {
+    font-weight: $weight-book;
+    padding-left: calc(#{$standard-padding-lite} + 5px + 1rem);
+    padding-top: 0;
   }
 
   .swatch {

@@ -90,6 +90,19 @@ eiti-data-map {
       text-align: left;
     }
   }
+
+  .feature.county {
+    cursor: pointer;
+
+    &.selected,
+    &:hover,
+    &:active,
+    &:focus {
+      stroke: $green-dark-chart;
+      stroke-width: 3px;
+    }
+  }
+
 }
 
 .legend-svg,

@@ -40,6 +40,7 @@
       {% assign units_suffix = units_map[units].suffix | default '' %}
       {% assign units_title = units_map[units].title %}
 
+
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
         <div class="row-container">
@@ -55,8 +56,9 @@
 
             <figure class="chart">
               <figcaption id="federal-production-figures-{{ product_slug }}">
+
               <span class="eiti-bar-chart-y-value"
-                      data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                    data-format=",">{{ volume | default: 0 | intcomma }}</span>
               {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
               produced on federal land in {{ state_name }} in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>
@@ -82,7 +84,7 @@
 
 
             {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
-            <figure>
+            <figure is="eiti-data-map-table">
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
@@ -118,6 +120,7 @@
                   product_ref=product_ref
                   long_units=long_units
                   caption=caption
+                  sentence=sentence
                 %}
               </div><!-- /.table-container -->
 

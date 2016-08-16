@@ -1,5 +1,3 @@
-title: "Daten entdecken"
-
 menu:
     back: "◀ Zurück zu D-EITI.de"
     about: "Über D-EITI"
@@ -7,7 +5,7 @@ menu:
     explore-data: "Daten entdecken"
 
 explore-data:
-
+    title: "Daten entdecken"
     introduction-first: |
       Herzlich Willkommen auf dem D-EITI Datenportal.
       Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken
@@ -46,3 +44,8 @@ explore-data:
       heading-1: Gesellschaftlichte Bedeutung
       sub-heading-1: Wirtschaftliche und soziale Bedeutung
       description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
+
+how-it-work:
+    title: Wie funktioniert‘s?
+    description-1: Darstellung der Kontextinformationen zum deutschen Rohstoffsektor
+    description-2: Informieren sie sich darüber, wie Rohstoffprojekte in Deutschland geplant und umgesetzt werden, was die gesetzlichen Rahmenbedingungen sind und welche staatlichen Einnahmen aus der rohstoffgewinnenden Industrie entstehen.

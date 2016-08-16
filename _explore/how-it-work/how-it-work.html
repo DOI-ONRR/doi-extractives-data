@@ -1,19 +1,16 @@
 ---
-title: Wie funktioniert‘s?
 layout: default
 permalink: /explore/how-it-work/
 ---
 <section class="slab-delta">
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
-      <h1>{{ page.title }}</h1>
+      <h1>{% t 'how-it-work.title' %}</h1>
       <p class="hero-description">
-        Darstellung der Kontextinformationen zum deutschen Rohstoffsektor
+        {% t 'how-it-work.description-1' %}
       </p>
       <p>
-        Informieren sie sich darüber, wie Rohstoffprojekte in Deutschland geplant und umgesetzt werden,
-        was die gesetzlichen Rahmenbedingungen sind und welche staatlichen Einnahmen aus der rohstoffgewinnenden
-        Industrie entstehen.
+        {% t 'how-it-work.description-2' %}
       </p>
     </div>
   </div>
@@ -23,12 +20,12 @@ permalink: /explore/how-it-work/
   <section class="container">
     <div class="container-outer landing-section_top">
       <div class="hero-left">
-        <img src="{{ site.baseurl }}/img/how-it-works/Bild_wie funktionierts.jpg"
+        <img src="{{ site.baseurl_root }}/img/how-it-works/Bild_wie funktionierts.jpg"
             alt="Wie funktioniert‘s"
         >
       </div>
   </section>
 </section>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl_root }}/js/pages/federal-production.js"></script>

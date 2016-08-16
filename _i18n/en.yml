@@ -1,11 +1,11 @@
-title: "Explore data"
-
 menu:
     back: "◀ Back to D-EITI.de"
     about: "About D-EITI"
     how-it-work: "How it Work's?"
     explore-data: "Explore Data"
+
 explore-data:
+    title: "Explore data"
     introduction-first: |
       Welcome to the D-EITI data portal.
       Here you can discover the data collected as part of the D-EITI implementation data
@@ -44,3 +44,8 @@ explore-data:
       heading-1: Gesellschaftlichte Bedeutung
       sub-heading-1: Wirtschaftliche und soziale Bedeutung
       description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
+
+how-it-work:
+    title: How-it-work?
+    description-1: Representation of the context information on the German commodity sector
+    description-2: Inform yourself about how commodity projects in Germany planned and what the legal framework and which are government revenues from the extractive industries arise.

@@ -15,35 +15,47 @@
     <div style="clear:both"></div>
     <ul class="header-nav_bottom">
       <li>
-        <a href="http://www.d-eiti.de/de/">◀ Zurück zu D-EITI.de</a>
+        <a href="http://www.d-eiti.de/de/">{% t 'menu.back' %}</a>
       </li>
       <li>
-        <a href="{{ site.baseurl_root }}/explore/about">Über D-EITI</a>
+        {% if site.lang == "de" %}
+          <a href="{{ site.baseurl_root }}/explore/about"> {% t 'menu.about' %} </a>
+        {% elsif site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}/en/explore/about"> {% t 'menu.about' %} </a>
+        {% endif %}
       </li>
       <li>
-        <a href="{{ site.baseurl_root }}/explore/how-it-work">Wie funktioniert‘s?</a>
+        {% if site.lang == "de" %}
+        <a href="{{ site.baseurl_root }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
+        {% elsif site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}/en/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
+        {% endif %}
       </li>
       <li>
-        <a href="/">Daten entdecken</a>
+        {% if site.lang == "de" %}
+          <a href="{{ site.baseurl_root }}/">{% t 'menu.explore-data' %}</a>
+        {% elsif site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}/en">{% t 'menu.explore-data' %}</a>
+        {% endif %}
       </li>
     </ul>
   </nav>
   <div class="flag-container container">
+        {% if site.lang == "de" %}
+        {% capture link1 %} {{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+        {% elsif site.lang == "en" %}
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+        {% endif %}
       <ul>
         <li class="lang-item">
-          {% if site.lang == "de" %}
-          {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
           <a href="{{ link1 }}" >
             <img src="{{ site.baseurl_root }}/img/counties/en_GB.png" title="English" alt="English">
           </a>
         </li>
-          {% elsif site.lang == "en" %}
         <li class="lang-item">
-          {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
           <a href="{{ link2 }}" >
             <img src="{{ site.baseurl_root }}/img/counties/de_DE.png" title="Deutsch" alt="Deutsch">
           </a>
-          {% endif %}
         </li>
       </ul>
   </div>

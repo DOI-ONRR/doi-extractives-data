@@ -1,5 +1,4 @@
 ---
-title: Einnahmen
 layout: default
 permalink: /explore/production-charts/
 ---
@@ -7,12 +6,12 @@ permalink: /explore/production-charts/
 <section id="federal-production" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
-      <h1>Rohstoffproduktion in Deutschland</h1>
-      <p>Hier können Sie den Wert und die Menge der gesamten Rohstoffproduktion in Deutschland einsehen.</p>
-      <p>Über den Filter können Sie sich einen Einblick in die zeitliche Entwicklung der Rohstoffförderung in Deutschland verschaffen.</p>
-      <p>Weitere Informationen zu den Datenquellen sowie ein Link zu den Originaldaten sind hier einzusehen:</p>
+      <h1>{% t 'charts-production.title' %}</h1>
+      <p>{% t 'charts-production.description-1' %}</p>
+      <p>{% t 'charts-production.description-2' %}</p>
+      <p>{% t 'charts-production.description-3' %}</p>
       <a href="{{site.baseurl}}/downloads/production-chart/">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Daten Einsehen
+        <icon class="fa fa-file-text-o u-padding-right"></icon>{% t 'charts-production.icon' %}
       </a>
     </div>
   </div>
@@ -23,19 +22,21 @@ permalink: /explore/production-charts/
       <div class="toggle-filters-container">
         <button class="toggle-filters toggle-desktop" is="eiti-toggle"
           aria-controls="filters" data-collapsed-text="Filter öffnen" aria-expanded="false"
-          data-expanded-text="Filter schließen" data-toggler="filters">Filter öffnen</button>
-        <a class="clear-filters" href="#year=2014">(Filter zurücksetzen)</a>
+          data-expanded-text="Filter schließen" data-toggler="filters">
+          {% t 'charts-production.open-filter' %}
+        </button>
+        <a class="clear-filters" href="#year=2014">{% t 'charts-production.reset-filter' %}</a>
       </div>
 
       <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h2 class="h3">Jahr auswählen</h2>
+          <h2 class="h3">{% t 'charts-production.select-year' %}</h2>
         </div>
 
         <div class="container-left-6">
           <div id="product-filter" class="filter">
-            <label for="product-selector">Jahr</label>
+            <label for="product-selector">{% t 'charts-production.year' %}</label>
             <select id="product-selector" name="product">
               <option value="">2014</option>
             </select>
@@ -47,7 +48,7 @@ permalink: /explore/production-charts/
         <a class="back-btn" href="#year=2014">
           <img src="/img/left-arrow.png" alt="">
         </a>
-        Gesamtproduktion in Deutschland
+        {% t 'charts-production.total-product-in-germany' %}
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </div>
 
@@ -58,7 +59,7 @@ permalink: /explore/production-charts/
     </div>
 
     <div class="filter-description_wrapper" data-filter-description="" class="filter-description filter-description_open">
-        Gesamtproduktion in Deutschland
+        {% t 'charts-production.total-product-in-germany' %}
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
     </div>
 
@@ -89,36 +90,6 @@ permalink: /explore/production-charts/
 
 <script>
 $(document).ready(function(){
-
-  // $.ajax({
-  //       type: "GET",
-  //       url: "../data.tsv",
-  //       dataType: "text",
-  //       success: function(data) {processData(data);}
-  //       });
-  //   function processData(data) {
-  //       var lines = data.split(/\r\n|\n/);
-  //
-  //       var time = [];
-  //       var data1 = [];
-  //       var data2 = [];
-  //       var data3 = [];
-  //
-  //       var headings = lines[0].split(' '); // Splice up the first row to get the headings
-  //
-  //       for (var j=1; j<lines.length; j++) {
-  //       var values = lines[j].split(' '); // Split up the comma seperated values
-  //          // We read the key,1st, 2nd and 3rd rows
-  //          time.push(values[0]); // Read in as string
-  //          // Recommended to read in as float, since we'll be doing some operations on this later.
-  //          data1.push(parseFloat(values[1]));
-  //          data2.push(parseFloat(values[2]));
-  //          data3.push(parseFloat(values[3]));
-  //
-  //       }
-  //       var x= 0;
-  //     console.log(headings[0]+" : "+time[x]+headings[1]+" : "+data1[x]+headings[2]+" : "+data2[x]+headings[4]+" : "+data2[x]);
-  //     }
 
   var category = [
       {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden"}
@@ -294,4 +265,4 @@ $(document).ready(function(){
 /* end Second Graph */
 
 </script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/explore.min.js" charset="utf-8"></script>

@@ -6,51 +6,59 @@ permalink: /explore/federal-production/
 <section id="federal-production" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
-      <h1>Interaktive Rohstoffkarte</h1>
+      <h1>{% t 'federal-production.heading-1' %}</h1>
 
-      <p>In dieser interaktiven Rohstoffkarte können Sie Informationen zu einzelnen Rohstoffen und den Bundesländern auswählen.</p>
-      <p>Benutzen Sie hierfür den Filter (oben rechts).</p>
-      <p>Weitere Informationen zu Datenquellen sowie Links zu Originaldaten sind hier einzusehen:</p>
+      <p>{% t 'federal-production.description-1' %}</p>
+      <p>{% t 'federal-production.description-2' %}</p>
+      <p>{% t 'federal-production.description-3' %}</p>
 
       <a href="{{site.baseurl}}/downloads/federal-production/">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Daten Einsehen
+        <icon class="fa fa-file-text-o u-padding-right"></icon>{% t 'federal-production.icon' %}
       </a>
 
     </div>
   </div>
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
-
-
       <div class="toggle-filters-container">
         <button class="toggle-filters toggle-desktop" is="eiti-toggle"
           aria-controls="filters" data-collapsed-text="Filter öffnen" aria-expanded="false"
-          data-expanded-text="Filter schließen" data-toggler="filters">Filter einblenden</button>
-        <a class="clear-filters" href="#year=2014&product=select">(Filter zurücksetzen)</a>
+          data-expanded-text="Filter schließen" data-toggler="filters">
+          {% t 'federal-production.filter-container.show-filter' %}
+        </button>
+        <a class="clear-filters" href="#year=2014&product=select">
+          {% t 'federal-production.filter-container.reset-filter' %}
+        </a>
       </div>
 
       <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h2 class="h3">Rohstoffkarte filtern</h2>
-          <p>Wählen Sie einen Rohstoff oder ein Bundesland, um entsprechende Informationen einzusehen.</p>
+          <h2 class="h3">{% t 'federal-production.filter-container.filters.heading' %}</h2>
+          <p>{% t 'federal-production.filter-container.filters.description' %}</p>
         </div>
 
         <div class="container-left-6">
           <div id="product-filter" class="filter">
-            <label for="product-selector">Rohstoff</label>
+            <label for="product-selector">{% t 'federal-production.filter-container.product-filter.lable' %}</label>
             <select id="product-selector" name="product">
-              <option value="select">Bitte auswählen</option>
-              <option value="">Alle Rohstoffe</option>
+              <option value="select">{% t 'federal-production.filter-container.product-filter.select' %}</option>
+              <option value="">{% t 'federal-production.filter-container.product-filter.value' %}</option>
             </select>
           </div>
         </div>
         <div class="container-right-6">
           <div class="filter">
-            <label for="region-selector">Bundesland</label>
+            <label for="region-selector">
+              {% t 'federal-production.filter-container.region-selector.lable' %}
+            </label>
             <select id="region-selector" name="region">
-              <option value="">Bitte auswählen</option>
-              <option value="DE">Ganz Deutschland</option>
+              <option value="">
+                {% t 'federal-production.filter-container.region-selector.select' %}
+              </option>
+              <option value="DE">
+                {% t 'federal-production.filter-container.region-selector.value' %}
+              </option>
               <optgroup label="Bundesländer">
                 {% for state in site.data.states %}
                 <option value="{{ state.id }}">{{ state.name }}</option>
@@ -65,7 +73,9 @@ permalink: /explore/federal-production/
         {% assign year_sel_display = 'none' %}
         {% endif %}
         <div class="container-left" style="display: {{year_sel_display}}">
-          <label for="year-selector">Jahre <span class="units"></span></label>
+          <label for="year-selector">
+            {% t 'federal-production.year' %}
+             <span class="units"></span></label>
         </div>
         <svg id="timeline" class="timeline" viewBox="0 0 1024 60" style="display: {{year_sel_display}}"></svg>
 
@@ -81,14 +91,18 @@ permalink: /explore/federal-production/
         <a class="back-btn" href="#year=2014&product=select">
           <img src="/img/left-arrow.png" alt="">
         </a>
-        <span href="#product-selector" class="filter-part" data-key="product">Alle Rohstoffe</span>
-        gefördert in
-        <span href="#region-selector" class="filter-part" data-key="region">ganz Deutschland</span>
+        <span href="#product-selector" class="filter-part" data-key="product">
+          {% t 'federal-production.filter-container.raw-materials' %}
+        <span href="#region-selector" class="filter-part" data-key="region">
+          {% t 'federal-production.filter-container.entire-germany' %}
+        </span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
       </div>
 
       <div data-filter-description="" class="filter-description for-select" style="display:none">
-        <span>Filter einstellen:</span>
+        <span>
+          {% t 'federal-production.filter-container.set-filter' %}
+        </span>
       </div>
 
       <div class="container">
@@ -98,9 +112,11 @@ permalink: /explore/federal-production/
     </div>
 
     <div class="filter-description_wrapper" data-filter-description="" class="filter-description filter-description_open">
-        <span href="#product-selector" class="filter-part" data-key="product">Alle Rohstoffe</span>
-        gefördert in
-        <span href="#region-selector" class="filter-part" data-key="region">ganz Deutschland</span>
+        <span href="#product-selector" class="filter-part" data-key="product">
+          {% t 'federal-production.filter-container.raw-materials' %}
+        <span href="#region-selector" class="filter-part" data-key="region">
+          {% t 'federal-production.filter-container.entire-germany' %}
+        </span>
         (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
     </div>
 
@@ -128,7 +144,9 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h2 class="region-header-category">Förderung nach Bundesland <span class="units"></span></h2>
+          <h2 class="region-header-category">
+            {% t 'federal-production.filter-container.map.heading-units' %}
+            <span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -151,7 +169,9 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h2 class="region-header-category">Föderung in <span class="state"></span></h2>
+          <h2 class="region-header-category">
+            {% t 'federal-production.filter-container.map.heading-state' %}
+            <span class="state"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -183,7 +203,9 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h2 class="region-header-category">Production by offshore area <span class="units"></span></h2>
+          <h2 class="region-header-category">
+            {% t 'federal-production.filter-container.map.heading-production' %}
+            <span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -195,7 +217,7 @@ permalink: /explore/federal-production/
     </div>
   </section>
 </section>
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
@@ -211,4 +233,4 @@ permalink: /explore/federal-production/
   };
 </script>
 
-<script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>
+<script src="{{ site.baseurl_root }}/js/pages/federal-production.js"></script>

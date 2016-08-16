@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -45,20 +45,20 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl_root }}/img/favicon.png">
 
     <!-- Styles
     ================================================== -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl_root }}/css/main.css">
 
     <!-- Scripts
     ================================================== -->
-    <script src="{{ site.baseurl }}/js/lib/main.min.js" charset="utf-8"></script>
+    <script src="{{ site.baseurl_root }}/js/lib/main.min.js" charset="utf-8"></script>
 
     <script>
       eiti.beckleyApiKey = '{{ site.beckley_api_key }}' || '';
       eiti.data = eiti.data || {};
-      eiti.data.path = '{{ site.baseurl }}/data/';
+      eiti.data.path = '{{ site.baseurl_root }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
       eiti.resource = ({{ site.data.resource|jsonify }});
     </script>

@@ -1,0 +1,111 @@
+menu:
+    back: "◀ Zurück zu D-EITI.de"
+    about: "Über D-EITI"
+    how-it-work: "Wie funktioniert‘s?"
+    explore-data: "Daten entdecken"
+
+explore-data:
+    title: "Daten entdecken"
+    introduction-first: |
+      Herzlich Willkommen auf dem D-EITI Datenportal.
+      Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken
+      und sich so über den deutschen rohstoffgewinnenden Sektor informieren. Derzeit sind
+      <a href="#production">
+        Daten zur Rohstoffproduktion in Deutschland
+      </a> verfügbar.
+
+    introduction-second: |
+      Daten zu den
+      <a href="#revenue">Einnahmen</a>
+      aus dem deutschen Rohstoffsektor sowie zur
+      <a href="#economic-impact">sozialen und wirtschaftlichen Bedeutung</a>
+      des Sektors werden bis zur Veröffentlichung des 1. D-EITI Berichts im Sommer 2017 stetig ergänzt und hinzugefügt.
+
+    figcaption: |
+      Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
+      <a class="link-alpha" href="#production">Produktionsdaten</a>
+
+    production:
+      heading-1: Rohstoffproduktion in Deutschland
+      sub-heading-1: Interaktive Rohstoffkarte
+      description-1: Erstmals überhaupt sind Rohstoffproduktionsdaten auf Ebene der Bundesländer in einer interaktiven Rohstoffkarte verfügbar.
+      sub-heading-2: Gesamtdeutsche Rohstoffproduktion
+      description-2: Informieren Sie sich darüber, welche Rohstoffe in Deutschland gefördert werden.
+
+    revenue :
+      heading-1: Einnahmen
+      sub-heading-1: Einnahmen aus dem Rohstoffsektor
+      description-1: Hier können Sie in Zukunft mehr über die Einnahmen erfahren, die im deutschen Rohstoffsektor erwirtschaftet werden.
+
+    economic-impact:
+      heading-1: Gesellschaftlichte Bedeutung
+      sub-heading-1: Wirtschaftliche und soziale Bedeutung
+      description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
+
+how-it-work:
+    title: Wie funktioniert‘s?
+    description-1: Darstellung der Kontextinformationen zum deutschen Rohstoffsektor
+    description-2: Informieren sie sich darüber, wie Rohstoffprojekte in Deutschland geplant und umgesetzt werden, was die gesetzlichen Rahmenbedingungen sind und welche staatlichen Einnahmen aus der rohstoffgewinnenden Industrie entstehen.
+
+about:
+    title: Über D-EITI
+    description-1: |
+        Die Extractive Industries Transparency Initiative (EITI) ist ein internationaler Standard zur Förderung des
+        transparenten und verantwortungsvollen Managements von natürlichen Ressourcen. Die Bundesregierung hat im Juli 2014
+        beschlossen der Initiative beizutreten und ist seit dem 23. Februar 2016 offiziell implementierendes EITI-Land.
+        In den nächsten 18 Monaten wird die deutsche EITI (D-EITI) einen Bericht ausarbeiten und veröffentlichen,
+        der sowohl umfassende
+        <a href="{{site.baseurl}}/explore/how-it-work/">Kontextinformationen</a>
+        zum deutschen Rohstoffsektor als auch wichtige
+        <a href="{{ site.baseurl }}/">Daten</a>
+        über den rohstoffgewinnenden Sektor zusammenträgt.
+    description-2:  Besuchen Sie dieses Portal gerne regelmäßig, um über neue Ergebnisse der deutschen EITI Initiative auf dem Laufenden zu bleiben.
+
+federal-production:
+    heading-1: Interaktive Rohstoffkarte
+    description-1: In dieser interaktiven Rohstoffkarte können Sie Informationen zu einzelnen Rohstoffen und den Bundesländern auswählen.
+    description-2: Benutzen Sie hierfür den Filter (oben rechts).
+    description-3: "Weitere Informationen zu Datenquellen sowie Links zu Originaldaten sind hier einzusehen:"
+    icon: Daten Einsehen
+
+    filter-container:
+      show-filter: Filter einblenden
+      reset-filter: (Filter zurücksetzen)
+
+      filters:
+        heading: Rohstoffkarte filtern
+        description: Wählen Sie einen Rohstoff oder ein Bundesland, um entsprechende Informationen einzusehen.
+
+      product-filter:
+        lable: Rohstoff
+        select: Bitte auswählen
+        value: Alle Rohstoffe
+
+      region-selector:
+        lable: Bundesland
+        select: Bitte auswählen
+        value: Ganz Deutschland
+
+      raw-materials: Alle Rohstoffe </span> gefördert in
+      entire-germany: ganz Deutschland
+      set-filter: "Filter einstellen:"
+
+      map:
+        heading-units: Förderung nach Bundesland
+        heading-state: Föderung in
+        heading-production: Production by offshore area
+
+    year: Jahre
+
+charts-production:
+    title: Einnahmen
+    heading: Rohstoffproduktion in Deutschland
+    description-1: Hier können Sie den Wert und die Menge der gesamten Rohstoffproduktion in Deutschland einsehen.
+    description-2: Über den Filter können Sie sich einen Einblick in die zeitliche Entwicklung der Rohstoffförderung in Deutschland verschaffen.
+    description-3: "Weitere Informationen zu den Datenquellen sowie ein Link zu den Originaldaten sind hier einzusehen:"
+    icon: Daten Einsehen
+    open-filter: Filter öffnen
+    reset-filter: (Filter zurücksetzen)
+    select-year: Jahr auswählen
+    year: Jahre
+    total-product-in-germany: Gesamtproduktion in Deutschland

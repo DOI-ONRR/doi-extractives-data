@@ -26,6 +26,12 @@ exclude:
   - styleguide-template
   - 'Gemfile*'
 
+gems:
+  - jekyll-multiple-languages-plugin
+
+languages: ["de", "en"]
+exclude_from_localizations: ["js", "img", "css"]
+
 collections:
   case-studies:
     output: true

@@ -63,3 +63,39 @@ about:
         <a href="{{ site.baseurl }}/">Daten</a>
         über den rohstoffgewinnenden Sektor zusammenträgt.
     description-2:  Besuchen Sie dieses Portal gerne regelmäßig, um über neue Ergebnisse der deutschen EITI Initiative auf dem Laufenden zu bleiben.
+
+federal-production:
+    heading-1: Interaktive Rohstoffkarte
+    description-1: In dieser interaktiven Rohstoffkarte können Sie Informationen zu einzelnen Rohstoffen und den Bundesländern auswählen.
+    description-2: Benutzen Sie hierfür den Filter (oben rechts).
+    description-3: "Weitere Informationen zu Datenquellen sowie Links zu Originaldaten sind hier einzusehen:"
+    icon: Daten Einsehen
+
+    filter-container:
+      show-filter: Filter einblenden
+      reset-filter: (Filter zurücksetzen)
+
+      filters:
+        heading: Rohstoffkarte filtern
+        description: Wählen Sie einen Rohstoff oder ein Bundesland, um entsprechende Informationen einzusehen.
+
+      product-filter:
+        lable: Rohstoff
+        select: Bitte auswählen
+        value: Alle Rohstoffe
+
+      region-selector:
+        lable: Bundesland
+        select: Bitte auswählen
+        value: Ganz Deutschland
+
+      raw-materials: Alle Rohstoffe </span> gefördert in
+      entire-germany: ganz Deutschland
+      set-filter: "Filter einstellen:"
+
+      map:
+        heading-units: Förderung nach Bundesland
+        heading-state: Föderung in
+        heading-production: Production by offshore area
+
+    year: Jahre

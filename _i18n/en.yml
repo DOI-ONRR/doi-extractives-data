@@ -165,3 +165,12 @@ chart:
     metals: Metalle
   chart-1-tittle: Value of the raw materials produced in Germany
   chart-2-tittle: Quantity of raw materials produced in Germany
+
+map-from-javascript:
+  no-data: Keine Daten
+  no-production: Keine Produktion
+  1-or-more-products: 1 oder mehrere Produkte
+  no-product: Keine Produkt
+  total: Total
+  0-products: 0 Product
+  no-production-on-federal-land: keine Produktion auf Bundesland

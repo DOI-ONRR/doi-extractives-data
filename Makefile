@@ -270,6 +270,11 @@ data/state_federal_production.yml:
 		SELECT \
 		  state, product, product_name, units, year, \
 		  ROUND(volume) AS volume, \
+		  CASE \
+				WHEN volume IS NULL \
+				THEN null \
+				ELSE ROUND(volume) \
+			END AS volume, \
 		  ROUND(percent, 2) AS percent, rank \
 		FROM federal_production_state_rank \
 		WHERE \
@@ -287,8 +292,6 @@ data/national_federal_production.yml:
 		  product, product_name, units, year, \
 		  ROUND(volume) AS volume \
 		FROM federal_national_production \
-		WHERE \
-		  volume IS NOT NULL \
 		ORDER BY \
 			product, product_name, units, year" \
 		| $(nestly) --if ndjson \

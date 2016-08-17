@@ -57,11 +57,22 @@
             <figure class="chart">
               <figcaption id="federal-production-figures-{{ product_slug }}">
 
-              <span class="eiti-bar-chart-y-value"
-                    data-format=",">{{ volume | default: 0 | intcomma }}</span>
-              {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-              produced on federal land in {{ state_name }} in
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                <span class="caption-data">
+                  <span class="eiti-bar-chart-y-value"
+                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                  {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+                  produced on federal land in {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                </span>
+                <span class="caption-no-data" aria-hidden="true">
+                  There is no data for {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                </span>
+                <span class="caption-withheld" aria-hidden="true">
+                  Data for {{ state_name }} was withheld in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                </span>
+
 
               </figcaption>
               <eiti-bar-chart

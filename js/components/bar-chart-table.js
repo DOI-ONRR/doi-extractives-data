@@ -79,16 +79,26 @@
           return d;
         });
 
-      sentences.datum(function() {
+      var sentencesData = sentences.datum(function() {
           var data = parseYearVals(this)
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property);
-        })
-        .attr('data-sentence', function(d) {
-          console.log(d)
+        }).attr('data-sentence', function(d) {
           return d;
         })
-        .select('[data-value]').attr('data-value', function(d) {
+        .attr('data-withheld', function(d) {
+          return d === 'Withheld'
+            ? true
+            : false;
+        });
+
+      sentencesData.select('.withheld', function(d) {
+          return d === 'Withheld'
+            ? false
+            : true;
+        });
+
+      sentencesData.select('[data-value]').attr('data-value', function(d) {
           return d;
         }).text(function(d) {
           return formatText(this, d);
@@ -134,11 +144,14 @@
         return data[year] || 'Withheld';
       })
       .attr('aria-hidden', function (d) {
-        if (d && d !== 'Withheld') {
-          return false;
-        } else {
-          return true;
-        }
+        // console.log('hide row', d)
+        // if (d && d !== 'Withheld') {
+        //   return false;
+        // } else {
+        //   console.log('d')
+        //   return true;
+        // }
+        return !d;
 
       });
     }

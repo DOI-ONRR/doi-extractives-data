@@ -90,13 +90,61 @@ AK:
           rank: 1
 AL:
   products:
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
     Coal (tons):
       name: Coal
       units: tons
       volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
         '2012':
           volume: 1760930
           percent: 0
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
           rank: 1
     Gas (mcf):
       name: Gas
@@ -288,9 +336,67 @@ AR:
           volume: 2400
           percent: 100
           rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
         '2015':
           volume: 4701
           percent: 100
+          rank: 1
+AZ:
+  products:
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
           rank: 1
 CA:
   products:
@@ -578,6 +684,138 @@ CA:
           volume: 13226438
           percent: 0
           rank: 1
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
+    Soda Ash (tons):
+      name: Soda Ash
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
 CO:
   products:
     Coal (tons):
@@ -716,9 +954,45 @@ CO:
       name: Sodium Bi-Carbonate
       units: tons
       volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
         '2008':
           volume: 102512
           percent: 0
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
           rank: 1
 FL:
   products:
@@ -730,6 +1004,30 @@ FL:
           volume: 77
           percent: 0
           rank: 25
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
 ID:
   products:
     Phosphate Raw Ore (tons):
@@ -958,6 +1256,46 @@ KS:
           rank: 1
 KY:
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
@@ -1135,6 +1473,50 @@ LA:
         '2015':
           volume: 246668
           percent: 0
+          rank: 1
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
           rank: 1
 MI:
   products:
@@ -1598,6 +1980,14 @@ ND:
           volume: 3532980
           percent: 0
           rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
         '2010':
           volume: 338405
           percent: 0
@@ -1809,6 +2199,50 @@ NM:
         '2006':
           volume: 66862
           percent: 100
+          rank: 1
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
           rank: 1
     Gas (mcf):
       name: Gas
@@ -2078,10 +2512,54 @@ NM:
           volume: 492294
           percent: 0
           rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
     Salt (tons):
       name: Salt
       units: tons
       volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
         '2008':
           volume: 314483
           percent: 47.55
@@ -2292,6 +2770,14 @@ NV:
           volume: 280617
           percent: 0
           rank: 1
+    Potash (tons):
+      name: Potash
+      units: tons
+      volume:
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
 NY:
   products:
     Gas (mcf):
@@ -2340,6 +2826,14 @@ NY:
           rank: 1
 OH:
   products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
     Gas (mcf):
       name: Gas
       units: mcf
@@ -3096,6 +3590,38 @@ UT:
       name: Clay
       units: tons
       volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
         '2014':
           volume: 33520
           percent: 100
@@ -3276,9 +3802,21 @@ UT:
           volume: 28082
           percent: 100
           rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
         '2012':
           volume: 35927
           percent: 100
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
           rank: 1
         '2015':
           volume: 16078
@@ -3328,6 +3866,94 @@ UT:
           volume: 11360493
           percent: 0
           rank: 1
+    Potash (tons):
+      name: Potash
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
 VA:
   products:
     Gas (mcf):
@@ -3373,6 +3999,20 @@ VA:
         '2015':
           volume: 130082
           percent: 0
+          rank: 1
+WA:
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
           rank: 1
 WV:
   products:
@@ -3614,6 +4254,50 @@ WY:
           volume: 95877
           percent: 100
           rank: 1
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
+        '2010':
+          volume: null
+          percent: null
+          rank: 1
+        '2011':
+          volume: null
+          percent: null
+          rank: 1
+        '2012':
+          volume: null
+          percent: null
+          rank: 1
+        '2013':
+          volume: null
+          percent: null
+          rank: 1
+        '2014':
+          volume: null
+          percent: null
+          rank: 1
+        '2015':
+          volume: null
+          percent: null
+          rank: 1
     Soda Ash (tons):
       name: Soda Ash
       units: tons
@@ -3662,6 +4346,22 @@ WY:
       name: Sodium Bi-Carbonate
       units: tons
       volume:
+        '2006':
+          volume: null
+          percent: null
+          rank: 1
+        '2007':
+          volume: null
+          percent: null
+          rank: 1
+        '2008':
+          volume: null
+          percent: null
+          rank: 1
+        '2009':
+          volume: null
+          percent: null
+          rank: 1
         '2010':
           volume: 46904
           percent: 0

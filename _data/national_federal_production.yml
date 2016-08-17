@@ -1,5 +1,29 @@
 US:
   products:
+    Anhydrous Sodium Sulfate (tons):
+      name: Anhydrous Sodium Sulfate
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
     Borate Products (tons):
       name: Borate Products
       units: tons
@@ -24,12 +48,96 @@ US:
           volume: 162731
         '2015':
           volume: 161433
+    Borax-Anhydrous (tons):
+      name: Borax-Anhydrous
+      units: tons
+      volume:
+        '2011':
+          volume: null
+    Borax-Decahydrate (tons):
+      name: Borax-Decahydrate
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
     Brine Barrels (bbl):
       name: Brine Barrels
       units: bbl
       volume:
         '2006':
           volume: 66862
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2010':
+          volume: null
     Brine Products (tons):
       name: Brine Products
       units: tons
@@ -110,6 +218,12 @@ US:
           volume: 0
         '2011':
           volume: 0
+    Coal Waste (Sub-Econ) (tons):
+      name: Coal Waste (Sub-Econ)
+      units: tons
+      volume:
+        '2014':
+          volume: null
     Condensate (bbl):
       name: Condensate
       units: bbl
@@ -490,6 +604,38 @@ US:
           volume: 28936
         '2015':
           volume: 16078
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2011':
+          volume: null
+    Gold Ore (tons):
+      name: Gold Ore
+      units: tons
+      volume:
+        '2009':
+          volume: null
+        '2011':
+          volume: null
+    Gold Placer (oz):
+      name: Gold Placer
+      units: oz
+      volume:
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
     Gold and Silver (tons):
       name: Gold and Silver
       units: tons
@@ -612,6 +758,94 @@ US:
           volume: 144258
         '2015':
           volume: 152928
+    Leonardite (tons):
+      name: Leonardite
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Limestone (tons):
+      name: Limestone
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Magnesium Chloride Brine (tons):
+      name: Magnesium Chloride Brine
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Manure Salts (tons):
+      name: Manure Salts
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
     Muriate Of Potash-Granular (tons):
       name: Muriate Of Potash-Granular
       units: tons
@@ -900,6 +1134,12 @@ US:
           volume: 898225
         '2015':
           volume: 764801
+    Silver (oz):
+      name: Silver
+      units: oz
+      volume:
+        '2013':
+          volume: null
     Soda Ash (tons):
       name: Soda Ash
       units: tons
@@ -948,6 +1188,30 @@ US:
           volume: 308965
         '2015':
           volume: 292402
+    Sodium Bisulfite (tons):
+      name: Sodium Bisulfite
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+    Sodium Decahydrate (tons):
+      name: Sodium Decahydrate
+      units: tons
+      volume:
+        '2006':
+          volume: null
     Sodium Products (tons):
       name: Sodium Products
       units: tons
@@ -976,8 +1240,50 @@ US:
       name: Sodium Sesquicarbonate
       units: tons
       volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
         '2013':
           volume: 121115
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+    Sulfide (tons):
+      name: Sulfide
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
     Sulfur (lton):
       name: Sulfur
       units: lton
@@ -1002,12 +1308,54 @@ US:
           volume: 2664
         '2013':
           volume: 2969
+    Sylvite-Raw Ore (tons):
+      name: Sylvite-Raw Ore
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
     Trona Ore (tons):
       name: Trona Ore
       units: tons
       volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
         '2009':
           volume: 139689
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
     Unprocessed (Wet) Gas (mcf):
       name: Unprocessed (Wet) Gas
       units: mcf
@@ -1032,6 +1380,14 @@ US:
           volume: 432732435
         '2013':
           volume: 333762380
+    Wavellite (tons):
+      name: Wavellite
+      units: tons
+      volume:
+        '2007':
+          volume: null
+        '2008':
+          volume: null
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons

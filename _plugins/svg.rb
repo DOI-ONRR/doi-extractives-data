@@ -22,7 +22,8 @@ module EITI
         return width
       end
 
-      viewbox[3] / viewbox[2] * width
+      # viewbox[3] / viewbox[2] * width
+      viewbox[3]
     end
 
   end

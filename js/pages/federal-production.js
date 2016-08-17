@@ -241,7 +241,7 @@
         .datum({
           value: total,
           properties: {
-            name: 'Total'
+            name: traslation.total
           }
         })
         .call(updateRegionRow, isState);
@@ -443,8 +443,8 @@
 
     selection.select('.value')
       .text(function(d) {
-        var val = isState ? d.value + ' products' : formatNumber(d.value);
-        return d.value ? val : '0 products';
+        var val = isState ? d.value + ' ' +traslation.product : formatNumber(d.value);
+        return d.value ? val : traslation.zero_products;
       });
   }
 
@@ -502,13 +502,13 @@
         });
       data.unshift({
         color: NULL_FILL,
-        value: 'no data',
+        value: traslation.no_data,
         none: true
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production on federal land'},
-        {color: colorscheme[3][2], value: '1 or more products'},
+        {color: NULL_FILL, value: traslation.no_production_on_federal_land},
+        {color: colorscheme[3][2], value: traslation.one_or_more_products},
       ];
     }
 

@@ -157,11 +157,12 @@ chart:
   chart-1-tittle: Wert der in Deutschland produzierten Rohstoffe
   chart-2-tittle: Menge der in Deutschland produzierten Rohstoffe
 
-dara-from-scriptfile:
-  no-data: Keine Daten
-  no-production: Keine Produktion
-  1-or-more-products: 1 oder mehrere Produkte
-  no-product: Keine Produkt
-  total: gesamt
-  0-products: 0 Rohstoffe
-  no-production-on-federal-land: keine Produktion auf Bundesland
+data_translation:
+  no_data: Keine Daten
+  no_production: Keine Produktion
+  one_or_more_products: 1 oder mehrere Produkte
+  no_product: Keine Produkt
+  total: Gesamt
+  zero_products: 0 Rohstoffe
+  product: Rohstoffe
+  no_production_on_federal_land: keine Produktion auf Bundesland

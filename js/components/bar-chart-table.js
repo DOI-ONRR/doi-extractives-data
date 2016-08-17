@@ -24,13 +24,19 @@
         return JSON.parse(yearVals);
       }
 
-      function cellData(data, year, property) {
+      function coerceNumber(num) {
+        return typeof(num) == undefined || typeof(num) == 'undefined'
+          ? 'Withheld'
+          :  num;
+      }
+
+      function cellData(data, year, property, coerce) {
         if (data && data[year] && property) {
-          return data[year][property] || 0;
+          return data[year][property] || coerceNumber(coerce);
         } else if (data && !property) {
-          return data[year] || 0;
+          return data[year] || coerceNumber(coerce);
         } else {
-          return 0;
+          return coerceNumber(coerce);
         }
       }
 
@@ -48,10 +54,10 @@
           }
         }
 
-        if (format) {
-          return format(value);
-        } else {
+        if (value === 'Withheld' || !format) {
           return value;
+        } else {
+          return format(value);
         }
       }
 
@@ -67,7 +73,7 @@
       bars.datum(function() {
           var data = parseYearVals(this)
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property);
+          return cellData(data, year, property, 0);
         })
         .attr('data-value', function(d) {
           return d;
@@ -79,6 +85,7 @@
           return cellData(data, year, property);
         })
         .attr('data-sentence', function(d) {
+          console.log(d)
           return d;
         })
         .select('[data-value]').attr('data-value', function(d) {
@@ -124,10 +131,15 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
-        return data[year] || 0;
+        return data[year] || 'Withheld';
       })
       .attr('aria-hidden', function (d) {
-        return !d;
+        if (d && d !== 'Withheld') {
+          return false;
+        } else {
+          return true;
+        }
+
       });
     }
   }

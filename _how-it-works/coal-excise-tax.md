@@ -9,7 +9,7 @@ breadcrumb:
 selector: list
 ---
 
-In the United States, one of the taxes coal producers must pay is an excise tax when they mine coal. Producers pay the tax when the coal is first sold or used.[^1] The tax does not apply to lignite or to coal mined in the U.S. for export. Learn more about [how coal revenues work]({{site.baseurl}}/how-it-works/coal/).
+In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used.[^1] The tax does not apply to lignite or to coal mined in the U.S. for export. Learn more about [how coal revenues work]({{site.baseurl}}/how-it-works/coal/).
 
 This tax originated in 1977 with the Black Lung Revenue Act. The excise tax is the chief source of revenue for the [Black Lung Program](https://www.dol.gov/owcp/dcmwc/) and Black Lung Disability Trust Fund (BLDTF), which pays benefits to miners disabled by black lung disease, as well as their eligible survivors and dependents.[^2]
 

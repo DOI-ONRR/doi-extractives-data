@@ -25,6 +25,7 @@ kilowatt hours:
 megawatt hours:
   short: Mwh
   long: megawatt hours
+  suffix: energy
 # geothermal energy
 electrical generation, thousands of pounds:
   short: klb

@@ -93,6 +93,9 @@
 
     } else {
       values = Object.keys(data).reduce(function(map, key) {
+
+        // need to add empty fields for the domain of the bar chart
+        // to make no data work!!!
         map[key] = {x: +key, y: data[key]};
         return map;
       }, {});
@@ -117,8 +120,9 @@
       .rangeBands([left, right]);
 
     xdomain.forEach(function(x) {
-      if (!values[x]) {
-        data.push({x: x, y: 0});
+      console.log('~~',x, values)
+      if (!values[x] && values[x] !== null) {
+        data.push({x: x, y: undefined});
       }
     });
 
@@ -167,7 +171,7 @@
 
     bars.select('.bar-value')
       .attr('height', function(d) {
-        return d.height = height(d.y);
+        return d.height = height(d.y) || 0;
       })
       .attr('y', function(d) {
         return barHeight - d.height;
@@ -240,7 +244,7 @@
 
     function isInSet (year, vals) {
       var vals = vals || values;
-      if (vals[year]) {
+      if (vals[year] !== undefined) {
         return vals[year].y;
       } else {
         return vals[year];
@@ -275,15 +279,27 @@
     return text;
   }
 
+  var hideCaption = function(selection, data, noData, withheld) {
+    selection.select('.caption-data')
+      .attr('aria-hidden', data);
+    selection.select('.caption-no-data')
+      .attr('aria-hidden', noData);
+    selection.select('.caption-withheld')
+    .attr('aria-hidden', withheld);
+  }
+
   var updateSelected = function(selection, x) {
     var index;
-    var value = {x: x, y: 0};
+    var value = {x: x, y: undefined};
     selection.selectAll('.bar')
       .classed('bar-selected', function(d, i) {
         if (d.x === x) {
+          console.log(d, value)
           index = i;
           value.x = d.x;
           value.y = d.y;
+          console.log(d, value)
+          console.log('--------')
           return true;
         }
       });
@@ -300,7 +316,23 @@
       var y = output.select('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
-      y.text(formatUnits(format(value.y),units));
+
+      if (value.y === null) {
+        // console.log(output)
+        hideCaption(output, true, true, false);
+      } else {
+        if (value.y === undefined) {
+          hideCaption(output, true, false, true);
+        } else {
+          hideCaption(output, false, true, true);
+          y.text(formatUnits(format(value.y),units));
+        }
+      }
+      //
+      // hide or show figcaption here using value.y
+      // value.y === undefined, null, or a number
+      ///
+
     }
   };
 
@@ -343,6 +375,7 @@
             var selected = d3.select(this)
               .select('.bar-selected')
               .datum();
+
             return selected ? selected.y : undefined;
           }
         }

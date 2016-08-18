@@ -1,18 +1,18 @@
-<!-- TODO: move this to an include! -->
-<p>After collecting revenue from natural resource extraction, the federal government distributes that money to different agencies, funds, and local governments for public use. This process is called &ldquo;disbursement.&rdquo;</p>
-<p>Most federal revenue goes to the General Fund of the Treasury, infrastructure and operational funds, and funds that support public works. While these disbursements are tracked nationally, we don't have detailed data that specifies which expenditures and projects from those national funds are in {{ state_name }}.</p>
-<p>We do have data about disbursements to state governments, which respresent about 38% of federal revenue from onshore natural resource extraction and less than 1% of revenue from offshore natural resource extraction.</p>
+<section id="federal-disbursements">
 
-<p>
   {% assign disbursements = site.data.federal_disbursements.US %}
 
-  In {{ year }}, ONRR disbursed
-  {% if disbursements %}
-    ${{ disbursements.All.All[year] | round | intcomma }}
-  {% else %}
-    did not receive any
-  {% endif %}
-    nationwide.
+  <h2>Federal disbursements</h2>
+
+  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called &ldquo;disbursement.&rdquo;</p>
+  <p>Most federal revenue goes to the General Fund of the Treasury, infrastructure and operational funds, and funds that support public works. Funds disbursed directly to state governments account for about 38% of federal revenue from onshore natural resource extraction and less than 1% of revenue from offshore natural resource extraction. <a href="{{site.baseurl}}/downloads/disbursements/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a></p>
+
+  <p><strong>
+    {% if disbursements %}
+    In {{ year }}, ONRR disbursed a total of
+    ${{ disbursements.All.All[year] | round | intcomma }}.
+    {% endif %}
+  </strong></p>
 
   {% if disbursements %}
     {%
@@ -20,8 +20,5 @@
       values=disbursements
     %}
   {% endif %}
-</p>
 
-<a href="{{site.baseurl}}/downloads/disbursements/">
-<icon class="fa fa-file-text-o u-padding-right"></icon>Disbursements data comes from the Office of Natural Resources Revenue
-</a>
+</section>

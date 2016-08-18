@@ -1,9 +1,11 @@
+{% assign fund_map = site.data.fund_names %}
+
 <table is="bar-chart-table">
   <thead>
     <th>Fund</th>
-    <th class="numeric">Total</th>
-    <th class="numeric">Onshore</th>
-    <th class="numeric">Offshore</th>
+    <th class="numeric">All funds</th>
+    <th class="numeric">From onshore revenue</th>
+    <th class="numeric">From offshore revenue</th>
   </thead>
   <tbody>
   {% for _fund in include.values %}
@@ -12,7 +14,13 @@
     {% assign _values = _fund[1] %}
     {% if _values.All[year] %}
     <tr>
-      <td>{{ _fund_name | xml_escape }}</td>
+
+      {% if include.state_name and _fund_name == 'States'  %}
+        <td>{{ include.state_name }}</td>
+      {% else %}
+        <td>{{ fund_map[_fund_name] | xml_escape | default:_fund_name }}</td>
+      {% endif %}
+
       <td class="numeric" data-value="{{ _values.All[year] | default: 0 }}">${{ _values.All[year] | round | intcomma }}</td>
       <td class="numeric" data-value="{{ _values.Onshore[year] | default: 0 }}">${{ _values.Onshore[year] | round | intcomma }}</td>
       <td class="numeric" data-value="{{ _values.Offshore[year] | default: 0 }}">${{ _values.Offshore[year] | round | intcomma }}</td>
@@ -21,4 +29,3 @@
   {% endfor %}
   </tbody>
 </table>
-

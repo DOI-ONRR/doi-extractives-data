@@ -90,11 +90,7 @@ nav_items:
     </section>
     {% endunless %}
 
-    <section id="federal-disbursements" class="disbursements">
-      <h2>Federal Disbursements</h2>
-
-      {% include location/section-disbursements.html %}
-    </section>
+    {% include location/section-disbursements.html %}
 
     {% if page.opt_in == true %}
     <section id="state-disbursements" class="disbursements">

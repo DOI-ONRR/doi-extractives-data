@@ -74,6 +74,95 @@ revenue:
       value: 1161.64
       rank: 2
       percent: null
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 28745824
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 22393740
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 22960757
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 20576935
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18777684
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 16790164
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 1760930
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18000308
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12236340
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15178244
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 24798
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13902506
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 40325
+      rank: 1
+      percent: 0
 all_production:
   '2014':
     - product: Natural Gas (mcf)

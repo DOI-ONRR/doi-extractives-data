@@ -170,6 +170,89 @@ all_production:
       value: 35874000
       rank: 1
       percent: 21.37
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25381539
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 27466407
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25135527
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 23364386
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 21684733
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 35578611
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 56484061
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 44752786
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 36567935
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 137993
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 30432839
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 125620
+      rank: 1
+      percent: 0
 revenue:
   '2010':
     - product: Oil & Gas (Non-Royalty)

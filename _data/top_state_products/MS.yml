@@ -1,260 +1,83 @@
-all_production:
-  '1967':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 181309000
+      value: 696367
       rank: 1
-      percent: 53.39
-  '1968':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 171617000
+      value: 651141
       rank: 1
-      percent: 52.11
-  '1969':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 168714000
+      value: 690719
       rank: 1
-      percent: 54.17
-  '1970':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 157020000
+      value: 771370
       rank: 1
-      percent: 52.99
-  '1971':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 136536000
+      value: 850447
       rank: 1
-      percent: 53.65
-  '1972':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 119697000
+      value: 774816
       rank: 1
-      percent: 46.97
-  '1973':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 117761000
+      value: 647642
       rank: 1
-      percent: 40.6
-  '1974':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 98995000
+      value: 433936
       rank: 1
-      percent: 30.18
-  '1975':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 92500000
-      rank: 2
-      percent: 25.6
-  '1976':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 89914000
-      rank: 2
-      percent: 23.05
-  '1977':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 102155000
-      rank: 2
-      percent: 23.72
-  '1978':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 148482000
-      rank: 2
-      percent: 27.46
-  '1979':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 192376000
+      value: 380579
       rank: 1
-      percent: 32.62
-  '1980':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 215105000
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 399152
       rank: 1
-      percent: 34.39
-  '1981':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
       units: mcf
-      value: 232870000
+      value: 405464
       rank: 1
-      percent: 35.71
-  '1982':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 221696000
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 378650
       rank: 1
-      percent: 35.35
-  '1983':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 201984000
-      rank: 1
-      percent: 34.94
-  '1984':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 209268000
-      rank: 1
-      percent: 33.61
-  '1985':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 191898000
-      rank: 1
-      percent: 30.77
-  '1986':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 210086000
-      rank: 1
-      percent: 32.72
-  '1987':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 224983000
-      rank: 1
-      percent: 33.38
-  '1988':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 237180000
-      rank: 1
-      percent: 33.62
-  '1989':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 199856000
-      rank: 1
-      percent: 29.35
-  '1990':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 200592000
-      rank: 1
-      percent: 28.59
-  '1991':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 180772000
-      rank: 3
-      percent: 24.37
-  '1992':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 165538000
-      rank: 3
-      percent: 17.82
-  '1993':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 145026000
-      rank: 3
-      percent: 14.92
-  '1994':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 121802000
-      rank: 3
-      percent: 11.08
-  '1995':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 119452000
-      rank: 3
-      percent: 10.76
-  '1996':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 123622000
-      rank: 3
-      percent: 10.91
-  '1997':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 126623000
-      rank: 3
-      percent: 12.06
-  '1998':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 129216000
-      rank: 3
-      percent: 12.61
-  '1999':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 126755000
-      rank: 3
-      percent: 12.46
-  '2000':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 114380000
-      rank: 3
-      percent: 11.3
-  '2001':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 136740000
-      rank: 3
-      percent: 13.48
-  '2002':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 147415000
-      rank: 3
-      percent: 14.23
-  '2003':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 161676000
-      rank: 3
-      percent: 15.2
+      percent: 0

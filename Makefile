@@ -205,8 +205,7 @@ data/state_self_employment.yml:
 		FROM self_employment \
 		WHERE \
 		  region IS NOT NULL AND \
-		  region != 'US' AND \
-		  jobs > 0  \
+		  region != 'US' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -233,7 +232,7 @@ data/revenue: \
 	data/county_revenue \
 	data/state_revenues_by_type.yml \
 	data/national_revenues_by_type.yml \
-	data/offshore_revenue_regions \
+	data/offshore_revenue_regions.yml \
 	data/offshore_revenue_areas \
 
 data/county_revenue:
@@ -273,6 +272,8 @@ data/state_federal_production.yml:
 		  ROUND(volume) AS volume, \
 		  ROUND(percent, 2) AS percent, rank \
 		FROM federal_production_state_rank \
+		WHERE \
+		  state != 'Withheld' \
 		ORDER BY \
 			state, product, product_name, units, year" \
 		| $(nestly) --if ndjson \
@@ -287,7 +288,6 @@ data/national_federal_production.yml:
 		  ROUND(volume) AS volume \
 		FROM federal_national_production \
 		WHERE \
-		  volume != 0 AND \
 		  volume IS NOT NULL \
 		ORDER BY \
 			product, product_name, units, year" \
@@ -339,9 +339,9 @@ data/federal_county_production:
 		FROM federal_county_production \
 		WHERE \
 		  state IS NOT NULL AND \
+		  state != 'Withheld' AND \
 		  county IS NOT NULL AND \
-		  product IS NOT NULL AND \
-		  value IS NOT NULL \
+		  product IS NOT NULL \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_production.yml \
@@ -356,7 +356,6 @@ data/state_revenues.yml:
 		  ROUND(revenue) AS revenue, \
 		  rank \
 		FROM state_revenue_rank \
-		WHERE revenue != 0 \
 		ORDER BY \
 			state, commodity, year" \
 		| $(nestly) --if ndjson \
@@ -369,7 +368,7 @@ data/national_revenues.yml:
 		  commodity, year, \
 		  ROUND(revenue) AS revenue \
 		FROM national_revenue \
-		WHERE revenue != 0 \
+		WHERE year IS NOT NULL \
 		ORDER BY \
 			commodity, year" \
 		| $(nestly) --if ndjson \

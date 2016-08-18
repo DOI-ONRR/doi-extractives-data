@@ -43,8 +43,8 @@
 
         <figure class="chart chart-{{ _metric }}">
           <figcaption id="gdp-figures-{{ _metric }}">
-            Extractive industries accounted for
             <span class="caption-data">
+              Extractive industries accounted for
               <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
                 {% if _metric == 'dollars' %}
                   ${{ gdp[year].dollars | intcomma }}

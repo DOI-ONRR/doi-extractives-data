@@ -1,9 +1,9 @@
 <table is="bar-chart-table">
   <thead>
     <th>Fund</th>
-    <th class="numeric">Total</th>
-    <th class="numeric">Onshore</th>
-    <th class="numeric">Offshore</th>
+    <th class="numeric">All funds</th>
+    <th class="numeric">From onshore revenue</th>
+    <th class="numeric">From offshore revenue</th>
   </thead>
   <tbody>
   {% for _fund in include.values %}
@@ -21,4 +21,3 @@
   {% endfor %}
   </tbody>
 </table>
-

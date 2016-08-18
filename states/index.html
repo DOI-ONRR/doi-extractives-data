@@ -28,8 +28,6 @@ nav_items:
       title: GDP
     - name: employment
       title: Jobs
-    - name: exports
-      title: Exports
 ---
 
 {% assign national_page = page.national_page %}
@@ -91,12 +89,10 @@ nav_items:
 
     {% include location/national-revenue.html %}
 
-    <section id="federal-disbursements">
-      <h2>Federal Disbursements</h2>
-      {% include location/national-disbursements.html %}
-    </section>
+    {% include location/national-disbursements.html %}
 
     <section id="economic-impact">
+    
     <h2>Economic impact</h2>
 
     {% include location/national-gdp.html %}

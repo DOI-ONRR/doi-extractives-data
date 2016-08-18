@@ -540,9 +540,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 91066659
+      value: 53343899
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -571,9 +589,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 85409498
+      value: 50375440
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -602,9 +638,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 83922002
+      value: 49867136
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -633,9 +687,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 81943659
+      value: 48517753
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -670,9 +742,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 82522717
+      value: 48523237
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -707,9 +797,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 82747987
+      value: 48685683
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -738,9 +846,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 81672218
+      value: 48207755
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2013':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -769,9 +895,27 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 78144052
+      value: 46144622
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -806,7 +950,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 76875368
+      value: 45564160
       rank: 1
       percent: 0
     - product: Oil (bbl)
@@ -815,6 +959,24 @@ federal_production:
       value: 14678922
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -849,7 +1011,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 71061600
+      value: 42671633
       rank: 1
       percent: 0
     - product: Oil (bbl)
@@ -858,3 +1020,21 @@ federal_production:
       value: 13226438
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null

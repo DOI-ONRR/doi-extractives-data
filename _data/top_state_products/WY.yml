@@ -676,6 +676,18 @@ federal_production:
       value: 4755332
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -707,6 +719,18 @@ federal_production:
       value: 5662599
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -738,6 +762,18 @@ federal_production:
       value: 7069757
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -775,6 +811,18 @@ federal_production:
       value: 5545300
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -812,6 +860,12 @@ federal_production:
       value: 46904
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -849,6 +903,12 @@ federal_production:
       value: 34297
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -886,6 +946,12 @@ federal_production:
       value: 69262
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -929,6 +995,12 @@ federal_production:
       value: 71539
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -972,6 +1044,12 @@ federal_production:
       value: 107022
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -1009,3 +1087,9 @@ federal_production:
       value: 70079
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null

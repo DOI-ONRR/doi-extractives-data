@@ -32,6 +32,12 @@ federal_production:
       value: 12040947
       rank: 1
       percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
   '2009':
     - product: Gas (mcf)
       name: Gas
@@ -39,6 +45,12 @@ federal_production:
       value: 17902901
       rank: 1
       percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: Gas (mcf)
       name: Gas
@@ -46,6 +58,12 @@ federal_production:
       value: 18909311
       rank: 1
       percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: Gas (mcf)
       name: Gas
@@ -80,6 +98,12 @@ federal_production:
       value: 1
       rank: 1
       percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal

@@ -1,5 +1,11 @@
 US:
   products:
+    'null':
+      name: null
+      units: null
+      volume:
+        'null':
+          volume: null
     Anhydrous Sodium Sulfate (tons):
       name: Anhydrous Sodium Sulfate
       units: tons
@@ -511,15 +517,15 @@ US:
         '2010':
           volume: 2016304987
         '2011':
-          volume: 2036592454
+          volume: 2006199903
         '2012':
-          volume: 2176209298
+          volume: 2134307660
         '2013':
-          volume: 2433483811
+          volume: 2373968767
         '2014':
-          volume: 2671816369
+          volume: 2580285664
         '2015':
-          volume: 2893732623
+          volume: 2805035112
     'Geothermal - Electrical Generation, Other':
       name: Geothermal
       units: 'Electrical Generation, Other'
@@ -545,25 +551,25 @@ US:
       units: 'Electrical Generation, Thousands of Pounds'
       volume:
         '2006':
-          volume: 2442000892
+          volume: 2404278132
         '2007':
-          volume: 2132128052
+          volume: 2097093994
         '2008':
-          volume: 2552808994
+          volume: 2518754128
         '2009':
-          volume: 2909157617
+          volume: 2875731711
         '2010':
-          volume: 2753031620
+          volume: 2719032140
         '2011':
-          volume: 2637363734
+          volume: 2603301430
         '2012':
-          volume: 2535320072
+          volume: 2501855609
         '2013':
-          volume: 2394410310
+          volume: 2362410880
         '2014':
-          volume: 2540459705
+          volume: 2509148497
         '2015':
-          volume: 2210321782
+          volume: 2181931815
     Geothermal - sulfur:
       name: Geothermal
       units: sulfur

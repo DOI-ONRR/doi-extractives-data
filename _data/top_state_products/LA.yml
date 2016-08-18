@@ -6,6 +6,12 @@ federal_production:
       value: 31525918
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: Gas (mcf)
       name: Gas
@@ -13,6 +19,12 @@ federal_production:
       value: 30616208
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2008':
     - product: Gas (mcf)
       name: Gas
@@ -20,6 +32,12 @@ federal_production:
       value: 29475643
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2009':
     - product: Gas (mcf)
       name: Gas
@@ -27,6 +45,12 @@ federal_production:
       value: 20534166
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: Gas (mcf)
       name: Gas
@@ -34,6 +58,12 @@ federal_production:
       value: 16611580
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: Gas (mcf)
       name: Gas
@@ -41,6 +71,12 @@ federal_production:
       value: 20728169
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2012':
     - product: Gas (mcf)
       name: Gas
@@ -48,6 +84,12 @@ federal_production:
       value: 20857780
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2013':
     - product: Gas (mcf)
       name: Gas
@@ -55,6 +97,12 @@ federal_production:
       value: 17534860
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: Gas (mcf)
       name: Gas
@@ -68,6 +116,12 @@ federal_production:
       value: 310613
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Gas (mcf)
       name: Gas
@@ -81,6 +135,12 @@ federal_production:
       value: 246668
       rank: 1
       percent: 0
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 revenue:
   '2010':
     - product: Oil & Gas (Non-Royalty)

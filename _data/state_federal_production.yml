@@ -573,43 +573,43 @@ CA:
       units: 'Electrical Generation, Thousands of Pounds'
       volume:
         '2006':
-          volume: 91066659
+          volume: 53343899
           percent: 0
           rank: 1
         '2007':
-          volume: 85409498
+          volume: 50375440
           percent: 0
           rank: 1
         '2008':
-          volume: 83922002
+          volume: 49867136
           percent: 0
           rank: 1
         '2009':
-          volume: 81943659
+          volume: 48517753
           percent: 0
           rank: 1
         '2010':
-          volume: 82522717
+          volume: 48523237
           percent: 0
           rank: 1
         '2011':
-          volume: 82747987
+          volume: 48685683
           percent: 0
           rank: 1
         '2012':
-          volume: 81672218
+          volume: 48207755
           percent: 0
           rank: 1
         '2013':
-          volume: 78144052
+          volume: 46144622
           percent: 0
           rank: 1
         '2014':
-          volume: 76875368
+          volume: 45564160
           percent: 0
           rank: 1
         '2015':
-          volume: 71061600
+          volume: 42671633
           percent: 0
           rank: 1
     Geothermal - sulfur:
@@ -2707,23 +2707,23 @@ NV:
           percent: 0
           rank: 1
         '2011':
-          volume: 1055633396
+          volume: 1025240845
           percent: 0
           rank: 1
         '2012':
-          volume: 1257270031
+          volume: 1215368393
           percent: 0
           rank: 1
         '2013':
-          volume: 1498902938
+          volume: 1442634586
           percent: 0
           rank: 1
         '2014':
-          volume: 1601138054
+          volume: 1542627349
           percent: 0
           rank: 1
         '2015':
-          volume: 1923971577
+          volume: 1867808666
           percent: 0
           rank: 1
     Oil (bbl):
@@ -3723,15 +3723,15 @@ UT:
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
         '2013':
-          volume: 16233458
+          volume: 12986766
           percent: 0
           rank: 1
         '2014':
-          volume: 165100000
+          volume: 132080000
           percent: 0
           rank: 1
         '2015':
-          volume: 162673000
+          volume: 130138400
           percent: 0
           rank: 1
     'Geothermal - Electrical Generation, Thousands of Pounds':

@@ -461,6 +461,18 @@ federal_production:
       value: 492294
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: Langbeinite (tons)
       name: Langbeinite
@@ -486,6 +498,24 @@ federal_production:
       value: 976014100
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -523,6 +553,18 @@ federal_production:
       value: 926908300
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -560,6 +602,18 @@ federal_production:
       value: 895492823
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -597,6 +651,18 @@ federal_production:
       value: 841402133
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -640,6 +706,18 @@ federal_production:
       value: 819775527
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -683,6 +761,18 @@ federal_production:
       value: 804093588
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -732,6 +822,18 @@ federal_production:
       value: 69407
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
     - product: Oil (bbl)
       name: Oil
       units: bbl
@@ -787,6 +889,18 @@ federal_production:
       value: 457797
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
@@ -836,6 +950,18 @@ federal_production:
       value: 377585
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 all_production:
   '2011':
     - product: Solar

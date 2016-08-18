@@ -243,11 +243,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2006	Gas (mcf)	NY	36013	Chautauqua County	 7,639 	Onshore	Federal
 2006	Gas (mcf)	NY	36099	Seneca County	 5,389 	Onshore	Federal
 2006	Gas (mcf)	NY	36101	Steuben County	 479 	Onshore	Federal
-2006	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2007	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2008	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2009	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2010	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2006	Gas (mcf)	Offshore Alaska		Beaufort Sea	 25,229,357 	Offshore	Federal
+2006	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 2,136,178,308 	Offshore	Federal
+2006	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 278,136 	Offshore	Federal
+2006	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 784,832,693 	Offshore	Federal
+2006	Gas (mcf)	Offshore Pacific		Southern California	 47,153,866 	Offshore	Federal
 2006	Gas (mcf)	OH	39009	Athens County	 1,986 	Onshore	Federal
 2006	Gas (mcf)	OH	39087	Lawrence County	 14,035 	Onshore	Federal
 2006	Gas (mcf)	OH	39099	Mahoning County	 76,912 	Onshore	Federal
@@ -398,8 +398,8 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2006	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 12,898,466 	Onshore	Federal
 2006	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 54,503,974 	Onshore	Federal
 2006	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 227,562 	Onshore	Federal
-2006	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 37,899,363 	Onshore	Federal
-2006	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 53,167,296 	Onshore	Federal
+2006	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 23,235,179 	Onshore	Federal
+2006	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 30,108,720 	Onshore	Federal
 2006	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,350,934,233 	Onshore	Federal
 2006	Gilsonite (tons)	UT	49047	Uintah County	 8,776 	Onshore	Federal
 2006	Gold (oz)	ID	16035	Clearwater County	 W 	Onshore	Federal
@@ -583,11 +583,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2006	Oil (bbl)	NM	35043	Sandoval County	 38,931 	Onshore	Federal
 2006	Oil (bbl)	NV	32011	Eureka County	 41,492 	Onshore	Federal
 2006	Oil (bbl)	NV	32023	Nye County	 381,377 	Onshore	Federal
-2011	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2012	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2013	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2014	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
-2015	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2006	Oil (bbl)	Offshore Alaska		Beaufort Sea	 3,367,689 	Offshore	Federal
+2006	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 394,823,996 	Offshore	Federal
+2006	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1 	Offshore	Federal
+2006	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 77,051,007 	Offshore	Federal
+2006	Oil (bbl)	Offshore Pacific		Southern California	 25,992,104 	Offshore	Federal
 2006	Oil (bbl)	OH	39073	Hocking County	 1,560 	Onshore	Federal
 2006	Oil (bbl)	OH	39099	Mahoning County	 4,364 	Onshore	Federal
 2006	Oil (bbl)	OH	39111	Monroe County	 1,487 	Onshore	Federal
@@ -710,7 +710,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2006	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 6,350 	Onshore	Federal
 2006	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2006	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2006	Gas (mcf)	Offshore Alaska		Beaufort Sea	 25,229,357 	Offshore	Federal
+2006	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2006	Salt (tons)	NM	35015	Eddy County	 W 	Onshore	Federal
 2006	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2006	Salt (tons)	Withheld	Withheld	Withheld	 512,832 	Onshore/Offshore	Federal
@@ -983,11 +983,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2007	Gas (mcf)	NY	36013	Chautauqua County	 6,883 	Onshore	Federal
 2007	Gas (mcf)	NY	36099	Seneca County	 5,185 	Onshore	Federal
 2007	Gas (mcf)	NY	36101	Steuben County	 622 	Onshore	Federal
-2006	Oil (bbl)	Offshore Alaska		Beaufort Sea	 3,367,689 	Offshore	Federal
 2007	Gas (mcf)	Offshore Alaska		Beaufort Sea	 26,817,788 	Offshore	Federal
-2007	Oil (bbl)	Offshore Alaska		Beaufort Sea	 2,475,709 	Offshore	Federal
-2008	Gas (mcf)	Offshore Alaska		Beaufort Sea	 32,926,351 	Offshore	Federal
-2008	Oil (bbl)	Offshore Alaska		Beaufort Sea	 2,985,742 	Offshore	Federal
+2007	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 2,123,066,216 	Offshore	Federal
+2007	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 45,925,342 	Offshore	Federal
+2007	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 644,201,538 	Offshore	Federal
+2007	Gas (mcf)	Offshore Pacific		Southern California	 45,563,257 	Offshore	Federal
 2007	Gas (mcf)	OH	39009	Athens County	 1,878 	Onshore	Federal
 2007	Gas (mcf)	OH	39087	Lawrence County	 10,062 	Onshore	Federal
 2007	Gas (mcf)	OH	39099	Mahoning County	 72,971 	Onshore	Federal
@@ -1140,8 +1140,8 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2007	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 7,195,670 	Onshore	Federal
 2007	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 53,715,491 	Onshore	Federal
 2007	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 207,155 	Onshore	Federal
-2007	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 35,201,153 	Onshore	Federal
-2007	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 50,208,345 	Onshore	Federal
+2007	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 21,799,180 	Onshore	Federal
+2007	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 28,576,260 	Onshore	Federal
 2007	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,046,718,554 	Onshore	Federal
 2007	Gilsonite (tons)	UT	49047	Uintah County	 10,879 	Onshore	Federal
 2007	Gold (oz)	ID	16035	Clearwater County	 W 	Onshore	Federal
@@ -1333,11 +1333,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2007	Oil (bbl)	NM	35043	Sandoval County	 35,432 	Onshore	Federal
 2007	Oil (bbl)	NV	32011	Eureka County	 39,478 	Onshore	Federal
 2007	Oil (bbl)	NV	32023	Nye County	 365,676 	Onshore	Federal
-2009	Gas (mcf)	Offshore Alaska		Beaufort Sea	 30,708,137 	Offshore	Federal
-2009	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,872,793 	Offshore	Federal
-2010	Gas (mcf)	Offshore Alaska		Beaufort Sea	 30,919,154 	Offshore	Federal
-2010	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,383,388 	Offshore	Federal
-2011	Gas (mcf)	Offshore Alaska		Beaufort Sea	 34,305,968 	Offshore	Federal
+2007	Oil (bbl)	Offshore Alaska		Beaufort Sea	 2,475,709 	Offshore	Federal
+2007	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 408,001,731 	Offshore	Federal
+2007	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 16,450 	Offshore	Federal
+2007	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 59,896,282 	Offshore	Federal
+2007	Oil (bbl)	Offshore Pacific		Southern California	 24,624,089 	Offshore	Federal
 2007	Oil (bbl)	OH	39009	Athens County	 36 	Onshore	Federal
 2007	Oil (bbl)	OH	39073	Hocking County	 1,506 	Onshore	Federal
 2007	Oil (bbl)	OH	39099	Mahoning County	 4,084 	Onshore	Federal
@@ -1462,7 +1462,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2007	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 2,400 	Onshore	Federal
 2007	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2007	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2011	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,154,070 	Offshore	Federal
+2007	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2007	Salt (tons)	NM	35015	Eddy County	 W 	Onshore	Federal
 2007	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2007	Salt (tons)	Withheld	Withheld	Withheld	 705,887 	Onshore/Offshore	Federal
@@ -1738,11 +1738,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2008	Gas (mcf)	NY	36013	Chautauqua County	 4,909 	Onshore	Federal
 2008	Gas (mcf)	NY	36099	Seneca County	 5,620 	Onshore	Federal
 2008	Gas (mcf)	NY	36101	Steuben County	 633 	Onshore	Federal
-2012	Gas (mcf)	Offshore Alaska		Beaufort Sea	 23,913,986 	Offshore	Federal
-2012	Oil (bbl)	Offshore Alaska		Beaufort Sea	 695,587 	Offshore	Federal
-2013	Gas (mcf)	Offshore Alaska		Beaufort Sea	 31,750,055 	Offshore	Federal
-2013	Oil (bbl)	Offshore Alaska		Beaufort Sea	 752,690 	Offshore	Federal
-2014	Gas (mcf)	Offshore Alaska		Beaufort Sea	 34,766,101 	Offshore	Federal
+2008	Gas (mcf)	Offshore Alaska		Beaufort Sea	 32,926,351 	Offshore	Federal
+2008	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,707,955,927 	Offshore	Federal
+2008	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 139,073,831 	Offshore	Federal
+2008	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 483,303,871 	Offshore	Federal
+2008	Gas (mcf)	Offshore Pacific		Southern California	 46,922,654 	Offshore	Federal
 2008	Gas (mcf)	OH	39009	Athens County	 1,663 	Onshore	Federal
 2008	Gas (mcf)	OH	39087	Lawrence County	 8,585 	Onshore	Federal
 2008	Gas (mcf)	OH	39099	Mahoning County	 68,983 	Onshore	Federal
@@ -1899,8 +1899,8 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2008	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 51,332,540 	Onshore	Federal
 2008	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 65,982,190 	Onshore	Federal
 2008	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 237,416 	Onshore	Federal
-2008	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 34,222,063 	Onshore	Federal
-2008	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 49,699,939 	Onshore	Federal
+2008	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 21,265,241 	Onshore	Federal
+2008	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 28,601,895 	Onshore	Federal
 2008	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,468,886,992 	Onshore	Federal
 2008	Gilsonite (tons)	UT	49047	Uintah County	 16,957 	Onshore	Federal
 2008	Gold (oz)	ID	16035	Clearwater County	 W 	Onshore	Federal
@@ -2089,11 +2089,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2008	Oil (bbl)	NM	35043	Sandoval County	 36,395 	Onshore	Federal
 2008	Oil (bbl)	NV	32011	Eureka County	 43,600 	Onshore	Federal
 2008	Oil (bbl)	NV	32023	Nye County	 391,854 	Onshore	Federal
-2014	Oil (bbl)	Offshore Alaska		Beaufort Sea	 740,073 	Offshore	Federal
-2015	Gas (mcf)	Offshore Alaska		Beaufort Sea	 36,198,609 	Offshore	Federal
-2015	Oil (bbl)	Offshore Alaska		Beaufort Sea	 721,333 	Offshore	Federal
-2006	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 2,136,178,308 	Offshore	Federal
-2006	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 278,136 	Offshore	Federal
+2008	Oil (bbl)	Offshore Alaska		Beaufort Sea	 2,985,742 	Offshore	Federal
+2008	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 374,281,105 	Offshore	Federal
+2008	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 40,802 	Offshore	Federal
+2008	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 49,016,410 	Offshore	Federal
+2008	Oil (bbl)	Offshore Pacific		Southern California	 24,031,880 	Offshore	Federal
 2008	Oil (bbl)	OH	39073	Hocking County	 1,789 	Onshore	Federal
 2008	Oil (bbl)	OH	39089	Licking County	 286 	Onshore	Federal
 2008	Oil (bbl)	OH	39099	Mahoning County	 3,701 	Onshore	Federal
@@ -2225,7 +2225,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2008	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 11,300 	Onshore	Federal
 2008	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2008	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2006	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 784,832,693 	Offshore	Federal
+2008	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2008	Salt (tons)	NM	35015	Eddy County	 314,483 	Onshore	Federal
 2008	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2008	Salt (tons)	Withheld	Withheld	Withheld	 319,856 	Onshore/Offshore	Federal
@@ -2502,11 +2502,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2009	Gas (mcf)	NY	36013	Chautauqua County	 8,130 	Onshore	Federal
 2009	Gas (mcf)	NY	36099	Seneca County	 5,262 	Onshore	Federal
 2009	Gas (mcf)	NY	36101	Steuben County	 398 	Onshore	Federal
-2006	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 394,823,996 	Offshore	Federal
-2006	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1 	Offshore	Federal
-2006	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 77,051,007 	Offshore	Federal
-2007	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 2,123,066,216 	Offshore	Federal
-2007	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 45,925,342 	Offshore	Federal
+2009	Gas (mcf)	Offshore Alaska		Beaufort Sea	 30,708,137 	Offshore	Federal
+2009	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,775,876,303 	Offshore	Federal
+2009	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 187,513,782 	Offshore	Federal
+2009	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 487,754,510 	Offshore	Federal
+2009	Gas (mcf)	Offshore Pacific		Southern California	 41,282,846 	Offshore	Federal
 2009	Gas (mcf)	OH	39009	Athens County	 1,584 	Onshore	Federal
 2009	Gas (mcf)	OH	39087	Lawrence County	 5,506 	Onshore	Federal
 2009	Gas (mcf)	OH	39099	Mahoning County	 65,698 	Onshore	Federal
@@ -2663,8 +2663,8 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2009	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 50,983,619 	Onshore	Federal
 2009	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 79,796,674 	Onshore	Federal
 2009	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 233,954 	Onshore	Federal
-2009	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 33,586,707 	Onshore	Federal
-2009	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 48,356,952 	Onshore	Federal
+2009	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 20,771,778 	Onshore	Federal
+2009	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 27,745,975 	Onshore	Federal
 2009	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,827,213,958 	Onshore	Federal
 2009	Gilsonite (tons)	UT	49047	Uintah County	 13,016 	Onshore	Federal
 2009	Gold (oz)	ID	16035	Clearwater County	 W 	Onshore	Federal
@@ -2850,11 +2850,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2009	Oil (bbl)	NM	35043	Sandoval County	 41,684 	Onshore	Federal
 2009	Oil (bbl)	NV	32011	Eureka County	 77,730 	Onshore	Federal
 2009	Oil (bbl)	NV	32023	Nye County	 376,792 	Onshore	Federal
-2007	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 644,201,538 	Offshore	Federal
-2007	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 408,001,731 	Offshore	Federal
-2007	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 16,450 	Offshore	Federal
-2007	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 59,896,282 	Offshore	Federal
-2008	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,707,955,927 	Offshore	Federal
+2009	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,872,793 	Offshore	Federal
+2009	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 517,494,411 	Offshore	Federal
+2009	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 61,810 	Offshore	Federal
+2009	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 52,665,566 	Offshore	Federal
+2009	Oil (bbl)	Offshore Pacific		Southern California	 22,306,733 	Offshore	Federal
 2009	Oil (bbl)	OH	39073	Hocking County	 1,680 	Onshore	Federal
 2009	Oil (bbl)	OH	39089	Licking County	 482 	Onshore	Federal
 2009	Oil (bbl)	OH	39099	Mahoning County	 3,882 	Onshore	Federal
@@ -2988,7 +2988,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2009	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 1,595 	Onshore	Federal
 2009	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2009	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2008	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 139,073,831 	Offshore	Federal
+2009	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2009	Salt (tons)	NM	35015	Eddy County	 372,956 	Onshore	Federal
 2009	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2009	Salt (tons)	Withheld	Withheld	Withheld	 268,721 	Onshore/Offshore	Federal
@@ -3267,11 +3267,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2010	Gas (mcf)	NY	36015	Chemung County	 32,130 	Onshore	Federal
 2010	Gas (mcf)	NY	36099	Seneca County	 3,784 	Onshore	Federal
 2010	Gas (mcf)	NY	36101	Steuben County	 280 	Onshore	Federal
-2008	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 483,303,871 	Offshore	Federal
-2008	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 374,281,105 	Offshore	Federal
-2008	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 40,802 	Offshore	Federal
-2008	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 49,016,410 	Offshore	Federal
-2009	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,775,876,303 	Offshore	Federal
+2010	Gas (mcf)	Offshore Alaska		Beaufort Sea	 30,919,154 	Offshore	Federal
+2010	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,678,796,066 	Offshore	Federal
+2010	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 131,674,748 	Offshore	Federal
+2010	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 440,114,371 	Offshore	Federal
+2010	Gas (mcf)	Offshore Pacific		Southern California	 41,257,762 	Offshore	Federal
 2010	Gas (mcf)	OH	39009	Athens County	 1,409 	Onshore	Federal
 2010	Gas (mcf)	OH	39099	Mahoning County	 67,127 	Onshore	Federal
 2010	Gas (mcf)	OH	39111	Monroe County	 11,351 	Onshore	Federal
@@ -3422,8 +3422,8 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2010	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 49,665,177 	Onshore	Federal
 2010	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 98,063,399 	Onshore	Federal
 2010	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 223,938 	Onshore	Federal
-2010	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 34,159,948 	Onshore	Federal
-2010	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 48,362,769 	Onshore	Federal
+2010	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 20,975,268 	Onshore	Federal
+2010	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 27,547,969 	Onshore	Federal
 2010	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,670,508,903 	Onshore	Federal
 2010	Geothermal - sulfur	CA	06027	Inyo County	 4,670 	Onshore	Federal
 2010	Gilsonite (tons)	UT	49047	Uintah County	 28,082 	Onshore	Federal
@@ -3611,11 +3611,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2010	Oil (bbl)	NM	35043	Sandoval County	 42,181 	Onshore	Federal
 2010	Oil (bbl)	NV	32011	Eureka County	 57,260 	Onshore	Federal
 2010	Oil (bbl)	NV	32023	Nye County	 370,267 	Onshore	Federal
-2009	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 187,513,782 	Offshore	Federal
-2009	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 487,754,510 	Offshore	Federal
-2009	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 517,494,411 	Offshore	Federal
-2009	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 61,810 	Offshore	Federal
-2009	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 52,665,566 	Offshore	Federal
+2010	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,383,388 	Offshore	Federal
+2010	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 514,388,130 	Offshore	Federal
+2010	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 41,697 	Offshore	Federal
+2010	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 52,164,506 	Offshore	Federal
+2010	Oil (bbl)	Offshore Pacific		Southern California	 21,710,975 	Offshore	Federal
 2010	Oil (bbl)	OH	39073	Hocking County	 1,202 	Onshore	Federal
 2010	Oil (bbl)	OH	39089	Licking County	 497 	Onshore	Federal
 2010	Oil (bbl)	OH	39099	Mahoning County	 3,505 	Onshore	Federal
@@ -3744,7 +3744,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2010	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 1,000 	Onshore	Federal
 2010	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2010	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2010	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,678,796,066 	Offshore	Federal
+2010	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2010	Salt (tons)	NM	35015	Eddy County	 434,018 	Onshore	Federal
 2010	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2010	Salt (tons)	Withheld	Withheld	Withheld	 364,023 	Onshore/Offshore	Federal
@@ -4024,11 +4024,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2011	Gas (mcf)	NY	36015	Chemung County	 48,616 	Onshore	Federal
 2011	Gas (mcf)	NY	36099	Seneca County	 3,951 	Onshore	Federal
 2011	Gas (mcf)	NY	36101	Steuben County	 234 	Onshore	Federal
-2010	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 131,674,748 	Offshore	Federal
-2010	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 440,114,371 	Offshore	Federal
-2010	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 514,388,130 	Offshore	Federal
-2010	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 41,697 	Offshore	Federal
-2010	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 52,164,506 	Offshore	Federal
+2011	Gas (mcf)	Offshore Alaska		Beaufort Sea	 34,305,968 	Offshore	Federal
+2011	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,367,089,213 	Offshore	Federal
+2011	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 107,917,419 	Offshore	Federal
+2011	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 351,628,497 	Offshore	Federal
+2011	Gas (mcf)	Offshore Pacific		Southern California	 36,591,564 	Offshore	Federal
 2011	Gas (mcf)	OH	39009	Athens County	 850 	Onshore	Federal
 2011	Gas (mcf)	OH	39099	Mahoning County	 60,912 	Onshore	Federal
 2011	Gas (mcf)	OH	39111	Monroe County	 13,429 	Onshore	Federal
@@ -4176,12 +4176,12 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 732,305,360 	Onshore	Federal
 2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32011	Eureka County	 3,229,446 	Onshore	Federal
 2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32013	Humboldt County	 108,388,144 	Onshore	Federal
-2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 83,625,777 	Onshore	Federal
-2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 45,588,827 	Onshore	Federal
+2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 57,261,455 	Onshore	Federal
+2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 41,560,598 	Onshore	Federal
 2011	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 82,495,842 	Onshore	Federal
 2011	Geothermal - Electrical Generation, Other	CA	06025	Imperial County	 19,883 	Onshore	Federal
-2011	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 34,218,390 	Onshore	Federal
-2011	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 48,529,597 	Onshore	Federal
+2011	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 20,965,735 	Onshore	Federal
+2011	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 27,719,948 	Onshore	Federal
 2011	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,554,615,747 	Onshore	Federal
 2011	Geothermal - sulfur	CA	06027	Inyo County	 3,470 	Onshore	Federal
 2011	Gilsonite (tons)	UT	49047	Uintah County	 W 	Onshore	Federal
@@ -4373,11 +4373,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2011	Oil (bbl)	NM	35043	Sandoval County	 38,306 	Onshore	Federal
 2011	Oil (bbl)	NV	32011	Eureka County	 43,198 	Onshore	Federal
 2011	Oil (bbl)	NV	32023	Nye County	 361,976 	Onshore	Federal
-2011	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,367,089,213 	Offshore	Federal
-2011	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 107,917,419 	Offshore	Federal
-2011	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 351,628,497 	Offshore	Federal
+2011	Oil (bbl)	Offshore Alaska		Beaufort Sea	 1,154,070 	Offshore	Federal
 2011	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 423,562,250 	Offshore	Federal
 2011	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 20,126 	Offshore	Federal
+2011	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 58,089,471 	Offshore	Federal
+2011	Oil (bbl)	Offshore Pacific		Southern California	 19,820,270 	Offshore	Federal
 2011	Oil (bbl)	OH	39073	Hocking County	 1,198 	Onshore	Federal
 2011	Oil (bbl)	OH	39089	Licking County	 439 	Onshore	Federal
 2011	Oil (bbl)	OH	39099	Mahoning County	 3,346 	Onshore	Federal
@@ -4504,7 +4504,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2011	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 88,412 	Onshore	Federal
 2011	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2011	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2011	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 58,089,471 	Offshore	Federal
+2011	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2011	Salt (tons)	NM	35015	Eddy County	 439,367 	Onshore	Federal
 2011	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2011	Salt (tons)	Withheld	Withheld	Withheld	 425,152 	Onshore/Offshore	Federal
@@ -4787,11 +4787,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2012	Gas (mcf)	NY	36015	Chemung County	 27,715 	Onshore	Federal
 2012	Gas (mcf)	NY	36099	Seneca County	 3,672 	Onshore	Federal
 2012	Gas (mcf)	NY	36101	Steuben County	 96 	Onshore	Federal
+2012	Gas (mcf)	Offshore Alaska		Beaufort Sea	 23,913,986 	Offshore	Federal
 2012	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,142,512,151 	Offshore	Federal
 2012	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 73,749,514 	Offshore	Federal
 2012	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 319,123,809 	Offshore	Federal
-2012	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 392,304,025 	Offshore	Federal
-2012	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 10,907 	Offshore	Federal
+2012	Gas (mcf)	Offshore Pacific		Southern California	 27,267,157 	Offshore	Federal
 2012	Gas (mcf)	OH	39009	Athens County	 724 	Onshore	Federal
 2012	Gas (mcf)	OH	39087	Lawrence County	 4,122 	Onshore	Federal
 2012	Gas (mcf)	OH	39099	Mahoning County	 61,094 	Onshore	Federal
@@ -4941,11 +4941,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 756,603,943 	Onshore	Federal
 2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32011	Eureka County	 2,596,116 	Onshore	Federal
 2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32013	Humboldt County	 100,055,017 	Onshore	Federal
-2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 255,459,721 	Onshore	Federal
-2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 56,477,348 	Onshore	Federal
+2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 219,111,726 	Onshore	Federal
+2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 50,923,705 	Onshore	Federal
 2012	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 86,077,886 	Onshore	Federal
-2012	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 33,627,591 	Onshore	Federal
-2012	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 48,044,627 	Onshore	Federal
+2012	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 20,689,289 	Onshore	Federal
+2012	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 27,518,466 	Onshore	Federal
 2012	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,453,647,854 	Onshore	Federal
 2012	Geothermal - sulfur	CA	06027	Inyo County	 2,598 	Onshore	Federal
 2012	Gilsonite (tons)	UT	49047	Uintah County	 35,927 	Onshore	Federal
@@ -5136,11 +5136,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2012	Oil (bbl)	NM	35043	Sandoval County	 58,890 	Onshore	Federal
 2012	Oil (bbl)	NV	32011	Eureka County	 38,004 	Onshore	Federal
 2012	Oil (bbl)	NV	32023	Nye County	 318,293 	Onshore	Federal
+2012	Oil (bbl)	Offshore Alaska		Beaufort Sea	 695,587 	Offshore	Federal
+2012	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 392,304,025 	Offshore	Federal
+2012	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 10,907 	Offshore	Federal
 2012	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 72,210,975 	Offshore	Federal
-2013	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,029,919,235 	Offshore	Federal
-2013	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 35,829,285 	Offshore	Federal
-2013	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 262,147,492 	Offshore	Federal
-2013	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 390,346,368 	Offshore	Federal
+2012	Oil (bbl)	Offshore Pacific		Southern California	 17,684,997 	Offshore	Federal
 2012	Oil (bbl)	OH	39009	Athens County	 14 	Onshore	Federal
 2012	Oil (bbl)	OH	39073	Hocking County	 1,373 	Onshore	Federal
 2012	Oil (bbl)	OH	39089	Licking County	 555 	Onshore	Federal
@@ -5271,7 +5271,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2012	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 73,596 	Onshore	Federal
 2012	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2012	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2013	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 3,372 	Offshore	Federal
+2012	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2012	Salt (tons)	NM	35015	Eddy County	 409,345 	Onshore	Federal
 2012	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2012	Salt (tons)	Withheld	Withheld	Withheld	 340,764 	Onshore/Offshore	Federal
@@ -5553,11 +5553,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2013	Gas (mcf)	NY	36013	Chautauqua County	 10,816 	Onshore	Federal
 2013	Gas (mcf)	NY	36015	Chemung County	 22,760 	Onshore	Federal
 2013	Gas (mcf)	NY	36099	Seneca County	 3,644 	Onshore	Federal
-2013	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 68,646,490 	Offshore	Federal
-2014	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 982,543,737 	Offshore	Federal
-2014	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 23,210,680 	Offshore	Federal
-2014	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 271,244,631 	Offshore	Federal
-2014	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 431,988,151 	Offshore	Federal
+2013	Gas (mcf)	Offshore Alaska		Beaufort Sea	 31,750,055 	Offshore	Federal
+2013	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 1,029,919,235 	Offshore	Federal
+2013	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 35,829,285 	Offshore	Federal
+2013	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 262,147,492 	Offshore	Federal
+2013	Gas (mcf)	Offshore Pacific		Southern California	 27,502,417 	Offshore	Federal
 2013	Gas (mcf)	OH	39009	Athens County	 931 	Onshore	Federal
 2013	Gas (mcf)	OH	39073	Hocking County	 1,050 	Onshore	Federal
 2013	Gas (mcf)	OH	39099	Mahoning County	 63,798 	Onshore	Federal
@@ -5698,18 +5698,18 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2013	Geothermal - Electrical Generation, Kilowatt Hours	CA	06027	Inyo County	 368,059,512 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	CA	06051	Mono County	 164,238,891 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	NM	35023	Hidalgo County	 69,407 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 815,650,478 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 815,648,780 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32011	Eureka County	 3,064,559 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32013	Humboldt County	 91,901,653 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 385,128,361 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 8,219 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 336,324,946 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 1,698 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32021	Mineral County	 19,609,001 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 75,567,515 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 68,110,797 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 107,973,152 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 12,986,766 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 3,246,692 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 32,149,186 	Onshore	Federal
-2013	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 45,994,866 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 9,908,211 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 3,078,555 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 19,664,635 	Onshore	Federal
+2013	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 26,479,987 	Onshore	Federal
 2013	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,316,266,258 	Onshore	Federal
 2013	Geothermal - sulfur	CA	06027	Inyo County	 2,448 	Onshore	Federal
 2013	Gilsonite (tons)	UT	49047	Uintah County	 W 	Onshore	Federal
@@ -5902,11 +5902,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2013	Oil (bbl)	NM	35043	Sandoval County	 340,488 	Onshore	Federal
 2013	Oil (bbl)	NV	32011	Eureka County	 40,392 	Onshore	Federal
 2013	Oil (bbl)	NV	32023	Nye County	 290,417 	Onshore	Federal
-2014	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1,670,352 	Offshore	Federal
-2014	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 76,842,268 	Offshore	Federal
-2015	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 914,600,890 	Offshore	Federal
-2015	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 22,445,857 	Offshore	Federal
-2015	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 370,329,704 	Offshore	Federal
+2013	Oil (bbl)	Offshore Alaska		Beaufort Sea	 752,690 	Offshore	Federal
+2013	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 390,346,368 	Offshore	Federal
+2013	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 3,372 	Offshore	Federal
+2013	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 68,646,490 	Offshore	Federal
+2013	Oil (bbl)	Offshore Pacific		Southern California	 18,571,785 	Offshore	Federal
 2013	Oil (bbl)	OH	39073	Hocking County	 2,072 	Onshore	Federal
 2013	Oil (bbl)	OH	39089	Licking County	 390 	Onshore	Federal
 2013	Oil (bbl)	OH	39099	Mahoning County	 2,732 	Onshore	Federal
@@ -6030,7 +6030,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2013	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 88,213 	Onshore	Federal
 2013	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2013	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2015	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 452,930,027 	Offshore	Federal
+2013	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2013	Salt (tons)	NM	35015	Eddy County	 425,125 	Onshore	Federal
 2013	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2013	Salt (tons)	Withheld	Withheld	Withheld	 468,941 	Onshore/Offshore	Federal
@@ -6313,11 +6313,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2014	Gas (mcf)	NY	36013	Chautauqua County	 7,919 	Onshore	Federal
 2014	Gas (mcf)	NY	36015	Chemung County	 19,450 	Onshore	Federal
 2014	Gas (mcf)	NY	36099	Seneca County	 3,415 	Onshore	Federal
-2015	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1,808,091 	Offshore	Federal
-2015	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 98,185,261 	Offshore	Federal
-2006	Gas (mcf)	Offshore Pacific		Southern California	 47,153,866 	Offshore	Federal
-2006	Oil (bbl)	Offshore Pacific		Southern California	 25,992,104 	Offshore	Federal
-2007	Gas (mcf)	Offshore Pacific		Southern California	 45,563,257 	Offshore	Federal
+2014	Gas (mcf)	Offshore Alaska		Beaufort Sea	 34,766,101 	Offshore	Federal
+2014	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 982,543,737 	Offshore	Federal
+2014	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 23,210,680 	Offshore	Federal
+2014	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 271,244,631 	Offshore	Federal
+2014	Gas (mcf)	Offshore Pacific		Southern California	 28,313,384 	Offshore	Federal
 2014	Gas (mcf)	OH	39009	Athens County	 109 	Onshore	Federal
 2014	Gas (mcf)	OH	39073	Hocking County	 1,080 	Onshore	Federal
 2014	Gas (mcf)	OH	39099	Mahoning County	 54,233 	Onshore	Federal
@@ -6458,19 +6458,19 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2014	Geothermal - Electrical Generation, Kilowatt Hours	CA	06027	Inyo County	 337,393,974 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	CA	06051	Mono County	 195,815,991 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	NM	35023	Hidalgo County	 8,736,455 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 802,179,298 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 802,168,162 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32011	Eureka County	 3,010,668 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32013	Humboldt County	 85,422,511 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 382,000,625 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 53,891 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 331,291,678 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 11,135 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32021	Mineral County	 150,459,000 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 77,942,417 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 70,194,551 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 100,069,644 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 132,080,000 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 33,020,000 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 100,770,007 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 31,309,993 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Other	CA	06035	Lassen County	 691,756 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 31,472,836 	Onshore	Federal
-2014	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 45,402,532 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 19,550,547 	Onshore	Federal
+2014	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 26,013,613 	Onshore	Federal
 2014	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,463,584,337 	Onshore	Federal
 2014	Geothermal - sulfur	CA	06027	Inyo County	 2,090 	Onshore	Federal
 2014	Gilsonite (tons)	UT	49047	Uintah County	 W 	Onshore	Federal
@@ -6665,11 +6665,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2014	Oil (bbl)	NV	32007	Elko County	 2,247 	Onshore	Federal
 2014	Oil (bbl)	NV	32011	Eureka County	 32,218 	Onshore	Federal
 2014	Oil (bbl)	NV	32023	Nye County	 276,842 	Onshore	Federal
-2007	Oil (bbl)	Offshore Pacific		Southern California	 24,624,089 	Offshore	Federal
-2008	Gas (mcf)	Offshore Pacific		Southern California	 46,922,654 	Offshore	Federal
-2008	Oil (bbl)	Offshore Pacific		Southern California	 24,031,880 	Offshore	Federal
-2009	Gas (mcf)	Offshore Pacific		Southern California	 41,282,846 	Offshore	Federal
-2009	Oil (bbl)	Offshore Pacific		Southern California	 22,306,733 	Offshore	Federal
+2014	Oil (bbl)	Offshore Alaska		Beaufort Sea	 740,073 	Offshore	Federal
+2014	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 431,988,151 	Offshore	Federal
+2014	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1,670,352 	Offshore	Federal
+2014	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 76,842,268 	Offshore	Federal
+2014	Oil (bbl)	Offshore Pacific		Southern California	 18,506,540 	Offshore	Federal
 2014	Oil (bbl)	OH	39073	Hocking County	 1,835 	Onshore	Federal
 2014	Oil (bbl)	OH	39089	Licking County	 428 	Onshore	Federal
 2014	Oil (bbl)	OH	39099	Mahoning County	 2,136 	Onshore	Federal
@@ -6793,7 +6793,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2014	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 960 	Onshore	Federal
 2014	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2014	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2010	Gas (mcf)	Offshore Pacific		Southern California	 41,257,762 	Offshore	Federal
+2014	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2014	Salt (tons)	NM	35015	Eddy County	 457,797 	Onshore	Federal
 2014	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2014	Salt (tons)	Withheld	Withheld	Withheld	 440,428 	Onshore/Offshore	Federal
@@ -7073,11 +7073,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2015	Gas (mcf)	NY	36013	Chautauqua County	 4,215 	Onshore	Federal
 2015	Gas (mcf)	NY	36015	Chemung County	 9,207 	Onshore	Federal
 2015	Gas (mcf)	NY	36099	Seneca County	 3,433 	Onshore	Federal
-2010	Oil (bbl)	Offshore Pacific		Southern California	 21,710,975 	Offshore	Federal
-2011	Gas (mcf)	Offshore Pacific		Southern California	 36,591,564 	Offshore	Federal
-2011	Oil (bbl)	Offshore Pacific		Southern California	 19,820,270 	Offshore	Federal
-2012	Gas (mcf)	Offshore Pacific		Southern California	 27,267,157 	Offshore	Federal
-2012	Oil (bbl)	Offshore Pacific		Southern California	 17,684,997 	Offshore	Federal
+2015	Gas (mcf)	Offshore Alaska		Beaufort Sea	 36,198,609 	Offshore	Federal
+2015	Gas (mcf)	Offshore Gulf		Central Gulf of Mexico	 914,600,890 	Offshore	Federal
+2015	Gas (mcf)	Offshore Gulf		Eastern Gulf of Mexico	 22,445,857 	Offshore	Federal
+2015	Gas (mcf)	Offshore Gulf		Western Gulf of Mexico	 370,329,704 	Offshore	Federal
+2015	Gas (mcf)	Offshore Pacific		Southern California	 14,808,085 	Offshore	Federal
 2015	Gas (mcf)	OH	39009	Athens County	 289 	Onshore	Federal
 2015	Gas (mcf)	OH	39073	Hocking County	 1,080 	Onshore	Federal
 2015	Gas (mcf)	OH	39099	Mahoning County	 53,732 	Onshore	Federal
@@ -7218,19 +7218,19 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2015	Geothermal - Electrical Generation, Kilowatt Hours	CA	06027	Inyo County	 295,037,530 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	CA	06051	Mono County	 183,356,897 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	NM	35023	Hidalgo County	 10,449,799 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 755,248,168 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32001	Churchill County	 755,235,908 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32011	Eureka County	 2,800,781 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32013	Humboldt County	 95,207,972 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 669,853,634 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 59,337 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32015	Lander County	 621,186,028 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32019	Lyon County	 12,260 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32021	Mineral County	 227,861,000 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 74,804,765 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32027	Pershing County	 67,368,797 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Kilowatt Hours	NV	32031	Washoe County	 98,135,920 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 130,138,400 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 32,534,600 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	UT	49001	Beaver County	 99,288,669 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Kilowatt Hours	UT	49027	Millard County	 30,849,731 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Other	CA	06035	Lassen County	 666,434 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 28,544,838 	Onshore	Federal
-2015	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 42,516,762 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Thousands of Pounds	CA	06033	Lake County	 18,069,652 	Onshore	Federal
+2015	Geothermal - Electrical Generation, Thousands of Pounds	CA	06097	Sonoma County	 24,601,981 	Onshore	Federal
 2015	Geothermal - Electrical Generation, Thousands of Pounds	UT	49001	Beaver County	 2,139,260,182 	Onshore	Federal
 2015	Geothermal - sulfur	CA	06027	Inyo County	 2,401 	Onshore	Federal
 2015	Gilsonite (tons)	UT	49047	Uintah County	 16,078 	Onshore	Federal
@@ -7419,11 +7419,11 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2015	Oil (bbl)	NV	32007	Elko County	 1,612 	Onshore	Federal
 2015	Oil (bbl)	NV	32011	Eureka County	 31,605 	Onshore	Federal
 2015	Oil (bbl)	NV	32023	Nye County	 247,400 	Onshore	Federal
-2013	Gas (mcf)	Offshore Pacific		Southern California	 27,502,417 	Offshore	Federal
-2013	Oil (bbl)	Offshore Pacific		Southern California	 18,571,785 	Offshore	Federal
-2014	Gas (mcf)	Offshore Pacific		Southern California	 28,313,384 	Offshore	Federal
-2014	Oil (bbl)	Offshore Pacific		Southern California	 18,506,540 	Offshore	Federal
-2015	Gas (mcf)	Offshore Pacific		Southern California	 14,808,085 	Offshore	Federal
+2015	Oil (bbl)	Offshore Alaska		Beaufort Sea	 721,333 	Offshore	Federal
+2015	Oil (bbl)	Offshore Gulf		Central Gulf of Mexico	 452,930,027 	Offshore	Federal
+2015	Oil (bbl)	Offshore Gulf		Eastern Gulf of Mexico	 1,808,091 	Offshore	Federal
+2015	Oil (bbl)	Offshore Gulf		Western Gulf of Mexico	 98,185,261 	Offshore	Federal
+2015	Oil (bbl)	Offshore Pacific		Southern California	 11,465,873 	Offshore	Federal
 2015	Oil (bbl)	OH	39009	Athens County	 24 	Onshore	Federal
 2015	Oil (bbl)	OH	39073	Hocking County	 1,689 	Onshore	Federal
 2015	Oil (bbl)	OH	39089	Licking County	 385 	Onshore	Federal
@@ -7552,7 +7552,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2015	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 95,877 	Onshore	Federal
 2015	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 4,701 	Onshore	Federal
 2015	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2015	Oil (bbl)	Offshore Pacific		Southern California	 11,465,873 	Offshore	Federal
+2015	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
 2015	Salt (tons)	NM	35015	Eddy County	 377,585 	Onshore	Federal
 2015	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2015	Salt (tons)	Withheld	Withheld	Withheld	 387,216 	Onshore/Offshore	Federal

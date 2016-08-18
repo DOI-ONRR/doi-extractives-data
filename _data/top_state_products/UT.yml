@@ -485,6 +485,24 @@ federal_production:
       value: 2350934233
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: Gilsonite (tons)
       name: Gilsonite
@@ -510,6 +528,24 @@ federal_production:
       value: 2046718554
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2008':
     - product: Gilsonite (tons)
       name: Gilsonite
@@ -535,6 +571,24 @@ federal_production:
       value: 2468886992
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2009':
     - product: Gilsonite (tons)
       name: Gilsonite
@@ -560,6 +614,24 @@ federal_production:
       value: 2827213958
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: Gilsonite (tons)
       name: Gilsonite
@@ -585,6 +657,24 @@ federal_production:
       value: 2670508903
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: Coal (tons)
       name: Coal
@@ -604,6 +694,30 @@ federal_production:
       value: 2554615747
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2012':
     - product: Gilsonite (tons)
       name: Gilsonite
@@ -629,6 +743,24 @@ federal_production:
       value: 2453647854
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2013':
     - product: Coal (tons)
       name: Coal
@@ -645,7 +777,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 16233458
+      value: 12986766
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
@@ -654,6 +786,30 @@ federal_production:
       value: 2316266258
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: Clay (tons)
       name: Clay
@@ -676,7 +832,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 165100000
+      value: 132080000
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
@@ -691,6 +847,24 @@ federal_production:
       value: 13228964
       rank: 1
       percent: 0
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Clay (tons)
       name: Clay
@@ -719,7 +893,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 162673000
+      value: 130138400
       rank: 1
       percent: 0
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
@@ -734,6 +908,18 @@ federal_production:
       value: 11360493
       rank: 1
       percent: 0
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 all_production:
   '2008':
     - product: Geothermal

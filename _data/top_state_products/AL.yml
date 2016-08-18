@@ -82,6 +82,18 @@ federal_production:
       value: 28745824
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: Gas (mcf)
       name: Gas
@@ -89,6 +101,18 @@ federal_production:
       value: 22393740
       rank: 1
       percent: 0
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2008':
     - product: Gas (mcf)
       name: Gas
@@ -96,6 +120,12 @@ federal_production:
       value: 22960757
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2009':
     - product: Gas (mcf)
       name: Gas
@@ -103,6 +133,12 @@ federal_production:
       value: 20576935
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: Gas (mcf)
       name: Gas
@@ -110,6 +146,12 @@ federal_production:
       value: 18777684
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: Gas (mcf)
       name: Gas
@@ -117,6 +159,12 @@ federal_production:
       value: 16790164
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2012':
     - product: Coal (tons)
       name: Coal
@@ -137,6 +185,12 @@ federal_production:
       value: 12236340
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: Gas (mcf)
       name: Gas
@@ -150,6 +204,12 @@ federal_production:
       value: 24798
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Gas (mcf)
       name: Gas
@@ -163,6 +223,12 @@ federal_production:
       value: 40325
       rank: 1
       percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 all_production:
   '2014':
     - product: Natural Gas (mcf)

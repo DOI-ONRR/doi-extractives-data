@@ -335,6 +335,12 @@ federal_production:
       value: 528455147
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2007':
     - product: Coal (tons)
       name: Coal
@@ -348,6 +354,12 @@ federal_production:
       value: 538453776
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2008':
     - product: Coal (tons)
       name: Coal
@@ -380,6 +392,12 @@ federal_production:
       value: 671107313
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2010':
     - product: Coal (tons)
       name: Coal
@@ -393,6 +411,12 @@ federal_production:
       value: 686882372
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2011':
     - product: Coal (tons)
       name: Coal
@@ -406,6 +430,12 @@ federal_production:
       value: 712842916
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2012':
     - product: Coal (tons)
       name: Coal
@@ -419,6 +449,12 @@ federal_production:
       value: 713759261
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2013':
     - product: Coal (tons)
       name: Coal
@@ -432,6 +468,12 @@ federal_production:
       value: 709765715
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: Coal (tons)
       name: Coal
@@ -451,6 +493,12 @@ federal_production:
       value: 5319160
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2015':
     - product: Coal (tons)
       name: Coal
@@ -470,6 +518,12 @@ federal_production:
       value: 4866150
       rank: 1
       percent: 0
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 all_production:
   '2008':
     - product: Solar

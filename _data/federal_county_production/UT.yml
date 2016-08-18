@@ -19,9 +19,9 @@
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2013': 12986766
-        '2014': 132080000
-        '2015': 130138400
+        '2013': 9908211
+        '2014': 100770007
+        '2015': 99288669
 '49007':
   name: Carbon County
   products:
@@ -248,9 +248,9 @@
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       volume:
-        '2013': 3246692
-        '2014': 33020000
-        '2015': 32534600
+        '2013': 3078555
+        '2014': 31309993
+        '2015': 30849731
 '49031':
   name: Piute County
   products:

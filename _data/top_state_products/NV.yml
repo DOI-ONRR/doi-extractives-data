@@ -335,7 +335,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1055633396
+      value: 1025240845
       rank: 1
       percent: 0
   '2012':
@@ -354,7 +354,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1257270031
+      value: 1215368393
       rank: 1
       percent: 0
   '2013':
@@ -373,9 +373,15 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1498902938
+      value: 1442634586
       rank: 1
       percent: 0
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
   '2014':
     - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
       name: Geothermal
@@ -392,7 +398,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1601138054
+      value: 1542627349
       rank: 1
       percent: 0
     - product: Oil (bbl)
@@ -417,7 +423,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1923971577
+      value: 1867808666
       rank: 1
       percent: 0
     - product: Oil (bbl)

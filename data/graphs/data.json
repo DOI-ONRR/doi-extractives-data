@@ -1,0 +1,61 @@
+[
+  {
+    "chart_data": [
+      {"Label": "Naturwerksteine", "Label_en": "Natural-Stones", "Value": 57, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "REA-Gips", "Label_en": "Gypsum", "Value": 60, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Quarzsand", "Label_en": "quartz-sand", "Value": 205, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Kaolin", "Label_en": "kaolin", "Value": 513, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Steinsalz und Industriesole", "Label_en": "rock-salt-and-industrial-salt", "Value": 551, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Kalk-,Mergel- und Dolomitstein", "Label_en": "Kalk-,Mergel- und Dolomitstein", "Value": 556, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Steinkohle", "Label_en": "Steinkohle", "Value": 557, "cat":"Energierohstoffe","cat_en":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Kalisalz", "Label_en": "Kalisalz", "Value": 795, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Erdöl","Label_en": "Erdöl", "Value": 1353, "cat":"Energierohstoffe","cat_en":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Schwefel","Label_en": "Schwefel", "Value": 79, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Spezialtone","Label_en": "Spezialtone", "Value": 162, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Torf","Label_en": "Torf", "Value": 182, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "gebrochene Natursteine","Label_en": "gebrochene Natursteine", "Value": 1467, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Bausande und -kiese", "Label_en": "Bausande und -kiese", "Value": 1502, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrieminerale, Steine und Erden","unit":"Mio. €"}
+      ,{"Label": "Braunkohle","Label_en": "Braunkohle", "Value": 2484, "cat":"Energierohstoffe","cat_en":"Energierohstoffe","unit":"Mio. €"}
+      ,{"Label": "Erdgas","Label_en": "Erdgas", "Value": 2787, "cat":"Energierohstoffe","cat_en":"Energierohstoffe","unit":"Mio. €"}
+    ],
+    "category": [
+      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils"}
+      ,{"color": "#6CBCE3", "cat":"Energierohstoffe", "cat_en":"energy resources"}
+    ]
+  },
+  {
+    "chart_data":  [
+      {"Label": "Bausande und -kiese", "Label_en": "Bausande und -kiese", "Value": 238000, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "gebrochene Natursteine","Label_en": "gebrochene Natursteine", "Value": 211000, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Braunkohle", "Label_en": "Braunkohle", "Value": 178178, "cat":"Energierohstoffe", "cat_en":"energy resources", "unit": "(kt)"}
+      ,{"Label": "Kalk-,Mergel- und Dolomitstein","Label_en": "Kalk-,Mergel- und Dolomitstein", "Value": 64000, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Steinsalz und Industriesole","Label_en": "Steinsalz und Industriesole", "Value": 13064, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Quarzsand","Label_en": "Quarzsand", "Value": 10400, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Erdgas","Label_en": "Erdgas", "Value": 10060, "cat":"Energierohstoffe", "unit": "Mio. m3"}
+      ,{"Label": "Steinkohle","Label_en": "Steinkohle", "Value": 7640, "cat":"Energierohstoffe", "cat_en":"energy resources", "unit": "(kt)"}
+      ,{"Label": "REA-Gips","Label_en": "REA-Gips", "Value": 7000, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Spezialtone","Label_en": "Spezialtone", "Value": 6754, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Torf","Label_en": "Torf", "Value": 5759, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(1000 m3)"}
+      ,{"Label": "Kaolin","Label_en": "Kaolin", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Gips- und Anhydristein","Label_en": "Gips- und Anhydristein", "Value": 4090, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Kallsalz (K2O)","Label_en": "Kallsalz (K2O)", "Value": 3127, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrial minerals, rocks and soils",  "unit": "(kt)"}
+      ,{"Label": "Erdöl","Label_en": "Erdöl", "Value": 2430, "cat":"Energierohstoffe", "cat_en":"energy resources", "unit": "(kt)"}
+      ,{"Label": "Schwefel","Label_en": "Schwefel", "Value": 708, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Naturwerksteine","Label_en": "Naturwerksteine", "Value": 495, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Eisenerz","Label_en": "Eisenerz", "Value": 456, "cat":"Metallrohstoffe", "cat_en":"metal raw materials","unit": "(kt)"}
+      ,{"Label": "Bentonit", "Label_en": "Bentonit","Value": 395, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Feldspar", "Label_en": "Feldspar","Value": 350, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Siedesalz","Label_en": "Siedesalz", "Value": 274, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Baryt","Label_en": "Baryt", "Value": 71, "cat":"Industrieminerale, Steine und Erden","cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Erdölgas","Label_en": "Erdölgas", "Value": 67, "cat":"Energierohstoffe", "cat_en":"energy resources", "unit": "(kt)"}
+      ,{"Label": "Kieselerde","Label_en": "Kieselerde", "Value": 54, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils", "unit": "(kt)"}
+      ,{"Label": "Fluorit","Label_en": "Fluorit", "Value": 35, "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils","unit": "(kt)"}
+      ,{"Label": "Metalle","Label_en": "Metal", "Value": 0.1, "cat":"Metallrohstoffe", "cat_en":"metal raw materials", "unit": "(kt)"}
+    ],
+    "category": [
+      {"color": "#84AD42", "cat":"Industrieminerale, Steine und Erden", "cat_en":"Industrial minerals, rocks and soils"}
+      ,{"color": "#D54D35", "cat":"Metallrohstoffe","cat_en":"metal raw materials"}
+      ,{"color": "#6CBCE3", "cat":"Energierohstoffe", "cat_en":"energy resources"}
+    ]
+  }
+]

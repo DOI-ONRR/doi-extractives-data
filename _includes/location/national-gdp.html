@@ -35,15 +35,22 @@
       <figure class="chart chart-{{ _metric }}">
         <figcaption id="gdp-figures-{{ _metric }}">
           Extractive industries accounted for
-          <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
-            {% if _metric == 'dollars' %}
-              ${{ gdp[year].dollars | intcomma }}
-            {% elsif _metric == 'percent' %}
-              {{ gdp[year].percent | percent }}%
-            {% endif %}
+          <span class="caption-data">
+            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
+              {% if _metric == 'dollars' %}
+                ${{ gdp[year].dollars | intcomma }}
+              {% elsif _metric == 'percent' %}
+                {{ gdp[year].percent | percent }}%
+              {% endif %}
+            </span>
+            of {{ state_name }}'s GDP in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
-          of {{ state_name }}'s GDP in
-          <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
+
         </figcaption>
         <eiti-bar-chart
           aria-controls="gdp-figures-{{ _metric }}"

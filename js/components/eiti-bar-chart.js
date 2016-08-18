@@ -311,9 +311,9 @@
     var id = selection.attr('aria-controls');
     if (id) {
       var output = d3.select('#' + id)
-      output.select('.eiti-bar-chart-x-value')
+      output.selectAll('.eiti-bar-chart-x-value')
         .text(value.x);
-      var y = output.select('.eiti-bar-chart-y-value');
+      var y = output.selectAll('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
 

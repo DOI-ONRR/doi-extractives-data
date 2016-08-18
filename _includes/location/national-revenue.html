@@ -53,7 +53,7 @@
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose). 
+          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).
         </p>
       </div>
 
@@ -70,10 +70,15 @@
           <figure class="chart">
             {% assign annual_revenue = commodity[1] %}
             <figcaption id="revenue-figures-{{ commodity_slug }}">
-              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+              <span class="caption-data">
+                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
                 companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
-              {{ commodity_name | downcase }} on federal land
-
+                {{ commodity_name | downcase }} on federal land
+              </span>
+              <span class="caption-no-data" aria-hidden="true">
+                There is no data for {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              </span>
             </figcaption>
             <eiti-bar-chart
               data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'

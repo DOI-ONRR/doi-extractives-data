@@ -25,10 +25,16 @@
 
       <figure class="chart">
         <figcaption id="federal-revenue-county-figures-All">
-        <span class="eiti-bar-chart-y-value"
-                data-format="$,">${{ current_revenue | intcomma }}</span>
-        was collected from federal land in {{ state_name }} in
-        <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          <span class="caption-data">
+            <span class="eiti-bar-chart-y-value"
+                  data-format="$,">${{ current_revenue | intcomma }}</span>
+            was collected from federal land in {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
 
         </figcaption>
         <eiti-bar-chart

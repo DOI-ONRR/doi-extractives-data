@@ -839,7 +839,8 @@
         });
       }
 
-      var products = unique(data, 'Product')
+      var langEn = window.location.pathname.split('/')[1] === 'en';
+      var products = unique(data, langEn ? 'Product_en' : 'Product')
         .sort(d3.ascending);
       dispatch.products(products);
 

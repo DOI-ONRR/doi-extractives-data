@@ -166,3 +166,7 @@ data_translation:
   zero_products: 0 Rohstoffe
   product: Rohstoffe
   no_production_on_federal_land: keine Produktion auf Bundesland
+
+footer:
+  impressum: Impressum
+  data-protection: Datenschutzerklärung

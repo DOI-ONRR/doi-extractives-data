@@ -175,3 +175,7 @@ data_translation:
   zero_products: 0 Product
   product: Product
   no_production_on_federal_land: no production on federal land
+
+footer:
+  impressum: Impressum
+  data-protection: Data Protection

@@ -55,7 +55,7 @@
 
           <figure class="chart chart-{{ _metric }}">
             <figcaption id="exports-figures-{{ commodity_slug }}">
-               <span class="caption-data">
+              <span class="caption-data">
                 <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
                   ${{ exports[year].dollars | intcomma }}
                 </span>
@@ -64,9 +64,9 @@
                 in <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
               <span class="caption-no-data" aria-hidden="true">
-              There is no data for {{ state_name }} in
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
-            </span>
+                There is no data for {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              </span>
             </figcaption>
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"

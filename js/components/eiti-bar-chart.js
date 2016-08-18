@@ -293,12 +293,9 @@
     selection.selectAll('.bar')
       .classed('bar-selected', function(d, i) {
         if (d.x === x) {
-          // console.log(d, value)
           index = i;
           value.x = d.x;
           value.y = d.y;
-          // console.log(d, value)
-          // console.log('--------')
           return true;
         }
       });

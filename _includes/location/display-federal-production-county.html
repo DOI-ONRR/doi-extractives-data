@@ -44,7 +44,7 @@
             <span class="withheld" aria-hidden="true">
               Data was for {{ county[1].name }} was withheld in <span data-year='{{ year }}'>{{ year }}</span>
             </span>
-            <span>
+            <span class="has-data">
               <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span>
             </span>
           </td>

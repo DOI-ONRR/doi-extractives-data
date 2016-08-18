@@ -92,10 +92,18 @@
             : false;
         });
 
-      sentencesData.select('.withheld', function(d) {
+      sentencesData.select('.withheld')
+        .attr('aria-hidden', function(d) {
           return d === 'Withheld'
             ? false
             : true;
+        });
+
+      sentencesData.select('.has-data')
+        .attr('aria-hidden', function(d) {
+          return d === 'Withheld'
+            ? true
+            : false;
         });
 
       sentencesData.select('[data-value]').attr('data-value', function(d) {
@@ -144,13 +152,6 @@
         return data[year] || 'Withheld';
       })
       .attr('aria-hidden', function (d) {
-        // console.log('hide row', d)
-        // if (d && d !== 'Withheld') {
-        //   return false;
-        // } else {
-        //   console.log('d')
-        //   return true;
-        // }
         return !d;
 
       });

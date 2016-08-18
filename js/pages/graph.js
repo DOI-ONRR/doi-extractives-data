@@ -107,7 +107,11 @@ function plotGraph(chart,slices,colorsData,title,ticksData,jsonDatas) {
   function tickFormatter(format, val) {
     for(var i=0;i<jsonDatas.length; i++){
       if(jsonDatas[i].Value === val){
-        val= val +" "+ jsonDatas[i].unit;
+        if (document.URL.includes('/en/')) {
+          val= val +" "+ jsonDatas[i].unit_en;
+        } else {
+          val= val +" "+ jsonDatas[i].unit;
+        }
       }
     }
     return val;

@@ -93,9 +93,6 @@
 
     } else {
       values = Object.keys(data).reduce(function(map, key) {
-
-        // need to add empty fields for the domain of the bar chart
-        // to make no data work!!!
         map[key] = {x: +key, y: data[key]};
         return map;
       }, {});

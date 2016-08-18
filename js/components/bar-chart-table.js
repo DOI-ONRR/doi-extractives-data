@@ -11,6 +11,8 @@
     this.update();
   };
 
+  var WITHHELD_FLAG = 'Withheld';
+
   var setYear = function(year) {
     var root = d3.select(this);
 
@@ -26,7 +28,7 @@
 
       function coerceNumber(num) {
         return typeof(num) == undefined || typeof(num) == 'undefined'
-          ? 'Withheld'
+          ? WITHHELD_FLAG
           :  num;
       }
 
@@ -54,7 +56,7 @@
           }
         }
 
-        if (value === 'Withheld' || !format) {
+        if (value === WITHHELD_FLAG || !format) {
           return value;
         } else {
           return format(value);
@@ -87,21 +89,21 @@
           return d;
         })
         .attr('data-withheld', function(d) {
-          return d === 'Withheld'
+          return d === WITHHELD_FLAG
             ? true
             : false;
         });
 
       sentencesData.select('.withheld')
         .attr('aria-hidden', function(d) {
-          return d === 'Withheld'
+          return d === WITHHELD_FLAG
             ? false
             : true;
         });
 
       sentencesData.select('.has-data')
         .attr('aria-hidden', function(d) {
-          return d === 'Withheld'
+          return d === WITHHELD_FLAG
             ? true
             : false;
         });
@@ -149,7 +151,7 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
-        return data[year] || 'Withheld';
+        return data[year] || WITHHELD_FLAG;
       })
       .attr('aria-hidden', function (d) {
         return !d;

@@ -32,7 +32,7 @@ State and tribal AML programs rate abandoned mine areas on a priority scale of 1
 
 To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).[^2]
 
-**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="" class="article_img-100 u-margin-top u-margin-bottom"></a>
+**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar.** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="" class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 ### Reclaimed AML areas
 
@@ -48,7 +48,7 @@ The federal AML Reclamation Program distributes funds for reclamation to the sta
 
 State and tribal AML programs use funds to prepare for reclamation projects, including permitting processes, environmental assessments, site surveys, and the development of reclamation plans. After completing project preparation, funds are used for construction to reclaim the site.
 
-Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.[^6]
+**Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.**[^6]
 
 For more information:
 

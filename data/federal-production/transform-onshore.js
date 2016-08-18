@@ -2,10 +2,10 @@ var parse = require('../../lib/parse');
 var util = require('../../lib/util');
 
 module.exports = {
-  year: 'Year',
-  state: 'Region',
-  county: 'Area',
-  fips: 'FIPS',
+  year: 'Calendar Year',
+  state: 'State/Offshore Region',
+  county: 'CPS/Planning Area',
+  fips: 'FIPS Code',
   commodity: function(d) {
     return util.normalizeCommodity(d.Commodity || '');
   },
@@ -17,6 +17,7 @@ module.exports = {
     return parse.units(d.Product)[1];
   },
   volume: function(d) {
+    d = util.trimKeys(d)
     return parse.number(d['Production Volume']);
   }
 };

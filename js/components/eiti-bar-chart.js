@@ -117,8 +117,8 @@
       .rangeBands([left, right]);
 
     xdomain.forEach(function(x) {
-      if (!values[x]) {
-        data.push({x: x, y: 0});
+      if (!values[x] && values[x] !== null) {
+        data.push({x: x, y: undefined});
       }
     });
 
@@ -167,7 +167,16 @@
 
     bars.select('.bar-value')
       .attr('height', function(d) {
-        return d.height = height(d.y);
+        var isUndefined = d.y === undefined;
+        var isZero = d.y === 0;
+        var isWithheld = d.y === null;
+        var baseHeight = isUndefined || isZero || isWithheld
+          ? 0
+          : 2;
+
+        return d.height = height(d.y) > baseHeight
+          ? height(d.y)
+          : baseHeight;
       })
       .attr('y', function(d) {
         return barHeight - d.height;
@@ -182,7 +191,7 @@
     selection.call(updateSelected, this.x);
 
     bars.on('mouseover', function(d) {
-      selection.call(updateSelected, d.x);
+      selection.call(updateSelected, d.x, true);
     }, true);
 
     svg.on('mouseout', function() {
@@ -207,7 +216,7 @@
         .attr('transform', 'translate(' + [0, bottom] + ')');
 
     // conditional used as proxy for having an extent line
-    if (this.hasAttribute('data-units')) {
+    if (this.hasAttribute('data-units') && +ymax > 0) {
     var extentLine = svg.append('g')
         .attr('class', 'extent-line')
 
@@ -215,10 +224,13 @@
       dataFormat = this.getAttribute('data-format') || '';
 
       if (dataUnits.indexOf('$') > -1) {
-        dataFormat = eiti.format.dollars;
+        dataFormat = eiti.format.transform(
+          eiti.format.transform('.1s', eiti.format.transformMetricLong),
+          eiti.format.transformDollars
+        );
         dataUnits = null;
       } else {
-        dataFormat = eiti.format.si;
+        dataFormat = eiti.format.transform('.1s', eiti.format.transformMetric);
       }
 
       var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));
@@ -232,16 +244,16 @@
         .attr('x1', 0)
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, extentTop] + ')');
+    }
 
-      var xAxis = svg.select('.x-axis')
+    var xAxis = svg.select('.x-axis')
         .attr('transform', 'translate(' + [0, bottom] + ')')
         .call(axis);
-    }
 
     function isInSet (year, vals) {
       var vals = vals || values;
-      if (vals[year]) {
-        return vals[year].y;
+      if (vals[year] !== undefined) {
+        return vals[year].y !== null;
       } else {
         return vals[year];
       }
@@ -275,9 +287,19 @@
     return text;
   }
 
-  var updateSelected = function(selection, x) {
+  var hideCaption = function(selection, data, noData, withheld) {
+    selection.select('.caption-data')
+      .attr('aria-hidden', data);
+    selection.select('.caption-no-data')
+      .attr('aria-hidden', noData);
+    selection.select('.caption-withheld')
+    .attr('aria-hidden', withheld);
+  }
+
+  var updateSelected = function(selection, x, hover) {
     var index;
-    var value = {x: x, y: 0};
+    var value = {x: x, y: undefined};
+
     selection.selectAll('.bar')
       .classed('bar-selected', function(d, i) {
         if (d.x === x) {
@@ -287,20 +309,37 @@
           return true;
         }
       });
+
     selection.selectAll('.tick')
       .classed('tick-selected', function(d, i) {
-        return i === index;
+        return !hover && i === index;
       });
+
+    selection.selectAll('.tick')
+      .classed('tick-hover', function(d, i) {
+        return hover && i === index;
+      }, true);
 
     var id = selection.attr('aria-controls');
     if (id) {
       var output = d3.select('#' + id)
-      output.select('.eiti-bar-chart-x-value')
+      output.selectAll('.eiti-bar-chart-x-value')
         .text(value.x);
-      var y = output.select('.eiti-bar-chart-y-value');
+      var y = output.selectAll('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
-      y.text(formatUnits(format(value.y),units));
+
+      if (value.y === null) {
+        hideCaption(output, true, true, false);
+      } else {
+        if (value.y === undefined) {
+          hideCaption(output, true, false, true);
+        } else {
+          hideCaption(output, false, true, true);
+          y.text(formatUnits(format(value.y),units));
+        }
+      }
+
     }
   };
 
@@ -343,6 +382,7 @@
             var selected = d3.select(this)
               .select('.bar-selected')
               .datum();
+
             return selected ? selected.y : undefined;
           }
         }

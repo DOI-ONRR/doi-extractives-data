@@ -31,12 +31,18 @@
 
       <figure class="chart">
         <figcaption id="jobs-figures-{{ _metric }}">
-          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-          there were
-          <span class="eiti-bar-chart-y-value" data-format=",">
-            {{ jobs[year].jobs | intcomma }}
+          <span class="caption-data">
+            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+            there were
+            <span class="eiti-bar-chart-y-value" data-format=",">
+              {{ jobs[year].jobs | intcomma }}
+            </span>
+            jobs in extractive industries that paid a wage or salary
           </span>
-          jobs in extractive industries that paid a wage or salary
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
         </figcaption>
         <eiti-bar-chart
           aria-controls="jobs-figures-{{ _metric }}"

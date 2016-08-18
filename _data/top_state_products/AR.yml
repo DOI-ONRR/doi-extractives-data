@@ -1,11 +1,4 @@
 federal_production:
-  '2005':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: 8065
-      rank: 1
-      percent: 100
   '2006':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
@@ -13,6 +6,12 @@ federal_production:
       value: 6350
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 9947099
+      rank: 1
+      percent: 0
   '2007':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
@@ -20,3 +19,107 @@ federal_production:
       value: 2400
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 9874095
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 12040947
+      rank: 1
+      percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17902901
+      rank: 1
+      percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18909311
+      rank: 1
+      percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17840902
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15478747
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13661475
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15170981
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1
+      rank: 1
+      percent: 0
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+  '2015':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 4701
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13224588
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 2
+      rank: 1
+      percent: 0

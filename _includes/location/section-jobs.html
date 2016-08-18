@@ -54,13 +54,19 @@
 
           <figure class="chart">
             <figcaption id="jobs-figures-{{ _metric }}">
-              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-              there were
-              <span class="eiti-bar-chart-y-value" data-format=",">
-                {{ jobs[year].jobs | intcomma }}
+              <span class="caption-data">
+                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+                there were
+                <span class="eiti-bar-chart-y-value" data-format=",">
+                  {{ jobs[year].jobs | intcomma }}
+                </span>
+                jobs in extractive industries that paid a wage or salary in
+                {{ state_name }}.
               </span>
-              jobs in extractive industries that paid a wage or salary in
-              {{ state_name }}.
+              <span class="caption-no-data" aria-hidden="true">
+                There is no data for {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              </span>
             </figcaption>
             <eiti-bar-chart
               aria-controls="jobs-figures-{{ _metric }}"
@@ -84,7 +90,7 @@
           </h4>
 
           <figure is="eiti-data-map-table" class="container">
-            <eiti-data-map color-scheme="Reds" steps="{{ steps }}">
+            <eiti-data-map color-scheme="Blues" steps="{{ steps }}">
               {% capture value_key %}employment.{{ year }}.count{% endcapture %}
 
               {% capture caption %}{{ locality_name }} employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}

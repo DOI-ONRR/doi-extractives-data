@@ -1,3 +1,23 @@
+'12049':
+  name: Hardee County
+  products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2012': null
+        '2013': null
+        '2015': null
+'12105':
+  name: Polk County
+  products:
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2010': null
+        '2011': null
+        '2012': null
 '12113':
   name: Santa Rosa County
   products:

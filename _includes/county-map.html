@@ -57,7 +57,7 @@
         {% if year_values %}
           <g class="county feature"
             data-fips="{{ fips }}"
-            data-value='{{ value | default: 0 | jsonify }}'
+            data-value='{{ value | jsonify }}'
             data-year-values='{{ year_values | jsonify }}'>
             <title>{{ county[1].name }}</title>
             <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
@@ -93,6 +93,10 @@
     </figcaption>
     <figcaption class="legend-no-data" aria-hidden="true">
       There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
+      Select a new year to populate the map.
+    </figcaption>
+    <figcaption class="legend-withheld" aria-hidden="true">
+      Data for {{ state_name }} was withheld in <span data-year="{{ year }}" >{{ year}}</span>.
       Select a new year to populate the map.
     </figcaption>
   {% endif %}

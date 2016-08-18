@@ -34,6 +34,70 @@ all_production:
       value: 2111000
       rank: 2
       percent: 23.37
+federal_production:
+  '2006':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2007':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2008':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2009':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2010':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2011':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2012':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2013':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2014':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 revenue:
   '2009':
     - product: Potassium

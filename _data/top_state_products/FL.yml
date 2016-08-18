@@ -118,3 +118,39 @@ revenue:
       value: 80956.84
       rank: 2
       percent: 0.76
+federal_production:
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2013':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2015':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null

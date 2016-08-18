@@ -62,3 +62,18 @@ all_production:
       value: 78155000
       rank: 1
       percent: 29.1
+federal_production:
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null

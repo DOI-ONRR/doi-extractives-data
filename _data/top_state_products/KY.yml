@@ -69,3 +69,140 @@ all_production:
       value: 77334723
       rank: 3
       percent: 7.75
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 212384
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 207550
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 205519
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 189884
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 191034
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 173873
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 145703
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 131149
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 126830
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 10786
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 150809
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8651
+      rank: 1
+      percent: 0

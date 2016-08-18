@@ -22,7 +22,7 @@
 
     {% assign years_values =  county[1].products[product_ref].volume %}
     {% assign fips = county[0] | pad_left: 5, '0' %}
-    {% if years_values != 'null' years_values != null %}
+    {% if years_values != null %}
       <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}'>
         <td><div class='swatch'
                  data-value-swatch='{{ product_volume }}'
@@ -34,11 +34,20 @@
             data-value='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
       </tr>
+
       <tr data-fips='{{ fips }}'>
         <td colspan='3'
             data-year-values='{{ years_values | jsonify }}'
             data-sentence='{{ product_volume }}'
-            aria-hidden='true'><span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span></td>
+            aria-hidden='true'
+            data-witheld="false">
+            <span class="withheld" aria-hidden="true">
+              Data was for {{ county[1].name }} was withheld in <span data-year='{{ year }}'>{{ year }}</span>
+            </span>
+            <span class="has-data">
+              <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span>
+            </span>
+          </td>
       </tr>
     {% endif %}
   {% endfor %}

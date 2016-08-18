@@ -1,6 +1,89 @@
-revenue:
-  '2014':
-    - product: Oil- Yellow Wax
-      value: 1629.2
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 550374
       rank: 1
-      percent: 100
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 546642
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 507226
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 456257
+      rank: 1
+      percent: 0
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 472631
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 445437
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 394884
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 395518
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 363941
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13910
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 342217
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 12809
+      rank: 1
+      percent: 0

@@ -61,13 +61,21 @@ eiti-bar-chart {
   }
 
   .bar-selected .bar-value,
-  .tick-selected text {
+  .tick-selected text,
+  .tick-hover text {
     fill: $green-dark-chart;
-    font-weight: $weight-bold;
 
     &.dataless {
       fill: $green-dark-chart;
     }
+  }
+
+  .tick-selected text {
+    font-weight: $weight-bold;
+  }
+
+  .tick-hover text {
+    font-weight: $weight-book;
   }
 }
 
@@ -90,12 +98,12 @@ eiti-bar-chart {
 
 .extent-line {
   text {
-    @include font-size(0.9);
-    fill: $neutral-gray;
+    @include font-size(1);
+    fill: $another-gray;
   }
 
   line {
-    stroke: $neutral-gray;
+    stroke: $another-gray;
     stroke-dasharray: 5,5;
     stroke-width: 1;
   }

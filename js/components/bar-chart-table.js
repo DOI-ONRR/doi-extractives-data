@@ -11,6 +11,8 @@
     this.update();
   };
 
+  var WITHHELD_FLAG = 'Withheld';
+
   var setYear = function(year) {
     var root = d3.select(this);
 
@@ -24,13 +26,19 @@
         return JSON.parse(yearVals);
       }
 
-      function cellData(data, year, property) {
+      function coerceNumber(num) {
+        return typeof(num) == undefined || typeof(num) == 'undefined'
+          ? WITHHELD_FLAG
+          :  num;
+      }
+
+      function cellData(data, year, property, coerce) {
         if (data && data[year] && property) {
-          return data[year][property] || 0;
+          return data[year][property] || coerceNumber(coerce);
         } else if (data && !property) {
-          return data[year] || 0;
+          return data[year] || coerceNumber(coerce);
         } else {
-          return 0;
+          return coerceNumber(coerce);
         }
       }
 
@@ -48,10 +56,10 @@
           }
         }
 
-        if (format) {
-          return format(value);
-        } else {
+        if (value === WITHHELD_FLAG || !format) {
           return value;
+        } else {
+          return format(value);
         }
       }
 
@@ -67,21 +75,40 @@
       bars.datum(function() {
           var data = parseYearVals(this)
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property);
+          return cellData(data, year, property, 0);
         })
         .attr('data-value', function(d) {
           return d;
         });
 
-      sentences.datum(function() {
+      var sentencesData = sentences.datum(function() {
           var data = parseYearVals(this)
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property);
-        })
-        .attr('data-sentence', function(d) {
+        }).attr('data-sentence', function(d) {
           return d;
         })
-        .select('[data-value]').attr('data-value', function(d) {
+        .attr('data-withheld', function(d) {
+          return d === WITHHELD_FLAG
+            ? true
+            : false;
+        });
+
+      sentencesData.select('.withheld')
+        .attr('aria-hidden', function(d) {
+          return d === WITHHELD_FLAG
+            ? false
+            : true;
+        });
+
+      sentencesData.select('.has-data')
+        .attr('aria-hidden', function(d) {
+          return d === WITHHELD_FLAG
+            ? true
+            : false;
+        });
+
+      sentencesData.select('[data-value]').attr('data-value', function(d) {
           return d;
         }).text(function(d) {
           return formatText(this, d);
@@ -124,10 +151,11 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
-        return data[year] || 0;
+        return data[year] || WITHHELD_FLAG;
       })
       .attr('aria-hidden', function (d) {
         return !d;
+
       });
     }
   }

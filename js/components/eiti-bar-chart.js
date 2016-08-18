@@ -227,10 +227,13 @@
       dataFormat = this.getAttribute('data-format') || '';
 
       if (dataUnits.indexOf('$') > -1) {
-        dataFormat = eiti.format.dollars;
+        dataFormat = eiti.format.transform(
+          eiti.format.transform('.1s', eiti.format.transformMetricLong),
+          eiti.format.transformDollars
+        );
         dataUnits = null;
       } else {
-        dataFormat = eiti.format.si;
+        dataFormat = eiti.format.transform('.1s', eiti.format.transformMetric);
       }
 
       var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));

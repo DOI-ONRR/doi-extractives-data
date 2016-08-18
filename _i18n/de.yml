@@ -156,3 +156,17 @@ chart:
     metals: Metalle
   chart-1-tittle: Wert der in Deutschland produzierten Rohstoffe
   chart-2-tittle: Menge der in Deutschland produzierten Rohstoffe
+
+data_translation:
+  no_data: Keine Daten
+  no_production: Keine Produktion
+  one_or_more_products: 1 oder mehrere Produkte
+  no_product: Keine Produkt
+  total: Gesamt
+  zero_products: 0 Rohstoffe
+  product: Rohstoffe
+  no_production_on_federal_land: keine Produktion auf Bundesland
+
+footer:
+  impressum: Impressum
+  data-protection: Datenschutzerklärung

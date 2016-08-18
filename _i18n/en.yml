@@ -63,10 +63,10 @@ about:
 
 federal-production:
     heading-1: Interactive Resource Card
-    description-1: In dieser interaktiven Rohstoffkarte können Sie Informationen zu einzelnen Rohstoffen und den Bundesländern auswählen.
-    description-2: Benutzen Sie hierfür den Filter (oben rechts).
-    description-3: "Weitere Informationen zu Datenquellen sowie Links zu Originaldaten sind hier einzusehen:"
-    icon: Daten Einsehen
+    description-1: In this interactive resource card, you can select information on individual commodities and the provinces.
+    description-2: For this, use the filter (top right).
+    description-3: "For more information about data sources and links to the original data can be viewed here:"
+    icon: Show Data
 
     filter-container:
       show-filter: Filter einblenden
@@ -100,13 +100,13 @@ federal-production:
 charts-production:
     title: Einnahmen
     heading: Rohstoffproduktion in Deutschland
-    description-1: Hier können Sie den Wert und die Menge der gesamten Rohstoffproduktion in Deutschland einsehen.
-    description-2: Über den Filter können Sie sich einen Einblick in die zeitliche Entwicklung der Rohstoffförderung in Deutschland verschaffen.
-    description-3: "Weitere Informationen zu den Datenquellen sowie ein Link zu den Originaldaten sind hier einzusehen:"
-    icon: Daten Einsehen
-    open-filter: Filter öffnen
-    reset-filter: (Filter zurücksetzen)
-    select-year: Jahr auswählen
+    description-1: Here you can see the value and the amount of total commodity production in Germany.
+    description-2: You can get an insight into the evolution of raw material extraction in Germany over the filter.
+    description-3: "For more information about the data sources as well as a link to the original data can be viewed here:"
+    icon: Show Data
+    open-filter: Open Filter
+    reset-filter: (Reset Filter)
+    select-year: Select Year
     year: Year
     total-product-in-germany: Gesamtproduktion in Deutschland
 
@@ -136,7 +136,7 @@ chart:
     metal-raw-materials: Metallrohstoffe
     energy-resources: Energierohstoffe
   lable:
-    natural-stones: Naturwerksteine
+    natural-stones: Natural Stones
     gypsum: REA-Gips
     quartz-sand: Quarzsand
     kaolin: Kaolin

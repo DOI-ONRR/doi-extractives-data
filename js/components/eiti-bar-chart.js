@@ -198,7 +198,7 @@
     }, true);
 
     svg.on('mouseout', function() {
-      selection.call(updateSelected, self.x, true);
+      selection.call(updateSelected, self.x);
     }, true);
 
     var axis = d3.svg.axis()
@@ -315,7 +315,7 @@
 
     selection.selectAll('.tick')
       .classed('tick-selected', function(d, i) {
-        return i === index;
+        return !hover && i === index;
       });
 
     selection.selectAll('.tick')

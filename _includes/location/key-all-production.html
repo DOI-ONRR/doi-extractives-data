@@ -4,7 +4,7 @@
 {% if include.top %}
   {% assign top_all_products = site.data.top_state_products[include.location_id].all_production[include.year] | where: 'rank', 1 %}
   {% if top_all_products.size > 0 %}
-  <p>{{ include.location_name }} leads the nation in production of these resources:</p>
+  {{ include.location_name }} leads the nation in production of:
     <ul>
     {% for product in top_all_products %}
     <li><a href="#all-production-{{ product.product | slugify }}">{{ product.name }}</a>: {{ product.percent | floor }}% of U.S. production</li>

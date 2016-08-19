@@ -3,10 +3,11 @@ id: LA
 title: Louisiana
 FIPS: '22'
 
-case_study: true
 priority: true
 
 locality_name: 'Parish'
+case_study_link: |
+    For a detailed view of how natural gas production affects communities in Louisiana, read more about [DeSoto Parish](/case-studies/desoto/).
 ---
 * The Office of Mineral Resources within the [Louisiana Department of Natural Resources](http://dnr.louisiana.gov/) manages natural resource extraction throughout the state and receives revenue from royalties, bonuses, rents, interest, and fees for leases for state-owned lands.
   - [Oil production](http://dnr.louisiana.gov/index.cfm?md=pagebuilderANDtmp=homeANDpid=208)

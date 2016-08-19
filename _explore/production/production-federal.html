@@ -22,8 +22,8 @@ permalink: /explore/federal-production/
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <div class="toggle-filters-container">
         <button class="toggle-filters toggle-desktop" is="eiti-toggle"
-          aria-controls="filters" data-collapsed-text="Filter öffnen" aria-expanded="false"
-          data-expanded-text="Filter schließen" data-toggler="filters">
+          aria-controls="filters" data-collapsed-text={% t 'charts-production.open-filter' %} aria-expanded="false"
+          data-expanded-text={% t 'charts-production.close-filter' %} data-toggler="filters">
           {% t 'federal-production.filter-container.show-filter' %}
         </button>
         <a class="clear-filters" href="#year=2014&product=select">
@@ -107,7 +107,9 @@ permalink: /explore/federal-production/
       </div>
 
       <div class="container">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Filter schließen" data-collapsed-text="Filter öffnen" data-toggler="filters">Filter öffnen</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Filter schließen" data-collapsed-text="Filter öffnen" data-toggler="filters">
+          {% t 'charts-production.open-filter' %}
+        </button>
       </div>
 
     </div>
@@ -231,7 +233,7 @@ permalink: /explore/federal-production/
     {% for area in site.data.offshore_areas %}
     '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
-    'DE': 'ganz Deutschland'
+    'DE': '{% t 'data_translation.entire_germany' %}'
   };
   var traslation = {
     no_data: '{% t 'data_translation.no_data' %}',
@@ -241,7 +243,10 @@ permalink: /explore/federal-production/
     total: '{% t 'data_translation.total' %}',
     product: '{% t 'data_translation.product' %}',
     zero_products: '{% t 'data_translation.zero_products' %}',
-    no_production_on_federal_land: '{% t 'data_translation.no_production_on_federal_land' %}'
+    no_production_on_federal_land: '{% t 'data_translation.no_production_on_federal_land' %}',
+    all_raw_materials: '{% t 'data_translation.all_raw_materials' %}',
+    entire_germany: '{% t 'data_translation.entire_germany' %}'
+
   }
 </script>
 

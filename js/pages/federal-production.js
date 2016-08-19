@@ -888,7 +888,7 @@
     if (product && product !== 'select') {
       product = product.replace(/\s*\(.+\)\s*$/, '');
     } else {
-      product = 'Alle Rohstoffe';
+      product =  traslation.all_raw_materials;
     }
 
     var data = {
@@ -920,7 +920,7 @@
 
     select.select('option:nth-child(2)')
       .text(products.length > 1
-            ? 'Alle ' + products.length + ' Rohstoffe'
+            ? 'Alle ' + products.length + ' ' +traslation.product
             : products.length + eiti.format.pluralize(products.length, ' product'));
 
     var options = select.selectAll('option.product')

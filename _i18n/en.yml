@@ -16,31 +16,30 @@ explore-data:
 
     introduction-second: |
       Data To
-      <a href="#revenue">Einnahmen</a>
-      aus dem deutschen Rohstoffsektor sowie zur
-      <a href="#economic-impact">sozialen und wirtschaftlichen Bedeutung</a>
-      des Sektors werden bis zur Veröffentlichung des 1. D-EITI Berichts im Sommer 2017 stetig ergänzt und hinzugefügt.
-
+      <a href="#revenue">Revenue</a>
+      from German commodity sector and to
+      <a href="#economic-impact">social and economic importance </a>
+      the sector are constantly updated and added to the publication of the first D-EITI report in the summer 2017th.
     figcaption: |
       An interactive resource card, see:
       <a class="link-alpha" href="#production">production data</a>
 
     production:
-      heading-1: Rohstoffproduktion in Deutschland
-      sub-heading-1: Interaktive Rohstoffkarte
-      description-1: Erstmals überhaupt sind Rohstoffproduktionsdaten auf Ebene der Bundesländer in einer interaktiven Rohstoffkarte verfügbar.
-      sub-heading-2: Gesamtdeutsche Rohstoffproduktion
-      description-2: Informieren Sie sich darüber, welche Rohstoffe in Deutschland gefördert werden.
+      heading-1: Commodity production in Germany
+      sub-heading-1: Interactive Resource Card
+      description-1: For the first time ever commodities production data at the provincial level in an interactive resource card are available.
+      sub-heading-2: Total German production of raw materials
+      description-2: Inform about which raw materials are to promote in Germany.
 
     revenue :
-      heading-1: Einnahmen
-      sub-heading-1: Einnahmen aus dem Rohstoffsektor
-      description-1: Hier können Sie in Zukunft mehr über die Einnahmen erfahren, die im deutschen Rohstoffsektor erwirtschaftet werden.
+      heading-1: Revenue
+      sub-heading-1: Revenues from the extractive sector
+      description-1: Here you can learn about the revenues that are generated in the German commodity sector more in the future.
 
     economic-impact:
-      heading-1: Gesellschaftlichte Bedeutung
-      sub-heading-1: Wirtschaftliche und soziale Bedeutung
-      description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
+      heading-1: Social relevance
+      sub-heading-1: Economic and social importance
+      description-1: Here you can check in the future of the economic and social importance of the German commodity sector.
 
 how-it-work:
     title: How-it-work?
@@ -50,16 +49,15 @@ how-it-work:
 about:
     title: About D-EITI
     description-1: |
-        Die Extractive Industries Transparency Initiative (EITI) ist ein internationaler Standard zur Förderung des
-        transparenten und verantwortungsvollen Managements von natürlichen Ressourcen. Die Bundesregierung hat im Juli 2014
-        beschlossen der Initiative beizutreten und ist seit dem 23. Februar 2016 offiziell implementierendes EITI-Land.
-        In den nächsten 18 Monaten wird die deutsche EITI (D-EITI) einen Bericht ausarbeiten und veröffentlichen,
-        der sowohl umfassende
-    description-1-link-1: Kontextinformationen
-    description-1-1:  zum deutschen Rohstoffsektor als auch wichtige
-    description-1-link-2: Daten
-    description-1-2: über den rohstoffgewinnenden Sektor zusammenträgt.
-    description-2:  Besuchen Sie dieses Portal gerne regelmäßig, um über neue Ergebnisse der deutschen EITI Initiative auf dem Laufenden zu bleiben.
+        The Extractive Industries Transparency Initiative (EITI) is an international standard for the promotion of
+        transparent and responsible management of natural resources. The federal government in July 2014
+        decided the initiative to join and is since February 23, 2016 officially-implement EITI country.
+        In the next 18 months, the German EITI (D-EITI) draw up a report and publish,both comprehensive.
+    description-1-link-1: Context Information
+    description-1-1: the German commodity sector as well as important
+    description-1-link-2: Data
+    description-1-2: together carries through the raw-material producing sector.
+    description-2: Visit this portal like regularly to stay on the latest results of German EITI initiative to date.
 
 federal-production:
     heading-1: Interactive Resource Card
@@ -69,72 +67,73 @@ federal-production:
     icon: Show Data
 
     filter-container:
-      show-filter: Filter einblenden
-      reset-filter: (Filter zurücksetzen)
+      show-filter: Show filters
+      reset-filter: (Reset filter)
 
       filters:
-        heading: Rohstoffkarte filtern
-        description: Wählen Sie einen Rohstoff oder ein Bundesland, um entsprechende Informationen einzusehen.
+        heading: Filter Resource Card
+        description: Select a commodity or a State to view corresponding information.
 
       product-filter:
-        lable: Rohstoff
-        select: Bitte auswählen
-        value: Alle Rohstoffe
+        lable: Raw Material
+        select: Please select
+        value: All raw materials
 
       region-selector:
-        lable: Bundesland
-        select: Bitte auswählen
-        value: Ganz Germany
+        lable: Federal state
+        select: Please select
+        value: All Germany
 
-      raw-materials: Alle Rohstoffe </span> gefördert in
-      entire-germany: ganz Germany
-      set-filter: "Filter einstellen:"
+      raw-materials: All raw materials </span> promoted in
+      entire-germany: all Germany
+      set-filter: "Set filter:"
 
       map:
-        heading-units: Förderung nach Bundesland
-        heading-state: Föderung in
+        heading-units: Promotion by State
+        heading-state: Promotion in
         heading-production: Production by offshore area
 
     year: Year
 
 charts-production:
-    title: Einnahmen
-    heading: Rohstoffproduktion in Deutschland
+    title: Revenue
+    heading: Commodity production in Germany
     description-1: Here you can see the value and the amount of total commodity production in Germany.
     description-2: You can get an insight into the evolution of raw material extraction in Germany over the filter.
     description-3: "For more information about the data sources as well as a link to the original data can be viewed here:"
     icon: Show Data
-    open-filter: Open Filter
+    open-filter: FilterOpen
+    close-filter: FilterClose
     reset-filter: (Reset Filter)
     select-year: Select Year
     year: Year
-    total-product-in-germany: Gesamtproduktion in Deutschland
+    total-product-in-germany: Total production in Germany
 
 data:
-    production-title: Daten zur interaktiven Rohstoffkarte
-    chart-title: Daten zur gesammtdeutschen Rohstoffproduktion
-    description-1: Die hier dargestellten Produktionsdaten beruhen u.a. auf der Publikation des Bundeswirtschaftsministeriums "Der Bergbau in der Bundesrepublik Deutschland"
-    description-2: Download der Produktionsdaten
-    production-icon: Siehe Anhang
-    chart-icon: Full dataset
+    production-title: Data for interactive resource card
+    chart-title: Data for all-German production of raw materials
+    description-1: The production data presented here is inter alia on the publication of the Federal Ministry of Economics "The mining industry in the Federal Republic of Germany"
+    description-2: Download production data
+    production-icon: See Appendix
+    chart-icon: Full Dataset
 
 chart:
   category:
     industrial-minerals: Industrial Minerals
     energy-resources: Energy Resources
   category1:
-    industrial-minerals: Industrieminerale, Steine und Erden
-    metal-raw-materials: Metallrohstoffe
-    energy-resources: Energierohstoffe
+    industrial-minerals: Industrial minerals, rocks and soils
+    metal-raw-materials: metal raw materials
+    energy-resources: energy resources
 
 chart:
   category:
-    industrial-minerals: Industrieminerale, Steine und Erden
-    energy-resources: Energierohstoffe
+    industrial-minerals: Industrial minerals, rocks and soils
+    energy-resources: energy resources
   category1:
-    industrial-minerals: Industrieminerale, Steine und Erden
-    metal-raw-materials: Metallrohstoffe
-    energy-resources: Energierohstoffe
+    industrial-minerals: Industrial minerals, rocks and soils
+    metal-raw-materials: metal raw materials
+    energy-resources: energy resources
   lable:
     natural-stones: Natural Stones
     gypsum: REA-Gips
@@ -175,6 +174,8 @@ data_translation:
   zero_products: 0 Product
   product: Product
   no_production_on_federal_land: no production on federal land
+  all_raw_materials: All raw materials
+  entire_germany: Entire Germany
 
 footer:
   impressum: Impressum

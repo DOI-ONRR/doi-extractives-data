@@ -315,7 +315,6 @@
             return d + '%';
           }
 
-          // svgContainer.style('padding-bottom', pixelize);
           svgContainer.style('padding-bottom', percentage);
           // end trim
 

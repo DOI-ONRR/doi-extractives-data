@@ -1,4 +1,4 @@
-{% assign cell_padding = include.cell_padding | default:13 %}
+{% assign cell_padding = include.cell_padding | default:10 %}
 
 <svg class="legend-ownership-svg">
   <g class="legendQuant">
@@ -25,18 +25,18 @@
         <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
           <rect class="swatch" height="13" width="13"></rect>
           <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(25,12.5)">Federal lands</text>
+          <text class="label" transform="translate(18,12)">Federal lands</text>
         </g>
         <g class="cell state" transform="translate(0, {{ cell_padding | plus: 13 }})" style="opacity: 1;">
           <rect class="swatch" height="13" width="13"></rect>
           <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(25,12.5)">Tribal lands</text>
+          <text class="label" transform="translate(18,12)">Tribal lands</text>
         </g>
         <g class="cell" transform="translate(0, {{ cell_padding | times: 2 | plus: 26 }})" style="opacity: 1;">
           <rect class="swatch" height="13" width="13"></rect>
           <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(25,12.5)">Other lands (state,</text>
-          <text class="label" transform="translate(25,30.5)">private, local)</text>
+          <text class="label" transform="translate(18,12)">Other lands (state,</text>
+          <text class="label" transform="translate(18,27)">private, local)</text>
         </g>
       {% endif %}
     </g>

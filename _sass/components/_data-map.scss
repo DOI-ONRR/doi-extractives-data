@@ -119,6 +119,9 @@ eiti-data-map {
 
   .cell text {
     @include font-size(3 / 4);
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

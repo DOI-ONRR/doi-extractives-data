@@ -29,6 +29,10 @@
       {% endcapture %}
       {% assign is_wide = is_wide | strip %}
 
+      {% if is_wide != 'wide' %}
+        {% assign _width = 65.88078 | to_f %}
+      {% endif %}
+
       <div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
         style="padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
         <svg class="county ownership map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>

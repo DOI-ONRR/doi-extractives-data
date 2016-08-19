@@ -5,6 +5,11 @@ WHERE
     OR source = 'All'
     OR region = 'US';
 
+
+UPDATE federal_disbursements
+SET region = 'US'
+WHERE region IS NULL;
+
 -- roll up nationally
 INSERT INTO federal_disbursements
     (year, region, fund, source, dollars)
@@ -18,10 +23,6 @@ FROM federal_disbursements
 WHERE region IS NOT NULL
 GROUP BY
     year, fund, source;
-
-UPDATE federal_disbursements
-SET region = 'US'
-WHERE region IS NULL;
 
 -- roll up by region
 INSERT INTO federal_disbursements
@@ -44,7 +45,7 @@ INSERT INTO federal_disbursements
         SUM(dollars) AS dollars
     FROM federal_disbursements
     WHERE source = 'All'
-    GROUP BY year, region;
+    GROUP BY year, region, source;
 
 -- roll up by source
 INSERT INTO federal_disbursements
@@ -58,7 +59,7 @@ INSERT INTO federal_disbursements
     WHERE
         fund != 'All'
         AND source != 'All'
-    GROUP BY year, region;
+    GROUP BY year, region, fund;
 
 -- then we incorporate HPF rows, which apparently come from offshore
 DROP TABLE IF EXISTS all_disbursements;

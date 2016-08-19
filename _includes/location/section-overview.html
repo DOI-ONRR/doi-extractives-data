@@ -2,22 +2,19 @@
 
   <section class="panel-gray container-outer">
 
-    <!-- Includes the GDP percentage, then outputs employment percentage if it's over 2%. If the state leads US production for any commodities, those commodities are listed along with percentage of US production. -->
+    <!-- Includes the GDP percentage, then outputs employment percentage if it's over 2%.-->
     <p>
+      Natural resource extraction varies widely from state to state. 
       {%
-        include location/key-gdp.html
+        include location/key-gdp-jobs.html
         location_id=state_id
         location_name=state_name
         year=year
       %}
-
-      {%
-        include location/key-jobs.html
-        location_id=state_id
-        location_name=state_name
-        year=year
-      %}
-
+    </p>
+  
+    <!-- If the state leads US production for any commodities, those commodities are listed along with percentage of US production. -->
+    <p>
       {%
         include location/key-all-production.html
         location_id=state_id
@@ -29,15 +26,27 @@
 
     <!-- Sets up the federal-land focus of USEITI data, specifies what percentage of land is federally owned, and outputs the total revenue from federal land. -->
     <p>
-      USEITI focuses on data about natural resource extraction on {{ "federal land" | term }}, which represents {{ site.data.land_stats[state_id].federal_percent | percent }}% of all land in {{ state_name }}. 
-      {%
-        include location/key-revenue.html
-        location_id=state_id
-        location_name=state_name
-        year=year
-        top=top_products
-      %}
+      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Indian tribes or individuals, or governments (for instance, federal, state, or local governments). Many USEITI datasets only cover natural resource extraction on federal land, which represents 
+      {{ site.data.land_stats[state_id].federal_percent | percent }}% 
+      of all land in {{ state_name }}.
     </p>
+
+    <!-- Includes relevant offshore area, if there is one -->
+    {% if page.offshore_area %}
+      {{ page.offshore_area | markdownify }}
+    {% endif %}
+
+    <!-- Includes case study link, if there is one -->
+    {% if page.case_study_link %}
+      {{ page.case_study_link | markdownify }}
+    {% endif %}
+
+    <!-- Blurb for opt-in states -->
+    {% if is_opt_in_state %}
+      <p>
+        The state of {{ state_name }} chose to participate in an extended USEITI reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
+      </p>
+    {% endif %}
 
   </section>
 

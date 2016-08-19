@@ -848,7 +848,11 @@
       var product = state.get('product');
       if (product) {
         data = data.filter(function(d) {
-          return d.Product === product;
+          if (langEn) {
+            return d.Product_en === product;
+          } else {
+            return d.Product === product;
+          }
         });
       }
 

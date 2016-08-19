@@ -16,7 +16,7 @@ module EITI
       if !width || width == "inherit"
         width = 100 + magic_number_wide
       else
-         width = width + ( magic_number * width / 100 )
+        width = width + ( magic_number * width / 100 )
       end
 
       # if we get a string, split it into 4 parts and map its strings to floats

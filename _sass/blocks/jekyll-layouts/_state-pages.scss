@@ -18,7 +18,7 @@
   }
 
   h3:not(.chart-title):not(.state-page-nav-title), 
-  h4:not(.chart-title):not(.state-page-nav-title) {
+  h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
 
     border-bottom: 2px solid $light-green;
@@ -26,7 +26,7 @@
     padding-bottom: $standard-padding-lite;
   }
   
-  h4:not(.chart-title):not(.state-page-nav-title) {
+  h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
   }

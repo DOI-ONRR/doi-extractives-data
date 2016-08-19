@@ -9,8 +9,14 @@ module EITI
     #
     # style="padding-bottom: {{ viewbox | svg_viewbox_padding }}%;"
     def svg_viewbox_padding(viewbox, width = nil)
+      # width of svg at 8 columns (463.48) / padding at 1em (32) / 2
+      magic_number_wide = 7.241875
+      # width of svg at 8 columns (310.02) / padding at 1em (32)
+      magic_number = 4.8440625 * 2
       if !width || width == "inherit"
-        width = 100
+        width = 100 + magic_number_wide
+      else
+         width = width + ( magic_number * width / 100 )
       end
 
       # if we get a string, split it into 4 parts and map its strings to floats
@@ -22,8 +28,7 @@ module EITI
         return width
       end
 
-      # viewbox[3] / viewbox[2] * width
-      viewbox[3]
+      viewbox[3] / viewbox[2] * width
     end
 
   end

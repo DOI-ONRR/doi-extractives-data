@@ -304,17 +304,19 @@
           var svgContainer = d3.select(this)
             .selectAll('.svg-container[data-dimensions]')
             .datum(function() {
-              return (this.getBoundingClientRect().width
-                * +this.getAttribute('data-dimensions')
-                / 100)
-                + 50;
+              var multiplier = this.classList.contains('wide')
+                ? 100 + 9
+                : 65.88078 + 10;
+
+              return +this.getAttribute('data-dimensions') * multiplier;
             });
 
-          function pixelize(d) {
-            return d + 'px';
+          function percentage(d) {
+            return d + '%';
           }
 
-          svgContainer.style('padding-bottom', pixelize);
+          // svgContainer.style('padding-bottom', pixelize);
+          svgContainer.style('padding-bottom', percentage);
           // end trim
 
         }}

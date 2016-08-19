@@ -179,3 +179,21 @@ data_translation:
 footer:
   impressum: Impressum
   data-protection: Data Protection
+
+states:
+  Baden-Württemberg: Baden-Württemberg
+  Bayern: Bavaria
+  Berlin: Berlin
+  Brandenburg: Brandenburg
+  Bremen: Bremen
+  Hamburg: Hamburg
+  Hessen: Hesse
+  Niedersachsen: Lower Saxony
+  Mecklenburg-Vorpommern: Mecklenburg-Vorpommern
+  Nordrhein-Westfalen: North Rhine-Westphalia
+  Rheinland-Pfalz: Rhineland-Palatinate
+  Saarland: Saarland
+  Sachsen: Saxony
+  Sachsen-Anhalt: Saxony-Anhalt
+  Schleswig-Holstein: Schleswig-Holstein
+  Thüringen: Thuringia

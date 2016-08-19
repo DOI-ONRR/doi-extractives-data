@@ -61,7 +61,8 @@ permalink: /explore/federal-production/
               </option>
               <optgroup label="Bundesländer">
                 {% for state in site.data.states %}
-                <option value="{{ state.id }}">{{ state.name }}</option>
+                {% assign stateKey = 'states.' | append: state.name %}
+                <option value="{{ state.id }}">{% t stateKey %}</option>
                 {% endfor %}
               </optgroup>
             </select>

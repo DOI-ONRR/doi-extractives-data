@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   $.ajax({
     type: "GET",
-    url: "../../data/graphs/data.json",
+    url: "../../data/regional/charts.json",
     dataType: "text",
     success: function(data) {processData(data);}
   });
@@ -14,12 +14,18 @@ $(document).ready(function(){
 function processData(data) {
 
   var jsonresponce = JSON.parse(data);
-  jsonData = jsonresponce[0].chart_data;
-  category = jsonresponce[0].category;
-  jsonData1 = jsonresponce[1].chart_data;
-  category1 = jsonresponce[1].category;
+
+  for(var i=0; i<=jsonresponce.length; i++) {
+    renderChart(jsonresponce[i], i);
+  }
 
 /* Start First Graph */
+function renderChart(jsondata, number) {
+
+  jsonData = jsondata.data;
+  category = jsondata.categories;
+  console.log(jsondata.categories);
+
   var dataSlices = [];
   var ticks = [];
   var colors = [];
@@ -42,37 +48,43 @@ function processData(data) {
       ticks.push(entry['Label']);
     }
   });
-  legendTable("legend1",category);
-  plotGraph('chart1',dataSlices,colors,traslation.chart_1_tittle,ticks,jsonData);
+  legendTable('legend'+(number+1),category);
+  // console.log(dataSlices);
+  // console.log(colors);
+  // console.log(jsonData);
+  plotGraph('chart'+(number+1),dataSlices,colors,traslation.chart_1_tittle,ticks,jsonData);
+}
+
 /* end First Graph */
 
 /* Start Second Graph */
-    var dataSlices1 = [];
-    var ticks1 = [];
-    var colors1 = [];
-    jsonData1.sort( orderData("Value"));
-
-    for (var i = 0; i < jsonData1.length; i++) {
-      for (var j = 0; j < category1.length; j++) {
-        if (jsonData1[i].cat == category1[j].cat) {
-          colors1.push(category1[j].color);
-        }
-      }
-    }
-    $.each(jsonData1, function (entryindex, entry) {
-      dataSlices1.push(entry['Value']);
-      if(document.URL.includes('/en/')) {
-        ticks1.push(entry['Label_en']);
-      } else {
-        ticks1.push(entry['Label']);
-      }
-    });
-    legendTable("legend2",category1);
-    plotGraph('chart2',dataSlices1,colors1,traslation.chart_2_tittle,ticks1,jsonData1);
+    // var dataSlices1 = [];
+    // var ticks1 = [];
+    // var colors1 = [];
+    // jsonData1.sort( orderData("Value"));
+    //
+    // for (var i = 0; i < jsonData1.length; i++) {
+    //   for (var j = 0; j < category1.length; j++) {
+    //     if (jsonData1[i].cat == category1[j].cat) {
+    //       colors1.push(category1[j].color);
+    //     }
+    //   }
+    // }
+    // $.each(jsonData1, function (entryindex, entry) {
+    //   dataSlices1.push(entry['Value']);
+    //   if(document.URL.includes('/en/')) {
+    //     ticks1.push(entry['Label_en']);
+    //   } else {
+    //     ticks1.push(entry['Label']);
+    //   }
+    // });
+    // legendTable("legend2",category1);
+    // plotGraph('chart2',dataSlices1,colors1,traslation.chart_2_tittle,ticks1,jsonData1);
 /* end Second Graph */
 }
 
 function orderData(prop) {
+  console.log(prop);
   return function(a,b) {
     if ( a[prop] > b[prop]){
         return 1;

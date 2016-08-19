@@ -59,7 +59,7 @@ permalink: /explore/federal-production/
               <option value="DE">
                 {% t 'federal-production.filter-container.region-selector.value' %}
               </option>
-              <optgroup label="Bundesländer">
+              <optgroup label={% t 'charts-production.states' %}>
                 {% for state in site.data.states %}
                 {% assign stateKey = 'states.' | append: state.name %}
                 <option value="{{ state.id }}">{% t stateKey %}</option>

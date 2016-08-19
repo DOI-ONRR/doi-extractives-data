@@ -102,12 +102,13 @@ charts-production:
     description-2: You can get an insight into the evolution of raw material extraction in Germany over the filter.
     description-3: "For more information about the data sources as well as a link to the original data can be viewed here:"
     icon: Show Data
-    open-filter: FilterOpen
-    close-filter: FilterClose
+    open-filter: Filter&nbsp;Open
+    close-filter: Filter&nbsp;Close
     reset-filter: (Reset Filter)
     select-year: Select Year
     year: Year
     total-product-in-germany: Total production in Germany
+    states: States
 
 data:
     production-title: Data for interactive resource card

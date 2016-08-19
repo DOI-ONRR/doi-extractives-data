@@ -108,17 +108,20 @@ eiti-data-map {
 .legend-svg,
 .legend-ownership-svg {
   border: none;
-  padding: $base-padding-lite;
+  padding: 0 0 0 $base-padding-small;
   width: 200px;
   height: 215px;
 
-  .swatch {
-    stroke: $neutral-gray;
-    stroke-width: 1;
-  }
+  // .swatch {
+  //   stroke: $neutral-gray;
+  //   stroke-width: 1;
+  // }
 
   .cell text {
     @include font-size(3 / 4);
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

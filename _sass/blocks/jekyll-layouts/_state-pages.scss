@@ -7,7 +7,8 @@
   }
 
   p + section,
-  p + h3 {
+  p + h3, 
+  p + h4 {
     padding-top: $standard-padding-extra;
   }
 
@@ -16,12 +17,18 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  h3:not(.chart-title):not(.state-page-nav-title) {
+  h3:not(.chart-title):not(.state-page-nav-title), 
+  h4:not(.chart-title):not(.state-page-nav-title) {
     @include heading('h5');
 
     border-bottom: 2px solid $light-green;
-    margin-bottom: $standard-padding;
+    margin-bottom: $base-padding-base;
     padding-bottom: $standard-padding-lite;
+  }
+  
+  h4:not(.chart-title):not(.state-page-nav-title) {
+    border-bottom: 1px solid $another-gray;
+    font-weight: $weight-book;
   }
 
   h4 {

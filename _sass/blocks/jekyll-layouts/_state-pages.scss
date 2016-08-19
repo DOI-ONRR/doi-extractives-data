@@ -51,6 +51,10 @@
   p {
     @include heading('para-md');
   }
+  
+  ul {
+    @include heading('para-md');
+  }
 
   figure {
     margin: 0;

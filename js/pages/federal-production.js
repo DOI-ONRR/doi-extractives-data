@@ -23,6 +23,8 @@
   var formatNumber = eiti.format.si;
   var NULL_FILL = '#f7f7f7';
 
+  var langEn = window.location.pathname.split('/')[1] === 'en';
+
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
@@ -839,7 +841,6 @@
         });
       }
 
-      var langEn = window.location.pathname.split('/')[1] === 'en';
       var products = unique(data, langEn ? 'Product_en' : 'Product')
         .sort(d3.ascending);
       dispatch.products(products);

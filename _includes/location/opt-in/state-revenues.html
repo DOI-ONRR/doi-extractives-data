@@ -5,6 +5,7 @@
   {% assign funds_info = site.data.opt_in_state_funds[include.location_id] %}
   {% assign funds_count = funds.size | minus: 1 %}
   {% assign revenue_total = funds.Total.All[revenue_year] %}
+
 <p>
   ${{ revenue_total | default: 0 | intcomma }}
   in state revenue from the extractives industry was disbursed
@@ -55,3 +56,4 @@
   {% endfor %}
 </table>
 {% endif %}
+

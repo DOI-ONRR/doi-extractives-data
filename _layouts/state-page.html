@@ -10,30 +10,40 @@ nav_items:
         title: Entire state
       - name: federal-production
         title: Federal land
-      - name: state-local-production
-        title: State land
-      - name: private-land-production
-        title: Private land
   - name: revenue
     title: Revenue
     subnav_items:
       - name: federal-revenue
         title: Federal revenue
       - name: state-local-revenue
-        title: State revenue
+        title: State and local revenue
   - name: economic-impact
     title: Economic impact
     subnav_items:
-    - name: gdp
-      title: GDP
-    - name: employment
-      title: Wage and salary jobs
-    - name: self-employment
-      title: Self-employment
-    - name: exports
-      title: Exports
+      - name: gdp
+        title: GDP
+      - name: employment
+        title: Wage and salary jobs
+      - name: self-employment
+        title: Self-employment
+      - name: exports
+        title: Exports
+  - name: disbursements
+    title: Disbursements
+    subnav_items:
+      - name: federal-disbursements
+        title: Federal disbursements
+      - name: state-disbursements
+        title: State disbursements
   - name: state-governance
     title: State governance
+    subnav_items:
+      - name: state-agencies
+        title: State agencies
+      - name: state-regulations
+        title: State laws and regulations
+      - name: fiscal-costs
+        title: Fiscal costs
 ---
 
 {% assign state_name = page.title %}
@@ -66,12 +76,12 @@ nav_items:
 
     {% include location/section-overview.html %}
 
+    {% include location/section-ownership.html %}
+
     <section id="production">
       <h2>Production</h2>
 
       {% include location/section-all-production.html %}
-
-      {% include location/section-ownership.html %}
 
       {% include location/section-federal-production.html %}
     </section>
@@ -90,15 +100,22 @@ nav_items:
     </section>
     {% endunless %}
 
-    {% include location/section-disbursements.html %}
+    <section id="disbursements" class="disbursements">
+      <h2>Disbursements</h2>
 
-    {% if page.opt_in == true %}
-    <section id="state-disbursements" class="disbursements">
-      <h2>State Disbursements</h2>
+      {% include location/section-disbursements.html %}
 
-      {% include location/opt-in/state-revenues.html location_id=state_id %}
+      <section id="state-disbursements" class="disbursements">
+        <h3>State disbursements</h2>
+
+        {% if page.opt_in == true %}
+          {% include location/opt-in/state-revenues.html location_id=state_id %}
+        {% else %}
+          <p>We don't know how states spent their money. CONTENT TK</p>
+        {% endif %}
+      </section>
+
     </section>
-    {% endif %}
 
     <section>
       {% include location/section-state-governance.html %}

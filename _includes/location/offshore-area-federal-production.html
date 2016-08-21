@@ -3,12 +3,10 @@
 {% assign federal_product_dir = site.data.offshore_federal_production_areas %}
 
 {% for product in federal_product_dir %}
-  <!-- {{ product[0] }}, {{ region_name_caps }} -->
   {% if product[0] == region_name_caps %}
-  <!--   {{ product[1][area_id] }} -->
     {% assign federal_products = product[1][area_id].products %}
+    {% break %}
   {% endif %}
-
 {% endfor %}
 
 {% assign year_range = '[2004, 2013]' %}
@@ -49,7 +47,7 @@
       {% assign units_suffix = units_map[units].suffix | default '' %}
       {% assign units_title = units_map[units].title %}
 
-      <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
+      <section id="offshore-area-federal-production-{{ product_slug }}" class="product chart-item">
 
         <h4 class="chart-title">
           <span>

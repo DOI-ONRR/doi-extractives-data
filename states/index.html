@@ -72,6 +72,8 @@ nav_items:
   </section>
   
   <section class="container-page-wrapper">
+    
+    <div class="container-left-9">
 
       <section id="production">
 
@@ -81,13 +83,15 @@ nav_items:
 
         {% include location/national-all-production.html %}
 
-        <section id="federal-production" is="year-switcher-section" class="federal production">
-
         <h3>Land ownership</h3>
 
         {% include location/national-ownership.html %}
 
-        {% include location/national-federal-production.html %}
+        <section id="federal-production" is="year-switcher-section" class="federal production">
+          
+          {% include location/national-federal-production.html %}
+          
+        </section>
 
       </section>
 
@@ -113,8 +117,6 @@ nav_items:
           </clipPath>
         </defs>
       </svg>
-
-
 
     </div>
 

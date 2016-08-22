@@ -11,7 +11,7 @@
     {% for state in site.data.states %}
     <option
       {% if location_selector_selected == state.id %}selected="selected"{% endif %}
-      value="onshore/{{ state.id }}">{{ state.name }}</option>
+      value="states/{{ state.id }}">{{ state.name }}</option>
     {% endfor %}
   </optgroup>
   <optgroup label="Offshore Areas">

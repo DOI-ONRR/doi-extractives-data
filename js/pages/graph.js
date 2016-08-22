@@ -4,23 +4,22 @@ $(document).ready(function(){
   var category = [];
 
   /* default call*/
-  $.ajax({
-    type: "GET",
-    url: "../../data/regional/charts/"+$("#product-selector").val()+".json",
-    dataType: "text",
-    success: function(data) {processData(data);}
-  });
+  ajaxCall();
 
   /* value change call*/
   $("#product-selector").change(function(){
     $(".filter-part").html($("#product-selector").val());
+    ajaxCall();
+  });
+
+  function ajaxCall() {
     $.ajax({
       type: "GET",
       url: "../../data/regional/charts/"+$("#product-selector").val()+".json",
       dataType: "text",
       success: function(data) {processData(data);}
     });
-  });
+  }
 
   function processData(data) {
 

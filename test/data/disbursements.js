@@ -67,10 +67,7 @@ describe('disbursements', function() {
             assert.ok(false, 'no data for: ' + JSON.stringify(d));
           }
           var difference = expected - actual;
-          if (Math.abs(difference) > 1) {
-            console.log(expected, actual)
-          }
-          console.warn(difference)
+
           assert.ok(
             Math.abs(difference) <= 1,
             actual,

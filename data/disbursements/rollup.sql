@@ -1,14 +1,10 @@
+
 -- first, we delete the 'All' rows
 DELETE FROM federal_disbursements
 WHERE
     fund = 'All'
-    OR source = 'All'
-    OR region = 'US';
+    OR source = 'All';
 
-
-UPDATE federal_disbursements
-SET region = 'US'
-WHERE region IS NULL;
 
 -- roll up nationally
 INSERT INTO federal_disbursements
@@ -23,6 +19,30 @@ FROM federal_disbursements
 WHERE region IS NOT NULL
 GROUP BY
     year, fund, source;
+
+UPDATE federal_disbursements
+SET region = 'US'
+WHERE region IS NULL;
+
+
+-- roll up nationally
+INSERT INTO federal_disbursements
+    (year, region, fund, source, dollars)
+SELECT
+    year,
+    'US' AS region,
+    fund,
+    source,
+    SUM(dollars) AS dollars
+FROM federal_disbursements
+WHERE region IS NOT NULL
+GROUP BY
+    year, fund, source;
+
+UPDATE federal_disbursements
+SET region = 'US'
+WHERE region IS NULL;
+
 
 -- roll up by region
 INSERT INTO federal_disbursements
@@ -44,7 +64,7 @@ INSERT INTO federal_disbursements
         source,
         SUM(dollars) AS dollars
     FROM federal_disbursements
-    WHERE source = 'All'
+    WHERE source != 'All'
     GROUP BY year, region, source;
 
 -- roll up by source
@@ -53,26 +73,26 @@ INSERT INTO federal_disbursements
     SELECT
         year, region,
         'All' AS fund,
-        source,
+        'All' AS source,
         SUM(dollars) AS dollars
     FROM federal_disbursements
     WHERE
         fund != 'All'
         AND source != 'All'
-    GROUP BY year, region, fund;
+    GROUP BY year, region;
 
--- then we incorporate HPF rows, which apparently come from offshore
-DROP TABLE IF EXISTS all_disbursements;
-CREATE TABLE all_disbursements AS
-    SELECT
-        year, region, fund, source, dollars
-    FROM federal_disbursements
-UNION
-    SELECT
-        year,
-        state AS region,
-        'Historic Preservation' AS fund,
-        'Offshore' AS source,
-        dollars
-    FROM disbursements_historic_preservation
-    WHERE source = 'HPF to States';
+-- -- then we incorporate HPF rows, which apparently come from offshore
+-- DROP TABLE IF EXISTS all_disbursements;
+-- CREATE TABLE all_disbursements AS
+--     SELECT
+--         year, region, fund, source, dollars
+--     FROM federal_disbursements
+-- UNION
+--     SELECT
+--         year,
+--         state AS region,
+--         'Historic Preservation' AS fund,
+--         'Offshore' AS source,
+--         dollars
+--     FROM disbursements_historic_preservation
+--     WHERE source = 'HPF to States';

@@ -143,7 +143,7 @@ describe('disbursements', function() {
     });
 
 
-    it('properly sums up "All" disbursements by source', function() {
+    it('properly sums up "All" disbursements by fund', function() {
       for (var state in stateDisbursements) {
         var funds = stateDisbursements[state];
         var allByYear = {};
@@ -155,44 +155,57 @@ describe('disbursements', function() {
         var year;
         var difference;
 
+
         for (fund in funds) {
           for (source in funds[fund]) {
             for (year in funds[fund][source]) {
               var revenue = funds[fund][source][year];
               if (fund === 'All') {
-                console.warn('all',revenue)
-                allByYear[year] = revenue;
+                console.warn(fund, source)
+                // console.log('----------')
+                allByYear[source] = allByYear[source] || {};
+                allByYear[source][year] = revenue;
               } else {
-                console.warn('fund', 'source',revenue)
-                totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
+                if (source === 'Offshore' && year == '2013' && state == 'US') {
+                  console.warn(year, revenue, '+')
+                }
+
+                // console.warn('fund', 'source',revenue)
+                totalsByYear[source] = totalsByYear[source] || {};
+                totalsByYear[source][year] = (totalsByYear[source][year] || 0) + revenue;
                 count++;
               }
             }
           }
         }
 
-
+        console.warn(state, allByYear)
         // compare yearly totals, using the number of sources as a standin
         // for the acceptable rounding error (+/- 1 for each)
-        for (year in totalsByYear) {
-          console.warn(state, year, allByYear[year])
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'yearly totals: abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
+        for (source in totalsByYear) {
+          for (year in totalsByYear[source]) {
+
+            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            assert.ok(
+              difference <= count,
+              'yearly totals: abs(' + allByYear[source][year] + ' - ' +
+                totalsByYear[source][year] + ' = ' + difference + ')'
+            );
+          }
         }
+
 
         // now check the keys for allByYear just to be sure that we don't have
         // extra years in there
-        for (year in allByYear) {
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'keys: abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
+        for (source in totalsByYear) {
+          for (year in allByYear[source]) {
+            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            assert.ok(
+              difference <= count,
+              'keys: abs(' + allByYear[source][year] + ' - ' +
+                totalsByYear[source][year] + ' = ' + difference + ')'
+            );
+          }
         }
       }
     });

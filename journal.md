@@ -1,7 +1,11 @@
-# Resource Map Project
+# Resource Map Project Journal
 
+This are notes that should help anybody wanting to emulate what we did here, thats
+adapting the source code of https://github.com/18F/doi-extractives-data to our needs
+and deploy it to production, allowing the client to update the data without technical
+support or coding involved.
 
-## Installation issues
+## Installation issues we faced
 
 We encountered a problem running npm install on MacOS with Node 5.10.1, something with pty.js package
 
@@ -31,10 +35,10 @@ in a github repo, not that you actually need 3 files for a “shapefile”
 
 The shape file comes from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
 
-I think this file contains most of the countries so it could be used to generate
+This file contains most of the countries so it could be used to generate
 this map for all of them.
 
-Im including the commands to generate the topojson from this file in the data/Malefile,
+I'm including the commands to generate the topojson from this file in the data/Malefile,
 the only thing that was hard for getting this topojson to render was figuring out the
 projection needed to be changed to “mercator” in the template.
 
@@ -57,3 +61,15 @@ Adding new language:
 1. If you want to add new language entry than place its flag and respected entry inside header file.
 2. create new language file (ex. en.yml) inside _i18n folder
 3. Follow and assign site url depending on the language selection.
+
+## Updating the data without technical support
+
+In order to allow the client to update the data of the site without developers
+assistance we created an Admin panel as a Node.js app, that allows to upload excel
+files and converts them into the appropiate data format (.tsv and .json).
+
+The Node.js app has a form where the client can select the year they want to upload
+data to, and attach the excel necessary files (at the moment one for production data
+and one for the production charts data). Then the Node.js app will convert the excel
+files to .tsv and .json and place them in the data directory of this Jekyll site,
+then rebuilding the site to pickup the new data.

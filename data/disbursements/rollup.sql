@@ -25,25 +25,6 @@ SET region = 'US'
 WHERE region IS NULL;
 
 
--- roll up nationally
-INSERT INTO federal_disbursements
-    (year, region, fund, source, dollars)
-SELECT
-    year,
-    'US' AS region,
-    fund,
-    source,
-    SUM(dollars) AS dollars
-FROM federal_disbursements
-WHERE region IS NOT NULL
-GROUP BY
-    year, fund, source;
-
-UPDATE federal_disbursements
-SET region = 'US'
-WHERE region IS NULL;
-
-
 -- roll up by region
 INSERT INTO federal_disbursements
     (year, region, fund, source, dollars)

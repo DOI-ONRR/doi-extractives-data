@@ -68,6 +68,10 @@ svg.map {
   .ownership {
     opacity: 0.05;
     pointer-events: none;
+
+    &.federal {
+      opacity: $opacity-state;
+    }
   }
 
   // To make land ownership more green!

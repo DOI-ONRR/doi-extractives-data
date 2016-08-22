@@ -49,10 +49,10 @@ describe('disbursements', function() {
           d.Fund = 'States';
         }
 
+        // exlude row where State is 'US' and Fund is 'States'
+        // because this value was a rollup value and
+        // a static value
         if (d.State !== 'US' && d.Fund !== 'States') {
-
-
-
           try {
             actual = stateDisbursements[
               d.State
@@ -161,16 +161,9 @@ describe('disbursements', function() {
             for (year in funds[fund][source]) {
               var revenue = funds[fund][source][year];
               if (fund === 'All') {
-                console.warn(fund, source)
-                // console.log('----------')
                 allByYear[source] = allByYear[source] || {};
                 allByYear[source][year] = revenue;
               } else {
-                if (source === 'Offshore' && year == '2013' && state == 'US') {
-                  console.warn(year, revenue, '+')
-                }
-
-                // console.warn('fund', 'source',revenue)
                 totalsByYear[source] = totalsByYear[source] || {};
                 totalsByYear[source][year] = (totalsByYear[source][year] || 0) + revenue;
                 count++;
@@ -178,8 +171,6 @@ describe('disbursements', function() {
             }
           }
         }
-
-        console.warn(state, allByYear)
         // compare yearly totals, using the number of sources as a standin
         // for the acceptable rounding error (+/- 1 for each)
         for (source in totalsByYear) {

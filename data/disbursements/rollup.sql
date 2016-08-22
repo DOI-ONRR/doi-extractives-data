@@ -17,13 +17,14 @@ FROM federal_disbursements
 WHERE region == 'US'
     OR region IS NULL;
 
+-- set null region values to 'US'
 UPDATE national_disbursements
 SET region = 'US'
 WHERE region IS NULL;
 
+-- remove all rows where region is 'US'
 DELETE FROM federal_disbursements
-WHERE
-    region == 'US';
+WHERE region == 'US';
 
 -- rollup nationally
 INSERT INTO national_disbursements
@@ -39,7 +40,6 @@ WHERE region IS NOT NULL
 GROUP BY
     year, fund, source;
 
-
 -- recombine US data to federal data
 INSERT INTO federal_disbursements
     (year, region, fund, source, dollars)
@@ -54,7 +54,6 @@ WHERE region IS NOT NULL
     AND region == 'US'
 GROUP BY
     year, fund, source;
-
 
 -- roll up by region
 INSERT INTO federal_disbursements

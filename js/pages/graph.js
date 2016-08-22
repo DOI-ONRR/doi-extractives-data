@@ -3,11 +3,23 @@ $(document).ready(function(){
   var jsonData = [];
   var category = [];
 
+  /* default call*/
   $.ajax({
     type: "GET",
-    url: "../../data/regional/charts.json",
+    url: "../../data/regional/charts/"+$("#product-selector").val()+".json",
     dataType: "text",
     success: function(data) {processData(data);}
+  });
+
+  /* value change call*/
+  $("#product-selector").change(function(){
+    $(".filter-part").html($("#product-selector").val());
+    $.ajax({
+      type: "GET",
+      url: "../../data/regional/charts/"+$("#product-selector").val()+".json",
+      dataType: "text",
+      success: function(data) {processData(data);}
+    });
   });
 
   function processData(data) {

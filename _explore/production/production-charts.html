@@ -38,18 +38,22 @@ permalink: /explore/production-charts/
           <div id="product-filter" class="filter">
             <label for="product-selector">{% t 'charts-production.year' %}</label>
             <select id="product-selector" name="product">
-              <option value="">2014</option>
+              {% for year in site.data.charts.years %}
+                <option value="{{ year }}" {% if year == site.data.charts.years.last %} selected {% endif %}>
+                  {{ year }}
+                </option>
+              {% endfor %}
             </select>
           </div>
         </div>
       </form>
 
       <div data-filter-description="" class="filter-description">
-        <a class="back-btn" href="#year=2014">
+        <a class="back-btn" href="#year={{ site.data.charts.years.last }}">
           <img src="/img/left-arrow.png" alt="">
         </a>
         {% t 'charts-production.total-product-in-germany' %}
-        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+        (<span href="#year-selector" class="filter-part" data-key="year">{{ site.data.charts.years.last }}</span>)
       </div>
 
       <div class="container">
@@ -60,7 +64,7 @@ permalink: /explore/production-charts/
 
     <div class="filter-description_wrapper" data-filter-description="" class="filter-description filter-description_open">
         {% t 'charts-production.total-product-in-germany' %}
-        (<span href="#year-selector" class="filter-part" data-key="year">2014</span>)
+        (<span href="#year-selector" class="filter-part" data-key="year">{{ site.data.charts.years.last }}</span>)
     </div>
 
     <div class="explore-exploration slab-alpha">

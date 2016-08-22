@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   var jsonData = [];
   var category = [];
+  var isEn = document.URL.includes('/en/');
 
   /* default call*/
   ajaxCall();
@@ -50,7 +51,7 @@ $(document).ready(function(){
 
     $.each(jsonData, function (entryindex, entry) {
       dataSlices.push(entry['Value']);
-      if(document.URL.includes('/en/')) {
+      if(isEn) {
         ticks.push(entry['Label_en']);
       } else {
         ticks.push(entry['Label']);
@@ -62,7 +63,8 @@ $(document).ready(function(){
     var xAxiTicks = [0, largest+(largest/5)];
 
     legendTable('legend'+(number+1),category);
-    plotGraph('chart'+(number+1),dataSlices,colors,traslation.chart_1_tittle,ticks,jsonData,xAxiTicks);
+    var chartTitle = isEn ? jsondata.title_en : jsondata.title;
+    plotGraph('chart'+(number+1), dataSlices, colors, chartTitle, ticks, jsonData, xAxiTicks);
   }
 
   function orderData(prop) {
@@ -88,7 +90,7 @@ $(document).ready(function(){
       div.style.height = '15px';
       div.style.background = data[i].color;
       cell1.appendChild(div);
-      if (document.URL.includes('/en/')) {
+      if (isEn) {
         cell2.innerHTML = data[i].cat_en;
       } else {
         cell2.innerHTML = data[i].cat;
@@ -100,7 +102,7 @@ $(document).ready(function(){
     function tickFormatter(format, val) {
       for(var i=0;i<jsonDatas.length; i++){
         if(jsonDatas[i].Value === val){
-          if (document.URL.includes('/en/')) {
+          if (isEn) {
             val= val +" "+ jsonDatas[i].unit_en;
           } else {
             val= val +" "+ jsonDatas[i].unit;

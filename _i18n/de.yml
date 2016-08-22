@@ -156,8 +156,6 @@ chart:
     silica: Kieselerde
     fluorite: Fluorit
     metals: Metalle
-  chart-1-tittle: Wert der in Deutschland produzierten Rohstoffe
-  chart-2-tittle: Menge der in Deutschland produzierten Rohstoffe
 
 data_translation:
   no_data: Keine Daten

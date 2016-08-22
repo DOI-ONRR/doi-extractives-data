@@ -163,8 +163,6 @@ chart:
     silica: Kieselerde
     fluorite: Fluorit
     metals: Metalle
-  chart-1-tittle: Value of the raw materials produced in Germany
-  chart-2-tittle: Quantity of raw materials produced in Germany
 
 data_translation:
   no_data: No Data

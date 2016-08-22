@@ -24,6 +24,10 @@ svg.map {
     fill: $light-gray;
   }
 
+  .feature.offshore-area {
+    fill: $green-land;
+  }
+
   .feature:not([fill]) {
     fill-opacity: 0;
   }
@@ -68,6 +72,10 @@ svg.map {
   .ownership {
     opacity: 0.05;
     pointer-events: none;
+
+    &.federal {
+      opacity: $opacity-state;
+    }
   }
 
   // To make land ownership more green!
@@ -90,4 +98,19 @@ svg.map {
       fill: $green-land;
     }
   }
+}
+
+svg.ownership {
+  border: 1px solid $mid-light-gray;
+
+  &.outline {
+    border: 0;
+
+    .states.mesh {
+      stroke: $pale-blue;
+      stroke-width: 1.5px;
+    }
+  }
+
+
 }

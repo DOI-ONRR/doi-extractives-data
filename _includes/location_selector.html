@@ -9,5 +9,6 @@
   <optgroup label="Offshore Areas">
     {% for area in site.data.offshore_areas %}
     <option value="offshore/{{ area.id }}">{{ area.name }}</option>
+    {% endfor %}
   </optgroup>
 </select>

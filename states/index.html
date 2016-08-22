@@ -44,7 +44,7 @@ nav_items:
 
 
 <main id="national" class="layout-state-pages">
-  
+
   <section class="slab-delta">
     <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
       <div class="container-left-8 ribbon-hero ribbon-hero-column">
@@ -55,14 +55,14 @@ nav_items:
             states=site.data.state_revenues
             offshore_areas=site.data.offshore_federal_production_areas
             href=':url'
+            ownership=true
+            outline=true
           %}
         </figure>
       </div>
       <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
-        <figure class="ribbon-card-top">
-          <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
-            <img class="ribbon-card-image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
-          </a>
+        <figure>
+          Natural resource extraction — and particularly federal revenue from extraction — varies widely across the country.
         </figure>
         <figcaption class="ribbon-card-bottom">
           {% include selector.html %}
@@ -70,9 +70,9 @@ nav_items:
       </div>
     </div>
   </section>
-  
+
   <section class="container-page-wrapper">
-    
+
     <div class="container-left-9">
 
       <section id="production">
@@ -88,9 +88,9 @@ nav_items:
         {% include location/national-ownership.html %}
 
         <section id="federal-production" is="year-switcher-section" class="federal production">
-          
+
           {% include location/national-federal-production.html %}
-          
+
         </section>
 
       </section>
@@ -100,7 +100,7 @@ nav_items:
       {% include location/national-disbursements.html %}
 
       <section id="economic-impact">
-      
+
       <h2>Economic impact</h2>
 
       {% include location/national-gdp.html %}
@@ -131,7 +131,7 @@ nav_items:
         </nav>
       </div>
     </div>
-  
+
   </section>
 
 </main>

@@ -16,7 +16,7 @@ The U.S. also recently became a part of an international standard called the [Ex
 This is the development branch of the [D-EITI] (https://www.d-eiti.de/) site,
 a fork of the [US EITI](https://github.com/18F/doi-extractives-data) site, most of the
 source code was re-used and some was newly implemented, to see a journal of the technical
-challenges we faced see [journal.md](https://github.com/PfeffermindGames/doi-extractives-data/blob/dev/logs.md).
+challenges we faced performing this adaptation see [journal.md](https://github.com/PfeffermindGames/doi-extractives-data/blob/dev/journal.md).
 
 ## Data
 The [data catalog](https://github.com/PfeffermindGames/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.

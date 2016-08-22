@@ -82,7 +82,7 @@ describe('disbursements', function() {
       });
     });
 
-    xit("doesn't contain values that aren't in the pivot table", function(done) {
+    it("doesn't contain values that aren't in the pivot table", function(done) {
       load(pivotSource, 'tsv', function(error, rows) {
         var state;
         var source;
@@ -104,32 +104,36 @@ describe('disbursements', function() {
         };
 
         for (state in stateDisbursements) {
-          for (fund in stateDisbursements[state]) {
-            if (fund === 'All') {
-              continue;
-            }
-            for (source in stateDisbursements[state][fund]) {
-              if (source === 'All') {
+          if (state !== 'US') {
+
+
+            for (fund in stateDisbursements[state]) {
+              if (fund === 'All') {
                 continue;
               }
-              for (year in stateDisbursements[state][fund][source]) {
-                actual = stateDisbursements[state][fund][source][year];
-                found = rows.filter(filter);
+              for (source in stateDisbursements[state][fund]) {
+                if (source === 'All') {
+                  continue;
+                }
+                for (year in stateDisbursements[state][fund][source]) {
+                  actual = stateDisbursements[state][fund][source][year];
+                  found = rows.filter(filter);
 
-                assert.equal(
-                  found.length, 1,
-                  'wrong row count: ' + found.length +
-                  ' for: ' + [state, fund, source, year].join('/')
-                );
+                  assert.equal(
+                    found.length, 1,
+                    'wrong row count: ' + found.length +
+                    ' for: ' + [state, fund, source, year].join('/')
+                  );
 
-                expected = found[0].Total;
-                difference = expected - actual;
+                  expected = found[0].Total;
+                  difference = expected - actual;
 
-                assert.ok(
-                  Math.abs(difference) <= 1,
-                  actual,
-                  (actual + ' != ' + expected)
-                );
+                  assert.ok(
+                    Math.abs(difference) <= 1,
+                    actual,
+                    (actual + ' != ' + expected)
+                  );
+                }
               }
             }
           }
@@ -138,6 +142,8 @@ describe('disbursements', function() {
         done();
       });
     });
+
+    // TODO: check sum states up properly
 
 
     it('properly sums up "All" disbursements by fund', function() {

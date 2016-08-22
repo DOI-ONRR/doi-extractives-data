@@ -49,7 +49,8 @@
     "init-styleguide": "npm-exec kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js || echo '(there were JavaScript linting errors)'",
-    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
+    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'",
+    "prod:build": "bundle install; bundle exec jekyll clean; NODE_ENV=prod webpack; bundle exec jekyll build"
   },
   "repository": {
     "type": "git",

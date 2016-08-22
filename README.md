@@ -1,10 +1,10 @@
-# U.S. Extractive Industries Data and Information
+# Germany Extractive Industries Data and Information
 
 ## What
 
-The U.S. earns revenue on natural resources extracted from its Federal lands, both onshore and offshore. This is a major source of revenue for both the country and local municipalities, and includes revenue from resources such as oil, gas, coal and geothermals.
+Germany earns revenue on natural resources extracted from its Federal lands, both onshore and offshore. This is a major source of revenue for both the country and local municipalities, and includes revenue from resources such as oil, gas, coal and geothermals.
 
-This repository contains the code for useiti.doi.gov, which is a website that includes both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
+This repository contains the code for https://www.d-eiti.de/data/, which is a website that includes both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
 
 ## Why
 
@@ -13,10 +13,13 @@ This effort is part of the President’s [Open Government Partnership National A
 The U.S. also recently became a part of an international standard called the [Extractive Industries Transparency Initiative (EITI)](http://www.eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the U.S. process of implementing the EITI standard, see the [USEITI homepage](http://www.doi.gov/eiti). The U.S. will be the first developed country to sign on to and follow the standard.
 
 ## About this website
-This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
+This is the development branch of the [D-EITI] (https://www.d-eiti.de/) site,
+a fork of the [US EITI](https://github.com/18F/doi-extractives-data) site, most of the
+source code was re-used and some was newly implemented, to see a journal of the technical
+challenges we faced see [journal.md](https://github.com/PfeffermindGames/doi-extractives-data/blob/dev/logs.md).
 
 ## Data
-The [data catalog](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
+The [data catalog](https://github.com/PfeffermindGames/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
 
 ## Running the Site
 This site is made with [Jekyll]. To run it locally, clone this repository then:
@@ -29,12 +32,10 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 1. Visit the local site at [http://localhost:4000](http://localhost:4000)
 
 ## Deployment
-This site is deployed on [Federalist](https://federalist.18f.gov), and will one day be deployed automatically whenever commits are pushed to the `master` branch. For now, see the [preview URLs wiki page](https://github.com/18F/doi-extractives-data/wiki/Preview-urls) for more information.
+This site is deployed on [STRATO](https://www.strato.de/server/), and data is updated through an Admin panel that lives in a separate app
+written in Node.js, you can see its source code at https://github.com/PfeffermindGames/resource-map-backend.
 
-If deploying the site to a production environment, make sure to minify the JS files:
-1. Set the $NODE_ENV to `prod`: `export NODE_ENV=prod`
-1. Package js files with webpack: `webpack --watch`
-1. Re-run the web server: `bundle exec jekyll serve`
+The site is build with `npm run prod:build`, and is served by a NGINX server.
 
 ## Styleguide
 ```sh
@@ -43,14 +44,6 @@ npm run init-styleguide
 cd styleguide-template && npm install
 cd ..
 npm run watch
-```
-
-## Tests
-The JavaScript tests currently only cover a small portion of data processing utilities. You can run them with [Node]:
-
-```sh
-npm install --dev
-npm test
 ```
 
 ## Code Style
@@ -93,19 +86,8 @@ or simply:
 npm run lint-scss
 ```
 
-## Roadmap
-Broadly, we are working now on:
-
-* Exploring how lease contract information and data can be integrated into the site in a way that meets user needs
-* Exploring how production data can be added to the site in a way that meets user needs
-* Develop site information architecture so that it is clear that it is a part of USEITI, can accomodate new datasets and has a stronger 'why you're here and why you should care' message
-* Reaching out to users to see how we did with the Beta, and learn from them where to head next
-
-For a more detailed roadmap, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).
-
-
 ## Contributing
-Content and feature suggestions are welcome via [GitHub Issues](https://github.com/18F/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site.
+Content and feature suggestions are welcome via [GitHub Issues](https://github.com/PfeffermindGames/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site.
 
 
 ### Public domain

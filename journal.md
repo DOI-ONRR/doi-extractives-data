@@ -62,6 +62,14 @@ Adding new language:
 2. create new language file (ex. en.yml) inside _i18n folder
 3. Follow and assign site url depending on the language selection.
 
+## Chart Generation
+
+For generating graph we used charting plugin called jqplot (http://www.jqplot.com/).
+
+if we want to show more than two graphs on single page than you must need to add new chart id and legend id inside production_chart.html page (ex: chart3, legend3).
+
+X-axis of the graph will consider two points first one is zero and second is largest value of product entry + (largest/5).
+
 ## Updating the data without technical support
 
 In order to allow the client to update the data of the site without developers

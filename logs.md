@@ -41,3 +41,19 @@ projection needed to be changed to “mercator” in the template.
 In IE the stroke was very tick, turns out IE doesn’t support the option vector-effect:
 non-scaling-stroke; which takes care of the stroke not scaling up in a SVG when zoomed
 in, to make up for this we set the stroke-width to 0.1px, and 0.2px on hover.
+
+## Making it multi language
+
+To support multiple language we used "jekyll-multiple-languages-plugin"
+https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin
+
+Most of the translation data are place in two separate (.yml) files (en.yml, de.yml) along with that some of the translation are also generating with help of Javascript files.
+
+Adding new static Data:
+1. If you want to add new section or paragraph than place it inside respected HTML file along with name and it's traslated content in language YML files.
+2. For each link used in website need to check its language and depending on the language we need to place url. For your reference check header.html links.
+
+Adding new language:
+1. If you want to add new language entry than place its flag and respected entry inside header file.
+2. create new language file (ex. en.yml) inside _i18n folder
+3. Follow and assign site url depending on the language selection.

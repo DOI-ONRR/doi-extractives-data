@@ -73,7 +73,7 @@ collections:
     output: true
     # permalinks are defined in _offshore_areas/???.md
   offshore_regions:
-    output: false
+    output: true
     permalink: /offshore/:path/
   states:
     output: true
@@ -91,6 +91,12 @@ defaults:
       type: states
     values:
       layout: state-page
+
+  - scope:
+      path: ''
+      type: offshore_regions
+    values:
+      layout: offshore-region
 
   - scope:
       path: ''

@@ -51,6 +51,8 @@ const commodities = {
     }
   },
 
+  /*
+  // XXX this is the total renewable energy production
   'renewables': {
     values: {
       commodity: 'Renewable Energy'
@@ -59,7 +61,10 @@ const commodities = {
       series_id: 'SEDS.REPRB.{region}.A'
     }
   },
+  */
 
+  /*
+  // XXX this category is no longer listed on the EIA site
   'biomass': {
     values: {
       commodity: 'Biomass (total)'
@@ -68,6 +73,7 @@ const commodities = {
       series_id: 'ELEC.GEN.BIO-{region}-99.A'
     }
   },
+  */
 
   'geothermal': {
     values: {

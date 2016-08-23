@@ -1,4 +1,4 @@
-year	volume	commodity	region	series_id	units
+year	volume	product	region	series_id	units
 2014	1000048758	Coal	US	COAL.PRODUCTION.TOT-US-TOT.A	short tons
 2013	984841779	Coal	US	COAL.PRODUCTION.TOT-US-TOT.A	short tons
 2012	1016458418	Coal	US	COAL.PRODUCTION.TOT-US-TOT.A	short tons

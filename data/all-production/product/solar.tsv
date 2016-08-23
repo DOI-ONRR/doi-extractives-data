@@ -1,4 +1,4 @@
-year	volume	commodity	region	units	series_id
+year	volume	product	region	units	series_id
 2015	26472.93466	Solar	US	MMWh	ELEC.GEN.SUN-US-99.A
 2014	17691.03119	Solar	US	MMWh	ELEC.GEN.SUN-US-99.A
 2013	9035.62038	Solar	US	MMWh	ELEC.GEN.SUN-US-99.A

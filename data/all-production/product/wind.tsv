@@ -1,4 +1,4 @@
-year	volume	commodity	region	units	series_id
+year	volume	product	region	units	series_id
 2015	190927.0091	Wind	US	MMWh	ELEC.GEN.WND-US-99.A
 2014	181655.2818	Wind	US	MMWh	ELEC.GEN.WND-US-99.A
 2013	167839.74544000003	Wind	US	MMWh	ELEC.GEN.WND-US-99.A

@@ -1,4 +1,4 @@
-year	volume	commodity	region	units	series_id
+year	volume	product	region	units	series_id
 2015	16767.353219999997	Geothermal	US	MMWh	ELEC.GEN.GEO-US-99.A
 2014	15876.941	Geothermal	US	MMWh	ELEC.GEN.GEO-US-99.A
 2013	15774.67408	Geothermal	US	MMWh	ELEC.GEN.GEO-US-99.A

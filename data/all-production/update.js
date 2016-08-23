@@ -42,6 +42,22 @@ const commodities = {
     }
   },
 
+  'offshore-oil': {
+    values: {
+      commodity: 'Crude Oil'
+    },
+    params: {
+      series_id: {
+        'PET.MCRFP3FM1.A': {
+          region: 'GOM'
+        },
+        'PET.MCRFP5F1.A': {
+          region: 'SOC'
+        }
+      }
+    }
+  },
+
   'naturalgas': {
     values: {
       commodity: 'Gas'
@@ -147,7 +163,49 @@ const commodities = {
 
 };
 
+var requestedCommodityKeys = process.argv.slice(2);
+if (requestedCommodityKeys.length) {
+  for (var key in commodities) {
+    if (requestedCommodityKeys.indexOf(key) == -1) {
+      delete commodities[key];
+    }
+  }
+  if (Object.keys(commodities).length === 0) {
+    console.error('no commodities found matching:', requestedCommodityKeys.join(', '));
+    process.exit(1);
+  }
+  console.warn('only generating keys:', Object.keys(commodities).join(', '));
+  // process.exit(0);
+}
+
 const context = {};
+
+const fetchSeries = function(params, values, done) {
+  const url = [API_BASE_URL, qs.stringify(params)].join('?');
+  const series = [];
+  console.warn('fetching:', url);
+  request(url)
+    .on('error', done)
+    .pipe(tito.createReadStream('json', {
+      path: '.series.*'
+    }))
+    .on('data', function(d) {
+      // console.warn('data:', d);
+      values.series_id = d.series_id;
+      if (!values.units) {
+        values.units = d.unitsshort || d.units;
+      }
+      d.data.forEach(function(s) {
+        series.push(Object.assign({
+          year:   s[0],
+          volume: s[1]
+        }, values));
+      }, this);
+    })
+    .on('end', function() {
+      done(null, series);
+    });
+};
 
 const fetchCommodity = function(commodity, next) {
   const source = commodities[commodity];
@@ -156,53 +214,94 @@ const fetchCommodity = function(commodity, next) {
   console.warn('fetching commodity:', commodity, 'from', series);
 
   const file = OUTPUT_FILENAME_TEMPLATE.replace('{commodity}', commodity);
-  const rows = [];
+  var rows = [];
 
-  async.mapSeries(
-    context.regions,
-    function fetchRegion(region, done) {
-      params.series_id = series.replace('{region}', region);
-      const url = [API_BASE_URL, qs.stringify(params)].join('?');
-      const values = Object.assign(
-        {commodity: commodity, region: region},
-        source.values
-      );
-
-      // console.warn('fetching:', url);
-      request(url)
-        .on('error', done)
-        .pipe(tito.createReadStream('json', {
-          path: '.series.*'
-        }))
-        .on('data', function(series) {
-          if (!values.units) {
-            values.units = series.unitsshort || series.units;
-          }
-
-          values.region = region;
-          series.data.forEach(function(d) {
-            rows.push(Object.assign({
-              year:   d[0],
-              volume: d[1]
-            }, values));
-          }, this);
-        })
-        .on('end', done);
-    },
-    function(error) {
-      if (error) {
-        return next(error);
-      } else if (rows.length) {
-        console.warn('writing %d rows to:', rows.length, file);
-        streamify(rows)
-          .pipe(tito.createWriteStream('tsv'))
-          .pipe(fs.createWriteStream(file, 'utf8'))
-          .on('end', next);
-      } else {
-        console.warn('no rows found for', commodity);
-      }
+  const finish = function(error) {
+    if (error) {
+      return next(error);
+    } else if (rows.length) {
+      console.warn('writing %d rows to:', rows.length, file);
+      streamify(rows)
+        .pipe(tito.createWriteStream('tsv'))
+        .pipe(fs.createWriteStream(file, 'utf8'))
+        .on('end', next);
+    } else {
+      console.warn('no rows found for', commodity);
     }
-  ); // fetchRegion
+  };
+
+  if (typeof series === 'object') {
+
+    /*
+     * if series is an object, then it's assumed to have the following
+     * structure:
+     *
+     * {
+     *   'series_id': { values }
+     * }
+     */
+    async.mapSeries(
+      Object.keys(series),
+      function fetchSubSeries(series_id, done) {
+        params.series_id = series_id;
+        const values = Object.assign(
+          {commodity: commodity},
+          source.values,
+          series[series_id]
+        );
+
+        fetchSeries(params, values, function(error, series) {
+          if (error) return done(error);
+          rows = rows.concat(series);
+          done();
+        });
+      },
+      finish
+    );
+
+  } else if (series.indexOf('{region}') > -1) {
+
+    /*
+     * If the series contains a '{region}' placeholder, then we should
+     * substitute it with each of the known region identifiers and
+     * concatenate the resulting series together.
+     */
+    async.mapSeries(
+      context.regions,
+      function fetchRegion(region, done) {
+        params.series_id = series.replace('{region}', region);
+        const values = Object.assign(
+          {
+            commodity:  commodity,
+            region:     region
+          },
+          source.values
+        );
+
+        fetchSeries(params, values, function(error, series) {
+          if (error) return done(error);
+          rows = rows.concat(series);
+          done();
+        });
+      },
+      finish
+    );
+
+  } else {
+
+    /*
+     * otherwise, just fetch that series as-is and treat the result as the
+     * entire dataset.
+     */
+    fetchSeries(params, Object.assign({
+      commodity: commodity
+    }, source.values), function(error, series) {
+      rows = series;
+      finish(error);
+    });
+
+  }
+
 };
 
 async.waterfall([

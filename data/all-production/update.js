@@ -60,48 +60,79 @@ const commodities = {
     }
   },
 
-  'biofuels': {
+  'biomass': {
     values: {
-      commodity: 'Biofuels'
+      commodity: 'Biomass (total)'
     },
     params: {
-      series_id: 'TOTAL.BFPRB{region}.A'
+      series_id: 'ELEC.GEN.BIO-{region}-99.A'
     }
   },
 
   'geothermal': {
     values: {
-      commodity: 'Geothermal'
+      commodity: 'Geothermal',
+      units: 'MMWh'
     },
     params: {
-      series_id: 'TOTAL.GETCB{region}.A'
+      series_id: 'ELEC.GEN.GEO-{region}-99.A'
     }
   },
 
   'hydroelectric': {
     values: {
-      commodity: 'Hydroelectric'
+      commodity: 'Conventional Hydroelectric',
+      units: 'MMWh'
     },
     params: {
-      series_id: 'TOTAL.HVTCB{region}.A'
+      series_id: 'ELEC.GEN.HYC-{region}-99.A'
     }
   },
 
   'solar': {
     values: {
-      commodity: 'Solar'
+      commodity: 'Solar',
+      units: 'MMWh'
     },
     params: {
-      series_id: 'TOTAL.SOTCB{region}.A'
+      series_id: 'ELEC.GEN.SUN-{region}-99.A'
     }
   },
 
   'wind': {
     values: {
-      commodity: 'Wind'
+      commodity: 'Wind',
+      units: 'MMWh'
     },
     params: {
-      series_id: 'TOTAL.WYTCB{region}.A'
+      series_id: 'ELEC.GEN.WND-{region}-99.A'
+    }
+  },
+
+  'wood': {
+    values: {
+      commodity: 'Wood and wood-derived fuels'
+    },
+    params: {
+      series_id: 'ELEC.GEN.WWW-{region}-99.A'
+    }
+  },
+
+  'other-biomass': {
+    values: {
+      commodity: 'Other biomass'
+    },
+    params: {
+      series_id: 'ELEC.GEN.WAS-{region}-99.A'
+    }
+  },
+
+  'other-renewables': {
+    values: {
+      commodity: 'All Other Renewables'
+    },
+    params: {
+      series_id: 'ELEC.GEN.AOR-{region}-99.A'
     }
   },
 
@@ -165,12 +196,14 @@ async.waterfall([
         function(error) {
           if (error) {
             return next(error);
-          } else {
+          } else if (rows.length) {
             console.warn('writing %d rows to:', rows.length, file);
             streamify(rows)
               .pipe(tito.createWriteStream('tsv'))
               .pipe(fs.createWriteStream(file, 'utf8'))
               .on('end', next);
+          } else {
+            console.warn('no rows found for', commodity);
           }
         }
       ); // fetchRegion

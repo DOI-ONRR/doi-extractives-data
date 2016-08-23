@@ -60,7 +60,7 @@ const commodities = {
 
   'naturalgas': {
     values: {
-      commodity: 'Gas'
+      commodity: 'Natural Gas'
     },
     params: {
       series_id: 'NG.N9010{region}2.A'

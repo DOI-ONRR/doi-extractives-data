@@ -35,7 +35,7 @@ const commodities = {
 
   'oil': {
     values: {
-      commodity: 'Oil'
+      commodity: 'Crude Oil'
     },
     params: {
       series_id: 'PET.MCRFP{region}1.A'

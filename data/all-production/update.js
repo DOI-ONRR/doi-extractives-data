@@ -68,6 +68,22 @@ const commodities = {
   },
 
   /*
+  // XXX this data is unusable because it ends in 2006.
+  'offshore-naturalgas': {
+    values: {
+      commodity: 'Natural Gas'
+    },
+    params: {
+      series_id: {
+        'NG.RNGR20R3FM_1.A': {
+          region: 'GOM'
+        }
+      }
+    }
+  },
+  */
+
+  /*
   // XXX this is the total renewable energy production
   'renewables': {
     values: {

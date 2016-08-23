@@ -1,0 +1,19 @@
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}
+
+.sticky-float {
+	float: left;
+}
+
+.sticky-sibling {
+	margin-right: 0;
+}

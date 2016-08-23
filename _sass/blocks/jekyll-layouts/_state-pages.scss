@@ -7,7 +7,7 @@
   }
 
   p + section,
-  p + h3, 
+  p + h3,
   p + h4 {
     padding-top: $standard-padding-extra;
   }
@@ -17,7 +17,7 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  h3:not(.chart-title):not(.state-page-nav-title), 
+  h3:not(.chart-title):not(.state-page-nav-title),
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
 
@@ -25,7 +25,7 @@
     margin-bottom: $base-padding-base;
     padding-bottom: $standard-padding-lite;
   }
-  
+
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
@@ -51,7 +51,7 @@
   p {
     @include heading('para-md');
   }
-  
+
   ul {
     @include heading('para-md');
   }
@@ -65,10 +65,6 @@
       border-top: none;
       margin-top: 0;
     }
-  }
-
-  svg.ownership {
-    border: 1px solid $mid-light-gray;
   }
 
   .tab-interface {

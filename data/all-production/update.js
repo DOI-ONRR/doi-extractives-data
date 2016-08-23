@@ -133,6 +133,8 @@ const commodities = {
     }
   },
 
+  /*
+  // XXX: we're removing this, per #1574
   'other-renewables': {
     values: {
       commodity: 'All Other Renewables'
@@ -141,6 +143,7 @@ const commodities = {
       series_id: 'ELEC.GEN.AOR-{region}-99.A'
     }
   },
+  */
 
 };
 

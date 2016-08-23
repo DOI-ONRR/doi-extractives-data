@@ -144,6 +144,64 @@ const commodities = {
 
 };
 
+const context = {};
+
+const fetchCommodity = function(commodity, next) {
+  const source = commodities[commodity];
+  const params = Object.assign({}, API_BASE_PARAMS, source.params);
+  const series = params.series_id;
+  console.warn('fetching commodity:', commodity, 'from', series);
+
+  const file = OUTPUT_FILENAME_TEMPLATE.replace('{commodity}', commodity);
+  const rows = [];
+
+  async.mapSeries(
+    context.regions,
+    function fetchRegion(region, done) {
+      params.series_id = series.replace('{region}', region);
+      const url = [API_BASE_URL, qs.stringify(params)].join('?');
+      const values = Object.assign(
+        {commodity: commodity, region: region},
+        source.values
+      );
+
+      // console.warn('fetching:', url);
+      request(url)
+        .on('error', done)
+        .pipe(tito.createReadStream('json', {
+          path: '.series.*'
+        }))
+        .on('data', function(series) {
+          if (!values.units) {
+            values.units = series.unitsshort || series.units;
+          }
+
+          values.region = region;
+          series.data.forEach(function(d) {
+            rows.push(Object.assign({
+              year:   d[0],
+              volume: d[1]
+            }, values));
+          }, this);
+        })
+        .on('end', done);
+    },
+    function(error) {
+      if (error) {
+        return next(error);
+      } else if (rows.length) {
+        console.warn('writing %d rows to:', rows.length, file);
+        streamify(rows)
+          .pipe(tito.createWriteStream('tsv'))
+          .pipe(fs.createWriteStream(file, 'utf8'))
+          .on('end', next);
+      } else {
+        console.warn('no rows found for', commodity);
+      }
+    }
+  ); // fetchRegion
+};
+
 async.waterfall([
   function loadStates(next) {
     util.readData(
@@ -154,67 +212,13 @@ async.waterfall([
   },
 
   function updateContext(states, next) {
-    const regions = states.map(function(d) { return d.abbr; });
-    regions.unshift('US');
-    next(null, {regions: regions});
+    context.regions = states.map(function(d) { return d.abbr; });
+    context.regions.unshift('US');
+    next();
   },
 
-  function fetchCommmodities(context, next) {
-    async.map(Object.keys(commodities), function fetchCommodity(commodity, next) {
-      const source = commodities[commodity];
-      const params = Object.assign({}, API_BASE_PARAMS, source.params);
-      const series = params.series_id;
-
-      const file = OUTPUT_FILENAME_TEMPLATE.replace('{commodity}', commodity);
-      const rows = [];
-
-      async.mapSeries(
-        context.regions,
-        function fetchRegion(region, done) {
-          params.series_id = series.replace('{region}', region);
-          const url = [API_BASE_URL, qs.stringify(params)].join('?');
-          const values = Object.assign(
-            {commodity: commodity, region: region},
-            source.values
-          );
-
-          console.warn('fetching:', url);
-          request(url)
-            .on('error', done)
-            .pipe(tito.createReadStream('json', {
-              path: '.series.*'
-            }))
-            .on('data', function(series) {
-              if (!values.units) {
-                values.units = series.unitsshort || series.units;
-              }
-
-              values.region = region;
-              series.data.forEach(function(d) {
-                rows.push(Object.assign({
-                  year:   d[0],
-                  volume: d[1]
-                }, values));
-              }, this);
-            })
-            .on('end', done);
-        },
-        function(error) {
-          if (error) {
-            return next(error);
-          } else if (rows.length) {
-            console.warn('writing %d rows to:', rows.length, file);
-            streamify(rows)
-              .pipe(tito.createWriteStream('tsv'))
-              .pipe(fs.createWriteStream(file, 'utf8'))
-              .on('end', next);
-          } else {
-            console.warn('no rows found for', commodity);
-          }
-        }
-      ); // fetchRegion
-
-    }, next); // fetchCommodity
+  function fetchCommmodities(next) {
+    async.map(Object.keys(commodities), fetchCommodity, next);
   }
 ], function(error) {
   if (error) {

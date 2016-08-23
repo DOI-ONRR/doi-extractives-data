@@ -6,19 +6,23 @@
   {% assign funds_count = funds.size | minus: 1 %}
   {% assign revenue_total = funds.Total.All[revenue_year] %}
 
-<p>
-  ${{ revenue_total | default: 0 | intcomma }}
-  in state revenue from the extractives industry was disbursed
-  to the following {{ funds_count }} fund{{ funds_count | plural }}
-  in {{ revenue_year }}:
-</p>
+{% if page.state_disbursements %}
+  {{ page.state_disbursements | markdownify }}
+{% endif %}
+
+<p><strong>
+  In {{ year }}, ${{ revenue_total | default: 0 | intcomma }}
+  in state revenue from natural resource extraction in 
+  {{ state_name }} was disbursed
+  to {{ funds_count }} fund{{ funds_count | plural }}.
+</strong></p>
 
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
-      <th>Fund</th>
-      <th class="num">Disbursements</th>
+      <th>State fund</th>
+      <th class="num">Distribution</th>
     </tr>
   </thead>
 

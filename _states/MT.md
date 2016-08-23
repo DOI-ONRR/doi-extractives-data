@@ -4,10 +4,15 @@ title: Montana
 FIPS: '30'
 
 opt_in: true
-priority: true
 
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
+state_revenue: |
+    Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana. In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat.
+
+    In FY2014, the state of Montana and county tax collectors collected $446 million. The Oil & Natural Gas Production tax accounts for roughly half of Montana’s revenue from natural resource extraction.
+state_disbursements: |
+    [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature.
 ---
 
 <!-- State overview
@@ -19,8 +24,7 @@ State revenue and disbursements
 
 - Revenue from production on state land
 - State and local taxes
-- Revenue sustainability
-- State disbursements -->
+- Revenue sustainability -->
 
 <!-- State governance -->
 
@@ -30,7 +34,7 @@ The state of Montana regulates extraction and interacts with extractive industry
 
 The [Montana Department of Revenue](https://revenue.mt.gov/) collects, manages, and distributes  revenue from companies engaged in extraction of oil, natural gas, coal, and non-energy minerals in Montana. It publishes [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports) and other [tax related reports](https://revenue.mt.gov/home/publications). County governments also collect many property taxes.
 
-The [Montana Department of Natural Resources and Conservation](http://dnrc.mt.gov/) managed Montana's natural resources, including administering state trust lands.
+The [Montana Department of Natural Resources and Conservation](http://dnrc.mt.gov/) manages Montana's natural resources, including administering state trust lands and distributing revenue from state trust lands.
 
 - The [Montana Board of Oil and Gas Conservation](http://bogc.dnrc.mt.gov/BoardSummaries.asp) is involved in all stages of oil and gas extraction. It permits all oil and gas wells, regulates the underground injecting program, and assists in remediation efforts. It also inspects all oil and gas wells and operations to ensure they comply with all state environmental laws. The board is governed by [rules and regulations](http://bogc.dnrc.mt.gov/rulesregs.asp).
 - The [Reclamation and Development Grant Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) funds some abandoned mine projects.
@@ -47,6 +51,7 @@ The [Montana Department of Environmental Quality](http://deq.mt.gov/) leads Mont
   - Holding and reviewing reclamation bonds for [coal](http://deq.mt.gov/Land/CoalUranium) and [hardrock mining](http://deq.mt.gov/Land/hardrock)
 
 - The [Waste Management and Remediation Division](http://deq.mt.gov/DEQAdmin/WMR) administers and oversees investigation and cleanup of extraction sites that need remediation.
+- County tax collectors collect and distribute the county portion of ad valorem taxes (except the coal gross proceeds tax).
 
 ### State laws and regulations
 

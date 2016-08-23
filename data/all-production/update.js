@@ -19,14 +19,14 @@ const API_BASE_PARAMS = {
   out: 'json'
 };
 
-// where to write commodity-specific files
-const OUTPUT_FILENAME_TEMPLATE = 'commodity/{commodity}.tsv';
+// where to write product-specific files
+const OUTPUT_FILENAME_TEMPLATE = 'product/{product}.tsv';
 
-const commodities = {
+const products = {
 
   'coal': {
     values: {
-      commodity: 'Coal'
+      product: 'Coal'
     },
     params: {
       series_id: 'COAL.PRODUCTION.TOT-{region}-TOT.A'
@@ -35,7 +35,7 @@ const commodities = {
 
   'oil': {
     values: {
-      commodity: 'Crude Oil'
+      product: 'Crude Oil'
     },
     params: {
       series_id: 'PET.MCRFP{region}1.A'
@@ -44,7 +44,7 @@ const commodities = {
 
   'offshore-oil': {
     values: {
-      commodity: 'Crude Oil'
+      product: 'Crude Oil'
     },
     params: {
       series_id: {
@@ -60,7 +60,7 @@ const commodities = {
 
   'naturalgas': {
     values: {
-      commodity: 'Natural Gas'
+      product: 'Natural Gas'
     },
     params: {
       series_id: 'NG.N9010{region}2.A'
@@ -71,7 +71,7 @@ const commodities = {
   // XXX this data is unusable because it ends in 2006.
   'offshore-naturalgas': {
     values: {
-      commodity: 'Natural Gas'
+      product: 'Natural Gas'
     },
     params: {
       series_id: {
@@ -87,7 +87,7 @@ const commodities = {
   // XXX this is the total renewable energy production
   'renewables': {
     values: {
-      commodity: 'Renewable Energy'
+      product: 'Renewable Energy'
     },
     params: {
       series_id: 'SEDS.REPRB.{region}.A'
@@ -99,7 +99,7 @@ const commodities = {
   // XXX this category is no longer listed on the EIA site
   'biomass': {
     values: {
-      commodity: 'Biomass (total)'
+      product: 'Biomass (total)'
     },
     params: {
       series_id: 'ELEC.GEN.BIO-{region}-99.A'
@@ -109,7 +109,7 @@ const commodities = {
 
   'geothermal': {
     values: {
-      commodity: 'Geothermal',
+      product: 'Geothermal',
       units: 'MMWh'
     },
     params: {
@@ -119,7 +119,7 @@ const commodities = {
 
   'hydroelectric': {
     values: {
-      commodity: 'Conventional Hydroelectric',
+      product: 'Conventional Hydroelectric',
       units: 'MMWh'
     },
     params: {
@@ -129,7 +129,7 @@ const commodities = {
 
   'solar': {
     values: {
-      commodity: 'Solar',
+      product: 'Solar',
       units: 'MMWh'
     },
     params: {
@@ -139,7 +139,7 @@ const commodities = {
 
   'wind': {
     values: {
-      commodity: 'Wind',
+      product: 'Wind',
       units: 'MMWh'
     },
     params: {
@@ -149,7 +149,7 @@ const commodities = {
 
   'wood': {
     values: {
-      commodity: 'Wood and wood-derived fuels'
+      product: 'Wood and wood-derived fuels'
     },
     params: {
       series_id: 'ELEC.GEN.WWW-{region}-99.A'
@@ -158,7 +158,7 @@ const commodities = {
 
   'other-biomass': {
     values: {
-      commodity: 'Other biomass'
+      product: 'Other biomass'
     },
     params: {
       series_id: 'ELEC.GEN.WAS-{region}-99.A'
@@ -169,7 +169,7 @@ const commodities = {
   // XXX: we're removing this, per #1574
   'other-renewables': {
     values: {
-      commodity: 'All Other Renewables'
+      product: 'All Other Renewables'
     },
     params: {
       series_id: 'ELEC.GEN.AOR-{region}-99.A'
@@ -181,16 +181,16 @@ const commodities = {
 
 var requestedCommodityKeys = process.argv.slice(2);
 if (requestedCommodityKeys.length) {
-  for (var key in commodities) {
+  for (var key in products) {
     if (requestedCommodityKeys.indexOf(key) == -1) {
-      delete commodities[key];
+      delete products[key];
     }
   }
-  if (Object.keys(commodities).length === 0) {
-    console.error('no commodities found matching:', requestedCommodityKeys.join(', '));
+  if (Object.keys(products).length === 0) {
+    console.error('no products found matching:', requestedCommodityKeys.join(', '));
     process.exit(1);
   }
-  console.warn('only generating keys:', Object.keys(commodities).join(', '));
+  console.warn('only generating keys:', Object.keys(products).join(', '));
   // process.exit(0);
 }
 
@@ -223,13 +223,13 @@ const fetchSeries = function(params, values, done) {
     });
 };
 
-const fetchCommodity = function(commodity, next) {
-  const source = commodities[commodity];
+const fetchCommodity = function(product, next) {
+  const source = products[product];
   const params = Object.assign({}, API_BASE_PARAMS, source.params);
   const series = params.series_id;
-  console.warn('fetching commodity:', commodity, 'from', series);
+  console.warn('fetching product:', product, 'from', series);
 
-  const file = OUTPUT_FILENAME_TEMPLATE.replace('{commodity}', commodity);
+  const file = OUTPUT_FILENAME_TEMPLATE.replace('{product}', product);
   var rows = [];
 
   const finish = function(error) {
@@ -242,7 +242,7 @@ const fetchCommodity = function(commodity, next) {
         .pipe(fs.createWriteStream(file, 'utf8'))
         .on('end', next);
     } else {
-      console.warn('no rows found for', commodity);
+      console.warn('no rows found for', product);
     }
   };
 
@@ -261,7 +261,7 @@ const fetchCommodity = function(commodity, next) {
       function fetchSubSeries(series_id, done) {
         params.series_id = series_id;
         const values = Object.assign(
-          {commodity: commodity},
+          {product: product},
           source.values,
           series[series_id]
         );
@@ -288,7 +288,7 @@ const fetchCommodity = function(commodity, next) {
         params.series_id = series.replace('{region}', region);
         const values = Object.assign(
           {
-            commodity:  commodity,
+            product:  product,
             region:     region
           },
           source.values
@@ -310,7 +310,7 @@ const fetchCommodity = function(commodity, next) {
      * entire dataset.
      */
     fetchSeries(params, Object.assign({
-      commodity: commodity
+      product: product
     }, source.values), function(error, series) {
       rows = series;
       finish(error);
@@ -336,7 +336,7 @@ async.waterfall([
   },
 
   function fetchCommmodities(next) {
-    async.map(Object.keys(commodities), fetchCommodity, next);
+    async.map(Object.keys(products), fetchCommodity, next);
   }
 ], function(error) {
   if (error) {

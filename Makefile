@@ -151,13 +151,12 @@ data/jobs: \
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region_id AS state, year, \
+		  region_id as state, year, \
 		  extractive_jobs AS jobs, \
 		  ROUND(percent, 2) AS percent \
-		FROM bls_employment \
+		FROM state_bls_employment \
 		WHERE \
-		  region_id IS NOT NULL AND \
-		  county IS NOT NULL \
+		  region_id IS NOT NULL \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \

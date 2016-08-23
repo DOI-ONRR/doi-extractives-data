@@ -14,7 +14,6 @@
 
           this.marks = root.selectAll('[data-value]')
             .datum(function() {
-              // console.log(typeof(this.getAttribute('data-value')))
               if (this.getAttribute('data-value') === null || this.getAttribute('data-value') === 'null') {
 
                 return WITHHELD_FLAG;
@@ -34,7 +33,6 @@
         setYear: {value: function(year) {
           this.marks.datum(function() {
               var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
-
               if (data[year] === null || data[year] === 'null') {
                 return WITHHELD_FLAG;
               } else {
@@ -92,7 +90,7 @@
           this.marks.data().every(function(d){
             if (d === WITHHELD_FLAG) {
               hasData.push(WITHHELD_FLAG);
-              return WITHHELD_FLAG
+              return WITHHELD_FLAG;
             } else if (d && d !== 0) {
               hasData.push(true);
               return true;
@@ -105,7 +103,7 @@
 
           var root = d3.select(this);
 
-          if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
+          if (hasData.indexOf(true) >= -1 || hasData.indexOf(WITHHELD_FLAG) >= -1) {
 
             if (hasData.indexOf(true) < 0) {
               root.select('.legend-data')

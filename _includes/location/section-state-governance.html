@@ -8,6 +8,10 @@
 
   <p>The state of {{ state_name }} participated in additional reporting. As part of the USEITI process, the {{ "Independent Administrator" | term:"Independent Administrator (IA)" }} gathered information about state and local natural resource governance, revenues, and disbursements in {{ state_name }}.</p>
 
+  {% if page.state_land %}
+	  {{ page.state_land | markdownify }}
+  {% endif %}
+
   {{ regulations | markdownify }}
 
 </section>

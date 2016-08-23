@@ -86,4 +86,14 @@
       text-align: left;
     }
   }
+  
+  .state_pages-select {
+    label {
+      @include heading('para-md');
+      
+      font-weight: $weight-book;
+      margin-bottom: 0;
+      padding-bottom: $base-padding-lite;
+    }
+  }
 }

@@ -111,7 +111,7 @@ nav_items:
         <h3>State disbursements</h2>
 
         {% if page.opt_in == true %}
-          {% include location/opt-in/state-revenues.html location_id=state_id %}
+          {% include location/opt-in/state-disbursements.html location_id=state_id %}
         {% else %}
           <p>We don't know how states spent their money. CONTENT TK</p>
         {% endif %}

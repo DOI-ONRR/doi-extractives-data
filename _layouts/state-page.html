@@ -10,6 +10,8 @@ nav_items:
         title: Entire state
       - name: federal-production
         title: Federal land
+      - name: state-production
+        title: State land
   - name: revenue
     title: Revenue
     subnav_items:
@@ -86,6 +88,15 @@ nav_items:
       {% include location/section-all-production.html %}
 
       {% include location/section-federal-production.html %}
+
+      <h3 id="state-production">Production on state land in Montana</h3>
+      {% if page.state_land %}
+        {{ page.state_land | markdownify }}
+      {% endif %}
+      {% if page.state_land_production %}
+        {{ page.state_land_production | markdownify }}
+      {% endif %}
+
     </section>
 
     {% include location/section-revenue.html %}
@@ -93,6 +104,9 @@ nav_items:
     {% unless page.offshore == true %}
     <section id="economic-impact">
       <h2>Economic impact</h2>
+      {% if page.state_impact %}
+        {{ page.state_impact | markdownify }}
+      {% endif %}
 
       {% include location/section-gdp.html %}
 
@@ -111,9 +125,9 @@ nav_items:
         <h3>State disbursements</h2>
 
         {% if page.opt_in == true %}
-          {% include location/opt-in/state-revenues.html location_id=state_id %}
+          {% include location/opt-in/state-disbursements.html location_id=state_id %}
         {% else %}
-          <p>We don't know how states spent their money. CONTENT TK</p>
+          <p>We don't have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
         {% endif %}
       </section>
 

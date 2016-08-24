@@ -6,16 +6,24 @@
   {% assign streams_count = streams.size | minus: 1 %}
   {% assign revenue_total = streams.All.Total[revenue_year] %}
 
-{% if page.state_disbursements %}
-  {{ page.state_disbursements | markdownify }}
+{% if page.state_revenue %}
+  {{ page.state_revenue | markdownify }}
 {% endif %}
 
-<p><strong>
-  In {{ year }}, ${{ revenue_total | default: 0 | intcomma }}
-  in state revenue from natural resource extraction in 
-  {{ state_name }} was disbursed
-  from {{ streams_count }} revenue stream{{ streams_count | plural }}.
-</strong></p>
+<p>
+  <strong>
+    In {{ year }}, state and local governments in 
+    {{ state_name }} collected 
+    ${{ revenue_total | default: 0 | intcomma }}
+    in state revenue from natural resource extraction through 
+    {{ streams_count }} revenue stream{{ streams_count | plural }}.
+  </strong>
+  This includes both tax and non-tax revenue.
+</p>
+
+{% if page.state_revenue_sustainability %}
+  {{ page.state_revenue_sustainability | markdownify }}
+{% endif %}
 
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>

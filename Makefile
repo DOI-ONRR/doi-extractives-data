@@ -76,7 +76,7 @@ data/national_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  year, \
-		  product, product_name, units, \
+		  product, units, \
 		  ROUND(volume) AS volume \
 		FROM all_national_production \
 		ORDER BY \

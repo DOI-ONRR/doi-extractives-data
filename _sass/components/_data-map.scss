@@ -57,12 +57,13 @@ data-map {
 
   .cell {
     @include font-size(0.7);
-    @include span-columns(4);
 
     line-height: 0.9rem;
     font-weight: $weight-book;
     padding: 0;
+    padding-bottom: $base-padding;
     padding-left: calc(12px + #{$base-padding-lite});
+    padding-right: $base-padding;
     position: relative;
 
     &:last-of-type {

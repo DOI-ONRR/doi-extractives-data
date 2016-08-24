@@ -1,6 +1,6 @@
 {% assign all_products = site.data.state_all_production[state_id].products %}
 {% assign units_map = site.data.production_units %}
-{% assign year_range = '[2004, 2013]' %}
+{% assign year_range = '[2006, 2015]' %}
 {% assign year_list = year_range | to_list %}
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
@@ -26,8 +26,8 @@
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
       {% assign units = product[1].units | downcase | default: 'units' %}
-      {% assign short_units = units_map[units].short | default 'units' %}
-      {% assign long_units = units_map[units].long | default 'units' %}
+      {% assign short_units = units_map[units].short | default: units %}
+      {% assign long_units = units_map[units].long | default: units %}
       {% assign units_suffix = units_map[units].suffix | default '' %}
 
       <section id="state-all-production-{{ product_slug }}" class="chart-item">

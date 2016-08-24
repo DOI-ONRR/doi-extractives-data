@@ -3,13 +3,13 @@
 
 <section class="container-outer land-ownership">
 
-  <h3>Land ownership</h2>
+  <h3 class="title-land-ownership">Land ownership</h3>
 
   {% assign _viewbox = site.data.viewboxes_cropped[state_id] %}
 
   <aside class="map-container" style="width: 100%;">
-    <aside class="legend-container wide">
-      {% include maps/federal_land_ownership_legend.svg %}
+    <aside class="wide">
+      {% include maps/federal_land_ownership_legend.html %}
     </aside>
     <figure>
       <div class="svg-container county map-container wide"{% if _viewbox %}

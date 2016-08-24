@@ -108,13 +108,14 @@ svg.ownership {
     }
 
     &.state-page {
+      padding-top: 0;
 
       .states.features {
         fill: transparent;
       }
 
       .states.mesh {
-        stroke: transparent
+        stroke: transparent;
       }
     }
   }

@@ -47,19 +47,49 @@ data-map {
 }
 
 .legend-ownership-svg {
+  .cells {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
   .cell {
+    @include font-size(0.7);
+    @include span-columns(4);
+
+    line-height: 0.9rem;
+    font-weight: $weight-book;
+    padding: 0;
+    padding-left: calc(12px + #{$base-padding-lite});
+    position: relative;
+
+    &:last-of-type {
+      @include omega();
+    }
+
+    &:first-of-type {
+      .swatch {
+        background-color: $greenest-land;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .swatch {
+        background-color: $greener-land;
+      }
+    }
+
     .swatch {
-      fill: $green-land;
-    }
-
-    &.federal .swatch:last-of-type {
-      fill: $blackest-black;
-      opacity: $opacity-federal;
-    }
-
-    &.state .swatch:last-of-type {
-      fill: $blackest-black;
-      opacity: $opacity-state;
+      background-color: $green-land;
+      display: inline-block;
+      height: 12px;
+      left: 0;
+      margin-right: $base-padding-lite;
+      position: absolute;
+      top: 0;
+      width: 12px;
     }
   }
 }
@@ -105,10 +135,9 @@ eiti-data-map {
 
 }
 
-.legend-svg,
-.legend-ownership-svg {
+.legend-svg {
   border: none;
-  padding: 0 0 0 $base-padding-small;
+  padding: 0;
   width: 200px;
   height: 215px;
 
@@ -127,11 +156,6 @@ eiti-data-map {
 
 .legend-container.wide {
   padding-top: $standard-padding-lite;
-
-  .legend-ownership-svg {
-    width: 100%;
-    height: 40px;
-  }
 
   .legend-svg.horizontal {
     height: 50px;

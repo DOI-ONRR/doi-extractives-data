@@ -63,7 +63,9 @@ nav_items:
       <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
         <figure class="ribbon-card-top">
           <h2 class="ribbon-card-top-text-header">Title could go here</h2>
-          <p>Natural resource extraction — and particularly federal revenue from extraction — varies widely across the country.</p>
+          <p>Broadly speaking, USEITI focuses on data about natural resource extraction on federal lands and waters. Federal land represents {{ site.data.land_stats[state_id].federal_percent | percent }}% of all land in the United States, much of which is concentrated in the American West.</p>
+
+          <p>Unlike land (which can also be owned by <a href="{{ site.baseurl }}/how-it-works/ownership/">states, local governments, corporations, or private individuals</a>), the waters and submerged lands of the Outer Continental Shelf are entirely administered by the federal government. This means that all offshore drilling and energy generation takes place in federal waters.</p>
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">
           <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or region</label>
@@ -86,8 +88,6 @@ nav_items:
         {% include location/national-all-production.html %}
 
         <h3>Land ownership</h3>
-
-        {% include location/national-ownership.html %}
 
         <section id="federal-production" is="year-switcher-section" class="federal production">
 

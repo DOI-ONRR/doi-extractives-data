@@ -57,9 +57,8 @@ data-map {
 
   .cell {
     @include font-size(0.7);
-
-    line-height: 0.9rem;
     font-weight: $weight-book;
+    line-height: 0.9rem;
     padding: 0;
     padding-bottom: $base-padding;
     padding-left: calc(12px + #{$base-padding-lite});
@@ -98,9 +97,9 @@ data-map {
 // map legend
 .details-container {
   bottom: 0;
+  left: $standard-padding-lite;
   margin: 0;
   position: absolute;
-  left: $standard-padding-lite;
 }
 
 eiti-data-map {
@@ -138,9 +137,9 @@ eiti-data-map {
 
 .legend-svg {
   border: none;
+  height: 215px;
   padding: 0;
   width: 200px;
-  height: 215px;
 
   // .swatch {
   //   stroke: $neutral-gray;

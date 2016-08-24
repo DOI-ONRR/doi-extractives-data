@@ -1,44 +1,28 @@
-{% assign cell_padding = include.cell_padding | default:10 %}
+{% assign cell_height = 12 %}
+{% assign cell_height_double = 12 | times:2 %}
+{% assign line_height = 10 %}
+{% assign item_width = 100 %}
 
 <svg class="legend-ownership-svg">
   <g class="legendQuant">
     <g class="legendCells">
-      {% if include.is_wide == 'wide' %}
-        <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
-          <rect class="swatch" height="12" width="100"></rect>
-          <rect class="swatch" height="12" width="100"></rect>
-          <text class="label"
-                transform="translate(0,27)">Federal lands</text>
-        </g>
-        <g class="cell state" transform="translate({{ cell_padding | plus: 100 }}, 0)" style="opacity: 1;">
-          <rect class="swatch" height="12" width="100"></rect>
-          <rect class="swatch" height="12" width="100"></rect>
-          <text class="label"
-                transform="translate(0,27)">Tribal lands</text>
-        </g>
-        <g class="cell" transform="translate({{ cell_padding | times: 2 | plus: 200 }}, 0)" style="opacity: 1;">
-          <rect class="swatch" height="12" width="100"></rect>
-          <text class="label" transform="translate(0,27)">Other lands (state,</text>
-          <text class="label" transform="translate(0,45)">private, local)</text>
-        </g>
-      {% else %}
-        <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
-          <rect class="swatch" height="13" width="13"></rect>
-          <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(18,12)">Federal lands</text>
-        </g>
-        <g class="cell state" transform="translate(0, {{ cell_padding | plus: 13 }})" style="opacity: 1;">
-          <rect class="swatch" height="13" width="13"></rect>
-          <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(18,12)">Tribal lands</text>
-        </g>
-        <g class="cell" transform="translate(0, {{ cell_padding | times: 2 | plus: 26 }})" style="opacity: 1;">
-          <rect class="swatch" height="13" width="13"></rect>
-          <rect class="swatch" height="13" width="13"></rect>
-          <text class="label" transform="translate(18,12)">Other lands (state,</text>
-          <text class="label" transform="translate(18,27)">private, local)</text>
-        </g>
-      {% endif %}
+      <g class="cell federal" transform="translate(0,0)" style="opacity: 1;">
+        <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
+        <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
+        <text class="label"
+              transform="translate(18, {{ line_height}})">Federal lands</text>
+      </g>
+      <g class="cell state" transform="translate({{ item_width }}, 0)" style="opacity: 1;">
+        <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
+        <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
+        <text class="label"
+              transform="translate(18, {{ line_height }})">Tribal lands</text>
+      </g>
+      <g class="cell" transform="translate({{ item_width | times:2 }}, 0)" style="opacity: 1;">
+        <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
+        <text class="label" transform="translate(18,{{ line_height }})">Other lands (state,</text>
+        <text class="label" transform="translate(18,{{ line_height | times:3 }})">private, local)</text>
+      </g>
     </g>
   </g>
 </svg>

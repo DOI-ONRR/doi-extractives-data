@@ -119,7 +119,7 @@ eiti-data-map {
 
   .cell text {
     @include font-size(3 / 4);
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -130,7 +130,7 @@ eiti-data-map {
 
   .legend-ownership-svg {
     width: 100%;
-    height: 100px;
+    height: 40px;
   }
 
   .legend-svg.horizontal {

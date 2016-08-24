@@ -429,7 +429,10 @@
   function updateRegionRow(selection, isState) {
     selection.select('.subregion-name .text')
       .text(function(f) {
-        return isOffshore(f);
+        if (!f.id) {
+          return isOffshore(f);
+        }
+        return REGION_ID_NAME[f.id];
       });
 
     var values = selection.data()

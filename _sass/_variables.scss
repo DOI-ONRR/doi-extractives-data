@@ -145,3 +145,7 @@ $opacity-federal: 0.5;
 $opacity-state: 0.25;
 $legend-row-height: 1em;
 
+$greener-land-lightness-bump: lightness($green-land) * $opacity-state;
+$greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
+$greener-land: darken($green-land, $greener-land-lightness-bump);
+$greenest-land: darken($green-land, $greenest-land-lightness-bump);

@@ -101,16 +101,23 @@ svg.map {
 }
 
 svg.ownership {
-  border: 1px solid $mid-light-gray;
-
-  &.outline {
-    border: 0;
-
+  &.no-outlines {
     .states.mesh {
       stroke: $pale-blue;
       stroke-width: 1.5px;
     }
-  }
 
+    &.state-page {
+      padding-top: 0;
+
+      .states.features {
+        fill: transparent;
+      }
+
+      .states.mesh {
+        stroke: transparent;
+      }
+    }
+  }
 
 }

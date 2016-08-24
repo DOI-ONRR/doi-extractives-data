@@ -20,10 +20,14 @@
   h3:not(.chart-title):not(.state-page-nav-title),
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
-
     border-bottom: 2px solid $light-green;
     margin-bottom: $base-padding-base;
     padding-bottom: $standard-padding-lite;
+  }
+
+  .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
+    border-bottom: 1px solid $neutral-gray;
+    margin-bottom: $base-padding-lite * 2;
   }
 
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {

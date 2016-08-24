@@ -9,7 +9,8 @@
   require('./../components/eiti-data-map-table.js');
 
   require('./../components/aria-tabs.js');
-  require('./../components/sticky-nav.js');
+
+  require('./../components/sticky.js');
 
   var OpenListNav = require('./../components/open-list-nav.js');
 

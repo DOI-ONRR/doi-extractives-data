@@ -60,11 +60,13 @@ nav_items:
           %}
         </figure>
       </div>
-      <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
-        <figure>
-          Natural resource extraction — and particularly federal revenue from extraction — varies widely across the country.
+      <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
+        <figure class="ribbon-card-top">
+          <h2 class="ribbon-card-top-text-header">Title could go here</h2>
+          <p>Natural resource extraction — and particularly federal revenue from extraction — varies widely across the country.</p>
         </figure>
-        <figcaption class="ribbon-card-bottom">
+        <figcaption class="ribbon-card-bottom state_pages-select">
+          <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or region</label>
           {% include selector.html %}
         </figcaption>
       </div>
@@ -120,16 +122,14 @@ nav_items:
 
     </div>
 
-    <div class="container-right-3">
-      <div class="sticky_nav" data-sticky-offset="50">
-        <h3 class="state-page-nav-title container">
+    <div class="container-right-3 sticky sticky_nav">
+      <h3 class="state-page-nav-title container">
 
-          <div class="nav-title">National data</div>
-        </h3>
-        <nav class="sticky_nav-nav">
-          {% include case-studies/_nav-list.html %}
-        </nav>
-      </div>
+        <div class="nav-title">National data</div>
+      </h3>
+      <nav>
+        {% include case-studies/_nav-list.html %}
+      </nav>
     </div>
 
   </section>

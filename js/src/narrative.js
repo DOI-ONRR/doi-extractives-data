@@ -1,7 +1,8 @@
 (function(exports) {
   'use strict';
 
-  require('./../components/sticky-nav.js');
+  require('./../components/sticky.js');
+
   var OpenListNav = require('./../components/open-list-nav.js');
 
   // exporting instance of OpenListNav because openListNav is

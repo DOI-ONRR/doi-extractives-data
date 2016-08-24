@@ -20,8 +20,8 @@
       </g>
       <g class="cell" transform="translate({{ item_width | times:2 }}, 0)" style="opacity: 1;">
         <rect class="swatch" height="{{ cell_height }}" width="{{ cell_height }}"></rect>
-        <text class="label" transform="translate(18,{{ line_height }})">Other lands (state,</text>
-        <text class="label" transform="translate(18,{{ line_height | times:3 }})">private, local)</text>
+        <text class="label" transform="translate(18,{{ line_height }})">Other lands</text>
+        <text class="label" transform="translate(18,25)">(state, private, local)</text>
       </g>
     </g>
   </g>

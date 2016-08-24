@@ -21,7 +21,7 @@
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
 
-    border-bottom: 2px solid $light-green;
+    border-bottom: 2px solid $neutral-gray;
     margin-bottom: $base-padding-base;
     padding-bottom: $standard-padding-lite;
   }

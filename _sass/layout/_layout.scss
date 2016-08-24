@@ -209,7 +209,9 @@
 }
 
 .container-shift-1 {
-  @include shift(1);
+  @include respond-to(medium-up) {
+    @include shift(1);
+  }
 }
 
 .container-padded {

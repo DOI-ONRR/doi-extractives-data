@@ -25,10 +25,10 @@
       {% assign product_name = product[1].name | default: product[0] %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
-      {% assign units = product[1].units | downcase | default: 'units' %}
+      {% assign units = product[1].units %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
-      {% assign units_suffix = units_map[units].suffix | default '' %}
+      {% assign units_suffix = units_map[units].suffix | default: '' %}
 
       <section id="state-all-production-{{ product_slug }}" class="chart-item">
 
@@ -36,9 +36,9 @@
         <figure class="chart">
           <figcaption id="state-all-production-figures-{{ product_slug }}">
             <span class="caption-data">
-              <span class="eiti-bar-chart-y-value" data-format=","">{{ volume | default: 0 | intcomma }}</span>
+              <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
               {{ long_units | term }} of
-              {{ product_name | downcase | suffix:units_suffix }} was produced in {{ state_name }} in
+              {{ product_name | downcase | suffix: units_suffix }} was produced in {{ state_name }} in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>
             </span>
             <span class="caption-no-data" aria-hidden="true">

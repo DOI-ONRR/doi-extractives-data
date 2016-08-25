@@ -22,6 +22,9 @@ var states = yaml.safeLoad(
   fs.readFileSync(statesPath, 'utf8')
 );
 
+var statesInverted = _.invert(states)
+
+
 var load = function(filename, format, done) {
   var rows = [];
   fs.createReadStream(filename, 'utf8')
@@ -42,7 +45,7 @@ function getDirectories(srcpath) {
 }
 
 
-describe('state self employment', function() {
+describe('state self employment by state', function() {
 
   describe('check if jobs data is the same as joined.tsv pivot', function() {
 
@@ -56,9 +59,14 @@ describe('state self employment', function() {
       '../../data/_input/bls'
     );
 
-    var years = getDirectories(pivotSourceParent);
-    var pivotSource = {};
+    var countyJobsPath = path.join(
+      __dirname,
+      '../../_data/county_jobs'
+    );
 
+    var years = getDirectories(pivotSourceParent);
+    var countyJobs = fs.readdirSync(countyJobsPath);
+    var pivotSource = {};
 
     for (var i = 0; i < years.length; i++) {
       var year = years[i];
@@ -75,6 +83,18 @@ describe('state self employment', function() {
     var selfEmployment = yaml.safeLoad(
       fs.readFileSync(dataSource, 'utf8')
     );
+
+
+    var countySelfEmployment = {};
+
+    _.each(countyJobs, function(region) {
+      var regionEmployment = path.join(countyJobsPath, region);
+
+      countySelfEmployment[region.split('.')[0]] = yaml.safeLoad(
+        fs.readFileSync(regionEmployment, 'utf8')
+      );
+    })
+
 
     for (var i = 0; i < years.length; i++) {
       var year = years[i];
@@ -114,62 +134,116 @@ describe('state self employment', function() {
           done();
         });
       });
+
+      it(year + " doesn't contain values that aren't in the pivot table", function(done) {
+        var actualCount,
+          actualPercent,
+          found;
+
+        var filter = function(d) {
+
+          return d.State === statesInverted[state] &&
+                 d.Year === year &&
+                 d.FIPS === fips;
+        };
+
+
+        load(pivotSource[year], 'tsv', function(error, rows) {
+            for (state in countySelfEmployment) {
+              for (fips in countySelfEmployment[state]) {
+                if (countySelfEmployment[state][fips].employment[year]) {
+                  actualCount = countySelfEmployment[state][fips].employment[year].count;
+                  actualPercent = countySelfEmployment[state][fips].employment[year].percent;
+                  found = rows.filter(filter);
+                }
+                assert.equal(
+                  found.length, 1,
+                  'wrong row count: ' + found.length +
+                  ' for: ' + [state, fips, year].join('/')
+
+                );
+
+                var expectedCount = found[0].Jobs;
+                var expectedPercent = found[0].Share * 100;
+
+                var differenceCount = expectedCount - actualCount;
+                var differencePercent = expectedPercent - actualPercent;
+                assert.ok(
+                  Math.abs(differenceCount) <= 1,
+                  'wrong count: ' + (actualCount + ' != ' + expectedCount + '\n' +
+                    [state, fips, year].join('/')
+                  )
+                );
+
+                assert.ok(
+                  Math.abs(differencePercent) <= 1,
+                  'wrong percent: ' + (actualPercent + ' != ' + expectedPercent + '\n' +
+                    [state, fips, year].join('/')
+                  )
+                );
+              }
+            }
+
+          done();
+        });
+      });
+
     }
   });
 
-  //   it("doesn't contain values that aren't in the pivot table", function(done) {
-  //     load(pivotSource, 'tsv', function(error, rows) {
-  //       var state;
-  //       var commodity;
-  //       var type;
-  //       var year;
-  //       var actual;
-  //       var expected;
-  //       var difference;
-  //       var found;
+    // it("doesn't contain values that aren't in the pivot table", function(done) {
+    //   load(pivotSource, 'tsv', function(error, rows) {
+    //     var state;
+    //     var commodity;
+    //     var type;
+    //     var year;
+    //     var actual;
+    //     var expected;
+    //     var difference;
+    //     var found;
 
-  //       var filter = function(d) {
-  //         return d.St === state &&
-  //                d.Commodity.trim() === commodity &&
-  //                d['Revenue Type'] === type &&
-  //                d.CY === year;
-  //       };
+    //     var filter = function(d) {
+    //       return d.St === state &&
+    //              d.Commodity.trim() === commodity &&
+    //              d['Revenue Type'] === type &&
+    //              d.CY === year;
+    //     };
 
-  //       for (state in stateRevenueByType) {
-  //         for (commodity in stateRevenueByType[state]) {
-  //           if (commodity === 'All') {
-  //             continue;
-  //           }
-  //           for (type in stateRevenueByType[state][commodity]) {
-  //             if (type === 'All') {
-  //               continue;
-  //             }
-  //             for (year in stateRevenueByType[state][commodity][type]) {
-  //               actual = stateRevenueByType[state][commodity][type][year];
-  //               found = rows.filter(filter);
+    //     for (state in stateRevenueByType) {
+    //       for (commodity in stateRevenueByType[state]) {
+    //         if (commodity === 'All') {
+    //           continue;
+    //         }
+    //         for (type in stateRevenueByType[state][commodity]) {
+    //           if (type === 'All') {
+    //             continue;
+    //           }
+    //           for (year in stateRevenueByType[state][commodity][type]) {
+    //             actual = stateRevenueByType[state][commodity][type][year];
+    //             found = rows.filter(filter);
 
-  //               assert.equal(
-  //                 found.length, 1,
-  //                 'wrong row count: ' + found.length +
-  //                 ' for: ' + [state, commodity, type, year].join('/')
-  //               );
+    //             assert.equal(
+    //               found.length, 1,
+    //               'wrong row count: ' + found.length +
+    //               ' for: ' + [state, commodity, type, year].join('/')
+    //             );
 
-  //               expected = found[0].Total;
-  //               difference = expected - actual;
+    //             expected = found[0].Total;
+    //             difference = expected - actual;
 
-  //               assert.ok(
-  //                 Math.abs(difference) <= 1,
-  //                 actual,
-  //                 (actual + ' != ' + expected)
-  //               );
-  //             }
-  //           }
-  //         }
-  //       }
+    //             assert.ok(
+    //               Math.abs(difference) <= 1,
+    //               actual,
+    //               (actual + ' != ' + expected)
+    //             );
+    //           }
+    //         }
+    //       }
+    //     }
 
-  //       done();
-  //     });
-  //   });
+    //     done();
+    //   });
+    // });
 
   // });
 

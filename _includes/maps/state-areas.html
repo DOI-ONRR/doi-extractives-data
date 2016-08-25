@@ -15,7 +15,10 @@
     {% if include.href %}</a>{% endif %}
     {% endfor %}
 
-    {% include maps/federal_land_ownership.svg %}
+
+    {% unless include.no_ownership %}
+      {% include maps/federal_land_ownership.svg %}
+    {% endunless %}
 
     <g class="states mesh">
       <use xlink:href="{{ _svg_path }}#states-mesh"></use>

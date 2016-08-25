@@ -57,6 +57,12 @@
       }
     }
   }
+
+  &.ribbon-card-no-margin {
+    .ribbon-card-top {
+      margin: 0;
+    }
+  }
 }
 
 .ribbon-card-top {

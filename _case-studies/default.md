@@ -1,6 +1,6 @@
 ---
 title: Overview | Case Studies
-layout: content
+layout: case-studies-landing
 permalink: /case-studies/
 nav_items:
   - name: overview

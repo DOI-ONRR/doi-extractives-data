@@ -10,6 +10,8 @@ nav_items:
         title: Entire state
       - name: federal-production
         title: Federal land
+      - name: state-production
+        title: State land
   - name: revenue
     title: Revenue
     subnav_items:
@@ -40,10 +42,12 @@ nav_items:
     subnav_items:
       - name: state-agencies
         title: State agencies
-      - name: state-regulations
+      - name: state-laws-and-regulations
         title: State laws and regulations
-      - name: fiscal-costs
+      - name: fiscal-costs-of-extractive-activity
         title: Fiscal costs
+      - name: tax-expenditures
+        title: Tax expenditures
 ---
 
 {% assign state_name = page.title %}
@@ -65,79 +69,98 @@ nav_items:
 {{ page.content }}
 {% endcapture %}
 
-
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
-  <div class="container-left-9">
+  <div class="container">
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1 id="title">{{ state_name }}</h1>
 
-    {% include location/section-overview.html %}
+    <div class="container-half">
 
-    {% include location/section-ownership.html %}
 
-    <section id="production">
-      <h2>Production</h2>
-
-      {% include location/section-all-production.html %}
-
-      {% include location/section-federal-production.html %}
-    </section>
-
-    {% include location/section-revenue.html %}
-
-    {% unless page.offshore == true %}
-    <section id="economic-impact">
-      <h2>Economic impact</h2>
-
-      {% include location/section-gdp.html %}
-
-      {% include location/section-jobs.html %}
-
-      {% include location/section-exports.html %}
-    </section>
-    {% endunless %}
-
-    <section id="disbursements" class="disbursements">
-      <h2>Disbursements</h2>
-
-      {% include location/section-disbursements.html %}
-
-      <section id="state-disbursements" class="disbursements">
-        <h3>State disbursements</h2>
-
-        {% if page.opt_in == true %}
-          {% include location/opt-in/state-revenues.html location_id=state_id %}
-        {% else %}
-          <p>We don't know how states spent their money. CONTENT TK</p>
-        {% endif %}
-      </section>
-
-    </section>
-
-    <section>
-      {% include location/section-state-governance.html %}
-    </section>
-
-    <!-- XXX setting display: none on this prevents the mask from working -->
-    <svg width="0" height="0">
-      <defs>
-        <clipPath id="state-outline">
-          <use xlink:href="{{ site.baseurl }}/maps/states/all.svg#state-{{ state_id }}"></use>
-        </clipPath>
-      </defs>
-    </svg>
+      {% include location/section-overview.html %}
+    </div>
+    <div class="container-right-5 container-shift-1">
+      {% include location/section-ownership.html %}
+    </div>
   </div>
 
-  <div class="container-right-3">
-    <div class="sticky_nav" data-sticky-offset="50">
-      <h3 class="state-page-nav-title container">
+  <section class="container">
+    <div class="container-left-9">
 
+      <section id="production">
+        <h2>Production</h2>
+
+
+        {% include location/section-all-production.html %}
+
+        {% include location/section-federal-production.html %}
+
+        <h3 id="state-production">Production on state land in Montana</h3>
+        {% if page.state_land %}
+          {{ page.state_land | markdownify }}
+        {% endif %}
+        {% if page.state_land_production %}
+          {{ page.state_land_production | markdownify }}
+        {% endif %}
+
+      </section>
+
+      {% include location/section-revenue.html %}
+
+      {% unless page.offshore == true %}
+      <section id="economic-impact">
+        <h2>Economic impact</h2>
+        {% if page.state_impact %}
+          {{ page.state_impact | markdownify }}
+        {% endif %}
+
+        {% include location/section-gdp.html %}
+
+        {% include location/section-jobs.html %}
+
+        {% include location/section-exports.html %}
+      </section>
+      {% endunless %}
+
+      <section id="disbursements" class="disbursements">
+        <h2>Disbursements</h2>
+
+        {% include location/section-disbursements.html %}
+
+        <section id="state-disbursements" class="disbursements">
+          <h3>State disbursements</h2>
+
+          {% if page.opt_in == true %}
+            {% include location/opt-in/state-disbursements.html location_id=state_id %}
+          {% else %}
+            <p>We don't have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
+          {% endif %}
+        </section>
+
+      </section>
+
+      <section>
+        {% include location/section-state-governance.html %}
+      </section>
+
+      <!-- XXX setting display: none on this prevents the mask from working -->
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="state-outline">
+            <use xlink:href="{{ site.baseurl }}/maps/states/all.svg#state-{{ state_id }}"></use>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+
+    <div class="sticky sticky_nav container-right-3">
+      <h3 class="state-page-nav-title container">
         <div class="nav-title">{{ state_name }}</div>
         <figure is="data-map">
-
           {%
             include icon-map.html
             state=state_id
@@ -147,11 +170,11 @@ nav_items:
         </figure>
         <label class="nav-prompt">Explore data main page</label>
       </h3>
-      <nav class="sticky_nav-nav">
+      <nav>
         {% include case-studies/_nav-list.html %}
       </nav>
     </div>
-  </div>
+  </section>
 
 </main>
 

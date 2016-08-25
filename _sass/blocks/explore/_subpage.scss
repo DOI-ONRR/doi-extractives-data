@@ -27,8 +27,7 @@
 }
 
 .explore-exploration {
-
   @include respond-to(medium-up) {
-    margin-top: 190px;
+    margin-top: $base-padding-large;
   }
 }

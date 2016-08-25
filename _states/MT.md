@@ -4,23 +4,28 @@ title: Montana
 FIPS: '30'
 
 opt_in: true
-priority: true
 
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
+state_land_production: |
+    In FY 2014, the following resources were extracted on state land in Montana:
+
+    * 1,505,356 barrels of crude oil
+    * 3,561 million cubic feet of natural gas
+    * 4,465,582 short tons of coal
+    
+    For details about natural resource extraction on state-owned land, see annual reports produced by the [Mineral Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management). 
+state_revenue: |
+    Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
+state_revenue_sustainability: |
+    **Revenue sustainability:** In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat; the percentage of revenue from natural resources has decreased from 13.5% of total revenue that went to the state general fund in 2010 to 11.3% in 2014.
+state_disbursements: |
+    [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature.
+state_impact: |
+    The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
+
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented  4.9% growth from 2013.
 ---
-
-<!-- State overview
-
-- Where is production happening? (production context)
-- Personal income
-
-State revenue and disbursements
-
-- Revenue from production on state land
-- State and local taxes
-- Revenue sustainability
-- State disbursements -->
 
 <!-- State governance -->
 
@@ -30,7 +35,7 @@ The state of Montana regulates extraction and interacts with extractive industry
 
 The [Montana Department of Revenue](https://revenue.mt.gov/) collects, manages, and distributes  revenue from companies engaged in extraction of oil, natural gas, coal, and non-energy minerals in Montana. It publishes [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports) and other [tax related reports](https://revenue.mt.gov/home/publications). County governments also collect many property taxes.
 
-The [Montana Department of Natural Resources and Conservation](http://dnrc.mt.gov/) managed Montana's natural resources, including administering state trust lands.
+The [Montana Department of Natural Resources and Conservation](http://dnrc.mt.gov/) manages Montana's natural resources, including administering state trust lands and distributing revenue from state trust lands.
 
 - The [Montana Board of Oil and Gas Conservation](http://bogc.dnrc.mt.gov/BoardSummaries.asp) is involved in all stages of oil and gas extraction. It permits all oil and gas wells, regulates the underground injecting program, and assists in remediation efforts. It also inspects all oil and gas wells and operations to ensure they comply with all state environmental laws. The board is governed by [rules and regulations](http://bogc.dnrc.mt.gov/rulesregs.asp).
 - The [Reclamation and Development Grant Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) funds some abandoned mine projects.
@@ -47,6 +52,7 @@ The [Montana Department of Environmental Quality](http://deq.mt.gov/) leads Mont
   - Holding and reviewing reclamation bonds for [coal](http://deq.mt.gov/Land/CoalUranium) and [hardrock mining](http://deq.mt.gov/Land/hardrock)
 
 - The [Waste Management and Remediation Division](http://deq.mt.gov/DEQAdmin/WMR) administers and oversees investigation and cleanup of extraction sites that need remediation.
+- County tax collectors collect and distribute the county portion of ad valorem taxes (except the coal gross proceeds tax).
 
 ### State laws and regulations
 

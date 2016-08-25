@@ -7,7 +7,7 @@
   }
 
   p + section,
-  p + h3, 
+  p + h3,
   p + h4 {
     padding-top: $standard-padding-extra;
   }
@@ -17,15 +17,19 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  h3:not(.chart-title):not(.state-page-nav-title), 
+  h3:not(.chart-title):not(.state-page-nav-title),
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
-
     border-bottom: 2px solid $light-green;
     margin-bottom: $base-padding-base;
     padding-bottom: $standard-padding-lite;
   }
-  
+
+  .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
+    border-bottom: 1px solid $neutral-gray;
+    margin-bottom: $base-padding-lite * 2;
+  }
+
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
@@ -51,7 +55,7 @@
   p {
     @include heading('para-md');
   }
-  
+
   ul {
     @include heading('para-md');
   }
@@ -67,10 +71,6 @@
     }
   }
 
-  svg.ownership {
-    border: 1px solid $mid-light-gray;
-  }
-
   .tab-interface {
     margin-bottom: $standard-padding-fluffed;
     margin-top: $standard-padding-fluffed;
@@ -79,5 +79,25 @@
   .full-width-text {
     margin-right: 25%;
     width: 75%;
+  }
+
+  .state_pages-ribbon-card {
+    h2 {
+      border-bottom: none;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .state_pages-select {
+    label {
+      @include heading('para-md');
+
+      font-weight: $weight-book;
+      margin-bottom: 0;
+      padding-bottom: $base-padding-lite;
+    }
   }
 }

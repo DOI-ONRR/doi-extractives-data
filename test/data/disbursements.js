@@ -20,7 +20,7 @@ var load = function(filename, format, done) {
     });
 };
 
-xdescribe('disbursements', function() {
+describe('disbursements', function() {
 
   describe('state rollups', function() {
 
@@ -45,29 +45,35 @@ xdescribe('disbursements', function() {
 
         if (expected === 0 || d.State === '(blank)') { return; }
 
-        if (d.Fund === 'States') {
-          d.Fund = 'State'
+        if (d.Fund === 'State') {
+          d.Fund = 'States';
         }
 
-        try {
-          actual = stateDisbursements[
-            d.State
-          ][
-            d.Fund
-          ][
-            d.Source
-          ][
-            d.FY
-          ];
-        } catch (error) {
-          assert.ok(false, 'no data for: ' + JSON.stringify(d));
+        // exlude row where State is 'US' and Fund is 'States'
+        // because this value was a rollup value and
+        // a static value
+        if (d.State !== 'US' && d.Fund !== 'States') {
+          try {
+            actual = stateDisbursements[
+              d.State
+            ][
+              d.Fund
+            ][
+              d.Source
+            ][
+              d.FY
+            ];
+          } catch (error) {
+            assert.ok(false, 'no data for: ' + JSON.stringify(d));
+          }
+          var difference = expected - actual;
+
+          assert.ok(
+            Math.abs(difference) <= 1,
+            actual,
+            (actual + ' != ' + expected + ' @ ' + (i + 1))
+          );
         }
-        var difference = expected - actual;
-        assert.ok(
-          Math.abs(difference) <= 1,
-          actual,
-          (actual + ' != ' + expected + ' @ ' + (i + 1))
-        );
       };
 
       load(pivotSource, 'tsv', function(error, rows) {
@@ -88,6 +94,9 @@ xdescribe('disbursements', function() {
         var found;
 
         var filter = function(d) {
+          if (d.Fund === 'State') {
+            d.Fund = 'States'
+          }
           return d.State === state &&
                  d.Source === source &&
                  d.Fund === fund &&
@@ -95,32 +104,36 @@ xdescribe('disbursements', function() {
         };
 
         for (state in stateDisbursements) {
-          for (fund in stateDisbursements[state]) {
-            if (fund === 'All') {
-              continue;
-            }
-            for (source in stateDisbursements[state][fund]) {
-              if (source === 'All') {
+          if (state !== 'US') {
+
+
+            for (fund in stateDisbursements[state]) {
+              if (fund === 'All') {
                 continue;
               }
-              for (year in stateDisbursements[state][fund][source]) {
-                actual = stateDisbursements[state][fund][source][year];
-                found = rows.filter(filter);
+              for (source in stateDisbursements[state][fund]) {
+                if (source === 'All') {
+                  continue;
+                }
+                for (year in stateDisbursements[state][fund][source]) {
+                  actual = stateDisbursements[state][fund][source][year];
+                  found = rows.filter(filter);
 
-                assert.equal(
-                  found.length, 1,
-                  'wrong row count: ' + found.length +
-                  ' for: ' + [state, fund, source, year].join('/')
-                );
+                  assert.equal(
+                    found.length, 1,
+                    'wrong row count: ' + found.length +
+                    ' for: ' + [state, fund, source, year].join('/')
+                  );
 
-                expected = found[0].Total;
-                difference = expected - actual;
+                  expected = found[0].Total;
+                  difference = expected - actual;
 
-                assert.ok(
-                  Math.abs(difference) <= 1,
-                  actual,
-                  (actual + ' != ' + expected)
-                );
+                  assert.ok(
+                    Math.abs(difference) <= 1,
+                    actual,
+                    (actual + ' != ' + expected)
+                  );
+                }
               }
             }
           }
@@ -130,8 +143,10 @@ xdescribe('disbursements', function() {
       });
     });
 
+    // TODO: check sum states up properly
 
-    it('properly sums up "All" disbursements by source', function() {
+
+    it('properly sums up "All" disbursements by fund', function() {
       for (var state in stateDisbursements) {
         var funds = stateDisbursements[state];
         var allByYear = {};
@@ -143,40 +158,48 @@ xdescribe('disbursements', function() {
         var year;
         var difference;
 
+
         for (fund in funds) {
           for (source in funds[fund]) {
             for (year in funds[fund][source]) {
               var revenue = funds[fund][source][year];
               if (fund === 'All') {
-                allByYear[year] = revenue;
+                allByYear[source] = allByYear[source] || {};
+                allByYear[source][year] = revenue;
               } else {
-                totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
+                totalsByYear[source] = totalsByYear[source] || {};
+                totalsByYear[source][year] = (totalsByYear[source][year] || 0) + revenue;
                 count++;
               }
             }
           }
         }
-
         // compare yearly totals, using the number of sources as a standin
         // for the acceptable rounding error (+/- 1 for each)
-        for (year in totalsByYear) {
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
+        for (source in totalsByYear) {
+          for (year in totalsByYear[source]) {
+
+            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            assert.ok(
+              difference <= count,
+              'yearly totals: abs(' + allByYear[source][year] + ' - ' +
+                totalsByYear[source][year] + ' = ' + difference + ')'
+            );
+          }
         }
+
 
         // now check the keys for allByYear just to be sure that we don't have
         // extra years in there
-        for (year in allByYear) {
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
+        for (source in totalsByYear) {
+          for (year in allByYear[source]) {
+            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            assert.ok(
+              difference <= count,
+              'keys: abs(' + allByYear[source][year] + ' - ' +
+                totalsByYear[source][year] + ' = ' + difference + ')'
+            );
+          }
         }
       }
     });

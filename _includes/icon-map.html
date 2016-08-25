@@ -1,6 +1,9 @@
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
 {% assign _states_svg = '/maps/states/all.svg' | prepend: site.baseurl %}
 {% assign _offshore_svg = '/maps/offshore/all.svg' | prepend: site.baseurl %}
+
+{% assign location_id = include.location_id %}
+
 <div class="state svg-container map-container"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
   <a href="{{ site.baseurl }}/states/" title="Explore data main page">
     <svg class="states map icon"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
@@ -12,13 +15,20 @@
       <g class="states features">
         <use xlink:href="{{ _offshore_svg }}#{{ _area.id }}"></use>
       </g>
+
+      {% if location_id == _area.id %}
+        <g class="state feature">
+          <use xlink:href="{{ _offshore_svg }}#{{ _area.id }}"></use>
+        </g>
+      {% endif %}
     {% endfor %}
 
     {% for _state in site.data.states %}
-      {% if state_id == _state.id %}
-      <g class="state feature">
-        <use xlink:href="{{ _states_svg }}#state-{{ _state.id }}"></use>
-      </g>
+      {% if location_id == _state.id %}
+        <g class="state feature">
+          <use xlink:href="{{ _states_svg }}#state-{{ _state.id }}"></use>
+        </g>
+        {% break %}
       {% endif %}
     {% endfor %}
     </svg>

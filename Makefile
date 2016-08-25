@@ -608,7 +608,7 @@ tables/disbursements: \
 	tables/disbursements_historic_preservation
 	@$(call load-sql,data/disbursements/rollup.sql)
 
-tables/federal_disbursements: data/disbursements/federal.tsv
+tables/federal_disbursements: data/disbursements/federal-pivot.tsv
 	@$(call drop-table,federal_disbursements)
 	$(tito) -r tsv --map ./data/disbursements/transform-federal.js $^ \
 		| $(tables) -t ndjson -n federal_disbursements

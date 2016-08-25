@@ -5,9 +5,9 @@ var fundMap = {
 };
 
 module.exports = {
-  year:   'Fiscal Year',
+  year:   'FY',
   fund: function(d) {
-    var fund = d['Fund Type'];
+    var fund = d['Fund'];
     return fundMap[fund] || fund;
   },
   source: 'Source',

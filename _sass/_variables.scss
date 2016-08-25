@@ -64,8 +64,8 @@ $dark-gray: #4a4a4a;
 $light-black: #303030;
 
 // State pages
-$green-land: #d5e5cb;
-$green-mint: #d2e2cc;
+$green-land: #69995A;
+$green-mint: #cde3c3;
 $green-sea: #b1d39c;
 $green-dark: #657c60;
 $chart-green: #a5d78a;
@@ -145,3 +145,7 @@ $opacity-federal: 0.5;
 $opacity-state: 0.25;
 $legend-row-height: 1em;
 
+$greener-land-lightness-bump: lightness($green-land) * $opacity-state;
+$greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
+$greener-land: darken($green-land, $greener-land-lightness-bump);
+$greenest-land: darken($green-land, $greenest-land-lightness-bump);

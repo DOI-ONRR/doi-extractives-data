@@ -1,9 +1,23 @@
 ---
 layout: default
+nav_items:
+  - name: production
+    title: Production
+    subnav_items:
+      - name: offshore-area-federal-production
+        title: Federal waters
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal revenue
 ---
 
 {% assign area_name = page.title %}
 {% assign area_id = page.id %}
+{% assign region_name = page.region %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign year = '2013' %}
 
 <main id="offshore-area-{{ area_id }}" class="container-page-wrapper layout-state-pages">
   <div class="container-left-9">
@@ -13,6 +27,12 @@ layout: default
     </div>
     <h1 id="title">{{ area_name }}</h1>
 
+    <section id="production">
+      <h2>Production</h2>
+      {% include location/offshore-area-federal-production.html %}
+    </section>
+
+    {% include location/offshore-area-revenue.html %}
   </div>
 
   <div class="container-right-3">
@@ -24,7 +44,7 @@ layout: default
 
           {%
             include icon-map.html
-            state=area_id
+            location_id=area_id
             highlighted_state=area_id
             offshore=true
           %}

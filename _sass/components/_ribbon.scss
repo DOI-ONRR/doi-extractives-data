@@ -77,6 +77,10 @@
   text-align: left;
 }
 
+.ribbon-card-top-text-header-sub {
+  @include heading(para-md);
+}
+
 .ribbon-card-top-list {
   @include heading(para-md);
   padding-bottom: $base-padding-lite;
@@ -101,6 +105,10 @@
   a {
     color: $dark-gray;
   }
+}
+
+.ribbon-card-top {
+  padding: $base-padding;
 }
 
 .ribbon-card-button {

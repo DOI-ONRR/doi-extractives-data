@@ -98,8 +98,8 @@ nav_items:
 
         {% include location/section-federal-production.html %}
 
-        <h3 id="state-production">Production on state land in Montana</h3>
         {% if page.state_land %}
+          <h3 id="state-production">Production on state land in {{ state_name }}</h3>
           {{ page.state_land | markdownify }}
         {% endif %}
         {% if page.state_land_production %}

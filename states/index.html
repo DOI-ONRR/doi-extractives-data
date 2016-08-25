@@ -62,13 +62,18 @@ nav_items:
       </div>
       <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
         <figure class="ribbon-card-top">
-          <h2 class="ribbon-card-top-text-header">Title could go here</h2>
-          <p>Broadly speaking, USEITI focuses on data about natural resource extraction on federal lands and waters. Federal land represents {{ site.data.land_stats[state_id].federal_percent | percent }}% of all land in the United States, much of which is concentrated in the American West.</p>
-
-          <p>Unlike land (which can also be owned by <a href="{{ site.baseurl }}/how-it-works/ownership/">states, local governments, corporations, or private individuals</a>), the waters and submerged lands of the Outer Continental Shelf are entirely administered by the federal government. This means that all offshore drilling and energy generation takes place in federal waters.</p>
+          <h2 class="ribbon-card-top-text-header">Land ownership</h2>
+          <p>
+            Natural resource ownership, governance, and revenues in the United States are closely tied to land ownership, and many USEITI datasets only cover natural resource extraction on {{ "federal lands and waters" | term_end:"federal land" }}.
+          </p>
+          <p>
+            Federal land represents 
+            {{ site.data.land_stats[state_id].federal_percent | percent }}% 
+            of all land in the U.S., mostly concentrated in the American West. All offshore drilling and energy generation takes place in federal waters, because the {{ "Outer Continental Shelf" | term }} is entirely administered by the federal government.
+          </p>
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">
-          <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or region</label>
+          <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or offshore area</label>
           {% include selector.html %}
         </figcaption>
       </div>
@@ -86,8 +91,6 @@ nav_items:
         <p>The U.S. produces more <a href="#all-production-natural-gas-mcf">natural gas</a> and <a href="#all-production-oil-bbl">oil</a> than any other country. The U.S. also ranks second in the world for production of <a href="#all-production-coal-short-tons">coal</a> and renewable energy, and third in the world for gold production.</p>
 
         {% include location/national-all-production.html %}
-
-        <h3>Land ownership</h3>
 
         <section id="federal-production" is="year-switcher-section" class="federal production">
 

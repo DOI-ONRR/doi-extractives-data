@@ -12,6 +12,9 @@ var UNIT_MAP = {
   'thousand megawatthours': 'mmwh'
 };
 
+var OUT_PATH = path.join(__dirname, '../../_data');
+var IN_PATH = path.join(__dirname, '../../data/all-production/product');
+
 var load = function(filename, format, done) {
   var rows = [];
   fs.createReadStream(filename, 'utf8')
@@ -66,11 +69,8 @@ var assertVolumeMatch = function(
       reason
     );
   } else if (inputUnits === ('m' + outputUnits.toLowerCase())) {
-    assert.equal(
-      round(inputVolume, precision),
-      round(outputVolume / 1000, precision),
-      reason
-    );
+    var delta = Number(inputVolume) - Number(outputVolume / 1000);
+    assert(delta <= 1, reason);
   } else {
     assert.ok(false, 'unrecognized unit conversion: ' + reason);
   }
@@ -78,24 +78,18 @@ var assertVolumeMatch = function(
 
 describe('all production (EIA)', function() {
 
-  var inputPath = path.join(
-    __dirname,
-    '../../data/all-production/product'
-  );
-
   describe('national values', function() {
 
-    var outputPath = path.join(__dirname, '../../_data');
     var nationalValues = yaml.safeLoad(
       fs.readFileSync(
-        path.join(outputPath, 'national_all_production.yml'),
+        path.join(OUT_PATH, 'national_all_production.yml'),
         'utf8'
       )
     );
     var products = nationalValues.US.products;
 
     it('YAML matches all national rows in input', function(done) {
-      loadAll(inputPath, function(error, rows) {
+      loadAll(IN_PATH, function(error, rows) {
         if (error) {
           return done(error);
         }
@@ -132,7 +126,7 @@ describe('all production (EIA)', function() {
     });
 
     it('all national input rows exist in YAML', function(done) {
-      loadAll(inputPath, function(error, rows) {
+      loadAll(IN_PATH, function(error, rows) {
         if (error) {
           return done(error);
         }
@@ -165,9 +159,96 @@ describe('all production (EIA)', function() {
   });
 
   describe('state values', function() {
+
+    var stateValues = yaml.safeLoad(
+      fs.readFileSync(
+        path.join(OUT_PATH, 'state_all_production.yml'),
+        'utf8'
+      )
+    );
+
+    it('all state input rows exist in YAML', function(done) {
+      loadAll(IN_PATH, function(error, rows) {
+        if (error) {
+          return done(error);
+        }
+
+        var volume;
+        var units;
+
+        rows
+          .filter(function(d) {
+            return d.region !== 'US'
+                && d.region.length === 2
+                && d.volume;
+          })
+          .forEach(function(d) {
+            var dataPath = [d.region, 'products', d.product, 'volume', d.year];
+            var product;
+            try {
+              product = stateValues[d.region].products[d.product];
+              volume = product.volume[d.year].volume;
+            } catch (error) {
+              throw new Error('no YAML data for row: ' + dataPath.join('.')
+                             + ' ' + JSON.stringify(d));
+            }
+
+            assertVolumeMatch(
+              d.volume,
+              d.units,
+              volume,
+              product.units
+            );
+          });
+
+        done();
+      });
+    });
+
+    it('all YAML values exist in the input data', function(done) {
+      loadAll(IN_PATH, function(error, rows) {
+        if (error) {
+          return done(error);
+        }
+
+        var state;
+        var product;
+        var year;
+        var volume;
+        var units;
+        var matches;
+        var match;
+        var filter = function(d) {
+          return d.region === state
+              && d.product === product
+              && d.year === year;
+        };
+
+        for (state in stateValues) {
+          for (product in stateValues[state].products) {
+            values = stateValues[state].products[product];
+            units = values.units;
+            for (year in values.volume) {
+              volume = values.volume[year].volume;
+              matches = rows.filter(filter);
+              assert.equal(matches.length, 1);
+              match = matches[0];
+              assertVolumeMatch(
+                match.volume,
+                match.units,
+                volume,
+                units
+              );
+            }
+          }
+        }
+
+        done();
+      });
+    });
   });
 
-  describe('offshore values', function() {
+  xdescribe('offshore values', function() {
   });
 
 });

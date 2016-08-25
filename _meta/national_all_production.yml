@@ -3,5 +3,4 @@ US:
     '{product}':
       units: '{units}'
       volume:
-        '{year}':
-          volume: '{volume}'
+        '{year}': '{volume}'

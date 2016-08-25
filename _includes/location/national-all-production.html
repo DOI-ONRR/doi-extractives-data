@@ -23,7 +23,7 @@
       {% assign product_name = product[0] %}
       {% assign product_slug = product_name | slugify %}
       {% assign production_values = product[1].volume %}
-      {% assign volume = production_values[year].volume %}
+      {% assign volume = production_values[year] %}
       {% assign units = product[1].units | downcase %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
@@ -48,7 +48,7 @@
         </figcaption>
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
-          data='{{ production_values | map_hash: "volume" | jsonify }}'
+          data='{{ production_values | jsonify }}'
           x-range="{{ year_range }}"
           x-value="{{ year }}"
           data-units="{{ long_units }}">

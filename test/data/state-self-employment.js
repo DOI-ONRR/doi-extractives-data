@@ -135,6 +135,78 @@ describe('state self employment by state', function() {
         });
       });
 
+
+      it('county data for ' + year, function(done) {
+
+        load(pivotSource[year], 'tsv', function(error, rows) {
+
+          var actual = {}
+          actual.count = {};
+          actual.percent = {};
+
+          var expected = {}
+          expected.count = {};
+          expected.percent = {};
+
+          var round = 1;
+
+          rows.forEach(function(d) {
+            var state = states[d.State];
+
+            var expectedByState = countySelfEmployment[state]
+
+            if (expectedByState) {
+              try {
+                if (d.County) {
+                  expectedByCounty = expectedByState[d.FIPS]
+                  if (+d.Jobs) {
+                    if (actual.count[d.FIPS]) {
+                      actual.count[d.FIPS] += +d.Jobs;
+                    } else {
+                      actual.count[d.FIPS] = +d.Jobs;
+                    }
+                  }
+
+                  if (+d.Share) {
+                    if (actual.percent[d.FIPS]) {
+                      actual.percent[d.FIPS] += +d.Share * 100;
+                    } else {
+                      actual.percent[d.FIPS] = +d.Share * 100;
+                    }
+                  }
+                  // console.log(expectedByCounty)
+                  expected.count[d.FIPS] = expectedByCounty.employment[year].count;
+                  expected.percent[d.FIPS] = expectedByCounty.employment[year].percent;
+                }
+              } catch (error) {
+                assert.ok(false, 'no data for: ' + JSON.stringify(d));
+              }
+            }
+          });
+
+          for (metric in actual) {
+            for (fips in actual[metric]) {
+
+              var difference = Math.abs(+actual[metric][fips] - +expected[metric][fips])
+
+              if (metric === 'percent') {
+                round = .01;
+              } else {
+                round = 1;
+              }
+              assert.ok(
+                difference <= round,
+                (metric + ' ' + actual[metric][fips] + ' != ' + expected[metric][fips] +
+                  ' for: ' + [fips, year].join('/')
+                  )
+              )
+            }
+          }
+
+          done();
+        });
+      });
+
       it(year + " doesn't contain values that aren't in the pivot table", function(done) {
         var actualCount,
           actualPercent,
@@ -190,61 +262,5 @@ describe('state self employment by state', function() {
 
     }
   });
-
-    // it("doesn't contain values that aren't in the pivot table", function(done) {
-    //   load(pivotSource, 'tsv', function(error, rows) {
-    //     var state;
-    //     var commodity;
-    //     var type;
-    //     var year;
-    //     var actual;
-    //     var expected;
-    //     var difference;
-    //     var found;
-
-    //     var filter = function(d) {
-    //       return d.St === state &&
-    //              d.Commodity.trim() === commodity &&
-    //              d['Revenue Type'] === type &&
-    //              d.CY === year;
-    //     };
-
-    //     for (state in stateRevenueByType) {
-    //       for (commodity in stateRevenueByType[state]) {
-    //         if (commodity === 'All') {
-    //           continue;
-    //         }
-    //         for (type in stateRevenueByType[state][commodity]) {
-    //           if (type === 'All') {
-    //             continue;
-    //           }
-    //           for (year in stateRevenueByType[state][commodity][type]) {
-    //             actual = stateRevenueByType[state][commodity][type][year];
-    //             found = rows.filter(filter);
-
-    //             assert.equal(
-    //               found.length, 1,
-    //               'wrong row count: ' + found.length +
-    //               ' for: ' + [state, commodity, type, year].join('/')
-    //             );
-
-    //             expected = found[0].Total;
-    //             difference = expected - actual;
-
-    //             assert.ok(
-    //               Math.abs(difference) <= 1,
-    //               actual,
-    //               (actual + ' != ' + expected)
-    //             );
-    //           }
-    //         }
-    //       }
-    //     }
-
-    //     done();
-    //   });
-    // });
-
-  // });
 
 });

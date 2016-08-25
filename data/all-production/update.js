@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 const async = require('async');
 const fs = require('fs');
 const path = require('path');
@@ -11,8 +12,16 @@ const util = require('../../lib/util');
 const yaml = require('js-yaml');
 
 const API_BASE_URL = 'http://api.eia.gov/series/';
+const API_KEY = process.env.EIA_API_KEY;
+if (!API_KEY) {
+  console.error('You must set the EIA_API_KEY environment variable:');
+  console.error('\n    export EIA_API_KEY=XXXXXX\n');
+  console.error('or:\n\n    EIA_API_KEY=XXXXXX ./update.js\n');
+  process.exit(1);
+}
+
 const API_BASE_PARAMS = {
-  api_key: process.env.EIA_API_KEY,
+  api_key: API_KEY,
   out: 'json'
 };
 

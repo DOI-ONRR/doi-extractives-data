@@ -72,6 +72,7 @@
   padding-left: $base-padding;
   padding-right: $base-padding;
   padding-top: 0;
+  text-align: left;
 }
 
 .ribbon-card-top-text-header {
@@ -110,6 +111,10 @@
 
   a {
     color: $dark-gray;
+  }
+  
+  label {
+    text-align: left;
   }
 }
 
@@ -376,5 +381,11 @@ svg {
   .container-page-wrapper.ribbon {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.ribbon-card-case_studies {
+  p {
+    @include heading('para-md');
   }
 }

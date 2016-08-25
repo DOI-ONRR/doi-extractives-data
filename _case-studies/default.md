@@ -17,10 +17,6 @@ resource: default
 selector: list
 ---
 
-# How do extractive industries impact communities like mine?
-
-> This section includes twelve case studies that provide a snapshot of communities that have led the U.S. in producing oil, gas, coal, gold, iron, or copper over the last decade. These case studies shed light on the economic and fiscal effects of oil, gas, and mineral extraction on local communities.
-
 {% include case-studies/_selector.html screen="mobile" %}
 
 {% include case-studies/_maps.html screen="mobile" %}

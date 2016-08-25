@@ -8,7 +8,7 @@ opt_in: true
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
 state_land_production: |
-    In FY 2014, the following resources were extracted on state land in Montana:
+    In FY 2014, resources extracted on state land in Montana included:
 
     * 1,505,356 barrels of crude oil
     * 3,561 million cubic feet of natural gas
@@ -18,7 +18,9 @@ state_land_production: |
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
 state_revenue_sustainability: |
-    **Revenue sustainability:** In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat; the percentage of revenue from natural resources has decreased from 13.5% of total revenue that went to the state general fund in 2010 to 11.3% in 2014.
+    In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat; the percentage of revenue from natural resources has decreased from 13.5% of total revenue that went to the state general fund in 2010 to 11.3% in 2014.
+state_tax_expenditures: |
+    In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 state_disbursements: |
     [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature.
 state_impact: |
@@ -52,7 +54,6 @@ The [Montana Department of Environmental Quality](http://deq.mt.gov/) leads Mont
   - Holding and reviewing reclamation bonds for [coal](http://deq.mt.gov/Land/CoalUranium) and [hardrock mining](http://deq.mt.gov/Land/hardrock)
 
 - The [Waste Management and Remediation Division](http://deq.mt.gov/DEQAdmin/WMR) administers and oversees investigation and cleanup of extraction sites that need remediation.
-- County tax collectors collect and distribute the county portion of ad valorem taxes (except the coal gross proceeds tax).
 
 ### State laws and regulations
 
@@ -98,10 +99,4 @@ The USEITI {{ term | "Multi-Stakeholder Group" }} prioritized four types of fisc
   The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
 
   The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
-
-### Tax expenditures
-
-Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
-
-In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 

@@ -9,6 +9,8 @@ var assert = require('assert');
 var parse = require('csv-parse');
 var async = require('async')
 
+var _ = require('lodash');
+
 
 
 var statesPath = path.join(
@@ -74,47 +76,45 @@ describe('state self employment', function() {
       fs.readFileSync(dataSource, 'utf8')
     );
 
-    it('match values in the pivot table', function(done) {
-      var testRow = function(d, i) {
-        // var expected = +d.Total;
-        // console.log(d.State)
-        console.log(states[d.State])
-        console.log(selfEmployment[states[d.State]])
-        // if (d.State == )
-        var actual;
-        try {
-          // actual = selfEmployment[
-          //   d.St
-          // ][
-          //   d.Commodity.trim()
-          // ][
-          //   d['Revenue Type']
-          // ][
-          //   d.CY
-          // ];
-          return
-        } catch (error) {
-          // assert.ok(false, 'no data for: ' + JSON.stringify(d));
-        }
-        var difference = expected - actual;
-        // assert.ok(
-        //   true,
-        //   true,
-        //   (actual + ' != ' + expected + ' @ ' + (i + 1))
-        // );
-        return
-      };
-
-      for (var i = 0; i < years.length; i++) {
-
-        var year = years[i];
+    for (var i = 0; i < years.length; i++) {
+      var year = years[i];
+      it('state rollups for ' + year, function(done) {
         load(pivotSource[year], 'tsv', function(error, rows) {
-          rows.forEach(testRow);
+
+          var actual = {};
+          var expected = {};
+
+          rows.forEach(function(d) {
+            var state = states[d.State];
+
+            var expectedByState = selfEmployment[state]
+
+            if (expectedByState) {
+
+              if (+d.Jobs) {
+                if (actual[state]) {
+                  actual[state] += +d.Jobs;
+                } else {
+                  actual[state] = +d.Jobs;
+                }
+              }
+              expected[state] = expectedByState[d.Year].count
+            }
+          });
+
+          for (state in actual) {
+            var difference = Math.abs(+actual[state] - +expected[state])
+            assert.ok(
+              difference <= 0,
+              actual[state],
+              (actual[state] + ' != ' + expected[state])
+            )
+          }
+
           done();
         });
-      }
-
-    });
+      });
+    }
   });
 
   //   it("doesn't contain values that aren't in the pivot table", function(done) {

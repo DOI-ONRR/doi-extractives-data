@@ -1,20 +1,19 @@
-'use strict';
-/* jshint node: true, mocha: true, esnext: true */
+/* jshint node: true, mocha: true */
 /* jshint -W089 */
 /* jshint -W110 */
-const tito = require('tito');
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
-const assert = require('assert');
-const async = require('async');
+var tito = require('tito');
+var fs = require('fs');
+var path = require('path');
+var yaml = require('js-yaml');
+var assert = require('assert');
+var async = require('async');
 
-const UNIT_MAP = {
+var UNIT_MAP = {
   'thousand megawatthours': 'mmwh'
 };
 
-const load = function(filename, format, done) {
-  const rows = [];
+var load = function(filename, format, done) {
+  var rows = [];
   fs.createReadStream(filename, 'utf8')
     .pipe(tito.formats.createReadStream(format))
     .on('data', function(d) {
@@ -26,18 +25,18 @@ const load = function(filename, format, done) {
     });
 };
 
-const round = function(num, precision) {
+var round = function(num, precision) {
   return (+num).toFixed(precision || 3);
 };
 
-const loadAll = function(dir, done) {
+var loadAll = function(dir, done) {
   fs.readdir(dir, function(error, files) {
     if (error) {
       return done(error);
     }
     async.mapSeries(files, function(filename, next) {
       filename = path.join(dir, filename);
-      const ext = filename.split('.').pop();
+      var ext = filename.split('.').pop();
       load(filename, ext, next);
     }, function(error, files) {
       done(error, (files || []).reduce(function(rows, data) {
@@ -47,14 +46,14 @@ const loadAll = function(dir, done) {
   });
 };
 
-const assertVolumeMatch = function(
+var assertVolumeMatch = function(
   inputVolume, inputUnits, outputVolume, outputUnits
 ) {
   inputUnits = UNIT_MAP[inputUnits.toLowerCase()]
     || inputUnits.toLowerCase();
 
-  const precision = 3;
-  const reason = [
+  var precision = 3;
+  var reason = [
     inputVolume, '(' + inputUnits + ')',
     'to',
     outputVolume, '(' + outputUnits + ')'
@@ -79,21 +78,21 @@ const assertVolumeMatch = function(
 
 describe('all production (EIA)', function() {
 
-  const inputPath = path.join(
+  var inputPath = path.join(
     __dirname,
     '../../data/all-production/product'
   );
 
   describe('national values', function() {
 
-    const outputPath = path.join(__dirname, '../../_data');
-    const nationalValues = yaml.safeLoad(
+    var outputPath = path.join(__dirname, '../../_data');
+    var nationalValues = yaml.safeLoad(
       fs.readFileSync(
         path.join(outputPath, 'national_all_production.yml'),
         'utf8'
       )
     );
-    const products = nationalValues.US.products;
+    var products = nationalValues.US.products;
 
     it('YAML matches all national rows in input', function(done) {
       loadAll(inputPath, function(error, rows) {
@@ -107,7 +106,7 @@ describe('all production (EIA)', function() {
         var units;
         var matches;
         var match;
-        const filter = function(d) {
+        var filter = function(d) {
           return d.region === 'US'
               && d.product === product
               && d.year === year;

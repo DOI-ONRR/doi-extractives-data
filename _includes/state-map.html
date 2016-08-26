@@ -1,6 +1,10 @@
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
 {% assign states_svg = '/maps/states/all.svg' %}
 {% assign offshore_svg = '/maps/offshore/all.svg' %}
+
+{% assign case_studies_points = site.data.case_studies_points %}
+{% assign circle_radius = 17 %}
+
 <div class="state svg-container map-container wide"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
   <svg class="states map{% if include.case_studies %} case_studies {% endif %}{% if include.ownership %} ownership {% endif %}{% if include.no_outline %} no-outlines {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
 
@@ -10,7 +14,7 @@
         svg=states_svg
         value=include.value
         states=include.states
-        no_ownership=true
+        no_ownership=include.case_studies
       %}
     {% endif %}
 
@@ -25,78 +29,109 @@
 
     {% if include.case_studies %}
       <g>
-        <g>
-          <circle class="NV-1" cx="190" cy="205" r="20" fill="#fff"></circle>
-          <g x="200" y="200">
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% for point in case_studies_points['coal'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} coal" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-coal.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="NV-2" cx="250" cy="235" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% endfor %}
+
+        {% for point in case_studies_points['copper'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} copper" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-copper.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="WY" cx="375" cy="185" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% endfor %}
+
+        {% for point in case_studies_points['gold'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} gold" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-gold.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="CA" cx="170" cy="315" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% endfor %}
+
+        {% for point in case_studies_points['iron'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} iron" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-iron.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="AK" cx="185" cy="465" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% endfor %}
+
+        {% for point in case_studies_points['gas'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} gas" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-gas.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="AZ-1" cx="300" cy="365" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
+        {% endfor %}
+
+        {% for point in case_studies_points['oil'] %}
+          {% assign point_name = point[1].name %}
+          {% assign point_state = point[1].state %}
+          {% assign coords = point[1].circle %}
+          {% assign x_offset = coords.x | minus: circle_radius %}
+          {% assign y_offset = coords.y | minus: circle_radius %}
+
+          <g class="case-studies-circle-group">
+
+            <circle class="{{ point_state }} oil" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="#4b9bbf" stroke-width="2px"></circle>
+            {% include svg/circle-icon-oil.svg x=x_offset y=y_offset %}
+            <g>
+              <rect width="200" height="50" stroke="#fff"></rect>
+            </g>
           </g>
-        </g>
-        <g>
-          <circle class="AZ-2" cx="260" cy="405" r="20" fill="#fff"></circle>
-          <g >
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
-        <g>
-          <circle class="TX" cx="490" cy="420" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
-        <g>
-          <circle class="LA" cx="550" cy="435" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
-        <g>
-          <circle class="MN" cx="550" cy="140" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
-        <g>
-          <circle class="MI" cx="610" cy="170" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
-        <g>
-          <circle class="WV" cx="740" cy="280" r="20" fill="#fff"></circle>
-          <g>
-            <rect width="200" height="50" fill="red" stroke="#fff"></rect>
-          </g>
-        </g>
+        {% endfor %}
+
+
       </g>
     {% endif %}
 

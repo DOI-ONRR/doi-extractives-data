@@ -1,20 +1,79 @@
-# coal:
-#   boone_logan_mingo:
-#     name: Boone, Logan, and Mingo Counties
-#     state: West Virginia
-#     circle:
-#       'x': 10
-#       'y': 10
+coal:
+  boone_logan_mingo:
+    name: Boone, Logan, and Mingo Counties
+    state: West Virginia
+    circle:
+      'x': 740
+      'y': 280
+  campbell:
+    name: Campbell County
+    state: Wyoming
+    circle:
+      'x': 375
+      'y': 185
+copper:
+  greenlee:
+    name: Greenlee County
+    state: Arizona
+    circle:
+      'x': 300
+      'y': 365
+  pima:
+    name: Pima County
+    state: Arizona
+    circle:
+      'x': 260
+      'y': 405
+gold:
+  elko_eureka:
+    name: Elko and Eureka Counties
+    state: Nevada
+    circle:
+      'x': 250
+      'y': 235
+  humboldt_lander:
+    name: Humboldt and Lander Counties
+    state: Nevada
+    circle:
+      'x': 190
+      'y': 205
+iron:
+  marquette:
+    name: Marquette County
+    state: Michigan
+    circle:
+      'x': 610
+      'y': 170
+  st_louis:
+    name: St. Louis County
+    state: Minnesota
+    circle:
+      'x': 550
+      'y': 140
+gas:
+  desoto:
+    name: DeSoto Parish
+    state: Louisiana
+    circle:
+      'x': 550
+      'y': 435
+  tarrant_johnson:
+    name: Tarrant and Johnson Counties
+    state: Texas
+    circle:
+      'x': 490
+      'y': 420
+oil:
+  kern:
+    name: Kern County
+    state: California
+    circle:
+      'x': 170
+      'y': 315
+  north_slope:
+    name: North Slope Borough
+    state: Alaska
+    circle:
+      'x': 185
+      'y': 465
 
-
-#   campbell:
-#   desoto:
-#   elko_eureka:
-#   greenlee:
-#   humboldt_lander:
-#   kern:
-#   marquette:
-#   north_slope:
-#   pima:
-#   st_louis:
-#   tarrant_johnson:

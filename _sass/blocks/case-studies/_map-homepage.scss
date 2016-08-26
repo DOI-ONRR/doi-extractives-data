@@ -1,0 +1,16 @@
+.case-studies-circle-group {
+	cursor: pointer;
+
+	&:hover,
+	&:focus,
+	&:active {
+		circle {
+			fill: $dark-blue;
+		}
+
+		svg path {
+			fill: $white;
+			stroke: $white;
+		}
+	}
+}

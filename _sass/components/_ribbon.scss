@@ -72,7 +72,7 @@
   padding-left: $base-padding;
   padding-right: $base-padding;
   padding-top: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .ribbon-card-top-text-header {
@@ -190,7 +190,7 @@ svg {
       position: relative;
     }
 
-    svg {
+    .svg-oil-rig {
       display: none;
 
       .rig-dollars {
@@ -290,7 +290,7 @@ svg {
       padding-right: 0;
     }
 
-    svg {
+    .svg-oil-rig {
       bottom: 0;
       display: inline-block;
       left: 0;
@@ -385,6 +385,8 @@ svg {
 }
 
 .ribbon-card-case_studies {
+  text-align: left;
+
   p {
     @include heading('para-md');
   }

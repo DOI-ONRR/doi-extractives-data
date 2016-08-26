@@ -1,4 +1,4 @@
-(function(exports) {
+(function() {
   'use strict';
 
   require('./../eiti.explore.js');

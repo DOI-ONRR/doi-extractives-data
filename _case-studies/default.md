@@ -17,10 +17,6 @@ resource: default
 selector: list
 ---
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Overview
 
 While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities may be even more economically dependent on extractive industries.

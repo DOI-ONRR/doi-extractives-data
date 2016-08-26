@@ -74,10 +74,10 @@ collections:
     # permalinks are defined in _offshore_areas/???.md
   offshore_regions:
     output: true
-    permalink: /offshore/:path/
+    permalink: /explore/offshore/:path/
   states:
     output: true
-    permalink: /states/:path/
+    permalink: /explore/:path/
 
 defaults:
   - scope:

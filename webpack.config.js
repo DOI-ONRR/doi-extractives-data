@@ -10,6 +10,8 @@ var config = {
     'explore.min': './js/src/explore.js',
     'homepage.min': './js/src/homepage.js',
     'state-pages.min': './js/src/state-pages.js',
+    'company-revenue.min': './js/src/company-revenue.js',
+    'reconciliation.min': './js/src/reconciliation.js',
   },
 
   output: {

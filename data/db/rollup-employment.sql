@@ -17,3 +17,11 @@ CREATE TABLE national_bls_employment AS
     GROUP BY
         year;
 
+DROP TABLE IF EXISTS state_bls_employment;
+CREATE TABLE state_bls_employment AS
+    SELECT
+        year, state, region_id, SUM(extractive_jobs) AS extractive_jobs,
+        SUM(total_jobs) AS total_jobs, percent
+    FROM bls_employment
+    GROUP BY
+        year, state, region_id;

@@ -7,20 +7,13 @@
   margin: 0;
   position: relative;
 
-  &:hover,
-  &:focus,
-  &:active {
-    svg.map .states.features {
-      fill: $blackest-black;
-      fill-opacity: 1;
-      stroke: $blackest-black;
-    }
-  }
-
   svg.map {
-    .state.feature {
+    .state.feature,
+    .offshore-area.feature {
       fill-opacity: 1;
     }
+
+
 
     .states.features {
       @include transition(all, 0.3s);
@@ -28,6 +21,14 @@
       fill: $neutral-gray;
       fill-opacity: 1;
       stroke: $neutral-gray;
+    }
+
+    .offshore.features {
+      @include transition(all, 0.3s);
+
+      fill: $mid-gray;
+      fill-opacity: 1;
+      stroke: $mid-gray;
     }
   }
 
@@ -48,6 +49,12 @@
         fill: $blackest-black;
         fill-opacity: 1;
         stroke: $blackest-black;
+      }
+
+      svg.map .offshore.features {
+        fill: $dark-gray;
+        fill-opacity: 1;
+        stroke: $dark-gray;
       }
     }
 

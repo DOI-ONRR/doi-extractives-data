@@ -12,12 +12,12 @@
       </g>
 
     {% for _area in site.offshore_areas %}
-      <g class="states features">
+      <g class="offshore features">
         <use xlink:href="{{ _offshore_svg }}#{{ _area.id }}"></use>
       </g>
 
       {% if location_id == _area.id %}
-        <g class="state feature">
+        <g class="offshore-area feature">
           <use xlink:href="{{ _offshore_svg }}#{{ _area.id }}"></use>
         </g>
       {% endif %}

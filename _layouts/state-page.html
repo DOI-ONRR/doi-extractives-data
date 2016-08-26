@@ -65,6 +65,8 @@ nav_items:
 {% assign is_case_study_state = page.case_study %}
 {% assign is_opt_in_state = page.opt_in %}
 
+{% assign _viewbox = site.data.viewboxes[state_id] %}
+
 {% capture regulations %}
 {{ page.content }}
 {% endcapture %}
@@ -163,7 +165,7 @@ nav_items:
         <figure is="data-map">
           {%
             include icon-map.html
-            state=state_id
+            location_id=state_id
             highlighted_state=state_id
             offshore=true
           %}

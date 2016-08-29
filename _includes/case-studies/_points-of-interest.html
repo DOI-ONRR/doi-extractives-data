@@ -4,7 +4,6 @@
 {% assign dark_blue = '#4b9bbf' %}
 
 <g class="case-studies-points">
-<!-- {{ case_studies_points }} -->
   {% for commodity in commodities %}
     {% for point in case_studies_points[commodity] %}
       {% assign point_id = point[0] %}
@@ -17,10 +16,9 @@
 
       <g class="case-studies-circle-group">
         <g class="case-studies-caption {{ point_id }}">
-          <rect x="{{ x_offset }}" y="{{ y_offset }}"></rect>
           <a xlink:href="{{ point_permalink | prepend:site.baseurl }}">
+            <rect x="{{ x_offset }}" y="{{ y_offset }}"></rect>
             <text x="{{ x_offset }}" y="{{ y_offset }}">{{ commodity | capitalize }} in {{ point_state }}</text>
-
           </a>
           <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">{{ point_name }}</text>
         </g>

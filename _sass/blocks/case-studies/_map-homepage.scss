@@ -1,5 +1,4 @@
 .case-studies-circle-group {
-  cursor: pointer;
 
   &:hover,
   &:focus,
@@ -43,6 +42,7 @@
 
   rect {
     background: $white;
+    cursor: pointer;
     fill: $white;
     height: $caption-height;
     stroke: $dark-blue;
@@ -54,6 +54,7 @@
   text {
     @include font-size(0.8);
 
+    cursor: pointer;
     fill: $dark-blue;
     text-anchor: middle;
     transform: translate(#{$circle-radius}, 55px);

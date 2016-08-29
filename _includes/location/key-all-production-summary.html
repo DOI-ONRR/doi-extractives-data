@@ -1,0 +1,12 @@
+{% assign top_all_products = site.data.top_state_products[include.location_id].all_production[include.year] %}
+
+{% if top_all_products.size > 0 %}
+  <p>{{ state_name }} ranks among the top five states in the U.S. for production of:
+    <ul>
+      {% for product in top_all_products %}
+        <li>{{ product.name }}: #{{ product.rank }} in the nation ({{ product.percent | floor }}% of U.S. production)</li>
+        {% if forloop.index == include.top %}{% break %}{% endif %}
+      {% endfor %}
+    </ul>
+  </p>
+{% endif %}

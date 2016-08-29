@@ -3,6 +3,13 @@
 {% assign year_range = '[2004, 2013]' %}
 {% assign year_list = year_range | to_list %}
 
+{%
+  include location/key-all-production-summary.html
+  location_id=state_id
+  location_name=state_name
+  year=year
+%}
+  
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
   <h3>Production in the entire state of {{ state_name }}</h3>

@@ -20,6 +20,12 @@ all_production:
       value: 78829000
       rank: 1
       percent: 31.85
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 2438000
+      rank: 5
+      percent: 7.08
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
@@ -27,6 +33,12 @@ all_production:
       value: 77637000
       rank: 1
       percent: 30.47
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 3657000
+      rank: 5
+      percent: 6.61
   '2009':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
@@ -34,6 +46,12 @@ all_production:
       value: 72933000
       rank: 1
       percent: 26.67
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 3572000
+      rank: 5
+      percent: 4.83
   '2010':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
@@ -41,6 +59,12 @@ all_production:
       value: 68288000
       rank: 1
       percent: 26.24
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 4745000
+      rank: 5
+      percent: 5.01
   '2011':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
@@ -48,6 +72,12 @@ all_production:
       value: 91818000
       rank: 1
       percent: 28.75
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 6262000
+      rank: 5
+      percent: 5.21
   '2012':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric

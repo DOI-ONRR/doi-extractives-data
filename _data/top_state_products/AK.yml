@@ -97,6 +97,12 @@ all_production:
       value: 3164791
       rank: 2
       percent: 10.71
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 192368000
+      rank: 4
+      percent: 7.52
   '2013':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -104,6 +110,12 @@ all_production:
       value: 3215358
       rank: 3
       percent: 10.89
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 187954000
+      rank: 4
+      percent: 6.47
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -188,6 +200,13 @@ federal_production:
       rank: 1
       percent: 0
 revenue:
+  '2007':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 27143925.6
+      rank: 5
+      percent: 7.72
   '2009':
     - product: Oil & Gas (Non-Royalty)
       name: null
@@ -195,6 +214,26 @@ revenue:
       value: 32081423.62
       rank: 3
       percent: 12.41
+    - product: Gas
+      name: null
+      units: null
+      value: 18853844.91
+      rank: 5
+      percent: 1
+  '2010':
+    - product: Gas
+      name: null
+      units: null
+      value: 12672380.86
+      rank: 5
+      percent: 0.51
+  '2014':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 8057665.15
+      rank: 5
+      percent: 2.71
   '2015':
     - product: Oil & Gas (Non-Royalty)
       name: null

@@ -20,6 +20,20 @@ all_production:
       value: 9000
       rank: 3
       percent: 1.47
+  '2008':
+    - product: Solar
+      name: Solar
+      units: megawatt hours
+      value: 15000
+      rank: 4
+      percent: 1.74
+  '2009':
+    - product: Solar
+      name: Solar
+      units: megawatt hours
+      value: 14000
+      rank: 4
+      percent: 1.57
   '2012':
     - product: Solar
       name: Solar
@@ -34,6 +48,56 @@ all_production:
       value: 2111000
       rank: 2
       percent: 23.37
+revenue:
+  '2006':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4168
+      rank: 4
+      percent: 0.03
+  '2007':
+    - product: Sodium
+      name: null
+      units: null
+      value: 945.67
+      rank: 5
+      percent: 0.01
+  '2009':
+    - product: Potassium
+      name: null
+      units: null
+      value: 1634
+      rank: 3
+      percent: 0.01
+  '2010':
+    - product: Potassium
+      name: null
+      units: null
+      value: 1634
+      rank: 4
+      percent: 0.01
+  '2011':
+    - product: Sodium
+      name: null
+      units: null
+      value: 8975.28
+      rank: 5
+      percent: 0.03
+  '2012':
+    - product: Potassium
+      name: null
+      units: null
+      value: -3268
+      rank: 4
+      percent: null
+  '2013':
+    - product: Sodium
+      name: null
+      units: null
+      value: 4224.65
+      rank: 5
+      percent: 0.01
 federal_production:
   '2006':
     - product: Salt (tons)
@@ -98,11 +162,3 @@ federal_production:
       value: null
       rank: 1
       percent: null
-revenue:
-  '2009':
-    - product: Potassium
-      name: null
-      units: null
-      value: 1634
-      rank: 3
-      percent: 0.01

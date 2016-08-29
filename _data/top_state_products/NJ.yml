@@ -1,16 +1,36 @@
 all_production:
+  '2008':
+    - product: Solar
+      name: Solar
+      units: megawatt hours
+      value: 3000
+      rank: 5
+      percent: 0.35
   '2009':
     - product: Solar
-      value: 11
-      rank: 3
-      percent: 15.942028985507244
-  '2011':
+      name: Solar
+      units: megawatt hours
+      value: 11000
+      rank: 5
+      percent: 1.23
+  '2010':
     - product: Solar
-      value: 69
-      rank: 4
-      percent: 13.663366336633667
+      name: Solar
+      units: megawatt hours
+      value: 21000
+      rank: 5
+      percent: 1.73
   '2012':
     - product: Solar
-      value: 304
-      rank: 2
-      percent: 14.319359397079605
+      name: Solar
+      units: megawatt hours
+      value: 304000
+      rank: 5
+      percent: 7.03
+  '2013':
+    - product: Solar
+      name: Solar
+      units: megawatt hours
+      value: 437000
+      rank: 4
+      percent: 4.84

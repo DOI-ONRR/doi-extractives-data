@@ -1,4 +1,53 @@
 all_production:
+  '2005':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3272000
+      rank: 5
+      percent: 6.03
+  '2006':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3419000
+      rank: 5
+      percent: 6.23
+  '2007':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3415000
+      rank: 5
+      percent: 6.15
+  '2008':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 2782000
+      rank: 5
+      percent: 5.06
+  '2009':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 2825000
+      rank: 5
+      percent: 5.18
+  '2010':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3181000
+      rank: 4
+      percent: 5.67
+  '2011':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3190000
+      rank: 4
+      percent: 5.63
   '2012':
     - product: Biomass (total)
       name: Biomass
@@ -6,3 +55,10 @@ all_production:
       value: 3276000
       rank: 3
       percent: 5.69
+  '2013':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3825000
+      rank: 4
+      percent: 6.29

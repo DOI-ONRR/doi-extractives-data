@@ -1,11 +1,43 @@
 revenue:
   '2009':
-    - product: Gold Placer
-      value: 101.16
-      rank: 1
-      percent: 100
+    - product: Hardrock
+      name: null
+      units: null
+      value: 6635.73
+      rank: 5
+      percent: 0.07
   '2010':
-    - product: Gold Placer
-      value: 22.6
-      rank: 1
-      percent: 100
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3740.99
+      rank: 4
+      percent: 0.03
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3463.7
+      rank: 4
+      percent: 0.02
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 5516.26
+      rank: 4
+      percent: 0.05
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 6731.65
+      rank: 4
+      percent: 0.06
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3329.39
+      rank: 4
+      percent: 0.04

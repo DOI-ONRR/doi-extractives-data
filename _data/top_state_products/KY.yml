@@ -69,6 +69,12 @@ all_production:
       value: 77334723
       rank: 3
       percent: 7.75
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 78737
+      rank: 4
+      percent: 12.42
 federal_production:
   '2006':
     - product: Gas (mcf)

@@ -13,7 +13,7 @@
     </aside>
     <figure>
       <div class="svg-container county map-container wide"{% if __viewbox %}
-        style="padding-bottom: {{ __viewbox | svg__viewbox_padding: _width }}%;"{% endif %}>
+        style="padding-bottom: {{ __viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
         <svg class="county ownership map no-outlines state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>
           <g class="states features">
             <use xlink:href="{{ states_svg }}#states"></use>

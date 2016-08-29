@@ -1,33 +1,69 @@
 .case-studies-circle-group {
-	cursor: pointer;
+  cursor: pointer;
 
-	&:hover,
-	&:focus,
-	&:active {
-		circle {
-			fill: $dark-blue;
-		}
+  &:hover,
+  &:focus,
+  &:active {
+    circle {
+      fill: $dark-blue;
+    }
 
-		svg path {
-			fill: $white;
-			stroke: $white;
-		}
-	}
+    .case-studies-caption {
+      visibility: visible;
+    }
 
-	$circle-radius: 17px;
-	$stroke-width: 2px;
-	$caption-width: 120px;
-	$caption-offset-x: -($caption-width / 2) + $circle-radius + ($stroke-width / 2);
-	$caption-offset-y: $circle-radius + ($stroke-width / 2);
+    svg path {
+      fill: $white;
+      stroke: $white;
+    }
+  }
 
-	rect {
-		background: $white;
-		fill: $white;
-    height: $caption-width / 2;
+  $circle-radius: 17px;
+  $stroke-width: 2px;
+  $caption-width: 205px;
+  $caption-height: 75px;
+  $caption-offset-x: -($caption-width / 2) + $circle-radius;
+  $caption-offset-y: $circle-radius;
+
+
+  .case-studies-caption.boone_logan_mingo {
+
+    $multiplier: 1.05;
+    rect {
+      height: $caption-height * $multiplier;
+      width: $caption-width * $multiplier;
+      $large-caption-offset-x: $caption-offset-x * $multiplier;
+      transform: translate(#{$large-caption-offset-x}, #{$caption-offset-y});
+    }
+  }
+
+  .case-studies-caption {
+    visibility: hidden;
+  }
+
+  rect {
+    background: $white;
+    fill: $white;
+    height: $caption-height;
     stroke: $dark-blue;
     stroke-width: $stroke-width;
-    transform: translate(#{$caption-offset-x}, 0px);
+    transform: translate(#{$caption-offset-x}, #{$caption-offset-y});
     width: $caption-width;
-	}
+  }
+
+  text {
+    @include font-size(0.8);
+
+    fill: $dark-blue;
+    text-anchor: middle;
+    transform: translate(#{$circle-radius}, 55px);
+  }
+
+  a text {
+    @include font-size(1.1);
+  }
+
+
+
 }
 

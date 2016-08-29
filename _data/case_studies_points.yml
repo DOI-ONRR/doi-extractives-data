@@ -2,44 +2,29 @@ coal:
   boone_logan_mingo:
     name: Boone, Logan, and Mingo Counties
     state: West Virginia
-    permalink: /boone-logan-and-mingo/
+    permalink: /case-studies/boone-logan-and-mingo/
     circle:
       'x': 740
       'y': 280
   campbell:
     name: Campbell County
     state: Wyoming
-    permalink: /campbell/
+    permalink: /case-studies/campbell/
     circle:
       'x': 375
       'y': 185
-copper:
-  greenlee:
-    name: Greenlee County
-    state: Arizona
-    permalink: /greenlee/
-    circle:
-      'x': 300
-      'y': 365
-  pima:
-    name: Pima County
-    state: Arizona
-    permalink: /pima/
-    circle:
-      'x': 260
-      'y': 405
 gold:
   elko_eureka:
     name: Elko and Eureka Counties
     state: Nevada
-    permalink: /elko-and-eureka/
+    permalink: /case-studies/elko-and-eureka/
     circle:
       'x': 250
       'y': 235
   humboldt_lander:
     name: Humboldt and Lander Counties
     state: Nevada
-    permalink: /humboldt-and-lander/
+    permalink: /case-studies/humboldt-and-lander/
     circle:
       'x': 190
       'y': 205
@@ -47,14 +32,14 @@ iron:
   marquette:
     name: Marquette County
     state: Michigan
-    permalink: /marquette/
+    permalink: /case-studies/marquette/
     circle:
       'x': 610
       'y': 170
   st_louis:
     name: St. Louis County
     state: Minnesota
-    permalink: /st-louis/
+    permalink: /case-studies/st-louis/
     circle:
       'x': 550
       'y': 140
@@ -62,30 +47,44 @@ gas:
   desoto:
     name: DeSoto Parish
     state: Louisiana
-    permalink: /desoto/
+    permalink: /case-studies/desoto/
     circle:
       'x': 550
       'y': 435
   tarrant_johnson:
     name: Tarrant and Johnson Counties
     state: Texas
-    permalink: /tarrant-and-johnson/
+    permalink: /case-studies/tarrant-and-johnson/
     circle:
       'x': 490
-      'y': 420
+      'y': 415
 oil:
   kern:
     name: Kern County
     state: California
-    permalink: /kern/
+    permalink: /case-studies/kern/
     circle:
       'x': 170
-      'y': 315
+      'y': 310
   north_slope:
     name: North Slope Borough
-    permalink: /north-slope/
+    permalink: /case-studies/north-slope/
     state: Alaska
     circle:
       'x': 185
       'y': 465
-
+copper:
+  pima:
+    name: Pima County
+    state: Arizona
+    permalink: /case-studies/pima/
+    circle:
+      'x': 260
+      'y': 405
+  greenlee:
+    name: Greenlee County
+    state: Arizona
+    permalink: /case-studies/greenlee/
+    circle:
+      'x': 300
+      'y': 365

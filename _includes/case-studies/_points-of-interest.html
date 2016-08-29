@@ -1,5 +1,7 @@
 {% assign case_studies_points = site.data.case_studies_points %}
 {% assign circle_radius = 17 %}
+{% assign caption_height = 75 %}
+{% assign caption_width = 205 %}
 {% assign commodities = 'oil,copper,gas,iron,gold,coal' | split:',' %}
 {% assign dark_blue = '#4b9bbf' %}
 
@@ -17,7 +19,11 @@
       <g class="case-studies-circle-group">
         <g class="case-studies-caption {{ point_id }}">
           <a xlink:href="{{ point_permalink | prepend:site.baseurl }}">
-            <rect x="{{ x_offset }}" y="{{ y_offset }}"></rect>
+            {% if point_id == 'boone_logan_mingo' %}
+              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.05 }}" height="{{ caption_height  | times:1.05 }}"></rect>
+            {% else %}
+              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
+            {% endif %}
             <text x="{{ x_offset }}" y="{{ y_offset }}">{{ commodity | capitalize }} in {{ point_state }}</text>
           </a>
           <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">{{ point_name }}</text>

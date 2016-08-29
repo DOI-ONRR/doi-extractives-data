@@ -60,18 +60,13 @@
 
         {% if revenue_commodities %}
           {% assign empty_years = '' | split:'' %}
-          {% for y in year_list %}
-            {% assign s_y = y | to_s %}
-            {% for _commodity in revenue_commodities %}
-              {% unless _commodity[1][s_y].size %}
-                {% if _commodity[0] != "All" %}
-                  {% assign empty_years = empty_years | push:s_y %}
-                {% endif %}
-              {% endunless %}
-            {% endfor %}
+          {% for _year in year_list %}
+            {% assign _year_string = _year | to_s %}
+            {% unless revenue_commodities.All[_year_string].revenue %}
+              {% assign empty_years = empty_years | push: _year_string %}
+            {% endunless %}
           {% endfor %}
 
-          {% assign empty_years = empty_years | join:',' %}
           {% include year-selector.html year_range=year_range empty_years=empty_years %}
         {% endif %}
 

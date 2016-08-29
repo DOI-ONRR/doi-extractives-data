@@ -31,13 +31,13 @@
     {% endif %}
 
     <!-- url -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.meta_url }}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.meta_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <!-- img -->
-    <meta property="og:img" content="{{ site.meta_url }}/img/explore-home-revenue.png">
+    <meta property="og:img" content="{{ site.url }}/img/explore-home-revenue.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.meta_url }}/img/explore-home-revenue.png">
+    <meta name="twitter:image" content="{{ site.url }}/img/explore-home-revenue.png">
 
     <!-- description -->
     <meta property="og:description" content="{{ site.description }}">

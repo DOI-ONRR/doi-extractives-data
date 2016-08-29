@@ -8,4 +8,3 @@ gem 'scss_lint', require: false
 gem 'html-proofer'
 gem 'rubocop'
 gem 'rubydoctest'
-gem 'jekyll-redirect-from'

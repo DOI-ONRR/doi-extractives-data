@@ -13,8 +13,8 @@ state_land_production: |
     * 1,505,356 barrels of crude oil
     * 3,561 million cubic feet of natural gas
     * 4,465,582 short tons of coal
-    
-    For details about natural resource extraction on state-owned land, see annual reports produced by the [Mineral Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management). 
+
+    For details about natural resource extraction on state-owned land, see annual reports produced by the [Mineral Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management).
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
 state_revenue_sustainability: |
@@ -80,8 +80,8 @@ In addition to generating revenue, extractive industries can bring costs to stat
 
 The USEITI {{ term | "Multi-Stakeholder Group" }} prioritized four types of fiscal costs in the 2015 USEITI report:
 
-* **Transportation:** The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.  
-  
+* **Transportation:** The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.
+
   To read more, see the [Montana Department of Transportation report (PDF)](http://www.mdt.mt.gov/other/webdata/external/research/docs/research_proj/oil_boom/summary_mdt_efforts.pdf) on efforts to respond to impacts on the state highway system from oil exploration and production in eastern Montana.
 
 * **Water:** Surveyed communities in eastern Montana reported that water rates increased an average of 86.4% from 2011 to 2014 and sewage rates increased 302.9%. The Eastern Montana Impact Coalition also estimates that $33.8 million to $80.6 million will be needed for incremental improvements to support growing demand on water, sewage, and transportation systems. These figures don’t include large projects.

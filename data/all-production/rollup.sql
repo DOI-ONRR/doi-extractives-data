@@ -1,99 +1,92 @@
--- our regional production view combines all of the commodity-specific
--- tables into one
-DROP TABLE IF EXISTS all_regional_production;
-CREATE TABLE all_regional_production AS
-    SELECT
-        year, states.abbr AS region,
-        'Coal' AS commodity,
-        'Coal (short tons)' AS product,
-        'Coal' AS product_name,
-        'short tons' AS units,
-        SUM(volume) AS volume
-    FROM all_production_coal
-    INNER JOIN states ON
-        states.name LIKE (all_production_coal.state || '%')
-    GROUP BY
-        year, region
-UNION
-    SELECT
-        year, region,
-        'Gas' AS commodity,
-        'Natural Gas (mcf)' AS product,
-        'Natural Gas' AS product_name,
-        'mcf' AS units,
-        volume
-    FROM all_production_naturalgas
-UNION
-    SELECT
-        year, states.abbr AS region,
-        'Renewables' AS commodity,
-        source AS product,
-        CASE
-            WHEN LOWER(source) == 'biomass (total)'
-            THEN 'Biomass'
-            ELSE source
-            END AS product_name,
-        'megawatt hours' AS units,
-        volume * 1000 AS volume
-    FROM all_production_renewables
-    INNER JOIN states ON
-        states.name = state
+-- normalize million units
+UPDATE all_production
+    SET
+        volume = volume * 1000,
+        units = 'Mcf'
     WHERE
-        LOWER(source) != 'wood and wood-derived fuels' AND
-        LOWER(source) != 'other biomass' AND
-        LOWER(source) != 'all other renewables'
-UNION
+        LOWER(units) = 'mmcf';
+
+UPDATE all_production
+    SET
+        volume = volume * 1000,
+        units = 'bbl'
+    WHERE
+        LOWER(units) = 'mbbl';
+
+UPDATE all_production
+    SET
+        volume = volume * 1000,
+        units = 'Mwh'
+    WHERE
+        LOWER(units) = 'mmwh';
+
+UPDATE all_production
+    SET
+        volume = volume * 1000,
+        units = 'Mwh'
+    WHERE
+        LOWER(units) = 'thousand megawatthours';
+
+DROP TABLE IF EXISTS all_state_production;
+CREATE TABLE all_state_production AS
     SELECT
-        year, region,
-        'Oil' AS commodity,
-        'Oil (bbl)' AS product,
-        'Oil' AS product_name,
-        'bbl' AS units,
-        volume * 1000 AS volume
-    FROM all_production_oil;
+        input.*,
+        states.name AS region_name,
+        region AS region_id
+    FROM all_production AS input
+    INNER JOIN states ON
+        states.abbr = input.region;
 
 DROP TABLE IF EXISTS all_national_production;
 CREATE TABLE all_national_production AS
     SELECT
-        year, commodity, product, product_name, units,
-        SUM(volume) AS volume
-    FROM all_regional_production
-    GROUP BY
-        year, commodity, product, product_name, units;
+        *,
+        'United States' AS region_name,
+        region AS region_id
+    FROM all_production
+    WHERE region = 'US';
+
+DROP TABLE IF EXISTS all_offshore_production;
+CREATE TABLE all_offshore_production AS
+    SELECT
+        input.*,
+        input.region AS region_name,
+        region.id AS region_id
+    FROM all_production AS input
+    INNER JOIN offshore_regions AS region ON
+        region.name = input.region;
 
 -- create state rankings views
 DROP TABLE IF EXISTS all_production_state_rank;
 CREATE TABLE all_production_state_rank AS
     SELECT
-        state.year AS year,
-        state.region AS state,
-        state.product AS product,
-        state.product_name AS product_name,
-        state.units AS units,
-        state.volume AS volume,
+        st.year AS year,
+        st.region AS state,
+        st.product AS product,
+        st.units AS units,
+        st.volume AS volume,
         national.volume AS total,
         -- these numbers are both integers, so we need to explicitly cast one
         -- of them as a float in order to get a float back (because an integer
         -- divided by an integer always returns an integer)
         100 * (
-            CAST(state.volume AS FLOAT) /
+            CAST(st.volume AS FLOAT) /
             national.volume
         ) AS percent,
         0 AS rank
     FROM
-        all_regional_production AS state
+        all_state_production AS st
     INNER JOIN
         all_national_production AS national
     ON
-        national.year = state.year AND
-        national.product = state.product
+        national.year = st.year AND
+        national.product = st.product
     WHERE
-        state.volume IS NOT NULL AND
-        LENGTH(state.region) = 2 AND
+        st.volume IS NOT NULL AND
         national.volume IS NOT NULL
     ORDER BY
-        state.year,
-        state.product,
+        st.year,
+        st.product,
         percent DESC;
 
 UPDATE all_production_state_rank

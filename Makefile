@@ -61,7 +61,7 @@ data/state_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, year, \
-		  product, product_name, units, \
+		  product, units, \
 		  ROUND(volume) AS volume, \
 		  ROUND(percent, 2) AS percent, \
 		  rank \
@@ -76,7 +76,7 @@ data/national_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  year, \
-		  product, product_name, units, \
+		  product, units, \
 		  ROUND(volume) AS volume \
 		FROM all_national_production \
 		ORDER BY \
@@ -513,11 +513,16 @@ $(db): \
 
 tables/geo: \
 	tables/states \
+	tables/offshore_regions \
 	tables/offshore_planning_areas
 
 tables/states: data/_input/geo/states.csv
 	@$(call drop-table,states)
 	$(call load-table,$^,states)
+
+tables/offshore_regions: data/_input/geo/offshore/regions.tsv
+	@$(call drop-table,offshore_regions)
+	$(call load-table,$^,offshore_regions)
 
 tables/offshore_planning_areas: data/_input/geo/offshore/areas.tsv
 	@$(call drop-table,offshore_planning_areas)
@@ -556,43 +561,15 @@ tables/federal_offshore_production: data/federal-production/offshore.tsv
 	$(tables) -t ndjson -n federal_offshore_production -i $$tmp && \
 	rm $$tmp
 
-tables/all-production: \
-	tables/all_production_coal \
-	tables/all_production_oil \
-	tables/all_production_naturalgas \
-	tables/all_production_renewables
-	@$(call load-sql,data/all-production/rollup.sql)
-
-tables/all_production_coal: data/all-production/input/coal-????.tsv
-	@$(call drop-table,all_production_coal)
-	tmp=data/all-production/input/coal-all.ndjson; \
-	for filename in $^; do \
-		$(tito) --map ./data/all-production/transform-coal.js -r tsv $$filename >> $$tmp; \
+tables/all-production: data/all-production/product
+	@$(call drop-table,all_production)
+	tmp=$^/all.ndjson; \
+	for tsv in $^/*.tsv; do \
+		$(tito) -r tsv $$tsv >> $$tmp; \
 	done; \
-	$(tables) -t ndjson -n all_production_coal -i $$tmp; \
+	$(tables) -t ndjson -n all_production -i $$tmp && \
 	rm $$tmp
-
-tables/all_production_oil: data/all-production/input/oil.tsv
-	@$(call drop-table,all_production_oil)
-	$(tito) -r tsv --multiple --map ./data/transform/all_production_oil.js $^ \
-		| $(tables) -t ndjson -n all_production_oil
-
-tables/all_production_naturalgas:
-	@$(call drop-table,all_production_naturalgas)
-	$(tito) -r tsv data/all-production/input/naturalgas.tsv \
-		--multiple --map ./data/transform/all_production_naturalgas.js \
-		| $(tables) -t ndjson -n all_production_naturalgas
-	$(tito) -r tsv data/all-production/input/naturalgas2.tsv \
-		--multiple --map ./data/transform/all_production_naturalgas2.js \
-		| $(tables) -t ndjson -n all_production_naturalgas
-
-tables/all_production_renewables: data/all-production/input/renewables.tsv
-	@$(call drop-table,all_production_renewables)
-	renewables_tmp=data/all-production/input/renewables.ndjson; \
-	$(tito) --multiple --map ./data/transform/all_production_renewables.js -r tsv $^ \
-		> $$renewables_tmp; \
-	$(tables) -t ndjson -n all_production_renewables -i $$renewables_tmp; \
-	rm $$renewables_tmp
+	@$(call load-sql,data/all-production/rollup.sql)
 
 tables/company_revenue: data/_input/onrr/company-revenue
 	@$(call drop-table,company_revenue)

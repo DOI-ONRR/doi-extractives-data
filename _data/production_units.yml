@@ -22,6 +22,10 @@ gal:
 kilowatt hours:
   short: kWh
   long: kilowatt hours
+mwh:
+  short: Mwh
+  long: megawatt hours
+  suffix: energy
 megawatt hours:
   short: Mwh
   long: megawatt hours

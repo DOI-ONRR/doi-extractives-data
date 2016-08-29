@@ -2,6 +2,7 @@
   {% assign _year_list = include.year_range | to_list %}
 
   <select class="chart-selector">
+    {% if include.empty_years %}<!-- empty years: {{ include.empty_years | jsonify }} -->{% endif %}
     {% for _year in _year_list %}
       {% assign __year = year | to_i %}
       {% assign s_year = _year | to_s %}

@@ -3,22 +3,27 @@
 {% assign commodities = 'coal,copper,oil,gas,iron,gold' | split:',' %}
 {% assign dark_blue = '#4b9bbf' %}
 
-<g>
+<g class="case-studies-points">
   {% for commodity in commodities %}
     {% for point in case_studies_points[commodity] %}
       {% assign point_name = point[1].name %}
       {% assign point_state = point[1].state %}
+      {% assign point_permalink = point[1].permalink %}
       {% assign coords = point[1].circle %}
       {% assign x_offset = coords.x | minus: circle_radius %}
       {% assign y_offset = coords.y | minus: circle_radius %}
 
       <g class="case-studies-circle-group">
-
+        <g>
+          <rect x="{{ x_offset }}" y="{{ y_offset }}">
+          <a xlink:href="{{ site.baseurl }}{{ point_permalink }}">
+            <text>{{ commodity | capitalize }} in {{ point_state }}</text>
+          </a>
+          </rect>
+        </g>
         <circle class="{{ point_state }} {{ commodity }}" cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="{{ dark_blue }}" stroke-width="2px"></circle>
         {% include svg/circle-icon-{{ commodity }}.svg x=x_offset y=y_offset %}
-        <g>
-          <rect></rect>
-        </g>
+
       </g>
     {% endfor %}
   {% endfor %}

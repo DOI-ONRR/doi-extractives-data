@@ -13,4 +13,21 @@
 			stroke: $white;
 		}
 	}
+
+	$circle-radius: 17px;
+	$stroke-width: 2px;
+	$caption-width: 120px;
+	$caption-offset-x: -($caption-width / 2) + $circle-radius + ($stroke-width / 2);
+	$caption-offset-y: $circle-radius + ($stroke-width / 2);
+
+	rect {
+		background: $white;
+		fill: $white;
+    height: $caption-width / 2;
+    stroke: $dark-blue;
+    stroke-width: $stroke-width;
+    transform: translate(#{$caption-offset-x}, 0px);
+    width: $caption-width;
+	}
 }
+

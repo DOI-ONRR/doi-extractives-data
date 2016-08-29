@@ -6,7 +6,7 @@ description: >
     manages extractive industries.
 
 # permanent url, for use in meta references
-url: https://useiti.doi.gov
+meta_url: https://useiti.doi.gov
 
 # app version number
 version: v1.3.4
@@ -16,6 +16,9 @@ beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
 sass:
   style: nested
   sass_dir: _sass
+
+gems:
+  - jekyll-redirect-from
 
 exclude:
   # top-level log and markdown files

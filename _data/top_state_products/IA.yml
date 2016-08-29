@@ -20,6 +20,13 @@ all_production:
       value: 2757000
       rank: 3
       percent: 8
+  '2008':
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 4084000
+      rank: 4
+      percent: 7.38
   '2009':
     - product: Wind
       name: Wind

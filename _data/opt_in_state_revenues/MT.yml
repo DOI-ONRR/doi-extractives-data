@@ -56,7 +56,7 @@ streams:
       '2014': 272106
     Coal & Uranium Program:
       '2014': 250000
-    Water Storage Special Revenue Account (each 2 years):
+    Water Storage Special Revenue Account:
       '2014': 150000
     Public Buildings:
       '2014': 66684
@@ -256,7 +256,7 @@ streams:
       '2014': 366000
     CERCLA Debt Service:
       '2014': 272106
-    Water Storage Special Revenue Account (each 2 years):
+    Water Storage Special Revenue Account:
       '2014': 150000
   Gas Royalty:
     Total:
@@ -634,7 +634,7 @@ funds:
       '2014': 250000
     All:
       '2014': 250000
-  Water Storage Special Revenue Account (each 2 years):
+  Water Storage Special Revenue Account:
     Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
       '2014': 150000
     All:

@@ -433,7 +433,7 @@ data/offshore_revenue_areas:
 
 data/top_state_products:
 	# top N states for each product category in each year
-	top=3 percent=20; \
+	top=5 percent=20; \
 	$(query) --format ndjson " \
 		SELECT \
 		  state, commodity AS product, \
@@ -443,7 +443,7 @@ data/top_state_products:
 		  revenue AS order_value, \
 		  'revenue' AS category \
 		FROM state_revenue_rank \
-		WHERE rank <= $${top} OR percent >= $${percent} \
+		WHERE rank <= $${top} \
 	UNION \
 		SELECT \
 		  state, product, \
@@ -453,7 +453,7 @@ data/top_state_products:
 		  (100 - rank) AS order_value, \
 		  'federal_production' AS category \
 		FROM federal_production_state_rank \
-		WHERE (rank <= $${top} OR percent >= $${percent}) \
+		WHERE (rank <= $${top}) \
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
@@ -464,7 +464,7 @@ data/top_state_products:
 		  (100 - rank) AS order_value, \
 		  'all_production' AS category \
 		FROM all_production_state_rank \
-		WHERE (rank <= $${top} OR percent >= $${percent}) \
+		WHERE (rank <= $${top}) \
 			AND year > 2004 \
 	ORDER BY state, year, order_value DESC, percent DESC" \
 		| $(nestly) --if ndjson \

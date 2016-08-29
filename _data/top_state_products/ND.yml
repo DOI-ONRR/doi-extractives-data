@@ -1,3 +1,206 @@
+revenue:
+  '2006':
+    - product: Oil
+      name: null
+      units: null
+      value: 43951093.81
+      rank: 5
+      percent: 1.03
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 16425256.45
+      rank: 5
+      percent: 4.37
+    - product: Sulfur
+      name: null
+      units: null
+      value: 91.57
+      rank: 4
+      percent: 0.48
+  '2007':
+    - product: Oil
+      name: null
+      units: null
+      value: 53193591.04
+      rank: 5
+      percent: 1.21
+    - product: Sulfur
+      name: null
+      units: null
+      value: 0.82
+      rank: 4
+      percent: 0
+  '2008':
+    - product: Oil
+      name: null
+      units: null
+      value: 82206235.71
+      rank: 5
+      percent: 1.41
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 29501284.47
+      rank: 4
+      percent: 6.42
+  '2009':
+    - product: All
+      name: null
+      units: null
+      value: 141601297.21
+      rank: 5
+      percent: 1.8
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 94899390.71
+      rank: 1
+      percent: 36.71
+    - product: Oil
+      name: null
+      units: null
+      value: 42545251.51
+      rank: 5
+      percent: 1.44
+    - product: Hardrock
+      name: null
+      units: null
+      value: 16815
+      rank: 4
+      percent: 0.18
+    - product: Sulfur
+      name: null
+      units: null
+      value: 0.01
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Oil
+      name: null
+      units: null
+      value: 65531431.4
+      rank: 5
+      percent: 1.28
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 29222074.56
+      rank: 5
+      percent: 11.02
+  '2011':
+    - product: All
+      name: null
+      units: null
+      value: 215346128.51
+      rank: 5
+      percent: 1.95
+    - product: Oil
+      name: null
+      units: null
+      value: 104578084
+      rank: 5
+      percent: 1.63
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 103702962.35
+      rank: 2
+      percent: 26.8
+  '2012':
+    - product: Oil
+      name: null
+      units: null
+      value: 138452652.79
+      rank: 4
+      percent: 2.09
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 48768414.01
+      rank: 4
+      percent: 14.84
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1363
+      rank: 5
+      percent: 0.01
+  '2013':
+    - product: All
+      name: null
+      units: null
+      value: 256586472.84
+      rank: 5
+      percent: 2.09
+    - product: Oil
+      name: null
+      units: null
+      value: 180649260.32
+      rank: 4
+      percent: 2.57
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 63976335.46
+      rank: 2
+      percent: 24.65
+    - product: NGL
+      name: null
+      units: null
+      value: 2172657.75
+      rank: 5
+      percent: 0.55
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1392.58
+      rank: 4
+      percent: 0.01
+  '2014':
+    - product: All
+      name: null
+      units: null
+      value: 250076568.03
+      rank: 5
+      percent: 5.17
+    - product: Oil
+      name: null
+      units: null
+      value: 205994943.62
+      rank: 3
+      percent: 12.3
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 27746136.27
+      rank: 3
+      percent: 9.33
+    - product: NGL
+      name: null
+      units: null
+      value: 3203068.52
+      rank: 5
+      percent: 1.1
+  '2015':
+    - product: All
+      name: null
+      units: null
+      value: 152438279.14
+      rank: 5
+      percent: 4.61
+    - product: Oil
+      name: null
+      units: null
+      value: 135319895.24
+      rank: 3
+      percent: 12.7
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 2609429.44
+      rank: 5
+      percent: 3.11
 federal_production:
   '2006':
     - product: Coal (tons)
@@ -90,6 +293,12 @@ federal_production:
       value: 18278079
       rank: 1
       percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 16364277
+      rank: 5
+      percent: 1.55
   '2013':
     - product: Coal (tons)
       name: Coal
@@ -103,6 +312,12 @@ federal_production:
       value: 21893167
       rank: 1
       percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 18234600
+      rank: 5
+      percent: 1.72
   '2014':
     - product: Coal (tons)
       name: Coal
@@ -141,55 +356,28 @@ federal_production:
       value: 25365148
       rank: 1
       percent: 0
-revenue:
-  '2009':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 94899390.71
-      rank: 1
-      percent: 36.71
-    - product: Sulfur
-      name: null
-      units: null
-      value: 0.01
-      rank: 3
-      percent: 0
-  '2011':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 103702962.35
-      rank: 2
-      percent: 26.8
-  '2013':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 63976335.46
-      rank: 2
-      percent: 24.65
-  '2014':
-    - product: Oil
-      name: null
-      units: null
-      value: 205994943.62
-      rank: 3
-      percent: 12.3
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 27746136.27
-      rank: 3
-      percent: 9.33
-  '2015':
-    - product: Oil
-      name: null
-      units: null
-      value: 135319895.24
-      rank: 3
-      percent: 12.7
 all_production:
+  '2009':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 79728000
+      rank: 4
+      percent: 3.65
+  '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 113064000
+      rank: 4
+      percent: 5.11
+  '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 153015000
+      rank: 4
+      percent: 6.77
   '2012':
     - product: Oil (bbl)
       name: Oil

@@ -48,6 +48,13 @@ all_production:
       value: 3788000
       rank: 3
       percent: 6.68
+  '2012':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3212000
+      rank: 4
+      percent: 5.57
   '2013':
     - product: Biomass (total)
       name: Biomass

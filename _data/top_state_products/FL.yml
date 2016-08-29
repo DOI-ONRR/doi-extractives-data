@@ -54,6 +54,12 @@ all_production:
       value: 4544000
       rank: 2
       percent: 8.02
+    - product: Solar
+      name: Solar
+      units: megawatt hours
+      value: 126000
+      rank: 4
+      percent: 6.93
   '2012':
     - product: Biomass (total)
       name: Biomass
@@ -69,6 +75,13 @@ all_production:
       rank: 2
       percent: 7.31
 revenue:
+  '2006':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 1398.1
+      rank: 4
+      percent: 0.06
   '2007':
     - product: Phosphate
       name: null
@@ -76,6 +89,13 @@ revenue:
       value: 1832.26
       rank: 3
       percent: 0.08
+  '2008':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 2960.82
+      rank: 4
+      percent: 0.11
   '2009':
     - product: Phosphate
       name: null
@@ -111,6 +131,13 @@ revenue:
       value: 286720.37
       rank: 2
       percent: 2.8
+  '2014':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 1980.51
+      rank: 4
+      percent: 0.02
   '2015':
     - product: Phosphate
       name: null

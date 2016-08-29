@@ -18,6 +18,12 @@ all_production:
       value: 4237000
       rank: 2
       percent: 23.79
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45938679
+      rank: 5
+      percent: 4.06
   '2006':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -37,6 +43,12 @@ all_production:
       value: 392481000
       rank: 1
       percent: 18.51
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45547617
+      rank: 5
+      percent: 3.92
   '2007':
     - product: Natural Gas (mcf)
       name: Natural Gas
@@ -132,6 +144,12 @@ all_production:
       value: 528844000
       rank: 1
       percent: 23.41
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45903597
+      rank: 5
+      percent: 4.2
   '2012':
     - product: Oil (bbl)
       name: Oil
@@ -254,6 +272,13 @@ federal_production:
       rank: 1
       percent: 0
 revenue:
+  '2009':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 13481503.5
+      rank: 5
+      percent: 5.21
   '2010':
     - product: Oil & Gas (Non-Royalty)
       name: null
@@ -261,3 +286,44 @@ revenue:
       value: 43706522.92
       rank: 2
       percent: 16.48
+  '2011':
+    - product: Gas
+      name: null
+      units: null
+      value: 18232886.41
+      rank: 5
+      percent: 0.83
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 17502176.64
+      rank: 4
+      percent: 4.52
+  '2012':
+    - product: Gas
+      name: null
+      units: null
+      value: 20373295.77
+      rank: 5
+      percent: 1.57
+  '2013':
+    - product: Gas
+      name: null
+      units: null
+      value: 20999759.72
+      rank: 5
+      percent: 1.33
+  '2014':
+    - product: Gas
+      name: null
+      units: null
+      value: 24654653.07
+      rank: 5
+      percent: 2.04
+  '2015':
+    - product: Gas
+      name: null
+      units: null
+      value: 10575021.83
+      rank: 5
+      percent: 1.37

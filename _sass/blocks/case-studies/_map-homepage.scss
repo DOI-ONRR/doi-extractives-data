@@ -25,19 +25,19 @@
   $caption-offset-y: $circle-radius;
 
 
-  .case-studies-caption.boone_logan_mingo {
-
-    $multiplier: 1.05;
-    rect {
-      height: $caption-height * $multiplier;
-      width: $caption-width * $multiplier;
-      $large-caption-offset-x: $caption-offset-x * $multiplier;
-      transform: translate(#{$large-caption-offset-x}, #{$caption-offset-y});
-    }
-  }
-
   .case-studies-caption {
     visibility: hidden;
+
+    &.boone_logan_mingo {
+      $multiplier: 1.05;
+      $large-caption-offset-x: $caption-offset-x * $multiplier;
+
+      rect {
+        height: $caption-height * $multiplier;
+        transform: translate(#{$large-caption-offset-x}, #{$caption-offset-y});
+        width: $caption-width * $multiplier;
+      }
+    }
   }
 
   rect {

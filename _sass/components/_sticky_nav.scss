@@ -12,13 +12,17 @@
   }
 
   ul a {
-    text-decoration: none;
+      text-decoration: none;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
-  }
+  
+  nav > ul:first-of-type {
+    padding-left: 0;
+  } 
 }
 
 .sticky_nav-nav_item {

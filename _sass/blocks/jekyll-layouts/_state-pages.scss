@@ -52,14 +52,6 @@
     margin-top: $standard-padding;
   }
 
-  p {
-    @include heading('para-lg');
-  }
-
-  ul {
-    @include heading('para-lg');
-  }
-
   figure {
     margin: 0;
   }

@@ -26,6 +26,18 @@ state_impact: |
 
 ### State agencies
 
+Wyoming state agencies manage state-owned land and natural resources; enforce rules and regulations associated with extraction; and collect, manage and distribute revenue from the extractive industries. 
+
+Wyoming state agencies regulate extraction and interact with industry across the five stages of extraction in Wyoming, particularly on state and private lands. On federal lands, state agencies will be involved, but to a lesser extent, as federal agencies hold primary responsibility for regulating extraction. To learn how extraction occurs on federal land, see the federal “How it Works” section for more information.
+
+The [Wyoming Department of Revenue](http://revenue.wyo.gov/) assesses, collects, manages, and distributes the majority of extractives revenues in Wyoming. Importantly, county governments directly collect ad valorem taxes related to extraction. 
+
+The [Wyoming Oil & Gas Conservation Commission](http://wogcc.state.wy.us/) manages permitting, inspection, and regulation of oil and gas wells and development in Wyoming.  
+
+The [Wyoming Office of State Lands and Investments](http://lands.wyo.gov/home) manages Wyoming’s state trust lands, including planning, permitting, and compliance efforts related to oil, natural gas, coal, and hard rock mining. 
+
+The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) leads Wyoming’s monitoring, permitting, enforcement, remediation, and restoration activities to conserve the environment and support responsible stewardship of Wyoming’s resources.
+
 * [Wyoming Office of State Lands and Investments](https://sites.google.com/a/wyo.gov/osli/home) manages resource extraction on state land held in public trust. Revenue from energy and mineral resource leasing helps fund public education and essential institutions in the state.
   - [Mining and oil and gas leasing and royalties information](https://sites.google.com/a/wyo.gov/osli/minerals/royalty)
 * [Wyoming rules and regulations search](http://soswy.state.wy.us/Rules/default.aspx)

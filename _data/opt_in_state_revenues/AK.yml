@@ -1,137 +1,137 @@
 streams:
   All:
     Total:
-      '2014': 2568248185.94
+      '2015': 2568248185.94
     General Fund:
-      '2014': 1743439860.17
+      '2015': 1743439860.17
     Alaska Permanent Fund:
-      '2014': 510400000
+      '2015': 510400000
     Constitutional Budget Reserve Fund:
-      '2014': 297308325.77
+      '2015': 297308325.77
     Other Restricted:
-      '2014': 9200000
+      '2015': 9200000
     Public School Trust Fund:
-      '2014': 7900000
+      '2015': 7900000
   'Royalties, Rents and Bonuses':
     Total:
-      '2014': 1745500000
+      '2015': 1745500000
     General Fund:
-      '2014': 1078200000
+      '2015': 1078200000
     Alaska Permanent Fund:
-      '2014': 510400000
+      '2015': 510400000
     Constitutional Budget Reserve Fund:
-      '2014': 149000000
+      '2015': 149000000
     Public School Trust Fund:
-      '2014': 7900000
+      '2015': 7900000
   Oil & Gas Production Tax:
     Total:
-      '2014': 515859407.6
+      '2015': 515859407.6
     General Fund:
-      '2014': 381552649.8
+      '2015': 381552649.8
     Constitutional Budget Reserve Fund:
-      '2014': 134306757.8
+      '2015': 134306757.8
   Oil & Gas Property Tax:
     Total:
-      '2014': 125194433.9
+      '2015': 125194433.9
     General Fund:
-      '2014': 125185585.2
+      '2015': 125185585.2
     Constitutional Budget Reserve Fund:
-      '2014': 8848.7
+      '2015': 8848.7
   Petroleum Corporate Income Tax:
     Total:
-      '2014': 108689221.41
+      '2015': 108689221.41
     General Fund:
-      '2014': 94767024.78
+      '2015': 94767024.78
     Constitutional Budget Reserve Fund:
-      '2014': 13922196.63
+      '2015': 13922196.63
   Mining License Tax:
     Total:
-      '2014': 38655178.64
+      '2015': 38655178.64
     General Fund:
-      '2014': 38584656
+      '2015': 38584656
     Constitutional Budget Reserve Fund:
-      '2014': 70522.64
+      '2015': 70522.64
   Mining Rents and Royalties:
     Total:
-      '2014': 23000000
+      '2015': 23000000
     General Fund:
-      '2014': 17000000
+      '2015': 17000000
     Other Restricted:
-      '2014': 6000000
+      '2015': 6000000
   Oil & Gas Conservation Surcharge:
     Total:
-      '2014': 8149944.39
+      '2015': 8149944.39
     General Fund:
-      '2014': 8149944.39
+      '2015': 8149944.39
   'Federal Royalties, Rents and Bonuses':
     Total:
-      '2014': 3200000
+      '2015': 3200000
     Other Restricted:
-      '2014': 3200000
+      '2015': 3200000
 funds:
   Total:
     All:
-      '2014': 2568248185.94
+      '2015': 2568248185.94
     'Royalties, Rents and Bonuses':
-      '2014': 1745500000
+      '2015': 1745500000
     Oil & Gas Production Tax:
-      '2014': 515859407.6
+      '2015': 515859407.6
     Oil & Gas Property Tax:
-      '2014': 125194433.9
+      '2015': 125194433.9
     Petroleum Corporate Income Tax:
-      '2014': 108689221.41
+      '2015': 108689221.41
     Mining License Tax:
-      '2014': 38655178.64
+      '2015': 38655178.64
     Mining Rents and Royalties:
-      '2014': 23000000
+      '2015': 23000000
     Oil & Gas Conservation Surcharge:
-      '2014': 8149944.39
+      '2015': 8149944.39
     'Federal Royalties, Rents and Bonuses':
-      '2014': 3200000
+      '2015': 3200000
   General Fund:
     All:
-      '2014': 1743439860.17
+      '2015': 1743439860.17
     'Royalties, Rents and Bonuses':
-      '2014': 1078200000
+      '2015': 1078200000
     Oil & Gas Production Tax:
-      '2014': 381552649.8
+      '2015': 381552649.8
     Oil & Gas Property Tax:
-      '2014': 125185585.2
+      '2015': 125185585.2
     Petroleum Corporate Income Tax:
-      '2014': 94767024.78
+      '2015': 94767024.78
     Mining License Tax:
-      '2014': 38584656
+      '2015': 38584656
     Mining Rents and Royalties:
-      '2014': 17000000
+      '2015': 17000000
     Oil & Gas Conservation Surcharge:
-      '2014': 8149944.39
+      '2015': 8149944.39
   Alaska Permanent Fund:
     'Royalties, Rents and Bonuses':
-      '2014': 510400000
+      '2015': 510400000
     All:
-      '2014': 510400000
+      '2015': 510400000
   Constitutional Budget Reserve Fund:
     All:
-      '2014': 297308325.77
+      '2015': 297308325.77
     'Royalties, Rents and Bonuses':
-      '2014': 149000000
+      '2015': 149000000
     Oil & Gas Production Tax:
-      '2014': 134306757.8
+      '2015': 134306757.8
     Petroleum Corporate Income Tax:
-      '2014': 13922196.63
+      '2015': 13922196.63
     Mining License Tax:
-      '2014': 70522.64
+      '2015': 70522.64
     Oil & Gas Property Tax:
-      '2014': 8848.7
+      '2015': 8848.7
   Other Restricted:
     All:
-      '2014': 9200000
+      '2015': 9200000
     Mining Rents and Royalties:
-      '2014': 6000000
+      '2015': 6000000
     'Federal Royalties, Rents and Bonuses':
-      '2014': 3200000
+      '2015': 3200000
   Public School Trust Fund:
     'Royalties, Rents and Bonuses':
-      '2014': 7900000
+      '2015': 7900000
     All:
-      '2014': 7900000
+      '2015': 7900000

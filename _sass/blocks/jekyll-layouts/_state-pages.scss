@@ -16,10 +16,6 @@
     border-bottom: 20px solid $light-green;
     padding-bottom: $standard-padding-lite;
   }
-  
-  h2 + p {
-    @include heading('para-lg');
-  }
 
   h3:not(.chart-title):not(.state-page-nav-title),
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {

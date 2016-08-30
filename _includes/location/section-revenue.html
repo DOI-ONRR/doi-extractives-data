@@ -72,11 +72,19 @@
 
         {% if revenue_commodities %}
           <p class="chart-description">
-            In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. 
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
           </p>
         {% else %}
           <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
-            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. 
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+            </a>
           </p>
         {% endif %}
       </div>

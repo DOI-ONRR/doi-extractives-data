@@ -19,6 +19,11 @@
       text-decoration: underline;
     }
   }
+
+  nav > ul:first-of-type {
+    padding-left: 0;
+    padding-top: $base-padding-lite;
+  }
 }
 
 .sticky_nav-nav_item {
@@ -28,6 +33,7 @@
   list-style-type: none;
   margin-bottom: 0;
   padding: $base-padding-lite;
+  padding-left: 0;
   text-decoration: none;
 
   &:hover {
@@ -54,5 +60,11 @@
 
 .sticky_nav-nav_item-sub {
   border-left: 3px solid $neutral-gray;
+  padding-left: $base-padding-lite;
+
+  &:first-of-type {
+    margin-top: $base-padding-lite;
+    padding-top: 0;
+  }
 }
 

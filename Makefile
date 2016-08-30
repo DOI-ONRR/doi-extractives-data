@@ -488,9 +488,11 @@ data/opt_in_state_revenues:
 	mkdir -p _$@
 	$(query) --format ndjson " \
 		SELECT \
-			state, year, source, dest, dollars \
+			state, year, source, dest, \
+			ROUND(dollars) AS dollars \
 		FROM opt_in_state_revenues \
-		ORDER BY state, year, dollars DESC" \
+		ORDER BY \
+			state, year, dollars DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/opt_in_state_revenues.yml \
 			-o '_$@/{state}.yml'

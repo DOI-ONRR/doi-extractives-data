@@ -4,6 +4,9 @@ layout: default
 
 {% assign region_name = page.title %}
 {% assign region_id = page.id %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign year = '2013' %}
+{% assign _viewbox = site.data.viewboxes_offshore[region_id] %}
 
 <main id="offshore-region-{{ region_id }}" class="container-page-wrapper layout-state-pages">
   <div class="container-left-9">
@@ -12,6 +15,16 @@ layout: default
       /
     </div>
     <h1 id="title">{{ region_name }}</h1>
+
+    <section id="production">
+      <h2>Production</h2>
+      {% include
+        location/offshore-region-federal-production.html
+        region_name = region_name
+      %}
+    </section>
+
+    <!-- {% include location/offshore-region-revenue.html %} -->
 
   </div>
 

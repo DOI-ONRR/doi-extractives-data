@@ -1,0 +1,118 @@
+{% assign offshore_revenue_dir = site.data.offshore_revenue_areas %}
+
+{% for revenue_area in offshore_revenue_dir %}
+  {% if revenue_area[0] == area_id %}
+    {% assign revenue_commodities = revenue_area[1][area_id].commodities %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign units = '$' %}
+{% assign year_range = '[2004, 2013]' %}
+
+<section id="revenue" is="year-switcher-section" class="offshore-area-revenue">
+
+  <h2>Revenue</h2>
+
+  <p class="full-width-text">Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+
+  <h3>Federal revenue from extraction on federal land</h3>
+
+  <section id="federal-revenue">
+
+    <p class="full-width-text">Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
+    <p class="full-width-text">The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in {{ year}} for production or potential production of natural resources on federal land, broken down by phase of production. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon> </a></p>
+
+    <div id="fee-summaries" class="tab-interface">
+      <ul class="eiti-tabs info-tabs" role="tablist">
+        <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase ({{ year }})</a></li>
+        <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Revenue details by phase</a></li>
+      </ul>
+
+      <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+        {%
+          include location/revenue-type-table.html
+          id='revenue-types'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+
+      <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+        {%
+          include location/revenue-process-table.html
+          id='revenue-process'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+    </div>
+
+    <section class="chart-list">
+
+      <h4>Revenue by resource</h4>
+
+      <div class="chart-selector-wrapper">
+
+        {% include year-selector.html year_range=year_range %}
+
+        <p class="chart-description">
+          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).
+        </p>
+      </div>
+
+
+      {% for commodity in revenue_commodities %}
+        {% assign revenue = commodity[1][year].revenue %}
+        {% assign commodity_name = commodity[0] | lookup: commodity_names %}
+        {% assign commodity_slug = commodity[0] | slugify %}
+
+        <section id="revenue-{{ commodity_slug }}" class="chart-item">
+
+          <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
+
+          <figure class="chart">
+            {% assign annual_revenue = commodity[1] %}
+            <figcaption id="revenue-figures-{{ commodity_slug }}">
+              <span class="caption-data">
+                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+                companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
+                {{ commodity_name | downcase }} on federal land
+              </span>
+              <span class="caption-no-data" aria-hidden="true">
+                There is no data for {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+              </span>
+            </figcaption>
+            <eiti-bar-chart
+              data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
+              aria-controls="revenue-figures-{{ commodity_slug }}"
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="$,">
+            </eiti-bar-chart>
+
+          </figure>
+
+        </section>
+
+      {% endfor %}
+
+    </section>
+    <!-- .chart-list -->
+
+  </section>
+  <!-- #federal-revenue -->
+
+   <h3>Federal tax revenue</h3>
+
+    <div class="full-width-text">
+      <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>
+      <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+    </div>
+
+</section>

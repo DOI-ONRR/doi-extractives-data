@@ -6,6 +6,8 @@ FIPS: '56'
 opt_in: true
 priority: true
 
+state_revenue_year: 2015
+
 case_study_link: |
     For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](/case-studies/campbell/).
 ---

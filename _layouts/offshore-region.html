@@ -1,5 +1,16 @@
 ---
 layout: default
+nav_items:
+  - name: production
+    title: Production
+    subnav_items:
+      - name: offshore-area-federal-production
+        title: Federal waters
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal revenue
 ---
 
 {% assign region_name = page.title %}
@@ -24,7 +35,7 @@ layout: default
       %}
     </section>
 
-    <!-- {% include location/offshore-region-revenue.html %} -->
+    {% include location/offshore-region-revenue.html %}
 
   </div>
 

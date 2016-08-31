@@ -404,6 +404,19 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
+data/offshore_revenues_by_type.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region_id, commodity, revenue_type, year, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_region_revenue_type \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			region_id, revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenues_by_type.yml \
+			-o _$@
+
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
 		SELECT \

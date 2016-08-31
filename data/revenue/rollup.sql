@@ -52,17 +52,18 @@ GROUP BY
 -- create "all commodity" rows by offshore region
 DELETE FROM offshore_revenue WHERE commodity = 'All';
 INSERT INTO offshore_revenue
-    (year, region, planning_area, offshore_area, protraction, commodity, product, revenue)
+    (year, region, planning_area, offshore_area, protraction, commodity, product, revenue, revenue_type)
 SELECT
-    year, region, planning_area, offshore_area, protraction, 'All', 'All', SUM(revenue)
+    year, region, planning_area, offshore_area, protraction, 'All', 'All', SUM(revenue), revenue_type
 FROM offshore_revenue
 GROUP BY
-    year, region, planning_area, offshore_area, protraction;
+    year, region, planning_area, offshore_area, protraction, revenue_type;
 
 -- fill in the product field for rows without it
 UPDATE offshore_revenue
 SET product = commodity
 WHERE product IS NULL;
+
 
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
@@ -98,7 +99,8 @@ CREATE TABLE offshore_area_revenue AS
         area.region AS region_id,
         area.id AS area_id,
         area.name AS area_name,
-        SUM(revenue) AS revenue
+        SUM(revenue) AS revenue,
+        revenue_type
     FROM offshore_revenue AS offshore
     INNER JOIN offshore_planning_areas AS area
     ON
@@ -110,12 +112,23 @@ CREATE TABLE offshore_area_revenue AS
 DROP TABLE IF EXISTS offshore_region_revenue;
 CREATE TABLE offshore_region_revenue AS
     SELECT
-        year, region_id, SUM(revenue) AS revenue, commodity
+        year, region_id, SUM(revenue) AS revenue, commodity, revenue_type
     FROM offshore_area_revenue
     GROUP BY
         year, region_id, commodity
     ORDER BY
         year, revenue DESC;
+
+-- create summary revenue type rows by state
+DROP TABLE IF EXISTS offshore_region_revenue_type;
+CREATE TABLE offshore_region_revenue_type AS
+    SELECT
+        year, region_id, commodity, revenue_type,
+        SUM(revenue) AS revenue
+    FROM offshore_region_revenue
+    GROUP BY
+        year, region_id, commodity, revenue_type;
+
 
 -- then create national revenue as an aggregate view
 -- on regional revenue

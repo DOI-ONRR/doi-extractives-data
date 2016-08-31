@@ -80,7 +80,8 @@ UNION
     -- identifier here, e.g. "Central Gulf of Mexico" becomes "CGM"
     SELECT
         year, commodity,
-        area.id AS region_id, 'offshore' AS region_type,
+        area.id AS region_id,
+        'offshore' AS region_type,
         SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
     INNER JOIN offshore_planning_areas AS area
@@ -96,6 +97,7 @@ CREATE TABLE offshore_area_revenue AS
         year, commodity,
         area.region AS region_id,
         area.id AS area_id,
+        area.name AS area_name,
         SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
     INNER JOIN offshore_planning_areas AS area

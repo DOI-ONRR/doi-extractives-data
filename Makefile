@@ -422,7 +422,7 @@ data/offshore_revenue_areas:
 	$(query) --format ndjson " \
 		SELECT \
 		  commodity, year, \
-		  region_id, area_id, \
+		  region_id, area_id, area_name, \
 		  ROUND(revenue) AS revenue \
 		FROM offshore_area_revenue \
 		WHERE revenue IS NOT NULL \
@@ -430,7 +430,7 @@ data/offshore_revenue_areas:
 			revenue DESC, commodity, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/offshore_revenue_areas.yml \
-			-o '_$@/{area_id}.yml'
+			-o '_$@/{region_id}.yml'
 
 data/top_state_products:
 	# top N states for each product category in each year

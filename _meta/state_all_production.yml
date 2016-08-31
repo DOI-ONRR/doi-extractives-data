@@ -1,7 +1,6 @@
 '{state}':
   products:
     '{product}':
-      name: '{product_name}'
       units: '{units}'
       volume:
         '{year}':

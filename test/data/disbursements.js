@@ -95,7 +95,7 @@ describe('disbursements', function() {
 
         var filter = function(d) {
           if (d.Fund === 'State') {
-            d.Fund = 'States'
+            d.Fund = 'States';
           }
           return d.State === state &&
                  d.Source === source &&
@@ -168,7 +168,8 @@ describe('disbursements', function() {
                 allByYear[source][year] = revenue;
               } else {
                 totalsByYear[source] = totalsByYear[source] || {};
-                totalsByYear[source][year] = (totalsByYear[source][year] || 0) + revenue;
+                totalsByYear[source][year] = (totalsByYear[source][year] || 0)
+                  + revenue;
                 count++;
               }
             }
@@ -179,7 +180,8 @@ describe('disbursements', function() {
         for (source in totalsByYear) {
           for (year in totalsByYear[source]) {
 
-            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            difference = Math.abs(allByYear[source][year]
+                                  - totalsByYear[source][year]);
             assert.ok(
               difference <= count,
               'yearly totals: abs(' + allByYear[source][year] + ' - ' +
@@ -193,7 +195,8 @@ describe('disbursements', function() {
         // extra years in there
         for (source in totalsByYear) {
           for (year in allByYear[source]) {
-            difference = Math.abs(allByYear[source][year] - totalsByYear[source][year]);
+            difference = Math.abs(allByYear[source][year]
+                                  - totalsByYear[source][year]);
             assert.ok(
               difference <= count,
               'keys: abs(' + allByYear[source][year] + ' - ' +

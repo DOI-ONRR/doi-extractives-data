@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="slab-delta">
+  <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
+    <div class="container-left-8 ribbon-hero ribbon-hero-column">
+      <h1 id="title">Case studies</h1>
+      <figure is="data-map" color-scheme="Reds" steps="9">
+        {%
+          include state-map.html
+          offshore_areas=false
+          case_studies=true
+          no_outline=true
+        %}
+      </figure>
+    </div>
+    <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card ribbon-card-no-margin">
+      <figure class="ribbon-card-top ribbon-card-case_studies">
+        <h2 class="ribbon-card-top-text-header">How do extractive industries impact communities like mine?</h2>
+        <p>This section includes twelve case studies that provide a snapshot of communities that have led the U.S. in producing oil, gas, coal, gold, iron, or copper over the last decade. These case studies shed light on the economic and fiscal effects of oil, gas, and mineral extraction on local communities.</p>
+      </figure>
+      <figcaption class="ribbon-card-bottom state_pages-select">
+        {% include case-studies/_selector.html %}
+      </figcaption>
+    </div>
+  </div>
+</section>
+
+<section class="layout-content container-page-wrapper container-margin">
+  <article class="container-left-7">
+
+    {{ content | markdownify }}
+
+  </article>
+
+  <div class="sticky sticky_nav container-right-5">
+      <nav class="sticky-float">
+      {% include case-studies/_nav-list.html %}
+    </nav>
+
+  </div>
+</section>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>

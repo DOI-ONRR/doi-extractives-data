@@ -141,6 +141,12 @@ all_production:
       value: 214533000
       rank: 3
       percent: 10.34
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 24128000
+      rank: 4
+      percent: 9.47
   '2009':
     - product: Geothermal
       name: Geothermal
@@ -320,8 +326,20 @@ all_production:
       value: 198928000
       rank: 3
       percent: 6.85
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 23755000
+      rank: 4
+      percent: 8.85
 revenue:
   '2006':
+    - product: All
+      name: null
+      units: null
+      value: 118383934.61
+      rank: 5
+      percent: 0.95
     - product: Oil
       name: null
       units: null
@@ -341,6 +359,12 @@ revenue:
       rank: 2
       percent: 15.92
   '2007':
+    - product: All
+      name: null
+      units: null
+      value: 130722864.91
+      rank: 5
+      percent: 1.15
     - product: Oil
       name: null
       units: null
@@ -366,6 +390,12 @@ revenue:
       rank: 3
       percent: 0.04
   '2008':
+    - product: All
+      name: null
+      units: null
+      value: 186332798.47
+      rank: 5
+      percent: 0.81
     - product: Oil
       name: null
       units: null
@@ -384,6 +414,12 @@ revenue:
       value: 2294657.68
       rank: 2
       percent: 11
+    - product: Potassium
+      name: null
+      units: null
+      value: 3502.04
+      rank: 4
+      percent: 0.03
   '2009':
     - product: Oil
       name: null
@@ -404,6 +440,12 @@ revenue:
       rank: 2
       percent: 13.47
   '2010':
+    - product: All
+      name: null
+      units: null
+      value: 138257599.92
+      rank: 5
+      percent: 1.32
     - product: Oil
       name: null
       units: null
@@ -442,6 +484,12 @@ revenue:
       rank: 2
       percent: 13.97
   '2012':
+    - product: All
+      name: null
+      units: null
+      value: 215687561.01
+      rank: 5
+      percent: 1.71
     - product: Oil
       name: null
       units: null
@@ -460,6 +508,18 @@ revenue:
       value: 9137139.17
       rank: 1
       percent: 60.49
+    - product: NGL
+      name: null
+      units: null
+      value: 2863883.72
+      rank: 5
+      percent: 0.52
+    - product: Sulfur
+      name: null
+      units: null
+      value: 514.96
+      rank: 4
+      percent: 0.03
   '2013':
     - product: Oil
       name: null
@@ -479,7 +539,19 @@ revenue:
       value: 8742905.04
       rank: 2
       percent: 16.62
+    - product: Sulfur
+      name: null
+      units: null
+      value: 123.84
+      rank: 4
+      percent: 0.03
   '2014':
+    - product: Oil
+      name: null
+      units: null
+      value: 161588021.04
+      rank: 4
+      percent: 9.65
     - product: Geothermal
       name: null
       units: null
@@ -492,7 +564,25 @@ revenue:
       value: 7868551.95
       rank: 2
       percent: 17.76
+    - product: Sulfur
+      name: null
+      units: null
+      value: 115.98
+      rank: 5
+      percent: 0.03
+    - product: Potassium
+      name: null
+      units: null
+      value: 39.63
+      rank: 4
+      percent: 0
   '2015':
+    - product: Oil
+      name: null
+      units: null
+      value: 76891906.5
+      rank: 4
+      percent: 7.22
     - product: Geothermal
       name: null
       units: null
@@ -561,6 +651,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 14464464
+      rank: 5
+      percent: 1.34
   '2007':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -610,6 +706,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13429378
+      rank: 5
+      percent: 1.25
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -659,6 +761,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13470154
+      rank: 5
+      percent: 1.37
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -708,6 +816,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 14033419
+      rank: 5
+      percent: 1.09
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -763,6 +877,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13944830
+      rank: 5
+      percent: 1.11
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -818,6 +938,12 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 14918890
+      rank: 5
+      percent: 1.37
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal

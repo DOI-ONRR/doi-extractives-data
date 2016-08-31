@@ -25,7 +25,7 @@
   }}"></span>
 
     <span class="text">
-    <a href="#revenue-oil"><strong>Oil</strong></a>
+    <strong class="text-header text-header-first">Oil</strong>
     ${{
       revenue_types.Oil.Royalties[include.year]
       | default: 0
@@ -33,7 +33,7 @@
     }}</span>
 
     <span class="text">
-    <a href="#revenue-gas"><strong>Gas</strong></a>
+    <strong class="text-header text-header-second">Gas</strong>
     ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
 
   </td>

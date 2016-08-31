@@ -1,3 +1,127 @@
+all_production:
+  '2005':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1639310
+      rank: 5
+      percent: 6.99
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 848000
+      rank: 5
+      percent: 4.76
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 61262000
+      rank: 5
+      percent: 2.78
+  '2006':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1688985
+      rank: 4
+      percent: 7.18
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 1712000
+      rank: 5
+      percent: 6.44
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 64236000
+      rank: 5
+      percent: 3.03
+  '2007':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1783682
+      rank: 4
+      percent: 7.23
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 63951000
+      rank: 5
+      percent: 3.03
+  '2008':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1886710
+      rank: 4
+      percent: 7.36
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 67357000
+      rank: 5
+      percent: 3.25
+  '2009':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1901556
+      rank: 4
+      percent: 7.3
+  '2010':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1827328
+      rank: 5
+      percent: 6.81
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 67418000
+      rank: 5
+      percent: 3.05
+  '2011':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1888870
+      rank: 5
+      percent: 6.63
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 73423000
+      rank: 5
+      percent: 3.25
+  '2012':
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 8158000
+      rank: 4
+      percent: 5.79
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 87538000
+      rank: 5
+      percent: 3.42
+  '2013':
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 11162000
+      rank: 4
+      percent: 6.65
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 114486000
+      rank: 5
+      percent: 3.94
 revenue:
   '2006':
     - product: Asphalt
@@ -34,6 +158,12 @@ revenue:
       rank: 3
       percent: 0.01
   '2015':
+    - product: NGL
+      name: null
+      units: null
+      value: 1571622.62
+      rank: 5
+      percent: 1.49
     - product: Asphalt
       name: null
       units: null

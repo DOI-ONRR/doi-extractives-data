@@ -81,3 +81,45 @@ federal_production:
       value: 16036
       rank: 1
       percent: 0
+revenue:
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3454.87
+      rank: 5
+      percent: 0.02
+all_production:
+  '2012':
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 7727000
+      rank: 5
+      percent: 5.49
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 48486048
+      rank: 5
+      percent: 4.78
+  '2013':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 52147193
+      rank: 4
+      percent: 5.31
+    - product: Wind
+      name: Wind
+      units: megawatt hours
+      value: 9625000
+      rank: 5
+      percent: 5.73
+  '2014':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 57969300
+      rank: 5
+      percent: 5.81

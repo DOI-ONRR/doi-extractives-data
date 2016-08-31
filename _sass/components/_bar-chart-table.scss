@@ -73,6 +73,16 @@
     min-width: 120px;
     position: relative;
 
+    .text-header {
+      &.text-header-first {
+        color: $green-darkest;
+      }
+
+      &.text-header-second {
+        color: $green-dark;
+      }
+    }
+
     .bar {
       background: $mid-gray;
       display: block;

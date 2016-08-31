@@ -124,7 +124,6 @@
   }
 
   .chart-description {
-    @include heading('para-md');
     border-left: 1px solid $mid-gray;
     float: left;
     padding-left: 1.25rem;

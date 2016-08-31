@@ -1,3 +1,86 @@
+all_production:
+  '2005':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 67493812
+      rank: 4
+      percent: 5.97
+  '2006':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 66028815
+      rank: 4
+      percent: 5.68
+  '2007':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 65048039
+      rank: 4
+      percent: 5.68
+  '2008':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 65413644
+      rank: 4
+      percent: 5.59
+  '2009':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 57979452
+      rank: 4
+      percent: 5.41
+  '2010':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 58593111
+      rank: 4
+      percent: 5.41
+  '2011':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 59181827
+      rank: 4
+      percent: 5.41
+  '2012':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2256696
+      rank: 4
+      percent: 7.64
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 54718802
+      rank: 4
+      percent: 5.39
+  '2013':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 3259042
+      rank: 2
+      percent: 11.04
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 50869584
+      rank: 5
+      percent: 5.18
+  '2014':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 60909704
+      rank: 4
+      percent: 6.1
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -81,11 +164,3 @@ federal_production:
       value: 940
       rank: 1
       percent: 0
-all_production:
-  '2013':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 3259042
-      rank: 2
-      percent: 11.04

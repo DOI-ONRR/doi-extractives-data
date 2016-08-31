@@ -1,0 +1,115 @@
+params:
+  start: 2006
+  end: 2015
+
+products:
+  coal:
+    series: 'COAL.PRODUCTION.TOT-{region}-TOT.A'
+    values:
+      product: Coal
+  oil:
+    series: 'PET.MCRFP{region}1.A'
+    values:
+      product: Crude Oil
+
+  offshore-oil:
+    series:
+      'PET.MCRFP3FM1.A':
+        region: Gulf
+      'PET.MCRFP5F1.A':
+        region: Pacific
+    values:
+      product: Crude Oil
+
+  naturalgas:
+    series: 'NG.N9010{region}2.A'
+    values:
+      product: 'Natural Gas'
+
+  geothermal:
+    series: 'ELEC.GEN.GEO-{region}-99.A'
+    values:
+      product: 'Geothermal'
+      units: 'MMWh'
+
+  hydroelectric:
+    series: 'ELEC.GEN.HYC-{region}-99.A'
+    values:
+      product: 'Conventional Hydroelectric'
+      units: 'MMWh'
+
+  solar:
+    series: 'ELEC.GEN.SUN-{region}-99.A'
+    values:
+      product: 'Solar'
+      units: 'MMWh'
+
+  wind:
+    series: 'ELEC.GEN.WND-{region}-99.A'
+    values:
+      product: 'Wind'
+      units: 'MMWh'
+
+  wood:
+    series: 'ELEC.GEN.WWW-{region}-99.A'
+    values:
+      product: 'Wood and wood-derived fuels'
+
+  other-biomass:
+    series: 'ELEC.GEN.WAS-{region}-99.A'
+    values:
+      product: 'Other biomass'
+
+regions:
+- US
+- AL
+- AK
+- AZ
+- AR
+- CA
+- CO
+- CT
+- DE
+- DC
+- FL
+- GA
+- HI
+- ID
+- IL
+- IN
+- IA
+- KS
+- KY
+- LA
+- ME
+- MD
+- MA
+- MI
+- MN
+- MS
+- MO
+- MT
+- NE
+- NV
+- NH
+- NJ
+- NM
+- NY
+- NC
+- ND
+- OH
+- OK
+- OR
+- PA
+- RI
+- SC
+- SD
+- TN
+- TX
+- UT
+- VT
+- VA
+- WA
+- WV
+- WI
+- WY

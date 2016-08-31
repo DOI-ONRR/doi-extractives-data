@@ -1,0 +1,36 @@
+{% assign case_studies_points = site.data.case_studies_points %}
+{% assign circle_radius = 17 %}
+{% assign caption_height = 75 %}
+{% assign caption_width = 205 %}
+{% assign commodities = 'oil,copper,gas,iron,gold,coal' | split:',' %}
+{% assign dark_blue = '#4b9bbf' %}
+
+<g class="case-studies-points">
+  {% for commodity in commodities %}
+    {% for point in case_studies_points[commodity] %}
+      {% assign point_id = point[0] %}
+      {% assign point_name = point[1].name %}
+      {% assign point_state = point[1].state %}
+      {% assign point_permalink = point[1].permalink %}
+      {% assign coords = point[1].circle %}
+      {% assign x_offset = coords.x | minus: circle_radius %}
+      {% assign y_offset = coords.y | minus: circle_radius %}
+
+      <g class="case-studies-circle-group">
+        <g class="case-studies-caption {{ point_id }}">
+          <a xlink:href="{{ point_permalink | prepend:site.baseurl }}">
+            {% if point_id == 'boone_logan_mingo' %}
+              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.05 }}" height="{{ caption_height  | times:1.05 }}"></rect>
+            {% else %}
+              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
+            {% endif %}
+            <text x="{{ x_offset }}" y="{{ y_offset }}">{{ commodity | capitalize }} in {{ point_state }}</text>
+          </a>
+          <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">{{ point_name }}</text>
+        </g>
+        <circle cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="{{ dark_blue }}" stroke-width="2px"></circle>
+        {% include svg/circle-icon-{{ commodity }}.svg x=x_offset y=y_offset %}
+      </g>
+    {% endfor %}
+  {% endfor %}
+</g>

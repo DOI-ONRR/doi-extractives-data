@@ -49,7 +49,7 @@
     "sqlite3": "^3.1.2",
     "stream-array": "^1.0.1",
     "svgo": "^0.6.6",
-    "tables": "github:shawnbot/tables#use-tito",
+    "tables": "^0.0.4",
     "through2": "^0.6.5",
     "tito": "^0.6.1",
     "to-jekyll-collection": "^0.1.1",

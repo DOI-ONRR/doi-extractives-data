@@ -1,3 +1,147 @@
+all_production:
+  '2005':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 75199000
+      rank: 4
+      percent: 3.42
+  '2006':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 73621000
+      rank: 4
+      percent: 3.47
+  '2007':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 76979000
+      rank: 4
+      percent: 3.65
+  '2008':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 72353000
+      rank: 4
+      percent: 3.49
+  '2009':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 1558638
+      rank: 5
+      percent: 5.98
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 68824000
+      rank: 5
+      percent: 3.15
+  '2010':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2218283
+      rank: 4
+      percent: 8.27
+  '2011':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 3040523
+      rank: 3
+      percent: 10.68
+  '2012':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2955437
+      rank: 3
+      percent: 10
+  '2013':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2366943
+      rank: 4
+      percent: 8.02
+revenue:
+  '2006':
+    - product: Gas
+      name: null
+      units: null
+      value: 34130980.06
+      rank: 5
+      percent: 0.67
+    - product: NGL
+      name: null
+      units: null
+      value: 1229701.38
+      rank: 5
+      percent: 0.41
+  '2007':
+    - product: Gas
+      name: null
+      units: null
+      value: 33025527.22
+      rank: 5
+      percent: 0.77
+    - product: NGL
+      name: null
+      units: null
+      value: 1362132.71
+      rank: 5
+      percent: 0.34
+  '2008':
+    - product: Gas
+      name: null
+      units: null
+      value: 40437371.67
+      rank: 5
+      percent: 0.75
+    - product: NGL
+      name: null
+      units: null
+      value: 1337105.75
+      rank: 5
+      percent: 0.24
+  '2009':
+    - product: NGL
+      name: null
+      units: null
+      value: 1857114.79
+      rank: 5
+      percent: 0.79
+  '2010':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 38249065.09
+      rank: 3
+      percent: 14.43
+    - product: NGL
+      name: null
+      units: null
+      value: 6831778.16
+      rank: 5
+      percent: 1.6
+  '2011':
+    - product: NGL
+      name: null
+      units: null
+      value: 2266245.09
+      rank: 5
+      percent: 0.4
+  '2014':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 203.4
+      rank: 4
+      percent: 0.05
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -141,26 +285,3 @@ federal_production:
       value: null
       rank: 1
       percent: null
-revenue:
-  '2010':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 38249065.09
-      rank: 3
-      percent: 14.43
-all_production:
-  '2011':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 3040523
-      rank: 3
-      percent: 10.68
-  '2012':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2955437
-      rank: 3
-      percent: 10

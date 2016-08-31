@@ -1,3 +1,79 @@
+all_production:
+  '2005':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3647000
+      rank: 4
+      percent: 6.72
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 10145000
+      rank: 5
+      percent: 3.75
+  '2006':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3884000
+      rank: 4
+      percent: 7.08
+  '2007':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3801000
+      rank: 4
+      percent: 6.84
+  '2008':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3357000
+      rank: 4
+      percent: 6.1
+  '2009':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 3050000
+      rank: 4
+      percent: 5.6
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 12535000
+      rank: 5
+      percent: 4.58
+  '2011':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 2817000
+      rank: 5
+      percent: 4.97
+  '2012':
+    - product: Biomass (total)
+      name: Biomass
+      units: megawatt hours
+      value: 2777000
+      rank: 5
+      percent: 4.82
+  '2013':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 12899000
+      rank: 5
+      percent: 4.8
+  '2014':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 181054
+      rank: 1
+      percent: 28.56
 revenue:
   '2006':
     - product: Clay
@@ -33,6 +109,12 @@ revenue:
       rank: 3
       percent: 1.06
   '2009':
+    - product: Coal
+      name: null
+      units: null
+      value: 4351074.7
+      rank: 5
+      percent: 0.4
     - product: Sulfur
       name: null
       units: null
@@ -40,12 +122,31 @@ revenue:
       rank: 2
       percent: 0.04
   '2010':
+    - product: Coal
+      name: null
+      units: null
+      value: 10404903.27
+      rank: 5
+      percent: 1.19
     - product: Sulfur
       name: null
       units: null
       value: 1448.44
       rank: 3
       percent: 0.38
+  '2011':
+    - product: Coal
+      name: null
+      units: null
+      value: 9735675.57
+      rank: 5
+      percent: 0.94
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4447.73
+      rank: 4
+      percent: 0.24
   '2012':
     - product: Sulfur
       name: null
@@ -229,11 +330,3 @@ federal_production:
       value: null
       rank: 1
       percent: null
-all_production:
-  '2014':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 181054
-      rank: 1
-      percent: 28.56

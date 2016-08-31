@@ -22,7 +22,10 @@
 
         <p class="chart-description">
             ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
-            <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-production/">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
         </p>
       </div>
     {% endif %}
@@ -35,11 +38,10 @@
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
       {% assign units = product[1].units | downcase | default: 'units' %}
-      {% assign short_units = units_map[units].short | default 'units' %}
-      {% assign long_units = units_map[units].long | default 'units' %}
-      {% assign units_suffix = units_map[units].suffix | default '' %}
+      {% assign short_units = units_map[units].short | default: units %}
+      {% assign long_units = units_map[units].long | default: units %}
+      {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
-
 
       <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 

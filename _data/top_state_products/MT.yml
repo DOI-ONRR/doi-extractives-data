@@ -1,5 +1,11 @@
 revenue:
   '2006':
+    - product: Coal
+      name: null
+      units: null
+      value: 30401779.76
+      rank: 4
+      percent: 3.2
     - product: Phosphate
       name: null
       units: null
@@ -12,6 +18,12 @@ revenue:
       value: 2321.49
       rank: 2
       percent: 12.15
+    - product: Hardrock
+      name: null
+      units: null
+      value: 2210.5
+      rank: 5
+      percent: 0.02
   '2007':
     - product: Coal
       name: null
@@ -25,6 +37,12 @@ revenue:
       value: 1881.74
       rank: 2
       percent: 2.76
+    - product: Phosphate
+      name: null
+      units: null
+      value: 49.03
+      rank: 4
+      percent: 0
   '2008':
     - product: Coal
       name: null
@@ -51,6 +69,18 @@ revenue:
       value: 48576331.67
       rank: 2
       percent: 4.49
+    - product: Phosphate
+      name: null
+      units: null
+      value: 4227
+      rank: 4
+      percent: 0.11
+    - product: Sulfur
+      name: null
+      units: null
+      value: -9594.46
+      rank: 4
+      percent: null
   '2010':
     - product: Coal
       name: null
@@ -64,6 +94,12 @@ revenue:
       value: 3906.01
       rank: 2
       percent: 1.04
+    - product: Phosphate
+      name: null
+      units: null
+      value: 2882.81
+      rank: 4
+      percent: 0.03
   '2011':
     - product: Coal
       name: null
@@ -77,6 +113,12 @@ revenue:
       value: 9789.04
       rank: 3
       percent: 0.52
+    - product: Phosphate
+      name: null
+      units: null
+      value: 5650.45
+      rank: 4
+      percent: 0.06
   '2012':
     - product: Coal
       name: null
@@ -84,6 +126,12 @@ revenue:
       value: 56440250.92
       rank: 2
       percent: 4.19
+    - product: Phosphate
+      name: null
+      units: null
+      value: 5636
+      rank: 4
+      percent: 0.04
     - product: Sulfur
       name: null
       units: null
@@ -103,6 +151,12 @@ revenue:
       value: 5314.96
       rank: 2
       percent: 1.1
+    - product: Phosphate
+      name: null
+      units: null
+      value: -1409
+      rank: 4
+      percent: null
   '2014':
     - product: Coal
       name: null
@@ -135,6 +189,12 @@ revenue:
       value: 9168
       rank: 1
       percent: null
+    - product: Phosphate
+      name: null
+      units: null
+      value: 4227
+      rank: 4
+      percent: 0.04
 federal_production:
   '2006':
     - product: Coal (tons)
@@ -278,3 +338,57 @@ federal_production:
       value: 3363275
       rank: 1
       percent: 0
+all_production:
+  '2007':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 43389833
+      rank: 5
+      percent: 3.79
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 9364000
+      rank: 5
+      percent: 3.78
+  '2008':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 10000000
+      rank: 5
+      percent: 3.92
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 44785700
+      rank: 5
+      percent: 3.83
+  '2009':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 39485837
+      rank: 5
+      percent: 3.68
+  '2010':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 44732165
+      rank: 5
+      percent: 4.13
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 9415000
+      rank: 5
+      percent: 3.62
+  '2012':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: megawatt hours
+      value: 11283000
+      rank: 5
+      percent: 4.08

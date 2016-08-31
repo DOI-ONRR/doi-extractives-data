@@ -1,0 +1,90 @@
+coal:
+  boone_logan_mingo:
+    name: Boone, Logan, and Mingo Counties
+    state: West Virginia
+    permalink: /case-studies/boone-logan-and-mingo/
+    circle:
+      'x': 740
+      'y': 280
+  campbell:
+    name: Campbell County
+    state: Wyoming
+    permalink: /case-studies/campbell/
+    circle:
+      'x': 375
+      'y': 185
+gold:
+  elko_eureka:
+    name: Elko and Eureka Counties
+    state: Nevada
+    permalink: /case-studies/elko-and-eureka/
+    circle:
+      'x': 250
+      'y': 235
+  humboldt_lander:
+    name: Humboldt and Lander Counties
+    state: Nevada
+    permalink: /case-studies/humboldt-and-lander/
+    circle:
+      'x': 190
+      'y': 205
+iron:
+  marquette:
+    name: Marquette County
+    state: Michigan
+    permalink: /case-studies/marquette/
+    circle:
+      'x': 610
+      'y': 170
+  st_louis:
+    name: St. Louis County
+    state: Minnesota
+    permalink: /case-studies/st-louis/
+    circle:
+      'x': 550
+      'y': 140
+gas:
+  desoto:
+    name: DeSoto Parish
+    state: Louisiana
+    permalink: /case-studies/desoto/
+    circle:
+      'x': 550
+      'y': 435
+  tarrant_johnson:
+    name: Tarrant and Johnson Counties
+    state: Texas
+    permalink: /case-studies/tarrant-and-johnson/
+    circle:
+      'x': 490
+      'y': 415
+oil:
+  kern:
+    name: Kern County
+    state: California
+    permalink: /case-studies/kern/
+    circle:
+      'x': 170
+      'y': 310
+  north_slope:
+    name: North Slope Borough
+    permalink: /case-studies/north-slope/
+    state: Alaska
+    circle:
+      'x': 185
+      'y': 465
+copper:
+  pima:
+    name: Pima County
+    state: Arizona
+    permalink: /case-studies/pima/
+    circle:
+      'x': 260
+      'y': 405
+  greenlee:
+    name: Greenlee County
+    state: Arizona
+    permalink: /case-studies/greenlee/
+    circle:
+      'x': 300
+      'y': 365

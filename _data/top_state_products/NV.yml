@@ -131,6 +131,12 @@ revenue:
       value: 14779736.51
       rank: 2
       percent: 38.67
+    - product: Potassium
+      name: null
+      units: null
+      value: 1899
+      rank: 4
+      percent: 0.02
   '2008':
     - product: Geothermal
       name: null
@@ -157,6 +163,12 @@ revenue:
       value: 12701747.01
       rank: 1
       percent: 40.72
+    - product: Potassium
+      name: null
+      units: null
+      value: -46.5
+      rank: 4
+      percent: null
   '2010':
     - product: Geothermal
       name: null
@@ -210,6 +222,12 @@ revenue:
       value: 4683007.88
       rank: 2
       percent: 27.25
+    - product: Potassium
+      name: null
+      units: null
+      value: -2301.95
+      rank: 5
+      percent: null
   '2015':
     - product: Geothermal
       name: null
@@ -217,6 +235,12 @@ revenue:
       value: 4239099.84
       rank: 2
       percent: 30.25
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 2648521.15
+      rank: 4
+      percent: 3.16
     - product: Potassium
       name: null
       units: null

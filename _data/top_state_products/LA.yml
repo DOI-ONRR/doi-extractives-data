@@ -1,73 +1,3 @@
-all_production:
-  '2005':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 75199000
-      rank: 4
-      percent: 3.42
-  '2006':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 73621000
-      rank: 4
-      percent: 3.47
-  '2007':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 76979000
-      rank: 4
-      percent: 3.65
-  '2008':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 72353000
-      rank: 4
-      percent: 3.49
-  '2009':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 1558638
-      rank: 5
-      percent: 5.98
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 68824000
-      rank: 5
-      percent: 3.15
-  '2010':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2218283
-      rank: 4
-      percent: 8.27
-  '2011':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 3040523
-      rank: 3
-      percent: 10.68
-  '2012':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2955437
-      rank: 3
-      percent: 10
-  '2013':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2366943
-      rank: 4
-      percent: 8.02
 revenue:
   '2006':
     - product: Gas
@@ -285,3 +215,121 @@ federal_production:
       value: null
       rank: 1
       percent: null
+all_production:
+  '2006':
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 73621000
+      rank: 4
+      percent: 3.97
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2880930.39
+      rank: 5
+      percent: 7.43
+  '2007':
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 76979000
+      rank: 4
+      percent: 4.15
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2898370.95
+      rank: 5
+      percent: 7.43
+  '2008':
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 72353000
+      rank: 4
+      percent: 3.95
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2638789.01
+      rank: 5
+      percent: 7.07
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2296773.09
+      rank: 5
+      percent: 6.37
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1558638000
+      rank: 5
+      percent: 5.98
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 68824000
+      rank: 5
+      percent: 3.52
+  '2010':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2218283000
+      rank: 4
+      percent: 8.27
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2393409.42
+      rank: 4
+      percent: 6.44
+  '2011':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 3040523000
+      rank: 3
+      percent: 10.68
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2371437.38
+      rank: 5
+      percent: 6.33
+  '2012':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2955437000
+      rank: 3
+      percent: 10
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2366280.69
+      rank: 5
+      percent: 6.26
+  '2013':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2366943000
+      rank: 4
+      percent: 8.02
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2704256
+      rank: 5
+      percent: 6.76
+  '2015':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1941727000
+      rank: 5
+      percent: 5.9

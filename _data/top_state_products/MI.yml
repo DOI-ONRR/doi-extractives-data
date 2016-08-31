@@ -82,17 +82,10 @@ federal_production:
       rank: 1
       percent: 0
 all_production:
-  '2010':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 2472000
+  '2015':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1103110.61
       rank: 5
-      percent: 4.41
-  '2014':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 114946
-      rank: 3
-      percent: 18.13
+      percent: 5.05

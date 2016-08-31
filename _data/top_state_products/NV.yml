@@ -1,109 +1,3 @@
-all_production:
-  '2005':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 1263000
-      rank: 2
-      percent: 8.6
-  '2006':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 1344000
-      rank: 2
-      percent: 9.23
-  '2007':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 1253000
-      rank: 2
-      percent: 8.56
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 44000
-      rank: 2
-      percent: 7.19
-  '2008':
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 156000
-      rank: 2
-      percent: 18.06
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 1383000
-      rank: 2
-      percent: 9.32
-  '2009':
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 174000
-      rank: 2
-      percent: 19.53
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 1633000
-      rank: 2
-      percent: 10.88
-  '2010':
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 217000
-      rank: 2
-      percent: 17.92
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 2070000
-      rank: 2
-      percent: 13.6
-  '2011':
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 291000
-      rank: 2
-      percent: 16.01
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 2146000
-      rank: 2
-      percent: 14.01
-  '2012':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 2347000
-      rank: 2
-      percent: 15.08
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 473000
-      rank: 3
-      percent: 10.93
-  '2013':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 2670000
-      rank: 2
-      percent: 16.92
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 745000
-      rank: 3
-      percent: 8.25
 revenue:
   '2006':
     - product: Geothermal
@@ -456,3 +350,128 @@ federal_production:
       value: 280617
       rank: 1
       percent: 0
+all_production:
+  '2006':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1343711
+      rank: 2
+      percent: 9.22
+  '2007':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1252691
+      rank: 2
+      percent: 8.56
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 43967
+      rank: 2
+      percent: 7.19
+  '2008':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 156013
+      rank: 2
+      percent: 18.05
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1382819.56
+      rank: 2
+      percent: 9.32
+  '2009':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 174309
+      rank: 2
+      percent: 19.56
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1633213
+      rank: 2
+      percent: 10.88
+  '2010':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 216916.83
+      rank: 2
+      percent: 17.89
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2069730
+      rank: 2
+      percent: 13.6
+  '2011':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 291224.51
+      rank: 2
+      percent: 16.02
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2146119
+      rank: 2
+      percent: 14.01
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2347464.82
+      rank: 2
+      percent: 15.08
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 473416.53
+      rank: 3
+      percent: 10.94
+  '2013':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2669953.08
+      rank: 2
+      percent: 16.93
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 745382
+      rank: 3
+      percent: 8.25
+  '2014':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2728788
+      rank: 2
+      percent: 17.19
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 1013682
+      rank: 3
+      percent: 5.73
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 3400352.75
+      rank: 2
+      percent: 20.28
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 1693987.67
+      rank: 4
+      percent: 6.4

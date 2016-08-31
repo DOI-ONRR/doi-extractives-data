@@ -233,6 +233,7 @@ data/revenue: \
 	data/national_revenues_by_type.yml \
 	data/offshore_revenue_regions.yml \
 	data/offshore_revenue_areas \
+	data/offshore_revenues_by_type.yml \
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -472,7 +473,7 @@ data/top_state_products:
 	UNION \
 		SELECT \
 		  state, product, \
-		  product_name AS name, units, \
+		  product AS name, units, \
 		  ROUND(percent, 2), rank, year, \
 		  ROUND(volume, 2) AS value, \
 		  (100 - rank) AS order_value, \

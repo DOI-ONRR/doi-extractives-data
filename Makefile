@@ -180,7 +180,7 @@ data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
 		  region_id AS state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  extractive_jobs AS jobs, \
@@ -238,7 +238,7 @@ data/county_revenue:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  ROUND(revenue) AS revenue \
@@ -333,7 +333,7 @@ data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  product, product_name, units, \

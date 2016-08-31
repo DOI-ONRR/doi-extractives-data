@@ -21,6 +21,13 @@ nav_items:
         title: State and local revenue
       - name: tax-expenditures
         title: Tax expenditures
+  - name: disbursements
+    title: Disbursements
+    subnav_items:
+      - name: federal-disbursements
+        title: Federal disbursements
+      - name: state-disbursements
+        title: State disbursements
   - name: economic-impact
     title: Economic impact
     subnav_items:
@@ -32,13 +39,6 @@ nav_items:
         title: Self-employment
       - name: exports
         title: Exports
-  - name: disbursements
-    title: Disbursements
-    subnav_items:
-      - name: federal-disbursements
-        title: Federal disbursements
-      - name: state-disbursements
-        title: State disbursements
   - name: state-governance
     title: State governance
     subnav_items:
@@ -110,22 +110,7 @@ nav_items:
       </section>
 
       {% include location/section-revenue.html %}
-
-      {% unless page.offshore == true %}
-      <section id="economic-impact">
-        <h2>Economic impact</h2>
-        {% if page.state_impact %}
-          {{ page.state_impact | markdownify }}
-        {% endif %}
-
-        {% include location/section-gdp.html %}
-
-        {% include location/section-jobs.html %}
-
-        {% include location/section-exports.html %}
-      </section>
-      {% endunless %}
-
+      
       <section id="disbursements" class="disbursements">
         <h2>Disbursements</h2>
 
@@ -142,6 +127,21 @@ nav_items:
         </section>
 
       </section>
+
+      {% unless page.offshore == true %}
+      <section id="economic-impact">
+        <h2>Economic impact</h2>
+        {% if page.state_impact %}
+          {{ page.state_impact | markdownify }}
+        {% endif %}
+
+        {% include location/section-gdp.html %}
+
+        {% include location/section-jobs.html %}
+
+        {% include location/section-exports.html %}
+      </section>
+      {% endunless %}
 
       <section>
         {% include location/section-state-governance.html %}

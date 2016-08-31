@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* jshint node: true, esnext: true */
 var yargs = require('yargs');
 var options = yargs.argv;
 if (options.help) {
@@ -79,7 +80,8 @@ function processYear(year, done) {
         return done(error);
       }
 
-      console.warn('%d: got %d extractives rows, %d all', year, ext.length, Object.keys(all).length);
+      console.warn('%d: got %d extractives rows, %d all',
+                   year, ext.length, Object.keys(all).length);
 
       var filename = path.join(year, 'joined.tsv');
 
@@ -118,7 +120,7 @@ function filterStream(year, all) {
     var fips = ext[fields.fips];
     var a = all[fips];
     if (!a) {
-      console.warn('no all row:', fips, jobs);
+      console.warn('no all row:', fips);
       return next();
     }
 

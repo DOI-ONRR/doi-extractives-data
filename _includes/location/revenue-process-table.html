@@ -1,5 +1,9 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
 
+{% if include.offshore %}
+  {% assign revenue_types = site.data.offshore_revenues_by_type[include.location_id] %}
+{% endif %}
+
 {% if national_page %}
   {% assign revenue_types = site.data.national_revenues_by_type.US %}
 {% endif %}
@@ -33,6 +37,10 @@
 
   {% if commodity_name == 'Geothermal' %}
     {% assign geothermal_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'Wind' %}
+    {% assign wind_exists = true %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
@@ -181,6 +189,37 @@
               </td>
               <td><strong>$1</strong> annual rent per acre for 10 years<br> <strong>$5</strong> annual rent per acre thereafter
               </td>
+              <td></td>
+            </tr>
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if wind_exists == true %}
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Wind' %}
+          <tr class="table-arrow_box-category"><td colspan="5">
+            Wind
+            <icon class="icon-padded icon-wind"></icon>
+          </td></tr>
+
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+            <tr>
+              <th class="table-arrow_box-subcategory">Competitive leasing</th>
+              <td></td>
+              <td></td>
+              <td rowspan="2"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
+              <td></td>
+              <td></td>
               <td></td>
             </tr>
           </tbody>

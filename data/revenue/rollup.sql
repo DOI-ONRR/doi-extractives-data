@@ -129,6 +129,15 @@ CREATE TABLE offshore_region_revenue_type AS
     GROUP BY
         year, region_id, commodity, revenue_type;
 
+-- create all revenue type by commodity rollups
+INSERT INTO offshore_region_revenue_type
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id, commodity, 'All', SUM(revenue)
+FROM offshore_region_revenue
+GROUP BY
+    year, region_id, commodity;
+
 
 -- then create national revenue as an aggregate view
 -- on regional revenue

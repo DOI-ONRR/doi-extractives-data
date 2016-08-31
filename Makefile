@@ -52,8 +52,6 @@ site-data: \
 	data/state_revenues.yml \
 	data/national_federal_production.yml \
 	data/opt_in_state_revenues \
-	data/offshore_federal_production_areas \
-	data/offshore_federal_production_regions.yml \
 	data/top_state_products
 
 

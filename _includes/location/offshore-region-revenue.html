@@ -37,9 +37,10 @@
         {%
           include location/revenue-type-table.html
           id='revenue-types'
-          location_id=state_id
-          location_name=state_name
+          location_id=region_name
+          location_name=region_name
           year=year
+          offshore=true
         %}
       </article>
 
@@ -47,9 +48,10 @@
         {%
           include location/revenue-process-table.html
           id='revenue-process'
-          location_id=state_id
-          location_name=state_name
+          location_id=region_name
+          location_name=region_name
           year=year
+          offshore=true
         %}
       </article>
     </div>

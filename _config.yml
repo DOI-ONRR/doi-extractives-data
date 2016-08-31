@@ -20,6 +20,7 @@ sass:
 exclude:
   # top-level log and markdown files
   - /*.log
+  - /*.md
   # ruby dependency files
   - Gemfile*
   # KSS (style guide) config and template
@@ -42,7 +43,8 @@ exclude:
   - /lib/*.js
   - data/lib/*.js
   - maps/lib/*.js
-  - /Makefile
+  # Makefiles
+  - Makefile
   - /**/Makefile
   # data tools and SQLite databases
   - /*.sql

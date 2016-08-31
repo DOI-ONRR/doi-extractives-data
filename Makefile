@@ -587,12 +587,12 @@ tables/jobs: data/_input/bls
 		$(tables) -i $$jobs_filename -n bls_employment \
 			--config data/db/models/bls_employment.js; \
 	done
-	@$(call load-sql,data/db/rollup-employment.sql)
+	@$(call load-sql,data/jobs/rollup-jobs.sql)
 
 tables/self_employment: data/jobs/self-employment.tsv
 	@$(call drop-table,self_employment)
 	$(call load-table,$^,self_employment)
-	@$(call load-sql,data/db/rollup-self-employment.sql)
+	@$(call load-sql,data/jobs/rollup-self-employment.sql)
 
 tables/gdp: data/gdp/regional.tsv
 	@$(call drop-table,gdp)

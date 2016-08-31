@@ -7,12 +7,13 @@ if (options.help) {
 
 var years = options._;
 
-var fs = require('fs');
 var async = require('async');
-var tito = require('tito').formats;
+var d3 = require('d3');
+var fs = require('fs');
+var path = require('path');
 var streamify = require('stream-array');
 var thru = require('through2').obj;
-var d3 = require('d3');
+var tito = require('tito').formats;
 
 const fields = {
   code:     'own_code',
@@ -38,7 +39,7 @@ function processYear(year, done) {
   async.parallel(
     [
       function readAll(next) {
-        var filename = [year, 'all.csv'].join('/');
+        var filename = path.join(year, 'all.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -58,7 +59,7 @@ function processYear(year, done) {
         });
       },
       function readExt(next) {
-        var filename = [year, 'extractives.csv'].join('/');
+        var filename = path.join(year, 'extractives.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -80,7 +81,7 @@ function processYear(year, done) {
 
       console.warn('%d: got %d extractives rows, %d all', year, ext.length, Object.keys(all).length);
 
-      var filename = [year, 'joined.tsv'].join('/');
+      var filename = path.join(year, 'joined.tsv');
 
       streamify(ext)
         .pipe(filterStream(year, all))

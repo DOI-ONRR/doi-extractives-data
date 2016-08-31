@@ -504,7 +504,6 @@ $(db): \
 	tables/all-production \
 	tables/company_revenue \
 	tables/jobs \
-	tables/self_employment \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
@@ -581,13 +580,18 @@ tables/company_revenue: data/_input/onrr/company-revenue
 			--config data/db/models/company_revenue.js; \
 	done
 
-tables/jobs: data/_input/bls
+tables/jobs: tables/bls tables/self_employment
+
+tables/bls: data/jobs/bls
 	@$(call drop-table,bls_employment)
+	tmp=$^/all.ndjson; \
 	for jobs_filename in $^/????/joined.tsv; do \
-		$(tables) -i $$jobs_filename -n bls_employment \
-			--config data/db/models/bls_employment.js; \
-	done
-	@$(call load-sql,data/jobs/rollup-jobs.sql)
+		$(tito) -r tsv --map ./data/jobs/transform.js \
+			$$jobs_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n bls_employment && \
+	rm $$tmp
+	@$(call load-sql,data/jobs/rollup-bls.sql)
 
 tables/self_employment: data/jobs/self-employment.tsv
 	@$(call drop-table,self_employment)

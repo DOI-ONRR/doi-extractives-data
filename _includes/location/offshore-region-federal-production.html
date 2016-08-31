@@ -96,7 +96,7 @@
             </h4>
 
 
-            {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
+            {% capture toggle %}federal-production-{{ product_slug }}-areas{% endcapture %}
             <figure is="eiti-data-map-table">
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
@@ -127,8 +127,15 @@
 
               <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
                 {% assign product_ref = product[0] %}
-                <!-- county chart -->
-
+                {%
+                  include location/offshore-area-federal-production-table.html
+                  year=year
+                  values=offshore_area_federal_production
+                  product_ref=product_ref
+                  long_units=long_units
+                  caption=caption
+                  sentence=sentence
+                %}
               </div><!-- /.table-container -->
 
             </figure>

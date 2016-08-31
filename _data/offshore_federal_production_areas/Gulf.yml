@@ -1,4 +1,5 @@
 CGM:
+  name: Central Gulf of Mexico
   products:
     Condensate (bbl):
       name: Condensate
@@ -203,6 +204,7 @@ CGM:
       volume:
         '2011': 0
 EGM:
+  name: Eastern Gulf of Mexico
   products:
     Condensate (bbl):
       name: Condensate
@@ -276,6 +278,7 @@ EGM:
         '2010': 365
         '2011': 0
 WGM:
+  name: Western Gulf of Mexico
   products:
     Condensate (bbl):
       name: Condensate

@@ -316,6 +316,7 @@ data/offshore_federal_production_areas:
 		  year, \
 		  region_id, \
 		  area_id, \
+		  area_name, \
 		  product, product_name, units, \
 		  ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \

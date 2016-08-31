@@ -1,4 +1,5 @@
 SOC:
+  name: Southern California
   products:
     Condensate (bbl):
       name: Condensate

@@ -570,15 +570,17 @@ tables/all-production: data/all-production/product
 	rm $$tmp
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/company_revenue: data/_input/onrr/company-revenue
+tables/company_revenue: data/company/years
 	@$(call drop-table,company_revenue)
+	tmp=$^/all.ndjson; \
 	for company_filename in $^/????.tsv; do \
 		filename="$${company_filename##*/}"; \
-		COMPANY_YEAR="$${filename%%.*}" $(tables) \
-			-i $$company_filename \
-			-n company_revenue \
-			--config data/db/models/company_revenue.js; \
-	done
+		COMPANY_YEAR="$${filename%%.*}"; \
+		$(tito) -r tsv --map ./data/company/transform.js \
+			$$company_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n company_revenue && \
+	rm $$tmp
 
 tables/jobs: tables/bls tables/self_employment
 

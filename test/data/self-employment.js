@@ -1,4 +1,5 @@
 /* jshint node: true, mocha: true */
+/* jshint -W083 */
 /* jshint -W089 */
 /* jshint -W110 */
 var tito = require('tito');
@@ -174,8 +175,10 @@ describe('self employment data', function() {
                   }
                 }
                 // console.log(expectedByCounty)
-                expected.count[d.FIPS] = expectedByCounty.employment[year].count;
-                expected.percent[d.FIPS] = expectedByCounty.employment[year].percent;
+                expected.count[d.FIPS] = expectedByCounty
+                  .employment[year].count;
+                expected.percent[d.FIPS] = expectedByCounty
+                  .employment[year].percent;
               }
             } catch (error) {
               assert.ok(false, 'no data for: ' + JSON.stringify(d));
@@ -186,7 +189,9 @@ describe('self employment data', function() {
         for (var metric in actual) {
           for (var fips in actual[metric]) {
 
-            var difference = Math.abs(+actual[metric][fips] - +expected[metric][fips]);
+            var difference = Math.abs(
+              +actual[metric][fips] - +expected[metric][fips]
+            );
 
             if (metric === 'percent') {
               round = 0.01;
@@ -195,9 +200,10 @@ describe('self employment data', function() {
             }
             assert.ok(
               difference <= round,
-              (metric + ' ' + actual[metric][fips] + ' != ' + expected[metric][fips] +
-                ' for: ' + [fips, year].join('/')
-                )
+              [
+                metric, actual[metric][fips], '!=', expected[metric][fips],
+                'for:', [fips, year].join('/')
+              ].join(' ')
             );
           }
         }
@@ -206,7 +212,9 @@ describe('self employment data', function() {
       });
     });
 
-    it(year + " data doesn't contain values that aren't in the pivot table", function(done) {
+    var test = year + " data doesn't contain values that aren't" +
+               'in the pivot table';
+    it(test, function(done) {
       var actualCount;
       var actualPercent;
       var found;
@@ -224,8 +232,12 @@ describe('self employment data', function() {
         for (state in countySelfEmployment) {
           for (fips in countySelfEmployment[state]) {
             if (countySelfEmployment[state][fips].employment[year]) {
-              actualCount = countySelfEmployment[state][fips].employment[year].count;
-              actualPercent = countySelfEmployment[state][fips].employment[year].percent;
+              actualCount = countySelfEmployment[state][fips]
+                .employment[year]
+                .count;
+              actualPercent = countySelfEmployment[state][fips]
+                .employment[year]
+                .percent;
               found = rows.filter(filter);
             }
             assert.equal(
@@ -242,16 +254,18 @@ describe('self employment data', function() {
             var differencePercent = expectedPercent - actualPercent;
             assert.ok(
               Math.abs(differenceCount) <= 1,
-              'wrong count: ' + (actualCount + ' != ' + expectedCount + '\n' +
-                [state, fips, year].join('/')
-              )
+              [
+                'wrong count:', actualCount, '!=', expectedCount,
+                '\n' + [state, fips, year].join('/')
+              ].join(' ')
             );
 
             assert.ok(
               Math.abs(differencePercent) <= 1,
-              'wrong percent: ' + (actualPercent + ' != ' + expectedPercent + '\n' +
-                [state, fips, year].join('/')
-              )
+              [
+                'wrong percent:', actualPercent, '!=', expectedPercent,
+                '\n' + [state, fips, year].join('/')
+              ].join(' ')
             );
           }
         }

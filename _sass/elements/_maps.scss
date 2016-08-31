@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement
+// scss-lint:disable QualifyingElement, SelectorDepth
 svg.map {
   background: none;
   box-sizing: border-box;
@@ -13,42 +13,42 @@ svg.map {
     stroke-width: inherit;
   }
 
-  .mesh {
+  .mesh use {
     fill: none;
     pointer-events: none;
     stroke: $neutral-gray;
     stroke-width: 0.5;
   }
 
-  .states.features {
+  .states.features use {
     fill: $light-gray;
   }
 
-  .feature.offshore-area {
+  .feature.offshore-area use {
     fill: $green-land;
   }
 
-  .feature:not([fill]) {
+  .feature:not([fill]) use {
     fill-opacity: 0;
   }
 
-  .feature[fill] {
+  .feature[fill] use {
     fill-opacity: 1;
   }
 
-  .counties.features {
+  .counties.features use {
     fill: $white;
   }
 
-  .states.mesh {
+  .states.mesh use {
     stroke: $another-gray;
   }
 
-  .counties.mesh {
+  .counties.mesh use {
     stroke-width: 1;
   }
 
-  .feature.overlay {
+  .feature.overlay use {
     fill: none;
     pointer-events: none;
     stroke: $dark-gray;
@@ -88,13 +88,13 @@ svg.map {
       opacity: $opacity-federal;
     }
 
-    .counties.features {
+    .counties.features use {
       fill: $green-land;
     }
   }
 
   &.states.ownership {
-    .states.features {
+    .states.features use {
       fill: $green-land;
     }
   }
@@ -102,7 +102,7 @@ svg.map {
 
 svg.ownership {
   &.no-outlines {
-    .states.mesh {
+    .states.mesh use {
       stroke: $pale-blue;
       stroke-width: 1.5px;
     }
@@ -110,11 +110,11 @@ svg.ownership {
     &.state-page {
       padding-top: 0;
 
-      .states.features {
+      .states.features use {
         fill: transparent;
       }
 
-      .states.mesh {
+      .states.mesh use {
         stroke: transparent;
       }
     }
@@ -122,18 +122,18 @@ svg.ownership {
 }
 
 svg.case_studies {
-  .feature.offshore-area,
-  .feature.state {
+  .feature.offshore-area use,
+  .feature.state use {
     fill: $mid-blue;
   }
 
   &.no-outlines {
-    .states.mesh {
+    .states.mesh use {
       stroke: $pale-blue;
       stroke-width: 1.5px;
     }
 
-    .states.features {
+    .states.features use {
       fill: $mid-blue;
     }
   }

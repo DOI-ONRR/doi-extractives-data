@@ -1,3 +1,4 @@
+// scss-lint:disable QualifyingElement, SelectorDepth
 .state-page-nav-title {
   @include heading(large-caps);
   align-items: center;
@@ -8,14 +9,12 @@
   position: relative;
 
   svg.map {
-    .state.feature,
-    .offshore-area.feature {
+    .state.feature use,
+    .offshore-area.feature use {
       fill-opacity: 1;
     }
 
-
-
-    .states.features {
+    .states.features use {
       @include transition(all, 0.3s);
 
       fill: $neutral-gray;
@@ -23,7 +22,7 @@
       stroke: $neutral-gray;
     }
 
-    .offshore.features {
+    .offshore.features use {
       @include transition(all, 0.3s);
 
       fill: $mid-gray;
@@ -45,13 +44,13 @@
         visibility: visible;
       }
 
-      svg.map .states.features {
+      svg.map .states.features use {
         fill: $blackest-black;
         fill-opacity: 1;
         stroke: $blackest-black;
       }
 
-      svg.map .offshore.features {
+      svg.map .offshore.features use {
         fill: $dark-gray;
         fill-opacity: 1;
         stroke: $dark-gray;

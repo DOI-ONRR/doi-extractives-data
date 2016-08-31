@@ -23,7 +23,7 @@
       {% endif %}
     {% endfor %}
 
-    {% for _state in site.data.states %}
+    {% for _state in site.states %}
       {% if location_id == _state.id %}
         <g class="state feature">
           <use xlink:href="{{ _states_svg }}#state-{{ _state.id }}"></use>

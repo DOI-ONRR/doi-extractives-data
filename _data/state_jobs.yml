@@ -96,11 +96,11 @@ AZ:
     count: 8224
     percent: 0.35
   '2005':
-    count: 8477
-    percent: 0.34
+    count: 9025
+    percent: 0.36
   '2006':
-    count: 9716
-    percent: 0.37
+    count: 10153
+    percent: 0.39
   '2007':
     count: 11449
     percent: 0.43
@@ -108,14 +108,14 @@ AZ:
     count: 13475
     percent: 0.52
   '2009':
-    count: 11008
-    percent: 0.46
+    count: 11352
+    percent: 0.47
   '2010':
-    count: 10288
-    percent: 0.44
+    count: 10550
+    percent: 0.45
   '2011':
-    count: 11510
-    percent: 0.48
+    count: 11778
+    percent: 0.5
   '2012':
     count: 12559
     percent: 0.52

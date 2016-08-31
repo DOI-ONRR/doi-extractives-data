@@ -28,26 +28,22 @@ layout: default
 
   </div>
 
-  <div class="container-right-3">
-    <div class="sticky_nav" data-sticky-offset="50">
-      <h3 class="state-page-nav-title container">
-
-        <div class="nav-title">{{ region_name }}</div>
-        <figure is="data-map">
-
-          {%
-            include icon-map.html
-            location_id=region_id
-            highlighted_state=region_id
-            offshore=true
-          %}
-        </figure>
-        <label class="nav-prompt">Explore data main page</label>
-      </h3>
-      <nav class="sticky_nav-nav">
-        {% include case-studies/_nav-list.html %}
-      </nav>
-    </div>
+  <div class="sticky sticky_nav container-right-3">
+    <h3 class="state-page-nav-title container">
+      <div class="nav-title">{{ region_name }}</div>
+      <figure is="data-map">
+        {%
+          include icon-map.html
+          location_id=region_id
+          highlighted_state=region_id
+          offshore=true
+        %}
+      </figure>
+      <label class="nav-prompt">Explore data main page</label>
+    </h3>
+    <nav>
+      {% include case-studies/_nav-list.html %}
+    </nav>
   </div>
 
 </main>

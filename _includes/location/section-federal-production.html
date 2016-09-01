@@ -58,7 +58,6 @@
 
             <figure class="chart">
               <figcaption id="federal-production-figures-{{ product_slug }}">
-
                 <span class="caption-data">
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
@@ -73,8 +72,6 @@
                 <span class="caption-withheld" aria-hidden="true">
                   Data about how much {{ product_name | downcase }} was extracted in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
-
-
               </figcaption>
               <eiti-bar-chart
                 aria-controls="federal-production-figures-{{ product_slug }}"
@@ -83,7 +80,6 @@
                 x-value="{{ year }}"
                 data-units="{{ long_units }}">
               </eiti-bar-chart>
-
             </figure>
 
           </div><!-- /.chart-container -->

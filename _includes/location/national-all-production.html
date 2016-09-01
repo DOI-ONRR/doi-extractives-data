@@ -38,6 +38,13 @@
       <h3 class="chart-title"><span>{{ product_name }}</span></h3>
 
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="all-production-figures-{{ product_slug }}"
+          data='{{ production_values | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ long_units }}">
+        </eiti-bar-chart>
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
@@ -50,13 +57,6 @@
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="all-production-figures-{{ product_slug }}"
-          data='{{ production_values | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="{{ long_units }}">
-        </eiti-bar-chart>
       </figure>
     </section>
     {% endfor %}

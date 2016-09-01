@@ -2,7 +2,7 @@
 {% assign units = '$' %}
 {% assign year_range = '[2004, 2013]' %}
 {% assign revenue_commodities = site.data.offshore_revenue_regions[region_name].commodities %}
-{% assign county_revenue = site.data.offshore_revenue_areas[region_name] %}
+{% assign area_revenue = site.data.offshore_revenue_areas[region_name] %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
 {% assign units = '$' %}
 {% assign year_range = '[2004, 2013]' %}
@@ -90,7 +90,7 @@
         <section class="county-map-table">
           {%
             include location/offshore-federal-revenue-area.html
-            county_revenue=county_revenue
+            area_revenue=area_revenue
             state_revenue=revenue_commodities
             year=year
             year_range=year_range

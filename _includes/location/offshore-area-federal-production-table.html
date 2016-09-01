@@ -17,16 +17,16 @@
     </tr>
   </thead>
   <tbody>
-  {% for county in include.values %}
-    {% assign product_volume = county[1].products[product_ref].volume[include.year] %}
+  {% for area in include.values %}
+    {% assign product_volume = area[1].products[product_ref].volume[include.year] %}
 
-    {% assign years_values =  county[1].products[product_ref].volume %}
-    {% assign area_id = county[0] %}
+    {% assign years_values =  area[1].products[product_ref].volume %}
+    {% assign area_id = area[0] %}
     {% if years_values != null %}
       <tr data-fips='{{ area_id }}' data-year-values='{{ years_values | jsonify }}'>
         <td><div class='swatch'
                  data-value-swatch='{{ product_volume }}'
-                 data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
+                 data-year-values='{{ years_values | jsonify }}'></div>{{ area[1].name }}</td>
         <td data-value-text='{{ product_volume }}'
             data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
         <td class='numberless'
@@ -42,10 +42,10 @@
             aria-hidden='true'
             data-witheld="false">
             <span class="withheld" aria-hidden="true">
-              Data about {{ product_name | downcase }} extraction in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
+              Data about {{ product_name | downcase }} extraction in {{ area[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
             </span>
             <span class="has-data">
-              <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span>
+              <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ area[1].name }} from <span data-year='{{ year }}'>{{ year }}</span>
             </span>
           </td>
       </tr>

@@ -1,4 +1,4 @@
-{% assign county_revenue = include.county_revenue %}
+{% assign area_revenue = include.area_revenue %}
 {% assign state_revenue = include.state_revenue %}
 
 {% if include.year %}
@@ -68,7 +68,7 @@
             include offshore-area-map.html
             region_name=region_name
             region_id=region_id
-            areas=county_revenue
+            areas=area_revenue
             value=value_key
             years=years_key
             steps=steps
@@ -82,8 +82,9 @@
           {%
             include location/display-federal-revenue-county.html
             year=year
-            values=county_revenue
+            values=area_revenue
             caption=caption
+            locality_name=region_name
           %}
         </div><!-- /.table-container -->
       </figure>

@@ -553,7 +553,6 @@ tables/offshore_revenue: data/revenue/offshore.tsv
 
 tables/county_revenue: data/revenue/onshore.tsv
 	@$(call drop-table,county_revenue)
-	# $(call load-model,data/_input/onrr/county-revenues.tsv,county_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \

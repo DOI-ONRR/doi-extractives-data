@@ -93,7 +93,6 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 
 geo: \
 	geo/us-topology.json \
-	geo/us-topology-filtered.json \
 	geo/us-states.json \
 	geo/us-outline.json \
 	geo/offshore.json
@@ -108,16 +107,6 @@ geo/us-topology.json: geo/input/us-10m.json
 		--filter.counties '["AS", "GU", "PR", "VI"].indexOf(state) === -1' \
 		-o $@ -- $<
 	bin/add-state-names.js --states geo/input/states.csv $@
-
-# generate US topology for only those counties with data
-geo/us-topology-filtered.json: county/revenues.tsv geo/us-topology.json
-	mkdir -p $(dir $@)
-	bin/join-counties.js \
-		--in-topo geo/us-topology.json \
-		--in-states geo/input/states.csv \
-		--in-counties county/revenues.tsv \
-		--inner \
-		> $@
 
 geo/us-outline.json: geo/us-states.json
 	$(BIN)/topojson-merge \
@@ -146,8 +135,7 @@ svg: \
 	svg/land.svg \
 	svg/states.svg \
 	svg/counties.svg \
-	svg/offshore.svg \
-	svg/filtered.svg
+	svg/offshore.svg
 
 svg/all.svg: \
 		geo/us-topology.json \
@@ -170,10 +158,6 @@ svg/counties.svg: geo/us-topology.json
 		| bin/vectorize.js /dev/stdin > $@
 
 svg/offshore.svg: geo/offshore.json
-	mkdir -p $(dir $@)
-	bin/vectorize.js $< > $@
-
-svg/filtered.svg: geo/us-topology-filtered.json
 	mkdir -p $(dir $@)
 	bin/vectorize.js $< > $@
 

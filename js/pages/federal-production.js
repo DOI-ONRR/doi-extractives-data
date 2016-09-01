@@ -266,7 +266,8 @@
               id: d.Product,
               value: d.Volume,
               properties: {
-                name: d.Product
+                name: d.Product,
+                name_en: d.Product_en,
               }
             };
           });
@@ -422,17 +423,15 @@
       default:
         return returnBool
           ? false
-          : regionObj.properties.name || '(' + regionObj.id + ')';
+          : regionObj.properties[langEn ? 'name_en' : 'name'] || '(' + regionObj.id + ')';
     }
   }
 
   function updateRegionRow(selection, isState) {
     selection.select('.subregion-name .text')
       .text(function(f) {
-        if (!f.id) {
-          return isOffshore(f);
-        }
-        return REGION_ID_NAME[f.id];
+        if (!f.id) return isOffshore(f);
+        return REGION_ID_NAME[f.id] || isOffshore(f);
       });
 
     var values = selection.data()

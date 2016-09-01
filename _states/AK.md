@@ -6,6 +6,8 @@ FIPS: '02'
 opt_in: true
 priority: true
 
+state_revenue_year: 2015
+
 locality_name: 'Borough or Census Area'
 
 case_study_link: |

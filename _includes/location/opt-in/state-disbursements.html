@@ -1,4 +1,4 @@
-{% assign revenue_year = '2014' %}
+{% assign revenue_year = page.state_revenue_year | default: 2014 | to_s %}
 {% assign funds = site.data.opt_in_state_revenues[include.location_id].funds %}
 
 {% if funds.size > 0 %}
@@ -11,8 +11,8 @@
 {% endif %}
 
 <p>
-  In {{ year }}, <strong>${{ revenue_total | default: 0 | intcomma }}
-  in state revenue from natural resource extraction in 
+  In {{ revenue_year }}, <strong>${{ revenue_total | default: 0 | intcomma }}
+  in state revenue from natural resource extraction in
   {{ state_name }} was disbursed</strong>
   to {{ funds_count }} fund{{ funds_count | plural }}.
   In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes.

@@ -5,7 +5,6 @@ if (!STATE) {
 }
 
 // FIXME: where does this come from?
-const YEAR = 2014;
 const parse = require('../../../lib/parse');
 
 const SOURCE_COLUMN = 'Revenue Stream';
@@ -13,7 +12,10 @@ const SOURCE_COLUMN = 'Revenue Stream';
 // columns that *don't* represent a destination fund
 const FIXED_COLUMNS = [
   SOURCE_COLUMN,
-  'Type'
+  'Year',
+  'Year Type',
+  'Source',
+  'Type',
 ];
 
 /**
@@ -28,7 +30,7 @@ module.exports = function(row) {
     .map(function(key) {
       return {
         state:  STATE,
-        year:   YEAR,
+        year:   row.Year,
         source: row[SOURCE_COLUMN],
         type:   row.Type,
         dest:   key,

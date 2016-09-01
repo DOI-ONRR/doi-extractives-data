@@ -139,17 +139,17 @@ streams:
     Total:
       '2014': 20014889
     Common Schools:
-      '2014': 17611249.23
+      '2014': 17611249
     Public Land Trust:
-      '2014': 2395261.99
+      '2014': 2395262
     Public Buildings:
-      '2014': 6710.92
+      '2014': 6711
     Department of Transportation:
-      '2014': 1420.77
+      '2014': 1421
     Galen State Hospital:
-      '2014': 141.57
+      '2014': 142
     'Department of Fish, Wildlife, & Parks':
-      '2014': 104.52
+      '2014': 105
   Coal Gross Proceeds:
     Total:
       '2014': 18812015
@@ -183,9 +183,9 @@ streams:
     General Fund:
       '2014': 12568841
   Coal Royalties:
-    Common Schools:
-      '2014': 8130763.3
     Total:
+      '2014': 8130763
+    Common Schools:
       '2014': 8130763
   Wind Generation Property Tax:
     Total:
@@ -199,9 +199,9 @@ streams:
     Total:
       '2014': 3709204
     Common Schools:
-      '2014': 3076763.83
+      '2014': 3076764
     Public Land Trust:
-      '2014': 626639.71
+      '2014': 626640
     Montana State University Morrill:
       '2014': 2160
     Public Buildings:
@@ -214,33 +214,33 @@ streams:
     Total:
       '2014': 3035589
     Common Schools:
-      '2014': 2816125.86
+      '2014': 2816126
     Public Land Trust:
-      '2014': 48687.59
+      '2014': 48688
     School of Mines:
-      '2014': 41300.77
+      '2014': 41301
     Public Buildings:
-      '2014': 33403.35
+      '2014': 33403
     Pine Hills School:
       '2014': 28981
     Montana State University Morrill:
-      '2014': 18410.57
+      '2014': 18411
     State Normal School:
-      '2014': 17011.8
+      '2014': 17012
     University of Montana:
-      '2014': 11286.38
+      '2014': 11286
     School for Deaf and Blind:
       '2014': 5940
     Agricultural Experiment Station:
-      '2014': 4847.45
+      '2014': 4847
     Department of Transportation:
-      '2014': 3911.26
+      '2014': 3911
     Department of Natural Resources Conservation - Water Resources Division:
-      '2014': 2094.72
+      '2014': 2095
     Veterans Home Income:
-      '2014': 1913.41
+      '2014': 1913
     Montana State University 2nd Grant:
-      '2014': 1675.13
+      '2014': 1675
     'Department of Fish, Wildlife, & Parks':
       '2014': 100
   Resource Indemnity & Ground Water Asssessment Tax (RIGWAT):
@@ -262,23 +262,23 @@ streams:
     Total:
       '2014': 1654445
     Common Schools:
-      '2014': 1587749.35
+      '2014': 1587749
     Public Land Trust:
-      '2014': 43167.89
+      '2014': 43168
     Montana State University Morrill:
-      '2014': 8551.91
+      '2014': 8552
     Agricultural Experiment Station:
-      '2014': 5802.82
+      '2014': 5803
     Public Buildings:
-      '2014': 5019.5
+      '2014': 5020
     Department of Natural Resources Conservation - Water Resources Division:
-      '2014': 1854.3
+      '2014': 1854
     State Normal School:
-      '2014': 1296.92
+      '2014': 1297
     Department of Transportation:
-      '2014': 1000.68
+      '2014': 1001
     'Department of Fish, Wildlife, & Parks':
-      '2014': 1.6
+      '2014': 2
   Miscellaneous Mines Net Proceeds:
     Total:
       '2014': 1397619
@@ -290,44 +290,44 @@ streams:
     Total:
       '2014': 1350124
     Common Schools:
-      '2014': 1254421.22
+      '2014': 1254421
     Public Buildings:
-      '2014': 19070.7
+      '2014': 19071
     Public Land Trust:
-      '2014': 18979.17
+      '2014': 18979
     School of Mines:
-      '2014': 17987.65
+      '2014': 17988
     Pine Hills School:
-      '2014': 16026.45
+      '2014': 16026
     University of Montana:
       '2014': 12000
     Montana State University Morrill:
-      '2014': 3615.27
+      '2014': 3615
     School for Deaf and Blind:
       '2014': 2900
     Agricultural Experiment Station:
-      '2014': 2339.54
+      '2014': 2340
     Department of Natural Resources Conservation - Water Resources Division:
-      '2014': 1709.53
+      '2014': 1710
     Montana State University 2nd Grant:
-      '2014': 412.12
+      '2014': 412
     Department of Transportation:
-      '2014': 362.64
+      '2014': 363
     State Normal School:
       '2014': 300
   Condensate Royalty:
     Total:
       '2014': 165897
     Common Schools:
-      '2014': 141316.46
+      '2014': 141316
     Public Land Trust:
-      '2014': 24576.61
+      '2014': 24577
     'Department of Fish, Wildlife, & Parks':
-      '2014': 3.48
+      '2014': 3
   Coal Rentals / Bonuses:
-    Common Schools:
-      '2014': 49515.39
     Total:
+      '2014': 49515
+    Common Schools:
       '2014': 49515
   Land Use Licenses Rental Income:
     Total:
@@ -338,7 +338,7 @@ streams:
     Total:
       '2014': 12545
     Common Schools:
-      '2014': 12384.68
+      '2014': 12385
     Public Buildings:
       '2014': 160
   Non-Metalliferous Mineral Leases Rental Income:
@@ -352,24 +352,24 @@ streams:
     Total:
       '2014': 9950
     Common Schools:
-      '2014': 9177.16
+      '2014': 9177
     Department of Transportation:
-      '2014': 772.8
+      '2014': 773
   Oil & Gas Seismic Permits:
     Total:
       '2014': 5688
     Common Schools:
       '2014': 5688
   Metalliferous Mineral Lease Rental Income:
-    Common Schools:
-      '2014': 2842.08
     Total:
+      '2014': 2842
+    Common Schools:
       '2014': 2842
   Metalliferous Mineral Lease Royalty Income:
     Total:
       '2014': 1029
     Common Schools:
-      '2014': 1028.79
+      '2014': 1029
   Land Use Licenses Royalty Income:
     Total:
       '2014': 1000
@@ -467,35 +467,35 @@ funds:
     All:
       '2014': 34725031
     Oil Royalty:
-      '2014': 17611249.23
+      '2014': 17611249
     Coal Royalties:
-      '2014': 8130763.3
+      '2014': 8130763
     Oil & Gas Bonus Income:
-      '2014': 3076763.83
+      '2014': 3076764
     Oil & Gas Rental Income:
-      '2014': 2816125.86
+      '2014': 2816126
     Gas Royalty:
-      '2014': 1587749.35
+      '2014': 1587749
     Oil & Gas Penalty Income:
-      '2014': 1254421.22
+      '2014': 1254421
     Condensate Royalty:
-      '2014': 141316.46
+      '2014': 141316
     Coal Rentals / Bonuses:
-      '2014': 49515.39
+      '2014': 49515
     Land Use Licenses Rental Income:
       '2014': 14810
     Non-Metalliferous Mineral Leases Royalty Income:
-      '2014': 12384.68
+      '2014': 12385
     Non-Metalliferous Mineral Leases Rental Income:
       '2014': 10196
     Oil & Gas Surface Damages:
-      '2014': 9177.16
+      '2014': 9177
     Oil & Gas Seismic Permits:
       '2014': 5688
     Metalliferous Mineral Lease Rental Income:
-      '2014': 2842.08
+      '2014': 2842
     Metalliferous Mineral Lease Royalty Income:
-      '2014': 1028.79
+      '2014': 1029
     Land Use Licenses Royalty Income:
       '2014': 1000
   Coal Trust Fund:
@@ -548,17 +548,17 @@ funds:
     All:
       '2014': 3157313
     Oil Royalty:
-      '2014': 2395261.99
+      '2014': 2395262
     Oil & Gas Bonus Income:
-      '2014': 626639.71
+      '2014': 626640
     Oil & Gas Rental Income:
-      '2014': 48687.59
+      '2014': 48688
     Gas Royalty:
-      '2014': 43167.89
+      '2014': 43168
     Condensate Royalty:
-      '2014': 24576.61
+      '2014': 24577
     Oil & Gas Penalty Income:
-      '2014': 18979.17
+      '2014': 18979
   Shared Account:
     Coal Severance Tax:
       '2014': 3149120
@@ -643,13 +643,13 @@ funds:
     All:
       '2014': 66684
     Oil & Gas Rental Income:
-      '2014': 33403.35
+      '2014': 33403
     Oil & Gas Penalty Income:
-      '2014': 19070.7
+      '2014': 19071
     Oil Royalty:
-      '2014': 6710.92
+      '2014': 6711
     Gas Royalty:
-      '2014': 5019.5
+      '2014': 5020
     Oil & Gas Bonus Income:
       '2014': 1960
     Non-Metalliferous Mineral Leases Rental Income:
@@ -660,9 +660,9 @@ funds:
     All:
       '2014': 60168
     Oil & Gas Rental Income:
-      '2014': 41300.77
+      '2014': 41301
     Oil & Gas Penalty Income:
-      '2014': 17987.65
+      '2014': 17988
     Oil & Gas Bonus Income:
       '2014': 880
   Pine Hills School:
@@ -671,16 +671,16 @@ funds:
     Oil & Gas Rental Income:
       '2014': 28981
     Oil & Gas Penalty Income:
-      '2014': 16026.45
+      '2014': 16026
   Montana State University Morrill:
     All:
       '2014': 32738
     Oil & Gas Rental Income:
-      '2014': 18410.57
+      '2014': 18411
     Gas Royalty:
-      '2014': 8551.91
+      '2014': 8552
     Oil & Gas Penalty Income:
-      '2014': 3615.27
+      '2014': 3615
     Oil & Gas Bonus Income:
       '2014': 2160
   University of Montana:
@@ -689,27 +689,27 @@ funds:
     Oil & Gas Penalty Income:
       '2014': 12000
     Oil & Gas Rental Income:
-      '2014': 11286.38
+      '2014': 11286
     Oil & Gas Bonus Income:
       '2014': 800
   State Normal School:
     All:
       '2014': 18609
     Oil & Gas Rental Income:
-      '2014': 17011.8
+      '2014': 17012
     Gas Royalty:
-      '2014': 1296.92
+      '2014': 1297
     Oil & Gas Penalty Income:
       '2014': 300
   Agricultural Experiment Station:
     All:
       '2014': 12990
     Gas Royalty:
-      '2014': 5802.82
+      '2014': 5803
     Oil & Gas Rental Income:
-      '2014': 4847.45
+      '2014': 4847
     Oil & Gas Penalty Income:
-      '2014': 2339.54
+      '2014': 2340
   School for Deaf and Blind:
     All:
       '2014': 8840
@@ -721,49 +721,49 @@ funds:
     All:
       '2014': 7468
     Oil & Gas Rental Income:
-      '2014': 3911.26
+      '2014': 3911
     Oil Royalty:
-      '2014': 1420.77
+      '2014': 1421
     Gas Royalty:
-      '2014': 1000.68
+      '2014': 1001
     Oil & Gas Surface Damages:
-      '2014': 772.8
+      '2014': 773
     Oil & Gas Penalty Income:
-      '2014': 362.64
+      '2014': 363
   Department of Natural Resources Conservation - Water Resources Division:
     All:
       '2014': 5659
     Oil & Gas Rental Income:
-      '2014': 2094.72
+      '2014': 2095
     Gas Royalty:
-      '2014': 1854.3
+      '2014': 1854
     Oil & Gas Penalty Income:
-      '2014': 1709.53
+      '2014': 1710
   Montana State University 2nd Grant:
     All:
       '2014': 2087
     Oil & Gas Rental Income:
-      '2014': 1675.13
+      '2014': 1675
     Oil & Gas Penalty Income:
-      '2014': 412.12
+      '2014': 412
   Veterans Home Income:
     Oil & Gas Rental Income:
-      '2014': 1913.41
+      '2014': 1913
     All:
       '2014': 1913
   'Department of Fish, Wildlife, & Parks':
     All:
       '2014': 210
     Oil Royalty:
-      '2014': 104.52
+      '2014': 105
     Oil & Gas Rental Income:
       '2014': 100
     Condensate Royalty:
-      '2014': 3.48
+      '2014': 3
     Gas Royalty:
-      '2014': 1.6
+      '2014': 2
   Galen State Hospital:
     Oil Royalty:
-      '2014': 141.57
+      '2014': 142
     All:
       '2014': 42

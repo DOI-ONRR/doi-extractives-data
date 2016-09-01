@@ -5,6 +5,8 @@ FIPS: '30'
 
 opt_in: true
 
+state_revenue_year: 2014
+
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
 state_land_production: |

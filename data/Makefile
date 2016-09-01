@@ -32,8 +32,7 @@ PRODUCTION_FILES = \
 
 ALL_LANDS_PRODUCTION_FILES = \
 	production/natural-gas.tsv \
-	production/coal-county-all-production.tsv \
-	county-all-lands-production-by-state.tsv
+	production/coal-county-all-production.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -201,17 +200,6 @@ production/coal-county-all-production.tsv:
 		--countycoal $(input)eia/commodity/coal.tsv \
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@
-
-# breaks all lands production data down by-state
-# run
-# `make -B county-all-lands-production-by-state.tsv`
-# will compile to county/by-state/{{ State }}/all-production.tsv
-# where State is the value in County, production/coal-county-all-production.tsv
-county-all-lands-production-by-state.tsv: production/coal-county-all-production.tsv
-	$(tito) --read tsv $< \
-		| bin/divvy.js \
-			--path 'county/by-state/{{ State }}/all-production.tsv' \
-			--of tsv
 
 geo: \
 	geo/us-topology.json \

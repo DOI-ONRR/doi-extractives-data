@@ -37,10 +37,6 @@ GDP_FILES = \
 	gdp/US.tsv \
 	gdp/states.tsv
 
-JOBS_FILES = \
-	jobs/wage-salary.tsv \
-	jobs/self-employment.tsv
-
 ALL_LANDS_PRODUCTION_FILES = \
 	production/natural-gas.tsv \
 	production/coal-county-all-production.tsv \
@@ -54,7 +50,6 @@ FILES = \
 	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
-	$(JOBS_FILES) \
 	$(ALL_LANDS_PRODUCTION_FILES) \
 	geo svg
 
@@ -66,41 +61,7 @@ production: $(PRODUCTION_FILES)
 
 gdp: $(GDP_FILES)
 
-jobs: $(JOBS_FILES)
-
 all_production: $(ALL_LANDS_PRODUCTION_FILES)
-
-jobs/wage-salary.tsv:
-	bin/parse-bls.js _input/bls/????/joined.tsv \
-		| bin/abbr-state.js \
-			--if tsv \
-			--of tsv \
-			--states $(input)geo/states.csv \
-			--field State \
-			> $@
-
-jobs/state-wage-salary.tsv: jobs/wage-salary.tsv
-	mkdir -p $(dir $@)
-	$(tito) --read tsv $< | \
-		$(datex) --filter '!County' | \
-		$(tito) --write csv | \
-		csvcut -C County,FIPS | \
-		tito --read csv --write tsv > $@
-
-jobs-wage-salary-by-state: jobs/wage-salary.tsv
-	mkdir -p $(dir $@)
-	cat $< | bin/divvy.js \
-		--if tsv \
-		--of tsv \
-		--path 'jobs/by-state/{{ State }}/wage-salary.tsv'
-
-# national revenues by commodity and revenue type
-national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
-	mkdir -p $(dir $@)
-	bin/sum.js \
-		--group 'Year,Commodity,Type' \
-		--sum 'Revenue' \
-		-o $@ $^
 
 reconciliation/revenue.tsv: $(input)multiple-sources/reconciliation.tsv
 	mkdir -p $(dir $@)
@@ -134,16 +95,6 @@ gdp/US.tsv:
 gdp/regional.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-regional.js | \
-		bin/abbr-state.js \
-			--if tsv \
-			--of tsv \
-			--states $(input)geo/states.csv \
-			--field Region \
-			> $@
-
-jobs/self-employment.tsv:
-	mkdir -p $(dir $@)
-	bin/get-bea-jobs.js | \
 		bin/abbr-state.js \
 			--if tsv \
 			--of tsv \

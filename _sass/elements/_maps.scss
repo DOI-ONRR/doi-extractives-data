@@ -20,7 +20,8 @@ svg.map {
     stroke-width: 0.5;
   }
 
-  .states.features use {
+  .states.features use,
+  .regions.features use {
     fill: $light-gray;
   }
 
@@ -40,7 +41,8 @@ svg.map {
     fill: $white;
   }
 
-  .states.mesh use {
+  .states.mesh use,
+  .regions.mesh use {
     stroke: $another-gray;
   }
 
@@ -136,5 +138,11 @@ svg.case_studies {
     .states.features use {
       fill: $mid-blue;
     }
+  }
+}
+
+svg.icon {
+  .feature.offshore-area use {
+    fill: inherit;
   }
 }

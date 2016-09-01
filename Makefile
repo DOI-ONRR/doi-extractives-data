@@ -322,11 +322,12 @@ data/offshore_federal_production_regions.yml:
 data/offshore_federal_production_areas:
 	$(query) --format ndjson " \
 		SELECT \
-			year, \
-			region_id, \
-			area_id, \
-			product, product_name, units, \
-			ROUND(volume) AS volume \
+		  year, \
+		  region_id, \
+		  area_id, \
+		  area_name, \
+		  product, product_name, units, \
+		  ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \
 		WHERE \
 			region_id IS NOT NULL AND \
@@ -412,6 +413,19 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
+data/offshore_revenues_by_type.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  region_id, commodity, revenue_type, year, \
+		  ROUND(revenue) AS revenue \
+		FROM offshore_region_revenue_type \
+		WHERE revenue IS NOT NULL \
+		ORDER BY \
+			region_id, revenue DESC, commodity, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/offshore_revenues_by_type.yml \
+			-o _$@
+
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -429,16 +443,16 @@ data/offshore_revenue_regions.yml:
 data/offshore_revenue_areas:
 	$(query) --format ndjson " \
 		SELECT \
-			commodity, year, \
-			region_id, area_id, \
-			ROUND(revenue) AS revenue \
+		  commodity, year, \
+		  region_id, area_id, area_name, \
+		  ROUND(revenue) AS revenue \
 		FROM offshore_area_revenue \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
 			revenue DESC, commodity, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/offshore_revenue_areas.yml \
-			-o '_$@/{area_id}.yml'
+			-o '_$@/{region_id}.yml'
 
 data/top_state_products:
 	# top N states for each product category in each year
@@ -466,12 +480,12 @@ data/top_state_products:
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
-			state, product, \
-			product AS name, units, \
-			ROUND(percent, 2), rank, year, \
-			ROUND(volume, 2) AS value, \
-			(100 - rank) AS order_value, \
-			'all_production' AS category \
+		  state, product, \
+		  product AS name, units, \
+		  ROUND(percent, 2), rank, year, \
+		  ROUND(volume, 2) AS value, \
+		  (100 - rank) AS order_value, \
+		  'all_production' AS category \
 		FROM all_production_state_rank \
 		WHERE (rank <= $${top}) \
 			AND year > 2004 \

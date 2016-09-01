@@ -1,14 +1,14 @@
 <select
   id="location-selector"
-  onchange="window.location = '{{ site.baseurl }}/' + this.value">
+  onchange="window.location = '{{ site.baseurl }}' + this.value">
   <optgroup label="States">
     {% for state in site.states %}
-    <option value="explore/{{ state.id }}">{{ state.title }}</option>
+    <option value="{{ state.url }}">{{ state.title }}</option>
     {% endfor %}
   </optgroup>
-  <optgroup label="Offshore Areas">
-    {% for area in site.offshore_areas %}
-    <option value="offshore/{{ area.id }}">{{ area.title }}</option>
+  <optgroup label="Offshore Regions">
+    {% for region in site.offshore_regions %}
+    <option value="{{ region.url }}">{{ region.title }}</option>
     {% endfor %}
   </optgroup>
 </select>

@@ -1,9 +1,23 @@
 ---
 layout: default
+nav_items:
+  - name: production
+    title: Production
+    subnav_items:
+      - name: federal-production
+        title: Federal waters
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal revenue
 ---
 
 {% assign region_name = page.title %}
 {% assign region_id = page.id %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign year = '2013' %}
+{% assign _viewbox = site.data.viewboxes_offshore[region_id] %}
 
 <main id="offshore-region-{{ region_id }}" class="container-page-wrapper layout-state-pages">
   <div class="container-left-9">
@@ -13,28 +27,34 @@ layout: default
     </div>
     <h1 id="title">{{ region_name }}</h1>
 
+    <section id="production">
+      <h2>Production</h2>
+      {% include
+        location/offshore-region-federal-production.html
+        region_name=region_name
+      %}
+    </section>
+
+    {% include location/offshore-region-revenue.html %}
+
   </div>
 
-  <div class="container-right-3">
-    <div class="sticky_nav" data-sticky-offset="50">
-      <h3 class="state-page-nav-title container">
-
-        <div class="nav-title">{{ region_name }}</div>
-        <figure is="data-map">
-
-          {%
-            include icon-map.html
-            location_id=region_id
-            highlighted_state=region_id
-            offshore=true
-          %}
-        </figure>
-        <label class="nav-prompt">Explore data main page</label>
-      </h3>
-      <nav class="sticky_nav-nav">
-        {% include case-studies/_nav-list.html %}
-      </nav>
-    </div>
+  <div class="sticky sticky_nav container-right-3">
+    <h3 class="state-page-nav-title container">
+      <div class="nav-title">{{ region_name }}</div>
+      <figure is="data-map">
+        {%
+          include icon-map.html
+          location_id=region_id
+          highlighted_state=region_id
+          offshore=true
+        %}
+      </figure>
+      <label class="nav-prompt">Explore data main page</label>
+    </h3>
+    <nav>
+      {% include case-studies/_nav-list.html %}
+    </nav>
   </div>
 
 </main>

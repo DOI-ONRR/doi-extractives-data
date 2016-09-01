@@ -54,7 +54,9 @@ ORDER BY
 DROP TABLE IF EXISTS federal_offshore_area_production;
 CREATE TABLE federal_offshore_area_production AS
     SELECT
-        year, area.region AS region_id, area.id AS area_id,
+        year, area.region AS region_id,
+        area.id AS area_id,
+        area.name AS area_name,
         CASE
             WHEN LOWER(product) == 'salt (ton)'
             THEN 'Salt (tons)'
@@ -76,7 +78,7 @@ CREATE TABLE federal_offshore_area_production AS
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, region_id, area_id, product, product_name, units
+        year, region_id, area_id, area_name, product, product_name, units
     ORDER BY
         year, product, product_name, units, volume DESC;
 

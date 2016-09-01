@@ -5,7 +5,7 @@ var options = require('yargs')
   })
   .option('year', {
     desc: 'year or year range',
-    default: '2004-2013'
+    default: '2006-2015'
   })
   .option('of', {
     desc: 'output format (tito-compatible)',

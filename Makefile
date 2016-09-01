@@ -47,8 +47,6 @@ site-data: \
 	data/state_exports.yml \
 	data/national_exports.yml \
 	data/state_federal_production.yml \
-	data/state_gdp.yml \
-	data/national_gdp.yml \
 	data/state_revenues.yml \
 	data/national_federal_production.yml \
 	data/opt_in_state_revenues \
@@ -112,6 +110,9 @@ data/national_exports.yml:
 			-c _meta/national_exports.yml \
 			-o _$@
 
+data/gdp: \
+	data/state_gdp.yml \
+	data/national_gdp.yml
 
 data/state_gdp.yml:
 	$(query) --format ndjson " \

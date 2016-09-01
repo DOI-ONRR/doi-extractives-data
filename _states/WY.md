@@ -16,11 +16,9 @@ state_land_production: |
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a primary source of income for the state of Wyoming.
 state_revenue_sustainability: |
-    Natural resources provide a significant source of revenue for state and local governments in Wyoming. In 2014, the revenue streams outlined on this page contributed $641M to the state’s general fund, almost half of the state’s total general fund revenues. The total contributions from the revenue streams identified in the graph below only represent natural resource revenues not previously earmarked for other purposes. The portion of natural resource revenues earmarked for other purposes are automatically distributed according to statute and include distributions to fund education, construction, counties, and cities.
+    In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, accounting for between up to a quarter of general fund revenues.
 
-    These figures, and the graph below, reflect revenues at the state level; revenue sustainability considerations are magnified at the local level. You can read more about the impact of natural resources at a local level in USEITI’s county case studies. To read more about the impact of extractives income on Wyoming’s general fund, including future projections, see the latest report from Wyoming’s Consensus Revenue Estimating Group (CREG). 
-
-    Over the last ten years, Wyoming’s general fund revenues from the extractive industries have doubled from $315M to $640M. The percentage of total general fund revenues from extraction has also increased 8% in that time, fluctuating between a low of 33% in 2009 and a high of 46% in 2014. Severance tax revenues hold particular importance for Wyoming, accounting for between a fifth and a quarter of all general fund revenues.
+    To read more about the impact of revenue from the extractive industries on Wyoming’s general fund, including future projections, see reports produced by Wyoming's [Consensus Revenue Estimating Group](http://eadiv.state.wy.us/creg/creg.html).
 state_tax_expenditures: |
     Wyoming does not report information on total tax expenditures, and does not have tax expenditures associated with oil and gas.
 state_disbursements: |

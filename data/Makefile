@@ -31,8 +31,7 @@ PRODUCTION_FILES = \
 	regional/production.tsv
 
 ALL_LANDS_PRODUCTION_FILES = \
-	production/natural-gas.tsv \
-	production/coal-county-all-production.tsv
+	production/natural-gas.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -183,21 +182,6 @@ production/all-production.tsv:
 		--naturalgas $(input)eia/commodity/naturalgas.tsv \
 		--oil $(input)eia/commodity/oil.tsv \
 		--coal $(input)eia/commodity/coal.tsv \
-		--renewables $(input)eia/commodity/renewables.tsv \
-		> $@
-
-# all lands production (county-level and state-level)
-# run
-# `make -B production/coal-county-all-production.tsv`
-# will compile to production/coal-county-all-production.tsv
-production/coal-county-all-production.tsv:
-	mkdir -p $(dir $@)
-	bin/group-all-production.js \
-		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
-		--naturalgas $(input)eia/commodity/naturalgas.tsv \
-		--oil $(input)eia/commodity/oil.tsv \
-		--coal $(input)eia/commodity/coal.tsv \
-		--countycoal $(input)eia/commodity/coal.tsv \
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@
 

@@ -54,12 +54,6 @@ company/revenue:
 			$$file > "$@/$${file##*/}"; \
 	done
 
-# state listing
-state/states.tsv: geo/input/states.csv
-	$(tito) --read csv $< | \
-		$(datex) --map '{id: abbr, name: name, FIPS: FIPS}' | \
-		$(tito) --write tsv > $@
-
 # state revenues by commodity and revenue type
 state/revenues.tsv: county/revenues.tsv
 	mkdir -p $(dir $@)

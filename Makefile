@@ -1,4 +1,4 @@
-db ?= data.db
+db ?= .data.db
 db_url ?= sqlite://$(db)
 
 node_bin ?= ./node_modules/.bin/

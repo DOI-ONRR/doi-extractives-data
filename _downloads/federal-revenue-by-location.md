@@ -16,13 +16,13 @@ Download calendar year data:
   <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
    Offshore dataset (xlsx, 321 KB)
   </a></li>
-  <li><a href="{{site.baseurl}}/data/offshore/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{site.baseurl}}/data/revenue/offshore.tsv"><icon class="icon-cloud icon-padded"></icon>
   Offshore dataset (tsv)
   </a></li>
   <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (xlsx, 1.1 MB)
   </a></li>
-  <li><a href="{{site.baseurl}}/data/county/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{site.baseurl}}/data/revenue/onshore.tsv"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (tsv)
   </a></li>
 </ul>

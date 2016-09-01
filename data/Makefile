@@ -23,7 +23,6 @@ REVENUE_FILES = \
 
 # production volume files
 PRODUCTION_FILES = \
-	national/production.tsv \
 	state/production.tsv \
 	county-products-by-state \
 	county-production-by-state \
@@ -54,14 +53,6 @@ company/revenue:
 			--of tsv \
 			$$file > "$@/$${file##*/}"; \
 	done
-
-# national production volumes by commodity and product
-national/production.tsv: state/production.tsv offshore/production.tsv
-	mkdir -p $(dir $@)
-	bin/sum.js \
-		--group 'Year,Commodity,Product' \
-		--sum 'Volume' \
-		-o $@ $^
 
 # state listing
 state/states.tsv: geo/input/states.csv

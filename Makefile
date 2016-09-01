@@ -529,10 +529,17 @@ tables/offshore_planning_areas: data/_input/geo/offshore/areas.tsv
 	$(call load-table,$^,offshore_planning_areas)
 
 tables/revenue: \
-	tables/county_revenue
-	@$(call drop-table,offshore_revenue)
-	$(call load-model,data/_input/onrr/offshore-revenues.tsv,offshore_revenue)
+	tables/county_revenue \
+	tables/offshore_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
+
+tables/offshore_revenue: data/revenue/offshore.tsv
+	@$(call drop-table,offshore_revenue)
+	tmp=$^.ndjson; \
+	$(tito) -r tsv --map ./data/revenue/transform-offshore.js \
+		$^ > $$tmp && \
+	$(tables) -i $$tmp -t ndjson -n offshore_revenue && \
+	rm $$tmp
 
 tables/county_revenue: data/revenue/onshore.tsv
 	@$(call drop-table,county_revenue)

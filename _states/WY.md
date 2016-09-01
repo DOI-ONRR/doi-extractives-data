@@ -75,12 +75,12 @@ Wyoming rules and regulations are maintained by the Office of the Secretary of S
 
 In addition to generating revenue, extractive industries can bring costs to state and local communities.
 
-Depending on the state, differences in revenue collection between states and counties can illuminate state distribution of those funds to counties to help them address those costs. 
+<!-- Differences in revenue collection between states and counties can illuminate state distribution of those funds to counties to help them address those costs. -->
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
 * The USEITI case study on [Campbell County](../../case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
-* Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient to balance the fiscal costs of extractive activity in the county, rather than whether enough state or local taxes are paid by the companies participating in extraction.
+* Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
 

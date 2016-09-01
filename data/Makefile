@@ -31,11 +31,6 @@ PRODUCTION_FILES = \
 	offshore/production.tsv \
 	regional/production.tsv
 
-# GDP figures from the Bureau of Economic Analysis
-GDP_FILES = \
-	gdp/US.tsv \
-	gdp/states.tsv
-
 ALL_LANDS_PRODUCTION_FILES = \
 	production/natural-gas.tsv \
 	production/coal-county-all-production.tsv \
@@ -57,8 +52,6 @@ all: $(FILES)
 revenue: $(REVENUE_FILES)
 
 production: $(PRODUCTION_FILES)
-
-gdp: $(GDP_FILES)
 
 all_production: $(ALL_LANDS_PRODUCTION_FILES)
 
@@ -86,21 +79,6 @@ national/production.tsv: state/production.tsv offshore/production.tsv
 		--sum 'Volume' \
 		-o $@ $^
 
-# national GDP figures
-gdp/US.tsv:
-	mkdir -p $(dir $@)
-	bin/get-bea-data.js --geo us -o $@
-
-gdp/regional.tsv:
-	mkdir -p $(dir $@)
-	bin/get-bea-regional.js | \
-		bin/abbr-state.js \
-			--if tsv \
-			--of tsv \
-			--states $(input)geo/states.csv \
-			--field Region \
-			> $@
-
 # state listing
 state/states.tsv: $(input)geo/states.csv
 	$(tito) --read csv $< | \
@@ -122,11 +100,6 @@ state/production.tsv: county/production.tsv
 		--group 'Year,State,Commodity,Product' \
 		--sum 'Volume' \
 		-o $@ $<
-
-# state GDP figures
-gdp/states.tsv:
-	mkdir -p $(dir $@)
-	bin/get-bea-data.js --geo state -o $@
 
 # offshore revenues by region and area
 offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
@@ -353,6 +326,6 @@ distclean: clean
 	cd $(input)geo/offshore && make distclean
 
 .PHONY: \
-	revenue production gdp \
+	revenue production \
 	geo \
 	svg

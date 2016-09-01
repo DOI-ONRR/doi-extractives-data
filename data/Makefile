@@ -23,8 +23,6 @@ REVENUE_FILES = \
 # production volume files
 PRODUCTION_FILES = \
 	state/production.tsv \
-	county-products-by-state \
-	county-production-by-state \
 	offshore/production.tsv
 
 # a list of all of the individual files to build.
@@ -93,25 +91,6 @@ county/revenues.tsv: $(input)onrr/county-revenues.tsv
 		| bin/normalize-county-revenues.js \
 			--in-states geo/input/states.csv \
 		| $(tito) --write tsv > $@
-
-# divvy up county revenues into separate files by state
-county-production-by-state: county/production.tsv
-	$(tito) --read tsv $< \
-		| bin/divvy.js \
-			--path 'county/by-state/{{ State }}/production.tsv' \
-			--of tsv
-
-# divvy up county revenues into separate files by state
-county-products-by-state: county/production.tsv
-	$(tito) --read tsv $< \
-		| bin/sum.js \
-			--if ndjson \
-			--group 'Year,State,County,FIPS' \
-			--count 'Volume' \
-			--of ndjson \
-		| bin/divvy.js \
-			--path 'county/by-state/{{ State }}/products.tsv' \
-			--of tsv
 
 # county production volumes
 county/production.tsv: $(input)onrr/regional-production.tsv

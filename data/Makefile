@@ -19,7 +19,6 @@ REVENUE_FILES = \
 	county/revenues.tsv \
 	offshore/revenues.tsv \
 	regional/revenues.tsv \
-	county-revenues-by-state \
 	company/revenue \
 	reconciliation/revenue.tsv
 
@@ -178,13 +177,6 @@ county/counties.tsv: geo/us-topology.json
 		$(datex) --map '{state: state, name: county, FIPS: FIPS}' | \
 		$(tito) --write tsv > $@
 
-# divvy up counties.csv into separate files by state
-counties-by-state: county/counties.tsv
-	$(tito) --read tsv $< \
-		| bin/divvy.js \
-			--path 'county/by-state/{{ state }}/counties.tsv' \
-			--of tsv
-
 # county revenues
 county/revenues.tsv: $(input)onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
@@ -192,13 +184,6 @@ county/revenues.tsv: $(input)onrr/county-revenues.tsv
 		| bin/normalize-county-revenues.js \
 			--in-states $(input)geo/states.csv \
 		| $(tito) --write tsv > $@
-
-# divvy up county revenues into separate files by state
-county-revenues-by-state: county/revenues.tsv
-	$(tito) --read tsv $< \
-		| bin/divvy.js \
-			--path 'county/by-state/{{ State }}/revenues.tsv' \
-			--of tsv
 
 # divvy up county revenues into separate files by state
 county-production-by-state: county/production.tsv
@@ -369,7 +354,5 @@ distclean: clean
 
 .PHONY: \
 	revenue production gdp \
-	counties-by-state \
-	county-revenues-by-state \
 	geo \
 	svg

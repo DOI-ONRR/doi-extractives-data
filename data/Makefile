@@ -3,10 +3,6 @@ BIN = ../node_modules/.bin
 
 SHELL = bash
 
-# commonly used executables
-tito = $(BIN)/tito
-datex = $(BIN)/datex
-
 # force TopoJSON to use spherical projections
 topo_options ?= --spherical --bbox
 

@@ -3,8 +3,6 @@ BIN = ../node_modules/.bin
 
 SHELL = bash
 
-input ?= _input/
-
 # commonly used executables
 tito = $(BIN)/tito
 datex = $(BIN)/datex
@@ -14,21 +12,13 @@ topo_options ?= --spherical --bbox
 
 # revenue-related files
 REVENUE_FILES = \
-	county/revenues.tsv \
-	offshore/revenues.tsv \
 	company/revenue
-
-# production volume files
-PRODUCTION_FILES = \
-	state/production.tsv \
-	offshore/production.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
 FILES = \
 	$(REVENUE_FILES) \
-	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
 	geo svg
@@ -37,59 +27,14 @@ all: $(FILES)
 
 revenue: $(REVENUE_FILES)
 
-production: $(PRODUCTION_FILES)
-
 company/revenue:
 	mkdir -p $@
-	for file in $(input)onrr/company-revenue/*.tsv; do \
+	for file in company/revenue/*.tsv; do \
 		bin/parse-company-revenue.js \
 			--if tsv \
 			--of tsv \
 			$$file > "$@/$${file##*/}"; \
 	done
-
-# state production volumes by commodity and product
-state/production.tsv: county/production.tsv
-	mkdir -p $(dir $@)
-	bin/sum.js \
-		--group 'Year,State,Commodity,Product' \
-		--sum 'Volume' \
-		-o $@ $<
-
-# offshore revenues by region and area
-offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
-	mkdir -p $(dir $@)
-	bin/group-offshore-revenues.js \
-		--keys Year/Region/Area/Commodity/Type \
-		$< > $@
-
-# offshore production volumes by region and area
-# FIXME: revisit whether we need this when we get new production data
-offshore/production.tsv: $(input)onrr/regional-production.tsv
-	mkdir -p $(dir $@)
-	$(tito) --read tsv $< \
-		| $(datex) --filter 'Shore === "Offshore"' \
-		| $(tito) --write tsv \
-		| bin/group-offshore-production.js \
-			--keys Year/Region/Area/Commodity/Product \
-			> $@
-
-# county revenues
-county/revenues.tsv: $(input)onrr/county-revenues.tsv
-	mkdir -p $(dir $@)
-	$(tito) --read tsv $< \
-		| bin/normalize-county-revenues.js \
-			--in-states geo/input/states.csv \
-		| $(tito) --write tsv > $@
-
-# county production volumes
-county/production.tsv: $(input)onrr/regional-production.tsv
-	mkdir -p $(dir $@)
-	$(tito) --read tsv $< \
-		| $(datex) --filter 'Shore === "Onshore"' \
-		| bin/normalize-county-production.js \
-			--in-states geo/input/states.csv \
-		| tito --write tsv > $@
 
 geo: \
 	geo/us-topology.json \
@@ -175,6 +120,6 @@ distclean: clean
 	cd geo/input/offshore && make distclean
 
 .PHONY: \
-	revenue production \
+	revenue \
 	geo \
 	svg

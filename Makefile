@@ -25,15 +25,15 @@ collections/regional: \
 	collections/offshore_areas \
 	collections/offshore_regions
 
-collections/states: data/_input/geo/states.csv
+collections/states: data/geo/input/states.csv
 	$(tito) -r csv --map 'd => {{id: d.abbr, title: d.name, FIPS: d.FIPS}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _states
 
-collections/offshore_areas: data/_input/geo/offshore/areas.tsv
+collections/offshore_areas: data/geo/input/offshore/areas.tsv
 	$(tito) -r tsv --map 'd => {{id: d.id, title: d.name, region: d.region.toLowerCase(), permalink: ["/offshore", d.region.toLowerCase(), d.id, ""].join("/")}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_areas
 
-collections/offshore_regions: data/_input/geo/offshore/regions.tsv
+collections/offshore_regions: data/geo/input/offshore/regions.tsv
 	$(tito) -r tsv --map 'd => {{id: d.id, title: d.region}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_regions
 
@@ -540,15 +540,15 @@ tables/geo: \
 	tables/offshore_regions \
 	tables/offshore_planning_areas
 
-tables/states: data/_input/geo/states.csv
+tables/states: data/geo/input/states.csv
 	@$(call drop-table,states)
 	$(call load-table,$^,states)
 
-tables/offshore_regions: data/_input/geo/offshore/regions.tsv
+tables/offshore_regions: data/geo/input/offshore/regions.tsv
 	@$(call drop-table,offshore_regions)
 	$(call load-table,$^,offshore_regions)
 
-tables/offshore_planning_areas: data/_input/geo/offshore/areas.tsv
+tables/offshore_planning_areas: data/geo/input/offshore/areas.tsv
 	@$(call drop-table,offshore_planning_areas)
 	$(call load-table,$^,offshore_planning_areas)
 

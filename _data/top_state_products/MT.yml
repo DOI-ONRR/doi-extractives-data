@@ -1,3 +1,207 @@
+all_production:
+  '2007':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 43389833
+      rank: 5
+      percent: 3.78
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 9364336
+      rank: 5
+      percent: 3.78
+  '2008':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 9999557
+      rank: 5
+      percent: 3.92
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 44785700
+      rank: 5
+      percent: 3.82
+  '2009':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 39485837
+      rank: 5
+      percent: 3.67
+  '2010':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 44732165
+      rank: 5
+      percent: 4.13
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 9414662
+      rank: 5
+      percent: 3.62
+  '2012':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 11283465
+      rank: 5
+      percent: 4.08
+  '2014':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 11482751
+      rank: 5
+      percent: 4.43
+federal_production:
+  '2006':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18072165
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 36278425
+      rank: 1
+      percent: 0
+  '2007':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18777497
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 38636643
+      rank: 1
+      percent: 0
+  '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 19316074
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 39448812
+      rank: 1
+      percent: 0
+  '2009':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17319320
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 36983711
+      rank: 1
+      percent: 0
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17741873
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 31098740
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17214337
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 25105364
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16004122
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18259544
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 16480119
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15751371
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 15703781
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 15041899
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 3691769
+      rank: 1
+      percent: 0
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 14477637
+      rank: 1
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13773524
+      rank: 1
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 3363275
+      rank: 1
+      percent: 0
 revenue:
   '2006':
     - product: Coal
@@ -195,207 +399,3 @@ revenue:
       value: 4227
       rank: 4
       percent: 0.04
-federal_production:
-  '2006':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 18072165
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 36278425
-      rank: 1
-      percent: 0
-  '2007':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 18777497
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 38636643
-      rank: 1
-      percent: 0
-  '2008':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 19316074
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 39448812
-      rank: 1
-      percent: 0
-  '2009':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 17319320
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 36983711
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 17741873
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 31098740
-      rank: 1
-      percent: 0
-  '2011':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 17214337
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 25105364
-      rank: 1
-      percent: 0
-  '2012':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 16004122
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 18259544
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 16480119
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15751371
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 15703781
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15041899
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 3691769
-      rank: 1
-      percent: 0
-  '2015':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 14477637
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13773524
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 3363275
-      rank: 1
-      percent: 0
-all_production:
-  '2007':
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 43389833
-      rank: 5
-      percent: 3.78
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 9364336
-      rank: 5
-      percent: 3.78
-  '2008':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 9999557
-      rank: 5
-      percent: 3.92
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 44785700
-      rank: 5
-      percent: 3.82
-  '2009':
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 39485837
-      rank: 5
-      percent: 3.67
-  '2010':
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 44732165
-      rank: 5
-      percent: 4.13
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 9414662
-      rank: 5
-      percent: 3.62
-  '2012':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 11283465
-      rank: 5
-      percent: 4.08
-  '2014':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 11482751
-      rank: 5
-      percent: 4.43

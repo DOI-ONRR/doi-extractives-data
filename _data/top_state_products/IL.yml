@@ -1,3 +1,37 @@
+all_production:
+  '2012':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 7726809.69
+      rank: 5
+      percent: 5.49
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 48486048
+      rank: 5
+      percent: 4.77
+  '2013':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 9625229
+      rank: 5
+      percent: 5.73
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 52147193
+      rank: 5
+      percent: 5.29
+  '2014':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 57969300
+      rank: 5
+      percent: 5.8
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -89,37 +123,3 @@ revenue:
       value: 3454.87
       rank: 5
       percent: 0.02
-all_production:
-  '2012':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 7726809.69
-      rank: 5
-      percent: 5.49
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 48486048
-      rank: 5
-      percent: 4.77
-  '2013':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 9625229
-      rank: 5
-      percent: 5.73
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 52147193
-      rank: 5
-      percent: 5.29
-  '2014':
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 57969300
-      rank: 5
-      percent: 5.8

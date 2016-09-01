@@ -1,3 +1,123 @@
+all_production:
+  '2006':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 11242372.01
+      rank: 5
+      percent: 3.89
+  '2008':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 85547
+      rank: 5
+      percent: 0.58
+  '2009':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 75950
+      rank: 5
+      percent: 0.51
+  '2010':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 71841
+      rank: 5
+      percent: 0.47
+  '2011':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 13404799
+      rank: 5
+      percent: 4.2
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 63490
+      rank: 5
+      percent: 0.41
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 74676
+      rank: 5
+      percent: 0.48
+federal_production:
+  '2006':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 2381392
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 2324385
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 2424258
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 3423741
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 3523585
+      rank: 1
+      percent: 0
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4690032
+      rank: 1
+      percent: 0
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4467766
+      rank: 1
+      percent: 0
+  '2013':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4960123
+      rank: 1
+      percent: 0
+  '2014':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 5777094
+      rank: 1
+      percent: 100
+  '2015':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 4903855
+      rank: 1
+      percent: 0
 revenue:
   '2006':
     - product: Phosphate
@@ -147,123 +267,3 @@ revenue:
       value: 135420
       rank: 5
       percent: 0.97
-federal_production:
-  '2006':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 2381392
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 2324385
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 2424258
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 3423741
-      rank: 1
-      percent: 100
-  '2010':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 3523585
-      rank: 1
-      percent: 0
-  '2011':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 4690032
-      rank: 1
-      percent: 0
-  '2012':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 4467766
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 4960123
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 5777094
-      rank: 1
-      percent: 100
-  '2015':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 4903855
-      rank: 1
-      percent: 0
-all_production:
-  '2006':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 11242372.01
-      rank: 5
-      percent: 3.89
-  '2008':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 85547
-      rank: 5
-      percent: 0.58
-  '2009':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 75950
-      rank: 5
-      percent: 0.51
-  '2010':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 71841
-      rank: 5
-      percent: 0.47
-  '2011':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 13404799
-      rank: 5
-      percent: 4.2
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 63490
-      rank: 5
-      percent: 0.41
-  '2012':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 74676
-      rank: 5
-      percent: 0.48

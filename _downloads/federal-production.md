@@ -15,9 +15,8 @@ breadcrumb:
 <p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
   <ul class="downloads-download_links">
     <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
-    <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
-    <li><a href="{{site.baseurl}}/data/state/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by state (tsv)</a></li>
-    <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by county (tsv)</a></li>
+    <li><a href="{{site.baseurl}}/data/federal-production/offshore.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
+    <li><a href="{{site.baseurl}}/data/federal-production/onshore.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by state (tsv)</a></li>
   </ul>
 </p>
 

@@ -1,4 +1,4 @@
-db ?= data.db
+db ?= .data.db
 db_url ?= sqlite://$(db)
 
 node_bin ?= ./node_modules/.bin/
@@ -25,44 +25,38 @@ collections/regional: \
 	collections/offshore_areas \
 	collections/offshore_regions
 
-collections/states: data/_input/geo/states.csv
+collections/states: data/geo/input/states.csv
 	$(tito) -r csv --map 'd => {{id: d.abbr, title: d.name, FIPS: d.FIPS}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _states
 
-collections/offshore_areas: data/_input/geo/offshore/areas.tsv
+collections/offshore_areas: data/geo/input/offshore/areas.tsv
 	$(tito) -r tsv --map 'd => {{id: d.id, title: d.name, region: d.region.toLowerCase(), permalink: ["/offshore", d.region.toLowerCase(), d.id, ""].join("/")}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_areas
 
-collections/offshore_regions: data/_input/geo/offshore/regions.tsv
+collections/offshore_regions: data/geo/input/offshore/regions.tsv
 	$(tito) -r tsv --map 'd => {{id: d.id, title: d.region}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_regions
 
 site-data: \
 	data/jobs \
 	data/revenue \
-	data/state_all_production.yml \
-	data/national_all_production.yml \
-	data/federal_county_production \
-	data/federal_disbursements.yml \
-	data/state_exports.yml \
-	data/national_exports.yml \
-	data/state_federal_production.yml \
-	data/state_gdp.yml \
-	data/national_gdp.yml \
-	data/state_revenues.yml \
-	data/national_federal_production.yml \
-	data/opt_in_state_revenues \
+	data/all_production \
+	data/federal_production \
+	data/exports \
 	data/top_state_products
 
+data/all_production: tables/all_production \
+	data/national_all_production.yml \
+	data/state_all_production.yml
 
 data/state_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, year, \
-		  product, units, \
-		  ROUND(volume) AS volume, \
-		  ROUND(percent, 2) AS percent, \
-		  rank \
+			state, year, \
+			product, units, \
+			ROUND(volume) AS volume, \
+			ROUND(percent, 2) AS percent, \
+			rank \
 		FROM all_production_state_rank \
 		ORDER BY \
 			state, product, year" \
@@ -73,9 +67,9 @@ data/state_all_production.yml:
 data/national_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  year, \
-		  product, units, \
-		  ROUND(volume) AS volume \
+			year, \
+			product, units, \
+			ROUND(volume) AS volume \
 		FROM all_national_production \
 		ORDER BY \
 			product, year" \
@@ -83,13 +77,17 @@ data/national_all_production.yml:
 		-c _meta/national_all_production.yml \
 		-o _$@
 
+data/exports: tables/exports \
+	data/state_exports.yml \
+	data/national_exports.yml
+
 data/state_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, year, \
-		  ROUND(value, 2) AS dollars, \
-		  ROUND(share * 100, 2) AS percent, \
-		  commodity \
+			state, year, \
+			ROUND(value, 2) AS dollars, \
+			ROUND(share * 100, 2) AS percent, \
+			commodity \
 		FROM exports \
 		WHERE \
 			state != 'US' \
@@ -101,22 +99,25 @@ data/state_exports.yml:
 data/national_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  'US' AS state, year, \
-		  SUM(ROUND(value, 2)) AS dollars, \
-		  commodity \
+			'US' AS state, year, \
+			SUM(ROUND(value, 2)) AS dollars, \
+			commodity \
 		FROM exports \
 		GROUP BY year, commodity" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_exports.yml \
 			-o _$@
 
+data/gdp: tables/gdp \
+	data/state_gdp.yml \
+	data/national_gdp.yml
 
 data/state_gdp.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region AS state, year, \
-		  value AS dollars, \
-		  ROUND(share * 100, 2) as percent \
+			region AS state, year, \
+			value AS dollars, \
+			ROUND(share * 100, 2) as percent \
 		FROM gdp \
 		WHERE \
 			region != 'US' \
@@ -128,9 +129,9 @@ data/state_gdp.yml:
 data/national_gdp.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region AS state, year, \
-		  value AS dollars, \
-		  ROUND(share * 100, 2) as percent \
+			region AS state, year, \
+			value AS dollars, \
+			ROUND(share * 100, 2) as percent \
 		FROM gdp \
 		WHERE \
 			region == 'US' \
@@ -149,12 +150,12 @@ data/jobs: \
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region_id AS state, year, \
-		  extractive_jobs AS jobs, \
-		  ROUND(percent, 2) AS percent \
+			region_id AS state, year, \
+			extractive_jobs AS jobs, \
+			ROUND(percent, 2) AS percent \
 		FROM state_bls_employment \
 		WHERE \
-		  region_id IS NOT NULL \
+			region_id IS NOT NULL \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -163,12 +164,12 @@ data/state_jobs.yml:
 data/national_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region_id AS state, year, \
-		  extractive_jobs AS jobs, \
-		  ROUND(percent, 2) AS percent \
+			region_id AS state, year, \
+			extractive_jobs AS jobs, \
+			ROUND(percent, 2) AS percent \
 		FROM national_bls_employment \
 		WHERE \
-		  region_id IS NOT NULL \
+			region_id IS NOT NULL \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \
@@ -177,16 +178,16 @@ data/national_jobs.yml:
 data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
-		  region_id AS state, \
-		  SUBSTR('0' || fips, -5, 5) AS fips, \
-		  county, \
-		  year, \
-		  extractive_jobs AS jobs, \
-		  ROUND(percent, 2) AS percent \
+			region_id AS state, \
+			SUBSTR('0' || fips, -5, 5) AS fips, \
+			county, \
+			year, \
+			extractive_jobs AS jobs, \
+			ROUND(percent, 2) AS percent \
 		FROM bls_employment \
 		WHERE \
-		  region_id IS NOT NULL AND \
-		  county IS NOT NULL \
+			region_id IS NOT NULL AND \
+			county IS NOT NULL \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_jobs.yml \
@@ -196,13 +197,13 @@ data/county_jobs:
 data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region AS state, year, \
-		  jobs, \
-		  ROUND(share, 2) AS percent \
+			region AS state, year, \
+			jobs, \
+			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
-		  region IS NOT NULL AND \
-		  region != 'US' \
+			region IS NOT NULL AND \
+			region != 'US' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -211,72 +212,81 @@ data/state_self_employment.yml:
 data/national_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region AS state, year, \
-		  jobs, \
-		  ROUND(share, 2) AS percent \
+			region AS state, year, \
+			jobs, \
+			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
-		  region IS NOT NULL AND \
-		  region == 'US' \
+			region == 'US' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
 			-o _$@
 
 data/revenue: \
-	data/national_revenues.yml \
-	data/state_revenues.yml \
 	data/county_revenue \
-	data/state_revenues_by_type.yml \
+	data/national_revenues.yml \
 	data/national_revenues_by_type.yml \
-	data/offshore_revenue_regions.yml \
-	data/offshore_revenue_areas \
-	data/offshore_revenues_by_type.yml \
+	# data/offshore_revenue_areas \
+	# data/offshore_revenue_regions.yml \
+	data/opt_in_state_revenues \
+	data/state_revenues.yml \
+	data/state_revenues_by_type.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, \
-		  SUBSTR('0' || fips, -5, 5) AS fips, \
-		  county, \
-		  year, \
-		  ROUND(revenue) AS revenue \
+			state, \
+			SUBSTR('0' || fips, -5, 5) AS fips, \
+			county, \
+			year, \
+			ROUND(revenue) AS revenue \
 		FROM county_revenue \
 		WHERE \
-		  state IS NOT NULL AND \
-		  county IS NOT NULL \
+			state IS NOT NULL AND \
+			county IS NOT NULL \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_revenue.yml \
 			-o '_$@/{state}.yml'
 
+data/disbursements: \
+	data/federal_disbursements.yml
+
 data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region, source, fund, year, \
-		  ROUND(dollars, 2) AS dollars \
+			region, source, fund, year, \
+			ROUND(dollars, 2) AS dollars \
 		FROM federal_disbursements \
 		WHERE \
-		  dollars > 0 \
+			dollars > 0 \
 		ORDER BY year, dollars DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/federal_disbursements.yml \
 			-o _$@
 
+data/federal_production: \
+	data/federal_county_production \
+	data/national_federal_production.yml \
+	data/offshore_federal_production_areas \
+	data/offshore_federal_production_regions.yml \
+	data/state_federal_production.yml
+
 data/state_federal_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, product, product_name, units, year, \
-		  ROUND(volume) AS volume, \
-		  CASE \
+			state, product, product_name, units, year, \
+			ROUND(volume) AS volume, \
+			CASE \
 				WHEN volume IS NULL \
 				THEN null \
 				ELSE ROUND(volume) \
 			END AS volume, \
-		  ROUND(percent, 2) AS percent, rank \
+			ROUND(percent, 2) AS percent, rank \
 		FROM federal_production_state_rank \
 		WHERE \
-		  state != 'Withheld' \
+			state != 'Withheld' \
 		ORDER BY \
 			state, product, product_name, units, year" \
 		| $(nestly) --if ndjson \
@@ -287,8 +297,8 @@ data/state_federal_production.yml:
 data/national_federal_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  product, product_name, units, year, \
-		  ROUND(volume) AS volume \
+			product, product_name, units, year, \
+			ROUND(volume) AS volume \
 		FROM federal_national_production \
 		ORDER BY \
 			product, product_name, units, year" \
@@ -332,18 +342,18 @@ data/offshore_federal_production_areas:
 data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, \
-		  SUBSTR('0' || fips, -5, 5) AS fips, \
-		  county, \
-		  year, \
-		  product, product_name, units, \
-		  ROUND(volume) AS value \
+			state, \
+			SUBSTR('0' || fips, -5, 5) AS fips, \
+			county, \
+			year, \
+			product, product_name, units, \
+			ROUND(volume) AS value \
 		FROM federal_county_production \
 		WHERE \
-		  state IS NOT NULL AND \
-		  state != 'Withheld' AND \
-		  county IS NOT NULL AND \
-		  product IS NOT NULL \
+			state IS NOT NULL AND \
+			state != 'Withheld' AND \
+			county IS NOT NULL AND \
+			product IS NOT NULL \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_production.yml \
@@ -353,10 +363,10 @@ data/federal_county_production:
 data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, commodity, year, \
-		  ROUND(percent, 1) AS percent, \
-		  ROUND(revenue) AS revenue, \
-		  rank \
+			state, commodity, year, \
+			ROUND(percent, 1) AS percent, \
+			ROUND(revenue) AS revenue, \
+			rank \
 		FROM state_revenue_rank \
 		ORDER BY \
 			state, commodity, year" \
@@ -367,8 +377,8 @@ data/state_revenues.yml:
 data/national_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  commodity, year, \
-		  ROUND(revenue) AS revenue \
+			commodity, year, \
+			ROUND(revenue) AS revenue \
 		FROM national_revenue \
 		WHERE year IS NOT NULL \
 		ORDER BY \
@@ -380,8 +390,8 @@ data/national_revenues.yml:
 data/state_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, commodity, revenue_type, year, \
-		  ROUND(revenue) AS revenue \
+			state, commodity, revenue_type, year, \
+			ROUND(revenue) AS revenue \
 		FROM state_revenue_type \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
@@ -393,8 +403,8 @@ data/state_revenues_by_type.yml:
 data/national_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  commodity, revenue_type, year, \
-		  ROUND(revenue) AS revenue \
+			commodity, revenue_type, year, \
+			ROUND(revenue) AS revenue \
 		FROM national_revenue_type \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
@@ -419,9 +429,9 @@ data/offshore_revenues_by_type.yml:
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  commodity, year, \
-		  region_id, \
-		  ROUND(revenue) AS revenue \
+			commodity, year, \
+			region_id, \
+			ROUND(revenue) AS revenue \
 		FROM offshore_region_revenue \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
@@ -449,22 +459,22 @@ data/top_state_products:
 	top=5 percent=20; \
 	$(query) --format ndjson " \
 		SELECT \
-		  state, commodity AS product, \
-		  NULL AS name, NULL AS units, \
-		  ROUND(percent, 2) AS percent, rank, year, \
-		  ROUND(revenue, 2) AS value, \
-		  revenue AS order_value, \
-		  'revenue' AS category \
+			state, commodity AS product, \
+			NULL AS name, NULL AS units, \
+			ROUND(percent, 2) AS percent, rank, year, \
+			ROUND(revenue, 2) AS value, \
+			revenue AS order_value, \
+			'revenue' AS category \
 		FROM state_revenue_rank \
 		WHERE rank <= $${top} \
 	UNION \
 		SELECT \
-		  state, product, \
-		  product_name AS name, units, \
-		  ROUND(percent, 2), rank, year, \
-		  ROUND(volume, 2) AS value, \
-		  (100 - rank) AS order_value, \
-		  'federal_production' AS category \
+			state, product, \
+			product_name AS name, units, \
+			ROUND(percent, 2), rank, year, \
+			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
+			'federal_production' AS category \
 		FROM federal_production_state_rank \
 		WHERE (rank <= $${top}) \
 			AND LENGTH(state) = 2 \
@@ -479,7 +489,9 @@ data/top_state_products:
 		FROM all_production_state_rank \
 		WHERE (rank <= $${top}) \
 			AND year > 2004 \
-	ORDER BY state, year, order_value DESC, percent DESC" \
+	ORDER BY \
+		category, state, year, \
+		order_value DESC, percent DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/top_state_products.yml \
 			-o '_$@/{state}.yml'
@@ -487,9 +499,9 @@ data/top_state_products:
 data/land_stats.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  s.state AS state, \
-		  COALESCE(state.abbr, 'US') AS region_id, \
-		  state_acres, federal_acres, federal_percent \
+			s.state AS state, \
+			COALESCE(state.abbr, 'US') AS region_id, \
+			state_acres, federal_acres, federal_percent \
 		FROM land_stats AS s \
 		LEFT JOIN states AS state ON \
 			state.name = s.state" \
@@ -515,8 +527,8 @@ db: $(db)
 $(db): \
 	tables/geo \
 	tables/revenue \
-	tables/federal-production \
-	tables/all-production \
+	tables/federal_production \
+	tables/all_production \
 	tables/company_revenue \
 	tables/jobs \
 	tables/gdp \
@@ -530,33 +542,39 @@ tables/geo: \
 	tables/offshore_regions \
 	tables/offshore_planning_areas
 
-tables/states: data/_input/geo/states.csv
+tables/states: data/geo/input/states.csv
 	@$(call drop-table,states)
 	$(call load-table,$^,states)
 
-tables/offshore_regions: data/_input/geo/offshore/regions.tsv
+tables/offshore_regions: data/geo/input/offshore/regions.tsv
 	@$(call drop-table,offshore_regions)
 	$(call load-table,$^,offshore_regions)
 
-tables/offshore_planning_areas: data/_input/geo/offshore/areas.tsv
+tables/offshore_planning_areas: data/geo/input/offshore/areas.tsv
 	@$(call drop-table,offshore_planning_areas)
 	$(call load-table,$^,offshore_planning_areas)
 
 tables/revenue: \
-	tables/county_revenue
-	@$(call drop-table,offshore_revenue)
-	$(call load-model,data/_input/onrr/offshore-revenues.tsv,offshore_revenue)
+	tables/county_revenue \
+	tables/offshore_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
+
+tables/offshore_revenue: data/revenue/offshore.tsv
+	@$(call drop-table,offshore_revenue)
+	tmp=$^.ndjson; \
+	$(tito) -r tsv --map ./data/revenue/transform-offshore.js \
+		$^ > $$tmp && \
+	$(tables) -i $$tmp -t ndjson -n offshore_revenue && \
+	rm $$tmp
 
 tables/county_revenue: data/revenue/onshore.tsv
 	@$(call drop-table,county_revenue)
-	# $(call load-model,data/_input/onrr/county-revenues.tsv,county_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
 
-tables/federal-production: \
+tables/federal_production: \
 	tables/federal_county_production \
 	tables/federal_offshore_production
 	@$(call load-sql,data/federal-production/rollup.sql)
@@ -575,7 +593,7 @@ tables/federal_offshore_production: data/federal-production/offshore.tsv
 	$(tables) -t ndjson -n federal_offshore_production -i $$tmp && \
 	rm $$tmp
 
-tables/all-production: data/all-production/product
+tables/all_production: data/all-production/product
 	@$(call drop-table,all_production)
 	tmp=$^/all.ndjson; \
 	for tsv in $^/*.tsv; do \

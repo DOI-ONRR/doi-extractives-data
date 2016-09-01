@@ -1,272 +1,434 @@
-revenue:
+all_production:
   '2006':
-    - product: All
-      name: null
-      units: null
-      value: 118383934.61
-      rank: 5
-      percent: 0.95
-    - product: Oil
-      name: null
-      units: null
-      value: 93078519.83
-      rank: 3
-      percent: 2.18
-    - product: Geothermal
-      name: null
-      units: null
-      value: 11530130.39
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 494572
       rank: 1
-      percent: 85.31
-    - product: Sodium
-      name: null
-      units: null
-      value: 4886819.35
+      percent: 97.41
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 12821434
+      rank: 1
+      percent: 88.01
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4882801
       rank: 2
-      percent: 15.92
+      percent: 18.36
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 48047380.08
+      rank: 2
+      percent: 16.61
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2294495.48
+      rank: 2
+      percent: 14.25
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 223015000
+      rank: 3
+      percent: 12.01
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3422092.89
+      rank: 3
+      percent: 8.83
   '2007':
-    - product: All
-      name: null
-      units: null
-      value: 130722864.91
-      rank: 5
-      percent: 1.15
-    - product: Oil
-      name: null
-      units: null
-      value: 106117353.1
-      rank: 3
-      percent: 2.4
-    - product: Geothermal
-      name: null
-      units: null
-      value: 17230512.95
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 556969
       rank: 1
-      percent: 45.08
-    - product: Sodium
-      name: null
-      units: null
-      value: 1829249.93
+      percent: 91.04
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 12990710.99
+      rank: 1
+      percent: 88.75
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 5584933.35
       rank: 2
-      percent: 12.96
-    - product: Potassium
-      name: null
-      units: null
-      value: 3459.76
+      percent: 16.21
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2305228.31
+      rank: 2
+      percent: 13.95
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 218518000
       rank: 3
-      percent: 0.04
+      percent: 11.79
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 27327750.89
+      rank: 3
+      percent: 11.04
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3407415.56
+      rank: 3
+      percent: 8.73
   '2008':
-    - product: All
-      name: null
-      units: null
-      value: 186332798.47
-      rank: 5
-      percent: 0.81
-    - product: Oil
-      name: null
-      units: null
-      value: 162991005.13
-      rank: 3
-      percent: 2.79
     - product: Geothermal
-      name: null
-      units: null
-      value: 12442621.18
+      name: Geothermal
+      units: Mwh
+      value: 12883000
+      rank: 1
+      percent: 86.81
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 670481
+      rank: 1
+      percent: 77.57
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2361945.99
+      rank: 1
+      percent: 13.32
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 5384954.89
       rank: 2
-      percent: 28.04
-    - product: Sodium
-      name: null
-      units: null
-      value: 2294657.68
+      percent: 9.73
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3483554.95
       rank: 2
-      percent: 11
-    - product: Potassium
-      name: null
-      units: null
-      value: 3502.04
+      percent: 9.34
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 214533000
+      rank: 3
+      percent: 11.72
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 24127809.62
       rank: 4
-      percent: 0.03
+      percent: 9.47
   '2009':
-    - product: Oil
-      name: null
-      units: null
-      value: 85178526.2
-      rank: 3
-      percent: 2.87
     - product: Geothermal
-      name: null
-      units: null
-      value: 8144363.62
+      name: Geothermal
+      units: Mwh
+      value: 12852783
+      rank: 1
+      percent: 85.64
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 647389.56
+      rank: 1
+      percent: 72.64
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2467660.26
+      rank: 1
+      percent: 13.38
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3732015.55
+      rank: 1
+      percent: 10.35
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 207262000
       rank: 3
-      percent: 26.11
-    - product: Sodium
-      name: null
-      units: null
-      value: 2334640.13
-      rank: 2
-      percent: 13.47
+      percent: 10.61
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 27888036.33
+      rank: 3
+      percent: 10.2
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 5839813.24
+      rank: 3
+      percent: 7.9
   '2010':
-    - product: All
-      name: null
-      units: null
-      value: 138257599.92
-      rank: 5
-      percent: 1.32
-    - product: Oil
-      name: null
-      units: null
-      value: 118066622.83
-      rank: 3
-      percent: 2.31
     - product: Geothermal
-      name: null
-      units: null
-      value: 9242587.56
+      name: Geothermal
+      units: Mwh
+      value: 12600098
       rank: 1
-      percent: 49.84
-    - product: Sodium
-      name: null
-      units: null
-      value: 2779733.38
+      percent: 82.79
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 769330.95
+      rank: 1
+      percent: 63.47
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2450782.71
+      rank: 1
+      percent: 12.96
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3550877.37
+      rank: 1
+      percent: 9.55
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33430870.02
       rank: 2
-      percent: 16.1
+      percent: 12.85
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 200050000
+      rank: 3
+      percent: 10.01
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 6078632
+      rank: 3
+      percent: 6.42
   '2011':
-    - product: Oil
-      name: null
-      units: null
-      value: 173536665.82
-      rank: 3
-      percent: 2.7
     - product: Geothermal
-      name: null
-      units: null
-      value: 7877984.03
+      name: Geothermal
+      units: Mwh
+      value: 12552383
       rank: 1
-      percent: 50.07
-    - product: Sodium
-      name: null
-      units: null
-      value: 4292524.93
+      percent: 81.96
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 888829.4
+      rank: 1
+      percent: 48.9
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2584692.84
+      rank: 1
+      percent: 13.45
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 42557466.88
       rank: 2
-      percent: 13.97
+      percent: 13.33
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3444683.22
+      rank: 2
+      percent: 9.2
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 193996000
+      rank: 3
+      percent: 9.42
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 7751837
+      rank: 3
+      percent: 6.45
   '2012':
-    - product: All
-      name: null
-      units: null
-      value: 215687561.01
-      rank: 5
-      percent: 1.71
-    - product: Oil
-      name: null
-      units: null
-      value: 184759238.51
-      rank: 3
-      percent: 2.78
-    - product: Sodium
-      name: null
-      units: null
-      value: 9377847.36
-      rank: 2
-      percent: 17.96
     - product: Geothermal
-      name: null
-      units: null
-      value: 9137139.17
+      name: Geothermal
+      units: Mwh
+      value: 12518999
       rank: 1
-      percent: 60.49
-    - product: NGL
-      name: null
-      units: null
-      value: 2863883.72
-      rank: 5
-      percent: 0.52
-    - product: Sulfur
-      name: null
-      units: null
-      value: 514.96
-      rank: 4
-      percent: 0.03
+      percent: 80.44
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 1382299.86
+      rank: 1
+      percent: 31.95
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2513721.12
+      rank: 1
+      percent: 12.68
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3797595.99
+      rank: 1
+      percent: 10.05
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 26837370.41
+      rank: 3
+      percent: 9.72
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 197211000
+      rank: 3
+      percent: 8.31
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 9754229.67
+      rank: 3
+      percent: 6.93
   '2013':
-    - product: Oil
-      name: null
-      units: null
-      value: 183762630.38
-      rank: 3
-      percent: 2.61
     - product: Geothermal
-      name: null
-      units: null
-      value: 9487250.27
+      name: Geothermal
+      units: Mwh
+      value: 12306571
       rank: 1
-      percent: 62.65
-    - product: Sodium
-      name: null
-      units: null
-      value: 8742905.04
-      rank: 2
-      percent: 16.62
-    - product: Sulfur
-      name: null
-      units: null
-      value: 123.84
+      percent: 78.01
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3813724.79
+      rank: 1
+      percent: 42.21
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2843202.84
+      rank: 1
+      percent: 13.65
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3792073.16
+      rank: 1
+      percent: 9.47
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 12822060.43
+      rank: 3
+      percent: 7.64
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 198928000
+      rank: 3
+      percent: 7.33
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 23754599.48
       rank: 4
-      percent: 0.03
+      percent: 8.84
   '2014':
-    - product: Oil
-      name: null
-      units: null
-      value: 161588021.04
-      rank: 4
-      percent: 9.65
     - product: Geothermal
-      name: null
-      units: null
-      value: 11185009.69
+      name: Geothermal
+      units: Mwh
+      value: 12101728
       rank: 1
-      percent: 65.09
-    - product: Sodium
-      name: null
-      units: null
-      value: 7868551.95
-      rank: 2
-      percent: 17.76
-    - product: Sulfur
-      name: null
-      units: null
-      value: 115.98
-      rank: 5
-      percent: 0.03
-    - product: Potassium
-      name: null
-      units: null
-      value: 39.63
-      rank: 4
-      percent: 0
-  '2015':
-    - product: Oil
-      name: null
-      units: null
-      value: 76891906.5
-      rank: 4
-      percent: 7.22
-    - product: Geothermal
-      name: null
-      units: null
-      value: 8673011.13
+      percent: 76.22
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 9931814.86
       rank: 1
-      percent: 61.89
-    - product: Sodium
-      name: null
-      units: null
-      value: 7991051.23
-      rank: 2
-      percent: 17.94
-    - product: Sulfur
-      name: null
-      units: null
-      value: 111.69
+      percent: 56.14
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2913292.18
+      rank: 1
+      percent: 13.46
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3977424.66
+      rank: 1
+      percent: 9.39
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 12992497.58
       rank: 3
-      percent: null
+      percent: 7.15
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 204269000
+      rank: 3
+      percent: 6.43
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 16531340.16
+      rank: 4
+      percent: 6.37
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 12341211.47
+      rank: 1
+      percent: 73.6
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 15006628.37
+      rank: 1
+      percent: 56.69
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2842870.07
+      rank: 1
+      percent: 13.02
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4078430.05
+      rank: 1
+      percent: 9.63
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 201738000
+      rank: 3
+      percent: 5.86
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 12228414.36
+      rank: 4
+      percent: 6.4
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 13860989.92
+      rank: 4
+      percent: 5.52
 federal_production:
   '2006':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
@@ -830,434 +992,272 @@ federal_production:
       value: null
       rank: 1
       percent: null
-all_production:
+revenue:
   '2006':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 494572
-      rank: 1
-      percent: 97.41
+    - product: All
+      name: null
+      units: null
+      value: 118383934.61
+      rank: 5
+      percent: 0.95
+    - product: Oil
+      name: null
+      units: null
+      value: 93078519.83
+      rank: 3
+      percent: 2.18
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12821434
+      name: null
+      units: null
+      value: 11530130.39
       rank: 1
-      percent: 88.01
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 4882801
+      percent: 85.31
+    - product: Sodium
+      name: null
+      units: null
+      value: 4886819.35
       rank: 2
-      percent: 18.36
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 48047380.08
-      rank: 2
-      percent: 16.61
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2294495.48
-      rank: 2
-      percent: 14.25
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 223015000
-      rank: 3
-      percent: 12.01
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3422092.89
-      rank: 3
-      percent: 8.83
+      percent: 15.92
   '2007':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 556969
-      rank: 1
-      percent: 91.04
+    - product: All
+      name: null
+      units: null
+      value: 130722864.91
+      rank: 5
+      percent: 1.15
+    - product: Oil
+      name: null
+      units: null
+      value: 106117353.1
+      rank: 3
+      percent: 2.4
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12990710.99
+      name: null
+      units: null
+      value: 17230512.95
       rank: 1
-      percent: 88.75
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 5584933.35
+      percent: 45.08
+    - product: Sodium
+      name: null
+      units: null
+      value: 1829249.93
       rank: 2
-      percent: 16.21
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2305228.31
-      rank: 2
-      percent: 13.95
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 218518000
-      rank: 3
-      percent: 11.79
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 27327750.89
-      rank: 3
-      percent: 11.04
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3407415.56
-      rank: 3
-      percent: 8.73
-  '2008':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12883000
-      rank: 1
-      percent: 86.81
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 670481
-      rank: 1
-      percent: 77.57
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2361945.99
-      rank: 1
-      percent: 13.32
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 5384954.89
-      rank: 2
-      percent: 9.73
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3483554.95
-      rank: 2
-      percent: 9.34
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 214533000
-      rank: 3
-      percent: 11.72
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 24127809.62
-      rank: 4
-      percent: 9.47
-  '2009':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12852783
-      rank: 1
-      percent: 85.64
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 647389.56
-      rank: 1
-      percent: 72.64
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2467660.26
-      rank: 1
-      percent: 13.38
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3732015.55
-      rank: 1
-      percent: 10.35
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 207262000
-      rank: 3
-      percent: 10.61
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 27888036.33
-      rank: 3
-      percent: 10.2
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 5839813.24
-      rank: 3
-      percent: 7.9
-  '2010':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12600098
-      rank: 1
-      percent: 82.79
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 769330.95
-      rank: 1
-      percent: 63.47
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2450782.71
-      rank: 1
       percent: 12.96
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3550877.37
-      rank: 1
-      percent: 9.55
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 33430870.02
+    - product: Potassium
+      name: null
+      units: null
+      value: 3459.76
+      rank: 3
+      percent: 0.04
+  '2008':
+    - product: All
+      name: null
+      units: null
+      value: 186332798.47
+      rank: 5
+      percent: 0.81
+    - product: Oil
+      name: null
+      units: null
+      value: 162991005.13
+      rank: 3
+      percent: 2.79
+    - product: Geothermal
+      name: null
+      units: null
+      value: 12442621.18
       rank: 2
-      percent: 12.85
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 200050000
+      percent: 28.04
+    - product: Sodium
+      name: null
+      units: null
+      value: 2294657.68
+      rank: 2
+      percent: 11
+    - product: Potassium
+      name: null
+      units: null
+      value: 3502.04
+      rank: 4
+      percent: 0.03
+  '2009':
+    - product: Oil
+      name: null
+      units: null
+      value: 85178526.2
       rank: 3
-      percent: 10.01
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 6078632
+      percent: 2.87
+    - product: Geothermal
+      name: null
+      units: null
+      value: 8144363.62
       rank: 3
-      percent: 6.42
+      percent: 26.11
+    - product: Sodium
+      name: null
+      units: null
+      value: 2334640.13
+      rank: 2
+      percent: 13.47
+  '2010':
+    - product: All
+      name: null
+      units: null
+      value: 138257599.92
+      rank: 5
+      percent: 1.32
+    - product: Oil
+      name: null
+      units: null
+      value: 118066622.83
+      rank: 3
+      percent: 2.31
+    - product: Geothermal
+      name: null
+      units: null
+      value: 9242587.56
+      rank: 1
+      percent: 49.84
+    - product: Sodium
+      name: null
+      units: null
+      value: 2779733.38
+      rank: 2
+      percent: 16.1
   '2011':
+    - product: Oil
+      name: null
+      units: null
+      value: 173536665.82
+      rank: 3
+      percent: 2.7
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12552383
+      name: null
+      units: null
+      value: 7877984.03
       rank: 1
-      percent: 81.96
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 888829.4
-      rank: 1
-      percent: 48.9
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2584692.84
-      rank: 1
-      percent: 13.45
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 42557466.88
+      percent: 50.07
+    - product: Sodium
+      name: null
+      units: null
+      value: 4292524.93
       rank: 2
-      percent: 13.33
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3444683.22
-      rank: 2
-      percent: 9.2
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 193996000
-      rank: 3
-      percent: 9.42
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 7751837
-      rank: 3
-      percent: 6.45
+      percent: 13.97
   '2012':
+    - product: All
+      name: null
+      units: null
+      value: 215687561.01
+      rank: 5
+      percent: 1.71
+    - product: Oil
+      name: null
+      units: null
+      value: 184759238.51
+      rank: 3
+      percent: 2.78
+    - product: Sodium
+      name: null
+      units: null
+      value: 9377847.36
+      rank: 2
+      percent: 17.96
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12518999
+      name: null
+      units: null
+      value: 9137139.17
       rank: 1
-      percent: 80.44
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 1382299.86
-      rank: 1
-      percent: 31.95
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2513721.12
-      rank: 1
-      percent: 12.68
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3797595.99
-      rank: 1
-      percent: 10.05
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 26837370.41
-      rank: 3
-      percent: 9.72
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 197211000
-      rank: 3
-      percent: 8.31
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 9754229.67
-      rank: 3
-      percent: 6.93
+      percent: 60.49
+    - product: NGL
+      name: null
+      units: null
+      value: 2863883.72
+      rank: 5
+      percent: 0.52
+    - product: Sulfur
+      name: null
+      units: null
+      value: 514.96
+      rank: 4
+      percent: 0.03
   '2013':
+    - product: Oil
+      name: null
+      units: null
+      value: 183762630.38
+      rank: 3
+      percent: 2.61
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12306571
+      name: null
+      units: null
+      value: 9487250.27
       rank: 1
-      percent: 78.01
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 3813724.79
-      rank: 1
-      percent: 42.21
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2843202.84
-      rank: 1
-      percent: 13.65
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3792073.16
-      rank: 1
-      percent: 9.47
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 12822060.43
-      rank: 3
-      percent: 7.64
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 198928000
-      rank: 3
-      percent: 7.33
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 23754599.48
+      percent: 62.65
+    - product: Sodium
+      name: null
+      units: null
+      value: 8742905.04
+      rank: 2
+      percent: 16.62
+    - product: Sulfur
+      name: null
+      units: null
+      value: 123.84
       rank: 4
-      percent: 8.84
+      percent: 0.03
   '2014':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12101728
-      rank: 1
-      percent: 76.22
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 9931814.86
-      rank: 1
-      percent: 56.14
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2913292.18
-      rank: 1
-      percent: 13.46
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3977424.66
-      rank: 1
-      percent: 9.39
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 12992497.58
-      rank: 3
-      percent: 7.15
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 204269000
-      rank: 3
-      percent: 6.43
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 16531340.16
+    - product: Oil
+      name: null
+      units: null
+      value: 161588021.04
       rank: 4
-      percent: 6.37
+      percent: 9.65
+    - product: Geothermal
+      name: null
+      units: null
+      value: 11185009.69
+      rank: 1
+      percent: 65.09
+    - product: Sodium
+      name: null
+      units: null
+      value: 7868551.95
+      rank: 2
+      percent: 17.76
+    - product: Sulfur
+      name: null
+      units: null
+      value: 115.98
+      rank: 5
+      percent: 0.03
+    - product: Potassium
+      name: null
+      units: null
+      value: 39.63
+      rank: 4
+      percent: 0
   '2015':
+    - product: Oil
+      name: null
+      units: null
+      value: 76891906.5
+      rank: 4
+      percent: 7.22
     - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 12341211.47
+      name: null
+      units: null
+      value: 8673011.13
       rank: 1
-      percent: 73.6
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 15006628.37
-      rank: 1
-      percent: 56.69
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2842870.07
-      rank: 1
-      percent: 13.02
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 4078430.05
-      rank: 1
-      percent: 9.63
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 201738000
+      percent: 61.89
+    - product: Sodium
+      name: null
+      units: null
+      value: 7991051.23
+      rank: 2
+      percent: 17.94
+    - product: Sulfur
+      name: null
+      units: null
+      value: 111.69
       rank: 3
-      percent: 5.86
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 12228414.36
-      rank: 4
-      percent: 6.4
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 13860989.92
-      rank: 4
-      percent: 5.52
+      percent: null

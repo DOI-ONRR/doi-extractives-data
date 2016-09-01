@@ -1,3 +1,11 @@
+all_production:
+  '2015':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1103110.61
+      rank: 5
+      percent: 5.05
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -81,11 +89,3 @@ federal_production:
       value: 29860
       rank: 1
       percent: 0
-all_production:
-  '2015':
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 1103110.61
-      rank: 5
-      percent: 5.05

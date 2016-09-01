@@ -1,53 +1,60 @@
-revenue:
+all_production:
   '2006':
-    - product: Geothermal
-      name: null
-      units: null
-      value: 4168
-      rank: 4
-      percent: 0.03
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 13134
+      rank: 2
+      percent: 2.59
   '2007':
-    - product: Sodium
-      name: null
-      units: null
-      value: 945.67
-      rank: 5
-      percent: 0.01
-  '2009':
-    - product: Potassium
-      name: null
-      units: null
-      value: 1634
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 8649
       rank: 3
-      percent: 0.01
-  '2010':
-    - product: Potassium
-      name: null
-      units: null
-      value: 1634
+      percent: 1.41
+  '2008':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 14724
       rank: 4
-      percent: 0.01
-  '2011':
-    - product: Sodium
-      name: null
-      units: null
-      value: 8975.28
-      rank: 5
-      percent: 0.03
+      percent: 1.7
+  '2009':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 14145
+      rank: 4
+      percent: 1.59
   '2012':
-    - product: Potassium
-      name: null
-      units: null
-      value: -3268
-      rank: 4
-      percent: null
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 955443.31
+      rank: 2
+      percent: 22.08
   '2013':
-    - product: Sodium
-      name: null
-      units: null
-      value: 4224.65
-      rank: 5
-      percent: 0.01
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 2111438.64
+      rank: 2
+      percent: 23.37
+  '2014':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3141507.86
+      rank: 2
+      percent: 17.76
+  '2015':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3515984.06
+      rank: 2
+      percent: 13.28
 federal_production:
   '2006':
     - product: Salt (tons)
@@ -112,60 +119,53 @@ federal_production:
       value: null
       rank: 1
       percent: null
-all_production:
+revenue:
   '2006':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 13134
-      rank: 2
-      percent: 2.59
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4168
+      rank: 4
+      percent: 0.03
   '2007':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 8649
-      rank: 3
-      percent: 1.41
-  '2008':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 14724
-      rank: 4
-      percent: 1.7
+    - product: Sodium
+      name: null
+      units: null
+      value: 945.67
+      rank: 5
+      percent: 0.01
   '2009':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 14145
+    - product: Potassium
+      name: null
+      units: null
+      value: 1634
+      rank: 3
+      percent: 0.01
+  '2010':
+    - product: Potassium
+      name: null
+      units: null
+      value: 1634
       rank: 4
-      percent: 1.59
+      percent: 0.01
+  '2011':
+    - product: Sodium
+      name: null
+      units: null
+      value: 8975.28
+      rank: 5
+      percent: 0.03
   '2012':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 955443.31
-      rank: 2
-      percent: 22.08
+    - product: Potassium
+      name: null
+      units: null
+      value: -3268
+      rank: 4
+      percent: null
   '2013':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 2111438.64
-      rank: 2
-      percent: 23.37
-  '2014':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 3141507.86
-      rank: 2
-      percent: 17.76
-  '2015':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 3515984.06
-      rank: 2
-      percent: 13.28
+    - product: Sodium
+      name: null
+      units: null
+      value: 4224.65
+      rank: 5
+      percent: 0.01

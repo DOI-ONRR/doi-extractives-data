@@ -1,3 +1,18 @@
+all_production:
+  '2014':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 10844861
+      rank: 5
+      percent: 5.97
+  '2015':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 10926858.08
+      rank: 5
+      percent: 5.72
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -131,18 +146,3 @@ revenue:
       value: -2642.34
       rank: 2
       percent: 102.18
-all_production:
-  '2014':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 10844861
-      rank: 5
-      percent: 5.97
-  '2015':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 10926858.08
-      rank: 5
-      percent: 5.72

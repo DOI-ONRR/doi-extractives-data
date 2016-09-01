@@ -1,4 +1,4 @@
-'8001':
+08001:
   name: Adams County
   products:
     Gas (mcf):
@@ -13,7 +13,7 @@
       volume:
         '2014': 2249
         '2015': 3571
-'8005':
+08005:
   name: Arapahoe County
   products:
     Gas (mcf):
@@ -42,7 +42,7 @@
         '2013': 15
         '2014': 8
         '2015': 983
-'8007':
+08007:
   name: Archuleta County
   products:
     Gas (mcf):
@@ -59,7 +59,7 @@
         '2013': 1783149
         '2014': 1602854
         '2015': 1343566
-'8009':
+08009:
   name: Baca County
   products:
     Gas (mcf):
@@ -90,7 +90,7 @@
         '2013': 16116
         '2014': 16425
         '2015': 10111
-'8011':
+08011:
   name: Bent County
   products:
     Gas (mcf):
@@ -121,7 +121,7 @@
         '2013': 127
         '2014': 132
         '2015': 129
-'8014':
+08014:
   name: Broomfield County
   products:
     Gas (mcf):
@@ -152,7 +152,7 @@
         '2013': 68
         '2014': 45
         '2015': 38
-'8017':
+08017:
   name: Cheyenne County
   products:
     Gas (mcf):
@@ -183,7 +183,7 @@
         '2013': 18013
         '2014': 18043
         '2015': 16002
-'8029':
+08029:
   name: Delta County
   products:
     Coal (tons):
@@ -228,7 +228,7 @@
         '2013': 9
         '2014': 42
         '2015': 26
-'8033':
+08033:
   name: Dolores County
   products:
     Gas (mcf):
@@ -259,7 +259,7 @@
         '2013': 26016
         '2014': 38741
         '2015': 22417
-'8043':
+08043:
   name: Fremont County
   products:
     Oil (bbl):
@@ -289,7 +289,7 @@
         '2013': 119
         '2014': 108
         '2015': 119
-'8045':
+08045:
   name: Garfield County
   products:
     Coal (tons):
@@ -329,7 +329,7 @@
         '2013': 505601
         '2014': 531297
         '2015': 364608
-'8051':
+08051:
   name: Gunnison County
   products:
     Coal (tons):
@@ -374,7 +374,7 @@
         '2013': 115
         '2014': 863
         '2015': 655
-'8055':
+08055:
   name: Huerfano County
   products:
     Gas (mcf):
@@ -391,7 +391,7 @@
         '2013': 4342331
         '2014': 4034521
         '2015': 3705030
-'8057':
+08057:
   name: Jackson County
   products:
     Gas (mcf):
@@ -422,7 +422,7 @@
         '2013': 108482
         '2014': 125039
         '2015': 126225
-'8061':
+08061:
   name: Kiowa County
   products:
     Gas (mcf):
@@ -453,7 +453,7 @@
         '2013': 3409
         '2014': 3324
         '2015': 4141
-'8063':
+08063:
   name: Kit Carson County
   products:
     Gas (mcf):
@@ -484,7 +484,7 @@
         '2013': 11
         '2014': 11
         '2015': 12
-'8067':
+08067:
   name: La Plata County
   products:
     Coal (tons):
@@ -529,7 +529,7 @@
         '2013': 38
         '2014': 40
         '2015': 73
-'8069':
+08069:
   name: Larimer County
   products:
     Gas (mcf):
@@ -560,7 +560,7 @@
         '2013': 1229
         '2014': 1282
         '2015': 1252
-'8071':
+08071:
   name: Las Animas County
   products:
     Gas (mcf):
@@ -577,7 +577,7 @@
         '2013': 3356607
         '2014': 3066334
         '2015': 2740243
-'8075':
+08075:
   name: Logan County
   products:
     Gas (mcf):
@@ -608,7 +608,7 @@
         '2013': 1135
         '2014': 1427
         '2015': 1213
-'8077':
+08077:
   name: Mesa County
   products:
     Gas (mcf):
@@ -639,7 +639,7 @@
         '2013': 12411
         '2014': 23570
         '2015': 19779
-'8081':
+08081:
   name: Moffat County
   products:
     Coal (tons):
@@ -684,7 +684,7 @@
         '2013': 252728
         '2014': 206817
         '2015': 210148
-'8083':
+08083:
   name: Montezuma County
   products:
     Gas (mcf):
@@ -715,7 +715,7 @@
         '2013': 89318
         '2014': 123860
         '2015': 81045
-'8087':
+08087:
   name: Morgan County
   products:
     Oil (bbl):
@@ -739,7 +739,7 @@
         '2011': 623
         '2012': 2177
         '2013': 290
-'8095':
+08095:
   name: Phillips County
   products:
     Gas (mcf):
@@ -750,7 +750,7 @@
         '2013': 58461
         '2014': 49049
         '2015': 36310
-'8099':
+08099:
   name: Prowers County
   products:
     Gas (mcf):
@@ -767,7 +767,7 @@
         '2013': 1452
         '2014': 744
         '2015': 548
-'8103':
+08103:
   name: Rio Blanco County
   products:
     Coal (tons):
@@ -826,7 +826,7 @@
         '2013': null
         '2014': null
         '2015': null
-'8107':
+08107:
   name: Routt County
   products:
     Coal (tons):
@@ -870,7 +870,7 @@
         '2013': 14158
         '2014': 13302
         '2015': 11904
-'8113':
+08113:
   name: San Miguel County
   products:
     Gas (mcf):
@@ -901,7 +901,7 @@
         '2013': 5681
         '2014': 2141
         '2015': 2450
-'8121':
+08121:
   name: Washington County
   products:
     Gas (mcf):
@@ -932,7 +932,7 @@
         '2013': 4480
         '2014': 5034
         '2015': 4878
-'8123':
+08123:
   name: Weld County
   products:
     Gas (mcf):
@@ -963,7 +963,7 @@
         '2013': 639640
         '2014': 1473861
         '2015': 1499595
-'8125':
+08125:
   name: Yuma County
   products:
     Gas (mcf):

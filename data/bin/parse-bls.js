@@ -3,7 +3,7 @@ var yargs = require('yargs');
 var options = yargs
   .option('in-states', {
     desc: 'the states data file',
-    default: '_input/geo/states.csv'
+    default: 'geo/input/states.csv'
   })
   .option('year', {
     desc: 'year or year range',

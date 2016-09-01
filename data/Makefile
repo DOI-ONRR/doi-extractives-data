@@ -72,7 +72,7 @@ national/production.tsv: state/production.tsv offshore/production.tsv
 		-o $@ $^
 
 # state listing
-state/states.tsv: $(input)geo/states.csv
+state/states.tsv: geo/input/states.csv
 	$(tito) --read csv $< | \
 		$(datex) --map '{id: abbr, name: name, FIPS: FIPS}' | \
 		$(tito) --write tsv > $@
@@ -115,9 +115,9 @@ regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 	mkdir -p $(dir $@)
 	bin/union-regions.js \
 		--onshore state/revenues.tsv \
-		--states $(input)geo/states.csv \
+		--states geo/input/states.csv \
 		--offshore offshore/revenues.tsv \
-		--areas $(input)geo/offshore/areas.tsv \
+		--areas geo/input/offshore/areas.tsv \
 		| bin/sum.js \
 			--group 'Year,Region,Commodity,Type' \
 			--sum 'Revenue' \
@@ -128,9 +128,9 @@ regional/production.tsv: state/production.tsv offshore/production.tsv
 	mkdir -p $(dir $@)
 	bin/union-regions.js \
 		--onshore state/production.tsv \
-		--states $(input)geo/states.csv \
+		--states geo/input/states.csv \
 		--offshore offshore/production.tsv \
-		--areas $(input)geo/offshore/areas.tsv \
+		--areas geo/input/offshore/areas.tsv \
 		| bin/sum.js \
 			--group 'Year,Region,Commodity,Product' \
 			--sum 'Volume' \
@@ -147,7 +147,7 @@ county/revenues.tsv: $(input)onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
 		| bin/normalize-county-revenues.js \
-			--in-states $(input)geo/states.csv \
+			--in-states geo/input/states.csv \
 		| $(tito) --write tsv > $@
 
 # divvy up county revenues into separate files by state
@@ -175,7 +175,7 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 	$(tito) --read tsv $< \
 		| $(datex) --filter 'Shore === "Onshore"' \
 		| bin/normalize-county-production.js \
-			--in-states $(input)geo/states.csv \
+			--in-states geo/input/states.csv \
 		| tito --write tsv > $@
 
 # all lands production (state-level)
@@ -225,7 +225,7 @@ geo: \
 	geo/us-outline.json \
 	geo/offshore.json
 
-geo/us-topology.json: $(input)geo/us-10m.json
+geo/us-topology.json: geo/input/us-10m.json
 	mkdir -p $(dir $@)
 	bin/map-topology.js \
 		--id.states 'abbr' \
@@ -234,14 +234,14 @@ geo/us-topology.json: $(input)geo/us-10m.json
 		--props.counties '{state: STATE, name: COUNTY, FIPS: FIPS}' \
 		--filter.counties '["AS", "GU", "PR", "VI"].indexOf(state) === -1' \
 		-o $@ -- $<
-	bin/add-state-names.js --states $(input)geo/states.csv $@
+	bin/add-state-names.js --states geo/input/states.csv $@
 
 # generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues.tsv geo/us-topology.json
 	mkdir -p $(dir $@)
 	bin/join-counties.js \
 		--in-topo geo/us-topology.json \
-		--in-states $(input)geo/states.csv \
+		--in-states geo/input/states.csv \
 		--in-counties county/revenues.tsv \
 		--inner \
 		> $@
@@ -259,7 +259,7 @@ geo/us-states.json: geo/us-topology.json
 		--layer states \
 		$< > $@
 
-geo/offshore.json: $(input)geo/offshore/*.json
+geo/offshore.json: geo/input/offshore/*.json
 	$(BIN)/topojson $(topo_options) --properties -o $@ -- $^
 
 geo/offshore-regions.json: geo/offshore-simple.json
@@ -282,7 +282,7 @@ svg/all.svg: \
 	mkdir -p $(dir $@)
 	bin/vectorize.js $^ > $@
 
-svg/land.svg: $(input)geo/us-10m.json
+svg/land.svg: geo/input/us-10m.json
 	mkdir -p $(dir $@)
 	bin/extract-topology.js --layer land $< \
 		| bin/vectorize.js /dev/stdin > $@
@@ -307,15 +307,15 @@ svg/filtered.svg: geo/us-topology-filtered.json
 svg/outer.svg: geo/us-outline.json geo/offshore.json
 	bin/vectorize.js --p0 $^ > $@
 
-$(input)geo/offshore/%.json:
-	cd $(input)geo/offshore && make
+geo/input/offshore/%.json:
+	cd geo/input/offshore && make
 
 clean:
 	rm -f $(FILES)
-	cd $(input)geo/offshore && make clean
+	cd geo/input/offshore && make clean
 
 distclean: clean
-	cd $(input)geo/offshore && make distclean
+	cd geo/input/offshore && make distclean
 
 .PHONY: \
 	revenue production \

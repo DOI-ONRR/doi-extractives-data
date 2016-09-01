@@ -8,7 +8,7 @@ regional.tsv:
 		../bin/abbr-state.js \
 			--if tsv \
 			--of tsv \
-			--states ../_input/geo/states.csv \
+			--states ../geo/input/states.csv \
 			--field Region \
 			> $@
 

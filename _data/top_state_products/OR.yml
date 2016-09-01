@@ -1,73 +1,92 @@
 all_production:
-  '2005':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 30948000
-      rank: 3
-      percent: 11.45
   '2006':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 37850000
+      units: Mwh
+      value: 37850297.26
       rank: 3
       percent: 13.09
   '2007':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 33587000
+      units: Mwh
+      value: 33587439.48
       rank: 2
       percent: 13.57
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 33805000
+      units: Mwh
+      value: 33805024.1
       rank: 2
       percent: 13.27
   '2009':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 33034000
+      units: Mwh
+      value: 33033512.84
       rank: 2
       percent: 12.08
   '2010':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 30542000
+      units: Mwh
+      value: 30542260
       rank: 3
       percent: 11.74
   '2011':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 42315000
+      units: Mwh
+      value: 42314821
       rank: 3
       percent: 13.25
   '2012':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 39410000
+      units: Mwh
+      value: 39410178.37
       rank: 2
       percent: 14.27
   '2013':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 33098000
+      units: Mwh
+      value: 33097667
       rank: 2
       percent: 12.32
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 165000
+      units: Mwh
+      value: 164649
       rank: 5
-      percent: 1.05
+      percent: 1.04
+  '2014':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 35261936
+      rank: 2
+      percent: 13.6
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 183467
+      rank: 5
+      percent: 1.16
+  '2015':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 32302676.59
+      rank: 2
+      percent: 12.86
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 181275.79
+      rank: 5
+      percent: 1.08
 revenue:
   '2006':
     - product: Geothermal

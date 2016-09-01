@@ -1,74 +1,3 @@
-revenue:
-  '2006':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 10497304.61
-      rank: 1
-      percent: 99.1
-  '2007':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 17756440.96
-      rank: 1
-      percent: 99.26
-  '2008':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 14143709.94
-      rank: 1
-      percent: 98.82
-  '2009':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 9329433.75
-      rank: 1
-      percent: 98.03
-  '2010':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 13269998.71
-      rank: 1
-      percent: 98.72
-  '2011':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 14848332.12
-      rank: 1
-      percent: 98.87
-  '2012':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 11536511.55
-      rank: 1
-      percent: 98.3
-  '2013':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 9373812.72
-      rank: 1
-      percent: 98.67
-  '2014':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 10793697.47
-      rank: 1
-      percent: 99.18
-  '2015':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 9243922.61
-      rank: 1
-      percent: 99.33
 federal_production:
   '2006':
     - product: Copper Concentrate (tons)
@@ -260,3 +189,74 @@ federal_production:
       value: 37113
       rank: 1
       percent: 0
+revenue:
+  '2006':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 10497304.61
+      rank: 1
+      percent: 99.1
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 17756440.96
+      rank: 1
+      percent: 99.26
+  '2008':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 14143709.94
+      rank: 1
+      percent: 98.82
+  '2009':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 9329433.75
+      rank: 1
+      percent: 98.03
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 13269998.71
+      rank: 1
+      percent: 98.72
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 14848332.12
+      rank: 1
+      percent: 98.87
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 11536511.55
+      rank: 1
+      percent: 98.3
+  '2013':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 9373812.72
+      rank: 1
+      percent: 98.67
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 10793697.47
+      rank: 1
+      percent: 99.18
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 9243922.61
+      rank: 1
+      percent: 99.33

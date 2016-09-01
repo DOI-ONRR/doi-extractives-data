@@ -1,79 +1,122 @@
 all_production:
-  '2005':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4327000
-      rank: 2
-      percent: 7.97
   '2006':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4331000
-      rank: 2
-      percent: 7.89
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2351701.15
+      rank: 1
+      percent: 14.61
   '2007':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4303000
-      rank: 2
-      percent: 7.75
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2373019.48
+      rank: 1
+      percent: 14.36
   '2008':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4303000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2334126.79
       rank: 2
-      percent: 7.82
+      percent: 13.16
   '2009':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4331000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2376737.2
       rank: 2
-      percent: 7.95
+      percent: 12.89
   '2010':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4406000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2387415.6
       rank: 2
-      percent: 7.86
+      percent: 12.62
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 80000
+      units: Mwh
+      value: 80440
       rank: 3
-      percent: 6.61
+      percent: 6.64
   '2011':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4544000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2334984.73
       rank: 2
-      percent: 8.02
+      percent: 12.15
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 126000
+      units: Mwh
+      value: 125726
       rank: 4
-      percent: 6.93
+      percent: 6.92
   '2012':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4330000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2272621.44
       rank: 2
-      percent: 7.51
+      percent: 11.46
   '2013':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 4449000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2309441.2
       rank: 2
-      percent: 7.31
+      percent: 11.09
+  '2014':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2291815.85
+      rank: 2
+      percent: 10.59
+  '2015':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2434667.88
+      rank: 2
+      percent: 11.15
+federal_production:
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2013':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+  '2015':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: null
+      rank: 1
+      percent: null
 revenue:
   '2006':
     - product: Phosphate
@@ -145,39 +188,3 @@ revenue:
       value: 80956.84
       rank: 2
       percent: 0.76
-federal_production:
-  '2010':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2011':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2012':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2013':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2015':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null

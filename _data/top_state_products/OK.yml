@@ -1,175 +1,146 @@
 all_production:
-  '2005':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 1639310
-      rank: 5
-      percent: 6.99
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 848000
-      rank: 5
-      percent: 4.76
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 61262000
-      rank: 5
-      percent: 2.78
   '2006':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1688985
+      units: Mcf
+      value: 1688985000
       rank: 4
       percent: 7.18
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 1712000
+      units: Mwh
+      value: 1712441
       rank: 5
       percent: 6.44
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 64236000
       rank: 5
-      percent: 3.03
+      percent: 3.46
   '2007':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1783682
+      units: Mcf
+      value: 1783682000
       rank: 4
       percent: 7.23
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 63951000
       rank: 5
-      percent: 3.03
+      percent: 3.45
   '2008':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1886710
+      units: Mcf
+      value: 1886710000
       rank: 4
       percent: 7.36
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 67357000
       rank: 5
-      percent: 3.25
+      percent: 3.68
   '2009':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1901556
+      units: Mcf
+      value: 1901556000
       rank: 4
       percent: 7.3
   '2010':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1827328
+      units: Mcf
+      value: 1827328000
       rank: 5
       percent: 6.81
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 67418000
       rank: 5
-      percent: 3.05
+      percent: 3.37
   '2011':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1888870
+      units: Mcf
+      value: 1888870000
       rank: 5
       percent: 6.63
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
-      value: 73423000
+      value: 74735000
       rank: 5
-      percent: 3.25
+      percent: 3.63
   '2012':
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 8158000
+      units: Mwh
+      value: 8157585.18
       rank: 4
       percent: 5.79
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
-      value: 87538000
+      value: 89863000
       rank: 5
-      percent: 3.42
+      percent: 3.79
   '2013':
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 11162000
+      units: Mwh
+      value: 11162493
       rank: 4
       percent: 6.65
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
-      value: 114486000
+      value: 109566000
       rank: 5
-      percent: 3.94
-revenue:
-  '2006':
-    - product: Asphalt
-      name: null
-      units: null
-      value: 959
-      rank: 1
-      percent: 100
-  '2010':
-    - product: Asphalt
-      name: null
-      units: null
-      value: 0
-      rank: 1
-      percent: null
-  '2013':
-    - product: Helium
-      name: null
-      units: null
-      value: 1.2
-      rank: 2
-      percent: 1.79
+      percent: 4.04
   '2014':
-    - product: Asphalt
-      name: null
-      units: null
-      value: 1062.52
-      rank: 1
-      percent: 100
-    - product: Helium
-      name: null
-      units: null
-      value: 0.16
-      rank: 3
-      percent: 0.01
-  '2015':
-    - product: NGL
-      name: null
-      units: null
-      value: 1571622.62
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2310114000
+      rank: 4
+      percent: 7.37
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 11936833.04
+      rank: 4
+      percent: 6.57
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 127047000
       rank: 5
-      percent: 1.49
-    - product: Asphalt
-      name: null
-      units: null
-      value: 563.95
-      rank: 1
-      percent: 100
+      percent: 4
+  '2015':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 14017628.54
+      rank: 3
+      percent: 7.34
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2499599000
+      rank: 4
+      percent: 7.6
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 157770000
+      rank: 5
+      percent: 4.58
 federal_production:
   '2006':
     - product: Coal (tons)
@@ -313,3 +284,51 @@ federal_production:
       value: 841373
       rank: 1
       percent: 0
+revenue:
+  '2006':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 959
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 0
+      rank: 1
+      percent: null
+  '2013':
+    - product: Helium
+      name: null
+      units: null
+      value: 1.2
+      rank: 2
+      percent: 1.79
+  '2014':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 1062.52
+      rank: 1
+      percent: 100
+    - product: Helium
+      name: null
+      units: null
+      value: 0.16
+      rank: 3
+      percent: 0.01
+  '2015':
+    - product: NGL
+      name: null
+      units: null
+      value: 1571622.62
+      rank: 5
+      percent: 1.49
+    - product: Asphalt
+      name: null
+      units: null
+      value: 563.95
+      rank: 1
+      percent: 100

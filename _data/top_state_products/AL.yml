@@ -1,180 +1,92 @@
 all_production:
-  '2005':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 3647000
-      rank: 4
-      percent: 6.72
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 10145000
-      rank: 5
-      percent: 3.75
   '2006':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 3884000
-      rank: 4
-      percent: 7.08
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3865009.96
+      rank: 1
+      percent: 9.97
   '2007':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 3801000
-      rank: 4
-      percent: 6.84
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3783882.18
+      rank: 2
+      percent: 9.7
   '2008':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 3357000
-      rank: 4
-      percent: 6.1
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3323615.82
+      rank: 3
+      percent: 8.91
   '2009':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 3050000
-      rank: 4
-      percent: 5.6
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3035374.99
+      rank: 3
+      percent: 8.42
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 12535000
+      units: Mwh
+      value: 12535373
       rank: 5
       percent: 4.58
+  '2010':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2365453.39
+      rank: 5
+      percent: 6.36
   '2011':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 2817000
-      rank: 5
-      percent: 4.97
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2806763.59
+      rank: 4
+      percent: 7.49
   '2012':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 2777000
-      rank: 5
-      percent: 4.82
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2768764.9
+      rank: 4
+      percent: 7.32
   '2013':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2854388.29
+      rank: 4
+      percent: 7.13
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 12899000
+      units: Mwh
+      value: 12899178
       rank: 5
       percent: 4.8
   '2014':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 181054
-      rank: 1
-      percent: 28.56
-revenue:
-  '2006':
-    - product: Clay
-      name: null
-      units: null
-      value: 20117.1
-      rank: 1
-      percent: 84.47
-    - product: Sulfur
-      name: null
-      units: null
-      value: 1193.1
-      rank: 3
-      percent: 6.24
-  '2007':
-    - product: Clay
-      name: null
-      units: null
-      value: 12892.8
-      rank: 1
-      percent: 67.95
-    - product: Sulfur
-      name: null
-      units: null
-      value: 369.54
-      rank: 3
-      percent: 0.54
-  '2008':
-    - product: Sulfur
-      name: null
-      units: null
-      value: 12259.8
-      rank: 3
-      percent: 1.06
-  '2009':
-    - product: Coal
-      name: null
-      units: null
-      value: 4351074.7
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2732084.22
       rank: 5
-      percent: 0.4
-    - product: Sulfur
-      name: null
-      units: null
-      value: 2877.54
-      rank: 2
-      percent: 0.04
-  '2010':
-    - product: Coal
-      name: null
-      units: null
-      value: 10404903.27
-      rank: 5
-      percent: 1.19
-    - product: Sulfur
-      name: null
-      units: null
-      value: 1448.44
-      rank: 3
-      percent: 0.38
-  '2011':
-    - product: Coal
-      name: null
-      units: null
-      value: 9735675.57
-      rank: 5
-      percent: 0.94
-    - product: Sulfur
-      name: null
-      units: null
-      value: 4447.73
-      rank: 4
-      percent: 0.24
-  '2012':
-    - product: Sulfur
-      name: null
-      units: null
-      value: 4038.52
-      rank: 3
-      percent: 0.2
-  '2013':
-    - product: Sulfur
-      name: null
-      units: null
-      value: 2679.68
-      rank: 3
-      percent: 0.55
-  '2014':
-    - product: Sulfur
-      name: null
-      units: null
-      value: 1609.3
-      rank: 3
-      percent: 0.37
+      percent: 6.45
   '2015':
-    - product: Sulfur
-      name: null
-      units: null
-      value: 1161.64
-      rank: 2
-      percent: null
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3282980.54
+      rank: 3
+      percent: 7.75
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 10132680.56
+      rank: 5
+      percent: 4.03
 federal_production:
   '2006':
     - product: Gas (mcf)
@@ -329,4 +241,105 @@ federal_production:
       units: tons
       value: null
       rank: 1
+      percent: null
+revenue:
+  '2006':
+    - product: Clay
+      name: null
+      units: null
+      value: 20117.1
+      rank: 1
+      percent: 84.47
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1193.1
+      rank: 3
+      percent: 6.24
+  '2007':
+    - product: Clay
+      name: null
+      units: null
+      value: 12892.8
+      rank: 1
+      percent: 67.95
+    - product: Sulfur
+      name: null
+      units: null
+      value: 369.54
+      rank: 3
+      percent: 0.54
+  '2008':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 12259.8
+      rank: 3
+      percent: 1.06
+  '2009':
+    - product: Coal
+      name: null
+      units: null
+      value: 4351074.7
+      rank: 5
+      percent: 0.4
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2877.54
+      rank: 2
+      percent: 0.04
+  '2010':
+    - product: Coal
+      name: null
+      units: null
+      value: 10404903.27
+      rank: 5
+      percent: 1.19
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1448.44
+      rank: 3
+      percent: 0.38
+  '2011':
+    - product: Coal
+      name: null
+      units: null
+      value: 9735675.57
+      rank: 5
+      percent: 0.94
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4447.73
+      rank: 4
+      percent: 0.24
+  '2012':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4038.52
+      rank: 3
+      percent: 0.2
+  '2013':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2679.68
+      rank: 3
+      percent: 0.55
+  '2014':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1609.3
+      rank: 3
+      percent: 0.37
+  '2015':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1161.64
+      rank: 2
       percent: null

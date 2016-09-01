@@ -1,80 +1,67 @@
 all_production:
-  '2005':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 119733923
-      rank: 3
-      percent: 10.59
   '2006':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 120847953
       rank: 3
-      percent: 10.4
+      percent: 10.39
   '2007':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 115280302
       rank: 3
-      percent: 10.06
+      percent: 10.05
   '2008':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 120322708
       rank: 3
-      percent: 10.28
+      percent: 10.27
   '2009':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 107338054
       rank: 3
-      percent: 10.01
+      percent: 9.99
   '2010':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 104960118
       rank: 3
-      percent: 9.7
+      percent: 9.68
   '2011':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 108766150
       rank: 3
-      percent: 9.94
+      percent: 9.93
   '2012':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 90861804
       rank: 3
-      percent: 8.95
+      percent: 8.94
   '2013':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 80379779
       rank: 3
-      percent: 8.18
+      percent: 8.16
   '2014':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 77334723
       rank: 3
-      percent: 7.75
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 78737
-      rank: 4
-      percent: 12.42
+      percent: 7.73
 federal_production:
   '2006':
     - product: Gas (mcf)

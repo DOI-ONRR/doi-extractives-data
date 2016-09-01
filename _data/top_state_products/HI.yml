@@ -1,64 +1,71 @@
 all_production:
-  '2005':
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 222000
-      rank: 3
-      percent: 1.51
   '2006':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 212000
+      units: Mwh
+      value: 212276
       rank: 3
       percent: 1.46
   '2007':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 230000
+      units: Mwh
+      value: 229886
       rank: 3
       percent: 1.57
   '2008':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 234000
+      units: Mwh
+      value: 234333
       rank: 4
       percent: 1.58
   '2009':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 168000
+      units: Mwh
+      value: 167591
       rank: 4
       percent: 1.12
   '2010':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 201000
+      units: Mwh
+      value: 200595
       rank: 4
       percent: 1.32
   '2011':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 224000
+      units: Mwh
+      value: 223888
       rank: 4
       percent: 1.46
   '2012':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 261000
+      units: Mwh
+      value: 260997
       rank: 4
       percent: 1.68
   '2013':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 275000
+      units: Mwh
+      value: 274841
       rank: 4
       percent: 1.74
+  '2014':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 253841
+      rank: 4
+      percent: 1.6
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 229945
+      rank: 4
+      percent: 1.37

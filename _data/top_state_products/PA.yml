@@ -1,86 +1,152 @@
 all_production:
-  '2005':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 67493812
-      rank: 4
-      percent: 5.97
   '2006':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1428708.26
+      rank: 3
+      percent: 8.87
+    - product: Coal
       name: Coal
       units: short tons
       value: 66028815
       rank: 4
       percent: 5.68
   '2007':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1456610.89
+      rank: 3
+      percent: 8.81
+    - product: Coal
       name: Coal
       units: short tons
       value: 65048039
       rank: 4
-      percent: 5.68
+      percent: 5.67
   '2008':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1416200.69
+      rank: 4
+      percent: 7.99
+    - product: Coal
       name: Coal
       units: short tons
       value: 65413644
       rank: 4
-      percent: 5.59
+      percent: 5.58
   '2009':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1579336.25
+      rank: 4
+      percent: 8.56
+    - product: Coal
       name: Coal
       units: short tons
       value: 57979452
       rank: 4
-      percent: 5.41
+      percent: 5.39
   '2010':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1708356.02
+      rank: 3
+      percent: 9.03
+    - product: Coal
       name: Coal
       units: short tons
       value: 58593111
       rank: 4
-      percent: 5.41
+      percent: 5.4
   '2011':
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1653445.84
+      rank: 3
+      percent: 8.6
+    - product: Coal
       name: Coal
       units: short tons
       value: 59181827
       rank: 4
-      percent: 5.41
+      percent: 5.4
   '2012':
-    - product: Natural Gas (mcf)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1764728.18
+      rank: 3
+      percent: 8.9
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 2256696
+      units: Mcf
+      value: 2256696000
       rank: 4
       percent: 7.64
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 54718802
       rank: 4
-      percent: 5.39
+      percent: 5.38
   '2013':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 3259042
+      units: Mcf
+      value: 3259042000
       rank: 2
       percent: 11.04
-    - product: Coal (short tons)
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1846840.16
+      rank: 3
+      percent: 8.87
+    - product: Coal
       name: Coal
       units: short tons
-      value: 50869584
-      rank: 5
-      percent: 5.18
+      value: 54008748
+      rank: 4
+      percent: 5.48
   '2014':
-    - product: Coal (short tons)
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 4214643000
+      rank: 2
+      percent: 13.45
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1904224.2
+      rank: 3
+      percent: 8.8
+    - product: Coal
       name: Coal
       units: short tons
       value: 60909704
       rank: 4
-      percent: 6.1
+      percent: 6.09
+  '2015':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 4768848000
+      rank: 2
+      percent: 14.5
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2001325.83
+      rank: 3
+      percent: 9.17
 federal_production:
   '2006':
     - product: Gas (mcf)

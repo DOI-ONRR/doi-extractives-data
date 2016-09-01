@@ -101,6 +101,7 @@ offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
 		$< > $@
 
 # offshore production volumes by region and area
+# FIXME: revisit whether we need this when we get new production data
 offshore/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
@@ -135,12 +136,6 @@ regional/production.tsv: state/production.tsv offshore/production.tsv
 			--group 'Year,Region,Commodity,Product' \
 			--sum 'Volume' \
 			-o $@
-
-# county listings
-county/counties.tsv: geo/us-topology.json
-	bin/extract-properties.js --layer counties $< | \
-		$(datex) --map '{state: state, name: county, FIPS: FIPS}' | \
-		$(tito) --write tsv > $@
 
 # county revenues
 county/revenues.tsv: $(input)onrr/county-revenues.tsv

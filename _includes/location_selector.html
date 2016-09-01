@@ -6,9 +6,9 @@
     <option value="explore/{{ state.id }}">{{ state.name }}</option>
     {% endfor %}
   </optgroup>
-  <optgroup label="Offshore Areas">
-    {% for area in site.data.offshore_areas %}
-    <option value="offshore/{{ area.id }}">{{ area.name }}</option>
+  <optgroup label="Offshore Regions">
+    {% for region in site.data.offshore_regions %}
+    <option value="offshore/{{ region.id }}">{{ region.name }}</option>
     {% endfor %}
   </optgroup>
 </select>

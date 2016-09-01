@@ -178,7 +178,7 @@ data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
 		  region_id AS state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  extractive_jobs AS jobs, \
@@ -237,7 +237,7 @@ data/county_revenue:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  ROUND(revenue) AS revenue \
@@ -333,7 +333,7 @@ data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  fips, \
+		  SUBSTR('0' || fips, -5, 5) AS fips, \
 		  county, \
 		  year, \
 		  product, product_name, units, \
@@ -519,7 +519,6 @@ $(db): \
 	tables/all-production \
 	tables/company_revenue \
 	tables/jobs \
-	tables/self_employment \
 	tables/gdp \
 	tables/exports \
 	tables/disbursements \
@@ -586,28 +585,35 @@ tables/all-production: data/all-production/product
 	rm $$tmp
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/company_revenue: data/_input/onrr/company-revenue
+tables/company_revenue: data/company/years
 	@$(call drop-table,company_revenue)
+	tmp=$^/all.ndjson; \
 	for company_filename in $^/????.tsv; do \
 		filename="$${company_filename##*/}"; \
-		COMPANY_YEAR="$${filename%%.*}" $(tables) \
-			-i $$company_filename \
-			-n company_revenue \
-			--config data/db/models/company_revenue.js; \
-	done
+		COMPANY_YEAR="$${filename%%.*}"; \
+		$(tito) -r tsv --map ./data/company/transform.js \
+			$$company_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n company_revenue && \
+	rm $$tmp
 
-tables/jobs: data/_input/bls
+tables/jobs: tables/bls tables/self_employment
+
+tables/bls: data/jobs/bls
 	@$(call drop-table,bls_employment)
+	tmp=$^/all.ndjson; \
 	for jobs_filename in $^/????/joined.tsv; do \
-		$(tables) -i $$jobs_filename -n bls_employment \
-			--config data/db/models/bls_employment.js; \
-	done
-	@$(call load-sql,data/db/rollup-employment.sql)
+		$(tito) -r tsv --map ./data/jobs/transform.js \
+			$$jobs_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n bls_employment && \
+	rm $$tmp
+	@$(call load-sql,data/jobs/rollup-bls.sql)
 
 tables/self_employment: data/jobs/self-employment.tsv
 	@$(call drop-table,self_employment)
 	$(call load-table,$^,self_employment)
-	@$(call load-sql,data/db/rollup-self-employment.sql)
+	@$(call load-sql,data/jobs/rollup-self-employment.sql)
 
 tables/gdp: data/gdp/regional.tsv
 	@$(call drop-table,gdp)

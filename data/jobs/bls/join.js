@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* jshint node: true, esnext: true */
 var yargs = require('yargs');
 var options = yargs.argv;
 if (options.help) {
@@ -7,12 +8,13 @@ if (options.help) {
 
 var years = options._;
 
-var fs = require('fs');
 var async = require('async');
-var tito = require('tito').formats;
+var d3 = require('d3');
+var fs = require('fs');
+var path = require('path');
 var streamify = require('stream-array');
 var thru = require('through2').obj;
-var d3 = require('d3');
+var tito = require('tito').formats;
 
 const fields = {
   code:     'own_code',
@@ -38,7 +40,7 @@ function processYear(year, done) {
   async.parallel(
     [
       function readAll(next) {
-        var filename = [year, 'all.csv'].join('/');
+        var filename = path.join(year, 'all.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -58,7 +60,7 @@ function processYear(year, done) {
         });
       },
       function readExt(next) {
-        var filename = [year, 'extractives.csv'].join('/');
+        var filename = path.join(year, 'extractives.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -78,9 +80,10 @@ function processYear(year, done) {
         return done(error);
       }
 
-      console.warn('%d: got %d extractives rows, %d all', year, ext.length, Object.keys(all).length);
+      console.warn('%d: got %d extractives rows, %d all',
+                   year, ext.length, Object.keys(all).length);
 
-      var filename = [year, 'joined.tsv'].join('/');
+      var filename = path.join(year, 'joined.tsv');
 
       streamify(ext)
         .pipe(filterStream(year, all))
@@ -117,7 +120,7 @@ function filterStream(year, all) {
     var fips = ext[fields.fips];
     var a = all[fips];
     if (!a) {
-      console.warn('no all row:', fips, jobs);
+      console.warn('no all row:', fips);
       return next();
     }
 

@@ -1,3 +1,5 @@
+/* jshint node: true, esnext: true */
+
 // XXX state gets passed in as an environment variable
 const STATE = process.env.STATE;
 if (!STATE) {

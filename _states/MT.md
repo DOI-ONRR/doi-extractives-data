@@ -55,7 +55,7 @@ The [Montana Department of Environmental Quality](http://deq.mt.gov/) leads Mont
   - Preparing enforcement requests for the [Enforcement Division](http://deq.mt.gov/DEQAdmin/ENF)
   - Holding and reviewing reclamation bonds for [coal](http://deq.mt.gov/Land/CoalUranium) and [hardrock mining](http://deq.mt.gov/Land/hardrock)
 
-- The [Waste Management and Remediation Division](http://deq.mt.gov/DEQAdmin/WMR) administers and oversees investigation and cleanup of extraction sites that need remediation.
+- The [Waste Management and Remediation Division](http://deq.mt.gov/DEQAdmin/WMR) administers and oversees investigation and cleanup of extraction sites that need remediation, including state and federal superfund sites and Montana’s [abandoned mine land projects](http://deq.mt.gov/Land/AbandonedMines).
 
 ### State laws and regulations
 
@@ -80,25 +80,33 @@ The Administrative Rules of Montana also regulate natural resource extraction:
 
 In addition to generating revenue, extractive industries can bring costs to state and local communities. In Montana, these costs are concentrated in eastern Montana because of extraction from the Bakken Formation in Montana and neighboring North Dakota. For more extractive industries' effect on this region, see the Eastern Montana Impact Coalition's [Regional Impact Analysis (PDF)](http://static1.squarespace.com/static/529fb9b4e4b0edf62d295374/t/55e9eb5be4b098674aefb5fe/1441393499939/Abbreviated+EMIC+Regional+Impact+Analysis+2015.pdf).
 
-The USEITI {{ term | "Multi-Stakeholder Group" }} prioritized four types of fiscal costs in the 2015 USEITI report:
+The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
 
-* **Transportation:** The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.
+#### Transportation
 
-  To read more, see the [Montana Department of Transportation report (PDF)](http://www.mdt.mt.gov/other/webdata/external/research/docs/research_proj/oil_boom/summary_mdt_efforts.pdf) on efforts to respond to impacts on the state highway system from oil exploration and production in eastern Montana.
+The Montana Department of Transportation estimates an additional $52 million per year in increased pavement needs for highways in eastern Montana because of extractive industry activity. Local governments in eastern Montana also saw increases in budgets for streets and roads increase 44% to 345% from 2000 to 2013.
 
-* **Water:** Surveyed communities in eastern Montana reported that water rates increased an average of 86.4% from 2011 to 2014 and sewage rates increased 302.9%. The Eastern Montana Impact Coalition also estimates that $33.8 million to $80.6 million will be needed for incremental improvements to support growing demand on water, sewage, and transportation systems. These figures don’t include large projects.
+To read more, see the [Montana Department of Transportation report (PDF)](http://www.mdt.mt.gov/other/webdata/external/research/docs/research_proj/oil_boom/summary_mdt_efforts.pdf) on efforts to respond to impacts on the state highway system from oil exploration and production in eastern Montana.
 
-  The Department of Environmental Quality plans, monitors, assesses, and enforces [water quality](http://deq.mt.gov/Water) in Montana. It performs targeted water quality monitoring related to oil and gas development in eastern Montana and coal mining near Lake Koocanusa, runs the [Montana Ground Water Pollution Control System](http://deq.mt.gov/Water/WQINFO/mgwpcs) and its permitting process, and produces [Clean Water Act Integrated Reports](http://deq.mt.gov/Water/WQPB/cwaic/reports).
+#### Water
 
-* **Emergency services:** Increased population near extraction can increase demands on emergency services. Law enforcement at multiple jurisdictional levels in eastern Montana have seen costs rise related to increases in oil and gas activity.
+Surveyed communities in eastern Montana reported that water rates increased an average of 86.4% from 2011 to 2014 and sewage rates increased 302.9%. The Eastern Montana Impact Coalition also estimates that $33.8 million to $80.6 million will be needed for incremental improvements to support growing demand on water, sewage, and transportation systems. These figures don’t include large projects.
 
-  The State Highway Patrol added a new detachment in eastern Montana, county sheriffs' offices have seen costs rise $13.4 million, and surveyed police departments have seen an average budget increase of 128.9% between 2000 and 2013. Surveyed local governments also reported an average increase of 169.2% in emergency spending from 2000 to 2013.
+The Department of Environmental Quality plans, monitors, assesses, and enforces [water quality](http://deq.mt.gov/Water) in Montana. It performs targeted water quality monitoring related to oil and gas development in eastern Montana and coal mining near Lake Koocanusa, runs the [Montana Ground Water Pollution Control System](http://deq.mt.gov/Water/WQINFO/mgwpcs) and its permitting process, and produces [Clean Water Act Integrated Reports](http://deq.mt.gov/Water/WQPB/cwaic/reports).
 
-* **Reclamation:** Multiple organizations in the Montana state government work on the reclamation and remediation of sites related to extraction. The Department of Environmental Quality Waste Management and Remediation Division administers state and federal superfund sites, as well as Montana’s [abandoned mine land projects](http://deq.mt.gov/Land/AbandonedMines). Montana has been “certified” by the federal Abandoned Mine Land Reclamation program, meaning that it has reclaimed its identified, high-priority abandoned coal mine areas. [Current projects](http://deq.mt.gov/Land/AbandonedMines/CurrentProjects) include addressing acid mine drainage in the Great Falls coal field, which is projected to cost $96 million, and managing subsidence events and potential subsidence in Red Lodge.
+#### Emergency services
 
-  To learn more, find Annual Evaluation Reports for Montana in the [Office of Surface Mining Reclamation and Enforcement Oversight Document Database](http://odocs.osmre.gov/) or learn about the bonding of active mines in the [Coal Program Annual Report](http://deq.mt.gov/Land/CoalUranium/annualreports).
+Increased population near extraction can increase demands on emergency services. Law enforcement at multiple jurisdictional levels in eastern Montana have seen costs rise related to increases in oil and gas activity.
 
-  The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
+The State Highway Patrol added a new detachment in eastern Montana, county sheriffs' offices have seen costs rise $13.4 million, and surveyed police departments have seen an average budget increase of 128.9% between 2000 and 2013. Surveyed local governments also reported an average increase of 169.2% in emergency spending from 2000 to 2013.
 
-  The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
+#### Reclamation
+
+Montana has been “certified” by the federal Abandoned Mine Land Reclamation program, meaning that it has reclaimed its identified high-priority abandoned coal mine areas. [Current projects](http://deq.mt.gov/Land/AbandonedMines/CurrentProjects) include addressing acid mine drainage in the Great Falls coal field, which is projected to cost $96 million, and managing subsidence events and potential subsidence in Red Lodge.
+
+To learn more, find Annual Evaluation Reports for Montana in the [Office of Surface Mining Reclamation and Enforcement Oversight Document Database](http://odocs.osmre.gov/) or learn about the bonding of active mines in the [Coal Program Annual Report](http://deq.mt.gov/Land/CoalUranium/annualreports).
+
+The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
+
+The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
 

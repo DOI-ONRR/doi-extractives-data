@@ -1,4 +1,4 @@
-'1003':
+'01003':
   name: Baldwin County
   products:
     Gas (mcf):
@@ -29,7 +29,7 @@
         '2013': 19
         '2014': 16
         '2015': 9
-'1007':
+'01007':
   name: Bibb County
   products:
     Clay (tons):
@@ -38,7 +38,7 @@
       volume:
         '2006': null
         '2007': null
-'1023':
+'01023':
   name: Choctaw County
   products:
     Oil (bbl):
@@ -47,7 +47,7 @@
       volume:
         '2006': 7
         '2007': 9
-'1035':
+'01035':
   name: Conecuh County
   products:
     Oil (bbl):
@@ -57,7 +57,7 @@
         '2013': 900
         '2014': 2411
         '2015': 1182
-'1039':
+01039:
   name: Covington County
   products:
     Oil (bbl):
@@ -74,7 +74,7 @@
         '2013': 11296
         '2014': 6431
         '2015': 3856
-'1053':
+'01053':
   name: Escambia County
   products:
     Gas (mcf):
@@ -103,7 +103,7 @@
         '2013': 8818
         '2014': 10353
         '2015': 30673
-'1057':
+'01057':
   name: Fayette County
   products:
     Coal (tons):
@@ -129,7 +129,7 @@
         '2010': 3246
         '2011': 3896
         '2012': 1453
-'1073':
+'01073':
   name: Jefferson County
   products:
     Coal (tons):
@@ -145,7 +145,7 @@
         '2013': null
         '2014': null
         '2015': null
-'1075':
+'01075':
   name: Lamar County
   products:
     Gas (mcf):
@@ -176,7 +176,7 @@
         '2013': 696
         '2014': 667
         '2015': 597
-'1097':
+01097:
   name: Mobile County
   products:
     Gas (mcf):
@@ -207,7 +207,7 @@
         '2013': 4879
         '2014': 4920
         '2015': 4008
-'1125':
+'01125':
   name: Tuscaloosa County
   products:
     Gas (mcf):

@@ -1,4 +1,4 @@
-'6013':
+'06013':
   name: Contra Costa County
   products:
     Gas (mcf):
@@ -27,7 +27,7 @@
         '2013': 3
         '2014': 2
         '2015': 1
-'6019':
+06019:
   name: Fresno County
   products:
     Gas (mcf):
@@ -58,7 +58,7 @@
         '2013': 13773
         '2014': 23439
         '2015': 42875
-'6021':
+'06021':
   name: Glenn County
   products:
     Gas (mcf):
@@ -75,7 +75,7 @@
         '2013': 7582
         '2014': 6874
         '2015': 5675
-'6025':
+'06025':
   name: Imperial County
   products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
@@ -102,7 +102,7 @@
         '2009': 233954
         '2010': 223938
         '2011': 19883
-'6027':
+'06027':
   name: Inyo County
   products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
@@ -129,7 +129,7 @@
         '2013': 2448
         '2014': 2090
         '2015': 2401
-'6029':
+06029:
   name: Kern County
   products:
     Gas (mcf):
@@ -160,7 +160,7 @@
         '2013': 14400081
         '2014': 13671172
         '2015': 12250336
-'6031':
+'06031':
   name: Kings County
   products:
     Gas (mcf):
@@ -191,7 +191,7 @@
         '2013': 37194
         '2014': 56084
         '2015': 92121
-'6033':
+'06033':
   name: Lake County
   products:
     'Geothermal - Electrical Generation, Thousands of Pounds':
@@ -208,7 +208,7 @@
         '2013': 19664635
         '2014': 19550547
         '2015': 18069652
-'6035':
+'06035':
   name: Lassen County
   products:
     'Geothermal - Direct Utilization, Millions of BTUs':
@@ -231,7 +231,7 @@
       volume:
         '2014': 691756
         '2015': 666434
-'6037':
+'06037':
   name: Los Angeles County
   products:
     Gas (mcf):
@@ -262,7 +262,7 @@
         '2013': 477574
         '2014': 443802
         '2015': 422981
-'6051':
+'06051':
   name: Mono County
   products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
@@ -279,7 +279,7 @@
         '2013': 164238891
         '2014': 195815991
         '2015': 183356897
-'6053':
+'06053':
   name: Monterey County
   products:
     Gas (mcf):
@@ -310,7 +310,7 @@
         '2013': 13491
         '2014': 14464
         '2015': 14573
-'6067':
+'06067':
   name: Sacramento County
   products:
     Gas (mcf):
@@ -341,7 +341,7 @@
         '2013': 846
         '2014': 670
         '2015': 155
-'6069':
+06069:
   name: San Benito County
   products:
     Gas (mcf):
@@ -371,7 +371,7 @@
         '2013': 43
         '2014': 127
         '2015': 556
-'6071':
+'06071':
   name: San Bernardino County
   products:
     Anhydrous Sodium Sulfate (tons):
@@ -477,7 +477,7 @@
       units: tons
       volume:
         '2011': null
-'6077':
+'06077':
   name: San Joaquin County
   products:
     Gas (mcf):
@@ -494,7 +494,7 @@
         '2013': 3466
         '2014': 3468
         '2015': 3471
-'6079':
+06079:
   name: San Luis Obipso County
   products:
     Gas (mcf):
@@ -525,7 +525,7 @@
         '2013': 11919
         '2014': 11307
         '2015': 7832
-'6083':
+06083:
   name: Santa Barbara County
   products:
     Gas (mcf):
@@ -556,7 +556,7 @@
         '2013': 65637
         '2014': 59458
         '2015': 49355
-'6095':
+06095:
   name: Solano County
   products:
     Gas (mcf):
@@ -587,7 +587,7 @@
         '2013': 3658
         '2014': 3089
         '2015': 691
-'6097':
+06097:
   name: Sonoma County
   products:
     'Geothermal - Electrical Generation, Thousands of Pounds':
@@ -604,7 +604,7 @@
         '2013': 26479987
         '2014': 26013613
         '2015': 24601981
-'6103':
+'06103':
   name: Tehama County
   products:
     Gas (mcf):
@@ -617,7 +617,7 @@
         '2011': 3157
         '2012': 1590
         '2013': 1
-'6111':
+'06111':
   name: Ventura County
   products:
     Gas (mcf):

@@ -4,7 +4,6 @@ var yargs = require('yargs')
   .describe('o', 'write output to this file')
   .describe('liberal', 'use more liberal HS6 associations')
   .boolean('liberal')
-  .default('o', '/dev/stdout')
   .alias('h', 'help')
   .wrap(72);
 
@@ -160,7 +159,9 @@ async.waterfall([
 ], function(error, rows) {
   if (error) return console.error('error:', error);
 
-  var out = fs.createWriteStream(options.o);
+  var out = options.o
+    ? fs.createWriteStream(options.o)
+    : process.stdout;
   streamify(rows)
     .pipe(tito.createWriteStream('tsv'))
     .pipe(out);

@@ -32,10 +32,6 @@ PRODUCTION_FILES = \
 	offshore/production.tsv \
 	regional/production.tsv
 
-# Census-derived export figures
-EXPORT_FILES = \
-	state/exports-by-industry.tsv
-
 # GDP figures from the Bureau of Economic Analysis
 GDP_FILES = \
 	gdp/US.tsv \
@@ -67,8 +63,6 @@ all: $(FILES)
 revenue: $(REVENUE_FILES)
 
 production: $(PRODUCTION_FILES)
-
-exports: $(EXPORT_FILES)
 
 gdp: $(GDP_FILES)
 
@@ -183,14 +177,6 @@ state/production.tsv: county/production.tsv
 gdp/states.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo state -o $@
-
-# state export figures
-state/exports-by-industry.tsv: $(input)census/top-state-exports.tsv
-	mkdir -p $(dir $@)
-	bin/parse-census-commodities.js $< | \
-		bin/add-resource-group.js | \
-		bin/abbr-state.js --states $(input)geo/states.csv --if tsv --of tsv \
-		> $@
 
 # offshore revenues by region and area
 offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
@@ -431,7 +417,7 @@ distclean: clean
 	cd $(input)geo/offshore && make distclean
 
 .PHONY: \
-	revenue production exports gdp \
+	revenue production gdp \
 	counties-by-state \
 	county-revenues-by-state \
 	geo \

@@ -20,7 +20,6 @@ REVENUE_FILES = \
 	offshore/revenues.tsv \
 	regional/revenues.tsv \
 	company/revenue \
-	reconciliation/revenue.tsv
 
 # production volume files
 PRODUCTION_FILES = \
@@ -54,13 +53,6 @@ revenue: $(REVENUE_FILES)
 production: $(PRODUCTION_FILES)
 
 all_production: $(ALL_LANDS_PRODUCTION_FILES)
-
-reconciliation/revenue.tsv: $(input)multiple-sources/reconciliation.tsv
-	mkdir -p $(dir $@)
-	bin/parse-reconciliation.js \
-		--if tsv \
-		--of tsv \
-		$< > $@
 
 company/revenue:
 	mkdir -p $@

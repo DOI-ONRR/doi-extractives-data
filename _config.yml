@@ -18,9 +18,14 @@ sass:
   sass_dir: _sass
 
 exclude:
-  # top-level log and markdown files
+  # top-level log
   - /*.log
-  - /*.md
+  # markdown files
+  - CONTRIBUTING.md
+  - ISSUE_TEMPLATE.md
+  - LICENSE.md
+  - PULL_REQUEST_TEMPLATE.md
+  - README.md
   # ruby dependency files
   - Gemfile*
   # KSS (style guide) config and template

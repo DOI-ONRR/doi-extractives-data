@@ -30,9 +30,6 @@ PRODUCTION_FILES = \
 	offshore/production.tsv \
 	regional/production.tsv
 
-ALL_LANDS_PRODUCTION_FILES = \
-	production/natural-gas.tsv
-
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -41,7 +38,6 @@ FILES = \
 	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
-	$(ALL_LANDS_PRODUCTION_FILES) \
 	geo svg
 
 all: $(FILES)
@@ -49,8 +45,6 @@ all: $(FILES)
 revenue: $(REVENUE_FILES)
 
 production: $(PRODUCTION_FILES)
-
-all_production: $(ALL_LANDS_PRODUCTION_FILES)
 
 company/revenue:
 	mkdir -p $@

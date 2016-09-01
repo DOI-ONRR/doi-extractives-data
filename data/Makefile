@@ -91,20 +91,6 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 			--in-states geo/input/states.csv \
 		| tito --write tsv > $@
 
-# all lands production (state-level)
-# run
-# `make -B production/all-production.tsv`
-# will compile to production/all-production.tsv
-production/all-production.tsv:
-	mkdir -p $(dir $@)
-	bin/group-all-production.js \
-		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
-		--naturalgas $(input)eia/commodity/naturalgas.tsv \
-		--oil $(input)eia/commodity/oil.tsv \
-		--coal $(input)eia/commodity/coal.tsv \
-		--renewables $(input)eia/commodity/renewables.tsv \
-		> $@
-
 geo: \
 	geo/us-topology.json \
 	geo/us-topology-filtered.json \

@@ -19,11 +19,9 @@ var tito = require('tito');
 var fs = require('fs');
 var streamify = require('stream-array');
 var Sequelize = require('sequelize');
-var models = require('../db/config').models;
 
 var db = new Sequelize(options.db, {
-  logging: null,
-  models: models
+  logging: null
 });
 
 var format = tito.formats.createWriteStream(options.format);

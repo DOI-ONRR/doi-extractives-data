@@ -1,10 +1,4 @@
 US:
-  '2004':
-    count: 519903
-    percent: 0.4
-  '2005':
-    count: 560886
-    percent: 0.43
   '2006':
     count: 617038
     percent: 0.46
@@ -29,3 +23,9 @@ US:
   '2013':
     count: 813040
     percent: 0.61
+  '2014':
+    count: 841636
+    percent: 0.62
+  '2015':
+    count: 751631
+    percent: 0.55

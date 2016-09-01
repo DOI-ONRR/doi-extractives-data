@@ -7,12 +7,15 @@
     '2013':
       count: 12
       percent: 0.23
+    '2014':
+      count: 12
+      percent: 0.23
+    '2015':
+      count: 11
+      percent: 0.21
 '19013':
   name: Black Hawk County
   employment:
-    '2005':
-      count: 65
-      percent: 0.09
     '2006':
       count: 57
       percent: 0.08
@@ -52,9 +55,6 @@
 '19065':
   name: Fayette County
   employment:
-    '2005':
-      count: 12
-      percent: 0.16
     '2006':
       count: 17
       percent: 0.23
@@ -79,6 +79,12 @@
     '2010':
       count: 147
       percent: 2.04
+'19103':
+  name: Johnson County
+  employment:
+    '2015':
+      count: 89
+      percent: 0.11
 '19111':
   name: Lee County
   employment:
@@ -91,15 +97,12 @@
     '2013':
       count: 8
       percent: 0.05
+    '2014':
+      count: 9
+      percent: 0.05
 '19113':
   name: Linn County
   employment:
-    '2004':
-      count: 112
-      percent: 0.1
-    '2005':
-      count: 111
-      percent: 0.09
     '2006':
       count: 110
       percent: 0.09
@@ -124,6 +127,12 @@
     '2013':
       count: 87
       percent: 0.07
+    '2014':
+      count: 92
+      percent: 0.07
+    '2015':
+      count: 105
+      percent: 0.08
 '19121':
   name: Madison County
   employment:
@@ -139,15 +148,15 @@
     '2013':
       count: 50
       percent: 1.41
+    '2014':
+      count: 69
+      percent: 1.9
+    '2015':
+      count: 41
+      percent: 1.08
 '19139':
   name: Muscatine County
   employment:
-    '2004':
-      count: 58
-      percent: 0.26
-    '2005':
-      count: 58
-      percent: 0.25
     '2006':
       count: 57
       percent: 0.24
@@ -172,15 +181,18 @@
     '2013':
       count: 45
       percent: 0.2
+    '2014':
+      count: 52
+      percent: 0.23
+    '2015':
+      count: 51
+      percent: 0.22
 '19153':
   name: Polk County
   employment:
-    '2004':
-      count: 164
-      percent: 0.06
-    '2005':
-      count: 160
-      percent: 0.06
+    '2015':
+      count: 136
+      percent: 0.05
 '19155':
   name: Pottawattamie County
   employment:
@@ -190,15 +202,12 @@
     '2013':
       count: 61
       percent: 0.16
+    '2014':
+      count: 66
+      percent: 0.17
 '19163':
   name: Scott County
   employment:
-    '2004':
-      count: 16
-      percent: 0.02
-    '2005':
-      count: 15
-      percent: 0.02
     '2007':
       count: 14
       percent: 0.02
@@ -220,15 +229,15 @@
     '2013':
       count: 17
       percent: 0.02
+    '2014':
+      count: 17
+      percent: 0.02
+    '2015':
+      count: 19
+      percent: 0.02
 '19167':
   name: Sioux County
   employment:
-    '2004':
-      count: 44
-      percent: 0.26
-    '2005':
-      count: 42
-      percent: 0.23
     '2006':
       count: 46
       percent: 0.25
@@ -253,6 +262,12 @@
     '2013':
       count: 44
       percent: 0.22
+    '2014':
+      count: 46
+      percent: 0.23
+    '2015':
+      count: 49
+      percent: 0.24
 '19179':
   name: Wapello County
   employment:
@@ -277,15 +292,12 @@
     '2013':
       count: 57
       percent: 0.31
+    '2014':
+      count: 54
+      percent: 0.3
 '19191':
   name: Winneshiek County
   employment:
-    '2004':
-      count: 125
-      percent: 1.2
-    '2005':
-      count: 133
-      percent: 1.27
     '2006':
       count: 131
       percent: 1.24
@@ -304,3 +316,9 @@
     '2013':
       count: 24
       percent: 1.03
+    '2014':
+      count: 20
+      percent: 0.86
+    '2015':
+      count: 20
+      percent: 0.87

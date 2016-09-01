@@ -1,12 +1,6 @@
 '02020':
   name: Anchorage Borough
   employment:
-    '2004':
-      count: 2051
-      percent: 1.46
-    '2005':
-      count: 2068
-      percent: 1.45
     '2006':
       count: 2241
       percent: 1.55
@@ -31,6 +25,12 @@
     '2013':
       count: 3336
       percent: 2.17
+    '2014':
+      count: 3640
+      percent: 2.38
+    '2015':
+      count: 3818
+      percent: 2.48
 '02050':
   name: Bethel Census Area
   employment:
@@ -40,9 +40,6 @@
 02090:
   name: Fairbanks North Star Borough
   employment:
-    '2004':
-      count: 948
-      percent: 2.68
     '2006':
       count: 1300
       percent: 3.55
@@ -67,6 +64,12 @@
     '2013':
       count: 1441
       percent: 3.86
+    '2014':
+      count: 1429
+      percent: 3.87
+    '2015':
+      count: 776
+      percent: 2.1
 '02110':
   name: Juneau Borough
   employment:
@@ -79,12 +82,6 @@
 '02122':
   name: Kenai Peninsula Borough
   employment:
-    '2004':
-      count: 1027
-      percent: 5.79
-    '2005':
-      count: 1005
-      percent: 5.67
     '2006':
       count: 1017
       percent: 5.67
@@ -109,6 +106,12 @@
     '2013':
       count: 1493
       percent: 7.36
+    '2014':
+      count: 1269
+      percent: 6.24
+    '2015':
+      count: 1017
+      percent: 5.09
 '02130':
   name: Ketchikan Gateway Borough
   employment:
@@ -127,12 +130,6 @@
 '02170':
   name: Matanuska-Susitna Borough
   employment:
-    '2004':
-      count: 48
-      percent: 0.3
-    '2005':
-      count: 45
-      percent: 0.26
     '2006':
       count: 38
       percent: 0.22
@@ -157,15 +154,15 @@
     '2013':
       count: 73
       percent: 0.35
+    '2014':
+      count: 84
+      percent: 0.38
+    '2015':
+      count: 89
+      percent: 0.39
 02185:
   name: North Slope Borough
   employment:
-    '2004':
-      count: 4746
-      percent: 53.91
-    '2005':
-      count: 5190
-      percent: 57.41
     '2006':
       count: 6295
       percent: 60.56
@@ -190,21 +187,21 @@
     '2013':
       count: 8406
       percent: 59.2
+    '2014':
+      count: 9003
+      percent: 57.79
+    '2015':
+      count: 9290
+      percent: 58.48
 '02201':
   name: Prince of Wales-Outer Ketchikan Census Area
   employment:
-    '2004':
-      count: 10
-      percent: 0.51
     '2006':
       count: 3
       percent: 0.17
 '02261':
   name: Valdez-Cordova Census Area
   employment:
-    '2005':
-      count: 23
-      percent: 0.5
     '2006':
       count: 25
       percent: 0.54
@@ -247,3 +244,9 @@
     '2013':
       count: 77
       percent: 3.3
+    '2014':
+      count: 15
+      percent: 0.69
+    '2015':
+      count: 16
+      percent: 0.78

@@ -1,12 +1,6 @@
 '46029':
   name: Codington County
   employment:
-    '2004':
-      count: 11
-      percent: 0.08
-    '2005':
-      count: 10
-      percent: 0.07
     '2006':
       count: 12
       percent: 0.08
@@ -31,15 +25,12 @@
     '2013':
       count: 12
       percent: 0.08
+    '2014':
+      count: 11
+      percent: 0.07
 '46033':
   name: Custer County
   employment:
-    '2004':
-      count: 38
-      percent: 1.57
-    '2005':
-      count: 41
-      percent: 1.64
     '2006':
       count: 43
       percent: 1.72
@@ -64,15 +55,15 @@
     '2013':
       count: 36
       percent: 1.48
+    '2014':
+      count: 37
+      percent: 1.54
+    '2015':
+      count: 32
+      percent: 1.33
 '46047':
   name: Fall River County
   employment:
-    '2004':
-      count: 13
-      percent: 0.52
-    '2005':
-      count: 14
-      percent: 0.54
     '2006':
       count: 13
       percent: 0.52
@@ -97,6 +88,12 @@
     '2013':
       count: 18
       percent: 0.75
+    '2014':
+      count: 15
+      percent: 0.63
+    '2015':
+      count: 15
+      percent: 0.62
 '46051':
   name: Grant County
   employment:
@@ -112,24 +109,21 @@
     '2013':
       count: 31
       percent: 0.82
+    '2014':
+      count: 28
+      percent: 0.72
+    '2015':
+      count: 27
+      percent: 0.68
 '46063':
   name: Harding County
   employment:
-    '2004':
-      count: 34
-      percent: 9.63
     '2007':
       count: 36
       percent: 9.57
 '46081':
   name: Lawrence County
   employment:
-    '2004':
-      count: 156
-      percent: 1.48
-    '2005':
-      count: 137
-      percent: 1.26
     '2007':
       count: 172
       percent: 1.5
@@ -139,12 +133,6 @@
 '46103':
   name: Pennington County
   employment:
-    '2004':
-      count: 29
-      percent: 0.06
-    '2005':
-      count: 29
-      percent: 0.06
     '2006':
       count: 37
       percent: 0.07
@@ -169,3 +157,9 @@
     '2013':
       count: 33
       percent: 0.06
+    '2014':
+      count: 28
+      percent: 0.05
+    '2015':
+      count: 23
+      percent: 0.04

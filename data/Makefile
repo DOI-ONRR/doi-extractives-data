@@ -18,16 +18,14 @@ REVENUE_FILES = \
 	state/revenues.tsv \
 	county/revenues.tsv \
 	offshore/revenues.tsv \
-	regional/revenues.tsv \
-	company/revenue \
+	company/revenue
 
 # production volume files
 PRODUCTION_FILES = \
 	state/production.tsv \
 	county-products-by-state \
 	county-production-by-state \
-	offshore/production.tsv \
-	regional/production.tsv
+	offshore/production.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -87,32 +85,6 @@ offshore/production.tsv: $(input)onrr/regional-production.tsv
 		| bin/group-offshore-production.js \
 			--keys Year/Region/Area/Commodity/Product \
 			> $@
-
-# regional (state and offshore) revenues
-regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
-	mkdir -p $(dir $@)
-	bin/union-regions.js \
-		--onshore state/revenues.tsv \
-		--states geo/input/states.csv \
-		--offshore offshore/revenues.tsv \
-		--areas geo/input/offshore/areas.tsv \
-		| bin/sum.js \
-			--group 'Year,Region,Commodity,Type' \
-			--sum 'Revenue' \
-			-o $@
-
-# regional (state and offshore) revenues
-regional/production.tsv: state/production.tsv offshore/production.tsv
-	mkdir -p $(dir $@)
-	bin/union-regions.js \
-		--onshore state/production.tsv \
-		--states geo/input/states.csv \
-		--offshore offshore/production.tsv \
-		--areas geo/input/offshore/areas.tsv \
-		| bin/sum.js \
-			--group 'Year,Region,Commodity,Product' \
-			--sum 'Volume' \
-			-o $@
 
 # county revenues
 county/revenues.tsv: $(input)onrr/county-revenues.tsv

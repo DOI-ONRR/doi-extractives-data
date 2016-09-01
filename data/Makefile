@@ -14,8 +14,6 @@ topo_options ?= --spherical --bbox
 
 # revenue-related files
 REVENUE_FILES = \
-	national/revenues.tsv \
-	state/revenues.tsv \
 	county/revenues.tsv \
 	offshore/revenues.tsv \
 	company/revenue
@@ -49,14 +47,6 @@ company/revenue:
 			--of tsv \
 			$$file > "$@/$${file##*/}"; \
 	done
-
-# state revenues by commodity and revenue type
-state/revenues.tsv: county/revenues.tsv
-	mkdir -p $(dir $@)
-	bin/sum.js \
-		--group 'Year,State,Commodity,Type' \
-		--sum 'Revenue' \
-		-o $@ $<
 
 # state production volumes by commodity and product
 state/production.tsv: county/production.tsv

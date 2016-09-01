@@ -1,53 +1,3 @@
-all_production:
-  '2005':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 1582000
-      rank: 4
-      percent: 8.88
-  '2006':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 2055000
-      rank: 4
-      percent: 7.73
-  '2007':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 2639000
-      rank: 4
-      percent: 7.66
-  '2008':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 4355000
-      rank: 3
-      percent: 7.87
-  '2009':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 5053000
-      rank: 4
-      percent: 6.84
-  '2010':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 4792000
-      rank: 4
-      percent: 5.06
-  '2011':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 6726000
-      rank: 4
-      percent: 5.6
 revenue:
   '2006':
     - product: Hardrock
@@ -119,3 +69,46 @@ revenue:
       value: 49858
       rank: 2
       percent: 0.54
+all_production:
+  '2006':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2054946.99
+      rank: 4
+      percent: 7.73
+  '2007':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2638812
+      rank: 4
+      percent: 7.66
+  '2008':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4354619.94
+      rank: 3
+      percent: 7.87
+  '2009':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 5053022.31
+      rank: 4
+      percent: 6.84
+  '2010':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4791722.92
+      rank: 4
+      percent: 5.06
+  '2011':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 6725695.43
+      rank: 4
+      percent: 5.6

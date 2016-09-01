@@ -1,97 +1,104 @@
 all_production:
-  '2005':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 72075000
-      rank: 1
-      percent: 26.66
   '2006':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 82008000
+      units: Mwh
+      value: 82007628.53
       rank: 1
       percent: 28.35
   '2007':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 78829000
+      units: Mwh
+      value: 78829195.11
       rank: 1
       percent: 31.85
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 2438000
+      units: Mwh
+      value: 2437823
       rank: 5
       percent: 7.08
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 77637000
+      units: Mwh
+      value: 77636757.64
       rank: 1
       percent: 30.47
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 3657000
+      units: Mwh
+      value: 3657484.29
       rank: 5
       percent: 6.61
   '2009':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 72933000
+      units: Mwh
+      value: 72932704.16
       rank: 1
       percent: 26.67
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 3572000
+      units: Mwh
+      value: 3572485.56
       rank: 5
-      percent: 4.83
+      percent: 4.84
   '2010':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 68288000
+      units: Mwh
+      value: 68288383.18
       rank: 1
       percent: 26.24
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 4745000
+      units: Mwh
+      value: 4744678.51
       rank: 5
       percent: 5.01
   '2011':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 91818000
+      units: Mwh
+      value: 91817701.71
       rank: 1
       percent: 28.75
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 6262000
+      units: Mwh
+      value: 6262380
       rank: 5
       percent: 5.21
   '2012':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 89464000
+      units: Mwh
+      value: 89464355
       rank: 1
       percent: 32.39
   '2013':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 78155000
+      units: Mwh
+      value: 78155087
       rank: 1
       percent: 29.1
+  '2014':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 79463144.33
+      rank: 1
+      percent: 30.64
+  '2015':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 74322445.16
+      rank: 1
+      percent: 29.59
 federal_production:
   '2014':
     - product: Coal (tons)

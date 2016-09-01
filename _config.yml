@@ -70,7 +70,7 @@ collections:
     output: true
     permalink: /how-it-works/:path/
   offshore_areas:
-    output: true
+    output: false
     # permalinks are defined in _offshore_areas/???.md
   offshore_regions:
     output: true

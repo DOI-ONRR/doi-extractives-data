@@ -340,40 +340,40 @@ federal_production:
       percent: 0
 all_production:
   '2007':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 43389833
       rank: 5
-      percent: 3.79
+      percent: 3.78
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 9364000
+      units: Mwh
+      value: 9364336
       rank: 5
       percent: 3.78
   '2008':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 10000000
+      units: Mwh
+      value: 9999557
       rank: 5
       percent: 3.92
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 44785700
       rank: 5
-      percent: 3.83
+      percent: 3.82
   '2009':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 39485837
       rank: 5
-      percent: 3.68
+      percent: 3.67
   '2010':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 44732165
@@ -381,14 +381,21 @@ all_production:
       percent: 4.13
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 9415000
+      units: Mwh
+      value: 9414662
       rank: 5
       percent: 3.62
   '2012':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 11283000
+      units: Mwh
+      value: 11283465
       rank: 5
       percent: 4.08
+  '2014':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 11482751
+      rank: 5
+      percent: 4.43

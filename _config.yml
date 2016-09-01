@@ -57,6 +57,9 @@ exclude:
   - data/db
   - data/**/*.js
   - data/**/*.svg
+  - data/**/*.csv
+  - data/geo/input
+  - data/jobs/bls
   - maps/data
   - maps/land/*.json
 

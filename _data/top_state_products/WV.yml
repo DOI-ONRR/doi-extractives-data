@@ -67,69 +67,53 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 574301
-      rank: 1
+      value: 14931826
+      rank: 5
       percent: 0
   '2007':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 519848
-      rank: 1
-      percent: 0
-  '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 596923
-      rank: 1
+      value: 13516048
+      rank: 5
       percent: 0
   '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 467668
-      rank: 1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 5018
+      rank: 3
       percent: 0
   '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 208
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 379408
-      rank: 1
+      value: 9864608
+      rank: 5
       percent: 0
   '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 364
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 432472
-      rank: 1
+      value: 11244272
+      rank: 5
       percent: 0
   '2012':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 204968
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 208899
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 176349
-      rank: 1
-      percent: 0
-  '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 153187
-      rank: 1
+      value: 5329168
+      rank: 5
       percent: 0

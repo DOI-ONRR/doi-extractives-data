@@ -82,6 +82,13 @@ all_production:
       rank: 2
       percent: 11.15
 federal_production:
+  '2006':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 2002
+      rank: 3
+      percent: 0
   '2010':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore

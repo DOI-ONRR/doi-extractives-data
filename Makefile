@@ -277,7 +277,8 @@ data/federal_production: \
 
 data/offshore_federal_production: \
 	data/offshore_federal_production_areas \
-	data/offshore_federal_production_regions.yml
+	data/offshore_federal_production_regions.yml \
+	data/offshore_revenues_by_type.yml
 
 data/state_federal_production.yml:
 	$(query) --format ndjson " \

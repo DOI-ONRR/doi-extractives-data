@@ -15,8 +15,8 @@ DROP TABLE IF EXISTS federal_offshore_area_production;
 CREATE TABLE federal_offshore_area_production AS
     SELECT
         year, area.region AS region_id,
-        area.id AS locality_id,
-        area.name AS locality_name,
+        area.id AS area_id,
+        area.name AS area_name,
         product,
         product_name,
         units,
@@ -27,19 +27,19 @@ CREATE TABLE federal_offshore_area_production AS
         offshore.locality_id = area.name
     GROUP BY
         year, region_id,
-        locality_id, locality_name,
+        area_id, area_name,
         product, product_name,
         units
 ORDER BY
     year, product, product_name, units, volume DESC;
 
-
 -- create onshore county production
 DROP TABLE IF EXISTS federal_county_production;
 CREATE TABLE federal_county_production AS
     SELECT
-        year, region_id,
-        locality_id,
+        year, region_id AS state,
+        locality_id AS county,
+        fips,
         product,
         product_name,
         units,
@@ -49,9 +49,9 @@ CREATE TABLE federal_county_production AS
     ON
         offshore.locality_id != area.name
     GROUP BY
-        year, region_id,
-        locality_id, product,
-        product_name, units
+        year, state,
+        county, fips,
+        product, product_name, units
 ORDER BY
     year, product, product_name, units, volume DESC;
 
@@ -72,7 +72,7 @@ CREATE TABLE federal_offshore_region_production AS
 DROP TABLE IF EXISTS federal_state_production;
 CREATE TABLE federal_state_production AS
     SELECT
-        year, region_id AS state,
+        year, state,
         product, product_name,
         units,
         SUM(volume) AS volume

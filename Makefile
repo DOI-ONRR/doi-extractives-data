@@ -236,6 +236,7 @@ data/revenue: \
 data/offshore_revenue: \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
+	data/offshore_revenues_by_type.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -277,8 +278,7 @@ data/federal_production: \
 
 data/offshore_federal_production: \
 	data/offshore_federal_production_areas \
-	data/offshore_federal_production_regions.yml \
-	data/offshore_revenues_by_type.yml
+	data/offshore_federal_production_regions.yml
 
 data/state_federal_production.yml:
 	$(query) --format ndjson " \
@@ -581,7 +581,7 @@ tables/county_revenue: data/revenue/onshore.tsv
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
 
-tables/federal_production: data/federal-production/onshore.tsv
+tables/federal_production: data/federal-production/federal-production.tsv
 	@$(call drop-table,federal_local_production)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/federal-production/transform-production.js -r tsv $^ > $$tmp && \

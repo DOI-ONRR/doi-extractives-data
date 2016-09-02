@@ -134,6 +134,12 @@
       float: none;
       padding-left: 0;
     }
+
+    a {
+      @include heading(para-sm);
+      
+      color: $blue;
+    }
   }
 }
 

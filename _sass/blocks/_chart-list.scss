@@ -133,6 +133,9 @@
       width: 100%;
     }
 
+    color: $blue;
+    text-decoration: none;
+
     a {
       @include heading(para-sm);
 
@@ -140,9 +143,6 @@
       &:active {
         text-decoration: underline;
       }
-
-      color: $blue;
-      text-decoration: none;
     }
   }
 }

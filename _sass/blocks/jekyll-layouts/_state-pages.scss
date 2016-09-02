@@ -94,16 +94,16 @@
       padding-bottom: $base-padding-lite;
     }
   }
-  
+
   .disbursements-data {
     @include heading(para-sm);
+
+    color: $blue;
+    text-decoration: none;
 
     &:hover,
     &:active {
       text-decoration: underline;
     }
-
-    color: $blue;
-    text-decoration: none;
   }
 }

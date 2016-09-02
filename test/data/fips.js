@@ -1,3 +1,4 @@
+/* jshint node: true, mocha: true */
 var c = require('colors');
 var assert = require('assert');
 var fs = require('fs');
@@ -66,7 +67,8 @@ describe('FIPS codes', function() {
             ].join(''));
             assert.equal(row.state, county.state, [
               'bad state for FIPS ', c.yellow(fips), ' (', row.county, '): ',
-              c.red(row.state), ' should be ', c.green(county.state), ' (', county.name, ')'
+              c.red(row.state), ' should be ',
+              c.green(county.state), ' (', county.name, ')'
             ].join(''));
           } catch (error) {
             // XXX Alaska is just not right, I guess?

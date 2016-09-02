@@ -11,7 +11,7 @@
   var width = 300;
   var height = 160;
 
-  var textMargin = 18;
+  var textMargin = 14;
   var baseMargin = 2;
   var extentMargin = 18;
   var tickPadding = 10;

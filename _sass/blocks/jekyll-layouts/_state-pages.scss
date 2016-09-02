@@ -1,20 +1,33 @@
 .layout-state-pages {
   padding-bottom: $standard-padding-fluffed;
 
-  section + section,
-  h2 + section, {
-    padding-top: $standard-padding-fluffed;
-  }
+  // section + section,
+  // h2 + section, {
+  //   padding-top: $standard-padding-fluffed;
+  // }
 
-  p + section,
-  p + h3,
-  p + h4 {
-    padding-top: $standard-padding-extra;
+  // p + section,
+  // p + h3,
+  // p + h4 {
+  //   padding-top: $standard-padding-extra;
+  // }
+  
+  p + section {
+    margin-top: -0.75rem; //to compendate for margin from preceding p
   }
 
   h2 {
     border-bottom: 20px solid $light-green;
     padding-bottom: $standard-padding-lite;
+    padding-top: 6rem;
+  }
+
+  h3 {
+    padding-top: 4rem;
+  }
+
+  h4 {
+    padding-bottom: $standard-padding;
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),
@@ -33,10 +46,6 @@
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
-  }
-
-  h4 {
-    padding-bottom: $standard-padding;
   }
 
   hr {

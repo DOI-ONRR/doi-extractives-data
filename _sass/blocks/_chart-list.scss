@@ -21,6 +21,7 @@
     flex: 1 0 auto;
     margin-bottom: $base-padding-base;
     min-height: 40px;
+    padding-top: 2.5rem;
   }
 
   .chart-list-intro {
@@ -33,7 +34,6 @@
     border-top: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: $base-padding;
     margin-top: 0;
     padding-top: 0;
   }
@@ -69,8 +69,6 @@
       padding-left: $base-padding-lite;
       padding-right: $base-padding-lite;
     }
-
-
   }
 
   figure {
@@ -82,7 +80,7 @@
 
     font-weight: $weight-light;
     line-height: 20px;
-    min-height: 100px;
+    min-height: 65px;
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
@@ -99,7 +97,7 @@
     font-weight: $weight-bold;
     margin: 0;
     min-height: inherit;
-    padding: $base-padding-lite;
+    //padding: $base-padding-lite;
   }
 
   .county-map-table {
@@ -110,7 +108,6 @@
 
 .chart-selector-wrapper {
   display: inline-block;
-  margin-bottom: $base-padding-jumbo;
 
   .chart-selector {
     @include span-columns(2);
@@ -126,6 +123,7 @@
   .chart-description {
     border-left: 1px solid $mid-gray;
     float: left;
+    margin-bottom: 0;
     padding-left: 1.25rem;
     width: 75%;
 
@@ -137,8 +135,14 @@
 
     a {
       @include heading(para-sm);
-      
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+
       color: $blue;
+      text-decoration: none;
     }
   }
 }

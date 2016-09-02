@@ -1,6 +1,7 @@
 ## Customize the test machine
 machine:
-  # Version of ruby to use
+  node:
+    version: 5.12.0
   ruby:
     version:
       2.2.3

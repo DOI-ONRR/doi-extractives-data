@@ -42,7 +42,7 @@
             aria-hidden='true'
             data-witheld="false">
             <span class="withheld" aria-hidden="true">
-              Data about {{ product_name | downcase }} extraction in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
+              Data about {{ product_name | downcase }} extraction on federal land in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
             </span>
             <span class="has-data">
               <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ county[1].name }} from <span data-year='{{ year }}'>{{ year }}</span>

@@ -121,9 +121,11 @@
 
   .chart-description {
     border-left: 1px solid $mid-gray;
+    color: $blue;
     float: left;
     margin-bottom: 0;
     padding-left: 1.25rem;
+    text-decoration: none;
     width: 75%;
 
     &.no-selector {
@@ -132,10 +134,6 @@
       padding-left: 0;
       width: 100%;
     }
-
-    color: $blue;
-    text-decoration: none;
-
     a {
       @include heading(para-sm);
 

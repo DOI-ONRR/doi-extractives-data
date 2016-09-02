@@ -634,7 +634,7 @@ tables/gdp: data/gdp/regional.tsv
 	@$(call drop-table,gdp)
 	$(call load-table,$^,gdp)
 
-tables/exports: data/state/exports-by-industry.tsv
+tables/exports: data/exports/exports-by-industry.tsv
 	@$(call drop-table,exports)
 	$(call load-table,$^,exports)
 

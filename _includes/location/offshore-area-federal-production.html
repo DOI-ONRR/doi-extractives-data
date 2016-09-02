@@ -59,6 +59,13 @@
         </h4>
 
         <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="offshore-area-federal-production-figures-{{ product_slug }}"
+            data='{{ production_values | map_hash: "volume" | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="{{ long_units }}">
+          </eiti-bar-chart>
           <figcaption id="offshore-area-federal-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value"
@@ -75,16 +82,7 @@
             Data for {{ state_name }} was withheld in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
-
           </figcaption>
-          <eiti-bar-chart
-            aria-controls="offshore-area-federal-production-figures-{{ product_slug }}"
-            data='{{ production_values | map_hash: "volume" | jsonify }}'
-            x-range="{{ year_range }}"
-            x-value="{{ year }}"
-            data-units="{{ long_units }}">
-          </eiti-bar-chart>
-
         </figure>
 
       </section>

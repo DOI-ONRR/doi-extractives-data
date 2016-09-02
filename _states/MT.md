@@ -78,7 +78,7 @@ The Administrative Rules of Montana also regulate natural resource extraction:
 
 ### Fiscal costs of extractive activity
 
-In addition to generating revenue, extractive industries can bring costs to state and local communities. In Montana, these costs are concentrated in eastern Montana because of extraction from the Bakken Formation in Montana and neighboring North Dakota. For more extractive industries' effect on this region, see the Eastern Montana Impact Coalition's [Regional Impact Analysis (PDF)](http://static1.squarespace.com/static/529fb9b4e4b0edf62d295374/t/55e9eb5be4b098674aefb5fe/1441393499939/Abbreviated+EMIC+Regional+Impact+Analysis+2015.pdf).
+In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. In Montana, these costs are concentrated in eastern Montana because of extraction from the Bakken Formation in Montana and neighboring North Dakota. For more extractive industries' effect on this region, see the Eastern Montana Impact Coalition's [Regional Impact Analysis (PDF)](http://static1.squarespace.com/static/529fb9b4e4b0edf62d295374/t/55e9eb5be4b098674aefb5fe/1441393499939/Abbreviated+EMIC+Regional+Impact+Analysis+2015.pdf).
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
 

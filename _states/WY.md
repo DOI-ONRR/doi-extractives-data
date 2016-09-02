@@ -91,7 +91,7 @@ Wyoming rules and regulations are maintained by the Office of the Secretary of S
 
 ### Fiscal costs of extractive activity
 
-In addition to generating revenue, extractive industries can bring costs to state and local communities.
+In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities.
 
 <!-- Differences in revenue collection between states and counties can illuminate state distribution of those funds to counties to help them address those costs. -->
 

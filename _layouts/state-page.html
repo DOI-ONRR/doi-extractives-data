@@ -133,6 +133,10 @@ nav_items:
         <h2>Economic impact</h2>
         {% if page.state_impact %}
           {{ page.state_impact | markdownify }}
+
+          <p>
+            In addition to generaing economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
+          </p>
         {% endif %}
 
         {% include location/section-gdp.html %}

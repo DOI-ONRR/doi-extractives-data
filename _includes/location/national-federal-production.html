@@ -30,7 +30,7 @@
 
       {% assign all_withheld = true %}
       {% for product_year in product[1].volume %}
-        {% if year_list contains product_year[0] and product_year[1] != nil %}
+        {% if year_range contains product_year[0] and product_year[1] != nil %}
           {% assign all_withheld = false %}
           {% break %}
         {% endif %}

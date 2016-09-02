@@ -57,6 +57,13 @@
             </h4>
 
             <figure class="chart">
+              <eiti-bar-chart
+                aria-controls="federal-production-figures-{{ product_slug }}"
+                data='{{ production_values | map_hash: "volume" | jsonify }}'
+                x-range="{{ year_range }}"
+                x-value="{{ year }}"
+                data-units="{{ long_units }}">
+              </eiti-bar-chart>
               <figcaption id="federal-production-figures-{{ product_slug }}">
                 <span class="caption-data">
                   <span class="eiti-bar-chart-y-value"
@@ -73,13 +80,6 @@
                   Data about how much {{ product_name | downcase }} was extracted in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
-              <eiti-bar-chart
-                aria-controls="federal-production-figures-{{ product_slug }}"
-                data='{{ production_values | map_hash: "volume" | jsonify }}'
-                x-range="{{ year_range }}"
-                x-value="{{ year }}"
-                data-units="{{ long_units }}">
-              </eiti-bar-chart>
             </figure>
 
           </div><!-- /.chart-container -->

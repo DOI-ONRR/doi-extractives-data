@@ -3,6 +3,12 @@ var assert = require('assert');
 var fs = require('fs');
 var tito = require('tito').formats;
 
+// XXX these are the known FIPS of offshore _state_ land
+var OFFSHORE_FIPS = [
+  '22719',
+  '22721',
+];
+
 describe('FIPS codes', function() {
 
   var topology = require('../../data/geo/us-topology.json');
@@ -45,7 +51,11 @@ describe('FIPS codes', function() {
       var failed = 0;
       var total = 0;
       Object.keys(revenueFIPS)
+        .filter(function(fips) {
+          return OFFSHORE_FIPS.indexOf(fips) === -1;
+        })
         .forEach(function(fips) {
+
           var row = revenueFIPS[fips];
           var county = countiesByFIPS[fips];
           total++;

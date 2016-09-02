@@ -24,7 +24,7 @@ state_revenue_sustainability: |
 state_tax_expenditures: |
     In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 state_disbursements: |
-    [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature.
+    [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature. In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes.
 state_impact: |
     The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
 
@@ -78,7 +78,7 @@ The Administrative Rules of Montana also regulate natural resource extraction:
 
 ### Fiscal costs of extractive activity
 
-In addition to generating revenue, extractive industries can bring costs to state and local communities. In Montana, these costs are concentrated in eastern Montana because of extraction from the Bakken Formation in Montana and neighboring North Dakota. For more extractive industries' effect on this region, see the Eastern Montana Impact Coalition's [Regional Impact Analysis (PDF)](http://static1.squarespace.com/static/529fb9b4e4b0edf62d295374/t/55e9eb5be4b098674aefb5fe/1441393499939/Abbreviated+EMIC+Regional+Impact+Analysis+2015.pdf).
+In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. In Montana, these costs are concentrated in eastern Montana because of extraction from the Bakken Formation in Montana and neighboring North Dakota. For more extractive industries' effect on this region, see the Eastern Montana Impact Coalition's [Regional Impact Analysis (PDF)](http://static1.squarespace.com/static/529fb9b4e4b0edf62d295374/t/55e9eb5be4b098674aefb5fe/1441393499939/Abbreviated+EMIC+Regional+Impact+Analysis+2015.pdf).
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
 

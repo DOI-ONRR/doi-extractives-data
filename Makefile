@@ -43,7 +43,8 @@ site-data: \
 	data/all_production \
 	data/federal_production \
 	data/exports \
-	data/top_state_products
+	data/top_state_products \
+	data/offshore_federal_production
 
 data/all_production: tables/all_production \
 	data/national_all_production.yml \
@@ -227,11 +228,11 @@ data/revenue: \
 	data/county_revenue \
 	data/national_revenues.yml \
 	data/national_revenues_by_type.yml \
-	# data/offshore_revenue_areas \
-	# data/offshore_revenue_regions.yml \
 	data/opt_in_state_revenues \
 	data/state_revenues.yml \
-	data/state_revenues_by_type.yml
+	data/state_revenues_by_type.yml \
+	data/offshore_revenue_areas \
+	data/offshore_revenue_regions.yml \
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -269,9 +270,11 @@ data/federal_disbursements.yml:
 data/federal_production: \
 	data/federal_county_production \
 	data/national_federal_production.yml \
-	data/offshore_federal_production_areas \
-	data/offshore_federal_production_regions.yml \
 	data/state_federal_production.yml
+
+data/offshore_federal_production: \
+	data/offshore_federal_production_areas \
+	data/offshore_federal_production_regions.yml
 
 data/state_federal_production.yml:
 	$(query) --format ndjson " \

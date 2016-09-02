@@ -1,11 +1,11 @@
 .styleguide-swatch {
-	display: inline-block;
-	height: 30px;
+  display: inline-block;
+  height: 30px;
   margin-right: $base-padding-lite;
   vertical-align: middle;
   width: 30px;
 
   &.with-outline {
-  	border: 1px solid $gray-light;
+    border: 1px solid $gray-light;
   }
 }

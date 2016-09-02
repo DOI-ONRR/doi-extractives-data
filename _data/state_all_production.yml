@@ -119,11 +119,11 @@ AK:
           rank: 4
         '2014':
           volume: 181175000
-          percent: 5.7
+          percent: 5.66
           rank: 4
         '2015':
           volume: 176240000
-          percent: 5.12
+          percent: 5.13
           rank: 4
     Natural Gas:
       units: Mcf
@@ -401,11 +401,11 @@ AL:
           percent: 0.38
           rank: 14
         '2014':
-          volume: 9828000
+          volume: 9827000
           percent: 0.31
           rank: 15
         '2015':
-          volume: 9734000
+          volume: 9696000
           percent: 0.28
           rank: 15
     Natural Gas:
@@ -654,11 +654,11 @@ AR:
           rank: 18
         '2014':
           volume: 6845000
-          percent: 0.22
+          percent: 0.21
           rank: 18
         '2015':
-          volume: 6536000
-          percent: 0.19
+          volume: 6165000
+          percent: 0.18
           rank: 19
     Natural Gas:
       units: Mcf
@@ -1192,11 +1192,11 @@ CA:
           percent: 7.33
           rank: 3
         '2014':
-          volume: 204269000
-          percent: 6.43
+          volume: 204699000
+          percent: 6.4
           rank: 3
         '2015':
-          volume: 201738000
+          volume: 201284000
           percent: 5.86
           rank: 3
     Geothermal:
@@ -1577,12 +1577,12 @@ CO:
           percent: 2.4
           rank: 8
         '2014':
-          volume: 95192000
-          percent: 3
+          volume: 95787000
+          percent: 2.99
           rank: 7
         '2015':
-          volume: 119239000
-          percent: 3.46
+          volume: 126232000
+          percent: 3.67
           rank: 7
     Natural Gas:
       units: Mcf
@@ -3129,7 +3129,7 @@ IL:
           percent: 0.3
           rank: 16
         '2015':
-          volume: 9521000
+          volume: 9522000
           percent: 0.28
           rank: 16
     Natural Gas:
@@ -3698,12 +3698,12 @@ KS:
           percent: 1.73
           rank: 10
         '2014':
-          volume: 49510000
-          percent: 1.56
+          volume: 49505000
+          percent: 1.55
           rank: 10
         '2015':
-          volume: 44618000
-          percent: 1.3
+          volume: 45481000
+          percent: 1.32
           rank: 10
     Natural Gas:
       units: Mcf
@@ -4194,12 +4194,12 @@ LA:
           percent: 2.65
           rank: 7
         '2014':
-          volume: 68356000
+          volume: 68777000
           percent: 2.15
           rank: 9
         '2015':
-          volume: 63311000
-          percent: 1.84
+          volume: 62881000
+          percent: 1.83
           rank: 9
     Natural Gas:
       units: Mcf
@@ -5494,7 +5494,7 @@ MO:
           percent: 0.01
           rank: 28
         '2015':
-          volume: 138000
+          volume: 149000
           percent: 0
           rank: 28
     Natural Gas:
@@ -5726,11 +5726,11 @@ MS:
           rank: 13
         '2014':
           volume: 24346000
-          percent: 0.77
+          percent: 0.76
           rank: 13
         '2015':
-          volume: 24929000
-          percent: 0.72
+          volume: 24918000
+          percent: 0.73
           rank: 14
     Natural Gas:
       units: Mcf
@@ -5977,11 +5977,11 @@ MT:
           percent: 1.08
           rank: 12
         '2014':
-          volume: 29880000
-          percent: 0.94
+          volume: 29899000
+          percent: 0.93
           rank: 12
         '2015':
-          volume: 28641000
+          volume: 28561000
           percent: 0.83
           rank: 12
     Natural Gas:
@@ -6391,12 +6391,12 @@ ND:
           percent: 11.56
           rank: 2
         '2014':
-          volume: 396866000
-          percent: 12.49
+          volume: 394468000
+          percent: 12.33
           rank: 2
         '2015':
-          volume: 428550000
-          percent: 12.45
+          volume: 429447000
+          percent: 12.5
           rank: 2
     Natural Gas:
       units: Mcf
@@ -6612,8 +6612,8 @@ NE:
           percent: 0.1
           rank: 21
         '2015':
-          volume: 2956000
-          percent: 0.09
+          volume: 2918000
+          percent: 0.08
           rank: 20
     Natural Gas:
       units: Mcf
@@ -7188,12 +7188,12 @@ NM:
           percent: 3.74
           rank: 6
         '2014':
-          volume: 123686000
-          percent: 3.89
+          volume: 123821000
+          percent: 3.87
           rank: 6
         '2015':
-          volume: 149403000
-          percent: 4.34
+          volume: 146746000
+          percent: 4.27
           rank: 6
     Geothermal:
       units: Mwh
@@ -7453,7 +7453,7 @@ NV:
         '2015':
           volume: 281000
           percent: 0.01
-          rank: 27
+          rank: 26
     Geothermal:
       units: Mwh
       volume:
@@ -7725,9 +7725,9 @@ NY:
           percent: 0.01
           rank: 25
         '2015':
-          volume: 341000
+          volume: 279000
           percent: 0.01
-          rank: 26
+          rank: 27
     Natural Gas:
       units: Mcf
       volume:
@@ -8039,12 +8039,12 @@ OH:
           percent: 0.29
           rank: 16
         '2014':
-          volume: 14918000
+          volume: 14927000
           percent: 0.47
           rank: 14
         '2015':
-          volume: 26330000
-          percent: 0.76
+          volume: 25901000
+          percent: 0.75
           rank: 13
     Natural Gas:
       units: Mcf
@@ -8365,12 +8365,12 @@ OK:
           percent: 4.04
           rank: 5
         '2014':
-          volume: 127047000
-          percent: 4
+          volume: 145454000
+          percent: 4.55
           rank: 5
         '2015':
           volume: 157770000
-          percent: 4.58
+          percent: 4.59
           rank: 5
     Natural Gas:
       units: Mcf
@@ -8926,12 +8926,12 @@ PA:
           percent: 0.19
           rank: 19
         '2014':
-          volume: 6692000
+          volume: 6841000
           percent: 0.21
           rank: 19
         '2015':
-          volume: 7369000
-          percent: 0.21
+          volume: 6993000
+          percent: 0.2
           rank: 18
     Natural Gas:
       units: Mcf
@@ -9497,7 +9497,7 @@ SD:
           percent: 0.06
           rank: 24
         '2015':
-          volume: 1631000
+          volume: 1666000
           percent: 0.05
           rank: 24
     Natural Gas:
@@ -9741,7 +9741,7 @@ TN:
           percent: 0.01
           rank: 26
         '2015':
-          volume: 342000
+          volume: 296000
           percent: 0.01
           rank: 25
     Natural Gas:
@@ -10051,12 +10051,12 @@ TX:
           percent: 34.01
           rank: 1
         '2014':
-          volume: 1155684000
-          percent: 36.36
+          volume: 1158166000
+          percent: 36.21
           rank: 1
         '2015':
-          volume: 1262011000
-          percent: 36.66
+          volume: 1263585000
+          percent: 36.77
           rank: 1
     Natural Gas:
       units: Mcf
@@ -10377,12 +10377,12 @@ UT:
           percent: 1.29
           rank: 11
         '2014':
-          volume: 40905000
-          percent: 1.29
+          volume: 40895000
+          percent: 1.28
           rank: 11
         '2015':
-          volume: 36970000
-          percent: 1.07
+          volume: 36987000
+          percent: 1.08
           rank: 11
     Geothermal:
       units: Mwh
@@ -10691,7 +10691,7 @@ VA:
           percent: 0
           rank: 30
         '2015':
-          volume: 15000
+          volume: 11000
           percent: 0
           rank: 30
     Natural Gas:
@@ -11525,12 +11525,12 @@ WV:
           percent: 0.26
           rank: 17
         '2014':
-          volume: 7524000
+          volume: 7582000
           percent: 0.24
           rank: 17
         '2015':
-          volume: 8282000
-          percent: 0.24
+          volume: 7970000
+          percent: 0.23
           rank: 17
     Natural Gas:
       units: Mcf
@@ -11812,12 +11812,12 @@ WY:
           percent: 2.33
           rank: 9
         '2014':
-          volume: 76078000
-          percent: 2.39
+          volume: 76137000
+          percent: 2.38
           rank: 8
         '2015':
-          volume: 87537000
-          percent: 2.54
+          volume: 86499000
+          percent: 2.52
           rank: 8
     Natural Gas:
       units: Mcf

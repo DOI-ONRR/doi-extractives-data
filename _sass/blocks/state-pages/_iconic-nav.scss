@@ -15,7 +15,7 @@
     }
 
     .states.features use {
-      @include transition(all, 0.3s);
+      @include transition(all, 0.2s);
 
       fill: $gray;
       fill-opacity: 1;
@@ -23,7 +23,7 @@
     }
 
     .offshore.features use {
-      @include transition(all, 0.3s);
+      @include transition(all, 0.2s);
 
       fill: $gray-light;
       fill-opacity: 1;
@@ -73,6 +73,7 @@
     @include font-size(0.8);
     @include transition(visibility, 0.3s);
 
+    color: $gray-darker;
     font-style: italic;
     position: absolute;
     right: 0;

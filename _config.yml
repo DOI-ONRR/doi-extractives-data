@@ -44,7 +44,11 @@ exclude:
   - js/src
   # shell and other scripts
   - '*.sh'
+  - data/**/*.md
+  - data/**/*.yml
+  - data/all-production/*/*.?sv
   - data/bin
+  - data/geo/input
   - data/gdp
   - data/jobs
   - lib

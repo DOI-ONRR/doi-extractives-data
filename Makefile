@@ -44,7 +44,6 @@ site-data: \
 	data/federal_production \
 	data/exports \
 	data/top_state_products \
-	data/offshore_revenue \
 	data/offshore_federal_production
 
 data/all_production: tables/all_production \
@@ -231,7 +230,9 @@ data/revenue: \
 	data/national_revenues_by_type.yml \
 	data/opt_in_state_revenues \
 	data/state_revenues.yml \
-	data/state_revenues_by_type.yml
+	data/state_revenues_by_type.yml \
+	data/offshore_revenue_areas \
+	data/offshore_revenue_regions.yml \
 
 data/offshore_revenue: \
 	data/offshore_revenue_areas \

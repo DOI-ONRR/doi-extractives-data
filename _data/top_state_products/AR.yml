@@ -3,125 +3,143 @@ federal_production:
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 6350
+      value: 165100
       rank: 1
-      percent: 100
+      percent: 2600
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 598
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 9947099
-      rank: 1
+      value: 258624574
+      rank: 5
       percent: 0
   '2007':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 2400
+      value: 62400
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 9874095
-      rank: 1
-      percent: 0
-  '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12040947
-      rank: 1
-      percent: 0
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-  '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17902901
-      rank: 1
-      percent: 0
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 18909311
-      rank: 1
-      percent: 0
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-  '2011':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17840902
-      rank: 1
-      percent: 0
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15478747
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13661475
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15170981
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 1
-      rank: 1
+      value: 546
+      rank: 3
       percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 256726470
+      rank: 5
+      percent: 0
+  '2008':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
       value: null
       rank: 1
       percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 208
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 156
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 52
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 491642086
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 52
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 463863452
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 52
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 402447422
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 26
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 26
+      rank: 4
+      percent: 0
   '2015':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 4701
+      value: 122226
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13224588
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 2
-      rank: 1
+      value: 52
+      rank: 4
       percent: 0
 revenue:
   '2007':

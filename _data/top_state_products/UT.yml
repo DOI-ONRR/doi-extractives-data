@@ -74,27 +74,15 @@ federal_production:
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 8776
+      value: 228176
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 10097981
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 212844173
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2350934233
+      value: 61124290058
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -113,31 +101,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 262547506
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 186573530
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5533948498
+      rank: 5
+      percent: 0
   '2007':
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 10879
+      value: 282854
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 6659942
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 243499977
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2046718554
+      value: 53214682404
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -156,31 +150,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 173158492
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 217728992
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6330999402
+      rank: 5
+      percent: 0
   '2008':
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 16957
+      value: 440882
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 8580347
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 296600546
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2468886992
+      value: 64191061792
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -199,31 +199,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 223089022
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 264087720
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7711614196
+      rank: 5
+      percent: 100
   '2009':
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 13016
+      value: 338416
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 6683745
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 305017592
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2827213958
+      value: 73507562908
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -242,31 +248,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 173777370
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 285307412
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7930457392
+      rank: 5
+      percent: 100
   '2010':
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 28082
+      value: 730132
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 6219884
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 288664802
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2670508903
+      value: 69433231478
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -285,25 +297,31 @@ federal_production:
       value: null
       rank: 1
       percent: null
-  '2011':
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 7213622
-      rank: 1
+      value: 161716984
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 281716084
+      rank: 3
       percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 300827979
-      rank: 1
-      percent: 0
+      value: 7505284852
+      rank: 4
+      percent: 100
+  '2011':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2554615747
+      value: 66420009422
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -328,31 +346,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 187554172
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 277202224
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7821527454
+      rank: 4
+      percent: 100
   '2012':
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 35927
+      value: 934102
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 8792809
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 327559310
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2453647854
+      value: 63794844204
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -371,31 +395,31 @@ federal_production:
       value: null
       rank: 1
       percent: null
-  '2013':
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 8108509
-      rank: 1
+      value: 228613034
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 291433870
+      rank: 3
       percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 297246717
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 12986766
-      rank: 1
-      percent: 0
+      value: 8516542060
+      rank: 4
+      percent: 100
+  '2013':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2316266258
+      value: 60222922708
       rank: 1
-      percent: 0
+      percent: 2500
     - product: Clay (tons)
       name: Clay
       units: tons
@@ -420,43 +444,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 210821234
+      rank: 3
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 337655916
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 313040546
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7728414642
+      rank: 5
+      percent: 100
   '2014':
     - product: Clay (tons)
       name: Clay
       units: tons
-      value: 33520
+      value: 871520
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 8084545
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 279981808
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 132080000
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2463584337
+      value: 64053192762
       rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13228964
-      rank: 1
-      percent: 0
+      percent: 2500
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
@@ -475,49 +499,49 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 210198170
+      rank: 2
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 3434080000
+      rank: 3
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 343953064
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7279527008
+      rank: 5
+      percent: 100
   '2015':
     - product: Clay (tons)
       name: Clay
       units: tons
-      value: 51791
+      value: 1346566
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Gilsonite (tons)
       name: Gilsonite
       units: tons
-      value: 16078
+      value: 418028
       rank: 1
-      percent: 100
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 5469603
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 261770435
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 130138400
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 2139260182
+      value: 55620764732
       rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 11360493
-      rank: 1
-      percent: 0
+      percent: 2500
     - product: Potash (tons)
       name: Potash
       units: tons
@@ -530,6 +554,30 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 3383598400
+      rank: 3
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 142209678
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 295372818
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6806031310
+      rank: 5
+      percent: 100
 revenue:
   '2006':
     - product: All

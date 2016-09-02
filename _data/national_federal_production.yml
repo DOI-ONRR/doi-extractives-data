@@ -216,44 +216,12 @@ US:
           volume: 409345817
         '2015':
           volume: 375560873
-    Coal Bed Methane (mcf):
-      name: Coal Bed Methane
-      units: mcf
-      volume:
-        '2009':
-          volume: 0
-        '2011':
-          volume: 0
     Coal Waste (Sub-Econ) (tons):
       name: Coal Waste (Sub-Econ)
       units: tons
       volume:
         '2014':
           volume: null
-    Condensate (bbl):
-      name: Condensate
-      units: bbl
-      volume:
-        '2004':
-          volume: 49873566
-        '2005':
-          volume: 45647702
-        '2006':
-          volume: 40624959
-        '2007':
-          volume: 38242884
-        '2008':
-          volume: 24196977
-        '2009':
-          volume: 36528730
-        '2010':
-          volume: 54195681
-        '2011':
-          volume: 55564317
-        '2012':
-          volume: 53579431
-        '2013':
-          volume: 43376508
     Copper Concentrate (tons):
       name: Copper Concentrate
       units: tons
@@ -278,84 +246,6 @@ US:
           volume: 20561
         '2015':
           volume: 25981
-    Drip or Scrubber Condensate (bbl):
-      name: Drip or Scrubber Condensate
-      units: bbl
-      volume:
-        '2004':
-          volume: 1318048
-        '2005':
-          volume: 1254765
-        '2006':
-          volume: 1002154
-        '2007':
-          volume: 1341624
-        '2008':
-          volume: 678091
-        '2009':
-          volume: 1576234
-        '2010':
-          volume: 1241033
-        '2011':
-          volume: 876401
-        '2012':
-          volume: 707690
-        '2013':
-          volume: 549079
-    Flash Gas (mcf):
-      name: Flash Gas
-      units: mcf
-      volume:
-        '2004':
-          volume: 3661223
-        '2005':
-          volume: 2282838
-        '2006':
-          volume: 2176629
-        '2007':
-          volume: 2558551
-        '2008':
-          volume: 1730238
-        '2009':
-          volume: 2216943
-        '2010':
-          volume: 4102677
-        '2011':
-          volume: 2720891
-        '2012':
-          volume: 1940972
-        '2013':
-          volume: 1363853
-    Fuel Gas (mcf):
-      name: Fuel Gas
-      units: mcf
-      volume:
-        '2004':
-          volume: 12873984
-        '2005':
-          volume: 11277353
-        '2006':
-          volume: 9855343
-        '2007':
-          volume: 12576862
-        '2008':
-          volume: 11641986
-        '2009':
-          volume: 13520337
-        '2010':
-          volume: 14257028
-        '2011':
-          volume: 13482874
-        '2012':
-          volume: 12950409
-        '2013':
-          volume: 13564126
-    Fuel Oil (bbl):
-      name: Fuel Oil
-      units: bbl
-      volume:
-        '2010':
-          volume: 5
     Gas (mcf):
       name: Gas
       units: mcf
@@ -380,60 +270,6 @@ US:
           volume: 4855039984
         '2015':
           volume: 4782557794
-    Gas Lost - Flared or Vented (mcf):
-      name: Gas Lost - Flared or Vented
-      units: mcf
-      volume:
-        '2004':
-          volume: 238150
-        '2005':
-          volume: 272721
-        '2006':
-          volume: 55555
-        '2007':
-          volume: 78957
-        '2008':
-          volume: 54368
-        '2009':
-          volume: 69138
-        '2010':
-          volume: 136359
-        '2011':
-          volume: 680256
-        '2012':
-          volume: 501224
-        '2013':
-          volume: 643531
-    Gas Plant Products (gal):
-      name: Gas Plant Products
-      units: gal
-      volume:
-        '2004':
-          volume: 2626813397
-        '2005':
-          volume: 2115107981
-        '2006':
-          volume: 2253482516
-        '2007':
-          volume: 2607907444
-        '2008':
-          volume: 1938567949
-        '2009':
-          volume: 2345589729
-        '2010':
-          volume: 2550465839
-        '2011':
-          volume: 2191416546
-        '2012':
-          volume: 1984868139
-        '2013':
-          volume: 1942896063
-    Geothermal - Commercially Demineralized H2O (cgal):
-      name: Geothermal - Commercially Demineralized H2O
-      units: cgal
-      volume:
-        '2004':
-          volume: 16451
     'Geothermal - Direct Use, Millions of Gallons':
       name: Geothermal
       units: 'Direct Use, Millions of Gallons'
@@ -496,12 +332,6 @@ US:
           volume: 243504
         '2015':
           volume: 170924
-    'Geothermal - Direct Utilization, Other (cgal)':
-      name: 'Geothermal - Direct Utilization, Other'
-      units: cgal
-      volume:
-        '2004':
-          volume: 16451
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -692,30 +522,6 @@ US:
           volume: 22598
         '2015':
           volume: 7632
-    Inlet Scrubber (bbl):
-      name: Inlet Scrubber
-      units: bbl
-      volume:
-        '2004':
-          volume: 32219
-        '2005':
-          volume: 15131
-        '2006':
-          volume: 13206
-        '2007':
-          volume: 36944
-        '2008':
-          volume: 71604
-        '2009':
-          volume: 104204
-        '2010':
-          volume: 203980
-        '2011':
-          volume: 183177
-        '2012':
-          volume: 183797
-        '2013':
-          volume: 256589
     Langbeinite (tons):
       name: Langbeinite
       units: tons
@@ -904,26 +710,22 @@ US:
       name: Oil
       units: bbl
       volume:
-        '2004':
-          volume: 521460114
-        '2005':
-          volume: 467888606
         '2006':
-          volume: 1082147608
+          volume: 597579939
         '2007':
-          volume: 1075109396
+          volume: 593673142
         '2008':
-          volume: 984591833
+          volume: 550555733
         '2009':
-          volume: 1287660742
+          volume: 697514282
         '2010':
-          volume: 1256535314
+          volume: 697990724
         '2011':
-          volume: 1087613155
+          volume: 618722100
         '2012':
-          volume: 1055239865
+          volume: 613796668
         '2013':
-          volume: 1060397514
+          volume: 623103681
         '2014':
           volume: 699549189
         '2015':
@@ -950,30 +752,6 @@ US:
           volume: 142273
         '2015':
           volume: 9375
-    Other Liquid Hydrocarbons (bbl):
-      name: Other Liquid Hydrocarbons
-      units: bbl
-      volume:
-        '2004':
-          volume: 16766
-        '2005':
-          volume: 9748
-        '2006':
-          volume: 114982
-        '2007':
-          volume: 12140
-        '2008':
-          volume: 6963
-        '2009':
-          volume: 5469
-        '2010':
-          volume: 6298
-        '2011':
-          volume: 6703
-        '2012':
-          volume: 7622
-        '2013':
-          volume: 6481
     Phosphate Raw Ore (tons):
       name: Phosphate Raw Ore
       units: tons
@@ -1046,30 +824,6 @@ US:
           volume: 449740
         '2015':
           volume: 330910
-    Processed (Residue) Gas (mcf):
-      name: Processed (Residue) Gas
-      units: mcf
-      volume:
-        '2004':
-          volume: 1876029499
-        '2005':
-          volume: 1660488229
-        '2006':
-          volume: 2027795745
-        '2007':
-          volume: 2021941463
-        '2008':
-          volume: 1501813333
-        '2009':
-          volume: 1598803423
-        '2010':
-          volume: 1410921296
-        '2011':
-          volume: 1182507185
-        '2012':
-          volume: 957299037
-        '2013':
-          volume: 849852684
     Purge Liquor (tons - equivalent):
       name: Purge Liquor
       units: tons - equivalent
@@ -1116,26 +870,22 @@ US:
       name: Salt
       units: tons
       volume:
-        '2004':
-          volume: 33299
-        '2005':
-          volume: 28603
         '2006':
-          volume: 542090
+          volume: 512832
         '2007':
-          volume: 730141
+          volume: 705887
         '2008':
-          volume: 661369
+          volume: 634339
         '2009':
-          volume: 669716
+          volume: 641677
         '2010':
-          volume: 824802
+          volume: 798041
         '2011':
-          volume: 884120
+          volume: 864519
         '2012':
-          volume: 770519
+          volume: 750109
         '2013':
-          volume: 920612
+          volume: 894066
         '2014':
           volume: 898225
         '2015':
@@ -1290,30 +1040,6 @@ US:
           volume: null
         '2015':
           volume: null
-    Sulfur (lton):
-      name: Sulfur
-      units: lton
-      volume:
-        '2004':
-          volume: 13639
-        '2005':
-          volume: 9818
-        '2006':
-          volume: 8236
-        '2007':
-          volume: 6793
-        '2008':
-          volume: 5109
-        '2009':
-          volume: 3852
-        '2010':
-          volume: 4418
-        '2011':
-          volume: 3436
-        '2012':
-          volume: 2664
-        '2013':
-          volume: 2969
     Sylvite-Raw Ore (tons):
       name: Sylvite-Raw Ore
       units: tons
@@ -1362,30 +1088,6 @@ US:
           volume: null
         '2015':
           volume: null
-    Unprocessed (Wet) Gas (mcf):
-      name: Unprocessed (Wet) Gas
-      units: mcf
-      volume:
-        '2004':
-          volume: 2064890440
-        '2005':
-          volume: 1605399447
-        '2006':
-          volume: 934107147
-        '2007':
-          volume: 771255045
-        '2008':
-          volume: 815310402
-        '2009':
-          volume: 826981296
-        '2010':
-          volume: 679937095
-        '2011':
-          volume: 505468788
-        '2012':
-          volume: 432732435
-        '2013':
-          volume: 333762380
     Wavellite (tons):
       name: Wavellite
       units: tons

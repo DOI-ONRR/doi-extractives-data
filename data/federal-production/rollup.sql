@@ -1,3 +1,73 @@
+-- then create national revenue rollups as an aggregate view on
+-- regional revenue
+DROP TABLE IF EXISTS federal_national_production;
+CREATE TABLE federal_national_production AS
+    SELECT
+        year, product, product_name, units, SUM(volume) AS volume
+    FROM federal_local_production
+    GROUP BY
+        year, product, product_name, units;
+
+-- then split federal_county_production into its offshore
+
+-- create offshore area production
+DROP TABLE IF EXISTS federal_offshore_area_production;
+CREATE TABLE federal_offshore_area_production AS
+    SELECT
+        year, area.region AS region_id,
+        area.id AS area_id,
+        area.name AS area_name,
+        product,
+        product_name,
+        units,
+        SUM(volume) AS volume
+    FROM federal_local_production AS offshore
+    INNER JOIN offshore_planning_areas AS area
+    ON
+        offshore.locality_id = area.name
+    GROUP BY
+        year, region_id,
+        area_id, area_name,
+        product, product_name,
+        units
+ORDER BY
+    year, product, product_name, units, volume DESC;
+
+-- create onshore county production
+DROP TABLE IF EXISTS federal_county_production;
+CREATE TABLE federal_county_production AS
+    SELECT
+        year, region_id AS state,
+        locality_id AS county,
+        fips,
+        product,
+        product_name,
+        units,
+        SUM(volume) AS volume
+    FROM federal_local_production AS offshore
+    INNER JOIN offshore_planning_areas AS area
+    ON
+        offshore.locality_id != area.name
+    GROUP BY
+        year, state,
+        county, fips,
+        product, product_name, units
+ORDER BY
+    year, product, product_name, units, volume DESC;
+
+
+-- then create regional offshore rollups as an aggregate view
+DROP TABLE IF EXISTS federal_offshore_region_production;
+CREATE TABLE federal_offshore_region_production AS
+    SELECT
+        year, region_id, product, product_name, units, SUM(volume) AS volume
+    FROM federal_offshore_area_production
+    GROUP BY
+        year, region_id, product, product_name, units
+    ORDER BY
+        year, product, product_name, units, volume DESC;
+
+
 -- create state production rollups
 DROP TABLE IF EXISTS federal_state_production;
 CREATE TABLE federal_state_production AS
@@ -12,98 +82,7 @@ CREATE TABLE federal_state_production AS
     ORDER BY
         year, product, product_name, units, volume DESC;
 
--- create regional production rollups as an aggregate view on
--- state and offshore production
-DROP TABLE IF EXISTS federal_regional_production;
-CREATE TABLE federal_regional_production AS
-    SELECT
-        year, state AS region_id, 'state' AS region_type,
-        product, product_name, units, SUM(volume) AS volume
-    FROM federal_state_production
-    GROUP BY
-        year, region_id, region_type, product, product_name, units
-UNION
-    SELECT
-        year, area.id AS region_id, 'offshore' AS region_type,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'Salt (tons)'
-            ELSE product
-        END AS product,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'Salt'
-            ELSE product_name
-        END AS product_name,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'tons'
-            ELSE units
-        END AS units,
-        SUM(volume) AS volume
-    FROM federal_offshore_production AS offshore
-    INNER JOIN offshore_planning_areas AS area
-    ON
-        offshore.planning_area = area.name
-    GROUP BY
-        year, region_id, region_type, product, product_name, units
-ORDER BY
-    year, product, product_name, units, volume DESC;
-
--- create federal offshore area production table
-DROP TABLE IF EXISTS federal_offshore_area_production;
-CREATE TABLE federal_offshore_area_production AS
-    SELECT
-        year, area.region AS region_id,
-        area.id AS area_id,
-        area.name AS area_name,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'Salt (tons)'
-            ELSE product
-        END AS product,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'Salt'
-            ELSE product_name
-        END AS product_name,
-        CASE
-            WHEN LOWER(product) == 'salt (ton)'
-            THEN 'tons'
-            ELSE units
-        END AS units,
-        SUM(volume) AS volume
-    FROM federal_offshore_production AS offshore
-    INNER JOIN offshore_planning_areas AS area
-    ON
-        offshore.planning_area = area.name
-    GROUP BY
-        year, region_id, area_id, area_name, product, product_name, units
-    ORDER BY
-        year, product, product_name, units, volume DESC;
-
--- then create regional offshore rollups as an aggregate view
-DROP TABLE IF EXISTS federal_offshore_region_production;
-CREATE TABLE federal_offshore_region_production AS
-    SELECT
-        year, region_id, product, product_name, units, SUM(volume) AS volume
-    FROM federal_offshore_area_production
-    GROUP BY
-        year, region_id, product, product_name, units
-    ORDER BY
-        year, product, product_name, units, volume DESC;
-
--- then create national revenue rollups as an aggregate view on
--- regional revenue
-DROP TABLE IF EXISTS federal_national_production;
-CREATE TABLE federal_national_production AS
-    SELECT
-        year, product, product_name, units, SUM(volume) AS volume
-    FROM federal_regional_production
-    GROUP BY
-        year, product, product_name, units;
-
--- create regional rankings views
+-- create state rankings views
 DROP TABLE IF EXISTS federal_production_state_rank;
 CREATE TABLE federal_production_state_rank AS
     SELECT

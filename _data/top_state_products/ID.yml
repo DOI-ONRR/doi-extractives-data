@@ -52,72 +52,72 @@ federal_production:
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 2381392
+      value: 61916192
       rank: 1
-      percent: 100
+      percent: 2600
   '2007':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 2324385
+      value: 60434010
       rank: 1
-      percent: 100
+      percent: 2600
   '2008':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 2424258
+      value: 63030708
       rank: 1
-      percent: 100
+      percent: 2600
   '2009':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 3423741
+      value: 89017266
       rank: 1
-      percent: 100
+      percent: 2600
   '2010':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 3523585
+      value: 91613210
       rank: 1
-      percent: 0
+      percent: 2500
   '2011':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4690032
+      value: 121940832
       rank: 1
-      percent: 0
+      percent: 2400
   '2012':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4467766
+      value: 116161916
       rank: 1
-      percent: 0
+      percent: 2200
   '2013':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4960123
+      value: 128963198
       rank: 1
-      percent: 0
+      percent: 2500
   '2014':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 5777094
+      value: 150204444
       rank: 1
-      percent: 100
+      percent: 2600
   '2015':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4903855
+      value: 127500230
       rank: 1
-      percent: 0
+      percent: 2500
 revenue:
   '2006':
     - product: Phosphate

@@ -434,33 +434,21 @@ federal_production:
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 238147
+      value: 6191822
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 227562
+      value: 5916612
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17147135
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1015891685
+      value: 26413183810
       rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 53343899
-      rank: 1
-      percent: 0
+      percent: 1500
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -479,43 +467,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1386941374
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14464464
+      value: 376076064
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 445825510
       rank: 5
-      percent: 1.34
+      percent: 0
   '2007':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 217500
+      value: 5655000
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 207155
+      value: 5386030
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15547453
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1092826809
+      value: 28413497034
       rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 50375440
-      rank: 1
-      percent: 0
+      percent: 1600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -534,43 +522,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1309761440
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13429378
+      value: 349163828
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 404233778
       rank: 5
-      percent: 1.25
+      percent: 0
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 219089
+      value: 5696314
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 237416
+      value: 6172816
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13696927
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1070470822
+      value: 27832241372
       rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 49867136
-      rank: 1
-      percent: 0
+      percent: 1600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -589,43 +577,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1296545536
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13470154
-      rank: 5
-      percent: 1.37
+      value: 350224004
+      rank: 3
+      percent: 0
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 179171
+      value: 4658446
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 233954
+      value: 6082804
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 10922712
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1088756553
+      value: 28307670378
       rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48517753
-      rank: 1
-      percent: 0
+      percent: 1500
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -644,49 +626,37 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1261461578
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14033419
-      rank: 5
-      percent: 1.09
+      value: 364868894
+      rank: 3
+      percent: 0
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 224486
+      value: 5836636
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 223938
+      value: 5822388
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 4670
+      value: 121420
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 11203440
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1003412405
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48523237
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -705,49 +675,49 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 26088722530
+      rank: 2
+      percent: 1200
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1261604162
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13944830
+      value: 362565580
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 291289440
       rank: 5
-      percent: 1.11
+      percent: 0
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 228011
+      value: 5928286
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 19883
+      value: 516958
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 3470
+      value: 90220
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15720378
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 980959058
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48685683
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -766,43 +736,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 25504935508
+      rank: 2
+      percent: 1200
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1265827758
+      rank: 2
+      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14918890
+      value: 387891140
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 408729828
       rank: 5
-      percent: 1.37
+      percent: 0
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 271470
+      value: 7058220
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2598
+      value: 67548
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14658578
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 918939267
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48207755
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -821,37 +791,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23892420942
+      rank: 2
+      percent: 1100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1253401630
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 395346016
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 381123028
+      rank: 5
+      percent: 0
   '2013':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 276337
+      value: 7184762
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2448
+      value: 63648
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12360113
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 918278008
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 46144622
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -870,49 +846,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23875228208
+      rank: 2
+      percent: 1000
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1199760172
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 397894016
+      rank: 4
+      percent: 0
   '2014':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 243504
+      value: 6331104
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 691756
+      value: 17985656
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2090
+      value: 54340
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12803529
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 896841860
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 45564160
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 14678922
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -931,49 +901,43 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23317888360
+      rank: 2
+      percent: 900
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1184668160
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 381651972
+      rank: 4
+      percent: 0
   '2015':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 170924
+      value: 4444024
       rank: 1
-      percent: 100
+      percent: 2600
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 666434
+      value: 17327284
       rank: 1
-      percent: 100
+      percent: 2600
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2401
+      value: 62426
       rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14548806
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 796638247
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 42671633
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13226438
-      rank: 1
-      percent: 0
+      percent: 2600
     - product: Salt (tons)
       name: Salt
       units: tons
@@ -992,6 +956,24 @@ federal_production:
       value: null
       rank: 1
       percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 20712594422
+      rank: 2
+      percent: 700
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1109462458
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 343887388
+      rank: 4
+      percent: 0
 revenue:
   '2006':
     - product: All

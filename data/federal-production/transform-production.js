@@ -3,8 +3,8 @@ var util = require('../../lib/util');
 
 module.exports = {
   year: 'Calendar Year',
-  state: 'State/Offshore Region',
-  county: 'CPS/Planning Area',
+  region_id: 'State/Offshore Region',
+  locality_id: 'CPS/Planning Area',
   fips: 'FIPS Code',
   commodity: function(d) {
     return util.normalizeCommodity(d.Commodity || '');

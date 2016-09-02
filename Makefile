@@ -580,24 +580,13 @@ tables/county_revenue: data/revenue/onshore.tsv
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
 
-tables/federal_production: \
-	tables/federal_county_production \
-	tables/federal_offshore_production
+tables/federal_production: data/federal-production/onshore.tsv
+	@$(call drop-table,federal_local_production)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/federal-production/transform-production.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n federal_local_production -i $$tmp && \
+	rm $$tmp
 	@$(call load-sql,data/federal-production/rollup.sql)
-
-tables/federal_county_production: data/federal-production/onshore.tsv
-	@$(call drop-table,federal_county_production)
-	tmp=$^.ndjson; \
-	$(tito) --map ./data/federal-production/transform-onshore.js -r tsv $^ > $$tmp && \
-	$(tables) -t ndjson -n federal_county_production -i $$tmp && \
-	rm $$tmp
-
-tables/federal_offshore_production: data/federal-production/offshore.tsv
-	@$(call drop-table,federal_offshore_production)
-	tmp=$^.ndjson; \
-	$(tito) --map ./data/federal-production/transform-offshore.js -r tsv $^ > $$tmp && \
-	$(tables) -t ndjson -n federal_offshore_production -i $$tmp && \
-	rm $$tmp
 
 tables/all_production: data/all-production/product
 	@$(call drop-table,all_production)

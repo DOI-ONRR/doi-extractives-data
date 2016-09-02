@@ -17,14 +17,28 @@ state_land_production: |
     For details about natural resource extraction on state-owned land, see annual reports produced by the [Office of State Lands and Investments](http://lands.wyo.gov/minerals).
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a primary source of income for the state of Wyoming.
-state_revenue_sustainability: |
-    In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, accounting for between up to a quarter of general fund revenues.
 
-    To read more about the impact of revenue from the extractive industries on Wyoming’s general fund, including future projections, see reports produced by Wyoming's [Consensus Revenue Estimating Group](http://eadiv.state.wy.us/creg/creg.html).
+    In production year 2014, all 23 of Wyoming’s counties had taxable mineral production, though over 60% percent of revenue from mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
+
+    _Note: The Wyoming Department of Revenue reports some revenues by production year, rather than fiscal year._
+state_revenue_sustainability: |
+    In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and account for up to a quarter of general fund revenues.
+
+    To read more about the impact of revenue from extractive industries on Wyoming’s general fund, including future projections, see reports produced by Wyoming's [Consensus Revenue Estimating Group](http://eadiv.state.wy.us/creg/creg.html).
 state_tax_expenditures: |
     Wyoming does not report information on total tax expenditures, and does not have tax expenditures associated with oil and gas.
 state_disbursements: |
+    [State agencies](#state-agencies) distribute natural resource revenues according to the [Wyoming State Code](http://legisweb.state.wy.us/LSOWeb/wyStatutes.aspx), which is defined by the legislature.
+
+    Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute. 
+    
+    At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
+
+    _Note: The Wyoming Department of Revenue reports revenue distribution by fiscal year._
 state_impact: |
+    The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
+
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, annual wages from extractive industries made up about 18% (or $2.4 billion) of total annual wages in the state. The average annual wage for extractive-industry job in Wyoming in 2014 was $88,198, or almost twice the statewide average wage of $46,492.
 ---
 
 <!-- State governance -->
@@ -33,7 +47,11 @@ state_impact: |
 
 The state of Wyoming regulates extraction and interacts with extractive industry companies in Montana, particularly when they're operating on state or private land.
 
-The [Wyoming Department of Revenue](http://revenue.wyo.gov/) assesses, collects, manages, and distributes revenue from companies engaged in extraction of oil, natural gas, coal, and other natural resources in Wyoming. At the local level, gounty governments directly collect ad valorem taxes related to extraction. The Department of Revenue is governed by [rules and regulations](http://revenue.wyo.gov/home/rules-and-regulations-by-chapter) and publishes annual [Mineral Tax Distribution reports](http://revenue.wyo.gov/tax-distribution-reports/mineral-tax-distributions). 
+The [Wyoming Department of Revenue](http://revenue.wyo.gov/) assesses, collects, manages, and distributes revenue from companies engaged in extraction of oil, natural gas, coal, and other natural resources in Wyoming. At the local level, gounty governments directly collect ad valorem taxes related to extraction. The Department of Revenue publishes:
+
+* [Annual reports](http://revenue.wyo.gov/dor-annual-reports)
+* [Rules and regulations](http://revenue.wyo.gov/home/rules-and-regulations-by-chapter)
+* [Mineral tax distribution reports](http://revenue.wyo.gov/tax-distribution-reports/mineral-tax-distributions)
 
 The [Wyoming Oil and Gas Conservation Commission](http://wogcc.state.wy.us/) ensures that oil and gas wells and operations comply with state environmental laws, as well as regulating mining activities on state land. It publishes [rules and regulations](http://wogcc.state.wy.us/wogcchelp/commission.html), and its activities include:
 

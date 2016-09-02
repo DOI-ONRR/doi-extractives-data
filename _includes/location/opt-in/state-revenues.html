@@ -10,6 +10,12 @@
   {{ page.state_revenue | markdownify }}
 {% endif %}
 
+<!-- This link only works if the file is named correctly. -->
+<a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf" class="button-tertiary">
+  <icon class="icon-cloud icon-padded"></icon>
+  Download: State revenue streams (PDF)
+</a>
+
 <p>
   In {{ revenue_year }}, the state of
   {{ state_name }} collected
@@ -19,12 +25,6 @@
   revenue stream{{ streams_count | plural }}
   (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
 </p>
-
-{% if page.state_revenue_sustainability %}
-  <p><strong>Revenue sustainability:</strong></p>
-
-  {{ page.state_revenue_sustainability | markdownify }}
-{% endif %}
 
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
@@ -71,6 +71,11 @@
   </tbody>
   {% endfor %}
 </table>
+{% endif %}
+
+{% if page.state_revenue_sustainability %}
+  <h4>Revenue sustainability</h4>
+  {{ page.state_revenue_sustainability | markdownify }}
 {% endif %}
 
 {% if page.state_tax_expenditures %}

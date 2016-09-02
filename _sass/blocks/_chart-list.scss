@@ -97,7 +97,6 @@
     font-weight: $weight-bold;
     margin: 0;
     min-height: inherit;
-    //padding: $base-padding-lite;
   }
 
   .county-map-table {
@@ -131,6 +130,7 @@
       border: none;
       float: none;
       padding-left: 0;
+      width: 100%;
     }
 
     a {

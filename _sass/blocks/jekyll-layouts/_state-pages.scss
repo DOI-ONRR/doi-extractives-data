@@ -1,33 +1,17 @@
 .layout-state-pages {
   padding-bottom: $standard-padding-fluffed;
 
-  // section + section,
-  // h2 + section, {
-  //   padding-top: $standard-padding-fluffed;
-  // }
-
-  // p + section,
-  // p + h3,
-  // p + h4 {
-  //   padding-top: $standard-padding-extra;
-  // }
-  
-  p + section {
-    margin-top: -0.75rem; //to compendate for margin from preceding p
+  p + section,
+  section + section,
+  h2 + section,
+  p + h4 {
+    margin-top: -0.75rem; //to compensate for margin from preceding selectors
   }
 
-  h2 {
+  h2:not(.ribbon-card-top-text-header) {
     border-bottom: 20px solid $light-green;
     padding-bottom: $standard-padding-lite;
     padding-top: 6rem;
-  }
-
-  h3 {
-    padding-top: 4rem;
-  }
-
-  h4 {
-    padding-bottom: $standard-padding;
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),
@@ -38,14 +22,24 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
-    border-bottom: 1px solid $neutral-gray;
-    margin-bottom: $base-padding-lite * 2;
+  h3:not(.chart-title):not(.title-land-ownership) {
+    padding-top: 4rem;
+  }
+
+  ul + h3:not(.chart-title):not(.title-land-ownership),
+  p + h3:not(.chart-title):not(.title-land-ownership) {
+    margin-top: -0.75rem; //to compensate for margin from preceding selectors
   }
 
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
+    padding-top: 2.5rem;
+  }
+
+  .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
+    border-bottom: 1px solid $neutral-gray;
+    margin-bottom: $base-padding-lite * 2;
   }
 
   hr {
@@ -73,8 +67,7 @@
   }
 
   .tab-interface {
-    margin-bottom: $standard-padding-fluffed;
-    margin-top: $standard-padding-fluffed;
+    margin-top: 2rem;
   }
 
   .full-width-text {
@@ -100,5 +93,17 @@
       margin-bottom: 0;
       padding-bottom: $base-padding-lite;
     }
+  }
+  
+  .disbursements-data {
+    @include heading(para-sm);
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+
+    color: $blue;
+    text-decoration: none;
   }
 }

@@ -16,7 +16,8 @@
   .chart-title {
     @include heading(large-caps);
     align-items: flex-end;
-    border-bottom: 1px solid $neutral-gray;
+    border-bottom: 1px solid $gray-dark;
+    color: $black-light;
     display: flex;
     flex: 1 0 auto;
     margin-bottom: $base-padding-base;
@@ -116,7 +117,7 @@
     @include span-columns(2);
     @include font-size(7 / 8);
 
-    background-color: $mid-gray;
+    background-color: $gray-light;
     border: 0;
     font-weight: $weight-book;
     margin-right: $standard-padding;

@@ -34,10 +34,6 @@
   top = top + extentMargin;
   var extentTop = top - extentMargin;
 
-
-  var xAxisLabel = 'years';
-  var labelOffset = width / 2;
-
   var fullHeight = height + textMargin + extentMargin + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
 
@@ -205,7 +201,7 @@
       .tickSize(0)
       .tickPadding(tickPadding)
       .tickFormat(function(x) {
-        return String(x).substr(2);
+        return '’' + String(x).substr(2);
       });
 
     svg.append('g')
@@ -268,14 +264,6 @@
 
     xAxis.selectAll('path, line')
         .attr('fill', 'none');
-
-    svg.append('g')
-      .attr('class', 'x-axis-label')
-      .append('text')
-        .text(xAxisLabel)
-        .attr('transform', function(d) {
-          return 'translate(' + [labelOffset, fullHeight] + ')';
-        });
   };
 
   var formatUnits = function(text, units) {

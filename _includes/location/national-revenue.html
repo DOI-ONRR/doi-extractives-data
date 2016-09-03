@@ -49,9 +49,10 @@
       </article>
     </div>
 
-    <section class="chart-list">
 
-      <h4>Revenue by resource</h4>
+    <h4>Revenue by resource</h4>
+
+    <section class="chart-list">
 
       <div class="chart-selector-wrapper">
 
@@ -73,6 +74,13 @@
           <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
 
           <figure class="chart">
+            <eiti-bar-chart
+              data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
+              aria-controls="revenue-figures-{{ commodity_slug }}"
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="$,">
+            </eiti-bar-chart>
             {% assign annual_revenue = commodity[1] %}
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               <span class="caption-data">
@@ -81,18 +89,10 @@
                 {{ commodity_name | downcase }} on federal land
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                There is no data for {{ state_name }} in
+                There is no data about {{ commodity_name | downcase }} on federal land in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
             </figcaption>
-            <eiti-bar-chart
-              data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
-              aria-controls="revenue-figures-{{ commodity_slug }}"
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="$,">
-            </eiti-bar-chart>
-
           </figure>
 
         </section>

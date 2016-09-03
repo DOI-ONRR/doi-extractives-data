@@ -37,6 +37,13 @@
       <h3 class="chart-title"><span>GDP ({{ _metric }})</span></h3>
 
       <figure class="chart chart-{{ _metric }}">
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
+          data='{{ gdp | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ _format }}">
+        </eiti-bar-chart>
         <figcaption id="gdp-figures-{{ _metric }}">
           Extractive industries accounted for
           <span class="caption-data">
@@ -54,16 +61,7 @@
             There is no data for {{ state_name }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
-
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="gdp-figures-{{ _metric }}"
-          data='{{ gdp | map_hash: _metric | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="{{ _format }}">
-        </eiti-bar-chart>
-
       </figure>
 
     </section><!-- /.chart-item -->

@@ -58,6 +58,13 @@
           <h3 class="chart-title"><span>{{ commodity[0] }}</span></h3>
 
           <figure class="chart chart-{{ _metric }}">
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{{ exports | map_hash: _metric | jsonify }}'
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="{{ _format }}">
+            </eiti-bar-chart>
             <figcaption id="exports-figures-{{ commodity_slug }}">
               <span class="caption-data">
                 <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
@@ -72,14 +79,6 @@
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
             </figcaption>
-            <eiti-bar-chart
-              aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{{ exports | map_hash: _metric | jsonify }}'
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="{{ _format }}">
-            </eiti-bar-chart>
-
           </figure>
 
         </section><!-- /.chart-item -->

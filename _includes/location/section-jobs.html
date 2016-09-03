@@ -58,6 +58,13 @@
           <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
 
           <figure class="chart">
+            <eiti-bar-chart
+              aria-controls="jobs-figures-{{ _metric }}"
+              data='{{ jobs | map_hash: _metric | jsonify }}'
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="jobs">
+            </eiti-bar-chart>
             <figcaption id="jobs-figures-{{ _metric }}">
               <span class="caption-data">
                 In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
@@ -73,13 +80,6 @@
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
             </figcaption>
-            <eiti-bar-chart
-              aria-controls="jobs-figures-{{ _metric }}"
-              data='{{ jobs | map_hash: _metric | jsonify }}'
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="jobs">
-            </eiti-bar-chart>
           </figure><!-- /.chart -->
 
           {% endfor %}
@@ -166,6 +166,13 @@
       <h3 class="chart-title"><span>Self-employment</span></h3>
 
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="self-employment-figures-{{ _metric }}"
+          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="jobs">
+        </eiti-bar-chart>
         <figcaption id="self-employment-figures-{{ _metric }}">
           In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
           there were
@@ -175,14 +182,6 @@
           self-employed people working in the extractive industries in
           {{ state_name }}
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="self-employment-figures-{{ _metric }}"
-          data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="jobs">
-        </eiti-bar-chart>
-
       </figure>
 
     </section><!-- /.chart-item -->

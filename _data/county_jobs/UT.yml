@@ -1,12 +1,6 @@
 '49001':
   name: Beaver County
   employment:
-    '2004':
-      count: 63
-      percent: 2.79
-    '2005':
-      count: 59
-      percent: 2.61
     '2006':
       count: 54
       percent: 2.4
@@ -28,15 +22,12 @@
     '2013':
       count: 193
       percent: 7.09
+    '2014':
+      count: 193
+      percent: 7.24
 '49003':
   name: Box Elder County
   employment:
-    '2004':
-      count: 42
-      percent: 0.23
-    '2005':
-      count: 24
-      percent: 0.13
     '2007':
       count: 23
       percent: 0.11
@@ -55,12 +46,15 @@
     '2013':
       count: 24
       percent: 0.14
+    '2014':
+      count: 28
+      percent: 0.16
+    '2015':
+      count: 18
+      percent: 0.1
 '49005':
   name: Cache County
   employment:
-    '2005':
-      count: 9
-      percent: 0.02
     '2007':
       count: 9
       percent: 0.02
@@ -82,12 +76,15 @@
     '2013':
       count: 14
       percent: 0.03
+    '2014':
+      count: 14
+      percent: 0.03
+    '2015':
+      count: 11
+      percent: 0.02
 '49007':
   name: Carbon County
   employment:
-    '2005':
-      count: 791
-      percent: 9.25
     '2010':
       count: 1084
       percent: 11.83
@@ -97,12 +94,6 @@
 '49011':
   name: Davis County
   employment:
-    '2004':
-      count: 118
-      percent: 0.13
-    '2005':
-      count: 137
-      percent: 0.14
     '2006':
       count: 145
       percent: 0.14
@@ -127,15 +118,15 @@
     '2013':
       count: 174
       percent: 0.16
+    '2014':
+      count: 196
+      percent: 0.17
+    '2015':
+      count: 157
+      percent: 0.13
 '49013':
   name: Duchesne County
   employment:
-    '2004':
-      count: 534
-      percent: 9.98
-    '2005':
-      count: 657
-      percent: 11.31
     '2006':
       count: 981
       percent: 14.96
@@ -160,15 +151,18 @@
     '2013':
       count: 2269
       percent: 24.55
-'49019':
-  name: Grand County
+    '2014':
+      count: 2541
+      percent: 26.31
+    '2015':
+      count: 1950
+      percent: 23.14
+'49015':
+  name: Emery County
   employment:
-    '2004':
-      count: 81
-      percent: 1.96
-    '2005':
-      count: 98
-      percent: 2.25
+    '2015':
+      count: 294
+      percent: 9.33
 '49021':
   name: Iron County
   employment:
@@ -187,6 +181,12 @@
     '2013':
       count: 100
       percent: 0.68
+    '2014':
+      count: 192
+      percent: 1.25
+    '2015':
+      count: 124
+      percent: 0.78
 '49023':
   name: Juab County
   employment:
@@ -211,12 +211,15 @@
     '2013':
       count: 62
       percent: 1.9
+    '2014':
+      count: 60
+      percent: 1.84
+    '2015':
+      count: 79
+      percent: 2.25
 '49027':
   name: Millard County
   employment:
-    '2004':
-      count: 84
-      percent: 2.01
     '2006':
       count: 82
       percent: 1.91
@@ -235,6 +238,21 @@
     '2013':
       count: 98
       percent: 2.21
+    '2014':
+      count: 104
+      percent: 2.31
+    '2015':
+      count: 109
+      percent: 2.39
+'49029':
+  name: Morgan County
+  employment:
+    '2014':
+      count: 22
+      percent: 1.12
+    '2015':
+      count: 22
+      percent: 1.06
 '49033':
   name: Rich County
   employment:
@@ -244,12 +262,6 @@
 '49035':
   name: Salt Lake County
   employment:
-    '2004':
-      count: 1682
-      percent: 0.32
-    '2005':
-      count: 2012
-      percent: 0.37
     '2006':
       count: 2203
       percent: 0.39
@@ -274,12 +286,15 @@
     '2013':
       count: 3399
       percent: 0.56
+    '2014':
+      count: 2948
+      percent: 0.47
+    '2015':
+      count: 2696
+      percent: 0.42
 '49037':
   name: San Juan County
   employment:
-    '2004':
-      count: 163
-      percent: 4.19
     '2007':
       count: 205
       percent: 4.88
@@ -301,6 +316,12 @@
     '2013':
       count: 377
       percent: 9.32
+    '2014':
+      count: 336
+      percent: 8.37
+    '2015':
+      count: 380
+      percent: 9.28
 '49039':
   name: Sanpete County
   employment:
@@ -322,15 +343,15 @@
     '2013':
       count: 54
       percent: 0.8
+    '2014':
+      count: 30
+      percent: 0.44
+    '2015':
+      count: 29
+      percent: 0.41
 '49041':
   name: Sevier County
   employment:
-    '2004':
-      count: 397
-      percent: 5.25
-    '2005':
-      count: 420
-      percent: 5.58
     '2006':
       count: 489
       percent: 6.27
@@ -355,15 +376,15 @@
     '2013':
       count: 558
       percent: 7.01
+    '2014':
+      count: 599
+      percent: 7.43
+    '2015':
+      count: 611
+      percent: 7.35
 '49043':
   name: Summit County
   employment:
-    '2004':
-      count: 52
-      percent: 0.3
-    '2005':
-      count: 59
-      percent: 0.31
     '2006':
       count: 79
       percent: 0.38
@@ -388,15 +409,15 @@
     '2013':
       count: 78
       percent: 0.33
+    '2014':
+      count: 79
+      percent: 0.32
+    '2015':
+      count: 74
+      percent: 0.29
 '49045':
   name: Tooele County
   employment:
-    '2004':
-      count: 30
-      percent: 0.24
-    '2005':
-      count: 29
-      percent: 0.21
     '2009':
       count: 69
       percent: 0.45
@@ -412,15 +433,15 @@
     '2013':
       count: 79
       percent: 0.51
+    '2014':
+      count: 87
+      percent: 0.58
+    '2015':
+      count: 92
+      percent: 0.61
 '49047':
   name: Uintah County
   employment:
-    '2004':
-      count: 2092
-      percent: 19.19
-    '2005':
-      count: 2519
-      percent: 21.37
     '2006':
       count: 3246
       percent: 24.43
@@ -445,15 +466,15 @@
     '2013':
       count: 3056
       percent: 20.99
+    '2014':
+      count: 3209
+      percent: 21.35
+    '2015':
+      count: 2425
+      percent: 17.47
 '49049':
   name: Utah County
   employment:
-    '2004':
-      count: 54
-      percent: 0.04
-    '2005':
-      count: 92
-      percent: 0.06
     '2006':
       count: 48
       percent: 0.03
@@ -478,12 +499,15 @@
     '2013':
       count: 103
       percent: 0.06
+    '2014':
+      count: 111
+      percent: 0.06
+    '2015':
+      count: 88
+      percent: 0.04
 '49051':
   name: Wasatch County
   employment:
-    '2005':
-      count: 45
-      percent: 0.79
     '2006':
       count: 80
       percent: 1.24
@@ -508,12 +532,6 @@
 '49053':
   name: Washington County
   employment:
-    '2004':
-      count: 149
-      percent: 0.35
-    '2005':
-      count: 167
-      percent: 0.36
     '2006':
       count: 246
       percent: 0.48
@@ -538,3 +556,18 @@
     '2013':
       count: 151
       percent: 0.3
+    '2014':
+      count: 166
+      percent: 0.31
+    '2015':
+      count: 166
+      percent: 0.29
+'49057':
+  name: Weber County
+  employment:
+    '2014':
+      count: 32
+      percent: 0.03
+    '2015':
+      count: 42
+      percent: 0.04

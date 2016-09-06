@@ -74,7 +74,7 @@
 
     .text-header {
       &.text-header-first {
-        color: darken($green-darkest, 10%);
+        color: $green-dark;
       }
 
       &.text-header-second {
@@ -82,7 +82,7 @@
       }
 
       &.text-header-third {
-        color: $green-dark;
+        color: darken($green-darkest, 10%);
       }
     }
 
@@ -94,7 +94,7 @@
         }
 
         .bar:nth-child(1) {
-          background-color: darken($green-darkest, 10%);
+          background-color: $green-dark;
         }
 
         .bar:nth-child(2) {
@@ -102,7 +102,7 @@
         }
 
         .bar:nth-child(3) {
-          background-color: $green-dark;
+          background-color: darken($green-darkest, 10%);
         }
       }
     }

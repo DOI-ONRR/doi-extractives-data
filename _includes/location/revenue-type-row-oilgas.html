@@ -34,22 +34,27 @@
     revenue_types.NGL.Royalties[include.year] | default: 0
   }}"></span>
 
-    <span class="text">
-    <strong class="text-header text-header-first">Oil</strong>
-    ${{
-      revenue_types.Oil.Royalties[include.year]
-      | default: 0
-      | intcomma
-    }}</span>
+    {% if revenue_types.Oil.Royalties[include.year] %}
+      <span class="text">
+      <strong class="text-header text-header-first">Oil</strong>
+      ${{
+        revenue_types.Oil.Royalties[include.year]
+        | default: 0
+        | intcomma
+      }}</span>
+    {% endif %}
 
-    <span class="text">
-    <strong class="text-header text-header-second">Gas</strong>
-    ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+    {% if revenue_types.Gas.Royalties[include.year] %}
+      <span class="text">
+      <strong class="text-header text-header-second">Gas</strong>
+      ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+    {% endif %}
 
-    <span class="text">
-    <strong class="text-header text-header-third">NGL</strong>
-    ${{ revenue_types.NGL.Royalties[include.year] | default: 0 | intcomma }}</span>
-
+    {% if revenue_types.NGL.Royalties[include.year] %}
+      <span class="text">
+      <strong class="text-header text-header-third">NGL</strong>
+      ${{ revenue_types.NGL.Royalties[include.year] | default: 0 | intcomma }}</span>
+    {% endif %}
   </td>
   <td rowspan="2" data-value="{{
     values['Other Revenues'][include.year] | default: 0

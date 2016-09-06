@@ -25,7 +25,7 @@ permalink: /how-it-works/
 <section class="container-page-wrapper landing-wrapper">
   
   <section class="container">
-    <h2 id="ownership" class="landing-section_category">Who owns land and natural resources in the United States?</h2>
+    <h2 id="ownership" class="h2-bar">Who owns land and natural resources in the United States?</h2>
     <div class="container landing-section">
       <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h3>
       <div>

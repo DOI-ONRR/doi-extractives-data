@@ -5,7 +5,9 @@
 // Markup:
 // <h1>Introduction (h1)</h1>
 // <h2>Heading 2 (h2)</h2>
+// <h2 class="h2-bar">Heading 2 with Bar (h2)</h2>
 // <h3>Heading 3 (h3)</h3>
+// <h3 class="h3-bar">Heading 3 with Bar (h3)</h3>
 // <h4>Heading 4 (h4)</h4>
 // <h5>Heading 5 (h5)</h5>
 // <p class="para-xl">Paragraph – Extra-Large</p>
@@ -26,9 +28,28 @@ h2,
   @include heading(h2);
 }
 
+@mixin h2-bar {
+  border-bottom: 20px solid $light-green;
+  padding-bottom: $standard-padding-lite;
+}
+
+.h2-bar {
+  @include h2-bar;
+}
+
 h3,
 .h3 {
   @include heading(h3);
+}
+
+@mixin h3-bar {
+  border-bottom: 2px solid $light-green;
+  margin-bottom: $base-padding-base;
+  padding-bottom: $standard-padding-lite;
+}
+
+.h3-bar {
+  @include h3-bar;
 }
 
 h4,

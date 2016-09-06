@@ -43,18 +43,22 @@ exclude:
   # all of the source (unbuilt) JS files
   - js/src
   # shell and other scripts
-  - /*.sh
-  - /**/bin/*.js
-  - /lib/*.js
-  - data/lib/*.js
-  - maps/lib/*.js
+  - '*.sh'
+  - data/**/*.md
+  - data/**/*.yml
+  - data/all-production/*/*.?sv
+  - data/bin
+  - data/geo/input
+  - data/gdp
+  - data/jobs
+  - lib
+  - maps/lib
   # Makefiles
   - Makefile
-  - /**/Makefile
+  - '**/Makefile'
   # data tools and SQLite databases
-  - /*.sql
-  - /*.db*
-  - data/db
+  - '*.sql'
+  - '*.db*'
   - data/**/*.js
   - data/**/*.svg
   - maps/data

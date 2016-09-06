@@ -634,7 +634,7 @@ tables/gdp: data/gdp/regional.tsv
 	@$(call drop-table,gdp)
 	$(call load-table,$^,gdp)
 
-tables/exports: data/state/exports-by-industry.tsv
+tables/exports: data/exports/exports-by-industry.tsv
 	@$(call drop-table,exports)
 	$(call load-table,$^,exports)
 
@@ -670,3 +670,5 @@ tables/opt_in_state_revenues: data/state/opt-in/
 		$(tables) -t ndjson -n opt_in_state_revenues -i $${state_dir}/revenue-distribution.ndjson; \
 		rm $${state_dir}/revenue-distribution.ndjson; \
 	done
+
+.PHONY: db

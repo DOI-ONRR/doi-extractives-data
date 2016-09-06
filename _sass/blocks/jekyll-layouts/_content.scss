@@ -8,6 +8,11 @@
       @include heading('para-xl');
     }
   }
+  
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
 }
 
 h2 + hr,

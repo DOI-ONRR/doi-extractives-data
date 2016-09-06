@@ -126,7 +126,6 @@ CREATE TABLE offshore_region_revenue_type AS
         year, region_id, commodity, revenue_type,
         SUM(revenue) AS revenue
     FROM offshore_region_revenue
-    WHERE commodity != 'All'
     GROUP BY
         year, region_id, commodity, revenue_type;
 

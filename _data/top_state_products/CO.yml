@@ -36,207 +36,255 @@ all_production:
       percent: 5.76
 federal_production:
   '2006':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 20811927
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 528455147
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 541110102
+      rank: 2
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 106154906
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13739833822
+      rank: 4
+      percent: 200
   '2007':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 21776477
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 538453776
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 566188402
+      rank: 2
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 106787746
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 13999798176
+      rank: 4
+      percent: 200
   '2008':
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 2665312
+      rank: 1
+      percent: 1700
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 20925681
-      rank: 1
+      value: 544067706
+      rank: 2
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 108103112
+      rank: 3
       percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 623379253
-      rank: 1
-      percent: 0
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: 102512
-      rank: 1
-      percent: 0
+      value: 16207860578
+      rank: 4
+      percent: 200
   '2009':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 16946752
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 671107313
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 440615552
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 102243726
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17448790138
+      rank: 4
+      percent: 200
   '2010':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 16137065
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 686882372
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 17858941672
+      rank: 3
+      percent: 200
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 419563690
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 98545044
+      rank: 3
+      percent: 0
   '2011':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 18017066
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 712842916
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 468443716
+      rank: 2
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18533915816
+      rank: 3
+      percent: 300
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 105322464
+      rank: 3
+      percent: 0
   '2012':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 19192211
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 713759261
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 498997486
+      rank: 2
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18557740786
+      rank: 3
+      percent: 300
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 111311694
+      rank: 3
+      percent: 0
   '2013':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 15479428
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 709765715
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 402465128
+      rank: 2
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18453908590
+      rank: 4
+      percent: 300
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 111990684
+      rank: 4
+      percent: 0
   '2014':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 5881523
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 727898533
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5319160
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 152919598
+      rank: 2
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 18925361858
+      rank: 4
+      percent: 300
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 138298160
+      rank: 4
+      percent: 0
   '2015':
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 6591181
-      rank: 1
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 635425824
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 4866150
-      rank: 1
-      percent: 0
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: null
       rank: 1
       percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 171370706
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 16521071424
+      rank: 4
+      percent: 300
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 126519900
+      rank: 4
+      percent: 0
 revenue:
   '2006':
     - product: All

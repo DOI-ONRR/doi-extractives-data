@@ -24,6 +24,13 @@
       </h4>
 
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="federal-revenue-county-figures-All"
+          data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="$,">
+        </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value"
@@ -35,16 +42,7 @@
             There is no data for {{ state_name }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
-
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="federal-revenue-county-figures-All"
-          data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="$,">
-        </eiti-bar-chart>
-
       </figure>
     </div><!-- /.chart-container -->
 

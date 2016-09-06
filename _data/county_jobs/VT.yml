@@ -1,12 +1,6 @@
 '50001':
   name: Addison County
   employment:
-    '2004':
-      count: 45
-      percent: 0.32
-    '2005':
-      count: 19
-      percent: 0.14
     '2006':
       count: 19
       percent: 0.13
@@ -31,15 +25,15 @@
     '2013':
       count: 19
       percent: 0.13
+    '2014':
+      count: 34
+      percent: 0.23
+    '2015':
+      count: 34
+      percent: 0.23
 '50005':
   name: Caledonia County
   employment:
-    '2004':
-      count: 14
-      percent: 0.12
-    '2005':
-      count: 14
-      percent: 0.12
     '2006':
       count: 16
       percent: 0.14
@@ -55,9 +49,6 @@
 '50007':
   name: Chittenden County
   employment:
-    '2004':
-      count: 41
-      percent: 0.04
     '2006':
       count: 40
       percent: 0.04
@@ -82,24 +73,30 @@
     '2013':
       count: 42
       percent: 0.04
+    '2014':
+      count: 43
+      percent: 0.04
+    '2015':
+      count: 45
+      percent: 0.04
 '50011':
   name: Franklin County
   employment:
-    '2004':
-      count: 21
-      percent: 0.14
     '2012':
       count: 25
       percent: 0.15
     '2013':
       count: 25
       percent: 0.15
+    '2014':
+      count: 24
+      percent: 0.14
+    '2015':
+      count: 27
+      percent: 0.16
 '50015':
   name: Lamoille County
   employment:
-    '2004':
-      count: 9
-      percent: 0.08
     '2006':
       count: 10
       percent: 0.09
@@ -109,6 +106,9 @@
     '2009':
       count: 7
       percent: 0.07
+    '2014':
+      count: 9
+      percent: 0.08
 '50017':
   name: Orange County
   employment:
@@ -136,15 +136,15 @@
     '2013':
       count: 11
       percent: 0.14
+    '2014':
+      count: 12
+      percent: 0.16
+    '2015':
+      count: 11
+      percent: 0.14
 '50021':
   name: Rutland County
   employment:
-    '2004':
-      count: 431
-      percent: 1.47
-    '2005':
-      count: 379
-      percent: 1.28
     '2006':
       count: 394
       percent: 1.33
@@ -169,15 +169,15 @@
     '2013':
       count: 363
       percent: 1.32
+    '2014':
+      count: 350
+      percent: 1.27
+    '2015':
+      count: 351
+      percent: 1.28
 '50023':
   name: Washington County
   employment:
-    '2004':
-      count: 139
-      percent: 0.43
-    '2005':
-      count: 146
-      percent: 0.45
     '2006':
       count: 143
       percent: 0.44
@@ -202,15 +202,15 @@
     '2013':
       count: 91
       percent: 0.28
+    '2014':
+      count: 77
+      percent: 0.24
+    '2015':
+      count: 77
+      percent: 0.23
 '50027':
   name: Windsor County
   employment:
-    '2004':
-      count: 54
-      percent: 0.23
-    '2005':
-      count: 60
-      percent: 0.25
     '2006':
       count: 60
       percent: 0.25
@@ -226,3 +226,9 @@
     '2013':
       count: 40
       percent: 0.18
+    '2014':
+      count: 32
+      percent: 0.14
+    '2015':
+      count: 36
+      percent: 0.16

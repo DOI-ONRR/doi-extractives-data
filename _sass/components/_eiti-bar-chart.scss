@@ -22,7 +22,7 @@ eiti-bar-chart {
   }
 
   .bar-value {
-    fill: $mid-light-gray;
+    fill: $gray-light;
     pointer-events: none;
     transition: fill 0.1s;
   }
@@ -51,11 +51,11 @@ eiti-bar-chart {
 
     text {
       @include font-size(1);
-      fill: $dark-gray;
+      fill: $gray-darkest;
       font-weight: $weight-light;
 
       &.dataless {
-        fill: $mid-light-gray;
+        fill: $gray;
       }
     }
   }
@@ -81,7 +81,6 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
-  @include font-size(15 / 16); // 15px
   color: $green-dark-chart;
   font-weight: $weight-bold;
 }
@@ -99,16 +98,16 @@ eiti-bar-chart {
 .extent-line {
   text {
     @include font-size(1);
-    fill: $another-gray;
+    fill: $gray-dark;
   }
 
   line {
-    stroke: $another-gray;
+    stroke: $gray;
     stroke-dasharray: 5,5;
     stroke-width: 1;
   }
 }
 
 .x-axis-baseline line {
-  stroke: $neutral-gray;
+  stroke: $gray;
 }

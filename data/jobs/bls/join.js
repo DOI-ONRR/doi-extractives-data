@@ -40,7 +40,7 @@ function processYear(year, done) {
   async.parallel(
     [
       function readAll(next) {
-        var filename = path.join(year, 'all.csv');
+        var filename = path.join(String(year), 'all.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -60,7 +60,7 @@ function processYear(year, done) {
         });
       },
       function readExt(next) {
-        var filename = path.join(year, 'extractives.csv');
+        var filename = path.join(String(year), 'extractives.csv');
         readData(filename, function(error, data) {
           if (error) {
             return next(error);
@@ -83,7 +83,7 @@ function processYear(year, done) {
       console.warn('%d: got %d extractives rows, %d all',
                    year, ext.length, Object.keys(all).length);
 
-      var filename = path.join(year, 'joined.tsv');
+      var filename = path.join(String(year), 'joined.tsv');
 
       streamify(ext)
         .pipe(filterStream(year, all))

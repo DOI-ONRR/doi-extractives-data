@@ -5,8 +5,7 @@
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
-{% assign year_range = '[2004, 2013]' %}
-
+{% assign year_range = site.data.years.default | jsonify %}
 
 <section id="employment" class="economic employment">
 
@@ -35,6 +34,13 @@
       <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
 
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="jobs-figures-{{ _metric }}"
+          data='{{ jobs | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="jobs">
+        </eiti-bar-chart>
         <figcaption id="jobs-figures-{{ _metric }}">
           <span class="caption-data">
             In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
@@ -49,13 +55,6 @@
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="jobs-figures-{{ _metric }}"
-          data='{{ jobs | map_hash: _metric | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="jobs">
-        </eiti-bar-chart>
       </figure><!-- /.chart -->
     </section><!-- /.chart-item -->
       {% endfor %}

@@ -308,6 +308,8 @@ data/national_federal_production.yml:
 			product, product_name, units, year, \
 			ROUND(volume) AS volume \
 		FROM federal_national_production \
+		WHERE \
+			product IS NOT NULL \
 		ORDER BY \
 			product, product_name, units, year" \
 		| $(nestly) --if ndjson \

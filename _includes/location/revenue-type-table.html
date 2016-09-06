@@ -75,10 +75,8 @@
 
         {% if oilgas_list contains commodity_name %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% if commodity_name == oilgas %}
+            {% if commodity_name == 'Oil & Gas' or commodity_name == 'Oil & Gas (Non-Royalty)' %}
                 {% include location/revenue-type-row-oilgas.html %}
-            {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-                {% include location/revenue-type-row.html %}
             {% endif %}
           </tbody>
         {% endif %}

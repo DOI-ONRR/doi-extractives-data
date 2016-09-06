@@ -75,13 +75,9 @@
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}
 
-        {% if oilgas_list contains commodity_name %}
+        {% if commodity_name == 'Oil & Gas' or commodity_name == 'Oil & Gas (Non-Royalty)' %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% if commodity_name == oilgas %}
-                {% include location/revenue-type-row-oilgas.html %}
-            {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-                {% include location/revenue-type-row.html %}
-            {% endif %}
+            {% include location/revenue-type-row-oilgas.html %}
           </tbody>
         {% endif %}
       {% endfor %}

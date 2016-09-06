@@ -126,15 +126,26 @@ CREATE TABLE offshore_region_revenue_type AS
         year, region_id, commodity, revenue_type,
         SUM(revenue) AS revenue
     FROM offshore_region_revenue
+    WHERE commodity != 'All'
     GROUP BY
         year, region_id, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
+DELETE FROM offshore_region_revenue_type WHERE commodity = 'All';
+INSERT INTO offshore_region_revenue_type
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id, 'All', revenue_type, SUM(revenue)
+FROM offshore_region_revenue_type
+GROUP BY
+    year, region_id, revenue_type;
+
+DELETE FROM offshore_region_revenue_type WHERE revenue_type = 'All';
 INSERT INTO offshore_region_revenue_type
     (year, region_id, commodity, revenue_type, revenue)
 SELECT
     year, region_id, commodity, 'All', SUM(revenue)
-FROM offshore_region_revenue
+FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, commodity;
 

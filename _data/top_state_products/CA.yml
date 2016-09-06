@@ -377,9 +377,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 204269000
+      value: 204699000
       rank: 3
-      percent: 6.43
+      percent: 6.4
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
@@ -414,7 +414,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 201738000
+      value: 201284000
       rank: 3
       percent: 5.86
     - product: Wind
@@ -979,239 +979,215 @@ revenue:
     - product: All
       name: null
       units: null
-      value: 118383934.61
+      value: 104183977.76
       rank: 5
-      percent: 0.95
+      percent: 0.82
     - product: Oil
       name: null
       units: null
-      value: 93078519.83
+      value: 81217961.3
       rank: 3
-      percent: 2.18
+      percent: 1.92
     - product: Geothermal
       name: null
       units: null
-      value: 11530130.39
+      value: 10360257.57
       rank: 1
-      percent: 85.31
+      percent: 81.63
     - product: Sodium
       name: null
       units: null
-      value: 4886819.35
+      value: 4852161.22
       rank: 2
-      percent: 15.92
+      percent: 15.67
   '2007':
     - product: All
       name: null
       units: null
-      value: 130722864.91
+      value: 110558255.61
       rank: 5
-      percent: 1.15
+      percent: 0.98
     - product: Oil
       name: null
       units: null
-      value: 106117353.1
+      value: 91797534.75
       rank: 3
-      percent: 2.4
+      percent: 2.12
     - product: Geothermal
       name: null
       units: null
-      value: 17230512.95
+      value: 9681055.33
       rank: 1
-      percent: 45.08
+      percent: 50.94
     - product: Sodium
       name: null
       units: null
-      value: 1829249.93
+      value: 2291998.07
       rank: 2
-      percent: 12.96
-    - product: Potassium
-      name: null
-      units: null
-      value: 3459.76
-      rank: 3
-      percent: 0.04
+      percent: 14.66
   '2008':
     - product: All
       name: null
       units: null
-      value: 186332798.47
+      value: 200087126.32
       rank: 5
-      percent: 0.81
+      percent: 0.88
     - product: Oil
       name: null
       units: null
-      value: 162991005.13
+      value: 169610586.06
       rank: 3
-      percent: 2.79
+      percent: 2.91
     - product: Geothermal
       name: null
       units: null
-      value: 12442621.18
-      rank: 2
-      percent: 28.04
+      value: 19950218.15
+      rank: 1
+      percent: 52.72
     - product: Sodium
       name: null
       units: null
-      value: 2294657.68
+      value: 2352975.2
       rank: 2
-      percent: 11
+      percent: 12.21
     - product: Potassium
       name: null
       units: null
-      value: 3502.04
-      rank: 4
-      percent: 0.03
+      value: 6961.8
+      rank: 3
+      percent: 0.07
   '2009':
     - product: Oil
       name: null
       units: null
-      value: 85178526.2
+      value: 89573941.42
       rank: 3
-      percent: 2.87
+      percent: 2.98
     - product: Geothermal
       name: null
       units: null
-      value: 8144363.62
+      value: 8951262.62
       rank: 3
-      percent: 26.11
+      percent: 18.42
     - product: Sodium
       name: null
       units: null
-      value: 2334640.13
+      value: 2399808.13
       rank: 2
-      percent: 13.47
+      percent: 13.44
   '2010':
     - product: All
       name: null
       units: null
-      value: 138257599.92
+      value: 134196033.05
       rank: 5
-      percent: 1.32
+      percent: 1.29
     - product: Oil
       name: null
       units: null
-      value: 118066622.83
+      value: 113857443.56
       rank: 3
-      percent: 2.31
+      percent: 2.24
     - product: Geothermal
       name: null
       units: null
-      value: 9242587.56
-      rank: 1
-      percent: 49.84
+      value: 9404235.54
+      rank: 2
+      percent: 34.92
     - product: Sodium
       name: null
       units: null
-      value: 2779733.38
+      value: 2518976.66
       rank: 2
-      percent: 16.1
+      percent: 13.41
   '2011':
     - product: Oil
       name: null
       units: null
-      value: 173536665.82
+      value: 158814013.58
       rank: 3
-      percent: 2.7
+      percent: 2.49
     - product: Geothermal
       name: null
       units: null
-      value: 7877984.03
+      value: 8723957.56
       rank: 1
-      percent: 50.07
+      percent: 53.94
     - product: Sodium
       name: null
       units: null
-      value: 4292524.93
+      value: 3369401.92
       rank: 2
-      percent: 13.97
+      percent: 15.27
   '2012':
     - product: All
       name: null
       units: null
-      value: 215687561.01
+      value: 214851376.35
       rank: 5
-      percent: 1.71
+      percent: 1.69
     - product: Oil
       name: null
       units: null
-      value: 184759238.51
+      value: 185541652.18
       rank: 3
-      percent: 2.78
+      percent: 2.83
     - product: Sodium
       name: null
       units: null
-      value: 9377847.36
+      value: 8651487.87
       rank: 2
-      percent: 17.96
+      percent: 17.91
     - product: Geothermal
       name: null
       units: null
-      value: 9137139.17
+      value: 8399324.03
       rank: 1
-      percent: 60.49
+      percent: 54.94
     - product: NGL
       name: null
       units: null
-      value: 2863883.72
+      value: 2811602.82
       rank: 5
-      percent: 0.52
-    - product: Sulfur
-      name: null
-      units: null
-      value: 514.96
-      rank: 4
-      percent: 0.03
+      percent: 0.54
   '2013':
     - product: Oil
       name: null
       units: null
-      value: 183762630.38
+      value: 184925258.27
       rank: 3
-      percent: 2.61
+      percent: 2.65
     - product: Geothermal
       name: null
       units: null
-      value: 9487250.27
+      value: 9310477.2
       rank: 1
-      percent: 62.65
+      percent: 62.06
     - product: Sodium
       name: null
       units: null
-      value: 8742905.04
+      value: 9099618.01
       rank: 2
-      percent: 16.62
-    - product: Sulfur
-      name: null
-      units: null
-      value: 123.84
-      rank: 4
-      percent: 0.03
+      percent: 15.71
   '2014':
     - product: Oil
       name: null
       units: null
-      value: 161588021.04
+      value: 170770012.82
       rank: 4
-      percent: 9.65
+      percent: 10.45
     - product: Geothermal
       name: null
       units: null
-      value: 11185009.69
+      value: 10316849.72
       rank: 1
-      percent: 65.09
+      percent: 64.32
     - product: Sodium
       name: null
       units: null
-      value: 7868551.95
+      value: 7947513
       rank: 2
-      percent: 17.76
-    - product: Sulfur
-      name: null
-      units: null
-      value: 115.98
-      rank: 5
-      percent: 0.03
+      percent: 18.95
     - product: Potassium
       name: null
       units: null
@@ -1222,24 +1198,18 @@ revenue:
     - product: Oil
       name: null
       units: null
-      value: 76891906.5
+      value: 90609600.39
       rank: 4
-      percent: 7.22
+      percent: 7.14
     - product: Geothermal
       name: null
       units: null
-      value: 8673011.13
+      value: 10042449.51
       rank: 1
-      percent: 61.89
+      percent: 64.61
     - product: Sodium
       name: null
       units: null
-      value: 7991051.23
+      value: 8047948.04
       rank: 2
-      percent: 17.94
-    - product: Sulfur
-      name: null
-      units: null
-      value: 111.69
-      rank: 3
-      percent: null
+      percent: 17.57

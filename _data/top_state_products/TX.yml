@@ -167,9 +167,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 1155684000
+      value: 1158166000
       rank: 1
-      percent: 36.36
+      percent: 36.21
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -186,9 +186,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 1262011000
+      value: 1263585000
       rank: 1
-      percent: 36.66
+      percent: 36.77
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -303,58 +303,51 @@ federal_production:
       rank: 4
       percent: 0
 revenue:
-  '2009':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 13481503.5
-      rank: 5
-      percent: 5.21
   '2010':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 43706522.92
+      value: 49261019.81
       rank: 2
-      percent: 16.48
+      percent: 14.85
   '2011':
-    - product: Gas
-      name: null
-      units: null
-      value: 18232886.41
-      rank: 5
-      percent: 0.83
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 17502176.64
+      value: 17774034.18
       rank: 4
-      percent: 4.52
+      percent: 5.79
+    - product: Gas
+      name: null
+      units: null
+      value: 15304074.39
+      rank: 5
+      percent: 0.7
   '2012':
     - product: Gas
       name: null
       units: null
-      value: 20373295.77
+      value: 15050008.6
       rank: 5
-      percent: 1.57
+      percent: 1.06
   '2013':
     - product: Gas
       name: null
       units: null
-      value: 20999759.72
+      value: 25893544.98
       rank: 5
-      percent: 1.33
+      percent: 1.72
   '2014':
     - product: Gas
       name: null
       units: null
-      value: 24654653.07
+      value: 24993851.39
       rank: 5
-      percent: 2.04
+      percent: 2.15
   '2015':
     - product: Gas
       name: null
       units: null
-      value: 10575021.83
+      value: 13975007.72
       rank: 5
-      percent: 1.37
+      percent: 1.53

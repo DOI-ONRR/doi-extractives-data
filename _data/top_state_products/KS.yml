@@ -120,8 +120,8 @@ revenue:
       name: null
       units: null
       value: -57.39
-      rank: 1
-      percent: 19.68
+      rank: 2
+      percent: null
   '2009':
     - product: Helium
       name: null
@@ -133,34 +133,40 @@ revenue:
     - product: Helium
       name: null
       units: null
-      value: 32.65
+      value: 23.17
       rank: 2
-      percent: 35.93
+      percent: 33.83
   '2012':
     - product: Helium
       name: null
       units: null
-      value: 3.73
+      value: 13.21
       rank: 2
-      percent: 6.3
+      percent: 17.69
   '2013':
     - product: Helium
       name: null
       units: null
-      value: -0.22
+      value: -2.41
       rank: 3
       percent: null
   '2014':
     - product: Helium
       name: null
       units: null
-      value: 2865.72
+      value: 260.52
       rank: 1
-      percent: 97.66
+      percent: 79.53
   '2015':
     - product: Helium
       name: null
       units: null
-      value: -2642.34
-      rank: 2
-      percent: 102.18
+      value: 529.7
+      rank: 1
+      percent: 88.76
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1.08
+      rank: 4
+      percent: null

@@ -119,9 +119,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 127047000
+      value: 145454000
       rank: 5
-      percent: 4
+      percent: 4.55
   '2015':
     - product: Wind
       name: Wind
@@ -140,7 +140,7 @@ all_production:
       units: bbl
       value: 157770000
       rank: 5
-      percent: 4.58
+      percent: 4.59
 federal_production:
   '2006':
     - product: Coal (tons)
@@ -310,6 +310,13 @@ revenue:
       value: 959
       rank: 1
       percent: 100
+  '2009':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 15637104.65
+      rank: 5
+      percent: 4.53
   '2010':
     - product: Asphalt
       name: null
@@ -321,9 +328,9 @@ revenue:
     - product: Helium
       name: null
       units: null
-      value: 1.2
+      value: 0.71
       rank: 2
-      percent: 1.79
+      percent: 1.13
   '2014':
     - product: Asphalt
       name: null
@@ -334,19 +341,6 @@ revenue:
     - product: Helium
       name: null
       units: null
-      value: 0.16
+      value: 0.65
       rank: 3
-      percent: 0.01
-  '2015':
-    - product: NGL
-      name: null
-      units: null
-      value: 1571622.62
-      rank: 5
-      percent: 1.49
-    - product: Asphalt
-      name: null
-      units: null
-      value: 563.95
-      rank: 1
-      percent: 100
+      percent: 0.2

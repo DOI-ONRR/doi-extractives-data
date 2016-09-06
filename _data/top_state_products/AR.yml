@@ -142,27 +142,26 @@ federal_production:
       rank: 4
       percent: 0
 revenue:
-  '2007':
-    - product: Hardrock
-      name: null
-      units: null
-      value: 1982.08
-      rank: 4
-      percent: 0.01
   '2008':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 26703735.67
+      rank: 5
+      percent: 7.15
     - product: Hardrock
       name: null
       units: null
-      value: 5191.44
+      value: 6467.37
       rank: 4
       percent: 0.04
-  '2010':
+  '2009':
     - product: Hardrock
       name: null
       units: null
-      value: 1331.05
+      value: 2570.93
       rank: 5
-      percent: 0.01
+      percent: 0.03
   '2013':
     - product: Hardrock
       name: null
@@ -174,13 +173,13 @@ revenue:
     - product: Hardrock
       name: null
       units: null
-      value: 1382.52
+      value: 1354
       rank: 5
       percent: 0.01
   '2015':
     - product: Hardrock
       name: null
       units: null
-      value: 1374
+      value: 1402.52
       rank: 5
       percent: 0.01

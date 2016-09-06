@@ -225,154 +225,154 @@ revenue:
     - product: Coal
       name: null
       units: null
-      value: 30401779.76
+      value: 28919464.79
       rank: 4
-      percent: 3.2
+      percent: 3.1
     - product: Phosphate
       name: null
       units: null
       value: 12681
-      rank: 2
+      rank: 3
       percent: 0.58
     - product: Sulfur
       name: null
       units: null
-      value: 2321.49
+      value: 2429.17
       rank: 2
-      percent: 12.15
+      percent: 2.24
     - product: Hardrock
       name: null
       units: null
-      value: 2210.5
+      value: 2185.5
       rank: 5
-      percent: 0.02
+      percent: 0.03
   '2007':
     - product: Coal
       name: null
       units: null
-      value: 38642208.05
+      value: 36787043.35
       rank: 3
-      percent: 4.12
+      percent: 4.08
     - product: Sulfur
       name: null
       units: null
-      value: 1881.74
+      value: 2006.09
       rank: 2
-      percent: 2.76
+      percent: 7.75
     - product: Phosphate
       name: null
       units: null
-      value: 49.03
+      value: 39.19
       rank: 4
       percent: 0
   '2008':
     - product: Coal
       name: null
       units: null
-      value: 42467233.11
+      value: 39226346.52
       rank: 3
-      percent: 3.72
+      percent: 3.52
     - product: Sulfur
       name: null
       units: null
-      value: 27255.51
+      value: 15229.88
       rank: 2
-      percent: 2.35
+      percent: 1.73
     - product: Phosphate
       name: null
       units: null
-      value: 9863
+      value: 5645.84
       rank: 3
-      percent: 0.37
+      percent: 0.23
   '2009':
     - product: Coal
       name: null
       units: null
-      value: 48576331.67
+      value: 50065936.7
       rank: 2
-      percent: 4.49
-    - product: Phosphate
-      name: null
-      units: null
-      value: 4227
-      rank: 4
-      percent: 0.11
+      percent: 4.55
     - product: Sulfur
       name: null
       units: null
-      value: -9594.46
+      value: 12347.41
+      rank: 2
+      percent: 0.17
+    - product: Phosphate
+      name: null
+      units: null
+      value: 8454
       rank: 4
-      percent: null
+      percent: 0.25
   '2010':
     - product: Coal
       name: null
       units: null
-      value: 54177640.22
+      value: 51069225.2
       rank: 3
-      percent: 6.18
-    - product: Sulfur
-      name: null
-      units: null
-      value: 3906.01
-      rank: 2
-      percent: 1.04
+      percent: 5.96
     - product: Phosphate
       name: null
       units: null
       value: 2882.81
       rank: 4
       percent: 0.03
+    - product: Sulfur
+      name: null
+      units: null
+      value: -6606.94
+      rank: 4
+      percent: null
   '2011':
     - product: Coal
       name: null
       units: null
-      value: 49309699.64
+      value: 49448976.38
       rank: 3
-      percent: 4.75
+      percent: 5.17
     - product: Sulfur
       name: null
       units: null
-      value: 9789.04
+      value: 11084.66
       rank: 3
-      percent: 0.52
+      percent: 0.7
     - product: Phosphate
       name: null
       units: null
-      value: 5650.45
+      value: 5636
       rank: 4
       percent: 0.06
   '2012':
     - product: Coal
       name: null
       units: null
-      value: 56440250.92
+      value: 59250846.67
       rank: 2
-      percent: 4.19
+      percent: 4.34
     - product: Phosphate
       name: null
       units: null
-      value: 5636
+      value: 5650.45
       rank: 4
-      percent: 0.04
+      percent: 0.05
     - product: Sulfur
       name: null
       units: null
-      value: 4657.08
-      rank: 2
-      percent: 0.23
+      value: 3181.06
+      rank: 3
+      percent: 0.15
   '2013':
     - product: Coal
       name: null
       units: null
-      value: 45012854.62
+      value: 44593138.24
       rank: 2
-      percent: 3.97
+      percent: 3.83
     - product: Sulfur
       name: null
       units: null
-      value: 5314.96
+      value: 6260.12
       rank: 2
-      percent: 1.1
+      percent: 0.86
     - product: Phosphate
       name: null
       units: null
@@ -383,37 +383,37 @@ revenue:
     - product: Coal
       name: null
       units: null
-      value: 42644977.3
-      rank: 2
-      percent: 3.63
+      value: 43223516.26
+      rank: 3
+      percent: 3.72
     - product: Phosphate
       name: null
       units: null
-      value: 4280.21
+      value: 4227
       rank: 3
       percent: 0.04
     - product: Sulfur
       name: null
       units: null
-      value: 2783.01
+      value: 2522.05
       rank: 2
-      percent: 0.64
+      percent: 0.95
   '2015':
     - product: Coal
       name: null
       units: null
-      value: 39853384.36
+      value: 43259989.2
       rank: 3
-      percent: 3.52
+      percent: 3.8
     - product: Sulfur
       name: null
       units: null
-      value: 9168
+      value: 9141.7
       rank: 1
       percent: null
     - product: Phosphate
       name: null
       units: null
-      value: 4227
+      value: 4280.21
       rank: 4
       percent: 0.04

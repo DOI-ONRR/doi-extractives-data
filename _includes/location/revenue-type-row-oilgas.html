@@ -4,6 +4,7 @@
     | default: 0
     | plus: revenue_types.Oil.All[include.year]
     | plus: revenue_types.Gas.All[include.year]
+    | plus: revenue_types.NGL.All[include.year]
   %}
   <th scope="row" rowspan="2" data-value="{{ total }}">
     <a href="#revenue-{{ commodity_name | slugify }}">
@@ -39,6 +40,10 @@
     <span class="text">
     <strong class="text-header text-header-second">Gas</strong>
     ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+
+    <span class="text">
+    <strong class="text-header text-header-third">NGL</strong>
+    ${{ revenue_types.NGL.Royalties[include.year] | default: 0 | intcomma }}</span>
 
   </td>
   <td rowspan="2" data-value="{{

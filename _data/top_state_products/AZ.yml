@@ -127,19 +127,12 @@ revenue:
       value: 4168
       rank: 4
       percent: 0.03
-  '2007':
-    - product: Sodium
-      name: null
-      units: null
-      value: 945.67
-      rank: 5
-      percent: 0.01
   '2009':
     - product: Potassium
       name: null
       units: null
       value: 1634
-      rank: 3
+      rank: 4
       percent: 0.01
   '2010':
     - product: Potassium
@@ -148,24 +141,23 @@ revenue:
       value: 1634
       rank: 4
       percent: 0.01
-  '2011':
+  '2012':
     - product: Sodium
       name: null
       units: null
-      value: 8975.28
+      value: 8353.61
       rank: 5
-      percent: 0.03
-  '2012':
+      percent: 0.02
     - product: Potassium
       name: null
       units: null
       value: -3268
-      rank: 4
+      rank: 3
       percent: null
   '2013':
     - product: Sodium
       name: null
       units: null
-      value: 4224.65
+      value: 4256.65
       rank: 5
       percent: 0.01

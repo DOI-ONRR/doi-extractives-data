@@ -123,147 +123,147 @@ revenue:
     - product: Phosphate
       name: null
       units: null
-      value: 2172502.78
+      value: 2163200.61
       rank: 1
-      percent: 98.84
+      percent: 98.16
     - product: Hardrock
       name: null
       units: null
-      value: 4294.05
+      value: 2355.85
       rank: 4
-      percent: 0.04
+      percent: 0.03
   '2007':
     - product: Geothermal
       name: null
       units: null
       value: 5727012
-      rank: 3
-      percent: 14.98
+      rank: 2
+      percent: 30.13
     - product: Phosphate
       name: null
       units: null
-      value: 2329346.47
+      value: 2305036.75
       rank: 1
-      percent: 98.93
+      percent: 98.96
     - product: Hardrock
       name: null
       units: null
-      value: 1863.4
-      rank: 5
-      percent: 0.01
+      value: 3882.6
+      rank: 4
+      percent: 0.03
   '2008':
     - product: Phosphate
       name: null
       units: null
-      value: 2617355.16
+      value: 2417131.91
       rank: 1
-      percent: 98.42
+      percent: 98.8
     - product: Geothermal
       name: null
       units: null
-      value: 30874.7
+      value: 18535.3
       rank: 5
-      percent: 0.07
+      percent: 0.05
     - product: Hardrock
       name: null
       units: null
-      value: 1853.3
+      value: 1771.3
       rank: 5
       percent: 0.01
   '2009':
     - product: Phosphate
       name: null
       units: null
-      value: 3693758.72
+      value: 3341675.49
       rank: 1
-      percent: 99.38
+      percent: 99.14
     - product: Geothermal
       name: null
       units: null
-      value: 108271
+      value: 99186.4
       rank: 5
-      percent: 0.35
+      percent: 0.2
   '2010':
     - product: Phosphate
       name: null
       units: null
-      value: 9186927.17
+      value: 8183335.75
       rank: 1
-      percent: 98.71
+      percent: 98.46
     - product: Geothermal
       name: null
       units: null
-      value: 84800
+      value: 97116
       rank: 5
-      percent: 0.46
+      percent: 0.36
   '2011':
     - product: Phosphate
       name: null
       units: null
-      value: 9415637.66
+      value: 9378826.6
       rank: 1
-      percent: 94.3
+      percent: 94.59
     - product: Geothermal
       name: null
       units: null
-      value: 208458
+      value: 98943
       rank: 5
-      percent: 1.32
+      percent: 0.61
   '2012':
     - product: Phosphate
       name: null
       units: null
-      value: 10351468.68
+      value: 9786901.95
       rank: 1
-      percent: 82.46
+      percent: 87.21
     - product: Geothermal
       name: null
       units: null
-      value: 168288
+      value: 271926
       rank: 5
-      percent: 1.11
+      percent: 1.78
   '2013':
     - product: Phosphate
       name: null
       units: null
-      value: 9933712.35
+      value: 10042631.86
       rank: 1
-      percent: 96.98
+      percent: 90.06
     - product: Geothermal
       name: null
       units: null
-      value: 148525
+      value: 154402
       rank: 5
-      percent: 0.98
+      percent: 1.03
   '2014':
     - product: Phosphate
       name: null
       units: null
-      value: 11394913.8
+      value: 10902084.53
       rank: 1
-      percent: 99.72
+      percent: 99.79
     - product: Geothermal
       name: null
       units: null
       value: 156515
       rank: 5
-      percent: 0.91
+      percent: 0.98
   '2015':
     - product: Phosphate
       name: null
       units: null
-      value: 10550366.22
+      value: 10563420.14
       rank: 1
-      percent: 98.97
+      percent: 98.89
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 3877908
-      rank: 3
-      percent: 4.63
+      value: 3886182
+      rank: 5
+      percent: 3.63
     - product: Geothermal
       name: null
       units: null
-      value: 135420
+      value: 144528
       rank: 5
-      percent: 0.97
+      percent: 0.93

@@ -282,72 +282,78 @@ revenue:
     - product: Gas
       name: null
       units: null
-      value: 34130980.06
+      value: 41990018.49
       rank: 5
-      percent: 0.67
+      percent: 0.79
     - product: NGL
       name: null
       units: null
-      value: 1229701.38
+      value: 1240983.32
       rank: 5
       percent: 0.41
   '2007':
     - product: Gas
       name: null
       units: null
-      value: 33025527.22
+      value: 29650858.17
       rank: 5
-      percent: 0.77
+      percent: 0.68
     - product: NGL
       name: null
       units: null
-      value: 1362132.71
+      value: 1321694.69
       rank: 5
       percent: 0.34
   '2008':
     - product: Gas
       name: null
       units: null
-      value: 40437371.67
-      rank: 5
-      percent: 0.75
-    - product: NGL
-      name: null
-      units: null
-      value: 1337105.75
-      rank: 5
-      percent: 0.24
-  '2009':
-    - product: NGL
-      name: null
-      units: null
-      value: 1857114.79
+      value: 42065702.73
       rank: 5
       percent: 0.79
+    - product: NGL
+      name: null
+      units: null
+      value: 1271335.54
+      rank: 5
+      percent: 0.23
+  '2009':
+    - product: Gas
+      name: null
+      units: null
+      value: 19149921.32
+      rank: 5
+      percent: 0.93
+    - product: NGL
+      name: null
+      units: null
+      value: 885931.26
+      rank: 5
+      percent: 0.36
   '2010':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 38249065.09
-      rank: 3
-      percent: 14.43
+      value: 37375848.63
+      rank: 4
+      percent: 11.27
     - product: NGL
       name: null
       units: null
-      value: 6831778.16
+      value: 7929448.12
       rank: 5
-      percent: 1.6
+      percent: 1.83
   '2011':
     - product: NGL
       name: null
       units: null
-      value: 2266245.09
+      value: 2155605.68
       rank: 5
       percent: 0.4
-  '2014':
+  '2015':
     - product: Sulfur
       name: null
       units: null
       value: 203.4
-      rank: 4
-      percent: 0.05
+      rank: 3
+      percent: null

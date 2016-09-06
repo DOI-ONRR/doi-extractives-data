@@ -61,3 +61,7 @@
 </table>
 {% endif %}
 
+{% if page.state_saving_spending %}
+  <h4>Saving and spending revenue from extraction</h4>
+  {{ page.state_saving_spending | markdownify }}
+{% endif %}

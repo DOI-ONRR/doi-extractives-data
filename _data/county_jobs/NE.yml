@@ -1,12 +1,6 @@
 '31019':
   name: Buffalo County
   employment:
-    '2004':
-      count: 72
-      percent: 0.3
-    '2005':
-      count: 65
-      percent: 0.26
     '2006':
       count: 58
       percent: 0.23
@@ -31,15 +25,15 @@
     '2013':
       count: 40
       percent: 0.15
+    '2014':
+      count: 44
+      percent: 0.16
+    '2015':
+      count: 43
+      percent: 0.16
 '31025':
   name: Cass County
   employment:
-    '2004':
-      count: 108
-      percent: 2.21
-    '2005':
-      count: 138
-      percent: 2.77
     '2007':
       count: 143
       percent: 2.89
@@ -61,15 +55,15 @@
     '2013':
       count: 157
       percent: 3.04
+    '2014':
+      count: 167
+      percent: 3.04
+    '2015':
+      count: 162
+      percent: 2.96
 '31027':
   name: Cedar County
   employment:
-    '2004':
-      count: 11
-      percent: 0.42
-    '2005':
-      count: 11
-      percent: 0.43
     '2006':
       count: 10
       percent: 0.39
@@ -94,12 +88,6 @@
 '31033':
   name: Cheyenne County
   employment:
-    '2004':
-      count: 18
-      percent: 0.33
-    '2005':
-      count: 25
-      percent: 0.43
     '2006':
       count: 19
       percent: 0.32
@@ -124,12 +112,12 @@
     '2013':
       count: 4
       percent: 0.07
+    '2015':
+      count: 3
+      percent: 0.05
 '31053':
   name: Dodge County
   employment:
-    '2005':
-      count: 9
-      percent: 0.06
     '2007':
       count: 10
       percent: 0.06
@@ -149,6 +137,12 @@
       count: 10
       percent: 0.06
     '2013':
+      count: 10
+      percent: 0.06
+    '2014':
+      count: 10
+      percent: 0.06
+    '2015':
       count: 10
       percent: 0.06
 '31055':
@@ -190,15 +184,15 @@
     '2013':
       count: 17
       percent: 0.05
+    '2014':
+      count: 18
+      percent: 0.05
+    '2015':
+      count: 20
+      percent: 0.06
 '31087':
   name: Hitchcock County
   employment:
-    '2004':
-      count: 30
-      percent: 4.06
-    '2005':
-      count: 32
-      percent: 4.18
     '2006':
       count: 33
       percent: 4.3
@@ -223,15 +217,15 @@
     '2013':
       count: 52
       percent: 7.42
+    '2014':
+      count: 46
+      percent: 6.6
+    '2015':
+      count: 50
+      percent: 7.23
 '31089':
   name: Holt County
   employment:
-    '2004':
-      count: 13
-      percent: 0.31
-    '2005':
-      count: 14
-      percent: 0.34
     '2006':
       count: 15
       percent: 0.36
@@ -256,6 +250,12 @@
     '2013':
       count: 13
       percent: 0.29
+    '2014':
+      count: 15
+      percent: 0.33
+    '2015':
+      count: 18
+      percent: 0.39
 '31093':
   name: Howard County
   employment:
@@ -277,6 +277,9 @@
     '2013':
       count: 12
       percent: 0.8
+    '2014':
+      count: 14
+      percent: 0.9
 '31095':
   name: Jefferson County
   employment:
@@ -292,21 +295,15 @@
     '2013':
       count: 11
       percent: 0.34
-'31101':
-  name: Keith County
-  employment:
-    '2004':
-      count: 5
-      percent: 0.14
+    '2014':
+      count: 11
+      percent: 0.33
+    '2015':
+      count: 12
+      percent: 0.36
 '31105':
   name: Kimball County
   employment:
-    '2004':
-      count: 57
-      percent: 3.52
-    '2005':
-      count: 61
-      percent: 3.81
     '2006':
       count: 54
       percent: 3.57
@@ -331,45 +328,33 @@
     '2013':
       count: 62
       percent: 4.1
+    '2014':
+      count: 69
+      percent: 4.35
+    '2015':
+      count: 56
+      percent: 3.91
 '31109':
   name: Lancaster County
   employment:
-    '2004':
-      count: 15
-      percent: 0.01
-    '2005':
-      count: 15
-      percent: 0.01
     '2006':
       count: 12
       percent: 0.01
     '2007':
       count: 12
       percent: 0.01
-'31119':
-  name: Madison County
-  employment:
-    '2004':
-      count: 8
-      percent: 0.04
-    '2005':
-      count: 15
-      percent: 0.07
 '31139':
   name: Pierce County
   employment:
     '2013':
       count: 12
       percent: 0.6
+    '2014':
+      count: 14
+      percent: 0.69
 '31145':
   name: Red Willow County
   employment:
-    '2004':
-      count: 40
-      percent: 0.78
-    '2005':
-      count: 36
-      percent: 0.71
     '2006':
       count: 38
       percent: 0.74
@@ -394,6 +379,12 @@
     '2013':
       count: 53
       percent: 0.98
+    '2014':
+      count: 56
+      percent: 1.04
+    '2015':
+      count: 47
+      percent: 0.9
 '31147':
   name: Richardson County
   employment:
@@ -409,6 +400,12 @@
     '2013':
       count: 5
       percent: 0.21
+    '2014':
+      count: 5
+      percent: 0.2
+    '2015':
+      count: 5
+      percent: 0.2
 '31153':
   name: Sarpy County
   employment:
@@ -427,6 +424,12 @@
     '2013':
       count: 21
       percent: 0.03
+    '2014':
+      count: 23
+      percent: 0.04
+    '2015':
+      count: 19
+      percent: 0.03
 '31155':
   name: Saunders County
   employment:
@@ -436,12 +439,6 @@
 '31157':
   name: Scotts Bluff County
   employment:
-    '2004':
-      count: 18
-      percent: 0.11
-    '2005':
-      count: 16
-      percent: 0.1
     '2007':
       count: 14
       percent: 0.08

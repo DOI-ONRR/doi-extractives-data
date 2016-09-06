@@ -1,12 +1,6 @@
 '35001':
   name: Bernalillo County
   employment:
-    '2004':
-      count: 56
-      percent: 0.02
-    '2005':
-      count: 81
-      percent: 0.03
     '2006':
       count: 76
       percent: 0.02
@@ -31,6 +25,12 @@
     '2013':
       count: 174
       percent: 0.06
+    '2014':
+      count: 119
+      percent: 0.04
+    '2015':
+      count: 98
+      percent: 0.03
 '35003':
   name: Catron County
   employment:
@@ -46,12 +46,6 @@
 '35005':
   name: Chaves County
   employment:
-    '2004':
-      count: 477
-      percent: 2.31
-    '2005':
-      count: 526
-      percent: 2.49
     '2006':
       count: 483
       percent: 2.18
@@ -76,21 +70,15 @@
     '2013':
       count: 563
       percent: 2.72
-'35006':
-  name: Cibola County
-  employment:
-    '2004':
-      count: 86
-      percent: 0.99
+    '2014':
+      count: 602
+      percent: 2.86
+    '2015':
+      count: 546
+      percent: 2.52
 '35007':
   name: Colfax County
   employment:
-    '2004':
-      count: 134
-      percent: 2.4
-    '2005':
-      count: 68
-      percent: 1.25
     '2006':
       count: 51
       percent: 0.97
@@ -106,6 +94,12 @@
     '2013':
       count: 52
       percent: 1.03
+    '2014':
+      count: 54
+      percent: 1.06
+    '2015':
+      count: 55
+      percent: 1.09
 '35009':
   name: Curry County
   employment:
@@ -115,9 +109,6 @@
 '35013':
   name: Dona Ana County
   employment:
-    '2004':
-      count: 38
-      percent: 0.06
     '2006':
       count: 68
       percent: 0.1
@@ -142,15 +133,15 @@
     '2013':
       count: 20
       percent: 0.03
+    '2014':
+      count: 16
+      percent: 0.02
+    '2015':
+      count: 17
+      percent: 0.02
 '35015':
   name: Eddy County
   employment:
-    '2004':
-      count: 2699
-      percent: 13.67
-    '2005':
-      count: 2821
-      percent: 13.94
     '2006':
       count: 3124
       percent: 14.84
@@ -175,6 +166,12 @@
     '2013':
       count: 6605
       percent: 25
+    '2014':
+      count: 7275
+      percent: 26.14
+    '2015':
+      count: 7106
+      percent: 25.09
 '35017':
   name: Grant County
   employment:
@@ -196,15 +193,12 @@
     '2013':
       count: 1646
       percent: 17.16
+    '2014':
+      count: 1637
+      percent: 17.5
 '35025':
   name: Lea County
   employment:
-    '2004':
-      count: 4594
-      percent: 19.26
-    '2005':
-      count: 5435
-      percent: 21.42
     '2006':
       count: 6246
       percent: 23.41
@@ -229,6 +223,12 @@
     '2013':
       count: 8033
       percent: 25.29
+    '2014':
+      count: 8836
+      percent: 26.49
+    '2015':
+      count: 7766
+      percent: 24.72
 '35027':
   name: Lincoln County
   employment:
@@ -256,15 +256,15 @@
     '2012':
       count: 13
       percent: 0.17
+    '2014':
+      count: 15
+      percent: 0.19
+    '2015':
+      count: 17
+      percent: 0.22
 '35031':
   name: Mckinley County
   employment:
-    '2004':
-      count: 534
-      percent: 2.49
-    '2005':
-      count: 569
-      percent: 2.64
     '2006':
       count: 576
       percent: 2.68
@@ -283,12 +283,6 @@
 '35035':
   name: Otero County
   employment:
-    '2004':
-      count: 29
-      percent: 0.16
-    '2005':
-      count: 33
-      percent: 0.18
     '2006':
       count: 30
       percent: 0.17
@@ -310,15 +304,15 @@
     '2012':
       count: 54
       percent: 0.31
+    '2014':
+      count: 74
+      percent: 0.43
+    '2015':
+      count: 68
+      percent: 0.39
 '35039':
   name: Rio Arriba County
   employment:
-    '2004':
-      count: 158
-      percent: 1.31
-    '2005':
-      count: 157
-      percent: 1.29
     '2006':
       count: 144
       percent: 1.18
@@ -343,6 +337,12 @@
     '2013':
       count: 91
       percent: 0.97
+    '2014':
+      count: 52
+      percent: 0.55
+    '2015':
+      count: 27
+      percent: 0.28
 '35041':
   name: Roosevelt County
   employment:
@@ -355,12 +355,6 @@
 '35043':
   name: Sandoval County
   employment:
-    '2004':
-      count: 69
-      percent: 0.27
-    '2005':
-      count: 58
-      percent: 0.21
     '2006':
       count: 41
       percent: 0.14
@@ -385,15 +379,15 @@
     '2013':
       count: 94
       percent: 0.32
+    '2014':
+      count: 90
+      percent: 0.31
+    '2015':
+      count: 103
+      percent: 0.35
 '35045':
   name: San Juan County
   employment:
-    '2004':
-      count: 4766
-      percent: 10.2
-    '2005':
-      count: 5076
-      percent: 10.51
     '2006':
       count: 5582
       percent: 11.16
@@ -418,15 +412,15 @@
     '2013':
       count: 6480
       percent: 13.13
+    '2014':
+      count: 6723
+      percent: 13.39
+    '2015':
+      count: 6046
+      percent: 12.07
 '35047':
   name: San Miguel County
   employment:
-    '2004':
-      count: 14
-      percent: 0.16
-    '2005':
-      count: 24
-      percent: 0.28
     '2006':
       count: 21
       percent: 0.24
@@ -439,15 +433,15 @@
     '2013':
       count: 22
       percent: 0.27
+    '2014':
+      count: 10
+      percent: 0.12
+    '2015':
+      count: 8
+      percent: 0.1
 '35049':
   name: Santa Fe County
   employment:
-    '2004':
-      count: 88
-      percent: 0.14
-    '2005':
-      count: 101
-      percent: 0.16
     '2006':
       count: 161
       percent: 0.25
@@ -472,6 +466,12 @@
     '2013':
       count: 86
       percent: 0.14
+    '2014':
+      count: 102
+      percent: 0.17
+    '2015':
+      count: 145
+      percent: 0.24
 '35051':
   name: Sierra County
   employment:
@@ -481,12 +481,6 @@
 '35055':
   name: Taos County
   employment:
-    '2004':
-      count: 235
-      percent: 2.2
-    '2005':
-      count: 299
-      percent: 2.75
     '2006':
       count: 397
       percent: 3.54
@@ -511,6 +505,12 @@
     '2013':
       count: 308
       percent: 2.96
+    '2014':
+      count: 228
+      percent: 2.19
+    '2015':
+      count: 55
+      percent: 0.53
 '35059':
   name: Union County
   employment:
@@ -520,9 +520,6 @@
 '35061':
   name: Valencia County
   employment:
-    '2005':
-      count: 32
-      percent: 0.22
     '2006':
       count: 28
       percent: 0.18
@@ -547,3 +544,6 @@
     '2013':
       count: 22
       percent: 0.16
+    '2015':
+      count: 33
+      percent: 0.25

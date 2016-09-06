@@ -13,15 +13,15 @@
     '2013':
       count: 137
       percent: 0.76
+    '2014':
+      count: 135
+      percent: 0.76
+    '2015':
+      count: 132
+      percent: 0.74
 '04003':
   name: Cochise County
   employment:
-    '2004':
-      count: 27
-      percent: 0.08
-    '2005':
-      count: 40
-      percent: 0.11
     '2006':
       count: 39
       percent: 0.1
@@ -46,15 +46,15 @@
     '2013':
       count: 77
       percent: 0.22
+    '2014':
+      count: 71
+      percent: 0.2
+    '2015':
+      count: 58
+      percent: 0.17
 '04005':
   name: Coconino County
   employment:
-    '2004':
-      count: 172
-      percent: 0.32
-    '2005':
-      count: 123
-      percent: 0.22
     '2006':
       count: 124
       percent: 0.21
@@ -76,12 +76,15 @@
     '2012':
       count: 85
       percent: 0.15
+    '2014':
+      count: 108
+      percent: 0.18
+    '2015':
+      count: 107
+      percent: 0.18
 '04007':
   name: Gila County
   employment:
-    '2005':
-      count: 467
-      percent: 3.37
     '2006':
       count: 665
       percent: 4.62
@@ -100,21 +103,27 @@
     '2011':
       count: 992
       percent: 7.09
+    '2014':
+      count: 1173
+      percent: 7.85
+    '2015':
+      count: 1087
+      percent: 7.36
 '04012':
   name: La Paz County
   employment:
     '2011':
       count: 22
       percent: 0.42
+    '2014':
+      count: 17
+      percent: 0.31
+    '2015':
+      count: 14
+      percent: 0.25
 '04013':
   name: Maricopa County
   employment:
-    '2004':
-      count: 1127
-      percent: 0.07
-    '2005':
-      count: 1366
-      percent: 0.08
     '2006':
       count: 1618
       percent: 0.09
@@ -139,15 +148,15 @@
     '2013':
       count: 2204
       percent: 0.13
+    '2014':
+      count: 2067
+      percent: 0.12
+    '2015':
+      count: 2094
+      percent: 0.12
 '04015':
   name: Mohave County
   employment:
-    '2004':
-      count: 114
-      percent: 0.24
-    '2005':
-      count: 99
-      percent: 0.19
     '2006':
       count: 119
       percent: 0.22
@@ -172,15 +181,15 @@
     '2013':
       count: 505
       percent: 1.13
+    '2014':
+      count: 528
+      percent: 1.16
+    '2015':
+      count: 86
+      percent: 0.18
 '04017':
   name: Navajo County
   employment:
-    '2004':
-      count: 755
-      percent: 2.86
-    '2005':
-      count: 763
-      percent: 2.76
     '2006':
       count: 563
       percent: 1.99
@@ -205,15 +214,15 @@
     '2013':
       count: 543
       percent: 2.06
+    '2014':
+      count: 542
+      percent: 2.03
+    '2015':
+      count: 505
+      percent: 1.89
 04019:
   name: Pima County
   employment:
-    '2004':
-      count: 1300
-      percent: 0.38
-    '2005':
-      count: 1340
-      percent: 0.38
     '2006':
       count: 1557
       percent: 0.42
@@ -238,15 +247,15 @@
     '2013':
       count: 2255
       percent: 0.64
+    '2014':
+      count: 2299
+      percent: 0.65
+    '2015':
+      count: 2230
+      percent: 0.63
 '04021':
   name: Pinal County
   employment:
-    '2004':
-      count: 907
-      percent: 2.28
-    '2005':
-      count: 766
-      percent: 1.67
     '2006':
       count: 974
       percent: 2.01
@@ -271,21 +280,27 @@
     '2013':
       count: 1840
       percent: 3.24
+    '2014':
+      count: 1305
+      percent: 2.27
+    '2015':
+      count: 1217
+      percent: 2.11
 '04023':
   name: Santa Cruz County
   employment:
     '2013':
       count: 8
       percent: 0.06
+    '2014':
+      count: 8
+      percent: 0.06
+    '2015':
+      count: 8
+      percent: 0.06
 '04025':
   name: Yavapai County
   employment:
-    '2004':
-      count: 1086
-      percent: 1.98
-    '2005':
-      count: 1128
-      percent: 1.91
     '2006':
       count: 1238
       percent: 1.95
@@ -310,15 +325,12 @@
     '2013':
       count: 1071
       percent: 1.93
+    '2015':
+      count: 981
+      percent: 1.64
 '04027':
   name: Yuma County
   employment:
-    '2004':
-      count: 22
-      percent: 0.04
-    '2005':
-      count: 22
-      percent: 0.03
     '2008':
       count: 13
       percent: 0.02
@@ -337,3 +349,9 @@
     '2013':
       count: 22
       percent: 0.03
+    '2014':
+      count: 24
+      percent: 0.04
+    '2015':
+      count: 29
+      percent: 0.04

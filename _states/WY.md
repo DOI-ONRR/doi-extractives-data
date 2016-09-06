@@ -9,6 +9,14 @@ state_revenue_year: 2015
 
 case_study_link: |
     For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](../../case-studies/campbell/).
+state_production: |
+    Most of Wyoming's natural resource extraction takes place on federal land, including a majority of coal production and two thirds of natural gas production. Much of this federal land is managed by the Bureau of Land Management.
+
+    Northeastern Wyoming holds the Powder River Basin, which contains eight of the ten largest coal mines in the country. Wyoming's natural gas production is centered in the Green River Basin in southwestern Wyoming. Crude oil production takes place in the Niobrara Shale (in southeastern Wyoming), the Powder River Basin, and the Green River oil shale.
+
+    Wyoming produces about 70% of the uranium mined in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/). 
+
+    **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
     The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million mineral acres. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |

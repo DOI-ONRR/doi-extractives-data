@@ -74,11 +74,36 @@
 
     .text-header {
       &.text-header-first {
-        color: $green-darkest;
+        color: darken($green-darkest, 10%);
       }
 
       &.text-header-second {
+        color: $green-darkest;
+      }
+
+      &.text-header-third {
         color: $green-dark;
+      }
+    }
+
+    &.bars {
+      .bar {
+        display: flex;
+        .bar {
+          border-right: 1px solid $neutral-gray;
+        }
+
+        .bar:nth-child(1) {
+          background-color: darken($green-darkest, 10%);
+        }
+
+        .bar:nth-child(2) {
+          background-color: $green-darkest;
+        }
+
+        .bar:nth-child(3) {
+          background-color: $green-dark;
+        }
       }
     }
 
@@ -88,12 +113,7 @@
       height: 1em;
 
       .bar {
-        background: $green-dark;
-
-        .bar {
-          background: $green-darkest;
-          border-right: 1px solid $neutral-gray;
-        }
+        background-color: $green-dark;
       }
     }
 

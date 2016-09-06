@@ -270,7 +270,7 @@
         }
 
         var cellAlwaysEmpty = cell.getAttribute('data-year-values') === 'null';
-        var childCell = cell.querySelector('[data-value]');
+        var childCells = cell.querySelectorAll('[data-value]');
 
         // TODO only do this if autolabel="true"?
         if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
@@ -307,24 +307,19 @@
           }
         }
 
-        if (childCell) {
-          var childBar = document.createElement('div');
-          childBar.className = 'bar';
-          bar.appendChild(childBar);
-        }
-
         var value = +cell.dataset.value;
         var size = width(value);
 
-        if (childCell) {
-          var childValue = +childCell.dataset.value;
-          size = width(value) + width(childValue);
-          var diff = childValue - value;
-          var largerSize = diff > 0
-            ? width(childValue) / (size / 100)
-            : width(value) / (size / 100);
+        if (childCells.length) {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
-          childBar.style.setProperty(sizeProperty, Math.abs(largerSize) + '%');
+          childCells.forEach(function(childSpan, i) {
+            var childBar = document.createElement('div');
+            childBar.className = 'bar';
+            var newBar = barExtent.appendChild(childBar);
+            var childValue = +childSpan.dataset.value;
+            size = width(childValue);
+            newBar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+          });
         } else {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
         }

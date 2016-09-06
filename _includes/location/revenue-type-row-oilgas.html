@@ -1,3 +1,5 @@
+{% assign multiple_bars = values.size > 1 %}
+
 <tr>
   {%
     assign total = values.All[include.year]
@@ -22,11 +24,14 @@
   }}">
     <span class="text">${{ values.Rents[include.year] | default: 0 | intcomma }}</span>
   </td>
-  <td data-value="{{
+  <td class="{% if multiple_bars %}bars{% endif %}" data-value="{{
     revenue_types.Oil.Royalties[include.year] | default: 0
   }}">
     <span data-value="{{
     revenue_types.Gas.Royalties[include.year] | default: 0
+  }}"></span>
+    <span data-value="{{
+    revenue_types.NGL.Royalties[include.year] | default: 0
   }}"></span>
 
     <span class="text">

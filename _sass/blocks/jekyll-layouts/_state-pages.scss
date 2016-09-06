@@ -22,7 +22,7 @@
     padding-bottom: $standard-padding-lite;
   }
 
-  h3:not(.chart-title):not(.title-land-ownership) {
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title) {
     padding-top: 4rem;
   }
 

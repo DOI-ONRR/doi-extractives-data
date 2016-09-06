@@ -24,154 +24,156 @@ permalink: /how-it-works/
 
 <section class="container-page-wrapper landing-wrapper">
   
-  <section class="container">
-    <h2 id="ownership" class="h2-bar">Who owns land and natural resources in the United States?</h2>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h3>
-      <div>
-        <p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface.
-        <a href="{{site.baseurl}}/how-it-works/ownership/">Learn about land and resource ownership &#8594;</a></p>
-      </div>
-    </div>
-  </section>
+  <article class="container-left-9">
   
-  <section class="container">
-    <h2 id="laws" class="landing-section_category">What are the federal laws and regulations governing natural resources in the United States?</h2>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h3>
-      <div>
-        <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.
-        <a href="{{site.baseurl}}/how-it-works/federal-laws/">Learn about federal laws &#8594;</a></p>
+    <section class="container">
+      <h2 id="ownership" class="h2-bar">Who owns land and natural resources in the United States?</h2>
+      <div class="container landing-section">
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h3>
+          <div>
+            <p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/ownership/">Learn about land and resource ownership</a></p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h3>
-      <div>
-        <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.
-        <a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about reforms &#8594;</a></p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="container">
-    <h2 id="process" class="landing-section_category">How do natural resources result in federal revenue?</h2>
-    <h3 class="landing-section_category">Production</h3>
-    <div class="container landing-section_open overview">
-      <p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.
-      <a href="{{site.baseurl}}/how-it-works/production/">Learn about production &#8594;</a></p>
-    </div>
-      <!-- <div class="container landing-section_open overview">
-        <p>The federal government awards rights to extract natural resources from federal lands, and those resources eventually result in revenue. That process differs depending on the resource and whether extraction takes place onshore or offshore, but it generally follows five steps:</p>
-        <p class="para-lg landing-steps">
-          <span>Plan <icon class="icon-chevron-lg"></icon></span>
-          <span>Lease <icon class="icon-chevron-lg"></icon></span>
-          <span>Explore <icon class="icon-chevron-lg"></icon></span>
-          <span>Develop <icon class="icon-chevron-lg"></icon></span>
-          <span>Decommission</span>
-        </p>
-      </div> -->
-    <div class="container landing-section_open landing-oil_gas-wrapper">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
-      <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
-        <div class="landing-oil_gas">
-          <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
-        </div>
-      </a>
-    </div>
-    </div>
-    <div class="container landing-section_open landing-coal-wrapper">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
-      <a href="{{site.baseurl}}/how-it-works/coal/">
-        <div class="landing-coal">
-          <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
-        </div>
-      </a>
-    </div>
-    <div class="container landing-section_open landing-minerals-wrapper">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h4>
-      <a href="{{site.baseurl}}/how-it-works/minerals/">
-        <div class="landing-minerals">
-          <p class="landing-description">Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
-        </div>
-      </a>
-    </div>
-    <div class="container landing-section_open landing-renewables-wrapper">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
-      <a href="{{site.baseurl}}/how-it-works/onshore-renewables/">
-        <div class="landing-renewables">
-          <p class="landing-description">Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
-        </div>
-      </a>
-    </div>
+    </section>
     
-    <h3 class="landing-section_category">Revenues</h3>
-    <div class="container landing-section_open overview">
-      <p class="landing-description">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.
-      <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work&nbsp;&#8594;</a></p>
-    </div>
-    <div class="container landing-section">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#/">Federal revenue by company</a></h4>
-      <div>
-        <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.
-        <a href="{{site.baseurl}}/how-it-works/#/">Learn about federal laws &#8594;</a></p>
+    <section class="container">
+      <h2 id="laws" class="h2-bar">What are the federal laws and regulations governing natural resources in the United States?</h2>
+      <div class="container landing-section">
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h3>
+          <div>
+            <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/federal-laws/">Learn about federal laws</a></p>
+          </div>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h3>
+          <div>
+            <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about reforms</a></p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container landing-section">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
-      <div>
-        <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.
-        <a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about reforms &#8594;</a></p>
+    </section>
+    
+    <section class="container">
+      <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
+      
+      <h3 class="h3-bar">Production</h3>
+      <p>The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.
+      <a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
+      
+      <div class="container landing-section">
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
+          <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
+            <div class="landing-oil_gas">
+              <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
+          <a href="{{site.baseurl}}/how-it-works/coal/">
+            <div class="landing-coal">
+              <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h4>
+          <a href="{{site.baseurl}}/how-it-works/minerals/">
+            <div class="landing-minerals">
+              <p class="landing-description">Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
+          <a href="{{site.baseurl}}/how-it-works/onshore-renewables/">
+            <div class="landing-renewables">
+              <p class="landing-description">Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="container landing-section">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
-      <div>
-        <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.
-        <a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about federal laws &#8594;</a></p>
+      
+      <h3 class="h3-bar">Revenues</h3>
+      <p>When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways. <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
+      
+      <div class="container landing-section">
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#/">Federal revenue by company</a></h4>
+          <div>
+            <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/#/">Learn about federal laws</a></p>
+          </div>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
+          <div>
+            <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about reforms</a></p>
+          </div>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
+          <div>
+            <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about federal laws</a></p>
+          </div>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
+          <div>
+            <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about reforms</a></p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container landing-section">
-      <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
-      <div>
-        <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.
-        <a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about reforms &#8594;</a></p>
+    </section>
+    
+    <section class="container">
+      <h2 id="accounting" class="h2-bar">How does the United States ensure accuracy and accountability in natural resource revenues?</h2>
+      <div class="container landing-section">
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting process</a></h3>
+          <div>
+            <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/oversight/">Learn about federal laws</a></p>
+          </div>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/reconciliation/">Reconciliation</a></h3>
+          <div>
+            <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/reconciliation/">Learn about reforms</a></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <section class="container">
-    <h2 id="accounting" class="landing-section_category">How does the United States ensure accuracy and accountability in natural resource revenues?</h2>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting process</a></h3>
-      <div>
-        <p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.
-        <a href="{{site.baseurl}}/how-it-works/oversight/">Learn about federal laws &#8594;</a></p>
+    </section>
+    
+    <section class="container">
+      <h2 id="laws-governance" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
+      <div class="container landing-section">
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>
+          <div>
+            <p class="landing-description">State agencies create regulations and rules about natural resource extraction based on applicable state laws and statutes. Local government agencies also play a role. (Federal laws and regulations apply to all states and localities.)</p>
+            <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
+          </div>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
+          <div>
+            <p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
+            <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/reconciliation/">Reconciliation</a></h3>
-      <div>
-        <p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.
-        <a href="{{site.baseurl}}/how-it-works/reconciliation/">Learn about reforms &#8594;</a></p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="container">
-    <h2 id="laws-governance" class="landing-section_category">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>
-      <div>
-        <p class="landing-description">State agencies create regulations and rules about natural resource extraction based on applicable state laws and statutes. Local government agencies also play a role. (Federal laws and regulations apply to all states and localities.)
-        <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws &#8594;</a></p>
-      </div>
-    </div>
-    <div class="container landing-section">
-      <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
-      <div>
-        <p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.
-        <a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws &#8594;</a></p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </article>
 </section>

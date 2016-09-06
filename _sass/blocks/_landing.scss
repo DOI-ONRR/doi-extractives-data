@@ -1,11 +1,10 @@
-.landing-section,
-.landing-section_open {
+.landing-section > div,
+.landing-section_open > div {
   border-bottom: $thin-border-size solid $mid-gray;
-  padding-top: $base-padding;
   padding-bottom: $base-padding;
 
   @include respond-to(medium-up) {
-    @include span-columns(5);
+    @include span-columns(6);
     border-bottom: none;
     padding-bottom: 0;
   }
@@ -15,13 +14,13 @@
   margin-bottom: $base-padding-extra;
 }
 
-.landing-section {
+.landing-section > div {
   @include respond-to(medium-up) {
-    margin-top: $base-padding;
-
-    &:nth-child(even) {
-      @include shift(2);
-    }
+    // margin-top: $base-padding;
+    // 
+    // &:nth-child(even) {
+    //   @include shift(2);
+    // }
 
     &:nth-child(odd) {
       @include omega();
@@ -152,7 +151,6 @@
   }
 }
 
-
 .landing-section_category {
   border-bottom: 2px solid $mid-gray;
   margin-bottom: 0;
@@ -178,7 +176,33 @@
 .landing-wrapper {
   margin-bottom: ($base-padding-extra * 1.4);
 
+  section + section {
+    padding-top: 6rem;
+  }
+
+  h3,
+  h4 {
+    font-weight: $weight-book;
+    font-size: 1rem;
+  }
+
   [accordion-button] {
     margin-top: -1px;
+  }
+
+  .h2-bar {
+    margin-bottom: 0;
+    
+    + .landing-section {
+      padding-top: 2rem;
+    }
+    
+    + .h3-bar {
+      padding-top: 4rem;
+    }
+  }
+  
+  .h3-bar {
+    @include heading('h5');
   }
 }

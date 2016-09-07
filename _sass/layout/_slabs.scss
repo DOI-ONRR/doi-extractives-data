@@ -8,7 +8,7 @@
 // .slab-alpha - full width slab of $white
 // .slab-beta - full width slab of $light-gray
 // .slab-charlie - full width slab of $mid-gray
-// .slab-delta - full width slab of $light-blue
+// .slab-delta - full width slab of $gray-pale
 // .slab-echo - full width slab of $pale-blue
 // .slab-foxtrot - full width slab of $mid-blue
 //
@@ -40,7 +40,7 @@
 }
 
 .slab-delta {
-  background-color: $light-blue;
+  background-color: $gray-pale;
 }
 
 .slab-echo {

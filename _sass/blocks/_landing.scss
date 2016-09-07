@@ -87,18 +87,6 @@
     float: left;
     width: 59%;
   }
-
-  @include respond-to(tiny-down) {
-    background-position: top left;
-    background-size: auto 64px;
-    height: auto;
-    margin-top: -115px;
-    padding-top: 100px;
-
-    p {
-      width: 100%;
-    }
-  }
 }
 
 .landing-minerals {

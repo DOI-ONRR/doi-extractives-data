@@ -3,7 +3,7 @@
 
   a {
     text-decoration: none;
-    
+
     &:hover,
     &:active {
       text-decoration: underline;
@@ -74,11 +74,6 @@
 .landing-coal,
 .landing-minerals,
 .landing-renewables {
-  img {
-    float: right;
-    padding-right: 20px;
-  }
-
   svg {
     float: right;
     margin-right: 20px;

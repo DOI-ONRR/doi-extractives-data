@@ -43,6 +43,8 @@ state_disbursements: |
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
 
     _Note: The Wyoming Department of Revenue reports revenue distribution by fiscal year._
+state_saving_spending: |
+    The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
 state_impact: |
     The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
 

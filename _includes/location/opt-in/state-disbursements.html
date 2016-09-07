@@ -10,13 +10,6 @@
   {{ page.state_disbursements | markdownify }}
 {% endif %}
 
-<p>
-  In {{ revenue_year }}, <strong>${{ revenue_total | default: 0 | intcomma }}
-  in state revenue from natural resource extraction in
-  {{ state_name }} was disbursed</strong>
-  to {{ funds_count }} fund{{ funds_count | plural }}.
-</p>
-
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
@@ -63,5 +56,7 @@
 
 {% if page.state_saving_spending %}
   <h4>Saving and spending revenue from extraction</h4>
+  <p>Many states choose to establish permanent mineral trust funds, which can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.</p>
+  
   {{ page.state_saving_spending | markdownify }}
 {% endif %}

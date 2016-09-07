@@ -55,7 +55,7 @@ nav_items:
 {% assign locality_name = page.locality_name | default:'County' %}
 
 {% assign state_ref = page.id | upcase %}
-{% assign year = '2013' %}
+{% assign year = site.data.years.now %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}

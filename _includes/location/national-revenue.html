@@ -1,7 +1,7 @@
 {% assign revenue_commodities = site.data.national_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 {% assign units = '$' %}
-{% assign year_range = '[2006, 2015]' %}
 
 <section id="revenue" is="year-switcher-section" class="federal revenue">
 

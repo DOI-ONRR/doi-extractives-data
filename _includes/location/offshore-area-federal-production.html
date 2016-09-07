@@ -1,22 +1,16 @@
 {% assign region_name_caps = region_name | capitalize %}
-
 {% assign federal_product_dir = site.data.offshore_federal_production_areas %}
-
 {% for product in federal_product_dir %}
   {% if product[0] == region_name_caps %}
     {% assign federal_products = product[1][area_id].products %}
     {% break %}
   {% endif %}
 {% endfor %}
-
-{% assign year_range = '[2004, 2013]' %}
-
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
 <section id="offshore-area-federal-production" is="year-switcher-section" class="federal production">
-
-
 
   <section class="county-map-table" is="year-switcher-section">
 

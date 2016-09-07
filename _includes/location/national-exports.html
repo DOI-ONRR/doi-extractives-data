@@ -1,6 +1,5 @@
 {% assign export_commodities = site.data.national_exports[state_id].commodities %}
-
-{% assign year_range = '[2011, 2014]' %}
+{% assign year_range = site.data.years.exports | default: site.data.years.default | jsonify %}
 
 <section id="exports" is="year-switcher-section" class="economic exports">
 

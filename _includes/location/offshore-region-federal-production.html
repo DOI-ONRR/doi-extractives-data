@@ -1,15 +1,11 @@
 {% assign region_name = include.region_name | default: region_name %}
 {% assign region_id = include.region_id | default: region_id %}
 {% assign region_name_caps = region_name | capitalize %}
-
 {% assign offshore_region_federal_products = site.data.offshore_federal_production_regions[region_name].products %}
-
 {% assign federal_product_dir = site.data.offshore_federal_production_areas %}
-
-{% assign year_range = '[2004, 2013]' %}
-
 {% assign federal_products_num = offshore_region_federal_products | size %}
 {% assign units_map = site.data.production_units %}
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
 <section id="federal-production" class="federal production">
 

@@ -1,15 +1,13 @@
 {% assign offshore_revenue_dir = site.data.offshore_revenue_areas %}
-
 {% for revenue_area in offshore_revenue_dir %}
   {% if revenue_area[0] == area_id %}
     {% assign revenue_commodities = revenue_area[1][area_id].commodities %}
     {% break %}
   {% endif %}
 {% endfor %}
-
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 {% assign units = '$' %}
-{% assign year_range = '[2004, 2013]' %}
 
 <section id="revenue" is="year-switcher-section" class="offshore-area-revenue">
 

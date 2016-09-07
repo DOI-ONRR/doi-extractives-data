@@ -1,6 +1,6 @@
 {% assign all_products = site.data.national_all_production[state_id].products %}
 {% assign units_map = site.data.production_units %}
-{% assign year_range = '[2006, 2015]' %}
+{% assign year_range = site.data.years.all_production | default: site.data.years.default | jsonify %}
 {% assign year_list = year_range | to_list %}
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">

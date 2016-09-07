@@ -1,11 +1,10 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 {% assign exports_total = exports.All[include.year].dollars %}
 {% assign exports_commodities_num = exports | size %}
-
-{% assign year_range = '[2011, 2014]' %}
+{% assign year_range = site.data.years.exports | default: site.data.years.default | jsonify %}
 {% assign year_list = year_range | to_list %}
+{% assign empty_years = '' | split: '' %}
 
-{% assign empty_years = ',' | split:',' %}
 <section id="exports" is="year-switcher-section" class="economic exports">
 
   <h3>Exports</h3>

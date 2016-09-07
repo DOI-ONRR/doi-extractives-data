@@ -1,17 +1,8 @@
 {% assign county_revenue = include.county_revenue %}
 {% assign state_revenue = include.state_revenue %}
-
-{% if include.year %}
-  {% assign year = include.year %}
-{% endif %}
-
-{% if include.year_range %}
-  {% assign year_range = include.year_range %}
-{% endif %}
-
 {% assign state_revenue_all = state_revenue.All %}
 {% assign current_revenue = state_revenue_all[year].revenue %}
-
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 
 <section id="federal-revenue-county" class="product chart-item full-width">
 

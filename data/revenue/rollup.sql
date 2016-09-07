@@ -64,7 +64,6 @@ UPDATE offshore_revenue
 SET product = commodity
 WHERE product IS NULL;
 
-
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
 DROP TABLE IF EXISTS regional_revenue;

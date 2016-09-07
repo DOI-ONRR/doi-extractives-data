@@ -34,8 +34,8 @@
 }
 
 .landing-section > div {
-  // border-bottom: $thin-border-size solid $mid-gray;
-  // padding-bottom: $base-padding;
+  @include span-columns(12);
+  
   p {
     @include heading('para-md');
     color: $light-black;
@@ -45,51 +45,11 @@
   @include respond-to(medium-up) {
     @include span-columns(6);
     @include omega(2n);
-    // border-bottom: none;
-    // padding-bottom: 0;
   }
 }
-
-// .landing-section > div {
-//   @include respond-to(medium-up) {
-//     // margin-top: $base-padding;
-//     // 
-//     // &:nth-child(even) {
-//     //   @include shift(2);
-//     // }
-// 
-//     &:nth-child(odd) {
-//       @include omega();
-//     }
-//   }
-// }
 
 .landing-section + .h3-bar {
   padding-top: 4rem;
-}
-
-.landing-oil_gas {
-  @include respond-to(tiny-down) {
-    background: url('../img/how-it-works/cards/oil-gas_icon.png') no-repeat;
-  }
-}
-
-.landing-coal {
-  @include respond-to(tiny-down) {
-    background: url('../img/how-it-works/cards/coal_icon.png') no-repeat;
-  }
-}
-
-.landing-minerals {
-  @include respond-to(tiny-down) {
-    background: url('../img/how-it-works/cards/minerals_icon.png') no-repeat;
-  }
-}
-
-.landing-renewables {
-  @include respond-to(tiny-down) {
-    background: url('../img/how-it-works/cards/renewables_icon.png') no-repeat;
-  }
 }
 
 .landing-oil_gas,

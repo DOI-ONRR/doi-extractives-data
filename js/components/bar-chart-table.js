@@ -162,7 +162,7 @@
       rows.datum(function(){
         var data = parseYearVals(this);
         if ( data[year] === NO_DATA_FLAG ) {
-          return NO_DATA_FLAG
+          return NO_DATA_FLAG;
         } else {
           return data[year] || WITHHELD_FLAG;
         }

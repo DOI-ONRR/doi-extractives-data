@@ -75,7 +75,11 @@
         {% include year-selector.html year_range=year_range empty_years=empty_years %}
 
         <p class="chart-description">
-          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}.
+          Most non-tax revenue collected by ONRR comes from counties with significant natural resources on federal land.
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+          </a>
         </p>
       </div>
 

@@ -24,18 +24,6 @@
       </h4>
 
       <figure class="chart">
-        <figcaption id="federal-revenue-county-figures-All">
-          <span class="caption-data">
-            <span class="eiti-bar-chart-y-value"
-                  data-format="$,">${{ current_revenue | intcomma }}</span>
-            was collected from federal land in {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          </span>
-          <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          </span>
-        </figcaption>
         <eiti-bar-chart
           aria-controls="federal-revenue-county-figures-All"
           data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
@@ -43,6 +31,17 @@
           x-value="{{ year }}"
           data-units="$,">
         </eiti-bar-chart>
+        <figcaption id="federal-revenue-county-figures-All">
+          <span class="caption-data">
+            Companies paid 
+            <span class="eiti-bar-chart-y-value" data-format="$,">${{ current_revenue | intcomma }}</span>
+            to extract natural resources on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          </span>
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
+        </figcaption>
       </figure>
     </div><!-- /.chart-container -->
 

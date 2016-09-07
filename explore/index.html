@@ -64,12 +64,12 @@ nav_items:
         <figure class="ribbon-card-top">
           <h2 class="ribbon-card-top-text-header">Land ownership</h2>
           <p>
-            Natural resource ownership, governance, and revenues in the United States are closely tied to land ownership, and many USEITI datasets only cover natural resource extraction on {{ "federal lands and waters" | term_end:"federal land" }}.
+            Natural resource ownership, governance, and revenues are closely tied to land ownership. Federal land represents
+            {{ site.data.land_stats[state_id].federal_percent | percent }}%
+            of all land in the U.S., mostly concentrated in western states.
           </p>
           <p>
-            Federal land represents
-            {{ site.data.land_stats[state_id].federal_percent | percent }}%
-            of all land in the U.S., mostly concentrated in the American West. All offshore drilling and energy generation takes place in federal waters, because the {{ "Outer Continental Shelf" | term }} is entirely administered by the federal government.
+            Many USEITI datasets only cover natural resource extraction on {{ "federal lands and waters" | term_end:"federal land" }}.
           </p>
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">

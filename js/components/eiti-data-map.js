@@ -14,7 +14,6 @@
 
           this.marks = root.selectAll('[data-value]')
             .datum(function() {
-              // console.log(typeof(this.getAttribute('data-value')))
               if (this.getAttribute('data-value') === null || this.getAttribute('data-value') === 'null') {
 
                 return WITHHELD_FLAG;
@@ -34,7 +33,6 @@
         setYear: {value: function(year) {
           this.marks.datum(function() {
               var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
-
               if (data[year] === null || data[year] === 'null') {
                 return WITHHELD_FLAG;
               } else {
@@ -86,11 +84,6 @@
         }},
 
         update: {value: function() {
-
-          // if (this.innerText.indexOf('County employment') > -1) {
-          //   console.log('marks', this.marks.data())
-          // }
-
           var hasData = [];
           this.marks.data().every(function(d){
             if (d === WITHHELD_FLAG) {
@@ -106,10 +99,6 @@
           });
 
           var root = d3.select(this);
-
-          // if (this.innerText.indexOf('County employment') > -1) {
-          //   console.log('hasData', hasData)
-          // }
 
           if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
 

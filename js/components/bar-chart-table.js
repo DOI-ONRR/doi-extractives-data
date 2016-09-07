@@ -12,6 +12,7 @@
   };
 
   var WITHHELD_FLAG = 'Withheld';
+  var NO_DATA_FLAG = undefined;
 
   var setYear = function(year) {
     var root = d3.select(this);
@@ -29,12 +30,16 @@
       function coerceNumber(num) {
         return typeof(num) == undefined || typeof(num) == 'undefined'
           ? WITHHELD_FLAG
-          :  num;
+          : num;
       }
 
       function cellData(data, year, property, coerce) {
-        if (data && data[year] && property) {
-          return data[year][property] || coerceNumber(coerce);
+        if (data && property) {
+          if ( data[year] ) {
+            return data[year][property] || coerceNumber(coerce);
+          } else {
+            return NO_DATA_FLAG;
+          }
         } else if (data && !property) {
           return data[year] || coerceNumber(coerce);
         } else {
@@ -56,7 +61,7 @@
           }
         }
 
-        if (value === WITHHELD_FLAG || !format) {
+        if (value === WITHHELD_FLAG || value === NO_DATA_FLAG || !format) {
           return value;
         } else {
           return format(value);
@@ -73,17 +78,22 @@
       var rows = root.selectAll('tr[data-year-values]');
 
       bars.datum(function() {
-          var data = parseYearVals(this)
+          var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property, 0);
+
+          // coerce value to 0 so that a bar is rendered,
+          // even in instances where a bar will be initially
+          // hidden
+          return cellData(data, year, property, 0) || 0;
         })
         .attr('data-value', function(d) {
           return d;
         });
 
       var sentencesData = sentences.datum(function() {
-          var data = parseYearVals(this)
+          var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
+
           return cellData(data, year, property);
         }).attr('data-sentence', function(d) {
           return d;
@@ -115,9 +125,9 @@
         })
 
       texts.datum(function() {
-          var data = parseYearVals(this)
+          var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property);
+          return cellData(data, year, property) || 0;
         })
         .attr('data-value-text', function(d) {
           return d;
@@ -130,7 +140,7 @@
       swatches.datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property);
+          return cellData(data, year, property) || 0;
         })
         .attr('data-value-swatch', function(d) {
           return d;
@@ -151,11 +161,14 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
-        return data[year] || WITHHELD_FLAG;
+        if ( data[year] === NO_DATA_FLAG ) {
+          return NO_DATA_FLAG;
+        } else {
+          return data[year] || WITHHELD_FLAG;
+        }
       })
       .attr('aria-hidden', function (d) {
         return !d;
-
       });
     }
   }

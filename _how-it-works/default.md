@@ -27,7 +27,7 @@ permalink: /how-it-works/
   <article class="container-left-9">
   
     <section class="container">
-      <h2 id="ownership" class="h2-bar">Who owns land and natural resources in the United States?</h2>
+      <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h3>
@@ -38,7 +38,7 @@ permalink: /how-it-works/
     </section>
     
     <section class="container">
-      <h2 id="laws" class="h2-bar">What are the federal laws and regulations governing natural resources in the United States?</h2>
+      <h2 id="laws" class="h2-bar">What are the federal laws and regulations governing natural resources in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h3>
@@ -57,51 +57,47 @@ permalink: /how-it-works/
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
       
       <h3 class="h3-bar">Production</h3>
-      <p>The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.
-      <a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
+      <p>The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
+      <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
       
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
-          <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
-            <div class="landing-oil_gas">
-              <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
-              {% include svg/how-main-icon-oil.svg %}
-              <!-- <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-oil.svg" alt="Oil rig"> -->
-            </div>
-          </a>
+          <div class="landing-oil_gas">
+            <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
+            {% include svg/how-main-icon-oil.svg %}
+            <p><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Learn about oil and gas</a></p>
+          </div>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
-          <a href="{{site.baseurl}}/how-it-works/coal/">
-            <div class="landing-coal">
-              <p>Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
-              <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-coal.svg" alt="Coal elevator">
-            </div>
-          </a>
+          <div class="landing-coal">
+            <p>Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+            {% include svg/how-main-icon-coal.svg %}
+            <p><a href="{{site.baseurl}}/how-it-works/coal/">Learn about coal</a></p>
+          </div>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h4>
-          <a href="{{site.baseurl}}/how-it-works/minerals/">
             <div class="landing-minerals">
-              <p>Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
-              <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-hardrock.svg" alt="Hardrock truck">
-            </div>
-          </a>
+            <p>Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
+            {% include svg/how-main-icon-hardrock.svg %}
+            <p><a href="{{site.baseurl}}/how-it-works/minerals/">Learn about nonenergy minerals</a></p>
+          </div>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
-          <a href="{{site.baseurl}}/how-it-works/onshore-renewables/">
-            <div class="landing-renewables">
-              <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
-              <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-wind.svg" alt="Wind turbine">
-            </div>
-          </a>
+          <div class="landing-renewables">
+            <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
+            {% include svg/how-main-icon-wind.svg %}
+            <p><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Learn about renewable energy</a></p>
+          </div>
         </div>
       </div>
       
       <h3 class="h3-bar">Revenues</h3>
-      <p>When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways. <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
+      <p>When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
+      <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       
       <div class="container landing-section">
         <div>
@@ -128,7 +124,7 @@ permalink: /how-it-works/
     </section>
     
     <section class="container">
-      <h2 id="accounting" class="h2-bar">How does the United States ensure accuracy and accountability in natural resource revenues?</h2>
+      <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting process</a></h3>

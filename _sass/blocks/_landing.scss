@@ -1,6 +1,15 @@
 .landing-wrapper {
   margin-bottom: ($base-padding-extra * 1.4);
 
+  a {
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
   section + section,
   section:first-of-type {
     padding-top: 6rem;
@@ -9,7 +18,7 @@
   h3,
   h4 {
     font-size: 1rem;
-    font-weight: $weight-book;
+    font-weight: $weight-bold;
     margin-bottom: 0;
   }
 

@@ -34,8 +34,6 @@ state_tax_expenditures: |
 state_disbursements: |
     [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature. In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes.
 state_saving_spending: |
-    Many states choose to establish permanent mineral trust funds, which can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.
-
     In Montana, the coal trust fund is the primary way that revenue from extractive industries is saved for future use. The fund was established by the Montana State Constitution, which also requires that 50% of coal severance tax revenues go to the trust fund. The coal trust fund had an estimated balance of $963 million at the end of FY 2014. Interest from the fund goes to economic development, water, and infrastructure projects. For more information, see the Montana Department of Revenue's [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 state_impact: |
     The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).

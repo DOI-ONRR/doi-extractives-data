@@ -9,6 +9,14 @@ state_revenue_year: 2015
 
 case_study_link: |
     For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](../../case-studies/campbell/).
+state_production: |
+    Most of Wyoming's natural resource extraction takes place on federal land, including a majority of coal production and two thirds of natural gas production. Much of this federal land is managed by the Bureau of Land Management.
+
+    Northeastern Wyoming holds the Powder River Basin, which contains eight of the ten largest coal mines in the country. Wyoming's natural gas production is centered in the Green River Basin in southwestern Wyoming. Crude oil production takes place in the Niobrara Shale (in southeastern Wyoming), the Powder River Basin, and the Green River oil shale.
+
+    Wyoming produces about 70% of the uranium mined in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/). 
+
+    **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
     The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million mineral acres. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
@@ -35,6 +43,8 @@ state_disbursements: |
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
 
     _Note: The Wyoming Department of Revenue reports revenue distribution by fiscal year._
+state_saving_spending: |
+    The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
 state_impact: |
     The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
 

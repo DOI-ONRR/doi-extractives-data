@@ -94,7 +94,12 @@ nav_items:
 
       <section id="production">
         <h2>Production</h2>
-
+        {%
+          include location/key-all-production-summary.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
         <p>
           The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}'s energy production and usage</a>.
         </p>

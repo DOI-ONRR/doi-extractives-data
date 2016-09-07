@@ -2,13 +2,7 @@
 {% assign units_map = site.data.production_units %}
 {% assign year_range = '[2006, 2015]' %}
 {% assign year_list = year_range | to_list %}
-
-{%
-  include location/key-all-production-summary.html
-  location_id=state_id
-  location_name=state_name
-  year=year
-%}
+{% assign commodity_names = site.data.commodity_names %}
   
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
@@ -33,7 +27,7 @@
   <div class="chart-list">
 
     {% for product in all_products %}
-      {% assign product_name = product[0] %}
+      {% assign product_name = product[0] | lookup: commodity_names %}
       {% assign product_slug = product_name | slugify %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
@@ -57,12 +51,16 @@
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
             {{ long_units | term }} of
-            {{ product_name | downcase | suffix: units_suffix }} was produced in {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            {{ product_name | downcase | suffix: units_suffix }} 
+            was produced in 
+            {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            There is no data about production of 
+            {{ product_name | downcase }}   
+            in {{ state_name }} in 
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
       </figure>

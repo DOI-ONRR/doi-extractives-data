@@ -30,18 +30,18 @@
       {% endif %}
 
       <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
+        The U.S. Census Bureau collects information about the top 25 exports in each state.
+
         {% if export_commodities.size > 1 %}
           In {{ year }}, one or more natural resources
           ranked among the top 25 exports from {{ state_name }}.
         {% else %}
           In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.
         {% endif %}
-
-        The U.S. Census Bureau collects information about the top 25 exports in each state.
-          <br>
-          <a href="{{site.baseurl}}/downloads/#exports">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-          </a>
+        <br>
+        <a href="{{site.baseurl}}/downloads/#exports">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
       </p>
     </div>
 
@@ -72,11 +72,11 @@
                 </span>
                 worth of {{ commodity[0] | downcase }}
                 was exported from {{ state_name }}
-                in <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                There is no data for {{ state_name }} in
-                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                Extractive industry products did not rank among the top 25 exports from {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
             </figcaption>
           </figure>

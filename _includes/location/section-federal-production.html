@@ -76,14 +76,14 @@
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
                   {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
                   extracted on federal land in {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-no-data" aria-hidden="true">
-                  There is no data for {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase }} was extracted on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was extracted on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
             </figure>

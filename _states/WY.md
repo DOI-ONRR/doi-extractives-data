@@ -14,7 +14,9 @@ state_production: |
 
     Northeastern Wyoming holds the Powder River Basin, which contains eight of the ten largest coal mines in the country. Wyoming's natural gas production is centered in the Green River Basin in southwestern Wyoming. Crude oil production takes place in the Niobrara Shale (in southeastern Wyoming), the Powder River Basin, and the Green River oil shale.
 
-    Wyoming produces about 70% of the uranium mined in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/). 
+    Wyoming produces about 70% of the uranium mined in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/).
+
+    In 2014, Wyoming produced 2.4% of U.S. wind energy. Particularly in the southeast part of the state, there's significant potential for increased wind energy production and several large-scale wind energy projects are in development.
 
     **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
@@ -27,8 +29,6 @@ state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a primary source of income for the state of Wyoming.
 
     In production year 2014, all 23 of Wyoming’s counties had taxable mineral production, though over 60% percent of revenue from mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
-
-    _Note: The Wyoming Department of Revenue reports some revenues by production year, rather than fiscal year._
 state_revenue_sustainability: |
     In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and account for up to a quarter of general fund revenues.
 
@@ -41,8 +41,6 @@ state_disbursements: |
     Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute. 
     
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
-
-    _Note: The Wyoming Department of Revenue reports revenue distribution by fiscal year._
 state_saving_spending: |
     The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
 state_impact: |

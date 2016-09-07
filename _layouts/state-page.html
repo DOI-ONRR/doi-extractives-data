@@ -59,7 +59,7 @@ nav_items:
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
-{% assign steps=9 %}
+{% assign steps = 5 %}
 
 {% assign is_priority_state = page.priority %}
 {% assign is_case_study_state = page.case_study %}
@@ -68,7 +68,7 @@ nav_items:
 {% assign _viewbox = site.data.viewboxes[state_id] %}
 
 {% capture regulations %}
-{{ page.content }}
+  {{ page.content }}
 {% endcapture %}
 
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
@@ -122,7 +122,7 @@ nav_items:
       </section>
 
       {% include location/section-revenue.html %}
-      
+
       <section id="disbursements" class="disbursements">
         <h2>Disbursements</h2>
 

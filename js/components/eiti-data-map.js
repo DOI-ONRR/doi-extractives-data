@@ -107,11 +107,15 @@
                 .attr('aria-hidden', true);
               root.select('.legend-withheld')
                 .attr('aria-hidden', false);
+              root.select('.legend-svg')
+                .attr('aria-hidden', true);
             } else {
               root.select('.legend-data')
                 .attr('aria-hidden', false);
               root.select('.legend-withheld')
                 .attr('aria-hidden', true);
+              root.select('.legend-svg')
+                .attr('aria-hidden', false);
             }
 
             root.select('.legend-no-data')
@@ -127,6 +131,8 @@
               .attr('aria-hidden', true);
             root.select('.legend-no-data')
               .attr('aria-hidden', false);
+            root.select('.legend-svg')
+                .attr('aria-hidden', true);
             root.select('.details-container')
               .attr('aria-hidden', true)
               .select('button')
@@ -144,12 +150,7 @@
             : eiti.format.si;
 
           var settings = {
-            horizontal : {
-              width: 50,
-              height: 12,
-              padding: 6
-            },
-            narrowHorizontal: {
+            horizontal: {
               width: 70,
               height: 12,
               padding: 10
@@ -191,47 +192,15 @@
 
           marks.attr('fill', scale);
 
-
           this.scale = scale;
-
-          // start map legend
-          function uniq(value, index, self) {
-            return self.indexOf(value) === index;
-          }
-
-          function getUnique(data, steps, domain) {
-            var getSteps = d3.scale[type]()
-              .domain(domain)
-              .range(steps);
-
-            var values = [];
-            data.forEach(function(d) {
-              values.push(getSteps(d));
-            });
-
-            return values.filter(uniq);
-          }
-
-
-          var _steps = d3.range(0, 9)
-
-          // find which steps are represented in the map
-          var uniqueSteps = getUnique(marks.data(), _steps, domain);
-          var narrowHorizontal = uniqueSteps.length < 6;
 
           var orient = this.isWideView
             ? 'horizontal'
             : 'vertical';
 
-          if (narrowHorizontal && orient === 'horizontal') {
-            shapeWidth = settings.narrowHorizontal.width;
-            shapeHeight = settings.narrowHorizontal.height;
-            shapePadding = settings.narrowHorizontal.padding;
-          } else {
-            shapeWidth = settings[orient].width;
-            shapeHeight = settings[orient].height;
-            shapePadding = settings[orient].padding;
-          }
+          shapeWidth = settings[orient].width;
+          shapeHeight = settings[orient].height;
+          shapePadding = settings[orient].padding;
 
           var svgLegend = d3.select(this)
             .select('.legend-svg')
@@ -259,38 +228,6 @@
 
             legendScale.call(legend);
 
-            // start consolidate (translate) visible cells
-            var cells = svgLegend.selectAll('.cell');
-            var cellHeight = legend.shapeHeight() + legend.shapePadding();
-            var cellWidth = legend.shapeWidth() + legend.shapePadding();
-            var count = 0;
-
-            var that = this;
-            cells.each(function(cell, i) {
-              var present = uniqueSteps.indexOf(i) > -1;
-
-              if (!present) {
-                // hide cells swatches that aren't in the map
-                cells[0][i].setAttribute('aria-hidden', true);
-                count++;
-              } else  {
-                if (that.isWideView) {
-                  var translateWidth = (i * cellWidth) - (count * cellWidth);
-                  cells[0][i].setAttribute('transform',
-                    'translate(' + translateWidth + ', 0)');
-                  cells[0][i].setAttribute('aria-hidden', false);
-                } else {
-                  // trim spacing between swatches that are visible
-                  var translateHeight = (i * cellHeight) - (count * cellHeight);
-                  cells[0][i].setAttribute('transform',
-                    'translate(0,' + translateHeight + ')');
-                  cells[0][i].setAttribute('aria-hidden', false);
-                }
-
-              }
-            });
-            // end consolidation
-            // end map legend
           } else {
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');
           }

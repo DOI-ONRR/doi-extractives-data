@@ -4,3 +4,5 @@ now: '2013'
 default: [2006, 2015]
 
 exports: [2011, 2014]
+
+self_employment: [2006, 2014]

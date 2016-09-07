@@ -1,337 +1,979 @@
 all_production:
-  '2005':
-    - product: Solar
-      name: Solar
-      units: megawatt hours
-      value: 537000
-      rank: 1
-      percent: 97.46
-    - product: Geothermal
-      name: Geothermal
-      units: megawatt hours
-      value: 13023000
-      rank: 1
-      percent: 88.63
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 4262000
-      rank: 1
-      percent: 23.93
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 5833000
-      rank: 1
-      percent: 10.75
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 39632000
-      rank: 2
-      percent: 14.66
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 230230000
-      rank: 3
-      percent: 10.46
   '2006':
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 495000
+      units: Mwh
+      value: 494572
       rank: 1
-      percent: 97.44
+      percent: 97.41
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12821000
+      units: Mwh
+      value: 12821434
       rank: 1
       percent: 88.01
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 5717000
-      rank: 1
-      percent: 10.42
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 4883000
+      units: Mwh
+      value: 4882801
       rank: 2
       percent: 18.36
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 48047000
+      units: Mwh
+      value: 48047380.08
       rank: 2
       percent: 16.61
-    - product: Oil (bbl)
-      name: Oil
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2294495.48
+      rank: 2
+      percent: 14.25
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 223015000
       rank: 3
-      percent: 10.52
+      percent: 12.01
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3422092.89
+      rank: 3
+      percent: 8.83
   '2007':
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 557000
+      units: Mwh
+      value: 556969
       rank: 1
-      percent: 91.01
+      percent: 91.04
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12991000
+      units: Mwh
+      value: 12990710.99
       rank: 1
       percent: 88.75
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 5713000
-      rank: 1
-      percent: 10.29
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 5585000
+      units: Mwh
+      value: 5584933.35
       rank: 2
       percent: 16.21
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 27328000
-      rank: 3
-      percent: 11.04
-    - product: Oil (bbl)
-      name: Oil
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2305228.31
+      rank: 2
+      percent: 13.95
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 218518000
       rank: 3
-      percent: 10.35
+      percent: 11.79
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 27327750.89
+      rank: 3
+      percent: 11.04
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3407415.56
+      rank: 3
+      percent: 8.73
   '2008':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
+      units: Mwh
       value: 12883000
       rank: 1
       percent: 86.81
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 670000
+      units: Mwh
+      value: 670481
       rank: 1
-      percent: 77.55
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 5846000
+      percent: 77.57
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2361945.99
       rank: 1
-      percent: 10.62
+      percent: 13.32
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 5385000
+      units: Mwh
+      value: 5384954.89
       rank: 2
       percent: 9.73
-    - product: Oil (bbl)
-      name: Oil
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3483554.95
+      rank: 2
+      percent: 9.34
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 214533000
       rank: 3
-      percent: 10.34
+      percent: 11.72
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 24128000
+      units: Mwh
+      value: 24127809.62
       rank: 4
       percent: 9.47
   '2009':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12853000
+      units: Mwh
+      value: 12852783
       rank: 1
       percent: 85.64
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 647000
+      units: Mwh
+      value: 647389.56
       rank: 1
-      percent: 72.62
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 6200000
+      percent: 72.64
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2467660.26
       rank: 1
-      percent: 11.38
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 27888000
-      rank: 3
-      percent: 10.2
-    - product: Oil (bbl)
-      name: Oil
+      percent: 13.38
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3732015.55
+      rank: 1
+      percent: 10.35
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 207262000
       rank: 3
-      percent: 9.48
+      percent: 10.61
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 27888036.33
+      rank: 3
+      percent: 10.2
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 5840000
+      units: Mwh
+      value: 5839813.24
       rank: 3
       percent: 7.9
   '2010':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12600000
+      units: Mwh
+      value: 12600098
       rank: 1
       percent: 82.79
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 769000
+      units: Mwh
+      value: 769330.95
       rank: 1
-      percent: 63.5
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 6002000
+      percent: 63.47
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2450782.71
       rank: 1
-      percent: 10.7
+      percent: 12.96
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3550877.37
+      rank: 1
+      percent: 9.55
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 33431000
+      units: Mwh
+      value: 33430870.02
       rank: 2
       percent: 12.85
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 200050000
       rank: 3
-      percent: 9.04
+      percent: 10.01
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 6079000
+      units: Mwh
+      value: 6078632
       rank: 3
       percent: 6.42
   '2011':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12552000
+      units: Mwh
+      value: 12552383
       rank: 1
       percent: 81.96
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 889000
+      units: Mwh
+      value: 888829.4
       rank: 1
       percent: 48.9
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 6029000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2584692.84
       rank: 1
-      percent: 10.64
+      percent: 13.45
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 42557000
+      units: Mwh
+      value: 42557466.88
       rank: 2
       percent: 13.33
-    - product: Oil (bbl)
-      name: Oil
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3444683.22
+      rank: 2
+      percent: 9.2
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 193996000
       rank: 3
-      percent: 8.59
+      percent: 9.42
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 7752000
+      units: Mwh
+      value: 7751837
       rank: 3
       percent: 6.45
   '2012':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12519000
+      units: Mwh
+      value: 12518999
       rank: 1
       percent: 80.44
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 1382000
+      units: Mwh
+      value: 1382299.86
       rank: 1
       percent: 31.95
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 6311000
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2513721.12
       rank: 1
-      percent: 10.95
+      percent: 12.68
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3797595.99
+      rank: 1
+      percent: 10.05
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 26837000
+      units: Mwh
+      value: 26837370.41
       rank: 3
       percent: 9.72
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 197211000
       rank: 3
-      percent: 7.71
+      percent: 8.31
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 9754000
+      units: Mwh
+      value: 9754229.67
       rank: 3
       percent: 6.93
   '2013':
     - product: Geothermal
       name: Geothermal
-      units: megawatt hours
-      value: 12307000
+      units: Mwh
+      value: 12306571
       rank: 1
       percent: 78.01
     - product: Solar
       name: Solar
-      units: megawatt hours
-      value: 3814000
+      units: Mwh
+      value: 3813724.79
       rank: 1
-      percent: 42.23
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 6635000
+      percent: 42.21
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2843202.84
       rank: 1
-      percent: 10.9
+      percent: 13.65
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3792073.16
+      rank: 1
+      percent: 9.47
     - product: Wind
       name: Wind
-      units: megawatt hours
-      value: 12822000
+      units: Mwh
+      value: 12822060.43
       rank: 3
       percent: 7.64
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 198928000
       rank: 3
-      percent: 6.85
+      percent: 7.33
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
-      units: megawatt hours
-      value: 23755000
+      units: Mwh
+      value: 23754599.48
       rank: 4
-      percent: 8.85
+      percent: 8.84
+  '2014':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 12101728
+      rank: 1
+      percent: 76.22
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 9931814.86
+      rank: 1
+      percent: 56.14
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2913292.18
+      rank: 1
+      percent: 13.46
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3977424.66
+      rank: 1
+      percent: 9.39
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 12992497.58
+      rank: 3
+      percent: 7.15
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 204269000
+      rank: 3
+      percent: 6.43
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 16531340.16
+      rank: 4
+      percent: 6.37
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 12341211.47
+      rank: 1
+      percent: 73.6
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 15006628.37
+      rank: 1
+      percent: 56.69
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2842870.07
+      rank: 1
+      percent: 13.02
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4078430.05
+      rank: 1
+      percent: 9.63
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 201738000
+      rank: 3
+      percent: 5.86
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 12228414.36
+      rank: 4
+      percent: 6.4
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 13860989.92
+      rank: 4
+      percent: 5.52
+federal_production:
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 6191822
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 5916612
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 26413183810
+      rank: 1
+      percent: 1500
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1386941374
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 376076064
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 445825510
+      rank: 5
+      percent: 0
+  '2007':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 5655000
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 5386030
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 28413497034
+      rank: 1
+      percent: 1600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1309761440
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 349163828
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 404233778
+      rank: 5
+      percent: 0
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 5696314
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 6172816
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 27832241372
+      rank: 1
+      percent: 1600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1296545536
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 350224004
+      rank: 3
+      percent: 0
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 4658446
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 6082804
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 28307670378
+      rank: 1
+      percent: 1500
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1261461578
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 364868894
+      rank: 3
+      percent: 0
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 5836636
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 5822388
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 121420
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 26088722530
+      rank: 2
+      percent: 1200
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1261604162
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 362565580
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 291289440
+      rank: 5
+      percent: 0
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 5928286
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 516958
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 90220
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 25504935508
+      rank: 2
+      percent: 1200
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1265827758
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 387891140
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 408729828
+      rank: 5
+      percent: 0
+  '2012':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 7058220
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 67548
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23892420942
+      rank: 2
+      percent: 1100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1253401630
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 395346016
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 381123028
+      rank: 5
+      percent: 0
+  '2013':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 7184762
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 63648
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23875228208
+      rank: 2
+      percent: 1000
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1199760172
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 397894016
+      rank: 4
+      percent: 0
+  '2014':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 6331104
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 17985656
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 54340
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 23317888360
+      rank: 2
+      percent: 900
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1184668160
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 381651972
+      rank: 4
+      percent: 0
+  '2015':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      value: 4444024
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      value: 17327284
+      rank: 1
+      percent: 2600
+    - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
+      value: 62426
+      rank: 1
+      percent: 2600
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 20712594422
+      rank: 2
+      percent: 700
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 1109462458
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 343887388
+      rank: 4
+      percent: 0
 revenue:
   '2006':
     - product: All
@@ -600,567 +1242,4 @@ revenue:
       units: null
       value: 111.69
       rank: 3
-      percent: null
-federal_production:
-  '2006':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 238147
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 227562
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17147135
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1015891685
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 53343899
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 14464464
-      rank: 5
-      percent: 1.34
-  '2007':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 217500
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 207155
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15547453
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1092826809
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 50375440
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13429378
-      rank: 5
-      percent: 1.25
-  '2008':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 219089
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 237416
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13696927
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1070470822
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 49867136
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13470154
-      rank: 5
-      percent: 1.37
-  '2009':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 179171
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 233954
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 10922712
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1088756553
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48517753
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 14033419
-      rank: 5
-      percent: 1.09
-  '2010':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 224486
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 223938
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 4670
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 11203440
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 1003412405
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48523237
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13944830
-      rank: 5
-      percent: 1.11
-  '2011':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 228011
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 19883
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 3470
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 15720378
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 980959058
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48685683
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 14918890
-      rank: 5
-      percent: 1.37
-  '2012':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 271470
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 2598
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14658578
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 918939267
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 48207755
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2013':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 276337
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 2448
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12360113
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 918278008
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 46144622
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2014':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 243504
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 691756
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 2090
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12803529
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 896841860
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 45564160
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 14678922
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2015':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      name: Geothermal
-      units: 'Direct Utilization, Millions of BTUs'
-      value: 170924
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      name: Geothermal
-      units: 'Electrical Generation, Other'
-      value: 666434
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      name: Geothermal
-      units: sulfur
-      value: 2401
-      rank: 1
-      percent: 100
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14548806
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      name: Geothermal
-      units: 'Electrical Generation, Kilowatt Hours'
-      value: 796638247
-      rank: 1
-      percent: 0
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      name: Geothermal
-      units: 'Electrical Generation, Thousands of Pounds'
-      value: 42671633
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13226438
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
       percent: null

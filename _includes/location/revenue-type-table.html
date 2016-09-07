@@ -1,4 +1,9 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+
+{% if include.offshore %}
+  {% assign revenue_types = site.data.offshore_revenues_by_type[include.location_id] %}
+{% endif %}
+
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 
 {% if national_page %}
@@ -14,6 +19,7 @@
 {% assign coal_exists = false %}
 {% assign minerals_exists = false %}
 {% assign geothermal_exists = false %}
+{% assign wind_exists = false %}
 {% assign all_exists = false %}
 
 
@@ -33,6 +39,10 @@
 
   {% if commodity_name == 'Geothermal' %}
     {% assign geothermal_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'Wind' %}
+    {% assign wind_exists = true %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
@@ -110,6 +120,23 @@
       {% endfor %}
     {% endif %}
 
+    {% if wind_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Wind
+        <icon class="icon-padded icon-wind"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Wind' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
     {% if minerals_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Hardrock Minerals
@@ -128,7 +155,7 @@
       {% endfor %}
     {% endif %}
 
-    {% if minerals_exists == true %}
+    {% if all_exists == true %}
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}

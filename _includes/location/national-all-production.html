@@ -12,7 +12,11 @@
     {% include year-selector.html year_range=year_range %}
 
     <p class="chart-description">
-      The Energy Information Administration collects data about <strong>energy-related natural resources on all types of land and offshore areas</strong> (including state and private land). This data does not include information about non-energy mineral mining. <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+      The Energy Information Administration collects data about <strong>energy-related natural resources on all types of land and offshore areas</strong> (including state and private land). This data does not include information about non-energy mineral mining.
+      <br>
+      <a href="{{site.baseurl}}/downloads/#production-all">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
     </p>
   </div>
 
@@ -34,6 +38,13 @@
       <h3 class="chart-title"><span>{{ product_name }}</span></h3>
 
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="all-production-figures-{{ product_slug }}"
+          data='{{ production_values | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ long_units }}">
+        </eiti-bar-chart>
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
@@ -46,13 +57,6 @@
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="all-production-figures-{{ product_slug }}"
-          data='{{ production_values | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="{{ long_units }}">
-        </eiti-bar-chart>
       </figure>
     </section>
     {% endfor %}

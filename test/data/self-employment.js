@@ -1,4 +1,5 @@
 /* jshint node: true, mocha: true */
+/* jshint -W083 */
 /* jshint -W089 */
 /* jshint -W110 */
 var tito = require('tito');
@@ -6,11 +7,7 @@ var fs = require('fs');
 var path = require('path');
 var yaml = require('js-yaml');
 var assert = require('assert');
-var parse = require('csv-parse');
-var async = require('async')
-
 var _ = require('lodash');
-
 
 var statesPath = path.join(
   __dirname,
@@ -21,8 +18,7 @@ var states = yaml.safeLoad(
   fs.readFileSync(statesPath, 'utf8')
 );
 
-var statesInverted = _.invert(states)
-
+var statesInverted = _.invert(states);
 
 var load = function(filename, format, done) {
   var rows = [];
@@ -53,7 +49,7 @@ describe('self employment data', function() {
 
   var pivotSourceParent = path.join(
     __dirname,
-    '../../data/_input/bls'
+    '../../data/jobs/bls'
   );
 
   var countyJobsPath = path.join(
@@ -62,14 +58,19 @@ describe('self employment data', function() {
   );
 
   var years = getDirectories(pivotSourceParent);
-  var countyJobs = fs.readdirSync(countyJobsPath);
+  var countyJobs = fs.readdirSync(countyJobsPath)
+    .filter(function(filename) {
+      return filename.match(/^[A-Z]{2}\.yml$/);
+    });
   var pivotSource = {};
+  var i;
+  var year;
 
-  for (var i = 0; i < years.length; i++) {
-    var year = years[i];
+  for (i = 0; i < years.length; i++) {
+    year = years[i];
     pivotSource[year] = path.join(
       __dirname,
-      '../../data/_input/bls/',
+      '../../data/jobs/bls/',
       year,
       'joined.tsv'
     );
@@ -79,51 +80,55 @@ describe('self employment data', function() {
     fs.readFileSync(dataSource, 'utf8')
   );
 
-
   var countySelfEmployment = {};
 
   _.each(countyJobs, function(region) {
     var regionEmployment = path.join(countyJobsPath, region);
-
     countySelfEmployment[region.split('.')[0]] = yaml.safeLoad(
       fs.readFileSync(regionEmployment, 'utf8')
     );
-  })
+  });
 
+  for (i = 0; i < years.length; i++) {
+    year = years[i];
 
-  for (var i = 0; i < years.length; i++) {
-    var year = years[i];
-    it(year + ' – state rollups', function(done) {
+    it(year + ' state rollups', function(done) {
       load(pivotSource[year], 'tsv', function(error, rows) {
 
         var actual = {};
         var expected = {};
 
-        rows.forEach(function(d) {
-          var state = states[d.State];
+        rows
+          .filter(function(d) {
+            return !d.County;
+          })
+          .forEach(function(d) {
+            var state = states[d.State];
 
-          var expectedByState = selfEmployment[state]
+            var expectedByState = selfEmployment[state];
 
-          if (expectedByState) {
-
-            if (+d.Jobs) {
-              if (actual[state]) {
-                actual[state] += +d.Jobs;
+            if (expectedByState) {
+              if (+d.Jobs) {
+                if (actual[state]) {
+                  actual[state] += +d.Jobs;
+                } else {
+                  actual[state] = +d.Jobs;
+                }
+              }
+              if (expectedByState[d.Year]) {
+                expected[state] = expectedByState[d.Year].count;
               } else {
-                actual[state] = +d.Jobs;
+                console.warn('no data for:', d, expectedByState);
               }
             }
-            expected[state] = expectedByState[d.Year].count
-          }
-        });
+          });
 
-        for (state in actual) {
-          var difference = Math.abs(+actual[state] - +expected[state])
+        for (var state in actual) {
+          var difference = Math.abs(+actual[state] - +expected[state]);
           assert.ok(
             difference <= 0,
-            actual[state],
             (actual[state] + ' != ' + expected[state])
-          )
+          );
         }
 
         done();
@@ -131,15 +136,15 @@ describe('self employment data', function() {
     });
 
 
-    it(year + ' – county data', function(done) {
+    it(year + ' county data', function(done) {
 
       load(pivotSource[year], 'tsv', function(error, rows) {
 
-        var actual = {}
+        var actual = {};
         actual.count = {};
         actual.percent = {};
 
-        var expected = {}
+        var expected = {};
         expected.count = {};
         expected.percent = {};
 
@@ -148,12 +153,12 @@ describe('self employment data', function() {
         rows.forEach(function(d) {
           var state = states[d.State];
 
-          var expectedByState = countySelfEmployment[state]
+          var expectedByState = countySelfEmployment[state];
 
           if (expectedByState) {
             try {
               if (d.County) {
-                expectedByCounty = expectedByState[d.FIPS]
+                var expectedByCounty = expectedByState[d.FIPS];
                 if (+d.Jobs) {
                   if (actual.count[d.FIPS]) {
                     actual.count[d.FIPS] += +d.Jobs;
@@ -170,8 +175,10 @@ describe('self employment data', function() {
                   }
                 }
                 // console.log(expectedByCounty)
-                expected.count[d.FIPS] = expectedByCounty.employment[year].count;
-                expected.percent[d.FIPS] = expectedByCounty.employment[year].percent;
+                expected.count[d.FIPS] = expectedByCounty
+                  .employment[year].count;
+                expected.percent[d.FIPS] = expectedByCounty
+                  .employment[year].percent;
               }
             } catch (error) {
               assert.ok(false, 'no data for: ' + JSON.stringify(d));
@@ -179,22 +186,25 @@ describe('self employment data', function() {
           }
         });
 
-        for (metric in actual) {
-          for (fips in actual[metric]) {
+        for (var metric in actual) {
+          for (var fips in actual[metric]) {
 
-            var difference = Math.abs(+actual[metric][fips] - +expected[metric][fips])
+            var difference = Math.abs(
+              +actual[metric][fips] - +expected[metric][fips]
+            );
 
             if (metric === 'percent') {
-              round = .01;
+              round = 0.01;
             } else {
               round = 1;
             }
             assert.ok(
               difference <= round,
-              (metric + ' ' + actual[metric][fips] + ' != ' + expected[metric][fips] +
-                ' for: ' + [fips, year].join('/')
-                )
-            )
+              [
+                metric, actual[metric][fips], '!=', expected[metric][fips],
+                'for:', [fips, year].join('/')
+              ].join(' ')
+            );
           }
         }
 
@@ -202,13 +212,16 @@ describe('self employment data', function() {
       });
     });
 
-    it(year + " – data doesn't contain values that aren't in the pivot table", function(done) {
-      var actualCount,
-        actualPercent,
-        found;
+    var test = year + " data doesn't contain values that aren't" +
+               'in the pivot table';
+    it(test, function(done) {
+      var actualCount;
+      var actualPercent;
+      var found;
+      var state;
+      var fips;
 
       var filter = function(d) {
-
         return d.State === statesInverted[state] &&
                d.Year === year &&
                d.FIPS === fips;
@@ -216,40 +229,46 @@ describe('self employment data', function() {
 
 
       load(pivotSource[year], 'tsv', function(error, rows) {
-          for (state in countySelfEmployment) {
-            for (fips in countySelfEmployment[state]) {
-              if (countySelfEmployment[state][fips].employment[year]) {
-                actualCount = countySelfEmployment[state][fips].employment[year].count;
-                actualPercent = countySelfEmployment[state][fips].employment[year].percent;
-                found = rows.filter(filter);
-              }
-              assert.equal(
-                found.length, 1,
-                'wrong row count: ' + found.length +
-                ' for: ' + [state, fips, year].join('/')
-
-              );
-
-              var expectedCount = found[0].Jobs;
-              var expectedPercent = found[0].Share * 100;
-
-              var differenceCount = expectedCount - actualCount;
-              var differencePercent = expectedPercent - actualPercent;
-              assert.ok(
-                Math.abs(differenceCount) <= 1,
-                'wrong count: ' + (actualCount + ' != ' + expectedCount + '\n' +
-                  [state, fips, year].join('/')
-                )
-              );
-
-              assert.ok(
-                Math.abs(differencePercent) <= 1,
-                'wrong percent: ' + (actualPercent + ' != ' + expectedPercent + '\n' +
-                  [state, fips, year].join('/')
-                )
-              );
+        for (state in countySelfEmployment) {
+          for (fips in countySelfEmployment[state]) {
+            if (countySelfEmployment[state][fips].employment[year]) {
+              actualCount = countySelfEmployment[state][fips]
+                .employment[year]
+                .count;
+              actualPercent = countySelfEmployment[state][fips]
+                .employment[year]
+                .percent;
+              found = rows.filter(filter);
             }
+            assert.equal(
+              found.length, 1,
+              'wrong row count: ' + found.length +
+              ' for: ' + [state, fips, year].join('/')
+
+            );
+
+            var expectedCount = found[0].Jobs;
+            var expectedPercent = found[0].Share * 100;
+
+            var differenceCount = expectedCount - actualCount;
+            var differencePercent = expectedPercent - actualPercent;
+            assert.ok(
+              Math.abs(differenceCount) <= 1,
+              [
+                'wrong count:', actualCount, '!=', expectedCount,
+                '\n' + [state, fips, year].join('/')
+              ].join(' ')
+            );
+
+            assert.ok(
+              Math.abs(differencePercent) <= 1,
+              [
+                'wrong percent:', actualPercent, '!=', expectedPercent,
+                '\n' + [state, fips, year].join('/')
+              ].join(' ')
+            );
           }
+        }
 
         done();
       });

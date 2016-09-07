@@ -1,142 +1,119 @@
 all_production:
-  '2005':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 153649647
-      rank: 2
-      percent: 13.59
   '2006':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 152373615
       rank: 2
-      percent: 13.11
+      percent: 13.1
   '2007':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 153479515
       rank: 2
-      percent: 13.4
+      percent: 13.39
   '2008':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 157778087
       rank: 2
-      percent: 13.48
+      percent: 13.46
   '2009':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 137127322
       rank: 2
-      percent: 12.79
+      percent: 12.76
   '2010':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 135219749
       rank: 2
-      percent: 12.49
+      percent: 12.47
   '2011':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 134661745
       rank: 2
-      percent: 12.31
+      percent: 12.29
   '2012':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 120424758
       rank: 2
-      percent: 11.86
+      percent: 11.85
   '2013':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
-      value: 115925451
+      value: 112786287
       rank: 2
-      percent: 11.79
+      percent: 11.45
   '2014':
-    - product: Coal (short tons)
+    - product: Coal
       name: Coal
       units: short tons
       value: 112187373
       rank: 2
-      percent: 11.24
+      percent: 11.22
 federal_production:
   '2006':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 574301
-      rank: 1
+      value: 14931826
+      rank: 5
       percent: 0
   '2007':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 519848
-      rank: 1
-      percent: 0
-  '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 596923
-      rank: 1
+      value: 13516048
+      rank: 5
       percent: 0
   '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 467668
-      rank: 1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 5018
+      rank: 3
       percent: 0
   '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 208
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 379408
-      rank: 1
+      value: 9864608
+      rank: 5
       percent: 0
   '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 364
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 432472
-      rank: 1
+      value: 11244272
+      rank: 5
       percent: 0
   '2012':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 204968
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 208899
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 176349
-      rank: 1
-      percent: 0
-  '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 153187
-      rank: 1
+      value: 5329168
+      rank: 5
       percent: 0

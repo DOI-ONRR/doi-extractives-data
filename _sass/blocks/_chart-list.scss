@@ -16,11 +16,13 @@
   .chart-title {
     @include heading(large-caps);
     align-items: flex-end;
-    border-bottom: 1px solid $neutral-gray;
+    border-bottom: 1px solid $gray-dark;
+    color: $black-light;
     display: flex;
     flex: 1 0 auto;
     margin-bottom: $base-padding-base;
     min-height: 40px;
+    padding-top: 2.5rem;
   }
 
   .chart-list-intro {
@@ -33,7 +35,6 @@
     border-top: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: $base-padding;
     margin-top: 0;
     padding-top: 0;
   }
@@ -69,8 +70,6 @@
       padding-left: $base-padding-lite;
       padding-right: $base-padding-lite;
     }
-
-
   }
 
   figure {
@@ -82,7 +81,7 @@
 
     font-weight: $weight-light;
     line-height: 20px;
-    min-height: 100px;
+    min-height: 65px;
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
@@ -99,7 +98,6 @@
     font-weight: $weight-bold;
     margin: 0;
     min-height: inherit;
-    padding: $base-padding-lite;
   }
 
   .county-map-table {
@@ -110,13 +108,12 @@
 
 .chart-selector-wrapper {
   display: inline-block;
-  margin-bottom: $base-padding-jumbo;
 
   .chart-selector {
     @include span-columns(2);
     @include font-size(7 / 8);
 
-    background-color: $mid-gray;
+    background-color: $gray-light;
     border: 0;
     font-weight: $weight-book;
     margin-right: $standard-padding;
@@ -124,9 +121,9 @@
   }
 
   .chart-description {
-    @include heading('para-md');
     border-left: 1px solid $mid-gray;
     float: left;
+    margin-bottom: 0;
     padding-left: 1.25rem;
     width: 75%;
 
@@ -134,6 +131,19 @@
       border: none;
       float: none;
       padding-left: 0;
+      width: 100%;
+    }
+
+    a {
+      @include heading(para-sm);
+
+      color: $blue;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
     }
   }
 }

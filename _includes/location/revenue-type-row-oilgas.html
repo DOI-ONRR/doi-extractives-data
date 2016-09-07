@@ -13,10 +13,14 @@
   </th>
   <td rowspan="2" data-value="{{
     values.Bonus[include.year] | default: 0
-  }}"><span class="text">${{ values.Bonus[include.year] | default: 0 | intcomma }}</span></td>
+  }}">
+    <span class="text">${{ values.Bonus[include.year] | default: 0 | intcomma }}</span>
+  </td>
   <td rowspan="2" data-value="{{
     values.Rents[include.year] | default: 0
-  }}"><span class="text">${{ values.Rents[include.year] | default: 0 | intcomma }}</span></td>
+  }}">
+    <span class="text">${{ values.Rents[include.year] | default: 0 | intcomma }}</span>
+  </td>
   <td data-value="{{
     revenue_types.Oil.Royalties[include.year] | default: 0
   }}">
@@ -25,7 +29,7 @@
   }}"></span>
 
     <span class="text">
-    <a href="#revenue-oil"><strong>Oil</strong></a>
+    <strong class="text-header text-header-first">Oil</strong>
     ${{
       revenue_types.Oil.Royalties[include.year]
       | default: 0
@@ -33,7 +37,7 @@
     }}</span>
 
     <span class="text">
-    <a href="#revenue-gas"><strong>Gas</strong></a>
+    <strong class="text-header text-header-second">Gas</strong>
     ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
 
   </td>

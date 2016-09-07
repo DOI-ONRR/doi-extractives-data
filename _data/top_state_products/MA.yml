@@ -1,0 +1,57 @@
+all_production:
+  '2006':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1153570.86
+      rank: 5
+      percent: 7.17
+  '2007':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1121067.09
+      rank: 5
+      percent: 6.78
+  '2008':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1129045.94
+      rank: 5
+      percent: 6.37
+  '2009':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1107875.23
+      rank: 5
+      percent: 6.01
+  '2010':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1125325.97
+      rank: 5
+      percent: 5.95
+  '2011':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1039129.56
+      rank: 5
+      percent: 5.41
+  '2012':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1065140.1
+      rank: 5
+      percent: 5.37
+  '2013':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1060540.61
+      rank: 5
+      percent: 5.09

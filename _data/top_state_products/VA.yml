@@ -1,3 +1,60 @@
+all_production:
+  '2014':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2754792.57
+      rank: 4
+      percent: 6.51
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1097010.68
+      rank: 5
+      percent: 5.07
+  '2015':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3005392.74
+      rank: 4
+      percent: 7.1
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6393556
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5417308
+      rank: 5
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4921644
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4722432
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4522674
+      rank: 5
+      percent: 0
 revenue:
   '2006':
     - product: Hardrock
@@ -69,89 +126,3 @@ revenue:
       value: 7049.9
       rank: 3
       percent: 0.08
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 245906
-      rank: 1
-      percent: 0
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 208358
-      rank: 1
-      percent: 0
-  '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 211002
-      rank: 1
-      percent: 0
-  '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 198315
-      rank: 1
-      percent: 0
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 189294
-      rank: 1
-      percent: 0
-  '2011':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 181632
-      rank: 1
-      percent: 0
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 173949
-      rank: 1
-      percent: 0
-  '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 162733
-      rank: 1
-      percent: 0
-  '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 149379
-      rank: 1
-      percent: 0
-  '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 130082
-      rank: 1
-      percent: 0
-all_production:
-  '2013':
-    - product: Biomass (total)
-      name: Biomass
-      units: megawatt hours
-      value: 2906000
-      rank: 5
-      percent: 4.78
-  '2014':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 131885
-      rank: 2
-      percent: 20.81

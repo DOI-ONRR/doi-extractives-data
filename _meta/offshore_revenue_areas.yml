@@ -1,5 +1,4 @@
 '{area_id}':
-  commodities:
-    '{commodity}':
-      '{year}':
-        revenue: '{revenue}'
+  name: '{area_name}'
+  revenue:
+    '{year}': '{revenue}'

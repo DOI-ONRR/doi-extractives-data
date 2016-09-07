@@ -5,7 +5,6 @@
 
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0 0 2em;
 
   tbody tr:focus,
   tbody tr:hover {
@@ -72,6 +71,16 @@
   [data-value] {
     min-width: 120px;
     position: relative;
+
+    .text-header {
+      &.text-header-first {
+        color: $green-darkest;
+      }
+
+      &.text-header-second {
+        color: $green-dark;
+      }
+    }
 
     .bar {
       background: $mid-gray;

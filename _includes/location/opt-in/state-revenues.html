@@ -1,4 +1,4 @@
-{% assign revenue_year = '2014' %}
+{% assign revenue_year = page.state_revenue_year | default: 2014 | to_s %}
 {% assign streams = site.data.opt_in_state_revenues[include.location_id].streams %}
 
 {% if streams.size > 0 %}
@@ -10,21 +10,21 @@
   {{ page.state_revenue | markdownify }}
 {% endif %}
 
+<!-- This link only works if the file is named correctly. -->
+<a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf" class="button-tertiary">
+  <icon class="icon-cloud icon-padded"></icon>
+  Download: State revenue streams (PDF)
+</a>
+
 <p>
-  In {{ year }}, the state of  
-  {{ state_name }} collected 
+  In {{ revenue_year }}, the state of
+  {{ state_name }} collected
   <strong>${{ revenue_total | default: 0 | intcomma }}
   in state revenue from natural resource extraction</strong>
-  through {{ streams_count }} 
-  revenue stream{{ streams_count | plural }} 
+  through {{ streams_count }}
+  revenue stream{{ streams_count | plural }}
   (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
 </p>
-
-{% if page.state_revenue_sustainability %}
-  <p><strong>Revenue sustainability:</strong></p>
-
-  {{ page.state_revenue_sustainability | markdownify }}
-{% endif %}
 
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
@@ -73,8 +73,13 @@
 </table>
 {% endif %}
 
-{% if page.state_tax_expenditures %} 
-  <h4>Tax expenditures</h4> 
+{% if page.state_revenue_sustainability %}
+  <h4>Revenue sustainability</h4>
+  {{ page.state_revenue_sustainability | markdownify }}
+{% endif %}
+
+{% if page.state_tax_expenditures %}
+  <h4>Tax expenditures</h4>
   <p>
     Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
   </p>

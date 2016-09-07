@@ -21,6 +21,13 @@ nav_items:
         title: State and local revenue
       - name: tax-expenditures
         title: Tax expenditures
+  - name: disbursements
+    title: Disbursements
+    subnav_items:
+      - name: federal-disbursements
+        title: Federal disbursements
+      - name: state-disbursements
+        title: State disbursements
   - name: economic-impact
     title: Economic impact
     subnav_items:
@@ -32,13 +39,6 @@ nav_items:
         title: Self-employment
       - name: exports
         title: Exports
-  - name: disbursements
-    title: Disbursements
-    subnav_items:
-      - name: federal-disbursements
-        title: Federal disbursements
-      - name: state-disbursements
-        title: State disbursements
   - name: state-governance
     title: State governance
     subnav_items:
@@ -72,7 +72,7 @@ nav_items:
 {% endcapture %}
 
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
-  <div class="container">
+  <section class="container">
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
@@ -87,13 +87,20 @@ nav_items:
     <div class="container-right-5 container-shift-1">
       {% include location/section-ownership.html %}
     </div>
-  </div>
+  </section>
 
   <section class="container">
     <div class="container-left-9">
 
       <section id="production">
         <h2>Production</h2>
+
+        <p>
+          The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}'s energy production and usage</a>.
+        </p>
+        {% if page.state_production %}
+          {{ page.state_production | markdownify }}
+        {% endif %}
 
         {% include location/section-all-production.html %}
 
@@ -110,29 +117,14 @@ nav_items:
       </section>
 
       {% include location/section-revenue.html %}
-
-      {% unless page.offshore == true %}
-      <section id="economic-impact">
-        <h2>Economic impact</h2>
-        {% if page.state_impact %}
-          {{ page.state_impact | markdownify }}
-        {% endif %}
-
-        {% include location/section-gdp.html %}
-
-        {% include location/section-jobs.html %}
-
-        {% include location/section-exports.html %}
-      </section>
-      {% endunless %}
-
+      
       <section id="disbursements" class="disbursements">
         <h2>Disbursements</h2>
 
         {% include location/section-disbursements.html %}
 
         <section id="state-disbursements" class="disbursements">
-          <h3>State disbursements</h2>
+          <h3>State disbursements</h3>
 
           {% if page.opt_in == true %}
             {% include location/opt-in/state-disbursements.html location_id=state_id %}
@@ -142,6 +134,25 @@ nav_items:
         </section>
 
       </section>
+
+      {% unless page.offshore == true %}
+      <section id="economic-impact">
+        <h2>Economic impact</h2>
+        {% if page.state_impact %}
+          {{ page.state_impact | markdownify }}
+
+          <p>
+            In addition to generaing economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
+          </p>
+        {% endif %}
+
+        {% include location/section-gdp.html %}
+
+        {% include location/section-jobs.html %}
+
+        {% include location/section-exports.html %}
+      </section>
+      {% endunless %}
 
       <section>
         {% include location/section-state-governance.html %}

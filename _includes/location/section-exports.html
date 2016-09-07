@@ -37,7 +37,11 @@
           In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.
         {% endif %}
 
-        The U.S. Census Bureau collects information about the top 25 exports in each state. <a href="{{site.baseurl}}/downloads/#exports">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+        The U.S. Census Bureau collects information about the top 25 exports in each state.
+          <br>
+          <a href="{{site.baseurl}}/downloads/#exports">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
       </p>
     </div>
 
@@ -54,6 +58,13 @@
           <h3 class="chart-title"><span>{{ commodity[0] }}</span></h3>
 
           <figure class="chart chart-{{ _metric }}">
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{{ exports | map_hash: _metric | jsonify }}'
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="{{ _format }}">
+            </eiti-bar-chart>
             <figcaption id="exports-figures-{{ commodity_slug }}">
               <span class="caption-data">
                 <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
@@ -68,14 +79,6 @@
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
             </figcaption>
-            <eiti-bar-chart
-              aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{{ exports | map_hash: _metric | jsonify }}'
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="{{ _format }}">
-            </eiti-bar-chart>
-
           </figure>
 
         </section><!-- /.chart-item -->

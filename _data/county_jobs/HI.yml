@@ -4,15 +4,15 @@
     '2013':
       count: 30
       percent: 0.05
+    '2014':
+      count: 30
+      percent: 0.05
+    '2015':
+      count: 28
+      percent: 0.04
 '15003':
   name: Honolulu County
   employment:
-    '2004':
-      count: 229
-      percent: 0.05
-    '2005':
-      count: 244
-      percent: 0.06
     '2006':
       count: 241
       percent: 0.05
@@ -37,3 +37,9 @@
     '2013':
       count: 193
       percent: 0.04
+    '2014':
+      count: 188
+      percent: 0.04
+    '2015':
+      count: 215
+      percent: 0.05

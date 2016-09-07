@@ -21,7 +21,11 @@
     {% endif %}
 
     <p class="chart-description{% unless all_products %} no-selector{% endunless %}">
-      The U.S. Energy Information Administration collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned land in {{ state_name }}. <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+      The U.S. Energy Information Administration collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned land in {{ state_name }}. 
+        <br>
+        <a href="{{site.baseurl}}/downloads/#production-all">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
     </p>
   </div>
 
@@ -42,6 +46,13 @@
 
       <h3 class="chart-title"><span>{{ product_name }}</span></h3>
       <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="state-all-production-figures-{{ product_slug }}"
+          data='{{ production_values | map_hash: "volume" | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ long_units }}">
+        </eiti-bar-chart>
         <figcaption id="state-all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
@@ -54,13 +65,6 @@
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
         </figcaption>
-        <eiti-bar-chart
-          aria-controls="state-all-production-figures-{{ product_slug }}"
-          data='{{ production_values | map_hash: "volume" | jsonify }}'
-          x-range="{{ year_range }}"
-          x-value="{{ year }}"
-          data-units="{{ long_units }}">
-        </eiti-bar-chart>
       </figure>
 
     </section>

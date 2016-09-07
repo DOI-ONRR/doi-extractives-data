@@ -4,5 +4,4 @@ US:
       name: '{product_name}'
       units: '{units}'
       volume:
-        '{year}':
-          volume: '{volume}'
+        '{year}': '{volume}'

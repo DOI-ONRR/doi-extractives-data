@@ -1,7 +1,7 @@
 var parse = require('../../lib/parse');
 
 module.exports = {
-  year:         'CY',
+  year:         'FY',
   state:        'St',
   county:       'County Name',
   fips:         'FIPS',

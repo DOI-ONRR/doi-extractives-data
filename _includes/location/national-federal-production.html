@@ -1,8 +1,8 @@
 {% assign federal_products = site.data.national_federal_production[state_id].products %}
-{% assign year_range = '[2006, 2015]' %}
-
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
+{% assign year_list = year_range | to_list %}
 
 <section id="federal-production" is="year-switcher-section" class="federal production">
 
@@ -17,7 +17,9 @@
       <p class="chart-description">
         Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.
         ONRR collects detailed data about natural resources extracted on federal lands and waters.
-        <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon>
+        <br>
+        <a href="{{site.baseurl}}/downloads/federal-production/">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
         </a>
       </p>
     </div>
@@ -25,10 +27,20 @@
     <div class="chart-list">
 
     {% for product in federal_products %}
+
+      {% assign all_withheld = true %}
+      {% for product_year in product[1].volume %}
+        {% if year_range contains product_year[0] and product_year[1] != nil %}
+          {% assign all_withheld = false %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if all_withheld %}<!-- all withheld: {{ product[0] }} -->{% continue %}{% endif %}
+
       {% assign product_slug = product[0] | slugify %}
       {% assign product_name = product[1].name | default: product[0] %}
       {% assign production_values = product[1].volume %}
-      {% assign volume = production_values[year].volume %}
+      {% assign volume = production_values[year] %}
       {% assign units = product[1].units | downcase %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
@@ -45,31 +57,29 @@
         </h4>
 
         <figure class="chart">
-          <figcaption id="national-federal-production-figures-{{ product_slug }}">
-          <span class="caption-data">
-            <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-              {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-              produced on federal land in
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          </span>
-          <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          </span>
-          <span class="caption-withheld" aria-hidden="true">
-            Data for {{ state_name }} was withheld in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
-          </span>
-
-          </figcaption>
           <eiti-bar-chart
             aria-controls="national-federal-production-figures-{{ product_slug }}"
-            data='{{ production_values | map_hash: "volume" | jsonify }}'
+            data='{{ production_values | jsonify }}'
             x-range="{{ year_range }}"
             x-value="{{ year }}"
             data-units="{{ long_units }}">
           </eiti-bar-chart>
-
+          <figcaption id="national-federal-production-figures-{{ product_slug }}">
+            <span class="caption-data">
+              <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+                produced on federal land in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            </span>
+            <span class="caption-no-data" aria-hidden="true">
+              There is no data about extracting {{ product_name | downcase | suffix:units_suffix }} on federal land in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            </span>
+            <span class="caption-withheld" aria-hidden="true">
+              Data about extracting {{ product_name | downcase | suffix:units_suffix }} on federal land was withheld in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            </span>
+          </figcaption>
         </figure>
 
       </section>

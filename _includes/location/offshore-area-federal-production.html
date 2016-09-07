@@ -29,8 +29,10 @@
       <p class="chart-description">
         Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.
         ONRR collects detailed data about natural resources extracted on federal lands and waters.
-        <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon>
-        </a>
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-production/">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
       </p>
     </div>
 
@@ -57,6 +59,13 @@
         </h4>
 
         <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="offshore-area-federal-production-figures-{{ product_slug }}"
+            data='{{ production_values | map_hash: "volume" | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="{{ long_units }}">
+          </eiti-bar-chart>
           <figcaption id="offshore-area-federal-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value"
@@ -73,16 +82,7 @@
             Data for {{ state_name }} was withheld in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
-
           </figcaption>
-          <eiti-bar-chart
-            aria-controls="offshore-area-federal-production-figures-{{ product_slug }}"
-            data='{{ production_values | map_hash: "volume" | jsonify }}'
-            x-range="{{ year_range }}"
-            x-value="{{ year }}"
-            data-units="{{ long_units }}">
-          </eiti-bar-chart>
-
         </figure>
 
       </section>

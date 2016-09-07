@@ -1,85 +1,137 @@
+all_production:
+  '2012':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 7726809.69
+      rank: 5
+      percent: 5.49
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 48486048
+      rank: 5
+      percent: 4.77
+  '2013':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 9625229
+      rank: 5
+      percent: 5.73
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 52147193
+      rank: 5
+      percent: 5.29
+  '2014':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 57969300
+      rank: 5
+      percent: 5.8
 federal_production:
   '2006':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 967096
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 8211
-      rank: 1
+      value: 213486
+      rank: 5
       percent: 0
   '2007':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1012804
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 8079
-      rank: 1
+      value: 210054
+      rank: 5
       percent: 0
   '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 6965
-      rank: 1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 895180
+      rank: 3
       percent: 0
   '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 12213
-      rank: 1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 890292
+      rank: 3
       percent: 0
   '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 832338
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 14074
-      rank: 1
+      value: 365924
+      rank: 5
       percent: 0
   '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 705692
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 14336
-      rank: 1
+      value: 372736
+      rank: 5
       percent: 0
   '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 725894
+      rank: 3
+      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 14461
-      rank: 1
+      value: 375986
+      rank: 5
       percent: 0
   '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14385
-      rank: 1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 684216
+      rank: 4
       percent: 0
   '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 26776
-      rank: 1
-      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 19162
-      rank: 1
+      value: 498212
+      rank: 4
       percent: 0
   '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 23106
-      rank: 1
-      percent: 0
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 16036
-      rank: 1
+      value: 416936
+      rank: 4
       percent: 0
 revenue:
   '2011':
@@ -89,37 +141,3 @@ revenue:
       value: 3454.87
       rank: 5
       percent: 0.02
-all_production:
-  '2012':
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 7727000
-      rank: 5
-      percent: 5.49
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 48486048
-      rank: 5
-      percent: 4.78
-  '2013':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 52147193
-      rank: 4
-      percent: 5.31
-    - product: Wind
-      name: Wind
-      units: megawatt hours
-      value: 9625000
-      rank: 5
-      percent: 5.73
-  '2014':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 57969300
-      rank: 5
-      percent: 5.81

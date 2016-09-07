@@ -1,34 +1,33 @@
+// scss-lint:disable QualifyingElement, SelectorDepth
 .state-page-nav-title {
   @include heading(large-caps);
   align-items: center;
   border-bottom: 1px solid $mid-gray;
   display: flex;
   justify-content: flex-start;
-  margin: 0;
+  margin: 4rem 0 0 0;
   position: relative;
 
   svg.map {
-    .state.feature,
-    .offshore-area.feature {
+    .state.feature use,
+    .offshore-area.feature use {
       fill-opacity: 1;
     }
 
+    .states.features use {
+      @include transition(all, 0.2s);
 
-
-    .states.features {
-      @include transition(all, 0.3s);
-
-      fill: $neutral-gray;
+      fill: $gray;
       fill-opacity: 1;
-      stroke: $neutral-gray;
+      stroke: $gray;
     }
 
-    .offshore.features {
-      @include transition(all, 0.3s);
+    .offshore.features use {
+      @include transition(all, 0.2s);
 
-      fill: $mid-gray;
+      fill: $gray-light;
       fill-opacity: 1;
-      stroke: $mid-gray;
+      stroke: $gray-light;
     }
   }
 
@@ -45,16 +44,18 @@
         visibility: visible;
       }
 
-      svg.map .states.features {
-        fill: $blackest-black;
+      svg.map .states.features use,
+      svg.map .state.feature use {
+        fill: $black-light;
         fill-opacity: 1;
-        stroke: $blackest-black;
+        stroke: $black-light;
       }
 
-      svg.map .offshore.features {
-        fill: $dark-gray;
+      svg.map .offshore.features use,
+      svg.map .offshore-area.feature use {
+        fill: $gray-darker;
         fill-opacity: 1;
-        stroke: $dark-gray;
+        stroke: $gray-darker;
       }
     }
 
@@ -72,6 +73,7 @@
     @include font-size(0.8);
     @include transition(visibility, 0.3s);
 
+    color: $gray-darker;
     font-style: italic;
     position: absolute;
     right: 0;

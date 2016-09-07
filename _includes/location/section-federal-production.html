@@ -14,7 +14,13 @@
     <h3>Production on federal land in {{ state_name }}</h3>
 
     {% if federal_products_num == 0 %}
-      <p>No natural resources were produced on federal land in {{  state_name }} in {{ year }}.</p>
+      <p>
+        ONRR collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource production on federal land in {{  state_name }} in {{ year }}.
+        <br>
+        <a href="{{site.baseurl}}/downloads/federal-production/">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
     {% else %}
       <div class="chart-selector-wrapper">
 
@@ -22,7 +28,10 @@
 
         <p class="chart-description">
             ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
-            <a href="{{site.baseurl}}/downloads/federal-production/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-production/">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
         </p>
       </div>
     {% endif %}
@@ -54,25 +63,6 @@
             </h4>
 
             <figure class="chart">
-              <figcaption id="federal-production-figures-{{ product_slug }}">
-
-                <span class="caption-data">
-                  <span class="eiti-bar-chart-y-value"
-                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                  {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-                  produced on federal land in {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                </span>
-                <span class="caption-no-data" aria-hidden="true">
-                  There is no data for {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
-                </span>
-                <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase }} was extracted in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
-                </span>
-
-
-              </figcaption>
               <eiti-bar-chart
                 aria-controls="federal-production-figures-{{ product_slug }}"
                 data='{{ production_values | map_hash: "volume" | jsonify }}'
@@ -80,7 +70,22 @@
                 x-value="{{ year }}"
                 data-units="{{ long_units }}">
               </eiti-bar-chart>
-
+              <figcaption id="federal-production-figures-{{ product_slug }}">
+                <span class="caption-data">
+                  <span class="eiti-bar-chart-y-value"
+                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                  {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+                  extracted on federal land in {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                </span>
+                <span class="caption-no-data" aria-hidden="true">
+                  There is no data for {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                </span>
+                <span class="caption-withheld" aria-hidden="true">
+                  Data about how much {{ product_name | downcase }} was extracted on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                </span>
+              </figcaption>
             </figure>
 
           </div><!-- /.chart-container -->

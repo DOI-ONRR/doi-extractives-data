@@ -5,6 +5,16 @@
 <div class="state svg-container map-container wide"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
   <svg class="states map{% if include.case_studies %} case_studies {% endif %}{% if include.ownership %} ownership {% endif %}{% if include.no_outline %} no-outlines {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
 
+    {% if include.offshore_regions != false %}
+      {%
+        include maps/offshore-regions.html
+        svg=offshore_svg
+        areas=include.offshore_regions
+        value=include.value
+        href=include.href
+      %}
+    {% endif %}
+
     {% if include.states != false %}
       {%
         include maps/state-areas.html
@@ -13,16 +23,6 @@
         value=include.value
         href=include.href
         no_ownership=include.case_studies
-      %}
-    {% endif %}
-
-    {% if include.offshore_areas != false %}
-      {%
-        include maps/offshore-areas.html
-        svg=offshore_svg
-        areas=include.offshore_areas
-        value=include.value
-        href=include.href
       %}
     {% endif %}
 

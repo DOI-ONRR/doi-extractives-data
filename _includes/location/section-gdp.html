@@ -1,6 +1,6 @@
 {% assign gdp = site.data.state_gdp[state_id] %}
 
-{% assign year_range = '[2004, 2013]' %}
+{% assign year_range = site.data.years.gdp | default: site.data.years.default | jsonify %}
 
 <section id="gdp" is="year-switcher-section" class="economic gdp">
 
@@ -22,7 +22,11 @@
 
     {% endif %}
     <p class="chart-description{% unless gdp %} no-selector{% endunless %}">
-      GDP data comes from the U.S. Bureau of Economic Analysis. <a href="{{site.baseurl}}/downloads/#gdp">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+      GDP data comes from the U.S. Bureau of Economic Analysis.
+      <br>
+      <a href="{{site.baseurl}}/downloads/#gdp">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
     </p>
   </div><!-- .chart-selector-wrapper -->
 
@@ -42,6 +46,13 @@
         <h3 class="chart-title"><span>GDP ({{ _metric }})</span></h3>
 
         <figure class="chart chart-{{ _metric }}">
+          <eiti-bar-chart
+            aria-controls="gdp-figures-{{ _metric }}"
+            data='{{ gdp | map_hash: _metric | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="{{ _metric }}">
+          </eiti-bar-chart>
           <figcaption id="gdp-figures-{{ _metric }}">
             <span class="caption-data">
               Extractive industries accounted for
@@ -60,14 +71,6 @@
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>
               </span>
           </figcaption>
-          <eiti-bar-chart
-            aria-controls="gdp-figures-{{ _metric }}"
-            data='{{ gdp | map_hash: _metric | jsonify }}'
-            x-range="{{ year_range }}"
-            x-value="{{ year }}"
-            data-units="{{ _metric }}">
-          </eiti-bar-chart>
-
         </figure>
 
       </section><!-- /.chart-item -->

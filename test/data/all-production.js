@@ -28,10 +28,6 @@ var load = function(filename, format, done) {
     });
 };
 
-var round = function(num, precision) {
-  return (+num).toFixed(precision || 3);
-};
-
 var loadAll = function(dir, done) {
   fs.readdir(dir, function(error, files) {
     if (error) {
@@ -55,7 +51,6 @@ var assertVolumeMatch = function(
   inputUnits = UNIT_MAP[inputUnits.toLowerCase()]
     || inputUnits.toLowerCase();
 
-  var precision = 3;
   var reason = [
     inputVolume, '(' + inputUnits + ')',
     'to',
@@ -174,7 +169,6 @@ describe('all production (EIA)', function() {
         }
 
         var volume;
-        var units;
 
         rows
           .filter(function(d) {
@@ -226,7 +220,7 @@ describe('all production (EIA)', function() {
 
         for (state in stateValues) {
           for (product in stateValues[state].products) {
-            values = stateValues[state].products[product];
+            var values = stateValues[state].products[product];
             units = values.units;
             for (year in values.volume) {
               volume = values.volume[year].volume;
@@ -248,7 +242,7 @@ describe('all production (EIA)', function() {
     });
   });
 
-  xdescribe('offshore values', function() {
+  describe('offshore values', function() {
   });
 
 });

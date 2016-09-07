@@ -1,73 +1,282 @@
 all_production:
-  '2005':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 75199000
-      rank: 4
-      percent: 3.42
   '2006':
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 73621000
       rank: 4
-      percent: 3.47
+      percent: 3.97
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2880930.39
+      rank: 5
+      percent: 7.43
   '2007':
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 76979000
       rank: 4
-      percent: 3.65
+      percent: 4.15
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2898370.95
+      rank: 5
+      percent: 7.43
   '2008':
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 72353000
       rank: 4
-      percent: 3.49
+      percent: 3.95
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2638789.01
+      rank: 5
+      percent: 7.07
   '2009':
-    - product: Natural Gas (mcf)
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2296773.09
+      rank: 5
+      percent: 6.37
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 1558638
+      units: Mcf
+      value: 1558638000
       rank: 5
       percent: 5.98
-    - product: Oil (bbl)
-      name: Oil
+    - product: Crude Oil
+      name: Crude Oil
       units: bbl
       value: 68824000
       rank: 5
-      percent: 3.15
+      percent: 3.52
   '2010':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 2218283
+      units: Mcf
+      value: 2218283000
       rank: 4
       percent: 8.27
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2393409.42
+      rank: 4
+      percent: 6.44
   '2011':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 3040523
+      units: Mcf
+      value: 3040523000
       rank: 3
       percent: 10.68
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2371437.38
+      rank: 5
+      percent: 6.33
   '2012':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 2955437
+      units: Mcf
+      value: 2955437000
       rank: 3
       percent: 10
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2366280.69
+      rank: 5
+      percent: 6.26
   '2013':
-    - product: Natural Gas (mcf)
+    - product: Natural Gas
       name: Natural Gas
-      units: mcf
-      value: 2366943
+      units: Mcf
+      value: 2366943000
       rank: 4
       percent: 8.02
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2704256
+      rank: 5
+      percent: 6.76
+  '2015':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1941727000
+      rank: 5
+      percent: 5.9
+federal_production:
+  '2006':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 13079924
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 819673868
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 11362468
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 796021408
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 9893832
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 9026758
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8333910
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 431901080
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8827208
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 538932394
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 9404018
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 542302280
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8086208
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 8075938
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 6413368
+      rank: 4
+      percent: 0
 revenue:
   '2006':
     - product: Gas
@@ -142,146 +351,3 @@ revenue:
       value: 203.4
       rank: 4
       percent: 0.05
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 31525918
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 30616208
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2008':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 29475643
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2009':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 20534166
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 16611580
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2011':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 20728169
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 20857780
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2013':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 17534860
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2014':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13321383
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 310613
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2015':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14903958
-      rank: 1
-      percent: 0
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 246668
-      rank: 1
-      percent: 0
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null

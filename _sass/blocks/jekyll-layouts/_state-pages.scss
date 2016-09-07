@@ -13,7 +13,7 @@
   }
 
   h2 {
-    @include h2-bar;  
+    @include h2-bar;
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),

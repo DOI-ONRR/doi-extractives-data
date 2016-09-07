@@ -8,26 +8,26 @@
 
   h3,
   h4 {
-    font-weight: $weight-book;
     font-size: 1rem;
+    font-weight: $weight-book;
   }
-  
+
   h4 {
     padding-top: 4rem - 0.75rem;
   }
 
   .h2-bar {
     margin-bottom: 0;
-    
+
     + .landing-section {
       padding-top: 2rem;
     }
-    
+
     + .h3-bar {
       padding-top: 4rem;
     }
   }
-  
+
   .h3-bar {
     @include heading('h5');
   }
@@ -35,16 +35,16 @@
 
 .landing-section > div {
   @include span-columns(12);
-  
-  p {
-    @include heading('para-md');
-    color: $light-black;
-    margin-bottom: 0;
-  }
 
   @include respond-to(medium-up) {
     @include span-columns(6);
     @include omega(2n);
+  }
+
+  p {
+    @include heading('para-md');
+    color: $light-black;
+    margin-bottom: 0;
   }
 }
 
@@ -57,11 +57,10 @@
 .landing-minerals,
 .landing-renewables {
   img {
-    color: $mid-gray;
     float: right;
     padding-right: 20px;
   }
-  
+
   p {
     float: left;
     width: 59%;
@@ -80,15 +79,15 @@
   }
 }
 
-.landing-coal {
+.landing-coal,
+.landing-minerals {
   img {
-    padding-right: 10px;
     padding-top: 20px;
   }
 }
 
-.landing-minerals {
+.landing-coal {
   img {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }

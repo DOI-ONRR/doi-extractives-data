@@ -1,1 +1,6 @@
+# XXX this must be a string to use it as an index into other data!
+now: '2013'
+
 default: [2006, 2015]
+
+exports: [2011, 2014]

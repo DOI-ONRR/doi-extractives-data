@@ -5,7 +5,7 @@ var options = require('yargs')
   })
   .option('year', {
     desc: 'year or year range',
-    default: '2004-2013'
+    default: '2006-2015'
   })
   .option('of', {
     desc: 'output format (tito-compatible)',
@@ -88,7 +88,7 @@ async.mapSeries([
 
   var rows = [];
   var done = function(error) {
-    if (error) console.warn('error?', error);
+    if (error) console.warn('error?', error, 'for', p);
     next(null, rows);
   };
 

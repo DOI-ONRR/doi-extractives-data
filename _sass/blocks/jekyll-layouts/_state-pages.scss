@@ -9,17 +9,14 @@
   }
 
   h2:not(.ribbon-card-top-text-header) {
-    border-bottom: 20px solid $light-green;
-    padding-bottom: $standard-padding-lite;
+    @include h2-bar;
     padding-top: 6rem;
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     @include heading('h5');
-    border-bottom: 2px solid $light-green;
-    margin-bottom: $base-padding-base;
-    padding-bottom: $standard-padding-lite;
+    @include h3-bar;
   }
 
   h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title) {

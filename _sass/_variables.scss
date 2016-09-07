@@ -72,7 +72,7 @@ $mid-blue-opaque: rgba(198, 233, 255, 0.93);
 $dark-blue: #4b9bbf;
 
 // State pages
-$green-land: #69995A;
+$green-land: #69995a;
 $green-mint: #cde3c3;
 $green-sea: #b1d39c;
 $green-dark: #657c60;
@@ -149,8 +149,8 @@ $form-border-radius: $base-border-radius;
 $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
 
 // Map legend
-$opacity-federal: 0.5;
-$opacity-state: 0.25;
+$opacity-federal: 0.35;
+$opacity-state: 0.2;
 $legend-row-height: 1em;
 
 $greener-land-lightness-bump: lightness($green-land) * $opacity-state;

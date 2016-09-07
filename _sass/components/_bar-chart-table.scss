@@ -31,7 +31,7 @@
     }
 
     .bar {
-      background-color: transparent
+      background-color: transparent;
     }
 
     &[data-value^="-"] .bar {
@@ -83,7 +83,7 @@
     }
 
     .bar {
-      background: $mid-gray;
+      background: $gray-lighter;
       display: block;
       height: 1em;
 

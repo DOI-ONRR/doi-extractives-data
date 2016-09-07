@@ -164,7 +164,7 @@
           shapeHeight,
           shapePadding;
 
-          var colors = colorbrewer[scheme][steps];
+          var colors = ['#dcf4fc', '#b5e1f6', '#a1d4ed', '#79bbda', '#3d95bd', '#157bac', '#086996', '#005078', '#00354f']
           if (!colors) {
             return console.error(
               'bad # of steps (%d) for color scheme:', steps, scheme

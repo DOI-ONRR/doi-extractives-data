@@ -66,7 +66,8 @@ permalink: /how-it-works/
           <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
             <div class="landing-oil_gas">
               <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
-              <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-oil.svg" alt="Oil rig">
+              {% include svg/how-main-icon-oil.svg %}
+              <!-- <img src="{{ site.baseurl }}/img/how-it-works/cards/how-main-icon-oil.svg" alt="Oil rig"> -->
             </div>
           </a>
         </div>

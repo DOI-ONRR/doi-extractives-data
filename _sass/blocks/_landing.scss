@@ -61,6 +61,15 @@
     padding-right: 20px;
   }
 
+  svg {
+    float: right;
+    margin-right: 20px;
+    
+    path {
+      fill: $neutral-gray;
+    }
+  }
+
   p {
     float: left;
     width: 59%;

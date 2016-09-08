@@ -29,17 +29,13 @@
       {% endif %}
 
       <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
-        <p><strong>Wage and salary data</strong>, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies. 
+        <p>
+          Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies. 
           <br>
           <a href="{{site.baseurl}}/downloads/#jobs">
             <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
           </a>
         </p>
-        {% if jobs %}
-          <p>In {{ year }}, jobs in the extractive industries that paid a wage or salary made up {{ jobs_percent | percent }}% of statewide employment in {{ state_name }}.</p>
-        {% else %}
-          <p>In {{ year }}, there were no jobs in the extractive industries that paid a wage or salary in {{ state_name }}.</p>
-        {% endif %}
       </div>
     </div><!-- .chart-selector-wrapper -->
 
@@ -67,11 +63,13 @@
               <span class="eiti-bar-chart-y-value" data-format=",">
                 {{ jobs[year].jobs | intcomma }}
               </span>
-              jobs in extractive industries that paid a wage or salary in
-              {{ state_name }}.
+              jobs in the extractive industries in
+              {{ state_name }}, and they accounted for 
+              {{ jobs_percent | percent }}% 
+              of statewide employment.
             </span>
             <span class="caption-no-data" aria-hidden="true">
-              There is no data for {{ state_name }} in
+              There is no data about wage and salary jobs in the extractive industries in {{ state_name }} in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>
           </figcaption>
@@ -152,7 +150,7 @@
 
       <div class="chart-description {% unless self_employment_jobs %} no-selector{% endunless %}">
         <p>
-          <strong>Self-employment data</strong>, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
+          Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
           <br>
           <a href="{{site.baseurl}}/downloads/#jobs">
             <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 

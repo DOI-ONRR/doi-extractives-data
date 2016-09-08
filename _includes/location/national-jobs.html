@@ -59,6 +59,12 @@
 
   <h3>Self-employment jobs</h3>
 
+  {% assign restore_year = year %}
+  {% if site.data.years.self_employment %}
+    {% assign year_range = site.data.years.self_employment | jsonify %}
+    {% assign year = site.data.years.self_employment | last | to_s %}
+  {% endif %}
+
   <section class="chart-list" is="year-switcher-section">
     <div class="chart-selector-wrapper">
 
@@ -84,7 +90,7 @@
           In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
           there were
           <span class="eiti-bar-chart-y-value" data-format=",">
-            {{ self_employment_jobs[year].jobs | intcomma }}
+            {{ self_employment_jobs[year].jobs | default: 0 | intcomma }}
           </span>
           self-employed people working in the extractive industries
         </figcaption>
@@ -101,5 +107,7 @@
     </section><!-- /.chart-item -->
     {% endfor %}
   </section><!-- /.chart-list -->
+
+  {% assign year = restore_year %}
 
 </section>

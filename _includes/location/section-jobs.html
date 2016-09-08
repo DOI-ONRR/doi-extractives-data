@@ -126,8 +126,10 @@
 
   <h3 id="self-employment">Self-employment</h3>
 
+  {% assign restore_year = year %}
   {% if site.data.years.self_employment %}
     {% assign year_range = site.data.years.self_employment | jsonify %}
+    {% assign year = site.data.years.self_employment | last | to_s %}
   {% endif %}
 
   <section class="chart-list" is="year-switcher-section">
@@ -186,5 +188,7 @@
     </section><!-- /.chart-item -->
     {% endfor %}
   </section><!-- /.chart-list -->
+
+  {% assign year = restore_year %}
 
 </section>

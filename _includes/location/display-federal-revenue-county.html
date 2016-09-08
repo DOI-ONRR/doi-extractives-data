@@ -30,7 +30,7 @@
         <td colspan='3'
             data-year-values='{{ years_values | jsonify }}'
             data-sentence='{{ revenue_amount }}'
-            aria-hidden='true'><span data-value='{{ revenue_amount }}' data-format='$,'>${{ revenue_amount | intcomma }}</span> was collected from {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span></td>
+            aria-hidden='true'><span data-value='{{ revenue_amount }}' data-format='$,'>${{ revenue_amount | intcomma }}</span> was collected from {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span>.</td>
       </tr>
     {% endif %}
   {% endfor %}

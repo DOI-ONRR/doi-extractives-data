@@ -19,13 +19,25 @@
     .swatch {
       border: 1px solid $neutral-gray;
     }
+
+    .bar .bar {
+      background-color: $green-dark-chart-mid;
+    }
   }
 
   tbody > tr.selected {
     font-weight: $weight-book;
 
+    td[data-sentence] {
+      font-weight: $weight-light;
+    }
+
     &[data-year-values] {
       border-bottom: 0;
+    }
+
+    .bar .bar {
+      background-color: $green-dark;
     }
   }
 
@@ -123,7 +135,7 @@
       height: 1em;
 
       .bar {
-        background-color: $green-dark;
+        background-color: $gray-light;
       }
     }
 

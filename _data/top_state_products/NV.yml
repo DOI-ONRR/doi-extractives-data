@@ -355,47 +355,47 @@ revenue:
     - product: Geothermal
       name: null
       units: null
-      value: 1752025.5
+      value: 2103006.18
       rank: 2
-      percent: 12.96
+      percent: 16.57
     - product: Potassium
       name: null
       units: null
-      value: 11619.42
+      value: 3561.92
       rank: 3
-      percent: 0.18
+      percent: 0.09
     - product: Sand & Gravel
       name: null
       units: null
-      value: 2.4
+      value: -93567.6
       rank: 1
       percent: 100
   '2007':
     - product: Geothermal
       name: null
       units: null
-      value: 14779736.51
-      rank: 2
-      percent: 38.67
+      value: 3190954.29
+      rank: 3
+      percent: 16.79
     - product: Potassium
       name: null
       units: null
-      value: 1899
-      rank: 4
-      percent: 0.02
+      value: 11253
+      rank: 3
+      percent: 0.1
   '2008':
     - product: Geothermal
       name: null
       units: null
-      value: 31473048.08
-      rank: 1
-      percent: 70.93
+      value: 17419355.93
+      rank: 2
+      percent: 46.03
     - product: Potassium
       name: null
       units: null
-      value: 12626
-      rank: 3
-      percent: 0.1
+      value: 3346
+      rank: 4
+      percent: 0.03
     - product: Sand & Gravel
       name: null
       units: null
@@ -406,90 +406,84 @@ revenue:
     - product: Geothermal
       name: null
       units: null
-      value: 12701747.01
+      value: 29353678.72
       rank: 1
-      percent: 40.72
+      percent: 60.39
     - product: Potassium
       name: null
       units: null
-      value: -46.5
-      rank: 4
-      percent: null
+      value: 9280
+      rank: 3
+      percent: 0.03
   '2010':
     - product: Geothermal
       name: null
       units: null
-      value: 7805764.91
-      rank: 2
-      percent: 42.09
+      value: 16025641.63
+      rank: 1
+      percent: 59.51
     - product: Potassium
       name: null
       units: null
-      value: 18045
+      value: 7994.5
       rank: 3
-      percent: 0.09
+      percent: 0.04
   '2011':
     - product: Geothermal
       name: null
       units: null
-      value: 6536018.65
+      value: 6264330.82
       rank: 2
-      percent: 41.54
-  '2012':
-    - product: Geothermal
-      name: null
-      units: null
-      value: 4765715.29
-      rank: 2
-      percent: 31.55
+      percent: 38.73
     - product: Potassium
       name: null
       units: null
       value: 10004
       rank: 3
-      percent: 0.03
+      percent: 0.02
+  '2012':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 5589590.41
+      rank: 2
+      percent: 36.56
   '2013':
     - product: Geothermal
       name: null
       units: null
-      value: 4359452.85
+      value: 4366795.58
       rank: 2
-      percent: 28.79
+      percent: 29.11
     - product: Potassium
       name: null
       units: null
-      value: 10142.63
+      value: 20146.63
       rank: 3
-      percent: 0.05
+      percent: 0.08
   '2014':
     - product: Geothermal
       name: null
       units: null
-      value: 4683007.88
+      value: 4487266.44
       rank: 2
-      percent: 27.25
+      percent: 27.98
     - product: Potassium
       name: null
       units: null
-      value: -2301.95
+      value: -2331.14
       rank: 5
       percent: null
   '2015':
     - product: Geothermal
       name: null
       units: null
-      value: 4239099.84
+      value: 4366227.1
       rank: 2
-      percent: 30.25
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 2648521.15
-      rank: 4
-      percent: 3.16
+      percent: 28.09
     - product: Potassium
       name: null
       units: null
-      value: 15006
+      value: 7532.19
       rank: 3
-      percent: 0.1
+      percent: 0.05

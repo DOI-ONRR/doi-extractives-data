@@ -64,7 +64,6 @@ UPDATE offshore_revenue
 SET product = commodity
 WHERE product IS NULL;
 
-
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
 DROP TABLE IF EXISTS regional_revenue;
@@ -130,11 +129,21 @@ CREATE TABLE offshore_region_revenue_type AS
         year, region_id, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
+DELETE FROM offshore_region_revenue_type WHERE commodity = 'All';
+INSERT INTO offshore_region_revenue_type
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id, 'All', revenue_type, SUM(revenue)
+FROM offshore_region_revenue_type
+GROUP BY
+    year, region_id, revenue_type;
+
+DELETE FROM offshore_region_revenue_type WHERE revenue_type = 'All';
 INSERT INTO offshore_region_revenue_type
     (year, region_id, commodity, revenue_type, revenue)
 SELECT
     year, region_id, commodity, 'All', SUM(revenue)
-FROM offshore_region_revenue
+FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, commodity;
 

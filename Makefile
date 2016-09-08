@@ -233,10 +233,6 @@ data/revenue: \
 	data/state_revenues_by_type.yml \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
-
-data/offshore_revenue: \
-	data/offshore_revenue_areas \
-	data/offshore_revenue_regions.yml \
 	data/offshore_revenues_by_type.yml
 
 data/county_revenue:

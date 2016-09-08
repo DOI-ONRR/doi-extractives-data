@@ -182,7 +182,7 @@
               marks.unshift(0);
             }
             return marks;
-          }
+          };
 
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))

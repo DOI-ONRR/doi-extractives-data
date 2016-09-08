@@ -4,6 +4,7 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
+  var NO_DATA_FLAG = undefined;
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
@@ -101,7 +102,6 @@
           var root = d3.select(this);
 
           if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
-
             if (hasData.indexOf(true) < 0) {
               root.select('.legend-data')
                 .attr('aria-hidden', true);
@@ -174,9 +174,19 @@
 
           var marks = this.marks;
 
+          var stripWithheld = function(marks) {
+            marks = marks.filter(function(mark) {
+              return mark !== WITHHELD_FLAG && mark !== NO_DATA_FLAG;
+            });
+            if (!marks[1]) {
+              marks.unshift(0);
+            }
+            return marks;
+          }
+
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))
-            : d3.extent(marks.data());
+            : d3.extent(stripWithheld(marks.data()));
 
           if (domain[0] > 0) {
             domain[0] = 0;

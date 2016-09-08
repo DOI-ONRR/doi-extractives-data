@@ -21,7 +21,7 @@
 
     {% endif %}
     <p class="chart-description{% unless gdp %} no-selector{% endunless %}">
-      GDP data comes from the U.S. Bureau of Economic Analysis.
+      Data about each state's gross domestic product (GDP) comes from the U.S. Bureau of Economic Analysis.
       <br>
       <a href="{{site.baseurl}}/downloads/#gdp">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -54,16 +54,11 @@
           </eiti-bar-chart>
           <figcaption id="gdp-figures-{{ _metric }}">
             <span class="caption-data">
-              Extractive industries accounted for
-              <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">
-                {% if _metric == 'dollars' %}
-                  ${{ gdp[year].dollars | intcomma }}
-                {% elsif _metric == 'percent' %}
-                  {{ gdp[year].percent | percent }}%
-                {% endif %}
-              </span>
-              of {{ state_name }}'s GDP in
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              In <span class="eiti-bar-chart-x-value">{{ year }}</span>, 
+              extractive industries accounted for
+              <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or 
+              {{ gdp[year].percent | percent }}% 
+              of {{ state_name }}&rsquo;s GDP.
             </span>
             <span class="caption-no-data" aria-hidden="true">
                 There is no data for {{ state_name }} in

@@ -6,7 +6,7 @@
   
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3>Production in the entire state of {{ state_name }}</h3>
+  <h3>Energy production in the entire state of {{ state_name }}</h3>
 
   <div class="chart-selector-wrapper">
 
@@ -15,7 +15,7 @@
     {% endif %}
 
     <p class="chart-description{% unless all_products %} no-selector{% endunless %}">
-      The U.S. Energy Information Administration collects data about <strong>energy-related natural resources</strong> produced on federal, state, and privately owned land in {{ state_name }}. 
+      The U.S. Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned land. 
         <br>
         <a href="{{site.baseurl}}/downloads/#production-all">
           <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation

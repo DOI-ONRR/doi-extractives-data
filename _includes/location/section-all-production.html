@@ -58,7 +58,7 @@
           </span>
           <span class="caption-no-data" aria-hidden="true">
             There is no data about production of 
-            {{ product_name | downcase }}   
+            {{ product_name | downcase | suffix: units_suffix }}   
             in {{ state_name }} in 
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>

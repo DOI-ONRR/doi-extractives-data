@@ -18,7 +18,7 @@ var args = options._;
 var fs = require('fs');
 var tito = require('tito').formats;
 var thru = require('through2').obj;
-var parse = require('../../../lib/parse');
+var parse = require('../../lib/parse');
 
 var input = args.length
   ? fs.createReadStream(args[0])

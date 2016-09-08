@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+/* jshint node: true */
+'use strict';
 var options = require('yargs')
   .option('user', {
     desc: 'your BEA API user ID'
@@ -19,15 +21,12 @@ var options = require('yargs')
 var tito = require('tito').formats;
 var request = require('request');
 var qs = require('querystring');
-var _url = require('url');
 var util = require('../../lib/util');
-var thru = require('through2').obj;
 var fs = require('fs');
 var async = require('async');
 var extend = require('extend');
 var streamify = require('stream-array');
 
-var ONE_MILLION = 1e6;
 var years = util.range(options.year);
 
 var lineCodes = {
@@ -36,8 +35,10 @@ var lineCodes = {
 };
 
 var tables = {
-  total:    'SA25N', // "Total Full-Time and Part-Time Employment by NAICS Industry"
-  wageSalary: 'SA27N', // "Full-Time and Part-Time Wage and Salary Employment by NAICS Industry"
+  // "Total Full-Time and Part-Time Employment by NAICS Industry"
+  total:    'SA25N',
+  // "Full-Time and Part-Time Wage and Salary Employment by NAICS Industry"
+  wageSalary: 'SA27N',
 };
 
 var params = {
@@ -88,7 +89,9 @@ async.mapSeries([
 
   var rows = [];
   var done = function(error) {
-    if (error) console.warn('error?', error, 'for', p);
+    if (error) {
+      console.warn('error?', error, 'for', p);
+    }
     next(null, rows);
   };
 
@@ -104,7 +107,9 @@ async.mapSeries([
     })
     .on('end', done);
 }, function(error, sets) {
-  if (error) return console.error('error:', error);
+  if (error) {
+    return console.error('error:', error);
+  }
 
   console.warn('got %d sets', sets.length);
 
@@ -175,10 +180,6 @@ function mapRow(row) {
     Year:   row.TimePeriod,
     Value:  row.DataValue
   };
-}
-
-function noop(error) {
-  console.warn('error?', error);
 }
 
 function coerceNumber(str) {

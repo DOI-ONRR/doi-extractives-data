@@ -174,11 +174,17 @@
 
           var marks = this.marks;
 
-          var stripWithheld = function(marks) {
+          // Accepts an array of marks
+          // Returns an array of marks without 'Withheld'
+          // or undefined values
+          var cleanseMarks = function(marks) {
             marks = marks.filter(function(mark) {
               return mark !== WITHHELD_FLAG && mark !== NO_DATA_FLAG;
             });
-            if (!marks[1]) {
+            // If there is only one mark in the array,
+            // then insert an additional value.
+            // Used because the cleansed marks are used to determine the domain
+            if (marks.length < 2) {
               marks.unshift(0);
             }
             return marks;
@@ -186,7 +192,7 @@
 
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))
-            : d3.extent(stripWithheld(marks.data()));
+            : d3.extent(cleanseMarks(marks.data()));
 
           if (domain[0] > 0) {
             domain[0] = 0;

@@ -6,31 +6,12 @@ SHELL = bash
 # force TopoJSON to use spherical projections
 topo_options ?= --spherical --bbox
 
-# revenue-related files
-REVENUE_FILES = \
-	company/revenue
-
-# a list of all of the individual files to build.
+# a list of all of the individual targets to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
-FILES = \
-	$(REVENUE_FILES) \
-	$(EXPORT_FILES) \
-	$(GDP_FILES) \
-	geo svg
+FILES = geo svg
 
 all: $(FILES)
-
-revenue: $(REVENUE_FILES)
-
-company/revenue:
-	mkdir -p $@
-	for file in company/revenue/*.tsv; do \
-		bin/parse-company-revenue.js \
-			--if tsv \
-			--of tsv \
-			$$file > "$@/$${file##*/}"; \
-	done
 
 geo: \
 	geo/us-topology.json \
@@ -116,6 +97,5 @@ distclean: clean
 	cd geo/input/offshore && make distclean
 
 .PHONY: \
-	revenue \
 	geo \
 	svg

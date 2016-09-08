@@ -312,7 +312,7 @@
 
         if (childCells.length) {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
-          childCells.forEach(function(childSpan) {
+          [].forEach.call(childCells, function(childSpan) {
             var childBar = document.createElement('div');
             childBar.className = 'bar';
             var newBar = barExtent.appendChild(childBar);

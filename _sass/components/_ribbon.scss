@@ -136,6 +136,10 @@
   .ribbon-card {
     padding-top: $base-padding-large;
     position: relative;
+
+    &.ribbon-card-home {
+      padding-top: $base-padding-extra;
+    }
   }
 
   .ribbon-hero {
@@ -143,6 +147,11 @@
     padding-left: $base-padding;
     padding-right: $base-padding;
     padding-top: $base-padding-large;
+
+    &.ribbon-hero-home {
+      padding-bottom: $base-padding-jumbo;
+      padding-top: $base-padding-extra;
+    }
 
     &.ribbon-hero-column {
       align-self: flex-start;

@@ -1,5 +1,14 @@
 {% assign export_commodities = site.data.national_exports[state_id].commodities %}
-{% assign year_range = site.data.years.exports | default: site.data.years.default | jsonify %}
+
+{% assign restore_year = year %}
+{% assign year_range = site.data.years.exports %}
+{% if year_range %}
+  {% assign year = year_range | last | to_s %}
+{% else %}
+  {% assign year_range = site.data.years.default %}
+{% endif %}
+{% assign year_list = year_range | to_list %}
+{% assign year_range = year_range | jsonify %}
 
 <section id="exports" is="year-switcher-section" class="economic exports">
 
@@ -62,3 +71,5 @@
   </a>
 
 </section>
+
+{% assign year = restore_year %}

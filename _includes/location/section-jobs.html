@@ -44,98 +44,104 @@
     </div><!-- .chart-selector-wrapper -->
 
     {% if jobs %}
-      <div class="row-container">
+    <div class="row-container">
 
-        <div class="chart-container">
+      <div class="chart-container">
 
+        {% assign _metrics = 'count' | split: ' ' %}
+        {% for _metric in _metrics %}
+        <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
 
-          {% assign _metrics = 'count' | split: ' ' %}
-          {% for _metric in _metrics %}
-          <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
-
-          <figure class="chart">
-            <eiti-bar-chart
-              aria-controls="jobs-figures-{{ _metric }}"
-              data='{{ jobs | map_hash: _metric | jsonify }}'
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="jobs">
-            </eiti-bar-chart>
-            <figcaption id="jobs-figures-{{ _metric }}">
-              <span class="caption-data">
-                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-                there were
-                <span class="eiti-bar-chart-y-value" data-format=",">
-                  {{ jobs[year].jobs | intcomma }}
-                </span>
-                jobs in extractive industries that paid a wage or salary in
-                {{ state_name }}.
+        <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="jobs-figures-{{ _metric }}"
+            data='{{ jobs | map_hash: _metric | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="jobs">
+          </eiti-bar-chart>
+          <figcaption id="jobs-figures-{{ _metric }}">
+            <span class="caption-data">
+              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+              there were
+              <span class="eiti-bar-chart-y-value" data-format=",">
+                {{ jobs[year].jobs | intcomma }}
               </span>
-              <span class="caption-no-data" aria-hidden="true">
-                There is no data for {{ state_name }} in
-                <span class="eiti-bar-chart-x-value">{{ year }}</span>.
-              </span>
-            </figcaption>
-          </figure><!-- /.chart -->
+              jobs in extractive industries that paid a wage or salary in
+              {{ state_name }}.
+            </span>
+            <span class="caption-no-data" aria-hidden="true">
+              There is no data for {{ state_name }} in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+            </span>
+          </figcaption>
+        </figure><!-- /.chart -->
 
-          {% endfor %}
+        {% endfor %}
 
-        </div><!-- /.chart-container -->
+      </div><!-- /.chart-container -->
 
-        {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
+      {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
 
-        <div class="map-container">
+      <div class="map-container">
 
-          <h4 class="chart-title">
-            {{ locality_name }} wage and salary jobs
-          </h4>
+        <h4 class="chart-title">
+          {{ locality_name }} wage and salary jobs
+        </h4>
 
-          <figure is="eiti-data-map-table" class="container">
-            <eiti-data-map color-scheme="Blues" steps="{{ steps }}">
-              {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+        <figure is="eiti-data-map-table" class="container">
+          <eiti-data-map color-scheme="Blues" steps="{{ steps }}">
+            {% capture value_key %}employment.{{ year }}.count{% endcapture %}
 
-              {% capture caption %}{{ locality_name }} employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}
+            {% capture caption %}{{ locality_name }} employment in extractive industries <span class="legend-units">(jobs, <span data-year="{{ year }}">{{ year }}</span>)</span>{% endcapture %}
 
-              {%
-                include county-map.html
-                state=state_id
-                counties=county_jobs
-                value=value_key
-                years="employment"
-                years_property="count"
-                steps=steps
-                inherit_width=true
-                caption=caption
-                toggle=toggle
-              %}
-            </eiti-data-map>
-            <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
-              {%
-                include location/display-jobs-county.html
-                year=year
-                values=county_jobs
-                percent=true
-                caption=caption
-              %}
-            </div><!-- /.table-container -->
-          </figure>
+            {%
+              include county-map.html
+              state=state_id
+              counties=county_jobs
+              value=value_key
+              years="employment"
+              years_property="count"
+              steps=steps
+              inherit_width=true
+              caption=caption
+              toggle=toggle
+            %}
+          </eiti-data-map>
+          <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+            {%
+              include location/display-jobs-county.html
+              year=year
+              values=county_jobs
+              percent=true
+              caption=caption
+            %}
+          </div><!-- /.table-container -->
+        </figure>
 
-        </div><!-- /.map-container -->
-      </div><!-- /.row-container -->
+      </div><!-- /.map-container -->
+    </div><!-- /.row-container -->
     {% endif %}<!-- if jobs -->
+
   </section><!-- /.chart-list -->
 
   <h3 id="self-employment">Self-employment</h3>
+
+  {% assign restore_year = year %}
+  {% if site.data.years.self_employment %}
+    {% assign year_range = site.data.years.self_employment | jsonify %}
+    {% assign year = site.data.years.self_employment | last | to_s %}
+  {% endif %}
 
   <section class="chart-list" is="year-switcher-section">
     <div class="chart-selector-wrapper">
 
       {% if self_employment_jobs %}
-        {% assign empty_years = '' | split:'' %}
+        {% assign empty_years = '' | split: '' %}
         {% for y in year_list %}
           {% assign s_y = y | to_s %}
             {% unless self_employment_jobs[s_y].size %}
-              {% assign empty_years = empty_years | push:s_y %}
+              {% assign empty_years = empty_years | push: s_y %}
             {% endunless %}
         {% endfor %}
 
@@ -183,5 +189,7 @@
     </section><!-- /.chart-item -->
     {% endfor %}
   </section><!-- /.chart-list -->
+
+  {% assign year = restore_year %}
 
 </section>

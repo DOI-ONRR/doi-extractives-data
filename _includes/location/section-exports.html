@@ -1,8 +1,17 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 {% assign exports_total = exports.All[include.year].dollars %}
 {% assign exports_commodities_num = exports | size %}
-{% assign year_range = site.data.years.exports | default: site.data.years.default | jsonify %}
+
+{% assign restore_year = year %}
+{% assign year_range = site.data.years.exports %}
+{% if year_range %}
+  {% assign year = year_range | last | to_s %}
+{% else %}
+  {% assign year_range = site.data.years.default %}
+{% endif %}
 {% assign year_list = year_range | to_list %}
+{% assign year_range = year_range | jsonify %}
+
 {% assign empty_years = '' | split: '' %}
 
 <section id="exports" is="year-switcher-section" class="economic exports">
@@ -87,3 +96,5 @@
   </div><!-- /.chart-list -->
 
 </section>
+
+{% assign year = restore_year %}

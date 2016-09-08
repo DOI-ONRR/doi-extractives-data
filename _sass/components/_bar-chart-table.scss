@@ -15,6 +15,10 @@
   tbody > tr:focus,
   tbody > tr.selected {
     background-color: $gray-pale;
+
+    .swatch {
+      border: 1px solid $neutral-gray;
+    }
   }
 
   tbody > tr.selected {
@@ -51,18 +55,17 @@
 
   [data-sentence] {
     font-weight: $weight-book;
-    padding-left: calc(#{$standard-padding-lite} + 5px + 1rem);
+    padding-left: calc(#{$standard-padding-lite} + 5px + 0.75rem);
     padding-top: 0;
   }
 
   .swatch {
     background: $neutral-gray;
-    border: 1px solid $neutral-gray;
     display: inline-block;
-    height: 1rem;
+    height: 0.75rem;
     margin-right: $standard-padding-lite;
-    vertical-align: text-bottom;
-    width: 1rem;
+    vertical-align: baseline;
+    width: 0.75rem;
   }
 
   .numeric,

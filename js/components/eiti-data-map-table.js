@@ -55,12 +55,18 @@
 
     var mouseoverMap = function () {
       var fips = this.getAttribute('data-fips');
-
       highlightCounty(fips, 'mouseover');
+    }
+
+    var mouseleaveMap = function () {
+      var fips = this.getAttribute('data-fips');
+      highlightCounty(fips, 'mouseleave');
     }
 
     chartRows.on('click.countyTable', toggleMap);
     chartRows.on('mouseover.countyTable', mouseoverMap);
+    chartRows.on('mouseleave.countyTable', mouseleaveMap);
+
     counties.on('click.county', toggleTable);
   };
 

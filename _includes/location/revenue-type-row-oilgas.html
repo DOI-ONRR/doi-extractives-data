@@ -8,10 +8,8 @@
     | plus: revenue_types.Gas.All[include.year]
     | plus: revenue_types.NGL.All[include.year]
   %}
-  <th scope="row" rowspan="2" data-value="{{ total }}">
-    <a href="#revenue-{{ commodity_name | slugify }}">
-      <strong>Oil &amp; Gas </strong><br>
-    </a>
+  <th scope="row" rowspan="2" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}">
+    <strong>Oil &amp; Gas </strong><br>
     <strong>${{ total | intcomma }}</strong>
   </th>
   <td rowspan="2" data-value="{{

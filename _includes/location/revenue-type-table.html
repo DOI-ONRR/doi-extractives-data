@@ -11,7 +11,6 @@
 {% endif %}
 
 {% assign commodity_groups = site.data.commodities.groups %}
-{% assign commodity_names = site.data.commodity_names %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}
 {% assign minerals_list = commodity_groups.minerals.commodities %}
@@ -162,14 +161,12 @@
     {% if other_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Other Products
-        <icon class="icon-padded icon-copper"></icon>
       </td></tr>
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}
 
         {% if commodity_name == 'Other Products' %}
-          {% assign commodity_name = commodity_name | lookup: commodity_names %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
           </tbody>

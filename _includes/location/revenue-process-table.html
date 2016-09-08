@@ -271,9 +271,7 @@
         {% if commodity_name == 'Other Products' %}
           <tr class="table-arrow_box-category"><td colspan="5">
             Other Products
-            <icon class="icon-padded icon-copper"></icon>
           </td></tr>
-          {% assign commodity_name = commodity_name | lookup: commodity_names %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
             <tr>

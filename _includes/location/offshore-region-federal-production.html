@@ -1,6 +1,8 @@
 {% assign region_name = include.region_name | default: region_name %}
 {% assign region_id = include.region_id | default: region_id %}
 {% assign region_name_caps = region_name | capitalize %}
+{% assign steps = 5 %}
+
 {% assign offshore_region_federal_products = site.data.offshore_federal_production_regions[region_name].products %}
 {% assign federal_product_dir = site.data.offshore_federal_production_areas %}
 {% assign federal_products_num = offshore_region_federal_products | size %}
@@ -125,6 +127,7 @@
                   year=year
                   values=offshore_area_federal_production
                   product_ref=product_ref
+                  product_name=product_name
                   long_units=long_units
                   caption=caption
                   sentence=sentence

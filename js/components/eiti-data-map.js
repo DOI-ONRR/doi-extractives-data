@@ -4,6 +4,7 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
+  var NO_DATA_FLAG = undefined;
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
@@ -101,17 +102,20 @@
           var root = d3.select(this);
 
           if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
-
             if (hasData.indexOf(true) < 0) {
               root.select('.legend-data')
                 .attr('aria-hidden', true);
               root.select('.legend-withheld')
                 .attr('aria-hidden', false);
+              root.select('.legend-svg')
+                .attr('aria-hidden', true);
             } else {
               root.select('.legend-data')
                 .attr('aria-hidden', false);
               root.select('.legend-withheld')
                 .attr('aria-hidden', true);
+              root.select('.legend-svg')
+                .attr('aria-hidden', false);
             }
 
             root.select('.legend-no-data')
@@ -127,6 +131,8 @@
               .attr('aria-hidden', true);
             root.select('.legend-no-data')
               .attr('aria-hidden', false);
+            root.select('.legend-svg')
+                .attr('aria-hidden', true);
             root.select('.details-container')
               .attr('aria-hidden', true)
               .select('button')
@@ -144,12 +150,7 @@
             : eiti.format.si;
 
           var settings = {
-            horizontal : {
-              width: 50,
-              height: 12,
-              padding: 6
-            },
-            narrowHorizontal: {
+            horizontal: {
               width: 70,
               height: 12,
               padding: 10
@@ -173,9 +174,25 @@
 
           var marks = this.marks;
 
+          // Accepts an array of marks
+          // Returns an array of marks without 'Withheld'
+          // or undefined values
+          var cleanseMarks = function(marks) {
+            marks = marks.filter(function(mark) {
+              return mark !== WITHHELD_FLAG && mark !== NO_DATA_FLAG;
+            });
+            // If there is only one mark in the array,
+            // then insert an additional value.
+            // Used because the cleansed marks are used to determine the domain
+            if (marks.length < 2) {
+              marks.unshift(0);
+            }
+            return marks;
+          };
+
           var domain = this.hasAttribute('domain')
             ? JSON.parse(this.getAttribute('domain'))
-            : d3.extent(marks.data());
+            : d3.extent(cleanseMarks(marks.data()));
 
           if (domain[0] > 0) {
             domain[0] = 0;
@@ -191,47 +208,15 @@
 
           marks.attr('fill', scale);
 
-
           this.scale = scale;
-
-          // start map legend
-          function uniq(value, index, self) {
-            return self.indexOf(value) === index;
-          }
-
-          function getUnique(data, steps, domain) {
-            var getSteps = d3.scale[type]()
-              .domain(domain)
-              .range(steps);
-
-            var values = [];
-            data.forEach(function(d) {
-              values.push(getSteps(d));
-            });
-
-            return values.filter(uniq);
-          }
-
-
-          var _steps = d3.range(0, 9)
-
-          // find which steps are represented in the map
-          var uniqueSteps = getUnique(marks.data(), _steps, domain);
-          var narrowHorizontal = uniqueSteps.length < 6;
 
           var orient = this.isWideView
             ? 'horizontal'
             : 'vertical';
 
-          if (narrowHorizontal && orient === 'horizontal') {
-            shapeWidth = settings.narrowHorizontal.width;
-            shapeHeight = settings.narrowHorizontal.height;
-            shapePadding = settings.narrowHorizontal.padding;
-          } else {
-            shapeWidth = settings[orient].width;
-            shapeHeight = settings[orient].height;
-            shapePadding = settings[orient].padding;
-          }
+          shapeWidth = settings[orient].width;
+          shapeHeight = settings[orient].height;
+          shapePadding = settings[orient].padding;
 
           var svgLegend = d3.select(this)
             .select('.legend-svg')
@@ -259,38 +244,6 @@
 
             legendScale.call(legend);
 
-            // start consolidate (translate) visible cells
-            var cells = svgLegend.selectAll('.cell');
-            var cellHeight = legend.shapeHeight() + legend.shapePadding();
-            var cellWidth = legend.shapeWidth() + legend.shapePadding();
-            var count = 0;
-
-            var that = this;
-            cells.each(function(cell, i) {
-              var present = uniqueSteps.indexOf(i) > -1;
-
-              if (!present) {
-                // hide cells swatches that aren't in the map
-                cells[0][i].setAttribute('aria-hidden', true);
-                count++;
-              } else  {
-                if (that.isWideView) {
-                  var translateWidth = (i * cellWidth) - (count * cellWidth);
-                  cells[0][i].setAttribute('transform',
-                    'translate(' + translateWidth + ', 0)');
-                  cells[0][i].setAttribute('aria-hidden', false);
-                } else {
-                  // trim spacing between swatches that are visible
-                  var translateHeight = (i * cellHeight) - (count * cellHeight);
-                  cells[0][i].setAttribute('transform',
-                    'translate(0,' + translateHeight + ')');
-                  cells[0][i].setAttribute('aria-hidden', false);
-                }
-
-              }
-            });
-            // end consolidation
-            // end map legend
           } else {
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');
           }

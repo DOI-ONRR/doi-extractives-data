@@ -32,10 +32,22 @@
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
     <g class="states features">
+      {% if page.neighbors %}
+        {% for neighbor in page.neighbors %}
+      <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+        {% endfor %}
+      {% else %}
       <use xlink:href="{{ states_svg }}#states"></use>
+      {% endif %}
     </g>
     <g class="states mesh">
+      {% if page.neighbors %}
+        {% for neighbor in page.neighbors %}
+      <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+        {% endfor %}
+      {% else %}
       <use xlink:href="{{ states_svg }}#states-mesh"></use>
+      {% endif %}
     </g>
     <g class="counties features">
       <use xlink:href="{{ state_svg }}#counties"></use>
@@ -83,7 +95,7 @@
         aria-controls="{{ include.toggle }}">
         <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
-          {{ include.toggle_text}}
+          {{ include.toggle_text }}
         {% else %}Show table{% endif %}
       </button>
     </h4>
@@ -96,11 +108,11 @@
       {{ include.caption }}
     </figcaption>
     <figcaption class="legend-no-data" aria-hidden="true">
-      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
+      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year }}</span>.
       Select a new year to populate the map.
     </figcaption>
     <figcaption class="legend-withheld" aria-hidden="true">
-      County-level data for <span data-year="{{ year }}" >{{ year}}</span> is withheld.
+      County-level data for <span data-year="{{ year }}" >{{ year }}</span> is withheld.
     </figcaption>
   {% endif %}
 
@@ -112,7 +124,7 @@
         aria-controls="{{ include.toggle }}">
         <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
-          {{ include.toggle_text}}
+          {{ include.toggle_text }}
         {% else %}Show table{% endif %}
       </button>
     </h4>

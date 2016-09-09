@@ -1,4 +1,6 @@
+/* eslint-env browser: true */
 (function(exports) {
+  'use strict';
 
   var symbols = {
     collapsed: '__collapsedText',
@@ -27,22 +29,13 @@
         this.removeEventListener('click', toggle);
       }},
 
-      attributeChangedCallback: {value: function(attr, prev, value) {
+      attributeChangedCallback: {value: function(attr) {
         switch (attr) {
           case EXPANDED:
             update.call(this);
             break;
         }
       }},
-
-      controlAttribute: {
-        get: function() {
-          return this[attrControl] || HIDDEN;
-        },
-        set: function(attr) {
-          this[attrControl] = attr;
-        }
-      },
 
       collapsedText: {
         get: function() {
@@ -118,17 +111,10 @@
     }
 
     var id = this.getAttribute(CONTROLS);
-
-
     var target = document.getElementById(id);
-    var expanded = this.expanded;
-
     if (target) {
-      expanded = !target.getAttribute(HIDDEN);
       target.setAttribute(HIDDEN, !this.expanded);
     }
-
-
   }
 
   module.exports = exports.EITIToggle;

@@ -1,0 +1,7 @@
+env:
+  node: false
+
+globals:
+  $: true
+  d3: true
+  eiti: true

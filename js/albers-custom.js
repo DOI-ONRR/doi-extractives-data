@@ -160,8 +160,10 @@
     };
 
     var size = [960, 670];
-    albersUsa.size = function(_) {
-      if (arguments.length) throw 'The size of this projection is fixed.';
+    albersUsa.size = function() {
+      if (arguments.length) {
+        throw new Error('The size of this projection is fixed.');
+      }
       return size.slice();
     };
 

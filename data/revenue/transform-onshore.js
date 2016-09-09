@@ -1,3 +1,4 @@
+/* jshint node: true */
 var parse = require('../../lib/parse');
 
 module.exports = {

@@ -237,12 +237,10 @@
       return d3.descending(Math.abs(a.total), Math.abs(b.total));
     });
 
-    var extent = d3.extent(companies, getter('total'));
-
-    items.call(renderSubtypes, getter('types'), extent);
+    items.call(renderSubtypes, getter('types'));
   }
 
-  function renderSubtypes(selection, types, extent) {
+  function renderSubtypes(selection, types) {
 
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
@@ -253,7 +251,7 @@
       .call(setupRevenueItem);
 
     items
-      .call(updateRevenueItem, extent)
+      .call(updateRevenueItem)
       .sort(function(a, b) {
         return d3.descending(Math.abs(a.value), Math.abs(b.value));
       });
@@ -301,7 +299,7 @@
       .attr('class', 'variance');
   }
 
-  function updateRevenueItem(selection, extent) {
+  function updateRevenueItem(selection) {
     selection.select('.name')
       .text(function(d) {
         return varianceKey[d.name].name;

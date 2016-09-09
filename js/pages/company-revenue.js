@@ -3,7 +3,6 @@
   // 'use strict';
 
   var root = d3.select('#companies');
-  var filterToggle = root.select('button.toggle-filters');
   var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
 

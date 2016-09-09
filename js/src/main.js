@@ -36,9 +36,11 @@
   exports.Glossary = require('../components/glossary');
   exports.Accordion = require('../components/accordion');
 
-  $(function () {
-    var glossary = new exports.Glossary(),
-      accordion = new exports.Accordion();
+  exports.$(function () {
+    /* eslint-disable no-unused-vars */
+    var glossary = new exports.Glossary();
+    var accordion = new exports.Accordion();
+    /* eslint-enable no-unused-vars */
   });
 
   var svg4everybody = require('svg4everybody');

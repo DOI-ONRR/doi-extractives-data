@@ -1,8 +1,3 @@
-(function(exports) {
-  'use strict';
+'use strict';
 
-  require('./../components/aria-tabs.js');
-
-})(window);
-
-
+require('./../components/aria-tabs.js');

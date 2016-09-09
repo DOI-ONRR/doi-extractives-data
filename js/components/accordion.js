@@ -56,7 +56,7 @@
      * @return void
      */
     toggleAccordion: function (e) {
-      var e = e || window.event;
+      e = e || window.event; // XXX what is this??? - Shawn
       var target = e.currentTarget || e.target || e.srcElement;
 
       var accordionItem = this.findParentNode('accordion-item', target),

@@ -51,13 +51,23 @@ GROUP BY
 
 -- create "all commodity" rows by offshore region
 DELETE FROM offshore_revenue WHERE commodity = 'All';
-INSERT INTO offshore_revenue
-    (year, region, planning_area, offshore_area, protraction, commodity, product, revenue, revenue_type)
+INSERT INTO offshore_revenue (
+    year, region, planning_area,
+    offshore_area, protraction,
+    commodity, product, revenue_type,
+    revenue
+)
 SELECT
-    year, region, planning_area, offshore_area, protraction, 'All', 'All', SUM(revenue), revenue_type
+    year, region, planning_area,
+    offshore_area, protraction,
+    'All' AS commodity,
+    'All' AS product,
+    revenue_type,
+    SUM(revenue) AS revenue
 FROM offshore_revenue
 GROUP BY
-    year, region, planning_area, offshore_area, protraction, revenue_type;
+    year, region, planning_area,
+    offshore_area, protraction, revenue_type;
 
 -- fill in the product field for rows without it
 UPDATE offshore_revenue
@@ -70,7 +80,8 @@ DROP TABLE IF EXISTS regional_revenue;
 CREATE TABLE regional_revenue AS
     SELECT
         year, commodity,
-        state AS region_id, 'state' AS region_type,
+        state AS region_id,
+        'state' AS region_type,
         SUM(revenue) AS revenue
     FROM state_revenue
     GROUP BY
@@ -98,8 +109,8 @@ CREATE TABLE offshore_area_revenue AS
         area.region AS region_id,
         area.id AS area_id,
         area.name AS area_name,
-        SUM(revenue) AS revenue,
-        revenue_type
+        revenue_type,
+        SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
     INNER JOIN offshore_planning_areas AS area
     ON
@@ -111,7 +122,8 @@ CREATE TABLE offshore_area_revenue AS
 DROP TABLE IF EXISTS offshore_region_revenue;
 CREATE TABLE offshore_region_revenue AS
     SELECT
-        year, region_id, SUM(revenue) AS revenue, commodity, revenue_type
+        year, region_id, commodity, revenue_type,
+        SUM(revenue) AS revenue
     FROM offshore_area_revenue
     GROUP BY
         year, region_id, commodity
@@ -133,7 +145,8 @@ DELETE FROM offshore_region_revenue_type WHERE commodity = 'All';
 INSERT INTO offshore_region_revenue_type
     (year, region_id, commodity, revenue_type, revenue)
 SELECT
-    year, region_id, 'All', revenue_type, SUM(revenue)
+    year, region_id, 'All', revenue_type,
+    SUM(revenue) AS revenue
 FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, revenue_type;
@@ -142,7 +155,8 @@ DELETE FROM offshore_region_revenue_type WHERE revenue_type = 'All';
 INSERT INTO offshore_region_revenue_type
     (year, region_id, commodity, revenue_type, revenue)
 SELECT
-    year, region_id, commodity, 'All', SUM(revenue)
+    year, region_id, commodity, 'All',
+    SUM(revenue) AS revenue
 FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, commodity;
@@ -153,7 +167,8 @@ GROUP BY
 DROP TABLE IF EXISTS national_revenue;
 CREATE TABLE national_revenue AS
     SELECT
-        year, commodity, SUM(revenue) AS revenue
+        year, commodity,
+        SUM(revenue) AS revenue
     FROM regional_revenue
     GROUP BY
         year, commodity;
@@ -163,7 +178,8 @@ CREATE TABLE national_revenue AS
 DROP TABLE IF EXISTS national_revenue_type;
 CREATE TABLE national_revenue_type AS
     SELECT
-        year, commodity, SUM(revenue) AS revenue, revenue_type
+        year, commodity, revenue_type,
+        SUM(revenue) AS revenue
     FROM county_revenue
     GROUP BY
         year, commodity, revenue_type;
@@ -172,7 +188,9 @@ CREATE TABLE national_revenue_type AS
 INSERT INTO national_revenue_type
     (year, commodity, revenue_type, revenue)
 SELECT
-    year, commodity, 'All', SUM(revenue)
+    year, commodity,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
     year, commodity;

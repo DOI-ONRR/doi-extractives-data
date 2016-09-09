@@ -126,7 +126,7 @@ svg.ownership {
 svg.case_studies {
   .feature.offshore-area use,
   .feature.state use {
-    fill: $mid-blue;
+    fill: $gray;
   }
 
   &.no-outlines {
@@ -136,7 +136,7 @@ svg.case_studies {
     }
 
     .states.features use {
-      fill: $mid-blue;
+      fill: $gray;
     }
   }
 }

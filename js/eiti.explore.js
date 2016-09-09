@@ -1,3 +1,4 @@
+/* global d3, eiti, Immutable */
 (function(eiti) {
   'use strict';
 
@@ -18,7 +19,6 @@
 
     var state = new Immutable.Map();
     var updated = false;
-    var mutating = false;
 
     var manager = {};
     var dispatch = d3.dispatch('change');
@@ -107,16 +107,13 @@
 
     // mutate the state and update if the state has changed
     function mutateState(fn) {
-      mutating = true;
       var previous = state;
       state = fn(state) || new Immutable.Map();
       if (!Immutable.is(state, previous)) {
         state = validateState(state, previous, updated);
         update(state, previous);
-        mutating = false;
         return true;
       }
-      mutating = false;
       return false;
     }
 
@@ -149,7 +146,7 @@
       writing = false;
     };
 
-    function change(e) { // jshint ignore:line
+    function change(e) { // eslint-disable-line no-unused-vars
       if (writing) {
         return;
       }

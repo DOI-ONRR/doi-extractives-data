@@ -14,7 +14,21 @@
 
     var chartRows = chartTables.selectAll('tr[data-fips]')
 
+    var highlightCounty = function(fips, event) {
+      event = event || 'selected';
+      counties.classed('mouseover', false);
+      counties.classed(event, false);
+
+      counties.each(function(d, i){
+        var county = d3.select(this);
+        if (+county.attr('data-fips') === +fips) {
+          county.classed(event, true);
+        }
+      });
+    };
+
     var toggleTable = function(d, i) {
+
       var countyName = this.querySelector('title').textContent;
       var countyFIPS = this.getAttribute('data-fips');
 
@@ -29,17 +43,6 @@
       })
     };
 
-    var highlightCounty = function(fips) {
-      counties.classed('selected', false);
-
-      counties.each(function(d, i){
-        var county = d3.select(this);
-        if (+county.attr('data-fips') === +fips) {
-          county.classed('selected', true);
-        }
-      });
-    }
-
     var toggleMap = function() {
       var fips = this.getAttribute('data-fips');
 
@@ -48,9 +51,22 @@
       chartTables.each(function(){
         this.show(fips);
       });
-    }
+    };
+
+    var mouseoverMap = function () {
+      var fips = this.getAttribute('data-fips');
+      highlightCounty(fips, 'mouseover');
+    };
+
+    var mouseleaveMap = function () {
+      var fips = this.getAttribute('data-fips');
+      highlightCounty(fips, 'mouseleave');
+    };
 
     chartRows.on('click.countyTable', toggleMap);
+    chartRows.on('mouseover.countyTable', mouseoverMap);
+    chartRows.on('mouseleave.countyTable', mouseleaveMap);
+
     counties.on('click.county', toggleTable);
   };
 

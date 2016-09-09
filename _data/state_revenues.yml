@@ -4955,7 +4955,7 @@ NV:
       '2006':
         revenue: -93568
         rank: 1
-        percent: 100
+        percent: null
       '2008':
         revenue: 321
         rank: 1
@@ -7501,7 +7501,7 @@ WY:
       '2007':
         revenue: -11158
         rank: 1
-        percent: 100
+        percent: null
     NGL:
       '2006':
         revenue: 29026801
@@ -7706,4 +7706,4 @@ WY:
       '2015':
         revenue: -101750
         rank: 5
-        percent: 179
+        percent: null

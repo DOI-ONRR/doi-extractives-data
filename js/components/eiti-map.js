@@ -1,8 +1,10 @@
-// globals d3, topojson, eiti
+/* eslint-disable no-console */
 (function(exports) {
   'use strict';
 
   var CustomEvent = require('custom-event');
+  var topojson = require('topojson');
+  var queue = require('d3-queue');
 
   exports.EITIMap = document.registerElement('eiti-map', {
     // 'extends': 'svg',
@@ -161,7 +163,7 @@
           skipped = 0;
           this.stream.polygon(d);
           if (skipped) {
-            console.log('skipped %d points in polygon:', skipped, polygon);
+            console.log('skipped %d points in polygon:', skipped, d);
           }
         }
       });
@@ -180,7 +182,6 @@
 
         var filter = this.getAttribute('data-filter');
         var features = [];
-        var key;
         switch (d.type) {
 
           case 'Topology':
@@ -384,12 +385,6 @@
     });
   }
 
-  function parseBBox(value) {
-    return value
-      ? value.trim().split(/\s+/).map(Number)
-      : null;
-  }
-
   function getBBox(bboxes) {
     var xmin = Infinity,
         ymin = Infinity,
@@ -434,7 +429,6 @@
       }
     } else {
       features = [];
-      var keys = Object.keys(d.objects);
       var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
         features = features.concat(topojson.feature(d, d.objects[key]).features);

@@ -1,0 +1,8 @@
+env:
+  browser: true
+  node: true
+
+globals:
+  $: true
+  d3: true
+  eiti: true

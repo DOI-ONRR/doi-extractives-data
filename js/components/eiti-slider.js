@@ -94,7 +94,7 @@
         });
         this.dispatchEvent(event);
       } catch (err) {
-        console.warn('unable to fire "change" event: ', err);
+        // console.warn('unable to fire "change" event: ', err);
       }
     },
 

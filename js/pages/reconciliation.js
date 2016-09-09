@@ -1,10 +1,7 @@
-// globals d3, eiti, EITIBar
 (function() {
-  // 'use strict';
+  'use strict';
 
   var root = d3.select('#reconciliation');
-  var filterToggle = root.select('button.toggle-filters');
-  var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
 
   var getter = eiti.data.getter;
@@ -12,18 +9,16 @@
   var grouper;
   var formatNumber = eiti.format.commaSeparatedDollars;
   var formatPercent = eiti.format.percent;
-  var roundedPercent = d3.format('%.1');
-  var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var dialogWithExtension = document.querySelector('.flowchart-dialog.flowchart-columns_right');
   var extension = document.querySelector('.flowchart-stem_bottom_right_extra_long');
   var dialogBottom = document.querySelector('.flowchart-dialog_bottom');
 
-  function setExtHeight () {
+  function setExtHeight() {
     var newHeight = dialogBottom.getBoundingClientRect().bottom -
       dialogWithExtension.getBoundingClientRect().bottom;
     extension.style.height = newHeight + 'px';
-  };
+  }
 
   // initialize height of extension path
   setExtHeight();
@@ -99,7 +94,7 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
-  function isException (val, vart) {
+  function isException (val) {
     if (typeof(val) === 'string') {
       val = val.trim();
       return (val === 'did not participate' || val === 'did not report' || val === 'N/A');
@@ -162,13 +157,11 @@
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
 
-    var hasType = !!query.type;
-
     grouper.key(getter('revenueType'));
 
     model.load(state, function(error, data) {
       if (error) {
-        console.error('error:', error);
+        // console.error('error:', error);
         data = [];
       }
 
@@ -363,10 +356,6 @@
 
   function filterChange() {
     state.set(this.name, this.value, this.company, this.variance);
-  }
-
-  function identity(d) {
-    return d;
   }
 
 })(this);

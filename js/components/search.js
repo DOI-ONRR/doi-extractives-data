@@ -55,16 +55,6 @@ $( document ).ready(function() {
             });
           }
 
-          var content_type = '';
-          if(hit._source.content_type == 'text/html') {
-            content_type = '<span class="glyphicon glyphicon-link"></span> Website';
-          }
-          else if(hit._source.content_type == 'application/pdf') {
-            content_type = '<span class="glyphicon glyphicon-file"></span> PDF';
-          }
-          else {
-            content_type = '<span class="glyphicon glyphicon-file"></span> ' + hit._source.content_type + '';
-          }
           $('.search-results-container').append('<article class="search-result-list"><h1><a href="'
             + hit._source.url
             + '" target="_blank">'

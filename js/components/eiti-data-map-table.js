@@ -1,10 +1,9 @@
-(function(exports) {
+(function() {
+  'use strict';
 
   var attached = function() {
     var root = d3.select(this);
-    var self = d3.select(this);
 
-    var select = root.selectAll('select.chart-selector');
     var maps = root.selectAll('eiti-data-map');
     var mapToggles = maps.selectAll('button[is="aria-toggle"]');
     var mapTables = root.selectAll('.eiti-data-map-table');
@@ -19,7 +18,7 @@
       counties.classed('mouseover', false);
       counties.classed(event, false);
 
-      counties.each(function(d, i){
+      counties.each(function(d) { // eslint-disable-line no-unused-vars
         var county = d3.select(this);
         if (+county.attr('data-fips') === +fips) {
           county.classed(event, true);
@@ -27,18 +26,16 @@
       });
     };
 
-    var toggleTable = function(d, i) {
-
-      var countyName = this.querySelector('title').textContent;
+    var toggleTable = function(d) { // eslint-disable-line no-unused-vars
       var countyFIPS = this.getAttribute('data-fips');
 
       highlightCounty(countyFIPS);
 
-      mapToggles.each(function(){
+      mapToggles.each(function() {
         this.expand();
       });
 
-      chartTables.each(function(){
+      chartTables.each(function() {
         this.show(countyFIPS);
       })
     };
@@ -48,7 +45,7 @@
 
       highlightCounty(fips);
 
-      chartTables.each(function(){
+      chartTables.each(function() {
         this.show(fips);
       });
     };
@@ -73,7 +70,7 @@
   var detached = function() {
   };
 
-  exports.EITIDataMapTable = document.registerElement('eiti-data-map-table', {
+  document.registerElement('eiti-data-map-table', {
     'extends': 'figure',
     prototype: Object.create(
       HTMLElement.prototype,
@@ -85,4 +82,3 @@
   })
 
 })(this);
-

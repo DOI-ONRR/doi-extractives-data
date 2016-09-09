@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 (function(exports) {
 
   require('d3-svg-legend');
@@ -59,7 +60,6 @@
           var legendContainer = root.select('.legend-container');
 
           if (!svgMap.empty()) {
-            var svgMapBBox = svgMap.node().getBBox();
             var svgDimensions = svgMap.attr('viewBox');
 
             if (svgDimensions) {
@@ -142,7 +142,6 @@
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
-          var units = this.getAttribute('units') || '';
           var format = this.getAttribute('format');
           var legendDelimiter = '–';
           var legendFormat = format === '$'

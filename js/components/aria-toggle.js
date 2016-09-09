@@ -51,7 +51,7 @@
           return toggle(this, expanded);
         }},
 
-        expand: {value: function(expanded) {
+        expand: {value: function() {
           return expand(this);
         }},
 

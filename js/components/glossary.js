@@ -1,4 +1,3 @@
-/* global List */
 (function(exports) {
   'use strict';
 

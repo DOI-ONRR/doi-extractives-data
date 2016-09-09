@@ -4,5 +4,7 @@ env:
 
 globals:
   $: true
+  colorbrewer: true
   d3: true
   eiti: true
+  List: true

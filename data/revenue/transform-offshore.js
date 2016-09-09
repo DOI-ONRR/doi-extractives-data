@@ -1,11 +1,11 @@
 var parse = require('../../lib/parse');
 
 module.exports = {
-  year:           'Calendar Year',
+  year:           'FY',
   region:         'Offshore Region',
-  planning_area:  'Planning Area',
-  offshore_area:  'Offshore Area',
-  protraction:    'Protraction',
+  planning_area:  'Offshore Planning Area',
+  block_name:     'BOEM Block Name',
+  protraction:    'BOEM Protraction',
   revenue_type:   'Revenue Type',
   commodity:      'Commodity',
   product:        'Product',

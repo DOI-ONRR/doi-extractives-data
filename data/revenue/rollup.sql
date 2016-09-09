@@ -53,13 +53,13 @@ GROUP BY
 DELETE FROM offshore_revenue WHERE commodity = 'All';
 INSERT INTO offshore_revenue (
     year, region, planning_area,
-    offshore_area, protraction,
+    protraction,
     commodity, product, revenue_type,
     revenue
 )
 SELECT
     year, region, planning_area,
-    offshore_area, protraction,
+    protraction,
     'All' AS commodity,
     'All' AS product,
     revenue_type,
@@ -67,7 +67,7 @@ SELECT
 FROM offshore_revenue
 GROUP BY
     year, region, planning_area,
-    offshore_area, protraction, revenue_type;
+    protraction, revenue_type;
 
 -- fill in the product field for rows without it
 UPDATE offshore_revenue

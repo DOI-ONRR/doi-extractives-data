@@ -21,7 +21,8 @@
 
   tbody > tr:hover,
   tbody > tr:focus,
-  tbody > tr.selected {
+  tbody > tr.selected,
+  tbody > tr.mouseover {
     background-color: $gray-pale;
 
     .swatch {

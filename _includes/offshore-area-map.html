@@ -47,10 +47,6 @@
       <use xlink:href="{{ offshore_svg }}#{{ region_id }}"></use>
     </g>
 
-    <g class="regions mesh">
-      <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
-    </g>
-
     {% if include.areas %}
       {% assign keys = include.value %}
       {% for area in include.areas %}
@@ -78,6 +74,10 @@
         {% if include.href %}</a>{% endif %}
       {% endfor %}
     {% endif %}
+
+    <g class="regions mesh">
+      <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
+    </g>
   </svg>
 
   {% if include.toggle %}

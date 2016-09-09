@@ -22,7 +22,6 @@
             <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
           </a>
         </p>
-        <p><p>In {{ year }}, jobs in the extractive industries that paid a wage or salary made up {{ jobs_percent | percent }}% of nationwide employment.</p></p>
       </div>
     </div><!-- .chart-selector-wrapper -->
 
@@ -41,15 +40,17 @@
         </eiti-bar-chart>
         <figcaption id="jobs-figures-{{ _metric }}">
           <span class="caption-data">
-            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+            In 
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>,
             there were
             <span class="eiti-bar-chart-y-value" data-format=",">
               {{ jobs[year].jobs | intcomma }}
             </span>
-            jobs in extractive industries that paid a wage or salary
+            jobs in the extractive industries, and they accounted for {{ jobs_percent | percent }}% 
+            of nationwide jobs.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
+            There is no data about jobs in the extractive industries in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>
           </span>
         </figcaption>
@@ -58,7 +59,7 @@
       {% endfor %}
   </section><!-- /.chart-list -->
 
-  <h3>Self-employment jobs</h3>
+  <h3 id="self-employment">Self-employment</h3>
 
   {% assign restore_year = year %}
   {% if site.data.years.self_employment %}
@@ -84,17 +85,9 @@
     {% for _metric in _metrics %}
     <section class="chart-item">
 
-      <h3 class="chart-title"><span>Self-employment jobs</span></h3>
+      <h3 class="chart-title"><span>Self-employment</span></h3>
 
       <figure class="chart">
-        <figcaption id="self-employment-figures-{{ _metric }}">
-          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-          there were
-          <span class="eiti-bar-chart-y-value" data-format=",">
-            {{ self_employment_jobs[year].jobs | default: 0 | intcomma }}
-          </span>
-          self-employed people working in the extractive industries
-        </figcaption>
         <eiti-bar-chart
           aria-controls="self-employment-figures-{{ _metric }}"
           data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
@@ -102,7 +95,14 @@
           x-value="{{ year }}"
           data-units="jobs">
         </eiti-bar-chart>
-
+        <figcaption id="self-employment-figures-{{ _metric }}">
+          In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+          there were
+          <span class="eiti-bar-chart-y-value" data-format=",">
+            {{ self_employment_jobs[year].jobs | default: 0 | intcomma }}
+          </span>
+          self-employed people working in the extractive industries.
+        </figcaption>
       </figure>
 
     </section><!-- /.chart-item -->

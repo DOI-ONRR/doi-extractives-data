@@ -5,14 +5,14 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3>Nationwide energy production</h3>
+  <h3>Energy production nationwide</h3>
 
   <div class="chart-selector-wrapper">
 
     {% include year-selector.html year_range=year_range %}
 
     <p class="chart-description">
-      The Energy Information Administration collects data about <strong>energy-related natural resources on all types of land and offshore areas</strong> (including state and private land). This data does not include information about non-energy mineral mining.
+      The U.S. Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned lands and waters. This data does not include information about nonenergy mineral mining.
       <br>
       <a href="{{site.baseurl}}/downloads/#production-all">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -24,7 +24,7 @@
   <div class="chart-list">
 
     {% for product in all_products %}
-      {% assign product_name = product[0] %}
+      {% assign product_name = product[0] | lookup: commodity_names %}
       {% assign product_slug = product_name | slugify %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year] %}
@@ -49,12 +49,12 @@
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
             {{ long_units | term }} of
-            {{ product_name | downcase | suffix: units_suffix }} was extracted in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            {{ product_name | downcase | suffix: units_suffix }} was produced in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            There is no data about production of {{ product_name | downcase | suffix: units_suffix }} in 
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
       </figure>

@@ -9,7 +9,9 @@
 
   <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
 
-  <h3>Federal revenue from extraction on federal land</h3>
+  <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.</p>
+
+  <h3>Revenue from extraction on federal land</h3>
 
   <section id="federal-revenue">
 
@@ -50,7 +52,7 @@
     </div>
 
 
-    <h4>Revenue by resource</h4>
+    <h4>Revenue trends by resource</h4>
 
     <section class="chart-list">
 
@@ -59,7 +61,11 @@
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-          In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).
+          Non-tax revenue collected by ONRR often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
         </p>
       </div>
 
@@ -84,13 +90,11 @@
             {% assign annual_revenue = commodity[1] %}
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               <span class="caption-data">
-                In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
-                companies paid the federal government <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract
-                {{ commodity_name | downcase }} on federal land
+                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to extract {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                There is no data about {{ commodity_name | downcase }} on federal land in
-                <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                There is no data about revenue from extraction of {{ commodity_name | downcase }} on federal land in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
             </figcaption>
           </figure>

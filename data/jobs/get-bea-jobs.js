@@ -7,7 +7,8 @@ var options = require('yargs')
   })
   .option('year', {
     desc: 'year or year range',
-    default: '2006-2015'
+    // XXX BEA has not yet released 2015 data!
+    default: '2005-2014'
   })
   .option('of', {
     desc: 'output format (tito-compatible)',

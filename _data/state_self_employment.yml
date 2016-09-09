@@ -1,4 +1,7 @@
 AK:
+  '2005':
+    count: 1210
+    percent: 0.29
   '2006':
     count: 1333
     percent: 0.31
@@ -27,6 +30,9 @@ AK:
     count: 4797
     percent: 1.03
 AL:
+  '2005':
+    count: 1770
+    percent: 0.07
   '2006':
     count: 2048
     percent: 0.08
@@ -55,6 +61,9 @@ AL:
     count: 6126
     percent: 0.24
 AR:
+  '2005':
+    count: 3276
+    percent: 0.21
   '2006':
     count: 3848
     percent: 0.25
@@ -83,6 +92,9 @@ AR:
     count: 11404
     percent: 0.72
 AZ:
+  '2005':
+    count: 3436
+    percent: 0.11
   '2006':
     count: 3853
     percent: 0.11
@@ -111,6 +123,9 @@ AZ:
     count: 11460
     percent: 0.33
 CA:
+  '2005':
+    count: 14408
+    percent: 0.07
   '2006':
     count: 16570
     percent: 0.08
@@ -139,6 +154,9 @@ CA:
     count: 45619
     percent: 0.21
 CO:
+  '2005':
+    count: 10570
+    percent: 0.35
   '2006':
     count: 12089
     percent: 0.39
@@ -167,6 +185,9 @@ CO:
     count: 35298
     percent: 1.02
 CT:
+  '2005':
+    count: 1187
+    percent: 0.05
   '2006':
     count: 1345
     percent: 0.06
@@ -195,6 +216,9 @@ CT:
     count: 3197
     percent: 0.14
 DC:
+  '2005':
+    count: 0
+    percent: 0
   '2006':
     count: 220
     percent: 0.03
@@ -223,6 +247,9 @@ DC:
     count: 554
     percent: 0.06
 DE:
+  '2005':
+    count: 0
+    percent: 0
   '2006':
     count: 165
     percent: 0.03
@@ -251,6 +278,9 @@ DE:
     count: 0
     percent: 0
 FL:
+  '2005':
+    count: 7913
+    percent: 0.08
   '2006':
     count: 9311
     percent: 0.09
@@ -279,6 +309,9 @@ FL:
     count: 25943
     percent: 0.24
 GA:
+  '2005':
+    count: 1932
+    percent: 0.04
   '2006':
     count: 2247
     percent: 0.04
@@ -307,6 +340,9 @@ GA:
     count: 6525
     percent: 0.12
 HI:
+  '2005':
+    count: 315
+    percent: 0.04
   '2006':
     count: 387
     percent: 0.05
@@ -335,6 +371,9 @@ HI:
     count: 1033
     percent: 0.12
 IA:
+  '2005':
+    count: 810
+    percent: 0.04
   '2006':
     count: 964
     percent: 0.05
@@ -363,6 +402,9 @@ IA:
     count: 3191
     percent: 0.16
 ID:
+  '2005':
+    count: 839
+    percent: 0.1
   '2006':
     count: 1017
     percent: 0.11
@@ -391,6 +433,9 @@ ID:
     count: 3133
     percent: 0.34
 IL:
+  '2005':
+    count: 7776
+    percent: 0.11
   '2006':
     count: 8561
     percent: 0.11
@@ -419,6 +464,9 @@ IL:
     count: 21538
     percent: 0.28
 IN:
+  '2005':
+    count: 2776
+    percent: 0.08
   '2006':
     count: 3017
     percent: 0.08
@@ -447,6 +495,9 @@ IN:
     count: 7536
     percent: 0.2
 KS:
+  '2005':
+    count: 11923
+    percent: 0.68
   '2006':
     count: 13368
     percent: 0.74
@@ -475,6 +526,9 @@ KS:
     count: 38936
     percent: 2.05
 KY:
+  '2005':
+    count: 4146
+    percent: 0.18
   '2006':
     count: 4789
     percent: 0.2
@@ -503,6 +557,9 @@ KY:
     count: 10680
     percent: 0.44
 LA:
+  '2005':
+    count: 10262
+    percent: 0.43
   '2006':
     count: 12517
     percent: 0.52
@@ -531,6 +588,9 @@ LA:
     count: 34051
     percent: 1.27
 MA:
+  '2005':
+    count: 1000
+    percent: 0.02
   '2006':
     count: 1117
     percent: 0.03
@@ -559,6 +619,9 @@ MA:
     count: 2968
     percent: 0.07
 MD:
+  '2005':
+    count: 1372
+    percent: 0.04
   '2006':
     count: 1544
     percent: 0.05
@@ -587,6 +650,9 @@ MD:
     count: 3965
     percent: 0.11
 ME:
+  '2005':
+    count: 353
+    percent: 0.04
   '2006':
     count: 383
     percent: 0.05
@@ -615,6 +681,9 @@ ME:
     count: 1110
     percent: 0.14
 MI:
+  '2005':
+    count: 6578
+    percent: 0.12
   '2006':
     count: 7303
     percent: 0.13
@@ -643,6 +712,9 @@ MI:
     count: 17597
     percent: 0.33
 MN:
+  '2005':
+    count: 1800
+    percent: 0.05
   '2006':
     count: 2119
     percent: 0.06
@@ -671,6 +743,9 @@ MN:
     count: 6085
     percent: 0.17
 MO:
+  '2005':
+    count: 2134
+    percent: 0.06
   '2006':
     count: 2366
     percent: 0.07
@@ -699,6 +774,9 @@ MO:
     count: 6480
     percent: 0.18
 MS:
+  '2005':
+    count: 3392
+    percent: 0.23
   '2006':
     count: 3768
     percent: 0.25
@@ -727,6 +805,9 @@ MS:
     count: 11964
     percent: 0.77
 MT:
+  '2005':
+    count: 1757
+    percent: 0.29
   '2006':
     count: 2020
     percent: 0.33
@@ -755,6 +836,9 @@ MT:
     count: 6367
     percent: 0.99
 NC:
+  '2005':
+    count: 2169
+    percent: 0.04
   '2006':
     count: 2455
     percent: 0.05
@@ -783,6 +867,9 @@ NC:
     count: 6567
     percent: 0.12
 ND:
+  '2005':
+    count: 924
+    percent: 0.2
   '2006':
     count: 1091
     percent: 0.23
@@ -811,6 +898,9 @@ ND:
     count: 5001
     percent: 0.83
 NE:
+  '2005':
+    count: 881
+    percent: 0.07
   '2006':
     count: 957
     percent: 0.08
@@ -839,6 +929,9 @@ NE:
     count: 2838
     percent: 0.22
 NH:
+  '2005':
+    count: 401
+    percent: 0.05
   '2006':
     count: 457
     percent: 0.05
@@ -867,6 +960,9 @@ NH:
     count: 1166
     percent: 0.14
 NJ:
+  '2005':
+    count: 1409
+    percent: 0.03
   '2006':
     count: 1687
     percent: 0.03
@@ -895,6 +991,9 @@ NJ:
     count: 3618
     percent: 0.07
 NM:
+  '2005':
+    count: 4199
+    percent: 0.4
   '2006':
     count: 4685
     percent: 0.43
@@ -923,6 +1022,9 @@ NM:
     count: 11802
     percent: 1.09
 NV:
+  '2005':
+    count: 2165
+    percent: 0.14
   '2006':
     count: 2435
     percent: 0.15
@@ -951,6 +1053,9 @@ NV:
     count: 6540
     percent: 0.41
 NY:
+  '2005':
+    count: 4868
+    percent: 0.05
   '2006':
     count: 5505
     percent: 0.05
@@ -979,6 +1084,9 @@ NY:
     count: 13299
     percent: 0.11
 OH:
+  '2005':
+    count: 8975
+    percent: 0.13
   '2006':
     count: 10481
     percent: 0.16
@@ -1007,6 +1115,9 @@ OH:
     count: 25780
     percent: 0.38
 OK:
+  '2005':
+    count: 28069
+    percent: 1.38
   '2006':
     count: 31731
     percent: 1.51
@@ -1035,6 +1146,9 @@ OK:
     count: 85857
     percent: 3.76
 OR:
+  '2005':
+    count: 1434
+    percent: 0.07
   '2006':
     count: 1605
     percent: 0.07
@@ -1063,6 +1177,9 @@ OR:
     count: 4693
     percent: 0.2
 PA:
+  '2005':
+    count: 8009
+    percent: 0.11
   '2006':
     count: 9085
     percent: 0.13
@@ -1091,6 +1208,9 @@ PA:
     count: 25090
     percent: 0.34
 RI:
+  '2005':
+    count: 162
+    percent: 0.03
   '2006':
     count: 181
     percent: 0.03
@@ -1119,6 +1239,9 @@ RI:
     count: 0
     percent: 0
 SC:
+  '2005':
+    count: 866
+    percent: 0.04
   '2006':
     count: 995
     percent: 0.04
@@ -1147,6 +1270,9 @@ SC:
     count: 3306
     percent: 0.13
 SD:
+  '2005':
+    count: 510
+    percent: 0.1
   '2006':
     count: 609
     percent: 0.11
@@ -1175,6 +1301,9 @@ SD:
     count: 2249
     percent: 0.38
 TN:
+  '2005':
+    count: 2327
+    percent: 0.06
   '2006':
     count: 2519
     percent: 0.07
@@ -1203,6 +1332,9 @@ TN:
     count: 6596
     percent: 0.17
 TX:
+  '2005':
+    count: 87455
+    percent: 0.67
   '2006':
     count: 99420
     percent: 0.74
@@ -1231,6 +1363,9 @@ TX:
     count: 271092
     percent: 1.7
 UT:
+  '2005':
+    count: 1776
+    percent: 0.12
   '2006':
     count: 2021
     percent: 0.13
@@ -1259,6 +1394,9 @@ UT:
     count: 6410
     percent: 0.36
 VA:
+  '2005':
+    count: 2784
+    percent: 0.06
   '2006':
     count: 3180
     percent: 0.07
@@ -1287,6 +1425,9 @@ VA:
     count: 7922
     percent: 0.16
 VT:
+  '2005':
+    count: 254
+    percent: 0.06
   '2006':
     count: 307
     percent: 0.07
@@ -1315,6 +1456,9 @@ VT:
     count: 896
     percent: 0.21
 WA:
+  '2005':
+    count: 2288
+    percent: 0.06
   '2006':
     count: 2598
     percent: 0.07
@@ -1343,6 +1487,9 @@ WA:
     count: 7122
     percent: 0.17
 WI:
+  '2005':
+    count: 1192
+    percent: 0.03
   '2006':
     count: 1380
     percent: 0.04
@@ -1371,6 +1518,9 @@ WI:
     count: 4454
     percent: 0.12
 WV:
+  '2005':
+    count: 6318
+    percent: 0.71
   '2006':
     count: 7215
     percent: 0.8
@@ -1399,6 +1549,9 @@ WV:
     count: 16257
     percent: 1.78
 WY:
+  '2005':
+    count: 2877
+    percent: 0.81
   '2006':
     count: 3332
     percent: 0.9

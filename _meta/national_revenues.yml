@@ -1,5 +1,4 @@
 US:
   commodities:
     '{commodity}':
-      '{year}':
-        revenue: '{revenue}'
+      '{year}': '{revenue}'

@@ -9,7 +9,7 @@
 
   <h2>Revenue</h2>
 
-  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. What companies pay to federal, state, and local governments often depends on who owns the natural resources.</p>
 
   <section id="federal-revenue">
 
@@ -23,11 +23,13 @@
       </a>
     </p>
     
-    <h4>Revenue from extraction on federal land by resource</h4>
+    <h4>Revenue from production on federal land by resource</h4>
     
 {% if revenue_commodities %}
 
-    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+    <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+
+    <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
     <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
 
@@ -58,7 +60,7 @@
       </article>
     </div>
 
-    <h4>Revenue from extraction on federal land by county</h4>
+    <h4>Revenue from production on federal land by county</h4>
 
     <section class="chart-list">
 
@@ -97,7 +99,7 @@
 {% else %}
 
         <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
-          There was no natural resource extraction on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
+          No natural resources were produced on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
         </p>
 
 {% endif %}

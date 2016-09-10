@@ -328,12 +328,12 @@ data/offshore_federal_production_regions.yml:
 data/offshore_federal_production_areas:
 	$(query) --format ndjson " \
 		SELECT \
-		  year, \
-		  region_id, \
-		  area_id, \
-		  area_name, \
-		  product, product_name, units, \
-		  ROUND(volume) AS volume \
+			year, \
+			region_id, \
+			area_id, \
+			area_name, \
+			product, product_name, units, \
+			ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \
 		WHERE \
 			region_id IS NOT NULL AND \
@@ -370,7 +370,10 @@ data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			state, commodity, year, \
-			ROUND(percent, 1) AS percent, \
+			CASE \
+				WHEN revenue >= 0 THEN ROUND(percent, 1) \
+				ELSE NULL \
+			END AS percent, \
 			ROUND(revenue) AS revenue, \
 			rank \
 		FROM state_revenue_rank \
@@ -422,8 +425,8 @@ data/national_revenues_by_type.yml:
 data/offshore_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  region_id, commodity, revenue_type, year, \
-		  ROUND(revenue) AS revenue \
+			region_id, commodity, revenue_type, year, \
+			ROUND(revenue) AS revenue \
 		FROM offshore_region_revenue_type \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
@@ -449,9 +452,9 @@ data/offshore_revenue_regions.yml:
 data/offshore_revenue_areas:
 	$(query) --format ndjson " \
 		SELECT \
-		  commodity, year, \
-		  region_id, area_id, area_name, \
-		  ROUND(revenue) AS revenue \
+			commodity, year, \
+			region_id, area_id, area_name, \
+			ROUND(revenue) AS revenue \
 		FROM offshore_area_revenue \
 		WHERE revenue IS NOT NULL \
 		ORDER BY \
@@ -467,7 +470,11 @@ data/top_state_products:
 		SELECT \
 			state, commodity AS product, \
 			NULL AS name, NULL AS units, \
-			ROUND(percent, 2) AS percent, rank, year, \
+			CASE \
+				WHEN revenue >= 0 THEN ROUND(percent, 1) \
+				ELSE NULL \
+			END AS percent, \
+			rank, year, \
 			ROUND(revenue, 2) AS value, \
 			revenue AS order_value, \
 			'revenue' AS category \
@@ -477,7 +484,7 @@ data/top_state_products:
 		SELECT \
 			state, product, \
 			product_name AS name, units, \
-			ROUND(percent, 2), rank, year, \
+			ROUND(percent, 2) AS percent, rank, year, \
 			ROUND(volume, 2) AS value, \
 			(100 - rank) AS order_value, \
 			'federal_production' AS category \
@@ -486,12 +493,12 @@ data/top_state_products:
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
-		  state, product, \
-		  product AS name, units, \
-		  ROUND(percent, 2), rank, year, \
-		  ROUND(volume, 2) AS value, \
-		  (100 - rank) AS order_value, \
-		  'all_production' AS category \
+			state, product, \
+			product AS name, units, \
+			ROUND(percent, 2) AS percent, rank, year, \
+			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
+			'all_production' AS category \
 		FROM all_production_state_rank \
 		WHERE (rank <= $${top}) \
 			AND year > 2004 \

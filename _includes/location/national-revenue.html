@@ -1,5 +1,5 @@
 {% assign revenue_commodities = site.data.national_revenues[state_id].commodities %}
-{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign revenue_total = revenue_commodities.All[year] %}
 {% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 {% assign units = '$' %}
 
@@ -54,7 +54,7 @@
     </div>
 
 
-    <h4>Revenue trends by resource</h4>
+    <h4 id="revenue-trends">Revenue trends by resource</h4>
 
     <section class="chart-list">
 
@@ -73,7 +73,8 @@
 
 
       {% for commodity in revenue_commodities %}
-        {% assign revenue = commodity[1][year].revenue %}
+        {% assign annual_revenue = commodity[1] %}
+        {% assign revenue = annual_revenue[year] %}
         {% assign commodity_name = commodity[0] | lookup: commodity_names %}
         {% assign commodity_slug = commodity[0] | slugify %}
 
@@ -83,16 +84,15 @@
 
           <figure class="chart">
             <eiti-bar-chart
-              data='{{ annual_revenue | map_hash: "revenue" | jsonify }}'
+              data='{{ annual_revenue | jsonify }}'
               aria-controls="revenue-figures-{{ commodity_slug }}"
               x-range="{{ year_range }}"
               x-value="{{ year }}"
               data-units="$,">
             </eiti-bar-chart>
-            {% assign annual_revenue = commodity[1] %}
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               <span class="caption-data">
-                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year] | default: 0 | intcomma }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
                 There is no data about revenue from production of {{ commodity_name | downcase }} on federal land in

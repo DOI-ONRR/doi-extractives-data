@@ -1,345 +1,370 @@
 Gulf:
   commodities:
     All:
-      '2004':
-        revenue: 5409130705
-      '2005':
-        revenue: 6004817225
       '2006':
-        revenue: 7928347684
+        revenue: 7305656788
       '2007':
-        revenue: 6971224265
+        revenue: 6712466885
       '2008':
-        revenue: 14024740409
+        revenue: 14900524733
       '2009':
-        revenue: 4304061241
+        revenue: 4880336616
       '2010':
-        revenue: 6300081743
+        revenue: 5602652939
       '2011':
-        revenue: 6303526467
+        revenue: 6222848870
       '2012':
-        revenue: 7917993456
+        revenue: 6545295945
       '2013':
-        revenue: 7572068932
-    Oil & Gas:
-      '2004':
-        revenue: 751857551
-      '2005':
-        revenue: 559892007
+        revenue: 8740578938
+      '2014':
+        revenue: 7096190522
+      '2015':
+        revenue: 4933090062
+    Oil & Gas (Non-Royalty):
       '2006':
-        revenue: 1389480835
+        revenue: 1054976777
       '2007':
-        revenue: 772154457
+        revenue: 520534674
       '2008':
-        revenue: 6715703535
+        revenue: 7110054025
       '2009':
-        revenue: 1289381523
+        revenue: 629489781
       '2010':
-        revenue: 1171633844
+        revenue: 1985718259
       '2011':
-        revenue: 280614189
+        revenue: 278424399
       '2012':
-        revenue: 2269660622
+        revenue: 910830027
       '2013':
-        revenue: 1686067025
+        revenue: 2952984147
+      '2014':
+        revenue: 1243686472
+      '2015':
+        revenue: 817981448
     Oil:
-      '2004':
-        revenue: 1164131190
-      '2005':
-        revenue: 2059626348
       '2006':
-        revenue: 3374354015
+        revenue: 2999520880
       '2007':
-        revenue: 3427166055
+        revenue: 3430145601
       '2008':
-        revenue: 4229168787
+        revenue: 4448083266
       '2009':
-        revenue: 2147249991
+        revenue: 2873724780
       '2010':
-        revenue: 3939484923
+        revenue: 2844625963
       '2011':
-        revenue: 4933494162
+        revenue: 4800545486
       '2012':
-        revenue: 4988235059
+        revenue: 4913295071
       '2013':
-        revenue: 5227929536
+        revenue: 5132057478
+      '2014':
+        revenue: 5172353331
+      '2015':
+        revenue: 3603707132
     Gas:
-      '2004':
-        revenue: 3335204517
-      '2005':
-        revenue: 3243294809
       '2006':
-        revenue: 3012288656
+        revenue: 3124269595
       '2007':
-        revenue: 2550503561
+        revenue: 2564450477
       '2008':
-        revenue: 2817069681
+        revenue: 3039046093
       '2009':
-        revenue: 765163709
+        revenue: 1270847458
       '2010':
-        revenue: 967558841
+        revenue: 578716466
       '2011':
-        revenue: 811573664
+        revenue: 868109893
       '2012':
-        revenue: 436594618
+        revenue: 478051957
       '2013':
-        revenue: 492974205
+        revenue: 493096758
+      '2014':
+        revenue: 507114846
+      '2015':
+        revenue: 397402062
     NGL:
-      '2004':
-        revenue: 157916563
-      '2005':
-        revenue: 141982054
       '2006':
-        revenue: 152210997
+        revenue: 126864288
       '2007':
-        revenue: 221396483
+        revenue: 197326056
       '2008':
-        revenue: 262732781
+        revenue: 303286905
       '2009':
-        revenue: 102253593
+        revenue: 106217797
       '2010':
-        revenue: 221418416
+        revenue: 193593891
       '2011':
-        revenue: 277840676
+        revenue: 275752928
       '2012':
-        revenue: 223498890
+        revenue: 243102297
       '2013':
-        revenue: 165094044
-    Other Products:
-      '2004':
-        revenue: 20883
-      '2005':
-        revenue: 22008
+        revenue: 162424901
+      '2014':
+        revenue: 173021960
+      '2015':
+        revenue: 113980898
+    Sulfur:
       '2006':
-        revenue: 13181
+        revenue: 22534
       '2007':
-        revenue: 3708
+        revenue: 8722
       '2008':
-        revenue: 65625
+        revenue: 53813
       '2009':
-        revenue: 12425
+        revenue: 55641
       '2010':
-        revenue: -14281
+        revenue: -2668
       '2011':
-        revenue: 3777
+        revenue: 15225
       '2012':
-        revenue: 4268
+        revenue: 15022
       '2013':
-        revenue: 4122
+        revenue: 12790
+      '2014':
+        revenue: 11740
+      '2015':
+        revenue: 9987
+    Sodium:
+      '2006':
+        revenue: 2714
+      '2007':
+        revenue: 1356
+      '2008':
+        revenue: 630
+      '2009':
+        revenue: 1159
+      '2010':
+        revenue: 1027
+      '2011':
+        revenue: 939
+      '2012':
+        revenue: 1571
+      '2013':
+        revenue: 2863
+      '2014':
+        revenue: 2172
+      '2015':
+        revenue: 8536
 Alaska:
   commodities:
     All:
-      '2004':
-        revenue: 38470619
-      '2005':
-        revenue: 82860053
       '2006':
-        revenue: 42457967
+        revenue: 44044441
       '2007':
-        revenue: 70435103
+        revenue: 71088925
       '2008':
-        revenue: 2747346189
+        revenue: 2740654158
       '2009':
-        revenue: 24409028
+        revenue: 36031556
       '2010':
-        revenue: 29199453
+        revenue: 29897364
       '2011':
-        revenue: 19622037
+        revenue: 23360584
       '2012':
-        revenue: 21779369
+        revenue: 20255897
       '2013':
-        revenue: 23246225
-    Oil & Gas:
-      '2004':
-        revenue: 9127290
-      '2005':
-        revenue: 48388386
+        revenue: 22838616
+      '2014':
+        revenue: 15792213
+      '2015':
+        revenue: 15861048
+    Oil & Gas (Non-Royalty):
       '2006':
-        revenue: 1877683
+        revenue: 2049694
       '2007':
-        revenue: 44723681
+        revenue: 44703064
       '2008':
-        revenue: 2667535225
+        revenue: 2669001715
       '2009':
-        revenue: 6895639
+        revenue: 7140779
       '2010':
-        revenue: 9103936
+        revenue: 9231280
       '2011':
-        revenue: 4272203
+        revenue: 4270719
       '2012':
-        revenue: 10365364
+        revenue: 10608094
       '2013':
-        revenue: 12687866
+        revenue: 12558253
+      '2014':
+        revenue: 7731107
+      '2015':
+        revenue: 9738663
     Oil:
-      '2004':
-        revenue: 29343329
-      '2005':
-        revenue: 34471668
       '2006':
-        revenue: 40580284
+        revenue: 41994748
       '2007':
-        revenue: 25711422
+        revenue: 26385860
       '2008':
-        revenue: 79810965
+        revenue: 71652443
       '2009':
-        revenue: 17513389
+        revenue: 28890777
       '2010':
-        revenue: 20095518
+        revenue: 20666084
       '2011':
-        revenue: 15349835
+        revenue: 19089865
       '2012':
-        revenue: 11414005
+        revenue: 9647804
       '2013':
-        revenue: 10558360
+        revenue: 10280363
+      '2014':
+        revenue: 8061107
+      '2015':
+        revenue: 6122385
 Pacific:
   commodities:
     All:
-      '2004':
-        revenue: 163921279
-      '2005':
-        revenue: 210036052
       '2006':
-        revenue: 250069352
+        revenue: 259404915
       '2007':
-        revenue: 261789632
+        revenue: 240622656
       '2008':
-        revenue: 405590624
+        revenue: 400532368
       '2009':
-        revenue: 199349110
+        revenue: 213024846
       '2010':
-        revenue: 266491607
+        revenue: 268249742
       '2011':
-        revenue: 318116096
+        revenue: 296174142
       '2012':
-        revenue: 299765174
+        revenue: 301672884
       '2013':
-        revenue: 295813819
+        revenue: 307717798
+      '2014':
+        revenue: 276087536
+      '2015':
+        revenue: 133710596
     Oil:
-      '2004':
-        revenue: 126862013
-      '2005':
-        revenue: 177943152
       '2006':
-        revenue: 217411888
+        revenue: 221146145
       '2007':
-        revenue: 230622767
+        revenue: 211161912
       '2008':
-        revenue: 373348210
+        revenue: 369476261
       '2009':
-        revenue: 181701411
+        revenue: 192981687
       '2010':
-        revenue: 250959588
+        revenue: 251223870
       '2011':
-        revenue: 309265337
+        revenue: 288409212
       '2012':
-        revenue: 292976721
+        revenue: 295904184
       '2013':
-        revenue: 287819067
+        revenue: 300168752
+      '2014':
+        revenue: 267623440
+      '2015':
+        revenue: 129370613
     Gas:
-      '2004':
-        revenue: 27046121
-      '2005':
-        revenue: 31437273
       '2006':
-        revenue: 31785770
+        revenue: 36014423
       '2007':
-        revenue: 30262307
+        revenue: 30675050
       '2008':
-        revenue: 32727188
+        revenue: 30213310
       '2009':
-        revenue: 15412993
+        revenue: 20323780
       '2010':
-        revenue: 15525394
+        revenue: 16529309
       '2011':
-        revenue: 7623860
+        revenue: 7415892
       '2012':
-        revenue: 5795628
+        revenue: 6320339
       '2013':
-        revenue: 7428904
-    Oil & Gas:
-      '2004':
-        revenue: 8524706
-      '2005':
-        revenue: -1013241
-      '2006':
-        revenue: 24334
-      '2007':
-        revenue: -96759
-      '2008':
-        revenue: -2444737
-      '2009':
-        revenue: 660072
-      '2010':
-        revenue: -130414
-      '2011':
-        revenue: -10526
-      '2012':
-        revenue: 131634
-      '2013':
-        revenue: -200641
+        revenue: 7318576
+      '2014':
+        revenue: 7841399
+      '2015':
+        revenue: 5230346
     NGL:
-      '2004':
-        revenue: 1474230
-      '2005':
-        revenue: 1654527
       '2006':
-        revenue: 841057
+        revenue: 1051825
       '2007':
-        revenue: 968529
+        revenue: 929404
       '2008':
-        revenue: 1750017
+        revenue: 1471512
       '2009':
-        revenue: 1564916
+        revenue: 1997035
       '2010':
-        revenue: 119517
+        revenue: -9774
       '2011':
-        revenue: 1173840
+        revenue: 1192788
       '2012':
-        revenue: 811638
+        revenue: 873896
       '2013':
-        revenue: 746045
-    Other Products:
-      '2004':
-        revenue: 14210
-      '2005':
-        revenue: 14340
+        revenue: 684144
+      '2014':
+        revenue: 586775
+      '2015':
+        revenue: 297471
+    Oil & Gas (Non-Royalty):
       '2006':
-        revenue: 6303
+        revenue: 1181838
       '2007':
-        revenue: 32787
+        revenue: -2163145
       '2008':
-        revenue: 209946
+        revenue: -870550
       '2009':
-        revenue: 9717
+        revenue: -2268883
       '2010':
-        revenue: 17523
+        revenue: 492353
       '2011':
-        revenue: 63585
+        revenue: -893972
       '2012':
-        revenue: 49553
+        revenue: -1476530
       '2013':
-        revenue: 20444
+        revenue: -490324
+      '2014':
+        revenue: 18977
+      '2015':
+        revenue: -1212180
+    Sulfur:
+      '2006':
+        revenue: 10684
+      '2007':
+        revenue: 19434
+      '2008':
+        revenue: 241835
+      '2009':
+        revenue: -8773
+      '2010':
+        revenue: 13983
+      '2011':
+        revenue: 50222
+      '2012':
+        revenue: 50995
+      '2013':
+        revenue: 36649
+      '2014':
+        revenue: 16945
+      '2015':
+        revenue: 24346
 Atlantic:
   commodities:
     All:
-      '2009':
-        revenue: 68320
       '2010':
-        revenue: 139518
+        revenue: 68320
       '2011':
-        revenue: 135248
+        revenue: 186488
       '2012':
-        revenue: 128843
+        revenue: 111763
       '2013':
-        revenue: 5820234
+        revenue: 435835
+      '2014':
+        revenue: 6403700
+      '2015':
+        revenue: 11359057
     Wind:
-      '2009':
-        revenue: 68320
       '2010':
-        revenue: 139518
+        revenue: 68320
       '2011':
-        revenue: 135248
+        revenue: 186488
       '2012':
-        revenue: 128843
+        revenue: 111763
       '2013':
-        revenue: 5820234
+        revenue: 435835
+      '2014':
+        revenue: 6403700
+      '2015':
+        revenue: 11359057

@@ -7,7 +7,7 @@
 
   <h2>Revenue</h2>
 
-  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources.</p>
 
   <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.</p>
 
@@ -15,7 +15,9 @@
 
   <section id="federal-revenue">
 
-    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+    <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+
+    <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
     <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in {{ year}} for production or potential production of natural resources on federal land, broken down by phase of production.
       <br>
@@ -90,10 +92,10 @@
             </eiti-bar-chart>
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               <span class="caption-data">
-                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year] | default: 0 | intcomma }}</span> to extract {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">${{ annual_revenue[year] | default: 0 | intcomma }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                There is no data about revenue from extraction of {{ commodity_name | downcase }} on federal land in
+                There is no data about revenue from production of {{ commodity_name | downcase }} on federal land in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
             </figcaption>

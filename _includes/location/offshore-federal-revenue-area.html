@@ -24,14 +24,15 @@
         </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
+            Companies paid 
             <span class="eiti-bar-chart-y-value"
                   data-format="$,">${{ current_revenue | intcomma }}</span>
-            was collected from federal land in {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            to produce natural resources in the {{ region_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            There is no data about natural resource production in the {{ region_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
       </figure>
@@ -40,7 +41,7 @@
     <div class="map-container">
 
       <h4 class="chart-title">
-        <span>Revenue collected by {{ region_name }}</span>
+        <span>Revenue collected by offshore area</span>
       </h4>
 
 

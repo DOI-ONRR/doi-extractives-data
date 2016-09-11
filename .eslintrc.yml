@@ -2,3 +2,8 @@ env:
   node: true
 
 extends: eslint:recommended
+
+rules:
+  curly: [warn, multi-line]
+  eqeqeq: warn
+  no-whitespace-before-property: warn

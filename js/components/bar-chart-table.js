@@ -12,7 +12,7 @@
   };
 
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
+  var NO_DATA_FLAG = undefined; // eslint-disable-line no-undef-init
 
   var setYear = function(year) {
     var root = d3.select(this);

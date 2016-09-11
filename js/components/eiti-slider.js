@@ -86,7 +86,9 @@
           return x(d).toFixed(2) + '%';
         })
         .select('.label')
-          .text(function(d) { return d; });
+          .text(function(d) {
+            return d;
+          });
 
       try {
         var event = new CustomEvent('change', {

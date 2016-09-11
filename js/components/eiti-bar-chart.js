@@ -81,8 +81,12 @@
 
     if (Array.isArray(data)) {
       values = d3.nest()
-        .key(function(d) { return d.x; })
-        .rollup(function(d) { return d[0]; })
+        .key(function(d) {
+          return d.x;
+        })
+        .rollup(function(d) {
+          return d[0];
+        })
         .entries(data);
 
 
@@ -126,7 +130,9 @@
       return xdomain.indexOf(d.x) > -1;
     });
 
-    var extent = d3.extent(data, function(d) { return d.y; });
+    var extent = d3.extent(data, function(d) {
+      return d.y;
+    });
     var ymax = extent[1];
     var ymin = Math.min(0, extent[0]);
 

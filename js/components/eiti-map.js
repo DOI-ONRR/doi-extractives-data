@@ -230,7 +230,9 @@
               .append('title');
 
           link
-            .filter(function(d) { return !d.mesh; })
+            .filter(function(d) {
+              return !d.mesh;
+            })
             .attr('xlink:href', evaluator('"#" + id'))
             .attr('xlink:name', evaluator('id'))
             .attr('xlink:title', evaluator('id'));
@@ -261,7 +263,9 @@
         if (this.hasAttribute('data-title')) {
           var title = evaluator(this.getAttribute('data-title'));
           feature.select('title')
-            .filter(function(d) { return !d.mesh; })
+            .filter(function(d) {
+              return !d.mesh;
+            })
             // .each(function(d) { console.log('title:', d); })
             .text(title);
         }
@@ -317,7 +321,9 @@
 
       if (!bbox) {
         var bboxes = layers.data()
-          .filter(function(d) { return d; })
+          .filter(function(d) {
+            return d;
+          })
           .map(function(d) {
             return bounds(d);
           });

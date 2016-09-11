@@ -35,17 +35,16 @@ $( document ).ready(function() {
         $('.search-results-count').append( json.hits.total + ' search results');
         if (json.hits.total === 0) {
           $('.search-no-results').show();
-        }
-        else{
+        } else {
           $('.search-no-results').remove();
         }
 
-        $.each(json.hits.hits, function(i, hit){
+        $.each(json.hits.hits, function(i, hit) {
 
-        var result_description = hit._source.description;
+          var result_description = hit._source.description;
 
           var tags = '';
-          if(hit._source.tag) {
+          if (hit._source.tag) {
 
             $.each(hit._source.tag, function(i, tag) {
               tags += '<span class="search-result-list-tag">&nbsp;<a href="../search-results/?q='
@@ -69,11 +68,10 @@ $( document ).ready(function() {
             + '</article>');
         });
       });
-  }
-  else {
+  } else {
     $('.search-no-results').show();
     $('.loading').remove();
     $('.search-results-count').append( 0 + ' search results');
-
   }
+
 });

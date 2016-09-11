@@ -24,7 +24,11 @@
         .parallels([8, 18]);
 
     var point,
-        pointStream = {point: function(x, y) { point = [x, y]; }},
+        pointStream = {
+          point: function(x, y) {
+            point = [x, y];
+          }
+        },
         lower48Point,
         alaskaPoint,
         hawaiiPoint;

@@ -282,9 +282,13 @@
 
       var area = d3.svg.area()
         .interpolate('step-after')
-        .x(function(d) { return x(d.year); })
+        .x(function(d) {
+          return x(d.year);
+        })
         .y0(y(0))
-        .y1(function(d) { return y(d.value); });
+        .y1(function(d) {
+          return y(d.value);
+        });
 
       var areas = selection.selectAll('path.area')
         .data([
@@ -351,7 +355,9 @@
       }
 
       var updated = selection.property('updated');
-      var t = function(d) { return d; };
+      var t = function(d) {
+        return d;
+      };
       if (updated) {
         t = function(d) {
           return d.transition()

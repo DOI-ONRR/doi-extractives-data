@@ -5,7 +5,7 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
+  var NO_DATA_FLAG = undefined;  // eslint-disable-line no-undef-init
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(

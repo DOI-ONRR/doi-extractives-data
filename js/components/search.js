@@ -10,7 +10,7 @@ $( document ).ready(function() {
     var sURLVariables = sPageURL.split('&');
     for (var i = 0; i < sURLVariables.length; i++) {
       var sParameterName = sURLVariables[i].split('=');
-      if (sParameterName[0] == sParam) {
+      if (sParameterName[0] === sParam) {
         return sParameterName[1];
       }
     }
@@ -33,7 +33,7 @@ $( document ).ready(function() {
       .done(function(json) {
         $('.loading').remove();
         $('.search-results-count').append( json.hits.total + ' search results');
-        if (json.hits.total == 0){
+        if (json.hits.total === 0) {
           $('.search-no-results').show();
         }
         else{

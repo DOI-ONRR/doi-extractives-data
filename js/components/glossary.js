@@ -171,7 +171,7 @@
       this.isOpen = false;
       accessibility.removeTabindex(this.$body);
 
-      if (this.$navDrawer.attr('aria-hidden') == 'false') {
+      if (this.$navDrawer.attr('aria-hidden') === 'false') {
         this.$navToggle.click();
       }
     },
@@ -185,7 +185,7 @@
 
     /** Close glossary on escape keypress */
     handleKeyup: function(e) {
-      if (e.keyCode == KEYCODE_ESC) {
+      if (e.keyCode === KEYCODE_ESC) {
         if (this.isOpen) {
           this.hide();
         }

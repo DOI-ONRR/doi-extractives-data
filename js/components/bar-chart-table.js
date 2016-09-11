@@ -19,21 +19,21 @@
 
     if (root.classed('county-table')) {
 
-      function parseYearVals(context) {
+      var parseYearVals = function(context) {
         var yearVals = context.getAttribute('data-year-values') &&
             context.getAttribute('data-year-values') !== 'null'
               ? context.getAttribute('data-year-values')
               : '{}';
         return JSON.parse(yearVals);
-      }
+      };
 
-      function coerceNumber(num) {
+      var coerceNumber = function(num) {
         return typeof(num) == undefined || typeof(num) == 'undefined'
           ? WITHHELD_FLAG
           : num;
-      }
+      };
 
-      function cellData(data, year, property, coerce) {
+      var cellData = function(data, year, property, coerce) {
         if (data && property) {
           if ( data[year] ) {
             return data[year][property] || coerceNumber(coerce);
@@ -45,9 +45,9 @@
         } else {
           return coerceNumber(coerce);
         }
-      }
+      };
 
-      function formatText(context, value) {
+      var formatText = function(context, value) {
         var format = d3.format(context.getAttribute('data-format') || ',')
 
         if (context.getAttribute('data-format') === '%') {
@@ -66,9 +66,12 @@
         } else {
           return format(value);
         }
+      };
+
+      if (!year) {
+        throw new Error('no year provided!');
       }
 
-      var year = year || '2013';
       var bars = root.selectAll('[data-value]');
       var texts = root.selectAll('[data-value-text]');
       var sentences = root.selectAll('[data-sentence]');
@@ -118,13 +121,16 @@
             : false;
         });
 
-      sentencesData.select('[data-value]').attr('data-value', function(d) {
+      sentencesData.select('[data-value]')
+        .attr('data-value', function(d) {
           return d;
-        }).text(function(d) {
+        })
+        .text(function(d) {
           return formatText(this, d);
         })
 
-      texts.datum(function() {
+      texts
+        .datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property) || 0;
@@ -137,7 +143,8 @@
         });
 
       var that = this;
-      swatches.datum(function() {
+      swatches
+        .datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property) || 0;
@@ -145,7 +152,7 @@
         .attr('data-value-swatch', function(d) {
           return d;
         })
-        .style('background-color', function (d) {
+        .style('background-color', function(d) {
           if (d && that.eitiDataMap.scale) {
             return that.eitiDataMap.scale(d);
           }
@@ -167,7 +174,7 @@
           return data[year] || WITHHELD_FLAG;
         }
       })
-      .attr('aria-hidden', function (d) {
+      .attr('aria-hidden', function(d) {
         return !d;
       });
     }
@@ -177,10 +184,11 @@
     var rows = d3.select(this).selectAll('tbody > tr');
     rows.classed('selected', false);
 
-    rows.selectAll('[data-sentence]').attr('aria-hidden', true);
+    rows.selectAll('[data-sentence]')
+      .attr('aria-hidden', true);
 
     // show matching row
-    rows.filter(function(row) {
+    rows.filter(function() {
       return this.getAttribute('data-fips') === fips;
     })
     .classed('selected', true)
@@ -261,16 +269,17 @@
       }
 
       var that = this;
-      cells.forEach(function(cell, i) {
+      cells.forEach(function(cell, i) { // eslint-disable-line no-unused-vars
         if (!cell) {
-          console.warn('no cell @', i);
+          // console.warn('no cell @', i);
           return;
         } else if (cell.parentNode.hasAttribute('data-value')) {
-          console.warn('cell is child', i);
+          // console.warn('cell is child', i);
         }
 
         var cellAlwaysEmpty = cell.getAttribute('data-year-values') === 'null';
         var childCells = cell.querySelectorAll('[data-value]');
+        var span;
 
         // TODO only do this if autolabel="true"?
         if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
@@ -279,7 +288,7 @@
             cell.removeChild(cell.firstChild);
           } else {
             var text = cell.removeChild(cell.firstChild);
-            var span = cell.appendChild(document.createElement('span'));
+            span = cell.appendChild(document.createElement('span'));
             span.className = 'text';
             span.appendChild(text);
           }
@@ -287,8 +296,9 @@
 
 
         var barExtent = cell.querySelector('.bar');
+        var bar;
         if (barExtent) {
-          var bar = barExtent.querySelector('.bar');
+          bar = barExtent.querySelector('.bar');
         }
 
         if (!barExtent && !bar) {
@@ -296,7 +306,7 @@
           barExtent.className = 'bar';
           bar = document.createElement('div');
           bar.className = 'bar';
-          var span = cell.querySelector('span');
+          span = cell.querySelector('span');
           if (barExtent && bar) {
             if (span) {
               cell.insertBefore(barExtent,span);
@@ -341,6 +351,7 @@
       {
         attachedCallback: {value: initialize},
 
+        // eslint-disable-next-line no-unused-vars
         attributeChangedCallback: {value: function(attr, old, value) {
           switch (attr) {
             case 'orient':

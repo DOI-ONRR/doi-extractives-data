@@ -7,6 +7,7 @@ rules:
   brace-style: [warn, 1tbs]
   curly: [warn, multi-line]
   eqeqeq: warn
+  func-call-spacing: warn
   no-undef-init: warn
   no-unused-expressions: warn
   no-whitespace-before-property: warn

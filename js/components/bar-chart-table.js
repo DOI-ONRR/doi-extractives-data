@@ -28,7 +28,7 @@
       };
 
       var coerceNumber = function(num) {
-        return typeof(num) == undefined || typeof(num) == 'undefined'
+        return num === null || num === 'undefined'
           ? WITHHELD_FLAG
           : num;
       };

@@ -29,9 +29,8 @@
   var barHeight = bottom - top;
 
   var extentPercent = 0.05; // 5%
-  var extentMargin = barHeight * extentPercent;
-  var extentLessTop = top;
-  top = top + extentMargin;
+  extentMargin = barHeight * extentPercent;
+  top += extentMargin;
   var extentTop = top - extentMargin;
 
   var fullHeight = height + textMargin + extentMargin + tickPadding - (2 * baseMargin);
@@ -247,7 +246,7 @@
         .call(axis);
 
     function isInSet (year, vals) {
-      var vals = vals || values;
+      vals = vals || values;
       if (vals[year] !== undefined) {
         return vals[year].y !== null;
       } else {

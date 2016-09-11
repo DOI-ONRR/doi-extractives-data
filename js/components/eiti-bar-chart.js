@@ -242,8 +242,8 @@
     }
 
     var xAxis = svg.select('.x-axis')
-        .attr('transform', 'translate(' + [0, bottom] + ')')
-        .call(axis);
+      .attr('transform', 'translate(' + [0, bottom] + ')')
+      .call(axis);
 
     function isInSet (year, vals) {
       vals = vals || values;

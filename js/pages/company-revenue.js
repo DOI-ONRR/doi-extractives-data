@@ -1,6 +1,6 @@
-// globals d3, eiti, EITIBar
+/* global d3, eiti */
 (function() {
-  // 'use strict';
+  'use strict';
 
   var root = d3.select('#companies');
   var revenueTypeList = root.select('#revenue-types');
@@ -83,7 +83,6 @@
     .on('change', filterChange);
 
   var initialState = hash.read();
-  var outerKey = 'Commodity';
   var innerKey = 'revenueType';
 
   var withheldComparator = function(key) {
@@ -115,16 +114,15 @@
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
     if (hasType && !hasCommodity) {
-      outerKey = 'revenueType';
-      grouper.key(getter(innerKey = 'Commodity'));
+      innerKey = 'Commodity';
     } else {
-      outerKey = 'Commodity';
-      grouper.key(getter(innerKey = 'revenueType'));
+      innerKey = 'revenueType';
     }
+    grouper.key(getter(innerKey));
 
     model.load(state, function(error, data) {
       if (error) {
-        console.error('error:', error);
+        // console.error('error:', error);
         data = [];
       }
 
@@ -300,10 +298,7 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'bar')
-      .append(function() {
-        // XXX this is a document.registerElement() workaround
-        return new EITIBar(); // jshint ignore:line
-      });
+      .append('eiti-bar');
   }
 
   function updateRevenueItem(selection, extent) {

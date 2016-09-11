@@ -93,7 +93,8 @@
     manager.init = function(initial) {
       var previous = state;
       if (initial) {
-        mergeState(initial) || update(state, previous); // jshint ignore:line
+        // eslint-disable-next-line no-unused-expressions
+        mergeState(initial) || update(state, previous);
       } else {
         update(state, null);
       }

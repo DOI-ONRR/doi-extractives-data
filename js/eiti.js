@@ -310,7 +310,7 @@
    * window.addEventListener('resize', throttle(someFunction, 150, window));
    */
   eiti.util.throttle = function throttle(fn, threshhold, scope) {
-    threshhold || (threshhold = 250);
+    threshhold = threshhold || 250;
     var last,
         deferTimer;
     return function () {

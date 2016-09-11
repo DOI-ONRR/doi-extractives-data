@@ -6,4 +6,8 @@ extends: eslint:recommended
 rules:
   curly: [warn, multi-line]
   eqeqeq: warn
+  no-magic-numbers:
+    - off # enable this with "warn" or "error"
+    - ignore: [0, 1]
+  no-unused-expressions: warn
   no-whitespace-before-property: warn

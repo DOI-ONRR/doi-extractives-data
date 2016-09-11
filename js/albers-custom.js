@@ -32,6 +32,7 @@
     function albersUsa(coordinates) {
       var x = coordinates[0], y = coordinates[1];
       point = null;
+      // eslint-disable-next-line no-unused-expressions
       (lower48Point(x, y), point)
           || (alaskaPoint(x, y), point)
           || hawaiiPoint(x, y);

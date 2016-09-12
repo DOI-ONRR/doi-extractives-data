@@ -1,6 +1,6 @@
 // globals d3, eiti, EITIBar
 (function() {
-  // 'use strict';
+  'use strict';
 
   var root = d3.select('#companies');
   var filterToggle = root.select('button.toggle-filters');
@@ -54,7 +54,7 @@
   if (!year) {
     throw new Error('No year found in', root.node());
   }
-  var dataUrl = eiti.data.path + 'company/revenue/' + year + '.tsv';
+  var dataUrl = eiti.data.path + 'company-revenue/output/' + year + '.tsv';
 
   var model = eiti.explore.model(dataUrl)
     .transform(removeRevenueTypePrefix)

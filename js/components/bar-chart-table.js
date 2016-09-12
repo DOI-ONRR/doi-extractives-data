@@ -1,9 +1,14 @@
 (function(exports) {
+  'use strict';
 
   var initialize = function() {
-    this._cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
-    this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
-    this._cells = this._cells.concat(this.nested_cells)
+    this._cells = [].slice.call(
+      this.querySelectorAll('tr > [data-value]')
+    );
+    this.nested_cells = [].slice.call(
+      this.querySelectorAll('tr > [data-value] > [data-value]')
+    );
+    this._cells = this._cells.concat(this.nested_cells);
     this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 

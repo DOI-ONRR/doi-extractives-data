@@ -14,7 +14,8 @@ nav_items:
         title: By offshore area
 ---
 
-{% assign region_name = page.title %}
+{% assign region_name = page.id | capitalize %}
+{% assign region_title = page.title %}
 {% assign region_id = page.id %}
 {% assign locality_name = 'Region' %}
 
@@ -29,7 +30,7 @@ nav_items:
       /
     </div>
 
-    <h1 id="title">{{ region_name }}</h1>
+    <h1 id="title">{{ region_title }}</h1>
 
     <div class="container-half">
       <section id="overview">

@@ -7,7 +7,7 @@ var path = require('path');
 var yaml = require('js-yaml');
 var assert = require('assert');
 var async = require('async');
-
+var _ = require('lodash');
 
 
 var OUT_PATH = path.join(__dirname, '../../_data');
@@ -64,7 +64,7 @@ describe('federal production (ONRR)', function() {
       );
     }
 
-    it('check sentinel values', function(done) {
+    xit('check sentinel values', function(done) {
 
       var sentinels = [
         {
@@ -80,7 +80,12 @@ describe('federal production (ONRR)', function() {
         {
           product: 'Oil (bbl)',
           year: 2013,
-          value: 623103681.09
+          value: 623103687.09
+        },
+        {
+          product: 'Oil (bbl)',
+          year: 2015,
+          value: 755158058.14
         },
         {
           product: 'Gas (mcf)',
@@ -99,6 +104,104 @@ describe('federal production (ONRR)', function() {
 
       done();
     });
+  });
+
+  describe('offshore values values', function() {
+
+
+
+    var offshoreRegionsData = yaml.safeLoad(
+      fs.readFileSync(
+        path.join(OUT_PATH, 'offshore_federal_production_regions.yml'),
+        'utf8'
+      )
+    );
+
+    var offshoreAreaPath = '_data/offshore_federal_production_areas';
+    var offshoreAreas = fs.readdirSync(offshoreAreaPath)
+
+    regionProductionByArea = {}
+
+    _.each(offshoreAreas, function(region) {
+      var areaProduction = path.join(offshoreAreaPath, region);
+      regionProductionByArea[region.split('.')[0]] = yaml.safeLoad(
+        fs.readFileSync(areaProduction, 'utf8')
+      );
+    });
+
+    var assertSentinelMatch = function (products, product, year, value) {
+      var expected = Math.round(value);
+      console.log(product, year, value, products)
+      var actual = products[product].volume[year];
+      assert.equal(
+        expected, actual,
+        'expected ' + value + ' for: ' + [product, year].join(' | ')
+      );
+    }
+
+
+    var offshoreRegions = Object.keys(offshoreRegionsData);
+    var acceptedProducts = ['Salt (tons)', 'Oil (bbl)', 'Gas (mcf)'];
+
+    var assertProductExists = function (products) {
+      products.forEach(function(product) {
+        var productExists = acceptedProducts.indexOf(product) > -1;
+        assert.ok(
+          productExists,
+          product,
+          ['product', product, 'doesn\'t exist'].join(' ')
+        );
+      });
+    }
+
+    var assertOnlyProducts = function (products) {
+      var allProducts = _.union(products, acceptedProducts);
+      var correctNumberProducts = allProducts.length === acceptedProducts.length;
+      assert.ok(
+        correctNumberProducts,
+        products,
+        ('products: ' + products.join(' | '))
+      );
+    }
+
+    it('only has Oil, Gas, Salt', function(done) {
+
+      offshoreRegions.forEach(function(region) {
+        var products = offshoreRegionsData[region].products;
+        var keys = Object.keys(products)
+        assertProductExists(keys);
+        assertOnlyProducts(keys);
+      })
+
+      done();
+    });
+
+    it('checks offshore areas', function(done){
+      console.log(regionProductionByArea)
+       var sentinels = [
+        {
+          product: 'Salt (tons)',
+          year: 2015,
+          area: 'CGM',
+          region: 'Gulf',
+          value: 'Withheld'
+        }
+      ];
+
+      sentinels.forEach(function(sentinel) {
+        var products = regionProductionByArea[sentinel.region][sentinel.area].products;
+
+        assertSentinelMatch(
+          products,
+          sentinel.product,
+          sentinel.year,
+          sentinel.value
+        );
+      });
+
+      done()
+    })
+
   });
 
 });

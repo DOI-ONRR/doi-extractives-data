@@ -9,6 +9,7 @@ rules:
   eqeqeq: warn
   func-call-spacing: warn
   linebreak-style: [warn, unix]
+  max-len: [warn, {code: 80}]
   new-parens: warn
   no-undef-init: warn
   no-unused-expressions: warn

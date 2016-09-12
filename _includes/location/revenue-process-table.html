@@ -89,34 +89,37 @@
       {% endfor %}
 
       <tbody>
-        <tr>
-          <th class="table-arrow_box-subcategory">Onshore</th>
-          <td>
-            <strong>Bonus:</strong> The amount offered by the highest bidder
-          </td>
-          <td>
-            <strong>$1.50</strong> annual rent per acre for 5 years<br/>
-            <strong>$2</strong> annual rent per acre thereafter
-          </td>
-          <td>
-            <strong>12.5%</strong> of production value
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <th class="table-arrow_box-subcategory">Offshore</th>
-          <td>
-            <strong>Bonus:</strong> The amount offered by the highest bidder
-          </td>
-          <td>
-            <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
-          </td>
-          <td>
-            <strong>12.5%</strong>, <strong>16.67%</strong>, or
-            <strong>18.75%</strong> of production value
-          </td>
-          <td></td>
-        </tr>
+        {% if include.offshore %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Offshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
+            </td>
+            <td>
+              <strong>12.5%</strong>, <strong>16.67%</strong>, or
+              <strong>18.75%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+        {% else %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Onshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$1.50</strong> annual rent per acre for 5 years<br/>
+              <strong>$2</strong> annual rent per acre thereafter
+            </td>
+            <td>
+              <strong>12.5%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+        {% endif %}
       </tbody>
     {% endif %}
 

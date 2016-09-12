@@ -16,7 +16,8 @@
 
           this.marks = root.selectAll('[data-value]')
             .datum(function() {
-              if (this.getAttribute('data-value') === null || this.getAttribute('data-value') === 'null') {
+              if (!this.hasAttribute('data-value')
+                  || this.getAttribute('data-value') === 'null') {
 
                 return WITHHELD_FLAG;
               } else {
@@ -34,7 +35,9 @@
 
         setYear: {value: function(year) {
           this.marks.datum(function() {
-              var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+              var data = JSON.parse(
+                this.getAttribute('data-year-values') || '{}'
+              );
               if (data[year] === null || data[year] === 'null') {
                 return WITHHELD_FLAG;
               } else {
@@ -101,22 +104,15 @@
 
           var root = d3.select(this);
 
-          if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
-            if (hasData.indexOf(true) < 0) {
-              root.select('.legend-data')
-                .attr('aria-hidden', true);
-              root.select('.legend-withheld')
-                .attr('aria-hidden', false);
-              root.select('.legend-svg')
-                .attr('aria-hidden', true);
-            } else {
-              root.select('.legend-data')
-                .attr('aria-hidden', false);
-              root.select('.legend-withheld')
-                .attr('aria-hidden', true);
-              root.select('.legend-svg')
-                .attr('aria-hidden', false);
-            }
+          var truthy = hasData.indexOf(true) > -1;
+          var withheld = hasData.indexOf(WITHHELD_FLAG) > -1;
+          if (truthy || withheld) {
+            root.select('.legend-data')
+              .attr('aria-hidden', !truthy);
+            root.select('.legend-withheld')
+              .attr('aria-hidden', truthy);
+            root.select('.legend-svg')
+              .attr('aria-hidden', !truthy);
 
             root.select('.legend-no-data')
               .attr('aria-hidden', true);
@@ -124,7 +120,6 @@
             root.select('.details-container')
               .attr('aria-hidden', false);
           } else {
-
             root.select('.legend-data')
               .attr('aria-hidden', true);
             root.select('.legend-withheld')
@@ -136,7 +131,8 @@
             root.select('.details-container')
               .attr('aria-hidden', true)
               .select('button')
-                .attr('aria-expanded', false); // unexpand county-chart
+                // unexpand county-chart
+                .attr('aria-expanded', false);
           }
 
           var type = this.getAttribute('scale-type') || 'quantize';
@@ -244,7 +240,9 @@
             legendScale.call(legend);
 
           } else {
-            console.warn('this <eiti-data-map> element does not have an associated svg legend.');
+            console.warn(
+              '<eiti-data-map> does not have an associated svg legend:', this
+            );
           }
 
           // start trim height on map container

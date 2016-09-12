@@ -3,6 +3,17 @@ id: TX
 title: Texas
 FIPS: '48'
 
+# this triggers whitelisting of nearby states to render in county maps,
+# which solves the problem of Hawaii showing up on maps of Texas
+neighbors:
+- AR
+- CO
+- KS
+- LA
+- MO
+- NM
+- OK
+
 priority: true
 
 offshore_area: |

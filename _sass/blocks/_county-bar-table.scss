@@ -21,15 +21,12 @@
 
   tbody > tr:hover,
   tbody > tr:focus,
-  tbody > tr.selected {
+  tbody > tr.selected,
+  tbody > tr.mouseover {
     background-color: $gray-pale;
 
     .swatch {
       border: 1px solid $neutral-gray;
-    }
-
-    .bar .bar {
-      background-color: $green-dark-chart-mid;
     }
   }
 

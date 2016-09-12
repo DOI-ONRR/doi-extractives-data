@@ -175,18 +175,36 @@
 
   var show = function(fips) {
     var rows = d3.select(this).selectAll('tbody > tr');
-    rows.classed('selected', false);
+    rows
+      .classed('mouseover', false);
 
-    rows.selectAll('[data-sentence]').attr('aria-hidden', true);
+    rows.select('[data-sentence]')
+      .attr('aria-hidden', true);
 
-    // show matching row
-    rows.filter(function(row) {
-      return this.getAttribute('data-fips') === fips;
-    })
-    .classed('selected', true)
-    .select('[data-sentence]')
-    .attr('aria-hidden', false);
+    rows
+      .classed('selected', false)
+      .filter(function() {
+        return this.getAttribute('data-fips') === fips;
+      })
+      .classed('selected', true)
+      .select('[data-sentence]')
+        .attr('aria-hidden', false);
+  };
 
+  var highlight = function(fips, event) {
+    var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false);
+
+    if (event !== 'mouseout') {
+      rows
+      .classed('mouseover', false)
+      .filter(function() {
+        return this.getAttribute('data-fips') === fips;
+      })
+      .classed('mouseover', true)
+        .attr('aria-hidden', false);
+    }
   }
 
   var update = function() {
@@ -353,6 +371,8 @@
         setYear: {value: setYear},
 
         show: {value: show},
+
+        highlight: {value: highlight},
 
         orient: {
           get: function() {

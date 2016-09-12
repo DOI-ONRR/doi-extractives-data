@@ -89,7 +89,7 @@
 
         update: {value: function() {
           var hasData = [];
-          this.marks.data().every(function(d){
+          this.marks.data().every(function(d) {
             if (d === WITHHELD_FLAG) {
               hasData.push(WITHHELD_FLAG);
               return true;

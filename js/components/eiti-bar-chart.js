@@ -263,7 +263,7 @@
 
     xAxis.selectAll('text')
       .attr('class', function(d) {
-        if (!isInSet(d)){
+        if (!isInSet(d)) {
           return 'dataless';
         }
       });

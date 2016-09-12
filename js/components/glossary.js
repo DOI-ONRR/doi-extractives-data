@@ -80,7 +80,7 @@
       }
     });
 
-    self.$body.on('click', function(event){
+    self.$body.on('click', function(event) {
       event.stopPropagation();
     });
   };
@@ -106,7 +106,7 @@
     linkTerms: function() {
       var self = this;
       var $terms = $(self.selectors.term);
-      $terms.each(function(){
+      $terms.each(function() {
         var $term = $(this);
         $term.attr('title', 'Click to define')
           .attr('tabindex', 0)
@@ -136,7 +136,7 @@
       // Hack: Expand text for selected item
       this.list.search();
 
-      this.list.visibleItems.forEach(function(item){
+      this.list.visibleItems.forEach(function(item) {
         var $elm = $(item.elm);
         $elm.attr('aria-expanded', true);
       });

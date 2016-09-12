@@ -8,7 +8,7 @@ priority: true
 
 state_revenue_year: 2015
 
-locality_name: 'Borough or Census Area'
+locality_name: 'Borough or census area'
 
 case_study_link: |
     For a detailed view of how oil extraction affects communities in Alaska, read more about [North Slope Borough](/case-studies/north-slope/).
@@ -45,45 +45,68 @@ state_impact: |
 
 ### State agencies
 
-Alaska state agencies collect, manage, and distribute revenue from the extractive industries; enforce rules and regulations associated with extraction; and manage state-owned land and natural resources.
+Alaska state agencies regulate extraction and interact with extractive industry companies in Alaska, particularly when they're operating on state or private land.
 
-Alaska state agencies regulate extraction and interact with industry across the five stages of extraction in Alaska, particularly on state and private lands. On federal lands, state agencies will be involved, but to a lesser extent, as federal agencies hold primary responsibility for managing the land. To learn how extraction occurs on federal land, see the federal “How it Works” section for more information.
+The [Alaska Oil and Gas Conservation Commission](http://doa.alaska.gov/ogc/WhoWeAre/welcome.html) leads monitoring, enforcement, and restoration activities to support responsible stewardship of Alaska’s oil and gas resources. Its responsibilities include:
 
-The Alaska Department of Administration’s [Oil and Gas Conservation Commission](http://doa.alaska.gov/ogc/WhoWeAre/welcome.html) leads Alaska’s monitoring, enforcement, and restoration activities to support responsible stewardship of Alaska’s oil and gas resources.
+* Evaluating and approving drilling operations
+* Preventing oil and gas waste at drill sites where the majority of natural gas extraction is flared
+* Preventing freshwater contamination throughout drilling
+* Administering Alaska’s Underground Injection Control Program
+* Inspecting oil field drilling, projecting, metering, and abandonment activities
+* Publishing a [competitiveness report](http://dor.alaska.gov/Portals/5/Alaska's%20Oil%20and%20Gas%20Competitiveness%20Report%202015.pdf) and [annual reports](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015)
 
-The Alaska [Oil and Gas Conservation Commission](http://doa.alaska.gov/ogc/WhoWeAre/welcome.html) evaluates and approves drilling operations while preventing oil and gas waste at drill sites where the majority of natural gas extraction is flared. The Commission is responsible for preventing freshwater contamination throughout drilling and administers Alaska’s Underground Injection Control Program. The Commission is the primary body responsible for inspecting oil field drilling, projecting, metering and abandonment activities. 
+The [Alaska Department of Natural Resources](http://dnr.alaska.gov/) manages Alaska's natural resources and extraction on state land.
 
-The Department of Natural Resources’ (DNR) [Oil and Gas Division](http://dog.dnr.alaska.gov/) manages planning, permitting, leasing for oil and gas development and monitors collection of all funds resulting from oil and gas extraction. It also participates in decommissioning and restoration.
+The [Division of Oil and Gas](http://dog.dnr.alaska.gov/) is responsible for leasing state lands for oil, gas, and geothermal extraction. It publishes [annual reports](http://dog.dnr.alaska.gov/Publications/AnnualReports.htm), and its activities include:
 
-The DNR’s Oil and Gas Division develops and manages the state’s oil and gas leasing programs. The Oil and Gas division identifies prospective lease areas, performs geologic, economic, environmental and social analyses, develops leasing schedules, conducts public review of proposed sales, and conducts oil and gas lease sales. The Oil and Gas Division’s [Annual Reports](http://dog.dnr.alaska.gov/Publications/AnnualReports.htm) and [Decommissioning, Removal, and Restoration Regulatory Review (PDF)](http://dog.dnr.alaska.gov/publications/Documents/OtherReports/DRR-ArcadisReport-20141128.pdf), which details conservation efforts related to drilling infrastructure, are available online. 
+* Identifying prospective lease areas; evaluating oil and gas resources; and performing geologic, economic, environmental, and social analyses
+* Fielding and issuing exploration permits, developing leasing schedules, and conducting public review of proposed sales
+* Conducting oil and gas lease sales, negotiating contracts, and conducting royalty audits
+* Decommissioning and restoration activities, including [Decommissioning, Removal, and Restoration Regulatory Review (PDF)](http://dog.dnr.alaska.gov/publications/Documents/OtherReports/DRR-ArcadisReport-20141128.pdf), which details conservation efforts related to drilling infrastructure
+- Publishing statutes and regulations governing [oil and gas](http://dog.dnr.alaska.gov/AboutUs/OGStatutes.htm) and [geothermal](http://dog.dnr.alaska.gov/AboutUs/GeothermalStatutes.htm)
+- Publishing data about [oil and gas funds received and distributed](http://dog.dnr.alaska.gov/Royalty/Funds.htm#received)
 
-The DNR’s [Mining, Land and Water Division](http://dnr.alaska.gov/mlw/) manages Alaska’s land holdings and minerals excluding oil, gas, coalbed methane, and geothermal. The Division is responsible for planning, leasing, permitting, exploration, and development as well as administration of the [Surface Coal Mining Control and Reclamation Program](http://dnr.alaska.gov/mlw/mining/coal/) and the [Abandoned Mine Land Program](http://dnr.alaska.gov/mlw/mining/aml/).
+The [Mining, Land, and Water Division](http://dnr.alaska.gov/mlw/) is the primary manager of Alaska’s land holdings, which are larger by area than any other state, and Alaska's mineral resources (excluding oil, gas, coalbed methane, and geothermal energy). It is responsible for:
 
-The DNR’s [Mining, Land and Water Division](http://dnr.alaska.gov/mlw/) is the primary manager of Alaska’s land holdings, which are larger by area than any other state. The Division handles planning, leasing and permitting, as well as oversees major land development project authorizations like the North Slope. Information on [Public Land Titles](http://dnr.alaska.gov/mlw/title/index.cfm) and [State Land Sales](http://dnr.alaska.gov/mlw/landsale/index.cfm) is available online.
-
-DNR’s [Abandoned Mine Land Program](http://dnr.alaska.gov/mlw/mining/aml/) is the group responsible for regulating surface mines and mining reclamation activities. In 2014, there were 23 sites awaiting reclamation.
-
-The DNR’s [Mining, Land and Water Division](http://dnr.alaska.gov/mlw/) manages all mineral resources except oil, gas and coalbed methane. It manages state mineral exploration, development and leasing programs on 96 million acres of state lands available for exploration. The Division is responsible for planning, leasing, permitting industrial use mines. Alaska’s [Mineral Development Policies (PDF)](http://dnr.alaska.gov/mlw/mining/AK_MineralPolicy.pdf) and [Mining Factsheets](http://dnr.alaska.gov/mlw/factsht/) are available online.
+* Managing state mineral exploration, development and leasing programs on 96 million acres of state lands available for exploration
+* Planning, leasing, and permitting industrial use mines
+* Administering the [Surface Coal Mining Control and Reclamation Program](http://dnr.alaska.gov/mlw/mining/coal/)
+* Administering the [Abandoned Mine Land Program](http://dnr.alaska.gov/mlw/mining/aml/), which regulates surface mines and mining reclamation activities (in 2014, there were 23 sites awaiting reclamation)
+* Overseeing major land development project authorizations like the North Slope
+* Publishing information on [Public Land Titles](http://dnr.alaska.gov/mlw/title/index.cfm) and [State Land Sales](http://dnr.alaska.gov/mlw/landsale/index.cfm)
+* Publishing Alaska’s [mineral development policies (PDF)](http://dnr.alaska.gov/mlw/mining/AK_MineralPolicy.pdf), [mining factsheets](http://dnr.alaska.gov/mlw/factsht/), and [mining regulations](http://dnr.alaska.gov/mlw/mining/sb175.pdf)
 
 The [Alaska Department of Revenue](http://dor.alaska.gov/) assesses, collects, manages, and distributes the majority of extractives revenues in Alaska.
 
-The [Alaska Department of Revenue](http://dor.alaska.gov/) collects revenue from companies engaged in extraction with verification from the Oil and Gas Division. The [Annual Report](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015) and [Revenue Sources Book (PDF)](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1240r) provide greater detail.
+The [Alaska Department of Revenue](http://dor.alaska.gov/) collects revenue from companies engaged in extraction, with verification from the Oil and Gas Division, and publishes an [Annual Report](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015) and [Revenue Sources Book (PDF)](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1240r).
 
-The Environmental Conservation’s Program [Spill Prevention and Response Division](http://dec.alaska.gov/spar/index.htm) (SPAR) prevents spills of oil, prepares for when a spill occurs and responds rapidly to protect human health and the environment.
-
-
------
-
-* The [Alaska Department of Natural Resources Division of Oil and Gas](http://dog.dnr.alaska.gov/index.htm) is responsible for leasing state lands for oil, gas, and geothermal extraction. Its major functions include evaluating oil and gas resources, fielding and issuing exploration permits, conducting royalty audits, and negotiating contracts.
-  - [Oil and gas statutes and regulations](http://dog.dnr.alaska.gov/AboutUs/OGStatutes.htm)
-  - [Geothermal statutes and regulations](http://dog.dnr.alaska.gov/AboutUs/GeothermalStatutes.htm)
-  - [Oil and gas funds received and distributed](http://dog.dnr.alaska.gov/Royalty/Funds.htm#received)
-* The [Alaska Department of Natural Resources Division of Land and Water](http://dnr.alaska.gov/mlw/index.htm) has additional information about statutes, regulations, and leasing on state lands.
-  - [Mining regulations](http://dnr.alaska.gov/mlw/mining/sb175.pdf)
-  - [State of Alaska mineral development policies](http://dnr.alaska.gov/mlw/mining/AK_MineralPolicy.pdf)
 * The [Alaska Department of Revenue Tax Division](http://www.tax.alaska.gov/) collects state taxes, including the Oil and Gas Production Tax and Oil and Gas Property Tax, and administers tax laws.
   - [Tax Division reports](http://www.tax.alaska.gov/programs/reports.aspx)
   - [Revenue sources and forecast information](http://www.tax.alaska.gov/programs/sourcebook/index.aspx)
 
-The [Alaska Oil and Gas Conservation Commission](http://doa.alaska.gov/ogc/) [competitiveness report](http://dor.alaska.gov/Portals/5/Alaska's%20Oil%20and%20Gas%20Competitiveness%20Report%202015.pdf) publishes [annual reports](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015).
+The Environmental Conservation’s Program [Spill Prevention and Response Division](http://dec.alaska.gov/spar/index.htm) (SPAR) prevents spills of oil, prepares for when a spill occurs, and responds rapidly to protect human health and the environment.
+
+### Fiscal costs of extractive activity
+
+In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities.
+
+The USEITI [case study on the North Slope Borough](../../case-studies/north-slope/) provides a holistic look at the impact of oil and gas production in the northern part of the state.
+
+The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
+
+#### Transportation
+
+
+
+#### Water
+
+
+
+#### Emergency services
+
+
+
+#### Reclamation
+
 

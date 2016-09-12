@@ -151,15 +151,17 @@
 
           var settings = {
             horizontal: {
-              width: 70,
+              width: 12,
               height: 12,
-              padding: 10
+              padding: 4,
+              margin: 10
             },
             vertical: {
               width: 15,
               height: 15,
               padding: 6
-            }
+            },
+
           },
           shapeWidth,
           shapeHeight,
@@ -247,6 +249,36 @@
           } else {
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');
           }
+
+          // If the legend is 'horizontal',
+          // then shift the text and label from
+          // its default settings
+          if (orient == 'horizontal') {
+            var cumulative = 0;
+
+            svgLegend.select('.legendCells')
+              .selectAll('.cell')
+                .datum(function(){
+                  return d3.select(this)
+                    .select('.label')
+                    .node()
+                    .getComputedTextLength();
+                })
+                .attr('transform',function(textWidth){
+                  var shift = cumulative;
+                  var s = settings.horizontal;
+                  var margin = s.width + s.padding + s.margin;
+                  cumulative += textWidth + margin;
+                  return 'translate(' + shift + ', 0)';
+                })
+                .select('text')
+                   .attr('transform',function(){
+                    var s = settings.horizontal;
+                    var padding = s.padding + s.width;
+                    return 'translate(' + padding + ', 10)';
+                  });
+          }
+          // end horizontal legend shift
 
           // start trim height on map container
           var svgContainer = d3.select(this)

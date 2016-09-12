@@ -55,7 +55,7 @@
     };
 
     var toggleTable = function(context) {
-      var context = context || this;
+      context = context || this;
       var countyFIPS = context.getAttribute('data-fips');
 
       highlightCounty(countyFIPS, 'selected');

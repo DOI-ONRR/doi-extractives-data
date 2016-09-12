@@ -1,5 +1,5 @@
 ---
 id: atlantic
-title: Atlantic
-permalink: /offshore/atlantic/
+title: Atlantic Ocean
+permalink: /explore/offshore-atlantic/
 ---

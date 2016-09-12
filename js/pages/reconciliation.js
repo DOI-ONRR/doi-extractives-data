@@ -10,9 +10,15 @@
   var formatNumber = eiti.format.commaSeparatedDollars;
   var formatPercent = eiti.format.percent;
 
-  var dialogWithExtension = document.querySelector('.flowchart-dialog.flowchart-columns_right');
-  var extension = document.querySelector('.flowchart-stem_bottom_right_extra_long');
-  var dialogBottom = document.querySelector('.flowchart-dialog_bottom');
+  var dialogWithExtension = document.querySelector(
+    '.flowchart-dialog.flowchart-columns_right'
+  );
+  var extension = document.querySelector(
+    '.flowchart-stem_bottom_right_extra_long'
+  );
+  var dialogBottom = document.querySelector(
+    '.flowchart-dialog_bottom'
+  );
 
   function setExtHeight() {
     var newHeight = dialogBottom.getBoundingClientRect().bottom -
@@ -94,14 +100,16 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
-  function isException (val) {
+  function isException(val) {
     if (typeof(val) === 'string') {
       val = val.trim();
-      return (val === 'did not participate' || val === 'did not report' || val === 'N/A');
+      return val === 'did not participate'
+          || val === 'did not report'
+          || val === 'N/A';
     }
   }
 
-  function isMaterial (d) {
+  function isMaterial(d) {
     var varianceVal = Math.abs(d.value - d.company);
 
     var overThreshold = !!(varianceKey[d.name].threshold < d.variance);
@@ -137,6 +145,7 @@
 
   function update(state) {
     var query = state.toJS();
+    var reportedKey = 'Government Reported';
     hash.write(query);
 
     updateFilterDescription(state);
@@ -144,9 +153,9 @@
     grouper = d3.nest()
       .rollup(function(leaves) {
 
-        return leaves.map(function(d){
+        return leaves.map(function(d) {
           return {
-            value: d['Government Reported'],
+            value: d[reportedKey],
             company: d['Company Reported'],
             variance: d['Variance Percent'],
             varianceDollars: d['Variance Dollars']
@@ -154,7 +163,7 @@
         });
       })
       .sortValues(function(a, b) {
-        return d3.descending(+a['Government Reported'], +b['Government Reported']);
+        return d3.descending(+a[reportedKey], +b[reportedKey]);
       });
 
     grouper.key(getter('revenueType'));

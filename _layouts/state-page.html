@@ -67,6 +67,10 @@ nav_items:
 
 {% assign _viewbox = site.data.viewboxes[state_id] %}
 
+{% if page.is_cropped %}
+  {% assign _viewbox = site.data.viewboxes_cropped[state_id] %}
+{% endif %}
+
 {% capture regulations %}
   {{ page.content }}
 {% endcapture %}

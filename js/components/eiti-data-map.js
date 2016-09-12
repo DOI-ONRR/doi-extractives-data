@@ -159,7 +159,8 @@
             vertical: {
               width: 15,
               height: 15,
-              padding: 6
+              padding: 10,
+              margin: 6
             },
 
           },
@@ -219,6 +220,7 @@
           shapeWidth = settings[orient].width;
           shapeHeight = settings[orient].height;
           shapePadding = settings[orient].padding;
+          shapeMargin = settings[orient].margin;
 
           var svgLegend = d3.select(this)
             .select('.legend-svg')
@@ -234,6 +236,7 @@
               .shapeHeight(shapeHeight)
               .labelDelimiter(legendDelimiter)
               .shapePadding(shapePadding)
+              .labelOffset(shapeMargin)
               .labelAlign("start")
               .scale(scale);
 

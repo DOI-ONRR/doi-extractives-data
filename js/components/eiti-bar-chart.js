@@ -252,7 +252,7 @@
       .attr('transform', 'translate(' + [0, bottom] + ')')
       .call(axis);
 
-    function isInSet (year, vals) {
+    function isInSet(year, vals) {
       vals = vals || values;
       if (vals[year] !== undefined) {
         return vals[year].y !== null;

@@ -14,3 +14,4 @@ rules:
   no-undef-init: warn
   no-unused-expressions: warn
   no-whitespace-before-property: warn
+  space-before-function-paren: [warn, never]

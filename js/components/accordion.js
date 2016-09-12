@@ -11,14 +11,14 @@
   exports.Accordion.prototype = {
 
     // iterator for NodeLists
-    forEach: function (array, callback, scope) {
+    forEach: function(array, callback, scope) {
       for (var i = 0; i < array.length; i++) {
         callback.call(scope, i, array[i]);
       }
     },
 
     // determine truthiness an attribute of an element
-    elemStatus: function (elem, attr) {
+    elemStatus: function(elem, attr) {
       if (elem.getAttribute(attr) === 'true' ||
         elem.getAttribute(attr) === true) {
         return true;
@@ -42,7 +42,7 @@
      * @param Object childObj
      * @return Obj
      */
-    findParentNode: function (parentAttr, childObj) {
+    findParentNode: function(parentAttr, childObj) {
       var obj = childObj.parentNode;
       while(!obj.hasAttribute(parentAttr)) {
         obj = obj.parentNode;
@@ -55,7 +55,7 @@
      *
      * @return void
      */
-    toggleAccordion: function (e) {
+    toggleAccordion: function(e) {
       e = e || window.event; // XXX what is this??? - Shawn
       var target = e.currentTarget || e.target || e.srcElement;
 
@@ -68,7 +68,7 @@
     },
 
     // sets [accordion-item], [accordion-button], [accordion-content]
-    setAttributes: function () {
+    setAttributes: function() {
       for (var i = 0; i < this.accordions.length; i++) {
 
         var accordion = this.accordions[i],
@@ -112,7 +112,7 @@
     },
 
     // sets new attributes on [accordion-content] and returns the DOM node
-    setItemContent: function (accordionItem, accordionName,
+    setItemContent: function(accordionItem, accordionName,
       iteration, expanded) {
 
       var itemContent = accordionItem.querySelector('[accordion-content]');
@@ -132,7 +132,7 @@
     },
 
     // sets new attributes on [accordion-button] and returns the DOM node
-    setButton: function (accordionItem, itemContentId) {
+    setButton: function(accordionItem, itemContentId) {
       var itemButton = accordionItem.querySelector('[accordion-button]');
 
       if (!itemButton) {

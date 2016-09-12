@@ -50,12 +50,12 @@
       });
     };
 
-    var mouseoverMap = function () {
+    var mouseoverMap = function() {
       var fips = this.getAttribute('data-fips');
       highlightCounty(fips, 'mouseover');
     };
 
-    var mouseleaveMap = function () {
+    var mouseleaveMap = function() {
       var fips = this.getAttribute('data-fips');
       highlightCounty(fips, 'mouseleave');
     };

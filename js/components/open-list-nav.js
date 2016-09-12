@@ -69,7 +69,7 @@
         return status;
       },
 
-      stripHash: function (str) {
+      stripHash: function(str) {
         return str.charAt(0) === '#'
           ? str.slice(1, str.length)
           : str;
@@ -128,7 +128,7 @@
               item.setAttribute('aria-hidden', true);
             }
 
-            item.addEventListener('click', function () {
+            item.addEventListener('click', function() {
               self.update(this);
             });
           }

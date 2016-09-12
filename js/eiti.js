@@ -313,7 +313,7 @@
     threshhold = threshhold || 250;
     var last,
         deferTimer;
-    return function () {
+    return function() {
       var context = scope || this;
 
       var now = Date.now(),
@@ -321,7 +321,7 @@
       if (last && now < last + threshhold) {
         // hold on to it
         clearTimeout(deferTimer);
-        deferTimer = setTimeout(function () {
+        deferTimer = setTimeout(function() {
           last = now;
           fn.apply(context, args);
         }, threshhold);

@@ -329,7 +329,7 @@
           ? d.variance
           : formatPercent(d.variance / 100);
 
-        function returnFootnote () {
+        function returnFootnote() {
           refNumber ++;
           return '<strong>' + variance +
             '<sup id="fnref:' + refNumber +

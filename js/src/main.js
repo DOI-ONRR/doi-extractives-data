@@ -36,7 +36,7 @@
   exports.Glossary = require('../components/glossary');
   exports.Accordion = require('../components/accordion');
 
-  exports.$(function () {
+  exports.$(function() {
     /* eslint-disable no-unused-vars */
     var glossary = new exports.Glossary();
     var accordion = new exports.Accordion();

@@ -41,9 +41,14 @@
 
       counties.each(function(d, i){
         var county = d3.select(this);
-        if (+county.attr('data-fips') === +fips) {
-          county.classed(event, true);
+        var numbers = typeof(county.attr('data-fips')) === 'number' ||
+          typeof(fips) === 'number'
+        var areEqual = numbers
+          ? +county.attr('data-fips') === +fips
+          : county.attr('data-fips') === fips;
 
+        if (areEqual) {
+          county.classed(event, true);
           county.call(moveToFront);
         }
       });
@@ -61,7 +66,7 @@
       });
 
       chartTables.each(function(){
-        this.show(countyFIPS);
+        this.show(countyFIPS, 'selected');
       })
     };
 
@@ -72,7 +77,6 @@
 
       highlightCounty(countyFIPS, event);
 
-
       chartTables.each(function(){
         this.highlight(countyFIPS, event);
       })
@@ -80,21 +84,27 @@
 
     var toggleMap = function() {
       var fips = this.getAttribute('data-fips');
-      highlightCounty(fips);
+      highlightCounty(fips, 'selected');
 
       chartTables.each(function(){
         this.show(fips, 'selected');
       });
     };
 
-    var mouseMap = function (event) {
+    var mouseMap = function () {
+      event = event.type;
       var fips = this.getAttribute('data-fips');
+
       highlightCounty(fips, event);
+
+      chartTables.each(function(){
+        this.highlight(fips, event);
+      });
     };
 
     chartRows.on('click.countyTable', toggleMap);
-    chartRows.on('mouseover.countyTable', mouseMap, 'mouseover');
-    chartRows.on('mouseout.countyTable', mouseMap, 'mouseleave');
+    chartRows.on('mouseover.countyTable', mouseMap);
+    chartRows.on('mouseout.countyTable', mouseMap);
 
 
     counties
@@ -110,7 +120,7 @@
       .on('mouseleave.county', function(){
         var that = this;
         setTimeout(function(){
-          mouseTable(that, 'mouseleave');
+          mouseTable(that, 'mouseout');
         }, 20);
       });
   };

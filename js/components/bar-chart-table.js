@@ -175,6 +175,8 @@
 
   var show = function(fips) {
     var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false);
 
     rows.select('[data-sentence]')
       .attr('aria-hidden', true);
@@ -194,7 +196,7 @@
     rows
       .classed('mouseover', false);
 
-    if (event !== 'mouseleave') {
+    if (event !== 'mouseout') {
       rows
       .classed('mouseover', false)
       .filter(function(row) {

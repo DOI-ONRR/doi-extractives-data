@@ -47,36 +47,38 @@
       <use xlink:href="{{ offshore_svg }}#{{ region_id }}"></use>
     </g>
 
-    {% if include.areas %}
-      {% assign keys = include.value %}
-      {% for area in include.areas %}
-        {% assign area_id = area[0] %}
-        {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}">{% endif %}
-        {% assign value = area[1] | get: keys %}
+    <g>
+      {% if include.areas %}
+        {% assign keys = include.value %}
+        {% for area in include.areas %}
+          {% assign area_id = area[0] %}
+          {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}">{% endif %}
+          {% assign value = area[1] | get: keys %}
 
-        {% assign year_values = null %}
-        {% if include.years %}
-          {% assign year_values = area[1] | get: include.years %}
-          {% if include.years_property %}
-            {% assign year_values = year_values | map_hash: include.years_property %}
+          {% assign year_values = null %}
+          {% if include.years %}
+            {% assign year_values = area[1] | get: include.years %}
+            {% if include.years_property %}
+              {% assign year_values = year_values | map_hash: include.years_property %}
+            {% endif %}
           {% endif %}
-        {% endif %}
 
-        {% if year_values %}
-          <g class="county feature"
-            data-fips="{{ area_id }}"
-            data-value='{{ value | jsonify }}'
-            data-year-values='{{ year_values | jsonify }}'>
-            <title>{{ area[1].name }}</title>
-            <use xlink:href="{{ offshore_svg }}#{{ area_id }}"></use>
-          </g>
-        {% endif %}
-        {% if include.href %}</a>{% endif %}
-      {% endfor %}
-    {% endif %}
+          {% if year_values %}
+            <g class="county feature"
+              data-fips="{{ area_id }}"
+              data-value='{{ value | jsonify }}'
+              data-year-values='{{ year_values | jsonify }}'>
+              <title>{{ area[1].name }}</title>
+              <use xlink:href="{{ offshore_svg }}#{{ area_id }}"></use>
+            </g>
+          {% endif %}
+          {% if include.href %}</a>{% endif %}
+        {% endfor %}
+      {% endif %}
 
-    <g class="regions mesh">
-      <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
+      <g class="regions mesh">
+        <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
+      </g>
     </g>
   </svg>
 

@@ -1,5 +1,5 @@
 ---
 id: gulf
-title: Gulf
-permalink: /offshore/gulf/
+title: Gulf of Mexico
+permalink: /explore/offshore-gulf/
 ---

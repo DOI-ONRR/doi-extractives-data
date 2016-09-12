@@ -1,5 +1,5 @@
 ---
 id: pacific
-title: Pacific
-permalink: /offshore/pacific/
+title: Pacific Ocean
+permalink: /explore/offshore-pacific/
 ---

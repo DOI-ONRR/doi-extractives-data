@@ -11,14 +11,6 @@
     background: $white;
   }
 
-  tbody > tr.selected {
-    font-weight: $weight-book;
-
-    &[data-year-values] {
-      border-bottom: 0;
-    }
-  }
-
   .bar {
     background: $light-gray;
   }
@@ -45,18 +37,17 @@
 
   [data-sentence] {
     font-weight: $weight-book;
-    padding-left: calc(#{$standard-padding-lite} + 5px + 1rem);
+    padding-left: calc(#{$standard-padding-lite} + 5px + 0.75rem);
     padding-top: 0;
   }
 
   .swatch {
     background: $neutral-gray;
-    border: 1px solid $neutral-gray;
     display: inline-block;
-    height: 1rem;
+    height: 0.75rem;
     margin-right: $standard-padding-lite;
-    vertical-align: text-bottom;
-    width: 1rem;
+    vertical-align: baseline;
+    width: 0.75rem;
   }
 
   .numeric,
@@ -74,11 +65,37 @@
 
     .text-header {
       &.text-header-first {
-        color: $green-darkest;
+        color: $green-dark;
       }
 
       &.text-header-second {
-        color: $green-dark;
+        color: $green-darkest;
+      }
+
+      &.text-header-third {
+        color: darken($green-darkest, 10%);
+      }
+    }
+
+    &.bars {
+      .bar {
+        display: flex;
+
+        .bar {
+          border-right: 1px solid $neutral-gray;
+        }
+
+        .bar:nth-child(1) {
+          background-color: $green-dark;
+        }
+
+        .bar:nth-child(2) {
+          background-color: $green-darkest;
+        }
+
+        .bar:nth-child(3) {
+          background-color: darken($green-darkest, 10%);
+        }
       }
     }
 
@@ -88,12 +105,7 @@
       height: 1em;
 
       .bar {
-        background: $green-dark;
-
-        .bar {
-          background: $green-darkest;
-          border-right: 1px solid $neutral-gray;
-        }
+        background-color: $green-dark-chart;
       }
     }
 

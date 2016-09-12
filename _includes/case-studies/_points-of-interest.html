@@ -1,9 +1,9 @@
 {% assign case_studies_points = site.data.case_studies_points %}
-{% assign circle_radius = 17 %}
-{% assign caption_height = 75 %}
+{% assign circle_radius = 21 %}
+{% assign caption_height = 85 %}
 {% assign caption_width = 205 %}
 {% assign commodities = 'oil,copper,gas,iron,gold,coal' | split:',' %}
-{% assign dark_blue = '#4b9bbf' %}
+{% assign black_light = '#323c42' %}
 
 <g class="case-studies-points">
   {% for commodity in commodities %}
@@ -16,6 +16,10 @@
       {% assign x_offset = coords.x | minus: circle_radius %}
       {% assign y_offset = coords.y | minus: circle_radius %}
 
+      {% capture caption %}
+        {{ commodity | capitalize }} in {{ point_state }}
+      {% endcapture %}
+
       <g class="case-studies-circle-group">
         <g class="case-studies-caption {{ point_id }}">
           <a xlink:href="{{ point_permalink | prepend:site.baseurl }}">
@@ -24,12 +28,12 @@
             {% else %}
               <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
             {% endif %}
-            <text x="{{ x_offset }}" y="{{ y_offset }}">{{ commodity | capitalize }} in {{ point_state }}</text>
+            <text x="{{ x_offset }}" y="{{ y_offset }}">{{ caption }}</text>
           </a>
           <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">{{ point_name }}</text>
         </g>
-        <circle cx="{{ coords.x }}" cy="{{ coords.y }}" r="17" fill="#fff" stroke="{{ dark_blue }}" stroke-width="2px"></circle>
-        {% include svg/circle-icon-{{ commodity }}.svg x=x_offset y=y_offset %}
+        <circle cx="{{ coords.x }}" cy="{{ coords.y }}" r="{{ circle_radius }}" fill="#fff" stroke="{{ black_light }}" stroke-width="2px"></circle>
+        {% include svg/circle-icon-{{ commodity }}.svg x=x_offset y=y_offset caption=caption %}
       </g>
     {% endfor %}
   {% endfor %}

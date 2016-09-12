@@ -1,15 +1,13 @@
 {% assign region_name = include.region_name | default: region_name %}
 {% assign region_id = include.region_id | default: region_id %}
 {% assign region_name_caps = region_name | capitalize %}
+{% assign steps = 5 %}
 
 {% assign offshore_region_federal_products = site.data.offshore_federal_production_regions[region_name].products %}
-
 {% assign federal_product_dir = site.data.offshore_federal_production_areas %}
-
-{% assign year_range = '[2004, 2013]' %}
-
 {% assign federal_products_num = offshore_region_federal_products | size %}
 {% assign units_map = site.data.production_units %}
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
 <section id="federal-production" class="federal production">
 
@@ -18,16 +16,16 @@
     <h3>Production on federal waters in {{ region_name }}</h3>
 
     {% if federal_products_num == 0 %}
-      <p>No natural resources were produced on federal waters in {{  region_name }} in {{ year }}.</p>
+      <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the {{ region_name }} in {{ year }}.</p>
     {% else %}
       <div class="chart-selector-wrapper">
 
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-        ONRR collects detailed data about natural resources produced on federal land in the {{ region_name }}.
-        <br>
-        <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
+          ONRR collects detailed data about natural resources produced in the {{ region_name }}.
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
         </p>
       </div>
     {% endif %}
@@ -71,15 +69,15 @@
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
                   {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-                  produced on federal land in {{ region_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  produced in the {{ region_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-no-data" aria-hidden="true">
-                  There is no data for {{ region_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} in the {{ region_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase }} was extracted in {{ region_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced in the {{ region_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
             </figure>
@@ -129,6 +127,7 @@
                   year=year
                   values=offshore_area_federal_production
                   product_ref=product_ref
+                  product_name=product_name
                   long_units=long_units
                   caption=caption
                   sentence=sentence

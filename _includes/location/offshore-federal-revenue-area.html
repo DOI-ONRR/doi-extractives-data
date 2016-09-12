@@ -1,17 +1,8 @@
 {% assign area_revenue = include.area_revenue %}
 {% assign state_revenue = include.state_revenue %}
-
-{% if include.year %}
-  {% assign year = include.year %}
-{% endif %}
-
-{% if include.year_range %}
-  {% assign year_range = include.year_range %}
-{% endif %}
-
 {% assign state_revenue_all = state_revenue.All %}
 {% assign current_revenue = state_revenue_all[year].revenue %}
-
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 
 <section id="federal-revenue-county" class="product chart-item full-width">
 
@@ -33,14 +24,15 @@
         </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
+            Companies paid 
             <span class="eiti-bar-chart-y-value"
                   data-format="$,">${{ current_revenue | intcomma }}</span>
-            was collected from federal land in {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            to produce natural resources in the {{ region_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            There is no data about natural resource production in the {{ region_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
       </figure>
@@ -49,7 +41,7 @@
     <div class="map-container">
 
       <h4 class="chart-title">
-        <span>Revenue collected by {{ region_name }}</span>
+        <span>Revenue collected by offshore area</span>
       </h4>
 
 

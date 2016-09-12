@@ -60,3 +60,8 @@ groups:
     - "Purge Liquor"
     # FIXME: does this belong in Minerals?
     - "Zinc"
+
+  civil_penalties:
+    name: Civil Penalties
+    commodities:
+    - "Other Products"

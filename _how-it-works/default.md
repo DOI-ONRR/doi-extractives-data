@@ -38,7 +38,7 @@ permalink: /how-it-works/
     </section>
     
     <section class="container">
-      <h2 id="laws" class="h2-bar">What are the federal laws and regulations governing natural resources in the U.S.?</h2>
+      <h2 id="laws" class="h2-bar">What federal laws and regulations govern natural resources in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h3>
@@ -64,7 +64,7 @@ permalink: /how-it-works/
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
           <div class="landing-oil_gas">
-            <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
+            <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. In 2014, the U.S. produced more petroleum and natural gas than any other country.</p>
             {% include svg/how-main-icon-oil.svg %}
             <p><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Learn about oil and gas</a></p>
           </div>
@@ -72,7 +72,7 @@ permalink: /how-it-works/
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
           <div class="landing-coal">
-            <p>Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+            <p>Miners extract coal through surface and subsurface mining. In 2014, the U.S. was the world’s second largest coal producer after China.</p>
             {% include svg/how-main-icon-coal.svg %}
             <p><a href="{{site.baseurl}}/how-it-works/coal/">Learn about coal</a></p>
           </div>
@@ -88,7 +88,7 @@ permalink: /how-it-works/
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
           <div class="landing-renewables">
-            <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
+            <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2015.</p>
             {% include svg/how-main-icon-wind.svg %}
             <p><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Learn about renewable energy</a></p>
           </div>
@@ -101,24 +101,24 @@ permalink: /how-it-works/
       
       <div class="container landing-section">
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#/">Federal revenue by company</a></h4>
-          <p>The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/#/">Learn about federal laws</a></p>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">Federal revenue by company</a></h4>
+          <p>See federal non-tax revenues from natural resource extraction on federal land in 2015 by commodity, revenue type, and company.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/#/">See revenue by company</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
-          <p>The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about reforms</a></p>
+          <p>Corporations pay income taxes to the IRS, but the IRS cannot release confidental data about the amounts of individual payments.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about tax revenue</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
-          <p>The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about federal laws</a></p>
+          <p>This program uses fees from present-day coal mining companies to reclaim coal mines abandoned before 1977.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about AML fees</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
-          <p>The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about reforms</a></p>
+          <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
         </div>
       </div>
     </section>
@@ -127,14 +127,14 @@ permalink: /how-it-works/
       <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
       <div class="container landing-section">
         <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting process</a></h3>
-          <p>The legislative branch has passed many laws governing natural resource extraction on federal lands.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/oversight/">Learn about federal laws</a></p>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting standards</a></h3>
+          <p>Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/oversight/">Learn about oversight</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/reconciliation/">Reconciliation</a></h3>
-          <p>The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/reconciliation/">Learn about reforms</a></p>
+          <p>During the USEITI reconciliation process, company reports of payments are compared to government records of revenue received.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/reconciliation/">Learn about reconciliation</a></p>
         </div>
       </div>
     </section>
@@ -144,7 +144,7 @@ permalink: /how-it-works/
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>
-          <p>State agencies create regulations and rules about natural resource extraction based on applicable state laws and statutes. Local government agencies also play a role. (Federal laws and regulations apply to all states and localities.)</p>
+          <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
           <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
         </div>
         <div>

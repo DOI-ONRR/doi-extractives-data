@@ -79,6 +79,7 @@ $green-dark: #657c60;
 $chart-green: #a5d78a;
 $green-darkest: #2f4d26;
 $green-dark-chart: #587f4c;
+$green-dark-chart-mid: lighten($green-dark-chart, 20%);
 
 // v2 - deprecate
 $putty: #f4f4f4;

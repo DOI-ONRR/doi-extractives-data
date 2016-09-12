@@ -129,69 +129,69 @@ revenue:
     - product: Phosphate
       name: null
       units: null
-      value: 1398.1
-      rank: 4
-      percent: 0.06
+      value: 16619.15
+      rank: 2
+      percent: 0.75
   '2007':
     - product: Phosphate
       name: null
       units: null
-      value: 1832.26
+      value: 998.09
       rank: 3
-      percent: 0.08
+      percent: 0.04
   '2008':
     - product: Phosphate
       name: null
       units: null
-      value: 2960.82
+      value: 2971.17
       rank: 4
-      percent: 0.11
+      percent: 0.12
   '2009':
     - product: Phosphate
       name: null
       units: null
-      value: 10362.31
+      value: 11186.13
       rank: 2
-      percent: 0.28
+      percent: 0.33
   '2010':
     - product: Phosphate
       name: null
       units: null
       value: 92335.06
       rank: 2
-      percent: 0.99
+      percent: 1.11
   '2011':
     - product: Phosphate
       name: null
       units: null
-      value: 523491.53
+      value: 505466.59
       rank: 2
-      percent: 5.24
+      percent: 5.1
   '2012':
     - product: Phosphate
       name: null
       units: null
-      value: 2171534.21
+      value: 1420057.4
       rank: 2
-      percent: 17.3
+      percent: 12.65
   '2013':
     - product: Phosphate
       name: null
       units: null
-      value: 286720.37
+      value: 1056222.12
       rank: 2
-      percent: 2.8
+      percent: 9.47
   '2014':
     - product: Phosphate
       name: null
       units: null
-      value: 1980.51
+      value: 1951
       rank: 4
       percent: 0.02
   '2015':
     - product: Phosphate
       name: null
       units: null
-      value: 80956.84
+      value: 80986.35
       rank: 2
       percent: 0.76

@@ -32,45 +32,60 @@
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
     <g class="states features">
+      {% if page.neighbors %}
+        {% for neighbor in page.neighbors %}
+      <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+        {% endfor %}
+      {% else %}
       <use xlink:href="{{ states_svg }}#states"></use>
+      {% endif %}
     </g>
     <g class="states mesh">
+      {% if page.neighbors %}
+        {% for neighbor in page.neighbors %}
+      <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+        {% endfor %}
+      {% else %}
       <use xlink:href="{{ states_svg }}#states-mesh"></use>
+      {% endif %}
     </g>
     <g class="counties features">
       <use xlink:href="{{ state_svg }}#counties"></use>
     </g>
-    <g class="counties mesh">
-      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
-    </g>
 
-    {% if include.counties %}
-      {% assign keys = include.value %}
-      {% for county in include.counties %}
-        {% assign fips = county[0] | pad_left: 5, '0' %}
-        {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
-        {% assign value = county[1] | get: keys %}
+    <g>
+      {% if include.counties %}
+        {% assign keys = include.value %}
+        {% for county in include.counties %}
+          {% assign fips = county[0] | pad_left: 5, '0' %}
+          {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
+          {% assign value = county[1] | get: keys %}
 
-        {% assign year_values = null %}
-        {% if include.years %}
-          {% assign year_values = county[1] | get: include.years %}
-          {% if include.years_property %}
-            {% assign year_values = year_values | map_hash: include.years_property %}
+          {% assign year_values = null %}
+          {% if include.years %}
+            {% assign year_values = county[1] | get: include.years %}
+            {% if include.years_property %}
+              {% assign year_values = year_values | map_hash: include.years_property %}
+            {% endif %}
           {% endif %}
-        {% endif %}
 
-        {% if year_values %}
-          <g class="county feature"
-            data-fips="{{ fips }}"
-            data-value='{{ value | jsonify }}'
-            data-year-values='{{ year_values | jsonify }}'>
-            <title>{{ county[1].name }}</title>
-            <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
-          </g>
-        {% endif %}
-        {% if include.href %}</a>{% endif %}
-      {% endfor %}
-    {% endif %}
+          {% if year_values %}
+            <g class="county feature"
+              data-fips="{{ fips }}"
+              data-value='{{ value | jsonify }}'
+              data-year-values='{{ year_values | jsonify }}'>
+              <title>{{ county[1].name }}</title>
+              <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
+            </g>
+          {% endif %}
+          {% if include.href %}</a>{% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <g class="counties mesh">
+        <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+      </g>
+    </g>
 
     <g class="state feature overlay">
       <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
@@ -83,7 +98,7 @@
         aria-controls="{{ include.toggle }}">
         <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
-          {{ include.toggle_text}}
+          {{ include.toggle_text }}
         {% else %}Show table{% endif %}
       </button>
     </h4>
@@ -96,11 +111,11 @@
       {{ include.caption }}
     </figcaption>
     <figcaption class="legend-no-data" aria-hidden="true">
-      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
+      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year }}</span>.
       Select a new year to populate the map.
     </figcaption>
     <figcaption class="legend-withheld" aria-hidden="true">
-      County-level data for <span data-year="{{ year }}" >{{ year}}</span> is withheld.
+      County-level data for <span data-year="{{ year }}" >{{ year }}</span> is withheld.
     </figcaption>
   {% endif %}
 
@@ -112,7 +127,7 @@
         aria-controls="{{ include.toggle }}">
         <i class="icon icon-plus-sm"></i>
         {% if include.toggle_text %}
-          {{ include.toggle_text}}
+          {{ include.toggle_text }}
         {% else %}Show table{% endif %}
       </button>
     </h4>

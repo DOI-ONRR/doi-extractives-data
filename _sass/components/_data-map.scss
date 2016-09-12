@@ -124,11 +124,22 @@ eiti-data-map {
     cursor: pointer;
 
     &.selected,
+    &.mouseover,
     &:hover,
     &:active,
     &:focus {
-      stroke: $green-dark-chart;
       stroke-width: 3px;
+    }
+
+    &.mouseover,
+    &:hover,
+    &:active,
+    &:focus {
+      stroke: $green-dark-chart-mid;
+    }
+
+    &.selected {
+      stroke: $green-dark-chart;
     }
   }
 

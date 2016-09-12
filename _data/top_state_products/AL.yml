@@ -265,99 +265,99 @@ revenue:
     - product: Clay
       name: null
       units: null
-      value: 20117.1
+      value: 21525.3
       rank: 1
-      percent: 84.47
+      percent: 86.09
     - product: Sulfur
       name: null
       units: null
-      value: 1193.1
+      value: 1156.13
       rank: 3
-      percent: 6.24
+      percent: 1.06
   '2007':
     - product: Clay
       name: null
       units: null
-      value: 12892.8
+      value: 16539
       rank: 1
-      percent: 67.95
+      percent: 77.42
     - product: Sulfur
       name: null
       units: null
-      value: 369.54
+      value: 376.55
       rank: 3
-      percent: 0.54
+      percent: 1.46
   '2008':
     - product: Sulfur
       name: null
       units: null
-      value: 12259.8
+      value: 6397.04
       rank: 3
-      percent: 1.06
+      percent: 0.73
   '2009':
     - product: Coal
       name: null
       units: null
-      value: 4351074.7
+      value: 3987983.75
       rank: 5
-      percent: 0.4
+      percent: 0.36
     - product: Sulfur
       name: null
       units: null
-      value: 2877.54
-      rank: 2
-      percent: 0.04
+      value: 8775.12
+      rank: 3
+      percent: 0.12
   '2010':
     - product: Coal
       name: null
       units: null
-      value: 10404903.27
+      value: 10653965.72
       rank: 5
-      percent: 1.19
+      percent: 1.24
     - product: Sulfur
       name: null
       units: null
-      value: 1448.44
-      rank: 3
-      percent: 0.38
+      value: 1104.71
+      rank: 2
+      percent: 0.43
   '2011':
     - product: Coal
       name: null
       units: null
-      value: 9735675.57
+      value: 8898407.91
       rank: 5
-      percent: 0.94
+      percent: 0.93
     - product: Sulfur
       name: null
       units: null
-      value: 4447.73
+      value: 3762.13
       rank: 4
       percent: 0.24
   '2012':
     - product: Sulfur
       name: null
       units: null
-      value: 4038.52
-      rank: 3
+      value: 4340.13
+      rank: 2
       percent: 0.2
   '2013':
     - product: Sulfur
       name: null
       units: null
-      value: 2679.68
+      value: 3100.63
       rank: 3
-      percent: 0.55
+      percent: 0.43
   '2014':
     - product: Sulfur
       name: null
       units: null
-      value: 1609.3
+      value: 1534.76
       rank: 3
-      percent: 0.37
+      percent: 0.58
   '2015':
     - product: Sulfur
       name: null
       units: null
-      value: 1161.64
+      value: 1226
       rank: 2
       percent: null

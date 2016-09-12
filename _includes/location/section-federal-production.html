@@ -1,11 +1,8 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
-{% assign year_range = '[2006, 2015]' %}
-
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
-
 {% assign county_federal_products = site.data.federal_county_production[state_id] %}
-
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
 <section id="federal-production" class="federal production">
 
@@ -17,7 +14,7 @@
       <p>
         ONRR collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource production on federal land in {{  state_name }} in {{ year }}.
         <br>
-        <a href="{{site.baseurl}}/downloads/federal-production/">
+        <a href="{{site.baseurl}}/downloads/federal-production/" class="data-downloads">
           <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </p>
@@ -75,7 +72,7 @@
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
                   {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-                  extracted on federal land in {{ state_name }} in
+                  produced on federal land in {{ state_name }} in
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-no-data" aria-hidden="true">
@@ -83,7 +80,7 @@
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was extracted on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
             </figure>

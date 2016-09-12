@@ -1,31 +1,25 @@
-{% assign revenue_total = revenue_commodities.All[year].revenue %}
-{% assign units = '$' %}
-{% assign year_range = '[2004, 2013]' %}
 {% assign revenue_commodities = site.data.offshore_revenue_regions[region_name].commodities %}
 {% assign area_revenue = site.data.offshore_revenue_areas[region_name] %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
-{% assign units = '$' %}
-{% assign year_range = '[2004, 2013]' %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 {% assign year_list = year_range | to_list %}
+{% assign units = '$' %}
 
-<section id="revenue" is="year-switcher-section" class="federal revenue">
+<section id="federal-revenue" is="year-switcher-section" class="federal revenue">
 
-  <h2>Revenue</h2>
+  <h2>Federal revenue</h2>
 
-  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources. Payments are often called &ldquo;revenue&rdquo; because they represent revenue to the American public.</p>
+  <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue.</p>
 
+  <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
-  <section id="federal-revenue">
+  <section id="revenue-by-resource">
 
-    <h3>Federal revenue</h3>
+    <h4>Federal revenue by resource</h4>
 
-    <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.</p>
+    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on the Outer Continental Shelf. For details, read more about the processes for <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">offshore oil and gas</a> or <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">offshore renewable energy</a>.</p>
 
-    <h4>Revenue from extraction on federal land by resource</h4>
-
-    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on federal land. For details, read more about the processes for awarding rights and collecting revenue for each kind of resource: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
-
-    <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
+    <p>The federal government collects different kinds of fees at each phase of resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal waters, broken down by phase of production.</p>
 
     <div id="fee-summaries" class="tab-interface">
       <ul class="eiti-tabs info-tabs" role="tablist">
@@ -56,8 +50,12 @@
       </article>
     </div>
 
+  </section>
+  <!-- #revenue-by-resource -->
 
-    <h4>Revenue from extraction on federal land by offshore area</h4>
+  <section id="revenue-by-area">
+
+    <h4>Federal revenue by offshore area</h4>
 
     <section class="chart-list">
 
@@ -77,7 +75,9 @@
 
         {% if revenue_commodities %}
           <p class="chart-description">
-            In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource. 
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
           </p>
         {% else %}
           <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
@@ -100,7 +100,7 @@
     </section>
     <!-- .chart-list -->
 
-
   </section>
-  <!-- #federal-revenue -->
+  <!-- #revenue-by-area -->
 </section>
+<!-- #federal-revenue -->

@@ -20,6 +20,7 @@
 {% assign minerals_exists = false %}
 {% assign geothermal_exists = false %}
 {% assign wind_exists = false %}
+{% assign other_exists = false %}
 {% assign all_exists = false %}
 
 
@@ -43,6 +44,10 @@
 
   {% if commodity_name == 'Wind' %}
     {% assign wind_exists = true %}
+  {% endif %}
+
+  {% if commodity_name == 'Other Products' %}
+    {% assign other_exists = true %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
@@ -75,10 +80,8 @@
 
         {% if oilgas_list contains commodity_name %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% if commodity_name == oilgas %}
+            {% if commodity_name == 'Oil & Gas' or commodity_name == 'Oil & Gas (Non-Royalty)' %}
                 {% include location/revenue-type-row-oilgas.html %}
-            {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-                {% include location/revenue-type-row.html %}
             {% endif %}
           </tbody>
         {% endif %}
@@ -152,6 +155,22 @@
            </tbody>
         {% endif %}
 
+      {% endfor %}
+    {% endif %}
+
+    {% if other_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Other Products
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Other Products' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
       {% endfor %}
     {% endif %}
 

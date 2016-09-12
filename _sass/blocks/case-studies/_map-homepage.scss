@@ -4,7 +4,7 @@
   &:focus,
   &:active {
     circle {
-      fill: $dark-blue;
+      fill: $black-light;
     }
 
     .case-studies-caption {
@@ -17,7 +17,7 @@
     }
   }
 
-  $circle-radius: 17px;
+  $circle-radius: 21px;
   $stroke-width: 2px;
   $caption-width: 205px;
   $caption-height: 75px;
@@ -45,17 +45,17 @@
     cursor: pointer;
     fill: $white;
     height: $caption-height;
-    stroke: $dark-blue;
+    stroke: $black-light;
     stroke-width: $stroke-width;
     transform: translate(#{$caption-offset-x}, #{$caption-offset-y});
     width: $caption-width;
   }
 
   text {
-    @include font-size(0.8);
+    @include font-size(1);
 
     cursor: pointer;
-    fill: $dark-blue;
+    fill: $black-light;
     text-anchor: middle;
     transform: translate(#{$circle-radius}, 55px);
   }
@@ -63,8 +63,5 @@
   a text {
     @include font-size(1.1);
   }
-
-
-
 }
 

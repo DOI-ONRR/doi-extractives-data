@@ -250,7 +250,9 @@
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');
           }
 
-
+          // If the legend is 'horizontal',
+          // then shift the text and label from
+          // its default settings
           if (orient == 'horizontal') {
             var cumulative = 0;
 
@@ -262,7 +264,7 @@
                   .node()
                   .getComputedTextLength()
               })
-              .attr('transform',function(textWidth, i){
+              .attr('transform',function(textWidth){
                 var shift = cumulative;
                 var s = settings.horizontal;
                 var margin = s.width + s.padding + s.margin;
@@ -270,12 +272,13 @@
                 return 'translate(' + shift + ', 0)';
               })
               .select('text')
-                 .attr('transform',function(d, i){
+                 .attr('transform',function(d){
                   var s = settings.horizontal;
                   var padding = s.padding + s.width;
                   return 'translate(' + padding + ', 10)';
                 });
           }
+          // end horizontal legend shift
 
           // start trim height on map container
           var svgContainer = d3.select(this)

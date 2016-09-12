@@ -166,7 +166,8 @@
           },
           shapeWidth,
           shapeHeight,
-          shapePadding;
+          shapePadding,
+          shapeMargin;
 
           var colors = colorbrewer[scheme][steps];
           if (!colors) {

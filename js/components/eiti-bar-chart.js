@@ -33,7 +33,8 @@
   top += extentMargin;
   var extentTop = top - extentMargin;
 
-  var fullHeight = height + textMargin + extentMargin + tickPadding - (2 * baseMargin);
+  var fullHeight = height + textMargin + extentMargin
+    + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {

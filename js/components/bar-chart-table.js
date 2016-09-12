@@ -9,7 +9,13 @@
       this.querySelectorAll('tr > [data-value] > [data-value]')
     );
     this._cells = this._cells.concat(this.nested_cells);
-    this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
+    // XXX this is ugly and brittle. Rather than going a specific # of
+    // levels up, maybe we could use this.closest('some-selector') ?
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+    this.eitiDataMap = this
+      .parentNode
+      .parentNode
+      .querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 
     this.setYear();
@@ -287,7 +293,10 @@
         var span;
 
         // TODO only do this if autolabel="true"?
-        if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
+        var singularTextNode = cell.childNodes.length === 1
+          && cell.firstChild.nodeType === Node.TEXT_NODE;
+
+        if (singularTextNode) {
           if (autolabel) {
             cell.setAttribute('aria-label', cell.firstChild.textContent);
             cell.removeChild(cell.firstChild);

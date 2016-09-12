@@ -4,9 +4,10 @@
 
   var E = 1e-6;
 
-  // A composite projection for the United States, configured by default for
-  // 960×500. Also works quite well at 960×600 with scale 1285. The set of
-  // standard parallels for each region comes from USGS, which is published here:
+  // A composite projection for the United States, configured by
+  // default for 960×500. Also works quite well at 960×600 with scale
+  // 1285. The set of standard parallels for each region comes from
+  // USGS, which is published here:
   // http://egsc.usgs.gov/isb/pubs/MapProjections/projections.html#albers
   var albersCustom = function() {
     var lower48 = d3.geo.albers();
@@ -44,7 +45,10 @@
     }
 
     function inBounds(x, y, bbox) {
-      return y >= bbox[0][1] && y < bbox[1][1] && x >= bbox[0][0] && x < bbox[1][0];
+      return y >= bbox[0][1]
+          && y <  bbox[1][1]
+          && x >= bbox[0][0]
+          && x <  bbox[1][0];
     }
 
     albersUsa.invert = function(coordinates) {

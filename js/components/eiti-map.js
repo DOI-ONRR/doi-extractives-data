@@ -207,13 +207,11 @@
         }
 
         if (filter) {
-          // console.log('filter %d features with expression:', features.length, '"' + filter + '"');
           filter = evaluator(filter);
           // only apply the filter to non-mesh features
           features = features.filter(function(d) {
             return d.mesh || filter(d);
           });
-          // console.log('filtered %d features', features.length);
         }
 
         var feature;
@@ -437,7 +435,10 @@
       features = [];
       var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
-        features = features.concat(topojson.feature(d, d.objects[key]).features);
+        features = features.concat(
+          topojson.feature(d, d.objects[key])
+            .features
+        );
         if (mesh === 'true' || meshIds.indexOf(key) > -1) {
           features.push(getMesh(d, d.objects[key], filter));
         }

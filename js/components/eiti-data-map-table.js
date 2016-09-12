@@ -36,7 +36,7 @@
       counties.classed(event, false);
       var unselectedCounties = counties.filter(function(){
         return !d3.select(this).classed('selected');
-      })
+      });
       unselectedCounties.call(moveToBack);
 
       counties.each(function(d, i){

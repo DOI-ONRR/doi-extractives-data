@@ -180,11 +180,11 @@
 
       search.property('value', state.get('search') || '');
 
-      render(data, state);
+      render(data);
     });
   }
 
-  function render(data /*, state */) {
+  function render(data) {
     updateCompanyList(data);
     updateNameSearch();
   }

@@ -131,11 +131,11 @@
       });
 
       search.property('value', state.get('search') || '');
-      render(data, state);
+      render(data);
     });
   }
 
-  function render(data /*, state */) {
+  function render(data) {
     // console.log('rendering %d rows', data.length, data[0]);
     updateRevenueTypes(data);
     updateCompanyList(data);

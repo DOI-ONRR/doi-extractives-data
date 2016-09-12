@@ -24,7 +24,7 @@
     var dispatch = d3.dispatch('change');
 
     // the default state validator is a noop
-    var validateState = function(state /*, previous, updated */) {
+    var validateState = function(state) {
       return state;
     };
 

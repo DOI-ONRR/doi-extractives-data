@@ -8,8 +8,8 @@
   };
 
   var innerMarkup = {
-    bars: '<span class="u-visually-hidden"><icon class="icon-bars"></icon></span>',
-    x: '<span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>'
+    bars: '<icon class="icon-bars"></icon>',
+    x: '<icon class="icon-close-x"></icon>'
   };
 
   var EXPANDED = 'aria-expanded';
@@ -77,7 +77,9 @@
           }
 
           var toggleId = this.getAttribute(CONTROLS);
-          var togglers = document.querySelectorAll('[data-toggler=' + toggleId + ']');
+          var togglers = document.querySelectorAll(
+            '[data-toggler=' + toggleId + ']'
+          );
 
           if (togglers.length) {
 

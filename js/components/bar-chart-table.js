@@ -183,13 +183,13 @@
 
     rows
       .classed('selected', false)
-      .filter(function(row) {
+      .filter(function() {
         return this.getAttribute('data-fips') === fips;
       })
       .classed('selected', true)
       .select('[data-sentence]')
         .attr('aria-hidden', false);
-  }
+  };
 
   var highlight = function(fips, event) {
     var rows = d3.select(this).selectAll('tbody > tr');
@@ -199,7 +199,7 @@
     if (event !== 'mouseout') {
       rows
       .classed('mouseover', false)
-      .filter(function(row) {
+      .filter(function() {
         return this.getAttribute('data-fips') === fips;
       })
       .classed('mouseover', true)

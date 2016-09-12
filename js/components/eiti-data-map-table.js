@@ -6,7 +6,7 @@
 
     var moveToFront = function() {
       return this.each(function(){
-        var child = this.parentNode.appendChild(this);
+        this.parentNode.appendChild(this);
       });
     };
 
@@ -42,7 +42,7 @@
       counties.each(function(d, i){
         var county = d3.select(this);
         var numbers = typeof(county.attr('data-fips')) === 'number' ||
-          typeof(fips) === 'number'
+          typeof(fips) === 'number';
         var areEqual = numbers
           ? +county.attr('data-fips') === +fips
           : county.attr('data-fips') === fips;
@@ -56,7 +56,6 @@
 
     var toggleTable = function(context) {
       var context = context || this;
-      var countyName = context.querySelector('title').textContent;
       var countyFIPS = context.getAttribute('data-fips');
 
       highlightCounty(countyFIPS, 'selected');
@@ -67,19 +66,18 @@
 
       chartTables.each(function(){
         this.show(countyFIPS, 'selected');
-      })
+      });
     };
 
     var mouseTable = function(context, event) {
-      var context = context || this;
-      var countyName = context.querySelector('title').textContent;
+      context = context || this;
       var countyFIPS = context.getAttribute('data-fips');
 
       highlightCounty(countyFIPS, event);
 
       chartTables.each(function(){
         this.highlight(countyFIPS, event);
-      })
+      });
     };
 
     var toggleMap = function() {

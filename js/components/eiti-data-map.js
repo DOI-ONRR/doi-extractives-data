@@ -256,27 +256,27 @@
           if (orient == 'horizontal') {
             var cumulative = 0;
 
-            var cells = svgLegend.select('.legendCells')
-            .selectAll('.cell')
-              .datum(function(){
-                return d3.select(this)
-                  .select('.label')
-                  .node()
-                  .getComputedTextLength()
-              })
-              .attr('transform',function(textWidth){
-                var shift = cumulative;
-                var s = settings.horizontal;
-                var margin = s.width + s.padding + s.margin;
-                cumulative += textWidth + margin;
-                return 'translate(' + shift + ', 0)';
-              })
-              .select('text')
-                 .attr('transform',function(d){
+            svgLegend.select('.legendCells')
+              .selectAll('.cell')
+                .datum(function(){
+                  return d3.select(this)
+                    .select('.label')
+                    .node()
+                    .getComputedTextLength();
+                })
+                .attr('transform',function(textWidth){
+                  var shift = cumulative;
                   var s = settings.horizontal;
-                  var padding = s.padding + s.width;
-                  return 'translate(' + padding + ', 10)';
-                });
+                  var margin = s.width + s.padding + s.margin;
+                  cumulative += textWidth + margin;
+                  return 'translate(' + shift + ', 0)';
+                })
+                .select('text')
+                   .attr('transform',function(){
+                    var s = settings.horizontal;
+                    var padding = s.padding + s.width;
+                    return 'translate(' + padding + ', 10)';
+                  });
           }
           // end horizontal legend shift
 

@@ -1,9 +1,11 @@
+/* eslint-disable max-len */
 $( document ).ready(function() {
   // Beckley Search Form
   //
-  // As a work of the United States Government, this package is in the public domain within the United States. Additionally, we waive copyright and related rights in the work worldwide through the CC0 1.0 Universal public domain dedication.
-  //
-  // By Sean Herron <sean@herron.io>
+  // As a work of the United States Government, this package is in the
+  // public domain within the United States. Additionally, we waive
+  // copyright and related rights in the work worldwide through the CC0
+  // 1.0 Universal public domain dedication.
   //
   function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
@@ -23,7 +25,8 @@ $( document ).ready(function() {
   $('.site-search-text').attr('value',query.replace(/%20/g,' '));
   if (query) {
     $('input.q').val(query);
-    $('.search-result-list').append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
+    $('.search-result-list')
+      .append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     var url = 'https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=' + query + '&size=50&from=0&api_key=' + apiKEY;
     $.ajax({
       url: url,

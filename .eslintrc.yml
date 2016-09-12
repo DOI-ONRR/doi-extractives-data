@@ -8,7 +8,8 @@ rules:
   curly: [warn, multi-line]
   eqeqeq: warn
   func-call-spacing: warn
-  linebreak-style: [error, unix]
+  linebreak-style: [warn, unix]
+  new-parens: warn
   no-undef-init: warn
   no-unused-expressions: warn
   no-whitespace-before-property: warn

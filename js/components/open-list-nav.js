@@ -33,9 +33,9 @@
       updateScrollTop: function() {
         this.scrollTop.prev = this.scrollTop.current;
         this.scrollTop.current = getScrollTop();
-        this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
-          ? 'down'
-          : 'up';
+        this.scrollTop.direction = (
+          this.scrollTop.current >= this.scrollTop.prev
+        ) ? 'down' : 'up';
       },
 
       isActiveElement: function(el) {

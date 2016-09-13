@@ -39,18 +39,17 @@ CREATE TABLE federal_county_production AS
     SELECT
         year, region_id AS state,
         locality_id AS county,
-        fips,
+        production.fips AS fips,
         product,
         product_name,
         units,
         SUM(volume) AS volume
-    FROM federal_local_production AS offshore
-    INNER JOIN offshore_planning_areas AS area
-    ON
-        offshore.locality_id != area.name
+    FROM federal_local_production AS production
+    INNER JOIN states ON
+        states.abbr = production.region_id
     GROUP BY
         year, state,
-        county, fips,
+        county, production.fips,
         product, product_name, units
 ORDER BY
     year, product, product_name, units, volume DESC;

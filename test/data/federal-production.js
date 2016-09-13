@@ -171,12 +171,29 @@ describe('federal production (ONRR)', function() {
       var sentinels = [
         {
           state: 'AK',
-          county: 'North Slope',
+          county: 'North Slope Borough',
           fips: '02185',
           product: 'Oil (bbl)',
           year: 2014,
           value: 894025
+        },
+        {
+          state: 'MS',
+          county: 'Monroe County',
+          fips: '28095',
+          product: 'Gas (mcf)',
+          year: 2012,
+          value: 28554
+        },
+        {
+          state: 'OH',
+          county: 'Monroe County',
+          fips: '39111',
+          product: 'Oil (bbl)',
+          year: 2012,
+          value: 21350
         }
+
       ];
 
       sentinels.forEach(function(sentinel) {
@@ -277,6 +294,13 @@ describe('federal production (ONRR)', function() {
           area: 'CGM',
           region: 'Gulf',
           value: null
+        },
+        {
+          product: 'Gas (mcf)',
+          year: 2011,
+          area: 'EGM',
+          region: 'Gulf',
+          value: 107917419
         }
       ];
 

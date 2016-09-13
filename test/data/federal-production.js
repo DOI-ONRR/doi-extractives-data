@@ -64,6 +64,7 @@ describe('federal production (ONRR)', function() {
       );
     }
 
+    // [pending] until discrepency in Oil values is solved
     xit('check sentinel values', function(done) {
 
       var sentinels = [
@@ -77,11 +78,13 @@ describe('federal production (ONRR)', function() {
           year: 2006,
           value: 512832
         },
+        // actual: 623103681
         {
           product: 'Oil (bbl)',
           year: 2013,
           value: 623103687.09
         },
+        // actual: 755158065
         {
           product: 'Oil (bbl)',
           year: 2015,

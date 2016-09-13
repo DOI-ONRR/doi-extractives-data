@@ -206,7 +206,7 @@ CREATE TABLE state_revenue_rank AS
         state.revenue,
         national.revenue AS total,
         (CASE WHEN state.revenue * national.revenue >= 0
-         THEN 100 * (state.revenue / national.revenue)
+         THEN 100.0 * state.revenue / national.revenue
          ELSE NULL
          END) AS percent,
         0 AS rank
@@ -227,10 +227,10 @@ CREATE TABLE state_revenue_rank AS
 
 UPDATE state_revenue_rank
 SET rank = (
-    SELECT COUNT(distinct inner.revenue) AS rank
-    FROM state_revenue_rank AS inner
+    SELECT COUNT(DISTINCT source.revenue) AS rank
+    FROM state_revenue_rank AS source
     WHERE
-        inner.year = state_revenue_rank.year AND
-        inner.commodity = state_revenue_rank.commodity AND
-        inner.revenue > state_revenue_rank.revenue
+        source.year = state_revenue_rank.year AND
+        source.commodity = state_revenue_rank.commodity AND
+        source.revenue > state_revenue_rank.revenue
 ) + 1;

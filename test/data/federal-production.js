@@ -288,7 +288,10 @@ describe('federal production (ONRR)', function() {
       ];
 
       sentinels.forEach(function(sentinel) {
-        var products = regionProductionByArea[sentinel.region][sentinel.area].products;
+        var products = regionProductionByArea
+          [sentinel.region]
+          [sentinel.area]
+          .products;
 
         assertSentinelMatch(
           products,

@@ -1,30 +1,14 @@
 /* jshint node: true, mocha: true */
 /* jshint -W089 */
 /* jshint -W110 */
-var tito = require('tito');
 var fs = require('fs');
 var path = require('path');
 var yaml = require('js-yaml');
 var assert = require('assert');
-var async = require('async');
 var _ = require('lodash');
 
 
 var OUT_PATH = path.join(__dirname, '../../_data');
-
-var load = function(filename, format, done) {
-  var rows = [];
-  fs.createReadStream(filename, 'utf8')
-    .pipe(tito.formats.createReadStream(format))
-    .on('data', function(d) {
-      rows.push(d);
-    })
-    .on('error', done)
-    .on('end', function() {
-      done(null, rows);
-    });
-};
-
 
 describe('federal production (ONRR)', function() {
 

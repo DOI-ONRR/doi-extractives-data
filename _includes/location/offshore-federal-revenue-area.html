@@ -24,14 +24,14 @@
         </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
-            Companies paid 
+            Companies paid
             <span class="eiti-bar-chart-y-value"
                   data-format="$,">${{ current_revenue | intcomma }}</span>
-            to produce natural resources in the {{ region_name }} in
+            to produce natural resources in the {{ region_title }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data about natural resource production in the {{ region_name }} in
+            There is no data about natural resource production in the {{ region_title }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
@@ -50,7 +50,7 @@
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {% capture years_key %}revenue{% endcapture %}
         {% assign _width ='inherit' %}
-        {% capture caption %}{{ region_name }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
+        {% capture caption %}{{ region_title }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
         <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}" format="$">
 

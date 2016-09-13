@@ -1473,55 +1473,7 @@ LA:
         '2015':
           volume: 246668
           percent: 0
-<<<<<<< 012d0f15d9df047a2faa20c6f30b2ca61b3f3048
           rank: 1
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006':
-          volume: null
-          percent: null
-          rank: 1
-        '2007':
-          volume: null
-          percent: null
-          rank: 1
-        '2008':
-          volume: null
-          percent: null
-          rank: 1
-        '2009':
-          volume: null
-          percent: null
-          rank: 1
-        '2010':
-          volume: null
-          percent: null
-          rank: 1
-        '2011':
-          volume: null
-          percent: null
-          rank: 1
-        '2012':
-          volume: null
-          percent: null
-          rank: 1
-        '2013':
-          volume: null
-          percent: null
-          rank: 1
-        '2014':
-          volume: null
-          percent: null
-          rank: 1
-        '2015':
-          volume: null
-          percent: null
-          rank: 1
-=======
-          rank: 4
->>>>>>> rebuild data, make salt withheld data work
 MI:
   products:
     Gas (mcf):
@@ -2972,55 +2924,6 @@ OK:
           volume: 498360
           percent: 0
           rank: 1
-<<<<<<< 012d0f15d9df047a2faa20c6f30b2ca61b3f3048
-=======
-    Salt (tons):
-      name: Salt
-      units: tons
-      volume:
-        '2006':
-          volume: null
-          percent: null
-          rank: 1
-        '2007':
-          volume: null
-          percent: null
-          rank: 1
-        '2008':
-          volume: null
-          percent: null
-          rank: 1
-        '2009':
-          volume: null
-          percent: null
-          rank: 1
-        '2010':
-          volume: null
-          percent: null
-          rank: 1
-        '2011':
-          volume: null
-          percent: null
-          rank: 1
-        '2012':
-          volume: null
-          percent: null
-          rank: 1
-        '2013':
-          volume: null
-          percent: null
-          rank: 1
-        '2014':
-          volume: null
-          percent: null
-          rank: 1
-        '2015':
-          volume: null
-          percent: null
-          rank: 1
-Offshore Pacific:
-  products:
->>>>>>> rebuild data, make salt withheld data work
     Gas (mcf):
       name: Gas
       units: mcf

@@ -191,13 +191,12 @@ describe('federal production (ONRR)', function() {
           fips: '39111',
           product: 'Oil (bbl)',
           year: 2012,
-          value: 21350
+          value: 1350
         }
 
       ];
 
       sentinels.forEach(function(sentinel) {
-        console.log(regionProductionByArea[sentinel.state])
         var products = regionProductionByArea[sentinel.state][sentinel.fips].products;
         assertSentinelMatch(
           products,

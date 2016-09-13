@@ -1,6 +1,6 @@
 ---
 id: alaska
-title: Offshore Alaska
+title: Alaska offshore region
 permalink: /explore/offshore-alaska/
 
 # this triggers whitelisting of nearby states to render in county maps,

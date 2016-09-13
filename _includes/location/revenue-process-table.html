@@ -315,11 +315,14 @@
       {% endfor %}
     {% endif %}
 
-
-    <tr class="table-arrow_box-category"><td colspan="5">Other revenue streams</td></tr>
-    <tr>
-      <th>Hardrock mining on public domain lands</th>
-      <td colspan="5">Hardrock mining that takes place on public domain lands, which are managed by the Bureau of Land Management, occurs through the claim-staking process. These fees are not included here, because that dataset does not have state-level data. [Learn more about the claim-staking process] or [see revenue by company, which includes those fees].
-      </td>
-    </tr>
+    {% if include.offshore %}
+    <!-- excludes Other revenue streams for offshore -->
+    {% else %}
+      <tr class="table-arrow_box-category"><td colspan="5">Other revenue streams</td></tr>
+      <tr>
+        <th>Hardrock mining on public domain lands</th>
+        <td colspan="5">Hardrock mining that takes place on public domain lands, which are managed by the Bureau of Land Management, occurs through the claim-staking process. These fees are not included here, because that dataset does not have state-level data. [Learn more about the claim-staking process] or [see revenue by company, which includes those fees].
+        </td>
+      </tr>
+    {% endif %}
 </table>

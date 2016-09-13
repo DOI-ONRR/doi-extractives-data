@@ -357,6 +357,7 @@ data/federal_county_production:
 		FROM federal_county_production \
 		WHERE \
 			state IS NOT NULL AND \
+			fips IS NOT NULL AND \
 			state != 'Withheld' AND \
 			county IS NOT NULL AND \
 			product IS NOT NULL \

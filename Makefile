@@ -336,8 +336,7 @@ data/offshore_federal_production_areas:
 			ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \
 		WHERE \
-			region_id IS NOT NULL AND \
-			volume IS NOT NULL \
+			region_id IS NOT NULL \
 		ORDER BY \
 			region_id, \
 			area_id, year" \
@@ -357,6 +356,7 @@ data/federal_county_production:
 		FROM federal_county_production \
 		WHERE \
 			state IS NOT NULL AND \
+			fips IS NOT NULL AND \
 			state != 'Withheld' AND \
 			county IS NOT NULL AND \
 			product IS NOT NULL \

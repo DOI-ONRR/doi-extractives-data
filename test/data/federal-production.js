@@ -25,23 +25,6 @@ var load = function(filename, format, done) {
     });
 };
 
-var loadAll = function(dir, done) {
-  fs.readdir(dir, function(error, files) {
-    if (error) {
-      return done(error);
-    }
-    async.mapSeries(files, function(filename, next) {
-      filename = path.join(dir, filename);
-      var ext = filename.split('.').pop();
-      load(filename, ext, next);
-    }, function(error, files) {
-      done(error, (files || []).reduce(function(rows, data) {
-        return rows.concat(data);
-      }, []));
-    });
-  });
-};
-
 
 describe('federal production (ONRR)', function() {
 
@@ -62,7 +45,7 @@ describe('federal production (ONRR)', function() {
         expected, actual,
         'expected ' + value + ' for: ' + [product, year].join(' | ')
       );
-    }
+    };
 
     // [pending] until discrepency in Oil values is solved
     xit('check sentinel values', function(done) {
@@ -123,7 +106,7 @@ describe('federal production (ONRR)', function() {
     var offshoreAreaPath = '_data/offshore_federal_production_areas';
     var offshoreAreas = fs.readdirSync(offshoreAreaPath);
 
-    regionProductionByArea = {}
+    var regionProductionByArea = {};
 
     _.each(offshoreAreas, function(region) {
       var areaProduction = path.join(offshoreAreaPath, region);
@@ -133,9 +116,10 @@ describe('federal production (ONRR)', function() {
     });
 
     var assertSentinelMatch = function (products, product, year, value) {
-      var expected = Math.round(value);
+      var expected = Math.round(value),
+        actual;
       try {
-        var actual = products[product].volume[year];
+        actual = products[product].volume[year];
       } catch (error) {
         assert.ok(false, "product doesn't exist" + error);
       }
@@ -144,7 +128,7 @@ describe('federal production (ONRR)', function() {
         expected, actual,
         'expected ' + value + ' for: ' + [product, year].join(' | ')
       );
-    }
+    };
 
     var offshoreRegions = Object.keys(offshoreRegionsData);
     var acceptedProducts = ['Salt (tons)', 'Oil (bbl)', 'Gas (mcf)'];
@@ -158,26 +142,26 @@ describe('federal production (ONRR)', function() {
           ['product', product, 'doesn\'t exist'].join(' ')
         );
       });
-    }
+    };
 
     var assertOnlyProducts = function (products) {
       var allProducts = _.union(products, acceptedProducts);
-      var correctNumberProducts = allProducts.length === acceptedProducts.length;
+      var correctNumProducts = allProducts.length === acceptedProducts.length;
       assert.ok(
-        correctNumberProducts,
+        correctNumProducts,
         products,
         ('products: ' + products.join(' | '))
       );
-    }
+    };
 
     it('only has Oil, Gas, Salt', function(done) {
 
       offshoreRegions.forEach(function(region) {
         var products = offshoreRegionsData[region].products;
-        var keys = Object.keys(products)
+        var keys = Object.keys(products);
         assertProductExists(keys);
         assertOnlyProducts(keys);
-      })
+      });
 
       done();
     });
@@ -196,7 +180,10 @@ describe('federal production (ONRR)', function() {
       ];
 
       sentinels.forEach(function(sentinel) {
-        var products = regionProductionByArea[sentinel.region][sentinel.area].products;
+        var products = regionProductionByArea
+          [sentinel.region]
+          [sentinel.area]
+          .products;
 
         assertSentinelMatch(
           products,
@@ -206,8 +193,8 @@ describe('federal production (ONRR)', function() {
         );
       });
 
-      done()
-    })
+      done();
+    });
 
   });
 

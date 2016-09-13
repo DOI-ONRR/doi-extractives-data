@@ -76,8 +76,11 @@ CREATE TABLE federal_state_production AS
         units,
         SUM(volume) AS volume
     FROM federal_county_production
+    WHERE
+        LENGTH(state) = 2 AND
+        fips IS NOT NULL
     GROUP BY
-        year, state, product
+        year, state, product, product_name, units
     ORDER BY
         year, product, product_name, units, volume DESC;
 
@@ -92,7 +95,7 @@ CREATE TABLE federal_production_state_rank AS
         state.units AS units,
         state.volume AS volume,
         national.volume AS total,
-        100 * (state.volume / national.volume) AS percent,
+        100.0 * state.volume / national.volume AS percent,
         0 AS rank
     FROM
         federal_state_production AS state
@@ -111,10 +114,10 @@ CREATE TABLE federal_production_state_rank AS
 
 UPDATE federal_production_state_rank
 SET rank = (
-    SELECT COUNT(distinct inner.percent) AS rank
-    FROM federal_production_state_rank AS inner
+    SELECT COUNT(DISTINCT source.percent) AS rank
+    FROM federal_production_state_rank AS source
     WHERE
-        inner.year = federal_production_state_rank.year AND
-        inner.product = federal_production_state_rank.product AND
-        inner.percent > federal_production_state_rank.percent
+        source.year = federal_production_state_rank.year AND
+        source.product = federal_production_state_rank.product AND
+        source.percent > federal_production_state_rank.percent
 ) + 1;

@@ -19,7 +19,7 @@ sass:
 
 exclude:
   # top-level log
-  - /*.log
+  - '*.log'
   # markdown files
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
@@ -57,15 +57,25 @@ exclude:
   - Makefile
   - '**/Makefile'
   # data tools and SQLite databases
-  - '*.sql'
   - '*.db*'
-  - data/**/*.js
-  - data/**/*.svg
+  - .env
   - data/**/*.csv
+  - data/**/*.js
+  - data/**/*.md
+  - data/**/*.ndjson
+  - data/**/*.sql
+  - data/**/*.svg
+  - data/env.example
+  - data/README.md
+  - data/company-revenue/input
   - data/geo/input
   - data/jobs/bls
+  - data/land-stats
   - maps/data
   - maps/land/*.json
+
+include:
+  - /build.log
 
 collections:
   case-studies:

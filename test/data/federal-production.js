@@ -92,24 +92,59 @@ describe('federal production (ONRR)', function() {
     });
   });
 
-  describe('offshore values values', function() {
+  describe('state values', function() {
 
-
-
-    var offshoreRegionsData = yaml.safeLoad(
+    var stateProduction = yaml.safeLoad(
       fs.readFileSync(
-        path.join(OUT_PATH, 'offshore_federal_production_regions.yml'),
+        path.join(OUT_PATH, 'state_federal_production.yml'),
         'utf8'
       )
     );
 
-    var offshoreAreaPath = '_data/offshore_federal_production_areas';
-    var offshoreAreas = fs.readdirSync(offshoreAreaPath);
+    var assertSentinelMatch = function (products, product, year, value) {
+      var expected = Math.round(value);
+      var actual = products[product].volume[year].volume;
+      assert.equal(
+        expected, actual,
+        'expected ' + value + ' for: ' + [product, year].join(' | ')
+      );
+    };
+
+    // [pending] until discrepency in Oil values is solved
+    xit('check sentinel values', function(done) {
+
+      var sentinels = [
+        {
+          state: 'AK',
+          product: 'Oil (bbl)',
+          year: 2014,
+          value: 894025
+        }
+      ];
+
+      sentinels.forEach(function(sentinel) {
+
+        var products = stateProduction[sentinel.state].products;
+        assertSentinelMatch(
+          products,
+          sentinel.product,
+          sentinel.year,
+          sentinel.value
+        );
+      });
+
+      done();
+    });
+  });
+
+  describe('county values', function() {
+    var countyPath = '_data/federal_county_production';
+    var counties = fs.readdirSync(countyPath);
 
     var regionProductionByArea = {};
 
-    _.each(offshoreAreas, function(region) {
-      var areaProduction = path.join(offshoreAreaPath, region);
+    _.each(counties, function(region) {
+      var areaProduction = path.join(countyPath, region);
       regionProductionByArea[region.split('.')[0]] = yaml.safeLoad(
         fs.readFileSync(areaProduction, 'utf8')
       );
@@ -130,12 +165,80 @@ describe('federal production (ONRR)', function() {
       );
     };
 
+    // // [pending] until issue with Oil is worked out
+    xit('check sentinels', function(done) {
+
+      var sentinels = [
+        {
+          state: 'AK',
+          county: 'North Slope',
+          fips: '02185',
+          product: 'Oil (bbl)',
+          year: 2014,
+          value: 894025
+        }
+      ];
+
+      sentinels.forEach(function(sentinel) {
+        console.log(regionProductionByArea[sentinel.state])
+        var products = regionProductionByArea[sentinel.state][sentinel.fips].products;
+        assertSentinelMatch(
+          products,
+          sentinel.product,
+          sentinel.year,
+          sentinel.value
+        );
+      });
+
+      done();
+    });
+
+  });
+
+  describe('offshore values values', function() {
+    var offshoreRegionsData = yaml.safeLoad(
+      fs.readFileSync(
+        path.join(OUT_PATH, 'offshore_federal_production_regions.yml'),
+        'utf8'
+      )
+    );
+
+    var offshoreAreaPath = '_data/offshore_federal_production_areas';
+    var offshoreAreas = fs.readdirSync(offshoreAreaPath);
+
+    var regionProductionByArea = {};
+
+    _.each(offshoreAreas, function(region) {
+      var areaProduction = path.join(offshoreAreaPath, region);
+      regionProductionByArea[region.split('.')[0]] = yaml.safeLoad(
+        fs.readFileSync(areaProduction, 'utf8')
+      );
+    });
+
+    var assertSentinelMatch = function (products, product, year, value) {
+
+      var expected = Math.round(value),
+        actual;
+      try {
+        actual = Math.round(products[product].volume[year]);
+      } catch (error) {
+        assert.ok(false, "product doesn't exist" + error);
+      }
+
+      assert.equal(
+        expected, actual,
+        'expected ' + value + ' for: ' + [product, year].join(' | ')
+      );
+    };
+
     var offshoreRegions = Object.keys(offshoreRegionsData);
     var acceptedProducts = ['Salt (tons)', 'Oil (bbl)', 'Gas (mcf)'];
 
     var assertProductExists = function (products) {
+
       products.forEach(function(product) {
         var productExists = acceptedProducts.indexOf(product) > -1;
+
         assert.ok(
           productExists,
           product,
@@ -166,24 +269,19 @@ describe('federal production (ONRR)', function() {
       done();
     });
 
-    // [pending] until issue with Withheld Salt data
-    // is sorted out.
-    xit('checks offshore areas', function(done){
+    it('checks offshore areas', function(done){
        var sentinels = [
         {
           product: 'Salt (tons)',
           year: 2015,
           area: 'CGM',
           region: 'Gulf',
-          value: 'Withheld'
+          value: null
         }
       ];
 
       sentinels.forEach(function(sentinel) {
-        var products = regionProductionByArea
-          [sentinel.region]
-          [sentinel.area]
-          .products;
+        var products = regionProductionByArea[sentinel.region][sentinel.area].products;
 
         assertSentinelMatch(
           products,

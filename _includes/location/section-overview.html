@@ -35,9 +35,11 @@
       of all land in {{ state_name }}.
     </p>
 
-    <!-- Includes relevant offshore area, if there is one -->
-    {% if page.offshore_area %}
-      {{ page.offshore_area | markdownify }}
+    <!-- Includes link to relevant offshore region, if there is one -->
+    {% if page.nearby_offshore_region %}
+    <p>
+      {{ state_name }} also borders an offshore area with significant natural resource extraction, which may contribute to the state's economy. For production and revenue data about offshore extraction near {{ state_name }}, see {{ page.nearby_offshore_region }}.
+    </p>
     {% endif %}
 
     <!-- Blurb for opt-in states -->

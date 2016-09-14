@@ -5,6 +5,8 @@ FIPS: '06'
 
 priority: true
 
+nearby_offshore_region: 'the <a href="../offshore-pacific/">Pacific Ocean</a>'
+
 case_study_link: |
     For a detailed view of how oil extraction affects communities in southern California, read more about [Kern County](/case-studies/kern/).
 

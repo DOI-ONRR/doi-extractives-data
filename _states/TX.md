@@ -16,8 +16,8 @@ neighbors:
 
 priority: true
 
-offshore_area: |
-    Texas also borders an offshore area with significant natural resource extraction, which may contribute to the state's economy. For production and revenue data about offshore extraction near Texas, see the [Western Gulf of Mexico]().
+nearby_offshore_region: 'the <a href="../offshore-gulf/">Gulf of Mexico</a>'
+
 case_study_link: |
     For a detailed view of how natural gas extraction affects communities in Texas, read more about [Tarrant and Johnson Counties](../../case-studies/tarrant-and-johnson/).
 ---

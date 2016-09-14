@@ -1,4 +1,3 @@
-# XXX this must be a string to use it as an index into other data!
 now: 2015
 
 default: [2006, 2015]
@@ -6,3 +5,5 @@ default: [2006, 2015]
 exports: [2011, 2014]
 
 self_employment: [2005, 2014]
+
+company_revenue: [2013, 2015]

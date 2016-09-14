@@ -233,7 +233,8 @@ data/revenue: \
 	data/state_revenues_by_type.yml \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
-	data/offshore_revenues_by_type.yml
+	data/offshore_revenues_by_type.yml \
+	data/company_revenue.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -535,6 +536,16 @@ data/opt_in_state_revenues:
 			-c _meta/opt_in_state_revenues.yml \
 			-o '_$@/{state}.yml'
 
+data/company_revenue.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, company, commodity, revenue_type, revenue \
+		FROM company_revenue \
+		ORDER BY year, revenue DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/company_revenue.yml \
+			-o '_$@'
+
 db: $(db)
 
 $(db): \
@@ -605,24 +616,25 @@ tables/all_production: data/all-production/product
 	rm $$tmp
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/company_revenue: data/company/years
+tables/company_revenue: data/company-revenue/output
 	@$(call drop-table,company_revenue)
 	tmp=$^/all.ndjson; \
-	for company_filename in $^/????.tsv; do \
+	for company_filename in $^/2???.tsv; do \
 		filename="$${company_filename##*/}"; \
-		COMPANY_YEAR="$${filename%%.*}"; \
-		$(tito) -r tsv --map ./data/company/transform.js \
+		COMPANY_YEAR="$${filename%%.*}" \
+		$(tito) -r tsv --map ./data/company-revenue/transform.js \
 			$$company_filename >> $$tmp; \
 	done; \
-	$(tables) -i $$tmp -t ndjson -n company_revenue && \
-	rm $$tmp
+	$(tables) -i $$tmp -t ndjson -n company_revenue; \
+	rm -f $$tmp
+	@$(call load-sql,data/company-revenue/rollup.sql)
 
 tables/jobs: tables/bls tables/self_employment
 
 tables/bls: data/jobs/bls
 	@$(call drop-table,bls_employment)
 	tmp=$^/all.ndjson; \
-	for jobs_filename in $^/????/joined.tsv; do \
+	for jobs_filename in $^/2???/joined.tsv; do \
 		$(tito) -r tsv --map ./data/jobs/transform.js \
 			$$jobs_filename >> $$tmp; \
 	done; \

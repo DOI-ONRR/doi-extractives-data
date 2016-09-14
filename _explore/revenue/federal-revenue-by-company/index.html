@@ -1,5 +1,166 @@
 ---
-layout: redirect
+layout: default
 permalink: /explore/federal-revenue-by-company/
-redirect_url: /explore/federal-revenue-by-company/2015/
 ---
+{% assign year_now = site.data.years.now %}
+{% assign year_range = site.data.years.company_revenue | default: site.data.years.default %}
+{% assign year_list = year_range | to_list %}
+{% assign company_revenue = site.data.company_revenue %}
+
+<section id="companies" class="explore-subpage container container-margin">
+
+  <section class="container-page-wrapper">
+    <div class="container-left-4">
+      <div>
+        <div>
+          <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+          /
+        </div>
+
+        <h1>Federal Revenue by Company</h1>
+
+        <p>Explore revenues on federal lands and waters in {{ page.year }} by commodity, revenue type, and company.</p>
+
+        <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
+
+        <p>Choose a commodity or revenue type to filter the list of revenues. To search for a specific company, start typing the name of the company.</p>
+
+        <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </div>
+    </div>
+
+    <div class="container-right-8">
+
+      <div class="sticky sticky-top sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" aria-expanded="false">
+        <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
+        <form id="filters" aria-hidden="true" class="filters">
+
+          <div class="filters-heading">
+            <h2 class="h3">Filter revenue</h2>
+          </div>
+
+
+          <div class="container-left-6">
+            <div id="commodity-filter" class="filter">
+              <label for="commodity-selector">Commodity</label>
+              <select id="commodity-selector" name="commodity">
+                <option value="">All commodities</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="container-left-6" style="margin-right: 0;">
+            <div id="type-filter" class="filter filters-last">
+              <label for="type-selector">Revenue Type</label>
+              <select id="type-selector" name="type">
+                <option value="">All</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+        <h1 data-filter-description="" class="filter-description">
+          <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
+          from
+          <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
+          extraction on federal lands
+        </h1>
+
+        <div class="container">
+          <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
+        </div>
+
+      </div>
+
+      <section class="explore-subpage-nav container">
+        <div class="explore-subpage-tabs">
+          <ul role="tablist">
+            {% for year in year_list %}
+            <li class="explore-subpage-tab">
+              <a role="tab" href="#{{ year }}"{% if year_now == year %}
+                aria-expanded="true"{% endif %}>{{ year }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <div class="filter-description_wrapper">
+        <h1 data-filter-description="" class="filter-description filter-description_open">
+          <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
+          from
+          <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
+          extraction on federal lands ({{ page.year }})
+        </h1>
+      </div>
+
+      {% for _year in year_list %}
+        {% assign year = _year | to_s %}
+      <div class="explore-exploration slab-alpha" role="tabpanel" id="{{ year }}">
+        <h2>{{ year }}</h2>
+
+        <div class="container">
+          <div class="filter-summary_title">
+            <h2 class="h3 region-title">Total revenues by type</h2>
+          </div>
+          <table is="bar-chart-table">
+            {% for co in company_revenue[year] %}
+              {% if co[0] == 'All' %}{% continue %}{% endif %}
+              {% assign revenue_types = co[1].All %}
+              {% assign company_total = revenue_types.All %}
+            <tbody>
+              <tr>
+                <th>{{ co[0] }}</th>
+                <th>Total</th>
+                <td class="numeric" data-value="{{ company_total }}">
+                  ${{ company_total | intcomma }}
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <th>Revenue Type</th>
+              </tr>
+              {% for revenue_type in revenue_types %}
+                {% if revenue_type[0] == 'All' %}{% continue %}{% endif %}
+              <tr>
+                <td></td>
+                <td>{{ revenue_type[0] }}</td>
+                <td data-value="{{ revenue_type[1] }}">
+                  ${{ revenue_type[1] | intcomma }}
+                </td>
+              </tr>
+              {% endfor %}
+
+              <tr>
+                <td></td>
+                <th>Commodity</th>
+              </tr>
+              {% for commodity in co[1] %}
+                {% if commodity[0] == 'All' %}{% continue %}{% endif %}
+              <tr>
+                <td></td>
+                <td>{{ commodity[0] }}</td>
+                <td data-value="{{ commodity[1].All }}">
+                  ${{ commodity[1].All | intcomma }}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+            {% endfor %}
+          </table>
+        </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </section>
+
+</section>
+
+<script src="{{ site.baseurl }}/js/lib/explore.min.js"></script>

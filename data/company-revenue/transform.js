@@ -6,7 +6,9 @@ var util = require('../../lib/util');
 var YEAR = process.env.COMPANY_YEAR;
 
 module.exports = {
-  year: function() { return YEAR; },
+  year: function() {
+    return YEAR;
+  },
   company: 'Company',
   commodity: function(d) {
     return util.normalizeCommodity(d.Commodity);

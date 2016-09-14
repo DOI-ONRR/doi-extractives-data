@@ -1,11 +1,11 @@
 .eiti-tooltip {
   background: $white;
   border: 2px solid $greenest-land;
+  max-width: 300px;
   padding: $base-padding-lite;
   padding-bottom: ($base-padding-lite / 2);
   padding-top: 0.23em; // to account for verticality of text
   position: absolute;
-  max-width: 300px;
   z-index: 9000;
 
   p {

@@ -1,60 +1,62 @@
+{% assign year = include.year | default: year %}
+
 {% assign multiple_bars = values.size > 1 %}
 
 <tr>
   {%
-    assign total = values.All[include.year]
+    assign total = values.All[year]
     | default: 0
-    | plus: revenue_types.Oil.All[include.year]
-    | plus: revenue_types.Gas.All[include.year]
-    | plus: revenue_types.NGL.All[include.year]
+    | plus: revenue_types.Oil.All[year]
+    | plus: revenue_types.Gas.All[year]
+    | plus: revenue_types.NGL.All[year]
   %}
   <th scope="row" rowspan="2" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}">
     <strong>Oil &amp; Gas </strong><br>
     <strong>${{ total | intcomma }}</strong>
   </th>
   <td rowspan="2" data-value="{{
-    values.Bonus[include.year] | default: 0
+    values.Bonus[year] | default: 0
   }}">
-    <span class="text">${{ values.Bonus[include.year] | default: 0 | intcomma }}</span>
+    <span class="text">${{ values.Bonus[year] | default: 0 | intcomma }}</span>
   </td>
   <td rowspan="2" data-value="{{
-    values.Rents[include.year] | default: 0
+    values.Rents[year] | default: 0
   }}">
-    <span class="text">${{ values.Rents[include.year] | default: 0 | intcomma }}</span>
+    <span class="text">${{ values.Rents[year] | default: 0 | intcomma }}</span>
   </td>
   <td class="{% if multiple_bars %}bars{% endif %}" data-value="{{
-    revenue_types.Oil.Royalties[include.year] | default: 0
+    revenue_types.Oil.Royalties[year] | default: 0
   }}">
     <span data-value="{{
-    revenue_types.Gas.Royalties[include.year] | default: 0
+    revenue_types.Gas.Royalties[year] | default: 0
   }}"></span>
     <span data-value="{{
-    revenue_types.NGL.Royalties[include.year] | default: 0
+    revenue_types.NGL.Royalties[year] | default: 0
   }}"></span>
 
-    {% if revenue_types.Oil.Royalties[include.year] %}
+    {% if revenue_types.Oil.Royalties[year] %}
       <span class="text">
       <strong class="text-header text-header-first">Oil</strong>
       ${{
-        revenue_types.Oil.Royalties[include.year]
+        revenue_types.Oil.Royalties[year]
         | default: 0
         | intcomma
       }}</span>
     {% endif %}
 
-    {% if revenue_types.Gas.Royalties[include.year] %}
+    {% if revenue_types.Gas.Royalties[year] %}
       <span class="text">
       <strong class="text-header text-header-second">Gas</strong>
-      ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}</span>
+      ${{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
 
-    {% if revenue_types.NGL.Royalties[include.year] %}
+    {% if revenue_types.NGL.Royalties[year] %}
       <span class="text">
       <strong class="text-header text-header-third">NGL</strong>
-      ${{ revenue_types.NGL.Royalties[include.year] | default: 0 | intcomma }}</span>
+      ${{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
   </td>
   <td rowspan="2" data-value="{{
-    values['Other Revenues'][include.year] | default: 0
-  }}"><span class="text">${{ values['Other Revenues'][include.year] | default: 0 | intcomma }}</span></td>
+    values['Other Revenues'][year] | default: 0
+  }}"><span class="text">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</span></td>
 </tr>

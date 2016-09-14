@@ -26,32 +26,88 @@
 
 {% for commodity in revenue_types %}
   {% assign commodity_name = commodity[0] %}
+  {% assign commodity_values = commodity[1] %}
   {% if oilgas_list contains commodity_name %}
-    {% assign oilgas_exists = true %}
+    {% for oilgas_name in oilgas_list %}
+      {% if commodity_name == oilgas_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign oilgas_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if minerals_list contains commodity_name %}
-    {% assign minerals_exists = true %}
+    {% for minerals_name in minerals_list %}
+      {% if commodity_name == minerals_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign minerals_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Coal' %}
-    {% assign coal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign coal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Geothermal' %}
-    {% assign geothermal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign geothermal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Wind' %}
-    {% assign wind_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign wind_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Other Products' %}
-    {% assign other_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign other_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
-    {% assign all_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign all_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
 {% endfor %}
@@ -59,6 +115,7 @@
 
 <table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <!--  geothermal exists?: {{ geothermal_exists }} -->
   <thead>
     <tr>
       <th class="arrow_box"><span>Commodity</span></th>
@@ -114,10 +171,12 @@
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}
+        <!-- commodity_name: {{ commodity_name }} -->
+        <!-- value: {{ values }} -->
 
         {% if commodity_name == 'Geothermal' %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% include location/revenue-type-row.html %}
+            {% include location/revenue-type-row.html year=include.year %}
           </tbody>
         {% endif %}
       {% endfor %}

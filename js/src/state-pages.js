@@ -7,7 +7,7 @@
   require('./../components/eiti-bar-chart.js');
   require('./../components/year-switcher-section.js');
   require('./../components/eiti-data-map-table.js');
-  require('./../components/eiti-tooltip.js');
+  require('./../components/eiti-tooltip-wrapper.js');
 
   require('./../components/aria-tabs.js');
 

@@ -40,16 +40,19 @@
       {{ page.offshore_area | markdownify }}
     {% endif %}
 
-    <!-- Includes case study link, if there is one -->
-    {% if page.case_study_link %}
-      {{ page.case_study_link | markdownify }}
-    {% endif %}
-
     <!-- Blurb for opt-in states -->
     {% if is_opt_in_state %}
       <p>
         The state of {{ state_name }} chose to participate in an extended USEITI reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
       </p>
+      {% if page.state_optin_intro %}
+        {{ page.state_optin_intro | markdownify }}
+      {% endif %}
+    {% endif %}
+
+    <!-- Includes case study link, if there is one -->
+    {% if page.case_study_link %}
+      {{ page.case_study_link | markdownify }}
     {% endif %}
 
   </section>

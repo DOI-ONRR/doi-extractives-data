@@ -242,10 +242,25 @@
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             <tr class="table-arrow_box-category"><td colspan="5">
               All commodities
-              <icon class="icon-oil"></icon>
-              <icon class="icon-coal"></icon>
-              <icon class="icon-minerals"></icon>
-              <icon class="icon-geo"></icon>
+              {% if oilgas_exists == true %}
+                <icon class="icon-oil"></icon>
+              {% endif %}
+
+              {% if coal_exists == true %}
+                <icon class="icon-coal"></icon>
+              {% endif %}
+
+              {% if geothermal_exists == true %}
+                <icon class="icon-geo"></icon>
+              {% endif %}
+
+              {% if wind_exists == true %}
+                <icon class="icon-wind"></icon>
+              {% endif %}
+
+              {% if minerals_exists == true %}
+                <icon class="icon-minerals"></icon>
+              {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}
           </tbody>

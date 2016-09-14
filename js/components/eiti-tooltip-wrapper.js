@@ -18,13 +18,13 @@
 
   var attached = function() {
     var self = d3.select(this);
-    var svg = d3.select('svg');
-    var svgParent = self;
+    var svg = self.select('svg');
     var titles = self.selectAll('title');
     var tiles = self.selectAll('use');
 
     var tooltip,
-      tooltipText;
+      tooltipText,
+      OFFSET = 2;
 
     var init = function(initialize) {
       tooltip = self.select('.eiti-tooltip');
@@ -53,7 +53,6 @@
     var update = function() {
       var event = event || d3.event || window.event;
       var elem = event.target || event.srcElement;
-
       var parentElement = d3.select(elem.parentElement);
       var title = parentElement.select('title');
 
@@ -72,20 +71,24 @@
           var tooltipWidth = depixelize(tooltip.style('width'));
           var svgWidth = depixelize(svg.style('width'));
 
-          if (svgWidth <= tooltipWidth + event.layerX) {
-            return pixelize(event.layerX - tooltipWidth);
+          var x = event.layerX + OFFSET;
+
+          if (svgWidth <= tooltipWidth + x) {
+            return pixelize(event.layerX - tooltipWidth - OFFSET);
           } else {
-            return pixelize(event.layerX);
+            return pixelize(x);
           }
         })
         .style('top', function() {
           var tooltipHeight = depixelize(tooltip.style('height'));
           var svgHeight = depixelize(svg.style('height'));
 
-          if (svgHeight <= tooltipHeight + event.layerY) {
-            return pixelize(event.layerY - tooltipHeight);
+          var y = event.layerY + OFFSET;
+
+          if (svgHeight <= tooltipHeight + y) {
+            return pixelize(event.layerY - tooltipHeight - OFFSET);
           } else {
-            return pixelize(event.layerY);
+            return pixelize(y);
           }
         });
     };
@@ -93,6 +96,7 @@
     var hide = function () {
       var event = event || window.event;
       var elem = event.target || event.srcElement;
+
       if (elem.nodeName === 'svg') {
         var tooltip = self.select('.eiti-tooltip');
         hideTooltip(tooltip);

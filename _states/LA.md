@@ -6,6 +6,9 @@ FIPS: '22'
 priority: true
 
 locality_name: 'Parish'
+
+nearby_offshore_region: 'the <a href="../offshore-gulf/">Gulf of Mexico</a>'
+
 case_study_link: |
     For a detailed view of how natural gas production affects communities in Louisiana, read more about [DeSoto Parish](/case-studies/desoto/).
 ---

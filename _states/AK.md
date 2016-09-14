@@ -10,8 +10,10 @@ state_revenue_year: 2015
 
 locality_name: 'Borough or census area'
 
+nearby_offshore_region: '<a href="../offshore-alaska/">offshore Alaska</a>'
+
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in Alaska, read more about [North Slope Borough](/case-studies/north-slope/).
+    For a detailed view of how oil extraction affects communities in Alaska, read more about [North Slope Borough](../../case-studies/north-slope/).
 
 state_production: |
     Most of Alaska's crude oil production takes place in the [North Slope Borough](../../case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
@@ -21,7 +23,6 @@ state_production: |
     **Nonenergy minerals:** For details about nonenergy mineral extraction, see the [USGS Minerals Yearbook for Alaska](http://minerals.usgs.gov/minerals/pubs/state/ak.html).
 
     In 2012, Alaska's nonenergy mineral production was valued at about $3.69 billion. Metals, including gold, made up 98% of Alaska’s nonenergy mineral production value in 2012. Alaska produces 14% of U.S. gold, with major gold mines in central Alaska, southern Alaska, and the Seward Peninsula. More information about gold exploration can be found [here](http://minerals.usgs.gov/minerals/pubs/commodity/gold/).
-state_land: |
 state_land_production: |
     We don't have detailed data about production of natural resources on land owned by the state of Alaska. See [state governance](#state-governance) for information about governance of state land.
 state_revenue: |

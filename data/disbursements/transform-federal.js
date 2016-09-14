@@ -8,7 +8,7 @@ module.exports = {
   year:   'FY',
   fund: function(d) {
     var fund = d['Fund'];
-    return fundMap[fund] || fund;
+    return fundMap[fund] || fund.replace(/ - GOMESA\s*$/, '');
   },
   source: 'Source',
   region: function(d) {

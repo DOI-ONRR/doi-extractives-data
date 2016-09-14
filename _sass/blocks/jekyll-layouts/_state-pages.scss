@@ -3,7 +3,7 @@
 
   p + section,
   section + section,
-  h2 + section,
+  h2 + section:not(.state-pages-top),
   p + h4 {
     margin-top: -0.75rem; //to compensate for margin from preceding selectors
   }
@@ -11,6 +11,10 @@
   h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
     padding-top: 6rem;
+
+    &.state-page-overview {
+      padding-top: 0;
+    }
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),
@@ -35,8 +39,9 @@
   }
 
   .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
-    border-bottom: 1px solid $neutral-gray;
-    margin-bottom: $base-padding-lite * 2;
+    border-bottom: none;
+    font-size: 1rem;
+    margin-bottom: 0;
   }
 
   hr {
@@ -102,5 +107,10 @@
     &:active {
       text-decoration: underline;
     }
+  }
+
+  .state-pages-ownership {
+    float: right;
+    margin-left: 20px;
   }
 }

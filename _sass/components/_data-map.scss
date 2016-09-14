@@ -35,6 +35,12 @@ data-map {
       }
     }
 
+    .map-container {
+      background-color: $gray-lighter;
+      border-top: 10px solid $gray-lighter;
+      margin-bottom: 10px;
+    }
+
     .legend-container {
       @include span-columns(4);
       @include omega();
@@ -150,11 +156,6 @@ eiti-data-map {
   height: 215px;
   padding: 0;
   width: 200px;
-
-  // .swatch {
-  //   stroke: $neutral-gray;
-  //   stroke-width: 1;
-  // }
 
   .cell text {
     @include font-size(3 / 4);

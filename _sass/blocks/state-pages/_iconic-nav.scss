@@ -5,7 +5,7 @@
   border-bottom: 1px solid $mid-gray;
   display: flex;
   justify-content: flex-start;
-  margin: 4rem 0 0 0;
+  margin: 0;
   position: relative;
 
   svg.map {
@@ -81,4 +81,8 @@
     top: -20px;
     visibility: hidden;
   }
+}
+
+.national-page .state-page-nav-title {
+  margin: 8.6em 0 0;
 }

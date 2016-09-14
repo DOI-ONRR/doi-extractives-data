@@ -7,7 +7,7 @@ national_page: true
 selector: location
 nav_items:
   - name: title
-    title: Overview
+    title: Top
   - name: production
     title: Production
     subnav_items:
@@ -47,12 +47,12 @@ nav_items:
 {% assign steps=9 %}
 
 
-<main id="national" class="layout-state-pages">
+<main id="national" class="layout-state-pages national-page">
 
-  <section class="slab-delta">
+  <section  id="title" class="slab-delta">
     <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
       <div class="container-left-8 ribbon-hero ribbon-hero-column">
-        <h1 id="title">Explore data</h1>
+        <h1>Explore data</h1>
         <figure is="data-map" color-scheme="Reds" steps="9">
           {%
             include state-map.html
@@ -61,6 +61,9 @@ nav_items:
             no_outline=true
           %}
         </figure>
+        <aside class="wide">
+          {% include maps/federal_land_ownership_legend.html %}
+        </aside>
       </div>
       <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
         <figure class="ribbon-card-top">

@@ -336,8 +336,7 @@ data/offshore_federal_production_areas:
 			ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \
 		WHERE \
-			region_id IS NOT NULL AND \
-			volume IS NOT NULL \
+			region_id IS NOT NULL \
 		ORDER BY \
 			region_id, \
 			area_id, year" \

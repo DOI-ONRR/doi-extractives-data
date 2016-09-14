@@ -246,7 +246,8 @@ data/county_revenue:
 		FROM county_revenue \
 		WHERE \
 			state IS NOT NULL AND \
-			county IS NOT NULL \
+			county IS NOT NULL AND \
+			revenue_type = 'All' \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_revenue.yml \

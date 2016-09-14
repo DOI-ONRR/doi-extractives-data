@@ -9,7 +9,8 @@
     data-value='{{ state_value | default: 0 | jsonify }}'{% endif %}>
     <title is="eiti-tooltip"
            desc="{{ state.title }}"
-           alt="{{ state.title }}"></title>
+           alt="{{ state.title }}"
+           href="{% if include.href %}{{ site.baseurl }}{{ include.href | format_url: state }}{% endif %}">{{ state.title }}</title>
     <use xlink:href="{{ _svg_path }}#state-{{ state.id }}" aria-label="{{ state.title }}"></use>
   </g>
 

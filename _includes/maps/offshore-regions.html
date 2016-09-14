@@ -4,7 +4,8 @@
   <g class="state offshore-area feature" fill><!--- FIXME: nix fill attribute -->
     <title is="eiti-tooltip"
            desc="{{ region.title }}"
-           alt="{{ region.title }}"></title>
+           alt="{{ region.title }}"
+           href="{% if include.href %}{{ site.baseurl }}{{ include.href | format_url: region }}{% endif %}">{{ state.title }}</title>
     <use xlink:href="{{ _svg_path }}#{{ region.id }}"  aria-label="{{ region.title }}"></use>
   </g>
   {% if include.href %}</a>{% endif %}

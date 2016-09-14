@@ -31,6 +31,14 @@ svg.map {
 
   .feature:not([fill]) use {
     fill-opacity: 0;
+
+    @include transition('fill-opacity', 0.3s);
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill-opacity: 0.3;
+    }
   }
 
   .feature[fill] use {

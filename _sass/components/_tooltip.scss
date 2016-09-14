@@ -1,16 +1,18 @@
 .eiti-tooltip {
-	position: absolute;
-	z-index: 9000;
-	background: $white;
-	border: 2px solid $greenest-land;
-	padding: $base-padding-lite;
-	max-width: 300px;
+  position: absolute;
+  z-index: 9000;
+  background: $white;
+  border: 2px solid $greenest-land;
+  padding: $base-padding-lite;
+  padding-bottom: ($base-padding-lite / 2);
+  padding-top: 0.23em; // to account for verticality of text
+  max-width: 300px;
 
-	p {
-		@include heading('para-md');
+  p {
+    @include heading('para-sm');
 
-		font-weight: $weight-bold;
-		color: $green-land;
-		margin: 0;
-	}
+    font-weight: $weight-bold;
+    color: $green-land;
+    margin: 0;
+  }
 }

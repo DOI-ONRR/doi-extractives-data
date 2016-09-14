@@ -73,32 +73,6 @@ state_impact: |
 
 <!-- State governance -->
 
-### Understanding land ownership
-
-Land ownership in Alaska is unique in the U.S. When the United States purchased Alaska from Russia in 1867, the federal government initially owned all 375 million acres of the Alaska Territory. When Alaska became a state 92 years later, in 1959, the federal government granted 28% of the land to the state through a process that was unique to Alaska. The state selected 103 million acres of land and was granted an additional 1.2 million acres in trust lands. Alaska also owns all mineral rights in its acreage. Then, in 1971, Congress passed the Alaska Native Claims Settlement Act, which granted 44 million acres (both surface and sub-surface) and 1 billion dollars to [village and regional corporations]() created by the act.
-
-The state of Alaska is the second largest landowner in the state (after the U.S. government). It received patent to 90 million of the acres it selected. Some of the areas the state selected have not yet been transferred from the federal government. Learn more about:
-
-* [Leasing state land (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/lease_land.pdf)
-* [Buying state land (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/landsales_process.pdf)
-* [State land sales](http://dnr.alaska.gov/mlw/landsale/index.cfm)
-* [Land for Alaskans program (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/land_for_ak.pdf)
-
-To explore a map of land ownership in Alaska, see the Alaska Department of Natural Resource’s [mapping application](http://dnr.alaska.gov/MapAK/). 
-
-#### Alaska Native corporations
-
-In Alaska, the majority of privately owned lands are held by for-profit native regional corporations, who actively pursue natural resource development. Surface lands around communities are managed by village corporations. Village and regional corporations own 12% of land in Alaska. Non-native private lands in Alaska comprise only 1% of the total land base in the state. The Alaska Mental Health Trust owns one million acres selected because of their value for timber, oil, gas, coal and materials resources. They are managed to generate revenues to support Mental Health programs in the state.
-
-In most states, American Indian land was taken by force, settled by treaty, or both. Alaska Native claims to land had never been settled or resolved until congress passed the Alaska Native Claims Settlement Act (ANCSA) in 1971. ANCSA took the first step to resolving Alaska Native claims by creating 12 regional native corporations and 220 village corporations. Congress also granted 44 million acres, the mineral rights under that land, and $1 billion to the corporations created by ANCSA.
-
-These private, for-profit corporations belong to and benefit Alaska Natives in their region or village, but are distinct from tribes. Alaska Natives were allotted shares in Alaska Native corporations when the corporations were created (much like shares in a publicly traded corporation). Unlike other shares, Alaska Native corporation shares cannot be traded or sold.
-
-[229 federally recognized tribal entities](https://www.federalregister.gov/documents/2016/01/29/2016-01769/indian-entities-recognized-and-eligible-to-receive-services-from-the-united-states-bureau-of-indian#h-7) also exist in Alaska. Until recently, they were viewed as landless (with the exception of Metlakatla Indian Community’s Annette Island Reserve, which was the only reservation in the state). The Bureau of Indian Affairs recently changed this with [Rule 25 CFR Part 151](http://www.bia.gov/WhoWeAre/AS-IA/ORM/LandTrustAlaska/index.htm), which allows Alaska tribes to apply to put land into trust.
-
-ANCs have generated substantial revenues from resource development, though this has also exposed some ANCs to questions of revenue sustainability. ANCSA provides for natural revenue sharing among all ANCs, so significant mutual support exists among the ANCs for resource development. For example, the NANA Regional Corporation’s Red Dog zinc mine generated $1.3B in net proceeds for NANA. It retained roughly $480M and shared approximately $820M with other ANCs. Of the $480M retained, individual shareholders received approximately $221M in dividends. To read more, click [here](http://www.nana.com/regional/resources/red-dog-mine/).
-
-
 ### State agencies
 
 Alaska state agencies regulate extraction and interact with extractive industry companies in Alaska, particularly when they're operating on state or private land.
@@ -152,3 +126,28 @@ Alaska has two [local government structures (PDF)](https://www.commerce.alaska.g
 In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. Development and activity related to the extractive industries are concentrated on Alaska's northern coast, so attention to costs is concentrated in that part of the state.
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs: transportation, water, emergency services, and reclamation. For a holistic look at how the North Slope Borough has met these needs, see [the North Slope Borough case study](../../case-studies/north-slope/#costs).
+
+## Understanding land ownership
+
+Land ownership in Alaska is unique among states. When the United States purchased Alaska from Russia in 1867, the federal government initially owned all 375 million acres of the Alaska Territory. When Alaska became a state 92 years later, in 1959, the federal government granted 28% of the land to the state through a process that was unique to Alaska. The state selected 103 million acres of land and was granted an additional 1.2 million acres in trust lands; Alaska also owns all mineral rights in its acreage.
+
+The state of Alaska is the second largest landowner in the state (after the U.S. government). It received patent to 90 million of the acres it selected. Some of the areas the state selected have not yet been transferred from the federal government. Learn more about:
+
+* [Leasing state land (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/lease_land.pdf)
+* [Buying state land (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/landsales_process.pdf)
+* [State land sales](http://dnr.alaska.gov/mlw/landsale/index.cfm)
+* [Land for Alaskans program (PDF)](http://dnr.alaska.gov/mlw/factsht/land_fs/land_for_ak.pdf)
+
+The Alaska Mental Health Trust also owns and manages 1 million acres with significant timber, oil, gas, coal, or material resources. Revenues from lands managed by the Trust support mental health programs in the state.
+
+To explore a map of land ownership in Alaska, see the Alaska Department of Natural Resource’s [mapping application](http://dnr.alaska.gov/MapAK/).
+
+### Alaska Native corporations
+
+In most states, American Indian land was taken by force, settled by treaty, or both — but in Alaska, Native claims to land were not settled or resolved until Congress passed the Alaska Native Claims Settlement Act (ANCSA) in 1971. ANCSA granted 44 million acres (both surface and sub-surface) and 1 billion dollars to 12 regional native corporations and 220 village corporations. These village and regional corporations now own 12% of land in Alaska; non-native private lands in Alaska make up just 1% of the land in the state.
+
+These private, for-profit corporations belong to and benefit Alaska Natives in their region or village, but are distinct from tribes. Alaska Natives were allotted shares in Alaska Native corporations when the corporations were created. Unlike shares in a publicly traded corporation, however, Alaska Native corporation shares cannot be traded or sold.
+
+Alaska Native corporations have generated substantial revenues from resource development, though this exposes them to the same revenue sustainability questions that affect [state revenues](#revenue-sustainability). ANCSA provides for natural revenue sharing among all ANCs, so ANCs may mutually support each other to help smooth revenue volatility: For example, the [Red Dog zinc mine](http://www.nana.com/regional/resources/red-dog-mine/) has generated $1.3 billion in net proceeds for NANA Regional Corporation since mining began. It has retained about $480 million and shared about $820 million with other ANCs. Of the $480 million retained, about $221 million has been paid out to individual shareholders as dividends.
+
+Separately from the Alaska Native corporations, there are [229 federally recognized tribal entities](https://www.federalregister.gov/documents/2016/01/29/2016-01769/indian-entities-recognized-and-eligible-to-receive-services-from-the-united-states-bureau-of-indian#h-7) in Alaska. Until recently, they were viewed as landless (with the exception of one reservation, the Metlakatla Indian Community’s Annette Island Reserve). The Bureau of Indian Affairs recently changed this by establishing [Rule 25 CFR Part 151](http://www.bia.gov/WhoWeAre/AS-IA/ORM/LandTrustAlaska/index.htm), which allows Alaska tribes to apply to put land into trust.

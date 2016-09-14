@@ -2,7 +2,7 @@
 var parse = require('../../lib/parse');
 
 module.exports = {
-  year:           'FY',
+  year:           'CY',
   region:         'Offshore Region',
   planning_area:  'Offshore Planning Area',
   block_name:     'BOEM Block Name',

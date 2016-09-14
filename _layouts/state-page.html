@@ -2,7 +2,7 @@
 layout: default
 nav_items:
   - name: overview
-    title: Overview
+    title: Top
   - name: production
     title: Production
     subnav_items:
@@ -82,19 +82,15 @@ nav_items:
       /
     </div>
     <h1 id="title">{{ state_name }}</h1>
-
-    <div class="container-half">
-
-
-      {% include location/section-overview.html %}
-    </div>
-    <div class="container-right-5 container-shift-1">
-      {% include location/section-ownership.html %}
-    </div>
-  </section>
-
-  <section class="container">
+    
     <div class="container-left-9">
+      
+      <section id="overview">
+        <h2 class="state-page-overview">Overview</h2>
+        
+        {% include location/section-overview.html %}
+        
+      </section>
 
       <section id="production">
         <h2>Production</h2>

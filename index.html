@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+selector: location
 ---
 <section class="slab-delta">
   <div class="container-page-wrapper ribbon">
@@ -17,7 +18,32 @@ title: Home
     </div>
   </div>
 </section>
+
 <section class="slab-alpha container-padded">
+  <div class="container-page-wrapper">
+    <div class="container-left-4">
+      <p class="h5 explore_home-subhead">Explore data</p>
+      <h2 class="h3 explore_home-heading">Learn about extractive industries throughout the country</h2>
+      <p>This is where wonderful words from Corey will go that will include references to our opt-in states because they have the most information. This will hopefully help people find them.</p>
+      <figcaption class="state_pages-select">
+        <label for="location-selector">Choose a state or offshore region</label>
+        {% include selector.html %}
+      </figcaption>
+    </div>
+    <div class="container-right-8">
+      <figure is="data-map" color-scheme="Reds" steps="9">
+        {%
+          include state-map.html
+          href=':url'
+          ownership=true
+          no_outline=true
+        %}
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="slab-alpha container-padded">
   <div class="container-page-wrapper tab-interface">
 
     <p class="h5 explore_home-subhead">Explore data</p>
@@ -36,7 +62,6 @@ title: Home
       </div>
       <div  class="container-left-6">
         <a href="{{ site.baseurl }}/explore/#revenue" class="explore_home-img">
-          <!-- <h4>Revenue from all commodities on U.S. federal lands</h4> -->
           <img src="{{ site.baseurl }}/img/explore-home-revenue.png" alt="Map showing revenues from extractive resources on federal lands">
         </a>
       </div>
@@ -46,7 +71,7 @@ title: Home
           <div><a href="{{ site.baseurl }}/explore/#revenue">Federal revenue from all lands →</a></div>
         </div>
       </aside>
-    </section>
+    </section> -->
 
     <section class="eiti-tab-panel explore_home-main" id="production" role="tabpanel" aria-hidden="true">
       <div class="container-left-3">

@@ -10,19 +10,19 @@
     | plus: revenue_types.Gas.All[year]
     | plus: revenue_types.NGL.All[year]
   %}
-  <th scope="row" rowspan="2" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}">
+  <th scope="row" rowspan="2" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}" class="table-arrow_box-subheader">
     <strong>Oil &amp; Gas </strong><br>
-    <strong>${{ total | intcomma }}</strong>
+    <strong class="table-arrow_box-subheader-value">${{ total | intcomma }}</strong>
   </th>
   <td rowspan="2" data-value="{{
     values.Bonus[year] | default: 0
   }}">
-    <span class="text">${{ values.Bonus[year] | default: 0 | intcomma }}</span>
+    <span class="text table-arrow_box-subheader-value">${{ values.Bonus[year] | default: 0 | intcomma }}</span>
   </td>
   <td rowspan="2" data-value="{{
     values.Rents[year] | default: 0
   }}">
-    <span class="text">${{ values.Rents[year] | default: 0 | intcomma }}</span>
+    <span class="text table-arrow_box-subheader-value">${{ values.Rents[year] | default: 0 | intcomma }}</span>
   </td>
   <td class="{% if multiple_bars %}bars{% endif %}" data-value="{{
     revenue_types.Oil.Royalties[year] | default: 0
@@ -35,7 +35,7 @@
   }}"></span>
 
     {% if revenue_types.Oil.Royalties[year] %}
-      <span class="text">
+      <span class="text table-arrow_box-subheader-value">
       <strong class="text-header text-header-first">Oil</strong>
       ${{
         revenue_types.Oil.Royalties[year]
@@ -45,18 +45,18 @@
     {% endif %}
 
     {% if revenue_types.Gas.Royalties[year] %}
-      <span class="text">
+      <span class="text table-arrow_box-subheader-value">
       <strong class="text-header text-header-second">Gas</strong>
       ${{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
 
     {% if revenue_types.NGL.Royalties[year] %}
-      <span class="text">
+      <span class="text table-arrow_box-subheader-value">
       <strong class="text-header text-header-third">NGL</strong>
       ${{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
   </td>
   <td rowspan="2" data-value="{{
     values['Other Revenues'][year] | default: 0
-  }}"><span class="text">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</span></td>
+  }}"><span class="text table-arrow_box-subheader-value">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</span></td>
 </tr>

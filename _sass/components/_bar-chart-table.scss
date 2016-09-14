@@ -64,6 +64,8 @@
     position: relative;
 
     .text-header {
+      @include heading('para-sm');
+
       &.text-header-first {
         color: $green-dark;
       }

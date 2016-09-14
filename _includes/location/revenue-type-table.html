@@ -115,7 +115,6 @@
 
 <table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
-  <!--  geothermal exists?: {{ geothermal_exists }} -->
   <thead>
     <tr>
       <th class="arrow_box"><span>Commodity</span></th>
@@ -171,8 +170,6 @@
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
         {% assign values = commodity[1] %}
-        <!-- commodity_name: {{ commodity_name }} -->
-        <!-- value: {{ values }} -->
 
         {% if commodity_name == 'Geothermal' %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
@@ -184,7 +181,7 @@
 
     {% if wind_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
-        Wind
+        Offshore renewable energy
         <icon class="icon-padded icon-wind"></icon>
       </td></tr>
       {% for commodity in revenue_types %}

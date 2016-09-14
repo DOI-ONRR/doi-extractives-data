@@ -263,24 +263,33 @@
         {% assign values = commodity[1] %}
 
         {% if commodity_name == 'Wind' %}
-          <tr class="table-arrow_box-category"><td colspan="5">
-            Wind
-            <icon class="icon-padded icon-wind"></icon>
-          </td></tr>
+          <tr class="table-arrow_box-category">
+            <td colspan="5">
+              Offshore renewable energy
+              <icon class="icon-padded icon-wind"></icon>
+            </td>
+          </tr>
 
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
             <tr>
               <th class="table-arrow_box-subcategory">Competitive leasing</th>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <td>
+                <strong>Bonus:</strong> The amount offered by the highest bidder
+              </td>
+              <td rowspan="2">
+                <strong>$3</strong> annual rent per acre<br/>
+              </td>
+              <td rowspan="2">
+                <strong>2%</strong> of anticipated value of wind energy produced (unless otherwise specified)
+              </td>
               <td></td>
             </tr>
             <tr>
               <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
-              <td></td>
-              <td></td>
+              <td>
+                <strong>Acquisition fee:</strong> $0.25 per acre
+              </td>
               <td></td>
             </tr>
           </tbody>

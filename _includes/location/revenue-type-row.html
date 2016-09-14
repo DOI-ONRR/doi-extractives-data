@@ -1,19 +1,15 @@
 {% assign year = include.year | default: year %}
-
-<!-- year: {{ year }} -->
-
 {% assign total = values.All[year] | default: 0 %}
-<!-- total: {{ total }} -->
 {% if total != 0 %}
   <tr>
-    <th scope="row" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}">
+    <th scope="row" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}" class="table-arrow_box-subheader">
       <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong><br>
-      <strong>${{ total | intcomma }}</strong>
+      <strong class="table-arrow_box-subheader-value">${{ total | intcomma }}</strong>
     </th>
     {% for revenue_type in revenue_type_names %}
     <td data-value="{{
       values[revenue_type][year] | default: 0
-    }}"><span class="text">${{
+    }}"><span class="text table-arrow_box-subheader-value">${{
       commodity[1][revenue_type][year]
       | default: 0
       | intcomma

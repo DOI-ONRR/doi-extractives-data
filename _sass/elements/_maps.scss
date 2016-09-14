@@ -27,12 +27,16 @@ svg.map {
 
   .feature.offshore-area use {
     fill: $greenest-land;
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: darken($greenest-land, 5%);
+    }
   }
 
   .feature:not([fill]) use {
     fill-opacity: 0;
-
-    @include transition('fill-opacity', 0.3s);
 
     &:hover,
     &:active,

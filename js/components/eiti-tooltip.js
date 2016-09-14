@@ -6,7 +6,7 @@
       obj = obj.parentNode;
     }
     return obj;
-  }
+  };
 
   var depixelize = function(value) {
     if (value.indexOf('px') > -1) {
@@ -14,20 +14,19 @@
     } else {
       return value;
     }
-  }
+  };
 
   var pixelize = function(value) {
     return value + 'px';
-  }
+  };
 
   var hideTooltip = function (tooltip) {
     tooltip.attr('aria-hidden', true);
-  }
+  };
 
   var attached = function() {
     var root = d3.select(this);
-    var self = d3.select(this);
-    var svg = d3.select(findParentSVG(this))
+    var svg = d3.select(findParentSVG(this));
     var svgParent = d3.select(findParentSVG(this).parentElement);
     var parent = d3.select(this.parentElement).select('use');
 
@@ -60,7 +59,7 @@
       if (initialize) {
         hideTooltip(tooltip);
       }
-    }
+    };
 
     var update = function() {
 
@@ -98,7 +97,7 @@
         var tooltip = svgParent.select('.eiti-tooltip');
         hideTooltip(tooltip);
       }
-    }
+    };
 
     init(this);
 
@@ -118,7 +117,7 @@
         detachdCallback: {value: detached}
       }
     )
-  })
+  });
 
 })(this);
 

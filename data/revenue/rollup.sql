@@ -1,19 +1,10 @@
--- fix mis-categorized commodities
--- UPDATE county_revenue
--- SET
---     product = commodity,
---     commodity = 'Other'
--- WHERE
---     commodity IN ('Clay', 'Copper', 'Gilsonite', 'Gold', 'Limestone');
-
 -- fill in the product field for rows without it
 UPDATE county_revenue
 SET product = commodity
 WHERE product IS NULL;
 
 -- create "all commodity" rows by county
-DELETE FROM county_revenue
-    WHERE commodity = 'All';
+DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
 (
     year, state, county, fips,
@@ -22,12 +13,13 @@ INSERT INTO county_revenue
 )
 SELECT
     year, state, county, fips,
-    'All', 'All', revenue_type,
-    SUM(revenue)
+    'All' AS commodity,
+    'All' AS product,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
-    year, state, county,
-    fips, revenue_type;
+    year, state, county, fips;
 
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS state_revenue_type;
@@ -46,8 +38,8 @@ INSERT INTO state_revenue_type
     (year, state, commodity, revenue_type, revenue)
 SELECT
     year, state, commodity,
-    'All',
-    SUM(revenue)
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
     year, state, commodity;
@@ -56,14 +48,15 @@ GROUP BY
 DROP TABLE IF EXISTS state_revenue;
 CREATE TABLE state_revenue AS
 SELECT
-    year, state, commodity, SUM(revenue) AS revenue
+    year, state, commodity,
+    SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
     year, state, commodity;
 
 -- create "all commodity" rows by offshore region
 DELETE FROM offshore_revenue
-    WHERE commodity = 'All';
+WHERE commodity = 'All';
 INSERT INTO offshore_revenue (
     year, region, planning_area,
     protraction,

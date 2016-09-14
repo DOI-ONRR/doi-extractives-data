@@ -340,6 +340,66 @@ Pacific:
         revenue: 24926
       '2015':
         revenue: 17108
+None:
+  commodities:
+    All:
+      '2006':
+        revenue: 843408
+      '2007':
+        revenue: 512600
+      '2008':
+        revenue: 780238
+      '2009':
+        revenue: 535006
+      '2010':
+        revenue: 10623140
+      '2011':
+        revenue: 10157692
+      '2012':
+        revenue: 87450210
+      '2013':
+        revenue: 53941488
+      '2014':
+        revenue: 66697186
+      '2015':
+        revenue: 52859925
+    None:
+      '2010':
+        revenue: 10053526
+      '2011':
+        revenue: 9563746
+      '2012':
+        revenue: 86885810
+      '2013':
+        revenue: 53246992
+      '2014':
+        revenue: 66048560
+      '2015':
+        revenue: 52239171
+    Oil & Gas (Non-Royalty):
+      '2006':
+        revenue: 843408
+      '2007':
+        revenue: 512600
+      '2008':
+        revenue: 780238
+      '2009':
+        revenue: 535006
+      '2010':
+        revenue: 569613
+      '2011':
+        revenue: 593946
+      '2012':
+        revenue: 564400
+      '2013':
+        revenue: 694496
+      '2014':
+        revenue: 648625
+      '2015':
+        revenue: 620754
+    Oil:
+      '2006':
+        revenue: 0
 Atlantic:
   commodities:
     All:

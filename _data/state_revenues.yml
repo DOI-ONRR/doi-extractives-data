@@ -1298,11 +1298,11 @@ CO:
       '2014':
         revenue: 362457510
         rank: 3
-        percent: 3
+        percent: 2.9
       '2015':
         revenue: 212525077
         rank: 3
-        percent: 2.9
+        percent: 2.8
     CO2:
       '2006':
         revenue: 24279649
@@ -4377,7 +4377,7 @@ NM:
       '2012':
         revenue: 967419228
         rank: 2
-        percent: 7.7
+        percent: 7.6
       '2013':
         revenue: 1074590499
         rank: 2
@@ -7365,7 +7365,7 @@ WY:
       '2010':
         revenue: 1864030625
         rank: 1
-        percent: 18
+        percent: 17.9
       '2011':
         revenue: 2118589205
         rank: 1
@@ -7373,19 +7373,19 @@ WY:
       '2012':
         revenue: 2099793381
         rank: 1
-        percent: 16.6
+        percent: 16.5
       '2013':
         revenue: 2004924663
         rank: 1
-        percent: 16.3
+        percent: 16.2
       '2014':
         revenue: 2144741217
         rank: 1
-        percent: 17.5
+        percent: 17.4
       '2015':
         revenue: 1636162228
         rank: 1
-        percent: 22
+        percent: 21.8
     CO2:
       '2006':
         revenue: 60734

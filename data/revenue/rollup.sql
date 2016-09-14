@@ -3,6 +3,9 @@ UPDATE county_revenue
 SET product = commodity
 WHERE product IS NULL;
 
+DELETE FROM county_revenue WHERE revenue_type IS NULL;
+DELETE FROM offshore_revenue WHERE revenue_type IS NULL;
+
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
@@ -29,9 +32,23 @@ CREATE TABLE state_revenue_type AS
         revenue_type,
         SUM(revenue) AS revenue
     FROM county_revenue
+    WHERE commodity != 'All'
     GROUP BY
         year, state, commodity,
         revenue_type;
+
+-- create all revenue type by commodity rollups
+INSERT INTO state_revenue_type
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    'All' AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM county_revenue
+WHERE commodity != 'All'
+GROUP BY
+    year, state, revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
@@ -55,8 +72,7 @@ GROUP BY
     year, state, commodity;
 
 -- create "all commodity" rows by offshore region
-DELETE FROM offshore_revenue
-WHERE commodity = 'All';
+DELETE FROM offshore_revenue WHERE commodity = 'All';
 INSERT INTO offshore_revenue (
     year, region, planning_area,
     protraction,

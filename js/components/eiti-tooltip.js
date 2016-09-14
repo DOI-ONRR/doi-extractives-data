@@ -65,14 +65,26 @@
         var svgWidth = depixelize(svg.style('width'));
 
         if (svgWidth <= tooltipWidth + event.layerX) {
-          return pixelize(event.layerX - tooltipWidth)
+          return pixelize(event.layerX - tooltipWidth);
         } else {
           return pixelize(event.layerX);
         }
       })
       .style('top', function() {
-        return pixelize(event.layerY);
+        var tooltipHeight = depixelize(tooltip.style('height'));
+        var svgHeight = depixelize(svg.style('height'));
+
+        if (svgHeight <= tooltipHeight + event.layerY) {
+          return pixelize(event.layerY - tooltipHeight);
+        } else {
+          return pixelize(event.layerY);
+        }
       });
+
+      // hide automatically after 5 seconds
+      setTimeout(function() {
+        hideTooltip(tooltip);
+      }, 5000);
     };
 
     var hide = function () {

@@ -66,13 +66,7 @@ CREATE TABLE all_production_state_rank AS
         st.units AS units,
         st.volume AS volume,
         national.volume AS total,
-        -- these numbers are both integers, so we need to explicitly cast one
-        -- of them as a float in order to get a float back (because an integer
-        -- divided by an integer always returns an integer)
-        100 * (
-            CAST(st.volume AS FLOAT) /
-            national.volume
-        ) AS percent,
+        100.0 * st.volume / national.volume AS percent,
         0 AS rank
     FROM
         all_state_production AS st
@@ -91,10 +85,10 @@ CREATE TABLE all_production_state_rank AS
 
 UPDATE all_production_state_rank
 SET rank = (
-    SELECT COUNT(DISTINCT inner.percent) AS rank
-    FROM all_production_state_rank AS inner
+    SELECT COUNT(DISTINCT source.percent) AS rank
+    FROM all_production_state_rank AS source
     WHERE
-        inner.year = all_production_state_rank.year AND
-        inner.product = all_production_state_rank.product AND
-        inner.percent > all_production_state_rank.percent
+        source.year = all_production_state_rank.year AND
+        source.product = all_production_state_rank.product AND
+        source.percent > all_production_state_rank.percent
 ) + 1;

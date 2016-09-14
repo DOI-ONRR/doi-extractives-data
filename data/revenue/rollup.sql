@@ -12,30 +12,42 @@ SET product = commodity
 WHERE product IS NULL;
 
 -- create "all commodity" rows by county
-DELETE FROM county_revenue WHERE commodity = 'All';
+DELETE FROM county_revenue
+    WHERE commodity = 'All';
 INSERT INTO county_revenue
-    (year, state, county, fips, commodity, product, revenue_type, revenue)
+(
+    year, state, county, fips,
+    commodity, product, revenue_type,
+    revenue
+)
 SELECT
-    year, state, county, fips, 'All', 'All', revenue_type, SUM(revenue)
+    year, state, county, fips,
+    'All', 'All', revenue_type,
+    SUM(revenue)
 FROM county_revenue
 GROUP BY
-    year, state, county, fips, revenue_type;
+    year, state, county,
+    fips, revenue_type;
 
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS state_revenue_type;
 CREATE TABLE state_revenue_type AS
     SELECT
-        year, state, commodity, revenue_type,
+        year, state, commodity,
+        revenue_type,
         SUM(revenue) AS revenue
     FROM county_revenue
     GROUP BY
-        year, state, commodity, revenue_type;
+        year, state, commodity,
+        revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
     (year, state, commodity, revenue_type, revenue)
 SELECT
-    year, state, commodity, 'All', SUM(revenue)
+    year, state, commodity,
+    'All',
+    SUM(revenue)
 FROM county_revenue
 GROUP BY
     year, state, commodity;
@@ -50,7 +62,8 @@ GROUP BY
     year, state, commodity;
 
 -- create "all commodity" rows by offshore region
-DELETE FROM offshore_revenue WHERE commodity = 'All';
+DELETE FROM offshore_revenue
+    WHERE commodity = 'All';
 INSERT INTO offshore_revenue (
     year, region, planning_area,
     protraction,
@@ -141,19 +154,28 @@ CREATE TABLE offshore_region_revenue_type AS
         year, region_id, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
-DELETE FROM offshore_region_revenue_type WHERE commodity = 'All';
+DELETE FROM offshore_region_revenue_type
+    WHERE commodity = 'All';
 INSERT INTO offshore_region_revenue_type
-    (year, region_id, commodity, revenue_type, revenue)
+(
+    year, region_id, commodity,
+    revenue_type, revenue
+)
 SELECT
-    year, region_id, 'All', revenue_type,
+    year, region_id, 'All',
+    revenue_type,
     SUM(revenue) AS revenue
 FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, revenue_type;
 
-DELETE FROM offshore_region_revenue_type WHERE revenue_type = 'All';
+DELETE FROM offshore_region_revenue_type
+    WHERE revenue_type = 'All';
 INSERT INTO offshore_region_revenue_type
-    (year, region_id, commodity, revenue_type, revenue)
+(
+    year, region_id, commodity, revenue_type,
+    revenue
+)
 SELECT
     year, region_id, commodity, 'All',
     SUM(revenue) AS revenue
@@ -161,6 +183,25 @@ FROM offshore_region_revenue_type
 GROUP BY
     year, region_id, commodity;
 
+DROP TABLE IF EXISTS regional_revenue_type;
+CREATE TABLE regional_revenue_type AS
+    SELECT
+        year, commodity, revenue_type,
+        SUM(revenue) AS revenue
+    FROM state_revenue_type
+    GROUP BY
+        year, commodity, revenue_type
+UNION
+    SELECT
+        year, commodity, revenue_type,
+        SUM(revenue) AS revenue
+    FROM offshore_region_revenue_type
+    GROUP BY
+        year, commodity, revenue_type;
+
+SELECT
+    COUNT(*) AS regional_revenue_count
+FROM regional_revenue_type;
 
 -- then create national revenue as an aggregate view
 -- on regional revenue
@@ -180,7 +221,7 @@ CREATE TABLE national_revenue_type AS
     SELECT
         year, commodity, revenue_type,
         SUM(revenue) AS revenue
-    FROM county_revenue
+    FROM regional_revenue_type
     GROUP BY
         year, commodity, revenue_type;
 
@@ -206,7 +247,7 @@ CREATE TABLE state_revenue_rank AS
         state.revenue,
         national.revenue AS total,
         (CASE WHEN state.revenue * national.revenue >= 0
-         THEN 100 * (state.revenue / national.revenue)
+         THEN 100.0 * state.revenue / national.revenue
          ELSE NULL
          END) AS percent,
         0 AS rank
@@ -227,10 +268,10 @@ CREATE TABLE state_revenue_rank AS
 
 UPDATE state_revenue_rank
 SET rank = (
-    SELECT COUNT(distinct inner.revenue) AS rank
-    FROM state_revenue_rank AS inner
+    SELECT COUNT(DISTINCT source.revenue) AS rank
+    FROM state_revenue_rank AS source
     WHERE
-        inner.year = state_revenue_rank.year AND
-        inner.commodity = state_revenue_rank.commodity AND
-        inner.revenue > state_revenue_rank.revenue
+        source.year = state_revenue_rank.year AND
+        source.commodity = state_revenue_rank.commodity AND
+        source.revenue > state_revenue_rank.revenue
 ) + 1;

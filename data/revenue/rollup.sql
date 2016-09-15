@@ -37,6 +37,28 @@ CREATE TABLE state_revenue_type AS
         year, state, commodity,
         revenue_type;
 
+-- update NULL columns in civil penalties table
+UPDATE civil_penalties_revenue
+SET
+    product = 'None',
+    state = 'None'
+WHERE
+    product IS NULL AND
+    state IS NULL AND
+    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
+
+-- add data from civil penalties table
+INSERT INTO state_revenue_type
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    product AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM civil_penalties_revenue
+GROUP BY
+    year, state, commodity, revenue_type;
+
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
     (year, state, commodity, revenue_type, revenue)
@@ -45,7 +67,7 @@ SELECT
     'All' AS commodity,
     revenue_type,
     SUM(revenue) AS revenue
-FROM county_revenue
+FROM state_revenue_type
 WHERE commodity != 'All'
 GROUP BY
     year, state, revenue_type;
@@ -57,7 +79,7 @@ SELECT
     year, state, commodity,
     'All' AS revenue_type,
     SUM(revenue) AS revenue
-FROM county_revenue
+FROM state_revenue_type
 GROUP BY
     year, state, commodity;
 
@@ -247,18 +269,6 @@ CREATE TABLE national_revenue_type AS
     FROM regional_revenue_type
     GROUP BY
         year, commodity, revenue_type;
-
-
--- add data from civil penalties table
-INSERT INTO national_revenue_type
-    (year, commodity, revenue_type, revenue)
-SELECT
-    year, 'None' AS commodity,
-    revenue_type,
-    SUM(revenue) AS revenue
-FROM civil_penalties_revenue
-GROUP BY
-    year, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO national_revenue_type

@@ -8,7 +8,7 @@
     margin-top: -0.75rem; //to compensate for margin from preceding selectors
   }
 
-  h2:not(.ribbon-card-top-text-header):not(.heading-top-of-page) {
+  h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
     padding-top: 6rem;
 
@@ -112,5 +112,11 @@
   .state-pages-ownership {
     float: right;
     margin-left: 20px;
+  }
+}
+
+.national-page {
+  .slab-delta {
+    margin-bottom: 6rem;
   }
 }

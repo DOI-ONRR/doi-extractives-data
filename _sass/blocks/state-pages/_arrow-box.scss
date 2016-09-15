@@ -98,8 +98,9 @@ $ab-border-thick: 4px;
   }
 
   .table-arrow_box-subheader-value {
-    color: $green-dark-chart;
     @include font-size(1);
+
+    color: $green-dark-chart;
   }
 
   .table-arrow_box-category {

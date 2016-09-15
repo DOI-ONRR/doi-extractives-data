@@ -8,7 +8,7 @@
     margin-top: -0.75rem; //to compensate for margin from preceding selectors
   }
 
-  h2:not(.ribbon-card-top-text-header) {
+  h2:not(.ribbon-card-top-text-header):not(.heading-top-of-page) {
     @include h2-bar;
     padding-top: 6rem;
 

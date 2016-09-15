@@ -65,6 +65,7 @@
 
     .text-header {
       @include heading('para-sm');
+      font-weight: $weight-bold;
 
       &.text-header-first {
         color: $green-dark;

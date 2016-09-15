@@ -139,6 +139,12 @@ svg.case_studies {
   .feature.offshore-area use,
   .feature.state use {
     fill: $gray;
+
+    &:active,
+    &:hover,
+    &:focus {
+      fill: $gray;
+    }
   }
 
   &.no-outlines {

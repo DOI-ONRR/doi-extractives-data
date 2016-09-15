@@ -1,38 +1,63 @@
-coal:
-  boone_logan_mingo:
-    name: Boone, Logan, and Mingo Counties
-    state: West Virginia
-    permalink: /case-studies/boone-logan-and-mingo/
+# attributes dictate the content of the case studies tooltips
+# order DOES matter. Objects at the end of the array
+# will render on top of objects at the beginning
+locations:
+  north_slope:
+    name: North Slope Borough
+    permalink: /case-studies/north-slope/
+    state: Alaska
+    commodity: oil
     circle:
-      'x': 740
-      'y': 280
-  campbell:
-    name: Campbell County
-    state: Wyoming
-    permalink: /case-studies/campbell/
+      'x': 185
+      'y': 465
+  pima:
+    name: Pima County
+    state: Arizona
+    permalink: /case-studies/pima/
+    commodity: copper
     circle:
-      'x': 375
-      'y': 185
-gold:
-  elko_eureka:
-    name: Elko and Eureka Counties
-    state: Nevada
-    permalink: /case-studies/elko-and-eureka/
+      'x': 260
+      'y': 405
+  kern:
+    name: Kern County
+    state: California
+    commodity: oil
+    permalink: /case-studies/kern/
     circle:
-      'x': 250
-      'y': 235
-  humboldt_lander:
-    name: Humboldt and Lander Counties
-    state: Nevada
-    permalink: /case-studies/humboldt-and-lander/
+      'x': 170
+      'y': 310
+  greenlee:
+    name: Greenlee County
+    state: Arizona
+    permalink: /case-studies/greenlee/
+    commodity: copper
     circle:
-      'x': 190
-      'y': 205
-iron:
+      'x': 300
+      'y': 365
+  desoto:
+    name: DeSoto Parish
+    state: Louisiana
+    permalink: /case-studies/desoto/
+    commodity: gas
+    circle:
+      'x': 550
+      'y': 435
+  tarrant_johnson:
+    name: Tarrant and Johnson Counties
+    lines:
+      - Tarrant and
+      - Johnson Counties
+    state: Texas
+    permalink: /case-studies/tarrant-and-johnson/
+    commodity: gas
+    circle:
+      'x': 490
+      'y': 415
   marquette:
     name: Marquette County
     state: Michigan
     permalink: /case-studies/marquette/
+    commodity: iron
     circle:
       'x': 610
       'y': 170
@@ -40,51 +65,49 @@ iron:
     name: St. Louis County
     state: Minnesota
     permalink: /case-studies/st-louis/
+    commodity: iron
     circle:
       'x': 550
       'y': 140
-gas:
-  desoto:
-    name: DeSoto Parish
-    state: Louisiana
-    permalink: /case-studies/desoto/
+  elko_eureka:
+    name: Elko and Eureka Counties
+    lines:
+      - Elko and
+      - Eureka Counties
+    state: Nevada
+    permalink: /case-studies/elko-and-eureka/
+    commodity: gold
     circle:
-      'x': 550
-      'y': 435
-  tarrant_johnson:
-    name: Tarrant and Johnson Counties
-    state: Texas
-    permalink: /case-studies/tarrant-and-johnson/
+      'x': 250
+      'y': 235
+  humboldt_lander:
+    name: Humboldt and Lander Counties
+    lines:
+      - Humboldt and
+      - Lander Counties
+    state: Nevada
+    permalink: /case-studies/humboldt-and-lander/
+    commodity: gold
     circle:
-      'x': 490
-      'y': 415
-oil:
-  kern:
-    name: Kern County
-    state: California
-    permalink: /case-studies/kern/
+      'x': 190
+      'y': 205
+  boone_logan_mingo:
+    name: Boone, Logan, and Mingo Counties
+    lines:
+      - Boone, Logan and
+      - Mingo Counties
+    wide: true
+    state: West Virginia
+    permalink: /case-studies/boone-logan-and-mingo/
+    commodity: coal
     circle:
-      'x': 170
-      'y': 310
-  north_slope:
-    name: North Slope Borough
-    permalink: /case-studies/north-slope/
-    state: Alaska
+      'x': 740
+      'y': 280
+  campbell:
+    name: Campbell County
+    state: Wyoming
+    permalink: /case-studies/campbell/
+    commodity: coal
     circle:
-      'x': 185
-      'y': 465
-copper:
-  pima:
-    name: Pima County
-    state: Arizona
-    permalink: /case-studies/pima/
-    circle:
-      'x': 260
-      'y': 405
-  greenlee:
-    name: Greenlee County
-    state: Arizona
-    permalink: /case-studies/greenlee/
-    circle:
-      'x': 300
-      'y': 365
+      'x': 375
+      'y': 185

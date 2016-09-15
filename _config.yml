@@ -126,7 +126,8 @@ defaults:
       path: ''
       type: offshore_areas
     values:
-      layout: offshore-area
+      # 'offshore-area' no longer exists; irrelevant w/ouptut: false
+      layout: default
 
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42

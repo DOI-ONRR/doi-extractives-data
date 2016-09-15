@@ -23,14 +23,18 @@ selector: location
 <section class="slab-alpha container-padded explore_home-map">
   <div class="container-page-wrapper">
     <div class="container-left-4 explore_home-map-intro">
-      <p class="h5 explore_home-subhead">Explore data</p>
       <h2 class="h3 explore_home-heading">Learn about natural resource extraction in each state</h2>
       <p>
         Explore production, revenue, and economic impact data for each state, as well as additional contextual information and data about three states that chose to participate in deeper USEITI reporting: <a href="{{ site.baseurl }}/explore/AK/">Alaska</a>, <a href="{{ site.baseurl }}/explore/MT/">Montana</a>, and <a href="{{ site.baseurl }}/explore/WY/">Wyoming</a>.
       </p>
       <figcaption class="state_pages-select">
-        <label for="location-selector">Choose a state or offshore region</label>
-        {% include selector.html %}
+        <label for="location-selector">Explore data:</label>
+        {% include selector.html
+           nationwide = true
+           nationwide_url = '/explore/'
+           nationwide_title = 'Nationwide data'
+           default = 'Choose location'
+        %}
       </figcaption>
     </div>
     <div class="container-right-8">

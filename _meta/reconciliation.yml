@@ -3,8 +3,8 @@
     reported:
       government: '{reported_gov}'
       company: '{reported_company}'
+      note: '{reported_note}'
     variance:
       dollars: '{variance_dollars}'
       percent: '{variance_percent}'
       material: '{variance_material}'
-      note: '{variance_note}'

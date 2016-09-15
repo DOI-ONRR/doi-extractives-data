@@ -1,16 +1,20 @@
 /* jshint node: true, esnext: true */
 'use strict';
 
+const parse = require('../../lib/parse');
+
 const REPORTED_GOV = 'Government Reported';
 const REPORTED_CO = 'Company Reported';
 const VARIANCE_DOLLARS = 'Variance Dollars';
 const VARIANCE_PERCENT = 'Variance Percent';
-
 const N_A = 'N/A';
+
 const parseNA = function(field) {
   return function(d) {
     var value = d[field];
-    return value === N_A ? null : Number(value);
+    return value === N_A
+      ? null
+      : parse.number(value);
   };
 };
 
@@ -82,12 +86,12 @@ module.exports = {
   revenue_type:     'Type',
   reported_gov:     parseNA(REPORTED_GOV),
   reported_company: parseNA(REPORTED_CO),
-  variance_dollars: parseNA(VARIANCE_DOLLARS),
-  variance_percent: parseNA(VARIANCE_PERCENT),
-  variance_note: function(d) {
-    var str = d[VARIANCE_DOLLARS];
+  reported_note: function(d) {
+    var str = d[REPORTED_CO];
     return isNaN(str) ? str : null;
   },
+  variance_dollars: parseNA(VARIANCE_DOLLARS),
+  variance_percent: parseNA(VARIANCE_PERCENT),
   variance_material: function(d) {
     var gov = Number(d[REPORTED_GOV]);
     var co = Number(d[REPORTED_CO]);

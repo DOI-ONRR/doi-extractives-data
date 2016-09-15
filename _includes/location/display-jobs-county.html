@@ -4,8 +4,8 @@
   <thead>
     <tr>
       <th>{{ locality_name }}</th>
-      <th colspan="2" class='numeric' data-series='jobs'>Extractives jobs</th>
-      <th class='numeric' data-series='percent'>% of all jobs in {{ locality_name | downcase }}</th>
+      <th class='numeric' data-series='jobs'>Extractives jobs</th>
+      <th colspan='2' class='numeric' data-series='percent'>% of all<br> jobs in {{ locality_name | downcase }}</th>
     </tr>
   </thead>
   <tbody>
@@ -31,8 +31,7 @@
       <td data-value-text='{{ jobs_percent }}'
           data-year-values='{{ years_values | jsonify }}'
           data-years-property='percent'
-          data-format='%'
-          class="numeric">{{ jobs_percent }}%</td>
+          data-format='%'>{{ jobs_percent }}%</td>
     </tr>
     <tr data-fips='{{ fips }}'>
         <td colspan='4'

@@ -19,20 +19,26 @@
 
   $circle-radius: 21px;
   $stroke-width: 2px;
-  $caption-width: 205px;
+  $caption-width: 180px;
   $caption-height: 87px;
   $caption-offset-x: -($caption-width / 2) + $circle-radius;
   $caption-offset-y: $circle-radius;
+
+  $wide-caption-width: 205px;
+  $wide-caption-offset-x: -($wide-caption-width / 2) + $circle-radius;
 
 
   .case-studies-caption {
     visibility: hidden;
 
-    &.long {
-      $multiplier: 1.25;
-      rect {
-        height: $caption-height * $multiplier;
-      }
+    $multiplier: 1.25;
+    &.long rect {
+      height: $caption-height * $multiplier;
+    }
+
+    &.wide rect {
+      width: $wide-caption-width;
+      transform: translate(#{$wide-caption-offset-x}, #{$caption-offset-y});
     }
   }
 
@@ -62,6 +68,8 @@
 
   a text {
     @include font-size(1.1);
+
+    font-weight: $weight-bold;
   }
 }
 

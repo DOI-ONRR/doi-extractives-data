@@ -1,3 +1,6 @@
+# attributes dictate the content of the case studies tooltips
+# order DOES matter. Objects at the end of the array
+# will render on top of objects at the beginning
 locations:
   north_slope:
     name: North Slope Borough
@@ -42,8 +45,8 @@ locations:
   tarrant_johnson:
     name: Tarrant and Johnson Counties
     lines:
-      - Tarrant
-      - and Johnson Counties
+      - Tarrant and
+      - Johnson Counties
     state: Texas
     permalink: /case-studies/tarrant-and-johnson/
     commodity: gas
@@ -80,8 +83,8 @@ locations:
   humboldt_lander:
     name: Humboldt and Lander Counties
     lines:
-      - Humboldt
-      - and Lander Counties
+      - Humboldt and
+      - Lander Counties
     state: Nevada
     permalink: /case-studies/humboldt-and-lander/
     commodity: gold
@@ -91,8 +94,9 @@ locations:
   boone_logan_mingo:
     name: Boone, Logan, and Mingo Counties
     lines:
-      - Boone, Logan
-      - and Mingo Counties
+      - Boone, Logan and
+      - Mingo Counties
+    wide: true
     state: West Virginia
     permalink: /case-studies/boone-logan-and-mingo/
     commodity: coal

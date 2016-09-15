@@ -1,3 +1,4 @@
+/* jshint node: true, esnext: true */
 'use strict';
 
 const REPORTED_GOV = 'Government Reported';

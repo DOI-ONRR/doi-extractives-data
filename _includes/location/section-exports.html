@@ -1,6 +1,4 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
-{% assign exports_total = exports.All[include.year].dollars %}
-{% assign exports_commodities_num = exports | size %}
 
 {% assign restore_year = year %}
 {% assign year_range = site.data.years.exports %}
@@ -9,9 +7,11 @@
 {% else %}
   {% assign year_range = site.data.years.default %}
 {% endif %}
+
+{% assign exports_total = export_commodities.All[year].dollars %}
+
 {% assign year_list = year_range | to_list %}
 {% assign year_range = year_range | jsonify %}
-
 {% assign empty_years = '' | split: '' %}
 
 <section id="exports" is="year-switcher-section" class="economic exports">
@@ -21,30 +21,31 @@
   <div class="chart-list">
 
     <div class="chart-selector-wrapper">
-      {% if export_commodities.size > 1 %}
-        {% for y in year_list %}
-          {% assign s_y = y | to_s %}
-          {% for _commodity in export_commodities %}
-            {% unless _commodity[1][s_y].size %}
-              {% if _commodity[0] != "Total" and _commodity[0] != "All" %}
-                {% assign empty_years = empty_years | push:s_y %}
-              {% endif %}
-            {% endunless %}
-          {% endfor %}
+      {% if export_commodities %}
+        {% for _year in year_list %}
+          {% assign _year_string = _year | to_s %}
+          {% unless export_commodities.All[_year_string].dollars > 0 %}
+            {% assign empty_years = empty_years | push: _year_string %}
+          {% endunless %}
         {% endfor %}
-        {% assign empty_years = empty_years | join:',' %}
-
         {% include year-selector.html year_range=year_range empty_years=empty_years %}
+      {% endif %}
+
+      {% if empty_years.size == year_range.size %}
+        {% assign has_exports = true %}
+      {% else %}
+        {% assign has_exports = false %}
       {% endif %}
 
       <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
         The U.S. Census Bureau collects information about the top 25 exports in each state.
 
-        {% if export_commodities.size > 1 %}
+        {% if exports_total > 0 %}
           In {{ year }}, one or more natural resources
           ranked among the top 25 exports from {{ state_name }}.
         {% else %}
-          In {{ year }}, extractive industries products did not rank among the top 25 exports from {{ state_name }}.
+          In {{ year }}, extractive industries products did not rank
+          among the top 25 exports from {{ state_name }}.
         {% endif %}
         <br>
         <a href="{{site.baseurl}}/downloads/#exports">

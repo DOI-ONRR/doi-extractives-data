@@ -18,7 +18,10 @@
       {% if include.state_name and _fund_name == 'States'  %}
         <td>{{ include.state_name }}</td>
       {% else %}
-        <td>{{ fund_map[_fund_name] | xml_escape | default:_fund_name }}</td>
+        <td>
+          <strong>{{ fund_map[_fund_name].name | default:_fund_name }}</strong><br>
+          {{ fund_map[_fund_name].description }}
+        </td>
       {% endif %}
 
       <td class="numeric" data-value="{{ _values.All[year] | default: 0 }}">${{ _values.All[year] | round | intcomma }}</td>

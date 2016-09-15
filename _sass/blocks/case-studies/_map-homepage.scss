@@ -37,8 +37,8 @@
     }
 
     &.wide rect {
-      width: $wide-caption-width;
       transform: translate(#{$wide-caption-offset-x}, #{$caption-offset-y});
+      width: $wide-caption-width;
     }
   }
 

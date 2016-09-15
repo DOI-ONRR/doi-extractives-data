@@ -3,6 +3,9 @@ UPDATE county_revenue
 SET product = commodity
 WHERE product IS NULL;
 
+DELETE FROM county_revenue WHERE revenue_type IS NULL;
+DELETE FROM offshore_revenue WHERE revenue_type IS NULL;
+
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
@@ -29,9 +32,23 @@ CREATE TABLE state_revenue_type AS
         revenue_type,
         SUM(revenue) AS revenue
     FROM county_revenue
+    WHERE commodity != 'All'
     GROUP BY
         year, state, commodity,
         revenue_type;
+
+-- create all revenue type by commodity rollups
+INSERT INTO state_revenue_type
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    'All' AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM county_revenue
+WHERE commodity != 'All'
+GROUP BY
+    year, state, revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
@@ -55,8 +72,7 @@ GROUP BY
     year, state, commodity;
 
 -- create "all commodity" rows by offshore region
-DELETE FROM offshore_revenue
-WHERE commodity = 'All';
+DELETE FROM offshore_revenue WHERE commodity = 'All';
 INSERT INTO offshore_revenue (
     year, region, planning_area,
     protraction,
@@ -80,6 +96,18 @@ UPDATE offshore_revenue
 SET product = commodity
 WHERE product IS NULL;
 
+--- add some more useful info for inspection fees
+UPDATE offshore_revenue
+SET
+    commodity = 'None',
+    planning_area = 'None',
+    region = 'None'
+WHERE
+    commodity IS NULL AND
+    planning_area IS NULL AND
+    region IS NULL AND
+    revenue_type = 'Inspection Fees';
+
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
 DROP TABLE IF EXISTS regional_revenue;
@@ -97,11 +125,11 @@ UNION
     -- identifier here, e.g. "Central Gulf of Mexico" becomes "CGM"
     SELECT
         year, commodity,
-        area.id AS region_id,
+        COALESCE(area.id, 'None') AS region_id,
         'offshore' AS region_type,
         SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
-    INNER JOIN offshore_planning_areas AS area
+    LEFT JOIN offshore_planning_areas AS area
     ON
         offshore.planning_area = area.name
     GROUP BY
@@ -112,13 +140,13 @@ DROP TABLE IF EXISTS offshore_area_revenue;
 CREATE TABLE offshore_area_revenue AS
     SELECT
         year, commodity,
-        area.region AS region_id,
-        area.id AS area_id,
-        area.name AS area_name,
+        COALESCE(area.region, 'None') AS region_id,
+        COALESCE(area.id, 'None') AS area_id,
+        COALESCE(area.name, 'None') AS area_name,
         revenue_type,
         SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
-    INNER JOIN offshore_planning_areas AS area
+    LEFT JOIN offshore_planning_areas AS area
     ON
         offshore.planning_area = area.name
     GROUP BY
@@ -128,7 +156,9 @@ CREATE TABLE offshore_area_revenue AS
 DROP TABLE IF EXISTS offshore_region_revenue;
 CREATE TABLE offshore_region_revenue AS
     SELECT
-        year, region_id, commodity, revenue_type,
+        year,
+        COALESCE(region_id, 'None') AS region_id,
+        commodity, revenue_type,
         SUM(revenue) AS revenue
     FROM offshore_area_revenue
     GROUP BY

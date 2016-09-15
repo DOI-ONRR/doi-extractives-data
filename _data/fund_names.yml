@@ -1,7 +1,21 @@
-States: Disbursed to states
-'U.S. Treasury': General Fund of the Treasury
-Reclamation: Reclamation fund
-'Land & Water Conservation': Land and Water Conservation Fund
-'Historic Preservation': 'Historic Preservation Fund'
-'American Indian Tribes': 'American Indian tribes'
-Other: 'Other funds'
+States:
+  name: States
+  description: Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
+U.S. Treasury:
+  name: General Fund of the Treasury
+  description: The federal government’s basic operating fund pays for roughly two-thirds of all federal expenditures, including the military, national parks, and schools.
+Reclamation:
+  name: Reclamation fund
+  description: Supports the establishment of critical infrastructure projects like dams and power plants.
+Land & Water Conservation:
+  name: Land and Water Conservation Fund
+  description: Provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states. See below for more information about this fund.
+Historic Preservation:
+  name: Historic Preservation Fund
+  description: Helps preserve US historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices. See below for more information about this fund.
+American Indian Tribes:
+  name: American Indian tribes
+  description: ONRR disburses 100% of revenue collected from resource extraction on American Indian lands back to the Indian tribes and individual Indian landowners.
+Other:
+  name: Other funds
+  description: Some funds are directed back to federal agencies that administer these lands to help cover operational costs. The Ultra-Deepwater Research Program and the Mescal Settlement Agreement also receive $50 million each.

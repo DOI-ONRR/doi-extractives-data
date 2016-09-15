@@ -3,6 +3,9 @@ title: Reconciliation | How it works
 layout: default
 permalink: /how-it-works/reconciliation/
 ---
+
+{% assign footnotes = '' | split: '' %}
+
 <section id="reconciliation" class="explore-subpage container">
   <section class="container-page-wrapper">
     <div class="container-left-4">
@@ -88,7 +91,7 @@ permalink: /how-it-works/reconciliation/
           <ul>
 
             <li class="flowchart-dialog flowchart-dialog_top flowchart-join_to_bottom">
-              <span class="flowchart-text_bold">During the USEITI reconciliation process, the <span class="term term-end" data-term="Independent Administrator (IA)" title="Click to define" tabindex="0">Independent Adminstrator<icon class="icon-book"></icon></span> compares company reports of payments to government records of revenue received. Here's how they decide what to review and report:</span>
+              <span class="flowchart-text_bold">During the USEITI reconciliation process, the <span class="term term-end" data-term="Independent Administrator (IA)" title="Click to define" tabindex="0">Independent Adminstrator<icon class="icon-book"></icon></span> compares company reports of payments to government records of revenue received. Here’s how they decide what to review and report:</span>
             </li>
 
             <li class="flowchart-dialog flowchart-dialog_left flowchart-dialog_left_1 flowchart-dialog_right flowchart-join_to_top">
@@ -221,6 +224,7 @@ permalink: /how-it-works/reconciliation/
               <input class="filter-search" type="text" name="search" id="company-name-filter">
             </div>
           </section>
+
           <table id="companies" class="company-list subregions">
             <thead class="list-heading">
               <tr>
@@ -228,28 +232,56 @@ permalink: /how-it-works/reconciliation/
                 <th class="centered">Variance percentage (<strong>bold</strong> indicates material variances)</th>
               </tr>
             </thead>
+
+            {% for company in site.data.reconciliation %}
+              {% assign variance_index = 0 %}
+              {% assign company_name = company[0] %}
+            <tbody class="company subgroup" data-name="{{ company_name | xmlescape }}">
+              <tr class="name">
+                <th colspan="3" class="subregion-name narrow">{{ company_name }}</th>
+              </tr>
+              {% for revenue_type in company[1] %}
+                {% assign reported = revenue_type[1].reported %}
+                {% assign variance = revenue_type[1].variance %}
+              <tr class="subtype">
+                <td class="name narrow">{{ revenue_type[0] }}</td>
+                <td class="value">
+                  {% if reported.government != nil %}${{ reported.government | intcomma }}
+                  {% else %}did not report{% endif %} <span class="reportee">gov</span><br>
+                  {% if reported.company != nil %}${{ reported.company | intcomma }}
+                  {% else %}did not report{% endif %} <span class="reportee">co</span><br>
+                </td>
+                <td class="variance">
+                  {% if variance.percent != nil %}
+                    {% if variance.material == 1 %}<strong>{% endif %}{{
+                      variance.percent | percent
+                    }}%{% if variance.material == 1 %}</strong>{% endif %}
+                  {% else %}
+                    N/A
+                  {% endif %}
+                  {% if variance.material == 1 %}
+                    {% assign explanation = site.data.material_variances[company_name][variance_index] %}
+                    {% assign footnotes = footnotes | push: explanation %}
+                    {% assign footnote_index = footnotes.size %}
+                  <sup id="fnref:{{ footnote_index }}">
+                    <a href="#fn:{{ footnote_index }}" class="footnote hashoffset">{{ footnote_index }}</a>
+                  </sup>{% assign variance_index = variance_index | plus: 1 %}
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+            {% endfor %}
           </table>
+
           <div class="footnotes container-padded">
             <h3>Footnotes</h3>
             <ol>
-
-              <li id="fn:1" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
-              <li id="fn:2" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
-              <li id="fn:3" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014. <a href="#fnref:3" class="reversefootnote">↩</a></p></li>
-              <li id="fn:4" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:4" class="reversefootnote">↩</a></p></li>
-              <li id="fn:5" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014. <a href="#fnref:5" class="reversefootnote">↩</a></p></li>
-              <li id="fn:6" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:6" class="reversefootnote">↩</a></p></li>
-              <li id="fn:7" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014. <a href="#fnref:7" class="reversefootnote">↩</a></p></li>
-              <li id="fn:8" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014. <a href="#fnref:8" class="reversefootnote">↩</a></p></li>
-              <li id="fn:9" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014. <a href="#fnref:9" class="reversefootnote">↩</a></p></li>
-              <li id="fn:10" class="hashoffset"><p>The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.<a href="#fnref:10" class="reversefootnote">↩</a></p></li>
-              <li id="fn:11" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014. <a href="#fnref:11" class="reversefootnote">↩</a></p></li>
-              <li id="fn:12" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014. <a href="#fnref:12" class="reversefootnote">↩</a></p></li>
-              <li id="fn:13" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013. <a href="#fnref:13" class="reversefootnote">↩</a></p></li>
-              <li id="fn:14" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014. <a href="#fnref:14" class="reversefootnote">↩</a></p></li>
-              <li id="fn:15" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014. <a href="#fnref:15" class="reversefootnote">↩</a></p></li>
-              <li id="fn:16" class="hashoffset"><p>The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.<a href="#fnref:16" class="reversefootnote">↩</a></p></li>
-              <li id="fn:17" class="hashoffset"><p>This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013. <a href="#fnref:17" class="reversefootnote">↩</a></p></li>
+              {% for fn in footnotes %}
+              <li id="fn:{{ forloop.index }}" class="hashoffset">
+                <p>{{ fn }} <a href="#fnref:{{ forloop.index }}" class="reversefootnote">↩</a></p>
+              </li>
+              {% endfor %}
             </ol>
           </div>
         </div>
@@ -260,5 +292,4 @@ permalink: /how-it-works/reconciliation/
   </section>
 </section>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/js/lib/reconciliation.min.js"></script>

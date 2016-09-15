@@ -233,7 +233,8 @@ data/revenue: \
 	data/state_revenues_by_type.yml \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
-	data/offshore_revenues_by_type.yml
+	data/offshore_revenues_by_type.yml \
+	data/reconciliation.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -436,6 +437,19 @@ data/offshore_revenues_by_type.yml:
 			-c _meta/offshore_revenues_by_type.yml \
 			-o _$@
 
+data/reconciliation.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			company, revenue_type, \
+			reported_gov, reported_company, \
+			variance_dollars, variance_percent, \
+			variance_note, variance_material \
+		FROM reconciliation \
+		ORDER BY reported_company DESC, company, revenue_type" \
+		| $(nestly) --if ndjson \
+			-c _meta/reconciliation.yml \
+			-o _$@
+
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -570,7 +584,8 @@ tables/offshore_planning_areas: data/geo/input/offshore/areas.tsv
 
 tables/revenue: \
 	tables/county_revenue \
-	tables/offshore_revenue
+	tables/offshore_revenue \
+	tables/reconciliation
 	@$(call load-sql,data/revenue/rollup.sql)
 
 tables/offshore_revenue: data/revenue/offshore.tsv
@@ -586,6 +601,13 @@ tables/county_revenue: data/revenue/onshore.tsv
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
+	rm $$tmp
+
+tables/reconciliation: data/reconciliation/revenue.tsv
+	@$(call drop-table,reconciliation)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/reconciliation/transform.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n reconciliation -i $$tmp && \
 	rm $$tmp
 
 tables/federal_production: data/federal-production/federal-production.tsv

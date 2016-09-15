@@ -32,6 +32,7 @@
     visibility: hidden;
 
     $multiplier: 1.25;
+
     &.long rect {
       height: $caption-height * $multiplier;
     }

@@ -246,10 +246,11 @@ permalink: /how-it-works/reconciliation/
               <tr class="subtype">
                 <td class="name narrow">{{ revenue_type[0] }}</td>
                 <td class="value">
-                  {% if reported.government != nil %}${{ reported.government | intcomma }}
-                  {% else %}did not report{% endif %} <span class="reportee">gov</span><br>
+                  {% if reported.government == nil or reported.company == nil %}N/A
+                  {% else %}${{ reported.government | intcomma }}
+                  {% endif %} <span class="reportee">gov</span><br>
                   {% if reported.company != nil %}${{ reported.company | intcomma }}
-                  {% else %}did not report{% endif %} <span class="reportee">co</span><br>
+                  {% else %}{{ reported.note }}{% endif %} <span class="reportee">co</span><br>
                 </td>
                 <td class="variance">
                   {% if variance.percent != nil %}

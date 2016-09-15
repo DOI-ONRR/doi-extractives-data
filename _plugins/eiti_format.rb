@@ -32,14 +32,14 @@ module EITI
     # >> EITI::Format.percent(0.5, 0, '?')
     # => '?'
     def percent(num, precision = 1, small = '&lt;1')
-      if num.nil?
-        # FIXME: what should we represent null % as?
-        return '--'
+      if num.is_a? String
+        num = num.to_f
       end
-
-      num = num.to_f
+      if num.nil?
+        # XXX: what should we represent null % as?
+        return '--'
       # zero is zero
-      if num.zero?
+      elsif num.zero?
         return '0'
       # if it's less than 1, return the "small" representation
       elsif num < 1.0

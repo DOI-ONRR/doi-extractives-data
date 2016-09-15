@@ -4,7 +4,7 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
+  var NO_DATA_FLAG = undefined; // jshint ignore:line
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
@@ -15,11 +15,11 @@
 
           this.marks = root.selectAll('[data-value]')
             .datum(function() {
-              if (this.getAttribute('data-value') === null || this.getAttribute('data-value') === 'null') {
-
+              var value = this.getAttribute('data-value');
+              if (value === null || value === 'null') {
                 return WITHHELD_FLAG;
               } else {
-                return +this.getAttribute('data-value');
+                return Number(value);
               }
             });
 
@@ -33,7 +33,9 @@
 
         setYear: {value: function(year) {
           this.marks.datum(function() {
-              var data = JSON.parse(this.getAttribute('data-year-values') || '{}');
+              var data = JSON.parse(
+                this.getAttribute('data-year-values') || '{}'
+              );
               if (data[year] === null || data[year] === 'null') {
                 return WITHHELD_FLAG;
               } else {
@@ -47,7 +49,7 @@
           // update legend caption
           d3.select(this).selectAll('figcaption [data-year]')
             .attr('data-year', year)
-            .text(year)
+            .text(year);
 
           this.update();
         }},
@@ -59,7 +61,6 @@
           var legendContainer = root.select('.legend-container');
 
           if (!svgMap.empty()) {
-            var svgMapBBox = svgMap.node().getBBox();
             var svgDimensions = svgMap.attr('viewBox');
 
             if (svgDimensions) {
@@ -100,23 +101,16 @@
           });
 
           var root = d3.select(this);
+          var truthy = hasData.indexOf(true) > -1;
+          var withheld = hasData.indexOf(WITHHELD_FLAG) > -1;
 
-          if (hasData.indexOf(true) >= 0 || hasData.indexOf(WITHHELD_FLAG) >= 0) {
-            if (hasData.indexOf(true) < 0) {
-              root.select('.legend-data')
-                .attr('aria-hidden', true);
-              root.select('.legend-withheld')
-                .attr('aria-hidden', false);
-              root.select('.legend-svg')
-                .attr('aria-hidden', true);
-            } else {
-              root.select('.legend-data')
-                .attr('aria-hidden', false);
-              root.select('.legend-withheld')
-                .attr('aria-hidden', true);
-              root.select('.legend-svg')
-                .attr('aria-hidden', false);
-            }
+          if (truthy || withheld) {
+            root.select('.legend-data')
+              .attr('aria-hidden', !truthy);
+            root.select('.legend-withheld')
+              .attr('aria-hidden', truthy);
+            root.select('.legend-svg')
+              .attr('aria-hidden', !truthy);
 
             root.select('.legend-no-data')
               .attr('aria-hidden', true);
@@ -124,7 +118,6 @@
             root.select('.details-container')
               .attr('aria-hidden', false);
           } else {
-
             root.select('.legend-data')
               .attr('aria-hidden', true);
             root.select('.legend-withheld')
@@ -142,7 +135,6 @@
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
-          var units = this.getAttribute('units') || '';
           var format = this.getAttribute('format');
           var legendDelimiter = '–';
           var legendFormat = format === '$'
@@ -238,7 +230,7 @@
               .labelDelimiter(legendDelimiter)
               .shapePadding(shapePadding)
               .labelOffset(shapeMargin)
-              .labelAlign("start")
+              .labelAlign('start')
               .scale(scale);
 
 
@@ -248,7 +240,11 @@
                 .attr('class', 'legendScale');
             }
 
-            legendScale.call(legend);
+            try {
+              legendScale.call(legend);
+            } catch (error) {
+              console.warn('legend error:', error);
+            }
 
           } else {
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');

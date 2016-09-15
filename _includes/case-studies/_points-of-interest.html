@@ -1,40 +1,54 @@
 {% assign case_studies_points = site.data.case_studies_points %}
 {% assign circle_radius = 21 %}
-{% assign caption_height = 85 %}
+{% assign caption_height = 87 %}
 {% assign caption_width = 205 %}
 {% assign commodities = 'oil,copper,gas,iron,gold,coal' | split:',' %}
 {% assign black_light = '#323c42' %}
 
 <g class="case-studies-points">
-  {% for commodity in commodities %}
-    {% for point in case_studies_points[commodity] %}
-      {% assign point_id = point[0] %}
-      {% assign point_name = point[1].name %}
-      {% assign point_state = point[1].state %}
-      {% assign point_permalink = point[1].permalink %}
-      {% assign coords = point[1].circle %}
-      {% assign x_offset = coords.x | minus: circle_radius %}
-      {% assign y_offset = coords.y | minus: circle_radius %}
+  {% for location in case_studies_points.locations %}
 
-      {% capture caption %}
-        {{ commodity | capitalize }} in {{ point_state }}
-      {% endcapture %}
+    {% assign location_id = location[0] %}
+    {% assign location_name = location[1].name %}
+    {% assign location_lines = location[1].lines %}
+    {% assign location_state = location[1].state %}
+    {% assign location_commodity = location[1].commodity %}
+    {% assign location_permalink = location[1].permalink %}
+    {% assign coords = location[1].circle %}
+    {% assign x_offset = coords.x | minus: circle_radius %}
+    {% assign y_offset = coords.y | minus: circle_radius %}
 
-      <g class="case-studies-circle-group">
-        <g class="case-studies-caption {{ point_id }}">
-          <a xlink:href="{{ point_permalink | prepend:site.baseurl }}">
-            {% if point_id == 'boone_logan_mingo' %}
-              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.05 }}" height="{{ caption_height  | times:1.05 }}"></rect>
-            {% else %}
-              <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
-            {% endif %}
-            <text x="{{ x_offset }}" y="{{ y_offset }}">{{ caption }}</text>
-          </a>
-          <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">{{ point_name }}</text>
-        </g>
-        <circle cx="{{ coords.x }}" cy="{{ coords.y }}" r="{{ circle_radius }}" fill="#fff" stroke="{{ black_light }}" stroke-width="2px"></circle>
-        {% include svg/circle-icon-{{ commodity }}.svg x=x_offset y=y_offset caption=caption %}
+    {% capture caption %}
+      {{ location_commodity | capitalize }} in {{ location_state }}
+    {% endcapture %}
+
+    <g class="case-studies-circle-group">
+      <g class="case-studies-caption {% if location_lines %}long{% endif %}">
+        <a xlink:href="{{ location_permalink | prepend:site.baseurl }}">
+          {% if location_id == 'boone_logan_mingo' %}
+            <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.25 }}" height="{{ caption_height  | times:1.25 }}"></rect>
+          {% else %}
+            <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
+          {% endif %}
+          <text x="{{ x_offset }}" y="{{ y_offset }}">{{ caption }}</text>
+        </a>
+        {% if location_lines %}
+          {% assign line_height = y_offset | plus: 22 %}
+          {% for line in location_lines %}
+            <text class="case-studies-description" x="{{ x_offset }}" y="{{ line_height }}">
+              {{ line }}
+            </text>
+            {% assign line_height = line_height | plus: 18 %}
+          {% endfor %}
+        {% else %}
+          <text class="case-studies-description" x="{{ x_offset }}" y="{{ y_offset | plus:20 }}">
+            {{ location_name }}
+          </text>
+        {% endif %}
+
       </g>
-    {% endfor %}
+      <circle cx="{{ coords.x }}" cy="{{ coords.y }}" r="{{ circle_radius }}" fill="#fff" stroke="{{ black_light }}" stroke-width="2px"></circle>
+      {% include svg/circle-icon-{{ location_commodity }}.svg x=x_offset y=y_offset caption=caption %}
+    </g>
   {% endfor %}
 </g>

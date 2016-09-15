@@ -28,14 +28,10 @@
   .case-studies-caption {
     visibility: hidden;
 
-    &.boone_logan_mingo {
-      $multiplier: 1.05;
-      $large-caption-offset-x: $caption-offset-x * $multiplier;
-
+    &.long {
+      $multiplier: 1.25;
       rect {
         height: $caption-height * $multiplier;
-        transform: translate(#{$large-caption-offset-x}, #{$caption-offset-y});
-        width: $caption-width * $multiplier;
       }
     }
   }
@@ -58,6 +54,10 @@
     fill: $black-light;
     text-anchor: middle;
     transform: translate(#{$circle-radius}, 61px);
+
+    tspan {
+      text-anchor: middle;
+    }
   }
 
   a text {

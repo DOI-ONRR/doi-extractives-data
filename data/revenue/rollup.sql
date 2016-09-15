@@ -248,6 +248,18 @@ CREATE TABLE national_revenue_type AS
     GROUP BY
         year, commodity, revenue_type;
 
+
+-- add data from civil penalties table
+INSERT INTO national_revenue_type
+    (year, commodity, revenue_type, revenue)
+SELECT
+    year, 'None' AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM civil_penalties_revenue
+GROUP BY
+    year, commodity, revenue_type;
+
 -- create all revenue type by commodity rollups
 INSERT INTO national_revenue_type
     (year, commodity, revenue_type, revenue)

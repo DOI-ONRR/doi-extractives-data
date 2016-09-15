@@ -7,18 +7,8 @@ var path = require('path');
 var yaml = require('js-yaml');
 var assert = require('assert');
 
-var load = function(filename, format, done) {
-  var rows = [];
-  fs.createReadStream(filename, 'utf8')
-    .pipe(tito.formats.createReadStream(format))
-    .on('data', function(d) {
-      rows.push(d);
-    })
-    .on('error', done)
-    .on('end', function() {
-      done(null, rows);
-    });
-};
+var parse = require('../../lib/parse');
+var loadPivot = require('../../lib/load-pivot');
 
 describe('revenues by type', function() {
 
@@ -31,7 +21,7 @@ describe('revenues by type', function() {
 
     var pivotSource = path.join(
       __dirname,
-      '../../data/revenue/pivot.tsv'
+      '../../data/revenue/pivot-onshore.tsv'
     );
 
     var stateRevenueByType = yaml.safeLoad(
@@ -40,7 +30,13 @@ describe('revenues by type', function() {
 
     it('match values in the pivot table', function(done) {
       var testRow = function(d, i) {
-        var expected = +d.Total;
+        if (d.CY.match(/ Total$/)) {
+          return;
+        }
+        var expected = parse.dollars(d.Total);
+        if (isNaN(expected)) {
+          assert.ok(false, 'got NaN revenue for: ' + JSON.stringify(d));
+        }
         var actual;
         try {
           actual = stateRevenueByType[
@@ -58,19 +54,18 @@ describe('revenues by type', function() {
         var difference = expected - actual;
         assert.ok(
           Math.abs(difference) <= 1,
-          actual,
           (actual + ' != ' + expected + ' @ ' + (i + 1))
         );
       };
 
-      load(pivotSource, 'tsv', function(error, rows) {
+      loadPivot(pivotSource, function(error, rows) {
         rows.forEach(testRow);
         done();
       });
     });
 
     it("doesn't contain values that aren't in the pivot table", function(done) {
-      load(pivotSource, 'tsv', function(error, rows) {
+      loadPivot(pivotSource, function(error, rows) {
         var state;
         var commodity;
         var type;
@@ -106,12 +101,11 @@ describe('revenues by type', function() {
                   ' for: ' + [state, commodity, type, year].join('/')
                 );
 
-                expected = found[0].Total;
+                expected = parse.dollars(found[0].Total);
                 difference = expected - actual;
 
                 assert.ok(
                   Math.abs(difference) <= 1,
-                  actual,
                   (actual + ' != ' + expected)
                 );
               }

@@ -248,7 +248,11 @@
                 .attr('class', 'legendScale');
             }
 
-            legendScale.call(legend);
+            try {
+              legendScale.call(legend);
+            } catch (error) {
+              console.warn('legend error:', error);
+            }
 
           } else {
             console.warn('this <eiti-data-map> element does not have an associated svg legend.');

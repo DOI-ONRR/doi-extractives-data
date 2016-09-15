@@ -94,7 +94,7 @@
     };
 
     var hide = function () {
-      var event = event || window.event;
+      var event = event || d3.event || window.event;
       var elem = event.target || event.srcElement;
 
       if (elem.nodeName === 'svg') {

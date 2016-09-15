@@ -26,32 +26,88 @@
 
 {% for commodity in revenue_types %}
   {% assign commodity_name = commodity[0] %}
+  {% assign commodity_values = commodity[1] %}
   {% if oilgas_list contains commodity_name %}
-    {% assign oilgas_exists = true %}
+    {% for oilgas_name in oilgas_list %}
+      {% if commodity_name == oilgas_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign oilgas_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if minerals_list contains commodity_name %}
-    {% assign minerals_exists = true %}
+    {% for minerals_name in minerals_list %}
+      {% if commodity_name == minerals_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign minerals_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Coal' %}
-    {% assign coal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign coal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Geothermal' %}
-    {% assign geothermal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign geothermal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Wind' %}
-    {% assign wind_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign wind_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Other Products' %}
-    {% assign other_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign other_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
-    {% assign all_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign all_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
 {% endfor %}
@@ -117,7 +173,7 @@
 
         {% if commodity_name == 'Geothermal' %}
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% include location/revenue-type-row.html %}
+            {% include location/revenue-type-row.html year=include.year %}
           </tbody>
         {% endif %}
       {% endfor %}
@@ -125,7 +181,7 @@
 
     {% if wind_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
-        Wind
+        Offshore renewable energy
         <icon class="icon-padded icon-wind"></icon>
       </td></tr>
       {% for commodity in revenue_types %}
@@ -183,10 +239,25 @@
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             <tr class="table-arrow_box-category"><td colspan="5">
               All commodities
-              <icon class="icon-oil"></icon>
-              <icon class="icon-coal"></icon>
-              <icon class="icon-minerals"></icon>
-              <icon class="icon-geo"></icon>
+              {% if oilgas_exists == true %}
+                <icon class="icon-oil"></icon>
+              {% endif %}
+
+              {% if coal_exists == true %}
+                <icon class="icon-coal"></icon>
+              {% endif %}
+
+              {% if geothermal_exists == true %}
+                <icon class="icon-geo"></icon>
+              {% endif %}
+
+              {% if wind_exists == true %}
+                <icon class="icon-wind"></icon>
+              {% endif %}
+
+              {% if minerals_exists == true %}
+                <icon class="icon-minerals"></icon>
+              {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}
           </tbody>

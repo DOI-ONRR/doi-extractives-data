@@ -36,10 +36,6 @@
   .state_pages-select {
     padding-top: $base-padding;
 
-    label {
-      @include heading('para-sm');
-    }
-
     select {
       width: 85%;
     }

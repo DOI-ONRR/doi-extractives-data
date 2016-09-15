@@ -441,11 +441,10 @@ data/reconciliation.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			company, revenue_type, \
-			reported_gov, reported_company, \
-			variance_dollars, variance_percent, \
-			variance_note, variance_material \
+			reported_gov, reported_company, reported_note, \
+			variance_dollars, variance_percent, variance_material \
 		FROM reconciliation \
-		ORDER BY reported_company DESC, company, revenue_type" \
+		ORDER BY reported_gov DESC, company, revenue_type" \
 		| $(nestly) --if ndjson \
 			-c _meta/reconciliation.yml \
 			-o _$@

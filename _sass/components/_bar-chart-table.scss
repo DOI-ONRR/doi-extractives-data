@@ -89,7 +89,7 @@
         }
 
         .bar:nth-child(1) {
-          background-color: $green-dark;
+          background-color: $green-dark-chart;
         }
 
         .bar:nth-child(2) {
@@ -103,7 +103,7 @@
     }
 
     .bar {
-      background: $gray-lighter;
+      background: $gray-pale;
       display: block;
       height: 1em;
 

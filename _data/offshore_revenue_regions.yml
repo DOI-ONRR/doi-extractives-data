@@ -33,7 +33,7 @@ Gulf:
       '2010':
         revenue: 876933371
       '2011':
-        revenue: 206166221
+        revenue: 206617495
       '2012':
         revenue: 2006549391
       '2013':
@@ -302,23 +302,23 @@ Pacific:
       '2006':
         revenue: 87175
       '2007':
-        revenue: 0
+        revenue: 1185
       '2008':
-        revenue: 18432
+        revenue: 19092
       '2009':
         revenue: 944273
       '2010':
-        revenue: -406431
+        revenue: 1155
       '2011':
-        revenue: -429207
+        revenue: 1335
       '2012':
-        revenue: -1524109
+        revenue: 1785
       '2013':
-        revenue: -701481
+        revenue: 1890
       '2014':
-        revenue: -298989
+        revenue: 1395
       '2015':
-        revenue: -1165049
+        revenue: 1395
     Sulfur:
       '2006':
         revenue: 6303
@@ -344,13 +344,13 @@ None:
   commodities:
     All:
       '2006':
-        revenue: 633646
+        revenue: 109545
       '2007':
-        revenue: 456744
+        revenue: 83228
       '2008':
-        revenue: 732500
+        revenue: 153628
       '2009':
-        revenue: 531237
+        revenue: 203210
       '2010':
         revenue: 10053526
       '2011':
@@ -378,28 +378,25 @@ None:
         revenue: 52239171
     Oil & Gas (Non-Royalty):
       '2006':
-        revenue: 633646
+        revenue: 109545
       '2007':
-        revenue: 456744
+        revenue: 83228
       '2008':
-        revenue: 732500
+        revenue: 153628
       '2009':
-        revenue: 531237
+        revenue: 203210
       '2010':
-        revenue: 558772
+        revenue: 102873
       '2011':
-        revenue: 589525
+        revenue: 136915
       '2012':
-        revenue: 561136
+        revenue: 261693
       '2013':
-        revenue: 693418
+        revenue: 192675
       '2014':
-        revenue: 644793
+        revenue: 320706
       '2015':
-        revenue: 616187
-    Oil:
-      '2006':
-        revenue: 0
+        revenue: 240350
 Atlantic:
   commodities:
     All:

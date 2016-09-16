@@ -7,7 +7,7 @@
 
 <section id="revenue" is="year-switcher-section" class="federal revenue">
 
-  <h2>Revenue</h2>
+  <h2 class="sticky">Revenue</h2>
 
   <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. What companies pay to federal, state, and local governments often depends on who owns the natural resources.</p>
 
@@ -22,10 +22,10 @@
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
       </a>
     </p>
-    
+
     <h4>Revenue from production on federal land by resource</h4>
-    
-{% if revenue_commodities %}
+
+    {% if revenue_commodities %}
 
     <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -58,7 +58,7 @@
           year=year
         %}
       </article>
-    </div>
+    </div><!-- /#fee-summaries -->
 
     <h4 id="federal-revenue-by-county">Revenue from production on federal land by county</h4>
 
@@ -93,16 +93,15 @@
           year_range=year_range
         %}
       </section>
-    </section>
-    <!-- .chart-list -->
+    </section><!-- /.chart-list -->
 
-{% else %}
+    {% else %}
 
-        <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
-          No natural resources were produced on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
-        </p>
+    <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+      No natural resources were produced on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
+    </p>
 
-{% endif %}
+    {% endif %}
 
     <h4>Federal tax revenue</h4>
 
@@ -111,8 +110,7 @@
       <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
     </div>
 
-  </section>
-  <!-- #federal-revenue -->
+  </section><!-- /#federal-revenue -->
 
   <section id="state-local-revenue" class="state revenue">
     <h3>State revenue</h3>

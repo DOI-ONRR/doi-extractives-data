@@ -23,8 +23,9 @@
     @include h3-bar;
   }
 
-  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title) {
-    padding-top: 2rem;
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
+  .pre-sticky {
+    margin-top: 4rem;
   }
 
   ul + h3:not(.chart-title):not(.title-land-ownership),

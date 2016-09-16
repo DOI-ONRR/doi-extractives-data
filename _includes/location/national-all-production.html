@@ -5,7 +5,7 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3>Energy production nationwide</h3>
+  <h3 class="sticky">Energy production nationwide</h3>
 
   <div class="chart-selector-wrapper">
 
@@ -53,7 +53,7 @@
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data about production of {{ product_name | downcase | suffix: units_suffix }} in 
+            There is no data about production of {{ product_name | downcase | suffix: units_suffix }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>

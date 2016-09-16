@@ -14,8 +14,8 @@ module.exports = {
     // 'Right of Way'. When this is the case, associate it
     // with the appropriate area.
     return d['Offshore Planning Area'].match(/Right of Way$/)
-    ? regionKey[d['Offshore Region']]
-    : d['Offshore Planning Area'];
+      ? regionKey[d['Offshore Region']]
+      : d['Offshore Planning Area'];
   },
   block_name:     'BOEM Block Name',
   protraction:    'BOEM Protraction',

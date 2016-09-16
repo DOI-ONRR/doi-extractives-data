@@ -230,5 +230,5 @@ describe('revenues by type', function() {
 
 
     });
-  })
+  });
 });

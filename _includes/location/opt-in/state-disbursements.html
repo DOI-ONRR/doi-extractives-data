@@ -14,8 +14,8 @@
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
-      <th>State fund</th>
-      <th class="num">Distribution</th>
+      <th><strong>State fund</strong></th>
+      <th class="num"><strong>Distribution</strong></th>
     </tr>
   </thead>
 
@@ -33,10 +33,10 @@
         {% if fund_info %}
         <button is="aria-toggle" aria-controls="fund-{{ fund_slug }}"
           aria-expanded="false" class="not-button-like">
-          <strong>{{ fund_name }}</strong>
+          {{ fund_name }}
         </button>
         {% else %}
-        <strong>{{ fund_name }}</strong>
+          {{ fund_name }}
         {% endif %}
       </td>
       <td data-value="{{ fund_dollars }}"

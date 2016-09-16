@@ -1,31 +1,67 @@
-BP America:
-- 'This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.'
-Chevron Corporation:
-- 'This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.'
-Shell E&P Company:
-- 'This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014.'
-Exxon Mobil Corporation:
-- 'This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.'
-Peabody Energy Corporation:
-- 'This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.'
-Anadarko Petroleum Corporation:
-- 'This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.'
-ConocoPhillips:
-- 'This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-- 'This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-- 'This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-Freeport-McMoRan Inc.:
-- 'The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.'
-Statoil Gulf of Mexico:
-- 'This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.'
-Ultra Resources Inc.:
-- 'This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.'
-'Noble Energy, Inc.':
-- 'This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.'
-- 'This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.'
-Cimarex Energy Co.:
-- 'This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.'
-Newfield Exploration Company:
-- 'The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.'
-ANKOR Energy LLC:
-- 'This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.'
+thresholds:
+  # each key here is a marginal %
+  1%:
+    # and each margin has one or more streams, each with a $ floor
+  - stream: Royalties
+    floor: '$100,000'
+  - stream: Civil penalties
+    floor: '$1,000'
+  - stream: Taxes
+    floor: '$100,000'
+
+  2%:
+  - stream: Rents
+    floor: '$50,000'
+  - stream: Bonuses
+    floor: '$100,000'
+  - stream: Offshore inspection fees
+    floor: '$20,000'
+  - stream: BLM bonus and first year rentals
+    floor: '$10,000'
+  - stream: OSMRE AML fees including audits and late charges
+    floor: '$100,000'
+
+  3%:
+  - stream: BLM permit fees
+    floor: '$10,000'
+  - stream: OSMRE civil penalties including late charges
+    floor: '$0'
+  - stream: Other revenue
+    floor: '$50,000'
+
+  N/A:
+  - stream: BLM renewables
+    floor: N/A
+
+footnotes:
+  BP America:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.'
+  Chevron Corporation:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.'
+  Shell E&P Company:
+  - 'This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014.'
+  Exxon Mobil Corporation:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.'
+  Peabody Energy Corporation:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.'
+  Anadarko Petroleum Corporation:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.'
+  ConocoPhillips:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+  - 'This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+  - 'This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+  Freeport-McMoRan Inc.:
+  - 'The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.'
+  Statoil Gulf of Mexico:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.'
+  Ultra Resources Inc.:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.'
+  'Noble Energy, Inc.':
+  - 'This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.'
+  - 'This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.'
+  Cimarex Energy Co.:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.'
+  Newfield Exploration Company:
+  - 'The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.'
+  ANKOR Energy LLC:
+  - 'This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.'

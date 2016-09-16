@@ -4,10 +4,12 @@ layout: default
 permalink: /how-it-works/reconciliation/
 ---
 
-{% assign footnotes = '' | split: '' %}
+{% assign material_variance = site.data.material_variances %}
 
 <section id="reconciliation" class="explore-subpage container">
+
   <section class="container-page-wrapper">
+
     <div class="container-left-4">
       <div class="container">
         <div>
@@ -21,54 +23,13 @@ permalink: /how-it-works/reconciliation/
 
         <p>The 2015 USEITI report looked at calendar year data for 2013. The 45 companies invited to participate are listed here, along with reported payments and reconciliation results for each revenue type. To learn more, review the <a href="{{ site.baseurl }}/downloads/reconciliation/#scope">scope</a> of the reconciliation process or the list of <a href="{{ site.baseurl }}/downloads/reconciliation/#in-scope-companies">companies</a> included.</p>
 
-        <a href="{{site.baseurl}}/downloads/reconciliation/">
+        <a href="{{ site.baseurl }}/downloads/reconciliation/">
           <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </div>
-    </div>
+    </div><!-- /.container-left-4 -->
 
     <section class="container-right-8">
-      <!-- TODO remove style hack -->
-      <div class="sticky sticky-top sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" style="display:none;">
-
-        <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
-
-        <form id="filters" aria-hidden="true" class="filters">
-
-          <div class="filters-heading">
-            <h3>Filter revenue</h3>
-          </div>
-
-          <div class="container-left-6" style="margin-right: 0;">
-            <div id="type-filter" class="filter filters-last">
-              <label for="type-selector">Revenue Type</label>
-              <select id="type-selector" name="type">
-                <option value="">All</option>
-              </select>
-            </div>
-          </div>
-
-        </form>
-
-        <h1 class="filter-description" data-filter-description="">
-          <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
-          from
-          extraction on federal lands (2013)
-        </h1>
-
-        <div class="container">
-          <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
-        </div>
-
-      </div>
-
-      <div class="filter-description_wrapper">
-        <h1 class="filter-description filter-description_open" data-filter-description="">
-          <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
-          from
-          extraction on federal lands (2013)
-        </h1>
-      </div>
 
       <!-- TODO remove style hack -->
       <div class="explore-exploration slab-alpha" style="margin-top: 20px;">
@@ -76,6 +37,7 @@ permalink: /how-it-works/reconciliation/
         <div class="container flowchart">
 
           <h2>Company participation, reporting, and reconciliation results</h2>
+
           <ul>
             <li class="flowchart-dialog flowchart-dialog_top flowchart-outcomes">
               <ul>
@@ -111,9 +73,10 @@ permalink: /how-it-works/reconciliation/
               <div class="flowchart-stem_left"></div>
               <div class="flowchart-stem_bottom_right"></div>
             </li>
+
             <li class="container u-padding-bottom-none">
               <ul>
-               <li class="para-sm flowchart-dialog flowchart-no_dialog flowchart-columns_4 flowchart-columns_right">
+                <li class="para-sm flowchart-dialog flowchart-no_dialog flowchart-columns_4 flowchart-columns_right">
                   <span class="flowchart-text_bold">No further reason to review.</span>
                   <path class="flowchart-stem_bottom_right_extra_long"></path>
                 </li>
@@ -129,92 +92,46 @@ permalink: /how-it-works/reconciliation/
                   </ul>
                   <div class="flowchart-stem_left"></div>
                 </li>
-
               </ul>
             </li>
+
             <li class="flowchart-dialog flowchart-no_top flowchart-dialog_bottom">
               <span>
                 <span class="flowchart-text_bold flowchart-text_large">This means that our accounting systems in the United States are working correctly, and that company and government records are in agreement.</span>
               </span>
               <div class="flowchart-stem_left"></div>
             </li>
-          </ul>
-        </div>
 
+          </ul>
+        </div><!-- /.flowchart.container -->
 
         <div class="container">
-            <div class="container detached-header">
-              <h2 class="h3 region-title region-title_compact">Material variance thresholds by revenue type</h2>
-              <p>Variances are only considered material if the percentage difference is greater than the <span class="term term-end" data-term="margin of variance" title="Click to define" tabindex="0">margin of variance<icon class="icon-book"></icon></span> threshold <strong>and</strong> the total dollar amount of the difference exceeds the <span class="term term-end" data-term="variance floor" title="Click to define" tabindex="0">variance floor<icon class="icon-book"></icon></span>.</p>
-            </div>
-              <table class="article_table article_table-gray article_table-centered_1 article_table-numbers_3 article_table-book_1 article_table-book_3">
-                <tr class="article_table-bold">
-                    <th>Margin</th>
-                    <th>Revenue stream</th>
-                    <th>Variance floor</th>
-                </tr>
-                <tr>
-                    <td>1%</td>
-                    <td>Royalties</td>
-                    <td>$100,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Civil penalties</td>
-                    <td>$1,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Taxes</td>
-                    <td>$100,000</td>
-                </tr>
-                <tr>
-                    <td>2%</td>
-                    <td>Rents</td>
-                    <td>$50,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Bonuses</td>
-                    <td>$100,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Offshore inspection fees</td>
-                    <td>$20,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>BLM bonus and first year rentals</td>
-                    <td>$10,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>OSMRE AML fees including audits and late charges</td>
-                    <td>$100,000</td>
-                </tr>
-                <tr>
-                    <td>3%</td>
-                    <td>BLM permit fees</td>
-                    <td>$10,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>OSMRE civil penalties including late charges</td>
-                    <td>$0</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Other revenue</td>
-                    <td>$50,000</td>
-                </tr>
-                <tr>
-                    <td>N/A</td>
-                    <td>BLM renewables</td>
-                    <td>N/A</td>
-                </tr>
-            </table>
-        </div>
+          <div class="container detached-header">
+            <h2 class="h3 region-title region-title_compact">Material variance thresholds by revenue type</h2>
+            <p>Variances are only considered material if the percentage difference is greater than the <span class="term term-end" data-term="margin of variance" title="Click to define" tabindex="0">margin of variance<icon class="icon-book"></icon></span> threshold <strong>and</strong> the total dollar amount of the difference exceeds the <span class="term term-end" data-term="variance floor" title="Click to define" tabindex="0">variance floor<icon class="icon-book"></icon></span>.</p>
+          </div>
+
+          <table class="article_table article_table-gray article_table-centered_1 article_table-numbers_3 article_table-book_1 article_table-book_3">
+            <thead>
+              <tr>
+                <th>Margin</th>
+                <th>Revenue stream</th>
+                <th>Variance floor</th>
+              </tr>
+            </thead>
+            {% for margin in material_variance.thresholds %}
+            <tbody>
+              {% for threshold in margin[1] %}
+              <tr>
+                <td>{% if forloop.index0 == 0 %}{{ margin[0] }}{% endif %}</td>
+                <td>{{ threshold.stream }}</td>
+                <td>{{ threshold.floor }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+            {% endfor %}
+          </table>
+        </div><!-- /.container -->
 
         <div class="container">
           <section class="filter-search_section">
@@ -228,8 +145,14 @@ permalink: /how-it-works/reconciliation/
           <table id="companies" class="company-list subregions">
             <thead class="list-heading">
               <tr>
-                <th class="narrow"></th><th>Payments reported by government (<strong>gov</strong>) and by company (<strong>co</strong>)</th>
-                <th class="centered">Variance percentage (<strong>bold</strong> indicates material variances)</th>
+                <th class="narrow"></th>
+                <th>
+                  Payments reported by government (<span class="reportee">gov</span>)
+                  and by company (<span class="reportee">co</span>)
+                </th>
+                <th class="centered">
+                  Variance percentage (<strong>bold</strong> indicates material variances)
+                </th>
               </tr>
             </thead>
 
@@ -243,6 +166,7 @@ permalink: /how-it-works/reconciliation/
               {% for revenue_type in company[1] %}
                 {% assign reported = revenue_type[1].reported %}
                 {% assign variance = revenue_type[1].variance %}
+                {% assign explanation = nil %}
               <tr class="subtype">
                 <td class="name narrow">{{ revenue_type[0] }}</td>
                 <td class="value">
@@ -262,35 +186,32 @@ permalink: /how-it-works/reconciliation/
                   {% endif %}
                   {% if variance.material == 1 %}
                     {% assign explanation = site.data.material_variances[company_name][variance_index] %}
-                    {% assign footnotes = footnotes | push: explanation %}
-                    {% assign footnote_index = footnotes.size %}
-                  <sup id="fnref:{{ footnote_index }}">
-                    <a href="#fn:{{ footnote_index }}" class="footnote hashoffset">{{ footnote_index }}</a>
-                  </sup>{% assign variance_index = variance_index | plus: 1 %}
+                    {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
+                  <strong aria-labelledby="{{ explanation_id | slugify }}">*</strong>
                   {% endif %}
                 </td>
               </tr>
+                {% if explanation %}
+              <tr>
+                <td class="material-variance" colspan="3">
+                  <strong>*</strong>
+                  <span id="{{ explanation_id | slugify }}">{{ explanation }}</span>
+                </td>
+              </tr>
+                {% endif %}
               {% endfor %}
             </tbody>
             {% endfor %}
           </table>
 
-          <div class="footnotes container-padded">
-            <h3>Footnotes</h3>
-            <ol>
-              {% for fn in footnotes %}
-              <li id="fn:{{ forloop.index }}" class="hashoffset">
-                <p>{{ fn }} <a href="#fnref:{{ forloop.index }}" class="reversefootnote">↩</a></p>
-              </li>
-              {% endfor %}
-            </ol>
-          </div>
-        </div>
+        </div><!-- /.container -->
 
-      </div>
+      </div><!-- /.explore-exploration.slab-alpha -->
 
-    </section>
-  </section>
-</section>
+    </section><!-- /.container-right-8 -->
+
+  </section><!-- /.container-page-wrapper -->
+
+</section><!-- /#reconciliation.explore-subpage.container -->
 
 <script src="{{ site.baseurl }}/js/lib/reconciliation.min.js"></script>

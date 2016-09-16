@@ -127,6 +127,11 @@ $ab-border-thick: 4px;
   }
 }
 
+.table-arrow_box-asterisk {
+  @include font-size(0.75);
+  line-height: 0.75rem;
+}
+
 
 // Arrow box
 

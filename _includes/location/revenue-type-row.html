@@ -20,7 +20,13 @@
           total_other_revenues
           | default: 0
           | intcomma
-        }}</span></td>
+        }}</span>
+        {% if national_page and commodity_name == 'All' %}
+          <br/>
+          <span class="table-arrow_box-asterisk">* Includes revenues not categorized by commodity above, such as civil penalties and inspection fees.</span>
+        {% endif %}
+        </td>
+
       {% else %}
         <td data-value="{{
             values[revenue_type][year] | default: 0

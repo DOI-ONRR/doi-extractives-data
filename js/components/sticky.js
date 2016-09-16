@@ -1,15 +1,13 @@
 (function(exports) {
+  'use strict';
 
-  var Stickyfill = require('stickyfill');
-  var stickyfill = Stickyfill();
+  var sticky = require('stickyfill')();
 
-  var stickyElements = document.getElementsByClassName('sticky');
+  [].forEach.call(
+    document.querySelectorAll('.sticky'),
+    sticky.add
+  );
 
-  for (var i = stickyElements.length - 1; i >= 0; i--) {
-      stickyfill.add(stickyElements[i]);
-  }
-  exports.Stickyfill = Stickyfill;
-  exports.stickyfill = stickyfill;
+  exports.sticky = sticky;
 
-
-})(this);
+})(window);

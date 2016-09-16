@@ -8,7 +8,7 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Production on federal land nationwide</h3>
+    <h3 class="sticky">Production on federal land nationwide</h3>
 
     <div class="chart-selector-wrapper">
 
@@ -18,7 +18,7 @@
         ONRR collects detailed data about natural resources produced on federal lands and waters.
         <br>
         <a href="{{site.baseurl}}/downloads/federal-production/">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </p>
     </div>
@@ -75,8 +75,8 @@
               <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>
             <span class="caption-withheld" aria-hidden="true">
-              Data about {{ product_name | downcase | suffix:units_suffix }} production on federal land in 
-              <span class="eiti-bar-chart-x-value">{{ year }}</span> 
+              Data about {{ product_name | downcase | suffix:units_suffix }} production on federal land in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>
               is withheld.
             </span>
           </figcaption>

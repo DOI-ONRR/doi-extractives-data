@@ -54,8 +54,3 @@ groups:
     commodities:
     - "Geothermal"
     - "Wind"
-
-  civil_penalties:
-    name: Civil Penalties
-    commodities:
-    - "Other Products"

@@ -16,20 +16,20 @@
       <strong>
         In {{ year }}, ONRR disbursed
           ${{ disbursements.All.All[year] | round | intcomma }}
-         to the state of {{ state_name }}.
+         to {{ state_name }}.
       </strong>
-    </p>
+      <!-- Includes a table showing onshore/offshore only if there are offshore disbursements to show -->
+      {% if disbursements.All.Offshore[year] > 0 %}
+          This included revenues from both onshore and offshore extraction in or near {{ state_name }}:
+        </p>
+        <ul>
+          <li>${{ disbursements.All.Onshore[year] | round | intcomma }} was from onshore revenues</li>
+          <li>${{ disbursements.All.Offshore[year] | round | intcomma }} was from offshore revenues</li>
+        </ul>
+      {% else %}
+        </p>
+      {% endif %}
 
-    <!-- Includes a table showing onshore/offshore only if there are offshore disbursements to show -->
-    {% if disbursements.All.Offshore[year] > 0 %}
-      <p>
-        {{ year }} disbursements to {{ state_name }} included revenues from onshore and offshore extraction in or near {{ state_name }}:
-      </p>
-      <ul>
-        <li>From onshore revenues: ${{ disbursements.All.Onshore[year] | round | intcomma }}</li>
-        <li>From offshore revenues: ${{ disbursements.All.Offshore[year] | round | intcomma }}</li>
-      </ul>
-    {% endif %}
 
   {% else %}
   <!-- If no disbursements -->

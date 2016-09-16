@@ -164,11 +164,12 @@ permalink: /how-it-works/reconciliation/
                 <th colspan="3" class="subregion-name narrow">{{ company_name }}</th>
               </tr>
               {% for revenue_type in company[1] %}
+                {% assign revenue_stream = revenue_type[0] %}
                 {% assign reported = revenue_type[1].reported %}
                 {% assign variance = revenue_type[1].variance %}
                 {% assign explanation = nil %}
                 {% if variance.material == 1 %}
-                  {% assign explanation = material_variance.footnotes[company_name][variance_index] %}
+                  {% assign explanation = material_variance.footnotes[company_name][revenue_stream] %}
                   {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
                 {% endif %}
               <tr class="subtype{% if explanation %} has-material-variance{% endif %}">
@@ -178,7 +179,7 @@ permalink: /how-it-works/reconciliation/
                   {% else %}${{ reported.government | intcomma }}
                   {% endif %} <span class="reportee">gov</span><br>
                   {% if reported.company != nil %}${{ reported.company | intcomma }}
-                  {% else %}{{ reported.note }}{% endif %} <span class="reportee">co</span><br>
+                  {% else %}{{ reported.note }}{% endif %} <span class="reportee">co</span>
                 </td>
                 <td class="variance">
                   {% if variance.percent != nil %}
@@ -197,7 +198,7 @@ permalink: /how-it-works/reconciliation/
               <tr class="material-variance">
                 <td colspan="3">
                   <strong>*</strong>
-                  <span id="{{ explanation_id | slugify }}">{{ explanation }}</span>
+                  <span id="{{ explanation_id | slugify }}" class="material-variance-explanation">{{ explanation }}</span>
                 </td>
               </tr>
                 {% endif %}

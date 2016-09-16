@@ -33,7 +33,7 @@ Gulf:
       '2010':
         revenue: 876933371
       '2011':
-        revenue: 206617495
+        revenue: 206754411
       '2012':
         revenue: 2006549391
       '2013':
@@ -343,14 +343,6 @@ Pacific:
 None:
   commodities:
     All:
-      '2006':
-        revenue: 109545
-      '2007':
-        revenue: 83228
-      '2008':
-        revenue: 153628
-      '2009':
-        revenue: 203210
       '2010':
         revenue: 10053526
       '2011':
@@ -376,27 +368,6 @@ None:
         revenue: 66048560
       '2015':
         revenue: 52239171
-    Oil & Gas (Non-Royalty):
-      '2006':
-        revenue: 109545
-      '2007':
-        revenue: 83228
-      '2008':
-        revenue: 153628
-      '2009':
-        revenue: 203210
-      '2010':
-        revenue: 102873
-      '2011':
-        revenue: 136915
-      '2012':
-        revenue: 261693
-      '2013':
-        revenue: 192675
-      '2014':
-        revenue: 320706
-      '2015':
-        revenue: 240350
 Atlantic:
   commodities:
     All:

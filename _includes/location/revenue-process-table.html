@@ -13,11 +13,10 @@
 {% assign commodity_groups = site.data.commodities.groups %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}
-{% assign minerals_list = commodity_groups.minerals.commodities %}
+{% assign other_list = commodity_groups.other.commodities %}
 
 {% assign oilgas_exists = false %}
 {% assign coal_exists = false %}
-{% assign minerals_exists = false %}
 {% assign geothermal_exists = false %}
 {% assign wind_exists = false %}
 {% assign other_exists = false %}
@@ -40,13 +39,13 @@
     {% endfor %}
   {% endif %}
 
-  {% if minerals_list contains commodity_name %}
-    {% for minerals_name in minerals_list %}
-      {% if commodity_name == minerals_name %}
+  {% if other_list contains commodity_name %}
+    {% for other_name in other_list %}
+      {% if commodity_name == other_name %}
         {% for type in commodity_values %}
           {% assign value = type[1][include.year] %}
           {% if value %}
-            {% assign minerals_exists = true %}
+            {% assign other_exists = true %}
             {% break %}
           {% endif %}
         {% endfor %}
@@ -82,17 +81,6 @@
 
       {% if value %}
         {% assign wind_exists = true %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  {% if commodity_name == 'Other Products' %}
-    {% for type in commodity_values %}
-      {% assign value = type[1][include.year] %}
-
-      {% if value %}
-        {% assign other_exists = true %}
         {% break %}
       {% endif %}
     {% endfor %}
@@ -297,10 +285,9 @@
       {% endfor %}
     {% endif %}
 
-    {% if minerals_exists == true %}
+    {% if other_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
-        Hardrock Minerals
-        <icon class="icon-padded icon-minerals"></icon>
+        Other products
       </td></tr>
 
       {% for commodity in revenue_types %}
@@ -316,7 +303,7 @@
 
       <tbody>
         <tr>
-          <th class="table-arrow_box-subcategory">Acquired lands</th>
+          <th class="table-arrow_box-subcategory">Hardrock Acquired lands</th>
           <td>
             <strong>$6,500</strong> prospecting permit fee
           </td>
@@ -329,35 +316,6 @@
           <td></td>
         </tr>
       </tbody>
-    {% endif %}
-
-    {% if other_exists == true %}
-      {% for commodity in revenue_types %}
-        {% assign commodity_name = commodity[0] %}
-        {% assign values = commodity[1] %}
-
-        {% if commodity_name == 'Other Products' %}
-          <tr class="table-arrow_box-category"><td colspan="5">
-            Other Products
-          </td></tr>
-          <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% include location/revenue-type-row.html %}
-            <tr>
-              <th class="table-arrow_box-subcategory">Competitive leasing</th>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        {% endif %}
-      {% endfor %}
     {% endif %}
 
     {% if all_exists == true %}
@@ -383,10 +341,6 @@
 
               {% if wind_exists == true %}
                 <icon class="icon-wind"></icon>
-              {% endif %}
-
-              {% if minerals_exists == true %}
-                <icon class="icon-minerals"></icon>
               {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}

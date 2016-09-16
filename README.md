@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/18F/doi-extractives-data/tree/dev.svg?style=svg)](https://circleci.com/gh/18F/doi-extractives-data/tree/dev)
+
 # U.S. Extractive Industries Data and Information
 
 ## What

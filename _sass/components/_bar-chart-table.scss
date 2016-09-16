@@ -55,8 +55,8 @@
     text-align: left;
   }
 
-  .numeric[colspan="2"] {
-    text-align: center;
+  th.numeric {
+    text-align: right;
   }
 
   [data-value] {

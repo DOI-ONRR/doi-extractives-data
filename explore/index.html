@@ -74,12 +74,14 @@ nav_items:
             of all land in the U.S., mostly concentrated in western states.
           </p>
           <p>
-            Many USEITI datasets only cover natural resource extraction on {{ "federal lands and waters" | term_end:"federal land" }}.
+            USEITI data covers production, revenue, and disbursements for {{ "federal lands and waters" | term_end:"federal land" }}, as well as nationwide production and economic impact.
           </p>
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">
-          <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or offshore region</label>
-          {% include selector.html %}
+          <label for="location-selector" class="ribbon-card-top-text-header">Explore state or offshore data:</label>
+          {% include selector.html 
+            default = 'Choose location'
+          %}
         </figcaption>
       </div>
     </div>
@@ -91,7 +93,7 @@ nav_items:
 
       <section id="production">
 
-        <h2>Production</h2>
+        <h2 class="state-page-overview">Production</h2>
 
         <p>The U.S. produces more <a href="#all-production-natural-gas-mcf">natural gas</a> and <a href="#all-production-oil-bbl">oil</a> than any other country, ranks second in the world for production of <a href="#all-production-coal-short-tons">coal</a> and renewable energy, and ranks third in the world for gold production. Learn more about <a href="{{ site.baseurl }}/how-it-works/production/">natural resource production in the U.S.</a></p>
 

@@ -1,6 +1,13 @@
 <select
   id="location-selector"
   onchange="window.location = '{{ site.baseurl }}' + this.value">
+
+  {% if include.default %}
+    <option value="" disabled selected>{{ include.default }}</option>
+  {% endif %}
+  {% if include.nationwide %}
+    <option value="{{ include.nationwide_url }}">{{ include.nationwide_title }}</option>
+  {% endif %}
   <optgroup label="States">
     {% for state in site.states %}
     <option value="{{ state.url }}">{{ state.title }}</option>

@@ -212,7 +212,7 @@ describe('self employment data', function() {
       });
     });
 
-    var test = year + " data doesn't contain values that aren't" +
+    var test = year + " data doesn't contain values that aren't " +
                'in the pivot table';
     it(test, function(done) {
       var actualCount;

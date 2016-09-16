@@ -7,13 +7,29 @@
       <strong class="table-arrow_box-subheader-value">${{ total | intcomma }}</strong>
     </th>
     {% for revenue_type in revenue_type_names %}
-    <td data-value="{{
-      values[revenue_type][year] | default: 0
-    }}"><span class="text table-arrow_box-subheader-value">${{
-      commodity[1][revenue_type][year]
-      | default: 0
-      | intcomma
-    }}</span></td>
+      {% if revenue_type == 'Other Revenues' %}
+        {%
+          assign total_other_revenues = 0
+          | plus: commodity[1]['Civil Penalties'][year]
+          | plus: commodity[1]['Other Revenues'][year]
+          | plus: commodity[1]['Inspection Fees'][year]
+        %}
+        <td data-value="{{
+          total_other_revenues | default: 0
+        }}"><span class="text table-arrow_box-subheader-value">${{
+          total_other_revenues
+          | default: 0
+          | intcomma
+        }}</span></td>
+      {% else %}
+        <td data-value="{{
+            values[revenue_type][year] | default: 0
+        }}"><span class="text table-arrow_box-subheader-value">${{
+          commodity[1][revenue_type][year]
+          | default: 0
+          | intcomma
+        }}</span></td>
+      {% endif %}
     {% endfor %}
   </tr>
 {% endif %}

@@ -5,15 +5,15 @@
   section + section,
   h2 + section:not(.state-pages-top),
   p + h4 {
-    margin-top: -0.75rem; //to compensate for margin from preceding selectors
+    margin-top: 0; // -0.75rem; //to compensate for margin from preceding selectors
   }
 
   h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
-    padding-top: 6rem;
+    // padding-top: 6rem;
 
     &.state-page-overview {
-      padding-top: 0;
+      // padding-top: 0;
     }
   }
 
@@ -54,7 +54,7 @@
   section + [class*='panel-'],
   h3 + [class*='panel-'] {
     margin-bottom: $standard-padding;
-    margin-top: $standard-padding;
+    margin-top: 0; // $standard-padding;
   }
 
   figure {

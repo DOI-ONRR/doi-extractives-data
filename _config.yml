@@ -89,7 +89,7 @@ collections:
     permalink: /explore/:path/
   federal-revenue-by-company:
     output: true
-    permalink: /explore/federal-revenue-by-company/:path/
+    permalink: /how-it-works/federal-revenue-by-company/:path/
   how-it-works:
     output: true
     permalink: /how-it-works/:path/

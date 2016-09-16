@@ -5,10 +5,6 @@
   <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
   <p>
     Most federal revenue disbursements go into national funds. For detailed data about which expenditures and projects from those national funds are in {{ state_name }}, see <a href="{{ site.baseurl }}/explore/#federal-disbursements">nationwide federal disbursements</a>.
-    <br>
-    <a href="{{site.baseurl}}/downloads/disbursements/" class="data-downloads">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-    </a>
   </p>
 
   {% assign disbursements = site.data.federal_disbursements[state_id] %}
@@ -24,19 +20,28 @@
       </strong>
     </p>
 
-    <p>
-      {%
-        include location/display-disbursements.html
-        values=disbursements
-        state_name=state_name
-      %}
-    </p>
+    <!-- Includes a table showing onshore/offshore only if there are offshore disbursements to show -->
+    {% if disbursements.All.Offshore[year] > 0 %}
+      <p>
+        {{ year }} disbursements to {{ state_name }} included revenues from onshore and offshore extraction in or near {{ state_name }}:
+      </p>
+      <ul>
+        <li>From onshore revenues: ${{ disbursements.All.Onshore[year] | round | intcomma }}</li>
+        <li>From offshore revenues: ${{ disbursements.All.Offshore[year] | round | intcomma }}</li>
+      </ul>
+    {% endif %}
 
-  {% else %} 
+  {% else %}
   <!-- If no disbursements -->
     <p><strong>
-      The state government of {{ state_name }} did not receive any disbursements from ONRR in {{ year }}. This is usually because there was no natural resource extraction on federal land in the state.
+      {{ state_name }} did not receive any disbursements from ONRR in {{ year }}. This is usually because there was no natural resource extraction on federal land in the state.
     </strong></p>
   {% endif %}
+
+  <p>
+    <a href="{{site.baseurl}}/downloads/disbursements/" class="data-downloads">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+    </a>
+  </p>
 
 </section>

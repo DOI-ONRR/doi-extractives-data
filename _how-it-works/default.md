@@ -9,7 +9,7 @@ permalink: /how-it-works/
     <div class="container-left-8 ribbon-hero ribbon-hero-column">
       <h1>{{ page.title }}</h1>
       <p class="ribbon-hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
-      <p class="ribbon-hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#natural-resources">natural resources</a> are managed, and what <a href="#laws-governance">laws and governance</a> relate to the industry.</p>
+      <p class="ribbon-hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#state-tribal">state and tribal lands</a> are managed, and what <a href="#laws">laws and governance</a> relate to the industry.</p>
     </div>
     <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
       <figure class="ribbon-card-top">
@@ -17,7 +17,7 @@ permalink: /how-it-works/
           <img class="ribbon-card-image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
         </a>
       </figure>
-      <figcaption class="ribbon-card-bottom"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources are produced in the U.S.?</a></figcaption>
+      <figcaption class="ribbon-card-bottom"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources does the U.S. produce?</a></figcaption>
     </div>
   </div>
 </section>
@@ -140,7 +140,7 @@ permalink: /how-it-works/
     </section>
     
     <section class="container">
-      <h2 id="laws-governance" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
+      <h2 id="state-tribal" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>

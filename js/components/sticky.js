@@ -1,12 +1,13 @@
 (function(exports) {
+  'use strict';
 
-  var stickyfill = require('stickyfill')();
+  var sticky = require('stickyfill')();
 
   [].forEach.call(
-    document.querySelector('.sticky'),
-    stickyfill.add
+    document.querySelectorAll('.sticky'),
+    sticky.add
   );
 
-  exports.stickyfill = stickyfill;
+  exports.stickyfill = sticky;
 
 })(window);

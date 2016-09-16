@@ -88,14 +88,14 @@ nav_items:
     <div class="container-left-9">
 
       <section id="overview">
-        <h2 class="sticky state-page-overview">Overview</h2>
+        <h2>Overview</h2>
 
         {% include location/section-overview.html %}
 
       </section>
 
       <section id="production">
-        <h2 class="sticky">Production</h2>
+        <h2>Production</h2>
         {%
           include location/key-all-production-summary.html
           location_id=state_id
@@ -126,7 +126,7 @@ nav_items:
       {% include location/section-revenue.html %}
 
       <section id="disbursements" class="disbursements">
-        <h2 class="sticky">Disbursements</h2>
+        <h2>Disbursements</h2>
 
         {% include location/section-disbursements.html %}
 
@@ -144,7 +144,7 @@ nav_items:
 
       {% unless page.offshore == true %}
       <section id="economic-impact">
-        <h2 class="sticky">Economic impact</h2>
+        <h2>Economic impact</h2>
         {% if page.state_impact %}
           {{ page.state_impact | markdownify }}
 

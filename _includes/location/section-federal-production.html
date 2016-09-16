@@ -8,29 +8,27 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Production on federal land in {{ state_name }}</h3>
+    <h3 class="sticky">Production on federal land in {{ state_name }}</h3>
 
     {% if federal_products_num == 0 %}
-      <p>
-        ONRR collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource production on federal land in {{  state_name }} in {{ year }}.
-        <br>
-        <a href="{{site.baseurl}}/downloads/federal-production/" class="data-downloads">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-        </a>
-      </p>
+    <p>
+      ONRR collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource production on federal land in {{  state_name }} in {{ year }}.
+      <br>
+      <a href="{{ site.baseurl }}/downloads/federal-production/" class="data-downloads">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
+    </p>
     {% else %}
-      <div class="chart-selector-wrapper">
-
-        {% include year-selector.html year_range=year_range %}
-
-        <p class="chart-description">
-            ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
-            <br>
-            <a href="{{site.baseurl}}/downloads/federal-production/">
-              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-            </a>
-        </p>
-      </div>
+    <div class="chart-selector-wrapper">
+      {% include year-selector.html year_range=year_range %}
+      <p class="chart-description">
+          ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
+          <br>
+          <a href="{{ site.baseurl }}/downloads/federal-production/">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
+      </p>
+    </div>
     {% endif %}
 
     <div class="chart-list">

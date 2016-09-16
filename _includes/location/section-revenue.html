@@ -13,7 +13,7 @@
 
   <section id="federal-revenue">
 
-    <h3>Federal revenue</h3>
+    <h3{% if revenue_commodities %} class="sticky"{% endif %}>Federal revenue</h3>
 
     <p>
       Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.
@@ -22,9 +22,9 @@
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
       </a>
     </p>
-    
+
     <h4>Revenue from production on federal land by resource</h4>
-    
+
 {% if revenue_commodities %}
 
     <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
@@ -115,7 +115,7 @@
   <!-- #federal-revenue -->
 
   <section id="state-local-revenue" class="state revenue">
-    <h3>State revenue</h3>
+    <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State revenue</h3>
 
     {% if page.opt_in == true %}
       {% include location/opt-in/state-revenues.html location_id=state_id %}

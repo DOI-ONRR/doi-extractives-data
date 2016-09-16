@@ -124,11 +124,9 @@
   }
 
   tr > td > .reportee {
-    color: $neutral-gray;
     display: inline-block;
-    font-weight: $weight-book;
     text-align: left;
-    width: 25px;
+    width: 3em;
   }
 
   .bar { // specific to reconcilation

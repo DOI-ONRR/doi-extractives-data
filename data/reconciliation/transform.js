@@ -18,7 +18,7 @@ const parseNA = function(field) {
   };
 };
 
-const varianceKey = {
+const MATERIAL_VARIANCES = {
   'Royalties': {
     threshold: 1,
     floor: 100000,
@@ -92,13 +92,16 @@ module.exports = {
   },
   variance_dollars: parseNA(VARIANCE_DOLLARS),
   variance_percent: parseNA(VARIANCE_PERCENT),
-  variance_material: function(d) {
+  /*
+   * determine if this is a "material variance," according to the threshold and
+   * $ floor values specific to each type of revenue
+   */
+  variance_material: function isMaterialVariance(d) {
     var gov = Number(d[REPORTED_GOV]);
     var co = Number(d[REPORTED_CO]);
     var variance = Number(d[VARIANCE_PERCENT]);
     var delta = Math.abs(gov - co);
-    var threshold = varianceKey[d.Type].threshold;
-    var floor = varianceKey[d.Type].floor;
-    return (variance > threshold && delta > floor) ? 1 : 0;
+    var material = MATERIAL_VARIANCES[d.Type];
+    return (variance > material.threshold && delta > material.floor) ? 1 : 0;
   }
 };

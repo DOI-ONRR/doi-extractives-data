@@ -127,7 +127,7 @@ permalink: /how-it-works/
       <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
       <div class="container landing-section">
         <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Accounting standards</a></h3>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/oversight/">Audits and assurances</a></h3>
           <p>Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations.</p>
           <p><a href="{{site.baseurl}}/how-it-works/oversight/">Learn about oversight</a></p>
         </div>

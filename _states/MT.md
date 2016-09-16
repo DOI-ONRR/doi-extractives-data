@@ -38,7 +38,7 @@ state_saving_spending: |
 state_impact: |
     The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented  4.9% growth from 2013.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented 4.9% growth from 2013.
 ---
 
 <!-- State governance -->

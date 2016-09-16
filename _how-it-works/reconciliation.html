@@ -167,7 +167,11 @@ permalink: /how-it-works/reconciliation/
                 {% assign reported = revenue_type[1].reported %}
                 {% assign variance = revenue_type[1].variance %}
                 {% assign explanation = nil %}
-              <tr class="subtype">
+                {% if variance.material == 1 %}
+                  {% assign explanation = material_variance.footnotes[company_name][variance_index] %}
+                  {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
+                {% endif %}
+              <tr class="subtype{% if explanation %} has-material-variance{% endif %}">
                 <td class="name narrow">{{ revenue_type[0] }}</td>
                 <td class="value">
                   {% if reported.government == nil or reported.company == nil %}N/A
@@ -184,16 +188,14 @@ permalink: /how-it-works/reconciliation/
                   {% else %}
                     N/A
                   {% endif %}
-                  {% if variance.material == 1 %}
-                    {% assign explanation = site.data.material_variances[company_name][variance_index] %}
-                    {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
+                  {% if explanation %}
                   <strong aria-labelledby="{{ explanation_id | slugify }}">*</strong>
                   {% endif %}
                 </td>
               </tr>
                 {% if explanation %}
-              <tr>
-                <td class="material-variance" colspan="3">
+              <tr class="material-variance">
+                <td colspan="3">
                   <strong>*</strong>
                   <span id="{{ explanation_id | slugify }}">{{ explanation }}</span>
                 </td>

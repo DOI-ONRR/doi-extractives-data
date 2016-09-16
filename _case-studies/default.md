@@ -3,7 +3,7 @@ title: Overview | Case Studies
 layout: case-studies-landing
 permalink: /case-studies/
 nav_items:
-  - name: overview
+  - name: title
     title: Top
   - name: revenue-sustainability
     title: Revenue sustainability
@@ -17,9 +17,7 @@ resource: default
 selector: list
 ---
 
-## Overview
-
-While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities may be even more economically dependent on extractive industries.
+> While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities may be even more economically dependent on extractive industries.
 
 ## Revenue sustainability
 

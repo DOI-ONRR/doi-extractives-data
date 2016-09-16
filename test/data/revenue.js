@@ -182,7 +182,8 @@ describe('revenues by type', function() {
   });
 
   describe('national rollups', function() {
-    it('has the values that are in the civil penalties pivot table', function(done) {
+    it('has the values that are in the civil penalties pivot table',
+      function(done) {
       var dataSource = path.join(
         __dirname,
         '../../_data/national_revenues_by_type.yml'

@@ -8,7 +8,7 @@ module.exports = {
     var regionKey = {
       'Pacific': 'Southern California',
       'Gulf of Mexico': 'Western Gulf of Mexico'
-    }
+    };
 
     // Some of the Offshore Planning Areas are listed as
     // 'Right of Way'. When this is the case, associate it

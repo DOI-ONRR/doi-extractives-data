@@ -42,15 +42,19 @@
 }
 
 .subregions {
+  border: none;
   border-collapse: collapse;
   width: 100%;
 
-  &,
   td,
   th,
   tr {
-    border: 0;
-    border-bottom: 1px solid $neutral-gray;
+    border: none;
+  }
+
+  td,
+  th {
+    border-top: 1px solid $neutral-gray;
     padding-left: $base-padding-lite;
     padding-right: $base-padding-lite;
     text-align: left;
@@ -95,8 +99,13 @@
     }
   }
 
-  tr > *:last-child {
+  .has-material-variance > * {
+    padding-bottom: 0;
+  }
 
+  .material-variance > * {
+    border-top: none;
+    padding-top: 0;
   }
 
   tr {
@@ -113,6 +122,7 @@
         padding-left: 0;
       }
     }
+
     .variance,
     .centered {
       text-align: center;

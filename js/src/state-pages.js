@@ -13,11 +13,10 @@
 
   require('../components/sticky.js');
 
-  var OpenListNav = require('../components/open-list-nav.js');
-
   // exporting instance of OpenListNav because openListNav is
   // referenced in the markup:
   // _includes/hash_selector.html
+  var OpenListNav = require('../components/open-list-nav.js');
   exports.openListNav = new OpenListNav();
 
 })(window);

@@ -9,6 +9,11 @@
 
   [is="bar-chart-table"] {
     @extend .table-basic;
+
+    th {
+      line-height: 1.1;
+      vertical-align: bottom;
+    }
   }
 }
 

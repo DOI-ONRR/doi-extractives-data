@@ -33,6 +33,8 @@ state_revenue: |
 
     Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on unorganized lands. In 2015, unorganized territory petroleum property taxes totaled $75 million, or 60% of the total petroleum property taxes collected by the state.
 state_revenue_sustainability: |
+    ![Alaska revenues compared to Alaska revenues from oil and gas for 2010-2018. 2016-18 figures are projected. Total state revenues were highest in 2011, at nearly $20 billion, and ranged from $13.5 billion to $19.5 billion between 2012 and 2014 before dropping to just under $9 billion in 2015. The total petroleum based revenue amount rose from just over $6 billion in 2010 to $10 billion in 2012, then fell steadily to under $3 billion in 2015. For 2016-2018, revenues from petroleum based revenue is projected to drop to about $1.5 billion, then rise to just under $2 billion, while total revenues are expected to rise steadily to just under $11 billion. The average price of oil is listed under the chart for context. The price of oil was highest in 2011 and 2012, at $99 per barrel, and lowest in 2015, when it dropped to just $41.](../../img/AK_revenue_sustainability.svg)
+
     In 2015, oil and gas revenue streams contributed $2.4 billion to Alaska general fund revenues and accounted for 28% of Alaska’s total revenue.
 
     Increased oil prices in the early 2010’s caused a spike in annual revenue in Alaska, and the drop in crude oil prices in late 2014 caused a significant decline in the state’s petroleum-related revenue streams. The Alaska tax division predicts that oil and gas revenue will continue to decline to between 15% and 17% of total state revenues in the coming years.

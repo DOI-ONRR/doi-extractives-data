@@ -18,9 +18,7 @@ nav_items:
       - name: federal-revenue
         title: Federal revenue
       - name: state-local-revenue
-        title: State and local revenue
-      - name: tax-expenditures
-        title: Tax expenditures
+        title: State revenue
   - name: disbursements
     title: Disbursements
     subnav_items:
@@ -103,7 +101,7 @@ nav_items:
           year=year
         %}
         <p>
-          The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}&rsquo;s energy production and usage</a>.
+          The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}’s energy production and usage</a>.
         </p>
         {% if page.state_production %}
           {{ page.state_production | markdownify }}
@@ -136,9 +134,7 @@ nav_items:
           {% if page.opt_in == true %}
             {% include location/opt-in/state-disbursements.html location_id=state_id %}
           {% else %}
-            <p>
-              We don’t have detailed data about how state or local governments distribute revenue from natural resource extraction.
-            </p>
+            <p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
           {% endif %}
         </section>
 

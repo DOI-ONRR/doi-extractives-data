@@ -56,7 +56,11 @@
       ${{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
   </td>
-  <td rowspan="2" data-value="{{
-    values['Other Revenues'][year] | default: 0
-  }}"><span class="text table-arrow_box-subheader-value">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</span></td>
+
+  {% assign other_total = values['Other Revenues'][year] | default: 0
+    | plus: revenue_types.Oil['Other Revenues'][year]
+    | plus: revenue_types.Gas['Other Revenues'][year]
+    | plus: revenue_types.NGL['Other Revenues'][year]
+  %}
+  <td rowspan="2" data-value="{{ other_total }}"><span class="text table-arrow_box-subheader-value">${{ other_total | intcomma }}</span></td>
 </tr>

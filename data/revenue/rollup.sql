@@ -150,7 +150,7 @@ CREATE TABLE offshore_area_revenue AS
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, commodity, region_id, area_id;
+        year, commodity, region_id, area_id, area_name, revenue_type;
 
 -- then create regional offshore rollups as an aggregate view
 DROP TABLE IF EXISTS offshore_region_revenue;
@@ -162,7 +162,7 @@ CREATE TABLE offshore_region_revenue AS
         SUM(revenue) AS revenue
     FROM offshore_area_revenue
     GROUP BY
-        year, region_id, commodity
+        year, region_id, commodity, revenue_type
     ORDER BY
         year, revenue DESC;
 
@@ -172,7 +172,7 @@ CREATE TABLE offshore_region_revenue_type AS
     SELECT
         year, region_id, commodity, revenue_type,
         SUM(revenue) AS revenue
-    FROM offshore_region_revenue
+    FROM offshore_area_revenue
     GROUP BY
         year, region_id, commodity, revenue_type;
 

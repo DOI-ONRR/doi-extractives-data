@@ -1,8 +1,8 @@
 ---
-title: 'Oversight | How it Works'
-title_display: Oversight
+title: 'Audits and Assurances | How it Works'
+title_display: Revenue data standards, audits, and assurances
 layout: content
-permalink: /how-it-works/oversight/
+permalink: /how-it-works/audits-and-assurances/
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

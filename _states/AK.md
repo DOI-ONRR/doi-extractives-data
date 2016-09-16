@@ -4,7 +4,6 @@ title: Alaska
 FIPS: '02'
 
 opt_in: true
-priority: true
 
 state_revenue_year: 2015
 

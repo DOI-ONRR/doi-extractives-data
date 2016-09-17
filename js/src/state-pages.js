@@ -5,6 +5,7 @@
   require('../components/eiti-data-map.js');
   require('../components/bar-chart-table.js');
   require('../components/eiti-bar-chart.js');
+  require('../components/year-value.js');
   require('../components/year-switcher-section.js');
   require('../components/eiti-data-map-table.js');
   require('../components/eiti-tooltip-wrapper.js');

@@ -60,12 +60,12 @@
             <span class="caption-data">
               In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
               there were
-              <span class="eiti-bar-chart-y-value" data-format=",">
-                {{ jobs[year].jobs | intcomma }}
-              </span>
+              <span class="eiti-bar-chart-y-value"
+                data-format=",">{{ jobs[year].jobs | intcomma }}</span>
               jobs in the extractive industries in
               {{ state_name }}, and they accounted for 
-              {{ jobs_percent | percent }}% 
+              <year-value year="{{ year }}" data-year-values='{{ jobs | map_hash: "percent" | jsonify }}'
+                empty="--">{{ jobs_percent | percent }}</year-value>%
               of statewide employment.
             </span>
             <span class="caption-no-data" aria-hidden="true">

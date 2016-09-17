@@ -52,14 +52,16 @@
           <span class="caption-data">
             In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
             extractive industries accounted for
-            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or
-            {{ gdp[year].percent | percent }}%
+            <span class="eiti-bar-chart-y-value"
+              data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or
+            <year-value year="{{ year }}" data-year-values='{{ gdp | map_hash: "percent" | jsonify }}'
+              empty="--">{{ gdp[year].percent | percent }}</year-value>%
             of {{ state_name }}’s GDP.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-              There is no data for {{ state_name }} in
-              <span class="eiti-bar-chart-x-value">{{ year }}</span>
-            </span>
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
         </figcaption>
       </figure><!-- /.chart -->
 

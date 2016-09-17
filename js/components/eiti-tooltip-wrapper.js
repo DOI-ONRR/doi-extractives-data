@@ -49,10 +49,8 @@
         tooltipText = tooltip.append('p');
       }
 
-      // clear <title> text
-      // if no javascript runs, <title> will serve as the tooltip
-      // otherwise, clear it so that it doesn't interfere with
-      // this tooltip
+      // if <title> tags do not have 'desc' or 'alt' attributes
+      // use text instead
       titles
         .attr('desc', function(d){
           var self = d3.select(this);
@@ -62,6 +60,10 @@
           var self = d3.select(this);
           return self.attr('alt') || self.text();
         })
+        // clear <title> text
+        // if no javascript runs, <title> will serve as the tooltip
+        // otherwise, clear it so that it doesn't interfere with
+        // this tooltip
         .text('');
     };
 
@@ -77,7 +79,9 @@
         return title.attr('desc');
       });
 
-      tooltip
+      // before rendering the tooltip, ensure that there is text
+      if (tooltipText.text()) {
+        tooltip
         .call(show)
         .attr('aria-label', function() {
           return title.attr('alt');
@@ -106,6 +110,8 @@
             return pixelize(y);
           }
         });
+      }
+
     };
 
     var mouseout = function() {

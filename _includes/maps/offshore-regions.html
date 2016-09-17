@@ -2,8 +2,7 @@
 {% for region in site.offshore_regions %}
   {% if include.href %}<a xlink:href="{{ site.baseurl }}{{ include.href | format_url: region }}">{% endif %}
   <g class="state offshore-area feature" fill><!--- FIXME: nix fill attribute -->
-    <title desc="{{ region.title }}"
-           alt="{{ region.title }}">{{ state.title }}</title>
+    <title>{{ state.title }}</title>
     <use xlink:href="{{ _svg_path }}#{{ region.id }}"  aria-label="{{ region.title }}"></use>
   </g>
   {% if include.href %}</a>{% endif %}

@@ -46,7 +46,7 @@
 .landing-section > div {
   @include span-columns(12);
 
-  @include respond-to(medium-up) {
+  @include respond-to(huge-up) {
     @include span-columns(6);
     @include omega(2n);
   }
@@ -85,7 +85,7 @@
 
   p {
     float: left;
-    width: 59%;
+    width: 57%;
   }
 }
 
@@ -97,7 +97,7 @@
 
 .landing-coal {
   svg {
-    margin-right: 10px;
+    margin-right: 0;
     margin-top: 30px;
   }
 }

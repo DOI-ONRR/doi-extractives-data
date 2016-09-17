@@ -29,12 +29,12 @@
   var barHeight = bottom - top;
 
   var extentPercent = 0.05; // 5%
-  var extentMargin = barHeight * extentPercent;
-  var extentLessTop = top;
+  extentMargin = barHeight * extentPercent;
   top = top + extentMargin;
   var extentTop = top - extentMargin;
 
-  var fullHeight = height + textMargin + extentMargin + tickPadding - (2 * baseMargin);
+  var fullHeight = height + textMargin + extentMargin
+    + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
@@ -85,8 +85,6 @@
         .key(function(d) { return d.x; })
         .rollup(function(d) { return d[0]; })
         .entries(data);
-
-
     } else {
       values = Object.keys(data).reduce(function(map, key) {
         map[key] = {x: +key, y: data[key]};
@@ -169,10 +167,10 @@
         var baseHeight = isUndefined || isZero || isWithheld
           ? 0
           : 2;
-
-        return d.height = height(d.y) > baseHeight
+        d.height = height(d.y) > baseHeight
           ? height(d.y)
           : baseHeight;
+        return d.height;
       })
       .attr('y', function(d) {
         return barHeight - d.height;
@@ -213,11 +211,11 @@
 
     // conditional used as proxy for having an extent line
     if (this.hasAttribute('data-units') && +ymax > 0) {
-    var extentLine = svg.append('g')
-        .attr('class', 'extent-line')
+      var extentLine = svg.append('g')
+        .attr('class', 'extent-line');
 
-      var dataUnits = this.getAttribute('data-units'),
-      dataFormat = this.getAttribute('data-format') || '';
+      var dataUnits = this.getAttribute('data-units');
+      var dataFormat = this.getAttribute('data-format') || '';
 
       if (dataUnits.indexOf('$') > -1) {
         dataFormat = eiti.format.transform(
@@ -247,7 +245,7 @@
         .call(axis);
 
     function isInSet (year, vals) {
-      var vals = vals || values;
+      vals = vals || values;
       if (vals[year] !== undefined) {
         return vals[year].y !== null;
       } else {
@@ -273,7 +271,7 @@
       text = [text, units].join(' ');
     }
     return text;
-  }
+  };
 
   var hideCaption = function(selection, data, noData, withheld) {
     selection.select('.caption-data')
@@ -282,7 +280,7 @@
       .attr('aria-hidden', noData);
     selection.select('.caption-withheld')
     .attr('aria-hidden', withheld);
-  }
+  };
 
   var updateSelected = function(selection, x, hover) {
     var index;
@@ -310,9 +308,14 @@
 
     var id = selection.attr('aria-controls');
     if (id) {
-      var output = d3.select('#' + id)
+      var output = d3.select('#' + id);
+
       output.selectAll('.eiti-bar-chart-x-value')
         .text(value.x);
+
+      output.selectAll('year-value')
+        .attr('year', value.x);
+
       var y = output.selectAll('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
@@ -324,7 +327,7 @@
           hideCaption(output, true, false, true);
         } else {
           hideCaption(output, false, true, true);
-          y.text(formatUnits(format(value.y),units));
+          y.text(formatUnits(format(value.y), units));
         }
       }
 

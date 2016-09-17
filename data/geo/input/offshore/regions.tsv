@@ -1,5 +1,5 @@
-id	name
-alaska	Alaska
-atlantic	Atlantic
-gulf	Gulf
-pacific	Pacific
+id	name	long_name
+alaska	Alaska	Alaska
+atlantic	Atlantic	Atlantic
+gulf	Gulf	Gulf of Mexico
+pacific	Pacific	Pacific

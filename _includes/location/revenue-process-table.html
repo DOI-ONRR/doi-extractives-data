@@ -13,13 +13,13 @@
 {% assign commodity_groups = site.data.commodities.groups %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}
-{% assign other_list = commodity_groups.other.commodities %}
+{% assign other_product_list = commodity_groups.other.commodities %}
 
 {% assign oilgas_exists = false %}
 {% assign coal_exists = false %}
 {% assign geothermal_exists = false %}
 {% assign wind_exists = false %}
-{% assign other_exists = false %}
+{% assign other_product_exists = false %}
 {% assign all_exists = false %}
 
 {% for commodity in revenue_types %}
@@ -39,13 +39,13 @@
     {% endfor %}
   {% endif %}
 
-  {% if other_list contains commodity_name %}
-    {% for other_name in other_list %}
-      {% if commodity_name == other_name %}
+  {% if other_product_list contains commodity_name %}
+    {% for other_product_name in other_product_list %}
+      {% if commodity_name == other_product_name %}
         {% for type in commodity_values %}
           {% assign value = type[1][include.year] %}
           {% if value %}
-            {% assign other_exists = true %}
+            {% assign other_product_exists = true %}
             {% break %}
           {% endif %}
         {% endfor %}
@@ -285,7 +285,7 @@
       {% endfor %}
     {% endif %}
 
-    {% if other_exists == true %}
+    {% if other_product_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Other products
       </td></tr>
@@ -344,6 +344,7 @@
               {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}
+            <!-- insert other row into this include!!! -->
           </tbody>
         {% endif %}
       {% endfor %}

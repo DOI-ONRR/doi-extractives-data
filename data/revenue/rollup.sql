@@ -37,6 +37,28 @@ CREATE TABLE state_revenue_type AS
         year, state, commodity,
         revenue_type;
 
+-- update NULL columns in civil penalties table
+UPDATE civil_penalties_revenue
+SET
+    product = 'None',
+    state = 'None'
+WHERE
+    product IS NULL AND
+    state IS NULL AND
+    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
+
+-- add data from civil penalties table
+INSERT INTO state_revenue_type
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    product AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM civil_penalties_revenue
+GROUP BY
+    year, state, commodity, revenue_type;
+
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
     (year, state, commodity, revenue_type, revenue)
@@ -45,7 +67,7 @@ SELECT
     'All' AS commodity,
     revenue_type,
     SUM(revenue) AS revenue
-FROM county_revenue
+FROM state_revenue_type
 WHERE commodity != 'All'
 GROUP BY
     year, state, revenue_type;
@@ -57,7 +79,7 @@ SELECT
     year, state, commodity,
     'All' AS revenue_type,
     SUM(revenue) AS revenue
-FROM county_revenue
+FROM state_revenue_type
 GROUP BY
     year, state, commodity;
 
@@ -96,7 +118,7 @@ UPDATE offshore_revenue
 SET product = commodity
 WHERE product IS NULL;
 
---- add some more useful info for inspection fees
+-- add some more useful info for inspection fees
 UPDATE offshore_revenue
 SET
     commodity = 'None',
@@ -107,6 +129,32 @@ WHERE
     planning_area IS NULL AND
     region IS NULL AND
     revenue_type = 'Inspection Fees';
+
+-- place Pacific Right of Way data in Southern California
+UPDATE offshore_revenue
+SET
+    planning_area = 'Southern California'
+WHERE
+    planning_area = 'Right of Way' AND
+    region = 'Pacific';
+
+
+-- then create regional offshore rollups as an aggregate view
+DROP TABLE IF EXISTS offshore_region_revenue;
+CREATE TABLE offshore_region_revenue AS
+    SELECT
+        year,
+        COALESCE(region.name, 'None') AS region_id,
+        commodity, revenue_type,
+        SUM(revenue) AS revenue
+    FROM offshore_revenue AS offshore
+    LEFT JOIN offshore_regions AS region
+    ON
+        offshore.region = region.long_name
+    GROUP BY
+        year, region_id, commodity, revenue_type
+    ORDER BY
+        year, revenue DESC;
 
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
@@ -152,27 +200,13 @@ CREATE TABLE offshore_area_revenue AS
     GROUP BY
         year, commodity, region_id, area_id, area_name, revenue_type;
 
--- then create regional offshore rollups as an aggregate view
-DROP TABLE IF EXISTS offshore_region_revenue;
-CREATE TABLE offshore_region_revenue AS
-    SELECT
-        year,
-        COALESCE(region_id, 'None') AS region_id,
-        commodity, revenue_type,
-        SUM(revenue) AS revenue
-    FROM offshore_area_revenue
-    GROUP BY
-        year, region_id, commodity, revenue_type
-    ORDER BY
-        year, revenue DESC;
-
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS offshore_region_revenue_type;
 CREATE TABLE offshore_region_revenue_type AS
     SELECT
         year, region_id, commodity, revenue_type,
         SUM(revenue) AS revenue
-    FROM offshore_area_revenue
+    FROM offshore_region_revenue
     GROUP BY
         year, region_id, commodity, revenue_type;
 

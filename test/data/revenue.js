@@ -88,7 +88,14 @@ describe('revenues by type', function() {
               continue;
             }
             for (type in stateRevenueByType[state][commodity]) {
-              if (type === 'All') {
+              // Do not count rows with type Civil Penalties or Other Revenues
+              // as they originate from data/revenue/civil-penalties.js
+              // Test Civil Penalties in the national rollups
+              if (
+                type === 'All' ||
+                type == 'Civil Penalties' ||
+                type == 'Other Revenues'
+              ) {
                 continue;
               }
               for (year in stateRevenueByType[state][commodity][type]) {
@@ -117,62 +124,112 @@ describe('revenues by type', function() {
       });
     });
 
-  });
+    it('properly sums up "All" revenues (by commodity)', function() {
+      var dataSource = path.join(
+        __dirname,
+        '../../_data/state_revenues.yml'
+      );
 
-  it('properly sums up "All" revenues (by commodity)', function() {
-    var dataSource = path.join(
-      __dirname,
-      '../../_data/state_revenues.yml'
-    );
+      var stateRevenuesByCommodity = yaml.safeLoad(
+        fs.readFileSync(dataSource, 'utf8')
+      );
 
-    var stateRevenuesByCommodity = yaml.safeLoad(
-      fs.readFileSync(dataSource, 'utf8')
-    );
+      for (var state in stateRevenuesByCommodity) {
+        var commodities = stateRevenuesByCommodity[state].commodities;
+        var allByYear = {};
+        var totalsByYear = {};
+        var count = 0;
 
-    for (var state in stateRevenuesByCommodity) {
-      var commodities = stateRevenuesByCommodity[state].commodities;
-      var allByYear = {};
-      var totalsByYear = {};
-      var count = 0;
+        var commodity;
+        var year;
+        var difference;
 
-      var commodity;
-      var year;
-      var difference;
-
-      for (commodity in commodities) {
-        for (year in commodities[commodity]) {
-          var revenue = commodities[commodity][year].revenue;
-          if (commodity === 'All') {
-            allByYear[year] = revenue;
-          } else {
-            totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
-            count++;
+        for (commodity in commodities) {
+          for (year in commodities[commodity]) {
+            var revenue = commodities[commodity][year].revenue;
+            if (commodity === 'All') {
+              allByYear[year] = revenue;
+            } else {
+              totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
+              count++;
+            }
           }
         }
-      }
 
-      // compare yearly totals, using the number of commodities as a standin
-      // for the acceptable rounding error (+/- 1 for each)
-      for (year in totalsByYear) {
-        difference = Math.abs(allByYear[year] - totalsByYear[year]);
-        assert.ok(
-          difference <= count,
-          'abs(' + allByYear[year] + ' - ' +
-            totalsByYear[year] + ' = ' + difference + ')'
-        );
-      }
+        // compare yearly totals, using the number of commodities as a standin
+        // for the acceptable rounding error (+/- 1 for each)
+        for (year in totalsByYear) {
+          difference = Math.abs(allByYear[year] - totalsByYear[year]);
+          assert.ok(
+            difference <= count,
+            'abs(' + allByYear[year] + ' - ' +
+              totalsByYear[year] + ' = ' + difference + ')'
+          );
+        }
 
-      // now check the keys for allByYear just to be sure that we don't have
-      // extra years in there
-      for (year in allByYear) {
-        difference = Math.abs(allByYear[year] - totalsByYear[year]);
-        assert.ok(
-          difference <= count,
-          'abs(' + allByYear[year] + ' - ' +
-            totalsByYear[year] + ' = ' + difference + ')'
-        );
+        // now check the keys for allByYear just to be sure that we don't have
+        // extra years in there
+        for (year in allByYear) {
+          difference = Math.abs(allByYear[year] - totalsByYear[year]);
+          assert.ok(
+            difference <= count,
+            'abs(' + allByYear[year] + ' - ' +
+              totalsByYear[year] + ' = ' + difference + ')'
+          );
+        }
       }
-    }
+    });
   });
 
+  describe('national rollups', function() {
+    it('has the values that are in the civil penalties pivot table',
+      function(done) {
+      var dataSource = path.join(
+        __dirname,
+        '../../_data/national_revenues_by_type.yml'
+      );
+
+      var pivotSource = path.join(
+        __dirname,
+        '../../data/revenue/civil-penalties.tsv'
+      );
+
+      var nationalRevenueByType = yaml.safeLoad(
+        fs.readFileSync(dataSource, 'utf8')
+      );
+
+      var testRow = function(d, i) {
+        // Only test Civil Penalties as Other Revenues is combined with
+        // figures from the pivot table.
+        if (d['Revenue Type'].match(/Civil Penalties$/)) {
+          var expected = parse.dollars(d.Total);
+          if (isNaN(expected)) {
+            assert.ok(false, 'got NaN revenue for: ' + JSON.stringify(d));
+          }
+          var actual;
+          try {
+            actual = nationalRevenueByType.US.All[
+              d['Revenue Type']
+            ][
+              d.CY
+            ];
+          } catch (error) {
+            assert.ok(false, 'no data for: ' + JSON.stringify(d));
+          }
+          var difference = expected - actual;
+          assert.ok(
+            Math.abs(difference) <= 1,
+            (actual + ' != ' + expected + ' @ ' + (i + 1))
+          );
+        }
+      };
+
+      loadPivot(pivotSource, function(error, rows) {
+        rows.forEach(testRow);
+        done();
+      });
+
+
+    });
+  });
 });

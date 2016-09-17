@@ -570,7 +570,8 @@ tables/offshore_planning_areas: data/geo/input/offshore/areas.tsv
 
 tables/revenue: \
 	tables/county_revenue \
-	tables/offshore_revenue
+	tables/offshore_revenue \
+	tables/civil_penalties_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
 
 tables/offshore_revenue: data/revenue/offshore.tsv
@@ -586,6 +587,13 @@ tables/county_revenue: data/revenue/onshore.tsv
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
+	rm $$tmp
+
+tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
+	@$(call drop-table,civil_penalties_revenue)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n civil_penalties_revenue -i $$tmp && \
 	rm $$tmp
 
 tables/federal_production: data/federal-production/federal-production.tsv

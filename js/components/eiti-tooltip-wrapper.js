@@ -53,7 +53,16 @@
       // if no javascript runs, <title> will serve as the tooltip
       // otherwise, clear it so that it doesn't interfere with
       // this tooltip
-      titles.text('');
+      titles
+        .attr('desc', function(d){
+          var self = d3.select(this);
+          return self.attr('desc') || self.text();
+        })
+        .attr('alt', function(d){
+          var self = d3.select(this);
+          return self.attr('alt') || self.text();
+        })
+        .text('');
     };
 
     var update = function() {

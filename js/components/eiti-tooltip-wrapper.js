@@ -52,11 +52,11 @@
       // if <title> tags do not have 'desc' or 'alt' attributes
       // use text instead
       titles
-        .attr('desc', function(d){
+        .attr('desc', function(){
           var self = d3.select(this);
           return self.attr('desc') || self.text();
         })
-        .attr('alt', function(d){
+        .attr('alt', function(){
           var self = d3.select(this);
           return self.attr('alt') || self.text();
         })

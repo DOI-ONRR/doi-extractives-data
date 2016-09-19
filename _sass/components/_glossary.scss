@@ -10,6 +10,7 @@ $term-width-max: 220px;
 
 #glossary {
   width: 100%;
+  z-index: $z-sky;
 
   @include respond-to(tiny-up) {
     width: $drawer-width;

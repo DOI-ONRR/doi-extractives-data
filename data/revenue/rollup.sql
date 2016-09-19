@@ -156,6 +156,51 @@ CREATE TABLE offshore_region_revenue AS
     ORDER BY
         year, revenue DESC;
 
+-- rollup offshore region revenue by revenue_type
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    commodity,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id, commodity;
+
+-- rollup offshore region revenue by commodity
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    'All' AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id, revenue_type;
+
+-- rollup offshore region revenue by commodity and revenue_type
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    'All' AS commodity,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id;
+
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
 DROP TABLE IF EXISTS regional_revenue;

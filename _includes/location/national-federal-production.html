@@ -25,6 +25,8 @@
 
     <div class="chart-list">
 
+    {% assign withheld_products = '' | split: '' %}
+
     {% for product in federal_products %}
 
       {% assign all_withheld = true %}
@@ -34,10 +36,14 @@
           {% break %}
         {% endif %}
       {% endfor %}
-      {% if all_withheld %}<!-- all withheld: {{ product[0] }} -->{% continue %}{% endif %}
+      {% assign product_name = product[1].name | default: product[0] %}
+      {% if all_withheld %}
+        <!-- all withheld: {{ product[0] }} -->
+        {% assign withheld_products = withheld_products | push: product_name %}
+        {% continue %}
+      {% endif %}
 
       {% assign product_slug = product[0] | slugify %}
-      {% assign product_name = product[1].name | default: product[0] %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year] %}
       {% assign units = product[1].units | downcase %}
@@ -84,6 +90,19 @@
 
       </section>
     {% endfor %}
+
+    {% if withheld_products.size > 0 %}
+      <section id="national-federal-production-withheld" class="product chart-item">
+        <h4 class="chart-title">
+          <span>No data reported</span>
+        </h4>
+        <ul>
+          {% for product in withheld_products %}
+          <li>{{ product }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
 
     </div><!-- /.chart-list -->
 

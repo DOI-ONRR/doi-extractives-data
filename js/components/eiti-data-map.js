@@ -298,7 +298,7 @@
           svgContainer.style('padding-bottom', percentage);
           // end trim
           if (init) {
-            this.setYear('2015')
+            this.setYear('2015');
           }
         }}
       }

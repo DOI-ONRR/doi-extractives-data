@@ -91,20 +91,16 @@
       </section>
     {% endfor %}
 
-    {% if withheld_products.size > 0 %}
-      <section id="national-federal-production-withheld" class="product chart-item">
-        <h4 class="chart-title">
-          <span>No data reported</span>
-        </h4>
-        <ul>
-          {% for product in withheld_products %}
-          <li>{{ product }}</li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
-
     </div><!-- /.chart-list -->
+
+    {% if withheld_products.size > 0 %}
+    <section id="national-federal-production-withheld" class="product chart-item">
+      <h3>Withheld production data</h3>
+      <p>Data was {{ 'withheld' | term }} for
+        {% for product in withheld_products %}{% if forloop.last %} and {% endif %}
+        <span>{{ product }}</span>{% unless forloop.last %},{% endunless %}{% endfor %}.</p>
+    </section>
+    {% endif %}
 
   </section>
 

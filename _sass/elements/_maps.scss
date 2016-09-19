@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement, SelectorDepth
+// scss-lint:disable QualifyingElement, SelectorDepth, DeclarationOrder
 svg.map {
   background: none;
   box-sizing: border-box;
@@ -142,7 +142,7 @@ svg.ownership {
 }
 
 svg.case_studies {
-    @include svg-use(
+  @include svg-use(
     '.feature.offshore-area',
     '.feature.state'
   ) {

@@ -8,6 +8,7 @@
     var maps = root.selectAll('eiti-data-map');
 
     var mapTables = root.selectAll('.eiti-data-map-table');
+    var mapTableComponents = root.selectAll('figure[is="eiti-data-map-table"]');
 
     var chartTables = mapTables.selectAll('table[is="bar-chart-table"]');
 
@@ -23,6 +24,11 @@
         this.setYear(year);
         this.update();
       });
+
+      mapTableComponents.each(function() {
+        this.clearAllFields();
+      });
+
       yearValues.attr('year', year);
     };
 

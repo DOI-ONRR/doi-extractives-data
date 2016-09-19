@@ -106,6 +106,8 @@
             : false;
         });
 
+      sentencesData.attr('aria-hidden', true);
+
       sentencesData.select('.withheld')
         .attr('aria-hidden', function(d) {
           return d === WITHHELD_FLAG
@@ -191,6 +193,13 @@
       .classed('selected', true)
       .select('[data-sentence]')
         .attr('aria-hidden', false);
+  };
+
+  var hide = function() {
+    var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false)
+      .classed('selected', false);
   };
 
   var highlight = function(fips, event) {
@@ -373,6 +382,8 @@
         setYear: {value: setYear},
 
         show: {value: show},
+
+        hide: {value: hide},
 
         highlight: {value: highlight},
 

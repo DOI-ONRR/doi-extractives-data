@@ -4,6 +4,12 @@
 //
 // Styleguide blocks.case-studies.content
 
+.case_studies-frame {
+  .ribbon-hero {
+    padding-bottom: 0.625rem;
+  }
+}
+
 .case_studies_content-icon {
   @include heading('para-md');
 

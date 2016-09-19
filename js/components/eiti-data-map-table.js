@@ -42,7 +42,7 @@
       unselectedCounties.call(moveToBack);
 
       if (fips) {
-        counties.each(function(d, i){
+        counties.each(function(){
           var county = d3.select(this);
           var numbers = typeof(county.attr('data-fips')) === 'number' ||
             typeof(fips) === 'number';
@@ -117,7 +117,7 @@
       });
     };
 
-    var clearFields = function(context, event) {
+    var clearFields = function() {
       highlightCounty(null, 'mouseout');
 
       chartTables.each(function(){
@@ -142,7 +142,7 @@
       });
 
     svg.on('mouseout.county', function(){
-      clearFields(this);
+      clearFields();
     });
   };
 

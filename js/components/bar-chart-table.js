@@ -200,7 +200,7 @@
     rows
       .classed('mouseover', false)
       .classed('selected', false);
-  }
+  };
 
   var highlight = function(fips, event) {
     var rows = d3.select(this).selectAll('tbody > tr');

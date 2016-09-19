@@ -12,11 +12,5 @@
 // include site specific base styles
 @import 'base';
 
-// include fonts (and @import font-face declarations from /css/fonts)
-@import 'fonts';
-
-// include FontAwesome Sass variables, etc.
-@import 'lib/font-awesome/font-awesome';
-
 // include print stylesheet overrides
 @import 'print';

@@ -11,7 +11,6 @@
     this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 
-    console.log(this)
     var year = this.getAttribute('year') || DEFAULT_YEAR;
     this.setYear(year);
     this.update();
@@ -70,7 +69,7 @@
           return format(value);
         }
       }
-      console.log('year---', year)
+
       var year = year || '2015';
       var bars = root.selectAll('[data-value]');
       var texts = root.selectAll('[data-value-text]');

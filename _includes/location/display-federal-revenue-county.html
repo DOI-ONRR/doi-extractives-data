@@ -13,7 +13,8 @@
     {% assign revenue_amount = county[1].revenue[include.year] %}
     {% assign years_values =  county[1].revenue %}
     {% assign fips = county[0] | pad_left: 5, '0' %}
-    {% if revenue_amount > 0 %}
+
+    {% if years_values != null %}
     <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}'>
       <td><div class='swatch'
                  data-value-swatch='{{ revenue_amount }}'

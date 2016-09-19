@@ -4,6 +4,7 @@
 {% assign caption = include.caption %}
 {% assign toggle = include.toggle %}
 {% assign units = include.units %}
+{% assign year = include.year | default: year | default: '2015' %}
 
 {% if _inherit_width %}
   {% assign __width = '' %}
@@ -60,7 +61,6 @@
           {% assign fips = county[0] | pad_left: 5, '0' %}
           {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
           {% assign value = county[1] | get: keys %}
-
           {% assign year_values = null %}
           {% if include.years %}
             {% assign year_values = county[1] | get: include.years %}

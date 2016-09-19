@@ -4,6 +4,7 @@
 {% assign caption = include.caption %}
 {% assign toggle = include.toggle %}
 {% assign units = include.units %}
+{% assign year = include.year | default: year | default: '2015' %}
 
 {% if _inherit_width %}
   {% assign __width = '' %}

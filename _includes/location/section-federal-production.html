@@ -94,6 +94,7 @@
 
             {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
             <figure is="eiti-data-map-table">
+
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
@@ -114,6 +115,7 @@
                   inherit_width=true
                   caption=caption
                   toggle=toggle
+                  year=year
                 %}
 
 

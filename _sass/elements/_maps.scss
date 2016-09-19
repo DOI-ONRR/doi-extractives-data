@@ -7,12 +7,6 @@ svg.map {
   padding: 1em;
   width: 100%;
 
-  use {
-    fill: inherit;
-    stroke: inherit;
-    stroke-width: inherit;
-  }
-
   .mesh use {
     fill: none;
     pointer-events: none;

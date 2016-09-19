@@ -99,7 +99,6 @@
               return true;
             }
           });
-          console.log(this.marks.data())
 
           var root = d3.select(this);
           var truthy = hasData.indexOf(true) > -1;

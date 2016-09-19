@@ -29,8 +29,6 @@
 
 <div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
   style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
-  <!-- county-map year: {{ year }} -->
-  <!-- county-map include.year: {{ include.year }} -->
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
@@ -63,8 +61,6 @@
           {% assign fips = county[0] | pad_left: 5, '0' %}
           {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
           {% assign value = county[1] | get: keys %}
-          <!-- county: {{ county }} -->
-          <!-- value: {{ value }} -->
           {% assign year_values = null %}
           {% if include.years %}
             {% assign year_values = county[1] | get: include.years %}

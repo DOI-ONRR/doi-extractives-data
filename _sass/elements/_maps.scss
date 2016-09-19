@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement, SelectorDepth
+// scss-lint:disable QualifyingElement, SelectorDepth, DeclarationOrder
 svg.map {
   background: none;
   box-sizing: border-box;
@@ -7,25 +7,21 @@ svg.map {
   padding: 1em;
   width: 100%;
 
-  use {
-    fill: inherit;
-    stroke: inherit;
-    stroke-width: inherit;
-  }
-
-  .mesh use {
+  @include svg-use('.mesh') {
     fill: none;
     pointer-events: none;
     stroke: $neutral-gray;
     stroke-width: 0.5;
   }
 
-  .states.features use,
-  .regions.features use {
+  @include svg-use(
+    '.states.features',
+    '.regions.features'
+  ) {
     fill: $light-gray;
   }
 
-  .feature.offshore-area use {
+  @include svg-use('.feature.offshore-area') {
     fill: $greenest-land;
 
     &:hover,
@@ -35,12 +31,14 @@ svg.map {
     }
   }
 
-  .feature:not([fill]) use {
+  @include svg-use('.feature:not([fill])') {
     cursor: default;
     fill-opacity: 0;
   }
 
-  .feature[data-value]:not([fill]):not([data-value='null']) use {
+  @include svg-use(
+    'feature[data-value]:not([fill]):not([data-value=null])'
+  ) {
     cursor: pointer;
     fill-opacity: 0;
 
@@ -51,24 +49,26 @@ svg.map {
     }
   }
 
-  .feature[fill] use {
+  @include svg-use('.feature[fill]') {
     fill-opacity: 1;
   }
 
-  .counties.features use {
+  @include svg-use('.counties.features') {
     fill: $white;
   }
 
-  .states.mesh use,
-  .regions.mesh use {
+  @include svg-use(
+    '.states.mesh',
+    '.regions.mesh'
+  ) {
     stroke: $another-gray;
   }
 
-  .counties.mesh use {
+  @include svg-use('.counties.mesh') {
     stroke-width: 1;
   }
 
-  .feature.overlay use {
+  @include svg-use('.feature.overlay') {
     fill: none;
     pointer-events: none;
     stroke: $dark-gray;
@@ -108,13 +108,13 @@ svg.map {
       opacity: $opacity-federal;
     }
 
-    .counties.features use {
+    @include svg-use('.counties.features') {
       fill: $green-land;
     }
   }
 
   &.states.ownership {
-    .states.features use {
+    @include svg-use('.states.features') {
       fill: $green-land;
     }
   }
@@ -122,7 +122,7 @@ svg.map {
 
 svg.ownership {
   &.no-outlines {
-    .states.mesh use {
+    @include svg-use('.states.mesh') {
       stroke: $pale-blue;
       stroke-width: 1.5px;
     }
@@ -130,11 +130,11 @@ svg.ownership {
     &.state-page {
       padding-top: 0;
 
-      .states.features use {
+      @include svg-use('.states.features') {
         fill: transparent;
       }
 
-      .states.mesh use {
+      @include svg-use('.states.mesh') {
         stroke: transparent;
       }
     }
@@ -142,8 +142,10 @@ svg.ownership {
 }
 
 svg.case_studies {
-  .feature.offshore-area use,
-  .feature.state use {
+  @include svg-use(
+    '.feature.offshore-area',
+    '.feature.state'
+  ) {
     fill: $gray;
 
     &:active,
@@ -154,19 +156,19 @@ svg.case_studies {
   }
 
   &.no-outlines {
-    .states.mesh use {
+    @include svg-use('.states.mesh') {
       stroke: $pale-blue;
       stroke-width: 1.5px;
     }
 
-    .states.features use {
+    @include svg-use('.states.features') {
       fill: $gray;
     }
   }
 }
 
 svg.icon {
-  .feature.offshore-area use {
+  @include svg-use('.feature.offshore-area') {
     fill: inherit;
   }
 }

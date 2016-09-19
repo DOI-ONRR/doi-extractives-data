@@ -20,3 +20,10 @@
     top: 0;
   }
 }
+
+svg use {
+  all: inherit;
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}

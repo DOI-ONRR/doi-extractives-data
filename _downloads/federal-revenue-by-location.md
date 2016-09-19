@@ -8,7 +8,7 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are both accounting year data.
+> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are all accounting year data.
 
 Download calendar year data:
 

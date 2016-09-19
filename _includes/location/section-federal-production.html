@@ -96,8 +96,12 @@
 
             {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
             <figure is="eiti-data-map-table">
+
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
+              <!-- year: {{ year }} -->
+              <!-- value_key: {{ value_key }} -->
+              <!-- years_key: {{ years_key }} -->
               {% assign _width ='inherit' %}
 
               {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}

@@ -28,7 +28,7 @@
           } else {
             this.isWideView = true;
           }
-          this.update();
+          this.update('init');
         }},
 
         setYear: {value: function(year) {
@@ -85,7 +85,7 @@
           }
         }},
 
-        update: {value: function() {
+        update: {value: function(init) {
           var hasData = [];
           this.marks.data().every(function(d){
             if (d === WITHHELD_FLAG) {
@@ -99,6 +99,7 @@
               return true;
             }
           });
+          console.log(this.marks.data())
 
           var root = d3.select(this);
           var truthy = hasData.indexOf(true) > -1;
@@ -297,7 +298,9 @@
 
           svgContainer.style('padding-bottom', percentage);
           // end trim
-
+          if (init) {
+            this.setYear('2015')
+          }
         }}
       }
     )

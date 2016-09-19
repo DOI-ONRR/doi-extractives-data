@@ -39,7 +39,6 @@
 }
 
 .material-variance-explanation {
+  @include heading('para-sm');
   color: $gray-darkest;
-  font-style: italic;
-  font-weight: $weight-light;
 }

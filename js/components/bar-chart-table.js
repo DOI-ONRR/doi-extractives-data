@@ -1,5 +1,9 @@
 (function(exports) {
 
+  var WITHHELD_FLAG = 'Withheld';
+  var NO_DATA_FLAG = undefined;
+  var DEFAULT_YEAR = '2015';
+
   var initialize = function() {
     this._cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
     this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
@@ -7,12 +11,11 @@
     this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 
-    this.setYear();
+    console.log(this)
+    var year = this.getAttribute('year') || DEFAULT_YEAR;
+    this.setYear(year);
     this.update();
   };
-
-  var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
 
   var setYear = function(year) {
     var root = d3.select(this);
@@ -67,8 +70,8 @@
           return format(value);
         }
       }
-
-      var year = year || '2013';
+      console.log('year---', year)
+      var year = year || '2015';
       var bars = root.selectAll('[data-value]');
       var texts = root.selectAll('[data-value-text]');
       var sentences = root.selectAll('[data-sentence]');

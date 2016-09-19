@@ -129,12 +129,12 @@ nav_items:
         {% include location/section-disbursements.html %}
 
         <section id="state-disbursements" class="disbursements">
-          <h3>State disbursements</h3>
+          <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State disbursements</h3>
 
           {% if page.opt_in == true %}
             {% include location/opt-in/state-disbursements.html location_id=state_id %}
           {% else %}
-            <p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
+          <p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
           {% endif %}
         </section>
 
@@ -144,11 +144,11 @@ nav_items:
       <section id="economic-impact">
         <h2>Economic impact</h2>
         {% if page.state_impact %}
-          {{ page.state_impact | markdownify }}
+        {{ page.state_impact | markdownify }}
 
-          <p>
-            In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
-          </p>
+        <p>
+          In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
+        </p>
         {% endif %}
 
         {% include location/section-gdp.html %}

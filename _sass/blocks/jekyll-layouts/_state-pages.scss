@@ -5,7 +5,7 @@
   section + section,
   h2 + section:not(.state-pages-top),
   p + h4 {
-    margin-top: -0.75rem; //to compensate for margin from preceding selectors
+    margin-top: 0; // -0.75rem; //to compensate for margin from preceding selectors
   }
 
   h2:not(.ribbon-card-top-text-header) {
@@ -23,8 +23,9 @@
     @include h3-bar;
   }
 
-  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title) {
-    padding-top: 4rem;
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
+  .pre-sticky {
+    margin-top: 4rem;
   }
 
   ul + h3:not(.chart-title):not(.title-land-ownership),
@@ -55,6 +56,10 @@
   h3 + [class*='panel-'] {
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
+
+    &.sticky {
+      margin-top: 0;
+    }
   }
 
   figure {

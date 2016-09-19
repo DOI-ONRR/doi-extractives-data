@@ -44,7 +44,7 @@ nav_items:
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
-{% assign steps=9 %}
+{% assign steps = 9 %}
 
 
 <main id="national" class="layout-state-pages national-page">
@@ -53,7 +53,7 @@ nav_items:
     <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
       <div class="container-left-8 ribbon-hero ribbon-hero-column">
         <h1>Explore data</h1>
-        <figure is="data-map" color-scheme="Reds" steps="9">
+        <figure>
           {%
             include state-map.html
             href=':url'
@@ -145,6 +145,5 @@ nav_items:
   </section>
 
 </main>
-
 
 <script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

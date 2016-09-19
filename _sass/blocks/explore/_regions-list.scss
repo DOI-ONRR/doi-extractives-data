@@ -133,8 +133,9 @@
     }
   }
 
-  tr > td > .reportee {
+  td .reportee {
     display: inline-block;
+    margin-left: 0.2em;
     text-align: left;
     width: 3em;
   }

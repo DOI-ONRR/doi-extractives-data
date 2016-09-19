@@ -7,8 +7,7 @@
   <g class="state feature" {% if include.value %}
     {% assign state_value = include.states[state.id] | get: include.value %}
     data-value='{{ state_value | default: 0 | jsonify }}'{% endif %}>
-    <title desc="{{ state.title }}"
-           alt="{{ state.title }}">{{ state.title }}</title>
+    <title>{{ state.title }}</title>
     <use xlink:href="{{ _svg_path }}#state-{{ state.id }}" aria-label="{{ state.title }}"></use>
   </g>
 

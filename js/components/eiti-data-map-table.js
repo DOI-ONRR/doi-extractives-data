@@ -26,11 +26,11 @@
     var mapTables = root.selectAll('.eiti-data-map-table');
     var counties = maps.selectAll('.county.feature');
 
-    var chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
 
+    var chartTables = this.chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
     var chartRows = chartTables.selectAll('tr[data-fips]')
 
-    var highlightCounty = function(fips, event) {
+    var highlightCounty = this.highlightCounty = function(fips, event) {
       event = event || 'selected';
       counties.classed('mouseover', false);
       counties.classed(event, false);
@@ -56,28 +56,41 @@
 
     var toggleTable = function(context) {
       context = context || this;
-      var countyFIPS = context.getAttribute('data-fips');
+      var parent = context.parentNode;
 
-      highlightCounty(countyFIPS, 'selected');
+      var hasValue = parent.getAttribute('data-value') &&
+        parent.getAttribute('data-value') !== 'null';
 
-      mapToggles.each(function(){
-        this.expand();
-      });
+      if (hasValue) {
+        var countyFIPS = parent.getAttribute('data-fips');
 
-      chartTables.each(function(){
-        this.show(countyFIPS, 'selected');
-      });
+        highlightCounty(countyFIPS, 'selected');
+
+        mapToggles.each(function(){
+          this.expand();
+        });
+
+        chartTables.each(function(){
+          this.show(countyFIPS, 'selected');
+        });
+      }
     };
 
     var mouseTable = function(context, event) {
       context = context || this;
-      var countyFIPS = context.getAttribute('data-fips');
 
-      highlightCounty(countyFIPS, event);
+      var parent = context.parentNode;
+      var hasValue = parent.getAttribute('data-value') &&
+        parent.getAttribute('data-value') !== 'null';
+      if (hasValue) {
+        var countyFIPS = parent.getAttribute('data-fips');
 
-      chartTables.each(function(){
-        this.highlight(countyFIPS, event);
-      });
+        highlightCounty(countyFIPS, event);
+
+        chartTables.each(function(){
+          this.highlight(countyFIPS, event);
+        });
+      }
     };
 
     var toggleMap = function() {
@@ -126,13 +139,22 @@
   var detached = function() {
   };
 
+  var clearAllFields = function() {
+    this.highlightCounty(null);
+
+    this.chartTables.each(function(){
+      this.hide();
+    });
+  };
+
   exports.EITIDataMapTable = document.registerElement('eiti-data-map-table', {
     'extends': 'figure',
     prototype: Object.create(
       HTMLElement.prototype,
       {
         attachedCallback: {value: attached},
-        detachdCallback: {value: detached}
+        detachdCallback: {value: detached},
+        clearAllFields: {value: clearAllFields}
       }
     )
   })

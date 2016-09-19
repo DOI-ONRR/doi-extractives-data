@@ -130,18 +130,12 @@ eiti-data-map {
   .feature.county {
     cursor: pointer;
 
-    &.selected,
-    &.mouseover,
-    &:hover,
-    &:active,
-    &:focus {
+    &.selected use,
+    &.mouseover use {
       stroke-width: 3px;
     }
 
-    &.mouseover,
-    &:hover,
-    &:active,
-    &:focus {
+    &.mouseover use {
       stroke: $green-dark-chart-mid;
     }
 

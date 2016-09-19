@@ -36,6 +36,12 @@ svg.map {
   }
 
   .feature:not([fill]) use {
+    cursor: default;
+    fill-opacity: 0;
+  }
+
+  .feature[data-value]:not([fill]):not([data-value='null']) use {
+    cursor: pointer;
     fill-opacity: 0;
 
     &:hover,

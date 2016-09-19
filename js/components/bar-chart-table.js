@@ -163,6 +163,7 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
+        console.log(data)
         if ( data[year] === NO_DATA_FLAG ) {
           return NO_DATA_FLAG;
         } else {
@@ -192,6 +193,13 @@
       .select('[data-sentence]')
         .attr('aria-hidden', false);
   };
+
+  var hide = function() {
+    var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false)
+      .classed('selected', false);
+  }
 
   var highlight = function(fips, event) {
     var rows = d3.select(this).selectAll('tbody > tr');
@@ -373,6 +381,8 @@
         setYear: {value: setYear},
 
         show: {value: show},
+
+        hide: {value: hide},
 
         highlight: {value: highlight},
 

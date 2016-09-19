@@ -8,7 +8,7 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published.
+> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. This is calendar year 2013 data.
 
 Download calendar year data:
 

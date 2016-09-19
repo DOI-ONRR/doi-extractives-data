@@ -13,9 +13,9 @@ breadcrumb:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2012-2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds overview dataset (xlsx, 20 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_2016.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 852 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2014_2015-10-30.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 19 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2012-2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds overview dataset (xlsx, 18 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_2016.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 870 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2015_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 22 KB)</a></li>
 </ul>
 
 The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.

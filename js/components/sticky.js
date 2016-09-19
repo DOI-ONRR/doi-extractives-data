@@ -1,15 +1,17 @@
 (function(exports) {
+  'use strict';
 
-  var Stickyfill = require('stickyfill');
-  var stickyfill = Stickyfill();
+  var sticky = require('stickyfill')();
 
-  var stickyElements = document.getElementsByClassName('sticky');
+  [].forEach.call(
+    document.querySelectorAll('.sticky'),
+    function(el) {
+      sticky.add(el);
+      el.parentNode.insertBefore(document.createElement('div'), el)
+        .setAttribute('class', 'pre-sticky');
+    }
+  );
 
-  for (var i = stickyElements.length - 1; i >= 0; i--) {
-      stickyfill.add(stickyElements[i]);
-  }
-  exports.Stickyfill = Stickyfill;
-  exports.stickyfill = stickyfill;
+  exports.stickyfill = sticky;
 
-
-})(this);
+})(window);

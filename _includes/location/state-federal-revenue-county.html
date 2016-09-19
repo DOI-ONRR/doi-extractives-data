@@ -24,7 +24,7 @@
         </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
-            Companies paid 
+            Companies paid
             <span class="eiti-bar-chart-y-value" data-format="$,">${{ current_revenue | intcomma }}</span>
             to produce natural resources on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
@@ -62,6 +62,7 @@
             inherit_width=true
             caption=caption
             toggle=toggle
+            year=year
           %}
         </eiti-data-map>
 

@@ -9,12 +9,14 @@
   position: relative;
 
   svg.map {
-    .state.feature use,
-    .offshore-area.feature use {
+    @include svg-use(
+      '.state.feature',
+      '.offshore-area.feature'
+    ) {
       fill-opacity: 1;
     }
 
-    .states.features use {
+    @include svg-use('.states.features') {
       @include transition(all, 0.2s);
 
       fill: $gray;
@@ -22,7 +24,7 @@
       stroke: $gray;
     }
 
-    .offshore.features use {
+    @include svg-use('.offshore.features') {
       @include transition(all, 0.2s);
 
       fill: $gray-light;
@@ -44,18 +46,24 @@
         visibility: visible;
       }
 
-      svg.map .states.features use,
-      svg.map .state.feature use {
-        fill: $black-light;
-        fill-opacity: 1;
-        stroke: $black-light;
-      }
+      svg.map {
+        @include svg-use(
+          '.states.features',
+          '.state.feature'
+        ) {
+          fill: $black-light;
+          fill-opacity: 1;
+          stroke: $black-light;
+        }
 
-      svg.map .offshore.features use,
-      svg.map .offshore-area.feature use {
-        fill: $gray-darker;
-        fill-opacity: 1;
-        stroke: $gray-darker;
+        @include svg-use(
+          '.offshore.features',
+          '.offshore-area.feature'
+        ) {
+          fill: $gray-darker;
+          fill-opacity: 1;
+          stroke: $gray-darker;
+        }
       }
     }
 

@@ -30,7 +30,7 @@
 
       <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
         <p>
-          Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies. 
+          Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.
           <br>
           <a href="{{site.baseurl}}/downloads/#jobs">
             <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -63,7 +63,7 @@
               <span class="eiti-bar-chart-y-value"
                 data-format=",">{{ jobs[year].jobs | intcomma }}</span>
               jobs in the extractive industries in
-              {{ state_name }}, and they accounted for 
+              {{ state_name }}, and they accounted for
               <year-value year="{{ year }}" data-year-values='{{ jobs | map_hash: "percent" | jsonify }}'
                 empty="--">{{ jobs_percent | percent }}</year-value>%
               of statewide employment.
@@ -104,6 +104,7 @@
               inherit_width=true
               caption=caption
               toggle=toggle
+              year=year
             %}
           </eiti-data-map>
           <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
@@ -153,7 +154,7 @@
           Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don’t receive wages or salaries because they own their own companies.
           <br>
           <a href="{{site.baseurl}}/downloads/#jobs">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
           </a>
         </p>
       </div>

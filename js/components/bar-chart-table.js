@@ -106,6 +106,8 @@
             : false;
         });
 
+      sentencesData.attr('aria-hidden', true);
+
       sentencesData.select('.withheld')
         .attr('aria-hidden', function(d) {
           return d === WITHHELD_FLAG
@@ -163,7 +165,6 @@
 
       rows.datum(function(){
         var data = parseYearVals(this);
-        console.log(data)
         if ( data[year] === NO_DATA_FLAG ) {
           return NO_DATA_FLAG;
         } else {

@@ -139,7 +139,7 @@ eiti-data-map {
       stroke: $green-dark-chart-mid;
     }
 
-    &.selected {
+    &.selected use {
       stroke: $green-dark-chart;
     }
   }

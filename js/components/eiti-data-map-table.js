@@ -22,9 +22,11 @@
 
     var select = root.selectAll('select.chart-selector');
     var maps = root.selectAll('eiti-data-map');
+    var svg = root.select('svg');
     var mapToggles = maps.selectAll('button[is="aria-toggle"]');
     var mapTables = root.selectAll('.eiti-data-map-table');
     var counties = maps.selectAll('.county.feature');
+    var countiesUse = maps.selectAll('.county.feature use');
 
 
     var chartTables = this.chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
@@ -39,19 +41,21 @@
       });
       unselectedCounties.call(moveToBack);
 
-      counties.each(function(d, i){
-        var county = d3.select(this);
-        var numbers = typeof(county.attr('data-fips')) === 'number' ||
-          typeof(fips) === 'number';
-        var areEqual = numbers
-          ? +county.attr('data-fips') === +fips
-          : county.attr('data-fips') === fips;
+      if (fips) {
+        counties.each(function(d, i){
+          var county = d3.select(this);
+          var numbers = typeof(county.attr('data-fips')) === 'number' ||
+            typeof(fips) === 'number';
+          var areEqual = numbers
+            ? +county.attr('data-fips') === +fips
+            : county.attr('data-fips') === fips;
 
-        if (areEqual) {
-          county.classed(event, true);
-          county.call(moveToFront);
-        }
-      });
+          if (areEqual) {
+            county.classed(event, true);
+            county.call(moveToFront);
+          }
+        });
+      }
     };
 
     var toggleTable = function(context) {
@@ -113,27 +117,33 @@
       });
     };
 
+    var clearFields = function(context, event) {
+      highlightCounty(null, 'mouseout');
+
+      chartTables.each(function(){
+        this.highlight(null, 'mouseout');
+      });
+    };
+
     chartRows.on('click.countyTable', toggleMap);
     chartRows.on('mouseover.countyTable', mouseMap);
     chartRows.on('mouseout.countyTable', mouseMap);
 
 
-    counties
+    countiesUse
       .on('click.county', function(){
         toggleTable(this);
       })
-      .on('mouseenter.county', function(){
+      .on('mouseover.county', function(){
         var that = this;
         setTimeout(function(){
           eiti.util.throttle(mouseTable(that, 'mouseover'), 200);
         }, 10);
-      })
-      .on('mouseleave.county', function(){
-        var that = this;
-        setTimeout(function(){
-          mouseTable(that, 'mouseout');
-        }, 20);
       });
+
+    svg.on('mouseout.county', function(){
+      clearFields(this);
+    });
   };
 
   var detached = function() {

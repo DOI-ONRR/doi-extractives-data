@@ -5105,6 +5105,49 @@ NY:
         revenue: 277
         rank: 28
         percent: 0
+None:
+  commodities:
+    None:
+      '2006':
+        revenue: -2097277
+        rank: 1
+        percent: null
+      '2007':
+        revenue: 4286771
+        rank: 1
+        percent: 100
+      '2008':
+        revenue: 2290084
+        rank: 1
+        percent: 100
+      '2009':
+        revenue: 1184274
+        rank: 1
+        percent: 100
+      '2010':
+        revenue: 4795138
+        rank: 1
+        percent: 32.3
+      '2011':
+        revenue: 3488512
+        rank: 1
+        percent: 26.7
+      '2012':
+        revenue: 10582574
+        rank: 1
+        percent: 10.9
+      '2013':
+        revenue: 5947950
+        rank: 1
+        percent: 10
+      '2014':
+        revenue: 6417183
+        rank: 1
+        percent: 8.9
+      '2015':
+        revenue: 8382399
+        rank: 1
+        percent: 13.8
 OH:
   commodities:
     All:

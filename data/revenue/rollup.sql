@@ -24,6 +24,28 @@ FROM county_revenue
 GROUP BY
     year, state, county, fips;
 
+-- update NULL columns in civil penalties table
+UPDATE civil_penalties_revenue
+SET
+    product = 'None',
+    state = 'None'
+WHERE
+    product IS NULL AND
+    state IS NULL AND
+    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
+
+-- add data from civil penalties table
+INSERT INTO county_revenue
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    product AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM civil_penalties_revenue
+GROUP BY
+    year, state, commodity, revenue_type;
+
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS state_revenue_type;
 CREATE TABLE state_revenue_type AS
@@ -36,28 +58,6 @@ CREATE TABLE state_revenue_type AS
     GROUP BY
         year, state, commodity,
         revenue_type;
-
--- update NULL columns in civil penalties table
-UPDATE civil_penalties_revenue
-SET
-    product = 'None',
-    state = 'None'
-WHERE
-    product IS NULL AND
-    state IS NULL AND
-    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
-
--- add data from civil penalties table
-INSERT INTO state_revenue_type
-    (year, state, commodity, revenue_type, revenue)
-SELECT
-    year, state,
-    product AS commodity,
-    revenue_type,
-    SUM(revenue) AS revenue
-FROM civil_penalties_revenue
-GROUP BY
-    year, state, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
@@ -313,8 +313,24 @@ CREATE TABLE national_revenue AS
         year, commodity,
         SUM(revenue) AS revenue
     FROM regional_revenue
+    WHERE commodity != 'All'
     GROUP BY
         year, commodity;
+
+-- create "all commodity" row
+DELETE FROM national_revenue WHERE commodity = 'All';
+INSERT INTO national_revenue (
+    year, commodity, revenue
+)
+SELECT
+    year,
+    'All' AS commodity,
+    SUM(revenue) AS revenue
+FROM national_revenue
+WHERE
+    commodity != 'All'
+GROUP BY
+    year;
 
 -- then create national revenue type as an aggregate view
 -- on state_revenue

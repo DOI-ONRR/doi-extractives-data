@@ -295,7 +295,7 @@
           console.warn('no cell @', i);
           return;
         } else if (cell.parentNode.hasAttribute('data-value')) {
-          console.warn('cell is child', i);
+          // console.warn('cell is child', i);
         }
 
         var cellAlwaysEmpty = cell.getAttribute('data-year-values') === 'null';

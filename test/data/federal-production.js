@@ -94,8 +94,7 @@ describe('federal production (ONRR) sentinels', function() {
       );
     };
 
-    // [pending] until discrepency in Oil values is solved
-    xit('check sentinel values', function(done) {
+    it('check sentinel values', function(done) {
 
       var sentinels = [
         {

@@ -125,3 +125,13 @@
     margin-bottom: 6rem;
   }
 }
+
+.expandable {
+  position: relative;
+
+  &[aria-expanded=false] {
+    // XXX magic number
+    max-height: 7.5em;
+    overflow-y: hidden;
+  }
+}

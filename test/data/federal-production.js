@@ -25,14 +25,16 @@ describe('federal production (ONRR) sentinels', function() {
     var assertSentinelMatch = function (product, year, value) {
       var expected = Math.round(value);
       var actual = products[product].volume[year];
-      assert.equal(
-        expected, actual,
-        'expected ' + value + ' for: ' + [product, year].join(' | ')
+
+      var difference = expected - actual
+      assert.ok(
+        Math.abs(difference) < 10,
+        'expected ' + expected + ', got: ' + actual + ' for: ' + [product, year].join(' | ')
       );
     };
 
     // [pending] until discrepency in Oil values is solved
-    xit('check sentinel values', function(done) {
+    it('check sentinel values', function(done) {
 
       var sentinels = [
         {

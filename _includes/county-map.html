@@ -29,7 +29,7 @@
 
 <div is="eiti-tooltip-wrapper"
      tooltip-style="subtle"
-     tooltip-offset="10"
+     cursor-offset="10"
      class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
   style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>

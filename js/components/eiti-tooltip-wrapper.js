@@ -2,7 +2,7 @@
 (function(exports) {
   'use strict';
 
-  var OFFSET_POSITION = 2;
+  var CURSOR_OFFSET = 2;
 
   var depixelize = function(value) {
     if (value.match(/px$/)) {
@@ -30,8 +30,8 @@
     var titles = self.selectAll('title');
     var tiles = self.selectAll('use');
     var tooltipStyle = self.attr('tooltip-style');
-    OFFSET_POSITION = Number(self.attr('tooltip-offset'))
-      || OFFSET_POSITION;
+    CURSOR_OFFSET = Number(self.attr('cursor-offset'))
+      || CURSOR_OFFSET;
 
     var tooltip;
     var tooltipText;
@@ -98,10 +98,10 @@
             var tooltipWidth = depixelize(tooltip.style('width'));
             var svgWidth = depixelize(svg.style('width'));
 
-            var x = event.layerX + OFFSET_POSITION;
+            var x = event.layerX + CURSOR_OFFSET;
 
             if (svgWidth <= tooltipWidth + x) {
-              return pixelize(event.layerX - tooltipWidth - OFFSET_POSITION);
+              return pixelize(event.layerX - tooltipWidth - CURSOR_OFFSET);
             } else {
               return pixelize(x);
             }
@@ -110,10 +110,10 @@
             var tooltipHeight = depixelize(tooltip.style('height'));
             var svgHeight = depixelize(svg.style('height'));
 
-            var y = event.layerY + OFFSET_POSITION;
+            var y = event.layerY + CURSOR_OFFSET;
 
             if (svgHeight <= tooltipHeight + y) {
-              return pixelize(event.layerY - tooltipHeight - OFFSET_POSITION);
+              return pixelize(event.layerY - tooltipHeight - CURSOR_OFFSET);
             } else {
               return pixelize(y);
             }

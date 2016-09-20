@@ -20,7 +20,7 @@ state_production: |
 
     **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
-    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million mineral acres. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
+    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million {{ "mineral acres" | term_end }}. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
     In FY 2014, 29.3 million short tons of surface-mined coal and 2.4 million short tons of underground-mined coal were extracted on state lands in Wyoming.
 
@@ -40,8 +40,8 @@ state_tax_expenditures: |
 state_disbursements: |
     [State agencies](#state-agencies) distribute natural resource revenues according to the [Wyoming State Code](http://legisweb.state.wy.us/LSOWeb/wyStatutes.aspx), which is defined by the legislature.
 
-    Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute. 
-    
+    Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute.
+
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
 state_saving_spending: |
     The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
@@ -84,7 +84,7 @@ The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) (DEQ)
 * The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes an [annual report (PDF)](http://deq.wyoming.gov/media/uploads/admin/annual_report_2014.pdf) that includes bond amounts.
 * The [Abandoned Mine Land Division](http://deq.wyoming.gov/aml/) administers the federal AML program for coal and select hardrock reclamation projects.
 
-The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources. 
+The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources.
 
 ### State laws and regulations
 
@@ -128,10 +128,10 @@ See [state agencies](#state-agencies) for information about statewide water mana
 
 Population growth due to increased natural resource extraction can increase demands on the medical, fire, and police services of states, counties, and towns.
 
-Prior to 2001, the Sublette County Rural Health Care District had two all-volunteer Emergency Medical Services (EMS) units. By 2006, the district had hired 25 full-time emergency medical technicians. From 2001 to 2007, EMS runs increased 116% for the Pinedale facility and 94.47% for the Marbleton-Big Piney facility. To serve the Jonah gas field and the South Anticline, the district built a new EMS facility in 2007 at Sand Draw. Local industry paid for $900,000 of the cost of the facility, with the county paying $500,000. 
+Prior to 2001, the Sublette County Rural Health Care District had two all-volunteer Emergency Medical Services (EMS) units. By 2006, the district had hired 25 full-time emergency medical technicians. From 2001 to 2007, EMS runs increased 116% for the Pinedale facility and 94.47% for the Marbleton-Big Piney facility. To serve the Jonah gas field and the South Anticline, the district built a new EMS facility in 2007 at Sand Draw. Local industry paid for $900,000 of the cost of the facility, with the county paying $500,000.
 
 #### Reclamation
 
-Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/). 
+Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/).
 
 See [state agencies](#state-agencies) for additional statewide reclamation activities.

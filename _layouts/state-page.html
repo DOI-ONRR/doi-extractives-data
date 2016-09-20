@@ -113,7 +113,7 @@ nav_items:
 
         {% if page.state_land %}
           <h3 id="state-production">Production on state land in {{ state_name }}</h3>
-          {{ page.state_land | markdownify }}
+          {{ page.state_land | liquify | markdownify }}
         {% endif %}
         {% if page.state_land_production %}
           {{ page.state_land_production | markdownify }}

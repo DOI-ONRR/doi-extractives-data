@@ -6,6 +6,28 @@ WHERE product IS NULL;
 DELETE FROM county_revenue WHERE revenue_type IS NULL;
 DELETE FROM offshore_revenue WHERE revenue_type IS NULL;
 
+-- update NULL columns in civil penalties table
+UPDATE civil_penalties_revenue
+SET
+    product = 'None',
+    state = 'None'
+WHERE
+    product IS NULL AND
+    state IS NULL AND
+    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
+
+-- add data from civil penalties table
+INSERT INTO county_revenue
+    (year, state, commodity, revenue_type, revenue)
+SELECT
+    year, state,
+    product AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM civil_penalties_revenue
+GROUP BY
+    year, state, commodity, revenue_type;
+
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
@@ -36,28 +58,6 @@ CREATE TABLE state_revenue_type AS
     GROUP BY
         year, state, commodity,
         revenue_type;
-
--- update NULL columns in civil penalties table
-UPDATE civil_penalties_revenue
-SET
-    product = 'None',
-    state = 'None'
-WHERE
-    product IS NULL AND
-    state IS NULL AND
-    (revenue_type = 'Civil Penalties' OR revenue_type = 'Other Revenues');
-
--- add data from civil penalties table
-INSERT INTO state_revenue_type
-    (year, state, commodity, revenue_type, revenue)
-SELECT
-    year, state,
-    product AS commodity,
-    revenue_type,
-    SUM(revenue) AS revenue
-FROM civil_penalties_revenue
-GROUP BY
-    year, state, commodity, revenue_type;
 
 -- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
@@ -155,6 +155,51 @@ CREATE TABLE offshore_region_revenue AS
         year, region_id, commodity, revenue_type
     ORDER BY
         year, revenue DESC;
+
+-- rollup offshore region revenue by revenue_type
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    commodity,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id, commodity;
+
+-- rollup offshore region revenue by commodity
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    'All' AS commodity,
+    revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id, revenue_type;
+
+-- rollup offshore region revenue by commodity and revenue_type
+INSERT INTO offshore_region_revenue
+    (year, region_id, commodity, revenue_type, revenue)
+SELECT
+    year, region_id,
+    'All' AS commodity,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
+FROM offshore_region_revenue
+WHERE
+    commodity != 'All' AND
+    revenue_type != 'All'
+GROUP BY
+    year, region_id;
 
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
@@ -268,11 +313,27 @@ CREATE TABLE national_revenue AS
         year, commodity,
         SUM(revenue) AS revenue
     FROM regional_revenue
+    WHERE commodity != 'All'
     GROUP BY
         year, commodity;
 
+-- create "all commodity" row
+DELETE FROM national_revenue WHERE commodity = 'All';
+INSERT INTO national_revenue (
+    year, commodity, revenue
+)
+SELECT
+    year,
+    'All' AS commodity,
+    SUM(revenue) AS revenue
+FROM national_revenue
+WHERE
+    commodity != 'All'
+GROUP BY
+    year;
+
 -- then create national revenue type as an aggregate view
--- on state_revenue
+-- on regional_revenue_type
 DROP TABLE IF EXISTS national_revenue_type;
 CREATE TABLE national_revenue_type AS
     SELECT

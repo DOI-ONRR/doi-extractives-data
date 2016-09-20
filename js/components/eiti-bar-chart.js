@@ -308,7 +308,17 @@
 
     var id = selection.attr('aria-controls');
     if (id) {
-      var output = d3.select('#' + id);
+      // further qualify controlled elements with the "control-hover"
+      // class if `hover` is true. This excludes the "no data" list so
+      // that we don't thrash the layout too hard when hovering over
+      // bars.
+      var qualifier = hover ? '.control-hover' : '';
+
+      var selector = id.split(' ').map(function(id) {
+        return '#' + id + qualifier;
+      }).join(', ');
+
+      var output = d3.selectAll(selector);
 
       output.selectAll('.eiti-bar-chart-x-value')
         .text(value.x);
@@ -329,6 +339,17 @@
           hideCaption(output, false, true, true);
           y.text(formatUnits(format(value.y), units));
         }
+      }
+
+      if (!hover) {
+        var year = String(value.x);
+        output.selectAll('[data-years-visible]')
+          .datum(function(d) {
+            return d || this.getAttribute('data-years-visible').split(',');
+          })
+          .attr('aria-hidden', function(years) {
+            return years.indexOf(year) === -1;
+          });
       }
 
     }

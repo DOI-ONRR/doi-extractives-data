@@ -94,9 +94,9 @@
     </div><!-- /.chart-list -->
 
     {% if withheld_products.size > 0 %}
-    <section id="national-federal-production-withheld" class="product chart-item">
+    <section id="national-federal-production-withheld">
       <h3>Data withheld (<span class="eiti-bar-chart-x-value">{{ year }}</span>)</h3>
-      <ul>
+      <ul id="federal-production-withheld-products" class="expandable">
         {% assign all_years = year_list | to_s %}
         {% for product in withheld_products %}
           {% assign product_years = '' | split: '' %}
@@ -109,6 +109,12 @@
         </li>
         {% endfor %}
       </ul>
+      <button is="aria-toggle" aria-expanded="false"
+        aria-toggles="aria-expanded"
+        aria-controls="federal-production-withheld-products">
+        <span class="hide-expanded">Show all</span>
+        <span class="show-expanded">Hide some</span>
+      </button>
     </section>
     {% endif %}
 

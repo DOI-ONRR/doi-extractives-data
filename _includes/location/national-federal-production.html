@@ -105,7 +105,7 @@
           {% endfor %}
           <li data-years-visible="{{ product_years | join: ',' }}"
             {% unless product_years contains year %}aria-hidden="true"{% endunless %}>
-          {{ product[0].name | default: product[0] }}
+          {{ product[1].name | default: product[0] }}
         </li>
         {% endfor %}
       </ul>
@@ -113,7 +113,7 @@
         aria-toggles="aria-expanded"
         aria-controls="federal-production-withheld-products">
         <span class="hide-expanded">Show all</span>
-        <span class="show-expanded">Hide some</span>
+        <span class="show-expanded">Close</span>
       </button>
     </section>
     {% endif %}

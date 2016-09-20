@@ -32,8 +32,11 @@ svg.map {
   }
 
   @include svg-use('.feature:not([fill])') {
-    cursor: default;
     fill-opacity: 0;
+  }
+
+  @include svg-use('.county.feature:not([fill])') {
+    cursor: default;
   }
 
   @include svg-use(

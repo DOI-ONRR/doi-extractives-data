@@ -95,9 +95,9 @@
 
     {% if withheld_products.size > 0 %}
     <section id="national-federal-production-withheld" class="product chart-item">
-      <h3>Withheld production data</h3>
+      <h4>Other products (withheld)</h3>
       {% assign all_years = year_list | to_s %}
-      <p>Data was {{ 'withheld' | term }} for
+      <p>Data about some products is {{ 'withheld' | term }} to protect trade secrets. Data about the following products was withheld:
         {% for product in withheld_products %}{% if forloop.last %} and {% endif %}
           {% assign product_years = '' | split: '' %}
           {% for _year in product[1].volume %}

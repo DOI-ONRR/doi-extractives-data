@@ -27,7 +27,10 @@
   {% assign _width = 65.88078 | to_f %}
 {% endif %}
 
-<div is="eiti-tooltip-wrapper" tooltip-style="subtle" class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
+<div is="eiti-tooltip-wrapper"
+     tooltip-style="subtle"
+     tooltip-offset="10"
+     class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
   style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}

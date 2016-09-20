@@ -10,7 +10,7 @@ var _ = require('lodash');
 
 var OUT_PATH = path.join(__dirname, '../../_data');
 
-describe('federal production (ONRR)', function() {
+describe('federal production (ONRR) sentinels', function() {
 
   describe('national values', function() {
 
@@ -149,8 +149,7 @@ describe('federal production (ONRR)', function() {
       );
     };
 
-    // // [pending] until issue with Oil is worked out
-    xit('check sentinels', function(done) {
+    it('check sentinels', function(done) {
 
       var sentinels = [
         {
@@ -159,7 +158,7 @@ describe('federal production (ONRR)', function() {
           fips: '02185',
           product: 'Oil (bbl)',
           year: 2014,
-          value: 894025
+          value: 7693
         },
         {
           state: 'MS',

@@ -26,7 +26,7 @@ describe('federal production (ONRR) sentinels', function() {
       var expected = Math.round(value);
       var actual = products[product].volume[year];
 
-      var difference = expected - actual
+      var difference = expected - actual;
       assert.ok(
         Math.abs(difference) < 10,
         'expected ' + expected +

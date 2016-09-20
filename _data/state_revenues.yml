@@ -228,7 +228,7 @@ AL:
         percent: 0
       '2007':
         revenue: 2446052
-        rank: 20
+        rank: 21
         percent: 0
       '2008':
         revenue: 3332860
@@ -248,19 +248,19 @@ AL:
         percent: 0.1
       '2012':
         revenue: 8089989
-        rank: 16
+        rank: 17
         percent: 0.1
       '2013':
         revenue: 4339511
-        rank: 18
+        rank: 19
         percent: 0
       '2014':
         revenue: 2378161
-        rank: 19
+        rank: 20
         percent: 0
       '2015':
         revenue: 598290
-        rank: 21
+        rank: 22
         percent: 0
     Clay:
       '2006':
@@ -575,19 +575,19 @@ AR:
         percent: 0.1
       '2012':
         revenue: 4634354
-        rank: 18
+        rank: 19
         percent: 0
       '2013':
         revenue: 5573071
-        rank: 17
+        rank: 18
         percent: 0
       '2014':
         revenue: 6166875
-        rank: 15
+        rank: 16
         percent: 0.1
       '2015':
         revenue: 4279891
-        rank: 15
+        rank: 16
         percent: 0.1
     Gas:
       '2006':
@@ -762,39 +762,39 @@ AZ:
         percent: 0
       '2007':
         revenue: 532264
-        rank: 27
+        rank: 28
         percent: 0
       '2008':
         revenue: 529904
-        rank: 27
+        rank: 28
         percent: 0
       '2009':
         revenue: 89609
-        rank: 30
+        rank: 31
         percent: 0
       '2010':
         revenue: 41297
-        rank: 33
+        rank: 34
         percent: 0
       '2011':
         revenue: 38115
-        rank: 32
+        rank: 33
         percent: 0
       '2012':
         revenue: 16602
-        rank: 32
+        rank: 33
         percent: 0
       '2013':
         revenue: 63828
-        rank: 31
+        rank: 32
         percent: 0
       '2014':
         revenue: 35022
-        rank: 32
+        rank: 33
         percent: 0
       '2015':
         revenue: 91400
-        rank: 29
+        rank: 30
         percent: 0
     Geothermal:
       '2006':
@@ -1650,39 +1650,39 @@ FL:
         percent: 0
       '2007':
         revenue: 11786
-        rank: 33
+        rank: 34
         percent: 0
       '2008':
         revenue: 13735
-        rank: 32
+        rank: 33
         percent: 0
       '2009':
         revenue: 1965
-        rank: 36
+        rank: 37
         percent: 0
       '2010':
         revenue: 95535
-        rank: 30
+        rank: 31
         percent: 0
       '2011':
         revenue: 526692
-        rank: 25
+        rank: 26
         percent: 0
       '2012':
         revenue: 2174734
-        rank: 20
+        rank: 21
         percent: 0
       '2013':
         revenue: 286720
-        rank: 27
+        rank: 28
         percent: 0
       '2014':
         revenue: 1981
-        rank: 36
+        rank: 37
         percent: 0
       '2015':
         revenue: 80957
-        rank: 30
+        rank: 31
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -1783,7 +1783,7 @@ ID:
         percent: 0.1
       '2012':
         revenue: 10535394
-        rank: 14
+        rank: 15
         percent: 0.1
       '2013':
         revenue: 10090920
@@ -1966,39 +1966,39 @@ IL:
         percent: 0
       '2007':
         revenue: 260935
-        rank: 29
+        rank: 30
         percent: 0
       '2008':
         revenue: 416553
-        rank: 29
+        rank: 30
         percent: 0
       '2009':
         revenue: 207441
-        rank: 27
+        rank: 28
         percent: 0
       '2010':
         revenue: 357690
-        rank: 27
+        rank: 28
         percent: 0
       '2011':
         revenue: 296884
-        rank: 28
+        rank: 29
         percent: 0
       '2012':
         revenue: 312774
-        rank: 27
+        rank: 28
         percent: 0
       '2013':
         revenue: 302425
-        rank: 26
+        rank: 27
         percent: 0
       '2014':
         revenue: 217484
-        rank: 27
+        rank: 28
         percent: 0
       '2015':
         revenue: 407842
-        rank: 23
+        rank: 24
         percent: 0
     Hardrock:
       '2008':
@@ -2080,31 +2080,31 @@ IN:
     All:
       '2009':
         revenue: 156857
-        rank: 29
+        rank: 30
         percent: 0
       '2010':
         revenue: 79494
-        rank: 31
+        rank: 32
         percent: 0
       '2011':
         revenue: 26648
-        rank: 33
+        rank: 34
         percent: 0
       '2012':
         revenue: 48382
-        rank: 31
+        rank: 32
         percent: 0
       '2013':
         revenue: 43691
-        rank: 32
+        rank: 33
         percent: 0
       '2014':
         revenue: 41192
-        rank: 31
+        rank: 32
         percent: 0
       '2015':
         revenue: 32028
-        rank: 32
+        rank: 33
         percent: 0
     Oil:
       '2009':
@@ -2185,19 +2185,19 @@ KS:
         percent: 0.1
       '2012':
         revenue: 5635895
-        rank: 17
+        rank: 18
         percent: 0
       '2013':
         revenue: 5771154
-        rank: 16
+        rank: 17
         percent: 0
       '2014':
         revenue: 4946843
-        rank: 17
+        rank: 18
         percent: 0
       '2015':
         revenue: 2562582
-        rank: 17
+        rank: 18
         percent: 0
     Gas:
       '2006':
@@ -2401,11 +2401,11 @@ KY:
         percent: 0
       '2007':
         revenue: 2997587
-        rank: 18
+        rank: 19
         percent: 0
       '2008':
         revenue: 1403690
-        rank: 22
+        rank: 23
         percent: 0
       '2009':
         revenue: 1587610
@@ -2413,27 +2413,27 @@ KY:
         percent: 0
       '2010':
         revenue: 515472
-        rank: 25
+        rank: 26
         percent: 0
       '2011':
         revenue: 1992580
-        rank: 20
+        rank: 21
         percent: 0
       '2012':
         revenue: 1789289
-        rank: 21
+        rank: 22
         percent: 0
       '2013':
         revenue: 1650576
-        rank: 20
+        rank: 21
         percent: 0
       '2014':
         revenue: 456896
-        rank: 24
+        rank: 25
         percent: 0
       '2015':
         revenue: 212596
-        rank: 25
+        rank: 26
         percent: 0
     Coal:
       '2006':
@@ -2661,7 +2661,7 @@ LA:
         percent: 0.1
       '2015':
         revenue: 6670519
-        rank: 14
+        rank: 15
         percent: 0.1
     Gas:
       '2006':
@@ -2841,39 +2841,39 @@ MD:
         percent: 0
       '2007':
         revenue: 13922
-        rank: 32
+        rank: 33
         percent: 0
       '2008':
         revenue: 12399
-        rank: 33
+        rank: 34
         percent: 0
       '2009':
         revenue: 11811
-        rank: 32
+        rank: 33
         percent: 0
       '2010':
         revenue: 9877
-        rank: 34
+        rank: 35
         percent: 0
       '2011':
         revenue: 11534
-        rank: 35
+        rank: 36
         percent: 0
       '2012':
         revenue: 9317
-        rank: 34
+        rank: 35
         percent: 0
       '2013':
         revenue: 10655
-        rank: 34
+        rank: 35
         percent: 0
       '2014':
         revenue: 22236
-        rank: 33
+        rank: 34
         percent: 0
       '2015':
         revenue: 18836
-        rank: 33
+        rank: 34
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -2925,7 +2925,7 @@ MI:
         percent: 0
       '2007':
         revenue: 2870984
-        rank: 19
+        rank: 20
         percent: 0
       '2008':
         revenue: 4013575
@@ -2937,27 +2937,27 @@ MI:
         percent: 0
       '2010':
         revenue: 1702029
-        rank: 19
+        rank: 20
         percent: 0
       '2011':
         revenue: 1430891
-        rank: 21
+        rank: 22
         percent: 0
       '2012':
         revenue: 1412152
-        rank: 22
+        rank: 23
         percent: 0
       '2013':
         revenue: 1505522
-        rank: 21
+        rank: 22
         percent: 0
       '2014':
         revenue: 1591270
-        rank: 20
+        rank: 21
         percent: 0
       '2015':
         revenue: 839495
-        rank: 18
+        rank: 19
         percent: 0
     Gas:
       '2006':
@@ -3141,39 +3141,39 @@ MN:
         percent: 0
       '2007':
         revenue: 50564
-        rank: 31
+        rank: 32
         percent: 0
       '2008':
         revenue: 50410
-        rank: 31
+        rank: 32
         percent: 0
       '2009':
         revenue: 49471
-        rank: 31
+        rank: 32
         percent: 0
       '2010':
         revenue: 49687
-        rank: 32
+        rank: 33
         percent: 0
       '2011':
         revenue: 44915
-        rank: 31
+        rank: 32
         percent: 0
       '2012':
         revenue: 58625
-        rank: 30
+        rank: 31
         percent: 0
       '2013':
         revenue: 65620
-        rank: 30
+        rank: 31
         percent: 0
       '2014':
         revenue: 57791
-        rank: 30
+        rank: 31
         percent: 0
       '2015':
         revenue: 49858
-        rank: 31
+        rank: 32
         percent: 0
     Hardrock:
       '2006':
@@ -3350,7 +3350,7 @@ MS:
         percent: 0
       '2010':
         revenue: 2771539
-        rank: 18
+        rank: 19
         percent: 0
       '2011':
         revenue: 6432720
@@ -3358,7 +3358,7 @@ MS:
         percent: 0.1
       '2012':
         revenue: 9526002
-        rank: 15
+        rank: 16
         percent: 0.1
       '2013':
         revenue: 6115218
@@ -3366,11 +3366,11 @@ MS:
         percent: 0
       '2014':
         revenue: 5385432
-        rank: 16
+        rank: 17
         percent: 0
       '2015':
         revenue: 2609931
-        rank: 16
+        rank: 17
         percent: 0
     Gas:
       '2006':
@@ -3871,23 +3871,23 @@ NC:
     All:
       '2011':
         revenue: 632
-        rank: 37
+        rank: 38
         percent: 0
       '2012':
         revenue: 632
-        rank: 37
+        rank: 38
         percent: 0
       '2013':
         revenue: 158
-        rank: 36
+        rank: 37
         percent: 0
       '2014':
         revenue: 474
-        rank: 37
+        rank: 38
         percent: 0
       '2015':
         revenue: 474
-        rank: 37
+        rank: 38
         percent: 0
     Hardrock:
       '2011':
@@ -4193,39 +4193,39 @@ NE:
         percent: 0
       '2007':
         revenue: 572057
-        rank: 26
+        rank: 27
         percent: 0
       '2008':
         revenue: 697160
-        rank: 26
+        rank: 27
         percent: 0
       '2009':
         revenue: 501854
-        rank: 26
+        rank: 27
         percent: 0
       '2010':
         revenue: 397804
-        rank: 26
+        rank: 27
         percent: 0
       '2011':
         revenue: 397756
-        rank: 27
+        rank: 28
         percent: 0
       '2012':
         revenue: 322228
-        rank: 26
+        rank: 27
         percent: 0
       '2013':
         revenue: 371637
-        rank: 25
+        rank: 26
         percent: 0
       '2014':
         revenue: 352338
-        rank: 25
+        rank: 26
         percent: 0
       '2015':
         revenue: 154846
-        rank: 27
+        rank: 28
         percent: 0
     Gas:
       '2007':
@@ -4989,39 +4989,39 @@ NY:
         percent: 0
       '2007':
         revenue: 10973
-        rank: 34
+        rank: 35
         percent: 0
       '2008':
         revenue: 11694
-        rank: 34
+        rank: 35
         percent: 0
       '2009':
         revenue: 6781
-        rank: 33
+        rank: 34
         percent: 0
       '2010':
         revenue: 6483
-        rank: 35
+        rank: 36
         percent: 0
       '2011':
         revenue: 21745
-        rank: 34
+        rank: 35
         percent: 0
       '2012':
         revenue: 4653
-        rank: 36
+        rank: 37
         percent: 0
       '2013':
         revenue: 5438
-        rank: 35
+        rank: 36
         percent: 0
       '2014':
         revenue: 74539
-        rank: 29
+        rank: 30
         percent: 0
       '2015':
         revenue: 1464
-        rank: 36
+        rank: 37
         percent: 0
     Gas:
       '2006':
@@ -5107,6 +5107,47 @@ NY:
         percent: 0
 None:
   commodities:
+    All:
+      '2006':
+        revenue: -2097277
+        rank: 36
+        percent: null
+      '2007':
+        revenue: 4286771
+        rank: 18
+        percent: 0
+      '2008':
+        revenue: 2290084
+        rank: 22
+        percent: 0
+      '2009':
+        revenue: 1184274
+        rank: 23
+        percent: 0
+      '2010':
+        revenue: 4795138
+        rank: 18
+        percent: 0
+      '2011':
+        revenue: 3488512
+        rank: 19
+        percent: 0
+      '2012':
+        revenue: 10582574
+        rank: 14
+        percent: 0.1
+      '2013':
+        revenue: 5947950
+        rank: 16
+        percent: 0
+      '2014':
+        revenue: 6417183
+        rank: 15
+        percent: 0.1
+      '2015':
+        revenue: 8382399
+        rank: 14
+        percent: 0.1
     None:
       '2006':
         revenue: -2097277
@@ -5157,39 +5198,39 @@ OH:
         percent: 0
       '2007':
         revenue: 864149
-        rank: 25
+        rank: 26
         percent: 0
       '2008':
         revenue: 1066786
-        rank: 24
+        rank: 25
         percent: 0
       '2009':
         revenue: 616811
-        rank: 25
+        rank: 26
         percent: 0
       '2010':
         revenue: 770414
-        rank: 21
+        rank: 22
         percent: 0
       '2011':
         revenue: 663841
-        rank: 24
+        rank: 25
         percent: 0
       '2012':
         revenue: 555716
-        rank: 24
+        rank: 25
         percent: 0
       '2013':
         revenue: 588220
-        rank: 24
+        rank: 25
         percent: 0
       '2014':
         revenue: 547125
-        rank: 23
+        rank: 24
         percent: 0
       '2015':
         revenue: 290504
-        rank: 24
+        rank: 25
         percent: 0
     Coal:
       '2010':
@@ -5607,11 +5648,11 @@ OR:
         percent: 0
       '2007':
         revenue: 1146583
-        rank: 22
+        rank: 23
         percent: 0
       '2008':
         revenue: 526171
-        rank: 28
+        rank: 29
         percent: 0
       '2009':
         revenue: 1407294
@@ -5619,27 +5660,27 @@ OR:
         percent: 0
       '2010':
         revenue: 701504
-        rank: 23
+        rank: 24
         percent: 0
       '2011':
         revenue: 794033
-        rank: 23
+        rank: 24
         percent: 0
       '2012':
         revenue: 719453
-        rank: 23
+        rank: 24
         percent: 0
       '2013':
         revenue: 663698
-        rank: 23
+        rank: 24
         percent: 0
       '2014':
         revenue: 657788
-        rank: 22
+        rank: 23
         percent: 0
       '2015':
         revenue: 178259
-        rank: 26
+        rank: 27
         percent: 0
     Geothermal:
       '2006':
@@ -5728,39 +5769,39 @@ PA:
         percent: 0
       '2007':
         revenue: 77625
-        rank: 30
+        rank: 31
         percent: 0
       '2008':
         revenue: 102608
-        rank: 30
+        rank: 31
         percent: 0
       '2009':
         revenue: 4363
-        rank: 35
+        rank: 36
         percent: 0
       '2010':
         revenue: 337310
-        rank: 28
+        rank: 29
         percent: 0
       '2011':
         revenue: 107024
-        rank: 29
+        rank: 30
         percent: 0
       '2012':
         revenue: 146213
-        rank: 29
+        rank: 30
         percent: 0
       '2013':
         revenue: 94509
-        rank: 29
+        rank: 30
         percent: 0
       '2014':
         revenue: 229071
-        rank: 26
+        rank: 27
         percent: 0
       '2015':
         revenue: 439051
-        rank: 22
+        rank: 23
         percent: 0
     Gas:
       '2006':
@@ -5907,31 +5948,31 @@ SC:
         percent: 0
       '2008':
         revenue: 1110
-        rank: 35
+        rank: 36
         percent: 0
       '2009':
         revenue: 6636
-        rank: 34
+        rank: 35
         percent: 0
       '2010':
         revenue: 3741
-        rank: 36
+        rank: 37
         percent: 0
       '2011':
         revenue: 3464
-        rank: 36
+        rank: 37
         percent: 0
       '2012':
         revenue: 5516
-        rank: 35
+        rank: 36
         percent: 0
       '2014':
         revenue: 6732
-        rank: 35
+        rank: 36
         percent: 0
       '2015':
         revenue: 3329
-        rank: 35
+        rank: 36
         percent: 0
     Hardrock:
       '2006':
@@ -5975,7 +6016,7 @@ SD:
         percent: 0
       '2007':
         revenue: 2135360
-        rank: 21
+        rank: 22
         percent: 0
       '2008':
         revenue: 2601543
@@ -5987,27 +6028,27 @@ SD:
         percent: 0
       '2010':
         revenue: 1549906
-        rank: 20
+        rank: 21
         percent: 0
       '2011':
         revenue: 2513630
-        rank: 19
+        rank: 20
         percent: 0
       '2012':
         revenue: 3594425
-        rank: 19
+        rank: 20
         percent: 0
       '2013':
         revenue: 2787632
-        rank: 19
+        rank: 20
         percent: 0
       '2014':
         revenue: 4324209
-        rank: 18
+        rank: 19
         percent: 0
       '2015':
         revenue: 626499
-        rank: 20
+        rank: 21
         percent: 0
     Gas:
       '2006':
@@ -6137,15 +6178,15 @@ TN:
     All:
       '2007':
         revenue: 132
-        rank: 35
+        rank: 36
         percent: 0
       '2009':
         revenue: 132
-        rank: 37
+        rank: 38
         percent: 0
       '2011':
         revenue: 132
-        rank: 38
+        rank: 39
         percent: 0
     Oil & Gas (Non-Royalty):
       '2007':
@@ -6947,39 +6988,39 @@ VA:
         percent: 0
       '2007':
         revenue: 461122
-        rank: 28
+        rank: 29
         percent: 0
       '2008':
         revenue: 710580
-        rank: 25
+        rank: 26
         percent: 0
       '2009':
         revenue: 191188
-        rank: 28
+        rank: 29
         percent: 0
       '2010':
         revenue: 240025
-        rank: 29
+        rank: 30
         percent: 0
       '2011':
         revenue: 78546
-        rank: 30
+        rank: 31
         percent: 0
       '2012':
         revenue: 202468
-        rank: 28
+        rank: 29
         percent: 0
       '2013':
         revenue: 138330
-        rank: 28
+        rank: 29
         percent: 0
       '2014':
         revenue: 110800
-        rank: 28
+        rank: 29
         percent: 0
       '2015':
         revenue: 126809
-        rank: 28
+        rank: 29
         percent: 0
     Gas:
       '2006':
@@ -7118,39 +7159,39 @@ WA:
         percent: 0
       '2007':
         revenue: 989250
-        rank: 24
+        rank: 25
         percent: 0
       '2008':
         revenue: 1215870
-        rank: 23
+        rank: 24
         percent: 0
       '2009':
         revenue: 1106411
-        rank: 23
+        rank: 24
         percent: 0
       '2010':
         revenue: 541177
-        rank: 24
+        rank: 25
         percent: 0
       '2011':
         revenue: 398064
-        rank: 26
+        rank: 27
         percent: 0
       '2012':
         revenue: 11122
-        rank: 33
+        rank: 34
         percent: 0
       '2013':
         revenue: 10843
-        rank: 33
+        rank: 34
         percent: 0
       '2014':
         revenue: 9201
-        rank: 34
+        rank: 35
         percent: 0
       '2015':
         revenue: 8437
-        rank: 34
+        rank: 35
         percent: 0
     Coal:
       '2006':
@@ -7244,7 +7285,7 @@ WV:
         percent: 0
       '2007':
         revenue: 1029868
-        rank: 23
+        rank: 24
         percent: 0
       '2008':
         revenue: 2340591
@@ -7252,31 +7293,31 @@ WV:
         percent: 0
       '2009':
         revenue: 904987
-        rank: 24
+        rank: 25
         percent: 0
       '2010':
         revenue: 704915
-        rank: 22
+        rank: 23
         percent: 0
       '2011':
         revenue: 890557
-        rank: 22
+        rank: 23
         percent: 0
       '2012':
         revenue: 547513
-        rank: 25
+        rank: 26
         percent: 0
       '2013':
         revenue: 699257
-        rank: 22
+        rank: 23
         percent: 0
       '2014':
         revenue: 720311
-        rank: 21
+        rank: 22
         percent: 0
       '2015':
         revenue: 654827
-        rank: 19
+        rank: 20
         percent: 0
     Coal:
       '2015':

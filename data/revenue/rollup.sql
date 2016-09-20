@@ -6,24 +6,6 @@ WHERE product IS NULL;
 DELETE FROM county_revenue WHERE revenue_type IS NULL;
 DELETE FROM offshore_revenue WHERE revenue_type IS NULL;
 
--- create "all commodity" rows by county
-DELETE FROM county_revenue WHERE commodity = 'All';
-INSERT INTO county_revenue
-(
-    year, state, county, fips,
-    commodity, product, revenue_type,
-    revenue
-)
-SELECT
-    year, state, county, fips,
-    'All' AS commodity,
-    'All' AS product,
-    'All' AS revenue_type,
-    SUM(revenue) AS revenue
-FROM county_revenue
-GROUP BY
-    year, state, county, fips;
-
 -- update NULL columns in civil penalties table
 UPDATE civil_penalties_revenue
 SET
@@ -45,6 +27,24 @@ SELECT
 FROM civil_penalties_revenue
 GROUP BY
     year, state, commodity, revenue_type;
+
+-- create "all commodity" rows by county
+DELETE FROM county_revenue WHERE commodity = 'All';
+INSERT INTO county_revenue
+(
+    year, state, county, fips,
+    commodity, product, revenue_type,
+    revenue
+)
+SELECT
+    year, state, county, fips,
+    'All' AS commodity,
+    'All' AS product,
+    'All' AS revenue_type,
+    SUM(revenue) AS revenue
+FROM county_revenue
+GROUP BY
+    year, state, county, fips;
 
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS state_revenue_type;
@@ -333,7 +333,7 @@ GROUP BY
     year;
 
 -- then create national revenue type as an aggregate view
--- on state_revenue
+-- on regional_revenue_type
 DROP TABLE IF EXISTS national_revenue_type;
 CREATE TABLE national_revenue_type AS
     SELECT

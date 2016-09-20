@@ -33,9 +33,25 @@
 
     <div class="chart-list">
 
+    {% assign withheld_products = '' | split: '' %}
+
     {% for product in federal_products %}
-      {% assign product_slug = product[0] | slugify %}
       {% assign product_name = product[1].name | default: product[0] %}
+
+      {% assign all_withheld = true %}
+      {% for product_year in product[1].volume %}
+        {% if year_range contains product_year[0] and product_year[1].volume != nil %}
+          {% assign all_withheld = false %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if all_withheld %}
+        <!-- all withheld: {{ product[0] }} -->
+        {% assign withheld_products = withheld_products | push: product %}
+        {% continue %}
+      {% endif %}
+
+      {% assign product_slug = product[0] | slugify %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
       {% assign units = product[1].units | downcase | default: 'units' %}
@@ -59,7 +75,7 @@
 
             <figure class="chart">
               <eiti-bar-chart
-                aria-controls="federal-production-figures-{{ product_slug }}"
+                aria-controls="federal-production-figures-{{ product_slug }} federal-production-withheld"
                 data='{{ production_values | map_hash: "volume" | jsonify }}'
                 x-range="{{ year_range }}"
                 x-value="{{ year }}"
@@ -145,6 +161,31 @@
     {% endfor %}
 
     </div><!-- /.chart-list -->
+
+    <section id="federal-production-withheld">
+      <!-- withheld products: {{ withheld_products | jsonify }} -->
+    {% if withheld_products.size > 0 %}
+      <h3>Data withheld</h3>
+      <p>
+        Production volume was {{ 'withheld' | term }} for the
+        following product(s) in
+        <span class="eiti-bar-chart-x-value">{{ year }}</span>:
+      </p>
+      <ul>
+        {% assign all_years = year_list | to_s %}
+        {% for product in withheld_products %}
+          {% assign product_years = '' | split: '' %}
+          {% for _year in product[1].volume %}
+            {% assign product_years = product_years | push: _year[0] %}
+          {% endfor %}
+        <li data-years-visible="{{ product_years | join: ',' }}"
+          {% unless product_years contains year %}aria-hidden="true"{% endunless %}>
+          {{ product[1].name | default: product[0] }}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    </section>
 
   </section>
 

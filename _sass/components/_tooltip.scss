@@ -10,6 +10,16 @@
   position: absolute;
   z-index: 9000;
 
+  &.subtle {
+    border: 1px solid $gray-light;
+    opacity: 0.95;
+
+    p {
+      color: $base-font-color;
+      font-weight: $weight-light;
+    }
+  }
+
   p {
     @include heading('para-sm');
 

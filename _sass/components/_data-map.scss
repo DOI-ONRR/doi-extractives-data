@@ -133,6 +133,7 @@ eiti-data-map {
     &.selected use,
     &.mouseover use {
       stroke-width: 3px;
+      stroke-linejoin: round;
     }
 
     &.mouseover use {

@@ -29,7 +29,9 @@ describe('federal production (ONRR) sentinels', function() {
       var difference = expected - actual
       assert.ok(
         Math.abs(difference) < 10,
-        'expected ' + expected + ', got: ' + actual + ' for: ' + [product, year].join(' | ')
+        'expected ' + expected +
+        ', got: ' + actual +
+        ' for: ' + [product, year].join(' | ')
       );
     };
 

@@ -69,7 +69,7 @@ data-map {
     padding: 0;
     padding-bottom: $base-padding;
     padding-left: calc(12px + #{$base-padding-lite});
-    margin-right: $base-padding;
+    padding-right: $base-padding;
     position: relative;
 
     &:last-of-type {

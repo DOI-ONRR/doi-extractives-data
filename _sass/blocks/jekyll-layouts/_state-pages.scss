@@ -28,6 +28,10 @@
     margin-top: 4rem;
   }
 
+  .pre-stikcy-small {
+    margin-top: 3rem - $standard-padding-large;
+  }
+
   ul + h3:not(.chart-title):not(.title-land-ownership),
   p + h3:not(.chart-title):not(.title-land-ownership) {
     margin-top: -0.75rem; //to compensate for margin from preceding selectors

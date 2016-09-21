@@ -11,6 +11,10 @@
     }
   }
 
+  &.sticky {
+    padding-top: $standard-padding-large + 1rem;
+  }
+
   ul {
     a {
       text-decoration: none;

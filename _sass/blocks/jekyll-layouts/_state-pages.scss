@@ -115,8 +115,11 @@
   }
 
   .state-pages-ownership {
+    @include omega();
+
     float: right;
-    margin-left: 20px;
+    margin-left: $base-padding;
+    padding-bottom: 0;
   }
 }
 

@@ -1,0 +1,47 @@
+<section id="federal-disbursements" class="disbursements">
+
+  <h3>Federal disbursements</h3>
+
+  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
+  <p>
+    Most federal revenue disbursements go into national funds. For detailed data about which expenditures and projects from those national funds are in {{ state_name }}, see <a href="{{ site.baseurl }}/explore/#federal-disbursements">nationwide federal disbursements</a>.
+  </p>
+
+  {% assign disbursements = site.data.federal_disbursements[state_id] %}
+
+  {% if disbursements %}
+
+  <p>
+    ONRR also disburses some revenue from natural resource extraction to state governments.
+    <strong>
+      In {{ year }}, ONRR disbursed
+        ${{ disbursements.All.All[year] | round | intcomma }}
+        to {{ state_name }}.
+    </strong>
+    <!-- Includes a table showing onshore/offshore only if there are offshore disbursements to show -->
+    {% if disbursements.All.Offshore[year] > 0 %}
+    This included revenues from both onshore and offshore extraction in or near {{ state_name }}:
+  </p>
+  <ul>
+    <li>${{ disbursements.All.Onshore[year] | round | intcomma }} was from onshore revenues</li>
+    <li>${{ disbursements.All.Offshore[year] | round | intcomma }} was from offshore revenues</li>
+  </ul>
+  {% else %}
+  </p>
+  {% endif %}
+
+
+  {% else %}
+  <!-- If no disbursements -->
+  <p><strong>
+    {{ state_name }} did not receive any disbursements from ONRR in {{ year }}. This is usually because there was no natural resource extraction on federal land in the state.
+  </strong></p>
+  {% endif %}
+
+  <p>
+    <a href="{{ site.baseurl }}/downloads/disbursements/" class="data-downloads">
+      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+    </a>
+  </p>
+
+</section>

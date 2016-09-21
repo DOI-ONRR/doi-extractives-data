@@ -80,27 +80,21 @@
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-components.html#kssref-components-carousel">
-                <span class="kss-nav__ref">3.6</span
-                ><span class="kss-nav__name">Carousel</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
               <a href="section-components.html#kssref-components-drawer">
-                <span class="kss-nav__ref">3.7</span
+                <span class="kss-nav__ref">3.6</span
                 ><span class="kss-nav__name">Glossary</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-components.html#kssref-components-footnotes">
-                <span class="kss-nav__ref">3.8</span
+                <span class="kss-nav__ref">3.7</span
                 ><span class="kss-nav__name">Footnotes</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-components.html#kssref-components-hero">
-                <span class="kss-nav__ref">3.9</span
-                ><span class="kss-nav__name">Hero</span>
+              <a href="section-components.html#kssref-components-ribbon">
+                <span class="kss-nav__ref">3.8</span
+                ><span class="kss-nav__name">Ribbon</span>
               </a>
             </li>
         </ul>
@@ -186,38 +180,40 @@ screen sizes smaller than medium</p>
           Example
         </div>
         <div class="kss-modifier__example">
-          <ul accordion>
-   <li accordion-item accordion-open="true">
+          <ul accordion="primary">
+   <li>
        <h3>Heading</h3>
-       <button class="accordion-button" accordion-button title="Title content"></button>
-       <div class="accordion-content">Accordion Content</div
+       <button accordion-button title="Title content"></button>
+       <div>Accordion Content</div
    </li>
 </ul>
-<ul accordion>
-   <li accordion-item accordion-open="true">
+<ul accordion="secondary">
+   <li aria-expanded="false">
        <h3>Heading</h3>
-       <button class="accordion-button_more" accordion-button>more</button>
-       <button class="accordion-button_more" accordion-button>less</button>
-       <div class="accordion-content">Accordion Content</div
+       <button accordion-text>
+         <span class='accordion-more'>more</span>
+         <span class='accordion-less'>less</span>
+       </button>
    </li>
 </ul>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul accordion&gt;
-   &lt;li accordion-item accordion-open=&quot;true&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul accordion=&quot;primary&quot;&gt;
+   &lt;li&gt;
        &lt;h3&gt;Heading&lt;/h3&gt;
-       &lt;button class=&quot;accordion-button&quot; accordion-button title=&quot;Title content&quot;&gt;&lt;/button&gt;
-       &lt;div class=&quot;accordion-content&quot;&gt;Accordion Content&lt;/div
+       &lt;button accordion-button title=&quot;Title content&quot;&gt;&lt;/button&gt;
+       &lt;div&gt;Accordion Content&lt;/div
    &lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul accordion&gt;
-   &lt;li accordion-item accordion-open=&quot;true&quot;&gt;
+&lt;ul accordion=&quot;secondary&quot;&gt;
+   &lt;li aria-expanded=&quot;false&quot;&gt;
        &lt;h3&gt;Heading&lt;/h3&gt;
-       &lt;button class=&quot;accordion-button_more&quot; accordion-button&gt;more&lt;/button&gt;
-       &lt;button class=&quot;accordion-button_more&quot; accordion-button&gt;less&lt;/button&gt;
-       &lt;div class=&quot;accordion-content&quot;&gt;Accordion Content&lt;/div
+       &lt;button accordion-text&gt;
+         &lt;span class=&#x27;accordion-more&#x27;&gt;more&lt;/span&gt;
+         &lt;span class=&#x27;accordion-less&#x27;&gt;less&lt;/span&gt;
+       &lt;/button&gt;
    &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
       </div>
@@ -527,67 +523,9 @@ screen sizes smaller than medium</p>
   &lt;/div&gt;&lt;/a&gt;
   &lt;div class=&quot;card-content&quot;&gt;
     &lt;p&gt;Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.&lt;/p&gt;
-    &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;Visit this page &lt;span class=&quot;shrink-fa&quot;&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;Visit this page &lt;span class=&quot;shrink-fa&quot;&gt;&lt;icon class=&quot;fa fa-chevron-right&quot;&gt;&lt;/icon&gt;&lt;/span&gt;&lt;/a&gt;
   &lt;/div&gt;
 &lt;/article&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-components-carousel" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-components-carousel">
-          <span class="kss-title__ref">
-              3.6
-            <span class="kss-title__permalink-hash">
-                #components.carousel
-            </span>
-          </span>
-          Carousel
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>A carousel with circle pagination</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="carousel">
-  <h3 class="carousel-header_text">How do natural resources become federal revenues?</h3>
-  <button class="carousel-button button-big button-primary">See how it works</button>
-  <h2>Step 1: Plan</h2>
-  <img class="carousel-image" src="https://eiti-dev.18f.gov/img/revenues.png" alt="revenues">
-  <ul class="carousel-pagination">
-    <li class="carousel-pagination_item active"></li>
-    <li class="carousel-pagination_item"></li>
-    <li class="carousel-pagination_item"></li>
-    <li class="carousel-pagination_item"></li>
-  </ul>
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;carousel&quot;&gt;
-  &lt;h3 class=&quot;carousel-header_text&quot;&gt;How do natural resources become federal revenues?&lt;/h3&gt;
-  &lt;button class=&quot;carousel-button button-big button-primary&quot;&gt;See how it works&lt;/button&gt;
-  &lt;h2&gt;Step 1: Plan&lt;/h2&gt;
-  &lt;img class=&quot;carousel-image&quot; src=&quot;https://eiti-dev.18f.gov/img/revenues.png&quot; alt=&quot;revenues&quot;&gt;
-  &lt;ul class=&quot;carousel-pagination&quot;&gt;
-    &lt;li class=&quot;carousel-pagination_item active&quot;&gt;&lt;/li&gt;
-    &lt;li class=&quot;carousel-pagination_item&quot;&gt;&lt;/li&gt;
-    &lt;li class=&quot;carousel-pagination_item&quot;&gt;&lt;/li&gt;
-    &lt;li class=&quot;carousel-pagination_item&quot;&gt;&lt;/li&gt;
-  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
       </div>
 
@@ -598,7 +536,7 @@ screen sizes smaller than medium</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-components-drawer">
           <span class="kss-title__ref">
-              3.7
+              3.6
             <span class="kss-title__permalink-hash">
                 #components.drawer
             </span>
@@ -622,7 +560,7 @@ screen sizes smaller than medium</p>
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink" href="#kssref-components-drawer-drawer">
           <span class="kss-title__ref">
-              3.7.1
+              3.6.1
             <span class="kss-title__permalink-hash">
                 #components.drawer.drawer
             </span>
@@ -642,7 +580,7 @@ screen sizes smaller than medium</p>
           Glossary drawer
 <div class="drawer" id="glossary" aria-hidden="false">
   <button title="Close glossary"
-      class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
+      class="button button--close toggle"><label class="sr-only">Close glossary</label><icon class="icon-close-x"></icon>
   </button>
   <label for="drawer-search" class="label">Filter glossary terms</label>
   <input id="drawer-search" type="search" placeholder="e.g. placeholder text">
@@ -654,7 +592,7 @@ screen sizes smaller than medium</p>
         <pre class="prettyprint linenums lang-html"><code data-language="html">Glossary drawer
 &lt;div class=&quot;drawer&quot; id=&quot;glossary&quot; aria-hidden=&quot;false&quot;&gt;
   &lt;button title=&quot;Close glossary&quot;
-      class=&quot;button button--close toggle&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;&lt;icon class=&quot;icon-close-x&quot;&gt;&lt;/icon&gt;&lt;/span&gt;
+      class=&quot;button button--close toggle&quot;&gt;&lt;label class=&quot;sr-only&quot;&gt;Close glossary&lt;/label&gt;&lt;icon class=&quot;icon-close-x&quot;&gt;&lt;/icon&gt;
   &lt;/button&gt;
   &lt;label for=&quot;drawer-search&quot; class=&quot;label&quot;&gt;Filter glossary terms&lt;/label&gt;
   &lt;input id=&quot;drawer-search&quot; type=&quot;search&quot; placeholder=&quot;e.g. placeholder text&quot;&gt;
@@ -668,7 +606,7 @@ screen sizes smaller than medium</p>
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink" href="#kssref-components-drawer-term">
           <span class="kss-title__ref">
-              3.7.2
+              3.6.2
             <span class="kss-title__permalink-hash">
                 #components.drawer.term
             </span>
@@ -710,13 +648,13 @@ screen sizes smaller than medium</p>
 </span>, Brian asked inquisitively</p>
         </div>
         <div class="kss-modifier__name kss-style">
-          <pre>.term-p</pre>
+          <pre>.term-end</pre>
         </div>
         <div class="kss-modifier__description kss-style">
-          Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
+          Used when directly followed by punctuation
         </div>
         <div class="kss-modifier__example">
-          <p>What are <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">
+          <p>What are <span class="term term-end" data-term="extractive industry" title="Click to define" tabindex="0">
     extractive industries
     <icon class="icon-book"></icon>
 </span>, Brian asked inquisitively</p>
@@ -726,7 +664,7 @@ screen sizes smaller than medium</p>
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;What are &lt;span class=&quot;term [modifier class]&quot; data-term=&quot;extractive industry&quot; title=&quot;Click to define&quot; tabindex=&quot;0&quot;&gt;
     extractive industries
-    &lt;i class=&quot;icon-book&quot;&gt;&lt;/i&gt;
+    &lt;icon class=&quot;icon-book&quot;&gt;&lt;/icon&gt;
 &lt;/span&gt;, Brian asked inquisitively&lt;/p&gt;</code></pre>
       </div>
 
@@ -737,7 +675,7 @@ screen sizes smaller than medium</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-components-footnotes">
           <span class="kss-title__ref">
-              3.8
+              3.7
             <span class="kss-title__permalink-hash">
                 #components.footnotes
             </span>
@@ -788,24 +726,24 @@ Initialiazing a <code>footnotes</code> counter on the wrapper</p>
       </div>
 
       </section>
-      <section id="kssref-components-hero" class="kss-section kss-section--depth-2">
+      <section id="kssref-components-ribbon" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-components-hero">
+        <a class="kss-title__permalink" href="#kssref-components-ribbon">
           <span class="kss-title__ref">
-              3.9
+              3.8
             <span class="kss-title__permalink-hash">
-                #components.hero
+                #components.ribbon
             </span>
           </span>
-          Hero
+          Ribbon
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>A hero is a prominent eye-catcher above the fold</p>
+        <p>A ribbon with two columns of content</p>
 
       </div>
     </div>
@@ -816,40 +754,42 @@ Initialiazing a <code>footnotes</code> counter on the wrapper</p>
         </div>
         <div class="kss-modifier__example">
           <section class="slab-delta">
-  <div class="container-outer">
-   <div class="container-left-8 hero-left">
-     <h1></h1>
-     <p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-   </div>
-   <div class="container-right-4 hero-right">
-      <div class="hero-right_square">
-        <figure>
-          <img class="hero-right_image" src="/img/landing-placeholders/federal-rev.png"/>
-          <figcaption class="hero-right_caption"><a href="">Link to how something works</a></figcaption>
-        </figure>
-      </div>
+  <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
+    <div class="container-left-8 ribbon-hero ribbon-hero-column">
+      <h1></h1>
+      <p class="ribbon-hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
+      <p class="ribbon-hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="/explore/federal-production/">federal production</a> and <a href="/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
     </div>
- </div>
+    <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
+      <figure class="ribbon-card-top">
+        <a href="/explore/#revenue/">
+          <img class="ribbon-card-image" src="/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+        </a>
+      </figure>
+      <figcaption class="ribbon-card-bottom">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
+    </div>
+  </div>
 </section>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;slab-delta&quot;&gt;
-  &lt;div class=&quot;container-outer&quot;&gt;
-   &lt;div class=&quot;container-left-8 hero-left&quot;&gt;
-     &lt;h1&gt;&lt;/h1&gt;
-     &lt;p class=&quot;hero-description&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.&lt;/p&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;container-right-4 hero-right&quot;&gt;
-      &lt;div class=&quot;hero-right_square&quot;&gt;
-        &lt;figure&gt;
-          &lt;img class=&quot;hero-right_image&quot; src=&quot;/img/landing-placeholders/federal-rev.png&quot;/&gt;
-          &lt;figcaption class=&quot;hero-right_caption&quot;&gt;&lt;a href=&quot;&quot;&gt;Link to how something works&lt;/a&gt;&lt;/figcaption&gt;
-        &lt;/figure&gt;
-      &lt;/div&gt;
+  &lt;div class=&quot;container-page-wrapper landing-section_top ribbon ribbon-column&quot;&gt;
+    &lt;div class=&quot;container-left-8 ribbon-hero ribbon-hero-column&quot;&gt;
+      &lt;h1&gt;&lt;/h1&gt;
+      &lt;p class=&quot;ribbon-hero-description&quot;&gt;Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.&lt;/p&gt;
+      &lt;p class=&quot;ribbon-hero-description&quot;&gt;We have information from government sources on &lt;a href=&quot;#revenue&quot;&gt;revenue&lt;/a&gt;, &lt;a href=&quot;#production&quot;&gt;production&lt;/a&gt;, and &lt;a href=&quot;#economic-impact&quot;&gt;economic impact&lt;/a&gt;. Several datasets are new in 2015, including &lt;a href=&quot;/explore/federal-production/&quot;&gt;federal production&lt;/a&gt; and &lt;a href=&quot;/explore/federal-revenue-by-company/&quot;&gt;federal revenue by company&lt;/a&gt; information.&lt;/p&gt;
     &lt;/div&gt;
- &lt;/div&gt;
+    &lt;div class=&quot;container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card&quot;&gt;
+      &lt;figure class=&quot;ribbon-card-top&quot;&gt;
+        &lt;a href=&quot;/explore/#revenue/&quot;&gt;
+          &lt;img class=&quot;ribbon-card-image&quot; src=&quot;/img/explore-landing-intro.png&quot; alt=&quot;Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.&quot;&gt;
+        &lt;/a&gt;
+      &lt;/figure&gt;
+      &lt;figcaption class=&quot;ribbon-card-bottom&quot;&gt;The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. &lt;a href=&quot;/explore/federal-revenue-by-location/&quot; class=&quot;link-alpha&quot;&gt;View the data.&lt;/a&gt;&lt;/figcaption&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/section&gt;</code></pre>
       </div>
 

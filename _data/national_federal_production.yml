@@ -1,0 +1,669 @@
+US:
+  products:
+    Anhydrous Sodium Sulfate (tons):
+      name: Anhydrous Sodium Sulfate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Borate Products (tons):
+      name: Borate Products
+      units: tons
+      volume:
+        '2006': 33106
+        '2007': 32736
+        '2008': 33520
+        '2009': 31284
+        '2010': 130833
+        '2011': 157392
+        '2012': 146943
+        '2013': 156530
+        '2014': 162731
+        '2015': 161433
+    Borax-Anhydrous (tons):
+      name: Borax-Anhydrous
+      units: tons
+      volume:
+        '2011': null
+    Borax-Decahydrate (tons):
+      name: Borax-Decahydrate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Borax-Pentahydrate (tons):
+      name: Borax-Pentahydrate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Boric Acid (tons):
+      name: Boric Acid
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Brine Barrels (bbl):
+      name: Brine Barrels
+      units: bbl
+      volume:
+        '2006': 66862
+        '2007': null
+        '2008': null
+        '2010': null
+    Brine Products (tons):
+      name: Brine Products
+      units: tons
+      volume:
+        '2006': 84052
+        '2007': 46600
+        '2008': 77591
+        '2009': 55478
+        '2010': 68328
+        '2011': 73522
+        '2012': 70061
+        '2013': 61077
+        '2014': 51291
+        '2015': 55480
+    Clay (tons):
+      name: Clay
+      units: tons
+      volume:
+        '2006': 84876
+        '2007': 67014
+        '2008': 25139
+        '2009': 7021
+        '2010': 15627
+        '2011': 21891
+        '2012': 29990
+        '2013': 28333
+        '2014': 33520
+        '2015': 51791
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2006': 445195265
+        '2007': 454801298
+        '2008': 487122754
+        '2009': 448430668
+        '2010': 456886171
+        '2011': 451869507
+        '2012': 422508325
+        '2013': 398004424
+        '2014': 409345817
+        '2015': 375560873
+    Coal Waste (Sub-Econ) (tons):
+      name: Coal Waste (Sub-Econ)
+      units: tons
+      volume:
+        '2014': null
+    Copper Concentrate (tons):
+      name: Copper Concentrate
+      units: tons
+      volume:
+        '2006': 19521
+        '2007': 12661
+        '2008': 12132
+        '2009': 9704
+        '2010': 10149
+        '2011': 9116
+        '2012': 22935
+        '2013': 15577
+        '2014': 20561
+        '2015': 25981
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 6475579236
+        '2007': 6528149825
+        '2008': 6331168811
+        '2009': 6531253981
+        '2010': 6258825614
+        '2011': 5753843881
+        '2012': 5368036689
+        '2013': 4941408110
+        '2014': 4855039984
+        '2015': 4782557794
+    'Geothermal - Direct Use, Millions of Gallons':
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      volume:
+        '2011': 71606330
+        '2012': 113448300
+        '2013': 69920725
+        '2014': 63624483
+        '2015': 281998685
+    'Geothermal - Direct Utilization, Hundreds of Gallons':
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      volume:
+        '2006': 85859889
+        '2007': 106272414
+        '2008': 123838519
+        '2009': 198988743
+        '2010': 163346106
+        '2011': 131014604
+        '2012': 123103803
+        '2013': 57238368
+        '2014': 46536535
+        '2015': 19439305
+    'Geothermal - Direct Utilization, Millions of BTUs':
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
+      volume:
+        '2006': 238147
+        '2007': 217500
+        '2008': 219089
+        '2009': 179171
+        '2010': 224486
+        '2011': 228011
+        '2012': 271470
+        '2013': 276337
+        '2014': 243504
+        '2015': 170924
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2006': 1654408081
+        '2007': 1679510246
+        '2008': 1640357983
+        '2009': 1816289184
+        '2010': 2016304987
+        '2011': 2006199903
+        '2012': 2134307660
+        '2013': 2373968767
+        '2014': 2580285664
+        '2015': 2805035112
+    'Geothermal - Electrical Generation, Other':
+      name: Geothermal
+      units: 'Electrical Generation, Other'
+      volume:
+        '2006': 227562
+        '2007': 207155
+        '2008': 237416
+        '2009': 233954
+        '2010': 223938
+        '2011': 19883
+        '2014': 691756
+        '2015': 666434
+    'Geothermal - Electrical Generation, Thousands of Pounds':
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      volume:
+        '2006': 2404278132
+        '2007': 2097093994
+        '2008': 2518754128
+        '2009': 2875731711
+        '2010': 2719032140
+        '2011': 2603301430
+        '2012': 2501855609
+        '2013': 2362410880
+        '2014': 2509148497
+        '2015': 2181931815
+    Geothermal - sulfur:
+      name: Geothermal
+      units: sulfur
+      volume:
+        '2010': 4670
+        '2011': 3470
+        '2012': 2598
+        '2013': 2448
+        '2014': 2090
+        '2015': 2401
+    Gilsonite (tons):
+      name: Gilsonite
+      units: tons
+      volume:
+        '2006': 8776
+        '2007': 10879
+        '2008': 16957
+        '2009': 13016
+        '2010': 28082
+        '2011': 22568
+        '2012': 35927
+        '2013': 24919
+        '2014': 28936
+        '2015': 16078
+    Gold (oz):
+      name: Gold
+      units: oz
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2011': null
+    Gold Ore (tons):
+      name: Gold Ore
+      units: tons
+      volume:
+        '2009': null
+        '2011': null
+    Gold Placer (oz):
+      name: Gold Placer
+      units: oz
+      volume:
+        '2009': null
+        '2010': null
+        '2011': null
+    Gold and Silver (tons):
+      name: Gold and Silver
+      units: tons
+      volume:
+        '2009': 7
+        '2011': 10
+    Gold and Silver Products (oz):
+      name: Gold and Silver Products
+      units: oz
+      volume:
+        '2006': 74
+        '2007': 40
+        '2008': 7
+        '2009': 217
+        '2010': 122
+        '2011': 23
+        '2013': 1
+    Hardrock Products (tons):
+      name: Hardrock Products
+      units: tons
+      volume:
+        '2006': 68941
+        '2007': 142378
+        '2008': 187627
+        '2009': 182432
+        '2010': 158266
+        '2011': 174574
+        '2012': 137956
+        '2013': 71696
+        '2014': 22598
+        '2015': 7632
+    Langbeinite (tons):
+      name: Langbeinite
+      units: tons
+      volume:
+        '2006': 734349
+        '2007': 966101
+        '2008': 974982
+        '2009': 648073
+        '2010': 830346
+        '2011': 745606
+        '2012': 859349
+        '2013': 707765
+        '2014': 363289
+        '2015': 553269
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2006': 224356
+        '2007': 222818
+        '2008': 204420
+        '2009': 196204
+        '2010': 184879
+        '2011': 178143
+        '2012': 157504
+        '2013': 146812
+        '2014': 144258
+        '2015': 152928
+    Leonardite (tons):
+      name: Leonardite
+      units: tons
+      volume:
+        '2006': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Limestone (tons):
+      name: Limestone
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Magnesium Chloride Brine (tons):
+      name: Magnesium Chloride Brine
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Manure Salts (tons):
+      name: Manure Salts
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+    Muriate Of Potash-Granular (tons):
+      name: Muriate Of Potash-Granular
+      units: tons
+      volume:
+        '2006': 327424
+        '2007': 429446
+        '2008': 398253
+        '2009': 233928
+        '2010': 364751
+        '2011': 454506
+        '2012': 424920
+        '2013': 342439
+        '2014': 467320
+        '2015': 406045
+    Muriate Of Potash-Standard (tons):
+      name: Muriate Of Potash-Standard
+      units: tons
+      volume:
+        '2006': 469892
+        '2007': 251708
+        '2008': 177001
+        '2009': 112839
+        '2010': 155054
+        '2011': 170449
+        '2012': 146453
+        '2013': 132492
+        '2014': 127433
+        '2015': 55777
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 597579939
+        '2007': 593673142
+        '2008': 550555733
+        '2009': 697514282
+        '2010': 697990724
+        '2011': 618722100
+        '2012': 613796668
+        '2013': 623103681
+        '2014': 699549189
+        '2015': 755158065
+    Other Coal Products (tons):
+      name: Other Coal Products
+      units: tons
+      volume:
+        '2006': 7056
+        '2008': 2232
+        '2009': 6060
+        '2010': 8100
+        '2011': 8496
+        '2012': 7316
+        '2013': 10666
+        '2014': 142273
+        '2015': 9375
+    Phosphate Raw Ore (tons):
+      name: Phosphate Raw Ore
+      units: tons
+      volume:
+        '2006': 2381392
+        '2007': 2324385
+        '2008': 2424258
+        '2009': 3423741
+        '2010': 3583213
+        '2011': 4911219
+        '2012': 5209329
+        '2013': 5073310
+        '2014': 5777094
+        '2015': 4950170
+    Potash (tons):
+      name: Potash
+      units: tons
+      volume:
+        '2006': 507207
+        '2007': 448032
+        '2008': 326418
+        '2009': 278149
+        '2010': 345161
+        '2011': 398067
+        '2012': 254825
+        '2013': 296669
+        '2014': 208401
+        '2015': 21201
+    Potassium Products (tons):
+      name: Potassium Products
+      units: tons
+      volume:
+        '2006': 237500
+        '2007': 231617
+        '2008': 539195
+        '2009': 353007
+        '2010': 400303
+        '2011': 526581
+        '2012': 158953
+        '2013': 171599
+        '2014': 449740
+        '2015': 330910
+    Purge Liquor (tons - equivalent):
+      name: Purge Liquor
+      units: tons - equivalent
+      volume:
+        '2006': 69814
+        '2007': 97711
+        '2008': 116333
+        '2009': 118021
+        '2010': 104405
+        '2011': 88412
+        '2012': 73596
+        '2013': 88213
+        '2014': 91878
+        '2015': 95877
+    Quartz Crystal (tickets/pounds):
+      name: Quartz Crystal
+      units: tickets/pounds
+      volume:
+        '2006': 6350
+        '2007': 2400
+        '2008': 11300
+        '2009': 1595
+        '2010': 1000
+        '2014': 960
+        '2015': 4701
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006': 512832
+        '2007': 705887
+        '2008': 634339
+        '2009': 641677
+        '2010': 798041
+        '2011': 864519
+        '2012': 750109
+        '2013': 894066
+        '2014': 898225
+        '2015': 764801
+    Silver (oz):
+      name: Silver
+      units: oz
+      volume:
+        '2013': null
+    Soda Ash (tons):
+      name: Soda Ash
+      units: tons
+      volume:
+        '2006': 5572933
+        '2007': 6420882
+        '2008': 7826519
+        '2009': 6172355
+        '2010': 5703292
+        '2011': 6478218
+        '2012': 5478399
+        '2013': 6027641
+        '2014': 6884396
+        '2015': 5690058
+    Sodium Bi-Carbonate (tons):
+      name: Sodium Bi-Carbonate
+      units: tons
+      volume:
+        '2006': 130788
+        '2007': 161456
+        '2008': 153519
+        '2009': 134148
+        '2010': 180737
+        '2011': 182790
+        '2012': 216439
+        '2013': 225383
+        '2014': 308965
+        '2015': 292402
+    Sodium Bisulfite (tons):
+      name: Sodium Bisulfite
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+    Sodium Decahydrate (tons):
+      name: Sodium Decahydrate
+      units: tons
+      volume:
+        '2006': null
+    Sodium Products (tons):
+      name: Sodium Products
+      units: tons
+      volume:
+        '2006': 362307
+        '2007': 369872
+        '2008': 428533
+        '2009': 239828
+        '2010': 393009
+        '2011': 471675
+        '2012': 371833
+        '2013': 298010
+        '2014': 488493
+        '2015': 379209
+    Sodium Sesquicarbonate (tons):
+      name: Sodium Sesquicarbonate
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': 121115
+        '2014': null
+        '2015': null
+    Sulfide (tons):
+      name: Sulfide
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Sylvite-Raw Ore (tons):
+      name: Sylvite-Raw Ore
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Trona Ore (tons):
+      name: Trona Ore
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': 139689
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+    Wavellite (tons):
+      name: Wavellite
+      units: tons
+      volume:
+        '2007': null
+        '2008': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2006': 54927
+        '2007': 56096
+        '2008': 45523
+        '2009': 50344
+        '2010': 43523
+        '2011': 43839
+        '2012': 32595
+        '2013': 40419
+        '2014': 44766
+        '2015': 37193

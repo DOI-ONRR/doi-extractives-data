@@ -1,0 +1,182 @@
+data-map {
+  display: block;
+
+  svg {
+    border: 1px solid $mid-light-gray;
+
+    [data-value] {
+      cursor: pointer;
+    }
+  }
+}
+
+
+// Land ownership map
+.land-ownership {
+
+  figure {
+    margin-top: 0;
+  }
+
+  > .text-container {
+    @include span-columns(4);
+  }
+
+  > .map-container {
+    @include span-columns(8);
+    @include omega();
+
+    .svg-container {
+      @include span-columns(8);
+
+      &.wide {
+        @include span-columns(12);
+        @include omega();
+      }
+    }
+
+    .map-container {
+      background-color: $gray-pale;
+      border: 0;
+      margin-bottom: 10px;
+    }
+
+    .legend-container {
+      @include span-columns(4);
+      @include omega();
+
+      &.wide {
+        @include span-columns(12);
+      }
+    }
+  }
+}
+
+.legend-ownership-svg {
+  .cells {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .cell {
+    @include font-size(0.7);
+    font-weight: $weight-book;
+    line-height: 0.9rem;
+    padding: 0;
+    padding-bottom: $base-padding;
+    padding-left: calc(12px + #{$base-padding-lite});
+    margin-right: $base-padding;
+    position: relative;
+
+    &:last-of-type {
+      @include omega();
+    }
+
+    &:first-of-type {
+      .swatch {
+        background-color: $greenest-land;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .swatch {
+        background-color: $greener-land;
+      }
+    }
+
+    .swatch {
+      background-color: $green-land;
+      display: inline-block;
+      height: 12px;
+      left: 0;
+      margin-right: $base-padding-lite;
+      position: absolute;
+      top: 0;
+      width: 12px;
+    }
+  }
+}
+
+// map legend
+.details-container {
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+}
+
+eiti-data-map {
+  .svg-container.wide {
+    .details-container {
+      display: none;
+    }
+  }
+
+  .legend-container {
+    .details-container {
+      display: none;
+    }
+
+    &.wide .details-container {
+      display: block;
+      position: static;
+      text-align: left;
+    }
+  }
+
+  .feature.county {
+    cursor: pointer;
+
+    &.selected use,
+    &.mouseover use {
+      stroke-width: 3px;
+      stroke-linejoin: round;
+    }
+
+    &.mouseover use {
+      stroke: $green-dark-chart-mid;
+    }
+
+    &.selected use {
+      stroke: $green-dark-chart;
+    }
+  }
+
+}
+
+.legend-svg {
+  border: none;
+  height: 215px;
+  padding: 0;
+  width: 200px;
+
+  .cell text {
+    @include font-size(3 / 4);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.legend-container.wide {
+  padding-top: $standard-padding-lite;
+
+  .legend-svg.horizontal {
+    height: 50px;
+  }
+}
+
+.legend-svg.horizontal {
+  .cell text {
+    font-size: 10px;
+  }
+}
+
+.legend-container.wide .legend-ownership-svg {
+  .label {
+    @include font-size(0.75);
+  }
+}

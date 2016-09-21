@@ -1,0 +1,88 @@
+{% assign revenue_year = page.state_revenue_year | default: 2014 | to_s %}
+{% assign streams = site.data.opt_in_state_revenues[include.location_id].streams %}
+
+{% if streams.size > 0 %}
+  {% assign streams_info = site.data.opt_in_state_streams[include.location_id] %}
+  {% assign streams_count = streams.size | minus: 1 %}
+  {% assign revenue_total = streams.All.Total[revenue_year] %}
+
+{% if page.state_revenue %}
+  {{ page.state_revenue | markdownify }}
+{% endif %}
+
+<!-- This link only works if the file is named correctly. -->
+<p>
+  <a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Download: {{ state_name }} revenue streams (PDF)
+  </a>
+</p>
+
+<p>
+  In {{ revenue_year }}, the state of
+  {{ state_name }} collected
+  <strong>${{ revenue_total | default: 0 | intcomma }}
+  in state revenue from natural resource extraction</strong>
+  (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
+</p>
+
+<table is="bar-chart-table" class="table-basic"
+  {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th><strong>State revenue stream</strong></th>
+      <th class="num"><strong>Amount collected</strong></th>
+    </tr>
+  </thead>
+
+  {% for _stream in streams %}
+    {% assign stream = _stream[0] %}
+    {% assign stream_name = stream | xml_escape %}
+    {% if stream_name == 'All' %}
+      {% assign stream_name = 'Total' %}
+    {% endif %}
+    {% assign stream_slug = stream | slugify %}
+    {% assign stream_sources = _stream[1] %}
+    {% assign stream_info = streams_info[stream] %}
+    {% assign stream_dollars = stream_sources.Total[revenue_year] %}
+  <tbody id="revenue-disbursement-stream-{{ stream_slug }}"
+    class="table-accordion-group">
+    <tr>
+      <td>
+        {% if stream_info %}
+        <button is="aria-toggle" aria-controls="stream-{{ stream_slug }}"
+          aria-expanded="false" class="not-button-like">
+          {{ stream_name }}
+        </button>
+        {% else %}
+          {{ stream_name }}
+        {% endif %}
+      </td>
+      <td data-value="{{ stream_dollars }}"
+        data-year-values='{{ stream_sources.Total | jsonify }}'>
+        ${{ stream_dollars | default: 0 | intcomma }}
+      </td>
+    </tr>
+    {% if stream_info %}
+    <tr id="stream-{{ stream_slug }}">
+      <td colspan="2">{{ stream_info }}</td>
+    </tr>
+    {% endif %}
+  </tbody>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% if page.state_revenue_sustainability %}
+  <h4 id="revenue-sustainability">Revenue sustainability</h4>
+
+  {{ page.state_revenue_sustainability | markdownify }}
+{% endif %}
+
+{% if page.state_tax_expenditures %}
+  <h4 id="tax-expenditures">Tax expenditures</h4>
+  <p>
+    Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
+  </p>
+
+  {{ page.state_tax_expenditures | markdownify }}
+{% endif %}

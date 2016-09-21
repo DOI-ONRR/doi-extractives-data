@@ -72,7 +72,7 @@ title_display: 'Download Data & Documentation'
 
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/federal-production/" id="production-fed" class="link-no_under"><h3>Federal lands and waters</h3></a>
-    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2005 to 2014 by state and county for 55 individual products.</p>
+    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2006 to 2015 by state and county.</p>
     <a href="{{site.baseurl}}/downloads/federal-production/">
       <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
     </a>

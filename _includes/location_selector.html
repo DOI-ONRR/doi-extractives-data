@@ -1,24 +1,21 @@
 <select
-  id="{{ location_selector_id }}"
-  {% if location_selector_url_prefix %}
-  onchange="window.location = '{{ site.baseurl }}{{ location_selector_url_prefix }}' + this.value"
+  id="location-selector"
+  onchange="window.location = '{{ site.baseurl }}' + this.value">
+
+  {% if include.default %}
+    <option value="" disabled selected>{{ include.default }}</option>
   {% endif %}
-  data-selected="{{ location_selector_selected }}">
-  {% if location_selector_none %}
-  <option value="{{ location_selector_none_value }}">{{ location_selector_none }}</option>
+  {% if include.nationwide %}
+    <option value="{{ include.nationwide_url }}">{{ include.nationwide_title }}</option>
   {% endif %}
   <optgroup label="States">
-    {% for state in site.data.states %}
-    <option
-      {% if location_selector_selected == state.id %}selected="selected"{% endif %}
-      value="onshore/{{ state.id }}">{{ state.name }}</option>
+    {% for state in site.states %}
+    <option value="{{ state.url }}">{{ state.title }}</option>
     {% endfor %}
   </optgroup>
-  <optgroup label="Offshore Areas">
-    {% for area in site.data.offshore_areas %}
-    <option
-      {% if location_selector_selected == area.id %}selected="selected"{% endif %}
-      value="offshore/{{ area.id }}">{{ area.name }}</option>
+  <optgroup label="Offshore Regions">
+    {% for region in site.offshore_regions %}
+    <option value="{{ region.url }}">{{ region.title }}</option>
     {% endfor %}
   </optgroup>
 </select>

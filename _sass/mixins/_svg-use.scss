@@ -1,0 +1,9 @@
+// duplicates a selector
+@mixin svg-use($selectors...) {
+  @each $selector in $selectors {
+    #{$selector} use,
+    #{$selector} path {
+      @content;
+    }
+  }
+}

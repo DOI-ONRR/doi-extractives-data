@@ -1,0 +1,4 @@
+US:
+  '{year}':
+    count: '{jobs}'
+    percent: '{percent}'

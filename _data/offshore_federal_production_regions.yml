@@ -1,0 +1,174 @@
+Alaska:
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 25229357
+        '2007':
+          volume: 26817788
+        '2008':
+          volume: 32926351
+        '2009':
+          volume: 30708137
+        '2010':
+          volume: 30919154
+        '2011':
+          volume: 34305968
+        '2012':
+          volume: 23913986
+        '2013':
+          volume: 31750055
+        '2014':
+          volume: 34766101
+        '2015':
+          volume: 36198609
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 3367689
+        '2007':
+          volume: 2475709
+        '2008':
+          volume: 2985742
+        '2009':
+          volume: 1872793
+        '2010':
+          volume: 1383388
+        '2011':
+          volume: 1154070
+        '2012':
+          volume: 695587
+        '2013':
+          volume: 752690
+        '2014':
+          volume: 740073
+        '2015':
+          volume: 721333
+Gulf:
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 2921289137
+        '2007':
+          volume: 2813193096
+        '2008':
+          volume: 2330333629
+        '2009':
+          volume: 2451144595
+        '2010':
+          volume: 2250585185
+        '2011':
+          volume: 1826635129
+        '2012':
+          volume: 1535385474
+        '2013':
+          volume: 1327896012
+        '2014':
+          volume: 1276999048
+        '2015':
+          volume: 1307376451
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 471875004
+        '2007':
+          volume: 467914463
+        '2008':
+          volume: 423338317
+        '2009':
+          volume: 570221787
+        '2010':
+          volume: 566594333
+        '2011':
+          volume: 481671847
+        '2012':
+          volume: 464525907
+        '2013':
+          volume: 458996230
+        '2014':
+          volume: 510500771
+        '2015':
+          volume: 552923379
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006':
+          volume: null
+        '2007':
+          volume: null
+        '2008':
+          volume: null
+        '2009':
+          volume: null
+        '2010':
+          volume: null
+        '2011':
+          volume: null
+        '2012':
+          volume: null
+        '2013':
+          volume: null
+        '2014':
+          volume: null
+        '2015':
+          volume: null
+Pacific:
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006':
+          volume: 47153866
+        '2007':
+          volume: 45563257
+        '2008':
+          volume: 46922654
+        '2009':
+          volume: 41282846
+        '2010':
+          volume: 41257762
+        '2011':
+          volume: 36591564
+        '2012':
+          volume: 27267157
+        '2013':
+          volume: 27502417
+        '2014':
+          volume: 28313384
+        '2015':
+          volume: 14808085
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006':
+          volume: 25992104
+        '2007':
+          volume: 24624089
+        '2008':
+          volume: 24031880
+        '2009':
+          volume: 22306733
+        '2010':
+          volume: 21710975
+        '2011':
+          volume: 19820270
+        '2012':
+          volume: 17684997
+        '2013':
+          volume: 18571785
+        '2014':
+          volume: 18506540
+        '2015':
+          volume: 11465873

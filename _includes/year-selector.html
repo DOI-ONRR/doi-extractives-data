@@ -1,0 +1,16 @@
+{% if include.year_range %}
+  {% assign _year_list = include.year_range | to_list %}
+
+  <select class="chart-selector">
+    {% if include.empty_years %}<!-- empty years: {{ include.empty_years | jsonify }} -->{% endif %}
+    {% for _year in _year_list %}
+      {% assign __year = year | to_i %}
+      {% assign s_year = _year | to_s %}
+      {% if include.empty_years contains s_year %}
+        <option disabled value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }} no data</option>
+      {% else %}
+        <option value="{{ _year }}" {% if __year == _year %}selected{% endif %}>{{ _year }}</option>
+      {% endif %}
+    {% endfor %}
+  </select>
+{% endif %}

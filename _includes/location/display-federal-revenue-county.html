@@ -1,0 +1,40 @@
+{% assign caption = include.caption %}
+{% assign locality_name = include.locality_name | default: locality_name %}
+
+<table is='bar-chart-table' data-percent-max='100' class='county-table' year='{{ include.year }}'>
+  <thead>
+    <tr>
+      <th>{{ locality_name }}</th>
+      <th class='numeric' data-series='volume'>Revenue</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for county in include.values %}
+    {% assign revenue_amount = county[1].revenue[include.year] %}
+    {% assign years_values =  county[1].revenue %}
+    {% assign fips = county[0] | pad_left: 5, '0' %}
+
+    {% if years_values != null %}
+    <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}'>
+      <td><div class='swatch'
+                 data-value-swatch='{{ revenue_amount }}'
+                 data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
+      <td data-value-text='{{ revenue_amount }}'
+          data-year-values='{{ years_values | jsonify }}'
+          data-format='$,'>${{ revenue_amount | intcomma }}</td>
+      <td class='numberless'
+            data-series='volume'
+            data-value='{{ revenue_amount }}'
+            data-year-values='{{ years_values | jsonify }}'>{{ revenue_amount | intcomma }}</td>
+    </tr>
+    <tr data-fips='{{ fips }}'>
+        <td colspan='3'
+            data-year-values='{{ years_values | jsonify }}'
+            data-sentence='{{ revenue_amount }}'
+            aria-hidden='true'><span data-value='{{ revenue_amount }}' data-format='$,'>${{ revenue_amount | intcomma }}</span> was collected from {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span>.</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>

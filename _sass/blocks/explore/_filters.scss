@@ -1,13 +1,7 @@
-
-.filters-wrapper_outer {
-  position: relative;
-}
-
 .filters-wrapper {
   background-color: $mid-blue;
   margin-left: 0;
   padding: $base-padding;
-  position: absolute;
   width: 100%;
   z-index: 3000;
 
@@ -16,7 +10,6 @@
     background-color: $white;
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
-    margin-right: $base-padding;
     padding-left: 0;
     width: initial;
   }
@@ -24,6 +17,14 @@
   select {
     border: 0;
     height: 50px;
+  }
+}
+
+@include respond-to(medium-up) {
+  .filters-wrapper[aria-expanded=false] {
+    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -36,47 +37,6 @@
   @include respond-to(medium-up) {
     height: inherit;
     overflow-y: initial;
-  }
-
-  &.js-transparent,
-  &.js-color {
-    border-bottom: none;
-    border-radius: 0;
-  }
-
-  &.js-transparent {
-    @include respond-to(medium-up) {
-      border-radius: $base-border-radius;
-    }
-  }
-
-  &.js-color {
-    @include respond-to(medium-up) {
-      border-bottom-left-radius: $base-border-radius;
-      border-bottom-right-radius: $base-border-radius;
-    }
-  }
-}
-
-.js-color {
-  background: $mid-blue;
-  border-bottom: 2px solid lighten($neutral-gray, 5%);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-
-  @include respond-to(medium-up) {
-    background: $white;
-  }
-}
-
-.js-transparent {
-  background: $mid-blue;
-  border-bottom: 2px solid lighten($neutral-gray, 5%);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-
-  @include respond-to(medium-up) {
-    background: $white;
   }
 }
 

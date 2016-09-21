@@ -26,8 +26,7 @@ selector: hash
 
 {% include selector.html %}
 
-
-<h2 id="fiscal-regime" data-nav-header="fiscal-regime">Fiscal regime</h2>
+## Fiscal regime
 
 The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.
 
@@ -148,7 +147,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   </tr>
 </table>
 
-<h2 id="fees-and-fines" data-nav-header="fees-and-fines">Fees and fines for extractive industries companies</h2>
+<h2 id="fees-and-fines">Fees and fines for extractive industries companies</h2>
 
 There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.
 
@@ -203,7 +202,7 @@ There are other laws governing natural resources and extractive companies’ ope
   </tr>
 </table>
 
-<h2 id="other-laws" data-nav-header="other-laws">Other laws</h2>
+## Other laws
 
 There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:
 
@@ -216,7 +215,7 @@ There are many other laws with which extractive industries companies must comply
 * [NOAA](http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html)
 
 
-<h2 id="regulations" data-nav-header="regulations">Regulations</h2>
+## Regulations
 
 Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. These key regulations relate to natural resource extraction, particularly on federal and Indian lands:
 

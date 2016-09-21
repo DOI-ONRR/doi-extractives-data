@@ -1,14 +1,17 @@
+@import 'aria-toggle';
 @import 'article-table';
+@import 'bar-chart-table';
 @import 'buttons';
+@import 'data-map';
 @import 'eiti-bar';
 @import 'eiti-map';
 @import 'eiti-slider';
+@import 'eiti-bar-chart';
 @import 'footnotes';
 @import 'glossary';
 @import 'drawer';
 @import 'sticky_nav';
-@import 'carousel';
-@import 'hero';
+@import 'ribbon';
 @import 'card';
 @import 'bureau';
 @import 'map';
@@ -16,3 +19,6 @@
 @import 'hash-selector';
 @import 'breadcrumbs';
 @import 'flowchart';
+@import 'tabs';
+@import 'sticky';
+@import 'tooltip';

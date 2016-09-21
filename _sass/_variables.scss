@@ -15,6 +15,7 @@ $base-font-size: 1rem;
 $base-font-multiplier: 1;
 $base-line-height: 1.375rem;
 
+$z-sky: 10000;
 $z-roof: 9000;
 $z-mid: 500;
 $z-negative: -1;
@@ -22,25 +23,45 @@ $z-negative: -1;
 // Colors
 //
 // Markup:
-// <p class="icon-map" style="color: #ffffff;">$white</p>
-// <p class="icon-map" style="color: #040404;">$black</p>
-// <p class="icon-map" style="color: #157bac;">$blue</p>
-// <p class="icon-map" style="color: #096fa0;">$blue-contrast</p>
-// <p class="icon-map" style="color: #e6f9ff;">$light-blue</p>
-// <p class="icon-map" style="color: #f2fcff;">$pale-blue</p>
-// <p class="icon-map" style="color: #c6e9ff;">$mid-blue</p>
-// <p class="icon-map" style="color: #4b9bbf;">$dark-blue</p>
-// <p class="icon-map" style="color: #f7f7f7;">$light-gray</p>
-// <p class="icon-map" style="color: #ebebeb;">$mid-gray</p>
-// <p class="icon-map" style="color: #4a4a4a;">$dark-gray</p>
-// <p class="icon-map" style="color: #303030;">$light-black</p>
+// <p><span class="styleguide-swatch with-outline" style="background-color: #ffffff;"></span>$white</p>
+// <p><span class="styleguide-swatch" style="background-color: #f0f6fa;"></span>$gray-pale</p>
+// <p><span class="styleguide-swatch" style="background-color: #ebf3f7;"></span>$gray-lighter</p>
+// <p><span class="styleguide-swatch" style="background-color: #d3dfe6;"></span>$gray-light</p>
+// <p><span class="styleguide-swatch" style="background-color: #a7bcc7;"></span>$gray</p>
+// <p><span class="styleguide-swatch" style="background-color: #768d99;"></span>$gray-dark</p>
+// <p><span class="styleguide-swatch" style="background-color: #5c7380;"></span>$gray-darker</p>
+// <p><span class="styleguide-swatch" style="background-color: #435159;"></span>$gray-darkest</p>
+// <p><span class="styleguide-swatch" style="background-color: #323c42;"></span>$black-light</p>
+// <p><span class="styleguide-swatch" style="background-color: #1d2326;"></span>$black</p>
 //
 // Styleguide colors
 
-// v3
+// v4
 $white: #ffffff;
-$black: #040404;
-$green: #96bc7f;
+$gray-pale: #f0f6fa;
+$gray-lighter: #ebf3f7;
+$gray-light: #d3dfe6;
+$gray: #a7bcc7;
+$gray-dark: #768d99;
+$gray-darker: #5c7380;
+$gray-darkest: #435159;
+$black-light: #323c42;
+$black: #1d2326;
+
+$light-gray-light: $gray-pale;
+$light-gray: $gray-pale;
+$light-gray-dark: $gray-lighter;
+$mid-gray: $gray-light;
+$mid-light-gray: $gray-light;
+$neutral-gray: $gray-light;
+$another-gray: $gray-dark;
+$dark-gray: $gray-darkest;
+$light-black: $black-light;
+$black: $black;
+$blackest-black: $black;
+
+// v3
+$green: #9fa63b;
 $blue: #157bac;
 $blue-contrast: #096fa0;
 $light-green: #d2e2cb;
@@ -50,18 +71,20 @@ $pale-blue: #f0fcff;
 $mid-blue: #c9eeff;
 $mid-blue-opaque: rgba(198, 233, 255, 0.93);
 $dark-blue: #4b9bbf;
-$light-gray: #f7f7f7;
-$light-gray-light: #fafafa; //for constrast, lighter
-$light-gray-dark: #f2f2f2; // for contrast, darker
-$mid-gray: #ebebeb;
-$neutral-gray: #ccc;
-$dark-gray: #4a4a4a;
-$light-black: #303030;
+
+// State pages
+$green-land: #69995a;
+$green-mint: #cde3c3;
+$green-sea: #b1d39c;
+$green-dark: #657c60;
+$chart-green: #a5d78a;
+$green-darkest: #2f4d26;
+$green-dark-chart: #587f4c;
+$green-dark-chart-mid: lighten($green-dark-chart, 20%);
 
 // v2 - deprecate
 $putty: #f4f4f4;
 $dark-putty: #838383;
-$green: #9fa63b;
 $purple: #965bcd;
 $red: #c5403c;
 $cobalt: #1075a5;
@@ -74,9 +97,25 @@ $base-accent-color: $mid-blue;
 // Padding
 $base-padding: 1.25em; //20px
 $base-padding-lite: $base-padding / 3;
+$base-padding-small: 0.90em;
+$base-padding-base: 1em;
 $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
 $base-padding-jumbo: 3.8em;
+
+// Padding on rem scale
+$standard-padding: 1.25rem;
+$standard-padding-lite: $standard-padding / 3;
+$standard-padding-large: 1.875rem; //30px
+$standard-padding-extra: 3.125rem; //50px
+$standard-padding-jumbo: 3.8rem;
+$standard-padding-fluffed: 5rem;
+
+// Page padding
+// Use in contexts where the padding/margin
+// of an element would otherwise touch the edge
+// of the screen
+$page-padding: 5vw;
 
 // Link Colors
 $base-link-color: $dark-gray;
@@ -110,3 +149,13 @@ $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-radius: $base-border-radius;
 $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
+
+// Map legend
+$opacity-federal: 0.35;
+$opacity-state: 0.2;
+$legend-row-height: 1em;
+
+$greener-land-lightness-bump: lightness($green-land) * $opacity-state;
+$greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
+$greener-land: darken($green-land, $greener-land-lightness-bump);
+$greenest-land: darken($green-land, $greenest-land-lightness-bump);

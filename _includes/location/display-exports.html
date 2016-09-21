@@ -1,0 +1,21 @@
+<table is="bar-chart-table" data-percent-max="100">
+  <thead>
+    <th>Year</th>
+    <th class="numeric" data-series="exports">Dollars</th>
+    {% if include.percent %}
+    <th class="numeric" data-series="percent">State %</th>
+    {% endif %}
+  </thead>
+  <tbody>
+    {% for commodity_year in include.values %}
+      <tr>
+        <td>{{ commodity_year[0] }}</td>
+        <td class="numeric" data-series="exports" data-value="{{ commodity_year[1].dollars }}">${{ commodity_year[1].dollars | intcomma }}</td>
+        {% if include.percent %}
+        <td class="numeric" data-series="percent" data-value="{{ commodity_year[1].percent }}">{{ commodity_year[1].percent | percent }}%</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

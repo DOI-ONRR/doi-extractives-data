@@ -1,0 +1,198 @@
+---
+layout: default
+nav_items:
+  - name: overview
+    title: Top
+  - name: production
+    title: Production
+    subnav_items:
+      - name: all-production
+        title: Entire state
+      - name: federal-production
+        title: Federal land
+      - name: state-production
+        title: State land
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal revenue
+      - name: state-local-revenue
+        title: State revenue
+  - name: disbursements
+    title: Disbursements
+    subnav_items:
+      - name: federal-disbursements
+        title: Federal disbursements
+      - name: state-disbursements
+        title: State disbursements
+  - name: economic-impact
+    title: Economic impact
+    subnav_items:
+      - name: gdp
+        title: GDP
+      - name: employment
+        title: Wage and salary jobs
+      - name: self-employment
+        title: Self-employment
+      - name: exports
+        title: Exports
+  - name: state-governance
+    title: State governance
+    subnav_items:
+      - name: understanding-land-ownership
+        title: Land ownership
+      - name: state-agencies
+        title: State agencies
+      - name: state-laws-and-regulations
+        title: State laws and regulations
+      - name: fiscal-costs-of-extractive-activity
+        title: Fiscal costs
+---
+
+{% assign state_name = page.title %}
+{% assign state_id = page.id %}
+{% assign locality_name = page.locality_name | default:'County' %}
+
+{% assign state_ref = page.id | upcase %}
+{% assign year = site.data.years.now | to_s %}
+{% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign top_products = 10 %}
+{% assign steps = 5 %}
+
+{% assign is_priority_state = page.priority %}
+{% assign is_case_study_state = page.case_study %}
+{% assign is_opt_in_state = page.opt_in %}
+
+{% assign _viewbox = site.data.viewboxes[state_id] %}
+
+{% if page.is_cropped %}
+  {% assign _viewbox = site.data.viewboxes_cropped[state_id] %}
+{% endif %}
+
+{% capture regulations %}
+  {{ page.content }}
+{% endcapture %}
+
+<main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
+  <section class="container">
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+      /
+    </div>
+    <h1 id="title">{{ state_name }}</h1>
+
+    <div class="container-left-9">
+
+      <section id="overview">
+        <h2 class="state-page-overview">Overview</h2>
+
+        {% include location/section-overview.html %}
+
+      </section>
+
+      <section id="production">
+        <h2>Production</h2>
+        {%
+          include location/key-all-production-summary.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        <p>
+          The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}’s energy production and usage</a>.
+        </p>
+        {% if page.state_production %}
+          {{ page.state_production | markdownify }}
+        {% endif %}
+
+        {% include location/section-all-production.html %}
+
+        {% include location/section-federal-production.html %}
+
+        {% if page.state_land %}
+          <h3 id="state-production">Production on state land in {{ state_name }}</h3>
+          {{ page.state_land | liquify | markdownify }}
+        {% endif %}
+        {% if page.state_land_production %}
+          {{ page.state_land_production | markdownify }}
+        {% endif %}
+
+      </section>
+
+      {% include location/section-revenue.html %}
+
+      <section id="disbursements" class="disbursements">
+        <h2>Disbursements</h2>
+
+        {% include location/section-disbursements.html %}
+
+        <section id="state-disbursements" class="disbursements">
+          <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State disbursements</h3>
+
+          {% if page.opt_in == true %}
+            {% include location/opt-in/state-disbursements.html location_id=state_id %}
+          {% else %}
+          <p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
+          {% endif %}
+        </section>
+
+      </section>
+
+      {% unless page.offshore == true %}
+      <section id="economic-impact">
+        <h2>Economic impact</h2>
+        {% if page.state_impact %}
+        {{ page.state_impact | markdownify }}
+
+        <p>
+          In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
+        </p>
+        {% endif %}
+
+        {% include location/section-gdp.html %}
+
+        {% include location/section-jobs.html %}
+
+        {% include location/section-exports.html %}
+      </section>
+      {% endunless %}
+
+      <section>
+        {% include location/section-state-governance.html %}
+      </section>
+
+      <!-- XXX setting display: none on this prevents the mask from working -->
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="state-outline">
+            <use xlink:href="{{ site.baseurl }}/maps/states/all.svg#state-{{ state_id }}"></use>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+
+    <div class="sticky sticky_nav container-right-3">
+      <h3 class="state-page-nav-title container">
+        <div class="nav-title">{{ state_name }}</div>
+        <figure is="data-map">
+          {%
+            include icon-map.html
+            location_id=state_id
+            highlighted_state=state_id
+            offshore=true
+          %}
+        </figure>
+        <label class="nav-prompt">Explore data main page</label>
+      </h3>
+      <nav>
+        {% include case-studies/_nav-list.html %}
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

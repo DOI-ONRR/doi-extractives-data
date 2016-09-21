@@ -1,0 +1,126 @@
+{% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
+{% assign county_revenue = site.data.county_revenue[state_id] %}
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
+{% assign year_list = year_range | to_list %}
+{% assign units = '$' %}
+
+<section id="revenue" is="year-switcher-section" class="federal revenue">
+
+  <h2>Revenue</h2>
+
+  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. What companies pay to federal, state, and local governments often depends on who owns the natural resources.</p>
+
+  <section id="federal-revenue">
+
+    <h3{% if revenue_commodities %} class="sticky"{% endif %}>Federal revenue</h3>
+
+    <p>
+      Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.
+      <br>
+      <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+      </a>
+    </p>
+
+    <h4>Revenue from production on federal land by resource</h4>
+
+{% if revenue_commodities %}
+
+    <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+
+    <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
+    <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal land in {{ state_name }}, broken down by phase of production.</p>
+
+    <div id="fee-summaries" class="tab-interface">
+      <ul class="eiti-tabs info-tabs" role="tablist">
+        <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase ({{ year }})</a></li>
+        <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Revenue details by phase</a></li>
+      </ul>
+
+      <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+        {%
+          include location/revenue-type-table.html
+          id='revenue-types'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+
+      <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+        {%
+          include location/revenue-process-table.html
+          id='revenue-process'
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+      </article>
+    </div>
+
+    <h4 id="federal-revenue-by-county">Revenue from production on federal land by county</h4>
+
+    <section class="chart-list">
+
+      <div class="chart-selector-wrapper">
+        {% assign empty_years = '' | split:'' %}
+        {% for _year in year_list %}
+          {% assign _year_string = _year | to_s %}
+          {% unless revenue_commodities.All[_year_string].revenue %}
+            {% assign empty_years = empty_years | push: _year_string %}
+          {% endunless %}
+        {% endfor %}
+
+        {% include year-selector.html year_range=year_range empty_years=empty_years %}
+
+        <p class="chart-description">
+          Most non-tax revenue collected by ONRR comes from counties with significant natural resources on federal land.
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+          </a>
+        </p>
+      </div>
+
+      <section class="county-map-table">
+        {%
+          include location/state-federal-revenue-county.html
+          county_revenue=county_revenue
+          state_revenue=revenue_commodities
+          year=year
+          year_range=year_range
+        %}
+      </section>
+    </section>
+    <!-- .chart-list -->
+
+{% else %}
+
+        <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+          No natural resources were produced on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
+        </p>
+
+{% endif %}
+
+    <h4>Federal tax revenue</h4>
+
+    <div>
+      <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>
+      <p>Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+    </div>
+
+  </section>
+  <!-- #federal-revenue -->
+
+  <section id="state-local-revenue" class="state revenue">
+    <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State revenue</h3>
+
+    {% if page.opt_in == true %}
+      {% include location/opt-in/state-revenues.html location_id=state_id %}
+    {% else %}
+      <p>We don’t have detailed data about federal, state, or local revenue from natural resource extraction on land owned by {{ state_name }}, corporations, or individuals. However, companies generally must pay state and local taxes.</p>
+    {% endif %}
+  </section>
+</section>

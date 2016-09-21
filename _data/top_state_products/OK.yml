@@ -1,0 +1,346 @@
+all_production:
+  '2006':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1688985000
+      rank: 4
+      percent: 7.18
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 1712441
+      rank: 5
+      percent: 6.44
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 64236000
+      rank: 5
+      percent: 3.46
+  '2007':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1783682000
+      rank: 4
+      percent: 7.23
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 63951000
+      rank: 5
+      percent: 3.45
+  '2008':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1886710000
+      rank: 4
+      percent: 7.36
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 67357000
+      rank: 5
+      percent: 3.68
+  '2009':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1901556000
+      rank: 4
+      percent: 7.3
+  '2010':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1827328000
+      rank: 5
+      percent: 6.81
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 67418000
+      rank: 5
+      percent: 3.37
+  '2011':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1888870000
+      rank: 5
+      percent: 6.63
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 74735000
+      rank: 5
+      percent: 3.63
+  '2012':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 8157585.18
+      rank: 4
+      percent: 5.79
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 89863000
+      rank: 5
+      percent: 3.79
+  '2013':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 11162493
+      rank: 4
+      percent: 6.65
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 109566000
+      rank: 5
+      percent: 4.04
+  '2014':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2310114000
+      rank: 4
+      percent: 7.37
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 11936833.04
+      rank: 4
+      percent: 6.57
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 145454000
+      rank: 5
+      percent: 4.55
+  '2015':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 14017628.54
+      rank: 3
+      percent: 7.34
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2499599000
+      rank: 4
+      percent: 7.6
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 157770000
+      rank: 5
+      percent: 4.59
+federal_production:
+  '2006':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 18852574
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4295096
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 368989192
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 23159812
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4601064
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 369860920
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 17288050
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4798638
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 14736618
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 5519046
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 13427700
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 5617196
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 397111468
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 14160666
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 9320974
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 332627724
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 6925620
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 14875900
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 411528338
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 15572986
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 14190566
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 12890774
+      rank: 2
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 19284200
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 12957360
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 21875698
+      rank: 4
+      percent: 0
+revenue:
+  '2006':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 959
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 15637104.65
+      rank: 5
+      percent: 4.53
+  '2010':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 0
+      rank: 1
+      percent: null
+  '2013':
+    - product: Helium
+      name: null
+      units: null
+      value: 0.71
+      rank: 2
+      percent: 1.13
+  '2014':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 1062.52
+      rank: 1
+      percent: 100
+    - product: Helium
+      name: null
+      units: null
+      value: 0.65
+      rank: 3
+      percent: 0.2

@@ -1,0 +1,106 @@
+{% assign revenue_commodities = site.data.offshore_revenue_regions[region_name].commodities %}
+{% assign area_revenue = site.data.offshore_revenue_areas[region_name] %}
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
+{% assign year_list = year_range | to_list %}
+{% assign units = '$' %}
+
+<section id="federal-revenue" is="year-switcher-section" class="federal revenue">
+
+  <h2>Federal revenue</h2>
+
+  <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue.</p>
+
+  <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+
+  <section id="revenue-by-resource">
+
+    <h3>Federal revenue by resource</h3>
+
+    <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on the Outer Continental Shelf. For details, read more about the processes for <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">offshore oil and gas</a> or <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">offshore renewable energy</a>.</p>
+
+    <p>The federal government collects different kinds of fees at each phase of resource extraction. This chart shows how much federal revenue was collected in {{ year}} for production or potential production of natural resources on federal waters, broken down by phase of production.</p>
+
+    <div id="fee-summaries" class="tab-interface">
+      <ul class="eiti-tabs info-tabs" role="tablist">
+        <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase ({{ year }})</a></li>
+        <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">Revenue details by phase</a></li>
+      </ul>
+
+      <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+        {%
+          include location/revenue-type-table.html
+          id='revenue-types'
+          location_id=region_name
+          location_name=region_name
+          year=year
+          offshore=true
+        %}
+      </article>
+
+      <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+        {%
+          include location/revenue-process-table.html
+          id='revenue-process'
+          location_id=region_name
+          location_name=region_name
+          year=year
+          offshore=true
+        %}
+      </article>
+    </div>
+
+  </section>
+  <!-- #revenue-by-resource -->
+
+  <section id="revenue-by-area">
+
+    <h3>Federal revenue by offshore area</h3>
+
+    <section class="chart-list">
+
+      <div class="chart-selector-wrapper">
+
+        {% if revenue_commodities %}
+          {% assign empty_years = '' | split:'' %}
+          {% for _year in year_list %}
+            {% assign _year_string = _year | to_s %}
+            {% unless revenue_commodities.All[_year_string].revenue %}
+              {% assign empty_years = empty_years | push: _year_string %}
+            {% endunless %}
+          {% endfor %}
+
+          {% include year-selector.html year_range=year_range empty_years=empty_years %}
+        {% endif %}
+
+        {% if revenue_commodities %}
+          <p class="chart-description">
+            Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource. 
+            <br>
+            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
+          </p>
+        {% else %}
+          <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+          </p>
+        {% endif %}
+      </div>
+
+      {% if revenue_commodities %}
+        <section class="county-map-table">
+          {%
+            include location/offshore-federal-revenue-area.html
+            area_revenue=area_revenue
+            state_revenue=revenue_commodities
+            year=year
+            year_range=year_range
+          %}
+        </section>
+      {% endif %}
+    </section>
+    <!-- .chart-list -->
+
+  </section>
+  <!-- #revenue-by-area -->
+</section>
+<!-- #federal-revenue -->

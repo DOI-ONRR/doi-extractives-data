@@ -1,0 +1,77 @@
+---
+layout: default
+nav_items:
+  - name: overview
+    title: Top
+  - name: production
+    title: Production
+  - name: federal-revenue
+    title: Federal revenue
+    subnav_items:
+      - name: revenue-by-resource
+        title: By resource
+      - name: revenue-by-area
+        title: By offshore area
+---
+
+{% assign region_name = page.id | capitalize %}
+{% assign region_title = page.title %}
+{% assign region_id = page.id %}
+{% assign locality_name = 'Region' %}
+
+{% assign commodity_names = site.data.commodity_names %}
+{% assign year = site.data.years.now | to_s %}
+{% assign _viewbox = site.data.viewboxes_offshore[region_id] %}
+
+<main id="offshore-region-{{ region_id }}" class="container-page-wrapper layout-state-pages">
+  <section class="container">
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+      /
+    </div>
+
+    <h1 id="title">{{ region_title }}</h1>
+
+    <div class="container-left-9">
+      
+      <section id="overview">
+        <h2 class="state-page-overview">Overview</h2>
+          <p>
+            Unlike land (which can be owned by states, local governments, corporations, or private individuals), the waters and submerged lands of the {{ "Outer Continental Shelf" | term }} are entirely administered by the federal government. This means that all <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">offshore drilling</a> and <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">renewable energy generation</a> takes place in federal waters.
+          </p>
+      </section>
+
+      <section id="production">
+        <h2>Production</h2>
+
+        {% include
+          location/offshore-region-federal-production.html
+          region_name=region_name
+        %}
+      </section>
+
+      {% include location/offshore-region-revenue.html %}
+
+    </div>
+
+    <div class="sticky sticky_nav container-right-3">
+      <h3 class="state-page-nav-title container">
+        <div class="nav-title">{{ region_title }}</div>
+        <figure is="data-map">
+          {%
+            include icon-map.html
+            location_id=region_id
+            highlighted_state=region_id
+            offshore=true
+          %}
+        </figure>
+        <label class="nav-prompt">Explore data main page</label>
+      </h3>
+      <nav>
+        {% include case-studies/_nav-list.html %}
+      </nav>
+    </div>
+  </section>
+</main>
+
+<script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

@@ -1,0 +1,219 @@
+all_production:
+  '2006':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 120847953
+      rank: 3
+      percent: 10.39
+  '2007':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 115280302
+      rank: 3
+      percent: 10.05
+  '2008':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 120322708
+      rank: 3
+      percent: 10.27
+  '2009':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 107338054
+      rank: 3
+      percent: 9.99
+  '2010':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 104960118
+      rank: 3
+      percent: 9.68
+  '2011':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 108766150
+      rank: 3
+      percent: 9.93
+  '2012':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 90861804
+      rank: 3
+      percent: 8.94
+  '2013':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 80379779
+      rank: 3
+      percent: 8.16
+  '2014':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 77334723
+      rank: 3
+      percent: 7.73
+federal_production:
+  '2006':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 287482
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5521984
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 340704
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5396300
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 342654
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 342082
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 339248
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4966884
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 322582
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4520698
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 307710
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 3788278
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 305448
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 280436
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 224926
+      rank: 4
+      percent: 0

@@ -1,0 +1,9 @@
+'53041':
+  name: Lewis County
+  products:
+    Coal (tons):
+      name: Coal
+      units: tons
+      volume:
+        '2014': null
+        '2015': null

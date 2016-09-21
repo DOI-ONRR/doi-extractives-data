@@ -2,7 +2,7 @@
   'use strict';
 
   var d3 = require('d3');
-  var queue = require('queue-async');
+  var queue = require('d3-queue');
 
   /*
    * @namespace eiti
@@ -412,6 +412,24 @@
     };
   })();
 
+
+  /**
+   * This is a format transform that turns metric/SI suffixes into more
+   * US-friendly ones: M -> million, G -> billion, etc.
+   *
+   * @param {String} str the formatted string
+   * @return {String} the formatted string with replaced SI suffix
+   */
+  eiti.format.transformMetricLong = (function() {
+    var suffix = {k: 'k', M: ' million', G: ' billion'};
+    return function(str) {
+      return str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
+        return suffix[s] || s;
+      })
+      .replace(/\.0+$/, '');
+    };
+  })();
+
   /**
    * Produces international system ("SI")/metric form.
    *
@@ -425,6 +443,7 @@
    * @return {String}
    */
   eiti.format.si = eiti.format.transform('.2s', eiti.format.transformMetric);
+
 
   eiti.format.transformDollars = function(str) {
     if (str.charAt(0) === '-') {
@@ -447,6 +466,7 @@
     eiti.format.si,
     eiti.format.transformDollars
   );
+
 
   /**
    * Produces dollar strings with thousands separators

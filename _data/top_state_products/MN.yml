@@ -1,0 +1,114 @@
+all_production:
+  '2006':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2054946.99
+      rank: 4
+      percent: 7.73
+  '2007':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2638812
+      rank: 4
+      percent: 7.66
+  '2008':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4354619.94
+      rank: 3
+      percent: 7.87
+  '2009':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 5053022.31
+      rank: 4
+      percent: 6.84
+  '2010':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4791722.92
+      rank: 4
+      percent: 5.06
+  '2011':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 6725695.43
+      rank: 4
+      percent: 5.6
+revenue:
+  '2006':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 53422.66
+      rank: 2
+      percent: 0.61
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50564
+      rank: 3
+      percent: 0.34
+  '2008':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50409.5
+      rank: 3
+      percent: 0.28
+  '2009':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50498.17
+      rank: 3
+      percent: 0.61
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50209.5
+      rank: 3
+      percent: 0.38
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 44914.5
+      rank: 3
+      percent: 0.29
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 47894.62
+      rank: 3
+      percent: 0.4
+  '2013':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 74295
+      rank: 2
+      percent: 0.78
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 59303.5
+      rank: 2
+      percent: 0.55
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49717.5
+      rank: 2
+      percent: 0.49

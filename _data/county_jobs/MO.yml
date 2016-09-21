@@ -1,0 +1,852 @@
+'29009':
+  name: Barry County
+  employment:
+    '2006':
+      count: 43
+      percent: 0.27
+    '2007':
+      count: 43
+      percent: 0.28
+    '2008':
+      count: 45
+      percent: 0.29
+    '2009':
+      count: 34
+      percent: 0.23
+    '2010':
+      count: 26
+      percent: 0.18
+    '2011':
+      count: 21
+      percent: 0.15
+    '2012':
+      count: 26
+      percent: 0.19
+    '2013':
+      count: 26
+      percent: 0.19
+    '2014':
+      count: 21
+      percent: 0.16
+    '2015':
+      count: 27
+      percent: 0.2
+'29013':
+  name: Bates County
+  employment:
+    '2006':
+      count: 37
+      percent: 0.98
+    '2007':
+      count: 33
+      percent: 0.89
+    '2008':
+      count: 34
+      percent: 0.92
+    '2009':
+      count: 45
+      percent: 1.21
+'29019':
+  name: Boone County
+  employment:
+    '2006':
+      count: 77
+      percent: 0.09
+    '2007':
+      count: 68
+      percent: 0.08
+    '2008':
+      count: 61
+      percent: 0.07
+    '2009':
+      count: 72
+      percent: 0.09
+    '2010':
+      count: 62
+      percent: 0.08
+    '2011':
+      count: 43
+      percent: 0.05
+    '2012':
+      count: 44
+      percent: 0.05
+    '2013':
+      count: 43
+      percent: 0.05
+    '2014':
+      count: 42
+      percent: 0.05
+    '2015':
+      count: 46
+      percent: 0.05
+'29027':
+  name: Callaway County
+  employment:
+    '2006':
+      count: 106
+      percent: 0.74
+    '2007':
+      count: 100
+      percent: 0.69
+    '2008':
+      count: 94
+      percent: 0.63
+    '2009':
+      count: 90
+      percent: 0.62
+    '2010':
+      count: 53
+      percent: 0.37
+    '2011':
+      count: 52
+      percent: 0.38
+    '2012':
+      count: 59
+      percent: 0.43
+    '2013':
+      count: 63
+      percent: 0.45
+    '2014':
+      count: 68
+      percent: 0.48
+    '2015':
+      count: 58
+      percent: 0.41
+'29031':
+  name: Cape Girardeau County
+  employment:
+    '2006':
+      count: 77
+      percent: 0.19
+    '2007':
+      count: 77
+      percent: 0.18
+    '2008':
+      count: 84
+      percent: 0.2
+    '2009':
+      count: 75
+      percent: 0.19
+    '2010':
+      count: 72
+      percent: 0.18
+    '2011':
+      count: 71
+      percent: 0.18
+    '2012':
+      count: 70
+      percent: 0.18
+    '2013':
+      count: 74
+      percent: 0.18
+    '2014':
+      count: 32
+      percent: 0.08
+    '2015':
+      count: 55
+      percent: 0.14
+'29037':
+  name: Cass County
+  employment:
+    '2006':
+      count: 146
+      percent: 0.64
+    '2007':
+      count: 131
+      percent: 0.57
+    '2008':
+      count: 49
+      percent: 0.21
+    '2009':
+      count: 39
+      percent: 0.17
+    '2010':
+      count: 35
+      percent: 0.16
+    '2011':
+      count: 42
+      percent: 0.19
+    '2012':
+      count: 46
+      percent: 0.2
+    '2013':
+      count: 48
+      percent: 0.21
+    '2014':
+      count: 50
+      percent: 0.21
+    '2015':
+      count: 52
+      percent: 0.21
+'29047':
+  name: Clay County
+  employment:
+    '2007':
+      count: 61
+      percent: 0.07
+    '2008':
+      count: 58
+      percent: 0.06
+    '2009':
+      count: 53
+      percent: 0.06
+    '2011':
+      count: 56
+      percent: 0.06
+    '2012':
+      count: 64
+      percent: 0.07
+    '2013':
+      count: 61
+      percent: 0.07
+    '2014':
+      count: 58
+      percent: 0.06
+    '2015':
+      count: 58
+      percent: 0.06
+'29051':
+  name: Cole County
+  employment:
+    '2009':
+      count: 35
+      percent: 0.07
+    '2010':
+      count: 65
+      percent: 0.12
+    '2011':
+      count: 64
+      percent: 0.12
+    '2012':
+      count: 58
+      percent: 0.11
+    '2013':
+      count: 56
+      percent: 0.11
+    '2014':
+      count: 57
+      percent: 0.11
+    '2015':
+      count: 53
+      percent: 0.1
+'29057':
+  name: Dade County
+  employment:
+    '2015':
+      count: 10
+      percent: 0.6
+'29071':
+  name: Franklin County
+  employment:
+    '2006':
+      count: 72
+      percent: 0.19
+    '2007':
+      count: 63
+      percent: 0.17
+    '2008':
+      count: 64
+      percent: 0.17
+    '2009':
+      count: 59
+      percent: 0.17
+    '2010':
+      count: 63
+      percent: 0.18
+    '2011':
+      count: 64
+      percent: 0.18
+    '2012':
+      count: 64
+      percent: 0.18
+    '2013':
+      count: 59
+      percent: 0.16
+    '2014':
+      count: 61
+      percent: 0.17
+    '2015':
+      count: 68
+      percent: 0.18
+'29077':
+  name: Greene County
+  employment:
+    '2010':
+      count: 72
+      percent: 0.05
+    '2011':
+      count: 60
+      percent: 0.04
+    '2012':
+      count: 60
+      percent: 0.04
+'29081':
+  name: Harrison County
+  employment:
+    '2012':
+      count: 6
+      percent: 0.24
+'29091':
+  name: Howell County
+  employment:
+    '2006':
+      count: 32
+      percent: 0.2
+    '2007':
+      count: 38
+      percent: 0.24
+    '2008':
+      count: 31
+      percent: 0.2
+    '2009':
+      count: 30
+      percent: 0.2
+    '2010':
+      count: 32
+      percent: 0.21
+    '2011':
+      count: 31
+      percent: 0.21
+    '2012':
+      count: 32
+      percent: 0.21
+    '2013':
+      count: 30
+      percent: 0.2
+    '2014':
+      count: 31
+      percent: 0.21
+    '2015':
+      count: 32
+      percent: 0.21
+'29095':
+  name: Jackson County
+  employment:
+    '2006':
+      count: 40
+      percent: 0.01
+    '2007':
+      count: 44
+      percent: 0.01
+    '2008':
+      count: 50
+      percent: 0.01
+    '2009':
+      count: 59
+      percent: 0.02
+    '2010':
+      count: 62
+      percent: 0.02
+    '2011':
+      count: 66
+      percent: 0.02
+    '2012':
+      count: 56
+      percent: 0.02
+    '2013':
+      count: 49
+      percent: 0.01
+    '2014':
+      count: 51
+      percent: 0.01
+    '2015':
+      count: 60
+      percent: 0.02
+'29097':
+  name: Jasper County
+  employment:
+    '2006':
+      count: 109
+      percent: 0.19
+    '2007':
+      count: 107
+      percent: 0.18
+    '2008':
+      count: 93
+      percent: 0.16
+    '2009':
+      count: 82
+      percent: 0.14
+    '2010':
+      count: 79
+      percent: 0.14
+    '2011':
+      count: 76
+      percent: 0.14
+    '2012':
+      count: 73
+      percent: 0.13
+    '2013':
+      count: 76
+      percent: 0.13
+    '2014':
+      count: 99
+      percent: 0.17
+    '2015':
+      count: 101
+      percent: 0.17
+'29109':
+  name: Lawrence County
+  employment:
+    '2010':
+      count: 29
+      percent: 0.35
+    '2011':
+      count: 28
+      percent: 0.33
+    '2012':
+      count: 25
+      percent: 0.29
+'29113':
+  name: Lincoln County
+  employment:
+    '2006':
+      count: 100
+      percent: 0.92
+    '2007':
+      count: 82
+      percent: 0.75
+    '2008':
+      count: 78
+      percent: 0.73
+    '2009':
+      count: 74
+      percent: 0.72
+    '2010':
+      count: 72
+      percent: 0.71
+    '2011':
+      count: 82
+      percent: 0.82
+    '2012':
+      count: 83
+      percent: 0.83
+    '2013':
+      count: 86
+      percent: 0.86
+    '2014':
+      count: 89
+      percent: 0.83
+    '2015':
+      count: 90
+      percent: 0.81
+'29119':
+  name: McDonald County
+  employment:
+    '2006':
+      count: 12
+      percent: 0.18
+'29131':
+  name: Miller County
+  employment:
+    '2009':
+      count: 24
+      percent: 0.39
+    '2010':
+      count: 16
+      percent: 0.27
+    '2011':
+      count: 14
+      percent: 0.25
+'29139':
+  name: Montgomery County
+  employment:
+    '2006':
+      count: 13
+      percent: 0.39
+    '2007':
+      count: 10
+      percent: 0.31
+    '2011':
+      count: 18
+      percent: 0.62
+    '2012':
+      count: 17
+      percent: 0.6
+    '2013':
+      count: 13
+      percent: 0.46
+    '2014':
+      count: 16
+      percent: 0.57
+    '2015':
+      count: 19
+      percent: 0.67
+'29145':
+  name: Newton County
+  employment:
+    '2006':
+      count: 22
+      percent: 0.12
+    '2007':
+      count: 20
+      percent: 0.1
+    '2008':
+      count: 20
+      percent: 0.1
+    '2009':
+      count: 22
+      percent: 0.12
+    '2010':
+      count: 22
+      percent: 0.11
+'29147':
+  name: Nodaway County
+  employment:
+    '2012':
+      count: 4
+      percent: 0.05
+'29151':
+  name: Osage County
+  employment:
+    '2006':
+      count: 27
+      percent: 0.78
+    '2009':
+      count: 23
+      percent: 0.69
+    '2011':
+      count: 17
+      percent: 0.53
+    '2012':
+      count: 18
+      percent: 0.56
+    '2013':
+      count: 18
+      percent: 0.55
+    '2014':
+      count: 17
+      percent: 0.48
+    '2015':
+      count: 17
+      percent: 0.48
+'29159':
+  name: Pettis County
+  employment:
+    '2006':
+      count: 36
+      percent: 0.19
+    '2007':
+      count: 35
+      percent: 0.18
+    '2008':
+      count: 35
+      percent: 0.18
+    '2009':
+      count: 33
+      percent: 0.18
+    '2010':
+      count: 28
+      percent: 0.16
+    '2011':
+      count: 27
+      percent: 0.15
+    '2012':
+      count: 29
+      percent: 0.16
+'29161':
+  name: Phelps County
+  employment:
+    '2006':
+      count: 49
+      percent: 0.27
+    '2007':
+      count: 46
+      percent: 0.26
+    '2008':
+      count: 34
+      percent: 0.2
+    '2009':
+      count: 24
+      percent: 0.14
+    '2014':
+      count: 16
+      percent: 0.09
+    '2015':
+      count: 15
+      percent: 0.08
+'29163':
+  name: Pike County
+  employment:
+    '2006':
+      count: 61
+      percent: 1.02
+    '2007':
+      count: 55
+      percent: 0.93
+    '2008':
+      count: 60
+      percent: 0.99
+    '2009':
+      count: 42
+      percent: 0.71
+    '2010':
+      count: 37
+      percent: 0.63
+    '2011':
+      count: 36
+      percent: 0.61
+    '2012':
+      count: 36
+      percent: 0.6
+'29167':
+  name: Polk County
+  employment:
+    '2006':
+      count: 15
+      percent: 0.19
+    '2007':
+      count: 18
+      percent: 0.22
+    '2010':
+      count: 12
+      percent: 0.16
+    '2011':
+      count: 9
+      percent: 0.12
+    '2012':
+      count: 11
+      percent: 0.15
+    '2013':
+      count: 12
+      percent: 0.15
+    '2014':
+      count: 12
+      percent: 0.15
+'29183':
+  name: St. Charles County
+  employment:
+    '2006':
+      count: 121
+      percent: 0.1
+    '2007':
+      count: 86
+      percent: 0.07
+    '2008':
+      count: 82
+      percent: 0.07
+    '2009':
+      count: 74
+      percent: 0.06
+    '2010':
+      count: 72
+      percent: 0.06
+    '2011':
+      count: 66
+      percent: 0.05
+    '2012':
+      count: 50
+      percent: 0.04
+'29186':
+  name: Ste. Genevieve County
+  employment:
+    '2006':
+      count: 272
+      percent: 4.63
+    '2007':
+      count: 296
+      percent: 4.99
+    '2008':
+      count: 263
+      percent: 4.47
+    '2009':
+      count: 232
+      percent: 4.12
+    '2010':
+      count: 218
+      percent: 3.93
+    '2011':
+      count: 220
+      percent: 4
+    '2012':
+      count: 219
+      percent: 4.05
+    '2013':
+      count: 246
+      percent: 4.57
+    '2014':
+      count: 237
+      percent: 4.38
+    '2015':
+      count: 223
+      percent: 4.12
+'29187':
+  name: St. Francois County
+  employment:
+    '2006':
+      count: 97
+      percent: 0.44
+    '2007':
+      count: 104
+      percent: 0.45
+    '2008':
+      count: 114
+      percent: 0.49
+    '2009':
+      count: 111
+      percent: 0.5
+    '2010':
+      count: 85
+      percent: 0.38
+    '2011':
+      count: 84
+      percent: 0.38
+    '2012':
+      count: 81
+      percent: 0.37
+    '2013':
+      count: 71
+      percent: 0.32
+    '2014':
+      count: 87
+      percent: 0.39
+    '2015':
+      count: 97
+      percent: 0.43
+'29189':
+  name: St. Louis County
+  employment:
+    '2006':
+      count: 603
+      percent: 0.1
+    '2007':
+      count: 492
+      percent: 0.08
+    '2008':
+      count: 490
+      percent: 0.08
+    '2009':
+      count: 461
+      percent: 0.08
+    '2010':
+      count: 462
+      percent: 0.08
+    '2011':
+      count: 404
+      percent: 0.07
+    '2012':
+      count: 401
+      percent: 0.07
+    '2013':
+      count: 426
+      percent: 0.07
+    '2014':
+      count: 412
+      percent: 0.07
+    '2015':
+      count: 426
+      percent: 0.07
+'29207':
+  name: Stoddard County
+  employment:
+    '2013':
+      count: 29
+      percent: 0.29
+    '2014':
+      count: 30
+      percent: 0.3
+    '2015':
+      count: 22
+      percent: 0.22
+'29213':
+  name: Taney County
+  employment:
+    '2009':
+      count: 57
+      percent: 0.22
+    '2010':
+      count: 50
+      percent: 0.18
+    '2012':
+      count: 36
+      percent: 0.13
+    '2013':
+      count: 52
+      percent: 0.18
+    '2014':
+      count: 53
+      percent: 0.19
+'29215':
+  name: Texas County
+  employment:
+    '2006':
+      count: 22
+      percent: 0.38
+    '2011':
+      count: 18
+      percent: 0.3
+    '2012':
+      count: 17
+      percent: 0.29
+    '2013':
+      count: 16
+      percent: 0.27
+'29217':
+  name: Vernon County
+  employment:
+    '2006':
+      count: 10
+      percent: 0.14
+    '2007':
+      count: 9
+      percent: 0.12
+    '2008':
+      count: 19
+      percent: 0.27
+    '2009':
+      count: 16
+      percent: 0.25
+    '2010':
+      count: 41
+      percent: 0.6
+    '2011':
+      count: 40
+      percent: 0.58
+    '2012':
+      count: 32
+      percent: 0.46
+    '2013':
+      count: 33
+      percent: 0.47
+    '2014':
+      count: 30
+      percent: 0.43
+    '2015':
+      count: 26
+      percent: 0.37
+'29221':
+  name: Washington County
+  employment:
+    '2015':
+      count: 64
+      percent: 1.25
+'29225':
+  name: Webster County
+  employment:
+    '2006':
+      count: 23
+      percent: 0.34
+    '2008':
+      count: 26
+      percent: 0.39
+    '2009':
+      count: 21
+      percent: 0.33
+    '2010':
+      count: 16
+      percent: 0.26
+    '2013':
+      count: 21
+      percent: 0.33
+    '2014':
+      count: 21
+      percent: 0.32
+    '2015':
+      count: 23
+      percent: 0.34
+'29229':
+  name: Wright County
+  employment:
+    '2007':
+      count: 12
+      percent: 0.28

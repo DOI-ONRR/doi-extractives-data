@@ -1,0 +1,149 @@
+---
+layout: default
+permalink: /explore/
+id: US
+title: Explore data
+national_page: true
+selector: location
+nav_items:
+  - name: title
+    title: Top
+  - name: production
+    title: Production
+    subnav_items:
+      - name: all-production
+        title: Nationwide
+      - name: federal-production
+        title: Federal lands and waters
+  - name: revenue
+    title: Revenue
+    subnav_items:
+      - name: federal-revenue
+        title: Federal land
+      - name: federal-tax-revenue
+        title: Federal tax revenue
+  - name: federal-disbursements
+    title: Disbursements
+  - name: economic-impact
+    title: Economic impact
+    subnav_items:
+    - name: gdp
+      title: GDP
+    - name: employment
+      title: Wage and salary jobs
+    - name: self-employment
+      title: Self-employment
+---
+
+{% assign national_page = page.national_page %}
+{% assign state_name = page.title %}
+{% assign state_id = page.id %}
+
+{% assign state_ref = page.id | upcase %}
+{% assign year = site.data.years.now | to_s %}
+{% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign top_products = 10 %}
+{% assign steps = 9 %}
+
+
+<main id="national" class="layout-state-pages national-page">
+
+  <section  id="title" class="slab-delta">
+    <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
+      <div class="container-left-8 ribbon-hero ribbon-hero-column">
+        <h1>Explore data</h1>
+        <figure>
+          {%
+            include state-map.html
+            href=':url'
+            ownership=true
+            no_outline=true
+          %}
+        </figure>
+        <aside class="wide">
+          {% include maps/federal_land_ownership_legend.html land=true %}
+        </aside>
+      </div>
+      <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
+        <figure class="ribbon-card-top">
+          <h2 class="ribbon-card-top-text-header">Land ownership</h2>
+          <p>
+            Natural resource ownership, governance, and revenues are closely tied to land ownership. Federal land represents
+            {{ site.data.land_stats[state_id].federal_percent | percent }}%
+            of all land in the U.S., mostly concentrated in western states.
+          </p>
+          <p>
+            USEITI data covers production, revenue, and disbursements for {{ "federal lands and waters" | term_end:"federal land" }}, as well as nationwide production and economic impact.
+          </p>
+        </figure>
+        <figcaption class="ribbon-card-bottom state_pages-select">
+          <label for="location-selector" class="ribbon-card-top-text-header">Explore state or offshore data:</label>
+          {% include selector.html
+            default = 'Choose location'
+          %}
+        </figcaption>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-page-wrapper">
+
+    <div class="container-left-9">
+
+      <section id="production">
+
+        <h2 class="state-page-overview">Production</h2>
+
+        <p>The U.S. produces more <a href="#all-production-natural-gas-mcf">natural gas</a> and <a href="#all-production-oil-bbl">oil</a> than any other country, ranks second in the world for production of <a href="#all-production-coal-short-tons">coal</a> and renewable energy, and ranks third in the world for gold production. Learn more about <a href="{{ site.baseurl }}/how-it-works/production/">natural resource production in the U.S.</a></p>
+
+        {% include location/national-all-production.html %}
+
+        <section id="federal-production" is="year-switcher-section" class="federal production">
+
+          {% include location/national-federal-production.html %}
+
+        </section>
+
+      </section>
+
+      {% include location/national-revenue.html %}
+
+      {% include location/national-disbursements.html %}
+
+      <section id="economic-impact">
+
+      <h2>Economic impact</h2>
+
+      {% include location/national-gdp.html %}
+
+      {% include location/national-jobs.html %}
+
+      </section>
+
+      <!-- XXX setting display: none on this prevents the mask from working -->
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="state-outline">
+            <use xlink:href="{{ site.baseurl }}/maps/states/all.svg#state-{{ state_id }}"></use>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div>
+
+    <div class="container-right-3 sticky sticky_nav">
+      <h3 class="state-page-nav-title container">
+
+        <div class="nav-title">National data</div>
+      </h3>
+      <nav>
+        {% include case-studies/_nav-list.html %}
+      </nav>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

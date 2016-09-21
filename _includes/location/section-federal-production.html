@@ -1,0 +1,151 @@
+{% assign federal_products = site.data.state_federal_production[state_id].products %}
+{% assign federal_products_num = federal_products | size %}
+{% assign units_map = site.data.production_units %}
+{% assign county_federal_products = site.data.federal_county_production[state_id] %}
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
+
+<section id="federal-production" class="federal production">
+
+  <section class="county-map-table" is="year-switcher-section">
+
+    <h3 class="sticky">Production on federal land in {{ state_name }}</h3>
+
+    {% if federal_products_num == 0 %}
+    <p>
+      ONRR collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource production on federal land in {{  state_name }} in {{ year }}.
+      <br>
+      <a href="{{ site.baseurl }}/downloads/federal-production/" class="data-downloads">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
+    </p>
+    {% else %}
+    <div class="chart-selector-wrapper">
+      {% include year-selector.html year_range=year_range %}
+      <p class="chart-description">
+          ONRR collects detailed data about natural resources produced on federal land in {{ state_name }}.
+          <br>
+          <a href="{{ site.baseurl }}/downloads/federal-production/">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
+      </p>
+    </div>
+    {% endif %}
+
+    <div class="chart-list">
+
+    {% for product in federal_products %}
+      {% assign product_slug = product[0] | slugify %}
+      {% assign product_name = product[1].name | default: product[0] %}
+      {% assign production_values = product[1].volume %}
+      {% assign volume = production_values[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+      {% assign short_units = units_map[units].short | default: units %}
+      {% assign long_units = units_map[units].long | default: units %}
+      {% assign units_suffix = units_map[units].suffix | default: '' %}
+      {% assign units_title = units_map[units].title %}
+
+      <section id="federal-production-{{ product_slug }}" class="product full-width">
+
+        <div class="row-container">
+
+          <div class="chart-container">
+
+            <h4 class="chart-title">
+              <span>
+                {{ product_name }}
+                {% if units_title %} ({{ units_title }}){% endif %}
+              </span>
+            </h4>
+
+            <figure class="chart">
+              <eiti-bar-chart
+                aria-controls="federal-production-figures-{{ product_slug }}"
+                data='{{ production_values | map_hash: "volume" | jsonify }}'
+                x-range="{{ year_range }}"
+                x-value="{{ year }}"
+                data-units="{{ long_units }}">
+              </eiti-bar-chart>
+              <figcaption id="federal-production-figures-{{ product_slug }}">
+                <span class="caption-data">
+                  <span class="eiti-bar-chart-y-value"
+                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                  {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+                  produced on federal land in {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                </span>
+                <span class="caption-no-data" aria-hidden="true">
+                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in {{ state_name }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                </span>
+                <span class="caption-withheld" aria-hidden="true">
+                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                </span>
+              </figcaption>
+            </figure>
+
+          </div><!-- /.chart-container -->
+
+          <div class="map-container">
+
+            <h4 class="chart-title">
+              {{ locality_name }} production
+            </h4>
+
+
+            {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
+            <figure is="eiti-data-map-table">
+
+              {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
+              {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
+              {% assign _width ='inherit' %}
+
+              {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
+
+
+              <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+                {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+
+                {%
+                  include county-map.html
+                  state=state_id
+                  counties=federal_county_production
+                  value=value_key
+                  years=years_key
+                  steps=steps
+                  inherit_width=true
+                  caption=caption
+                  toggle=toggle
+                  year=year
+                %}
+
+
+
+              </eiti-data-map>
+
+              <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+                {% assign product_ref = product[0] %}
+                {%
+                  include location/display-federal-production-county.html
+                  year=year
+                  values=county_federal_products
+                  product_ref=product_ref
+                  long_units=long_units
+                  caption=caption
+                  sentence=sentence
+                %}
+              </div><!-- /.table-container -->
+
+            </figure>
+
+          </div><!-- /.map-container -->
+
+        </div><!-- /.row-container -->
+
+      </section>
+    {% endfor %}
+
+    </div><!-- /.chart-list -->
+
+  </section>
+
+</section>

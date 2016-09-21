@@ -4,6 +4,9 @@
 // Variables
 @import 'variables';
 
+// Styleguide-specific styles
+@import 'styleguide';
+
 // Mixins
 @import 'mixins/all';
 
@@ -34,6 +37,9 @@
 
 // Import Fonts
 @import 'fonts';
+
+// include FontAwesome Sass variables, etc.
+@import 'lib/font-awesome/font-awesome';
 
 // Components
 //

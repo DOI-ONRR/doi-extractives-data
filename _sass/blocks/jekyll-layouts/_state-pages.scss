@@ -1,0 +1,134 @@
+.layout-state-pages {
+  padding-bottom: $standard-padding-fluffed;
+
+  p + section,
+  section + section,
+  h2 + section:not(.state-pages-top),
+  p + h4 {
+    margin-top: 0; // -0.75rem; //to compensate for margin from preceding selectors
+  }
+
+  h2:not(.ribbon-card-top-text-header) {
+    @include h2-bar;
+    padding-top: 5rem;
+
+    &.state-page-overview {
+      padding-top: 1rem;
+    }
+  }
+
+  h3:not(.chart-title):not(.state-page-nav-title),
+  h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
+    @include heading('h5');
+    @include h3-bar;
+  }
+
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
+  .pre-sticky {
+    margin-top: 4rem;
+  }
+
+  .pre-sticky-small {
+    margin-top: 3rem - $standard-padding-large;
+  }
+
+  ul + h3:not(.chart-title):not(.title-land-ownership),
+  p + h3:not(.chart-title):not(.title-land-ownership) {
+    margin-top: -0.75rem; //to compensate for margin from preceding selectors
+  }
+
+  h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
+    border-bottom: 1px solid $neutral-gray;
+    font-weight: $weight-light;
+    padding-top: 2.5rem;
+  }
+
+  .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
+    border-bottom: none;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  hr {
+    border-top: 1px solid $neutral-gray;
+    margin-bottom: $standard-padding;
+    margin-top: $standard-padding;
+  }
+
+  p + [class*='panel-'],
+  section + [class*='panel-'],
+  h3 + [class*='panel-'] {
+    margin-bottom: $standard-padding;
+    margin-top: $standard-padding;
+
+    &.sticky {
+      margin-top: 0;
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .land-ownership {
+    h2 {
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+
+  .tab-interface {
+    margin-top: 2rem;
+  }
+
+  .full-width-text {
+    margin-right: 25%;
+    width: 75%;
+  }
+
+  .state_pages-ribbon-card {
+    h2 {
+      border-bottom: none;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .state_pages-select {
+    label {
+      @include heading('para-md');
+
+      font-weight: $weight-book;
+      margin-bottom: 0;
+      padding-bottom: $base-padding-lite;
+    }
+  }
+
+  .data-downloads {
+    @include heading(para-sm);
+
+    color: $blue;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .state-pages-ownership {
+    @include omega();
+
+    float: right;
+    margin-left: $base-padding;
+    padding-bottom: 0;
+  }
+}
+
+.national-page {
+  .slab-delta {
+    margin-bottom: 6rem;
+  }
+}

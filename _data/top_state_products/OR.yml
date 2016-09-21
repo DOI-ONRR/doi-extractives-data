@@ -1,0 +1,160 @@
+all_production:
+  '2006':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 37850297.26
+      rank: 3
+      percent: 13.09
+  '2007':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33587439.48
+      rank: 2
+      percent: 13.57
+  '2008':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33805024.1
+      rank: 2
+      percent: 13.27
+  '2009':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33033512.84
+      rank: 2
+      percent: 12.08
+  '2010':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 30542260
+      rank: 3
+      percent: 11.74
+  '2011':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 42314821
+      rank: 3
+      percent: 13.25
+  '2012':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 39410178.37
+      rank: 2
+      percent: 14.27
+  '2013':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33097667
+      rank: 2
+      percent: 12.32
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 164649
+      rank: 5
+      percent: 1.04
+  '2014':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 35261936
+      rank: 2
+      percent: 13.6
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 183467
+      rank: 5
+      percent: 1.16
+  '2015':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 32302676.59
+      rank: 2
+      percent: 12.86
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 181275.79
+      rank: 5
+      percent: 1.08
+revenue:
+  '2006':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 3111
+      rank: 5
+      percent: 0.02
+  '2007':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 126215.18
+      rank: 5
+      percent: 0.66
+  '2008':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 141997.66
+      rank: 4
+      percent: 0.38
+  '2009':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 980547.39
+      rank: 4
+      percent: 2.02
+  '2010':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 300904.89
+      rank: 4
+      percent: 1.12
+  '2011':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 298267.05
+      rank: 4
+      percent: 1.84
+  '2012':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 293708
+      rank: 4
+      percent: 1.92
+  '2013':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 299908.21
+      rank: 4
+      percent: 2
+  '2014':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 273777.03
+      rank: 4
+      percent: 1.71
+  '2015':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 218887.83
+      rank: 4
+      percent: 1.41

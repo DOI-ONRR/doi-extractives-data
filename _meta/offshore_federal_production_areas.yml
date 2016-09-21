@@ -1,0 +1,8 @@
+'{area_id}':
+  name: '{area_name}'
+  products:
+    '{product}':
+      name: '{product_name}'
+      units: '{units}'
+      volume:
+        '{year}': '{volume}'

@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/18F/doi-extractives-data/tree/dev.svg?style=svg)](https://circleci.com/gh/18F/doi-extractives-data/tree/dev)
+
 # U.S. Extractive Industries Data and Information
 
 ## What
@@ -15,8 +17,21 @@ The U.S. also recently became a part of an international standard called the [Ex
 ## About this website
 This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
 
-## Data
+## Data and Database
 The [data catalog](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
+
+Data for the site is populated via data files in the `_data` directory. These are primarily `yml` files that are generated from commands in the [`Makefile`](Makefile).
+
+To create the database locally, make sure that you have `sqlite` and run `make db`.
+
+If you would like to query the local database instance:
+
+1. Open a new terminal shell and run `sqlite3`
+2. Run `.open data.db`
+3. You can now run sqlite queries from the local instance.
+4. Run `.tables` to see the available tables you can query.
+
+To update site data, run `make site-data`.
 
 ## Running the Site
 This site is made with [Jekyll]. To run it locally, clone this repository then:
@@ -25,7 +40,7 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 1. Install all node dependencies: `npm install`
 1. Set the $NODE_ENV to `dev`: `export NODE_ENV=dev`
 1. Package js files with webpack: `webpack --watch`
-1. Run the web server: `bundle exec jekyll serve` (or just `jekyll serve` if you have Jekyll installed globally)
+1. Run the web server: `npm run start` (or `jekyll serve` if you have Jekyll installed globally)
 1. Visit the local site at [http://localhost:4000](http://localhost:4000)
 
 ## Deployment
@@ -46,12 +61,50 @@ npm run watch
 ```
 
 ## Tests
+
+### JavaScript
+
 The JavaScript tests currently only cover a small portion of data processing utilities. You can run them with [Node]:
 
 ```sh
 npm install --dev
 npm test
 ```
+
+### Jekyll filters
+We have created a set of [custom Jekyll filters](https://jekyllrb.com/docs/plugins/#liquid-filters) that can be used for templating. The filters in _plugins/eiti_*.rb are tested with [rubydoctest](https://github.com/tslocke/rubydoctest).
+
+#### Testing filters
+
+You can run the unit tests as follows:
+
+```sh
+npm test-ruby
+```
+
+#### Writing filters
+
+As the following example demonstrates, test cases are written in comment blocks immediately preceding a testable function. The test description is on the first line, with an empty comment block below it. Use `>>` syntax to invoke a test case, and follow it with hash rocket syntax, `=>`, to define the expected outcome of the invocation.
+
+Inline unit test for `to_i`:
+
+```
+# convert (or map) a value to integers
+#
+# >> EITI::Data.to_i('5')
+# => 5
+# >> EITI::Data.to_i(['1', '2'])
+# => [1, 2]
+def to_i(x)
+  x.is_a?(Array) ? x.map(&:to_i) : x.to_i
+end
+module_function :to_i
+```
+
+## Continuous Integration
+We are using [CircleCI](https://circleci.com/) to test our code as we push it to Github.
+
+As specified in our [circle.yml](circle.yml) configuration file, we are running our JS and Jekyll filter tests to ensure that functions are working as expected.
 
 ## Code Style
 We use [Hound CI](https://houndci.com/) to enforce SCSS and JavaScript

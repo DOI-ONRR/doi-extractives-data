@@ -1,0 +1,71 @@
+all_production:
+  '2006':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2317821
+      rank: 3
+      percent: 8.72
+  '2007':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 2756676
+      rank: 3
+      percent: 8
+  '2008':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 4083787
+      rank: 4
+      percent: 7.38
+  '2009':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 7420519.61
+      rank: 2
+      percent: 10.04
+  '2010':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 9170337.2
+      rank: 2
+      percent: 9.69
+  '2011':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 10709176.91
+      rank: 2
+      percent: 8.91
+  '2012':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 14032490.63
+      rank: 2
+      percent: 9.96
+  '2013':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 15568406.41
+      rank: 2
+      percent: 9.28
+  '2014':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 16306754.53
+      rank: 2
+      percent: 8.98
+  '2015':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 17877698.81
+      rank: 2
+      percent: 9.36

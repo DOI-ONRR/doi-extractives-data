@@ -1,21 +1,11 @@
 // Explore data callout on homepage
 //
 // Styleguide blocks.explore-home
-
-@mixin active-tab() {
-  background-color: $white;
-  border: 1px solid $neutral-gray;
-  border-bottom: 1px solid $white;
-  font-weight: $weight-bold;
-  text-decoration: none;
-}
-
 .explore_home-heading {
-  margin-bottom: $base-padding;
-
-  @include respond-to(medium-up) {
-    margin-bottom: 0;
-  }
+  font-weight: $weight-bold;
+  line-height: 1.3;
+  margin-bottom: $base-padding-lite;
+  padding-right: $base-padding-lite;
 }
 
 .explore_home-explore_heading {
@@ -34,9 +24,29 @@
   }
 }
 
+.explore_home-map {
+  aside {
+    margin-left: $base-padding-large;
+  }
+
+  figure {
+    margin-top: -$base-padding;
+  }
+
+  .state_pages-select {
+    padding-top: $base-padding;
+
+    select {
+      width: 85%;
+    }
+  }
+}
+
+.explore_home-map-intro {
+  padding-right: $base-padding-large;
+}
+
 .explore_home-tabs {
-  @include heading(para-sm);
-  margin-bottom: 3px;
   text-align: right;
 
   @include respond-to(tiny-down) {
@@ -50,22 +60,11 @@
     border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: $base-padding-lite;
-    padding-bottom: 5px;
-
-    &[aria-selected="true"] {
-      @include active-tab();
-    }
-
-    &:hover,
-    &:focus {
-      @include active-tab();
-    }
   }
 
   li {
     display: inline-block;
-    padding: 0;
+    padding-bottom: 3px;
   }
 }
 
@@ -103,7 +102,6 @@
 }
 
 .explore_home-main {
-  border-top: 1px solid $neutral-gray;
   padding-top: $base-padding-large;
 }
 

@@ -1,0 +1,109 @@
+// XXX reducing the selector depth here would require going overboard on the
+// classes. -- @shawnbot
+// scss-lint:disable SelectorDepth
+eiti-bar-chart {
+
+  svg {
+    display: block;
+    font-size: inherit;
+    font-weight: $weight-light;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 100%;
+  }
+
+  .bar {
+    cursor: pointer;
+  }
+
+  .bar-value {
+    fill: $gray-light;
+    pointer-events: none;
+    transition: fill 0.1s;
+  }
+
+  .bar-mask {
+    fill: transparent;
+    stroke: $white;
+    stroke-width: 4;
+  }
+
+  .axis {
+    line,
+    path {
+      fill: none;
+      stroke: none;
+    }
+
+    .tick line {
+      stroke: $white;
+    }
+
+    .tick:first-child line,
+    .tick:last-child line {
+      stroke: none;
+    }
+
+    text {
+      @include font-size(1);
+      fill: $gray-darkest;
+      font-weight: $weight-light;
+
+      &.dataless {
+        fill: $gray;
+      }
+    }
+  }
+
+  .bar-selected .bar-value,
+  .tick-selected text,
+  .tick-hover text {
+    fill: $green-dark-chart;
+
+    &.dataless {
+      fill: $green-dark-chart;
+    }
+  }
+
+  .tick-selected text {
+    font-weight: $weight-bold;
+  }
+
+  .tick-hover text {
+    font-weight: $weight-book;
+  }
+}
+
+.eiti-bar-chart-x-value,
+.eiti-bar-chart-y-value {
+  color: $green-dark-chart;
+  font-weight: $weight-bold;
+}
+
+.x-axis-label {
+  text-transform: uppercase;
+
+  text {
+    @include font-size(1);
+
+    text-anchor: middle;
+  }
+}
+
+.extent-line {
+  text {
+    @include font-size(1);
+    fill: $gray-dark;
+  }
+
+  line {
+    stroke: $gray;
+    stroke-dasharray: 5,5;
+    stroke-width: 1;
+  }
+}
+
+.x-axis-baseline line {
+  stroke: $gray;
+}

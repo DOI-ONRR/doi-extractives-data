@@ -1,0 +1,152 @@
+$ab-height: 70px;
+$ab-height-half: $ab-height / 2;
+$ab-gutter: 2px;
+$ab-wrap: $ab-height-half + (2 * $ab-gutter);
+$ab-h-indent: ($ab-height-half / 2);
+$ab-w-indent: ($ab-height-half / 2) + $ab-gutter;
+$ab-padding: 10px;
+$ab-padding-half: ($ab-padding / 2);
+
+$ab-color-dark: $mid-light-gray;
+$ab-color-primary: $mid-light-gray;
+$ab-border-thin: 1px;
+$ab-border-thick: 4px;
+
+// Table arrow box
+
+.table-arrow_box,
+.table-arrow_box thead,
+.table-arrow_box thead tr,
+.table-arrow_box td,
+.table-arrow_box th {
+  border: 0;
+}
+
+.table-arrow_box {
+  width: 100%;
+
+  thead {
+    th {
+      @include heading('para-sm');
+
+      background-color: $ab-color-primary;
+      border-right: $ab-gutter solid $white;
+      border-top: 20px solid $ab-color-primary;
+      height: $ab-height;
+      padding-left: $ab-padding;
+      padding-right: $ab-padding;
+      padding-top: 0;
+      text-align: left;
+      vertical-align: top;
+      width: 20%;
+      z-index: 100;
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+
+    th:last-child:not(.arrow_box):not(.arrow_box-last) {
+      padding-left: $ab-padding;
+
+      span {
+        font-weight: $weight-light;
+      }
+    }
+
+    th:first-child {
+      padding-left: $ab-padding;
+
+      span {
+        font-weight: $weight-light;
+      }
+    }
+
+    span {
+      font-weight: $weight-bold;
+      line-height: 2.3;
+      white-space: pre;
+
+      &::after {
+        content: '\A';
+      }
+
+      &:nth-child(4),
+      &:nth-of-type(8) {
+        font-weight: $weight-light;
+      }
+    }
+  }
+
+  tbody th {
+    padding: 10px;
+    padding-left: 0;
+  }
+
+  tbody td {
+    padding: 10px;
+  }
+
+  .table-arrow_box-subcategory,
+  .table-arrow_box-category,
+  .table-arrow_box-subheader {
+    @include heading('para-sm');
+  }
+
+  .table-arrow_box-subheader {
+    font-weight: $weight-bold;
+  }
+
+  .table-arrow_box-subheader-value:not(.text) {
+    @include font-size(1);
+
+    color: $green-dark-chart;
+  }
+
+  .table-arrow_box-category {
+    border-bottom: $ab-border-thin solid $ab-color-primary;
+    border-top: 25px solid $white;
+    color: $gray-dark;
+    font-weight: $weight-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &::after {
+      content: ' ';
+    }
+
+    td {
+      padding-left: 0;
+    }
+
+    icon {
+      color: $gray-dark;
+      font-weight: $weight-bold;
+      font-size: 20px;
+    }
+  }
+}
+
+.table-arrow_box-asterisk {
+  @include font-size(0.75);
+  line-height: 0;
+}
+
+
+// Arrow box
+
+.arrow_box,
+.arrow_box-last {
+  background: $ab-color-primary;
+  position: relative;
+}
+
+.arrow_box:first-of-type {
+  padding-left: $ab-padding-half;
+}
+
+// FIXME
+#revenue-types tbody th .bar,
+#revenue-process tbody th .bar {
+  display: none;
+}

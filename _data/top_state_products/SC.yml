@@ -1,0 +1,36 @@
+revenue:
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 8465.17
+      rank: 4
+      percent: 0.06
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3417.2
+      rank: 5
+      percent: 0.02
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 5562.76
+      rank: 4
+      percent: 0.05
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 6731.65
+      rank: 4
+      percent: 0.06
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 4439.39
+      rank: 4
+      percent: 0.04

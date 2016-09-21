@@ -32,10 +32,10 @@
     var chartTables = this.chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
     var chartRows = chartTables.selectAll('tr[data-fips]')
 
-    var highlightCounty = this.highlightCounty = function(fips, event) {
-      event = event || 'selected';
+    var highlightCounty = this.highlightCounty = function(fips, eventType) {
+      eventType = eventType || 'selected';
       counties.classed('mouseover', false);
-      counties.classed(event, false);
+      counties.classed(eventType, false);
       var unselectedCounties = counties.filter(function(){
         return !d3.select(this).classed('selected');
       });
@@ -51,7 +51,7 @@
             : county.attr('data-fips') === fips;
 
           if (areEqual) {
-            county.classed(event, true);
+            county.classed(eventType, true);
             county.call(moveToFront);
           }
         });
@@ -60,6 +60,7 @@
 
     var toggleTable = function(context) {
       context = context || this;
+
       var parent = context.parentNode;
 
       var hasValue = parent.getAttribute('data-value') &&
@@ -80,7 +81,7 @@
       }
     };
 
-    var mouseTable = function(context, event) {
+    var mouseTable = function(context, eventType) {
       context = context || this;
 
       var parent = context.parentNode;
@@ -89,10 +90,10 @@
       if (hasValue) {
         var countyFIPS = parent.getAttribute('data-fips');
 
-        highlightCounty(countyFIPS, event);
+        highlightCounty(countyFIPS, eventType);
 
         chartTables.each(function(){
-          this.highlight(countyFIPS, event);
+          this.highlight(countyFIPS, eventType);
         });
       }
     };
@@ -107,6 +108,7 @@
     };
 
     var mouseMap = function () {
+      var event = event || d3.event || window.event;
       event = event.type;
       var fips = this.getAttribute('data-fips');
 
@@ -137,7 +139,7 @@
       .on('mouseover.county', function(){
         var that = this;
         setTimeout(function(){
-          eiti.util.throttle(mouseTable(that, 'mouseover'), 200);
+          mouseTable(that, 'mouseover');
         }, 10);
       });
 

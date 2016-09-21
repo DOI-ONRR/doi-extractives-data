@@ -341,17 +341,6 @@
         }
       }
 
-      if (!hover) {
-        var year = String(value.x);
-        output.selectAll('[data-years-visible]')
-          .datum(function(d) {
-            return d || this.getAttribute('data-years-visible').split(',');
-          })
-          .attr('aria-hidden', function(years) {
-            return years.indexOf(year) === -1;
-          });
-      }
-
     }
   };
 

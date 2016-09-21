@@ -8,13 +8,13 @@
     function(el) {
       sticky.add(el);
       var isNav = el.classList.contains('sticky_nav');
-      var preSticky = el.parentNode.insertBefore(document.createElement('div'), el)
-        .setAttribute('class', 'pre-sticky')
+      var preSticky = document.createElement('div');
+      el.parentNode.insertBefore(preSticky, el)
+        .setAttribute('class', 'pre-sticky');
 
       if (isNav) {
         preSticky.classList.add('pre-sticky-small');
       }
-
     }
   );
 

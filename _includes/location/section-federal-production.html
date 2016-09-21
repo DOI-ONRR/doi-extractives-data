@@ -41,6 +41,7 @@
       {% assign units = product[1].units | downcase | default: 'units' %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
+      {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
@@ -69,7 +70,7 @@
                 <span class="caption-data">
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                  {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
+                  {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
                   produced on federal land in {{ state_name }} in
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>

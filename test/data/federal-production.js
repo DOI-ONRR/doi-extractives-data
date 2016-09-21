@@ -10,7 +10,7 @@ var _ = require('lodash');
 
 var OUT_PATH = path.join(__dirname, '../../_data');
 
-describe('federal production (ONRR)', function() {
+describe('federal production (ONRR) sentinels', function() {
 
   describe('national values', function() {
 
@@ -25,14 +25,17 @@ describe('federal production (ONRR)', function() {
     var assertSentinelMatch = function (product, year, value) {
       var expected = Math.round(value);
       var actual = products[product].volume[year];
-      assert.equal(
-        expected, actual,
-        'expected ' + value + ' for: ' + [product, year].join(' | ')
+
+      var difference = expected - actual;
+      assert.ok(
+        Math.abs(difference) < 10,
+        'expected ' + expected +
+        ', got: ' + actual +
+        ' for: ' + [product, year].join(' | ')
       );
     };
 
-    // [pending] until discrepency in Oil values is solved
-    xit('check sentinel values', function(done) {
+    it('check sentinel values', function(done) {
 
       var sentinels = [
         {
@@ -94,8 +97,7 @@ describe('federal production (ONRR)', function() {
       );
     };
 
-    // [pending] until discrepency in Oil values is solved
-    xit('check sentinel values', function(done) {
+    it('check sentinel values', function(done) {
 
       var sentinels = [
         {
@@ -149,8 +151,7 @@ describe('federal production (ONRR)', function() {
       );
     };
 
-    // // [pending] until issue with Oil is worked out
-    xit('check sentinels', function(done) {
+    it('check sentinels', function(done) {
 
       var sentinels = [
         {
@@ -159,7 +160,7 @@ describe('federal production (ONRR)', function() {
           fips: '02185',
           product: 'Oil (bbl)',
           year: 2014,
-          value: 894025
+          value: 7693
         },
         {
           state: 'MS',

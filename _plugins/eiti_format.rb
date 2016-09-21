@@ -60,6 +60,24 @@ module EITI
     def suffix(text, suffix = '')
       suffix.empty? ? text : "#{text} #{suffix}"
     end
+
+    def year_range(years)
+      years = years.map{ |y| y.to_i }
+      def abbr(y)
+        "’#{y.to_s.slice(-2, 2)}"
+      end
+      if years.size == 1
+        abbr(years.first)
+      elsif years.last == (years.first + years.size - 1)
+        [years.first, years.last]
+          .map{ |y| abbr(y) }
+          .join('&ndash;')
+      else
+        years
+          .map{ |y| abbr(y) }
+          .join(', ')
+      end
+    end
   end
 end
 

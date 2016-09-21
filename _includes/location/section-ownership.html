@@ -1,7 +1,7 @@
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
 
-<section class="container-outer land-ownership">
+<section class="container land-ownership">
 
   <h3 class="title-land-ownership">Land ownership</h3>
 
@@ -11,7 +11,7 @@
     <figure>
       <div class="svg-container county map-container wide"{% if __viewbox %}
         style="padding-bottom: {{ __viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
-        <svg class="county ownership map no-outlines state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>
+        <svg class="county ownership map state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>
           <g class="states features">
             <use xlink:href="{{ states_svg }}#states"></use>
           </g>
@@ -35,7 +35,7 @@
       </div>
 
     </figure>
-    
+
     <aside class="wide" style="clear:both;">
       {% include maps/federal_land_ownership_legend.html %}
     </aside>

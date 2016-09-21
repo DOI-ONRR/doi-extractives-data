@@ -10,10 +10,10 @@
 
   h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
-    padding-top: 6rem;
+    padding-top: 5rem;
 
     &.state-page-overview {
-      padding-top: 0;
+      padding-top: 1rem;
     }
   }
 
@@ -26,6 +26,10 @@
   h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
   .pre-sticky {
     margin-top: 4rem;
+  }
+
+  .pre-sticky-small {
+    margin-top: 3rem - $standard-padding-large;
   }
 
   ul + h3:not(.chart-title):not(.title-land-ownership),
@@ -115,8 +119,11 @@
   }
 
   .state-pages-ownership {
+    @include omega();
+
     float: right;
-    margin-left: 20px;
+    margin-left: $base-padding;
+    padding-bottom: 0;
   }
 }
 

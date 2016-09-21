@@ -62,7 +62,7 @@ nav_items:
           %}
         </figure>
         <aside class="wide">
-          {% include maps/federal_land_ownership_legend.html %}
+          {% include maps/federal_land_ownership_legend.html land=true %}
         </aside>
       </div>
       <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
@@ -79,7 +79,7 @@ nav_items:
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">
           <label for="location-selector" class="ribbon-card-top-text-header">Explore state or offshore data:</label>
-          {% include selector.html 
+          {% include selector.html
             default = 'Choose location'
           %}
         </figcaption>

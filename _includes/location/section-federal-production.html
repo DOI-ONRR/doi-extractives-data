@@ -167,9 +167,8 @@
     {% if withheld_products.size > 0 %}
       <h3>Data withheld</h3>
       <p>
-        Production volume was {{ 'withheld' | term }} for the
-        following product(s) in
-        <span class="eiti-bar-chart-x-value">{{ year }}</span>:
+        Production volume in {{ state_name }} was
+        {{ 'withheld' | term }} for the following product(s):
       </p>
       <ul>
         {% assign all_years = year_list | to_s %}
@@ -178,9 +177,9 @@
           {% for _year in product[1].volume %}
             {% assign product_years = product_years | push: _year[0] %}
           {% endfor %}
-        <li data-years-visible="{{ product_years | join: ',' }}"
-          {% unless product_years contains year %}aria-hidden="true"{% endunless %}>
+        <li>
           {{ product[1].name | default: product[0] }}
+          ({{ product_years | year_range }})
         </li>
         {% endfor %}
       </ul>

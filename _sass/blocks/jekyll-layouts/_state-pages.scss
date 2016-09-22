@@ -131,7 +131,19 @@
 
   &[aria-expanded=false] {
     // XXX magic number
-    max-height: 7.5em;
+    max-height: 7.2em;
     overflow-y: hidden;
+
+    // add a little white shadow when it's collapsed
+    &::after {
+      bottom: -50px;
+      box-shadow: 0 -10px 25px $white;
+      content: '';
+      display: table;
+      height: 50px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 }

@@ -70,7 +70,7 @@
             x-value="{{ year }}"
             data-units="{{ long_units }}">
           </eiti-bar-chart>
-          <figcaption id="national-federal-production-figures-{{ product_slug }}" class="control-hover">
+          <figcaption id="national-federal-production-figures-{{ product_slug }}">
             <span class="caption-data">
               <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
                 {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were

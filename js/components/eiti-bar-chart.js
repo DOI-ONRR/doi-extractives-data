@@ -312,7 +312,7 @@
       // class if `hover` is true. This excludes the "no data" list so
       // that we don't thrash the layout too hard when hovering over
       // bars.
-      var qualifier = hover ? '.control-hover' : '';
+      var qualifier = '';
 
       var selector = id.split(' ').map(function(id) {
         return '#' + id + qualifier;

@@ -15,6 +15,9 @@
     var yearValues = root.selectAll('year-value');
 
     var update = function(year) {
+      root.selectAll('.eiti-bar-chart-x-value')
+        .text(year);
+
       charts.property('x', year);
       maps.each(function() {
         this.setYear(year);

@@ -10,20 +10,20 @@
     }
     var target = document.getElementById(button.getAttribute(CONTROLS));
     button.setAttribute(EXPANDED, expanded);
-    target.setAttribute(HIDDEN, !expanded);
+    var attr = button.getAttribute('aria-toggles') || HIDDEN;
+    target.setAttribute(
+      attr,
+      (attr === HIDDEN) ? !expanded : expanded
+    );
     return expanded;
   };
 
   var collapse = function(button) {
-    var target = document.getElementById(button.getAttribute(CONTROLS));
-    button.setAttribute(EXPANDED, false);
-    target.setAttribute(HIDDEN, true);
+    return toggle(button, false);
   }
 
   var expand = function(button) {
-    var target = document.getElementById(button.getAttribute(CONTROLS));
-    button.setAttribute(EXPANDED, true);
-    target.setAttribute(HIDDEN, false);
+    return toggle(button, true);
   }
 
   var click = function(event) {
@@ -61,12 +61,8 @@
 
         attributeChangedCallback: {value: function(attr, old, value) {
           switch (attr) {
-            case 'aria-expanded':
-              if (value === 'false') {
-                collapse(this);
-              } else if (value === 'true') {
-                expand(this);
-              }
+            case EXPANDED:
+              return toggle(this, value === 'true');
           }
         }}
       }

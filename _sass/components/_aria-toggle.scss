@@ -1,4 +1,10 @@
 [is=aria-toggle] {
+
+  &[aria-expanded=false] .show-expanded,
+  &[aria-expanded=true] .hide-expanded {
+    display: none;
+  }
+
   &.not-button-like {
     @include appearance(none);
 

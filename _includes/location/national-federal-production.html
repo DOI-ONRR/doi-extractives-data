@@ -25,7 +25,10 @@
 
     <div class="chart-list">
 
+    {% assign withheld_products = '' | split: '' %}
+
     {% for product in federal_products %}
+      {% assign product_name = product[1].name | default: product[0] %}
 
       {% assign all_withheld = true %}
       {% for product_year in product[1].volume %}
@@ -34,10 +37,13 @@
           {% break %}
         {% endif %}
       {% endfor %}
-      {% if all_withheld %}<!-- all withheld: {{ product[0] }} -->{% continue %}{% endif %}
+      {% if all_withheld %}
+        <!-- all withheld: {{ product[0] }} -->
+        {% assign withheld_products = withheld_products | push: product %}
+        {% continue %}
+      {% endif %}
 
       {% assign product_slug = product[0] | slugify %}
-      {% assign product_name = product[1].name | default: product[0] %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year] %}
       {% assign units = product[1].units | downcase %}
@@ -58,13 +64,13 @@
 
         <figure class="chart">
           <eiti-bar-chart
-            aria-controls="national-federal-production-figures-{{ product_slug }}"
+            aria-controls="national-federal-production-figures-{{ product_slug }} national-federal-production-withheld"
             data='{{ production_values | jsonify }}'
             x-range="{{ year_range }}"
             x-value="{{ year }}"
             data-units="{{ long_units }}">
           </eiti-bar-chart>
-          <figcaption id="national-federal-production-figures-{{ product_slug }}">
+          <figcaption id="national-federal-production-figures-{{ product_slug }}" class="control-hover">
             <span class="caption-data">
               <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
                 {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
@@ -87,6 +93,35 @@
     {% endfor %}
 
     </div><!-- /.chart-list -->
+
+    <section id="national-federal-production-withheld">
+    {% if withheld_products.size > 0 %}
+      <h3>Data withheld</h3>
+      <p>
+        Production volume was {{ 'withheld' | term }} for the
+        following products:
+      </p>
+      <ul id="federal-production-withheld-products" class="expandable">
+        {% assign all_years = year_list | to_s %}
+        {% for product in withheld_products %}
+          {% assign product_years = '' | split: '' %}
+          {% for _year in product[1].volume %}
+            {% assign product_years = product_years | push: _year[0] %}
+          {% endfor %}
+        <li>
+          {{ product[1].name | default: product[0] }}
+          ({{ product_years | year_range }})
+        </li>
+        {% endfor %}
+      </ul>
+      <button is="aria-toggle" aria-expanded="false"
+        aria-toggles="aria-expanded"
+        aria-controls="federal-production-withheld-products">
+        <span class="hide-expanded">Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}</span>
+        <span class="show-expanded">Close</span>
+      </button>
+    {% endif %}
+    </section>
 
   </section>
 

@@ -97,11 +97,11 @@ AL:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Coal (tons):
       name: Coal
       units: tons
@@ -109,27 +109,27 @@ AL:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: 1760930
           percent: 0.42
@@ -137,15 +137,15 @@ AL:
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Gas (mcf):
       name: Gas
       units: mcf
@@ -339,19 +339,19 @@ AR:
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: 4701
           percent: 100
@@ -365,39 +365,39 @@ AZ:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 CA:
   products:
     Gas (mcf):
@@ -691,43 +691,43 @@ CA:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Soda Ash (tons):
       name: Soda Ash
       units: tons
@@ -735,43 +735,43 @@ CA:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Sodium Bi-Carbonate (tons):
       name: Sodium Bi-Carbonate
       units: tons
@@ -779,43 +779,43 @@ CA:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 CO:
   products:
     Coal (tons):
@@ -957,11 +957,11 @@ CO:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: 102512
           percent: 66.77
@@ -969,31 +969,31 @@ CO:
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 FL:
   products:
     Oil (bbl):
@@ -1011,23 +1011,23 @@ FL:
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 ID:
   products:
     Phosphate Raw Ore (tons):
@@ -1263,39 +1263,39 @@ KY:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Gas (mcf):
       name: Gas
       units: mcf
@@ -1939,11 +1939,11 @@ ND:
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: 338405
           percent: 0.07
@@ -2163,43 +2163,43 @@ NM:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Gas (mcf):
       name: Gas
       units: mcf
@@ -2471,39 +2471,39 @@ NM:
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Salt (tons):
       name: Salt
       units: tons
@@ -2511,11 +2511,11 @@ NM:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: 314483
           percent: 49.58
@@ -2733,7 +2733,7 @@ NV:
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 NY:
   products:
     Gas (mcf):
@@ -2789,7 +2789,7 @@ OH:
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Gas (mcf):
       name: Gas
       units: mcf
@@ -3279,35 +3279,35 @@ UT:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: 33520
           percent: 100
@@ -3491,7 +3491,7 @@ UT:
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: 35927
           percent: 100
@@ -3499,11 +3499,11 @@ UT:
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: 16078
           percent: 100
@@ -3559,43 +3559,43 @@ UT:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Salt (tons):
       name: Salt
       units: tons
@@ -3603,43 +3603,43 @@ UT:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 VA:
   products:
     Gas (mcf):
@@ -3695,11 +3695,11 @@ WA:
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
 WV:
   products:
     Gas (mcf):
@@ -3947,43 +3947,43 @@ WY:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2011':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2012':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2013':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2014':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2015':
           volume: null
           percent: null
-          rank: 1
+          rank: null
     Soda Ash (tons):
       name: Soda Ash
       units: tons
@@ -4035,19 +4035,19 @@ WY:
         '2006':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2007':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2008':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2009':
           volume: null
           percent: null
-          rank: 1
+          rank: null
         '2010':
           volume: 46904
           percent: 25.95

@@ -3,7 +3,7 @@
 {% assign year_range = site.data.years.all_production | default: site.data.years.default | jsonify %}
 {% assign year_list = year_range | to_list %}
 {% assign commodity_names = site.data.commodity_names %}
-  
+
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
   <h3 class="sticky">Energy production in the entire state of {{ state_name }}</h3>
@@ -15,7 +15,7 @@
     {% endif %}
 
     <p class="chart-description{% unless all_products %} no-selector{% endunless %}">
-      The U.S. Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned land. 
+      The U.S. Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned land.
       <br>
       <a href="{{site.baseurl}}/downloads/#production-all">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -31,9 +31,10 @@
       {% assign product_slug = product_name | slugify %}
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
-      {% assign units = product[1].units | downcase %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
+      {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
 
     <section id="state-all-production-{{ product_slug }}" class="chart-item">
@@ -50,16 +51,16 @@
         <figcaption id="state-all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-            {{ long_units | term }} of
-            {{ product_name | downcase | suffix: units_suffix }} 
-            were produced in 
+            {{ long_units | term: term_units }} of
+            {{ product_name | downcase | suffix: units_suffix }}
+            were produced in
             {{ state_name }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data about production of 
-            {{ product_name | downcase | suffix: units_suffix }}   
-            in {{ state_name }} in 
+            There is no data about production of
+            {{ product_name | downcase | suffix: units_suffix }}
+            in {{ state_name }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>

@@ -38,8 +38,9 @@
       {% assign production_values = product[1].volume %}
       {% assign volume = production_values[year].volume %}
       {% assign units = product[1].units | downcase | default: 'units' %}
-      {% assign short_units = units_map[units].short | default 'units' %}
-      {% assign long_units = units_map[units].long | default 'units' %}
+      {% assign short_units = units_map[units].short | default units %}
+      {% assign long_units = units_map[units].long | default: units %}
+      {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default '' %}
       {% assign units_title = units_map[units].title %}
 

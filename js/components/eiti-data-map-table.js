@@ -43,7 +43,6 @@
     var toggleTable = function() {
       var event = event || d3.event || window.event;
       var context = event.target || event.srcElement;
-      var eventType = event.type;
       var parent = context.parentNode;
 
       var hasValue = parent.getAttribute('data-value') &&

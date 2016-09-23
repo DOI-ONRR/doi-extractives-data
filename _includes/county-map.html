@@ -57,33 +57,31 @@
       <use xlink:href="{{ state_svg }}#counties"></use>
     </g>
 
-    <g>
-      {% if include.counties %}
-        {%
-          include county-feature.html
-          value= include.value
-          years=include.years
-          years_property=include.years_property
-          counties=include.counties
-          href=include.href
-        %}
-      {% endif %}
+    {% if include.counties %}
+      {%
+        include county-feature.html
+        value= include.value
+        years=include.years
+        years_property=include.years_property
+        counties=include.counties
+        href=include.href
+      %}
+    {% endif %}
 
-      <g class="counties mesh">
-        <use xlink:href="{{ state_svg }}#counties-mesh"></use>
-      </g>
-      {% if include.counties %}
-        {%
-          include county-feature.html
-          only_stroke=true
-          value= include.value
-          years=include.years
-          years_property=include.years_property
-          counties=include.counties
-          href=include.href
-        %}
-      {% endif %}
+    <g class="counties mesh">
+      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
     </g>
+    {% if include.counties %}
+      {%
+        include county-feature.html
+        only_stroke=true
+        value= include.value
+        years=include.years
+        years_property=include.years_property
+        counties=include.counties
+        href=include.href
+      %}
+    {% endif %}
 
     <g class="state feature overlay">
       <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>

@@ -98,11 +98,20 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text }}
-        {% else %}Show table{% endif %}
+        aria-controls="{{ include.toggle }}"
+        aria-expanded="false">
+          <span class="hide-expanded">
+            <i class="icon icon-plus-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_hidden }}
+            {% else %}Show table{% endif %}
+          </span>
+          <span class="show-expanded">
+            <i class="icon icon-dash-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_visible }}
+            {% else %}Hide table{% endif %}
+          </span>
       </button>
     </h4>
   {% endif %}
@@ -127,11 +136,20 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text }}
-        {% else %}Show table{% endif %}
+        aria-controls="{{ include.toggle }}"
+        aria-expanded="false">
+          <span class="hide-expanded">
+            <i class="icon icon-plus-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_hidden }}
+            {% else %}Show table{% endif %}
+          </span>
+          <span class="show-expanded">
+            <i class="icon icon-dash-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_visible }}
+            {% else %}Hide table{% endif %}
+          </span>
       </button>
     </h4>
   {% endif %}

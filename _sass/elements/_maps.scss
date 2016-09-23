@@ -52,6 +52,15 @@ svg.map {
     }
   }
 
+  .county.feature.only-stroke {
+    fill: none;
+    pointer-events: none;
+  }
+
+  @include svg-use('.county.feature.only-stroke') {
+    fill-opacity: 0;
+  }
+
   @include svg-use('.feature[fill]') {
     fill-opacity: 1;
   }

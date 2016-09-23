@@ -4,22 +4,6 @@
     var root = d3.select(this);
     var self = d3.select(this);
 
-    var moveToFront = function() {
-      return this.each(function(){
-        this.parentNode.appendChild(this);
-      });
-    };
-
-    var moveToBack = function() {
-      return this.each(function() {
-        var firstChild = this.parentNode.firstChild;
-        if (firstChild) {
-          this.parentNode.insertBefore(this, firstChild);
-        }
-      });
-    };
-
-
     var select = root.selectAll('select.chart-selector');
     var maps = root.selectAll('eiti-data-map');
     var svg = root.select('svg');
@@ -32,14 +16,13 @@
     var chartTables = this.chartTables = mapTables.selectAll('table[is="bar-chart-table"]')
     var chartRows = chartTables.selectAll('tr[data-fips]')
 
-    var highlightCounty = this.highlightCounty = function(fips, event) {
-      event = event || 'selected';
+    var highlightCounty = this.highlightCounty = function(fips, eventType) {
+      eventType = eventType || 'selected';
       counties.classed('mouseover', false);
-      counties.classed(event, false);
+      counties.classed(eventType, false);
       var unselectedCounties = counties.filter(function(){
         return !d3.select(this).classed('selected');
       });
-      unselectedCounties.call(moveToBack);
 
       if (fips) {
         counties.each(function(){
@@ -51,15 +34,16 @@
             : county.attr('data-fips') === fips;
 
           if (areEqual) {
-            county.classed(event, true);
-            county.call(moveToFront);
+            county.classed(eventType, true);
           }
         });
       }
     };
 
-    var toggleTable = function(context) {
-      context = context || this;
+    var toggleTable = function() {
+      var event = event || d3.event || window.event;
+      var context = event.target || event.srcElement;
+      var eventType = event.type;
       var parent = context.parentNode;
 
       var hasValue = parent.getAttribute('data-value') &&
@@ -80,8 +64,10 @@
       }
     };
 
-    var mouseTable = function(context, event) {
-      context = context || this;
+    var mouseTable = function() {
+      var event = event || d3.event || window.event;
+      var eventType = event.type;
+      var context = this || event.target || event.srcElement;
 
       var parent = context.parentNode;
       var hasValue = parent.getAttribute('data-value') &&
@@ -89,10 +75,10 @@
       if (hasValue) {
         var countyFIPS = parent.getAttribute('data-fips');
 
-        highlightCounty(countyFIPS, event);
+        highlightCounty(countyFIPS, eventType);
 
         chartTables.each(function(){
-          this.highlight(countyFIPS, event);
+          this.highlight(countyFIPS, eventType);
         });
       }
     };
@@ -107,6 +93,7 @@
     };
 
     var mouseMap = function () {
+      var event = event || d3.event || window.event;
       event = event.type;
       var fips = this.getAttribute('data-fips');
 
@@ -129,17 +116,9 @@
     chartRows.on('mouseover.countyTable', mouseMap);
     chartRows.on('mouseout.countyTable', mouseMap);
 
-
     countiesUse
-      .on('click.county', function(){
-        toggleTable(this);
-      })
-      .on('mouseover.county', function(){
-        var that = this;
-        setTimeout(function(){
-          eiti.util.throttle(mouseTable(that, 'mouseover'), 200);
-        }, 10);
-      });
+      .on('mouseover.county', mouseTable)
+      .on('click.county', toggleTable);
 
     svg.on('mouseout.county', function(){
       clearFields();

@@ -1,0 +1,24 @@
+{% assign keys = include.value %}
+{% for county in include.counties %}
+  {% assign fips = county[0] | pad_left: 5, '0' %}
+  {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
+  {% assign value = county[1] | get: keys %}
+  {% assign year_values = null %}
+  {% if include.years %}
+    {% assign year_values = county[1] | get: include.years %}
+    {% if include.years_property %}
+      {% assign year_values = year_values | map_hash: include.years_property %}
+    {% endif %}
+  {% endif %}
+
+  {% if year_values %}
+    <g class="county feature"
+      data-fips="{{ fips }}"
+      data-value='{{ value | jsonify }}'
+      data-year-values='{{ year_values | jsonify }}'>
+      <title>{{ county[1].name }}</title>
+      <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
+    </g>
+  {% endif %}
+  {% if include.href %}</a>{% endif %}
+{% endfor %}

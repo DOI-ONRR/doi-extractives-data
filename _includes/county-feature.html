@@ -12,10 +12,12 @@
   {% endif %}
 
   {% if year_values %}
-    <g class="county feature"
+    <g class="county feature{% if include.only_stroke %} only-stroke{% endif %}"
       data-fips="{{ fips }}"
-      data-value='{{ value | jsonify }}'
-      data-year-values='{{ year_values | jsonify }}'>
+      {% unless include.only_stroke %}
+        data-value='{{ value | jsonify }}'
+        data-year-values='{{ year_values | jsonify }}'
+      {% endunless %}>
       <title>{{ county[1].name }}</title>
       <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
     </g>

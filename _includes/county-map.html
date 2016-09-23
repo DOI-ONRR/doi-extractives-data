@@ -59,15 +59,29 @@
 
     <g>
       {% if include.counties %}
-        {% include county-feature.html %}
+        {%
+          include county-feature.html
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          counties=include.counties
+          href=include.href
+        %}
       {% endif %}
 
       <g class="counties mesh">
         <use xlink:href="{{ state_svg }}#counties-mesh"></use>
       </g>
-
       {% if include.counties %}
-        {% include county-feature-stroke.html %}
+        {%
+          include county-feature.html
+          only_stroke=true
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          counties=include.counties
+          href=include.href
+        %}
       {% endif %}
     </g>
 

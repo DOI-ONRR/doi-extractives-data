@@ -46,6 +46,7 @@ if (options.liberal) {
     2715: 'Oil',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=28>
     28: 'Mining',
+    // 72: 'Mining', // "base metals"???
     0: 'Total'
   };
 }
@@ -113,44 +114,6 @@ async.waterfall([
         });
       });
     });
-
-    done(null, result);
-  },
-  function consolidate(result, done) {
-
-    var matched = {};
-
-    // Create 'All' commodity
-    result.forEach(function(value){
-      var keyString = value.State + '-' + value.Year;
-
-      // Don't include 'Total' in the sum of all
-      if (value.Commodity !== 'Total') {
-
-        if (matched[keyString]) {
-          matched[keyString].Value += value.Value;
-          matched[keyString].Share += value.Share;
-
-        } else {
-          matched[keyString] = {
-            Value:      value.Value,
-            Share:      value.Share,
-            Commodity:  'All',
-            Resource:   'All',
-            State:      value.State,
-            HS6:        '0',
-            Resource:   'other',
-            Year:       value.Year
-          }
-        }
-      }
-    });
-
-    var matches = Object.keys(matched).map(function (key) {
-      return matched[key];
-    });
-
-    result = result.concat(matches);
 
     done(null, result);
   }

@@ -17,7 +17,6 @@ var tito = require('tito').formats;
 var util = require('../../lib/util');
 var async = require('async');
 var streamify = require('stream-array');
-var extend = require('extend');
 
 var HS6 = {
   260112: 'Iron', // Iron
@@ -32,7 +31,7 @@ var HS6 = {
 };
 
 if (options.liberal) {
-  var liberal = {
+  HS6 = {
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=25>
     25: 'Mining',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=26>
@@ -41,7 +40,7 @@ if (options.liberal) {
     2701: 'Coal',
     2709: 'Oil',
     2710: 'Oil',
-    2711: 'Oil',
+    2711: 'Gas',
     2713: 'Oil',
     2714: 'Oil',
     2715: 'Oil',
@@ -49,7 +48,6 @@ if (options.liberal) {
     28: 'Mining',
     0: 'Total'
   };
-  extend(HS6, liberal);
 }
 
 function getCommodity(code) {

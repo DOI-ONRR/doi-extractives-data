@@ -54,7 +54,7 @@
     {% for commodity in export_commodities %}
       {% assign commodity_name = commodity[0] %}
       {% assign exports = commodity[1] %}
-      {% assign commodity_slug = commodity[0] | slugify %}
+      {% assign commodity_slug = commodity_name | slugify %}
 
       {% if commodity_name != "Total" and commodity_name != "Extractives" %}
         <section class="chart-item">

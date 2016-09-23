@@ -6,7 +6,7 @@ FIPS: '04'
 priority: true
 
 case_study_link: |
-    For a detailed view of how copper mining affects communities in Arizona, read the [Greenlee County case study](../../case-studies/greenlee/) or [Pima County case study](../../case-studies/pima/).
+    For a detailed view of how copper mining affects communities in Arizona, read the [Greenlee County case study]({{ site.baseurl }}/case-studies/greenlee/) or [Pima County case study]({{ site.baseurl }}/case-studies/pima/).
 ---
 * The [Arizona State Land Department Minerals Section](https://land.az.gov/divisions/natural-resources/minerals) oversees mining activities on state-trust lands by issuing permits and leases, and has information about energy, mineral, and other management programs.
 * The [Arizona Geological Survey, Mineral Resources](http://www.azgs.az.gov/minerals.shtml) offers information about mineral rights and production levels.

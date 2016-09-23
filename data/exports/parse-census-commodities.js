@@ -31,11 +31,14 @@ var HS6 = {
 };
 
 if (options.liberal) {
+  const MINING = 'Other non energy minerals';
   HS6 = {
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=25>
-    25: 'Mining',
+    25: MINING,
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=26>
-    26: 'Mining',
+    260112: 'Iron', // Iron
+    260300: 'Copper', // Copper
+    261690: 'Gold', // * includes gold, but also other precious metals
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=27>
     2701: 'Coal',
     2709: 'Oil',
@@ -45,7 +48,7 @@ if (options.liberal) {
     2714: 'Oil',
     2715: 'Oil',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=28>
-    28: 'Mining',
+    28: MINING,
     // 72: 'Mining', // "base metals"???
     0: 'Total'
   };

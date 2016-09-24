@@ -7,7 +7,7 @@
   {% assign revenue_total = funds.Total.All[revenue_year] %}
 
 {% if page.state_disbursements %}
-  {{ page.state_disbursements | markdownify }}
+  {{ page.state_disbursements | liquify | markdownify }}
 {% endif %}
 
 <table is="bar-chart-table" class="table-basic"
@@ -58,5 +58,5 @@
   <h4 id="saving-and-spending">Saving and spending revenue from extraction</h4>
   <p>Many states choose to establish permanent mineral trust funds, which can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.</p>
   
-  {{ page.state_saving_spending | markdownify }}
+  {{ page.state_saving_spending | liquify | markdownify }}
 {% endif %}

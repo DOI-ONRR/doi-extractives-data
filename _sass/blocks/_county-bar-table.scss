@@ -24,8 +24,8 @@
     background-color: $gray-light;
   }
 
-  tbody > tr:hover,
-  tbody > tr:focus,
+  tbody > tr:hover:not(.inner-table-row),
+  tbody > tr:focus:not(.inner-table-row),
   tbody > tr.selected,
   tbody > tr.mouseover {
     background-color: $gray-pale;
@@ -48,6 +48,21 @@
 
     .bar .bar {
       background-color: $green-dark;
+    }
+  }
+
+  .inner-table-cell {
+    padding: 0;
+  }
+
+  .inner-table-wrapper {
+    height: 10em;
+    margin: 0;
+    overflow: auto;
+
+    table {
+      border: 0;
+      width: 100%;
     }
   }
 }

@@ -22,11 +22,34 @@ describe('exports', function() {
   });
 
   describe('sentinel state exports', function() {
+    const ONE_MILL = 1e6;
+    const getValue = function(state, commodity, year) {
+      try {
+        return stateExports[state].commodities[commodity][year];
+      } catch (error) {
+        assert.ok(false, [
+          'no data for', commodity, 'in', state, '(' + year + ')'
+        ].join(' '));
+      }
+    };
+    it('New York exported gold in 2015', function() {
+      assert.equal(getValue('NY', 'Gold', 2015), 6753.73 * ONE_MILL);
+    });
     it('Florida exported gold in 2015', function() {
-      assert.equal(stateExports.FL.commodities.Gold[2015], 1736.22 * 1e6);
+      assert.equal(getValue('FL', 'Gold', 2015), 1736.22 * ONE_MILL);
     });
     it('Nevada exported silver in 2015', function() {
-      assert.equal(stateExports.NV.commodities.Silver[2015], 244.17 * 1e6);
+      assert.equal(getValue('NV', 'Silver', 2015), 244.17 * ONE_MILL);
+    });
+    it('Idaho exported silver in 2015', function() {
+      assert.equal(getValue('ID', 'Silver', 2015), 116.33 * ONE_MILL);
+    });
+    it('Rhode Island exported silver in 2015', function() {
+      assert.equal(getValue('RI', 'Silver', 2015), 84.87 * ONE_MILL);
+    });
+
+    it('New Hampshire has no extractives', function() {
+      assert.equal(stateExports.NH.Extractives, undefined);
     });
   });
 

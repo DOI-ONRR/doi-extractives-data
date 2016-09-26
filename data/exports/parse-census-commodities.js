@@ -31,7 +31,7 @@ var HS6 = {
 };
 
 if (options.liberal) {
-  const MINING = 'Other non energy minerals';
+  const MINING = 'Other nonenergy minerals';
   HS6 = {
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=25>
     25: MINING,

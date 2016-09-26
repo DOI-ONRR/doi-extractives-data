@@ -178,6 +178,7 @@
   }
 
   var show = function(fips) {
+    var overflowRegion = d3.select(this).select('.inner-table-wrapper');
     var rows = d3.select(this).selectAll('tbody > tr');
     rows
       .classed('mouseover', false);
@@ -185,14 +186,21 @@
     rows.select('[data-sentence]')
       .attr('aria-hidden', true);
 
-    rows
+    var matching = rows
       .classed('selected', false)
       .filter(function() {
         return this.getAttribute('data-fips') === fips;
       })
-      .classed('selected', true)
-      .select('[data-sentence]')
+      .classed('selected', true);
+
+    var elOffsetTop = matching.property('offsetTop');
+
+    overflowRegion.property('scrollTop', elOffsetTop);
+
+    matching.select('[data-sentence]')
         .attr('aria-hidden', false);
+
+
   };
 
   var hide = function() {

@@ -1,4 +1,6 @@
 /* jshint node: true, mocha: true, esnext: true */
+/* -W083 */
+/* -W089 */
 const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
@@ -31,35 +33,41 @@ describe('exports', function() {
   describe('state exports self-consistency', function() {
     it('all extractives add up to "Extractives" subtotal', function() {
       var counted = 0;
-      for (var state in stateExports) {
+      Object.keys(stateExports).forEach(function(state) {
         var commodities = stateExports[state].commodities;
         var extractivesByYear = commodities[EXTRACTIVES];
-        if (extractivesByYear) {
-          var totalsByYear = Object.keys(extractivesByYear)
-            .reduce(function(years, year) {
-              years[year] = 0;
-              return years;
-            }, {});
-          for (var key in commodities) {
-            if (key !== EXTRACTIVES && key !== TOTAL) {
-              var commodityByYear = commodities[key];
-              Object.keys(commodityByYear).forEach(function(year) {
-                totalsByYear[year] += commodityByYear[year];
-              });
-            }
-          }
-          Object.keys(totalsByYear).forEach(function(year) {
-            var value = totalsByYear[year];
-            var expected = extractivesByYear[year];
-            assert.equal(value, expected,
-                         [
-                           value, '!=', expected,
-                           'for', state, 'in', year
-                         ].join(' '));
-          });
-          counted++;
+        if (!extractivesByYear) {
+          return;
         }
-      }
+
+        var totalsByYear = Object.keys(extractivesByYear)
+          .reduce(function(years, year) {
+            years[year] = 0;
+            return years;
+          }, {});
+
+        Object.keys(commodities).forEach(function(key) {
+          if (key !== EXTRACTIVES && key !== TOTAL) {
+            var commodityByYear = commodities[key];
+            Object.keys(commodityByYear).forEach(function(year) {
+              totalsByYear[year] += commodityByYear[year];
+            });
+          }
+        });
+
+        Object.keys(totalsByYear).forEach(function(year) {
+          var value = totalsByYear[year];
+          var expected = extractivesByYear[year];
+          assert.equal(value, expected,
+                        [
+                          value, '!=', expected,
+                          'for', state, 'in', year
+                        ].join(' '));
+        });
+
+        counted++;
+      });
+
       assert.ok(counted, 'no states counted');
     });
   });

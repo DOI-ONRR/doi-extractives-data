@@ -35,9 +35,11 @@ if (options.liberal) {
   HS6 = {
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=25>
     25: MINING,
+    // 26: MINING,
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=26>
-    260112: 'Iron', // Iron
-    260300: 'Copper', // Copper
+    260112: 'Iron',
+    2603: 'Copper',
+    261610: 'Silver',
     261690: 'Gold', // * includes gold, but also other precious metals
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=27>
     2701: 'Coal',
@@ -49,9 +51,28 @@ if (options.liberal) {
     2715: 'Oil',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=28>
     28: MINING,
+    // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=7106>
+    710610: 'Silver',
+    710691: 'Silver',
+    // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=7108>
+    710811: 'Gold',
+    710812: 'Gold',
     // 72: 'Mining', // "base metals"???
     0: 'Total'
   };
+
+  for (var code = 2601; code <= 2621; code++) {
+    var exists = false;
+    for (var key in HS6) {
+      if (key.substr(0, 4) == code) {
+        exists = true;
+        break;
+      }
+    }
+    if (!exists) {
+      HS6[code] = MINING;
+    }
+  }
 }
 
 function getCommodity(code) {

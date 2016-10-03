@@ -1,0 +1,7 @@
+.sticky-header-wrapper {
+	.chart-selector {
+		@include chart-selector(right);
+
+		margin: 0;
+	}
+}

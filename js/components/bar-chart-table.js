@@ -193,9 +193,14 @@
       })
       .classed('selected', true);
 
-    var elOffsetTop = matching.property('offsetTop');
+    if (!matching.empty()) {
+      var elOffsetTop = matching.property('offsetTop');
+    }
 
-    overflowRegion.property('scrollTop', elOffsetTop);
+    if (!overflowRegion.empty()) {
+      overflowRegion.property('scrollTop', elOffsetTop);
+    }
+
 
     matching.select('[data-sentence]')
         .attr('aria-hidden', false);

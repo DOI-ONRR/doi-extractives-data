@@ -1,5 +1,6 @@
 {% assign caption = include.caption %}
 {% assign locality_name = include.locality_name | default: locality_name %}
+{% assign is_offshore = include.is_offshore %}
 
 <table is='bar-chart-table' data-percent-max='100' class='county-table' year='{{ include.year }}'>
   <thead>
@@ -20,7 +21,11 @@
   {% for county in include.values %}
     {% assign revenue_amount = county[1].revenue[include.year] %}
     {% assign years_values =  county[1].revenue %}
-    {% assign fips = county[0] | pad_left: 5, '0' %}
+    {% if is_offshore %}
+      {% assign fips = county[0] %}
+    {% else %}
+      {% assign fips = county[0] | pad_left: 5, '0' %}
+    {% endif %}
 
     {% if years_values != null %}
     <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}'>

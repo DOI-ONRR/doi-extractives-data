@@ -27,6 +27,7 @@
     {% endif %}
     {% for county in include.values %}
       {% assign product_volume = county[1].products[product_ref].volume[include.year] %}
+
       {% assign years_values =  county[1].products[product_ref].volume %}
       {% assign fips = county[0] | pad_left: 5, '0' %}
       {% if years_values != null %}

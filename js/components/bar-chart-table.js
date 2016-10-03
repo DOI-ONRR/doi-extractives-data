@@ -178,6 +178,7 @@
   }
 
   var show = function(fips) {
+    var elOffsetTop;
     var overflowRegion = d3.select(this).select('.inner-table-wrapper');
     var rows = d3.select(this).selectAll('tbody > tr');
     rows
@@ -194,7 +195,7 @@
       .classed('selected', true);
 
     if (!matching.empty()) {
-      var elOffsetTop = matching.property('offsetTop');
+      elOffsetTop = matching.property('offsetTop');
     }
 
     if (!overflowRegion.empty()) {

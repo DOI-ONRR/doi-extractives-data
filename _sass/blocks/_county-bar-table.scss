@@ -56,12 +56,13 @@
   }
 
   .inner-table-wrapper {
-    height: 12em;
+    max-height: 12em;
     margin: 0;
     overflow: auto;
 
     table {
       border: 0;
+      margin: 0;
       width: 100%;
     }
   }

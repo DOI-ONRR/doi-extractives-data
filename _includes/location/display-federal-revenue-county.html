@@ -10,6 +10,13 @@
     </tr>
   </thead>
   <tbody>
+  {% if include.scrollable %}
+    <tr class="inner-table-row">
+      <td colspan="3" class="inner-table-cell">
+        <div class="inner-table-wrapper">
+          <table>
+            <tbody>
+  {% endif %}
   {% for county in include.values %}
     {% assign revenue_amount = county[1].revenue[include.year] %}
     {% assign years_values =  county[1].revenue %}
@@ -36,5 +43,12 @@
       </tr>
     {% endif %}
   {% endfor %}
+  {% if include.scrollable %}
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    {% endif %}
   </tbody>
 </table>

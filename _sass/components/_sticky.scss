@@ -1,6 +1,6 @@
 .sticky {
   background: $white;
-  padding-top: $base-padding-lite;
+  padding-top: $standard-padding-lite;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -19,4 +19,8 @@
 
 .sticky-sibling {
   margin-right: 0;
+}
+
+.stuck {
+  background-color: yellow !important;
 }

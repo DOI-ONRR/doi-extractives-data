@@ -1,7 +1,21 @@
 .sticky-header-wrapper {
-	.chart-selector {
-		@include chart-selector(right);
 
-		margin: 0;
-	}
+  .span {
+    vertical-align: sub;
+  }
+
+  &.stuck {
+    .chart-selector {
+      @include transition(visibility, 0.5s);
+
+      visibility: visible;
+    }
+  }
+
+  .chart-selector {
+    @include chart-selector(right);
+
+    margin: 0;
+    visibility: hidden;
+  }
 }

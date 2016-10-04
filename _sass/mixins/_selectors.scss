@@ -1,0 +1,11 @@
+@mixin chart-selector($float-direction: none) {
+  @include span-columns(2);
+  @include font-size(7 / 8);
+
+  background-color: $gray-lighter;
+  border: 0;
+  float: $float-direction;
+  font-weight: $weight-book;
+  margin-right: $standard-padding;
+  margin-top: $standard-padding-lite;
+}

@@ -4,7 +4,12 @@
 
 <section id="gdp" is="year-switcher-section" class="economic gdp">
 
-  <h3>Gross Domestic Product (GDP)</h3>
+  {%
+    include sticky-header.html
+    header_text='Gross Domestic Product (GDP)'
+    year_range=year_range
+    selector=true
+  %}
 
   <div class="chart-selector-wrapper">
     {% if gdp %}

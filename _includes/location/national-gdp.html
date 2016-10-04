@@ -3,14 +3,19 @@
 
 <section id="gdp" is="year-switcher-section" class="economic gdp">
 
-  <h3>Gross Domestic Product (GDP)</h3>
+  {%
+    include sticky-header.html
+    header_text='Gross Domestic Product (GDP)'
+    year_range=year_range
+    selector=true
+  %}
 
   <div class="chart-selector-wrapper">
 
     {% include year-selector.html year_range=year_range %}
 
     <p class="chart-description">
-      Data about gross domestic product (GDP) comes from the U.S. Bureau of Economic Analysis. 
+      Data about gross domestic product (GDP) comes from the U.S. Bureau of Economic Analysis.
       <br>
       <a href="{{ site.baseurl }}/downloads/#gdp">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -42,14 +47,14 @@
         </eiti-bar-chart>
         <figcaption id="gdp-figures-{{ _metric }}">
           <span class="caption-data">
-            In <span class="eiti-bar-chart-x-value">{{ year }}</span>, 
+            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
             extractive industries accounted for
-            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or 
-            {{ gdp[year].percent | percent }}% 
+            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or
+            {{ gdp[year].percent | percent }}%
             of GDP.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no national GDP data for 
+            There is no national GDP data for
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>

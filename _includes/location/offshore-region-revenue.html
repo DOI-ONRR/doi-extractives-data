@@ -55,7 +55,12 @@
 
   <section id="revenue-by-area">
 
-    <h3>Federal revenue by offshore area</h3>
+    {%
+      include sticky-header.html
+      header_text='Federal revenue by offshore area'
+      year_range=year_range
+      selector=true
+    %}
 
     <section class="chart-list">
 
@@ -75,7 +80,7 @@
 
         {% if revenue_commodities %}
           <p class="chart-description">
-            Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource. 
+            Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource.
             <br>
             <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
           </p>

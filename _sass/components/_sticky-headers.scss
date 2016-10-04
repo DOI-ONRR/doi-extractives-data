@@ -1,0 +1,22 @@
+.sticky-header-wrapper {
+  padding-top: 2 * $standard-padding-lite;
+
+  span {
+    vertical-align: sub;
+  }
+
+  &.stuck {
+    .chart-selector {
+      @include transition(visibility, 0.5s);
+
+      visibility: visible;
+    }
+  }
+
+  .chart-selector {
+    @include chart-selector(right);
+
+    margin: 0;
+    visibility: hidden;
+  }
+}

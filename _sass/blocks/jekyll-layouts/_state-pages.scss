@@ -41,6 +41,10 @@
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
     padding-top: 2.5rem;
+
+    &.stuck {
+      padding-top: $standard-padding-lite;
+    }
   }
 
   .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {

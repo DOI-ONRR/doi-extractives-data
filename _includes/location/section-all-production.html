@@ -6,7 +6,14 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3 class="sticky">Energy production in the entire state of {{ state_name }}</h3>
+
+  {% assign header_text = 'Energy production in the entire state of {{ state_name }}' | liquify %}
+  {%
+    include sticky-header.html
+    header_text=header_text
+    year_range=year_range
+    selector=true
+  %}
 
   <div class="chart-selector-wrapper">
 

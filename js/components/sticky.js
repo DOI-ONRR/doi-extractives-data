@@ -3,6 +3,7 @@
 
   var sticky = require('stickyfill')();
   var allStickies = [];
+  var doc = d3.select(document);
 
   [].forEach.call(
     document.querySelectorAll('.sticky'),
@@ -31,10 +32,10 @@
         sticky.classList.remove('stuck');
       }
     });
-  }
+  };
 
-  window.addEventListener('scroll', eiti.util.throttle(watch, 100));
-  window.addEventListener('resize', eiti.util.throttle(watch, 100));
+  doc.on('scroll.sticky', eiti.util.throttle(watch, 100));
+  doc.on('resize.sticky', eiti.util.throttle(watch, 100));
 
   exports.stickyfill = sticky;
 

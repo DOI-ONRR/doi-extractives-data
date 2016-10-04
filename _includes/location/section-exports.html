@@ -16,7 +16,12 @@
 
 <section id="exports" is="year-switcher-section" class="economic exports">
 
-  <h3>Exports</h3>
+  {%
+    include sticky-header.html
+    header_text='Exports'
+    year_range=year_range
+    selector=true
+  %}
 
   <div class="chart-list">
 

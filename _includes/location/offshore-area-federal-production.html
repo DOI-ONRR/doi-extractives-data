@@ -14,7 +14,13 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Production on federal waters in {{ area_name }}</h3>
+    {% assign header_text = 'Production on federal waters in {{ area_name }}' | liquify %}
+    {%
+      include sticky-header.html
+      header_text=header_text
+      year_range=year_range
+      selector=true
+    %}
 
     <div class="chart-selector-wrapper">
 

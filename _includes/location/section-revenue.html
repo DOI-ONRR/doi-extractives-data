@@ -19,7 +19,7 @@
       Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.
       <br>
       <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
       </a>
     </p>
 
@@ -60,7 +60,14 @@
       </article>
     </div>
 
-    <h4 id="federal-revenue-by-county">Revenue from production on federal land by county</h4>
+    {%
+      include sticky-header.html
+      header_text='Revenue from production on federal land by county'
+      year_range=year_range
+      header_size='h4'
+      header_id='federal-revenue-by-county'
+      selector=true
+    %}
 
     <section class="chart-list">
 
@@ -79,7 +86,7 @@
           Most non-tax revenue collected by ONRR comes from counties with significant natural resources on federal land.
           <br>
           <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation 
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
           </a>
         </p>
       </div>

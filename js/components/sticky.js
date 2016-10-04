@@ -22,7 +22,7 @@
   );
 
   var watch = function() {
-    stickies.forEach(function(sticky, i) {
+    stickies.forEach(function(sticky) {
       var atTop = Number(sticky.getBoundingClientRect().top) === 0;
       var isStuck = sticky.classList.contains('stuck');
 

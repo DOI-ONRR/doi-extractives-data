@@ -3,6 +3,10 @@ id: LA
 title: Louisiana
 FIPS: '22'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 
 locality_name: 'Parish'

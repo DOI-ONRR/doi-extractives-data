@@ -5,6 +5,10 @@ FIPS: '04'
 
 priority: true
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 case_study_link: |
     For a detailed view of how copper mining affects communities in Arizona, read the [Greenlee County case study]({{ site.baseurl }}/case-studies/greenlee/) or [Pima County case study]({{ site.baseurl }}/case-studies/pima/).
 ---

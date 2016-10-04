@@ -19,11 +19,12 @@ svg.map {
     stroke-width: 0.5;
   }
 
-  @include svg-use(
-    '.states.features',
-    '.regions.features'
-  ) {
+  @include svg-use('.states.features') {
     fill: $light-gray;
+  }
+
+  @include svg-use('.regions.features') {
+    fill: $white;
   }
 
   @include svg-use('.feature.offshore-area') {

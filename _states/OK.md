@@ -4,6 +4,10 @@ title: Oklahoma
 FIPS: '40'
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [Oklahoma Commissioners of the Land Office](http://www.clo.state.ok.us/) manages state lands, including oil and gas leasing to generate revenue that supports the state’s common schools and higher education institutions.
   - [Rules and regulations](https://clo.ok.gov/policy/rules-regulations/)

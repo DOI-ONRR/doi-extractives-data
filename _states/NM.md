@@ -4,6 +4,10 @@ title: New Mexico
 FIPS: '35'
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [New Mexico Mining and Minerals Division](http://www.emnrd.state.nm.us/MMD/) enforces laws and regulations related to mine safety and reclamation of abandoned mines, as well as collecting production and employment data on active mining operations through its Mine Registration and Reporting Program.
   - [Geographic Information System (GIS) maps and mine data](http://www.emnrd.state.nm.us/MMD/gismapminedata.html) allow the public to locate and track mining activities in the state.

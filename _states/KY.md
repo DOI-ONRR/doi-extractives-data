@@ -3,6 +3,10 @@ id: KY
 title: Kentucky
 FIPS: '21'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 ---
 * Kentucky's [Energy and Environment Cabinet](http://dnr.ky.gov/Pages/default.aspx) established the [State Department for Energy Development and Independence](http://energy.ky.gov/Pages/default.aspx) to develop and employ sustainable energy strategies for the state.

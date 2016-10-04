@@ -53,8 +53,14 @@
       </article>
     </div>
 
-
-    <h4 id="revenue-trends">Revenue trends by resource</h4>
+    {%
+      include sticky-header.html
+      header_text='Revenue trends by resource'
+      year_range=year_range
+      header_size='h4'
+      header_id='revenue-trends'
+      selector=true
+    %}
 
     <section class="chart-list">
 

@@ -8,13 +8,12 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3 class="sticky sticky-header-wrapper">
-      <span>
-        Production on federal land nationwide
-      </span>
-
-      {% include year-selector.html year_range=year_range %}
-    </h3>
+    {%
+      include sticky-header.html
+      header_text='Production on federal land nationwide'
+      year_range=year_range
+      selector=true
+    %}
 
     <div class="chart-selector-wrapper">
 

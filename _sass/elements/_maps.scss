@@ -7,6 +7,11 @@ svg.map {
   padding: 1em;
   width: 100%;
 
+
+  &.county {
+    background-color: $gray-light;
+  }
+
   @include svg-use('.mesh') {
     fill: none;
     pointer-events: none;

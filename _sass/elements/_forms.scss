@@ -103,8 +103,8 @@ select {
   @include appearance(none);
 
   background-color: $white;
-  background-image: url('../img/icons/chevron-down.svg');
-  background-position: 99% 50%;
+  background-image: url('../img/icons/chevron-down-sprite.svg');
+  background-position: 99% 15%;
   background-repeat: no-repeat;
   background-size: 1.5rem;
   border: 1px solid $form-border-color;

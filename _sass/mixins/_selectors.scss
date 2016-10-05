@@ -2,8 +2,11 @@
   @include span-columns(2);
   @include font-size(7 / 8);
 
-  background-color: $gray-lighter;
+  background-color: $green-dark-chart;
+  background-image: url('../img/icons/chevron-down-sprite.svg');
+  background-position-y: 65%;
   border: 0;
+  color: $white;
   float: $float-direction;
   font-weight: $weight-book;
   margin-right: $standard-padding;

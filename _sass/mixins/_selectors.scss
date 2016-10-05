@@ -1,11 +1,18 @@
 @mixin chart-selector($float-direction: none) {
   @include span-columns(2);
-  @include font-size(7 / 8);
+  @include font-size(13 / 16);
 
-  background-color: $gray-lighter;
+  background-color: $green-dark-chart;
+  background-image: url('../img/icons/chevron-dn-med-white.svg');
+  background-position: 90% 57%;
+  background-size: 1.1rem;
   border: 0;
+  color: $white;
   float: $float-direction;
   font-weight: $weight-book;
+  height: initial;
   margin-right: $standard-padding;
   margin-top: $standard-padding-lite;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
 }

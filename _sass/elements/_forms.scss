@@ -104,16 +104,17 @@ select {
 
   background-color: $white;
   background-image: url('../img/icons/chevron-down-sprite.svg');
-  background-position: 99% 15%;
+  background-position: 95% 8%;
   background-repeat: no-repeat;
   background-size: 1.5rem;
   border: 1px solid $form-border-color;
   border-radius: $form-border-radius;
   color: $dark-gray;
   font-weight: $weight-light;
+  height: 40px;
   margin-bottom: 1em;
   overflow: hidden;
-  padding: 0.5em 2.2rem 0.5em 0.8rem;
+  padding: 0.5em 12% 0.5em 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;

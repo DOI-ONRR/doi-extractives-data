@@ -19,7 +19,7 @@ In our research, users looked for information about their state and expressed in
 * State profiles like [Texas]({{ site.baseurl }}/explore/), [Utah]({{ site.baseurl }}/explore/), or [California]({{ site.baseurl }}/explore/)
 * Offshore areas, like the [Gulf of Mexico]({{ site.baseurl }}/explore/offshore-gulf/) or [offshore Alaska areas]({{ site.baseurl }}/explore/offshore-alaska/)
 
-The profile pages also include more granular **disbursements data**, which shows how the Office of Natural Resources Revenue (ONRR) distributes revenue from the extractive industries to [national funds and tribes]({{ site.baseurl }}/explore/#federal-disbursements)and to state governments (for example, [Arizona]({{ site.baseurl }}/explore/AZ/#disbursements) or [Louisiana]({{ site.baseurl }}/explore/LA/#disbursements)).
+The profile pages also include more granular **disbursements data**, which shows how the Office of Natural Resources Revenue (ONRR) distributes revenue from the extractive industries to [national funds and tribes]({{ site.baseurl }}/explore/#federal-disbursements) and to state governments (for example, [Arizona]({{ site.baseurl }}/explore/AZ/#disbursements) or [Louisiana]({{ site.baseurl }}/explore/LA/#disbursements)).
 
 USEITI also invited states to opt in to the reporting process, with the goal of making state-level data more navigable for the public. In 2016, three states worked with the {{ "Independent Administrator" | term }} to provide **additional state-level data** and contextual information to be integrated in their state profile pages: [Alaska]({{ site.baseurl }}/explore/AK/), [Montana]({{ site.baseurl }}/explore/MT/), and [Wyoming]({{ site.baseurl }}/explore/WY/).
 

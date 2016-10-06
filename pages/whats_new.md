@@ -16,21 +16,21 @@ This version of the site includes new content, new state-level datasets, and com
 In our research, users looked for information about their state and expressed interest in seeing data about their area across multiple datasets. New regional profile pages provide a more complete picture of extractive industries at the national and subnational levels. To see how this works, explore:
 
 * The [national profile page]({{ site.baseurl }}/explore/)
-* State profiles like [Texas]({{ site.baseurl }}/explore/), [Utah]({{ site.baseurl }}/explore/), or [California]({{ site.baseurl }}/explore/)
+* State profiles like [Texas]({{ site.baseurl }}/explore/TX/), [Utah]({{ site.baseurl }}/explore/UT/), or [California]({{ site.baseurl }}/explore/CA/)
 * Offshore areas, like the [Gulf of Mexico]({{ site.baseurl }}/explore/offshore-gulf/) or [offshore Alaska areas]({{ site.baseurl }}/explore/offshore-alaska/)
 
 The profile pages also include more granular **disbursements data**, which shows how the Office of Natural Resources Revenue (ONRR) distributes revenue from the extractive industries to [national funds and tribes]({{ site.baseurl }}/explore/#federal-disbursements) and to state governments (for example, [Arizona]({{ site.baseurl }}/explore/AZ/#disbursements) or [Louisiana]({{ site.baseurl }}/explore/LA/#disbursements)).
 
-USEITI also invited states to opt in to the reporting process, with the goal of making state-level data more navigable for the public. In 2016, three states worked with the {{ "Independent Administrator" | term }} to provide **additional state-level data** and contextual information to be integrated in their state profile pages: [Alaska]({{ site.baseurl }}/explore/AK/), [Montana]({{ site.baseurl }}/explore/MT/), and [Wyoming]({{ site.baseurl }}/explore/WY/).
+USEITI also invited states to opt in to the reporting process, with the goal of making state-level data more navigable for the public. In 2016, three states worked with the {{ "Independent Administrator" | term: "Independent Administrator (IA)" }} to provide **additional state-level data** and contextual information to be integrated in their state profile pages: [Alaska]({{ site.baseurl }}/explore/AK/), [Montana]({{ site.baseurl }}/explore/MT/), and [Wyoming]({{ site.baseurl }}/explore/WY/).
 
 ## Contextual information
 
 The [How It Works]({{ site.baseurl }}/how-it-works/) section now has a question-and-answer format, along with several new elements:
 
 * **Reconciliation data:** This data was previously available, but we've redesigned the presentation to make it easier to understand and view the full results of the [USEITI reconciliation process]({{ site.baseurl }}/how-it-works/reconciliation/).
-* **New contextual information:** The {{ "Multi-stakeholder Group" | term }} approved new content about [the Coal Excise Tax]({{ site.baseurl }}/how-it-works/coal-excise-tax/), [Abandoned Mine Land Reclamation Program]({{ site.baseurl }}/how-it-works/aml-reclamation-program/), and [audits and assurances to ensure accurate revenue data]({{ site.baseurl }}/how-it-works/audits-and-assurances/).
+* **New contextual information:** The {{ "Multi-Stakeholder Group" | term: "Multi-Stakeholder Group (MSG)" }} approved new content about [the Coal Excise Tax]({{ site.baseurl }}/how-it-works/coal-excise-tax/), [Abandoned Mine Land Reclamation Program]({{ site.baseurl }}/how-it-works/aml-reclamation-program/), and [audits and assurances to ensure accurate revenue data]({{ site.baseurl }}/how-it-works/audits-and-assurances/).
 
-## Updates and design changes
+## Other updates and design changes
 
 We've also updated [county case studies]({{ site.baseurl }}/case-studies/) with more recent data, make content and design elements more consistent throughout the site, added terms to the {{ "glossary" | term:"" }}, added behind-the-scenes data tests, and made it easier to get to data-rich pages directly from the [homepage]({{ site.baseurl }}).
 

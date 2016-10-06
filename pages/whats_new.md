@@ -32,7 +32,7 @@ The [How It Works]({{ site.baseurl }}/how-it-works/) section now has a question-
 
 ## Other updates and design changes
 
-We've also updated [county case studies]({{ site.baseurl }}/case-studies/) with more recent data, make content and design elements more consistent throughout the site, added terms to the {{ "glossary" | term:"" }}, added behind-the-scenes data tests, and made it easier to get to data-rich pages directly from the [homepage]({{ site.baseurl }}).
+We've also updated [county case studies]({{ site.baseurl }}/case-studies/) with more recent data, made content and design elements more consistent throughout the site, added terms to the {{ "glossary" | term:"" }}, added behind-the-scenes data tests, and made it easier to get to data-rich pages directly from the [homepage]({{ site.baseurl }}).
 
 ## What's next?
 

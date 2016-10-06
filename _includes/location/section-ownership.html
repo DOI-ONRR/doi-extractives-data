@@ -13,10 +13,22 @@
         style="padding-bottom: {{ __viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
         <svg class="county ownership map state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>
           <g class="states features">
+            {% if page.neighbors %}
+              {% for neighbor in page.neighbors %}
+            <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+              {% endfor %}
+            {% else %}
             <use xlink:href="{{ states_svg }}#states"></use>
+            {% endif %}
           </g>
           <g class="states mesh">
+            {% if page.neighbors %}
+              {% for neighbor in page.neighbors %}
+            <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+              {% endfor %}
+            {% else %}
             <use xlink:href="{{ states_svg }}#states-mesh"></use>
+            {% endif %}
           </g>
           <g class="counties features">
             <use xlink:href="{{ state_svg }}#counties"></use>

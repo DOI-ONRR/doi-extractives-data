@@ -7,6 +7,10 @@ opt_in: true
 
 state_revenue_year: 2015
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 case_study_link: |
     For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County]({{ site.baseurl }}/case-studies/campbell/).
 state_production: |

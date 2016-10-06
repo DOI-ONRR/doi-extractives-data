@@ -3,6 +3,10 @@ id: NV
 title: Nevada
 FIPS: '32'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 
 case_study_link: |

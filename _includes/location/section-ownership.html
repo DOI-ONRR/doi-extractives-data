@@ -7,6 +7,10 @@
 
   {% assign __viewbox = site.data.viewboxes_cropped[state_id] %}
 
+  {% if __viewbox['ownership'] %}
+    {% assign __viewbox = __viewbox['ownership'] %}
+  {% endif %}
+
   <aside class="map-container" style="width: 100%;">
     <figure>
       <div class="svg-container county map-container wide"{% if __viewbox %}

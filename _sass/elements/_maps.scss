@@ -39,6 +39,12 @@ svg.map {
 
   @include svg-use('.feature:not([fill])') {
     fill-opacity: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill-opacity: 0.25;
+    }
   }
 
   @include svg-use('.county.feature:not([fill])') {

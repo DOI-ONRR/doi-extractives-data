@@ -149,7 +149,7 @@ eiti-data-map {
 
 .legend-svg {
   border: none;
-  height: 215px;
+  height: auto;
   padding: 0;
   width: 200px;
 
@@ -165,7 +165,7 @@ eiti-data-map {
   padding-top: $standard-padding-lite;
 
   .legend-svg.horizontal {
-    height: 50px;
+    max-height: 50px;
   }
 }
 

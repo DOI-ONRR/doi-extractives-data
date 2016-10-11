@@ -13,6 +13,9 @@
 {% endif %}
 
 {% if _viewbox %}
+  {% if _viewbox['county'] %}
+    {% assign _viewbox = _viewbox['county'] %}
+  {% endif %}
   {% assign _viewbox_list = _viewbox | split: ' ' | to_f %}
   {% assign breakpoint_width = _viewbox_list[2] %}
   {% assign _height = _viewbox_list[3] %}

@@ -17,7 +17,7 @@ permalink: /how-it-works/
         {% include svg/how-it-works-ribbon-graphic.svg %}
       </div>
       <div class="ribbon-card-bottom">
-      <a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources does the U.S. produce?</a>
+        <a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources does the U.S. produce?</a>
       </div>
     </div>
   </div>

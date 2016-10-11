@@ -74,7 +74,6 @@
 
   @if $level == 'para-md' {
     // light 16/22 (10px bottom margin)
-    font-size: $base-font-size; // 16px
     font-weight: $weight-light;
     line-height: $base-line-height; // 22px
     margin-bottom: 0.625rem; // 10px

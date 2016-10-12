@@ -12,6 +12,10 @@
     margin-top: 0; // -0.75rem; //to compensate for margin from preceding selectors
   }
 
+  p > img {
+    width: 100%;
+  }
+
   h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
     padding-top: 5rem;

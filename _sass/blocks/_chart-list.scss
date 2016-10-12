@@ -34,7 +34,7 @@
   }
 
   .chart-item {
-    @include span-columns(12);
+    @include span-columns(8);
 
     @include respond-to(tiny-up) {
       @include span-columns(6);
@@ -197,15 +197,59 @@
     }
   }
 
+  > .chart-container {
+    @include span-columns(8);
+
+    padding: 0;
+
+    @include respond-to(tiny-up) {
+      @include span-columns(6);
+
+      padding-left: 0;
+      padding-right: 2 * $base-padding-lite;
+    }
+
+    @include respond-to(small-up) {
+      @include span-columns(4);
+    }
+
+    @include respond-to(medium-up) {
+      @include span-columns(6);
+    }
+
+    @include respond-to(large-up) {
+      @include span-columns(4);
+    }
+  }
+
   > :nth-child(3) {
     @include omega();
   }
 
   > .map-container {
-    @include span-columns(8);
+    @include span-columns(12);
     @include omega();
 
+    padding: 0;
     position: relative;
+
+    @include respond-to(small-up) {
+      @include span-columns(8);
+
+      padding-left: $base-padding-lite;
+    }
+
+    @include respond-to(medium-up) {
+      @include span-columns(12);
+
+      padding: 0;
+    }
+
+    @include respond-to(large-up) {
+      @include span-columns(8);
+
+      padding-left: $base-padding-lite;
+    }
 
     .svg-container {
       @include span-columns(8);

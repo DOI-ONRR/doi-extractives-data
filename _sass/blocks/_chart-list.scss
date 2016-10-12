@@ -83,15 +83,15 @@
   }
 
   &:not(.has-intro) {
-    @include respond-to(tiny-up) {
+    @include respond-to(tiny-to-small) {
       @include chart-columns(2);
     }
 
-    @include respond-to(small-up) {
+    @include respond-to(small-to-medium) {
       @include chart-columns(3);
     }
 
-    @include respond-to(medium-up) {
+    @include respond-to(medium-to-large) {
       @include chart-columns(2);
     }
 

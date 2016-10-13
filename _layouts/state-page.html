@@ -78,7 +78,7 @@ nav_items:
 
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
   <section class="container">
-    {% include layout/mobile-nav.html %}
+
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
@@ -92,6 +92,10 @@ nav_items:
         {% include location/section-overview.html %}
 
       </section>
+
+      <!-- <section> -->
+        {% include layout/mobile-nav.html %}
+      <!-- </section> -->
 
       <section id="production">
         <h2>Production</h2>

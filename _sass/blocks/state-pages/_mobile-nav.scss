@@ -1,0 +1,25 @@
+.layout-state-pages {
+  .mobile-nav {
+    background-color: $gray-light;
+    width: 100%;
+    z-index: 9001;
+
+    @include respond-to(medium-up) {
+      display: none;
+    }
+
+    .mobile-nav-header {
+      display: inline-block;
+      margin: 0 !important;
+    }
+
+
+    ul {
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

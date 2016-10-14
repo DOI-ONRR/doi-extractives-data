@@ -1,33 +1,40 @@
 {% if layout.nav_items %}
-	{% assign selector_nav_items = layout.nav_items %}
+  {% assign selector_nav_items = layout.nav_items %}
 {% else %}
-	{% assign selector_nav_items = page.nav_items %}
+  {% assign selector_nav_items = page.nav_items %}
 {% endif %}
 
-<div class="mobile-nav sticky" accordion="mobile-nav" accordion-desktop="false">
-	<div accordion-item accordion-open="false">
-		<h3 class="mobile-nav-header">Top</h3>
-		<button class="accordion-button" accordion-button><span class="sr-only">Toggle for {{term[0]}}</span></button>
-		<div class="accordion-content">
-			<ul>
-			  {% if selector_nav_items %}
-			    {% for item in selector_nav_items %}
-			      {% if item.name == selector_nav_items[0].name %}
-			        <a href="#{{item.name}}" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
-			      {% else %}
-			        <a href="#{{item.name}}" data-nav-item="{{item.name}}">{{item.title}}</a>
-			      {% endif %}
+<div is="mobile-nav" class="mobile-nav sticky" accordion="mobile-nav">
+  <h3 class="mobile-nav-header">{{ state_name }}</h3>
+  <button is="aria-toggle"
+    aria-controls="mobile-nav-content"
+    aria-expanded="false">
+      <span class="hide-expanded">
+        <icon class="icon icon-chevron-sm-down"></icon>
+      </span>
+      <span class="show-expanded">
+        <icon class="icon icon-chevron-sm-up"></icon>
+      </span>
+  </button>
+  <div id="mobile-nav-content" class="mobile-nav-list-items">
+    <ul>
+      {% if selector_nav_items %}
+        {% for item in selector_nav_items %}
+            {% if item.name == selector_nav_items[0].name %}
+              <a href="#{{item.name}}" class="mobile-nav-list-item">{{item.title}}</a>
+            {% else %}
+              <a href="#{{item.name}}" class="mobile-nav-list-item">{{item.title}}</a>
+            {% endif %}
 
-			      {% if item.subnav_items %}
-			        <ul>
-			          {% for subnav_item in item.subnav_items %}
-			            <a href="#{{subnav_item.name}}" data-nav-item="{{subnav_item.name}}">{{subnav_item.title}}</a>
-			          {% endfor %}
-			        </ul>
-			      {% endif %}
-			    {% endfor %}
-			  {% endif %}
-			</ul>
-		</div>
-	</div>
+            {% if item.subnav_items %}
+              <ul>
+                {% for subnav_item in item.subnav_items %}
+                  <a class="mobile-nav-sublist-item" href="#{{subnav_item.name}}">{{subnav_item.title}}</a>
+                {% endfor %}
+              </ul>
+            {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>
 </div>

@@ -1,6 +1,8 @@
 .layout-state-pages {
   .mobile-nav {
-    background-color: $gray-light;
+    background-color: $white;
+    border-bottom: 2px solid $light-green;
+    padding: 0;
     width: 100%;
     z-index: 9001;
 
@@ -9,17 +11,69 @@
     }
 
     .mobile-nav-header {
+      border: 0 !important;
       display: inline-block;
       margin: 0 !important;
+      padding-top: $base-padding-lite;
+      vertical-align: text-top;
+    }
+
+    button {
+      background: transparent;
+      float: right;
+      margin-bottom: $base-padding-lite;
+      margin-top: $base-padding-lite;
     }
 
 
-    ul {
+    ul,
+    li {
       display: block;
     }
 
-    a {
+    ul {
+      padding-left: 0;
+    }
+
+    .mobile-nav-list-items {
+      border-top: 2px solid $light-green;
+      display: block;
+
+      &[aria-hidden="true"] {
+        display: none;
+      }
+    }
+
+    .mobile-nav-list-item,
+    .mobile-nav-sublist-item {
+      @include h3-bar;
+
+      display: block;
+      padding: $base-padding-lite;
       text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
+    .mobile-nav-list-item {
+      @include heading('h5');
+
+      border-bottom: 2px solid $gray-light;
+      margin: 0;
+      padding-left: $base-padding;
+    }
+
+    .mobile-nav-sublist-item {
+      @include heading('para-md');
+
+      border-bottom: 1px solid $gray-light;
+      font-size: $weight-book;
+      margin: 0;
+      padding-left: 2 * $base-padding;
     }
   }
 }

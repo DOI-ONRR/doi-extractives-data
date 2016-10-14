@@ -23,7 +23,7 @@
 
   var watch = function() {
     stickies.forEach(function(sticky) {
-      var atTop = Number(sticky.getBoundingClientRect().top) === 0;
+      var atTop = d3.select(sticky).style('position');
       var isStuck = sticky.classList.contains('stuck');
 
       if (atTop && !isStuck) {

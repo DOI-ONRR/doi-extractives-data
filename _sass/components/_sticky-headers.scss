@@ -1,6 +1,6 @@
 .sticky-header-wrapper {
   padding-top: 2 * $standard-padding-lite;
-  top: 47px;
+  top: 45px;
 
   @include respond-to(medium-up) {
     top: 0;

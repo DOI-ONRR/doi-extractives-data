@@ -55,6 +55,10 @@
           return expand(this);
         }},
 
+        collapse: {value: function(expanded) {
+          return collapse(this);
+        }},
+
         detachedCallback: {value: function() {
           this.removeEventListener('click', click);
         }},

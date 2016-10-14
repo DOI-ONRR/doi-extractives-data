@@ -38,6 +38,8 @@
     .mobile-nav-list-items {
       border-top: 2px solid $light-green;
       display: block;
+      overflow-y: auto;
+      width: 100%;
 
       &[aria-hidden="true"] {
         display: none;

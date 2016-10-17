@@ -6,6 +6,8 @@
 
   var attached = function() {
     var root = d3.select(this);
+    var win = d3.select(win);
+
     var collapsedHeaderHeight = root.node().getBoundingClientRect().height;
     var links = root.selectAll('a');
     var toggles = root.selectAll('[is="aria-toggle"]');
@@ -21,7 +23,7 @@
     };
 
     var resize = function(e) {
-      var windowHeight  = window.innerHeight|| e.clientHeight;
+      var windowHeight  = window.innerHeight || e.clientHeight;
       var newHeight = windowHeight - collapsedHeaderHeight;
       content.style('height', pixelize(newHeight));
     }
@@ -33,6 +35,10 @@
     button.on('click.open', function() {
       resize();
     })
+
+    window.addEventListener('resize', function(){
+      eiti.util.throttle(resize, 100);
+    });
   };
 
   var detached = function() {

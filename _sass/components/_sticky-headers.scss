@@ -36,5 +36,9 @@
 
     margin: 0;
     visibility: hidden;
+
+    @include respond-to(small-down) {
+      visibility: visible;
+    }
   }
 }

@@ -54,8 +54,9 @@
     .mobile-nav-sublist-item {
       @include h3-bar;
 
+      border-bottom: 1px solid $gray-lighter;
       display: block;
-      padding: $base-padding-lite;
+      padding: $base-padding-lite * 2;
       text-decoration: none;
 
       &:hover,
@@ -68,16 +69,19 @@
     .mobile-nav-list-item {
       @include heading('h5');
 
-      border-bottom: 2px solid $gray-light;
+      border-top: 2px solid $gray-light;
       margin: 0;
       padding-left: $base-padding;
+
+      &:first-of-type {
+        border-top: 0;
+      }
     }
 
     .mobile-nav-sublist-item {
       @include heading('para-md');
 
-      border-bottom: 1px solid $gray-light;
-      font-size: $weight-book;
+      font-weight: $weight-book;
       margin: 0;
       padding-left: 2 * $base-padding;
     }

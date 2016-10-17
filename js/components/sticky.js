@@ -4,6 +4,7 @@
   var sticky = require('stickyfill')();
   var stickies = [];
   var doc = d3.select(document);
+  var win = d3.select(window);
 
   [].forEach.call(
     document.querySelectorAll('.sticky'),
@@ -22,8 +23,9 @@
   );
 
   var watch = function() {
+    console.log('throttled reszie')
     stickies.forEach(function(sticky) {
-      var atTop = d3.select(sticky).style('position');
+      var atTop = d3.select(sticky).style('position') == 'fixed';
       var isStuck = sticky.classList.contains('stuck');
 
       if (atTop && !isStuck) {
@@ -35,7 +37,7 @@
   };
 
   doc.on('scroll.sticky', eiti.util.throttle(watch, 100));
-  doc.on('resize.sticky', eiti.util.throttle(watch, 100));
+  win.on('resize.sticky', eiti.util.throttle(watch, 100));
 
   watch();
 

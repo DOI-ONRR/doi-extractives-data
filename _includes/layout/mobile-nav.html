@@ -4,15 +4,19 @@
   {% assign selector_nav_items = page.nav_items %}
 {% endif %}
 
+{% assign region_name = state_name | default: region_title %}
+{% assign mobile_nav_title = include.mobile_nav_title | default: region_name %}
+
 <div is="mobile-nav" class="mobile-nav sticky" accordion="mobile-nav">
-  <h3 class="mobile-nav-header">{{ state_name }}</h3>
   <button is="aria-toggle"
     aria-controls="mobile-nav-content"
-    aria-expanded="false">
-      <span class="hide-expanded">
+    aria-expanded="false"
+    class="flex-row">
+      <h3 class="mobile-nav-header flex-row-flex">{{ mobile_nav_title }}</h3>
+      <span class="hide-expanded flex-row-icon">
         <icon class="icon icon-chevron-sm-down"></icon>
       </span>
-      <span class="show-expanded">
+      <span class="show-expanded flex-row-icon">
         <icon class="icon icon-chevron-sm-up"></icon>
       </span>
   </button>

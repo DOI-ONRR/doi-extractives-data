@@ -6,24 +6,24 @@
 {% assign header_size = include.header_size | 'h3' %}
 
 {% if header_size == 'h2' %}
-  <h2 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper">
-    <span>{{ header_text }}</span>
+  <h2 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
     {% if selector %}
-      {% include year-selector.html year_range=year_range %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
     {% endif %}
   </h2>
 {% elsif header_size == 'h4' %}
-  <h4 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper">
-    <span>{{ header_text }}</span>
+  <h4 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
     {% if selector %}
-      {% include year-selector.html year_range=year_range %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
     {% endif %}
   </h4>
 {% else %}
-  <h3 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper">
-    <span>{{ header_text }}</span>
+  <h3 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
     {% if selector %}
-      {% include year-selector.html year_range=year_range %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
     {% endif %}
   </h3>
 {% endif %}

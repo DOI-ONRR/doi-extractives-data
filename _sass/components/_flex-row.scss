@@ -1,0 +1,19 @@
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	width: 100%;
+
+	.flex-row-flex {
+		align-self: center;
+		padding-right: $base-padding-lite;
+		text-align: left;
+		width: 100%;
+	}
+
+	.flex-row-icon {
+		align-self: center;
+		height: inherit;
+		padding-right: $base-padding-lite;
+	}
+}

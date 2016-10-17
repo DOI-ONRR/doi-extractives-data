@@ -14,15 +14,17 @@
       border: 0 !important;
       display: inline-block;
       margin: 0 !important;
-      padding-top: $base-padding-lite;
+      padding-bottom: $standard-padding-lite !important;
+      padding-left: 0;
+      padding-top: $standard-padding-lite !important;
       vertical-align: text-top;
     }
 
     button {
       background: transparent;
       float: right;
-      margin-bottom: $base-padding-lite;
-      margin-top: $base-padding-lite;
+      margin-bottom: inherit;
+      margin-top: inherit;
     }
 
 
@@ -39,6 +41,7 @@
       border-top: 2px solid $light-green;
       display: block;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       width: 100%;
 
       > ul {

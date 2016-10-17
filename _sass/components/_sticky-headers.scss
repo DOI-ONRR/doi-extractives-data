@@ -1,5 +1,6 @@
 .sticky-header-wrapper {
-  padding-top: 2 * $standard-padding-lite;
+  padding-bottom: $standard-padding-lite !important;
+  padding-top: $standard-padding-lite !important;
   top: 45px;
 
   @include respond-to(medium-up) {
@@ -11,11 +12,11 @@
     vertical-align: sub;
 
     @include respond-to(tiny-down) {
-      width: 70%;
+      width: 65%;
     }
 
     @include respond-to(tiny-to-small) {
-      width: 75%;
+      width: 70%;
     }
 
     @include respond-to(small-to-medium) {

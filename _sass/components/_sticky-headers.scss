@@ -7,7 +7,20 @@
   }
 
   span {
+    display: inline-block;
     vertical-align: sub;
+
+    @include respond-to(tiny-down) {
+      width: 70%;
+    }
+
+    @include respond-to(tiny-to-small) {
+      width: 75%;
+    }
+
+    @include respond-to(small-to-medium) {
+      width: 80%;
+    }
   }
 
   &.stuck {

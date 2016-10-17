@@ -41,6 +41,10 @@
       overflow-y: auto;
       width: 100%;
 
+      > ul {
+        margin: 0;
+      }
+
       &[aria-hidden="true"] {
         display: none;
       }

@@ -176,6 +176,18 @@
       }
     }
   }
+
+  @include respond-to(small-down) {
+    .chart-selector {
+      display: none;
+    }
+
+    .chart-description {
+      border: 0;
+      padding-left: 0;
+      width: 100%;
+    }
+  }
 }
 
 .row-container {

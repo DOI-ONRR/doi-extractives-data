@@ -24,6 +24,8 @@ breadcrumb:
   </ul>
 </p>
 
+This dataset also includes county-level data about coal production on federal land.
+
 If you are looking for additional information on Federal production data please visit the [ONRR Statistical Information Site](http://statistics.onrr.gov/). We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 
 
@@ -43,6 +45,10 @@ ONRR withheld some solids production information out of an abundance of caution 
 
 * "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level
 * All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)
+
+### Why aren’t national totals equal to the sum of all state totals?
+
+In some cases, national totals include amounts that are {{ "withheld" | term }} at the state or county level.
 
 ### A note about “Mixed Exploratory” versus “Federal” categories of production
 

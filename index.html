@@ -8,12 +8,12 @@ selector: location
     <div class="container-left-8 ribbon-hero ribbon-hero-home ribbon-card-home">
       <h2>The United States Extractive Industries Transparency Initiative</h2>
       <h3 class="ribbon-hero-description-light">
-        USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about how the U.S. manages {{ "extractive industries" | term_end:"extractive industry" }}.
+        USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about {{ "extractive industries" | term:"extractive industry" }} across the United States.
       </h3>
       <a href="{{ site.baseurl }}/about/">Learn more about the initiative</a>
     </div>
     <div class="container-right-4 ribbon-card ribbon-card-home">
-      <a href="{{ site.baseurl }}/how-it-works/" class="ribbon-card-button button-primary">See how it works</a>
+      <a href="{{ site.baseurl }}/explore/" class="ribbon-card-button button-primary">Explore the data</a>
       {% include svg/icon-ribbon-oil-rig.svg svg_title='small' vb_height=150 %}
       {% include svg/icon-ribbon-oil-rig.svg %}
     </div>
@@ -23,7 +23,7 @@ selector: location
 <section class="slab-alpha container-margin-separation explore_home-map">
   <div class="container-page-wrapper">
     <div class="container-left-4 explore_home-map-intro">
-      <h2 class="h3 explore_home-heading">Learn about natural resource extraction in each state</h2>
+      <h2 class="h3 explore_home-heading">Learn about extractive industries in each state</h2>
       <p>
         Explore production, revenue, and economic impact data for each state, as well as additional contextual information and data about three states that chose to participate in deeper USEITI reporting: <a href="{{ site.baseurl }}/explore/AK/">Alaska</a>, <a href="{{ site.baseurl }}/explore/MT/">Montana</a>, and <a href="{{ site.baseurl }}/explore/WY/">Wyoming</a>.
       </p>
@@ -57,74 +57,10 @@ selector: location
   <div class="container-page-wrapper">
 
     <div class="container-left-3">
-      <h4>The U.S. ranks at or near the top worldwide in the production of many natural resources. Explore this site to learn about U.S. natural gas, oil, coal, copper, gold, iron, and renewables.</h4>
+      <h4>The U.S. ranks first in the world for production of oil and natural gas, and second in the world for production of coal and renewable energy.</h4>
     </div>
 
     <div class="container-left-9">
-
-      <article class="card" class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/about/report/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-exec_summary.png" alt="USEITI 2015 Executive Summary"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">About</p>
-
-          <a href="{{ site.baseurl }}/about/report/"><h3 class="card-title">Download the USEITI 2015 Executive Summary</h3></a>
-
-          <p>This document includes an overview of the contextual narrative and an account of the reporting and reconciliation process for the EITI Standard in the U.S.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card" class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/production/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-nat_res.png" alt="U.S. natural resource sectors"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">How it works</p>
-
-          <a href="{{ site.baseurl }}/how-it-works/production/"><h3 class="card-title">What natural resources are extracted?</h3></a>
-
-          <p>The U.S. is one of the top producers of oil, gas, and coal as well as nonenergy minerals like gold, iron, and copper.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/case-studies/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-placeholder.png" alt="Placeholder"></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">Case studies</p>
-
-          <a href="{{ site.baseurl }}/case-studies/"><h3 class="card-title">How does natural resource extraction affect local communities?</h3></a>
-
-          <p>Learn about 12 communities that led the U.S. in production of iron, copper, gold, coal, oil, and natural gas over the last decade.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/revenues/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-oil.png" alt="Oil operation in the mountains"/></a>
-
-        <div class="card-content">
-
-          <p class="card-content-subhead">How it works</p>
-
-          <a href="{{ site.baseurl }}/how-it-works/revenues/"><h3 class="card-title">How do natural resources result in federal revenues?</h3></a>
-
-          <p>Companies pay for the right to explore on federal lands. If they find and extract resources, they may pay royalties, fees, taxes, and other revenues, depending on the resource.</p>
-
-        </div>
-
-      </article>
 
       <article class="card">
 
@@ -152,7 +88,71 @@ selector: location
 
           <a href="{{ site.baseurl }}/explore/#federal-disbursements"><h3 class="card-title">Where does the money go?</h3></a>
 
-          <p>Revenue from natural resources goes to federal, state, and county governments, as well as to a range of funds that work at the local and national levels.</p>
+          <p>Revenue from natural resources goes to state governments, as well as several federal funds that support projects at the local and national levels.</p>
+
+        </div>
+
+      </article>
+
+      <article class="card">
+
+        <a class="card-image_link" href="{{ site.baseurl }}/case-studies/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-placeholder.png" alt="Placeholder"></a>
+
+        <div class="card-content">
+
+          <p class="card-content-subhead">Case studies</p>
+
+          <a href="{{ site.baseurl }}/case-studies/"><h3 class="card-title">How do extractive industries affect communities?</h3></a>
+
+          <p>Learn about 12 communities that led the U.S. in production of iron, copper, gold, coal, oil, and natural gas over the last decade.</p>
+
+        </div>
+
+      </article>
+
+      <article class="card" class="card">
+
+        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/production/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-nat_res.png" alt="U.S. natural resource sectors"></a>
+
+        <div class="card-content">
+
+          <p class="card-content-subhead">How it works</p>
+
+          <a href="{{ site.baseurl }}/how-it-works/production/"><h3 class="card-title">What natural resources are extracted?</h3></a>
+
+          <p>The U.S. is a top producer of oil, gas, and coal, as well as nonenergy minerals like gold, iron, and copper.</p>
+
+        </div>
+
+      </article>
+
+      <article class="card">
+
+        <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/revenues/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-oil.png" alt="Oil operation in the mountains"/></a>
+
+        <div class="card-content">
+
+          <p class="card-content-subhead">Explore data</p>
+
+          <a href="{{ site.baseurl }}/explore/#federal-revenue"><h3 class="card-title">How does resource extraction result in federal revenues?</h3></a>
+
+          <p>Companies that extract resources on federal land may pay bonuses, rents, royalties, fees, taxes, or other revenues to the federal government.</p>
+
+        </div>
+
+      </article>
+
+      <article class="card" class="card">
+
+        <a class="card-image_link" href="{{ site.baseurl }}/about/report/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-exec_summary.png" alt="USEITI 2015 Executive Summary"></a>
+
+        <div class="card-content">
+
+          <p class="card-content-subhead">About</p>
+
+          <a href="{{ site.baseurl }}/about/report/"><h3 class="card-title">Download the USEITI 2015 Executive Summary</h3></a>
+
+          <p>This document includes an overview of contextual information and an account of the EITI Standard in the U.S.</p>
 
         </div>
 
@@ -161,13 +161,6 @@ selector: location
     </div>
 
   </div>
-
-</section>
-<section class="slab-alpha container-padded container-page-wrapper u-centered home-bottom-links">
-
-    <h2>Not sure where to go? Start&nbsp;here&nbsp;&#8230;</h2>
-
-    <h3 class="h2"><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenue <icon class="icon-chevron-lg icon-padded"></icon></a></h3>
 
 </section>
 

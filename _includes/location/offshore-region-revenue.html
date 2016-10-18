@@ -15,7 +15,10 @@
 
   <section id="revenue-by-resource">
 
-    <h3>Federal revenue by resource</h3>
+    {%
+      include sticky-header.html
+      header_text='Federal revenue by resource'
+    %}
 
     <p>Laws and policies govern how rights are awarded to companies and what they pay to extract natural resources on the Outer Continental Shelf. For details, read more about the processes for <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">offshore oil and gas</a> or <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">offshore renewable energy</a>.</p>
 
@@ -53,11 +56,12 @@
   </section>
   <!-- #revenue-by-resource -->
 
-  <section id="revenue-by-area">
+  <section>
 
     {%
       include sticky-header.html
       header_text='Federal revenue by offshore area'
+      header_id='revenue-by-area'
       year_range=year_range
       selector=true
     %}
@@ -86,7 +90,7 @@
           </p>
         {% else %}
           <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
-            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ state_name }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ region_title }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
           </p>
         {% endif %}
       </div>

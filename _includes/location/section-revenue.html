@@ -13,7 +13,11 @@
 
   <section id="federal-revenue">
 
-    <h3{% if revenue_commodities %} class="sticky"{% endif %}>Federal revenue</h3>
+    {%
+      include sticky-header.html
+      header_id='federal-revenue'
+      header_text='Federal revenue'
+    %}
 
     <p>
       Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.
@@ -121,8 +125,13 @@
   </section>
   <!-- #federal-revenue -->
 
-  <section id="state-local-revenue" class="state revenue">
-    <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State revenue</h3>
+  <section class="state revenue">
+
+    {%
+      include sticky-header.html
+      header_text='State revenue'
+      header_id='state-local-revenue'
+    %}
 
     {% if page.opt_in == true %}
       {% include location/opt-in/state-revenues.html location_id=state_id %}

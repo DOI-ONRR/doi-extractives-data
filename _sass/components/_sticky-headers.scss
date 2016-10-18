@@ -1,8 +1,27 @@
 .sticky-header-wrapper {
-  padding-top: 2 * $standard-padding-lite;
+  padding-bottom: $standard-padding-lite !important;
+  padding-top: $standard-padding-lite !important;
+  top: 42px;
+
+  @include respond-to(medium-up) {
+    top: 0;
+  }
 
   span {
+    display: inline-block;
     vertical-align: sub;
+
+    @include respond-to(tiny-down) {
+      width: 65%;
+    }
+
+    @include respond-to(tiny-to-small) {
+      width: 70%;
+    }
+
+    @include respond-to(small-to-medium) {
+      width: 80%;
+    }
   }
 
   &.stuck {
@@ -18,5 +37,9 @@
 
     margin: 0;
     visibility: hidden;
+
+    @include respond-to(small-down) {
+      visibility: visible;
+    }
   }
 }

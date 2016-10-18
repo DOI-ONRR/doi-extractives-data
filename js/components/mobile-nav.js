@@ -28,15 +28,8 @@
       }
     });
 
-    var jump = function() {
-      toggles.each(function() {
-        this.collapse();
-      });
-      makeFullScreen(false, false);
-    };
-
     var makeFullScreen = function (toggle, fullScreen) {
-      var fullScreen = fullScreen || false;
+      fullScreen = fullScreen || false;
 
       if (toggle) {
         fullScreen = !navIsFull;
@@ -47,6 +40,13 @@
         .classed('container-page-inner-wrapper', fullScreen);
 
       navIsFull = !navIsFull;
+    };
+
+    var jump = function() {
+      toggles.each(function() {
+        this.collapse();
+      });
+      makeFullScreen(false, false);
     };
 
     var resize = function(e) {

@@ -46,8 +46,8 @@
         .classed('full-screen', fullScreen)
         .classed('container-page-inner-wrapper', fullScreen);
 
-      navIsFull = !navIsFull
-    }
+      navIsFull = !navIsFull;
+    };
 
     var resize = function(e) {
       var windowHeight  = window.innerHeight || e.clientHeight;
@@ -59,7 +59,7 @@
           makeFullScreen(true);
         }
       }
-    }
+    };
 
     links.on('click.nav', jump);
     button.on('click.toggle', resize);

@@ -52,6 +52,35 @@
   }
 }
 
+
+@mixin container-page-inner-wrapper() {
+  @extend .container;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+
+  @include respond-to(small-to-huge) {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
+
+  @include respond-to(huge-plus) {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+    max-width: $max-width;
+  }
+
+  @include respond-to(huge-plus-up) {
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+.container-page-inner-wrapper {
+  @include container-page-inner-wrapper();
+}
+
+
 %container-side {
 
   @include span-columns(12);

@@ -86,8 +86,9 @@ title_display: 'Download Data & Documentation'
 
 <ul class="list-sections list-unstyled">
     <li class="downloads-download_links">
-    <a href="http://www.bea.gov/API/signup/index.cfm" id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>
-    <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>. The data we use for the interactions on this site is a subset of the data availebl on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
+    <a href="http://www.bea.gov/API/signup/index.cfm" id="gdp" class="link-no_under"><h3>Gross domestic product (GDP)</h3></a>
+    <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a> (BEA), which measures GDP by adding up the “real value added” for each industry that contributes to the U.S. economy. According to the BEA, real value added includes “compensation of employees; taxes on production and imports, less subsidies; and gross operating surplus.”</p>
+    <p>The data we use for the interactions on this site is a subset of the data available on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
     <a href="http://www.bea.gov/API/signup/index.cfm">Go to BEA API docs &#8594;
     </a>
   </li>

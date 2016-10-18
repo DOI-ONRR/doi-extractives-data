@@ -116,7 +116,11 @@
   </section><!-- /#federal-revenue -->
 
   <section>
-    <h3 id="federal-tax-revenue">Federal tax revenue</h3>
+    {%
+      include sticky-header.html
+      header_text='Federal tax revenue'
+      header_id='federal-tax-revenue'
+    %}
 
     <div>
       <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>

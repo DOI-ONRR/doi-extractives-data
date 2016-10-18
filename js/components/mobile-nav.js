@@ -6,16 +6,27 @@
 
   var attached = function() {
     var root = d3.select(this);
-    var win = d3.select(win);
+    var win = d3.select(window);
+    var doc = d3.select(document);
     var navIsFull = false;
 
     var collapsedHeaderHeight = root.node().getBoundingClientRect().height;
     var links = root.selectAll('a');
     var toggles = root.selectAll('[is="aria-toggle"]');
+    var navItems = root.selectAll('[mobile-nav-item]');
 
     var button = root.select('button');
 
     var content = root.select('#mobile-nav-content');
+
+    navItems.each(function () {
+      var item = d3.select(this);
+      var itemID = item.attr('mobile-nav-item');
+      var elementDoesntExists = doc.select('#' + itemID).empty();
+      if (elementDoesntExists) {
+        item.attr('aria-hidden', true);
+      }
+    });
 
     var jump = function() {
       toggles.each(function() {
@@ -51,12 +62,8 @@
     }
 
     links.on('click.nav', jump);
-
     button.on('click.toggle', resize);
-
-    window.addEventListener('resize', function(){
-      eiti.util.throttle(resize, 100);
-    });
+    win.on('resize.sticky', eiti.util.throttle(resize, 100));
   };
 
   var detached = function() {

@@ -23,7 +23,6 @@
   );
 
   var watch = function() {
-    console.log('throttled reszie')
     stickies.forEach(function(sticky) {
       var atTop = d3.select(sticky).style('position') == 'fixed';
       var isStuck = sticky.classList.contains('stuck');

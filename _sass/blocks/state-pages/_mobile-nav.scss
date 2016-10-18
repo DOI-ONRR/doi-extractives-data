@@ -76,6 +76,10 @@
     &:active {
       text-decoration: underline;
     }
+
+    &[aria-hidden=true] {
+      display: none;
+    }
   }
 
   .mobile-nav-list-item {

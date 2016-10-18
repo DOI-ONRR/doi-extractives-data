@@ -121,8 +121,13 @@
   </section>
   <!-- #federal-revenue -->
 
-  <section id="state-local-revenue" class="state revenue">
-    <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State revenue</h3>
+  <section class="state revenue">
+
+    {%
+      include sticky-header.html
+      header_text='State revenue'
+      header_id='state-local-revenue'
+    %}
 
     {% if page.opt_in == true %}
       {% include location/opt-in/state-revenues.html location_id=state_id %}

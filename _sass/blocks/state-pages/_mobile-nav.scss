@@ -49,8 +49,8 @@
   .mobile-nav-list-items {
     border-top: 2px solid $light-green;
     display: block;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
     width: 100%;
 
     > ul {

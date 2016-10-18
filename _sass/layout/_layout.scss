@@ -65,9 +65,9 @@
   }
 
   @include respond-to(huge-plus) {
+    max-width: $max-width;
     padding-left: $page-padding;
     padding-right: $page-padding;
-    max-width: $max-width;
   }
 
   @include respond-to(huge-plus-up) {

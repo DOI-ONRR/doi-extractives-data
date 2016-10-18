@@ -146,18 +146,6 @@
 .chart-selector-wrapper {
   display: inline-block;
 
-  @include respond-to(small-down) {
-    .chart-selector {
-      display: none;
-    }
-
-    .chart-description {
-      border: 0;
-      padding-left: 0;
-      width: 100%;
-    }
-  }
-
   .chart-selector {
     @include chart-selector(left);
   }
@@ -186,6 +174,18 @@
       &:active {
         text-decoration: underline;
       }
+    }
+  }
+
+  @include respond-to(small-down) {
+    .chart-selector {
+      display: none;
+    }
+
+    .chart-description {
+      border: 0;
+      padding-left: 0;
+      width: 100%;
     }
   }
 }

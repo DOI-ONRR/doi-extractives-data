@@ -12,20 +12,21 @@ permalink: /how-it-works/
       <p class="ribbon-hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#state-tribal">state and tribal lands</a> are managed, and what <a href="#laws">laws and governance</a> relate to the industry.</p>
     </div>
     <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
-      <figure class="ribbon-card-top">
-        <a href="{{site.baseurl}}/how-it-works/production/">
-          <img class="ribbon-card-image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
-        </a>
-      </figure>
-      <figcaption class="ribbon-card-bottom"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources does the U.S. produce?</a></figcaption>
+      <div class="ribbon-card-top ribbon-card-top-text">
+        <h2 class="ribbon-card-top-text-header ribbon-card-top-text-header-padded">The U.S. ranks at or near the top worldwide in the production of many natural resources.</h2>
+        {% include svg/how-it-works-ribbon-graphic.svg %}
+      </div>
+      <div class="ribbon-card-bottom">
+        <a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources does the U.S. produce?</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="container-page-wrapper landing-wrapper">
-  
+
   <article class="container-left-9">
-  
+
     <section class="container">
       <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
       <div class="container landing-section">
@@ -36,7 +37,7 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-    
+
     <section class="container">
       <h2 id="laws" class="h2-bar">What federal laws and regulations govern natural resources in the U.S.?</h2>
       <div class="container landing-section">
@@ -52,14 +53,14 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-    
+
     <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-      
+
       <h3 class="h3-bar">Production</h3>
       <p class="landing-intro_link">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
       <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
-      
+
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
@@ -94,11 +95,11 @@ permalink: /how-it-works/
           </div>
         </div>
       </div>
-      
+
       <h3 class="h3-bar">Revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
-      
+
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2015/">Federal revenue by company</a></h4>
@@ -122,7 +123,7 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-    
+
     <section class="container">
       <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
       <div class="container landing-section">
@@ -138,7 +139,7 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-    
+
     <section class="container">
       <h2 id="state-tribal" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
       <div class="container landing-section">

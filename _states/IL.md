@@ -3,6 +3,10 @@ id: IL
 title: Illinois
 FIPS: '17'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 ---
 * The [Illinois Department of Natural Resources](http://www.dnr.illinois.gov/Pages/default.aspx), through the Office of Mines and Minerals, regulates natural resource exploration and development throughout the state.

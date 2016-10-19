@@ -13,6 +13,7 @@
   require('../components/aria-tabs.js');
 
   require('../components/sticky.js');
+  require('../components/mobile-nav.js');
 
   // exporting instance of OpenListNav because openListNav is
   // referenced in the markup:

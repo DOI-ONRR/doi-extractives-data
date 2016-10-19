@@ -3,6 +3,15 @@ id: AK
 title: Alaska
 FIPS: '02'
 
+# this triggers whitelisting of nearby states to render in county maps
+# listing WA to ensure that neighbors is interpreted as a list
+neighbors:
+ - WA
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 opt_in: true
 
 state_revenue_year: 2015
@@ -19,7 +28,7 @@ state_optin_intro: |
 state_production: |
     Most of Alaska's crude oil production takes place in the [North Slope Borough]({{ site.baseurl }}/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
 
-    About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the [congressional report (PDF)](http://www.ferc.gov/legal/staff-reports/2016/angta-twenty-first.pdf). 
+    About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the [congressional report (PDF)](http://www.ferc.gov/legal/staff-reports/2016/angta-twenty-first.pdf).
 
     **Nonenergy minerals:** For details about nonenergy mineral extraction, see the [USGS Minerals Yearbook for Alaska](http://minerals.usgs.gov/minerals/pubs/state/ak.html).
 
@@ -31,7 +40,7 @@ state_revenue: |
 
     Alaska collects oil and gas production taxes and royalties based on the assessed value of the gross product, resulting in revenues sensitive to price fluctuations.
 
-    Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on unorganized lands. In 2015, unorganized territory petroleum property taxes totaled $75 million, or 60% of the total petroleum property taxes collected by the state.
+    Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on {{ "unorganized lands" | term:"unorganized land" }}. In 2015, unorganized territory petroleum property taxes totaled $75 million, or 60% of the total petroleum property taxes collected by the state.
 state_revenue_sustainability: |
     ![Alaska revenues compared to Alaska revenues from oil and gas for 2010-2018. 2016-18 figures are projected. Total state revenues were highest in 2011, at nearly $20 billion, and ranged from $13.5 billion to $19.5 billion between 2012 and 2014 before dropping to just under $9 billion in 2015. The total petroleum based revenue amount rose from just over $6 billion in 2010 to $10 billion in 2012, then fell steadily to under $3 billion in 2015. For 2016-2018, revenues from petroleum based revenue is projected to drop to about $1.5 billion, then rise to just under $2 billion, while total revenues are expected to rise steadily to just under $11 billion. The average price of oil is listed under the chart for context. The price of oil was highest in 2011 and 2012, at $99 per barrel, and lowest in 2015, when it dropped to just $41.]({{ site.baseurl }}/img/AK_revenue_sustainability.svg)
 
@@ -45,10 +54,10 @@ state_revenue_sustainability: |
 
     * Alaska’s [2014 budget summary (PDF)](https://www.omb.alaska.gov/ombfiles/15_budget/PDFs/15Enacted_Fiscal_Summary.pdf)
     * [Working Together to Close the Gap (PDF)](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1240r) has a special chapter on “Bridging the Gap Toward a Sustainable Fiscal Future”
-    
+
     Because this issue is shared by many parts of the world with significant natural resource revenues, the International Monetary Fund produced a report in 2015 called [The Commodities Roller Coaster: A Fiscal Framework for Uncertain Times (PDF)](https://www.imf.org/external/pubs/ft/fm/2015/02/pdf/fm1502.pdf).
 state_tax_expenditures: |
-    Alaska had four tax expenditures claimed in 2015 that were directly related to oil and gas extraction and totaled at least $1 million each. Together, these four tax expenditures reduced state or local revenue by a total of $1.3 billion. The expenditure credits and per taxable barrel credits each accounted for 46% of total expenditures, at $590 million and $595 million respectively. The Alaska Department of Revenue outlines tax expenditures in its [Revenue Sources Book (PDF)](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1240r). 
+    Alaska had four tax expenditures claimed in 2015 that were directly related to oil and gas extraction and totaled at least $1 million each. Together, these four tax expenditures reduced state or local revenue by a total of $1.3 billion. The expenditure credits and per taxable barrel credits each accounted for 46% of total expenditures, at $590 million and $595 million respectively. The Alaska Department of Revenue outlines tax expenditures in its [Revenue Sources Book (PDF)](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1240r).
 state_disbursements: |
     [State agencies](#state-agencies) distribute revenues according to [Alaska law](http://www.legis.state.ak.us/basis/folio.asp), which is defined by the legislature. For more information about state disbursements, see the following:
 
@@ -64,13 +73,13 @@ state_saving_spending: |
 
     For 2016, in response to budget conditions, the Governor of Alaska exercised his line-item veto power to [cut the total dividend payout](http://gov.alaska.gov/newsroom/2016/06/governor-walker-vetoes-1-29-billion-to-preserve-state-savings/) to $696 million, which reduced individual checks to $1,000 per person. The Alaska state legislature is also considering two senate bills proposing changes to the APF: [SB114](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20114&session=29) and [SB128](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20128&session=29).
 
-    To learn more, see the APF Dividend Division's [annual reports](https://pfd.alaska.gov/Division-Info/Annual-Reports) or [financial history and projections (PDF)](http://www.apfc.org/_amiReportsArchive/FIN%20201604.pdf). 
+    To learn more, see the APF Dividend Division's [annual reports](https://pfd.alaska.gov/Division-Info/Annual-Reports) or [financial history and projections (PDF)](http://www.apfc.org/_amiReportsArchive/FIN%20201604.pdf).
 
     **The [Public School Trust Fund](http://treasury.dor.alaska.gov/Investments/Public-School-Trust-Funds.aspx)** is worth $600 million (as of June 2016), and funded by 0.5% of state receipts from the management of all state lands. The public school system has access to $15 million from the fund, while the fund retains the principal and some net income.
 
     **The [Constitutional Budget Reserve Fund](http://treasury.dor.alaska.gov/Investments/Constitutional-Budget-Reserve.aspx)** was created in 1990 to hold money received by the state from mineral disputes. It grew from $1.8 billion in 2006 to $10.1 billion in 2015. Under certain conditions, the Alaska State Legislature may use it to fund state government operations.
 state_impact: |
-    The extractive industries play an important role in Alaska’s economy. Pipeline transportation and construction also contribute significantly; in 2014, pipeline transportation contributed $4.1 billion to Alaska's GDP.   
+    The extractive industries play an important role in Alaska’s economy. Pipeline transportation and construction also contribute significantly; in 2014, pipeline transportation contributed $4.1 billion to Alaska's GDP.
 
     Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2015, annual wages from extractive industries made up about 13% (or $2.3 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Alaska in 2015 was $113,949, or more than twice the statewide average wage of $54,762.
 ---

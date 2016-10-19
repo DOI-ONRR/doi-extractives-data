@@ -7,13 +7,17 @@
 
   <h2>Revenue</h2>
 
-  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The types and amounts of payments differ, depending on who owns the natural resources.</p>
+  <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the United States. The types and amounts of payments differ, depending on <a href="{{ site.baseurl }}/how-it-works/ownership/">who owns the natural resources</a>.</p>
 
   <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.</p>
 
-  <section id="federal-revenue">
+  <section>
 
-    <h3 class="sticky">Revenue from extraction on federal land</h3>
+    {%
+      include sticky-header.html
+      header_id='federal-revenue'
+      header_text='Revenue from extraction on federal land'
+    %}
 
     <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -53,8 +57,14 @@
       </article>
     </div>
 
-
-    <h4 id="revenue-trends">Revenue trends by resource</h4>
+    {%
+      include sticky-header.html
+      header_text='Federal revenue trends by resource'
+      year_range=year_range
+      header_size='h4'
+      header_id='revenue-trends'
+      selector=true
+    %}
 
     <section class="chart-list">
 
@@ -63,7 +73,7 @@
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-          Non-tax revenue collected by ONRR often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
+          Non-tax revenue collected by {{ "ONRR" | term }} often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
           <br>
           <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
             <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -110,7 +120,11 @@
   </section><!-- /#federal-revenue -->
 
   <section>
-    <h3 id="federal-tax-revenue">Federal tax revenue</h3>
+    {%
+      include sticky-header.html
+      header_text='Federal tax revenue'
+      header_id='federal-tax-revenue'
+    %}
 
     <div>
       <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. Depending on company income, federal corporate income tax rates can range from 15–35%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.</p>

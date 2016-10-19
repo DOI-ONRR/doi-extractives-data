@@ -3,6 +3,10 @@ id: WV
 title: West Virginia
 FIPS: '54'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 
 case_study_link: |

@@ -112,7 +112,7 @@ OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE of
 
 ## The AML fund
 
-Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
+Prior to 2006, companies often paid more money into the [AML fund](http://www.osmre.gov/programs/aml.shtm) each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
 **Growth of the AML fund's unappropriated balance**[^17]
 

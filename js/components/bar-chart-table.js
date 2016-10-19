@@ -178,6 +178,8 @@
   }
 
   var show = function(fips) {
+    var elOffsetTop;
+    var overflowRegion = d3.select(this).select('.inner-table-wrapper');
     var rows = d3.select(this).selectAll('tbody > tr');
     rows
       .classed('mouseover', false);
@@ -185,14 +187,26 @@
     rows.select('[data-sentence]')
       .attr('aria-hidden', true);
 
-    rows
+    var matching = rows
       .classed('selected', false)
       .filter(function() {
         return this.getAttribute('data-fips') === fips;
       })
-      .classed('selected', true)
-      .select('[data-sentence]')
+      .classed('selected', true);
+
+    if (!matching.empty()) {
+      elOffsetTop = matching.property('offsetTop');
+    }
+
+    if (!overflowRegion.empty()) {
+      overflowRegion.property('scrollTop', elOffsetTop);
+    }
+
+
+    matching.select('[data-sentence]')
         .attr('aria-hidden', false);
+
+
   };
 
   var hide = function() {
@@ -261,23 +275,16 @@
       var min = extent[0];
       var max = extent[1];
       var negative = min < 0;
-      var zero = 0;
       var width = d3.scale.linear()
         .domain(extent)
         .range(range)
         .clamp(true);
 
-      var offset;
       var sizeProperty = 'width';
-      var offsetProperty = 'margin-left';
 
       if (negative) {
         var length = max - min;
-        zero = 100 * (0 - min) / length;
-        offset = d3.scale.linear()
-          .domain([min, 0, max])
-          .range([0, zero, zero])
-          .clamp(true);
+
         width = d3.scale.linear()
           .domain([min, 0, max])
           .range([100 * -min / length, 0, 100 * max / length])
@@ -286,7 +293,6 @@
 
       if (this.orient === 'vertical') {
         sizeProperty = 'height';
-        offsetProperty = 'bottom';
       }
 
       var that = this;
@@ -351,12 +357,6 @@
           });
         } else {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
-        }
-
-        if (offset) {
-          bar.style.setProperty(offsetProperty, offset(value) + '%');
-        } else {
-          bar.style.removeProperty(offsetProperty);
         }
       });
 

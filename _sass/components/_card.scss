@@ -48,7 +48,7 @@
 
   background-color: $white;
   border-radius: 10px;
-  height: 389px;
+  height: 370px;
   margin-bottom: $base-padding;
   position: relative;
 
@@ -58,7 +58,7 @@
   }
 
   @include respond-to(medium-up) {
-    height: 339px;
+    height: 320px;
   }
 
   @include respond-to(large-up) {

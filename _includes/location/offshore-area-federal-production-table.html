@@ -19,6 +19,13 @@
     </tr>
   </thead>
   <tbody>
+  {% if include.scrollable %}
+    <tr class="inner-table-row">
+      <td colspan="3" class="inner-table-cell">
+        <div class="inner-table-wrapper">
+          <table>
+            <tbody>
+  {% endif %}
   {% for area in include.values %}
     {% assign product_volume = area[1].products[product_ref].volume[include.year] %}
 
@@ -53,5 +60,12 @@
       </tr>
     {% endif %}
   {% endfor %}
+  {% if include.scrollable %}
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    {% endif %}
   </tbody>
 </table>

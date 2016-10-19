@@ -5,6 +5,10 @@ FIPS: '27'
 
 priority: true
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 case_study_link: |
     For a detailed view of how iron mining affects communities in Minnesota, read the [St. Louis County case study]({{ site.baseurl }}/case-studies/st-louis/).
 ---

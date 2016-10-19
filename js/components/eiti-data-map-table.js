@@ -58,7 +58,7 @@
         });
 
         chartTables.each(function(){
-          this.show(countyFIPS, 'selected');
+          this.show(countyFIPS);
         });
       }
     };
@@ -87,7 +87,7 @@
       highlightCounty(fips, 'selected');
 
       chartTables.each(function(){
-        this.show(fips, 'selected');
+        this.show(fips);
       });
     };
 

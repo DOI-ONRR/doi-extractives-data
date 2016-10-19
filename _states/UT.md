@@ -4,8 +4,12 @@ title: Utah
 FIPS: '49'
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
-* The [Division of Oil, Gas, and Mining](http://naturalresources.utah.gov/divisions/ogm.html) within Utah’s Department of Natural Resources is responsible for developing natural resources for the economic benefit of the public while preserving the state’s natural environment. 
+* The [Division of Oil, Gas, and Mining](http://naturalresources.utah.gov/divisions/ogm.html) within Utah’s Department of Natural Resources is responsible for developing natural resources for the economic benefit of the public while preserving the state’s natural environment.
   * [Coal program](http://linux3.ogm.utah.gov/WebStuff/wwwroot/coal/default.html)
   * [Minerals program](http://linux3.ogm.utah.gov/WebStuff/wwwroot/minerals/default.html)
   * [Oil and gas program](http://oilgas.ogm.utah.gov/)

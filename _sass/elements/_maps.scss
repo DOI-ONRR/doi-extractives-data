@@ -7,6 +7,11 @@ svg.map {
   padding: 1em;
   width: 100%;
 
+
+  &.county {
+    background-color: $gray-light;
+  }
+
   @include svg-use('.mesh') {
     fill: none;
     pointer-events: none;
@@ -14,11 +19,12 @@ svg.map {
     stroke-width: 0.5;
   }
 
-  @include svg-use(
-    '.states.features',
-    '.regions.features'
-  ) {
+  @include svg-use('.states.features') {
     fill: $light-gray;
+  }
+
+  @include svg-use('.regions.features') {
+    fill: $white;
   }
 
   @include svg-use('.feature.offshore-area') {
@@ -33,6 +39,12 @@ svg.map {
 
   @include svg-use('.feature:not([fill])') {
     fill-opacity: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill-opacity: 0.25;
+    }
   }
 
   @include svg-use('.county.feature:not([fill])') {

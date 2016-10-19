@@ -51,8 +51,12 @@
           return toggle(this, expanded);
         }},
 
-        expand: {value: function(expanded) {
+        expand: {value: function() {
           return expand(this);
+        }},
+
+        collapse: {value: function() {
+          return collapse(this);
         }},
 
         detachedCallback: {value: function() {

@@ -7,10 +7,14 @@ opt_in: true
 
 state_revenue_year: 2014
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 state_production: |
     Much of Montana's crude oil and natural gas production is in northeastern Montana, in the Williston Basin, which includes the [Bakken formation](https://www.minneapolisfed.org/publications/special-studies/bakken/oil-production) as well as the Baker/Cedar Creek field, which contains the nation’s largest single underground natural gas storage facility. (There are also natural gas wells in south central Montana.)
 
-    Montana's coal reserves, which are the largest estimated recoverable coal reserves in the U.S., are mostly located in the Powder River Basin in southeastern Montana. Five large surface mines provide the bulk of Montana’s coal production, though it also has one sizable underground mine.  
+    Montana's coal reserves, which are the largest estimated recoverable coal reserves in the U.S., are mostly located in the Powder River Basin in southeastern Montana. Five large surface mines provide the bulk of Montana’s coal production, though it also has one sizable underground mine.
 
     Montana has 25 hydroelectric dams and several utility-scale wind farms. The Montana Department of Environmental Quality maintains information about [wind power in Montana](http://deq.mt.gov/Energy/EnergizeMT/Renewable/windweb).
 

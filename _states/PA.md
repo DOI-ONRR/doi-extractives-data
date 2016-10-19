@@ -4,6 +4,10 @@ title: Pennsylvania
 FIPS: '42'
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [Pennsylvania Department of Environmental Protection](http://www.dep.pa.gov/Pages/default.aspx) manages programs that ensure the safe and responsible exploration, development, and recovery of extractive resources. These programs include permitting and inspection, regulatory oversight, and training.
   * [Office of Oil and Gas Management](http://www.portal.state.pa.us/portal/server.pt/community/office_of_oil_and_gas_management/20291)

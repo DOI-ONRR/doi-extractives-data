@@ -29,7 +29,7 @@ h2,
 }
 
 @mixin h2-bar {
-  border-bottom: 20px solid $light-green;
+  border-bottom: 14px solid $light-green;
   padding-bottom: $standard-padding-lite;
 }
 
@@ -98,5 +98,3 @@ ul + h3,
 ul + .h3, {
   margin-top: $base-padding-large;
 }
-
-

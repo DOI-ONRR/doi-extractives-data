@@ -104,7 +104,7 @@ nav_items:
           The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}’s energy production and usage</a>.
         </p>
         {% if page.state_production %}
-          {{ page.state_production | markdownify }}
+          {{ page.state_production | liquify | markdownify }}
         {% endif %}
 
         {% include location/section-all-production.html %}
@@ -116,7 +116,7 @@ nav_items:
           {{ page.state_land | liquify | markdownify }}
         {% endif %}
         {% if page.state_land_production %}
-          {{ page.state_land_production | markdownify }}
+          {{ page.state_land_production | liquify | markdownify }}
         {% endif %}
 
       </section>
@@ -144,7 +144,7 @@ nav_items:
       <section id="economic-impact">
         <h2>Economic impact</h2>
         {% if page.state_impact %}
-        {{ page.state_impact | markdownify }}
+        {{ page.state_impact | liquify | markdownify }}
 
         <p>
           In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.

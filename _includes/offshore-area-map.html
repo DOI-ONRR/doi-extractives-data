@@ -63,49 +63,55 @@
       <use xlink:href="{{ offshore_svg }}#{{ region_id }}"></use>
     </g>
 
-    <g>
+    {% if include.areas %}
       {% if include.areas %}
-        {% assign keys = include.value %}
-        {% for area in include.areas %}
-          {% assign area_id = area[0] %}
-          {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}">{% endif %}
-          {% assign value = area[1] | get: keys %}
-
-          {% assign year_values = null %}
-          {% if include.years %}
-            {% assign year_values = area[1] | get: include.years %}
-            {% if include.years_property %}
-              {% assign year_values = year_values | map_hash: include.years_property %}
-            {% endif %}
-          {% endif %}
-
-          {% if year_values %}
-            <g class="county feature"
-              data-fips="{{ area_id }}"
-              data-value='{{ value | jsonify }}'
-              data-year-values='{{ year_values | jsonify }}'>
-              <title>{{ area[1].name }}</title>
-              <use xlink:href="{{ offshore_svg }}#{{ area_id }}"></use>
-            </g>
-          {% endif %}
-          {% if include.href %}</a>{% endif %}
-        {% endfor %}
+        {%
+          include offshore-area-feature.html
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          areas=include.areas
+          href=include.href
+        %}
       {% endif %}
+    {% endif %}
 
-      <g class="regions mesh">
-        <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
-      </g>
+    <g class="regions mesh">
+      <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
     </g>
+
+    {% if include.areas %}
+      {% if include.areas %}
+        {%
+          include offshore-area-feature.html
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          areas=include.areas
+          href=include.href
+          only_stroke=true
+        %}
+      {% endif %}
+    {% endif %}
   </svg>
 
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text }}
-        {% else %}Show table{% endif %}
+        aria-controls="{{ include.toggle }}"
+        aria-expanded="false">
+          <span class="hide-expanded">
+            <i class="icon icon-plus-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_hidden }}
+            {% else %}Show table{% endif %}
+          </span>
+          <span class="show-expanded">
+            <i class="icon icon-dash-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_visible }}
+            {% else %}Hide table{% endif %}
+          </span>
       </button>
     </h4>
   {% endif %}
@@ -130,11 +136,20 @@
   {% if include.toggle %}
     <h4 class="details-container">
       <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text }}
-        {% else %}Show table{% endif %}
+        aria-controls="{{ include.toggle }}"
+        aria-expanded="false">
+          <span class="hide-expanded">
+            <i class="icon icon-plus-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_hidden }}
+            {% else %}Show table{% endif %}
+          </span>
+          <span class="show-expanded">
+            <i class="icon icon-dash-sm"></i>
+            {% if include.toggle_text %}
+              {{ include.toggle_text_visible }}
+            {% else %}Hide table{% endif %}
+          </span>
       </button>
     </h4>
   {% endif %}

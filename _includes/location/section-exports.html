@@ -1,18 +1,12 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 
 {% assign restore_year = year %}
-{% assign year_range = site.data.years.exports %}
-{% if year_range %}
-  {% assign year = year_range | last | to_s %}
-{% else %}
-  {% assign year_range = site.data.years.default %}
-{% endif %}
+{% assign year_range = site.data.years.exports | default: site.data.years.default %}
 
-{% assign exports_total = export_commodities.All[year].dollars %}
+{% assign exports_total = export_commodities.Extractives[year] %}
 
 {% assign year_list = year_range | to_list %}
 {% assign year_range = year_range | jsonify %}
-{% assign empty_years = '' | split: '' %}
 
 <section id="exports" is="year-switcher-section" class="economic exports">
 
@@ -26,10 +20,11 @@
   <div class="chart-list">
 
     <div class="chart-selector-wrapper">
+      {% assign empty_years = '' | split: '' %}
       {% if export_commodities %}
         {% for _year in year_list %}
           {% assign _year_string = _year | to_s %}
-          {% unless export_commodities.All[_year_string].dollars > 0 %}
+          {% unless export_commodities.Total[_year_string] > 0 %}
             {% assign empty_years = empty_years | push: _year_string %}
           {% endunless %}
         {% endfor %}
@@ -60,21 +55,21 @@
     </div>
 
     {% assign _format = '$,' %}
-    {% assign _metric = 'dollars' %}
 
     {% for commodity in export_commodities %}
+      {% assign commodity_name = commodity[0] %}
       {% assign exports = commodity[1] %}
-      {% assign commodity_slug = commodity[0] | slugify %}
+      {% assign commodity_slug = commodity_name | slugify %}
 
-      {% if commodity[0] != "Total" and commodity[0] != "All" %}
+      {% if commodity_name != "Total" and commodity_name != "Extractives" %}
         <section class="chart-item">
 
-          <h3 class="chart-title"><span>{{ commodity[0] }}</span></h3>
+          <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
 
-          <figure class="chart chart-{{ _metric }}">
+          <figure class="chart">
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"
-              data='{{ exports | map_hash: _metric | jsonify }}'
+              data='{{ exports | jsonify }}'
               x-range="{{ year_range }}"
               x-value="{{ year }}"
               data-units="{{ _format }}">
@@ -82,13 +77,14 @@
             <figcaption id="exports-figures-{{ commodity_slug }}">
               <span class="caption-data">
                 <span class="eiti-bar-chart-y-value"
-                  data-format="{{ _format }}">${{ exports[year].dollars | intcomma }}</span>
-                worth of {{ commodity[0] | downcase }}
+                  data-format="{{ _format }}">${{ exports[year] | intcomma }}</span>
+                worth of {{ commodity_name | downcase }}
                 was exported from {{ state_name }}
                 in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                {{ commodity[0] }} did not rank among the top 25 exports from {{ state_name }} in
+                {{ commodity_name | downcase }} did not rank among the top 25 exports
+                from {{ state_name }} in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
             </figcaption>

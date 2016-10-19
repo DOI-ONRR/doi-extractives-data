@@ -78,22 +78,19 @@ data/national_all_production.yml:
 		-c _meta/national_all_production.yml \
 		-o _$@
 
-data/exports: tables/exports \
+data/exports: \
 	data/state_exports.yml \
 	data/national_exports.yml
 
 data/state_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			state, year, \
-			ROUND(value, 2) AS dollars, \
-			ROUND(share * 100, 2) AS percent, \
-			commodity \
+			state, year, commodity, \
+			ROUND(SUM(value), 2) AS dollars \
 		FROM exports \
-		WHERE \
-			state != 'US' \
-		ORDER BY state, year" \
-		| $(nestly) --if ndjson \
+		GROUP BY state, year, commodity \
+		ORDER BY state, year, dollars DESC \
+		" | $(nestly) --if ndjson \
 			-c _meta/state_exports.yml \
 			-o _$@
 
@@ -101,9 +98,11 @@ data/national_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			'US' AS state, year, \
-			SUM(ROUND(value, 2)) AS dollars, \
+			ROUND(SUM(value), 2) AS dollars, \
 			commodity \
 		FROM exports \
+		WHERE \
+			commodity = 'Total' \
 		GROUP BY year, commodity" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_exports.yml \
@@ -672,6 +671,7 @@ tables/gdp: data/gdp/regional.tsv
 tables/exports: data/exports/exports-by-industry.tsv
 	@$(call drop-table,exports)
 	$(call load-table,$^,exports)
+	@$(call load-sql,data/exports/rollup.sql)
 
 tables/disbursements: \
 	tables/federal_disbursements \

@@ -17,7 +17,6 @@ var tito = require('tito').formats;
 var util = require('../../lib/util');
 var async = require('async');
 var streamify = require('stream-array');
-var extend = require('extend');
 
 var HS6 = {
   260112: 'Iron', // Iron
@@ -32,24 +31,48 @@ var HS6 = {
 };
 
 if (options.liberal) {
-  var liberal = {
+  var MINING = 'Other nonenergy minerals';
+  HS6 = {
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=25>
-    25: 'Mining',
+    25: MINING,
+    // 26: MINING,
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=26>
-    26: 'Mining',
+    260112: 'Iron',
+    2603: 'Copper',
+    261610: 'Silver',
+    261690: 'Gold', // * includes gold, but also other precious metals
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=27>
     2701: 'Coal',
     2709: 'Oil',
     2710: 'Oil',
-    2711: 'Oil',
+    2711: 'Gas',
     2713: 'Oil',
     2714: 'Oil',
     2715: 'Oil',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=28>
-    28: 'Mining',
+    28: MINING,
+    // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=7106>
+    710610: 'Silver',
+    710691: 'Silver',
+    // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=7108>
+    710811: 'Gold',
+    710812: 'Gold',
+    // 72: 'Mining', // "base metals"???
     0: 'Total'
   };
-  extend(HS6, liberal);
+
+  for (var code = 2601; code <= 2621; code++) {
+    var exists = false;
+    for (var key in HS6) {
+      if (key.substr(0, 4) == code) {
+        exists = true;
+        break;
+      }
+    }
+    if (!exists) {
+      HS6[code] = MINING;
+    }
+  }
 }
 
 function getCommodity(code) {
@@ -115,44 +138,6 @@ async.waterfall([
         });
       });
     });
-
-    done(null, result);
-  },
-  function consolidate(result, done) {
-
-    var matched = {};
-
-    // Create 'All' commodity
-    result.forEach(function(value){
-      var keyString = value.State + '-' + value.Year;
-
-      // Don't include 'Total' in the sum of all
-      if (value.Commodity !== 'Total') {
-
-        if (matched[keyString]) {
-          matched[keyString].Value += value.Value;
-          matched[keyString].Share += value.Share;
-
-        } else {
-          matched[keyString] = {
-            Value:      value.Value,
-            Share:      value.Share,
-            Commodity:  'All',
-            Resource:   'All',
-            State:      value.State,
-            HS6:        '0',
-            Resource:   'other',
-            Year:       value.Year
-          }
-        }
-      }
-    });
-
-    var matches = Object.keys(matched).map(function (key) {
-      return matched[key];
-    });
-
-    result = result.concat(matches);
 
     done(null, result);
   }

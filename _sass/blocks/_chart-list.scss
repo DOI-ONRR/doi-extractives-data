@@ -23,6 +23,18 @@
     margin-bottom: $base-padding-base;
     min-height: 40px;
     padding-top: 2.5rem;
+
+
+    @include respond-to(small-down) {
+      span {
+        width: 100%;
+      }
+
+      .bar-chart-icon {
+
+      }
+    }
+
   }
 
   .chart-list-intro {

@@ -73,6 +73,10 @@ eiti-bar-chart {
   .tick-hover text {
     font-weight: $weight-book;
   }
+
+  &.bar-chart-icon {
+    width: 60px;
+  }
 }
 
 .eiti-bar-chart-x-value,

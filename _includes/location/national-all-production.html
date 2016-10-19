@@ -39,9 +39,20 @@
       {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
 
+
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
-      <h3 class="chart-title"><span>{{ product_name }}</span></h3>
+      <h3 class="chart-title">
+        <span>{{ product_name }}</span>
+        <eiti-bar-chart
+          data='{{ production_values | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ long_units }}"
+          is-icon="true"
+          class="bar-chart-icon">
+        </eiti-bar-chart>
+      </h3>
 
       <figure class="chart">
         <eiti-bar-chart

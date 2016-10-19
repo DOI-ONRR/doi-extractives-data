@@ -39,10 +39,13 @@
       update(this.value);
     });
 
-    charts.selectAll('g.bar')
+
+    if (!charts.attr('is-icon') || charts.attr('updates-disabled')) {
+      charts.selectAll('g.bar')
       .on('click.year', function(d) {
         update(d.x);
       });
+    }
   };
 
   var detached = function() {

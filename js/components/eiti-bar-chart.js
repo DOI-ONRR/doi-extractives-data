@@ -5,7 +5,7 @@
   var DATA = '__es_data__';
   var X = '__es_x__';
 
-  var observedAttributes = ['x-range', 'data', 'x-value', 'data-units'];
+  var observedAttributes = ['x-range', 'data', 'x-value', 'data-units', 'is-icon'];
 
   // global dimensions
   var width = 300;
@@ -38,12 +38,24 @@
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
-    var svg = d3.select(this)
-      .append('svg')
-        .attr('viewBox', [0, 0, width, fullHeight].join(' '));
 
-    svg.append('g')
+    var root = d3.select(this);
+    var isIcon = root.attr('is-icon');
+
+    var svgHeight = isIcon
+      ? height
+      : fullHeight;
+
+    console.log('svgHeight', svgHeight)
+
+    var svg = root.append('svg')
+      .attr('viewBox', [0, 0, width, svgHeight].join(' '));
+
+
+    if (!isIcon) {
+      svg.append('g')
       .attr('class', 'axis x-axis');
+    }
 
     observedAttributes.forEach(function(attr) {
       if (this.hasAttribute(attr)) {
@@ -61,7 +73,11 @@
         this.data = JSON.parse(value);
         break;
       case 'x-value':
+        console.log('value change', value)
         this.x = value;
+        break;
+      case 'is-icon':
+        this.isIcon = value;
         break;
     }
   };
@@ -70,7 +86,9 @@
   };
 
   var update = function() {
-
+    var isIcon = d3.select(this).attr('is-icon');
+    console.log('isIcon', isIcon)
+    this.isIcon = d3.select(this).attr('is-icon');
     // conditional used as proxy for having an extent line
     if (!this.hasAttribute('data-units')) {
       top = extentlessHeight;
@@ -79,7 +97,6 @@
 
     var data = this.data;
     var values = data;
-
     if (Array.isArray(data)) {
       values = d3.nest()
         .key(function(d) { return d.x; })
@@ -90,11 +107,11 @@
         map[key] = {x: +key, y: data[key]};
         return map;
       }, {});
+
       data = Object.keys(data).map(function(key) {
         return {x: +key, y: data[key]};
       });
     }
-
 
     var xrange = this.xrange;
 
@@ -182,15 +199,21 @@
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
-    selection.call(updateSelected, this.x);
+    // selection.call(updateSelected, this.x);
 
-    bars.on('mouseover', function(d) {
-      selection.call(updateSelected, d.x, true);
-    }, true);
+    // if bars are simply an icon, don't handle mouse events
+    // as the bars will be too small!
+    if (!isIcon) {
+      bars.on('mouseover', function(d) {
+        selection.call(updateSelected, d.x, true);
+      }, true);
 
-    svg.on('mouseout', function() {
-      selection.call(updateSelected, self.x);
-    }, true);
+      svg.on('mouseout', function() {
+        selection.call(updateSelected, self.x);
+      }, true);
+    }
+
+
 
     var axis = d3.svg.axis()
       .orient('bottom')
@@ -202,15 +225,17 @@
         return '’' + String(x).substr(2);
       });
 
-    svg.append('g')
+    if (!isIcon) {
+      svg.append('g')
       .attr('class', 'x-axis-baseline')
       .append('line')
         .attr('x1', 0)
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, bottom] + ')');
+    }
 
     // conditional used as proxy for having an extent line
-    if (this.hasAttribute('data-units') && +ymax > 0) {
+    if (this.hasAttribute('data-units') && +ymax > 0 && !isIcon) {
       var extentLine = svg.append('g')
         .attr('class', 'extent-line');
 
@@ -262,6 +287,12 @@
 
     xAxis.selectAll('path, line')
         .attr('fill', 'none');
+
+    // if the bars are an icon, set instantiated to true so that
+    // the bars no longer update
+    if (isIcon) {
+      this.instantiated = true;
+    }
   };
 
   var formatUnits = function(text, units) {
@@ -283,6 +314,7 @@
   };
 
   var updateSelected = function(selection, x, hover) {
+    console.log('updateSelected')
     var index;
     var value = {x: x, y: undefined};
 
@@ -353,6 +385,7 @@
         detachedCallback: {value: detached},
 
         update: {value: update},
+        instantiated: {value: false},
 
         data: {
           get: function() {
@@ -369,6 +402,8 @@
             return this[X];
           },
           set: function(x) {
+            console.log('x', x)
+            console.log('-------')
             x = +x;
             if (x !== this.x) {
               this[X] = x;

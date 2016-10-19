@@ -13,7 +13,13 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Production on federal waters in the {{ region_title }}</h3>
+    {% assign header_text = 'Production on federal waters in the {{ region_title }}' | liquify %}
+    {%
+      include sticky-header.html
+      header_text=header_text
+      selector=true
+      year_range=year_range
+    %}
 
     {% if federal_products_num == 0 %}
       <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the {{ region_title }} in {{ year }}.</p>

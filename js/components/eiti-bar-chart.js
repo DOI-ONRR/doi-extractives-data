@@ -38,9 +38,10 @@
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
-
+    var self = this;
     var root = d3.select(this);
     var isIcon = root.attr('is-icon');
+    var uniqueId =  Math.random() * 10e6;
 
     var svgHeight = isIcon
       ? height
@@ -64,15 +65,22 @@
 
     var disableComponent = function() {
       var windowWidth = d3.select(window).node().outerWidth || window.clientWidth;
-      if (windowWidth < 768) {
-        console.log('----------window is small', root)
+      console.log(windowWidth, root.attr('is-icon'))
+      if (windowWidth < 600 && !root.attr('is-icon')) {
+        console.log('----------window is small and bars is not an icon', root)
         root.attr('updates-disabled', true);
+      } else if (windowWidth >= 600 && root.attr('is-icon')) {
+        console.log('----------window is large and bars is an icon', root)
+        root.attr('updates-disabled', true);
+      } else {
+        // null value will remove the attribute
+        root.attr('updates-disabled', null);
       }
     }
 
     disableComponent();
 
-    d3.select(window).on('resize', eiti.util.throttle(disableComponent), 100);
+    d3.select(window).on('resize.component' + uniqueId, disableComponent);
   };
 
   var attributeChanged = function(name, previous, value) {
@@ -84,7 +92,6 @@
         this.data = JSON.parse(value);
         break;
       case 'x-value':
-        console.log('value change', value)
         this.x = value;
         break;
       case 'is-icon':
@@ -99,7 +106,6 @@
   var update = function() {
     var root = d3.select(this);
     var isIcon = root.attr('is-icon');
-    console.log('isIcon', isIcon)
     // conditional used as proxy for having an extent line
     if (!this.hasAttribute('data-units')) {
       top = extentlessHeight;
@@ -418,8 +424,6 @@
             return this[X];
           },
           set: function(x) {
-            console.log('x', x)
-            console.log('-------')
             x = +x;
             if (x !== this.x) {
               this[X] = x;

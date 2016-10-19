@@ -64,6 +64,12 @@
       @include span-columns(4);
     }
 
+    @include respond-to(small-down) {
+      figure {
+        // display: none;
+      }
+    }
+
     border-top: none;
     display: flex;
     flex-direction: column;

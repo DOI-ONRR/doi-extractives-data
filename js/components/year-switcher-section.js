@@ -36,16 +36,18 @@
     };
 
     select.on('change.year', function() {
-      update(this.value);
+      if (!charts.attr('updates-disabled')) {
+        update(this.value);
+      }
     });
 
-
-    if (!charts.attr('is-icon') || charts.attr('updates-disabled')) {
-      charts.selectAll('g.bar')
+    charts.selectAll('g.bar')
       .on('click.year', function(d) {
-        update(d.x);
+        if (!charts.attr('is-icon') && !charts.attr('updates-disabled')) {
+          update(d.x);
+        }
       });
-    }
+
   };
 
   var detached = function() {

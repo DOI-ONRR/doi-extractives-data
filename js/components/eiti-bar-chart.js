@@ -46,8 +46,6 @@
       ? height
       : fullHeight;
 
-    console.log('svgHeight', svgHeight)
-
     var svg = root.append('svg')
       .attr('viewBox', [0, 0, width, svgHeight].join(' '));
 
@@ -62,6 +60,19 @@
         attributeChanged.call(this, attr, null, this.getAttribute(attr));
       }
     }, this);
+
+
+    var disableComponent = function() {
+      var windowWidth = d3.select(window).node().outerWidth || window.clientWidth;
+      if (windowWidth < 768) {
+        console.log('----------window is small', root)
+        root.attr('updates-disabled', true);
+      }
+    }
+
+    disableComponent();
+
+    d3.select(window).on('resize', eiti.util.throttle(disableComponent), 100);
   };
 
   var attributeChanged = function(name, previous, value) {
@@ -86,9 +97,9 @@
   };
 
   var update = function() {
-    var isIcon = d3.select(this).attr('is-icon');
+    var root = d3.select(this);
+    var isIcon = root.attr('is-icon');
     console.log('isIcon', isIcon)
-    this.isIcon = d3.select(this).attr('is-icon');
     // conditional used as proxy for having an extent line
     if (!this.hasAttribute('data-units')) {
       top = extentlessHeight;
@@ -205,11 +216,16 @@
     // as the bars will be too small!
     if (!isIcon) {
       bars.on('mouseover', function(d) {
-        selection.call(updateSelected, d.x, true);
+        if (!root.attr('updates-disabled')) {
+          selection.call(updateSelected, d.x, true);
+        }
+
       }, true);
 
       svg.on('mouseout', function() {
-        selection.call(updateSelected, self.x);
+        if (!root.attr('updates-disabled')) {
+          selection.call(updateSelected, self.x);
+        }
       }, true);
     }
 

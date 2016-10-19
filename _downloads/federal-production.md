@@ -42,13 +42,23 @@ most recent completed fiscal and calendar year.
 
 ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act.
 
-
 * "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level
 * All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)
 
 ### Why aren’t national totals equal to the sum of all state totals?
 
 In some cases, national totals include amounts that are {{ "withheld" | term }} at the state or county level.
+
+### Why is geothermal energy listed so many times?
+
+We can only compare production that is reported in the same unit. The standard unit of measurement for geothermal energy in the federal production dataset is kilowatt hours, but there are a few counties that report it differently. We have separate charts for each of these counties, because they report in nonstandard units:
+
+* Dona Ana County, NM reports direct use of geothermal resources in _million gallons_
+* Churchill County, NV reports direct use of geothermal resources in _hundred gallons_
+* Lassen County, CA reports direct use of geothermal resources in _million BTUs_
+* Lassen County, CA reports geothermal energy generation as _other_ (no unit)
+* Lake County, CA; Sonoma County, CA; and Beaver County, UT report geothermal energy generation in _thousand pounds_
+* Inyo County, CA reports sulfur from geothermal resources as _sulfur_ (no unit)
 
 ### A note about “Mixed Exploratory” versus “Federal” categories of production
 

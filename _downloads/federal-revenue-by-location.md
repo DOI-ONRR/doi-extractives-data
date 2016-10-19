@@ -56,6 +56,16 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 Our site has two federal revenue datasets. The one on this page is organized by location. [This one]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 
+### Note: Geothermal rate details
+
+The fees and rates for revenue from geothermal resources on federal land depend on whether the land is leased competitively or noncompetitively.
+
+Also, different fee rates apply to pre-2005 leases and to direct use facilities: 
+
+* For leases signed before the Energy Policy Act of 2005, the lessee’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
+* For {{ "direct use" | term_end }}, the lessee pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lessee at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
+
+The Bureau of Land Management has [more information about geothermal energy on federal lands](http://www.blm.gov/wo/st/en/prog/energy/geothermal.html).
 
 ## Offshore data dictionary
 

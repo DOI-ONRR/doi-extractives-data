@@ -72,7 +72,7 @@
               return pixelize(svgMap.node().getBoundingClientRect().height);
             });
           } else {
-            console.warn('cannot resize svg county map because it doesn\'t exist');
+            console.warn('cannot resize svg map because it doesn\'t exist');
           }
         }},
 

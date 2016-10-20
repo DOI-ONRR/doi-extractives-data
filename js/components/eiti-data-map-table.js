@@ -115,7 +115,7 @@
       maps.each(function () {
         this.cropMap();
       });
-    }
+    };
 
     chartRows.on('click.countyTable', toggleMap);
     chartRows.on('mouseover.countyTable', mouseMap);

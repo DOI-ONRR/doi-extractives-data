@@ -9,6 +9,7 @@
   require('../components/year-switcher-section.js');
   require('../components/eiti-data-map-table.js');
   require('../components/eiti-tooltip-wrapper.js');
+  require('../components/ownership-map.js');
 
   require('../components/aria-tabs.js');
 

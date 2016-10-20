@@ -1,7 +1,9 @@
 (function() {
 
   var pixelize = function(value) {
-    return value + 'px';
+    return String(value).match(/px/)
+      ? value
+      : value + 'px';
   };
 
   var attached = function() {

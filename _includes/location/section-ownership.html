@@ -12,7 +12,7 @@
   {% endif %}
 
   <aside class="map-container" style="width: 100%;">
-    <figure>
+    <figure is="ownership-map">
       <div class="svg-container county map-container wide"{% if __viewbox %}
         style="padding-bottom: {{ __viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
         <svg class="county ownership map state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>

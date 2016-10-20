@@ -16,22 +16,31 @@
   {% assign _viewbox_list = _viewbox | split: ' ' | to_f %}
   {% assign breakpoint_width = _viewbox_list[2] %}
   {% assign _height = _viewbox_list[3] %}
-  {% assign breakpoint_height = _viewbox_list[3] | times:2.5 %}
+  {% assign breakpoint_height = _viewbox_list[3] | times: 2.5 %}
   {% capture is_wide %}
     {% if breakpoint_width > breakpoint_height %}wide{% endif %}
   {% endcapture %}
   {% assign is_wide = is_wide | strip %}
 {% endif %}
 
-{% if is_wide != 'wide' %}
-  {% assign _width = 65.88078 | to_f %}
+{% capture data_dimensions %}
+  {{ _height | divided_by:breakpoint_width | to_f }}
+{% endcapture %}
+
+{% if is_wide == 'wide' %}
+  {% assign media_width = 100 %}
+{% else %}
+  {% assign media_width = 65.88078 | to_f %}
 {% endif %}
+
+{% assign additional_padding = data_dimensions | times: 1.8 %}
+{% assign padding_bottom = media_width | times: data_dimensions | plus: additional_padding %}
 
 <div is="eiti-tooltip-wrapper"
      tooltip-style="subtle"
      cursor-offset="10"
      class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
-  style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
+  style="padding-bottom: {{ padding_bottom }}%;"{% endif %} data-dimensions="{{ _height | divided_by: breakpoint_width }}">
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
     {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
     {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
@@ -133,24 +142,25 @@
 
   <svg class="legend-svg"></svg>
 
-  {% if include.toggle %}
-    <h4 class="details-container">
-      <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}"
-        aria-expanded="false">
-          <span class="hide-expanded">
-            <i class="icon icon-plus-sm"></i>
-            {% if include.toggle_text %}
-              {{ include.toggle_text_hidden }}
-            {% else %}Show table{% endif %}
-          </span>
-          <span class="show-expanded">
-            <i class="icon icon-dash-sm"></i>
-            {% if include.toggle_text %}
-              {{ include.toggle_text_visible }}
-            {% else %}Hide table{% endif %}
-          </span>
-      </button>
-    </h4>
-  {% endif %}
 </div>
+
+{% if include.toggle %}
+  <h4 class="details-container">
+    <button is="aria-toggle"
+      aria-controls="{{ include.toggle }}"
+      aria-expanded="false">
+        <span class="hide-expanded">
+          <i class="icon icon-plus-sm"></i>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_hidden }}
+          {% else %}Show table{% endif %}
+        </span>
+        <span class="show-expanded">
+          <i class="icon icon-dash-sm"></i>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_visible }}
+          {% else %}Hide table{% endif %}
+        </span>
+    </button>
+  </h4>
+{% endif %}

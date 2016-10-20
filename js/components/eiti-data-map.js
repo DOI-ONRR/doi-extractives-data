@@ -35,7 +35,7 @@
             this.isWideView = true;
           }
           this.update('init');
-          this.cropMap()
+          this.cropMap();
         }},
 
         setYear: {value: function(year) {
@@ -68,14 +68,11 @@
           var svgContainer = root.select('.svg-container');
 
           if (!svgMap.empty() && !svgContainer.empty()) {
-            console.log('>>', svgContainer.style('padding-bottom'))
             svgContainer.style('padding-bottom', function() {
-              console.log(svgMap.node().getBoundingClientRect().height)
-
               return pixelize(svgMap.node().getBoundingClientRect().height);
             });
           } else {
-          console.warn('cannot resize svg county map because it doesn\'t exist')
+            console.warn('cannot resize svg county map because it doesn\'t exist');
           }
         }},
 

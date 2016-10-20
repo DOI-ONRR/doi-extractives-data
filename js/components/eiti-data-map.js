@@ -6,6 +6,12 @@
   var WITHHELD_FLAG = 'Withheld';
   var NO_DATA_FLAG = undefined; // jshint ignore:line
 
+  function pixelize(d) {
+    return String(d).match(/px/)
+      ? d
+      : d + 'px';
+  }
+
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
       HTMLElement.prototype,
@@ -29,6 +35,7 @@
             this.isWideView = true;
           }
           this.update('init');
+          this.cropMap()
         }},
 
         setYear: {value: function(year) {
@@ -52,6 +59,24 @@
             .text(year);
 
           this.update();
+        }},
+
+        cropMap: {value: function() {
+          var root = d3.select(this);
+
+          var svgMap = root.select('svg.county.map');
+          var svgContainer = root.select('.svg-container');
+
+          if (!svgMap.empty() && !svgContainer.empty()) {
+            console.log('>>', svgContainer.style('padding-bottom'))
+            svgContainer.style('padding-bottom', function() {
+              console.log(svgMap.node().getBoundingClientRect().height)
+
+              return pixelize(svgMap.node().getBoundingClientRect().height);
+            });
+          } else {
+          console.warn('cannot resize svg county map because it doesn\'t exist')
+          }
         }},
 
         detectWidth: {value: function() {
@@ -281,21 +306,46 @@
           // end horizontal legend shift
 
           // start trim height on map container
-          var svgContainer = d3.select(this)
-            .selectAll('.svg-container[data-dimensions]')
-            .datum(function() {
-              var multiplier = this.classList.contains('wide')
-                ? 100 + 9
-                : 65.88078 + 10;
+          // var svgContainer = d3.select(this)
+          //   .selectAll('.svg-container[data-dimensions]')
+          //   .datum(function() {
+          //     var multiplier = this.classList.contains('wide')
+          //       ? 100
+          //       : 65.88078;
 
-              return +this.getAttribute('data-dimensions') * multiplier;
-            });
+          //     return (+this.getAttribute('data-dimensions') * multiplier) + 1.8;
+          //   });
 
-          function percentage(d) {
-            return d + '%';
-          }
+          // function percentage(d) {
+          //   return d + '%';
+          // }
 
-          svgContainer.style('padding-bottom', percentage);
+          // function pixelize(d) {
+          //   return String(d).match(/px/)
+          //     ? d
+          //     : d + 'px';
+          // }
+
+          // var cropMaps = function () {
+          //   var svgMap = root.select('svg.county.map');
+          //   var svgContainer = root.select('.svg-container');
+
+          //   if (!svgMap.empty() && !svgContainer.empty()) {
+          //     console.log('>>', svgContainer.style('padding-bottom'))
+          //     svgContainer.style('padding-bottom', function() {
+          //       console.log(svgMap.node().getBoundingClientRect().height)
+
+          //       return pixelize(svgMap.node().getBoundingClientRect().height);
+          //     });
+          //   } else {
+          //   console.warn('cannot resize svg county map because it doesn\'t exist')
+          //   }
+          // }
+          // // svgContainer.style('padding-bottom', percentage);
+
+
+
+          // d3.select(window).on('resize.crops', cropMaps);
           // end trim
           if (init) {
             this.setYear('2015');

@@ -103,9 +103,12 @@ data-map {
 
 // map legend
 .details-container {
-  bottom: 0;
+  display: block;
   margin: 0;
-  position: absolute;
+
+  button {
+    margin-top: $base-padding-lite;
+  }
 }
 
 eiti-data-map {
@@ -149,7 +152,7 @@ eiti-data-map {
 
 .legend-svg {
   border: none;
-  height: auto;
+  height: 116px;
   padding: 0;
   width: 100%;
 

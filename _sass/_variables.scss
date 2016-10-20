@@ -160,3 +160,7 @@ $greener-land-lightness-bump: lightness($green-land) * $opacity-state;
 $greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
 $greener-land: darken($green-land, $greener-land-lightness-bump);
 $greenest-land: darken($green-land, $greenest-land-lightness-bump);
+
+
+// SVG
+$svg-map-padding: 3.6%;

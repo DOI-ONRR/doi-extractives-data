@@ -278,7 +278,7 @@
 
       &.wide {
         @include span-columns(12);
-        height: 43px;
+        max-height: 60px;
         margin-top: $base-padding-lite;
         padding: 0;
 

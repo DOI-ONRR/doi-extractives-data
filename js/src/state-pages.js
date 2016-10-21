@@ -22,5 +22,6 @@
   var OpenListNav = require('../components/open-list-nav.js');
   exports.openListNav = new OpenListNav();
 
+  require('../blocks/state-pages-events.js');
 })(window);
 

@@ -13,6 +13,12 @@
     padding-bottom: $base-padding-jumbo;
   }
 
+  .chart-title-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
   .chart-title,
   .chart-title-small,
   .chart-title-large {
@@ -34,8 +40,16 @@
   }
 
   .chart-title-small {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
     @include respond-to(small-up) {
       display: none;
+    }
+
+    span {
+      text-align: left;
     }
   }
 

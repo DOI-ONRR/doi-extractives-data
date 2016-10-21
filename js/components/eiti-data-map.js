@@ -183,7 +183,8 @@
           shapePadding,
           shapeMargin;
 
-          var colors = colorbrewer[scheme][steps];
+          var colors = ['#dcf4fc', '#a1d4ed', '#3d85bd', '#086996'];
+
           if (!colors) {
             return console.error(
               'bad # of steps (%d) for color scheme:', steps, scheme

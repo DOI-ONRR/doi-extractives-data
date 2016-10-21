@@ -2,21 +2,19 @@
 
 ## What
 
-Germany earns revenue on natural resources extracted from its Federal lands, both onshore and offshore. This is a major source of revenue for both the country and local municipalities, and includes revenue from resources such as oil, gas, coal and geothermals.
+Germany extracts natural resources such as oil, gas or building materials on its lands. This economic activity is a source of revenue for the country, the federal states (Bundesländer) as well as for local municipalities.
 
-This repository contains the code for https://www.d-eiti.de/data/, which is a website that includes both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
+This repository contains the code for http://www.rohstofftransparenz.de/en/, which is a website that includes both content information as well as visualized and raw data on the German extractive sector. The website provides a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications. The repository contains a bilingual realization of the website and builds on the open source code from the U.S. EITI implementation.  
 
 ## Why
 
-This effort is part of the President’s [Open Government Partnership National Action Plan](http://www.whitehouse.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan), which commits the U.S. to ensuring that taxpayers are receiving every dollar due for extraction of the U.S.’s natural resources.
+This effort is part of the German implementation of the international standard called the [Extractive Industries Transparency Initiative (EITI)](https://eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the German process of implementing the EITI standard, see the [D-EITI homepage](https://www.d-eiti.de/en/).
 
-The U.S. also recently became a part of an international standard called the [Extractive Industries Transparency Initiative (EITI)](http://www.eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the U.S. process of implementing the EITI standard, see the [USEITI homepage](http://www.doi.gov/eiti). The U.S. will be the first developed country to sign on to and follow the standard.
+
+Until Germany publishes its first EITI report in August 2017 the website http://www.rohstofftransparenz.de/en/ will constantly growing content and data wise.
 
 ## About this website
-This is the development branch of the [D-EITI] (https://www.d-eiti.de/) site,
-a fork of the [US EITI](https://github.com/18F/doi-extractives-data) site, most of the
-source code was re-used and some was newly implemented, to see a journal of the technical
-challenges we faced performing this adaptation see [journal.md](https://github.com/PfeffermindGames/doi-extractives-data/blob/dev/journal.md).
+This is the development of the D-EITI report website, a fork of the [D-EITI homepage] (https://www.d-eiti.de/). Most of the source code was re-used and some was newly implemented, to see a journal of the technical challenges we faced performing this adaptation see [journal.md](https://github.com/PfeffermindGames/doi-extractives-data/blob/dev/journal.md).
 
 ## Data
 The [data catalog](https://github.com/PfeffermindGames/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.

@@ -15,7 +15,7 @@ svg.map {
   @include svg-use('.mesh') {
     fill: none;
     pointer-events: none;
-    stroke: $neutral-gray;
+    stroke: $gray-light;
     stroke-width: 0.5;
   }
 

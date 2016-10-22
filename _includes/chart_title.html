@@ -4,7 +4,10 @@
           aria-controls="{{ chart_toggle }}"
           class="chart-title-button">
     <span class="hide-expanded chart-title-small">
-      <span>{{ include.chart_name }}</span>
+      <span>
+        {{ include.chart_name }}
+        {% if include.chart_units_title %} ({{ include.chart_units_title }}){% endif %}
+      </span>
       <eiti-bar-chart
         data='{{ include.chart_values | jsonify }}'
         x-range="{{ include.year_range | default: year_range }}"
@@ -15,7 +18,10 @@
       </eiti-bar-chart>
     </span>
     <span class="show-expanded chart-title-small">
-      <span>{{ include.chart_name }}</span>
+      <span>
+        {{ include.chart_name }}
+        {% if include.chart_units_title %} ({{ include.chart_units_title }}){% endif %}
+      </span>
       <span class="icon-dash-lg"></span>
     </span>
   </button>

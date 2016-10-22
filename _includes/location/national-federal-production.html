@@ -58,16 +58,20 @@
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
+      {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
       <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
 
-        <h4 class="chart-title">
-          <span>
-            {{ product_name }}
-            {% if units_title %} ({{ units_title }}){% endif %}
-          </span>
-        </h4>
+        {%
+          include chart_title.html
+          chart_name=product_name
+          chart_toggle=chart_toggle
+          chart_values=production_values
+          units=long_units
+          is_icon=true
+          chart_units_title=units_title
+        %}
 
-        <figure class="chart">
+        <figure class="chart" id="{{ chart_toggle }}">
           <eiti-bar-chart
             aria-controls="national-federal-production-figures-{{ product_slug }} national-federal-production-withheld"
             data='{{ production_values | jsonify }}'

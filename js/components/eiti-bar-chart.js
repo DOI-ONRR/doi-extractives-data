@@ -61,26 +61,6 @@
         attributeChanged.call(this, attr, null, this.getAttribute(attr));
       }
     }, this);
-
-
-    var disableComponent = function() {
-      var windowWidth = d3.select(window).node().outerWidth || window.clientWidth;
-      console.log(windowWidth, root.attr('is-icon'))
-      if (windowWidth < 600 && !root.attr('is-icon')) {
-        console.log('----------window is small and bars is not an icon', root)
-        root.attr('updates-disabled', true);
-      } else if (windowWidth >= 600 && root.attr('is-icon')) {
-        console.log('----------window is large and bars is an icon', root)
-        root.attr('updates-disabled', true);
-      } else {
-        // null value will remove the attribute
-        root.attr('updates-disabled', null);
-      }
-    }
-
-    disableComponent();
-
-    d3.select(window).on('resize.component' + uniqueId, disableComponent);
   };
 
   var attributeChanged = function(name, previous, value) {

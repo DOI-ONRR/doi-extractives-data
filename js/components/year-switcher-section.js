@@ -5,6 +5,9 @@
 
     var select = root.selectAll('select.chart-selector');
     var charts = root.selectAll('eiti-bar-chart');
+    var nonIconCharts = charts.filter(function () {
+      return !this.hasAttribute('is-icon');
+    })
     var maps = root.selectAll('eiti-data-map');
 
     var mapTables = root.selectAll('.eiti-data-map-table');
@@ -18,13 +21,7 @@
       root.selectAll('.eiti-bar-chart-x-value')
         .text(year);
 
-      var filteredCharts = charts.filter(function() {
-        var chart = d3.select(this);
-        var isDisabled = chart.attr('updates-disabled');
-        var isIcon = chart.attr('is-icon');
-        return !isDisabled;
-      })
-      filteredCharts.property('x', year);
+      nonIconCharts.property('x', year);
       maps.each(function() {
         this.setYear(year);
       });
@@ -42,35 +39,14 @@
     };
 
     select.on('change.year', function() {
-      // var self = this;
-      // charts.each(function() {
-      //   console.log('change year:', !d3.select(this).attr('updates-disabled'))
-      //   var isDisabled = d3.select(this).attr('updates-disabled')
-      //   // if (!isDisabled) {
-      //     console.log('update this:', self)
-      //     update(self.value);
-      //   }
-      // });
       update(this.value);
-      // console.log('change year', charts.attr('updates-disabled'))
-      // if (!charts.attr('updates-disabled')) {
-      //   console.log('update', charts.attr('updates-disabled'))
-
-      // }
     });
 
-    charts.selectAll('g.bar')
-      .on('click.year', function(d) {
-        charts.each(function() {
-          var chart = d3.select(this);
-          var isDisabled = chart.attr('updates-disabled');
-          var isIcon = chart.attr('is-icon');
-          if (!isIcon && !isDisabled) {
-            update(d.x);
-          }
-        });
-      });
 
+    nonIconCharts.selectAll('g.bar')
+      .on('click.year', function(d) {
+        update(d.x);
+      });
   };
 
   var detached = function() {

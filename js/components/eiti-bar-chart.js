@@ -196,22 +196,17 @@
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
-    selection.call(updateSelected, this.x);
+    // selection.call(updateSelected, this.x);
 
     // if bars are simply an icon, don't handle mouse events
     // as the bars will be too small!
     if (!isIcon) {
       bars.on('mouseover', function(d) {
-        if (!root.attr('updates-disabled')) {
-          selection.call(updateSelected, d.x, true);
-        }
-
+        selection.call(updateSelected, d.x, true);
       }, true);
 
       svg.on('mouseout', function() {
-        if (!root.attr('updates-disabled')) {
-          selection.call(updateSelected, self.x);
-        }
+        selection.call(updateSelected, self.x);
       }, true);
     }
 

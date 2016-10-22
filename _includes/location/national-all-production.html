@@ -44,29 +44,14 @@
 
     {% assign chart_toggle = 'all-production-figures-chart-{{ product_slug }}' | liquify %}
 
-      <h3 class="chart-title">
-        <button is="aria-toggle"
-                aria-expanded="false"
-                aria-controls="{{ chart_toggle }}"
-                class="chart-title-button">
-          <span class="hide-expanded chart-title-small">
-            <span>{{ product_name }}</span>
-            <eiti-bar-chart
-              data='{{ production_values | jsonify }}'
-              x-range="{{ year_range }}"
-              x-value="{{ year }}"
-              data-units="{{ long_units }}"
-              is-icon="true"
-              class="bar-chart-icon">
-            </eiti-bar-chart>
-          </span>
-          <span class="show-expanded chart-title-small">
-            <span>{{ product_name }}</span>
-            <span class="icon-dash-lg"></span>
-          </span>
-        </button>
-        <span class="chart-title-large">{{ product_name }}</span>
-      </h3>
+      {%
+        include chart_title.html
+        chart_name=product_name
+        chart_toggle=chart_toggle
+        chart_values=production_values
+        units=long_units
+        is_icon=true
+      %}
 
       <figure class="chart" id="{{ chart_toggle }}">
         <eiti-bar-chart

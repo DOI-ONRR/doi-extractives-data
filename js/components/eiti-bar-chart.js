@@ -196,7 +196,7 @@
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
-    // selection.call(updateSelected, this.x);
+    selection.call(updateSelected, this.x);
 
     // if bars are simply an icon, don't handle mouse events
     // as the bars will be too small!
@@ -316,7 +316,6 @@
   };
 
   var updateSelected = function(selection, x, hover) {
-    console.log('updateSelected')
     var index;
     var value = {x: x, y: undefined};
 

@@ -57,7 +57,7 @@
      */
     toggleAccordion: function (e) {
       var e = e || window.event;
-      var target = e.target || e.srcElement;
+      var target = e.currentTarget || e.target || e.srcElement;
 
       var accordionItem = this.findParentNode('accordion-item', target),
         contentSelector = '#' + target.getAttribute('aria-controls'),

@@ -6,8 +6,16 @@
   padding-right: 0.5em;
 }
 
+.u-padding-bottom-none {
+  padding-bottom: 0;
+}
+
 .u-margin-top {
   margin-top: $base-padding;
+}
+
+.u-margin-bottom {
+  margin-bottom: $base-padding;
 }
 
 .sr-only {
@@ -23,7 +31,6 @@
   margin-bottom: 0;
 }
 
-.u-padding-small_screen {
-  padding-left: $base-padding;
-  padding-right: $base-padding;
+.u-overflow-wrapper {
+  overflow-x: auto;
 }

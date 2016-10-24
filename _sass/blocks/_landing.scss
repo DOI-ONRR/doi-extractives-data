@@ -1,150 +1,111 @@
-.landing-section,
-.landing-section_open {
-  border-bottom: $thin-border-size solid $mid-gray;
-  padding-top: $base-padding;
-  padding-bottom: $base-padding;
+.landing-wrapper {
+  margin-bottom: ($base-padding-extra * 1.4);
 
-  @include respond-to(medium-up) {
-    @include span-columns(5);
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-}
+  a {
+    text-decoration: none;
 
-.landing-section_top {
-  margin-bottom: $base-padding-extra;
-}
-
-.landing-section {
-  @include respond-to(medium-up) {
-    margin-top: $base-padding;
-
-    &:nth-child(even) {
-      @include shift(2);
-    }
-
-    &:nth-child(odd) {
-      @include omega();
-    }
-  }
-}
-
-.landing-section_open {
-  margin-top: $base-padding;
-
-  &.overview {
-    color: $neutral-gray;
-
-    .landing-steps {
-      @include span-columns(12);
-
-      background-color: $light-gray;
-      font-size: 0.9em;
-      padding: $base-padding;
-      text-align: center;
-
-      icon {
-        color: $dark-gray;
-        font-size: 1.2em;
-      }
+    &:hover,
+    &:active {
+      text-decoration: underline;
     }
   }
 
-  @include respond-to(medium-up) {
-    &.overview {
-      @include span-columns(10);
-      @include shift(2);
+  section + section,
+  section:first-of-type {
+    padding-top: 6rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1rem;
+    font-weight: $weight-bold;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    padding-top: 2rem - 0.75rem;
+  }
+
+  .h2-bar {
+    margin-bottom: 0;
+
+    + .landing-section {
+      padding-top: 2rem;
+    }
+
+    + .h3-bar {
+      padding-top: 4rem;
     }
   }
 
-  .landing-heading {
-    display: block;
+  .h3-bar {
+    @include heading('h5');
   }
 }
 
-.landing-oil_gas {
-  background: url('../img/how-it-works/cards/oil-gas.png') bottom left no-repeat;
+.landing-section > div {
+  @include span-columns(12);
+
+  @include respond-to(huge-up) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  p {
+    @include heading('para-md');
+    color: $light-black;
+    margin-bottom: 0;
+
+    + p {
+      margin-top: 0.3em;
+    }
+  }
+
+  svg + p {
+    margin-top: 0.3em;
+  }
 }
 
-.landing-coal {
-  background: url('../img/how-it-works/cards/coal.png') bottom left no-repeat;
-}
-
-.landing-minerals {
-  background: url('../img/how-it-works/cards/minerals.png') bottom left no-repeat;
-}
-
-.landing-renewables {
-  background: url('../img/how-it-works/cards/renewables.png') bottom left no-repeat;
+.landing-section + .h3-bar {
+  padding-top: 4rem;
 }
 
 .landing-oil_gas,
 .landing-coal,
 .landing-minerals,
 .landing-renewables {
-  background-size: 100%;
-  height: 230px;
+  svg {
+    float: right;
+    margin-right: 20px;
+    
+    path {
+      fill: $neutral-gray;
+    }
+  }
 
   p {
-    width: 63%;
-    padding-top: $base-padding;
-  }
-
-  @include respond-to(medium-up) {
-    height: 200px;
+    float: left;
+    width: 57%;
   }
 }
 
-.landing-oil_gas-wrapper,
-.landing-minerals-wrapper,
-.landing-coal-wrapper,
-.landing-renewables-wrapper {
-  .landing-heading {
-    margin-bottom: -($base-padding-lite * 1.8);
+.landing-minerals {
+  svg {
+    margin-top: 46px;
   }
 }
 
-.landing-oil_gas-wrapper,
-.landing-minerals-wrapper {
-  @include respond-to(medium-up) {
-    @include shift(2);
+.landing-coal {
+  svg {
+    margin-right: 0;
+    margin-top: 30px;
   }
 }
 
-.landing-coal-wrapper,
-.landing-renewables-wrapper {
-  @include respond-to(medium-up) {
-    @include omega();
-  }
-}
+.landing-intro_link {
+  margin-bottom: 0.36rem;
 
-
-.landing-section_category {
-  border-bottom: 2px solid $mid-gray;
-  margin-bottom: 0;
-  margin-top: $base-padding-jumbo;
-  padding-bottom: $base-padding-lite;
-}
-
-.landing-heading,
-.landing-heading a {
-  display: inline;
-}
-
-.landing-description {
-  @include heading('para-md');
-  color: $light-black;
-  margin-bottom: 0;
-}
-
-.landing-image {
-  width: 100%;
-}
-
-.landing-wrapper {
-  margin-bottom: ($base-padding-extra * 1.4);
-
-  [accordion-button] {
-    margin-top: -1px;
+  + p {
+    font-size: 1em;
   }
 }

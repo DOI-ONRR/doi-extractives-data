@@ -1,0 +1,109 @@
+all_production:
+  '2015':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1103110.61
+      rank: 5
+      percent: 5.05
+federal_production:
+  '2006':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1033552
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 77042758
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1051414
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 77634336
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1302106
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 727818
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 863018
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 58657456
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1023256
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 55764462
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1165138
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 53569932
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1115998
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 855920
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 776360
+      rank: 4
+      percent: 0

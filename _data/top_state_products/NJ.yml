@@ -1,0 +1,43 @@
+all_production:
+  '2008':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 2669
+      rank: 5
+      percent: 0.31
+  '2009':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 10707
+      rank: 5
+      percent: 1.2
+  '2010':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 21083.82
+      rank: 5
+      percent: 1.74
+  '2012':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 304326.04
+      rank: 5
+      percent: 7.03
+  '2013':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 437408.78
+      rank: 4
+      percent: 4.84
+  '2015':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 824252.74
+      rank: 5
+      percent: 3.11

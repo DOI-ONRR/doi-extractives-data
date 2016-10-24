@@ -1,0 +1,34 @@
+{% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
+{% assign states_svg = '/maps/states/all.svg' %}
+{% assign offshore_svg = '/maps/offshore/all.svg' %}
+
+<div is="eiti-tooltip-wrapper" class="state svg-container map-container wide"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
+  <svg class="states map{% if include.case_studies %} case_studies {% endif %}{% if include.ownership %} ownership {% endif %}{% if include.no_outline %} no-outlines {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+
+    {% if include.offshore_regions != false %}
+      {%
+        include maps/offshore-regions.html
+        svg=offshore_svg
+        areas=include.offshore_regions
+        value=include.value
+        href=include.href
+      %}
+    {% endif %}
+
+    {% if include.states != false %}
+      {%
+        include maps/state-areas.html
+        svg=states_svg
+        states=include.states
+        value=include.value
+        href=include.href
+        no_ownership=include.case_studies
+      %}
+    {% endif %}
+
+    {% if include.case_studies %}
+      {% include case-studies/_points-of-interest.html %}
+    {% endif %}
+
+  </svg>
+</div>

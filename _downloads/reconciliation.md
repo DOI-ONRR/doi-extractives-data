@@ -8,7 +8,7 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published.
+> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. This is calendar year 2013 data.
 
 Download calendar year data:
 
@@ -19,13 +19,13 @@ Download calendar year data:
 
 ## Background
 
-To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the {{ "IA" | term_end:"independent administrator (IA)" }}. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.
+To implement the {{ "EITI Standard" | term_end}}, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the {{ "IA" | term_end:"independent administrator (IA)" }}. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.
 
-Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the {{ "Multi-Stakeholder Group" | term:"multi-stakeholder group"}} (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).
+Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the {{ "Multi-Stakeholder Group (MSG)" | term }} asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).
 
 ## Reconciliation Results
 
-When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.
+When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the {{ "margin of variance" | term_end }}. The IA worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.
 
 Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.[^1]
 
@@ -37,7 +37,7 @@ Of the 45 companies that were asked to participate, 31 reported DOI revenue and 
 
 Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.
 
-After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.
+After the IA compared and reconciled the government revenue streams with company payments, 17 {{ "material variances" | term }} remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.
 
 ## Scope
 
@@ -264,7 +264,7 @@ The table below outlines the Margin of Variance thresholds applied by the IA, wh
   </tr>
 </table>
 
-Where variances were greater than the Margin of Variance thresholds, the IA requested additional transaction-level details from the government entity and reporting company and attempted to identify potential sources of the variance.
+Where variances were greater than margin of variance thresholds, the IA requested additional transaction-level details from the government entity and reporting company and attempted to identify potential sources of the variance.
 
 After reviewing the data provided by both the government entity and the reporting company, if the IA was able to identify the potential source of the variance, the IA provided an explanation. If the IA was not able to identify the potential source of the variance, the IA provided an explanation that the source of the variance could not be resolved.
 
@@ -272,4 +272,3 @@ Both reporting companies and government entities were given the opportunity to r
 
 
 [^1]: Out of the 45 companies invited to participate, a maximum of 41 are C-corporations. Only C-corporations are eligible to report taxes.
-

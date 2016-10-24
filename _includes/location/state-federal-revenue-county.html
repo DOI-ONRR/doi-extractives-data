@@ -1,0 +1,86 @@
+{% assign county_revenue = include.county_revenue %}
+{% assign state_revenue = include.state_revenue %}
+{% assign state_revenue_all = state_revenue.All %}
+{% assign current_revenue = state_revenue_all[year].revenue %}
+{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
+
+<section id="federal-revenue-county" class="product full-width">
+
+  <div class="row-container">
+
+    <div class="chart-container">
+
+      <h4 class="chart-title">
+        <span>All commodities</span>
+      </h4>
+
+      <figure class="chart">
+        <eiti-bar-chart
+          aria-controls="federal-revenue-county-figures-All"
+          data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="$,">
+        </eiti-bar-chart>
+        <figcaption id="federal-revenue-county-figures-All">
+          <span class="caption-data">
+            Companies paid
+            <span class="eiti-bar-chart-y-value" data-format="$,">${{ current_revenue | intcomma }}</span>
+            to produce natural resources on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          </span>
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data about revenue from natural resource production on federal land in {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+          </span>
+        </figcaption>
+      </figure>
+    </div><!-- /.chart-container -->
+
+    <div class="map-container">
+
+      <h4 class="chart-title">
+        <span>Revenue collected by {{ locality_name }}</span>
+      </h4>
+
+
+      {% capture toggle %}federal-revenue-All-counties{% endcapture %}
+      <figure is="eiti-data-map-table">
+        {% capture value_key %}revenue.{{ year }}{% endcapture %}
+        {% capture years_key %}revenue{% endcapture %}
+        {% assign _width ='inherit' %}
+        {% capture caption %}{{ locality_name }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
+
+        <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}" format="$">
+
+          {%
+            include county-map.html
+            state=state_id
+            counties=county_revenue
+            value=value_key
+            years=years_key
+            steps=steps
+            inherit_width=true
+            caption=caption
+            toggle=toggle
+            year=year
+          %}
+        </eiti-data-map>
+
+        <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+          {%
+            include location/display-federal-revenue-county.html
+            year=year
+            values=county_revenue
+            caption=caption
+            scrollable=true
+          %}
+        </div><!-- /.table-container -->
+      </figure>
+
+
+
+    </div><!-- /.map-container -->
+
+  </div><!-- /.row-container -->
+
+</section>

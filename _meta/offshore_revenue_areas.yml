@@ -1,0 +1,4 @@
+'{area_id}':
+  name: '{area_name}'
+  revenue:
+    '{year}': '{revenue}'

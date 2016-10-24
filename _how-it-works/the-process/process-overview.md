@@ -5,7 +5,7 @@ permalink: /how-it-works/process-overview/
 ---
 
 <section class="slab-delta">
-	<div class="container-outer container-padded">
+	<div class="container-page-wrapper container-padded">
 
 	  <h5><a href="{{site.baseurl}}/how-it-works/">How It Works</a> /</h5>
 	  <h1>Process Overview</h1>

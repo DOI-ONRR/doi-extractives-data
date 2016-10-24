@@ -1,0 +1,128 @@
+all_production:
+  '2014':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2754792.57
+      rank: 4
+      percent: 6.51
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1097010.68
+      rank: 5
+      percent: 5.07
+  '2015':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3005392.74
+      rank: 4
+      percent: 7.1
+federal_production:
+  '2006':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6393556
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5417308
+      rank: 5
+      percent: 0
+  '2010':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4921644
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4722432
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 4522674
+      rank: 5
+      percent: 0
+revenue:
+  '2006':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 18679
+      rank: 3
+      percent: 0.21
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 79274.96
+      rank: 2
+      percent: 0.53
+  '2008':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 90992.58
+      rank: 2
+      percent: 0.5
+  '2009':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 111247.08
+      rank: 2
+      percent: 1.35
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 122928.1
+      rank: 2
+      percent: 0.92
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 106921.22
+      rank: 2
+      percent: 0.69
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 142168.22
+      rank: 2
+      percent: 1.18
+  '2013':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 62882.01
+      rank: 3
+      percent: 0.66
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 35205.74
+      rank: 3
+      percent: 0.32
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 7349.06
+      rank: 3
+      percent: 0.07

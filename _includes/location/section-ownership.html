@@ -1,0 +1,60 @@
+{% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+{% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
+
+<section class="container land-ownership">
+
+  <h3 class="title-land-ownership">Land ownership</h3>
+
+  {% assign __viewbox = site.data.viewboxes_cropped[state_id] %}
+
+  {% if __viewbox['ownership'] %}
+    {% assign __viewbox = __viewbox['ownership'] %}
+  {% endif %}
+
+  <aside class="map-container" style="width: 100%;">
+    <figure is="ownership-map">
+      <div class="svg-container county map-container wide"{% if __viewbox %}
+        style="padding-bottom: {{ __viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
+        <svg class="county ownership map state-page"{% if __viewbox %} viewBox="{{ __viewbox }}"{% endif %}>
+          <g class="states features">
+            {% if page.neighbors %}
+              {% for neighbor in page.neighbors %}
+            <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+              {% endfor %}
+            {% else %}
+            <use xlink:href="{{ states_svg }}#states"></use>
+            {% endif %}
+          </g>
+          <g class="states mesh">
+            {% if page.neighbors %}
+              {% for neighbor in page.neighbors %}
+            <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+              {% endfor %}
+            {% else %}
+            <use xlink:href="{{ states_svg }}#states-mesh"></use>
+            {% endif %}
+          </g>
+          <g class="counties features">
+            <use xlink:href="{{ state_svg }}#counties"></use>
+          </g>
+          {%
+            include maps/federal_land_ownership.svg
+            clip='#state-outline'
+          %}
+          <g class="counties mesh">
+            <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+          </g>
+          <g class="state feature overlay">
+            <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
+          </g>
+        </svg>
+      </div>
+
+    </figure>
+
+    <aside class="wide" style="clear:both;">
+      {% include maps/federal_land_ownership_legend.html %}
+    </aside>
+
+  </aside>
+</section>

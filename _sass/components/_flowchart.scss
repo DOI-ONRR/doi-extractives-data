@@ -26,11 +26,16 @@ $dialog-top-padding: 3.8rem;
   ul {
     margin: 0;
   }
+
+  ul:not(.flowchart-bulleted-list) {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 .flowchart-dialog {
-  background: $mid-blue;
-  border: $border-thickness solid $mid-blue;
+  background: $gray-lighter;
+  border: $border-thickness solid $gray-lighter;
   border-radius: $base-border-radius;
   margin-top: $dialog-top-padding;
   padding: ($base-padding-lite * 2);
@@ -39,6 +44,13 @@ $dialog-top-padding: 3.8rem;
 
   @include respond-to(medium-up) {
     padding: $base-padding;
+  }
+}
+
+.flowchart-outcomes {
+  ul li {
+    list-style-type: disc;
+    margin-left: 1em;
   }
 }
 
@@ -58,7 +70,7 @@ $dialog-top-padding: 3.8rem;
 
 .flowchart-dialog_left:before,
 .flowchart-dialog_right:after {
-  border-color: $mid-blue transparent transparent transparent;
+  border-color: $gray-lighter transparent transparent transparent;
   border-style: solid;
   border-width: ($triangle-width / 2);
   bottom: (-1 * $triangle-width);
@@ -104,7 +116,7 @@ $dialog-top-padding: 3.8rem;
 
 .flowchart-stem_left,
 .flowchart-stem_right {
-  border: $border-offset solid $mid-blue;
+  border: $border-offset solid $gray-lighter;
   height: $stem-height;
   position: absolute;
   top: -1 * ($stem-height + $border-thickness);
@@ -132,7 +144,7 @@ $dialog-top-padding: 3.8rem;
 }
 
 .flowchart-stem_bottom_right {
-  border: 1px solid $mid-blue;
+  border: 1px solid $gray-lighter;
   bottom: -52px;
   height: $stem-height;
   margin-bottom: ($stem-height * -1);
@@ -148,18 +160,18 @@ $dialog-top-padding: 3.8rem;
 
 .flowchart-stem_bottom_right_long,
 .flowchart-stem_bottom_right_extra_long {
-  border: $border-offset solid $mid-blue;
+  border: $border-offset solid $gray-lighter;
   height: $stem-height;
   position: absolute;
 }
 
 .flowchart-stem_bottom_right_long {
-  height: 250px;
-  bottom: -300px;
+    bottom: -350px;
+    height: 300px;
 
   @media only screen and (min-width: em(460)) {
-    height: 200px;
-    bottom: -250px;
+    bottom: -325px;
+    height: 275px;
   }
 
   right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
@@ -243,7 +255,7 @@ $dialog-top-padding: 3.8rem;
   }
 
   @media only screen and (min-width: 1080px) {
-    height: 900px;
+    height: 840px;
   }
 }
 

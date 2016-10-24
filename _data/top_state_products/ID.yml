@@ -1,0 +1,269 @@
+all_production:
+  '2006':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 11242372.01
+      rank: 5
+      percent: 3.89
+  '2008':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 85547
+      rank: 5
+      percent: 0.58
+  '2009':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 75950
+      rank: 5
+      percent: 0.51
+  '2010':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 71841
+      rank: 5
+      percent: 0.47
+  '2011':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 13404799
+      rank: 5
+      percent: 4.2
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 63490
+      rank: 5
+      percent: 0.41
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 74676
+      rank: 5
+      percent: 0.48
+federal_production:
+  '2006':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 61916192
+      rank: 1
+      percent: 2600
+  '2007':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 60434010
+      rank: 1
+      percent: 2600
+  '2008':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 63030708
+      rank: 1
+      percent: 2600
+  '2009':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 89017266
+      rank: 1
+      percent: 2600
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 91613210
+      rank: 1
+      percent: 2500
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 121940832
+      rank: 1
+      percent: 2400
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 116161916
+      rank: 1
+      percent: 2200
+  '2013':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 128963198
+      rank: 1
+      percent: 2500
+  '2014':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 150204444
+      rank: 1
+      percent: 2600
+  '2015':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 127500230
+      rank: 1
+      percent: 2500
+revenue:
+  '2006':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 2163200.61
+      rank: 1
+      percent: 98.16
+    - product: Hardrock
+      name: null
+      units: null
+      value: 2355.85
+      rank: 4
+      percent: 0.03
+  '2007':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 5727012
+      rank: 2
+      percent: 30.13
+    - product: Phosphate
+      name: null
+      units: null
+      value: 2305036.75
+      rank: 1
+      percent: 98.96
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3882.6
+      rank: 4
+      percent: 0.03
+  '2008':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 2417131.91
+      rank: 1
+      percent: 98.8
+    - product: Geothermal
+      name: null
+      units: null
+      value: 18535.3
+      rank: 5
+      percent: 0.05
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1771.3
+      rank: 5
+      percent: 0.01
+  '2009':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 3341675.49
+      rank: 1
+      percent: 99.14
+    - product: Geothermal
+      name: null
+      units: null
+      value: 99186.4
+      rank: 5
+      percent: 0.2
+  '2010':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 8183335.75
+      rank: 1
+      percent: 98.46
+    - product: Geothermal
+      name: null
+      units: null
+      value: 97116
+      rank: 5
+      percent: 0.36
+  '2011':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9378826.6
+      rank: 1
+      percent: 94.59
+    - product: Geothermal
+      name: null
+      units: null
+      value: 98943
+      rank: 5
+      percent: 0.61
+  '2012':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9786901.95
+      rank: 1
+      percent: 87.21
+    - product: Geothermal
+      name: null
+      units: null
+      value: 271926
+      rank: 5
+      percent: 1.78
+  '2013':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 10042631.86
+      rank: 1
+      percent: 90.06
+    - product: Geothermal
+      name: null
+      units: null
+      value: 154402
+      rank: 5
+      percent: 1.03
+  '2014':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 10902084.53
+      rank: 1
+      percent: 99.79
+    - product: Geothermal
+      name: null
+      units: null
+      value: 156515
+      rank: 5
+      percent: 0.98
+  '2015':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 10563420.14
+      rank: 1
+      percent: 98.89
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 3886182
+      rank: 5
+      percent: 3.63
+    - product: Geothermal
+      name: null
+      units: null
+      value: 144528
+      rank: 5
+      percent: 0.93

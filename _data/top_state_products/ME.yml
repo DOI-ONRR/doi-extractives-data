@@ -1,0 +1,71 @@
+all_production:
+  '2006':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3684617.63
+      rank: 2
+      percent: 9.51
+  '2007':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3847565.53
+      rank: 1
+      percent: 9.86
+  '2008':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3668568.72
+      rank: 1
+      percent: 9.84
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3366749.82
+      rank: 2
+      percent: 9.34
+  '2010':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3389576.52
+      rank: 2
+      percent: 9.12
+  '2011':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3511417.84
+      rank: 1
+      percent: 9.38
+  '2012':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2944950.1
+      rank: 3
+      percent: 7.79
+  '2013':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3625359.26
+      rank: 2
+      percent: 9.06
+  '2014':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3188999.76
+      rank: 3
+      percent: 7.53
+  '2015':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2961668.77
+      rank: 5
+      percent: 6.99

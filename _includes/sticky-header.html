@@ -1,0 +1,29 @@
+{% assign header_text = include.header_text %}
+{% assign year_range = include.year_range | default: year_range %}
+{% assign empty_years = include.empty_years | default: empty_years %}
+{% assign header_id = include.header_id %}
+{% assign header_size = include.header_size | default: 'h3' %}
+
+{% if header_size == 'h2' %}
+  <h2 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
+    {% if include.selector %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
+    {% endif %}
+  </h2>
+{% elsif header_size == 'h4' %}
+  <h4 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
+    {% if include.selector %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
+    {% endif %}
+  </h4>
+{% else %}
+  <h3 {% if header_id %}id='{{ header_id }}'{% endif %} class="sticky sticky-header-wrapper flex-row">
+    <span class="flex-row-flex">{{ header_text }}</span>
+    {% if include.selector %}
+      {% include year-selector.html year_range=year_range class_name="flex-row-icon" %}
+    {% endif %}
+  </h3>
+{% endif %}
+

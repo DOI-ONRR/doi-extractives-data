@@ -1,0 +1,62 @@
+<section class="state-pages-top">
+
+  <section class="container">
+
+    <div class="state-pages-ownership container-right-5">
+      {% include location/section-ownership.html %}
+    </div>
+
+    <!-- Includes the GDP percentage, then outputs employment percentage if it’s over 2%.-->
+    <p>
+      Natural resource extraction varies widely from state to state.
+      {%
+        include location/key-gdp-jobs.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </p>
+
+    <!-- If the state leads US production for any commodities, those commodities are listed along with percentage of US production. -->
+    <p>
+      {%
+        include location/key-all-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}
+    </p>
+
+    <!-- Sets up the federal-land focus of USEITI data, specifies what percentage of land is federally owned, and outputs the total revenue from federal land. -->
+    <p>
+      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Indian tribes or individuals, or governments (for instance, federal, state, or local governments). Many USEITI datasets only cover natural resource extraction on federal land, which represents
+      {{ site.data.land_stats[state_id].federal_percent | percent }}%
+      of all land in {{ state_name }}.
+    </p>
+
+    <!-- Includes link to relevant offshore region, if there is one -->
+    {% if page.nearby_offshore_region %}
+    <p>
+      {{ state_name }} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {{ state_name }}, see {{ page.nearby_offshore_region }}.
+    </p>
+    {% endif %}
+
+    <!-- Blurb for opt-in states -->
+    {% if is_opt_in_state %}
+      <p>
+        The state of {{ state_name }} chose to participate in an extended USEITI reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
+      </p>
+      {% if page.state_optin_intro %}
+        {{ page.state_optin_intro | liquify | markdownify }}
+      {% endif %}
+    {% endif %}
+
+    <!-- Includes case study link, if there is one -->
+    {% if page.case_study_link %}
+      {{ page.case_study_link | liquify | markdownify }}
+    {% endif %}
+
+  </section>
+
+</section>

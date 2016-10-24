@@ -1,0 +1,29 @@
+[is=aria-toggle] {
+
+  &[aria-expanded=false] .show-expanded,
+  &[aria-expanded=true] .hide-expanded {
+    display: none;
+  }
+
+  &.not-button-like {
+    @include appearance(none);
+
+    background: transparent;
+    border: none;
+    display: block;
+    font: inherit;
+    line-height: inherit;
+    padding: 0;
+    text-align: left;
+
+    &::before {
+      content: '▷';
+      display: inline-block;
+      margin-right: 0.2em;
+    }
+
+    &[aria-expanded=true]::before {
+      content: '▼';
+    }
+  }
+}

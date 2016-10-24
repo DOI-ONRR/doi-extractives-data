@@ -1,0 +1,1377 @@
+all_production:
+  '2006':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 190608
+      rank: 4
+      percent: 1.31
+  '2007':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 163925
+      rank: 4
+      percent: 1.12
+  '2008':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 254277
+      rank: 3
+      percent: 1.71
+  '2009':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 279121
+      rank: 3
+      percent: 1.86
+  '2010':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 276949.12
+      rank: 3
+      percent: 1.82
+  '2011':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 330188
+      rank: 3
+      percent: 2.16
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 334638
+      rank: 3
+      percent: 2.15
+  '2013':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 318908
+      rank: 3
+      percent: 2.02
+  '2014':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 521582
+      rank: 3
+      percent: 3.29
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 503234.62
+      rank: 3
+      percent: 3
+federal_production:
+  '2006':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 228176
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 61124290058
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 262547506
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 186573530
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 5533948498
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 282854
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 53214682404
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 173158492
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 217728992
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6330999402
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 440882
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 64191061792
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 223089022
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 264087720
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7711614196
+      rank: 5
+      percent: 100
+  '2009':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 338416
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 73507562908
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 173777370
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 285307412
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7930457392
+      rank: 5
+      percent: 100
+  '2010':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 730132
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 69433231478
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 161716984
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 281716084
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7505284852
+      rank: 4
+      percent: 100
+  '2011':
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 66420009422
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 187554172
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 277202224
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7821527454
+      rank: 4
+      percent: 100
+  '2012':
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 934102
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 63794844204
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 228613034
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 291433870
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 8516542060
+      rank: 4
+      percent: 100
+  '2013':
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 60222922708
+      rank: 1
+      percent: 2500
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 210821234
+      rank: 3
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 337655916
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 313040546
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7728414642
+      rank: 5
+      percent: 100
+  '2014':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: 871520
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 64053192762
+      rank: 1
+      percent: 2500
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 210198170
+      rank: 2
+      percent: 0
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 3434080000
+      rank: 3
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 343953064
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 7279527008
+      rank: 5
+      percent: 100
+  '2015':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: 1346566
+      rank: 1
+      percent: 2600
+    - product: Gilsonite (tons)
+      name: Gilsonite
+      units: tons
+      value: 418028
+      rank: 1
+      percent: 2600
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
+      value: 55620764732
+      rank: 1
+      percent: 2500
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 3383598400
+      rank: 3
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 142209678
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 295372818
+      rank: 4
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 6806031310
+      rank: 5
+      percent: 100
+revenue:
+  '2006':
+    - product: All
+      name: null
+      units: null
+      value: 350749895.9
+      rank: 3
+      percent: 2.77
+    - product: Gas
+      name: null
+      units: null
+      value: 165969058.3
+      rank: 4
+      percent: 3.13
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 97995726.83
+      rank: 2
+      percent: 25.67
+    - product: Oil
+      name: null
+      units: null
+      value: 52118049.59
+      rank: 4
+      percent: 1.23
+    - product: Coal
+      name: null
+      units: null
+      value: 31543442.98
+      rank: 3
+      percent: 3.38
+    - product: NGL
+      name: null
+      units: null
+      value: 2337062.74
+      rank: 4
+      percent: 0.77
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 427555
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 222920.43
+      rank: 3
+      percent: 1.76
+    - product: Potassium
+      name: null
+      units: null
+      value: 107011.66
+      rank: 2
+      percent: 2.58
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 12190
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      name: null
+      units: null
+      value: 11318
+      rank: 4
+      percent: 0.51
+    - product: Clay
+      name: null
+      units: null
+      value: 3478.92
+      rank: 2
+      percent: 13.91
+    - product: Sodium
+      name: null
+      units: null
+      value: 1233.45
+      rank: 5
+      percent: 0
+  '2007':
+    - product: All
+      name: null
+      units: null
+      value: 270713961.67
+      rank: 4
+      percent: 2.4
+    - product: Gas
+      name: null
+      units: null
+      value: 132906694.59
+      rank: 4
+      percent: 3.04
+    - product: Oil
+      name: null
+      units: null
+      value: 56931052.81
+      rank: 4
+      percent: 1.31
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 50822906.86
+      rank: 2
+      percent: 13.91
+    - product: Coal
+      name: null
+      units: null
+      value: 26617207.41
+      rank: 4
+      percent: 2.95
+    - product: NGL
+      name: null
+      units: null
+      value: 2317474.72
+      rank: 4
+      percent: 0.6
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 634749.22
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 254907.51
+      rank: 4
+      percent: 1.34
+    - product: Potassium
+      name: null
+      units: null
+      value: 186437.14
+      rank: 2
+      percent: 1.67
+    - product: Phosphate
+      name: null
+      units: null
+      value: 23262
+      rank: 2
+      percent: 1
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 12312.91
+      rank: 1
+      percent: 100
+    - product: Clay
+      name: null
+      units: null
+      value: 4824.15
+      rank: 2
+      percent: 22.58
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1168
+      rank: 5
+      percent: 0.01
+    - product: Sodium
+      name: null
+      units: null
+      value: 964.35
+      rank: 5
+      percent: 0.01
+  '2008':
+    - product: All
+      name: null
+      units: null
+      value: 378353409.41
+      rank: 4
+      percent: 1.67
+    - product: Gas
+      name: null
+      units: null
+      value: 198130611.51
+      rank: 4
+      percent: 3.73
+    - product: Oil
+      name: null
+      units: null
+      value: 106789015.39
+      rank: 4
+      percent: 1.83
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 39877935.97
+      rank: 4
+      percent: 10.67
+    - product: Coal
+      name: null
+      units: null
+      value: 23905654.12
+      rank: 4
+      percent: 2.15
+    - product: NGL
+      name: null
+      units: null
+      value: 7983995.29
+      rank: 4
+      percent: 1.47
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 873714.82
+      rank: 1
+      percent: 100
+    - product: Potassium
+      name: null
+      units: null
+      value: 400538.35
+      rank: 2
+      percent: 4.06
+    - product: Geothermal
+      name: null
+      units: null
+      value: 300496.92
+      rank: 3
+      percent: 0.79
+    - product: CO2
+      name: null
+      units: null
+      value: 50765.7
+      rank: 4
+      percent: 0.13
+    - product: Phosphate
+      name: null
+      units: null
+      value: 20752
+      rank: 2
+      percent: 0.85
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 12304.86
+      rank: 1
+      percent: 100
+    - product: Clay
+      name: null
+      units: null
+      value: 5365.65
+      rank: 1
+      percent: 100
+    - product: Sodium
+      name: null
+      units: null
+      value: 850.83
+      rank: 5
+      percent: 0
+  '2009':
+    - product: All
+      name: null
+      units: null
+      value: 239431581.79
+      rank: 4
+      percent: 2.91
+    - product: Gas
+      name: null
+      units: null
+      value: 121011854.02
+      rank: 3
+      percent: 5.87
+    - product: Oil
+      name: null
+      units: null
+      value: 75887255.98
+      rank: 4
+      percent: 2.52
+    - product: Coal
+      name: null
+      units: null
+      value: 21644529.02
+      rank: 4
+      percent: 1.97
+    - product: NGL
+      name: null
+      units: null
+      value: 11435222.97
+      rank: 3
+      percent: 4.67
+    - product: Geothermal
+      name: null
+      units: null
+      value: 9257071.2
+      rank: 2
+      percent: 19.04
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 1770670.22
+      rank: 1
+      percent: 100
+    - product: Potassium
+      name: null
+      units: null
+      value: 371890.71
+      rank: 2
+      percent: 1.35
+    - product: CO2
+      name: null
+      units: null
+      value: 47825.67
+      rank: 4
+      percent: 0.09
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9315.99
+      rank: 3
+      percent: 0.28
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 7679.67
+      rank: 1
+      percent: 100
+    - product: Clay
+      name: null
+      units: null
+      value: 3968.93
+      rank: 1
+      percent: 100
+    - product: Sodium
+      name: null
+      units: null
+      value: 2149.65
+      rank: 5
+      percent: 0.01
+  '2010':
+    - product: All
+      name: null
+      units: null
+      value: 300575131.78
+      rank: 3
+      percent: 2.88
+    - product: Gas
+      name: null
+      units: null
+      value: 132263281.04
+      rank: 3
+      percent: 5.45
+    - product: Oil
+      name: null
+      units: null
+      value: 95036586.67
+      rank: 4
+      percent: 1.87
+    - product: Coal
+      name: null
+      units: null
+      value: 28996671.31
+      rank: 4
+      percent: 3.38
+    - product: NGL
+      name: null
+      units: null
+      value: 18435396.24
+      rank: 3
+      percent: 4.27
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 1358602.71
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 1095137.41
+      rank: 3
+      percent: 4.07
+    - product: Potassium
+      name: null
+      units: null
+      value: 296478.79
+      rank: 2
+      percent: 1.55
+    - product: CO2
+      name: null
+      units: null
+      value: 74615.64
+      rank: 3
+      percent: 0.17
+    - product: Phosphate
+      name: null
+      units: null
+      value: 32416
+      rank: 3
+      percent: 0.39
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 7732
+      rank: 1
+      percent: 100
+    - product: Sodium
+      name: null
+      units: null
+      value: 2582.52
+      rank: 5
+      percent: 0.01
+    - product: Clay
+      name: null
+      units: null
+      value: 2388.66
+      rank: 1
+      percent: 100
+    - product: Limestone
+      name: null
+      units: null
+      value: 40
+      rank: 1
+      percent: 100
+  '2011':
+    - product: All
+      name: null
+      units: null
+      value: 303730819.36
+      rank: 4
+      percent: 2.81
+    - product: Gas
+      name: null
+      units: null
+      value: 116760681.57
+      rank: 4
+      percent: 5.36
+    - product: Oil
+      name: null
+      units: null
+      value: 107273692.08
+      rank: 4
+      percent: 1.68
+    - product: NGL
+      name: null
+      units: null
+      value: 28667995.94
+      rank: 3
+      percent: 5.38
+    - product: Potassium
+      name: null
+      units: null
+      value: 21377134.47
+      rank: 1
+      percent: 52.6
+    - product: Coal
+      name: null
+      units: null
+      value: 19665151.76
+      rank: 4
+      percent: 2.06
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 2575505.28
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 711228.59
+      rank: 3
+      percent: 4.4
+    - product: CO2
+      name: null
+      units: null
+      value: 85845.87
+      rank: 4
+      percent: 0.17
+    - product: Phosphate
+      name: null
+      units: null
+      value: 24942
+      rank: 3
+      percent: 0.25
+    - product: Tar Sands
+      name: null
+      units: null
+      value: 7732
+      rank: 1
+      percent: 100
+    - product: Clay
+      name: null
+      units: null
+      value: 3649
+      rank: 1
+      percent: 100
+    - product: Sodium
+      name: null
+      units: null
+      value: 2121.81
+      rank: 5
+      percent: 0.01
+  '2012':
+    - product: All
+      name: null
+      units: null
+      value: 331248937.13
+      rank: 3
+      percent: 2.61
+    - product: Oil
+      name: null
+      units: null
+      value: 112866462.05
+      rank: 5
+      percent: 1.72
+    - product: Gas
+      name: null
+      units: null
+      value: 90186155.71
+      rank: 4
+      percent: 6.36
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 53603595.85
+      rank: 3
+      percent: 15.31
+    - product: Coal
+      name: null
+      units: null
+      value: 36824417.41
+      rank: 4
+      percent: 2.7
+    - product: NGL
+      name: null
+      units: null
+      value: 33563440.22
+      rank: 3
+      percent: 6.42
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 3014369.94
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 696709.93
+      rank: 3
+      percent: 4.56
+    - product: Potassium
+      name: null
+      units: null
+      value: 409605.18
+      rank: 2
+      percent: 1.52
+    - product: CO2
+      name: null
+      units: null
+      value: 65245.99
+      rank: 4
+      percent: 0.11
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9994
+      rank: 3
+      percent: 0.09
+    - product: Clay
+      name: null
+      units: null
+      value: 5570.56
+      rank: 1
+      percent: 100
+  '2013':
+    - product: All
+      name: null
+      units: null
+      value: 309144268.4
+      rank: 3
+      percent: 2.52
+    - product: Oil
+      name: null
+      units: null
+      value: 125073382.05
+      rank: 5
+      percent: 1.79
+    - product: Gas
+      name: null
+      units: null
+      value: 106024962.66
+      rank: 3
+      percent: 7.03
+    - product: Coal
+      name: null
+      units: null
+      value: 36056211.42
+      rank: 3
+      percent: 3.09
+    - product: NGL
+      name: null
+      units: null
+      value: 25870073.42
+      rank: 4
+      percent: 5.74
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 12010978.99
+      rank: 4
+      percent: 4.42
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 2873716.65
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 675351.34
+      rank: 3
+      percent: 4.5
+    - product: Potassium
+      name: null
+      units: null
+      value: 470106.07
+      rank: 2
+      percent: 1.89
+    - product: Phosphate
+      name: null
+      units: null
+      value: 54062
+      rank: 3
+      percent: 0.48
+    - product: CO2
+      name: null
+      units: null
+      value: 27955.43
+      rank: 4
+      percent: 0.05
+    - product: Clay
+      name: null
+      units: null
+      value: 4183.76
+      rank: 1
+      percent: 100
+  '2014':
+    - product: All
+      name: null
+      units: null
+      value: 346202909.62
+      rank: 4
+      percent: 7.41
+    - product: Oil
+      name: null
+      units: null
+      value: 143168442.5
+      rank: 5
+      percent: 8.76
+    - product: Gas
+      name: null
+      units: null
+      value: 109109401.24
+      rank: 4
+      percent: 9.4
+    - product: Coal
+      name: null
+      units: null
+      value: 44552149.07
+      rank: 2
+      percent: 3.83
+    - product: NGL
+      name: null
+      units: null
+      value: 36475933.07
+      rank: 3
+      percent: 13.05
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 9629726.79
+      rank: 5
+      percent: 3.86
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 2031684.34
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 725185.86
+      rank: 3
+      percent: 4.52
+    - product: Potassium
+      name: null
+      units: null
+      value: 464878.01
+      rank: 2
+      percent: 2.02
+    - product: CO2
+      name: null
+      units: null
+      value: 22979.12
+      rank: 4
+      percent: 0.03
+    - product: Phosphate
+      name: null
+      units: null
+      value: 17080
+      rank: 2
+      percent: 0.16
+    - product: Sodium
+      name: null
+      units: null
+      value: 3671.43
+      rank: 5
+      percent: 0.01
+    - product: Clay
+      name: null
+      units: null
+      value: 1778.19
+      rank: 1
+      percent: 100
+  '2015':
+    - product: All
+      name: null
+      units: null
+      value: 228550317.24
+      rank: 4
+      percent: 6.1
+    - product: Oil
+      name: null
+      units: null
+      value: 85929184.74
+      rank: 5
+      percent: 6.77
+    - product: Gas
+      name: null
+      units: null
+      value: 83503583.83
+      rank: 4
+      percent: 9.13
+    - product: Coal
+      name: null
+      units: null
+      value: 34532349.89
+      rank: 4
+      percent: 3.04
+    - product: NGL
+      name: null
+      units: null
+      value: 18940054.3
+      rank: 3
+      percent: 12.28
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 2424772.7
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      name: null
+      units: null
+      value: 680148.35
+      rank: 3
+      percent: 4.38
+    - product: Potassium
+      name: null
+      units: null
+      value: 438933.25
+      rank: 2
+      percent: 2.68
+    - product: Phosphate
+      name: null
+      units: null
+      value: 33084.84
+      rank: 3
+      percent: 0.31
+    - product: CO2
+      name: null
+      units: null
+      value: 31277.24
+      rank: 4
+      percent: 0.05
+    - product: Clay
+      name: null
+      units: null
+      value: 6957.8
+      rank: 1
+      percent: 100
+    - product: Gold
+      name: null
+      units: null
+      value: 2604
+      rank: 1
+      percent: 100
+    - product: Sodium
+      name: null
+      units: null
+      value: 2532.09
+      rank: 5
+      percent: 0.01

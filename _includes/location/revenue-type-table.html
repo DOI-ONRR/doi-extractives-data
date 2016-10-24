@@ -1,0 +1,234 @@
+{% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
+
+{% if include.offshore %}
+  {% assign revenue_types = site.data.offshore_revenues_by_type[include.location_id] %}
+{% endif %}
+
+{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
+
+{% if national_page %}
+  {% assign revenue_types = site.data.national_revenues_by_type.US %}
+{% endif %}
+
+{% assign commodity_groups = site.data.commodities.groups %}
+
+{% assign oilgas_list = commodity_groups.oilgas.commodities %}
+{% assign other_product_list = commodity_groups.other.commodities %}
+
+{% assign oilgas_exists = false %}
+{% assign coal_exists = false %}
+{% assign geothermal_exists = false %}
+{% assign wind_exists = false %}
+{% assign other_product_exists = false %}
+{% assign all_exists = false %}
+
+
+{% for commodity in revenue_types %}
+  {% assign commodity_name = commodity[0] %}
+  {% assign commodity_values = commodity[1] %}
+  {% if oilgas_list contains commodity_name %}
+    {% for oilgas_name in oilgas_list %}
+      {% if commodity_name == oilgas_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign oilgas_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if other_product_list contains commodity_name %}
+    {% for other_product_name in other_product_list %}
+      {% if commodity_name == other_product_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign other_product_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if commodity_name == 'Coal' %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign coal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if commodity_name == 'Geothermal' %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign geothermal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if commodity_name == 'Wind' %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign wind_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if commodity_name == 'All' %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign all_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+{% endfor %}
+
+
+<table is="bar-chart-table" class="revenue table-arrow_box"
+  {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th class="arrow_box"><span>Commodity</span></th>
+      <th class="arrow_box"><span>1. Securing rights</span></th>
+      <th class="arrow_box"><span>2. Before production</span></th>
+      <th class="arrow_box-last"><span>3. During production</span></th>
+      <th><span>Other revenue</span></th>
+    </tr>
+  </thead>
+
+    {% if oilgas_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Oil and Gas
+        <icon class="icon-padded icon-oil"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if oilgas_list contains commodity_name %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% if commodity_name == 'Oil & Gas' or commodity_name == 'Oil & Gas (Non-Royalty)' %}
+                {% include location/revenue-type-row-oilgas.html %}
+            {% endif %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+
+    {% if coal_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Coal
+        <icon class="icon-padded icon-coal"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Coal' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if geothermal_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Geothermal
+        <icon class="icon-padded icon-geo"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Geothermal' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html year=include.year %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if wind_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Offshore renewable energy
+        <icon class="icon-padded icon-wind"></icon>
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'Wind' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if other_product_exists == true %}
+      <tr class="table-arrow_box-category"><td colspan="5">
+        Other products
+      </td></tr>
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if other_product_list contains commodity_name %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            {% include location/revenue-type-row.html %}
+           </tbody>
+        {% endif %}
+
+      {% endfor %}
+    {% endif %}
+
+    {% if all_exists == true %}
+      {% for commodity in revenue_types %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign values = commodity[1] %}
+
+        {% if commodity_name == 'All' %}
+          <tbody id="revenue-types-{{ commodity_name | slugify }}">
+            <tr class="table-arrow_box-category"><td colspan="5">
+              All commodities
+              {% if oilgas_exists == true %}
+                <icon class="icon-oil"></icon>
+              {% endif %}
+
+              {% if coal_exists == true %}
+                <icon class="icon-coal"></icon>
+              {% endif %}
+
+              {% if geothermal_exists == true %}
+                <icon class="icon-geo"></icon>
+              {% endif %}
+
+              {% if wind_exists == true %}
+                <icon class="icon-wind"></icon>
+              {% endif %}
+            </td></tr>
+            {% include location/revenue-type-row.html %}
+          </tbody>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+</table>

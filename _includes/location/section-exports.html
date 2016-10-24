@@ -1,0 +1,101 @@
+{% assign export_commodities = site.data.state_exports[state_id].commodities %}
+
+{% assign restore_year = year %}
+{% assign year_range = site.data.years.exports | default: site.data.years.default %}
+
+{% assign exports_total = export_commodities.Extractives[year] %}
+
+{% assign year_list = year_range | to_list %}
+{% assign year_range = year_range | jsonify %}
+
+<section id="exports" is="year-switcher-section" class="economic exports">
+
+  {%
+    include sticky-header.html
+    header_text='Exports'
+    year_range=year_range
+    selector=true
+  %}
+
+  <div class="chart-list">
+
+    <div class="chart-selector-wrapper">
+      {% assign empty_years = '' | split: '' %}
+      {% if export_commodities %}
+        {% for _year in year_list %}
+          {% assign _year_string = _year | to_s %}
+          {% unless export_commodities.Total[_year_string] > 0 %}
+            {% assign empty_years = empty_years | push: _year_string %}
+          {% endunless %}
+        {% endfor %}
+        {% include year-selector.html year_range=year_range empty_years=empty_years %}
+      {% endif %}
+
+      {% if empty_years.size == year_range.size %}
+        {% assign has_exports = true %}
+      {% else %}
+        {% assign has_exports = false %}
+      {% endif %}
+
+      <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
+        The U.S. Census Bureau collects information about the top 25 exports in each state.
+
+        {% if exports_total > 0 %}
+          In {{ year }}, one or more natural resources
+          ranked among the top 25 exports from {{ state_name }}.
+        {% else %}
+          In {{ year }}, extractive industries products did not rank
+          among the top 25 exports from {{ state_name }}.
+        {% endif %}
+        <br>
+        <a href="{{site.baseurl}}/downloads/#exports">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
+
+    {% assign _format = '$,' %}
+
+    {% for commodity in export_commodities %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign exports = commodity[1] %}
+      {% assign commodity_slug = commodity_name | slugify %}
+
+      {% if commodity_name != "Total" and commodity_name != "Extractives" %}
+        <section class="chart-item">
+
+          <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
+
+          <figure class="chart">
+            <eiti-bar-chart
+              aria-controls="exports-figures-{{ commodity_slug }}"
+              data='{{ exports | jsonify }}'
+              x-range="{{ year_range }}"
+              x-value="{{ year }}"
+              data-units="{{ _format }}">
+            </eiti-bar-chart>
+            <figcaption id="exports-figures-{{ commodity_slug }}">
+              <span class="caption-data">
+                <span class="eiti-bar-chart-y-value"
+                  data-format="{{ _format }}">${{ exports[year] | intcomma }}</span>
+                worth of {{ commodity_name | downcase }}
+                was exported from {{ state_name }}
+                in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              </span>
+              <span class="caption-no-data" aria-hidden="true">
+                {{ commodity_name | downcase }} did not rank among the top 25 exports
+                from {{ state_name }} in
+                <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              </span>
+            </figcaption>
+          </figure>
+
+        </section><!-- /.chart-item -->
+      {% endif %}
+    {% endfor %}
+
+  </div><!-- /.chart-list -->
+
+</section>
+
+{% assign year = restore_year %}

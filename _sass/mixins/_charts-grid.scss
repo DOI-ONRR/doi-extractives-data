@@ -1,0 +1,36 @@
+@mixin chart-columns($columns) {
+  @if $columns == 3 {
+    .chart-item:nth-of-type(3n - 1) {
+      padding-left: $base-padding-lite;
+      padding-right: $base-padding-lite;
+    }
+
+    .chart-item:first-of-type,
+    .chart-item:nth-of-type(3n - 2) {
+      padding-left: 0;
+      padding-right: 2 * $base-padding-lite;
+    }
+
+    .chart-item:nth-of-type(3n) {
+      @include omega();
+
+      padding-left: 2 * $base-padding-lite;
+      padding-right: 0;
+    }
+  }
+
+  @if $columns == 2 {
+    .chart-item:first-of-type,
+    .chart-item:nth-of-type(2n - 2) {
+      padding-left: 0;
+      padding-right: 2 * $base-padding-lite;
+    }
+
+    .chart-item:nth-of-type(2n) {
+      @include omega();
+
+      padding-left: 2 * $base-padding-lite;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,363 @@
+all_production:
+  '2006':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3865009.96
+      rank: 1
+      percent: 9.97
+  '2007':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3783882.18
+      rank: 2
+      percent: 9.7
+  '2008':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3323615.82
+      rank: 3
+      percent: 8.91
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3035374.99
+      rank: 3
+      percent: 8.42
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 12535373
+      rank: 5
+      percent: 4.58
+  '2010':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2365453.39
+      rank: 5
+      percent: 6.36
+  '2011':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2806763.59
+      rank: 4
+      percent: 7.49
+  '2012':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2768764.9
+      rank: 4
+      percent: 7.32
+  '2013':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2854388.29
+      rank: 4
+      percent: 7.13
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 12899178
+      rank: 5
+      percent: 4.8
+  '2014':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2732084.22
+      rank: 5
+      percent: 6.45
+  '2015':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3282980.54
+      rank: 3
+      percent: 7.75
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 10132680.56
+      rank: 5
+      percent: 4.03
+federal_production:
+  '2006':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1946074
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 747391424
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Clay (tons)
+      name: Clay
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1380106
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 582237240
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1155986
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 855608
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 930514
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 488219784
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 877630
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 436544264
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 45784180
+      rank: 3
+      percent: 0
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 791804
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 468008008
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 691808
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 644748
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: null
+      rank: 1
+      percent: null
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 1048450
+      rank: 4
+      percent: 0
+revenue:
+  '2006':
+    - product: Clay
+      name: null
+      units: null
+      value: 21525.3
+      rank: 1
+      percent: 86.09
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1156.13
+      rank: 3
+      percent: 1.06
+  '2007':
+    - product: Clay
+      name: null
+      units: null
+      value: 16539
+      rank: 1
+      percent: 77.42
+    - product: Sulfur
+      name: null
+      units: null
+      value: 376.55
+      rank: 3
+      percent: 1.46
+  '2008':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 6397.04
+      rank: 3
+      percent: 0.73
+  '2009':
+    - product: Coal
+      name: null
+      units: null
+      value: 3987983.75
+      rank: 5
+      percent: 0.36
+    - product: Sulfur
+      name: null
+      units: null
+      value: 8775.12
+      rank: 3
+      percent: 0.12
+  '2010':
+    - product: Coal
+      name: null
+      units: null
+      value: 10653965.72
+      rank: 5
+      percent: 1.24
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1104.71
+      rank: 2
+      percent: 0.43
+  '2011':
+    - product: Coal
+      name: null
+      units: null
+      value: 8898407.91
+      rank: 5
+      percent: 0.93
+    - product: Sulfur
+      name: null
+      units: null
+      value: 3762.13
+      rank: 4
+      percent: 0.24
+  '2012':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4340.13
+      rank: 2
+      percent: 0.2
+  '2013':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 3100.63
+      rank: 3
+      percent: 0.43
+  '2014':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1534.76
+      rank: 3
+      percent: 0.58
+  '2015':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1226
+      rank: 2
+      percent: null

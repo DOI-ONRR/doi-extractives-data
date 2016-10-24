@@ -4,6 +4,12 @@
 //
 // Styleguide blocks.case-studies.content
 
+.case_studies-frame {
+  .ribbon-hero {
+    padding-bottom: 0.625rem;
+  }
+}
+
 .case_studies_content-icon {
   @include heading('para-md');
 
@@ -14,14 +20,7 @@
 }
 
 .case_studies_content-graph {
-  margin-bottom: $base-padding;
-  margin-top: $base-padding;
   width: 100%;
-
-  @include respond-to(small-up) {
-    width: 80%;
-  }
-
 }
 
 .case_studies_content-heading {

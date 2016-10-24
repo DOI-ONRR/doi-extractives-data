@@ -1,0 +1,131 @@
+{% assign jobs = site.data.national_jobs[state_id] %}
+{% assign self_employment_jobs = site.data.national_self_employment[state_id] %}
+{% assign jobs_count = jobs[year].count | default: 0 %}
+{% assign jobs_percent = jobs[year].percent | default: 0 %}
+{% assign year_range = site.data.years.jobs | default: site.data.years.default | jsonify %}
+
+<section id="employment" class="economic employment">
+
+  <section is="year-switcher-section">
+    {%
+      include sticky-header.html
+      header_text='Wage and salary jobs'
+      year_range=year_range
+      selector=true
+    %}
+    <section class="chart-list">
+
+      <div class="chart-selector-wrapper">
+
+        {% include year-selector.html year_range=year_range %}
+
+        <div class="chart-description">
+          <p>
+            Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.
+            <br>
+            <a href="{{site.baseurl}}/downloads/#jobs">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
+          </p>
+        </div>
+      </div><!-- .chart-selector-wrapper -->
+
+      {% assign _metrics = 'count' | split: ' ' %}
+      {% for _metric in _metrics %}
+      <section class="chart-item">
+        <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
+
+        <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="jobs-figures-{{ _metric }}"
+            data='{{ jobs | map_hash: _metric | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="jobs">
+          </eiti-bar-chart>
+          <figcaption id="jobs-figures-{{ _metric }}">
+            <span class="caption-data">
+              In
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+              there were
+              <span class="eiti-bar-chart-y-value" data-format=",">
+                {{ jobs[year].jobs | intcomma }}
+              </span>
+              jobs in the extractive industries, and they accounted for {{ jobs_percent | percent }}%
+              of nationwide jobs.
+            </span>
+            <span class="caption-no-data" aria-hidden="true">
+              There is no data about jobs in the extractive industries in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            </span>
+          </figcaption>
+        </figure><!-- /.chart -->
+      </section><!-- /.chart-item -->
+        {% endfor %}
+    </section><!-- /.chart-list -->
+  </section><!-- is=year-switcher-section -->
+
+  <section is="year-switcher-section">
+    {%
+      include sticky-header.html
+      header_text='Self-employment'
+      year_range=year_range
+      header_id='self-employment'
+      selector=true
+    %}
+
+    {% assign restore_year = year %}
+    {% if site.data.years.self_employment %}
+      {% assign year_range = site.data.years.self_employment | jsonify %}
+      {% assign year = site.data.years.self_employment | last | to_s %}
+    {% endif %}
+
+    <section class="chart-list">
+
+
+      <div class="chart-selector-wrapper">
+
+        {% include year-selector.html year_range=year_range %}
+
+        <p class="chart-description">
+            Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
+            <br>
+            <a href="{{site.baseurl}}/downloads/#jobs">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
+        </p>
+      </div><!-- .chart-selector-wrapper -->
+
+      {% assign _metrics = 'count' | split: ' ' %}
+      {% for _metric in _metrics %}
+      <section class="chart-item">
+
+        <h3 class="chart-title"><span>Self-employment</span></h3>
+
+        <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="self-employment-figures-{{ _metric }}"
+            data='{{ self_employment_jobs | map_hash: _metric | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="jobs">
+          </eiti-bar-chart>
+          <figcaption id="self-employment-figures-{{ _metric }}">
+            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+            there were
+            <span class="eiti-bar-chart-y-value" data-format=",">
+              {{ self_employment_jobs[year].jobs | default: 0 | intcomma }}
+            </span>
+            self-employed people working in the extractive industries.
+          </figcaption>
+        </figure>
+
+      </section><!-- /.chart-item -->
+      {% endfor %}
+    </section><!-- /.chart-list -->
+
+    {% assign year = restore_year %}
+
+  </section><!-- is=year-switcher-section -->
+
+</section>

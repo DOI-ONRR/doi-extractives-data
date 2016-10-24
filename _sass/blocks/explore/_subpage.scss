@@ -27,13 +27,18 @@
 }
 
 .explore-exploration {
-
   @include respond-to(medium-up) {
-    margin-right: $base-padding;
-    margin-top: 190px;
+    margin-top: $base-padding-large;
   }
+}
 
-  @include respond-to(huge-plus-up) {
-    margin-right: 0;
-  }
+// "gov" and "co" labels
+.reportee {
+  color: $gray-darker;
+  font-weight: $weight-light;
+}
+
+.material-variance-explanation {
+  @include heading('para-sm');
+  color: $gray-darkest;
 }

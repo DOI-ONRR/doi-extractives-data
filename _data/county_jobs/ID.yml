@@ -1,0 +1,402 @@
+'16001':
+  name: Ada County
+  employment:
+    '2006':
+      count: 143
+      percent: 0.07
+    '2007':
+      count: 109
+      percent: 0.05
+    '2008':
+      count: 112
+      percent: 0.05
+    '2009':
+      count: 77
+      percent: 0.04
+    '2010':
+      count: 86
+      percent: 0.04
+    '2011':
+      count: 84
+      percent: 0.04
+    '2012':
+      count: 87
+      percent: 0.04
+    '2013':
+      count: 119
+      percent: 0.06
+    '2014':
+      count: 178
+      percent: 0.08
+    '2015':
+      count: 140
+      percent: 0.06
+'16005':
+  name: Bannock County
+  employment:
+    '2006':
+      count: 25
+      percent: 0.07
+    '2007':
+      count: 26
+      percent: 0.07
+'16009':
+  name: Benewah County
+  employment:
+    '2007':
+      count: 65
+      percent: 1.79
+'16013':
+  name: Blaine County
+  employment:
+    '2006':
+      count: 39
+      percent: 0.28
+    '2007':
+      count: 35
+      percent: 0.25
+    '2008':
+      count: 31
+      percent: 0.22
+    '2009':
+      count: 28
+      percent: 0.23
+    '2010':
+      count: 21
+      percent: 0.18
+    '2011':
+      count: 26
+      percent: 0.22
+    '2012':
+      count: 21
+      percent: 0.18
+'16015':
+  name: Boise County
+  employment:
+    '2007':
+      count: 16
+      percent: 0.94
+'16017':
+  name: Bonner County
+  employment:
+    '2006':
+      count: 131
+      percent: 0.91
+    '2007':
+      count: 154
+      percent: 1.05
+    '2008':
+      count: 139
+      percent: 0.98
+    '2009':
+      count: 151
+      percent: 1.13
+    '2010':
+      count: 148
+      percent: 1.15
+    '2011':
+      count: 182
+      percent: 1.45
+    '2012':
+      count: 163
+      percent: 1.3
+    '2013':
+      count: 128
+      percent: 1
+    '2014':
+      count: 131
+      percent: 1.02
+    '2015':
+      count: 125
+      percent: 0.96
+'16019':
+  name: Bonneville County
+  employment:
+    '2009':
+      count: 38
+      percent: 0.09
+    '2014':
+      count: 4
+      percent: 0.01
+'16027':
+  name: Canyon County
+  employment:
+    '2006':
+      count: 69
+      percent: 0.13
+    '2007':
+      count: 68
+      percent: 0.12
+    '2008':
+      count: 57
+      percent: 0.1
+    '2009':
+      count: 35
+      percent: 0.07
+    '2010':
+      count: 22
+      percent: 0.04
+    '2011':
+      count: 22
+      percent: 0.04
+    '2012':
+      count: 21
+      percent: 0.04
+    '2013':
+      count: 24
+      percent: 0.04
+    '2014':
+      count: 26
+      percent: 0.05
+    '2015':
+      count: 28
+      percent: 0.05
+'16029':
+  name: Caribou County
+  employment:
+    '2006':
+      count: 347
+      percent: 10.96
+    '2007':
+      count: 358
+      percent: 11.13
+    '2008':
+      count: 348
+      percent: 10.54
+    '2009':
+      count: 317
+      percent: 9.88
+    '2010':
+      count: 333
+      percent: 10.99
+    '2011':
+      count: 361
+      percent: 11.67
+'16031':
+  name: Cassia County
+  employment:
+    '2006':
+      count: 176
+      percent: 1.91
+    '2007':
+      count: 144
+      percent: 1.51
+    '2008':
+      count: 138
+      percent: 1.41
+    '2009':
+      count: 99
+      percent: 1.02
+    '2010':
+      count: 92
+      percent: 0.94
+    '2011':
+      count: 92
+      percent: 0.93
+    '2012':
+      count: 102
+      percent: 1.03
+    '2013':
+      count: 119
+      percent: 1.15
+    '2014':
+      count: 132
+      percent: 1.25
+    '2015':
+      count: 142
+      percent: 1.33
+'16037':
+  name: Custer County
+  employment:
+    '2015':
+      count: 62
+      percent: 4.37
+'16041':
+  name: Franklin County
+  employment:
+    '2009':
+      count: 44
+      percent: 1.44
+    '2010':
+      count: 45
+      percent: 1.49
+'16047':
+  name: Gooding County
+  employment:
+    '2014':
+      count: 6
+      percent: 0.1
+'16049':
+  name: Idaho County
+  employment:
+    '2006':
+      count: 79
+      percent: 1.76
+    '2007':
+      count: 85
+      percent: 1.86
+    '2008':
+      count: 84
+      percent: 1.86
+    '2009':
+      count: 67
+      percent: 1.58
+    '2010':
+      count: 74
+      percent: 1.74
+    '2011':
+      count: 78
+      percent: 1.86
+    '2012':
+      count: 77
+      percent: 1.84
+    '2013':
+      count: 67
+      percent: 1.59
+    '2014':
+      count: 60
+      percent: 1.4
+    '2015':
+      count: 64
+      percent: 1.52
+'16055':
+  name: Kootenai County
+  employment:
+    '2006':
+      count: 149
+      percent: 0.27
+    '2007':
+      count: 144
+      percent: 0.26
+    '2008':
+      count: 158
+      percent: 0.28
+    '2009':
+      count: 102
+      percent: 0.2
+    '2010':
+      count: 92
+      percent: 0.18
+    '2011':
+      count: 97
+      percent: 0.19
+    '2012':
+      count: 85
+      percent: 0.17
+    '2013':
+      count: 120
+      percent: 0.23
+    '2014':
+      count: 111
+      percent: 0.2
+    '2015':
+      count: 109
+      percent: 0.19
+'16069':
+  name: Nez Perce County
+  employment:
+    '2006':
+      count: 105
+      percent: 0.51
+    '2010':
+      count: 75
+      percent: 0.37
+    '2011':
+      count: 77
+      percent: 0.39
+'16073':
+  name: Owyhee County
+  employment:
+    '2011':
+      count: 34
+      percent: 1.18
+    '2012':
+      count: 38
+      percent: 1.26
+    '2013':
+      count: 29
+      percent: 0.96
+    '2014':
+      count: 23
+      percent: 0.78
+'16079':
+  name: Shoshone County
+  employment:
+    '2006':
+      count: 412
+      percent: 9.23
+    '2007':
+      count: 569
+      percent: 11.93
+    '2008':
+      count: 711
+      percent: 14.39
+    '2009':
+      count: 506
+      percent: 11.06
+    '2010':
+      count: 539
+      percent: 12.17
+    '2011':
+      count: 657
+      percent: 14.59
+    '2013':
+      count: 844
+      percent: 18.13
+    '2014':
+      count: 781
+      percent: 17.33
+    '2015':
+      count: 777
+      percent: 16.95
+'16083':
+  name: Twin Falls County
+  employment:
+    '2006':
+      count: 31
+      percent: 0.09
+    '2007':
+      count: 44
+      percent: 0.13
+    '2008':
+      count: 62
+      percent: 0.18
+    '2009':
+      count: 34
+      percent: 0.1
+    '2010':
+      count: 24
+      percent: 0.07
+    '2011':
+      count: 19
+      percent: 0.06
+    '2012':
+      count: 18
+      percent: 0.05
+    '2013':
+      count: 9
+      percent: 0.03
+'16085':
+  name: Valley County
+  employment:
+    '2006':
+      count: 28
+      percent: 0.59
+    '2007':
+      count: 27
+      percent: 0.57
+    '2008':
+      count: 13
+      percent: 0.3
+    '2009':
+      count: 11
+      percent: 0.29
+    '2010':
+      count: 18
+      percent: 0.5
+    '2011':
+      count: 17
+      percent: 0.46
+    '2012':
+      count: 39
+      percent: 1.01

@@ -1,0 +1,61 @@
+'51051':
+  name: Dickenson County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 241734
+        '2007': 206302
+        '2008': 201200
+        '2009': 178134
+        '2010': 172100
+        '2011': 159776
+        '2012': 153659
+        '2013': 143227
+        '2014': 131549
+        '2015': 113778
+'51071':
+  name: Giles County
+  products:
+    Limestone (tons):
+      name: Limestone
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+'51091':
+  name: Highland County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 2830
+        '2007': 681
+        '2008': 183
+'51195':
+  name: Wise County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2006': 1342
+        '2007': 1375
+        '2008': 9619
+        '2009': 20181
+        '2010': 17194
+        '2011': 21856
+        '2012': 20290
+        '2013': 19506
+        '2014': 17830
+        '2015': 16304

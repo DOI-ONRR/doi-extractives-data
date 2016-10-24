@@ -1,73 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic Page Needs
-    ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="google-site-verification" content="OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0">
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
+    <!-- Mobile Specific Metas -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Twitter and OpenGraph data
-    ================================================== -->
     <!-- type -->
     <meta property="og:type" content="website">
 
-    <!-- title -->
-    {% if page.title %}
-      <title>{{ page.title }}</title>
-      <meta property="og:title" content="{{ page.title | xml_escape }}" />
-      <meta name="twitter:title" content="{{ page.title | xml_escape }}">
-    {% else %}
-      <title>{{ site.title }}</title>
-      <meta property="og:title" content="{{ site.title | xml_escape }}" />
-      <meta name="twitter:title" content="{{ site.title | xml_escape }}">
-    {% endif %}
+    <!-- title -->{% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
+    <title>{{ page_title }}</title>
+    <meta property="og:title" content="{{ page_title | xml_escape }}">
+    <meta name="twitter:title" content="{{ page_title | xml_escape }}">
 
-    <!-- url -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <!-- url -->{% assign page_url = page.url | replace: 'index.html', '' | prepend: site.url %}
+    <link rel="canonical" href="{{ page_url }}">
+    <meta property="og:url" content="{{ page_url }}">
 
     <!-- img -->
-    <meta property="og:img" content="{{ site.url }}/img/explore-home-revenue.png">
+    <meta property="og:image" content="{{ site.url }}/img/unfurl_image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/img/explore-home-revenue.png">
+    <meta name="twitter:image" content="{{ site.url }}/img/unfurl_image.png">
 
     <!-- description -->
     <meta property="og:description" content="{{ site.description }}">
     <meta name="twitter:description" content="{{ site.description }}">
 
-    <!-- Favicons
-    ================================================== -->
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32">
 
-    <!-- Styles
-    ================================================== -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
 
-    <!-- Scripts
-    ================================================== -->
-    <script src="{{ site.baseurl }}/js/lib/main.min.js" charset="utf-8"></script>
+    <!-- Scripts -->
+    <script src="{{ site.baseurl }}/js/lib/main.min.js"></script>
 
     <script>
       eiti.beckleyApiKey = '{{ site.beckley_api_key }}' || '';
       eiti.data = eiti.data || {};
       eiti.data.path = '{{ site.baseurl }}/data/';
-      eiti.commodities = ({{ site.data.commodities|jsonify }});
-      eiti.resource = ({{ site.data.resource|jsonify }});
     </script>
 
   </head>
 
-  <body class="{{ page.body_class }}">
+  <body>
     {% include layout/banner.html %}
 
     {% include layout/header.html %}

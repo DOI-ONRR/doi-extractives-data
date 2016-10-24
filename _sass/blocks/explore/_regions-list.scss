@@ -42,15 +42,19 @@
 }
 
 .subregions {
+  border: none;
   border-collapse: collapse;
   width: 100%;
 
-  &,
   td,
   th,
   tr {
-    border: 0;
-    border-bottom: 1px solid $neutral-gray;
+    border: none;
+  }
+
+  td,
+  th {
+    border-top: 1px solid $neutral-gray;
     padding-left: $base-padding-lite;
     padding-right: $base-padding-lite;
     text-align: left;
@@ -95,8 +99,13 @@
     }
   }
 
-  tr > *:last-child {
+  .has-material-variance > * {
+    padding-bottom: 0;
+  }
 
+  .material-variance > * {
+    border-top: none;
+    padding-top: 0;
   }
 
   tr {
@@ -105,7 +114,7 @@
       width: 80%;
 
       &.narrow {
-        vertical-align: middle;
+        vertical-align: top;
         width: 35%;
       }
 
@@ -113,22 +122,22 @@
         padding-left: 0;
       }
     }
+
     .variance,
     .centered {
       text-align: center;
     }
 
     .variance {
-      vertical-align: middle;
+      vertical-align: top;
     }
   }
 
-  tr > td > .reportee {
-    color: $neutral-gray;
+  td .reportee {
     display: inline-block;
-    font-weight: $weight-book;
+    margin-left: 0.2em;
     text-align: left;
-    width: 25px;
+    width: 3em;
   }
 
   .bar { // specific to reconcilation

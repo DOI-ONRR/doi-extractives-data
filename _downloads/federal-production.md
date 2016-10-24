@@ -9,23 +9,22 @@ breadcrumb:
 ---
 
 
-> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production.
+> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2006-2015.
 
 
-<p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
+<p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links">
-    <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
-    <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
-    <li><a href="{{site.baseurl}}/data/state/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by state (tsv)</a></li>
-    <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by county (tsv)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/federal_production_CY06-15_2016-09-02.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
   </ul>
 </p>
 
-<p class="downloads-download_links-intro">Download <strong>fiscal</strong> year data:
+<p class="downloads-download_links-intro">Download fiscal year data:
   <ul class="downloads-download_links">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_FY05-14_2016-02-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/federal_production_FY06-15_2016-09-02.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
   </ul>
 </p>
+
+This dataset also includes county-level data about coal production on federal land.
 
 If you are looking for additional information on Federal production data please visit the [ONRR Statistical Information Site](http://statistics.onrr.gov/). We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 
@@ -43,9 +42,23 @@ most recent completed fiscal and calendar year.
 
 ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act.
 
-
 * "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level
 * All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)
+
+### Why aren’t national totals equal to the sum of all state totals?
+
+In some cases, national totals include amounts that are {{ "withheld" | term }} at the state or county level.
+
+### Why is geothermal energy listed so many times?
+
+We can only compare production that is reported in the same unit. The standard unit of measurement for geothermal energy in the federal production dataset is kilowatt hours, but there are a few counties that report it differently. We have separate charts for each of these counties, because they report in nonstandard units:
+
+* Dona Ana County, NM reports direct use of geothermal resources in _million gallons_
+* Churchill County, NV reports direct use of geothermal resources in _hundred gallons_
+* Lassen County, CA reports direct use of geothermal resources in _million BTUs_
+* Lassen County, CA reports geothermal energy generation as _other_ (no unit)
+* Lake County, CA; Sonoma County, CA; and Beaver County, UT report geothermal energy generation in _thousand pounds_
+* Inyo County, CA reports sulfur from geothermal resources as _sulfur_ (no unit)
 
 ### A note about “Mixed Exploratory” versus “Federal” categories of production
 

@@ -1,0 +1,78 @@
+{% assign gdp = site.data.state_gdp[state_id] %}
+{% assign year_range = site.data.years.gdp | default: site.data.years.default | jsonify %}
+{% assign empty_years = '' | split: '' %}
+
+<section id="gdp" is="year-switcher-section" class="economic gdp">
+
+  {%
+    include sticky-header.html
+    header_text='Gross domestic product (GDP)'
+    year_range=year_range
+    selector=true
+  %}
+
+  <div class="chart-selector-wrapper">
+    {% if gdp %}
+      {% for y in year_list %}
+        {% assign s_y = y | to_s %}
+        {% unless gdp[s_y].dollars > 0 %}
+          {% assign empty_years = empty_years | push:s_y %}
+        {% endunless %}
+      {% endfor %}
+      {% include year-selector.html year_range=year_range empty_years=empty_years %}
+    {% endif %}
+    <p class="chart-description{% unless gdp %} no-selector{% endunless %}">
+      Data about each state’s {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} comes from the Bureau of Economic Analysis.
+      <br>
+      <a href="{{site.baseurl}}/downloads/#gdp">
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      </a>
+    </p>
+  </div><!-- /.chart-selector-wrapper -->
+
+  {% if gdp %}
+  <div class="chart-list">
+
+    {% assign _metrics = 'dollars' | split: ' ' %}
+    {% for _metric in _metrics %}
+      {% assign _format = ',' %}
+      {% if _metric == 'dollars' %}
+        {% assign _format = '$,' %}
+      {% elsif _metric == 'percent' %}
+        {% assign _format = '%' %}
+      {% endif %}
+
+    <section class="chart-item">
+      <h3 class="chart-title"><span>GDP ({{ _metric }})</span></h3>
+
+      <figure class="chart chart-{{ _metric }}">
+        <eiti-bar-chart
+          aria-controls="gdp-figures-{{ _metric }}"
+          data='{{ gdp | map_hash: _metric | jsonify }}'
+          x-range="{{ year_range }}"
+          x-value="{{ year }}"
+          data-units="{{ _metric }}">
+        </eiti-bar-chart>
+        <figcaption id="gdp-figures-{{ _metric }}">
+          <span class="caption-data">
+            In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+            extractive industries accounted for
+            <span class="eiti-bar-chart-y-value"
+              data-format="{{ _format }}">${{ gdp[year].dollars | intcomma }}</span>, or
+            <year-value year="{{ year }}" data-year-values='{{ gdp | map_hash: "percent" | jsonify }}'
+              empty="--">{{ gdp[year].percent | percent }}</year-value>%
+            of {{ state_name }}’s GDP.
+          </span>
+          <span class="caption-no-data" aria-hidden="true">
+            There is no data for {{ state_name }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+          </span>
+        </figcaption>
+      </figure><!-- /.chart -->
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
+
+  </div><!-- /.chart-list -->
+  {% endif %}
+</section>

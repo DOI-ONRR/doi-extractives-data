@@ -278,8 +278,9 @@
 
       &.wide {
         @include span-columns(12);
-        max-height: 60px;
+
         margin-top: $base-padding-lite;
+        max-height: 60px;
         padding: 0;
 
         .legend-svg {

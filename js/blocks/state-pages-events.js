@@ -1,4 +1,4 @@
-(function(exports) {
+(function() {
   'use strict';
 
   var eitiDataMaps = d3.selectAll('eiti-data-map');

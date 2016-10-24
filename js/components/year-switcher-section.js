@@ -17,11 +17,16 @@
 
     var yearValues = root.selectAll('year-value');
 
-    var update = function(year, icon) {
+    var update = function(year, updateAllCharts) {
       root.selectAll('.eiti-bar-chart-x-value')
         .text(year);
 
-      nonIconCharts.property('x', year);
+      if (updateAllCharts) {
+        charts.property('x', year);
+      } else {
+        nonIconCharts.property('x', year);
+      }
+
       maps.each(function() {
         this.setYear(year);
       });
@@ -39,7 +44,7 @@
     };
 
     select.on('change.year', function() {
-      update(this.value);
+      update(this.value, true);
     });
 
 

@@ -51,8 +51,8 @@ eiti-bar-chart {
       font-weight: $weight-light;
 
       @include respond-to(small-down) {
-        @include font-size(0.5);
-        transform: translateY(-5px);
+        @include font-size(0.9);
+        transform: translateY(-2px);
       }
 
       &.dataless {
@@ -104,10 +104,6 @@ eiti-bar-chart {
   text {
     @include font-size(1);
     fill: $gray-dark;
-
-    @include respond-to(small-down) {
-      @include font-size(0.5);
-    }
   }
 
   line {

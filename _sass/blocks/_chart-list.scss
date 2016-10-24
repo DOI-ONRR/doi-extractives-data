@@ -39,6 +39,8 @@
     }
 
     @include respond-to(small-down) {
+      @include font-size(1);
+
       span {
         &:last-child {
           text-align: right;
@@ -193,7 +195,8 @@
     padding-top: $base-padding;
 
     @include respond-to(small-down) {
-      padding-top: 0;
+      padding-top: $base-padding-lite;
+      @include font-size(1); // 16px
     }
 
     @include respond-to(small-up) {

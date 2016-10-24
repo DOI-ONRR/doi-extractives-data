@@ -299,6 +299,7 @@
 
     setTimeout(function() {
       self.update();
+      self.instantiated = true;
     }, 100);
   }
 
@@ -400,17 +401,20 @@
           },
           set: function(data) {
             this[DATA] = data;
-
-            var shouldLazyLoad = this.getAttribute('lazy-load');
-            var isSmallWindow = window.innerWidth
-              || document.body.clientWidth
-              || window.clientWidth < 600;
-            if (shouldLazyLoad == 'small' && isSmallWindow) {
-              this.lazyload();
-            } else if (shouldLazyLoad == 'large' && !isSmallWindow) {
-              this.lazyload();
-            } else {
+            if (this.instantiated) {
               this.update();
+            } else {
+              var shouldLazyLoad = this.getAttribute('lazy-load');
+              var isSmallWindow = window.innerWidth
+                || document.body.clientWidth
+                || window.clientWidth < 600;
+              if (shouldLazyLoad == 'small' && isSmallWindow) {
+                this.lazyload();
+              } else if (shouldLazyLoad == 'large' && !isSmallWindow) {
+                this.lazyload();
+              } else {
+                this.update();
+              }
             }
           }
         },

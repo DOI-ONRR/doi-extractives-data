@@ -33,7 +33,7 @@
   top = top + extentMargin;
   var extentTop = top - extentMargin;
 
-  var fullHeight = height + textMargin + extentMargin
+  var fullHeight = height + extentMargin
     + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
 

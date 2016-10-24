@@ -1,6 +1,6 @@
 @mixin chart-selector($float-direction: none) {
   @include span-columns(2);
-  @include font-size(13 / 16);
+  @include font-size(1);
 
   background-color: $green-dark-chart;
   background-image: url('../img/icons/chevron-dn-med-white.svg');

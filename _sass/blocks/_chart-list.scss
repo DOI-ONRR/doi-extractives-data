@@ -187,11 +187,18 @@
 
     font-weight: $weight-light;
     line-height: 20px;
-    min-height: 85px;
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: $base-padding;
+
+    @include respond-to(small-down) {
+      padding-top: 0;
+    }
+
+    @include respond-to(small-up) {
+      min-height: 85px;
+    }
 
     > :last-child {
       text-align: right;

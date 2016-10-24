@@ -128,8 +128,6 @@
     svg.on('mouseout.county', function(){
       clearFields();
     });
-
-     d3.select(window).on('resize.crop', cropMaps);
   };
 
   var detached = function() {

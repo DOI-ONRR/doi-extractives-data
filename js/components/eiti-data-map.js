@@ -156,7 +156,7 @@
 
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
-          var steps = this.getAttribute('steps') || 5;
+          var steps = this.getAttribute('steps') || 4;
           var format = this.getAttribute('format');
           var legendDelimiter = '–';
           var legendFormat = format === '$'
@@ -183,7 +183,7 @@
           shapePadding,
           shapeMargin;
 
-          var colors = colorbrewer[scheme][steps];
+          var colors = ['#dcf4fc', '#a1d4ed', '#3d95bd', '#005078'];
           if (!colors) {
             return console.error(
               'bad # of steps (%d) for color scheme:', steps, scheme

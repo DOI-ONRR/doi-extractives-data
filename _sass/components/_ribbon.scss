@@ -76,12 +76,16 @@
 }
 
 .ribbon-card-top-text-header {
-  @include heading(para-lg);
+  @include heading(para-md);
   font-weight: $weight-bold;
   line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: $base-padding-lite;
   text-align: left;
+}
+
+.ribbon-card-top-text-header-padded {
+  margin-bottom: $base-padding;
 }
 
 .ribbon-card-top-text-header-sub {

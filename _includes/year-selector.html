@@ -1,7 +1,7 @@
 {% if include.year_range %}
-  {% assign _year_list = include.year_range | to_list %}
+  {% assign _year_list = include.year_range | to_list | reverse %}
 
-  <select class="chart-selector">
+  <select class="chart-selector{% if include.class_name %} {{ include.class_name }}{% endif %}">
     {% if include.empty_years %}<!-- empty years: {{ include.empty_years | jsonify }} -->{% endif %}
     {% for _year in _year_list %}
       {% assign __year = year | to_i %}

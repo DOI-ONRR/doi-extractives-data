@@ -4,6 +4,10 @@ title: Colorado
 FIPS: 08
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [Colorado Department of Natural Resources](http://dnr.state.co.us/Pages/DNRDefault.aspx)  provides regulatory information, monthly resource production data, quarterly levy data, and information on drilling permits.
   - The [Oil and Gas Conservation Commission](http://cogcc.state.co.us/#/home) oversees the development of Colorado’s oil and gas natural resources.

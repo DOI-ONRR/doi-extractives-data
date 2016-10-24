@@ -36,7 +36,7 @@ data-map {
     }
 
     .map-container {
-      background-color: $gray-pale;
+      background-color: $gray-light;
       border: 0;
       margin-bottom: 10px;
     }
@@ -103,9 +103,12 @@ data-map {
 
 // map legend
 .details-container {
-  bottom: 0;
+  display: block;
   margin: 0;
-  position: absolute;
+
+  button {
+    margin-top: $base-padding-lite;
+  }
 }
 
 eiti-data-map {
@@ -149,9 +152,9 @@ eiti-data-map {
 
 .legend-svg {
   border: none;
-  height: 215px;
+  height: 95px;
   padding: 0;
-  width: 200px;
+  width: 100%;
 
   .cell text {
     @include font-size(3 / 4);
@@ -165,7 +168,7 @@ eiti-data-map {
   padding-top: $standard-padding-lite;
 
   .legend-svg.horizontal {
-    height: 50px;
+    max-height: 14px;
   }
 }
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_name: 'explore'
 nav_items:
   - name: overview
     title: Top
@@ -59,7 +60,8 @@ nav_items:
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
-{% assign steps = 5 %}
+{% assign steps = 4 %}
+
 
 {% assign is_priority_state = page.priority %}
 {% assign is_case_study_state = page.case_study %}
@@ -77,6 +79,7 @@ nav_items:
 
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
   <section class="container">
+
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
@@ -85,12 +88,13 @@ nav_items:
 
     <div class="container-left-9">
 
-      <section id="overview">
-        <h2 class="state-page-overview">Overview</h2>
+      <section id="overview" class="section-top">
 
         {% include location/section-overview.html %}
 
       </section>
+
+      {% include layout/mobile-nav.html %}
 
       <section id="production">
         <h2>Production</h2>
@@ -104,7 +108,7 @@ nav_items:
           The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}’s energy production and usage</a>.
         </p>
         {% if page.state_production %}
-          {{ page.state_production | markdownify }}
+          {{ page.state_production | liquify | markdownify }}
         {% endif %}
 
         {% include location/section-all-production.html %}
@@ -112,11 +116,16 @@ nav_items:
         {% include location/section-federal-production.html %}
 
         {% if page.state_land %}
-          <h3 id="state-production">Production on state land in {{ state_name }}</h3>
+          {% assign header_text = 'Production on state land in {{ state_name }}' | liquify %}
+          {%
+            include sticky-header.html
+            header_text=header_text
+            header_id='state-production'
+          %}
           {{ page.state_land | liquify | markdownify }}
         {% endif %}
         {% if page.state_land_production %}
-          {{ page.state_land_production | markdownify }}
+          {{ page.state_land_production | liquify | markdownify }}
         {% endif %}
 
       </section>
@@ -128,8 +137,13 @@ nav_items:
 
         {% include location/section-disbursements.html %}
 
-        <section id="state-disbursements" class="disbursements">
-          <h3{% if page.opt_in == true %} class="sticky"{% endif %}>State disbursements</h3>
+        <section class="disbursements">
+
+          {%
+            include sticky-header.html
+            header_text='State disbursements'
+            header_id='state-disbursements'
+          %}
 
           {% if page.opt_in == true %}
             {% include location/opt-in/state-disbursements.html location_id=state_id %}
@@ -144,7 +158,7 @@ nav_items:
       <section id="economic-impact">
         <h2>Economic impact</h2>
         {% if page.state_impact %}
-        {{ page.state_impact | markdownify }}
+        {{ page.state_impact | liquify | markdownify }}
 
         <p>
           In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.

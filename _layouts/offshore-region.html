@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_name: 'explore'
 nav_items:
   - name: overview
     title: Top
@@ -23,6 +24,10 @@ nav_items:
 {% assign year = site.data.years.now | to_s %}
 {% assign _viewbox = site.data.viewboxes_offshore[region_id] %}
 
+{% if page.is_cropped %}
+  {% assign _viewbox = site.data.viewboxes_offshore_cropped[region_id] %}
+{% endif %}
+
 <main id="offshore-region-{{ region_id }}" class="container-page-wrapper layout-state-pages">
   <section class="container">
     <div>
@@ -33,13 +38,15 @@ nav_items:
     <h1 id="title">{{ region_title }}</h1>
 
     <div class="container-left-9">
-      
-      <section id="overview">
-        <h2 class="state-page-overview">Overview</h2>
+
+      <section id="overview" class="section-top">
           <p>
             Unlike land (which can be owned by states, local governments, corporations, or private individuals), the waters and submerged lands of the {{ "Outer Continental Shelf" | term }} are entirely administered by the federal government. This means that all <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">offshore drilling</a> and <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">renewable energy generation</a> takes place in federal waters.
           </p>
       </section>
+
+      <!-- include state pages mobile navigation -->
+      {% include layout/mobile-nav.html %}
 
       <section id="production">
         <h2>Production</h2>

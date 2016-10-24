@@ -9,10 +9,12 @@
   require('../components/year-switcher-section.js');
   require('../components/eiti-data-map-table.js');
   require('../components/eiti-tooltip-wrapper.js');
+  require('../components/ownership-map.js');
 
   require('../components/aria-tabs.js');
 
   require('../components/sticky.js');
+  require('../components/mobile-nav.js');
 
   // exporting instance of OpenListNav because openListNav is
   // referenced in the markup:
@@ -20,5 +22,6 @@
   var OpenListNav = require('../components/open-list-nav.js');
   exports.openListNav = new OpenListNav();
 
+  require('../blocks/state-pages-events.js');
 })(window);
 

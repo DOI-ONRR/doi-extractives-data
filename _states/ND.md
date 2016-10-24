@@ -4,6 +4,10 @@ title: North Dakota
 FIPS: '38'
 
 priority: true
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [North Dakota Department of Mineral Resources Oil and Gas Division](https://www.dmr.nd.gov/oilgas/) regulates the drilling and production of oil and gas in the state. In addition to its regulatory oversight function, the Oil and Gas Division manages permitting and maintains production and well data.
   - [Oil and gas regulations](https://www.dmr.nd.gov/oilgas/rules/rulebook.pdf)

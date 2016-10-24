@@ -7,8 +7,12 @@ opt_in: true
 
 state_revenue_year: 2015
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 case_study_link: |
-    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](../../case-studies/campbell/).
+    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County]({{ site.baseurl }}/case-studies/campbell/).
 state_production: |
     Most of Wyoming's natural resource extraction takes place on federal land, including a majority of coal production and two thirds of natural gas production. Much of this federal land is managed by the Bureau of Land Management.
 
@@ -30,7 +34,7 @@ state_revenue: |
 
     In production year 2014, all 23 of Wyoming’s counties had taxable mineral production, though over 60% percent of revenue from mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
 state_revenue_sustainability: |
-    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2014. Total revenue rose from just under $800 billion in 2005 to over $1,200 billion in 2008, then fell to about $1,000 billion in 2009 and 2010 before rising to about $1,300 billion by 2014. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.](../../img/WY_revenue_sustainability.svg)
+    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2014. Total revenue rose from just under $800 billion in 2005 to over $1,200 billion in 2008, then fell to about $1,000 billion in 2009 and 2010 before rising to about $1,300 billion by 2014. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.]({{ site.baseurl }}/img/WY_revenue_sustainability.svg)
 
     In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and account for up to a quarter of general fund revenues.
 
@@ -107,7 +111,7 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The USEITI case study on [Campbell County](../../case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The USEITI case study on [Campbell County]({{ site.baseurl }}/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:

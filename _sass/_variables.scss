@@ -48,6 +48,7 @@ $gray-darkest: #435159;
 $black-light: #323c42;
 $black: #1d2326;
 
+// map to deprecated values
 $light-gray-light: $gray-pale;
 $light-gray: $gray-pale;
 $light-gray-dark: $gray-lighter;
@@ -110,6 +111,7 @@ $standard-padding-large: 1.875rem; //30px
 $standard-padding-extra: 3.125rem; //50px
 $standard-padding-jumbo: 3.8rem;
 $standard-padding-fluffed: 5rem;
+$standard-padding-separation: 6rem;
 
 // Page padding
 // Use in contexts where the padding/margin
@@ -159,3 +161,7 @@ $greener-land-lightness-bump: lightness($green-land) * $opacity-state;
 $greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
 $greener-land: darken($green-land, $greener-land-lightness-bump);
 $greenest-land: darken($green-land, $greenest-land-lightness-bump);
+
+
+// SVG
+$svg-map-padding: 3.6%;

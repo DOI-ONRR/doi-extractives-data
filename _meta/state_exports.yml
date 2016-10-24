@@ -1,6 +1,4 @@
 '{state}':
   commodities:
     '{commodity}':
-      '{year}':
-        dollars: '{dollars}'
-        percent: '{percent}'
+      '{year}': '{dollars}'

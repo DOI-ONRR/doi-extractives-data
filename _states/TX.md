@@ -16,10 +16,10 @@ neighbors:
 
 priority: true
 
-nearby_offshore_region: 'the <a href="../offshore-gulf/">Gulf of Mexico</a>'
+nearby_offshore_region: 'the <a href="{{ site.baseurl }}/offshore-gulf/">Gulf of Mexico</a>'
 
 case_study_link: |
-    For a detailed view of how natural gas extraction affects communities in Texas, read the [case study on Tarrant and Johnson Counties](../../case-studies/tarrant-and-johnson/).
+    For a detailed view of how natural gas extraction affects communities in Texas, read the [case study on Tarrant and Johnson Counties]({{ site.baseurl }}/case-studies/tarrant-and-johnson/).
 ---
 
 * The [Railroad Commission of Texas](http://www.rrc.state.tx.us/) is statutorily responsible for regulating the exploration and production of the state’s natural resources: oil, natural gas, minerals (particularly lignite and coal), and alternative fuels. The commission oversees natural resource extraction, land reclamation, and environmental protection, as well as safety and compliance related to the state’s extensive oil and gas pipeline infrastructure.

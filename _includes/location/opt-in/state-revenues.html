@@ -7,7 +7,7 @@
   {% assign revenue_total = streams.All.Total[revenue_year] %}
 
 {% if page.state_revenue %}
-  {{ page.state_revenue | markdownify }}
+  {{ page.state_revenue | liquify | markdownify }}
 {% endif %}
 
 <!-- This link only works if the file is named correctly. -->
@@ -75,7 +75,7 @@
 {% if page.state_revenue_sustainability %}
   <h4 id="revenue-sustainability">Revenue sustainability</h4>
 
-  {{ page.state_revenue_sustainability | markdownify }}
+  {{ page.state_revenue_sustainability | liquify | markdownify }}
 {% endif %}
 
 {% if page.state_tax_expenditures %}
@@ -84,5 +84,5 @@
     Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
   </p>
 
-  {{ page.state_tax_expenditures | markdownify }}
+  {{ page.state_tax_expenditures | liquify | markdownify }}
 {% endif %}

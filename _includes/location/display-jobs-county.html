@@ -9,6 +9,13 @@
     </tr>
   </thead>
   <tbody>
+  {% if include.scrollable %}
+  <tr class="inner-table-row">
+    <td colspan="3" class="inner-table-cell">
+      <div class="inner-table-wrapper">
+        <table>
+          <tbody>
+  {% endif %}
   {% for county in include.values %}
     {% assign years_values = county[1].employment %}
     {% assign fips = county[0] | pad_left: 5, '0' %}
@@ -43,5 +50,12 @@
       </tr>
     {% endif %}
   {% endfor %}
+  {% if include.scrollable %}
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    {% endif %}
   </tbody>
 </table>

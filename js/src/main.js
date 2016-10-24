@@ -13,7 +13,6 @@
   // common 3rd-party dependencies
   exports.queue = require('d3-queue');
   exports.topojson = require('topojson');
-  exports.colorbrewer = require('colorbrewer');
   exports.$ = exports.jQuery = require('jquery');
 
   // EITI site-wide common code

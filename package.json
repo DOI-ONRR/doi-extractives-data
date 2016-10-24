@@ -20,6 +20,7 @@
     "immutable": "^3.7.6",
     "jquery": "^1.11.3",
     "list.js": "^1.1.1",
+    "object-assign": "^4.1.0",
     "pty.js": "github:chjj/pty.js",
     "stickyfill": "^1.1.1",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",

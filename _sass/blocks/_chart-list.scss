@@ -111,11 +111,11 @@
       @include span-columns(4);
     }
 
-    @include respond-to(small-down) {
-      figure {
+    // @include respond-to(small-down) {
+    //   figure {
         // display: none;
-      }
-    }
+      // }
+    // }
 
     border-top: none;
     display: flex;
@@ -176,6 +176,14 @@
 
   figure {
     margin-top: 0;
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+
+    @include respond-to(tiny-to-small) {
+      @include span-columns(8);
+    }
 
     @include respond-to(small-up) {
       &[aria-hidden=true] {

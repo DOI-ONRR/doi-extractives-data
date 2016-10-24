@@ -294,15 +294,6 @@
     }
   };
 
-  var lazyload = function() {
-    var self = this;
-
-    setTimeout(function() {
-      self.update();
-      self.instantiated = true;
-    }, 100);
-  }
-
   var formatUnits = function(text, units) {
     if (units === '$' || units === 'dollars') {
       text = [units, text].join(' ');
@@ -392,8 +383,6 @@
         detachedCallback: {value: detached},
 
         update: {value: update},
-        instantiated: {value: false},
-        lazyload: {value: lazyload},
 
         data: {
           get: function() {
@@ -401,21 +390,7 @@
           },
           set: function(data) {
             this[DATA] = data;
-            if (this.instantiated) {
-              this.update();
-            } else {
-              var shouldLazyLoad = this.getAttribute('lazy-load');
-              var isSmallWindow = window.innerWidth
-                || document.body.clientWidth
-                || window.clientWidth < 600;
-              if (shouldLazyLoad == 'small' && isSmallWindow) {
-                this.lazyload();
-              } else if (shouldLazyLoad == 'large' && !isSmallWindow) {
-                this.lazyload();
-              } else {
-                this.update();
-              }
-            }
+            this.update();
           }
         },
 

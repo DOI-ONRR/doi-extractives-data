@@ -13,7 +13,6 @@
         x-range="{{ include.year_range | default: year_range }}"
         x-value="{{ include.year | default: year }}"
         data-units="{{ include.units }}"
-        lazy-load="large"
         {% if include.is_icon %}is-icon="true"{% endif %}
         class="bar-chart-icon">
       </eiti-bar-chart>

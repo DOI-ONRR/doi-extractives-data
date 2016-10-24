@@ -21,11 +21,11 @@
       root.selectAll('.eiti-bar-chart-x-value')
         .text(year);
 
-      if (updateAllCharts) {
-        charts.property('x', year);
-      } else {
-        nonIconCharts.property('x', year);
-      }
+      // if (updateAllCharts) {
+      charts.property('x', year);
+      // } else {
+        // nonIconCharts.property('x', year);
+      // }
 
       maps.each(function() {
         this.setYear(year);

@@ -59,7 +59,8 @@
           data='{{ production_values | jsonify }}'
           x-range="{{ year_range }}"
           x-value="{{ year }}"
-          data-units="{{ long_units }}">
+          data-units="{{ long_units }}"
+          lazy-load="small">
         </eiti-bar-chart>
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="caption-data">

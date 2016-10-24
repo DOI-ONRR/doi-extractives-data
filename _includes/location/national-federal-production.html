@@ -58,9 +58,9 @@
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
-      {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
-      <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
 
+      <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
+        {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
         {%
           include chart_title.html
           chart_name=product_name

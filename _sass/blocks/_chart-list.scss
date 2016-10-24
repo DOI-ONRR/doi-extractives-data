@@ -40,13 +40,13 @@
 
     @include respond-to(small-down) {
       span {
+        &:last-child {
+          text-align: right;
+        }
+
         &:first-child {
           text-align: left;
           width: 100%;
-        }
-
-        &:last-child {
-          text-align: right;
         }
       }
     }

@@ -83,6 +83,8 @@
   var detached = function() {
   };
 
+
+
   var update = function() {
     var root = d3.select(this);
     var isIcon = root.attr('is-icon');
@@ -292,6 +294,14 @@
     }
   };
 
+  var lazyload = function() {
+    var self = this;
+
+    setTimeout(function() {
+      self.update();
+    }, 100);
+  }
+
   var formatUnits = function(text, units) {
     if (units === '$' || units === 'dollars') {
       text = [units, text].join(' ');
@@ -382,6 +392,7 @@
 
         update: {value: update},
         instantiated: {value: false},
+        lazyload: {value: lazyload},
 
         data: {
           get: function() {
@@ -389,7 +400,18 @@
           },
           set: function(data) {
             this[DATA] = data;
-            this.update();
+
+            var shouldLazyLoad = this.getAttribute('lazy-load');
+            var isSmallWindow = window.innerWidth
+              || document.body.clientWidth
+              || window.clientWidth < 600;
+            if (shouldLazyLoad == 'small' && isSmallWindow) {
+              this.lazyload();
+            } else if (shouldLazyLoad == 'large' && !isSmallWindow) {
+              this.lazyload();
+            } else {
+              this.update();
+            }
           }
         },
 

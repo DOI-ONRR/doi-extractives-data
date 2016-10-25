@@ -13,7 +13,18 @@
     padding-bottom: $base-padding-jumbo;
   }
 
-  .chart-title {
+  .chart-title-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    @include respond-to(small-up) {
+      display: none;
+    }
+  }
+
+  .chart-title,
+  .chart-title-small {
     @include heading(large-caps);
     align-items: flex-end;
     border-bottom: 1px solid $gray-dark;
@@ -22,7 +33,55 @@
     flex: 1 0 auto;
     margin-bottom: $base-padding-base;
     min-height: 40px;
-    padding-top: 2.5rem;
+
+    @include respond-to(small-up) {
+      padding-top: 2.5rem;
+    }
+
+    @include respond-to(small-down) {
+      @include font-size(1);
+
+      span {
+        &:last-child {
+          text-align: right;
+        }
+
+        &:first-child {
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .chart-title-small {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    @include respond-to(small-up) {
+      display: none;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .chart-title-large {
+    display: none;
+
+    @include respond-to(small-up) {
+      display: flex;
+    }
+  }
+
+  .chart-title-icon {
+    width: 1rem;
   }
 
   .chart-list-intro {
@@ -34,10 +93,10 @@
   }
 
   .chart-item {
-    @include span-columns(8);
+    @include span-columns(12);
 
-    @include respond-to(tiny-up) {
-      @include span-columns(6);
+    @include respond-to(small-down) {
+      @include omega();
     }
 
     @include respond-to(small-up) {
@@ -83,9 +142,6 @@
   }
 
   &:not(.has-intro) {
-    @include respond-to(tiny-to-small) {
-      @include chart-columns(2);
-    }
 
     @include respond-to(small-to-medium) {
       @include chart-columns(3);
@@ -111,6 +167,20 @@
 
   figure {
     margin-top: 0;
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+
+    @include respond-to(tiny-to-small) {
+      @include span-columns(8);
+    }
+
+    @include respond-to(small-up) {
+      &[aria-hidden=true] {
+        display: inline-block;
+      }
+    }
   }
 
   figcaption {
@@ -118,11 +188,19 @@
 
     font-weight: $weight-light;
     line-height: 20px;
-    min-height: 85px;
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: $base-padding;
+
+    @include respond-to(small-up) {
+      min-height: 85px;
+    }
+
+    @include respond-to(small-down) {
+      padding-top: $base-padding-lite;
+      @include font-size(1); // 16px
+    }
 
     > :last-child {
       text-align: right;

@@ -47,7 +47,7 @@
     <section id="state-all-production-{{ product_slug }}" class="chart-item">
 
       {% assign chart_toggle = 'state-all-production-figures-chart-{{ product_slug }}' | liquify %}
-      {% production_data = production_values | map_hash: "volume" %}
+      {% assign production_data = production_values | map_hash: "volume" %}
 
       {%
         include chart_title.html

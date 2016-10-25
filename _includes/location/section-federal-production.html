@@ -74,7 +74,7 @@
           <div class="chart-container">
 
             {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
-            {% production_data = production_values | map_hash: "volume" %}
+            {% assign production_data = production_values | map_hash: "volume" %}
             {%
               include chart_title.html
               chart_name=product_name

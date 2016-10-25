@@ -80,6 +80,10 @@
     }
   }
 
+  .chart-title-icon {
+    width: 1rem;
+  }
+
   .chart-list-intro {
     @include span-columns(8);
   }

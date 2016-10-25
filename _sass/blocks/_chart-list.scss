@@ -91,10 +91,6 @@
   .chart-item {
     @include span-columns(12);
 
-    // @include respond-to(tiny-up) {
-    //   @include span-columns(6);
-    // }
-
     @include respond-to(small-down) {
       @include omega();
     }
@@ -110,12 +106,6 @@
     @include respond-to(large-up) {
       @include span-columns(4);
     }
-
-    // @include respond-to(small-down) {
-    //   figure {
-        // display: none;
-      // }
-    // }
 
     border-top: none;
     display: flex;
@@ -148,9 +138,6 @@
   }
 
   &:not(.has-intro) {
-    // @include respond-to(tiny-to-small) {
-    //   @include chart-columns(2);
-    // }
 
     @include respond-to(small-to-medium) {
       @include chart-columns(3);
@@ -202,13 +189,13 @@
     padding-right: 0;
     padding-top: $base-padding;
 
+    @include respond-to(small-up) {
+      min-height: 85px;
+    }
+
     @include respond-to(small-down) {
       padding-top: $base-padding-lite;
       @include font-size(1); // 16px
-    }
-
-    @include respond-to(small-up) {
-      min-height: 85px;
     }
 
     > :last-child {

@@ -5,7 +5,13 @@
   var DATA = '__es_data__';
   var X = '__es_x__';
 
-  var observedAttributes = ['x-range', 'data', 'x-value', 'data-units', 'is-icon'];
+  var observedAttributes = [
+    'x-range',
+    'data',
+    'x-value',
+    'data-units',
+    'is-icon'
+  ];
 
   // global dimensions
   var width = 300;
@@ -38,10 +44,8 @@
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
-    var self = this;
     var root = d3.select(this);
     var isIcon = root.attr('is-icon');
-    var uniqueId =  Math.random() * 10e6;
 
     var svgHeight = isIcon
       ? height

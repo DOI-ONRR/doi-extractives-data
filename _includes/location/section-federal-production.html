@@ -73,17 +73,22 @@
 
           <div class="chart-container">
 
-            <h4 class="chart-title">
-              <span>
-                {{ product_name }}
-                {% if units_title %} ({{ units_title }}){% endif %}
-              </span>
-            </h4>
+            {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
+            {% production_data = production_values | map_hash: "volume" %}
+            {%
+              include chart_title.html
+              chart_name=product_name
+              chart_toggle=chart_toggle
+              chart_values=production_data
+              units=long_units
+              is_icon=true
+              chart_units_title=units_title
+            %}
 
-            <figure class="chart">
+            <figure class="chart" id="{{ chart_toggle }}">
               <eiti-bar-chart
                 aria-controls="federal-production-figures-{{ product_slug }} federal-production-withheld"
-                data='{{ production_values | map_hash: "volume" | jsonify }}'
+                data='{{ production_data | jsonify }}'
                 x-range="{{ year_range }}"
                 x-value="{{ year }}"
                 data-units="{{ long_units }}">

@@ -168,12 +168,12 @@
   figure {
     margin-top: 0;
 
-    &[aria-hidden=true] {
-      display: none;
-    }
-
     @include respond-to(tiny-to-small) {
       @include span-columns(8);
+    }
+
+    &[aria-hidden=true] {
+      display: none;
     }
 
     @include respond-to(small-up) {
@@ -198,8 +198,8 @@
     }
 
     @include respond-to(small-down) {
-      padding-top: $base-padding-lite;
       @include font-size(1); // 16px
+      padding-top: $base-padding-lite;
     }
 
     > :last-child {

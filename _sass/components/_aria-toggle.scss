@@ -26,6 +26,14 @@
       content: '▼';
     }
   }
+
+  &.aria-toggle-white {
+    background-color: $white;
+  }
+
+  &.aria-toggle-large .aria-toggle-icon {
+    width: 1rem;
+  }
 }
 
 .aria-toggle-icon {

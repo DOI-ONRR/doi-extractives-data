@@ -40,6 +40,7 @@
 
     @include respond-to(small-down) {
       @include font-size(1);
+      line-height: $line-height-caps;
 
       span {
         &:last-child {
@@ -199,7 +200,7 @@
 
     @include respond-to(small-down) {
       @include font-size(1); // 16px
-      padding-top: $base-padding-lite;
+      padding-top: 0;
     }
 
     > :last-child {
@@ -243,7 +244,7 @@
     }
 
     a {
-      @include heading(para-sm);
+      @include heading(para-md);
 
       color: $blue;
       text-decoration: none;

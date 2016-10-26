@@ -39,11 +39,21 @@
       {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
 
+
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
-      <h3 class="chart-title"><span>{{ product_name }}</span></h3>
+      {% assign chart_toggle = 'all-production-figures-chart-{{ product_slug }}' | liquify %}
 
-      <figure class="chart">
+      {%
+        include chart_title.html
+        chart_name=product_name
+        chart_toggle=chart_toggle
+        chart_values=production_values
+        units=long_units
+        is_icon=true
+      %}
+
+      <figure class="chart" id="{{ chart_toggle }}">
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
           data='{{ production_values | jsonify }}'

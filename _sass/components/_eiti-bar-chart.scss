@@ -50,6 +50,11 @@ eiti-bar-chart {
       fill: $gray-darkest;
       font-weight: $weight-light;
 
+      @include respond-to(small-down) {
+        @include font-size(0.8);
+        transform: translateY(-2px);
+      }
+
       &.dataless {
         fill: $gray;
       }
@@ -73,6 +78,11 @@ eiti-bar-chart {
   .tick-hover text {
     font-weight: $weight-book;
   }
+
+  &.bar-chart-icon {
+    margin-left: $base-padding-lite;
+    width: 60px;
+  }
 }
 
 .eiti-bar-chart-x-value,
@@ -86,15 +96,19 @@ eiti-bar-chart {
 
   text {
     @include font-size(1);
-
     text-anchor: middle;
   }
 }
 
 .extent-line {
   text {
-    @include font-size(1);
+    @include font-size(0.75);
+
     fill: $gray-dark;
+
+    @include respond-to(small-up) {
+      @include font-size(1);
+    }
   }
 
   line {

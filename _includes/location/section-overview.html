@@ -38,7 +38,7 @@
     <!-- Includes link to relevant offshore region, if there is one -->
     {% if page.nearby_offshore_region %}
     <p>
-      {{ state_name }} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {{ state_name }}, see {{ page.nearby_offshore_region }}.
+      {{ state_name }} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {{ state_name }}, see {{ page.nearby_offshore_region | liquify }}.
     </p>
     {% endif %}
 

@@ -11,7 +11,7 @@ priority: true
 
 locality_name: 'Parish'
 
-nearby_offshore_region: 'the <a href="{{ site.baseurl }}/offshore-gulf/">Gulf of Mexico</a>'
+nearby_offshore_region: 'the <a href="{{ site.baseurl }}/explore/offshore-gulf/">Gulf of Mexico</a>'
 
 case_study_link: |
     For a detailed view of how natural gas production affects communities in Louisiana, read the [DeSoto Parish case study]({{ site.baseurl }}/case-studies/desoto/).

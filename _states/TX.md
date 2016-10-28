@@ -16,7 +16,7 @@ neighbors:
 
 priority: true
 
-nearby_offshore_region: 'the <a href="{{ site.baseurl }}/offshore-gulf/">Gulf of Mexico</a>'
+nearby_offshore_region: 'the <a href="{{ site.baseurl }}/explore/offshore-gulf/">Gulf of Mexico</a>'
 
 case_study_link: |
     For a detailed view of how natural gas extraction affects communities in Texas, read the [case study on Tarrant and Johnson Counties]({{ site.baseurl }}/case-studies/tarrant-and-johnson/).

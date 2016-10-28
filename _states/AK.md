@@ -18,7 +18,7 @@ state_revenue_year: 2015
 
 locality_name: 'Borough or census area'
 
-nearby_offshore_region: '<a href="{{ site.baseurl }}/offshore-alaska/">offshore Alaska</a>'
+nearby_offshore_region: '<a href="{{ site.baseurl }}/explore/offshore-alaska/">offshore Alaska</a>'
 
 case_study_link: |
     For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/).

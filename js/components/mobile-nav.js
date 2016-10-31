@@ -68,14 +68,14 @@
     };
 
     var resize = function(e) {
-      var event = e || d3.event;
-      var target = event.currentTarget;
+      var event = e || d3.event || window.event;
+      var target = event.currentTarget || document.querySelector('.mobile-nav button');
       var type = event.type;
       var windowHeight  = window.innerHeight || e.clientHeight;
       var newHeight = windowHeight - collapsedHeaderHeight;
-      var isExpanded = target.getAttribute('aria-expanded') === 'true';
 
       if (type === 'click' || type === 'touch') {
+        var isExpanded = target.getAttribute('aria-expanded') === 'true';
         if (root.classed('stuck')) {
           makeFullScreen(true);
         }

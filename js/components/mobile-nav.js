@@ -6,8 +6,13 @@
       : value + 'px';
   };
 
+  var rem = function (rems) {
+    return Number(rems) * 16;
+  }
+
   var attached = function() {
     var root = d3.select(this);
+
     var win = d3.select(window);
     var doc = d3.select(document);
     var navIsFull = false;
@@ -44,22 +49,41 @@
       navIsFull = !navIsFull;
     };
 
+    var hideNextSibling = function (argument) {
+      var nextSibling = d3.select(root.node().nextElementSibling);
+      var nextSiblingTagName = root.node().nextElementSibling.tagName.toLowerCase();
+      if (!nextSibling.empty()) {
+        if (nextSiblingTagName !== 'section') {
+          nextSibling.style('height', pixelize(rem(4)));
+        }
+      }
+    };
+
     var jump = function() {
       toggles.each(function() {
         this.collapse();
       });
       makeFullScreen(false, false);
+      hideNextSibling();
     };
 
     var resize = function(e) {
+      var event = e || d3.event;
+      var target = event.currentTarget;
+      var type = event.type;
       var windowHeight  = window.innerHeight || e.clientHeight;
       var newHeight = windowHeight - collapsedHeaderHeight;
-      content.style('height', pixelize(newHeight));
+      var isExpanded = target.getAttribute('aria-expanded') === 'true';
 
-      if (d3.event.type === 'click' || d3.event.type === 'touch') {
+      if (type === 'click' || type === 'touch') {
         if (root.classed('stuck')) {
           makeFullScreen(true);
         }
+        if (!isExpanded) {
+          hideNextSibling();
+        }
+      } else {
+        content.style('height', pixelize(newHeight));
       }
     };
 

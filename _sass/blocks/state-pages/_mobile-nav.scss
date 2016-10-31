@@ -1,6 +1,8 @@
 .layout-state-pages .mobile-nav {
   background-color: $white;
   border-bottom: 2px solid $light-green;
+  display: inline-block;
+  margin-top: 4rem;
   padding: 0;
   width: 100%;
   z-index: 9001;
@@ -32,8 +34,8 @@
   button {
     background: transparent;
     float: right;
-    margin-bottom: inherit;
-    margin-top: inherit;
+    margin-bottom: initial;
+    margin-top: initial;
   }
 
 
@@ -101,4 +103,9 @@
     margin: 0;
     padding-left: 2 * $base-padding;
   }
+}
+
+.national-page .mobile-nav {
+  margin-bottom: 4rem;
+  margin-top: 0;
 }

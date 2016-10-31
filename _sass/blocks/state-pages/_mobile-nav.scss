@@ -1,6 +1,4 @@
 .layout-state-pages .mobile-nav {
-  background-color: $white;
-  border-bottom: 2px solid $light-green;
   display: block;
   margin-top: 4rem;
   padding: 0;
@@ -31,7 +29,9 @@
   }
 
   button {
-    background: transparent;
+    background-color: $white;
+    border-bottom: 2px solid $light-green;
+    border-radius: 0;
     float: right;
     margin-bottom: initial;
     margin-top: initial;

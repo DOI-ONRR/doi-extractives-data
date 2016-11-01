@@ -13,7 +13,19 @@
     padding-bottom: $base-padding-jumbo;
   }
 
-  .chart-title {
+  .chart-title-button {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    @include respond-to(small-up) {
+      display: none;
+    }
+  }
+
+  .chart-title,
+  .chart-title-small {
     @include heading(large-caps);
     align-items: flex-end;
     border-bottom: 1px solid $gray-dark;
@@ -22,22 +34,73 @@
     flex: 1 0 auto;
     margin-bottom: $base-padding-base;
     min-height: 40px;
-    padding-top: 2.5rem;
+
+    @include respond-to(small-up) {
+      padding-top: 2.5rem;
+    }
+
+    @include respond-to(small-down) {
+      @include font-size(1);
+      line-height: $line-height-caps;
+
+      span {
+        &:last-child {
+          text-align: right;
+        }
+
+        &:first-child {
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .chart-title-small {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    @include respond-to(small-up) {
+      display: none;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .chart-title-large {
+    display: none;
+
+    @include respond-to(small-up) {
+      display: flex;
+    }
+  }
+
+  .chart-title-icon {
+    width: 1rem;
   }
 
   .chart-list-intro {
     @include span-columns(8);
   }
 
-  div + .chart-item {
+  // only give it more margin if it is the
+  // next and last one.
+  div + .chart-item:last-child {
     margin-top: 1.5rem;
   }
 
   .chart-item {
-    @include span-columns(8);
+    @include span-columns(12);
 
-    @include respond-to(tiny-up) {
-      @include span-columns(6);
+    @include respond-to(small-down) {
+      @include omega();
     }
 
     @include respond-to(small-up) {
@@ -53,7 +116,7 @@
     }
 
     border-top: none;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     margin-top: 0;
     padding-top: 0;
@@ -83,9 +146,6 @@
   }
 
   &:not(.has-intro) {
-    @include respond-to(tiny-to-small) {
-      @include chart-columns(2);
-    }
 
     @include respond-to(small-to-medium) {
       @include chart-columns(3);
@@ -109,8 +169,32 @@
     padding-left: $base-padding-lite;
   }
 
+  .chart {
+    @include respond-to(small-down) {
+      @include span-columns(12);
+    }
+
+    @include respond-to(tiny-to-small) {
+      @include span-columns(8);
+    }
+  }
+
   figure {
     margin-top: 0;
+
+    @include respond-to(small-down) {
+      @include span-columns(12);
+    }
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+
+    @include respond-to(small-up) {
+      &[aria-hidden=true] {
+        display: inline-block;
+      }
+    }
   }
 
   figcaption {
@@ -118,11 +202,19 @@
 
     font-weight: $weight-light;
     line-height: 20px;
-    min-height: 85px;
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: $base-padding-lite;
+
+    @include respond-to(small-up) {
+      min-height: 85px;
+    }
+
+    @include respond-to(small-down) {
+      @include font-size(1); // 16px
+      padding-top: 0;
+    }
 
     > :last-child {
       text-align: right;
@@ -165,7 +257,7 @@
     }
 
     a {
-      @include heading(para-sm);
+      @include heading(para-md);
 
       color: $blue;
       text-decoration: none;
@@ -197,6 +289,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 
+  @include respond-to(small-down) {
+    margin-top: $base-padding-extra;
+  }
+
   > * {
     @include span-columns(4);
 
@@ -210,16 +306,13 @@
   }
 
   > .chart-container {
-    @include span-columns(8);
+    @include span-columns(12);
+
+    @include respond-to(small-down) {
+      @include omega();
+    }
 
     padding: 0;
-
-    @include respond-to(tiny-up) {
-      @include span-columns(6);
-
-      padding-left: 0;
-      padding-right: 2 * $base-padding-lite;
-    }
 
     @include respond-to(small-up) {
       @include span-columns(4);

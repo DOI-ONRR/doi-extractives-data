@@ -58,16 +58,20 @@
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
+
       <section id="national-federal-production-{{ product_slug }}" class="product chart-item">
+        {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
+        {%
+          include chart_title.html
+          chart_name=product_name
+          chart_toggle=chart_toggle
+          chart_values=production_values
+          units=long_units
+          is_icon=true
+          chart_units_title=units_title
+        %}
 
-        <h4 class="chart-title">
-          <span>
-            {{ product_name }}
-            {% if units_title %} ({{ units_title }}){% endif %}
-          </span>
-        </h4>
-
-        <figure class="chart">
+        <figure class="chart" id="{{ chart_toggle }}">
           <eiti-bar-chart
             aria-controls="national-federal-production-figures-{{ product_slug }} national-federal-production-withheld"
             data='{{ production_values | jsonify }}'
@@ -119,11 +123,19 @@
         </li>
         {% endfor %}
       </ul>
-      <button is="aria-toggle" aria-expanded="false"
-        aria-toggles="aria-expanded"
-        aria-controls="federal-production-withheld-products">
-        <span class="hide-expanded">Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}</span>
-        <span class="show-expanded">Close</span>
+      <button is="aria-toggle"
+              aria-expanded="false"
+              aria-toggles="aria-expanded"
+              aria-controls="federal-production-withheld-products"
+              class="aria-toggle-large aria-toggle-white">
+        <span class="hide-expanded">
+          <img class="aria-toggle-icon" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg"/>
+          Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}
+        </span>
+        <span class="show-expanded">
+          <img class="aria-toggle-icon" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
+          Close
+        </span>
       </button>
     {% endif %}
     </section>

@@ -132,11 +132,11 @@
 
   .chart-item,
   .details-container {
-    @include font-size(0.75); // 12px
     button {
+      @include font-size(0.75); // 12px
+
       background-color: $white;
       color: $dark-gray;
-      font: inherit;
     }
   }
 

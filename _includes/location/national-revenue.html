@@ -66,21 +66,19 @@
       selector=true
     %}
 
+    <div class="chart-selector-wrapper">
+
+      {% include year-selector.html year_range=year_range %}
+
+      <p class="chart-description">
+        Non-tax revenue collected by {{ "ONRR" | term }} often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
+        <br>
+        <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
     <section class="chart-list">
-
-      <div class="chart-selector-wrapper">
-
-        {% include year-selector.html year_range=year_range %}
-
-        <p class="chart-description">
-          Non-tax revenue collected by {{ "ONRR" | term }} often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
-          <br>
-          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-          </a>
-        </p>
-      </div>
-
 
       {% for commodity in revenue_commodities %}
         {% assign annual_revenue = commodity[1] %}
@@ -90,9 +88,17 @@
 
         <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
-          <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
+          {% assign chart_toggle = 'revenue-figures-chart-{{ commodity_slug }}' | liquify %}
+          {%
+            include chart_title.html
+            chart_name=commodity_name
+            chart_toggle=chart_toggle
+            chart_values=annual_revenue
+            units="$,"
+            is_icon=true
+          %}
 
-          <figure class="chart">
+          <figure class="chart" id="{{ chart_toggle }}">
             <eiti-bar-chart
               data='{{ annual_revenue | jsonify }}'
               aria-controls="revenue-figures-{{ commodity_slug }}"

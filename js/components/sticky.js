@@ -11,13 +11,15 @@
     function(el) {
       stickies.push(el);
       sticky.add(el);
-      var isNav = el.classList.contains('sticky_nav');
-      var preSticky = document.createElement('div');
-      el.parentNode.insertBefore(preSticky, el)
-        .setAttribute('class', 'pre-sticky');
+      if (!el.classList.contains('mobile-nav')) {
+        var isNav = el.classList.contains('sticky_nav');
+        var preSticky = document.createElement('div');
+        el.parentNode.insertBefore(preSticky, el)
+          .setAttribute('class', 'pre-sticky');
 
-      if (isNav) {
-        preSticky.classList.add('pre-sticky-small');
+        if (isNav) {
+          preSticky.classList.add('pre-sticky-small');
+        }
       }
     }
   );

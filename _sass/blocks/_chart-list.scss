@@ -237,7 +237,7 @@
   .withheld-products {
     > p,
     > ul {
-      @include font-size(1);
+      @include font-size(0.875);
     }
   }
 }

@@ -6,39 +6,39 @@
 
 {% assign mobile_nav_title = include.mobile_nav_title | default: state_name | default: region_name | default: 'Explore Data' %}
 
+<div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
 <div is="mobile-nav" class="mobile-nav sticky">
   <button is="aria-toggle"
     aria-controls="mobile-nav-content"
-    aria-expanded="false"
-    class="flex-row">
-      <h3 class="mobile-nav-header flex-row-flex">{{ mobile_nav_title }}</h3>
-      <span class="hide-expanded flex-row-icon">
-        <icon class="icon icon-chevron-sm-down"></icon>
-      </span>
-      <span class="show-expanded flex-row-icon">
-        <icon class="icon icon-chevron-sm-up"></icon>
-      </span>
+    aria-expanded="false">
+      <div class="flex-row">
+        <h3 class="mobile-nav-header flex-row-flex">{{ mobile_nav_title }}</h3>
+        <span class="hide-expanded flex-row-icon">
+          <icon class="icon icon-chevron-sm-down"></icon>
+        </span>
+        <span class="show-expanded flex-row-icon">
+          <icon class="icon icon-chevron-sm-up"></icon>
+        </span>
+      </div>
   </button>
-  <div id="mobile-nav-content" class="mobile-nav-list-items">
+  <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true">
     <ul>
       {% if selector_nav_items %}
         {% for item in selector_nav_items %}
-            {% if item.name == selector_nav_items[0].name %}
-              <a href="#{{item.name}}"
-                 mobile-nav-item="{{item.name}}"
-                 class="mobile-nav-list-item">{{item.title}}</a>
+            {% if item.mobile_name == 'top' %}
+              <a href="#"
+                 class="mobile-nav-list-item">{{ item.title }}</a>
             {% else %}
-              <a href="#{{item.name}}"
-                 mobile-nav-item="{{item.name}}"
-                 class="mobile-nav-list-item">{{item.title}}</a>
+              <a href="#{{ item.name }}"
+                 class="mobile-nav-list-item">{{ item.title }}</a>
             {% endif %}
 
             {% if item.subnav_items %}
               <ul>
                 {% for subnav_item in item.subnav_items %}
                   <a class="mobile-nav-sublist-item"
-                     mobile-nav-item="{{subnav_item.name}}"
-                     href="#{{subnav_item.name}}">{{subnav_item.title}}</a>
+                     mobile-nav-item="{{ subnav_item.name }}"
+                     href="#{{ subnav_item.name }}">{{ subnav_item.title }}</a>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -47,3 +47,4 @@
     </ul>
   </div>
 </div>
+

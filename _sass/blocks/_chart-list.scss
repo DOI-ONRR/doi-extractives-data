@@ -14,6 +14,7 @@
   }
 
   .chart-title-button {
+    background-color: transparent;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -89,7 +90,9 @@
     @include span-columns(8);
   }
 
-  div + .chart-item {
+  // only give it more margin if it is the
+  // next and last one.
+  div + .chart-item:last-child {
     margin-top: 1.5rem;
   }
 
@@ -113,7 +116,7 @@
     }
 
     border-top: none;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     margin-top: 0;
     padding-top: 0;
@@ -166,11 +169,21 @@
     padding-left: $base-padding-lite;
   }
 
-  figure {
-    margin-top: 0;
+  .chart {
+    @include respond-to(small-down) {
+      @include span-columns(12);
+    }
 
     @include respond-to(tiny-to-small) {
       @include span-columns(8);
+    }
+  }
+
+  figure {
+    margin-top: 0;
+
+    @include respond-to(small-down) {
+      @include span-columns(12);
     }
 
     &[aria-hidden=true] {
@@ -276,6 +289,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 
+  @include respond-to(small-down) {
+    margin-top: $base-padding-extra;
+  }
+
   > * {
     @include span-columns(4);
 
@@ -289,16 +306,13 @@
   }
 
   > .chart-container {
-    @include span-columns(8);
+    @include span-columns(12);
+
+    @include respond-to(small-down) {
+      @include omega();
+    }
 
     padding: 0;
-
-    @include respond-to(tiny-up) {
-      @include span-columns(6);
-
-      padding-left: 0;
-      padding-right: 2 * $base-padding-lite;
-    }
 
     @include respond-to(small-up) {
       @include span-columns(4);

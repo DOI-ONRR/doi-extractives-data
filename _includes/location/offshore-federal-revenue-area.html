@@ -10,14 +10,21 @@
 
     <div class="chart-container">
 
-      <h4 class="chart-title">
-        <span>All commodities</span>
-      </h4>
+      {% assign chart_toggle = 'offshore-revenue-figures-chart' | liquify %}
+      {% assign revenue_data = state_revenue_all | map_hash: "revenue" %}
+      {%
+        include chart_title.html
+        chart_name='All commodities'
+        chart_toggle=chart_toggle
+        chart_values=revenue_data
+        units="$,"
+        is_icon=true
+      %}
 
-      <figure class="chart">
+      <figure class="chart" id="{{ chart_toggle }}">
         <eiti-bar-chart
           aria-controls="federal-revenue-county-figures-All"
-          data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
+          data='{{ revenue_data | jsonify }}'
           x-range="{{ year_range }}"
           x-value="{{ year }}"
           data-units="$,">

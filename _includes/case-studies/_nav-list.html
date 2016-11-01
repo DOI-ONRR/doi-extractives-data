@@ -9,9 +9,17 @@
   {% if selector_nav_items %}
     {% for item in selector_nav_items %}
       {% if item.name == selector_nav_items[0].name %}
-        <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
+        {% if item.title == 'Top' %}
+          <a href="#" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
+        {% else %}
+          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
+        {% endif %}
       {% else %}
-        <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
+        {% if item.title == 'Top' %}
+          <a href="#" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
+        {% else %}
+          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
+        {% endif %}
       {% endif %}
 
       {% if item.subnav_items %}

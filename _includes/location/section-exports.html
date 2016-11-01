@@ -64,9 +64,17 @@
       {% if commodity_name != "Total" and commodity_name != "Extractives" %}
         <section class="chart-item">
 
-          <h3 class="chart-title"><span>{{ commodity_name }}</span></h3>
+          {% assign chart_toggle = 'exports-figures-chart-{{ commodity_slug }}' | liquify %}
+          {%
+            include chart_title.html
+            chart_name=commodity_name
+            chart_toggle=chart_toggle
+            chart_values=exports
+            units=_format
+            is_icon=true
+          %}
 
-          <figure class="chart">
+          <figure class="chart" id="{{ chart_toggle }}">
             <eiti-bar-chart
               aria-controls="exports-figures-{{ commodity_slug }}"
               data='{{ exports | jsonify }}'

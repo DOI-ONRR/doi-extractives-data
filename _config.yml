@@ -9,7 +9,7 @@ description: >
 url: https://useiti.doi.gov
 
 # app version number
-version: v2.1.2
+version: v2.1.3
 
 beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
 
@@ -76,6 +76,9 @@ exclude:
 
 include:
   - /build.log
+
+gems:
+  - jekyll-sitemap
 
 collections:
   case-studies:

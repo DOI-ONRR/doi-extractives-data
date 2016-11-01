@@ -8,7 +8,7 @@
 
   var rem = function (rems) {
     return Number(rems) * 16;
-  }
+  };
 
   var attached = function() {
     var root = d3.select(this);
@@ -49,9 +49,10 @@
       navIsFull = !navIsFull;
     };
 
-    var hideNextSibling = function (argument) {
+    var hideNextSibling = function () {
       var nextSibling = d3.select(root.node().nextElementSibling);
-      var nextSiblingTagName = root.node().nextElementSibling.tagName.toLowerCase();
+      var nextSiblingTagName = root.node().nextElementSibling
+        .tagName.toLowerCase();
       if (!nextSibling.empty()) {
         if (nextSiblingTagName !== 'section') {
           nextSibling.style('height', pixelize(rem(4)));
@@ -69,7 +70,8 @@
 
     var resize = function(e) {
       var event = e || d3.event || window.event;
-      var target = event.currentTarget || document.querySelector('.mobile-nav button');
+      var target = event.currentTarget
+        || document.querySelector('.mobile-nav button');
       var type = event.type;
       var windowHeight  = window.innerHeight || e.clientHeight;
       var newHeight = windowHeight - collapsedHeaderHeight;

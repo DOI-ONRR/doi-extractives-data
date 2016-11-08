@@ -60,7 +60,7 @@ For more information:
 
 <img src="{{ site.baseurl }}/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
 
-The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)). 
+The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)).
 
 ## AML revenue and disbursements
 

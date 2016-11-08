@@ -183,7 +183,7 @@
           shapePadding,
           shapeMargin;
 
-          var colors = ['#dcf4fc', '#a1d4ed', '#3d95bd', '#005078'];
+          var colors = ['#e1f4fa', '#a1d4ed', '#3d95bd', '#005078'];
           if (!colors) {
             return console.error(
               'bad # of steps (%d) for color scheme:', steps, scheme

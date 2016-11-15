@@ -24,7 +24,7 @@ We also have [notes on this data](https://github.com/18F/doi-extractives-data/wi
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian Lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2013. Disbursements of revenue due to extractive activities on U.S. Federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2015. Disbursements of revenue due to extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data Publication
 

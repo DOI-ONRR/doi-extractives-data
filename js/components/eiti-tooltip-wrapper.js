@@ -102,6 +102,8 @@
 
             if (svgWidth <= tooltipWidth + x) {
               return pixelize(event.layerX - tooltipWidth - CURSOR_OFFSET);
+            } else if (x < 0) {
+              return pixelize(event.layerX + tooltipWidth + CURSOR_OFFSET);
             } else {
               return pixelize(x);
             }
@@ -114,6 +116,8 @@
 
             if (svgHeight <= tooltipHeight + y) {
               return pixelize(event.layerY - tooltipHeight - CURSOR_OFFSET);
+            } else if (y < 0) {
+              return pixelize(event.layerY + tooltipHeight + CURSOR_OFFSET);
             } else {
               return pixelize(y);
             }

@@ -105,11 +105,20 @@ nav_items:
           location_name=state_name
           year=year
         %}
+        <!-- EIA state profile link -->
         <p>
           The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}’s energy production and usage</a>.
         </p>
+        <!-- State production intro (for opt-in states) -->
         {% if page.state_production %}
           {{ page.state_production | liquify | markdownify }}
+        {% else %}
+          <!-- USGS state profile link; only auto-generated for non-opt-in states because this is included in the custom production summary for opt-in states -->
+          {% unless state_id == "DC" %}
+          <p>
+            <strong>Nonenergy minerals:</strong> The U.S. Geological Survey publishes information about nonenergy mineral extraction in the <a href="http://minerals.usgs.gov/minerals/pubs/state/{{ state_id | downcase }}.html">USGS Minerals Yearbook for {{ state_name }}</a>.
+          </p>
+          {% endunless %}
         {% endif %}
 
         {% include location/section-all-production.html %}

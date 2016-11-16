@@ -40,7 +40,7 @@
             data-value='{{ revenue_amount }}'
             data-year-values='{{ years_values | jsonify }}'>{{ revenue_amount | intcomma }}</td>
     </tr>
-    <tr data-fips='{{ fips }}'>
+    <tr data-fips='{{ fips }}' class="sentence">
         <td colspan='3'
             data-year-values='{{ years_values | jsonify }}'
             data-sentence='{{ revenue_amount }}'

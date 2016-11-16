@@ -30,42 +30,8 @@
   tbody > tr.mouseover {
     background-color: $gray-pale;
 
-    td {
-      background-color: $gray-pale;
-      border-top: 1px solid $gray-light;
-    }
-
     .swatch {
       border: 1px solid $neutral-gray;
-    }
-  }
-
-  tbody > tr.selected {
-    &.sentence {
-      border-top: 0;
-    }
-
-    &:not(.sentence) {
-      border-bottom: 0;
-
-      td {
-        border-bottom: 0;
-      }
-    }
-
-    td[data-sentence] {
-      border-top: 0;
-    }
-  }
-
-  tbody > tr {
-    border-bottom: 1px solid $gray-light;
-    border-top: 1px solid $gray-light;
-    display: table-row;
-
-    td {
-      border-bottom: 1px solid $gray-light;
-      border-top: 1px solid $gray-light;
     }
   }
 

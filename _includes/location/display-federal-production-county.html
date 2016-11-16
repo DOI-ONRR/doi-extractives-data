@@ -6,7 +6,6 @@
   {% assign units = include.long_units %}
 {% endif %}
 
-
 <table is='bar-chart-table'
        data-percent-max='100'
        class='county-table'
@@ -43,7 +42,7 @@
               data-year-values='{{ years_values | jsonify }}'>{{ product_volume | intcomma }}</td>
         </tr>
 
-        <tr data-fips='{{ fips }}'>
+        <tr data-fips='{{ fips }}' class="sentence">
           <td colspan='3'
               data-year-values='{{ years_values | jsonify }}'
               data-sentence='{{ product_volume }}'

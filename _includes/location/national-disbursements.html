@@ -4,19 +4,20 @@
 
   <h2>Federal disbursements</h2>
 
-  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
+  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
+    <strong>
+      {% if disbursements %}
+      In {{ year }}, ONRR disbursed a total of
+      ${{ disbursements.All.All[year] | round | intcomma }}.
+      {% endif %}
+    </strong></p>
   <p>
-    <a href="{{site.baseurl}}/downloads/disbursements/" class="data-downloads">
+    <a href="{{site.baseurl}}/downloads/disbursements/">
       <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
     </a>
   </p>
 
-  <p><strong>
-    {% if disbursements %}
-    In {{ year }}, ONRR disbursed a total of
-    ${{ disbursements.All.All[year] | round | intcomma }}.
-    {% endif %}
-  </strong></p>
+  <h3 id="by-fund">Disbursements by fund</h3>
 
   {% if disbursements %}
     {%

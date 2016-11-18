@@ -108,8 +108,13 @@ $( document ).ready(function() {
     dataType: 'json'
   })
     .done(function(json) {
+      var pagesText = {
+        from: from + 1,
+        to: from + size + 1
+      }
       $('.loading').remove();
-      $('.search-results-count').append( json.hits.total + ' search results');
+
+      $('.search-results-count').append( pagesText.from + '-' + pagesText.to + ' of ' + json.hits.total + ' search results');
 
       if (json.hits.total == 0){
         $('.search-no-results').show();
@@ -143,7 +148,7 @@ $( document ).ready(function() {
         );
       });
 
-      $('.search-results-container').append( hits.join('') );
+      $('.search-results-container .search-results-container').append( hits.join('') );
 
       var paging = {
         needsPrevLink: from > 0,
@@ -154,8 +159,7 @@ $( document ).ready(function() {
         titleNext: 'Next page of search results'
       };
 
-      $('.search-results-container .search-results-container').append(
-        [ 'Prev', 'Next' ]
+      var links = [ 'Prev', 'Next' ]
           .filter(function(link){ return paging[ 'needs' + link + 'Link' ] })
           .map(function(link){
             return (
@@ -165,6 +169,7 @@ $( document ).ready(function() {
             )
           })
           .join(' | ')
-      );
+
+      $('.search-results-container .search-results-container').append(links);
     });
 });

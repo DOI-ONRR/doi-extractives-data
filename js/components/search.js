@@ -111,9 +111,9 @@ $( document ).ready(function() {
       var pagesText = {
         from: from + 1,
         to: from + size + 1
-      }
-      $('.loading').remove();
+      };
 
+      $('.loading').remove();
       $('.search-results-count').append( pagesText.from + '-' + pagesText.to + ' of ' + json.hits.total + ' search results');
 
       if (json.hits.total == 0){

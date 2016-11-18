@@ -148,7 +148,8 @@ $( document ).ready(function() {
         );
       });
 
-      $('.search-results-container .search-results-container').append( hits.join('') );
+      $('.search-results-container .search-results-container')
+        .append( hits.join('') );
 
       var paging = {
         needsPrevLink: from > 0,

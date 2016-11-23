@@ -1,7 +1,10 @@
 All: All commodities
+"Crude Oil": Crude oil
 CO2: Carbon dioxide
 Geothermal: Geothermal energy
 Hardrock: Hardrock minerals
+"Natural Gas": Natural gas
 NGL: Natural gas liquids
+Wind: Wind energy
 "Wood and wood-derived fuels": Wood-derived fuel
 "Conventional Hydroelectric": Hydroelectric

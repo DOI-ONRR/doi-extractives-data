@@ -1,11 +1,11 @@
 {% assign fund_map = site.data.fund_names %}
 <div class="u-overflow-wrapper">
-  <table class="table-basic" is="bar-chart-table">
+  <table class="table-basic disbursements-table" is="bar-chart-table">
     <thead>
       <th>Fund</th>
-      <th class="numeric">All funds</th>
-      <th class="numeric">From onshore revenue</th>
-      <th class="numeric">From offshore revenue</th>
+      <th>All funds</th>
+      <th>From onshore revenue</th>
+      <th>From offshore revenue</th>
     </thead>
     <tbody>
     {% for _fund in include.values %}

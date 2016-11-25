@@ -54,10 +54,19 @@ td {
 
   thead {
     background-color: transparent;
+    line-height: $line-height-caps;
 
     tr {
       border-bottom: 2px solid $mid-gray;
     }
+  }
+}
+
+.disbursements-table {
+  td,
+  th {
+    padding-bottom: $base-padding-small;
+    padding-top: $base-padding-small;
   }
 }
 

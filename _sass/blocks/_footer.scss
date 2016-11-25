@@ -172,6 +172,7 @@ footer,
 
 .footer-social {
   display: inline-block;
+  margin-left: 0.25em;
 }
 
 .footer-link_social {
@@ -184,8 +185,16 @@ footer,
 
   &:hover,
   &:focus {
-    color: $white;
-    text-decoration: underline;
+    text-decoration: none;
+
+    p,
+    .fa-circle {
+      color: $white;
+    }
+
+    p {
+      text-decoration: underline;
+    }
   }
 }
 

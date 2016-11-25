@@ -1,7 +1,7 @@
 (function(exports) {
   'use strict';
 
-  var sticky = require('stickyfill')();
+  var sticky = require('stickyfill-web-module')();
   var stickies = [];
   var doc = d3.select(document);
   var win = d3.select(window);

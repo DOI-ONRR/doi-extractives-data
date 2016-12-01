@@ -56,7 +56,7 @@ Only income taxes from C-corporations are included in the 2015 USEITI Report.
 
 In the U.S., coal producers must pay a federal [coal excise tax]({{ site.baseurl }}/how-it-works/coal-excise-tax/) when they mine coal (a producer is any person or entity that owns the coal after it’s mined from the ground). Producers pay the tax when the coal is first sold or used. The tax does not apply to lignite or to coal mined in the U.S. for export.
 
-The [Abandoned Mine Land (AML) Reclamation Program]({{ site.baseurl }}/how-it-works/aml-fees/) uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977.
+The [Abandoned Mine Land (AML) Reclamation Program]({{ site.baseurl }}/how-it-works/aml-reclamation-program/) uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977.
 
 ### Revenue policy provisions
 

@@ -1,7 +1,8 @@
 {% assign keys = include.value %}
 {% for area in include.areas %}
   {% assign area_id = area[0] %}
-  {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}">{% endif %}
+  {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}"
+                          href="{{ include.href | format_url: area_id }}">{% endif %}
   {% assign value = area[1] | get: keys %}
 
   {% assign year_values = null %}

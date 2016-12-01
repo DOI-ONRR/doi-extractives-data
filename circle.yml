@@ -16,6 +16,6 @@ dependencies:
 ## Customize test commands
 test:
   pre:
-    - npm run test-html
+    # - npm run test-html
     # - npm run test-ruby
     - npm run test

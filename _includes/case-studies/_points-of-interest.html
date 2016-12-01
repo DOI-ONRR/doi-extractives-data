@@ -25,7 +25,8 @@
 
     <g class="case-studies-circle-group">
       <g class="case-studies-caption {% if location[1].wide %} wide{% endif %}{% if location_lines %} long{% endif %}">
-        <a xlink:href="{{ location_permalink | prepend:site.baseurl }}">
+        <a href="{{ location_permalink | prepend:site.baseurl }}"
+           xlink:href="{{ location_permalink | prepend:site.baseurl }}">
           {% if location_id == 'boone_logan_mingo' %}
             <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.25 }}" height="{{ caption_height  | times:1.25 }}"></rect>
           {% else %}

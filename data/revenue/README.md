@@ -8,10 +8,10 @@ This directory contains data for federal revenue collected by the
   The columns are:
   * `Land Category`: always "Federal Offshore"
   * `CY`: i.e. "Calendar Year"
-  * `Offshore Region`: "Alaska", "Atlantic", "Gulf of Mexico", or "Pacific"
+  * `Offshore Region`: see [this map](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#offshore-areas)
   * `Offshore Planning Area`: the sub-area of the offshore region
-  * `BOEM Block Name`
-  * `BOEM Protraction`
+  * `BOEM Block Name`: ?
+  * `BOEM Protraction`: the lowest level of geographic detail. See [BOEM's protraction diagrams](https://www.boem.gov/Official-Protraction-Diagrams/) for more info.
   * `Revenue Type`: "Rents", "Royalties", "Bonus", "Other Revenues"
   * `Mineral Lease Type`: e.g. "Oil & Gas" (vast majority), "Hardrock",
     "Geothermal", "Coal"

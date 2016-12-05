@@ -436,17 +436,17 @@ data/offshore_revenues_by_type.yml:
 			-c _meta/offshore_revenues_by_type.yml \
 			-o _$@
 
-data/reconciliation.yml:
+data/reconciliation:
 	$(query) --format ndjson " \
 		SELECT \
-			company, revenue_type, \
+			year, company, revenue_type, \
 			reported_gov, reported_company, reported_note, \
 			variance_dollars, variance_percent, variance_material \
 		FROM reconciliation \
 		ORDER BY reported_gov DESC, company, revenue_type" \
 		| $(nestly) --if ndjson \
 			-c _meta/reconciliation.yml \
-			-o _$@
+			-o '_$@/{year}.yml'
 
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \

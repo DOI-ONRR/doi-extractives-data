@@ -40,7 +40,9 @@ const TYPES = [
 ];
 
 var parseValue = function (value, unit) {
-  if (value.match(/DNP/)) {
+  if (!value) {
+    return 'N/A';
+  } else if (value.match(/DNP/)) {
     return 'did not participate';
   } else if (value.match(/DNR/)) {
     return 'did not report';
@@ -53,7 +55,7 @@ var parseValue = function (value, unit) {
 
 var roundTwoDecimal = function(num) {
   return typeof(num) == 'number'
-    ? Math.round( num * 100) / 100
+    ? Math.round(num * 100) / 100
     : num;
 };
 
@@ -96,7 +98,7 @@ async.waterfall([
             ? (gov - company) >= 0
             : true;
 
-          var precisePercent = typeof varianceDollars !== 'number'
+          var precisePercent = typeof(varianceDollars) !== 'number'
             ? varianceDollars
             : varianceDollars === 0
               ? 0

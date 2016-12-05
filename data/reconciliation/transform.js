@@ -82,6 +82,7 @@ const MATERIAL_VARIANCES = {
 };
 
 module.exports = {
+  year:             'Year',
   company:          'Company',
   revenue_type:     'Type',
   reported_gov:     parseNA(REPORTED_GOV),

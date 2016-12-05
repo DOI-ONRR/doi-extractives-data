@@ -7,7 +7,6 @@ var yargs = require('yargs')
   .alias('h', 'help')
   .wrap(72);
 
-
 var options = yargs.argv;
 if (options.help) {
   return yargs.showHelp();
@@ -20,6 +19,10 @@ var async = require('async');
 var streamify = require('stream-array');
 var parse = require('../../lib/parse');
 
+const YEAR = process.env.REVENUE_YEAR;
+if (!YEAR) {
+  throw new Error('The REVENUE_YEAR env var is not set!');
+}
 
 const TYPES = [
   'Royalties',
@@ -104,6 +107,7 @@ async.waterfall([
                   ));
 
           result.push({
+            'Year': YEAR,
             'Company': d['Reporting Companies'],
             'Type': type,
             'Government Reported': gov,
@@ -111,7 +115,7 @@ async.waterfall([
             'Variance Dollars': isPos
                ? parseValue(d[type + ' Variance $'], 'dollars')
                : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
-            'Variance Percent': precisePercent
+            'Variance Percent': precisePercent,
           });
       });
     });

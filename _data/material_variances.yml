@@ -34,34 +34,35 @@ thresholds:
     floor: N/A
 
 footnotes:
-  BP America:
-    Rents: 'This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.'
-  Chevron Corporation:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.'
-  Shell E&P Company:
-    Corporate Income Tax: 'This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014.'
-  Exxon Mobil Corporation:
-    Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.'
-  Peabody Energy Corporation:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.'
-  Anadarko Petroleum Corporation:
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.'
-  ConocoPhillips:
-    Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-  Freeport-McMoRan Inc.:
-    Rents: 'The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.'
-  Statoil Gulf of Mexico:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.'
-  Ultra Resources Inc.:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.'
-  'Noble Energy, Inc.':
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.'
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.'
-  Cimarex Energy Co.:
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.'
-  Newfield Exploration Company:
-    Permit Fees: 'The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.'
-  ANKOR Energy LLC:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.'
+  2013:
+    BP America:
+      Rents: 'This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.'
+    Chevron Corporation:
+      Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.'
+    Shell E&P Company:
+      Corporate Income Tax: 'This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014.'
+    Exxon Mobil Corporation:
+      Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.'
+    Peabody Energy Corporation:
+      Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.'
+    Anadarko Petroleum Corporation:
+      Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.'
+    ConocoPhillips:
+      Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+      Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+      Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
+    Freeport-McMoRan Inc.:
+      Rents: 'The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.'
+    Statoil Gulf of Mexico:
+      Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.'
+    Ultra Resources Inc.:
+      Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.'
+    'Noble Energy, Inc.':
+      Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.'
+      Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.'
+    Cimarex Energy Co.:
+      Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.'
+    Newfield Exploration Company:
+      Permit Fees: 'The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.'
+    ANKOR Energy LLC:
+      Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.'

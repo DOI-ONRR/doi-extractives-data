@@ -2,8 +2,42 @@
 layout: default
 ---
 
+{% assign year = page.year | to_s %}
 {% assign material_variance = site.data.material_variances %}
-{% assign footnotes = material_variances.footnotes[page.year] %}
+{% assign explanations = material_variance.explanations[page.year] %}
+
+{% assign companies = site.data.reconciliation[year] %}
+
+{% assign variances = 0 %}
+{% assign explained = 0 %}
+{% assign companies_count = companies | size %}
+{% assign companies_reconciled = 0 %}
+{% assign revenue_total = 0 %}
+{% assign income_tax_total = 0 %}
+
+{% for company in companies %}
+  {% assign company_reconciled = false %}
+  {% for type in company[1] %}
+    {% assign reported_dollars = type[1].reported.company %}
+    {% assign revenue_total = revenue_total | plus: reported_dollars %}
+    {% if type[0] == 'Corporate Income Tax' %}
+      {% assign income_tax_total = income_tax_total | plus: reported_dollars %}
+    {% endif %}
+    {% if type[1].variance.material == 1 %}
+      {% assign company_name = company[0] %}
+      {% assign revenue_type = type[0] %}
+      {% assign variances = variances | plus: 1 %}
+      {% assign explanation = explanations[company_name][revenue_type] %}
+      {% if explanation %}
+        {% assign explained = explained | plus: 1 %}
+        {% assign company_reconciled = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if company_reconciled %}
+    {% assign companies_reconciled = companies_reconciled | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
 <section id="reconciliation" class="explore-subpage container">
 
@@ -16,7 +50,7 @@ layout: default
           /
         </div>
 
-        <h1>Reconciliation / {{ page.year }}</h1>
+        <h1>Reconciliation / {{ year }}</h1>
 
         <p>Every country that participates in EITI reconciles its data.</p>
 
@@ -39,10 +73,21 @@ layout: default
           <ul>
             <li class="flowchart-dialog flowchart-dialog_top flowchart-outcomes">
               <ul>
-                <li>45 companies were asked to report</li>
-                <li>31 companies reported and reconciled $8.5 billion in Department of the Interior revenue</li>
-                <li>12 out of 41 applicable companies reported $190 million in corporate income taxes</li>
-                <li>100% of 17 <span class="term term-end" data-term="material variance" title="Click to define" tabindex="0">material variances<icon class="icon-book"></icon></span> have been explained</li>
+                <li>{{ companies_count }} companies were asked to report</li>
+
+                <li>{{ companies_reconciled }} out of {{ companies_count }}
+                  applicable companies reported ${{ income_tax_total | intcomma }} in corporate
+                  income taxes</li>
+
+                <li>{{ companies_reconciled }} reported and reconciled
+                  ${{ revenue_total | intcomma }} in Department of the Interior revenue</li>
+
+                {% for item in page.results %}
+                <li><b>{{ item | liquify }}</b></li>
+                {% endfor %}
+
+                <li>{{ explained }} ({{ explained | times: 100.0 | divided_by: variances | percent }}%) of {{ variances }}
+                  {{ 'material variances' | term: 'material variance' }} have been explained</li>
               </ul>
             </li>
           </ul>
@@ -154,7 +199,7 @@ layout: default
               </tr>
             </thead>
 
-            {% for company in site.data.reconciliation %}
+            {% for company in companies %}
               {% assign variance_index = 0 %}
               {% assign company_name = company[0] %}
             <tbody class="company subgroup" data-name="{{ company_name | xmlescape }}">
@@ -167,7 +212,7 @@ layout: default
                 {% assign variance = revenue_type[1].variance %}
                 {% assign explanation = nil %}
                 {% if variance.material == 1 %}
-                  {% assign explanation = footnotes[company_name][revenue_stream] %}
+                  {% assign explanation = explanations[company_name][revenue_stream] %}
                   {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
                 {% endif %}
               <tr class="subtype{% if explanation %} has-material-variance{% endif %}">

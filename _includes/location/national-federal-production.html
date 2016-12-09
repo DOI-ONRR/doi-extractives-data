@@ -101,44 +101,42 @@
       </section>
     {% endfor %}
 
-    </div><!-- /.chart-list -->
-
-    <section id="national-federal-production-withheld">
-    {% if withheld_products.size > 0 %}
-      <h3>Data withheld</h3>
-      <p>
-        Production volume was {{ 'withheld' | term }} for the
-        following products:
-      </p>
-      <ul id="federal-production-withheld-products" class="expandable">
-        {% assign all_years = year_list | to_s %}
-        {% for product in withheld_products %}
-          {% assign product_years = '' | split: '' %}
-          {% for _year in product[1].volume %}
-            {% assign product_years = product_years | push: _year[0] %}
+      <section id="national-federal-production-withheld" class="product chart-item withheld-list">
+        <h3 class="chart-title">Data withheld</h3>
+        <p>
+          Production volume was {{ 'withheld' | term }} for the
+          following products:
+        </p>
+        <ul id="federal-production-withheld-products" class="expandable">
+          {% assign all_years = year_list | to_s %}
+          {% for product in withheld_products %}
+            {% assign product_years = '' | split: '' %}
+            {% for _year in product[1].volume %}
+              {% assign product_years = product_years | push: _year[0] %}
+            {% endfor %}
+          <li>
+            {{ product[1].name | default: product[0] }}
+            ({{ product_years | year_range }})
+          </li>
           {% endfor %}
-        <li>
-          {{ product[1].name | default: product[0] }}
-          ({{ product_years | year_range }})
-        </li>
-        {% endfor %}
-      </ul>
-      <button is="aria-toggle"
-              aria-expanded="false"
-              aria-toggles="aria-expanded"
-              aria-controls="federal-production-withheld-products"
-              class="aria-toggle-large aria-toggle-white">
-        <span class="hide-expanded">
-          <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg"/>
-          Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}
-        </span>
-        <span class="show-expanded">
-          <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
-          Close
-        </span>
-      </button>
-    {% endif %}
-    </section>
+        </ul>
+        <button is="aria-toggle"
+                aria-expanded="false"
+                aria-toggles="aria-expanded"
+                aria-controls="federal-production-withheld-products"
+                class="aria-toggle-large aria-toggle-white">
+          <span class="hide-expanded">
+            <img class="aria-toggle-icon" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg">
+            Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}
+          </span>
+          <span class="show-expanded">
+            <img class="aria-toggle-icon" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg">
+            Close
+          </span>
+        </button>
+      </section>
+
+    </div><!-- /.chart-list -->
 
   </section>
 

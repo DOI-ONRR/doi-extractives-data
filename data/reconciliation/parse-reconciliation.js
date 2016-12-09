@@ -95,7 +95,7 @@ async.waterfall([
     fs.exists(taxesFilename, function(exists) {
       if (exists) {
         console.warn('reading tax patches from:', taxesFilename);
-        var taxes = util.readData(
+        util.readData(
           taxesFilename,
           tito.createReadStream('tsv'),
           function(error, taxRows) {

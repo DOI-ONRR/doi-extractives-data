@@ -40,17 +40,7 @@ layout: default
 {% endfor %}
 
 <section id="reconciliation" class="explore-subpage container">
-  <section class="explore-subpage-nav container">
-    <div class="explore-subpage-tabs">
-      <ul>
-        {% for doc in site.reconciliation %}
-        <li class="explore-subpage-tab{% if doc.year == page.year %} active{% endif %}">
-          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.year }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
+  {% include explore-subpage-tabs.html docs=site.reconciliation %}
 
   <section class="container-page-wrapper">
 

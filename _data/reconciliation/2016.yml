@@ -100,13 +100,13 @@ Shell E&P Company:
       material: 0
   Corporate Income Tax:
     reported:
-      government: null
+      government: -239325651
       company: -242478106
       note: null
     variance:
-      dollars: null
-      percent: null
-      material: 0
+      dollars: 3152455
+      percent: 1.32
+      material: 1
 BP America:
   Royalties:
     reported:
@@ -209,13 +209,13 @@ BP America:
       material: 0
   Corporate Income Tax:
     reported:
-      government: null
+      government: -16571767
       company: 100316502
       note: null
     variance:
-      dollars: null
-      percent: null
-      material: 0
+      dollars: -116888269
+      percent: 705.35
+      material: 1
 Chevron Corporation:
   Royalties:
     reported:
@@ -798,6 +798,15 @@ BHP Billiton LTD:
       dollars: 243494
       percent: 2.18
       material: 1
+  Corporate Income Tax:
+    reported:
+      government: 2644390
+      company: 2666092
+      note: null
+    variance:
+      dollars: -21702
+      percent: 0.82
+      material: 0
   AML Fees:
     reported:
       government: 677741
@@ -860,15 +869,6 @@ BHP Billiton LTD:
     variance:
       dollars: 0
       percent: 0
-      material: 0
-  Corporate Income Tax:
-    reported:
-      government: null
-      company: 2666092
-      note: null
-    variance:
-      dollars: null
-      percent: null
       material: 0
 Anadarko Petroleum Corporation:
   Royalties:
@@ -1552,6 +1552,15 @@ Hess Corporation:
       dollars: 0
       percent: 0
       material: 0
+  Corporate Income Tax:
+    reported:
+      government: 9806299
+      company: 9806299
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
   Permit Fees:
     reported:
       government: 221088
@@ -1623,15 +1632,6 @@ Hess Corporation:
     variance:
       dollars: 0
       percent: 0
-      material: 0
-  Corporate Income Tax:
-    reported:
-      government: null
-      company: 9806299
-      note: null
-    variance:
-      dollars: null
-      percent: null
       material: 0
 Ultra Resources Inc.:
   Royalties:
@@ -2124,6 +2124,15 @@ Cimarex Energy Co.:
       dollars: 0
       percent: 0
       material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
   ONRR Civil Penalties:
     reported:
       government: 0
@@ -2168,15 +2177,6 @@ Cimarex Energy Co.:
     variance:
       dollars: 1657
       percent: 0.09
-      material: 0
-  Corporate Income Tax:
-    reported:
-      government: null
-      company: 0
-      note: null
-    variance:
-      dollars: null
-      percent: null
       material: 0
 'EPL Oil & Gas, Inc.':
   Royalties:
@@ -2351,6 +2351,15 @@ Statoil:
       dollars: 0
       percent: 0
       material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
   ONRR Civil Penalties:
     reported:
       government: 0
@@ -2386,15 +2395,6 @@ Statoil:
     variance:
       dollars: -43008
       percent: 1.23
-      material: 0
-  Corporate Income Tax:
-    reported:
-      government: null
-      company: 0
-      note: null
-    variance:
-      dollars: null
-      percent: null
       material: 0
 'WPX Energy, Inc.':
   Royalties:
@@ -2569,6 +2569,15 @@ Statoil:
       dollars: 0
       percent: 0
       material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: -60532
+      note: null
+    variance:
+      dollars: 60532
+      percent: 100
+      material: 0
   OSMRE Civil Penalties:
     reported:
       government: 0
@@ -2604,15 +2613,6 @@ Statoil:
     variance:
       dollars: 0
       percent: 0
-      material: 0
-  Corporate Income Tax:
-    reported:
-      government: null
-      company: -60532
-      note: null
-    variance:
-      dollars: null
-      percent: null
       material: 0
 'Arena Energy, LLC':
   Royalties:

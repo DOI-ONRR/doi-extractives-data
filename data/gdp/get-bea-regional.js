@@ -41,7 +41,7 @@ var params = {
 
 var fetch = function(params) {
   var url = [
-    'http://www.bea.gov/api/data/',
+    'https://www.bea.gov/api/data/',
     qs.stringify(params)
   ].join('?');
   console.warn('fetching:', params, '->', url);

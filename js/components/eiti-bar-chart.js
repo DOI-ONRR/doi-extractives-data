@@ -89,7 +89,10 @@
 
   var crawlCeil = function(ymax, ceilMax, i) {
     var sigFig = '.' + i + 's';
-    var sigFigCeil = +eiti.format.transform(sigFig, eiti.format.siValue)(ceilMax);
+    var sigFigCeil = +eiti.format.transform(
+      sigFig,
+      eiti.format.siValue
+    )(ceilMax);
     var isLessThan = sigFigCeil <= +ymax;
     return !isLessThan ? sigFig : '';
   };
@@ -265,7 +268,10 @@
 
       if (dataUnits.indexOf('$') > -1) {
         dataFormat = eiti.format.transform(
-          eiti.format.transform(sigFigs, eiti.format.transformMetricLong),
+          eiti.format.transform(
+            sigFigs,
+            eiti.format.transformMetricLong
+          ),
           eiti.format.transformDollars
         );
         dataUnits = null;

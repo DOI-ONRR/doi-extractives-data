@@ -245,31 +245,14 @@
       var dataUnits = this.getAttribute('data-units');
       var dataFormat = this.getAttribute('data-format') || '';
 
-      var sigFigs = '';
-      var ceilMax = Math.ceil(+ymax * (1 + extentPercent))
-
-      function crawlMax(ymax, ceilMax, i) {
-        var sigFig = '.' + i + 's';
-        var lessThan = +eiti.format.transform(sigFig, eiti.format.transformSuffixless)(ceilMax) <= +ymax;
-        if (!lessThan) {
-          sigFigs = sigFig;
-        }
-      };
-
-      var SF = 0;
-      while (sigFigs.length < 1) {
-        SF++
-        crawlMax(ymax, ceilMax, SF);
-      }
-
       if (dataUnits.indexOf('$') > -1) {
         dataFormat = eiti.format.transform(
-          eiti.format.transform(sigFigs, eiti.format.transformMetricLong),
+          eiti.format.transform('.1s', eiti.format.transformMetricLong),
           eiti.format.transformDollars
         );
         dataUnits = null;
       } else {
-        dataFormat = eiti.format.transform(sigFigs, eiti.format.transformMetric);
+        dataFormat = eiti.format.transform('.1s', eiti.format.transformMetric);
       }
 
       var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));

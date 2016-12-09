@@ -430,23 +430,6 @@
     };
   })();
 
-
-  eiti.format.transformSuffixless = (function() {
-    var suffix = {k: 1000, M: 1000000, G: 1000000000 };
-    return function(str) {
-      var number;
-      str = str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
-        number = str.replace(s, '').toString() || str;
-        return (+number * suffix[s]);
-      }).replace(/\.0+$/, '');
-      if (number) {
-        return str.slice(number.length, str.length);
-      } else {
-        return str;
-      }
-    };
-  })();
-
   /**
    * Produces international system ("SI")/metric form.
    *

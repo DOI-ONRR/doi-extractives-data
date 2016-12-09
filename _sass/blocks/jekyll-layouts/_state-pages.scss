@@ -170,12 +170,14 @@
 }
 
 .withheld-list {
-  color: $gray-darkest;
   $font-size: 7 / 8;
+  $line-height: 20px;
+
+  color: $gray-darkest;
 
   p {
     @include font-size($font-size);
-    line-height: 1;
+    line-height: $line-height;
   }
 
   ul {

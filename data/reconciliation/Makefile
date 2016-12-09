@@ -2,7 +2,7 @@ all: output
 
 output: input
 	mkdir -p $@
-	for file in input/*.tsv; do \
+	for file in input/????.tsv; do \
 		filename="$${file##*/}"; \
 		REVENUE_YEAR="$${filename%%.*}" ./parse-reconciliation.js \
 			--if tsv \

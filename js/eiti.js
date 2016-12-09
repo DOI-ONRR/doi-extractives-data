@@ -430,8 +430,14 @@
     };
   })();
 
-
-  eiti.format.transformSuffixless = (function() {
+  /**
+   * This is a format transform that turns a value
+   * into its si equivalent
+   *
+   * @param {String} str the formatted string
+   * @return {String} the string with a specified number of significant figures
+   */
+  eiti.format.siValue = (function() {
     var suffix = {k: 1000, M: 1000000, G: 1000000000 };
     return function(str) {
       var number;

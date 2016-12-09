@@ -246,20 +246,21 @@
       var dataFormat = this.getAttribute('data-format') || '';
 
       var sigFigs = '';
-      var ceilMax = Math.ceil(+ymax * (1 + extentPercent))
+      var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
 
-      function crawlMax(ymax, ceilMax, i) {
+      function crawlCeil(ymax, ceilMax, i) {
         var sigFig = '.' + i + 's';
-        var lessThan = +eiti.format.transform(sigFig, eiti.format.transformSuffixless)(ceilMax) <= +ymax;
-        if (!lessThan) {
+        var sigFigCeil = +eiti.format.transform(sigFig, eiti.format.siValue)(ceilMax);
+        var isLessThan = sigFigCeil <= +ymax;
+        if (!isLessThan) {
           sigFigs = sigFig;
         }
       };
 
       var SF = 0;
       while (sigFigs.length < 1) {
-        SF++
-        crawlMax(ymax, ceilMax, SF);
+        SF++;
+        crawlCeil(ymax, ceilMax, SF);
       }
 
       if (dataUnits.indexOf('$') > -1) {

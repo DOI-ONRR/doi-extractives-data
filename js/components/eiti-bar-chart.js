@@ -87,6 +87,13 @@
   var detached = function() {
   };
 
+  var crawlCeil = function(ymax, ceilMax, i) {
+    var sigFig = '.' + i + 's';
+    var sigFigCeil = +eiti.format.transform(sigFig, eiti.format.siValue)(ceilMax);
+    var isLessThan = sigFigCeil <= +ymax;
+    return !isLessThan ? sigFig : '';
+  };
+
   var setSigFigs = function (ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
@@ -95,13 +102,6 @@
       sigFigs = crawlCeil(ymax, ceilMax, SF);
     }
     return sigFigs;
-  }
-
-  var crawlCeil = function(ymax, ceilMax, i) {
-    var sigFig = '.' + i + 's';
-    var sigFigCeil = +eiti.format.transform(sigFig, eiti.format.siValue)(ceilMax);
-    var isLessThan = sigFigCeil <= +ymax;
-    return !isLessThan ? sigFig : '';
   };
 
   var update = function() {

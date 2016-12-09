@@ -70,7 +70,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	BHP Billiton LTD	Renewables	0	0	0	0
 2016	BHP Billiton LTD	AML Fees	677741	677741	0	0
 2016	BHP Billiton LTD	OSMRE Civil Penalties	0	0	0	0
-2016	BHP Billiton LTD	Corporate Income Tax	N/A	2666092	NaN	N/A
+2016	BHP Billiton LTD	Corporate Income Tax	2644390	2666092	-21702	0.82
 2016	BOPCO, LP	Royalties	37875857	did not participate	N/A	N/A
 2016	BOPCO, LP	Rents	50945	did not participate	N/A	N/A
 2016	BOPCO, LP	Bonus	0	did not participate	N/A	N/A
@@ -94,7 +94,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	BP America	Renewables	0	0	0	0
 2016	BP America	AML Fees	0	0	0	0
 2016	BP America	OSMRE Civil Penalties	0	0	0	0
-2016	BP America	Corporate Income Tax	N/A	100316502	NaN	N/A
+2016	BP America	Corporate Income Tax	-16571767	100316502	-116888269	705.35
 2016	Chevron Corporation	Royalties	389992166	390329483	-337317	0.09
 2016	Chevron Corporation	Rents	17823173	17816231	6942	0.04
 2016	Chevron Corporation	Bonus	133248821	133248821	0	0
@@ -118,7 +118,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	Cimarex Energy Co.	Renewables	0	0	0	0
 2016	Cimarex Energy Co.	AML Fees	0	0	0	0
 2016	Cimarex Energy Co.	OSMRE Civil Penalties	0	0	0	0
-2016	Cimarex Energy Co.	Corporate Income Tax	N/A	0	NaN	N/A
+2016	Cimarex Energy Co.	Corporate Income Tax	0	0	0	0
 2016	Cloud Peak Energy Resources, LLC	Royalties	112318349	112318349	0	0
 2016	Cloud Peak Energy Resources, LLC	Rents	100997	100997	0	0
 2016	Cloud Peak Energy Resources, LLC	Bonus	69406946	69406946	0	0
@@ -130,7 +130,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	Cloud Peak Energy Resources, LLC	Renewables	0	0	0	0
 2016	Cloud Peak Energy Resources, LLC	AML Fees	22197745	22197745	0	0
 2016	Cloud Peak Energy Resources, LLC	OSMRE Civil Penalties	0	0	0	0
-2016	Cloud Peak Energy Resources, LLC	Corporate Income Tax	N/A	9806299	NaN	N/A
+2016	Cloud Peak Energy Resources, LLC	Corporate Income Tax	9806299	9806299	0	0
 2016	Concho Resources, Inc. 	Royalties	89356972	did not participate	N/A	N/A
 2016	Concho Resources, Inc. 	Rents	92849	did not participate	N/A	N/A
 2016	Concho Resources, Inc. 	Bonus	0	did not participate	N/A	N/A
@@ -418,7 +418,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	Shell E&P Company	Renewables	0	0	0	0
 2016	Shell E&P Company	AML Fees	0	0	0	0
 2016	Shell E&P Company	OSMRE Civil Penalties	0	0	0	0
-2016	Shell E&P Company	Corporate Income Tax	N/A	-242478106	NaN	N/A
+2016	Shell E&P Company	Corporate Income Tax	-239325651	-242478106	3152455	1.32
 2016	Statoil	Royalties	58944352	58629414	314938	0.53
 2016	Statoil	Rents	7454512	7532317	-77805	1.04
 2016	Statoil	Bonus	69413541	69413541	0	0
@@ -430,7 +430,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	Statoil	Renewables	0	0	0	0
 2016	Statoil	AML Fees	0	0	0	0
 2016	Statoil	OSMRE Civil Penalties	0	0	0	0
-2016	Statoil	Corporate Income Tax	N/A	0	NaN	N/A
+2016	Statoil	Corporate Income Tax	0	0	0	0
 2016	Stone Energy Corporation	Royalties	46672034	46672041	-7	0
 2016	Stone Energy Corporation	Rents	1701632	1701632	0	0
 2016	Stone Energy Corporation	Bonus	1555555	1555555	0	0
@@ -478,7 +478,7 @@ Year	Company	Type	Government Reported	Company Reported	Variance Dollars	Variance
 2016	W&T Offshore, Inc. 	Renewables	0	0	0	0
 2016	W&T Offshore, Inc. 	AML Fees	0	0	0	0
 2016	W&T Offshore, Inc. 	OSMRE Civil Penalties	0	0	0	0
-2016	W&T Offshore, Inc. 	Corporate Income Tax	N/A	-60532	NaN	N/A
+2016	W&T Offshore, Inc. 	Corporate Income Tax	0	-60532	60532	100
 2016	WPX Energy, Inc. 	Royalties	68730517	68895241	-164724	0.24
 2016	WPX Energy, Inc. 	Rents	261419	261419	0	0
 2016	WPX Energy, Inc. 	Bonus	0	0	0	0

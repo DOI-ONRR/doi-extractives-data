@@ -119,28 +119,24 @@
             ({{ product_years | year_range }})
           </li>
           {% endfor %}
-        <li>
-          {{ product[1].name | default: product[0] }}
-          ({{ product_years | year_range }})
-        </li>
-        {% endfor %}
-      </ul>
-      <button is="aria-toggle"
-              aria-expanded="false"
-              aria-toggles="aria-expanded"
-              aria-controls="federal-production-withheld-products"
-              class="aria-toggle-large aria-toggle-white">
-        <span class="hide-expanded">
-          <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg"/>
-          Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}
-        </span>
-        <span class="show-expanded">
-          <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
-          Close
-        </span>
-      </button>
-    {% endif %}
-    </section>
+        </ul>
+        <button is="aria-toggle"
+                aria-expanded="false"
+                aria-toggles="aria-expanded"
+                aria-controls="federal-production-withheld-products"
+                class="aria-toggle-large aria-toggle-white">
+          <span class="hide-expanded">
+            <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg"/>
+            Show all {{ withheld_products.size }} product{{ withheld_products.size | plural }}
+          </span>
+          <span class="show-expanded">
+            <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
+            Close
+          </span>
+        </button>
+      </section>
+
+    </div><!-- /.chart-list -->
 
   </section>
 

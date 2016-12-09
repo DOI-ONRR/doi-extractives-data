@@ -74,21 +74,9 @@ layout: default
           <ul>
             <li class="flowchart-dialog flowchart-dialog_top flowchart-outcomes">
               <ul>
-                <li>{{ companies_count }} companies were asked to report</li>
-
-                <li>{{ companies_reconciled }} out of {{ companies_count }}
-                  applicable companies reported ${{ income_tax_total | intcomma }} in corporate
-                  income taxes</li>
-
-                <li>{{ companies_reconciled }} reported and reconciled
-                  ${{ revenue_total | intcomma }} in Department of the Interior revenue</li>
-
                 {% for item in page.results %}
                 <li><b>{{ item | liquify }}</b></li>
                 {% endfor %}
-
-                <li>{{ explained }} ({{ explained | times: 100.0 | divided_by: variances | percent }}%) of {{ variances }}
-                  {{ 'material variances' | term: 'material variance' }} have been explained</li>
               </ul>
             </li>
           </ul>

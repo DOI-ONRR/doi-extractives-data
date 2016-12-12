@@ -4,7 +4,7 @@
   <p>{{ state_name }} ranks among the top five states in the U.S. for production of:</p>
   	<ul>
       {% for product in top_all_products %}
-        <li>{{ product.name }}: #{{ product.rank }} in the nation ({{ product.percent | floor }}% of U.S. production)</li>
+        <li>{{ product.name | lookup: commodity_names }}: #{{ product.rank }} in the nation ({{ product.percent | floor }}% of U.S. production)</li>
         {% if forloop.index == include.top %}{% break %}{% endif %}
       {% endfor %}
     </ul>

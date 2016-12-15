@@ -1,7 +1,7 @@
 menu:
-    back: "◀ Zurück zu D-EITI.de"
-    about: "Über D-EITI"
-    how-it-work: "Wie funktioniert‘s?"
+    back: "Mehr zur D-EITI Initiative"
+    about: "Start"
+    how-it-work: "Deutsche Rohstoffgewinnung"
     explore-data: "Daten entdecken"
 
 explore-data:
@@ -48,13 +48,11 @@ how-it-work:
     description-2: Informieren sie sich darüber, wie Rohstoffprojekte in Deutschland geplant und umgesetzt werden, was die gesetzlichen Rahmenbedingungen sind und welche staatlichen Einnahmen aus der rohstoffgewinnenden Industrie entstehen.
 
 about:
-    title: Über D-EITI
+    title: Herzlich Willkommen
     description-1: |
-        Die Extractive Industries Transparency Initiative (EITI) ist ein internationaler Standard zur Förderung des
-        transparenten und verantwortungsvollen Managements von natürlichen Ressourcen. Die Bundesregierung hat im Juli 2014
-        beschlossen der Initiative beizutreten und ist seit dem 23. Februar 2016 offiziell implementierendes EITI-Land.
-        In den nächsten 18 Monaten wird die deutsche EITI (D-EITI) einen Bericht ausarbeiten und veröffentlichen,
-        der sowohl umfassende
+        Hier finden Sie umfangreiche Informationen und Daten zum Thema Förderung von Rohstoffen in Deutschland.
+        Das Portal ist Teil der globalen Extractive Industries Transparency Initiative (EITI) für mehr Transparenz
+        und Rechenschaftspflicht im rohstoffgewinnenden Sektor.
     description-1-link-1: Kontextinformationen
     description-1-1:  zum deutschen Rohstoffsektor als auch wichtige
     description-1-link-2: Daten

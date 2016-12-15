@@ -43,9 +43,12 @@ explore-data:
       description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
 
 how-it-work:
-    title: Wie funktioniert‘s?
-    description-1: Darstellung der Kontextinformationen zum deutschen Rohstoffsektor
-    description-2: Informieren sie sich darüber, wie Rohstoffprojekte in Deutschland geplant und umgesetzt werden, was die gesetzlichen Rahmenbedingungen sind und welche staatlichen Einnahmen aus der rohstoffgewinnenden Industrie entstehen.
+    title: Deutscher Rohstoffsektor
+    description-1: |
+        Die Förderung von Rohstoffen in Deutschland gestaltet sich facettenreich:
+          Welchen gesetzlichen Rahmenbedingungen unterliegt der Abbau? Wie verlaufen
+          die Zahlungsströme? Inwiefern wird das Thema Natur und Umwelt mit einbezogen?
+          Informationen darüber erhalten Sie hier.
 
 about:
     title: Herzlich Willkommen

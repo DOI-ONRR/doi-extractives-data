@@ -7,6 +7,7 @@ var config = {
   entry: {
     'main.min': './js/src/main.js',
     'narrative.min': './js/src/narrative.js',
+    'static.min': './js/src/static.js',
     'explore.min': './js/src/explore.js',
     'homepage.min': './js/src/homepage.js',
   },

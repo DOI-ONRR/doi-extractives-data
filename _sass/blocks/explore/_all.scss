@@ -54,7 +54,7 @@
   h2 {
     margin-top: 3rem;
   }
-  
+
   .subsections-card {
     width: 31%;
     margin: 1.5rem 1.16%;
@@ -62,4 +62,24 @@
     float: left;
     height: 80px;
   }
+}
+
+h3.state-page-nav-title {
+  margin: 0 0 1rem 0;
+  color: #435159;
+  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-size: 1rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1rem;
+  margin-bottom: 0.41667em;
+  padding-bottom: 0.41667em;
+  text-transform: uppercase;
+  align-items: center;
+  border-bottom: 1px solid #d3dfe6;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  position: relative;
 }

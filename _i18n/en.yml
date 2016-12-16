@@ -33,7 +33,7 @@ explore-data:
       sub-heading-1: Interactive Resource Card
       description-1: For the first time ever commodities production data at the provincial level in an interactive resource card are available.
       sub-heading-2: Total German production of raw materials
-      description-2: Inform about which raw materials are to promote in Germany.
+      description-2: Inform about which <span class="term" data-term="raw materials" title="Click to define" tabindex="0">raw materials<icon class="icon-book"></icon></span> are to promote in Germany.
 
     revenue :
       heading-1: Revenue

@@ -9,7 +9,11 @@ explore-data:
     introduction-first: |
       Welcome to the D-EITI data portal.
       Here you can discover the data collected as part of the D-EITI implementation data
-      and inform themselves about the German extractive sector. Currently
+      and inform themselves about the German
+      <span class="term term_end" data-term="extractive sector" title="Click to define" tabindex="0">
+      extractive sector
+      <icon class="icon-book"></icon></span>.
+      Currently
       <a href="#production">
         Data for raw material production in Germany
       </a> available.
@@ -29,7 +33,7 @@ explore-data:
       sub-heading-1: Interactive Resource Card
       description-1: For the first time ever commodities production data at the provincial level in an interactive resource card are available.
       sub-heading-2: Total German production of raw materials
-      description-2: Inform about which raw materials are to promote in Germany.
+      description-2: Inform about which <span class="term" data-term="raw materials" title="Click to define" tabindex="0">raw materials<icon class="icon-book"></icon></span> are to promote in Germany.
 
     revenue :
       heading-1: Revenue

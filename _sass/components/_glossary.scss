@@ -5,11 +5,12 @@
 // // Styleguide components.glossary
 
 $drawer-width: 300px;
-$term-width: 200px;
+$term-width: 180px;
 $term-width-max: 220px;
 
 #glossary {
   width: 100%;
+  z-index: $z-sky;
 
   @include respond-to(tiny-up) {
     width: $drawer-width;
@@ -33,6 +34,7 @@ $term-width-max: 220px;
 
 .glossary-term {
   color: $white;
+  cursor: pointer;
   display: inline-block;
   margin: 0;
   max-width: $term-width-max;

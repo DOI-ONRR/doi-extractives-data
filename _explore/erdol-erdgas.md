@@ -25,7 +25,7 @@ nav_items:
     <div class="container-left-9">
       <section id="intro" style="position: relative;">
         <p>
-          Kurzer Satz: Erdgas und Erdöl werden zusammenfassend als Kohlenwasserstoffe bezeichnet und allen voran für die Wärme- und Energieerzeugung, aber auch als Kraftstoff und als Grundstoff für die chemische Industrie eingesetzt.
+          Erdgas und Erdöl werden zusammenfassend als Kohlenwasserstoffe bezeichnet und allen voran für die Wärme- und Energieerzeugung, aber auch als Kraftstoff und als Grundstoff für die chemische Industrie eingesetzt.
         </p>
       </section>
 

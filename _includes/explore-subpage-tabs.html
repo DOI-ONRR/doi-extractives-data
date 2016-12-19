@@ -2,8 +2,8 @@
     <div class="explore-subpage-tabs">
       <ul>
         {% for doc in include.docs %}
-        <li class="explore-subpage-tab{% if doc.year == page.year %} active{% endif %}">
-          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.year }}</a>
+        <li class="explore-subpage-tab{% if doc.report_year == page.report_year %} active{% endif %}">
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.report_year }}</a>
         </li>
         {% endfor %}
       </ul>

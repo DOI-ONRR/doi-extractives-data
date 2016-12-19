@@ -2,9 +2,10 @@
 layout: default
 ---
 
-{% assign year = page.year | to_s %}
+{% assign year = page.data_year | to_s %}
+{% assign report_year = page.report_year %}
 {% assign material_variance = site.data.material_variances %}
-{% assign explanations = material_variance.explanations[page.year] %}
+{% assign explanations = material_variance.explanations[page.data_year] %}
 
 {% assign companies = site.data.reconciliation[year] %}
 
@@ -51,7 +52,7 @@ layout: default
           /
         </div>
 
-        <h1>Reconciliation ({{ year }})</h1>
+        <h1>Reconciliation ({{ report_year }})</h1>
 
         <p>Every country that participates in EITI reconciles its data.</p>
 

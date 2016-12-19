@@ -2,6 +2,9 @@
 title: Erdol, Erdgas
 layout: default
 permalink: /explore/erdol-erdgas/
+breadcrumb:
+  - title: Deutscher Rohstoffsektor
+    permalink: /explore/how-it-work/
 nav_items:
   - name: intro
     title: Top
@@ -20,6 +23,7 @@ nav_items:
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
 
+    {% include breadcrumb.html %}
     <h1 id="title">Erdöl, Erdgas</h1>
 
     <div class="container-left-9">

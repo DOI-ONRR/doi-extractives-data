@@ -2,6 +2,9 @@
 title: Salze
 layout: default
 permalink: /explore/salze/
+breadcrumb:
+  - title: Deutscher Rohstoffsektor
+    permalink: /explore/how-it-work/
 nav_items:
   - name: salze
     title: Top
@@ -13,6 +16,7 @@ nav_items:
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
 
+    {% include breadcrumb.html %}
     <h1 id="title">Salze</h1>
 
     <div class="container-left-9">

@@ -126,11 +126,13 @@
 
             if (!document.getElementById(item.dataset.navItem) && item) {
               item.setAttribute('aria-hidden', true);
+              item.outerHTML = '';
+              delete item;
+            } else {
+              item.addEventListener('click', function () {
+                self.update(this);
+              });
             }
-
-            item.addEventListener('click', function () {
-              self.update(this);
-            });
           }
         }
 

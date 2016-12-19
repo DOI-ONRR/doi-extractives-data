@@ -10,7 +10,7 @@ is_cropped: true
 priority: true
 
 case_study_link: |
-    For a detailed view of how gold mining affects communities in northern Nevada, read the [case study on Elko and Eureka Counties]({{ site.baseurl }}/case-studies/elko-eureka/) or the [case study on Humboldt and Lander Counties]({{ site.baseurl }}/case-studies/humboldt-lander/).
+    For a detailed view of how gold mining affects communities in northern Nevada, read the [case study on Elko and Eureka Counties]({{ site.baseurl }}/case-studies/elko-and-eureka/) or the [case study on Humboldt and Lander Counties]({{ site.baseurl }}/case-studies/humboldt-and-lander/).
 ---
 * The Bureau of Mining Regulation and Reclamation within the [Nevada Department of Conservation and Natural Resources](http://dcnr.nv.gov/) oversees all mining activities in the state of Nevada.
   - The [Division of Environmental Protection](http://ndep.nv.gov/BMRR/index.htm) focuses on regulation (ensuring statutory compliance), closure (confirming stabilization of all applicable mine components), and reclamation (issuing reclamation permits to all large-scale operators).

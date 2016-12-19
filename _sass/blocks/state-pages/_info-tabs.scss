@@ -35,3 +35,16 @@ $tab-color-selected: $mid-light-gray;
     text-decoration: underline;
   }
 }
+
+@include respond-to(small-down) {
+  .info-tabs {
+    display: flex;
+    margin: 0;
+
+    li {
+      display: flex;
+      padding-bottom: 0;
+      width: 50%;
+    }
+  }
+}

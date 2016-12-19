@@ -1,4 +1,4 @@
-# Production on Federal Lands
+# Production on federal lands
 This directory contains raw federal production volume data from [ONRR] and
 associated utilities for reading it into our database.
 
@@ -10,5 +10,10 @@ associated utilities for reading it into our database.
 * [rollup.sql](rollup.sql) is the SQL script that summarizes the
   production data and calculates national, state-, and offshore
   region-level totals, and state ranking table.
+
+## Updating the data
+To update this data, you will need to re-export the updated spreadsheet
+provided by ONRR as "tab-separated values", and save it as `federal-production.tsv`.
+That's it!
 
 [ONRR]: http://onrr.gov/

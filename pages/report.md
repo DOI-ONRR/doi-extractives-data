@@ -21,8 +21,8 @@ In many parts of this site, you'll also find invitations to discuss and particip
 
 This document includes an overview of 2016 USEITI activities, reporting and reconciliation and results, state participation, new sections, updates to laws and regulations, and IA recommendations.
 
-<a href="{{site.baseurl}}/downloads/USEITI_executive-summary_2016-11-14.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download 2016 Executive Summary (pdf, 2 MB)</a>
-<a href="{{site.baseurl}}/downloads/USEITI_reconciliation_2016-11-14.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download reconciliation report (pdf, 800 KB)</a>
+<a href="{{site.baseurl}}/downloads/USEITI_executive-summary_2016-11-18.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download 2016 Executive Summary only (pdf, 2 MB)</a>
+<a href="{{site.baseurl}}/downloads/USEITI_executive-summary-combined_2016-11-18.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download Summary and Reconciliation Report (pdf, 2.4 MB)</a>
 
 ## 2015 Executive Summary
 

@@ -2,9 +2,9 @@
 This directory contains raw production volume data from [EIA], and the
 associated utilities for reading it into our database.
 
-* The [commodity directory](commodity/) contains commodity-specific files
-  containing annual production volumes.
-* To refresh the data in the `commodity` directory, you'll need to set the
+* The [product directory](product/) contains commodity-specific files
+  containing annual production volumes for each.
+* To refresh the data in the `product` directory, you'll need to set the
   `EIA_API_KEY` environment variable to your [EIA API key], then run:
 
   ```

@@ -1,0 +1,4469 @@
+Shell E&P Company:
+  Royalties:
+    reported:
+      government: 535415811
+      company: 478190688
+      note: null
+    variance:
+      dollars: 57225123
+      percent: 10.69
+      material: 1
+  Bonus:
+    reported:
+      government: 37887325
+      company: 37887325
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 24771195
+      company: 24755972
+      note: null
+    variance:
+      dollars: 15223
+      percent: 0.06
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 2898700
+      company: 2898700
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 455533
+      company: 442974
+      note: null
+    variance:
+      dollars: 12559
+      percent: 2.76
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: -239325651
+      company: -242478106
+      note: null
+    variance:
+      dollars: 3152455
+      percent: 1.32
+      material: 1
+BP America:
+  Royalties:
+    reported:
+      government: 481882126
+      company: 480734249
+      note: null
+    variance:
+      dollars: 1147877
+      percent: 0.24
+      material: 0
+  Rents:
+    reported:
+      government: 22247796
+      company: 21107348
+      note: null
+    variance:
+      dollars: 1140448
+      percent: 5.13
+      material: 1
+  Bonus:
+    reported:
+      government: 9453524
+      company: 5616215
+      note: null
+    variance:
+      dollars: 3837309
+      percent: 40.59
+      material: 1
+  Offshore Inspection Fee:
+    reported:
+      government: 2724000
+      company: 2726628
+      note: null
+    variance:
+      dollars: -2628
+      percent: 0.1
+      material: 0
+  Other Revenue:
+    reported:
+      government: 2599481
+      company: 3690198
+      note: null
+    variance:
+      dollars: -1090717
+      percent: 41.96
+      material: 1
+  Permit Fees:
+    reported:
+      government: 323090
+      company: 180996
+      note: null
+    variance:
+      dollars: 142094
+      percent: 43.98
+      material: 1
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: -16571767
+      company: 100316502
+      note: null
+    variance:
+      dollars: -116888269
+      percent: 705.35
+      material: 1
+Chevron Corporation:
+  Royalties:
+    reported:
+      government: 389992166
+      company: 390329483
+      note: null
+    variance:
+      dollars: -337317
+      percent: 0.09
+      material: 0
+  Bonus:
+    reported:
+      government: 133248821
+      company: 133248821
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 17823173
+      company: 17816231
+      note: null
+    variance:
+      dollars: 6942
+      percent: 0.04
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 1787100
+      company: 1787100
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 350000
+      company: 350000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 199578
+      company: 198578
+      note: null
+    variance:
+      dollars: 1000
+      percent: 0.5
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -3936283
+      company: -3961553
+      note: null
+    variance:
+      dollars: 25270
+      percent: 0.64
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Peabody Energy Corporation:
+  Bonus:
+    reported:
+      government: 277177576
+      company: 277177576
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Royalties:
+    reported:
+      government: 225793399
+      company: 225594179
+      note: null
+    variance:
+      dollars: 199220
+      percent: 0.09
+      material: 0
+  AML Fees:
+    reported:
+      government: 48411042
+      company: 48267960
+      note: null
+    variance:
+      dollars: 143082
+      percent: 0.3
+      material: 0
+  Rents:
+    reported:
+      government: 190534
+      company: 190534
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 85136
+      company: 85316
+      note: null
+    variance:
+      dollars: -180
+      percent: 0.21
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 3420
+      company: 5630
+      note: null
+    variance:
+      dollars: -2210
+      percent: 64.62
+      material: 1
+  Other Revenue:
+    reported:
+      government: 1095
+      company: 0
+      note: null
+    variance:
+      dollars: 1095
+      percent: 100
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+ExxonMobil Corporation:
+  Royalties:
+    reported:
+      government: 245256815
+      company: 247650767
+      note: null
+    variance:
+      dollars: -2393952
+      percent: 0.98
+      material: 0
+  Bonus:
+    reported:
+      government: 52950650
+      company: 52950650
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 14920601
+      company: 3688601
+      note: null
+    variance:
+      dollars: 11232000
+      percent: 75.28
+      material: 1
+  Rents:
+    reported:
+      government: 10187493
+      company: 11596564
+      note: null
+    variance:
+      dollars: -1409071
+      percent: 13.83
+      material: 1
+  Permit Fees:
+    reported:
+      government: 803910
+      company: 803910
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 541000
+      company: 541113
+      note: null
+    variance:
+      dollars: -113
+      percent: 0.02
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 75000
+      company: 75000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Fieldwood Energy LLC:
+  Royalties:
+    reported:
+      government: 237439549
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 14506500
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 4404507
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 1727000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 1330704
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -12341727
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: N/A
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Arch Coal, Inc.':
+  Royalties:
+    reported:
+      government: 171684441
+      company: 171684441
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 59126642
+      company: 59126642
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 34106552
+      company: 34106552
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 5405649
+      company: 5360237
+      note: null
+    variance:
+      dollars: 45412
+      percent: 0.84
+      material: 0
+  Rents:
+    reported:
+      government: 226280
+      company: 226280
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+BHP Billiton LTD:
+  Royalties:
+    reported:
+      government: 169862626
+      company: 208040223
+      note: null
+    variance:
+      dollars: -38177597
+      percent: 22.48
+      material: 1
+  Bonus:
+    reported:
+      government: 40220086
+      company: 30295086
+      note: null
+    variance:
+      dollars: 9925000
+      percent: 24.68
+      material: 1
+  Other Revenue:
+    reported:
+      government: 14941480
+      company: 1310
+      note: null
+    variance:
+      dollars: 14940170
+      percent: 99.99
+      material: 1
+  Rents:
+    reported:
+      government: 11162157
+      company: 10918663
+      note: null
+    variance:
+      dollars: 243494
+      percent: 2.18
+      material: 1
+  Corporate Income Tax:
+    reported:
+      government: 2644390
+      company: 2666092
+      note: null
+    variance:
+      dollars: -21702
+      percent: 0.82
+      material: 0
+  AML Fees:
+    reported:
+      government: 677741
+      company: 677741
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 340000
+      company: 340000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 168056
+      company: 168056
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 82
+      company: 82
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 221
+      note: null
+    variance:
+      dollars: -221
+      percent: 100
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+Anadarko Petroleum Corporation:
+  Royalties:
+    reported:
+      government: 163746846
+      company: 163776660
+      note: null
+    variance:
+      dollars: -29814
+      percent: 0.02
+      material: 0
+  Rents:
+    reported:
+      government: 13674714
+      company: 13422581
+      note: null
+    variance:
+      dollars: 252133
+      percent: 1.84
+      material: 0
+  Bonus:
+    reported:
+      government: 2400166
+      company: 2400167
+      note: null
+    variance:
+      dollars: -1
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 2074000
+      company: 2235000
+      note: null
+    variance:
+      dollars: -161000
+      percent: 7.76
+      material: 1
+  Permit Fees:
+    reported:
+      government: 784639
+      company: 783902
+      note: null
+    variance:
+      dollars: 737
+      percent: 0.09
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 571200
+      company: 571200
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -13402016
+      company: -13238338
+      note: null
+    variance:
+      dollars: -163678
+      percent: 1.22
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+ConocoPhillips:
+  Royalties:
+    reported:
+      government: 155308934
+      company: 155310033
+      note: null
+    variance:
+      dollars: -1099
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 30435859
+      company: 30362934
+      note: null
+    variance:
+      dollars: 72925
+      percent: 0.24
+      material: 0
+  Rents:
+    reported:
+      government: 22797376
+      company: 22686512
+      note: null
+    variance:
+      dollars: 110864
+      percent: 0.49
+      material: 0
+  Permit Fees:
+    reported:
+      government: 555040
+      company: 590510
+      note: null
+    variance:
+      dollars: -35470
+      percent: 6.39
+      material: 1
+  Bonus & 1st Year Rental:
+    reported:
+      government: 497462
+      company: 497462
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 108500
+      company: 131361
+      note: null
+    variance:
+      dollars: -22861
+      percent: 21.07
+      material: 1
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -7460211
+      company: -7463497
+      note: null
+    variance:
+      dollars: 3286
+      percent: 0.04
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Freeport-McMoRan Inc.:
+  Royalties:
+    reported:
+      government: 151167910
+      company: 150499060
+      note: null
+    variance:
+      dollars: 668850
+      percent: 0.44
+      material: 0
+  Bonus:
+    reported:
+      government: 41808040
+      company: 41808026
+      note: null
+    variance:
+      dollars: 14
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 4515203
+      company: 4532826
+      note: null
+    variance:
+      dollars: -17623
+      percent: 0.39
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 3401600
+      company: 3401600
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 2702738
+      company: 2733772
+      note: null
+    variance:
+      dollars: -31034
+      percent: 1.15
+      material: 0
+  Other Revenue:
+    reported:
+      government: 1100708
+      company: 1092681
+      note: null
+    variance:
+      dollars: 8027
+      percent: 0.73
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: -160013413
+      note: null
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+LLOG Exploration Company LLC:
+  Royalties:
+    reported:
+      government: 142476680
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 4964836
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 4952164
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 2636690
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 939000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Devon Energy Corporation:
+  Royalties:
+    reported:
+      government: 123899212
+      company: 122681650
+      note: null
+    variance:
+      dollars: 1217562
+      percent: 0.98
+      material: 0
+  Permit Fees:
+    reported:
+      government: 1508440
+      company: 1431315
+      note: null
+    variance:
+      dollars: 77125
+      percent: 5.11
+      material: 1
+  Bonus & 1st Year Rental:
+    reported:
+      government: 1183360
+      company: 1183360
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 100547
+      company: 116024
+      note: null
+    variance:
+      dollars: -15477
+      percent: 15.39
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -429734
+      company: -373041
+      note: null
+    variance:
+      dollars: -56693
+      percent: 13.19
+      material: 1
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Hess Corporation:
+  Royalties:
+    reported:
+      government: 121879024
+      company: 121879890
+      note: null
+    variance:
+      dollars: -866
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 8292948
+      company: 8295948
+      note: null
+    variance:
+      dollars: -3000
+      percent: 0.04
+      material: 0
+  Rents:
+    reported:
+      government: 2289484
+      company: 2320328
+      note: null
+    variance:
+      dollars: -30844
+      percent: 1.35
+      material: 0
+  Other Revenue:
+    reported:
+      government: 461116
+      company: 464102
+      note: null
+    variance:
+      dollars: -2986
+      percent: 0.65
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 398500
+      company: 398500
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 266260
+      company: 266260
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Cloud Peak Energy Resources, LLC':
+  Royalties:
+    reported:
+      government: 112318349
+      company: 112318349
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 69406946
+      company: 69406946
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 22197745
+      company: 22197745
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: 9806299
+      company: 9806299
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 221088
+      company: 220228
+      note: null
+    variance:
+      dollars: 860
+      percent: 0.39
+      material: 0
+  Rents:
+    reported:
+      government: 100997
+      company: 100997
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+Ultra Resources Inc.:
+  Royalties:
+    reported:
+      government: 107727673
+      company: 99204910
+      note: null
+    variance:
+      dollars: 8522763
+      percent: 7.91
+      material: 1
+  Permit Fees:
+    reported:
+      government: 1094310
+      company: 1074810
+      note: null
+    variance:
+      dollars: 19500
+      percent: 1.78
+      material: 0
+  Other Revenue:
+    reported:
+      government: 76907
+      company: 45690
+      note: null
+    variance:
+      dollars: 31217
+      percent: 40.59
+      material: 0
+  Rents:
+    reported:
+      government: 6006
+      company: 9908
+      note: null
+    variance:
+      dollars: -3902
+      percent: 64.97
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: 0
+      note: null
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Concho Resources, Inc.':
+  Royalties:
+    reported:
+      government: 89356972
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 23256000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 680115
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 92849
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -705346
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Energy XXI:
+  Royalties:
+    reported:
+      government: 76505994
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 376404
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 183700
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 75000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -223365
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'QEP Resources, Inc.':
+  Royalties:
+    reported:
+      government: 72485760
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 1443170
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 371788
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -3267324
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Cimarex Energy Co.:
+  Royalties:
+    reported:
+      government: 72283770
+      company: 72283770
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 179920
+      company: 180220
+      note: null
+    variance:
+      dollars: -300
+      percent: 0.17
+      material: 0
+  Permit Fees:
+    reported:
+      government: 178770
+      company: 188000
+      note: null
+    variance:
+      dollars: -9230
+      percent: 5.16
+      material: 0
+  Rents:
+    reported:
+      government: 32888
+      company: 33812
+      note: null
+    variance:
+      dollars: -924
+      percent: 2.81
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -1781323
+      company: -1782980
+      note: null
+    variance:
+      dollars: 1657
+      percent: 0.09
+      material: 0
+'EPL Oil & Gas, Inc.':
+  Royalties:
+    reported:
+      government: 71094372
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 944430
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 251100
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 190000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -6686008
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Statoil:
+  Bonus:
+    reported:
+      government: 69413541
+      company: 69413541
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Royalties:
+    reported:
+      government: 58944352
+      company: 58629414
+      note: null
+    variance:
+      dollars: 314938
+      percent: 0.53
+      material: 0
+  Rents:
+    reported:
+      government: 7454512
+      company: 7532317
+      note: null
+    variance:
+      dollars: -77805
+      percent: 1.04
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 419487
+      company: 427841
+      note: null
+    variance:
+      dollars: -8354
+      percent: 1.99
+      material: 0
+  Permit Fees:
+    reported:
+      government: 78450
+      company: 78450
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -3492933
+      company: -3449925
+      note: null
+    variance:
+      dollars: -43008
+      percent: 1.23
+      material: 0
+'WPX Energy, Inc.':
+  Royalties:
+    reported:
+      government: 68730517
+      company: 68895241
+      note: null
+    variance:
+      dollars: -164724
+      percent: 0.24
+      material: 0
+  Permit Fees:
+    reported:
+      government: 1109150
+      company: 1101000
+      note: null
+    variance:
+      dollars: 8150
+      percent: 0.73
+      material: 0
+  Rents:
+    reported:
+      government: 261419
+      company: 261419
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -366662
+      company: -365796
+      note: null
+    variance:
+      dollars: -866
+      percent: 0.24
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: -11000000
+      note: null
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'W&T Offshore, Inc.':
+  Royalties:
+    reported:
+      government: 64564832
+      company: 64564832
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 4344700
+      company: 4344700
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 1394703
+      company: 1394703
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 284000
+      company: 284000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 170000
+      company: 170000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: 0
+      company: -60532
+      note: null
+    variance:
+      dollars: 60532
+      percent: 100
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -4968640
+      company: -4968640
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+'Arena Energy, LLC':
+  Royalties:
+    reported:
+      government: 59601092
+      company: 59601092
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 2168800
+      company: 2168800
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 1004278
+      company: 1004278
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 968761
+      company: 968761
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 560000
+      company: 560000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 80000
+      company: 80000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: N/A
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Jonah Energy LLC:
+  Royalties:
+    reported:
+      government: 57211659
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 633960
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 62494
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -4716108
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Linn Energy, LLC':
+  Royalties:
+    reported:
+      government: 53783298
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 2614438
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 239263
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 141294
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Marathon Oil Company:
+  Royalties:
+    reported:
+      government: 52388973
+      company: 52348305
+      note: null
+    variance:
+      dollars: 40668
+      percent: 0.08
+      material: 0
+  Bonus:
+    reported:
+      government: 5635636
+      company: 5635636
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 3716777
+      company: 3717446
+      note: null
+    variance:
+      dollars: -669
+      percent: 0.02
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 367000
+      company: 367000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 332730
+      company: 332500
+      note: null
+    variance:
+      dollars: 230
+      percent: 0.07
+      material: 0
+  Other Revenue:
+    reported:
+      government: 33994
+      company: 34115
+      note: null
+    variance:
+      dollars: -121
+      percent: 0.36
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: -40000
+      company: 0
+      note: null
+    variance:
+      dollars: -40000
+      percent: 100
+      material: 1
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Oxy USA, Inc.':
+  Royalties:
+    reported:
+      government: 52139320
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 289520
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 261966
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 127379
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'EOG Resources, Inc.':
+  Royalties:
+    reported:
+      government: 51206351
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 1353270
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 312058
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -1368502
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Talos Energy LLC:
+  Royalties:
+    reported:
+      government: 49277016
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 2184870
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 1778409
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 1771300
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -983805
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Apache Corporation:
+  Royalties:
+    reported:
+      government: 47551091
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 2198426
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 455180
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 313908
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 91500
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Stone Energy Corporation:
+  Royalties:
+    reported:
+      government: 46672034
+      company: 46672041
+      note: null
+    variance:
+      dollars: -7
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 1701632
+      company: 1701632
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 1555555
+      company: 1555555
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 1047000
+      company: 1047000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 753862
+      company: 753862
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 40000
+      company: 40000
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: -7187950
+      note: null
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+ENI Petroleum:
+  Royalties:
+    reported:
+      government: 46188658
+      company: 46204386
+      note: null
+    variance:
+      dollars: -15728
+      percent: 0.03
+      material: 0
+  Rents:
+    reported:
+      government: 4441585
+      company: 4464090
+      note: null
+    variance:
+      dollars: -22505
+      percent: 0.51
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 199700
+      company: 199700
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -1849312
+      company: -1885211
+      note: null
+    variance:
+      dollars: 35899
+      percent: 1.94
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: 0
+      note: null
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Alpha Natural Resources, Inc.':
+  Bonus:
+    reported:
+      government: 42129612
+      company: 42129612
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Royalties:
+    reported:
+      government: 26797927
+      company: 26797927
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 16478459
+      company: 16442458
+      note: null
+    variance:
+      dollars: 36001
+      percent: 0.22
+      material: 0
+  Permit Fees:
+    reported:
+      government: 93519
+      company: 93389
+      note: null
+    variance:
+      dollars: 130
+      percent: 0.14
+      material: 0
+  Rents:
+    reported:
+      government: 47388
+      company: 38796
+      note: null
+    variance:
+      dollars: 8592
+      percent: 18.13
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Noble Energy, Inc.':
+  Royalties:
+    reported:
+      government: 40943600
+      company: 40989063
+      note: null
+    variance:
+      dollars: -45463
+      percent: 0.11
+      material: 0
+  Rents:
+    reported:
+      government: 4276995
+      company: 4300998
+      note: null
+    variance:
+      dollars: -24003
+      percent: 0.56
+      material: 0
+  Permit Fees:
+    reported:
+      government: 332500
+      company: 332760
+      note: null
+    variance:
+      dollars: -260
+      percent: 0.08
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 275500
+      company: 275500
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: -24086
+      company: 1667
+      note: null
+    variance:
+      dollars: -25753
+      percent: 106.92
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not report
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Encana Corporation:
+  Royalties:
+    reported:
+      government: 38655206
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 988968
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 751086
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 465730
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'BOPCO, LP':
+  Royalties:
+    reported:
+      government: 37875857
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 167750
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 50945
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 34691
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Continental Resources, Inc.':
+  Royalties:
+    reported:
+      government: 36469094
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: 894448
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 513875
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 75000
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 53445
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+Murphy Oil USA Inc.:
+  Bonus:
+    reported:
+      government: 24198856
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Royalties:
+    reported:
+      government: 21880568
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Rents:
+    reported:
+      government: 5076445
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 649500
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Other Revenue:
+    reported:
+      government: -639459
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: did not participate
+    variance:
+      dollars: null
+      percent: null
+      material: 0
+'Red Willow Offshore, LLC':
+  Royalties:
+    reported:
+      government: 482510
+      company: 482510
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  AML Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Bonus & 1st Year Rental:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  ONRR Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  OSMRE Civil Penalties:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Offshore Inspection Fee:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Other Revenue:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Permit Fees:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Renewables:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Rents:
+    reported:
+      government: 0
+      company: 0
+      note: null
+    variance:
+      dollars: 0
+      percent: 0
+      material: 0
+  Corporate Income Tax:
+    reported:
+      government: null
+      company: null
+      note: N/A
+    variance:
+      dollars: null
+      percent: null
+      material: 0

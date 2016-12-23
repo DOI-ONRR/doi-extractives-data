@@ -1,12 +1,47 @@
 ---
-title: Reconciliation | How it works
 layout: default
-permalink: /how-it-works/reconciliation/
 ---
 
+{% assign year = page.data_year | to_s %}
+{% assign report_year = page.report_year %}
 {% assign material_variance = site.data.material_variances %}
+{% assign explanations = material_variance.explanations[page.data_year] %}
+
+{% assign companies = site.data.reconciliation[year] %}
+
+{% assign variances = 0 %}
+{% assign explained = 0 %}
+{% assign companies_count = companies | size %}
+{% assign companies_reconciled = 0 %}
+{% assign revenue_total = 0 %}
+{% assign income_tax_total = 0 %}
+
+{% for company in companies %}
+  {% assign company_reconciled = false %}
+  {% for type in company[1] %}
+    {% assign reported_dollars = type[1].reported.company %}
+    {% assign revenue_total = revenue_total | plus: reported_dollars %}
+    {% if type[0] == 'Corporate Income Tax' %}
+      {% assign income_tax_total = income_tax_total | plus: reported_dollars %}
+    {% endif %}
+    {% if type[1].variance.material == 1 %}
+      {% assign company_name = company[0] %}
+      {% assign revenue_type = type[0] %}
+      {% assign variances = variances | plus: 1 %}
+      {% assign explanation = explanations[company_name][revenue_type] %}
+      {% if explanation %}
+        {% assign explained = explained | plus: 1 %}
+        {% assign company_reconciled = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if company_reconciled %}
+    {% assign companies_reconciled = companies_reconciled | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
 <section id="reconciliation" class="explore-subpage container">
+  {% include explore-subpage-tabs.html docs=site.reconciliation %}
 
   <section class="container-page-wrapper">
 
@@ -17,11 +52,11 @@ permalink: /how-it-works/reconciliation/
           /
         </div>
 
-        <h1>Reconciliation</h1>
+        <h1>Reconciliation ({{ report_year }})</h1>
 
         <p>Every country that participates in EITI reconciles its data.</p>
 
-        <p>The 2015 USEITI report looked at calendar year data for 2013. The 45 companies invited to participate are listed here, along with reported payments and reconciliation results for each revenue type. To learn more, review the <a href="{{ site.baseurl }}/downloads/reconciliation/#scope">scope</a> of the reconciliation process or the list of <a href="{{ site.baseurl }}/downloads/reconciliation/#in-scope-companies">companies</a> included.</p>
+        <p>{{ page.introduction }} To learn more, review the <a href="{{ site.baseurl }}/downloads/reconciliation/#scope">scope</a> of the reconciliation process or the list of <a href="{{ site.baseurl }}/downloads/reconciliation/#in-scope-companies">companies</a> included.</p>
 
         <a href="{{ site.baseurl }}/downloads/reconciliation/">
           <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -40,10 +75,9 @@ permalink: /how-it-works/reconciliation/
           <ul>
             <li class="flowchart-dialog flowchart-dialog_top flowchart-outcomes">
               <ul>
-                <li>45 companies were asked to report</li>
-                <li>31 companies reported and reconciled $8.5 billion in Department of the Interior revenue</li>
-                <li>12 out of 41 applicable companies reported $190 million in corporate income taxes</li>
-                <li>100% of 17 <span class="term term-end" data-term="material variance" title="Click to define" tabindex="0">material variances<icon class="icon-book"></icon></span> have been explained</li>
+                {% for item in page.results %}
+                <li><b>{{ item | liquify }}</b></li>
+                {% endfor %}
               </ul>
             </li>
           </ul>
@@ -155,7 +189,7 @@ permalink: /how-it-works/reconciliation/
               </tr>
             </thead>
 
-            {% for company in site.data.reconciliation %}
+            {% for company in companies %}
               {% assign variance_index = 0 %}
               {% assign company_name = company[0] %}
             <tbody class="company subgroup" data-name="{{ company_name | xmlescape }}">
@@ -168,7 +202,7 @@ permalink: /how-it-works/reconciliation/
                 {% assign variance = revenue_type[1].variance %}
                 {% assign explanation = nil %}
                 {% if variance.material == 1 %}
-                  {% assign explanation = material_variance.footnotes[company_name][revenue_stream] %}
+                  {% assign explanation = explanations[company_name][revenue_stream] %}
                   {% capture explanation_id %}{{ company_name }}-{{ forloop.index }}{% endcapture %}
                 {% endif %}
               <tr class="subtype{% if explanation %} has-material-variance{% endif %}">

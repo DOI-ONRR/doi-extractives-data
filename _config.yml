@@ -105,6 +105,9 @@ collections:
   states:
     output: true
     permalink: /explore/:path/
+  reconciliation:
+    output: true
+    permalink: /how-it-works/reconciliation/:path/
 
 defaults:
   - scope:
@@ -112,6 +115,12 @@ defaults:
       type: federal-revenue-by-company
     values:
       layout: federal-revenue-by-company
+
+  - scope:
+      path: ''
+      type: reconciliation
+    values:
+      layout: reconciliation
 
   - scope:
       path: ''

@@ -436,17 +436,17 @@ data/offshore_revenues_by_type.yml:
 			-c _meta/offshore_revenues_by_type.yml \
 			-o _$@
 
-data/reconciliation.yml:
+data/reconciliation:
 	$(query) --format ndjson " \
 		SELECT \
-			company, revenue_type, \
+			year, company, revenue_type, \
 			reported_gov, reported_company, reported_note, \
 			variance_dollars, variance_percent, variance_material \
 		FROM reconciliation \
 		ORDER BY reported_gov DESC, company, revenue_type" \
 		| $(nestly) --if ndjson \
 			-c _meta/reconciliation.yml \
-			-o _$@
+			-o '_$@/{year}.yml'
 
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
@@ -602,11 +602,14 @@ tables/county_revenue: data/revenue/onshore.tsv
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
 
-tables/reconciliation: data/reconciliation/revenue.tsv
+tables/reconciliation: data/reconciliation/output
 	@$(call drop-table,reconciliation)
-	tmp=$^.ndjson; \
-	$(tito) --map ./data/reconciliation/transform.js -r tsv $^ > $$tmp && \
-	$(tables) -t ndjson -n reconciliation -i $$tmp && \
+	tmp=$^/all.ndjson; \
+	for revenue_filename in $^/????.tsv; do \
+		$(tito) -r tsv --map ./data/reconciliation/transform.js \
+			$$revenue_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n reconciliation && \
 	rm $$tmp
 
 tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv

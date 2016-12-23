@@ -82,7 +82,7 @@ switch (options.geo) {
 }
 
 var url = [
-  'http://www.bea.gov/api/data/',
+  'https://www.bea.gov/api/data/',
   qs.stringify(params)
 ].join('?');
 

@@ -14,12 +14,12 @@ Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
   <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
-  Full dataset (xlsx, 39 KB)</a></li>
+  Full dataset, 2015 USEITI Report (xlsx, 39 KB)</a></li>
   <li><a href="{{site.baseurl}}/downloads/reconciliation_2016-11-03.xlsx"><icon class="icon-cloud icon-padded"></icon>
-  Full dataset (xlsx, 37 KB)</a></li>
+  Full dataset, 2016 USEITI Report (xlsx, 37 KB)</a></li>
 </ul>
 
-This documentation is for the 2015 USEITI Report.
+The following documentation is for the 2015 USEITI Report. Documentation for the 2016 USEITI Report is coming soon.
 
 ## Background
 

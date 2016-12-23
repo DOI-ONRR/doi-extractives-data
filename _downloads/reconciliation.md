@@ -8,14 +8,18 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. This is calendar year 2013 data.
+> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
   <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
   Full dataset (xlsx, 39 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/reconciliation_2016-11-03.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  Full dataset (xlsx, 37 KB)</a></li>
 </ul>
+
+This documentation is for the 2015 USEITI Report.
 
 ## Background
 

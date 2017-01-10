@@ -62,6 +62,7 @@
     "test-html": "bundle exec htmlproof --disable-external _site",
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
     "webpack": "webpack",
+    "update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
     "watch-webpack": "webpack --watch",
     "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",

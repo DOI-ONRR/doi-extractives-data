@@ -17,7 +17,7 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
 
 **Coal excise tax revenue**[^4]
 
-<img src="{{site.baseurl}}/img/chart-coal-excise-tax.svg" alt="" class="">
+<img src="{{site.baseurl}}/img/chart-coal-excise-tax.svg" alt="Bar chart showing Coal Excise tax revenue. The chart compares Mined Underground and Surface mined.">
 
 ## Coal excise tax rates
 

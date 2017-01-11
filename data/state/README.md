@@ -1,3 +1,2 @@
-# State-level Data
-This directory contains state-level natural resource data. See the [county
-directory](../county) for more granular data, including state-specific subsets.
+# Additional state data
+This directory contains data for each of the US states that chose to provide additional data to the report. See each state's subdirectory under [opt-in](opt-in/) for more information.

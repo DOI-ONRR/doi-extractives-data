@@ -104,7 +104,7 @@ permalink: /how-it-works/
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2015/">Federal revenue by company</a></h4>
           <p>See federal non-tax revenues from natural resource extraction on federal land in 2015 by commodity, revenue type, and company.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/2015/">See revenue by company</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2015/">See revenue by company</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
@@ -114,7 +114,7 @@ permalink: /how-it-works/
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
           <p>This program uses fees from present-day coal mining companies to reclaim coal mines abandoned before 1977.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about AML fees</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about the AML Reclamation Program</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
@@ -130,7 +130,7 @@ permalink: /how-it-works/
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/audits-and-assurances/">Audits and assurances</a></h3>
           <p>Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/oversight/">Learn about oversight</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/audits-and-assurances/">Learn about audits and assurances</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/reconciliation/">Reconciliation</a></h3>

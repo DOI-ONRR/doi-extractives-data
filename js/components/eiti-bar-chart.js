@@ -87,7 +87,25 @@
   var detached = function() {
   };
 
+  var crawlCeil = function(ymax, ceilMax, i) {
+    var sigFig = '.' + i + 's';
+    var sigFigCeil = +eiti.format.transform(
+      sigFig,
+      eiti.format.siValue
+    )(ceilMax);
+    var isLessThan = sigFigCeil <= +ymax;
+    return !isLessThan ? sigFig : '';
+  };
 
+  var setSigFigs = function (ymax, ceilMax) {
+    var sigFigs = '';
+    var SF = 0;
+    while (sigFigs.length < 1) {
+      SF++;
+      sigFigs = crawlCeil(ymax, ceilMax, SF);
+    }
+    return sigFigs;
+  };
 
   var update = function() {
     var root = d3.select(this);
@@ -245,17 +263,26 @@
       var dataUnits = this.getAttribute('data-units');
       var dataFormat = this.getAttribute('data-format') || '';
 
+      var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
+      var sigFigs = setSigFigs(ymax, ceilMax);
+
       if (dataUnits.indexOf('$') > -1) {
         dataFormat = eiti.format.transform(
-          eiti.format.transform('.1s', eiti.format.transformMetricLong),
+          eiti.format.transform(
+            sigFigs,
+            eiti.format.transformMetricLong
+          ),
           eiti.format.transformDollars
         );
         dataUnits = null;
       } else {
-        dataFormat = eiti.format.transform('.1s', eiti.format.transformMetric);
+        dataFormat = eiti.format.transform(
+          sigFigs,
+          eiti.format.transformMetric
+        );
       }
 
-      var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));
+      var dataText = dataFormat(ceilMax);
       var extentText = [ dataText, dataUnits ].join(' ');
 
       extentLine.append('text')

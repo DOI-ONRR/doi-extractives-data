@@ -1,11 +1,14 @@
-all: revenue.tsv
+all: output
 
-input.tsv:
-	# FIXME
-	echo "I don't know where to find this!"
+output: input
+	mkdir -p $@
+	for file in input/????.tsv; do \
+		filename="$${file##*/}"; \
+		REVENUE_YEAR="$${filename%%.*}" ./parse-reconciliation.js \
+			--if tsv \
+			--of tsv \
+			$$file > "$@/$${filename}"; \
+	done
 
-revenue.tsv: input.tsv
-	./parse-reconciliation.js \
-		--if tsv \
-		--of tsv \
-		$< > $@
+clean:
+	rm -f output/*.tsv

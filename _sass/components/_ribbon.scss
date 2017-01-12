@@ -73,6 +73,41 @@
   padding-right: $base-padding;
   padding-top: 0;
   text-align: center;
+
+  &.ribbon-card-top-text {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(small-to-huge) {
+      flex-direction: row;
+      justify-content: space-around;
+
+      > *:not(a) {
+        align-self: flex-start;
+        text-align: left;
+        width: 50%;
+      }
+
+      a {
+        text-align: center;
+      }
+
+      h2 {
+        @include heading('para-lg');
+        font-weight: $weight-bold;
+      }
+    }
+
+    > * {
+      align-self: center;
+      margin-bottom: $base-padding;
+      text-align: center;
+    }
+
+    h2 {
+      align-self: center;
+    }
+  }
 }
 
 .ribbon-card-top-text-header {
@@ -107,6 +142,11 @@
 .ribbon-card-bottom {
   @include heading('para-sm');
 
+  @include respond-to(medium-down) {
+    @include heading('para-md');
+    margin-bottom: 0;
+  }
+
   background-color: $gray-light;
   color: $dark-gray;
   font-weight: $weight-book;
@@ -134,12 +174,15 @@
 
 .ribbon {
   svg {
-    float: left;
     width: 100%;
+
+    @include respond-to(large-up) {
+      float: left;
+      width: 100%;
+    }
   }
 
   .ribbon-card {
-    padding-top: $base-padding-large;
     position: relative;
 
     &.ribbon-card-home {
@@ -200,12 +243,13 @@ svg {
     }
 
     .ribbon-card {
-      padding-top: 0;
       position: relative;
     }
 
     .svg-oil-rig {
       display: none;
+      float: left;
+      width: 100%;
 
       .rig-dollars {
         display: inline-block;
@@ -256,24 +300,11 @@ svg {
   }
 }
 
-@include respond-to(tiny-to-small) {
-  .ribbon-card-top.ribbon-card-top-text > * {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-
 @include respond-to(small-to-huge) {
   .ribbon .ribbon-hero,
   .ribbon-card-top {
     padding-left: $page-padding;
     padding-right: $page-padding;
-
-    &.ribbon-card-top-text > * {
-      margin-left: 20%;
-      margin-right: 20%;
-    }
   }
 }
 

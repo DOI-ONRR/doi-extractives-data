@@ -87,4 +87,13 @@
     }
   }
 
+  .production_sub_heading_1, .production_sub_heading_2 {
+    .production-picture {
+      background-image: url('../img/tiles/placeholder_blue.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/placeholder_white.png');
+    }
+  }
 }

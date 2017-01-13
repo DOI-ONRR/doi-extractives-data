@@ -5,26 +5,15 @@ layout: default
 <section class="slab-delta">
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
-      <h1>{% t 'explore-data.title' %}</h1>
-      <p class="hero-description">{% t 'explore-data.introduction-first' %}</p>
-      <p class="hero-description">{% t 'explore-data.introduction-second' %}</p>
-    </div>
-    <div class="container-right-4 hero-right">
-      <div class="hero-right_square">
-        <figure>
-          <a href="#production">
-            <img class="hero-right_image" src="{{ site.baseurl_root }}/img/explore-landing-intro.png" alt="Explore landing intro">
-          </a>
-          <figcaption class="hero-right_caption">
-            {% t 'explore-data.figcaption' %}
-          </figcaption>
-        </figure>
-      </div>
+      <h1>{% t 'about.title' %}</h1>
+      <p class="hero-description">
+        {% t 'about.description-1' %}
+      </p>
     </div>
   </div>
 </section>
 
-<section class="container-outer landing-wrapper">
+<section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
     <a id="production" class="link-no_under">
       <h2 class="h3 landing-section_category">
@@ -101,7 +90,11 @@ layout: default
         </div>
       </a>
     </div>
+    <div class="container-outer landing-section_top">
+      <div class="container-left-8 hero-left">
+        <p class="hero-description">{% t 'about.description-2' %}</p>
+      </div>
   </section>
 </section>
-
-<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/homepage.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl_root }}/js/pages/federal-production.js"></script>

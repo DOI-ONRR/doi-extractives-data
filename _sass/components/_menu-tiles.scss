@@ -1,14 +1,10 @@
 .tile {
-  margin: 10px;
-  
+  // margin: 10px;
+
   a {
     text-decoration: none;
   }
-
-  .production_sub_heading_1,
-  .production_sub_heading_2,
-  .economic_impact_sub_heading_1,
-  .revenue_sub_heading_1 {
+  .tile-item {
     .production-picture {
       position: relative;
       height:250px;
@@ -30,4 +26,55 @@
       color: white;
     }
   }
+
+  .oil_gas {
+    .production-picture {
+      background-image: url('../img/tiles/erdoel.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/erdoel-h.png');
+    }
+  }
+
+  .coal {
+    .production-picture {
+      background-image: url('../img/tiles/kohle.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/kohle-h.png');
+    }
+  }
+
+  .salts {
+    .production-picture {
+      background-image: url('../img/tiles/salze.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/salze-h.png');
+    }
+  }
+
+  .stones_and_soils {
+    .production-picture {
+      background-image: url('../img/tiles/steine.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/steine-h.png');
+    }
+  }
+
+  .other_raw_materials {
+    .production-picture {
+      background-image: url('../img/tiles/sonstige.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/sonstige-h.png');
+    }
+  }
+
 }

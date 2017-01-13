@@ -1,5 +1,5 @@
 ---
-title: D-ETI
+title: Daten entdecken
 layout: default
 permalink: /explore/
 ---

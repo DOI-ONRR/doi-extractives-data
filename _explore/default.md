@@ -79,7 +79,7 @@ permalink: /explore/
       </h2>
     </a>
     <div class="container-left-3 tile" accordion-item aria-expanded="true">
-      <a href="#" class="revenue_sub_heading_1 tile-item">
+      <a class="revenue_sub_heading_1 tile-item not_active">
         <div class="production-picture">
           <div class="production-name">
             {% t 'explore-data.revenue.sub-heading-1' %}
@@ -95,7 +95,7 @@ permalink: /explore/
       </h2>
     </a>
     <div class="container-left-3 tile" accordion-item aria-expanded="true">
-      <a href="#" class="economic_impact_sub_heading_1 tile-item">
+      <a class="economic_impact_sub_heading_1 tile-item not_active">
         <div class="production-picture">
           <div class="production-name">
             {% t 'explore-data.economic-impact.sub-heading-1' %}

@@ -1,0 +1,33 @@
+.tile {
+  margin: 10px;
+  
+  a {
+    text-decoration: none;
+  }
+
+  .production_sub_heading_1,
+  .production_sub_heading_2,
+  .economic_impact_sub_heading_1,
+  .revenue_sub_heading_1 {
+    .production-picture {
+      position: relative;
+      height:250px;
+      width: 250px;
+      background-color: #e3f8ff;
+      background-image: url('../img/tiles/placeholder.png');
+      background-repeat:no-repeat;
+
+      .production-name {
+        text-align: center;
+        position: relative;
+        top: 80%;
+      }
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/placeholder.png');
+      background-color: #157bac;
+      color: white;
+    }
+  }
+}

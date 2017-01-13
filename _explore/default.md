@@ -26,81 +26,82 @@ permalink: /explore/
   </div>
 </section>
 
-<section class="container-outer landing-wrapper">
+<section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
     <a id="production" class="link-no_under">
       <h2 class="h3 landing-section_category">
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading">
-        {% if site.lang == "de" %}
-          <a href="{{ site.baseurl_root }}/explore/federal-production">
-            {% t 'explore-data.production.sub-heading-1' %}
-          </a>
-        {% elsif site.lang == "en" %}
-          <a href="{{ site.baseurl_root }}/en/explore/federal-production">
-            {% t 'explore-data.production.sub-heading-1' %}
-          </a>
-        {% endif %}
-      </h3>
-      <div>
-        <p class="landing-description">
-          {% t 'explore-data.production.description-1' %}
-        </p>
-      </div>
+    <div class="container-left-3 tile" accordion-item>
+      {% if site.lang == "de" %}
+        <a href="{{ site.baseurl_root }}/explore/federal-production" class="production_sub_heading_1 tile-item">
+          <div class="production-picture">
+            <div class="production-name">
+              {% t 'explore-data.production.sub-heading-1' %}
+            </div>
+          </div>
+        </a>
+      {% elsif site.lang == "en" %}
+        <a href="{{ site.baseurl_root }}/en/explore/federal-production" class="production_sub_heading_1 tile-item">
+          <div class="production-picture">
+            <div class="production-name">
+              {% t 'explore-data.production.sub-heading-1' %}
+            </div>
+          </div>
+        </a>
+      {% endif %}
     </div>
-    <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading">
-
-        {% if site.lang == "de" %}
-          <a href="{{ site.baseurl_root }}/explore/production-charts">
-            {% t 'explore-data.production.sub-heading-2' %}
-          </a>
-        {% elsif site.lang == "en" %}
-          <a href="{{ site.baseurl_root }}/en/explore/production-charts">
-            {% t 'explore-data.production.sub-heading-2' %}
-          </a>
-        {% endif %}
-      </h3>
-      <div>
-        <p class="landing-description">
-          {% t 'explore-data.production.description-2' %}
-        </p>
-      </div>
+    <div class="container-left-3 tile" accordion-item>
+      {% if site.lang == "de" %}
+        <a href="{{ site.baseurl_root }}/explore/production-charts" class="production_sub_heading_2 tile-item">
+          <div class="production-picture">
+            <div class="production-name">
+              {% t 'explore-data.production.sub-heading-2' %}
+            </div>
+          </div>
+        </a>
+      {% elsif site.lang == "en" %}
+        <a href="{{ site.baseurl_root }}/en/explore/production-charts" class="production_sub_heading_2 tile-item">
+          <div class="production-picture">
+            <div class="production-name">
+              {% t 'explore-data.production.sub-heading-2' %}
+            </div>
+          </div>
+        </a>
+      {% endif %}
     </div>
   </section>
   <section class="container">
     <a id="revenue" class="link-no_under">
       <h2 class="h3 landing-section_category">
         {% t 'explore-data.revenue.heading-1' %}
-      </h2></a>
-    <div class="container-half landing-section" accordion-item aria-expanded="true">
-      <h3 class="h5 landing-heading"><a href="#">
-        {% t 'explore-data.revenue.sub-heading-1' %} </a>
-      </h3>
-      <div>
-        <p class="landing-description">
-          {% t 'explore-data.revenue.description-1' %}
-        </p>
-      </div>
+      </h2>
+    </a>
+    <div class="container-left-3 tile" accordion-item aria-expanded="true">
+      <a href="#" class="revenue_sub_heading_1 tile-item">
+        <div class="production-picture">
+          <div class="production-name">
+            {% t 'explore-data.revenue.sub-heading-1' %}
+          </div>
+        </div>
+      </a>
     </div>
   </section>
   <section class="container">
     <a id="economic-impact" name="economic-impact" class="link-no_under">
-      <h2 class="h3 landing-section_category">
+      <h2 class="h3 landing-section_category tile-item">
         {% t 'explore-data.economic-impact.heading-1' %}
-      </h2></a>
-    <div class="container-half landing-section" accordion-item>
-      <h3 class="h5 landing-heading"><a>
-        {% t 'explore-data.economic-impact.sub-heading-1' %}</a>
-      </h3>
-      <div>
-        <p class="landing-description">
-          {% t 'explore-data.economic-impact.description-1' %}
-        </p>
-      </div>
+      </h2>
+    </a>
+    <div class="container-left-3 tile" accordion-item aria-expanded="true">
+      <a href="#" class="economic_impact_sub_heading_1 tile-item">
+        <div class="production-picture">
+          <div class="production-name">
+            {% t 'explore-data.economic-impact.sub-heading-1' %}
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 </section>

@@ -1,5 +1,7 @@
 .tile {
-  margin: 10px;
+  float: left;
+  width: 250px;
+  margin: 3px;
 
   .not_active {
      pointer-events: none;

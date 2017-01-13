@@ -28,12 +28,12 @@ permalink: /explore/
 
 <section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
-    <a id="production" class="link-no_under">
-      <h2 class="h3 landing-section_category">
+    <a id="production" class="link-no_under"  style="margin-bottom: 20px">
+      <h2 class="h3 landing-section_category" style="margin-bottom: 20px">
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    <div class="container-left-3 tile" accordion-item>
+    <div class="tile" accordion-item>
       {% if site.lang == "de" %}
         <a href="{{ site.baseurl_root }}/explore/federal-production" class="production_sub_heading_1 tile-item">
           <div class="production-picture">
@@ -52,7 +52,7 @@ permalink: /explore/
         </a>
       {% endif %}
     </div>
-    <div class="container-left-3 tile" accordion-item>
+    <div class="tile" accordion-item>
       {% if site.lang == "de" %}
         <a href="{{ site.baseurl_root }}/explore/production-charts" class="production_sub_heading_2 tile-item">
           <div class="production-picture">
@@ -74,11 +74,11 @@ permalink: /explore/
   </section>
   <section class="container">
     <a id="revenue" class="link-no_under">
-      <h2 class="h3 landing-section_category">
+      <h2 class="h3 landing-section_category" style="margin-bottom: 20px">
         {% t 'explore-data.revenue.heading-1' %}
       </h2>
     </a>
-    <div class="container-left-3 tile" accordion-item aria-expanded="true">
+    <div class="tile" accordion-item aria-expanded="true">
       <a class="revenue_sub_heading_1 tile-item not_active">
         <div class="production-picture">
           <div class="production-name">
@@ -90,11 +90,11 @@ permalink: /explore/
   </section>
   <section class="container">
     <a id="economic-impact" name="economic-impact" class="link-no_under">
-      <h2 class="h3 landing-section_category tile-item">
+      <h2 class="h3 landing-section_category tile-item" style="margin-bottom: 20px">
         {% t 'explore-data.economic-impact.heading-1' %}
       </h2>
     </a>
-    <div class="container-left-3 tile" accordion-item aria-expanded="true">
+    <div class="tile" accordion-item aria-expanded="true">
       <a class="economic_impact_sub_heading_1 tile-item not_active">
         <div class="production-picture">
           <div class="production-name">

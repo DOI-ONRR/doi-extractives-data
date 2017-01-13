@@ -1,6 +1,14 @@
 .tile {
   margin: 10px;
 
+  .not_active {
+     pointer-events: none;
+     cursor: default;
+     .production-picture {
+       color: #a7a7a7;
+     }
+  }
+
   a {
     text-decoration: none;
   }
@@ -17,11 +25,13 @@
         text-align: center;
         position: relative;
         top: 80%;
+        margin-left: 5px;
+        margin-right: 5px;
       }
     }
 
     .production-picture:hover {
-      background-image: url('../img/tiles/placeholder.png');
+      background-image: url('../img/tiles/placeholder_white.png');
       background-color: #157bac;
       color: white;
     }
@@ -77,4 +87,13 @@
     }
   }
 
+  .production_sub_heading_1, .production_sub_heading_2, .state_subsidies {
+    .production-picture {
+      background-image: url('../img/tiles/placeholder_blue.png');
+    }
+
+    .production-picture:hover {
+      background-image: url('../img/tiles/placeholder_white.png');
+    }
+  }
 }

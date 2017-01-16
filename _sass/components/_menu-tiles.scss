@@ -1,101 +1,49 @@
 .tile {
+  display: block;
   float: left;
+  background: #e3f8ff url('../img/tiles/placeholder_blue.png');
   width: 250px;
+  height: 250px;
   margin: 3px;
+  position: relative;
 
-  .not_active {
-     pointer-events: none;
-     cursor: default;
-     .production-picture {
-       color: #a7a7a7;
-     }
+  &:hover {
+    background-color: #157bac;
+    background-image: url('../img/tiles/placeholder_white.png');
+    color: white;
+    cursor: pointer;
+  }
+  &.disabled {
+    color: #a7a7a7;
+    background-image: url('../img/tiles/placeholder.png');
   }
 
-  a {
-    text-decoration: none;
+  span {
+    position: absolute;
+    bottom: 5px;
+    width: 96%;
+    text-align: center;
+    margin: 0 2%;
   }
-  .tile-item {
-    .production-picture {
-      position: relative;
-      height:250px;
-      width: 250px;
-      background-color: #e3f8ff;
-      background-image: url('../img/tiles/placeholder.png');
-      background-repeat:no-repeat;
+}
 
-      .production-name {
-        text-align: center;
-        position: relative;
-        top: 80%;
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/placeholder_white.png');
-      background-color: #157bac;
-      color: white;
-    }
-  }
-
-  .oil_gas {
-    .production-picture {
-      background-image: url('../img/tiles/erdoel.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/erdoel-h.png');
-    }
-  }
-
-  .coal {
-    .production-picture {
-      background-image: url('../img/tiles/kohle.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/kohle-h.png');
-    }
-  }
-
-  .salts {
-    .production-picture {
-      background-image: url('../img/tiles/salze.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/salze-h.png');
-    }
-  }
-
-  .stones_and_soils {
-    .production-picture {
-      background-image: url('../img/tiles/steine.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/steine-h.png');
-    }
-  }
-
-  .other_raw_materials {
-    .production-picture {
-      background-image: url('../img/tiles/sonstige.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/sonstige-h.png');
-    }
-  }
-
-  .production_sub_heading_1, .production_sub_heading_2, .state_subsidies {
-    .production-picture {
-      background-image: url('../img/tiles/placeholder_blue.png');
-    }
-
-    .production-picture:hover {
-      background-image: url('../img/tiles/placeholder_white.png');
-    }
-  }
+.tile-erdoel {
+  background-image: url('../img/tiles/erdoel.png');
+  &:hover { background-image: url('../img/tiles/erdoel-h.png') }
+}
+.tile-kohle {
+  background-image: url('../img/tiles/kohle.png');
+  &:hover { background-image: url('../img/tiles/kohle-h.png') }
+}
+.tile-salze {
+  background-image: url('../img/tiles/salze.png');
+  &:hover { background-image: url('../img/tiles/salze-h.png') }
+}
+.tile-steine {
+  background-image: url('../img/tiles/steine.png');
+  &:hover { background-image: url('../img/tiles/steine-h.png') }
+}
+.tile-sonstige {
+  background-image: url('../img/tiles/sonstige.png');
+  &:hover { background-image: url('../img/tiles/sonstige-h.png') }
 }

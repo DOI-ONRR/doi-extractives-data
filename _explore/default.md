@@ -33,44 +33,29 @@ permalink: /explore/
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    <div class="tile" accordion-item>
-      {% if site.lang == "de" %}
-        <a href="{{ site.baseurl_root }}/explore/federal-production" class="production_sub_heading_1 tile-item">
-          <div class="production-picture">
-            <div class="production-name">
-              {% t 'explore-data.production.sub-heading-1' %}
-            </div>
-          </div>
-        </a>
-      {% elsif site.lang == "en" %}
-        <a href="{{ site.baseurl_root }}/en/explore/federal-production" class="production_sub_heading_1 tile-item">
-          <div class="production-picture">
-            <div class="production-name">
-              {% t 'explore-data.production.sub-heading-1' %}
-            </div>
-          </div>
-        </a>
-      {% endif %}
-    </div>
-    <div class="tile" accordion-item>
-      {% if site.lang == "de" %}
-        <a href="{{ site.baseurl_root }}/explore/production-charts" class="production_sub_heading_2 tile-item">
-          <div class="production-picture">
-            <div class="production-name">
-              {% t 'explore-data.production.sub-heading-2' %}
-            </div>
-          </div>
-        </a>
-      {% elsif site.lang == "en" %}
-        <a href="{{ site.baseurl_root }}/en/explore/production-charts" class="production_sub_heading_2 tile-item">
-          <div class="production-picture">
-            <div class="production-name">
-              {% t 'explore-data.production.sub-heading-2' %}
-            </div>
-          </div>
-        </a>
-      {% endif %}
-    </div>
+    {% if site.lang == "de" %}
+      <a href="/explore/federal-production" class="tile">
+        <span class="production-name">
+          {% t 'explore-data.production.sub-heading-1' %}
+        </span>
+      </a>
+      <a href="/explore/production-charts" class="tile">
+        <span class="production-name">
+          {% t 'explore-data.production.sub-heading-2' %}
+        </span>
+      </a>
+    {% elsif site.lang == "en" %}
+      <a href="/en/explore/federal-production" class="tile">
+        <span class="production-name">
+          {% t 'explore-data.production.sub-heading-1' %}
+        </span>
+      </a>
+      <a href="/en/explore/production-charts" class="tile">
+        <span class="production-name">
+          {% t 'explore-data.production.sub-heading-2' %}
+        </span>
+      </a>
+    {% endif %}
   </section>
   <section class="container">
     <a id="revenue" class="link-no_under">
@@ -78,15 +63,11 @@ permalink: /explore/
         {% t 'explore-data.revenue.heading-1' %}
       </h2>
     </a>
-    <div class="tile" accordion-item aria-expanded="true">
-      <a class="revenue_sub_heading_1 tile-item not_active">
-        <div class="production-picture">
-          <div class="production-name">
-            {% t 'explore-data.revenue.sub-heading-1' %}
-          </div>
-        </div>
-      </a>
-    </div>
+    <a href="#" class="tile disabled">
+      <span class="production-name">
+        {% t 'explore-data.production.sub-heading-2' %}
+      </span>
+    </a>
   </section>
   <section class="container">
     <a id="economic-impact" name="economic-impact" class="link-no_under">
@@ -94,15 +75,12 @@ permalink: /explore/
         {% t 'explore-data.economic-impact.heading-1' %}
       </h2>
     </a>
-    <div class="tile" accordion-item aria-expanded="true">
-      <a class="economic_impact_sub_heading_1 tile-item not_active">
-        <div class="production-picture">
-          <div class="production-name">
-            {% t 'explore-data.economic-impact.sub-heading-1' %}
-          </div>
-        </div>
-      </a>
-    </div>
+
+    <a href="#" class="tile disabled">
+      <span class="production-name">
+        {% t 'explore-data.economic-impact.sub-heading-1' %}
+      </span>
+    </a>
   </section>
 </section>
 

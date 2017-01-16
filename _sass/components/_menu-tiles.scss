@@ -46,6 +46,7 @@
 .tile-sonstige {
   background-image: url('../img/tiles/5_sonstige.png');
   &:hover { background-image: url('../img/tiles/5_sonstige-h.png') }
+  &.disabled { background-image: url('../img/tiles/5_sonstige-i.png') }
 }
 .tile-rechtl-rahmen {
   background-image: url('../img/tiles/6_rechtl-rahmen.png');

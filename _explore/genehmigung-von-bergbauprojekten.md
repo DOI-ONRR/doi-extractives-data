@@ -3,8 +3,8 @@ title: Rechtlicher Rahmen und staatliche Stellen
 layout: default
 permalink: /genehmigung-von-bergbauprojekten/
 breadcrumb:
-  - title: Genehmigung von Bergbauprojekten
-    permalink: /genehmigung-von-bergbauprojekten/
+  - title: Deutscher Rohstoffsektor
+    permalink: /explore/how-it-work/
 nav_items:
   - name: intro
     title: Top
@@ -25,8 +25,7 @@ nav_items:
   <section class="container" style="position: relative;">
     {% include breadcrumb.html %}
     <h1 id="title">
-      Wie funktioniert‘s?: Genehmigung von Bergbauvorhaben
-      Kurzer Satz (für Webseite):
+      Wie funktioniert‘s? Genehmigung von Bergbauvorhaben
     </h1>
     <div class="container-left-9">
       <section id="intro" style="position: relative;">

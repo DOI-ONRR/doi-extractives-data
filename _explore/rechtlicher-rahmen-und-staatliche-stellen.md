@@ -3,8 +3,8 @@ title: Rechtlicher Rahmen und staatliche Stellen
 layout: default
 permalink: /rechtlicher-rahmen-und-staatliche-stellen/
 breadcrumb:
-  - title: Rechtlicher Rahmen und staatliche Stellen
-    permalink: /rechtlicher-rahmen-und-staatliche-stellen/
+  - title: Deutscher Rohstoffsektor
+    permalink: /explore/how-it-work/
 nav_items:
   - name: intro
     title: Top
@@ -16,8 +16,7 @@ nav_items:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="title">Wer ist zuständig?: Gesetze und die Zuständigkeiten staatlicher Stellen:
-      Kurzer Satz (auf Webseite)</h1>
+    <h1 id="title">Wer ist zuständig? Gesetze und die Zuständigkeiten staatlicher Stellen</h1>
 
     <div class="container-left-9">
       <section id="intro" style="position: relative;">

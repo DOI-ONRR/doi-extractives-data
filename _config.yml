@@ -29,7 +29,7 @@ exclude:
 gems:
   - jekyll-multiple-languages-plugin
 
-languages: ["de", "en"]
+languages: ["de"]
 exclude_from_localizations: ["js", "img", "css"]
 
 collections:

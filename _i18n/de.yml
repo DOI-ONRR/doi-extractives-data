@@ -1,25 +1,17 @@
 menu:
     back: "Mehr zur D-EITI Initiative"
     about: "Start"
-    how-it-work: "Deutsche Rohstoffgewinnung"
-    explore-data: "Daten entdecken"
+    how-it-work: "Rohstoffgewinnung"
+    explore-data: "Fakten"
 
 explore-data:
-    title: "Daten entdecken"
+    title: "Fakten"
     introduction-first: |
-      Herzlich Willkommen auf dem D-EITI Datenportal.
-      Hier können Sie die im Rahmen der D-EITI Umsetzung gesammelten Daten entdecken
-      und sich so über den deutschen rohstoffgewinnenden Sektor informieren. Derzeit sind
-      <a href="#production">
-        Daten zur Rohstoffproduktion in Deutschland
-      </a> verfügbar.
+   
+      Hier können Sie interaktiv Zahlen und Daten rund um die <a href="#production">Förderung von Rohstoffen in Deutschland</a> entdecken und sich über den <a href="#revenue">wirtschaftlichen</a> und <a href="#economic-impact">sozialen Beitrag</a> des rohstoffgewinnenden Sektors informieren.
 
     introduction-second: |
-      Daten zu den
-      <a href="#revenue">Einnahmen</a>
-      aus dem deutschen Rohstoffsektor sowie zur
-      <a href="#economic-impact">sozialen und wirtschaftlichen Bedeutung</a>
-      des Sektors werden bis zur Veröffentlichung des 1. D-EITI Berichts im Sommer 2017 stetig ergänzt und hinzugefügt.
+      
 
     figcaption: |
       Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
@@ -43,23 +35,16 @@ explore-data:
       description-1: Hier können Sie sich in Zukunft über die wirtschaftliche und soziale Bedeutung des deutschen Rohstoffsektors informieren.
 
 how-it-work:
-    title: Deutscher Rohstoffsektor
-    description-1: |
-        Die Förderung von Rohstoffen in Deutschland gestaltet sich facettenreich:
-          Welchen gesetzlichen Rahmenbedingungen unterliegt der Abbau? Wie verlaufen
-          die Zahlungsströme? Inwiefern wird das Thema Natur und Umwelt mit einbezogen?
-          Informationen darüber erhalten Sie hier.
+    title: Rohstoffgewinnung
+    description-1: Die Förderung von Rohstoffen in Deutschland ist facettenreich: Wie sind die gesetzlichen Rahmenbedingungen? Wie sind die Zahlungsströme? Wie finden Natur- und Umweltschutz Berücksichtigung? Detaillierte Informationen bietet Ihnen unser Portal.
 
 about:
-    title: Herzlich Willkommen
-    description-1: |
-        Hier finden Sie umfangreiche Informationen und Daten zum Thema Förderung von Rohstoffen in Deutschland.
-        Das Portal ist Teil der globalen Extractive Industries Transparency Initiative (EITI) für mehr Transparenz
-        und Rechenschaftspflicht im rohstoffgewinnenden Sektor.
-    description-1-link-1: Kontextinformationen
-    description-1-1:  zum deutschen Rohstoffsektor als auch wichtige
-    description-1-link-2: Daten
-    description-1-2: über den rohstoffgewinnenden Sektor zusammenträgt.
+    title: Herzlich Willkommen ...
+    description-1: ... auf rohstofftransparenz.de, dem Informationsportal der deutschen Initiative für Transparenz im rohstoffgewinnenden Sektor (D-EITI). Eine verständliche Darstellung von Themen und mehr Transparenz im rohstoffgewinnenden Sektor ist das gemeinsame Ziel der D-EITI-Initiative und ihren Mitgliedern aus Regierung, Wirtschaft und Zivilgesellschaft. Auf unserem Portal haben Sie Zugang zu
+    description-1-link-1: detaillierten Fakten
+    description-1-1:   und zur Förderung von
+    description-1-link-2: Rohstoffen in Deutschland
+    description-1-2: .
     description-2:  Besuchen Sie dieses Portal gerne regelmäßig, um über neue Ergebnisse der deutschen EITI Initiative auf dem Laufenden zu bleiben.
 
 federal-production:

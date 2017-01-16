@@ -37,7 +37,11 @@ nav_items:
     <div class="container-left-9">
       <section id="intro" style="position: relative;">
         <p>
-          Neben den Zahlungen, die rohstoffgewinnende Unternehmen an den Staat leisten, fallen auch Subventionen von staatlicher Seite an Unternehmen der rohstoffgewinnenden Industrie an.
+          Neben den Zahlungen, die rohstoffgewinnende Unternehmen an den Staat leisten, fallen auch
+          <span class="term term_end" data-term="subventionen" title="Click to define" tabindex="0">
+            Subventionen
+            <icon class="icon-book"></icon>
+          </span>, von staatlicher Seite an Unternehmen der rohstoffgewinnenden Industrie an.
         </p>
         <p>
           Neben den Zahlungen, die rohstoffgewinnende Unternehmen an den Staat leisten, werden auch Subventionen von staatlicher Seite an Unternehmen der rohstoffgewinnenden Industrie geleistet.

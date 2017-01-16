@@ -35,23 +35,23 @@ permalink: /explore/
     </a>
     {% if site.lang == "de" %}
       <a href="/explore/federal-production" class="tile">
-        <span class="production-name">
+        <span>
           {% t 'explore-data.production.sub-heading-1' %}
         </span>
       </a>
       <a href="/explore/production-charts" class="tile">
-        <span class="production-name">
+        <span>
           {% t 'explore-data.production.sub-heading-2' %}
         </span>
       </a>
     {% elsif site.lang == "en" %}
       <a href="/en/explore/federal-production" class="tile">
-        <span class="production-name">
+        <span>
           {% t 'explore-data.production.sub-heading-1' %}
         </span>
       </a>
       <a href="/en/explore/production-charts" class="tile">
-        <span class="production-name">
+        <span>
           {% t 'explore-data.production.sub-heading-2' %}
         </span>
       </a>
@@ -64,7 +64,7 @@ permalink: /explore/
       </h2>
     </a>
     <a href="#" class="tile disabled">
-      <span class="production-name">
+      <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>
     </a>
@@ -77,7 +77,7 @@ permalink: /explore/
     </a>
 
     <a href="#" class="tile disabled">
-      <span class="production-name">
+      <span>
         {% t 'explore-data.economic-impact.sub-heading-1' %}
       </span>
     </a>

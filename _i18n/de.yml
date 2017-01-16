@@ -7,11 +7,11 @@ menu:
 explore-data:
     title: "Fakten"
     introduction-first: |
-   
+
       Hier können Sie interaktiv Zahlen und Daten rund um die <a href="#production">Förderung von Rohstoffen in Deutschland</a> entdecken und sich über den <a href="#revenue">wirtschaftlichen</a> und <a href="#economic-impact">sozialen Beitrag</a> des rohstoffgewinnenden Sektors informieren.
 
     introduction-second: |
-      
+
 
     figcaption: |
       Eine interaktive Rohstoffkarte finden Sie im Abschnitt:
@@ -36,7 +36,7 @@ explore-data:
 
 how-it-work:
     title: Rohstoffgewinnung
-    description-1: Die Förderung von Rohstoffen in Deutschland ist facettenreich: Wie sind die gesetzlichen Rahmenbedingungen? Wie sind die Zahlungsströme? Wie finden Natur- und Umweltschutz Berücksichtigung? Detaillierte Informationen bietet Ihnen unser Portal.
+    description-1: "Die Förderung von Rohstoffen in Deutschland ist facettenreich: Wie sind die gesetzlichen Rahmenbedingungen? Wie sind die Zahlungsströme? Wie finden Natur- und Umweltschutz Berücksichtigung? Detaillierte Informationen bietet Ihnen unser Portal."
 
 about:
     title: Herzlich Willkommen ...

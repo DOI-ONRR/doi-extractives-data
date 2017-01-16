@@ -1,5 +1,5 @@
 ---
-title: Kohle
+title: Staatliche Subventionen
 layout: default
 permalink: /explore/staatliche-subventionen/
 breadcrumb:

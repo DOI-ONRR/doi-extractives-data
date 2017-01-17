@@ -7,7 +7,7 @@ breadcrumb:
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
-    title: Top
+    title: Seitenanfang
   - name: erdol
     title: Erdöl
     subnav_items:

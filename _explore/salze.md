@@ -7,7 +7,7 @@ breadcrumb:
     permalink: /explore/how-it-work/
 nav_items:
   - name: salze
-    title: Top
+    title: Seitenanfang
     subnav_items:
       - name: 5-fakten-zu-salze
         title: 5 Fakten zu Salze

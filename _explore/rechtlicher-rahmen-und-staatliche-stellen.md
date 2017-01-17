@@ -7,7 +7,7 @@ breadcrumb:
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
-    title: Top
+    title: Seitenanfang
   - name: rechtliche-stellungl
     title: Rechtliche Stellung der Bodenschätze in Deutschland
 ---

@@ -1,63 +1,59 @@
-<header class="header">
-  <nav class="nav-header">
-    <div class="logo-container">
-      <a href="{{ site.baseurl_root }}/">
-        <img class="header-image" src="{{ site.baseurl_root }}/img/RT-D-EITI-Logo.png" alt="Deiti logo">
-      </a>
-      <div class="logo_text">
-        <span>Deutschland</span>
-        <span>Extractive</span>
-        <span>Industries</span>
-        <span>Transparency</span>
-        <span>Initiative</span>
-      </div>
-    </div>
+<header class="header container-page-wrapper">
+
+  <div class="header-left">
+    <a href="{{ site.baseurl_root }}/">
+      <img class="header-image" src="{{ site.baseurl_root }}/img/RT-D-EITI-Logo.png" alt="Deiti logo">
+    </a>
+  </div>
+
+  <nav class="header-nav header-right">
+    <ul class="header-nav_top">
+      <li class="header-nav_item_top">
+        <a href="javascript:void(0)" class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+      </li>
+      <span class="header-nav_item_link_spacer"> | </span>
+      <li class="header-nav_item_top">
+        <a class="header-nav_item_link_top active" href="/downloads/">Downloads</a>
+      </li>
+      <li class="header-nav_item_top"></li>
+<!--
+      <li class="header-nav_item_top">
+        <form action="/search-results/">
+          <label class="sr-only" for="q">Search</label>
+          <input type="search" class="q header-nav_search" placeholder="Search" id="q" name="q" role="search">
+          <button type="submit" class="header-nav_search_icon" title="search"><span class="icon-search"></span><label class="sr-only">Icon search button</label></button>
+        </form>
+      </li> -->
+
+    </ul>
     <div style="clear:both"></div>
     <ul class="header-nav_bottom">
-      <li class="back-btn">
-        <a href="http://www.d-eiti.de/de/" target="_blank">{% t 'menu.back' %}</a>
-      </li>
-      <li>
+      <li class="header-nav_item">
         {% if site.lang == "de" %}
-          <a href="{{ site.baseurl_root }}/"> {% t 'menu.about' %} </a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/"> {% t 'menu.about' %} </a>
         {% elsif site.lang == "en" %}
-          <a href="{{ site.baseurl_root }}/en"> {% t 'menu.about' %} </a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en"> {% t 'menu.about' %} </a>
         {% endif %}
       </li>
-      <li>
+      <li class="header-nav_item">
         {% if site.lang == "de" %}
-        <a href="{{ site.baseurl_root }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
         {% elsif site.lang == "en" %}
-          <a href="{{ site.baseurl_root }}/en/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
         {% endif %}
       </li>
-      <li>
+      <li class="header-nav_item">
         {% if site.lang == "de" %}
-          <a href="{{ site.baseurl_root }}/explore">{% t 'menu.explore-data' %}</a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore">{% t 'menu.explore-data' %}</a>
         {% elsif site.lang == "en" %}
-          <a href="{{ site.baseurl_root }}/en/explore">{% t 'menu.explore-data' %}</a>
+          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en/explore">{% t 'menu.explore-data' %}</a>
         {% endif %}
       </li>
+      <li class="header-nav_item">
+        <a class="header-nav_item_link" href="http://www.d-eiti.de/de/" target="_blank">{% t 'menu.back' %}</a>
+      </li>
+
     </ul>
   </nav>
-  <!--
-  <div class="flag-container container">
-        {% if site.lang == "de" %}
-        {% capture link1 %} {{ site.baseurl_root }}/en{{page.url}}{% endcapture %}
-        {% elsif site.lang == "en" %}
-        {% capture link2 %}{{ site.baseurl_root }}{{page.url}}{% endcapture %}
-        {% endif %}
-      <ul>
-        <li class="lang-item">
-          <a href="{{ link1 }}" >
-            <img src="{{ site.baseurl_root }}/img/counties/en_GB.png" title="English" alt="English">
-          </a>
-        </li>
-        <li class="lang-item">
-          <a href="{{ link2 }}" >
-            <img src="{{ site.baseurl_root }}/img/counties/de_DE.png" title="Deutsch" alt="Deutsch">
-          </a>
-        </li>
-      </ul>
-  </div>-->
+  <button data-toggler="nav-drawer" is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" title="Global navigation toggle" aria-labelledby="menu-button"><span class="u-visually-hidden"><icon class="icon-bars"></icon></span></button>
 </header>

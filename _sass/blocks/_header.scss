@@ -25,27 +25,8 @@
 
 header,
 .header {
-  @include outer-container($max-width);
-
   margin-bottom: $base-padding-large;
   margin-top: $base-padding;
-  margin-left: $base-padding;
-  margin-right: $base-padding;
-
-  @include respond-to(huge-plus-up) {
-    @include outer-container($max-width);
-  }
-}
-.logo_text {
-  display:inline;
-  font-size: 12px;
-  font-weight: bold;
-  float: left;
-  width: 100px;
-  line-height: 1;
-  padding-left: 10px;
-  padding-top: 10px;
-  color: black;
 }
 
 .header-image_link {
@@ -58,18 +39,19 @@ header,
 
 .header-image {
   margin-top: $base-padding / 2;
-  max-width: 280px;
-  width: $eiti-logo-width;
-  float: left;
+  width: 380px;
+  // width: $eiti-logo-width;
+
   @include respond-to(huge-plus-up) {
-    width: 100%;
+    // width: 100%;
   }
 }
 
 .header-left {
   @include span-columns(6);
+
   @include respond-to(medium-up) {
-    @include span-columns(3);
+    @include span-columns(5);
   }
 }
 
@@ -98,7 +80,7 @@ header,
     }
 
     &.header-nav {
-      @include span-columns(9);
+      @include span-columns(7);
       @include omega();
       display: inline-block;
     }
@@ -114,58 +96,17 @@ header,
   @include heading('para-md');
   display: inline-block;
   float: right;
-  margin-top: 30px;
+
   @include respond-to(huge-plus-up) {
     padding-right: 0;
   }
 }
-.header-nav_bottom li.back-btn {
-  float: right;
-  border: none;
-  margin-right: 15px;
-}
 
 .header-nav_top {
   margin-bottom: 0;
-  // margin-top: 30px
+
   @include respond-to(huge-plus-up) {
     margin-bottom: 1em;
-  }
-}
-nav {
-  margin-top: 20px;
-  ul{
-      width: 100%;
-      background-color: #0492d2;
-      color: #FFF;
-      text-shadow: none;
-      padding: 15px;
-
-      li {
-       display: inline-block;
-       -webkit-font-smoothing: antialiased;
-       border-right: 1px solid white;
-       padding: 0px;
-       &:last-child {
-         border-right: none;
-       }
-       &:last-child a {
-         margin-right: 0;
-       }
-       &:first-child a {
-         margin-left: 0;
-       }
-      }
-      a {
-        margin: 0 15px;
-        color: #fff;
-        font-size: 15px;
-        font-weight: normal;
-        text-decoration: none;
-        &:hover {
-          color:  #b4e6fd;
-        }
-      }
   }
 }
 
@@ -294,24 +235,14 @@ nav {
   }
 }
 
-.flag-container {
-  position: relative;
-  float: right;
-  top: -95px;
-
-  ul {
-    margin-bottom: 0;
-
-    list-style-type: none;
-    li {
-      display: inline;
-    }
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .flag-container {
-    top: -115px;
-  }
+.logo_text {
+  display:inline;
+  font-size: 12px;
+  font-weight: bold;
+  float: left;
+  width: 100px;
+  line-height: 1;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: black;
 }

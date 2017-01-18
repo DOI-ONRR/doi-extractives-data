@@ -16,6 +16,30 @@ nav_items:
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
+<style>
+  .fakten_salze div {
+    text-align: center;
+  }
+
+  #fakten_zu_salze {
+    position: relative;
+    margin: 30px 0 30px 0;
+  }
+
+  #fakten_zu_salze h3 {
+    position: relative;
+    top: 40px;
+    z-index: 1;"
+  }
+
+  .fakten_salze {
+    background-image: url('https://dummyimage.com/600x400/e3f8ff/ffffff');
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
 
@@ -52,26 +76,22 @@ nav_items:
           Die bergmännisch gewonnen Kalirohsalze kommen vor allem in der Landwirtschaft als Düngemittel zur Anwendung, werden aber auch als Industriesalz in der Elektrolyse und anderen industriellen Prozessen eingesetzt und in hochreiner Form von der Nahrungs- und Futtermittelindustrie sowie für pharmazeutische Zwecke nachgefragt.
         </p>
 
-        <section id="5-fakten-zu-salze" style="position: relative; margin: 30px 0 30px 0;">
-          <div class="fakten_salze" style="background-image: url('https://dummyimage.com/600x400/e3f8ff/ffffff');">
+        <section id="fakten_zu_salze">
+          <h3>5 Fakten zu Salze</h3>
+          <div class="fakten_salze">
             <div>
-              <h3>5 Fakten zu Salze</h3>
               Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
             </div>
             <div>
-              <h3>5 Fakten zu Salze</h3>
               Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
             </div>
             <div>
-              <h3>5 Fakten zu Salze</h3>
               Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
             </div>
             <div>
-              <h3>5 Fakten zu Salze</h3>
               Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
             </div>
             <div>
-              <h3>5 Fakten zu Salze</h3>
               Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
             </div>
           </div>

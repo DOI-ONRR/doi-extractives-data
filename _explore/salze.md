@@ -13,6 +13,9 @@ nav_items:
         title: 5 Fakten zu Salze
 ---
 
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
 
@@ -60,6 +63,11 @@ nav_items:
             <li>Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.</li>
           </ul>
         </section>
+        <div class="your-class" >
+          <div>First</div>
+          <div>Second</div>
+          <div>Third</div>
+        </div>
 
         <p>
           Im Sinne des sogenannten „Mainstreaming-Ansatzes“ von D-EITI könnte es Sinn machen einerseits auf die jeweiligen DeStatis Angaben zu verweisen und für Salze im speziellen auf die Broschüre „Salze in Deutschland“
@@ -78,4 +86,12 @@ nav_items:
   </section>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/static.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick();
+    });
+</script>

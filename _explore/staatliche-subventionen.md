@@ -7,7 +7,7 @@ breadcrumb:
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
-    title: Top
+    title: Seitenanfang
   - name: subventionen
     title: Subventionen im Bereich der Energie- und Stromsteuer
     subnav_items:

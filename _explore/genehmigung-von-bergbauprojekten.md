@@ -7,7 +7,7 @@ breadcrumb:
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
-    title: Top
+    title: Seitenanfang
   - name: hintergrundseite-bergbauberechtigungen
     title: "Hintergrundseite: Bergbauberechtigungen"
     subnav_items:

@@ -28,21 +28,21 @@
     </ul>
     <div style="clear:both"></div>
     <ul class="header-nav_bottom">
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         {% if site.lang == "de" %}
           <a class="header-nav_item_link" href="{{ site.baseurl_root }}/"> {% t 'menu.about' %} </a>
         {% elsif site.lang == "en" %}
           <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en"> {% t 'menu.about' %} </a>
         {% endif %}
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink contains '/explore/how-it-work/' %}active{% endif %}">
         {% if site.lang == "de" %}
           <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
         {% elsif site.lang == "en" %}
           <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
         {% endif %}
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.title == 'Daten entdecken' %}active{% endif %}">
         {% if site.lang == "de" %}
           <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore">{% t 'menu.explore-data' %}</a>
         {% elsif site.lang == "en" %}

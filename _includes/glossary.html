@@ -10,9 +10,9 @@
   <label for="drawer-search-bar" class="label">Glossar durchsuchen</label>
   <input id="drawer-search-bar" class="js-glossary-search drawer-search" type="search" placeholder="z. B. Subventionen">
   <div id="glossary-result">
-    {% if site.lang == "de" %}
+    {% capture term_lang %}{{ 'terms_' | append: site.lang }}{% endcapture %}
       <ul class="js-glossary-list list-unstyled" accordion="glossary-accordion">
-        {% for term in site.data['terms_de'] %}
+        {% for term in site.data[term_lang] %}
         <li class="glossary-item">
           <h2 class="h5 glossary-term">{{term[0]}}</h2>
           <button><span class="sr-only">Toggle for {{term[0]}}</span></button>
@@ -20,16 +20,5 @@
         </li>
         {% endfor %}
       </ul>
-    {% elsif site.lang == "en" %}
-      <ul class="js-glossary-list list-unstyled" accordion="glossary-accordion">
-        {% for term in site.data['terms_en'] %}
-        <li class="glossary-item">
-          <h2 class="h5 glossary-term">{{term[0]}}</h2>
-          <button><span class="sr-only">Toggle for {{term[0]}}</span></button>
-          <p class="glossary-definition accordion-content">{{term[1]}}</p>
-        </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
   </div>
 </div>

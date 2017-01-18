@@ -1,7 +1,7 @@
 ---
 title: Daten & Dokumentation Herunterladen
 layout: content
-permalink: /downloads/download/
+permalink: /downloads/
 ---
 
 <div id="federal_production">

@@ -47,26 +47,21 @@ permalink: /explore/
   <section class="container">
     <a id="revenue" class="link-no_under">
       <h2 class="h3 landing-section_category" style="margin-bottom: 20px">
-        {% t 'explore-data.revenue.heading-1' %}
-      </h2>
-    </a>
-    <a href="#" class="tile tile-einnahmen-rohstoff disabled">
-      <span>
-        {% t 'explore-data.production.sub-heading-2' %}
-      </span>
-    </a>
-  </section>
-  <section class="container">
-    <a id="economic-impact" name="economic-impact" class="link-no_under">
-      <h2 class="h3 landing-section_category tile-item" style="margin-bottom: 20px">
-        {% t 'explore-data.economic-impact.heading-1' %}
+        Wirtschaftliche und soziale Bedeutung
       </h2>
     </a>
 
-    <a href="#" class="tile disabled">
-      <span>
-        {% t 'explore-data.economic-impact.sub-heading-1' %}
-      </span>
+    <a href="#" class="tile tile-bip disabled">
+    <span>Beitrag zum BIP</span>
+    </a>
+    <a href="#" class="tile tile-einnahmen-rohstoff disabled">
+      <span>Einnahmen</span>
+    </a>
+    <a href="#" class="tile tile-beschaeftigung disabled">
+      <span>Beitrag zur</span>
+    </a>
+    <a href="#" class="tile tile-export disabled">
+      <span>Exporte doi</span>
     </a>
   </section>
 </section>

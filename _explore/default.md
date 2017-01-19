@@ -50,7 +50,7 @@ permalink: /explore/
         {% t 'explore-data.revenue.heading-1' %}
       </h2>
     </a>
-    <a href="#" class="tile einnahmen-rohstoff disabled">
+    <a href="#" class="tile tile-einnahmen-rohstoff disabled">
       <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>

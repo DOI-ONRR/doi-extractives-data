@@ -1,7 +1,7 @@
 # Bureau of Labor Statistics (BLS)
-This directory contains data from the BLS that's the result of joining two
-different data sets for each year listed in the [Makefile](Makefile#L1).
-Here's the process:
+This directory contains wage and salary employment data from the [BLS]
+that is the result of joining two different data sets for each year
+listed in the [Makefile](Makefile#L1). Here's the process:
 
 1. The `Makefile` handles downloading all of the years of data from [this
    archive](http://www.bls.gov/cew/datatoc.htm) and copying the relevant
@@ -62,3 +62,5 @@ make tables/jobs data/jobs
 
 When this is done, you should see a diff in `_data/*_jobs.yml` and
 `data/county_jobs/*.yml`.
+
+[BLS]: http://www.bls.gov/

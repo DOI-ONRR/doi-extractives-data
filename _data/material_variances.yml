@@ -33,35 +33,132 @@ thresholds:
   - stream: BLM renewables
     floor: N/A
 
-footnotes:
-  BP America:
-    Rents: 'This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.'
-  Chevron Corporation:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.'
-  Shell E&P Company:
-    Corporate Income Tax: 'This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014.'
-  Exxon Mobil Corporation:
-    Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.'
-  Peabody Energy Corporation:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.'
-  Anadarko Petroleum Corporation:
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.'
-  ConocoPhillips:
-    Other Revenue: 'This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.'
-  Freeport-McMoRan Inc.:
-    Rents: 'The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.'
-  Statoil Gulf of Mexico:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.'
-  Ultra Resources Inc.:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.'
-  'Noble Energy, Inc.':
-    Offshore Inspection Fee: 'This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.'
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.'
-  Cimarex Energy Co.:
-    Permit Fees: 'This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.'
-  Newfield Exploration Company:
-    Permit Fees: 'The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.'
-  ANKOR Energy LLC:
-    Royalties: 'This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.'
+explanations:
+
+  2013:
+
+    Anadarko Petroleum Corporation:
+      Offshore Inspection Fee: |
+        This material variance was fully explained by a difference in when payments were recorded: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013.
+
+    ANKOR Energy LLC:
+      Royalties: |
+        This material variance was fully explained by a difference in when payments were recorded: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013.
+
+    BP America:
+      Rents: |
+        This material variance was fully explained by a difference in when payments were recorded: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013.
+
+    Chevron Corporation:
+      Royalties: |
+        This material variance was fully explained by a difference in when payments were recorded: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013.
+
+    Cimarex Energy Co.:
+      Permit Fees: |
+        This material variance was fully explained by a difference in when payments were recorded: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014.
+
+    ConocoPhillips:
+      Other Revenue: |
+        This material variance was fully explained by a difference in when payments were recorded: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.
+      Permit Fees: |
+        This material variance was fully explained by a difference in when payments were recorded: $240,500 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.
+      Offshore Inspection Fee: |
+        This material variance was fully explained by a difference in when payments were recorded: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014.
+
+    Freeport-McMoRan Inc.:
+      Rents: |
+        The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization.
+
+    Exxon Mobil Corporation:
+      Other Revenue: |
+        This material variance was fully explained by a difference in when payments were recorded: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013.
+
+    Newfield Exploration Company:
+      Permit Fees: |
+        The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue in this category, as it was not for federal leases. This variance was fully explained by this difference in categorization.
+
+    'Noble Energy, Inc.':
+      Offshore Inspection Fee: |
+        This material variance was fully explained by a difference in when payments were recorded: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013.
+      Permit Fees: |
+        This material variance was fully explained by a difference in when payments were recorded: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014.
+
+    Peabody Energy Corporation:
+      Royalties: |
+        This material variance was fully explained by a difference in when payments were recorded: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014.
+
+    Shell E&P Company:
+      Corporate Income Tax: |
+        This material variance was fully explained by a difference in when payments were recorded: Payment transactions for tax refunds totaling $6,345,527 were shown as paid by the IRS in 2013 and recorded by Shell E&P Company in January 2014.
+
+    Statoil Gulf of Mexico:
+      Royalties: |
+        This material variance was fully explained by a difference in when payments were recorded: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014.
+
+    Ultra Resources Inc.:
+      Royalties: |
+        This material variance was fully explained by a difference in when payments were recorded: $1,086,317 was paid by Ultra Resources in 2012 and recorded in 2013; $47,724 was paid in 2013 and recorded in 2014.
+
+  2015:
+
+    Anadarko Petroleum Corporation:
+      Offshore Inspection Fee: |
+        A variance of $161,000 (7.76%) was identified for Anadarko Petroleum Corporation for the ONRR-Offshore Inspection Fees revenue stream. A payment for the amount of $191,500 was identified as paid by Anadarko Petroleum Corporation in December 2015 and recorded by ONRR in 2016. A payment for the amount of $30,500 was identified as paid by Anadarko Petroleum Corporation in 2014 and recorded by ONRR in 2015.
+
+    BHP Billiton LTD:
+      Bonus: |
+        A variance of $9,925,000 (24.68%) was identified for BHP Billiton LTD for the ONRR-Bonuses revenue stream. Transactions totaling $9,925,000 were identified as paid by BHP Billiton LTD in 2014, and recorded by ONRR in 2015.
+      Other Revenue: |
+        A variance of $14,940,170 (99.99%) was identified for BHP Billiton LTD for the ONRR-Other Revenues revenue stream. BHP Billiton LTD payments totaling $14,928,647 were reported as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream.
+      Rents: |
+        A variance of $243,494 (2.18%) was identified for BHP Billiton LTD for the ONRR-Rents revenue stream. BHP Billiton LTD payments totaling $1,080 were reported as part of the ONRR-Offshore Inspection Fees revenue stream, but identified by ONRR as part of the ONRR-Rents revenue stream. BHP Billiton LTD payments totaling $52,716 were reported as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Rents revenue stream.
+      Royalties: |
+        A variance of $38,177,597 (22.48%) was identified for BHP Billiton LTD for the ONRR-Royalties revenue stream. A payment transaction totaling $23,231,058 was identified as recorded by ONRR in December 2014, supported by ONRR accounting system transactional data, and as paid by BHP Billiton LTD in January 2015, supported by a bank statement dentifying the cash payment date. BHP Billiton LTD payments totaling $14,928,647 were reported as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream. BHP Billiton LTD payments totaling $52,716 were reported as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Rents revenue stream.
+
+    BP America:
+      Bonus: |
+        A variance of $3,837,309 (40.59%) was identified for BP America for the ONRR-Bonuses revenue stream. Payment transactions totaling $4,154,108 were identified as paid by BP America in December 2014 and recorded by ONRR in January 2015. BP America payments totaling $316,800 were reported as part of the ONRR-Bonuses revenue stream, but identified by ONRR as part of the ONRR-Rents revenue stream.
+      Corporate Income Tax: |
+        A variance of $116,888,269 (705.35%) was identified for BP America for the IRS-Federal Corporate Income Taxes revenue stream. Payment transactions totaling $116,888,269 were paid using funds held by the IRS on account for BP America, but only external payment transactions were included in the IRS reported payments.
+      Other Revenue: |
+        A variance of $1,090,717 (41.96%) was identified for BP America for the ONRR-Other Revenues revenue stream. Transactions totaling $1,172,000 were recouped by BP America and reported as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream. Adjusted royalty payments totaling $384,000 were reported by BP America as part of the ONRR-Royalties revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream. Minimum royalty payments totaling $158,400 were reported by BP America as part of the ONRR-Rents revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream. Transactions totaling $522,780 were recouped by BP America in 2014 and posted by ONRR in 2015.
+      Permit Fees: |
+        A variance of $142,094 (43.98%) was identified for BP America for the BLM-Permit Fees revenue stream. The difference was due to how BP America records and tracks direct-billed payments in its accounting system. BP America noted that it has updated its tracking system for Pay.gov transactions to track the specific federal agency beginning with CY 2016 data.
+      Rents: |
+        A variance of $1,140,448 (5.13%) was identified for BP America for the ONRR-Rents revenue stream. BP America payments totaling $316,800 were reported as part of the ONRR-Bonuses revenue stream, but identified by ONRR as part of the ONRR-Rents revenue stream.  Minimum royalty payments totaling $158,400 were reported by BP America as part of the ONRR-Rents revenue stream, but identified by ONRR as part of the ONRR-Other Revenues revenue stream.  Payment transactions totaling $236,478 were paid by BP America in December 2014, but recorded by ONRR in January 2015. Payment transactions totaling $861,000 were attributed to BP America by ONRR during 2015 for leases that were relinquished by BP America in 2015.
+
+    ConocoPhillips:
+      Offshore Inspection Fee: |
+        A variance of $22,861 (21.07%) was identified for ConocoPhillips for the ONRR Offshore Inspection Fees revenue stream. A $17,000 payment was reported by ConocoPhillips as part of the ONRR-Offshore Inspection Fees revenue stream, but ONRR recorded it as ‘on account’ for ConocoPhillips, and is not included in the payments reported by ONRR. Payments totaling $877 were reported as part of the ONRR-Offshore Inspection Fees revenue stream by ConocoPhillips, but identified by ONRR as part of the ONRR-Other Revenues revenue stream.
+      Permit Fees: |
+        The variance amount is the net result of ConocoPhillips making year-end payments in CYs 2014 and 2015 while BLM recorded them in CYs 2015 and 2016.
+
+    Devon Energy Corporation:
+      Other Revenue: |
+        A variance of $56,693 (13.19%) was identified for Devon Energy Corporation for the ONRR-Other Revenues revenue stream. A payment of $180,952 was identified as paid by Devon Energy Corporation in 2015; however, only $112,390 was posted by ONRR in 2015, the remaining $68,562 was accounted for by ONRR in 2016.
+      Permit Fees: |
+        A variance of $77,125 (5.11%) was identified for Devon Energy Corporation for the BLM-Permit Fees revenue stream. Ten payments totaling $65,000 were identified as paid by Devon Energy Corporation in December 2014 and recorded by BLM in January 2015.
+
+    ExxonMobil Corporation:
+      Other Revenue: |
+        A variance of $11,232,000 (75.28%) was identified for ExxonMobil Corporation for the ONRR-Other Revenues revenue stream. A payment of $11,232,000 was identified as paid by ExxonMobil Corporation in December 2014 and recorded by ONRR in 2015.
+      Rents: |
+        A variance of $1,409,071 (13.83%) was identified for ExxonMobil Corporation for the ONRR-Rents revenue stream. Refunded amounts totaling $1,368,000 were posted by ONRR in November and December 2015 and taken by ExxonMobil Corporation in January 2016.
+
+    Marathon Oil Company:
+      ONRR Civil Penalties: |
+        A variance of $40,000 (100%) was identified for Marathon Oil Company for the ONRR-Civil Penalties revenue stream. ONRR included a transaction for the amount of -$40,000, which was a reversal transaction associated with a transaction in a prior calendar year. Marathon Oil Company did not include this reversal in its reported payments.
+
+    Peabody Energy Corporation:
+      OSMRE Civil Penalties: |
+        A variance of $2,210 (64.62%) was identified for Peabody Energy Corporation for the OSMRE-Civil Penalties revenue stream. A payment for the amount of $2,210 was identified as paid by Peabody Energy Corporation in December 2015 and recorded by OSMRE in January 2016.
+
+    Shell E&P Company:
+      Corporate Income Tax: |
+        A variance of $3,152,455 (1.32%) was identified for Shell E&P Company for the IRS-Federal Corporate Income Taxes revenue stream. Payment transactions for tax refunds totaling $1,578,450 were identified as paid by the IRS in 2015, but Shell E&P Company did not include these specific transactions in its submission since these refunds were not related to activities in extractive industries. Payment transactions for tax refunds totaling $4,730,905 were not identified as paid by the IRS to Shell E&P Company since these tax refunds were related to an overpayment made by a separate taxpayer in 2014, who was a member of Shell E&P Company in 2015.
+      Royalties: |
+        A variance of $57,225,123 (10.69%) was identified for Shell E&P Company for the ONRR-Royalties revenue stream. Payment transactions totaling $57,605,231 were identified as paid by Shell E&P Company in December 2014 and recorded by ONRR in January 2015.
+
+    Ultra Resources Inc.:
+      Royalties: |
+        A variance of $8,522,763 (7.91%) was identified for Ultra Resources Inc. for the ONRR-Royalties revenue stream. Payment transactions totaling $7,462,352 were identified as paid by Ultra Resources Inc. in December 2014 and recorded by ONRR in January 2015. Payment transactions totaling $1,062,556 were identified as paid by Ultra Resources Inc. in January 2016 and recorded by ONRR in December 2015. Additionally, payment transactions totaling $1,179 were identified as paid by Ultra Resources Inc. in 2015 and recorded by ONRR in 2014.

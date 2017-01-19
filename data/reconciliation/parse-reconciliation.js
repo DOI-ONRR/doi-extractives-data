@@ -7,7 +7,6 @@ var yargs = require('yargs')
   .alias('h', 'help')
   .wrap(72);
 
-
 var options = yargs.argv;
 if (options.help) {
   return yargs.showHelp();
@@ -20,6 +19,12 @@ var async = require('async');
 var streamify = require('stream-array');
 var parse = require('../../lib/parse');
 
+const COMPANY_NAME = 'Reporting Companies';
+
+const YEAR = process.env.REVENUE_YEAR;
+if (!YEAR) {
+  throw new Error('The REVENUE_YEAR env var is not set!');
+}
 
 const TYPES = [
   'Royalties',
@@ -37,7 +42,9 @@ const TYPES = [
 ];
 
 var parseValue = function (value, unit) {
-  if (value.match(/DNP/)) {
+  if (!value) {
+    return 'N/A';
+  } else if (value.match(/DNP/)) {
     return 'did not participate';
   } else if (value.match(/DNR/)) {
     return 'did not report';
@@ -50,7 +57,7 @@ var parseValue = function (value, unit) {
 
 var roundTwoDecimal = function(num) {
   return typeof(num) == 'number'
-    ? Math.round( num * 100) / 100
+    ? Math.round(num * 100) / 100
     : num;
 };
 
@@ -65,9 +72,9 @@ async.waterfall([
   function thin(rows, done) {
     rows = rows.filter(function(d) {
       // skip summary rows
-      var summary = !d['Reporting Companies']
-        || d['Reporting Companies'] === 'Total Revenue'
-        || d['Reporting Companies'] === 'Key';
+      var summary = !d[COMPANY_NAME]
+        || d[COMPANY_NAME] === 'Total Revenue'
+        || d[COMPANY_NAME] === 'Key';
       if (summary) {
         return false;
       }
@@ -75,6 +82,43 @@ async.waterfall([
     });
     console.warn('matched commodities for %d rows', rows.length);
     return done(null, rows);
+  },
+  function patchTaxes(rows, done) {
+    var sourceFilename = options._[0];
+    var taxesFilename = sourceFilename.replace('.tsv', '-taxes.tsv');
+    if (taxesFilename === sourceFilename) {
+      return done(null, rows);
+    } else {
+      console.warn('checking for the existence of:', taxesFilename);
+    }
+
+    fs.exists(taxesFilename, function(exists) {
+      if (exists) {
+        console.warn('reading tax patches from:', taxesFilename);
+        util.readData(
+          taxesFilename,
+          tito.createReadStream('tsv'),
+          function(error, taxRows) {
+            var taxesByCompany = taxRows.reduce(function(map, row) {
+              map[row[COMPANY_NAME]] = row;
+              return map;
+            }, {});
+
+            rows.forEach(function(row) {
+              var company = row[COMPANY_NAME];
+              if (company in taxesByCompany) {
+                console.warn('patch:', company, row);
+                Object.assign(row, taxesByCompany[company]);
+              }
+            });
+
+            done(null, rows);
+          }
+        );
+      } else {
+        done(null, rows);
+      }
+    });
   },
   function tweak(rows, done) {
     if (!rows.length) {
@@ -93,7 +137,7 @@ async.waterfall([
             ? (gov - company) >= 0
             : true;
 
-          var precisePercent = typeof varianceDollars !== 'number'
+          var precisePercent = typeof(varianceDollars) !== 'number'
             ? varianceDollars
             : varianceDollars === 0
               ? 0
@@ -104,6 +148,7 @@ async.waterfall([
                   ));
 
           result.push({
+            'Year': YEAR,
             'Company': d['Reporting Companies'],
             'Type': type,
             'Government Reported': gov,
@@ -111,7 +156,7 @@ async.waterfall([
             'Variance Dollars': isPos
                ? parseValue(d[type + ' Variance $'], 'dollars')
                : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
-            'Variance Percent': precisePercent
+            'Variance Percent': precisePercent,
           });
       });
     });

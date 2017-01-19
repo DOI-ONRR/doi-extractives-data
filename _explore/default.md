@@ -33,12 +33,12 @@ permalink: /explore/
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile tile-interaktiv">
       <span>
         {% t 'explore-data.production.sub-heading-1' %}
       </span>
     </a>
-    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile tile-ges-rohstoffprod">
       <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>
@@ -50,7 +50,7 @@ permalink: /explore/
         {% t 'explore-data.revenue.heading-1' %}
       </h2>
     </a>
-    <a href="#" class="tile disabled">
+    <a href="#" class="tile einnahmen-rohstoff disabled">
       <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>

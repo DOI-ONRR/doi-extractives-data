@@ -6,97 +6,112 @@
   height: 250px;
   margin: 3px;
   position: relative;
+  opacity: 0.8;
 
   &:hover {
-    background-color: #157bac;
-    background-image: url('../img/tiles/placeholder_white.png');
-    color: white;
+    // background-color: #157bac;
+    // background-image: url('../img/tiles/placeholder_white.png');
+    // color: white;
+    opacity: 1;
     cursor: pointer;
   }
   &.disabled {
-    color: #a7a7a7;
-    background-image: url('../img/tiles/placeholder.png');
+    // color: #a7a7a7;
+    // background-image: url('../img/tiles/placeholder.png');
+    filter: grayscale(100%);
   }
 
   span {
     position: absolute;
-    bottom: 5px;
+    top: 170px;
     width: 96%;
-    text-align: center;
-    margin: 0 2%;
+    text-align: left;
+    margin: 0 2% 0 5%;
+    font-size: 23px;
+    line-height: 1em;
   }
 }
 
 .tile-erdoel {
-  background-image: url('../img/tiles/1_erdoel.png');
-  &:hover { background-image: url('../img/tiles/1_erdoel-h.png') }
+  background-image: url('../img/tiles/1_erdoel-h.png');
+  // &:hover { background-image: url('../img/tiles/1_erdoel-h.png') }
 }
 .tile-kohle {
-  background-image: url('../img/tiles/2_kohle.png');
-  &:hover { background-image: url('../img/tiles/2_kohle-h.png') }
+  background-image: url('../img/tiles/2_kohle-h.png');
+  // &:hover { background-image: url('../img/tiles/2_kohle-h.png') }
 }
 .tile-salze {
-  background-image: url('../img/tiles/3_salze.png');
-  &:hover { background-image: url('../img/tiles/3_salze-h.png') }
+  background-image: url('../img/tiles/3_salze-h.png');
+  // &:hover { background-image: url('../img/tiles/3_salze-h.png') }
 }
 .tile-steine {
-  background-image: url('../img/tiles/4_steine.png');
-  &:hover { background-image: url('../img/tiles/4_steine-h.png') }
+  background-image: url('../img/tiles/4_steine-h.png');
+  // &:hover { background-image: url('../img/tiles/4_steine-h.png') }
 }
 .tile-sonstige {
-  background-image: url('../img/tiles/5_sonstige.png');
-  &:hover { background-image: url('../img/tiles/5_sonstige-h.png') }
+  background-image: url('../img/tiles/5_sonstige-h.png');
+  // &:hover { background-image: url('../img/tiles/5_sonstige-h.png') }
   &.disabled { background-image: url('../img/tiles/5_sonstige-i.png') }
 }
 .tile-rechtl-rahmen {
-  background-image: url('../img/tiles/6_rechtl-rahmen.png');
-  &:hover { background-image: url('../img/tiles/6_rechtl-rahmen-h.png') }
+  background-image: url('../img/tiles/6_rechtl-rahmen-h.png');
+  // &:hover { background-image: url('../img/tiles/6_rechtl-rahmen-h.png') }
 }
 .tile-genehmigung {
-  background-image: url('../img/tiles/7_genehmigung.png');
-  &:hover { background-image: url('../img/tiles/7_genehmigung-h.png') }
+  background-image: url('../img/tiles/7_genehmigung-h.png');
+  // &:hover { background-image: url('../img/tiles/7_genehmigung-h.png') }
 }
 .tile-lizenregister {
-  background-image: url('../img/tiles/8_lizenregister.png');
-  &:hover { background-image: url('../img/tiles/8_lizenregister-h.png') }
-  &.disabled { background-image: url('../img/tiles/8_lizenregister-i.png') }
+  background-image: url('../img/tiles/8_lizenregister-h.png');
+  // &:hover { background-image: url('../img/tiles/8_lizenregister-h.png') }
+  // &.disabled { background-image: url('../img/tiles/8_lizenregister-i.png') }
 }
 .tile-wirtschaftl-eigentum {
-  background-image: url('../img/tiles/9_wirtschaftl-eigentum.png');
-  &:hover { background-image: url('../img/tiles/9_wirtschaftl-eigentum-h.png') }
-  &.disabled { background-image: url('../img/tiles/9_wirtschaftl-eigentum-i.png') }
+  background-image: url('../img/tiles/9_wirtschaftl-eigentum-h.png');
+  // &:hover { background-image: url('../img/tiles/9_wirtschaftl-eigentum-h.png') }
+  // &.disabled { background-image: url('../img/tiles/9_wirtschaftl-eigentum-i.png') }
 }
 .tile-zahlungen {
-  background-image: url('../img/tiles/10_zahlungen.png');
-  &:hover { background-image: url('../img/tiles/10_zahlungen-h.png') }
-  &.disabled { background-image: url('../img/tiles/10_zahlungen-i.png') }
+  background-image: url('../img/tiles/10_zahlungen-h.png');
+  // &:hover { background-image: url('../img/tiles/10_zahlungen-h.png') }
+  // &.disabled { background-image: url('../img/tiles/10_zahlungen-i.png') }
 }
 .tile-berichtspflichten {
-  background-image: url('../img/tiles/11_berichtspflichten.png');
-  &:hover { background-image: url('../img/tiles/11_berichtspflichten-h.png') }
-  &.disabled { background-image: url('../img/tiles/11_berichtspflichten-i.png') }
+  background-image: url('../img/tiles/11_berichtspflichten-h.png');
+  // &:hover { background-image: url('../img/tiles/11_berichtspflichten-h.png') }
+  // &.disabled { background-image: url('../img/tiles/11_berichtspflichten-i.png') }
 }
 .tile-steuergeheimnis {
-  background-image: url('../img/tiles/12_steuergeheimnis.png');
-  &:hover { background-image: url('../img/tiles/12_steuergeheimnis-h.png') }
-  &.disabled { background-image: url('../img/tiles/12_steuergeheimnis-i.png') }
+  background-image: url('../img/tiles/12_steuergeheimnis-h.png');
+  // &:hover { background-image: url('../img/tiles/12_steuergeheimnis-h.png') }
+  // &.disabled { background-image: url('../img/tiles/12_steuergeheimnis-i.png') }
 }
 .tile-verw-einnahmen {
-  background-image: url('../img/tiles/13_verw-einnahmen.png');
-  &:hover { background-image: url('../img/tiles/13_verw-einnahmen-h.png') }
-  &.disabled { background-image: url('../img/tiles/13_verw-einnahmen-i.png') }
+  background-image: url('../img/tiles/13_verw-einnahmen-h.png');
+  // &:hover { background-image: url('../img/tiles/13_verw-einnahmen-h.png') }
+  // &.disabled { background-image: url('../img/tiles/13_verw-einnahmen-i.png') }
 }
 .tile-natur {
-  background-image: url('../img/tiles/14_natur.png');
-  &:hover { background-image: url('../img/tiles/14_natur-h.png') }
-  &.disabled { background-image: url('../img/tiles/14_natur-i.png') }
+  background-image: url('../img/tiles/14_natur-h.png');
+  // &:hover { background-image: url('../img/tiles/14_natur-h.png') }
+  // &.disabled { background-image: url('../img/tiles/14_natur-i.png') }
 }
 .tile-wasser {
-  background-image: url('../img/tiles/15_wasser.png');
-  &:hover { background-image: url('../img/tiles/15_wasser-h.png') }
-  &.disabled { background-image: url('../img/tiles/15_wasser-i.png') }
+  background-image: url('../img/tiles/15_wasser-h.png');
+  // &:hover { background-image: url('../img/tiles/15_wasser-h.png') }
+  // &.disabled { background-image: url('../img/tiles/15_wasser-i.png') }
 }
 .tile-subventionen {
-  background-image: url('../img/tiles/16_subventionen.png');
-  &:hover { background-image: url('../img/tiles/16_subventionen-h.png') }
+  background-image: url('../img/tiles/16_subventionen-h.png');
+  // &:hover { background-image: url('../img/tiles/16_subventionen-h.png') }
+}
+
+.tile-interaktiv {
+  background-image: url('../img/tiles/17_interaktiv-h.png');
+}
+.tile-ges-rohstoffprod {
+  background-image: url('../img/tiles/18_ges-rohstoffprod-h.png');
+}
+.einnahmen-rohstoff {
+  background-image: url('../img/tiles/19_einnahmen-rohstoff-h.png');
 }

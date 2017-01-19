@@ -33,29 +33,16 @@ permalink: /explore/
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    {% if site.lang == "de" %}
-      <a href="/explore/federal-production" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-1' %}
-        </span>
-      </a>
-      <a href="/explore/production-charts" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-2' %}
-        </span>
-      </a>
-    {% elsif site.lang == "en" %}
-      <a href="/en/explore/federal-production" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-1' %}
-        </span>
-      </a>
-      <a href="/en/explore/production-charts" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-2' %}
-        </span>
-      </a>
-    {% endif %}
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile">
+      <span>
+        {% t 'explore-data.production.sub-heading-1' %}
+      </span>
+    </a>
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile">
+      <span>
+        {% t 'explore-data.production.sub-heading-2' %}
+      </span>
+    </a>
   </section>
   <section class="container">
     <a id="revenue" class="link-no_under">

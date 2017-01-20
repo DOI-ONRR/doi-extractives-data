@@ -58,10 +58,10 @@ permalink: /explore/
       <span>Einnahmen</span>
     </a>
     <a href="#" class="tile tile-beschaeftigung disabled">
-      <span>Beitrag zur</span>
+      <span>Beitrag zur Beschäftigung</span>
     </a>
     <a href="#" class="tile tile-export disabled">
-      <span>Exporte doi</span>
+      <span>Exporte</span>
     </a>
   </section>
 </section>

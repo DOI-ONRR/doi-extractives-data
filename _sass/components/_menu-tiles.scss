@@ -10,7 +10,7 @@
   &::after {
     content: "";
     background: url('../img/tiles/placeholder_blue.png');
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -30,7 +30,7 @@
   }
 
   span {
-    color: #0088c5;
+    color: #002c47;
     position: absolute;
     top: 170px;
     width: 96%;
@@ -53,10 +53,7 @@
 .tile-steine {
   &::after { background-image: url('../img/tiles/4_steine-h.png') }
 }
-.tile-sonstige {
-  &::after { background-image: url('../img/tiles/5_sonstige-h.png') }
-//   &.disabled { background-image: url('../img/tiles/5_sonstige-i.png') }
-}
+
 .tile-rechtl-rahmen {
   &::after { background-image: url('../img/tiles/6_rechtl-rahmen-h.png') }
 }

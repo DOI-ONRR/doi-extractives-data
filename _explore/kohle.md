@@ -29,12 +29,6 @@ nav_items:
     <h1 id="title">Kohle</h1>
 
     <div class="container-left-9">
-      <section id="intro" style="position: relative;">
-        <p>
-          In Deutschland wird sowohl Stein- als auch Braunkohle gewonnen. Kohle wird zur Strom- und Wärmeerzeugung sowie zum Einsatz in der Industrie genutzt.
-        </p>
-      </section>
-
       <section id="steinkohle" style="position: relative;">
         <h2>Steinkohle</h2>
         <section id="fakten_zu_steinkohle">

@@ -29,12 +29,6 @@ nav_items:
     <h1 id="title">Erdöl, Erdgas</h1>
 
     <div class="container-left-9">
-      <section id="intro" style="position: relative;">
-        <p>
-          Erdgas und Erdöl werden zusammenfassend als Kohlenwasserstoffe bezeichnet und allen voran für die Wärme- und Energieerzeugung, aber auch als Kraftstoff und als Grundstoff für die chemische Industrie eingesetzt.
-        </p>
-      </section>
-
       <section id="erdol" style="position: relative;">
         <h2>Erdöl</h2>
         <section id="fakten_zu_oil">

@@ -19,6 +19,8 @@ nav_items:
       - name: 5-fakten-zu-braunkohle
         title: 5 Fakten zu Braunkohle
 ---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
@@ -60,16 +62,25 @@ nav_items:
           Am 7. Februar 2007 haben sich der Bund, das Land Nordrhein-Westfalen und das Saarland sowie die RAG AG und die Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE) darauf verständigt, die – aufgrund der geologisch bedingten hohen Förderkosten - subventionierte Förderung der Steinkohle in Deutschland zum Ende des Jahres 2018 sozialverträglich zu beenden. Der Auslaufprozess wird durch eine am 14. August 2007 abgeschlossene Rahmenvereinbarung "Sozialverträgliche Beendigung des subventionierten Steinkohlenbergbaus in Deutschland" und durch das im Dezember 2007 in Kraft getretene Steinkohlefinanzierungsgesetz geregelt. Siehe hierzu Text zu Subventionen.
         </p>
 
-        <section id="5-fakten-zu-steinkohle" style="position: relative;">
+        <section id="fakten_zu_steinkohle">
           <h3>5 Fakten zu Steinkohle</h3>
-
-          <ul>
-            <li>Die letzte noch aktive Grube im Steinkohlerevier Ruhrgebiet, das Bergwerk Prosper-Haniel in Bottrop fördert jährlich 2,6 Mio. Tonnen Steinkohle, die in einer Tiefe von 700 und 1300 Meterm abgebaut wird. Das gesamte Grubenfeld erstreckt sich auf einer Fläche von 90 km² und ist durch ein unterirdisches Streckennetz von rund 140 km erschlossen</li>
-            <li>Der Steinkohlenbergbau setzt im politischen Auftrag die sozialverträgliche Beendigung der subventionierten Steinkohleförderung bis Ende 2018 um.</li>
-            <li>Der Steinkohlenbergbau trägt dabei Verantwortung für die Bergbaufolgen und bietet nachhaltige Lösungen und Konzepte für die Nachbergbauära.</li>
-            <li>Der Steinkohlenbergbau gestaltet für die Nachbergbauära  den Strukturwandel auf Flächen von 9.700 ha durch Umwelt-Engineering, Flächenentwicklung und Immobilienmanagement.</li>
-            <li>2012 wurden 81 % der in Deutschland verstromten Steinkohle importiert. Die meiste importierte Kohle stammt aus Australien, Südafrika und Kolumbien</li>
-          </ul>
+          <div class="fakten_steinkohle">
+            <div>
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            </div>
+            <div>
+              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            </div>
+            <div>
+              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            </div>
+            <div>
+              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            </div>
+            <div>
+              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            </div>
+          </div>
         </section>
       </section>
 
@@ -95,16 +106,25 @@ nav_items:
           Braunkohle wird zu rd. 90 % zur Strom- und Fernwärmeerzeugung eingesetzt. Die wirtschaftliche Nutzung erfolgt dabei lagerstättennah im Verbund von Tagebau und Kraftwerk. Rund zehn Prozent der Braunkohlenförderung werden zu festen oder staubförmigen Brennstoffen (Braunkohlenbriketts, Braunkohlenstaub und Wirbelschichtbraunkohle, Braunkohlenkoks) veredelt - für eine gewerbliche Nutzung sowie für die privaten Haushalte.
         </p>
 
-        <section id="5-fakten-zu-braunkohle" style="position: relative;">
+        <section id="fakten_zu_braunkohle">
           <h3>5 Fakten zu Braunkohle</h3>
-
-          <ul>
-            <li>Mit einer Fördermenge von rund 178 Mio. t ist die Braunkohle zu knapp 12 % an der Primärenergiegewinnung in Deutschland beteiligt. Zudem lag der Anteil der Braunkohle in der Bruttostromerzeugung bei rund 24 %.</li>
-            <li>Themen der Rekultivierung und der Ausgleich für die Landinanspruchnahme durch den Bergbau sind ebenso wichtige Themen der deutschen Braunkohleindustrie wie </li>
-            <li>Investitionen in die Kraftwerke – Neubauten und Modernisierung – für eine effiziente Stromerzeugung. </li>
-            <li>In Deutschland wird in drei Braunkohlerevieren in 12 aktiven Braunkohle-Tagebauen momentan Braunkohle gefördert. Das rheinische Revier ist das größte Braunkohlerevier in Europa.</li>
-            <li>Deutschland steht auf Platz 1 der Braunkohleförderung weltweit und hat einen Anteil von rund 20 Prozent an der weltweiten Produktion</li>
-          </ul>
+          <div class="fakten_braunkohle">
+            <div>
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            </div>
+            <div>
+              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            </div>
+            <div>
+              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            </div>
+            <div>
+              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            </div>
+            <div>
+              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            </div>
+          </div>
         </section>
       </section>
     </div>
@@ -120,4 +140,19 @@ nav_items:
   </section>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/static.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.fakten_steinkohle').slick({
+        dots: true,
+        speed: 500
+      });
+      $('.fakten_braunkohle').slick({
+        dots: true,
+        speed: 500
+      });
+    });
+</script>

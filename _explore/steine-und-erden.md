@@ -14,6 +14,8 @@ nav_items:
       - name: 5-fakten-zu-industrieminerale
         title: 5 Fakten zu Industrieminerale
 ---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
@@ -49,14 +51,25 @@ nav_items:
           Aber auch die Pharmabranche, das Umweltmanagement (Abgasreinigung, Kläranlagen, Solarpanel oder Windkraftanlagen) und die Automobilindustrie machen sich die besonderen Eigenschaften dieser hochwertigen Rohstoffe zunutze.
         </p>
 
-        <section id="5-fakten-zu-industrieminerale" style="position: relative;">
+        <section id="fakten_zu_industriemineralen">
           <h3>5 Fakten zu Industriemineralen</h3>
-
-          <ul>
-            <li>Seit rund sieben Jahrtausenden wissen die Menschen, aus nahezu reinem Quarzsand unter Zugabe von Kalk und alkalihaltigen Aschen durch Schmelzen Glas herzustellen.</li>
-            <li>Hauptanwendungsbereiche der Industrieminerale liegen in der Papier-, Chemie-, Glas-, Feuerfest- sowie in der Gießerei- und Stahlindustrie.</li>
-            <li>Daneben werden Industrieminerale beispielsweise in der kosmetischen und pharmazeutischen Industrie, bei Farben und Lacken sowie in der Umwelttechnik und der Automobilindustrie angewandt.</li>
-          </ul>
+          <div class="fakten_industriemineralen">
+            <div>
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            </div>
+            <div>
+              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            </div>
+            <div>
+              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            </div>
+            <div>
+              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            </div>
+            <div>
+              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            </div>
+          </div>
         </section>
       </section>
     </div>
@@ -72,4 +85,15 @@ nav_items:
   </section>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/static.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.fakten_industriemineralen').slick({
+        dots: true,
+        speed: 500
+      });
+    });
+</script>

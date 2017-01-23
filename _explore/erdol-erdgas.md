@@ -19,6 +19,8 @@ nav_items:
       - name: 5-fakten-zu-erdgas
         title: 5 Fakten zu Erdgas
 ---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
@@ -56,18 +58,25 @@ nav_items:
           <a href="https://de.wikipedia.org/wiki/Kunststoff">Kunststoffen</a> verwendet.
         </p>
 
-        <section id="5-fakten-zu-erdol" style="position: relative;">
+        <section id="fakten_zu_oil">
           <h3>5 Fakten zu Erdöl</h3>
-
-          <ul>
-            <li>In Deutschland werden 2% des gesamten Erdölbedarfs (rund 2,3 Millionen Barrel täglich) durch die heimische Produktion gedeckt. Das restliche Erdöl wird aus dem Ausland importiert, v.a. aus Russland, Großbritannien und Norwegen.</li>
-            <li>In dem im Wattenmeer gelegenen Ölfeld Mittelplate/Dieksand lagern mit ca. 25 Mio. t rund 65 % der verbliebenen, wirtschaftlich förderbaren deutschen Erdölvorkommen</li>
-            <li>Ausgangspunkt für die Bildung von Erdöl und Erdgas sind große Mengen an Kleinstlebewesen, vor allem Algen.</li>
-            <li>Die Bohrkosten für eine heute typische Bohrung von 5000 m Tiefe liegen bei ca. 10 Mio. € und steigen mit zunehmender Tiefe und in „schwierigen“ Lagerstätten noch deutlich an.</li>
-            <li>Seit Beginn der Erdöl- und Erdgasförderung in Deutschland wurden mehr als 22000 Bohrungen niedergebracht.</li>
-            <li>Erdöl ist mit Abstand der wichtigste Energieträger in Deutschland. Jährlich werden zum Beispiel rund 700.000 Haushalte mit Heizöl versorgt.</li>
-            <li>Öl ist der mit Abstand wichtigste Energieträger</li>
-          </ul>
+          <div class="fakten_oil">
+            <div>
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            </div>
+            <div>
+              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            </div>
+            <div>
+              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            </div>
+            <div>
+              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            </div>
+            <div>
+              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            </div>
+          </div>
         </section>
       </section>
 
@@ -86,16 +95,25 @@ nav_items:
           Als fossiler Energieträger wird Erdgas hauptsächlich für die Beheizung von Wohn- und Gewerberäumen, als Wärmelieferant für thermische Prozesse in Gewerbe und Industrie (z. B. in Großbäckereien, Ziegeleien, Zementwerken, Gießereien und Metallhütten), zur elektrischen Stromerzeugung sowie als Treibstoff für Schiffe und Kraftfahrzeuge verwendet. Hinzu treten mengenmäßig bedeutsame Anwendungen als Reaktionspartner in chemischen Prozessen, wie beispielsweise der Ammoniaksynthese im Haber-Bosch-Verfahren (Stickstoffdüngemittel), der Eisenerzreduktion im Hochofenprozess oder der Herstellung von Wasserstoff.
         </p>
 
-        <section id="5-fakten-zu-erdgas" style="position: relative;">
+        <section id="fakten_zu_gas">
           <h3>5 Fakten zu Erdgas</h3>
-
-          <ul>
-            <li>Im Vergleich zu Kohle und Erdöl wird Erdgas erst seit relativ kurzer Zeit als Energieträger genutzt.</li>
-            <li>Deutschland verfügt über ein aktives Offshore Gasfeld in der deutschen Bucht</li>
-            <li>Auf einem ein Hektar großen Betriebsplatz wird Erdgas für die Versorgung von rund 15000 Haushalten gefördert.</li>
-            <li>Bereits seit 60 Jahren wird Erdgas aus deutschen Lagerstätten produziert.</li>
-            <li>11% des Erdgasbedarfs in Deutschland wird durch die heimische Produktion gedeckt. 95 % davon kommt aus Niedersachsen.</li>
-          </ul>
+          <div class="fakten_gas">
+            <div>
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            </div>
+            <div>
+              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            </div>
+            <div>
+              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            </div>
+            <div>
+              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            </div>
+            <div>
+              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            </div>
+          </div>
         </section>
       </section>
     </div>
@@ -111,4 +129,19 @@ nav_items:
   </section>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/static.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.fakten_oil').slick({
+        dots: true,
+        speed: 500
+      });
+      $('.fakten_gas').slick({
+        dots: true,
+        speed: 500
+      });
+    });
+</script>

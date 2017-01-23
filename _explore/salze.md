@@ -16,30 +16,6 @@ nav_items:
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
-<style>
-  .fakten_salze div {
-    text-align: center;
-  }
-
-  #fakten_zu_salze {
-    position: relative;
-    margin: 30px 0 30px 0;
-  }
-
-  #fakten_zu_salze h3 {
-    position: relative;
-    top: 40px;
-    z-index: 1;"
-  }
-
-  .fakten_salze {
-    background-image: url('https://dummyimage.com/600x400/e3f8ff/ffffff');
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 <main class="container-page-wrapper layout-state-pages">
   <section class="container" style="position: relative;">
 
@@ -80,7 +56,7 @@ nav_items:
           <h3>5 Fakten zu Salze</h3>
           <div class="fakten_salze">
             <div>
-              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
             </div>
             <div>
               Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.

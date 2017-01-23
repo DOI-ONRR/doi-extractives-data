@@ -6,21 +6,27 @@
     margin: 30px 0 30px 0;
 
     h3 {
+      font-size: 2rem;
       color: white;
+      padding-left: 50px;
       position: relative;
-      top: 40px;
+      top: 200px;
       z-index: 1;
     }
-    
+
     .fakten_salze, .fakten_oil, .fakten_gas, .fakten_steinkohle,
     .fakten_braunkohle, .fakten_industriemineralen {
       height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 18px;
 
       div {
         text-align: center;
+        position: relative;
+        top: 20px;
+        width: 90%;
       }
     }
 

@@ -1,0 +1,55 @@
+
+#fakten_zu_salze, #fakten_zu_oil, #fakten_zu_gas, #fakten_zu_steinkohle,
+#fakten_zu_braunkohle, #fakten_zu_industriemineralen {
+    color: white;
+    position: relative;
+
+    h3 {
+      font-size: 2rem;
+      color: white;
+      padding-left: 50px;
+      position: relative;
+      top: 200px;
+      z-index: 1;
+    }
+
+    .fakten_salze, .fakten_oil, .fakten_gas, .fakten_steinkohle,
+    .fakten_braunkohle, .fakten_industriemineralen {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+
+      div {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        width: 90%;
+      }
+    }
+
+    .fakten_salze {
+      background-image: url('/img/carousel/salt.png');
+    }
+
+    .fakten_oil {
+      background-image: url('/img/carousel/oil.png');
+    }
+
+    .fakten_gas {
+      background-image: url('/img/carousel/gas.png');
+    }
+
+    .fakten_steinkohle {
+      background-image: url('/img/carousel/coal.png');
+    }
+
+    .fakten_braunkohle {
+      background-image: url('/img/carousel/BrowCoal2.png');
+    }
+
+    .fakten_industriemineralen {
+      background-image: url('/img/carousel/stones.png');
+    }
+}

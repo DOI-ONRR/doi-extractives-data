@@ -3,7 +3,7 @@ title: Salze
 layout: default
 permalink: /explore/salze/
 breadcrumb:
-  - title: Deutscher Rohstoffsektor
+  - title: Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
   - name: salze
@@ -24,23 +24,30 @@ nav_items:
 
     <div class="container-left-9">
       <section id="fakten_zu_salze">
-        <h3>5 Fakten zu Salze</h3>
+        <h3>Wissenswertes über Salze</h3>
         <div class="fakten_salze">
           <div>
-            Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
           </div>
           <div>
-            Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            Die Bedeutung des Salzes für viele Städte spiegelt sich oft in deren Namen wieder.
           </div>
           <div>
-            Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            Wurden in einer Stadt salzhaltige Quellen entdeckt, so fügte man dem Stadtnamen die Silbe „Bad“ hinzu. Es ist die Geburt der heutigen Kurorte.
           </div>
           <div>
-            Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            Mitte des 19. Jahrhunderts entdeckte Justus von Liebig die Bedeutung von Kalium als essentiellen Pflanzennährstoff
           </div>
           <div>
-            Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            Nachdem Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf die weltweit erste bekannte Kalilagerstätte stießen, enstanden entstanden um 1860  die ersten Kalibergwerke und Kalifabriken in Deutschland.
           </div>
+          <div>
+            Die bereits im Hochmittelalter verlegte Soleleitung vom Bergwerk Reichenhall nach Traunstein gilt als eine der ersten Rohstoffpipelines der Welt.
+          </div>
+          <div>
+            Das Kalibergwerk Werra ist der flächenmäßig größte in Betrieb befindliche Untertagebau Deutschlands.
+          </div>
+
         </div>
       </section>
       <section id="salze" style="position: relative;">

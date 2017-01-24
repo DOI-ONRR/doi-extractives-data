@@ -3,7 +3,7 @@ title: Steine und Erden
 layout: default
 permalink: /explore/steine-und-erden/
 breadcrumb:
-  - title: Deutscher Rohstoffsektor
+  - title:  Rohstoffgewinnung   
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
@@ -25,23 +25,30 @@ nav_items:
 
     <div class="container-left-9">
       <section id="fakten_zu_industriemineralen">
-        <h3>5 Fakten zu Industriemineralen</h3>
+        <h3>Wissenswertes über Industriemineralen</h3>
         <div class="fakten_industriemineralen">
           <div>
-            Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            Die etwa 1600 Unternehmen der Baustoff-, Steine-und-Erden-Industrie in Deutschland betreiben rund 3.100 Gewinnungsstätten.
           </div>
           <div>
-            Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+            Das Wort „Zement“ geht zurück auf das römische Wort caementum für Bruchstein oder Baustein.
           </div>
           <div>
-            Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+            Seit dem dritten Jahrhundert vor Christus errichteten die Römer Bauwerke aus einem Gemisch von Bruchstein, Puzzolan- und Ziegelmehl sowie gebranntem Kalk. Die so errichteten Bauten nannten sie opus caementitium.
           </div>
           <div>
-            Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+            Steine und Erden werden zur Herstellung vieler Produkte unseres Alltags benötigt. So ist Steinmehl die Grundsubstanz von Zahnpasta.
           </div>
           <div>
-            Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+            Für die Produktion von einer Tonne Rohzucker braucht man 130 - 165 Kilogramm Kalk.
           </div>
+          <div>
+            Statistisch gesehen braucht jeder von uns stündlich über 1 kg Gips, Steinmehl, Sand, Kies oder Natursteine.
+          </div>
+          <div>
+            Kalkmehl sorgt dafür, dass sich Toastbrotscheiben voneinander trennen lassen und Kaugummi nicht an der Verpackung kleben bleibt.
+          </div>
+
         </div>
       </section>
       <section id="intro" style="position: relative;">

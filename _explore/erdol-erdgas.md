@@ -3,7 +3,7 @@ title: Erdol, Erdgas
 layout: default
 permalink: /explore/erdol-erdgas/
 breadcrumb:
-  - title: Deutscher Rohstoffsektor
+  - title: Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
@@ -32,22 +32,22 @@ nav_items:
       <section id="erdol" style="position: relative;">
         <h2>Erdöl</h2>
         <section id="fakten_zu_oil">
-          <h3>5 Fakten zu Erdöl</h3>
+          <h3>Wissenswertes über Erdöl</h3>
           <div class="fakten_oil">
             <div>
-              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+              Deutschland deckt 2% seines Erdölbedarfs (rund 2,3 Millionen Barrel täglich) aus heimischer Produktion
             </div>
             <div>
-              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+              Das im Wattenmeer gelegene Ölfeld Mittelplate/Dieksand beherbergt mit ca. 25 Mio. t rund 65 % der förderbaren deutschen Erdölvorkommen.
             </div>
             <div>
-              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+              Erdöl und Erdgas entstehen aus Ablagerungen großer Mengen von Kleinstlebewesen vor allem Algen.
             </div>
             <div>
-              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+              Die durchschnittlichen Kosten  eine heute typische Bohrung mit 5000 m Tiefe liegen bei ca. 10 Mio. € und steigen mit zunehmender Tiefe und in schwierig zugänglichen Lagerstätten noch deutlich an.
             </div>
             <div>
-              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+              Seit Beginn der Erdöl- und Erdgasförderung in Deutschland wurden mehr als 22.000 Bohrungen durchgeführt
             </div>
           </div>
         </section>
@@ -79,22 +79,25 @@ nav_items:
       <section id="erdgas" style="position: relative;">
         <h2>Erdgas</h2>
         <section id="fakten_zu_gas">
-          <h3>5 Fakten zu Erdgas</h3>
+          <h3>Wissenswertes über Erdgas</h3>
           <div class="fakten_gas">
             <div>
-              Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+              Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
             </div>
             <div>
-              Viele Städte tragen im Städtenamen einen Hinweis darauf, wie wichtig Salz für sie war. Solche Städte besaßen meist ein Salzvorkommen, gewannenSalz oder man handelte damit. Waren in einer Stadt salzhaltige Quellen entdeckt worden, so fügte man dem eigentlichen Stadtnamen „Bad“ hinzu. Später entstanden hier Kurorte. Die keltische Bezeichnung für Salz „hall“ findet sich auch häufig in Städtenamen.
+              Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
             </div>
             <div>
-              Um 1860 entstanden in Deutschland die weltweit ersten Kalibergwerke und Kalifabriken: Nachdem Mitte des 19. Jahrhunderts durch Justus von Liebig die Bedeutung von Kalium als essentieller Pflanzennährstoff erkannt wurde, stießen Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf kalihaltiges Rohsalz und somit auf die weltweit erste bekannte Kalilagerstätte
+              Auf einem ein Hektar großen Betriebsplatz wird Erdgas für die Versorgung von rund 15.000 Haushalten gefördert.
             </div>
             <div>
-              Die Soleleitung vom Bergwerk Reichenhall nach Traunstein wurde bereits im Hochmittelalter verlegt und gilt als eine der ersten Rohstoffpipelines der Welt.
+              Bereits seit 60 Jahren wird Erdgas aus deutschen Lagerstätten gewonnen.
             </div>
             <div>
-              Flächenmäßig bildet das Kalibergwerk Werra den größten in Betrieb befindlichen Untertagebau Deutschlands: Die Grube entspricht in seiner Ausdehnung der Fläche der Stadt München mit Vororten.
+              11% des Erdgasbedarfs in Deutschland wird durch die heimische Produktion gedeckt
+            </div>
+            <div>
+              95 % des geförderten Erdgases stammt aus Niedersachsen.
             </div>
           </div>
         </section>

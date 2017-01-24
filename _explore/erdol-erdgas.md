@@ -35,19 +35,29 @@ nav_items:
           <h3>Wissenswertes über Erdöl</h3>
           <div class="fakten_oil">
             <div>
-              Deutschland deckt 2% seines Erdölbedarfs (rund 2,3 Millionen Barrel täglich) aus heimischer Produktion
+              <p>
+                Deutschland deckt 2% seines Erdölbedarfs (rund 2,3 Millionen Barrel täglich) aus heimischer Produktion
+              </p>  
             </div>
             <div>
-              Das im Wattenmeer gelegene Ölfeld Mittelplate/Dieksand beherbergt mit ca. 25 Mio. t rund 65 % der förderbaren deutschen Erdölvorkommen.
+              <p>
+                Das im Wattenmeer gelegene Ölfeld Mittelplate/Dieksand beherbergt mit ca. 25 Mio. t rund 65 % der förderbaren deutschen Erdölvorkommen.
+              </p>  
             </div>
             <div>
-              Erdöl und Erdgas entstehen aus Ablagerungen großer Mengen von Kleinstlebewesen vor allem Algen.
+              <p>
+                Erdöl und Erdgas entstehen aus Ablagerungen großer Mengen von Kleinstlebewesen vor allem Algen.
+              </p>  
             </div>
             <div>
-              Die durchschnittlichen Kosten  eine heute typische Bohrung mit 5000 m Tiefe liegen bei ca. 10 Mio. € und steigen mit zunehmender Tiefe und in schwierig zugänglichen Lagerstätten noch deutlich an.
+              <p>
+                Die durchschnittlichen Kosten  eine heute typische Bohrung mit 5000 m Tiefe liegen bei ca. 10 Mio. € und steigen mit zunehmender Tiefe und in schwierig zugänglichen Lagerstätten noch deutlich an.
+              </p>  
             </div>
             <div>
-              Seit Beginn der Erdöl- und Erdgasförderung in Deutschland wurden mehr als 22.000 Bohrungen durchgeführt
+              <p>
+                Seit Beginn der Erdöl- und Erdgasförderung in Deutschland wurden mehr als 22.000 Bohrungen durchgeführt
+              </p>  
             </div>
           </div>
         </section>
@@ -82,22 +92,34 @@ nav_items:
           <h3>Wissenswertes über Erdgas</h3>
           <div class="fakten_gas">
             <div>
-              Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
+              <p>
+                Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
+              </p>  
             </div>
             <div>
-              Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
+              <p>
+                Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
+              </p>  
             </div>
             <div>
-              Auf einem ein Hektar großen Betriebsplatz wird Erdgas für die Versorgung von rund 15.000 Haushalten gefördert.
+              <p>
+                Auf einem ein Hektar großen Betriebsplatz wird Erdgas für die Versorgung von rund 15.000 Haushalten gefördert.
+              </p>  
             </div>
             <div>
-              Bereits seit 60 Jahren wird Erdgas aus deutschen Lagerstätten gewonnen.
+              <p>
+                Bereits seit 60 Jahren wird Erdgas aus deutschen Lagerstätten gewonnen.
+              </p>  
             </div>
             <div>
-              11% des Erdgasbedarfs in Deutschland wird durch die heimische Produktion gedeckt
+              <p>
+                11% des Erdgasbedarfs in Deutschland wird durch die heimische Produktion gedeckt
+              </p>  
             </div>
             <div>
-              95 % des geförderten Erdgases stammt aus Niedersachsen.
+              <p>
+                95 % des geförderten Erdgases stammt aus Niedersachsen.
+              </p>  
             </div>
           </div>
         </section>

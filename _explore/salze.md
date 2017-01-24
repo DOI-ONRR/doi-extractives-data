@@ -27,25 +27,34 @@ nav_items:
         <h3>Wissenswertes über Salze</h3>
         <div class="fakten_salze">
           <div>
-            Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.
+            <p>Salz wird seit über 5.000 Jahren aktiv durch den Menschen gewonnen.</p>
           </div>
           <div>
-            Die Bedeutung des Salzes für viele Städte spiegelt sich oft in deren Namen wieder.
+            <p>
+              Die Bedeutung des Salzes für viele Städte spiegelt sich oft in deren Namen wieder.
+            </p>
           </div>
           <div>
+            <p>
             Wurden in einer Stadt salzhaltige Quellen entdeckt, so fügte man dem Stadtnamen die Silbe „Bad“ hinzu. Es ist die Geburt der heutigen Kurorte.
+            </p>
           </div>
           <div>
-            Mitte des 19. Jahrhunderts entdeckte Justus von Liebig die Bedeutung von Kalium als essentiellen Pflanzennährstoff
+            <p>
+              Mitte des 19. Jahrhunderts entdeckte Justus von Liebig die Bedeutung von Kalium als essentiellen Pflanzennährstoff
+            </p>
           </div>
           <div>
+          <p>
             Nachdem Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf die weltweit erste bekannte Kalilagerstätte stießen, enstanden entstanden um 1860  die ersten Kalibergwerke und Kalifabriken in Deutschland.
+          </p>
           </div>
           <div>
-            Die bereits im Hochmittelalter verlegte Soleleitung vom Bergwerk Reichenhall nach Traunstein gilt als eine der ersten Rohstoffpipelines der Welt.
+            <p>Die bereits im Hochmittelalter verlegte Soleleitung vom Bergwerk Reichenhall nach Traunstein gilt als eine der ersten Rohstoffpipelines der Welt.
+            </p>
           </div>
           <div>
-            Das Kalibergwerk Werra ist der flächenmäßig größte in Betrieb befindliche Untertagebau Deutschlands.
+            <p>Das Kalibergwerk Werra ist der flächenmäßig größte in Betrieb befindliche Untertagebau Deutschlands.</p>
           </div>
 
         </div>

@@ -3,7 +3,7 @@ title: Steine und Erden
 layout: default
 permalink: /explore/steine-und-erden/
 breadcrumb:
-  - title:  Rohstoffgewinnung   
+  - title:  Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
   - name: intro
@@ -28,25 +28,25 @@ nav_items:
         <h3>Wissenswertes über Industriemineralen</h3>
         <div class="fakten_industriemineralen">
           <div>
-            Die etwa 1600 Unternehmen der Baustoff-, Steine-und-Erden-Industrie in Deutschland betreiben rund 3.100 Gewinnungsstätten.
+            <p>Die etwa 1600 Unternehmen der Baustoff-, Steine-und-Erden-Industrie in Deutschland betreiben rund 3.100 Gewinnungsstätten.</p>
           </div>
           <div>
-            Das Wort „Zement“ geht zurück auf das römische Wort caementum für Bruchstein oder Baustein.
+            <p>Das Wort „Zement“ geht zurück auf das römische Wort caementum für Bruchstein oder Baustein.</p>
           </div>
           <div>
-            Seit dem dritten Jahrhundert vor Christus errichteten die Römer Bauwerke aus einem Gemisch von Bruchstein, Puzzolan- und Ziegelmehl sowie gebranntem Kalk. Die so errichteten Bauten nannten sie opus caementitium.
+            <p>Seit dem dritten Jahrhundert vor Christus errichteten die Römer Bauwerke aus einem Gemisch von Bruchstein, Puzzolan- und Ziegelmehl sowie gebranntem Kalk. Die so errichteten Bauten nannten sie opus caementitium.</p>
           </div>
           <div>
-            Steine und Erden werden zur Herstellung vieler Produkte unseres Alltags benötigt. So ist Steinmehl die Grundsubstanz von Zahnpasta.
+            <p>Steine und Erden werden zur Herstellung vieler Produkte unseres Alltags benötigt. So ist Steinmehl die Grundsubstanz von Zahnpasta.</p>
           </div>
           <div>
-            Für die Produktion von einer Tonne Rohzucker braucht man 130 - 165 Kilogramm Kalk.
+            <p>Für die Produktion von einer Tonne Rohzucker braucht man 130 - 165 Kilogramm Kalk.</p>
           </div>
           <div>
-            Statistisch gesehen braucht jeder von uns stündlich über 1 kg Gips, Steinmehl, Sand, Kies oder Natursteine.
+            <p>Statistisch gesehen braucht jeder von uns stündlich über 1 kg Gips, Steinmehl, Sand, Kies oder Natursteine.</p>
           </div>
           <div>
-            Kalkmehl sorgt dafür, dass sich Toastbrotscheiben voneinander trennen lassen und Kaugummi nicht an der Verpackung kleben bleibt.
+            <p>Kalkmehl sorgt dafür, dass sich Toastbrotscheiben voneinander trennen lassen und Kaugummi nicht an der Verpackung kleben bleibt.</p>
           </div>
 
         </div>

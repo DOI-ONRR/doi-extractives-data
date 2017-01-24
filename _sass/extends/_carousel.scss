@@ -7,9 +7,9 @@
     h3 {
       font-size: 2rem;
       color: white;
-      padding-left: 50px;
+      padding: 0 50px;
       position: relative;
-      top: 150px;
+      top: 250px;
       z-index: 1;
     }
 
@@ -18,15 +18,27 @@
       height: 400px;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       font-size: 18px;
 
-      div {
-        text-align: center;
-        position: relative;
-        top: 20px;
+      .slick-list {
         height: 150px;
-        width: 90%;
+      }
+
+      .slick-slide > p {
+        color: white;
+        padding: 0 50px;
+      }
+
+      .slick-prev, .slick-next {
+        width: 33px;
+        height: 33px;
+        top: 270px;
+        z-index: 1;
+
+        &:before {
+          font-size: 33px;
+        }
       }
     }
 

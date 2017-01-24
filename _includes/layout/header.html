@@ -28,26 +28,15 @@
     </ul>
     <div style="clear:both"></div>
     <ul class="header-nav_bottom">
-      <li class="header-nav_item">
-        {% if site.lang == "de" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/"> {% t 'menu.about' %} </a>
-        {% elsif site.lang == "en" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en"> {% t 'menu.about' %} </a>
-        {% endif %}
+      {% capture domain_with_lang_prefix %}{{ site.baseurl_root }}{{ site.lang | url_lang_prefix  }}{% endcapture %}
+      <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
+          <a class="header-nav_item_link" href="{{ domain_with_lang_prefix }}/"> {% t 'menu.about' %} </a>
       </li>
-      <li class="header-nav_item">
-        {% if site.lang == "de" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
-        {% elsif site.lang == "en" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
-        {% endif %}
+      <li class="header-nav_item {% if page.permalink contains '/explore/how-it-work/' %}active{% endif %}">
+          <a class="header-nav_item_link" href="{{ domain_with_lang_prefix }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
       </li>
-      <li class="header-nav_item">
-        {% if site.lang == "de" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/explore">{% t 'menu.explore-data' %}</a>
-        {% elsif site.lang == "en" %}
-          <a class="header-nav_item_link" href="{{ site.baseurl_root }}/en/explore">{% t 'menu.explore-data' %}</a>
-        {% endif %}
+      <li class="header-nav_item {% if page.title == 'Daten entdecken' %}active{% endif %}">
+          <a class="header-nav_item_link" href="{{ domain_with_lang_prefix }}/explore">{% t 'menu.explore-data' %}</a>
       </li>
       <li class="header-nav_item">
         <a class="header-nav_item_link" href="http://www.d-eiti.de/de/" target="_blank">{% t 'menu.back' %}</a>

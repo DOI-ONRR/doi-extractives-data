@@ -33,53 +33,35 @@ permalink: /explore/
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    {% if site.lang == "de" %}
-      <a href="/explore/federal-production" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-1' %}
-        </span>
-      </a>
-      <a href="/explore/production-charts" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-2' %}
-        </span>
-      </a>
-    {% elsif site.lang == "en" %}
-      <a href="/en/explore/federal-production" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-1' %}
-        </span>
-      </a>
-      <a href="/en/explore/production-charts" class="tile">
-        <span>
-          {% t 'explore-data.production.sub-heading-2' %}
-        </span>
-      </a>
-    {% endif %}
-  </section>
-  <section class="container">
-    <a id="revenue" class="link-no_under">
-      <h2 class="h3 landing-section_category" style="margin-bottom: 20px">
-        {% t 'explore-data.revenue.heading-1' %}
-      </h2>
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile tile-interaktiv">
+      <span>
+        {% t 'explore-data.production.sub-heading-1' %}
+      </span>
     </a>
-    <a href="#" class="tile disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile tile-ges-rohstoffprod">
       <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>
     </a>
   </section>
   <section class="container">
-    <a id="economic-impact" name="economic-impact" class="link-no_under">
-      <h2 class="h3 landing-section_category tile-item" style="margin-bottom: 20px">
-        {% t 'explore-data.economic-impact.heading-1' %}
+    <a id="revenue" class="link-no_under">
+      <h2 class="h3 landing-section_category" style="margin-bottom: 20px">
+        Wirtschaftliche und soziale Bedeutung
       </h2>
     </a>
 
-    <a href="#" class="tile disabled">
-      <span>
-        {% t 'explore-data.economic-impact.sub-heading-1' %}
-      </span>
+    <a href="#" class="tile tile-bip disabled">
+    <span>Beitrag zum BIP</span>
+    </a>
+    <a href="#" class="tile tile-einnahmen-rohstoff disabled">
+      <span>Einnahmen</span>
+    </a>
+    <a href="#" class="tile tile-beschaeftigung disabled">
+      <span>Beitrag zur Beschäftigung</span>
+    </a>
+    <a href="#" class="tile tile-export disabled">
+      <span>Exporte</span>
     </a>
   </section>
 </section>

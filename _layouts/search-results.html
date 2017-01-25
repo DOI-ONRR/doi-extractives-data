@@ -16,3 +16,71 @@ layout: default
 
 </div>
 
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/search.min.js" charset="utf-8"></script>
+
+<script>
+  var indexFields = {
+    "title": {
+      "boost": 10
+    },
+    "body": {
+      "boost": 10
+    },
+    "tag": {
+      "boost": 10
+    },
+    "url": {
+      "boost": 5
+    },
+  }
+
+  index = window.lunr(function() {
+    var boost;
+
+    this.ref('id')
+
+    for (var fieldName in indexFields) {
+      console.log(fieldName)
+      boost = indexFields[fieldName];
+      this.field(fieldName, boost);
+    }
+  });
+
+  window.index = index;
+
+  var documents = [
+    {% for document in site.data.search %}
+      {
+        id: {{ forloop.index0 }},
+        title: "{{ document.body | jsonify }}",
+        body: "{{ document.desciption | jsonify }}",
+        tag: "{{ document.tag | jsonify }}",
+        url: "{{ document.url | jsonify }}"
+      },
+    {% endfor %}
+  ];
+
+  window.documents = documents;
+
+  documents.forEach(function(document) {
+    window.index.add(document);
+  });
+
+
+
+  var searchInput = document.querySelector('#search-input');
+
+  function runSearch(term) {
+    var results = index.search(term);
+
+    return results.map(function(result) {
+      return documents[result.ref]
+    });
+  }
+
+  d3.select('#search-input').on('keyup', function () {
+    console.log(runSearch(searchInput.value))
+  })
+
+
+</script>

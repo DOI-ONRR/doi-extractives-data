@@ -37,53 +37,7 @@ title_display: Production
 selector: hash
 ---
 
-> The United States is home to many different natural resources, including {{ "fossil fuel" | term_end }}, {{ "renewable energy" | term_end }}, and nonenergy mineral resources (i.e., gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
-
-## U.S. global rank for select natural resources, compared to other countries (2015)
-
-<table class="table-basic">
-  <thead>
-    <th></th>
-    <th></th>
-  </thead>
-  <tr>
-    <td>1st</td>
-    <td>Natural gas</td>
-    <td>27.059 billion cubic feet</td>
-  </tr>
-  <tr>
-    <td>1st</td>
-    <td>Oil</td>
-    <td>15,124,000 barrels</td>
-  </tr>
-  <tr>
-    <td>2nd</td>
-    <td>Coal (2014 data)</td>
-    <td>1,000,049,000 short tons</td>
-  </tr>
-  <tr>
-    <td>2nd</td>
-    <td>Renewable energy</td>
-    <td>9.56 quadrillion BTUs</td>
-  </tr>
-  <tr>
-    <td>5th</td>
-    <td>Gold</td>
-    <td>200 metric tons</td>
-  </tr>
-  <tr>
-    <td>5th</td>
-    <td>Copper</td>
-    <td>1,250,000 metric tons</td>
-  </tr>
-  <tr>
-    <td>9th</td>
-    <td>Iron</td>
-    <td>56 million metric tons</td>
-  </tr>
-</table>
-
-<img src="{{site.baseurl}}/img/global-rank-production.png" alt="U.S. global rank for select natural resources in 2013. First in natural gas (30,005,254 million cubic feet) and oil (2,720,782 thousand barrels). Second in coal (nearly 1 billion short tons) and renewable energy (9.33 quadrillion btu). Third in gold (230 metric tons). Fourth in copper (1,250 thousand metric tons). Eighth in iron (53 million metric tons)." class="article_img-60 article_img-margin_bottom">
+> The United States is home to many different natural resources, including {{ "fossil fuel" | term_end }}, {{ "renewable energy" | term_end }}, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time. [Explore production data.]({{ site.baseurl }}/explore/#production)
 
 {% include selector.html %}
 
@@ -95,13 +49,13 @@ Besides creating energy, these natural resources are also used to make many prod
 
 ### Oil
 
-Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (e.g., jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and {{ "petroleum products" | term_end }}. In 2015, [five states](http://www.eia.gov/petroleum/supply/annual/volume1/) — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico supplied more than 81% of the {{ "crude oil" | term }} produced here.
+Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (for example, jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and {{ "petroleum products" | term_end }}. In 2015, five states — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico [supplied more than 81%](http://www.eia.gov/petroleum/supply/annual/volume1/) of the {{ "crude oil" | term }} produced here.
 
 ### Gas
 
 Gas, also called natural gas, forms underground on land and offshore in beds under the ocean. There are two types of natural gas: dry and wet. Dry natural gas is mostly methane. Wet natural gas contains a small amount of methane, as well as other liquid hydrocarbons — such as ethane, propane, and butane — and nonhydrocarbon gases. Wet natural gas is the source of natural gas liquids. Once wet natural gas is extracted from the ground, natural gas liquids are separated from the gas stream close to the well or at a gas processing plant. This leaves both dry gas and natural gas liquids such as ethane, propane, and butane.
 
-The U.S. produces more gas than any other country in the world. In 2015, [five states](http://www.eia.gov/naturalgas/annual/) produced 65% of the total dry natural gas: Texas, Pennsylvania, Louisiana, Wyoming, and Oklahoma.
+The U.S. produces more gas than any other country in the world. In 2015, [five states produced 65% of the total dry natural gas](http://www.eia.gov/naturalgas/annual/): Texas, Pennsylvania, Louisiana, Wyoming, and Oklahoma.
 
 In conventional extraction, companies extract oil and gas by drilling a vertical well. At first, oil and gas rise to the surface of the well fueled by underground pressure. Once the pressure gives out, operators can inject gases or water from the initial drilling back into the formation to increase pressure and push additional resources to the surface, or install pumps to help provide artificial lift for oil production. Finally, operators can inject steam, gases, or other chemicals into the formation to change the oil’s composition so that it can more easily rise through the well.
 
@@ -158,7 +112,7 @@ See [areas of the U.S. with solar energy potential](http://energy.gov/maps/solar
 
 ### Wind power
 
-Wind power takes advantage of daily wind cycles to rotate wind turbines, which can be clustered together on wind farms. In 2013, wind power accounted for [2% of total U.S. energy production (PDF)](http://www.energy.gov/sites/prod/files/wind_vision_highlights.pdf). Texas (44.9 GW hours), Iowa (17.9 GW hours), Oklahoma (14 GW hours), and California (12.3 GW hours) are leading producers.
+Wind power takes advantage of daily wind cycles to rotate wind turbines, which can be clustered together on wind farms. In 2013, wind power accounted for [2% of total U.S. energy production](http://www.eia.gov/totalenergy/data/monthly/pdf/mer.pdf). Texas (44.9 GW hours), Iowa (17.9 GW hours), Oklahoma (14 GW hours), and California (12.3 GW hours) are leading producers.
 
 No offshore wind projects have been completed to date. [The National Renewable Energy Laboratory](http://www.nrel.gov/) estimated in 2012 that there is enough wind energy potential offshore to generate [four times the electricity held by the U.S. power grid](http://www.boem.gov/renewable-energy-program/renewable-energy-guide/offshore-wind-energy.aspx). While wind speeds off the Atlantic Coast and in the Gulf of Mexico are lower than in the Pacific, the presence of shallower waters in the Atlantic makes developing wind projects there more affordable in the short term. To date, the Bureau of Ocean Energy Management (BOEM) has issued nine commercial wind energy leases on the Atlantic Outer Continental Shelf, including those offshore of [Delaware, Maryland, Massachusetts, Rhode Island, and Virginia](http://www.boem.gov/Lease-and-Grant-Information/). BOEM expects to hold lease sales for areas offshore of [New Jersey](http://www.boem.gov/State-Activities-New-Jersey/) and [North Carolina](http://www.boem.gov/state-activities-north-carolina/) in the near future and is considering a number of other commercial wind energy planning areas.
 
@@ -166,25 +120,25 @@ See a map of [current wind power capacity](http://apps2.eere.energy.gov/wind/win
 
 ## Nonenergy minerals
 
-Nonenergy minerals include base and precious metals, industrial metals, and gemstones, amongst others. The 2016 USEITI Report focuses on nonenergy minerals, specifically gold, copper, and iron. In 2013, these minerals accounted for most of the valuable metal produced in the United States: [gold, copper, and iron made up 32%, 29%, and 17%, respectively, of $32 billion worth of metal extracted](http://minerals.usgs.gov/minerals/pubs/mcs/2014/mcs2014.pdf).
+Nonenergy minerals include base and precious metals, industrial metals, and gemstones, amongst others. The 2016 USEITI Report focuses on nonenergy minerals, specifically gold, copper, and iron. In 2015, these minerals accounted for most of the valuable metal produced in the United States, which [totaled $26.6 billion (PDF)](https://minerals.usgs.gov/minerals/pubs/mcs/2016/mcs2016.pdf). Copper and gold both accounted for 29% of the total value, while iron made up 14% of the total worth of metal extracted.
 
-The 2013 estimated exploration budget for nonenergy minerals decreased by 38% from 2012, dropping from $1.7 billion to $1 billion. Continued uncertainty about the U.S. and European economies, as well as weakened demand from China, either depressed or maintained prices for nonenergy minerals. Noteworthy exploration sites for nonenergy minerals are located in [Alaska, Idaho, Nevada, and Wyoming](http://minerals.usgs.gov/minerals/mflow/exploration-2013.pdf), more than half of which are for gold and silver.
+Exploration for nonenergy minerals in the United States [declined by 6% from 2014 to 2015 (PDF)](https://minerals.usgs.gov/minerals/mflow/exploration-2015.pdf). In 2015, six of the nine major exploration sites for nonenergy minerals in the U.S. [concentrated on gold in Nevada (PDF)](https://minerals.usgs.gov/minerals/mflow/exploration-2015.pdf).
 
 ### Gold
 
 Gold can be found in both loose materials and hard rocks. Miners extract gold from placer mines using sluicing, dredging, jigging, and amalgamation devices that separate the gold from water, silt, rock, and other compounds. Lode mining, both open pit and underground, extracts gold embedded within rock walls. Once mined, gold is used to make jewelry, electronics, dental treatments, and other products.
 
-In 2013, the majority of U.S. gold came from [Nevada (172,000 kilograms) and Alaska (30,600 kilograms)](http://minerals.usgs.gov/minerals/pubs/commodity/gold/mis-201311_12-gold.pdf). In Nevada, recent exploration for gold resulted in discoveries along the Carlin and Battle Mountain-Eureka (Cortez) trends in Eureka and Elko Counties, as well as in the [Pequop Mountains in Elko County](http://pubs.nbmg.unr.edu/The-NV-mineral-industry-2011-p/mi2011.htm). Alaska continues to be a prominent site for gold exploration, although exploration spending in the state in 2013 made up less than [half the peak expenditure in 2011](http://minerals.er.usgs.gov/minerals/mflow/exploration-2014.pdf). Half of the estimated 2013 total $1 billion budget for nonenergy mineral exploration was for gold.
+In 2015, the majority of U.S. gold came from [Nevada (162,000 kilograms) and Alaska (28,000 kilograms) (PDF)](https://minerals.usgs.gov/minerals/pubs/commodity/gold/mis-201608-gold.pdf). In the United States, recent exploration for gold resulted in discoveries along the Carlin and Battle Mountain-Eureka (Cortez) trends in [Eureka and Elko Counties]({{ site.baseurl }}/case-studies/elko-and-eureka/), as well as in the [Pequop Mountains in Elko County](http://pubs.nbmg.unr.edu/The-NV-mineral-industry-2011-p/mi2011.htm).
 
 ### Copper
 
 Copper is found in hard rocks in the form of copper ore. Miners extract copper from open pit and underground mines through traditional quarrying to separate the copper from rock, or leaching which involves treating the ore with diluted sulfuric acid. Once produced, copper has a variety of uses, including as a building material, as an effective conductor of electricity, and within the health care sector.
 
-In 2013, Arizona accounted for the most copper production out of all U.S. states with [795,000 metric tons](http://minerals.usgs.gov/minerals/pubs/commodity/copper/mis-201401-coppe.pdf). In terms of exploration, an estimated [36% of the 2013 total $1 billion](http://minerals.usgs.gov/minerals/mflow/exploration-2013.pdf) U.S. budget for nonenergy mineral exploration was for base metals, primarily copper.
+In 2015, Arizona accounted for the most copper production out of all U.S. states with [963,000 metric tons (PDF)](https://minerals.usgs.gov/minerals/pubs/commodity/copper/mis-201607-coppe.pdf). The U.S. had the forth largest copper exploration budget in the world.
 
 ### Iron
 
 Iron is found in underground rocks. Miners extract iron by drilling holes in the ground in carefully engineered patterns and blasting out rocks with explosives. Next, miners crush the rocks and separate out the iron ore from other materials. Almost all iron is used to make steel, which in turn is used to make buildings, infrastructure, machines, and vehicles.
 
-In 2013, 99% of the iron ore shipped in the U.S. came from [Minnesota and Michigan](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/mcs-2014-feore.pdf). Exploration continues on the [Mesabi Iron Range](http://files.dnr.state.mn.us/lands_minerals/mineral_faq/mn_expdrilling_map_2013.pdf) in Minnesota; in 2013, companies drilled nearly 200 exploratory holes for iron along the Mesabi Range.
+In 2014, 93% of the iron ore shipped in the U.S. came from [Minnesota and Michigan (PDF)](https://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/mcs-2015-feore.pdf), and had an estimated value of $5.1 billion. [Exploration for iron decreased in Minnesota from 2014 to 2015](http://www.dnr.state.mn.us/lands_minerals/exploration.html#2015), dropping from 57 exploratory holes drilled in 2014 to eight holes drilled in 2015.
 

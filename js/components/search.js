@@ -28,7 +28,7 @@
                           '</a></h1>' +
                           '<p>' + item.description + '</p>' +
                           '<p>Tagged&nbsp;/' + tags.join('/') + '</p>' +
-                        '</article>'
+                        '</article>';
       }
       $searchResults.html(appendString);
     } else {

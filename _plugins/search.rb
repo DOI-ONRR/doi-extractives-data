@@ -24,6 +24,8 @@ module Jekyll
               internal: true
             }
             obj[slugify(doc.data['permalink'])] = new_obj
+          else
+            next
           end
         end
       end.flatten.compact

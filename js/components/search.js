@@ -13,7 +13,7 @@
           .map(function(tag) {
             return (
               '<span class="search-result-list-tag">&nbsp;' +
-                '<a href="' + "/search-results/?query=" + encodeURIComponent(tag) + '" title="Search for ' + tag + '">' +
+                '<a href="' + "/search-results/?q=" + encodeURIComponent(tag) + '" title="Search for ' + tag + '">' +
                   tag +
                 '</a>&nbsp;' +
               '</span>'
@@ -93,7 +93,7 @@
   }
 
 
-  var searchTerm = getQueryVariable('query') || document.querySelector('.search-box').value;
+  var searchTerm = getQueryVariable('q') || document.querySelector('.search-box').value;
 
 
   if (searchTerm.length > 0) {

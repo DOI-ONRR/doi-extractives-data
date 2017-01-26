@@ -1,5 +1,3 @@
-require 'pry'
-require 'rb-readline'
 module Jekyll
   class SearchStoreTag < Liquid::Tag
     def initialize(tag, text, tokens)

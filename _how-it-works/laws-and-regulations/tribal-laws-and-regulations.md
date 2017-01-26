@@ -48,7 +48,150 @@ The Office of the Special Trustee for American Indians (OST) receives the paymen
 
 ## Indian land production and revenue
 
-Natural resources are increasingly a key source of income for many American Indian tribes. In FY 2013, ONRR and OST disbursed [$933 million to American Indian tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx), an increase of more than 171% from 10 years prior.
+Natural resources are increasingly a key source of income for many American Indian tribes. In FY 2013, ONRR and OST disbursed [$933 million to American Indian tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx), an increase of more than 171% from 10 years prior. This is accounting year data.
+
+### Production on Indian land by fiscal year
+
+<table class="article_table">
+  <tr>
+    <th>Commodity</th>
+    <th>2013</th>
+    <th>2014</th>
+    <th>2015</th>
+    <th>2016</th>
+  </tr>
+  <tr>
+    <td>Oil (bbl)</td>
+    <td>49,244,502</td>
+    <td>60,173,618</td>
+    <td>64,145,576</td>
+    <td>58,570,842</td>
+  </tr>
+  <tr>
+    <td>Gas (mcf)</td>
+    <td>313,218,037</td>
+    <td>324,457,237</td>
+    <td>316,547,513</td>
+    <td>317,746,651</td>
+  </tr>
+  <tr>
+    <td>Cinders (ton)</td>
+    <td>7,021</td>
+    <td>4,926</td>
+    <td>7,835</td>
+    <td>2,992</td>
+  </tr>
+  <tr>
+    <td>Coal (ton)</td>
+    <td>17,710,995</td>
+    <td>20,270,190</td>
+    <td>19,675,009</td>
+    <td>13,925,942</td>
+  </tr>
+  <tr>
+    <td>Coal-Bituminous-Raw (ton)</td>
+    <td>6,034</td>
+    <td>935</td>
+    <td>19,675,009</td>
+    <td>13,925,942</td>
+  </tr>
+  <tr>
+    <td>Copper Concentrate (ton)</td>
+    <td>3,177</td>
+    <td>-</td>
+    <td>8,476</td>
+    <td>159</td>
+  </tr>
+  <tr>
+    <td>Gypsum (ton)</td>
+    <td>328,196</td>
+    <td>310,828</td>
+    <td>229,131</td>
+    <td>385,257</td>
+  </tr>
+  <tr>
+    <td>Humate (ton)</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>14,202</td>
+  </tr>
+  <tr>
+    <td>Molybdenum Concentrate (ton)</td>
+    <td>0</td>
+    <td>-</td>
+    <td>11</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>Sand/Gravel (ton)</td>
+    <td>2,605,479</td>
+    <td>1,410,816</td>
+    <td>622,816</td>
+    <td>2,042,576</td>
+  </tr>
+  <tr>
+    <td>Sand/Gravel (cyd)</td>
+    <td>7,260</td>
+    <td>7,860</td>
+    <td>5,688</td>
+    <td>5,184</td>
+  </tr>
+  <tr>
+    <td>Geothermal (kwh)</td>
+    <td>1,695,636</td>
+    <td>1,784,470</td>
+    <td>1,502,682</td>
+    <td>1,508,963</td>
+  </tr>
+</table>
+
+### FY 2013 production and revenue
+
+<table class="article_table">
+  <tr>
+    <th>Resource</th>
+    <th>Production</th>
+    <th>Royalties</th>
+  <th>Rents</th>
+  <th>Bonuses</th>
+  </tr>
+  <tr>
+    <td>Coal</td>
+    <td>19,145,716 tons</td>
+    <td>$78,225,311</td>
+  <td>$106,325</td>
+  <td>$12,561,353</td>
+  </tr>
+  <tr>
+    <td>Oil</td>
+    <td>46,421,857 bbl</td>
+    <td>$729,744,651</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Natural gas</td>
+    <td>240,552,694 Mcf</td>
+    <td>$126,043,575</td>
+    <td style="border-top:0;">$4,231,254</td>
+  <td>-</td>
+  </tr>
+  <tr>
+    <td>Natural gas liquids</td>
+    <td>154,923,429 gal</td>
+    <td>$15,317,988</td>
+    <td style="border-top:0;"></td>
+  <td>-</td>
+  </tr>
+  <tr>
+    <td>Copper</td>
+    <td>3,967 tons</td>
+    <td>$1,034,988</td>
+    <td>$6,174</td>
+    <td>-</td>
+  </tr>
+</table>
 
 ### FY 2013 production and revenue
 

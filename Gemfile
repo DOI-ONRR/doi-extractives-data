@@ -9,3 +9,8 @@ gem 'scss_lint', require: false
 gem 'html-proofer'
 gem 'rubocop'
 gem 'rubydoctest'
+
+group :development do
+  gem 'pry'
+  gem 'rb-readline'
+end

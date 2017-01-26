@@ -6,7 +6,6 @@ permalink: /search-results/
 <div class="container-page-wrapper container-margin">
 
   <div class="container-left-8">
-
     <h1>{{page.title}}</h1>
 
     <p class="search-intro">This is a curated search.<br/> Results are drawn from related websites across the U.S. government so  you can find extractive industries resources in one place.</p>
@@ -46,7 +45,10 @@ permalink: /search-results/
 </div>
 
 
+
 <script>
+  internal = JSON.parse({% search_store %})
+
   window.store = {
     {% for document in site.data.search %}
       "{{ document.url | slugify }}": {
@@ -63,7 +65,8 @@ permalink: /search-results/
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
+
+  $.extend(window.store, internal);
 </script>
 
-<!-- <script src="{{ site.baseurl }}/js/vendor/lunr.js"></script> -->
 <script type="text/javascript" src="{{ site.baseurl }}/js/lib/search.min.js" charset="utf-8"></script>

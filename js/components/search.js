@@ -22,8 +22,11 @@
         var external = item.internal
           ? ''
           : ' target="_blank" ';
+        var baseurl = item.internal
+          ? window.location.origin
+          : ''
         appendString += '<article class="search-result-list">' +
-                          '<h1><a href="' + item.url + '"' + external + ">" +
+                          '<h1><a href="' + baseurl + item.url + '"' + external + ">" +
                             item.title +
                           '</a></h1>' +
                           '<p>' + item.description + '</p>' +

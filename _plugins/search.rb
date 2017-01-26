@@ -2,7 +2,6 @@ module Jekyll
   class SearchStoreTag < Liquid::Tag
     def initialize(tag, text, tokens)
       super
-      @baseurl = Jekyll.sites[0].config['baseurl']
     end
 
     def slugify(str)
@@ -18,7 +17,7 @@ module Jekyll
               title: doc.data['title'],
               description: doc.data['description'],
               tag: doc.data['tag'],
-              url: "#{@baseurl}#{doc.data['permalink']}",
+              url: doc.data['permalink'],
               internal: true
             }
             obj[slugify(doc.data['permalink'])] = new_obj

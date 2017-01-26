@@ -1,7 +1,6 @@
 (function(exports) {
   'use strict';
 
-  // require('./../components/search-results.js');
-  require('./../components/search-test.js');
-
+  exports.lunr = require('lunr');
+  require('./../components/search.js');
 })(window);

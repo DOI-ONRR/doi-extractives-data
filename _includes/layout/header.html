@@ -17,16 +17,11 @@
       </li>
 
       <li class="header-nav_item_top">
-        <form action='{{ site.baseurl }}/search-test/'>
-          <label class='sr-only' for="q">Search</label>
-          <input type="search" class="search-box q header-nav_search" placeholder="Search" id="search-input" name="query" role="search"/>
+        <form action='{{ site.baseurl }}/search-results/'>
+          <label class='sr-only' for="query">Search</label>
+          <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="query" role="search"/>
           <button type="submit" class="header-nav_search_icon icon-search" title="search"><label class="sr-only">Search</label></button>
         </form>
-        <!-- <form action="{{ site.baseurl }}/search-test/" method="get">
-          <label class="sr-only" for="search-box">Search</label>
-          <input type="search" class="search-box header-nav_search" name="query">
-          <button type="submit" class="search-icon icon-search header-nav_search_icon" value="search"></button>
-        </form> -->
       </li>
 
     </ul>

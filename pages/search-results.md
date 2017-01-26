@@ -1,7 +1,7 @@
 ---
 title: Search Results
 layout: default
-permalink: /search-results/
+permalink: /search-test/
 ---
 
 <div class="container-page-wrapper container-margin">

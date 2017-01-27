@@ -25,7 +25,7 @@
           ? window.location.origin
           : '';
         appendString += '<article class="search-result-list">' +
-                          '<h1><a href="' + baseurl + item.url + '"' + external + ">" +
+                          '<h1><a href="' + baseurl + item.url + '"' + external + '>' +
                             item.title +
                           '</a></h1>' +
                           '<p>' + item.description + '</p>' +
@@ -41,7 +41,7 @@
 
   function updateContext(results, searchTerm) {
     var resultsLength = results.length || 0;
-    var searchTerm = searchTerm || '';
+    searchTerm = searchTerm || '';
     $('.search-results-count').val(resultsLength);
     $('.search-results-count').text(resultsLength);
     $('.search-string').text(searchTerm);

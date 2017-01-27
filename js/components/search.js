@@ -11,20 +11,19 @@
 
         var tags = (item.tag || [])
           .map(function(tag) {
-            return (
-              '<span class="search-result-list-tag">&nbsp;' +
-                '<a href="' + "/search-results/?q=" + encodeURIComponent(tag) + '" title="Search for ' + tag + '">' +
-                  tag +
-                '</a>&nbsp;' +
-              '</span>'
-            );
+            return '<span class="search-result-list-tag">&nbsp;' +
+                     '<a href="' + "/search-results/?q=" + encodeURIComponent(tag) +
+                     '" title="Search for ' + tag + '">' +
+                       tag +
+                     '</a>&nbsp;' +
+                   '</span>';
           });
         var external = item.internal
           ? ''
           : ' target="_blank" ';
         var baseurl = item.internal
           ? window.location.origin
-          : ''
+          : '';
         appendString += '<article class="search-result-list">' +
                           '<h1><a href="' + baseurl + item.url + '"' + external + ">" +
                             item.title +
@@ -72,7 +71,7 @@
     this.field('internal', { boost: 100 });
   });
 
-  for (var key in window.store) { // Add the data to lunr
+  for (var key in window.store) {
     idx.add({
       'id': key,
       'title': window.store[key].title,
@@ -80,11 +79,10 @@
       'tag': window.store[key].tag,
       'internal': window.store[key].internal,
     });
-
-    var results = idx.search(searchTerm); // Get lunr to perform a search
   }
 
-  displaySearchResults(results, window.store); // We'll write this in the next section
+  var results = idx.search(searchTerm);
+  displaySearchResults(results, window.store);
 
 
   function searchIndex(searchTerm) {
@@ -95,8 +93,8 @@
     updateContext(results, searchTerm);
   }
 
-
-  var searchTerm = getQueryVariable('q') || document.querySelector('.search-box').value;
+  var searchTerm = getQueryVariable('q') ||
+    document.querySelector('.search-box').value;
 
 
   if (searchTerm.length > 0) {
@@ -104,7 +102,6 @@
   } else {
     updateContext(results, searchTerm);
   }
-
 
   $('.search-box').on('keyup', function() {
     var searchValue = this.value;

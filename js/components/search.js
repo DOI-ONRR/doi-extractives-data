@@ -12,7 +12,7 @@
         var tags = (item.tag || [])
           .map(function(tag) {
             return '<span class="search-result-list-tag">&nbsp;' +
-                     '<a href="' + "/search-results/?q=" + encodeURIComponent(tag) +
+                     '<a href="' + '/search-results/?q=' + encodeURIComponent(tag) +
                      '" title="Search for ' + tag + '">' +
                        tag +
                      '</a>&nbsp;' +
@@ -81,6 +81,9 @@
     });
   }
 
+  var searchTerm = getQueryVariable('q') ||
+    document.querySelector('.search-box').value;
+
   var results = idx.search(searchTerm);
   displaySearchResults(results, window.store);
 
@@ -92,10 +95,6 @@
     displaySearchResults(results, window.store);
     updateContext(results, searchTerm);
   }
-
-  var searchTerm = getQueryVariable('q') ||
-    document.querySelector('.search-box').value;
-
 
   if (searchTerm.length > 0) {
     searchIndex(searchTerm);

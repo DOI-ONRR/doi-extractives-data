@@ -1,5 +1,5 @@
 /* jshint node: true */
-const parse = require('../../lib/parse');
+var parse = require('../../lib/parse');
 
 module.exports = {
   year:         'FY',

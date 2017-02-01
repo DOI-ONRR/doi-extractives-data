@@ -619,6 +619,11 @@ tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
 	$(tables) -t ndjson -n civil_penalties_revenue -i $$tmp && \
 	rm $$tmp
 
+tables/tribal_revenue: data/revenue/tribal.tsv
+	@$(call drop-table,tribal_revenue)
+	$(tito) --map ./data/revenue/transform-tribal.js -r tsv $^ \
+		| $(tables) -t ndjson -n tribal_revenue
+
 tables/federal_production: data/federal-production/federal-production.tsv
 	@$(call drop-table,federal_local_production)
 	tmp=$^.ndjson; \

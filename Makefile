@@ -227,7 +227,7 @@ data/tribal_revenue.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			year, commodity, revenue_type, \
-			SUM(revenue) AS revenue \
+			ROUND(SUM(revenue), 2) AS revenue \
 		FROM tribal_revenue \
 		GROUP BY year, commodity, revenue_type \
 		ORDER BY year, revenue DESC" \

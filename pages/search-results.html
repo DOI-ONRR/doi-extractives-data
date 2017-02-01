@@ -44,10 +44,8 @@ permalink: /search-results/
   </div>
 </div>
 
-
-
 <script>
-  internal = JSON.parse({% search_store %})
+  window.baseurl = "{{ site.baseurl }}";
 
   window.store = {
     {% for document in site.data.search %}
@@ -66,7 +64,7 @@ permalink: /search-results/
     {% endfor %}
   };
 
-  $.extend(window.store, internal);
+  $.extend(window.store, JSON.parse({% search_store %}));
 </script>
 
 <script type="text/javascript" src="{{ site.baseurl }}/js/lib/search.min.js" charset="utf-8"></script>

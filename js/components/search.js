@@ -12,26 +12,26 @@
         var tags = (item.tag || [])
           .map(function(tag) {
             return '<span class="search-result-list-tag">&nbsp;' +
-                     '<a href="' + '/search-results/?q=' + encodeURIComponent(tag) +
+                     '<a href="?q=' + encodeURIComponent(tag) +
                      '" title="Search for ' + tag + '">' +
                        tag +
                      '</a>&nbsp;' +
                    '</span>';
           });
-        var external = item.internal
-          ? ''
-          : ' target="_blank" ';
-        var baseurl = item.internal
-          ? window.location.origin
-          : '';
+
+        var link = item.internal
+          ? 'href="' + window.baseurl + item.url + '"'
+          : 'href="' + item.url + '" target="_blank" ';
+
         appendString += '<article class="search-result-list">' +
-                          '<h1><a href="' + baseurl + item.url + '"' + external + '>' +
+                          '<h1><a ' + link + '>' +
                             item.title +
                           '</a></h1>' +
                           '<p>' + item.description + '</p>' +
                           '<p>Tagged&nbsp;/' + tags.join('/') + '</p>' +
                         '</article>';
       }
+
       $searchResults.html(appendString);
     } else {
       $('.search-no-results').show();

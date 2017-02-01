@@ -6,13 +6,11 @@
 }
 
 .search-header {
-  padding-bottom: $base-padding-extra;
+  display: block;
+  width: 100%;
 
   p {
-    &:first-of-type,
-    &:last-of-type {
-      @include span-columns(6 of 12);
-    }
+    flex-grow: 1;
 
     &:last-of-type {
       text-align: right;
@@ -20,8 +18,12 @@
   }
 }
 
+.search-wrapper {
+  display: flex;
+}
+
 .search-container {
-  display: inline-block;
+  display: block;
   padding-bottom: 20px;
 
   input[type="search"] {
@@ -49,7 +51,6 @@
     border-radius: 0 $base-border-radius $base-border-radius 0;
     color: $white;
     cursor: pointer;
-    float: right;
     height: 30px;
     padding: 0.42rem;
     width: 37px;
@@ -74,8 +75,6 @@
 }
 
 .search-no-results {
-  padding-bottom: $base-padding-extra;
-
   h2 {
     font-weight: $weight-book;
     margin-bottom: 0;

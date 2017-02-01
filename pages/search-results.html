@@ -1,0 +1,70 @@
+---
+layout: default
+title: Search results
+permalink: /search-results/
+---
+<div class="container-page-wrapper container-margin">
+
+  <div class="container-left-8">
+    <h1>{{page.title}}</h1>
+
+    <p class="search-intro">This is a curated search.<br/> Results are drawn from related websites across the U.S. government so  you can find extractive industries resources in one place.</p>
+
+    <div class="search-results-container">
+
+      <div class="search-no-results" style="display:none;">
+        <p><strong>Sorry, no results were found for your search.</strong></p>
+      </div>
+
+      <div class="search-header">
+        <div class="search-wrapper">
+        <p>Search results for <strong class='search-string'></strong></p>
+        <p class="search-results-count"></p>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <form action="{{ site.baseurl }}/search-results/" method="get">
+          <label for="search-box">Search</label>
+          <input type="search" class="search-box" name="q">
+          <button type="submit" class="search-icon icon-search" value="search"></button>
+        </form>
+      </div>
+
+      <div class="search-results-container"></div>
+
+      <div class="search-no-results" style="display:none;">
+        <p>Try one of these popular searches
+          / <a href="../search-results/?q=energy" title="Search for energy">energy</a> /
+          <a href="../search-results/?q=oil" title="Search for oil">oil</a> /
+          <a href="../search-results/?q=conservation" title="Search for conservation">conservation</a> /
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.baseurl = "{{ site.baseurl }}";
+
+  window.store = {
+    {% for document in site.data.search %}
+      "{{ document.url | slugify }}": {
+        "title": "{{ document.title | xml_escape }}",
+        "description": "{{ document.description | xml_escape }}",
+        "tag": [
+        {% for tag in document.tag %}
+          "{{ tag | xml_escape }}"
+          {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        ],
+        "url": "{{ document.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  $.extend(window.store, JSON.parse({% search_store %}));
+</script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/search.min.js" charset="utf-8"></script>

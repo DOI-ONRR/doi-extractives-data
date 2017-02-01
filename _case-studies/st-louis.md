@@ -1,6 +1,13 @@
 ---
 title: 'St. Louis County, Minnesota | Case Studies'
 title_display: 'St. Louis County, Minnesota'
+description: "Iron ore is the primary mineral substance for the world's iron and steel industries. The U.S. is estimated to possess iron ore reserves of 110 billion tons, which can produce approximately 27 billion tons of metallic iron. In 2014, the U.S. was the world's eighth-largest producer of iron ore, generating an output of 57 million metric tons. 93% of usable iron ore was produced in Michigan and Minnesota, with an estimated value of $5 billion. In 2013, more than three-fourths of that output came from iron mines located in a single area of Minnesota: St. Louis County."
+tag:
+- local
+- case study
+- St. Louis county
+- Minnesota
+- iron
 layout: content
 permalink: /case-studies/st-louis/
 resource: iron

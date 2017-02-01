@@ -223,6 +223,18 @@ data/national_self_employment.yml:
 			-c _meta/state_jobs.yml \
 			-o _$@
 
+data/tribal_revenue.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, commodity, revenue_type, \
+			SUM(revenue) AS revenue \
+		FROM tribal_revenue \
+		GROUP BY year, commodity, revenue_type \
+		ORDER BY year, revenue DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/tribal_revenue.yml \
+			-o _$@
+
 data/revenue: \
 	data/county_revenue \
 	data/national_revenues.yml \
@@ -233,7 +245,8 @@ data/revenue: \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
 	data/offshore_revenues_by_type.yml \
-	data/reconciliation.yml
+	data/reconciliation.yml \
+	data/tribal_revenue.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \

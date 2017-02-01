@@ -10,15 +10,20 @@ nav_items:
     title: Federal Obligations
   - name: leasing-process
     title: Leasing Process
-  - name: production-and-revenue
-    title: Production and revenue
-  - name: fy-2013-production-and-revenue
-    title: FY 2013 production and revenue
+  - name: production-on-indian-land-by-fiscal-year
+    title: Production on Indian land by fiscal year
+  - name: revenue-on-indian-land-by-fiscal-year
+    title: Revenue on Indian land by fiscal year
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Tribal laws and regulations
 selector: hash
+revenue_types:
+  Bonus: Bonus
+  Rents: Rents
+  Reported Royalties: Royalties
+  Other Revenues: Other Revenue
 ---
 
 > According to the 2011 American Community Survey conducted by the U.S. Census, there were 5.1 million American Indians and Alaska Natives living in the United States, accounting for approximately [1.6% of the population](https://www.census.gov/newsroom/releases/archives/facts_for_features_special_editions/cb12-ff22.html).
@@ -146,98 +151,39 @@ Natural resources are increasingly a key source of income for many American Indi
   </tr>
 </table>
 
-### FY 2013 production and revenue
+### Revenue on Indian land by fiscal year
+
+{% for year_revenue in site.data.tribal_revenue reversed %}
+
+#### Fiscal year {{ year_revenue[0] }} revenue
 
 <table class="article_table">
-  <tr>
-    <th>Resource</th>
-    <th>Production</th>
-    <th>Royalties</th>
-  <th>Rents</th>
-  <th>Bonuses</th>
-  </tr>
-  <tr>
-    <td>Coal</td>
-    <td>19,145,716 tons</td>
-    <td>$78,225,311</td>
-  <td>$106,325</td>
-  <td>$12,561,353</td>
-  </tr>
-  <tr>
-    <td>Oil</td>
-    <td>46,421,857 bbl</td>
-    <td>$729,744,651</td>
-    <td></td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Natural gas</td>
-    <td>240,552,694 Mcf</td>
-    <td>$126,043,575</td>
-    <td style="border-top:0;">$4,231,254</td>
-  <td>-</td>
-  </tr>
-  <tr>
-    <td>Natural gas liquids</td>
-    <td>154,923,429 gal</td>
-    <td>$15,317,988</td>
-    <td style="border-top:0;"></td>
-  <td>-</td>
-  </tr>
-  <tr>
-    <td>Copper</td>
-    <td>3,967 tons</td>
-    <td>$1,034,988</td>
-    <td>$6,174</td>
-    <td>-</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Commodity</th>
+      {% for revenue_type in page.revenue_types %}
+      <th>{{ revenue_type[1] }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+  {% for commodity in year_revenue[1] %}
+    <tr>
+      <td>{{ commodity[0] }}</td>
+      {% for revenue_type in page.revenue_types %}
+        {% assign _revenue_type = revenue_type[0] %}
+        {% assign _revenue = commodity[1][_revenue_type] %}
+      <td>{% if _revenue %}${{ _revenue | intcomma }}{% endif %}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
 </table>
+{% endfor %}
 
-### FY 2013 production and revenue
-
-<table class="article_table">
-  <tr>
-    <th>Resource</th>
-    <th>Production</th>
-    <th>Royalties</th>
-  <th>Rents</th>
-  <th>Bonuses</th>
-  </tr>
-  <tr>
-    <td>Coal</td>
-    <td>19,145,716 tons</td>
-    <td>$78,225,311</td>
-  <td>$106,325</td>
-  <td>$12,561,353</td>
-  </tr>
-  <tr>
-    <td>Oil</td>
-    <td>46,421,857 bbl</td>
-    <td>$729,744,651</td>
-    <td></td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Natural gas</td>
-    <td>240,552,694 Mcf</td>
-    <td>$126,043,575</td>
-    <td style="border-top:0;">$4,231,254</td>
-  <td>-</td>
-  </tr>
-  <tr>
-    <td>Natural gas liquids</td>
-    <td>154,923,429 gal</td>
-    <td>$15,317,988</td>
-    <td style="border-top:0;"></td>
-  <td>-</td>
-  </tr>
-  <tr>
-    <td>Copper</td>
-    <td>3,967 tons</td>
-    <td>$1,034,988</td>
-    <td>$6,174</td>
-    <td>-</td>
-  </tr>
-</table>
-
-The federal government may only release information about natural resource extraction and revenue in aggregate across all Indian lands. This is because of confidentiality and proprietary constraints on tribal data. These constraints arise from treaties, laws, and regulations that the government consistently and uniformly applies.
+The federal government may only release information about natural
+resource extraction and revenue in aggregate across all Indian
+lands. This is because of confidentiality and proprietary
+constraints on tribal data. These constraints arise from treaties,
+laws, and regulations that the government consistently and uniformly
+applies.

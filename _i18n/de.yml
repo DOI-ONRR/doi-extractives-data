@@ -177,3 +177,30 @@ states:
   Sachsen-Anhalt: Sachsen-Anhalt
   Schleswig-Holstein: Schleswig-Holstein
   Thüringen: Thüringen
+
+datenschutz:
+  title: Datenschutz
+  sub-heading: Datenschutzerklärung
+  description-1: Auf dieser Website werden mit der Open Source Software piwik Daten für statistische Zwecke und zur Verbesserung des Angebots ausgewertet und anschließend gelöscht. Eine andere Verwendung oder Weitergabe an Dritte erfolgt nicht.
+  description-2: Bei jedem Zugriff eines Nutzers auf das Internet-Angebot www.d-eiti.de und bei jedem Abruf einer Datei werden Daten über diesen Vorgang vorübergehend in einer Protokolldatei gespeichert und verarbeitet. Vor der Speicherung wird jeder Datensatz durch Veränderung der IP-Adresse anonymisiert.
+  description-3: Ihr Vertrauen ist uns wichtig. Daher möchten wir Ihnen Rede und Antwort bezüglich der Verarbeitung Ihrer personenbezogenen Daten stehen. Auch haben Sie nach dem Bundesdatenschutzgesetz ein Recht auf unentgeltliche Auskunft über Ihre gespeicherten Daten sowie ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Sie können außerdem jederzeit die uns erteilte Einwilligung zur Datenerhebung und Verwendung ohne Angaben von Gründen widerrufen. Wenn Sie Fragen haben, die Ihnen diese Datenschutzerklärung nicht beantworten konnte oder wenn Sie zu einem Punkt vertiefte Informationen wünschen, wenden Sie sich bitte jederzeit an Sekretariat@D-EITI.de
+
+impressum:
+  title: Impressum
+  secretary:
+    title: Sekretariat der D-EITI
+    address: (Deutschland – Extractive Industries Transparency Initiative)
+    strasee: Reichpietschufer 20
+    city: 10785 Berlin
+    tel: Tel. +49 30 – 72 614 – 202
+    fax: Fax. +49 30 – 72614 22 – 202
+    email: E-Mail. Sekretariat@D-EITI.de
+
+  giz:
+    heading: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH im Auftrag des Bundesministeriums für Wirtschaft und Energie
+    description-1: Sitz der Gesellschaft
+    description-2: Bonn und Eschborn
+    address: Friedrich-Ebert-Allee 40
+    city: 53113 Bonn
+    tel: Telefon- +49 228 44 60-0
+    fax: Fax- +49 228 44 60-17 66

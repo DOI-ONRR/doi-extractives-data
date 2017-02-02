@@ -201,3 +201,30 @@ states:
   Sachsen-Anhalt: Saxony-Anhalt
   Schleswig-Holstein: Schleswig-Holstein
   Thüringen: Thuringia
+
+datenschutz:
+  title: Datenschutz
+  sub-heading: Data protection
+  description-1: On this website, the piwik open source software is used for statistical purposes and to improve the offer. No other use or transfer to third parties takes place.
+  description-2: Every time a user accesses the Internet site www.d-eiti.de and every time a file is downloaded, data about this process is temporarily stored and processed in a log file. Before storing, each record is anonymized by changing the IP address.
+  description-3: Your trust is important to us. Therefore, we would like to answer your questions regarding the processing of your personal data. In addition, you have a right to free information about your stored data as well as a right to rectification, blocking or deletion of this data under the Federal Data Protection Act. You may also at any time revoke the consent granted to us for data collection and use without giving reasons. If you have any questions that could not be answered by this data protection declaration, or if you would like more detailed information, please contact Sekretariat@D-EITI.de
+
+impressum:
+  title: Impressum
+  secretary:
+    title: Sekretariat der D-EITI
+    address: (Deutschland – Extractive Industries Transparency Initiative)
+    strasee: Reichpietschufer 20
+    city: 10785 Berlin
+    tel: Tel. +49 30 – 72 614 – 202
+    fax: Fax. +49 30 – 72614 22 – 202
+    email: E-Mail. Sekretariat@D-EITI.de
+
+  giz:
+    heading: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH im Auftrag des Bundesministeriums für Wirtschaft und Energie
+    description-1: Sitz der Gesellschaft
+    description-2: Bonn und Eschborn
+    address: Friedrich-Ebert-Allee 40
+    city: 53113 Bonn
+    tel: Telefon- +49 228 44 60-0
+    fax: Fax- +49 228 44 60-17 66

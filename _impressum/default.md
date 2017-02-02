@@ -9,6 +9,7 @@ permalink: /impressum/
     <div class="container-outer landing-section_top">
       <div class="container-left-8 hero-left">
         <h1>{% t 'impressum.title' %}</h1>
+        <hr/>
         <div>
         <p class="hero-description">{% t 'impressum.secretary.title' %}</p>
         <p class="hero-description">{% t 'impressum.secretary.address' %}</p>

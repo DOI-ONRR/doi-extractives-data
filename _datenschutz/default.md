@@ -9,6 +9,7 @@ permalink: /datenschutz/
     <div class="container-outer landing-section_top">
       <div class="container-left-8 hero-left">
         <h1>{% t 'datenschutz.title' %}</h1>
+        <hr/>
         <p class="hero-description">{% t 'datenschutz.description-1' %}</p>
         <p class="hero-description">{% t 'datenschutz.description-2' %}</p>
         <p class="hero-description">{% t 'datenschutz.description-3' %}</p>

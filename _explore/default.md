@@ -51,7 +51,7 @@ permalink: /explore/
       </h2>
     </a>
 
-    <a href="#" class="tile tile-bip disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/BIP" class="tile tile-bip">
     <span>Beitrag zum BIP</span>
     </a>
     <a href="#" class="tile tile-einnahmen-rohstoff disabled">

@@ -4,6 +4,9 @@ layout: default
 permalink: /explore/BIP/
 breadcrumb:
   - title: FAKTEN
+nav_items:
+  - name: intro
+    title: Seitenanfang
 ---
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
@@ -13,7 +16,7 @@ breadcrumb:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="title">Beitrag zum BIP</h1>
+    <h1 id="intro">Beitrag zum BIP</h1>
 
     <div class="container-left-9">
       <section>
@@ -42,6 +45,14 @@ breadcrumb:
          <p>
          <a href="https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/VGR/Glossar/Bruttowertschoepfung.html">Quelle:</a></p>
       </section>
+    </div>
+    <div class="sticky sticky_nav container-right-3">
+      <h3 class="state-page-nav-title container">
+        <div class="nav-title">{{ page.title }}</div>
+      </h3>
+      <nav>
+        {% include case-studies/_nav-list.html %}
+      </nav>
     </div>
   </section>
 </main>

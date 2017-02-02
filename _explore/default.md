@@ -60,7 +60,7 @@ permalink: /explore/
     <a href="{{ site.lang | url_lang_prefix  }}/explore/beschäftigung" class="tile tile-beschaeftigung">
       <span>Beitrag zur Beschäftigung</span>
     </a>
-    <a href="#" class="tile tile-export disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/exporte" class="tile tile-export">
       <span>Exporte</span>
     </a>
   </section>

@@ -1,7 +1,7 @@
 ---
 title: Beschäftigung
 layout: default
-permalink: /explore/beschäftigung/
+permalink: /explore/employment/
 breadcrumb:
   - title: FAKTEN
     permalink: /explore/how-it-work/
@@ -26,6 +26,16 @@ nav_items:
         <p>
           Die Beschäftigten in der rohstoffgewinnenden Industrie  gehen einer Vielzahl von unterschiedlichen Beschäftigungen nach. So arbeiten beispielsweise Ingenieure im Marktscheidewesen an der Erkundung und Vermessung von Vorkommen, Rohstoffingenieure und Geotechniker am Aufbau und Betrieb der technischen Anlagen und Bergbautechnologen führen den Abbau im Tage- und Untertagebau durch. Insgesamt  beschäftigten die Unternehmen der rohstoffgewinnenden Industrie 2015 in Deutschland  57.177 MitarbeiterInnen. Dies entspricht einem Anteil von 0,14% an der Gesamtbeschäftigtigung in Deutschland, wobei ein Großteil der Angestellten auf den Braunkohlen- und Steinkohlenbergbau sowie den Salzbergbau entfällt. Diese Zahlen schließen  für den gleichen Zeitraum zudem insgesamt 2711 Auszubildende in den bergbaulichen Betrieben. Ein weiterer wichtiger Beschäftigungsfaktor sind die Sekundäreffekte des rohstoffgewinnenden Sektors, durch die zusätzliche Arbeits- und Ausbildungsplätze geschaffen werden. Hierzu gehören insbesondere die Dienstleistungen der Zulieferer und Subunternehmer welche beispielweise mit der Übername von logistischen und gastronomischen Aufgaben oder dem Bau und Betrieb von Förderstätten beauftragt werden.
         </p>
+        <br/>
+        <div class="explore-exploration slab-alpha">
+          <div class="regions container">
+            <div class="graph">
+              <div class="container chart-container">
+                <div id="pieChart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <section style="position: relative;">
         <p><strong>Tabelle:</strong> Beschäftigte</p>
           <table id="tabelle-1">
@@ -172,3 +182,11 @@ nav_items:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/static.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pointLabels.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/pages/pieGraph.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/lib/explore.min.js" charset="utf-8"></script>

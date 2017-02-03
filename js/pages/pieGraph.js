@@ -3,6 +3,8 @@ $(document).ready(function(){
   var jsonFilePath= '';
   if (document.URL.includes('/explore/exporte/')) {
     jsonFilePath = "../../data/graphs/exportePie.json";
+  } else if (document.URL.includes('/explore/employment/')) {
+    jsonFilePath = "../../data/graphs/beschäftigtePie.json";
   }
 
   $.ajax({

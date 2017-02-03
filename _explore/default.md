@@ -57,7 +57,7 @@ permalink: /explore/
     <a href="#" class="tile tile-einnahmen-rohstoff disabled">
       <span>Einnahmen</span>
     </a>
-    <a href="{{ site.lang | url_lang_prefix  }}/explore/beschäftigung" class="tile tile-beschaeftigung">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/employment" class="tile tile-beschaeftigung">
       <span>Beitrag zur Beschäftigung</span>
     </a>
     <a href="{{ site.lang | url_lang_prefix  }}/explore/exporte" class="tile tile-export">

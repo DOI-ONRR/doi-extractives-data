@@ -1,0 +1,11 @@
+{
+	"title": "Beschäftigte 2015",
+	"data": [
+		[
+			["unter Tage", 10337],
+			["in Tagebauen", 13090],
+			["über Tage", 33715]
+		]
+	],
+	"color": ["#5a80b8", "#b15550", "#8fa55a"]
+}

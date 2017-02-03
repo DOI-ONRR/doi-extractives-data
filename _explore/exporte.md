@@ -41,7 +41,6 @@ nav_items:
             <div class="graph">
               <div class="container chart-container">
                 <div id="pieChart"></div>
-                <table class="legend" id="legend"></table>
               </div>
             </div>
           </div>

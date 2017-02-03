@@ -9,6 +9,8 @@ $(document).ready(function(){
 
   if (document.URL.includes('/explore/exporte/')) {
     jsonFilePath = "../../data/graphs/exporte.json";
+  } else if (document.URL.includes('/explore/staatliche-subventionen/')) {
+    jsonFilePath = "../../data/graphs/subventionen1.json";
   }
 
   $.ajax({
@@ -28,19 +30,21 @@ $(document).ready(function(){
 
   function renderChart(jsondata, number) {
 
+    console.log(number);
     jsonData = jsondata.data;
     category = jsondata.categories;
     title = jsonData.title;
     ticks= jsondata.xAxis;
     labels= jsondata.labels;
-    var colors = jsondata.colors;
+    var colors = jsondata.color;
+    console.log(colors);
     var chartTitle = isEn ? jsondata.title_en : jsondata.title;
 
-    plotGraph(jsonData, chartTitle, colors, ticks, labels);
+    plotGraph('chart'+(number+1),jsonData, chartTitle, colors, ticks, labels);
   }
 
-  function plotGraph(data, chartTitle, colorsData, ticks, labels) {
-    plot2b = $.jqplot('chart1', data, {
+  function plotGraph(chart, data, chartTitle, colorsData, ticks, labels) {
+    plot2b = $.jqplot(chart, data, {
         seriesDefaults: {
             renderer:$.jqplot.BarRenderer,
             pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
@@ -69,6 +73,7 @@ $(document).ready(function(){
         legend:{
           show: true,
           location:'e',
+          placement: 'outside',
           labels: labels
         },
         title: chartTitle

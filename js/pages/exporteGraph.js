@@ -4,10 +4,15 @@ $(document).ready(function(){
   var category = [];
   var isEn = document.URL.includes('/en/');
   var ticks = [];
+  var jsonFilePath= '';
+
+  if (document.URL.includes('/explore/exporte/')) {
+    jsonFilePath = "../../data/graphs/exporte.json";
+  }
 
   $.ajax({
     type: "GET",
-    url: "../../data/graphs/exporte.json",
+    url: jsonFilePath,
     dataType: "text",
     success: function(data) {processData(data);}
   });

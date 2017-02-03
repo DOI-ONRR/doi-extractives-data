@@ -48,6 +48,13 @@ collections:
   federal-revenue-by-company:
     output: true
     permalink: /explore/federal-revenue-by-company/:path/
+  impressum:
+    output: true
+    permalink: /impressum/:impressum/
+  datenschutz:
+    output: true
+    permalink: /datenschutz/:datenschutz/
+
 
 defaults:
   - scope:

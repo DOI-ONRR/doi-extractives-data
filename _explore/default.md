@@ -51,16 +51,16 @@ permalink: /explore/
       </h2>
     </a>
 
-    <a href="#" class="tile tile-bip disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/BIP" class="tile tile-bip">
     <span>Beitrag zum BIP</span>
     </a>
     <a href="#" class="tile tile-einnahmen-rohstoff disabled">
       <span>Einnahmen</span>
     </a>
-    <a href="#" class="tile tile-beschaeftigung disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/employment" class="tile tile-beschaeftigung">
       <span>Beitrag zur Beschäftigung</span>
     </a>
-    <a href="#" class="tile tile-export disabled">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/exporte" class="tile tile-export">
       <span>Exporte</span>
     </a>
   </section>

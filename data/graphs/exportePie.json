@@ -1,0 +1,12 @@
+{
+  "title": "Deutsche Rohstoffexporte 2015",
+  "data": [
+  	[
+  		["Kohle", 125],
+  		["Erdöl und Erdgas", 8422],
+  		["Erze", 134],
+  		["Steine und Erden, sonstige Bergbauerzeugnisse", 1330]
+  	]
+  ],
+  "color": [ "#5a80b8", "#b15550", "#8fa55a", "#7a649b" ]
+}

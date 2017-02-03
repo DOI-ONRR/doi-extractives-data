@@ -35,22 +35,7 @@
 			[1330112, 2015]
 		]
 	],
-	"categories": [{
-		"cat": "Kohle",
-		"cat_en": "Kohle EN",
-		"color": "#28467a"
-	}, {
-		"cat": "Erdöl und Erdgas",
-		"cat_en": "Erdöl und Erdgas EN",
-		"color": "#6CBCE3"
-	}, {
-		"cat": "Erze",
-		"cat_en": "Erze EN",
-		"color": "#4684c0"
-	}, {
-		"cat": "Steine und Erden",
-		"cat_en": "Steine und Erden EN",
-		"color": "#28467a"
-	}],
+	"color": ["#28467a", "#6CBCE3", "#4684c0", "#28467a"],
+  "labels": ["Kohle", "Erdöl und Erdgas", "Erze", "Steine und Erden"],
   "xAxis": [0, 2000000, 4000000, 6000000, 8000000, 10000000]
 }]

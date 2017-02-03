@@ -4,6 +4,7 @@ $(document).ready(function(){
   var category = [];
   var isEn = document.URL.includes('/en/');
   var ticks = [];
+  var labels = [];
   var jsonFilePath= '';
 
   if (document.URL.includes('/explore/exporte/')) {
@@ -31,40 +32,14 @@ $(document).ready(function(){
     category = jsondata.categories;
     title = jsonData.title;
     ticks= jsondata.xAxis;
-    console.log(ticks);
-    var colors = [];
+    labels= jsondata.labels;
+    var colors = jsondata.colors;
     var chartTitle = isEn ? jsondata.title_en : jsondata.title;
 
-    // setting color values
-    for (var j = 0; j < category.length; j++) {
-        colors.push(category[j].color);
-    }
-    legendTable('legend',category);
-    plotGraph(jsonData, chartTitle, colors, ticks);
+    plotGraph(jsonData, chartTitle, colors, ticks, labels);
   }
 
-
-  function legendTable(element,category) {
-    var table = document.getElementById(element);
-    for(var i=0; i<category.length;i++){
-      var row = table.insertRow(0);
-      var cell1 = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-
-      var div = document.createElement("div");
-      div.style.width = '15px';
-      div.style.height = '15px';
-      div.style.background = category[i].color;
-      cell1.appendChild(div);
-      if (isEn) {
-        cell2.innerHTML = category[i].cat_en;
-      } else {
-        cell2.innerHTML = category[i].cat;
-      }
-    }
-  }
-
-  function plotGraph(data, chartTitle, colorsData, ticks) {
+  function plotGraph(data, chartTitle, colorsData, ticks, labels) {
     plot2b = $.jqplot('chart1', data, {
         seriesDefaults: {
             renderer:$.jqplot.BarRenderer,
@@ -90,6 +65,11 @@ $(document).ready(function(){
               ticks: ticks,
               autoscale : false
             }
+        },
+        legend:{
+          show: true,
+          location:'e',
+          labels: labels
         },
         title: chartTitle
     });

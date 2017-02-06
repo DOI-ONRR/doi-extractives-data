@@ -61,10 +61,12 @@ nav_items:
             </div>
           </div>
         </section>
-        <h3>Geschichte</h3>
-        <p>
-          Seit über 150 Jahren wird Erdöl in Deutschland industriell gefördert. Die erste erfolgreiche Bohrung 1858/59 in Wietze bei Celle gilt als eine der ersten der Welt. Der Höhepunkt der Erdölförderung in Deutschland wurde 1968 mit einer Jahresproduktion von rund 8 Mio. t er- reicht. Die Jahresproduktion 2014 betrug rund 2,4 Mio. t. Die sicheren und wahrscheinlichen deutschen Erdölreserven werden auf rund 34 Mio. t geschätzt.
-        </p>
+        <section id="geschichte" style="position: relative;">
+          <h3>Geschichte</h3>
+          <p>
+            Seit über 150 Jahren wird Erdöl in Deutschland industriell gefördert. Die erste erfolgreiche Bohrung 1858/59 in Wietze bei Celle gilt als eine der ersten der Welt. Der Höhepunkt der Erdölförderung in Deutschland wurde 1968 mit einer Jahresproduktion von rund 8 Mio. t er- reicht. Die Jahresproduktion 2014 betrug rund 2,4 Mio. t. Die sicheren und wahrscheinlichen deutschen Erdölreserven werden auf rund 34 Mio. t geschätzt.
+          </p>
+        </section>
         <h3>Wirtschaftliche Bedeutung</h3>
         <p>
           Die aktuelle Förderung von Erdöl in Deutschland beträgt etwas weniger als 3 % des deut- schen Jahresverbrauchs. Der Wert des geförderten Erdöls liegt für 2015 bei etwa 1,4 Mrd. € und damit bei der wirtschaftlichen Bedeutung hinter Erdgas und Braunkohle an dritter Stelle der in Deutschland geförderten fossilen Energierohstoffe und an fünfter Stelle aller in Deutschland geförderten Rohstoffe. Im internationalen Vergleich der Erdöl produzierenden Länder lag Deutschland 2014 auf dem 58. Platz (1970: 26. Platz). 2014 waren im deutschen Erdöl- und Erdgasbereich 4.022 Mitarbeiter/innen beschäftigt.

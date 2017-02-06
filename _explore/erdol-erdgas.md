@@ -11,12 +11,18 @@ nav_items:
   - name: erdol
     title: Erdöl
     subnav_items:
-      - name: 5-fakten-zu-erdol
+      - name: fakten_zu_oil
         title: 5 Fakten zu Erdöl
+      - name: erdoil-geschichte
+        title: Geschichte
+      - name: erdoil-wirtschaftliche-bedeutung
+        title: Wirtschaftliche Bedeutung
+      - name: erdoil-gewinnung
+        title: Gewinnung
   - name: erdgas
     title: Erdgas
     subnav_items:
-      - name: 5-fakten-zu-erdgas
+      - name: fakten-zu-erdgas
         title: 5 Fakten zu Erdgas
 ---
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
@@ -61,20 +67,24 @@ nav_items:
             </div>
           </div>
         </section>
-        <section id="geschichte" style="position: relative;">
+        <section id="erdoil-geschichte" style="position: relative;">
           <h3>Geschichte</h3>
           <p>
             Seit über 150 Jahren wird Erdöl in Deutschland industriell gefördert. Die erste erfolgreiche Bohrung 1858/59 in Wietze bei Celle gilt als eine der ersten der Welt. Der Höhepunkt der Erdölförderung in Deutschland wurde 1968 mit einer Jahresproduktion von rund 8 Mio. t er- reicht. Die Jahresproduktion 2014 betrug rund 2,4 Mio. t. Die sicheren und wahrscheinlichen deutschen Erdölreserven werden auf rund 34 Mio. t geschätzt.
           </p>
         </section>
-        <h3>Wirtschaftliche Bedeutung</h3>
-        <p>
-          Die aktuelle Förderung von Erdöl in Deutschland beträgt etwas weniger als 3 % des deut- schen Jahresverbrauchs. Der Wert des geförderten Erdöls liegt für 2015 bei etwa 1,4 Mrd. € und damit bei der wirtschaftlichen Bedeutung hinter Erdgas und Braunkohle an dritter Stelle der in Deutschland geförderten fossilen Energierohstoffe und an fünfter Stelle aller in Deutschland geförderten Rohstoffe. Im internationalen Vergleich der Erdöl produzierenden Länder lag Deutschland 2014 auf dem 58. Platz (1970: 26. Platz). 2014 waren im deutschen Erdöl- und Erdgasbereich 4.022 Mitarbeiter/innen beschäftigt.
-        </p>
-        <h3>Gewinnug</h3>
-        <p>
-          2014 gibt es in Deutschland 50 Ölfelder, auf den aktiv durch rund 1000 Fördersonden in Bohranlagen (onshore) bzw. auf Förderplattformen (offshore) Erdöl gefördert wird. Die Ölfelder Schleswig-Holsteins und Niedersachsens produzierten 2015 zusammen fast 90 Prozent der deutschen Gesamtproduktion. Die restliche Produktion verteilt sich auf Rheinland-Pfalz und zu sehr geringen Anteilen auf Bayern, Hamburg, Brandenburg und Mecklenburg-Vorpommern. Das größte deutsche Ölfeld ist Mittelplate/Dieksand im Nationalpark Schleswig-Holsteinisches Wattenmeer, das seit 1987 über eine Bohr- und Förderinsel sowie Bohrungen vom Festland aus erschlossen wird. Auf dieses Ölfeld entfiel 2015 mehr als die Hälfte der deutschen Erdölgesamtfördermenge.
-        </p>
+        <section id="erdoil-wirtschaftliche-bedeutung" style="position: relative;">
+          <h3>Wirtschaftliche Bedeutung</h3>
+          <p>
+            Die aktuelle Förderung von Erdöl in Deutschland beträgt etwas weniger als 3 % des deut- schen Jahresverbrauchs. Der Wert des geförderten Erdöls liegt für 2015 bei etwa 1,4 Mrd. € und damit bei der wirtschaftlichen Bedeutung hinter Erdgas und Braunkohle an dritter Stelle der in Deutschland geförderten fossilen Energierohstoffe und an fünfter Stelle aller in Deutschland geförderten Rohstoffe. Im internationalen Vergleich der Erdöl produzierenden Länder lag Deutschland 2014 auf dem 58. Platz (1970: 26. Platz). 2014 waren im deutschen Erdöl- und Erdgasbereich 4.022 Mitarbeiter/innen beschäftigt.
+          </p>
+        </section>
+        <section id="erdoil-gewinnung" style="position: relative;">
+          <h3>Gewinnung</h3>
+          <p>
+            2014 gibt es in Deutschland 50 Ölfelder, auf den aktiv durch rund 1000 Fördersonden in Bohranlagen (onshore) bzw. auf Förderplattformen (offshore) Erdöl gefördert wird. Die Ölfelder Schleswig-Holsteins und Niedersachsens produzierten 2015 zusammen fast 90 Prozent der deutschen Gesamtproduktion. Die restliche Produktion verteilt sich auf Rheinland-Pfalz und zu sehr geringen Anteilen auf Bayern, Hamburg, Brandenburg und Mecklenburg-Vorpommern. Das größte deutsche Ölfeld ist Mittelplate/Dieksand im Nationalpark Schleswig-Holsteinisches Wattenmeer, das seit 1987 über eine Bohr- und Förderinsel sowie Bohrungen vom Festland aus erschlossen wird. Auf dieses Ölfeld entfiel 2015 mehr als die Hälfte der deutschen Erdölgesamtfördermenge.
+          </p>
+        </section>
         <p>
           Erd&ouml;l ist ein fossiler Energietr&auml;ger und dient v.a. als
           <a href="https://de.wikipedia.org/wiki/Kraftstoff">Treibstoff</a>

@@ -1,12 +1,14 @@
 title: D-EITI
 
 description: >
-    USEITI is part of an international effort to promote open and accountable
-    management of natural resources. This site provides data about how the U.S.
-    manages extractive industries.
+  auf rohstofftransparenz.de, dem Informationsportal der deutschen Initiative für
+  Transparenz im rohstoffgewinnenden Sektor (D-EITI).
+  Eine verständliche Darstellung von Themen und mehr Transparenz im rohstoffgewinnenden
+  Sektor ist das gemeinsame Ziel der D-EITI-Initiative und ihren Mitgliedern aus
+  Regierung, Wirtschaft und Zivilgesellschaft.
 
 # permanent url, for use in meta references
-url: https://useiti.doi.gov
+url:  http://www.rohstofftransparenz.de
 
 # app version number
 version: v1.3.3

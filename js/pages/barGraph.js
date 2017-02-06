@@ -55,17 +55,17 @@ $(document).ready(function(){
         },
         seriesColors: colorsData,
         grid: {
-            background: '#fff',
+            background: '#d2dce6'
         },
         axes: {
             yaxis: {
                 renderer: $.jqplot.CategoryAxisRenderer,
-                autoscale: false
-            },
-            xaxis: {
-              tickOptions:{
+                autoscale: false,
+                tickOptions:{
                 showGridline: false
               },
+            },
+            xaxis: {
               ticks: ticks,
               autoscale : false
             }

@@ -30,6 +30,8 @@ nav_items:
         title: Wirtschaftliche Bedeutung
       - name: erdgas-gewinnung
         title: Gewinnung
+      - name: erdgas-verwendung
+        title: Verwendung
 ---
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -153,14 +155,18 @@ nav_items:
             Im Vergleich der Erdgasförderländer weltweit lag Deutschland auf dem 42. Platz und hatte einen Anteil von 0,3% an der weltweiten Gasfördermenge. Im Vergleich mit den weiteren in Deutschland geförderten Rohstoffen kommt dem Erdgas eine relativ große wirtschaftliche Bedeutung zu. Der Wert des geförderten Erdgases betrug 2014 2,8 Mrd. Euro. Trotz einer rückläufigen Fördermenge ist damit Erdgas vor der Braunkohle und Bausanden/Kiesen der wirtschaftlich bedeutendste geförderte Rohstoff in Deutschland. Ein Fünftel des Gesamtwertes der in Deutschland geförderten Rohstoffe entfällt auf den Rohstoff Erdgas. 2014 waren im Erdöl- und Erdgasbereich 4022  Mitarbeiter/innen beschäftigt.
           </p>
         </section>
-        <h3>Gewinnung</h3>
-        <p>
-        95% des deutschen Erdgases wurden 2015 in Niedersachsen gefördert. Andere Bundesländer (Sachsen-Anhalt, Schleswig-Holstein, Thüringen und Bayern) tragen nur marginal zur Gesamtfördermenge bei. Gefördert wird das Erdgas auf 77 Gasfeldern über 476 Fördersonden. Das Gasfeld A6/B4 im sogenannten Entenschnabel der ausschließlichen Wirtschaftszone Deutschlands in der deutschen Bucht (Nordsee) ist dabei das einzige Offshore Gasfeld. Wie Erdöl tritt Erdgas in unterirdischen Lagerstätten auf. Vergleichbar zum Erdöl erfolgt die Exploration von Erdgas durch seismische Untersuchungen und Erkundungsbohrungen. Hierbei werden Erdgasfelder gefunden und festgestellt, ob die gefundene Lagerstätte technisch für eine wirtschaftliche Förderung geeignet ist. Anschließend erfolgt die Förderung über ein mit Zement und Stahl stabilisiertes Bohrloch in das ein Steigrohr eingebracht wird (Sonde).
-        </p>
-        <h3>Verwendung</h3>
-        <p>
-          Als fossiler Energieträger wird Erdgas hauptsächlich für die Beheizung von Wohn- und Gewerberäumen, als Wärmelieferant für thermische Prozesse in Gewerbe und Industrie (z. B. in Großbäckereien, Ziegeleien, Zementwerken, Gießereien und Metallhütten), zur elektrischen Stromerzeugung sowie als Treibstoff für Schiffe und Kraftfahrzeuge verwendet. Hinzu treten mengenmäßig bedeutsame Anwendungen als Reaktionspartner in chemischen Prozessen, wie beispielsweise der Ammoniaksynthese im Haber-Bosch-Verfahren (Stickstoffdüngemittel), der Eisenerzreduktion im Hochofenprozess oder der Herstellung von Wasserstoff.
-        </p>
+        <section id="erdgas-gewinnung" style="position: relative;">
+          <h3>Gewinnung</h3>
+          <p>
+          95% des deutschen Erdgases wurden 2015 in Niedersachsen gefördert. Andere Bundesländer (Sachsen-Anhalt, Schleswig-Holstein, Thüringen und Bayern) tragen nur marginal zur Gesamtfördermenge bei. Gefördert wird das Erdgas auf 77 Gasfeldern über 476 Fördersonden. Das Gasfeld A6/B4 im sogenannten Entenschnabel der ausschließlichen Wirtschaftszone Deutschlands in der deutschen Bucht (Nordsee) ist dabei das einzige Offshore Gasfeld. Wie Erdöl tritt Erdgas in unterirdischen Lagerstätten auf. Vergleichbar zum Erdöl erfolgt die Exploration von Erdgas durch seismische Untersuchungen und Erkundungsbohrungen. Hierbei werden Erdgasfelder gefunden und festgestellt, ob die gefundene Lagerstätte technisch für eine wirtschaftliche Förderung geeignet ist. Anschließend erfolgt die Förderung über ein mit Zement und Stahl stabilisiertes Bohrloch in das ein Steigrohr eingebracht wird (Sonde).
+          </p>
+        </section>
+        <section id="erdgas-verwendung" style="position: relative;">
+          <h3>Verwendung</h3>
+          <p>
+            Als fossiler Energieträger wird Erdgas hauptsächlich für die Beheizung von Wohn- und Gewerberäumen, als Wärmelieferant für thermische Prozesse in Gewerbe und Industrie (z. B. in Großbäckereien, Ziegeleien, Zementwerken, Gießereien und Metallhütten), zur elektrischen Stromerzeugung sowie als Treibstoff für Schiffe und Kraftfahrzeuge verwendet. Hinzu treten mengenmäßig bedeutsame Anwendungen als Reaktionspartner in chemischen Prozessen, wie beispielsweise der Ammoniaksynthese im Haber-Bosch-Verfahren (Stickstoffdüngemittel), der Eisenerzreduktion im Hochofenprozess oder der Herstellung von Wasserstoff.
+          </p>
+        </section>
       </section>
     </div>
 

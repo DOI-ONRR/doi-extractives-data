@@ -6,6 +6,8 @@ breadcrumb:
   - title: Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
+  - name: title
+    title: Seitenanfang
   - name: fakten_zu_salze
     title: Wissenswertes über Salze
   - name: geschichte

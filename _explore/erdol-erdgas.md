@@ -12,7 +12,7 @@ nav_items:
     title: Erdöl
     subnav_items:
       - name: fakten_zu_oil
-        title: 5 Fakten zu Erdöl
+        title: Wissenswertes über Erdöl
       - name: erdol-geschichte
         title: Geschichte
       - name: erdol-wirtschaftliche-bedeutung
@@ -23,7 +23,7 @@ nav_items:
     title: Erdgas
     subnav_items:
       - name: fakten_zu_gas
-        title: 5 Fakten zu Erdgas
+        title: Wissenswertes über Erdgas
       - name: erdgas-geschichte
         title: Geschichte
       - name: erdgas-wirtschaftliche-bedeutung

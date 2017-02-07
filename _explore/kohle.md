@@ -6,13 +6,13 @@ breadcrumb:
   - title: Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
-  - name: intro
+  - name: title
     title: Seitenanfang
   - name: steinkohle
     title: Steinkohle
     subnav_items:
       - name: fakten_zu_steinkohle
-        title: 5 Fakten zu Steinkohle
+        title: Wissenswertes über Steinkohle
       - name: steinkohle-geschichte
         title: Geschichte
       - name: steinkohle-ausblick
@@ -23,7 +23,7 @@ nav_items:
     title: Braunkohle
     subnav_items:
       - name: fakten_zu_braunkohle
-        title: 5 Fakten zu Braunkohle
+        title: Wissenswertes über Braunkohle
       - name: braunkohle-geschichte
         title: Geschichte
       - name: braunkohle-gewinnung

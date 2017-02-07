@@ -25,6 +25,7 @@ nav_items:
         </p>
       </section>
       <section id="rechtliche-stellungl" style="position: relative;">
+        <img class="hero-right_image" src="{{ site.baseurl_root }}/img/placeholder_behoerden.png" alt="Explore landing intro">
         <h2>Rechtliche Regelung</h2>
         <p>Hinsichtlich ihrer rechtlichen Regelung werden in Deutschland drei Gruppen von Rohstoffen  unterschieden:</p>
         <ul>

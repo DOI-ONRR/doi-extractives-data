@@ -37,6 +37,7 @@ nav_items:
         </p>
       </section>
       <section>
+        <img class="hero-right_image" src="{{ site.baseurl_root }}/img/placeholder_genehmigung.png" alt="Explore landing intro">
         <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/bergbauberechtigungen/" >
         Bergbauberechtigungen</a>
         <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/zulassung/">Zulassung</a>

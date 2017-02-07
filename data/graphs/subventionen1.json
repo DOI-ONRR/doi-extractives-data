@@ -1,0 +1,44 @@
+[{
+	"title": "Subventionen im deutschen Steinkohlebergbau 2016",
+	"title_en": "Subventionen im deutschen Steinkohlebergbau 2016",
+	"data": [
+		[
+			[1282 , 2016]
+		],
+		[
+			[113.2, 2016]
+		]
+	],
+	"color": ["#28467a", "#4682be"],
+	"labels": ["Zuschüsse für den Absatz deutscher Steinkohle (Bund)", "Anpassungsbeihilfen (Bund)"],
+	"xAxis": [0, 200, 400, 600, 800, 1000, 1200, 1400]
+}, {
+	"title": "Zuschüsse für den Absatz deutscher Steinkohle 2013-16 (Anteil Bund)",
+	"title_en": "Grants for the sale of German hard coal 2013-16 (Share of Confederation)",
+	"data": [
+		[
+			[1282, 2016],
+      [1084.8, 2015],
+      [1168.7, 2014],
+			[1082, 2013]
+		]
+	],
+	"color": ["#4682be"],
+	"labels": ["Zuschüsse für den Absatz deutscher Steinkohle (Bund)"],
+	"xAxis": [0, 200, 400, 600, 800, 1000, 1200, 1400]
+},
+{
+	"title": "Anpassungsgeld 2013-16  (Anteil Bund)",
+	"title_en": "Anpassungsgeld 2013-16  (Anteil Bund) EN",
+	"data": [
+		[
+			[113.2, 2016],
+      [116, 2015],
+      [116.6, 2014],
+			[114.9, 2013]
+		]
+	],
+	"color": ["#4682be"],
+	"labels": ["Anpassungsbeihilfen (Bund)"],
+	"xAxis": [0, 20, 40, 60, 80, 100, 120, 140]
+}]

@@ -6,7 +6,7 @@ breadcrumb:
   - title: Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
-  - name: intro
+  - name: title
     title: Seitenanfang
   - name: rechtliche-stellungl
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland

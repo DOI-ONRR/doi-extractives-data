@@ -8,8 +8,6 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
-  - name: intro
-    title: Intro
   - name: hintergrundseite-bergbauberechtigungen
     title: "Hintergrundseite: Bergbauberechtigungen"
     subnav_items:

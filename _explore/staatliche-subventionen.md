@@ -38,7 +38,7 @@ nav_items:
           </div>
         </div>
       </div>
-      <h2>Zuschüsse für den Absatz der Steinkohle</h2>
+      <h2 class="margin-class">Zuschüsse für den Absatz der Steinkohle</h2>
       <p>
         Der deutsche Steinkohlenbergbau ist – insbesondere aufgrund der geologisch bedingten hohen Förderkosten – nicht wettbewerbsfähig. Daher wurde 2007 zwischen dem Bund, den steinkohleproduzierenden Bundesländern Nordrhein-Westfalen und Saarland, der RAG AG und der Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE) eine Einigung darüber erzielt, dass der subventionierte Steinkohlenbergbau bis zum Jahre 2018 sozialverträglich beendet wird. Grundlage hierfür sind das Steinkohlefinanzierungsgesetz vom 20.12.2007 sowie eine Rahmenvereinbarung zwischen Bund, Revierländern, dem Bergbauunternehmen RAG AG und der IGBCE. Die öffentliche Hand gewährt zeitlich begrenzte Hilfen zur Förderung des Absatzes (Ausgleich der Differenz zwischen heimischen Förderkosten und Weltmarktpreis). Auch mit Blick auf Klimaschutz und Ressourcenschonung werden die Subventionen zurückgeführt und im Endergebnis vollständig abgebaut.
       </p>
@@ -64,7 +64,7 @@ nav_items:
           </div>
         </div>
       </div>
-      <h2>Anpassungsgeld</h2>
+      <h2 class="margin-class">Anpassungsgeld</h2>
       <p>
         Arbeitnehmer/innen, die mindestens 50 Jahre (Untertage-Beschäftigte) bzw. 57 Jahre (Übertage-Beschäftigte) alt sind und die aus Anlass einer Stilllegungs- oder Rationalisierungsmaßnahme vor dem 1. Januar 2023 ihren Arbeitsplatz verlieren, erhalten für maximal fünf Jahre Anpassungsgeld als Überbrückungshilfe bis zur Anspruchsberechtigung auf eine Leistung der Rentenversicherung. Die Anpassungshilfe spiegelt die soziale Verantwortung von Bund und den steinkohleproduzierenden Bundesländern wieder. Im Jahr 2016 wurden durch den Bund Anpassungshilfen in Höhe von 113,2 Mio. Euro gewährt.
       </p>

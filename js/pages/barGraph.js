@@ -30,33 +30,36 @@ $(document).ready(function(){
 
   function renderChart(jsondata, number) {
 
-    console.log(number);
     jsonData = jsondata.data;
     category = jsondata.categories;
     title = jsonData.title;
     ticks= jsondata.xAxis;
     labels= jsondata.labels;
     var colors = jsondata.color;
-    console.log(colors);
     var chartTitle = isEn ? jsondata.title_en : jsondata.title;
-
-    plotGraph('chart'+(number+1),jsonData, chartTitle, colors, ticks, labels);
+    plotGraph('chart'+(number+1),jsonData, jsondata, chartTitle, colors, ticks, labels);
   }
 
-  function plotGraph(chart, data, chartTitle, colorsData, ticks, labels) {
+  function plotGraph(chart, data, jsondata, chartTitle, colorsData, ticks, labels) {
+    $('#'+chart).height(((jsondata.data.length < 2) ? 2:jsondata.data.length) * ((jsondata.data[0].length < 2) ? 2:jsondata.data[0].length) * 40);
     plot2b = $.jqplot(chart, data, {
         seriesDefaults: {
             renderer:$.jqplot.BarRenderer,
             pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
             shadowAngle: 135,
             rendererOptions: {
-                barDirection: 'horizontal'
+                barDirection: 'horizontal',
+                barMargin: 2,
+                barWidth: 15
             }
         },
         seriesColors: colorsData,
         grid: {
-            background: '#d2dce6'
-        },
+            borderColor: 'white',
+            shadow: false,
+            drawBorder: true,
+            background: '#d2dce6',
+          },
         axes: {
             yaxis: {
                 renderer: $.jqplot.CategoryAxisRenderer,
@@ -72,11 +75,12 @@ $(document).ready(function(){
         },
         legend:{
           show: true,
-          location:'e',
+          location:'s',
           placement: 'outside',
           labels: labels
         },
         title: chartTitle
     });
+    $(".jqplot-xaxis-tick").last().text('Mio. €');
   }
 });

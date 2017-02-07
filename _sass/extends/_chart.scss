@@ -2,6 +2,18 @@
   width: 650px;
 }
 
+table.jqplot-table-legend {
+  margin-top: 45px !important;
+  border: none !important;
+  td {
+    border: none !important;
+  }
+}
+
+.margin-class {
+    margin-top: 70px;
+}
+
 .chart-container {
   position: relative;
   margin-bottom: 30px;
@@ -32,6 +44,11 @@
 .jqplot-data-label {
   color: black,
 }
+
+.jqplot-point-label {
+  left: 650px !important;
+}
+
 @media only screen and (max-width: 480px) {
   .graph {
     width: 100%;

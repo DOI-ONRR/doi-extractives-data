@@ -30,54 +30,18 @@ nav_items:
     <div class="container-left-9">
       <section id="intro" style="position: relative;">
         <p>
-        Die Genehmigung von Bergbauvorhaben fällt vornehmlich in die Zuständigkeit der Bergbehörden der Länder und unterscheidet sich je nach Rohstoff.<br />
-        Die Verfahren zur Zulassung und Aufsicht von Bergbauvorhaben sind in Deutschland nicht für alle Bodenschätze gleich geregelt, sondern je nach Rohstoffart und deren rechtliche Verankerung in Bund und Ländern unterschiedlich.
+          Die Verfahren zur Zulas­sung und Aufsicht von Bergbauvorhaben sind in Deutschland nicht für alle Bodenschätze gleich geregelt. Sie variieren je nach Rohstoffart und deren rechtlicher Verankerung in Bund und Ländern.
         </p>
-        <br /><br />
         <p>
-          Grafisch darstellen: <strong>Schaubild:</strong> Schritte zur Genehmigung bergbaulicher Vorhaben nach BBergG
+          Schritte zur Genehmigung bergbaulicher Vorhaben für bergfreie und grundeigene Bodenschätze
         </p>
-        <br /><br />
-        <p>Strang 1: Bergfreie Bodenschätze</p>
-        <p>
-          Für das <strong>Aufsuchen (auch Exploration genannt) und die Gewinnung bergfreier Bodenschätze bedarf es eines zweistufigen (Genehmigungs-)Verfahrens:</strong> :
-        </p>
-          <ul>
-            <ol>
-              <li>
-                In einem ersten Schritt benötigt man eine vom Staat erteilte <u>Bergbauberechtigung</u> (für das Aufsuchen eine sogenannte „Erlaubnis“ und für die Gewinnung eine sogenannte „Bewilligung“ oder das „Bergwerkseigentum“).
-              </li>
-              <li>
-                Darauf aufbauend muss in einem zweiten Schritt der Betriebsplan zugelassen werden (Betriebsplanverfahren).
-              </li>
-            </ol>
-          </ul>
-        <p>
-          Eine Bergbauberechtigung gewährt das eigentumsähnliche Recht zur Aufsuchung und Gewinnung von bergfreien  Bodenschätzen, während eine betriebsbezogene Genehmigung bestimmt, unter welchen technischen und umweltrechtlichen Voraussetzungen dieses Recht ausgeübt werden darf.
-        </p>
-        <br /><br />
-        <p>Strang 2: grundeigene Bodenschätze</p>
-        <p>
-          Bei den <strong>grundeigenen Bodenschätzen</strong> genügt der Nachweis, dass sich das Grundstück im Besitz des/r Antragsteller/in befindet (z.B. durch Pachtvertrag) und die <u>Zulassung des Betriebsplans</u>.
-        </p>
-        <br /><br />
-        <p>Strang 3: Grundeigentümerbodenschätze</p>
-        <p>
-          Die Aufsuchung und der Abbau von Grundeigentümerbodenschätzen sind nicht im Bundesberggesetz geregelt. Für den Abbau dieser Rohstoffe – meist sogenannte Massenrohstoffe aus dem Steine und Erden Sektor – finden Genehmigungsverfahren nach dem
-          <span class="term term_end" data-term="bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
-            Bundesimmissionsschutzgesetz
-            <icon class="icon-book"></icon>
-          </span>,
-          den <u>landesrechtlichen Abgrabungsgesetzen</u>, dem <u>Baurecht</u>, oder dem
-          <span class="term" data-term="wasserhaushaltsgesetz" title="Click to define" tabindex="0">
-            Wasserhaushaltsgesetz
-            <icon class="icon-book"></icon>
-          </span>
-          (bei Nassabbau) statt.
-        </p>
-        <br /><br />
       </section>
-      <section id="hintergrundseite-bergbauberechtigungen" style="position: relative;">
+      <section>
+        <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/bergbauberechtigungen/" >
+        Bergbauberechtigungen</a>
+        <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/zulassung/">Zulassung</a>
+      </section>
+      <!-- <section id="hintergrundseite-bergbauberechtigungen" style="position: relative;">
         <h2>Hintergrundseite: Bergbauberechtigungen</h2>
         <p>
           Bergbauberechtigungen stellen die Grundlage für das Aufsuchen und die Gewinnung von bergfreien Bodenschätzen dar. Sie werden in Form einer Erlaubnis, einer Bewilligung oder eines Bergwerkseigentums beantragt.
@@ -263,7 +227,7 @@ nav_items:
           Laut Bundesberggesetz dürfen die Aufsichtsbeamtinnen und Aufsichtsbeamten die Betriebe betreten, Auskünfte verlangen, Einrichtungen besichtigen und Prüfungen vornehmen sowie in Einzelfällen auch Anordnungen treffen. Für die Bergbauunternehmer/innen bestehen u.a. Verpflichtungen zur Meldung von Ereignissen und Unfällen, zur Duldung der Bergaufsicht und zur Begleitung der Aufsichtsbeamtinnen und Aufsichtsbeamten bei Fahrten durch die Betriebsstätte (Befahrungen).
         </p>
         <br /><br />
-      </section>
+      </section> -->
     </div>
     <div class="sticky sticky_nav container-right-3">
       <h3 class="state-page-nav-title container">

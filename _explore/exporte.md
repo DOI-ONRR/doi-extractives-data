@@ -36,7 +36,7 @@ nav_items:
           </div>
         </div>
         <br />
-        <div class="explore-exploration slab-alpha">
+        <div class="explore-exploration slab-alpha" style="margin-top: 110px !important">
           <div class="regions container">
             <div class="graph">
               <div class="container chart-container">

@@ -9,6 +9,8 @@ $(document).ready(function(){
 
   if (document.URL.includes('/explore/exporte/')) {
     jsonFilePath = "../../data/graphs/exporte.json";
+  } else if (document.URL.includes('/explore/staatliche-subventionen/')) {
+    jsonFilePath = "../../data/graphs/subventionen1.json";
   }
 
   $.ajax({
@@ -33,45 +35,53 @@ $(document).ready(function(){
     title = jsonData.title;
     ticks= jsondata.xAxis;
     labels= jsondata.labels;
-    var colors = jsondata.colors;
+    var colors = jsondata.color;
     var chartTitle = isEn ? jsondata.title_en : jsondata.title;
-
-    plotGraph(jsonData, chartTitle, colors, ticks, labels);
+    plotGraph('chart'+(number+1),jsonData, jsondata, chartTitle, colors, ticks, labels);
   }
 
-  function plotGraph(data, chartTitle, colorsData, ticks, labels) {
-    plot2b = $.jqplot('chart1', data, {
+  function plotGraph(chart, data, jsondata, chartTitle, colorsData, ticks, labels) {
+    $('#'+chart).height(((jsondata.data.length < 2) ? 2:jsondata.data.length) * ((jsondata.data[0].length < 2) ? 2:jsondata.data[0].length) * 40);
+    plot2b = $.jqplot(chart, data, {
+        animate: !$.jqplot.use_excanvas,
         seriesDefaults: {
             renderer:$.jqplot.BarRenderer,
             pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
             shadowAngle: 135,
             rendererOptions: {
-                barDirection: 'horizontal'
+                barDirection: 'horizontal',
+                barMargin: 2,
+                barWidth: 15
             }
         },
         seriesColors: colorsData,
         grid: {
-            background: '#fff',
-        },
+            borderColor: 'white',
+            shadow: false,
+            drawBorder: true,
+            background: '#d2dce6',
+          },
         axes: {
             yaxis: {
                 renderer: $.jqplot.CategoryAxisRenderer,
-                autoscale: false
-            },
-            xaxis: {
-              tickOptions:{
+                autoscale: false,
+                tickOptions:{
                 showGridline: false
               },
+            },
+            xaxis: {
               ticks: ticks,
               autoscale : false
             }
         },
         legend:{
           show: true,
-          location:'e',
+          location:'s',
+          placement: 'outside',
           labels: labels
         },
         title: chartTitle
     });
+    $(".jqplot-xaxis-tick").last().text('Mio. €');
   }
 });

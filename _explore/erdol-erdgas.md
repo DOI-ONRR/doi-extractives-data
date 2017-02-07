@@ -6,7 +6,7 @@ breadcrumb:
   - title: Rohstoffgewinnung
     permalink: /explore/how-it-work/
 nav_items:
-  - name: intro
+  - name: title
     title: Seitenanfang
   - name: erdol
     title: Erdöl

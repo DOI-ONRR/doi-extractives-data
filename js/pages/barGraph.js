@@ -43,6 +43,7 @@ $(document).ready(function(){
   function plotGraph(chart, data, jsondata, chartTitle, colorsData, ticks, labels) {
     $('#'+chart).height(((jsondata.data.length < 2) ? 2:jsondata.data.length) * ((jsondata.data[0].length < 2) ? 2:jsondata.data[0].length) * 40);
     plot2b = $.jqplot(chart, data, {
+        animate: !$.jqplot.use_excanvas,
         seriesDefaults: {
             renderer:$.jqplot.BarRenderer,
             pointLabels: { show: true, location: 'e', edgeTolerance: -15 },

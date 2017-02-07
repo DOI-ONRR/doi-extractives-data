@@ -10,6 +10,8 @@ nav_items:
     title: Seitenanfang
   - name: tabelle-1
     title: "Tabelle: Beschäftigung"
+  - name: daten-einsehen
+    title: "Daten einsehen"
 ---
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
@@ -36,9 +38,9 @@ nav_items:
             </div>
           </div>
         </div>
-        <section style="position: relative;">
+        <section id="tabelle-1" style="position: relative;">
         <p><strong>Tabelle:</strong> Beschäftigte</p>
-          <table id="tabelle-1">
+          <table>
             <tbody>
               <tr>
                 <td></td>
@@ -162,10 +164,12 @@ nav_items:
           </table>
           <br /><br />
         </section>
-        <h3>Daten einsehen:</h3>
-        <p>
-          Die Daten zu den Beschäftigten werden der jährlich erscheinenden Publikation „Der Bergbau in der Bundesrepublik Deutschland“ des Bundesministeriums für Wirtschaft und BMWi entnommen <a href="http://www.bmwi.de/Redaktion/DE/Publikationen/Energie/Bergbaustatistiken/bergbau-in-der-brd-bergwirtschaft-statistik-2015.pdf?__blob=publicationFile&v=7"> (PDF und EXCEL)</a>. Zur Berechnung des prozentualen Anteils der Beschäftigten wurde auf die Gesamtzahl der Erwerbstätigen der Arbeitsmarktstatistik des Statistischen Jahrbuches des Statistischen Bundesamtes zurückgegriffen <a href="https://www.destatis.de/DE/Publikationen/StatistischesJahrbuch/Arbeitsmarkt.pdf?__blob=publicationFile">(PDF)</a>.
-        </p>
+        <section id="daten-einsehen" style="position: relative;">
+          <h3>Daten einsehen:</h3>
+          <p>
+            Die Daten zu den Beschäftigten werden der jährlich erscheinenden Publikation „Der Bergbau in der Bundesrepublik Deutschland“ des Bundesministeriums für Wirtschaft und BMWi entnommen <a href="http://www.bmwi.de/Redaktion/DE/Publikationen/Energie/Bergbaustatistiken/bergbau-in-der-brd-bergwirtschaft-statistik-2015.pdf?__blob=publicationFile&v=7"> (PDF und EXCEL)</a>. Zur Berechnung des prozentualen Anteils der Beschäftigten wurde auf die Gesamtzahl der Erwerbstätigen der Arbeitsmarktstatistik des Statistischen Jahrbuches des Statistischen Bundesamtes zurückgegriffen <a href="https://www.destatis.de/DE/Publikationen/StatistischesJahrbuch/Arbeitsmarkt.pdf?__blob=publicationFile">(PDF)</a>.
+          </p>
+        </section>
       </section>
     </div>
     <div class="sticky sticky_nav container-right-3">

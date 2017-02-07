@@ -7,6 +7,10 @@ breadcrumb:
 nav_items:
   - name: intro
     title: Seitenanfang
+  - name: bip
+    title: "BIP: Wie groß ist der deutsche Rohstoffsektor?"
+  - name: daten
+    title: Daten einsehen
 ---
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
@@ -19,18 +23,18 @@ nav_items:
     <h1 id="intro">Beitrag zum BIP</h1>
 
     <div class="container-left-9">
-      <section>
+      <section id="bip" style="position: relative;">
         <h3>BIP:  Wie groß ist der deutsche Rohstoffsektor?</h3>
         <p>
           Mit einem Bruttoinlandsprodukti von rund 3.032,82 Milliarden Euro im Jahr 2015 ist Deutschland die größte Volkswirtschaft Europas und die viertgrößte der Welt. Die Bruttowertschöpfungii des Wirtschaftszweigs „Bergbau und Gewinnung von Steinen und Erden“ betrug im Jahr 2015 4,16 Milliarden Euro, was einem Anteil von <b>0,14%</b> am BIP entspricht.
         </p>
+      </section>
+      <section id="daten" style="position: relative;">
         <h3>Daten einsehen:</h3>
         <p>
           Die Daten werden der aktuellen Volkswirtschaftlichen Gesamtrechnung des statistischen Bundesamtes entnommen (<a href="https://www.destatis.de/DE/Publikationen/Thematisch/VolkswirtschaftlicheGesamtrechnungen/Inlandsprodukt/InlandsproduktsberechnungEndgueltigPDF_2180140.pdf?__blob=publicationFile">PDF</a> und
           <a href="https://www.destatis.de/DE/Publikationen/Thematisch/VolkswirtschaftlicheGesamtrechnungen/Inlandsprodukt/InlandsproduktsberechnungEndgueltigXLS_2180140.xlsx?__blob=publicationFile"> EXCEL</a>).Der Wirtschaftszweig „Bergbau und Gewinnung von Steinen und Erden“ umfasst die Gewinnung natürlich vorkommender fester (wie Kohle, Salz und Erze), flüssiger (Erdöl) und gasförmiger (Erdgas) mineralischer Rohstoffe.  Eine detaillierte Auflistung findet sich in der <a href="https://www.destatis.de/DE/Publikationen/Verzeichnis/KlassifikationWZ08_3100100089004.pdf;jsessionid=0CEA093B5E7B3662C7D0F71426EA900A.cae3?__blob=publicationFile">„Klassifikation der Wirtschaftszweige“ </a> des statistischen Bundesamts auf Seite 175-185.
         </p>
-      </section>
-      <section style="position: relative;">
         <ul>
           <li>
             <strong>Das Bruttoinlandsprodukt (BIP)</strong> misst den Wert der im Inland hergestellten Waren und Dienstleistungen (Wertschöpfung) in einer bestimmten Periode (Quartal, Jahr). Das statistische Bundesamt <a href="https://www.destatisde/DE/ZahlenFakten/GesamtwirtschaftUmwelt/VGR/Methoden/BIP.html">berechnet </a> das BIP folgendermaßen: Produktionswert  minus Vorleistungen ist gleich die Bruttowertschöpfung; zuzüglich Gütersteuern und abzüglich der Subventionen ergibt das BIP.

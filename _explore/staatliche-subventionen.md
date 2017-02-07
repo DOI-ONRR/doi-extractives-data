@@ -8,6 +8,22 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
+  - name: zuschusse-fur-den-absatz-der-steinkohle
+    title: Zuschüsse für den Absatz der Steinkohle
+    subnav_items:
+      - name: 1-entwicklung
+        title: Etwicklung
+      - name: 1-kontrolle
+        title: Kontrolle
+      - name: 1-vorsorge
+        title: Vorsorge
+  - name: anpassungsgeld
+    title: Anpassungsgeld
+    subnav_items:
+      - name: 2-beschaftigte
+        title: Beschäftigte
+      - name: 2-kontrolle
+        title: Kontrolle
 ---
 
 <main class="container-page-wrapper layout-state-pages">
@@ -38,19 +54,19 @@ nav_items:
           </div>
         </div>
       </div>
-      <h2 class="margin-class">Zuschüsse für den Absatz der Steinkohle</h2>
+      <h2 id="zuschusse-fur-den-absatz-der-steinkohle" class="margin-class">Zuschüsse für den Absatz der Steinkohle</h2>
       <p>
         Der deutsche Steinkohlenbergbau ist – insbesondere aufgrund der geologisch bedingten hohen Förderkosten – nicht wettbewerbsfähig. Daher wurde 2007 zwischen dem Bund, den steinkohleproduzierenden Bundesländern Nordrhein-Westfalen und Saarland, der RAG AG und der Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE) eine Einigung darüber erzielt, dass der subventionierte Steinkohlenbergbau bis zum Jahre 2018 sozialverträglich beendet wird. Grundlage hierfür sind das Steinkohlefinanzierungsgesetz vom 20.12.2007 sowie eine Rahmenvereinbarung zwischen Bund, Revierländern, dem Bergbauunternehmen RAG AG und der IGBCE. Die öffentliche Hand gewährt zeitlich begrenzte Hilfen zur Förderung des Absatzes (Ausgleich der Differenz zwischen heimischen Förderkosten und Weltmarktpreis). Auch mit Blick auf Klimaschutz und Ressourcenschonung werden die Subventionen zurückgeführt und im Endergebnis vollständig abgebaut.
       </p>
-      <h3>Entwicklung</h3>
+      <h3 id="1-entwicklung">Entwicklung</h3>
       <p>
         Im Jahr 2016 belief sich die Höhe der geleisteten Absatzbeihilfen des Bundes auf 1.282 Millionen Euro. Weitere Zuschüsse gewährte das Land Nordrhein-Westfalen. Die dem Steinkohlenbergbau zugesagten Hilfen sind degressiv gestaltet. Von 1998 bis 2005 haben sich die Bundeshilfen etwa halbiert und von 2006 bis 2014 noch einmal um 25 % reduziert. Abweichungen vom rückläufigen Trend der Subvention sind u.a. in schwankenden Weltmarktpreisen für Steinkohle begründet.
       </p>
-      <h3>Kontrolle</h3>
+      <h3 id="1-kontrolle">Kontrolle</h3>
       <p>
         Die Subventionierung des deutschen Steinkohlebergbaus ist im Rahmen der EU genehmigungspflichtig und wurde von der EU-Kommission geprüft und genehmigt. Zudem werden die bereitgestellten Beihilfen hinsichtlich ihrer zweckentsprechenden Verwendung durch das Bundesamt für Wirtschaft und Ausfuhrkontrolle in Zusammenarbeit mit Wirtschaftsprüfer/innen jährlich überprüft.
       </p>
-      <h3>Vorsorge</h3>
+      <h3 id="1-vorsorge">Vorsorge</h3>
       <p>
         Zur Bewältigung der notwendigen Stilllegungsmaßnahmen wird das ehemalige Beteiligungsvermögen der RAG AG zur Finanzierung der nach der Stilllegung verbleibenden Ewigkeitslasten (Grubenwasserhaltung, Dauerbergschäden, Grundwasserreinigung) durch die privatrechtliche RAG-Stiftung bereit gestellt. Soweit dieses Vermögen zur Deckung der Ewigkeitslasten nicht ausreicht, werden der Bund und die Revierländer im Verhältnis von einem Drittel und zwei Drittel eintreten.
       </p>
@@ -64,16 +80,16 @@ nav_items:
           </div>
         </div>
       </div>
-      <h2 class="margin-class">Anpassungsgeld</h2>
+      <h2 id="anpassungsgeld" class="margin-class">Anpassungsgeld</h2>
       <p>
         Arbeitnehmer/innen, die mindestens 50 Jahre (Untertage-Beschäftigte) bzw. 57 Jahre (Übertage-Beschäftigte) alt sind und die aus Anlass einer Stilllegungs- oder Rationalisierungsmaßnahme vor dem 1. Januar 2023 ihren Arbeitsplatz verlieren, erhalten für maximal fünf Jahre Anpassungsgeld als Überbrückungshilfe bis zur Anspruchsberechtigung auf eine Leistung der Rentenversicherung. Die Anpassungshilfe spiegelt die soziale Verantwortung von Bund und den steinkohleproduzierenden Bundesländern wieder. Im Jahr 2016 wurden durch den Bund Anpassungshilfen in Höhe von 113,2 Mio. Euro gewährt.
       </p>
-      <h3>Beschäftigte</h3>
+      <h3 id="2-beschaftigte">Beschäftigte</h3>
       <p>
         Die Zahl der Beschäftigten entwickelt sich rückläufig. So waren Anfang des Jahres 2008 32.803 Arbeitnehmer/innen im Steinkohlenbergbau beschäftigt. Bis Ende des Jahres 2015 wurde die Beschäftigungszahl sozialverträglich auf 9.640 Arbeitnehmer/innen reduziert. Diesem Trend folgt mit zeitlicher Verzögerung auch die Anzahl der APG-Berechtigten. Da nach den letzten Zechenstilllegungen zum Jahresende 2018 weitere Arbeitnehmer/innen ausscheiden werden und eine sinkende Zahl an Beschäftigten noch nach 2018 für die Stilllegung der Gruben benötigt wird, gelten die derzeit aktuellen APG-Richtlinien noch bis zum Jahre 2027.
       </p>
       </section>
-      <h3>Kontrolle</h3>
+      <h3 id="2-kontrolle">Kontrolle</h3>
       <p>
         Neben der Prüfung der zweckentsprechenden Verwendung der Mittel durch das Bundesamt für Wirtschaft und Ausfuhrkontrolle in Zusammenarbeit mit Wirtschaftsprüfern prüft der Bundesrechnungshof im Rahmen der Haushaltsprüfung des Bundesamtes jährlich stichprobenartig APG-Einzelfälle.
       </p>

@@ -6,8 +6,10 @@ breadcrumb:
   - title: Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
-  - name: intro
+  - name: title
     title: Seitenanfang
+  - name: intro
+    title: Intro
   - name: hintergrundseite-bergbauberechtigungen
     title: "Hintergrundseite: Bergbauberechtigungen"
     subnav_items:

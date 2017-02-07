@@ -21,7 +21,7 @@ nav_items:
     <div class="container-left-9">
       <section>
         <p>
-          stellen die Grundlage für das Aufsuchen und die Gewinnung von bergfreien Bodenschätzen dar. Sie werden in Form einer Erlaubnis, einer Bewilligung oder eines Bergwerkseigentums beantragt.
+          Bergbauberechtigungen stellen die Grundlage für das Aufsuchen und die Gewinnung von bergfreien Bodenschätzen dar. Sie werden in Form einer Erlaubnis, einer Bewilligung oder eines Bergwerkseigentums beantragt.
         </p>
         <p>
           Es werden drei Arten von Bergbauberechtigungen unterschieden:

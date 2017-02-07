@@ -5,8 +5,14 @@ permalink: /genehmigung-von-bergbauprojekten/zulassung/
 nav_items:
   - name: title
     title: Seitenanfang
+  - name: Bergrechtliche Betriebspläne
+    title: Bergrechtliche Betriebspläne
+  - name: Zulassungsvoraussetzungen
+    title: Zulassungsvoraussetzungen
   - name: planfeststellungsverfahren
     title: "Planfeststellungsverfahren"
+  - name: Laufzeit
+    title: "Laufzeit"
 ---
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/css/slick-theme.css"/>
@@ -20,11 +26,11 @@ nav_items:
 
     <div class="container-left-9">
       <section>
-        <h3>Bergrechtliche Betriebspläne</h3>
+        <h3 id="Bergrechtliche Betriebspläne">Bergrechtliche Betriebspläne</h3>
         <p>
           Gemäß BbergG ist die Errichtung, Führung und Einstellung bergbaulicher Betriebsstätten zwecks Aufsuchung, Gewinnung und Aufbereitung von Bodenschätzen nur unter Vorweis entsprechender bergrechtlicher Betriebspläne zulässig. Insgesamt sieht das BbergG fünf Arten des Betriebsplans vor, von denen jedoch lediglich der Hauptbetriebsplan unter allen Umständen verpflichtend ist. Die weiteren sind der Rahmen-, Sonder-, Abschluss- und gemeinschaftliche Betriebsplan. Alle Betriebspläne müssen vom Unternehmer aufgestellt und von der zuständigen Behörde zugelassen werden.
         </p>
-        <h3>Zulassungsvoraussetzungen</h3>
+        <h3 id="Zulassungsvoraussetzungen">Zulassungsvoraussetzungen</h3>
         <p>
           Die Zulassung von Hauptbetriebsplänen ist an Voraussetzungen gebunden. Diese betreffen u.a. die Betriebssicherheit und den Arbeitsschutz, den Schutz der Oberfläche sowie die Vermeidung gemeinschädlicher Einwirkungen, den Schutz der Lagerstätte und die Vorsorgemaßnahmen für die ordnungsgemäße Wiedernutzbarmachung der von der Rohstoffgewinnung in Anspruch genommenen Flächen. Weitere Informationen siehe auch „Umgang mit der Natur“.
         </p>
@@ -53,7 +59,7 @@ nav_items:
         <p>
           Die Durchführung eines Planfeststellungsverfahrens geschieht immer unter Einbeziehung der Öffentlichkeit. Hierzu müssen die Pläne zum Abbau von Bodenschätzen in den betroffenen Gemeinden zur Einsicht ausgelegt und potenzielle Einwände entgegengenommen werden. Im Anschluss werden unter dem Vorsitz der zuständigen Anhörungsbehörde und unter Beteiligung aller involvierten Stellen und Personen einschließlich des Trägers des Vorhabens die eingebrachten Einwänden und diesbezüglichen Stellungnahmen erörtert. Die auf diesem Beteiligungsprozess basierende Entscheidung wird von der zuständigen Behörde (hier den Bergämter) getroffen und als Verwaltungsakt festgesetzt.
         </p>
-        <h3>Laufzeit</h3>
+        <h3 id="Laufzeit">Laufzeit</h3>
         <p>
           Da der Betrieb eines Bergwerks typischerweise mit  Risiken für Beschäftigte und Dritte verbunden ist, soll der Hauptbetriebsplan in der Regel einen Zeitraum von zwei Jahren nicht überschreiten und von der Bergaufsicht zugelassen werden. Es handelt sich um einen Betrieb, der sich örtlich verändert und daher dynamisch ist. Die ständige Abstimmung zwischen Unternehmer und Bergaufsicht soll eine intensive staatliche Kontrolle der Bergbaubetriebe bei gleichzeitiger Flexibilität der Planung gewährleisten.
         </p>

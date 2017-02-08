@@ -186,7 +186,9 @@
     position: relative;
 
     &.ribbon-card-home {
-      padding-top: $base-padding-extra;
+      @include respond-to(tiny-down) {
+        padding-top: $base-padding-extra;
+      }
     }
   }
 
@@ -199,6 +201,10 @@
     &.ribbon-hero-home {
       padding-bottom: $base-padding-jumbo;
       padding-top: $base-padding-extra;
+
+      @include respond-to(tiny-to-medium) {
+        padding-bottom: 0;
+      }
     }
 
     &.ribbon-hero-column {

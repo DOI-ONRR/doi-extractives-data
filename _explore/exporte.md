@@ -49,10 +49,9 @@ nav_items:
             </div>
           </div>
         </div>
-        <h3 id="daten-einsehen">Daten einsehen:</h3>
-        <p>
-          Die Daten zu den deutschen Rohstoffexporten basieren auf Angaben zu den Güterabteilungen (GP09-05 bis GP09-08) des Güterverzeichnisses für Produktionsstatistiken vom Statistischen Bundesamt. Die Daten der Exporte von 2010-2014 wurden der <a href="https://www-genesis.destatis.de/">Genesis-Online-Datenbank </a> von Destatis am 14.12.2016 entnommen. Die Daten für 2015 sind auf der <a href="https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/Aussenhandel/Tabellen/EinfuhrAusfuhrGueterabteilungen.html">Website</a> des Statistischen Bundesamtes abrufbar. (EXCEL)
-        </p>
+        <a href="{{site.baseurl}}/downloads/#exporte">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Daten Einsehen
+        </a>
     </div>
     <div class="sticky sticky_nav container-right-3">
       <h3 class="state-page-nav-title container">

@@ -2,6 +2,9 @@
 title: Zulassung
 layout: default
 permalink: /genehmigung-von-bergbauprojekten/zulassung/
+breadcrumb:
+  - title: Deutscher Rohstoffsektor/Zulassung
+    permalink: /genehmigung-von-bergbauprojekten/zulassung/
 nav_items:
   - name: title
     title: Seitenanfang
@@ -51,10 +54,20 @@ nav_items:
         </ul>
         <h3 id="planfeststellungsverfahren">Planfeststellungsverfahren</h3>
         <p>
-          Unter Umständen sind für die Umsetzung bergbaulicher Vorhaben neben dem eigentlichen Hauptbetriebsplan noch weitere Betriebspläne vorzulegen. So wird beispielsweise für den Fall, dass auf ein bergbauliches Vorhaben bestimmte Kriterien der Verordnung über die Umweltverträglichkeitsprüfung bergbaulicher Vorhaben (UVP-V Bergbau) zutreffen, die Erstellung eines Rahmenbetriebsplans notwendig.
+          Unter Umständen sind für die Umsetzung bergbaulicher Vorhaben neben dem eigentlichen Hauptbetriebsplan noch weitere Betriebspläne vorzulegen. So wird beispielsweise für den Fall, dass auf ein bergbauliches Vorhaben bestimmte Kriterien der Verordnung über die
+          <span class="term term_end" data-term="Umweltverträglichkeitsprüfung" title="Click to define" tabindex="0">
+            Umweltverträglichkeitsprüfung
+            <icon class="icon-book"></icon>
+          </span>
+           bergbaulicher Vorhaben (UVP-V Bergbau) zutreffen, die Erstellung eines Rahmenbetriebsplans notwendig.
         </p>
         <p>
-          Die Zulassung eines solchen Rahmenbetriebsplans erfolgt im Zuge eines erfolgreich abgeschlossenen Planfeststellungsverfahrens. Gegebenenfalls ist hierbei eine Umweltverträglichkeitsprüfungen (UVP) als Teil des Verfahrens durchzuführen. Die Pflicht zur Durchführung von UVPs ergibt sich aus der Verordnung über die Umweltverträglichkeitsprüfung bergbaulicher Vorhaben (UVP-V Bergbau) und dem Gesetz über die Umweltverträglichkeitsprüfung (UVPG). Eine UVP beinhaltet die Ermittlung, Beschreibung und Bewertung der unmittelbaren und mittelbaren Auswirkungen eines Vorhabens auf den Menschen und seiner natürlichen Umwelt sowie Kultur- und sonstige Sachgüter.
+          Die Zulassung eines solchen Rahmenbetriebsplans erfolgt im Zuge eines erfolgreich abgeschlossenen
+          <span class="term term_end" data-term="Planfeststellungsverfahrens" title="Click to define" tabindex="0">
+            Planfeststellungsverfahrens
+            <icon class="icon-book"></icon>
+          </span>
+          . Gegebenenfalls ist hierbei eine Umweltverträglichkeitsprüfungen (UVP) als Teil des Verfahrens durchzuführen. Die Pflicht zur Durchführung von UVPs ergibt sich aus der Verordnung über die Umweltverträglichkeitsprüfung bergbaulicher Vorhaben (UVP-V Bergbau) und dem Gesetz über die Umweltverträglichkeitsprüfung (UVPG). Eine UVP beinhaltet die Ermittlung, Beschreibung und Bewertung der unmittelbaren und mittelbaren Auswirkungen eines Vorhabens auf den Menschen und seiner natürlichen Umwelt sowie Kultur- und sonstige Sachgüter.
         </p>
         <p>
           Die Durchführung eines Planfeststellungsverfahrens geschieht immer unter Einbeziehung der Öffentlichkeit. Hierzu müssen die Pläne zum Abbau von Bodenschätzen in den betroffenen Gemeinden zur Einsicht ausgelegt und potenzielle Einwände entgegengenommen werden. Im Anschluss werden unter dem Vorsitz der zuständigen Anhörungsbehörde und unter Beteiligung aller involvierten Stellen und Personen einschließlich des Trägers des Vorhabens die eingebrachten Einwänden und diesbezüglichen Stellungnahmen erörtert. Die auf diesem Beteiligungsprozess basierende Entscheidung wird von der zuständigen Behörde (hier den Bergämter) getroffen und als Verwaltungsakt festgesetzt.

@@ -8,7 +8,11 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
+  - name: intro
+    title: Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen
   - name: rechtliche-stellungl
+    title: Rechtliche Regelung
+  - name: tabelle-1
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland
 ---
 
@@ -24,9 +28,9 @@ nav_items:
           Die Rohstoffgewinnung wird in Deutschland vor allem durch das Bundesberggesetz (BBergG) geregelt, welches 1982 die alten Berggesetze der Bundesländer sowie zahlreiche bergrechtliche Nebengesetze des Bundes und der Länder abgelöst hat. Die Federführung für das Bergrecht innerhalb der Bundesregierung liegt beim Bundeswirtschaftsministerium. Die Bergbehörden der Bundesländer führen das Gesetz jedoch aus und sind je nach Bodenschatz für die Genehmigung und Aufsicht der bergbaulichen Tätigkeit zuständig. Um den Besonderheiten ihrer Region gerecht zu werden, haben die Bundesländer teils eigene Bergverordnungen verabschiedet.
         </p>
       </section>
-      <section id="rechtliche-stellungl" style="position: relative;">
+      <section style="position: relative;">
         <img class="hero-right_image" src="{{ site.baseurl_root }}/img/placeholder_behoerden.png" alt="Explore landing intro">
-        <h2>Rechtliche Regelung</h2>
+        <h2 id="rechtliche-stellungl">Rechtliche Regelung</h2>
         <p>Hinsichtlich ihrer rechtlichen Regelung werden in Deutschland drei Gruppen von Rohstoffen  unterschieden:</p>
         <ul>
             <li>
@@ -36,13 +40,23 @@ nav_items:
             <strong>Grundeigene Bodenschätze</strong> stehen im Eigentum des Grundeigentümers, wodurch es für das Aufsuchen und die Gewinnung dieser Bodenschätze keine Genehmigung bedarf. Bestimmte grundeigene Bodenschätze fallen jedoch unter das Bergrecht und die Zuständigkeit der Bergaufsicht.
             </li>
             <li>
-            <strong>Grundeigentümerbodenschätze</strong>  sind alle Bodenschätze, die nicht bergfrei oder grundeigen sind und stehen ebenfalls im Eigentum des Grundeigentümers, fallen jedoch nicht unter das Bergrecht und die Bergaufsicht des Bergamtes. Die Genehmigungsverfahren der Grundeigentümerbodenschätze erfolgen vielmehr nach den Vorschriften des Bundesimmissionsschutzgesetzes oder nach landesrechtlichen Bestimmungen (z.B. den Abgrabungsgesetzen, dem Wasser- oder Baurecht).
+            <strong>Grundeigentümerbodenschätze</strong>  sind alle Bodenschätze, die nicht bergfrei oder grundeigen sind und stehen ebenfalls im Eigentum des Grundeigentümers, fallen jedoch nicht unter das Bergrecht und die Bergaufsicht des Bergamtes. Die Genehmigungsverfahren der Grundeigentümerbodenschätze erfolgen vielmehr nach den Vorschriften des
+            <span class="term term_end" data-term="Bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
+              Bundesimmissionsschutzgesetzes
+              <icon class="icon-book"></icon>
+            </span>
+             oder nach landesrechtlichen Bestimmungen (z.B. den
+             <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+               Abgrabungsgesetzen
+               <icon class="icon-book"></icon>
+             </span>
+             , dem Wasser- oder Baurecht).
             </li>
         </ul>
         <p>
           Für die letztgenannte Gruppe der Grundeigentümerbodenschätze sind je nach Bundesland, Rohstoff und Art des Abbaus staatliche Stellen der mittleren und unteren Verwaltungsebene zuständig.
         </p>
-        <h2>Rechtliche Unterteilung der Bodenschätze in Deutschland </h2>
+        <h2 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h2>
         <table>
           <tbody>
             <tr>
@@ -108,7 +122,12 @@ nav_items:
                 <span>§ 3, Abs. 4</span>
               </td>
               <td>
-                Geregelt nach anderen Rechtsgebieten, z.B. Baurecht (Abgrabungsgesetz), Wasserhaushaltsgesetz bzw. Landeswassergesetz, Bundes-Immissionsschutzgesetz, bundes- bzw. Landes-Naturschutzgesetz
+                Geregelt nach anderen Rechtsgebieten, z.B. Baurecht (Abgrabungsgesetz),
+                <span class="term term_end" data-term="Wasserhaushaltsgesetz" title="Click to define" tabindex="0">
+                  Wasserhaushaltsgesetz
+                  <icon class="icon-book"></icon>
+                </span>
+                 bzw. Landeswassergesetz, Bundes-Immissionsschutzgesetz, bundes- bzw. Landes-Naturschutzgesetz
               </td>
             </tr>
           </tbody>

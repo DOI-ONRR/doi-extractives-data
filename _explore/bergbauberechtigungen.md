@@ -2,6 +2,9 @@
 title: Bergbauberechtigungen
 layout: default
 permalink: /genehmigung-von-bergbauprojekten/bergbauberechtigungen/
+breadcrumb:
+  - title: Deutscher Rohstoffsektor/Bergbauberechtigungen
+    permalink: /genehmigung-von-bergbauprojekten/bergbauberechtigungen/
 nav_items:
   - name: title
     title: Seitenanfang

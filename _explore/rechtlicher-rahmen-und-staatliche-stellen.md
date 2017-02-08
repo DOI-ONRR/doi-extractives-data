@@ -40,7 +40,17 @@ nav_items:
             <strong>Grundeigene Bodenschätze</strong> stehen im Eigentum des Grundeigentümers, wodurch es für das Aufsuchen und die Gewinnung dieser Bodenschätze keine Genehmigung bedarf. Bestimmte grundeigene Bodenschätze fallen jedoch unter das Bergrecht und die Zuständigkeit der Bergaufsicht.
             </li>
             <li>
-            <strong>Grundeigentümerbodenschätze</strong>  sind alle Bodenschätze, die nicht bergfrei oder grundeigen sind und stehen ebenfalls im Eigentum des Grundeigentümers, fallen jedoch nicht unter das Bergrecht und die Bergaufsicht des Bergamtes. Die Genehmigungsverfahren der Grundeigentümerbodenschätze erfolgen vielmehr nach den Vorschriften des Bundesimmissionsschutzgesetzes oder nach landesrechtlichen Bestimmungen (z.B. den Abgrabungsgesetzen, dem Wasser- oder Baurecht).
+            <strong>Grundeigentümerbodenschätze</strong>  sind alle Bodenschätze, die nicht bergfrei oder grundeigen sind und stehen ebenfalls im Eigentum des Grundeigentümers, fallen jedoch nicht unter das Bergrecht und die Bergaufsicht des Bergamtes. Die Genehmigungsverfahren der Grundeigentümerbodenschätze erfolgen vielmehr nach den Vorschriften des
+            <span class="term term_end" data-term="Bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
+              Bundesimmissionsschutzgesetzes
+              <icon class="icon-book"></icon>
+            </span>
+             oder nach landesrechtlichen Bestimmungen (z.B. den
+             <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+               Abgrabungsgesetzen
+               <icon class="icon-book"></icon>
+             </span>
+             , dem Wasser- oder Baurecht).
             </li>
         </ul>
         <p>
@@ -112,7 +122,12 @@ nav_items:
                 <span>§ 3, Abs. 4</span>
               </td>
               <td>
-                Geregelt nach anderen Rechtsgebieten, z.B. Baurecht (Abgrabungsgesetz), Wasserhaushaltsgesetz bzw. Landeswassergesetz, Bundes-Immissionsschutzgesetz, bundes- bzw. Landes-Naturschutzgesetz
+                Geregelt nach anderen Rechtsgebieten, z.B. Baurecht (Abgrabungsgesetz),
+                <span class="term term_end" data-term="Wasserhaushaltsgesetz" title="Click to define" tabindex="0">
+                  Wasserhaushaltsgesetz
+                  <icon class="icon-book"></icon>
+                </span>
+                 bzw. Landeswassergesetz, Bundes-Immissionsschutzgesetz, bundes- bzw. Landes-Naturschutzgesetz
               </td>
             </tr>
           </tbody>

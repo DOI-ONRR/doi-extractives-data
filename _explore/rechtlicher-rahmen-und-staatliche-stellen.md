@@ -8,7 +8,11 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
+  - name: intro
+    title: Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen
   - name: rechtliche-stellungl
+    title: Rechtliche Regelung
+  - name: tabelle-1
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland
 ---
 
@@ -24,9 +28,9 @@ nav_items:
           Die Rohstoffgewinnung wird in Deutschland vor allem durch das Bundesberggesetz (BBergG) geregelt, welches 1982 die alten Berggesetze der Bundesländer sowie zahlreiche bergrechtliche Nebengesetze des Bundes und der Länder abgelöst hat. Die Federführung für das Bergrecht innerhalb der Bundesregierung liegt beim Bundeswirtschaftsministerium. Die Bergbehörden der Bundesländer führen das Gesetz jedoch aus und sind je nach Bodenschatz für die Genehmigung und Aufsicht der bergbaulichen Tätigkeit zuständig. Um den Besonderheiten ihrer Region gerecht zu werden, haben die Bundesländer teils eigene Bergverordnungen verabschiedet.
         </p>
       </section>
-      <section id="rechtliche-stellungl" style="position: relative;">
+      <section style="position: relative;">
         <img class="hero-right_image" src="{{ site.baseurl_root }}/img/placeholder_behoerden.png" alt="Explore landing intro">
-        <h2>Rechtliche Regelung</h2>
+        <h2 id="rechtliche-stellungl">Rechtliche Regelung</h2>
         <p>Hinsichtlich ihrer rechtlichen Regelung werden in Deutschland drei Gruppen von Rohstoffen  unterschieden:</p>
         <ul>
             <li>
@@ -42,7 +46,7 @@ nav_items:
         <p>
           Für die letztgenannte Gruppe der Grundeigentümerbodenschätze sind je nach Bundesland, Rohstoff und Art des Abbaus staatliche Stellen der mittleren und unteren Verwaltungsebene zuständig.
         </p>
-        <h2>Rechtliche Unterteilung der Bodenschätze in Deutschland </h2>
+        <h2 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h2>
         <table>
           <tbody>
             <tr>

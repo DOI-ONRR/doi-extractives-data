@@ -27,12 +27,12 @@ nav_items:
         <h3>BIP:  Wie groß ist der deutsche Rohstoffsektor?</h3>
         <p>
           Mit einem
-          <span class="term term_end" data-term="bruttoinlandsprodukt" title="Click to define" tabindex="0">
+          <span class="term term_end" data-term="Bruttoinlandsprodukt" title="Click to define" tabindex="0">
             Bruttoinlandsprodukt
             <icon class="icon-book"></icon>
           </span>
            von rund 3.032,82 Milliarden Euro im Jahr 2015 ist Deutschland die größte Volkswirtschaft Europas und die viertgrößte der Welt. Die
-           <span class="term term_end" data-term="subventionen" title="Click to define" tabindex="0">
+           <span class="term term_end" data-term="Bruttowertschöpfung" title="Click to define" tabindex="0">
              Bruttowertschöpfung
              <icon class="icon-book"></icon>
            </span>

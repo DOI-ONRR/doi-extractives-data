@@ -4,7 +4,7 @@ layout: default
 permalink: /explore/employment/
 breadcrumb:
   - title: FAKTEN
-    permalink: /explore/how-it-work/
+    permalink: /explore/employment/
 nav_items:
   - name: intro
     title: Seitenanfang
@@ -163,12 +163,9 @@ nav_items:
             </tbody>
           </table>
           <br /><br />
-        </section>
-        <section id="daten-einsehen" style="position: relative;">
-          <h3>Daten einsehen:</h3>
-          <p>
-            Die Daten zu den Beschäftigten werden der jährlich erscheinenden Publikation „Der Bergbau in der Bundesrepublik Deutschland“ des Bundesministeriums für Wirtschaft und BMWi entnommen <a href="http://www.bmwi.de/Redaktion/DE/Publikationen/Energie/Bergbaustatistiken/bergbau-in-der-brd-bergwirtschaft-statistik-2015.pdf?__blob=publicationFile&v=7"> (PDF und EXCEL)</a>. Zur Berechnung des prozentualen Anteils der Beschäftigten wurde auf die Gesamtzahl der Erwerbstätigen der Arbeitsmarktstatistik des Statistischen Jahrbuches des Statistischen Bundesamtes zurückgegriffen <a href="https://www.destatis.de/DE/Publikationen/StatistischesJahrbuch/Arbeitsmarkt.pdf?__blob=publicationFile">(PDF)</a>.
-          </p>
+          <a href="{{site.baseurl}}/downloads/#beschäftigten">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Daten Einsehen
+          </a>
         </section>
       </section>
     </div>

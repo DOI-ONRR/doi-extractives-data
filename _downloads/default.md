@@ -41,3 +41,19 @@ permalink: /downloads/
    <p>
    <a href="https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/VGR/Glossar/Bruttowertschoepfung.html">Quelle:</a></p>
 </div>
+
+<div id="beschäftigten">
+  <h2>Daten zur Beschäftigten</h2>
+  <hr/>
+  <p>
+    Die Daten zu den Beschäftigten werden der jährlich erscheinenden Publikation „Der Bergbau in der Bundesrepublik Deutschland“ des Bundesministeriums für Wirtschaft und BMWi entnommen <a href="http://www.bmwi.de/Redaktion/DE/Publikationen/Energie/Bergbaustatistiken/bergbau-in-der-brd-bergwirtschaft-statistik-2015.pdf?__blob=publicationFile&v=7"> (PDF und EXCEL)</a>. Zur Berechnung des prozentualen Anteils der Beschäftigten wurde auf die Gesamtzahl der Erwerbstätigen der Arbeitsmarktstatistik des Statistischen Jahrbuches des Statistischen Bundesamtes zurückgegriffen <a href="https://www.destatis.de/DE/Publikationen/StatistischesJahrbuch/Arbeitsmarkt.pdf?__blob=publicationFile">(PDF)</a>.
+  </p>
+</div>
+
+<div id="exporte">
+  <h2>Daten zur Exporte</h2>
+  <hr/>
+  <p>
+    Die Daten zu den deutschen Rohstoffexporten basieren auf Angaben zu den Güterabteilungen (GP09-05 bis GP09-08) des Güterverzeichnisses für Produktionsstatistiken vom Statistischen Bundesamt. Die Daten der Exporte von 2010-2014 wurden der <a href="https://www-genesis.destatis.de/">Genesis-Online-Datenbank </a> von Destatis am 14.12.2016 entnommen. Die Daten für 2015 sind auf der <a href="https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/Aussenhandel/Tabellen/EinfuhrAusfuhrGueterabteilungen.html">Website</a> des Statistischen Bundesamtes abrufbar. (EXCEL)
+  </p>
+</div>

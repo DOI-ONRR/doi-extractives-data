@@ -12,8 +12,9 @@ nav_items:
     title: Zuständige staatliche Stellen
   - name: rechtliche-regelung
     title: Rechtliche Regelung
-  - name: tabelle-1
-    title: Rechtliche Unterteilung der Bodenschätze in Deutschland
+    subnav_items:
+      - name: tabelle-1
+        title: Rechtliche Unterteilung der Bodenschätze in Deutschland
 ---
 
 <main class="container-page-wrapper layout-state-pages">
@@ -29,7 +30,7 @@ nav_items:
         </p>
       </section>
       <section style="position: relative;">
-      <h3 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h3>
+      <h2 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h2>
       <span>BMWi</span>
       <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
       <table id="bergbehorden">
@@ -268,7 +269,7 @@ nav_items:
         <p>
           Für die letztgenannte Gruppe der Grundeigentümerbodenschätze sind je nach Bundesland, Rohstoff und Art des Abbaus staatliche Stellen der mittleren und unteren Verwaltungsebene zuständig.
         </p>
-        <h2 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h2>
+        <h3 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h3>
         <table>
           <tbody>
             <tr>

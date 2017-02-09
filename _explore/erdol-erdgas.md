@@ -1,5 +1,5 @@
 ---
-title: Erdol, Erdgas
+title: Erdöl und Erdgas
 layout: default
 permalink: /explore/erdol-erdgas/
 breadcrumb:
@@ -40,7 +40,7 @@ nav_items:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="title">Erdöl, Erdgas</h1>
+    <h1 id="title">Erdöl un Erdgas</h1>
 
     <div class="container-left-9">
       <section id="erdol" style="position: relative;">
@@ -51,27 +51,27 @@ nav_items:
             <div>
               <p>
                 Deutschland deckt 2% seines Erdölbedarfs (rund 2,3 Millionen Barrel täglich) aus heimischer Produktion
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Das im Wattenmeer gelegene Ölfeld Mittelplate/Dieksand beherbergt mit ca. 25 Mio. t rund 65 % der förderbaren deutschen Erdölvorkommen.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Erdöl und Erdgas entstehen aus Ablagerungen großer Mengen von Kleinstlebewesen vor allem Algen.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Die durchschnittlichen Kosten  eine heute typische Bohrung mit 5000 m Tiefe liegen bei ca. 10 Mio. € und steigen mit zunehmender Tiefe und in schwierig zugänglichen Lagerstätten noch deutlich an.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Seit Beginn der Erdöl- und Erdgasförderung in Deutschland wurden mehr als 22.000 Bohrungen durchgeführt
-              </p>  
+              </p>
             </div>
           </div>
         </section>
@@ -114,32 +114,32 @@ nav_items:
             <div>
               <p>
                 Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Erdgas wird im Vergleich zu Kohle und Erdöl erst seit relativ kurzer Zeit als Energieträger genutzt.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Auf einem ein Hektar großen Betriebsplatz wird Erdgas für die Versorgung von rund 15.000 Haushalten gefördert.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Bereits seit 60 Jahren wird Erdgas aus deutschen Lagerstätten gewonnen.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 11% des Erdgasbedarfs in Deutschland wird durch die heimische Produktion gedeckt
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 95 % des geförderten Erdgases stammt aus Niedersachsen.
-              </p>  
+              </p>
             </div>
           </div>
         </section>

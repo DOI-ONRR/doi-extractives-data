@@ -2,14 +2,14 @@ $(document).ready(function(){
 
   var jsonData = [];
   var category = [];
-  var isEn = document.URL.includes('/en/');
+  var isEn = document.URL.search('/en/');
   var ticks = [];
   var labels = [];
   var jsonFilePath= '';
 
-  if (document.URL.includes('/explore/exporte/')) {
+  if (document.URL.search('/explore/exporte/') > 1) {
     jsonFilePath = "../../data/graphs/exporte.json";
-  } else if (document.URL.includes('/explore/staatliche-subventionen/')) {
+  } else if (document.URL.search('/explore/staatliche-subventionen/') > 1) {
     jsonFilePath = "../../data/graphs/subventionen1.json";
   }
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
     ticks= jsondata.xAxis;
     labels= jsondata.labels;
     var colors = jsondata.color;
-    var chartTitle = isEn ? jsondata.title_en : jsondata.title;
+    var chartTitle = (isEn > 1) ? jsondata.title_en : jsondata.title;
     plotGraph('chart'+(number+1),jsonData, jsondata, chartTitle, colors, ticks, labels);
   }
 

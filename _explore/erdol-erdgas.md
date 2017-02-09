@@ -3,7 +3,7 @@ title: Erdöl und Erdgas
 layout: default
 permalink: /explore/erdol-erdgas/
 breadcrumb:
-  - title: Rohstoffgewinnung
+  - title: Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
   - name: title

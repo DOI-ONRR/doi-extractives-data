@@ -3,7 +3,7 @@ title: Kohle
 layout: default
 permalink: /explore/kohle/
 breadcrumb:
-  - title: Rohstoffgewinnung
+  - title: Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
   - name: title

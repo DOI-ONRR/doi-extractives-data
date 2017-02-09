@@ -42,7 +42,7 @@ nav_items:
 
     <div class="container-left-9">
       <section id="steinkohle" style="position: relative;">
-        <h2>Steinkohle</h2>
+        <h2 class="sub-headline">Steinkohle</h2>
         <section id="fakten_zu_steinkohle">
           <h3>Wissenswertes über Steinkohle</h3>
           <div class="fakten_steinkohle">
@@ -115,7 +115,7 @@ nav_items:
       </section>
 
       <section id="braunkohle" style="position: relative;">
-        <h2>Braunkohle</h2>
+        <h2 class="sub-headline body-subheadline">Braunkohle</h2>
         <section id="fakten_zu_braunkohle">
           <h3>Wissenswertes über Braunkohle</h3>
           <div class="fakten_braunkohle">

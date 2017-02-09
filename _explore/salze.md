@@ -3,7 +3,7 @@ title: Salze
 layout: default
 permalink: /explore/salze/
 breadcrumb:
-  - title: Rohstoffgewinnung
+  - title: Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
   - name: title
@@ -75,7 +75,7 @@ nav_items:
         </p>
         <p>
           Die Inbetriebnahme der ersten Kalifabrik der Welt in Staßfurt im Jahr 1861 begründete die fast 150-jährige Tradition des deutschen Kalibergbaus. Die Salzgewinnung aus salzhaltigen Quellen sowie im bergmännischen Abbau von Salzlagerstätten hat eine lange Geschichte. Bereits im 12. Jahrhundert wurde im Raum Berchtesgaden nach Salz gegraben. Im 16. Jahrhundert wurde dort ein noch heute aktives Salzbergwerk errichtet.
-        </p>  
+        </p>
       </section>
       <section id="wirtschaftliche-bedeutung" style="position: relative;">
         <h3>Wirtschaftliche Bedeutung</h3>

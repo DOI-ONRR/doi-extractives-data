@@ -3,8 +3,8 @@ title: Beschäftigung
 layout: default
 permalink: /explore/employment/
 breadcrumb:
-  - title: FAKTEN
-    permalink: /explore/employment/
+  - title: Fakten
+    permalink: /explore/
 nav_items:
   - name: intro
     title: Seitenanfang

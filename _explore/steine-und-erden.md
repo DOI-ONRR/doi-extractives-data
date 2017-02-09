@@ -3,7 +3,7 @@ title: Steine und Erden
 layout: default
 permalink: /explore/steine-und-erden/
 breadcrumb:
-  - title:  Rohstoffgewinnung
+  - title:  Deutscher Rohstoffsektor
     permalink: /explore/how-it-work/
 nav_items:
   - name: title

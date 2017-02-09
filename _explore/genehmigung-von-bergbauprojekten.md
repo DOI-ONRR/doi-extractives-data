@@ -36,15 +36,10 @@ nav_items:
           Schritte zur Genehmigung bergbaulicher Vorhaben für bergfreie und grundeigene Bodenschätze
         </p>
       </section>
-      <section>
-        <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/bergbauberechtigungen/" >
-        Bergbauberechtigungen</a>
-        <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/zulassung/">Zulassung</a>
-      </section>
       <div class="tabs">
         <ul class="tab-links">
-            <li class="active"><a href="#tab1">Bergfreie Bodenschätze</a></li>
-            <li><a href="#tab2">Grundeigene Bodenschätze</a></li>
+          <li class="active"><a href="#tab1">Bergfreie Bodenschätze</a></li>
+          <li><a href="#tab2">Grundeigene Bodenschätze</a></li>
         </ul>
 
         <div class="tab-content">
@@ -57,10 +52,12 @@ nav_items:
             </div>
             <div class="tab-bottom">
               <div class="tab-bottom-top">
-                <p>Zulassung des Betriebsplans <br/>durch die Bergbehörde, alle zwei Jahre</p>
-                <p>Eine betriebsbezogene Zulassung bestimmt, unter welchen technischen und umweltrechtlichen Voraussetzungen Bodenschätze aufgesucht und gewonnen werden dürfen.
-                </p>
-                <img src="{{ site.baseurl_root }}/img/genehmigung/zulassung-icon.png"/>
+                <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/zulassung/">
+                  <p>Zulassung des Betriebsplans <br/>durch die Bergbehörde, alle zwei Jahre</p>
+                  <p>Eine betriebsbezogene Zulassung bestimmt, unter welchen technischen und umweltrechtlichen Voraussetzungen Bodenschätze aufgesucht und gewonnen werden dürfen.
+                  </p>
+                  <img src="{{ site.baseurl_root }}/img/genehmigung/zulassung-icon.png"/>
+                </a>
               </div>
               <div class="tab-bottom-bottom">
                 <p>Aufsicht durch die Bergbehörden der Länder</p>
@@ -77,13 +74,15 @@ nav_items:
             </div>
             <div class="tab-bottom">
               <div class="tab-bottom-top">
-                <p>Aufsicht durch die Bergbehörden der Länder</p>
-                <p>
-                  Der Abbau bergfreier und grundeigener Bodenschätze unterliegt der Aufsicht der zuständigen Bergbehörde (Bergaufsicht; § 69 Abs. 1 BBergG). Die Beaufsichtigung der Bergbaubetriebe stellt neben der Vergabe der Bergbauberechtigungen und der Erteilung der Betriebsplanzulassungen die dritte Kernkompetenz der Bergbehörden dar.
-                  <br/>
-                  <!-- Laut Bundesberggesetz dürfen die Aufsichtsbeamtinnen und Aufsichtsbeamten die Betriebe betreten, Auskünfte verlangen, Einrichtungen besichtigen und Prüfungen vornehmen sowie in Einzelfällen auch Anordnungen treffen. Für die Bergbauunternehmer/innen bestehen u.a. Verpflichtungen zur Meldung von Ereignissen und Unfällen, zur Duldung der Bergaufsicht und zur Begleitung der Aufsichtsbeamtinnen und Aufsichtsbeamten bei Fahrten durch die Betriebsstätte (Befahrungen) -->
-                </p>
-                <img src="{{ site.baseurl_root }}/img/genehmigung/zulassung-icon.png"/>
+                <a href="{{ site.lang | url_lang_prefix  }}/genehmigung-von-bergbauprojekten/bergbauberechtigungen/" >
+                  <p>Aufsicht durch die Bergbehörden der Länder</p>
+                  <p>
+                    Der Abbau bergfreier und grundeigener Bodenschätze unterliegt der Aufsicht der zuständigen Bergbehörde (Bergaufsicht; § 69 Abs. 1 BBergG). Die Beaufsichtigung der Bergbaubetriebe stellt neben der Vergabe der Bergbauberechtigungen und der Erteilung der Betriebsplanzulassungen die dritte Kernkompetenz der Bergbehörden dar.
+                    <br/>
+                    <!-- Laut Bundesberggesetz dürfen die Aufsichtsbeamtinnen und Aufsichtsbeamten die Betriebe betreten, Auskünfte verlangen, Einrichtungen besichtigen und Prüfungen vornehmen sowie in Einzelfällen auch Anordnungen treffen. Für die Bergbauunternehmer/innen bestehen u.a. Verpflichtungen zur Meldung von Ereignissen und Unfällen, zur Duldung der Bergaufsicht und zur Begleitung der Aufsichtsbeamtinnen und Aufsichtsbeamten bei Fahrten durch die Betriebsstätte (Befahrungen) -->
+                  </p>
+                  <img src="{{ site.baseurl_root }}/img/genehmigung/zulassung-icon.png"/>
+                </a>
               </div>
               <div class="tab-bottom-bottom">
                 <p>Aufsicht durch die Bergbehörden der Länder</p>

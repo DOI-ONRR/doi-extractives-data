@@ -5,12 +5,22 @@ permalink: /downloads/
 nav_items:
   - name: title
     title: Seitenanfang
+  - name: production-title-1
+    title: Daten zur interaktiven Rohstoffkarte
+  - name: chart-title-1
+    title: Daten zur gesammtdeutschen Rohstoffproduktion
+  - name: daten-zur-beitrag-zum-bip
+    title: Daten zur Beitrag zum BIP
+  - name: daten-zur-beschaftigten
+    title: Daten zur Beschäftigten
+  - name: daten-zur-exporte
+    title: Daten zur Exporte
 ---
 <section class="container" style="position: relative;">
   <div class="container-left-9">
+    <h1 id="title">{{page.title}}</h1>
     <div id="federal_production">
-      <h1 id="title">Daten & Dokumentation Herunterladen<h1>
-      <h2>{% t 'data.production-title' %}</h2>
+      <h2 id="production-title-1">{% t 'data.production-title' %}</h2>
       <hr/>
       <p>{% t 'data.description-1' %}</p>
       <p class="downloads-download_links-intro">
@@ -22,7 +32,7 @@ nav_items:
     </div>
 
     <div id="production_chart">
-      <h2>{% t 'data.chart-title' %}</h2>
+      <h2 id="chart-title-1">{% t 'data.chart-title' %}</h2>
       <hr/>
       <p>{% t 'data.description-1' %}</p>
       <p class="downloads-download_links-intro">
@@ -34,7 +44,7 @@ nav_items:
     </div>
 
     <div id="bip">
-      <h2>Daten zur Beitrag zum BIP</h2>
+      <h2 id="daten-zur-beitrag-zum-bip">Daten zur Beitrag zum BIP</h2>
       <hr/>
       <p>
         Die Daten werden der aktuellen Volkswirtschaftlichen Gesamtrechnung des statistischen Bundesamtes entnommen (<a href="https://www.destatis.de/DE/Publikationen/Thematisch/VolkswirtschaftlicheGesamtrechnungen/Inlandsprodukt/InlandsproduktsberechnungEndgueltigPDF_2180140.pdf?__blob=publicationFile">PDF</a> und
@@ -48,7 +58,7 @@ nav_items:
     </div>
 
     <div id="beschäftigten">
-      <h2>Daten zur Beschäftigten</h2>
+      <h2 id="daten-zur-beschaftigten">Daten zur Beschäftigten</h2>
       <hr/>
       <p>
         Die Daten zu den Beschäftigten werden der jährlich erscheinenden Publikation „Der Bergbau in der Bundesrepublik Deutschland“ des Bundesministeriums für Wirtschaft und BMWi entnommen <a href="http://www.bmwi.de/Redaktion/DE/Publikationen/Energie/Bergbaustatistiken/bergbau-in-der-brd-bergwirtschaft-statistik-2015.pdf?__blob=publicationFile&v=7"> (PDF und EXCEL)</a>. Zur Berechnung des prozentualen Anteils der Beschäftigten wurde auf die Gesamtzahl der Erwerbstätigen der Arbeitsmarktstatistik des Statistischen Jahrbuches des Statistischen Bundesamtes zurückgegriffen <a href="https://www.destatis.de/DE/Publikationen/StatistischesJahrbuch/Arbeitsmarkt.pdf?__blob=publicationFile">(PDF)</a>.
@@ -56,7 +66,7 @@ nav_items:
     </div>
 
     <div id="exporte">
-      <h2>Daten zur Exporte</h2>
+      <h2 id="daten-zur-exporte">Daten zur Exporte</h2>
       <hr/>
       <p>
         Die Daten zu den deutschen Rohstoffexporten basieren auf Angaben zu den Güterabteilungen (GP09-05 bis GP09-08) des Güterverzeichnisses für Produktionsstatistiken vom Statistischen Bundesamt. Die Daten der Exporte von 2010-2014 wurden der <a href="https://www-genesis.destatis.de/">Genesis-Online-Datenbank </a> von Destatis am 14.12.2016 entnommen. Die Daten für 2015 sind auf der <a href="https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/Aussenhandel/Tabellen/EinfuhrAusfuhrGueterabteilungen.html">Website</a> des Statistischen Bundesamtes abrufbar. (EXCEL)

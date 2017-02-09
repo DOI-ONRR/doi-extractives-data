@@ -98,7 +98,28 @@ nav_items:
               </div>
               <div class="tab-bottom-text">
                 <p>
-                  Für den Abbau dieser Rohstoffe finden Genehmigungsverfahren nach dem Bundesimmissionsschutzgesetz, den landesrechtlichen Abgrabungsgesetzen, dem Bauordnung oder dem Wasserhaushaltsgesetz (bei Nassabbau) statt. Es handelt sich hier meist um sogenannte Massenrohstoffe aus dem Steine und Erden Sektor
+                  Für den Abbau dieser Rohstoffe finden Genehmigungsverfahren nach dem
+                  <span class="term term_end" data-term="Bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
+                  Bundesimmissionsschutzgesetz
+                    <icon class="icon-book"></icon>
+                  </span>
+                  den
+                  <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+                  landesrechtlichen Abgrabungsgesetzen
+                    <icon class="icon-book"></icon>
+                  </span>
+                   , dem
+
+                   <span class="term term_end" data-term="Bauordnung" title="Click to define" tabindex="0">
+                   Bauordnung
+                     <icon class="icon-book"></icon>
+                   </span>
+                   oder dem
+                   <span class="term term_end" data-term="Wasserhaushaltsgesetz" title="Click to define" tabindex="0">
+                   Wasserhaushaltsgesetz
+                     <icon class="icon-book"></icon>
+                   </span>
+                    (bei Nassabbau) statt. Es handelt sich hier meist um sogenannte Massenrohstoffe aus dem Steine und Erden Sektor
                 </p>
               </div>
             </div>

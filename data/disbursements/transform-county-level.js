@@ -1,20 +1,22 @@
 'use strict';
-const parse = require('../../lib/parse');
+var parse = require('../../lib/parse');
 
-const FUND_MAP = {
+var FUND_MAP = {
   'State': 'States',
 };
 
-const GOMESA_PATTERN = / - GOMESA\s*$/;
+var GOMESA_PATTERN = / - GOMESA\s*$/i;
 
 module.exports = {
   year: 'FY',
-  fund: d => {
+  fund: function(d) {
     const fund = d.Fund;
     return FUND_MAP[fund] || fund.replace(GOMESA_PATTERN, '');
   },
   source: 'Source',
   region: 'State',
   county: 'County',
-  dollars: d => parse.dollars(d.Total),
+  dollars: function(d) {
+    return parse.dollars(d.Total);
+  },
 };

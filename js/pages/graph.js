@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var jsonData = [];
   var category = [];
-  var isEn = document.URL.includes('/en/');
+  var isEn = document.URL.search('/en/');
 
   /* default call*/
   ajaxCall();
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
     $.each(jsonData, function (entryindex, entry) {
       dataSlices.push(entry['Value']);
-      if(isEn) {
+      if(isEn > 1) {
         ticks.push(entry['Label_en']);
       } else {
         ticks.push(entry['Label']);
@@ -63,7 +63,7 @@ $(document).ready(function(){
     var xAxiTicks = [0, largest+(largest/5)];
 
     legendTable('legend'+(number+1),category);
-    var chartTitle = isEn ? jsondata.title_en : jsondata.title;
+    var chartTitle = (isEn > 1) ? jsondata.title_en : jsondata.title;
     plotGraph('chart'+(number+1), dataSlices, colors, chartTitle, ticks, jsonData, xAxiTicks);
   }
 
@@ -90,7 +90,7 @@ $(document).ready(function(){
       div.style.height = '15px';
       div.style.background = data[i].color;
       cell1.appendChild(div);
-      if (isEn) {
+      if (isEn > 1) {
         cell2.innerHTML = data[i].cat_en;
       } else {
         cell2.innerHTML = data[i].cat;
@@ -102,7 +102,7 @@ $(document).ready(function(){
     function tickFormatter(format, val) {
       for(var i=0;i<jsonDatas.length; i++){
         if(jsonDatas[i].Value === val){
-          if (isEn) {
+          if (isEn > 1) {
             val= val +" "+ jsonDatas[i].unit_en;
           } else {
             val= val +" "+ jsonDatas[i].unit;

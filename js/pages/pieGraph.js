@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   var jsonFilePath= '';
-  if (document.URL.includes('/explore/exporte/')) {
+  if (document.URL.search('/explore/exporte/') > 1) {
     jsonFilePath = "../../data/graphs/exportePie.json";
-  } else if (document.URL.includes('/explore/employment/')) {
+  } else if (document.URL.search('/explore/employment/') > 1) {
     jsonFilePath = "../../data/graphs/employment.json";
   }
 

@@ -1,6 +1,13 @@
 ---
 title: Greenlee County, Arizona | Case Studies
 title_display: Greenlee County, Arizona
+description: Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world’s fourth-largest copper producer, mining 1.127 million tons of copper worth a total value of approximately $9.7 billion. Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production most in 2014. Arizona's copper output totaled 893,000 metric tons, or 66% of the national total. Copper represented 89% of the total value of mining in Arizona, with Greenlee and Pima counties generating the majority of that production. If Arizona were a country, it would be the seventh largest copper producer in the world.
+tag:
+- local
+- case study
+- greenlee county
+- Arizona
+- copper
 layout: content
 permalink: /case-studies/greenlee/
 resource: copper

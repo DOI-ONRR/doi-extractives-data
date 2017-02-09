@@ -1,2 +1,4 @@
 js/vendor/*.js
 js/**/*.min.js
+js/**/*.min.js.map
+js/lib/main.js

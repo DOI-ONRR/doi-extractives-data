@@ -1,6 +1,14 @@
 ---
 title: Humbolt and Lander Counties, Nevada | Case Studies
 title_display: Humbolt and Lander Counties, Nevada
+description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth largest producer of gold, extracting 200 tons valued at $7.6 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world. The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.
+tag:
+- local
+- case study
+- Humbolt county
+- Lander county
+- Nevada
+- gold
 layout: content
 permalink: /case-studies/humboldt-and-lander/
 resource: gold
@@ -54,7 +62,7 @@ In 2014, gold mining provided jobs for 5,110 workers, which represented 26% of t
 
 ## Revenue
 
-Gold-mining serves as a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2014, Nevada counties received a total of $103 million in state and county Net Proceeds of Minerals Taxes. $52.5 million went to the state and $50.5 million went directly to counties.[^15] 
+Gold-mining serves as a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2014, Nevada counties received a total of $103 million in state and county Net Proceeds of Minerals Taxes. $52.5 million went to the state and $50.5 million went directly to counties.[^15]
 
 In 2014, Humboldt and Lander counties accounted for a total of 53% of the state’s Net Proceeds of Minerals (19.54% and 33.36% respectively).[^16] In FY 2014, Humboldt County received $7.9 million in Net Proceeds of Minerals taxes and royalties; Lander County received $21.5 million.[^17]
 

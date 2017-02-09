@@ -25,9 +25,6 @@
   exports.EITISlider = require('../components/eiti-slider');
   exports.EITIToggle = require('../components/eiti-toggle');
 
-  // FIXME: does this export anything?
-  require('../components/search');
-
   // XXX List.js's node module isn't CommonJS compatible, so we have to use a
   // built version.
   exports.List = require('../vendor/list');
@@ -42,5 +39,4 @@
 
   var svg4everybody = require('svg4everybody');
   svg4everybody();
-
 })(window);

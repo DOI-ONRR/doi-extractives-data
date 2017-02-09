@@ -11,6 +11,8 @@ nav_items:
   - name: intro
     title: Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen
   - name: rechtliche-stellungl
+    title: Zuständige staatliche Stellen
+  - name: Zuständige
     title: Rechtliche Regelung
   - name: tabelle-1
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland
@@ -29,6 +31,9 @@ nav_items:
         </p>
       </section>
       <section style="position: relative;">
+      <h3 id="Zuständige">Zuständige staatliche Stellen:</h3>
+      <span>BMWi</span>
+      <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
       <table id="bergbehorden">
         <tbody>
           <tr>

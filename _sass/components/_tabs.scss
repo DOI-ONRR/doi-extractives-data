@@ -36,7 +36,7 @@
     }
 
     li.active a, li.active a:hover {
-      background-color: #3c87bf;
+      background-color: #0a88c3;
       color: #fff;
       text-decoration:none;
     }
@@ -55,7 +55,7 @@
 
 
 .tab-top {
-  background-color: #3c87bf;
+  background-color: #0a88c3;
   color: white;
   font-size: 20px;
   padding: 40px 60px 40px 60px;
@@ -69,10 +69,10 @@
   }
 
   .icon-tab-1 {
-    height: 70px;
+    height: 100%;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 20px;
+    right: 0px;
   }
   .icon-tab-2 {
     height: 70px;
@@ -123,10 +123,21 @@
     }
   }
 
+  .tab-bottom-text {
+    padding: 20px 0 10px 0;
+    margin-bottom: 30px;
+    background-color: #0a88c3;
+    p {
+      margin: auto;
+      width: 70%;
+      color: white;
+    }
+  }
+
   .tab-bottom-bottom {
     margin: auto;
     width: 70%;
-    height: 150px;
+    height: 120px;
 
     p {
       font-size: 40px;

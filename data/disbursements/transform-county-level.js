@@ -10,7 +10,7 @@ var SUFFIX_PATTERN = /( Fund)?( - GOMESA)?$/i;
 module.exports = {
   year: 'FY',
   fund: function(d) {
-    const fund = d.Fund;
+    var fund = d.Fund;
     return FUND_MAP[fund] || fund.replace(SUFFIX_PATTERN, '');
   },
   source: 'Source',

@@ -1,5 +1,5 @@
 ---
-title: Beschäftigung
+title: "Besch&auml;ftigung"
 layout: default
 permalink: /explore/employment/
 breadcrumb:
@@ -9,7 +9,7 @@ nav_items:
   - name: intro
     title: Seitenanfang
   - name: tabelle-1
-    title: "Tabelle: Beschäftigung"
+    title: "Tabelle: Besch&auml;ftigung"
   - name: daten-einsehen
     title: "Daten einsehen"
 ---
@@ -21,7 +21,7 @@ nav_items:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="intro">Beschäftigung</h1>
+    <h1 id="intro">Besch&auml;ftigung</h1>
 
     <div class="container-left-9">
       <section>

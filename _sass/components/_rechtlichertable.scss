@@ -1,0 +1,22 @@
+.berg-img {
+  background-image: url('../img/Bergbehörden.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#bergbehorden {
+  border: none;
+  td {
+    border: none;
+  }
+  div {
+    padding: 10px;
+  }
+  .explanation {
+    padding: 10px;
+    background-color: #ebf5ff;
+    :first-child {
+      font-weight: bold;
+    }
+  }
+}

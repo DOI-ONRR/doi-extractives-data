@@ -11,6 +11,8 @@ nav_items:
   - name: intro
     title: Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen
   - name: rechtliche-stellungl
+    title: Zuständige staatliche Stellen
+  - name: Zuständige
     title: Rechtliche Regelung
   - name: tabelle-1
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland
@@ -29,7 +31,219 @@ nav_items:
         </p>
       </section>
       <section style="position: relative;">
-        <img class="hero-right_image" src="{{ site.baseurl_root }}/img/placeholder_behoerden.png" alt="Explore landing intro">
+      <h3 id="Zuständige">Zuständige staatliche Stellen:</h3>
+      <span>BMWi</span>
+      <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
+      <table id="bergbehorden">
+        <tbody>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td rowspan="2" class="berg-img">
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+          </tr>
+          <tr>
+          <td>
+            <div class="explanation">
+              <span>Baden württemberg</span><br/>
+              <span>
+                ministerium für umwelt <br/>
+                klima und energiewirtschaft
+              </span>
+            </div>
+            <div>
+              Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+            </div>
+          </td>
+          <td>
+            <div class="explanation">
+              <span>Baden württemberg</span><br/>
+              <span>
+                ministerium für umwelt <br/>
+                klima und energiewirtschaft
+              </span>
+            </div>
+            <div>
+              Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+            </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Baden württemberg</span><br/>
+                <span>
+                  ministerium für umwelt <br/>
+                  klima und energiewirtschaft
+                </span>
+              </div>
+              <div>
+                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
         <h2 id="rechtliche-stellungl">Rechtliche Regelung</h2>
         <p>Hinsichtlich ihrer rechtlichen Regelung werden in Deutschland drei Gruppen von Rohstoffen  unterschieden:</p>
         <ul>

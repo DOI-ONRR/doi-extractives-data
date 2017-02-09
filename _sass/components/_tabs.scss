@@ -1,0 +1,163 @@
+.tabs {
+  width:100%;
+  display:inline-block;
+
+  .tab {
+      display:none;
+  }
+
+  .tab.active {
+      display:block;
+  }
+
+  .tab-links {
+    :after {
+      display:block;
+    }
+
+    a {
+      padding: 9px 15px;
+      display:inline-block;
+      border-radius:3px 3px 0px 0px;
+      font-size:16px;
+      font-weight:600;
+      transition:all linear 0.15s;
+
+      :hover {
+        background:#a7cce5;
+        text-decoration:none;
+      }
+    }
+
+    li {
+      margin:5px 5px;
+      float:left;
+      list-style:none;
+    }
+
+    li.active a, li.active a:hover {
+      background-color: #3c87bf;
+      color: #fff;
+      text-decoration:none;
+    }
+  }
+
+  .tab-content {
+      padding-top:20px;
+  }
+}
+
+#tab2 {
+  .tab-top {
+    text-align: right;
+  }
+}
+
+
+.tab-top {
+  background-color: #3c87bf;
+  color: white;
+  font-size: 20px;
+  padding: 40px 60px 40px 60px;
+  position: relative;
+
+  .left-arrow {
+    height: 140px;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+  }
+
+  .icon-tab-1 {
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  .icon-tab-2 {
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+
+  .right-arrow {
+    height: 140px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+  }
+}
+
+.tab-bottom {
+  position: relative;
+  background-image: url('../img/genehmigung/background.png');
+  background-size: 100% 100%;
+  height: 450px;
+  line-height: 100%;
+
+  .tab-bottom-top {
+    margin: auto;
+    width: 70%;
+    height: 300px;
+
+    p {
+      &:first-child {
+        font-size: 30px;
+        padding-top: 50px;
+      }
+      &:last-child {
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+    img {
+      position: absolute;
+      right: 15px;
+      top: 100px;
+      height: 120px;
+      width: 80px;
+    }
+  }
+
+  .tab-bottom-bottom {
+    margin: auto;
+    width: 70%;
+    height: 150px;
+
+    p {
+      font-size: 40px;
+      color: white;
+      line-height: 100%;
+      margin-top: 20px;
+    }
+
+    img {
+      position: absolute;
+      right: 15px;
+      bottom: 50px;
+      height: 90px;
+      width: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: em(600)) {
+  .tab-bottom {
+    .tab-bottom-top {
+      p {
+        &:first-child {
+          font-size: 15px;
+        }
+        &:last-child {
+          font-size: 12px;
+        }
+      }
+    }
+    .tab-bottom-bottom {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

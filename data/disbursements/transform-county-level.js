@@ -5,13 +5,13 @@ var FUND_MAP = {
   'State': 'States',
 };
 
-var GOMESA_PATTERN = / - GOMESA\s*$/i;
+var SUFFIX_PATTERN = /( Fund)?( - GOMESA)?$/i;
 
 module.exports = {
   year: 'FY',
   fund: function(d) {
     const fund = d.Fund;
-    return FUND_MAP[fund] || fund.replace(GOMESA_PATTERN, '');
+    return FUND_MAP[fund] || fund.replace(SUFFIX_PATTERN, '');
   },
   source: 'Source',
   region: 'State',

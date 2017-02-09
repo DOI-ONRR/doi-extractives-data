@@ -48,38 +48,38 @@ nav_items:
           <div class="fakten_steinkohle">
             <div>
               <p>
-                Prosper-Haniel“ das letzte noch aktive  Bergwerk Deutschlands befindet sich in Bottrop im Steinkohlerevier Ruhrgebiet
-              </p>  
+                Prosper-Haniel das letzte noch aktive  Bergwerk Deutschlands befindet sich in Bottrop im Steinkohlerevier Ruhrgebiet
+              </p>
             </div>
             <div>
               <p>
                 Hier werden in einer Tiefe von 700 und 1.300 Metern jährlich 2,6 Mio. Tonnen Steinkohle gefördert
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Das gesamte Grubenfeld erstreckt sich auf einer Fläche von 90 km² und ist durch ein unterirdisches Streckennetz von rund 140 km erschlossen.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Bis Ende 2018 wird im politischen Auftrag die sozialverträgliche Beendigung des subventionierten Steinkohleförderung umgesetzt.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Der Steinkohlenbergbau trägt Verantwortung für die Folgen des Abbaus und bietet nachhaltige Lösungen und Konzepte für die Nachbergbauära.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Umwelt-Engineering, Flächenentwicklung und Immobilienmanagement stützen den anstehenden Strukturwandel  auf 9.700 ha Fläche.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 2012 wurden 81 % der in Deutschland verstromten Steinkohle importiert, vor allem aus  Australien, Südafrika und Kolumbien.
-              </p>  
+              </p>
             </div>
           </div>
         </section>
@@ -122,32 +122,32 @@ nav_items:
             <div>
               <p>
                 Mit einer Fördermenge von rund 178 Mio. t ist die Braunkohle zu knapp 12 % an der Primärenergiegewinnung in Deutschland beteiligt.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Der Anteil der Braunkohle in der Bruttostromerzeugung liegt bei rund 24 %.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Rekultivierung und der Ausgleich für die Landinanspruchnahme durch den Bergbau sind ebenso wichtige Themen der deutschen Braunkohleindustrie wie Investitionen in Kraftwerke (Neubauten und Modernisierungen) für eine effiziente Stromerzeugung.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 In Deutschland wird aktuell in drei Braunkohlerevieren in 12 aktiven Tagebauen Braunkohle gefördert. Das rheinische Revier ist das größte Braunkohlerevier Europas.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Mit einem Anteil von rund 20 Prozent ist  Deutschland der weltweit größte Produzent von Braunkohle.
-              </p>  
+              </p>
             </div>
             <div>
               <p>
                 Deutschland deckt seinen Braunkohlebedarf zu 100% aus heimischen Lagerstätten.
-              </p>  
+              </p>
             </div>
           </div>
         </section>

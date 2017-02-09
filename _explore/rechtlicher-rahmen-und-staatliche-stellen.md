@@ -8,8 +8,6 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
-  - name: intro
-    title: Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen
   - name: rechtliche-stellungl
     title: Zuständige staatliche Stellen
   - name: Zuständige
@@ -22,9 +20,9 @@ nav_items:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="title">Wer ist zuständig? Gesetze und Zuständigkeiten staatlicher Stellen</h1>
 
     <div class="container-left-9">
+      <h1 id="title">Wer ist zuständig? Rechtlicher Rahmen und staatliche Stellen</h1>
       <section id="intro" style="position: relative;">
         <p>
           Die Rohstoffgewinnung wird in Deutschland vor allem durch das Bundesberggesetz (BBergG) geregelt, welches 1982 die alten Berggesetze der Bundesländer sowie zahlreiche bergrechtliche Nebengesetze des Bundes und der Länder abgelöst hat. Die Federführung für das Bergrecht innerhalb der Bundesregierung liegt beim Bundeswirtschaftsministerium. Die Bergbehörden der Bundesländer führen das Gesetz jedoch aus und sind je nach Bodenschatz für die Genehmigung und Aufsicht der bergbaulichen Tätigkeit zuständig. Um den Besonderheiten ihrer Region gerecht zu werden, haben die Bundesländer teils eigene Bergverordnungen verabschiedet.

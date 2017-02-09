@@ -8,9 +8,9 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
-  - name: rechtliche-stellungl
+  - name: zustandige-staatliche-stellen
     title: Zuständige staatliche Stellen
-  - name: Zuständige
+  - name: rechtliche-regelung
     title: Rechtliche Regelung
   - name: tabelle-1
     title: Rechtliche Unterteilung der Bodenschätze in Deutschland
@@ -29,7 +29,7 @@ nav_items:
         </p>
       </section>
       <section style="position: relative;">
-      <h3 id="Zuständige">Zuständige staatliche Stellen:</h3>
+      <h3 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h3>
       <span>BMWi</span>
       <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
       <table id="bergbehorden">
@@ -242,7 +242,7 @@ nav_items:
           </tr>
         </tbody>
       </table>
-        <h2 id="rechtliche-stellungl">Rechtliche Regelung</h2>
+        <h2 id="rechtliche-regelung">Rechtliche Regelung</h2>
         <p>Hinsichtlich ihrer rechtlichen Regelung werden in Deutschland drei Gruppen von Rohstoffen  unterschieden:</p>
         <ul>
             <li>

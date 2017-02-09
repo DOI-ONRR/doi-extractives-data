@@ -19,8 +19,6 @@ Download calendar year data:
   Full dataset, 2016 USEITI Report (xlsx, 37 KB)</a></li>
 </ul>
 
-The following documentation is for the 2015 USEITI Report. Documentation for the 2016 USEITI Report is coming soon.
-
 ## Background
 
 To implement the {{ "EITI Standard" | term_end}}, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the {{ "IA" | term_end:"independent administrator (IA)" }}. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.

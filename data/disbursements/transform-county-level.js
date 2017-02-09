@@ -5,6 +5,10 @@ var FUND_MAP = {
   'State': 'States',
 };
 
+var SOURCE_MAP = {
+  'OffShore': 'Offshore',
+};
+
 var SUFFIX_PATTERN = /( Fund)?( - GOMESA)?$/i;
 
 module.exports = {
@@ -13,7 +17,10 @@ module.exports = {
     var fund = d.Fund;
     return FUND_MAP[fund] || fund.replace(SUFFIX_PATTERN, '');
   },
-  source: 'Source',
+  source: function(d) {
+    var source = d.Source;
+    return SOURCE_MAP[source] || source;
+  },
   region: 'State',
   county: 'County',
   dollars: function(d) {

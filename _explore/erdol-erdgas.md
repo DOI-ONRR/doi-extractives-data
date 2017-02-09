@@ -44,7 +44,7 @@ nav_items:
 
     <div class="container-left-9">
       <section id="erdol" style="position: relative;">
-        <h2>Erdöl</h2>
+        <h2 class="sub-headline">Erdöl</h2>
         <section id="fakten_zu_oil">
           <h3>Wissenswertes über Erdöl</h3>
           <div class="fakten_oil">
@@ -102,7 +102,7 @@ nav_items:
       </section>
 
       <section id="erdgas" style="position: relative;">
-        <h2>Erdgas</h2>
+        <h2 class="sub-headline body-subheadline">Erdgas</h2>
         <section id="fakten_zu_gas">
           <h3>Wissenswertes über Erdgas</h3>
           <div class="fakten_gas">

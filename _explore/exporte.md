@@ -4,6 +4,7 @@ layout: default
 permalink: /explore/exporte/
 breadcrumb:
   - title: FAKTEN
+    permalink: /explore/
 nav_items:
   - name: title
     title: Seitenanfang

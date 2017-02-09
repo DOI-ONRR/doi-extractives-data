@@ -4,6 +4,7 @@ layout: default
 permalink: /explore/BIP/
 breadcrumb:
   - title: FAKTEN
+    permalink: /explore/
 nav_items:
   - name: intro
     title: Seitenanfang

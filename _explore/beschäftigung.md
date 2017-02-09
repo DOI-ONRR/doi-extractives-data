@@ -4,7 +4,7 @@ layout: default
 permalink: /explore/employment/
 breadcrumb:
   - title: FAKTEN
-    permalink: /explore/employment/
+    permalink: /explore/
 nav_items:
   - name: intro
     title: Seitenanfang

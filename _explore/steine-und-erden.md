@@ -10,8 +10,6 @@ nav_items:
     title: Seitenanfang
   - name: fakten_zu_industriemineralen
     title: Wissenswertes über Industriemineralen
-  - name: intro
-    title: Intro
   - name: geschichte
     title: Geschichte
   - name: gewinnung

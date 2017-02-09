@@ -95,14 +95,9 @@ nav_items:
         </section>
         <p>
           Erd&ouml;l ist ein fossiler Energietr&auml;ger und dient v.a. als
-          <a href="https://de.wikipedia.org/wiki/Kraftstoff">Treibstoff</a>
-          f&uuml;r
-          <a href="https://de.wikipedia.org/wiki/Verkehrsmittel">Verkehrs-</a>
-          und <a href="https://de.wikipedia.org/wiki/Transportmittel">Transportmittel</a>
-          und zur Beheizung von Geb&auml;uden. Zudem wird Erd&ouml;l in der
-          <a href="https://de.wikipedia.org/wiki/Erd%C3%B6l#Petrochemie">chemischen Industrie</a>
-          z.B. zur <a href="https://de.wikipedia.org/wiki/Produktion">Herstellung</a> von
-          <a href="https://de.wikipedia.org/wiki/Kunststoff">Kunststoffen</a> verwendet.
+          Treibstoff f&uuml;r Verkehrs-
+          und Transportmittel und zur Beheizung von Geb&auml;uden. Zudem wird Erd&ouml;l in der
+          chemischen Industrie z.B. zur Herstellung von Kunststoffen verwendet.
         </p>
       </section>
 

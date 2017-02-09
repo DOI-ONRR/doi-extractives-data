@@ -1,58 +1,51 @@
-// .tabs {
-//   width:100%;
-//   display:inline-block;
-//
-//   .tab {
-//       display:none;
-//   }
-//
-//   .tab.active {
-//       display:block;
-//   }
-//
-//   .tab-links {
-//     :after {
-//       display:block;
-//       clear:both;
-//       content:'';
-//     }
-//
-//     a {
-//       padding:9px 15px;
-//       display:inline-block;
-//       border-radius:3px 3px 0px 0px;
-//       background:#7FB5DA;
-//       font-size:16px;
-//       font-weight:600;
-//       color:#4c4c4c;
-//       transition:all linear 0.15s;
-//
-//       :hover {
-//         background:#a7cce5;
-//         text-decoration:none;
-//       }
-//     }
-//
-//     li {
-//       margin:0px 5px;
-//       float:left;
-//       list-style:none;
-//     }
-//
-//     li.active a, li.active a:hover {
-//       background:#fff;
-//       color:#4c4c4c;
-//     }
-//   }
-//
-//   .tab-content {
-//       padding:15px;
-//       border-radius:3px;
-//       box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-//       background:#fff;
-//
-//   }
-// }
+.tabs {
+  width:100%;
+  display:inline-block;
+
+  .tab {
+      display:none;
+  }
+
+  .tab.active {
+      display:block;
+  }
+
+  .tab-links {
+    :after {
+      display:block;
+    }
+
+    a {
+      padding: 9px 15px;
+      display:inline-block;
+      border-radius:3px 3px 0px 0px;
+      font-size:16px;
+      font-weight:600;
+      transition:all linear 0.15s;
+
+      :hover {
+        background:#a7cce5;
+        text-decoration:none;
+      }
+    }
+
+    li {
+      margin:5px 5px;
+      float:left;
+      list-style:none;
+    }
+
+    li.active a, li.active a:hover {
+      background-color: #3c87bf;
+      color: #fff;
+      text-decoration:none;
+    }
+  }
+
+  .tab-content {
+      padding-top:20px;
+  }
+}
 
 #tab2 {
   .tab-top {
@@ -65,7 +58,7 @@
   background-color: #3c87bf;
   color: white;
   font-size: 20px;
-  padding: 50px;
+  padding: 40px 60px 40px 60px;
   position: relative;
 
   .left-arrow {
@@ -78,13 +71,13 @@
   .icon-tab-1 {
     height: 70px;
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 10px;
   }
   .icon-tab-2 {
     height: 70px;
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 10px;
   }
 
@@ -114,7 +107,7 @@
         padding-top: 50px;
       }
       &:last-child {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 400;
       }
     }
@@ -145,6 +138,26 @@
       bottom: 50px;
       height: 90px;
       width: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: em(600)) {
+  .tab-bottom {
+    .tab-bottom-top {
+      p {
+        &:first-child {
+          font-size: 15px;
+        }
+        &:last-child {
+          font-size: 12px;
+        }
+      }
+    }
+    .tab-bottom-bottom {
+      p {
+        font-size: 20px;
+      }
     }
   }
 }

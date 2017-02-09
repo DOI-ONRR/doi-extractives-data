@@ -81,7 +81,7 @@ nav_items:
                 <p>
                   Der Abbau bergfreier und grundeigener Bodenschätze unterliegt der Aufsicht der zuständigen Bergbehörde (Bergaufsicht; § 69 Abs. 1 BBergG). Die Beaufsichtigung der Bergbaubetriebe stellt neben der Vergabe der Bergbauberechtigungen und der Erteilung der Betriebsplanzulassungen die dritte Kernkompetenz der Bergbehörden dar.
                   <br/>
-                  Laut Bundesberggesetz dürfen die Aufsichtsbeamtinnen und Aufsichtsbeamten die Betriebe betreten, Auskünfte verlangen, Einrichtungen besichtigen und Prüfungen vornehmen sowie in Einzelfällen auch Anordnungen treffen. Für die Bergbauunternehmer/innen bestehen u.a. Verpflichtungen zur Meldung von Ereignissen und Unfällen, zur Duldung der Bergaufsicht und zur Begleitung der Aufsichtsbeamtinnen und Aufsichtsbeamten bei Fahrten durch die Betriebsstätte (Befahrungen)
+                  <!-- Laut Bundesberggesetz dürfen die Aufsichtsbeamtinnen und Aufsichtsbeamten die Betriebe betreten, Auskünfte verlangen, Einrichtungen besichtigen und Prüfungen vornehmen sowie in Einzelfällen auch Anordnungen treffen. Für die Bergbauunternehmer/innen bestehen u.a. Verpflichtungen zur Meldung von Ereignissen und Unfällen, zur Duldung der Bergaufsicht und zur Begleitung der Aufsichtsbeamtinnen und Aufsichtsbeamten bei Fahrten durch die Betriebsstätte (Befahrungen) -->
                 </p>
                 <img src="{{ site.baseurl_root }}/img/genehmigung/zulassung-icon.png"/>
               </div>

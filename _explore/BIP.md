@@ -3,7 +3,7 @@ title: Beitrag zum BIP
 layout: default
 permalink: /explore/BIP/
 breadcrumb:
-  - title: FAKTEN
+  - title: Fakten
     permalink: /explore/
 nav_items:
   - name: intro

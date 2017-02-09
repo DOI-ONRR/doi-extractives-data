@@ -3,7 +3,7 @@ title: Beschäftigung
 layout: default
 permalink: /explore/employment/
 breadcrumb:
-  - title: FAKTEN
+  - title: Fakten
     permalink: /explore/
 nav_items:
   - name: intro

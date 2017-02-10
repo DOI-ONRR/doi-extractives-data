@@ -33,12 +33,12 @@ permalink: /explore/
         {% t 'explore-data.production.heading-1' %}
       </h2>
     </a>
-    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile tile-interaktiv">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/federal-production" class="tile tile-interaktiv disabled">
       <span>
         {% t 'explore-data.production.sub-heading-1' %}
       </span>
     </a>
-    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile tile-ges-rohstoffprod">
+    <a href="{{ site.lang | url_lang_prefix  }}/explore/production-charts" class="tile tile-ges-rohstoffprod disabled">
       <span>
         {% t 'explore-data.production.sub-heading-2' %}
       </span>

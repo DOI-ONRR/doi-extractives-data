@@ -117,7 +117,7 @@ nav_items:
         </div>
         </section>
         <section>
-          <h3>Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümerbodenschätze</h3>
+          <h3 style="margin-top: 30px;">Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümerbodenschätze</h3>
           <div class="third-slide">
             <div class="tab-bottom-top">
               <p>Grundeigentümerbodenschätze</p>
@@ -130,32 +130,32 @@ nav_items:
               <p>Aufsicht durch die Bergbehörden der Länder</p>
               <img src="{{ site.baseurl_root }}/img/genehmigung/aufsicht-icon.png"/>
             </div>
-            <div class="tab-bottom-text">
-              <p>
-                Für den Abbau dieser Rohstoffe finden Genehmigungsverfahren nach dem
-                <span class="term term_end" data-term="Bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
-                Bundesimmissionsschutzgesetz
-                  <icon class="icon-book"></icon>
-                </span>
-                den
-                <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
-                landesrechtlichen Abgrabungsgesetzen
-                  <icon class="icon-book"></icon>
-                </span>
-                 , dem
+          </div>
+          <div class="third-slide-bottom">
+            <p>
+              Für den Abbau dieser Rohstoffe finden Genehmigungsverfahren nach dem
+              <span class="term term_end" data-term="Bundesimmissionsschutzgesetz" title="Click to define" tabindex="0">
+              Bundesimmissionsschutzgesetz
+                <icon class="icon-book"></icon>
+              </span>
+              den
+              <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+              landesrechtlichen Abgrabungsgesetzen
+                <icon class="icon-book"></icon>
+              </span>
+               , dem
 
-                 <span class="term term_end" data-term="Bauordnung" title="Click to define" tabindex="0">
-                 Bauordnung
-                   <icon class="icon-book"></icon>
-                 </span>
-                 oder dem
-                 <span class="term term_end" data-term="Wasserhaushaltsgesetz" title="Click to define" tabindex="0">
-                 Wasserhaushaltsgesetz
-                   <icon class="icon-book"></icon>
-                 </span>
-                  (bei Nassabbau) statt. Es handelt sich hier meist um sogenannte Massenrohstoffe aus dem Steine und Erden Sektor
-              </p>
-            </div>
+               <span class="term term_end" data-term="Bauordnung" title="Click to define" tabindex="0">
+               Bauordnung
+                 <icon class="icon-book"></icon>
+               </span>
+               oder dem
+               <span class="term term_end" data-term="Wasserhaushaltsgesetz" title="Click to define" tabindex="0">
+               Wasserhaushaltsgesetz
+                 <icon class="icon-book"></icon>
+               </span>
+                (bei Nassabbau) statt. Es handelt sich hier meist um sogenannte Massenrohstoffe aus dem Steine und Erden Sektor
+            </p>
           </div>
         </section>
     </div>

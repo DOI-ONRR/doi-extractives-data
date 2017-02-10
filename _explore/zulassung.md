@@ -4,7 +4,7 @@ layout: default
 permalink: /genehmigung-von-bergbauprojekten/zulassung/
 breadcrumb:
   - title: Deutscher Rohstoffsektor/Zulassung
-    permalink: /genehmigung-von-bergbauprojekten/zulassung/
+    permalink: /genehmigung-von-bergbauprojekten/
 nav_items:
   - name: title
     title: Seitenanfang

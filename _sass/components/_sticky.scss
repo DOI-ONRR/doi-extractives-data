@@ -19,3 +19,10 @@
 .sticky-sibling {
   margin-right: 0;
 }
+
+.sticky_nav.sticky {
+  padding-top: 2.5rem;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    margin-top: 9.5rem !important;
+  }
+}

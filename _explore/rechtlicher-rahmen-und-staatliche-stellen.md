@@ -38,206 +38,215 @@ nav_items:
           <tr>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Baden-Württemberg</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Umwelt <br/>
+                  Klima und Energiewirtschaft
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.lgrb-bw.de/home/index_html">Regierungspräs. Freiburg,<br/> Landesamt für Goelogie,<br/> Rohstoffe und    Bergbau</a>
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Bayern</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Staatsmin. für Wirtschaft und Medien,<br/> Energie und Technologie
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.regierung.oberbayern.bayern.de/aufgaben/wirtschaft/bergamt/">Regierungspräs. München</a> und<br/><a href="https://www.regierung.oberfranken.bayern.de/bergamt_nordbayern/index.php">Regierungspräs. Oberfranken</a>
+
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Berlin</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Senatsverw. für Wirtschaft,<br/> Technologie und Forschung
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="explanation">
-                <span>Baden württemberg</span><br/>
-                <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
-                </span>
-              </div>
-              <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
-              </div>
-            </td>
-            <td>
-              <div class="explanation">
-                <span>Baden württemberg</span><br/>
-                <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
-                </span>
-              </div>
-              <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
-              </div>
-            </td>
-            <td>
-              <div class="explanation">
-                <span>Baden württemberg</span><br/>
-                <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
-                </span>
-              </div>
-              <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.lbgr.brandenburg.de/">Landesamt für Bergbau,<br/>Geologie und Rohstoffe Brandenburg
+</a>
               </div>
             </td>
           </tr>
           <tr>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Brandenburg</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Wirtschaft<br/> und Europaangelegenheiten
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.lbgr.brandenburg.de/">Landesamt für Bergbau,<br/>Geologie und Rohstoffe Brandenburg
+</a>
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Bremen</span><br/>
+                <span>
+                  Senator für Wirtschaft,<br/> Arbeit und Häfen
+
+                </span>
+              </div>
+              <div>
+                <a href="http://www.lbeg.niedersachsen.de/startseite/">Landesamt für Bergbau,<br/> Energie und Geologie Niedersachsen</a>
+
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                <span>Hamburg</span><br/>
+                <span>
+                  Behörde für Wirtschaft,<br/> Verkehr und Innovation
+
+                </span>
+              </div>
+              <div>
+               <a href="http://www.lbeg.niedersachsen.de/startseite/">Landesamt für Bergbau,<br/> Energie und Geologie Niedersachsen</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="explanation">
+                <span>Hessen</span><br/>
+                <span>
+                 Min. für Umwelt,<br/> Klimaschutz, Landwirtschaft<br> und Verbraucherschutz
+
+                </span>
+              </div>
+              <div>
+                <a href="https://rp-darmstadt.hessen.de/irj/RPDA_Internet?cid=bd0bc0dafb5c5d10c47c461eafdaaaef">Regierungspräsidium Darmstadt<br> Abt. Arbeitsschutz und Umwelt Wiesbaden</a>
+
               </div>
             </td>
             <td rowspan="2" class="berg-img">
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Mecklenburg-Vorpommern</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Energie, Infrastruktur<br/> und Landesentwicklung
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.bergamt-mv.de/">Bergamt Stralsund</a>
+
               </div>
             </td>
           </tr>
           <tr>
           <td>
             <div class="explanation">
-              <span>Baden württemberg</span><br/>
+              <span>Niedersachsen</span><br/>
               <span>
-                ministerium für umwelt <br/>
-                klima und energiewirtschaft
+                Min. für Wirtschaft, <br/>Arbeit und Verkehr
+
               </span>
             </div>
             <div>
-              Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.lbeg.niedersachsen.de/startseite/">Landesamt für Bergbau,<br/> Energie und Geologie Niedersachsen</a>
             </div>
           </td>
           <td>
             <div class="explanation">
-              <span>Baden württemberg</span><br/>
+              <span>Nordrhein-Westfalen</span><br/>
               <span>
-                ministerium für umwelt <br/>
-                klima und energiewirtschaft
+                Min. für Wirtschaft, Energie,<br/> Industrie, Mittelstand und Handwerk
               </span>
             </div>
             <div>
-              Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.bezreg-arnsberg.nrw.de/energie_bergbau/">Bezirksreg. Arnsberg<br/> Abt. 6 Bergbau und Energie</a>
+
             </div>
           </td>
           </tr>
           <tr>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Rheinland-Pfalz</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Wirtschaft,<br/> Klimaschutz, Energie <br/>und Landesplanung
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.lgb-rlp.de/startseite.html">Landesamt für Geologie<br/> und Bergbau</a>
+
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Saarland</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Wirtschaft,<br/> Arbeit, Energie und Verkehr
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.saarland.de/7809.htm">Oberbergamt</a>
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Sachsen</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Staatsmin. für Wirtschaft,<br/> Arbeit und Verkehr
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.oba.sachsen.de/">Oberbergamt</a>
               </div>
             </td>
           </tr>
           <tr>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Sachsen-Anhalt</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Wissenschaft<br/> und Wirtschaft
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.lagb.sachsen-anhalt.de/">Landesamt für Geologie<br/> und Bergwesen</a>
+
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Schleswig-Holstein</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                  Min. für Energiewende,<br/> Landwirtschaft Umwelt <br/>und ländliche Räume
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+                <a href="http://www.schleswig-holstein.de/DE/Landesregierung/LLUR/Organisation/abteilungen/abteilung6.html">Landesamt für Bergbau, Energie und Geologie</a>
+
               </div>
             </td>
             <td>
               <div class="explanation">
-                <span>Baden württemberg</span><br/>
+                <span>Thüringen</span><br/>
                 <span>
-                  ministerium für umwelt <br/>
-                  klima und energiewirtschaft
+                 Min. für Landwirtschaft,<br/> Forsten, Umwelt<br/> und Naturschutz
+
                 </span>
               </div>
               <div>
-                Regierungspäs, Freiburg, Landsamt für Goelogi, Rohstoffe und Bergbau
+              <a href="http://www.thueringen.de/th8/landesbergamt/index.aspx">Landesbergamt</a>
+
               </div>
             </td>
           </tr>

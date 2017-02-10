@@ -50,7 +50,7 @@ collections:
     permalink: /explore/federal-revenue-by-company/:path/
   impressum:
     output: true
-    permalink: /impressum/:impressum/
+    permalink: /impressum/impressum/
   datenschutz:
     output: true
     permalink: /datenschutz/:datenschutz/

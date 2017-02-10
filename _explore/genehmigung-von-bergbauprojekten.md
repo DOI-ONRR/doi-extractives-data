@@ -43,7 +43,7 @@ nav_items:
                 <br/>
                 muss von der zuständigen Bergbehörde erteilt werden
                 <img class="left-arrow" src="{{ site.baseurl_root }}/img/genehmigung/pfeil_2.png"/>
-                <img class="icon-tab-1" src="{{ site.baseurl_root }}/img/tiles/placeholder.png"/>
+                <img class="icon-tab-1" src="{{ site.baseurl_root }}/img/genehmigung/head.png"/>
               </div>
               <div class="tab-bottom">
                 <div class="tab-bottom-top">

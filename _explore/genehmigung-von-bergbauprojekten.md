@@ -8,17 +8,10 @@ breadcrumb:
 nav_items:
   - name: title
     title: Seitenanfang
-  - name: hintergrundseite-bergbauberechtigungen
-    title: "Hintergrundseite: Bergbauberechtigungen"
-    subnav_items:
-    - name: bergbauberechtigungen
-      title: Bergbauberechtigungen
-    - name: tabelle-2
-      title: "Tabelle: Übersicht zu altem Bergrecht, Bergrecht in der DDR und neuem Bergrecht"
-  - name: hintergrundseite-zulassung
-    title: "Hintergrundseite: Zulassung eines Betriebsplans"
-  - name: wer-uberpruft
-    title: "Wer überprüft die Einhaltung der gesetzlichen Vorschriften?"
+  - name: Bergfreie
+    title: "Bergfreie und grundeigene Bodenschätze"
+  - name: Grundeigentümerbodenschätze
+    title: "Grundeigentümerbodenschätze"
 ---
 
 <main class="container-page-wrapper layout-state-pages">
@@ -35,7 +28,7 @@ nav_items:
         <p>
           Schritte zur Genehmigung bergbaulicher Vorhaben für bergfreie und grundeigene Bodenschätze
         </p>
-        <div class="tabs">
+        <div class="tabs" id="Bergfreie">
           <ul class="tab-links">
             <li class="active"><a href="#tab1">Bergfreie Bodenschätze</a></li>
             <li><a href="#tab2">Grundeigene Bodenschätze</a></li>
@@ -118,7 +111,7 @@ nav_items:
         </section>
         <section>
           <h3 style="margin-top: 30px;">Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümerbodenschätze</h3>
-          <div class="third-slide">
+          <div class="third-slide" id="Grundeigentümerbodenschätze">
             <div class="tab-bottom-top">
               <p>Grundeigentümerbodenschätze</p>
               <p>

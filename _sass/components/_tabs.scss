@@ -61,6 +61,10 @@
   padding: 40px 60px 40px 60px;
   position: relative;
 
+  a {
+    color: white;
+  }
+
   .left-arrow {
     height: 140px;
     position: absolute;
@@ -89,6 +93,47 @@
   }
 }
 
+.third-slide {
+  background-image: url('../img/genehmigung/background.png');
+  background-size: 100% 100%;
+  line-height: 100%;
+  position: relative;
+
+  .tab-bottom-top {
+    height: 100px;
+    a {
+      color: #435159;
+    }
+    img {
+      position: absolute;
+      right: 15px;
+      top: 100px;
+      height: 120px;
+      width: 80px;
+    }
+    p {
+      margin: auto;
+      width: 70%;
+      line-height: 100%;
+      margin-top: 20px;
+      color: black;
+      &:first-child {
+        font-size: 30px;
+        padding-top: 50px;
+      }
+    }
+ }
+ .tab-bottom-bottom {
+   img {
+     position: absolute;
+     right: 15px;
+     top: 100px;
+     height: 120px;
+     width: 80px;
+   }
+ }
+}
+
 .tab-bottom {
   position: relative;
   background-image: url('../img/genehmigung/background.png');
@@ -101,6 +146,9 @@
     width: 70%;
     height: 300px;
 
+    a {
+      color: #435159;
+    }
     p {
       &:first-child {
         font-size: 30px;

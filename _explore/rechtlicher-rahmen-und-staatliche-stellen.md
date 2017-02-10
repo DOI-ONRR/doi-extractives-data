@@ -120,12 +120,12 @@ nav_items:
               <div class="explanation">
                 <span>Hessen</span><br/>
                 <span>
-                 Min. für Umwelt,<br/> Klimaschutz, Landwirtschaft<br> und Verbraucherschutz
+                 Min. für Umwelt, Klimaschutz, <br/>Landwirtschaft und Verbraucherschutz
 
                 </span>
               </div>
               <div>
-                <a href="https://rp-darmstadt.hessen.de/irj/RPDA_Internet?cid=bd0bc0dafb5c5d10c47c461eafdaaaef">Regierungspräsidium Darmstadt<br> Abt. Arbeitsschutz und Umwelt Wiesbaden</a>
+                <a href="https://rp-darmstadt.hessen.de/irj/RPDA_Internet?cid=bd0bc0dafb5c5d10c47c461eafdaaaef">Regierungspräsidium Darmstadt<br/> Abt. Arbeitsschutz und Umwelt Wiesbaden</a>
 
               </div>
             </td>
@@ -175,7 +175,7 @@ nav_items:
               <div class="explanation">
                 <span>Rheinland-Pfalz</span><br/>
                 <span>
-                  Min. für Wirtschaft,<br/> Klimaschutz, Energie <br/>und Landesplanung
+                  Min. für Wirtschaft, Klimaschutz, <br/> Energie und Landesplanung
 
                 </span>
               </div>
@@ -227,7 +227,7 @@ nav_items:
               <div class="explanation">
                 <span>Schleswig-Holstein</span><br/>
                 <span>
-                  Min. für Energiewende,<br/> Landwirtschaft Umwelt <br/>und ländliche Räume
+                  Min. für Energiewende, Landwirtschaft<br/> Umwelt und ländliche Räume
 
                 </span>
               </div>
@@ -240,7 +240,7 @@ nav_items:
               <div class="explanation">
                 <span>Thüringen</span><br/>
                 <span>
-                 Min. für Landwirtschaft,<br/> Forsten, Umwelt<br/> und Naturschutz
+                 Min. für Landwirtschaft, Forsten, <br/>Umwelt und Naturschutz
 
                 </span>
               </div>

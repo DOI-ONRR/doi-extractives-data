@@ -278,3 +278,12 @@
     display: none;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .filters-wrapper_outer {
+    padding-top: 30px;
+  }
+  .filters-wrapper {
+    margin-top: 30px;
+  }
+}

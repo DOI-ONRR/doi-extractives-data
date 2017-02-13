@@ -110,10 +110,10 @@ nav_items:
         </div>
         </section>
         <section>
-          <h3 style="margin-top: 30px;">Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümerbodenschätze</h3>
+          <h3 style="margin-top: 30px;">Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümer bodenschätze</h3>
           <div class="third-slide" id="Grundeigentümerbodenschätze">
             <div class="tab-bottom-top">
-              <p>Grundeigentümerbodenschätze</p>
+              <p>Grundeigentümer bodenschätze</p>
               <p>
                 Besitznachweis für Grundstück z.B. Pachtvertrag muss vorliegen
               </p>

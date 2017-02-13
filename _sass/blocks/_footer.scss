@@ -238,5 +238,13 @@
 
   .footer-social_callout {
     margin-bottom: $base-padding;
-  }  
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #impressum-footer {
+    .container-page-wrapper {
+      margin-left: 2.25em;
+    }
+  }
 }

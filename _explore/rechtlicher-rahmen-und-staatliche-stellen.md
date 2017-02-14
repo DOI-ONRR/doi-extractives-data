@@ -345,7 +345,7 @@ nav_items:
                 Geregelt nach Bundesberggesetz<br />
                 § 3, Abs. 3
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span>§ 3, Abs. 4</span>
+                § 3, Abs. 4
               </td>
               <td>
                 Geregelt nach anderen Rechtsgebieten, z.B. Baurecht (Abgrabungsgesetz),

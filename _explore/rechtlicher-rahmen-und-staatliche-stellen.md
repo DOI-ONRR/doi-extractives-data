@@ -32,7 +32,9 @@ nav_items:
       <section style="position: relative;">
       <h2 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h2>
       <span>BMWi</span>
-      <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
+      <a href="http://www.bmwi.de/">
+        <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="BMWi">
+      </a>
       <table id="bergbehorden">
         <tbody>
           <tr>

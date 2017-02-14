@@ -1,4 +1,6 @@
-table {
-  overflow-x: scroll;
-  display: block;
+@media screen and (max-width: 480px) {
+  table {
+    overflow-x: scroll;
+    display: block;
+  }
 }

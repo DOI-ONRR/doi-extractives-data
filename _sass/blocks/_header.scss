@@ -252,3 +252,15 @@ header,
     width: 300px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .header-image {
+    width: 275px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-image {
+    width: 250px;
+  }
+}

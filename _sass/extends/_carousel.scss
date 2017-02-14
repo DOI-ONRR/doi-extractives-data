@@ -71,3 +71,10 @@
 .slick-dots {
   left: 0px;
 }
+
+@media screen and (max-width: 480px) {
+  .slick-slide p {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}

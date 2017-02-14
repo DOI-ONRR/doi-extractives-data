@@ -13,28 +13,25 @@
   </form>
 
   <ul class="nav_drawer-nav">
-      <li class="nav_drawer-nav_item {% if page.title == 'Home' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/">Home</a>
-      </li>
-      <li class="nav_drawer-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
-      </li>
-      <li class="nav_drawer-nav_item {% if page.permalink contains '/how-it-works/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>
-      </li>
-      <li class="nav_drawer-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
-      </li>
-      <li class="nav_drawer-nav_item nav_drawer-break {% if page.permalink contains '/case-studies/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
-      </li>
-      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom {% if page.permalink contains '/downloads/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/downloads/">Downloads</a>
-      </li>
-      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom" title="Open glossary">
-        <a href="javascript:void(0)" class="nav_drawer-nav_item_link js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
-      </li>
-
-    </ul>
+    {% capture domain_with_lang_prefix %}{{ site.baseurl_root }}{{ site.lang | url_lang_prefix  }}{% endcapture %}
+    <li class="nav_drawer-nav_item {% if page.title == 'Home' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ domain_with_lang_prefix }}/"> {% t 'menu.about' %} </a>
+    </li>
+    <li class="nav_drawer-nav_item {% if page.permalink contains '/explore/how-it-work/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ domain_with_lang_prefix }}/explore/how-it-work"> {% t 'menu.how-it-work' %} </a>
+    </li>
+    <li class="nav_drawer-nav_item {% if page.title == 'Daten entdecken' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ domain_with_lang_prefix }}/explore">{% t 'menu.explore-data' %}</a>
+    </li>
+    <li class="nav_drawer-nav_item">
+      <a class="nav_drawer-nav_item_link" href="http://www.d-eiti.de/de/" target="_blank">{% t 'menu.back' %}</a>
+    </li>
+    <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom {% if page.permalink contains '/downloads/' %}active{% endif %}">
+      <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/downloads/">Downloads</a>
+    </li>
+    <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom" title="Open glossary">
+      <a href="javascript:void(0)" class="nav_drawer-nav_item_link js-glossary-toggle" alt="this is the glossary drawer">Glossar</a>
+    </li>
+  </ul>
 
 </div>

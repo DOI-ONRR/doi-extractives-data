@@ -35,7 +35,11 @@ $(document).ready(function(){
             }
         },
         seriesColors: plotData.color,
-        legend:{ show: true },
+        legend:{
+          show: true,
+          location: $( window ).width() < 600 ? 's': 'e',
+          placement: 'inside'
+        },
         grid: {
             background: '#fff',
             drawBorder: false,

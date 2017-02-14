@@ -237,20 +237,52 @@
 }
 
 @media only screen and (max-width: em(600)) {
+  ol, ul {
+    padding-left: 0;
+  }
+  .tabs .tab-links li {
+    width: 40%;
+  }
+  .tab-top {
+    .icon-tab-1 {
+      height: 25%;
+      top:100px;
+    }
+  }
   .tab-bottom {
     .tab-bottom-top {
       p {
+        font-size: 14px;
+        line-height: 1rem;
         &:first-child {
-          font-size: 15px;
+          font-size: 16px;
         }
         &:last-child {
           font-size: 12px;
         }
       }
+      img {
+        height: 60px;
+        width: 40px;
+      }
     }
     .tab-bottom-bottom {
-      p {
-        font-size: 20px;
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  .third-slide {
+    .tab-bottom-top {
+      img {
+        height: 60px;
+        width: 40px;
+      }
+    }
+    .tab-bottom-bottom {
+      img {
+        width: 40px;
       }
     }
   }

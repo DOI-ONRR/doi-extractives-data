@@ -246,3 +246,9 @@ header,
   padding-top: 10px;
   color: black;
 }
+
+@media screen and (max-width: 480px) {
+  .header-image {
+    width: 300px;
+  }
+}

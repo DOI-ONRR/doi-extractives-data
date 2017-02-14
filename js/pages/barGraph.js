@@ -83,5 +83,11 @@ $(document).ready(function(){
         title: chartTitle
     });
     $(".jqplot-xaxis-tick").last().text('Mio. €');
+
+    if($( window ).width() < 600) {
+      $(".jqplot-point-label").css("left", $( window ).width() - 50);
+    } else {
+      $(".jqplot-point-label").css("left", "650px");
+    }
   }
 });

@@ -32,7 +32,9 @@ nav_items:
       <section style="position: relative;">
       <h2 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h2>
       <span>BMWi</span>
-      <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="Explore landing intro">
+      <a href="http://www.bmwi.de/">
+        <img src="{{ site.baseurl_root }}/img/bundesministerium.png" alt="BMWi">
+      </a>
       <table id="bergbehorden">
         <tbody>
           <tr>
@@ -279,11 +281,13 @@ nav_items:
           Für die letztgenannte Gruppe der Grundeigentümerbodenschätze sind je nach Bundesland, Rohstoff und Art des Abbaus staatliche Stellen der mittleren und unteren Verwaltungsebene zuständig.
         </p>
         <h3 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h3>
-        <table>
+        <table class="article_table">
           <tbody>
             <tr>
-              <td></td>
-              <td colspan="3" align="center"><strong>Bodenschätze</strong></td>
+              <th></th>
+              <th></th>
+              <th align="center"><strong>Bodenschätze</strong></th>
+              <th></th>
             </tr>
             <tr>
               <td><strong>Rechtliche Untergliederung</strong></td>

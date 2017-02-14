@@ -68,19 +68,19 @@ nav_items:
           Das Bergrechtssystem der DDR kannte nur die volkseigenen  mineralischen Rohstoffe und die sonstigen mineralischen Rohstoffe. Die volkseigenen Rohstoffe umfassten im Wesentlichen die nach bundesdeutschem Gesetz bergfreien und grundeigenen Bodenschätze und standen im Volkseigentum. Die sonstigen mineralischen Rohstoffe umfassten im Wesentlichen die Grundeigentümerbodenschätze und waren dem Grundeigentum zugeordnet. Mit der Verleihungs-Verordnung vom 15.08.1990 wurde die Grundlage geschaffen, Bergbauberechtigungen volkseigener mineralischer Rohstoffe in bergfreie Bodenschätze umzuwandeln und diese somit im Rechtssystem im wiedervereinigten Deutschland anzuerkennen. Die übertragenen Bergbauberechtigungen gelten als Bergwerkseigentum. Sie sind wie die Bergbauberechtigungen nach altem Recht unbefristet sowie von der Feldes- und Förderabgabe befreit (s. § 149 und § 151 BBergG). Im Unterschied zu den alten Bundesländern erstrecken sich die Altrechte (s. Abschnitt zu Bergbauberechtigung nach altem Recht) in den neuen Bundesländern nicht nur bis 1980, sondern auf die bis 1990 erkundeten Lagerstätten. Sie umfassen zudem nicht nur die bergfreien, sondern auch die grundeigenen Bodenschätze. Die  Rechte zur Aufsuchung und Gewinnung von grundeigenen Bodenschätzen wurden nach DDR-Recht ebenfalls über staatlich vergebene Bergbauberechtigungen geregelt.
         </p>
         <p><strong>Tabelle:</strong> Übersicht zu altem Bergrecht, Bergrecht in der DDR und neuem Bergrecht</p>
-        <table>
+        <table class="article_table">
           <tbody>
             <tr>
-              <td></td>
-              <td>
+              <th></th>
+              <th>
                 Berechtigungen nach altem Bergrecht (BRD)
-              </td>
-              <td>
+              </th>
+              <th>
                 Berechtigungen nach Bergrecht in der DDR
-              </td>
-              <td>
+              </th>
+              <th>
                 Berechtigungen nach neuem Bergrecht
-              </td>
+              </th>
             </tr>
             <tr>
               <td><strong>Rohstoffbezeichnung</strong></td>

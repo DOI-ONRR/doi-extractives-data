@@ -281,11 +281,13 @@ nav_items:
           Für die letztgenannte Gruppe der Grundeigentümerbodenschätze sind je nach Bundesland, Rohstoff und Art des Abbaus staatliche Stellen der mittleren und unteren Verwaltungsebene zuständig.
         </p>
         <h3 id="tabelle-1">Rechtliche Unterteilung der Bodenschätze in Deutschland </h3>
-        <table>
+        <table class="article_table">
           <tbody>
             <tr>
-              <td></td>
-              <td colspan="3" align="center"><strong>Bodenschätze</strong></td>
+              <th></th>
+              <th></th>
+              <th align="center"><strong>Bodenschätze</strong></th>
+              <th></th>
             </tr>
             <tr>
               <td><strong>Rechtliche Untergliederung</strong></td>

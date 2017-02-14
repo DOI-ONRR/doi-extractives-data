@@ -40,25 +40,25 @@ nav_items:
         </div>
         <section id="tabelle-1" style="position: relative;">
         <p><strong>Tabelle:</strong> Beschäftigte</p>
-          <table>
+          <table class="article_table">
             <tbody>
               <tr>
-                <td></td>
-                <td>
+                <th></th>
+                <th>
                   <strong>unter Tage</strong>
-                </td>
-                <td>
+                </th>
+                <th>
                   <strong>in Tagebauen</strong>
-                </td>
-                <td>
+                </th>
+                <th>
                   <strong>über Tage</strong>
-                </td>
-                <td>
+                </th>
+                <th>
                   <strong>Insgesamt</strong>
-                </td>
-                <td>
+                </th>
+                <th>
                   <strong>darunter Auszubildende</strong>
-                </td>
+                </th>
               </tr>
               <tr>
                 <td>

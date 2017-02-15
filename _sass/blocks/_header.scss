@@ -247,6 +247,11 @@ header,
   color: black;
 }
 
+@media screen and (max-width: 870px) {
+  .header-nav_bottom {
+    padding-left: 70px !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .header-image {
     width: 300px;

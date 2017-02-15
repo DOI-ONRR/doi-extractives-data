@@ -76,12 +76,7 @@
 
       {{ content }}
     </main>
-    {% if page.title == "Impressum"%}
     {% include layout/impressum_footer.html %}
-    {% else %}
-    {% include layout/footer.html %}
-    {% endif %}
-
     {% assign ga_id = site.google_analytics[site.branch]|default:site.google_analytics.default %}
     {% if ga_id %}{% include google_analytics.html id=ga_id %}{% endif %}
 

@@ -23,11 +23,12 @@ nav_items:
     <div class="container-left-9">
       <section id="intro" style="position: relative;">
         <p>
-          Die Verfahren zur Zulas­sung und Aufsicht von Bergbauvorhaben sind in Deutschland nicht für alle Bodenschätze gleich geregelt. Sie variieren je nach Rohstoffart und deren rechtlicher Verankerung in Bund und Ländern.
+          Die Verfahren zur Zulassung und Aufsicht von Bergbauvorhaben sind in Deutschland nicht für alle Bodenschätze gleich geregelt. Sie variieren je nach Rohstoffart und deren rechtlicher Verankerung in Bund und Ländern.
         </p>
         <p>
           Schritte zur Genehmigung bergbaulicher Vorhaben für bergfreie und grundeigene Bodenschätze
         </p>
+        <br/>
         <div class="tabs" id="Bergfreie">
           <ul class="tab-links">
             <li class="active"><a href="#tab1">Bergfreie Bodenschätze</a></li>
@@ -110,6 +111,8 @@ nav_items:
         </div>
         </section>
         <section>
+          <br/>
+          <br/>
           <h3 style="margin-top: 30px;">Schritte zur Genehmigung von bergbaulichen Vorhaben für Grundeigentümer bodenschätze</h3>
           <div class="third-slide" id="Grundeigentümerbodenschätze">
             <div class="tab-bottom-top">

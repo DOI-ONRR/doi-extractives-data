@@ -9,9 +9,7 @@ description: >
 url: https://useiti.doi.gov
 
 # app version number
-version: v2.1.5
-
-beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
+version: v2.1.6
 
 sass:
   style: nested

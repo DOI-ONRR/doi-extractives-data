@@ -98,9 +98,11 @@
 
 .tile-interaktiv {
   &::after { background-image: url('../img/tiles/17_interaktiv-h.png') }
+  &.disabled::after { background-image: url('../img/tiles/17_interaktiv-i.png') }
 }
 .tile-ges-rohstoffprod {
   &::after { background-image: url('../img/tiles/18_ges-rohstoffprod-h.png') }
+  &.disabled::after { background-image: url('../img/tiles/18_ges-rohstoffprod-i.png') }
 }
 
 .tile-einnahmen-rohstoff {

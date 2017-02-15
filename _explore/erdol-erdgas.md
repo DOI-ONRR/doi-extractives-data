@@ -40,7 +40,7 @@ nav_items:
   <section class="container" style="position: relative;">
 
     {% include breadcrumb.html %}
-    <h1 id="title">Erdöl un Erdgas</h1>
+    <h1 id="title">Erdöl und Erdgas</h1>
 
     <div class="container-left-9">
       <section id="erdol" style="position: relative;">

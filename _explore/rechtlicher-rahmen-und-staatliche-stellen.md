@@ -29,6 +29,8 @@ nav_items:
           Die Rohstoffgewinnung wird in Deutschland vor allem durch das Bundesberggesetz (BBergG) geregelt, welches 1982 die alten Berggesetze der Bundesländer sowie zahlreiche bergrechtliche Nebengesetze des Bundes und der Länder abgelöst hat. Die Federführung für das Bergrecht innerhalb der Bundesregierung liegt beim Bundeswirtschaftsministerium. Die Bergbehörden der Bundesländer führen das Gesetz jedoch aus und sind je nach Bodenschatz für die Genehmigung und Aufsicht der bergbaulichen Tätigkeit zuständig. Um den Besonderheiten ihrer Region gerecht zu werden, haben die Bundesländer teils eigene Bergverordnungen verabschiedet.
         </p>
       </section>
+      <br/>
+      <br/>
       <section style="position: relative;">
       <h2 id="zustandige-staatliche-stellen">Zuständige staatliche Stellen:</h2>
       <a href="http://www.bmwi.de/">

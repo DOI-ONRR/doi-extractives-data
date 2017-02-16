@@ -60,6 +60,10 @@ td {
       border-bottom: 2px solid $mid-gray;
     }
   }
+
+  .numeric {
+    text-align: right;
+  }
 }
 
 .disbursements-table {

@@ -329,13 +329,13 @@ svg {
     border-left: 4px solid $white;
     border-right: 4px solid $white;
 
-    &:not(.ribbon-card-column) .ribbon-card-button {
-      float: none;
-      position: static;
-    }
-
     &:not(.ribbon-card-column) {
       border-top: 0;
+
+      .ribbon-card-button {
+        float: none;
+        position: static;
+      }
     }
   }
 

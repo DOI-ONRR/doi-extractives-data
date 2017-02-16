@@ -6,7 +6,7 @@ permalink: /how-it-works/federal-revenue-by-company/2015/
 title_display: Federal Revenue by Company
 ---
 
-<section id="companies" data-year="{{ page.year }}" class="explore-subpage container container-margin">
+<section id="companies" data-year="{{ page.report_year }}" class="explore-subpage container container-margin">
   {% include explore-subpage-tabs.html docs=site.federal-revenue-by-company %}
 
   <section class="container-page-wrapper">
@@ -19,13 +19,13 @@ title_display: Federal Revenue by Company
 
         <h1>Federal Revenue by Company</h1>
 
-        <p>Explore revenues on federal lands and waters in {{ page.year }} by commodity, revenue type, and company.</p>
+        <p>Explore revenues on federal lands and waters in {{ page.report_year }} by commodity, revenue type, and company.</p>
 
         <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
 
         <p>Choose a commodity or revenue type to filter the list of revenues. To search for a specific company, start typing the name of the company.</p>
 
-        <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
+        <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">
           <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </div>
@@ -41,7 +41,6 @@ title_display: Federal Revenue by Company
           <div class="filters-heading">
             <h2 class="h3">Filter revenue</h2>
           </div>
-
 
           <div class="container-left-6">
             <div id="commodity-filter" class="filter">
@@ -67,7 +66,7 @@ title_display: Federal Revenue by Company
           <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
           from
           <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
-          extraction on federal lands ({{ page.year }})
+          extraction on federal lands ({{ page.report_year }})
         </h1>
 
         <div class="container">
@@ -83,7 +82,7 @@ title_display: Federal Revenue by Company
           <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
           from
           <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
-          extraction on federal lands ({{ page.year }})
+          extraction on federal lands ({{ page.report_year }})
         </h1>
       </div>
 

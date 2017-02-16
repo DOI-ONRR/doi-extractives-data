@@ -65,6 +65,11 @@
   }
 }
 
+.ribbon-card,
+.ribbon-card-column {
+  border-top: 4px solid $white;
+}
+
 .ribbon-card-top {
   background-color: $gray-pale;
   border-bottom: 0;
@@ -186,8 +191,16 @@
     position: relative;
 
     &.ribbon-card-home {
+      @include respond-to(medium-down) {
+        &:last-of-type {
+          padding-top: 0;
+        }
+      }
+
       @include respond-to(tiny-down) {
-        padding-top: $base-padding-extra;
+        &:last-of-type {
+          padding-top: $base-padding-extra;
+        }
       }
     }
   }
@@ -201,10 +214,6 @@
     &.ribbon-hero-home {
       padding-bottom: $base-padding-jumbo;
       padding-top: $base-padding-extra;
-
-      @include respond-to(tiny-to-medium) {
-        padding-bottom: 0;
-      }
     }
 
     &.ribbon-hero-column {
@@ -278,7 +287,7 @@ svg {
 
   .ribbon-card:not(.ribbon-card-column) {
     .ribbon-card-button {
-      bottom: 50%;
+      bottom: 60%;
       float: left;
       left: 12.5%;
       margin: 0;
@@ -323,6 +332,10 @@ svg {
     &:not(.ribbon-card-column) .ribbon-card-button {
       float: none;
       position: static;
+    }
+
+    &:not(.ribbon-card-column) {
+      border-top: 0;
     }
   }
 
@@ -391,7 +404,6 @@ svg {
 }
 
 @include respond-to(huge-up) {
-
   .ribbon-card-top {
     border-bottom: 4px solid $white;
   }
@@ -411,6 +423,8 @@ svg {
     &.ribbon-card-column {
       border-left: 4px solid $white;
       border-right: 4px solid $white;
+      border-top: 0;
+
 
       .ribbon-card-top {
         padding-top: 0;

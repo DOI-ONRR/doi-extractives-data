@@ -40,12 +40,24 @@ td {
 
 .table-basic {
   border: 0;
+  font-size: 0.8rem;
   width: 100%;
 
   td,
   th {
     border: 0;
+  }
+  
+  td {
     text-align: left;
+  }
+  
+  th {
+    text-align: right;
+    
+    &:first-of-type {
+      text-align: left;
+    }  
   }
 
   tr {

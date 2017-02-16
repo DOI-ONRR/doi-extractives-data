@@ -97,8 +97,8 @@ Natural resources are increasingly a key source of income for many American Indi
     <td>Coal-Bituminous-Raw (ton)</td>
     <td class="numeric">6,034</td>
     <td class="numeric">935</td>
-    <td class="numeric">19,675,009</td>
-    <td class="numeric">13,925,942</td>
+    <td class="numeric">-</td>
+    <td class="numeric">-</td>
   </tr>
   <tr>
     <td>Copper Concentrate (ton)</td>

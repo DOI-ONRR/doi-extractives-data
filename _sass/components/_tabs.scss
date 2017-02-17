@@ -53,6 +53,9 @@
     span {
       font-size: 30px;
     }
+    div {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -68,9 +71,10 @@
 .tab-top {
   background-color: #0a88c3;
   color: white;
-  font-size: 20px;
+  font-size: 1.125rem;
   padding: 40px 60px 40px 60px;
   position: relative;
+  font-weight: 200;
 
   a {
     color: white;
@@ -127,7 +131,7 @@
       margin: auto;
       width: 70%;
       line-height: 100%;
-      margin-top: 20px;
+      margin-top: 10px;
       &:first-child {
         font-size: 30px;
         padding-top: 50px;
@@ -214,7 +218,7 @@
   }
 
   .tab-bottom-text {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 25px 0;
     margin-bottom: 30px;
     background-color: #0a88c3;
     p {

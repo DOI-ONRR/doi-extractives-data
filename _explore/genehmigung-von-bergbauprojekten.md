@@ -25,9 +25,9 @@ nav_items:
         <p>
           Die Verfahren zur Zulassung und Aufsicht von Bergbauvorhaben sind in Deutschland nicht für alle Bodenschätze gleich geregelt. Sie variieren je nach Rohstoffart und deren rechtlicher Verankerung in Bund und Ländern.
         </p>
-        <p>
+        <h3>
           Schritte zur Genehmigung bergbaulicher Vorhaben für bergfreie und grundeigene Bodenschätze
-        </p>
+        </h3>
         <br/>
         <div class="tabs" id="Bergfreie">
           <ul class="tab-links">
@@ -76,7 +76,7 @@ nav_items:
             <div id="tab2" class="tab">
               <div class="tab-top">
                 <span>Besitznachweis</span> <br/>
-                für Grundstück z.B. Pachtvertrag ist der Bergbehörde vorzulegen
+                <div>für Grundstück z.B. Pachtvertrag ist der Bergbehörde vorzulegen</div>
                 <img class="right-arrow" src="{{ site.baseurl_root }}/img/genehmigung/pfeil_1.png"/>
                 <img class="icon-tab-2" src="{{ site.baseurl_root }}/img/genehmigung/bagger-icon.png"/>
               </div>
@@ -135,7 +135,7 @@ nav_items:
                 <icon class="icon-book"></icon>
               </span>
               den
-              <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+              <span class="term term_end" data-term="Abgrabungsgesetze" title="Click to define" tabindex="0">
               landesrechtlichen Abgrabungsgesetzen
                 <icon class="icon-book"></icon>
               </span>

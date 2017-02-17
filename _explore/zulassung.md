@@ -63,7 +63,7 @@ nav_items:
         </p>
         <p>
           Die Zulassung eines solchen Rahmenbetriebsplans erfolgt im Zuge eines erfolgreich abgeschlossenen
-          <span class="term term_end" data-term="Planfeststellungsverfahrens" title="Click to define" tabindex="0">
+          <span class="term term_end" data-term="Planfeststellungsverfahren" title="Click to define" tabindex="0">
             Planfeststellungsverfahrens
             <icon class="icon-book"></icon>
           </span>

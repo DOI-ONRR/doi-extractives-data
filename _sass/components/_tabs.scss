@@ -117,7 +117,6 @@
       width: 70%;
       line-height: 100%;
       margin-top: 20px;
-      color: black;
       &:first-child {
         font-size: 30px;
         padding-top: 50px;
@@ -244,7 +243,7 @@
     width: 40%;
   }
   .tab-top {
-    .icon-tab-1 {
+    .icon-tab-1, .icon-tab-2 {
       height: 25%;
       top:100px;
     }
@@ -252,7 +251,7 @@
   .tab-bottom {
     .tab-bottom-top {
       p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1rem;
         &:first-child {
           font-size: 16px;
@@ -270,20 +269,48 @@
       img {
         width: 45px;
         height: 45px;
+        bottom: 80px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .tab-bottom-text {
+      p {
+        font-size: 15px;
+        line-height: 1.125rem;
       }
     }
   }
   .third-slide {
     .tab-bottom-top {
+      color: #435159;
       img {
         height: 60px;
         width: 40px;
+      }
+      p {
+        font-size: 15px;
+        &:first-child {
+          font-size: 20px;
+        }
       }
     }
     .tab-bottom-bottom {
       img {
         width: 40px;
       }
+      p {
+        &:first-child {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .third-slide-bottom {
+    p {
+      font-size: 15px;
+      line-height: 1.125rem;
     }
   }
 }

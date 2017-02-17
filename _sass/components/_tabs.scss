@@ -98,7 +98,7 @@
   background-size: 100% 100%;
   line-height: 100%;
   position: relative;
-  height: 450px;
+  height: 300px;
 
   .tab-bottom-top {
     height: 200px;
@@ -108,7 +108,7 @@
     img {
       position: absolute;
       right: 15px;
-      top: 100px;
+      top: 45px;
       height: 120px;
       width: 80px;
     }
@@ -126,7 +126,7 @@
  }
  .tab-bottom-bottom {
    position: relative;
-   top: 50px;
+   top: -50px;
 
    img {
      position: absolute;
@@ -151,7 +151,7 @@
 .third-slide-bottom {
   background-color: #0a88c3;
   position: relative;
-  top: -10px;
+  top: -2px;
 
   p {
     margin: auto;
@@ -217,7 +217,7 @@
   .tab-bottom-bottom {
     margin: auto;
     width: 70%;
-    height: 120px;
+    height: 65px;
 
     p {
       font-size: 30px;

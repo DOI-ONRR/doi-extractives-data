@@ -272,7 +272,7 @@ nav_items:
               <icon class="icon-book"></icon>
             </span>
              oder nach landesrechtlichen Bestimmungen (z.B. den
-             <span class="term term_end" data-term="Abgrabungsgesetzen" title="Click to define" tabindex="0">
+             <span class="term term_end" data-term="Abgrabungsgesetze" title="Click to define" tabindex="0">
                Abgrabungsgesetzen
                <icon class="icon-book"></icon>
              </span>

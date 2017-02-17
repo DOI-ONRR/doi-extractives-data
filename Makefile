@@ -223,6 +223,18 @@ data/national_self_employment.yml:
 			-c _meta/state_jobs.yml \
 			-o _$@
 
+data/tribal_revenue.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, commodity, revenue_type, \
+			ROUND(SUM(revenue), 2) AS revenue \
+		FROM tribal_revenue \
+		GROUP BY year, commodity, revenue_type \
+		ORDER BY year, revenue DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/tribal_revenue.yml \
+			-o _$@
+
 data/revenue: \
 	data/county_revenue \
 	data/national_revenues.yml \
@@ -233,7 +245,8 @@ data/revenue: \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
 	data/offshore_revenues_by_type.yml \
-	data/reconciliation.yml
+	data/reconciliation.yml \
+	data/tribal_revenue.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -618,6 +631,11 @@ tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
 	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n civil_penalties_revenue -i $$tmp && \
 	rm $$tmp
+
+tables/tribal_revenue: data/revenue/tribal.tsv
+	@$(call drop-table,tribal_revenue)
+	$(tito) --map ./data/revenue/transform-tribal.js -r tsv $^ \
+		| $(tables) -t ndjson -n tribal_revenue
 
 tables/federal_production: data/federal-production/federal-production.tsv
 	@$(call drop-table,federal_local_production)

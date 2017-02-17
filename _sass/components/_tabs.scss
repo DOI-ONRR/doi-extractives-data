@@ -50,6 +50,17 @@
 #tab2 {
   .tab-top {
     text-align: right;
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+#tab1 {
+  .tab-top {
+    a {
+      font-size: 30px;
+    }
   }
 }
 
@@ -311,6 +322,21 @@
     p {
       font-size: 15px;
       line-height: 1.125rem;
+    }
+  }
+  #tab2 {
+    .tab-top {
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+
+  #tab1 {
+    .tab-top {
+      a {
+        font-size: 25px;
+      }
     }
   }
 }

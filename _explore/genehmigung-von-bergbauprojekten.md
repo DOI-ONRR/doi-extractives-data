@@ -75,7 +75,7 @@ nav_items:
             </div>
             <div id="tab2" class="tab">
               <div class="tab-top">
-                Besitznachweis <br/>
+                <span>Besitznachweis</span> <br/>
                 für Grundstück z.B. Pachtvertrag ist der Bergbehörde vorzulegen
                 <img class="right-arrow" src="{{ site.baseurl_root }}/img/genehmigung/pfeil_1.png"/>
                 <img class="icon-tab-2" src="{{ site.baseurl_root }}/img/genehmigung/bagger-icon.png"/>

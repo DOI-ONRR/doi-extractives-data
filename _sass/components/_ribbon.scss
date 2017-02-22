@@ -27,7 +27,7 @@
   background-color: $gray-pale;
   border: 0;
   padding-bottom: 0;
-  padding-top: $base-padding-extra;
+  padding-top: 0;
   text-align: center;
 
   &.ribbon-card-column {
@@ -42,8 +42,6 @@
   }
 
   &.ribbon-card-has-image {
-    padding-top: 0;
-
     .ribbon-card-top {
       margin: 0;
       padding-top: 0;
@@ -191,15 +189,11 @@
     position: relative;
 
     &.ribbon-card-home {
-      @include respond-to(medium-down) {
+      padding-top: $base-padding-extra;
+
+      @include respond-to(tiny-to-medium) {
         &:last-of-type {
           padding-top: 0;
-        }
-      }
-
-      @include respond-to(tiny-down) {
-        &:last-of-type {
-          padding-top: $base-padding-extra;
         }
       }
     }
@@ -304,8 +298,6 @@ svg {
 
     &.ribbon-card-has-image {
       .ribbon-card-top {
-        padding-top: 0;
-
         .ribbon-card-image {
           padding-left: 30%;
           padding-right: 30%;
@@ -345,7 +337,6 @@ svg {
 
     .ribbon-card {
       align-self: stretch;
-      padding-top: $base-padding-large;
       position: relative;
     }
 
@@ -419,7 +410,12 @@ svg {
     }
   }
 
+  .ribbon .ribbon-card {
+    padding-top: $base-padding-large;
+  }
+
   .ribbon-card {
+
     &.ribbon-card-column {
       border-left: 4px solid $white;
       border-right: 4px solid $white;

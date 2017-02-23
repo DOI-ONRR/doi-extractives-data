@@ -42,6 +42,11 @@
   }
 
   &.ribbon-card-has-image {
+
+    @include respond-to(tiny-down) {
+      padding-top: $base-padding-large;
+    }
+
     .ribbon-card-top {
       margin: 0;
       padding-top: 0;

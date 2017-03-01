@@ -33,8 +33,6 @@ footer,
   }
 }
 
-
-
 .footer-para {
   margin-bottom: $base-padding-large;
 }
@@ -43,6 +41,10 @@ footer,
   color: $white;
   font-weight: $weight-bold;
   margin-bottom: 0;
+}
+
+.footer-para_callout-bigger {
+  font-size: 1.125rem;
 }
 
 .footer-para_last {

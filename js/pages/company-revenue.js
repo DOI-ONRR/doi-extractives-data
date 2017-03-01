@@ -53,7 +53,7 @@
   if (!year) {
     throw new Error('No year found in', root.node());
   }
-  var dataUrl = eiti.data.path + 'company/revenue/' + year + '.tsv';
+  var dataUrl = '../../../data/company-revenue/output/' + year + '.tsv';
 
   var model = eiti.explore.model(dataUrl)
     .transform(removeRevenueTypePrefix)

@@ -29,3 +29,17 @@
         '2013': 9758659200
         '2014': 10799703775
         '2015': 11323250675
+    Salt (tons):
+      name: Salt
+      units: tons
+      volume:
+        '2006': null
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null

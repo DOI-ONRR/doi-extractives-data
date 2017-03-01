@@ -4,6 +4,7 @@
 {% assign caption = include.caption %}
 {% assign toggle = include.toggle %}
 {% assign units = include.units %}
+{% assign year = include.year | default: year | default: '2015' %}
 
 {% if _inherit_width %}
   {% assign __width = '' %}
@@ -15,109 +16,153 @@
   {% assign _viewbox_list = _viewbox | split: ' ' | to_f %}
   {% assign breakpoint_width = _viewbox_list[2] %}
   {% assign _height = _viewbox_list[3] %}
-  {% assign breakpoint_height = _viewbox_list[3] | times:1.5 %}
+  {% assign breakpoint_height = _viewbox_list[3] | times: 2.5 %}
   {% capture is_wide %}
     {% if breakpoint_width > breakpoint_height %}wide{% endif %}
   {% endcapture %}
   {% assign is_wide = is_wide | strip %}
 {% endif %}
 
-{% if is_wide != 'wide' %}
-  {% assign _width = 65.88078 | to_f %}
+{% capture data_dimensions %}
+  {{ _height | divided_by:breakpoint_width | to_f }}
+{% endcapture %}
+
+{% if is_wide == 'wide' %}
+  {% assign media_width = 100 %}
+{% else %}
+  {% assign media_width = 65.88078 | to_f %}
 {% endif %}
 
-<div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
-  style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
-  <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
-    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-    {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
-    {% capture offshore_svg %}{{ site.baseurl }}/maps/offshore/all.svg{% endcapture %}
-    <g class="states features">
-      <use xlink:href="{{ states_svg }}#states"></use>
-    </g>
-    <g class="states mesh">
-      <use xlink:href="{{ states_svg }}#states-mesh"></use>
-    </g>
+{% assign additional_padding = data_dimensions | times: 1.8 %}
+{% assign padding_bottom = media_width | times: data_dimensions | plus: additional_padding %}
 
-    <g class="regions features">
-      <use xlink:href="{{ offshore_svg }}"></use>
-    </g>
-
-    <g class="regions features">
-      <use xlink:href="{{ offshore_svg }}#{{ region_id }}"></use>
-    </g>
-
-    <g class="regions mesh">
-      <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
-    </g>
-
-    {% if include.areas %}
-      {% assign keys = include.value %}
-      {% for area in include.areas %}
-        {% assign area_id = area[0] %}
-        {% if include.href %}<a xlink:href="{{ include.href | format_url: area_id }}">{% endif %}
-        {% assign value = area[1] | get: keys %}
-
-        {% assign year_values = null %}
-        {% if include.years %}
-          {% assign year_values = area[1] | get: include.years %}
-          {% if include.years_property %}
-            {% assign year_values = year_values | map_hash: include.years_property %}
-          {% endif %}
+<div class="container">
+  <div is="eiti-tooltip-wrapper"
+       tooltip-style="subtle"
+       cursor-offset="10"
+       class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
+    style="padding-bottom: {{ padding_bottom }}%;"{% endif %} data-dimensions="{{ _height | divided_by: breakpoint_width }}">
+    <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+      {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+      {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
+      {% capture offshore_svg %}{{ site.baseurl }}/maps/offshore/all.svg{% endcapture %}
+      <g class="states features">
+        {% if page.neighbors %}
+          {% for neighbor in page.neighbors %}
+        <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+          {% endfor %}
+        {% else %}
+        <use xlink:href="{{ states_svg }}#states"></use>
         {% endif %}
-
-        {% if year_values %}
-          <g class="county feature"
-            data-fips="{{ area_id }}"
-            data-value='{{ value | jsonify }}'
-            data-year-values='{{ year_values | jsonify }}'>
-            <title>{{ area[1].name }}</title>
-            <use xlink:href="{{ offshore_svg }}#{{ area_id }}"></use>
-          </g>
+      </g>
+      <g class="states mesh">
+        {% if page.neighbors %}
+          {% for neighbor in page.neighbors %}
+        <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+          {% endfor %}
+        {% else %}
+        <use xlink:href="{{ states_svg }}#states-mesh"></use>
         {% endif %}
-        {% if include.href %}</a>{% endif %}
-      {% endfor %}
+      </g>
+
+      <g class="regions features">
+        <use xlink:href="{{ offshore_svg }}"></use>
+      </g>
+
+      <g class="regions features">
+        <use xlink:href="{{ offshore_svg }}#{{ region_id }}"></use>
+      </g>
+
+      {% if include.areas %}
+        {% if include.areas %}
+          {%
+            include offshore-area-feature.html
+            value= include.value
+            years=include.years
+            years_property=include.years_property
+            areas=include.areas
+            href=include.href
+          %}
+        {% endif %}
+      {% endif %}
+
+      <g class="regions mesh">
+        <use xlink:href="{{ offshore_svg }}#{{ region_id }}-mesh"></use>
+      </g>
+
+      {% if include.areas %}
+        {% if include.areas %}
+          {%
+            include offshore-area-feature.html
+            value= include.value
+            years=include.years
+            years_property=include.years_property
+            areas=include.areas
+            href=include.href
+            only_stroke=true
+          %}
+        {% endif %}
+      {% endif %}
+    </svg>
+
+    {% if include.toggle %}
+      <h4 class="details-container">
+        <button is="aria-toggle"
+          aria-controls="{{ include.toggle }}"
+          aria-expanded="false">
+            <span class="hide-expanded">
+              <i class="icon icon-plus-sm"></i>
+              {% if include.toggle_text %}
+                {{ include.toggle_text_hidden }}
+              {% else %}Show table{% endif %}
+            </span>
+            <span class="show-expanded">
+              <i class="icon icon-dash-sm"></i>
+              {% if include.toggle_text %}
+                {{ include.toggle_text_visible }}
+              {% else %}Hide table{% endif %}
+            </span>
+        </button>
+      </h4>
     {% endif %}
-  </svg>
+  </div>
 
-  {% if include.toggle %}
-    <h4 class="details-container">
-      <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text}}
-        {% else %}Show table{% endif %}
-      </button>
-    </h4>
-  {% endif %}
-</div>
+  <div class="legend-container {{ is_wide }}">
+    {% if include.caption %}
+      <figcaption class="legend-data">
+        {{ include.caption }}
+      </figcaption>
+      <figcaption class="legend-no-data" aria-hidden="true">
+        There is no data for {{ region_name }} in <span data-year="{{ year }}" >{{ year }}</span>.
+        Select a new year to populate the map.
+      </figcaption>
+      <figcaption class="legend-withheld" aria-hidden="true">
+        Area-level data for <span data-year="{{ year }}" >{{ year }}</span> is withheld.
+      </figcaption>
+    {% endif %}
 
-<div class="legend-container {{ is_wide }}">
-  {% if include.caption %}
-    <figcaption class="legend-data">
-      {{ include.caption }}
-    </figcaption>
-    <figcaption class="legend-no-data" aria-hidden="true">
-      There is no data for {{ region_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
-      Select a new year to populate the map.
-    </figcaption>
-    <figcaption class="legend-withheld" aria-hidden="true">
-      Area-level data for <span data-year="{{ year }}" >{{ year }}</span> is withheld.
-    </figcaption>
-  {% endif %}
+    <svg class="legend-svg"></svg>
 
-  <svg class="legend-svg"></svg>
+  </div>
+</div><!-- .container -->
 
-  {% if include.toggle %}
-    <h4 class="details-container">
-      <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text}}
-        {% else %}Show table{% endif %}
-      </button>
-    </h4>
-  {% endif %}
-</div>
+{% if include.toggle %}
+  <h4 class="details-container">
+    <button is="aria-toggle"
+      aria-controls="{{ include.toggle }}"
+      aria-expanded="false">
+        <span class="hide-expanded">
+          <i class="icon icon-plus-sm"></i>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_hidden }}
+          {% else %}Show table{% endif %}
+        </span>
+        <span class="show-expanded">
+          <i class="icon icon-dash-sm"></i>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_visible }}
+          {% else %}Hide table{% endif %}
+        </span>
+    </button>
+  </h4>
+{% endif %}

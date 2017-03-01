@@ -13,44 +13,88 @@
 {% assign commodity_groups = site.data.commodities.groups %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}
-{% assign minerals_list = commodity_groups.minerals.commodities %}
+{% assign other_product_list = commodity_groups.other.commodities %}
 
 {% assign oilgas_exists = false %}
 {% assign coal_exists = false %}
-{% assign minerals_exists = false %}
 {% assign geothermal_exists = false %}
 {% assign wind_exists = false %}
-{% assign other_exists = false %}
+{% assign other_product_exists = false %}
 {% assign all_exists = false %}
 
 {% for commodity in revenue_types %}
   {% assign commodity_name = commodity[0] %}
+  {% assign commodity_values = commodity[1] %}
   {% if oilgas_list contains commodity_name %}
-    {% assign oilgas_exists = true %}
+    {% for oilgas_name in oilgas_list %}
+      {% if commodity_name == oilgas_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign oilgas_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
-  {% if minerals_list contains commodity_name %}
-    {% assign minerals_exists = true %}
+  {% if other_product_list contains commodity_name %}
+    {% for other_product_name in other_product_list %}
+      {% if commodity_name == other_product_name %}
+        {% for type in commodity_values %}
+          {% assign value = type[1][include.year] %}
+          {% if value %}
+            {% assign other_product_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Coal' %}
-    {% assign coal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign coal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Geothermal' %}
-    {% assign geothermal_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign geothermal_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'Wind' %}
-    {% assign wind_exists = true %}
-  {% endif %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
 
-  {% if commodity_name == 'Other Products' %}
-    {% assign other_exists = true %}
+      {% if value %}
+        {% assign wind_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% if commodity_name == 'All' %}
-    {% assign all_exists = true %}
+    {% for type in commodity_values %}
+      {% assign value = type[1][include.year] %}
+
+      {% if value %}
+        {% assign all_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
 {% endfor %}
@@ -89,34 +133,66 @@
       {% endfor %}
 
       <tbody>
-        <tr>
-          <th class="table-arrow_box-subcategory">Onshore</th>
-          <td>
-            <strong>Bonus:</strong> The amount offered by the highest bidder
-          </td>
-          <td>
-            <strong>$1.50</strong> annual rent per acre for 5 years<br/>
-            <strong>$2</strong> annual rent per acre thereafter
-          </td>
-          <td>
-            <strong>12.5%</strong> of production value
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <th class="table-arrow_box-subcategory">Offshore</th>
-          <td>
-            <strong>Bonus:</strong> The amount offered by the highest bidder
-          </td>
-          <td>
-            <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
-          </td>
-          <td>
-            <strong>12.5%</strong>, <strong>16.67%</strong>, or
-            <strong>18.75%</strong> of production value
-          </td>
-          <td></td>
-        </tr>
+        {% if national_page %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Offshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
+            </td>
+            <td>
+              <strong>12.5%</strong>, <strong>16.67%</strong>, or
+              <strong>18.75%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="table-arrow_box-subcategory">Onshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$1.50</strong> annual rent per acre for 5 years<br/>
+              <strong>$2</strong> annual rent per acre thereafter
+            </td>
+            <td>
+              <strong>12.5%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+        {% elsif include.offshore %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Offshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
+            </td>
+            <td>
+              <strong>12.5%</strong>, <strong>16.67%</strong>, or
+              <strong>18.75%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+        {% else %}
+          <tr>
+            <th class="table-arrow_box-subcategory">Onshore</th>
+            <td>
+              <strong>Bonus:</strong> The amount offered by the highest bidder
+            </td>
+            <td>
+              <strong>$1.50</strong> annual rent per acre for 5 years<br/>
+              <strong>$2</strong> annual rent per acre thereafter
+            </td>
+            <td>
+              <strong>12.5%</strong> of production value
+            </td>
+            <td></td>
+          </tr>
+        {% endif %}
       </tbody>
     {% endif %}
 
@@ -180,8 +256,8 @@
               </td>
               <td rowspan="2">
                 <strong>Electricity sales:</strong> 1.75% of gross proceeds for 10 years, then 3.5%<br>
-                <strong>Arm's length sales</strong> (for 3rd-party generation): 10% of gross proceeds from sales contract multiplied by the lease royalty rate (usually 10%)<br>
-                <strong>Other: </strong>Different fee  rates apply to pre-2005 leases and to direct use facilities
+                <strong>Arm’s length sales:</strong> 10% of gross proceeds from contract multiplied by lease royalty rate<br>
+                <a href="{{ site.baseurl }}/downloads/federal-revenue-by-location/#note-geothermal-rate-details">More about geothermal rates</a>
               </td>
               <td></td>
             </tr>
@@ -204,24 +280,33 @@
         {% assign values = commodity[1] %}
 
         {% if commodity_name == 'Wind' %}
-          <tr class="table-arrow_box-category"><td colspan="5">
-            Wind
-            <icon class="icon-padded icon-wind"></icon>
-          </td></tr>
+          <tr class="table-arrow_box-category">
+            <td colspan="5">
+              Offshore renewable energy
+              <icon class="icon-padded icon-wind"></icon>
+            </td>
+          </tr>
 
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             {% include location/revenue-type-row.html %}
             <tr>
               <th class="table-arrow_box-subcategory">Competitive leasing</th>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <td>
+                <strong>Bonus:</strong> The amount offered by the highest bidder
+              </td>
+              <td rowspan="2">
+                <strong>$3</strong> annual rent per acre<br/>
+              </td>
+              <td rowspan="2">
+                <strong>2%</strong> of anticipated value of wind energy produced (unless otherwise specified)
+              </td>
               <td></td>
             </tr>
             <tr>
               <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
-              <td></td>
-              <td></td>
+              <td>
+                <strong>Acquisition fee:</strong> $0.25 per acre
+              </td>
               <td></td>
             </tr>
           </tbody>
@@ -229,10 +314,9 @@
       {% endfor %}
     {% endif %}
 
-    {% if minerals_exists == true %}
+    {% if other_product_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
-        Hardrock Minerals
-        <icon class="icon-padded icon-minerals"></icon>
+        Other products
       </td></tr>
 
       {% for commodity in revenue_types %}
@@ -248,7 +332,7 @@
 
       <tbody>
         <tr>
-          <th class="table-arrow_box-subcategory">Acquired lands *</th>
+          <th class="table-arrow_box-subcategory">Hardrock Acquired lands</th>
           <td>
             <strong>$6,500</strong> prospecting permit fee
           </td>
@@ -263,35 +347,6 @@
       </tbody>
     {% endif %}
 
-    {% if other_exists == true %}
-      {% for commodity in revenue_types %}
-        {% assign commodity_name = commodity[0] %}
-        {% assign values = commodity[1] %}
-
-        {% if commodity_name == 'Other Products' %}
-          <tr class="table-arrow_box-category"><td colspan="5">
-            Other Products
-          </td></tr>
-          <tbody id="revenue-types-{{ commodity_name | slugify }}">
-            {% include location/revenue-type-row.html %}
-            <tr>
-              <th class="table-arrow_box-subcategory">Competitive leasing</th>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th class="table-arrow_box-subcategory">Noncompetitive leasing</th>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
     {% if all_exists == true %}
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
@@ -301,22 +356,53 @@
           <tbody id="revenue-types-{{ commodity_name | slugify }}">
             <tr class="table-arrow_box-category"><td colspan="5">
               All commodities
-              <icon class="icon-oil"></icon>
-              <icon class="icon-coal"></icon>
-              <icon class="icon-minerals"></icon>
-              <icon class="icon-geo"></icon>
+              {% if oilgas_exists == true %}
+                <icon class="icon-oil"></icon>
+              {% endif %}
+
+              {% if coal_exists == true %}
+                <icon class="icon-coal"></icon>
+              {% endif %}
+
+              {% if geothermal_exists == true %}
+                <icon class="icon-geo"></icon>
+              {% endif %}
+
+              {% if wind_exists == true %}
+                <icon class="icon-wind"></icon>
+              {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}
+            <!-- insert other row into this include!!! -->
           </tbody>
         {% endif %}
       {% endfor %}
     {% endif %}
 
-
-    <tr class="table-arrow_box-category"><td colspan="5">Other revenue streams</td></tr>
-    <tr>
-      <th>Hardrock mining on public domain lands</th>
-      <td colspan="5">Hardrock mining that takes place on public domain lands, which are managed by the Bureau of Land Management, occurs through the claim-staking process. These fees are not included here, because that dataset does not have state-level data. [Learn more about the claim-staking process] or [see revenue by company, which includes those fees].
-      </td>
-    </tr>
+    {% if include.offshore %}
+    <!-- excludes Other revenue streams for offshore -->
+    {% else %}
+      <tr class="table-arrow_box-category">
+        <td colspan="5">Other revenue streams</td>
+      </tr>
+      <tr>
+        <th>Hardrock mining on public domain lands</th>
+        <td colspan="5">
+          Federal revenue from hardrock mining on public domain land occurs through the claim-staking process and is managed by the Bureau of Land Management (BLM). It is not included here, because the dataset does not have state-level data. Learn more about <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock mining on federal land</a>.
+        </td>
+      </tr>
+      <tr>
+        <th>Onshore solar and wind energy</th>
+        <td colspan="5">
+          Federal revenue from onshore renewable energy generation on federal land is not included here, because that dataset, from BLM, does not have state-level data. Learn more about <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">onshore renewables on federal land</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td colspan="5">
+          To see how much was collected nationwide for all revenue types, including BLM revenues, see <a href="{{ site.baseurl }}/how-it-works/federal-revenue-by-company/">federal revenue by company</a>.
+        </td>
+      </tr>
+    {% endif %}
 </table>

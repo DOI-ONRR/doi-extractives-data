@@ -4,20 +4,20 @@
 
   <h2>Federal disbursements</h2>
 
-  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called &ldquo;disbursement.&rdquo;</p>
-  <p>Most federal revenue goes to the General Fund of the Treasury, infrastructure and operational funds, and funds that support public works.</p>
+  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
+    <strong>
+      {% if disbursements %}
+      In {{ year }}, ONRR disbursed a total of
+      ${{ disbursements.All.All[year] | round | intcomma }}.
+      {% endif %}
+    </strong></p>
   <p>
-    <a href="{{site.baseurl}}/downloads/disbursements/" class="data-downloads">
+    <a href="{{site.baseurl}}/downloads/disbursements/">
       <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
     </a>
   </p>
 
-  <p><strong>
-    {% if disbursements %}
-    In {{ year }}, ONRR disbursed a total of
-    ${{ disbursements.All.All[year] | round | intcomma }}.
-    {% endif %}
-  </strong></p>
+  <h3 id="by-fund">Disbursements by fund for {{ year }}</h3>
 
   {% if disbursements %}
     {%
@@ -25,5 +25,32 @@
       values=disbursements
     %}
   {% endif %}
+
+  <h3 id="lwcf">Land and Water Conservation Fund</h3>
+
+  <p>{{ "ONRR" | term }} disburses revenue to the <a href="https://www.nps.gov/subjects/lwcf/index.htm">Land and Water Conservation Fund</a> (LWCF) according to federal law. However, these funds are subject to congressional appropriations. Some of the money disbursed from ONRR to the fund is spent on LWCF projects, but some of it ultimately goes to other expenditures. The fund is authorized to receive and disburse $900 million each year, but congressional appropriations to LWCF projects have been limited to between $149 million and $573 million each year since 1999.</p>
+
+  <p>To see how much was disbursed to states, sub-funds, and other projects each year, see the following datasets:</p>
+
+  <ul>
+    <li>
+      <a href="{{ site.baseurl }}/data/disbursements/lwcf/abpp.tsv">American Battlefield Protection Program, 2011-2015 data (TSV)</a>: Details about the location, acreage, and grant amounts of each battlefield funded through the <a href="https://www.nps.gov/abpp/index.htm">American Battlefield Protection Program</a>, a National Parks Service program that preserves the land where historic American battles were fought.
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/data/disbursements/lwcf/cescf.tsv">Cooperative Endangered Species Conservation Fund, 2011-2015 data (TSV)</a>: List of individual projects and locations funded through the <a href="https://www.fws.gov/endangered/grants/">Cooperative Endangered Species Conservation Fund</a>, a <a href="https://www.fws.gov/">Fish and Wildlife Service</a> program for conservation planning and acquisition of vital habitat for threatened and endangered species.
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/data/disbursements/lwcf/grants.tsv">State and local grants, 2011-2016 data (TSV)</a>: Details about the location, amount, and purpose of all Land and Water Conservation Fund grants to state and local governments.
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/data/disbursements/lwcf/land-acquisition.tsv">Land acquisitions, 2011-2016 data (TSV)</a>: Details about the location, budget, acreage, and purpose of each federal land acquisition funded by the Land and Water Conservation Fund.
+    </li>
+  </ul>
+
+  <h3 id="hpf">Historic Preservation Fund</h3>
+
+  <p>Like the LWCF, money in the Historic Preservation Fund is subject to congressional appropriations. Some of it is spent on historic preservation projects, but some of it ultimately goes to other expenditures. The fund is authorized to receive and disburse $150 million each year, but annual appropriations have declined from $94 million to less than $60 million since 2001.</p>
+
+  <p>To see how much was disbursed to each state for preservation projects (including Hurricane Sandy recovery funds), see <a href="{{ site.baseurl }}/data/disbursements/historic-preservation.tsv">Historic Preservation grants, 2011-2014 (TSV)</a>.</p>
 
 </section>

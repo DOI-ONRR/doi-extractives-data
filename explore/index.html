@@ -7,7 +7,8 @@ national_page: true
 selector: location
 nav_items:
   - name: title
-    title: Overview
+    mobile_name: top
+    title: Top
   - name: production
     title: Production
     subnav_items:
@@ -44,16 +45,16 @@ nav_items:
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
-{% assign steps=9 %}
+{% assign steps = 4 %}
 
 
-<main id="national" class="layout-state-pages">
+<main id="national" class="layout-state-pages national-page">
 
-  <section class="slab-delta">
+  <section  id="title" class="slab-delta">
     <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
       <div class="container-left-8 ribbon-hero ribbon-hero-column">
-        <h1 id="title">Explore data</h1>
-        <figure is="data-map" color-scheme="Reds" steps="9">
+        <h1>Explore data</h1>
+        <figure>
           {%
             include state-map.html
             href=':url'
@@ -61,6 +62,9 @@ nav_items:
             no_outline=true
           %}
         </figure>
+        <aside class="wide">
+          {% include maps/federal_land_ownership_legend.html land=true %}
+        </aside>
       </div>
       <div class="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
         <figure class="ribbon-card-top">
@@ -68,15 +72,17 @@ nav_items:
           <p>
             Natural resource ownership, governance, and revenues are closely tied to land ownership. Federal land represents
             {{ site.data.land_stats[state_id].federal_percent | percent }}%
-            of all land in the U.S., mostly concentrated in western states.
+            of all U.S. land, mostly concentrated in western states.
           </p>
           <p>
-            Many USEITI datasets only cover natural resource extraction on {{ "federal lands and waters" | term_end:"federal land" }}.
+            USEITI data covers production, revenue, and disbursements for {{ "federal lands and waters" | term_end:"federal land" }}, as well as nationwide production and economic impact.
           </p>
         </figure>
         <figcaption class="ribbon-card-bottom state_pages-select">
-          <label for="location-selector" class="ribbon-card-top-text-header">Choose a state or offshore region</label>
-          {% include selector.html %}
+          <label for="location-selector" class="ribbon-card-top-text-header">Explore state or offshore data:</label>
+          {% include selector.html
+            default = 'Choose location'
+          %}
         </figcaption>
       </div>
     </div>
@@ -86,11 +92,15 @@ nav_items:
 
     <div class="container-left-9">
 
+      {% include layout/mobile-nav.html mobile_nav_title='Nationwide' %}
+
       <section id="production">
 
-        <h2>Production</h2>
+        <h2 class="state-page-overview">Production</h2>
 
-        <p>The U.S. produces more <a href="#all-production-natural-gas-mcf">natural gas</a> and <a href="#all-production-oil-bbl">oil</a> than any other country, ranks second in the world for production of <a href="#all-production-coal-short-tons">coal</a> and renewable energy, and ranks third in the world for gold production. Learn more about <a href="{{ site.baseurl }}/how-it-works/production/">natural resource production in the U.S.</a></p>
+        <p>The United States produces more natural gas and oil than any other country, and ranks second in the world for production of coal. The U.S. also ranks second in the world for renewable energy production, with a total of 9.56 quadrillion BTUs of renewable energy production in 2015.</p>
+
+        <p>Among nonenergy minerals, the U.S. ranks fifth in the world for production of gold (200 metric tons) and copper (1.25 million metric tons), and ninth for iron (56 million metric tons). Learn more about <a href="{{ site.baseurl }}/how-it-works/production/">natural resource production in the U.S.</a></p>
 
         {% include location/national-all-production.html %}
 
@@ -140,6 +150,5 @@ nav_items:
   </section>
 
 </main>
-
 
 <script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>

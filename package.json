@@ -1,6 +1,12 @@
 {
-  "name": "doi-extractives-data",
-  "version": "1.1.0",
+  "private": true,
+  "homepage": "https://useiti.doi.gov/",
+  "author": "18F",
+  "license": "CC0-1.0",
+  "repository": "github:18F/doi-extractives-data",
+  "bugs": {
+    "url": "https://github.com/18F/doi-extractives-data/issues"
+  },
   "engines": {
     "node": ">=5.12"
   },
@@ -13,18 +19,18 @@
     "test-html": "bundle exec htmlproof --disable-external _site",
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
     "webpack": "webpack",
+    "update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
     "watch-webpack": "webpack --watch",
     "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
     "init-styleguide": "kss-node --config kss-config.json",
-    "lint": "npm run lint-js && npm run lint-scss",
+    "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "eslint --ignore-path .eslintignore js",
     "lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/eiti_*.rb",
     "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "colorbrewer": "0.0.2",
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",
     "d3-queue": "^1.0.7",
@@ -33,8 +39,10 @@
     "immutable": "^3.7.6",
     "jquery": "^1.11.3",
     "list.js": "^1.1.1",
+    "lunr": "^0.7.2",
+    "object-assign": "^4.1.0",
     "pty.js": "github:chjj/pty.js",
-    "stickyfill": "^1.1.1",
+    "stickyfill-web-module": "^1.1.11",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",
     "svgeo": "^0.3.5",
     "topojson": "github:mbostock/topojson#oversize",
@@ -43,7 +51,7 @@
   "devDependencies": {
     "canvas": "^1.3.13",
     "colors": "^1.1.0",
-    "data-expression": "^0.3.1",
+    "data-expression": "^0.3.2",
     "epipebomb": "^0.1.1",
     "eslint": "^3.5.0",
     "extend": "^2.0.0",
@@ -64,15 +72,5 @@
     "tito": "^0.6.1",
     "to-jekyll-collection": "^0.1.1",
     "yargs": "^3.7.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/18F/doi-extractives-data.git"
-  },
-  "author": "18F",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/18F/doi-extractives-data/issues"
-  },
-  "homepage": "https://github.com/18F/doi-extractives-data"
+  }
 }

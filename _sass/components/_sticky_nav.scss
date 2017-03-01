@@ -11,12 +11,22 @@
     }
   }
 
-  ul a {
-    text-decoration: none;
+  &.sticky {
+    padding-top: 2.5rem;
+  }
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+  ul {
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding-left: 0.8em;
     }
   }
 
@@ -32,7 +42,7 @@
   line-height: 1.2;
   list-style-type: none;
   margin-bottom: 0;
-  padding: $base-padding-lite;
+  padding: 0.5em;
   padding-left: 0;
   text-decoration: none;
 
@@ -60,11 +70,16 @@
 
 .sticky_nav-nav_item-sub {
   border-left: 3px solid $neutral-gray;
-  padding-left: $base-padding-lite;
+  font-size: 0.8125rem;
+  padding-left: 0.5em;
 
   &:first-of-type {
     margin-top: $base-padding-lite;
     padding-top: 0;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
   }
 }
 

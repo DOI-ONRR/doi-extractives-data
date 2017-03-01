@@ -1,31 +1,35 @@
 {% assign fund_map = site.data.fund_names %}
+<div class="u-overflow-wrapper">
+  <table class="table-basic disbursements-table" is="bar-chart-table">
+    <thead>
+      <th>Fund</th>
+      <th>All funds</th>
+      <th>From onshore revenue</th>
+      <th>From offshore revenue</th>
+    </thead>
+    <tbody>
+    {% for _fund in include.values %}
+      {% if _fund[0] == 'All' %}{% continue %}{% endif %}
+      {% assign _fund_name = _fund[0] %}
+      {% assign _values = _fund[1] %}
+      {% if _values.All[year] %}
+      <tr>
 
-<table is="bar-chart-table">
-  <thead>
-    <th>Fund</th>
-    <th class="numeric">All funds</th>
-    <th class="numeric">From onshore revenue</th>
-    <th class="numeric">From offshore revenue</th>
-  </thead>
-  <tbody>
-  {% for _fund in include.values %}
-    {% if _fund[0] == 'All' %}{% continue %}{% endif %}
-    {% assign _fund_name = _fund[0] %}
-    {% assign _values = _fund[1] %}
-    {% if _values.All[year] %}
-    <tr>
+        {% if include.state_name and _fund_name == 'States'  %}
+          <td>{{ include.state_name }}</td>
+        {% else %}
+          <td>
+            <strong>{{ fund_map[_fund_name].name | default:_fund_name }}</strong><br>
+            {{ fund_map[_fund_name].description }}
+          </td>
+        {% endif %}
 
-      {% if include.state_name and _fund_name == 'States'  %}
-        <td>{{ include.state_name }}</td>
-      {% else %}
-        <td>{{ fund_map[_fund_name] | xml_escape | default:_fund_name }}</td>
+        <td class="numeric" data-value="{{ _values.All[year] | default: 0 }}">${{ _values.All[year] | round | intcomma }}</td>
+        <td class="numeric" data-value="{{ _values.Onshore[year] | default: 0 }}">${{ _values.Onshore[year] | round | intcomma }}</td>
+        <td class="numeric" data-value="{{ _values.Offshore[year] | default: 0 }}">${{ _values.Offshore[year] | round | intcomma }}</td>
+      </tr>
       {% endif %}
-
-      <td class="numeric" data-value="{{ _values.All[year] | default: 0 }}">${{ _values.All[year] | round | intcomma }}</td>
-      <td class="numeric" data-value="{{ _values.Onshore[year] | default: 0 }}">${{ _values.Onshore[year] | round | intcomma }}</td>
-      <td class="numeric" data-value="{{ _values.Offshore[year] | default: 0 }}">${{ _values.Offshore[year] | round | intcomma }}</td>
-    </tr>
-    {% endif %}
-  {% endfor %}
-  </tbody>
-</table>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

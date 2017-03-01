@@ -1,46 +1,61 @@
 {% assign caption = include.caption %}
 
-<table is='bar-chart-table' data-percent-max='100' class="county-table">
+<table is='bar-chart-table' data-percent-max='100' class="county-table" year='{{ include.year }}'>
   <thead>
     <tr>
       <th>{{ locality_name }}</th>
-      <th colspan="2" class='numeric' data-series='jobs'>Extractives jobs</th>
-      <th class='numeric' data-series='percent'>% of all jobs in {{ locality_name | downcase }}</th>
+      <th class='numeric' data-series='jobs'>Extractives jobs</th>
+      <th colspan='2' class='numeric' data-series='percent'>% of all<br> jobs in {{ locality_name | downcase }}</th>
     </tr>
   </thead>
   <tbody>
+  {% if include.scrollable %}
+  <tr class="inner-table-row">
+    <td colspan="3" class="inner-table-cell">
+      <div class="inner-table-wrapper">
+        <table>
+          <tbody>
+  {% endif %}
   {% for county in include.values %}
     {% assign years_values = county[1].employment %}
     {% assign fips = county[0] | pad_left: 5, '0' %}
     {% assign jobs_percent = county[1].employment[year].percent %}
     {% assign jobs_count = county[1].employment[year].count %}
 
-    <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
-      <td><div class='swatch'
-               data-value-swatch='{{ jobs_count }}'
-               data-year-values='{{ years_values | jsonify }}'
-               data-years-property='count'></div>{{ county[1].name }}</td>
-      <td data-value-text='{{ jobs_count }}'
-          data-year-values='{{ years_values | jsonify }}'
-          data-years-property='count'>{{ jobs_count | intcomma }}</td>
-      <td class='numberless'
-          data-series='jobs'
-          data-value='{{ jobs_count }}'
-          data-year-values='{{ years_values | jsonify }}'
-          data-years-property='count'>{{ jobs_count | intcomma }}</td>
-      <td data-value-text='{{ jobs_percent }}'
-          data-year-values='{{ years_values | jsonify }}'
-          data-years-property='percent'
-          data-format='%'
-          class="numeric">{{ jobs_percent }}%</td>
-    </tr>
-    <tr data-fips='{{ fips }}'>
-        <td colspan='4'
+    {% if years_values != null %}
+      <tr data-fips='{{ fips }}' data-year-values='{{ years_values | jsonify }}' data-years-property='count'>
+        <td><div class='swatch'
+                 data-value-swatch='{{ jobs_count }}'
+                 data-year-values='{{ years_values | jsonify }}'
+                 data-years-property='count'></div>{{ county[1].name }}</td>
+        <td data-value-text='{{ jobs_count }}'
             data-year-values='{{ years_values | jsonify }}'
-            data-sentence='{{ jobs_count }}'
-            data-years-property='count'
-            aria-hidden='true'>In <span data-year='{{ year }}'>{{ year }}</span>, there were <span data-value='{{ jobs_count }}'>{{ jobs_count | intcomma }}</span> jobs in the extractive industries in {{ county[1].name }}.</td>
+            data-years-property='count'>{{ jobs_count | intcomma }}</td>
+        <td class='numberless'
+            data-series='jobs'
+            data-value='{{ jobs_count }}'
+            data-year-values='{{ years_values | jsonify }}'
+            data-years-property='count'>{{ jobs_count | intcomma }}</td>
+        <td data-value-text='{{ jobs_percent }}'
+            data-year-values='{{ years_values | jsonify }}'
+            data-years-property='percent'
+            data-format='%'>{{ jobs_percent }}%</td>
       </tr>
+      <tr data-fips='{{ fips }}'>
+          <td colspan='4'
+              data-year-values='{{ years_values | jsonify }}'
+              data-sentence='{{ jobs_count }}'
+              data-years-property='count'
+              aria-hidden='true'>In <span data-year='{{ year }}'>{{ year }}</span>, there were <span data-value='{{ jobs_count }}'>{{ jobs_count | intcomma }}</span> jobs in the extractive industries in {{ county[1].name }}.</td>
+      </tr>
+    {% endif %}
   {% endfor %}
+  {% if include.scrollable %}
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    {% endif %}
   </tbody>
 </table>

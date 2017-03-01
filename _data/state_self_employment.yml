@@ -1,234 +1,261 @@
 AK:
+  '2005':
+    count: 1167
+    percent: 0.28
   '2006':
-    count: 1333
-    percent: 0.31
+    count: 1310
+    percent: 0.3
   '2007':
-    count: 2237
-    percent: 0.51
+    count: 2151
+    percent: 0.49
   '2008':
-    count: 2245
-    percent: 0.51
+    count: 2172
+    percent: 0.49
   '2009':
-    count: 2127
-    percent: 0.48
+    count: 2084
+    percent: 0.47
   '2010':
-    count: 2811
-    percent: 0.63
-  '2011':
-    count: 2775
+    count: 2762
     percent: 0.62
+  '2011':
+    count: 2713
+    percent: 0.6
   '2012':
-    count: 5188
-    percent: 1.13
+    count: 5047
+    percent: 1.1
   '2013':
-    count: 4271
-    percent: 0.93
+    count: 4138
+    percent: 0.9
   '2014':
-    count: 4797
-    percent: 1.03
+    count: 3960
+    percent: 0.86
 AL:
+  '2005':
+    count: 1848
+    percent: 0.07
   '2006':
-    count: 2048
+    count: 2083
     percent: 0.08
   '2007':
-    count: 2531
+    count: 2513
     percent: 0.1
   '2008':
-    count: 3420
+    count: 3398
     percent: 0.13
   '2009':
-    count: 3244
+    count: 3213
     percent: 0.13
   '2010':
-    count: 4247
+    count: 4230
     percent: 0.17
   '2011':
-    count: 3675
+    count: 3646
     percent: 0.15
   '2012':
-    count: 5488
+    count: 5418
     percent: 0.22
   '2013':
-    count: 5672
+    count: 5636
     percent: 0.22
   '2014':
-    count: 6126
-    percent: 0.24
+    count: 5496
+    percent: 0.22
 AR:
+  '2005':
+    count: 3291
+    percent: 0.21
   '2006':
-    count: 3848
+    count: 3943
     percent: 0.25
   '2007':
-    count: 4480
+    count: 4448
     percent: 0.28
   '2008':
-    count: 6495
+    count: 6474
     percent: 0.41
   '2009':
-    count: 6391
+    count: 6388
     percent: 0.41
   '2010':
-    count: 8249
+    count: 8251
     percent: 0.53
   '2011':
-    count: 6867
+    count: 6850
     percent: 0.44
   '2012':
-    count: 10019
+    count: 9954
     percent: 0.64
   '2013':
-    count: 10637
-    percent: 0.68
+    count: 10549
+    percent: 0.67
   '2014':
-    count: 11404
-    percent: 0.72
+    count: 10398
+    percent: 0.66
 AZ:
+  '2005':
+    count: 3974
+    percent: 0.12
   '2006':
-    count: 3853
+    count: 3879
     percent: 0.11
   '2007':
-    count: 4813
+    count: 4737
     percent: 0.14
   '2008':
-    count: 6199
+    count: 6138
     percent: 0.18
   '2009':
-    count: 6015
+    count: 5959
     percent: 0.18
   '2010':
-    count: 7749
+    count: 7692
     percent: 0.24
   '2011':
-    count: 6873
+    count: 6782
     percent: 0.21
   '2012':
-    count: 10749
+    count: 10634
     percent: 0.32
   '2013':
-    count: 10610
+    count: 10481
     percent: 0.31
   '2014':
-    count: 11460
-    percent: 0.33
+    count: 10010
+    percent: 0.29
 CA:
+  '2005':
+    count: 14216
+    percent: 0.07
   '2006':
-    count: 16570
+    count: 16767
     percent: 0.08
   '2007':
-    count: 19945
-    percent: 0.09
+    count: 21152
+    percent: 0.1
   '2008':
-    count: 28277
+    count: 28664
     percent: 0.14
   '2009':
-    count: 28618
+    count: 28454
     percent: 0.14
   '2010':
-    count: 36136
+    count: 35935
     percent: 0.18
   '2011':
-    count: 28665
+    count: 28446
     percent: 0.14
   '2012':
-    count: 41117
+    count: 40847
     percent: 0.2
   '2013':
-    count: 42438
+    count: 42006
     percent: 0.2
   '2014':
-    count: 45619
-    percent: 0.21
+    count: 35756
+    percent: 0.16
 CO:
+  '2005':
+    count: 10454
+    percent: 0.34
   '2006':
-    count: 12089
-    percent: 0.39
+    count: 11928
+    percent: 0.38
   '2007':
-    count: 14501
-    percent: 0.45
+    count: 14278
+    percent: 0.44
   '2008':
-    count: 19924
-    percent: 0.61
+    count: 19602
+    percent: 0.6
   '2009':
-    count: 19690
-    percent: 0.62
+    count: 19440
+    percent: 0.61
   '2010':
-    count: 24961
-    percent: 0.79
+    count: 24663
+    percent: 0.78
   '2011':
-    count: 20883
-    percent: 0.65
+    count: 20557
+    percent: 0.64
   '2012':
-    count: 30510
-    percent: 0.94
+    count: 30053
+    percent: 0.92
   '2013':
-    count: 32913
-    percent: 0.98
+    count: 32465
+    percent: 0.97
   '2014':
-    count: 35298
-    percent: 1.02
+    count: 31138
+    percent: 0.9
 CT:
+  '2005':
+    count: 1192
+    percent: 0.05
   '2006':
-    count: 1345
-    percent: 0.06
+    count: 1443
+    percent: 0.07
   '2007':
-    count: 1680
-    percent: 0.08
+    count: 2046
+    percent: 0.09
   '2008':
-    count: 2166
+    count: 2184
     percent: 0.1
   '2009':
-    count: 2060
-    percent: 0.09
+    count: 2196
+    percent: 0.1
   '2010':
-    count: 2470
-    percent: 0.11
+    count: 2537
+    percent: 0.12
   '2011':
-    count: 2059
-    percent: 0.09
+    count: 2112
+    percent: 0.1
   '2012':
-    count: 3053
+    count: 3123
     percent: 0.14
   '2013':
-    count: 2950
-    percent: 0.13
-  '2014':
-    count: 3197
+    count: 3052
     percent: 0.14
+  '2014':
+    count: 2759
+    percent: 0.12
 DC:
+  '2005':
+    count: 0
+    percent: 0
   '2006':
-    count: 220
+    count: 229
     percent: 0.03
   '2007':
-    count: 238
+    count: 239
     percent: 0.03
   '2008':
-    count: 348
+    count: 341
     percent: 0.04
   '2009':
-    count: 329
+    count: 323
     percent: 0.04
   '2010':
-    count: 450
+    count: 458
     percent: 0.06
   '2011':
-    count: 344
+    count: 325
     percent: 0.04
   '2012':
-    count: 490
+    count: 462
     percent: 0.06
   '2013':
-    count: 517
-    percent: 0.06
+    count: 451
+    percent: 0.05
   '2014':
-    count: 554
-    percent: 0.06
+    count: 418
+    percent: 0.05
 DE:
+  '2005':
+    count: 0
+    percent: 0
   '2006':
-    count: 165
+    count: 169
     percent: 0.03
   '2007':
-    count: 177
-    percent: 0.03
+    count: 225
+    percent: 0.04
   '2008':
     count: 0
     percent: 0
@@ -251,348 +278,387 @@ DE:
     count: 0
     percent: 0
 FL:
+  '2005':
+    count: 8125
+    percent: 0.08
   '2006':
-    count: 9311
+    count: 9372
     percent: 0.09
   '2007':
-    count: 10366
+    count: 10217
     percent: 0.1
   '2008':
-    count: 14839
+    count: 14650
     percent: 0.14
   '2009':
-    count: 15239
+    count: 15063
     percent: 0.15
   '2010':
-    count: 19214
+    count: 18968
     percent: 0.19
   '2011':
-    count: 15703
-    percent: 0.16
+    count: 15478
+    percent: 0.15
   '2012':
-    count: 22656
+    count: 22347
     percent: 0.22
   '2013':
-    count: 24153
+    count: 23885
     percent: 0.23
   '2014':
-    count: 25943
-    percent: 0.24
+    count: 22457
+    percent: 0.21
 GA:
+  '2005':
+    count: 1900
+    percent: 0.04
   '2006':
-    count: 2247
+    count: 2254
     percent: 0.04
   '2007':
-    count: 2768
+    count: 2713
     percent: 0.05
   '2008':
-    count: 3767
+    count: 3718
     percent: 0.07
   '2009':
-    count: 3944
+    count: 3897
     percent: 0.07
   '2010':
-    count: 4916
+    count: 4830
     percent: 0.09
   '2011':
-    count: 4089
+    count: 4021
     percent: 0.08
   '2012':
-    count: 5903
+    count: 5766
     percent: 0.11
   '2013':
-    count: 6050
+    count: 5959
     percent: 0.11
   '2014':
-    count: 6525
-    percent: 0.12
+    count: 5556
+    percent: 0.1
 HI:
+  '2005':
+    count: 309
+    percent: 0.04
   '2006':
-    count: 387
+    count: 384
     percent: 0.05
   '2007':
-    count: 458
+    count: 456
     percent: 0.05
   '2008':
-    count: 630
+    count: 636
     percent: 0.07
   '2009':
-    count: 648
+    count: 646
     percent: 0.08
   '2010':
-    count: 803
-    percent: 0.1
+    count: 779
+    percent: 0.09
   '2011':
-    count: 654
-    percent: 0.08
+    count: 623
+    percent: 0.07
   '2012':
-    count: 1002
-    percent: 0.12
+    count: 779
+    percent: 0.09
   '2013':
-    count: 959
-    percent: 0.11
+    count: 785
+    percent: 0.09
   '2014':
-    count: 1033
-    percent: 0.12
+    count: 704
+    percent: 0.08
 IA:
+  '2005':
+    count: 845
+    percent: 0.04
   '2006':
-    count: 964
+    count: 979
     percent: 0.05
   '2007':
-    count: 1240
+    count: 1227
     percent: 0.06
   '2008':
-    count: 1648
+    count: 1652
     percent: 0.08
   '2009':
-    count: 1648
+    count: 1635
     percent: 0.08
   '2010':
-    count: 2072
+    count: 2069
     percent: 0.11
   '2011':
-    count: 1862
-    percent: 0.09
+    count: 1892
+    percent: 0.1
   '2012':
-    count: 2854
-    percent: 0.14
+    count: 2909
+    percent: 0.15
   '2013':
-    count: 2962
+    count: 3011
     percent: 0.15
   '2014':
-    count: 3191
-    percent: 0.16
+    count: 2790
+    percent: 0.14
 ID:
+  '2005':
+    count: 861
+    percent: 0.1
   '2006':
-    count: 1017
-    percent: 0.11
+    count: 1059
+    percent: 0.12
   '2007':
-    count: 1498
-    percent: 0.16
+    count: 1549
+    percent: 0.17
   '2008':
-    count: 1734
+    count: 1740
     percent: 0.19
   '2009':
-    count: 1665
+    count: 1648
     percent: 0.19
   '2010':
-    count: 2162
+    count: 2157
     percent: 0.25
   '2011':
-    count: 2006
+    count: 1995
     percent: 0.23
   '2012':
-    count: 3607
-    percent: 0.41
+    count: 3558
+    percent: 0.4
   '2013':
-    count: 2860
-    percent: 0.32
+    count: 2831
+    percent: 0.31
   '2014':
-    count: 3133
-    percent: 0.34
+    count: 2659
+    percent: 0.29
 IL:
-  '2006':
-    count: 8561
+  '2005':
+    count: 7959
     percent: 0.11
+  '2006':
+    count: 8745
+    percent: 0.12
   '2007':
-    count: 9530
+    count: 9548
     percent: 0.13
   '2008':
-    count: 13522
+    count: 13527
     percent: 0.18
   '2009':
-    count: 13088
+    count: 13112
     percent: 0.18
   '2010':
-    count: 16526
+    count: 16543
     percent: 0.23
   '2011':
-    count: 13225
+    count: 13214
     percent: 0.18
   '2012':
-    count: 18679
+    count: 18644
     percent: 0.25
   '2013':
-    count: 20114
+    count: 20017
     percent: 0.27
   '2014':
-    count: 21538
-    percent: 0.28
+    count: 18896
+    percent: 0.25
 IN:
+  '2005':
+    count: 2775
+    percent: 0.08
   '2006':
-    count: 3017
+    count: 3077
     percent: 0.08
   '2007':
-    count: 3380
+    count: 3377
     percent: 0.09
   '2008':
-    count: 4646
+    count: 4619
     percent: 0.13
   '2009':
     count: 4475
     percent: 0.13
   '2010':
-    count: 5572
+    count: 5623
     percent: 0.16
   '2011':
-    count: 4680
+    count: 4670
     percent: 0.13
   '2012':
-    count: 6718
-    percent: 0.18
+    count: 6875
+    percent: 0.19
   '2013':
-    count: 7013
+    count: 7132
     percent: 0.19
   '2014':
-    count: 7536
-    percent: 0.2
+    count: 6799
+    percent: 0.18
 KS:
+  '2005':
+    count: 11905
+    percent: 0.67
   '2006':
-    count: 13368
-    percent: 0.74
+    count: 13575
+    percent: 0.76
   '2007':
-    count: 14784
+    count: 14722
     percent: 0.8
   '2008':
-    count: 21553
-    percent: 1.16
+    count: 21452
+    percent: 1.15
   '2009':
-    count: 21685
+    count: 21604
     percent: 1.19
   '2010':
-    count: 27778
-    percent: 1.54
+    count: 27610
+    percent: 1.53
   '2011':
-    count: 22773
-    percent: 1.25
+    count: 22626
+    percent: 1.24
   '2012':
-    count: 32689
-    percent: 1.78
+    count: 32499
+    percent: 1.76
   '2013':
-    count: 36448
-    percent: 1.95
+    count: 36187
+    percent: 1.94
   '2014':
-    count: 38936
-    percent: 2.05
+    count: 35133
+    percent: 1.85
 KY:
+  '2005':
+    count: 3677
+    percent: 0.16
   '2006':
-    count: 4789
-    percent: 0.2
+    count: 4313
+    percent: 0.18
   '2007':
-    count: 5040
+    count: 5029
     percent: 0.21
   '2008':
-    count: 6601
-    percent: 0.27
+    count: 6685
+    percent: 0.28
   '2009':
-    count: 6294
+    count: 6378
     percent: 0.27
   '2010':
-    count: 7982
+    count: 8024
     percent: 0.34
   '2011':
-    count: 6707
+    count: 6725
     percent: 0.28
   '2012':
-    count: 10004
+    count: 10110
     percent: 0.42
   '2013':
-    count: 9899
-    percent: 0.41
+    count: 10001
+    percent: 0.42
   '2014':
-    count: 10680
-    percent: 0.44
+    count: 9259
+    percent: 0.38
 LA:
+  '2005':
+    count: 10253
+    percent: 0.43
   '2006':
-    count: 12517
-    percent: 0.52
+    count: 12705
+    percent: 0.53
   '2007':
-    count: 12787
+    count: 12761
     percent: 0.51
   '2008':
-    count: 19479
-    percent: 0.76
+    count: 19561
+    percent: 0.77
   '2009':
-    count: 19551
+    count: 19630
     percent: 0.77
   '2010':
-    count: 25361
-    percent: 1
+    count: 25514
+    percent: 1.01
   '2011':
-    count: 20692
+    count: 20704
     percent: 0.81
   '2012':
-    count: 30186
+    count: 30267
     percent: 1.16
   '2013':
-    count: 31879
+    count: 31887
     percent: 1.21
   '2014':
-    count: 34051
-    percent: 1.27
+    count: 30572
+    percent: 1.14
 MA:
+  '2005':
+    count: 999
+    percent: 0.02
   '2006':
-    count: 1117
+    count: 1135
     percent: 0.03
   '2007':
-    count: 1348
+    count: 1344
     percent: 0.03
   '2008':
-    count: 1779
+    count: 1735
     percent: 0.04
   '2009':
-    count: 1768
+    count: 1723
     percent: 0.04
   '2010':
-    count: 2247
+    count: 2242
     percent: 0.05
   '2011':
-    count: 1822
+    count: 1789
     percent: 0.04
   '2012':
-    count: 2618
+    count: 2562
     percent: 0.06
   '2013':
-    count: 2744
+    count: 2702
     percent: 0.06
   '2014':
-    count: 2968
-    percent: 0.07
+    count: 2477
+    percent: 0.06
 MD:
+  '2005':
+    count: 1378
+    percent: 0.04
   '2006':
-    count: 1544
+    count: 1560
     percent: 0.05
   '2007':
-    count: 1886
+    count: 1877
     percent: 0.05
   '2008':
     count: 2428
     percent: 0.07
   '2009':
-    count: 2366
+    count: 2365
     percent: 0.07
   '2010':
     count: 2879
     percent: 0.09
   '2011':
-    count: 2384
+    count: 2397
     percent: 0.07
   '2012':
-    count: 3458
+    count: 3433
     percent: 0.1
   '2013':
-    count: 3678
-    percent: 0.11
+    count: 3661
+    percent: 0.1
   '2014':
-    count: 3965
-    percent: 0.11
+    count: 3258
+    percent: 0.09
 ME:
+  '2005':
+    count: 366
+    percent: 0.05
   '2006':
-    count: 383
+    count: 375
     percent: 0.05
   '2007':
-    count: 626
-    percent: 0.08
+    count: 610
+    percent: 0.07
   '2008':
     count: 0
     percent: 0
@@ -600,509 +666,563 @@ ME:
     count: 0
     percent: 0
   '2010':
-    count: 690
-    percent: 0.09
+    count: 638
+    percent: 0.08
   '2011':
-    count: 640
+    count: 630
     percent: 0.08
   '2012':
     count: 0
     percent: 0
   '2013':
-    count: 1001
-    percent: 0.12
+    count: 1042
+    percent: 0.13
   '2014':
-    count: 1110
-    percent: 0.14
+    count: 871
+    percent: 0.11
 MI:
+  '2005':
+    count: 6511
+    percent: 0.12
   '2006':
-    count: 7303
+    count: 7355
     percent: 0.13
   '2007':
-    count: 8221
+    count: 8156
     percent: 0.15
   '2008':
-    count: 11144
+    count: 11098
     percent: 0.21
   '2009':
-    count: 10926
-    percent: 0.22
+    count: 10881
+    percent: 0.21
   '2010':
-    count: 13762
+    count: 13693
     percent: 0.27
   '2011':
-    count: 11217
+    count: 11130
     percent: 0.22
   '2012':
-    count: 15974
-    percent: 0.31
+    count: 15888
+    percent: 0.3
   '2013':
-    count: 16389
+    count: 16259
     percent: 0.31
   '2014':
-    count: 17597
-    percent: 0.33
+    count: 14634
+    percent: 0.27
 MN:
+  '2005':
+    count: 1742
+    percent: 0.05
   '2006':
-    count: 2119
+    count: 2154
     percent: 0.06
   '2007':
-    count: 2665
+    count: 2680
     percent: 0.08
   '2008':
-    count: 3529
+    count: 3546
     percent: 0.1
   '2009':
-    count: 3490
+    count: 3522
     percent: 0.1
   '2010':
-    count: 4508
+    count: 4511
     percent: 0.13
   '2011':
-    count: 3785
+    count: 3803
     percent: 0.11
   '2012':
-    count: 5838
+    count: 5892
     percent: 0.17
   '2013':
-    count: 5622
+    count: 5646
     percent: 0.16
   '2014':
-    count: 6085
-    percent: 0.17
+    count: 5197
+    percent: 0.14
 MO:
+  '2005':
+    count: 2295
+    percent: 0.06
   '2006':
-    count: 2366
-    percent: 0.07
+    count: 2321
+    percent: 0.06
   '2007':
-    count: 2804
-    percent: 0.08
+    count: 2683
+    percent: 0.07
   '2008':
-    count: 3904
-    percent: 0.11
+    count: 3739
+    percent: 0.1
   '2009':
-    count: 3832
+    count: 3711
     percent: 0.11
   '2010':
-    count: 4646
+    count: 4536
     percent: 0.13
   '2011':
-    count: 4007
+    count: 3929
     percent: 0.11
   '2012':
-    count: 5665
+    count: 5645
     percent: 0.16
   '2013':
-    count: 6014
-    percent: 0.17
+    count: 5869
+    percent: 0.16
   '2014':
-    count: 6480
-    percent: 0.18
+    count: 5333
+    percent: 0.15
 MS:
+  '2005':
+    count: 3237
+    percent: 0.22
   '2006':
-    count: 3768
+    count: 3769
     percent: 0.25
   '2007':
-    count: 4335
+    count: 4301
     percent: 0.28
   '2008':
-    count: 6295
+    count: 6265
     percent: 0.41
   '2009':
-    count: 6297
+    count: 6289
     percent: 0.42
   '2010':
-    count: 8282
-    percent: 0.56
+    count: 8266
+    percent: 0.55
   '2011':
-    count: 6749
-    percent: 0.45
+    count: 6714
+    percent: 0.44
   '2012':
-    count: 10085
+    count: 10023
     percent: 0.66
   '2013':
-    count: 11166
-    percent: 0.73
+    count: 11074
+    percent: 0.72
   '2014':
-    count: 11964
-    percent: 0.77
+    count: 10447
+    percent: 0.67
 MT:
+  '2005':
+    count: 1785
+    percent: 0.3
   '2006':
-    count: 2020
+    count: 2048
     percent: 0.33
   '2007':
-    count: 2778
-    percent: 0.44
+    count: 2766
+    percent: 0.43
   '2008':
-    count: 3400
+    count: 3416
     percent: 0.54
   '2009':
-    count: 3113
-    percent: 0.5
+    count: 3152
+    percent: 0.51
   '2010':
-    count: 4203
-    percent: 0.68
+    count: 4259
+    percent: 0.69
   '2011':
-    count: 3736
+    count: 3723
     percent: 0.6
   '2012':
-    count: 6135
+    count: 6143
     percent: 0.97
   '2013':
-    count: 5884
+    count: 5926
     percent: 0.92
   '2014':
-    count: 6367
-    percent: 0.99
+    count: 5793
+    percent: 0.89
 NC:
+  '2005':
+    count: 2296
+    percent: 0.05
   '2006':
-    count: 2455
+    count: 2553
     percent: 0.05
   '2007':
-    count: 3008
+    count: 3097
     percent: 0.06
   '2008':
-    count: 4119
+    count: 4193
     percent: 0.08
   '2009':
-    count: 3841
-    percent: 0.07
+    count: 3929
+    percent: 0.08
   '2010':
-    count: 4876
+    count: 4816
     percent: 0.09
   '2011':
-    count: 4093
+    count: 4034
     percent: 0.08
   '2012':
-    count: 6025
-    percent: 0.11
+    count: 6305
+    percent: 0.12
   '2013':
-    count: 6073
+    count: 6255
     percent: 0.11
   '2014':
-    count: 6567
-    percent: 0.12
+    count: 5748
+    percent: 0.1
 ND:
+  '2005':
+    count: 914
+    percent: 0.2
   '2006':
-    count: 1091
+    count: 1073
     percent: 0.23
   '2007':
-    count: 1352
-    percent: 0.28
+    count: 1278
+    percent: 0.26
   '2008':
-    count: 2064
-    percent: 0.42
+    count: 2346
+    percent: 0.48
   '2009':
-    count: 2123
-    percent: 0.43
+    count: 2169
+    percent: 0.44
   '2010':
-    count: 2909
-    percent: 0.58
+    count: 3327
+    percent: 0.66
   '2011':
-    count: 2735
-    percent: 0.52
+    count: 3611
+    percent: 0.68
   '2012':
-    count: 4544
-    percent: 0.81
+    count: 5933
+    percent: 1.05
   '2013':
-    count: 4681
-    percent: 0.81
+    count: 6722
+    percent: 1.14
   '2014':
-    count: 5001
-    percent: 0.83
+    count: 6932
+    percent: 1.14
 NE:
+  '2005':
+    count: 849
+    percent: 0.07
   '2006':
-    count: 957
+    count: 955
     percent: 0.08
   '2007':
-    count: 1108
+    count: 1073
     percent: 0.09
   '2008':
-    count: 1631
+    count: 1610
     percent: 0.13
   '2009':
-    count: 1554
-    percent: 0.13
+    count: 1530
+    percent: 0.12
   '2010':
-    count: 1924
+    count: 1894
     percent: 0.16
   '2011':
-    count: 1554
-    percent: 0.13
+    count: 1519
+    percent: 0.12
   '2012':
-    count: 2463
-    percent: 0.2
+    count: 2434
+    percent: 0.19
   '2013':
-    count: 2637
+    count: 2605
     percent: 0.21
   '2014':
-    count: 2838
-    percent: 0.22
+    count: 2540
+    percent: 0.2
 NH:
+  '2005':
+    count: 381
+    percent: 0.05
   '2006':
-    count: 457
+    count: 436
     percent: 0.05
   '2007':
-    count: 625
+    count: 579
     percent: 0.07
   '2008':
-    count: 733
-    percent: 0.09
+    count: 696
+    percent: 0.08
   '2009':
-    count: 672
+    count: 666
     percent: 0.08
   '2010':
-    count: 886
+    count: 871
     percent: 0.11
   '2011':
     count: 725
     percent: 0.09
   '2012':
-    count: 1188
-    percent: 0.14
+    count: 1197
+    percent: 0.15
   '2013':
-    count: 1059
+    count: 1048
     percent: 0.13
   '2014':
-    count: 1166
-    percent: 0.14
+    count: 1024
+    percent: 0.12
 NJ:
+  '2005':
+    count: 1441
+    percent: 0.03
   '2006':
-    count: 1687
+    count: 1677
     percent: 0.03
   '2007':
-    count: 1750
+    count: 1684
     percent: 0.03
   '2008':
-    count: 2291
+    count: 2247
     percent: 0.04
   '2009':
-    count: 2217
+    count: 2154
     percent: 0.04
   '2010':
-    count: 2821
+    count: 2743
     percent: 0.06
   '2011':
-    count: 2358
+    count: 2294
     percent: 0.05
   '2012':
-    count: 3442
+    count: 3316
     percent: 0.07
   '2013':
-    count: 3347
-    percent: 0.07
+    count: 3239
+    percent: 0.06
   '2014':
-    count: 3618
-    percent: 0.07
+    count: 2920
+    percent: 0.06
 NM:
+  '2005':
+    count: 4243
+    percent: 0.4
   '2006':
-    count: 4685
-    percent: 0.43
+    count: 4789
+    percent: 0.44
   '2007':
-    count: 5311
+    count: 5333
     percent: 0.48
   '2008':
-    count: 7185
+    count: 7221
     percent: 0.65
   '2009':
-    count: 6919
-    percent: 0.64
+    count: 6954
+    percent: 0.65
   '2010':
-    count: 8765
+    count: 8792
     percent: 0.83
   '2011':
-    count: 7269
+    count: 7275
     percent: 0.68
   '2012':
-    count: 10391
+    count: 10396
     percent: 0.97
   '2013':
-    count: 11039
-    percent: 1.03
+    count: 11011
+    percent: 1.02
   '2014':
-    count: 11802
-    percent: 1.09
+    count: 10543
+    percent: 0.97
 NV:
-  '2006':
-    count: 2435
+  '2005':
+    count: 2259
     percent: 0.15
+  '2006':
+    count: 2500
+    percent: 0.16
   '2007':
-    count: 3366
+    count: 3372
     percent: 0.2
   '2008':
-    count: 4142
-    percent: 0.25
+    count: 4196
+    percent: 0.26
   '2009':
-    count: 3805
-    percent: 0.25
+    count: 3913
+    percent: 0.26
   '2010':
-    count: 4704
-    percent: 0.32
+    count: 4823
+    percent: 0.33
   '2011':
-    count: 4078
-    percent: 0.27
+    count: 4137
+    percent: 0.28
   '2012':
-    count: 6592
-    percent: 0.43
+    count: 6710
+    percent: 0.44
   '2013':
-    count: 6001
-    percent: 0.38
+    count: 6086
+    percent: 0.39
   '2014':
-    count: 6540
-    percent: 0.41
+    count: 5696
+    percent: 0.35
 NY:
+  '2005':
+    count: 4472
+    percent: 0.04
   '2006':
-    count: 5505
+    count: 5042
     percent: 0.05
   '2007':
-    count: 6635
+    count: 6483
     percent: 0.06
   '2008':
-    count: 8187
+    count: 8075
     percent: 0.07
   '2009':
-    count: 7834
+    count: 7807
     percent: 0.07
   '2010':
-    count: 10199
+    count: 10153
     percent: 0.09
   '2011':
-    count: 8477
-    percent: 0.08
+    count: 8410
+    percent: 0.07
   '2012':
-    count: 12686
+    count: 12625
     percent: 0.11
   '2013':
-    count: 12228
+    count: 12208
     percent: 0.11
   '2014':
-    count: 13299
-    percent: 0.11
+    count: 11260
+    percent: 0.09
 OH:
+  '2005':
+    count: 8687
+    percent: 0.13
   '2006':
-    count: 10481
-    percent: 0.16
+    count: 10195
+    percent: 0.15
   '2007':
-    count: 10655
-    percent: 0.16
+    count: 10500
+    percent: 0.15
   '2008':
-    count: 15251
-    percent: 0.23
+    count: 15071
+    percent: 0.22
   '2009':
-    count: 15561
+    count: 15334
     percent: 0.24
   '2010':
-    count: 19522
-    percent: 0.31
+    count: 19340
+    percent: 0.3
   '2011':
-    count: 16104
+    count: 16177
     percent: 0.25
   '2012':
-    count: 22771
-    percent: 0.35
+    count: 22538
+    percent: 0.34
   '2013':
-    count: 24079
+    count: 23963
     percent: 0.36
   '2014':
-    count: 25780
-    percent: 0.38
+    count: 22588
+    percent: 0.33
 OK:
+  '2005':
+    count: 28176
+    percent: 1.38
   '2006':
-    count: 31731
-    percent: 1.51
+    count: 32264
+    percent: 1.54
   '2007':
-    count: 35418
+    count: 35302
     percent: 1.64
   '2008':
-    count: 50420
-    percent: 2.3
+    count: 50235
+    percent: 2.29
   '2009':
-    count: 48982
+    count: 48899
     percent: 2.28
   '2010':
-    count: 62180
+    count: 61992
     percent: 2.91
   '2011':
-    count: 51740
-    percent: 2.39
+    count: 51881
+    percent: 2.4
   '2012':
-    count: 74155
-    percent: 3.35
+    count: 73746
+    percent: 3.33
   '2013':
-    count: 80407
-    percent: 3.57
+    count: 79939
+    percent: 3.55
   '2014':
-    count: 85857
-    percent: 3.76
+    count: 76660
+    percent: 3.38
 OR:
+  '2005':
+    count: 1506
+    percent: 0.07
   '2006':
-    count: 1605
+    count: 1614
     percent: 0.07
   '2007':
-    count: 2299
+    count: 2247
     percent: 0.1
   '2008':
-    count: 2677
-    percent: 0.12
+    count: 2617
+    percent: 0.11
   '2009':
-    count: 2462
+    count: 2474
     percent: 0.11
   '2010':
-    count: 3282
+    count: 3260
     percent: 0.15
   '2011':
-    count: 2901
+    count: 2864
     percent: 0.13
   '2012':
-    count: 4635
+    count: 4603
     percent: 0.21
   '2013':
-    count: 4278
+    count: 4247
     percent: 0.19
   '2014':
-    count: 4693
-    percent: 0.2
-PA:
-  '2006':
-    count: 9085
-    percent: 0.13
-  '2007':
-    count: 12148
+    count: 4038
     percent: 0.17
+PA:
+  '2005':
+    count: 7858
+    percent: 0.11
+  '2006':
+    count: 8929
+    percent: 0.12
+  '2007':
+    count: 11874
+    percent: 0.16
   '2008':
-    count: 14709
+    count: 14571
     percent: 0.2
   '2009':
-    count: 13951
-    percent: 0.2
+    count: 13783
+    percent: 0.19
   '2010':
-    count: 18208
-    percent: 0.26
+    count: 18099
+    percent: 0.25
   '2011':
-    count: 15460
+    count: 15462
     percent: 0.21
   '2012':
-    count: 23431
+    count: 23515
     percent: 0.32
   '2013':
-    count: 23125
+    count: 23292
     percent: 0.32
   '2014':
-    count: 25090
-    percent: 0.34
+    count: 22140
+    percent: 0.3
 RI:
+  '2005':
+    count: 195
+    percent: 0.03
   '2006':
-    count: 181
+    count: 201
     percent: 0.03
   '2007':
-    count: 192
+    count: 212
     percent: 0.03
   '2008':
-    count: 263
-    percent: 0.04
+    count: 285
+    percent: 0.05
   '2009':
-    count: 241
-    percent: 0.04
+    count: 277
+    percent: 0.05
   '2010':
     count: 0
     percent: 0
@@ -1110,8 +1230,8 @@ RI:
     count: 0
     percent: 0
   '2012':
-    count: 359
-    percent: 0.06
+    count: 443
+    percent: 0.07
   '2013':
     count: 0
     percent: 0
@@ -1119,310 +1239,343 @@ RI:
     count: 0
     percent: 0
 SC:
+  '2005':
+    count: 938
+    percent: 0.04
   '2006':
-    count: 995
+    count: 1057
     percent: 0.04
   '2007':
-    count: 1180
+    count: 1230
     percent: 0.05
   '2008':
-    count: 1706
+    count: 1752
     percent: 0.07
   '2009':
-    count: 1796
+    count: 1873
     percent: 0.08
   '2010':
-    count: 2278
+    count: 2393
     percent: 0.1
   '2011':
-    count: 1938
+    count: 2063
     percent: 0.08
   '2012':
-    count: 2880
-    percent: 0.12
-  '2013':
-    count: 3064
-    percent: 0.12
-  '2014':
-    count: 3306
+    count: 3095
     percent: 0.13
+  '2013':
+    count: 3205
+    percent: 0.13
+  '2014':
+    count: 3076
+    percent: 0.12
 SD:
+  '2005':
+    count: 490
+    percent: 0.09
   '2006':
-    count: 609
+    count: 611
     percent: 0.11
   '2007':
-    count: 749
+    count: 759
     percent: 0.14
   '2008':
-    count: 1075
-    percent: 0.19
+    count: 1123
+    percent: 0.2
   '2009':
-    count: 998
+    count: 997
     percent: 0.18
   '2010':
-    count: 1380
+    count: 1398
     percent: 0.25
   '2011':
-    count: 1262
+    count: 1258
     percent: 0.22
   '2012':
-    count: 1970
-    percent: 0.35
+    count: 1955
+    percent: 0.34
   '2013':
-    count: 2086
+    count: 2075
     percent: 0.36
   '2014':
-    count: 2249
-    percent: 0.38
+    count: 1973
+    percent: 0.33
 TN:
+  '2005':
+    count: 2320
+    percent: 0.06
   '2006':
-    count: 2519
+    count: 2513
     percent: 0.07
   '2007':
-    count: 3217
-    percent: 0.09
+    count: 3112
+    percent: 0.08
   '2008':
-    count: 3882
-    percent: 0.11
+    count: 3776
+    percent: 0.1
   '2009':
-    count: 3804
+    count: 3722
     percent: 0.11
   '2010':
-    count: 4800
-    percent: 0.14
+    count: 4698
+    percent: 0.13
   '2011':
-    count: 4154
-    percent: 0.12
+    count: 4061
+    percent: 0.11
   '2012':
-    count: 6333
+    count: 6195
     percent: 0.17
   '2013':
-    count: 6084
+    count: 5941
     percent: 0.16
   '2014':
-    count: 6596
-    percent: 0.17
+    count: 5904
+    percent: 0.16
 TX:
+  '2005':
+    count: 88369
+    percent: 0.68
   '2006':
-    count: 99420
+    count: 99477
     percent: 0.74
   '2007':
-    count: 104698
+    count: 104809
     percent: 0.75
   '2008':
-    count: 155036
+    count: 155521
     percent: 1.08
   '2009':
-    count: 151817
-    percent: 1.06
+    count: 152442
+    percent: 1.07
   '2010':
-    count: 192453
+    count: 193015
     percent: 1.35
   '2011':
-    count: 162214
+    count: 162178
     percent: 1.1
   '2012':
-    count: 233385
-    percent: 1.54
+    count: 233612
+    percent: 1.55
   '2013':
-    count: 253790
+    count: 253839
     percent: 1.63
   '2014':
-    count: 271092
-    percent: 1.7
+    count: 244831
+    percent: 1.53
 UT:
+  '2005':
+    count: 1731
+    percent: 0.11
   '2006':
-    count: 2021
+    count: 2007
     percent: 0.13
   '2007':
-    count: 2862
+    count: 2827
     percent: 0.17
   '2008':
-    count: 3418
+    count: 3396
     percent: 0.2
   '2009':
-    count: 3288
+    count: 3276
     percent: 0.2
   '2010':
-    count: 4286
-    percent: 0.27
+    count: 4294
+    percent: 0.26
   '2011':
-    count: 3798
+    count: 3860
     percent: 0.23
   '2012':
-    count: 6419
+    count: 6408
     percent: 0.38
   '2013':
-    count: 5891
+    count: 5898
     percent: 0.34
   '2014':
-    count: 6410
-    percent: 0.36
+    count: 5518
+    percent: 0.31
 VA:
+  '2005':
+    count: 2851
+    percent: 0.06
   '2006':
-    count: 3180
+    count: 3246
     percent: 0.07
   '2007':
-    count: 3824
+    count: 3785
     percent: 0.08
   '2008':
-    count: 5451
+    count: 5434
     percent: 0.11
   '2009':
-    count: 5203
+    count: 5165
     percent: 0.11
   '2010':
-    count: 6318
+    count: 6308
     percent: 0.13
   '2011':
-    count: 5095
+    count: 5068
     percent: 0.11
   '2012':
-    count: 7536
-    percent: 0.16
+    count: 7477
+    percent: 0.15
   '2013':
-    count: 7351
+    count: 7333
     percent: 0.15
   '2014':
-    count: 7922
-    percent: 0.16
+    count: 6878
+    percent: 0.14
 VT:
+  '2005':
+    count: 239
+    percent: 0.06
   '2006':
-    count: 307
+    count: 292
     percent: 0.07
   '2007':
-    count: 447
-    percent: 0.11
+    count: 385
+    percent: 0.09
   '2008':
-    count: 494
-    percent: 0.12
+    count: 464
+    percent: 0.11
   '2009':
-    count: 435
-    percent: 0.1
+    count: 394
+    percent: 0.09
   '2010':
-    count: 537
-    percent: 0.13
+    count: 505
+    percent: 0.12
   '2011':
-    count: 513
+    count: 483
     percent: 0.12
   '2012':
-    count: 942
-    percent: 0.22
+    count: 768
+    percent: 0.18
   '2013':
-    count: 807
-    percent: 0.19
+    count: 690
+    percent: 0.16
   '2014':
-    count: 896
-    percent: 0.21
+    count: 615
+    percent: 0.14
 WA:
+  '2005':
+    count: 2323
+    percent: 0.06
   '2006':
-    count: 2598
+    count: 2694
     percent: 0.07
   '2007':
-    count: 3310
+    count: 3299
     percent: 0.08
   '2008':
-    count: 4222
+    count: 4241
     percent: 0.11
   '2009':
-    count: 4032
+    count: 4087
     percent: 0.11
   '2010':
-    count: 5111
+    count: 5174
     percent: 0.14
   '2011':
-    count: 4234
+    count: 4293
     percent: 0.11
   '2012':
-    count: 6626
+    count: 6734
     percent: 0.17
   '2013':
-    count: 6553
-    percent: 0.16
-  '2014':
-    count: 7122
+    count: 6657
     percent: 0.17
+  '2014':
+    count: 6247
+    percent: 0.15
 WI:
+  '2005':
+    count: 1203
+    percent: 0.03
   '2006':
-    count: 1380
+    count: 1405
     percent: 0.04
   '2007':
-    count: 1874
+    count: 1850
     percent: 0.05
   '2008':
-    count: 2414
+    count: 2402
     percent: 0.07
   '2009':
-    count: 2494
+    count: 2488
     percent: 0.07
   '2010':
-    count: 3146
+    count: 3150
     percent: 0.09
   '2011':
-    count: 2741
+    count: 2779
     percent: 0.08
   '2012':
-    count: 4312
+    count: 4320
     percent: 0.12
   '2013':
-    count: 4103
+    count: 4138
     percent: 0.12
   '2014':
-    count: 4454
-    percent: 0.12
+    count: 3867
+    percent: 0.11
 WV:
+  '2005':
+    count: 5583
+    percent: 0.63
   '2006':
-    count: 7215
+    count: 6367
+    percent: 0.7
+  '2007':
+    count: 7354
     percent: 0.8
-  '2007':
-    count: 7109
-    percent: 0.78
   '2008':
-    count: 9757
-    percent: 1.06
+    count: 10105
+    percent: 1.1
   '2009':
-    count: 9534
-    percent: 1.06
+    count: 9839
+    percent: 1.09
   '2010':
-    count: 12260
-    percent: 1.36
+    count: 12629
+    percent: 1.4
   '2011':
-    count: 10107
-    percent: 1.11
+    count: 10389
+    percent: 1.14
   '2012':
-    count: 14457
-    percent: 1.57
+    count: 14860
+    percent: 1.62
   '2013':
-    count: 15189
-    percent: 1.66
+    count: 15494
+    percent: 1.7
   '2014':
-    count: 16257
-    percent: 1.78
+    count: 14204
+    percent: 1.56
 WY:
+  '2005':
+    count: 2845
+    percent: 0.8
   '2006':
-    count: 3332
-    percent: 0.9
+    count: 3372
+    percent: 0.91
   '2007':
-    count: 4056
-    percent: 1.05
+    count: 4060
+    percent: 1.04
   '2008':
-    count: 5210
+    count: 5250
     percent: 1.31
   '2009':
-    count: 4721
-    percent: 1.22
+    count: 4825
+    percent: 1.24
   '2010':
-    count: 5901
-    percent: 1.54
+    count: 5995
+    percent: 1.56
   '2011':
-    count: 5091
+    count: 5168
     percent: 1.32
   '2012':
-    count: 7502
-    percent: 1.91
+    count: 7636
+    percent: 1.92
   '2013':
-    count: 7498
-    percent: 1.89
+    count: 7631
+    percent: 1.91
   '2014':
-    count: 8036
-    percent: 2
+    count: 7577
+    percent: 1.87

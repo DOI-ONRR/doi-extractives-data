@@ -4,34 +4,42 @@
 {% assign current_revenue = state_revenue_all[year].revenue %}
 {% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
 
-<section id="federal-revenue-county" class="product chart-item full-width">
+<section id="federal-revenue-county" class="product full-width">
 
   <div class="row-container">
 
     <div class="chart-container">
 
-      <h4 class="chart-title">
-        <span>All commodities</span>
-      </h4>
+      {% assign chart_toggle = 'offshore-revenue-figures-chart' | liquify %}
+      {% assign revenue_data = state_revenue_all | map_hash: "revenue" %}
+      {%
+        include chart_title.html
+        chart_name='All commodities'
+        chart_toggle=chart_toggle
+        chart_values=revenue_data
+        units="$,"
+        is_icon=true
+      %}
 
-      <figure class="chart">
+      <figure class="chart" id="{{ chart_toggle }}">
         <eiti-bar-chart
           aria-controls="federal-revenue-county-figures-All"
-          data='{{ state_revenue_all | map_hash: "revenue" | jsonify }}'
+          data='{{ revenue_data | jsonify }}'
           x-range="{{ year_range }}"
           x-value="{{ year }}"
           data-units="$,">
         </eiti-bar-chart>
         <figcaption id="federal-revenue-county-figures-All">
           <span class="caption-data">
+            Companies paid
             <span class="eiti-bar-chart-y-value"
                   data-format="$,">${{ current_revenue | intcomma }}</span>
-            was collected from federal land in {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            to produce natural resources in the {{ region_title }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data for {{ state_name }} in
-            <span class="eiti-bar-chart-x-value">{{ year }}</span>
+            There is no data about natural resource production in the {{ region_title }} in
+            <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>
       </figure>
@@ -40,7 +48,7 @@
     <div class="map-container">
 
       <h4 class="chart-title">
-        <span>Revenue collected by {{ region_name }}</span>
+        <span>Revenue collected by offshore area</span>
       </h4>
 
 
@@ -49,7 +57,7 @@
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {% capture years_key %}revenue{% endcapture %}
         {% assign _width ='inherit' %}
-        {% capture caption %}{{ region_name }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
+        {% capture caption %}{{ region_title }} revenue in <span data-year="{{ year }}">{{ year }}</span>{% endcapture %}
 
         <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}" format="$">
 
@@ -64,6 +72,7 @@
             inherit_width=true
             caption=caption
             toggle=toggle
+            year=year
           %}
         </eiti-data-map>
 
@@ -74,6 +83,8 @@
             values=area_revenue
             caption=caption
             locality_name=region_name
+            scrollable=true
+            is_offshore=true
           %}
         </div><!-- /.table-container -->
       </figure>

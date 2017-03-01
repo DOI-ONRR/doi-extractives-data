@@ -5,7 +5,13 @@
   var DATA = '__es_data__';
   var X = '__es_x__';
 
-  var observedAttributes = ['x-range', 'data', 'x-value', 'data-units'];
+  var observedAttributes = [
+    'x-range',
+    'data',
+    'x-value',
+    'data-units',
+    'is-icon'
+  ];
 
   // global dimensions
   var width = 300;
@@ -38,12 +44,21 @@
   var extentlessHeight = fullHeight - extentMargin;
 
   var attached = function() {
-    var svg = d3.select(this)
-      .append('svg')
-        .attr('viewBox', [0, 0, width, fullHeight].join(' '));
+    var root = d3.select(this);
+    var isIcon = root.attr('is-icon');
 
-    svg.append('g')
+    var svgHeight = isIcon
+      ? height
+      : fullHeight;
+
+    var svg = root.append('svg')
+      .attr('viewBox', [0, 0, width, svgHeight].join(' '));
+
+
+    if (!isIcon) {
+      svg.append('g')
       .attr('class', 'axis x-axis');
+    }
 
     observedAttributes.forEach(function(attr) {
       if (this.hasAttribute(attr)) {
@@ -63,14 +78,38 @@
       case 'x-value':
         this.x = value;
         break;
+      case 'is-icon':
+        this.isIcon = value;
+        break;
     }
   };
 
   var detached = function() {
   };
 
-  var update = function() {
+  var crawlCeil = function(ymax, ceilMax, i) {
+    var sigFig = '.' + i + 's';
+    var sigFigCeil = +eiti.format.transform(
+      sigFig,
+      eiti.format.siValue
+    )(ceilMax);
+    var isLessThan = sigFigCeil <= +ymax;
+    return !isLessThan ? sigFig : '';
+  };
 
+  var setSigFigs = function (ymax, ceilMax) {
+    var sigFigs = '';
+    var SF = 0;
+    while (sigFigs.length < 1) {
+      SF++;
+      sigFigs = crawlCeil(ymax, ceilMax, SF);
+    }
+    return sigFigs;
+  };
+
+  var update = function() {
+    var root = d3.select(this);
+    var isIcon = root.attr('is-icon');
     // conditional used as proxy for having an extent line
     if (!this.hasAttribute('data-units')) {
       top = extentlessHeight;
@@ -79,7 +118,6 @@
 
     var data = this.data;
     var values = data;
-
     if (Array.isArray(data)) {
       values = d3.nest()
         .key(function(d) {
@@ -89,18 +127,16 @@
           return d[0];
         })
         .entries(data);
-
-
     } else {
       values = Object.keys(data).reduce(function(map, key) {
         map[key] = {x: +key, y: data[key]};
         return map;
       }, {});
+
       data = Object.keys(data).map(function(key) {
         return {x: +key, y: data[key]};
       });
     }
-
 
     var xrange = this.xrange;
 
@@ -175,10 +211,10 @@
         var baseHeight = isUndefined || isZero || isWithheld
           ? 0
           : 2;
-
-        return d.height = height(d.y) > baseHeight
+        d.height = height(d.y) > baseHeight
           ? height(d.y)
           : baseHeight;
+        return d.height;
       })
       .attr('y', function(d) {
         return barHeight - d.height;
@@ -190,15 +226,21 @@
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
-    selection.call(updateSelected, this.x);
+    // selection.call(updateSelected, this.x);
 
-    bars.on('mouseover', function(d) {
-      selection.call(updateSelected, d.x, true);
-    }, true);
+    // if bars are simply an icon, don't handle mouse events
+    // as the bars will be too small!
+    if (!isIcon) {
+      bars.on('mouseover', function(d) {
+        selection.call(updateSelected, d.x, true);
+      }, true);
 
-    svg.on('mouseout', function() {
-      selection.call(updateSelected, self.x);
-    }, true);
+      svg.on('mouseout', function() {
+        selection.call(updateSelected, self.x);
+      }, true);
+    }
+
+
 
     var axis = d3.svg.axis()
       .orient('bottom')
@@ -210,32 +252,43 @@
         return '’' + String(x).substr(2);
       });
 
-    svg.append('g')
+    if (!isIcon) {
+      svg.append('g')
       .attr('class', 'x-axis-baseline')
       .append('line')
         .attr('x1', 0)
         .attr('x2', width)
         .attr('transform', 'translate(' + [0, bottom] + ')');
+    }
 
     // conditional used as proxy for having an extent line
-    if (this.hasAttribute('data-units') && +ymax > 0) {
-    var extentLine = svg.append('g')
-        .attr('class', 'extent-line')
+    if (this.hasAttribute('data-units') && +ymax > 0 && !isIcon) {
+      var extentLine = svg.append('g')
+        .attr('class', 'extent-line');
 
-      var dataUnits = this.getAttribute('data-units'),
-      dataFormat = this.getAttribute('data-format') || '';
+      var dataUnits = this.getAttribute('data-units');
+      var dataFormat = this.getAttribute('data-format') || '';
+
+      var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
+      var sigFigs = setSigFigs(ymax, ceilMax);
 
       if (dataUnits.indexOf('$') > -1) {
         dataFormat = eiti.format.transform(
-          eiti.format.transform('.1s', eiti.format.transformMetricLong),
+          eiti.format.transform(
+            sigFigs,
+            eiti.format.transformMetricLong
+          ),
           eiti.format.transformDollars
         );
         dataUnits = null;
       } else {
-        dataFormat = eiti.format.transform('.1s', eiti.format.transformMetric);
+        dataFormat = eiti.format.transform(
+          sigFigs,
+          eiti.format.transformMetric
+        );
       }
 
-      var dataText = dataFormat(Math.ceil(+ymax * (1 + extentPercent)));
+      var dataText = dataFormat(ceilMax);
       var extentText = [ dataText, dataUnits ].join(' ');
 
       extentLine.append('text')
@@ -270,6 +323,12 @@
 
     xAxis.selectAll('path, line')
         .attr('fill', 'none');
+
+    // if the bars are an icon, set instantiated to true so that
+    // the bars no longer update
+    if (isIcon) {
+      this.instantiated = true;
+    }
   };
 
   var formatUnits = function(text, units) {
@@ -279,7 +338,7 @@
       text = [text, units].join(' ');
     }
     return text;
-  }
+  };
 
   var hideCaption = function(selection, data, noData, withheld) {
     selection.select('.caption-data')
@@ -288,7 +347,7 @@
       .attr('aria-hidden', noData);
     selection.select('.caption-withheld')
     .attr('aria-hidden', withheld);
-  }
+  };
 
   var updateSelected = function(selection, x, hover) {
     var index;
@@ -316,9 +375,24 @@
 
     var id = selection.attr('aria-controls');
     if (id) {
-      var output = d3.select('#' + id)
+      // further qualify controlled elements with the "control-hover"
+      // class if `hover` is true. This excludes the "no data" list so
+      // that we don't thrash the layout too hard when hovering over
+      // bars.
+      var qualifier = '';
+
+      var selector = id.split(' ').map(function(id) {
+        return '#' + id + qualifier;
+      }).join(', ');
+
+      var output = d3.selectAll(selector);
+
       output.selectAll('.eiti-bar-chart-x-value')
         .text(value.x);
+
+      output.selectAll('year-value')
+        .attr('year', value.x);
+
       var y = output.selectAll('.eiti-bar-chart-y-value');
       var format = d3.format(y.attr('data-format') || ',');
       var units = y.attr('data-units');
@@ -330,7 +404,7 @@
           hideCaption(output, true, false, true);
         } else {
           hideCaption(output, false, true, true);
-          y.text(formatUnits(format(value.y),units));
+          y.text(formatUnits(format(value.y), units));
         }
       }
 

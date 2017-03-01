@@ -13,9 +13,9 @@ breadcrumb:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2012-2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds overview dataset (xlsx, 20 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/land_water_conservation_fund_incl-documentation_2015-07.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 581 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2014_2015-10-30.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 19 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2012-2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds overview dataset (xlsx, 18 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_FY2011-2015_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 870 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_FY2011-2015_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 22 KB)</a></li>
 </ul>
 
 The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.
@@ -24,7 +24,7 @@ We also have [notes on this data](https://github.com/18F/doi-extractives-data/wi
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian Lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2013. Disbursements of revenue due to extractive activities on U.S. Federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2015. Disbursements of revenue due to extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data Publication
 

@@ -10,7 +10,8 @@
 
 <table is='bar-chart-table'
        data-percent-max='100'
-       class='county-table'>
+       class='county-table'
+       year='{{ include.year }}'>
   <thead>
     <tr>
       <th>{{ locality_name }}</th>
@@ -18,6 +19,13 @@
     </tr>
   </thead>
   <tbody>
+  {% if include.scrollable %}
+    <tr class="inner-table-row">
+      <td colspan="3" class="inner-table-cell">
+        <div class="inner-table-wrapper">
+          <table>
+            <tbody>
+  {% endif %}
   {% for area in include.values %}
     {% assign product_volume = area[1].products[product_ref].volume[include.year] %}
 
@@ -43,14 +51,21 @@
             aria-hidden='true'
             data-witheld="false">
             <span class="withheld" aria-hidden="true">
-              Data about {{ product_name | downcase }} extraction in {{ area[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
+              Data about {{ product_name | downcase }} production in the {{ area[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
             </span>
             <span class="has-data">
-              <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> {{ units }} of {{ product_name | downcase | suffix:units_suffix }} were produced in {{ area[1].name }} in <span data-year='{{ year }}'>{{ year }}</span>.
+              <span data-value='{{ product_volume }}'>{{ product_volume | intcomma }}</span> {{ units }} of {{ product_name | downcase | suffix:units_suffix }} were produced in the {{ area[1].name }} in <span data-year='{{ year }}'>{{ year }}</span>.
             </span>
           </td>
       </tr>
     {% endif %}
   {% endfor %}
+  {% if include.scrollable %}
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    {% endif %}
   </tbody>
 </table>

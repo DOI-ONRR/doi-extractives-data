@@ -1,16 +1,30 @@
+.section-top {
+  margin-top: 1rem;
+}
+
 .layout-state-pages {
   padding-bottom: $standard-padding-fluffed;
 
   p + section,
   section + section,
-  h2 + section,
+  h2 + section:not(.state-pages-top),
   p + h4 {
-    margin-top: -0.75rem; //to compensate for margin from preceding selectors
+    margin-top: 0; // -0.75rem; //to compensate for margin from preceding selectors
+  }
+
+  p > img {
+    @include respond-to(tiny-down) {
+      width: 100%;
+    }
   }
 
   h2:not(.ribbon-card-top-text-header) {
     @include h2-bar;
-    padding-top: 6rem;
+    padding-top: 5rem;
+
+    &.state-page-overview {
+      padding-top: 1rem;
+    }
   }
 
   h3:not(.chart-title):not(.state-page-nav-title),
@@ -19,8 +33,13 @@
     @include h3-bar;
   }
 
-  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title) {
-    padding-top: 4rem;
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
+  .pre-sticky {
+    margin-top: 4rem;
+  }
+
+  .pre-sticky-small {
+    margin-top: 3rem - $standard-padding-large;
   }
 
   ul + h3:not(.chart-title):not(.title-land-ownership),
@@ -32,11 +51,16 @@
     border-bottom: 1px solid $neutral-gray;
     font-weight: $weight-light;
     padding-top: 2.5rem;
+
+    &.stuck {
+      padding-top: $standard-padding-lite;
+    }
   }
 
   .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
-    border-bottom: 1px solid $neutral-gray;
-    margin-bottom: $base-padding-lite * 2;
+    border-bottom: none;
+    font-size: 1rem;
+    margin-bottom: 0;
   }
 
   hr {
@@ -50,6 +74,10 @@
   h3 + [class*='panel-'] {
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
+
+    &.sticky {
+      margin-top: 0;
+    }
   }
 
   figure {
@@ -101,6 +129,42 @@
     &:hover,
     &:active {
       text-decoration: underline;
+    }
+  }
+
+  .state-pages-ownership {
+    @include omega();
+
+    float: right;
+    margin-left: $base-padding;
+    padding-bottom: 0;
+  }
+}
+
+.national-page {
+  .slab-delta {
+    margin-bottom: 6rem;
+  }
+}
+
+.expandable {
+  position: relative;
+
+  &[aria-expanded=false] {
+    // XXX magic number
+    max-height: 7.2em;
+    overflow-y: hidden;
+
+    // add a little white shadow when it's collapsed
+    &::after {
+      bottom: -50px;
+      box-shadow: 0 -10px 25px $white;
+      content: '';
+      display: table;
+      height: 50px;
+      left: 0;
+      position: absolute;
+      width: 100%;
     }
   }
 }

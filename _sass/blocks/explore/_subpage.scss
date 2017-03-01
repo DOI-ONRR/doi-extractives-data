@@ -31,3 +31,14 @@
     margin-top: $base-padding-large;
   }
 }
+
+// "gov" and "co" labels
+.reportee {
+  color: $gray-darker;
+  font-weight: $weight-light;
+}
+
+.material-variance-explanation {
+  @include heading('para-sm');
+  color: $gray-darkest;
+}

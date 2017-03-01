@@ -13,19 +13,25 @@
 
   <section class="county-map-table" is="year-switcher-section">
 
-    <h3>Production on federal waters in {{ region_name }}</h3>
+    {% assign header_text = 'Production on federal waters in the {{ region_title }}' | liquify %}
+    {%
+      include sticky-header.html
+      header_text=header_text
+      selector=true
+      year_range=year_range
+    %}
 
     {% if federal_products_num == 0 %}
-      <p>No natural resources were produced on federal waters in {{  region_name }} in {{ year }}.</p>
+      <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the {{ region_title }} in {{ year }}.</p>
     {% else %}
       <div class="chart-selector-wrapper">
 
         {% include year-selector.html year_range=year_range %}
 
         <p class="chart-description">
-        ONRR collects detailed data about natural resources produced on federal land in the {{ region_name }}.
-        <br>
-        <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
+          ONRR collects detailed data about natural resources produced in the {{ region_title }}.
+          <br>
+          <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
         </p>
       </div>
     {% endif %}
@@ -43,23 +49,28 @@
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
-      <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
+      <section id="federal-production-{{ product_slug }}" class="product full-width">
 
         <div class="row-container">
 
           <div class="chart-container">
 
-            <h4 class="chart-title">
-              <span>
-                {{ product_name }}
-                {% if units_title %} ({{ units_title }}){% endif %}
-              </span>
-            </h4>
+            {% assign chart_toggle = 'offshore-region-production-figures-chart-{{ product_slug }}' | liquify %}
+            {% assign production_data = production_values | map_hash: "volume" %}
+            {%
+              include chart_title.html
+              chart_name=product_name
+              chart_toggle=chart_toggle
+              chart_values=production_data
+              units=long_units
+              is_icon=true
+              chart_units_title=units_title
+            %}
 
-            <figure class="chart">
+            <figure class="chart" id="{{ chart_toggle }}">
               <eiti-bar-chart
                 aria-controls="federal-production-figures-{{ product_slug }}"
-                data='{{ production_values | map_hash: "volume" | jsonify }}'
+                data='{{ production_data | jsonify }}'
                 x-range="{{ year_range }}"
                 x-value="{{ year }}"
                 data-units="{{ long_units }}">
@@ -69,15 +80,15 @@
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
                   {{ long_units | term }} of {{ product_name | downcase | suffix:units_suffix }} were
-                  produced on federal land in {{ region_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  produced in the {{ region_title }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-no-data" aria-hidden="true">
-                  There is no data for {{ region_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>
+                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} in the {{ region_title }} in
+                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase }} was extracted in {{ region_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced in the {{ region_title }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
             </figure>
@@ -87,7 +98,7 @@
           <div class="map-container">
 
             <h4 class="chart-title">
-              {{ region_name }} production
+              {{ region_title }} production
             </h4>
 
 
@@ -97,7 +108,7 @@
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
 
-              {% capture caption %}{{ region_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
+              {% capture caption %}{{ region_title }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
 
 
               <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
@@ -115,6 +126,7 @@
                   inherit_width=true
                   caption=caption
                   toggle=toggle
+                  year=year
                 %}
 
 
@@ -131,6 +143,7 @@
                   long_units=long_units
                   caption=caption
                   sentence=sentence
+                  scrollable=true
                 %}
               </div><!-- /.table-container -->
 

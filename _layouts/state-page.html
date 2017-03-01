@@ -1,8 +1,10 @@
 ---
 layout: default
+nav_name: 'explore'
 nav_items:
-  - name: overview
-    title: Overview
+  - name: title
+    mobile_name: top
+    title: Top
   - name: production
     title: Production
     subnav_items:
@@ -18,9 +20,7 @@ nav_items:
       - name: federal-revenue
         title: Federal revenue
       - name: state-local-revenue
-        title: State and local revenue
-      - name: tax-expenditures
-        title: Tax expenditures
+        title: State revenue
   - name: disbursements
     title: Disbursements
     subnav_items:
@@ -42,6 +42,8 @@ nav_items:
   - name: state-governance
     title: State governance
     subnav_items:
+      - name: understanding-land-ownership
+        title: Land ownership
       - name: state-agencies
         title: State agencies
       - name: state-laws-and-regulations
@@ -59,7 +61,8 @@ nav_items:
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
-{% assign steps = 5 %}
+{% assign steps = 4 %}
+
 
 {% assign is_priority_state = page.priority %}
 {% assign is_case_study_state = page.case_study %}
@@ -67,44 +70,55 @@ nav_items:
 
 {% assign _viewbox = site.data.viewboxes[state_id] %}
 
+{% if page.is_cropped %}
+  {% assign _viewbox = site.data.viewboxes_cropped[state_id] %}
+{% endif %}
+
 {% capture regulations %}
   {{ page.content }}
 {% endcapture %}
 
 <main id="state-{{ state_id }}" class="container-page-wrapper layout-state-pages">
   <section class="container">
+
     <div>
       <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1 id="title">{{ state_name }}</h1>
 
-    <div class="container-half">
-
-
-      {% include location/section-overview.html %}
-    </div>
-    <div class="container-right-5 container-shift-1">
-      {% include location/section-ownership.html %}
-    </div>
-  </section>
-
-  <section class="container">
     <div class="container-left-9">
+
+      <section id="overview" class="section-top">
+
+        {% include location/section-overview.html %}
+
+      </section>
+
+      {% include layout/mobile-nav.html %}
 
       <section id="production">
         <h2>Production</h2>
+        <!-- EIA state profile link -->
+        <p>
+          <strong>Energy production:</strong> The U.S. Energy Information Administration publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">energy production and usage in {{ state_name }}</a>.
+        </p>
         {%
           include location/key-all-production-summary.html
           location_id=state_id
           location_name=state_name
           year=year
         %}
-        <p>
-          The U.S. Energy Information Administration (EIA) publishes a profile of <a href="http://www.eia.gov/state/?sid={{ state_ref }}">{{ state_name }}'s energy production and usage</a>.
-        </p>
+        <!-- State production intro (for opt-in states) -->
         {% if page.state_production %}
-          {{ page.state_production | markdownify }}
+          {{ page.state_production | liquify | markdownify }}
+        {% else %}
+          <!-- USGS state profile link; only auto-generated for non-opt-in states because this is included in the custom production summary for opt-in states -->
+          {% unless state_id == "DC" %}
+          <p>
+            <strong>Nonenergy minerals:</strong> The U.S. Geological Survey publishes information about nonenergy mineral extraction in the <a href="http://minerals.usgs.gov/minerals/pubs/state/{{ state_id | downcase }}.html">USGS Minerals Yearbook for {{ state_name }}</a>.
+          </p>
+          {% endunless %}
         {% endif %}
 
         {% include location/section-all-production.html %}
@@ -112,11 +126,16 @@ nav_items:
         {% include location/section-federal-production.html %}
 
         {% if page.state_land %}
-          <h3 id="state-production">Production on state land in {{ state_name }}</h3>
-          {{ page.state_land | markdownify }}
+          {% assign header_text = 'Production on state land in {{ state_name }}' | liquify %}
+          {%
+            include sticky-header.html
+            header_text=header_text
+            header_id='state-production'
+          %}
+          {{ page.state_land | liquify | markdownify }}
         {% endif %}
         {% if page.state_land_production %}
-          {{ page.state_land_production | markdownify }}
+          {{ page.state_land_production | liquify | markdownify }}
         {% endif %}
 
       </section>
@@ -128,13 +147,18 @@ nav_items:
 
         {% include location/section-disbursements.html %}
 
-        <section id="state-disbursements" class="disbursements">
-          <h3>State disbursements</h3>
+        <section class="disbursements">
+
+          {%
+            include sticky-header.html
+            header_text='State disbursements'
+            header_id='state-disbursements'
+          %}
 
           {% if page.opt_in == true %}
             {% include location/opt-in/state-disbursements.html location_id=state_id %}
           {% else %}
-            <p>We don't have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
+          <p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
           {% endif %}
         </section>
 
@@ -144,11 +168,11 @@ nav_items:
       <section id="economic-impact">
         <h2>Economic impact</h2>
         {% if page.state_impact %}
-          {{ page.state_impact | markdownify }}
+        {{ page.state_impact | liquify | markdownify }}
 
-          <p>
-            In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
-          </p>
+        <p>
+          In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
+        </p>
         {% endif %}
 
         {% include location/section-gdp.html %}

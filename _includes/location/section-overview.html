@@ -1,8 +1,12 @@
-<section id="overview">
+<section class="state-pages-top">
 
   <section class="container">
 
-    <!-- Includes the GDP percentage, then outputs employment percentage if it's over 2%.-->
+    <div class="state-pages-ownership container-right-5">
+      {% include location/section-ownership.html %}
+    </div>
+
+    <!-- Includes the GDP percentage, then outputs employment percentage if it’s over 2%.-->
     <p>
       Natural resource extraction varies widely from state to state.
       {%
@@ -13,7 +17,7 @@
       %}
     </p>
 
-    <!-- If the state leads US production for any commodities, those commodities are listed along with percentage of US production. -->
+    <!-- If the state leads U.S. production for any commodities, those commodities are listed along with percentage of US production. -->
     <p>
       {%
         include location/key-all-production.html
@@ -31,14 +35,11 @@
       of all land in {{ state_name }}.
     </p>
 
-    <!-- Includes relevant offshore area, if there is one -->
-    {% if page.offshore_area %}
-      {{ page.offshore_area | markdownify }}
-    {% endif %}
-
-    <!-- Includes case study link, if there is one -->
-    {% if page.case_study_link %}
-      {{ page.case_study_link | markdownify }}
+    <!-- Includes link to relevant offshore region, if there is one -->
+    {% if page.nearby_offshore_region %}
+    <p>
+      {{ state_name }} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {{ state_name }}, see {{ page.nearby_offshore_region | liquify }}.
+    </p>
     {% endif %}
 
     <!-- Blurb for opt-in states -->
@@ -46,6 +47,14 @@
       <p>
         The state of {{ state_name }} chose to participate in an extended USEITI reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
       </p>
+      {% if page.state_optin_intro %}
+        {{ page.state_optin_intro | liquify | markdownify }}
+      {% endif %}
+    {% endif %}
+
+    <!-- Includes case study link, if there is one -->
+    {% if page.case_study_link %}
+      {{ page.case_study_link | liquify | markdownify }}
     {% endif %}
 
   </section>

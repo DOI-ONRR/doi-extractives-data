@@ -11,41 +11,12 @@
     background: $white;
   }
 
-  // tbody > tr:hover,
-  // tbody > tr:focus,
-  // tbody > tr.selected {
-  //   background-color: $gray-pale;
-
-  //   .swatch {
-  //     border: 1px solid $neutral-gray;
-  //   }
-
-  //   .bar .bar {
-  //     background-color: $green-dark-chart-mid;
-  //   }
-  // }
-
-  // tbody > tr.selected {
-  //   font-weight: $weight-book;
-
-  //   td[data-sentence] {
-  //     font-weight: $weight-light;
-  //   }
-
-  //   &[data-year-values] {
-  //     border-bottom: 0;
-  //   }
-
-  //   .bar .bar {
-  //     background-color: $green-dark;
-  //   }
-  // }
-
   .bar {
     background: $light-gray;
   }
 
   .numberless[data-value] {
+    position: inherit;
     vertical-align: middle;
 
     .text {
@@ -85,8 +56,8 @@
     text-align: left;
   }
 
-  .numeric[colspan="2"] {
-    text-align: center;
+  th.numeric {
+    text-align: right;
   }
 
   [data-value] {
@@ -94,6 +65,9 @@
     position: relative;
 
     .text-header {
+      @include heading('para-sm');
+      font-weight: $weight-bold;
+
       &.text-header-first {
         color: $green-dark;
       }
@@ -116,7 +90,7 @@
         }
 
         .bar:nth-child(1) {
-          background-color: $green-dark;
+          background-color: $green-dark-chart;
         }
 
         .bar:nth-child(2) {
@@ -130,7 +104,7 @@
     }
 
     .bar {
-      background: $gray-lighter;
+      background: $gray-pale;
       display: block;
       height: 1em;
 

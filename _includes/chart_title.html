@@ -1,0 +1,29 @@
+<h3 class="chart-title">
+  <button is="aria-toggle"
+          aria-expanded="false"
+          aria-controls="{{ chart_toggle }}"
+          class="chart-title-button">
+    <span class="hide-expanded chart-title-small">
+      <span>
+        {{ include.chart_name }}
+        {% if include.chart_units_title %} ({{ include.chart_units_title }}){% endif %}
+      </span>
+      <eiti-bar-chart
+        data='{{ include.chart_values | jsonify }}'
+        x-range="{{ include.year_range | default: year_range }}"
+        x-value="{{ include.year | default: year }}"
+        data-units="{{ include.units }}"
+        {% if include.is_icon %}is-icon="true"{% endif %}
+        class="bar-chart-icon">
+      </eiti-bar-chart>
+    </span>
+    <span class="show-expanded chart-title-small">
+      <span>
+        {{ include.chart_name }}
+        {% if include.chart_units_title %} ({{ include.chart_units_title }}){% endif %}
+      </span>
+      <img class="chart-title-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
+    </span>
+  </button>
+  <span class="chart-title-large">{{ include.chart_name }}</span>
+</h3>

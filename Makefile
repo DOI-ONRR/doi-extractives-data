@@ -78,22 +78,19 @@ data/national_all_production.yml:
 		-c _meta/national_all_production.yml \
 		-o _$@
 
-data/exports: tables/exports \
+data/exports: \
 	data/state_exports.yml \
 	data/national_exports.yml
 
 data/state_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			state, year, \
-			ROUND(value, 2) AS dollars, \
-			ROUND(share * 100, 2) AS percent, \
-			commodity \
+			state, year, commodity, \
+			ROUND(SUM(value), 2) AS dollars \
 		FROM exports \
-		WHERE \
-			state != 'US' \
-		ORDER BY state, year" \
-		| $(nestly) --if ndjson \
+		GROUP BY state, year, commodity \
+		ORDER BY state, year, dollars DESC \
+		" | $(nestly) --if ndjson \
 			-c _meta/state_exports.yml \
 			-o _$@
 
@@ -101,9 +98,11 @@ data/national_exports.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			'US' AS state, year, \
-			SUM(ROUND(value, 2)) AS dollars, \
+			ROUND(SUM(value), 2) AS dollars, \
 			commodity \
 		FROM exports \
+		WHERE \
+			commodity = 'Total' \
 		GROUP BY year, commodity" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_exports.yml \
@@ -224,6 +223,18 @@ data/national_self_employment.yml:
 			-c _meta/state_jobs.yml \
 			-o _$@
 
+data/tribal_revenue.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, commodity, revenue_type, \
+			ROUND(SUM(revenue), 2) AS revenue \
+		FROM tribal_revenue \
+		GROUP BY year, commodity, revenue_type \
+		ORDER BY year, revenue DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/tribal_revenue.yml \
+			-o _$@
+
 data/revenue: \
 	data/county_revenue \
 	data/national_revenues.yml \
@@ -233,7 +244,9 @@ data/revenue: \
 	data/state_revenues_by_type.yml \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
-	data/offshore_revenues_by_type.yml
+	data/offshore_revenues_by_type.yml \
+	data/reconciliation.yml \
+	data/tribal_revenue.yml
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -246,7 +259,8 @@ data/county_revenue:
 		FROM county_revenue \
 		WHERE \
 			state IS NOT NULL AND \
-			county IS NOT NULL \
+			county IS NOT NULL AND \
+			revenue_type = 'All' \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_revenue.yml \
@@ -336,8 +350,7 @@ data/offshore_federal_production_areas:
 			ROUND(volume) AS volume \
 		FROM federal_offshore_area_production \
 		WHERE \
-			region_id IS NOT NULL AND \
-			volume IS NOT NULL \
+			region_id IS NOT NULL \
 		ORDER BY \
 			region_id, \
 			area_id, year" \
@@ -357,6 +370,7 @@ data/federal_county_production:
 		FROM federal_county_production \
 		WHERE \
 			state IS NOT NULL AND \
+			fips IS NOT NULL AND \
 			state != 'Withheld' AND \
 			county IS NOT NULL AND \
 			product IS NOT NULL \
@@ -434,6 +448,18 @@ data/offshore_revenues_by_type.yml:
 		| $(nestly) --if ndjson \
 			-c _meta/offshore_revenues_by_type.yml \
 			-o _$@
+
+data/reconciliation:
+	$(query) --format ndjson " \
+		SELECT \
+			year, company, revenue_type, \
+			reported_gov, reported_company, reported_note, \
+			variance_dollars, variance_percent, variance_material \
+		FROM reconciliation \
+		ORDER BY reported_gov DESC, company, revenue_type" \
+		| $(nestly) --if ndjson \
+			-c _meta/reconciliation.yml \
+			-o '_$@/{year}.yml'
 
 data/offshore_revenue_regions.yml:
 	$(query) --format ndjson " \
@@ -569,7 +595,9 @@ tables/offshore_planning_areas: data/geo/input/offshore/areas.tsv
 
 tables/revenue: \
 	tables/county_revenue \
-	tables/offshore_revenue
+	tables/offshore_revenue \
+	tables/reconciliation \
+	tables/civil_penalties_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
 
 tables/offshore_revenue: data/revenue/offshore.tsv
@@ -586,6 +614,28 @@ tables/county_revenue: data/revenue/onshore.tsv
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
+
+tables/reconciliation: data/reconciliation/output
+	@$(call drop-table,reconciliation)
+	tmp=$^/all.ndjson; \
+	for revenue_filename in $^/????.tsv; do \
+		$(tito) -r tsv --map ./data/reconciliation/transform.js \
+			$$revenue_filename >> $$tmp; \
+	done; \
+	$(tables) -i $$tmp -t ndjson -n reconciliation && \
+	rm $$tmp
+
+tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
+	@$(call drop-table,civil_penalties_revenue)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n civil_penalties_revenue -i $$tmp && \
+	rm $$tmp
+
+tables/tribal_revenue: data/revenue/tribal.tsv
+	@$(call drop-table,tribal_revenue)
+	$(tito) --map ./data/revenue/transform-tribal.js -r tsv $^ \
+		| $(tables) -t ndjson -n tribal_revenue
 
 tables/federal_production: data/federal-production/federal-production.tsv
 	@$(call drop-table,federal_local_production)
@@ -642,6 +692,7 @@ tables/gdp: data/gdp/regional.tsv
 tables/exports: data/exports/exports-by-industry.tsv
 	@$(call drop-table,exports)
 	$(call load-table,$^,exports)
+	@$(call load-sql,data/exports/rollup.sql)
 
 tables/disbursements: \
 	tables/federal_disbursements \

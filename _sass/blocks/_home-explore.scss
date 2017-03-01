@@ -2,11 +2,10 @@
 //
 // Styleguide blocks.explore-home
 .explore_home-heading {
-  margin-bottom: $base-padding;
-
-  @include respond-to(medium-up) {
-    margin-bottom: 0;
-  }
+  font-weight: $weight-bold;
+  line-height: 1.3;
+  margin-bottom: $base-padding-lite;
+  padding-right: $base-padding-lite;
 }
 
 .explore_home-explore_heading {
@@ -23,6 +22,28 @@
     margin-top: 0;
     padding-top: 0;
   }
+}
+
+.explore_home-map {
+  aside {
+    margin-left: $base-padding-large;
+  }
+
+  figure {
+    margin-top: -$base-padding;
+  }
+
+  .state_pages-select {
+    padding-top: $base-padding;
+
+    select {
+      width: 85%;
+    }
+  }
+}
+
+.explore_home-map-intro {
+  padding-right: $base-padding-large;
 }
 
 .explore_home-tabs {

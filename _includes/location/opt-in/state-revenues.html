@@ -7,22 +7,21 @@
   {% assign revenue_total = streams.All.Total[revenue_year] %}
 
 {% if page.state_revenue %}
-  {{ page.state_revenue | markdownify }}
+  {{ page.state_revenue | liquify | markdownify }}
 {% endif %}
 
 <!-- This link only works if the file is named correctly. -->
-<a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf" class="button-tertiary">
-  <icon class="icon-cloud icon-padded"></icon>
-  Download: State revenue streams (PDF)
-</a>
+<p>
+  <a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Download: {{ state_name }} revenue streams (PDF)
+  </a>
+</p>
 
 <p>
   In {{ revenue_year }}, the state of
   {{ state_name }} collected
   <strong>${{ revenue_total | default: 0 | intcomma }}
   in state revenue from natural resource extraction</strong>
-  through {{ streams_count }}
-  revenue stream{{ streams_count | plural }}
   (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
 </p>
 
@@ -30,8 +29,8 @@
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
-      <th>State revenue stream</th>
-      <th class="num">Amount collected</th>
+      <th><strong>State revenue stream</strong></th>
+      <th class="num"><strong>Amount collected</strong></th>
     </tr>
   </thead>
 
@@ -52,10 +51,10 @@
         {% if stream_info %}
         <button is="aria-toggle" aria-controls="stream-{{ stream_slug }}"
           aria-expanded="false" class="not-button-like">
-          <strong>{{ stream_name }}</strong>
+          {{ stream_name }}
         </button>
         {% else %}
-        <strong>{{ stream_name }}</strong>
+          {{ stream_name }}
         {% endif %}
       </td>
       <td data-value="{{ stream_dollars }}"
@@ -74,15 +73,16 @@
 {% endif %}
 
 {% if page.state_revenue_sustainability %}
-  <h4>Revenue sustainability</h4>
-  {{ page.state_revenue_sustainability | markdownify }}
+  <h4 id="revenue-sustainability">Revenue sustainability</h4>
+
+  {{ page.state_revenue_sustainability | liquify | markdownify }}
 {% endif %}
 
 {% if page.state_tax_expenditures %}
-  <h4>Tax expenditures</h4>
+  <h4 id="tax-expenditures">Tax expenditures</h4>
   <p>
     Tax expenditure programs are policy instruments that reduce state and local revenue through changes to the tax code (for example, tax credits, exemptions, preferential tax rates, or deferrals of tax liability).
   </p>
 
-  {{ page.state_tax_expenditures | markdownify }}
+  {{ page.state_tax_expenditures | liquify | markdownify }}
 {% endif %}

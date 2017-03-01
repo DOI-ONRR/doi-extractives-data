@@ -7,6 +7,7 @@ $eiti-logo-width: 195px;
 $weight-light: 200; // use
 $weight-book: 400; // use
 $weight-bold: 700; // use
+$line-height-caps: 1.2;
 
 $sans-serif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
 $base-font-family: $sans-serif;
@@ -15,6 +16,7 @@ $base-font-size: 1rem;
 $base-font-multiplier: 1;
 $base-line-height: 1.375rem;
 
+$z-sky: 10000;
 $z-roof: 9000;
 $z-mid: 500;
 $z-negative: -1;
@@ -47,6 +49,7 @@ $gray-darkest: #435159;
 $black-light: #323c42;
 $black: #1d2326;
 
+// map to deprecated values
 $light-gray-light: $gray-pale;
 $light-gray: $gray-pale;
 $light-gray-dark: $gray-lighter;
@@ -109,6 +112,7 @@ $standard-padding-large: 1.875rem; //30px
 $standard-padding-extra: 3.125rem; //50px
 $standard-padding-jumbo: 3.8rem;
 $standard-padding-fluffed: 5rem;
+$standard-padding-separation: 6rem;
 
 // Page padding
 // Use in contexts where the padding/margin
@@ -158,3 +162,7 @@ $greener-land-lightness-bump: lightness($green-land) * $opacity-state;
 $greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
 $greener-land: darken($green-land, $greener-land-lightness-bump);
 $greenest-land: darken($green-land, $greenest-land-lightness-bump);
+
+
+// SVG
+$svg-map-padding: 3.6%;

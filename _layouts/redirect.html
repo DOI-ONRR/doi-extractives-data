@@ -6,6 +6,6 @@
   </head>
   <h1>Redirecting...</h1>
   <p>If your browser doesn&rsquo;t redirect automatically, you can
-    <a href="{{ page.redirect|prepend:site.baseurl }}">do it manually</a>.</p>
+    <a href="{{ page.redirect | default: '/' | prepend: site.baseurl }}">do it manually</a>.</p>
 </html>
 

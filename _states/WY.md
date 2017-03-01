@@ -7,8 +7,12 @@ opt_in: true
 
 state_revenue_year: 2015
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 case_study_link: |
-    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](../../case-studies/campbell/).
+    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County]({{ site.baseurl }}/case-studies/campbell/).
 state_production: |
     Most of Wyoming's natural resource extraction takes place on federal land, including a majority of coal production and two thirds of natural gas production. Much of this federal land is managed by the Bureau of Land Management.
 
@@ -20,7 +24,7 @@ state_production: |
 
     **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
-    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million mineral acres. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
+    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million {{ "mineral acres" | term_end }}. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
     In FY 2014, 29.3 million short tons of surface-mined coal and 2.4 million short tons of underground-mined coal were extracted on state lands in Wyoming.
 
@@ -30,6 +34,8 @@ state_revenue: |
 
     In production year 2014, all 23 of Wyoming’s counties had taxable mineral production, though over 60% percent of revenue from mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
 state_revenue_sustainability: |
+    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2014. Total revenue rose from just under $800 billion in 2005 to over $1,200 billion in 2008, then fell to about $1,000 billion in 2009 and 2010 before rising to about $1,300 billion by 2014. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.]({{ site.baseurl }}/img/WY_revenue_sustainability.svg)
+
     In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and account for up to a quarter of general fund revenues.
 
     To read more about the impact of revenue from extractive industries on Wyoming’s general fund, including future projections, see reports produced by Wyoming's [Consensus Revenue Estimating Group](http://eadiv.state.wy.us/creg/creg.html).
@@ -38,15 +44,15 @@ state_tax_expenditures: |
 state_disbursements: |
     [State agencies](#state-agencies) distribute natural resource revenues according to the [Wyoming State Code](http://legisweb.state.wy.us/LSOWeb/wyStatutes.aspx), which is defined by the legislature.
 
-    Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute. 
-    
+    Prior to FY 2002, individual severance taxes had distinct distribution formulas. In the 2000 and 2001 legislative sessions, the Wyoming Legislature revised statutes — a process they called “de-earmarking” — to simplify the distribution process. The Department of Revenue now collects severance tax revenues, aggregates them, and distributes that total amount according to statute.
+
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
 state_saving_spending: |
     The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
 state_impact: |
     The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, annual wages from extractive industries made up about 18% (or $2.4 billion) of total annual wages in the state. The average annual wage for extractive-industry job in Wyoming in 2014 was $88,198, or almost twice the statewide average wage of $46,492.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, annual wages from extractive industries made up about 18% (or $2.4 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Wyoming in 2014 was $88,198, or almost twice the statewide average wage of $46,492.
 ---
 
 <!-- State governance -->
@@ -82,7 +88,7 @@ The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) (DEQ)
 * The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes an [annual report (PDF)](http://deq.wyoming.gov/media/uploads/admin/annual_report_2014.pdf) that includes bond amounts.
 * The [Abandoned Mine Land Division](http://deq.wyoming.gov/aml/) administers the federal AML program for coal and select hardrock reclamation projects.
 
-The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources. 
+The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources.
 
 ### State laws and regulations
 
@@ -105,7 +111,7 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The USEITI case study on [Campbell County](../../case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The USEITI case study on [Campbell County]({{ site.baseurl }}/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
@@ -126,10 +132,10 @@ See [state agencies](#state-agencies) for information about statewide water mana
 
 Population growth due to increased natural resource extraction can increase demands on the medical, fire, and police services of states, counties, and towns.
 
-Prior to 2001, the Sublette County Rural Health Care District had two all-volunteer Emergency Medical Services (EMS) units. By 2006, the district had hired 25 full-time emergency medical technicians. From 2001 to 2007, EMS runs increased 116% for the Pinedale facility and 94.47% for the Marbleton-Big Piney facility. To serve the Jonah gas field and the South Anticline, the district built a new EMS facility in 2007 at Sand Draw. Local industry paid for $900,000 of the cost of the facility, with the county paying $500,000. 
+Prior to 2001, the Sublette County Rural Health Care District had two all-volunteer Emergency Medical Services (EMS) units. By 2006, the district had hired 25 full-time emergency medical technicians. From 2001 to 2007, EMS runs increased 116% for the Pinedale facility and 94.47% for the Marbleton-Big Piney facility. To serve the Jonah gas field and the South Anticline, the district built a new EMS facility in 2007 at Sand Draw. Local industry paid for $900,000 of the cost of the facility, with the county paying $500,000.
 
 #### Reclamation
 
-Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/). 
+Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/).
 
 See [state agencies](#state-agencies) for additional statewide reclamation activities.

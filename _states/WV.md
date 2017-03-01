@@ -3,10 +3,14 @@ id: WV
 title: West Virginia
 FIPS: '54'
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 priority: true
 
 case_study_link: |
-    For a detailed view of how coal mining affects communities in West Virginia, read more about [Boone, Logan, and Mingo Counties](/case-studies/boone-logan-mingo/).
+    For a detailed view of how coal mining affects communities in West Virginia, read the [case study on Boone, Logan, and Mingo Counties]({{ site.baseurl }}/case-studies/boone-logan-and-mingo/).
 ---
 * The [West Virginia Department of Environmental Protection](http://www.dep.wv.gov/Pages/default.aspx) oversees natural resource extraction in West Virginia. The department’s Office of Oil and Gas is responsible for monitoring and regulating all actions related to the exploration, drilling, storage, and production of oil and natural gas. The Division of Mining and Reclamation manages compliance, reclamation, permitting, and communications between the public and industry.
   - [Mining codes and regulations](http://www.dep.wv.gov/dmr/codes/Pages/default.aspx)

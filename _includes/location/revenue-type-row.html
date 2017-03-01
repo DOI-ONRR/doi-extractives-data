@@ -1,18 +1,41 @@
-{% assign total = values.All[include.year] | default: 0 %}
+{% assign year = include.year | default: year %}
+{% assign total = values.All[year] | default: 0 %}
 {% if total != 0 %}
   <tr>
-    <th scope="row" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}">
+    <th scope="row" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}" class="table-arrow_box-subheader">
       <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong><br>
-      <strong>${{ total | intcomma }}</strong>
+      <strong class="table-arrow_box-subheader-value">${{ total | intcomma }}</strong>
     </th>
     {% for revenue_type in revenue_type_names %}
-    <td data-value="{{
-      values[revenue_type][include.year] | default: 0
-    }}"><span class="text">${{
-      commodity[1][revenue_type][include.year]
-      | default: 0
-      | intcomma
-    }}</span></td>
+      {% if revenue_type == 'Other Revenues' %}
+        {%
+          assign total_other_revenues = 0
+          | plus: commodity[1]['Civil Penalties'][year]
+          | plus: commodity[1]['Other Revenues'][year]
+          | plus: commodity[1]['Inspection Fees'][year]
+        %}
+        <td data-value="{{
+          total_other_revenues | default: 0
+        }}"><span class="text table-arrow_box-subheader-value">${{
+          total_other_revenues
+          | default: 0
+          | intcomma
+        }}</span>
+        {% if national_page and commodity_name == 'All' %}
+          <br/>
+          <span class="table-arrow_box-asterisk">* Includes revenues not tied to specific commo&shy;dities ($52,239,171 in inspection fees, $8,035,048 in civil penalties, and $347,351 in other revenue).</span>
+        {% endif %}
+        </td>
+
+      {% else %}
+        <td data-value="{{
+            values[revenue_type][year] | default: 0
+        }}"><span class="text table-arrow_box-subheader-value">${{
+          commodity[1][revenue_type][year]
+          | default: 0
+          | intcomma
+        }}</span></td>
+      {% endif %}
     {% endfor %}
   </tr>
 {% endif %}

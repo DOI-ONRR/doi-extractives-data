@@ -5,8 +5,14 @@ FIPS: '06'
 
 priority: true
 
+nearby_offshore_region: 'the <a href="{{ site.baseurl }}/explore/offshore-pacific/">Pacific Ocean</a>'
+
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in southern California, read more about [Kern County](/case-studies/kern/).
+    For a detailed view of how oil extraction affects communities in southern California, read the [Kern County case study]({{ site.baseurl }}/case-studies/kern/).
+
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
 ---
 * The [State Mining and Geology Board](http://www.conservation.ca.gov/smgb/Pages/Index.aspx) oversees mineral resource extraction, reclaiming mine lands, and preparing geologic hazard information.
 * The [Division of Oil, Gas, and Geothermal Resources](http://www.conservation.ca.gov/dog/Pages/Index.aspx) regulates the drilling, operation, maintenance, plugging, and abandonment of oil, natural gas, and geothermal wells.

@@ -710,7 +710,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2006	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 6,350 	Onshore	Federal
 2006	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2006	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2006	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2006	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2006	Salt (tons)	NM	35015	Eddy County	 W 	Onshore	Federal
 2006	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2006	Salt (tons)	Withheld	Withheld	Withheld	 512,832 	Onshore/Offshore	Federal
@@ -1462,7 +1462,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2007	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 2,400 	Onshore	Federal
 2007	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2007	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2007	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2007	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2007	Salt (tons)	NM	35015	Eddy County	 W 	Onshore	Federal
 2007	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2007	Salt (tons)	Withheld	Withheld	Withheld	 705,887 	Onshore/Offshore	Federal
@@ -2225,7 +2225,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2008	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 11,300 	Onshore	Federal
 2008	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2008	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2008	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2008	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2008	Salt (tons)	NM	35015	Eddy County	 314,483 	Onshore	Federal
 2008	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2008	Salt (tons)	Withheld	Withheld	Withheld	 319,856 	Onshore/Offshore	Federal
@@ -2988,7 +2988,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2009	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 1,595 	Onshore	Federal
 2009	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2009	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2009	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2009	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2009	Salt (tons)	NM	35015	Eddy County	 372,956 	Onshore	Federal
 2009	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2009	Salt (tons)	Withheld	Withheld	Withheld	 268,721 	Onshore/Offshore	Federal
@@ -3744,7 +3744,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2010	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 1,000 	Onshore	Federal
 2010	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2010	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2010	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2010	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2010	Salt (tons)	NM	35015	Eddy County	 434,018 	Onshore	Federal
 2010	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2010	Salt (tons)	Withheld	Withheld	Withheld	 364,023 	Onshore/Offshore	Federal
@@ -4504,7 +4504,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2011	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 88,412 	Onshore	Federal
 2011	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2011	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2011	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2011	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2011	Salt (tons)	NM	35015	Eddy County	 439,367 	Onshore	Federal
 2011	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2011	Salt (tons)	Withheld	Withheld	Withheld	 425,152 	Onshore/Offshore	Federal
@@ -5271,7 +5271,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2012	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 73,596 	Onshore	Federal
 2012	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2012	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2012	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2012	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2012	Salt (tons)	NM	35015	Eddy County	 409,345 	Onshore	Federal
 2012	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2012	Salt (tons)	Withheld	Withheld	Withheld	 340,764 	Onshore/Offshore	Federal
@@ -6030,7 +6030,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2013	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 88,213 	Onshore	Federal
 2013	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2013	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2013	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2013	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2013	Salt (tons)	NM	35015	Eddy County	 425,125 	Onshore	Federal
 2013	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2013	Salt (tons)	Withheld	Withheld	Withheld	 468,941 	Onshore/Offshore	Federal
@@ -6793,7 +6793,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2014	Quartz Crystal (tickets/pounds)	Withheld	Withheld	Withheld	 960 	Onshore	Federal
 2014	Salt (tons)	AZ	04013	Maricopa County	 W 	Onshore	Federal
 2014	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2014	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2014	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2014	Salt (tons)	NM	35015	Eddy County	 457,797 	Onshore	Federal
 2014	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2014	Salt (tons)	Withheld	Withheld	Withheld	 440,428 	Onshore/Offshore	Federal
@@ -7552,7 +7552,7 @@ Calendar Year	Product	State/Offshore Region	FIPS Code	CPS/Planning Area	 Product
 2015	Purge Liquor (tons - equivalent)	WY	56037	Sweetwater County	 95,877 	Onshore	Federal
 2015	Quartz Crystal (tickets/pounds)	AR	05097	Montgomery County	 4,701 	Onshore	Federal
 2015	Salt (tons)	CA	06071	San Bernardino County	 W 	Onshore	Federal
-2015	Salt (tons)	LA		Central Gulf of Mexico	 W 	Offshore	Federal
+2015	Salt (tons)	Offshore Gulf		Central Gulf of Mexico	 W 	Offshore	Federal
 2015	Salt (tons)	NM	35015	Eddy County	 377,585 	Onshore	Federal
 2015	Salt (tons)	UT	49045	Tooele County	 W 	Onshore	Federal
 2015	Salt (tons)	Withheld	Withheld	Withheld	 387,216 	Onshore/Offshore	Federal

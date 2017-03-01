@@ -40,12 +40,24 @@ td {
 
 .table-basic {
   border: 0;
+  font-size: 0.8rem;
   width: 100%;
 
   td,
   th {
     border: 0;
+  }
+
+  td {
     text-align: left;
+  }
+
+  th {
+    text-align: right;
+
+    &:first-of-type {
+      text-align: left;
+    }
   }
 
   tr {
@@ -54,10 +66,23 @@ td {
 
   thead {
     background-color: transparent;
+    line-height: $line-height-caps;
 
     tr {
       border-bottom: 2px solid $mid-gray;
     }
+  }
+
+  .numeric {
+    text-align: right;
+  }
+}
+
+.disbursements-table {
+  td,
+  th {
+    padding-bottom: $base-padding-small;
+    padding-top: $base-padding-small;
   }
 }
 

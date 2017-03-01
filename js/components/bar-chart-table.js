@@ -1,6 +1,10 @@
 (function(exports) {
   'use strict';
 
+  var WITHHELD_FLAG = 'Withheld';
+  var NO_DATA_FLAG = undefined;
+  var DEFAULT_YEAR = '2015';
+
   var initialize = function() {
     this._cells = [].slice.call(
       this.querySelectorAll('tr > [data-value]')
@@ -18,12 +22,10 @@
       .querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 
-    this.setYear();
+    var year = this.getAttribute('year') || DEFAULT_YEAR;
+    this.setYear(year);
     this.update();
   };
-
-  var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined; // eslint-disable-line no-undef-init
 
   var setYear = function(year) {
     var root = d3.select(this);
@@ -118,6 +120,8 @@
             : false;
         });
 
+      sentencesData.attr('aria-hidden', true);
+
       sentencesData.select('.withheld')
         .attr('aria-hidden', function(d) {
           return d === WITHHELD_FLAG
@@ -192,20 +196,58 @@
   }
 
   var show = function(fips) {
+    var elOffsetTop;
+    var overflowRegion = d3.select(this).select('.inner-table-wrapper');
     var rows = d3.select(this).selectAll('tbody > tr');
-    rows.classed('selected', false);
+    rows
+      .classed('mouseover', false);
 
-    rows.selectAll('[data-sentence]')
+    rows.select('[data-sentence]')
       .attr('aria-hidden', true);
 
-    // show matching row
-    rows.filter(function() {
-      return this.getAttribute('data-fips') === fips;
-    })
-    .classed('selected', true)
-    .select('[data-sentence]')
-    .attr('aria-hidden', false);
+    var matching = rows
+      .classed('selected', false)
+      .filter(function() {
+        return this.getAttribute('data-fips') === fips;
+      })
+      .classed('selected', true);
 
+    if (!matching.empty()) {
+      elOffsetTop = matching.property('offsetTop');
+    }
+
+    if (!overflowRegion.empty()) {
+      overflowRegion.property('scrollTop', elOffsetTop);
+    }
+
+
+    matching.select('[data-sentence]')
+        .attr('aria-hidden', false);
+
+
+  };
+
+  var hide = function() {
+    var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false)
+      .classed('selected', false);
+  };
+
+  var highlight = function(fips, event) {
+    var rows = d3.select(this).selectAll('tbody > tr');
+    rows
+      .classed('mouseover', false);
+
+    if (event !== 'mouseout') {
+      rows
+      .classed('mouseover', false)
+      .filter(function() {
+        return this.getAttribute('data-fips') === fips;
+      })
+      .classed('mouseover', true)
+        .attr('aria-hidden', false);
+    }
   }
 
   var update = function() {
@@ -251,23 +293,16 @@
       var min = extent[0];
       var max = extent[1];
       var negative = min < 0;
-      var zero = 0;
       var width = d3.scale.linear()
         .domain(extent)
         .range(range)
         .clamp(true);
 
-      var offset;
       var sizeProperty = 'width';
-      var offsetProperty = 'margin-left';
 
       if (negative) {
         var length = max - min;
-        zero = 100 * (0 - min) / length;
-        offset = d3.scale.linear()
-          .domain([min, 0, max])
-          .range([0, zero, zero])
-          .clamp(true);
+
         width = d3.scale.linear()
           .domain([min, 0, max])
           .range([100 * -min / length, 0, 100 * max / length])
@@ -276,7 +311,6 @@
 
       if (this.orient === 'vertical') {
         sizeProperty = 'height';
-        offsetProperty = 'bottom';
       }
 
       var that = this;
@@ -347,12 +381,6 @@
         } else {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
         }
-
-        if (offset) {
-          bar.style.setProperty(offsetProperty, offset(value) + '%');
-        } else {
-          bar.style.removeProperty(offsetProperty);
-        }
       });
 
     }, this);
@@ -378,6 +406,10 @@
         setYear: {value: setYear},
 
         show: {value: show},
+
+        hide: {value: hide},
+
+        highlight: {value: highlight},
 
         orient: {
           get: function() {

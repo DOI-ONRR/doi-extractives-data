@@ -35,6 +35,12 @@ data-map {
       }
     }
 
+    .map-container {
+      background-color: $gray-light;
+      border: 0;
+      margin-bottom: 10px;
+    }
+
     .legend-container {
       @include span-columns(4);
       @include omega();
@@ -49,6 +55,7 @@ data-map {
 .legend-ownership-svg {
   .cells {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,7 +69,7 @@ data-map {
     padding: 0;
     padding-bottom: $base-padding;
     padding-left: calc(12px + #{$base-padding-lite});
-    padding-right: $base-padding;
+    margin-right: $base-padding;
     position: relative;
 
     &:last-of-type {
@@ -96,9 +103,12 @@ data-map {
 
 // map legend
 .details-container {
-  bottom: 0;
+  display: block;
   margin: 0;
-  position: absolute;
+
+  button {
+    margin-top: $base-padding-lite;
+  }
 }
 
 eiti-data-map {
@@ -123,22 +133,17 @@ eiti-data-map {
   .feature.county {
     cursor: pointer;
 
-    &.selected,
-    &.mouseover,
-    &:hover,
-    &:active,
-    &:focus {
+    &.selected use,
+    &.mouseover use {
       stroke-width: 3px;
+      stroke-linejoin: round;
     }
 
-    &.mouseover,
-    &:hover,
-    &:active,
-    &:focus {
+    &.mouseover use {
       stroke: $green-dark-chart-mid;
     }
 
-    &.selected {
+    &.selected use {
       stroke: $green-dark-chart;
     }
   }
@@ -147,14 +152,9 @@ eiti-data-map {
 
 .legend-svg {
   border: none;
-  height: 215px;
+  height: 95px;
   padding: 0;
-  width: 200px;
-
-  // .swatch {
-  //   stroke: $neutral-gray;
-  //   stroke-width: 1;
-  // }
+  width: 100%;
 
   .cell text {
     @include font-size(3 / 4);
@@ -168,7 +168,7 @@ eiti-data-map {
   padding-top: $standard-padding-lite;
 
   .legend-svg.horizontal {
-    height: 50px;
+    max-height: 14px;
   }
 }
 

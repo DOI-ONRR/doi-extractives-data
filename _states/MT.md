@@ -7,10 +7,14 @@ opt_in: true
 
 state_revenue_year: 2014
 
+# is_cropped forces the default county map view to use
+# a custom set of viewbox coordinates
+is_cropped: true
+
 state_production: |
     Much of Montana's crude oil and natural gas production is in northeastern Montana, in the Williston Basin, which includes the [Bakken formation](https://www.minneapolisfed.org/publications/special-studies/bakken/oil-production) as well as the Baker/Cedar Creek field, which contains the nation’s largest single underground natural gas storage facility. (There are also natural gas wells in south central Montana.)
 
-    Montana's coal reserves, which are the largest estimated recoverable coal reserves in the U.S., are mostly located in the Powder River Basin in southeastern Montana. Five large surface mines provide the bulk of Montana’s coal production, though it also has one sizable underground mine.  
+    Montana's coal reserves, which are the largest estimated recoverable coal reserves in the U.S., are mostly located in the Powder River Basin in southeastern Montana. Five large surface mines provide the bulk of Montana’s coal production, though it also has one sizable underground mine.
 
     Montana has 25 hydroelectric dams and several utility-scale wind farms. The Montana Department of Environmental Quality maintains information about [wind power in Montana](http://deq.mt.gov/Energy/EnergizeMT/Renewable/windweb).
 
@@ -28,6 +32,8 @@ state_land_production: |
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
 state_revenue_sustainability: |
+    ![Bar graph comparing Montana natural resources revenues to total general fund revenue from 2011-2014. Over that period, total general fund revenue rose from just above $2 billion in 2011 to over $2.5 billion in 2014. Revenue from natural resources stayed relatively flat at a little more than $0.25 billion each year.]({{ site.baseurl }}/img/MT_revenue_sustainability.svg)
+
     In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat; the percentage of revenue from natural resources has decreased from 13.5% of total revenue that went to the state general fund in 2010 to 11.3% in 2014.
 state_tax_expenditures: |
     In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
@@ -38,7 +44,7 @@ state_saving_spending: |
 state_impact: |
     The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented  4.9% growth from 2013.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented 4.9% growth from 2013.
 ---
 
 <!-- State governance -->

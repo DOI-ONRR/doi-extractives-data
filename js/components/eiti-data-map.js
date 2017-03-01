@@ -5,7 +5,13 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;  // eslint-disable-line no-undef-init
+  var NO_DATA_FLAG = undefined; // jshint ignore:line
+
+  function pixelize(d) {
+    return String(d).match(/px/)
+      ? d
+      : d + 'px';
+  }
 
   exports.EITIDataMap = document.registerElement('eiti-data-map', {
     prototype: Object.create(
@@ -16,12 +22,11 @@
 
           this.marks = root.selectAll('[data-value]')
             .datum(function() {
-              if (!this.hasAttribute('data-value')
-                  || this.getAttribute('data-value') === 'null') {
-
+              var value = this.getAttribute('data-value');
+              if (value === null || value === 'null') {
                 return WITHHELD_FLAG;
               } else {
-                return +this.getAttribute('data-value');
+                return Number(value);
               }
             });
 
@@ -30,7 +35,8 @@
           } else {
             this.isWideView = true;
           }
-          this.update();
+          this.update('init');
+          this.cropMap();
         }},
 
         setYear: {value: function(year) {
@@ -51,9 +57,24 @@
           // update legend caption
           d3.select(this).selectAll('figcaption [data-year]')
             .attr('data-year', year)
-            .text(year)
+            .text(year);
 
           this.update();
+        }},
+
+        cropMap: {value: function() {
+          var root = d3.select(this);
+
+          var svgMap = root.select('svg.county.map');
+          var svgContainer = root.select('.svg-container');
+
+          if (!svgMap.empty() && !svgContainer.empty()) {
+            svgContainer.style('padding-bottom', function() {
+              return pixelize(svgMap.node().getBoundingClientRect().height);
+            });
+          } else {
+            console.warn('cannot resize svg map because it doesn\'t exist');
+          }
         }},
 
         detectWidth: {value: function() {
@@ -72,7 +93,7 @@
                 var height = +svgDimensions[3];
                 // if a map's width is more than 50% a map's height
                 // then make it a wide view
-                if (width > height * 1.5) {
+                if (width > height * 2.5) {
                   this.isWideView = true;
                   if (!svgContainer.empty()) {
                     svgContainer.classed('wide', true);
@@ -87,7 +108,7 @@
           }
         }},
 
-        update: {value: function() {
+        update: {value: function(init) {
           var hasData = [];
           this.marks.data().every(function(d) {
             if (d === WITHHELD_FLAG) {
@@ -103,9 +124,9 @@
           });
 
           var root = d3.select(this);
-
           var truthy = hasData.indexOf(true) > -1;
           var withheld = hasData.indexOf(WITHHELD_FLAG) > -1;
+
           if (truthy || withheld) {
             root.select('.legend-data')
               .attr('aria-hidden', !truthy);
@@ -137,7 +158,7 @@
 
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
-          var steps = this.getAttribute('steps') || 5;
+          var steps = this.getAttribute('steps') || 4;
           var format = this.getAttribute('format');
           var legendDelimiter = '–';
           var legendFormat = format === '$'
@@ -146,21 +167,25 @@
 
           var settings = {
             horizontal: {
-              width: 70,
+              width: 12,
               height: 12,
-              padding: 10
+              padding: 4,
+              margin: 10
             },
             vertical: {
               width: 15,
               height: 15,
-              padding: 6
-            }
+              padding: 10,
+              margin: 6
+            },
+
           },
           shapeWidth,
           shapeHeight,
-          shapePadding;
+          shapePadding,
+          shapeMargin;
 
-          var colors = colorbrewer[scheme][steps];
+          var colors = ['#e1f4fa', '#a1d4ed', '#3d95bd', '#005078'];
           if (!colors) {
             return console.error(
               'bad # of steps (%d) for color scheme:', steps, scheme
@@ -212,6 +237,7 @@
           shapeWidth = settings[orient].width;
           shapeHeight = settings[orient].height;
           shapePadding = settings[orient].padding;
+          shapeMargin = settings[orient].margin;
 
           var svgLegend = d3.select(this)
             .select('.legend-svg')
@@ -227,7 +253,8 @@
               .shapeHeight(shapeHeight)
               .labelDelimiter(legendDelimiter)
               .shapePadding(shapePadding)
-              .labelAlign("start")
+              .labelOffset(shapeMargin)
+              .labelAlign('start')
               .scale(scale);
 
 
@@ -237,7 +264,11 @@
                 .attr('class', 'legendScale');
             }
 
-            legendScale.call(legend);
+            try {
+              legendScale.call(legend);
+            } catch (error) {
+              console.warn('legend error:', error);
+            }
 
           } else {
             console.warn(
@@ -245,24 +276,40 @@
             );
           }
 
-          // start trim height on map container
-          var svgContainer = d3.select(this)
-            .selectAll('.svg-container[data-dimensions]')
-            .datum(function() {
-              var multiplier = this.classList.contains('wide')
-                ? 100 + 9
-                : 65.88078 + 10;
+          // If the legend is 'horizontal',
+          // then shift the text and label from
+          // its default settings
+          if (orient == 'horizontal') {
+            var cumulative = 0;
 
-              return +this.getAttribute('data-dimensions') * multiplier;
-            });
-
-          function percentage(d) {
-            return d + '%';
+            svgLegend.select('.legendCells')
+              .selectAll('.cell')
+                .datum(function(){
+                  return d3.select(this)
+                    .select('.label')
+                    .node()
+                    .getComputedTextLength();
+                })
+                .attr('transform',function(textWidth){
+                  var shift = cumulative;
+                  var s = settings.horizontal;
+                  var margin = s.width + s.padding + s.margin;
+                  cumulative += textWidth + margin;
+                  return 'translate(' + shift + ', 0)';
+                })
+                .select('text')
+                   .attr('transform',function(){
+                    var s = settings.horizontal;
+                    var padding = s.padding + s.width;
+                    return 'translate(' + padding + ', 10)';
+                  });
           }
+          // end horizontal legend shift
 
-          svgContainer.style('padding-bottom', percentage);
-          // end trim
 
+          if (init) {
+            this.setYear('2015');
+          }
         }}
       }
     )

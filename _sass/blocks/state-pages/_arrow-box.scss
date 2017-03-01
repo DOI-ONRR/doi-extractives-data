@@ -88,14 +88,25 @@ $ab-border-thick: 4px;
   }
 
   .table-arrow_box-subcategory,
-  .table-arrow_box-category {
+  .table-arrow_box-category,
+  .table-arrow_box-subheader {
     @include heading('para-sm');
+  }
+
+  .table-arrow_box-subheader {
+    font-weight: $weight-bold;
+  }
+
+  .table-arrow_box-subheader-value:not(.text) {
+    @include font-size(1);
+
+    color: $green-dark-chart;
   }
 
   .table-arrow_box-category {
     border-bottom: $ab-border-thin solid $ab-color-primary;
     border-top: 25px solid $white;
-    color: $green-dark;
+    color: $gray-dark;
     font-weight: $weight-bold;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -109,11 +120,16 @@ $ab-border-thick: 4px;
     }
 
     icon {
-      color: $green-dark;
+      color: $gray-dark;
       font-weight: $weight-bold;
       font-size: 20px;
     }
   }
+}
+
+.table-arrow_box-asterisk {
+  @include font-size(0.75);
+  line-height: 0;
 }
 
 

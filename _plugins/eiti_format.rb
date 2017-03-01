@@ -32,14 +32,14 @@ module EITI
     # >> EITI::Format.percent(0.5, 0, '?')
     # => '?'
     def percent(num, precision = 1, small = '&lt;1')
-      if num.nil?
-        # FIXME: what should we represent null % as?
-        return '--'
+      if num.is_a? String
+        num = num.to_f
       end
-
-      num = num.to_f
+      if num.nil?
+        # XXX: what should we represent null % as?
+        return '--'
       # zero is zero
-      if num.zero?
+      elsif num.zero?
         return '0'
       # if it's less than 1, return the "small" representation
       elsif num < 1.0
@@ -59,6 +59,25 @@ module EITI
     # => 'foo'
     def suffix(text, suffix = '')
       suffix.empty? ? text : "#{text} #{suffix}"
+    end
+
+    def abbr_year(year)
+      "’#{year.to_s.slice(-2, 2)}"
+    end
+
+    def year_range(years)
+      years = years.map(&:to_i)
+      if years.size == 1
+        abbr_year(years.first)
+      elsif years.last == (years.first + years.size - 1)
+        [years.first, years.last]
+          .map{ |y| abbr_year(y) }
+          .join('&ndash;')
+      else
+        years
+          .map{ |y| abbr_year(y) }
+          .join(', ')
+      end
     end
   end
 end

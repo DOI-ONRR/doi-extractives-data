@@ -9,8 +9,11 @@ machine:
 ## Customize dependencies
 dependencies:
   pre:
+    - npm install
     - gem install jekyll -v '3.0.5'
     - bundle install
+    - npm run update-webpack
+  post:
     - bundle exec jekyll build
 
 ## Customize test commands

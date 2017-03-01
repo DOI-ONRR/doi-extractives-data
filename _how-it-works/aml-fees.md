@@ -32,7 +32,7 @@ State and tribal AML programs rate abandoned mine areas on a priority scale of 1
 
 To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).[^2]
 
-**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. To see data by completed, funded, and unfunded sites, click on 'Summary.'** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="" class="article_img-100 u-margin-top u-margin-bottom"></a>
+**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. To see data by completed, funded, and unfunded sites, click on 'Summary.'** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 
 ### Reclaimed AML areas
@@ -60,7 +60,7 @@ For more information:
 
 <img src="{{ site.baseurl }}/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
 
-The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)). 
+The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)).
 
 ## AML revenue and disbursements
 
@@ -112,7 +112,7 @@ OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE of
 
 ## The AML fund
 
-Prior to 2006, companies often paid more money into the AML fund each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
+Prior to 2006, companies often paid more money into the [AML fund](http://www.osmre.gov/programs/aml.shtm) each year than Congress chose to appropriate. A large, unappropriated balance grew over time.
 
 **Growth of the AML fund's unappropriated balance**[^17]
 

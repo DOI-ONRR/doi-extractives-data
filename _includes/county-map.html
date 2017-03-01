@@ -4,6 +4,7 @@
 {% assign caption = include.caption %}
 {% assign toggle = include.toggle %}
 {% assign units = include.units %}
+{% assign year = include.year | default: year | default: '2015' %}
 
 {% if _inherit_width %}
   {% assign __width = '' %}
@@ -12,109 +13,129 @@
 {% endif %}
 
 {% if _viewbox %}
+  {% if _viewbox['county'] %}
+    {% assign _viewbox = _viewbox['county'] %}
+  {% endif %}
   {% assign _viewbox_list = _viewbox | split: ' ' | to_f %}
   {% assign breakpoint_width = _viewbox_list[2] %}
   {% assign _height = _viewbox_list[3] %}
-  {% assign breakpoint_height = _viewbox_list[3] | times:1.5 %}
+  {% assign breakpoint_height = _viewbox_list[3] | times: 2.5 %}
   {% capture is_wide %}
     {% if breakpoint_width > breakpoint_height %}wide{% endif %}
   {% endcapture %}
   {% assign is_wide = is_wide | strip %}
 {% endif %}
 
-{% if is_wide != 'wide' %}
-  {% assign _width = 65.88078 | to_f %}
+{% capture data_dimensions %}
+  {{ _height | divided_by:breakpoint_width | to_f }}
+{% endcapture %}
+
+{% if is_wide == 'wide' %}
+  {% assign media_width = 100 %}
+{% else %}
+  {% assign media_width = 65.88078 | to_f %}
 {% endif %}
 
-<div class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
-  style="{{ __width }} padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %} data-dimensions="{{ _height | divided_by:breakpoint_width }}">
-  <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
-    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-    {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
-    <g class="states features">
-      <use xlink:href="{{ states_svg }}#states"></use>
-    </g>
-    <g class="states mesh">
-      <use xlink:href="{{ states_svg }}#states-mesh"></use>
-    </g>
-    <g class="counties features">
-      <use xlink:href="{{ state_svg }}#counties"></use>
-    </g>
-    <g class="counties mesh">
-      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
-    </g>
+{% assign additional_padding = data_dimensions | times: 1.8 %}
+{% assign padding_bottom = media_width | times: data_dimensions | plus: additional_padding %}
 
-    {% if include.counties %}
-      {% assign keys = include.value %}
-      {% for county in include.counties %}
-        {% assign fips = county[0] | pad_left: 5, '0' %}
-        {% if include.href %}<a xlink:href="{{ include.href | format_url: fips }}">{% endif %}
-        {% assign value = county[1] | get: keys %}
-
-        {% assign year_values = null %}
-        {% if include.years %}
-          {% assign year_values = county[1] | get: include.years %}
-          {% if include.years_property %}
-            {% assign year_values = year_values | map_hash: include.years_property %}
-          {% endif %}
+<div class="container">
+  <div is="eiti-tooltip-wrapper"
+       tooltip-style="subtle"
+       cursor-offset="10"
+       class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
+    style="padding-bottom: {{ padding_bottom }}%;"{% endif %} data-dimensions="{{ _height | divided_by: breakpoint_width }}">
+    <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+      {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+      {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
+      <g class="states features">
+        {% if page.neighbors %}
+          {% for neighbor in page.neighbors %}
+        <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+          {% endfor %}
+        {% else %}
+        <use xlink:href="{{ states_svg }}#states"></use>
         {% endif %}
-
-        {% if year_values %}
-          <g class="county feature"
-            data-fips="{{ fips }}"
-            data-value='{{ value | jsonify }}'
-            data-year-values='{{ year_values | jsonify }}'>
-            <title>{{ county[1].name }}</title>
-            <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
-          </g>
+      </g>
+      <g class="states mesh">
+        {% if page.neighbors %}
+          {% for neighbor in page.neighbors %}
+        <use xlink:href="{{ states_svg }}#state-{{ neighbor }}"></use>
+          {% endfor %}
+        {% else %}
+        <use xlink:href="{{ states_svg }}#states-mesh"></use>
         {% endif %}
-        {% if include.href %}</a>{% endif %}
-      {% endfor %}
+      </g>
+      <g class="counties features">
+        <use xlink:href="{{ state_svg }}#counties"></use>
+      </g>
+
+      {% if include.counties %}
+        {%
+          include county-feature.html
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          counties=include.counties
+          href=include.href
+        %}
+      {% endif %}
+
+      <g class="counties mesh">
+        <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+      </g>
+      {% if include.counties %}
+        {%
+          include county-feature.html
+          only_stroke=true
+          value= include.value
+          years=include.years
+          years_property=include.years_property
+          counties=include.counties
+          href=include.href
+        %}
+      {% endif %}
+
+      <g class="state feature overlay">
+        <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
+      </g>
+    </svg>
+  </div>
+
+  <div class="legend-container {{ is_wide }}">
+    {% if include.caption %}
+      <figcaption class="legend-data">
+        {{ include.caption }}
+      </figcaption>
+      <figcaption class="legend-no-data" aria-hidden="true">
+        There is no county-level data for {{ state_name }} in <span data-year="{{ year }}" >{{ year }}</span>.
+      </figcaption>
+      <figcaption class="legend-withheld" aria-hidden="true">
+        County-level data for <span data-year="{{ year }}" >{{ year }}</span> is withheld.
+      </figcaption>
     {% endif %}
 
-    <g class="state feature overlay">
-      <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
-    </g>
-  </svg>
+    <svg class="legend-svg"></svg>
+  </div>
+</div><!-- .container -->
 
-  {% if include.toggle %}
-    <h4 class="details-container">
-      <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text}}
-        {% else %}Show table{% endif %}
-      </button>
-    </h4>
-  {% endif %}
-</div>
-
-<div class="legend-container {{ is_wide }}">
-  {% if include.caption %}
-    <figcaption class="legend-data">
-      {{ include.caption }}
-    </figcaption>
-    <figcaption class="legend-no-data" aria-hidden="true">
-      There is no data for {{ state_name }} in <span data-year="{{ year }}" >{{ year}}</span>.
-      Select a new year to populate the map.
-    </figcaption>
-    <figcaption class="legend-withheld" aria-hidden="true">
-      County-level data for <span data-year="{{ year }}" >{{ year}}</span> is withheld.
-    </figcaption>
-  {% endif %}
-
-  <svg class="legend-svg"></svg>
-
-  {% if include.toggle %}
-    <h4 class="details-container">
-      <button is="aria-toggle"
-        aria-controls="{{ include.toggle }}">
-        <i class="icon icon-plus-sm"></i>
-        {% if include.toggle_text %}
-          {{ include.toggle_text}}
-        {% else %}Show table{% endif %}
-      </button>
-    </h4>
-  {% endif %}
-</div>
+{% if include.toggle %}
+  <h4 class="details-container">
+    <button is="aria-toggle"
+      aria-controls="{{ include.toggle }}"
+      aria-expanded="false">
+        <span class="hide-expanded">
+          <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/img/icons/icon-circled-plus.svg"/>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_hidden }}
+          {% else %}Show table{% endif %}
+        </span>
+        <span class="show-expanded">
+          <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/img/icons/icon-circled-minus.svg"/>
+          {% if include.toggle_text %}
+            {{ include.toggle_text_visible }}
+          {% else %}Hide table{% endif %}
+        </span>
+    </button>
+  </h4>
+{% endif %}

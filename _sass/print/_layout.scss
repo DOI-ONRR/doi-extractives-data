@@ -41,3 +41,7 @@ a::after{
 [accordion-item] div[aria-hidden='true'] {
   display: block !important;
 }
+
+.sticky {
+  position: static !important;
+}

@@ -5,14 +5,19 @@
 
 <section id="all-production" is="year-switcher-section" class="all-lands production">
 
-  <h3>Energy production nationwide</h3>
+  {%
+    include sticky-header.html
+    header_text='Energy production nationwide'
+    year_range=year_range
+    selector=true
+  %}
 
   <div class="chart-selector-wrapper">
 
     {% include year-selector.html year_range=year_range %}
 
     <p class="chart-description">
-      The U.S. Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned lands and waters. This data does not include information about nonenergy mineral mining.
+      The Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned lands and waters. This data does not include information about nonenergy mineral mining.
       <br>
       <a href="{{site.baseurl}}/downloads/#production-all">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -31,13 +36,24 @@
       {% assign units = product[1].units | downcase %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
+      {% assign term_units = units_map[units].term | default: long_units %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
+
 
     <section id="all-production-{{ product_slug }}" class="chart-item">
 
-      <h3 class="chart-title"><span>{{ product_name }}</span></h3>
+      {% assign chart_toggle = 'all-production-figures-chart-{{ product_slug }}' | liquify %}
 
-      <figure class="chart">
+      {%
+        include chart_title.html
+        chart_name=product_name
+        chart_toggle=chart_toggle
+        chart_values=production_values
+        units=long_units
+        is_icon=true
+      %}
+
+      <figure class="chart" id="{{ chart_toggle }}">
         <eiti-bar-chart
           aria-controls="all-production-figures-{{ product_slug }}"
           data='{{ production_values | jsonify }}'
@@ -48,12 +64,12 @@
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-            {{ long_units | term }} of
-            {{ product_name | downcase | suffix: units_suffix }} was produced in
+            {{ long_units | term: term_units }} of
+            {{ product_name | downcase | suffix: units_suffix }} were produced in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
           <span class="caption-no-data" aria-hidden="true">
-            There is no data about production of {{ product_name | downcase | suffix: units_suffix }} in 
+            There is no data about production of {{ product_name | downcase | suffix: units_suffix }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>
         </figcaption>

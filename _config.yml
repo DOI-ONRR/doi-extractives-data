@@ -9,9 +9,7 @@ description: >
 url: https://useiti.doi.gov
 
 # app version number
-version: v1.3.4
-
-beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
+version: v2.1.7
 
 sass:
   style: nested
@@ -19,7 +17,7 @@ sass:
 
 exclude:
   # top-level log
-  - /*.log
+  - '*.log'
   # markdown files
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
@@ -57,15 +55,28 @@ exclude:
   - Makefile
   - '**/Makefile'
   # data tools and SQLite databases
-  - '*.sql'
   - '*.db*'
-  - data/**/*.js
-  - data/**/*.svg
+  - .env
   - data/**/*.csv
+  - data/**/*.js
+  - data/**/*.md
+  - data/**/*.ndjson
+  - data/**/*.sql
+  - data/**/*.svg
+  - data/env.example
+  - data/README.md
+  - data/company-revenue/input
   - data/geo/input
   - data/jobs/bls
+  - data/land-stats
   - maps/data
   - maps/land/*.json
+
+include:
+  - /build.log
+
+gems:
+  - jekyll-sitemap
 
 collections:
   case-studies:
@@ -79,7 +90,7 @@ collections:
     permalink: /explore/:path/
   federal-revenue-by-company:
     output: true
-    permalink: /explore/federal-revenue-by-company/:path/
+    permalink: /how-it-works/federal-revenue-by-company/:path/
   how-it-works:
     output: true
     permalink: /how-it-works/:path/
@@ -88,10 +99,13 @@ collections:
     # permalinks are defined in _offshore_areas/???.md
   offshore_regions:
     output: true
-    permalink: /explore/offshore/:path/
+    permalink: /explore/:path/
   states:
     output: true
     permalink: /explore/:path/
+  reconciliation:
+    output: true
+    permalink: /how-it-works/reconciliation/:path/
 
 defaults:
   - scope:
@@ -99,6 +113,12 @@ defaults:
       type: federal-revenue-by-company
     values:
       layout: federal-revenue-by-company
+
+  - scope:
+      path: ''
+      type: reconciliation
+    values:
+      layout: reconciliation
 
   - scope:
       path: ''
@@ -112,14 +132,15 @@ defaults:
     values:
       layout: offshore-region
 
-  - scope:
-      path: ''
-      type: offshore_areas
-    values:
-      layout: offshore-area
-
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42
   - 11652cb6b75c1e914857a215e8f8eca7a599e0e0
   - 85f41ebb92208a3508c75114999a560ebd741690
   - 695ef693b0889d16e60e6d6fff06dc1c79db45d2
+  - b8c37255d14dc7fc67f3eea0266ee4f94759066e
+  - 145339f20b6b880c54391360223877511afd7d2a
+  - df66d905fcd5151ade0387b48cf7789d3ba8203a
+  - 6f4c9ff75ae1dc4fcbf8d547d7a855615a4fd9b6
+  - 009f8804ce5413a0d2a604e9938dba635c6c6222
+  - cc20376993abd596768c9c60ff456ad9f4fe8e7c
+  - 7f39b8e0a432747338ce075c50c19d2323da0e14

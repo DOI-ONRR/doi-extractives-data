@@ -1,11 +1,10 @@
 .sticky {
+  background: $white;
+  padding-top: $standard-padding-lite;
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
-
-  &.sticky-top {
-    top: 0;
-  }
+  top: 0;
+  z-index: $z-roof;
 }
 
 .sticky::before,

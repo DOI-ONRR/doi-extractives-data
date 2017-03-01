@@ -314,7 +314,8 @@ svg {
 
 @include respond-to(small-to-huge) {
   .ribbon .ribbon-hero,
-  .ribbon-card-top {
+  .ribbon-card-top,
+  .ribbon-card-bottom {
     padding-left: $page-padding;
     padding-right: $page-padding;
   }

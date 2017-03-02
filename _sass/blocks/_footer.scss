@@ -43,8 +43,13 @@ footer,
   margin-bottom: 0;
 }
 
+.footer-para_callout-smaller {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 .footer-para_callout-bigger {
-  font-size: 1.125rem;
+  font-size: 1.3rem;
 }
 
 .footer-para_last {
@@ -65,7 +70,7 @@ footer,
 
 .footer-image {
   margin-bottom: $base-padding-extra;
-  max-width: 260px;
+  max-width: 200px;
   width: $eiti-logo-width;
 
   @include respond-to(huge-plus-up) {

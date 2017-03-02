@@ -97,7 +97,7 @@
     return !isLessThan ? sigFig : '';
   };
 
-  var setSigFigs = function (ymax, ceilMax) {
+  var setSigFigs = function(ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
     while (sigFigs.length < 1) {

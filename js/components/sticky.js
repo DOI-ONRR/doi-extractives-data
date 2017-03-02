@@ -26,7 +26,7 @@
 
   var watch = function() {
     stickies.forEach(function(sticky) {
-      var atTop = d3.select(sticky).style('position') == 'fixed';
+      var atTop = d3.select(sticky).style('position') === 'fixed';
       var isStuck = sticky.classList.contains('stuck');
 
       if (atTop && !isStuck) {
@@ -37,8 +37,9 @@
     });
   };
 
-  doc.on('scroll.sticky', eiti.util.throttle(watch, 100));
-  win.on('resize.sticky', eiti.util.throttle(watch, 100));
+  var throttledWatch = eiti.util.throttle(watch, 100);
+  doc.on('scroll.sticky', throttledWatch);
+  win.on('resize.sticky', throttledWatch);
 
   watch();
 

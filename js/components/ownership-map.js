@@ -18,7 +18,7 @@
           return pixelize(svgMap.node().getBoundingClientRect().height);
         });
       } else {
-        console.warn('cannot resize svg map because it doesn\'t exist');
+        throw new Error("cannot resize svg map because it doesn't exist");
       }
     };
 

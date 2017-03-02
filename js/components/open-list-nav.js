@@ -127,7 +127,7 @@
             if (!document.getElementById(item.dataset.navItem) && item) {
               item.setAttribute('aria-hidden', true);
               item.outerHTML = '';
-              delete item;
+              item = undefined;
             } else {
               item.addEventListener('click', function () {
                 self.update(this);

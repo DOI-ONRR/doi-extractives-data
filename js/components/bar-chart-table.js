@@ -2,7 +2,7 @@
   'use strict';
 
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
+  var NO_DATA_FLAG;
   var DEFAULT_YEAR = '2015';
 
   var initialize = function() {

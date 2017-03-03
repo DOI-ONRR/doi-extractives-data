@@ -23,9 +23,11 @@ input[type='submit'] {
 
   background-color: $primary-button-bg-color;
   color: $white;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
   -webkit-font-smoothing: antialiased;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 2em;
+  padding-right: 2em;
 
   &:hover,
   &:focus {

@@ -5,7 +5,7 @@
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined; // jshint ignore:line
+  var NO_DATA_FLAG = undefined; // eslint-disable-line no-undef-init
 
   function pixelize(d) {
     return String(d).match(/px/)
@@ -279,18 +279,18 @@
           // If the legend is 'horizontal',
           // then shift the text and label from
           // its default settings
-          if (orient == 'horizontal') {
+          if (orient === 'horizontal') {
             var cumulative = 0;
 
             svgLegend.select('.legendCells')
               .selectAll('.cell')
-                .datum(function(){
+                .datum(function() {
                   return d3.select(this)
                     .select('.label')
                     .node()
                     .getComputedTextLength();
                 })
-                .attr('transform',function(textWidth){
+                .attr('transform', function(textWidth) {
                   var shift = cumulative;
                   var s = settings.horizontal;
                   var margin = s.width + s.padding + s.margin;
@@ -298,7 +298,7 @@
                   return 'translate(' + shift + ', 0)';
                 })
                 .select('text')
-                   .attr('transform',function(){
+                   .attr('transform',function() {
                     var s = settings.horizontal;
                     var padding = s.padding + s.width;
                     return 'translate(' + padding + ', 10)';

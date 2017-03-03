@@ -1,3 +1,4 @@
+/* global d3, eiti, Immutable */
 (function(eiti) {
   'use strict';
 
@@ -18,13 +19,12 @@
 
     var state = new Immutable.Map();
     var updated = false;
-    var mutating = false;
 
     var manager = {};
     var dispatch = d3.dispatch('change');
 
     // the default state validator is a noop
-    var validateState = function(state /*, previous, updated */) {
+    var validateState = function(state) {
       return state;
     };
 
@@ -93,7 +93,8 @@
     manager.init = function(initial) {
       var previous = state;
       if (initial) {
-        mergeState(initial) || update(state, previous); // jshint ignore:line
+        // eslint-disable-next-line no-unused-expressions
+        mergeState(initial) || update(state, previous);
       } else {
         update(state, null);
       }
@@ -107,16 +108,13 @@
 
     // mutate the state and update if the state has changed
     function mutateState(fn) {
-      mutating = true;
       var previous = state;
       state = fn(state) || new Immutable.Map();
       if (!Immutable.is(state, previous)) {
         state = validateState(state, previous, updated);
         update(state, previous);
-        mutating = false;
         return true;
       }
-      mutating = false;
       return false;
     }
 
@@ -149,7 +147,7 @@
       writing = false;
     };
 
-    function change(e) { // jshint ignore:line
+    function change(e) { // eslint-disable-line no-unused-vars
       if (writing) {
         return;
       }
@@ -284,9 +282,13 @@
 
       var area = d3.svg.area()
         .interpolate('step-after')
-        .x(function(d) { return x(d.year); })
+        .x(function(d) {
+          return x(d.year);
+        })
         .y0(y(0))
-        .y1(function(d) { return y(d.value); });
+        .y1(function(d) {
+          return y(d.value);
+        });
 
       var areas = selection.selectAll('path.area')
         .data([
@@ -353,7 +355,9 @@
       }
 
       var updated = selection.property('updated');
-      var t = function(d) { return d; };
+      var t = function(d) {
+        return d;
+      };
       if (updated) {
         t = function(d) {
           return d.transition()

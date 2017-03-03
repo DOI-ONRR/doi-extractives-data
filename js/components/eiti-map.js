@@ -1,8 +1,10 @@
-// globals d3, topojson, eiti
+/* eslint-disable no-console */
 (function(exports) {
   'use strict';
 
   var CustomEvent = require('custom-event');
+  var topojson = require('topojson');
+  var queue = require('d3-queue');
 
   exports.EITIMap = document.registerElement('eiti-map', {
     // 'extends': 'svg',
@@ -91,7 +93,7 @@
           selection
             .selectAll('path')
             .classed('zoomed', function(d) {
-              if (!feature && d.id && d.id == featureId) {
+              if (!feature && d.id && d.id === featureId) {
                 feature = d;
                 return true;
               }
@@ -161,7 +163,7 @@
           skipped = 0;
           this.stream.polygon(d);
           if (skipped) {
-            console.log('skipped %d points in polygon:', skipped, polygon);
+            console.log('skipped %d points in polygon:', skipped, d);
           }
         }
       });
@@ -180,7 +182,6 @@
 
         var filter = this.getAttribute('data-filter');
         var features = [];
-        var key;
         switch (d.type) {
 
           case 'Topology':
@@ -206,13 +207,11 @@
         }
 
         if (filter) {
-          // console.log('filter %d features with expression:', features.length, '"' + filter + '"');
           filter = evaluator(filter);
           // only apply the filter to non-mesh features
           features = features.filter(function(d) {
             return d.mesh || filter(d);
           });
-          // console.log('filtered %d features', features.length);
         }
 
         var feature;
@@ -229,7 +228,9 @@
               .append('title');
 
           link
-            .filter(function(d) { return !d.mesh; })
+            .filter(function(d) {
+              return !d.mesh;
+            })
             .attr('xlink:href', evaluator('"#" + id'))
             .attr('xlink:name', evaluator('id'))
             .attr('xlink:title', evaluator('id'));
@@ -260,7 +261,9 @@
         if (this.hasAttribute('data-title')) {
           var title = evaluator(this.getAttribute('data-title'));
           feature.select('title')
-            .filter(function(d) { return !d.mesh; })
+            .filter(function(d) {
+              return !d.mesh;
+            })
             // .each(function(d) { console.log('title:', d); })
             .text(title);
         }
@@ -316,7 +319,9 @@
 
       if (!bbox) {
         var bboxes = layers.data()
-          .filter(function(d) { return d; })
+          .filter(function(d) {
+            return d;
+          })
           .map(function(d) {
             return bounds(d);
           });
@@ -384,12 +389,6 @@
     });
   }
 
-  function parseBBox(value) {
-    return value
-      ? value.trim().split(/\s+/).map(Number)
-      : null;
-  }
-
   function getBBox(bboxes) {
     var xmin = Infinity,
         ymin = Infinity,
@@ -434,10 +433,12 @@
       }
     } else {
       features = [];
-      var keys = Object.keys(d.objects);
       var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
-        features = features.concat(topojson.feature(d, d.objects[key]).features);
+        features = features.concat(
+          topojson.feature(d, d.objects[key])
+            .features
+        );
         if (mesh === 'true' || meshIds.indexOf(key) > -1) {
           features.push(getMesh(d, d.objects[key], filter));
         }

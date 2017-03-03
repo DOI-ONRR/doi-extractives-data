@@ -2,7 +2,9 @@
 
   var assign = require('object-assign');
   var d3 = require('d3');
-  var identity = function(d) { return d; };
+  var identity = function(d) {
+    return d;
+  };
 
   var attributeReflector = function(attr, options) {
     var read = options.read || identity;

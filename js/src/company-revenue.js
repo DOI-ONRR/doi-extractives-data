@@ -1,6 +1,4 @@
-(function() {
-  'use strict';
+'use strict';
 
-  require('./../eiti.explore.js');
-  require('./../pages/company-revenue.js');
-})(window);
+require('./../eiti.explore.js');
+require('./../pages/company-revenue.js');

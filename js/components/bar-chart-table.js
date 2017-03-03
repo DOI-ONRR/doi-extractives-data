@@ -1,14 +1,25 @@
 (function(exports) {
+  'use strict';
 
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined;
+  var NO_DATA_FLAG;
   var DEFAULT_YEAR = '2015';
 
   var initialize = function() {
-    this._cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
-    this.nested_cells = [].slice.call(this.querySelectorAll('tr > [data-value] > [data-value]'));
-    this._cells = this._cells.concat(this.nested_cells)
-    this.eitiDataMap = this.parentNode.parentNode.querySelector('eiti-data-map');
+    this._cells = [].slice.call(
+      this.querySelectorAll('tr > [data-value]')
+    );
+    this.nested_cells = [].slice.call(
+      this.querySelectorAll('tr > [data-value] > [data-value]')
+    );
+    this._cells = this._cells.concat(this.nested_cells);
+    // XXX this is ugly and brittle. Rather than going a specific # of
+    // levels up, maybe we could use this.closest('some-selector') ?
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+    this.eitiDataMap = this
+      .parentNode
+      .parentNode
+      .querySelector('eiti-data-map');
     this.isCountyTable = d3.select(this).classed('county-table');
 
     var year = this.getAttribute('year') || DEFAULT_YEAR;
@@ -21,21 +32,21 @@
 
     if (root.classed('county-table')) {
 
-      function parseYearVals(context) {
+      var parseYearVals = function(context) {
         var yearVals = context.getAttribute('data-year-values') &&
             context.getAttribute('data-year-values') !== 'null'
               ? context.getAttribute('data-year-values')
               : '{}';
         return JSON.parse(yearVals);
-      }
+      };
 
-      function coerceNumber(num) {
-        return typeof(num) == undefined || typeof(num) == 'undefined'
+      var coerceNumber = function(num) {
+        return num === null || num === 'undefined'
           ? WITHHELD_FLAG
           : num;
-      }
+      };
 
-      function cellData(data, year, property, coerce) {
+      var cellData = function(data, year, property, coerce) {
         if (data && property) {
           if ( data[year] ) {
             return data[year][property] || coerceNumber(coerce);
@@ -47,9 +58,9 @@
         } else {
           return coerceNumber(coerce);
         }
-      }
+      };
 
-      function formatText(context, value) {
+      var formatText = function(context, value) {
         var format = d3.format(context.getAttribute('data-format') || ',')
 
         if (context.getAttribute('data-format') === '%') {
@@ -68,9 +79,12 @@
         } else {
           return format(value);
         }
+      };
+
+      if (!year) {
+        throw new Error('no year provided!');
       }
 
-      var year = year || '2015';
       var bars = root.selectAll('[data-value]');
       var texts = root.selectAll('[data-value-text]');
       var sentences = root.selectAll('[data-sentence]');
@@ -122,13 +136,16 @@
             : false;
         });
 
-      sentencesData.select('[data-value]').attr('data-value', function(d) {
+      sentencesData.select('[data-value]')
+        .attr('data-value', function(d) {
           return d;
-        }).text(function(d) {
+        })
+        .text(function(d) {
           return formatText(this, d);
         })
 
-      texts.datum(function() {
+      texts
+        .datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property) || 0;
@@ -141,7 +158,8 @@
         });
 
       var that = this;
-      swatches.datum(function() {
+      swatches
+        .datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
           return cellData(data, year, property) || 0;
@@ -149,7 +167,7 @@
         .attr('data-value-swatch', function(d) {
           return d;
         })
-        .style('background-color', function (d) {
+        .style('background-color', function(d) {
           if (d && that.eitiDataMap.scale) {
             return that.eitiDataMap.scale(d);
           }
@@ -163,7 +181,7 @@
         .attr('data-year', year)
         .text(year)
 
-      rows.datum(function(){
+      rows.datum(function() {
         var data = parseYearVals(this);
         if ( data[year] === NO_DATA_FLAG ) {
           return NO_DATA_FLAG;
@@ -171,7 +189,7 @@
           return data[year] || WITHHELD_FLAG;
         }
       })
-      .attr('aria-hidden', function (d) {
+      .attr('aria-hidden', function(d) {
         return !d;
       });
     }
@@ -296,9 +314,9 @@
       }
 
       var that = this;
-      cells.forEach(function(cell, i) {
+      cells.forEach(function(cell, i) { // eslint-disable-line no-unused-vars
         if (!cell) {
-          console.warn('no cell @', i);
+          // console.warn('no cell @', i);
           return;
         } else if (cell.parentNode.hasAttribute('data-value')) {
           // console.warn('cell is child', i);
@@ -306,15 +324,19 @@
 
         var cellAlwaysEmpty = cell.getAttribute('data-year-values') === 'null';
         var childCells = cell.querySelectorAll('[data-value]');
+        var span;
 
         // TODO only do this if autolabel="true"?
-        if (cell.childNodes.length === 1 && cell.firstChild.nodeType === Node.TEXT_NODE) {
+        var singularTextNode = cell.childNodes.length === 1
+          && cell.firstChild.nodeType === Node.TEXT_NODE;
+
+        if (singularTextNode) {
           if (autolabel) {
             cell.setAttribute('aria-label', cell.firstChild.textContent);
             cell.removeChild(cell.firstChild);
           } else {
             var text = cell.removeChild(cell.firstChild);
-            var span = cell.appendChild(document.createElement('span'));
+            span = cell.appendChild(document.createElement('span'));
             span.className = 'text';
             span.appendChild(text);
           }
@@ -322,8 +344,9 @@
 
 
         var barExtent = cell.querySelector('.bar');
+        var bar;
         if (barExtent) {
-          var bar = barExtent.querySelector('.bar');
+          bar = barExtent.querySelector('.bar');
         }
 
         if (!barExtent && !bar) {
@@ -331,7 +354,7 @@
           barExtent.className = 'bar';
           bar = document.createElement('div');
           bar.className = 'bar';
-          var span = cell.querySelector('span');
+          span = cell.querySelector('span');
           if (barExtent && bar) {
             if (span) {
               cell.insertBefore(barExtent,span);
@@ -370,6 +393,7 @@
       {
         attachedCallback: {value: initialize},
 
+        // eslint-disable-next-line no-unused-vars
         attributeChangedCallback: {value: function(attr, old, value) {
           switch (attr) {
             case 'orient':

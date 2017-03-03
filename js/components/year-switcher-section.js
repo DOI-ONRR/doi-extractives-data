@@ -5,7 +5,7 @@
 
     var select = root.selectAll('select.chart-selector');
     var charts = root.selectAll('eiti-bar-chart');
-    var nonIconCharts = charts.filter(function () {
+    var nonIconCharts = charts.filter(function() {
       return !this.hasAttribute('is-icon');
     });
     var maps = root.selectAll('eiti-data-map');

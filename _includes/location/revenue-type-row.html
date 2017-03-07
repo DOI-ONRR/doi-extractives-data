@@ -16,7 +16,7 @@
         %}
         <td data-value="{{
           total_other_revenues | default: 0
-        }}"><span class="text table-arrow_box-subheader-value">${{
+        }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">${{
           total_other_revenues
           | default: 0
           | intcomma
@@ -30,7 +30,7 @@
       {% else %}
         <td data-value="{{
             values[revenue_type][year] | default: 0
-        }}"><span class="text table-arrow_box-subheader-value">${{
+        }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">${{
           commodity[1][revenue_type][year]
           | default: 0
           | intcomma

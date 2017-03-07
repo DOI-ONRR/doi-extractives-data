@@ -125,11 +125,16 @@ $ab-border-thick: 4px;
       font-size: 20px;
     }
   }
+
+  .table-arrow_box-value {
+    text-align: right;
+  }
 }
 
 .table-arrow_box-asterisk {
   @include font-size(0.75);
   line-height: 0;
+  text-align: left;
 }
 
 

@@ -58,6 +58,10 @@
        url('fonts/eiti/eiti.svg#icon-book') format('svg');
 }
 
+@font-face {
+  font-family: 'tile';
+  src: url('fonts/lato/lato-b82ea3b30deea2f013b1d494a77f966706dd69ee.ttf');
+}
 [class*='icon-']:before {
   display: inline-block;
   font-family: 'eiti';

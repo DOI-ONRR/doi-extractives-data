@@ -126,6 +126,14 @@ $ab-border-thick: 4px;
 
   .table-arrow_box-value {
     text-align: right;
+
+    &.table-arrow_box-text {
+      text-align: left;
+
+      .table-arrow_box-subheader-value {
+        float: right;
+      }
+    }
   }
 }
 

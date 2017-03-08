@@ -21,7 +21,7 @@
   %}
   <td rowspan="2" data-value="{{
     oilgas_bonus_total | default: 0
-  }}">
+  }}" class="table-arrow_box-value">
     <span class="text table-arrow_box-subheader-value">${{ oilgas_bonus_total | default: 0 | intcomma }}</span>
   </td>
   {% assign oilgas_rents_total = values.Rents[year] | default: 0
@@ -31,10 +31,10 @@
   %}
   <td rowspan="2" data-value="{{
     oilgas_rents_total | default: 0
-  }}">
+  }}" class="table-arrow_box-value">
     <span class="text table-arrow_box-subheader-value">${{ oilgas_rents_total | default: 0 | intcomma }}</span>
   </td>
-  <td class="{% if multiple_bars %}bars{% endif %}" data-value="{{
+  <td class="{% if multiple_bars %}bars{% endif %} table-arrow_box-value" data-value="{{
     revenue_types.Oil.Royalties[year] | default: 0
   }}">
     <span data-value="{{
@@ -46,7 +46,7 @@
 
     {% if revenue_types.Oil.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-first">Oil</strong>
+      <strong class="text-header text-header-first">Oil<br></strong>
       ${{
         revenue_types.Oil.Royalties[year]
         | default: 0
@@ -56,13 +56,13 @@
 
     {% if revenue_types.Gas.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-second">Gas</strong>
+      <strong class="text-header text-header-second">Gas<br></strong>
       ${{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
 
     {% if revenue_types.NGL.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-third">NGL</strong>
+      <strong class="text-header text-header-third">NGL<br></strong>
       ${{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma }}</span>
     {% endif %}
   </td>
@@ -72,5 +72,5 @@
     | plus: revenue_types.Gas['Other Revenues'][year]
     | plus: revenue_types.NGL['Other Revenues'][year]
   %}
-  <td rowspan="2" data-value="{{ oilgas_other_total }}"><span class="text table-arrow_box-subheader-value">${{ oilgas_other_total | intcomma }}</span></td>
+  <td rowspan="2" data-value="{{ oilgas_other_total }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">${{ oilgas_other_total | intcomma }}</span></td>
 </tr>

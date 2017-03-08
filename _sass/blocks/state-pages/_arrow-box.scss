@@ -84,11 +84,10 @@ $ab-border-thick: 4px;
   }
 
   tbody td {
-    padding: 10px;
+    padding: 10px 10px 25px 10px;
   }
 
   .table-arrow_box-subcategory,
-  .table-arrow_box-category,
   .table-arrow_box-subheader {
     @include heading('para-sm');
   }
@@ -104,9 +103,8 @@ $ab-border-thick: 4px;
   }
 
   .table-arrow_box-category {
-    border-bottom: $ab-border-thin solid $ab-color-primary;
-    border-top: 25px solid $white;
-    color: $gray-dark;
+    border-top: $ab-border-thin solid $ab-color-primary;
+    color: $gray-darker;
     font-weight: $weight-bold;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -116,7 +114,7 @@ $ab-border-thick: 4px;
     }
 
     td {
-      padding-left: 0;
+      padding: 20px 10px 0px 0px;
     }
 
     icon {

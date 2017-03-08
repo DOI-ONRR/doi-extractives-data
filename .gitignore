@@ -8,3 +8,4 @@
 _site
 *.db
 node_modules
+tmp

@@ -6,25 +6,27 @@ nav_description: Jump to a section
 nav_items:
   - name: introduction
     title: Top
-  - nav_group: Land ownership
-  - name: private-lands
-    title: Private Lands
-  - name: federal-lands
-    title: Federal Lands
-  - name: state-and-local-lands
-    title: State and Local Lands
-  - name: indian-lands
-    title: Indian Lands
-  - nav_group_close: true
-  - nav_group: Natural resource ownership
-  - name: split-ownership
-    title: Split Ownership
-  - nav_group_close: true
+  - name: land-ownership
+    title: Land ownership
+    subnav_items:
+      - name: private-lands
+        title: Private Lands
+      - name: federal-lands
+        title: Federal Lands
+      - name: state-and-local-lands
+        title: State and Local Lands
+      - name: indian-lands
+        title: Indian Lands
+  - name: natural-resource-ownership
+    title: Natural resource ownership
+    subnav_items:
+      - name: split-ownership
+        title: Split Ownership
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Ownership
-selector: hash
+selector: list
 ---
 
 > Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.

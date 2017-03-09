@@ -20,7 +20,7 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: State Laws and Regulations
-selector: hash
+selector: list
 ---
 
 > States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.

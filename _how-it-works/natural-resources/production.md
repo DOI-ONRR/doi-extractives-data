@@ -6,35 +6,38 @@ nav_description: Jump to a section
 nav_items:
   - name: introduction
     title: Top
-  - nav_group: Fossil fuels
-  - name: oil
-    title: Oil
-  - name: gas
-    title: Gas
-  - name: coal
-    title: Coal
-  - nav_group_close: true
-  - nav_group: Renewable energy
-  - name: geothermal-energy
-    title: Geothermal energy
-  - name: solar-energy
-    title: Solar energy
-  - name: wind-power
-    title: Wind power
-  - nav_group_close: true
-  - nav_group: Nonenergy minerals
-  - name: gold
-    title: Gold
-  - name: copper
-    title: Copper
-  - name: iron
-    title: Iron
-  - nav_group_close: true
+  - name: fossil-fuels
+    title: Fossil fuels
+    subnav_items:
+      - name: oil
+        title: Oil
+      - name: gas
+        title: Gas
+      - name: coal
+        title: Coal
+  - name: renewable-energy
+    title: Renewable energy
+    subnav_items:
+      - name: geothermal-energy
+        title: Geothermal energy
+      - name: solar-energy
+        title: Solar energy
+      - name: wind-power
+        title: Wind power
+  - name: nonenergy-minerals
+    title: Nonenergy minerals
+    subnav_items:
+      - name: gold
+        title: Gold
+      - name: copper
+        title: Copper
+      - name: iron
+        title: Iron
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Production
-selector: hash
+selector: list
 ---
 
 > The United States is home to many different natural resources, including {{ "fossil fuel" | term_end }}, {{ "renewable energy" | term_end }}, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time. [Explore production data.]({{ site.baseurl }}/explore/#production)
@@ -63,7 +66,7 @@ Extraction methods for oil and gas changed significantly starting in the early 2
 
 In the past decade, these changing extraction methods and rising natural gas prices have made shale oil and gas increasingly attractive to extractive industries. Major oil and gas shale rock formations include the Permian, Haynesville, and Eagle Ford Regions mostly in Texas; the Marcellus Region in West Virginia, Pennsylvania, and New York; the Niobrara Region in Wyoming and Colorado; and the Bakken Region in North Dakota and Montana.
 
-In addition to these shale formations, the Green River Formation, which is located at the intersection of Colorado, Utah, and Wyoming, is estimated to hold [1.44 trillion barrels of oil (PDF)](http://pubs.usgs.gov/fs/2011/3063/pdf/FS11-3063.pdf). In shale gas, two Appalachian {{ "plays" | term_end:"play" }} have driven U.S. shale gas production, which accounts for [50% of total U.S. natural gas production](http://www.eia.gov/todayinenergy/detail.php?id=27612). These plays are the Marcellus Play (spanning nine states from New York to Tennessee) and the Utica Play (spanning Ohio, West Virginia, Pennsylvania, and New York). 
+In addition to these shale formations, the Green River Formation, which is located at the intersection of Colorado, Utah, and Wyoming, is estimated to hold [1.44 trillion barrels of oil (PDF)](http://pubs.usgs.gov/fs/2011/3063/pdf/FS11-3063.pdf). In shale gas, two Appalachian {{ "plays" | term_end:"play" }} have driven U.S. shale gas production, which accounts for [50% of total U.S. natural gas production](http://www.eia.gov/todayinenergy/detail.php?id=27612). These plays are the Marcellus Play (spanning nine states from New York to Tennessee) and the Utica Play (spanning Ohio, West Virginia, Pennsylvania, and New York).
 
 To see where oil and gas resources exist and where exploration is taking place, visit the following:
 

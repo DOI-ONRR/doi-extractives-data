@@ -160,7 +160,7 @@ nav_items:
         <section id="braunkohle-gewinnung" style="position: relative;">
           <h3>Gewinnung</h3>
           <p>
-            Braunkohle wird hauptsächlich in drei Revieren – dem Rheinischen, Lausitzer und Mittel- deutschen Revier – ausschließlich in Tagebauen, also oberflächennah, gefördert. Die Jah- resförderung betrug 2015 rund 178,1 Millionen Tonnen und war in den letzten Jahren weit- gehend konstant. Der Wert der 2014 in Deutschland geförderten Braunkohle betrug 2,5 Mrd. Euro. Damit ist die Braunkohle – nach dem Wert der Produktion – nach Erdgas der zweit- wichtigste in Deutschland geförderte Rohstoff. Mit dem Rückgang der Braunkohleförderung im Zuge der deutschen Wiedervereinigung ist die Zahl der direkt im Braunkohlebergau Be- schäftigten von 130.000 (1990) auf 16.000 (2014) gesunken.
+            Braunkohle wird hauptsächlich in drei Revieren – dem Rheinischen, Lausitzer und Mittel- deutschen Revier – ausschließlich in Tagebauen, also oberflächennah, gefördert. Die Jah- resförderung betrug 2015 rund 178,1 Millionen Tonnen und war in den letzten Jahren weitgehend konstant. Der Wert der 2014 in Deutschland geförderten Braunkohle betrug 2,5 Mrd. Euro. Damit ist die Braunkohle – nach dem Wert der Produktion – nach Erdgas der zweit- wichtigste in Deutschland geförderte Rohstoff. Mit dem Rückgang der Braunkohleförderung im Zuge der deutschen Wiedervereinigung ist die Zahl der direkt im Braunkohlebergau Be- schäftigten von 130.000 (1990) auf 16.000 (2014) gesunken.
           </p>
         </section>
         <section id="braunkohle-verwendung" style="position: relative;">

@@ -86,7 +86,9 @@
           return x(d).toFixed(2) + '%';
         })
         .select('.label')
-          .text(function(d) { return d; });
+          .text(function(d) {
+            return d;
+          });
 
       try {
         var event = new CustomEvent('change', {
@@ -94,7 +96,7 @@
         });
         this.dispatchEvent(event);
       } catch (err) {
-        console.warn('unable to fire "change" event: ', err);
+        // console.warn('unable to fire "change" event: ', err);
       }
     },
 

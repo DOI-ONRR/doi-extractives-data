@@ -75,6 +75,10 @@
   padding-right: $base-padding-lite;
 }
 
+.icon-padded_after:before {
+  padding-left: $base-padding-lite;
+}
+
 $icon-gold: '\0041';
 $icon-close-x: '\0042';
 $icon-renewables: '\0043';

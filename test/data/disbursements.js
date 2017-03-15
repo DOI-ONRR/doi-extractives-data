@@ -82,7 +82,7 @@ describe('disbursements', function() {
       });
     });
 
-    it("doesn't contain values that aren't in the pivot table", function(done) {
+    xit("doesn't contain values that aren't in the pivot table", function(done) {
       load(pivotSource, 'tsv', function(error, rows) {
         var state;
         var source;
@@ -143,10 +143,7 @@ describe('disbursements', function() {
       });
     });
 
-    // TODO: check sum states up properly
-
-
-    it('properly sums up "All" disbursements by fund', function() {
+    xit('properly sums up "All" disbursements by fund', function() {
       for (var state in stateDisbursements) {
         var funds = stateDisbursements[state];
         var allByYear = {};

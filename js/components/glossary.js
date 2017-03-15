@@ -60,7 +60,8 @@
     // Bind listeners
     self.$toggle.on('click', this.toggle.bind(this));
     self.$body.on('click', '.toggle', this.toggle.bind(this));
-    self.$body.on('click', '.glossary-term', this.toggleTermFromClick.bind(this) );
+    self.$body.on('click', '.glossary-term',
+                  this.toggleTermFromClick.bind(this) );
     self.$search.on('input', this.handleInput.bind(this));
 
     $(document.body).on('keyup', this.handleKeyup.bind(this));
@@ -79,7 +80,7 @@
       }
     });
 
-    self.$body.on('click', function(event){
+    self.$body.on('click', function(event) {
       event.stopPropagation();
     });
   };
@@ -105,7 +106,7 @@
     linkTerms: function() {
       var self = this;
       var $terms = $(self.selectors.term);
-      $terms.each(function(){
+      $terms.each(function() {
         var $term = $(this);
         $term.attr('title', 'Click to define')
           .attr('tabindex', 0)
@@ -124,8 +125,10 @@
       this.$search.val(term);
 
       // Highlight the term and remove other highlights
-      this.$body.find('.term--highlight').removeClass('term--highlight');
-      this.$body.find('span[data-term="' + term + '"]').addClass('term--highlight');
+      this.$body.find('.term--highlight')
+        .removeClass('term--highlight');
+      this.$body.find('span[data-term="' + term + '"]')
+        .addClass('term--highlight');
       this.list.filter(function(item) {
         return item._values['glossary-term'].toLowerCase() === term;
       });
@@ -133,7 +136,7 @@
       // Hack: Expand text for selected item
       this.list.search();
 
-      this.list.visibleItems.forEach(function(item){
+      this.list.visibleItems.forEach(function(item) {
         var $elm = $(item.elm);
         $elm.attr('aria-expanded', true);
       });
@@ -144,9 +147,9 @@
       method.apply(this);
     },
 
-    toggleTermFromClick: function(event){
+    toggleTermFromClick: function(event) {
       var $target = $(event.target);
-      var doExpand = $target.parent().attr( 'aria-expanded') === 'true' ? 'false' : 'true';
+      var doExpand = $target.parent().attr('aria-expanded') !== 'true';
 
       $target
         .siblings( 'p' )
@@ -171,7 +174,7 @@
       this.isOpen = false;
       accessibility.removeTabindex(this.$body);
 
-      if (this.$navDrawer.attr('aria-hidden') == 'false') {
+      if (this.$navDrawer.attr('aria-hidden') === 'false') {
         this.$navToggle.click();
       }
     },
@@ -185,7 +188,7 @@
 
     /** Close glossary on escape keypress */
     handleKeyup: function(e) {
-      if (e.keyCode == KEYCODE_ESC) {
+      if (e.keyCode === KEYCODE_ESC) {
         if (this.isOpen) {
           this.hide();
         }

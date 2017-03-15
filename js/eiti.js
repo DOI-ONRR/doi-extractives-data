@@ -310,18 +310,18 @@
    * window.addEventListener('resize', throttle(someFunction, 150, window));
    */
   eiti.util.throttle = function throttle(fn, threshhold, scope) {
-    threshhold || (threshhold = 250);
+    threshhold = threshhold || 250;
     var last,
         deferTimer;
-    return function () {
+    return function() {
       var context = scope || this;
 
-      var now = +new Date,
+      var now = Date.now(),
           args = arguments;
       if (last && now < last + threshhold) {
         // hold on to it
         clearTimeout(deferTimer);
-        deferTimer = setTimeout(function () {
+        deferTimer = setTimeout(function() {
           last = now;
           fn.apply(context, args);
         }, threshhold);

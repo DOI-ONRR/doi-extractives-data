@@ -4,9 +4,10 @@
 
   var E = 1e-6;
 
-  // A composite projection for the United States, configured by default for
-  // 960×500. Also works quite well at 960×600 with scale 1285. The set of
-  // standard parallels for each region comes from USGS, which is published here:
+  // A composite projection for the United States, configured by
+  // default for 960×500. Also works quite well at 960×600 with scale
+  // 1285. The set of standard parallels for each region comes from
+  // USGS, which is published here:
   // http://egsc.usgs.gov/isb/pubs/MapProjections/projections.html#albers
   var albersCustom = function() {
     var lower48 = d3.geo.albers();
@@ -24,7 +25,11 @@
         .parallels([8, 18]);
 
     var point,
-        pointStream = {point: function(x, y) { point = [x, y]; }},
+        pointStream = {
+          point: function(x, y) {
+            point = [x, y];
+          }
+        },
         lower48Point,
         alaskaPoint,
         hawaiiPoint;
@@ -32,6 +37,7 @@
     function albersUsa(coordinates) {
       var x = coordinates[0], y = coordinates[1];
       point = null;
+      // eslint-disable-next-line no-unused-expressions
       (lower48Point(x, y), point)
           || (alaskaPoint(x, y), point)
           || hawaiiPoint(x, y);
@@ -39,7 +45,10 @@
     }
 
     function inBounds(x, y, bbox) {
-      return y >= bbox[0][1] && y < bbox[1][1] && x >= bbox[0][0] && x < bbox[1][0];
+      return y >= bbox[0][1]
+          && y <  bbox[1][1]
+          && x >= bbox[0][0]
+          && x <  bbox[1][0];
     }
 
     albersUsa.invert = function(coordinates) {
@@ -160,8 +169,10 @@
     };
 
     var size = [960, 670];
-    albersUsa.size = function(_) {
-      if (arguments.length) throw 'The size of this projection is fixed.';
+    albersUsa.size = function() {
+      if (arguments.length) {
+        throw new Error('The size of this projection is fixed.');
+      }
       return size.slice();
     };
 

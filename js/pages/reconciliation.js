@@ -1,4 +1,3 @@
-// globals d3, eiti, EITIBar
 (function() {
   'use strict';
 

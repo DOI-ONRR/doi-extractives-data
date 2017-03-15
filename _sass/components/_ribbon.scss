@@ -27,7 +27,7 @@
   background-color: $gray-pale;
   border: 0;
   padding-bottom: 0;
-  padding-top: $base-padding-extra;
+  padding-top: 0;
   text-align: center;
 
   &.ribbon-card-column {
@@ -42,7 +42,10 @@
   }
 
   &.ribbon-card-has-image {
-    padding-top: 0;
+
+    @include respond-to(tiny-down) {
+      padding-top: $base-padding-large;
+    }
 
     .ribbon-card-top {
       margin: 0;
@@ -63,6 +66,11 @@
       margin: 0;
     }
   }
+}
+
+.ribbon-card,
+.ribbon-card-column {
+  border-top: 4px solid $white;
 }
 
 .ribbon-card-top {
@@ -186,8 +194,12 @@
     position: relative;
 
     &.ribbon-card-home {
-      @include respond-to(tiny-down) {
-        padding-top: $base-padding-extra;
+      padding-top: $base-padding-extra;
+
+      @include respond-to(tiny-to-medium) {
+        &:last-of-type {
+          padding-top: 0;
+        }
       }
     }
   }
@@ -201,10 +213,6 @@
     &.ribbon-hero-home {
       padding-bottom: $base-padding-jumbo;
       padding-top: $base-padding-extra;
-
-      @include respond-to(tiny-to-medium) {
-        padding-bottom: 0;
-      }
     }
 
     &.ribbon-hero-column {
@@ -278,7 +286,7 @@ svg {
 
   .ribbon-card:not(.ribbon-card-column) {
     .ribbon-card-button {
-      bottom: 50%;
+      bottom: 60%;
       float: left;
       left: 12.5%;
       margin: 0;
@@ -295,8 +303,6 @@ svg {
 
     &.ribbon-card-has-image {
       .ribbon-card-top {
-        padding-top: 0;
-
         .ribbon-card-image {
           padding-left: 30%;
           padding-right: 30%;
@@ -308,7 +314,8 @@ svg {
 
 @include respond-to(small-to-huge) {
   .ribbon .ribbon-hero,
-  .ribbon-card-top {
+  .ribbon-card-top,
+  .ribbon-card-bottom {
     padding-left: $page-padding;
     padding-right: $page-padding;
   }
@@ -320,9 +327,13 @@ svg {
     border-left: 4px solid $white;
     border-right: 4px solid $white;
 
-    &:not(.ribbon-card-column) .ribbon-card-button {
-      float: none;
-      position: static;
+    &:not(.ribbon-card-column) {
+      border-top: 0;
+
+      .ribbon-card-button {
+        float: none;
+        position: static;
+      }
     }
   }
 
@@ -332,7 +343,6 @@ svg {
 
     .ribbon-card {
       align-self: stretch;
-      padding-top: $base-padding-large;
       position: relative;
     }
 
@@ -391,7 +401,6 @@ svg {
 }
 
 @include respond-to(huge-up) {
-
   .ribbon-card-top {
     border-bottom: 4px solid $white;
   }
@@ -407,10 +416,17 @@ svg {
     }
   }
 
+  .ribbon .ribbon-card {
+    padding-top: $base-padding-large;
+  }
+
   .ribbon-card {
+
     &.ribbon-card-column {
       border-left: 4px solid $white;
       border-right: 4px solid $white;
+      border-top: 0;
+
 
       .ribbon-card-top {
         padding-top: 0;

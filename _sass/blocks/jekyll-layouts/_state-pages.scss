@@ -152,7 +152,7 @@
 
   &[aria-expanded=false] {
     // XXX magic number
-    max-height: 7.2em;
+    max-height: 7.4em;
     overflow-y: hidden;
 
     // add a little white shadow when it's collapsed
@@ -166,5 +166,31 @@
       position: absolute;
       width: 100%;
     }
+  }
+}
+
+.withheld-list {
+  $font-size: 7 / 8;
+  $line-height: 20px;
+
+  color: $gray-darkest;
+
+  p {
+    @include font-size($font-size);
+    line-height: $line-height;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    @include font-size($font-size);
+    color: $gray-darker;
+  }
+
+  button {
+    text-align: left;
   }
 }

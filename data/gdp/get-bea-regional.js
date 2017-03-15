@@ -19,9 +19,7 @@ var options = require('yargs')
 var tito = require('tito').formats;
 var request = require('request');
 var qs = require('querystring');
-var _url = require('url');
 var util = require('../../lib/util');
-var thru = require('through2').obj;
 var fs = require('fs');
 var async = require('async');
 var extend = require('extend');
@@ -138,10 +136,6 @@ function mapRow(row) {
     Year: row.TimePeriod,
     Value: row.DataValue * ONE_MILLION
   };
-}
-
-function noop(error) {
-  console.warn('error?', error);
 }
 
 function coerceNumber(str) {

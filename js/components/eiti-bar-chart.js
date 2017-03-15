@@ -36,10 +36,10 @@
 
   var extentPercent = 0.05; // 5%
   extentMargin = barHeight * extentPercent;
-  top = top + extentMargin;
+  top += extentMargin;
   var extentTop = top - extentMargin;
 
-  var fullHeight = height + extentMargin
+  var fullHeight = height + textMargin + extentMargin
     + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
 
@@ -97,7 +97,7 @@
     return !isLessThan ? sigFig : '';
   };
 
-  var setSigFigs = function (ymax, ceilMax) {
+  var setSigFigs = function(ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
     while (sigFigs.length < 1) {
@@ -120,8 +120,12 @@
     var values = data;
     if (Array.isArray(data)) {
       values = d3.nest()
-        .key(function(d) { return d.x; })
-        .rollup(function(d) { return d[0]; })
+        .key(function(d) {
+          return d.x;
+        })
+        .rollup(function(d) {
+          return d[0];
+        })
         .entries(data);
     } else {
       values = Object.keys(data).reduce(function(map, key) {
@@ -163,7 +167,9 @@
       return xdomain.indexOf(d.x) > -1;
     });
 
-    var extent = d3.extent(data, function(d) { return d.y; });
+    var extent = d3.extent(data, function(d) {
+      return d.y;
+    });
     var ymax = extent[1];
     var ymin = Math.min(0, extent[0]);
 
@@ -296,10 +302,10 @@
     }
 
     var xAxis = svg.select('.x-axis')
-        .attr('transform', 'translate(' + [0, bottom] + ')')
-        .call(axis);
+      .attr('transform', 'translate(' + [0, bottom] + ')')
+      .call(axis);
 
-    function isInSet (year, vals) {
+    function isInSet(year, vals) {
       vals = vals || values;
       if (vals[year] !== undefined) {
         return vals[year].y !== null;
@@ -310,7 +316,7 @@
 
     xAxis.selectAll('text')
       .attr('class', function(d) {
-        if (!isInSet(d)){
+        if (!isInSet(d)) {
           return 'dataless';
         }
       });

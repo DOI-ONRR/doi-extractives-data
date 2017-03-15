@@ -33,9 +33,9 @@
       updateScrollTop: function() {
         this.scrollTop.prev = this.scrollTop.current;
         this.scrollTop.current = getScrollTop();
-        this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
-          ? 'down'
-          : 'up';
+        this.scrollTop.direction = (
+          this.scrollTop.current >= this.scrollTop.prev
+        ) ? 'down' : 'up';
       },
 
       isActiveElement: function(el) {
@@ -69,26 +69,26 @@
         return status;
       },
 
-      stripHash: function (str) {
+      stripHash: function(str) {
         return str.charAt(0) === '#'
           ? str.slice(1, str.length)
           : str;
       },
 
-      resetTop: function(){
+      resetTop: function() {
         this.closestToTop = this.defaultTop;
         this.viewportElements = 0;
       },
 
-      removeActive: function(){
+      removeActive: function() {
         this.active = null;
         for (var i = 0; i < this.navItems.length; i++) {
           this.navItems[i].setAttribute('data-active', false);
         }
       },
 
-      addActive: function(el, name, parent){
-        if (!el){
+      addActive: function(el, name, parent) {
+        if (!el) {
           el = document.querySelector('[data-nav-item="' + name + '"]');
           parent = document.querySelector('[data-nav-item="' + parent + '"]');
           this.active = this.stripHash(name);
@@ -106,18 +106,18 @@
         }
       },
 
-      update: function(el, name, parent){
+      update: function(el, name, parent) {
         this.removeActive();
         this.addActive(el, name, parent);
       },
 
       updateSelectField: function(newValue) {
-        if (newValue){
+        if (newValue) {
           this.navSelect.val(newValue);
         }
       },
 
-      registerEventHandlers: function(){
+      registerEventHandlers: function() {
         var self = this;
         if (!this.navIsSelect) {
           for (var i = 0; i < this.navItems.length; i++) {
@@ -127,9 +127,9 @@
             if (!document.getElementById(item.dataset.navItem) && item) {
               item.setAttribute('aria-hidden', true);
               item.outerHTML = '';
-              delete item;
+              item = undefined;
             } else {
-              item.addEventListener('click', function () {
+              item.addEventListener('click', function() {
                 self.update(this);
               });
             }
@@ -142,7 +142,7 @@
           self.detectNavChange();
         });
 
-        window.addEventListener('resize', function(){
+        window.addEventListener('resize', function() {
           // TODO: throttle
           self.detectNavChange();
         });
@@ -153,7 +153,7 @@
         window.location.hash = selector.value;
       },
 
-      detectNavChange: function(){
+      detectNavChange: function() {
 
         var self = this;
 
@@ -161,7 +161,7 @@
           ? this.navSelect
           : this.navItems;
 
-        Array.prototype.forEach.call(items, function(item){
+        Array.prototype.forEach.call(items, function(item) {
           var parentName,
             newName,
             header,
@@ -184,7 +184,7 @@
 
             }
           } else if (self.navIsSelect) {
-            Array.prototype.forEach.call(item, function(option){
+            Array.prototype.forEach.call(item, function(option) {
 
               header = document.getElementById(option.value);
               isActiveElement = self.isActiveElement(header);

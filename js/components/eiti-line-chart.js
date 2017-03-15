@@ -69,8 +69,12 @@
 
     if (Array.isArray(data)) {
       values = d3.nest()
-        .key(function(d) { return d.x; })
-        .rollup(function(d) { return d[0]; })
+        .key(function(d) {
+          return d.x;
+        })
+        .rollup(function(d) {
+          return d[0];
+        })
         .entries(data);
     } else {
       values = Object.keys(data).reduce(function(map, key) {
@@ -86,7 +90,9 @@
 
     var xrange = this.xrange;
     if (!xrange) {
-      xrange = d3.extent(data, function(d) { return +d.x; });
+      xrange = d3.extent(data, function(d) {
+        return +d.x;
+      });
     }
 
     var xdomain = d3.range(xrange[0], xrange[1] + 1);
@@ -100,7 +106,9 @@
       }
     });
 
-    var extent = d3.extent(data, function(d) { return d.y; });
+    var extent = d3.extent(data, function(d) {
+      return d.y;
+    });
     var ymax = extent[1];
     var ymin = extent[0]; // XXX 0?
 
@@ -110,8 +118,12 @@
 
     var svg = d3.select(this).select('svg');
     var line = d3.svg.line()
-      .x(function(d) { return x(d.x); })
-      .y(function(d) { return y(d.y); })
+      .x(function(d) {
+        return x(d.x);
+      })
+      .y(function(d) {
+        return y(d.y);
+      })
       .defined(function(d) {
         return !isNaN(d.y);
       });

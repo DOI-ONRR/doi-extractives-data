@@ -233,6 +233,13 @@
     margin-bottom: $standard-padding-extra;
     width: 100%;
   }
+
+  .withheld-products {
+    > p,
+    > ul {
+      @include font-size(0.875);
+    }
+  }
 }
 
 .chart-selector-wrapper {

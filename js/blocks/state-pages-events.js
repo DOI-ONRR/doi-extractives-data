@@ -3,8 +3,8 @@
 
   var eitiDataMaps = d3.selectAll('eiti-data-map');
 
-  var cropMaps = function () {
-      eitiDataMaps.each(function () {
+  var cropMaps = function() {
+      eitiDataMaps.each(function() {
         this.cropMap();
       });
     };

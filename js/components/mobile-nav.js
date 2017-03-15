@@ -6,7 +6,7 @@
       : value + 'px';
   };
 
-  var rem = function (rems) {
+  var rem = function(rems) {
     return Number(rems) * 16;
   };
 
@@ -26,7 +26,7 @@
 
     var content = root.select('#mobile-nav-content');
 
-    navItems.each(function () {
+    navItems.each(function() {
       var item = d3.select(this);
       var itemID = item.attr('mobile-nav-item');
       var elementDoesntExists = doc.select('#' + itemID).empty();
@@ -35,7 +35,7 @@
       }
     });
 
-    var makeFullScreen = function (toggle, fullScreen) {
+    var makeFullScreen = function(toggle, fullScreen) {
       fullScreen = fullScreen || false;
 
       if (toggle) {
@@ -49,7 +49,7 @@
       navIsFull = !navIsFull;
     };
 
-    var hideNextSibling = function () {
+    var hideNextSibling = function() {
       var nextSibling = d3.select(root.node().nextElementSibling);
       var nextSiblingTagName = root.node().nextElementSibling
         .tagName.toLowerCase();

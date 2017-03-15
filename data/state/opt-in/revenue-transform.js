@@ -1,18 +1,16 @@
-/* jshint node: true, esnext: true */
-
 // XXX state gets passed in as an environment variable
-const STATE = process.env.STATE;
+var STATE = process.env.STATE;
 if (!STATE) {
   throw new Error('this transform requires the STATE env var to be set');
 }
 
 // FIXME: where does this come from?
-const parse = require('../../../lib/parse');
+var parse = require('../../../lib/parse');
 
-const SOURCE_COLUMN = 'Revenue Stream';
+var SOURCE_COLUMN = 'Revenue Stream';
 
 // columns that *don't* represent a destination fund
-const FIXED_COLUMNS = [
+var FIXED_COLUMNS = [
   SOURCE_COLUMN,
   'Year',
   'Year Type',

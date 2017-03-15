@@ -133,12 +133,6 @@
     return isNaN(n) ? 0 : Number(n);
   }
 
-  function parseBoolean(value) {
-    return (typeof value === 'string')
-      ? value === 'true'
-      : !!value;
-  }
-
   function identity(d) {
     return d;
   }

@@ -273,11 +273,12 @@ data/federal_disbursements.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region, source, fund, year, \
-			ROUND(dollars, 2) AS dollars \
+			ROUND(SUM(dollars), 2) AS dollars \
 		FROM federal_disbursements \
 		WHERE \
 			dollars > 0 \
-		ORDER BY year, dollars DESC" \
+		GROUP BY region, source, fund, year \
+		ORDER BY year, dollars DESC, fund" \
 		| $(nestly) --if ndjson \
 			-c _meta/federal_disbursements.yml \
 			-o _$@
@@ -699,10 +700,11 @@ tables/disbursements: \
 	tables/disbursements_historic_preservation
 	@$(call load-sql,data/disbursements/rollup.sql)
 
-tables/federal_disbursements: data/disbursements/federal-pivot.tsv
+tables/federal_disbursements: data/disbursements/county-level.tsv
 	@$(call drop-table,federal_disbursements)
-	$(tito) -r tsv --map ./data/disbursements/transform-federal.js $^ \
-		| $(tables) -t ndjson -n federal_disbursements
+	$(tito) -r tsv --map ./data/disbursements/transform-county-level.js $^ > $^.ndjson
+	$(tables) -t ndjson -n federal_disbursements -i $^.ndjson
+	rm $^.ndjson
 
 tables/disbursements_historic_preservation: data/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)

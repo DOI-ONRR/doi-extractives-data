@@ -1,14 +1,15 @@
 <section id="federal-disbursements">
 
   {% assign disbursements = site.data.federal_disbursements.US %}
+  {% assign disbursement_year = '2016' %}
 
   <h2>Federal disbursements</h2>
 
   <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
     <strong>
       {% if disbursements %}
-      In {{ year }}, ONRR disbursed a total of
-      ${{ disbursements.All.All[year] | round | intcomma }}.
+      In {{ disbursement_year }}, ONRR disbursed a total of
+      ${{ disbursements.All.All[disbursement_year] | round | intcomma }}.
       {% endif %}
     </strong></p>
   <p>
@@ -17,11 +18,12 @@
     </a>
   </p>
 
-  <h3 id="by-fund">Disbursements by fund for {{ year }}</h3>
+  <h3 id="by-fund">Disbursements by fund for {{ disbursement_year }}</h3>
 
   {% if disbursements %}
     {%
       include location/display-disbursements.html
+      year=disbursement_year
       values=disbursements
     %}
   {% endif %}

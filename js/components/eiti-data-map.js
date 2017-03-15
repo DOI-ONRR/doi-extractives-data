@@ -1,10 +1,11 @@
+/* eslint-disable no-console */
 (function(exports) {
 
   require('d3-svg-legend');
 
   var eiti = require('./../eiti');
   var WITHHELD_FLAG = 'Withheld';
-  var NO_DATA_FLAG = undefined; // jshint ignore:line
+  var NO_DATA_FLAG = undefined; // eslint-disable-line no-undef-init
 
   function pixelize(d) {
     return String(d).match(/px/)
@@ -109,7 +110,7 @@
 
         update: {value: function(init) {
           var hasData = [];
-          this.marks.data().every(function(d){
+          this.marks.data().every(function(d) {
             if (d === WITHHELD_FLAG) {
               hasData.push(WITHHELD_FLAG);
               return true;
@@ -151,7 +152,8 @@
             root.select('.details-container')
               .attr('aria-hidden', true)
               .select('button')
-                .attr('aria-expanded', false); // unexpand county-chart
+                // unexpand county-chart
+                .attr('aria-expanded', false);
           }
 
           var type = this.getAttribute('scale-type') || 'quantize';
@@ -269,24 +271,26 @@
             }
 
           } else {
-            console.warn('this <eiti-data-map> element does not have an associated svg legend.');
+            console.warn(
+              '<eiti-data-map> does not have an associated svg legend:', this
+            );
           }
 
           // If the legend is 'horizontal',
           // then shift the text and label from
           // its default settings
-          if (orient == 'horizontal') {
+          if (orient === 'horizontal') {
             var cumulative = 0;
 
             svgLegend.select('.legendCells')
               .selectAll('.cell')
-                .datum(function(){
+                .datum(function() {
                   return d3.select(this)
                     .select('.label')
                     .node()
                     .getComputedTextLength();
                 })
-                .attr('transform',function(textWidth){
+                .attr('transform', function(textWidth) {
                   var shift = cumulative;
                   var s = settings.horizontal;
                   var margin = s.width + s.padding + s.margin;
@@ -294,7 +298,7 @@
                   return 'translate(' + shift + ', 0)';
                 })
                 .select('text')
-                   .attr('transform',function(){
+                   .attr('transform',function() {
                     var s = settings.horizontal;
                     var padding = s.padding + s.width;
                     return 'translate(' + padding + ', 10)';

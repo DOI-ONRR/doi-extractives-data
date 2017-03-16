@@ -25,8 +25,7 @@
 
 header,
 .header {
-  margin-bottom: $base-padding-large;
-  margin-top: $base-padding-large;
+  margin-top: $base-padding-base;
 }
 
 .header-image_link {
@@ -52,6 +51,10 @@ header,
 
   @include respond-to(medium-up) {
     @include span-columns(3);
+  }
+
+  @include respond-to(medium-down) {
+    margin-bottom: $base-padding;
   }
 }
 
@@ -106,7 +109,7 @@ header,
   margin-bottom: 0;
 
   @include respond-to(huge-plus-up) {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 
@@ -150,6 +153,7 @@ header,
 }
 
 .header-nav_item_top {
+  font-weight: $weight-light;
   margin-bottom: 0.55rem;
   padding-right: $base-padding-lite;
 
@@ -207,7 +211,7 @@ header,
   @extend .header-nav_item_link;
   @include font-size(0.75);
 
-  font-weight: $weight-light;
+  font-weight: $weight-book;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 

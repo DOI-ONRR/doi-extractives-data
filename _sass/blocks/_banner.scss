@@ -14,8 +14,8 @@
 
 .banner {
   @include clearfix();
-  @include heading('para-md');
-  @include font-size(0.85);
+  @include heading('para-sm');
+  @include font-size(0.8);
 
   font-weight: $weight-bold;
   padding: ($base-padding / 2) $base-padding-large;

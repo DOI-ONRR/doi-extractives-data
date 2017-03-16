@@ -26,7 +26,7 @@
 header,
 .header {
   margin-bottom: $base-padding-large;
-  margin-top: $base-padding;
+  margin-top: $base-padding-large;
 }
 
 .header-image_link {
@@ -113,6 +113,7 @@ header,
 .header-nav_item,
 .header-nav_item_top {
   display: inline-block;
+  padding-bottom: $base-padding-lite;
   padding-right: $base-padding;
   padding-top: 0;
   font-weight: $weight-light;

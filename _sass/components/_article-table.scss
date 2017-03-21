@@ -42,7 +42,7 @@ $max-columns: 10;
 
   td {
     border: none;
-    border-top: 1px solid $light-green;
+    border-top: 1px solid $gray-lighter;
     line-height: 1.4;
     padding: $base-padding-lite;
     padding-bottom: ($base-padding-lite * 1.7);
@@ -134,4 +134,3 @@ $max-columns: 10;
 .article_table-gray td {
   border-top: 1px solid $neutral-gray;
 }
-

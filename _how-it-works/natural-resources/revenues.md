@@ -22,7 +22,7 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Revenues
-selector: hash
+selector: list
 ---
 
 > Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the [ownership]({{ site.baseurl }}/how-it-works/ownership/) of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.

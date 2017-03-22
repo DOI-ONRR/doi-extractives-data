@@ -1,14 +1,19 @@
-<label>{{page.nav_description}}</label>
+<label>{{ page.nav_description }}</label>
 <select data-nav-options onchange="openListNav.changeHandler(this)">
   {% if page.nav_items %}
     {% for item in page.nav_items %}
       {% if item.nav_group %}
-        <optgroup label="{{item.nav_group}}">
+        <optgroup label="{{ item.nav_group }}">
       {% elsif item.nav_group_close %}
-      	</optgroup>
+        </optgroup>
+      {% elsif item.subnav_items %}
+        <optgroup label="{{ item.title }}">
+        {% for subnav_item in item.subnav_items %}
+           <option value="{{ subnav_item.name }}">{{ subnav_item.title }}</option>
+        {% endfor %}
+        </optgroup>
       {% else %}
-        <option value="{{item.name}}">{{item.title}}</option>
-      }
+        <option value="{{ item.name }}">{{ item.title }}</option>
       {% endif %}
     {% endfor %}
   {% endif %}

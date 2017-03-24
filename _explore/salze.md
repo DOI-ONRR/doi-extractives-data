@@ -49,12 +49,12 @@ nav_items:
           </div>
           <div>
             <p>
-              Mitte des 19. Jahrhunderts entdeckte Justus von Liebig die Bedeutung von Kalium als essentiellen Pflanzennährstoff
+              Mitte des 19. Jahrhunderts entdeckte Justus von Liebig die Bedeutung von Kalium als essentiellen Pflanzennährstoff.
             </p>
           </div>
           <div>
           <p>
-            Nachdem Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf die weltweit erste bekannte Kalilagerstätte stießen, enstanden entstanden um 1860  die ersten Kalibergwerke und Kalifabriken in Deutschland.
+            Nachdem Bergleute im Jahr 1856 bei Staßfurt auf der Suche nach Steinsalz zufällig auf die weltweit erste bekannte Kalilagerstätte stießen, entstanden um 1860  die ersten Kalibergwerke und Kalifabriken in Deutschland.
           </p>
           </div>
           <div>
@@ -71,7 +71,7 @@ nav_items:
         <h3>Geschichte</h3>
         <p></p>
         <p>
-          In Deutschland gibt es große Salzlagerstätten, die besonders im norddeutschen Raum kon- zentriert sind. Über Jahrmillionen hinweg führten Ablagerungen von Salzen zu mehreren 100 m mächtigen Salzschichten. Ähnlich alt ist das Salz, das seit Jahrtausenden in den bayeri- schen und österreichischen Alpen gewonnen wird.
+          In Deutschland gibt es große Salzlagerstätten, die besonders im norddeutschen Raum konzentriert sind. Über Jahrmillionen hinweg führten Ablagerungen von Salzen zu mehreren 100 m mächtigen Salzschichten. Ähnlich alt ist das Salz, das seit Jahrtausenden in den bayeri- schen und österreichischen Alpen gewonnen wird.
         </p>
         <p>
           Die Inbetriebnahme der ersten Kalifabrik der Welt in Staßfurt im Jahr 1861 begründete die fast 150-jährige Tradition des deutschen Kalibergbaus. Die Salzgewinnung aus salzhaltigen Quellen sowie im bergmännischen Abbau von Salzlagerstätten hat eine lange Geschichte. Bereits im 12. Jahrhundert wurde im Raum Berchtesgaden nach Salz gegraben. Im 16. Jahrhundert wurde dort ein noch heute aktives Salzbergwerk errichtet.
@@ -80,19 +80,19 @@ nav_items:
       <section id="wirtschaftliche-bedeutung" style="position: relative;">
         <h3>Wirtschaftliche Bedeutung</h3>
         <p>
-          2014 betrug die Fördermenge in Deutschland ca. 12,7 Mio. t Steinsalz (einschließlich Indust- riesole) und rund 36,6 Mio. t Kalirohsalz mit einem Wertstoffgehalt K2O von 3,8 Mio. t. Mit einer Gesamtfördermenge von 5,3 % ist Deutschland weltweit der viertgrößte Produzent von Salz nach China, den USA, Indien und Kanada (2014) und zugleich der fünftgrößte Kalipro- duzent mit rund 9% der weltweiten Gesamtfördermenge. Im Kalibergbau in Deutschland sind rund 8.200 Mitarbeiter direkt beschäftigt, im Salzbergbau 2.500 (2014).
+          2014 betrug die Fördermenge in Deutschland ca. 12,7 Mio. t Steinsalz (einschließlich Industriesole) und rund 36,6 Mio. t Kalirohsalz mit einem Wertstoffgehalt K2O von 3,8 Mio. t. Mit einer Gesamtfördermenge von 5,3 % ist Deutschland weltweit der viertgrößte Produzent von Salz nach China, den USA, Indien und Kanada (2014) und zugleich der fünftgrößte Kaliproduzent mit rund 9% der weltweiten Gesamtfördermenge. Im Kalibergbau in Deutschland sind rund 8.200 Mitarbeiter direkt beschäftigt, im Salzbergbau 2.500 (2014).
         </p>
       </section>
       <section id="gewinnung" style="position: relative;">
         <h3>Gewinnung</h3>
         <p>
-          Der Abbau erfolgt in Deutschland in sechs Kalibergwerken (in Hessen, Niedersachsen, Sachsen-Anhalt und Thüringen), sieben Salzbergwerken (in Baden-Württemberg, Bayern, Niedersachsen, Nordrhein-Westfalen, Sachsen-Anhalt und Thüringen) und sieben Salinen (in Baden-Württemberg, Bayern, Mecklenburg-Vorpommern, Niedersachsen und Nordrhein-Westfalen). Der Salzabbau erfolgt in Bergwerken durch bergmännischen Abbau mittels Bohr- , Spreng- oder Schneidtechnik oder durch Aussolung von unterirdischen Lagerstätten. Beim Verfahren der Aussolung wird über Bohrlochsonden Süßwasser oder Halbsole in die Lager- stätte eingebracht, wo sich die Salze lösen. Die so entstehende Sole wird über eine Sonde abgepumpt und über Tage in Salinen zu Salz und weiteren Produkten verarbeitet.
+          Der Abbau erfolgt in Deutschland in sechs Kalibergwerken (in Hessen, Niedersachsen, Sachsen-Anhalt und Thüringen), sieben Salzbergwerken (in Baden-Württemberg, Bayern, Niedersachsen, Nordrhein-Westfalen, Sachsen-Anhalt und Thüringen) und sieben Salinen (in Baden-Württemberg, Bayern, Mecklenburg-Vorpommern, Niedersachsen und Nordrhein-Westfalen). Der Salzabbau erfolgt in Bergwerken durch bergmännischen Abbau mittels Bohr- , Spreng- oder Schneidtechnik oder durch Aussolung von unterirdischen Lagerstätten. Beim Verfahren der Aussolung wird über Bohrlochsonden Süßwasser oder Halbsole in die Lagerstätte eingebracht, wo sich die Salze lösen. Die so entstehende Sole wird über eine Sonde abgepumpt und über Tage in Salinen zu Salz und weiteren Produkten verarbeitet.
         </p>
       </section>
       <section id="verwendung" style="position: relative;">
         <h3>Verwendung</h3>
         <p>
-          Stein- und Siedesalz wird als Industrie- und Gewerbesalz sowie als Speise- und Auftausalz verwendet. Salz ist ein unverzichtbarer Rohstoff für die chemische Industrie – z. B. bei der Erzeugung von Soda, Chlor und Natronlauge. Ohne Salz könnten weder Glas noch Kunst- stoff oder Aluminium hergestellt werden. Es findet Verwendung als Regeneriersalz in Was- serenthärtungsanlagen, in der Futtermittelindustrie, im Straßen- und Winterdienst sowie in der Lebensmittelindustrie. Besonders hohe Reinheitsanforderungen erfüllt Natriumchlorid als Pharmawirkstoff.
+          Stein- und Siedesalz wird als Industrie- und Gewerbesalz sowie als Speise- und Auftausalz verwendet. Salz ist ein unverzichtbarer Rohstoff für die chemische Industrie – z. B. bei der Erzeugung von Soda, Chlor und Natronlauge. Ohne Salz könnten weder Glas noch Kunststoff oder Aluminium hergestellt werden. Es findet Verwendung als Regeneriersalz in Wasserenthärtungsanlagen, in der Futtermittelindustrie, im Straßen- und Winterdienst sowie in der Lebensmittelindustrie. Besonders hohe Reinheitsanforderungen erfüllt Natriumchlorid als Pharmawirkstoff.
         </p>
         <p>
           Die bergmännisch gewonnenen Kalirohsalze kommen vor allem in der Landwirtschaft als Düngemittel zur Anwendung. Sie werden aber auch als Industriesalz in der Elektrolyse und anderen industriellen Prozessen eingesetzt und in hochreiner Form von der Nahrungs- und Futtermittelindustrie sowie für pharmazeutische Zwecke nachgefragt.

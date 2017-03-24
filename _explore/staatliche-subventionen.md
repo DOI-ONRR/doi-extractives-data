@@ -39,7 +39,7 @@ nav_items:
           <span class="term term_end" data-term="subventionen" title="Click to define" tabindex="0">
             Subventionen
             <icon class="icon-book"></icon>
-          </span>. So werden beispielsweise Finanzhilfen für den Steinkohlebergbau gewährt: zum einen Zuschüsse für Absatz der Steinkohle; zum anderen Anpassungsgeld für einen sozialverträglichen Personalabbau in der Branche.
+          </span>. So werden beispielsweise Finanzhilfen für den Steinkohlebergbau gewährt: zum einen Zuschüsse für den Absatz der Steinkohle; zum anderen Anpassungsgeld für einen sozialverträglichen Personalabbau in der Branche.
         </p>
       </section>
 

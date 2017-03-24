@@ -37,10 +37,10 @@ nav_items:
 
     <div class="container-left-9">
       <section id="fakten_zu_industriemineralen">
-        <h3>Wissenswertes über Industriemineralen</h3>
+        <h3>Wissenswertes über Industrieminerale</h3>
         <div class="fakten_industriemineralen">
           <div>
-            <p>Die etwa 1600 Unternehmen der Baustoff-, Steine-und-Erden-Industrie in Deutschland betreiben rund 3.100 Gewinnungsstätten.</p>
+            <p>Die etwa 1.600 Unternehmen der Baustoff-, Steine-und-Erden-Industrie in Deutschland betreiben rund 3.100 Gewinnungsstätten.</p>
           </div>
           <div>
             <p>Das Wort „Zement“ geht zurück auf das römische Wort caementum für Bruchstein oder Baustein.</p>
@@ -71,19 +71,19 @@ nav_items:
        <section id="geschichte" style="position: relative;">
          <h3>Geschichte</h3>
           <p>
-            Der Abbau von Steinen und Erden ist seit Beginn der Menschheitsgeschichte überliefert. Bei den ältesten bekannten „Steinen aus Menschenhand“ handelt es sich nach den Erkenntnis- sen der Wissenschaft um aus dem 9. bis 8. Jahrtausend vor Christus stammende Bodenbe- festigungen im Nahen Osten. Während die Rohstoffe früher hauptsächlich manuell gewon- nen wurden, nutzen heute Betriebe den Einsatz moderner Technik. Geophysik, GPS, intelli- gente Maschinen- und Anlagensteuerungen sowie weitgehend automatisierte Prozesse be- stimmen die Rohstoffförderung.
+            Der Abbau von Steinen und Erden ist seit Beginn der Menschheitsgeschichte überliefert. Bei den ältesten bekannten „Steinen aus Menschenhand“ handelt es sich nach den Erkenntnissen der Wissenschaft um aus dem 9. bis 8. Jahrtausend vor Christus stammende Bodenbefestigungen im Nahen Osten. Während die Rohstoffe früher hauptsächlich manuell gewonnen wurden, nutzen heute Betriebe den Einsatz moderner Technik. Geophysik, GPS, intelli- gente Maschinen- und Anlagensteuerungen sowie weitgehend automatisierte Prozesse bestimmen die Rohstoffförderung.
           </p>
         </section>
         <section id="gewinnung" style="position: relative;">
           <h3>Gewinnung</h3>
           <p>
-            Jährlich werden von der Baustoff-, Steine-und-Erden-Industrie insgesamt etwa 550 Mio. t Primärrohstoffe gefördert bzw. in der Produktion eingesetzt. Mengenmäßig zählen Kiese, Sande und gebrochene Natursteine zu den wichtigsten Rohstoffen der deutschen Rohstoff- gewinnung. Wertmäßig nehmen Sie mit 1.502 Mio. Euro (Sand und Kies) und 1.466 Mio. Euro (gebrochene Natursteine) Platz vier und fünf bei den in Deutschland geförderten Roh- stoffen ein. Die Baustoff-, Steine-und-Erden-Industrie besteht in Deutschland aus etwa 1.600 Unternehmen, die rund 3.100 Gewinnungsstätten betreiben.
+            Jährlich werden von der Baustoff-, Steine-und-Erden-Industrie insgesamt etwa 550 Mio. t Primärrohstoffe gefördert bzw. in der Produktion eingesetzt. Mengenmäßig zählen Kiese, Sande und gebrochene Natursteine zu den wichtigsten Rohstoffen der deutschen Rohstoffgewinnung. Wertmäßig nehmen Sie mit 1.502 Mio. Euro (Sand und Kies) und 1.466 Mio. Euro (gebrochene Natursteine) Platz vier und fünf bei den in Deutschland geförderten Rohstoffen ein. Die Baustoff-, Steine-und-Erden-Industrie besteht in Deutschland aus etwa 1.600 Unternehmen, die rund 3.100 Gewinnungsstätten betreiben.
           </p>
         </section>
         <section id="Industrieminerale-verwendung" style="position: relative;">
           <h3>Verwendung</h3>
           <p>
-            Rund 80% der Steine-Erden-Güter werden in die Bauwirtschaft geliefert – etwa 20% finden Einsatz in der Chemie-, Stahl- oder Glasindustrie. Neben den primär gewonnenen Steinen und Erden werden in der Baustoffindustrie jährlich fast 100 Mio. t Sekundärrohstoffe (minera- lische Bauabfälle, Nebenprodukte aus industriellen Prozessen) eingesetzt. Diese entstehen zum Beispiel beim Abbruch von Gebäuden, der Produktion von Roheisen (Hochofenschla- cken) oder bei der Stromerzeugung in konventionellen Kraftwerken (REA-Gips, Flugasche). Der Einsatz von Sekundärrohstoffen trägt zur Substitution primärer Rohstoffe bei. Die Substi- tutionsquote beträgt etwa 15%.
+            Rund 80% der Steine-Erden-Güter werden in die Bauwirtschaft geliefert – etwa 20% finden Einsatz in der Chemie-, Stahl- oder Glasindustrie. Neben den primär gewonnenen Steinen und Erden werden in der Baustoffindustrie jährlich fast 100 Mio. t Sekundärrohstoffe (mineralische Bauabfälle, Nebenprodukte aus industriellen Prozessen) eingesetzt. Diese entstehen zum Beispiel beim Abbruch von Gebäuden, der Produktion von Roheisen (Hochofenschlacken) oder bei der Stromerzeugung in konventionellen Kraftwerken (REA-Gips, Flugasche). Der Einsatz von Sekundärrohstoffen trägt zur Substitution primärer Rohstoffe bei. Die Substitutionsquote beträgt etwa 15%.
           </p>
         </section>
       <section id="industrieminerale" style="position: relative;">
@@ -94,7 +94,7 @@ nav_items:
               Als Industrieminerale werden mineralische Gesteine bezeichnet, die aufgrund ihrer besonde- ren chemischen und physikalischen Eigenschaften eine industrielle Verwendung finden. Die Abgrenzung zu den Steinen und Erden ist dabei fließend.
           </p>
           <p>
-            Industrieminerale werden in Deutschland seit mehreren Hundert Jahren in sehr unterschied- lichem Umfang gefördert. Die beiden in Deutschland mengenmäßig am meisten geförderten Industrieminerale sind Quarz und Quarzsande sowie Spezialtone mit einer Fördermenge von 31,7 Millionen und 6,7 Millionen Tonnen. Mengenmäßig spielt der Abbau von Industriemine- ralen hinter Steinen und Erden sowie einigen Energierohstoffen indessen eine eher unterge- ordnete Rolle.
+            Industrieminerale werden in Deutschland seit mehreren Hundert Jahren in sehr unterschiedlichem Umfang gefördert. Die beiden in Deutschland mengenmäßig am meisten geförderten Industrieminerale sind Quarz und Quarzsande sowie Spezialtone mit einer Fördermenge von 31,7 Millionen und 6,7 Millionen Tonnen. Mengenmäßig spielt der Abbau von Industriemineralen hinter Steinen und Erden sowie einigen Energierohstoffen indessen eine eher untergeordnete Rolle.
           </p>
         </section>
         <section id="industrieminerale-gewinnung" style="position: relative;">

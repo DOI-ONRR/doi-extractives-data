@@ -49,13 +49,10 @@ header,
 .header-left {
   @include span-columns(6);
 
-  @include respond-to(medium-up) {
-    @include span-columns(3);
-  }
-
-  @include respond-to(medium-down) {
-    margin-bottom: $base-padding;
-  }
+   @include respond-to(medium-up) {
+      @include span-columns(3);
+      margin-bottom: 0;
+   }
 }
 
 .header-right {
@@ -105,11 +102,15 @@ header,
   }
 }
 
+.header-nav_bottom {
+  margin-bottom: $base-padding-base;
+}
+
 .header-nav_top {
   margin-bottom: 0;
 
   @include respond-to(huge-plus-up) {
-    margin-bottom: 2em;
+    margin-bottom: $base-padding-large;
   }
 }
 
@@ -154,7 +155,6 @@ header,
 
 .header-nav_item_top {
   font-weight: $weight-light;
-  margin-bottom: 0.55rem;
   padding-right: $base-padding-lite;
 
   &:nth-child(2),
@@ -183,7 +183,7 @@ header,
     height: 30px;
     margin: 0;
     margin-left: $base-padding;
-    padding: 0.52rem;
+    padding: 0.5825rem;
     width: 150px;
 
     @include respond-to(huge-up) {

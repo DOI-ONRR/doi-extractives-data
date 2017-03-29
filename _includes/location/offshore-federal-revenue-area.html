@@ -33,7 +33,7 @@
           <span class="caption-data">
             Companies paid
             <span class="eiti-bar-chart-y-value"
-                  data-format="$,">${{ current_revenue | intcomma }}</span>
+                  data-format="$,">{{ current_revenue | intcomma_dollar }}</span>
             to produce natural resources in the {{ region_title }} in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>

@@ -177,7 +177,7 @@ In the tables below, revenue may be grouped differently depending on the stage o
       {% for revenue_type in page.revenue_types %}
         {% assign _revenue_type = revenue_type[0] %}
         {% assign _revenue = commodity[1][_revenue_type] %}
-      <td class="numeric">{% if _revenue %}${{ _revenue | intcomma }}{% else %}-{% endif %}</td>
+      <td class="numeric">{% if _revenue %}{{ _revenue | intcomma_dollar }}{% else %}-{% endif %}</td>
       {% endfor %}
     </tr>
   {% endfor %}

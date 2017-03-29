@@ -9,7 +9,7 @@
     <strong>
       {% if disbursements %}
       In {{ disbursement_year }}, ONRR disbursed a total of
-      ${{ disbursements.All.All[disbursement_year] | round | intcomma }}.
+      {{ disbursements.All.All[disbursement_year] | round | intcomma_dollar }}.
       {% endif %}
     </strong></p>
   <p>

@@ -4,7 +4,7 @@
   <tr>
     <th scope="row" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}" class="table-arrow_box-subheader">
       <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong><br>
-      <strong class="table-arrow_box-subheader-value">${{ total | intcomma }}</strong>
+      <strong class="table-arrow_box-subheader-value">{{ total | intcomma_dollar }}</strong>
     </th>
     {% for revenue_type in revenue_type_names %}
       {% if revenue_type == 'Other Revenues' %}
@@ -16,10 +16,10 @@
         %}
         <td data-value="{{
           total_other_revenues | default: 0
-        }}" class="table-arrow_box-value table-arrow_box-text"><span class="text table-arrow_box-subheader-value">${{
+        }}" class="table-arrow_box-value table-arrow_box-text"><span class="text table-arrow_box-subheader-value">{{
           total_other_revenues
           | default: 0
-          | intcomma
+          | intcomma_dollar
         }}</span>
         {% if national_page and commodity_name == 'All' %}
           <br/>
@@ -30,10 +30,10 @@
       {% else %}
         <td data-value="{{
             values[revenue_type][year] | default: 0
-        }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">${{
+        }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">{{
           commodity[1][revenue_type][year]
           | default: 0
-          | intcomma
+          | intcomma_dollar
         }}</span></td>
       {% endif %}
     {% endfor %}

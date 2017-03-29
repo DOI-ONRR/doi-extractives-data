@@ -123,7 +123,11 @@
   // negative values
   [data-value^="-"] .bar {
     background: transparent;
-    border: 1px solid;
+    border: 1px solid $gray-light;
+
+    .bar {
+      display: none;
+    }
   }
 
   [data-value-text]:not(.numeric) {

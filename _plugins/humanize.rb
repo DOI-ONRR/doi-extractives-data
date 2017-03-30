@@ -1,6 +1,3 @@
-require 'pry'
-require 'rb-readline'
-
 module Jekyll
 
   module Humanize

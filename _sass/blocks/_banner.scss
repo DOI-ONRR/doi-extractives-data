@@ -27,14 +27,14 @@
   }
 }
 
-.banner-centered {
-  display: none;
-
-  @include respond-to(tiny-up) {
-    display: block;
-  }
-}
-
+// .banner-centered {
+//   display: none;
+//
+//   @include respond-to(tiny-up) {
+//     display: block;
+//   }
+// }
+//
 .banner-right {
   text-align: center;
 

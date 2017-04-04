@@ -53,7 +53,7 @@ module Jekyll
 
     end
 
-    def intcomma(value, delimiter=",")
+    def intcomma(value, delimiter = ',')
       ##
       # Converts an integer to a string containing commas every three digits.
       # For example, 3000 becomes '3,000' and 45000 becomes '45,000'.

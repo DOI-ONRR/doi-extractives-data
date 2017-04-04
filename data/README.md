@@ -9,6 +9,8 @@ transforming them, and the resulting "output" files. These tools also use
 make -B
 ```
 
+**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.
+
 Check out the [Makefile](Makefile) and the [bin directory](bin/) if you want to
 see how the sausage is made.
 

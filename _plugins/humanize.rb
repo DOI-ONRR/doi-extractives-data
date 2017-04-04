@@ -1,3 +1,6 @@
+require 'pry'
+require 'rb-readline'
+
 module Jekyll
 
   module Humanize
@@ -74,8 +77,8 @@ module Jekyll
       orig == copy ? copy : intcomma(copy, delimiter)
     end
 
-
-        ##
+    def intcomma_dollar(value, delimiter=",")
+      ##
       # Extends int_dollar to add a dollar sign to values.
       #
       # Usage:
@@ -86,14 +89,14 @@ module Jekyll
       # {{ post.content | number_of_words | intcomma: '.' }} >>> '12.345'
       # {{ post.negative | number_of_words | intcomma_dollar }} >>> '-$12,345'
       # {{ post.content | number_of_words | intcomma_dollar: '.' }} >>> '$12.345'
-    def intcomma_dollar(value, delimiter=",")
+
       incomma_value = intcomma(value, delimiter)
       first_char = incomma_value.to_s[0]
-      value = if (first_char == '-') || (first_char == '–')
-                incomma_value.to_s.insert(1, '$')
-              else
-                "$#{incomma_value}"
-              end
+      if (first_char == '-') || (first_char == '–')
+        "($#{incomma_value.to_s[1..-1]})"
+      else
+        "$#{incomma_value}"
+      end
     end
 
     INTWORD_HELPERS = [

@@ -89,9 +89,15 @@
         <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
           {% assign chart_toggle = 'revenue-figures-chart-{{ commodity_slug }}' | liquify %}
+
+          {% if commodity_name == 'None' %}
+            {% assign chart_name = 'Other revenue' %}
+          {% else %}
+            {% assign chart_name = commodity_name %}
+          {% endif %}
           {%
             include chart_title.html
-            chart_name=commodity_name
+            chart_name=chart_name
             chart_toggle=chart_toggle
             chart_values=annual_revenue
             units="$,"
@@ -108,7 +114,11 @@
             </eiti-bar-chart>
             <figcaption id="revenue-figures-{{ commodity_slug }}">
               <span class="caption-data">
+              {% if commodity_name == 'None' %}
+                Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> in inspection fees, civil penalties, and other revenues in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              {% else %}
                 Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              {% endif %}
               </span>
               <span class="caption-no-data" aria-hidden="true">
                 There is no data about revenue from production of {{ commodity_name | downcase }} on federal land in

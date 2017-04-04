@@ -18,6 +18,7 @@ $massive: em(1800);
 $tiny-down: new-breakpoint(max-width $tiny);
 $tiny-up: new-breakpoint(min-width $tiny);
 $small-up: new-breakpoint(min-width $small); // commonly-used
+$medium-down: new-breakpoint(max-width $medium);
 $medium-up: new-breakpoint(min-width $medium); // commonly-used
 $large-up: new-breakpoint(min-width $large); // commonly-used
 $huge-up: new-breakpoint(min-width $huge);

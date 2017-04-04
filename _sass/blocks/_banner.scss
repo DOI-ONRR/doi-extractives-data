@@ -15,8 +15,9 @@
 .banner {
   @include clearfix();
   @include heading('para-sm');
-  @include font-size(0.75);
+  @include font-size(0.8);
 
+  font-weight: $weight-light;
   padding: ($base-padding / 2) $base-padding-large;
   text-align: center;
 
@@ -26,15 +27,14 @@
   }
 }
 
-.banner-left {
-  display: none;
-  float: left;
-
-  @include respond-to(tiny-up) {
-    display: block;
-  }
-}
-
+// .banner-centered {
+//   display: none;
+//
+//   @include respond-to(tiny-up) {
+//     display: block;
+//   }
+// }
+//
 .banner-right {
   text-align: center;
 
@@ -46,6 +46,7 @@
 .banner-image {
   padding-left: $base-padding-lite / 2;
   margin-bottom: -1px;
+  margin-right: 3px;
 }
 
 .home-bottom-links {

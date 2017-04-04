@@ -656,13 +656,13 @@ tables/all_production: data/all-production/product
 	rm $$tmp
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/company_revenue: data/company/years
+tables/company_revenue: data/company-revenue/output
 	@$(call drop-table,company_revenue)
 	tmp=$^/all.ndjson; \
 	for company_filename in $^/????.tsv; do \
 		filename="$${company_filename##*/}"; \
 		COMPANY_YEAR="$${filename%%.*}"; \
-		$(tito) -r tsv --map ./data/company/transform.js \
+		$(tito) -r tsv --map ./data/company-revenue/transform.js \
 			$$company_filename >> $$tmp; \
 	done; \
 	$(tables) -i $$tmp -t ndjson -n company_revenue && \

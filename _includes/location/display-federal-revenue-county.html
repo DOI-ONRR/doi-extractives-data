@@ -34,17 +34,17 @@
                  data-year-values='{{ years_values | jsonify }}'></div>{{ county[1].name }}</td>
       <td data-value-text='{{ revenue_amount }}'
           data-year-values='{{ years_values | jsonify }}'
-          data-format='$,'>${{ revenue_amount | intcomma }}</td>
+          data-format='$,'>{{ revenue_amount | intcomma_dollar }}</td>
       <td class='numberless'
             data-series='volume'
             data-value='{{ revenue_amount }}'
-            data-year-values='{{ years_values | jsonify }}'>{{ revenue_amount | intcomma }}</td>
+            data-year-values='{{ years_values | jsonify }}'>{{ revenue_amount | intcomma_dollar }}</td>
     </tr>
     <tr data-fips='{{ fips }}'>
         <td colspan='3'
             data-year-values='{{ years_values | jsonify }}'
             data-sentence='{{ revenue_amount }}'
-            aria-hidden='true'>Companies paid <span data-value='{{ revenue_amount }}' data-format='$,'>${{ revenue_amount | intcomma }}</span> to extract natural resources on federal land in {{ county[1].name }} {{ locality_name }} in <span data-year='{{ year }}'>{{ year }}</span>.</td>
+            aria-hidden='true'>Companies paid <span data-value='{{ revenue_amount }}' data-format='$,'>{{ revenue_amount | intcomma_dollar }}</span> to extract natural resources on federal land in {{ county[1].name }} {{ locality_name }} in <span data-year='{{ year }}'>{{ year }}</span>.</td>
       </tr>
     {% endif %}
   {% endfor %}

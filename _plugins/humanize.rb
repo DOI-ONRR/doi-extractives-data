@@ -1,3 +1,6 @@
+require 'pry'
+require 'rb-readline'
+
 module Jekyll
 
   module Humanize
@@ -50,7 +53,7 @@ module Jekyll
 
     end
 
-    def intcomma(value, delimiter=",")
+    def intcomma(value, delimiter = ',')
       ##
       # Converts an integer to a string containing commas every three digits.
       # For example, 3000 becomes '3,000' and 45000 becomes '45,000'.
@@ -72,6 +75,28 @@ module Jekyll
       copy = orig.strip
       copy = orig.gsub(/^(-?\d+)(\d{3})/, "\\1#{delimiter}\\2")
       orig == copy ? copy : intcomma(copy, delimiter)
+    end
+
+    def intcomma_dollar(value, delimiter=",")
+      ##
+      # Extends int_dollar to add a dollar sign to values.
+      #
+      # Usage:
+      # {{ post.content | number_of_words }} >>> 12345
+      # {{ post.negative | number_of_words }} >>> -12345
+      # {{ post.content | number_of_words | intcomma }} >>> '12,345'
+      # {{ post.negative | number_of_words | intcomma }} >>> '-12,345'
+      # {{ post.content | number_of_words | intcomma: '.' }} >>> '12.345'
+      # {{ post.negative | number_of_words | intcomma_dollar }} >>> '-$12,345'
+      # {{ post.content | number_of_words | intcomma_dollar: '.' }} >>> '$12.345'
+
+      incomma_value = intcomma(value, delimiter)
+      first_char = incomma_value.to_s[0]
+      if (first_char == '-') || (first_char == '–')
+        "($#{incomma_value.to_s[1..-1]})"
+      else
+        "$#{incomma_value}"
+      end
     end
 
     INTWORD_HELPERS = [

@@ -20,7 +20,7 @@
 <p>
   In {{ revenue_year }}, the state of
   {{ state_name }} collected
-  <strong>${{ revenue_total | default: 0 | intcomma }}
+  <strong>{{ revenue_total | default: 0 | intcomma_dollar }}
   in state revenue from natural resource extraction</strong>
   (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
 </p>
@@ -59,7 +59,7 @@
       </td>
       <td data-value="{{ stream_dollars }}"
         data-year-values='{{ stream_sources.Total | jsonify }}'>
-        ${{ stream_dollars | default: 0 | intcomma }}
+        {{ stream_dollars | default: 0 | intcomma_dollar }}
       </td>
     </tr>
     {% if stream_info %}

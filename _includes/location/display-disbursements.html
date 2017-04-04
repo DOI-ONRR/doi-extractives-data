@@ -24,9 +24,9 @@
           </td>
         {% endif %}
 
-        <td class="numeric" data-value="{{ _values.All[include.year] | default: 0 }}">${{ _values.All[include.year] | round | intcomma }}</td>
-        <td class="numeric" data-value="{{ _values.Onshore[include.year] | default: 0 }}">${{ _values.Onshore[include.year] | round | intcomma }}</td>
-        <td class="numeric" data-value="{{ _values.Offshore[include.year] | default: 0 }}">${{ _values.Offshore[include.year] | round | intcomma }}</td>
+        <td class="numeric" data-value="{{ _values.All[include.year] | default: 0 }}">{{ _values.All[include.year] | round | intcomma_dollar }}</td>
+        <td class="numeric" data-value="{{ _values.Onshore[include.year] | default: 0 }}">{{ _values.Onshore[include.year] | round | intcomma_dollar }}</td>
+        <td class="numeric" data-value="{{ _values.Offshore[include.year] | default: 0 }}">{{ _values.Offshore[include.year] | round | intcomma_dollar }}</td>
       </tr>
       {% endif %}
     {% endfor %}

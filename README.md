@@ -14,7 +14,7 @@ This repository contains the code for useiti.doi.gov, which is a website that in
 
 ## Why
 
-This effort was announced as part of President Obama’s [Open Government Partnership National Action Plan](http://www.whitehouse.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan), which commits the U.S. to ensuring taxpayers are receiving every dollar due for extraction of the U.S.’s natural resources.
+This effort was announced as part of President Obama’s [Open Government Partnership National Action Plan](https://obamawhitehouse.archives.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan), which commits the U.S. to ensuring taxpayers are receiving every dollar due for extraction of the U.S.’s natural resources.
 
 In December of 2013, the U.S. applied to become part of an international standard called the [Extractive Industries Transparency Initiative (EITI)](http://www.eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the U.S. process of implementing the EITI standard, see [about USEITI](https://useiti.doi.gov/about/).
 

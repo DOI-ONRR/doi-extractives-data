@@ -77,7 +77,7 @@
       }
 
       &.text-header-third {
-        color: darken($green-darkest, 10%);
+        color: $gray-darker;
       }
     }
 
@@ -98,7 +98,7 @@
         }
 
         .bar:nth-child(3) {
-          background-color: darken($green-darkest, 10%);
+          background-color: $gray-darker;
         }
       }
     }

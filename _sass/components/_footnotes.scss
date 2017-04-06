@@ -57,6 +57,13 @@ body {
   vertical-align: super; // 2
 }
 
+sup {
+  padding-left: $base-padding-lite /2;
+  vertical-align: baseline;
+  position: relative;
+  top: 0.2em;
+}
+
 // $default-offset: 130px;
 
 // *[id^="#fn:"],

@@ -54,24 +54,20 @@ body {
 .footnote {
   @include heading('para-sm');
   @extend .link-charlie;
+  @include font-size(0.75);
+
+  color: $blue;
+  line-height: $base-font-size;
+  font-weight: $weight-book;
   vertical-align: super; // 2
 }
 
-sup {
-  padding-left: $base-padding-lite /2;
-  vertical-align: baseline;
+table sup {
+  padding-left: $base-padding-lite / 2;
   position: relative;
   top: 0.2em;
+  vertical-align: baseline;
 }
-
-// $default-offset: 130px;
-
-// *[id^="#fn:"],
-// *[id^="#fnref:"],
-// .hashoffset {
-//   margin-top: -1 * $default-offset;
-//   padding-top: $default-offset;
-// }
 
 [id^="fn:"]:target p {
   font-weight: bold;

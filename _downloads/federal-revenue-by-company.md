@@ -14,7 +14,7 @@ breadcrumb:
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
     <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2016_2017-04-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
-    Full dataset (xlsx, 381 KB)</a></li>
+    Full dataset (xlsx, 382 KB)</a></li>
   </ul>
 </p>
 

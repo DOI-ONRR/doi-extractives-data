@@ -36,6 +36,12 @@ nav_items:
       - name: jobs
         title: Jobs
 selector: list
+description: We use many government datasets on this site to power our interactive visualizations. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.
+tag:
+- Data
+- Downloads
+- Documentation
+- USEITI data
 ---
 
 > We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.

@@ -16,6 +16,14 @@ nav_items:
     title: Proposed rules
   - name: dodd-frank
     title: 2010 Dodd–Frank Act
+description: The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms can stem from government oversight organizations’ recommendations, including from both DOI’s Office of Inspector General and the Government Accountability Office. Below are reforms following the Deep Water Horizon oil spill, recent findings from government oversight organizations, and proposed rules.
+tag:
+- How it works
+- Federal reforms
+- Deepwater horizon oil spill
+- OIG reports
+- GAO reports
+- Dodd-Frank Act
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

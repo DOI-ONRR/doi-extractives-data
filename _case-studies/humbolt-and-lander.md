@@ -3,12 +3,12 @@ title: Humbolt and Lander Counties, Nevada | Case Studies
 title_display: Humbolt and Lander Counties, Nevada
 description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth largest producer of gold, extracting 200 tons valued at $7.6 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world. The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.
 tag:
-- local
-- case study
+- Local
+- Case study
 - Humbolt county
 - Lander county
 - Nevada
-- gold
+- Gold
 layout: content
 permalink: /case-studies/humboldt-and-lander/
 resource: gold

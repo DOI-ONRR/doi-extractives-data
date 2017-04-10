@@ -2,6 +2,13 @@
 title: Corporate Income Tax | How it works
 title_display: Corporate Income Tax
 layout: content
+description: "Due to U.S. law, information about companies’ individual income tax payments is confidential. However, there are two key sources of publicly available information about federal income taxes for the extractive industries: the government and the filings of companies that are publicly listed."
+tag:
+- How it works
+- Taxes
+- Government sources
+- Tax receipts
+- Corporate filings
 permalink: /how-it-works/corporate-income-tax/
 breadcrumb:
   - title: How it works

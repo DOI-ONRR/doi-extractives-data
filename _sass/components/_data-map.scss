@@ -140,11 +140,11 @@ eiti-data-map {
     }
 
     &.mouseover use {
-      stroke: $green-dark-chart-mid;
+      stroke: $green-darker-mid;
     }
 
     &.selected use {
-      stroke: $green-dark-chart;
+      stroke: $green-darker;
     }
   }
 

@@ -32,7 +32,7 @@ eiti-map {
   path.mesh {
     fill: none;
     pointer-events: none;
-    stroke: lighten($neutral-gray, 10%); // #aaa
+    stroke: lighten($gray, 15%);
     stroke-width: 1;
   }
 

@@ -98,12 +98,12 @@ $base-accent-color: $mid-blue;
 
 // Padding
 $base-padding: 1.25em; //20px
-$base-padding-lite: $base-padding / 3;
-$base-padding-small: 0.90em;
-$base-padding-base: 1em;
+$base-padding-lite: $base-padding / 3; //6.66px
+$base-padding-small: 0.7em; //11.2px Reduced from .9em
+$base-padding-base: 1em; //16px
 $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
-$base-padding-jumbo: 3.8em;
+$base-padding-jumbo: 3.8em; //60.8px
 
 // Padding on rem scale
 $standard-padding: 1.25rem;

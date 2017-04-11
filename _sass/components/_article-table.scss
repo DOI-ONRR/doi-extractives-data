@@ -43,9 +43,8 @@ $max-columns: 10;
   td {
     border: none;
     border-top: 1px solid $gray-lighter;
-    line-height: 1.4;
-    padding: $base-padding-lite;
-    padding-bottom: ($base-padding-lite * 1.7);
+    line-height: 1.3;
+    padding: $base-padding-small;
   }
 
   td p {
@@ -73,7 +72,6 @@ $max-columns: 10;
 
 .article_table-numbers td:first-child {
   text-align: left;
-  text-indent: 1rem;
 }
 
 @for $i from 1 to $max-columns {
@@ -110,12 +108,12 @@ $max-columns: 10;
   &.article_table-head,
   &.article_table-bold {
     td:first-child {
-      text-indent: 0;
+      padding-left: $base-padding-lite;
     }
   }
 
   td:first-child {
-    text-indent: 1rem;
+    padding-left: $base-padding-base;
   }
 }
 

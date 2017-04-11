@@ -39,7 +39,7 @@ SOI’s calculations of federal corporate income tax receipts from all returns i
 <table class="article_table article_table-indented article_table-numbers">
   <tr>
     <th rowspan="2" class="article_table-left article_table-enlarge">Industry</th>
-    <th colspan="5" class="article_table-thin">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
+    <th colspan="5" class="article_table-thin" markdown="span">Total receipts (in millions USD)[^2]</th>
   </tr>
   <tr>
     <th>2009</th>
@@ -97,7 +97,7 @@ SOI’s calculations of federal corporate income tax receipts from all returns i
     <td>1,944</td>
   </tr>
   <tr class="article_table-head">
-    <td>Petroleum and coal products manufacturing<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></td>
+    <td>Petroleum and coal products manufacturing<span markdown="span">[^3]</span></td>
     <td>$1,897</td>
     <td>$5,126</td>
     <td>$7,630</td>
@@ -123,11 +123,7 @@ Companies that are not publicly listed are generally not required to publish any
 In 2010, the United States enacted the [Dodd-Frank Act]({{ site.baseurl }}/how-it-works/federal-reforms/#dodd-frank), which requires listed extractive companies to separately disclose information about payments to governments around the world, including their federal corporate income tax payments. The Securities and Exchange Commission is rewriting the rule and has stated that it will be proposed in the spring of 2016. Once finalized, publicly traded companies will report according to the law and the rule.
 
 ## Notes
-<div class="footnotes">
-  <ol>
-    <li id="fn:1"><p>Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
-    <li id="fn:2"><p>Internal Revenue Service, <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">Tax Returns of Active Corporations</a>. All figures are estimates based on samples.<a href="#fnref:2" class="reversefootnote">↩</a></p></li>
-    <li id="fn:3"><p>Petroleum and coal products manufacturing encompasses an additional industry subcategory, <em>Asphalt paving, roofing, other petroleum and coal products</em>, which as exluded because it is outside the scope of EITI.<a href="#fnref:3" class="reversefootnote">↩</a></p></li>
-  </ol>
- </div>
+[^1]: Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry.
+[^2]: Internal Revenue Service, [Tax Returns of Active Corporations](https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1). All figures are estimates based on samples.
+[^3]: Petroleum and coal products manufacturing encompasses an additional industry subcategory, **Asphalt paving, roofing, other petroleum and coal products**, which as exluded because it is outside the scope of EITI.
 

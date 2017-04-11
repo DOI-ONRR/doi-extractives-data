@@ -37,81 +37,85 @@ SOI presents the data in various ways for corporations, including by size, type 
 SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for [tax years 2009 to 2013](https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1) are presented below.[^1]
 
 <table class="article_table article_table-indented article_table-numbers">
-  <tr>
-    <th rowspan="2" class="article_table-left article_table-enlarge">Industry</th>
-    <th colspan="5" class="article_table-thin" markdown="span">Total receipts (in millions USD)[^2]</th>
-  </tr>
-  <tr>
-    <th>2009</th>
-    <th>2010</th>
-    <th>2011</th>
-    <th>2012</th>
-    <th>2013</th>
-  </tr>
-  <tr class="article_table-head">
-    <td>Mining</td>
-    <td>$3,831</td>
-    <td>$5,722</td>
-    <td>$5,941</td>
-    <td>$5,249</td>
-    <td>$4,896</td>
-  </tr>
-  <tr>
-    <td>Oil and gas extraction</td>
-    <td>1,424</td>
-    <td>2,152</td>
-    <td>1,811</td>
-    <td>1,642</td>
-    <td>1,943</td>
-  </tr>
-  <tr>
-    <td>Coal mining</td>
-    <td>207</td>
-    <td>344</td>
-    <td>325</td>
-    <td>245</td>
-    <td>32</td>
-  </tr>
-  <tr>
-    <td>Metal ore mining</td>
-    <td>866</td>
-    <td>1,573</td>
-    <td>1,945</td>
-    <td>1,329</td>
-    <td>755</td>
-  </tr>
-  <tr>
-    <td>Nonmetallic mineral mining and quarrying</td>
-    <td>181</td>
-    <td>158</td>
-    <td>183</td>
-    <td>233</td>
-    <td>222</td>
-  </tr>
-  <tr>
-  <td>Support activities for mining</td>
-    <td>1,153</td>
-    <td>1,494</td>
-    <td>1,677</td>
-    <td>1,800</td>
-    <td>1,944</td>
-  </tr>
-  <tr class="article_table-head">
-    <td>Petroleum and coal products manufacturing<span markdown="span">[^3]</span></td>
-    <td>$1,897</td>
-    <td>$5,126</td>
-    <td>$7,630</td>
-    <td>$9,223</td>
-    <td>$6,908</td>
-  </tr>
-  <tr>
-    <td>Petroleum refineries (including integrated)</td>
-    <td>1,772</td>
-    <td>4,865</td>
-    <td>7,402</td>
-    <td>9,064</td>
-    <td>6,631</td>
-  </tr>
+  <thead>
+    <tr>
+      <th rowspan="2" class="article_table-left article_table-enlarge">Industry</th>
+      <th colspan="5" class="article_table-thin" markdown="span">Total receipts (in millions USD)[^2]</th>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="article_table-head">
+      <td>Mining</td>
+      <td>$3,831</td>
+      <td>$5,722</td>
+      <td>$5,941</td>
+      <td>$5,249</td>
+      <td>$4,896</td>
+    </tr>
+    <tr>
+      <td>Oil and gas extraction</td>
+      <td>1,424</td>
+      <td>2,152</td>
+      <td>1,811</td>
+      <td>1,642</td>
+      <td>1,943</td>
+    </tr>
+    <tr>
+      <td>Coal mining</td>
+      <td>207</td>
+      <td>344</td>
+      <td>325</td>
+      <td>245</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Metal ore mining</td>
+      <td>866</td>
+      <td>1,573</td>
+      <td>1,945</td>
+      <td>1,329</td>
+      <td>755</td>
+    </tr>
+    <tr>
+      <td>Nonmetallic mineral mining and quarrying</td>
+      <td>181</td>
+      <td>158</td>
+      <td>183</td>
+      <td>233</td>
+      <td>222</td>
+    </tr>
+    <tr>
+    <td>Support activities for mining</td>
+      <td>1,153</td>
+      <td>1,494</td>
+      <td>1,677</td>
+      <td>1,800</td>
+      <td>1,944</td>
+    </tr>
+    <tr class="article_table-head">
+      <td>Petroleum and coal products manufacturing<span markdown="span">[^3]</span></td>
+      <td>$1,897</td>
+      <td>$5,126</td>
+      <td>$7,630</td>
+      <td>$9,223</td>
+      <td>$6,908</td>
+    </tr>
+    <tr>
+      <td>Petroleum refineries (including integrated)</td>
+      <td>1,772</td>
+      <td>4,865</td>
+      <td>7,402</td>
+      <td>9,064</td>
+      <td>6,631</td>
+    </tr>
+  </tbody>
 </table>
 
 <h2 id="from-company-filings">Tax information from company filings</h2>

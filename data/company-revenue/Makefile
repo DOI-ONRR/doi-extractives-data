@@ -10,4 +10,4 @@ output: input
 	done
 
 clean:
-	rm -f output/*.tsv
+	rm -rf output

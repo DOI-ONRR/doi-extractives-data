@@ -99,7 +99,7 @@ $ab-border-thick: 4px;
   .table-arrow_box-subheader-value:not(.text) {
     @include font-size(1);
 
-    color: $green-dark-chart;
+    color: $green-darker;
   }
 
   .table-arrow_box-category {

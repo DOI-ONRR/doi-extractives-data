@@ -13,7 +13,7 @@ eiti-map {
 
   path {
     fill: transparent;
-    stroke: $neutral-gray;
+    stroke: $gray-light;
   }
 
   &.clickable path.feature {
@@ -32,7 +32,7 @@ eiti-map {
   path.mesh {
     fill: none;
     pointer-events: none;
-    stroke: lighten($neutral-gray, 10%); // #aaa
+    stroke: lighten($gray, 15%);
     stroke-width: 1;
   }
 

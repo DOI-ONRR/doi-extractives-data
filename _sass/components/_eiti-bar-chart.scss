@@ -64,10 +64,10 @@ eiti-bar-chart {
   .bar-selected .bar-value,
   .tick-selected text,
   .tick-hover text {
-    fill: $green-dark-chart;
+    fill: $green-darker;
 
     &.dataless {
-      fill: $green-dark-chart;
+      fill: $green-darker;
     }
   }
 
@@ -87,7 +87,7 @@ eiti-bar-chart {
 
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
-  color: $green-dark-chart;
+  color: $green-darker;
   font-weight: $weight-bold;
 }
 

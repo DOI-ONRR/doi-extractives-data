@@ -21,7 +21,7 @@ module Jekyll
               url: url,
               internal: true
             }
-            obj[slugify(doc.data['permalink'])] = new_obj
+            obj[slugify(url)] = new_obj
           else
             next
           end

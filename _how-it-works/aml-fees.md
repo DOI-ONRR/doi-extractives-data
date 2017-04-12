@@ -2,6 +2,14 @@
 title: 'AML Reclamation Program | How it Works'
 title_display: Abandoned Mine Land Reclamation Program
 layout: content
+description: The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
+tag:
+- How it works
+- AML
+- Abandoned mine lands
+- AML fund
+- Reclamation
+- Coal
 permalink: /how-it-works/aml-reclamation-program/
 nav_items:
   - name: intro

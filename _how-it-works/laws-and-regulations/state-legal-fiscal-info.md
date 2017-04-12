@@ -42,6 +42,28 @@ nav_items:
     title: West Virginia
   - name: wyoming
     title: Wyoming
+description: Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.
+tag:
+- How it works
+- State legal and fiscal information
+- Alaska
+- Arizona
+- California
+- Colorado
+- Illinois
+- Kentucky
+- Louisiana
+- Minnesota
+- Montana
+- Nevada
+- New Mexico
+- North Dakota
+- Oklahoma
+- Pennsylvania
+- Texas
+- Utah
+- West Virginia
+- Wyoming
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

@@ -33,6 +33,21 @@ nav_items:
         title: Copper
       - name: iron
         title: Iron
+description: The United States is home to many different natural resources, including fossil fuel, renewable energy", and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+tag:
+- how it works
+- production
+- fossil fuels
+- oil
+- gas
+- coal
+- renewable energy
+- geothermal
+- wind
+- non-energy minerals
+- gold
+- copper
+- iron
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

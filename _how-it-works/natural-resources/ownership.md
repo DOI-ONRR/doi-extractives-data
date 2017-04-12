@@ -22,6 +22,16 @@ nav_items:
     subnav_items:
       - name: split-ownership
         title: Split Ownership
+description: Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
+tag:
+- how it works
+- land ownership
+- private land
+- federal land
+- state and local land
+- indian land
+- natural resources
+- split ownership
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

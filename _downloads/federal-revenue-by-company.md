@@ -6,6 +6,16 @@ title_display: Federal Revenue by Company
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
+description: This dataset provides natural resource revenues data by company for calendar years 2013-2015. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
+tag:
+- Data
+- Downloads
+- Documentation
+- USEITI data
+- Federal
+- Revenue
+- Company
+- By company
 ---
 
 

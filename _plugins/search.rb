@@ -12,12 +12,13 @@ module Jekyll
       obj = {}
       collections.each do |collection|
         collection['docs'].each do |doc|
+          url = doc.data['permalink'] || doc.url
           if doc.data['title'] && doc.data['description'] && doc.data['tag'] && doc.data['permalink']
             new_obj = {
               title: doc.data['title'],
               description: doc.data['description'],
               tag: doc.data['tag'],
-              url: doc.data['permalink'],
+              url: url,
               internal: true
             }
             obj[slugify(doc.data['permalink'])] = new_obj

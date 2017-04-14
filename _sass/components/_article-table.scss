@@ -27,12 +27,6 @@ $max-columns: 10;
   margin-bottom: $base-padding-extra;
   width: 100%;
 
-  &:not(.article_table-gray) {
-    thead {
-      background-color: transparent;
-    }
-  }
-
   th {
     border-bottom: 4px solid $light-green;
     font-weight: $weight-book;
@@ -125,20 +119,4 @@ $max-columns: 10;
   td:first-child {
     padding-left: $base-padding;
   }
-}
-
-.article_table-gray {
-  border-bottom: 1px solid $neutral-gray;
-}
-
-.article_table-gray th {
-  border-bottom: 2px solid $neutral-gray;
-}
-
-.article_table-gray.article_table-thin {
-  border-bottom: 1px solid $neutral-gray;
-}
-
-.article_table-gray td {
-  border-top: 1px solid $neutral-gray;
 }

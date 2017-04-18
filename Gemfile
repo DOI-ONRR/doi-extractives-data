@@ -9,6 +9,7 @@ gem 'scss_lint', require: false
 gem 'html-proofer'
 gem 'rubocop'
 gem 'rubydoctest'
+gem 'stdlib'
 
 group :development do
   gem 'pry'

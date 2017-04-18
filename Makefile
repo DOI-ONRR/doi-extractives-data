@@ -609,7 +609,7 @@ tables/offshore_revenue: data/revenue/offshore.tsv
 	$(tables) -i $$tmp -t ndjson -n offshore_revenue && \
 	rm $$tmp
 
-tables/county_revenue: data/revenue/onshore.tsv
+tables/county_revenue: data/revenue/onshore_1.tsv
 	@$(call drop-table,county_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \

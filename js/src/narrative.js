@@ -3,7 +3,7 @@
 
   require('./../components/sticky.js');
 
-  var OpenListNav = require('./../components/open-list-nav.js');
+  var OpenListNav = require('../components/open-list-nav.js');
 
   // exporting instance of OpenListNav because openListNav is
   // referenced in the markup:

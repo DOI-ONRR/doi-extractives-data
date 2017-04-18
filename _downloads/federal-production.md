@@ -6,6 +6,14 @@ permalink: /downloads/federal-production/
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
+description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2006-2015.
+tag:
+- Data
+- Downloads
+- Documentation
+- USEITI data
+- Federal
+- Production
 ---
 
 

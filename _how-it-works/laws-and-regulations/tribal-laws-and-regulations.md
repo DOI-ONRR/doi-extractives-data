@@ -7,13 +7,19 @@ nav_items:
   - name: introduction
     title: Top
   - name: federal-obligations
-    title: Federal Obligations
+    title: Federal obligations
   - name: leasing-process
-    title: Leasing Process
+    title: Leasing process
   - name: production-on-indian-land
     title: Production
   - name: revenue-from-natural-resources-on-indian-land
     title: Revenue
+description: Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.
+tag:
+- How it works
+- Tribal laws and regulations
+- Leasing
+- Production
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
@@ -177,7 +183,7 @@ In the tables below, revenue may be grouped differently depending on the stage o
       {% for revenue_type in page.revenue_types %}
         {% assign _revenue_type = revenue_type[0] %}
         {% assign _revenue = commodity[1][_revenue_type] %}
-      <td class="numeric">{% if _revenue %}${{ _revenue | intcomma }}{% else %}-{% endif %}</td>
+      <td class="numeric">{% if _revenue %}{{ _revenue | intcomma_dollar }}{% else %}-{% endif %}</td>
       {% endfor %}
     </tr>
   {% endfor %}

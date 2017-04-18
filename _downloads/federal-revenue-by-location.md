@@ -6,6 +6,16 @@ title_display: Federal Revenue by Location
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
+description: There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are all accounting year data.
+tag:
+- Data
+- Downloads
+- Documentation
+- USEITI data
+- Federal
+- Revenue
+- Location
+- By location
 ---
 
 > There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are all accounting year data.
@@ -60,7 +70,7 @@ Our site has two federal revenue datasets. The one on this page is organized by 
 
 The fees and rates for revenue from geothermal resources on federal land depend on whether the land is leased competitively or noncompetitively.
 
-Also, different fee rates apply to pre-2005 leases and to direct use facilities: 
+Also, different fee rates apply to pre-2005 leases and to direct use facilities:
 
 * For leases signed before the Energy Policy Act of 2005, the lessee’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
 * For {{ "direct use" | term_end }}, the lessee pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lessee at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.

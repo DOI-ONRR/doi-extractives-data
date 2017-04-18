@@ -10,7 +10,7 @@
   {% for _year in include.values %}
     <tr>
       <td>{{ _year[0] }}</td>
-      <td class="numeric" data-series="gdp" data-value="{{ _year[1].dollars }}">${{ _year[1].dollars | intcomma }}</td>
+      <td class="numeric" data-series="gdp" data-value="{{ _year[1].dollars }}">{{ _year[1].dollars | intcomma_dollar }}</td>
       {% if include.percent %}
       <td class="numeric" data-series="percent" data-value="{{ _year[1].percent }}">{{ _year[1].percent | percent }}%</td>
       {% endif %}

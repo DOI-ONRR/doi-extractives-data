@@ -1,7 +1,7 @@
 Company	Revenue Type	Commodity	Revenue
 70 & 148 LLC	BLM - Permit Fees	Oil & Gas	$1,870.00
 70 & 148 LLC	ONRR/BLM - Rents	Oil & Gas	$310,220.00
-A & G COAL CORP                                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$119,617.76
+A & G COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$119,617.76
 ABRAXAS PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$290.00
 ABRAXAS PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$18,631.60
 ABRAXAS PETROLEUM CORP	ONRR - Royalties	Gas	$55,520.80
@@ -28,7 +28,7 @@ ALPHA NATURAL RESOURCES INC	BLM - Permit Fees	Mineral Materials	$50,749.38
 ALPHA NATURAL RESOURCES INC	ONRR - Royalties	Coal	$29,672,103.26
 ALPHA NATURAL RESOURCES INC	ONRR/BLM - Bonus	Coal	$42,129,612.00
 ALPHA NATURAL RESOURCES INC	ONRR/BLM - Rents	Coal	$38,796.00
-ALPHA NATURAL RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$18,991,420.29
+ALPHA NATURAL RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$18,991,420.29
 ALTA MESA SERVICES LP	ONRR - Other Revenues	Oil & Gas	$14,387.14
 ALTA MESA SERVICES LP	ONRR - Royalties	Gas	$87,631.06
 ALTA MESA SERVICES LP	ONRR - Royalties	Oil	$84,834.88
@@ -38,21 +38,21 @@ ALTERNATIVE EARTH RESOURCES INC	BLM - Permit Fees	Geothermal	$50,392.81
 ALTERNATIVE EARTH RESOURCES INC	BLM - Permit Fees	Locatable Minerals	$36,300.00
 ALTERNATIVE EARTH RESOURCES INC	ONRR - Royalties	Geothermal	$126,454.44
 ALTERNATIVE EARTH RESOURCES INC	ONRR/BLM - Rents	Geothermal	$16,325.00
-ALTON COAL DEVELOPMENT LLC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$195,566.76
+ALTON COAL DEVELOPMENT LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$195,566.76
 AMERICAN COLLOID CO	BLM - Permit Fees	Locatable Minerals	$881,427.00
-AMERICAN ENERGY CORP                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,036,143.34
-AMERICAN GILSONITE CO	ONRR - Other Revenues	Gilsonite	($1,686.00)
+AMERICAN ENERGY CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,036,143.34
+AMERICAN GILSONITE CO	ONRR - Other Revenues	Gilsonite	-$1,686.00
 AMERICAN GILSONITE CO	ONRR - Royalties	Other Commodities	$2,888,852.49
 AMERICAN GILSONITE CO	ONRR/BLM - Rents	Gilsonite	$740.00
 AMERICO ENERGY RESOURCES LLC	ONRR - Royalties	Gas	$20,391.81
 AMERICO ENERGY RESOURCES LLC	ONRR - Royalties	Oil	$425,967.89
-AMERIKOHL MINING INC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$262,938.60
+AMERIKOHL MINING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$262,938.60
 ANADARKO MINERALS INC	ONRR - Other Revenues	N/A	$214.00
 ANADARKO MINERALS INC	ONRR - Other Revenues	Oil & Gas	$474.00
 ANADARKO MINERALS INC	ONRR - Royalties	Gas	$18,133.60
 ANADARKO MINERALS INC	ONRR - Royalties	Oil	$151,340.27
 ANADARKO PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$2,696,255.00
-ANADARKO PETROLEUM CORP	ONRR - Civil Penalties (ONRR)	N/A	$50,000.00
+ANADARKO PETROLEUM CORP	ONRR - Civil Penalties	N/A	$50,000.00
 ANADARKO PETROLEUM CORP	ONRR - Inspection Fees	Oil & Gas	$2,213,500.00
 ANADARKO PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$3,159,531.23
 ANADARKO PETROLEUM CORP	ONRR - Royalties	Gas	$168,489,293.74
@@ -69,17 +69,17 @@ ANGELLE & DONAHUE OIL & GAS PROPERTIES	ONRR/BLM - Bonus	Oil & Gas	$36,260.00
 ANGELLE & DONAHUE OIL & GAS PROPERTIES	ONRR/BLM - Rents	Oil & Gas	$64,944.00
 ANGLO AMERICAN EXPLORATION USA INC	BLM - Permit Fees	Locatable Minerals	$124,455.00
 ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR - Inspection Fees	Oil & Gas	$48,500.00
-ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR - Other Revenues	Oil & Gas	($119,496.83)
+ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR - Other Revenues	Oil & Gas	-$119,496.83
 ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR - Royalties	Gas	$36,643.61
 ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR - Royalties	Oil	$2,445,383.50
 ANGLO SUISSE OFFSHORE PARTNERS LLC	ONRR/BLM - Rents	Oil & Gas	$540.00
 ANKOR ENERGY LLC	ONRR - Inspection Fees	Oil & Gas	$1,049,300.00
-ANKOR ENERGY LLC	ONRR - Other Revenues	Oil & Gas	($12,222.13)
+ANKOR ENERGY LLC	ONRR - Other Revenues	Oil & Gas	-$12,222.13
 ANKOR ENERGY LLC	ONRR - Royalties	Gas	$6,475,447.17
 ANKOR ENERGY LLC	ONRR - Royalties	Oil	$51,616,337.48
 ANKOR ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$177,490.00
 ANTERO RESOURCES CORP	BLM - Permit Fees	Oil & Gas	$2,975.00
-ANTERO RESOURCES CORP	ONRR - Other Revenues	Oil & Gas	($63,285.55)
+ANTERO RESOURCES CORP	ONRR - Other Revenues	Oil & Gas	-$63,285.55
 ANTERO RESOURCES CORP	ONRR - Royalties	Gas	$232,174.38
 ANTERO RESOURCES CORP	ONRR - Royalties	Oil	$88,834.77
 ANTERO RESOURCES CORP	ONRR/BLM - Rents	Oil & Gas	$25,720.00
@@ -89,21 +89,21 @@ APACHE CORP	ONRR - Royalties	Gas	$73,834,462.64
 APACHE CORP	ONRR - Royalties	Oil	$364,754,960.95
 APACHE CORP	ONRR/BLM - Bonus	Oil & Gas	$33,478,000.00
 APACHE CORP	ONRR/BLM - Rents	Oil & Gas	$3,627,692.00
-APEX ENERGY INC                                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$215,501.73
+APEX ENERGY INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$215,501.73
 APEX OIL & GAS INC	ONRR - Other Revenues	Oil & Gas	$1,025.80
 APEX OIL & GAS INC	ONRR - Royalties	Gas	$1,371,662.56
 APEX OIL & GAS INC	ONRR - Royalties	Oil	$58,140.09
 APEX OIL & GAS INC	ONRR/BLM - Bonus	Oil & Gas	$23,017.00
 APEX OIL & GAS INC	ONRR/BLM - Rents	Oil & Gas	$36,594.00
-APOGEE COAL CO LLC                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$505,566.53
+APOGEE COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$505,566.53
 ARCH COAL INC	BLM - Permit Fees	Oil & Gas	$734.00
 ARCH COAL INC	ONRR - Other Revenues	Coal	$3,583,452.50
 ARCH COAL INC	ONRR - Royalties	Coal	$182,167,078.35
 ARCH COAL INC	ONRR/BLM - Bonus	Coal	$60,436,982.34
 ARCH COAL INC	ONRR/BLM - Rents	Coal	$205,384.75
 ARCH COAL INC	ONRR/BLM - Rents	Oil & Gas	$30,196.50
-ARCH COAL INC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$34,036,383.88
-ARENA ENERGY	ONRR - Civil Penalties (ONRR)	N/A	$90,000.00
+ARCH COAL INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$34,036,383.88
+ARENA ENERGY	ONRR - Civil Penalties	N/A	$90,000.00
 ARENA ENERGY	ONRR - Inspection Fees	Oil & Gas	$2,030,000.00
 ARENA ENERGY	ONRR - Other Revenues	N/A	$201.95
 ARENA ENERGY	ONRR - Other Revenues	Oil & Gas	$81,220.39
@@ -111,8 +111,8 @@ ARENA ENERGY	ONRR - Royalties	Gas	$12,154,105.69
 ARENA ENERGY	ONRR - Royalties	Oil	$73,382,409.31
 ARENA ENERGY	ONRR/BLM - Bonus	Oil & Gas	$1,307,000.00
 ARENA ENERGY	ONRR/BLM - Rents	Oil & Gas	$1,182,339.84
-ARGUS ENERGY WV LLC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$130,512.59
-ARMSTRONG COAL CO INC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,839,142.07
+ARGUS ENERGY WV LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$130,512.59
+ARMSTRONG COAL CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,839,142.07
 ARMSTRONG CORP	ONRR - Royalties	Oil	$254,665.13
 ARMSTRONG CORP	ONRR/BLM - Rents	Oil & Gas	$8,213.00
 ARNELL OIL CO	ONRR - Royalties	Oil	$246,470.00
@@ -129,7 +129,7 @@ ATLAS RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$4,708.28
 ATLAS RESOURCES LLC	ONRR - Royalties	Gas	$326,599.86
 ATLAS RESOURCES LLC	ONRR - Royalties	Oil	$79,751.86
 ATLAS RESOURCES LLC	ONRR/BLM - Rents	Oil & Gas	$669.00
-ATP OIL & GAS	ONRR - Other Revenues	Oil & Gas	($175,931.83)
+ATP OIL & GAS	ONRR - Other Revenues	Oil & Gas	-$175,931.83
 ATP OIL & GAS	ONRR - Royalties	Gas	$505,095.10
 ATP OIL & GAS	ONRR - Royalties	Oil	$30,488,069.90
 ATP OIL & GAS	ONRR/BLM - Rents	Oil & Gas	$532,190.00
@@ -148,16 +148,16 @@ AXIA ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$21,262.05
 AXIA ENERGY LLC	ONRR - Royalties	Gas	$135,688.02
 AXIA ENERGY LLC	ONRR - Royalties	Oil	$1,655,367.80
 AXIA ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$16,944.00
-B & N COAL INC                                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$129,512.68
+B & N COAL INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$129,512.68
 B & R TRUCKING	BLM - Permit Fees	Mineral Materials	$153,570.00
-B & W RESOURCES INC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$226,816.25
+B & W RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$226,816.25
 B.C. OPERATING INC	ONRR - Other Revenues	Oil & Gas	$7,059.06
 B.C. OPERATING INC	ONRR - Royalties	Gas	$51,654.56
 B.C. OPERATING INC	ONRR - Royalties	Oil	$150,235.19
 B.C. OPERATING INC	ONRR/BLM - Rents	Oil & Gas	$2,000.00
 BADGER OIL CORP	ONRR - Inspection Fees	Oil & Gas	$17,000.00
-BADGER OIL CORP	ONRR - Other Revenues	Oil & Gas	($1,435.27)
-BADGER OIL CORP	ONRR - Royalties	Gas	($3,882.87)
+BADGER OIL CORP	ONRR - Other Revenues	Oil & Gas	-$1,435.27
+BADGER OIL CORP	ONRR - Royalties	Gas	-$3,882.87
 BADGER OIL CORP	ONRR - Royalties	Oil	$401,583.07
 BALLARD PETROLEUM HOLDINGS LLC	BLM - Permit Fees	Oil & Gas	$40,495.00
 BALLARD PETROLEUM HOLDINGS LLC	ONRR - Other Revenues	Oil & Gas	$6,138.08
@@ -180,7 +180,7 @@ BAYTEX ENERGY USA LTD	ONRR - Royalties	Gas	$172.88
 BAYTEX ENERGY USA LTD	ONRR - Royalties	Oil	$217,009.49
 BAYTEX ENERGY USA LTD	ONRR/BLM - Bonus	Oil & Gas	$209,000.00
 BAYTEX ENERGY USA LTD	ONRR/BLM - Rents	Oil & Gas	$4,602.00
-BEAR BRANCH COAL CO                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$128,413.21
+BEAR BRANCH COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$128,413.21
 BEARCAT ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$3,367.27
 BEARCAT ENERGY LLC	ONRR - Royalties	Gas	$322,682.99
 BEARTOOTH OIL & GAS CO	BLM - Permit Fees	Oil & Gas	$785.00
@@ -196,7 +196,7 @@ BELOW THRESHOLD	BLM - Permit Fees	Mineral Materials	$3,995,650.64
 BELOW THRESHOLD	BLM - Permit Fees	Oil & Gas	$1,957,473.83
 BELOW THRESHOLD	BLM - Permit Fees	Oil Shale	$642.34
 BELOW THRESHOLD	BLM - Permit Fees	Other Commodities	$52,106.95
-BELOW THRESHOLD	ONRR - Civil Penalties (ONRR)	N/A	$690,408.90
+BELOW THRESHOLD	ONRR - Civil Penalties	N/A	$690,408.90
 BELOW THRESHOLD	ONRR - Inspection Fees	Oil & Gas	$809,434.90
 BELOW THRESHOLD	ONRR - Other Revenues	Clay	$942.00
 BELOW THRESHOLD	ONRR - Other Revenues	Coal	$83,088.67
@@ -217,19 +217,19 @@ BELOW THRESHOLD	ONRR - Royalties	Other Commodities	$153,684.30
 BELOW THRESHOLD	ONRR/BLM - Bonus	Geothermal	$2,462.00
 BELOW THRESHOLD	ONRR/BLM - Bonus	Oil & Gas	$3,152,137.75
 BELOW THRESHOLD	ONRR/BLM - Rents	Clay	$314.00
-BELOW THRESHOLD	ONRR/BLM - Rents	Coal	($17,729.50)
-BELOW THRESHOLD	ONRR/BLM - Rents	Copper	($2,611.00)
+BELOW THRESHOLD	ONRR/BLM - Rents	Coal	-$17,729.50
+BELOW THRESHOLD	ONRR/BLM - Rents	Copper	-$2,611.00
 BELOW THRESHOLD	ONRR/BLM - Rents	Geothermal	$619,644.00
 BELOW THRESHOLD	ONRR/BLM - Rents	Gilsonite	$1,086.50
 BELOW THRESHOLD	ONRR/BLM - Rents	Hardrock	$19,973.00
 BELOW THRESHOLD	ONRR/BLM - Rents	Oil & Gas	$7,089,134.67
 BELOW THRESHOLD	ONRR/BLM - Rents	Oil Shale	$640.00
-BELOW THRESHOLD	ONRR/BLM - Rents	Phosphate	($7,371.50)
+BELOW THRESHOLD	ONRR/BLM - Rents	Phosphate	-$7,371.50
 BELOW THRESHOLD	ONRR/BLM - Rents	Potassium	$83,790.00
-BELOW THRESHOLD	ONRR/BLM - Rents	Sodium	($70.50)
+BELOW THRESHOLD	ONRR/BLM - Rents	Sodium	-$70.50
 BELOW THRESHOLD	ONRR/BLM - Rents	Wind	$111,762.92
-BELOW THRESHOLD	OSMRE - AML Fees including Audits and Late Charges 	Coal	$7,661,735.45
-BELOW THRESHOLD	OSMRE - Civil Penalties including Late Charges (OSMRE)	N/A	$125,967.70
+BELOW THRESHOLD	OSMRE - AML Fees including Audits and Late Charges	Coal	$7,661,735.45
+BELOW THRESHOLD	OSMRE - Civil Penalties including Late Charges	N/A	$125,967.70
 BENSON-MONTIN-GREER DRILLING CORP	ONRR - Other Revenues	Oil & Gas	$106,991.98
 BENSON-MONTIN-GREER DRILLING CORP	ONRR - Royalties	Gas	$1,008,817.90
 BENSON-MONTIN-GREER DRILLING CORP	ONRR - Royalties	Oil	$1,028,275.60
@@ -240,8 +240,8 @@ BERENERGY CORP	ONRR - Other Revenues	Oil & Gas	$523.24
 BERENERGY CORP	ONRR - Royalties	Gas	$193,172.26
 BERENERGY CORP	ONRR - Royalties	Oil	$68,672.04
 BERENERGY CORP	ONRR/BLM - Rents	Oil & Gas	$1,120.00
-BET ASSOCIATES IV LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$150,873.15
-BETA OPERATING CO LLC	ONRR - Civil Penalties (ONRR)	N/A	$30,000.00
+BET ASSOCIATES IV LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$150,873.15
+BETA OPERATING CO LLC	ONRR - Civil Penalties	N/A	$30,000.00
 BETA OPERATING CO LLC	ONRR - Inspection Fees	Oil & Gas	$50,100.00
 BETA OPERATING CO LLC	ONRR - Royalties	Oil	$34,524,340.11
 BHP BILLITON LTD	BLM - Permit Fees	Locatable Minerals	$92,029.00
@@ -256,18 +256,18 @@ BHP BILLITON LTD	ONRR - Royalties	Oil	$266,913,554.86
 BHP BILLITON LTD	ONRR/BLM - Bonus	Oil & Gas	$121,705,398.00
 BHP BILLITON LTD	ONRR/BLM - Rents	Coal	$52,716.00
 BHP BILLITON LTD	ONRR/BLM - Rents	Oil & Gas	$11,478,349.00
-BHP BILLITON LTD	OSMRE - AML Fees including Audits and Late Charges 	Coal	$2,895,555.16
+BHP BILLITON LTD	OSMRE - AML Fees including Audits and Late Charges	Coal	$2,895,555.16
 BILL BARRETT CORP	BLM - Permit Fees	Oil & Gas	$386,735.00
-BILL BARRETT CORP	ONRR - Other Revenues	Oil & Gas	($2,536,704.98)
+BILL BARRETT CORP	ONRR - Other Revenues	Oil & Gas	-$2,536,704.98
 BILL BARRETT CORP	ONRR - Royalties	Gas	$18,906,767.74
 BILL BARRETT CORP	ONRR - Royalties	Oil	$10,042,925.95
 BILL BARRETT CORP	ONRR/BLM - Bonus	Oil & Gas	$54,730.00
 BILL BARRETT CORP	ONRR/BLM - Rents	Oil & Gas	$364,275.00
-BIRMINGHAM COAL & COKE CO INC                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$144,699.03
+BIRMINGHAM COAL & COKE CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$144,699.03
 BISSELL EXPLORATION LLC	BLM - Permit Fees	Oil & Gas	$85.00
 BISSELL EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$273,088.50
 BLACK BEAR OIL CORP	BLM - Permit Fees	Oil & Gas	$255.00
-BLACK BEAR OIL CORP	ONRR - Other Revenues	Oil & Gas	($5,543.51)
+BLACK BEAR OIL CORP	ONRR - Other Revenues	Oil & Gas	-$5,543.51
 BLACK BEAR OIL CORP	ONRR - Royalties	Gas	$79,048.28
 BLACK BEAR OIL CORP	ONRR - Royalties	Oil	$1,124,104.06
 BLACK BEAR OIL CORP	ONRR/BLM - Rents	Oil & Gas	$1,022.00
@@ -276,41 +276,41 @@ BLACK DIAMOND MINERALS LLC	ONRR - Other Revenues	Oil & Gas	$6,762.20
 BLACK DIAMOND MINERALS LLC	ONRR - Royalties	Gas	$245,309.88
 BLACK DIAMOND MINERALS LLC	ONRR - Royalties	Oil	$46,924.05
 BLACK DIAMOND MINERALS LLC	ONRR/BLM - Rents	Oil & Gas	$169,118.50
-BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Civil Penalties (ONRR)	N/A	$351,250.00
+BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Civil Penalties	N/A	$351,250.00
 BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Inspection Fees	Oil & Gas	$1,662,900.00
 BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Other Revenues	N/A	$11,712.82
-BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Other Revenues	Oil & Gas	($123,200.84)
+BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Other Revenues	Oil & Gas	-$123,200.84
 BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Royalties	Gas	$10,305,139.55
 BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR - Royalties	Oil	$32,309,483.97
 BLACK ELK ENERGY OFFSHORE OPERATIONS LLC	ONRR/BLM - Rents	Oil & Gas	$12,330.00
 BLACK HILLS CORP	BLM - Permit Fees	Oil & Gas	$21,824.00
-BLACK HILLS CORP	ONRR - Other Revenues	Oil & Gas	($8,923.73)
+BLACK HILLS CORP	ONRR - Other Revenues	Oil & Gas	-$8,923.73
 BLACK HILLS CORP	ONRR - Royalties	Coal	$7,350,396.81
 BLACK HILLS CORP	ONRR - Royalties	Gas	$1,352,588.87
 BLACK HILLS CORP	ONRR - Royalties	Oil	$1,590,185.24
 BLACK HILLS CORP	ONRR/BLM - Rents	Coal	$10,014.00
 BLACK HILLS CORP	ONRR/BLM - Rents	Oil & Gas	$29,127.00
-BLACK HILLS CORP	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,209,461.12
-BLACK PANTHER MINING LLC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$412,822.00
-BLACK STALLION COAL CO LLC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$138,369.89
-BLACK WARRIOR MINERALS INC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$123,866.01
-BLACK WOLF MINING CO                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$155,222.75
+BLACK HILLS CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,209,461.12
+BLACK PANTHER MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$412,822.00
+BLACK STALLION COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$138,369.89
+BLACK WARRIOR MINERALS INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$123,866.01
+BLACK WOLF MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$155,222.75
 BLAIR HOUSE LLC	BLM - Permit Fees	Oil & Gas	$1,950.00
 BLAIR HOUSE LLC	ONRR/BLM - Bonus	Oil & Gas	$125,692.00
 BLAIR HOUSE LLC	ONRR/BLM - Rents	Oil & Gas	$6,489.00
-BLEDSOE COAL                                         	ONRR - Royalties	Coal	$1,499,102.72
-BLEDSOE COAL                                         	ONRR/BLM - Rents	Coal	$8,592.00
-BLEDSOE COAL                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$7,281.58
+BLEDSOE COAL	ONRR - Royalties	Coal	$1,499,102.72
+BLEDSOE COAL	ONRR/BLM - Rents	Coal	$8,592.00
+BLEDSOE COAL	OSMRE - AML Fees including Audits and Late Charges	Coal	$7,281.58
 BLUE MOUNTAIN ENERGY INC	BLM - Permit Fees	Coal	$491.81
 BLUE MOUNTAIN ENERGY INC	ONRR - Royalties	Coal	$1,197,051.16
 BLUE MOUNTAIN ENERGY INC	ONRR/BLM - Bonus	Coal	$1,278,000.00
 BLUE MOUNTAIN ENERGY INC	ONRR/BLM - Rents	Coal	$9,465.00
-BLUE MOUNTAIN ENERGY INC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$230,340.12
+BLUE MOUNTAIN ENERGY INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$230,340.12
 BLUE TIP ENERGY LLC	BLM - Permit Fees	Oil & Gas	$13,085.00
 BLUE TIP ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$31,790.96
 BLUE TIP ENERGY LLC	ONRR - Royalties	Gas	$92,702.04
 BLUE TIP ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$14,582.00
-BLUESTONE COAL CORP                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$151,703.02
+BLUESTONE COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$151,703.02
 BLUEWATER WIND DELAWARE LLC	ONRR/BLM - Bonus	Wind	$24,107.50
 BLUEWATER WIND DELAWARE LLC	ONRR/BLM - Rents	Wind	$578,580.00
 BML INC	ONRR - Other Revenues	Oil & Gas	$238.31
@@ -318,8 +318,8 @@ BML INC	ONRR - Royalties	Oil	$942,155.07
 BNI COAL LTD	BLM - Permit Fees	Coal	$320.00
 BNI COAL LTD	ONRR - Royalties	Coal	$360,930.22
 BNI COAL LTD	ONRR/BLM - Rents	Coal	$8,886.00
-BNI COAL LTD                                                	OSMRE - AML Fees including Audits and Late Charges 	Coal	$327,242.32
-BOIS D ARC EXPLORATION LLC	ONRR - Civil Penalties (ONRR)	N/A	$20,000.00
+BNI COAL LTD	OSMRE - AML Fees including Audits and Late Charges	Coal	$327,242.32
+BOIS D ARC EXPLORATION LLC	ONRR - Civil Penalties	N/A	$20,000.00
 BOIS D ARC EXPLORATION LLC	ONRR - Inspection Fees	Oil & Gas	$77,300.00
 BOIS D ARC EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$210,270.00
 BONANZA CREEK ENERGY OPERATING CO LLC	ONRR - Other Revenues	Oil & Gas	$12,748.99
@@ -338,11 +338,11 @@ BOWIE RESOURCES LLC	BLM - Permit Fees	Coal	$520.00
 BOWIE RESOURCES LLC	BLM - Permit Fees	Oil & Gas	$85.00
 BOWIE RESOURCES LLC	ONRR - Other Revenues	Coal	$12,342.92
 BOWIE RESOURCES LLC	ONRR - Royalties	Coal	$31,416,536.58
-BOWIE RESOURCES LLC	ONRR/BLM - Bonus	Coal	($118.65)
-BOWIE RESOURCES LLC	ONRR/BLM - Rents	Coal	($68,896.99)
-BOWIE RESOURCES LLC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,467,086.25
+BOWIE RESOURCES LLC	ONRR/BLM - Bonus	Coal	-$118.65
+BOWIE RESOURCES LLC	ONRR/BLM - Rents	Coal	-$68,896.99
+BOWIE RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,467,086.25
 BP AMERICA INC	BLM - Permit Fees	Oil & Gas	$130,935.00
-BP AMERICA INC	ONRR - Civil Penalties (ONRR)	N/A	$60,000.00
+BP AMERICA INC	ONRR - Civil Penalties	N/A	$60,000.00
 BP AMERICA INC	ONRR - Inspection Fees	Oil & Gas	$1,944,000.00
 BP AMERICA INC	ONRR - Other Revenues	N/A	$214.00
 BP AMERICA INC	ONRR - Other Revenues	Oil & Gas	$3,004,112.56
@@ -361,8 +361,8 @@ BREITBURN ENERGY PARTNERS LP	ONRR - Other Revenues	Oil & Gas	$20,762.88
 BREITBURN ENERGY PARTNERS LP	ONRR - Royalties	Gas	$4,593,520.20
 BREITBURN ENERGY PARTNERS LP	ONRR - Royalties	Oil	$8,393,611.80
 BREITBURN ENERGY PARTNERS LP	ONRR/BLM - Rents	Oil & Gas	$15,434.75
-BRIDGER COAL CO                                             	BLM - Permit Fees	Coal	$320.00
-BRIDGER COAL CO                                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$858,803.63
+BRIDGER COAL CO	BLM - Permit Fees	Coal	$320.00
+BRIDGER COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$858,803.63
 BRONCO CREEK EXPLORATION INC	BLM - Permit Fees	Locatable Minerals	$399,414.00
 BROWER OIL AND GAS CO INC	ONRR - Other Revenues	Oil & Gas	$376.03
 BROWER OIL AND GAS CO INC	ONRR - Royalties	Oil	$232,391.08
@@ -371,7 +371,7 @@ BTA OIL PRODUCERS LLC	ONRR - Other Revenues	Oil & Gas	$2,674.23
 BTA OIL PRODUCERS LLC	ONRR - Royalties	Gas	$208,381.10
 BTA OIL PRODUCERS LLC	ONRR - Royalties	Oil	$675,361.31
 BTA OIL PRODUCERS LLC	ONRR/BLM - Rents	Oil & Gas	$16,805.00
-BUCKINGHAM COAL CO                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$179,969.63
+BUCKINGHAM COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$179,969.63
 BULLOCK CORP	BLM - Permit Fees	Oil & Gas	$600.00
 BULLOCK CORP	ONRR/BLM - Bonus	Oil & Gas	$399,245.00
 BULLOCK CORP	ONRR/BLM - Rents	Oil & Gas	$81,563.00
@@ -399,7 +399,7 @@ CAERUS OIL AND GAS LLC	ONRR - Royalties	Oil	$43,747.31
 CAERUS OIL AND GAS LLC	ONRR - Royalties	Other Commodities	$1.20
 CAERUS OIL AND GAS LLC	ONRR/BLM - Rents	Oil & Gas	$7,154.00
 CALLON PETROLEUM CO	ONRR - Inspection Fees	Oil & Gas	$34,000.00
-CALLON PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	($1,238.16)
+CALLON PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	-$1,238.16
 CALLON PETROLEUM CO	ONRR - Royalties	Gas	$979,549.26
 CALLON PETROLEUM CO	ONRR - Royalties	Oil	$126,577.70
 CALLON PETROLEUM CO	ONRR/BLM - Rents	Oil & Gas	$235,295.50
@@ -414,8 +414,8 @@ CALYPSO EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$39,737.00
 CALYX ENERGY LLC	BLM - Permit Fees	Oil & Gas	$25,000.00
 CALYX ENERGY LLC	ONRR/BLM - Bonus	Oil & Gas	$213,980.00
 CALYX ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$7,635.00
-CAM MINING LLC                                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$142,069.68
-CAMBRIAN COAL CORP                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$196,214.87
+CAM MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$142,069.68
+CAMBRIAN COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$196,214.87
 CAMECO RESOURCES	BLM - Permit Fees	Locatable Minerals	$532,644.00
 CANO PETROLEUM OF NEW MEXICO INC	ONRR - Other Revenues	Oil & Gas	$974.22
 CANO PETROLEUM OF NEW MEXICO INC	ONRR - Royalties	Gas	$13,100.98
@@ -433,12 +433,12 @@ CASTLETON COMMODITIES INTERNATIONAL LLC	ONRR - Other Revenues	Oil & Gas	$22,072.
 CASTLETON COMMODITIES INTERNATIONAL LLC	ONRR - Royalties	Gas	$1,869,187.01
 CASTLETON COMMODITIES INTERNATIONAL LLC	ONRR - Royalties	Oil	$662,737.65
 CASTLETON COMMODITIES INTERNATIONAL LLC	ONRR/BLM - Rents	Oil & Gas	$61,517.00
-CATENARY COAL CO LLC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$336,611.64
+CATENARY COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$336,611.64
 CBM GAS CO LLC	ONRR - Other Revenues	Oil & Gas	$231.78
 CBM GAS CO LLC	ONRR - Royalties	Gas	$234,790.74
 CEMEX	BLM - Permit Fees	Locatable Minerals	$20,720.00
 CEMEX	BLM - Permit Fees	Mineral Materials	$355,382.42
-CENTRAL APPALACHIA MINING LLC                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$119,017.09
+CENTRAL APPALACHIA MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$119,017.09
 CHACO ENERGY CO	BLM - Permit Fees	Oil & Gas	$1,620.00
 CHACO ENERGY CO	ONRR - Other Revenues	Oil & Gas	$664.47
 CHACO ENERGY CO	ONRR - Royalties	Gas	$124,018.34
@@ -460,7 +460,7 @@ CHEMILY MANAGEMENT CO	ONRR - Other Revenues	Oil & Gas	$509.34
 CHEMILY MANAGEMENT CO	ONRR - Royalties	Gas	$51,900.48
 CHEMILY MANAGEMENT CO	ONRR - Royalties	Oil	$416,563.84
 CHESAPEAKE EXPLORATION LLC	BLM - Permit Fees	Oil & Gas	$231,577.00
-CHESAPEAKE EXPLORATION LLC	ONRR - Civil Penalties (ONRR)	N/A	$765,000.00
+CHESAPEAKE EXPLORATION LLC	ONRR - Civil Penalties	N/A	$765,000.00
 CHESAPEAKE EXPLORATION LLC	ONRR - Other Revenues	N/A	$1,078.00
 CHESAPEAKE EXPLORATION LLC	ONRR - Other Revenues	Oil & Gas	$15,981.88
 CHESAPEAKE EXPLORATION LLC	ONRR - Royalties	Gas	$9,223,454.84
@@ -469,7 +469,7 @@ CHESAPEAKE EXPLORATION LLC	ONRR/BLM - Bonus	Oil & Gas	$646,120.00
 CHESAPEAKE EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$1,166,915.50
 CHEVRON CORP	BLM - Permit Fees	Locatable Minerals	$45,168.00
 CHEVRON CORP	BLM - Permit Fees	Oil & Gas	$173,710.00
-CHEVRON CORP	ONRR - Civil Penalties (ONRR)	N/A	$40,000.00
+CHEVRON CORP	ONRR - Civil Penalties	N/A	$40,000.00
 CHEVRON CORP	ONRR - Inspection Fees	Oil & Gas	$7,394,900.00
 CHEVRON CORP	ONRR - Other Revenues	Coal	$339.19
 CHEVRON CORP	ONRR - Other Revenues	N/A	$1,459.41
@@ -482,7 +482,7 @@ CHEVRON CORP	ONRR/BLM - Bonus	Oil & Gas	$101,636,143.00
 CHEVRON CORP	ONRR/BLM - Rents	Coal	$23,598.00
 CHEVRON CORP	ONRR/BLM - Rents	Oil & Gas	$19,125,162.22
 CHEVRON CORP	ONRR/BLM - Rents	Oil Shale	$304.00
-CHEVRON CORP	OSMRE - Civil Penalties including Late Charges (OSMRE)	N/A	$13,680.00
+CHEVRON CORP	OSMRE - Civil Penalties including Late Charges	N/A	$13,680.00
 CHISOS LTD	ONRR - Other Revenues	Oil & Gas	$3,527.77
 CHISOS LTD	ONRR - Royalties	Gas	$57,405.87
 CHISOS LTD	ONRR - Royalties	Oil	$90,698.92
@@ -491,7 +491,7 @@ CHUZA OIL CO	ONRR - Other Revenues	Oil & Gas	$382.45
 CHUZA OIL CO	ONRR - Royalties	Oil	$99,984.01
 CHUZA OIL CO	ONRR/BLM - Rents	Oil & Gas	$516.00
 CIMAREX ENERGY INC	BLM - Permit Fees	Oil & Gas	$1,075,805.00
-CIMAREX ENERGY INC	ONRR - Civil Penalties (ONRR)	N/A	$327,450.00
+CIMAREX ENERGY INC	ONRR - Civil Penalties	N/A	$327,450.00
 CIMAREX ENERGY INC	ONRR - Inspection Fees	Oil & Gas	$134,800.00
 CIMAREX ENERGY INC	ONRR - Other Revenues	N/A	$42,739.95
 CIMAREX ENERGY INC	ONRR - Other Revenues	Oil & Gas	$3,669,039.13
@@ -499,7 +499,7 @@ CIMAREX ENERGY INC	ONRR - Royalties	Gas	$12,570,333.21
 CIMAREX ENERGY INC	ONRR - Royalties	Oil	$54,449,822.88
 CIMAREX ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$45,254.00
 CIMARRON EXPLORATION CO	ONRR - Royalties	Oil	$113,550.03
-CIMARRON EXPLORATION CO	ONRR/BLM - Rents	Oil & Gas	($1,280.00)
+CIMARRON EXPLORATION CO	ONRR/BLM - Rents	Oil & Gas	-$1,280.00
 CIRIS ENERGY INC	ONRR - Other Revenues	Oil & Gas	$295.51
 CIRIS ENERGY INC	ONRR - Royalties	Gas	$146,177.92
 CIRQUE RESOURCES LP	BLM - Permit Fees	Oil & Gas	$2,040.00
@@ -510,27 +510,27 @@ CITATION OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	$96,301.17
 CITATION OIL & GAS CORP	ONRR - Royalties	Gas	$702,088.78
 CITATION OIL & GAS CORP	ONRR - Royalties	Oil	$12,998,990.91
 CITATION OIL & GAS CORP	ONRR/BLM - Rents	Oil & Gas	$25,844.25
-CITY OF PHILADELPHIA                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$110,481.42
+CITY OF PHILADELPHIA	OSMRE - AML Fees including Audits and Late Charges	Coal	$110,481.42
 CLAYTON WILLIAMS ENERGY INC	BLM - Permit Fees	Oil & Gas	$150.00
 CLAYTON WILLIAMS ENERGY INC	ONRR - Other Revenues	Oil & Gas	$965.48
 CLAYTON WILLIAMS ENERGY INC	ONRR - Royalties	Gas	$175,883.55
 CLAYTON WILLIAMS ENERGY INC	ONRR - Royalties	Oil	$646,331.74
 CLAYTON WILLIAMS ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$9,560.00
-CLECO POWER LLC                                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$272,268.40
-CLIFFS LOGAN COUNTY COAL LLC                                	OSMRE - AML Fees including Audits and Late Charges 	Coal	$349,521.66
-CLINTWOOD ELKHORN MINING CO                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$234,130.96
+CLECO POWER LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$272,268.40
+CLIFFS LOGAN COUNTY COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$349,521.66
+CLINTWOOD ELKHORN MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$234,130.96
 CLOUD PEAK ENERGY RESOURCES LLC	BLM - Permit Fees	Coal	$69,247.60
 CLOUD PEAK ENERGY RESOURCES LLC	BLM - Permit Fees	Mineral Materials	$153,118.68
 CLOUD PEAK ENERGY RESOURCES LLC	ONRR - Other Revenues	N/A	$214.00
 CLOUD PEAK ENERGY RESOURCES LLC	ONRR - Royalties	Coal	$120,674,727.46
 CLOUD PEAK ENERGY RESOURCES LLC	ONRR/BLM - Bonus	Coal	$79,026,630.40
 CLOUD PEAK ENERGY RESOURCES LLC	ONRR/BLM - Rents	Coal	$100,997.00
-CLOUD PEAK ENERGY RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$24,335,852.68
+CLOUD PEAK ENERGY RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$24,335,852.68
 CML EXPLORATION LLC	BLM - Permit Fees	Oil & Gas	$85.00
 CML EXPLORATION LLC	ONRR - Other Revenues	Oil & Gas	$103.19
 CML EXPLORATION LLC	ONRR - Royalties	Gas	$40,737.50
 CML EXPLORATION LLC	ONRR - Royalties	Oil	$86,203.64
-COAL RIVER MINING LLC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$279,592.99
+COAL RIVER MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$279,592.99
 COBALT INTERNATIONAL ENERGY LP	ONRR - Inspection Fees	Oil & Gas	$335,500.00
 COBALT INTERNATIONAL ENERGY LP	ONRR/BLM - Bonus	Oil & Gas	$54,536,650.00
 COBALT INTERNATIONAL ENERGY LP	ONRR/BLM - Rents	Oil & Gas	$9,848,674.50
@@ -541,7 +541,7 @@ COEUR ALASKA INC	BLM - Permit Fees	Locatable Minerals	$108,942.00
 COEUR MINING INC	BLM - Permit Fees	Locatable Minerals	$126,700.00
 COEUR ROCHESTER INC	BLM - Permit Fees	Locatable Minerals	$105,934.00
 COLEMAN OIL & GAS INC	BLM - Permit Fees	Oil & Gas	$1,070.00
-COLEMAN OIL & GAS INC	ONRR - Other Revenues	Oil & Gas	($21,167.54)
+COLEMAN OIL & GAS INC	ONRR - Other Revenues	Oil & Gas	-$21,167.54
 COLEMAN OIL & GAS INC	ONRR - Royalties	Gas	$709,898.81
 COLEMAN OIL & GAS INC	ONRR - Royalties	Oil	$75,223.67
 COLEMAN OIL & GAS INC	ONRR/BLM - Bonus	Oil & Gas	$3,286,969.00
@@ -552,12 +552,12 @@ COLUMBUS GOLD (US) CORP	BLM - Permit Fees	Locatable Minerals	$114,446.00
 COLUMBUS SM LLC	BLM - Permit Fees	Locatable Minerals	$139,440.00
 CONCHO RESOURCES INC	BLM - Permit Fees	Oil & Gas	$887,802.00
 CONCHO RESOURCES INC	ONRR - Other Revenues	N/A	$436.00
-CONCHO RESOURCES INC	ONRR - Other Revenues	Oil & Gas	($99,414.61)
-CONCHO RESOURCES INC	ONRR - Other Revenues	Sodium	($9,236.31)
+CONCHO RESOURCES INC	ONRR - Other Revenues	Oil & Gas	-$99,414.61
+CONCHO RESOURCES INC	ONRR - Other Revenues	Sodium	-$9,236.31
 CONCHO RESOURCES INC	ONRR - Royalties	Gas	$19,028,587.01
 CONCHO RESOURCES INC	ONRR - Royalties	Oil	$70,407,106.28
 CONCHO RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$102,367.49
-CONCHO RESOURCES INC	ONRR/BLM - Rents	Sodium	($2,200.00)
+CONCHO RESOURCES INC	ONRR/BLM - Rents	Sodium	-$2,200.00
 CONOCOPHILLIPS	BLM - Permit Fees	Oil & Gas	$659,300.00
 CONOCOPHILLIPS	ONRR - Inspection Fees	Oil & Gas	$322,000.00
 CONOCOPHILLIPS	ONRR - Other Revenues	N/A	$4,007.24
@@ -572,11 +572,11 @@ CONSOL MINING CO LLC	ONRR - Other Revenues	Oil & Gas	$15,523.52
 CONSOL MINING CO LLC	ONRR - Royalties	Coal	$130,476.34
 CONSOL MINING CO LLC	ONRR/BLM - Bonus	Coal	$40,320.00
 CONSOL MINING CO LLC	ONRR/BLM - Rents	Coal	$3,000.00
-CONSOL OF KENTUCKY INC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$550,626.25
-CONSOL PENN COAL CO LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$2,424,259.11
-CONSOLIDATION COAL CO                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$2,812,102.34
+CONSOL OF KENTUCKY INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$550,626.25
+CONSOL PENN COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$2,424,259.11
+CONSOLIDATION COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$2,812,102.34
 CONSTRUCTORS INC	BLM - Permit Fees	Mineral Materials	$629,798.26
-CONTANGO OPERATORS INC	ONRR - Civil Penalties (ONRR)	N/A	$20,000.00
+CONTANGO OPERATORS INC	ONRR - Civil Penalties	N/A	$20,000.00
 CONTANGO OPERATORS INC	ONRR - Inspection Fees	Oil & Gas	$150,500.00
 CONTANGO OPERATORS INC	ONRR - Other Revenues	Oil & Gas	$568,308.60
 CONTANGO OPERATORS INC	ONRR - Royalties	Gas	$17,060,265.28
@@ -586,7 +586,7 @@ CONTANGO OPERATORS INC	ONRR/BLM - Rents	Oil & Gas	$320,759.00
 CONTEX ENERGY CO	BLM - Permit Fees	Oil & Gas	$3,555.00
 CONTEX ENERGY CO	ONRR/BLM - Bonus	Oil & Gas	$58,376.00
 CONTEX ENERGY CO	ONRR/BLM - Rents	Oil & Gas	$75,754.50
-CONTINENTAL COAL INC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$109,197.00
+CONTINENTAL COAL INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$109,197.00
 CONTINENTAL RESOURCES INC	BLM - Permit Fees	Oil & Gas	$303,460.00
 CONTINENTAL RESOURCES INC	ONRR - Other Revenues	N/A	$1,934.00
 CONTINENTAL RESOURCES INC	ONRR - Other Revenues	Oil & Gas	$27,857.78
@@ -601,7 +601,7 @@ COUNTRYMARK REFINING AND LOGISTICS LLC	BLM - Permit Fees	Oil & Gas	$340.00
 COUNTRYMARK REFINING AND LOGISTICS LLC	ONRR - Other Revenues	Oil & Gas	$13,037.54
 COUNTRYMARK REFINING AND LOGISTICS LLC	ONRR - Royalties	Oil	$349,756.78
 COWBOY EXPLORATION	BLM - Permit Fees	Locatable Minerals	$281,820.00
-COYOTE COAL CO LLC                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$307,251.25
+COYOTE COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$307,251.25
 CRAWLEY PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$6,500.00
 CRAWLEY PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$2,847.16
 CRAWLEY PETROLEUM CORP	ONRR - Royalties	Gas	$55,617.26
@@ -628,25 +628,25 @@ CROWN OIL PARTNERS	ONRR/BLM - Bonus	Oil & Gas	$632,800.00
 CROWN OIL PARTNERS	ONRR/BLM - Rents	Oil & Gas	$5,558.00
 CS MINING LLC	BLM - Permit Fees	Locatable Minerals	$437,350.00
 CYCLONE URANIUM CORP	BLM - Permit Fees	Locatable Minerals	$139,440.00
-CZAR COAL CORP                                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$283,770.70
+CZAR COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$283,770.70
 D. J. SIMMONS INC	BLM - Permit Fees	Oil & Gas	$895.00
-D. J. SIMMONS INC	ONRR - Other Revenues	Oil & Gas	($21,930.10)
+D. J. SIMMONS INC	ONRR - Other Revenues	Oil & Gas	-$21,930.10
 D. J. SIMMONS INC	ONRR - Royalties	Gas	$728,654.17
 D. J. SIMMONS INC	ONRR - Royalties	Oil	$47,837.81
 D. J. SIMMONS INC	ONRR/BLM - Rents	Oil & Gas	$26,073.00
-DANA MINING CO OF PENNSYLVANIA                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$268,988.68
+DANA MINING CO OF PENNSYLVANIA	OSMRE - AML Fees including Audits and Late Charges	Coal	$268,988.68
 DARRAH	BLM - Permit Fees	Oil & Gas	$959.00
 DARRAH	ONRR - Other Revenues	Oil & Gas	$212.00
 DARRAH	ONRR - Royalties	Oil	$9,718.94
 DARRAH	ONRR/BLM - Bonus	Oil & Gas	$89,290.00
 DARRAH	ONRR/BLM - Rents	Oil & Gas	$8,181.50
-DAVIS PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	($2,637.59)
+DAVIS PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	-$2,637.59
 DAVIS PETROLEUM CORP	ONRR - Royalties	Gas	$159,347.97
 DAVIS PETROLEUM CORP	ONRR - Royalties	Oil	$2,824,694.84
 DAVIS PETROLEUM CORP	ONRR/BLM - Rents	Oil & Gas	$229,902.00
 DCOR LLC	ONRR - Inspection Fees	Oil & Gas	$567,000.00
 DCOR LLC	ONRR - Other Revenues	N/A	$1,003.68
-DCOR LLC	ONRR - Other Revenues	Oil & Gas	($853,320.57)
+DCOR LLC	ONRR - Other Revenues	Oil & Gas	-$853,320.57
 DCOR LLC	ONRR - Royalties	Gas	$458,483.41
 DCOR LLC	ONRR - Royalties	Oil	$22,011,918.41
 DCOR LLC	ONRR/BLM - Rents	Oil & Gas	$615.00
@@ -657,7 +657,7 @@ DECKER OPERATING CO LLC	ONRR - Other Revenues	Oil & Gas	$26,708.89
 DECKER OPERATING CO LLC	ONRR - Royalties	Gas	$12,222.92
 DECKER OPERATING CO LLC	ONRR/BLM - Rents	Oil & Gas	$87,160.00
 DECONCINI MCDONALD YETWIN & LACY P C	BLM - Permit Fees	Locatable Minerals	$399,338.00
-DEEP GULF ENERGY LP	ONRR - Other Revenues	Oil & Gas	($11,738.95)
+DEEP GULF ENERGY LP	ONRR - Other Revenues	Oil & Gas	-$11,738.95
 DEEP GULF ENERGY LP	ONRR - Royalties	Gas	$508,871.11
 DEEP GULF ENERGY LP	ONRR - Royalties	Oil	$12,340,398.85
 DEEP GULF ENERGY LP	ONRR/BLM - Rents	Oil & Gas	$251,430.00
@@ -674,7 +674,7 @@ DENBURY ONSHORE LLC	ONRR - Royalties	Gas	$1,549,745.66
 DENBURY ONSHORE LLC	ONRR - Royalties	Oil	$30,219,217.10
 DENBURY ONSHORE LLC	ONRR/BLM - Bonus	Oil & Gas	$178,500.00
 DENBURY ONSHORE LLC	ONRR/BLM - Rents	Oil & Gas	$73,445.50
-DEVELOPMENT PERMITS LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$113,088.89
+DEVELOPMENT PERMITS LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$113,088.89
 DEVON ENERGY CORP	BLM - Permit Fees	Mineral Materials	$2,107.90
 DEVON ENERGY CORP	BLM - Permit Fees	Oil & Gas	$1,603,654.00
 DEVON ENERGY CORP	ONRR - Other Revenues	N/A	$2,568.00
@@ -705,7 +705,7 @@ DROPTINE ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$128,271.00
 DRUMMOND CO INC	ONRR - Other Revenues	N/A	$214.00
 DRUMMOND CO INC	ONRR - Royalties	Coal	$667,346.92
 DRUMMOND CO INC	ONRR/BLM - Rents	Coal	$4,830.00
-DRUMMOND CO INC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$161,737.89
+DRUMMOND CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$161,737.89
 DUGAN PRODUCTION CORP	BLM - Permit Fees	Oil & Gas	$6,520.00
 DUGAN PRODUCTION CORP	ONRR - Other Revenues	N/A	$642.00
 DUGAN PRODUCTION CORP	ONRR - Other Revenues	Oil & Gas	$19,858.33
@@ -713,7 +713,7 @@ DUGAN PRODUCTION CORP	ONRR - Royalties	Gas	$1,910,551.75
 DUGAN PRODUCTION CORP	ONRR - Royalties	Oil	$650,684.12
 DUGAN PRODUCTION CORP	ONRR/BLM - Rents	Oil & Gas	$6,564.00
 DUKE CITY REDI-MIX	BLM - Permit Fees	Mineral Materials	$118,983.23
-DYNAMIC ENERGY INC                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$203,691.30
+DYNAMIC ENERGY INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$203,691.30
 E&B NATURAL RESOURCES MANAGEMENT CORP	BLM - Permit Fees	Oil & Gas	$52,000.00
 E&B NATURAL RESOURCES MANAGEMENT CORP	ONRR - Other Revenues	Oil & Gas	$11,834.31
 E&B NATURAL RESOURCES MANAGEMENT CORP	ONRR - Royalties	Gas	$214,691.34
@@ -722,9 +722,9 @@ E&B NATURAL RESOURCES MANAGEMENT CORP	ONRR/BLM - Rents	Oil & Gas	$2,932.50
 EAGLE LAND SERVICES INC	BLM - Permit Fees	Oil & Gas	$1,500.00
 EAGLE LAND SERVICES INC	ONRR/BLM - Bonus	Oil & Gas	$111,386.00
 EAGLE LAND SERVICES INC	ONRR/BLM - Rents	Oil & Gas	$11,644.50
-EAGLE MINING LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$164,791.28
-EAGLE RIVER COAL LLC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$164,153.64
-EASTERN ASSOC COAL LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$544,423.92
+EAGLE MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$164,791.28
+EAGLE RIVER COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$164,153.64
+EASTERN ASSOC COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$544,423.92
 EC OFFSHORE PROPERTIES INC	ONRR - Inspection Fees	Oil & Gas	$48,500.00
 EC OFFSHORE PROPERTIES INC	ONRR - Other Revenues	N/A	$171.71
 EC OFFSHORE PROPERTIES INC	ONRR - Other Revenues	Oil & Gas	$3,288.04
@@ -746,7 +746,7 @@ EGL RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$150.00
 EINAR & SONJA PRESTANGEN MINER	BLM - Permit Fees	Oil & Gas	$150.00
 EINAR & SONJA PRESTANGEN MINER	ONRR/BLM - Bonus	Oil & Gas	$500,000.00
 EINAR & SONJA PRESTANGEN MINER	ONRR/BLM - Rents	Oil & Gas	$60.00
-ELAND ENERGY INC	ONRR - Other Revenues	Oil & Gas	($5,128.02)
+ELAND ENERGY INC	ONRR - Other Revenues	Oil & Gas	-$5,128.02
 ELAND ENERGY INC	ONRR - Royalties	Gas	$53,500.59
 ELAND ENERGY INC	ONRR - Royalties	Oil	$658,665.58
 ELAND ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$3,526.50
@@ -776,7 +776,7 @@ ENDURING RESOURCES LLC	ONRR - Royalties	Gas	$122,123.32
 ENDURING RESOURCES LLC	ONRR - Royalties	Oil	$63,951.25
 ENDURING RESOURCES LLC	ONRR/BLM - Rents	Oil & Gas	$21,195.00
 ENDURO OPERATING LLC	BLM - Permit Fees	Oil & Gas	$34,965.00
-ENDURO OPERATING LLC	ONRR - Other Revenues	Oil & Gas	($54,806.38)
+ENDURO OPERATING LLC	ONRR - Other Revenues	Oil & Gas	-$54,806.38
 ENDURO OPERATING LLC	ONRR - Royalties	Gas	$76,806.47
 ENDURO OPERATING LLC	ONRR - Royalties	Oil	$3,404,981.36
 ENDURO OPERATING LLC	ONRR/BLM - Rents	Oil & Gas	$10,044.00
@@ -798,7 +798,7 @@ ENERGY TRANSFER EQUITY	ONRR/BLM - Rents	Oil & Gas	$4,290.00
 ENERGY WEST CORP	BLM - Permit Fees	Oil & Gas	$1,650.00
 ENERGY WEST CORP	ONRR/BLM - Bonus	Oil & Gas	$432,810.00
 ENERGY WEST CORP	ONRR/BLM - Rents	Oil & Gas	$129,362.50
-ENERGY XXI LLC	ONRR - Civil Penalties (ONRR)	N/A	$40,000.00
+ENERGY XXI LLC	ONRR - Civil Penalties	N/A	$40,000.00
 ENERGY XXI LLC	ONRR - Inspection Fees	Oil & Gas	$684,700.00
 ENERGY XXI LLC	ONRR - Other Revenues	Oil & Gas	$1,984,809.31
 ENERGY XXI LLC	ONRR - Royalties	Gas	$19,632,273.44
@@ -807,7 +807,7 @@ ENERGY XXI LLC	ONRR/BLM - Bonus	Oil & Gas	$302,242.00
 ENERGY XXI LLC	ONRR/BLM - Rents	Oil & Gas	$195,740.00
 ENERPLUS RESOURCES CORP	BLM - Permit Fees	Oil & Gas	$117,000.00
 ENERPLUS RESOURCES CORP	ONRR - Other Revenues	N/A	$1,070.00
-ENERPLUS RESOURCES CORP	ONRR - Other Revenues	Oil & Gas	($197.74)
+ENERPLUS RESOURCES CORP	ONRR - Other Revenues	Oil & Gas	-$197.74
 ENERPLUS RESOURCES CORP	ONRR - Royalties	Gas	$27,433.18
 ENERPLUS RESOURCES CORP	ONRR - Royalties	Oil	$193,407.29
 ENERPLUS RESOURCES CORP	ONRR/BLM - Rents	Oil & Gas	$10,063.50
@@ -820,7 +820,7 @@ ENERVEST LTD	ONRR - Royalties	Oil	$693,267.87
 ENERVEST LTD	ONRR/BLM - Rents	Oil & Gas	$15,198.50
 ENI USA INC	ONRR - Inspection Fees	Oil & Gas	$1,185,500.00
 ENI USA INC	ONRR - Other Revenues	N/A	$6,106.99
-ENI USA INC	ONRR - Other Revenues	Oil & Gas	($809,801.86)
+ENI USA INC	ONRR - Other Revenues	Oil & Gas	-$809,801.86
 ENI USA INC	ONRR - Royalties	Gas	$29,986,457.42
 ENI USA INC	ONRR - Royalties	Oil	$75,762,081.62
 ENI USA INC	ONRR/BLM - Bonus	Oil & Gas	$4,023,000.00
@@ -831,7 +831,7 @@ ENTEK GRB LLC	ONRR - Royalties	Gas	$5,690.73
 ENTEK GRB LLC	ONRR - Royalties	Oil	$1,458.56
 ENTEK GRB LLC	ONRR/BLM - Bonus	Oil & Gas	$229,232.00
 ENTEK GRB LLC	ONRR/BLM - Rents	Oil & Gas	$249,411.50
-ENTERPRISE MINING CO LLC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$113,462.65
+ENTERPRISE MINING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$113,462.65
 ENTERPRISE PRODUCTS PARTNERS LP	ONRR - Inspection Fees	Oil & Gas	$131,000.00
 ENTERPRISE PRODUCTS PARTNERS LP	ONRR - Other Revenues	N/A	$428.00
 ENTERPRISE PRODUCTS PARTNERS LP	ONRR - Other Revenues	Oil & Gas	$28,848.86
@@ -849,12 +849,12 @@ EOG RESOURCES INC	ONRR - Royalties	Other Commodities	$96,917.37
 EOG RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$500,154.50
 EP ENERGY E&P CO LP	ONRR - Inspection Fees	Oil & Gas	$81,500.00
 EP ENERGY E&P CO LP	ONRR - Other Revenues	N/A	$140.68
-EP ENERGY E&P CO LP	ONRR - Other Revenues	Oil & Gas	($40,288.18)
+EP ENERGY E&P CO LP	ONRR - Other Revenues	Oil & Gas	-$40,288.18
 EP ENERGY E&P CO LP	ONRR - Royalties	Gas	$900,399.10
 EP ENERGY E&P CO LP	ONRR - Royalties	Oil	$196,991.33
 EP ENERGY E&P CO LP	ONRR/BLM - Rents	Oil & Gas	$220,398.00
 EP MINERALS LLC	BLM - Permit Fees	Locatable Minerals	$129,620.00
-EPL OIL & GAS INC	ONRR - Civil Penalties (ONRR)	N/A	$33,000.00
+EPL OIL & GAS INC	ONRR - Civil Penalties	N/A	$33,000.00
 EPL OIL & GAS INC	ONRR - Inspection Fees	Oil & Gas	$588,400.00
 EPL OIL & GAS INC	ONRR - Other Revenues	Oil & Gas	$2,099,041.01
 EPL OIL & GAS INC	ONRR - Royalties	Gas	$10,319,284.19
@@ -881,7 +881,7 @@ FAIR OIL LTD	ONRR/BLM - Rents	Oil & Gas	$320.00
 FAIRWAYS OFFSHORE EXPLORATION INC	BLM - Permit Fees	Oil & Gas	$600.00
 FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Inspection Fees	Oil & Gas	$85,000.00
 FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Other Revenues	N/A	$118.70
-FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Other Revenues	Oil & Gas	($29,205.80)
+FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Other Revenues	Oil & Gas	-$29,205.80
 FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Royalties	Gas	$67,614.03
 FAIRWAYS OFFSHORE EXPLORATION INC	ONRR - Royalties	Oil	$712,151.81
 FAIRWAYS OFFSHORE EXPLORATION INC	ONRR/BLM - Rents	Oil & Gas	$60.00
@@ -890,15 +890,15 @@ FARMER MINERALS LLC	ONRR/BLM - Bonus	Oil & Gas	$539.00
 FARMER MINERALS LLC	ONRR/BLM - Rents	Oil & Gas	$100,634.00
 FARRELL-COOPER MINING CO	ONRR - Royalties	Coal	$690,605.18
 FARRELL-COOPER MINING CO	ONRR/BLM - Rents	Coal	$16,926.00
-FARRELL-COOPER MINING CO	OSMRE - AML Fees including Audits and Late Charges 	Coal	$119,203.05
+FARRELL-COOPER MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$119,203.05
 FASKEN LAND & MINERALS LTD	BLM - Permit Fees	Oil & Gas	$19,755.00
-FASKEN LAND & MINERALS LTD	ONRR - Other Revenues	Oil & Gas	($3,628.05)
+FASKEN LAND & MINERALS LTD	ONRR - Other Revenues	Oil & Gas	-$3,628.05
 FASKEN LAND & MINERALS LTD	ONRR - Royalties	Gas	$577,350.96
 FASKEN LAND & MINERALS LTD	ONRR - Royalties	Oil	$592,089.78
 FASKEN LAND & MINERALS LTD	ONRR/BLM - Rents	Oil & Gas	$348,934.00
-FCDC COAL INC                                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$229,439.80
+FCDC COAL INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$229,439.80
 FIELDWOOD ENERGY LLC	BLM - Permit Fees	Oil & Gas	$450,253.00
-FIELDWOOD ENERGY LLC	ONRR - Civil Penalties (ONRR)	N/A	$695,000.00
+FIELDWOOD ENERGY LLC	ONRR - Civil Penalties	N/A	$695,000.00
 FIELDWOOD ENERGY LLC	ONRR - Inspection Fees	Oil & Gas	$7,572,400.00
 FIELDWOOD ENERGY LLC	ONRR - Other Revenues	N/A	$1,212.97
 FIELDWOOD ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$506,173.77
@@ -913,7 +913,7 @@ FINLEY RESOURCES INC	ONRR - Royalties	Gas	$501,500.50
 FINLEY RESOURCES INC	ONRR - Royalties	Oil	$1,070,844.25
 FINLEY RESOURCES INC	ONRR/BLM - Bonus	Oil & Gas	$14,320.00
 FINLEY RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$52,726.50
-FIVE STAR MINING INC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$216,465.69
+FIVE STAR MINING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$216,465.69
 FLORIDA CANYON MINING INC	BLM - Permit Fees	Locatable Minerals	$127,390.00
 FMC CORP	ONRR - Other Revenues	Phosphate	$2,640.00
 FMC CORP	ONRR - Other Revenues	Sodium	$74,862.00
@@ -923,12 +923,12 @@ FOCUS EXPLORATION LLC	BLM - Permit Fees	Oil & Gas	$25,000.00
 FOCUS EXPLORATION LLC	ONRR - Other Revenues	N/A	$436.00
 FOCUS EXPLORATION LLC	ONRR - Other Revenues	Oil & Gas	$4,408.17
 FOCUS EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$148,320.00
-FOLA COAL CO LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$114,404.56
+FOLA COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$114,404.56
 FORELAND REFINING CORP	ONRR - Royalties	Oil	$1,362,431.60
 FOREST OIL CORP	BLM - Permit Fees	Oil & Gas	$235.00
 FOREST OIL CORP	ONRR - Inspection Fees	Oil & Gas	$126,100.00
 FOREST OIL CORP	ONRR - Other Revenues	N/A	$453.67
-FOREST OIL CORP	ONRR - Other Revenues	Oil & Gas	($5,146.34)
+FOREST OIL CORP	ONRR - Other Revenues	Oil & Gas	-$5,146.34
 FOREST OIL CORP	ONRR - Royalties	Gas	$1,172,626.47
 FOREST OIL CORP	ONRR - Royalties	Oil	$101,071.62
 FOREST OIL CORP	ONRR/BLM - Bonus	Oil & Gas	$6,468.00
@@ -949,15 +949,15 @@ FOUNDATION ENERGY MANAGEMENT	ONRR - Other Revenues	Oil & Gas	$60,705.67
 FOUNDATION ENERGY MANAGEMENT	ONRR - Royalties	Gas	$883,976.66
 FOUNDATION ENERGY MANAGEMENT	ONRR - Royalties	Oil	$284,609.41
 FOUNDATION ENERGY MANAGEMENT	ONRR/BLM - Rents	Oil & Gas	$67,601.00
-FRASURE CREEK MINING LLC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$133,934.36
+FRASURE CREEK MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$133,934.36
 FREEPOINT RESOURCES LLC	BLM - Permit Fees	Oil & Gas	$595.00
 FREEPOINT RESOURCES LLC	ONRR - Royalties	Gas	$1,475,984.82
 FREEPORT-MCMORAN O&G LLC	BLM - Permit Fees	Locatable Minerals	$2,128,606.00
 FREEPORT-MCMORAN O&G LLC	BLM - Permit Fees	Oil & Gas	$75,105.00
-FREEPORT-MCMORAN O&G LLC	ONRR - Civil Penalties (ONRR)	N/A	$84,750.00
+FREEPORT-MCMORAN O&G LLC	ONRR - Civil Penalties	N/A	$84,750.00
 FREEPORT-MCMORAN O&G LLC	ONRR - Inspection Fees	Oil & Gas	$2,128,285.38
 FREEPORT-MCMORAN O&G LLC	ONRR - Other Revenues	N/A	$830.49
-FREEPORT-MCMORAN O&G LLC	ONRR - Other Revenues	Oil & Gas	($276,568.16)
+FREEPORT-MCMORAN O&G LLC	ONRR - Other Revenues	Oil & Gas	-$276,568.16
 FREEPORT-MCMORAN O&G LLC	ONRR - Other Revenues	Sulfur	$11,186.00
 FREEPORT-MCMORAN O&G LLC	ONRR - Royalties	Gas	$22,361,179.66
 FREEPORT-MCMORAN O&G LLC	ONRR - Royalties	Oil	$290,582,348.61
@@ -965,30 +965,30 @@ FREEPORT-MCMORAN O&G LLC	ONRR - Royalties	Other Commodities	$2,658.90
 FREEPORT-MCMORAN O&G LLC	ONRR/BLM - Bonus	Oil & Gas	$83,880,250.00
 FREEPORT-MCMORAN O&G LLC	ONRR/BLM - Rents	Oil & Gas	$4,285,168.93
 FRONTEER DEVELOPMENT (USA) INC	BLM - Permit Fees	Locatable Minerals	$260,110.00
-FRONTIER FIELD SERVICES LLC	ONRR - Other Revenues	Oil & Gas	($0.02)
+FRONTIER FIELD SERVICES LLC	ONRR - Other Revenues	Oil & Gas	-$0.02
 FRONTIER FIELD SERVICES LLC	ONRR - Royalties	Gas	$3,687,232.84
 GAS VENTURES LLC	BLM - Permit Fees	Oil & Gas	$13,600.00
 GAS VENTURES LLC	ONRR - Other Revenues	Oil & Gas	$505.68
 GAS VENTURES LLC	ONRR - Royalties	Oil	$211,074.19
 GAS VENTURES LLC	ONRR/BLM - Rents	Oil & Gas	$12,986.00
 GASCO PRODUCTION CO	BLM - Permit Fees	Oil & Gas	$7,120.00
-GASCO PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	($21,241.39)
+GASCO PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	-$21,241.39
 GASCO PRODUCTION CO	ONRR - Royalties	Gas	$1,956,863.12
 GASCO PRODUCTION CO	ONRR - Royalties	Oil	$493,428.51
 GASCO PRODUCTION CO	ONRR/BLM - Rents	Oil & Gas	$46,692.00
 GCC ENERGY LLC	ONRR - Other Revenues	Coal	$148.36
 GCC ENERGY LLC	ONRR - Royalties	Coal	$2,471,095.71
 GCC ENERGY LLC	ONRR/BLM - Rents	Coal	$4,155.00
-GCC ENERGY LLC                                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$82,425.99
+GCC ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$82,425.99
 GCI-SWEATT CONSTRUCTION INC	BLM - Permit Fees	Mineral Materials	$121,985.00
 GENESIS CRUDE OIL LP	ONRR - Royalties	Oil	$462,349.69
 GENESIS GOLD CORP	BLM - Permit Fees	Locatable Minerals	$101,175.00
 GENESIS ST OPERATING LLC	BLM - Permit Fees	Oil & Gas	$39,000.00
-GENESIS ST OPERATING LLC	ONRR - Other Revenues	Oil & Gas	($1,561.88)
+GENESIS ST OPERATING LLC	ONRR - Other Revenues	Oil & Gas	-$1,561.88
 GENESIS ST OPERATING LLC	ONRR - Royalties	Gas	$16,822.66
 GENESIS ST OPERATING LLC	ONRR - Royalties	Oil	$27,740.00
 GENESIS ST OPERATING LLC	ONRR/BLM - Rents	Oil & Gas	$92,403.00
-GIBSON COUNTY COAL LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$449,407.40
+GIBSON COUNTY COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$449,407.40
 GILES THOMAS	ONRR/BLM - Bonus	Oil & Gas	$242,900.00
 GILES THOMAS	ONRR/BLM - Rents	Oil & Gas	$2,082.00
 GMT EXPLORATION CO LLC	BLM - Permit Fees	Oil & Gas	$6,835.00
@@ -1028,20 +1028,20 @@ GREAT WESTERN MINING CORP	BLM - Permit Fees	Locatable Minerals	$125,440.00
 GRIFFIN RESOURCES	ONRR - Royalties	Gas	$171.16
 GRIFFIN RESOURCES	ONRR - Royalties	Oil	$191,950.41
 GULFMARK ENERGY INC	ONRR - Royalties	Oil	$247,725.30
-GULFSANDS PETROLEUM USA INC	ONRR - Other Revenues	Oil & Gas	($118,131.06)
+GULFSANDS PETROLEUM USA INC	ONRR - Other Revenues	Oil & Gas	-$118,131.06
 GULFSANDS PETROLEUM USA INC	ONRR - Royalties	Gas	$263,383.94
 GULFSANDS PETROLEUM USA INC	ONRR - Royalties	Oil	$699,953.60
-H. L. BROWN OPERATING LLC	ONRR - Other Revenues	Oil & Gas	($3,476.53)
+H. L. BROWN OPERATING LLC	ONRR - Other Revenues	Oil & Gas	-$3,476.53
 H. L. BROWN OPERATING LLC	ONRR - Royalties	Gas	$315,002.70
 HALCON RESOURCES LLC	BLM - Permit Fees	Oil & Gas	$268,943.00
 HALCON RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$1,087.11
 HALCON RESOURCES LLC	ONRR - Royalties	Gas	$951.02
 HALCON RESOURCES LLC	ONRR - Royalties	Oil	$653,259.40
 HALCON RESOURCES LLC	ONRR/BLM - Rents	Oil & Gas	$15,090.00
-HALLADOR PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	($689.62)
+HALLADOR PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	-$689.62
 HALLADOR PETROLEUM CO	ONRR - Royalties	Gas	$267,742.93
 HALLADOR PETROLEUM CO	ONRR/BLM - Rents	Oil & Gas	$800.00
-HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR - Civil Penalties (ONRR)	N/A	$225,000.00
+HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR - Civil Penalties	N/A	$225,000.00
 HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR - Inspection Fees	Oil & Gas	$159,200.00
 HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR - Other Revenues	Oil & Gas	$30,540.12
 HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR - Royalties	Gas	$5,537,128.05
@@ -1051,14 +1051,14 @@ HALL-HOUSTON EXPLORATION PARTNERS LLC	ONRR/BLM - Rents	Oil & Gas	$111,130.00
 HANNA OIL & GAS CO	BLM - Permit Fees	Oil & Gas	$738.00
 HANNA OIL & GAS CO	ONRR - Other Revenues	Oil & Gas	$653.20
 HANNA OIL & GAS CO	ONRR - Royalties	Gas	$104,492.73
-HANNA OIL & GAS CO	ONRR/BLM - Rents	Oil & Gas	($57.00)
+HANNA OIL & GAS CO	ONRR/BLM - Rents	Oil & Gas	-$57.00
 HANNON & ASSOCIATES INC	BLM - Permit Fees	Oil & Gas	$150.00
 HANNON & ASSOCIATES INC	ONRR/BLM - Bonus	Oil & Gas	$1,508,000.00
 HANNON & ASSOCIATES INC	ONRR/BLM - Rents	Oil & Gas	$1,740.00
 HARRINGTON SW ENERGY LTD	ONRR - Other Revenues	Oil & Gas	$213.66
 HARRINGTON SW ENERGY LTD	ONRR - Royalties	Gas	$160,379.18
 HARRINGTON SW ENERGY LTD	ONRR - Royalties	Oil	$7,909.23
-HARRISON RESOURCES LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$203,059.94
+HARRISON RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$203,059.94
 HARVARD PETROLEUM CO LLC	ONRR - Royalties	Gas	$81,435.90
 HARVARD PETROLEUM CO LLC	ONRR - Royalties	Oil	$440,322.13
 HARVEST ENERGY INC	ONRR - Royalties	Gas	$2.97
@@ -1077,7 +1077,7 @@ HEADINGTON OIL CO LLC	ONRR - Royalties	Oil	$870,038.95
 HEADINGTON OIL CO LLC	ONRR/BLM - Rents	Oil & Gas	$25.50
 HELCA MINING CO	BLM - Permit Fees	Locatable Minerals	$193,884.00
 HELIS OIL & GAS LLC	BLM - Permit Fees	Oil & Gas	$54,350.00
-HELIS OIL & GAS LLC	ONRR - Other Revenues	Oil & Gas	($300,173.46)
+HELIS OIL & GAS LLC	ONRR - Other Revenues	Oil & Gas	-$300,173.46
 HELIS OIL & GAS LLC	ONRR - Royalties	Gas	$6,525,503.90
 HELIS OIL & GAS LLC	ONRR - Royalties	Oil	$9,919,863.68
 HELIS OIL & GAS LLC	ONRR/BLM - Rents	Oil & Gas	$55,107.00
@@ -1099,20 +1099,20 @@ HIDDEN SPLENDOR RESOURCES INC	BLM - Permit Fees	Coal	$136,000.00
 HIGH BAR MINING LLC	BLM - Permit Fees	Locatable Minerals	$119,653.00
 HIGH PLAINS OPERATING CO LLC	ONRR - Other Revenues	Oil & Gas	$1,243.52
 HIGH PLAINS OPERATING CO LLC	ONRR - Royalties	Oil	$191,848.28
-HIGHLAND MINING CO LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$322,593.75
+HIGHLAND MINING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$322,593.75
 HILCORP ENERGY CO	BLM - Permit Fees	Oil & Gas	$20,818.00
-HILCORP ENERGY CO	ONRR - Civil Penalties (ONRR)	N/A	$260,000.00
+HILCORP ENERGY CO	ONRR - Civil Penalties	N/A	$260,000.00
 HILCORP ENERGY CO	ONRR - Inspection Fees	Oil & Gas	$33,400.00
 HILCORP ENERGY CO	ONRR - Other Revenues	N/A	$146.77
 HILCORP ENERGY CO	ONRR - Other Revenues	Oil & Gas	$517,618.86
 HILCORP ENERGY CO	ONRR - Royalties	Gas	$4,461,389.77
 HILCORP ENERGY CO	ONRR - Royalties	Oil	$9,166,322.19
 HILCORP ENERGY CO	ONRR/BLM - Rents	Oil & Gas	$49,110.44
-HILLSBORO ENERGY LLC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$523,156.93
+HILLSBORO ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$523,156.93
 HOACTZIN PARTNERS LP	ONRR/BLM - Bonus	Oil & Gas	$125,000.00
 HOACTZIN PARTNERS LP	ONRR/BLM - Rents	Oil & Gas	$35,000.00
-HOBET MINING LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$621,810.39
-HOGBACK EXPLORATION INC	ONRR - Other Revenues	Oil & Gas	($523.38)
+HOBET MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$621,810.39
+HOGBACK EXPLORATION INC	ONRR - Other Revenues	Oil & Gas	-$523.38
 HOGBACK EXPLORATION INC	ONRR - Royalties	Gas	$171,424.22
 HOLLYFRONTIER CORP	ONRR - Other Revenues	Oil & Gas	$1,302.30
 HOLLYFRONTIER CORP	ONRR - Royalties	Oil	$42,436,011.61
@@ -1124,9 +1124,9 @@ HOMESTAKE MINING CO OF CALIFORNIA	BLM - Permit Fees	Locatable Minerals	$146,121.
 HOOVER & STACY INC	BLM - Permit Fees	Oil & Gas	$2,840.00
 HOOVER & STACY INC	ONRR/BLM - Bonus	Oil & Gas	$10,401,057.00
 HOOVER & STACY INC	ONRR/BLM - Rents	Oil & Gas	$10,555.50
-HOPEDALE MINING LLC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$128,897.32
-HOPKINS COUNTY COAL LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$357,761.58
-HOUSTON ENERGY DEEPWATER VENTURES I LLC	ONRR - Other Revenues	Oil & Gas	($201.04)
+HOPEDALE MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$128,897.32
+HOPKINS COUNTY COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$357,761.58
+HOUSTON ENERGY DEEPWATER VENTURES I LLC	ONRR - Other Revenues	Oil & Gas	-$201.04
 HOUSTON ENERGY DEEPWATER VENTURES I LLC	ONRR - Royalties	Oil	$13,658,457.45
 HOUSTON ENERGY LP	ONRR/BLM - Rents	Oil & Gas	$330,080.00
 HOUSTON OIL PRODUCING ENTERPRISES INC	ONRR - Royalties	Gas	$6,231.99
@@ -1135,7 +1135,7 @@ HOWARD ENERGY CO INC	ONRR - Other Revenues	Oil & Gas	$1,819.49
 HOWARD ENERGY CO INC	ONRR - Royalties	Gas	$18,797.64
 HOWARD ENERGY CO INC	ONRR - Royalties	Oil	$480,943.25
 HRM RESOURCES LLC	BLM - Permit Fees	Oil & Gas	$2,636.00
-HRM RESOURCES LLC	ONRR - Civil Penalties (ONRR)	N/A	$19,508.00
+HRM RESOURCES LLC	ONRR - Civil Penalties	N/A	$19,508.00
 HRM RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$2,599.27
 HRM RESOURCES LLC	ONRR - Royalties	Gas	$116,839.60
 HRM RESOURCES LLC	ONRR - Royalties	Oil	$6,784.84
@@ -1164,7 +1164,7 @@ HYPERION OIL & GAS LLC	ONRR - Other Revenues	Oil & Gas	$760.00
 HYPERION OIL & GAS LLC	ONRR - Royalties	Gas	$38,561.85
 HYPERION OIL & GAS LLC	ONRR - Royalties	Oil	$796,703.25
 HYPERION OIL & GAS LLC	ONRR/BLM - Rents	Oil & Gas	$1,380.00
-ICG HAZARD LLC                                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$474,262.03
+ICG HAZARD LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$474,262.03
 IMERYS	BLM - Permit Fees	Locatable Minerals	$140,020.00
 INLAND OIL & GAS CORP	BLM - Permit Fees	Oil & Gas	$160.00
 INLAND OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	$959.51
@@ -1178,7 +1178,7 @@ INTREPID POTASH INC	BLM - Permit Fees	Potassium	$120.00
 INTREPID POTASH INC	ONRR - Other Revenues	N/A	$214.00
 INTREPID POTASH INC	ONRR - Other Revenues	Potassium	$239,137.33
 INTREPID POTASH INC	ONRR - Royalties	Other Commodities	$7,900,349.54
-INTREPID POTASH INC	ONRR/BLM - Bonus	Potassium	($432,000.00)
+INTREPID POTASH INC	ONRR/BLM - Bonus	Potassium	-$432,000.00
 INTREPID POTASH INC	ONRR/BLM - Rents	Potassium	$50,644.50
 IRISH OIL & GAS INC	BLM - Permit Fees	Oil & Gas	$150.00
 IRISH OIL & GAS INC	ONRR/BLM - Bonus	Oil & Gas	$173,300.00
@@ -1188,37 +1188,37 @@ J & M RAYMOND LTD	ONRR - Royalties	Gas	$194,493.50
 J & M RAYMOND LTD	ONRR - Royalties	Oil	$1,730.93
 J BAR CANE INC	ONRR/BLM - Bonus	Oil & Gas	$196,000.00
 J BAR CANE INC	ONRR/BLM - Rents	Oil & Gas	$8,760.00
-J.P. INC	ONRR - Royalties	Gas	($172.70)
+J.P. INC	ONRR - Royalties	Gas	-$172.70
 J.P. INC	ONRR - Royalties	Oil	$528,749.96
 J.P. INC	ONRR/BLM - Rents	Oil & Gas	$2,679.00
 J.R. SIMPLOT CO	ONRR - Other Revenues	N/A	$1,070.00
 J.R. SIMPLOT CO	ONRR - Other Revenues	Phosphate	$57,757.00
 J.R. SIMPLOT CO	ONRR - Royalties	Other Commodities	$4,663,622.13
-J.R. SIMPLOT CO	ONRR/BLM - Rents	Phosphate	($2,572.00)
+J.R. SIMPLOT CO	ONRR/BLM - Rents	Phosphate	-$2,572.00
 JAG OPERATING LLC	ONRR - Other Revenues	Oil & Gas	$608.24
 JAG OPERATING LLC	ONRR - Royalties	Gas	$15,422.41
 JAG OPERATING LLC	ONRR - Royalties	Oil	$227,310.35
 JBLS MONTANA INC	BLM - Permit Fees	Oil & Gas	$935.00
 JBLS MONTANA INC	ONRR/BLM - Bonus	Oil & Gas	$118,000.00
 JBLS MONTANA INC	ONRR/BLM - Rents	Oil & Gas	$1,440.00
-JEWELL SMOKELESS COAL CORP                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$110,138.66
+JEWELL SMOKELESS COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$110,138.66
 JIM WALTER RESOURCES INC	ONRR - Other Revenues	N/A	$214.00
 JIM WALTER RESOURCES INC	ONRR - Royalties	Coal	$3,009,955.67
 JIM WALTER RESOURCES INC	ONRR/BLM - Rents	Coal	$8,664.00
-JIM WALTER RESOURCES INC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$928,806.76
-JMAC LEASING INC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$108,798.26
+JIM WALTER RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$928,806.76
+JMAC LEASING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$108,798.26
 JOHN H. HENDRIX CORP	ONRR - Other Revenues	Oil & Gas	$37.90
 JOHN H. HENDRIX CORP	ONRR - Royalties	Gas	$587,556.25
 JOHN H. HENDRIX CORP	ONRR - Royalties	Oil	$76,243.91
 JONES ENERGY LTD	ONRR - Other Revenues	N/A	$214.00
-JONES ENERGY LTD	ONRR - Other Revenues	Oil & Gas	($84,004.89)
+JONES ENERGY LTD	ONRR - Other Revenues	Oil & Gas	-$84,004.89
 JONES ENERGY LTD	ONRR - Royalties	Gas	$443,319.55
 JONES ENERGY LTD	ONRR - Royalties	Oil	$55,185.83
-JONES, VERN K.	ONRR - Other Revenues	Oil & Gas	($360.00)
+JONES, VERN K.	ONRR - Other Revenues	Oil & Gas	-$360.00
 JONES, VERN K.	ONRR/BLM - Bonus	Oil & Gas	$1,185,890.00
 JONES, VERN K.	ONRR/BLM - Rents	Oil & Gas	$27,112.50
 JORDAN DEVELOPMENT CO LLC	BLM - Permit Fees	Oil & Gas	$1,200.00
-JORDAN DEVELOPMENT CO LLC	ONRR - Other Revenues	Oil & Gas	($200.00)
+JORDAN DEVELOPMENT CO LLC	ONRR - Other Revenues	Oil & Gas	-$200.00
 JORDAN DEVELOPMENT CO LLC	ONRR - Royalties	Gas	$23,205.72
 JORDAN DEVELOPMENT CO LLC	ONRR/BLM - Bonus	Oil & Gas	$266,414.00
 JORDAN DEVELOPMENT CO LLC	ONRR/BLM - Rents	Oil & Gas	$11,425.50
@@ -1229,23 +1229,23 @@ K2 LAND CO LLC	BLM - Permit Fees	Oil & Gas	$1,755.00
 K2 LAND CO LLC	ONRR/BLM - Bonus	Oil & Gas	$310,470.00
 K2 LAND CO LLC	ONRR/BLM - Rents	Oil & Gas	$3,573.00
 KAISER-FRANCIS OIL CO	BLM - Permit Fees	Oil & Gas	$425.00
-KAISER-FRANCIS OIL CO	ONRR - Other Revenues	Oil & Gas	($36,892.16)
+KAISER-FRANCIS OIL CO	ONRR - Other Revenues	Oil & Gas	-$36,892.16
 KAISER-FRANCIS OIL CO	ONRR - Royalties	Gas	$761,976.08
 KAISER-FRANCIS OIL CO	ONRR - Royalties	Oil	$540,891.59
 KAISER-FRANCIS OIL CO	ONRR/BLM - Rents	Oil & Gas	$5,825.00
-KANAWHA EAGLE COAL LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$103,557.49
+KANAWHA EAGLE COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$103,557.49
 KB CRONIN CO LLC	BLM - Permit Fees	Oil & Gas	$4,495.00
 KB CRONIN CO LLC	ONRR/BLM - Bonus	Oil & Gas	$104,302.00
 KB CRONIN CO LLC	ONRR/BLM - Rents	Oil & Gas	$10,273.50
 KCS MEDALLION RESOURCES INC	ONRR - Other Revenues	Oil & Gas	$3,737.85
 KCS MEDALLION RESOURCES INC	ONRR - Royalties	Gas	$116,019.41
-KENAMERICAN RESOURCES INC                                   	OSMRE - AML Fees including Audits and Late Charges 	Coal	$282,295.40
+KENAMERICAN RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$282,295.40
 KENNECOTT	BLM - Permit Fees	Locatable Minerals	$734,340.00
 KENNECOTT	BLM - Permit Fees	Mineral Materials	$500.00
 KENNEDY OIL	ONRR - Other Revenues	Oil & Gas	$23,449.53
 KENNEDY OIL	ONRR - Royalties	Gas	$82,409.09
 KENNEDY OIL	ONRR/BLM - Rents	Oil & Gas	$15,694.00
-KENTUCKY FUEL CORP                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$138,936.91
+KENTUCKY FUEL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$138,936.91
 KHL INC	ONRR/BLM - Bonus	Oil & Gas	$996,075.00
 KHL INC	ONRR/BLM - Rents	Oil & Gas	$11,553.00
 KHODY LAND & MINERALS CO	BLM - Permit Fees	Oil & Gas	$20,270.00
@@ -1255,9 +1255,9 @@ KHODY LAND & MINERALS CO	ONRR/BLM - Rents	Oil & Gas	$248,330.50
 KIEWIT MINING GROUP INC	BLM - Permit Fees	Coal	$60,576.00
 KIEWIT MINING GROUP INC	ONRR - Royalties	Coal	$20,992,622.15
 KIEWIT MINING GROUP INC	ONRR/BLM - Rents	Coal	$115,092.00
-KIEWIT MINING GROUP INC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$6,152,069.08
+KIEWIT MINING GROUP INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$6,152,069.08
 KILAUEA CRUSHERS INC	BLM - Permit Fees	Mineral Materials	$417,811.49
-KIMBELL OIL CO	ONRR - Other Revenues	Oil & Gas	($310.49)
+KIMBELL OIL CO	ONRR - Other Revenues	Oil & Gas	-$310.49
 KIMBELL OIL CO	ONRR - Royalties	Gas	$177,562.60
 KIMBELL OIL CO	ONRR - Royalties	Oil	$9,294.62
 KINDER MORGAN ENERGY PARTNERS LP	ONRR - Other Revenues	Oil & Gas	$369,378.75
@@ -1278,7 +1278,7 @@ KMD OPERATING CO LLC	ONRR - Other Revenues	Oil & Gas	$669.80
 KMD OPERATING CO LLC	ONRR - Royalties	Gas	$5,136.63
 KMD OPERATING CO LLC	ONRR - Royalties	Oil	$154,353.34
 KMD OPERATING CO LLC	ONRR/BLM - Rents	Oil & Gas	$952.00
-KNIGHT HAWK COAL LLC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$771,401.17
+KNIGHT HAWK COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$771,401.17
 KNIGHT RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$316.92
 KNIGHT RESOURCES LLC	ONRR - Royalties	Gas	$493,762.41
 KNIGHT RESOURCES LLC	ONRR - Royalties	Oil	$326,386.87
@@ -1293,7 +1293,7 @@ KODIAK OIL & GAS CORP	ONRR - Royalties	Gas	$235,895.98
 KODIAK OIL & GAS CORP	ONRR - Royalties	Oil	$2,439,583.90
 KODIAK OIL & GAS CORP	ONRR/BLM - Bonus	Oil & Gas	$1,368,900.00
 KODIAK OIL & GAS CORP	ONRR/BLM - Rents	Oil & Gas	$23,440.00
-KOPPER GLO MINING LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$181,124.30
+KOPPER GLO MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$181,124.30
 LAND PROFESSIONALS INC - UT	BLM - Permit Fees	Oil & Gas	$3,000.00
 LAND PROFESSIONALS INC - UT	ONRR/BLM - Bonus	Oil & Gas	$239,602.00
 LAND PROFESSIONALS INC - UT	ONRR/BLM - Rents	Oil & Gas	$24,103.50
@@ -1308,31 +1308,31 @@ LAREDO PETROLEUM INC	ONRR/BLM - Rents	Oil & Gas	$488.00
 LAS VEGAS PAVING CORP	BLM - Permit Fees	Mineral Materials	$469,857.45
 LASSO OIL & GAS LLC	ONRR - Royalties	Gas	$57,356.52
 LASSO OIL & GAS LLC	ONRR - Royalties	Oil	$58,020.98
-LAUREL MOUNTAIN RESOURCES LLC                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$181,560.69
-LEECO INC                                                   	OSMRE - AML Fees including Audits and Late Charges 	Coal	$257,952.05
+LAUREL MOUNTAIN RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$181,560.69
+LEECO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$257,952.05
 LEGACY RESERVES OPERATING LP	BLM - Permit Fees	Oil & Gas	$45,530.00
 LEGACY RESERVES OPERATING LP	ONRR - Other Revenues	Oil & Gas	$240,744.31
 LEGACY RESERVES OPERATING LP	ONRR - Royalties	Gas	$2,202,321.60
 LEGACY RESERVES OPERATING LP	ONRR - Royalties	Oil	$13,049,430.98
 LEGACY RESERVES OPERATING LP	ONRR/BLM - Rents	Oil & Gas	$19,302.24
 LHOIST NORTH AMERICA INC	BLM - Permit Fees	Locatable Minerals	$137,157.00
-LIBERTY MINE LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$111,546.68
+LIBERTY MINE LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$111,546.68
 LIBERTY PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$10,435.00
 LIBERTY PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$97.78
 LIBERTY PETROLEUM CORP	ONRR/BLM - Bonus	Oil & Gas	$143,232.50
 LIBERTY PETROLEUM CORP	ONRR/BLM - Rents	Oil & Gas	$323,169.00
-LICKING RIVER RESOURCES INC                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$384,654.25
+LICKING RIVER RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$384,654.25
 LIME ROCK RESOURCES	BLM - Permit Fees	Oil & Gas	$269,435.00
 LIME ROCK RESOURCES	ONRR - Other Revenues	Oil & Gas	$87,732.19
 LIME ROCK RESOURCES	ONRR - Royalties	Gas	$1,544,802.07
 LIME ROCK RESOURCES	ONRR - Royalties	Oil	$4,691,050.60
 LIME ROCK RESOURCES	ONRR/BLM - Rents	Oil & Gas	$1,238.00
 LIMESTONE LIVESTOCK LLC	BLM - Permit Fees	Mineral Materials	$165,200.00
-LINDE INC	ONRR - Civil Penalties (ONRR)	N/A	$96,472.00
+LINDE INC	ONRR - Civil Penalties	N/A	$96,472.00
 LINDE INC	ONRR - Other Revenues	Oil & Gas	$1,912.63
 LINDE INC	ONRR - Royalties	Gas	$1,213.00
 LINDE INC	ONRR - Royalties	Other Commodities	$605,820.00
-LINDER OIL CO, A PTNRSHIP	ONRR - Civil Penalties (ONRR)	N/A	$470,000.00
+LINDER OIL CO, A PTNRSHIP	ONRR - Civil Penalties	N/A	$470,000.00
 LINDER OIL CO, A PTNRSHIP	ONRR - Royalties	Gas	$18,197.41
 LINDER OIL CO, A PTNRSHIP	ONRR - Royalties	Oil	$402,272.37
 LINDER OIL CO, A PTNRSHIP	ONRR/BLM - Rents	Oil & Gas	$60.00
@@ -1341,16 +1341,16 @@ LINN ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$552,525.15
 LINN ENERGY LLC	ONRR - Royalties	Gas	$29,001,629.11
 LINN ENERGY LLC	ONRR - Royalties	Oil	$53,820,036.93
 LINN ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$10,157.18
-LIVELY EXPLORATION CO	ONRR - Other Revenues	Oil & Gas	($91.69)
+LIVELY EXPLORATION CO	ONRR - Other Revenues	Oil & Gas	-$91.69
 LIVELY EXPLORATION CO	ONRR - Royalties	Gas	$112,829.00
 LIVELY EXPLORATION CO	ONRR - Royalties	Oil	$4,294.69
 LLOG EXPLORATION OFFSHORE INC	ONRR - Inspection Fees	Oil & Gas	$904,800.00
-LLOG EXPLORATION OFFSHORE INC	ONRR - Other Revenues	Oil & Gas	($134,548.03)
+LLOG EXPLORATION OFFSHORE INC	ONRR - Other Revenues	Oil & Gas	-$134,548.03
 LLOG EXPLORATION OFFSHORE INC	ONRR - Royalties	Gas	$12,221,894.03
 LLOG EXPLORATION OFFSHORE INC	ONRR - Royalties	Oil	$178,374,325.92
 LLOG EXPLORATION OFFSHORE INC	ONRR/BLM - Bonus	Oil & Gas	$125,091,801.00
 LLOG EXPLORATION OFFSHORE INC	ONRR/BLM - Rents	Oil & Gas	$3,094,544.00
-LOADOUT LLC                                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$219,968.16
+LOADOUT LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$219,968.16
 LOCIN OIL CORP	ONRR - Other Revenues	Oil & Gas	$1,993.24
 LOCIN OIL CORP	ONRR - Royalties	Gas	$319,300.83
 LOCIN OIL CORP	ONRR - Royalties	Oil	$26,874.01
@@ -1369,13 +1369,13 @@ LOST CREEK ISR LLC	BLM - Permit Fees	Locatable Minerals	$241,250.00
 LPC CRUDE OIL INC	ONRR - Royalties	Oil	$3,007,207.81
 LUFF EXPLORATION CO	ONRR - Royalties	Gas	$791.46
 LUFF EXPLORATION CO	ONRR - Royalties	Oil	$137,683.63
-LUMINANT MINING CO LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$2,429,559.44
-M & K OIL CO	ONRR - Other Revenues	Oil & Gas	($5,656.29)
+LUMINANT MINING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$2,429,559.44
+M & K OIL CO	ONRR - Other Revenues	Oil & Gas	-$5,656.29
 M & K OIL CO	ONRR - Royalties	Gas	$148,318.29
 M & K OIL CO	ONRR/BLM - Rents	Oil & Gas	$30,214.00
 M V PURCHASING LLC	ONRR - Other Revenues	Oil & Gas	$61.68
 M V PURCHASING LLC	ONRR - Royalties	Oil	$214,112.44
-M&G DRILLING CO INC	ONRR - Other Revenues	Oil & Gas	($586.66)
+M&G DRILLING CO INC	ONRR - Other Revenues	Oil & Gas	-$586.66
 M&G DRILLING CO INC	ONRR - Royalties	Gas	$704,872.20
 M&G DRILLING CO INC	ONRR - Royalties	Oil	$6,449.14
 M21K LLC	ONRR - Other Revenues	Oil & Gas	$666,049.01
@@ -1389,7 +1389,7 @@ MACK ENERGY CORP	ONRR - Royalties	Gas	$799,127.82
 MACK ENERGY CORP	ONRR - Royalties	Oil	$4,269,711.91
 MACK ENERGY CORP	ONRR/BLM - Bonus	Oil & Gas	$188,000.00
 MACK ENERGY CORP	ONRR/BLM - Rents	Oil & Gas	$92,728.00
-MACOUPIN ENERGY LLC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$136,953.75
+MACOUPIN ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$136,953.75
 MACPHERSON ENERGY CORP	BLM - Permit Fees	Oil & Gas	$572,000.00
 MACPHERSON ENERGY CORP	ONRR - Other Revenues	Oil & Gas	$2,570.92
 MACPHERSON ENERGY CORP	ONRR - Royalties	Oil	$13,556,257.77
@@ -1407,7 +1407,7 @@ MAN ALASKA LLC	BLM - Permit Fees	Locatable Minerals	$101,780.00
 MANZANO ENERGY PARTNERS II LLC	BLM - Permit Fees	Oil & Gas	$7,425.00
 MANZANO ENERGY PARTNERS II LLC	ONRR/BLM - Bonus	Oil & Gas	$160,000.00
 MANZANO ENERGY PARTNERS II LLC	ONRR/BLM - Rents	Oil & Gas	$600.00
-MAPLE COAL CO                                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$138,113.12
+MAPLE COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$138,113.12
 MARALEX RESOURCES INC	BLM - Permit Fees	Oil & Gas	$1,190.00
 MARALEX RESOURCES INC	ONRR - Other Revenues	Oil & Gas	$59,527.06
 MARALEX RESOURCES INC	ONRR - Royalties	Gas	$279,460.78
@@ -1429,12 +1429,12 @@ MARITECH RESOURCES INC	ONRR - Royalties	Gas	$292,734.69
 MARITECH RESOURCES INC	ONRR - Royalties	Oil	$230,089.96
 MARITECH RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$11,855.00
 MARLIN ENERGY OFFSHORE LLC	ONRR - Inspection Fees	Oil & Gas	$65,500.00
-MARLIN ENERGY OFFSHORE LLC	ONRR - Other Revenues	Oil & Gas	($9,072.54)
+MARLIN ENERGY OFFSHORE LLC	ONRR - Other Revenues	Oil & Gas	-$9,072.54
 MARLIN ENERGY OFFSHORE LLC	ONRR - Royalties	Gas	$35,529.49
 MARLIN ENERGY OFFSHORE LLC	ONRR - Royalties	Oil	$639,550.34
 MARLIN ENERGY OFFSHORE LLC	ONRR/BLM - Rents	Oil & Gas	$72,370.00
 MARSHALL & WINSTON INC	BLM - Permit Fees	Oil & Gas	$6,820.00
-MARSHALL & WINSTON INC	ONRR - Other Revenues	Oil & Gas	($61.98)
+MARSHALL & WINSTON INC	ONRR - Other Revenues	Oil & Gas	-$61.98
 MARSHALL & WINSTON INC	ONRR - Royalties	Gas	$143,811.59
 MARSHALL & WINSTON INC	ONRR/BLM - Bonus	Oil & Gas	$260,000.00
 MARSHALL & WINSTON INC	ONRR/BLM - Rents	Oil & Gas	$46,327.50
@@ -1451,7 +1451,7 @@ MARUBENI OIL & GAS (USA) INC	ONRR - Royalties	Gas	$6,079,996.77
 MARUBENI OIL & GAS (USA) INC	ONRR - Royalties	Oil	$25,245,458.11
 MARUBENI OIL & GAS (USA) INC	ONRR/BLM - Rents	Oil & Gas	$480,615.00
 MATADOR RESOURCES CO	BLM - Permit Fees	Oil & Gas	$1,655.00
-MATADOR RESOURCES CO	ONRR - Other Revenues	Oil & Gas	($89,247.26)
+MATADOR RESOURCES CO	ONRR - Other Revenues	Oil & Gas	-$89,247.26
 MATADOR RESOURCES CO	ONRR - Royalties	Gas	$483,532.54
 MATADOR RESOURCES CO	ONRR - Royalties	Oil	$58,868.63
 MATADOR RESOURCES CO	ONRR/BLM - Bonus	Oil & Gas	$2,267,550.00
@@ -1460,7 +1460,7 @@ MATAGORDA ISLAND GAS OPERATIONS LLC	ONRR - Royalties	Gas	$143,702.86
 MATAGORDA ISLAND GAS OPERATIONS LLC	ONRR - Royalties	Oil	$866.41
 MATRIX PRODUCTION CO	BLM - Permit Fees	Oil & Gas	$2,460.00
 MATRIX PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	$539.53
-MATRIX PRODUCTION CO	ONRR - Royalties	Gas	($37,114.99)
+MATRIX PRODUCTION CO	ONRR - Royalties	Gas	-$37,114.99
 MATRIX PRODUCTION CO	ONRR - Royalties	Oil	$166,474.39
 MATRIX PRODUCTION CO	ONRR/BLM - Rents	Oil & Gas	$560.00
 MAURICE W BROWN OIL & GAS LLC	BLM - Permit Fees	Oil & Gas	$75,035.00
@@ -1472,14 +1472,14 @@ MAXUS EXPLORATION CO	ONRR - Royalties	Gas	$167,334.29
 MAXUS EXPLORATION CO	ONRR - Royalties	Oil	$6,458,104.33
 MAXUS EXPLORATION CO	ONRR/BLM - Rents	Oil & Gas	$820,800.00
 MC OFFSHORE PETROLEUM LLC	ONRR - Inspection Fees	Oil & Gas	$107,200.00
-MC OFFSHORE PETROLEUM LLC	ONRR - Other Revenues	Oil & Gas	($162,136.61)
+MC OFFSHORE PETROLEUM LLC	ONRR - Other Revenues	Oil & Gas	-$162,136.61
 MC OFFSHORE PETROLEUM LLC	ONRR - Royalties	Gas	$140,705.72
 MC OFFSHORE PETROLEUM LLC	ONRR - Royalties	Oil	$6,979,842.51
 MC OFFSHORE PETROLEUM LLC	ONRR/BLM - Rents	Oil & Gas	$27,555.00
 MCCORMICK SONJA V	ONRR/BLM - Bonus	Oil & Gas	$90,274.00
 MCCORMICK SONJA V	ONRR/BLM - Rents	Oil & Gas	$11,463.25
-MCCOY ELKHORN COAL CORP                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$113,449.79
-MCELROY COAL CO                                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,083,715.51
+MCCOY ELKHORN COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$113,449.79
+MCELROY COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,083,715.51
 MCEWEN MINING	BLM - Permit Fees	Locatable Minerals	$354,200.00
 MCMURRY READY MIX	BLM - Permit Fees	Mineral Materials	$146,765.90
 MCR LLC	BLM - Permit Fees	Oil & Gas	$510.00
@@ -1487,7 +1487,7 @@ MCR LLC	ONRR - Other Revenues	Oil & Gas	$1,424.07
 MCR LLC	ONRR - Royalties	Gas	$12,492.83
 MCR LLC	ONRR - Royalties	Oil	$95,936.94
 MCR LLC	ONRR/BLM - Rents	Oil & Gas	$560.00
-MCX GULF OF MEXICO LLC	ONRR - Other Revenues	Oil & Gas	($68.42)
+MCX GULF OF MEXICO LLC	ONRR - Other Revenues	Oil & Gas	-$68.42
 MCX GULF OF MEXICO LLC	ONRR - Royalties	Gas	$154,473.33
 MCX GULF OF MEXICO LLC	ONRR - Royalties	Oil	$4,269,146.07
 MEDCO ENERGI US LLC	ONRR - Inspection Fees	Oil & Gas	$422,500.00
@@ -1504,13 +1504,13 @@ MEREDITH MARKETING CO	ONRR - Royalties	Oil	$3,412,814.83
 MERIT ENERGY CO	BLM - Permit Fees	Oil & Gas	$4,010.00
 MERIT ENERGY CO	ONRR - Inspection Fees	Oil & Gas	$572,651.18
 MERIT ENERGY CO	ONRR - Other Revenues	N/A	$2,683.72
-MERIT ENERGY CO	ONRR - Other Revenues	Oil & Gas	($104,019.87)
+MERIT ENERGY CO	ONRR - Other Revenues	Oil & Gas	-$104,019.87
 MERIT ENERGY CO	ONRR - Royalties	Gas	$5,935,956.31
 MERIT ENERGY CO	ONRR - Royalties	Oil	$30,752,202.67
 MERIT ENERGY CO	ONRR - Royalties	Other Commodities	$3,915.56
 MERIT ENERGY CO	ONRR/BLM - Rents	Oil & Gas	$63,631.25
 MERRION OIL & GAS CORP	BLM - Permit Fees	Oil & Gas	$1,285.00
-MERRION OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	($32,600.86)
+MERRION OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	-$32,600.86
 MERRION OIL & GAS CORP	ONRR - Royalties	Gas	$661,691.65
 MERRION OIL & GAS CORP	ONRR - Royalties	Oil	$327,253.64
 MERRION OIL & GAS CORP	ONRR/BLM - Rents	Oil & Gas	$13,070.00
@@ -1519,7 +1519,7 @@ MESA ENERGY PARTNERS LLC	ONRR - Royalties	Gas	$502,717.29
 MESA ENERGY PARTNERS LLC	ONRR - Royalties	Oil	$100,001.94
 MESA ENERGY PARTNERS LLC	ONRR/BLM - Rents	Oil & Gas	$28,554.00
 METALLIC GOLDFIELD INC	BLM - Permit Fees	Locatable Minerals	$142,824.00
-METTIKI COAL (WV) LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$242,155.21
+METTIKI COAL (WV) LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$242,155.21
 MEWBOURNE OIL CO	BLM - Permit Fees	Oil & Gas	$359,340.00
 MEWBOURNE OIL CO	ONRR - Other Revenues	Oil & Gas	$712,691.00
 MEWBOURNE OIL CO	ONRR - Royalties	Gas	$5,310,587.68
@@ -1527,7 +1527,7 @@ MEWBOURNE OIL CO	ONRR - Royalties	Oil	$24,348,347.06
 MEWBOURNE OIL CO	ONRR/BLM - Bonus	Oil & Gas	$1,278,000.00
 MEWBOURNE OIL CO	ONRR/BLM - Rents	Oil & Gas	$5,379.00
 M-I LLC	BLM - Permit Fees	Locatable Minerals	$100,068.00
-MID VOL COAL SALES INC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$424,368.10
+MID VOL COAL SALES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$424,368.10
 MIDAMERICAN ENERGY HOLDINGS CO	ONRR - Royalties	Geothermal	$303,753.38
 MIDAMERICAN ENERGY HOLDINGS CO	ONRR/BLM - Rents	Oil & Gas	$270.00
 MIDAS GOLD INC	BLM - Permit Fees	Locatable Minerals	$194,460.00
@@ -1545,7 +1545,7 @@ MINEX EXPLORATION	BLM - Permit Fees	Hardrock	$30.00
 MINEX EXPLORATION	BLM - Permit Fees	Locatable Minerals	$186,276.00
 MINQUEST INC	BLM - Permit Fees	Locatable Minerals	$284,217.00
 MIRANDA USA INC	BLM - Permit Fees	Locatable Minerals	$109,242.00
-MISSISSIPPI LIGNITE MINING CO                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$248,983.06
+MISSISSIPPI LIGNITE MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$248,983.06
 MMG USA EXPLORATION LLC	BLM - Permit Fees	Locatable Minerals	$131,824.00
 MONCRIEF OIL	BLM - Permit Fees	Oil & Gas	$85.00
 MONCRIEF OIL	ONRR - Other Revenues	Oil & Gas	$2,151.71
@@ -1555,7 +1555,7 @@ MONCRIEF OIL	ONRR/BLM - Bonus	Oil & Gas	$86,535.00
 MONCRIEF OIL	ONRR/BLM - Rents	Oil & Gas	$184,400.00
 MONFORTE EXPLORATION LLC	ONRR - Inspection Fees	Oil & Gas	$250,100.00
 MONFORTE EXPLORATION LLC	ONRR - Other Revenues	N/A	$1,715.26
-MONFORTE EXPLORATION LLC	ONRR - Other Revenues	Oil & Gas	($26,900.00)
+MONFORTE EXPLORATION LLC	ONRR - Other Revenues	Oil & Gas	-$26,900.00
 MONFORTE EXPLORATION LLC	ONRR - Royalties	Gas	$162,048.00
 MONFORTE EXPLORATION LLC	ONRR - Royalties	Oil	$9.79
 MONFORTE EXPLORATION LLC	ONRR/BLM - Rents	Oil & Gas	$240.00
@@ -1579,7 +1579,7 @@ MURPHY OIL USA INC	ONRR/BLM - Rents	Oil & Gas	$4,779,157.64
 MURRAY ENERGY CORP	ONRR - Other Revenues	Coal	$2,495.50
 MURRAY ENERGY CORP	ONRR - Royalties	Coal	$6,275,151.84
 MURRAY ENERGY CORP	ONRR/BLM - Rents	Coal	$42,417.84
-MURRAY ENERGY CORP	OSMRE - AML Fees including Audits and Late Charges 	Coal	$325,511.63
+MURRAY ENERGY CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$325,511.63
 MUSTANG FUEL CORP	ONRR - Other Revenues	Oil & Gas	$28.83
 MUSTANG FUEL CORP	ONRR - Royalties	Gas	$54,929.97
 MUSTANG FUEL CORP	ONRR - Royalties	Oil	$58,465.13
@@ -1594,10 +1594,10 @@ NADEL AND GUSSMAN LLC	ONRR - Royalties	Oil	$45,084.37
 NADEL AND GUSSMAN LLC	ONRR/BLM - Rents	Oil & Gas	$20,253.50
 NAFTEX HOLDINGS LTD	ONRR - Royalties	Oil	$518,808.98
 NAFTEX HOLDINGS LTD	ONRR/BLM - Rents	Oil & Gas	$1,600.00
-NALLY & HAMILTON ENTERPRISES I                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$410,334.80
+NALLY & HAMILTON ENTERPRISES I	OSMRE - AML Fees including Audits and Late Charges	Coal	$410,334.80
 NATCHEZ RESOURCES LLC	BLM - Permit Fees	Locatable Minerals	$169,057.00
 NATIONAL CHLORIDE CO	BLM - Permit Fees	Locatable Minerals	$254,520.00
-NATIONAL COAL LLC	OSMRE - Civil Penalties including Late Charges (OSMRE)	N/A	$556,176.67
+NATIONAL COAL LLC	OSMRE - Civil Penalties including Late Charges	N/A	$556,176.67
 NATIONAL FUEL CORP	BLM - Permit Fees	Oil & Gas	$2,380.00
 NATIONAL FUEL CORP	ONRR - Other Revenues	Oil & Gas	$5,660.31
 NATIONAL FUEL CORP	ONRR - Royalties	Gas	$614,229.32
@@ -1611,7 +1611,7 @@ NATURAL GAS PROCESSING CO	ONRR - Royalties	Gas	$7,206.66
 NATURAL GAS PROCESSING CO	ONRR - Royalties	Oil	$123,400.00
 NATURAL SODA INC	ONRR - Other Revenues	Sodium	$7,920.00
 NATURAL SODA INC	ONRR - Royalties	Other Commodities	$1,088,703.02
-NATURAL SODA INC	ONRR/BLM - Rents	Sodium	($5,280.00)
+NATURAL SODA INC	ONRR/BLM - Rents	Sodium	-$5,280.00
 NEARBURG PRODUCING CO	BLM - Permit Fees	Oil & Gas	$68,320.00
 NEARBURG PRODUCING CO	ONRR - Other Revenues	Oil & Gas	$355,461.08
 NEARBURG PRODUCING CO	ONRR - Royalties	Gas	$608,593.98
@@ -1647,7 +1647,7 @@ NEXEN PETROLEUM USA INC	ONRR - Royalties	Oil	$21,472,527.90
 NEXEN PETROLEUM USA INC	ONRR/BLM - Rents	Oil & Gas	$3,061,830.00
 NGP ENERGY CAPITAL MANAGEMENT LLC	BLM - Permit Fees	Oil & Gas	$39,530.00
 NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR - Other Revenues	N/A	$872.00
-NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR - Other Revenues	Oil & Gas	($21,001.70)
+NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR - Other Revenues	Oil & Gas	-$21,001.70
 NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR - Royalties	Gas	$795,777.62
 NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR - Royalties	Oil	$3,718,255.19
 NGP ENERGY CAPITAL MANAGEMENT LLC	ONRR/BLM - Rents	Oil & Gas	$219,470.00
@@ -1655,11 +1655,11 @@ NMT OIL CO INC	ONRR - Royalties	Oil	$136,555.07
 NOBLE ENERGY INC	BLM - Permit Fees	Oil & Gas	$62,399.00
 NOBLE ENERGY INC	ONRR - Inspection Fees	Oil & Gas	$213,500.00
 NOBLE ENERGY INC	ONRR - Other Revenues	N/A	$754.56
-NOBLE ENERGY INC	ONRR - Other Revenues	Oil & Gas	($1,928,660.08)
+NOBLE ENERGY INC	ONRR - Other Revenues	Oil & Gas	-$1,928,660.08
 NOBLE ENERGY INC	ONRR - Royalties	Gas	$7,128,163.49
 NOBLE ENERGY INC	ONRR - Royalties	Oil	$88,932,503.85
 NOBLE ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$4,467,818.00
-NOEX ENERGY INC	ONRR - Other Revenues	Oil & Gas	($558,329.00)
+NOEX ENERGY INC	ONRR - Other Revenues	Oil & Gas	-$558,329.00
 NOEX ENERGY INC	ONRR - Royalties	Gas	$427,303.32
 NOEX ENERGY INC	ONRR - Royalties	Oil	$8,905,467.72
 NORDAQ ENERGY INC	BLM - Permit Fees	Oil & Gas	$1,800.00
@@ -1668,9 +1668,9 @@ NORDAQ ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$514,431.00
 NORTH AMERICAN COAL CORP	BLM - Permit Fees	Coal	$2,656.00
 NORTH AMERICAN COAL CORP	ONRR - Royalties	Coal	$617,221.28
 NORTH AMERICAN COAL CORP	ONRR/BLM - Rents	Coal	$21,924.00
-NORTH AMERICAN COAL CORP	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,084,246.96
+NORTH AMERICAN COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,084,246.96
 NORTH FINN LLC	BLM - Permit Fees	Oil & Gas	$85.00
-NORTH FINN LLC	ONRR - Other Revenues	Oil & Gas	($0.02)
+NORTH FINN LLC	ONRR - Other Revenues	Oil & Gas	-$0.02
 NORTH FINN LLC	ONRR - Royalties	Gas	$33,576.96
 NORTH FINN LLC	ONRR - Royalties	Oil	$336,714.12
 NORTH FINN LLC	ONRR/BLM - Rents	Oil & Gas	$12,717.50
@@ -1689,14 +1689,14 @@ NORTHWESTERN ENERGY	ONRR/BLM - Rents	Oil & Gas	$1,600.00
 NORTHWESTERN MUTUAL LIFE INSURANCE	ONRR - Other Revenues	Oil & Gas	$11,255.15
 NORTHWESTERN MUTUAL LIFE INSURANCE	ONRR - Royalties	Gas	$998,426.03
 NORTHWESTERN MUTUAL LIFE INSURANCE	ONRR - Royalties	Oil	$36,165.13
-NORTON COAL CO LLC                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$137,497.00
+NORTON COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$137,497.00
 NPGUS LLC	BLM - Permit Fees	Locatable Minerals	$107,520.00
 NUCOR ENERGY HOLDINGS INC	ONRR - Other Revenues	Oil & Gas	$901,784.24
 NUCOR ENERGY HOLDINGS INC	ONRR - Royalties	Gas	$7,044,199.25
 NUCOR ENERGY HOLDINGS INC	ONRR - Royalties	Oil	$22,607.93
 NU-WEST INDUSTRIES INC	ONRR - Other Revenues	Phosphate	$46,612.47
 NU-WEST INDUSTRIES INC	ONRR - Royalties	Other Commodities	$3,959,536.88
-OAK GROVE RESOURCES LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$341,429.29
+OAK GROVE RESOURCES LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$341,429.29
 OASIS PETROLEUM NORTH AMERICA LLC	BLM - Permit Fees	Oil & Gas	$72,665.00
 OASIS PETROLEUM NORTH AMERICA LLC	ONRR - Other Revenues	Oil & Gas	$72,480.77
 OASIS PETROLEUM NORTH AMERICA LLC	ONRR - Royalties	Gas	$151,214.67
@@ -1705,7 +1705,7 @@ OASIS PETROLEUM NORTH AMERICA LLC	ONRR/BLM - Bonus	Oil & Gas	$2,362,000.00
 OASIS PETROLEUM NORTH AMERICA LLC	ONRR/BLM - Rents	Oil & Gas	$29,298.88
 OCCIDENTAL PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$803,490.00
 OCCIDENTAL PETROLEUM CORP	ONRR - Other Revenues	N/A	$428.00
-OCCIDENTAL PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	($24,719.21)
+OCCIDENTAL PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	-$24,719.21
 OCCIDENTAL PETROLEUM CORP	ONRR - Royalties	Gas	$16,568,956.11
 OCCIDENTAL PETROLEUM CORP	ONRR - Royalties	Oil	$57,464,758.37
 OCCIDENTAL PETROLEUM CORP	ONRR - Royalties	Other Commodities	$938,577.44
@@ -1715,7 +1715,7 @@ OCI WYOMING LP	BLM - Permit Fees	Mineral Materials	$67,575.20
 OCI WYOMING LP	ONRR - Other Revenues	Sodium	$22,758.69
 OCI WYOMING LP	ONRR - Royalties	Other Commodities	$10,264,605.48
 OCI WYOMING LP	ONRR/BLM - Rents	Sodium	$7,295.00
-OHIOAMERICAN ENERGY INC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$146,760.24
+OHIOAMERICAN ENERGY INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$146,760.24
 OMIMEX RESOURCES INC	BLM - Permit Fees	Oil & Gas	$90.00
 OMIMEX RESOURCES INC	ONRR - Other Revenues	N/A	$1,308.00
 OMIMEX RESOURCES INC	ONRR - Other Revenues	Oil & Gas	$21,443.03
@@ -1749,8 +1749,8 @@ OXBOW ENERGY CORP	ONRR/BLM - Rents	Oil & Gas	$113,346.70
 OXBOW MINING INC	BLM - Permit Fees	Coal	$21,643.05
 OXBOW MINING INC	ONRR - Royalties	Coal	$1,255,595.27
 OXBOW MINING INC	ONRR/BLM - Rents	Coal	$17,790.00
-OXBOW MINING INC	OSMRE - AML Fees including Audits and Late Charges 	Coal	$156,407.45
-OXFORD MINING CO LLC                                   	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,297,285.03
+OXBOW MINING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$156,407.45
+OXFORD MINING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,297,285.03
 P4 PRODUCTION LLC	ONRR - Other Revenues	Phosphate	$25,650.00
 P4 PRODUCTION LLC	ONRR - Royalties	Other Commodities	$1,194,584.37
 P4 PRODUCTION LLC	ONRR/BLM - Rents	Phosphate	$120.00
@@ -1766,28 +1766,28 @@ PACIFIC OPERATORS OFFSHORE LLC	ONRR - Other Revenues	N/A	$326.96
 PACIFIC OPERATORS OFFSHORE LLC	ONRR - Other Revenues	Oil & Gas	$273,520.21
 PACIFIC OPERATORS OFFSHORE LLC	ONRR - Royalties	Gas	$147,093.27
 PACIFIC OPERATORS OFFSHORE LLC	ONRR - Royalties	Oil	$4,043,693.72
-PACIFICORP                                                  	ONRR - Other Revenues	Coal	$190.69
-PACIFICORP                                                  	ONRR - Royalties	Coal	$16,849,005.57
-PACIFICORP                                                  	ONRR/BLM - Bonus	Coal	$230,000.00
-PACIFICORP                                                  	ONRR/BLM - Rents	Coal	$94,927.50
-PACIFICORP                                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$359,702.21
+PACIFICORP	ONRR - Other Revenues	Coal	$190.69
+PACIFICORP	ONRR - Royalties	Coal	$16,849,005.57
+PACIFICORP	ONRR/BLM - Bonus	Coal	$230,000.00
+PACIFICORP	ONRR/BLM - Rents	Coal	$94,927.50
+PACIFICORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$359,702.21
 PALM ENERGY PARTNERS LLC	ONRR - Inspection Fees	Oil & Gas	$67,400.00
-PALM ENERGY PARTNERS LLC	ONRR - Other Revenues	Oil & Gas	($134,206.05)
+PALM ENERGY PARTNERS LLC	ONRR - Other Revenues	Oil & Gas	-$134,206.05
 PALM ENERGY PARTNERS LLC	ONRR - Royalties	Gas	$4,973,219.28
 PALM ENERGY PARTNERS LLC	ONRR - Royalties	Oil	$18,033,549.96
 PALM ENERGY PARTNERS LLC	ONRR/BLM - Bonus	Oil & Gas	$339,150.00
 PALM ENERGY PARTNERS LLC	ONRR/BLM - Rents	Oil & Gas	$234,436.00
 PALMER PETROLEUM INC	ONRR - Royalties	Oil	$179,319.37
 PALMER PETROLEUM INC	ONRR/BLM - Rents	Oil & Gas	$400.00
-PANTHER LLC                                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$261,688.22
+PANTHER LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$261,688.22
 PAR MINERALS CORP	ONRR - Other Revenues	Oil & Gas	$2,402.15
 PAR MINERALS CORP	ONRR - Royalties	Gas	$120,500.91
 PAR MINERALS CORP	ONRR - Royalties	Oil	$79,903.24
 PAR MINERALS CORP	ONRR/BLM - Rents	Oil & Gas	$61.50
 PAR PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$205.00
 PAR PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$101.41
-PAR PETROLEUM CORP	ONRR - Royalties	Gas	($26,269.23)
-PAR PETROLEUM CORP	ONRR - Royalties	Oil	($67.35)
+PAR PETROLEUM CORP	ONRR - Royalties	Gas	-$26,269.23
+PAR PETROLEUM CORP	ONRR - Royalties	Oil	-$67.35
 PAR PETROLEUM CORP	ONRR/BLM - Rents	Oil & Gas	$250,266.50
 PARADIGM MINERALS USA CORP	BLM - Permit Fees	Locatable Minerals	$124,853.00
 PATARA OIL & GAS LLC	ONRR - Other Revenues	Oil & Gas	$8,581.68
@@ -1797,7 +1797,7 @@ PATARA OIL & GAS LLC	ONRR/BLM - Rents	Oil & Gas	$103,233.50
 PAUL & LYNN SAWYER REV LIVING TRUST	BLM - Permit Fees	Oil & Gas	$750.00
 PAUL & LYNN SAWYER REV LIVING TRUST	ONRR/BLM - Bonus	Oil & Gas	$157,936.00
 PAUL & LYNN SAWYER REV LIVING TRUST	ONRR/BLM - Rents	Oil & Gas	$28,431.00
-PBS COALS INC                                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$147,765.79
+PBS COALS INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$147,765.79
 PDP ROYALTY LLC	ONRR/BLM - Rents	Oil & Gas	$164,832.00
 PEABODY ENERGY CORP	BLM - Permit Fees	Coal	$3,045.63
 PEABODY ENERGY CORP	BLM - Permit Fees	Mineral Materials	$171.36
@@ -1808,8 +1808,8 @@ PEABODY ENERGY CORP	ONRR - Royalties	Gas	$2,557.74
 PEABODY ENERGY CORP	ONRR - Royalties	Oil	$34,263.10
 PEABODY ENERGY CORP	ONRR/BLM - Bonus	Coal	$276,787,575.70
 PEABODY ENERGY CORP	ONRR/BLM - Rents	Coal	$192,209.03
-PEABODY ENERGY CORP	OSMRE - AML Fees including Audits and Late Charges 	Coal	$48,492,478.22
-PEABODY ENERGY CORP	OSMRE - Civil Penalties including Late Charges (OSMRE)	N/A	$2,760.00
+PEABODY ENERGY CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$48,492,478.22
+PEABODY ENERGY CORP	OSMRE - Civil Penalties including Late Charges	N/A	$2,760.00
 PEAK POWDER RIVER RESOURCES LLC	BLM - Permit Fees	Oil & Gas	$63,655.00
 PEAK POWDER RIVER RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$240.00
 PEAK POWDER RIVER RESOURCES LLC	ONRR - Royalties	Gas	$3,978.98
@@ -1820,7 +1820,7 @@ PEAKE LAND SERVICES LLC	BLM - Permit Fees	Locatable Minerals	$137,760.00
 PEAKVIEW ENERGY CO LLC	BLM - Permit Fees	Oil & Gas	$1,865.00
 PEAKVIEW ENERGY CO LLC	ONRR/BLM - Bonus	Oil & Gas	$144,558.00
 PEAKVIEW ENERGY CO LLC	ONRR/BLM - Rents	Oil & Gas	$2,259.00
-PENN OHIO COAL CO DBA KIMBLE                                	OSMRE - AML Fees including Audits and Late Charges 	Coal	$106,702.62
+PENN OHIO COAL CO DBA KIMBLE	OSMRE - AML Fees including Audits and Late Charges	Coal	$106,702.62
 PERCHERON ENERGY LLC	BLM - Permit Fees	Oil & Gas	$450.00
 PERCHERON ENERGY LLC	ONRR/BLM - Bonus	Oil & Gas	$1,208,550.00
 PERCHERON ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$10,318.50
@@ -1867,11 +1867,11 @@ PETROQUEST ENERGY LLC	ONRR - Other Revenues	Oil & Gas	$845,121.91
 PETROQUEST ENERGY LLC	ONRR - Royalties	Gas	$2,045,588.08
 PETROQUEST ENERGY LLC	ONRR - Royalties	Oil	$7,042,767.95
 PETROQUEST ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$20,376.00
-PETROX RESOURCES INC	ONRR - Other Revenues	Oil & Gas	($461.47)
+PETROX RESOURCES INC	ONRR - Other Revenues	Oil & Gas	-$461.47
 PETROX RESOURCES INC	ONRR - Royalties	Gas	$111,401.75
 PETSEC ENERGY INC	ONRR - Inspection Fees	Oil & Gas	$102,000.00
 PETSEC ENERGY INC	ONRR - Other Revenues	N/A	$117.21
-PETSEC ENERGY INC	ONRR - Other Revenues	Oil & Gas	($183.84)
+PETSEC ENERGY INC	ONRR - Other Revenues	Oil & Gas	-$183.84
 PETSEC ENERGY INC	ONRR - Royalties	Gas	$948,752.18
 PETSEC ENERGY INC	ONRR - Royalties	Oil	$293,960.26
 PETSEC ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$185,181.00
@@ -1897,18 +1897,18 @@ PIERCE & PIERCE LLC	ONRR/BLM - Bonus	Oil & Gas	$6,542,000.00
 PIERCE & PIERCE LLC	ONRR/BLM - Rents	Oil & Gas	$1,260.00
 PILOT GOLD USA INC	BLM - Permit Fees	Locatable Minerals	$923,193.00
 PILOT GOLD USA INC	BLM - Permit Fees	Mineral Materials	$2,522.00
-PINE BRANCH COAL SALES INC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$114,063.62
-PINE BRANCH MINING LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$434,965.05
+PINE BRANCH COAL SALES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$114,063.62
+PINE BRANCH MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$434,965.05
 PINEDALE INVESTMENT INC	ONRR - Royalties	Gas	$21,172.30
 PINEDALE INVESTMENT INC	ONRR - Royalties	Oil	$212,557.26
-PINNACLE MINING CO LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$295,857.20
+PINNACLE MINING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$295,857.20
 PIONEER GYPSUM MINING INC	BLM - Permit Fees	Locatable Minerals	$345,092.00
-PIONEER NATURAL RESOURCES USA INC	ONRR - Other Revenues	Oil & Gas	($21,887.89)
+PIONEER NATURAL RESOURCES USA INC	ONRR - Other Revenues	Oil & Gas	-$21,887.89
 PIONEER NATURAL RESOURCES USA INC	ONRR - Royalties	Gas	$1,087,922.99
 PIONEER NATURAL RESOURCES USA INC	ONRR/BLM - Bonus	Oil & Gas	$35,915.00
 PIONEER NATURAL RESOURCES USA INC	ONRR/BLM - Rents	Oil & Gas	$115,039.00
 PIONEER OIL & GAS CORP	BLM - Permit Fees	Oil & Gas	$620.00
-PIONEER OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	($59.96)
+PIONEER OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	-$59.96
 PIONEER OIL & GAS CORP	ONRR - Royalties	Gas	$11,857.00
 PIONEER OIL & GAS CORP	ONRR - Royalties	Oil	$1,807.00
 PIONEER OIL & GAS CORP	ONRR/BLM - Bonus	Oil & Gas	$101,992.00
@@ -1918,29 +1918,29 @@ PLAINS MARKETING LP	ONRR - Other Revenues	N/A	$428.00
 PLAINS MARKETING LP	ONRR - Other Revenues	Oil & Gas	$731.59
 PLAINS MARKETING LP	ONRR - Royalties	Gas	$67,589.31
 PLAINS MARKETING LP	ONRR - Royalties	Oil	$7,238,191.55
-POCAHONTAS COAL CO LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$227,890.25
+POCAHONTAS COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$227,890.25
 POC-I LLC	ONRR - Other Revenues	Oil & Gas	$1,602.00
 POC-I LLC	ONRR - Royalties	Gas	$10,459.00
 POC-I LLC	ONRR - Royalties	Oil	$325,317.49
-PONTIKI COAL LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$152,836.60
+PONTIKI COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$152,836.60
 POWERTECH (USA) INC	BLM - Permit Fees	Locatable Minerals	$167,575.92
 PPC OPERATING CO LLC	BLM - Permit Fees	Oil & Gas	$2,220.00
 PPC OPERATING CO LLC	ONRR - Other Revenues	Oil & Gas	$798.42
 PPC OPERATING CO LLC	ONRR - Royalties	Gas	$29,494.55
 PPC OPERATING CO LLC	ONRR - Royalties	Oil	$425,941.02
 PPC OPERATING CO LLC	ONRR/BLM - Rents	Oil & Gas	$2,483.00
-PRAIRIE STATE GENERATING CO LLC                             	OSMRE - AML Fees including Audits and Late Charges 	Coal	$580,836.24
-PREMIER ELKHORN COAL CO                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$365,501.11
+PRAIRIE STATE GENERATING CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$580,836.24
+PREMIER ELKHORN COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$365,501.11
 PREMIER NATURAL RESOURCES II LLC	BLM - Permit Fees	Oil & Gas	$39,000.00
 PREMIER NATURAL RESOURCES II LLC	ONRR - Royalties	Gas	$1,355,565.85
 PREMIER NATURAL RESOURCES II LLC	ONRR - Royalties	Oil	$247,702.35
-PREMIUM COAL CO INC	OSMRE - Civil Penalties including Late Charges (OSMRE)	N/A	$123,987.57
+PREMIUM COAL CO INC	OSMRE - Civil Penalties including Late Charges	N/A	$123,987.57
 PREMIUM EXPLORATION INC	BLM - Permit Fees	Locatable Minerals	$210,560.00
 PRIDE ENERGY CO	BLM - Permit Fees	Oil & Gas	$170.00
 PRIDE ENERGY CO	ONRR - Other Revenues	Oil & Gas	$4,038.99
 PRIDE ENERGY CO	ONRR - Royalties	Gas	$61,592.37
 PRIDE ENERGY CO	ONRR - Royalties	Oil	$201,348.88
-PRIDE ENERGY CO	ONRR/BLM - Bonus	Oil & Gas	($27,950.00)
+PRIDE ENERGY CO	ONRR/BLM - Bonus	Oil & Gas	-$27,950.00
 PRIDE ENERGY CO	ONRR/BLM - Rents	Oil & Gas	$4,785.50
 PRIMA EXPLORATION INC	BLM - Permit Fees	Oil & Gas	$2,665.00
 PRIMA EXPLORATION INC	ONRR - Other Revenues	Oil & Gas	$924.31
@@ -1953,22 +1953,22 @@ PRIMERO OPERATING INC	ONRR - Royalties	Oil	$59,166.77
 PRINCIPLE PETROLEUM PARTNERS LLC	BLM - Permit Fees	Oil & Gas	$6,650.00
 PRINCIPLE PETROLEUM PARTNERS LLC	ONRR/BLM - Bonus	Oil & Gas	$364,800.00
 PRINCIPLE PETROLEUM PARTNERS LLC	ONRR/BLM - Rents	Oil & Gas	$720.00
-PRITCHARD MINING CO INC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$113,691.96
-PROBE RESOURCES US LTD	ONRR - Civil Penalties (ONRR)	N/A	$200,000.00
+PRITCHARD MINING CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$113,691.96
+PROBE RESOURCES US LTD	ONRR - Civil Penalties	N/A	$200,000.00
 PROBE RESOURCES US LTD	ONRR - Inspection Fees	Oil & Gas	$98,900.00
 PROBE RESOURCES US LTD	ONRR - Other Revenues	N/A	$474.72
-PROBE RESOURCES US LTD	ONRR - Other Revenues	Oil & Gas	($27,784.31)
+PROBE RESOURCES US LTD	ONRR - Other Revenues	Oil & Gas	-$27,784.31
 PROBE RESOURCES US LTD	ONRR - Royalties	Gas	$2,441,921.80
 PROBE RESOURCES US LTD	ONRR - Royalties	Oil	$63,267.28
 PROBE RESOURCES US LTD	ONRR/BLM - Rents	Oil & Gas	$990.00
-PRODUCTION GATHERING CO LP	ONRR - Other Revenues	Oil & Gas	($7,289.74)
+PRODUCTION GATHERING CO LP	ONRR - Other Revenues	Oil & Gas	-$7,289.74
 PRODUCTION GATHERING CO LP	ONRR - Royalties	Gas	$389,856.06
 PURE PETROLEUM LLC	ONRR - Other Revenues	N/A	$436.00
 PURE PETROLEUM LLC	ONRR - Other Revenues	Oil & Gas	$183,681.52
 PYRAMID CONSTRUCTION AND AGGREGATES INC	BLM - Permit Fees	Mineral Materials	$258,462.73
 QEP RESOURCES CO	BLM - Permit Fees	Oil & Gas	$1,967,395.00
 QEP RESOURCES CO	ONRR - Other Revenues	N/A	$1,926.00
-QEP RESOURCES CO	ONRR - Other Revenues	Oil & Gas	($331,054.73)
+QEP RESOURCES CO	ONRR - Other Revenues	Oil & Gas	-$331,054.73
 QEP RESOURCES CO	ONRR - Royalties	Gas	$64,169,851.53
 QEP RESOURCES CO	ONRR - Royalties	Oil	$31,484,095.35
 QEP RESOURCES CO	ONRR/BLM - Bonus	Oil & Gas	$23,710.00
@@ -1981,7 +1981,7 @@ QUESTAR CORP	ONRR - Royalties	Gas	$25,627,037.10
 QUESTAR CORP	ONRR - Royalties	Oil	$3,955,612.51
 QUESTAR CORP	ONRR/BLM - Rents	Oil & Gas	$16,240.50
 QUICKSILVER RESOURCES INC	BLM - Permit Fees	Oil & Gas	$3,235.00
-QUICKSILVER RESOURCES INC	ONRR - Other Revenues	Oil & Gas	($16,135.21)
+QUICKSILVER RESOURCES INC	ONRR - Other Revenues	Oil & Gas	-$16,135.21
 QUICKSILVER RESOURCES INC	ONRR - Royalties	Gas	$13,659.78
 QUICKSILVER RESOURCES INC	ONRR - Royalties	Oil	$57,817.61
 QUICKSILVER RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$172,133.33
@@ -2012,10 +2012,10 @@ REAGAN SMITH ENERGY SOLUTIONS INC	ONRR/BLM - Bonus	Oil & Gas	$321,014.00
 REAGAN SMITH ENERGY SOLUTIONS INC	ONRR/BLM - Rents	Oil & Gas	$646.50
 RED MOUNTAIN MINING INC	BLM - Permit Fees	Locatable Minerals	$98,280.00
 RED MOUNTAIN MINING INC	BLM - Permit Fees	Mineral Materials	$40,677.27
-RED RIVER COAL CO INC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$298,585.95
+RED RIVER COAL CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$298,585.95
 RED WILLOW PRODUCTION CO	BLM - Permit Fees	Oil & Gas	$2,765.00
 RED WILLOW PRODUCTION CO	ONRR - Other Revenues	N/A	$214.00
-RED WILLOW PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	($73,747.52)
+RED WILLOW PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	-$73,747.52
 RED WILLOW PRODUCTION CO	ONRR - Royalties	Gas	$236,351.10
 REDHAWK COPPER INC	BLM - Permit Fees	Locatable Minerals	$118,640.00
 REDWOLF PRODUCTION INC	ONRR - Other Revenues	Oil & Gas	$2,496.21
@@ -2036,17 +2036,17 @@ REPSOL E&P USA INC	ONRR - Royalties	Gas	$963,942.53
 REPSOL E&P USA INC	ONRR - Royalties	Oil	$43,024,090.87
 REPSOL E&P USA INC	ONRR/BLM - Bonus	Oil & Gas	$611,351.00
 REPSOL E&P USA INC	ONRR/BLM - Rents	Oil & Gas	$5,699,606.82
-RES COAL LLC                                                	OSMRE - AML Fees including Audits and Late Charges 	Coal	$141,430.09
+RES COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$141,430.09
 RESOLUTION COPPER MINING	BLM - Permit Fees	Locatable Minerals	$322,700.00
 RETAMCO OPERATING INC	BLM - Permit Fees	Oil & Gas	$5,375.00
 RETAMCO OPERATING INC	ONRR - Other Revenues	Oil & Gas	$9,260.36
 RETAMCO OPERATING INC	ONRR - Royalties	Oil	$7,996.66
 RETAMCO OPERATING INC	ONRR/BLM - Bonus	Oil & Gas	$310,112.50
 RETAMCO OPERATING INC	ONRR/BLM - Rents	Oil & Gas	$453,133.58
-REVELATION ENERGY LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$903,058.58
+REVELATION ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$903,058.58
 RHINO RESOURCE PARTNERS LP	ONRR - Royalties	Coal	$1,686,578.93
 RHINO RESOURCE PARTNERS LP	ONRR/BLM - Rents	Coal	$52,193.13
-RHINO RESOURCE PARTNERS LP	OSMRE - AML Fees including Audits and Late Charges 	Coal	$114,482.88
+RHINO RESOURCE PARTNERS LP	OSMRE - AML Fees including Audits and Late Charges	Coal	$114,482.88
 RICHARDSON OIL	BLM - Permit Fees	Oil & Gas	$7,860.00
 RICHARDSON OIL	ONRR - Other Revenues	Oil & Gas	$21,771.09
 RICHARDSON OIL	ONRR - Royalties	Gas	$314,278.85
@@ -2058,7 +2058,7 @@ RIDGELAKE ENERGY INC	ONRR - Royalties	Gas	$257,516.20
 RIDGELAKE ENERGY INC	ONRR - Royalties	Oil	$1,112,910.90
 RIDGELAKE ENERGY INC	ONRR/BLM - Bonus	Oil & Gas	$290,594.00
 RIDGELAKE ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$33,499.00
-RIDGEWOOD ENERGY CORP	ONRR - Other Revenues	Oil & Gas	($363,809.70)
+RIDGEWOOD ENERGY CORP	ONRR - Other Revenues	Oil & Gas	-$363,809.70
 RIDGEWOOD ENERGY CORP	ONRR - Royalties	Gas	$1,811,945.12
 RIDGEWOOD ENERGY CORP	ONRR - Royalties	Oil	$5,175,592.10
 RIDGEWOOD ENERGY CORP	ONRR/BLM - Bonus	Oil & Gas	$34,900,493.00
@@ -2071,7 +2071,7 @@ RIM OPERATING INC	ONRR - Royalties	Oil	$1,366,935.90
 RIO GRANDE SILVER INC	BLM - Permit Fees	Locatable Minerals	$100,004.00
 RISING NATURAL RESOURCES LLC	ONRR/BLM - Bonus	Oil & Gas	$800,000.00
 RISING NATURAL RESOURCES LLC	ONRR/BLM - Rents	Oil & Gas	$126,720.00
-RIVER VIEW COAL LLC                                         	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,106,122.29
+RIVER VIEW COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,106,122.29
 RIVERSTONE HOLDINGS LLC	BLM - Permit Fees	Oil & Gas	$13,350.00
 RIVERSTONE HOLDINGS LLC	ONRR - Other Revenues	Oil & Gas	$6,792.53
 RIVERSTONE HOLDINGS LLC	ONRR - Royalties	Gas	$43,479.66
@@ -2098,15 +2098,15 @@ ROCKIES STANDARD OIL CO LLC	BLM - Permit Fees	Oil & Gas	$20,880.00
 ROCKIES STANDARD OIL CO LLC	ONRR/BLM - Rents	Oil & Gas	$168,699.00
 ROCKSOURCE GULF OF MEXICO CORP	ONRR/BLM - Rents	Oil & Gas	$560,313.00
 RODDY PRODUCTION CO LLC	BLM - Permit Fees	Oil & Gas	$250.00
-RODDY PRODUCTION CO LLC	ONRR - Other Revenues	Oil & Gas	($662.56)
+RODDY PRODUCTION CO LLC	ONRR - Other Revenues	Oil & Gas	-$662.56
 RODDY PRODUCTION CO LLC	ONRR - Royalties	Gas	$188,439.57
 RODDY PRODUCTION CO LLC	ONRR - Royalties	Oil	$3,457.81
-ROOSTER OIL & GAS	ONRR - Other Revenues	Oil & Gas	($220,399.23)
+ROOSTER OIL & GAS	ONRR - Other Revenues	Oil & Gas	-$220,399.23
 ROOSTER OIL & GAS	ONRR - Royalties	Gas	$1,809,666.40
 ROOSTER OIL & GAS	ONRR - Royalties	Oil	$7,653,520.40
 ROOSTER OIL & GAS	ONRR/BLM - Bonus	Oil & Gas	$251,172.00
 ROOSTER OIL & GAS	ONRR/BLM - Rents	Oil & Gas	$57,582.00
-ROSEBUD MINING CO                                           	OSMRE - AML Fees including Audits and Late Charges 	Coal	$826,872.91
+ROSEBUD MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$826,872.91
 ROSEMONT COPPER CO	BLM - Permit Fees	Locatable Minerals	$148,589.00
 ROSETTA RESOURCES OPERATING LP	BLM - Permit Fees	Oil & Gas	$1,977.00
 ROSETTA RESOURCES OPERATING LP	ONRR - Other Revenues	N/A	$761.00
@@ -2123,7 +2123,7 @@ ROSS EXPLORATIONS INC	ONRR - Royalties	Gas	$289,874.47
 ROSS EXPLORATIONS INC	ONRR/BLM - Rents	Oil & Gas	$36,658.00
 ROUND MOUNTAIN GOLD CORP	BLM - Permit Fees	Locatable Minerals	$558,800.00
 ROUNDTREE AND ASSOCIATES INC	ONRR - Royalties	Oil	$644,590.52
-ROXCOAL INC                                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$117,409.62
+ROXCOAL INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$117,409.62
 ROYAL HOLDINGS	ONRR/BLM - Rents	Oil & Gas	$279,825.00
 ROYAL PRODUCTION CO INC	ONRR - Inspection Fees	Oil & Gas	$34,000.00
 ROYAL PRODUCTION CO INC	ONRR - Other Revenues	Oil & Gas	$27,015.20
@@ -2150,13 +2150,13 @@ SAMSON RESOURCES CO	ONRR/BLM - Rents	Oil & Gas	$1,149,281.50
 SAMSUNG C&T AMERICA INC	ONRR - Other Revenues	Oil & Gas	$35,202.03
 SAMSUNG C&T AMERICA INC	ONRR - Royalties	Gas	$1,499,839.64
 SAMSUNG C&T AMERICA INC	ONRR - Royalties	Oil	$9,621,513.71
-SAN MIGUEL ELECTRIC COOPERATIV                              	OSMRE - AML Fees including Audits and Late Charges 	Coal	$231,502.83
-SANDLICK COAL CO LLC                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$162,109.10
+SAN MIGUEL ELECTRIC COOPERATIV	OSMRE - AML Fees including Audits and Late Charges	Coal	$231,502.83
+SANDLICK COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$162,109.10
 SANDRIDGE ENERGY INC	BLM - Permit Fees	Oil & Gas	$13,000.00
-SANDRIDGE ENERGY INC	ONRR - Civil Penalties (ONRR)	N/A	$780,300.00
+SANDRIDGE ENERGY INC	ONRR - Civil Penalties	N/A	$780,300.00
 SANDRIDGE ENERGY INC	ONRR - Inspection Fees	Oil & Gas	$2,805,399.44
 SANDRIDGE ENERGY INC	ONRR - Other Revenues	N/A	$9,789.47
-SANDRIDGE ENERGY INC	ONRR - Other Revenues	Oil & Gas	($2,287,234.94)
+SANDRIDGE ENERGY INC	ONRR - Other Revenues	Oil & Gas	-$2,287,234.94
 SANDRIDGE ENERGY INC	ONRR - Royalties	Gas	$26,161,968.50
 SANDRIDGE ENERGY INC	ONRR - Royalties	Oil	$106,835,695.17
 SANDRIDGE ENERGY INC	ONRR/BLM - Bonus	Oil & Gas	$458,360.00
@@ -2172,14 +2172,14 @@ SCHUTZ DOUG J	ONRR/BLM - Bonus	Oil & Gas	$1,444,800.00
 SCHUTZ DOUG J	ONRR/BLM - Rents	Oil & Gas	$12,218.50
 SEARLES VALLEY MINERALS	ONRR - Other Revenues	N/A	$214.00
 SEARLES VALLEY MINERALS	ONRR - Royalties	Other Commodities	$8,742,199.96
-SEBREE MINING LLC                                           	OSMRE - AML Fees including Audits and Late Charges 	Coal	$266,648.28
+SEBREE MINING LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$266,648.28
 SEELEY OIL CO	BLM - Permit Fees	Oil & Gas	$85.00
 SEELEY OIL CO	ONRR - Other Revenues	Oil & Gas	$76.00
 SEELEY OIL CO	ONRR - Royalties	Gas	$32,362.32
 SEELEY OIL CO	ONRR - Royalties	Oil	$281,433.04
 SEELEY OIL CO	ONRR/BLM - Rents	Oil & Gas	$135.00
 SEQUEL ENERGY LLC	BLM - Permit Fees	Oil & Gas	$33,159.00
-SEQUEL ENERGY LLC	ONRR - Other Revenues	Oil & Gas	($4,719.33)
+SEQUEL ENERGY LLC	ONRR - Other Revenues	Oil & Gas	-$4,719.33
 SEQUEL ENERGY LLC	ONRR - Royalties	Gas	$65,264.04
 SEQUEL ENERGY LLC	ONRR - Royalties	Oil	$724,542.72
 SEQUEL ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$800.00
@@ -2192,7 +2192,7 @@ SG INTERESTS LTD	ONRR - Royalties	Oil	$77,922.46
 SG INTERESTS LTD	ONRR/BLM - Bonus	Oil & Gas	$160,050.00
 SG INTERESTS LTD	ONRR/BLM - Rents	Oil & Gas	$102,856.50
 SHAMROCK METALS LLC	BLM - Permit Fees	Locatable Minerals	$165,900.00
-SHANNON LLC                                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$125,109.73
+SHANNON LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$125,109.73
 SHD OIL & GAS LLC	BLM - Permit Fees	Oil & Gas	$117,000.00
 SHELL	BLM - Permit Fees	Mineral Materials	$1,962.68
 SHELL	BLM - Permit Fees	Oil & Gas	$19,537.00
@@ -2206,7 +2206,7 @@ SHELL	ONRR - Royalties	Oil	$645,998,965.92
 SHELL	ONRR/BLM - Bonus	Oil & Gas	$142,512,509.00
 SHELL	ONRR/BLM - Rents	Oil & Gas	$26,654,117.79
 SHELL	ONRR/BLM - Rents	Oil Shale	$932.00
-SHELL	ONRR/BLM - Rents	Sodium	($6,561.00)
+SHELL	ONRR/BLM - Rents	Sodium	-$6,561.00
 SHERIDAN PRODUCTION CO LLC	BLM - Permit Fees	Oil & Gas	$34,030.00
 SHERIDAN PRODUCTION CO LLC	ONRR - Other Revenues	Oil & Gas	$26,382.36
 SHERIDAN PRODUCTION CO LLC	ONRR - Royalties	Gas	$45,141.02
@@ -2219,7 +2219,7 @@ SIGNAL HILL CO LLC	ONRR - Royalties	Gas	$3,872.26
 SIGNAL HILL CO LLC	ONRR - Royalties	Oil	$2,470,969.07
 SIGNAL HILL CO LLC	ONRR/BLM - Rents	Oil & Gas	$2,222.00
 SIGNAL PEAK ENERGY LLC	BLM - Permit Fees	Coal	$310.00
-SIGNAL PEAK ENERGY LLC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$796,770.03
+SIGNAL PEAK ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$796,770.03
 SILVER RESERVE CORP	BLM - Permit Fees	Locatable Minerals	$139,370.00
 SINCLAIR	BLM - Permit Fees	Oil & Gas	$6,760.00
 SINCLAIR	ONRR - Other Revenues	Oil & Gas	$13,070.64
@@ -2246,15 +2246,15 @@ SNOW OIL & GAS INC	ONRR - Royalties	Oil	$81,950.16
 SNOWSTORM EXPLORATION LLC	BLM - Permit Fees	Locatable Minerals	$184,738.00
 SOC RESOURCES INC	ONRR - Royalties	Oil	$498,518.96
 SOJITZ ENERGY VENTURE INC	ONRR - Inspection Fees	Oil & Gas	$17,000.00
-SOJITZ ENERGY VENTURE INC	ONRR - Other Revenues	Oil & Gas	($482,377.51)
+SOJITZ ENERGY VENTURE INC	ONRR - Other Revenues	Oil & Gas	-$482,377.51
 SOJITZ ENERGY VENTURE INC	ONRR - Royalties	Gas	$72,267.95
 SOJITZ ENERGY VENTURE INC	ONRR - Royalties	Oil	$9,772,553.58
 SOJITZ ENERGY VENTURE INC	ONRR/BLM - Rents	Oil & Gas	$60.00
-SOLAR SOURCES INC                                           	OSMRE - AML Fees including Audits and Late Charges 	Coal	$552,270.80
+SOLAR SOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$552,270.80
 SOLVAY	ONRR - Other Revenues	Phosphate	$8,325.00
 SOLVAY	ONRR - Other Revenues	Sodium	$52,386.00
 SOLVAY	ONRR - Royalties	Other Commodities	$9,561,054.50
-SOLVAY	ONRR/BLM - Rents	Phosphate	($2,519.00)
+SOLVAY	ONRR/BLM - Rents	Phosphate	-$2,519.00
 SOLVAY	ONRR/BLM - Rents	Sodium	$18,048.00
 SOMONT OIL CO INC	BLM - Permit Fees	Oil & Gas	$1,615.00
 SOMONT OIL CO INC	ONRR - Other Revenues	Oil & Gas	$2,325.86
@@ -2265,7 +2265,7 @@ SOUTHERN BAY OPERATING LLC	BLM - Permit Fees	Oil & Gas	$340.00
 SOUTHERN BAY OPERATING LLC	ONRR - Other Revenues	Oil & Gas	$3,549.07
 SOUTHERN BAY OPERATING LLC	ONRR - Royalties	Oil	$108,643.51
 SOUTHERN BAY OPERATING LLC	ONRR/BLM - Rents	Oil & Gas	$5,939.00
-SOUTHERN CALIFORNIA PUBLIC POWER AUTHORITY	ONRR - Other Revenues	Oil & Gas	($102,754.20)
+SOUTHERN CALIFORNIA PUBLIC POWER AUTHORITY	ONRR - Other Revenues	Oil & Gas	-$102,754.20
 SOUTHERN CALIFORNIA PUBLIC POWER AUTHORITY	ONRR - Royalties	Gas	$5,427,848.08
 SOUTHWESTERN ENERGY PRODUCTION CO	BLM - Permit Fees	Oil & Gas	$117,355.00
 SOUTHWESTERN ENERGY PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	$17,596.93
@@ -2273,7 +2273,7 @@ SOUTHWESTERN ENERGY PRODUCTION CO	ONRR - Royalties	Gas	$2,217,529.77
 SOUTHWESTERN ENERGY PRODUCTION CO	ONRR/BLM - Rents	Oil & Gas	$338,495.35
 SPOONER PETROLEUM CO	ONRR - Royalties	Oil	$113,733.57
 SPOONER PETROLEUM CO	ONRR/BLM - Rents	Oil & Gas	$852.00
-SPRINGFIELD COAL CO LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$150,971.58
+SPRINGFIELD COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$150,971.58
 STAKEHOLDER ENERGY LLC	BLM - Permit Fees	Locatable Minerals	$450,660.00
 STANDARD GOLD CORP	BLM - Permit Fees	Locatable Minerals	$115,630.00
 STANDARD STEAM TRUST LLC	ONRR - Other Revenues	N/A	$6,111.00
@@ -2281,7 +2281,7 @@ STANDARD STEAM TRUST LLC	ONRR/BLM - Rents	Geothermal	$214,944.00
 STATOIL	BLM - Permit Fees	Oil & Gas	$104,335.00
 STATOIL	ONRR - Inspection Fees	Oil & Gas	$152,500.00
 STATOIL	ONRR - Other Revenues	N/A	$436.00
-STATOIL	ONRR - Other Revenues	Oil & Gas	($385,477.73)
+STATOIL	ONRR - Other Revenues	Oil & Gas	-$385,477.73
 STATOIL	ONRR - Royalties	Gas	$3,023,026.87
 STATOIL	ONRR - Royalties	Oil	$89,584,930.72
 STATOIL	ONRR/BLM - Bonus	Oil & Gas	$106,091,454.00
@@ -2290,14 +2290,14 @@ STEPHENS & JOHNSON OPERATING CO	ONRR - Royalties	Gas	$1,160.54
 STEPHENS & JOHNSON OPERATING CO	ONRR - Royalties	Oil	$549,949.95
 STEPHENS PRODUCTION CO	BLM - Permit Fees	Oil & Gas	$7,325.00
 STEPHENS PRODUCTION CO	ONRR - Other Revenues	N/A	$214.00
-STEPHENS PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	($33,758.22)
+STEPHENS PRODUCTION CO	ONRR - Other Revenues	Oil & Gas	-$33,758.22
 STEPHENS PRODUCTION CO	ONRR - Royalties	Gas	$490,182.25
 STEPHENS PRODUCTION CO	ONRR/BLM - Bonus	Oil & Gas	$135,090.00
 STEPHENS PRODUCTION CO	ONRR/BLM - Rents	Oil & Gas	$130,196.50
 STERLING GOLD MINING CORP	BLM - Permit Fees	Locatable Minerals	$124,880.00
 STILLWATER MINING CO	BLM - Permit Fees	Locatable Minerals	$191,660.00
 STONE ENERGY	BLM - Permit Fees	Oil & Gas	$3,315.00
-STONE ENERGY	ONRR - Civil Penalties (ONRR)	N/A	$35,000.00
+STONE ENERGY	ONRR - Civil Penalties	N/A	$35,000.00
 STONE ENERGY	ONRR - Inspection Fees	Oil & Gas	$2,051,200.00
 STONE ENERGY	ONRR - Other Revenues	Oil & Gas	$2,525,738.84
 STONE ENERGY	ONRR - Royalties	Gas	$15,153,596.90
@@ -2319,7 +2319,7 @@ STRATA PRODUCTION CO	ONRR - Royalties	Gas	$195,425.78
 STROUD EXPLORATION INC	BLM - Permit Fees	Oil & Gas	$7,520.00
 STROUD EXPLORATION INC	ONRR - Royalties	Oil	$307,204.26
 STROUD EXPLORATION INC	ONRR/BLM - Rents	Oil & Gas	$400.00
-SUGAR CAMP ENERGY LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$698,751.54
+SUGAR CAMP ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$698,751.54
 SUMMIT ENERGY LLC	ONRR - Royalties	Gas	$35,025.11
 SUMMIT ENERGY LLC	ONRR - Royalties	Oil	$74,556.57
 SUMMIT GAS RESOURCES INC	BLM - Permit Fees	Oil & Gas	$260,000.00
@@ -2330,7 +2330,7 @@ SUMMIT OPERATING LLC	ONRR - Other Revenues	Oil & Gas	$1,534.31
 SUMMIT OPERATING LLC	ONRR - Royalties	Gas	$250,028.79
 SUMMIT OPERATING LLC	ONRR - Royalties	Oil	$47,359.47
 SUMMIT OPERATING LLC	ONRR/BLM - Rents	Oil & Gas	$4,400.00
-SUNRISE COAL LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$386,461.19
+SUNRISE COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$386,461.19
 SUNSHINE SILVER MINES CORP	BLM - Permit Fees	Locatable Minerals	$136,360.00
 SUNSHINE VALLEY PETROLEUM CORP	BLM - Permit Fees	Oil & Gas	$345.00
 SUNSHINE VALLEY PETROLEUM CORP	ONRR - Other Revenues	Oil & Gas	$9,990.69
@@ -2352,10 +2352,10 @@ T.H. MCELVAIN OIL & GAS	ONRR - Other Revenues	Oil & Gas	$20,575.25
 T.H. MCELVAIN OIL & GAS	ONRR - Royalties	Gas	$1,553,984.49
 T.H. MCELVAIN OIL & GAS	ONRR - Royalties	Oil	$216,613.78
 T.H. MCELVAIN OIL & GAS	ONRR/BLM - Rents	Oil & Gas	$16,605.50
-TAFT COAL SALES & ASSOC INC                                 	OSMRE - AML Fees including Audits and Late Charges 	Coal	$138,227.35
-TALOS ENERGY LLC	ONRR - Civil Penalties (ONRR)	N/A	$75,000.00
+TAFT COAL SALES & ASSOC INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$138,227.35
+TALOS ENERGY LLC	ONRR - Civil Penalties	N/A	$75,000.00
 TALOS ENERGY LLC	ONRR - Inspection Fees	Oil & Gas	$1,185,000.00
-TALOS ENERGY LLC	ONRR - Other Revenues	Oil & Gas	($882,726.11)
+TALOS ENERGY LLC	ONRR - Other Revenues	Oil & Gas	-$882,726.11
 TALOS ENERGY LLC	ONRR - Royalties	Gas	$5,079,902.65
 TALOS ENERGY LLC	ONRR - Royalties	Oil	$60,645,838.40
 TALOS ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$1,664,388.00
@@ -2365,7 +2365,7 @@ TAMMANY OIL & GAS LLC	ONRR - Royalties	Gas	$1,652,915.09
 TAMMANY OIL & GAS LLC	ONRR - Royalties	Oil	$2,383,121.47
 TAMMANY OIL & GAS LLC	ONRR/BLM - Rents	Oil & Gas	$75.00
 TANA EXPLORATION CO LLC	ONRR - Inspection Fees	Oil & Gas	$1,033,400.00
-TANA EXPLORATION CO LLC	ONRR - Other Revenues	Oil & Gas	($38,966.31)
+TANA EXPLORATION CO LLC	ONRR - Other Revenues	Oil & Gas	-$38,966.31
 TANA EXPLORATION CO LLC	ONRR - Royalties	Gas	$3,552,912.19
 TANA EXPLORATION CO LLC	ONRR - Royalties	Oil	$14,103,076.35
 TANA EXPLORATION CO LLC	ONRR/BLM - Bonus	Oil & Gas	$959,917.00
@@ -2385,9 +2385,9 @@ TARPON	ONRR - Royalties	Gas	$488,316.57
 TARPON	ONRR - Royalties	Oil	$4,116,937.72
 TARPON	ONRR/BLM - Bonus	Oil & Gas	$417,500.00
 TARPON	ONRR/BLM - Rents	Oil & Gas	$240,020.00
-TATA CHEMICALS PARTNERS	ONRR - Other Revenues	Sodium	($109,270.02)
+TATA CHEMICALS PARTNERS	ONRR - Other Revenues	Sodium	-$109,270.02
 TATA CHEMICALS PARTNERS	ONRR - Royalties	Other Commodities	$7,004,012.98
-TATA CHEMICALS PARTNERS	ONRR/BLM - Rents	Sodium	($4,822.00)
+TATA CHEMICALS PARTNERS	ONRR/BLM - Rents	Sodium	-$4,822.00
 TDB RESOURCES LP	BLM - Permit Fees	Oil & Gas	$600.00
 TDB RESOURCES LP	ONRR/BLM - Bonus	Oil & Gas	$4,206,000.00
 TDB RESOURCES LP	ONRR/BLM - Rents	Oil & Gas	$5,112.00
@@ -2407,14 +2407,14 @@ TEXAS ENERGY ACQUISITIONS LP	ONRR/BLM - Rents	Oil & Gas	$25,228.50
 TEXAS PETROLEUM INVESTMENT CO	ONRR - Other Revenues	Oil & Gas	$2,152.79
 TEXAS PETROLEUM INVESTMENT CO	ONRR - Royalties	Gas	$19,639.46
 TEXAS PETROLEUM INVESTMENT CO	ONRR - Royalties	Oil	$1,014,671.24
-TEXAS WESTMORELAND COAL CO                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$396,257.12
-TEXLAND PETROLEUM LP	ONRR - Other Revenues	Oil & Gas	($784.44)
+TEXAS WESTMORELAND COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$396,257.12
+TEXLAND PETROLEUM LP	ONRR - Other Revenues	Oil & Gas	-$784.44
 TEXLAND PETROLEUM LP	ONRR - Royalties	Gas	$41,852.52
 TEXLAND PETROLEUM LP	ONRR - Royalties	Oil	$488,752.17
 TEXLAND PETROLEUM LP	ONRR/BLM - Rents	Oil & Gas	$120.00
-TEXON LP	ONRR - Other Revenues	Oil & Gas	($36,500.00)
+TEXON LP	ONRR - Other Revenues	Oil & Gas	-$36,500.00
 TEXON LP	ONRR - Royalties	Gas	$220,384.94
-THE AMERICAN COAL CO                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,163,042.43
+THE AMERICAN COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,163,042.43
 THE ANSCHUTZ CORP	BLM - Permit Fees	Oil & Gas	$37,710.00
 THE ANSCHUTZ CORP	ONRR - Other Revenues	N/A	$214.00
 THE ANSCHUTZ CORP	ONRR - Other Revenues	Oil & Gas	$2,962.33
@@ -2424,15 +2424,15 @@ THE ANSCHUTZ CORP	ONRR/BLM - Rents	Oil & Gas	$16,254.00
 THE BLANCO CO	BLM - Permit Fees	Oil & Gas	$3,330.00
 THE BLANCO CO	ONRR/BLM - Bonus	Oil & Gas	$1,026,362.00
 THE BLANCO CO	ONRR/BLM - Rents	Oil & Gas	$26,737.50
-THE FALKIRK MINING CO                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$626,174.64
+THE FALKIRK MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$626,174.64
 THE MOSAIC CO	BLM - Permit Fees	Mineral Materials	$5,976.00
 THE MOSAIC CO	ONRR - Other Revenues	Phosphate	$989.00
 THE MOSAIC CO	ONRR - Other Revenues	Potassium	$79,486.02
 THE MOSAIC CO	ONRR - Royalties	Other Commodities	$13,197,648.34
 THE MOSAIC CO	ONRR/BLM - Bonus	Potassium	$936,944.00
-THE MOSAIC CO	ONRR/BLM - Rents	Potassium	($57,062.50)
-THE OHIO VALLEY COAL CO                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$630,989.69
-THE SABINE MINING CO                                        	OSMRE - AML Fees including Audits and Late Charges 	Coal	$314,245.52
+THE MOSAIC CO	ONRR/BLM - Rents	Potassium	-$57,062.50
+THE OHIO VALLEY COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$630,989.69
+THE SABINE MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$314,245.52
 THE TERMO CO	BLM - Permit Fees	Oil & Gas	$340.00
 THE TERMO CO	ONRR - Other Revenues	Oil & Gas	$1,583.55
 THE TERMO CO	ONRR - Royalties	Gas	$80,303.80
@@ -2465,7 +2465,7 @@ TIMBERLINE PROD CO	ONRR - Royalties	Oil	$334,361.95
 TIMBERLINE PROD CO	ONRR/BLM - Rents	Oil & Gas	$12,501.00
 TIMBERLINE RESOURCES CORP	BLM - Permit Fees	Locatable Minerals	$222,864.00
 TONKIN SPRINGS LLC	BLM - Permit Fees	Locatable Minerals	$140,616.00
-TOTAL E&P USA INC	ONRR - Other Revenues	Oil & Gas	($0.01)
+TOTAL E&P USA INC	ONRR - Other Revenues	Oil & Gas	-$0.01
 TOTAL E&P USA INC	ONRR - Royalties	Gas	$1,523,131.29
 TOTAL E&P USA INC	ONRR - Royalties	Oil	$47,998,040.14
 TOTAL E&P USA INC	ONRR/BLM - Rents	Oil & Gas	$640.00
@@ -2476,9 +2476,9 @@ TRACKER RESOURCE DEVELOPMENT	ONRR/BLM - Bonus	Oil & Gas	$1,064,000.00
 TRACKER RESOURCE DEVELOPMENT	ONRR/BLM - Rents	Oil & Gas	$5,102.50
 TRAPPER MINING INC	ONRR - Royalties	Coal	$5,101,769.58
 TRAPPER MINING INC	ONRR/BLM - Rents	Coal	$15,873.00
-TRAPPER MINING INC                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$587,438.86
+TRAPPER MINING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$587,438.86
 TRC CYPRESS GROUP LLC	BLM - Permit Fees	Oil & Gas	$101,875.00
-TRIAD MINING INC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$525,045.77
+TRIAD MINING INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$525,045.77
 TRIDENT USA CORP	ONRR/BLM - Rents	Oil & Gas	$345,578.00
 TRISTAR PRODUCER SERVICES	ONRR - Other Revenues	Oil & Gas	$2.76
 TRISTAR PRODUCER SERVICES	ONRR - Royalties	Gas	$214,109.93
@@ -2490,21 +2490,21 @@ TRUE OIL	ONRR - Royalties	Oil	$9,609,409.53
 TRUE OIL	ONRR/BLM - Rents	Oil & Gas	$82,952.50
 TRUJILLO ANN M	ONRR/BLM - Bonus	Oil & Gas	$1,407,000.00
 TRUJILLO ANN M	ONRR/BLM - Rents	Oil & Gas	$46,359.00
-TUNNEL RIDGE LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$436,791.31
+TUNNEL RIDGE LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$436,791.31
 TURLOCK IRRIGATION DISTRICT	ONRR - Royalties	Gas	$514,239.52
 TURNER PETROLEUM LAND SERVICES INC	BLM - Permit Fees	Oil & Gas	$150.00
 TURNER PETROLEUM LAND SERVICES INC	ONRR/BLM - Bonus	Oil & Gas	$824,274.50
 TURNER PETROLEUM LAND SERVICES INC	ONRR/BLM - Rents	Oil & Gas	$5,800.50
-TYLER MORGAN LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$166,695.67
+TYLER MORGAN LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$166,695.67
 ULTRA LITHIUM USA INC	BLM - Permit Fees	Locatable Minerals	$149,660.00
 ULTRA PETROLEUM	BLM - Permit Fees	Oil & Gas	$1,079,450.00
 ULTRA PETROLEUM	ONRR - Other Revenues	Oil & Gas	$671,847.34
 ULTRA PETROLEUM	ONRR - Royalties	Gas	$83,092,625.98
 ULTRA PETROLEUM	ONRR - Royalties	Oil	$18,538,768.94
 ULTRA PETROLEUM	ONRR/BLM - Rents	Oil & Gas	$8,698.50
-UNION COUNTY COAL CO LLC                                    	OSMRE - AML Fees including Audits and Late Charges 	Coal	$118,371.48
+UNION COUNTY COAL CO LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$118,371.48
 UNIT PETROLEUM CO	BLM - Permit Fees	Oil & Gas	$405.00
-UNIT PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	($13,506.28)
+UNIT PETROLEUM CO	ONRR - Other Revenues	Oil & Gas	-$13,506.28
 UNIT PETROLEUM CO	ONRR - Royalties	Gas	$338,028.39
 UNIT PETROLEUM CO	ONRR - Royalties	Oil	$471,491.30
 UNIT PETROLEUM CO	ONRR/BLM - Rents	Oil & Gas	$3,084.00
@@ -2523,7 +2523,7 @@ URSA OPERATING CO LLC	ONRR - Royalties	Gas	$450,105.36
 URSA OPERATING CO LLC	ONRR - Royalties	Oil	$188,934.75
 US ENERGY CORP	BLM - Permit Fees	Locatable Minerals	$199,420.00
 US RARE EARTHS INC	BLM - Permit Fees	Locatable Minerals	$175,292.00
-USIBELLI COAL MINE INC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$556,452.14
+USIBELLI COAL MINE INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$556,452.14
 VALDUS ENERGY LLC	BLM - Permit Fees	Oil & Gas	$1,789.50
 VALDUS ENERGY LLC	ONRR/BLM - Bonus	Oil & Gas	$569,500.00
 VALDUS ENERGY LLC	ONRR/BLM - Rents	Oil & Gas	$405.00
@@ -2556,11 +2556,11 @@ VERIS GOLD USA INC	BLM - Permit Fees	Locatable Minerals	$399,420.00
 VERNON E FAULCONER INC	ONRR - Other Revenues	Oil & Gas	$3,993.15
 VERNON E FAULCONER INC	ONRR - Royalties	Gas	$279,161.86
 VERNON E FAULCONER INC	ONRR - Royalties	Oil	$58,594.04
-VIGO COAL OPERATING CO INC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$388,998.72
+VIGO COAL OPERATING CO INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$388,998.72
 VIRGINIA ELECTRIC AND POWER CO	ONRR/BLM - Bonus	Wind	$1,600,000.00
 VIRGINIA ELECTRIC AND POWER CO	ONRR/BLM - Rents	Wind	$169,198.00
 VPR OPERATING LLC	BLM - Permit Fees	Oil & Gas	$125,000.00
-W & T OFFSHORE INC	ONRR - Civil Penalties (ONRR)	N/A	$210,000.00
+W & T OFFSHORE INC	ONRR - Civil Penalties	N/A	$210,000.00
 W & T OFFSHORE INC	ONRR - Inspection Fees	Oil & Gas	$651,500.00
 W & T OFFSHORE INC	ONRR - Other Revenues	Oil & Gas	$1,765,934.47
 W & T OFFSHORE INC	ONRR - Royalties	Gas	$30,006,815.42
@@ -2571,9 +2571,9 @@ W & T OFFSHORE INC	ONRR/BLM - Rents	Oil & Gas	$2,923,574.00
 WAGNER OIL CO	ONRR - Royalties	Gas	$31,998.34
 WAGNER OIL CO	ONRR - Royalties	Oil	$255,398.39
 WALLACH CONCRETE INC	BLM - Permit Fees	Mineral Materials	$123,872.77
-WALNUT CREEK MINING CO                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$147,551.68
+WALNUT CREEK MINING CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$147,551.68
 WALTER OIL & GAS CORP	ONRR - Inspection Fees	Oil & Gas	$581,400.00
-WALTER OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	($3,386,358.21)
+WALTER OIL & GAS CORP	ONRR - Other Revenues	Oil & Gas	-$3,386,358.21
 WALTER OIL & GAS CORP	ONRR - Royalties	Gas	$19,895,285.67
 WALTER OIL & GAS CORP	ONRR - Royalties	Oil	$64,813,255.48
 WALTER OIL & GAS CORP	ONRR/BLM - Bonus	Oil & Gas	$2,822,500.00
@@ -2590,7 +2590,7 @@ WARREN RESOURCES INC	ONRR - Other Revenues	Oil & Gas	$33,267.09
 WARREN RESOURCES INC	ONRR - Royalties	Gas	$1,600,088.82
 WARREN RESOURCES INC	ONRR - Royalties	Oil	$5,315.76
 WARREN RESOURCES INC	ONRR/BLM - Rents	Oil & Gas	$80,591.12
-WARRIOR COAL LLC                                            	OSMRE - AML Fees including Audits and Late Charges 	Coal	$686,894.69
+WARRIOR COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$686,894.69
 WASHINGTON GROUP INTERNATIONAL	BLM - Permit Fees	Mineral Materials	$133,686.72
 WATERTON GLOBAL MINING CO LLC	BLM - Permit Fees	Locatable Minerals	$7,587,007.66
 WBI HOLDINGS INC	BLM - Permit Fees	Locatable Minerals	$140.00
@@ -2600,7 +2600,7 @@ WBI HOLDINGS INC	ONRR - Royalties	Gas	$3,817,541.47
 WBI HOLDINGS INC	ONRR - Royalties	Oil	$11,211,196.57
 WBI HOLDINGS INC	ONRR/BLM - Bonus	Oil & Gas	$5,120.00
 WBI HOLDINGS INC	ONRR/BLM - Rents	Oil & Gas	$154,274.25
-WEBSTER COUNTY COAL LLC                                     	OSMRE - AML Fees including Audits and Late Charges 	Coal	$379,305.50
+WEBSTER COUNTY COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$379,305.50
 WEST AMERICAN ENERGY CORP	ONRR - Other Revenues	Oil & Gas	$3,074.78
 WEST AMERICAN ENERGY CORP	ONRR - Royalties	Gas	$381.48
 WEST AMERICAN ENERGY CORP	ONRR - Royalties	Oil	$441,983.09
@@ -2611,22 +2611,22 @@ WESTERN AMERICAN RESOURCES LLC	ONRR - Other Revenues	Oil & Gas	$14,028.00
 WESTERN AMERICAN RESOURCES LLC	ONRR - Royalties	Oil	$131,165.78
 WESTERN AMERICAN RESOURCES LLC	ONRR/BLM - Bonus	Oil & Gas	$1,510.00
 WESTERN AMERICAN RESOURCES LLC	ONRR/BLM - Rents	Oil & Gas	$162,512.00
-WESTERN FUELS ASSOCIATION	ONRR - Other Revenues	Coal	($13,744.20)
+WESTERN FUELS ASSOCIATION	ONRR - Other Revenues	Coal	-$13,744.20
 WESTERN FUELS ASSOCIATION	ONRR - Royalties	Coal	$4,218,242.04
 WESTERN FUELS ASSOCIATION	ONRR/BLM - Rents	Coal	$60,483.00
-WESTERN FUELS ASSOCIATION	OSMRE - AML Fees including Audits and Late Charges 	Coal	$2,282,733.91
-WESTERN KENTUCKY MINERALS INC                               	OSMRE - AML Fees including Audits and Late Charges 	Coal	$134,448.50
+WESTERN FUELS ASSOCIATION	OSMRE - AML Fees including Audits and Late Charges	Coal	$2,282,733.91
+WESTERN KENTUCKY MINERALS INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$134,448.50
 WESTERN LITHIUM CORP	BLM - Permit Fees	Locatable Minerals	$420,270.00
 WESTMORELAND COAL CO	BLM - Permit Fees	Coal	$58,410.00
 WESTMORELAND COAL CO	ONRR - Other Revenues	Coal	$11,321.06
 WESTMORELAND COAL CO	ONRR - Royalties	Coal	$25,566,749.75
 WESTMORELAND COAL CO	ONRR/BLM - Rents	Coal	$77,187.00
-WESTMORELAND COAL CO	OSMRE - AML Fees including Audits and Late Charges 	Coal	$3,963,756.14
-WESTMORELAND RESOURCES INC                                  	OSMRE - AML Fees including Audits and Late Charges 	Coal	$1,001,299.01
+WESTMORELAND COAL CO	OSMRE - AML Fees including Audits and Late Charges	Coal	$3,963,756.14
+WESTMORELAND RESOURCES INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$1,001,299.01
 WHISTLER ENERGY II LLC	ONRR - Royalties	Gas	$9,667.25
 WHISTLER ENERGY II LLC	ONRR - Royalties	Oil	$354,198.93
-WHITAKER COAL CORP                                          	OSMRE - AML Fees including Audits and Late Charges 	Coal	$102,610.54
-WHITE COUNTY COAL LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$296,114.45
+WHITAKER COAL CORP	OSMRE - AML Fees including Audits and Late Charges	Coal	$102,610.54
+WHITE COUNTY COAL LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$296,114.45
 WHITE KNIGHT GOLD (US) INC	BLM - Permit Fees	Locatable Minerals	$153,720.00
 WHITE OAK OPERATING CO LLC	BLM - Permit Fees	Oil & Gas	$85.00
 WHITE OAK OPERATING CO LLC	ONRR - Inspection Fees	Oil & Gas	$34,000.00
@@ -2645,7 +2645,7 @@ WILBANKS RESERVE CORP	ONRR - Other Revenues	Oil & Gas	$3,419.37
 WILBANKS RESERVE CORP	ONRR - Royalties	Gas	$14,426.00
 WILBANKS RESERVE CORP	ONRR - Royalties	Oil	$654,177.32
 WILBANKS RESERVE CORP	ONRR/BLM - Rents	Oil & Gas	$300.00
-WILLIAMSON ENERGY LLC                                       	OSMRE - AML Fees including Audits and Late Charges 	Coal	$759,794.90
+WILLIAMSON ENERGY LLC	OSMRE - AML Fees including Audits and Late Charges	Coal	$759,794.90
 WINDSOR ENERGY GROUP LLC	ONRR - Other Revenues	Oil & Gas	$53,162.18
 WINDSOR ENERGY GROUP LLC	ONRR - Royalties	Gas	$889,751.09
 WINDSOR ENERGY GROUP LLC	ONRR - Royalties	Oil	$245,372.00
@@ -2676,7 +2676,7 @@ WPX ENERGY INC	ONRR - Royalties	Oil	$6,163,514.57
 WPX ENERGY INC	ONRR - Royalties	Other Commodities	$2,860.35
 WPX ENERGY INC	ONRR/BLM - Rents	Oil & Gas	$154,045.00
 WYO-BEN INC	BLM - Permit Fees	Locatable Minerals	$427,509.00
-XINERGY OF ALABAMA INC                                      	OSMRE - AML Fees including Audits and Late Charges 	Coal	$111,216.94
+XINERGY OF ALABAMA INC	OSMRE - AML Fees including Audits and Late Charges	Coal	$111,216.94
 XOG OPERATING LLC	ONRR - Other Revenues	Oil & Gas	$2,300.00
 XOG OPERATING LLC	ONRR - Royalties	Gas	$124,603.46
 XOG OPERATING LLC	ONRR/BLM - Rents	Oil & Gas	$160.00

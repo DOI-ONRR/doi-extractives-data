@@ -23,7 +23,7 @@ $max-columns: 10;
 
 .article_table {
   border: none;
-  border-bottom: 1px solid $light-green;
+  border-bottom: 1px solid $gray-light;
   margin-bottom: $base-padding-extra;
   width: 100%;
 
@@ -31,7 +31,7 @@ $max-columns: 10;
     border-bottom: 4px solid $light-green;
     font-weight: $weight-book;
     line-height: 1.2;
-    padding: $base-padding-lite;
+    padding: $base-padding-small;
     text-align: left;
     vertical-align: bottom;
 
@@ -42,10 +42,9 @@ $max-columns: 10;
 
   td {
     border: none;
-    border-top: 1px solid $light-green;
-    line-height: 1.4;
-    padding: $base-padding-lite;
-    padding-bottom: ($base-padding-lite * 1.7);
+    border-top: 1px solid $gray-light;
+    line-height: 1.3;
+    padding: $base-padding-small;
   }
 
   td p {
@@ -73,7 +72,6 @@ $max-columns: 10;
 
 .article_table-numbers td:first-child {
   text-align: left;
-  text-indent: 1rem;
 }
 
 @for $i from 1 to $max-columns {
@@ -110,28 +108,15 @@ $max-columns: 10;
   &.article_table-head,
   &.article_table-bold {
     td:first-child {
-      text-indent: 0;
+      padding-left: $base-padding-lite;
     }
   }
 
+  th {
+    padding: $base-padding-lite;
+  }
+
   td:first-child {
-    text-indent: 1rem;
+    padding-left: $base-padding;
   }
 }
-
-.article_table-gray {
-  border-bottom: 1px solid $neutral-gray;
-}
-
-.article_table-gray th {
-  border-bottom: 2px solid $neutral-gray;
-}
-
-.article_table-gray.article_table-thin {
-  border-bottom: 1px solid $neutral-gray;
-}
-
-.article_table-gray td {
-  border-top: 1px solid $neutral-gray;
-}
-

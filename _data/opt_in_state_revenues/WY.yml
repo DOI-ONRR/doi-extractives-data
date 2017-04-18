@@ -1,7 +1,7 @@
 streams:
   All:
     Total:
-      '2015': 2973921214
+      '2015': 3169341371
     Cities/Towns/Counties:
       '2015': 1038379517
     Legislative Royalty Impact Assistance Account / Budget Reserve:
@@ -14,7 +14,7 @@ streams:
       '2015': 228955844
     General Fund:
       '2015': 215654798
-    Permanent Land Funds (largely benefitting Common School):
+    Permanent Land Funds (largely benefitting Common Schools):
       '2015': 196753056
     WY Highway Fund:
       '2015': 68729000
@@ -24,7 +24,7 @@ streams:
       '2015': 19297500
     Capital Construction Account:
       '2015': 16661500
-    Permanent Land Income Funds (largely benefitting Common School):
+    Permanent Land Income Funds (largely benefitting Common Schools):
       '2015': 15668838
     University of Wyoming:
       '2015': 13365000
@@ -47,7 +47,7 @@ streams:
       '2015': 996807296
   Severance Tax:
     Total:
-      '2015': 786564004
+      '2015': 981984161
     Permanent Mineral Trust Fund:
       '2015': 308438273
     General Fund:
@@ -105,9 +105,9 @@ streams:
   State Royalties (In-Scope Commodities):
     Total:
       '2015': 222220146
-    Permanent Land Funds (largely benefitting Common School):
+    Permanent Land Funds (largely benefitting Common Schools):
       '2015': 196753056
-    Permanent Land Income Funds (largely benefitting Common School):
+    Permanent Land Income Funds (largely benefitting Common Schools):
       '2015': 15668838
     School District Capital Construction:
       '2015': 8000000
@@ -128,11 +128,11 @@ streams:
 funds:
   Total:
     All:
-      '2015': 2973921214
+      '2015': 3169341371
     Ad Valorem Taxes:
       '2015': 996807296
     Severance Tax:
-      '2015': 786564004
+      '2015': 981984161
     Federal Mineral Royalties:
       '2015': 689273387
     Federal Coal Lease Bonuses:
@@ -191,7 +191,7 @@ funds:
       '2015': 1798252
     Wind Generation Tax:
       '2015': 1772147
-  Permanent Land Funds (largely benefitting Common School):
+  Permanent Land Funds (largely benefitting Common Schools):
     State Royalties (In-Scope Commodities):
       '2015': 196753056
     All:
@@ -224,7 +224,7 @@ funds:
       '2015': 5625000
     Severance Tax:
       '2015': 3611500
-  Permanent Land Income Funds (largely benefitting Common School):
+  Permanent Land Income Funds (largely benefitting Common Schools):
     State Royalties (In-Scope Commodities):
       '2015': 15668838
     All:

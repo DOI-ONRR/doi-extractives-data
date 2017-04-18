@@ -2,6 +2,14 @@
 title: 'Audits and Assurances | How it Works'
 title_display: Revenue data standards, audits, and assurances
 layout: content
+description: Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
+tag:
+- How it works
+- Audits
+- Assurances
+- Standards
+- Oversight
+- Regulations
 permalink: /how-it-works/audits-and-assurances/
 breadcrumb:
   - title: How it works
@@ -28,7 +36,7 @@ Companies and government agencies are each legally responsible for reporting acc
 
 ### Federal standards and audits
 
-- [OMB Circular No. A-123](https://www.whitehouse.gov/omb/circulars_a123_rev) prescribes responsibilities for establishing and maintaining effective internal controls and financial management systems.
+- [OMB Circular No. A-123](https://obamawhitehouse.archives.gov/omb/circulars_a123_rev) prescribes responsibilities for establishing and maintaining effective internal controls and financial management systems.
 - The roles and responsibilities of each agency are governed by the [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf).
 - The [Government Accountability Office](http://www.gao.gov/) (GAO) publishes _Standards for Internal Control in the Federal Government_, also known as the [Green Book](http://www.gao.gov/greenbook/overview).
 - Audits are supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, also known as the [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6]
@@ -47,7 +55,7 @@ Many federal agencies make their reports on payments received from U.S. extracti
 
 The U.S. government is subject to numerous laws governing data publication, including:
 
-- The [Federal Financial Management Improvement Act of 1996](https://www.whitehouse.gov/omb/financial_ffs_ffmia) ensures federal financial managements systems provide accurate, reliable, and timely information to government managers.
+- The [Federal Financial Management Improvement Act of 1996](https://obamawhitehouse.archives.gov/omb/financial_ffs_ffmia) ensures federal financial managements systems provide accurate, reliable, and timely information to government managers.
 - [26 U.S. Code § 6103](https://www.law.cornell.edu/uscode/text/26/6103) requires confidentiality of tax returns and return information.
 - [18 U.S. Code § 1905](https://www.law.cornell.edu/uscode/text/18/1905) punishes disclosure of proprietary information by a government employee.
 - The [Indian Trusts Act of 1882 (PDF)](http://www.bu.edu/bucflp/files/2012/01/Indian-Trusts-Act-No.-2.pdf) establishes rules for private and public trusts.

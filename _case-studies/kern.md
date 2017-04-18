@@ -3,11 +3,11 @@ title: Kern County, California | Case Studies
 title_display: Kern County, California
 description: Kern County is situated in the southernmost region of the San Joaquin Valley, in California’s interior. While Kern County has significant deposits of many resources — including natural gas, geothermal steam, wind, gold, and other minerals — oil in particular has shaped Kern County’s local economy for over a century.
 tag:
-- local
-- case study
+- Local
+- Case study
 - Kern county
 - California
-- oil
+- Oil
 layout: content
 permalink: /case-studies/kern/
 resource: oil

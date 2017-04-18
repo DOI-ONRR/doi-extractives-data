@@ -14,7 +14,7 @@
       this.active = this.stripHash(window.location.hash) || 'intro';
       this.navItems = document.querySelectorAll('[data-nav-item]');
       this.navSelect = $('[data-nav-options]');
-      this.navIsSelect = !!this.navSelect.length;
+      this.navIsSelect = this.navSelect.length > 1;
       // initialize at maximum value
       this.defaultTop = 1e8;
       this.closestToTop = this.defaultTop;
@@ -96,7 +96,6 @@
           if (parent) {
             parent.setAttribute('data-active', true);
           }
-
         } else {
           this.active = this.stripHash(el.getAttribute('data-nav-item'));
           el.setAttribute('data-active', true);
@@ -154,7 +153,6 @@
       },
 
       detectNavChange: function() {
-
         var self = this;
 
         var items = this.navIsSelect

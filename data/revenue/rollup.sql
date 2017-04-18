@@ -310,7 +310,11 @@ FROM regional_revenue_type;
 DROP TABLE IF EXISTS national_revenue;
 CREATE TABLE national_revenue AS
     SELECT
-        year, commodity,
+        year,
+        (CASE WHEN commodity == 'None'
+         THEN 'Non-commodity revenue'
+         ELSE commodity
+         END) AS commodity,
         SUM(revenue) AS revenue
     FROM regional_revenue
     WHERE commodity != 'All'

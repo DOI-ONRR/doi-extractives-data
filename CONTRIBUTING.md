@@ -43,7 +43,7 @@ If you would like to query the local database instance:
 To update site data, run `make site-data`.
 
 ### Deployment
-This site is deployed on [Federalist](https://federalist.18f.gov) whenever a commit it pushed to GitHub. Changes are deployed automatically to the production site when commits are pushed to the `master` branch.
+This site is deployed on [Federalist](https://federalist.fr.cloud.gov/) whenever a commit it pushed to GitHub. Changes are deployed automatically to the production site when commits are pushed to the `master` branch.
 
 If deploying the site to a production environment, make sure to minify the JS files:
 

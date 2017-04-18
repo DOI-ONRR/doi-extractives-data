@@ -11,4 +11,6 @@ make
 When we receive 2016 data, for instance, we will export a tab-separated values file from Excel (or Google Sheets), place
 it into the `input` directory, then run `make` to produce `output/2016.tsv`.
 
+When exporting from Excel, make sure to save as tsv first instead of copy/pasting. Not doing so may result in formatting issues.
+
 [ONRR]: https://www.onrr.gov/

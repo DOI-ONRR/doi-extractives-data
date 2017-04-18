@@ -77,7 +77,7 @@
       }
 
       &.text-header-third {
-        color: darken($green-darkest, 10%);
+        color: $gray-darker;
       }
     }
 
@@ -90,7 +90,7 @@
         }
 
         .bar:nth-child(1) {
-          background-color: $green-dark-chart;
+          background-color: $green-darker;
         }
 
         .bar:nth-child(2) {
@@ -98,7 +98,7 @@
         }
 
         .bar:nth-child(3) {
-          background-color: darken($green-darkest, 10%);
+          background-color: $gray-darker;
         }
       }
     }
@@ -109,7 +109,7 @@
       height: 1em;
 
       .bar {
-        background-color: $green-dark-chart;
+        background-color: $green-darker;
       }
     }
 
@@ -123,7 +123,11 @@
   // negative values
   [data-value^="-"] .bar {
     background: transparent;
-    border: 1px solid;
+    border: 1px solid $gray-light;
+
+    .bar {
+      display: none;
+    }
   }
 
   [data-value-text]:not(.numeric) {

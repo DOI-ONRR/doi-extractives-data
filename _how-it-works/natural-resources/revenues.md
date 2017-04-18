@@ -18,11 +18,21 @@ nav_items:
     title: Tax expenditures
   - name: federal-budget-process
     title: Federal budget process
+description: Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the ownership of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
+tag:
+- how it works
+- revenues
+- federal land
+- federal water
+- extraction
+- corporate income tax
+- tax expenditures
+- federal budget process
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Revenues
-selector: hash
+selector: list
 ---
 
 > Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the [ownership]({{ site.baseurl }}/how-it-works/ownership/) of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
@@ -83,7 +93,7 @@ The Treasury estimates the total dollar amount of each tax expenditure in a give
 * **Renewable energy:** For FY 2013, the energy investment credit, totaling $2 billion, was the largest of four expenditures. The energy production credit was the second largest, totaling $1.7 billion. See analysis and estimates of [renewable energy tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#renewables)
 * **Nonenergy materials:** For FY 2013, the excess of percentage-over-cost depletion for nonenergy minerals, totaling $580 million, was the largest of two expenditures. See analysis and estimates of [nonenergy mineral tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#nonenergy)
 
-The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in [United States – Progress Report on Fossil Fuel Subsidies](https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf). When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, [Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government](https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf). The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.
+The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in [United States – Progress Report on Fossil Fuel Subsidies](https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf). When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, [Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government](https://obamawhitehouse.archives.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf). The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.
 
 ## After a payment, what happens to the revenue?
 

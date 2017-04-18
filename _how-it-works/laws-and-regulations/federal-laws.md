@@ -14,11 +14,18 @@ nav_items:
     title: Other laws
   - name: regulations
     title: Regulations
+description: The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
+tag:
+- How it works
+- Federal laws
+- Fiscal regime
+- Fees and fines
+- Regulations
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Federal laws and regulations
-selector: hash
+selector: list
 ---
 
 > The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.

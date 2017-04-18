@@ -3,13 +3,13 @@ title: Boone, Logan, and Mingo Counties, West Virginia | Case Studies
 title_display: Boone, Logan, and Mingo Counties, West Virginia
 description: The U.S. possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades. However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
 tag:
-- local
-- case study
+- Local
+- Case study
 - Boone county
 - Logan county
 - Mingo county
 - West Virginia
-- coal
+- Coal
 layout: content
 permalink: /case-studies/boone-logan-and-mingo/
 resource: coal

@@ -364,7 +364,7 @@
   - BOEM
 
 - title: Bureau of Ocean Energy Management Oil and Gas Energy Program
-  url: hhttp://www.boem.gov/Oil-and-Gas-Energy-Program/
+  url: http://www.boem.gov/Oil-and-Gas-Energy-Program/
   description: "High level overview of offshore oil and gas extraction."
   tag:
   - oil
@@ -550,14 +550,14 @@
   - Partnership
 
 - title: White House-National Action Plan
-  url: https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf
+  url: https://obamawhitehouse.archives.gov/sites/default/files/us_national_action_plan_final_2.pdf
   description: " The White House, The Open Government Partnership: National Action Plan for the United States of America, September 20, 2011"
   tag:
   - Action
   - Plan
 
 - title: White House Second National Action Plan
-  url: https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf
+  url: https://obamawhitehouse.archives.gov/sites/default/files/docs/us_national_action_plan_6p.pdf
   description: " The White House, The Open Government Partnership: Second Open Government National Action Plan for the United States of America"
   tag:
   - Action
@@ -565,7 +565,7 @@
   - National
 
 - title: Natural Gas Production Totals
-  url: http://www.eia.gov/dnav/ng/ng_prod_sum_dcu_NUS_a.htm;
+  url: http://www.eia.gov/dnav/ng/ng_prod_sum_dcu_NUS_a.htm
   description: "Production totals for all lands and waters in the US, not just lands and waters owned by the federal government. Gas production total from US Energy Information Administration (EIA)"
   tag:
   - Production
@@ -674,29 +674,6 @@
   - Secretariat
   - Subnational
   - DOI
-
-- title: EITI-How do extractive industries impact communities
-  url: https://eiti-dev.18f.gov/communities
-  description: "These narratives provide snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas."
-  tag:
-  - Impact
-  - Communities
-  - Iron
-  - Copper
-  - Gold
-  - Coal
-  - Oil
-  - Gas
-
-- title: Total revenues by company
-  url: https://useiti.doi.gov/data/
-  description: "This dataset provides calendar year 2013 Federal natural resource revenues data by company. All data is provided by the Office of Natural Resources Revenue at the Department of the Interior"
-  tag:
-  - 2013
-  - Revenue
-  - ONRR
-  - DOI
-  - Company
 
 - title: EIA, Monthly Energy Review
   url: http://www.eia.gov/totalenergy/data/monthly/archive/00351405.pdf
@@ -1805,7 +1782,7 @@ Reform; Proposed Rule"
   - Tax
 
 - title: "The White House, Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government, Table S 8, Mandatory and Receipt Proposals"
-  url: https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf
+  url: https://obamawhitehouse.archives.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf
   description: "Mid-Session review of US budget"
   tag:
   - Budget
@@ -2202,7 +2179,7 @@ mineral leases."
   - Consumption
 
 - title: "U.S. Office of Management and Budget, Summary of Receipts, Outlays, and Surpluses or Deficits: 1789 to 2020"
-  url: http://www.whitehouse.gov/omb/budget/Historicals
+  url: https://obamawhitehouse.archives.gov/omb/budget/Historicals
   description: "Historical Tables provides data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020."
   tag:
   - OMB
@@ -4090,7 +4067,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Improvement
 
 - title: The Office of Management and Budget, OMB Circular 123
-  url: https://www.whitehouse.gov/omb/circulars_a123_rev
+  url: https://obamawhitehouse.archives.gov/omb/circulars_a123_rev
   description: "OMB Circular No. A-123 defines management's responsibility for internal control in Federal agencies. A re-examination of the existing internal control requirements for Federal agencies was initiated in light of the new internal control requirements for publicly-traded companies contained in the Sarbanes-Oxley Act of 2002. Circular A-123 and the statute it implements, the Federal Managers’ Financial Integrity Act of 1982, are at the center of the existing Federal requirements to improve internal control"
   tag:
   - OMB

@@ -41,7 +41,7 @@
       </td>
       <td data-value="{{ fund_dollars }}"
         data-year-values='{{ fund_sources.All | jsonify }}'>
-        ${{ fund_dollars | default: 0 | intcomma }}
+        {{ fund_dollars | default: 0 | intcomma_dollar }}
       </td>
     </tr>
     {% if fund_info %}
@@ -57,6 +57,6 @@
 {% if page.state_saving_spending %}
   <h4 id="saving-and-spending">Saving and spending revenue from extraction</h4>
   <p>Many states choose to establish permanent mineral trust funds, which can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.</p>
-  
+
   {{ page.state_saving_spending | liquify | markdownify }}
 {% endif %}

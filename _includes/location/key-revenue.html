@@ -4,9 +4,9 @@
 
 In {{ include.year }},
 natural resource extraction on federal land in
-{{ include.location_name }} generated 
+{{ include.location_name }} generated
   {% if revenue_total %}
-    <a href="#revenue">${{ revenue_total | intcomma }} in federal revenue</a>.
+    <a href="#revenue">{{ revenue_total | intcomma_dollar }} in federal revenue</a>.
   {% else %}
     no federal revenue.
   {% endif %}

@@ -16,7 +16,7 @@ var config = {
   },
 
   output: {
-    path: './js/lib',
+    path: __dirname + '/js/lib',
     filename: '[name].js',
     chunkFilename: '[id].js'
   },

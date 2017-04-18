@@ -39,7 +39,7 @@ permalink: /how-it-works/
     </section>
 
     <section class="container">
-      <h2 id="laws" class="h2-bar">What federal laws and regulations govern natural resources in the U.S.?</h2>
+      <h2 id="laws" class="h2-bar">What laws and regulations govern natural resource extraction in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h3>
@@ -50,6 +50,16 @@ permalink: /how-it-works/
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h3>
           <p>The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
           <p><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about reforms</a></p>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>
+          <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
+          <p>Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
         </div>
       </div>
     </section>
@@ -140,7 +150,7 @@ permalink: /how-it-works/
       </div>
     </section>
 
-    <section class="container">
+    <!-- <section class="container">
       <h2 id="state-tribal" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
       <div class="container landing-section">
         <div>
@@ -154,6 +164,6 @@ permalink: /how-it-works/
           <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
         </div>
       </div>
-    </section>
+    </section> -->
   </article>
 </section>

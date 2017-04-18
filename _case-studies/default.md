@@ -5,7 +5,15 @@ description: While extractive industries made up 2.6% of the U.S. GDP in 2013, t
 tag:
 - Local
 - Case studies
+- Community
+- Impact
 - Revenue sustainability
+- Iron
+- Copper
+- Gold
+- Coal
+- Oil
+- Gas
 permalink: /case-studies/
 nav_items:
   - name: title

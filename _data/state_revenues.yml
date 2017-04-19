@@ -44,7 +44,7 @@ AK:
       '2016':
         revenue: 13993938
         rank: 8
-        percent: 0.6
+        percent: 0.3
     Coal:
       '2006':
         revenue: 5120
@@ -102,7 +102,7 @@ AK:
       '2016':
         revenue: 7243251
         rank: 6
-        percent: 1.2
+        percent: 0.9
     Geothermal:
       '2013':
         revenue: 7680
@@ -193,7 +193,7 @@ AK:
       '2016':
         revenue: 2518813
         rank: 9
-        percent: 0.3
+        percent: 0.1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 9019503
@@ -238,7 +238,7 @@ AK:
       '2016':
         revenue: 4203297
         rank: 4
-        percent: 5.2
+        percent: 1.1
 AL:
   commodities:
     All:
@@ -284,7 +284,7 @@ AL:
         percent: 0
       '2016':
         revenue: 673787
-        rank: 21
+        rank: 22
         percent: 0
     Clay:
       '2006':
@@ -548,7 +548,7 @@ AL:
       '2016':
         revenue: 96439
         rank: 21
-        percent: 0.1
+        percent: 0
     Other Products:
       '2016':
         revenue: 1350
@@ -641,7 +641,7 @@ AR:
       '2016':
         revenue: 3462756
         rank: 15
-        percent: 0.2
+        percent: 0.1
     Gas:
       '2006':
         revenue: 8274401
@@ -686,7 +686,7 @@ AR:
       '2016':
         revenue: 3273278
         rank: 8
-        percent: 0.6
+        percent: 0.4
     Hardrock:
       '2006':
         revenue: 1567
@@ -822,7 +822,7 @@ AR:
       '2016':
         revenue: 187949
         rank: 16
-        percent: 0.2
+        percent: 0
     Other Products:
       '2016':
         revenue: 139
@@ -873,7 +873,7 @@ AZ:
         percent: 0
       '2016':
         revenue: 13320
-        rank: 33
+        rank: 34
         percent: 0
     Geothermal:
       '2006':
@@ -1049,7 +1049,7 @@ CA:
       '2016':
         revenue: 63820383
         rank: 6
-        percent: 2.9
+        percent: 1.3
     Gas:
       '2006':
         revenue: 5228801
@@ -1201,7 +1201,7 @@ CA:
       '2016':
         revenue: 364448
         rank: 7
-        percent: 0.3
+        percent: 0.2
     Oil:
       '2006':
         revenue: 93078520
@@ -1246,7 +1246,7 @@ CA:
       '2016':
         revenue: 44023454
         rank: 4
-        percent: 5.8
+        percent: 1.5
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3365075
@@ -1291,7 +1291,7 @@ CA:
       '2016':
         revenue: 414103
         rank: 12
-        percent: 0.5
+        percent: 0.1
     Other Products:
       '2016':
         revenue: 17696579
@@ -1414,7 +1414,7 @@ CO:
       '2016':
         revenue: 199115736
         rank: 3
-        percent: 9.1
+        percent: 4
     CO2:
       '2006':
         revenue: 24279649
@@ -1545,7 +1545,7 @@ CO:
       '2016':
         revenue: 63008751
         rank: 3
-        percent: 10.9
+        percent: 8.1
     Geothermal:
       '2011':
         revenue: 32800
@@ -1632,7 +1632,7 @@ CO:
       '2016':
         revenue: 10835983
         rank: 3
-        percent: 9.5
+        percent: 6.2
     Oil:
       '2006':
         revenue: 33987998
@@ -1677,7 +1677,7 @@ CO:
       '2016':
         revenue: 23589211
         rank: 6
-        percent: 3.1
+        percent: 0.8
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 33961391
@@ -1722,7 +1722,7 @@ CO:
       '2016':
         revenue: 18368684
         rank: 3
-        percent: 22.7
+        percent: 4.6
     Other Products:
       '2016':
         revenue: 46398903
@@ -1823,7 +1823,7 @@ FL:
         percent: 0
       '2016':
         revenue: 1078656
-        rank: 18
+        rank: 19
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -1946,7 +1946,7 @@ ID:
       '2016':
         revenue: 10280804
         rank: 11
-        percent: 0.5
+        percent: 0.2
     Gas:
       '2016':
         revenue: 50762
@@ -2084,7 +2084,7 @@ ID:
       '2016':
         revenue: 383627
         rank: 14
-        percent: 0.5
+        percent: 0.1
     Other Products:
       '2016':
         revenue: 9512611
@@ -2176,7 +2176,7 @@ IL:
         percent: 0
       '2016':
         revenue: 78517
-        rank: 28
+        rank: 29
         percent: 0
     Hardrock:
       '2008':
@@ -2294,7 +2294,7 @@ IN:
         percent: 0
       '2016':
         revenue: 23317
-        rank: 31
+        rank: 32
         percent: 0
     Oil:
       '2009':
@@ -2395,8 +2395,8 @@ KS:
         percent: 0
       '2016':
         revenue: 1994788
-        rank: 17
-        percent: 0.1
+        rank: 18
+        percent: 0
     Gas:
       '2006':
         revenue: 4935612
@@ -2515,7 +2515,7 @@ KS:
       '2016':
         revenue: 348837
         rank: 8
-        percent: 0.3
+        percent: 0.2
     Oil:
       '2006':
         revenue: 3940101
@@ -2560,7 +2560,7 @@ KS:
       '2016':
         revenue: 737930
         rank: 14
-        percent: 0.1
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 105828
@@ -2605,7 +2605,7 @@ KS:
       '2016':
         revenue: 124302
         rank: 18
-        percent: 0.2
+        percent: 0
     Other Products:
       '2016':
         revenue: 666
@@ -2656,7 +2656,7 @@ KY:
         percent: 0
       '2016':
         revenue: 540905
-        rank: 22
+        rank: 23
         percent: 0
     Coal:
       '2006':
@@ -2858,7 +2858,7 @@ KY:
       '2016':
         revenue: 123214
         rank: 19
-        percent: 0.2
+        percent: 0
 LA:
   commodities:
     All:
@@ -2905,7 +2905,7 @@ LA:
       '2016':
         revenue: 6376115
         rank: 14
-        percent: 0.3
+        percent: 0.1
     Gas:
       '2006':
         revenue: 34130980
@@ -2950,7 +2950,7 @@ LA:
       '2016':
         revenue: 2814240
         rank: 9
-        percent: 0.5
+        percent: 0.4
     NGL:
       '2006':
         revenue: 1229701
@@ -2995,7 +2995,7 @@ LA:
       '2016':
         revenue: 259913
         rank: 10
-        percent: 0.2
+        percent: 0.1
     Oil:
       '2006':
         revenue: 3319581
@@ -3040,7 +3040,7 @@ LA:
       '2016':
         revenue: 2180216
         rank: 10
-        percent: 0.3
+        percent: 0.1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: -29171
@@ -3085,7 +3085,7 @@ LA:
       '2016':
         revenue: 1121746
         rank: 6
-        percent: 1.4
+        percent: 0.3
     Sulfur:
       '2014':
         revenue: 203
@@ -3136,7 +3136,7 @@ MD:
         percent: 0
       '2016':
         revenue: 16768
-        rank: 32
+        rank: 33
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -3228,7 +3228,7 @@ MI:
         percent: 0
       '2016':
         revenue: 1047670
-        rank: 19
+        rank: 20
         percent: 0
     Gas:
       '2006':
@@ -3274,7 +3274,7 @@ MI:
       '2016':
         revenue: 331685
         rank: 14
-        percent: 0.1
+        percent: 0
     Hardrock:
       '2011':
         revenue: 923
@@ -3418,7 +3418,7 @@ MI:
       '2016':
         revenue: 618240
         rank: 10
-        percent: 0.8
+        percent: 0.2
 MN:
   commodities:
     All:
@@ -3464,7 +3464,7 @@ MN:
         percent: 0
       '2016':
         revenue: 54229
-        rank: 30
+        rank: 31
         percent: 0
     Hardrock:
       '2006':
@@ -3553,7 +3553,7 @@ MO:
       '2016':
         revenue: 7707789
         rank: 12
-        percent: 0.4
+        percent: 0.2
     Hardrock:
       '2006':
         revenue: 10497305
@@ -3674,7 +3674,7 @@ MS:
         percent: 0
       '2016':
         revenue: 2733497
-        rank: 16
+        rank: 17
         percent: 0.1
     Gas:
       '2006':
@@ -3765,7 +3765,7 @@ MS:
       '2016':
         revenue: 2142809
         rank: 11
-        percent: 0.3
+        percent: 0.1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1482800
@@ -3810,7 +3810,7 @@ MS:
       '2016':
         revenue: 564799
         rank: 11
-        percent: 0.7
+        percent: 0.1
 MT:
   commodities:
     All:
@@ -3857,7 +3857,7 @@ MT:
       '2016':
         revenue: 38441743
         rank: 7
-        percent: 1.8
+        percent: 0.8
     Coal:
       '2006':
         revenue: 30401780
@@ -4078,7 +4078,7 @@ MT:
       '2016':
         revenue: 6910889
         rank: 8
-        percent: 0.9
+        percent: 0.2
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 4968945
@@ -4123,7 +4123,7 @@ MT:
       '2016':
         revenue: 1106414
         rank: 7
-        percent: 1.4
+        percent: 0.3
     Other Products:
       '2016':
         revenue: 871
@@ -4236,7 +4236,7 @@ NC:
         percent: 0
       '2016':
         revenue: -474
-        rank: 37
+        rank: 38
         percent: null
     Hardrock:
       '2011':
@@ -4305,7 +4305,7 @@ ND:
       '2016':
         revenue: 112790636
         rank: 5
-        percent: 5.2
+        percent: 2.3
     Coal:
       '2006':
         revenue: 918119
@@ -4395,7 +4395,7 @@ ND:
       '2016':
         revenue: 8387223
         rank: 5
-        percent: 1.4
+        percent: 1.1
     Hardrock:
       '2009':
         revenue: 16815
@@ -4453,7 +4453,7 @@ ND:
       '2016':
         revenue: 260885
         rank: 9
-        percent: 0.2
+        percent: 0.1
     Oil:
       '2006':
         revenue: 43951094
@@ -4498,7 +4498,7 @@ ND:
       '2016':
         revenue: 100401591
         rank: 3
-        percent: 13.1
+        percent: 3.4
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 16425256
@@ -4543,7 +4543,7 @@ ND:
       '2016':
         revenue: 905654
         rank: 8
-        percent: 1.1
+        percent: 0.2
     Other Products:
       '2016':
         revenue: 133478
@@ -4607,7 +4607,7 @@ NE:
         percent: 0
       '2016':
         revenue: 126758
-        rank: 26
+        rank: 27
         percent: 0
     Gas:
       '2007':
@@ -4787,7 +4787,7 @@ NM:
       '2016':
         revenue: 655424156
         rank: 2
-        percent: 30
+        percent: 13.1
     CO2:
       '2006':
         revenue: 661305
@@ -4918,7 +4918,7 @@ NM:
       '2016':
         revenue: 187532673
         rank: 2
-        percent: 32.3
+        percent: 24.2
     Geothermal:
       '2006':
         revenue: -2794
@@ -5004,7 +5004,7 @@ NM:
       '2016':
         revenue: 46540132
         rank: 1
-        percent: 40.9
+        percent: 26.5
     Oil:
       '2006':
         revenue: 174693713
@@ -5049,7 +5049,7 @@ NM:
       '2016':
         revenue: 366395663
         rank: 1
-        percent: 48
+        percent: 12.4
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 119888753
@@ -5094,7 +5094,7 @@ NM:
       '2016':
         revenue: 30270535
         rank: 1
-        percent: 37.4
+        percent: 7.7
     Other Products:
       '2016':
         revenue: 10973869
@@ -5237,7 +5237,7 @@ NV:
       '2016':
         revenue: 7375860
         rank: 13
-        percent: 0.3
+        percent: 0.1
     Geothermal:
       '2006':
         revenue: 1752025
@@ -5323,7 +5323,7 @@ NV:
       '2016':
         revenue: 1154270
         rank: 13
-        percent: 0.2
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 10849612
@@ -5368,7 +5368,7 @@ NV:
       '2016':
         revenue: 1633896
         rank: 5
-        percent: 2
+        percent: 0.4
     Other Products:
       '2016':
         revenue: 3442525
@@ -5465,7 +5465,7 @@ NY:
         percent: 0
       '2016':
         revenue: 1425
-        rank: 36
+        rank: 37
         percent: 0
     Gas:
       '2006':
@@ -5600,6 +5600,10 @@ None:
         revenue: 8382399
         rank: 14
         percent: 0.1
+      '2016':
+        revenue: 3054701
+        rank: 16
+        percent: 0.1
 OH:
   commodities:
     All:
@@ -5645,7 +5649,7 @@ OH:
         percent: 0
       '2016':
         revenue: 217349
-        rank: 24
+        rank: 25
         percent: 0
     Coal:
       '2010':
@@ -5791,7 +5795,7 @@ OH:
       '2016':
         revenue: 79457
         rank: 22
-        percent: 0.1
+        percent: 0
 OK:
   commodities:
     All:
@@ -5838,7 +5842,7 @@ OK:
       '2016':
         revenue: 13129471
         rank: 9
-        percent: 0.6
+        percent: 0.3
     Asphalt:
       '2006':
         revenue: 959
@@ -5945,7 +5949,7 @@ OK:
       '2016':
         revenue: 4335394
         rank: 7
-        percent: 0.7
+        percent: 0.6
     Helium:
       '2013':
         revenue: 1
@@ -5999,7 +6003,7 @@ OK:
       '2016':
         revenue: 989408
         rank: 6
-        percent: 0.9
+        percent: 0.6
     Oil:
       '2006':
         revenue: 982614
@@ -6044,7 +6048,7 @@ OK:
       '2016':
         revenue: 6932866
         rank: 7
-        percent: 0.9
+        percent: 0.2
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3103290
@@ -6089,7 +6093,7 @@ OK:
       '2016':
         revenue: 178757
         rank: 17
-        percent: 0.2
+        percent: 0
 OR:
   commodities:
     All:
@@ -6135,7 +6139,7 @@ OR:
         percent: 0
       '2016':
         revenue: 184162
-        rank: 25
+        rank: 26
         percent: 0
     Geothermal:
       '2006':
@@ -6260,7 +6264,7 @@ PA:
         percent: 0
       '2016':
         revenue: 121194
-        rank: 27
+        rank: 28
         percent: 0
     Gas:
       '2006':
@@ -6413,7 +6417,7 @@ PA:
       '2016':
         revenue: 114713
         rank: 20
-        percent: 0.1
+        percent: 0
 SC:
   commodities:
     All:
@@ -6451,7 +6455,7 @@ SC:
         percent: 0
       '2016':
         revenue: 3330
-        rank: 35
+        rank: 36
         percent: 0
     Hardrock:
       '2006':
@@ -6531,7 +6535,7 @@ SD:
         percent: 0
       '2016':
         revenue: 773082
-        rank: 20
+        rank: 21
         percent: 0
     Gas:
       '2006':
@@ -6622,7 +6626,7 @@ SD:
       '2016':
         revenue: 536693
         rank: 15
-        percent: 0.1
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 221904
@@ -6667,7 +6671,7 @@ SD:
       '2016':
         revenue: 222419
         rank: 15
-        percent: 0.3
+        percent: 0.1
 TN:
   commodities:
     All:
@@ -6742,7 +6746,7 @@ TX:
       '2016':
         revenue: 11399799
         rank: 10
-        percent: 0.5
+        percent: 0.2
     Gas:
       '2006':
         revenue: 19219211
@@ -6787,7 +6791,7 @@ TX:
       '2016':
         revenue: 1841582
         rank: 10
-        percent: 0.3
+        percent: 0.2
     NGL:
       '2006':
         revenue: 143345
@@ -6832,7 +6836,7 @@ TX:
       '2016':
         revenue: 6887105
         rank: 4
-        percent: 6.1
+        percent: 3.9
     Oil:
       '2006':
         revenue: 2591405
@@ -6877,7 +6881,7 @@ TX:
       '2016':
         revenue: 2040234
         rank: 12
-        percent: 0.3
+        percent: 0.1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3040473
@@ -6922,7 +6926,7 @@ TX:
       '2016':
         revenue: 629563
         rank: 9
-        percent: 0.8
+        percent: 0.2
     Other Products:
       '2016':
         revenue: 1315
@@ -6974,7 +6978,7 @@ UT:
       '2016':
         revenue: 127884820
         rank: 4
-        percent: 5.8
+        percent: 2.6
     CO2:
       '2008':
         revenue: 65886
@@ -7138,7 +7142,7 @@ UT:
       '2016':
         revenue: 42293219
         rank: 4
-        percent: 7.3
+        percent: 5.5
     Geothermal:
       '2006':
         revenue: 228842
@@ -7292,7 +7296,7 @@ UT:
       '2016':
         revenue: 4988578
         rank: 5
-        percent: 4.4
+        percent: 2.8
     Oil:
       '2006':
         revenue: 52604568
@@ -7337,7 +7341,7 @@ UT:
       '2016':
         revenue: 39338198
         rank: 5
-        percent: 5.2
+        percent: 1.3
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 103022390
@@ -7573,7 +7577,7 @@ VA:
         percent: 0
       '2016':
         revenue: 55861
-        rank: 29
+        rank: 30
         percent: 0
     Gas:
       '2006':
@@ -7756,7 +7760,7 @@ WA:
         percent: 0
       '2016':
         revenue: 9633
-        rank: 34
+        rank: 35
         percent: 0
     Coal:
       '2006':
@@ -7890,7 +7894,7 @@ WV:
         percent: 0
       '2016':
         revenue: 429805
-        rank: 23
+        rank: 24
         percent: 0
     Coal:
       '2015':
@@ -8007,7 +8011,7 @@ WV:
       '2016':
         revenue: 406923
         rank: 13
-        percent: 0.5
+        percent: 0.1
 WY:
   commodities:
     All:
@@ -8054,7 +8058,7 @@ WY:
       '2016':
         revenue: 1225400985
         rank: 1
-        percent: 56
+        percent: 24.5
     CO2:
       '2006':
         revenue: 60734
@@ -8185,7 +8189,7 @@ WY:
       '2016':
         revenue: 256255815
         rank: 1
-        percent: 44.1
+        percent: 33.1
     Helium:
       '2006':
         revenue: -234
@@ -8235,7 +8239,7 @@ WY:
       '2016':
         revenue: 42257315
         rank: 2
-        percent: 37.1
+        percent: 24
     Oil:
       '2006':
         revenue: 197127988
@@ -8280,7 +8284,7 @@ WY:
       '2016':
         revenue: 163944348
         rank: 2
-        percent: 21.5
+        percent: 5.6
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 49661557
@@ -8325,7 +8329,7 @@ WY:
       '2016':
         revenue: 19484147
         rank: 2
-        percent: 24.1
+        percent: 4.9
     Other Products:
       '2016':
         revenue: 37446244

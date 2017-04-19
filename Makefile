@@ -245,7 +245,7 @@ data/revenue: \
 	data/offshore_revenue_areas \
 	data/offshore_revenue_regions.yml \
 	data/offshore_revenues_by_type.yml \
-	data/reconciliation.yml \
+	data/reconciliation \
 	data/tribal_revenue.yml
 
 data/county_revenue:
@@ -601,7 +601,7 @@ tables/revenue: \
 	tables/civil_penalties_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
 
-tables/offshore_revenue: data/revenue/offshore.tsv
+tables/offshore_revenue: data/revenue/offshore_1.tsv
 	@$(call drop-table,offshore_revenue)
 	tmp=$^.ndjson; \
 	$(tito) -r tsv --map ./data/revenue/transform-offshore.js \
@@ -609,7 +609,7 @@ tables/offshore_revenue: data/revenue/offshore.tsv
 	$(tables) -i $$tmp -t ndjson -n offshore_revenue && \
 	rm $$tmp
 
-tables/county_revenue: data/revenue/onshore_1.tsv
+tables/county_revenue: data/revenue/onshore.tsv
 	@$(call drop-table,county_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
@@ -626,7 +626,7 @@ tables/reconciliation: data/reconciliation/output
 	$(tables) -i $$tmp -t ndjson -n reconciliation && \
 	rm $$tmp
 
-tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
+tables/civil_penalties_revenue: data/revenue/civil_penalties_1.tsv
 	@$(call drop-table,civil_penalties_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \

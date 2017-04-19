@@ -21,6 +21,8 @@ Gulf:
         revenue: 7128778320
       '2015':
         revenue: 4037546750
+      '2016':
+        revenue: 2720717176
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1393848503
@@ -42,6 +44,8 @@ Gulf:
         revenue: 1180852954
       '2015':
         revenue: 780135065
+      '2016':
+        revenue: 310808337
     Oil:
       '2006':
         revenue: 3384252522
@@ -63,6 +67,8 @@ Gulf:
         revenue: 5235087941
       '2015':
         revenue: 2857231359
+      '2016':
+        revenue: 2152049101
     Gas:
       '2006':
         revenue: 3001665672
@@ -84,6 +90,8 @@ Gulf:
         revenue: 530299008
       '2015':
         revenue: 326378389
+      '2016':
+        revenue: 195847232
     NGL:
       '2006':
         revenue: 152210997
@@ -105,6 +113,8 @@ Gulf:
         revenue: 182524584
       '2015':
         revenue: 73781641
+      '2016':
+        revenue: 62005132
     Sulfur:
       '2006':
         revenue: 21191
@@ -126,6 +136,8 @@ Gulf:
         revenue: 11925
       '2015':
         revenue: 9576
+      '2016':
+        revenue: 2727
     Sodium:
       '2006':
         revenue: 2829
@@ -147,6 +159,9 @@ Gulf:
         revenue: 1908
       '2015':
         revenue: 10721
+    Other Products:
+      '2016':
+        revenue: 4647
 Alaska:
   commodities:
     All:
@@ -170,6 +185,8 @@ Alaska:
         revenue: 34416438
       '2015':
         revenue: 15087257
+      '2016':
+        revenue: 6458723
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1907263
@@ -191,6 +208,8 @@ Alaska:
         revenue: 7804824
       '2015':
         revenue: 9203009
+      '2016':
+        revenue: 3301010
     Oil:
       '2006':
         revenue: 40580284
@@ -212,6 +231,8 @@ Alaska:
         revenue: 34372939
       '2015':
         revenue: 5929764
+      '2016':
+        revenue: 3157713
 Pacific:
   commodities:
     All:
@@ -235,6 +256,8 @@ Pacific:
         revenue: 270135841
       '2015':
         revenue: 82630184
+      '2016':
+        revenue: 27417073
     Oil:
       '2006':
         revenue: 217517814
@@ -256,6 +279,8 @@ Pacific:
         revenue: 261288181
       '2015':
         revenue: 79468910
+      '2016':
+        revenue: 29061118
     Gas:
       '2006':
         revenue: 31785770
@@ -277,6 +302,8 @@ Pacific:
         revenue: 8363251
       '2015':
         revenue: 2944158
+      '2016':
+        revenue: -1754154
     NGL:
       '2006':
         revenue: 841057
@@ -298,6 +325,8 @@ Pacific:
         revenue: 459482
       '2015':
         revenue: 200008
+      '2016':
+        revenue: -22411
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 88975
@@ -319,6 +348,8 @@ Pacific:
         revenue: 1395
       '2015':
         revenue: 1395
+      '2016':
+        revenue: 142228
     Sulfur:
       '2006':
         revenue: 6303
@@ -340,6 +371,9 @@ Pacific:
         revenue: 24926
       '2015':
         revenue: 17108
+    Other Products:
+      '2016':
+        revenue: -9708
 None:
   commodities:
     All:
@@ -355,6 +389,8 @@ None:
         revenue: 66048560
       '2015':
         revenue: 52239171
+      '2016':
+        revenue: 54047456
     None:
       '2010':
         revenue: 10053526
@@ -368,6 +404,8 @@ None:
         revenue: 66048560
       '2015':
         revenue: 52239171
+      '2016':
+        revenue: 54047456
 Atlantic:
   commodities:
     All:
@@ -385,6 +423,8 @@ Atlantic:
         revenue: 10280837
       '2015':
         revenue: 3245090
+      '2016':
+        revenue: 5192111
     Wind:
       '2009':
         revenue: 68320
@@ -400,3 +440,5 @@ Atlantic:
         revenue: 10280837
       '2015':
         revenue: 3245090
+      '2016':
+        revenue: 5192111

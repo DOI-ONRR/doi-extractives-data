@@ -12,7 +12,7 @@ url: https://useiti.doi.gov
 version: v2.1.9
 
 sass:
-  style: nested
+  style: compressed
   sass_dir: _sass
 
 exclude:

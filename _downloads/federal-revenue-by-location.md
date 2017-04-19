@@ -6,7 +6,7 @@ title_display: Federal Revenue by Location
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are all accounting year data.
+description: There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2016. They are all accounting year data.
 tag:
 - Data
 - Downloads
@@ -18,18 +18,18 @@ tag:
 - By location
 ---
 
-> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2015. They are all accounting year data.
+> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2016. They are all accounting year data.
 
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
-   Offshore dataset (xlsx, 475 KB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+   Offshore dataset (xlsx, 535 KB)
   </a></li>
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
-    Onshore dataset (xlsx, 1.2 MB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.3 MB)
   </a></li>
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
   </a></li>
 </ul>
@@ -37,13 +37,13 @@ Download calendar year data:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
-    Offshore dataset (xlsx, 437 KB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Offshore dataset (xlsx, 481 KB)
   </a></li>
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
-    Onshore dataset (xlsx, 1.2 MB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.3 MB)
   </a></li>
-  <li><a href="{{site.baseurl}}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-15_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
   </a></li>
 </ul>

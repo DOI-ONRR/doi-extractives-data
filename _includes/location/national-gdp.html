@@ -1,5 +1,8 @@
 {% assign gdp = site.data.national_gdp.US %}
-{% assign year_range = site.data.years.gdp | default: site.data.years.default | jsonify %}
+
+{% assign year_range = site.data.years.gdp | default: site.data.years.default %}
+{% assign year = year_range | last | to_s | default: default_year %}
+{% assign year_range = year_range | jsonify %}
 
 <section id="gdp" is="year-switcher-section" class="economic gdp">
 

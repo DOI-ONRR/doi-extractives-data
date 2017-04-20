@@ -58,6 +58,8 @@ nav_items:
 
 {% assign state_ref = page.id | upcase %}
 {% assign year = site.data.years.now | to_s %}
+{% assign default_year = year %}
+
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}

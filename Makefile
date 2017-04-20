@@ -601,7 +601,7 @@ tables/revenue: \
 	tables/civil_penalties_revenue
 	@$(call load-sql,data/revenue/rollup.sql)
 
-tables/offshore_revenue: data/revenue/offshore_1.tsv
+tables/offshore_revenue: data/revenue/offshore.tsv
 	@$(call drop-table,offshore_revenue)
 	tmp=$^.ndjson; \
 	$(tito) -r tsv --map ./data/revenue/transform-offshore.js \
@@ -626,7 +626,7 @@ tables/reconciliation: data/reconciliation/output
 	$(tables) -i $$tmp -t ndjson -n reconciliation && \
 	rm $$tmp
 
-tables/civil_penalties_revenue: data/revenue/civil_penalties_1.tsv
+tables/civil_penalties_revenue: data/revenue/civil_penalties.tsv
 	@$(call drop-table,civil_penalties_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \

@@ -1,6 +1,4 @@
 require 'csv'
-require 'pry'
-require 'rb-readline'
 
 if ARGV.length > 1
   csv_path = File.join('./', ARGV[0])

@@ -1,8 +1,10 @@
 {% assign revenue_commodities = site.data.national_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year] %}
+
 {% assign year_range = site.data.years.revenue | default: site.data.years.default %}
 {% assign year = year_range | last | to_s | default: default_year %}
 {% assign year_range = year_range | jsonify %}
+
 {% assign units = '$' %}
 
 

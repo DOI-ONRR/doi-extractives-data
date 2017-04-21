@@ -116,6 +116,10 @@ AK:
         revenue: 7680
         rank: 9
         percent: 0.1
+      '2016':
+        revenue: 7680
+        rank: 9
+        percent: 0.1
     NGL:
       '2006':
         revenue: 139228
@@ -337,7 +341,7 @@ AL:
         rank: 9
         percent: 0
       '2016':
-        revenue: 59039
+        revenue: 209830
         rank: 9
         percent: 0
     Gas:
@@ -549,11 +553,6 @@ AL:
         revenue: 96439
         rank: 21
         percent: 0
-    Other Products:
-      '2016':
-        revenue: 1350
-        rank: 11
-        percent: 0
     Sulfur:
       '2006':
         revenue: 1193
@@ -595,6 +594,10 @@ AL:
         revenue: 1162
         rank: 2
         percent: null
+      '2016':
+        revenue: 1350
+        rank: 2
+        percent: 0.6
 AR:
   commodities:
     All:
@@ -728,6 +731,10 @@ AR:
         revenue: 1374
         rank: 5
         percent: 0
+      '2016':
+        revenue: 1515
+        rank: 4
+        percent: 0
     NGL:
       '2016':
         revenue: 9
@@ -822,11 +829,6 @@ AR:
       '2016':
         revenue: 187949
         rank: 16
-        percent: 0
-    Other Products:
-      '2016':
-        revenue: 139
-        rank: 15
         percent: 0
 AZ:
   commodities:
@@ -1003,6 +1005,10 @@ AZ:
         revenue: 903
         rank: 6
         percent: 0
+      '2016':
+        revenue: -12
+        rank: 6
+        percent: null
 CA:
   commodities:
     All:
@@ -1049,7 +1055,7 @@ CA:
       '2016':
         revenue: 63820383
         rank: 6
-        percent: 1.3
+        percent: 1.2
     Gas:
       '2006':
         revenue: 5228801
@@ -1136,6 +1142,10 @@ CA:
         revenue: 8673011
         rank: 1
         percent: 61.9
+      '2016':
+        revenue: 7897405
+        rank: 1
+        percent: 59.1
     Hardrock:
       '2008':
         revenue: 21
@@ -1156,6 +1166,10 @@ CA:
       '2015':
         revenue: 42
         rank: 9
+        percent: 0
+      '2016':
+        revenue: 42
+        rank: 8
         percent: 0
     NGL:
       '2006':
@@ -1292,11 +1306,6 @@ CA:
         revenue: 414103
         rank: 12
         percent: 0.1
-    Other Products:
-      '2016':
-        revenue: 17696579
-        rank: 3
-        percent: 13
     Potassium:
       '2007':
         revenue: 3460
@@ -1351,6 +1360,10 @@ CA:
         revenue: 7991051
         rank: 2
         percent: 17.9
+      '2016':
+        revenue: 9920172
+        rank: 2
+        percent: 21.4
     Sulfur:
       '2012':
         revenue: 515
@@ -1414,7 +1427,7 @@ CO:
       '2016':
         revenue: 199115736
         rank: 3
-        percent: 4
+        percent: 3.7
     CO2:
       '2006':
         revenue: 24279649
@@ -1456,6 +1469,10 @@ CO:
         revenue: 55903925
         rank: 1
         percent: 98.1
+      '2016':
+        revenue: 44342735
+        rank: 1
+        percent: 90.1
     Coal:
       '2006':
         revenue: 49171464
@@ -1498,9 +1515,9 @@ CO:
         rank: 2
         percent: 3.9
       '2016':
-        revenue: 36299727
-        rank: 2
-        percent: 7.1
+        revenue: 36827806
+        rank: 3
+        percent: 4.4
     Gas:
       '2006':
         revenue: 162935102
@@ -1567,6 +1584,10 @@ CO:
         revenue: 32262
         rank: 7
         percent: 0.2
+      '2016':
+        revenue: 27462
+        rank: 7
+        percent: 0.2
     Helium:
       '2011':
         revenue: 58
@@ -1588,6 +1609,10 @@ CO:
         revenue: 56
         rank: 1
         percent: null
+      '2016':
+        revenue: 61
+        rank: 2
+        percent: 8.4
     NGL:
       '2006':
         revenue: 4601849
@@ -1675,7 +1700,7 @@ CO:
         rank: 6
         percent: 0.8
       '2016':
-        revenue: 23589211
+        revenue: 23590143
         rank: 6
         percent: 0.8
     Oil & Gas (Non-Royalty):
@@ -1723,11 +1748,6 @@ CO:
         revenue: 18368684
         rank: 3
         percent: 4.6
-    Other Products:
-      '2016':
-        revenue: 46398903
-        rank: 1
-        percent: 34
     Potassium:
       '2013':
         revenue: 8720
@@ -1736,6 +1756,10 @@ CO:
       '2014':
         revenue: 4361
         rank: 3
+        percent: 0
+      '2016':
+        revenue: 4361
+        rank: 4
         percent: 0
     Sodium:
       '2006':
@@ -1778,6 +1802,10 @@ CO:
         revenue: 1512965
         rank: 3
         percent: 3.4
+      '2016':
+        revenue: 2109750
+        rank: 3
+        percent: 4.5
 FL:
   commodities:
     All:
@@ -1854,11 +1882,6 @@ FL:
         revenue: 3200
         rank: 32
         percent: 0
-    Other Products:
-      '2016':
-        revenue: 1076705
-        rank: 9
-        percent: 0.8
     Phosphate:
       '2006':
         revenue: 1398
@@ -1900,6 +1923,10 @@ FL:
         revenue: 80957
         rank: 2
         percent: 0.8
+      '2016':
+        revenue: 1078656
+        rank: 2
+        percent: 10
 ID:
   commodities:
     All:
@@ -1989,6 +2016,10 @@ ID:
         revenue: 135420
         rank: 5
         percent: 1
+      '2016':
+        revenue: 153636
+        rank: 5
+        percent: 1.2
     Hardrock:
       '2006':
         revenue: 4294
@@ -2029,6 +2060,10 @@ ID:
       '2015':
         revenue: 446
         rank: 7
+        percent: 0
+      '2016':
+        revenue: 447
+        rank: 6
         percent: 0
     NGL:
       '2016':
@@ -2085,11 +2120,6 @@ ID:
         revenue: 383627
         rank: 14
         percent: 0.1
-    Other Products:
-      '2016':
-        revenue: 9512611
-        rank: 5
-        percent: 7
     Phosphate:
       '2006':
         revenue: 2172503
@@ -2131,6 +2161,10 @@ ID:
         revenue: 10550366
         rank: 1
         percent: 99
+      '2016':
+        revenue: 9633221
+        rank: 1
+        percent: 89.7
 IL:
   commodities:
     All:
@@ -2471,6 +2505,10 @@ KS:
         revenue: -2642
         rank: 2
         percent: null
+      '2016':
+        revenue: 666
+        rank: 1
+        percent: 91.6
     NGL:
       '2006':
         revenue: 456079
@@ -2606,11 +2644,6 @@ KS:
         revenue: 124302
         rank: 18
         percent: 0
-    Other Products:
-      '2016':
-        revenue: 666
-        rank: 14
-        percent: 0
 KY:
   commodities:
     All:
@@ -2700,9 +2733,9 @@ KY:
         rank: 10
         percent: 0
       '2016':
-        revenue: 326280
+        revenue: 353643
         rank: 8
-        percent: 0.1
+        percent: 0
     Gas:
       '2006':
         revenue: 181436
@@ -3507,6 +3540,10 @@ MN:
         revenue: 49858
         rank: 2
         percent: 0.5
+      '2016':
+        revenue: 54229
+        rank: 2
+        percent: 0.7
 MO:
   commodities:
     All:
@@ -3553,7 +3590,7 @@ MO:
       '2016':
         revenue: 7707789
         rank: 12
-        percent: 0.2
+        percent: 0.1
     Hardrock:
       '2006':
         revenue: 10497305
@@ -3595,6 +3632,10 @@ MO:
         revenue: 9243923
         rank: 1
         percent: 99.3
+      '2016':
+        revenue: 7707789
+        rank: 1
+        percent: 99.2
     Oil & Gas (Non-Royalty):
       '2007':
         revenue: 1680
@@ -3624,11 +3665,6 @@ MO:
         revenue: 14074
         rank: 27
         percent: 0
-    Other Products:
-      '2016':
-        revenue: 7632272
-        rank: 6
-        percent: 5.6
 MS:
   commodities:
     All:
@@ -3857,7 +3893,7 @@ MT:
       '2016':
         revenue: 38441743
         rank: 7
-        percent: 0.8
+        percent: 0.7
     Coal:
       '2006':
         revenue: 30401780
@@ -3900,9 +3936,9 @@ MT:
         rank: 3
         percent: 3.5
       '2016':
-        revenue: 29402070
+        revenue: 29513723
         rank: 4
-        percent: 5.7
+        percent: 3.6
     Gas:
       '2006':
         revenue: 18469950
@@ -3988,6 +4024,10 @@ MT:
       '2015':
         revenue: 97
         rank: 8
+        percent: 0
+      '2016':
+        revenue: 97
+        rank: 7
         percent: 0
     NGL:
       '2006':
@@ -4124,11 +4164,6 @@ MT:
         revenue: 1106414
         rank: 7
         percent: 0.3
-    Other Products:
-      '2016':
-        revenue: 871
-        rank: 13
-        percent: 0
     Phosphate:
       '2006':
         revenue: 12681
@@ -4167,6 +4202,10 @@ MT:
         rank: 3
         percent: 0
       '2015':
+        revenue: 4227
+        rank: 4
+        percent: 0
+      '2016':
         revenue: 4227
         rank: 4
         percent: 0
@@ -4211,6 +4250,10 @@ MT:
         revenue: 9168
         rank: 1
         percent: null
+      '2016':
+        revenue: 871
+        rank: 3
+        percent: 0.4
 NC:
   commodities:
     All:
@@ -4259,6 +4302,10 @@ NC:
         revenue: 474
         rank: 6
         percent: 0
+      '2016':
+        revenue: -474
+        rank: 9
+        percent: null
 ND:
   commodities:
     All:
@@ -4305,7 +4352,7 @@ ND:
       '2016':
         revenue: 112790636
         rank: 5
-        percent: 2.3
+        percent: 2.1
     Coal:
       '2006':
         revenue: 918119
@@ -4348,9 +4395,9 @@ ND:
         rank: 6
         percent: 0.4
       '2016':
-        revenue: 2670617
+        revenue: 2835283
         rank: 6
-        percent: 0.5
+        percent: 0.3
     Gas:
       '2006':
         revenue: 5457309
@@ -4544,11 +4591,6 @@ ND:
         revenue: 905654
         rank: 8
         percent: 0.2
-    Other Products:
-      '2016':
-        revenue: 133478
-        rank: 10
-        percent: 0.1
     Sulfur:
       '2006':
         revenue: 92
@@ -4787,7 +4829,7 @@ NM:
       '2016':
         revenue: 655424156
         rank: 2
-        percent: 13.1
+        percent: 12.3
     CO2:
       '2006':
         revenue: 661305
@@ -4828,6 +4870,10 @@ NM:
       '2015':
         revenue: 784354
         rank: 2
+        percent: 1.4
+      '2016':
+        revenue: 679168
+        rank: 3
         percent: 1.4
     Coal:
       '2006':
@@ -4871,9 +4917,9 @@ NM:
         rank: 5
         percent: 1.7
       '2016':
-        revenue: 12440845
+        revenue: 13030864
         rank: 5
-        percent: 2.4
+        percent: 1.6
     Gas:
       '2006':
         revenue: 680611624
@@ -4960,6 +5006,10 @@ NM:
         revenue: 48152
         rank: 6
         percent: 0.3
+      '2016':
+        revenue: 56743
+        rank: 6
+        percent: 0.4
     NGL:
       '2006':
         revenue: 109336369
@@ -5095,11 +5145,6 @@ NM:
         revenue: 30270535
         rank: 1
         percent: 7.7
-    Other Products:
-      '2016':
-        revenue: 10973869
-        rank: 4
-        percent: 8
     Potassium:
       '2006':
         revenue: 6455455
@@ -5141,6 +5186,10 @@ NM:
         revenue: 14493228
         rank: 1
         percent: 94.1
+      '2016':
+        revenue: 10202101
+        rank: 1
+        percent: 94.7
     Sodium:
       '2006':
         revenue: 245710
@@ -5182,6 +5231,10 @@ NM:
         revenue: 549410
         rank: 4
         percent: 1.2
+      '2016':
+        revenue: 716277
+        rank: 4
+        percent: 1.5
     Sulfur:
       '2011':
         revenue: 65190
@@ -5279,6 +5332,10 @@ NV:
         revenue: 4239100
         rank: 2
         percent: 30.2
+      '2016':
+        revenue: 4576032
+        rank: 2
+        percent: 34.3
     Oil:
       '2006':
         revenue: 2732321
@@ -5369,11 +5426,6 @@ NV:
         revenue: 1633896
         rank: 5
         percent: 0.4
-    Other Products:
-      '2016':
-        revenue: 3442525
-        rank: 7
-        percent: 2.5
     Potassium:
       '2006':
         revenue: 11619
@@ -5409,6 +5461,10 @@ NV:
         percent: null
       '2015':
         revenue: 15006
+        rank: 3
+        percent: 0.1
+      '2016':
+        revenue: 11662
         rank: 3
         percent: 0.1
     Sand & Gravel:
@@ -5842,7 +5898,7 @@ OK:
       '2016':
         revenue: 13129471
         rank: 9
-        percent: 0.3
+        percent: 0.2
     Asphalt:
       '2006':
         revenue: 959
@@ -5902,7 +5958,7 @@ OK:
         rank: 7
         percent: 0.1
       '2016':
-        revenue: 673176
+        revenue: 693046
         rank: 7
         percent: 0.1
     Gas:
@@ -6182,6 +6238,10 @@ OR:
         revenue: 178259
         rank: 4
         percent: 1.3
+      '2016':
+        revenue: 184162
+        rank: 4
+        percent: 1.4
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1314905
@@ -6490,6 +6550,10 @@ SC:
         revenue: 3329
         rank: 4
         percent: 0
+      '2016':
+        revenue: 3330
+        rank: 3
+        percent: 0
 SD:
   commodities:
     All:
@@ -6747,6 +6811,11 @@ TX:
         revenue: 11399799
         rank: 10
         percent: 0.2
+    CO2:
+      '2016':
+        revenue: 1315
+        rank: 5
+        percent: 0
     Gas:
       '2006':
         revenue: 19219211
@@ -6927,11 +6996,6 @@ TX:
         revenue: 629563
         rank: 9
         percent: 0.2
-    Other Products:
-      '2016':
-        revenue: 1315
-        rank: 12
-        percent: 0
 UT:
   commodities:
     All:
@@ -6978,7 +7042,7 @@ UT:
       '2016':
         revenue: 127884820
         rank: 4
-        percent: 2.6
+        percent: 2.4
     CO2:
       '2008':
         revenue: 65886
@@ -7012,6 +7076,10 @@ UT:
         revenue: 29714
         rank: 4
         percent: 0.1
+      '2016':
+        revenue: 109049
+        rank: 4
+        percent: 0.2
     Clay:
       '2006':
         revenue: 3697
@@ -7051,6 +7119,10 @@ UT:
         percent: 100
       '2015':
         revenue: 8700
+        rank: 1
+        percent: 100
+      '2016':
+        revenue: 9394
         rank: 1
         percent: 100
     Coal:
@@ -7095,9 +7167,9 @@ UT:
         rank: 4
         percent: 2.9
       '2016':
-        revenue: 32519177
-        rank: 3
-        percent: 6.4
+        revenue: 39180793
+        rank: 2
+        percent: 4.7
     Gas:
       '2006':
         revenue: 153622021
@@ -7184,6 +7256,10 @@ UT:
         revenue: 692110
         rank: 3
         percent: 4.9
+      '2016':
+        revenue: 445445
+        rank: 3
+        percent: 3.3
     Gilsonite:
       '2006':
         revenue: 511875
@@ -7225,8 +7301,16 @@ UT:
         revenue: 1958982
         rank: 1
         percent: 100
+      '2016':
+        revenue: 1424528
+        rank: 1
+        percent: 100
     Gold:
       '2015':
+        revenue: 2604
+        rank: 1
+        percent: 100
+      '2016':
         revenue: 2604
         rank: 1
         percent: 100
@@ -7339,7 +7423,7 @@ UT:
         rank: 5
         percent: 1.6
       '2016':
-        revenue: 39338198
+        revenue: 39338518
         rank: 5
         percent: 1.3
     Oil & Gas (Non-Royalty):
@@ -7387,11 +7471,6 @@ UT:
         revenue: -483438
         rank: 30
         percent: null
-    Other Products:
-      '2016':
-        revenue: 2060624
-        rank: 8
-        percent: 1.5
     Phosphate:
       '2006':
         revenue: 11318
@@ -7430,6 +7509,10 @@ UT:
         rank: 2
         percent: 0.2
       '2015':
+        revenue: 24360
+        rank: 3
+        percent: 0.2
+      '2016':
         revenue: 24360
         rank: 3
         percent: 0.2
@@ -7474,6 +7557,10 @@ UT:
         revenue: 888142
         rank: 2
         percent: 5.8
+      '2016':
+        revenue: 549283
+        rank: 2
+        percent: 5.1
     Sodium:
       '2006':
         revenue: 1344
@@ -7513,6 +7600,10 @@ UT:
         percent: 0
       '2015':
         revenue: 2251
+        rank: 5
+        percent: 0
+      '2016':
+        revenue: 2487
         rank: 5
         percent: 0
     Tar Sands:
@@ -7665,6 +7756,10 @@ VA:
         revenue: 7050
         rank: 3
         percent: 0.1
+      '2016':
+        revenue: 1420
+        rank: 5
+        percent: 0
     Oil:
       '2013':
         revenue: 92
@@ -7817,6 +7912,10 @@ WA:
         rank: 8
         percent: 0
       '2015':
+        revenue: 8437
+        rank: 8
+        percent: 0.1
+      '2016':
         revenue: 8437
         rank: 8
         percent: 0.1
@@ -8058,7 +8157,7 @@ WY:
       '2016':
         revenue: 1225400985
         rank: 1
-        percent: 24.5
+        percent: 23
     CO2:
       '2006':
         revenue: 60734
@@ -8100,6 +8199,10 @@ WY:
         revenue: 246841
         rank: 3
         percent: 0.4
+      '2016':
+        revenue: 4061980
+        rank: 2
+        percent: 8.3
     Coal:
       '2006':
         revenue: 824749734
@@ -8142,9 +8245,9 @@ WY:
         rank: 1
         percent: 87.5
       '2016':
-        revenue: 397070066
+        revenue: 705526037
         rank: 1
-        percent: 77.6
+        percent: 85.2
     Gas:
       '2006':
         revenue: 934471458
@@ -8330,11 +8433,6 @@ WY:
         revenue: 19484147
         rank: 2
         percent: 4.9
-    Other Products:
-      '2016':
-        revenue: 37446244
-        rank: 2
-        percent: 27.5
     Sodium:
       '2006':
         revenue: 25229074
@@ -8376,6 +8474,10 @@ WY:
         revenue: 34480367
         rank: 1
         percent: 77.4
+      '2016':
+        revenue: 33649835
+        rank: 1
+        percent: 72.5
     Sulfur:
       '2006':
         revenue: 15500
@@ -8417,3 +8519,7 @@ WY:
         revenue: -257513
         rank: 4
         percent: null
+      '2016':
+        revenue: 221508
+        rank: 1
+        percent: 97.8

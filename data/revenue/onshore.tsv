@@ -189,22 +189,22 @@ Fed Onshore	2006	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$1,395.76
 Fed Onshore	2006	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$100.77 
 Fed Onshore	2006	CA	San Bernardn	06071	Rents	Sodium	Sodium		$3,087.00 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash-Granular	($165,563.39)
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Anhydrous	($1,204.08)
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Anhydrous	($752.83)
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$7,143.04 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$7,393.06 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$12,193.81 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$16,048.56 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$19,842.55 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$20,126.39 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$43,746.18 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$50,324.14 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$58,728.76 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$73,880.50 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$98,611.29 
-Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$133,093.63 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$579,786.45 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$133,093.63 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Anhydrous	($1,204.08)
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$20,126.39 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$16,048.56 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$98,611.29 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$50,324.14 
 Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,930,473.52 
+Fed Onshore	2006	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$43,746.18 
 Fed Onshore	2006	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$651.94 
 Fed Onshore	2006	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$3,300.33 
 Fed Onshore	2006	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,615.12 
@@ -1197,12 +1197,12 @@ Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$2,422.17
 Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil		($320.00)
 Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($326,936.07)
 Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($162.81)
-Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$415,189.65 
 Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Sodium	Sodium		$5,451.38 
+Fed Onshore	2006	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$415,189.65 
 Fed Onshore	2006	NM	Eddy	35015	Rents	Oil & Gas	Oil	Oil	($2.00)
 Fed Onshore	2006	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,041,144.28 
-Fed Onshore	2006	NM	Eddy	35015	Rents	Potassium	Potassium		$11,458.00 
 Fed Onshore	2006	NM	Eddy	35015	Rents	Sodium	Sodium		$1,720.00 
+Fed Onshore	2006	NM	Eddy	35015	Rents	Potassium	Potassium		$11,458.00 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Flash Gas	$3,150.08 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$36,865,370.80 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$88,478,752.02 
@@ -1210,16 +1210,16 @@ Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$9,305
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$129,239.38 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$14,735,532.90 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$88,488,097.86 
-Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Potassium Sulphate Special Std	$114.87 
-Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$167.60 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Granulated Langeinite	$277.14 
+Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$1,845,334.99 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite-Special Std	$1,001.67 
-Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Potassium	$1,684.82 
+Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$1,702,932.25 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,119,400.55 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$1,251,313.27 
-Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$1,702,932.25 
-Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$1,845,334.99 
+Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Potassium	$1,684.82 
+Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Potassium Sulphate Special Std	$114.87 
 Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$236,317.11 
+Fed Onshore	2006	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$167.60 
 Fed Onshore	2006	NM	Guadalupe	35019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$5,440.00 
 Fed Onshore	2006	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$85,649.19 
 Fed Onshore	2006	NM	Harding	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$41,340.28 
@@ -1234,11 +1234,11 @@ Fed Onshore	2006	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$14,595,8
 Fed Onshore	2006	NM	Lea	35025	Other Revenues	Oil & Gas	Oil		($0.01)
 Fed Onshore	2006	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($107,666.91)
 Fed Onshore	2006	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($17,937.45)
-Fed Onshore	2006	NM	Lea	35025	Other Revenues	Potassium	Potassium		$99,691.71 
 Fed Onshore	2006	NM	Lea	35025	Other Revenues	Sodium	Sodium		$120.00 
+Fed Onshore	2006	NM	Lea	35025	Other Revenues	Potassium	Potassium		$99,691.71 
 Fed Onshore	2006	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$380,036.44 
-Fed Onshore	2006	NM	Lea	35025	Rents	Potassium	Potassium		($2,750.00)
 Fed Onshore	2006	NM	Lea	35025	Rents	Sodium	Sodium		$40.00 
+Fed Onshore	2006	NM	Lea	35025	Rents	Potassium	Potassium		($2,750.00)
 Fed Onshore	2006	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$7,147,619.67 
 Fed Onshore	2006	NM	Lea	35025	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$42,167,792.75 
 Fed Onshore	2006	NM	Lea	35025	Royalties	Oil & Gas	NGL	Gas Plant Products	$4,738,789.87 
@@ -1918,8 +1918,8 @@ Fed Onshore	2006	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($28,563.37
 Fed Onshore	2006	UT	Tooele	49045	Rents	Hardrock	Hardrock		$1,449.00 
 Fed Onshore	2006	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$8,640.00 
 Fed Onshore	2006	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2006	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$11,526.75 
 Fed Onshore	2006	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$20,113.91 
+Fed Onshore	2006	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$11,526.75 
 Fed Onshore	2006	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$92,538.38 
 Fed Onshore	2006	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$1,343.85 
 Fed Onshore	2006	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$27,353,683.40 
@@ -2453,23 +2453,23 @@ Fed Onshore	2007	CA	Sacramento	06067	Other Revenues	Oil & Gas	Oil & Gas (Non-Roy
 Fed Onshore	2007	CA	San Benito	06069	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$108,716.40 
 Fed Onshore	2007	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$1,800.18 
 Fed Onshore	2007	CA	San Bernardn	06071	Bonus	Sodium	Sodium		$120.00 
-Fed Onshore	2007	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$3,459.76 
 Fed Onshore	2007	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$12,399.23 
+Fed Onshore	2007	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$3,459.76 
 Fed Onshore	2007	CA	San Bernardn	06071	Rents	Sodium	Sodium		$240.00 
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	($358,556.01)
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	($3,722.34)
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$4,333.64 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$266,084.21 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$39,603.57 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$13,102.52 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$14,243.17 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$24,631.33 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$32,984.33 
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$39,603.57 
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$52,573.86 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$104,118.05 
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$166,218.50 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$52,573.86 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$170,894.15 
-Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$266,084.21 
 Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$1,289,981.72 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$166,218.50 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$4,333.64 
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	($358,556.01)
+Fed Onshore	2007	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	($3,722.34)
 Fed Onshore	2007	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($39.22)
 Fed Onshore	2007	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2,912.37 
 Fed Onshore	2007	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,185.06 
@@ -3485,11 +3485,11 @@ Fed Onshore	2007	NM	Eddy	35015	Bonus	Potassium	Potassium		$5,385.55
 Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$709.67 
 Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil		$6,771.08 
 Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$4,348,131.14 
-Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$168,713.25 
 Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Sodium	Sodium		$23,160.00 
+Fed Onshore	2007	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$168,713.25 
 Fed Onshore	2007	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$904,797.49 
-Fed Onshore	2007	NM	Eddy	35015	Rents	Potassium	Potassium		($19,138.65)
 Fed Onshore	2007	NM	Eddy	35015	Rents	Sodium	Sodium		($3,200.00)
+Fed Onshore	2007	NM	Eddy	35015	Rents	Potassium	Potassium		($19,138.65)
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Flash Gas	$45,863.50 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$66,598.04 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$31,377,245.57 
@@ -3498,15 +3498,15 @@ Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$8,417
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$90,157.25 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$13,463,204.61 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$105,006,950.51 
-Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite-Special Std	($592.38)
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Granulated Langeinite	($277.14)
+Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$3,073,318.30 
+Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite-Special Std	($592.38)
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite-Standard	($0.36)
-Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,898.45 
+Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$2,435,926.59 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,452,920.50 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$2,224,499.95 
-Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$2,435,926.59 
-Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$3,073,318.30 
 Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$199,135.49 
+Fed Onshore	2007	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,898.45 
 Fed Onshore	2007	NM	Grant	35017	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$9,820.00 
 Fed Onshore	2007	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$2,946.00 
 Fed Onshore	2007	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$104,892.30 
@@ -3523,11 +3523,11 @@ Fed Onshore	2007	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,427,97
 Fed Onshore	2007	NM	Lea	35025	Bonus	Potassium	Potassium		$174.20 
 Fed Onshore	2007	NM	Lea	35025	Other Revenues	Oil & Gas	Gas		($0.17)
 Fed Onshore	2007	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$3,210,613.17 
-Fed Onshore	2007	NM	Lea	35025	Other Revenues	Potassium	Potassium		$41,584.00 
 Fed Onshore	2007	NM	Lea	35025	Other Revenues	Sodium	Sodium		$120.00 
+Fed Onshore	2007	NM	Lea	35025	Other Revenues	Potassium	Potassium		$41,584.00 
 Fed Onshore	2007	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$376,488.21 
-Fed Onshore	2007	NM	Lea	35025	Rents	Potassium	Potassium		($7,803.60)
 Fed Onshore	2007	NM	Lea	35025	Rents	Sodium	Sodium		$40.00 
+Fed Onshore	2007	NM	Lea	35025	Rents	Potassium	Potassium		($7,803.60)
 Fed Onshore	2007	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$7,109,220.94 
 Fed Onshore	2007	NM	Lea	35025	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$37,869,918.28 
 Fed Onshore	2007	NM	Lea	35025	Royalties	Oil & Gas	NGL	Gas Plant Products	$5,162,875.74 
@@ -4248,10 +4248,10 @@ Fed Onshore	2007	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,594.89
 Fed Onshore	2007	UT	Tooele	49045	Rents	Hardrock	Hardrock		$808.00 
 Fed Onshore	2007	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$167,394.50 
 Fed Onshore	2007	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
+Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$18,755.50 
+Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$10,140.98 
 Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Muriate Of Potash-Coarse	($1,873.15)
 Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	($1,002.27)
-Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$10,140.98 
-Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$18,755.50 
 Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$151,922.94 
 Fed Onshore	2007	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$839.73 
 Fed Onshore	2007	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$6,738,531.50 
@@ -4760,24 +4760,24 @@ Fed Onshore	2008	CA	San Benito	06069	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4
 Fed Onshore	2008	CA	San Benito	06069	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$136,073.33 
 Fed Onshore	2008	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$3,884.28 
 Fed Onshore	2008	CA	San Bernardn	06071	Bonus	Sodium	Sodium		$120.00 
-Fed Onshore	2008	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$3,502.04 
 Fed Onshore	2008	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$4,708.39 
+Fed Onshore	2008	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$3,502.04 
 Fed Onshore	2008	CA	San Bernardn	06071	Rents	Hardrock	Hardrock		$21.00 
 Fed Onshore	2008	CA	San Bernardn	06071	Rents	Sodium	Sodium		($1,883.00)
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$138,099.79 
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$24,533.62 
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$33,057.02 
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$106,883.27 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$6,386.47 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$12,438.12 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$13,015.03 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$15,361.33 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$20,784.31 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$20,880.94 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$24,533.62 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$33,057.02 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$66,888.34 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$88,617.63 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$106,883.27 
-Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$138,099.79 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$600,477.08 
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$20,880.94 
 Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$1,144,289.34 
+Fed Onshore	2008	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$12,438.12 
 Fed Onshore	2008	CA	San Diego	06073	Rents	Hot Springs	Geothermal		$33.00 
 Fed Onshore	2008	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($636.49)
 Fed Onshore	2008	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$3,730.19 
@@ -5820,11 +5820,12 @@ Fed Onshore	2008	NM	Eddy	35015	Bonus	Potassium	Potassium		$787,103.75
 Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$1,043.39 
 Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil		$24,435.90 
 Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$564,154.15 
-Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$501,933.79 
 Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Sodium	Sodium		$609.14 
+Fed Onshore	2008	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$501,933.79 
 Fed Onshore	2008	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$840,350.50 
-Fed Onshore	2008	NM	Eddy	35015	Rents	Potassium	Potassium		$52,481.25 
 Fed Onshore	2008	NM	Eddy	35015	Rents	Sodium	Sodium		$639.07 
+Fed Onshore	2008	NM	Eddy	35015	Rents	Potassium	Potassium		$52,481.25 
+Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$1,701,323.24 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$48,430.25 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$33,227,413.53 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$113,797,271.11 
@@ -5832,13 +5833,12 @@ Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$9,684
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$80,535.56 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$20,609,147.04 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$168,826,107.60 
-Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,365.56 
-Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$202,411.59 
-Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$1,701,323.24 
-Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,916,491.69 
-Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,861,890.40 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Sodium	Sodium	Brine Barrels	$17,916.22 
+Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,861,890.40 
+Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,916,491.69 
+Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$202,411.59 
 Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$125,407.04 
+Fed Onshore	2008	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,365.56 
 Fed Onshore	2008	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,473.00 
 Fed Onshore	2008	NM	Guadalupe	35019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$535,023.00 
 Fed Onshore	2008	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$199,554.80 
@@ -5851,11 +5851,11 @@ Fed Onshore	2008	NM	Hidalgo	35023	Other Revenues	Geothermal	Geothermal		$5,002.0
 Fed Onshore	2008	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$70,263.00 
 Fed Onshore	2008	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$15,040,470.00 
 Fed Onshore	2008	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,437,905.01 
-Fed Onshore	2008	NM	Lea	35025	Other Revenues	Potassium	Potassium		$90,504.93 
 Fed Onshore	2008	NM	Lea	35025	Other Revenues	Sodium	Sodium		$4,974.68 
+Fed Onshore	2008	NM	Lea	35025	Other Revenues	Potassium	Potassium		$90,504.93 
 Fed Onshore	2008	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$293,848.93 
-Fed Onshore	2008	NM	Lea	35025	Rents	Potassium	Potassium		$16,434.00 
 Fed Onshore	2008	NM	Lea	35025	Rents	Sodium	Sodium		($680.00)
+Fed Onshore	2008	NM	Lea	35025	Rents	Potassium	Potassium		$16,434.00 
 Fed Onshore	2008	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$0.28 
 Fed Onshore	2008	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$15,199,546.45 
 Fed Onshore	2008	NM	Lea	35025	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$41,228,283.82 
@@ -6568,8 +6568,8 @@ Fed Onshore	2008	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,560.61
 Fed Onshore	2008	UT	Tooele	49045	Rents	Hardrock	Hardrock		$808.00 
 Fed Onshore	2008	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$130,666.00 
 Fed Onshore	2008	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2008	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$11,779.82 
 Fed Onshore	2008	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$26,788.93 
+Fed Onshore	2008	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$11,779.82 
 Fed Onshore	2008	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$394,106.34 
 Fed Onshore	2008	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$1,258.67 
 Fed Onshore	2008	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$484,192.50 
@@ -7063,20 +7063,20 @@ Fed Onshore	2009	CA	San Bernardn	06071	Bonus	Sodium	Sodium		$1,416.00
 Fed Onshore	2009	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$22,627.82 
 Fed Onshore	2009	CA	San Bernardn	06071	Rents	Hardrock	Hardrock		$21.00 
 Fed Onshore	2009	CA	San Bernardn	06071	Rents	Sodium	Sodium		($5,649.00)
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$98,160.60 
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$19,353.22 
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$37,078.34 
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$102,661.35 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$7,461.05 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$12,209.41 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$14,318.82 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$14,564.73 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$19,353.22 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$22,970.15 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$23,237.08 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$37,078.34 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$62,990.96 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$64,175.65 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$98,160.60 
-Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$102,661.35 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$633,415.87 
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$22,970.15 
 Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$1,203,648.08 
+Fed Onshore	2009	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$14,564.73 
 Fed Onshore	2009	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($2.44)
 Fed Onshore	2009	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,567.56 
 Fed Onshore	2009	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$12,318.98 
@@ -8086,11 +8086,13 @@ Fed Onshore	2009	NM	Eddy	35015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$6,634,6
 Fed Onshore	2009	NM	Eddy	35015	Bonus	Potassium	Potassium		$23,760.00 
 Fed Onshore	2009	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$106.91 
 Fed Onshore	2009	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($3,422,466.81)
-Fed Onshore	2009	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$300,657.73 
 Fed Onshore	2009	NM	Eddy	35015	Other Revenues	Sodium	Sodium		$1,320.00 
+Fed Onshore	2009	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$300,657.73 
 Fed Onshore	2009	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$780,659.72 
-Fed Onshore	2009	NM	Eddy	35015	Rents	Potassium	Potassium		$53,023.26 
 Fed Onshore	2009	NM	Eddy	35015	Rents	Sodium	Sodium		$440.00 
+Fed Onshore	2009	NM	Eddy	35015	Rents	Potassium	Potassium		$53,023.26 
+Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$13,392,891.32 
+Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,196,106.51 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$8,741.03 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Coal Bed Methane	$10.51 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$10,402.44 
@@ -8100,13 +8102,11 @@ Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$3,010
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$64,778.73 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$9,492,480.54 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$102,738,459.14 
-Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$4,316.50 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,967,467.73 
-Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,196,106.51 
-Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$6,549,784.67 
-Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$13,392,891.32 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Sodium	Sodium	Brine Barrels	($60.02)
+Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$6,549,784.67 
 Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$151,889.03 
+Fed Onshore	2009	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$4,316.50 
 Fed Onshore	2009	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,473.00 
 Fed Onshore	2009	NM	Guadalupe	35019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$83,343.00 
 Fed Onshore	2009	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$229,457.30 
@@ -8121,8 +8121,8 @@ Fed Onshore	2009	NM	Hidalgo	35023	Rents	Geothermal	Geothermal		$640.00
 Fed Onshore	2009	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$54,442.00 
 Fed Onshore	2009	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,645,545.00 
 Fed Onshore	2009	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($2,838,566.99)
-Fed Onshore	2009	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2009	NM	Lea	35025	Other Revenues	Sodium	Sodium		$720.00 
+Fed Onshore	2009	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2009	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$339,538.32 
 Fed Onshore	2009	NM	Lea	35025	Rents	Potassium	Potassium		$25,808.24 
 Fed Onshore	2009	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$8.80 
@@ -8828,8 +8828,8 @@ Fed Onshore	2009	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,704.00
 Fed Onshore	2009	UT	Tooele	49045	Rents	Hardrock	Hardrock		$808.00 
 Fed Onshore	2009	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$125,394.00 
 Fed Onshore	2009	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2009	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,690.58 
 Fed Onshore	2009	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$35,922.41 
+Fed Onshore	2009	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,690.58 
 Fed Onshore	2009	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$280,080.89 
 Fed Onshore	2009	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$2,600.66 
 Fed Onshore	2009	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1,062,425.00 
@@ -9325,20 +9325,20 @@ Fed Onshore	2010	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$7,453.41
 Fed Onshore	2010	CA	San Bernardn	06071	Bonus	Sodium	Sodium		$120.00 
 Fed Onshore	2010	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$41,121.99 
 Fed Onshore	2010	CA	San Bernardn	06071	Rents	Sodium	Sodium		$14,772.47 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$109,231.29 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$102,305.69 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$186,501.27 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$156,846.29 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$9,871.02 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$13,531.30 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$19,050.10 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$21,694.49 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$64,157.10 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$70,085.29 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$98,161.54 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$102,305.69 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$109,231.29 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$116,914.11 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$156,846.29 
-Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$186,501.27 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$610,741.53 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$21,694.49 
 Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$1,144,627.90 
+Fed Onshore	2010	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$19,050.10 
 Fed Onshore	2010	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($6.35)
 Fed Onshore	2010	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,727.51 
 Fed Onshore	2010	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$7,916.96 
@@ -10339,11 +10339,15 @@ Fed Onshore	2010	NM	Dona Ana	35013	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$57,
 Fed Onshore	2010	NM	Eddy	35015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,104,440.00 
 Fed Onshore	2010	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$261.27 
 Fed Onshore	2010	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$3,407,188.65 
-Fed Onshore	2010	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$131,688.47 
 Fed Onshore	2010	NM	Eddy	35015	Other Revenues	Sodium	Sodium		$3,840.00 
+Fed Onshore	2010	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$131,688.47 
 Fed Onshore	2010	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$698,061.31 
-Fed Onshore	2010	NM	Eddy	35015	Rents	Potassium	Potassium		($117,412.00)
 Fed Onshore	2010	NM	Eddy	35015	Rents	Sodium	Sodium		($1,280.00)
+Fed Onshore	2010	NM	Eddy	35015	Rents	Potassium	Potassium		($117,412.00)
+Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,173,603.14 
+Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,189,818.30 
+Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,572,956.32 
+Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,200,890.52 
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Coal Bed Methane	($4,491.83)
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$13,827.36 
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$785,523.43 
@@ -10352,12 +10356,8 @@ Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$6,173
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$79,683.99 
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$11,777,672.21 
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$161,622,534.55 
-Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,774.34 
-Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,572,956.32 
-Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,200,890.52 
-Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,189,818.30 
-Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,173,603.14 
 Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$216,177.08 
+Fed Onshore	2010	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,774.34 
 Fed Onshore	2010	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,473.00 
 Fed Onshore	2010	NM	Guadalupe	35019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$76.00 
 Fed Onshore	2010	NM	Guadalupe	35019	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$110.92 
@@ -10373,11 +10373,11 @@ Fed Onshore	2010	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$54,4
 Fed Onshore	2010	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$8,871,360.00 
 Fed Onshore	2010	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($0.03)
 Fed Onshore	2010	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$611,037.60 
-Fed Onshore	2010	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2010	NM	Lea	35025	Other Revenues	Sodium	Sodium		$720.00 
+Fed Onshore	2010	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2010	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$313,908.10 
-Fed Onshore	2010	NM	Lea	35025	Rents	Potassium	Potassium		$7,509.00 
 Fed Onshore	2010	NM	Lea	35025	Rents	Sodium	Sodium		$240.00 
+Fed Onshore	2010	NM	Lea	35025	Rents	Potassium	Potassium		$7,509.00 
 Fed Onshore	2010	NM	Lea	35025	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	($0.40)
 Fed Onshore	2010	NM	Lea	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$176.01 
 Fed Onshore	2010	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$3,289.67 
@@ -11083,8 +11083,8 @@ Fed Onshore	2010	UT	Summit	49043	Royalties	Oil & Gas	Oil	Oil	$106,705.93
 Fed Onshore	2010	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,714.00)
 Fed Onshore	2010	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$116,569.50 
 Fed Onshore	2010	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2010	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,174.01 
 Fed Onshore	2010	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$42,871.87 
+Fed Onshore	2010	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,174.01 
 Fed Onshore	2010	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$224,043.85 
 Fed Onshore	2010	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$1,985.17 
 Fed Onshore	2010	UT	Uintah	49047	Bonus	Gilsonite	Gilsonite		$1,500.00 
@@ -11564,22 +11564,22 @@ Fed Onshore	2011	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$7,519.13
 Fed Onshore	2011	CA	San Bernardn	06071	Bonus	Sodium	Sodium		$120.00 
 Fed Onshore	2011	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$13,624.70 
 Fed Onshore	2011	CA	San Bernardn	06071	Rents	Sodium	Sodium		$3,543.49 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Anhydrous	$8,947.30 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$134,395.14 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Anhydrous	$14,208.29 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$268,252.33 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$382,199.75 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$307,130.55 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Anhydrous	$8,947.30 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$17,233.05 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$24,747.65 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$33,121.97 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$39,684.95 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$86,215.35 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$134,395.14 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$168,281.89 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$192,822.96 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$239,495.65 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$268,252.33 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$307,130.55 
-Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$382,199.75 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$825,740.18 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$39,684.95 
 Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$1,532,759.73 
+Fed Onshore	2011	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$33,121.97 
 Fed Onshore	2011	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($2.58)
 Fed Onshore	2011	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,600.74 
 Fed Onshore	2011	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,269.08 
@@ -12617,10 +12617,14 @@ Fed Onshore	2011	NM	Dona Ana	35013	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$57,
 Fed Onshore	2011	NM	Eddy	35015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$6,798,340.00 
 Fed Onshore	2011	NM	Eddy	35015	Other Revenues	Oil & Gas	Gas		$123.38 
 Fed Onshore	2011	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$7,819,176.96 
-Fed Onshore	2011	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$254,983.92 
 Fed Onshore	2011	NM	Eddy	35015	Other Revenues	Sodium	Sodium		($6,360.00)
+Fed Onshore	2011	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$254,983.92 
 Fed Onshore	2011	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$714,231.95 
 Fed Onshore	2011	NM	Eddy	35015	Rents	Potassium	Potassium		($46,036.17)
+Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$7,046,699.45 
+Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$8,237,791.78 
+Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,571,299.58 
+Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,654,730.33 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$94,477.54 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$9,573,716.71 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$73,171,439.38 
@@ -12628,13 +12632,9 @@ Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$12,09
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$103,793.08 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$16,799,940.08 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$219,190,256.92 
-Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,666.76 
-Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,571,299.58 
-Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,654,730.33 
-Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$7,046,699.45 
-Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$8,237,791.78 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$227,867.40 
 Fed Onshore	2011	NM	Eddy	35015	Royalties	Oil & Gas	Sulfur	Sulfur	$65,189.60 
+Fed Onshore	2011	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$5,666.76 
 Fed Onshore	2011	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,964.00 
 Fed Onshore	2011	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$254,879.80 
 Fed Onshore	2011	NM	Harding	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$6,310.87 
@@ -12647,11 +12647,11 @@ Fed Onshore	2011	NM	Hidalgo	35023	Rents	Geothermal	Geothermal		$31,292.00
 Fed Onshore	2011	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$33,906.50 
 Fed Onshore	2011	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$19,636,725.00 
 Fed Onshore	2011	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$3,666,288.25 
-Fed Onshore	2011	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2011	NM	Lea	35025	Other Revenues	Sodium	Sodium		$702.19 
+Fed Onshore	2011	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2011	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$309,656.71 
-Fed Onshore	2011	NM	Lea	35025	Rents	Potassium	Potassium		$46,756.67 
 Fed Onshore	2011	NM	Lea	35025	Rents	Sodium	Sodium		$125.60 
+Fed Onshore	2011	NM	Lea	35025	Rents	Potassium	Potassium		$46,756.67 
 Fed Onshore	2011	NM	Lea	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$46.92 
 Fed Onshore	2011	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$995.10 
 Fed Onshore	2011	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$5,480,779.37 
@@ -13344,8 +13344,8 @@ Fed Onshore	2011	UT	Summit	49043	Royalties	Oil & Gas	Oil	Oil	($421,574.14)
 Fed Onshore	2011	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,704.00)
 Fed Onshore	2011	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$125,972.50 
 Fed Onshore	2011	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2011	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,462.34 
 Fed Onshore	2011	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$40,897.75 
+Fed Onshore	2011	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$2,462.34 
 Fed Onshore	2011	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$322,565.05 
 Fed Onshore	2011	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$2,716.42 
 Fed Onshore	2011	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1,070,255.50 
@@ -13824,20 +13824,20 @@ Fed Onshore	2012	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$1,193.88
 Fed Onshore	2012	CA	San Bernardn	06071	Bonus	Sodium	Sodium		($480.00)
 Fed Onshore	2012	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$16,255.71 
 Fed Onshore	2012	CA	San Bernardn	06071	Rents	Sodium	Sodium		$5,032.50 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$274,291.32 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$593,808.90 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$744,076.41 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$597,112.19 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$98,949.36 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$53,520.79 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$61,692.03 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$98,949.36 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$103,207.06 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$175,968.92 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$274,291.32 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$371,927.12 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$374,111.79 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$466,425.07 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$593,808.90 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$597,112.19 
-Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$744,076.41 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$1,903,763.38 
 Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,538,184.81 
+Fed Onshore	2012	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$103,207.06 
 Fed Onshore	2012	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($6.60)
 Fed Onshore	2012	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,026.39 
 Fed Onshore	2012	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,532.09 
@@ -14855,8 +14855,13 @@ Fed Onshore	2012	NM	Eddy	35015	Bonus	Potassium	Potassium		$2,334,568.00
 Fed Onshore	2012	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,580,944.56 
 Fed Onshore	2012	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$278,836.62 
 Fed Onshore	2012	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$527,734.82 
-Fed Onshore	2012	NM	Eddy	35015	Rents	Potassium	Potassium		$50,569.58 
 Fed Onshore	2012	NM	Eddy	35015	Rents	Sodium	Sodium		$880.00 
+Fed Onshore	2012	NM	Eddy	35015	Rents	Potassium	Potassium		$50,569.58 
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$10,943,964.43 
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$8,426,159.34 
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$2,349,048.53 
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$3,968,666.50 
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$299,029.62 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$33,268.03 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$7,962,463.77 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$59,128,661.08 
@@ -14864,13 +14869,8 @@ Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$11,43
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$120,015.30 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$15,453,364.41 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$297,479,650.44 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,614.95 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$2,349,048.53 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$3,968,666.50 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$8,426,159.34 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$10,943,964.43 
-Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$299,029.62 
 Fed Onshore	2012	NM	Eddy	35015	Royalties	Oil & Gas	Sulfur	Sulfur	($0.16)
+Fed Onshore	2012	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,614.95 
 Fed Onshore	2012	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,964.00 
 Fed Onshore	2012	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$201,019.50 
 Fed Onshore	2012	NM	Harding	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($23,401.54)
@@ -14881,11 +14881,11 @@ Fed Onshore	2012	NM	Hidalgo	35023	Rents	Geothermal	Geothermal		$13,145.00
 Fed Onshore	2012	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$46,216.50 
 Fed Onshore	2012	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$67,021,940.00 
 Fed Onshore	2012	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,680,694.95 
-Fed Onshore	2012	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2012	NM	Lea	35025	Other Revenues	Sodium	Sodium		$720.00 
+Fed Onshore	2012	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2012	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$315,727.09 
-Fed Onshore	2012	NM	Lea	35025	Rents	Potassium	Potassium		$29,075.67 
 Fed Onshore	2012	NM	Lea	35025	Rents	Sodium	Sodium		$240.00 
+Fed Onshore	2012	NM	Lea	35025	Rents	Potassium	Potassium		$29,075.67 
 Fed Onshore	2012	NM	Lea	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$163.00 
 Fed Onshore	2012	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$834.01 
 Fed Onshore	2012	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$3,829,245.11 
@@ -15578,8 +15578,8 @@ Fed Onshore	2012	UT	Summit	49043	Royalties	Oil & Gas	Oil	Oil	$101,828.75
 Fed Onshore	2012	UT	Tooele	49045	Other Revenues	Potassium	Potassium		($24,704.00)
 Fed Onshore	2012	UT	Tooele	49045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$41,401.00 
 Fed Onshore	2012	UT	Tooele	49045	Rents	Potassium	Potassium		$24,704.00 
-Fed Onshore	2012	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$1,907.52 
 Fed Onshore	2012	UT	Tooele	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$37,623.64 
+Fed Onshore	2012	UT	Tooele	49045	Royalties	Potassium	Potassium	Manure Salts	$1,907.52 
 Fed Onshore	2012	UT	Tooele	49045	Royalties	Potassium	Potassium	Potash	$320,732.57 
 Fed Onshore	2012	UT	Tooele	49045	Royalties	Potassium	Sodium	Salt	$3,576.93 
 Fed Onshore	2012	UT	Uintah	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$331,414.00 
@@ -16036,20 +16036,20 @@ Fed Onshore	2013	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$1,071.08
 Fed Onshore	2013	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$55.58 
 Fed Onshore	2013	CA	San Bernardn	06071	Rents	Hardrock	Hardrock		$105.00 
 Fed Onshore	2013	CA	San Bernardn	06071	Rents	Sodium	Sodium		$649.50 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$271,930.09 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$516,351.06 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$801,074.89 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$593,166.99 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$114,888.21 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,142,976.94 
+Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$107,610.12 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$55,797.43 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$71,636.45 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$107,610.12 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$114,888.21 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$174,483.95 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$271,930.09 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$323,767.56 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$371,980.98 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$502,001.76 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$516,351.06 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$593,166.99 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$801,074.89 
 Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$1,694,533.53 
-Fed Onshore	2013	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,142,976.94 
 Fed Onshore	2013	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($4.09)
 Fed Onshore	2013	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,395.21 
 Fed Onshore	2013	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,636.96 
@@ -17064,11 +17064,17 @@ Fed Onshore	2013	NM	Dona Ana	35013	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$70,
 Fed Onshore	2013	NM	Eddy	35015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$22,731,820.00 
 Fed Onshore	2013	NM	Eddy	35015	Bonus	Potassium	Potassium		$291,992.00 
 Fed Onshore	2013	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$5,091,044.32 
-Fed Onshore	2013	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$277,227.02 
 Fed Onshore	2013	NM	Eddy	35015	Other Revenues	Sodium	Sodium		($9,236.31)
+Fed Onshore	2013	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$277,227.02 
 Fed Onshore	2013	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$520,154.53 
-Fed Onshore	2013	NM	Eddy	35015	Rents	Potassium	Potassium		($23,900.50)
 Fed Onshore	2013	NM	Eddy	35015	Rents	Sodium	Sodium		($2,200.00)
+Fed Onshore	2013	NM	Eddy	35015	Rents	Potassium	Potassium		($23,900.50)
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$10,026,132.55 
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,507,770.64 
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,672,238.86 
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,218,246.05 
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$479,907.97 
+Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,513.19 
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Fuel Gas	$910,531.13 
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$2,562,165.29 
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$14,435,243.32 
@@ -17078,12 +17084,6 @@ Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$357,934.83 
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$6,715,686.48 
 Fed Onshore	2013	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$352,684,618.47 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$1,513.19 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,672,238.86 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,218,246.05 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,507,770.64 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$10,026,132.55 
-Fed Onshore	2013	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$479,907.97 
 Fed Onshore	2013	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,964.00 
 Fed Onshore	2013	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$98,668.00 
 Fed Onshore	2013	NM	Harding	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$544.51 
@@ -17094,11 +17094,11 @@ Fed Onshore	2013	NM	Hidalgo	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$56,4
 Fed Onshore	2013	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$25,336,600.00 
 Fed Onshore	2013	NM	Lea	35025	Bonus	Potassium	Potassium		$212,952.00 
 Fed Onshore	2013	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$4,077,685.71 
-Fed Onshore	2013	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2013	NM	Lea	35025	Other Revenues	Sodium	Sodium		$18.35 
+Fed Onshore	2013	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2013	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$280,431.00 
-Fed Onshore	2013	NM	Lea	35025	Rents	Potassium	Potassium		($1,643.00)
 Fed Onshore	2013	NM	Lea	35025	Rents	Sodium	Sodium		($720.00)
+Fed Onshore	2013	NM	Lea	35025	Rents	Potassium	Potassium		($1,643.00)
 Fed Onshore	2013	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	($297.57)
 Fed Onshore	2013	NM	Lea	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$831,705.19 
 Fed Onshore	2013	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$9,080,974.83 
@@ -18259,24 +18259,24 @@ Fed Onshore	2014	CA	Monterey	06053	Royalties	Oil & Gas	Oil	Oil	$159,995.88
 Fed Onshore	2014	CA	Riverside	06065	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$559.15 
 Fed Onshore	2014	CA	San Benito	06069	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$560.00 
 Fed Onshore	2014	CA	San Benito	06069	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,794.98 
-Fed Onshore	2014	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$39.63 
 Fed Onshore	2014	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$16,768.06 
+Fed Onshore	2014	CA	San Bernardn	06071	Other Revenues	Potassium	Potassium		$39.63 
 Fed Onshore	2014	CA	San Bernardn	06071	Rents	Hardrock	Hardrock		$42.00 
 Fed Onshore	2014	CA	San Bernardn	06071	Rents	Sodium	Sodium		$7,981.75 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$215,215.40 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$448,652.23 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$694,406.64 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$448,352.83 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$111,389.42 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$2,979,274.74 
+Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$88,773.15 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$46,056.03 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$69,459.45 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$88,773.15 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$111,389.42 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$136,297.91 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$215,215.40 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$280,955.37 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$281,124.03 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$435,060.08 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$448,352.83 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$448,652.23 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$694,406.64 
 Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$1,608,784.86 
-Fed Onshore	2014	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$2,979,274.74 
 Fed Onshore	2014	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($14.85)
 Fed Onshore	2014	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,816.08 
 Fed Onshore	2014	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,727.86 
@@ -19262,6 +19262,12 @@ Fed Onshore	2014	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)	
 Fed Onshore	2014	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$205,479.19 
 Fed Onshore	2014	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$459,966.82 
 Fed Onshore	2014	NM	Eddy	35015	Rents	Potassium	Potassium		$4,138.74 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,830,201.37 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,144,082.82 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,387,109.91 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,533,469.77 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$573,646.54 
+Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$4,310.95 
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Coal Bed Methane	$476,515.82 
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Fuel Gas	$1,753,237.99 
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$3,132,953.60 
@@ -19274,12 +19280,6 @@ Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Inlet Scrubber	$2,223.61
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$289,838.50 
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$15,961,625.83 
 Fed Onshore	2014	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$381,732,840.10 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$4,310.95 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,387,109.91 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$4,533,469.77 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$6,144,082.82 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,830,201.37 
-Fed Onshore	2014	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$573,646.54 
 Fed Onshore	2014	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,964.00 
 Fed Onshore	2014	NM	Guadalupe	35019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$240.00 
 Fed Onshore	2014	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$95,764.00 
@@ -19294,8 +19294,8 @@ Fed Onshore	2014	NM	Lea	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$103,679,
 Fed Onshore	2014	NM	Lea	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$4,671,966.81 
 Fed Onshore	2014	NM	Lea	35025	Other Revenues	Potassium	Potassium		$66,040.00 
 Fed Onshore	2014	NM	Lea	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$271,354.23 
-Fed Onshore	2014	NM	Lea	35025	Rents	Potassium	Potassium		$13,161.67 
 Fed Onshore	2014	NM	Lea	35025	Rents	Sodium	Sodium		($40.00)
+Fed Onshore	2014	NM	Lea	35025	Rents	Potassium	Potassium		$13,161.67 
 Fed Onshore	2014	NM	Lea	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$127,900.13 
 Fed Onshore	2014	NM	Lea	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$899,824.37 
 Fed Onshore	2014	NM	Lea	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$9,472,197.61 
@@ -20490,20 +20490,20 @@ Fed Onshore	2015	CA	San Benito	06069	Royalties	Oil & Gas	Oil	Oil	$4,239.64
 Fed Onshore	2015	CA	San Bernardn	06071	Other Revenues	Sodium	Sodium		$14,874.57 
 Fed Onshore	2015	CA	San Bernardn	06071	Rents	Hardrock	Hardrock		$42.00 
 Fed Onshore	2015	CA	San Bernardn	06071	Rents	Sodium	Sodium		($1,863.99)
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$42,452.75 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$167,964.14 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$429,005.00 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$647,282.70 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$424,952.08 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$159,217.14 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,165,404.95 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$81,794.44 
+Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$42,452.75 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Salt	$99,278.15 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$107,770.14 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Salt	$159,217.14 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$167,964.14 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Boric Acid	$266,509.96 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$268,950.13 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$405,628.52 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Boric Acid	$424,952.08 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$429,005.00 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$647,282.70 
 Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Sodium	Sodium	Soda Ash	$1,711,830.55 
-Fed Onshore	2015	CA	San Bernardn	06071	Royalties	Potassium	Sodium	Soda Ash	$3,165,404.95 
 Fed Onshore	2015	CA	San Joaquin	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($1.15)
 Fed Onshore	2015	CA	San Joaquin	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,159.61 
 Fed Onshore	2015	CA	San Luis Ob.	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$95.61 
@@ -21466,6 +21466,12 @@ Fed Onshore	2015	NM	Eddy	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)	
 Fed Onshore	2015	NM	Eddy	35015	Other Revenues	Potassium	Potassium		$210,104.41 
 Fed Onshore	2015	NM	Eddy	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$388,416.49 
 Fed Onshore	2015	NM	Eddy	35015	Rents	Potassium	Potassium		($207.50)
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,294,511.02 
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,515,552.32 
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$792,664.10 
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$590,030.62 
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$549,410.43 
+Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$3,768.64 
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Coal Bed Methane	$60,737.57 
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Fuel Gas	$1,411,167.77 
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$4,362,245.84 
@@ -21477,12 +21483,6 @@ Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Inlet Scrubber	$2,816.08
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$172,310.01 
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Condensate	$5,746,934.08 
 Fed Onshore	2015	NM	Eddy	35015	Royalties	Oil & Gas	Oil	Oil	$249,906,772.35 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$3,768.64 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Potash	$590,030.62 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$792,664.10 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$4,515,552.32 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Potassium	Langbeinite	$8,294,511.02 
-Fed Onshore	2015	NM	Eddy	35015	Royalties	Potassium	Sodium	Salt	$549,410.43 
 Fed Onshore	2015	NM	Grant	35017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,964.00 
 Fed Onshore	2015	NM	Guadalupe	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$94,804.00 
 Fed Onshore	2015	NM	Harding	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$10,733.08 
@@ -22510,7 +22510,7 @@ Fed Onshore	2015	WY	Weston	56045	Royalties	Oil & Gas	NGL	Gas Plant Products	$73,
 Fed Onshore	2015	WY	Weston	56045	Royalties	Oil & Gas	Oil	Oil	$1,724,748.68 
 Fed Onshore	2016	AK	Kenai Peninsula 	02122	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$85,018
 Fed Onshore	2016	AK	Kenai Peninsula 	02122	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$4,192
-Fed Onshore	2016	AK	Kenai Peninsula 	02122	Rents	Geothermal			$7,680
+Fed Onshore	2016	AK	Kenai Peninsula 	02122	Rents	Geothermal	Geothermal		$7,680
 Fed Onshore	2016	AK	Kenai Peninsula 	02122	Royalties	Oil & Gas	NGL	Gas Plant Products	$20,897
 Fed Onshore	2016	AK	Kenai Peninsula 	02122	Royalties	Oil & Gas	Oil	Oil	$2,424,769
 Fed Onshore	2016	AK	Kenai Peninsula 	02122	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$81,554
@@ -22525,7 +22525,7 @@ Fed Onshore	2016	AL	Baldwin 	01003	Other Revenues	Oil & Gas	Oil & Gas (Non-Royal
 Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	NGL	Gas Plant Products	$47
 Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons	$27
 Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$1,392
-Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	Other Products	Sulfur	$65
+Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	Sulfur	Sulfur	$65
 Fed Onshore	2016	AL	Baldwin 	01003	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$28
 Fed Onshore	2016	AL	Bibb 	01007	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$240
 Fed Onshore	2016	AL	Bibb 	01007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,510
@@ -22540,8 +22540,8 @@ Fed Onshore	2016	AL	Escambia 	01053	Other Revenues	Oil & Gas	Oil & Gas (Non-Roya
 Fed Onshore	2016	AL	Escambia 	01053	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$47,900
 Fed Onshore	2016	AL	Escambia 	01053	Royalties	Oil & Gas	Oil	Oil	$214,419
 Fed Onshore	2016	AL	Hale 	01065	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$722
-Fed Onshore	2016	AL	Jefferson 	01073	Other Revenues	Coal			$145,961
-Fed Onshore	2016	AL	Jefferson 	01073	Rents	Coal			$4,830
+Fed Onshore	2016	AL	Jefferson 	01073	Other Revenues	Coal	Coal		$145,961
+Fed Onshore	2016	AL	Jefferson 	01073	Rents	Coal	Coal		$4,830
 Fed Onshore	2016	AL	Jefferson 	01073	Royalties	Coal	Coal	Coal	$59,039
 Fed Onshore	2016	AL	Lamar 	01075	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$196
 Fed Onshore	2016	AL	Lamar 	01075	Royalties	Oil & Gas	Oil	Oil	$2,311
@@ -22552,7 +22552,7 @@ Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	NGL	Gas Plant Products	$1,
 Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Oil	Oil	$3,370
 Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons	$68
 Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$27,827
-Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Other Products	Sulfur	$1,285
+Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Sulfur	Sulfur	$1,285
 Fed Onshore	2016	AL	Mobile 	01097	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$552
 Fed Onshore	2016	AL	Pickens 	01107	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$180
 Fed Onshore	2016	AL	Shelby 	01117	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$386
@@ -22584,8 +22584,8 @@ Fed Onshore	2016	AR	Franklin 	05047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,
 Fed Onshore	2016	AR	Franklin 	05047	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$23,264
 Fed Onshore	2016	AR	Fulton 	05049	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$131
 Fed Onshore	2016	AR	Fulton 	05049	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$18
-Fed Onshore	2016	AR	Garland 	05051	Other Revenues	Hardrock			$240
-Fed Onshore	2016	AR	Garland 	05051	Rents	Hardrock			$80
+Fed Onshore	2016	AR	Garland 	05051	Other Revenues	Hardrock	Hardrock		$240
+Fed Onshore	2016	AR	Garland 	05051	Rents	Hardrock	Hardrock		$80
 Fed Onshore	2016	AR	Jackson 	05067	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$80
 Fed Onshore	2016	AR	Jackson 	05067	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$60
 Fed Onshore	2016	AR	Johnson 	05071	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,624
@@ -22596,10 +22596,10 @@ Fed Onshore	2016	AR	Logan 	05083	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,019
 Fed Onshore	2016	AR	Logan 	05083	Royalties	Oil & Gas	Gas	Fuel Gas	$530,363
 Fed Onshore	2016	AR	Logan 	05083	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$635,299
 Fed Onshore	2016	AR	Montgomery 	05097	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$232
-Fed Onshore	2016	AR	Montgomery 	05097	Other Revenues	Hardrock			$996
+Fed Onshore	2016	AR	Montgomery 	05097	Other Revenues	Hardrock	Hardrock		$996
 Fed Onshore	2016	AR	Montgomery 	05097	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$1,043
-Fed Onshore	2016	AR	Montgomery 	05097	Rents	Hardrock			$60
-Fed Onshore	2016	AR	Montgomery 	05097	Royalties	Hardrock	Other Products	Quartz Crystal	$139
+Fed Onshore	2016	AR	Montgomery 	05097	Rents	Hardrock	Hardrock		$60
+Fed Onshore	2016	AR	Montgomery 	05097	Royalties	Hardrock	Hardrock	Quartz Crystal	$139
 Fed Onshore	2016	AR	Nevada 	05099	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$360
 Fed Onshore	2016	AR	Nevada 	05099	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$270
 Fed Onshore	2016	AR	Perry 	05105	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$742
@@ -22629,7 +22629,7 @@ Fed Onshore	2016	AR	Yell 	05149	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,382
 Fed Onshore	2016	AR	Yell 	05149	Royalties	Oil & Gas	Gas	Fuel Gas	$3,187
 Fed Onshore	2016	AR	Yell 	05149	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$79,839
 Fed Onshore	2016	AZ	Coconino 	04005	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$13,332
-Fed Onshore	2016	AZ	Maricopa 	04013	Rents	Sodium			-$12
+Fed Onshore	2016	AZ	Maricopa 	04013	Rents	Sodium	Sodium		-$12
 Fed Onshore	2016	CA	Contra Costa 	06013	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$129
 Fed Onshore	2016	CA	Contra Costa 	06013	Royalties	Oil & Gas	Oil	Condensate	$1
 Fed Onshore	2016	CA	Contra Costa 	06013	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	-$28
@@ -22639,12 +22639,12 @@ Fed Onshore	2016	CA	Fresno 	06019	Royalties	Oil & Gas	Oil	Condensate	$125
 Fed Onshore	2016	CA	Fresno 	06019	Royalties	Oil & Gas	Oil	Oil	$103,208
 Fed Onshore	2016	CA	Glenn 	06021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$83
 Fed Onshore	2016	CA	Glenn 	06021	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,036
-Fed Onshore	2016	CA	Imperial 	06025	Other Revenues	Geothermal			$31,512
-Fed Onshore	2016	CA	Imperial 	06025	Rents	Geothermal			$36,022
-Fed Onshore	2016	CA	Imperial 	06025	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$239,824
-Fed Onshore	2016	CA	Inyo 	06027	Other Revenues	Geothermal			$4,862
-Fed Onshore	2016	CA	Inyo 	06027	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$499,166
-Fed Onshore	2016	CA	Inyo 	06027	Royalties	Geothermal	Other Products	Geothermal - sulfur	$113
+Fed Onshore	2016	CA	Imperial 	06025	Other Revenues	Geothermal	Geothermal		$31,512
+Fed Onshore	2016	CA	Imperial 	06025	Rents	Geothermal	Geothermal		$36,022
+Fed Onshore	2016	CA	Imperial 	06025	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$239,824
+Fed Onshore	2016	CA	Inyo 	06027	Other Revenues	Geothermal	Geothermal		$4,862
+Fed Onshore	2016	CA	Inyo 	06027	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$499,166
+Fed Onshore	2016	CA	Inyo 	06027	Royalties	Geothermal	Geothermal	Geothermal - sulfur	$113
 Fed Onshore	2016	CA	Kern 	06029	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$66,723
 Fed Onshore	2016	CA	Kern 	06029	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$111,804
 Fed Onshore	2016	CA	Kern 	06029	Royalties	Oil & Gas	Oil	Condensate	$11,655
@@ -22658,43 +22658,43 @@ Fed Onshore	2016	CA	Kern 	06029	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2
 Fed Onshore	2016	CA	Kings 	06031	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,401
 Fed Onshore	2016	CA	Kings 	06031	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$22,056
 Fed Onshore	2016	CA	Kings 	06031	Royalties	Oil & Gas	Oil	Oil	$213,283
-Fed Onshore	2016	CA	Lake 	06033	Other Revenues	Geothermal			$150
-Fed Onshore	2016	CA	Lake 	06033	Rents	Geothermal			$1,413
-Fed Onshore	2016	CA	Lake 	06033	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Thousands of Pounds	$2,720,992
-Fed Onshore	2016	CA	Lassen 	06035	Royalties	Geothermal	Other Products	Geothermal - Direct Utilization, Millions of BTUs	$42,997
-Fed Onshore	2016	CA	Lassen 	06035	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Other	$612
+Fed Onshore	2016	CA	Lake 	06033	Other Revenues	Geothermal	Geothermal		$150
+Fed Onshore	2016	CA	Lake 	06033	Rents	Geothermal	Geothermal		$1,413
+Fed Onshore	2016	CA	Lake 	06033	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	$2,720,992
+Fed Onshore	2016	CA	Lassen 	06035	Royalties	Geothermal	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	$42,997
+Fed Onshore	2016	CA	Lassen 	06035	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Other	$612
 Fed Onshore	2016	CA	Los Angeles 	06037	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$199,152
 Fed Onshore	2016	CA	Los Angeles 	06037	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,275
 Fed Onshore	2016	CA	Los Angeles 	06037	Royalties	Oil & Gas	Oil	Condensate	$15,199
 Fed Onshore	2016	CA	Los Angeles 	06037	Royalties	Oil & Gas	Oil	Oil	$999,216
 Fed Onshore	2016	CA	Los Angeles 	06037	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$66
 Fed Onshore	2016	CA	Los Angeles 	06037	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$33,607
-Fed Onshore	2016	CA	Mendocino 	06045	Rents	Geothermal			$3,000
-Fed Onshore	2016	CA	Mono 	06051	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$229,689
+Fed Onshore	2016	CA	Mendocino 	06045	Rents	Geothermal	Geothermal		$3,000
+Fed Onshore	2016	CA	Mono 	06051	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$229,689
 Fed Onshore	2016	CA	Monterey 	06053	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1
 Fed Onshore	2016	CA	Monterey 	06053	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,954
 Fed Onshore	2016	CA	Monterey 	06053	Royalties	Oil & Gas	Oil	Oil	$56,600
 Fed Onshore	2016	CA	Riverside 	06065	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$562
 Fed Onshore	2016	CA	Sacramento 	06067	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$46,372
 Fed Onshore	2016	CA	San Benito 	06069	Royalties	Oil & Gas	Oil	Oil	$2,303
-Fed Onshore	2016	CA	San Bernardino 	06071	Other Revenues	Sodium			-$2,571
-Fed Onshore	2016	CA	San Bernardino 	06071	Rents	Hardrock			$42
-Fed Onshore	2016	CA	San Bernardino 	06071	Rents	Sodium			$49
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Anhydrous Sodium Sulfate	$131,242
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Anhydrous Sodium Sulfate	$204,576
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Borax-Decahydrate	$313,087
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Borax-Decahydrate	$499,703
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Borax-Pentahydrate	$550,779
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Borax-Pentahydrate	$878,888
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Boric Acid	$323,319
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Boric Acid	$515,975
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Calcium Chloride	$974
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Salt	$109,045
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Salt	$131,840
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Soda Ash	$2,143,951
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Soda Ash	$3,968,721
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Other Products	Sodium Bi-Carbonate	$51,416
-Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Other Products	Sodium Bi-Carbonate	$99,178
+Fed Onshore	2016	CA	San Bernardino 	06071	Other Revenues	Sodium	Sodium		-$2,571
+Fed Onshore	2016	CA	San Bernardino 	06071	Rents	Hardrock	Hardrock		$42
+Fed Onshore	2016	CA	San Bernardino 	06071	Rents	Sodium	Sodium		$49
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Anhydrous Sodium Sulfate	$204,576
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Borax-Decahydrate	$499,703
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Borax-Pentahydrate	$878,888
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Boric Acid	$515,975
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Salt	$131,840
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Soda Ash	$3,968,721
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Potassium	Sodium	Sodium Bi-Carbonate	$99,178
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Anhydrous Sodium Sulfate	$131,242
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Borax-Decahydrate	$313,087
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Borax-Pentahydrate	$550,779
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Boric Acid	$323,319
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Calcium Chloride	$974
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Salt	$109,045
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Soda Ash	$2,143,951
+Fed Onshore	2016	CA	San Bernardino 	06071	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$51,416
 Fed Onshore	2016	CA	San Joaquin 	06077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$1
 Fed Onshore	2016	CA	San Joaquin 	06077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$747
 Fed Onshore	2016	CA	San Luis Obispo 	06079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$521
@@ -22705,12 +22705,12 @@ Fed Onshore	2016	CA	Santa Barbara 	06083	Rents	Oil & Gas	Oil & Gas (Non-Royalty)
 Fed Onshore	2016	CA	Santa Barbara 	06083	Royalties	Oil & Gas	Oil	Oil	$322,118
 Fed Onshore	2016	CA	Santa Barbara 	06083	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$59,729
 Fed Onshore	2016	CA	Santa Barbara 	06083	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	-$63,201
-Fed Onshore	2016	CA	Siskiyou 	06093	Rents	Geothermal			$30,711
+Fed Onshore	2016	CA	Siskiyou 	06093	Rents	Geothermal	Geothermal		$30,711
 Fed Onshore	2016	CA	Solano 	06095	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$212,267
 Fed Onshore	2016	CA	Solano 	06095	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$11,118
-Fed Onshore	2016	CA	Sonoma 	06097	Other Revenues	Geothermal			$184
-Fed Onshore	2016	CA	Sonoma 	06097	Rents	Geothermal			$15,666
-Fed Onshore	2016	CA	Sonoma 	06097	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Thousands of Pounds	$4,040,492
+Fed Onshore	2016	CA	Sonoma 	06097	Other Revenues	Geothermal	Geothermal		$184
+Fed Onshore	2016	CA	Sonoma 	06097	Rents	Geothermal	Geothermal		$15,666
+Fed Onshore	2016	CA	Sonoma 	06097	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	$4,040,492
 Fed Onshore	2016	CA	Sutter 	06101	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$332
 Fed Onshore	2016	CA	Ventura 	06111	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$30,163
 Fed Onshore	2016	CA	Ventura 	06111	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,772
@@ -22749,25 +22749,25 @@ Fed Onshore	2016	CO	Broomfield 	08014	Royalties	Oil & Gas	Oil	Condensate	$316
 Fed Onshore	2016	CO	Broomfield 	08014	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$9
 Fed Onshore	2016	CO	Broomfield 	08014	Royalties	Oil & Gas	NGL	Gas Plant Products	$178
 Fed Onshore	2016	CO	Broomfield 	08014	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$392
-Fed Onshore	2016	CO	Chaffee 	08015	Rents	Geothermal			$2,400
+Fed Onshore	2016	CO	Chaffee 	08015	Rents	Geothermal	Geothermal		$2,400
 Fed Onshore	2016	CO	Cheyenne 	08017	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$2,225
 Fed Onshore	2016	CO	Cheyenne 	08017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$2,258
 Fed Onshore	2016	CO	Cheyenne 	08017	Royalties	Oil & Gas	NGL	Gas Plant Products	$1,099
-Fed Onshore	2016	CO	Cheyenne 	08017	Royalties	Oil & Gas	Other Products	Helium	$61
+Fed Onshore	2016	CO	Cheyenne 	08017	Royalties	Oil & Gas	Helium	Helium	$61
 Fed Onshore	2016	CO	Cheyenne 	08017	Royalties	Oil & Gas	Oil	Oil	$22,551
 Fed Onshore	2016	CO	Cheyenne 	08017	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$39
-Fed Onshore	2016	CO	Delta 	08029	Bonus	Coal			-$1,154,880
-Fed Onshore	2016	CO	Delta 	08029	Other Revenues	Coal			$505
+Fed Onshore	2016	CO	Delta 	08029	Bonus	Coal	Coal		-$1,154,880
+Fed Onshore	2016	CO	Delta 	08029	Other Revenues	Coal	Coal		$505
 Fed Onshore	2016	CO	Delta 	08029	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$4,684
 Fed Onshore	2016	CO	Delta 	08029	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$56,573
-Fed Onshore	2016	CO	Delta 	08029	Rents	Coal			$33,637
+Fed Onshore	2016	CO	Delta 	08029	Rents	Coal	Coal		$33,637
 Fed Onshore	2016	CO	Delta 	08029	Royalties	Coal	Coal	Coal	-$353,785
 Fed Onshore	2016	CO	Delta 	08029	Royalties	Oil & Gas	Gas	Coal Bed Methane	$731
 Fed Onshore	2016	CO	Delta 	08029	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$2,559
 Fed Onshore	2016	CO	Delta 	08029	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$25,093
 Fed Onshore	2016	CO	Dolores 	08033	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$41,453
 Fed Onshore	2016	CO	Dolores 	08033	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,002
-Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$9,962,351
+Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$9,962,351
 Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Oil	Condensate	$1,030
 Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Gas	Fuel Gas	$10,385
 Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	NGL	Gas Plant Products	-$591
@@ -22775,11 +22775,11 @@ Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Oil	Oil	$65,568
 Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$19,662
 Fed Onshore	2016	CO	Dolores 	08033	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$82,806
 Fed Onshore	2016	CO	Elbert 	08039	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$4,742
-Fed Onshore	2016	CO	Garfield 	08045	Other Revenues	Coal			-$21,512
+Fed Onshore	2016	CO	Garfield 	08045	Other Revenues	Coal	Coal		-$21,512
 Fed Onshore	2016	CO	Garfield 	08045	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$4,176,086
-Fed Onshore	2016	CO	Garfield 	08045	Rents	Coal			$4,901
+Fed Onshore	2016	CO	Garfield 	08045	Rents	Coal	Coal		$4,901
 Fed Onshore	2016	CO	Garfield 	08045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$198,008
-Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$977
+Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$977
 Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	Oil	Condensate	$2,221,437
 Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	-$77,860
 Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	Gas	Fuel Gas	$1,427,103
@@ -22792,8 +22792,8 @@ Fed Onshore	2016	CO	Garfield 	08045	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Ga
 Fed Onshore	2016	CO	Grand 	08049	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$9,994
 Fed Onshore	2016	CO	Gunnison 	08051	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$113,166
 Fed Onshore	2016	CO	Gunnison 	08051	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$40,216
-Fed Onshore	2016	CO	Gunnison 	08051	Rents	Geothermal			$25,062
-Fed Onshore	2016	CO	Gunnison 	08051	Rents	Coal			$50,954
+Fed Onshore	2016	CO	Gunnison 	08051	Rents	Geothermal	Geothermal		$25,062
+Fed Onshore	2016	CO	Gunnison 	08051	Rents	Coal	Coal		$50,954
 Fed Onshore	2016	CO	Gunnison 	08051	Royalties	Coal	Coal	Coal	$7,521,677
 Fed Onshore	2016	CO	Gunnison 	08051	Royalties	Oil & Gas	Gas	Coal Bed Methane	$617
 Fed Onshore	2016	CO	Gunnison 	08051	Royalties	Oil & Gas	Oil	Condensate	$11,041
@@ -22801,10 +22801,10 @@ Fed Onshore	2016	CO	Gunnison 	08051	Royalties	Oil & Gas	NGL	Gas Plant Products	$
 Fed Onshore	2016	CO	Gunnison 	08051	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$746,011
 Fed Onshore	2016	CO	Huerfano 	08055	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$6,560
 Fed Onshore	2016	CO	Huerfano 	08055	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$95,508
-Fed Onshore	2016	CO	Huerfano 	08055	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$321,465
+Fed Onshore	2016	CO	Huerfano 	08055	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$321,465
 Fed Onshore	2016	CO	Jackson 	08057	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$27,078
 Fed Onshore	2016	CO	Jackson 	08057	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$207,102
-Fed Onshore	2016	CO	Jackson 	08057	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$157
+Fed Onshore	2016	CO	Jackson 	08057	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$157
 Fed Onshore	2016	CO	Jackson 	08057	Royalties	Oil & Gas	Oil	Oil	$371,269
 Fed Onshore	2016	CO	Kiowa 	08061	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$383
 Fed Onshore	2016	CO	Kiowa 	08061	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$858
@@ -22814,7 +22814,7 @@ Fed Onshore	2016	CO	Kiowa 	08061	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$
 Fed Onshore	2016	CO	Kit Carson 	08063	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$12,767
 Fed Onshore	2016	CO	La Plata 	08067	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,900,907
 Fed Onshore	2016	CO	La Plata 	08067	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$25,041
-Fed Onshore	2016	CO	La Plata 	08067	Rents	Coal			$3,915
+Fed Onshore	2016	CO	La Plata 	08067	Rents	Coal	Coal		$3,915
 Fed Onshore	2016	CO	La Plata 	08067	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$9,691
 Fed Onshore	2016	CO	La Plata 	08067	Royalties	Coal	Coal	Coal	$2,379,841
 Fed Onshore	2016	CO	La Plata 	08067	Royalties	Oil & Gas	Gas	Coal Bed Methane	$6,112,933
@@ -22841,10 +22841,10 @@ Fed Onshore	2016	CO	Mesa 	08077	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbon
 Fed Onshore	2016	CO	Mesa 	08077	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$3,516,396
 Fed Onshore	2016	CO	Mesa 	08077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$366,013
 Fed Onshore	2016	CO	Moffat 	08081	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$6,364
-Fed Onshore	2016	CO	Moffat 	08081	Bonus	Coal			$130,978
+Fed Onshore	2016	CO	Moffat 	08081	Bonus	Coal	Coal		$130,978
 Fed Onshore	2016	CO	Moffat 	08081	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$33,588
-Fed Onshore	2016	CO	Moffat 	08081	Other Revenues	Coal			$21,995
-Fed Onshore	2016	CO	Moffat 	08081	Rents	Coal			$48,076
+Fed Onshore	2016	CO	Moffat 	08081	Other Revenues	Coal	Coal		$21,995
+Fed Onshore	2016	CO	Moffat 	08081	Rents	Coal	Coal		$48,076
 Fed Onshore	2016	CO	Moffat 	08081	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$294,419
 Fed Onshore	2016	CO	Moffat 	08081	Royalties	Coal	Coal	Coal	$9,798,907
 Fed Onshore	2016	CO	Moffat 	08081	Royalties	Oil & Gas	Oil	Condensate	$184,097
@@ -22856,7 +22856,7 @@ Fed Onshore	2016	CO	Moffat 	08081	Royalties	Oil & Gas	Gas	Processed (Residue) Ga
 Fed Onshore	2016	CO	Moffat 	08081	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2,354,956
 Fed Onshore	2016	CO	Montezuma 	08083	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$299,077
 Fed Onshore	2016	CO	Montezuma 	08083	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$18,415
-Fed Onshore	2016	CO	Montezuma 	08083	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$34,057,785
+Fed Onshore	2016	CO	Montezuma 	08083	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$34,057,785
 Fed Onshore	2016	CO	Montezuma 	08083	Royalties	Oil & Gas	Gas	Fuel Gas	$355
 Fed Onshore	2016	CO	Montezuma 	08083	Royalties	Oil & Gas	NGL	Gas Plant Products	-$35,824
 Fed Onshore	2016	CO	Montezuma 	08083	Royalties	Oil & Gas	Oil	Oil	$233,048
@@ -22873,13 +22873,13 @@ Fed Onshore	2016	CO	Pitkin 	08097	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$595
 Fed Onshore	2016	CO	Prowers 	08099	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$245
 Fed Onshore	2016	CO	Prowers 	08099	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$65
 Fed Onshore	2016	CO	Rio Blanco 	08103	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$160,411
-Fed Onshore	2016	CO	Rio Blanco 	08103	Bonus	Coal			$1,149,822
-Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Sodium			$40,317
-Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Coal			$58,129
+Fed Onshore	2016	CO	Rio Blanco 	08103	Bonus	Coal	Coal		$1,149,822
+Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Sodium	Sodium		$40,317
+Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Coal	Coal		$58,129
 Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,426,927
-Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil Shale			$932
-Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Coal			$5,685
-Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Sodium			$13,326
+Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil Shale	Oil  		$932
+Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Coal	Coal		$5,685
+Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Sodium	Sodium		$13,326
 Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$558,181
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Coal	Coal	Coal	$11,449,408
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	Oil	Condensate	$786,208
@@ -22889,19 +22889,19 @@ Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	NGL	Gas Plant Products
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	Oil	Inlet Scrubber	$76,111
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	Oil	Oil	$9,910,317
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$2,966,828
-Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Sodium	Other Products	Sodium Bi-Carbonate	$2,056,107
+Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$2,056,107
 Fed Onshore	2016	CO	Rio Blanco 	08103	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$9,923,489
 Fed Onshore	2016	CO	Rio Grande 	08105	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$2,556
 Fed Onshore	2016	CO	Routt 	08107	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1,284
-Fed Onshore	2016	CO	Routt 	08107	Bonus	Coal			$193,376
-Fed Onshore	2016	CO	Routt 	08107	Other Revenues	Coal			$112
+Fed Onshore	2016	CO	Routt 	08107	Bonus	Coal	Coal		$193,376
+Fed Onshore	2016	CO	Routt 	08107	Other Revenues	Coal	Coal		$112
 Fed Onshore	2016	CO	Routt 	08107	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$10,102
-Fed Onshore	2016	CO	Routt 	08107	Rents	Coal			$2,386
+Fed Onshore	2016	CO	Routt 	08107	Rents	Coal	Coal		$2,386
 Fed Onshore	2016	CO	Routt 	08107	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$115,213
 Fed Onshore	2016	CO	Routt 	08107	Royalties	Coal	Coal	Coal	$5,503,679
 Fed Onshore	2016	CO	Routt 	08107	Royalties	Oil & Gas	Oil	Oil	$106,403
 Fed Onshore	2016	CO	San Miguel 	08113	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$42,176
-Fed Onshore	2016	CO	San Miguel 	08113	Rents	Potassium			$4,361
+Fed Onshore	2016	CO	San Miguel 	08113	Rents	Potassium	Potassium		$4,361
 Fed Onshore	2016	CO	San Miguel 	08113	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$14,655
 Fed Onshore	2016	CO	San Miguel 	08113	Royalties	Oil & Gas	Oil	Condensate	$7,262
 Fed Onshore	2016	CO	San Miguel 	08113	Royalties	Oil & Gas	Gas	Fuel Gas	$385,594
@@ -22926,32 +22926,32 @@ Fed Onshore	2016	CO	Weld 	08123	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$8
 Fed Onshore	2016	CO	Yuma 	08125	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$8,141
 Fed Onshore	2016	CO	Yuma 	08125	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,402
 Fed Onshore	2016	CO	Yuma 	08125	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$193,096
-Fed Onshore	2016	FL	Hardee 	12049	Other Revenues	Phosphate			$1,124
-Fed Onshore	2016	FL	Hardee 	12049	Royalties	Phosphate	Other Products	Phosphate Raw Ore	$1,076,705
-Fed Onshore	2016	FL	Manatee 	12081	Other Revenues	Phosphate			$183
-Fed Onshore	2016	FL	Polk 	12105	Other Revenues	Phosphate			$644
-Fed Onshore	2016	ID	Bannock 	16005	Other Revenues	Phosphate			$240
-Fed Onshore	2016	ID	Bear Lake 	16007	Other Revenues	Phosphate			$198
-Fed Onshore	2016	ID	Bingham 	16011	Other Revenues	Phosphate			$8,332
-Fed Onshore	2016	ID	Boise 	16015	Rents	Hardrock			$39
+Fed Onshore	2016	FL	Hardee 	12049	Other Revenues	Phosphate	Phosphate		$1,124
+Fed Onshore	2016	FL	Hardee 	12049	Royalties	Phosphate	Phosphate	Phosphate Raw Ore	$1,076,705
+Fed Onshore	2016	FL	Manatee 	12081	Other Revenues	Phosphate	Phosphate		$183
+Fed Onshore	2016	FL	Polk 	12105	Other Revenues	Phosphate	Phosphate		$644
+Fed Onshore	2016	ID	Bannock 	16005	Other Revenues	Phosphate	Phosphate		$240
+Fed Onshore	2016	ID	Bear Lake 	16007	Other Revenues	Phosphate	Phosphate		$198
+Fed Onshore	2016	ID	Bingham 	16011	Other Revenues	Phosphate	Phosphate		$8,332
+Fed Onshore	2016	ID	Boise 	16015	Rents	Hardrock	Hardrock		$39
 Fed Onshore	2016	ID	Bonneville 	16019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$8,274
-Fed Onshore	2016	ID	Canyon 	16027	Rents	Geothermal			$2,184
-Fed Onshore	2016	ID	Caribou 	16029	Other Revenues	Phosphate			$104,663
-Fed Onshore	2016	ID	Caribou 	16029	Rents	Phosphate			$4,630
-Fed Onshore	2016	ID	Caribou 	16029	Royalties	Phosphate	Other Products	Phosphate Raw Ore	$9,512,611
-Fed Onshore	2016	ID	Cassia 	16031	Rents	Geothermal			$41,988
-Fed Onshore	2016	ID	Clark 	16033	Other Revenues	Phosphate			$2,547
-Fed Onshore	2016	ID	Clearwater 	16035	Other Revenues	Hardrock			$126
-Fed Onshore	2016	ID	Clearwater 	16035	Rents	Hardrock			$42
-Fed Onshore	2016	ID	Latah 	16057	Other Revenues	Gemstones			$240
+Fed Onshore	2016	ID	Canyon 	16027	Rents	Geothermal	Geothermal		$2,184
+Fed Onshore	2016	ID	Caribou 	16029	Other Revenues	Phosphate	Phosphate		$104,663
+Fed Onshore	2016	ID	Caribou 	16029	Rents	Phosphate	Phosphate		$4,630
+Fed Onshore	2016	ID	Caribou 	16029	Royalties	Phosphate	Phosphate	Phosphate Raw Ore	$9,512,611
+Fed Onshore	2016	ID	Cassia 	16031	Rents	Geothermal	Geothermal		$41,988
+Fed Onshore	2016	ID	Clark 	16033	Other Revenues	Phosphate	Phosphate		$2,547
+Fed Onshore	2016	ID	Clearwater 	16035	Other Revenues	Hardrock	Hardrock		$126
+Fed Onshore	2016	ID	Clearwater 	16035	Rents	Hardrock	Hardrock		$42
+Fed Onshore	2016	ID	Latah 	16057	Other Revenues	Gemstones	Hardrock		$240
 Fed Onshore	2016	ID	Payette 	16075	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$352,427
 Fed Onshore	2016	ID	Payette 	16075	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$184
 Fed Onshore	2016	ID	Payette 	16075	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$22,742
-Fed Onshore	2016	ID	Payette 	16075	Rents	Geothermal			$72,462
+Fed Onshore	2016	ID	Payette 	16075	Rents	Geothermal	Geothermal		$72,462
 Fed Onshore	2016	ID	Payette 	16075	Royalties	Oil & Gas	Oil	Condensate	$45,387
 Fed Onshore	2016	ID	Payette 	16075	Royalties	Oil & Gas	NGL	Gas Plant Products	$13,724
 Fed Onshore	2016	ID	Payette 	16075	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$50,762
-Fed Onshore	2016	ID	Washington 	16087	Rents	Geothermal			$37,002
+Fed Onshore	2016	ID	Washington 	16087	Rents	Geothermal	Geothermal		$37,002
 Fed Onshore	2016	IL	Clinton 	17027	Royalties	Oil & Gas	Oil	Oil	$34,820
 Fed Onshore	2016	IL	Fayette 	17051	Royalties	Oil & Gas	Oil	Oil	$351
 Fed Onshore	2016	IL	Franklin 	17055	Royalties	Oil & Gas	Oil	Oil	$43,206
@@ -22969,7 +22969,7 @@ Fed Onshore	2016	KS	Finney 	20055	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalt
 Fed Onshore	2016	KS	Finney 	20055	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$922
 Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Gas	Fuel Gas	$1,423
 Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	NGL	Gas Plant Products	$42,118
-Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Other Products	Helium	$754
+Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Helium	Helium	$754
 Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Oil	Indian Oil- Sweet	$10,379
 Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Gas	Nitrogen	$66
 Fed Onshore	2016	KS	Finney 	20055	Royalties	Oil & Gas	Oil	Oil	$239,481
@@ -23014,7 +23014,7 @@ Fed Onshore	2016	KS	Morton 	20129	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$1,9
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Oil	Condensate	$1,092
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Gas	Fuel Gas	$1,831
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	NGL	Gas Plant Products	$204,254
-Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Other Products	Helium	$71
+Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Helium	Helium	$71
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Gas	Nitrogen	$36
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Oil	Oil	$409,972
 Fed Onshore	2016	KS	Morton 	20129	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$319,120
@@ -23023,7 +23023,7 @@ Fed Onshore	2016	KS	Seward 	20175	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalt
 Fed Onshore	2016	KS	Seward 	20175	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$708
 Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Oil	Condensate	$93
 Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	NGL	Gas Plant Products	$3,648
-Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Other Products	Helium	-$159
+Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Helium	Helium	-$159
 Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Oil	Oil	$506
 Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$8,988
 Fed Onshore	2016	KS	Seward 	20175	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$364
@@ -23047,17 +23047,17 @@ Fed Onshore	2016	KY	Clay 	21051	Royalties	Oil & Gas	Gas	Fuel Gas	-$70
 Fed Onshore	2016	KY	Clay 	21051	Royalties	Oil & Gas	Oil	Oil	$643
 Fed Onshore	2016	KY	Clay 	21051	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$7,847
 Fed Onshore	2016	KY	Floyd 	21071	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$3,739
-Fed Onshore	2016	KY	Harlan 	21095	Bonus	Coal			$7,167
-Fed Onshore	2016	KY	Harlan 	21095	Other Revenues	Coal			$95
-Fed Onshore	2016	KY	Harlan 	21095	Rents	Coal			$2,493
+Fed Onshore	2016	KY	Harlan 	21095	Bonus	Coal	Coal		$7,167
+Fed Onshore	2016	KY	Harlan 	21095	Other Revenues	Coal	Coal		$95
+Fed Onshore	2016	KY	Harlan 	21095	Rents	Coal	Coal		$2,493
 Fed Onshore	2016	KY	Harlan 	21095	Royalties	Coal	Coal	Coal	$134,125
 Fed Onshore	2016	KY	Henderson 	21101	Royalties	Oil & Gas	Oil	Oil	$41,285
 Fed Onshore	2016	KY	Johnson 	21115	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$318
 Fed Onshore	2016	KY	Lawrence 	21127	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,820
-Fed Onshore	2016	KY	Leslie 	21131	Bonus	Coal			$10,268
-Fed Onshore	2016	KY	Leslie 	21131	Other Revenues	Coal			$136
+Fed Onshore	2016	KY	Leslie 	21131	Bonus	Coal	Coal		$10,268
+Fed Onshore	2016	KY	Leslie 	21131	Other Revenues	Coal	Coal		$136
 Fed Onshore	2016	KY	Leslie 	21131	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$6,153
-Fed Onshore	2016	KY	Leslie 	21131	Rents	Coal			$7,204
+Fed Onshore	2016	KY	Leslie 	21131	Rents	Coal	Coal		$7,204
 Fed Onshore	2016	KY	Leslie 	21131	Royalties	Coal	Coal	Coal	$192,155
 Fed Onshore	2016	KY	Leslie 	21131	Royalties	Oil & Gas	Oil	Oil	$1,307
 Fed Onshore	2016	KY	Leslie 	21131	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$2
@@ -23265,44 +23265,44 @@ Fed Onshore	2016	MI	Roscommon 	26143	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$8
 Fed Onshore	2016	MI	Roscommon 	26143	Royalties	Oil & Gas	Oil	Oil	$13,108
 Fed Onshore	2016	MI	Roscommon 	26143	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$6,809
 Fed Onshore	2016	MI	Wexford 	26165	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$445
-Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Hardrock			$22,550
-Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Copper			$25,655
-Fed Onshore	2016	MN	Jackson 	26075	Rents	Copper			$2,565
-Fed Onshore	2016	MN	Jackson 	26075	Rents	Hardrock			$2,938
-Fed Onshore	2016	MN	Kalkaska 	26079	Rents	Hardrock			$20
-Fed Onshore	2016	MN	Otsego 	26137	Other Revenues	Copper			$455
-Fed Onshore	2016	MN	Otsego 	26137	Rents	Copper			$46
-Fed Onshore	2016	MO	Crawford 	29055	Other Revenues	Hardrock			$4,341
-Fed Onshore	2016	MO	Crawford 	29055	Rents	Hardrock			$1,565
-Fed Onshore	2016	MO	Crawford 	29055	Royalties	Hardrock	Other Products	Copper Concentrate	$6,344
-Fed Onshore	2016	MO	Crawford 	29055	Royalties	Hardrock	Other Products	Lead Concentrate	$10
-Fed Onshore	2016	MO	Dent 	29065	Other Revenues	Hardrock			$8,280
-Fed Onshore	2016	MO	Dent 	29065	Rents	Hardrock			$2,960
-Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Other Products	Copper Concentrate	$36
-Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Other Products	Lead Concentrate	$3,709
-Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Other Products	Zinc Concentrate	$396
-Fed Onshore	2016	MO	Iron 	29093	Other Revenues	Hardrock			$21,119
-Fed Onshore	2016	MO	Iron 	29093	Rents	Hardrock			$8,444
-Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Other Products	Copper Concentrate	$388,554
-Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Other Products	Lead Concentrate	$2,094,702
-Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Other Products	Zinc Concentrate	$203,247
-Fed Onshore	2016	MO	Madison 	29123	Other Revenues	Hardrock			$1,710
-Fed Onshore	2016	MO	Madison 	29123	Rents	Hardrock			$570
-Fed Onshore	2016	MO	Reynolds 	29179	Other Revenues	Hardrock			$4,999
-Fed Onshore	2016	MO	Reynolds 	29179	Rents	Hardrock			$11,949
-Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Other Products	Copper Concentrate	$656,957
-Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Other Products	Lead Concentrate	$3,468,082
-Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Other Products	Zinc Concentrate	$657,103
-Fed Onshore	2016	MO	Shannon 	29203	Other Revenues	Hardrock			$960
-Fed Onshore	2016	MO	Shannon 	29203	Rents	Hardrock			$480
-Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Other Products	Copper Concentrate	$47,208
-Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Other Products	Lead Concentrate	$99,021
-Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Other Products	Zinc Concentrate	$4,789
-Fed Onshore	2016	MO	Washington 	29221	Other Revenues	Hardrock			$6,105
-Fed Onshore	2016	MO	Washington 	29221	Rents	Hardrock			$2,035
-Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Other Products	Copper Concentrate	$2,107
-Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Other Products	Lead Concentrate	$10
-Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Other Products	Zinc Concentrate	-$3
+Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Hardrock	Hardrock		$22,550
+Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Copper	Hardrock		$25,655
+Fed Onshore	2016	MN	Jackson 	26075	Rents	Copper	Hardrock		$2,565
+Fed Onshore	2016	MN	Jackson 	26075	Rents	Hardrock	Hardrock		$2,938
+Fed Onshore	2016	MN	Kalkaska 	26079	Rents	Hardrock	Hardrock		$20
+Fed Onshore	2016	MN	Otsego 	26137	Other Revenues	Copper	Hardrock		$455
+Fed Onshore	2016	MN	Otsego 	26137	Rents	Copper	Hardrock		$46
+Fed Onshore	2016	MO	Crawford 	29055	Other Revenues	Hardrock	Hardrock		$4,341
+Fed Onshore	2016	MO	Crawford 	29055	Rents	Hardrock	Hardrock		$1,565
+Fed Onshore	2016	MO	Crawford 	29055	Royalties	Hardrock	Hardrock	Copper Concentrate	$6,344
+Fed Onshore	2016	MO	Crawford 	29055	Royalties	Hardrock	Hardrock	Lead Concentrate	$10
+Fed Onshore	2016	MO	Dent 	29065	Other Revenues	Hardrock	Hardrock		$8,280
+Fed Onshore	2016	MO	Dent 	29065	Rents	Hardrock	Hardrock		$2,960
+Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Hardrock	Copper Concentrate	$36
+Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Hardrock	Lead Concentrate	$3,709
+Fed Onshore	2016	MO	Dent 	29065	Royalties	Hardrock	Hardrock	Zinc Concentrate	$396
+Fed Onshore	2016	MO	Iron 	29093	Other Revenues	Hardrock	Hardrock		$21,119
+Fed Onshore	2016	MO	Iron 	29093	Rents	Hardrock	Hardrock		$8,444
+Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Hardrock	Copper Concentrate	$388,554
+Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Hardrock	Lead Concentrate	$2,094,702
+Fed Onshore	2016	MO	Iron 	29093	Royalties	Hardrock	Hardrock	Zinc Concentrate	$203,247
+Fed Onshore	2016	MO	Madison 	29123	Other Revenues	Hardrock	Hardrock		$1,710
+Fed Onshore	2016	MO	Madison 	29123	Rents	Hardrock	Hardrock		$570
+Fed Onshore	2016	MO	Reynolds 	29179	Other Revenues	Hardrock	Hardrock		$4,999
+Fed Onshore	2016	MO	Reynolds 	29179	Rents	Hardrock	Hardrock		$11,949
+Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Hardrock	Copper Concentrate	$656,957
+Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Hardrock	Lead Concentrate	$3,468,082
+Fed Onshore	2016	MO	Reynolds 	29179	Royalties	Hardrock	Hardrock	Zinc Concentrate	$657,103
+Fed Onshore	2016	MO	Shannon 	29203	Other Revenues	Hardrock	Hardrock		$960
+Fed Onshore	2016	MO	Shannon 	29203	Rents	Hardrock	Hardrock		$480
+Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Hardrock	Copper Concentrate	$47,208
+Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Hardrock	Lead Concentrate	$99,021
+Fed Onshore	2016	MO	Shannon 	29203	Royalties	Hardrock	Hardrock	Zinc Concentrate	$4,789
+Fed Onshore	2016	MO	Washington 	29221	Other Revenues	Hardrock	Hardrock		$6,105
+Fed Onshore	2016	MO	Washington 	29221	Rents	Hardrock	Hardrock		$2,035
+Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Hardrock	Copper Concentrate	$2,107
+Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Hardrock	Lead Concentrate	$10
+Fed Onshore	2016	MO	Washington 	29221	Royalties	Hardrock	Hardrock	Zinc Concentrate	-$3
 Fed Onshore	2016	MS	Adams 	28001	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$536
 Fed Onshore	2016	MS	Adams 	28001	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$7,402
 Fed Onshore	2016	MS	Adams 	28001	Royalties	Oil & Gas	Oil	Oil	$8,058
@@ -23366,11 +23366,11 @@ Fed Onshore	2016	MS	Wilkinson 	28157	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1
 Fed Onshore	2016	MS	Wilkinson 	28157	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,501
 Fed Onshore	2016	MS	Wilkinson 	28157	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$17,024
 Fed Onshore	2016	MS	Wilkinson 	28157	Royalties	Oil & Gas	Oil	Oil	$20,020
-Fed Onshore	2016	MT	Beaverhead 	30001	Other Revenues	Phosphate			$4,227
+Fed Onshore	2016	MT	Beaverhead 	30001	Other Revenues	Phosphate	Phosphate		$4,227
 Fed Onshore	2016	MT	Beaverhead 	30001	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$4,059
-Fed Onshore	2016	MT	Big Horn 	30003	Other Revenues	Coal			$29
+Fed Onshore	2016	MT	Big Horn 	30003	Other Revenues	Coal	Coal		$29
 Fed Onshore	2016	MT	Big Horn 	30003	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$57,626
-Fed Onshore	2016	MT	Big Horn 	30003	Rents	Coal			$58,875
+Fed Onshore	2016	MT	Big Horn 	30003	Rents	Coal	Coal		$58,875
 Fed Onshore	2016	MT	Big Horn 	30003	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$144,430
 Fed Onshore	2016	MT	Big Horn 	30003	Royalties	Coal	Coal	Coal	$12,643,703
 Fed Onshore	2016	MT	Big Horn 	30003	Royalties	Oil & Gas	Gas	Coal Bed Methane	$928
@@ -23383,7 +23383,7 @@ Fed Onshore	2016	MT	Carbon 	30009	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$12,4
 Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	NGL	Gas Plant Products	$46,688
 Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	Oil	Oil	$851,359
 Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$443
-Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	Other Products	Sulfur	$871
+Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	Sulfur	Sulfur	$871
 Fed Onshore	2016	MT	Carbon 	30009	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$24,934
 Fed Onshore	2016	MT	Carter 	30011	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$28,924
 Fed Onshore	2016	MT	Carter 	30011	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$5,114
@@ -23413,7 +23413,7 @@ Fed Onshore	2016	MT	Glacier 	30035	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$226
 Fed Onshore	2016	MT	Glacier 	30035	Royalties	Oil & Gas	Oil	Oil	$16,640
 Fed Onshore	2016	MT	Glacier 	30035	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$4,061
 Fed Onshore	2016	MT	Golden Valley 	30037	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$640
-Fed Onshore	2016	MT	Granite 	30039	Rents	Hardrock			$97
+Fed Onshore	2016	MT	Granite 	30039	Rents	Hardrock	Hardrock		$97
 Fed Onshore	2016	MT	Hill 	30041	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$8,096
 Fed Onshore	2016	MT	Hill 	30041	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$93,888
 Fed Onshore	2016	MT	Liberty 	30051	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$9,418
@@ -23424,7 +23424,7 @@ Fed Onshore	2016	MT	Liberty 	30051	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas
 Fed Onshore	2016	MT	Madison 	30057	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,189
 Fed Onshore	2016	MT	McCone 	30055	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$19,444
 Fed Onshore	2016	MT	Musselshell 	30065	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$643
-Fed Onshore	2016	MT	Musselshell 	30065	Rents	Coal			$8,040
+Fed Onshore	2016	MT	Musselshell 	30065	Rents	Coal	Coal		$8,040
 Fed Onshore	2016	MT	Musselshell 	30065	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$10,291
 Fed Onshore	2016	MT	Musselshell 	30065	Royalties	Coal	Coal	Coal	$171,679
 Fed Onshore	2016	MT	Musselshell 	30065	Royalties	Oil & Gas	Oil	Oil	$15,932
@@ -23446,9 +23446,9 @@ Fed Onshore	2016	MT	Prairie 	30079	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$17,
 Fed Onshore	2016	MT	Prairie 	30079	Royalties	Oil & Gas	Oil	Oil	$239,177
 Fed Onshore	2016	MT	Prairie 	30079	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,987
 Fed Onshore	2016	MT	Richland 	30083	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$34,800
-Fed Onshore	2016	MT	Richland 	30083	Other Revenues	Coal			$48
+Fed Onshore	2016	MT	Richland 	30083	Other Revenues	Coal	Coal		$48
 Fed Onshore	2016	MT	Richland 	30083	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$159,523
-Fed Onshore	2016	MT	Richland 	30083	Rents	Coal			$1,320
+Fed Onshore	2016	MT	Richland 	30083	Rents	Coal	Coal		$1,320
 Fed Onshore	2016	MT	Richland 	30083	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$46,769
 Fed Onshore	2016	MT	Richland 	30083	Royalties	Coal	Coal	Coal	$18,145
 Fed Onshore	2016	MT	Richland 	30083	Royalties	Oil & Gas	Gas	Fuel Gas	$225
@@ -23466,7 +23466,7 @@ Fed Onshore	2016	MT	Roosevelt 	30085	Royalties	Oil & Gas	Gas	Processed (Residue)
 Fed Onshore	2016	MT	Roosevelt 	30085	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$29,173
 Fed Onshore	2016	MT	Rosebud 	30087	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$102
 Fed Onshore	2016	MT	Rosebud 	30087	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$4,844
-Fed Onshore	2016	MT	Rosebud 	30087	Rents	Coal			$40,581
+Fed Onshore	2016	MT	Rosebud 	30087	Rents	Coal	Coal		$40,581
 Fed Onshore	2016	MT	Rosebud 	30087	Royalties	Coal	Coal	Coal	$16,057,102
 Fed Onshore	2016	MT	Rosebud 	30087	Royalties	Oil & Gas	Oil	Oil	$41,180
 Fed Onshore	2016	MT	Sheridan 	30091	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1,002
@@ -23485,7 +23485,7 @@ Fed Onshore	2016	MT	Toole 	30101	Royalties	Oil & Gas	NGL	Gas Plant Products	$2,0
 Fed Onshore	2016	MT	Toole 	30101	Royalties	Oil & Gas	Oil	Oil	$182,001
 Fed Onshore	2016	MT	Toole 	30101	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$8,757
 Fed Onshore	2016	MT	Toole 	30101	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$15,608
-Fed Onshore	2016	MT	Treasure 	30103	Rents	Coal			$2,760
+Fed Onshore	2016	MT	Treasure 	30103	Rents	Coal	Coal		$2,760
 Fed Onshore	2016	MT	Treasure 	30103	Royalties	Coal	Coal	Coal	$511,441
 Fed Onshore	2016	MT	Valley 	30105	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$11,645
 Fed Onshore	2016	MT	Valley 	30105	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$4,547
@@ -23497,7 +23497,7 @@ Fed Onshore	2016	MT	Wibaux 	30109	Royalties	Oil & Gas	Oil	Oil	$914,613
 Fed Onshore	2016	MT	Wibaux 	30109	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$23,151
 Fed Onshore	2016	MT	Yellowstone 	30111	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$200
 Fed Onshore	2016	MT	Yellowstone 	30111	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$245
-Fed Onshore	2016	NC	Jefferson 	30043	Other Revenues	Hardrock			-$474
+Fed Onshore	2016	NC	Jefferson 	30043	Other Revenues	Hardrock	Hardrock		-$474
 Fed Onshore	2016	ND	Billings 	38007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$588,215
 Fed Onshore	2016	ND	Billings 	38007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$76,063
 Fed Onshore	2016	ND	Billings 	38007	Royalties	Oil & Gas	Oil	Condensate	$835
@@ -23562,9 +23562,9 @@ Fed Onshore	2016	ND	McKenzie 	38053	Royalties	Oil & Gas	Oil	Inlet Scrubber	$25,6
 Fed Onshore	2016	ND	McKenzie 	38053	Royalties	Oil & Gas	Oil	Oil	$55,270,879
 Fed Onshore	2016	ND	McKenzie 	38053	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$1,091,314
 Fed Onshore	2016	ND	McKenzie 	38053	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$4,932,995
-Fed Onshore	2016	ND	McLean 	38055	Rents	Coal			$597
+Fed Onshore	2016	ND	McLean 	38055	Rents	Coal	Coal		$597
 Fed Onshore	2016	ND	Mercer 	38057	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,920
-Fed Onshore	2016	ND	Mercer 	38057	Rents	Coal			$24,108
+Fed Onshore	2016	ND	Mercer 	38057	Rents	Coal	Coal		$24,108
 Fed Onshore	2016	ND	Mercer 	38057	Royalties	Coal	Coal	Coal	$2,015,761
 Fed Onshore	2016	ND	Mountrail 	38061	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$40,600
 Fed Onshore	2016	ND	Mountrail 	38061	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$362,601
@@ -23579,7 +23579,7 @@ Fed Onshore	2016	ND	Mountrail 	38061	Royalties	Oil & Gas	Oil	Inlet Scrubber	$3,3
 Fed Onshore	2016	ND	Mountrail 	38061	Royalties	Oil & Gas	Oil	Oil	$9,378,902
 Fed Onshore	2016	ND	Mountrail 	38061	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$279,907
 Fed Onshore	2016	ND	Mountrail 	38061	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$81,346
-Fed Onshore	2016	ND	Oliver 	38065	Rents	Coal			$6,003
+Fed Onshore	2016	ND	Oliver 	38065	Rents	Coal	Coal		$6,003
 Fed Onshore	2016	ND	Oliver 	38065	Royalties	Coal	Coal	Coal	$654,856
 Fed Onshore	2016	ND	Renville 	38075	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,690
 Fed Onshore	2016	ND	Renville 	38075	Royalties	Oil & Gas	Oil	Oil	$64,837
@@ -23600,7 +23600,7 @@ Fed Onshore	2016	ND	Ward 	38101	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,126
 Fed Onshore	2016	ND	Williams 	38105	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$77,000
 Fed Onshore	2016	ND	Williams 	38105	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$84,892
 Fed Onshore	2016	ND	Williams 	38105	Other Revenues	Oil & Gas	Oil	Oil	$9
-Fed Onshore	2016	ND	Williams 	38105	Rents	Coal			$480
+Fed Onshore	2016	ND	Williams 	38105	Rents	Coal	Coal		$480
 Fed Onshore	2016	ND	Williams 	38105	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,336
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Oil	Condensate	$2,196
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$247
@@ -23608,7 +23608,7 @@ Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Gas	Fuel Gas	$1,163
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$138
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	NGL	Gas Plant Products	$65,715
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Oil	Indian Oil- Sweet	$1,366
-Fed Onshore	2016	ND	Williams 	38105	Royalties	Coal	Other Products	Leonardite	$133,478
+Fed Onshore	2016	ND	Williams 	38105	Royalties	Coal	Coal	Leonardite	$133,478
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Oil	Oil	$2,584,167
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$50,313
 Fed Onshore	2016	ND	Williams 	38105	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$151,716
@@ -23638,15 +23638,21 @@ Fed Onshore	2016	NM	Chaves 	35005	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	
 Fed Onshore	2016	NM	Colfax 	35007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$71
 Fed Onshore	2016	NM	Colfax 	35007	Royalties	Oil & Gas	Gas	Coal Bed Methane	$13,214
 Fed Onshore	2016	NM	Curry 	35009	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$320
-Fed Onshore	2016	NM	Dona Ana 	35013	Other Revenues	Geothermal	Other Products	Geothermal - Direct Use, Millions of Gallons	$2,724
-Fed Onshore	2016	NM	Dona Ana 	35013	Rents	Geothermal			$26,990
-Fed Onshore	2016	NM	Eddy 	35015	Bonus	Potassium			$132,422
+Fed Onshore	2016	NM	Dona Ana 	35013	Other Revenues	Geothermal	Geothermal	Geothermal - Direct Use, Millions of Gallons	$2,724
+Fed Onshore	2016	NM	Dona Ana 	35013	Rents	Geothermal	Geothermal		$26,990
+Fed Onshore	2016	NM	Eddy 	35015	Bonus	Potassium	Potassium		$132,422
 Fed Onshore	2016	NM	Eddy 	35015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$18,792,150
+Fed Onshore	2016	NM	Eddy 	35015	Other Revenues	Potassium	Potassium		$266,418
 Fed Onshore	2016	NM	Eddy 	35015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$3,282,436
-Fed Onshore	2016	NM	Eddy 	35015	Other Revenues	Sodium			$265
-Fed Onshore	2016	NM	Eddy 	35015	Other Revenues	Potassium			$266,418
-Fed Onshore	2016	NM	Eddy 	35015	Rents	Potassium			$8,819
+Fed Onshore	2016	NM	Eddy 	35015	Other Revenues	Sodium	Sodium		$265
+Fed Onshore	2016	NM	Eddy 	35015	Rents	Potassium	Potassium		$8,819
 Fed Onshore	2016	NM	Eddy 	35015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$292,524
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Potassium	Langbeinite	$6,472,382
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$2,330,156
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$602,024
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Potassium	Potash	$140,658
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Sodium	Salt	$716,012
+Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Potassium	Sylvite-Raw Ore	$2,356
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Gas	Coal Bed Methane	$64,691
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Condensate	$2,683,069
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$295,240
@@ -23654,50 +23660,44 @@ Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Gas	Fuel Gas	$1,438,220
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$1,594,495
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	NGL	Gas Plant Products	$10,998,885
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Inlet Scrubber	$16,241
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Langbeinite	$6,472,382
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Muriate Of Potash-Granular	$2,330,156
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Muriate Of Potash-Standard	$602,024
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Oil	$198,396,800
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Oil Lost	$188
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons	$91,141
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Potash	$140,658
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$15,201,778
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Salt	$716,012
-Fed Onshore	2016	NM	Eddy 	35015	Royalties	Potassium	Other Products	Sylvite-Raw Ore	$2,356
 Fed Onshore	2016	NM	Eddy 	35015	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$39,013,710
 Fed Onshore	2016	NM	Guadalupe 	35019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$12,572
 Fed Onshore	2016	NM	Harding 	35021	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$8,786
 Fed Onshore	2016	NM	Harding 	35021	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,240
-Fed Onshore	2016	NM	Harding 	35021	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$467,317
+Fed Onshore	2016	NM	Harding 	35021	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$467,317
 Fed Onshore	2016	NM	Harding 	35021	Royalties	Oil & Gas	NGL	Gas Plant Products	$280
 Fed Onshore	2016	NM	Harding 	35021	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$23,837
-Fed Onshore	2016	NM	Hidalgo 	35023	Rents	Geothermal			$640
+Fed Onshore	2016	NM	Hidalgo 	35023	Rents	Geothermal	Geothermal		$640
 Fed Onshore	2016	NM	Hidalgo 	35023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$14,729
-Fed Onshore	2016	NM	Hidalgo 	35023	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$26,389
-Fed Onshore	2016	NM	Lea 	35025	Bonus	Potassium			$159,954
+Fed Onshore	2016	NM	Hidalgo 	35023	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$26,389
+Fed Onshore	2016	NM	Lea 	35025	Bonus	Potassium	Potassium		$159,954
 Fed Onshore	2016	NM	Lea 	35025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$9,732,900
-Fed Onshore	2016	NM	Lea 	35025	Other Revenues	Potassium			$65,776
+Fed Onshore	2016	NM	Lea 	35025	Other Revenues	Potassium	Potassium		$65,776
 Fed Onshore	2016	NM	Lea 	35025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,250,220
 Fed Onshore	2016	NM	Lea 	35025	Other Revenues	Oil & Gas	NGL	Gas Plant Products	-$14
-Fed Onshore	2016	NM	Lea 	35025	Rents	Potassium			$19,136
+Fed Onshore	2016	NM	Lea 	35025	Rents	Potassium	Potassium		$19,136
 Fed Onshore	2016	NM	Lea 	35025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$202,890
+Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Potassium	Langbeinite	$76
+Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Potassium	Muriate Of Potash-Granular	$180
+Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Potassium	Muriate Of Potash-Standard	$1,744
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Condensate	$8,555,489
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$75,853
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Gas	Fuel Gas	$514,065
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Gas	Gas Lost - Flared or Vented	$1,483,388
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	NGL	Gas Plant Products	$8,267,925
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Inlet Scrubber	$1,433
-Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Other Products	Langbeinite	$76
-Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Other Products	Muriate Of Potash-Granular	$180
-Fed Onshore	2016	NM	Lea 	35025	Royalties	Potassium	Other Products	Muriate Of Potash-Standard	$1,744
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Oil	$131,441,992
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Oil Lost	$4
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons	$41,526
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$11,892,916
 Fed Onshore	2016	NM	Lea 	35025	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$14,297,835
-Fed Onshore	2016	NM	McKinley 	35031	Bonus	Coal			$460,000
+Fed Onshore	2016	NM	McKinley 	35031	Bonus	Coal	Coal		$460,000
 Fed Onshore	2016	NM	McKinley 	35031	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$8,755
-Fed Onshore	2016	NM	McKinley 	35031	Rents	Coal			$25,518
+Fed Onshore	2016	NM	McKinley 	35031	Rents	Coal	Coal		$25,518
 Fed Onshore	2016	NM	McKinley 	35031	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$62,823
 Fed Onshore	2016	NM	McKinley 	35031	Royalties	Coal	Coal	Coal	$2,091,905
 Fed Onshore	2016	NM	McKinley 	35031	Royalties	Oil & Gas	Gas	Coal Bed Methane	$29,419
@@ -23707,7 +23707,7 @@ Fed Onshore	2016	NM	Otero 	35035	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty
 Fed Onshore	2016	NM	Otero 	35035	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$5,426
 Fed Onshore	2016	NM	Quay 	35037	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$153
 Fed Onshore	2016	NM	Quay 	35037	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$45,846
-Fed Onshore	2016	NM	Quay 	35037	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$36,918
+Fed Onshore	2016	NM	Quay 	35037	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$36,918
 Fed Onshore	2016	NM	Rio Arriba 	35039	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$922,940
 Fed Onshore	2016	NM	Rio Arriba 	35039	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$54,816
 Fed Onshore	2016	NM	Rio Arriba 	35039	Royalties	Oil & Gas	Gas	Coal Bed Methane	$7,311,621
@@ -23726,9 +23726,9 @@ Fed Onshore	2016	NM	Roosevelt 	35041	Royalties	Oil & Gas	NGL	Gas Plant Products	
 Fed Onshore	2016	NM	Roosevelt 	35041	Royalties	Oil & Gas	Oil	Oil	$398,379
 Fed Onshore	2016	NM	Roosevelt 	35041	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	-$8,039
 Fed Onshore	2016	NM	Roosevelt 	35041	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$151,866
-Fed Onshore	2016	NM	San Juan 	35045	Other Revenues	Coal			$51,785
+Fed Onshore	2016	NM	San Juan 	35045	Other Revenues	Coal	Coal		$51,785
 Fed Onshore	2016	NM	San Juan 	35045	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,602,026
-Fed Onshore	2016	NM	San Juan 	35045	Rents	Coal			$52,716
+Fed Onshore	2016	NM	San Juan 	35045	Rents	Coal	Coal		$52,716
 Fed Onshore	2016	NM	San Juan 	35045	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$151,749
 Fed Onshore	2016	NM	San Juan 	35045	Royalties	Coal	Coal	Coal	$10,348,940
 Fed Onshore	2016	NM	San Juan 	35045	Royalties	Oil & Gas	Gas	Coal Bed Methane	$26,887,052
@@ -23754,50 +23754,50 @@ Fed Onshore	2016	NM	Sandoval 	35043	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Ga
 Fed Onshore	2016	NM	Socorro 	35053	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$29,500
 Fed Onshore	2016	NM	Union 	35059	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2
 Fed Onshore	2016	NM	Union 	35059	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$240
-Fed Onshore	2016	NM	Union 	35059	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$174,933
-Fed Onshore	2016	NV	Churchill 	32001	Other Revenues	Geothermal			$53,942
+Fed Onshore	2016	NM	Union 	35059	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$174,933
+Fed Onshore	2016	NV	Churchill 	32001	Other Revenues	Geothermal	Geothermal		$53,942
 Fed Onshore	2016	NV	Churchill 	32001	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$35,405
-Fed Onshore	2016	NV	Churchill 	32001	Rents	Geothermal			$291,094
-Fed Onshore	2016	NV	Churchill 	32001	Royalties	Geothermal	Other Products	Geothermal - Direct Utilization, Hundreds of Gallons	$50,773
-Fed Onshore	2016	NV	Churchill 	32001	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$1,396,077
+Fed Onshore	2016	NV	Churchill 	32001	Rents	Geothermal	Geothermal		$291,094
+Fed Onshore	2016	NV	Churchill 	32001	Royalties	Geothermal	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	$50,773
+Fed Onshore	2016	NV	Churchill 	32001	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$1,396,077
 Fed Onshore	2016	NV	Elko 	32007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$2,000
-Fed Onshore	2016	NV	Elko 	32007	Other Revenues	Geothermal			$36,379
-Fed Onshore	2016	NV	Elko 	32007	Rents	Geothermal			$69,771
+Fed Onshore	2016	NV	Elko 	32007	Other Revenues	Geothermal	Geothermal		$36,379
+Fed Onshore	2016	NV	Elko 	32007	Rents	Geothermal	Geothermal		$69,771
 Fed Onshore	2016	NV	Elko 	32007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$407,598
-Fed Onshore	2016	NV	Esmeralda 	32009	Other Revenues	Potassium			$7,503
-Fed Onshore	2016	NV	Esmeralda 	32009	Other Revenues	Geothermal			$82,914
-Fed Onshore	2016	NV	Esmeralda 	32009	Rents	Potassium			$2,501
-Fed Onshore	2016	NV	Esmeralda 	32009	Rents	Geothermal			$81,950
-Fed Onshore	2016	NV	Esmeralda 	32009	Royalties	Potassium	Other Products	Potash	$1,658
+Fed Onshore	2016	NV	Esmeralda 	32009	Other Revenues	Potassium	Potassium		$7,503
+Fed Onshore	2016	NV	Esmeralda 	32009	Other Revenues	Geothermal	Geothermal		$82,914
+Fed Onshore	2016	NV	Esmeralda 	32009	Rents	Potassium	Potassium		$2,501
+Fed Onshore	2016	NV	Esmeralda 	32009	Rents	Geothermal	Geothermal		$81,950
+Fed Onshore	2016	NV	Esmeralda 	32009	Royalties	Potassium	Potassium	Potash	$1,658
 Fed Onshore	2016	NV	Eureka 	32011	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$117
-Fed Onshore	2016	NV	Eureka 	32011	Other Revenues	Geothermal			$29,596
-Fed Onshore	2016	NV	Eureka 	32011	Rents	Geothermal			$41,960
+Fed Onshore	2016	NV	Eureka 	32011	Other Revenues	Geothermal	Geothermal		$29,596
+Fed Onshore	2016	NV	Eureka 	32011	Rents	Geothermal	Geothermal		$41,960
 Fed Onshore	2016	NV	Eureka 	32011	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$84,783
-Fed Onshore	2016	NV	Eureka 	32011	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$4,806
+Fed Onshore	2016	NV	Eureka 	32011	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$4,806
 Fed Onshore	2016	NV	Eureka 	32011	Royalties	Oil & Gas	Oil	Oil	$192,226
-Fed Onshore	2016	NV	Humboldt 	32013	Rents	Geothermal			$52,115
-Fed Onshore	2016	NV	Humboldt 	32013	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$133,997
+Fed Onshore	2016	NV	Humboldt 	32013	Rents	Geothermal	Geothermal		$52,115
+Fed Onshore	2016	NV	Humboldt 	32013	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$133,997
 Fed Onshore	2016	NV	Lander 	32015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$53,895
-Fed Onshore	2016	NV	Lander 	32015	Rents	Geothermal			$105,030
-Fed Onshore	2016	NV	Lander 	32015	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$1,010,914
+Fed Onshore	2016	NV	Lander 	32015	Rents	Geothermal	Geothermal		$105,030
+Fed Onshore	2016	NV	Lander 	32015	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$1,010,914
 Fed Onshore	2016	NV	Lincoln 	32017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$322,153
-Fed Onshore	2016	NV	Lyon 	32019	Other Revenues	Geothermal			$17,422
-Fed Onshore	2016	NV	Lyon 	32019	Rents	Geothermal			$20,902
-Fed Onshore	2016	NV	Lyon 	32019	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$13,937
-Fed Onshore	2016	NV	Mineral 	32021	Rents	Geothermal			$75,394
-Fed Onshore	2016	NV	Mineral 	32021	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$534,107
+Fed Onshore	2016	NV	Lyon 	32019	Other Revenues	Geothermal	Geothermal		$17,422
+Fed Onshore	2016	NV	Lyon 	32019	Rents	Geothermal	Geothermal		$20,902
+Fed Onshore	2016	NV	Lyon 	32019	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$13,937
+Fed Onshore	2016	NV	Mineral 	32021	Rents	Geothermal	Geothermal		$75,394
+Fed Onshore	2016	NV	Mineral 	32021	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$534,107
 Fed Onshore	2016	NV	Nye 	32023	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$24,740
 Fed Onshore	2016	NV	Nye 	32023	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$11,935
-Fed Onshore	2016	NV	Nye 	32023	Rents	Geothermal			$640
+Fed Onshore	2016	NV	Nye 	32023	Rents	Geothermal	Geothermal		$640
 Fed Onshore	2016	NV	Nye 	32023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$478,194
 Fed Onshore	2016	NV	Nye 	32023	Royalties	Oil & Gas	Oil	Oil	$962,044
-Fed Onshore	2016	NV	Pershing 	32027	Other Revenues	Geothermal			$13,176
+Fed Onshore	2016	NV	Pershing 	32027	Other Revenues	Geothermal	Geothermal		$13,176
 Fed Onshore	2016	NV	Pershing 	32027	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$3,603
-Fed Onshore	2016	NV	Pershing 	32027	Rents	Geothermal			$131,676
-Fed Onshore	2016	NV	Pershing 	32027	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$4,176
-Fed Onshore	2016	NV	Washoe 	32031	Rents	Geothermal			$27,466
-Fed Onshore	2016	NV	Washoe 	32031	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$292,080
-Fed Onshore	2016	NV	White Pine 	32033	Rents	Geothermal			$3,738
+Fed Onshore	2016	NV	Pershing 	32027	Rents	Geothermal	Geothermal		$131,676
+Fed Onshore	2016	NV	Pershing 	32027	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$4,176
+Fed Onshore	2016	NV	Washoe 	32031	Rents	Geothermal	Geothermal		$27,466
+Fed Onshore	2016	NV	Washoe 	32031	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$292,080
+Fed Onshore	2016	NV	White Pine 	32033	Rents	Geothermal	Geothermal		$3,738
 Fed Onshore	2016	NV	White Pine 	32033	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$213,707
 Fed Onshore	2016	NY	Chautauqua 	36013	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$468
 Fed Onshore	2016	NY	Chautauqua 	36013	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1
@@ -23971,7 +23971,7 @@ Fed Onshore	2016	OK	Harper 	40059	Royalties	Oil & Gas	Oil	Oil	$307
 Fed Onshore	2016	OK	Harper 	40059	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$492
 Fed Onshore	2016	OK	Harper 	40059	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$5,891
 Fed Onshore	2016	OK	Haskell 	40061	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,018
-Fed Onshore	2016	OK	Haskell 	40061	Rents	Coal			-$5,460
+Fed Onshore	2016	OK	Haskell 	40061	Rents	Coal	Coal		-$5,460
 Fed Onshore	2016	OK	Haskell 	40061	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$96
 Fed Onshore	2016	OK	Haskell 	40061	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$28,716
 Fed Onshore	2016	OK	Hughes 	40063	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$29
@@ -23987,12 +23987,12 @@ Fed Onshore	2016	OK	Kingfisher 	40073	Royalties	Oil & Gas	Gas	Processed (Residue
 Fed Onshore	2016	OK	Kingfisher 	40073	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$20,543
 Fed Onshore	2016	OK	Latimer 	40077	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$742
 Fed Onshore	2016	OK	Latimer 	40077	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$206
-Fed Onshore	2016	OK	Latimer 	40077	Rents	Coal			$3,985
+Fed Onshore	2016	OK	Latimer 	40077	Rents	Coal	Coal		$3,985
 Fed Onshore	2016	OK	Latimer 	40077	Royalties	Coal	Coal	Coal	$197,800
 Fed Onshore	2016	OK	Latimer 	40077	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$50,612
-Fed Onshore	2016	OK	Le Flore 	40079	Other Revenues	Coal			$37
+Fed Onshore	2016	OK	Le Flore 	40079	Other Revenues	Coal	Coal		$37
 Fed Onshore	2016	OK	Le Flore 	40079	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,911
-Fed Onshore	2016	OK	Le Flore 	40079	Rents	Coal			$21,308
+Fed Onshore	2016	OK	Le Flore 	40079	Rents	Coal	Coal		$21,308
 Fed Onshore	2016	OK	Le Flore 	40079	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$107,500
 Fed Onshore	2016	OK	Le Flore 	40079	Royalties	Coal	Coal	Coal	$475,376
 Fed Onshore	2016	OK	Le Flore 	40079	Royalties	Oil & Gas	Gas	Coal Bed Methane	$236
@@ -24071,9 +24071,9 @@ Fed Onshore	2016	OK	Woodward 	40153	Royalties	Oil & Gas	NGL	Gas Plant Products	$
 Fed Onshore	2016	OK	Woodward 	40153	Royalties	Oil & Gas	Oil	Oil	$3,490
 Fed Onshore	2016	OK	Woodward 	40153	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$39,073
 Fed Onshore	2016	OK	Woodward 	40153	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$12,483
-Fed Onshore	2016	OR	Deschutes 	41017	Other Revenues	Geothermal			$50,927
-Fed Onshore	2016	OR	Deschutes 	41017	Rents	Geothermal			$75,706
-Fed Onshore	2016	OR	Lake 	41037	Rents	Geothermal			$57,529
+Fed Onshore	2016	OR	Deschutes 	41017	Other Revenues	Geothermal	Geothermal		$50,927
+Fed Onshore	2016	OR	Deschutes 	41017	Rents	Geothermal	Geothermal		$75,706
+Fed Onshore	2016	OR	Lake 	41037	Rents	Geothermal	Geothermal		$57,529
 Fed Onshore	2016	PA	Armstrong 	42005	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$3,066
 Fed Onshore	2016	PA	Bedford 	42009	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$77,561
 Fed Onshore	2016	PA	Bedford 	42009	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,735
@@ -24084,7 +24084,7 @@ Fed Onshore	2016	PA	Indiana 	42063	Other Revenues	Oil & Gas	Oil & Gas (Non-Royal
 Fed Onshore	2016	PA	Jefferson 	42065	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$15
 Fed Onshore	2016	PA	Warren 	42123	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$13,223
 Fed Onshore	2016	PA	Westmoreland 	42129	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,033
-Fed Onshore	2016	SC	Abbeville 	45001	Other Revenues	Hardrock			$3,330
+Fed Onshore	2016	SC	Abbeville 	45001	Other Revenues	Hardrock	Hardrock		$3,330
 Fed Onshore	2016	SD	Douglas 	46043	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$0
 Fed Onshore	2016	SD	Douglas 	46043	Royalties	Oil & Gas	Oil	Oil	$991
 Fed Onshore	2016	SD	Fall River 	46047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$26,320
@@ -24238,7 +24238,7 @@ Fed Onshore	2016	TX	Starr 	48427	Royalties	Oil & Gas	Oil	Condensate	$434
 Fed Onshore	2016	TX	Starr 	48427	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$555,682
 Fed Onshore	2016	TX	Tarrant 	48439	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$11,447
 Fed Onshore	2016	TX	Tarrant 	48439	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,044
-Fed Onshore	2016	TX	Tarrant 	48439	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$1,315
+Fed Onshore	2016	TX	Tarrant 	48439	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$1,315
 Fed Onshore	2016	TX	Tarrant 	48439	Royalties	Oil & Gas	Oil	Condensate	$2,082
 Fed Onshore	2016	TX	Tarrant 	48439	Royalties	Oil & Gas	Gas	Fuel Gas	$17,216
 Fed Onshore	2016	TX	Tarrant 	48439	Royalties	Oil & Gas	NGL	Gas Plant Products	$6,336,678
@@ -24272,17 +24272,17 @@ Fed Onshore	2016	TX	Zapata 	48505	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalt
 Fed Onshore	2016	TX	Zapata 	48505	Royalties	Oil & Gas	Oil	Condensate	$43
 Fed Onshore	2016	TX	Zapata 	48505	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	-$82
 Fed Onshore	2016	TX	Zapata 	48505	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$12,352
-Fed Onshore	2016	UT	Beaver 	49001	Bonus	Geothermal			$16,407
+Fed Onshore	2016	UT	Beaver 	49001	Bonus	Geothermal	Geothermal		$16,407
 Fed Onshore	2016	UT	Beaver 	49001	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$7,755
-Fed Onshore	2016	UT	Beaver 	49001	Rents	Geothermal			$19,570
-Fed Onshore	2016	UT	Beaver 	49001	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$199,743
-Fed Onshore	2016	UT	Beaver 	49001	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Thousands of Pounds	$110,830
+Fed Onshore	2016	UT	Beaver 	49001	Rents	Geothermal	Geothermal		$19,570
+Fed Onshore	2016	UT	Beaver 	49001	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$199,743
+Fed Onshore	2016	UT	Beaver 	49001	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	$110,830
 Fed Onshore	2016	UT	Carbon 	49007	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$55,227
 Fed Onshore	2016	UT	Carbon 	49007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$68,968
-Fed Onshore	2016	UT	Carbon 	49007	Other Revenues	Coal			$610,742
-Fed Onshore	2016	UT	Carbon 	49007	Rents	Coal			$60,267
+Fed Onshore	2016	UT	Carbon 	49007	Other Revenues	Coal	Coal		$610,742
+Fed Onshore	2016	UT	Carbon 	49007	Rents	Coal	Coal		$60,267
 Fed Onshore	2016	UT	Carbon 	49007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$121,744
-Fed Onshore	2016	UT	Carbon 	49007	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$39,643
+Fed Onshore	2016	UT	Carbon 	49007	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$39,643
 Fed Onshore	2016	UT	Carbon 	49007	Royalties	Coal	Coal	Coal	$10,972,341
 Fed Onshore	2016	UT	Carbon 	49007	Royalties	Oil & Gas	Gas	Coal Bed Methane	$1,904,167
 Fed Onshore	2016	UT	Carbon 	49007	Royalties	Oil & Gas	Gas	Fuel Gas	$171,206
@@ -24309,10 +24309,10 @@ Fed Onshore	2016	UT	Duchesne 	49013	Royalties	Oil & Gas	Gas	Processed (Residue) 
 Fed Onshore	2016	UT	Duchesne 	49013	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$91,427
 Fed Onshore	2016	UT	Emery 	49015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,794
 Fed Onshore	2016	UT	Emery 	49015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$28,770
-Fed Onshore	2016	UT	Emery 	49015	Other Revenues	Coal			$2,346,833
+Fed Onshore	2016	UT	Emery 	49015	Other Revenues	Coal	Coal		$2,346,833
 Fed Onshore	2016	UT	Emery 	49015	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$117,562
-Fed Onshore	2016	UT	Emery 	49015	Rents	Coal			$119,930
-Fed Onshore	2016	UT	Emery 	49015	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$69,406
+Fed Onshore	2016	UT	Emery 	49015	Rents	Coal	Coal		$119,930
+Fed Onshore	2016	UT	Emery 	49015	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$69,406
 Fed Onshore	2016	UT	Emery 	49015	Royalties	Coal	Coal	Coal	$6,650,733
 Fed Onshore	2016	UT	Emery 	49015	Royalties	Oil & Gas	Gas	Coal Bed Methane	$1,756,646
 Fed Onshore	2016	UT	Emery 	49015	Royalties	Coal	Coal	Coal Waste (Sub-Econ)	$28,270
@@ -24325,11 +24325,11 @@ Fed Onshore	2016	UT	Garfield 	49017	Other Revenues	Oil & Gas	Oil & Gas (Non-Roya
 Fed Onshore	2016	UT	Garfield 	49017	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,064
 Fed Onshore	2016	UT	Garfield 	49017	Royalties	Oil & Gas	Oil	Oil	$481,372
 Fed Onshore	2016	UT	Grand 	49019	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$32,691
-Fed Onshore	2016	UT	Grand 	49019	Other Revenues	Gold			$1,953
-Fed Onshore	2016	UT	Grand 	49019	Other Revenues	Potassium			$24,016
+Fed Onshore	2016	UT	Grand 	49019	Other Revenues	Potassium	Potassium		$24,016
+Fed Onshore	2016	UT	Grand 	49019	Other Revenues	Gold	Gold		$1,953
 Fed Onshore	2016	UT	Grand 	49019	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$143,894
-Fed Onshore	2016	UT	Grand 	49019	Rents	Potassium			-$7,872
-Fed Onshore	2016	UT	Grand 	49019	Rents	Gold			$651
+Fed Onshore	2016	UT	Grand 	49019	Rents	Potassium	Potassium		-$7,872
+Fed Onshore	2016	UT	Grand 	49019	Rents	Gold	Gold		$651
 Fed Onshore	2016	UT	Grand 	49019	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$263,285
 Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	Oil	Condensate	$34,312
 Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	Gas	Fuel Gas	$38,671
@@ -24338,27 +24338,27 @@ Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	NGL	Gas Plant Products	$96,
 Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	Oil	Oil	$1,871,695
 Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$700,062
 Fed Onshore	2016	UT	Grand 	49019	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	-$186,388
-Fed Onshore	2016	UT	Iron 	49021	Rents	Geothermal			$687
+Fed Onshore	2016	UT	Iron 	49021	Rents	Geothermal	Geothermal		$687
 Fed Onshore	2016	UT	Juab 	49023	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$27,571
 Fed Onshore	2016	UT	Juab 	49023	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1
-Fed Onshore	2016	UT	Juab 	49023	Rents	Geothermal			$2,640
+Fed Onshore	2016	UT	Juab 	49023	Rents	Geothermal	Geothermal		$2,640
 Fed Onshore	2016	UT	Juab 	49023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$9,747
 Fed Onshore	2016	UT	Juab 	49023	Royalties	Oil & Gas	NGL	Gas Plant Products	$31
 Fed Onshore	2016	UT	Juab 	49023	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$397
 Fed Onshore	2016	UT	Juab 	49023	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$672
-Fed Onshore	2016	UT	Millard 	49027	Bonus	Geothermal			$2,734
-Fed Onshore	2016	UT	Millard 	49027	Other Revenues	Potassium			$353,517
+Fed Onshore	2016	UT	Millard 	49027	Bonus	Geothermal	Geothermal		$2,734
+Fed Onshore	2016	UT	Millard 	49027	Other Revenues	Potassium	Potassium		$353,517
+Fed Onshore	2016	UT	Millard 	49027	Rents	Potassium	Potassium		$2
 Fed Onshore	2016	UT	Millard 	49027	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		-$22,780
-Fed Onshore	2016	UT	Millard 	49027	Rents	Potassium			$2
-Fed Onshore	2016	UT	Millard 	49027	Rents	Geothermal			$58,412
-Fed Onshore	2016	UT	Millard 	49027	Royalties	Geothermal	Other Products	Geothermal - Electrical Generation, Kilowatt Hours	$34,422
-Fed Onshore	2016	UT	Piute 	49031	Other Revenues	Clay			$930
-Fed Onshore	2016	UT	Piute 	49031	Royalties	Clay	Other Products	Clay	$8,464
+Fed Onshore	2016	UT	Millard 	49027	Rents	Geothermal	Geothermal		$58,412
+Fed Onshore	2016	UT	Millard 	49027	Royalties	Geothermal	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	$34,422
+Fed Onshore	2016	UT	Piute 	49031	Other Revenues	Clay	Clay		$930
+Fed Onshore	2016	UT	Piute 	49031	Royalties	Clay	Clay	Clay	$8,464
 Fed Onshore	2016	UT	Rich 	49033	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$5,964
 Fed Onshore	2016	UT	San Juan 	49037	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$480
-Fed Onshore	2016	UT	San Juan 	49037	Other Revenues	Potassium			$272
+Fed Onshore	2016	UT	San Juan 	49037	Other Revenues	Potassium	Potassium		$272
 Fed Onshore	2016	UT	San Juan 	49037	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$137,300
-Fed Onshore	2016	UT	San Juan 	49037	Rents	Potassium			$1,280
+Fed Onshore	2016	UT	San Juan 	49037	Rents	Potassium	Potassium		$1,280
 Fed Onshore	2016	UT	San Juan 	49037	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$246,773
 Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	Oil	Condensate	$428,740
 Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$446
@@ -24368,14 +24368,14 @@ Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	NGL	Gas Plant Products	$
 Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	Oil	Oil	$1,407,911
 Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$313,116
 Fed Onshore	2016	UT	San Juan 	49037	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$160,012
-Fed Onshore	2016	UT	Sanpete 	49039	Bonus	Coal			$3,440,000
-Fed Onshore	2016	UT	Sanpete 	49039	Other Revenues	Coal			$3
-Fed Onshore	2016	UT	Sanpete 	49039	Rents	Coal			$8,079
+Fed Onshore	2016	UT	Sanpete 	49039	Bonus	Coal	Coal		$3,440,000
+Fed Onshore	2016	UT	Sanpete 	49039	Other Revenues	Coal	Coal		$3
+Fed Onshore	2016	UT	Sanpete 	49039	Rents	Coal	Coal		$8,079
 Fed Onshore	2016	UT	Sanpete 	49039	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$18,037
 Fed Onshore	2016	UT	Sanpete 	49039	Royalties	Oil & Gas	Oil	Oil	$407,190
 Fed Onshore	2016	UT	Sevier 	49041	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$26,428
-Fed Onshore	2016	UT	Sevier 	49041	Other Revenues	Coal			$14,325
-Fed Onshore	2016	UT	Sevier 	49041	Rents	Coal			$61,437
+Fed Onshore	2016	UT	Sevier 	49041	Other Revenues	Coal	Coal		$14,325
+Fed Onshore	2016	UT	Sevier 	49041	Rents	Coal	Coal		$61,437
 Fed Onshore	2016	UT	Sevier 	49041	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$82,744
 Fed Onshore	2016	UT	Sevier 	49041	Royalties	Coal	Coal	Coal	$14,867,833
 Fed Onshore	2016	UT	Sevier 	49041	Royalties	Oil & Gas	Oil	Oil	$6,456,043
@@ -24383,26 +24383,26 @@ Fed Onshore	2016	UT	Summit 	49043	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalt
 Fed Onshore	2016	UT	Summit 	49043	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$23,141
 Fed Onshore	2016	UT	Summit 	49043	Royalties	Oil & Gas	Oil	Oil	$166,572
 Fed Onshore	2016	UT	Summit 	49043	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$33,653
-Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Other Products	Magnesium Chloride Brine	$58,677
-Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Other Products	Potash	$119,391
-Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Other Products	Salt	$2,487
+Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Potassium	Magnesium Chloride Brine	$58,677
+Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Potassium	Potash	$119,391
+Fed Onshore	2016	UT	Tooele 	49045	Royalties	Potassium	Sodium	Salt	$2,487
 Fed Onshore	2016	UT	Uintah 	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$56,464
 Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$2,444,749
-Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Gilsonite			$5,658
-Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Phosphate			$21,840
-Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil Shale			$320
-Fed Onshore	2016	UT	Uintah 	49047	Rents	Gilsonite			$1,309
+Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Gilsonite	Gilsonite		$5,658
+Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Phosphate	Phosphate		$21,840
+Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil Shale	Oil  		$320
+Fed Onshore	2016	UT	Uintah 	49047	Rents	Gilsonite	Gilsonite		$1,309
 Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$203,237
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Oil	Condensate	$4,987,331
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$44,914
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Gas	Fuel Gas	$931,591
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	NGL	Gas Plant Products	$3,518,699
-Fed Onshore	2016	UT	Uintah 	49047	Royalties	Gilsonite	Other Products	Gilsonite	$1,417,561
+Fed Onshore	2016	UT	Uintah 	49047	Royalties	Gilsonite	Gilsonite	Gilsonite	$1,417,561
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Oil	Inlet Scrubber	$327,905
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Oil	Oil	$11,194,232
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$35,356,688
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	-$2,582,943
-Fed Onshore	2016	UT	Utah 	49049	Other Revenues	Phosphate			$2,520
+Fed Onshore	2016	UT	Utah 	49049	Other Revenues	Phosphate	Phosphate		$2,520
 Fed Onshore	2016	UT	Utah 	49049	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$12,363
 Fed Onshore	2016	UT	Utah 	49049	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$9,295
 Fed Onshore	2016	UT	Utah 	49049	Royalties	Oil & Gas	Oil	Condensate	$85,193
@@ -24413,13 +24413,13 @@ Fed Onshore	2016	UT	Wasatch 	49051	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$19
 Fed Onshore	2016	VA	Dickenson 	51051	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$8,827
 Fed Onshore	2016	VA	Dickenson 	51051	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,052
 Fed Onshore	2016	VA	Dickenson 	51051	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$12,364
-Fed Onshore	2016	VA	Giles 	51071	Other Revenues	Hardrock			$1,065
-Fed Onshore	2016	VA	Giles 	51071	Rents	Hardrock			$355
+Fed Onshore	2016	VA	Giles 	51071	Other Revenues	Hardrock	Hardrock		$1,065
+Fed Onshore	2016	VA	Giles 	51071	Rents	Hardrock	Hardrock		$355
 Fed Onshore	2016	VA	Highland 	51091	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$20,202
 Fed Onshore	2016	VA	Wise 	51195	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$7,101
 Fed Onshore	2016	VA	Wise 	51195	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$4,895
 Fed Onshore	2016	WA	Lewis 	53041	Royalties	Coal	Coal	Coal	$1,196
-Fed Onshore	2016	WA	Whatcom 	53073	Rents	Geothermal			$8,437
+Fed Onshore	2016	WA	Whatcom 	53073	Rents	Geothermal	Geothermal		$8,437
 Fed Onshore	2016	WV	Braxton 	54007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$12,003
 Fed Onshore	2016	WV	Grant 	54023	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$12,580
 Fed Onshore	2016	WV	Lewis 	54041	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$41,449
@@ -24453,12 +24453,12 @@ Fed Onshore	2016	WY	Big Horn 	56003	Royalties	Oil & Gas	Oil	Oil	$1,608,444
 Fed Onshore	2016	WY	Big Horn 	56003	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$137,336
 Fed Onshore	2016	WY	Big Horn 	56003	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$95,311
 Fed Onshore	2016	WY	Campbell 	56005	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$936
-Fed Onshore	2016	WY	Campbell 	56005	Bonus	Coal			$307,860,637
+Fed Onshore	2016	WY	Campbell 	56005	Bonus	Coal	Coal		$307,860,637
 Fed Onshore	2016	WY	Campbell 	56005	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$467,328
-Fed Onshore	2016	WY	Campbell 	56005	Other Revenues	Coal			-$7,903
+Fed Onshore	2016	WY	Campbell 	56005	Other Revenues	Coal	Coal		-$7,903
 Fed Onshore	2016	WY	Campbell 	56005	Other Revenues	Oil & Gas	Gas	Coal Bed Methane	$1,731
 Fed Onshore	2016	WY	Campbell 	56005	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$388,851
-Fed Onshore	2016	WY	Campbell 	56005	Rents	Coal			$405,779
+Fed Onshore	2016	WY	Campbell 	56005	Rents	Coal	Coal		$405,779
 Fed Onshore	2016	WY	Campbell 	56005	Royalties	Coal	Coal	Coal	$335,536,935
 Fed Onshore	2016	WY	Campbell 	56005	Royalties	Oil & Gas	Gas	Coal Bed Methane	$5,282,962
 Fed Onshore	2016	WY	Campbell 	56005	Royalties	Oil & Gas	Oil	Condensate	$1,598,469
@@ -24473,7 +24473,7 @@ Fed Onshore	2016	WY	Campbell 	56005	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Ga
 Fed Onshore	2016	WY	Carbon 	56007	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$37,626
 Fed Onshore	2016	WY	Carbon 	56007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$256,064
 Fed Onshore	2016	WY	Carbon 	56007	Other Revenues	Oil & Gas	NGL	Gas Plant Products	$15
-Fed Onshore	2016	WY	Carbon 	56007	Rents	Coal			$51,000
+Fed Onshore	2016	WY	Carbon 	56007	Rents	Coal	Coal		$51,000
 Fed Onshore	2016	WY	Carbon 	56007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$478,076
 Fed Onshore	2016	WY	Carbon 	56007	Royalties	Oil & Gas	Gas	Coal Bed Methane	$1,253,146
 Fed Onshore	2016	WY	Carbon 	56007	Royalties	Oil & Gas	Oil	Condensate	$430,373
@@ -24488,7 +24488,7 @@ Fed Onshore	2016	WY	Carbon 	56007	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	
 Fed Onshore	2016	WY	Converse 	56009	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$3,727,075
 Fed Onshore	2016	WY	Converse 	56009	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$135,562
 Fed Onshore	2016	WY	Converse 	56009	Other Revenues	Oil & Gas	NGL	Gas Plant Products	-$24
-Fed Onshore	2016	WY	Converse 	56009	Rents	Coal			$34,273
+Fed Onshore	2016	WY	Converse 	56009	Rents	Coal	Coal		$34,273
 Fed Onshore	2016	WY	Converse 	56009	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,024,463
 Fed Onshore	2016	WY	Converse 	56009	Royalties	Coal	Coal	Coal	$41,603,464
 Fed Onshore	2016	WY	Converse 	56009	Royalties	Oil & Gas	Gas	Coal Bed Methane	$55,906
@@ -24513,14 +24513,14 @@ Fed Onshore	2016	WY	Crook 	56011	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$
 Fed Onshore	2016	WY	Fremont 	56013	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$297,023
 Fed Onshore	2016	WY	Fremont 	56013	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$183,720
 Fed Onshore	2016	WY	Fremont 	56013	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$578,009
-Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$95
+Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$95
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Oil	Condensate	$736,694
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$823
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	NGL	Gas Plant Products	$84,814
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Oil	Inlet Scrubber	$3,429
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Oil	Oil	$3,715,151
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$4,540,639
-Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Other Products	Sulfur	$16,401
+Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Sulfur	Sulfur	$16,401
 Fed Onshore	2016	WY	Fremont 	56013	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$4,520,970
 Fed Onshore	2016	WY	Goshen 	56015	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$320
 Fed Onshore	2016	WY	Goshen 	56015	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$38
@@ -24550,7 +24550,7 @@ Fed Onshore	2016	WY	Laramie 	56021	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas
 Fed Onshore	2016	WY	Lincoln 	56023	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$856,714
 Fed Onshore	2016	WY	Lincoln 	56023	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$129,846
 Fed Onshore	2016	WY	Lincoln 	56023	Other Revenues	Oil & Gas	NGL	Gas Plant Products	$0
-Fed Onshore	2016	WY	Lincoln 	56023	Rents	Coal			$26,046
+Fed Onshore	2016	WY	Lincoln 	56023	Rents	Coal	Coal		$26,046
 Fed Onshore	2016	WY	Lincoln 	56023	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$218,412
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Coal	Coal	Coal	$4,137,723
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Oil	Condensate	$578,548
@@ -24560,19 +24560,19 @@ Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	NGL	Gas Plant Products	$6
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Oil	Inlet Scrubber	$4,320
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Oil	Oil	$359,125
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$3,318,146
-Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Sodium	Other Products	Salt	$2,644
-Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Other Products	Sulfur	$101,154
+Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Sodium	Sodium	Salt	$2,644
+Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Sulfur	Sulfur	$101,154
 Fed Onshore	2016	WY	Lincoln 	56023	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2,896,096
 Fed Onshore	2016	WY	Natrona 	56025	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,800
 Fed Onshore	2016	WY	Natrona 	56025	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$411
 Fed Onshore	2016	WY	Natrona 	56025	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$611,211
-Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$8
+Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$8
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Oil	Condensate	$423,949
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	NGL	Gas Plant Products	$242,193
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Oil	Indian Oil- Sour	$38,821
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Oil	Oil	$19,814,402
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$751,617
-Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Other Products	Sulfur	$1,320
+Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Sulfur	Sulfur	$1,320
 Fed Onshore	2016	WY	Natrona 	56025	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2,813,902
 Fed Onshore	2016	WY	Niobrara 	56027	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$4,440,462
 Fed Onshore	2016	WY	Niobrara 	56027	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$30,509
@@ -24592,7 +24592,7 @@ Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Oil	Drip or Scrubber Condens
 Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	NGL	Gas Plant Products	$167,669
 Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Oil	Oil	$11,769,231
 Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$477,791
-Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Other Products	Sulfur	$5,530
+Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Sulfur	Sulfur	$5,530
 Fed Onshore	2016	WY	Park 	56029	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$58,502
 Fed Onshore	2016	WY	Platte 	56031	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$31,296
 Fed Onshore	2016	WY	Sheridan 	56033	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$92,225
@@ -24602,7 +24602,7 @@ Fed Onshore	2016	WY	Sheridan 	56033	Royalties	Oil & Gas	Oil	Oil	$26,608
 Fed Onshore	2016	WY	Sublette 	56035	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$42,720
 Fed Onshore	2016	WY	Sublette 	56035	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$588,879
 Fed Onshore	2016	WY	Sublette 	56035	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$190,865
-Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Other Products	Carbon Dioxide Gas (CO2)	$4,061,877
+Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	CO2	Carbon Dioxide Gas (CO2)	$4,061,877
 Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Gas	Coal Bed Methane	$5,323
 Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Oil	Condensate	$15,024,665
 Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Oil	Drip or Scrubber Condensate	$15,477
@@ -24612,12 +24612,12 @@ Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Oil	Oil	$13,335,645
 Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$208,496,888
 Fed Onshore	2016	WY	Sublette 	56035	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	-$39,838,766
 Fed Onshore	2016	WY	Sweetwater 	56037	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$287,166
-Fed Onshore	2016	WY	Sweetwater 	56037	Bonus	Sodium			$424,121
+Fed Onshore	2016	WY	Sweetwater 	56037	Bonus	Sodium	Sodium		$424,121
 Fed Onshore	2016	WY	Sweetwater 	56037	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$52,069
-Fed Onshore	2016	WY	Sweetwater 	56037	Other Revenues	Sodium			$93,888
+Fed Onshore	2016	WY	Sweetwater 	56037	Other Revenues	Sodium	Sodium		$93,888
 Fed Onshore	2016	WY	Sweetwater 	56037	Other Revenues	Oil & Gas	NGL	Gas Plant Products	$1,205
-Fed Onshore	2016	WY	Sweetwater 	56037	Rents	Sodium			-$30,930
-Fed Onshore	2016	WY	Sweetwater 	56037	Rents	Coal			$86,139
+Fed Onshore	2016	WY	Sweetwater 	56037	Rents	Sodium	Sodium		-$30,930
+Fed Onshore	2016	WY	Sweetwater 	56037	Rents	Coal	Coal		$86,139
 Fed Onshore	2016	WY	Sweetwater 	56037	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,465,655
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Coal	Coal	Coal	$15,791,944
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Gas	Coal Bed Methane	-$499
@@ -24629,12 +24629,12 @@ Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Oil	Inlet Scrubber	$69
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Oil	Oil	$8,035,358
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Oil	Other Liquid Hydrocarbons	$97,019
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$9,688,965
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Purge Liquor	$148,480
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Soda Ash	$30,566,744
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Sodium Bi-Carbonate	$744,461
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Sodium Sesquicarbonate	$184,541
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Sulfide	$391,744
-Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Other Products	Trona Ore	$1,124,142
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Purge Liquor	$148,480
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Soda Ash	$30,566,744
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Sodium Bi-Carbonate	$744,461
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Sodium Sesquicarbonate	$184,541
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Sulfide	$391,744
+Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Sodium	Sodium	Trona Ore	$1,124,142
 Fed Onshore	2016	WY	Sweetwater 	56037	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$13,336,270
 Fed Onshore	2016	WY	Teton 	56039	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$20
 Fed Onshore	2016	WY	Uinta 	56041	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$168,285
@@ -24647,7 +24647,7 @@ Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	NGL	Gas Plant Products	$676
 Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Oil	Inlet Scrubber	$869
 Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Oil	Oil	$1,530,136
 Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$1,196,903
-Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Other Products	Sulfur	$97,103
+Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Sulfur	Sulfur	$97,103
 Fed Onshore	2016	WY	Uinta 	56041	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,460,555
 Fed Onshore	2016	WY	Washakie 	56043	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$13,793
 Fed Onshore	2016	WY	Washakie 	56043	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$1,676

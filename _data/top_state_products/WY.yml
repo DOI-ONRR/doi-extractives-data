@@ -121,1004 +121,963 @@ federal_production:
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 1815164
+      value: 69814
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 123638632
+      value: 4755332
       rank: 1
-      percent: 2200
+      percent: 85.33
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 9616257742
+      value: 369856067
       rank: 1
-      percent: 2100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 83.08
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 38777850514
-      rank: 2
-      percent: 500
+      value: 1491455789
+      rank: 1
+      percent: 23.03
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 828881300
-      rank: 2
-      percent: 100
+      value: 31880050
+      rank: 1
+      percent: 5.33
   '2007':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2540486
+      value: 97711
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 147227574
+      value: 5662599
       rank: 1
-      percent: 2200
+      percent: 88.19
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 9989246280
+      value: 384201780
       rank: 1
-      percent: 2100
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 84.48
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 43264040274
-      rank: 2
-      percent: 600
+      value: 1664001549
+      rank: 1
+      percent: 25.49
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 859957384
-      rank: 2
-      percent: 100
+      value: 33075284
+      rank: 1
+      percent: 5.57
   '2008':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 3024658
+      value: 116333
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 183813682
+      value: 7069757
       rank: 1
-      percent: 2300
+      percent: 90.33
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 10840894714
+      value: 416957489
       rank: 1
-      percent: 2200
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 85.6
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 48272796624
-      rank: 2
-      percent: 700
+      value: 1856646024
+      rank: 1
+      percent: 29.33
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 848579836
-      rank: 2
-      percent: 100
+      value: 32637686
+      rank: 1
+      percent: 5.93
   '2009':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 3068546
+      value: 118021
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Trona Ore (tons)
       name: Trona Ore
       units: tons
-      value: 3631914
+      value: 139689
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 144177800
+      value: 5545300
       rank: 1
-      percent: 2300
+      percent: 89.84
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 10081415136
+      value: 387746736
       rank: 1
-      percent: 2200
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Sodium Bi-Carbonate (tons)
-      name: Sodium Bi-Carbonate
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 86.47
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 50396202818
-      rank: 2
-      percent: 700
+      value: 1938315493
+      rank: 1
+      percent: 29.68
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 831101674
-      rank: 2
-      percent: 100
+      value: 31965449
+      rank: 1
+      percent: 4.58
   '2010':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2714530
+      value: 104405
       rank: 1
-      percent: 2600
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 10335927940
-      rank: 1
-      percent: 2200
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 129748034
+      value: 4990309
       rank: 1
-      percent: 2200
+      percent: 87.5
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 397535690
+      rank: 1
+      percent: 87.01
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 50395904936
+      value: 1938304036
       rank: 1
-      percent: 800
+      percent: 30.97
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 1219504
+      value: 46904
       rank: 1
-      percent: 600
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 25.95
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 844194520
-      rank: 2
-      percent: 100
+      value: 32469020
+      rank: 1
+      percent: 4.65
   '2011':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2298712
+      value: 88412
       rank: 1
-      percent: 2600
-    - product: Coal (tons)
-      name: Coal
-      units: tons
-      value: 10142927860
-      rank: 1
-      percent: 2200
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 148333822
+      value: 5705147
       rank: 1
-      percent: 2200
+      percent: 88.07
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 390112610
+      rank: 1
+      percent: 86.33
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 47781262750
+      value: 1837740875
       rank: 1
-      percent: 800
+      percent: 31.94
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 891722
+      value: 34297
       rank: 1
-      percent: 400
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 18.76
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 843498500
+      value: 32442250
       rank: 2
-      percent: 100
+      percent: 5.24
   '2012':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 1913496
+      value: 73596
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 123245200
+      value: 4740200
       rank: 1
-      percent: 2200
+      percent: 86.53
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 9186108464
+      value: 353311864
       rank: 1
-      percent: 2100
+      percent: 83.62
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 45029064990
+      value: 1731887115
       rank: 1
-      percent: 800
+      percent: 32.26
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 1800812
+      value: 69262
       rank: 1
-      percent: 800
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 32
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 861761550
+      value: 33144675
       rank: 2
-      percent: 100
+      percent: 5.4
   '2013':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2293538
+      value: 88213
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Sodium Sesquicarbonate (tons)
       name: Sodium Sesquicarbonate
       units: tons
-      value: 3148990
+      value: 121115
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 136047522
+      value: 5232597
       rank: 1
-      percent: 2200
+      percent: 86.81
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 8619771368
+      value: 331529668
       rank: 1
-      percent: 2100
+      percent: 83.3
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 41360691450
+      value: 1590795825
       rank: 1
-      percent: 800
+      percent: 32.19
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 1860014
+      value: 71539
       rank: 1
-      percent: 800
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 31.74
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 926088228
-      rank: 3
-      percent: 100
+      value: 35618778
+      rank: 2
+      percent: 5.72
   '2014':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2388828
+      value: 91878
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 157975844
+      value: 6075994
       rank: 1
-      percent: 2200
+      percent: 88.26
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 8841281800
+      value: 340049300
       rank: 1
-      percent: 2100
+      percent: 83.07
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 2782572
+      value: 107022
       rank: 1
-      percent: 900
+      percent: 34.64
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 40224937662
+      value: 1547112987
       rank: 1
-      percent: 800
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 31.87
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 1078875720
-      rank: 3
-      percent: 100
+      value: 41495220
+      rank: 2
+      percent: 5.93
   '2015':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
       units: tons - equivalent
-      value: 2492802
+      value: 95877
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Soda Ash (tons)
       name: Soda Ash
       units: tons
-      value: 126452794
+      value: 4863569
       rank: 1
-      percent: 2200
+      percent: 85.47
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 8158542418
+      value: 313790093
       rank: 1
-      percent: 2100
+      percent: 83.55
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 40347201544
+      value: 1551815444
       rank: 1
-      percent: 800
+      percent: 32.45
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
-      value: 1822054
+      value: 70079
       rank: 1
-      percent: 600
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 23.97
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 1248482092
-      rank: 3
-      percent: 100
+      value: 48018542
+      rank: 2
+      percent: 6.36
 revenue:
   '2006':
     - product: All
       name: null
       units: null
-      value: 2162448186.85
+      value: 2058583547.08
       rank: 1
-      percent: 17.1
+      percent: 16.5
     - product: Gas
       name: null
       units: null
-      value: 1030153306.53
+      value: 934471457.91
       rank: 1
-      percent: 19.4
+      percent: 18.4
     - product: Coal
       name: null
       units: null
-      value: 813224251.14
+      value: 824749734.35
       rank: 1
-      percent: 87.06
+      percent: 86.8
     - product: Oil
       name: null
       units: null
-      value: 185475710.51
+      value: 197127988.32
       rank: 1
-      percent: 4.37
+      percent: 4.6
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 78938114.04
+      value: 49661556.5
       rank: 3
-      percent: 20.68
+      percent: 2.8
     - product: NGL
       name: null
       units: null
-      value: 29026801.1
+      value: 27267737.06
       rank: 2
-      percent: 9.58
+      percent: 9.1
     - product: Sodium
       name: null
       units: null
-      value: 25457106.56
+      value: 25229073.62
       rank: 1
       percent: 82.2
-    - product: Sulfur
-      name: null
-      units: null
-      value: 104891.37
-      rank: 1
-      percent: 96.62
     - product: CO2
       name: null
       units: null
-      value: 57081.69
+      value: 60733.7
       rank: 3
-      percent: 0.24
+      percent: 0.2
+    - product: Sulfur
+      name: null
+      units: null
+      value: 15499.79
+      rank: 1
+      percent: 33.3
     - product: Helium
       name: null
       units: null
-      value: 10923.91
-      rank: 1
-      percent: 100.53
+      value: -234.17
+      rank: 2
+      percent: null
   '2007':
     - product: All
       name: null
       units: null
-      value: 1839822542.07
+      value: 1848969321.07
       rank: 1
-      percent: 16.33
+      percent: 16.3
     - product: Coal
       name: null
       units: null
-      value: 773748949.04
+      value: 807795067.15
       rank: 1
-      percent: 85.74
+      percent: 86.1
     - product: Gas
       name: null
       units: null
-      value: 765710757.76
+      value: 703132330.43
       rank: 1
-      percent: 17.5
+      percent: 16.4
     - product: Oil
       name: null
       units: null
-      value: 208112409.16
+      value: 226192878.19
       rank: 1
-      percent: 4.8
+      percent: 5.1
     - product: NGL
       name: null
       units: null
-      value: 44975531.15
+      value: 58637672.7
       rank: 2
-      percent: 11.69
+      percent: 14.5
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 34325227.49
+      value: 41243505.95
       rank: 3
-      percent: 9.4
+      percent: 3.5
     - product: Sodium
       name: null
       units: null
-      value: 12866905.87
+      value: 11816158.08
       rank: 1
-      percent: 82.31
+      percent: 83.7
     - product: CO2
       name: null
       units: null
-      value: 70439
+      value: 85873.69
       rank: 3
-      percent: 0.3
+      percent: 0.4
     - product: Sulfur
       name: null
       units: null
-      value: 23480.68
+      value: 65834.88
       rank: 1
-      percent: 90.74
-    - product: Helium
-      name: null
-      units: null
-      value: -11158.08
-      rank: 1
-      percent: 100
+      percent: 57.1
   '2008':
     - product: All
       name: null
       units: null
-      value: 2696943141.05
+      value: 2766468482.78
       rank: 1
-      percent: 11.89
+      percent: 12.1
     - product: Gas
       name: null
       units: null
-      value: 1166178447.44
+      value: 1214158292.02
       rank: 1
-      percent: 21.94
+      percent: 22.5
     - product: Coal
       name: null
       units: null
-      value: 970897750.17
+      value: 991442346.6
       rank: 1
-      percent: 87.19
+      percent: 86.9
     - product: Oil
       name: null
       units: null
-      value: 349473739.61
+      value: 354318589.75
       rank: 1
-      percent: 6
+      percent: 6.1
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 97040963.09
-      rank: 1
-      percent: 25.97
+      value: 95350185.3
+      rank: 2
+      percent: 1
     - product: NGL
       name: null
       units: null
-      value: 95941301.74
+      value: 91717765.47
       rank: 2
-      percent: 17.66
+      percent: 16.7
     - product: Sodium
       name: null
       units: null
-      value: 16366194.74
+      value: 17801200.77
       rank: 1
-      percent: 84.92
+      percent: 85.3
     - product: Sulfur
       name: null
       units: null
-      value: 860213.58
+      value: 1119707.84
       rank: 1
-      percent: 97.55
+      percent: 77.4
     - product: CO2
       name: null
       units: null
-      value: 184530.68
+      value: 560395.03
       rank: 3
-      percent: 0.47
+      percent: 0.9
   '2009':
     - product: All
       name: null
       units: null
-      value: 1865994154.1
+      value: 1805880487.35
       rank: 1
-      percent: 22.68
+      percent: 23
     - product: Coal
       name: null
       units: null
-      value: 969941347.01
+      value: 956698236.98
       rank: 1
-      percent: 88.16
+      percent: 88.4
     - product: Gas
       name: null
       units: null
-      value: 596098001.63
+      value: 552004672.41
       rank: 1
-      percent: 28.92
+      percent: 29.4
     - product: Oil
       name: null
       units: null
-      value: 197010300.35
+      value: 183699381.28
       rank: 1
-      percent: 6.55
+      percent: 6.2
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 47162110.18
-      rank: 3
-      percent: 13.67
+      value: 55443027.47
+      rank: 2
+      percent: 3.6
     - product: NGL
       name: null
       units: null
-      value: 32916815.21
+      value: 36223633.71
       rank: 2
-      percent: 13.46
+      percent: 15.5
     - product: Sodium
       name: null
       units: null
-      value: 14975889.91
+      value: 14644980.85
       rank: 1
-      percent: 83.86
+      percent: 84.5
     - product: Sulfur
       name: null
       units: null
-      value: 7397065.84
+      value: 7096365.82
       rank: 1
-      percent: 99.72
+      percent: 99.6
     - product: CO2
       name: null
       units: null
-      value: 492623.97
+      value: 70188.83
       rank: 3
-      percent: 0.88
+      percent: 0.2
   '2010':
     - product: All
       name: null
       units: null
-      value: 1872072469.79
+      value: 1864030625.29
       rank: 1
-      percent: 17.93
+      percent: 17.9
     - product: Gas
       name: null
       units: null
-      value: 744888563.89
+      value: 755991818.74
       rank: 1
-      percent: 30.68
+      percent: 30.7
     - product: Coal
       name: null
       units: null
-      value: 697961889.49
+      value: 717120332.42
       rank: 1
-      percent: 81.48
+      percent: 81.8
     - product: Oil
       name: null
       units: null
-      value: 257276698.33
+      value: 256931525.83
       rank: 2
-      percent: 5.06
+      percent: 5
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 92750998.86
+      value: 65210661.5
       rank: 1
-      percent: 27.96
+      percent: 4.7
     - product: NGL
       name: null
       units: null
-      value: 63492751.43
+      value: 54659745.49
       rank: 2
-      percent: 14.69
+      percent: 12.8
     - product: Sodium
       name: null
       units: null
-      value: 15618421.63
+      value: 13831619.73
       rank: 1
-      percent: 83.16
+      percent: 80.1
     - product: Sulfur
       name: null
       units: null
-      value: 260581.64
+      value: 371502.86
       rank: 1
-      percent: 102.16
+      percent: 94.9
     - product: CO2
       name: null
       units: null
-      value: -177435.48
+      value: -86581.28
       rank: 4
       percent: null
   '2011':
     - product: All
       name: null
       units: null
-      value: 1967924847.53
+      value: 2118589204.83
       rank: 1
-      percent: 18.24
+      percent: 19.1
     - product: Coal
       name: null
       units: null
-      value: 802910470.21
+      value: 878951875.97
       rank: 1
-      percent: 83.98
+      percent: 84.6
     - product: Gas
       name: null
       units: null
-      value: 688225479.36
+      value: 686936581.52
       rank: 1
-      percent: 31.58
+      percent: 31.4
     - product: Oil
       name: null
       units: null
-      value: 311317007.98
+      value: 320106663.19
       rank: 2
-      percent: 4.89
+      percent: 5
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 86958465.23
-      rank: 2
-      percent: 28.31
+      value: 136313735.74
+      rank: 1
+      percent: 20.1
     - product: NGL
       name: null
       units: null
-      value: 58722047.01
+      value: 68574645.94
       rank: 2
-      percent: 11.02
+      percent: 12
     - product: Sodium
       name: null
       units: null
-      value: 17989485.24
+      value: 25607575.49
       rank: 1
-      percent: 81.53
+      percent: 83.4
     - product: Sulfur
       name: null
       units: null
-      value: 1504169.2
+      value: 1810389.17
       rank: 1
-      percent: 94.95
+      percent: 92
     - product: CO2
       name: null
       units: null
-      value: 297723.3
+      value: 287737.81
       rank: 3
-      percent: 0.58
+      percent: 0.6
   '2012':
     - product: All
       name: null
       units: null
-      value: 2157680843.06
+      value: 2099793381.16
       rank: 1
-      percent: 17.01
+      percent: 16.5
     - product: Coal
       name: null
       units: null
-      value: 1185583662.76
+      value: 1172093378.73
       rank: 1
-      percent: 86.86
+      percent: 87
     - product: Gas
       name: null
       units: null
-      value: 443354151.77
+      value: 360466762.12
       rank: 1
-      percent: 31.25
+      percent: 27.7
     - product: Oil
       name: null
       units: null
-      value: 317642020
+      value: 329958603.28
       rank: 2
-      percent: 4.84
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 88156774.6
-      rank: 1
-      percent: 25.18
+      percent: 5
     - product: NGL
       name: null
       units: null
-      value: 81947212.06
+      value: 132172213.43
+      rank: 1
+      percent: 24
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 61028635.86
       rank: 2
-      percent: 15.68
+      percent: 2.3
     - product: Sodium
       name: null
       units: null
-      value: 38296493.24
+      value: 41392243.08
       rank: 1
-      percent: 79.29
+      percent: 79.3
     - product: Sulfur
       name: null
       units: null
-      value: 2134474.51
+      value: 2025396.59
       rank: 1
-      percent: 99.65
+      percent: 96.5
     - product: CO2
       name: null
       units: null
-      value: 566054.12
+      value: 656148.07
       rank: 3
-      percent: 0.98
+      percent: 1
   '2013':
     - product: All
       name: null
       units: null
-      value: 2016418250.86
+      value: 2004924663.31
       rank: 1
-      percent: 16.43
+      percent: 16.2
     - product: Coal
       name: null
       units: null
-      value: 1029654813.74
+      value: 996347754.68
       rank: 1
-      percent: 88.37
+      percent: 88
     - product: Gas
       name: null
       units: null
-      value: 435837564.11
+      value: 500511207.1
       rank: 1
-      percent: 28.89
+      percent: 31.7
     - product: Oil
       name: null
       units: null
-      value: 331885522
+      value: 341686585.41
       rank: 2
-      percent: 4.75
-    - product: NGL
-      name: null
-      units: null
-      value: 115147721.3
-      rank: 1
-      percent: 25.54
+      percent: 4.9
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 55377947.27
+      value: 63327416.67
       rank: 3
-      percent: 20.36
+      percent: 3.2
+    - product: NGL
+      name: null
+      units: null
+      value: 59990284.01
+      rank: 2
+      percent: 15.1
     - product: Sodium
       name: null
       units: null
-      value: 47430528.89
+      value: 42278562.94
       rank: 1
-      percent: 81.91
+      percent: 80.4
     - product: Sulfur
       name: null
       units: null
-      value: 718135.54
+      value: 476174.84
       rank: 1
-      percent: 98.71
+      percent: 92
     - product: CO2
       name: null
       units: null
-      value: 366018.01
+      value: 306677.66
       rank: 3
-      percent: 0.61
+      percent: 0.5
   '2014':
     - product: All
       name: null
       units: null
-      value: 2095938407.3
+      value: 2144741216.67
       rank: 1
-      percent: 44.86
+      percent: 17.4
     - product: Coal
       name: null
       units: null
-      value: 1013159963.83
+      value: 1026104598.38
       rank: 1
-      percent: 87.2
+      percent: 87.4
     - product: Gas
       name: null
       units: null
-      value: 496718992.58
+      value: 510473718.54
       rank: 1
-      percent: 42.78
+      percent: 29.2
     - product: Oil
       name: null
       units: null
-      value: 361278600.1
+      value: 382255746.01
       rank: 2
-      percent: 22.1
+      percent: 5.3
     - product: NGL
       name: null
       units: null
-      value: 107241274.87
+      value: 121439972.42
       rank: 1
-      percent: 38.38
+      percent: 25.5
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 84403828.13
-      rank: 1
-      percent: 33.84
+      value: 68752649.15
+      rank: 2
+      percent: 4.6
     - product: Sodium
       name: null
       units: null
-      value: 31943273
+      value: 34221369.35
       rank: 1
-      percent: 76.16
+      percent: 77.2
     - product: CO2
       name: null
       units: null
-      value: 930151.72
+      value: 1064886.82
       rank: 3
-      percent: 1.16
+      percent: 1.3
     - product: Sulfur
       name: null
       units: null
-      value: 262323.07
+      value: 428276
       rank: 1
-      percent: 98.48
+      percent: 91.2
   '2015':
     - product: All
       name: null
       units: null
-      value: 1790988253.57
+      value: 1636162227.93
       rank: 1
-      percent: 47.8
+      percent: 21.8
     - product: Coal
       name: null
       units: null
-      value: 987810212.07
+      value: 990842539.47
       rank: 1
-      percent: 86.83
+      percent: 87.5
     - product: Gas
       name: null
       units: null
-      value: 402138604.43
+      value: 333459445.47
       rank: 1
-      percent: 43.95
+      percent: 30.3
     - product: Oil
       name: null
       units: null
-      value: 294258796.81
+      value: 232006286.57
       rank: 2
-      percent: 23.18
+      percent: 5.8
     - product: NGL
       name: null
       units: null
-      value: 58196794.59
-      rank: 1
-      percent: 37.73
+      value: 42804513.37
+      rank: 2
+      percent: 23.8
     - product: Sodium
       name: null
       units: null
-      value: 35576157.42
+      value: 34480367.38
       rank: 1
-      percent: 77.66
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 12732182.44
-      rank: 2
-      percent: 11.9
+      percent: 77.4
     - product: CO2
       name: null
       units: null
-      value: 377255.81
+      value: 246840.67
       rank: 3
-      percent: 0.6
+      percent: 0.4
     - product: Sulfur
       name: null
       units: null
-      value: -101750
-      rank: 5
-      percent: 111.6
+      value: -257513.23
+      rank: 4
+      percent: null
+  '2016':
+    - product: All
+      name: null
+      units: null
+      value: 1225400985
+      rank: 1
+      percent: 23
+    - product: Coal
+      name: null
+      units: null
+      value: 705526037
+      rank: 1
+      percent: 85.2
+    - product: Gas
+      name: null
+      units: null
+      value: 256255815
+      rank: 1
+      percent: 33.1
+    - product: Oil
+      name: null
+      units: null
+      value: 163944348
+      rank: 2
+      percent: 5.6
+    - product: NGL
+      name: null
+      units: null
+      value: 42257315
+      rank: 2
+      percent: 24
+    - product: Sodium
+      name: null
+      units: null
+      value: 33649835
+      rank: 1
+      percent: 72.5
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 19484147
+      rank: 2
+      percent: 4.9
+    - product: CO2
+      name: null
+      units: null
+      value: 4061980
+      rank: 2
+      percent: 8.3
+    - product: Sulfur
+      name: null
+      units: null
+      value: 221508
+      rank: 1
+      percent: 97.8

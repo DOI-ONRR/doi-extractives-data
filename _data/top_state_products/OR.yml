@@ -94,67 +94,74 @@ revenue:
       units: null
       value: 3111
       rank: 5
-      percent: 0.02
+      percent: 0
   '2007':
     - product: Geothermal
       name: null
       units: null
-      value: 126215.18
+      value: 193089.09
       rank: 5
-      percent: 0.66
+      percent: 0.5
   '2008':
     - product: Geothermal
       name: null
       units: null
-      value: 141997.66
+      value: 117055.75
       rank: 4
-      percent: 0.38
+      percent: 0.3
   '2009':
     - product: Geothermal
       name: null
       units: null
-      value: 980547.39
+      value: 999778.4
       rank: 4
-      percent: 2.02
+      percent: 3.2
   '2010':
     - product: Geothermal
       name: null
       units: null
-      value: 300904.89
+      value: 309597.93
       rank: 4
-      percent: 1.12
+      percent: 1.7
   '2011':
     - product: Geothermal
       name: null
       units: null
-      value: 298267.05
+      value: 301896
       rank: 4
-      percent: 1.84
+      percent: 1.9
   '2012':
     - product: Geothermal
       name: null
       units: null
-      value: 293708
+      value: 291466.21
       rank: 4
-      percent: 1.92
+      percent: 1.9
   '2013':
     - product: Geothermal
       name: null
       units: null
-      value: 299908.21
+      value: 286224.03
       rank: 4
-      percent: 2
+      percent: 1.9
   '2014':
     - product: Geothermal
       name: null
       units: null
-      value: 273777.03
+      value: 290403.59
       rank: 4
-      percent: 1.71
+      percent: 1.7
   '2015':
     - product: Geothermal
       name: null
       units: null
-      value: 218887.83
+      value: 178258.66
       rank: 4
-      percent: 1.41
+      percent: 1.3
+  '2016':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 184162
+      rank: 4
+      percent: 1.4

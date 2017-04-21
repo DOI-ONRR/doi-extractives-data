@@ -55,70 +55,6 @@ all_production:
       value: 3515984.06
       rank: 2
       percent: 13.28
-federal_production:
-  '2006':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2007':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2008':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2009':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2010':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2011':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2012':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2013':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2014':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
 revenue:
   '2006':
     - product: Geothermal
@@ -126,38 +62,46 @@ revenue:
       units: null
       value: 4168
       rank: 4
-      percent: 0.03
+      percent: 0
+  '2007':
+    - product: Sodium
+      name: null
+      units: null
+      value: 945.67
+      rank: 5
+      percent: 0
   '2009':
     - product: Potassium
       name: null
       units: null
       value: 1634
-      rank: 4
-      percent: 0.01
+      rank: 3
+      percent: 0
   '2010':
     - product: Potassium
       name: null
       units: null
       value: 1634
       rank: 4
-      percent: 0.01
-  '2012':
+      percent: 0
+  '2011':
     - product: Sodium
       name: null
       units: null
-      value: 8353.61
+      value: 8975.28
       rank: 5
-      percent: 0.02
+      percent: 0
+  '2012':
     - product: Potassium
       name: null
       units: null
       value: -3268
-      rank: 3
+      rank: 4
       percent: null
   '2013':
     - product: Sodium
       name: null
       units: null
-      value: 4256.65
+      value: 4224.65
       rank: 5
-      percent: 0.01
+      percent: 0

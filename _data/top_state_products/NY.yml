@@ -129,39 +129,3 @@ all_production:
       value: 1703093.68
       rank: 4
       percent: 7.8
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 351182
-      rank: 5
-      percent: 0
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 329940
-      rank: 5
-      percent: 0
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1161472
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1603758
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1141504
-      rank: 5
-      percent: 0

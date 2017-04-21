@@ -26,7 +26,7 @@ Download calendar year data:
   <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
    Offshore dataset (xlsx, 535 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-16_2017-04-21.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (xlsx, 1.3 MB)
   </a></li>
   <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
@@ -40,7 +40,7 @@ Download fiscal year data:
   <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Offshore dataset (xlsx, 481 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-16_2017-04-21.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (xlsx, 1.3 MB)
   </a></li>
   <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>

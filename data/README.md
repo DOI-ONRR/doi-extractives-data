@@ -5,10 +5,16 @@ transforming them, and the resulting ["output" files in the _data directory](_da
 [npm](https://www.npmjs.com/) in the parent directory's
 [package.json](../package.json).
 
-To update the data that powers the site, replace a dataset's "input" .tsv file and, run:
+To update the data that powers the site:
 
+1. Replace a dataset's "input" .tsv file
+2. Update the sqlite tables like so:
 ```sh
 make -B
+```
+3. Update the `.yml` files in `_data`:
+```sh
+make site-data
 ```
 
 ## Handling CSVs and TSVs

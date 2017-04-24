@@ -8,11 +8,7 @@ transforming them, and the resulting ["output" files in the _data directory](_da
 To update the data that powers the site:
 
 1. Replace a dataset's "input" .tsv file
-2. Update the sqlite tables like so:
-```sh
-make -B
-```
-3. Update the `.yml` files in `_data`:
+2. Update the sqlite tables and update the `.yml` files in `_data`:
 ```sh
 make site-data
 ```

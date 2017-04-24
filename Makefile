@@ -626,7 +626,7 @@ tables/reconciliation: data/reconciliation/output
 	$(tables) -i $$tmp -t ndjson -n reconciliation && \
 	rm $$tmp
 
-tables/civil_penalties_revenue: data/revenue/civil_penalties.tsv
+tables/civil_penalties_revenue: data/revenue/civil-penalties.tsv
 	@$(call drop-table,civil_penalties_revenue)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/revenue/transform-civil-penalties.js -r tsv $^ > $$tmp && \

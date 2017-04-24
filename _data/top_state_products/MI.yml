@@ -6,3 +6,11 @@ all_production:
       value: 1103110.61
       rank: 5
       percent: 5.05
+revenue:
+  '2016':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 54229
+      rank: 2
+      percent: 0.7

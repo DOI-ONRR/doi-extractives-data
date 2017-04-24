@@ -875,7 +875,7 @@ AZ:
         percent: 0
       '2016':
         revenue: 13320
-        rank: 34
+        rank: 33
         percent: 0
     Geothermal:
       '2006':
@@ -1169,7 +1169,7 @@ CA:
         percent: 0
       '2016':
         revenue: 42
-        rank: 8
+        rank: 7
         percent: 0
     NGL:
       '2006':
@@ -1851,7 +1851,7 @@ FL:
         percent: 0
       '2016':
         revenue: 1078656
-        rank: 19
+        rank: 20
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -2328,7 +2328,7 @@ IN:
         percent: 0
       '2016':
         revenue: 23317
-        rank: 32
+        rank: 31
         percent: 0
     Oil:
       '2009':
@@ -3169,7 +3169,7 @@ MD:
         percent: 0
       '2016':
         revenue: 16768
-        rank: 33
+        rank: 32
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -3260,8 +3260,8 @@ MI:
         rank: 19
         percent: 0
       '2016':
-        revenue: 1047670
-        rank: 20
+        revenue: 1101899
+        rank: 19
         percent: 0
     Gas:
       '2006':
@@ -3317,6 +3317,10 @@ MI:
         revenue: 923
         rank: 7
         percent: 0
+      '2016':
+        revenue: 54229
+        rank: 2
+        percent: 0.7
     NGL:
       '2006':
         revenue: 102904
@@ -3495,10 +3499,6 @@ MN:
         revenue: 49858
         rank: 32
         percent: 0
-      '2016':
-        revenue: 54229
-        rank: 31
-        percent: 0
     Hardrock:
       '2006':
         revenue: 52755
@@ -3540,10 +3540,6 @@ MN:
         revenue: 49858
         rank: 2
         percent: 0.5
-      '2016':
-        revenue: 54229
-        rank: 2
-        percent: 0.7
 MO:
   commodities:
     All:
@@ -3891,7 +3887,7 @@ MT:
         rank: 7
         percent: 0.9
       '2016':
-        revenue: 38441743
+        revenue: 38441269
         rank: 7
         percent: 0.7
     Coal:
@@ -4026,9 +4022,9 @@ MT:
         rank: 8
         percent: 0
       '2016':
-        revenue: 97
-        rank: 7
-        percent: 0
+        revenue: -377
+        rank: 8
+        percent: null
     NGL:
       '2006':
         revenue: 422626
@@ -4277,10 +4273,6 @@ NC:
         revenue: 474
         rank: 38
         percent: 0
-      '2016':
-        revenue: -474
-        rank: 38
-        percent: null
     Hardrock:
       '2011':
         revenue: 632
@@ -4302,10 +4294,6 @@ NC:
         revenue: 474
         rank: 6
         percent: 0
-      '2016':
-        revenue: -474
-        rank: 9
-        percent: null
 ND:
   commodities:
     All:
@@ -5521,7 +5509,7 @@ NY:
         percent: 0
       '2016':
         revenue: 1425
-        rank: 37
+        rank: 36
         percent: 0
     Gas:
       '2006':
@@ -6515,7 +6503,7 @@ SC:
         percent: 0
       '2016':
         revenue: 3330
-        rank: 36
+        rank: 35
         percent: 0
     Hardrock:
       '2006':
@@ -7855,7 +7843,7 @@ WA:
         percent: 0
       '2016':
         revenue: 9633
-        rank: 35
+        rank: 34
         percent: 0
     Coal:
       '2006':

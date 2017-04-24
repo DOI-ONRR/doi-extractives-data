@@ -388,12 +388,12 @@ Fed Onshore	2006	CO	Prowers	08099	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$2,27
 Fed Onshore	2006	CO	Prowers	08099	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$2,828.12 
 Fed Onshore	2006	CO	Rio Blanco	08103	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$5,651,046.00 
 Fed Onshore	2006	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil		($5.00)
-Fed Onshore	2006	CO	Rio Blanco	08103	Other Revenues	Oil Shale	Oil  		$20,000.00 
+Fed Onshore	2006	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil  		$20,000.00 
 Fed Onshore	2006	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$55,565.87 
 Fed Onshore	2006	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		($18,031.00)
 Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
 Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil	Oil	($22.00)
-Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$15,264.00 
+Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$15,264.00 
 Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,304,004.46 
 Fed Onshore	2006	CO	Rio Blanco	08103	Rents	Sodium	Sodium		($8,224.00)
 Fed Onshore	2006	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	$833,679.88 
@@ -7265,7 +7265,7 @@ Fed Onshore	2009	CO	Prowers	08099	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$6,10
 Fed Onshore	2009	CO	Prowers	08099	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$672.70 
 Fed Onshore	2009	CO	Rio Blanco	08103	Bonus	Coal	Coal		$40,000.00 
 Fed Onshore	2009	CO	Rio Blanco	08103	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$938,726.00 
-Fed Onshore	2009	CO	Rio Blanco	08103	Other Revenues	Oil Shale	Oil  		$50,000.00 
+Fed Onshore	2009	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil  		$50,000.00 
 Fed Onshore	2009	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,956,382.02 
 Fed Onshore	2009	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		($101,590.92)
 Fed Onshore	2009	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
@@ -11766,7 +11766,7 @@ Fed Onshore	2011	CO	Rio Blanco	08103	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		$1
 Fed Onshore	2011	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$5,014,122.92 
 Fed Onshore	2011	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		$60,399.00 
 Fed Onshore	2011	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
-Fed Onshore	2011	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$1,252.00 
+Fed Onshore	2011	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$1,252.00 
 Fed Onshore	2011	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,089,860.86 
 Fed Onshore	2011	CO	Rio Blanco	08103	Rents	Sodium	Sodium		$13,051.00 
 Fed Onshore	2011	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	$8,302,700.65 
@@ -14032,7 +14032,7 @@ Fed Onshore	2012	CO	Rio Blanco	08103	Other Revenues	Coal	Coal		$175,912.57
 Fed Onshore	2012	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,403,311.26 
 Fed Onshore	2012	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		$22,695.60 
 Fed Onshore	2012	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
-Fed Onshore	2012	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$1,860.00 
+Fed Onshore	2012	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$1,860.00 
 Fed Onshore	2012	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$1,102,495.46 
 Fed Onshore	2012	CO	Rio Blanco	08103	Rents	Sodium	Sodium		$5,694.00 
 Fed Onshore	2012	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	$7,815,544.28 
@@ -15587,7 +15587,7 @@ Fed Onshore	2012	UT	Uintah	49047	Other Revenues	Gilsonite	Gilsonite		$2,308.27
 Fed Onshore	2012	UT	Uintah	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($2,092,627.61)
 Fed Onshore	2012	UT	Uintah	49047	Other Revenues	Phosphate	Phosphate		$22,422.00 
 Fed Onshore	2012	UT	Uintah	49047	Rents	Gilsonite	Gilsonite		($3,201.50)
-Fed Onshore	2012	UT	Uintah	49047	Rents	Oil Shale	Oil  		$320.00 
+Fed Onshore	2012	UT	Uintah	49047	Rents	Oil & Gas	Oil  		$320.00 
 Fed Onshore	2012	UT	Uintah	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$490,358.64 
 Fed Onshore	2012	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	($992,535.34)
 Fed Onshore	2012	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Fuel Gas	$15.83 
@@ -16250,7 +16250,7 @@ Fed Onshore	2013	CO	Rio Blanco	08103	Other Revenues	Coal	Coal		($20,836.79)
 Fed Onshore	2013	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$940,219.51 
 Fed Onshore	2013	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		$29,319.00 
 Fed Onshore	2013	CO	Rio Blanco	08103	Rents	Coal	Coal		$14,200.70 
-Fed Onshore	2013	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$1,556.00 
+Fed Onshore	2013	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$1,556.00 
 Fed Onshore	2013	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$961,389.73 
 Fed Onshore	2013	CO	Rio Blanco	08103	Rents	Sodium	Sodium		($11,841.00)
 Fed Onshore	2013	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	($1,184,729.41)
@@ -17804,7 +17804,7 @@ Fed Onshore	2013	UT	Uintah	49047	Other Revenues	Gilsonite	Gilsonite		$5,391.00
 Fed Onshore	2013	UT	Uintah	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$2,127,927.89 
 Fed Onshore	2013	UT	Uintah	49047	Other Revenues	Phosphate	Phosphate		$21,840.00 
 Fed Onshore	2013	UT	Uintah	49047	Rents	Gilsonite	Gilsonite		$1,826.50 
-Fed Onshore	2013	UT	Uintah	49047	Rents	Oil Shale	Oil  		$320.00 
+Fed Onshore	2013	UT	Uintah	49047	Rents	Oil & Gas	Oil  		$320.00 
 Fed Onshore	2013	UT	Uintah	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$383,732.79 
 Fed Onshore	2013	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Fuel Gas	$1,498.21 
 Fed Onshore	2013	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Coal Bed Methane	$43,971.58 
@@ -18464,7 +18464,7 @@ Fed Onshore	2014	CO	Rio Blanco	08103	Other Revenues	Coal	Coal		$31,162.58
 Fed Onshore	2014	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$386,841.56 
 Fed Onshore	2014	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		$67,608.56 
 Fed Onshore	2014	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
-Fed Onshore	2014	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$1,556.00 
+Fed Onshore	2014	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$1,556.00 
 Fed Onshore	2014	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$829,752.52 
 Fed Onshore	2014	CO	Rio Blanco	08103	Rents	Sodium	Sodium		$1,476.00 
 Fed Onshore	2014	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	$6,136,628.60 
@@ -20041,7 +20041,7 @@ Fed Onshore	2014	UT	Uintah	49047	Other Revenues	Gilsonite	Gilsonite		$5,480.29
 Fed Onshore	2014	UT	Uintah	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$463,446.62 
 Fed Onshore	2014	UT	Uintah	49047	Other Revenues	Phosphate	Phosphate		$23,284.84 
 Fed Onshore	2014	UT	Uintah	49047	Rents	Gilsonite	Gilsonite		($1,315.50)
-Fed Onshore	2014	UT	Uintah	49047	Rents	Oil Shale	Oil  		$320.00 
+Fed Onshore	2014	UT	Uintah	49047	Rents	Oil & Gas	Oil  		$320.00 
 Fed Onshore	2014	UT	Uintah	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$305,073.29 
 Fed Onshore	2014	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Fuel Gas	$338,480.47 
 Fed Onshore	2014	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$1,654,442.38 
@@ -20695,7 +20695,7 @@ Fed Onshore	2015	CO	Rio Blanco	08103	Other Revenues	Coal	Coal		$46,703.59
 Fed Onshore	2015	CO	Rio Blanco	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($1,854,675.66)
 Fed Onshore	2015	CO	Rio Blanco	08103	Other Revenues	Sodium	Sodium		$51,775.87 
 Fed Onshore	2015	CO	Rio Blanco	08103	Rents	Coal	Coal		$5,685.00 
-Fed Onshore	2015	CO	Rio Blanco	08103	Rents	Oil Shale	Oil  		$664.00 
+Fed Onshore	2015	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil  		$664.00 
 Fed Onshore	2015	CO	Rio Blanco	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$797,613.50 
 Fed Onshore	2015	CO	Rio Blanco	08103	Rents	Sodium	Sodium		($6,904.00)
 Fed Onshore	2015	CO	Rio Blanco	08103	Royalties	Coal	Coal	Coal	$8,294,840.95 
@@ -22231,7 +22231,7 @@ Fed Onshore	2015	UT	Uintah	49047	Other Revenues	Gilsonite	Gilsonite		$4,867.94
 Fed Onshore	2015	UT	Uintah	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		($4,269,393.71)
 Fed Onshore	2015	UT	Uintah	49047	Other Revenues	Phosphate	Phosphate		$21,840.00 
 Fed Onshore	2015	UT	Uintah	49047	Rents	Gilsonite	Gilsonite		($1,943.50)
-Fed Onshore	2015	UT	Uintah	49047	Rents	Oil Shale	Oil  		$320.00 
+Fed Onshore	2015	UT	Uintah	49047	Rents	Oil & Gas	Oil  		$320.00 
 Fed Onshore	2015	UT	Uintah	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$276,029.50 
 Fed Onshore	2015	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$996,546.66 
 Fed Onshore	2015	UT	Uintah	49047	Royalties	Oil & Gas	Gas	Fuel Gas	$1,171,574.80 
@@ -22877,7 +22877,7 @@ Fed Onshore	2016	CO	Rio Blanco 	08103	Bonus	Coal	Coal		$1,149,822
 Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Sodium	Sodium		$40,317
 Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Coal	Coal		$58,129
 Fed Onshore	2016	CO	Rio Blanco 	08103	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$1,426,927
-Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil Shale	Oil  		$932
+Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil & Gas	Oil  		$932
 Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Coal	Coal		$5,685
 Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Sodium	Sodium		$13,326
 Fed Onshore	2016	CO	Rio Blanco 	08103	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$558,181
@@ -23265,13 +23265,13 @@ Fed Onshore	2016	MI	Roscommon 	26143	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$8
 Fed Onshore	2016	MI	Roscommon 	26143	Royalties	Oil & Gas	Oil	Oil	$13,108
 Fed Onshore	2016	MI	Roscommon 	26143	Royalties	Oil & Gas	Gas	Processed (Residue) Gas	$6,809
 Fed Onshore	2016	MI	Wexford 	26165	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$445
-Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Hardrock	Hardrock		$22,550
-Fed Onshore	2016	MN	Jackson 	26075	Other Revenues	Copper	Hardrock		$25,655
-Fed Onshore	2016	MN	Jackson 	26075	Rents	Copper	Hardrock		$2,565
-Fed Onshore	2016	MN	Jackson 	26075	Rents	Hardrock	Hardrock		$2,938
-Fed Onshore	2016	MN	Kalkaska 	26079	Rents	Hardrock	Hardrock		$20
-Fed Onshore	2016	MN	Otsego 	26137	Other Revenues	Copper	Hardrock		$455
-Fed Onshore	2016	MN	Otsego 	26137	Rents	Copper	Hardrock		$46
+Fed Onshore	2016	MI	Jackson 	26075	Other Revenues	Hardrock	Hardrock		$22,550
+Fed Onshore	2016	MI	Jackson 	26075	Other Revenues	Copper	Hardrock		$25,655
+Fed Onshore	2016	MI	Jackson 	26075	Rents	Copper	Hardrock		$2,565
+Fed Onshore	2016	MI	Jackson 	26075	Rents	Hardrock	Hardrock		$2,938
+Fed Onshore	2016	MI	Kalkaska 	26079	Rents	Hardrock	Hardrock		$20
+Fed Onshore	2016	MI	Otsego 	26137	Other Revenues	Copper	Hardrock		$455
+Fed Onshore	2016	MI	Otsego 	26137	Rents	Copper	Hardrock		$46
 Fed Onshore	2016	MO	Crawford 	29055	Other Revenues	Hardrock	Hardrock		$4,341
 Fed Onshore	2016	MO	Crawford 	29055	Rents	Hardrock	Hardrock		$1,565
 Fed Onshore	2016	MO	Crawford 	29055	Royalties	Hardrock	Hardrock	Copper Concentrate	$6,344
@@ -23497,7 +23497,7 @@ Fed Onshore	2016	MT	Wibaux 	30109	Royalties	Oil & Gas	Oil	Oil	$914,613
 Fed Onshore	2016	MT	Wibaux 	30109	Royalties	Oil & Gas	Gas	Unprocessed (Wet) Gas	$23,151
 Fed Onshore	2016	MT	Yellowstone 	30111	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		$200
 Fed Onshore	2016	MT	Yellowstone 	30111	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$245
-Fed Onshore	2016	NC	Jefferson 	30043	Other Revenues	Hardrock	Hardrock		-$474
+Fed Onshore	2016	MT	Jefferson 	30043	Other Revenues	Hardrock	Hardrock		-$474
 Fed Onshore	2016	ND	Billings 	38007	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$588,215
 Fed Onshore	2016	ND	Billings 	38007	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$76,063
 Fed Onshore	2016	ND	Billings 	38007	Royalties	Oil & Gas	Oil	Condensate	$835
@@ -24390,7 +24390,7 @@ Fed Onshore	2016	UT	Uintah 	49047	Bonus	Oil & Gas	Oil & Gas (Non-Royalty)		-$56,
 Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Oil & Gas	Oil & Gas (Non-Royalty)		-$2,444,749
 Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Gilsonite	Gilsonite		$5,658
 Fed Onshore	2016	UT	Uintah 	49047	Other Revenues	Phosphate	Phosphate		$21,840
-Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil Shale	Oil  		$320
+Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil & Gas	Oil  		$320
 Fed Onshore	2016	UT	Uintah 	49047	Rents	Gilsonite	Gilsonite		$1,309
 Fed Onshore	2016	UT	Uintah 	49047	Rents	Oil & Gas	Oil & Gas (Non-Royalty)		$203,237
 Fed Onshore	2016	UT	Uintah 	49047	Royalties	Oil & Gas	Oil	Condensate	$4,987,331

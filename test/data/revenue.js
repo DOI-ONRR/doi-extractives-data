@@ -52,9 +52,12 @@ describe('revenues by type', function() {
           assert.ok(false, 'no data for: ' + JSON.stringify(d));
         }
         var difference = expected - actual;
+
+        console.warn(d.St, d.Total)
+        var values = [d.St, d.Commodity.trim(), d['Revenue Type'], d.CY]. join(' | ');
         assert.ok(
           Math.abs(difference) <= 1,
-          (actual + ' != ' + expected + ' @ ' + (i + 1))
+          (actual + ' != ' + expected + ' @ ' + (i + 1) + " for " + values)
         );
       };
 

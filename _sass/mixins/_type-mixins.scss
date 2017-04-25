@@ -46,7 +46,7 @@
 
   @if $level == h5 {
     // bold 18/27
-    color: $gray-darkest
+    color: $gray-darkest;
     font-size: 1.125rem; // 18px
     font-weight: $weight-bold;
     line-height: 1.625rem; // 27px

@@ -167,9 +167,9 @@ nav_items:
       {% unless page.offshore == true %}
       <section id="economic-impact">
         <h2>Economic impact</h2>
-        
+
         <p>USEITI economic impact data covers {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} and two different types of jobs data.</p>
-        
+
         <p>To learn more about direct energy employment across all sectors of the U.S. economy, another useful resource is <a href="https://www.energy.gov/jobstrategycouncil/downloads/2017-us-energy-employment-report">2017 U.S. Energy and Employment Report</a> from the Department of Energy. This report has a separate <a href="https://www.energy.gov/sites/prod/files/2017/01/f34/us-energy-jobs-states-2017.pdf">state-by-state analysis of energy employment</a>.</p>
         {% if page.state_impact %}
         {{ page.state_impact | liquify | markdownify }}
@@ -218,6 +218,22 @@ nav_items:
       <nav>
         {% include case-studies/_nav-list.html %}
       </nav>
+      <div class="filters-wrapper" data-toggler="filters" aria-expanded="false">
+        <button class="toggle-filters" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+        <form id="filters" aria-hidden="true" class="filters">
+            <h5>Filter commodities</h5>
+          <div class="container-right-2" style="margin-right: 0;">
+            <div id="type-filter" class="filter">
+              <select id="unit-filter" name="unit">
+                <option value="">Coal + such</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
     </div>
   </section>
 

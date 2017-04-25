@@ -290,12 +290,12 @@ revenue:
     - product: NGL
       name: null
       units: null
-      value: 6887105
+      value: 6887105.31
       rank: 4
       percent: 3.9
     - product: CO2
       name: null
       units: null
-      value: 1315
+      value: 1314.73
       rank: 5
       percent: 0

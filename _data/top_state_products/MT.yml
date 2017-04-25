@@ -355,7 +355,7 @@ revenue:
     - product: Coal
       name: null
       units: null
-      value: 29513723
+      value: 29513723.27
       rank: 4
       percent: 3.6
     - product: Phosphate
@@ -367,6 +367,6 @@ revenue:
     - product: Sulfur
       name: null
       units: null
-      value: 871
+      value: 870.92
       rank: 3
       percent: 0.4

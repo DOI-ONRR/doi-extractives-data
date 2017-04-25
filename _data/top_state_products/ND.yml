@@ -374,18 +374,18 @@ revenue:
     - product: All
       name: null
       units: null
-      value: 112790636
+      value: 112790632.96
       rank: 5
       percent: 2.1
     - product: Oil
       name: null
       units: null
-      value: 100401591
+      value: 100401589.62
       rank: 3
       percent: 3.4
     - product: Gas
       name: null
       units: null
-      value: 8387223
+      value: 8387222.41
       rank: 5
       percent: 1.1

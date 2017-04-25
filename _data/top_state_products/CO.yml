@@ -630,54 +630,54 @@ revenue:
     - product: All
       name: null
       units: null
-      value: 199115736
+      value: 199115728.71
       rank: 3
       percent: 3.7
     - product: Gas
       name: null
       units: null
-      value: 63008751
+      value: 63008750.23
       rank: 3
       percent: 8.1
     - product: CO2
       name: null
       units: null
-      value: 44342735
+      value: 44342735.48
       rank: 1
       percent: 90.1
     - product: Coal
       name: null
       units: null
-      value: 36827806
+      value: 36827805.68
       rank: 3
       percent: 4.4
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 18368684
+      value: 18368681.73
       rank: 3
       percent: 4.6
     - product: NGL
       name: null
       units: null
-      value: 10835983
+      value: 10835982.22
       rank: 3
       percent: 6.2
     - product: Sodium
       name: null
       units: null
-      value: 2109750
+      value: 2109749.99
       rank: 3
       percent: 4.5
     - product: Potassium
       name: null
       units: null
-      value: 4361
+      value: 4360.5
       rank: 4
       percent: 0
     - product: Helium
       name: null
       units: null
-      value: 61
+      value: 60.89
       rank: 2
       percent: 8.4

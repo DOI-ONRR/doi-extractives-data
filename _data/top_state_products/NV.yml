@@ -401,18 +401,18 @@ revenue:
     - product: Geothermal
       name: null
       units: null
-      value: 4576032
+      value: 4576034.8
       rank: 2
       percent: 34.3
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 1633896
+      value: 1633895.52
       rank: 5
       percent: 0.4
     - product: Potassium
       name: null
       units: null
-      value: 11662
+      value: 11661.83
       rank: 3
       percent: 0.1

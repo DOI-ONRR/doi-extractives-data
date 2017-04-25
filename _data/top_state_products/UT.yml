@@ -1169,55 +1169,55 @@ revenue:
     - product: All
       name: null
       units: null
-      value: 127884820
+      value: 127884819.31
       rank: 4
       percent: 2.4
     - product: Gas
       name: null
       units: null
-      value: 42293219
+      value: 42293218.8
       rank: 4
       percent: 5.5
     - product: Oil
       name: null
       units: null
-      value: 39338518
+      value: 39338518.58
       rank: 5
       percent: 1.3
     - product: Coal
       name: null
       units: null
-      value: 39180793
+      value: 39180792.05
       rank: 2
       percent: 4.7
     - product: NGL
       name: null
       units: null
-      value: 4988578
+      value: 4988579.26
       rank: 5
       percent: 2.8
     - product: Gilsonite
       name: null
       units: null
-      value: 1424528
+      value: 1424527.95
       rank: 1
       percent: 100
     - product: Potassium
       name: null
       units: null
-      value: 549283
+      value: 549283.04
       rank: 2
       percent: 5.1
     - product: Geothermal
       name: null
       units: null
-      value: 445445
+      value: 445444.93
       rank: 3
       percent: 3.3
     - product: CO2
       name: null
       units: null
-      value: 109049
+      value: 109048.69
       rank: 4
       percent: 0.2
     - product: Phosphate
@@ -1229,7 +1229,7 @@ revenue:
     - product: Clay
       name: null
       units: null
-      value: 9394
+      value: 9394.39
       rank: 1
       percent: 100
     - product: Gold
@@ -1241,6 +1241,6 @@ revenue:
     - product: Sodium
       name: null
       units: null
-      value: 2487
+      value: 2486.61
       rank: 5
       percent: 0

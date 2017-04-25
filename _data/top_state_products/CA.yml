@@ -1037,18 +1037,18 @@ revenue:
     - product: Oil
       name: null
       units: null
-      value: 44023454
+      value: 44023454.1
       rank: 4
       percent: 1.5
     - product: Sodium
       name: null
       units: null
-      value: 9920172
+      value: 9920174.96
       rank: 2
       percent: 21.4
     - product: Geothermal
       name: null
       units: null
-      value: 7897405
+      value: 7897405.81
       rank: 1
       percent: 59.1

@@ -140,6 +140,14 @@ module EITI
       end
     end
 
+    def zip(keys, values)
+      keys.zip(values)
+    end
+
+    def compact(value)
+      binding.pry
+    end
+
   end
 end
 

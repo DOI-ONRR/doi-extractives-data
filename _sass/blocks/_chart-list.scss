@@ -101,22 +101,26 @@
 
     @include respond-to(small-down) {
       @include omega();
+      display: flex;
     }
 
     @include respond-to(small-up) {
       @include span-columns(4);
+      display: flex;
     }
 
     @include respond-to(medium-up) {
       @include span-columns(6);
+      display: flex;
     }
 
     @include respond-to(large-up) {
       @include span-columns(4);
+      display: flex;
     }
 
     border-top: none;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     margin-top: 0;
     padding-top: 0;
@@ -247,13 +251,23 @@
 
   .chart-selector {
     @include chart-selector(left);
+
+    &[aria-hidden=true] {
+      display: none;
+    }
+  }
+
+  .chart-selector[aria-hidden=true] + .chart-description {
+    border: 0;
+    padding-left: 0;
+    width: 100%;
   }
 
   .chart-description {
     border-left: 1px solid $mid-gray;
     float: left;
     margin-bottom: 0;
-    padding-left: 1.25rem;
+    padding-left: $standard-padding;
     width: 75%;
 
     &.no-selector {

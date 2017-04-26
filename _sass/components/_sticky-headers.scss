@@ -41,5 +41,9 @@
     @include respond-to(small-down) {
       visibility: visible;
     }
+
+    &[aria-hidden=true] {
+      display: none;
+    }
   }
 }

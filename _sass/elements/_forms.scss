@@ -102,25 +102,24 @@ input[type='file'] {
 select {
   @include appearance(none);
 
-  background-color: $white;
+  background-color: $gray-lighter;
   background-image: url('../img/icons/chevron-down-sprite.svg');
   background-position: 95% 8%;
   background-repeat: no-repeat;
   background-size: 1.5rem;
-  border: 1px solid $form-border-color;
+  border: 0;
   border-radius: $form-border-radius;
   color: $dark-gray;
   font-weight: $weight-light;
   height: 40px;
   margin-bottom: 1em;
   overflow: hidden;
-  padding: 0.5em 12% 0.5em 0.8rem;
+  padding: 0.5em 14% 0.5em 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
 
   &:focus {
-    border: 1px solid $white;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }

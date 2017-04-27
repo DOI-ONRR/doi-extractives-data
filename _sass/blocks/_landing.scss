@@ -12,30 +12,31 @@
 
   section + section,
   section:first-of-type {
-    padding-top: 6rem;
+    padding-top: $standard-padding-separation;
   }
 
   h3,
   h4 {
     font-size: 1rem;
     font-weight: $weight-bold;
-    margin-bottom: 0;
+    line-height: 1.375rem;
+    margin-bottom: 0.25rem;
   }
 
   h4,
   .h3 {
-    padding-top: 2rem - 0.75rem;
+    padding-top: $standard-padding-large;
   }
 
   .h2-bar {
     margin-bottom: 0;
 
     + .landing-section {
-      padding-top: 2rem;
+      padding-top: 1rem;
     }
 
     + .h3-bar {
-      padding-top: 4rem;
+      padding-top: 3rem;
     }
   }
 

@@ -25,7 +25,7 @@ permalink: /how-it-works/
 
 <section class="container-page-wrapper landing-wrapper">
 
-  <article class="container-left-9">
+  <article class="container-left-8">
 
     <section class="container">
       <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>

@@ -93,7 +93,7 @@ $cobalt: #1075a5;
 
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $black-light;
 $base-accent-color: $mid-blue;
 
 // Padding
@@ -107,6 +107,7 @@ $base-padding-jumbo: 3.8em; //60.8px
 
 // Padding on rem scale
 $standard-padding: 1.25rem;
+$standard-padding-standard: 1rem;
 $standard-padding-lite: $standard-padding / 3;
 $standard-padding-small: 0.7rem; //11.2px Reduced from .9em
 $standard-padding-large: 1.875rem; //30px

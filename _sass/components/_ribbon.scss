@@ -10,7 +10,7 @@
 //       <p class="ribbon-hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
 //       <p class="ribbon-hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
 //     </div>
-//     <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
+//     <div class="container-right-4 ribbon-card-column ribbon-card">
 //       <figure class="ribbon-card-top">
 //         <a href="{{site.baseurl}}/explore/#revenue/">
 //           <img class="ribbon-card-image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
@@ -40,32 +40,6 @@
       border-bottom: 4px solid $white;
     }
   }
-
-  &.ribbon-card-has-image {
-
-    @include respond-to(tiny-down) {
-      padding-top: $base-padding-large;
-    }
-
-    .ribbon-card-top {
-      margin: 0;
-      padding-top: 0;
-
-      .ribbon-card-image {
-        background-color: $gray-pale;
-        border: 0;
-        padding-left: 20%;
-        padding-right: 20%;
-        width: 100%;
-      }
-    }
-  }
-
-  &.ribbon-card-no-margin {
-    .ribbon-card-top {
-      margin: 0;
-    }
-  }
 }
 
 .ribbon-card,
@@ -80,7 +54,7 @@
   padding-left: $base-padding;
   padding-right: $base-padding;
   padding-top: 0;
-  text-align: center;
+  text-align: left;
 
   &.ribbon-card-top-text {
     display: flex;
@@ -113,13 +87,14 @@
     }
 
     h2 {
-      align-self: center;
+      align-self: flex-start;
+      text-align: left;
     }
   }
 }
 
 .ribbon-card-top-text-header {
-  @include heading(para-md);
+  @include heading(para-lg);
   font-weight: $weight-bold;
   line-height: 1.3;
   margin-bottom: 0;
@@ -127,24 +102,15 @@
   text-align: left;
 }
 
-.ribbon-card-top-text-header-padded {
-  margin-bottom: $base-padding;
-}
-
 .ribbon-card-top-text-header-sub {
-  @include heading(para-md);
+  @include heading('para-lg');
 }
 
 .ribbon-card-top-list {
-  @include heading(para-md);
+  @include heading('para-md');
   margin-bottom: 1.25rem;
   padding-bottom: $base-padding-lite;
   text-align: left;
-
-  li {
-    line-height: 1.2;
-    padding-bottom: $base-padding-lite;
-  }
 }
 
 .ribbon-card-bottom {
@@ -208,11 +174,10 @@
     padding-bottom: $base-padding-large;
     padding-left: $base-padding;
     padding-right: $base-padding;
-    padding-top: $base-padding-large;
+    padding-top: $base-padding-extra;
 
     &.ribbon-hero-home {
       padding-bottom: $base-padding-jumbo;
-      padding-top: $base-padding-extra;
     }
 
     &.ribbon-hero-column {
@@ -298,15 +263,6 @@ svg {
     &.ribbon-card-column {
       .ribbon-card-top {
         padding-top: $base-padding-large;
-      }
-    }
-
-    &.ribbon-card-has-image {
-      .ribbon-card-top {
-        .ribbon-card-image {
-          padding-left: 30%;
-          padding-right: 30%;
-        }
       }
     }
   }
@@ -433,14 +389,6 @@ svg {
       }
     }
 
-    &.ribbon-card-has-image {
-      .ribbon-card-top {
-        .ribbon-card-image {
-          padding-left: 5%;
-          padding-right: 5%;
-        }
-      }
-    }
   }
 }
 
@@ -448,13 +396,5 @@ svg {
   .container-page-wrapper.ribbon {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.ribbon-card-case_studies {
-  text-align: left;
-
-  p {
-    @include heading('para-md');
   }
 }

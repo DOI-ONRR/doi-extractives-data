@@ -6,14 +6,15 @@
 
     p {
       @include heading('para-xl');
+      margin-top: 2.25rem;
     }
   }
-  
+
   h3 {
     font-size: 1rem;
     margin-bottom: 0;
   }
-  
+
   p + h2 {
     margin-top: $base-padding-large - 0.75em;
   }

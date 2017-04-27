@@ -11,9 +11,9 @@ permalink: /how-it-works/
       <p class="ribbon-hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
       <p class="ribbon-hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#state-tribal">state and tribal lands</a> are managed, and what <a href="#laws">laws and governance</a> relate to the industry.</p>
     </div>
-    <div class="container-right-4 ribbon-card-column ribbon-card-has-image ribbon-card">
+    <div class="container-right-4 ribbon-card-column ribbon-card">
       <div class="ribbon-card-top ribbon-card-top-text">
-        <h2 class="ribbon-card-top-text-header ribbon-card-top-text-header-padded">The U.S. ranks at or near the top worldwide in the production of many natural resources.</h2>
+        <h2 class="ribbon-card-top-text-header">The U.S. ranks at or near the top worldwide in the production of many natural resources.</h2>
         {% include svg/how-it-works-ribbon-graphic.svg %}
       </div>
       <div class="ribbon-card-bottom">

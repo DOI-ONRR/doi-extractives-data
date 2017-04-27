@@ -243,6 +243,12 @@
   }
 }
 
+.container-shift-reverse-2 {
+  @include respond-to(medium-up) {
+    @include shift(1);
+  }
+}
+
 .container-padded {
   padding-bottom: $base-padding-extra;
   padding-top: $base-padding-extra;

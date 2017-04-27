@@ -35,6 +35,11 @@
       padding-top: 1rem;
     }
 
+    + .h3-bar {
+      padding-top: 3rem;
+    }
+  }
+
   .h3-bar {
     @include heading('h5');
   }

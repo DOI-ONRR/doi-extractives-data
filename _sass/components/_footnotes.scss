@@ -31,7 +31,7 @@ body {
   ol {
     @include heading('para-sm');
 
-    font-weight: 400;
+    font-weight: $weight-book;
     list-style-type: decimal;
     padding-left: $base-padding;
 
@@ -41,9 +41,7 @@ body {
   }
 
   p {
-    @include heading('para-med');
-    line-height: 1.375;
-    margin-bottom: $base-padding-lite;
+    @include heading('para-md');
   }
 
   li {

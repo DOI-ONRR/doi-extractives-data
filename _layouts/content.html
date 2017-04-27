@@ -4,7 +4,7 @@ layout: default
 
 <section class="layout-content container-page-wrapper container-margin">
 
-  <article class="container-left-7">
+  <article class="{% if page.resource %}container-left-7 container-shift-reverse-1{% else %}container-left-7 container-shift-reverse-2{% endif %}">
 
     {% if page.resource == 'oil' %}
       <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
@@ -57,7 +57,7 @@ layout: default
   </article>
 
   {% if page.selector %}
-    <div class="{% unless page.resource %} sticky sticky_nav {% endunless %} {% if page.resource %} sticky-sibling {% endif %}container-right-5">
+    <div class="{% unless page.resource %} sticky sticky_nav {% endunless %} {% if page.resource %} sticky-sibling {% endif %}{% if page.resource %}container-right-4{% else %}container-right-3{% endif %}">
 
       {% if page.resource %}
 

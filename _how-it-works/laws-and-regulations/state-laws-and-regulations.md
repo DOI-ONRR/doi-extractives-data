@@ -38,7 +38,9 @@ selector: list
 While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests.
 
 ### Map of 18 MSG Prioritized States for the 2015 USEITI Report
-
+<div is="eiti-tooltip-wrapper"
+       tooltip-style="subtle"
+       cursor-offset="10">
 <eiti-map is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
   simplify="1e-2"
   projection="albersCustom"
@@ -53,6 +55,7 @@ While all 50 states have some natural resource extraction activity, the 2015 USE
       class="case_studies-selected_counties"></g>
   </svg>
 </eiti-map>
+</div>
 
 See [State Legal and Fiscal Information]({{site.baseurl}}/how-it-works/state-legal-fiscal-info/) for more details about the individual states’ laws and statutes.
 

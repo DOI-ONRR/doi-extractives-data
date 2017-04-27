@@ -144,10 +144,6 @@ module EITI
       keys.zip(values)
     end
 
-    def compact(value)
-      binding.pry
-    end
-
   end
 end
 

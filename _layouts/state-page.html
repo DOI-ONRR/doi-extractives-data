@@ -229,14 +229,14 @@ nav_items:
   </section>
 
 <section class="filter-form sticky" style="background: white; z-index: 99999; position: fixed; top: 0;">
-      {% assign filterable_fields = filterable_slugs | zip: filterable_names %}
+      {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
 
       <form>
         <formgroup>
           <!-- <label for='all-production'>All lands production</label>
           <input class="filter-input" type="checkbox" checked name="all-production"> -->
           {% for field in filterable_fields %}
-            <label for='{{ field[0] }}'>{{ field[1] }}</label>
+            <label for="{{ field[0] }}">{{ field[1] }}</label>
             <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
           {% endfor %}
         </formgroup>

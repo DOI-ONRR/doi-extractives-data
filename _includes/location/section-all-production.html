@@ -43,9 +43,11 @@
         {% assign term_units = units_map[units].term | default: long_units %}
         {% assign units_suffix = units_map[units].suffix | default: '' %}
 
-        {% assign filterable_slugs = filterable_slugs | push: product_slug %}
-        {% assign filterable_names = filterable_names | push: product_name %}
-      <section id="state-all-production-{{ product_slug }}" class="chart-item" filter-item="{{ product_slug }}">
+        {% assign standardized_product_name = site.data.standardized_commodities[product_name] %}
+        {% assign slugified_product_name = standardized_product_name | slugify %}
+        {% assign filterable_slugs = filterable_slugs | push: slugified_product_name %}
+        {% assign filterable_names = filterable_names | push: standardized_product_name %}
+      <section id="state-all-production-{{ product_slug }}" class="chart-item" filter-item="{{ slugified_product_name }}">
 
         {% assign chart_toggle = 'state-all-production-figures-chart-{{ product_slug }}' | liquify %}
         {% assign production_data = production_values | map_hash: "volume" %}

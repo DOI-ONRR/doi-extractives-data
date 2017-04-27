@@ -67,7 +67,7 @@
         {% assign units_suffix = units_map[units].suffix | default: '' %}
         {% assign units_title = units_map[units].title %}
 
-        {% assign standardized_product_name = site.data.standardized_commodities[product_name] | product_name %}
+        {% assign standardized_product_name = site.data.standardized_commodities[product_name] | default: product_name %}
         {% assign slugified_product_name = standardized_product_name | slugify %}
         {% assign filterable_slugs = filterable_slugs | push: slugified_product_name %}
         {% assign filterable_names = filterable_names | push: standardized_product_name %}

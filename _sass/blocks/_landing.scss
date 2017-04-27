@@ -12,7 +12,7 @@
 
   section + section,
   section:first-of-type {
-    padding-top: 6rem;
+    padding-top: $standard-padding-separation;
   }
 
   h3,
@@ -25,20 +25,15 @@
 
   h4,
   .h3 {
-    padding-top: 2rem - 0.5rem;
+    padding-top: $standard-padding-large;
   }
 
   .h2-bar {
     margin-bottom: 0;
 
     + .landing-section {
-      padding-top: 2rem;
+      padding-top: 1rem;
     }
-
-    + .h3-bar {
-      padding-top: 3rem;
-    }
-  }
 
   .h3-bar {
     @include heading('h5');

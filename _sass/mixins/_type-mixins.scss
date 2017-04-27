@@ -78,6 +78,13 @@
     text-transform: uppercase;
   }
 
+  @if $level == 'para-md' {
+    // light 16/22 (10px bottom margin)
+    font-weight: $weight-light;
+    line-height: $base-line-height; // 22px
+    margin-bottom: 0.625rem; // 10px
+  }
+
   @if $level == 'para-sm' {
     // light 13/19 (10px bottom margin)
     font-size: 0.8125rem; // 13px

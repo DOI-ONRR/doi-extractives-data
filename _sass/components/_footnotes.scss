@@ -41,7 +41,7 @@ body {
   }
 
   p {
-    @include heading('para-md');
+    @include heading('para-med');
     line-height: 1.375;
     margin-bottom: $base-padding-lite;
   }

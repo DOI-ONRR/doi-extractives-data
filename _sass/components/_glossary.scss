@@ -44,7 +44,7 @@ $term-width-max: 220px;
   @include respond-to(tiny-up) {
     width: $term-width;
 
-  @include heading(para-md);
+  @include heading('para-md');
   font-weight: 700;
   }
 }
@@ -53,7 +53,7 @@ $term-width-max: 220px;
   margin-bottom: $base-padding-lite;
   padding-bottom: $base-padding;
 
-  @include heading(para-md);
+  @include heading('para-md');
   font-weight: 400;
 }
 

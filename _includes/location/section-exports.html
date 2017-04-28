@@ -10,32 +10,37 @@
 
 <section id="exports" is="year-switcher-section" class="economic exports">
 
-  {%
-    include sticky-header.html
-    header_text='Exports'
-    year_range=year_range
-    selector=true
-  %}
+  {% assign empty_years = '' | split: '' %}
+  {% if export_commodities %}
+    {% for _year in year_list %}
+      {% assign _year_string = _year | to_s %}
+      {% unless export_commodities.Total[_year_string] > 0 %}
+        {% assign empty_years = empty_years | push: _year_string %}
+      {% endunless %}
+    {% endfor %}
+    {%
+      include sticky-header.html
+      header_text='Exports'
+      year_range=year_range
+      selector=true
+      empty_years=empty_years
+    %}
+  {% endif %}
+
+
 
   <div class="chart-list">
 
     <div class="chart-selector-wrapper">
-      {% assign empty_years = '' | split: '' %}
-      {% if export_commodities %}
-        {% for _year in year_list %}
-          {% assign _year_string = _year | to_s %}
-          {% unless export_commodities.Total[_year_string] > 0 %}
-            {% assign empty_years = empty_years | push: _year_string %}
-          {% endunless %}
-        {% endfor %}
-        {% include year-selector.html year_range=year_range empty_years=empty_years %}
-      {% endif %}
+    {% if export_commodities %}
+      {% include year-selector.html year_range=year_range empty_years=empty_years %}
+    {% endif %}
 
-      {% if empty_years.size == year_range.size %}
-        {% assign has_exports = true %}
-      {% else %}
-        {% assign has_exports = false %}
-      {% endif %}
+    {% if empty_years.size == year_range.size %}
+      {% assign has_exports = true %}
+    {% else %}
+      {% assign has_exports = false %}
+    {% endif %}
 
       <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
         The U.S. Census Bureau collects information about the top 25 exports in each state.

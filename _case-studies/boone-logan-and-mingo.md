@@ -35,10 +35,6 @@ selector: list
 >
 > One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, which supplies the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.1 billion {{ "tons" | term_end:"ton" }}.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Coal has driven economic development across Boone, Logan, and Mingo counties for many decades. In 1742, Explorer John Peter Salley first discovered bituminous coal in what would later become Boone County. Although forest extraction was the first major industry in the region, large-scale coal mining began in Boone County in the 1880s. The arrival of the Norfolk & Western Railroad in the 1890s and the Chesapeake & Ohio Railroad soon thereafter launched a coal extraction boom in all three counties. The early decades of the twentieth century marked a period of frenzied development in these counties. In the decades that followed, coal continued to drive the counties’ economies, but population numbers declined as mechanization and a shift to greater surface mining reduced the need for labor.[^3]

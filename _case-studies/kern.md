@@ -31,10 +31,6 @@ selector: list
 
 > Kern County is situated in the southernmost region of the San Joaquin Valley, in California’s interior. While Kern County has significant deposits of many resources — including natural gas, geothermal steam, wind, gold, and other minerals — oil in particular has shaped Kern County’s local economy for over a century.
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Companies began extracting oil at a commercial level in California in the 1850s, inspired by the oil rush in Pennsylvania and a growing market for oil-fueled lighting. In the 1860s, production began in Kern County, where extractors dug holes into oil seeps to remove the fuel. Near the turn of the century, extraction in the county shifted toward commercial drilling, in part because of the 1890 discovery of the Midway-Sunset field, which is still the largest-producing oil field in California today.[^1]

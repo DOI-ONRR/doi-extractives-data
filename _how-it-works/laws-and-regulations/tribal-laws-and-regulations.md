@@ -24,7 +24,7 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Tribal laws and regulations
-selector: hash
+selector: list
 revenue_types:
   Bonus: Bonus
   Rents: Rents

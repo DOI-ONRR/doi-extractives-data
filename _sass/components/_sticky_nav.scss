@@ -1,5 +1,4 @@
 .sticky_nav {
-  padding-left: $standard-padding-large;
   padding-top: $standard-padding-large;
   top: 0;
 
@@ -16,6 +15,8 @@
   }
 
   ul {
+    padding-left: 0;
+
     a {
       text-decoration: none;
 

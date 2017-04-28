@@ -18,6 +18,15 @@
   p + h2 {
     margin-top: $base-padding-large - 0.75em;
   }
+
+
+  .container-left-9 {
+    @include respond-to(medium-up) {
+      > *:not(blockquote) {
+        max-width: flex-grid(7, 9);
+      }
+    }
+  }
 }
 
 h2 + hr,

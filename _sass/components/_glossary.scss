@@ -5,7 +5,7 @@
 // // Styleguide components.glossary
 
 $drawer-width: 300px;
-$term-width: 180px;
+$term-width: 185px;
 $term-width-max: 220px;
 
 #glossary {
@@ -28,6 +28,7 @@ $term-width-max: 220px;
 
   [accordion-button] {
     color: $white;
+    font-size: 0.8rem;
     margin: 0;
     margin-top: -2px;
   }
@@ -51,7 +52,7 @@ $term-width-max: 220px;
 
 .glossary-definition {
   margin-bottom: $base-padding-lite;
-  padding-bottom: $base-padding;
+  padding-bottom: $base-padding-lite;
 
   @include heading('para-md');
   font-weight: 400;

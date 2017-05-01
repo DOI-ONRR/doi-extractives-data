@@ -41,7 +41,7 @@ selector: list
 </section>
 
 <section class="container-page-wrapper landing-wrapper">
-  <article class="container-left-9">
+  <article class="container-left-8 container-shift-reverse-1">
     <section class="container">
       <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
       <div class="container landing-section">

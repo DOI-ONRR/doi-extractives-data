@@ -10,7 +10,7 @@ nav_items:
   - name: laws
     title: Laws and regulations
   - name: process
-    title: Process
+    title: Resources to revenue
     subnav_items:
       - name: production
         title: Production

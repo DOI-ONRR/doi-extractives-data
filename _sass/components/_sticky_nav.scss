@@ -37,6 +37,10 @@
   }
 }
 
+.sticky_nav-padded {
+  padding-left: $standard-padding-large;
+}
+
 .sticky_nav-nav_item {
   @include heading('para-md');
   display: block;

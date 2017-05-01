@@ -11,6 +11,11 @@ nav_items:
     title: Laws and regulations
   - name: process
     title: Process
+    subnav_items:
+      - name: production
+        title: Production
+      - name: revenues
+        title: Revenues
   - name: accounting
     title: Accountability
 selector: list
@@ -74,7 +79,7 @@ selector: list
     </section>
     <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-      <h3 class="h3-bar">Production</h3>
+      <h3 id="production" class="h3-bar">Production</h3>
       <p class="landing-intro_link">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
       <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
       <div class="container landing-section">
@@ -111,7 +116,7 @@ selector: list
           </div>
         </div>
       </div>
-      <h3 class="h3-bar">Revenues</h3>
+      <h3 id="revenues" class="h3-bar">Revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       <div class="container landing-section">

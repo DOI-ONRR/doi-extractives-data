@@ -26,9 +26,7 @@
 
   &.stuck {
     .chart-selector {
-      @include transition(display, 0.5s);
-      display: flex;
-      // visibility: visible;
+      visibility: visible;
     }
   }
 
@@ -36,12 +34,10 @@
     @include chart-selector(right);
 
     margin: 0;
-    // visibility: hidden;
-    display: none;
+    visibility: hidden;
 
     @include respond-to(small-down) {
-      // visibility: visible;
-      display: flex;
+      visibility: visible;
     }
   }
 }

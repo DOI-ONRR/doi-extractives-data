@@ -46,9 +46,6 @@ $term-width-max: 220px;
 
   @include respond-to(tiny-up) {
     width: $term-width;
-
-  @include heading('para-md');
-  font-weight: 700;
   }
 }
 

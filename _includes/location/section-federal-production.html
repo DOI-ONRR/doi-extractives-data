@@ -5,200 +5,205 @@
 {% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
 <section id="federal-production" class="federal production">
+  <div is="filter-section">
+    <section class="county-map-table" is="year-switcher-section">
 
-  <section class="county-map-table" is="year-switcher-section">
+      {% assign header_text = 'Production on federal land in {{ state_name }}' | liquify %}
+      {%
+        include sticky-header.html
+        header_text=header_text
+        year_range=year_range
+        selector=true
+      %}
 
-    {% assign header_text = 'Production on federal land in {{ state_name }}' | liquify %}
-    {%
-      include sticky-header.html
-      header_text=header_text
-      year_range=year_range
-      selector=true
-    %}
-
-    {% if federal_products_num == 0 %}
-    <p>
-      The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource {{ "production" | term }} on federal land in {{  state_name }} in {{ year }}.
-      <br>
-      <a href="{{ site.baseurl }}/downloads/federal-production/" class="data-downloads">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-      </a>
-    </p>
-    {% else %}
-    <div class="chart-selector-wrapper">
-      {% include year-selector.html year_range=year_range %}
-      <p class="chart-description">
-          The Office of Natural Resources Revenue collects detailed data about natural resource {{ "production" | term }} on federal land in {{ state_name }}.
-          <br>
-          <a href="{{ site.baseurl }}/downloads/federal-production/">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-          </a>
+      {% if federal_products_num == 0 %}
+      <p>
+        The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource {{ "production" | term }} on federal land in {{  state_name }} in {{ year }}.
+        <br>
+        <a href="{{ site.baseurl }}/downloads/federal-production/" class="data-downloads">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
       </p>
-    </div>
-    {% endif %}
-
-    <div class="chart-list">
-
-    {% assign withheld_products = '' | split: '' %}
-
-    {% for product in federal_products %}
-      {% assign product_name = product[1].name | default: product[0] %}
-
-      {% assign all_withheld = true %}
-      {% for product_year in product[1].volume %}
-        {% if year_range contains product_year[0] and product_year[1].volume != nil %}
-          {% assign all_withheld = false %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-      {% if all_withheld %}
-        <!-- all withheld: {{ product[0] }} -->
-        {% assign withheld_products = withheld_products | push: product %}
-        {% continue %}
+      {% else %}
+      <div class="chart-selector-wrapper">
+        {% include year-selector.html year_range=year_range %}
+        <p class="chart-description">
+            The Office of Natural Resources Revenue collects detailed data about natural resource {{ "production" | term }} on federal land in {{ state_name }}.
+            <br>
+            <a href="{{ site.baseurl }}/downloads/federal-production/">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
+        </p>
+      </div>
       {% endif %}
 
-      {% assign product_slug = product[0] | slugify %}
-      {% assign production_values = product[1].volume %}
-      {% assign volume = production_values[year].volume %}
-      {% assign units = product[1].units | downcase | default: 'units' %}
-      {% assign short_units = units_map[units].short | default: units %}
-      {% assign long_units = units_map[units].long | default: units %}
-      {% assign term_units = units_map[units].term | default: long_units %}
-      {% assign units_suffix = units_map[units].suffix | default: '' %}
-      {% assign units_title = units_map[units].title %}
+      <div class="chart-list">
 
-      <section id="federal-production-{{ product_slug }}" class="product full-width">
+      {% assign withheld_products = '' | split: '' %}
 
-        <div class="row-container">
+      {% for product in federal_products %}
+        {% assign product_name = product[1].name | default: product[0] %}
 
-          <div class="chart-container">
+        {% assign all_withheld = true %}
+        {% for product_year in product[1].volume %}
+          {% if year_range contains product_year[0] and product_year[1].volume != nil %}
+            {% assign all_withheld = false %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if all_withheld %}
+          <!-- all withheld: {{ product[0] }} -->
+          {% assign withheld_products = withheld_products | push: product %}
+          {% continue %}
+        {% endif %}
 
-            {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
-            {% assign production_data = production_values | map_hash: "volume" %}
-            {%
-              include chart_title.html
-              chart_name=product_name
-              chart_toggle=chart_toggle
-              chart_values=production_data
-              units=long_units
-              is_icon=true
-              chart_units_title=units_title
-            %}
+        {% assign product_slug = product[0] | slugify %}
+        {% assign production_values = product[1].volume %}
+        {% assign volume = production_values[year].volume %}
+        {% assign units = product[1].units | downcase | default: 'units' %}
+        {% assign short_units = units_map[units].short | default: units %}
+        {% assign long_units = units_map[units].long | default: units %}
+        {% assign term_units = units_map[units].term | default: long_units %}
+        {% assign units_suffix = units_map[units].suffix | default: '' %}
+        {% assign units_title = units_map[units].title %}
 
-            <figure class="chart" id="{{ chart_toggle }}">
-              <eiti-bar-chart
-                aria-controls="federal-production-figures-{{ product_slug }} federal-production-withheld"
-                data='{{ production_data | jsonify }}'
-                x-range="{{ year_range }}"
-                x-value="{{ year }}"
-                data-units="{{ long_units }}">
-              </eiti-bar-chart>
-              <figcaption id="federal-production-figures-{{ product_slug }}">
-                <span class="caption-data">
-                  <span class="eiti-bar-chart-y-value"
-                        data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                  {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
-                  produced on federal land in {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
-                </span>
-                <span class="caption-no-data" aria-hidden="true">
-                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in {{ state_name }} in
-                  <span class="eiti-bar-chart-x-value">{{ year }}</span>.
-                </span>
-                <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
-                </span>
-              </figcaption>
-            </figure>
+        {% assign standardized_product_name = site.data.standardized_commodities[product_name] | default: product_name %}
+        {% assign slugified_product_name = standardized_product_name | slugify %}
+        {% assign filterable_slugs = filterable_slugs | push: slugified_product_name %}
+        {% assign filterable_names = filterable_names | push: standardized_product_name %}
 
-          </div><!-- /.chart-container -->
+        <section id="federal-production-{{ product_slug }}" class="product full-width" filter-item="{{ slugified_product_name }}">
 
-          <div class="map-container">
+          <div class="row-container">
 
-            <h4 class="chart-title">
-              {{ locality_name }} production
-            </h4>
+            <div class="chart-container">
 
+              {% assign chart_toggle = 'federal-production-figures-chart-{{ product_slug }}' | liquify %}
+              {% assign production_data = production_values | map_hash: "volume" %}
+              {%
+                include chart_title.html
+                chart_name=product_name
+                chart_toggle=chart_toggle
+                chart_values=production_data
+                units=long_units
+                is_icon=true
+                chart_units_title=units_title
+              %}
 
-            {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
-            <figure is="eiti-data-map-table">
+              <figure class="chart" id="{{ chart_toggle }}">
+                <eiti-bar-chart
+                  aria-controls="federal-production-figures-{{ product_slug }} federal-production-withheld"
+                  data='{{ production_data | jsonify }}'
+                  x-range="{{ year_range }}"
+                  x-value="{{ year }}"
+                  data-units="{{ long_units }}">
+                </eiti-bar-chart>
+                <figcaption id="federal-production-figures-{{ product_slug }}">
+                  <span class="caption-data">
+                    <span class="eiti-bar-chart-y-value"
+                          data-format=",">{{ volume | default: 0 | intcomma }}</span>
+                    {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
+                    produced on federal land in {{ state_name }} in
+                    <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                  </span>
+                  <span class="caption-no-data" aria-hidden="true">
+                    There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in {{ state_name }} in
+                    <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+                  </span>
+                  <span class="caption-withheld" aria-hidden="true">
+                    Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  </span>
+                </figcaption>
+              </figure>
 
-              {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
-              {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
-              {% assign _width ='inherit' %}
+            </div><!-- /.chart-container -->
 
-              {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
+            <div class="map-container">
 
-
-              <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
-                {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-
-                {%
-                  include county-map.html
-                  state=state_id
-                  counties=federal_county_production
-                  value=value_key
-                  years=years_key
-                  steps=steps
-                  inherit_width=true
-                  caption=caption
-                  toggle=toggle
-                  year=year
-                %}
+              <h4 class="chart-title">
+                {{ locality_name }} production
+              </h4>
 
 
+              {% capture toggle %}federal-production-{{ product_slug }}-counties{% endcapture %}
+              <figure is="eiti-data-map-table">
 
-              </eiti-data-map>
+                {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
+                {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
+                {% assign _width ='inherit' %}
 
-              <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
-                {% assign product_ref = product[0] %}
-                {%
-                  include location/display-federal-production-county.html
-                  year=year
-                  values=county_federal_products
-                  product_ref=product_ref
-                  long_units=long_units
-                  caption=caption
-                  sentence=sentence
-                  scrollable=true
-                %}
-              </div><!-- /.table-container -->
+                {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
 
-            </figure>
 
-          </div><!-- /.map-container -->
+                <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">
+                  {% assign federal_county_production = site.data.federal_county_production[state_id] %}
 
-        </div><!-- /.row-container -->
+                  {%
+                    include county-map.html
+                    state=state_id
+                    counties=federal_county_production
+                    value=value_key
+                    years=years_key
+                    steps=steps
+                    inherit_width=true
+                    caption=caption
+                    toggle=toggle
+                    year=year
+                  %}
 
-      </section><!-- /.product.full-width -->
-    {% endfor %}
 
-    {% if withheld_products.size > 0 %}
-      <section id="federal-production-withheld" class="withheld-products full-width">
-        <!-- withheld products: {{ withheld_products | map_hash: '0.name' | jsonify }} -->
-        <h4 class="chart-title">Data withheld</h4>
-        <p>
-          Production volume in {{ state_name }} was
-          {{ 'withheld' | term }} for the following product(s):
-        </p>
-        <ul class="list-unstyled">
-          {% assign all_years = year_list | to_s %}
-          {% for product in withheld_products %}
-            {% assign product_years = '' | split: '' %}
-            {% for _year in product[1].volume %}
-              {% assign product_years = product_years | push: _year[0] %}
+
+                </eiti-data-map>
+
+                <div class="eiti-data-map-table" id="{{ toggle }}" aria-hidden="true">
+                  {% assign product_ref = product[0] %}
+                  {%
+                    include location/display-federal-production-county.html
+                    year=year
+                    values=county_federal_products
+                    product_ref=product_ref
+                    long_units=long_units
+                    caption=caption
+                    sentence=sentence
+                    scrollable=true
+                  %}
+                </div><!-- /.table-container -->
+
+              </figure>
+
+            </div><!-- /.map-container -->
+
+          </div><!-- /.row-container -->
+
+        </section><!-- /.product.full-width -->
+      {% endfor %}
+
+      {% if withheld_products.size > 0 %}
+        <section id="federal-production-withheld" class="withheld-products full-width">
+          <!-- withheld products: {{ withheld_products | map_hash: '0.name' | jsonify }} -->
+          <h4 class="chart-title">Data withheld</h4>
+          <p>
+            Production volume in {{ state_name }} was
+            {{ 'withheld' | term }} for the following product(s):
+          </p>
+          <ul class="list-unstyled">
+            {% assign all_years = year_list | to_s %}
+            {% for product in withheld_products %}
+              {% assign product_years = '' | split: '' %}
+              {% for _year in product[1].volume %}
+                {% assign product_years = product_years | push: _year[0] %}
+              {% endfor %}
+            <li>
+              {{ product[1].name | default: product[0] }}
+              ({{ product_years | year_range }})
+            </li>
             {% endfor %}
-          <li>
-            {{ product[1].name | default: product[0] }}
-            ({{ product_years | year_range }})
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
+          </ul>
+        </section>
+      {% endif %}
 
-    </div><!-- /.chart-list -->
+      </div><!-- /.chart-list -->
 
-  </section>
-
+    </section>
+  </div>
 </section>

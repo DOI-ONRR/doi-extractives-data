@@ -15,6 +15,8 @@
 
   require('../components/sticky.js');
   require('../components/mobile-nav.js');
+  require('../components/filter.js');
+  require('../components/filter-section.js');
 
   // exporting instance of OpenListNav because openListNav is
   // referenced in the markup:

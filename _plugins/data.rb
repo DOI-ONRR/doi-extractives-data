@@ -140,6 +140,10 @@ module EITI
       end
     end
 
+    def zip(keys, values)
+      keys.zip(values)
+    end
+
   end
 end
 

@@ -107,8 +107,8 @@
 }
 
 .ribbon-card-top-list {
-  @include heading('para-md');
-  margin-bottom: 1.25rem;
+  @include heading(para-md);
+  margin-bottom: $standard-padding;
   padding-bottom: $base-padding-lite;
   text-align: left;
 }

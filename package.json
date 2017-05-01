@@ -42,6 +42,7 @@
     "lunr": "^0.7.2",
     "object-assign": "^4.1.0",
     "pty.js": "github:chjj/pty.js",
+    "slugify": "^1.1.0",
     "stickyfill-web-module": "^1.1.11",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",
     "svgeo": "^0.3.5",

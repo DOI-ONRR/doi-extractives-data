@@ -8,6 +8,8 @@ description: >
 # permanent url, for use in meta references
 url: https://useiti.doi.gov
 
+empty_array: []
+
 # app version number
 version: v2.1.9
 

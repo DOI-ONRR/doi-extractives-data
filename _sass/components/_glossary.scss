@@ -5,13 +5,12 @@
 // // Styleguide components.glossary
 
 $drawer-width: 300px;
-$term-width: 185px;
+$term-width: 180px;
 $term-width-max: 220px;
 
 #glossary {
   width: 100%;
   z-index: $z-sky;
-  -webkit-font-smoothing: antialiased;
 
   @include respond-to(tiny-up) {
     width: $drawer-width;
@@ -19,29 +18,27 @@ $term-width-max: 220px;
 }
 
 .glossary-item {
-  border-bottom: 1px solid $gray-light;
-  padding-top: $standard-padding-small;
+  border-bottom: 1px solid $mid-gray;
+  padding-top: $base-padding;
 
   &:first-child {
-    border-top: 1px solid $gray-light;
+    border-top: 1px solid $mid-gray;
   }
 
   [accordion-button] {
     color: $white;
-    font-size: 0.8rem;
     margin: 0;
     margin-top: -2px;
   }
 }
 
 .glossary-term {
-  @include heading('para-md');
-  font-weight: 700;
   color: $white;
   cursor: pointer;
   display: inline-block;
   margin: 0;
   max-width: $term-width-max;
+  padding-bottom: $base-padding;
   width: 100%;
 
   @include respond-to(tiny-up) {
@@ -50,11 +47,9 @@ $term-width-max: 220px;
 }
 
 .glossary-definition {
+  font-family: $base-font-family;
   margin-bottom: $base-padding-lite;
-  padding-bottom: $base-padding-lite;
-
-  @include heading('para-md');
-  font-weight: 400;
+  padding-bottom: $base-padding;
 }
 
 // Term classes

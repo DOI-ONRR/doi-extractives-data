@@ -17,6 +17,7 @@
 // Styleguide components.drawer.drawer
 
 
+$drawer-width: 300px;
 
 .drawer {
   @include transition(right, 0.3s);
@@ -32,6 +33,11 @@
   top: 0;
   width: 300px;
   z-index: 5000;
+  -webkit-font-smoothing: antialiased;
+
+  @include respond-to(tiny-up) {
+    width: $drawer-width;
+  }
 
   h1,
   h2,

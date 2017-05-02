@@ -4,18 +4,15 @@
 // //
 // // Styleguide components.glossary
 
-$drawer-width: 300px;
 $term-width: 185px;
 $term-width-max: 220px;
 
 #glossary {
+  @include respond-to('tiny-down') {
   width: 100%;
-  z-index: $z-sky;
-  -webkit-font-smoothing: antialiased;
-
-  @include respond-to(tiny-up) {
-    width: $drawer-width;
   }
+
+  z-index: $z-sky;
 }
 
 .glossary-item {

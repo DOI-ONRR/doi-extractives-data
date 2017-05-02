@@ -225,33 +225,39 @@ nav_items:
       <nav>
         {% include case-studies/_nav-list.html %}
       </nav>
+
+      <button data-toggler="nav-drawer-filter" is="eiti-toggle" aria-controls="nav-drawer-filter" aria-hidden="false" aria-expanded="false"  title="Filter drawer toggle" aria-labelledby="menu-button">Open filter</button>
     </div>
   </section>
 
-<section class="filter-form sticky" style="background: white; z-index: 99999; position: fixed; top: 0;">
+  <div id="nav-drawer-filter" class="drawer" aria-hidden="true">
 
+    <div class="container">
+      <button data-toggler="nav-drawer-filter" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer-filter" class="header-right" title="Close filter" data-inner-markup="x"></button>
+    </div>
 
-      {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
+    <h1 class="h2 drawer-header"><icon class="icon-book"></icon> Filter</h1>
+    <h3>Select which commodities to view on the page.</h3>
+    {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
 
-      <form>
-        <formgroup>
-          <!-- <label for='all-production'>All lands production</label>
-          <input class="filter-input" type="checkbox" checked name="all-production"> -->
-          {% for field in filterable_fields %}
-            <label for="{{ field[0] }}">{{ field[1] }}</label>
+    <form class=filter-form">
+      <formgroup class="nav_drawer-nav js-glossary-list list-unstyled">
+        {% for field in filterable_fields %}
+          <div class="filter-item">
+            <label class="h5 filter-type" for="{{ field[0] }}">{{ field[1] }}</label>
             <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
-          {% endfor %}
-        </formgroup>
-        <!-- <formgroup>
-          <label for='hide'>Hide all</label>
-          <input class="filter-input hide" type="checkbox" name="hide">
-          <label for='show'>Show all</label>
-          <input class="filter-input show" type="checkbox" checked name="show">
-        </formgroup> -->
-      </form>
+          </div>
+        {% endfor %}
+      </formgroup>
+      <!-- <formgroup>
+        <label for='hide'>Hide all</label>
+        <input class="filter-input hide" type="checkbox" name="hide">
+        <label for='show'>Show all</label>
+        <input class="filter-input show" type="checkbox" checked name="show">
+      </formgroup> -->
+    </form>
 
-
-    </section>
+  </div>
 
 </main>
 

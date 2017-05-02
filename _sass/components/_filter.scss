@@ -1,3 +1,25 @@
+// // State-page filter
+// //
+// // Filter utility for Explore
+// //
+// // Styleguide components.state-page-filter
+
+#nav-drawer-filter {
+  @include respond-to('tiny-down') {
+  width: 100%;
+  }
+
+  z-index: $z-sky;
+}
+
+.filter-item {
+
+}
+
+.filter-type {
+
+}
+
 [filter-item][aria-hidden=true] {
   display: none !important;
 }

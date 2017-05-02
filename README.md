@@ -4,7 +4,7 @@
 
 This is the repository for active development work on [useiti.doi.gov](https://useiti.doi.gov). See [releases](https://github.com/18F/doi-extractives-data/releases) for information about the current version of the site.
 
-**For more detailed process information, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).**
+**For more detailed process, development, and data information, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).**
 
 ## What
 

@@ -2,12 +2,29 @@
 title: How It Works
 layout: default
 permalink: /how-it-works/
+nav_items:
+  - name: introduction
+    title: Top
+  - name: ownership
+    title: Natural resource ownership
+  - name: laws
+    title: Laws and regulations
+  - name: process
+    title: Resources to revenue
+    subnav_items:
+      - name: production
+        title: Production
+      - name: revenues
+        title: Revenues
+  - name: accounting
+    title: Accountability
+selector: list
 ---
 
 <section class="slab-delta">
   <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
     <div class="container-left-8 ribbon-hero ribbon-hero-column">
-      <h1>{{ page.title }}</h1>
+      <h1 id="introduction">{{ page.title }}</h1>
       <p class="ribbon-hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
       <p class="ribbon-hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#state-tribal">state and tribal lands</a> are managed, and what <a href="#laws">laws and governance</a> relate to the industry.</p>
     </div>
@@ -24,9 +41,7 @@ permalink: /how-it-works/
 </section>
 
 <section class="container-page-wrapper landing-wrapper">
-
-  <article class="container-left-8">
-
+  <article class="container-left-8 container-shift-reverse-1">
     <section class="container">
       <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
       <div class="container landing-section">
@@ -37,7 +52,6 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-
     <section class="container">
       <h2 id="laws" class="h2-bar">What laws and regulations govern natural resource extraction in the U.S.?</h2>
       <div class="container landing-section">
@@ -63,14 +77,11 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-
     <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-
-      <h3 class="h3-bar">Production</h3>
+      <h3 id="production" class="h3-bar">Production</h3>
       <p class="landing-intro_link">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
       <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
-
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
@@ -105,11 +116,9 @@ permalink: /how-it-works/
           </div>
         </div>
       </div>
-
-      <h3 class="h3-bar">Revenues</h3>
+      <h3 id="revenues" class="h3-bar">Revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
-
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">Federal revenue by company</a></h4>
@@ -133,7 +142,6 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-
     <section class="container">
       <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
       <div class="container landing-section">
@@ -149,7 +157,6 @@ permalink: /how-it-works/
         </div>
       </div>
     </section>
-
     <!-- <section class="container">
       <h2 id="state-tribal" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
       <div class="container landing-section">
@@ -166,4 +173,11 @@ permalink: /how-it-works/
       </div>
     </section> -->
   </article>
+  <div class="sticky sticky_nav container-right-3">
+    <nav>
+      {% include case-studies/_nav-list.html %}
+    </nav>
+  </div>
 </section>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>

@@ -1,5 +1,4 @@
 .sticky_nav {
-  padding-left: $standard-padding-large;
   padding-top: $standard-padding-large;
   top: 0;
 
@@ -16,6 +15,8 @@
   }
 
   ul {
+    padding-left: 0;
+
     a {
       text-decoration: none;
 
@@ -34,6 +35,10 @@
     padding-left: 0;
     padding-top: $base-padding-lite;
   }
+}
+
+.sticky_nav-padded {
+  padding-left: $standard-padding-large;
 }
 
 .sticky_nav-nav_item {

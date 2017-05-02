@@ -243,6 +243,41 @@
   }
 }
 
+.container-shift-reverse-1 {
+  @include respond-to(medium-up) {
+    @include shift-reverse(1);
+  }
+}
+
+.container-shift-reverse-2 {
+  @include respond-to(medium-up) {
+    @include shift-reverse(2);
+  }
+}
+
+
+
+.container-flex {
+  display: flex;
+
+  @include respond-to(medium-up) {
+    // flex-direction: column
+  }
+}
+
+.container-flex-9 {
+  width: 75%;
+}
+
+.container-flex-6 {
+  width: 50%;
+}
+
+.container-flex-3 {
+  width: 25%;
+}
+
+
 .container-padded {
   padding-bottom: $base-padding-extra;
   padding-top: $base-padding-extra;

@@ -32,10 +32,6 @@ selector: list
 
 > Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth-largest producer of gold, extracting 200 tons valued at $7.6 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world.[^2] Nevada accounts for 74% of total U.S. gold production.[^3]
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 {{ "metric tons" | term:"metric ton"}} (100,000,000 ounces) of gold.[^5]
@@ -85,12 +81,12 @@ The table below highlights the data sources used to compile this narrative, as w
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

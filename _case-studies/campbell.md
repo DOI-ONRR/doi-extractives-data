@@ -31,10 +31,6 @@ selector: list
 
 > Most of the coal consumed in the U.S. fuels the country’s electricity needs, and coal constitutes 39% of all electricity generated in the U.S.[^1] Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with nine of the nation’s ten largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Campbell County’s geographic position atop the Powder River Basin came with such plentiful coal deposits that early cattle ranchers in the area could dig their own coal.[^4] Significant mining operations in the region began in the early twentieth century with the Peerless and Wyodak Mines near the city of Gillette. Further coal development and the discovery of oil spurred population growth in the county throughout the decades that followed.
@@ -85,12 +81,12 @@ The table below highlights the data sources used to compile this narrative, as w
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

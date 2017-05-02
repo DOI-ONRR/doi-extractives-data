@@ -240,21 +240,16 @@ nav_items:
     <h3>Select which commodities to view on the page.</h3>
     {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
 
-    <form class=filter-form">
-      <formgroup class="nav_drawer-nav js-glossary-list list-unstyled">
-        {% for field in filterable_fields %}
-          <div class="filter-item">
-            <label class="h5 filter-type" for="{{ field[0] }}">{{ field[1] }}</label>
-            <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
-          </div>
-        {% endfor %}
+    <form class="filter-form">
+
+    {% for field in filterable_fields %}
+      <formgroup class="filter-item nav_drawer-nav js-glossary-list list-unstyled">
+        <label class="h5 filter-type" for="{{ field[0] }}">{{ field[1] }}</label>
+        <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
       </formgroup>
-      <!-- <formgroup>
-        <label for='hide'>Hide all</label>
-        <input class="filter-input hide" type="checkbox" name="hide">
-        <label for='show'>Show all</label>
-        <input class="filter-input show" type="checkbox" checked name="show">
-      </formgroup> -->
+    {% endfor %}
+
+
     </form>
 
   </div>

@@ -13,11 +13,19 @@
 }
 
 .filter-item {
-
+  display: flex;
+  flex-direction: row;
 }
 
 .filter-type {
+  margin: 0;
+  width: 100%;
+}
 
+.filter-input {
+  margin: 0;
+  display: flex;
+  align-self: center;
 }
 
 [filter-item][aria-hidden=true] {

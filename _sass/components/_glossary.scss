@@ -19,12 +19,12 @@ $term-width-max: 220px;
 }
 
 .glossary-item {
-  border-bottom: 1px solid $gray-darkest;
+  border-bottom: 2px solid $black-light;
   padding-top: $standard-padding-small;
   padding-bottom: $standard-padding-small;
 
   &:first-child {
-    border-top: 1px solid $gray-darkest;
+    border-top: 2px solid $black-light;
   }
 
   [accordion-button] {

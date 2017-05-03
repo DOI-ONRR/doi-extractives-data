@@ -19,11 +19,12 @@ $term-width-max: 220px;
 }
 
 .glossary-item {
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-darkest;
   padding-top: $standard-padding-small;
+  padding-bottom: $standard-padding-small;
 
   &:first-child {
-    border-top: 1px solid $gray-light;
+    border-top: 1px solid $gray-darkest;
   }
 
   [accordion-button] {
@@ -37,7 +38,6 @@ $term-width-max: 220px;
 .glossary-term {
   @include heading('para-md');
   font-weight: 700;
-  color: $white;
   cursor: pointer;
   display: inline-block;
   margin: 0;
@@ -51,10 +51,10 @@ $term-width-max: 220px;
 
 .glossary-definition {
   margin-bottom: $base-padding-lite;
-  padding-bottom: $base-padding-lite;
 
   @include heading('para-md');
-  font-weight: 400;
+    color: $gray-light;
+    font-weight: 400;
 }
 
 // Term classes

@@ -21,7 +21,7 @@
 .drawer {
   @include transition(right, 0.3s);
 
-  background-color: $light-black;
+  background-color: $black;
   bottom: 0;
   color: $white;
   max-width: 30rem;
@@ -35,7 +35,6 @@
 
   h1,
   h2,
-  p,
   label,
   i {
     color: $white;

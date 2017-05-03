@@ -18,17 +18,18 @@
     var root = d3.select(this);
     var filterItems = root.selectAll('[filter-item]');
     var chartSelectors = root.selectAll('.chart-selector');
-    var form = d3.select(document.querySelector('.filter-form'))
+    var form = d3.select(document.querySelector('.filter-form'));
 
-    var formItems = form.selectAll('.filter-input')
+    var formItems = form.selectAll('.filter-input');
 
     filterItems
       .attr('aria-hidden', function(d) {
         var item = d3.select(this).attr('filter-item')
         var value = getQueryVariable(item)
+        console.log(value)
         var isNotVisible = value === 'false' || value === false;
-        var formRelative = document
-          .querySelectorAll()
+        // var formRelative = document
+        //   .querySelectorAll()
 
         var isChecked = isNotVisible ? null : true;
         d3.select(".filter-form [name='" + item + "']")

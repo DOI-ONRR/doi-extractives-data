@@ -230,15 +230,14 @@ nav_items:
     </div>
   </section>
 
+  {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
   <div id="nav-drawer-filter" class="drawer" aria-hidden="true">
-
     <div class="container">
       <button data-toggler="nav-drawer-filter" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer-filter" class="header-right" title="Close filter" data-inner-markup="x"></button>
     </div>
 
     <h1 class="h2 drawer-header"><icon class="icon-book"></icon> Filter</h1>
     <h3>Select which commodities to view on the page.</h3>
-    {% assign filterable_fields = filterable_slugs | zip: filterable_names | uniq %}
 
     <form class="filter-form">
 
@@ -248,11 +247,9 @@ nav_items:
         <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
       </formgroup>
     {% endfor %}
-
-
     </form>
-
   </div>
+
 
 </main>
 

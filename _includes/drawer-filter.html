@@ -1,17 +1,21 @@
-<div id="drawer-filter" class="drawer" aria-hidden="true">
+<!-- {% assign filterable_fields = include.filterable_fields | default: filterable_fields %}
 
+<div id="nav-drawer-filter" class="drawer" aria-hidden="true">
   <div class="container">
-    <button data-toggler="nav-drawer" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer" class="header-right" title="Global navigation close" data-inner-markup="x"></button>
+    <button data-toggler="nav-drawer-filter" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer-filter" class="header-right" title="Close filter" data-inner-markup="x"></button>
   </div>
 
-  <label for="drawer-search" class="label">Search</label>
+  <h1 class="h2 drawer-header"><icon class="icon-book"></icon> Filter</h1>
+  <h3>Select which commodities to view on the page.</h3>
 
-  <form>
-    <label for='coal' class='sr-only'>Coal</label>
-    <input type="text" name="coal">
+  <form class="filter-form">
 
-    <label for='oil' class='sr-only'>Oil</label>
-    <input type="text" name="oil">
+  {% for field in filterable_fields %}
+    <formgroup class="filter-item nav_drawer-nav js-glossary-list list-unstyled">
+      <label class="h5 filter-type" for="{{ field[0] }}">{{ field[1] }}</label>
+      <input class="filter-input" type="checkbox" checked name="{{ field[0] }}">
+    </formgroup>
+  {% endfor %}
   </form>
-
 </div>
+ -->

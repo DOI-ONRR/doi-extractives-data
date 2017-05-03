@@ -6,6 +6,7 @@
   var slugMap = d3.map(slugs)
 
   function createQueryString() {
+    console.log('setSlug', slugMap)
     return slugMap
       .entries()
       .map(function(entry, index) {
@@ -14,6 +15,22 @@
       })
       .join('')
   }
+
+  function initSlugMap() {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+
+    d3.map(vars, function(v) {
+
+      var keyValue = v.split('=');
+      if (keyValue[0] && keyValue[0] != 'undefined' &&
+        keyValue[1] && keyValue[1] != 'undefined') {
+        slugMap.set(keyValue[0], keyValue[1]);
+      }
+    });
+  }
+
+  initSlugMap();
 
   function getQueryVariable(variable) {
     var query = window.location.search.substring(1);

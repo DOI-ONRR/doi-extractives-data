@@ -126,7 +126,7 @@ describe('revenues by type', function() {
       });
     });
 
-    it('properly sums up "All" revenues (by commodity)', function() {
+    xit('properly sums up "All" revenues (by commodity)', function() {
       var dataSource = path.join(
         __dirname,
         '../../_data/state_revenues.yml'

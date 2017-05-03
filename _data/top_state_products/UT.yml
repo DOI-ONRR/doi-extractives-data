@@ -66,9 +66,16 @@ all_production:
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 503234.62
+      value: 429517
       rank: 3
-      percent: 3
+      percent: 2.7
+  '2016':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 530058.13
+      rank: 3
+      percent: 3.04
 federal_production:
   '2006':
     - product: Gilsonite (tons)

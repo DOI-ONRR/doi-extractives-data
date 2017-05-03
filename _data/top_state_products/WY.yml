@@ -113,9 +113,22 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 1997666000
+      value: 1998505000
       rank: 5
-      percent: 6.37
+      percent: 6.36
+  '2015':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 375772504
+      rank: 1
+      percent: 41.89
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1983731000
+      rank: 5
+      percent: 6.03
 federal_production:
   '2006':
     - product: Purge Liquor (tons - equivalent)

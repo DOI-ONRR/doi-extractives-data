@@ -114,15 +114,28 @@ all_production:
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 3400352.75
+      value: 3110504
       rank: 2
-      percent: 20.28
+      percent: 19.54
     - product: Solar
       name: Solar
       units: Mwh
-      value: 1693987.67
+      value: 1657405
+      rank: 3
+      percent: 6.66
+  '2016':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 3848199.92
+      rank: 2
+      percent: 22.09
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 2545982.6
       rank: 4
-      percent: 6.4
+      percent: 6.93
 federal_production:
   '2006':
     - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'

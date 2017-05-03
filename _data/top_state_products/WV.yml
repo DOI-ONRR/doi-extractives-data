@@ -62,3 +62,10 @@ all_production:
       value: 112187373
       rank: 2
       percent: 11.22
+  '2015':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 95632900
+      rank: 2
+      percent: 10.66

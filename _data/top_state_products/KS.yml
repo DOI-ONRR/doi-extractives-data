@@ -10,9 +10,16 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 10926858.08
+      value: 10998501
       rank: 5
-      percent: 5.72
+      percent: 5.77
+  '2016':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 14113110.6
+      rank: 4
+      percent: 6.23
 revenue:
   '2006':
     - product: Helium

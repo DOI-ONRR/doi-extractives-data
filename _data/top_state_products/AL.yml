@@ -78,15 +78,16 @@ all_production:
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
-      value: 3282980.54
+      value: 3245653.96
       rank: 3
-      percent: 7.75
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
+      percent: 7.74
+  '2016':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
       units: Mwh
-      value: 10132680.56
-      rank: 5
-      percent: 4.03
+      value: 3212118.52
+      rank: 2
+      percent: 7.93
 revenue:
   '2006':
     - product: Clay

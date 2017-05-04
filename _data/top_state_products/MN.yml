@@ -112,3 +112,16 @@ revenue:
       value: 49858
       rank: 2
       percent: 0.5
+  '2016':
+    - product: Copper
+      name: null
+      units: null
+      value: 28721
+      rank: 1
+      percent: 100
+    - product: Hardrock
+      name: null
+      units: null
+      value: 25508
+      rank: 2
+      percent: 0.3

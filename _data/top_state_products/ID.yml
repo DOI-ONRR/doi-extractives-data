@@ -280,3 +280,9 @@ revenue:
       value: 153636
       rank: 5
       percent: 1.2
+    - product: Gemstones
+      name: null
+      units: null
+      value: 240
+      rank: 1
+      percent: 100

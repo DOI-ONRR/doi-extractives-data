@@ -675,6 +675,12 @@ revenue:
       value: 4360.5
       rank: 4
       percent: 0
+    - product: Oil Shale
+      name: null
+      units: null
+      value: 932
+      rank: 1
+      percent: 74.4
     - product: Helium
       name: null
       units: null

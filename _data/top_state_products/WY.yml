@@ -1030,7 +1030,7 @@ revenue:
     - product: All
       name: null
       units: null
-      value: 1225400978.86
+      value: 1225400378.86
       rank: 1
       percent: 23
     - product: Coal
@@ -1048,7 +1048,7 @@ revenue:
     - product: Oil
       name: null
       units: null
-      value: 163944345.91
+      value: 163943745.91
       rank: 2
       percent: 5.6
     - product: NGL

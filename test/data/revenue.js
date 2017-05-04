@@ -53,7 +53,6 @@ describe('revenues by type', function() {
         }
         var difference = expected - actual;
 
-        console.warn(d.St, d.Total)
         var values = [d.St, d.Commodity.trim(), d['Revenue Type'], d.CY]. join(' | ');
         assert.ok(
           Math.abs(difference) <= 1,
@@ -138,47 +137,49 @@ describe('revenues by type', function() {
       );
 
       for (var state in stateRevenuesByCommodity) {
-        var commodities = stateRevenuesByCommodity[state].commodities;
-        var allByYear = {};
-        var totalsByYear = {};
-        var count = 0;
+        // Don't run None, it contains civil penalties and other conflicting values
+        if (state != 'None') {
+          var commodities = stateRevenuesByCommodity[state].commodities;
+          var allByYear = {};
+          var totalsByYear = {};
+          var count = 0;
 
-        var commodity;
-        var year;
-        var difference;
+          var commodity;
+          var year;
+          var difference;
 
-        for (commodity in commodities) {
-          for (year in commodities[commodity]) {
-            var revenue = commodities[commodity][year].revenue;
-            if (commodity === 'All') {
-              allByYear[year] = revenue;
-            } else {
-              totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
-              count++;
+          for (commodity in commodities) {
+            for (year in commodities[commodity]) {
+              var revenue = commodities[commodity][year].revenue;
+              if (commodity === 'All') {
+                allByYear[year] = revenue;
+              } else {
+                totalsByYear[year] = (totalsByYear[year] || 0) + revenue;
+                count++;
+              }
             }
           }
-        }
+          // compare yearly totals, using the number of commodities as a standin
+          // for the acceptable rounding error (+/- 1 for each)
+          for (year in totalsByYear) {
+            difference = Math.abs(allByYear[year] - totalsByYear[year]);
+            assert.ok(
+              difference <= count,
+              'abs(' + allByYear[year] + ' - ' +
+                totalsByYear[year] + ' = ' + difference + ')'
+            );
+          }
 
-        // compare yearly totals, using the number of commodities as a standin
-        // for the acceptable rounding error (+/- 1 for each)
-        for (year in totalsByYear) {
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
-        }
-
-        // now check the keys for allByYear just to be sure that we don't have
-        // extra years in there
-        for (year in allByYear) {
-          difference = Math.abs(allByYear[year] - totalsByYear[year]);
-          assert.ok(
-            difference <= count,
-            'abs(' + allByYear[year] + ' - ' +
-              totalsByYear[year] + ' = ' + difference + ')'
-          );
+          // now check the keys for allByYear just to be sure that we don't have
+          // extra years in there
+          for (year in allByYear) {
+            difference = Math.abs(allByYear[year] - totalsByYear[year]);
+            assert.ok(
+              difference <= count,
+              'abs(' + allByYear[year] + ' - ' +
+                totalsByYear[year] + ' = ' + difference + ')'
+            );
+          }
         }
       }
     });

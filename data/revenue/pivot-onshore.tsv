@@ -1,265 +1,4 @@
 CY	St	Commodity	Revenue Type	Total
-2016	AK	Gas	Royalties	7243250.7
-		Geothermal	Rents	7680
-		NGL	Royalties	20897.46
-		Oil	Royalties	2518813.08
-		Oil & Gas (Non-Royalty)	Bonus	788680
-			Other Revenues	215438.57
-			Rents	3199177.74
-	AL	Coal	Other Revenues	145960.78
-			Rents	4830
-			Royalties	59038.86
-		Gas	Royalties	114999.22
-		NGL	Royalties	1046.99
-		Oil	Royalties	250122.63
-		Oil & Gas (Non-Royalty)	Bonus	-240
-			Other Revenues	-15430.15
-			Rents	112109.5
-		Sulfur	Royalties	1350.48
-	AR	Gas	Royalties	3273280.74
-		Hardrock	Other Revenues	1235.5
-			Rents	140
-			Royalties	138.5
-		NGL	Royalties	8.71
-		Oil	Royalties	5.34
-		Oil & Gas (Non-Royalty)	Bonus	38
-			Other Revenues	95516.6
-			Rents	92394.24
-	AZ	Oil & Gas (Non-Royalty)	Rents	13332
-		Sodium	Rents	-12
-	CA	Gas	Royalties	1200758.62
-		Geothermal	Other Revenues	36708.24
-			Rents	86812
-			Royalties	7773885.57
-		Hardrock	Rents	42
-		NGL	Royalties	364447.99
-		Oil	Royalties	44023454.1
-		Oil & Gas (Non-Royalty)	Other Revenues	253647.18
-			Rents	160455
-		Sodium	Other Revenues	-2571.08
-			Rents	49
-			Royalties	9922697.04
-	CO	CO2	Royalties	44342735.48
-		Coal	Bonus	319296
-			Other Revenues	59228.99
-			Rents	149553.54
-			Royalties	36299727.15
-		Gas	Royalties	63008750.24
-		Geothermal	Rents	27462
-		Helium	Royalties	60.89
-		NGL	Royalties	10835982.22
-		Oil	Royalties	23589207.97
-		Oil  	Rents	932
-		Oil & Gas (Non-Royalty)	Bonus	10251733
-			Other Revenues	5860836.6
-			Rents	2256112.12
-		Potassium	Rents	4360.5
-		Sodium	Other Revenues	40316.81
-			Rents	13326
-			Royalties	2056107.18
-	FL	Phosphate	Other Revenues	1951
-			Royalties	1076705.37
-	ID	Gas	Royalties	50762.46
-		Geothermal	Rents	153636
-		Hardrock	Other Revenues	366
-			Rents	81
-		NGL	Royalties	13723.86
-		Oil	Royalties	45386.96
-		Oil & Gas (Non-Royalty)	Bonus	352427
-			Other Revenues	184.12
-			Rents	31015.5
-		Phosphate	Other Revenues	115979.59
-			Rents	4630
-			Royalties	9512611.44
-	IL	Oil	Royalties	78377.28
-		Oil & Gas (Non-Royalty)	Other Revenues	140
-	IN	Oil & Gas (Non-Royalty)	Other Revenues	729.06
-			Rents	22588
-	KS	Gas	Royalties	783052.76
-		Helium	Royalties	666.2
-		NGL	Royalties	348838.75
-		Oil	Royalties	737930.44
-		Oil & Gas (Non-Royalty)	Other Revenues	77407.71
-			Rents	46893.93
-	KY	Coal	Bonus	17435
-			Other Revenues	231.15
-			Rents	9697
-			Royalties	326279.88
-		Gas	Royalties	20812.72
-		Oil	Royalties	43235.13
-		Oil & Gas (Non-Royalty)	Bonus	2760
-			Other Revenues	112504.79
-			Rents	7948
-	LA	Gas	Royalties	2814236.97
-		NGL	Royalties	259914.18
-		Oil	Royalties	2180216.04
-		Oil & Gas (Non-Royalty)	Bonus	652309
-			Other Revenues	-13882.74277
-			Rents	483319
-	MD	Oil & Gas (Non-Royalty)	Other Revenues	16271.61
-			Rents	496
-	MI	Gas	Royalties	331687.11
-		Hardrock	Other Revenues	48660
-			Rents	5569
-		NGL	Royalties	21394.28
-		Oil	Royalties	76351.3
-		Oil & Gas (Non-Royalty)	Bonus	457512
-			Other Revenues	10097.34
-			Rents	150629.5
-	MO	Hardrock	Other Revenues	47514
-			Rents	28003
-			Royalties	7632271.2
-	MS	Gas	Royalties	25889.3
-		Oil	Royalties	2142809.81
-		Oil & Gas (Non-Royalty)	Bonus	69682
-			Other Revenues	5164.1
-			Rents	489951
-	MT	Coal	Other Revenues	77.31
-			Rents	111576
-			Royalties	29402069.96
-		Gas	Royalties	859817.97
-		Hardrock	Other Revenues	-474
-			Rents	97
-		NGL	Royalties	45703.11
-		Oil	Royalties	6910888.45
-		Oil & Gas (Non-Royalty)	Bonus	38072
-			Other Revenues	348763.27
-			Rents	719577.5
-		Phosphate	Other Revenues	4227
-		Sulfur	Royalties	870.92
-	ND	Coal	Rents	31188
-			Royalties	2804094.53
-		Gas	Royalties	8387222.41
-		NGL	Royalties	260886.37
-		Oil	Other Revenues	-12816.46
-			Royalties	100414406.1
-		Oil & Gas (Non-Royalty)	Bonus	36400
-			Other Revenues	483459.5
-			Rents	385792.54
-	NE	Gas	Royalties	660.91
-		Oil	Royalties	91252.46
-		Oil & Gas (Non-Royalty)	Other Revenues	32597.09
-			Rents	2247
-	NM	CO2	Royalties	679168.56
-		Coal	Bonus	460000
-			Other Revenues	51784.92
-			Rents	78234
-			Royalties	12440845.41
-		Gas	Royalties	187532672
-		Geothermal	Other Revenues	2723.63
-			Rents	27630
-			Royalties	26388.55
-		NGL	Other Revenues	-13.57
-			Royalties	46540146.95
-		Oil	Royalties	366395661
-		Oil & Gas (Non-Royalty)	Bonus	28525050
-			Other Revenues	603895.56
-			Rents	1141587.13
-		Potassium	Bonus	292376
-			Other Revenues	332194.17
-			Rents	27954.5
-			Royalties	9549574.84
-		Sodium	Other Revenues	265.31
-			Royalties	716012.16
-	NV	Geothermal	Other Revenues	233428.77
-			Rents	901736.72
-			Royalties	3440869.3
-		Oil	Royalties	1154270.35
-		Oil & Gas (Non-Royalty)	Bonus	24740
-			Other Revenues	9818.53
-			Rents	1599337
-		Potassium	Other Revenues	7503
-			Rents	2501
-			Royalties	1657.83
-	NY	Gas	Royalties	614.32
-		Oil & Gas (Non-Royalty)	Other Revenues	810.8
-	OH	Gas	Royalties	64126
-		Oil	Royalties	73767.58
-		Oil & Gas (Non-Royalty)	Other Revenues	58568.49
-			Rents	20888.5
-	OK	Coal	Other Revenues	36.96
-			Rents	19833
-			Royalties	673175.86
-		Gas	Other Revenues	461.28
-			Royalties	4334931.44
-		NGL	Royalties	989407.56
-		Oil	Royalties	6932864.95
-		Oil & Gas (Non-Royalty)	Other Revenues	-27828.6
-			Rents	206586.28
-	OR	Geothermal	Other Revenues	50927.15
-			Rents	133235
-	PA	Gas	Royalties	1364.79
-		NGL	Royalties	546.54
-		Oil	Royalties	4568.62
-		Oil & Gas (Non-Royalty)	Other Revenues	107976.93
-			Rents	6735
-	SC	Hardrock	Other Revenues	3330
-	SD	Gas	Royalties	13970.15
-		Oil	Royalties	536692.87
-		Oil & Gas (Non-Royalty)	Bonus	26320
-			Other Revenues	11013.04
-			Rents	185086
-	TX	CO2	Royalties	1314.73
-		Gas	Royalties	1841583.25
-		NGL	Royalties	6887105.31
-		Oil	Royalties	2040230.51
-		Oil & Gas (Non-Royalty)	Other Revenues	217180.84
-			Rents	412378.77
-	UT	Clay	Other Revenues	930.46
-			Royalties	8463.93
-		CO2	Royalties	109048.69
-		Coal	Bonus	3440000
-			Other Revenues	2971903.11
-			Rents	249712
-			Royalties	32519176.93
-		Gas	Royalties	42293218.8
-		Geothermal	Bonus	19140.5
-			Rents	81309
-			Royalties	344995.43
-		Gilsonite	Other Revenues	5658
-			Rents	1309
-			Royalties	1417560.95
-		Gold	Other Revenues	1953
-			Rents	651
-		NGL	Royalties	4988579.26
-		Oil	Royalties	39338198.58
-		Oil  	Rents	320
-		Oil & Gas (Non-Royalty)	Bonus	175884.25
-			Other Revenues	-1924498.73
-			Rents	1265175.49
-		Phosphate	Other Revenues	24360
-		Potassium	Other Revenues	377805.12
-			Rents	-6590
-			Royalties	178067.92
-		Sodium	Royalties	2486.61
-	VA	Gas	Royalties	17258.89
-		Hardrock	Other Revenues	1065
-			Rents	355
-		Oil & Gas (Non-Royalty)	Other Revenues	15927.75
-			Rents	21254
-	WA	Coal	Royalties	1195.88
-		Geothermal	Rents	8437
-	WV	Gas	Royalties	22882.15
-		Oil & Gas (Non-Royalty)	Other Revenues	398291.73
-			Rents	8630
-	WY	CO2	Royalties	4061979.65
-		Coal	Bonus	307860637.3
-			Other Revenues	-7903.3
-			Rents	603237.24
-			Royalties	397070065.6
-		Gas	Other Revenues	1730.6
-			Royalties	256254081
-		NGL	Other Revenues	1195.89
-			Royalties	42256118.42
-		Oil	Royalties	163944345.9
-		Oil & Gas (Non-Royalty)	Bonus	10311853
-			Other Revenues	1783951.85
-			Rents	7388340.56
-		Sodium	Bonus	424121.28
-			Other Revenues	93888.44
-			Rents	-30929.5
-			Royalties	33162755.99
-		Sulfur	Royalties	221509.11
 2006	AK	Coal	Rents	5120
 		Gas	Other Revenues	180625.92
 			Royalties	13993320.68
@@ -313,11 +52,9 @@ CY	St	Commodity	Revenue Type	Total
 			Royalties	48424625.79
 		Gas	Royalties	162935102.3
 		NGL	Royalties	4601849.2
-		Oil	Other Revenues	-180.38
-			Rents	-0.9
+		Oil	Other Revenues	19814.62
+			Rents	15241.1
 			Royalties	33952941.97
-		Oil  	Other Revenues	19995
-			Rents	15242
 		Oil & Gas (Non-Royalty)	Bonus	27263502.5
 			Other Revenues	265694.15
 			Rents	6432194.33
@@ -482,11 +219,10 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	601829.76
 	UT	Clay	Other Revenues	163.94
 			Rents	314
-			Royalties	3219.45
 		Coal	Bonus	4264820
 			Other Revenues	-479838.62
 			Rents	237027
-			Royalties	27167183.6
+			Royalties	27170403.05
 		Gas	Royalties	153622021.2
 		Geothermal	Other Revenues	2166.34
 			Rents	23457
@@ -757,11 +493,10 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	602523.9
 	UT	Clay	Other Revenues	462
 			Rents	314
-			Royalties	5306.17
 		Coal	Bonus	2012040
 			Other Revenues	76870.09
 			Rents	103173
-			Royalties	22826036.5
+			Royalties	22831342.67
 		Gas	Royalties	120192052.9
 		Geothermal	Other Revenues	5224.66
 			Rents	3854
@@ -1030,12 +765,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	653198.14
 	UT	Clay	Other Revenues	942
 			Rents	314
-			Royalties	3746.92
 		CO2	Royalties	65886.12
 		Coal	Bonus	661980.59
 			Other Revenues	34269.29
 			Rents	164844
-			Royalties	25060607.58
+			Royalties	25064354.5
 		Gas	Royalties	215187409.4
 		Geothermal	Other Revenues	5969.56
 			Rents	19933
@@ -1147,8 +881,8 @@ CY	St	Commodity	Revenue Type	Total
 			Royalties	41577742.66
 		Gas	Royalties	86565098.51
 		NGL	Royalties	3051157.85
-		Oil	Royalties	22533013.54
-		Oil  	Other Revenues	50000
+		Oil	Other Revenues	50000
+			Royalties	22533013.54
 		Oil & Gas (Non-Royalty)	Bonus	6264658.5
 			Other Revenues	1499987.94
 			Rents	6384477.12
@@ -1309,12 +1043,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	669316.5
 	UT	Clay	Other Revenues	942
 			Rents	314
-			Royalties	1015.94
 		CO2	Royalties	45598
 		Coal	Bonus	582800
 			Other Revenues	49598.5
 			Rents	248943
-			Royalties	21367992.07
+			Royalties	21369008.01
 		Gas	Royalties	101872063.7
 		Geothermal	Bonus	8750765
 			Other Revenues	5581.33
@@ -1580,12 +1313,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	540658.33
 	UT	Clay	Other Revenues	462
 			Rents	154
-			Royalties	2457.02
 		CO2	Royalties	78833.31
 		Coal	Bonus	663440
 			Other Revenues	546714.66
 			Rents	256074.69
-			Royalties	23761390.1
+			Royalties	23763847.12
 		Gas	Royalties	140906694.5
 		Geothermal	Bonus	413534
 			Other Revenues	5214.31
@@ -1689,8 +1421,8 @@ CY	St	Commodity	Revenue Type	Total
 		Helium	Royalties	58.22
 		NGL	Other Revenues	156525.92
 			Royalties	23988178.87
-		Oil	Royalties	40323912.49
-		Oil  	Rents	1252
+		Oil	Rents	1252
+			Royalties	40323912.49
 		Oil & Gas (Non-Royalty)	Bonus	867492
 			Other Revenues	8722842.47
 			Rents	5308286.79
@@ -1853,12 +1585,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	468808.97
 	UT	Clay	Other Revenues	462
 			Rents	314
-			Royalties	3761.28
 		CO2	Royalties	92067.76
 		Coal	Bonus	1475320
 			Other Revenues	-335049.51
 			Rents	245193.86
-			Royalties	23928635.03
+			Royalties	23932396.31
 		Gas	Royalties	112367150.7
 		Geothermal	Other Revenues	5886.06
 			Rents	432158
@@ -1963,8 +1694,8 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	16708
 		Helium	Royalties	55.43
 		NGL	Royalties	30306621.58
-		Oil	Royalties	46539157.43
-		Oil  	Rents	1860
+		Oil	Rents	1860
+			Royalties	46539157.43
 		Oil & Gas (Non-Royalty)	Bonus	9822960
 			Other Revenues	4272151.15
 			Rents	4743818.11
@@ -2130,12 +1861,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	417588.48
 	UT	Clay	Other Revenues	462
 			Rents	-6
-			Royalties	4185.31
 		CO2	Royalties	50036.18
 		Coal	Bonus	40320
 			Other Revenues	186979.23
 			Rents	258329.6
-			Royalties	37186454.34
+			Royalties	37190639.65
 		Gas	Royalties	92482070.08
 		Geothermal	Other Revenues	5190
 			Rents	391513
@@ -2144,8 +1874,8 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	-3201.5
 			Royalties	3405726.5
 		NGL	Royalties	33235428.97
-		Oil	Royalties	121098760.9
-		Oil  	Rents	320
+		Oil	Rents	320
+			Royalties	121098760.9
 		Oil & Gas (Non-Royalty)	Bonus	50119492
 			Other Revenues	-1836610.9
 			Rents	4155967.62
@@ -2231,8 +1961,8 @@ CY	St	Commodity	Revenue Type	Total
 		Geothermal	Rents	28262
 		Helium	Royalties	66.23
 		NGL	Royalties	48063554.99
-		Oil	Royalties	47276400.22
-		Oil  	Rents	1556
+		Oil	Rents	1556
+			Royalties	47276400.22
 		Oil & Gas (Non-Royalty)	Bonus	3131195.5
 			Other Revenues	4530979.21
 			Rents	4228342.7
@@ -2389,12 +2119,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	481901.73
 	UT	Clay	Other Revenues	942
 			Rents	314
-			Royalties	4144.61
 		CO2	Royalties	24861.78
 		Coal	Bonus	40320
 			Other Revenues	6990.5
 			Rents	207588.2
-			Royalties	39455178.73
+			Royalties	39459323.34
 		Gas	Royalties	104952255.5
 		Geothermal	Other Revenues	5190
 			Rents	364597
@@ -2403,8 +2132,8 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	1826.5
 			Royalties	2895810.09
 		NGL	Royalties	27466174.21
-		Oil	Royalties	130370575.7
-		Oil  	Rents	320
+		Oil	Rents	320
+			Royalties	130370575.7
 		Oil & Gas (Non-Royalty)	Bonus	6144252
 			Other Revenues	3061794.77
 			Rents	3038547.72
@@ -2495,8 +2224,8 @@ CY	St	Commodity	Revenue Type	Total
 		Geothermal	Rents	25062
 		Helium	Royalties	68.42
 		NGL	Royalties	26867997.94
-		Oil	Royalties	54808148.76
-		Oil  	Rents	1556
+		Oil	Rents	1556
+			Royalties	54808148.76
 		Oil & Gas (Non-Royalty)	Bonus	774268
 			Other Revenues	1998863.24
 			Rents	3441737.57
@@ -2652,12 +2381,11 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	475081.34
 	UT	Clay	Other Revenues	-2378.32
 			Rents	-2962
-			Royalties	6092.47
 		CO2	Royalties	26048.23
 		Coal	Bonus	200000
 			Other Revenues	623427.83
 			Rents	231197.89
-			Royalties	40397460.75
+			Royalties	40403553.22
 		Gas	Royalties	111097869.6
 		Geothermal	Other Revenues	104.41
 			Rents	265927
@@ -2666,8 +2394,8 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	-1315.5
 			Royalties	1951014.88
 		NGL	Royalties	38758939.5
-		Oil	Royalties	138294179.2
-		Oil  	Rents	320
+		Oil	Rents	320
+			Royalties	138294179.2
 		Oil & Gas (Non-Royalty)	Bonus	6056557.5
 			Other Revenues	1379197.87
 			Rents	3027441.76
@@ -2753,8 +2481,8 @@ CY	St	Commodity	Revenue Type	Total
 		Geothermal	Rents	32262
 		Helium	Royalties	56.28
 		NGL	Royalties	5718473.46
-		Oil	Royalties	33963587.39
-		Oil  	Rents	664
+		Oil	Rents	664
+			Royalties	33963587.39
 		Oil & Gas (Non-Royalty)	Bonus	-15144777
 			Other Revenues	-2393199.26
 			Rents	3050316.96
@@ -2905,12 +2633,11 @@ CY	St	Commodity	Revenue Type	Total
 			Other Revenues	-585184.52
 			Rents	374385.5
 	UT	Clay	Other Revenues	589.66
-			Royalties	8109.91
 		CO2	Royalties	29713.79
 		Coal	Bonus	3412797.97
 			Other Revenues	494402.88
 			Rents	267472.15
-			Royalties	28213154.65
+			Royalties	28221264.56
 		Gas	Royalties	69043198.78
 		Geothermal	Rents	63049
 			Royalties	629061.2
@@ -2920,8 +2647,8 @@ CY	St	Commodity	Revenue Type	Total
 		Gold	Other Revenues	1953
 			Rents	651
 		NGL	Royalties	8339714.75
-		Oil	Royalties	64882036.38
-		Oil  	Rents	320
+		Oil	Rents	320
+			Royalties	64882036.38
 		Oil & Gas (Non-Royalty)	Bonus	5776815
 			Other Revenues	-6035964.12
 			Rents	2046731.01
@@ -2958,4 +2685,268 @@ CY	St	Commodity	Revenue Type	Total
 			Rents	-39583
 			Royalties	34420375.38
 		Sulfur	Royalties	-257513.23
-Grand Total				45078611904
+2016	AK	Gas	Royalties	7243250.7
+		Geothermal	Rents	7680
+		NGL	Royalties	20897.46
+		Oil	Royalties	2518813.08
+		Oil & Gas (Non-Royalty)	Bonus	788680
+			Other Revenues	215438.57
+			Rents	3199177.74
+	AL	Coal	Other Revenues	145960.78
+			Rents	4830
+			Royalties	59038.86
+		Gas	Royalties	114999.22
+		NGL	Royalties	1046.99
+		Oil	Royalties	250122.63
+		Oil & Gas (Non-Royalty)	Bonus	-240
+			Other Revenues	-15430.15
+			Rents	112148.5
+		Sulfur	Royalties	1350.48
+	AR	Gas	Royalties	3273280.74
+		Hardrock	Other Revenues	1235.5
+			Rents	140
+			Royalties	138.5
+		NGL	Royalties	8.71
+		Oil	Royalties	5.34
+		Oil & Gas (Non-Royalty)	Bonus	38
+			Other Revenues	95516.6
+			Rents	92394.24
+	AZ	Oil & Gas (Non-Royalty)	Rents	13332
+		Sodium	Rents	-12
+	CA	Gas	Royalties	1200758.62
+		Geothermal	Other Revenues	36708.24
+			Rents	86812
+			Royalties	7773772.48
+		Hardrock	Rents	42
+		NGL	Royalties	364447.99
+		Oil	Royalties	44023454.1
+		Oil & Gas (Non-Royalty)	Other Revenues	253647.18
+			Rents	160455
+		Sodium	Other Revenues	-2571.08
+			Rents	49
+			Royalties	9922697.04
+		Sulfur	Royalties	113.09
+	CO	CO2	Royalties	44342735.48
+		Coal	Bonus	319296
+			Other Revenues	59228.99
+			Rents	149553.54
+			Royalties	36299727.15
+		Gas	Royalties	63008750.24
+		Geothermal	Rents	27462
+		Helium	Royalties	60.89
+		NGL	Royalties	10835982.22
+		Oil	Royalties	23589207.97
+		Oil & Gas (Non-Royalty)	Bonus	10251733
+			Other Revenues	5860836.6
+			Rents	2256112.12
+		Oil Shale	Rents	932
+		Potassium	Rents	4360.5
+		Sodium	Other Revenues	40316.81
+			Rents	13326
+			Royalties	2056107.18
+	FL	Phosphate	Other Revenues	1951
+			Royalties	1076705.37
+	ID	Gas	Royalties	50762.46
+		Gemstones	Other Revenues	240
+		Geothermal	Rents	153636
+		Hardrock	Other Revenues	126
+			Rents	81
+		NGL	Royalties	13723.86
+		Oil	Royalties	45386.96
+		Oil & Gas (Non-Royalty)	Bonus	352427
+			Other Revenues	184.12
+			Rents	31015.5
+		Phosphate	Other Revenues	115979.59
+			Rents	4630
+			Royalties	9512611.44
+	IL	Oil	Royalties	78377.28
+		Oil & Gas (Non-Royalty)	Other Revenues	140
+	IN	Oil & Gas (Non-Royalty)	Other Revenues	729.06
+			Rents	22588
+	KS	Gas	Royalties	783052.76
+		Helium	Royalties	666.2
+		NGL	Royalties	348838.75
+		Oil	Royalties	737930.44
+		Oil & Gas (Non-Royalty)	Other Revenues	77407.71
+			Rents	46893.93
+	KY	Coal	Bonus	17435
+			Other Revenues	231.15
+			Rents	9697
+			Royalties	326279.88
+		Gas	Royalties	20812.72
+		Oil	Royalties	43235.13
+		Oil & Gas (Non-Royalty)	Bonus	2760
+			Other Revenues	112504.79
+			Rents	7948
+	LA	Gas	Royalties	2814236.97
+		NGL	Royalties	259914.18
+		Oil	Royalties	2180216.04
+		Oil & Gas (Non-Royalty)	Bonus	652309
+			Other Revenues	-13882.74277
+			Rents	483319
+	MD	Oil & Gas (Non-Royalty)	Other Revenues	16271.61
+			Rents	496
+	MI	Gas	Royalties	331687.11
+		NGL	Royalties	21394.28
+		Oil	Royalties	76351.3
+		Oil & Gas (Non-Royalty)	Bonus	457512
+			Other Revenues	10097.34
+			Rents	150629.5
+	MN	Copper	Other Revenues	26110
+			Rents	2611
+		Hardrock	Other Revenues	22550
+			Rents	2958
+	MO	Hardrock	Other Revenues	47514
+			Rents	28003
+			Royalties	7632271.2
+	MS	Gas	Royalties	25889.3
+		Oil	Royalties	2142809.81
+		Oil & Gas (Non-Royalty)	Bonus	69682
+			Other Revenues	5164.1
+			Rents	489951
+	MT	Coal	Other Revenues	77.31
+			Rents	111576
+			Royalties	29402069.96
+		Gas	Royalties	859817.97
+		Hardrock	Rents	97
+		NGL	Royalties	45703.11
+		Oil	Royalties	6910888.45
+		Oil & Gas (Non-Royalty)	Bonus	38072
+			Other Revenues	348763.27
+			Rents	719577.5
+		Phosphate	Other Revenues	4227
+		Sulfur	Royalties	870.92
+	NC	Hardrock	Other Revenues	-474
+	ND	Coal	Rents	31188
+			Royalties	2804094.53
+		Gas	Royalties	8387222.41
+		NGL	Royalties	260886.37
+		Oil	Other Revenues	-12816.46
+			Royalties	100414406.1
+		Oil & Gas (Non-Royalty)	Bonus	36400
+			Other Revenues	483459.5
+			Rents	385792.54
+	NE	Gas	Royalties	660.91
+		Oil	Royalties	91252.46
+		Oil & Gas (Non-Royalty)	Other Revenues	32597.09
+			Rents	2247
+	NM	CO2	Royalties	679168.56
+		Coal	Bonus	460000
+			Other Revenues	51784.92
+			Rents	78234
+			Royalties	12440845.41
+		Gas	Royalties	187532672
+		Geothermal	Other Revenues	2723.63
+			Rents	27630
+			Royalties	26388.55
+		NGL	Other Revenues	-13.57
+			Royalties	46540146.95
+		Oil	Royalties	366395661
+		Oil & Gas (Non-Royalty)	Bonus	28525050
+			Other Revenues	603895.56
+			Rents	1141587.13
+		Potassium	Bonus	292376
+			Other Revenues	332194.17
+			Rents	27954.5
+			Royalties	9549574.84
+		Sodium	Other Revenues	265.31
+			Royalties	716012.16
+	NV	Geothermal	Other Revenues	233428.77
+			Rents	901736.72
+			Royalties	3440869.3
+		Oil	Royalties	1154270.35
+		Oil & Gas (Non-Royalty)	Bonus	24740
+			Other Revenues	9818.53
+			Rents	1599337
+		Potassium	Other Revenues	7503
+			Rents	2501
+			Royalties	1657.83
+	NY	Gas	Royalties	614.32
+		Oil & Gas (Non-Royalty)	Other Revenues	810.8
+	OH	Gas	Royalties	64126
+		Oil	Royalties	73767.58
+		Oil & Gas (Non-Royalty)	Other Revenues	58568.49
+			Rents	20888.5
+	OK	Coal	Other Revenues	36.96
+			Rents	19833
+			Royalties	673175.86
+		Gas	Other Revenues	461.28
+			Royalties	4334931.44
+		NGL	Royalties	989407.56
+		Oil	Royalties	6932864.95
+		Oil & Gas (Non-Royalty)	Other Revenues	-27828.6
+			Rents	206586.28
+	OR	Geothermal	Other Revenues	50927.15
+			Rents	133235
+	PA	Gas	Royalties	1364.79
+		NGL	Royalties	546.54
+		Oil	Royalties	4568.62
+		Oil & Gas (Non-Royalty)	Other Revenues	107976.93
+			Rents	6735
+	SC	Hardrock	Other Revenues	3330
+	SD	Gas	Royalties	13970.15
+		Oil	Royalties	536692.87
+		Oil & Gas (Non-Royalty)	Bonus	26320
+			Other Revenues	11013.04
+			Rents	185086
+	TX	CO2	Royalties	1314.73
+		Gas	Royalties	1841583.25
+		NGL	Royalties	6887105.31
+		Oil	Royalties	2040230.51
+		Oil & Gas (Non-Royalty)	Other Revenues	217180.84
+			Rents	412378.77
+	UT	Clay	Other Revenues	930.46
+		CO2	Royalties	109048.69
+		Coal	Bonus	3440000
+			Other Revenues	2971903.11
+			Rents	249712
+			Royalties	32527640.86
+		Gas	Royalties	42293218.8
+		Geothermal	Bonus	19140.5
+			Rents	81309
+			Royalties	344995.43
+		Gilsonite	Other Revenues	5658
+			Rents	1309
+			Royalties	1417560.95
+		Gold	Other Revenues	1953
+			Rents	651
+		NGL	Royalties	4988579.26
+		Oil	Royalties	39338198.58
+		Oil & Gas (Non-Royalty)	Bonus	175884.25
+			Other Revenues	-1924498.73
+			Rents	1265175.49
+		Oil Shale	Rents	320
+		Phosphate	Other Revenues	24360
+		Potassium	Other Revenues	377805.12
+			Rents	-6590
+			Royalties	178067.92
+		Sodium	Royalties	2486.61
+	VA	Gas	Royalties	17258.89
+		Hardrock	Other Revenues	1065
+			Rents	355
+		Oil & Gas (Non-Royalty)	Other Revenues	15927.75
+			Rents	21254
+	WA	Coal	Royalties	1195.88
+		Geothermal	Rents	8437
+	WV	Gas	Royalties	22882.15
+		Oil & Gas (Non-Royalty)	Other Revenues	398291.73
+			Rents	8630
+	WY	CO2	Royalties	4061979.65
+		Coal	Bonus	307860637.3
+			Other Revenues	-7903.3
+			Rents	603237.24
+			Royalties	397070065.6
+		Gas	Other Revenues	1730.6
+			Royalties	256254081
+		NGL	Other Revenues	1195.89
+			Royalties	42256118.42
+		Oil	Royalties	163943745.9
+		Oil & Gas (Non-Royalty)	Bonus	10311853
+			Other Revenues	1783951.85
+			Rents	7388340.56
+		Sodium	Bonus	424121.28
+			Other Revenues	93888.44
+			Rents	-30929.5
+			Royalties	33162755.99
+		Sulfur	Royalties	221509.11
+Grand Total				45078611343

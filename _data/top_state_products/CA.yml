@@ -1049,6 +1049,12 @@ revenue:
     - product: Geothermal
       name: null
       units: null
-      value: 7897405.81
+      value: 7897292.72
       rank: 1
       percent: 59.1
+    - product: Sulfur
+      name: null
+      units: null
+      value: 113.09
+      rank: 4
+      percent: 0

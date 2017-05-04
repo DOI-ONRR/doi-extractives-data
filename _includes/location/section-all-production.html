@@ -4,7 +4,12 @@
 {% assign year_list = year_range | to_list %}
 {% assign commodity_names = site.data.commodity_names %}
 
-<section id="all-production" is="year-switcher-section" class="all-lands production">
+{% assign this_section = 'All production' %}
+{% assign this_section_slug = this_section | slugify %}
+{% assign filterable_section_slugs = filterable_section_slugs | push: this_section_slug %}
+{% assign filterable_section_names = filterable_section_names | push: this_section %}
+
+<section id="all-production" is="year-switcher-section" class="all-lands production" filter-item="{{ this_section_slug }}">
   <div is="filter-section" filter-section-name="all-production">
     {% assign header_text = 'Energy production in the entire state of {{ state_name }}' | liquify %}
     {%

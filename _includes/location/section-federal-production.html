@@ -4,7 +4,12 @@
 {% assign county_federal_products = site.data.federal_county_production[state_id] %}
 {% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
 
-<section id="federal-production" class="federal production">
+{% assign this_section = 'Federal production' %}
+{% assign this_section_slug = this_section | slugify %}
+{% assign filterable_section_slugs = filterable_section_slugs | push: this_section_slug %}
+{% assign filterable_section_names = filterable_section_names | push: this_section %}
+
+<section id="federal-production" class="federal production" filter-item="{{ this_section_slug }}">
   <div is="filter-section">
     <section class="county-map-table" is="year-switcher-section">
 

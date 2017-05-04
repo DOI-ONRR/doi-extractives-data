@@ -4,7 +4,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 
 
   .chart-list_caption {
@@ -99,24 +99,34 @@
   .chart-item {
     @include span-columns(12);
 
+    @mixin flexbox-reset() {
+      display: flex;
+      margin: 0;
+      padding: 0 !important;
+
+      &:last-of-type {
+        margin-right: 33%;
+      }
+    }
+
     @include respond-to(small-down) {
       @include omega();
-      display: flex;
+      @include flexbox-reset();
     }
 
     @include respond-to(small-up) {
       @include span-columns(4);
-      display: flex;
+      @include flexbox-reset();
     }
 
     @include respond-to(medium-up) {
       @include span-columns(6);
-      display: flex;
+      @include flexbox-reset();
     }
 
     @include respond-to(large-up) {
       @include span-columns(4);
-      display: flex;
+      @include flexbox-reset();
     }
 
     border-top: none;
@@ -147,21 +157,6 @@
   .full-width {
     @include span-columns(12);
     @include omega();
-  }
-
-  &:not(.has-intro) {
-
-    @include respond-to(small-to-medium) {
-      @include chart-columns(3);
-    }
-
-    @include respond-to(medium-to-large) {
-      @include chart-columns(2);
-    }
-
-    @include respond-to(large-up) {
-      @include chart-columns(3);
-    }
   }
 
   .chart-container {

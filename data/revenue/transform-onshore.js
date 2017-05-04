@@ -6,9 +6,7 @@ module.exports = {
   state:        'St',
   county:       'County Name',
   fips:         'FIPS',
-  revenue_type: function(d) {
-    return d['Revenue Type'].strip();
-  },
+  revenue_type: 'Revenue Type',
   lease_type:   'Mineral Lease Type',
   commodity:    'Commodity',
   product:      'Product',

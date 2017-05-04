@@ -22,7 +22,7 @@ Gulf:
       '2015':
         revenue: 4037546750
       '2016':
-        revenue: 2720717176
+        revenue: 2720717174
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1393848503
@@ -45,7 +45,7 @@ Gulf:
       '2015':
         revenue: 780135065
       '2016':
-        revenue: 310808337
+        revenue: 310808336
     Oil:
       '2006':
         revenue: 3384252522
@@ -91,7 +91,7 @@ Gulf:
       '2015':
         revenue: 326378389
       '2016':
-        revenue: 195847232
+        revenue: 195847231
     NGL:
       '2006':
         revenue: 152210997
@@ -114,7 +114,7 @@ Gulf:
       '2015':
         revenue: 73781641
       '2016':
-        revenue: 62005132
+        revenue: 62005133
     Sulfur:
       '2006':
         revenue: 21191
@@ -137,7 +137,7 @@ Gulf:
       '2015':
         revenue: 9576
       '2016':
-        revenue: 2727
+        revenue: 2743
     Sodium:
       '2006':
         revenue: 2829
@@ -159,9 +159,8 @@ Gulf:
         revenue: 1908
       '2015':
         revenue: 10721
-    Other Products:
       '2016':
-        revenue: 4647
+        revenue: 4631
 Alaska:
   commodities:
     All:
@@ -257,7 +256,7 @@ Pacific:
       '2015':
         revenue: 82630184
       '2016':
-        revenue: 27417073
+        revenue: 27417072
     Oil:
       '2006':
         revenue: 217517814
@@ -371,7 +370,6 @@ Pacific:
         revenue: 24926
       '2015':
         revenue: 17108
-    Other Products:
       '2016':
         revenue: -9708
 None:

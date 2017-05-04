@@ -1254,7 +1254,7 @@ CA:
         rank: 4
         percent: 2.3
       '2015':
-        revenue: 76891906
+        revenue: 76891907
         rank: 4
         percent: 1.9
       '2016':
@@ -1384,7 +1384,7 @@ CA:
       '2016':
         revenue: 113
         rank: 4
-        percent: 0
+        percent: 0.1
 CO:
   commodities:
     All:
@@ -5312,7 +5312,7 @@ NV:
         percent: 0.1
     Geothermal:
       '2006':
-        revenue: 1752026
+        revenue: 1752025
         rank: 2
         percent: 13
       '2007':
@@ -5676,7 +5676,7 @@ None:
         rank: 14
         percent: 0.1
       '2016':
-        revenue: 3054701
+        revenue: 3054662
         rank: 16
         percent: 0.1
 OH:
@@ -8546,4 +8546,4 @@ WY:
       '2016':
         revenue: 221509
         rank: 1
-        percent: 97.8
+        percent: 102.1

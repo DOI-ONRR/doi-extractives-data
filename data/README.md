@@ -41,6 +41,8 @@ Then, in this directory, run:
 npm test
 ```
 
+**Note**: If the tests fail, it is likely that you will need to update the pivot table (generally a file prefixed with `pivot-`) for that data. Read instructions on [creating a pivot table](Create-pivot-table.md).
+
 See [this issue](https://github.com/18F/doi-extractives-data/issues/493) for
 some background on what we're aiming to do here. Progress on importing all of
 the data we need is tracked in

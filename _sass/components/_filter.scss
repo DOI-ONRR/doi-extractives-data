@@ -31,3 +31,28 @@
 [filter-item][aria-hidden=true] {
   display: none !important;
 }
+
+
+// Filter mode area
+
+body.filter-mode {
+
+  .sticky_nav-nav_item[data-active=true] {
+    color: $gray;
+  }
+
+  .layout-state-pages {
+    section:not(.container):target {
+      // background-color: peachpuff;
+      padding: 16px;
+      border: 3px solid $gray;
+      cursor: pointer;
+    }
+
+    .sticky_nav-nav_item + ul[aria-hidden=true] {
+      display: none;
+    }
+  }
+}
+
+

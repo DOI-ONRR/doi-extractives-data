@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign year = page.data_year | to_s %}
+{% assign default_year = year %}
 {% assign report_year = page.report_year %}
 {% assign material_variance = site.data.material_variances %}
 {% assign explanations = material_variance.explanations[page.data_year] %}

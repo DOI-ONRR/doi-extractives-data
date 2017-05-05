@@ -3,260 +3,267 @@ federal_production:
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 507546
+      value: 19521
       rank: 1
-      percent: 2600
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 5801198
-      rank: 1
-      percent: 2500
+      percent: 100
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1426880
+      value: 54880
       rank: 1
-      percent: 2500
+      percent: 99.91
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 223123
+      rank: 1
+      percent: 99.45
   '2007':
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 5751148
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1455168
+      value: 55968
       rank: 1
-      percent: 2500
+      percent: 99.77
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 221198
+      rank: 1
+      percent: 99.27
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 284934
+      value: 10959
       rank: 1
-      percent: 2200
+      percent: 86.56
   '2008':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 309660
-      rank: 1
-      percent: 2500
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 5289232
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1181726
+      value: 45451
       rank: 1
-      percent: 2500
+      percent: 99.84
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 203432
+      rank: 1
+      percent: 99.52
+    - product: Copper Concentrate (tons)
+      name: Copper Concentrate
+      units: tons
+      value: 11910
+      rank: 1
+      percent: 98.17
   '2009':
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 5047926
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1307176
+      value: 50276
       rank: 1
-      percent: 2500
+      percent: 99.86
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 194151
+      rank: 1
+      percent: 98.95
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 226902
+      value: 8727
       rank: 1
-      percent: 2300
+      percent: 89.93
   '2010':
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1131598
+      value: 43523
       rank: 1
-      percent: 2600
+      percent: 100
     - product: Lead Concentrate (tons)
       name: Lead Concentrate
       units: tons
-      value: 4793386
+      value: 184361
       rank: 1
-      percent: 2500
+      percent: 99.72
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 233298
+      value: 8973
       rank: 1
-      percent: 2200
+      percent: 88.41
   '2011':
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 4591106
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1137864
+      value: 43764
       rank: 1
-      percent: 2500
+      percent: 99.83
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 176581
+      rank: 1
+      percent: 99.12
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 218062
+      value: 8387
       rank: 1
-      percent: 2300
+      percent: 92
   '2012':
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 847470
+      value: 32595
       rank: 1
-      percent: 2600
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 579904
-      rank: 1
-      percent: 2500
+      percent: 100
     - product: Lead Concentrate (tons)
       name: Lead Concentrate
       units: tons
-      value: 4030884
+      value: 155034
       rank: 1
-      percent: 2500
+      percent: 98.43
+    - product: Copper Concentrate (tons)
+      name: Copper Concentrate
+      units: tons
+      value: 22304
+      rank: 1
+      percent: 97.25
   '2013':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 401648
-      rank: 1
-      percent: 2500
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 3795558
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1050868
+      value: 40418
       rank: 1
-      percent: 2500
+      percent: 100
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 145983
+      rank: 1
+      percent: 99.44
+    - product: Copper Concentrate (tons)
+      name: Copper Concentrate
+      units: tons
+      value: 15448
+      rank: 1
+      percent: 99.17
   '2014':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 527358
-      rank: 1
-      percent: 2500
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 3725046
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 1160926
+      value: 44651
       rank: 1
-      percent: 2500
+      percent: 99.74
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 143271
+      rank: 1
+      percent: 99.32
+    - product: Copper Concentrate (tons)
+      name: Copper Concentrate
+      units: tons
+      value: 20283
+      rank: 1
+      percent: 98.65
   '2015':
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 3891628
-      rank: 1
-      percent: 2500
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
       units: tons
-      value: 964938
+      value: 37113
       rank: 1
-      percent: 2500
+      percent: 99.78
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 149678
+      rank: 1
+      percent: 97.87
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 637104
+      value: 24504
       rank: 1
-      percent: 2400
+      percent: 94.32
 revenue:
   '2006':
     - product: Hardrock
       name: null
       units: null
-      value: 8634190.7
+      value: 10497304.61
       rank: 1
       percent: 99.1
   '2007':
     - product: Hardrock
       name: null
       units: null
-      value: 14790652.33
+      value: 17756440.96
       rank: 1
-      percent: 99.09
+      percent: 99.3
   '2008':
     - product: Hardrock
       name: null
       units: null
-      value: 17885733.17
+      value: 14143709.94
       rank: 1
-      percent: 99.15
+      percent: 98.8
   '2009':
     - product: Hardrock
       name: null
       units: null
-      value: 8067490.28
+      value: 9329433.75
       rank: 1
-      percent: 97.85
+      percent: 98
   '2010':
     - product: Hardrock
       name: null
       units: null
-      value: 13114806.69
+      value: 13269998.71
       rank: 1
-      percent: 98.55
+      percent: 98.7
   '2011':
     - product: Hardrock
       name: null
       units: null
-      value: 15392999.83
+      value: 14848332.12
       rank: 1
-      percent: 98.95
+      percent: 98.9
   '2012':
     - product: Hardrock
       name: null
       units: null
-      value: 11886824.96
+      value: 11536511.55
       rank: 1
-      percent: 98.34
+      percent: 98.3
   '2013':
     - product: Hardrock
       name: null
       units: null
-      value: 9374829.73
+      value: 9373812.72
       rank: 1
-      percent: 98.53
+      percent: 98.7
   '2014':
     - product: Hardrock
       name: null
       units: null
-      value: 10762076.3
+      value: 10793697.47
       rank: 1
-      percent: 99.05
+      percent: 99.2
   '2015':
     - product: Hardrock
       name: null
       units: null
-      value: 10030045.06
+      value: 9243922.61
       rank: 1
-      percent: 99.37
+      percent: 99.3
+  '2016':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 7707788.21
+      rank: 1
+      percent: 99.6

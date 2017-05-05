@@ -3,183 +3,70 @@ federal_production:
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 165100
+      value: 6350
       rank: 1
-      percent: 2600
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 598
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 258624574
-      rank: 5
-      percent: 0
+      percent: 100
   '2007':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 62400
+      value: 2400
       rank: 1
-      percent: 2600
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 546
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 256726470
-      rank: 5
-      percent: 0
-  '2008':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 208
-      rank: 3
-      percent: 0
-  '2009':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 156
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 491642086
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 463863452
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 402447422
-      rank: 5
-      percent: 0
-  '2013':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 26
-      rank: 4
-      percent: 0
-  '2014':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 26
-      rank: 4
-      percent: 0
+      percent: 100
   '2015':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
-      value: 122226
+      value: 4701
       rank: 1
-      percent: 2600
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 52
+      percent: 100
+revenue:
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1982.08
       rank: 4
       percent: 0
-revenue:
   '2008':
-    - product: Oil & Gas (Non-Royalty)
-      name: null
-      units: null
-      value: 26703735.67
-      rank: 5
-      percent: 7.15
     - product: Hardrock
       name: null
       units: null
-      value: 6467.37
+      value: 5191.44
       rank: 4
-      percent: 0.04
-  '2009':
+      percent: 0
+  '2010':
     - product: Hardrock
       name: null
       units: null
-      value: 2570.93
+      value: 1331.05
       rank: 5
-      percent: 0.03
+      percent: 0
   '2013':
     - product: Hardrock
       name: null
       units: null
       value: 1346.91
       rank: 5
-      percent: 0.01
+      percent: 0
   '2014':
     - product: Hardrock
       name: null
       units: null
-      value: 1354
+      value: 1382.52
       rank: 5
-      percent: 0.01
+      percent: 0
   '2015':
     - product: Hardrock
       name: null
       units: null
-      value: 1402.52
+      value: 1374
       rank: 5
-      percent: 0.01
+      percent: 0
+  '2016':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1514
+      rank: 4
+      percent: 0

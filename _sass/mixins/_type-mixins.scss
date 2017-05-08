@@ -13,9 +13,9 @@
   @if $level == h1 {
     // bold 38/48
     color: $black;
-    font-size: 2rem; // 38px
+    font-size: 2.375rem; // 38px
     font-weight: $weight-bold;
-    line-height: 2.5rem; // 48px
+    line-height: 3rem; // 48px
   }
 
   @if $level == h2 {

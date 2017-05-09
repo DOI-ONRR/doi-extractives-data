@@ -43,8 +43,7 @@
       }
 
       root
-        .classed('full-screen', fullScreen)
-        .classed('container-page-inner-wrapper', fullScreen);
+        .classed('full-screen', fullScreen);
 
       navIsFull = !navIsFull;
     };

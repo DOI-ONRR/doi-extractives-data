@@ -42,7 +42,7 @@ all_production:
       units: bbl
       value: 391270000
       rank: 1
-      percent: 21.11
+      percent: 21.12
   '2008':
     - product: Natural Gas
       name: Natural Gas
@@ -61,7 +61,7 @@ all_production:
       units: bbl
       value: 406007000
       rank: 1
-      percent: 22.18
+      percent: 22.19
   '2009':
     - product: Natural Gas
       name: Natural Gas
@@ -80,7 +80,7 @@ all_production:
       units: bbl
       value: 399344000
       rank: 1
-      percent: 20.43
+      percent: 20.44
   '2010':
     - product: Natural Gas
       name: Natural Gas
@@ -112,7 +112,7 @@ all_production:
       units: bbl
       value: 528844000
       rank: 1
-      percent: 25.69
+      percent: 25.66
     - product: Wind
       name: Wind
       units: Mwh
@@ -131,7 +131,7 @@ all_production:
       units: bbl
       value: 722130000
       rank: 1
-      percent: 30.44
+      percent: 30.42
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -148,9 +148,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 923439000
+      value: 925024000
       rank: 1
-      percent: 34.01
+      percent: 33.94
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -173,9 +173,9 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 8663333000
+      value: 8659188000
       rank: 1
-      percent: 27.64
+      percent: 27.57
     - product: Wind
       name: Wind
       units: Mwh
@@ -192,15 +192,34 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 8763381000
+      value: 8801282000
       rank: 1
-      percent: 26.64
+      percent: 26.76
     - product: Wind
       name: Wind
       units: Mwh
-      value: 44959419.79
+      value: 44833365
       rank: 1
-      percent: 23.55
+      percent: 23.51
+  '2016':
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 1176041000
+      rank: 1
+      percent: 36.21
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 57550512.39
+      rank: 1
+      percent: 25.41
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 8099218000
+      rank: 1
+      percent: 24.81
 federal_production:
   '2011':
     - product: Gas (mcf)

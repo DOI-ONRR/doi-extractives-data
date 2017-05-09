@@ -138,7 +138,7 @@ describe('revenues by type', function() {
 
       for (var state in stateRevenuesByCommodity) {
         // Don't run None, it contains civil penalties and other conflicting values
-        if (state != 'None') {
+        if (state !== 'None') {
           var commodities = stateRevenuesByCommodity[state].commodities;
           var allByYear = {};
           var totalsByYear = {};

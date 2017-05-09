@@ -46,7 +46,7 @@ all_production:
       name: Wood and wood-derived fuels
       units: Mwh
       value: 3107493.58
-      rank: 2
+      rank: 3
       percent: 8.22
   '2013':
     - product: Wood and wood-derived fuels
@@ -66,6 +66,13 @@ all_production:
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
-      value: 3977587.17
-      rank: 2
-      percent: 9.39
+      value: 4392768.36
+      rank: 1
+      percent: 10.48
+  '2016':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4311430.67
+      rank: 1
+      percent: 10.64

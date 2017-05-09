@@ -45,7 +45,7 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 39410178.37
+      value: 39410178.4
       rank: 2
       percent: 14.27
   '2013':
@@ -78,15 +78,28 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 32302676.59
+      value: 31253851
       rank: 2
-      percent: 12.86
+      percent: 12.55
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 181275.79
+      value: 178804
       rank: 5
-      percent: 1.08
+      percent: 1.12
+  '2016':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 33699960.64
+      rank: 2
+      percent: 12.68
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 196804.29
+      rank: 5
+      percent: 1.13
 revenue:
   '2006':
     - product: Geothermal

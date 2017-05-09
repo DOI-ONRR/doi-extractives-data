@@ -74,7 +74,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 74735000
+      value: 74827000
       rank: 5
       percent: 3.63
   '2012':
@@ -82,14 +82,14 @@ all_production:
       name: Wind
       units: Mwh
       value: 8157585.18
-      rank: 4
+      rank: 5
       percent: 5.79
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 89863000
+      value: 91284000
       rank: 5
-      percent: 3.79
+      percent: 3.84
   '2013':
     - product: Wind
       name: Wind
@@ -100,16 +100,16 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 109566000
+      value: 118977000
       rank: 5
-      percent: 4.04
+      percent: 4.37
   '2014':
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 2310114000
+      value: 2331086000
       rank: 4
-      percent: 7.37
+      percent: 7.42
     - product: Wind
       name: Wind
       units: Mwh
@@ -126,9 +126,9 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 14017628.54
+      value: 14030897
       rank: 3
-      percent: 7.34
+      percent: 7.36
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -141,6 +141,25 @@ all_production:
       value: 157770000
       rank: 5
       percent: 4.59
+  '2016':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 19525655.57
+      rank: 3
+      percent: 8.62
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 2468312000
+      rank: 4
+      percent: 7.56
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 153653000
+      rank: 5
+      percent: 4.73
 federal_production:
   '2008':
     - product: Coal (tons)

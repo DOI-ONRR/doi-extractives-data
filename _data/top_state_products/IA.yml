@@ -45,7 +45,7 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 14032490.63
+      value: 14032492.27
       rank: 2
       percent: 9.96
   '2013':
@@ -66,6 +66,13 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 17877698.81
+      value: 17872631.68
       rank: 2
-      percent: 9.36
+      percent: 9.37
+  '2016':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 20049262.03
+      rank: 2
+      percent: 8.85

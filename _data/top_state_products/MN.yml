@@ -41,6 +41,13 @@ all_production:
       value: 6725695.43
       rank: 4
       percent: 5.6
+  '2012':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 8176217
+      rank: 4
+      percent: 5.81
 revenue:
   '2006':
     - product: Hardrock

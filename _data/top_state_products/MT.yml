@@ -59,6 +59,20 @@ all_production:
       value: 11482751
       rank: 5
       percent: 4.43
+  '2015':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 9887729
+      rank: 5
+      percent: 3.97
+  '2016':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 10183480.58
+      rank: 5
+      percent: 3.83
 federal_production:
   '2006':
     - product: Coal (tons)

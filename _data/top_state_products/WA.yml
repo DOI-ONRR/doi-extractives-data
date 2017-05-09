@@ -96,6 +96,13 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 74322445.16
+      value: 73404916.24
       rank: 1
-      percent: 29.59
+      percent: 29.47
+  '2016':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 76842757.21
+      rank: 1
+      percent: 28.91

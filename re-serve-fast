@@ -1,0 +1,10 @@
+#!/bin/sh
+
+LC_ALL="en_US.UTF-8" \
+rm -rf _site && bundle exec jekyll serve \
+  --watch \
+  --incremental \
+  --host 0.0.0.0  \
+  --trace \
+  --profile \
+  --config="_config.yml,_config-fast.yml" \

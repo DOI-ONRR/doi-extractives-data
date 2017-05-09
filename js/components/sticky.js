@@ -40,9 +40,8 @@
     });
   };
 
-  var throttledWatch = eiti.util.throttle(watch, 100);
   doc.on('scroll.sticky', watch);
-  win.on('resize.sticky', throttledWatch);
+  win.on('resize.sticky', watch);
 
   watch();
 

@@ -4,7 +4,7 @@ layout: default
 
 <section class="layout-content container-page-wrapper container-margin">
 
-  <article class="container-left-7">
+  <article class="{% if page.resource %}container-left-9{% else %}container-left-7 container-shift-reverse-2{% endif %}">
 
     {% if page.resource == 'oil' %}
       <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
@@ -51,19 +51,18 @@ layout: default
       {% endif %}
     {% endif %}
 
+    {% include case-studies/_maps.html %}
 
     {{ content | markdownify }}
 
   </article>
 
   {% if page.selector %}
-    <div class="{% unless page.resource %} sticky sticky_nav {% endunless %} {% if page.resource %} sticky-sibling {% endif %}container-right-5">
+    <div class="{% unless page.resource %} sticky sticky_nav {% endunless %} {% if page.resource %} sticky-sibling {% endif %}container-right-3">
 
       {% if page.resource %}
 
         {% include case-studies/_selector.html screen="desktop" %}
-
-        {% include case-studies/_maps.html screen="desktop" %}
 
       {% else %}
         {% if page.selector == 'list' %}

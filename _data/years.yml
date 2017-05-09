@@ -3,6 +3,12 @@ now: 2015
 
 default: [2006, 2015]
 
-exports: [2012, 2015]
+exports: [2006, 2015]
+
+revenue: [2007, 2016]
 
 self_employment: [2005, 2014]
+
+disbursements: 2016
+
+all_production: [2007, 2016]

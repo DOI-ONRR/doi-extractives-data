@@ -29,12 +29,7 @@ nav_items:
 selector: list
 ---
 
-
 > For years, natural gas production in the Haynesville Shale in the southern U.S. was too difficult and costly. However, in the mid- to late-2000s, advances in {{ "hydraulic fracturing" | term }} and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
-
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
 
 ## Geology and history
 
@@ -95,12 +90,12 @@ The table below highlights data sources used to compile this narrative, as well 
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

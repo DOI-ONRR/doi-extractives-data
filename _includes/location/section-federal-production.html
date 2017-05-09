@@ -2,7 +2,10 @@
 {% assign federal_products_num = federal_products | size %}
 {% assign units_map = site.data.production_units %}
 {% assign county_federal_products = site.data.federal_county_production[state_id] %}
-{% assign year_range = site.data.years.federal_production | default: site.data.years.default | jsonify %}
+
+{% assign year_range = site.data.years.federal_production | default: site.data.years.default %}
+{% assign year = year_range | last | to_s | default: default_year %}
+{% assign year_range = year_range | jsonify %}
 
 <section id="federal-production" class="federal production">
 

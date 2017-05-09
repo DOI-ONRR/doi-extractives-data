@@ -103,6 +103,16 @@
             parent.setAttribute('data-active', true);
           }
         }
+        if (window.location.hash) {
+          this.updateHash(name);
+        }
+      },
+
+      updateHash: function(id) {
+        var newUrl = window.location.origin +
+          window.location.pathname +
+          '#' + id;
+        window.history.pushState(null, null, newUrl);
       },
 
       update: function(el, name, parent) {

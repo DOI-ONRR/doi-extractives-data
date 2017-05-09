@@ -18,7 +18,7 @@ all_production:
       units: bbl
       value: 263595000
       rank: 2
-      percent: 14.22
+      percent: 14.23
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -76,7 +76,7 @@ all_production:
       units: bbl
       value: 204829000
       rank: 2
-      percent: 9.95
+      percent: 9.94
   '2012':
     - product: Natural Gas
       name: Natural Gas
@@ -89,7 +89,7 @@ all_production:
       units: bbl
       value: 192368000
       rank: 4
-      percent: 8.11
+      percent: 8.1
   '2013':
     - product: Natural Gas
       name: Natural Gas
@@ -102,14 +102,14 @@ all_production:
       units: bbl
       value: 187954000
       rank: 4
-      percent: 6.92
+      percent: 6.9
   '2014':
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 3168566000
+      value: 3168545000
       rank: 3
-      percent: 10.11
+      percent: 10.09
     - product: Crude Oil
       name: Crude Oil
       units: bbl
@@ -120,142 +120,82 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 3175163000
+      value: 3175301000
       rank: 3
       percent: 9.65
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 176240000
+      value: 176241000
       rank: 4
       percent: 5.13
+  '2016':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 3229946000
+      rank: 3
+      percent: 9.89
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 179170000
+      rank: 4
+      percent: 5.52
 federal_production:
   '2006':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8935576
-      rank: 3
-      percent: 0
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1036758996
+      value: 39875346
       rank: 5
-      percent: 0
-  '2007':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 7082400
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 958577386
-      rank: 5
-      percent: 0
-  '2008':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5967754
-      rank: 3
-      percent: 0
-  '2009':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5281120
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 6166238
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 591955936
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 6285630
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 365406184
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8261136
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 374238748
-      rank: 5
-      percent: 0
-  '2013':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 23468874
-      rank: 4
-      percent: 0
-  '2014':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 23244650
-      rank: 4
-      percent: 0
-  '2015':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 24909404
-      rank: 4
-      percent: 0
+      percent: 0.62
 revenue:
   '2007':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 27841995.18
+      value: 27143925.6
       rank: 5
-      percent: 7.62
+      percent: 2.3
   '2009':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 31187114.8
-      rank: 4
-      percent: 9.04
+      value: 32081423.62
+      rank: 3
+      percent: 2.1
+    - product: Gas
+      name: null
+      units: null
+      value: 18853844.91
+      rank: 5
+      percent: 1
   '2010':
     - product: Gas
       name: null
       units: null
-      value: 13525905.33
+      value: 12672380.86
       rank: 5
-      percent: 0.56
+      percent: 0.5
+  '2014':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 8057665.15
+      rank: 5
+      percent: 0.5
   '2015':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 6807532.86
-      rank: 3
-      percent: 6.36
+      value: 5227217.18
+      rank: 2
+      percent: 0.6
+  '2016':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 4203296.31
+      rank: 4
+      percent: 1.1

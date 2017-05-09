@@ -10,117 +10,23 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 10926858.08
+      value: 10998501
       rank: 5
-      percent: 5.72
-federal_production:
-  '2006':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 11560926
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 228700264
-      rank: 5
-      percent: 0
-  '2007':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8088054
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 209412736
-      rank: 5
-      percent: 0
-  '2008':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 7266116
-      rank: 3
-      percent: 0
-  '2009':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5986734
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5721586
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 184934620
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 6269094
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 164223540
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5865314
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 147639674
-      rank: 5
-      percent: 0
-  '2013':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5190718
+      percent: 5.77
+  '2016':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 14113110.6
       rank: 4
-      percent: 0
-  '2014':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 4415216
-      rank: 4
-      percent: 0
-  '2015':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 4014608
-      rank: 4
-      percent: 0
+      percent: 6.23
 revenue:
   '2006':
     - product: Helium
       name: null
       units: null
       value: -57.39
-      rank: 2
+      rank: 1
       percent: null
   '2009':
     - product: Helium
@@ -133,40 +39,41 @@ revenue:
     - product: Helium
       name: null
       units: null
-      value: 23.17
+      value: 32.65
       rank: 2
-      percent: 33.83
+      percent: 35.9
   '2012':
     - product: Helium
       name: null
       units: null
-      value: 13.21
+      value: 3.73
       rank: 2
-      percent: 17.69
+      percent: 6.3
   '2013':
     - product: Helium
       name: null
       units: null
-      value: -2.41
+      value: -0.22
       rank: 3
       percent: null
   '2014':
     - product: Helium
       name: null
       units: null
-      value: 260.52
+      value: 2865.72
       rank: 1
-      percent: 79.53
+      percent: 97.7
   '2015':
     - product: Helium
       name: null
       units: null
-      value: 529.7
-      rank: 1
-      percent: 88.76
-    - product: Sulfur
+      value: -2642.34
+      rank: 2
+      percent: null
+  '2016':
+    - product: Helium
       name: null
       units: null
-      value: 1.08
-      rank: 4
-      percent: null
+      value: 666.2
+      rank: 1
+      percent: 91.6

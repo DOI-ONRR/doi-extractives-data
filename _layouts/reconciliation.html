@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign year = page.data_year | to_s %}
+{% assign default_year = year %}
 {% assign report_year = page.report_year %}
 {% assign material_variance = site.data.material_variances %}
 {% assign explanations = material_variance.explanations[page.data_year] %}
@@ -144,7 +145,7 @@ layout: default
             <p>Variances are only considered material if the percentage difference is greater than the <span class="term term-end" data-term="margin of variance" title="Click to define" tabindex="0">margin of variance<icon class="icon-book"></icon></span> threshold <strong>and</strong> the total dollar amount of the difference exceeds the <span class="term term-end" data-term="variance floor" title="Click to define" tabindex="0">variance floor<icon class="icon-book"></icon></span>.</p>
           </div>
 
-          <table class="article_table">
+          <table class="article_table article_table-last_right">
             <thead>
               <tr>
                 <th>Margin</th>

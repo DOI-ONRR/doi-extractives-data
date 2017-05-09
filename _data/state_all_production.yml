@@ -39,6 +39,10 @@ AK:
           volume: 1501758
           percent: 0.15
           rank: 20
+        '2015':
+          volume: 1177390
+          percent: 0.13
+          rank: 20
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -79,8 +83,12 @@ AK:
           percent: 0.59
           rank: 24
         '2015':
-          volume: 1542298
-          percent: 0.61
+          volume: 1568929
+          percent: 0.63
+          rank: 26
+        '2016':
+          volume: 1549438
+          percent: 0.58
           rank: 24
     Crude Oil:
       units: bbl
@@ -91,7 +99,7 @@ AK:
           rank: 2
         '2007':
           volume: 263595000
-          percent: 14.22
+          percent: 14.23
           rank: 2
         '2008':
           volume: 249874000
@@ -107,23 +115,27 @@ AK:
           rank: 2
         '2011':
           volume: 204829000
-          percent: 9.95
+          percent: 9.94
           rank: 2
         '2012':
           volume: 192368000
-          percent: 8.11
+          percent: 8.1
           rank: 4
         '2013':
           volume: 187954000
-          percent: 6.92
+          percent: 6.9
           rank: 4
         '2014':
           volume: 181175000
           percent: 5.66
           rank: 4
         '2015':
-          volume: 176240000
+          volume: 176241000
           percent: 5.13
+          rank: 4
+        '2016':
+          volume: 179170000
+          percent: 5.52
           rank: 4
     Natural Gas:
       units: Mcf
@@ -161,12 +173,16 @@ AK:
           percent: 10.89
           rank: 3
         '2014':
-          volume: 3168566000
-          percent: 10.11
+          volume: 3168545000
+          percent: 10.09
           rank: 3
         '2015':
-          volume: 3175163000
+          volume: 3175301000
           percent: 9.65
+          rank: 3
+        '2016':
+          volume: 3229946000
+          percent: 9.89
           rank: 3
     Other biomass:
       units: Mwh
@@ -208,9 +224,13 @@ AK:
           percent: 0.29
           rank: 38
         '2015':
-          volume: 59068
-          percent: 0.27
-          rank: 40
+          volume: 54892
+          percent: 0.25
+          rank: 39
+        '2016':
+          volume: 51498
+          percent: 0.23
+          rank: 39
     Wind:
       units: Mwh
       volume:
@@ -239,7 +259,7 @@ AK:
           percent: 0.01
           rank: 35
         '2012':
-          volume: 37393
+          volume: 37392
           percent: 0.03
           rank: 36
         '2013':
@@ -251,8 +271,12 @@ AK:
           percent: 0.08
           rank: 35
         '2015':
-          volume: 158235
+          volume: 159694
           percent: 0.08
+          rank: 35
+        '2016':
+          volume: 163749
+          percent: 0.07
           rank: 35
     Wood and wood-derived fuels:
       units: Mwh
@@ -280,7 +304,11 @@ AK:
         '2015':
           volume: 0
           percent: 0
-          rank: 35
+          rank: 36
+        '2016':
+          volume: 0
+          percent: 0
+          rank: 33
 AL:
   products:
     Coal:
@@ -322,6 +350,10 @@ AL:
           volume: 16362945
           percent: 1.64
           rank: 14
+        '2015':
+          volume: 13190832
+          percent: 1.47
+          rank: 15
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -362,9 +394,13 @@ AL:
           percent: 3.65
           rank: 6
         '2015':
-          volume: 10132681
-          percent: 4.03
-          rank: 5
+          volume: 9861804
+          percent: 3.96
+          rank: 6
+        '2016':
+          volume: 7720695
+          percent: 2.9
+          rank: 7
     Crude Oil:
       units: bbl
       volume:
@@ -395,9 +431,9 @@ AL:
         '2012':
           volume: 9525000
           percent: 0.4
-          rank: 14
+          rank: 15
         '2013':
-          volume: 10392000
+          volume: 10402000
           percent: 0.38
           rank: 14
         '2014':
@@ -408,6 +444,10 @@ AL:
           volume: 9696000
           percent: 0.28
           rank: 15
+        '2016':
+          volume: 8258000
+          percent: 0.25
+          rank: 16
     Natural Gas:
       units: Mcf
       volume:
@@ -444,8 +484,12 @@ AL:
           percent: 0.67
           rank: 15
         '2014':
-          volume: 181054000
+          volume: 181060000
           percent: 0.58
+          rank: 16
+        '2015':
+          volume: 168249000
+          percent: 0.51
           rank: 16
     Other biomass:
       units: Mwh
@@ -487,9 +531,20 @@ AL:
           percent: 0.22
           rank: 41
         '2015':
-          volume: 45892
-          percent: 0.21
+          volume: 43630
+          percent: 0.2
           rank: 41
+        '2016':
+          volume: 46026
+          percent: 0.21
+          rank: 40
+    Solar:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 31261
+          percent: 0.09
+          rank: 25
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -530,9 +585,13 @@ AL:
           percent: 6.45
           rank: 5
         '2015':
-          volume: 3282981
-          percent: 7.75
+          volume: 3245654
+          percent: 7.74
           rank: 3
+        '2016':
+          volume: 3212119
+          percent: 7.93
+          rank: 2
 AR:
   products:
     Coal:
@@ -574,6 +633,10 @@ AR:
           volume: 93989
           percent: 0.01
           rank: 24
+        '2015':
+          volume: 91462
+          percent: 0.01
+          rank: 25
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -614,9 +677,13 @@ AR:
           percent: 1.02
           rank: 16
         '2015':
-          volume: 3663118
-          percent: 1.46
+          volume: 3569195
+          percent: 1.43
           rank: 12
+        '2016':
+          volume: 3417925
+          percent: 1.29
+          rank: 13
     Crude Oil:
       units: bbl
       volume:
@@ -660,6 +727,10 @@ AR:
           volume: 6165000
           percent: 0.18
           rank: 19
+        '2016':
+          volume: 5390000
+          percent: 0.17
+          rank: 19
     Natural Gas:
       units: Mcf
       volume:
@@ -696,13 +767,17 @@ AR:
           percent: 3.86
           rank: 9
         '2014':
-          volume: 1123678000
-          percent: 3.58
+          volume: 1122733000
+          percent: 3.57
           rank: 9
         '2015':
-          volume: 1017319000
-          percent: 3.09
-          rank: 10
+          volume: 1010274000
+          percent: 3.07
+          rank: 11
+        '2016':
+          volume: 826917000
+          percent: 2.53
+          rank: 11
     Other biomass:
       units: Mwh
       volume:
@@ -743,9 +818,24 @@ AR:
           percent: 0.47
           rank: 28
         '2015':
-          volume: 106484
-          percent: 0.49
+          volume: 89290
+          percent: 0.41
+          rank: 32
+        '2016':
+          volume: 103661
+          percent: 0.47
           rank: 28
+    Solar:
+      units: Mwh
+      volume:
+        '2015':
+          volume: 927
+          percent: 0
+          rank: 33
+        '2016':
+          volume: 29996
+          percent: 0.08
+          rank: 26
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -786,8 +876,12 @@ AR:
           percent: 3.37
           rank: 13
         '2015':
-          volume: 1387903
-          percent: 3.28
+          volume: 1351667
+          percent: 3.22
+          rank: 14
+        '2016':
+          volume: 1298493
+          percent: 3.21
           rank: 14
 AZ:
   products:
@@ -830,6 +924,10 @@ AZ:
           volume: 8050607
           percent: 0.81
           rank: 16
+        '2015':
+          volume: 6804555
+          percent: 0.76
+          rank: 16
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -870,8 +968,12 @@ AZ:
           percent: 2.36
           rank: 9
         '2015':
-          volume: 6535010
-          percent: 2.6
+          volume: 6535722
+          percent: 2.62
+          rank: 9
+        '2016':
+          volume: 7157613
+          percent: 2.69
           rank: 9
     Crude Oil:
       units: bbl
@@ -916,6 +1018,10 @@ AZ:
           volume: 37000
           percent: 0
           rank: 29
+        '2016':
+          volume: 8000
+          percent: 0
+          rank: 30
     Natural Gas:
       units: Mcf
       volume:
@@ -953,6 +1059,10 @@ AZ:
           rank: 30
         '2014':
           volume: 106000
+          percent: 0
+          rank: 30
+        '2015':
+          volume: 95000
           percent: 0
           rank: 30
     Other biomass:
@@ -995,9 +1105,13 @@ AZ:
           percent: 0.28
           rank: 39
         '2015':
-          volume: 60275
-          percent: 0.28
-          rank: 39
+          volume: 49644
+          percent: 0.23
+          rank: 40
+        '2016':
+          volume: 43211
+          percent: 0.2
+          rank: 41
     Solar:
       units: Mwh
       volume:
@@ -1038,9 +1152,13 @@ AZ:
           percent: 17.76
           rank: 2
         '2015':
-          volume: 3515984
-          percent: 13.28
+          volume: 3456608
+          percent: 13.89
           rank: 2
+        '2016':
+          volume: 3752925
+          percent: 10.21
+          rank: 3
     Wind:
       units: Mwh
       volume:
@@ -1069,8 +1187,12 @@ AZ:
           percent: 0.26
           rank: 29
         '2015':
-          volume: 445453
-          percent: 0.23
+          volume: 452035
+          percent: 0.24
+          rank: 29
+        '2016':
+          volume: 543099
+          percent: 0.24
           rank: 29
     Wood and wood-derived fuels:
       units: Mwh
@@ -1098,7 +1220,7 @@ AZ:
         '2012':
           volume: 156697
           percent: 0.41
-          rank: 29
+          rank: 28
         '2013':
           volume: 102308
           percent: 0.26
@@ -1110,6 +1232,10 @@ AZ:
         '2015':
           volume: 176984
           percent: 0.42
+          rank: 28
+        '2016':
+          volume: 176136
+          percent: 0.43
           rank: 28
 CA:
   products:
@@ -1153,9 +1279,13 @@ CA:
           percent: 6.37
           rank: 4
         '2015':
-          volume: 13860990
-          percent: 5.52
+          volume: 13808498
+          percent: 5.54
           rank: 4
+        '2016':
+          volume: 28944515
+          percent: 10.89
+          rank: 3
     Crude Oil:
       units: bbl
       volume:
@@ -1176,20 +1306,20 @@ CA:
           percent: 10.61
           rank: 3
         '2010':
-          volume: 200050000
-          percent: 10.01
+          volume: 200370000
+          percent: 10.03
           rank: 3
         '2011':
-          volume: 193996000
-          percent: 9.42
+          volume: 196172000
+          percent: 9.52
           rank: 3
         '2012':
-          volume: 197211000
+          volume: 197346000
           percent: 8.31
           rank: 3
         '2013':
-          volume: 198928000
-          percent: 7.33
+          volume: 199197000
+          percent: 7.31
           rank: 3
         '2014':
           volume: 204699000
@@ -1198,6 +1328,10 @@ CA:
         '2015':
           volume: 201284000
           percent: 5.86
+          rank: 3
+        '2016':
+          volume: 187565000
+          percent: 5.77
           rank: 3
     Geothermal:
       units: Mwh
@@ -1239,8 +1373,12 @@ CA:
           percent: 76.22
           rank: 1
         '2015':
-          volume: 12341211
-          percent: 73.6
+          volume: 11883135
+          percent: 74.65
+          rank: 1
+        '2016':
+          volume: 12468848
+          percent: 71.59
           rank: 1
     Natural Gas:
       units: Mcf
@@ -1278,12 +1416,16 @@ CA:
           percent: 0.85
           rank: 14
         '2014':
-          volume: 252718000
-          percent: 0.81
+          volume: 238988000
+          percent: 0.76
           rank: 15
         '2015':
-          volume: 222680000
-          percent: 0.68
+          volume: 231060000
+          percent: 0.7
+          rank: 15
+        '2016':
+          volume: 211451000
+          percent: 0.65
           rank: 15
     Other biomass:
       units: Mwh
@@ -1325,8 +1467,12 @@ CA:
           percent: 13.46
           rank: 1
         '2015':
-          volume: 2842870
-          percent: 13.02
+          volume: 2883729
+          percent: 13.29
+          rank: 1
+        '2016':
+          volume: 2889527
+          percent: 13.09
           rank: 1
     Solar:
       units: Mwh
@@ -1368,8 +1514,12 @@ CA:
           percent: 56.14
           rank: 1
         '2015':
-          volume: 15006628
-          percent: 56.69
+          volume: 14814384
+          percent: 59.51
+          rank: 1
+        '2016':
+          volume: 19030397
+          percent: 51.78
           rank: 1
     Wind:
       units: Mwh
@@ -1411,9 +1561,13 @@ CA:
           percent: 7.15
           rank: 3
         '2015':
-          volume: 12228414
-          percent: 6.4
+          volume: 12229559
+          percent: 6.41
           rank: 4
+        '2016':
+          volume: 13698108
+          percent: 6.05
+          rank: 5
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -1454,9 +1608,13 @@ CA:
           percent: 9.39
           rank: 1
         '2015':
-          volume: 4078430
-          percent: 9.63
-          rank: 1
+          volume: 3584165
+          percent: 8.55
+          rank: 2
+        '2016':
+          volume: 3176398
+          percent: 7.84
+          rank: 3
 CO:
   products:
     Coal:
@@ -1498,6 +1656,10 @@ CO:
           volume: 24007495
           percent: 2.4
           rank: 10
+        '2015':
+          volume: 18878915
+          percent: 2.1
+          rank: 11
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -1538,42 +1700,46 @@ CO:
           percent: 0.68
           rank: 21
         '2015':
-          volume: 1491544
-          percent: 0.59
-          rank: 25
+          volume: 1620161
+          percent: 0.65
+          rank: 24
+        '2016':
+          volume: 1918115
+          percent: 0.72
+          rank: 20
     Crude Oil:
       units: bbl
       volume:
         '2006':
-          volume: 24494000
+          volume: 24501000
           percent: 1.32
           rank: 11
         '2007':
-          volume: 26172000
+          volume: 26194000
           percent: 1.41
           rank: 11
         '2008':
-          volume: 29928000
+          volume: 29941000
           percent: 1.64
           rank: 11
         '2009':
-          volume: 30350000
+          volume: 30368000
           percent: 1.55
           rank: 10
         '2010':
-          volume: 32976000
+          volume: 32982000
           percent: 1.65
           rank: 10
         '2011':
-          volume: 39430000
-          percent: 1.92
+          volume: 39460000
+          percent: 1.91
           rank: 10
         '2012':
-          volume: 49444000
-          percent: 2.08
+          volume: 49572000
+          percent: 2.09
           rank: 9
         '2013':
-          volume: 65256000
+          volume: 65426000
           percent: 2.4
           rank: 8
         '2014':
@@ -1583,6 +1749,10 @@ CO:
         '2015':
           volume: 126232000
           percent: 3.67
+          rank: 7
+        '2016':
+          volume: 115359000
+          percent: 3.55
           rank: 7
     Natural Gas:
       units: Mcf
@@ -1620,12 +1790,16 @@ CO:
           percent: 5.44
           rank: 7
         '2014':
-          volume: 1631390000
-          percent: 5.2
+          volume: 1643487000
+          percent: 5.23
           rank: 7
         '2015':
-          volume: 1671787000
-          percent: 5.08
+          volume: 1704836000
+          percent: 5.18
+          rank: 7
+        '2016':
+          volume: 1703277000
+          percent: 5.22
           rank: 7
     Other biomass:
       units: Mwh
@@ -1667,8 +1841,12 @@ CO:
           percent: 0.37
           rank: 34
         '2015':
-          volume: 82596
-          percent: 0.38
+          volume: 79724
+          percent: 0.37
+          rank: 35
+        '2016':
+          volume: 86293
+          percent: 0.39
           rank: 33
     Solar:
       units: Mwh
@@ -1706,9 +1884,13 @@ CO:
           percent: 1.43
           rank: 9
         '2015':
-          volume: 288847
-          percent: 1.09
+          volume: 251371
+          percent: 1.01
           rank: 9
+        '2016':
+          volume: 548330
+          percent: 1.49
+          rank: 11
     Wind:
       units: Mwh
       volume:
@@ -1749,8 +1931,12 @@ CO:
           percent: 4.06
           rank: 9
         '2015':
-          volume: 7441364
-          percent: 3.9
+          volume: 7475279
+          percent: 3.92
+          rank: 8
+        '2016':
+          volume: 9425327
+          percent: 4.16
           rank: 8
     Wood and wood-derived fuels:
       units: Mwh
@@ -1792,9 +1978,9 @@ CO:
           percent: 0.11
           rank: 31
         '2015':
-          volume: 48764
-          percent: 0.12
-          rank: 31
+          volume: 832
+          percent: 0
+          rank: 34
 CT:
   products:
     Conventional Hydroelectric:
@@ -1837,9 +2023,13 @@ CT:
           percent: 0.17
           rank: 39
         '2015':
-          volume: 459891
-          percent: 0.18
-          rank: 40
+          volume: 302467
+          percent: 0.12
+          rank: 41
+        '2016':
+          volume: 285519
+          percent: 0.11
+          rank: 41
     Other biomass:
       units: Mwh
       volume:
@@ -1880,8 +2070,12 @@ CT:
           percent: 3
           rank: 10
         '2015':
-          volume: 616210
-          percent: 2.82
+          volume: 597714
+          percent: 2.75
+          rank: 11
+        '2016':
+          volume: 631786
+          percent: 2.86
           rank: 11
     Solar:
       units: Mwh
@@ -1895,9 +2089,20 @@ CT:
           percent: 0.07
           rank: 23
         '2015':
-          volume: 22149
+          volume: 17439
+          percent: 0.07
+          rank: 24
+        '2016':
+          volume: 28132
           percent: 0.08
-          rank: 25
+          rank: 28
+    Wind:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 14318
+          percent: 0.01
+          rank: 39
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -1938,9 +2143,26 @@ CT:
           percent: 0.25
           rank: 30
         '2015':
-          volume: 190586
+          volume: 189754
           percent: 0.45
           rank: 27
+        '2016':
+          volume: 237231
+          percent: 0.59
+          rank: 26
+DC:
+  products:
+    Other biomass:
+      units: Mwh
+      volume:
+        '2015':
+          volume: 30999
+          percent: 0.14
+          rank: 42
+        '2016':
+          volume: 0
+          percent: 0
+          rank: 48
 DE:
   products:
     Other biomass:
@@ -1983,9 +2205,13 @@ DE:
           percent: 0.35
           rank: 35
         '2015':
-          volume: 76701
+          volume: 76298
           percent: 0.35
-          rank: 34
+          rank: 36
+        '2016':
+          volume: 74585
+          percent: 0.34
+          rank: 37
     Solar:
       units: Mwh
       volume:
@@ -2006,9 +2232,13 @@ DE:
           percent: 0.28
           rank: 18
         '2015':
-          volume: 62144
-          percent: 0.23
-          rank: 21
+          volume: 48512
+          percent: 0.19
+          rank: 20
+        '2016':
+          volume: 55775
+          percent: 0.15
+          rank: 23
     Wind:
       units: Mwh
       volume:
@@ -2030,6 +2260,10 @@ DE:
           rank: 38
         '2014':
           volume: 5051
+          percent: 0
+          rank: 39
+        '2015':
+          volume: 5126
           percent: 0
           rank: 39
 FL:
@@ -2074,8 +2308,12 @@ FL:
           percent: 0.08
           rank: 42
         '2015':
-          volume: 223404
-          percent: 0.09
+          volume: 244294
+          percent: 0.1
+          rank: 42
+        '2016':
+          volume: 219450
+          percent: 0.08
           rank: 42
     Crude Oil:
       units: bbl
@@ -2120,6 +2358,10 @@ FL:
           volume: 2208000
           percent: 0.06
           rank: 23
+        '2016':
+          volume: 1934000
+          percent: 0.06
+          rank: 22
     Natural Gas:
       units: Mcf
       volume:
@@ -2156,9 +2398,13 @@ FL:
           percent: 0.06
           rank: 23
         '2014':
-          volume: 21259000
-          percent: 0.07
-          rank: 22
+          volume: 3178000
+          percent: 0.01
+          rank: 26
+        '2015':
+          volume: 5790000
+          percent: 0.02
+          rank: 25
     Other biomass:
       units: Mwh
       volume:
@@ -2199,8 +2445,12 @@ FL:
           percent: 10.59
           rank: 2
         '2015':
-          volume: 2434668
-          percent: 11.15
+          volume: 2501859
+          percent: 11.53
+          rank: 2
+        '2016':
+          volume: 2598841
+          percent: 11.78
           rank: 2
     Solar:
       units: Mwh
@@ -2230,9 +2480,13 @@ FL:
           percent: 1.37
           rank: 10
         '2015':
-          volume: 252482
-          percent: 0.95
+          volume: 223933
+          percent: 0.9
           rank: 10
+        '2016':
+          volume: 352399
+          percent: 0.96
+          rank: 12
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -2273,9 +2527,13 @@ FL:
           percent: 6
           rank: 7
         '2015':
-          volume: 2304544
-          percent: 5.44
+          volume: 2417636
+          percent: 5.77
           rank: 7
+        '2016':
+          volume: 1961598
+          percent: 4.84
+          rank: 8
 GA:
   products:
     Conventional Hydroelectric:
@@ -2318,9 +2576,13 @@ GA:
           percent: 1.18
           rank: 14
         '2015':
-          volume: 3020601
+          volume: 2983563
           percent: 1.2
           rank: 15
+        '2016':
+          volume: 3082281
+          percent: 1.16
+          rank: 14
     Other biomass:
       units: Mwh
       volume:
@@ -2361,9 +2623,13 @@ GA:
           percent: 1.91
           rank: 17
         '2015':
-          volume: 394217
-          percent: 1.81
-          rank: 18
+          volume: 340800
+          percent: 1.57
+          rank: 19
+        '2016':
+          volume: 345199
+          percent: 1.56
+          rank: 19
     Solar:
       units: Mwh
       volume:
@@ -2380,9 +2646,13 @@ GA:
           percent: 0.67
           rank: 11
         '2015':
-          volume: 152850
-          percent: 0.58
+          volume: 129452
+          percent: 0.52
           rank: 12
+        '2016':
+          volume: 906773
+          percent: 2.47
+          rank: 6
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -2413,7 +2683,7 @@ GA:
         '2012':
           volume: 3107494
           percent: 8.22
-          rank: 2
+          rank: 3
         '2013':
           volume: 3409442
           percent: 8.52
@@ -2423,9 +2693,13 @@ GA:
           percent: 8.86
           rank: 2
         '2015':
-          volume: 3977587
-          percent: 9.39
-          rank: 2
+          volume: 4392768
+          percent: 10.48
+          rank: 1
+        '2016':
+          volume: 4311431
+          percent: 10.64
+          rank: 1
 HI:
   products:
     Conventional Hydroelectric:
@@ -2468,7 +2742,11 @@ HI:
           percent: 0.04
           rank: 45
         '2015':
-          volume: 110499
+          volume: 121170
+          percent: 0.05
+          rank: 44
+        '2016':
+          volume: 117569
           percent: 0.04
           rank: 45
     Geothermal:
@@ -2511,8 +2789,12 @@ HI:
           percent: 1.6
           rank: 4
         '2015':
-          volume: 229945
-          percent: 1.37
+          volume: 230340
+          percent: 1.45
+          rank: 4
+        '2016':
+          volume: 260102
+          percent: 1.49
           rank: 4
     Other biomass:
       units: Mwh
@@ -2554,8 +2836,12 @@ HI:
           percent: 1.54
           rank: 20
         '2015':
-          volume: 336537
-          percent: 1.54
+          volume: 320941
+          percent: 1.48
+          rank: 20
+        '2016':
+          volume: 322330
+          percent: 1.46
           rank: 20
     Solar:
       units: Mwh
@@ -2589,9 +2875,13 @@ HI:
           percent: 0.22
           rank: 19
         '2015':
-          volume: 80354
-          percent: 0.3
-          rank: 17
+          volume: 54397
+          percent: 0.22
+          rank: 18
+        '2016':
+          volume: 91771
+          percent: 0.25
+          rank: 16
     Wind:
       units: Mwh
       volume:
@@ -2632,8 +2922,12 @@ HI:
           percent: 0.32
           rank: 28
         '2015':
-          volume: 601310
-          percent: 0.31
+          volume: 612772
+          percent: 0.32
+          rank: 28
+        '2016':
+          volume: 643963
+          percent: 0.28
           rank: 28
     Wood and wood-derived fuels:
       units: Mwh
@@ -2696,8 +2990,12 @@ IA:
           percent: 0.34
           rank: 33
         '2015':
-          volume: 806348
-          percent: 0.32
+          volume: 960145
+          percent: 0.39
+          rank: 33
+        '2016':
+          volume: 955772
+          percent: 0.36
           rank: 35
     Other biomass:
       units: Mwh
@@ -2739,8 +3037,12 @@ IA:
           percent: 1.22
           rank: 22
         '2015':
-          volume: 259597
-          percent: 1.19
+          volume: 256148
+          percent: 1.18
+          rank: 22
+        '2016':
+          volume: 254437
+          percent: 1.15
           rank: 22
     Wind:
       units: Mwh
@@ -2770,7 +3072,7 @@ IA:
           percent: 8.91
           rank: 2
         '2012':
-          volume: 14032491
+          volume: 14032492
           percent: 9.96
           rank: 2
         '2013':
@@ -2782,8 +3084,12 @@ IA:
           percent: 8.98
           rank: 2
         '2015':
-          volume: 17877699
-          percent: 9.36
+          volume: 17872632
+          percent: 9.37
+          rank: 2
+        '2016':
+          volume: 20049262
+          percent: 8.85
           rank: 2
     Wood and wood-derived fuels:
       units: Mwh
@@ -2808,6 +3114,10 @@ IA:
           volume: 1776
           percent: 0
           rank: 34
+        '2015':
+          volume: 1995
+          percent: 0
+          rank: 33
 ID:
   products:
     Conventional Hydroelectric:
@@ -2850,9 +3160,13 @@ ID:
           percent: 3.47
           rank: 7
         '2015':
-          volume: 8162228
-          percent: 3.25
+          volume: 8756622
+          percent: 3.52
           rank: 8
+        '2016':
+          volume: 9445868
+          percent: 3.55
+          rank: 6
     Geothermal:
       units: Mwh
       volume:
@@ -2885,8 +3199,12 @@ ID:
           percent: 0.5
           rank: 6
         '2015':
-          volume: 98004
-          percent: 0.58
+          volume: 75600
+          percent: 0.47
+          rank: 6
+        '2016':
+          volume: 97066
+          percent: 0.56
           rank: 6
     Other biomass:
       units: Mwh
@@ -2916,9 +3234,20 @@ ID:
           percent: 0.81
           rank: 26
         '2015':
-          volume: 171319
-          percent: 0.78
+          volume: 175481
+          percent: 0.81
           rank: 26
+        '2016':
+          volume: 170855
+          percent: 0.77
+          rank: 26
+    Solar:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 29465
+          percent: 0.08
+          rank: 27
     Wind:
       units: Mwh
       volume:
@@ -2959,9 +3288,13 @@ ID:
           percent: 1.54
           rank: 17
         '2015':
-          volume: 2456587
-          percent: 1.29
+          volume: 2270186
+          percent: 1.19
           rank: 19
+        '2016':
+          volume: 2427374
+          percent: 1.07
+          rank: 20
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -2992,7 +3325,7 @@ ID:
         '2012':
           volume: 459581
           percent: 1.22
-          rank: 23
+          rank: 22
         '2013':
           volume: 453824
           percent: 1.13
@@ -3003,7 +3336,11 @@ ID:
           rank: 23
         '2015':
           volume: 425796
-          percent: 1.01
+          percent: 1.02
+          rank: 23
+        '2016':
+          volume: 413340
+          percent: 1.02
           rank: 23
 IL:
   products:
@@ -3046,6 +3383,10 @@ IL:
           volume: 57969300
           percent: 5.8
           rank: 5
+        '2015':
+          volume: 56101030
+          percent: 6.25
+          rank: 4
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3086,26 +3427,30 @@ IL:
           percent: 0.05
           rank: 43
         '2015':
-          volume: 132612
+          volume: 124460
           percent: 0.05
           rank: 43
+        '2016':
+          volume: 128689
+          percent: 0.05
+          rank: 44
     Crude Oil:
       units: bbl
       volume:
         '2006':
-          volume: 10325000
+          volume: 10324000
           percent: 0.56
           rank: 14
         '2007':
-          volume: 9608000
+          volume: 9609000
           percent: 0.52
           rank: 14
         '2008':
-          volume: 9448000
+          volume: 9430000
           percent: 0.52
           rank: 14
         '2009':
-          volume: 9097000
+          volume: 9099000
           percent: 0.47
           rank: 14
         '2010':
@@ -3117,9 +3462,9 @@ IL:
           percent: 0.44
           rank: 14
         '2012':
-          volume: 8908000
-          percent: 0.38
-          rank: 15
+          volume: 9733000
+          percent: 0.41
+          rank: 14
         '2013':
           volume: 9539000
           percent: 0.35
@@ -3132,6 +3477,10 @@ IL:
           volume: 9522000
           percent: 0.28
           rank: 16
+        '2016':
+          volume: 8635000
+          percent: 0.27
+          rank: 15
     Natural Gas:
       units: Mcf
       volume:
@@ -3168,7 +3517,11 @@ IL:
           percent: 0.01
           rank: 27
         '2014':
-          volume: 2626000
+          volume: 1929000
+          percent: 0.01
+          rank: 27
+        '2015':
+          volume: 2080000
           percent: 0.01
           rank: 27
     Other biomass:
@@ -3211,9 +3564,13 @@ IL:
           percent: 2.62
           rank: 12
         '2015':
-          volume: 562755
-          percent: 2.58
-          rank: 12
+          volume: 526821
+          percent: 2.43
+          rank: 14
+        '2016':
+          volume: 573287
+          percent: 2.6
+          rank: 14
     Solar:
       units: Mwh
       volume:
@@ -3242,9 +3599,13 @@ IL:
           percent: 0.28
           rank: 17
         '2015':
-          volume: 63375
-          percent: 0.24
-          rank: 20
+          volume: 49360
+          percent: 0.2
+          rank: 19
+        '2016':
+          volume: 58208
+          percent: 0.16
+          rank: 22
     Wind:
       units: Mwh
       volume:
@@ -3273,9 +3634,9 @@ IL:
           percent: 5.17
           rank: 6
         '2012':
-          volume: 7726810
+          volume: 7726809
           percent: 5.49
-          rank: 5
+          rank: 6
         '2013':
           volume: 9625229
           percent: 5.73
@@ -3285,9 +3646,13 @@ IL:
           percent: 5.55
           rank: 6
         '2015':
-          volume: 10732569
-          percent: 5.62
+          volume: 10747270
+          percent: 5.64
           rank: 6
+        '2016':
+          volume: 10627439
+          percent: 4.69
+          rank: 7
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -3322,7 +3687,11 @@ IL:
         '2015':
           volume: 36
           percent: 0
-          rank: 34
+          rank: 35
+        '2016':
+          volume: 0
+          percent: 0
+          rank: 33
 IN:
   products:
     Coal:
@@ -3364,6 +3733,10 @@ IN:
           volume: 39266977
           percent: 3.93
           rank: 8
+        '2015':
+          volume: 34295444
+          percent: 3.82
+          rank: 8
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3404,9 +3777,13 @@ IN:
           percent: 0.14
           rank: 41
         '2015':
-          volume: 381855
+          volume: 381236
           percent: 0.15
-          rank: 41
+          rank: 40
+        '2016':
+          volume: 415274
+          percent: 0.16
+          rank: 40
     Crude Oil:
       units: bbl
       volume:
@@ -3450,6 +3827,10 @@ IN:
           volume: 2219000
           percent: 0.06
           rank: 22
+        '2016':
+          volume: 1817000
+          percent: 0.06
+          rank: 23
     Natural Gas:
       units: Mcf
       volume:
@@ -3488,7 +3869,11 @@ IN:
         '2014':
           volume: 6616000
           percent: 0.02
-          rank: 25
+          rank: 24
+        '2015':
+          volume: 7250000
+          percent: 0.02
+          rank: 24
     Other biomass:
       units: Mwh
       volume:
@@ -3529,9 +3914,13 @@ IN:
           percent: 1.8
           rank: 18
         '2015':
-          volume: 394916
-          percent: 1.81
-          rank: 17
+          volume: 446408
+          percent: 2.06
+          rank: 16
+        '2016':
+          volume: 447882
+          percent: 2.03
+          rank: 16
     Solar:
       units: Mwh
       volume:
@@ -3544,9 +3933,13 @@ IN:
           percent: 0.58
           rank: 12
         '2015':
-          volume: 219833
-          percent: 0.83
+          volume: 156098
+          percent: 0.63
           rank: 11
+        '2016':
+          volume: 271439
+          percent: 0.74
+          rank: 13
     Wind:
       units: Mwh
       volume:
@@ -3579,9 +3972,13 @@ IN:
           percent: 1.92
           rank: 16
         '2015':
-          volume: 4515974
+          volume: 4515147
           percent: 2.37
           rank: 13
+        '2016':
+          volume: 4903473
+          percent: 2.17
+          rank: 12
 KS:
   products:
     Coal:
@@ -3623,6 +4020,10 @@ KS:
           volume: 66366
           percent: 0.01
           rank: 25
+        '2015':
+          volume: 199199
+          percent: 0.02
+          rank: 23
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3662,6 +4063,10 @@ KS:
           volume: 16214
           percent: 0.01
           rank: 47
+        '2015':
+          volume: 18963
+          percent: 0.01
+          rank: 46
     Crude Oil:
       units: bbl
       volume:
@@ -3687,7 +4092,7 @@ KS:
           rank: 9
         '2011':
           volume: 41507000
-          percent: 2.02
+          percent: 2.01
           rank: 9
         '2012':
           volume: 43743000
@@ -3695,7 +4100,7 @@ KS:
           rank: 10
         '2013':
           volume: 46845000
-          percent: 1.73
+          percent: 1.72
           rank: 10
         '2014':
           volume: 49505000
@@ -3704,6 +4109,10 @@ KS:
         '2015':
           volume: 45481000
           percent: 1.32
+          rank: 10
+        '2016':
+          volume: 37063000
+          percent: 1.14
           rank: 10
     Natural Gas:
       units: Mcf
@@ -3741,12 +4150,16 @@ KS:
           percent: 0.99
           rank: 13
         '2014':
-          volume: 286080000
+          volume: 286480000
           percent: 0.91
           rank: 14
         '2015':
-          volume: 292450000
-          percent: 0.89
+          volume: 285236000
+          percent: 0.87
+          rank: 14
+        '2016':
+          volume: 249524000
+          percent: 0.76
           rank: 14
     Other biomass:
       units: Mwh
@@ -3776,9 +4189,20 @@ KS:
           percent: 0.27
           rank: 40
         '2015':
-          volume: 67408
-          percent: 0.31
+          volume: 61937
+          percent: 0.29
           rank: 38
+        '2016':
+          volume: 71356
+          percent: 0.32
+          rank: 38
+    Solar:
+      units: Mwh
+      volume:
+        '2015':
+          volume: 1806
+          percent: 0.01
+          rank: 29
     Wind:
       units: Mwh
       volume:
@@ -3819,9 +4243,13 @@ KS:
           percent: 5.97
           rank: 5
         '2015':
-          volume: 10926858
-          percent: 5.72
+          volume: 10998501
+          percent: 5.77
           rank: 5
+        '2016':
+          volume: 14113111
+          percent: 6.23
+          rank: 4
 KY:
   products:
     Coal:
@@ -3863,6 +4291,10 @@ KY:
           volume: 77334723
           percent: 7.73
           rank: 3
+        '2015':
+          volume: 61424961
+          percent: 6.85
+          rank: 3
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3903,9 +4335,13 @@ KY:
           percent: 1.21
           rank: 13
         '2015':
-          volume: 3420260
-          percent: 1.36
-          rank: 14
+          volume: 3403481
+          percent: 1.37
+          rank: 13
+        '2016':
+          volume: 3450374
+          percent: 1.3
+          rank: 12
     Crude Oil:
       units: bbl
       volume:
@@ -3949,6 +4385,10 @@ KY:
           volume: 2862000
           percent: 0.08
           rank: 21
+        '2016':
+          volume: 2595000
+          percent: 0.08
+          rank: 20
     Natural Gas:
       units: Mcf
       volume:
@@ -3985,8 +4425,12 @@ KY:
           percent: 0.32
           rank: 19
         '2014':
-          volume: 78737000
-          percent: 0.25
+          volume: 93091000
+          percent: 0.3
+          rank: 19
+        '2015':
+          volume: 85775000
+          percent: 0.26
           rank: 19
     Other biomass:
       units: Mwh
@@ -4028,9 +4472,20 @@ KY:
           percent: 0.43
           rank: 30
         '2015':
-          volume: 94321
+          volume: 92299
+          percent: 0.43
+          rank: 30
+        '2016':
+          volume: 94296
           percent: 0.43
           rank: 31
+    Solar:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 11732
+          percent: 0.03
+          rank: 33
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -4061,7 +4516,7 @@ KY:
         '2012':
           volume: 236543
           percent: 0.63
-          rank: 27
+          rank: 26
         '2013':
           volume: 228189
           percent: 0.57
@@ -4071,8 +4526,12 @@ KY:
           percent: 0.84
           rank: 24
         '2015':
-          volume: 343834
-          percent: 0.81
+          volume: 348827
+          percent: 0.83
+          rank: 24
+        '2016':
+          volume: 357616
+          percent: 0.88
           rank: 24
 LA:
   products:
@@ -4115,6 +4574,10 @@ LA:
           volume: 2604888
           percent: 0.26
           rank: 18
+        '2015':
+          volume: 3438728
+          percent: 0.38
+          rank: 17
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -4157,28 +4620,32 @@ LA:
         '2015':
           volume: 999036
           percent: 0.4
-          rank: 31
+          rank: 32
+        '2016':
+          volume: 1103023
+          percent: 0.41
+          rank: 32
     Crude Oil:
       units: bbl
       volume:
         '2006':
-          volume: 73621000
+          volume: 73619000
           percent: 3.97
           rank: 4
         '2007':
-          volume: 76979000
+          volume: 76978000
           percent: 4.15
           rank: 4
         '2008':
-          volume: 72353000
+          volume: 72349000
           percent: 3.95
           rank: 4
         '2009':
-          volume: 68824000
+          volume: 68825000
           percent: 3.52
           rank: 5
         '2010':
-          volume: 67280000
+          volume: 67273000
           percent: 3.37
           rank: 6
         '2011':
@@ -4186,12 +4653,12 @@ LA:
           percent: 3.35
           rank: 7
         '2012':
-          volume: 70644000
+          volume: 70641000
           percent: 2.98
           rank: 7
         '2013':
-          volume: 71825000
-          percent: 2.65
+          volume: 71926000
+          percent: 2.64
           rank: 7
         '2014':
           volume: 68777000
@@ -4200,6 +4667,10 @@ LA:
         '2015':
           volume: 62881000
           percent: 1.83
+          rank: 9
+        '2016':
+          volume: 56884000
+          percent: 1.75
           rank: 9
     Natural Gas:
       units: Mcf
@@ -4237,12 +4708,16 @@ LA:
           percent: 8.02
           rank: 4
         '2014':
-          volume: 1987630000
-          percent: 6.34
+          volume: 1968618000
+          percent: 6.27
           rank: 6
         '2015':
-          volume: 1941727000
-          percent: 5.9
+          volume: 1784797000
+          percent: 5.43
+          rank: 6
+        '2016':
+          volume: 1869601000
+          percent: 5.73
           rank: 5
     Other biomass:
       units: Mwh
@@ -4284,8 +4759,12 @@ LA:
           percent: 0.43
           rank: 29
         '2015':
-          volume: 97566
-          percent: 0.45
+          volume: 96275
+          percent: 0.44
+          rank: 29
+        '2016':
+          volume: 101586
+          percent: 0.46
           rank: 29
     Wood and wood-derived fuels:
       units: Mwh
@@ -4327,8 +4806,12 @@ LA:
           percent: 6.34
           rank: 6
         '2015':
-          volume: 2631180
-          percent: 6.21
+          volume: 2608468
+          percent: 6.22
+          rank: 6
+        '2016':
+          volume: 2585597
+          percent: 6.38
           rank: 6
 MA:
   products:
@@ -4372,9 +4855,13 @@ MA:
           percent: 0.35
           rank: 32
         '2015':
-          volume: 916236
-          percent: 0.36
-          rank: 33
+          volume: 827184
+          percent: 0.33
+          rank: 37
+        '2016':
+          volume: 770129
+          percent: 0.29
+          rank: 38
     Other biomass:
       units: Mwh
       volume:
@@ -4403,8 +4890,8 @@ MA:
           percent: 5.41
           rank: 5
         '2012':
-          volume: 1065140
-          percent: 5.37
+          volume: 1056204
+          percent: 5.33
           rank: 5
         '2013':
           volume: 1060541
@@ -4415,8 +4902,12 @@ MA:
           percent: 4.96
           rank: 6
         '2015':
-          volume: 1086010
-          percent: 4.97
+          volume: 1047103
+          percent: 4.82
+          rank: 6
+        '2016':
+          volume: 1077013
+          percent: 4.88
           rank: 6
     Solar:
       units: Mwh
@@ -4450,9 +4941,13 @@ MA:
           percent: 1.73
           rank: 7
         '2015':
-          volume: 690122
-          percent: 2.61
-          rank: 6
+          volume: 451366
+          percent: 1.81
+          rank: 7
+        '2016':
+          volume: 707318
+          percent: 1.92
+          rank: 10
     Wind:
       units: Mwh
       volume:
@@ -4485,8 +4980,12 @@ MA:
           percent: 0.12
           rank: 34
         '2015':
-          volume: 220124
-          percent: 0.12
+          volume: 214666
+          percent: 0.11
+          rank: 34
+        '2016':
+          volume: 236543
+          percent: 0.1
           rank: 34
     Wood and wood-derived fuels:
       units: Mwh
@@ -4516,9 +5015,9 @@ MA:
           percent: 0.27
           rank: 29
         '2012':
-          volume: 658991
-          percent: 1.74
-          rank: 19
+          volume: 101444
+          percent: 0.27
+          rank: 29
         '2013':
           volume: 76531
           percent: 0.19
@@ -4528,9 +5027,13 @@ MA:
           percent: 0.3
           rank: 29
         '2015':
-          volume: 123336
+          volume: 119769
           percent: 0.29
           rank: 29
+        '2016':
+          volume: 117111
+          percent: 0.29
+          rank: 30
 MD:
   products:
     Coal:
@@ -4572,6 +5075,10 @@ MD:
           volume: 1977928
           percent: 0.2
           rank: 19
+        '2015':
+          volume: 1921869
+          percent: 0.21
+          rank: 19
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -4612,9 +5119,13 @@ MD:
           percent: 0.62
           rank: 22
         '2015':
-          volume: 1626741
+          volume: 1623190
           percent: 0.65
-          rank: 22
+          rank: 23
+        '2016':
+          volume: 1396611
+          percent: 0.53
+          rank: 28
     Natural Gas:
       units: Mcf
       volume:
@@ -4652,6 +5163,10 @@ MD:
           rank: 31
         '2014':
           volume: 20000
+          percent: 0
+          rank: 31
+        '2015':
+          volume: 27000
           percent: 0
           rank: 31
     Other biomass:
@@ -4694,9 +5209,13 @@ MD:
           percent: 1.92
           rank: 16
         '2015':
-          volume: 425096
-          percent: 1.95
-          rank: 16
+          volume: 403239
+          percent: 1.86
+          rank: 17
+        '2016':
+          volume: 419481
+          percent: 1.9
+          rank: 17
     Solar:
       units: Mwh
       volume:
@@ -4721,9 +5240,13 @@ MD:
           percent: 0.55
           rank: 13
         '2015':
-          volume: 140806
-          percent: 0.53
+          volume: 118801
+          percent: 0.48
           rank: 13
+        '2016':
+          volume: 263857
+          percent: 0.72
+          rank: 14
     Wind:
       units: Mwh
       volume:
@@ -4748,7 +5271,11 @@ MD:
           percent: 0.18
           rank: 31
         '2015':
-          volume: 433486
+          volume: 434595
+          percent: 0.23
+          rank: 30
+        '2016':
+          volume: 527114
           percent: 0.23
           rank: 30
     Wood and wood-derived fuels:
@@ -4781,7 +5308,7 @@ MD:
         '2012':
           volume: 158953
           percent: 0.42
-          rank: 28
+          rank: 27
         '2013':
           volume: 142789
           percent: 0.36
@@ -4791,9 +5318,13 @@ MD:
           percent: 0.36
           rank: 28
         '2015':
-          volume: 116554
-          percent: 0.28
+          volume: 111162
+          percent: 0.27
           rank: 30
+        '2016':
+          volume: 127396
+          percent: 0.31
+          rank: 29
 ME:
   products:
     Conventional Hydroelectric:
@@ -4836,9 +5367,13 @@ ME:
           percent: 1.4
           rank: 12
         '2015':
-          volume: 3615133
-          percent: 1.44
-          rank: 13
+          volume: 3360527
+          percent: 1.35
+          rank: 14
+        '2016':
+          volume: 2967860
+          percent: 1.12
+          rank: 15
     Other biomass:
       units: Mwh
       volume:
@@ -4867,8 +5402,8 @@ ME:
           percent: 1.44
           rank: 19
         '2012':
-          volume: 266928
-          percent: 1.35
+          volume: 275864
+          percent: 1.39
           rank: 19
         '2013':
           volume: 220334
@@ -4879,8 +5414,12 @@ ME:
           percent: 0.95
           rank: 24
         '2015':
-          volume: 209323
-          percent: 0.96
+          volume: 182921
+          percent: 0.84
+          rank: 25
+        '2016':
+          volume: 186167
+          percent: 0.84
           rank: 24
     Wind:
       units: Mwh
@@ -4918,9 +5457,13 @@ ME:
           percent: 0.6
           rank: 26
         '2015':
-          volume: 1272613
-          percent: 0.67
+          volume: 1295708
+          percent: 0.68
           rank: 24
+        '2016':
+          volume: 1613921
+          percent: 0.71
+          rank: 22
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -4949,9 +5492,9 @@ ME:
           percent: 9.38
           rank: 1
         '2012':
-          volume: 2944950
-          percent: 7.79
-          rank: 3
+          volume: 3502497
+          percent: 9.27
+          rank: 2
         '2013':
           volume: 3625359
           percent: 9.06
@@ -4961,8 +5504,12 @@ ME:
           percent: 7.53
           rank: 3
         '2015':
-          volume: 2961669
-          percent: 6.99
+          volume: 2970026
+          percent: 7.08
+          rank: 5
+        '2016':
+          volume: 2639536
+          percent: 6.52
           rank: 5
 MI:
   products:
@@ -4994,7 +5541,7 @@ MI:
           percent: 0.43
           rank: 28
         '2012':
-          volume: 1214854
+          volume: 1206826
           percent: 0.44
           rank: 27
         '2013':
@@ -5006,9 +5553,13 @@ MI:
           percent: 0.62
           rank: 23
         '2015':
-          volume: 1471665
-          percent: 0.59
-          rank: 26
+          volume: 1499223
+          percent: 0.6
+          rank: 27
+        '2016':
+          volume: 1548041
+          percent: 0.58
+          rank: 25
     Natural Gas:
       units: Mcf
       volume:
@@ -5045,8 +5596,12 @@ MI:
           percent: 0.42
           rank: 18
         '2014':
-          volume: 114946000
+          volume: 115065000
           percent: 0.37
+          rank: 18
+        '2015':
+          volume: 107634000
+          percent: 0.33
           rank: 18
     Other biomass:
       units: Mwh
@@ -5088,9 +5643,24 @@ MI:
           percent: 4.87
           rank: 7
         '2015':
-          volume: 1103111
-          percent: 5.05
-          rank: 5
+          volume: 1038263
+          percent: 4.78
+          rank: 7
+        '2016':
+          volume: 1027257
+          percent: 4.65
+          rank: 7
+    Solar:
+      units: Mwh
+      volume:
+        '2015':
+          volume: 1190
+          percent: 0
+          rank: 32
+        '2016':
+          volume: 16780
+          percent: 0.05
+          rank: 32
     Wind:
       units: Mwh
       volume:
@@ -5131,9 +5701,13 @@ MI:
           percent: 2.13
           rank: 14
         '2015':
-          volume: 4777863
-          percent: 2.5
+          volume: 4796898
+          percent: 2.52
           rank: 12
+        '2016':
+          volume: 4693178
+          percent: 2.07
+          rank: 13
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -5174,8 +5748,12 @@ MI:
           percent: 4.14
           rank: 10
         '2015':
-          volume: 1446640
-          percent: 3.42
+          volume: 1446608
+          percent: 3.45
+          rank: 13
+        '2016':
+          volume: 1476111
+          percent: 3.64
           rank: 13
 MN:
   products:
@@ -5219,9 +5797,13 @@ MN:
           percent: 0.21
           rank: 37
         '2015':
-          volume: 514192
-          percent: 0.2
-          rank: 38
+          volume: 849054
+          percent: 0.34
+          rank: 36
+        '2016':
+          volume: 884411
+          percent: 0.33
+          rank: 36
     Other biomass:
       units: Mwh
       volume:
@@ -5262,8 +5844,12 @@ MN:
           percent: 2.84
           rank: 11
         '2015':
-          volume: 642796
-          percent: 2.94
+          volume: 628826
+          percent: 2.9
+          rank: 10
+        '2016':
+          volume: 664767
+          percent: 3.01
           rank: 10
     Solar:
       units: Mwh
@@ -5281,9 +5867,13 @@ MN:
           percent: 0.01
           rank: 27
         '2015':
-          volume: 3611
+          volume: 2789
           percent: 0.01
           rank: 28
+        '2016':
+          volume: 20842
+          percent: 0.06
+          rank: 30
     Wind:
       units: Mwh
       volume:
@@ -5312,9 +5902,9 @@ MN:
           percent: 5.6
           rank: 4
         '2012':
-          volume: 7615408
-          percent: 5.41
-          rank: 6
+          volume: 8176217
+          percent: 5.81
+          rank: 4
         '2013':
           volume: 8258751
           percent: 4.92
@@ -5324,9 +5914,13 @@ MN:
           percent: 5.33
           rank: 7
         '2015':
-          volume: 9796890
+          volume: 9778845
           percent: 5.13
           rank: 7
+        '2016':
+          volume: 10636885
+          percent: 4.7
+          rank: 6
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -5367,8 +5961,12 @@ MN:
           percent: 2.71
           rank: 15
         '2015':
-          volume: 1157192
-          percent: 2.73
+          volume: 1177196
+          percent: 2.81
+          rank: 15
+        '2016':
+          volume: 1141343
+          percent: 2.82
           rank: 15
 MO:
   products:
@@ -5411,6 +6009,10 @@ MO:
           volume: 362813
           percent: 0.04
           rank: 23
+        '2015':
+          volume: 138206
+          percent: 0.02
+          rank: 24
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -5451,9 +6053,13 @@ MO:
           percent: 0.27
           rank: 35
         '2015':
-          volume: 1578893
-          percent: 0.63
-          rank: 23
+          volume: 1595020
+          percent: 0.64
+          rank: 25
+        '2016':
+          volume: 1237399
+          percent: 0.47
+          rank: 29
     Crude Oil:
       units: bbl
       volume:
@@ -5497,6 +6103,10 @@ MO:
           volume: 149000
           percent: 0
           rank: 28
+        '2016':
+          volume: 123000
+          percent: 0
+          rank: 28
     Natural Gas:
       units: Mcf
       volume:
@@ -5513,9 +6123,13 @@ MO:
           percent: 0
           rank: 32
         '2014':
-          volume: 9000
+          volume: 3000
           percent: 0
           rank: 32
+        '2015':
+          volume: 1000
+          percent: 0
+          rank: 33
     Other biomass:
       units: Mwh
       volume:
@@ -5556,9 +6170,13 @@ MO:
           percent: 0.38
           rank: 33
         '2015':
-          volume: 71894
-          percent: 0.33
-          rank: 35
+          volume: 99841
+          percent: 0.46
+          rank: 28
+        '2016':
+          volume: 99390
+          percent: 0.45
+          rank: 30
     Solar:
       units: Mwh
       volume:
@@ -5567,8 +6185,12 @@ MO:
           percent: 0.05
           rank: 25
         '2015':
-          volume: 23070
-          percent: 0.09
+          volume: 16898
+          percent: 0.07
+          rank: 25
+        '2016':
+          volume: 40454
+          percent: 0.11
           rank: 24
     Wind:
       units: Mwh
@@ -5602,8 +6224,12 @@ MO:
           percent: 0.62
           rank: 25
         '2015':
-          volume: 1033949
+          volume: 1033076
           percent: 0.54
+          rank: 26
+        '2016':
+          volume: 1122804
+          percent: 0.5
           rank: 26
     Wood and wood-derived fuels:
       units: Mwh
@@ -5647,7 +6273,11 @@ MO:
         '2015':
           volume: 29061
           percent: 0.07
-          rank: 32
+          rank: 31
+        '2016':
+          volume: 47163
+          percent: 0.12
+          rank: 31
 MS:
   products:
     Coal:
@@ -5689,6 +6319,10 @@ MS:
           volume: 3737100
           percent: 0.37
           rank: 17
+        '2015':
+          volume: 3143392
+          percent: 0.35
+          rank: 18
     Crude Oil:
       units: bbl
       volume:
@@ -5722,7 +6356,7 @@ MS:
           rank: 13
         '2013':
           volume: 24345000
-          percent: 0.9
+          percent: 0.89
           rank: 13
         '2014':
           volume: 24346000
@@ -5731,6 +6365,10 @@ MS:
         '2015':
           volume: 24918000
           percent: 0.73
+          rank: 14
+        '2016':
+          volume: 21049000
+          percent: 0.65
           rank: 14
     Natural Gas:
       units: Mcf
@@ -5768,9 +6406,13 @@ MS:
           percent: 0.2
           rank: 21
         '2014':
-          volume: 54440000
+          volume: 54446000
           percent: 0.17
           rank: 21
+        '2015':
+          volume: 58207000
+          percent: 0.18
+          rank: 20
     Other biomass:
       units: Mwh
       volume:
@@ -5811,9 +6453,13 @@ MS:
           percent: 0.08
           rank: 44
         '2015':
-          volume: 16061
-          percent: 0.07
-          rank: 44
+          volume: 13454
+          percent: 0.06
+          rank: 46
+        '2016':
+          volume: 13674
+          percent: 0.06
+          rank: 45
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -5854,8 +6500,12 @@ MS:
           percent: 3.52
           rank: 12
         '2015':
-          volume: 1456003
-          percent: 3.44
+          volume: 1493078
+          percent: 3.56
+          rank: 12
+        '2016':
+          volume: 1479741
+          percent: 3.65
           rank: 12
 MT:
   products:
@@ -5898,6 +6548,10 @@ MT:
           volume: 44562048
           percent: 4.46
           rank: 6
+        '2015':
+          volume: 41864004
+          percent: 4.67
+          rank: 6
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -5938,15 +6592,19 @@ MT:
           percent: 4.43
           rank: 5
         '2015':
-          volume: 9707652
-          percent: 3.86
-          rank: 7
+          volume: 9887729
+          percent: 3.97
+          rank: 5
+        '2016':
+          volume: 10183481
+          percent: 3.83
+          rank: 5
     Crude Oil:
       units: bbl
       volume:
         '2006':
           volume: 36294000
-          percent: 1.95
+          percent: 1.96
           rank: 9
         '2007':
           volume: 34907000
@@ -5957,7 +6615,7 @@ MT:
           percent: 1.73
           rank: 10
         '2009':
-          volume: 27835000
+          volume: 27836000
           percent: 1.42
           rank: 11
         '2010':
@@ -5969,12 +6627,12 @@ MT:
           percent: 1.17
           rank: 13
         '2012':
-          volume: 26495000
+          volume: 26494000
           percent: 1.12
           rank: 12
         '2013':
-          volume: 29288000
-          percent: 1.08
+          volume: 29289000
+          percent: 1.07
           rank: 12
         '2014':
           volume: 29899000
@@ -5983,6 +6641,10 @@ MT:
         '2015':
           volume: 28561000
           percent: 0.83
+          rank: 12
+        '2016':
+          volume: 23220000
+          percent: 0.71
           rank: 12
     Natural Gas:
       units: Mcf
@@ -6020,12 +6682,16 @@ MT:
           percent: 0.21
           rank: 20
         '2014':
-          volume: 59930000
+          volume: 59160000
           percent: 0.19
           rank: 20
         '2015':
-          volume: 57218000
+          volume: 57421000
           percent: 0.17
+          rank: 21
+        '2016':
+          volume: 51219000
+          percent: 0.16
           rank: 16
     Wind:
       units: Mwh
@@ -6055,7 +6721,7 @@ MT:
           percent: 1.05
           rank: 19
         '2012':
-          volume: 1261752
+          volume: 1261751
           percent: 0.9
           rank: 22
         '2013':
@@ -6067,8 +6733,12 @@ MT:
           percent: 1.09
           rank: 21
         '2015':
-          volume: 1962330
+          volume: 1964726
           percent: 1.03
+          rank: 21
+        '2016':
+          volume: 2129662
+          percent: 0.94
           rank: 21
     Wood and wood-derived fuels:
       units: Mwh
@@ -6102,9 +6772,13 @@ MT:
           percent: 0.03
           rank: 33
         '2015':
-          volume: 12547
-          percent: 0.03
-          rank: 33
+          volume: 21281
+          percent: 0.05
+          rank: 32
+        '2016':
+          volume: 21544
+          percent: 0.05
+          rank: 32
 NC:
   products:
     Conventional Hydroelectric:
@@ -6147,8 +6821,12 @@ NC:
           percent: 1.83
           rank: 11
         '2015':
-          volume: 4937379
-          percent: 1.97
+          volume: 4742004
+          percent: 1.9
+          rank: 11
+        '2016':
+          volume: 4529492
+          percent: 1.7
           rank: 10
     Other biomass:
       units: Mwh
@@ -6190,9 +6868,13 @@ NC:
           percent: 2.4
           rank: 14
         '2015':
-          volume: 494234
-          percent: 2.26
-          rank: 14
+          volume: 544024
+          percent: 2.51
+          rank: 13
+        '2016':
+          volume: 576402
+          percent: 2.61
+          rank: 13
     Solar:
       units: Mwh
       volume:
@@ -6225,9 +6907,20 @@ NC:
           percent: 4.12
           rank: 4
         '2015':
-          volume: 1833524
-          percent: 6.93
-          rank: 3
+          volume: 1373579
+          percent: 5.52
+          rank: 4
+        '2016':
+          volume: 3854133
+          percent: 10.49
+          rank: 2
+    Wind:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 5579
+          percent: 0
+          rank: 40
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -6268,8 +6961,12 @@ NC:
           percent: 4.79
           rank: 9
         '2015':
-          volume: 1911238
-          percent: 4.51
+          volume: 2045348
+          percent: 4.88
+          rank: 9
+        '2016':
+          volume: 1846575
+          percent: 4.56
           rank: 9
 ND:
   products:
@@ -6312,6 +7009,10 @@ ND:
           volume: 29157193
           percent: 2.92
           rank: 9
+        '2015':
+          volume: 28801826
+          percent: 3.21
+          rank: 9
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -6353,42 +7054,46 @@ ND:
           rank: 18
         '2015':
           volume: 2094168
-          percent: 0.83
+          percent: 0.84
+          rank: 21
+        '2016':
+          volume: 1912005
+          percent: 0.72
           rank: 21
     Crude Oil:
       units: bbl
       volume:
         '2006':
-          volume: 39943000
-          percent: 2.15
+          volume: 39591000
+          percent: 2.13
           rank: 8
         '2007':
-          volume: 45122000
-          percent: 2.43
+          volume: 44788000
+          percent: 2.42
           rank: 8
         '2008':
-          volume: 62780000
-          percent: 3.43
+          volume: 62348000
+          percent: 3.41
           rank: 6
         '2009':
-          volume: 79728000
-          percent: 4.08
+          volume: 79339000
+          percent: 4.06
           rank: 4
         '2010':
-          volume: 113035000
-          percent: 5.66
+          volume: 112532000
+          percent: 5.63
           rank: 4
         '2011':
-          volume: 153010000
-          percent: 7.43
+          volume: 152399000
+          percent: 7.4
           rank: 4
         '2012':
-          volume: 243285000
-          percent: 10.26
+          volume: 242319000
+          percent: 10.21
           rank: 2
         '2013':
-          volume: 313815000
-          percent: 11.56
+          volume: 312164000
+          percent: 11.45
           rank: 2
         '2014':
           volume: 394468000
@@ -6397,6 +7102,10 @@ ND:
         '2015':
           volume: 429447000
           percent: 12.5
+          rank: 2
+        '2016':
+          volume: 378439000
+          percent: 11.65
           rank: 2
     Natural Gas:
       units: Mcf
@@ -6434,12 +7143,16 @@ ND:
           percent: 1.17
           rank: 12
         '2014':
-          volume: 462929000
-          percent: 1.48
+          volume: 463216000
+          percent: 1.47
           rank: 12
         '2015':
-          volume: 581761000
-          percent: 1.77
+          volume: 584743000
+          percent: 1.78
+          rank: 12
+        '2016':
+          volume: 605122000
+          percent: 1.85
           rank: 12
     Other biomass:
       units: Mwh
@@ -6481,8 +7194,12 @@ ND:
           percent: 0.01
           rank: 47
         '2015':
-          volume: 7584
-          percent: 0.03
+          volume: 3594
+          percent: 0.02
+          rank: 48
+        '2016':
+          volume: 11203
+          percent: 0.05
           rank: 46
     Wind:
       units: Mwh
@@ -6524,9 +7241,13 @@ ND:
           percent: 3.41
           rank: 11
         '2015':
-          volume: 6530127
-          percent: 3.42
+          volume: 6505704
+          percent: 3.41
           rank: 11
+        '2016':
+          volume: 8079718
+          percent: 3.57
+          rank: 9
 NE:
   products:
     Conventional Hydroelectric:
@@ -6559,7 +7280,7 @@ NE:
         '2012':
           volume: 1257054
           percent: 0.46
-          rank: 26
+          rank: 25
         '2013':
           volume: 1123915
           percent: 0.42
@@ -6569,9 +7290,13 @@ NE:
           percent: 0.45
           rank: 29
         '2015':
-          volume: 1084275
-          percent: 0.43
-          rank: 30
+          volume: 1684980
+          percent: 0.68
+          rank: 22
+        '2016':
+          volume: 1724755
+          percent: 0.65
+          rank: 23
     Crude Oil:
       units: bbl
       volume:
@@ -6612,9 +7337,13 @@ NE:
           percent: 0.1
           rank: 21
         '2015':
-          volume: 2918000
+          volume: 2896000
           percent: 0.08
           rank: 20
+        '2016':
+          volume: 2257000
+          percent: 0.07
+          rank: 21
     Natural Gas:
       units: Mcf
       volume:
@@ -6651,7 +7380,11 @@ NE:
           percent: 0
           rank: 28
         '2014':
-          volume: 402000
+          volume: 417000
+          percent: 0
+          rank: 29
+        '2015':
+          volume: 477000
           percent: 0
           rank: 29
     Other biomass:
@@ -6694,9 +7427,13 @@ NE:
           percent: 0.3
           rank: 37
         '2015':
-          volume: 67791
-          percent: 0.31
+          volume: 70953
+          percent: 0.33
           rank: 37
+        '2016':
+          volume: 94202
+          percent: 0.43
+          rank: 32
     Wind:
       units: Mwh
       volume:
@@ -6725,7 +7462,7 @@ NE:
           percent: 0.87
           rank: 23
         '2012':
-          volume: 1283630
+          volume: 1283629
           percent: 0.91
           rank: 21
         '2013':
@@ -6737,9 +7474,13 @@ NE:
           percent: 1.51
           rank: 18
         '2015':
-          volume: 3154154
-          percent: 1.65
+          volume: 3180463
+          percent: 1.67
           rank: 17
+        '2016':
+          volume: 3793398
+          percent: 1.67
+          rank: 16
 NH:
   products:
     Conventional Hydroelectric:
@@ -6770,9 +7511,9 @@ NH:
           percent: 0.5
           rank: 23
         '2012':
-          volume: 1289386
-          percent: 0.47
-          rank: 25
+          volume: 1247270
+          percent: 0.45
+          rank: 26
         '2013':
           volume: 1427198
           percent: 0.53
@@ -6782,9 +7523,13 @@ NH:
           percent: 0.53
           rank: 26
         '2015':
-          volume: 1398288
-          percent: 0.56
-          rank: 27
+          volume: 1270222
+          percent: 0.51
+          rank: 29
+        '2016':
+          volume: 1120801
+          percent: 0.42
+          rank: 30
     Other biomass:
       units: Mwh
       volume:
@@ -6825,8 +7570,12 @@ NH:
           percent: 0.58
           rank: 27
         '2015':
-          volume: 129162
-          percent: 0.59
+          volume: 118650
+          percent: 0.55
+          rank: 27
+        '2016':
+          volume: 121618
+          percent: 0.55
           rank: 27
     Wind:
       units: Mwh
@@ -6860,8 +7609,12 @@ NH:
           percent: 0.23
           rank: 30
         '2015':
-          volume: 419180
+          volume: 423496
           percent: 0.22
+          rank: 31
+        '2016':
+          volume: 446561
+          percent: 0.2
           rank: 31
     Wood and wood-derived fuels:
       units: Mwh
@@ -6903,8 +7656,12 @@ NH:
           percent: 3.34
           rank: 14
         '2015':
-          volume: 1516615
-          percent: 3.58
+          volume: 1505681
+          percent: 3.59
+          rank: 11
+        '2016':
+          volume: 1553609
+          percent: 3.84
           rank: 11
 NJ:
   products:
@@ -6947,6 +7704,10 @@ NJ:
           volume: 17296
           percent: 0.01
           rank: 46
+        '2015':
+          volume: 9541
+          percent: 0
+          rank: 47
     Other biomass:
       units: Mwh
       volume:
@@ -6987,8 +7748,12 @@ NJ:
           percent: 4.61
           rank: 8
         '2015':
-          volume: 980789
-          percent: 4.49
+          volume: 945693
+          percent: 4.36
+          rank: 8
+        '2016':
+          volume: 967049
+          percent: 4.38
           rank: 8
     Solar:
       units: Mwh
@@ -7022,8 +7787,12 @@ NJ:
           percent: 2.91
           rank: 6
         '2015':
-          volume: 824253
-          percent: 3.11
+          volume: 627890
+          percent: 2.52
+          rank: 5
+        '2016':
+          volume: 1038169
+          percent: 2.82
           rank: 5
     Wind:
       units: Mwh
@@ -7065,9 +7834,13 @@ NJ:
           percent: 0.01
           rank: 37
         '2015':
-          volume: 22144
+          volume: 21539
           percent: 0.01
           rank: 37
+        '2016':
+          volume: 22188
+          percent: 0.01
+          rank: 38
 NM:
   products:
     Coal:
@@ -7109,6 +7882,10 @@ NM:
           volume: 21963311
           percent: 2.2
           rank: 12
+        '2015':
+          volume: 19678796
+          percent: 2.19
+          rank: 10
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -7149,9 +7926,13 @@ NM:
           percent: 0.04
           rank: 44
         '2015':
-          volume: 120550
+          volume: 99473
+          percent: 0.04
+          rank: 45
+        '2016':
+          volume: 145930
           percent: 0.05
-          rank: 44
+          rank: 43
     Crude Oil:
       units: bbl
       volume:
@@ -7164,27 +7945,27 @@ NM:
           percent: 3.19
           rank: 6
         '2008':
-          volume: 60156000
+          volume: 60155000
           percent: 3.29
           rank: 7
         '2009':
-          volume: 61156000
+          volume: 61179000
           percent: 3.13
           rank: 7
         '2010':
-          volume: 65373000
-          percent: 3.27
+          volume: 65481000
+          percent: 3.28
           rank: 7
         '2011':
-          volume: 71249000
-          percent: 3.46
+          volume: 71466000
+          percent: 3.47
           rank: 6
         '2012':
-          volume: 85334000
+          volume: 85549000
           percent: 3.6
           rank: 6
         '2013':
-          volume: 101450000
+          volume: 101823000
           percent: 3.74
           rank: 6
         '2014':
@@ -7194,6 +7975,10 @@ NM:
         '2015':
           volume: 146746000
           percent: 4.27
+          rank: 6
+        '2016':
+          volume: 147302000
+          percent: 4.53
           rank: 6
     Geothermal:
       units: Mwh
@@ -7207,8 +7992,12 @@ NM:
           percent: 0.06
           rank: 7
         '2015':
-          volume: 13329
-          percent: 0.08
+          volume: 9675
+          percent: 0.06
+          rank: 7
+        '2016':
+          volume: 15850
+          percent: 0.09
           rank: 7
     Natural Gas:
       units: Mcf
@@ -7246,13 +8035,17 @@ NM:
           percent: 4.23
           rank: 8
         '2014':
-          volume: 1265579000
-          percent: 4.04
+          volume: 1266379000
+          percent: 4.03
           rank: 8
         '2015':
-          volume: 1289908000
-          percent: 3.92
+          volume: 1296458000
+          percent: 3.94
           rank: 9
+        '2016':
+          volume: 1286992000
+          percent: 3.94
+          rank: 10
     Other biomass:
       units: Mwh
       volume:
@@ -7293,9 +8086,13 @@ NM:
           percent: 0.07
           rank: 45
         '2015':
-          volume: 13798
-          percent: 0.06
-          rank: 45
+          volume: 19573
+          percent: 0.09
+          rank: 44
+        '2016':
+          volume: 17663
+          percent: 0.08
+          rank: 44
     Solar:
       units: Mwh
       volume:
@@ -7320,9 +8117,13 @@ NM:
           percent: 2.91
           rank: 5
         '2015':
-          volume: 646151
-          percent: 2.44
-          rank: 7
+          volume: 614877
+          percent: 2.47
+          rank: 6
+        '2016':
+          volume: 804392
+          percent: 2.19
+          rank: 8
     Wind:
       units: Mwh
       volume:
@@ -7363,9 +8164,13 @@ NM:
           percent: 1.25
           rank: 20
         '2015':
-          volume: 2067197
-          percent: 1.08
+          volume: 2090021
+          percent: 1.1
           rank: 20
+        '2016':
+          volume: 3613982
+          percent: 1.6
+          rank: 17
 NV:
   products:
     Conventional Hydroelectric:
@@ -7408,9 +8213,13 @@ NV:
           percent: 0.92
           rank: 20
         '2015':
-          volume: 2288377
+          volume: 2264136
           percent: 0.91
-          rank: 19
+          rank: 20
+        '2016':
+          volume: 1766640
+          percent: 0.66
+          rank: 22
     Crude Oil:
       units: bbl
       volume:
@@ -7454,6 +8263,10 @@ NV:
           volume: 281000
           percent: 0.01
           rank: 26
+        '2016':
+          volume: 277000
+          percent: 0.01
+          rank: 26
     Geothermal:
       units: Mwh
       volume:
@@ -7494,8 +8307,12 @@ NV:
           percent: 17.19
           rank: 2
         '2015':
-          volume: 3400353
-          percent: 20.28
+          volume: 3110504
+          percent: 19.54
+          rank: 2
+        '2016':
+          volume: 3848200
+          percent: 22.09
           rank: 2
     Natural Gas:
       units: Mcf
@@ -7535,7 +8352,11 @@ NV:
         '2014':
           volume: 3000
           percent: 0
-          rank: 33
+          rank: 32
+        '2015':
+          volume: 3000
+          percent: 0
+          rank: 32
     Other biomass:
       units: Mwh
       volume:
@@ -7552,8 +8373,12 @@ NV:
           percent: 0.11
           rank: 42
         '2015':
-          volume: 24569
-          percent: 0.11
+          volume: 25695
+          percent: 0.12
+          rank: 43
+        '2016':
+          volume: 25871
+          percent: 0.12
           rank: 42
     Solar:
       units: Mwh
@@ -7591,8 +8416,12 @@ NV:
           percent: 5.73
           rank: 3
         '2015':
-          volume: 1693988
-          percent: 6.4
+          volume: 1657405
+          percent: 6.66
+          rank: 3
+        '2016':
+          volume: 2545983
+          percent: 6.93
           rank: 4
     Wind:
       units: Mwh
@@ -7613,6 +8442,10 @@ NV:
           volume: 309724
           percent: 0.16
           rank: 33
+        '2016':
+          volume: 343865
+          percent: 0.15
+          rank: 32
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -7670,7 +8503,7 @@ NY:
           percent: 8.77
           rank: 4
         '2012':
-          volume: 24652495
+          volume: 24652491
           percent: 8.92
           rank: 4
         '2013':
@@ -7682,9 +8515,13 @@ NY:
           percent: 10.06
           rank: 3
         '2015':
-          volume: 27102707
-          percent: 10.79
+          volume: 26014520
+          percent: 10.44
           rank: 3
+        '2016':
+          volume: 26603999
+          percent: 10.01
+          rank: 4
     Crude Oil:
       units: bbl
       volume:
@@ -7713,7 +8550,7 @@ NY:
           percent: 0.02
           rank: 26
         '2012':
-          volume: 360000
+          volume: 364000
           percent: 0.02
           rank: 27
         '2013':
@@ -7728,6 +8565,10 @@ NY:
           volume: 279000
           percent: 0.01
           rank: 27
+        '2016':
+          volume: 280000
+          percent: 0.01
+          rank: 25
     Natural Gas:
       units: Mcf
       volume:
@@ -7766,7 +8607,11 @@ NY:
         '2014':
           volume: 20201000
           percent: 0.06
-          rank: 23
+          rank: 22
+        '2015':
+          volume: 17829000
+          percent: 0.05
+          rank: 22
     Other biomass:
       units: Mwh
       volume:
@@ -7807,8 +8652,12 @@ NY:
           percent: 7.71
           rank: 4
         '2015':
-          volume: 1703094
-          percent: 7.8
+          volume: 1624771
+          percent: 7.49
+          rank: 4
+        '2016':
+          volume: 1634575
+          percent: 7.41
           rank: 4
     Solar:
       units: Mwh
@@ -7830,8 +8679,12 @@ NY:
           percent: 0.4
           rank: 14
         '2015':
-          volume: 103207
-          percent: 0.39
+          volume: 100526
+          percent: 0.4
+          rank: 14
+        '2016':
+          volume: 175606
+          percent: 0.48
           rank: 15
     Wind:
       units: Mwh
@@ -7861,7 +8714,7 @@ NY:
           percent: 2.35
           rank: 14
         '2012':
-          volume: 2991580
+          volume: 2991577
           percent: 2.12
           rank: 14
         '2013':
@@ -7873,9 +8726,13 @@ NY:
           percent: 2.18
           rank: 13
         '2015':
-          volume: 3956421
-          percent: 2.07
+          volume: 3976980
+          percent: 2.09
           rank: 14
+        '2016':
+          volume: 3945704
+          percent: 1.74
+          rank: 15
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -7906,7 +8763,7 @@ NY:
         '2012':
           volume: 487784
           percent: 1.29
-          rank: 22
+          rank: 21
         '2013':
           volume: 607554
           percent: 1.52
@@ -7916,8 +8773,12 @@ NY:
           percent: 1.75
           rank: 20
         '2015':
-          volume: 777934
-          percent: 1.84
+          volume: 616274
+          percent: 1.47
+          rank: 20
+        '2016':
+          volume: 655822
+          percent: 1.62
           rank: 19
 OH:
   products:
@@ -7960,6 +8821,10 @@ OH:
           volume: 22252365
           percent: 2.23
           rank: 11
+        '2015':
+          volume: 17040975
+          percent: 1.9
+          rank: 12
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -8000,8 +8865,12 @@ OH:
           percent: 0.18
           rank: 38
         '2015':
-          volume: 509850
-          percent: 0.2
+          volume: 456669
+          percent: 0.18
+          rank: 39
+        '2016':
+          volume: 517486
+          percent: 0.19
           rank: 39
     Crude Oil:
       units: bbl
@@ -8031,7 +8900,7 @@ OH:
           percent: 0.23
           rank: 17
         '2012':
-          volume: 5109000
+          volume: 5108000
           percent: 0.22
           rank: 17
         '2013':
@@ -8045,6 +8914,10 @@ OH:
         '2015':
           volume: 25901000
           percent: 0.75
+          rank: 13
+        '2016':
+          volume: 22010000
+          percent: 0.68
           rank: 13
     Natural Gas:
       units: Mcf
@@ -8082,13 +8955,17 @@ OH:
           percent: 0.56
           rank: 16
         '2014':
-          volume: 518767000
-          percent: 1.65
+          volume: 512371000
+          percent: 1.63
           rank: 11
         '2015':
           volume: 1014848000
           percent: 3.09
-          rank: 11
+          rank: 10
+        '2016':
+          volume: 1466854000
+          percent: 4.49
+          rank: 8
     Other biomass:
       units: Mwh
       volume:
@@ -8129,8 +9006,12 @@ OH:
           percent: 2.17
           rank: 15
         '2015':
-          volume: 475209
+          volume: 472855
           percent: 2.18
+          rank: 15
+        '2016':
+          volume: 485907
+          percent: 2.2
           rank: 15
     Solar:
       units: Mwh
@@ -8156,8 +9037,12 @@ OH:
           percent: 0.3
           rank: 16
         '2015':
-          volume: 77092
-          percent: 0.29
+          volume: 56072
+          percent: 0.23
+          rank: 17
+        '2016':
+          volume: 82720
+          percent: 0.23
           rank: 18
     Wind:
       units: Mwh
@@ -8199,8 +9084,12 @@ OH:
           percent: 0.63
           rank: 24
         '2015':
-          volume: 1205647
+          volume: 1203008
           percent: 0.63
+          rank: 25
+        '2016':
+          volume: 1255090
+          percent: 0.55
           rank: 25
     Wood and wood-derived fuels:
       units: Mwh
@@ -8232,7 +9121,7 @@ OH:
         '2012':
           volume: 350888
           percent: 0.93
-          rank: 24
+          rank: 23
         '2013':
           volume: 342583
           percent: 0.86
@@ -8242,8 +9131,12 @@ OH:
           percent: 0.82
           rank: 25
         '2015':
-          volume: 339105
-          percent: 0.8
+          volume: 325902
+          percent: 0.78
+          rank: 25
+        '2016':
+          volume: 278068
+          percent: 0.69
           rank: 25
 OK:
   products:
@@ -8286,6 +9179,10 @@ OK:
           volume: 904311
           percent: 0.09
           rank: 21
+        '2015':
+          volume: 780199
+          percent: 0.09
+          rank: 22
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -8316,7 +9213,7 @@ OK:
         '2012':
           volume: 1145514
           percent: 0.41
-          rank: 28
+          rank: 29
         '2013':
           volume: 2178078
           percent: 0.81
@@ -8326,8 +9223,12 @@ OK:
           percent: 0.55
           rank: 25
         '2015':
-          volume: 2511185
-          percent: 1
+          volume: 2663901
+          percent: 1.07
+          rank: 16
+        '2016':
+          volume: 2381660
+          percent: 0.9
           rank: 18
     Crude Oil:
       units: bbl
@@ -8353,16 +9254,16 @@ OK:
           percent: 3.37
           rank: 5
         '2011':
-          volume: 74735000
+          volume: 74827000
           percent: 3.63
           rank: 5
         '2012':
-          volume: 89863000
-          percent: 3.79
+          volume: 91284000
+          percent: 3.84
           rank: 5
         '2013':
-          volume: 109566000
-          percent: 4.04
+          volume: 118977000
+          percent: 4.37
           rank: 5
         '2014':
           volume: 145454000
@@ -8371,6 +9272,10 @@ OK:
         '2015':
           volume: 157770000
           percent: 4.59
+          rank: 5
+        '2016':
+          volume: 153653000
+          percent: 4.73
           rank: 5
     Natural Gas:
       units: Mcf
@@ -8408,12 +9313,16 @@ OK:
           percent: 6.75
           rank: 6
         '2014':
-          volume: 2310114000
-          percent: 7.37
+          volume: 2331086000
+          percent: 7.42
           rank: 4
         '2015':
           volume: 2499599000
           percent: 7.6
+          rank: 4
+        '2016':
+          volume: 2468312000
+          percent: 7.56
           rank: 4
     Other biomass:
       units: Mwh
@@ -8455,16 +9364,24 @@ OK:
           percent: 0.42
           rank: 31
         '2015':
-          volume: 96450
-          percent: 0.44
-          rank: 30
+          volume: 91201
+          percent: 0.42
+          rank: 31
+        '2016':
+          volume: 82695
+          percent: 0.37
+          rank: 36
     Solar:
       units: Mwh
       volume:
         '2015':
           volume: 1556
           percent: 0.01
-          rank: 29
+          rank: 30
+        '2016':
+          volume: 5436
+          percent: 0.01
+          rank: 34
     Wind:
       units: Mwh
       volume:
@@ -8495,7 +9412,7 @@ OK:
         '2012':
           volume: 8157585
           percent: 5.79
-          rank: 4
+          rank: 5
         '2013':
           volume: 11162493
           percent: 6.65
@@ -8505,8 +9422,12 @@ OK:
           percent: 6.57
           rank: 4
         '2015':
-          volume: 14017629
-          percent: 7.34
+          volume: 14030897
+          percent: 7.36
+          rank: 3
+        '2016':
+          volume: 19525656
+          percent: 8.62
           rank: 3
     Wood and wood-derived fuels:
       units: Mwh
@@ -8538,7 +9459,7 @@ OK:
         '2012':
           volume: 269016
           percent: 0.71
-          rank: 26
+          rank: 25
         '2013':
           volume: 218313
           percent: 0.55
@@ -8548,9 +9469,13 @@ OK:
           percent: 0.58
           rank: 26
         '2015':
-          volume: 225078
-          percent: 0.53
+          volume: 244967
+          percent: 0.58
           rank: 26
+        '2016':
+          volume: 230490
+          percent: 0.57
+          rank: 27
 OR:
   products:
     Conventional Hydroelectric:
@@ -8593,8 +9518,12 @@ OR:
           percent: 13.6
           rank: 2
         '2015':
-          volume: 32302677
-          percent: 12.86
+          volume: 31253851
+          percent: 12.55
+          rank: 2
+        '2016':
+          volume: 33699961
+          percent: 12.68
           rank: 2
     Geothermal:
       units: Mwh
@@ -8612,8 +9541,12 @@ OR:
           percent: 1.16
           rank: 5
         '2015':
-          volume: 181276
-          percent: 1.08
+          volume: 178804
+          percent: 1.12
+          rank: 5
+        '2016':
+          volume: 196804
+          percent: 1.13
           rank: 5
     Natural Gas:
       units: Mcf
@@ -8651,7 +9584,11 @@ OR:
           percent: 0
           rank: 29
         '2014':
-          volume: 950000
+          volume: 1142000
+          percent: 0
+          rank: 28
+        '2015':
+          volume: 848000
           percent: 0
           rank: 28
     Other biomass:
@@ -8694,9 +9631,13 @@ OR:
           percent: 1.61
           rank: 19
         '2015':
-          volume: 349027
-          percent: 1.6
-          rank: 19
+          volume: 368525
+          percent: 1.7
+          rank: 18
+        '2016':
+          volume: 361961
+          percent: 1.64
+          rank: 18
     Solar:
       units: Mwh
       volume:
@@ -8717,9 +9658,13 @@ OR:
           percent: 0.14
           rank: 21
         '2015':
-          volume: 33157
-          percent: 0.13
-          rank: 22
+          volume: 24208
+          percent: 0.1
+          rank: 23
+        '2016':
+          volume: 70488
+          percent: 0.19
+          rank: 21
     Wind:
       units: Mwh
       volume:
@@ -8748,7 +9693,7 @@ OR:
           percent: 3.97
           rank: 10
         '2012':
-          volume: 6343468
+          volume: 6343484
           percent: 4.5
           rank: 8
         '2013':
@@ -8760,9 +9705,13 @@ OR:
           percent: 4.16
           rank: 8
         '2015':
-          volume: 6674590
-          percent: 3.5
+          volume: 6631555
+          percent: 3.48
           rank: 10
+        '2016':
+          volume: 7162778
+          percent: 3.16
+          rank: 11
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -8793,7 +9742,7 @@ OR:
         '2012':
           volume: 600112
           percent: 1.59
-          rank: 20
+          rank: 19
         '2013':
           volume: 700182
           percent: 1.75
@@ -8803,8 +9752,12 @@ OR:
           percent: 1.9
           rank: 19
         '2015':
-          volume: 733291
-          percent: 1.73
+          volume: 747239
+          percent: 1.78
+          rank: 18
+        '2016':
+          volume: 630308
+          percent: 1.56
           rank: 20
 PA:
   products:
@@ -8847,6 +9800,10 @@ PA:
           volume: 60909704
           percent: 6.09
           rank: 4
+        '2015':
+          volume: 50030833
+          percent: 5.58
+          rank: 5
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -8887,9 +9844,13 @@ PA:
           percent: 1.02
           rank: 15
         '2015':
-          volume: 2584265
-          percent: 1.03
+          volume: 2603704
+          percent: 1.05
           rank: 17
+        '2016':
+          volume: 2376224
+          percent: 0.89
+          rank: 19
     Crude Oil:
       units: bbl
       volume:
@@ -8933,6 +9894,10 @@ PA:
           volume: 6993000
           percent: 0.2
           rank: 18
+        '2016':
+          volume: 6185000
+          percent: 0.19
+          rank: 18
     Natural Gas:
       units: Mcf
       volume:
@@ -8969,12 +9934,16 @@ PA:
           percent: 11.04
           rank: 2
         '2014':
-          volume: 4214643000
-          percent: 13.45
+          volume: 4257693000
+          percent: 13.56
           rank: 2
         '2015':
-          volume: 4768848000
-          percent: 14.5
+          volume: 4812983000
+          percent: 14.63
+          rank: 2
+        '2016':
+          volume: 5263973000
+          percent: 16.12
           rank: 2
     Other biomass:
       units: Mwh
@@ -9016,8 +9985,12 @@ PA:
           percent: 8.8
           rank: 3
         '2015':
-          volume: 2001326
-          percent: 9.17
+          volume: 1934118
+          percent: 8.91
+          rank: 3
+        '2016':
+          volume: 1922444
+          percent: 8.71
           rank: 3
     Solar:
       units: Mwh
@@ -9051,9 +10024,13 @@ PA:
           percent: 0.35
           rank: 15
         '2015':
-          volume: 86249
-          percent: 0.33
+          volume: 63894
+          percent: 0.26
           rank: 16
+        '2016':
+          volume: 81555
+          percent: 0.22
+          rank: 19
     Wind:
       units: Mwh
       volume:
@@ -9094,9 +10071,13 @@ PA:
           percent: 1.96
           rank: 15
         '2015':
-          volume: 3351753
+          volume: 3352672
           percent: 1.76
           rank: 16
+        '2016':
+          volume: 3471692
+          percent: 1.53
+          rank: 18
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -9127,7 +10108,7 @@ PA:
         '2012':
           volume: 533585
           percent: 1.41
-          rank: 21
+          rank: 20
         '2013':
           volume: 491998
           percent: 1.23
@@ -9137,8 +10118,12 @@ PA:
           percent: 1.3
           rank: 21
         '2015':
-          volume: 511587
-          percent: 1.21
+          volume: 469842
+          percent: 1.12
+          rank: 21
+        '2016':
+          volume: 459797
+          percent: 1.14
           rank: 21
 RI:
   products:
@@ -9181,6 +10166,10 @@ RI:
           volume: 3964
           percent: 0
           rank: 48
+        '2015':
+          volume: 3148
+          percent: 0
+          rank: 48
     Other biomass:
       units: Mwh
       volume:
@@ -9221,8 +10210,12 @@ RI:
           percent: 0.95
           rank: 23
         '2015':
-          volume: 211007
+          volume: 211238
           percent: 0.97
+          rank: 23
+        '2016':
+          volume: 205087
+          percent: 0.93
           rank: 23
     Solar:
       units: Mwh
@@ -9236,9 +10229,13 @@ RI:
           percent: 0.06
           rank: 24
         '2015':
-          volume: 14030
-          percent: 0.05
+          volume: 14351
+          percent: 0.06
           rank: 26
+        '2016':
+          volume: 19434
+          percent: 0.05
+          rank: 31
     Wind:
       units: Mwh
       volume:
@@ -9263,9 +10260,13 @@ RI:
           percent: 0.01
           rank: 38
         '2015':
-          volume: 14767
+          volume: 10067
           percent: 0.01
           rank: 38
+        '2016':
+          volume: 33056
+          percent: 0.01
+          rank: 37
 SC:
   products:
     Conventional Hydroelectric:
@@ -9308,9 +10309,13 @@ SC:
           percent: 0.99
           rank: 17
         '2015':
-          volume: 2847943
-          percent: 1.13
-          rank: 16
+          volume: 2564360
+          percent: 1.03
+          rank: 18
+        '2016':
+          volume: 2399399
+          percent: 0.9
+          rank: 17
     Other biomass:
       units: Mwh
       volume:
@@ -9351,8 +10356,12 @@ SC:
           percent: 0.9
           rank: 25
         '2015':
-          volume: 188967
-          percent: 0.87
+          volume: 186386
+          percent: 0.86
+          rank: 24
+        '2016':
+          volume: 175289
+          percent: 0.79
           rank: 25
     Solar:
       units: Mwh
@@ -9366,9 +10375,13 @@ SC:
           percent: 0.03
           rank: 26
         '2015':
-          volume: 5442
+          volume: 4220
           percent: 0.02
           rank: 27
+        '2016':
+          volume: 5342
+          percent: 0.01
+          rank: 35
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -9409,9 +10422,13 @@ SC:
           percent: 5.3
           rank: 8
         '2015':
-          volume: 2040614
-          percent: 4.82
+          volume: 2102993
+          percent: 5.02
           rank: 8
+        '2016':
+          volume: 2196948
+          percent: 5.42
+          rank: 7
 SD:
   products:
     Conventional Hydroelectric:
@@ -9454,34 +10471,38 @@ SD:
           percent: 2.12
           rank: 10
         '2015':
-          volume: 4850244
-          percent: 1.93
+          volume: 4850485
+          percent: 1.95
+          rank: 10
+        '2016':
+          volume: 4134463
+          percent: 1.56
           rank: 11
     Crude Oil:
       units: bbl
       volume:
         '2006':
-          volume: 1389000
+          volume: 1390000
           percent: 0.07
           rank: 24
         '2007':
-          volume: 1632000
+          volume: 1664000
           percent: 0.09
           rank: 24
         '2008':
-          volume: 1713000
+          volume: 1700000
           percent: 0.09
           rank: 24
         '2009':
-          volume: 1676000
+          volume: 1664000
           percent: 0.09
           rank: 22
         '2010':
-          volume: 1604000
+          volume: 1607000
           percent: 0.08
           rank: 24
         '2011':
-          volume: 1625000
+          volume: 1634000
           percent: 0.08
           rank: 24
         '2012':
@@ -9499,6 +10520,10 @@ SD:
         '2015':
           volume: 1666000
           percent: 0.05
+          rank: 24
+        '2016':
+          volume: 1407000
+          percent: 0.04
           rank: 24
     Natural Gas:
       units: Mcf
@@ -9536,9 +10561,13 @@ SD:
           percent: 0.05
           rank: 24
         '2014':
-          volume: 15307000
+          volume: 15305000
           percent: 0.05
-          rank: 24
+          rank: 23
+        '2015':
+          volume: 14531000
+          percent: 0.04
+          rank: 23
     Other biomass:
       units: Mwh
       volume:
@@ -9573,6 +10602,10 @@ SD:
         '2015':
           volume: 0
           percent: 0
+          rank: 49
+        '2016':
+          volume: 0
+          percent: 0
           rank: 48
     Wind:
       units: Mwh
@@ -9602,8 +10635,8 @@ SD:
           percent: 2.22
           rank: 15
         '2012':
-          volume: 2914666
-          percent: 2.07
+          volume: 2353857
+          percent: 1.67
           rank: 15
         '2013':
           volume: 2687699
@@ -9614,9 +10647,13 @@ SD:
           percent: 1.29
           rank: 19
         '2015':
-          volume: 2480905
-          percent: 1.3
+          volume: 2497513
+          percent: 1.31
           rank: 18
+        '2016':
+          volume: 3144957
+          percent: 1.39
+          rank: 19
 TN:
   products:
     Coal:
@@ -9658,6 +10695,10 @@ TN:
           volume: 839249
           percent: 0.08
           rank: 22
+        '2015':
+          volume: 897484
+          percent: 0.1
+          rank: 21
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -9698,9 +10739,13 @@ TN:
           percent: 3.43
           rank: 8
         '2015':
-          volume: 9761420
-          percent: 3.89
-          rank: 6
+          volume: 9581240
+          percent: 3.85
+          rank: 7
+        '2016':
+          volume: 7418294
+          percent: 2.79
+          rank: 8
     Crude Oil:
       units: bbl
       volume:
@@ -9744,6 +10789,10 @@ TN:
           volume: 296000
           percent: 0.01
           rank: 25
+        '2016':
+          volume: 252000
+          percent: 0.01
+          rank: 27
     Natural Gas:
       units: Mcf
       volume:
@@ -9782,6 +10831,10 @@ TN:
         '2014':
           volume: 5294000
           percent: 0.02
+          rank: 25
+        '2015':
+          volume: 4276000
+          percent: 0.01
           rank: 26
     Other biomass:
       units: Mwh
@@ -9823,9 +10876,13 @@ TN:
           percent: 0.41
           rank: 32
         '2015':
-          volume: 89259
-          percent: 0.41
-          rank: 32
+          volume: 81768
+          percent: 0.38
+          rank: 34
+        '2016':
+          volume: 83913
+          percent: 0.38
+          rank: 35
     Solar:
       units: Mwh
       volume:
@@ -9842,9 +10899,13 @@ TN:
           percent: 0.16
           rank: 20
         '2015':
-          volume: 105293
-          percent: 0.4
-          rank: 14
+          volume: 76147
+          percent: 0.31
+          rank: 15
+        '2016':
+          volume: 87011
+          percent: 0.24
+          rank: 17
     Wind:
       units: Mwh
       volume:
@@ -9888,6 +10949,10 @@ TN:
           volume: 45841
           percent: 0.02
           rank: 36
+        '2016':
+          volume: 37747
+          percent: 0.02
+          rank: 36
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -9928,9 +10993,13 @@ TN:
           percent: 2.3
           rank: 18
         '2015':
-          volume: 960522
-          percent: 2.27
-          rank: 18
+          volume: 922055
+          percent: 2.2
+          rank: 17
+        '2016':
+          volume: 917055
+          percent: 2.26
+          rank: 16
 TX:
   products:
     Coal:
@@ -9972,6 +11041,10 @@ TX:
           volume: 43654013
           percent: 4.37
           rank: 7
+        '2015':
+          volume: 35917966
+          percent: 4
+          rank: 7
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -10012,9 +11085,13 @@ TX:
           percent: 0.15
           rank: 40
         '2015':
-          volume: 796982
-          percent: 0.32
-          rank: 36
+          volume: 956410
+          percent: 0.38
+          rank: 34
+        '2016':
+          volume: 1103274
+          percent: 0.42
+          rank: 31
     Crude Oil:
       units: bbl
       volume:
@@ -10024,15 +11101,15 @@ TX:
           rank: 1
         '2007':
           volume: 391270000
-          percent: 21.11
+          percent: 21.12
           rank: 1
         '2008':
           volume: 406007000
-          percent: 22.18
+          percent: 22.19
           rank: 1
         '2009':
           volume: 399344000
-          percent: 20.43
+          percent: 20.44
           rank: 1
         '2010':
           volume: 426666000
@@ -10040,15 +11117,15 @@ TX:
           rank: 1
         '2011':
           volume: 528844000
-          percent: 25.69
+          percent: 25.66
           rank: 1
         '2012':
           volume: 722130000
-          percent: 30.44
+          percent: 30.42
           rank: 1
         '2013':
-          volume: 923439000
-          percent: 34.01
+          volume: 925024000
+          percent: 33.94
           rank: 1
         '2014':
           volume: 1158166000
@@ -10057,6 +11134,10 @@ TX:
         '2015':
           volume: 1263585000
           percent: 36.77
+          rank: 1
+        '2016':
+          volume: 1176041000
+          percent: 36.21
           rank: 1
     Natural Gas:
       units: Mcf
@@ -10094,12 +11175,16 @@ TX:
           percent: 28.11
           rank: 1
         '2014':
-          volume: 8663333000
-          percent: 27.64
+          volume: 8659188000
+          percent: 27.57
           rank: 1
         '2015':
-          volume: 8763381000
-          percent: 26.64
+          volume: 8801282000
+          percent: 26.76
+          rank: 1
+        '2016':
+          volume: 8099218000
+          percent: 24.81
           rank: 1
     Other biomass:
       units: Mwh
@@ -10141,8 +11226,12 @@ TX:
           percent: 3.39
           rank: 9
         '2015':
-          volume: 734010
-          percent: 3.36
+          volume: 783645
+          percent: 3.61
+          rank: 9
+        '2016':
+          volume: 827707
+          percent: 3.75
           rank: 9
     Solar:
       units: Mwh
@@ -10168,9 +11257,13 @@ TX:
           percent: 1.6
           rank: 8
         '2015':
-          volume: 423056
-          percent: 1.6
+          volume: 400759
+          percent: 1.61
           rank: 8
+        '2016':
+          volume: 751002
+          percent: 2.04
+          rank: 9
     Wind:
       units: Mwh
       volume:
@@ -10211,8 +11304,12 @@ TX:
           percent: 22.02
           rank: 1
         '2015':
-          volume: 44959420
-          percent: 23.55
+          volume: 44833365
+          percent: 23.51
+          rank: 1
+        '2016':
+          volume: 57550512
+          percent: 25.41
           rank: 1
     Wood and wood-derived fuels:
       units: Mwh
@@ -10254,8 +11351,12 @@ TX:
           percent: 2.54
           rank: 17
         '2015':
-          volume: 1042422
-          percent: 2.46
+          volume: 656580
+          percent: 1.57
+          rank: 19
+        '2016':
+          volume: 907283
+          percent: 2.24
           rank: 17
 UT:
   products:
@@ -10298,6 +11399,10 @@ UT:
           volume: 17934416
           percent: 1.79
           rank: 13
+        '2015':
+          volume: 14419078
+          percent: 1.61
+          rank: 13
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -10338,8 +11443,12 @@ UT:
           percent: 0.24
           rank: 36
         '2015':
-          volume: 596111
-          percent: 0.24
+          volume: 768773
+          percent: 0.31
+          rank: 38
+        '2016':
+          volume: 816403
+          percent: 0.31
           rank: 37
     Crude Oil:
       units: bbl
@@ -10361,20 +11470,20 @@ UT:
           percent: 1.17
           rank: 13
         '2010':
-          volume: 24674000
+          volume: 24672000
           percent: 1.23
           rank: 12
         '2011':
-          volume: 26331000
+          volume: 26323000
           percent: 1.28
           rank: 11
         '2012':
-          volume: 30289000
-          percent: 1.28
+          volume: 30211000
+          percent: 1.27
           rank: 11
         '2013':
-          volume: 34931000
-          percent: 1.29
+          volume: 35017000
+          percent: 1.28
           rank: 11
         '2014':
           volume: 40895000
@@ -10383,6 +11492,10 @@ UT:
         '2015':
           volume: 36987000
           percent: 1.08
+          rank: 11
+        '2016':
+          volume: 30412000
+          percent: 0.94
           rank: 11
     Geothermal:
       units: Mwh
@@ -10424,8 +11537,12 @@ UT:
           percent: 3.29
           rank: 3
         '2015':
-          volume: 503235
-          percent: 3
+          volume: 429517
+          percent: 2.7
+          rank: 3
+        '2016':
+          volume: 530058
+          percent: 3.04
           rank: 3
     Natural Gas:
       units: Mcf
@@ -10463,12 +11580,16 @@ UT:
           percent: 1.59
           rank: 11
         '2014':
-          volume: 453207000
+          volume: 454545000
           percent: 1.45
           rank: 13
         '2015':
-          volume: 422423000
-          percent: 1.28
+          volume: 423300000
+          percent: 1.29
+          rank: 13
+        '2016':
+          volume: 367251000
+          percent: 1.12
           rank: 13
     Other biomass:
       units: Mwh
@@ -10510,9 +11631,13 @@ UT:
           percent: 0.34
           rank: 36
         '2015':
-          volume: 71542
-          percent: 0.33
-          rank: 36
+          volume: 85131
+          percent: 0.39
+          rank: 33
+        '2016':
+          volume: 84215
+          percent: 0.38
+          rank: 34
     Solar:
       units: Mwh
       volume:
@@ -10529,9 +11654,13 @@ UT:
           percent: 0.01
           rank: 28
         '2015':
-          volume: 29073
-          percent: 0.11
-          rank: 23
+          volume: 31859
+          percent: 0.13
+          rank: 22
+        '2016':
+          volume: 873746
+          percent: 2.38
+          rank: 7
     Wind:
       units: Mwh
       volume:
@@ -10564,8 +11693,12 @@ UT:
           percent: 0.36
           rank: 27
         '2015':
-          volume: 621423
+          volume: 625917
           percent: 0.33
+          rank: 27
+        '2016':
+          volume: 826864
+          percent: 0.37
           rank: 27
 VA:
   products:
@@ -10608,6 +11741,10 @@ VA:
           volume: 15059178
           percent: 1.51
           rank: 15
+        '2015':
+          volume: 13914269
+          percent: 1.55
+          rank: 14
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -10648,9 +11785,13 @@ VA:
           percent: 0.37
           rank: 31
         '2015':
-          volume: 967347
-          percent: 0.39
-          rank: 32
+          volume: 1158428
+          percent: 0.47
+          rank: 30
+        '2016':
+          volume: 1525612
+          percent: 0.57
+          rank: 26
     Crude Oil:
       units: bbl
       volume:
@@ -10667,7 +11808,7 @@ VA:
           percent: 0
           rank: 30
         '2009':
-          volume: 11000
+          volume: 12000
           percent: 0
           rank: 30
         '2010':
@@ -10683,7 +11824,7 @@ VA:
           percent: 0
           rank: 30
         '2013':
-          volume: 9000
+          volume: 10000
           percent: 0
           rank: 29
         '2014':
@@ -10694,6 +11835,10 @@ VA:
           volume: 11000
           percent: 0
           rank: 30
+        '2016':
+          volume: 11000
+          percent: 0
+          rank: 29
     Natural Gas:
       units: Mcf
       volume:
@@ -10730,8 +11875,12 @@ VA:
           percent: 0.47
           rank: 17
         '2014':
-          volume: 131885000
-          percent: 0.42
+          volume: 133661000
+          percent: 0.43
+          rank: 17
+        '2015':
+          volume: 127584000
+          percent: 0.39
           rank: 17
     Other biomass:
       units: Mwh
@@ -10773,9 +11922,20 @@ VA:
           percent: 5.07
           rank: 5
         '2015':
-          volume: 1071072
-          percent: 4.91
-          rank: 7
+          volume: 1103032
+          percent: 5.08
+          rank: 5
+        '2016':
+          volume: 1119193
+          percent: 5.07
+          rank: 5
+    Solar:
+      units: Mwh
+      volume:
+        '2016':
+          volume: 21528
+          percent: 0.06
+          rank: 29
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -10816,8 +11976,12 @@ VA:
           percent: 6.51
           rank: 4
         '2015':
-          volume: 3005393
-          percent: 7.1
+          volume: 3041126
+          percent: 7.25
+          rank: 4
+        '2016':
+          volume: 3005053
+          percent: 7.42
           rank: 4
 VT:
   products:
@@ -10849,9 +12013,9 @@ VT:
           percent: 0.45
           rank: 27
         '2012':
-          volume: 1109205
-          percent: 0.4
-          rank: 29
+          volume: 1151321
+          percent: 0.42
+          rank: 28
         '2013':
           volume: 1285912
           percent: 0.48
@@ -10861,9 +12025,13 @@ VT:
           percent: 0.45
           rank: 28
         '2015':
-          volume: 1244140
-          percent: 0.5
-          rank: 29
+          volume: 1139498
+          percent: 0.46
+          rank: 31
+        '2016':
+          volume: 1056304
+          percent: 0.4
+          rank: 33
     Other biomass:
       units: Mwh
       volume:
@@ -10896,8 +12064,12 @@ VT:
           percent: 0.11
           rank: 43
         '2015':
-          volume: 23823
-          percent: 0.11
+          volume: 18993
+          percent: 0.09
+          rank: 45
+        '2016':
+          volume: 19690
+          percent: 0.09
           rank: 43
     Solar:
       units: Mwh
@@ -10919,9 +12091,13 @@ VT:
           percent: 0.13
           rank: 22
         '2015':
-          volume: 65822
-          percent: 0.25
-          rank: 19
+          volume: 48022
+          percent: 0.19
+          rank: 21
+        '2016':
+          volume: 75659
+          percent: 0.21
+          rank: 20
     Wind:
       units: Mwh
       volume:
@@ -10962,9 +12138,13 @@ VT:
           percent: 0.17
           rank: 32
         '2015':
-          volume: 322709
+          volume: 325365
           percent: 0.17
           rank: 32
+        '2016':
+          volume: 293418
+          percent: 0.13
+          rank: 33
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -10995,7 +12175,7 @@ VT:
         '2012':
           volume: 327561
           percent: 0.87
-          rank: 25
+          rank: 24
         '2013':
           volume: 465513
           percent: 1.16
@@ -11005,8 +12185,12 @@ VT:
           percent: 1.01
           rank: 22
         '2015':
-          volume: 429423
-          percent: 1.01
+          volume: 445620
+          percent: 1.06
+          rank: 22
+        '2016':
+          volume: 453030
+          percent: 1.12
           rank: 22
 WA:
   products:
@@ -11057,8 +12241,12 @@ WA:
           percent: 30.64
           rank: 1
         '2015':
-          volume: 74322445
-          percent: 29.59
+          volume: 73404916
+          percent: 29.47
+          rank: 1
+        '2016':
+          volume: 76842757
+          percent: 28.91
           rank: 1
     Other biomass:
       units: Mwh
@@ -11100,8 +12288,12 @@ WA:
           percent: 1.45
           rank: 21
         '2015':
-          volume: 288787
-          percent: 1.32
+          volume: 298948
+          percent: 1.38
+          rank: 21
+        '2016':
+          volume: 269355
+          percent: 1.22
           rank: 21
     Solar:
       units: Mwh
@@ -11137,7 +12329,11 @@ WA:
         '2015':
           volume: 790
           percent: 0
-          rank: 30
+          rank: 34
+        '2016':
+          volume: 727
+          percent: 0
+          rank: 36
     Wind:
       units: Mwh
       volume:
@@ -11178,9 +12374,13 @@ WA:
           percent: 4
           rank: 10
         '2015':
-          volume: 7101450
-          percent: 3.72
+          volume: 7075385
+          percent: 3.71
           rank: 9
+        '2016':
+          volume: 8041580
+          percent: 3.55
+          rank: 10
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -11221,8 +12421,12 @@ WA:
           percent: 3.61
           rank: 11
         '2015':
-          volume: 1589855
-          percent: 3.75
+          volume: 1692254
+          percent: 4.04
+          rank: 10
+        '2016':
+          volume: 1747497
+          percent: 4.31
           rank: 10
 WI:
   products:
@@ -11254,7 +12458,7 @@ WI:
           percent: 0.67
           rank: 20
         '2012':
-          volume: 1522235
+          volume: 1530263
           percent: 0.55
           rank: 21
         '2013':
@@ -11266,9 +12470,13 @@ WI:
           percent: 0.95
           rank: 19
         '2015':
-          volume: 2259910
+          volume: 2340681
+          percent: 0.94
+          rank: 19
+        '2016':
+          volume: 2404814
           percent: 0.9
-          rank: 20
+          rank: 16
     Other biomass:
       units: Mwh
       volume:
@@ -11309,9 +12517,13 @@ WI:
           percent: 2.5
           rank: 13
         '2015':
-          volume: 548715
-          percent: 2.51
-          rank: 13
+          volume: 571059
+          percent: 2.63
+          rank: 12
+        '2016':
+          volume: 583050
+          percent: 2.64
+          rank: 12
     Solar:
       units: Mwh
       volume:
@@ -11319,6 +12531,10 @@ WI:
           volume: 1194
           percent: 0.01
           rank: 29
+        '2015':
+          volume: 1417
+          percent: 0.01
+          rank: 31
     Wind:
       units: Mwh
       volume:
@@ -11359,9 +12575,13 @@ WI:
           percent: 0.89
           rank: 22
         '2015':
-          volume: 1641373
-          percent: 0.86
+          volume: 1589381
+          percent: 0.83
           rank: 22
+        '2016':
+          volume: 1520526
+          percent: 0.67
+          rank: 23
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -11402,9 +12622,13 @@ WI:
           percent: 2.6
           rank: 16
         '2015':
-          volume: 1122341
-          percent: 2.65
+          volume: 999861
+          percent: 2.38
           rank: 16
+        '2016':
+          volume: 838558
+          percent: 2.07
+          rank: 18
 WV:
   products:
     Coal:
@@ -11446,6 +12670,10 @@ WV:
           volume: 112187373
           percent: 11.22
           rank: 2
+        '2015':
+          volume: 95632900
+          percent: 10.66
+          rank: 2
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -11486,9 +12714,13 @@ WV:
           percent: 0.48
           rank: 27
         '2015':
-          volume: 1300133
-          percent: 0.52
+          volume: 1385043
+          percent: 0.56
           rank: 28
+        '2016':
+          volume: 1409664
+          percent: 0.53
+          rank: 27
     Crude Oil:
       units: bbl
       volume:
@@ -11522,7 +12754,7 @@ WV:
           rank: 21
         '2013':
           volume: 6937000
-          percent: 0.26
+          percent: 0.25
           rank: 17
         '2014':
           volume: 7582000
@@ -11531,6 +12763,10 @@ WV:
         '2015':
           volume: 7970000
           percent: 0.23
+          rank: 17
+        '2016':
+          volume: 8004000
+          percent: 0.25
           rank: 17
     Natural Gas:
       units: Mcf
@@ -11568,13 +12804,17 @@ WV:
           percent: 2.51
           rank: 10
         '2014':
-          volume: 1040250000
-          percent: 3.32
+          volume: 1067114000
+          percent: 3.4
           rank: 10
         '2015':
           volume: 1318822000
           percent: 4.01
           rank: 8
+        '2016':
+          volume: 1375108000
+          percent: 4.21
+          rank: 9
     Other biomass:
       units: Mwh
       volume:
@@ -11615,7 +12855,11 @@ WV:
           percent: 0.02
           rank: 46
         '2015':
-          volume: 4693
+          volume: 4980
+          percent: 0.02
+          rank: 47
+        '2016':
+          volume: 4934
           percent: 0.02
           rank: 47
     Wind:
@@ -11661,6 +12905,10 @@ WV:
           volume: 1376232
           percent: 0.72
           rank: 23
+        '2016':
+          volume: 1432154
+          percent: 0.63
+          rank: 24
     Wood and wood-derived fuels:
       units: Mwh
       volume:
@@ -11733,6 +12981,10 @@ WY:
           volume: 395665099
           percent: 39.56
           rank: 1
+        '2015':
+          volume: 375772504
+          percent: 41.89
+          rank: 1
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -11773,8 +13025,12 @@ WY:
           percent: 0.33
           rank: 34
         '2015':
-          volume: 860974
-          percent: 0.34
+          volume: 868261
+          percent: 0.35
+          rank: 35
+        '2016':
+          volume: 997810
+          percent: 0.38
           rank: 34
     Crude Oil:
       units: bbl
@@ -11800,16 +13056,16 @@ WY:
           percent: 2.7
           rank: 8
         '2011':
-          volume: 54670000
-          percent: 2.66
+          volume: 54671000
+          percent: 2.65
           rank: 8
         '2012':
-          volume: 57830000
+          volume: 57966000
           percent: 2.44
           rank: 8
         '2013':
-          volume: 63285000
-          percent: 2.33
+          volume: 63322000
+          percent: 2.32
           rank: 9
         '2014':
           volume: 76137000
@@ -11818,6 +13074,10 @@ WY:
         '2015':
           volume: 86499000
           percent: 2.52
+          rank: 8
+        '2016':
+          volume: 72327000
+          percent: 2.23
           rank: 8
     Natural Gas:
       units: Mcf
@@ -11855,12 +13115,16 @@ WY:
           percent: 6.94
           rank: 5
         '2014':
-          volume: 1997666000
-          percent: 6.37
+          volume: 1998505000
+          percent: 6.36
           rank: 5
         '2015':
-          volume: 1908739000
-          percent: 5.8
+          volume: 1983731000
+          percent: 6.03
+          rank: 5
+        '2016':
+          volume: 1766840000
+          percent: 5.41
           rank: 6
     Wind:
       units: Mwh
@@ -11902,6 +13166,10 @@ WY:
           percent: 2.43
           rank: 12
         '2015':
-          volume: 3767681
+          volume: 3756708
           percent: 1.97
           rank: 15
+        '2016':
+          volume: 4363205
+          percent: 1.93
+          rank: 14

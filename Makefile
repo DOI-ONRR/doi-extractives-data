@@ -7,6 +7,7 @@ tables ?= $(node_bin)tables -d $(db_url)
 tito ?= $(node_bin)tito
 nestly ?= $(node_bin)nestly
 sqlite ?= sqlite3 -bail $(db)
+webfont-dl ?= $(node_bin)webfont-dl
 
 query ?= ./data/bin/query.js --db $(db_url)
 
@@ -19,6 +20,9 @@ all: db
 
 clean:
 	rm -f $(db)
+
+fonts:
+	$(webfont-dl) --help
 
 collections/regional: \
 	collections/states \

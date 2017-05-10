@@ -20,6 +20,8 @@
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
     "webpack": "webpack",
     "update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
+    "js-dev-start": "rm -rf js/lib && npm run watch-webpack",
+    "js-dev-end": "npm run update-webpack",
     "watch-webpack": "webpack --watch",
     "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",

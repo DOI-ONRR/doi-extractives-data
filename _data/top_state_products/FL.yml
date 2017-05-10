@@ -78,120 +78,91 @@ all_production:
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 2434667.88
+      value: 2501859.25
       rank: 2
-      percent: 11.15
-federal_production:
-  '2006':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 2002
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2011':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2012':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2013':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-  '2015':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: null
-      rank: 1
-      percent: null
+      percent: 11.53
+  '2016':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 2598841.33
+      rank: 2
+      percent: 11.78
 revenue:
   '2006':
     - product: Phosphate
       name: null
       units: null
-      value: 16619.15
-      rank: 2
-      percent: 0.75
+      value: 1398.1
+      rank: 4
+      percent: 0.1
   '2007':
     - product: Phosphate
       name: null
       units: null
-      value: 998.09
+      value: 1832.26
       rank: 3
-      percent: 0.04
+      percent: 0.1
   '2008':
     - product: Phosphate
       name: null
       units: null
-      value: 2971.17
+      value: 2960.82
       rank: 4
-      percent: 0.12
+      percent: 0.1
   '2009':
     - product: Phosphate
       name: null
       units: null
-      value: 11186.13
+      value: 10362.31
       rank: 2
-      percent: 0.33
+      percent: 0.3
   '2010':
     - product: Phosphate
       name: null
       units: null
       value: 92335.06
       rank: 2
-      percent: 1.11
+      percent: 1
   '2011':
     - product: Phosphate
       name: null
       units: null
-      value: 505466.59
+      value: 523491.53
       rank: 2
-      percent: 5.1
+      percent: 5.2
   '2012':
     - product: Phosphate
       name: null
       units: null
-      value: 1420057.4
+      value: 2171534.21
       rank: 2
-      percent: 12.65
+      percent: 17.3
   '2013':
     - product: Phosphate
       name: null
       units: null
-      value: 1056222.12
+      value: 286720.37
       rank: 2
-      percent: 9.47
+      percent: 2.8
   '2014':
     - product: Phosphate
       name: null
       units: null
-      value: 1951
+      value: 1980.51
       rank: 4
-      percent: 0.02
+      percent: 0
   '2015':
     - product: Phosphate
       name: null
       units: null
-      value: 80986.35
+      value: 80956.84
       rank: 2
-      percent: 0.76
+      percent: 0.8
+  '2016':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 1078656.37
+      rank: 2
+      percent: 10

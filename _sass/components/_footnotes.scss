@@ -31,11 +31,9 @@ body {
   ol {
     @include heading('para-sm');
 
-    font-weight: 200;
+    font-weight: $weight-book;
     list-style-type: decimal;
-    padding-bottom: $base-padding;
     padding-left: $base-padding;
-    padding-top: $base-padding-lite;
 
     &:target {
       background-color: $mid-blue;
@@ -43,7 +41,7 @@ body {
   }
 
   p {
-    padding-bottom: $base-padding-lite;
+    @include heading('para-md');
   }
 
   li {

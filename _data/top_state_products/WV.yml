@@ -62,58 +62,10 @@ all_production:
       value: 112187373
       rank: 2
       percent: 11.22
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 14931826
-      rank: 5
-      percent: 0
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 13516048
-      rank: 5
-      percent: 0
-  '2009':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 5018
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 208
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 9864608
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 364
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 11244272
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 5329168
-      rank: 5
-      percent: 0
+  '2015':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 95632900
+      rank: 2
+      percent: 10.66

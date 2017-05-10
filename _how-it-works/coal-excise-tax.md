@@ -7,6 +7,11 @@ tag:
 - How it works
 - Coal
 - Excise tax
+nav_items:
+  - name: introduction
+    title: Top
+  - name: coal-excise-tax-rates
+    title: Coal excise
 permalink: /how-it-works/coal-excise-tax/
 breadcrumb:
   - title: How it works

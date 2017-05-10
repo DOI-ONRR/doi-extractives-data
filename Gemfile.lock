@@ -80,6 +80,7 @@ GEM
       rainbow (~> 2.0)
       sass (~> 3.4.15)
     slop (3.6.0)
+    stdlib (0.1.0)
     thread_safe (0.3.5)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
@@ -100,6 +101,7 @@ DEPENDENCIES
   rubocop
   rubydoctest
   scss_lint
+  stdlib
 
 BUNDLED WITH
-   1.13.3
+   1.14.6

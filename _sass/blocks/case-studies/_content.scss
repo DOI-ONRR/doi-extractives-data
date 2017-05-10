@@ -33,28 +33,14 @@
 
 .case_studies-maps {
   display: block;
+  margin: 0 auto;
+  width: 25vh;
 
   eiti-map {
     display: block;
   }
 
-  &.desktop {
-    display: none;
-  }
-
-  &.mobile {
-    display: block;
-    width: 50vh;
-  }
-
   @include respond-to(medium-up) {
-
-    &.desktop {
-      display: block;
-    }
-
-    &.mobile {
-      display: none;
-    }
+    float: right;
   }
 }

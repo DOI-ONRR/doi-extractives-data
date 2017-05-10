@@ -1,7 +1,7 @@
 .sticky-header-wrapper {
-  padding-bottom: $standard-padding-lite !important;
-  padding-top: $standard-padding-lite !important;
-  top: 42px;
+  padding-bottom: $standard-padding-small !important;
+  padding-top: $standard-padding-small !important;
+  top: 41px;
 
   @include respond-to(medium-up) {
     top: 0;
@@ -26,8 +26,6 @@
 
   &.stuck {
     .chart-selector {
-      @include transition(visibility, 0.5s);
-
       visibility: visible;
     }
   }

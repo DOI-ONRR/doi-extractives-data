@@ -9,10 +9,14 @@ description: >
 url: https://useiti.doi.gov
 
 # app version number
+<<<<<<< HEAD
 version: v2.1.9
+=======
+version: v2.2.0
+>>>>>>> staging
 
 sass:
-  style: nested
+  style: compressed
   sass_dir: _sass
 
 exclude:

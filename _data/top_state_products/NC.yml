@@ -10,6 +10,13 @@ all_production:
     - product: Solar
       name: Solar
       units: Mwh
-      value: 1833523.61
-      rank: 3
-      percent: 6.93
+      value: 1373578.56
+      rank: 4
+      percent: 5.52
+  '2016':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3854133.06
+      rank: 2
+      percent: 10.49

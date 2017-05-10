@@ -60,7 +60,7 @@
   - NPS
 
 - title: National Historic Preservation Fund
-  url: http://www.nps.gov/history/hpg/
+  url: https://www.nps.gov/subjects/historicpreservation/historic-preservation-fund.htm
   description: "The National Park Service home page for the Historic Preservation Fund."
   tag:
   - historic
@@ -68,7 +68,7 @@
   - NPS
 
 - title: U.S. Census Bureau Energy and Utilities Statistics
-  url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
+  url: https://www.census.gov/library/publications/2011/compendia/statab/131ed/energy-utilities.html
   description: "Statistics on fuel resources, energy production and consumption, electric energy, hydroelectric power, nuclear power, solar energy, wood energy, and the electric and gas utility industries."
   tag:
   - energy
@@ -102,7 +102,7 @@
   - USGS
 
 - title: Bureau of Land Management (BLM) Energy Home Page
-  url: http://www.blm.gov/wo/st/en/prog/energy.html
+  url: https://www.blm.gov/programs/energy-and-minerals
   description: "Learn more about BLM managing Federal onshore oil, gas and coal operations that make significant contributions to the domestic energy supply and more about BLM State Energy Offices."
   tag:
   - energy
@@ -121,14 +121,14 @@
   - reclamation
   - OSMRE
 
-- title: U.S. Census Bureau Energy and Utilities Statistics
-  url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
-  description: "Statistics on fuel resources, energy production and consumption, electric energy, hydroelectric power, nuclear power, solar energy, wood energy, and the electric and gas utility industries."
-  tag:
-  - energy
-  - utilities
-  - statistics
-  - Census
+# - title: U.S. Census Bureau Energy and Utilities Statistics
+#   url: https://www.census.gov/compendia/statab/cats/energy_utilities.html
+#   description: "Statistics on fuel resources, energy production and consumption, electric energy, hydroelectric power, nuclear power, solar energy, wood energy, and the electric and gas utility industries."
+#   tag:
+#   - energy
+#   - utilities
+#   - statistics
+#   - Census
 
 - title: Bureau of Ocean Energy Management (BOEM) Oil and Gas Energy Program
   url:  http://www.boem.gov/Oil-and-Gas-Energy-Program/
@@ -250,7 +250,7 @@
   - BOEM
 
 - title: Bureau of Land Management National Environmental Policy Act
-  url: http://www.blm.gov/wo/st/en/prog/planning/nepa/field_office_nepa.html
+  url: https://www.blm.gov/programs/planning-and-nepa/what-informs-our-plans/nepa
   description: "In order to facilitate public involvement in the NEPA process, the BLM publishes many of its NEPA documents online. NEPA documents are commonly made available at the field, district, and state office levels. The links on this site are for completed and in progress NEPA documents. The ePlanning NEPA Register is another source that can be used to access BLM NEPA documents."
   tag:
   - NEPA
@@ -260,21 +260,21 @@
   - development
   - BLM
 
-- title: Bureau of Land Management National Environmental Policy Act
-  url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
-  description: "BLM’s ePlanning brings the Land Use Planning (LUP) as well as the National Environmental Policy Act (NEPA) process into your home or local library. With an Internet-connected computer, you can open and read land use planning and NEPA documents produced with ePlanning. You can search for issues such as recreation, wildlife, or energy. During the comment periods, you can easily submit your comments online! With ePlanning's comment features, you can tie your comment to particular text right out of the land use planning or NEPA document."
-  tag:
-  - NEPA
-  - EIS
-  - environmental
-  - land
-  - use
-  - planning
-  - development
-  - BLM
+# - title: Bureau of Land Management National Environmental Policy Act
+#   url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
+#   description: "BLM’s ePlanning brings the Land Use Planning (LUP) as well as the National Environmental Policy Act (NEPA) process into your home or local library. With an Internet-connected computer, you can open and read land use planning and NEPA documents produced with ePlanning. You can search for issues such as recreation, wildlife, or energy. During the comment periods, you can easily submit your comments online! With ePlanning's comment features, you can tie your comment to particular text right out of the land use planning or NEPA document."
+#   tag:
+#   - NEPA
+#   - EIS
+#   - environmental
+#   - land
+#   - use
+#   - planning
+#   - development
+#   - BLM
 
 - title: Bureau of Land Management Land Use Planning
-  url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
+  url: https://eplanning.blm.gov/epl-front-office/eplanning/lup/lup_register.do
   description: "BLM’s ePlanning brings the Land Use Planning (LUP) as well as the National Environmental Policy Act (NEPA) process into your home or local library. With an Internet-connected computer, you can open and read land use planning and NEPA documents produced with ePlanning. You can search for issues such as recreation, wildlife, or energy. During the comment periods, you can easily submit your comments online! With ePlanning's comment features, you can tie your comment to particular text right out of the land use planning or NEPA document."
   tag:
   - NEPA
@@ -495,7 +495,7 @@
   - BLM
 
 - title: Bureau of Land Management Onshore Oil and Gas Leasing Information
-  url: http://www.blm.gov/mt/st/en/prog/energy/oil_and_gas/leasing.html
+  url: https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/oil-and-gas-statistics
   description: "Onshore Oil and Gas leasing statistics, facts, handbooks, cost recovery fees and surface ownership websites."
   tag:
   - oil
@@ -505,7 +505,7 @@
   - BLM
 
 - title: Bureau of Land Management Onshore Oil and Gas Management
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas.html
+  url: https://www.blm.gov/programs/energy-and-minerals
   description: "General information on BLM’s onshore oil and gas program."
   tag:
   - oil
@@ -854,7 +854,7 @@ unit conversions"
   - Global
 
 - title: BLM Solar Energy
-  url: http://www.blm.gov/wo/st/en/prog/energy/solar_energy.html
+  url: http://blmsolar.anl.gov
   description: "BLM solar energy.  Description of leasing, generation and public land use"
   tag:
   - BLM
@@ -980,7 +980,7 @@ and board compensation, board elections, and shareholder involvement."
   - Native
 
 - title: BLM-Split Estate
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/split_estate.html
+  url: https://www.blm.gov/sites/blm.gov/files/documents/files/SplitEstate07.pdf
   description: "In split estate situations, the surface rights and subsurface rights (such as the rights to develop minerals) for a piece of land are owned by different parties. In these situations, mineral rights are considered the dominant estate, meaning they take precedence over other rights associated with the property, including those associated with owning the surface. However, the mineral owner must show due regard for the interests of the surface estate owner and occupy only those portions of the surface that are reasonably necessary to develop the mineral estate."
   tag:
   - BLM
@@ -989,7 +989,7 @@ and board compensation, board elections, and shareholder involvement."
   - Estate
 
 - title: BLM-Leasing of Onshore Federal Oil and Gas Resources
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/leasing_of_onshore.html
+  url: https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/split-estate
   description: "The BLM administers the leasing of minerals found beneath the 258 million surface acres managed by the Bureau, 57 million surface acres where the minerals are Federally owned but the surface is in non-Federal (mostly private) ownership, as well as another 385 million acres whose surface is managed by other Federal agencies.  About half of these 700 million subsurface acres are believed to contain oil and/or natural gas. "
   tag:
   - Lease
@@ -1016,18 +1016,18 @@ and board compensation, board elections, and shareholder involvement."
   - Leasing
   - Allotted
 
-- title: BLM-Mineral Leasing Act of 1920
-  url: http://www.blm.gov/pgdata/etc/medialib/blm/wo/Communications_Directorate/legislation.Par.23212.File.dat/mla_1920_amendments1.pdf
-  description: "Mineral Leasing Act of 1920 as Amended- Creates a system of leasing mineral resources on federal lands for extraction and grants BLM authority to administer mineral leasing."
-  tag:
-  - Mineral
-  - Leasing
-  - Act
-  - 1920
-  - BLM
+# - title: BLM-Mineral Leasing Act of 1920
+#   url: https://www.blm.gov/pgdata/etc/medialib/blm/wo/Communications_Directorate/legislation.Par.23212.File.dat/mla_1920_amendments1.pdf
+#   description: "Mineral Leasing Act of 1920 as Amended- Creates a system of leasing mineral resources on federal lands for extraction and grants BLM authority to administer mineral leasing."
+#   tag:
+#   - Mineral
+#   - Leasing
+#   - Act
+#   - 1920
+#   - BLM
 
 - title: Indian Mineral Leasing Act of 1938
-  url: http://www.blm.gov/pgdata/etc/medialib/blm/wo/Communications_Directorate/legislation.Par.23212.File.dat/mla_1920_amendments1.pdf#page=56
+  url: https://www.ntc.blm.gov/krc/uploads/172/Mineral%20Leasing%20Act.pdf
   description: "Indian Mineral Leasing Act of 1938- Opens unallotted lands within any Indian reservation for leasing for mining purposes by authority of the tribal council and approval of the Secretary of the Interior."
   tag:
   - Indian
@@ -1171,7 +1171,7 @@ and board compensation, board elections, and shareholder involvement."
   - Gas
 
 - title: Federal Land Policy and Management Act of 1976 as Amended
-  url: http://www.blm.gov/flpma/FLPMA.pdf
+  url: https://www.blm.gov/or/regulations/files/FLPMA.pdf
   description: "Requires BLM to administer federal lands using a land use planning framework that includes no unnecessary or undue degradation; multiple-use, sustained yield considerations for present and future generations; and public planning. Requires receipt of fair market value for use of federal lands and resources."
   tag:
   - BLM
@@ -1455,7 +1455,7 @@ Reform; Proposed Rule"
   - Interior
 
 - title: Bureau of Land Management (BLM)
-  url: http://www.blm.gov/wo/st/en.html
+  url: http://www.blm.gov
   description: "Bureau of Land Management (BLM) homepage"
   tag:
   - BLM
@@ -1531,7 +1531,7 @@ Reform; Proposed Rule"
   - Return
 
 - title: "BLM, Oil and Gas: Hydraulic Fracturing Rule"
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas.html
+  url: https://www.blm.gov/programs/energy-and-minerals
   description: "The Department of the Interior released the final rule for hydraulic fracturing (HF) on public and Indian lands. The HF rule was published in the Federal Register on March 26, 2015."
   tag:
   - Fracking
@@ -1541,7 +1541,7 @@ Reform; Proposed Rule"
   - Indian
 
 - title: What is BLM's authority for leasing oil and gas?
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/questions_and_answers.html
+  url: https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about
   description: "The Mineral Leasing Act of 1920, as amended, and the Mineral Leasing Act for Acquired Lands of 1947, as amended, give the Bureau of Land Management (BLM) responsibility for oil and gas leasing on about 564 million acres of BLM, national forest, and other Federal lands, as well as State and private surface lands where mineral rights have been retained by the Federal Government."
   tag:
   - BLM
@@ -1552,7 +1552,7 @@ Reform; Proposed Rule"
   - Mining
 
 - title: BLM, Coal Operations
-  url: http://www.blm.gov/wo/st/en/prog/energy/coal_and_non-energy.html
+  url: https://www.blm.gov/programs/energy-and-minerals/coal
   description: "BLM has responsibility for coal leasing on approximately 570 million acres where the coal mineral estate is owned by the Federal Government. The surface estate of these lands could be controlled by BLM, the United States Forest Service, private land owners, state land owners, or other Federal agencies."
   tag:
   - Coal
@@ -1602,18 +1602,18 @@ Reform; Proposed Rule"
   - Oil
   - EIS
 
-- title: "BLM, BLM Colorado Coal: Coal Exploration Licenses"
-  url: http://www.blm.gov/co/st/en/BLM_Programs/minerals/Coal.html#Coal_Exploration_Licenses
-  description: "Most of the coal reserves in Colorado are subbituminous (lowest sulfur content and cleanest burning coal), which are used for generating electricity. In Colorado, there are currently seven producing coal mines (six underground and two surface) encompassing 60,000 acres. In Fiscal Year 2014, coal energy production on BLM Colorado public lands directly contributed $721 million to the economy, generating royalty revenue of $42 million and accounted for 5,144 direct and indirect jobs in Colorado."
-  tag:
-  - Coal
-  - Colorado
-  - BLM
-  - Leasing
-  - Royalty
+# - title: "BLM, BLM Colorado Coal: Coal Exploration Licenses"
+#   url: http://www.blm.gov/co/st/en/BLM_Programs/minerals/Coal.html#Coal_Exploration_Licenses
+#   description: "Most of the coal reserves in Colorado are subbituminous (lowest sulfur content and cleanest burning coal), which are used for generating electricity. In Colorado, there are currently seven producing coal mines (six underground and two surface) encompassing 60,000 acres. In Fiscal Year 2014, coal energy production on BLM Colorado public lands directly contributed $721 million to the economy, generating royalty revenue of $42 million and accounted for 5,144 direct and indirect jobs in Colorado."
+#   tag:
+#   - Coal
+#   - Colorado
+#   - BLM
+#   - Leasing
+#   - Royalty
 
 - title: BLM, Surface Operating Standards and Guidelines for Oil and Gas Exploration and Development (The Gold Book)
-  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/gold_book.html
+  url:  https://www.blm.gov/bmp/GoldBook_Draft_v12.pdf
   description: "The publication Surface Operating Standards and Guidelines for Oil and Gas Exploration and Development (commonly referred to as The Gold Book) was developed to assist operators by providing information on the requirements for obtaining permit approval and conducting environmentally responsible oil and gas operations on Federal lands and on private surface over Federal minerals (split-estate)."
   tag:
   - Gold
@@ -1645,7 +1645,7 @@ Reform; Proposed Rule"
   - OGOR
 
 - title: BSEE, National Notice to Lessees and Operators of Federal Oil and Gas Leases, Outer Continental Shelf
-  url: http://www.bsee.gov/uploadedFiles/BSEE/Regulations_and_Guidance/Notices_to_Lessees/2012/NTL2012-N03.pdf
+  url: https://www.bsee.gov/sites/bsee.gov/files/notices-to-lessees-ntl/ntl2012-n03.pdf
   description: "Notice to Lessees and Operators offering guidance on procedures to follow if you are required to install flare/vent meters at your facility"
   tag:
   - Flare
@@ -1739,8 +1739,8 @@ Reform; Proposed Rule"
   - Offshore
   - BOEM
 
-- title: Treasury,  Tax Expenditures
-  url: http://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2017-Revised.pdf
+- title: Treasury, Tax Expenditures
+  url: https://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2017.pdf
   description: "The Congressional Budget Act of 1974 (Public Law 93–344) requires that a list of ‘tax expenditures’ be included in the budget. Tax expenditures are defined in the law as ‘revenue losses attributable to provisions of the Federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.’ These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs."
   tag:
   - Taxes
@@ -1854,7 +1854,7 @@ mineral leases."
   - ONRR
 
 - title:  California Public Resource Code
-  url: http://www.leginfo.ca.gov/cgi-bin/displaycode?section=prc&group=06001-07000&file=6826-6836
+  url: https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PRC&division=6.&title=&part=2.&chapter=3.&article=2
   description: "California public resource code section 6826-6836"
   tag:
   - California
@@ -1933,7 +1933,7 @@ mineral leases."
   - Treasury
 
 - title: State of Utah Financial Highlights
-  url: http://finance.utah.gov/reporting/documents/11FinalFinancialHighlightsNovemberIssue.pdf;
+  url: https://finance.utah.gov/reports/financial/
   description: "State of Utah Finances"
   tag:
   - UT
@@ -2397,7 +2397,7 @@ mineral leases."
   - Wyoming
 
 - title: EITI International Secretariat, The EITI Standard
-  url: https://eiti.org/files/English_EITI_STANDARD.pdf
+  url: https://eiti.org/sites/default/files/documents/english-eiti-standard_0.pdf
   description: "The EITI has evolved over ten years since the first EITI Conference in
 2003 at which the EITI Principles were agreed. These principles, on which the EITI is based, state that the wealth from a country’s natural resources should benefit all its citizens and that this will require high standards of transparency and  accountability."
   tag:
@@ -2560,7 +2560,7 @@ mineral leases."
   - EIA
 
 - title: Wyoming State Geological Survey, Wyoming Coal Mine Reclamation, Safety, and Environmental Considerations
-  url: http://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/PRB_Coal.html
+  url: https://eplanning.blm.gov/epl-front-office/eplanning/planAndProjectSite.do?methodName=renderDefaultPlanOrProjectSite&projectId=64842&dctmId=0b0003e880bf1396
   description: "The coal mines in the Wyoming portion of the Powder River Basin produced about 382 million short tons in 2014 and employed over 6,500 personnel."
   tag:
   - BLM
@@ -2725,21 +2725,21 @@ mineral leases."
   - Tax
   - Royalty
 
-- title: The Louisiana Division of Administration, Program 22-917
-  url: https://wwwprd.doa.louisiana.gov/opb/pub/FY02/22-non/22-917.pdf
-  description: "The Louisiana Division of Administration, Program 22-917, Severance Tax Dedication"
-  tag:
-  - Severance
-  - Tax
-  - LA
+# - title: The Louisiana Division of Administration, Program 22-917
+#   url: https://wwwprd.doa.louisiana.gov/opb/pub/FY02/22-non/22-917.pdf
+#   description: "The Louisiana Division of Administration, Program 22-917, Severance Tax Dedication"
+#   tag:
+#   - Severance
+#   - Tax
+#   - LA
 
-- title: The Louisiana Division of Administration, Program 22-918
-  url: https://wwwprd.doa.louisiana.gov/opb/pub/FY02/22-non/22-918.pdf
-  description: "The Louisiana Division of Administration, Program 22-918, Parish Royalty Fund"
-  tag:
-  - LA
-  - Royalty
-  - Fund
+# - title: The Louisiana Division of Administration, Program 22-918
+#   url: https://wwwprd.doa.louisiana.gov/opb/pub/FY02/22-non/22-918.pdf
+#   description: "The Louisiana Division of Administration, Program 22-918, Parish Royalty Fund"
+#   tag:
+#   - LA
+#   - Royalty
+#   - Fund
 
 - title: DeSoto Parish Policy Jury, Primary Government Financial Statements, Year Ended December 31 2013
   url: http://www.lla.state.la.us/PublicReports.nsf/B10816DD1188B8CB86257D1600778492/$FILE/00001B92.pdf
@@ -3241,8 +3241,8 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Crude
   - Production
 
-- title: United States Census Bureau, North Slope Borough 2013 population
-  url: http://quickfacts.census.gov/qfd/states/02/02185.html
+- title: United States Census Bureau, North Slope Borough population
+  url: https://www.census.gov/quickfacts/table/PST045216/00
   description: "North Slope Census data"
   tag:
   - Census
@@ -3291,7 +3291,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Extraction
 
 - title: Alaska Department of Labor and Workforce Development, Non-Residents Working in Alaska
-  url: http://labor.alaska.gov/research/reshire/NONRES.pdf
+  url: http://live.laborstats.alaska.gov/reshire/nonres.pdf
   description: "Alaska Department of Labor and Workforce Development, Non-Residents Working in Alaska"
   tag:
   - Statistics
@@ -3391,7 +3391,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Statistics
 
 - title:  "Iron Range Resources and Rehabilitation Board (IRRRB), Explore Minnesota: Iron Ore"
-  url: http://mn.gov/irrrb/images/2014%2520Explore%2520IRON%2520ORE.pdf
+  url: http://files.dnr.state.mn.us/lands_minerals/mcc_docs/2016_explore_iron_ore.pdf
   description: "Minnesota is a mining state. Its iron ore operations produce about 40 million tons of high-grade iron ore annually, which is approximately 75 percent of total U.S. iron ore production. To produce 40 million tons of high-grade iron ore pellets, Minnesota moves on the order of 270 million tons of material and 127 million tons of surface and rock stripping."
   tag:
   - Iron
@@ -3434,9 +3434,9 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Mining
   - Revenue
 
-- title: Iron Range Resources and Rehabilitation Board (IRRRB) biennial report 2013-2014
-  url: http://mn.gov/irrrb/images/2013-2014%2520Biennial%2520Report.pdf
-  description: "Iron Range Resources and Rehabilitation Board (IRRRB) biennial report 2013-2014"
+- title: Iron Range Resources and Rehabilitation Board (IRRRB) biennial reports
+  url: https://mn.gov/irrrb/media/reports-publications.jsp
+  description: "Iron Range Resources and Rehabilitation Board (IRRRB) biennial reports"
   tag:
   - Minerals
   - Iron
@@ -3444,7 +3444,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Report
 
 - title: Minnesota Department of Transportation (DOT), Annual Transportation Performance Report
-  url: http://www.dot.state.mn.us/measures/pdf/2012ReportBook4-15.pdf
+  url: http://www.dot.state.mn.us/measures/reports.html
   description: "Minnesota Department of Transportation (DOT), Annual Transportation Performance Report"
   tag:
   - Minnesota
@@ -3567,7 +3567,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Labor
 
 - title: State of Texas Legislative Budget Board, Overview of Natural Gas Tax Structures
-  url: http://www.lbb.state.tx.us/Other_Pubs/Natural%20Gas%20Tax%20Overview.pdf
+  url: http://www.lbb.state.tx.us/Documents/Publications/Primer/Natural%20Gas%20Tax%20Overview.pdf
   description: "Tax structure for natural gas production in Texas"
   tag:
   - Texas
@@ -3583,7 +3583,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Comptroller
 
 - title: Texas General Land Office, Permanent School Fund
-  url: http://www.glo.texas.gov/what-we-do/state-lands/permanent-school-fund/index.html
+  url: http://www.glo.texas.gov/land/land-management/overview/index.html
   description: "The Texas Constitution of 1876 set aside half of Texas’ remaining public lands to establish a Permanent School Fund (PSF), to help finance public schools."
   tag:
   - Texas
@@ -3591,7 +3591,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - Fund
 
 - title: Texas General Land Office, Oil & Natural Gas
-  url: http://www.glo.texas.gov/what-we-do/energy-and-minerals/oil_gas/
+  url: http://www.glo.texas.gov/energy-business/
   description: "Texas General Land Office, Oil & Natural Gas"
   tag:
   - Texas
@@ -4057,21 +4057,30 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - A-136
 
 
-- title: Federal Financial Management Improvement Act of 1996 (FFMIA)
-  url: http://www.thefreelibrary.com/The+Federal+Budget%3a+Politics%2c+Policy%2c+Process.-a074830086
-  description: "FFMIA requires federal agencies to implement and maintain financial management systems that substantially comply with federal financial management systems requirements, applicable federal accounting standards, and the US Standard General Ledger at the transactional level."
-  tag:
-  - FFMIA
-  - Financial
-  - Management
-  - Improvement
+# - title: Federal Financial Management Improvement Act of 1996 (FFMIA)
+#   url: http://www.thefreelibrary.com/The+Federal+Budget%3a+Politics%2c+Policy%2c+Process.-a074830086
+#   description: "FFMIA requires federal agencies to implement and maintain financial management systems that substantially comply with federal financial management systems requirements, applicable federal accounting standards, and the US Standard General Ledger at the transactional level."
+#   tag:
+#   - FFMIA
+#   - Financial
+#   - Management
+#   - Improvement
 
+<<<<<<< HEAD
 - title: The Office of Management and Budget, OMB Circular 123
   url: https://obamawhitehouse.archives.gov/omb/circulars_a123_rev
   description: "OMB Circular No. A-123 defines management's responsibility for internal control in Federal agencies. A re-examination of the existing internal control requirements for Federal agencies was initiated in light of the new internal control requirements for publicly-traded companies contained in the Sarbanes-Oxley Act of 2002. Circular A-123 and the statute it implements, the Federal Managers’ Financial Integrity Act of 1982, are at the center of the existing Federal requirements to improve internal control"
   tag:
   - OMB
   - A-123
+=======
+# - title: The Office of Management and Budget, OMB Circular 123
+#   url: https://obamawhitehouse.archives.gov/omb/circulars_a123_rev
+#   description: "OMB Circular No. A-123 defines management's responsibility for internal control in Federal agencies. A re-examination of the existing internal control requirements for Federal agencies was initiated in light of the new internal control requirements for publicly-traded companies contained in the Sarbanes-Oxley Act of 2002. Circular A-123 and the statute it implements, the Federal Managers’ Financial Integrity Act of 1982, are at the center of the existing Federal requirements to improve internal control"
+#   tag:
+#   - OMB
+#   - A-123
+>>>>>>> staging
 
 - title: SEC Form 10-K
   url: http://www.sec.gov/answers/form10k.htm
@@ -4095,7 +4104,7 @@ with respect to projected revenues, resources, accrued equities, and expenditure
   - 40-F
 
 - title: US Office of Government Ethics (OGE)
-  url: http://www.oge.gov/Financial-Disclosure/Financial-Disclosure/
+  url: https://www.oge.gov/web/oge.nsf/Financial+Disclosure/
   description: "The U.S. Office of Government Ethics (OGE) is responsible for implementing the public and confidential financial disclosure systems for the executive branch.  The purpose of both financial disclosure systems is to prevent conflicts of interest and to identify potential conflicts by providing for a systematic review of the financial interests of both current and prospective employees."
   tag:
   - Ethics

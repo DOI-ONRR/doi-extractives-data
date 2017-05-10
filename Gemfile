@@ -13,4 +13,5 @@ gem 'rubydoctest'
 group :development do
   gem 'pry'
   gem 'rb-readline'
+  gem 'stdlib'
 end

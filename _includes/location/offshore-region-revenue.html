@@ -1,8 +1,12 @@
 {% assign revenue_commodities = site.data.offshore_revenue_regions[region_name].commodities %}
 {% assign area_revenue = site.data.offshore_revenue_areas[region_name] %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
-{% assign year_range = site.data.years.revenue | default: site.data.years.default | jsonify %}
+
+{% assign year_range = site.data.years.revenue | default: site.data.years.default %}
+{% assign year = year_range | last | to_s | default: default_year %}
+{% assign year_range = year_range | jsonify %}
 {% assign year_list = year_range | to_list %}
+
 {% assign units = '$' %}
 
 <section id="federal-revenue" is="year-switcher-section" class="federal revenue">

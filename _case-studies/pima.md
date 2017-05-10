@@ -31,10 +31,6 @@ selector: list
 
 > Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world's fourth-largest copper producer, mining 1.13 million tons of copper worth approximately $9.7 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production the most in 2014; its copper output totaled 893,000 {{ "metric tons" | term_end:"metric ton" }}, representing 66% of the national total.[^2] Copper represented 89% of the value of mining in Arizona.[^3] If Arizona were a country, it would be the seventh-largest copper producer in the world.[^4] Greenlee and Pima counties generated the majority of that production.
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 In Pima County, much like nearby [Greenlee County]({{ site.baseurl }}/case-studies/greenlee/), copper mining began in the 1870s. Mining activity in Pima County flourished in the late nineteeth century, particularly as the arrival of the Southern Pacific Railroad brought increased commerce and traffic to the region. The copper-mining industry followed a series of boom-and-bust cycles throughout the following decades, with particular spikes during the two world wars, when demand soared. Today, copper output in Pima County is driven by operations at three open-pit mines: Sierrita, Mission Complex, and Silver Bell.
@@ -73,12 +69,12 @@ The table below highlights data sources used to compile this narrative, as well 
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

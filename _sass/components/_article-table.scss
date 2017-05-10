@@ -70,6 +70,10 @@ $max-columns: 10;
   text-align: right;
 }
 
+.article_table-last_right td:last-child {
+  text-align: right;
+}
+
 .article_table-numbers td:first-child {
   text-align: left;
 }

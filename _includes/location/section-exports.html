@@ -1,41 +1,45 @@
 {% assign export_commodities = site.data.state_exports[state_id].commodities %}
 
-{% assign restore_year = year %}
 {% assign year_range = site.data.years.exports | default: site.data.years.default %}
+{% assign year = year_range | last | to_s | default: default_year %}
+{% assign year_range = year_range | jsonify %}
+{% assign year_list = year_range | to_list %}
 
 {% assign exports_total = export_commodities.Extractives[year] %}
 
-{% assign year_list = year_range | to_list %}
-{% assign year_range = year_range | jsonify %}
-
 <section id="exports" is="year-switcher-section" class="economic exports">
 
-  {%
-    include sticky-header.html
-    header_text='Exports'
-    year_range=year_range
-    selector=true
-  %}
+  {% assign empty_years = '' | split: '' %}
+  {% if export_commodities %}
+    {% for _year in year_list %}
+      {% assign _year_string = _year | to_s %}
+      {% unless export_commodities.Total[_year_string] > 0 %}
+        {% assign empty_years = empty_years | push: _year_string %}
+      {% endunless %}
+    {% endfor %}
+    {%
+      include sticky-header.html
+      header_text='Exports'
+      year_range=year_range
+      selector=true
+      empty_years=empty_years
+    %}
+  {% endif %}
+
+
 
   <div class="chart-list">
 
     <div class="chart-selector-wrapper">
-      {% assign empty_years = '' | split: '' %}
-      {% if export_commodities %}
-        {% for _year in year_list %}
-          {% assign _year_string = _year | to_s %}
-          {% unless export_commodities.Total[_year_string] > 0 %}
-            {% assign empty_years = empty_years | push: _year_string %}
-          {% endunless %}
-        {% endfor %}
-        {% include year-selector.html year_range=year_range empty_years=empty_years %}
-      {% endif %}
+    {% if export_commodities %}
+      {% include year-selector.html year_range=year_range empty_years=empty_years %}
+    {% endif %}
 
-      {% if empty_years.size == year_range.size %}
-        {% assign has_exports = true %}
-      {% else %}
-        {% assign has_exports = false %}
-      {% endif %}
+    {% if empty_years.size == year_range.size %}
+      {% assign has_exports = true %}
+    {% else %}
+      {% assign has_exports = false %}
+    {% endif %}
 
       <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
         The U.S. Census Bureau collects information about the top 25 exports in each state.
@@ -91,8 +95,7 @@
                 in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
               <span class="caption-no-data" aria-hidden="true">
-                {{ commodity_name | downcase }} did not rank among the top 25 exports
-                from {{ state_name }} in
+                There is no data for {{ commodity_name | downcase }} exports from {{ state_name }} in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               </span>
             </figcaption>
@@ -105,5 +108,3 @@
   </div><!-- /.chart-list -->
 
 </section>
-
-{% assign year = restore_year %}

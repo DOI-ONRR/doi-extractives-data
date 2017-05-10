@@ -33,10 +33,6 @@ selector: list
 
 > The U.S. has experienced rapid change in domestic oil production since 2008, when crude oil production reached a low of 3.98 million {{ "bbl" | term:"barrel" }} per day. Just five years later, the U.S. had nearly doubled its daily production output, with Texas and North Dakota driving much of the growth.[^1] [^2] Alaska did not experience the same production boom, with crude oil output steadily declining over the past decade.[^3] In spite of that downward trend, Alaska remained  the fourth largest state producer of crude oil in 2015, and the nation's largest oil-producing county is Alaska's North Slope Borough.[^4]
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 The North Slope Borough is the country's largest organized local jurisdiction, spanning more than 94,000 miles north of the Arctic Circle (66th parallel). Its 9,703 residents, most of whom are Inupiat Alaskan Natives, are spread across eight separate communities.[^5] The northern coast of Alaska was documented as a potential oil-producing region as early as 1900. However, the borough's government was not formally incorporated until 1972, soon after the discovery of oil at Prudhoe Bay, the largest single oil field in North America.[^6] [^7]
@@ -99,12 +95,12 @@ The table below highlights the data sources used to compile this narrative, as w
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

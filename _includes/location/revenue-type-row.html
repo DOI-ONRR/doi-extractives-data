@@ -23,7 +23,7 @@
         }}</span>
         {% if national_page and commodity_name == 'All' %}
           <br/>
-          <span class="table-arrow_box-asterisk">* Includes revenues not tied to specific commo&shy;dities ($52,239,171 in inspection fees, $8,035,048 in civil penalties, and $347,351 in other revenue).</span>
+          <span class="table-arrow_box-asterisk">* Includes revenues not tied to specific commo&shy;dities ({{ site.data.national_revenues_inspection_fees[year] | intcomma_dollar }} in inspection fees, {{ site.data.national_revenues_civil_penalties[year] | intcomma_dollar }} in civil penalties, and {{ site.data.national_revenues_other_revenues[year] | intcomma_dollar }} in other revenue).</span>
         {% endif %}
         </td>
 

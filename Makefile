@@ -440,19 +440,6 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
-data/national_revenues_by_type.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			commodity, revenue_type, year, \
-			ROUND(revenue) AS revenue \
-		FROM national_revenue_type \
-		WHERE revenue IS NOT NULL \
-		ORDER BY \
-			revenue DESC, commodity, year" \
-		| $(nestly) --if ndjson \
-			-c _meta/national_revenues_by_type.yml \
-			-o _$@
-
 data/national_revenues_other_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \

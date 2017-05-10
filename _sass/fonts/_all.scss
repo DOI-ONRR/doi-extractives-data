@@ -1,5 +1,5 @@
 // include the CSS files with relative @font-face declarations
-@import url(fonts/lato/lato.css);
+@import "roboto";
 
 // EITI Webfont Icons
 //
@@ -44,7 +44,7 @@
 //
 // Markup:
 // <i style="font-size: 2rem; color: #4a4a4a;" class="icon {{modifier_class}}"></i>
-// <i style="font-size: 2rem; color: #157bac;" class="icon {{modifier_class}}"></i>
+// <i style="font-size: 2rem; color: #1478a6;" class="icon {{modifier_class}}"></i>
 //
 // Styleguide webfont
 
@@ -144,4 +144,3 @@ $icon-iron: '\0057';
 .icon-chevron-lg-up:before {
   @include rotate(270deg, 3);
 }
-

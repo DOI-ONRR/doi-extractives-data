@@ -81,7 +81,7 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 24652495.45
+      value: 24652491.21
       rank: 4
       percent: 8.92
     - product: Other biomass
@@ -120,48 +120,25 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 27102706.58
+      value: 26014520
       rank: 3
-      percent: 10.79
+      percent: 10.44
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 1703093.68
+      value: 1624770.99
       rank: 4
-      percent: 7.8
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 351182
-      rank: 5
-      percent: 0
-  '2007':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 329940
-      rank: 5
-      percent: 0
-  '2010':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1161472
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1603758
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1141504
-      rank: 5
-      percent: 0
+      percent: 7.49
+  '2016':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 26603999.48
+      rank: 4
+      percent: 10.01
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1634575
+      rank: 4
+      percent: 7.41

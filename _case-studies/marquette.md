@@ -31,10 +31,6 @@ selector: list
 
 > Iron ore is the primary mineral substance for the world’s iron and steel industries. Michigan is the second-largest producer of iron ore in the country behind Minnesota. All of Michigan’s iron-production operations are located in the northern reaches of the state, in Marquette County.
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Marquette County generated 18% of the national iron output in 2013.[^1] This iron ore is located in the Marquette Iron Range, a narrow basin of iron formations running approximately 33 miles through the towns of Negaunee and Ishpeming. Discovered in 1844, this range houses Michigan’s oldest iron-mining operations; the Jackson Mining Company began extraction here in 1848. In the following decades, the development of critical infrastructure — including roads, railroads, and a canal connecting Lake Superior and Lake Huron — spurred additional mining activity. It was iron mining that originally drew settlers to the area.
@@ -72,12 +68,12 @@ The table below highlights the data sources used to compile this narrative, as w
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

@@ -45,9 +45,9 @@ all_production:
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 1065140.1
+      value: 1056203.92
       rank: 5
-      percent: 5.37
+      percent: 5.33
   '2013':
     - product: Other biomass
       name: Other biomass

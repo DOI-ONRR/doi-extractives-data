@@ -31,10 +31,6 @@ selector: list
 
 > Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2014, the U.S. was the world’s fourth-largest copper producer, mining 1.127 million tons of copper worth a total value of approximately $9.7 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona increased production most in 2014. Arizona's copper output totaled 893,000 {{ "metric tons" | term_end:"metric ton" }}, or 66% of the national total.[^2] Copper represented 89% of the total value of mining in Arizona, with Greenlee and Pima counties generating the majority of that production.[^3] If Arizona were a country, it would be the seventh largest copper producer in the world.[^4]
 
-{% include case-studies/_selector.html screen="mobile" %}
-
-{% include case-studies/_maps.html screen="mobile" %}
-
 ## Geology and history
 
 Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^5] The modern Morenci Mine was established and has been a significant economic driver in the county ever since.
@@ -70,12 +66,12 @@ The table below highlights data sources used to compile this narrative, as well 
 
 This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
 
-<table>
+<table class="article_table">
   <thead>
     <tr>
-      <td>Measure</td>
-      <td>Data availability</td>
-      <td>Data gaps</td>
+      <th>Measure</th>
+      <th>Data availability</th>
+      <th>Data gaps</th>
     </tr>
   </thead>
   <tbody>

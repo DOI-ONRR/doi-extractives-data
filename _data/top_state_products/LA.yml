@@ -3,7 +3,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 73621000
+      value: 73619000
       rank: 4
       percent: 3.97
     - product: Wood and wood-derived fuels
@@ -16,7 +16,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 76979000
+      value: 76978000
       rank: 4
       percent: 4.15
     - product: Wood and wood-derived fuels
@@ -29,7 +29,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 72353000
+      value: 72349000
       rank: 4
       percent: 3.95
     - product: Wood and wood-derived fuels
@@ -54,7 +54,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 68824000
+      value: 68825000
       rank: 5
       percent: 3.52
   '2010':
@@ -109,251 +109,84 @@ all_production:
       value: 2704256
       rank: 5
       percent: 6.76
-  '2015':
+  '2016':
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 1941727000
+      value: 1869601000
       rank: 5
-      percent: 5.9
-federal_production:
-  '2006':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 13079924
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 819673868
-      rank: 5
-      percent: 0
-  '2007':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 11362468
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 796021408
-      rank: 5
-      percent: 0
-  '2008':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 9893832
-      rank: 3
-      percent: 0
-  '2009':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 9026758
-      rank: 3
-      percent: 0
-  '2010':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8333910
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 431901080
-      rank: 5
-      percent: 0
-  '2011':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8827208
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 538932394
-      rank: 5
-      percent: 0
-  '2012':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 9404018
-      rank: 3
-      percent: 0
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 542302280
-      rank: 5
-      percent: 0
-  '2013':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8086208
-      rank: 4
-      percent: 0
-  '2014':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 8075938
-      rank: 4
-      percent: 0
-  '2015':
-    - product: Salt (tons)
-      name: Salt
-      units: tons
-      value: null
-      rank: 1
-      percent: null
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 6413368
-      rank: 4
-      percent: 0
+      percent: 5.73
 revenue:
   '2006':
     - product: Gas
       name: null
       units: null
-      value: 41990018.49
+      value: 34130980.06
       rank: 5
-      percent: 0.79
+      percent: 0.7
     - product: NGL
       name: null
       units: null
-      value: 1240983.32
+      value: 1229701.38
       rank: 5
-      percent: 0.41
+      percent: 0.4
   '2007':
     - product: Gas
       name: null
       units: null
-      value: 29650858.17
+      value: 33025527.22
       rank: 5
-      percent: 0.68
+      percent: 0.8
     - product: NGL
       name: null
       units: null
-      value: 1321694.69
+      value: 1362132.71
       rank: 5
-      percent: 0.34
+      percent: 0.3
   '2008':
     - product: Gas
       name: null
       units: null
-      value: 42065702.73
+      value: 40437371.67
       rank: 5
-      percent: 0.79
+      percent: 0.8
     - product: NGL
       name: null
       units: null
-      value: 1271335.54
+      value: 1337105.75
       rank: 5
-      percent: 0.23
+      percent: 0.2
   '2009':
-    - product: Gas
-      name: null
-      units: null
-      value: 19149921.32
-      rank: 5
-      percent: 0.93
     - product: NGL
       name: null
       units: null
-      value: 885931.26
+      value: 1857114.79
       rank: 5
-      percent: 0.36
+      percent: 0.8
   '2010':
     - product: Oil & Gas (Non-Royalty)
       name: null
       units: null
-      value: 37375848.63
-      rank: 4
-      percent: 11.27
+      value: 38249065.09
+      rank: 3
+      percent: 2.8
     - product: NGL
       name: null
       units: null
-      value: 7929448.12
+      value: 6831778.16
       rank: 5
-      percent: 1.83
+      percent: 1.6
   '2011':
     - product: NGL
       name: null
       units: null
-      value: 2155605.68
+      value: 2266245.09
       rank: 5
       percent: 0.4
-  '2015':
+  '2014':
     - product: Sulfur
       name: null
       units: null
       value: 203.4
-      rank: 3
-      percent: null
+      rank: 4
+      percent: 0

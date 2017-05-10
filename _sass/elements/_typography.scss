@@ -29,8 +29,8 @@ h2,
 }
 
 @mixin h2-bar {
-  border-bottom: 14px solid $light-green;
-  padding-bottom: $standard-padding-lite;
+  border-bottom: 12px solid $light-green;
+  padding-bottom: $standard-padding-small;
 }
 
 .h2-bar {

@@ -6,16 +6,26 @@
 
     p {
       @include heading('para-xl');
+      margin-top: 2.25rem;
     }
   }
-  
+
   h3 {
     font-size: 1rem;
     margin-bottom: 0;
   }
-  
+
   p + h2 {
     margin-top: $base-padding-large - 0.75em;
+  }
+
+
+  .container-left-9 {
+    @include respond-to(medium-up) {
+      > *:not(blockquote) {
+        max-width: flex-grid(7, 9);
+      }
+    }
   }
 }
 

@@ -23,6 +23,7 @@ nav_items:
 
 {% assign commodity_names = site.data.commodity_names %}
 {% assign year = site.data.years.now | to_s %}
+{% assign default_year = year %}
 {% assign _viewbox = site.data.viewboxes_offshore[region_id] %}
 
 {% if page.is_cropped %}

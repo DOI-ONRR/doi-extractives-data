@@ -11,6 +11,16 @@
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'),
+    local('Roboto-LightItalic'),
+    url('fonts/roboto-eff3643c77ca65fb8e2b89e6221ff2fbc8ed8791.woff') format('woff'),
+    url('fonts/roboto-366cb51781291777905526e01581192940e9e103.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
   font-weight: 400;
   src: local('Roboto Italic'),
     local('Roboto-Italic'),
@@ -30,6 +40,16 @@
 
 @font-face {
   font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Roboto Black Italic'),
+    local('Roboto-BlackItalic'),
+    url('fonts/roboto-4d5b1a2b529298dc7a4a91e740f631524eded691.woff') format('woff'),
+    url('fonts/roboto-eff9d55267cdb1c62f880a914e02cef46623b1d9.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   src: local('Roboto Thin'),
@@ -41,8 +61,17 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'),
+    local('Roboto-Light'),
+    url('fonts/roboto-74bf60694c9b0eb473a92eeddfbd70b736b2901e.woff') format('woff'),
+    url('fonts/roboto-d232eeba9ba8368da704c39c99a69bad4d02d7df.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
-  /* IE6-8 compat */
   src: url('fonts/roboto-6503440c5fa86b98f9012e0755fe2a67f2e2b4b2.eot');
   src: local('Roboto'),
     local('Roboto-Regular'),
@@ -60,4 +89,14 @@
     local('Roboto-Bold'),
     url('fonts/roboto-2fc9bb16fbfee39e2559e5cbf5f90b225e0a8b92.woff') format('woff'),
     url('fonts/roboto-659d86211ae0f3d4eeb9612add8b6919dd52e1fe.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'),
+    local('Roboto-Black'),
+    url('fonts/roboto-2fc0a0c8e03bc268cc65b1902bcca761ea14bb98.woff') format('woff'),
+    url('fonts/roboto-5eb0af8c344baf5e3a6f66d5a55304e89577ece4.ttf') format('truetype');
 }

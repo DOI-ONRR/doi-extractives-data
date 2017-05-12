@@ -20,14 +20,22 @@ years: $(years)
 %: %.zip
 	mkdir -p $@
 	unzip $< -d $@_
-	mv $@_/$(all_csv) $@/all.csv
-	mv $@_/$(ext_csv) $@/extractives.csv
-	rm -f $@/renewables.ndjson
-	for f in $@_/$(new_csv); do \
-		tito -r csv "$$f" >> $@/renewables.ndjson; \
-	done
-	tito -w csv $@/renewables.ndjson > $@/renewables.csv
+	$(MAKE) $@/all.csv $@/extractives.csv $@/renewables.csv
 	# rm -r $@_
+
+%/all.csv:
+	mv $*_/$(all_csv) $*/all.csv
+
+%/extractives.csv:
+	mv $*_/$(ext_csv) $*/extractives.csv
+
+%/renewables.csv:
+	rm -f $*/renewables.ndjson
+	for f in $*_/$(new_csv); do \
+		tito -r csv "$$f" >> $*/renewables.ndjson; \
+	done
+	tito -w csv $*/renewables.ndjson > $*/renewables.csv
+	rm $*/renewables.ndjson
 
 clean:
 	rm -f *.csv

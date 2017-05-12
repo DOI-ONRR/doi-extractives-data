@@ -12,7 +12,7 @@ join: $(years)
 years: $(years)
 
 %.zip:
-	curl "http://data.bls.gov/cew/data/files/$*/csv/$*_annual_by_industry.zip" -o $@
+	curl "https://data.bls.gov:443/cew/data/files/$*/csv/$*_annual_by_industry.zip" -o $@
 
 %: %.zip
 	mkdir -p $@

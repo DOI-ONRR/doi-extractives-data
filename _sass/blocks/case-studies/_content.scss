@@ -34,7 +34,8 @@
 .case_studies-maps {
   display: block;
   margin: 0 auto;
-  width: 25vh;
+  max-width: 250px;
+  width: 100%;
 
   eiti-map {
     display: block;
@@ -42,5 +43,6 @@
 
   @include respond-to(medium-up) {
     float: right;
+    width: 25vw;
   }
 }

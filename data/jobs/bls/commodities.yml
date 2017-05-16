@@ -1,0 +1,16 @@
+# These are NAICS codes for each of the individual commodities or commodity
+# groups that we want to collect figures for. Note that NAICS codes are
+# structured: for instance, Oil & Gas is 211, which means that it represents
+# the sum of all other NAICS codes that begin with 211.
+naics:
+  All:                  10
+  'Oil & Gas':          211
+  Coal:                 2121
+  Metal ore mining:     2122
+  Iron:                 21221
+  Gold:                 212221
+  Copper:               212234
+  Nonmetallic mineral:  2123
+  Solar:                221114
+  Wind:                 221115
+  Geothermal:           221116

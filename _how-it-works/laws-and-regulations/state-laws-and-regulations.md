@@ -55,6 +55,7 @@ While all 50 states have some natural resource extraction activity, the 2015 USE
 
 See each state profile for more details about individual states’ laws and statutes:
 
+<div class="list-columns" markdown="1">
 - [Alaska]({{ site.baseurl }}/explore/AK/#state-governance)
 - [Arizona]({{ site.baseurl }}/explore/AZ/#state-governance)
 - [California]({{ site.baseurl }}/explore/CA/#state-governance)
@@ -73,6 +74,7 @@ See each state profile for more details about individual states’ laws and stat
 - [Utah]({{ site.baseurl }}/explore/UT/#state-governance)
 - [West Virginia]({{ site.baseurl }}/explore/WV/#state-governance)
 - [Wyoming]({{ site.baseurl }}/explore/WY/#state-governance)
+</div>
 
 ## Role of state government agencies
 

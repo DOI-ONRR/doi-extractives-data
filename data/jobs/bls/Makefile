@@ -1,16 +1,7 @@
 years ?= 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
-all_csv = **/*.annual\ 10\ *.csv
-# extractives: NAICS code prefix 21
-ext_csv = **/*.annual\ 21\ *.csv
-# renewables: NAICS codes for Solar, Wind, and Geothermal
-new_csv = **/*.annual\ 22111{4,5,6}\ *.csv
+csv_pattern = "**/*.annual\ 10\ *.csv" "**/*.annual\ 21*.csv" "**/*.annual\ 22*.csv"
 
-all: join
-
-years: $(years)
-
-join: $(years)
-	./join.js $^
+all: years
 
 years: $(years)
 
@@ -19,23 +10,14 @@ years: $(years)
 
 %: %.zip
 	mkdir -p $@
-	unzip $< -d $@_
-	$(MAKE) $@/all.csv $@/extractives.csv $@/renewables.csv
+	unzip $< -d $@_ $(csv_pattern)
+	mv    $@_/$@.annual.by_industry/*.csv $@_
+	rmdir $@_/$@.annual.by_industry
+	./load.js --config commodities.yml --in $@_ --year $@ --out $@
 	# rm -r $@_
 
-%/all.csv:
-	mv $*_/$(all_csv) $*/all.csv
-
-%/extractives.csv:
-	mv $*_/$(ext_csv) $*/extractives.csv
-
-%/renewables.csv:
-	rm -f $*/renewables.ndjson
-	for f in $*_/$(new_csv); do \
-		tito -r csv "$$f" >> $*/renewables.ndjson; \
-	done
-	tito -w csv $*/renewables.ndjson > $*/renewables.csv
-	rm $*/renewables.ndjson
+join: $(years)
+	./join.js $^
 
 clean:
 	rm -f *.csv

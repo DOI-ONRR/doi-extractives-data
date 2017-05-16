@@ -88,8 +88,8 @@ li {
 
 .list-columns {
   ul {
-    list-style: none;
     column-count: 2;
+    list-style: none;
 
     @include respond-to(medium-up) {
       column-count: 3;

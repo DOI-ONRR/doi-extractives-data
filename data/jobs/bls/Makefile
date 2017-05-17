@@ -17,9 +17,6 @@ years: $(years)
 	./load.js --config commodities.yml --in $@_ --year $@ --out $@
 	rm -r $@_
 
-join: $(years)
-	./join.js $^
-
 clean:
 	rm -f *.csv
 

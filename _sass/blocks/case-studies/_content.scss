@@ -32,6 +32,9 @@
 }
 
 .case_studies-map-container {
+  display: block;
+  margin: 0 auto;
+  width: 25vh;
 
   eiti-map {
     display: block;

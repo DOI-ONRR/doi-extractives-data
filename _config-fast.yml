@@ -57,7 +57,7 @@ exclude:
   # Exclude following, for speed purposes
   - _explore
   - _how-it-works
-  - _case-studies
+  # - _case-studies
   - _downloads
   - styleguide
   - _includes/location

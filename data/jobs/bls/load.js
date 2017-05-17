@@ -69,14 +69,16 @@ utils.readFile(options.config)
     // console.warn('loaded NAICS codes:', naicsByName);
     return Object.keys(naicsByName).map(name => {
       var naics = naicsByName[name];
-      var input = glob.sync(path.join(
+      var pattern = path.join(
         String(options.in), `${YEAR}.annual ${naics} *.csv`
-      ));
+      );
+      var input = glob.sync(pattern);
       if (!input.length) {
-        throw new Error('no input file found for "' + task.input + '"');
+        console.warn('no input file found for "%s"', pattern);
+        return;
       } else if (input.length > 1) {
         throw new Error(
-          'Multiple input files found for "' + task.input + '": ' +
+          'Multiple input files found for "' + pattern + '": ' +
           input.join(', ')
         );
       }
@@ -90,7 +92,9 @@ utils.readFile(options.config)
           String(options.out), `commodity/${slug}.tsv`
         ),
       };
-    });
+    })
+    // remove tasks with no files
+    .filter(task => task);
   })
   .then(tasks => {
     return Promise.all(tasks.map(task => {

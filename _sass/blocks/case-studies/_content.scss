@@ -31,11 +31,9 @@
   }
 }
 
-.case_studies-maps {
+.case_studies-map-container {
   display: block;
   margin: 0 auto;
-  max-width: 250px;
-  width: 100%;
 
   eiti-map {
     display: block;
@@ -43,6 +41,15 @@
 
   @include respond-to(medium-up) {
     float: right;
-    width: 25vw;
   }
+}
+
+.case_studies-map-wide {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.case_studies-map-tall {
+  max-width: 250px;
 }

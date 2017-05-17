@@ -1,20 +1,21 @@
-years ?= 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+years = 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
 csv_pattern = "**/*.annual\ 10\ *.csv" "**/*.annual\ 21*.csv" "**/*.annual\ 22*.csv"
 
 all: years
 
 years: $(years)
+	echo $(years)
 
 %.zip:
 	curl "https://data.bls.gov:443/cew/data/files/$*/csv/$*_annual_by_industry.zip" -o $@
 
 %: %.zip
-	mkdir -p $@
+	mkdir -p $@/commodity
 	unzip $< -d $@_ $(csv_pattern)
 	mv    $@_/$@.annual.by_industry/*.csv $@_
 	rmdir $@_/$@.annual.by_industry
 	./load.js --config commodities.yml --in $@_ --year $@ --out $@
-	# rm -r $@_
+	rm -r $@_
 
 join: $(years)
 	./join.js $^

@@ -87,7 +87,7 @@ utils.readFile(options.config)
         naics: naics,
         input: input[0],
         output: path.join(
-          String(options.out), `${slug}.tsv`
+          String(options.out), `commodity/${slug}.tsv`
         ),
       };
     });
@@ -96,7 +96,10 @@ utils.readFile(options.config)
     return Promise.all(tasks.map(task => {
       return utils.readData(task.input)
         .then(data => {
-          task.data = data.filter(validRow, task.name);
+          task.data = data
+            .filter(d => validRow(d, task.name))
+            .map(d => mapRow(d, task.name))
+            .filter(d => d.jobs > 0);
           console.warn('read %d rows (%d filtered) from %s',
                        data.length, task.data.length, task.input);
           return task;
@@ -113,11 +116,7 @@ utils.readFile(options.config)
   .then(tasks => {
     var out = path.join(String(YEAR), 'joined.tsv');
     var data = tasks.reduce((acc, task) => {
-      return acc.concat(
-        task.data.map(
-          d => mapRow(d, task.name)
-        )
-      );
+      return acc.concat(task.data);
     }, []);
     console.warn('writing %d rows to %s', data.length, out);
     return utils.writeData(out, data);

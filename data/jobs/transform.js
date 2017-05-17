@@ -1,12 +1,11 @@
 module.exports = {
-  year:       'Year',
-  state:      'State',
-  county:     'County',
-  fips:       'FIPS',
-  region_id:  function() { return null; },
-  extractive_jobs: 'Jobs',
-  total_jobs: 'Total',
-  percent: function(d) {
-    return Number(d.Share) * 100;
-  }
+  year:       'year',
+  naics:      'naics',
+  commodity:  'commodity',
+  state:      'state',
+  county:     'county',
+  fips:       'fips',
+  jobs:       'jobs',
+  percent:    () => 0.01,
+  region_id:  () => null,
 };

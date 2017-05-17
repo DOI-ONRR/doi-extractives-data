@@ -23,7 +23,7 @@ if (!YEAR) {
   throw new Error('Expected --year or --out');
 }
 
-const fields = {
+var fields = {
   code:     'own_code',
   fips:     'area_fips',
   aggLevel: 'agglvl_code',
@@ -31,7 +31,7 @@ const fields = {
   jobs:     'annual_avg_emplvl'
 };
 
-const validRow = (d, type) => {
+var validRow = (d, type) => {
   var code = +d[fields.code];
   if (type === 'All' && code !== 0) {
     return false;
@@ -40,7 +40,7 @@ const validRow = (d, type) => {
   return utils.validFips(fips);
 };
 
-const mapRow = (d, commodity) => {
+var mapRow = (d, task) => {
   var state;
   var county;
   var area = d[fields.area];
@@ -54,7 +54,8 @@ const mapRow = (d, commodity) => {
   }
   return {
     year:   YEAR,
-    commodity: commodity,
+    naics: task.naics,
+    commodity: task.name,
     state:  state,
     county: county,
     fips:   d[fields.fips],
@@ -102,7 +103,7 @@ utils.readFile(options.config)
         .then(data => {
           task.data = data
             .filter(d => validRow(d, task.name))
-            .map(d => mapRow(d, task.name))
+            .map(d => mapRow(d, task))
             .filter(d => d.jobs > 0);
           console.warn('read %d rows (%d filtered) from %s',
                        data.length, task.data.length, task.input);

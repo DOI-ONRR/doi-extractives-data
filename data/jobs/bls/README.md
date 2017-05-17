@@ -1,46 +1,27 @@
 # Bureau of Labor Statistics (BLS)
-This directory contains wage and salary employment data from the [BLS]
-that is the result of joining two different data sets for each year
-listed in the [Makefile](Makefile#L1). Here's the process:
+This directory contains wage and salary employment data from the [BLS] that is
+the result of joining two different data sets for each year listed in the
+[Makefile](Makefile#L1). Here's the process:
 
 1. The `Makefile` handles downloading all of the years of data from [this
-   archive](http://www.bls.gov/cew/datatoc.htm) and copying the relevant
-   files from each zip to the annual directory. You can re-run this process
-   with:
+   archive](http://www.bls.gov/cew/datatoc.htm) and copying the relevant files
+   from each zip to the annual directory. You can re-run this process with:
 
    ```sh
    make years
    ```
 
-   This produces one directory per year, each with two files:
+   This produces one directory per year, each with one file, `joined.tsv`, and
+   a directory of intermediary TSVs for different commodities and groupings,
+   which are described in [commodities.yml](#commodities-yml).
 
-  * `all.csv` contains total annual employment at both the state and
-    county level for all industries.
-  * `extractives.csv` is similarly structured, but contains employment
-    figures for "Mining, quarrying, and oil and gas extraction" at the
-    state and county levels.
+   **Note that the zip files from BLS are big (over 100MB in some cases), so
+   downloading may take a long time when you first run `make`**
 
-  **Note** that the zip files from BLS are big (over 100MB in some cases),
-  so downloading may take a long time when getting
-
-1. The [join script](join.js) loops over the annual directories and joins
-   the `all.csv` and `extractives.csv` files in each, producing an
-   `joined.tsv` for each year that _should_ contain one row for each state
-   and county with data that details the number of of extractives jobs in
-   the `Jobs` column, the `Total` number of jobs in all industries, and the
-   `Share` expressed as a fraction: `Jobs / Total`.
-
-   You can join one or more years individually by running, for example:
-
-   ```sh
-   ./join.js 2014 2015
-   ```
-
-   Or, to join them all:
-
-   ```sh
-   make join
-   ```
+1. The [load script](load.js) loops over an intermediary directory of unzipped
+   CSVs, picks the relevant ones by [NAICS code] from
+   [commodities.yml](#commodities-yml), and combines them all to produce a
+   single TSV for all of the data in a single year.
 
 ## Updating
 To update this data:
@@ -52,7 +33,7 @@ To update this data:
   make years join
   ```
 
-To then update the database and generate new site data:
+Then, update the database and generate new site data:
 
 ```sh
 # cd back to the project root directory

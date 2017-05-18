@@ -1,501 +1,405 @@
 US:
-  '2006':
-    Extractives:
-      naics: 21
+  Extractives:
+    '2006':
       count: 300331
       total: 133162690
       percent: 0.23
-    Oil & Gas:
-      naics: 211
-      count: 134813
-      total: 133162690
-      percent: 0.1
-    Coal:
-      naics: 2121
-      count: 72334
-      total: 133162690
-      percent: 0.05
-    Nonmetallic mineral:
-      naics: 2123
-      count: 66790
-      total: 133162690
-      percent: 0.05
-    Metal ore mining:
-      naics: 2122
-      count: 26394
-      total: 133162690
-      percent: 0.02
-    Iron:
-      naics: 21221
-      count: 3527
-      total: 133162690
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 121
-      total: 133162690
-      percent: 0
-  '2007':
-    Extractives:
-      naics: 21
+    '2007':
       count: 334341
       total: 134687988
       percent: 0.25
-    Oil & Gas:
-      naics: 211
-      count: 146022
-      total: 134687988
-      percent: 0.11
-    Nonmetallic mineral:
-      naics: 2123
-      count: 80910
-      total: 134687988
-      percent: 0.06
-    Coal:
-      naics: 2121
-      count: 74838
-      total: 134687988
-      percent: 0.06
-    Metal ore mining:
-      naics: 2122
-      count: 32571
-      total: 134687988
-      percent: 0.02
-    Gold:
-      naics: 212221
-      count: 122
-      total: 134687988
-      percent: 0
-    Iron:
-      naics: 21221
-      count: 70
-      total: 134687988
-      percent: 0
-  '2008':
-    Extractives:
-      naics: 21
+    '2008':
       count: 359952
       total: 134120594
       percent: 0.27
-    Oil & Gas:
-      naics: 211
-      count: 159996
-      total: 134120594
-      percent: 0.12
-    Nonmetallic mineral:
-      naics: 2123
-      count: 91099
-      total: 134120594
-      percent: 0.07
-    Coal:
-      naics: 2121
-      count: 74652
-      total: 134120594
-      percent: 0.06
-    Metal ore mining:
-      naics: 2122
-      count: 34205
-      total: 134120594
-      percent: 0.03
-    Copper:
-      naics: 212234
-      count: 1443
-      total: 134120594
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 198
-      total: 134120594
-      percent: 0
-    Iron:
-      naics: 21221
-      count: 43
-      total: 134120594
-      percent: 0
-  '2009':
-    Extractives:
-      naics: 21
+    '2009':
       count: 339632
       total: 127925968
       percent: 0.27
-    Oil & Gas:
-      naics: 211
-      count: 160647
-      total: 127925968
-      percent: 0.13
-    Coal:
-      naics: 2121
-      count: 79170
-      total: 127925968
-      percent: 0.06
-    Nonmetallic mineral:
-      naics: 2123
-      count: 70365
-      total: 127925968
-      percent: 0.06
-    Metal ore mining:
-      naics: 2122
-      count: 29450
-      total: 127925968
-      percent: 0.02
-    Iron:
-      naics: 21221
-      count: 1323
-      total: 127925968
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 724
-      total: 127925968
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 46
-      total: 127925968
-      percent: 0
-  '2010':
-    Extractives:
-      naics: 21
+    '2010':
       count: 338162
       total: 127127169
       percent: 0.27
-    Oil & Gas:
-      naics: 211
-      count: 158390
-      total: 127127169
-      percent: 0.12
-    Coal:
-      naics: 2121
-      count: 78227
-      total: 127127169
-      percent: 0.06
-    Nonmetallic mineral:
-      naics: 2123
-      count: 70750
-      total: 127127169
-      percent: 0.06
-    Metal ore mining:
-      naics: 2122
-      count: 30795
-      total: 127127169
-      percent: 0.02
-    Gold:
-      naics: 212221
-      count: 10070
-      total: 127127169
-      percent: 0.01
-    Iron:
-      naics: 21221
-      count: 1460
-      total: 127127169
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 782
-      total: 127127169
-      percent: 0
-  '2011':
-    Extractives:
-      naics: 21
+    '2011':
       count: 363689
       total: 128703740
       percent: 0.28
-    Oil & Gas:
-      naics: 211
-      count: 170727
-      total: 128703740
-      percent: 0.13
-    Coal:
-      naics: 2121
-      count: 83812
-      total: 128703740
-      percent: 0.07
-    Nonmetallic mineral:
-      naics: 2123
-      count: 74302
-      total: 128703740
-      percent: 0.06
-    Metal ore mining:
-      naics: 2122
-      count: 34848
-      total: 128703740
-      percent: 0.03
-    Iron:
-      naics: 21221
-      count: 5717
-      total: 128703740
-      percent: 0
-    Renewables:
-      naics: 22
-      count: 3655
-      total: 128703740
-      percent: 0
-    Wind:
-      naics: 221115
-      count: 2488
-      total: 128703740
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 1296
-      total: 128703740
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 1139
-      total: 128703740
-      percent: 0
-    Geothermal:
-      naics: 221116
-      count: 770
-      total: 128703740
-      percent: 0
-    Solar:
-      naics: 221114
-      count: 397
-      total: 128703740
-      percent: 0
-  '2012':
-    Extractives:
-      naics: 21
+    '2012':
       count: 373615
       total: 130981448
       percent: 0.29
-    Oil & Gas:
-      naics: 211
-      count: 187975
-      total: 130981448
-      percent: 0.14
-    Coal:
-      naics: 2121
-      count: 82829
-      total: 130981448
-      percent: 0.06
-    Nonmetallic mineral:
-      naics: 2123
-      count: 63194
-      total: 130981448
-      percent: 0.05
-    Metal ore mining:
-      naics: 2122
-      count: 39617
-      total: 130981448
-      percent: 0.03
-    Iron:
-      naics: 21221
-      count: 5841
-      total: 130981448
-      percent: 0
-    Renewables:
-      naics: 22
-      count: 4375
-      total: 130981448
-      percent: 0
-    Wind:
-      naics: 221115
-      count: 2829
-      total: 130981448
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 1626
-      total: 130981448
-      percent: 0
-    Geothermal:
-      naics: 221116
-      count: 942
-      total: 130981448
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 723
-      total: 130981448
-      percent: 0
-    Solar:
-      naics: 221114
-      count: 604
-      total: 130981448
-      percent: 0
-  '2013':
-    Extractives:
-      naics: 21
+    '2013':
       count: 377081
       total: 133244165
       percent: 0.28
-    Oil & Gas:
-      naics: 211
-      count: 196665
-      total: 133244165
-      percent: 0.15
-    Coal:
-      naics: 2121
-      count: 75514
-      total: 133244165
-      percent: 0.06
-    Nonmetallic mineral:
-      naics: 2123
-      count: 64170
-      total: 133244165
-      percent: 0.05
-    Metal ore mining:
-      naics: 2122
-      count: 40732
-      total: 133244165
-      percent: 0.03
-    Renewables:
-      naics: 22
-      count: 4870
-      total: 133244165
-      percent: 0
-    Iron:
-      naics: 21221
-      count: 4307
-      total: 133244165
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 3335
-      total: 133244165
-      percent: 0
-    Wind:
-      naics: 221115
-      count: 2820
-      total: 133244165
-      percent: 0
-    Solar:
-      naics: 221114
-      count: 1092
-      total: 133244165
-      percent: 0
-    Geothermal:
-      naics: 221116
-      count: 958
-      total: 133244165
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 903
-      total: 133244165
-      percent: 0
-  '2014':
-    Extractives:
-      naics: 21
+    '2014':
       count: 363863
       total: 135884261
       percent: 0.27
-    Oil & Gas:
-      naics: 211
-      count: 196623
-      total: 135884261
-      percent: 0.14
-    Coal:
-      naics: 2121
-      count: 66569
-      total: 135884261
-      percent: 0.05
-    Nonmetallic mineral:
-      naics: 2123
-      count: 59883
-      total: 135884261
-      percent: 0.04
-    Metal ore mining:
-      naics: 2122
-      count: 40788
-      total: 135884261
-      percent: 0.03
-    Renewables:
-      naics: 22
-      count: 5280
-      total: 135884261
-      percent: 0
-    Iron:
-      naics: 21221
-      count: 4432
-      total: 135884261
-      percent: 0
-    Copper:
-      naics: 212234
-      count: 3116
-      total: 135884261
-      percent: 0
-    Wind:
-      naics: 221115
-      count: 2825
-      total: 135884261
-      percent: 0
-    Solar:
-      naics: 221114
-      count: 1436
-      total: 135884261
-      percent: 0
-    Geothermal:
-      naics: 221116
-      count: 1019
-      total: 135884261
-      percent: 0
-    Gold:
-      naics: 212221
-      count: 792
-      total: 135884261
-      percent: 0
-  '2015':
-    Extractives:
-      naics: 21
+    '2015':
       count: 354639
       total: 138748106
       percent: 0.26
-    Oil & Gas:
-      naics: 211
+  Oil & Gas:
+    '2006':
+      count: 134813
+      total: 133162690
+      percent: 0.1
+    '2007':
+      count: 146022
+      total: 134687988
+      percent: 0.11
+    '2008':
+      count: 159996
+      total: 134120594
+      percent: 0.12
+    '2009':
+      count: 160647
+      total: 127925968
+      percent: 0.13
+    '2010':
+      count: 158390
+      total: 127127169
+      percent: 0.12
+    '2011':
+      count: 170727
+      total: 128703740
+      percent: 0.13
+    '2012':
+      count: 187975
+      total: 130981448
+      percent: 0.14
+    '2013':
+      count: 196665
+      total: 133244165
+      percent: 0.15
+    '2014':
+      count: 196623
+      total: 135884261
+      percent: 0.14
+    '2015':
       count: 192509
       total: 138748106
       percent: 0.14
-    Nonmetallic mineral:
-      naics: 2123
-      count: 66961
-      total: 138748106
+  Coal:
+    '2006':
+      count: 72334
+      total: 133162690
       percent: 0.05
-    Coal:
-      naics: 2121
+    '2007':
+      count: 74838
+      total: 134687988
+      percent: 0.06
+    '2008':
+      count: 74652
+      total: 134120594
+      percent: 0.06
+    '2009':
+      count: 79170
+      total: 127925968
+      percent: 0.06
+    '2010':
+      count: 78227
+      total: 127127169
+      percent: 0.06
+    '2011':
+      count: 83812
+      total: 128703740
+      percent: 0.07
+    '2012':
+      count: 82829
+      total: 130981448
+      percent: 0.06
+    '2013':
+      count: 75514
+      total: 133244165
+      percent: 0.06
+    '2014':
+      count: 66569
+      total: 135884261
+      percent: 0.05
+    '2015':
       count: 58957
       total: 138748106
       percent: 0.04
-    Metal ore mining:
-      naics: 2122
+  Nonmetallic mineral:
+    '2006':
+      count: 66790
+      total: 133162690
+      percent: 0.05
+    '2007':
+      count: 80910
+      total: 134687988
+      percent: 0.06
+    '2008':
+      count: 91099
+      total: 134120594
+      percent: 0.07
+    '2009':
+      count: 70365
+      total: 127925968
+      percent: 0.06
+    '2010':
+      count: 70750
+      total: 127127169
+      percent: 0.06
+    '2011':
+      count: 74302
+      total: 128703740
+      percent: 0.06
+    '2012':
+      count: 63194
+      total: 130981448
+      percent: 0.05
+    '2013':
+      count: 64170
+      total: 133244165
+      percent: 0.05
+    '2014':
+      count: 59883
+      total: 135884261
+      percent: 0.04
+    '2015':
+      count: 66961
+      total: 138748106
+      percent: 0.05
+  Metal ore mining:
+    '2006':
+      count: 26394
+      total: 133162690
+      percent: 0.02
+    '2007':
+      count: 32571
+      total: 134687988
+      percent: 0.02
+    '2008':
+      count: 34205
+      total: 134120594
+      percent: 0.03
+    '2009':
+      count: 29450
+      total: 127925968
+      percent: 0.02
+    '2010':
+      count: 30795
+      total: 127127169
+      percent: 0.02
+    '2011':
+      count: 34848
+      total: 128703740
+      percent: 0.03
+    '2012':
+      count: 39617
+      total: 130981448
+      percent: 0.03
+    '2013':
+      count: 40732
+      total: 133244165
+      percent: 0.03
+    '2014':
+      count: 40788
+      total: 135884261
+      percent: 0.03
+    '2015':
       count: 36212
       total: 138748106
       percent: 0.03
-    Renewables:
-      naics: 22
-      count: 6458
-      total: 138748106
+  Iron:
+    '2006':
+      count: 3527
+      total: 133162690
       percent: 0
-    Iron:
-      naics: 21221
+    '2007':
+      count: 70
+      total: 134687988
+      percent: 0
+    '2008':
+      count: 43
+      total: 134120594
+      percent: 0
+    '2009':
+      count: 1323
+      total: 127925968
+      percent: 0
+    '2010':
+      count: 1460
+      total: 127127169
+      percent: 0
+    '2011':
+      count: 5717
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 5841
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 4307
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 4432
+      total: 135884261
+      percent: 0
+    '2015':
       count: 4205
       total: 138748106
       percent: 0
-    Wind:
-      naics: 221115
-      count: 3672
+  Gold:
+    '2006':
+      count: 121
+      total: 133162690
+      percent: 0
+    '2007':
+      count: 122
+      total: 134687988
+      percent: 0
+    '2008':
+      count: 198
+      total: 134120594
+      percent: 0
+    '2009':
+      count: 46
+      total: 127925968
+      percent: 0
+    '2010':
+      count: 10070
+      total: 127127169
+      percent: 0.01
+    '2011':
+      count: 1139
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 723
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 903
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 792
+      total: 135884261
+      percent: 0
+    '2015':
+      count: 491
       total: 138748106
       percent: 0
-    Solar:
-      naics: 221114
-      count: 1797
-      total: 138748106
+  Copper:
+    '2008':
+      count: 1443
+      total: 134120594
       percent: 0
-    Copper:
-      naics: 212234
+    '2009':
+      count: 724
+      total: 127925968
+      percent: 0
+    '2010':
+      count: 782
+      total: 127127169
+      percent: 0
+    '2011':
+      count: 1296
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 1626
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 3335
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 3116
+      total: 135884261
+      percent: 0
+    '2015':
       count: 1450
       total: 138748106
       percent: 0
-    Geothermal:
-      naics: 221116
+  Renewables:
+    '2011':
+      count: 3655
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 4375
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 4870
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 5280
+      total: 135884261
+      percent: 0
+    '2015':
+      count: 6458
+      total: 138748106
+      percent: 0
+  Wind:
+    '2011':
+      count: 2488
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 2829
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 2820
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 2825
+      total: 135884261
+      percent: 0
+    '2015':
+      count: 3672
+      total: 138748106
+      percent: 0
+  Geothermal:
+    '2011':
+      count: 770
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 942
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 958
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 1019
+      total: 135884261
+      percent: 0
+    '2015':
       count: 989
       total: 138748106
       percent: 0
-    Gold:
-      naics: 212221
-      count: 491
+  Solar:
+    '2011':
+      count: 397
+      total: 128703740
+      percent: 0
+    '2012':
+      count: 604
+      total: 130981448
+      percent: 0
+    '2013':
+      count: 1092
+      total: 133244165
+      percent: 0
+    '2014':
+      count: 1436
+      total: 135884261
+      percent: 0
+    '2015':
+      count: 1797
       total: 138748106
       percent: 0

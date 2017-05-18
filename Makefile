@@ -150,12 +150,11 @@ data/jobs: \
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			region_id AS state, year, jobs, percent \
 		FROM state_bls_employment \
 		WHERE \
 			region_id IS NOT NULL \
+			AND commodity = 'Extractives' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -164,13 +163,11 @@ data/state_jobs.yml:
 data/national_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			year, jobs, percent \
 		FROM national_bls_employment \
 		WHERE \
-			region_id IS NOT NULL \
-		ORDER BY state, year" \
+			commodity = 'Extractives' \
+		ORDER BY year" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \
 			-o _$@
@@ -180,14 +177,11 @@ data/county_jobs:
 		SELECT \
 			region_id AS state, \
 			SUBSTR('0' || fips, -5, 5) AS fips, \
-			county, \
-			year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			county, year, jobs, percent \
 		FROM bls_employment \
 		WHERE \
-			region_id IS NOT NULL AND \
 			county IS NOT NULL \
+			AND commodity = 'Extractives' \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_jobs.yml \

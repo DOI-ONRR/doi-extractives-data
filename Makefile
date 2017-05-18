@@ -375,7 +375,6 @@ data/federal_county_production:
 			-c _meta/county_production.yml \
 			-o '_$@/{state}.yml'
 
-
 data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -432,27 +431,14 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
-data/national_revenues_by_type.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			commodity, revenue_type, year, \
-			ROUND(revenue) AS revenue \
-		FROM national_revenue_type \
-		WHERE revenue IS NOT NULL \
-		ORDER BY \
-			revenue DESC, commodity, year" \
-		| $(nestly) --if ndjson \
-			-c _meta/national_revenues_by_type.yml \
-			-o _$@
-
 data/national_revenues_other_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Other Revenues' AND \
-				commodity == 'None' \
+			revenue_type = 'Other Revenues' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \
@@ -462,11 +448,11 @@ data/national_revenues_other_revenues.yml:
 data/national_revenues_civil_penalties.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Civil Penalties' AND \
-				commodity == 'None' \
+			revenue_type = 'Civil Penalties' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \
@@ -476,11 +462,11 @@ data/national_revenues_civil_penalties.yml:
 data/national_revenues_inspection_fees.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Inspection Fees' AND \
-				commodity == 'None' \
+			revenue_type = 'Inspection Fees' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \

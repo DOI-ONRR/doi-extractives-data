@@ -142,6 +142,7 @@ data/national_gdp.yml:
 
 data/jobs: \
 	data/state_jobs.yml \
+	data/state_jobs_by_commodity.yml \
 	data/national_jobs.yml \
 	data/county_jobs \
 	data/state_self_employment.yml \
@@ -153,11 +154,23 @@ data/state_jobs.yml:
 			region_id AS state, year, jobs, total, percent \
 		FROM state_bls_employment \
 		WHERE \
-			region_id IS NOT NULL \
-			AND commodity = 'Extractives' \
+			commodity = 'Extractives' \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
+			-o _$@
+
+data/state_jobs_by_commodity.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			region_id AS state, year, \
+			commodity, jobs, total, percent \
+		FROM state_bls_employment \
+		WHERE \
+			commodity != 'All' \
+		ORDER BY state, year, jobs DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/state_jobs_by_commodity.yml \
 			-o _$@
 
 data/national_jobs.yml:

@@ -1,0 +1,7858 @@
+AK:
+  '2006':
+    Extractives:
+      count: 4393
+      total: 307637
+      percent: 1.43
+    Oil & Gas:
+      count: 2890
+      total: 307637
+      percent: 0.94
+    Metal ore mining:
+      count: 1503
+      total: 307637
+      percent: 0.49
+  '2007':
+    Extractives:
+      count: 4967
+      total: 310810
+      percent: 1.6
+    Oil & Gas:
+      count: 3245
+      total: 310810
+      percent: 1.04
+    Metal ore mining:
+      count: 1722
+      total: 310810
+      percent: 0.55
+  '2008':
+    Extractives:
+      count: 5415
+      total: 315285
+      percent: 1.72
+    Oil & Gas:
+      count: 3522
+      total: 315285
+      percent: 1.12
+    Metal ore mining:
+      count: 1893
+      total: 315285
+      percent: 0.6
+  '2009':
+    Extractives:
+      count: 5373
+      total: 313802
+      percent: 1.71
+    Oil & Gas:
+      count: 3606
+      total: 313802
+      percent: 1.15
+    Metal ore mining:
+      count: 1767
+      total: 313802
+      percent: 0.56
+  '2010':
+    Extractives:
+      count: 5520
+      total: 316691
+      percent: 1.74
+    Oil & Gas:
+      count: 3551
+      total: 316691
+      percent: 1.12
+    Metal ore mining:
+      count: 1969
+      total: 316691
+      percent: 0.62
+  '2011':
+    Extractives:
+      count: 5882
+      total: 322084
+      percent: 1.83
+    Oil & Gas:
+      count: 3625
+      total: 322084
+      percent: 1.13
+    Metal ore mining:
+      count: 2257
+      total: 322084
+      percent: 0.7
+  '2012':
+    Extractives:
+      count: 6403
+      total: 327378
+      percent: 1.96
+    Oil & Gas:
+      count: 3890
+      total: 327378
+      percent: 1.19
+    Metal ore mining:
+      count: 2513
+      total: 327378
+      percent: 0.77
+  '2013':
+    Extractives:
+      count: 6681
+      total: 328716
+      percent: 2.03
+    Oil & Gas:
+      count: 4080
+      total: 328716
+      percent: 1.24
+    Metal ore mining:
+      count: 2601
+      total: 328716
+      percent: 0.79
+  '2014':
+    Extractives:
+      count: 6743
+      total: 330105
+      percent: 2.04
+    Oil & Gas:
+      count: 4206
+      total: 330105
+      percent: 1.27
+    Metal ore mining:
+      count: 2537
+      total: 330105
+      percent: 0.77
+  '2015':
+    Extractives:
+      count: 6630
+      total: 331681
+      percent: 2
+    Oil & Gas:
+      count: 4091
+      total: 331681
+      percent: 1.23
+    Metal ore mining:
+      count: 2539
+      total: 331681
+      percent: 0.77
+AL:
+  '2006':
+    Extractives:
+      count: 7276
+      total: 1928281
+      percent: 0.38
+    Coal:
+      count: 4211
+      total: 1928281
+      percent: 0.22
+    Nonmetallic mineral:
+      count: 2341
+      total: 1928281
+      percent: 0.12
+    Oil & Gas:
+      count: 666
+      total: 1928281
+      percent: 0.03
+    Metal ore mining:
+      count: 58
+      total: 1928281
+      percent: 0
+  '2007':
+    Extractives:
+      count: 7097
+      total: 1952091
+      percent: 0.36
+    Coal:
+      count: 3985
+      total: 1952091
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 2288
+      total: 1952091
+      percent: 0.12
+    Oil & Gas:
+      count: 769
+      total: 1952091
+      percent: 0.04
+    Metal ore mining:
+      count: 55
+      total: 1952091
+      percent: 0
+  '2008':
+    Extractives:
+      count: 7151
+      total: 1936489
+      percent: 0.37
+    Coal:
+      count: 4138
+      total: 1936489
+      percent: 0.21
+    Nonmetallic mineral:
+      count: 2188
+      total: 1936489
+      percent: 0.11
+    Oil & Gas:
+      count: 759
+      total: 1936489
+      percent: 0.04
+    Metal ore mining:
+      count: 66
+      total: 1936489
+      percent: 0
+  '2009':
+    Extractives:
+      count: 6832
+      total: 1829487
+      percent: 0.37
+    Coal:
+      count: 4145
+      total: 1829487
+      percent: 0.23
+    Nonmetallic mineral:
+      count: 1872
+      total: 1829487
+      percent: 0.1
+    Oil & Gas:
+      count: 750
+      total: 1829487
+      percent: 0.04
+    Metal ore mining:
+      count: 65
+      total: 1829487
+      percent: 0
+  '2010':
+    Extractives:
+      count: 6937
+      total: 1813155
+      percent: 0.38
+    Coal:
+      count: 4246
+      total: 1813155
+      percent: 0.23
+    Nonmetallic mineral:
+      count: 1845
+      total: 1813155
+      percent: 0.1
+    Oil & Gas:
+      count: 779
+      total: 1813155
+      percent: 0.04
+    Metal ore mining:
+      count: 67
+      total: 1813155
+      percent: 0
+  '2011':
+    Extractives:
+      count: 7366
+      total: 1813497
+      percent: 0.41
+    Coal:
+      count: 4555
+      total: 1813497
+      percent: 0.25
+    Nonmetallic mineral:
+      count: 1942
+      total: 1813497
+      percent: 0.11
+    Oil & Gas:
+      count: 801
+      total: 1813497
+      percent: 0.04
+    Metal ore mining:
+      count: 68
+      total: 1813497
+      percent: 0
+  '2012':
+    Extractives:
+      count: 7600
+      total: 1828248
+      percent: 0.42
+    Coal:
+      count: 4901
+      total: 1828248
+      percent: 0.27
+    Nonmetallic mineral:
+      count: 1875
+      total: 1828248
+      percent: 0.1
+    Oil & Gas:
+      count: 756
+      total: 1828248
+      percent: 0.04
+    Metal ore mining:
+      count: 68
+      total: 1828248
+      percent: 0
+  '2013':
+    Extractives:
+      count: 6933
+      total: 1845086
+      percent: 0.38
+    Coal:
+      count: 4278
+      total: 1845086
+      percent: 0.23
+    Nonmetallic mineral:
+      count: 1841
+      total: 1845086
+      percent: 0.1
+    Oil & Gas:
+      count: 712
+      total: 1845086
+      percent: 0.04
+    Metal ore mining:
+      count: 102
+      total: 1845086
+      percent: 0.01
+  '2014':
+    Extractives:
+      count: 6541
+      total: 1863561
+      percent: 0.35
+    Coal:
+      count: 3835
+      total: 1863561
+      percent: 0.21
+    Nonmetallic mineral:
+      count: 1865
+      total: 1863561
+      percent: 0.1
+    Oil & Gas:
+      count: 711
+      total: 1863561
+      percent: 0.04
+    Metal ore mining:
+      count: 130
+      total: 1863561
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 5912
+      total: 1890340
+      percent: 0.31
+    Coal:
+      count: 3394
+      total: 1890340
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1947
+      total: 1890340
+      percent: 0.1
+    Oil & Gas:
+      count: 443
+      total: 1890340
+      percent: 0.02
+    Metal ore mining:
+      count: 128
+      total: 1890340
+      percent: 0.01
+AR:
+  '2006':
+    Extractives:
+      count: 2354
+      total: 1167925
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 1921
+      total: 1167925
+      percent: 0.16
+    Oil & Gas:
+      count: 433
+      total: 1167925
+      percent: 0.04
+  '2007':
+    Extractives:
+      count: 2677
+      total: 1173852
+      percent: 0.23
+    Nonmetallic mineral:
+      count: 1944
+      total: 1173852
+      percent: 0.17
+    Oil & Gas:
+      count: 733
+      total: 1173852
+      percent: 0.06
+  '2008':
+    Extractives:
+      count: 2968
+      total: 1172208
+      percent: 0.25
+    Nonmetallic mineral:
+      count: 2007
+      total: 1172208
+      percent: 0.17
+    Oil & Gas:
+      count: 961
+      total: 1172208
+      percent: 0.08
+  '2009':
+    Extractives:
+      count: 2756
+      total: 1134488
+      percent: 0.24
+    Nonmetallic mineral:
+      count: 1882
+      total: 1134488
+      percent: 0.17
+    Oil & Gas:
+      count: 874
+      total: 1134488
+      percent: 0.08
+  '2010':
+    Extractives:
+      count: 2935
+      total: 1134071
+      percent: 0.26
+    Nonmetallic mineral:
+      count: 1967
+      total: 1134071
+      percent: 0.17
+    Oil & Gas:
+      count: 968
+      total: 1134071
+      percent: 0.09
+  '2011':
+    Extractives:
+      count: 3525
+      total: 1139682
+      percent: 0.31
+    Nonmetallic mineral:
+      count: 1995
+      total: 1139682
+      percent: 0.18
+    Oil & Gas:
+      count: 1530
+      total: 1139682
+      percent: 0.13
+  '2012':
+    Extractives:
+      count: 3580
+      total: 1146811
+      percent: 0.31
+    Nonmetallic mineral:
+      count: 1940
+      total: 1146811
+      percent: 0.17
+    Oil & Gas:
+      count: 1640
+      total: 1146811
+      percent: 0.14
+  '2013':
+    Extractives:
+      count: 3279
+      total: 1146274
+      percent: 0.29
+    Nonmetallic mineral:
+      count: 1730
+      total: 1146274
+      percent: 0.15
+    Oil & Gas:
+      count: 1549
+      total: 1146274
+      percent: 0.14
+  '2014':
+    Extractives:
+      count: 2982
+      total: 1157630
+      percent: 0.26
+    Nonmetallic mineral:
+      count: 1569
+      total: 1157630
+      percent: 0.14
+    Oil & Gas:
+      count: 1413
+      total: 1157630
+      percent: 0.12
+  '2015':
+    Extractives:
+      count: 2838
+      total: 1177884
+      percent: 0.24
+    Nonmetallic mineral:
+      count: 1530
+      total: 1177884
+      percent: 0.13
+    Oil & Gas:
+      count: 1308
+      total: 1177884
+      percent: 0.11
+AZ:
+  '2006':
+    Extractives:
+      count: 7662
+      total: 2614344
+      percent: 0.29
+    Metal ore mining:
+      count: 7222
+      total: 2614344
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 437
+      total: 2614344
+      percent: 0.02
+    Oil & Gas:
+      count: 3
+      total: 2614344
+      percent: 0
+  '2007':
+    Extractives:
+      count: 8774
+      total: 2647691
+      percent: 0.33
+    Metal ore mining:
+      count: 8770
+      total: 2647691
+      percent: 0.33
+    Oil & Gas:
+      count: 4
+      total: 2647691
+      percent: 0
+  '2008':
+    Extractives:
+      count: 10741
+      total: 2583215
+      percent: 0.42
+    Metal ore mining:
+      count: 10730
+      total: 2583215
+      percent: 0.42
+    Oil & Gas:
+      count: 11
+      total: 2583215
+      percent: 0
+  '2009':
+    Extractives:
+      count: 8835
+      total: 2396362
+      percent: 0.37
+    Metal ore mining:
+      count: 8491
+      total: 2396362
+      percent: 0.35
+    Nonmetallic mineral:
+      count: 344
+      total: 2396362
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 8358
+      total: 2356789
+      percent: 0.35
+    Metal ore mining:
+      count: 8076
+      total: 2356789
+      percent: 0.34
+    Nonmetallic mineral:
+      count: 262
+      total: 2356789
+      percent: 0.01
+    Gold:
+      count: 80
+      total: 2356789
+      percent: 0
+    Oil & Gas:
+      count: 20
+      total: 2356789
+      percent: 0
+  '2011':
+    Extractives:
+      count: 9700
+      total: 2378248
+      percent: 0.41
+    Metal ore mining:
+      count: 9318
+      total: 2378248
+      percent: 0.39
+    Nonmetallic mineral:
+      count: 268
+      total: 2378248
+      percent: 0.01
+    Oil & Gas:
+      count: 114
+      total: 2378248
+      percent: 0
+    Renewables:
+      count: 12
+      total: 2378248
+      percent: 0
+    Solar:
+      count: 9
+      total: 2378248
+      percent: 0
+    Wind:
+      count: 3
+      total: 2378248
+      percent: 0
+  '2012':
+    Extractives:
+      count: 10444
+      total: 2431788
+      percent: 0.43
+    Metal ore mining:
+      count: 10322
+      total: 2431788
+      percent: 0.42
+    Gold:
+      count: 191
+      total: 2431788
+      percent: 0.01
+    Oil & Gas:
+      count: 122
+      total: 2431788
+      percent: 0.01
+    Solar:
+      count: 101
+      total: 2431788
+      percent: 0
+    Renewables:
+      count: 101
+      total: 2431788
+      percent: 0
+  '2013':
+    Extractives:
+      count: 11133
+      total: 2488009
+      percent: 0.45
+    Metal ore mining:
+      count: 11018
+      total: 2488009
+      percent: 0.44
+    Solar:
+      count: 123
+      total: 2488009
+      percent: 0
+    Renewables:
+      count: 123
+      total: 2488009
+      percent: 0
+    Oil & Gas:
+      count: 115
+      total: 2488009
+      percent: 0
+  '2014':
+    Extractives:
+      count: 10866
+      total: 2539253
+      percent: 0.43
+    Metal ore mining:
+      count: 10747
+      total: 2539253
+      percent: 0.42
+    Oil & Gas:
+      count: 119
+      total: 2539253
+      percent: 0
+    Solar:
+      count: 90
+      total: 2539253
+      percent: 0
+    Renewables:
+      count: 90
+      total: 2539253
+      percent: 0
+  '2015':
+    Extractives:
+      count: 10305
+      total: 2609770
+      percent: 0.39
+    Metal ore mining:
+      count: 10201
+      total: 2609770
+      percent: 0.39
+    Oil & Gas:
+      count: 104
+      total: 2609770
+      percent: 0
+    Solar:
+      count: 98
+      total: 2609770
+      percent: 0
+    Renewables:
+      count: 98
+      total: 2609770
+      percent: 0
+CA:
+  '2006':
+    Extractives:
+      count: 14537
+      total: 15503144
+      percent: 0.09
+    Oil & Gas:
+      count: 8083
+      total: 15503144
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 6454
+      total: 15503144
+      percent: 0.04
+    Gold:
+      count: 46
+      total: 15503144
+      percent: 0
+    Iron:
+      count: 12
+      total: 15503144
+      percent: 0
+  '2007':
+    Extractives:
+      count: 14269
+      total: 15640575
+      percent: 0.09
+    Oil & Gas:
+      count: 8112
+      total: 15640575
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 6157
+      total: 15640575
+      percent: 0.04
+    Gold:
+      count: 51
+      total: 15640575
+      percent: 0
+    Iron:
+      count: 15
+      total: 15640575
+      percent: 0
+  '2008':
+    Extractives:
+      count: 14327
+      total: 15494915
+      percent: 0.09
+    Oil & Gas:
+      count: 8729
+      total: 15494915
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 5598
+      total: 15494915
+      percent: 0.04
+    Gold:
+      count: 84
+      total: 15494915
+      percent: 0
+    Iron:
+      count: 18
+      total: 15494915
+      percent: 0
+  '2009':
+    Extractives:
+      count: 13350
+      total: 14629953
+      percent: 0.09
+    Oil & Gas:
+      count: 8489
+      total: 14629953
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4861
+      total: 14629953
+      percent: 0.03
+  '2010':
+    Extractives:
+      count: 13224
+      total: 14414461
+      percent: 0.09
+    Oil & Gas:
+      count: 8755
+      total: 14414461
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4469
+      total: 14414461
+      percent: 0.03
+    Gold:
+      count: 450
+      total: 14414461
+      percent: 0
+  '2011':
+    Extractives:
+      count: 13596
+      total: 14567128
+      percent: 0.09
+    Oil & Gas:
+      count: 9063
+      total: 14567128
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4533
+      total: 14567128
+      percent: 0.03
+    Renewables:
+      count: 1656
+      total: 14567128
+      percent: 0.01
+    Geothermal:
+      count: 770
+      total: 14567128
+      percent: 0.01
+    Wind:
+      count: 597
+      total: 14567128
+      percent: 0
+    Gold:
+      count: 417
+      total: 14567128
+      percent: 0
+    Solar:
+      count: 289
+      total: 14567128
+      percent: 0
+  '2012':
+    Extractives:
+      count: 14099
+      total: 14959808
+      percent: 0.09
+    Oil & Gas:
+      count: 9748
+      total: 14959808
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 4351
+      total: 14959808
+      percent: 0.03
+    Renewables:
+      count: 1679
+      total: 14959808
+      percent: 0.01
+    Geothermal:
+      count: 773
+      total: 14959808
+      percent: 0.01
+    Wind:
+      count: 568
+      total: 14959808
+      percent: 0
+    Gold:
+      count: 448
+      total: 14959808
+      percent: 0
+    Solar:
+      count: 338
+      total: 14959808
+      percent: 0
+  '2013':
+    Extractives:
+      count: 14168
+      total: 15378962
+      percent: 0.09
+    Oil & Gas:
+      count: 9863
+      total: 15378962
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4305
+      total: 15378962
+      percent: 0.03
+    Renewables:
+      count: 1971
+      total: 15378962
+      percent: 0.01
+    Geothermal:
+      count: 775
+      total: 15378962
+      percent: 0.01
+    Solar:
+      count: 663
+      total: 15378962
+      percent: 0
+    Wind:
+      count: 533
+      total: 15378962
+      percent: 0
+    Gold:
+      count: 464
+      total: 15378962
+      percent: 0
+  '2014':
+    Extractives:
+      count: 14182
+      total: 15809082
+      percent: 0.09
+    Oil & Gas:
+      count: 9747
+      total: 15809082
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4435
+      total: 15809082
+      percent: 0.03
+    Renewables:
+      count: 2106
+      total: 15809082
+      percent: 0.01
+    Geothermal:
+      count: 834
+      total: 15809082
+      percent: 0.01
+    Solar:
+      count: 786
+      total: 15809082
+      percent: 0
+    Gold:
+      count: 488
+      total: 15809082
+      percent: 0
+    Wind:
+      count: 486
+      total: 15809082
+      percent: 0
+  '2015':
+    Extractives:
+      count: 14903
+      total: 16295204
+      percent: 0.09
+    Oil & Gas:
+      count: 10490
+      total: 16295204
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 4413
+      total: 16295204
+      percent: 0.03
+    Renewables:
+      count: 2277
+      total: 16295204
+      percent: 0.01
+    Solar:
+      count: 944
+      total: 16295204
+      percent: 0.01
+    Geothermal:
+      count: 804
+      total: 16295204
+      percent: 0
+    Wind:
+      count: 529
+      total: 16295204
+      percent: 0
+    Gold:
+      count: 470
+      total: 16295204
+      percent: 0
+CO:
+  '2006':
+    Extractives:
+      count: 11002
+      total: 2242012
+      percent: 0.49
+    Oil & Gas:
+      count: 5561
+      total: 2242012
+      percent: 0.25
+    Coal:
+      count: 2208
+      total: 2242012
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2061
+      total: 2242012
+      percent: 0.09
+    Metal ore mining:
+      count: 1172
+      total: 2242012
+      percent: 0.05
+  '2007':
+    Extractives:
+      count: 12591
+      total: 2292630
+      percent: 0.55
+    Oil & Gas:
+      count: 6908
+      total: 2292630
+      percent: 0.3
+    Coal:
+      count: 2261
+      total: 2292630
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2115
+      total: 2292630
+      percent: 0.09
+    Metal ore mining:
+      count: 1307
+      total: 2292630
+      percent: 0.06
+  '2008':
+    Extractives:
+      count: 13493
+      total: 2310865
+      percent: 0.58
+    Oil & Gas:
+      count: 7882
+      total: 2310865
+      percent: 0.34
+    Coal:
+      count: 2285
+      total: 2310865
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 1883
+      total: 2310865
+      percent: 0.08
+    Metal ore mining:
+      count: 1443
+      total: 2310865
+      percent: 0.06
+  '2009':
+    Extractives:
+      count: 13092
+      total: 2201427
+      percent: 0.59
+    Oil & Gas:
+      count: 7877
+      total: 2201427
+      percent: 0.36
+    Coal:
+      count: 2382
+      total: 2201427
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 1588
+      total: 2201427
+      percent: 0.07
+    Metal ore mining:
+      count: 1245
+      total: 2201427
+      percent: 0.06
+  '2010':
+    Extractives:
+      count: 12856
+      total: 2176986
+      percent: 0.59
+    Oil & Gas:
+      count: 7830
+      total: 2176986
+      percent: 0.36
+    Coal:
+      count: 2278
+      total: 2176986
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 1458
+      total: 2176986
+      percent: 0.07
+    Metal ore mining:
+      count: 1290
+      total: 2176986
+      percent: 0.06
+    Gold:
+      count: 537
+      total: 2176986
+      percent: 0.02
+  '2011':
+    Extractives:
+      count: 13511
+      total: 2213059
+      percent: 0.61
+    Oil & Gas:
+      count: 8457
+      total: 2213059
+      percent: 0.38
+    Coal:
+      count: 2238
+      total: 2213059
+      percent: 0.1
+    Metal ore mining:
+      count: 1448
+      total: 2213059
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1368
+      total: 2213059
+      percent: 0.06
+    Gold:
+      count: 636
+      total: 2213059
+      percent: 0.03
+    Renewables:
+      count: 181
+      total: 2213059
+      percent: 0.01
+    Wind:
+      count: 115
+      total: 2213059
+      percent: 0.01
+    Solar:
+      count: 66
+      total: 2213059
+      percent: 0
+  '2012':
+    Extractives:
+      count: 14553
+      total: 2266503
+      percent: 0.64
+    Oil & Gas:
+      count: 9152
+      total: 2266503
+      percent: 0.4
+    Coal:
+      count: 2299
+      total: 2266503
+      percent: 0.1
+    Metal ore mining:
+      count: 1774
+      total: 2266503
+      percent: 0.08
+    Nonmetallic mineral:
+      count: 1328
+      total: 2266503
+      percent: 0.06
+    Renewables:
+      count: 203
+      total: 2266503
+      percent: 0.01
+    Wind:
+      count: 132
+      total: 2266503
+      percent: 0.01
+    Solar:
+      count: 71
+      total: 2266503
+      percent: 0
+  '2013':
+    Extractives:
+      count: 15264
+      total: 2335803
+      percent: 0.65
+    Oil & Gas:
+      count: 9952
+      total: 2335803
+      percent: 0.43
+    Coal:
+      count: 2189
+      total: 2335803
+      percent: 0.09
+    Metal ore mining:
+      count: 1816
+      total: 2335803
+      percent: 0.08
+    Nonmetallic mineral:
+      count: 1307
+      total: 2335803
+      percent: 0.06
+    Renewables:
+      count: 226
+      total: 2335803
+      percent: 0.01
+    Wind:
+      count: 141
+      total: 2335803
+      percent: 0.01
+    Solar:
+      count: 85
+      total: 2335803
+      percent: 0
+  '2014':
+    Extractives:
+      count: 15455
+      total: 2417735
+      percent: 0.64
+    Oil & Gas:
+      count: 10557
+      total: 2417735
+      percent: 0.44
+    Coal:
+      count: 1855
+      total: 2417735
+      percent: 0.08
+    Metal ore mining:
+      count: 1719
+      total: 2417735
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1324
+      total: 2417735
+      percent: 0.05
+    Renewables:
+      count: 374
+      total: 2417735
+      percent: 0.02
+    Solar:
+      count: 219
+      total: 2417735
+      percent: 0.01
+    Wind:
+      count: 155
+      total: 2417735
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 14985
+      total: 2494450
+      percent: 0.6
+    Oil & Gas:
+      count: 10287
+      total: 2494450
+      percent: 0.41
+    Metal ore mining:
+      count: 1731
+      total: 2494450
+      percent: 0.07
+    Coal:
+      count: 1585
+      total: 2494450
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 1382
+      total: 2494450
+      percent: 0.06
+    Renewables:
+      count: 459
+      total: 2494450
+      percent: 0.02
+    Solar:
+      count: 271
+      total: 2494450
+      percent: 0.01
+    Wind:
+      count: 188
+      total: 2494450
+      percent: 0.01
+CT:
+  '2008':
+    Nonmetallic mineral:
+      count: 698
+      total: 1687902
+      percent: 0.04
+    Extractives:
+      count: 698
+      total: 1687902
+      percent: 0.04
+  '2009':
+    Nonmetallic mineral:
+      count: 601
+      total: 1615356
+      percent: 0.04
+    Extractives:
+      count: 601
+      total: 1615356
+      percent: 0.04
+  '2010':
+    Nonmetallic mineral:
+      count: 547
+      total: 1595713
+      percent: 0.03
+    Extractives:
+      count: 547
+      total: 1595713
+      percent: 0.03
+  '2011':
+    Nonmetallic mineral:
+      count: 515
+      total: 1612292
+      percent: 0.03
+    Extractives:
+      count: 515
+      total: 1612292
+      percent: 0.03
+    Wind:
+      count: 4
+      total: 1612292
+      percent: 0
+    Renewables:
+      count: 4
+      total: 1612292
+      percent: 0
+  '2012':
+    Nonmetallic mineral:
+      count: 514
+      total: 1627748
+      percent: 0.03
+    Extractives:
+      count: 514
+      total: 1627748
+      percent: 0.03
+    Solar:
+      count: 4
+      total: 1627748
+      percent: 0
+    Renewables:
+      count: 4
+      total: 1627748
+      percent: 0
+  '2013':
+    Nonmetallic mineral:
+      count: 508
+      total: 1640333
+      percent: 0.03
+    Extractives:
+      count: 508
+      total: 1640333
+      percent: 0.03
+    Solar:
+      count: 10
+      total: 1640333
+      percent: 0
+    Renewables:
+      count: 10
+      total: 1640333
+      percent: 0
+  '2014':
+    Nonmetallic mineral:
+      count: 515
+      total: 1653573
+      percent: 0.03
+    Extractives:
+      count: 515
+      total: 1653573
+      percent: 0.03
+    Solar:
+      count: 24
+      total: 1653573
+      percent: 0
+    Renewables:
+      count: 24
+      total: 1653573
+      percent: 0
+  '2015':
+    Nonmetallic mineral:
+      count: 520
+      total: 1662825
+      percent: 0.03
+    Extractives:
+      count: 520
+      total: 1662825
+      percent: 0.03
+FL:
+  '2006':
+    Oil & Gas:
+      count: 112
+      total: 7952023
+      percent: 0
+    Extractives:
+      count: 112
+      total: 7952023
+      percent: 0
+  '2007':
+    Extractives:
+      count: 4217
+      total: 7945162
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3934
+      total: 7945162
+      percent: 0.05
+    Metal ore mining:
+      count: 183
+      total: 7945162
+      percent: 0
+    Oil & Gas:
+      count: 100
+      total: 7945162
+      percent: 0
+  '2008':
+    Extractives:
+      count: 3822
+      total: 7666374
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3710
+      total: 7666374
+      percent: 0.05
+    Oil & Gas:
+      count: 112
+      total: 7666374
+      percent: 0
+  '2009':
+    Extractives:
+      count: 3219
+      total: 7182815
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 3143
+      total: 7182815
+      percent: 0.04
+    Oil & Gas:
+      count: 76
+      total: 7182815
+      percent: 0
+  '2010':
+    Extractives:
+      count: 2986
+      total: 7109630
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 2913
+      total: 7109630
+      percent: 0.04
+    Oil & Gas:
+      count: 73
+      total: 7109630
+      percent: 0
+  '2011':
+    Extractives:
+      count: 3220
+      total: 7195232
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 3146
+      total: 7195232
+      percent: 0.04
+    Oil & Gas:
+      count: 74
+      total: 7195232
+      percent: 0
+    Solar:
+      count: 4
+      total: 7195232
+      percent: 0
+    Renewables:
+      count: 4
+      total: 7195232
+      percent: 0
+  '2012':
+    Extractives:
+      count: 3218
+      total: 7341002
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 3121
+      total: 7341002
+      percent: 0.04
+    Oil & Gas:
+      count: 97
+      total: 7341002
+      percent: 0
+    Gold:
+      count: 16
+      total: 7341002
+      percent: 0
+    Solar:
+      count: 7
+      total: 7341002
+      percent: 0
+    Renewables:
+      count: 7
+      total: 7341002
+      percent: 0
+  '2013':
+    Extractives:
+      count: 3259
+      total: 7518448
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 3157
+      total: 7518448
+      percent: 0.04
+    Oil & Gas:
+      count: 102
+      total: 7518448
+      percent: 0
+    Gold:
+      count: 6
+      total: 7518448
+      percent: 0
+    Wind:
+      count: 6
+      total: 7518448
+      percent: 0
+    Renewables:
+      count: 6
+      total: 7518448
+      percent: 0
+  '2014':
+    Extractives:
+      count: 3553
+      total: 7755371
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3219
+      total: 7755371
+      percent: 0.04
+    Metal ore mining:
+      count: 170
+      total: 7755371
+      percent: 0
+    Oil & Gas:
+      count: 158
+      total: 7755371
+      percent: 0
+    Solar:
+      count: 17
+      total: 7755371
+      percent: 0
+    Renewables:
+      count: 17
+      total: 7755371
+      percent: 0
+    Coal:
+      count: 6
+      total: 7755371
+      percent: 0
+  '2015':
+    Extractives:
+      count: 3338
+      total: 8039635
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 3191
+      total: 8039635
+      percent: 0.04
+    Oil & Gas:
+      count: 147
+      total: 8039635
+      percent: 0
+    Renewables:
+      count: 51
+      total: 8039635
+      percent: 0
+    Solar:
+      count: 40
+      total: 8039635
+      percent: 0
+    Wind:
+      count: 11
+      total: 8039635
+      percent: 0
+GA:
+  '2006':
+    Nonmetallic mineral:
+      count: 6485
+      total: 4024699
+      percent: 0.16
+    Extractives:
+      count: 6485
+      total: 4024699
+      percent: 0.16
+  '2007':
+    Nonmetallic mineral:
+      count: 6396
+      total: 4077184
+      percent: 0.16
+    Extractives:
+      count: 6396
+      total: 4077184
+      percent: 0.16
+  '2008':
+    Nonmetallic mineral:
+      count: 5393
+      total: 4031467
+      percent: 0.13
+    Extractives:
+      count: 5393
+      total: 4031467
+      percent: 0.13
+  '2011':
+    Nonmetallic mineral:
+      count: 4480
+      total: 3792209
+      percent: 0.12
+    Extractives:
+      count: 4480
+      total: 3792209
+      percent: 0.12
+  '2012':
+    Nonmetallic mineral:
+      count: 4299
+      total: 3841767
+      percent: 0.11
+    Extractives:
+      count: 4299
+      total: 3841767
+      percent: 0.11
+  '2013':
+    Nonmetallic mineral:
+      count: 4283
+      total: 3918085
+      percent: 0.11
+    Extractives:
+      count: 4283
+      total: 3918085
+      percent: 0.11
+  '2014':
+    Nonmetallic mineral:
+      count: 4423
+      total: 4032488
+      percent: 0.11
+    Extractives:
+      count: 4423
+      total: 4032488
+      percent: 0.11
+  '2015':
+    Nonmetallic mineral:
+      count: 4415
+      total: 4151011
+      percent: 0.11
+    Extractives:
+      count: 4415
+      total: 4151011
+      percent: 0.11
+HI:
+  '2008':
+    Nonmetallic mineral:
+      count: 323
+      total: 619703
+      percent: 0.05
+    Extractives:
+      count: 323
+      total: 619703
+      percent: 0.05
+  '2010':
+    Nonmetallic mineral:
+      count: 336
+      total: 586772
+      percent: 0.06
+    Extractives:
+      count: 336
+      total: 586772
+      percent: 0.06
+  '2011':
+    Nonmetallic mineral:
+      count: 329
+      total: 593668
+      percent: 0.06
+    Extractives:
+      count: 329
+      total: 593668
+      percent: 0.06
+    Wind:
+      count: 23
+      total: 593668
+      percent: 0
+    Renewables:
+      count: 23
+      total: 593668
+      percent: 0
+  '2012':
+    Nonmetallic mineral:
+      count: 295
+      total: 605240
+      percent: 0.05
+    Extractives:
+      count: 295
+      total: 605240
+      percent: 0.05
+    Renewables:
+      count: 64
+      total: 605240
+      percent: 0.01
+    Solar:
+      count: 36
+      total: 605240
+      percent: 0.01
+    Wind:
+      count: 28
+      total: 605240
+      percent: 0
+  '2013':
+    Nonmetallic mineral:
+      count: 252
+      total: 618195
+      percent: 0.04
+    Extractives:
+      count: 252
+      total: 618195
+      percent: 0.04
+    Renewables:
+      count: 134
+      total: 618195
+      percent: 0.02
+    Solar:
+      count: 95
+      total: 618195
+      percent: 0.02
+    Wind:
+      count: 39
+      total: 618195
+      percent: 0.01
+  '2014':
+    Nonmetallic mineral:
+      count: 249
+      total: 626146
+      percent: 0.04
+    Extractives:
+      count: 249
+      total: 626146
+      percent: 0.04
+    Renewables:
+      count: 136
+      total: 626146
+      percent: 0.02
+    Solar:
+      count: 92
+      total: 626146
+      percent: 0.01
+    Wind:
+      count: 44
+      total: 626146
+      percent: 0.01
+  '2015':
+    Nonmetallic mineral:
+      count: 275
+      total: 637854
+      percent: 0.04
+    Extractives:
+      count: 275
+      total: 637854
+      percent: 0.04
+    Renewables:
+      count: 140
+      total: 637854
+      percent: 0.02
+    Solar:
+      count: 97
+      total: 637854
+      percent: 0.02
+    Wind:
+      count: 43
+      total: 637854
+      percent: 0.01
+IA:
+  '2006':
+    Nonmetallic mineral:
+      count: 2125
+      total: 1470742
+      percent: 0.14
+    Extractives:
+      count: 2125
+      total: 1470742
+      percent: 0.14
+  '2007':
+    Nonmetallic mineral:
+      count: 2100
+      total: 1485627
+      percent: 0.14
+    Extractives:
+      count: 2100
+      total: 1485627
+      percent: 0.14
+  '2008':
+    Nonmetallic mineral:
+      count: 2095
+      total: 1490575
+      percent: 0.14
+    Extractives:
+      count: 2095
+      total: 1490575
+      percent: 0.14
+  '2009':
+    Nonmetallic mineral:
+      count: 2147
+      total: 1445627
+      percent: 0.15
+    Extractives:
+      count: 2147
+      total: 1445627
+      percent: 0.15
+  '2010':
+    Nonmetallic mineral:
+      count: 2099
+      total: 1436340
+      percent: 0.15
+    Extractives:
+      count: 2099
+      total: 1436340
+      percent: 0.15
+  '2011':
+    Nonmetallic mineral:
+      count: 2145
+      total: 1452769
+      percent: 0.15
+    Extractives:
+      count: 2145
+      total: 1452769
+      percent: 0.15
+    Wind:
+      count: 135
+      total: 1452769
+      percent: 0.01
+    Renewables:
+      count: 135
+      total: 1452769
+      percent: 0.01
+  '2012':
+    Nonmetallic mineral:
+      count: 2171
+      total: 1475884
+      percent: 0.15
+    Extractives:
+      count: 2171
+      total: 1475884
+      percent: 0.15
+    Wind:
+      count: 139
+      total: 1475884
+      percent: 0.01
+    Renewables:
+      count: 139
+      total: 1475884
+      percent: 0.01
+  '2013':
+    Nonmetallic mineral:
+      count: 2193
+      total: 1496426
+      percent: 0.15
+    Extractives:
+      count: 2193
+      total: 1496426
+      percent: 0.15
+    Wind:
+      count: 132
+      total: 1496426
+      percent: 0.01
+    Renewables:
+      count: 132
+      total: 1496426
+      percent: 0.01
+  '2014':
+    Nonmetallic mineral:
+      count: 2127
+      total: 1515822
+      percent: 0.14
+    Extractives:
+      count: 2127
+      total: 1515822
+      percent: 0.14
+    Wind:
+      count: 149
+      total: 1515822
+      percent: 0.01
+    Renewables:
+      count: 149
+      total: 1515822
+      percent: 0.01
+  '2015':
+    Nonmetallic mineral:
+      count: 2163
+      total: 1530234
+      percent: 0.14
+    Extractives:
+      count: 2163
+      total: 1530234
+      percent: 0.14
+    Wind:
+      count: 162
+      total: 1530234
+      percent: 0.01
+    Renewables:
+      count: 162
+      total: 1530234
+      percent: 0.01
+ID:
+  '2006':
+    Extractives:
+      count: 1431
+      total: 643671
+      percent: 0.22
+    Nonmetallic mineral:
+      count: 1413
+      total: 643671
+      percent: 0.22
+    Gold:
+      count: 56
+      total: 643671
+      percent: 0.01
+    Oil & Gas:
+      count: 18
+      total: 643671
+      percent: 0
+  '2007':
+    Extractives:
+      count: 2444
+      total: 660683
+      percent: 0.37
+    Nonmetallic mineral:
+      count: 1452
+      total: 660683
+      percent: 0.22
+    Metal ore mining:
+      count: 973
+      total: 660683
+      percent: 0.15
+    Gold:
+      count: 46
+      total: 660683
+      percent: 0.01
+    Oil & Gas:
+      count: 19
+      total: 660683
+      percent: 0
+  '2008':
+    Extractives:
+      count: 2478
+      total: 653108
+      percent: 0.38
+    Nonmetallic mineral:
+      count: 1264
+      total: 653108
+      percent: 0.19
+    Metal ore mining:
+      count: 1214
+      total: 653108
+      percent: 0.19
+    Gold:
+      count: 60
+      total: 653108
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 1998
+      total: 613814
+      percent: 0.33
+    Nonmetallic mineral:
+      count: 1011
+      total: 613814
+      percent: 0.16
+    Metal ore mining:
+      count: 962
+      total: 613814
+      percent: 0.16
+    Gold:
+      count: 40
+      total: 613814
+      percent: 0.01
+    Oil & Gas:
+      count: 25
+      total: 613814
+      percent: 0
+  '2010':
+    Extractives:
+      count: 2014
+      total: 605571
+      percent: 0.33
+    Metal ore mining:
+      count: 1021
+      total: 605571
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 965
+      total: 605571
+      percent: 0.16
+    Gold:
+      count: 54
+      total: 605571
+      percent: 0.01
+    Oil & Gas:
+      count: 28
+      total: 605571
+      percent: 0
+  '2011':
+    Extractives:
+      count: 2228
+      total: 607504
+      percent: 0.37
+    Metal ore mining:
+      count: 1170
+      total: 607504
+      percent: 0.19
+    Nonmetallic mineral:
+      count: 1027
+      total: 607504
+      percent: 0.17
+    Gold:
+      count: 83
+      total: 607504
+      percent: 0.01
+    Oil & Gas:
+      count: 31
+      total: 607504
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 2295
+      total: 614463
+      percent: 0.37
+    Metal ore mining:
+      count: 1203
+      total: 614463
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 1053
+      total: 614463
+      percent: 0.17
+    Gold:
+      count: 61
+      total: 614463
+      percent: 0.01
+    Oil & Gas:
+      count: 39
+      total: 614463
+      percent: 0.01
+  '2013':
+    Extractives:
+      count: 2229
+      total: 630328
+      percent: 0.35
+    Nonmetallic mineral:
+      count: 1100
+      total: 630328
+      percent: 0.17
+    Metal ore mining:
+      count: 1096
+      total: 630328
+      percent: 0.17
+    Gold:
+      count: 63
+      total: 630328
+      percent: 0.01
+    Oil & Gas:
+      count: 33
+      total: 630328
+      percent: 0.01
+    Wind:
+      count: 25
+      total: 630328
+      percent: 0
+    Renewables:
+      count: 25
+      total: 630328
+      percent: 0
+  '2014':
+    Extractives:
+      count: 2076
+      total: 646305
+      percent: 0.32
+    Nonmetallic mineral:
+      count: 1066
+      total: 646305
+      percent: 0.16
+    Metal ore mining:
+      count: 973
+      total: 646305
+      percent: 0.15
+    Gold:
+      count: 48
+      total: 646305
+      percent: 0.01
+    Oil & Gas:
+      count: 37
+      total: 646305
+      percent: 0.01
+    Wind:
+      count: 33
+      total: 646305
+      percent: 0.01
+    Renewables:
+      count: 33
+      total: 646305
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 1944
+      total: 664792
+      percent: 0.29
+    Nonmetallic mineral:
+      count: 1127
+      total: 664792
+      percent: 0.17
+    Metal ore mining:
+      count: 768
+      total: 664792
+      percent: 0.12
+    Oil & Gas:
+      count: 49
+      total: 664792
+      percent: 0.01
+    Wind:
+      count: 32
+      total: 664792
+      percent: 0
+    Renewables:
+      count: 32
+      total: 664792
+      percent: 0
+    Gold:
+      count: 21
+      total: 664792
+      percent: 0
+IL:
+  '2006':
+    Oil & Gas:
+      count: 789
+      total: 5821022
+      percent: 0.01
+    Extractives:
+      count: 789
+      total: 5821022
+      percent: 0.01
+  '2007':
+    Extractives:
+      count: 4589
+      total: 5869157
+      percent: 0.08
+    Coal:
+      count: 3773
+      total: 5869157
+      percent: 0.06
+    Oil & Gas:
+      count: 816
+      total: 5869157
+      percent: 0.01
+  '2008':
+    Extractives:
+      count: 4294
+      total: 5841692
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 3419
+      total: 5841692
+      percent: 0.06
+    Oil & Gas:
+      count: 875
+      total: 5841692
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 4337
+      total: 5551930
+      percent: 0.08
+    Coal:
+      count: 3492
+      total: 5551930
+      percent: 0.06
+    Oil & Gas:
+      count: 845
+      total: 5551930
+      percent: 0.02
+  '2010':
+    Extractives:
+      count: 4288
+      total: 5502322
+      percent: 0.08
+    Coal:
+      count: 3424
+      total: 5502322
+      percent: 0.06
+    Oil & Gas:
+      count: 864
+      total: 5502322
+      percent: 0.02
+  '2011':
+    Extractives:
+      count: 4657
+      total: 5566648
+      percent: 0.08
+    Coal:
+      count: 3752
+      total: 5566648
+      percent: 0.07
+    Oil & Gas:
+      count: 905
+      total: 5566648
+      percent: 0.02
+    Wind:
+      count: 382
+      total: 5566648
+      percent: 0.01
+    Renewables:
+      count: 382
+      total: 5566648
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 4979
+      total: 5636918
+      percent: 0.09
+    Coal:
+      count: 4005
+      total: 5636918
+      percent: 0.07
+    Oil & Gas:
+      count: 974
+      total: 5636918
+      percent: 0.02
+    Wind:
+      count: 401
+      total: 5636918
+      percent: 0.01
+    Renewables:
+      count: 401
+      total: 5636918
+      percent: 0.01
+  '2013':
+    Extractives:
+      count: 4843
+      total: 5687541
+      percent: 0.09
+    Coal:
+      count: 3664
+      total: 5687541
+      percent: 0.06
+    Oil & Gas:
+      count: 1179
+      total: 5687541
+      percent: 0.02
+    Wind:
+      count: 333
+      total: 5687541
+      percent: 0.01
+    Renewables:
+      count: 333
+      total: 5687541
+      percent: 0.01
+  '2014':
+    Extractives:
+      count: 4903
+      total: 5762156
+      percent: 0.09
+    Coal:
+      count: 3679
+      total: 5762156
+      percent: 0.06
+    Oil & Gas:
+      count: 1224
+      total: 5762156
+      percent: 0.02
+    Wind:
+      count: 350
+      total: 5762156
+      percent: 0.01
+    Renewables:
+      count: 350
+      total: 5762156
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 4440
+      total: 5848451
+      percent: 0.08
+    Coal:
+      count: 3366
+      total: 5848451
+      percent: 0.06
+    Oil & Gas:
+      count: 1074
+      total: 5848451
+      percent: 0.02
+    Renewables:
+      count: 384
+      total: 5848451
+      percent: 0.01
+    Wind:
+      count: 365
+      total: 5848451
+      percent: 0.01
+    Solar:
+      count: 19
+      total: 5848451
+      percent: 0
+IN:
+  '2006':
+    Extractives:
+      count: 6419
+      total: 2892419
+      percent: 0.22
+    Nonmetallic mineral:
+      count: 3467
+      total: 2892419
+      percent: 0.12
+    Coal:
+      count: 2823
+      total: 2892419
+      percent: 0.1
+    Oil & Gas:
+      count: 129
+      total: 2892419
+      percent: 0
+  '2007':
+    Extractives:
+      count: 6459
+      total: 2905725
+      percent: 0.22
+    Nonmetallic mineral:
+      count: 3423
+      total: 2905725
+      percent: 0.12
+    Coal:
+      count: 2890
+      total: 2905725
+      percent: 0.1
+    Oil & Gas:
+      count: 146
+      total: 2905725
+      percent: 0.01
+  '2008':
+    Extractives:
+      count: 6145
+      total: 2872442
+      percent: 0.21
+    Nonmetallic mineral:
+      count: 3049
+      total: 2872442
+      percent: 0.11
+    Coal:
+      count: 2952
+      total: 2872442
+      percent: 0.1
+    Oil & Gas:
+      count: 144
+      total: 2872442
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 6064
+      total: 2705331
+      percent: 0.22
+    Coal:
+      count: 3154
+      total: 2705331
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 2769
+      total: 2705331
+      percent: 0.1
+    Oil & Gas:
+      count: 141
+      total: 2705331
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 6016
+      total: 2709831
+      percent: 0.22
+    Coal:
+      count: 3093
+      total: 2709831
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 2734
+      total: 2709831
+      percent: 0.1
+    Oil & Gas:
+      count: 189
+      total: 2709831
+      percent: 0.01
+  '2011':
+    Extractives:
+      count: 6282
+      total: 2755826
+      percent: 0.23
+    Coal:
+      count: 3423
+      total: 2755826
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 2662
+      total: 2755826
+      percent: 0.1
+    Oil & Gas:
+      count: 197
+      total: 2755826
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 6302
+      total: 2812347
+      percent: 0.22
+    Coal:
+      count: 3585
+      total: 2812347
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 2496
+      total: 2812347
+      percent: 0.09
+    Oil & Gas:
+      count: 221
+      total: 2812347
+      percent: 0.01
+    Wind:
+      count: 44
+      total: 2812347
+      percent: 0
+    Renewables:
+      count: 44
+      total: 2812347
+      percent: 0
+  '2013':
+    Extractives:
+      count: 3757
+      total: 2849311
+      percent: 0.13
+    Coal:
+      count: 3531
+      total: 2849311
+      percent: 0.12
+    Oil & Gas:
+      count: 226
+      total: 2849311
+      percent: 0.01
+    Wind:
+      count: 50
+      total: 2849311
+      percent: 0
+    Renewables:
+      count: 50
+      total: 2849311
+      percent: 0
+  '2014':
+    Extractives:
+      count: 3873
+      total: 2890758
+      percent: 0.13
+    Coal:
+      count: 3618
+      total: 2890758
+      percent: 0.13
+    Oil & Gas:
+      count: 255
+      total: 2890758
+      percent: 0.01
+    Wind:
+      count: 56
+      total: 2890758
+      percent: 0
+    Renewables:
+      count: 56
+      total: 2890758
+      percent: 0
+  '2015':
+    Extractives:
+      count: 3527
+      total: 2941991
+      percent: 0.12
+    Coal:
+      count: 3291
+      total: 2941991
+      percent: 0.11
+    Oil & Gas:
+      count: 236
+      total: 2941991
+      percent: 0.01
+    Wind:
+      count: 59
+      total: 2941991
+      percent: 0
+    Renewables:
+      count: 59
+      total: 2941991
+      percent: 0
+KS:
+  '2006':
+    Extractives:
+      count: 3507
+      total: 1327677
+      percent: 0.26
+    Oil & Gas:
+      count: 2298
+      total: 1327677
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 1126
+      total: 1327677
+      percent: 0.08
+    Coal:
+      count: 83
+      total: 1327677
+      percent: 0.01
+  '2007':
+    Extractives:
+      count: 3653
+      total: 1356966
+      percent: 0.27
+    Oil & Gas:
+      count: 2470
+      total: 1356966
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1094
+      total: 1356966
+      percent: 0.08
+    Coal:
+      count: 89
+      total: 1356966
+      percent: 0.01
+  '2008':
+    Extractives:
+      count: 3955
+      total: 1366878
+      percent: 0.29
+    Oil & Gas:
+      count: 2756
+      total: 1366878
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 1128
+      total: 1366878
+      percent: 0.08
+    Coal:
+      count: 71
+      total: 1366878
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 3510
+      total: 1317029
+      percent: 0.27
+    Oil & Gas:
+      count: 2435
+      total: 1317029
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1011
+      total: 1317029
+      percent: 0.08
+    Coal:
+      count: 64
+      total: 1317029
+      percent: 0
+  '2010':
+    Extractives:
+      count: 3450
+      total: 1297779
+      percent: 0.27
+    Oil & Gas:
+      count: 2303
+      total: 1297779
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1077
+      total: 1297779
+      percent: 0.08
+    Coal:
+      count: 70
+      total: 1297779
+      percent: 0.01
+  '2011':
+    Extractives:
+      count: 3610
+      total: 1303799
+      percent: 0.28
+    Oil & Gas:
+      count: 2352
+      total: 1303799
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1212
+      total: 1303799
+      percent: 0.09
+    Coal:
+      count: 46
+      total: 1303799
+      percent: 0
+    Wind:
+      count: 35
+      total: 1303799
+      percent: 0
+    Renewables:
+      count: 35
+      total: 1303799
+      percent: 0
+  '2012':
+    Extractives:
+      count: 3885
+      total: 1320285
+      percent: 0.29
+    Oil & Gas:
+      count: 2611
+      total: 1320285
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 1230
+      total: 1320285
+      percent: 0.09
+    Coal:
+      count: 44
+      total: 1320285
+      percent: 0
+    Wind:
+      count: 34
+      total: 1320285
+      percent: 0
+    Renewables:
+      count: 34
+      total: 1320285
+      percent: 0
+  '2013':
+    Extractives:
+      count: 3909
+      total: 1336948
+      percent: 0.29
+    Oil & Gas:
+      count: 2558
+      total: 1336948
+      percent: 0.19
+    Nonmetallic mineral:
+      count: 1308
+      total: 1336948
+      percent: 0.1
+    Wind:
+      count: 46
+      total: 1336948
+      percent: 0
+    Renewables:
+      count: 46
+      total: 1336948
+      percent: 0
+    Coal:
+      count: 43
+      total: 1336948
+      percent: 0
+  '2014':
+    Extractives:
+      count: 3904
+      total: 1357090
+      percent: 0.29
+    Oil & Gas:
+      count: 2583
+      total: 1357090
+      percent: 0.19
+    Nonmetallic mineral:
+      count: 1278
+      total: 1357090
+      percent: 0.09
+    Coal:
+      count: 43
+      total: 1357090
+      percent: 0
+    Wind:
+      count: 43
+      total: 1357090
+      percent: 0
+    Renewables:
+      count: 43
+      total: 1357090
+      percent: 0
+  '2015':
+    Extractives:
+      count: 3977
+      total: 1367329
+      percent: 0.29
+    Oil & Gas:
+      count: 2486
+      total: 1367329
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 1445
+      total: 1367329
+      percent: 0.11
+    Wind:
+      count: 67
+      total: 1367329
+      percent: 0
+    Renewables:
+      count: 67
+      total: 1367329
+      percent: 0
+    Coal:
+      count: 46
+      total: 1367329
+      percent: 0
+KY:
+  '2006':
+    Extractives:
+      count: 19991
+      total: 1779202
+      percent: 1.12
+    Coal:
+      count: 16444
+      total: 1779202
+      percent: 0.92
+    Nonmetallic mineral:
+      count: 2543
+      total: 1779202
+      percent: 0.14
+    Oil & Gas:
+      count: 1004
+      total: 1779202
+      percent: 0.06
+  '2007':
+    Extractives:
+      count: 18925
+      total: 1801907
+      percent: 1.05
+    Coal:
+      count: 15391
+      total: 1801907
+      percent: 0.85
+    Nonmetallic mineral:
+      count: 2521
+      total: 1801907
+      percent: 0.14
+    Oil & Gas:
+      count: 1013
+      total: 1801907
+      percent: 0.06
+  '2008':
+    Extractives:
+      count: 20386
+      total: 1791017
+      percent: 1.14
+    Coal:
+      count: 16864
+      total: 1791017
+      percent: 0.94
+    Nonmetallic mineral:
+      count: 2430
+      total: 1791017
+      percent: 0.14
+    Oil & Gas:
+      count: 1092
+      total: 1791017
+      percent: 0.06
+  '2009':
+    Extractives:
+      count: 20330
+      total: 1710677
+      percent: 1.19
+    Coal:
+      count: 17170
+      total: 1710677
+      percent: 1
+    Nonmetallic mineral:
+      count: 2160
+      total: 1710677
+      percent: 0.13
+    Oil & Gas:
+      count: 1000
+      total: 1710677
+      percent: 0.06
+  '2010':
+    Extractives:
+      count: 18942
+      total: 1712178
+      percent: 1.11
+    Coal:
+      count: 15990
+      total: 1712178
+      percent: 0.93
+    Nonmetallic mineral:
+      count: 2069
+      total: 1712178
+      percent: 0.12
+    Oil & Gas:
+      count: 883
+      total: 1712178
+      percent: 0.05
+  '2011':
+    Extractives:
+      count: 19543
+      total: 1734503
+      percent: 1.13
+    Coal:
+      count: 16590
+      total: 1734503
+      percent: 0.96
+    Nonmetallic mineral:
+      count: 2080
+      total: 1734503
+      percent: 0.12
+    Oil & Gas:
+      count: 873
+      total: 1734503
+      percent: 0.05
+  '2012':
+    Extractives:
+      count: 17367
+      total: 1761043
+      percent: 0.99
+    Coal:
+      count: 14586
+      total: 1761043
+      percent: 0.83
+    Nonmetallic mineral:
+      count: 1997
+      total: 1761043
+      percent: 0.11
+    Oil & Gas:
+      count: 784
+      total: 1761043
+      percent: 0.04
+  '2013':
+    Extractives:
+      count: 14393
+      total: 1779777
+      percent: 0.81
+    Coal:
+      count: 11676
+      total: 1779777
+      percent: 0.66
+    Nonmetallic mineral:
+      count: 1973
+      total: 1779777
+      percent: 0.11
+    Oil & Gas:
+      count: 744
+      total: 1779777
+      percent: 0.04
+  '2014':
+    Extractives:
+      count: 13247
+      total: 1807068
+      percent: 0.73
+    Coal:
+      count: 10544
+      total: 1807068
+      percent: 0.58
+    Nonmetallic mineral:
+      count: 1984
+      total: 1807068
+      percent: 0.11
+    Oil & Gas:
+      count: 719
+      total: 1807068
+      percent: 0.04
+  '2015':
+    Extractives:
+      count: 11226
+      total: 1835550
+      percent: 0.61
+    Coal:
+      count: 8513
+      total: 1835550
+      percent: 0.46
+    Nonmetallic mineral:
+      count: 2027
+      total: 1835550
+      percent: 0.11
+    Oil & Gas:
+      count: 686
+      total: 1835550
+      percent: 0.04
+LA:
+  '2006':
+    Extractives:
+      count: 8504
+      total: 1807563
+      percent: 0.47
+    Oil & Gas:
+      count: 7468
+      total: 1807563
+      percent: 0.41
+    Nonmetallic mineral:
+      count: 1036
+      total: 1807563
+      percent: 0.06
+  '2007':
+    Extractives:
+      count: 8766
+      total: 1868986
+      percent: 0.47
+    Oil & Gas:
+      count: 7785
+      total: 1868986
+      percent: 0.42
+    Nonmetallic mineral:
+      count: 981
+      total: 1868986
+      percent: 0.05
+  '2008':
+    Extractives:
+      count: 9735
+      total: 1890007
+      percent: 0.52
+    Oil & Gas:
+      count: 8756
+      total: 1890007
+      percent: 0.46
+    Nonmetallic mineral:
+      count: 979
+      total: 1890007
+      percent: 0.05
+  '2009':
+    Extractives:
+      count: 9792
+      total: 1849303
+      percent: 0.53
+    Oil & Gas:
+      count: 8871
+      total: 1849303
+      percent: 0.48
+    Nonmetallic mineral:
+      count: 921
+      total: 1849303
+      percent: 0.05
+  '2010':
+    Extractives:
+      count: 9391
+      total: 1832357
+      percent: 0.51
+    Oil & Gas:
+      count: 8533
+      total: 1832357
+      percent: 0.47
+    Nonmetallic mineral:
+      count: 858
+      total: 1832357
+      percent: 0.05
+  '2011':
+    Extractives:
+      count: 9452
+      total: 1848399
+      percent: 0.51
+    Oil & Gas:
+      count: 8504
+      total: 1848399
+      percent: 0.46
+    Nonmetallic mineral:
+      count: 948
+      total: 1848399
+      percent: 0.05
+  '2012':
+    Extractives:
+      count: 10740
+      total: 1871037
+      percent: 0.57
+    Oil & Gas:
+      count: 9802
+      total: 1871037
+      percent: 0.52
+    Nonmetallic mineral:
+      count: 938
+      total: 1871037
+      percent: 0.05
+  '2013':
+    Extractives:
+      count: 10782
+      total: 1893823
+      percent: 0.57
+    Oil & Gas:
+      count: 9820
+      total: 1893823
+      percent: 0.52
+    Nonmetallic mineral:
+      count: 962
+      total: 1893823
+      percent: 0.05
+  '2014':
+    Extractives:
+      count: 10482
+      total: 1923745
+      percent: 0.54
+    Oil & Gas:
+      count: 9424
+      total: 1923745
+      percent: 0.49
+    Nonmetallic mineral:
+      count: 1058
+      total: 1923745
+      percent: 0.05
+  '2015':
+    Extractives:
+      count: 10204
+      total: 1930688
+      percent: 0.53
+    Oil & Gas:
+      count: 9129
+      total: 1930688
+      percent: 0.47
+    Nonmetallic mineral:
+      count: 1075
+      total: 1930688
+      percent: 0.06
+MA:
+  '2007':
+    Nonmetallic mineral:
+      count: 1443
+      total: 3234357
+      percent: 0.04
+    Extractives:
+      count: 1443
+      total: 3234357
+      percent: 0.04
+  '2008':
+    Nonmetallic mineral:
+      count: 1213
+      total: 3245983
+      percent: 0.04
+    Extractives:
+      count: 1213
+      total: 3245983
+      percent: 0.04
+  '2009':
+    Nonmetallic mineral:
+      count: 1155
+      total: 3135497
+      percent: 0.04
+    Extractives:
+      count: 1155
+      total: 3135497
+      percent: 0.04
+  '2010':
+    Nonmetallic mineral:
+      count: 970
+      total: 3149169
+      percent: 0.03
+    Extractives:
+      count: 970
+      total: 3149169
+      percent: 0.03
+  '2011':
+    Extractives:
+      count: 928
+      total: 3189753
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 918
+      total: 3189753
+      percent: 0.03
+    Oil & Gas:
+      count: 10
+      total: 3189753
+      percent: 0
+    Wind:
+      count: 3
+      total: 3189753
+      percent: 0
+    Renewables:
+      count: 3
+      total: 3189753
+      percent: 0
+  '2012':
+    Extractives:
+      count: 790
+      total: 3242273
+      percent: 0.02
+    Nonmetallic mineral:
+      count: 779
+      total: 3242273
+      percent: 0.02
+    Oil & Gas:
+      count: 11
+      total: 3242273
+      percent: 0
+    Wind:
+      count: 7
+      total: 3242273
+      percent: 0
+    Renewables:
+      count: 7
+      total: 3242273
+      percent: 0
+  '2013':
+    Extractives:
+      count: 770
+      total: 3295647
+      percent: 0.02
+    Nonmetallic mineral:
+      count: 760
+      total: 3295647
+      percent: 0.02
+    Renewables:
+      count: 12
+      total: 3295647
+      percent: 0
+    Oil & Gas:
+      count: 10
+      total: 3295647
+      percent: 0
+    Wind:
+      count: 7
+      total: 3295647
+      percent: 0
+    Solar:
+      count: 5
+      total: 3295647
+      percent: 0
+  '2014':
+    Extractives:
+      count: 805
+      total: 3360035
+      percent: 0.02
+    Nonmetallic mineral:
+      count: 793
+      total: 3360035
+      percent: 0.02
+    Renewables:
+      count: 16
+      total: 3360035
+      percent: 0
+    Oil & Gas:
+      count: 12
+      total: 3360035
+      percent: 0
+    Solar:
+      count: 8
+      total: 3360035
+      percent: 0
+    Wind:
+      count: 8
+      total: 3360035
+      percent: 0
+  '2015':
+    Extractives:
+      count: 851
+      total: 3428020
+      percent: 0.02
+    Nonmetallic mineral:
+      count: 842
+      total: 3428020
+      percent: 0.02
+    Renewables:
+      count: 64
+      total: 3428020
+      percent: 0
+    Solar:
+      count: 55
+      total: 3428020
+      percent: 0
+    Oil & Gas:
+      count: 9
+      total: 3428020
+      percent: 0
+    Wind:
+      count: 9
+      total: 3428020
+      percent: 0
+MD:
+  '2006':
+    Extractives:
+      count: 1358
+      total: 2530011
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 1107
+      total: 2530011
+      percent: 0.04
+    Coal:
+      count: 248
+      total: 2530011
+      percent: 0.01
+    Oil & Gas:
+      count: 3
+      total: 2530011
+      percent: 0
+  '2007':
+    Extractives:
+      count: 1221
+      total: 2547351
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 1072
+      total: 2547351
+      percent: 0.04
+    Coal:
+      count: 146
+      total: 2547351
+      percent: 0.01
+    Oil & Gas:
+      count: 3
+      total: 2547351
+      percent: 0
+  '2008':
+    Extractives:
+      count: 1040
+      total: 2537752
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 1037
+      total: 2537752
+      percent: 0.04
+    Oil & Gas:
+      count: 3
+      total: 2537752
+      percent: 0
+  '2009':
+    Extractives:
+      count: 1045
+      total: 2461109
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 913
+      total: 2461109
+      percent: 0.04
+    Coal:
+      count: 132
+      total: 2461109
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 980
+      total: 2453197
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 847
+      total: 2453197
+      percent: 0.03
+    Coal:
+      count: 133
+      total: 2453197
+      percent: 0.01
+  '2011':
+    Extractives:
+      count: 875
+      total: 2478505
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 742
+      total: 2478505
+      percent: 0.03
+    Coal:
+      count: 133
+      total: 2478505
+      percent: 0.01
+    Solar:
+      count: 5
+      total: 2478505
+      percent: 0
+    Renewables:
+      count: 5
+      total: 2478505
+      percent: 0
+  '2012':
+    Extractives:
+      count: 845
+      total: 2511669
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 737
+      total: 2511669
+      percent: 0.03
+    Coal:
+      count: 108
+      total: 2511669
+      percent: 0
+    Solar:
+      count: 10
+      total: 2511669
+      percent: 0
+    Renewables:
+      count: 10
+      total: 2511669
+      percent: 0
+  '2013':
+    Extractives:
+      count: 713
+      total: 2531656
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 614
+      total: 2531656
+      percent: 0.02
+    Coal:
+      count: 93
+      total: 2531656
+      percent: 0
+    Solar:
+      count: 9
+      total: 2531656
+      percent: 0
+    Renewables:
+      count: 9
+      total: 2531656
+      percent: 0
+    Oil & Gas:
+      count: 6
+      total: 2531656
+      percent: 0
+  '2014':
+    Extractives:
+      count: 668
+      total: 2552623
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 580
+      total: 2552623
+      percent: 0.02
+    Coal:
+      count: 88
+      total: 2552623
+      percent: 0
+    Solar:
+      count: 12
+      total: 2552623
+      percent: 0
+    Renewables:
+      count: 12
+      total: 2552623
+      percent: 0
+  '2015':
+    Extractives:
+      count: 680
+      total: 2591189
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 591
+      total: 2591189
+      percent: 0.02
+    Coal:
+      count: 89
+      total: 2591189
+      percent: 0
+    Solar:
+      count: 22
+      total: 2591189
+      percent: 0
+    Renewables:
+      count: 22
+      total: 2591189
+      percent: 0
+ME:
+  '2007':
+    Nonmetallic mineral:
+      count: 105
+      total: 602321
+      percent: 0.02
+    Extractives:
+      count: 105
+      total: 602321
+      percent: 0.02
+  '2008':
+    Nonmetallic mineral:
+      count: 99
+      total: 602074
+      percent: 0.02
+    Extractives:
+      count: 99
+      total: 602074
+      percent: 0.02
+  '2009':
+    Nonmetallic mineral:
+      count: 93
+      total: 581796
+      percent: 0.02
+    Extractives:
+      count: 93
+      total: 581796
+      percent: 0.02
+  '2012':
+    Nonmetallic mineral:
+      count: 190
+      total: 583196
+      percent: 0.03
+    Extractives:
+      count: 190
+      total: 583196
+      percent: 0.03
+  '2013':
+    Nonmetallic mineral:
+      count: 181
+      total: 586525
+      percent: 0.03
+    Extractives:
+      count: 181
+      total: 586525
+      percent: 0.03
+  '2015':
+    Wind:
+      count: 59
+      total: 595889
+      percent: 0.01
+    Renewables:
+      count: 59
+      total: 595889
+      percent: 0.01
+MI:
+  '2006':
+    Oil & Gas:
+      count: 538
+      total: 4235650
+      percent: 0.01
+    Extractives:
+      count: 538
+      total: 4235650
+      percent: 0.01
+  '2007':
+    Oil & Gas:
+      count: 540
+      total: 4179122
+      percent: 0.01
+    Extractives:
+      count: 540
+      total: 4179122
+      percent: 0.01
+  '2008':
+    Oil & Gas:
+      count: 540
+      total: 4070914
+      percent: 0.01
+    Extractives:
+      count: 540
+      total: 4070914
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 2506
+      total: 3775435
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1965
+      total: 3775435
+      percent: 0.05
+    Iron:
+      count: 1323
+      total: 3775435
+      percent: 0.04
+    Oil & Gas:
+      count: 541
+      total: 3775435
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 2553
+      total: 3770225
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1948
+      total: 3770225
+      percent: 0.05
+    Iron:
+      count: 1460
+      total: 3770225
+      percent: 0.04
+    Oil & Gas:
+      count: 605
+      total: 3770225
+      percent: 0.02
+  '2011':
+    Extractives:
+      count: 2534
+      total: 3854837
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1960
+      total: 3854837
+      percent: 0.05
+    Iron:
+      count: 1611
+      total: 3854837
+      percent: 0.04
+    Oil & Gas:
+      count: 574
+      total: 3854837
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 2640
+      total: 3935694
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 2050
+      total: 3935694
+      percent: 0.05
+    Iron:
+      count: 1500
+      total: 3935694
+      percent: 0.04
+    Oil & Gas:
+      count: 590
+      total: 3935694
+      percent: 0.01
+  '2013':
+    Extractives:
+      count: 2789
+      total: 4018602
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 2162
+      total: 4018602
+      percent: 0.05
+    Oil & Gas:
+      count: 627
+      total: 4018602
+      percent: 0.02
+  '2014':
+    Extractives:
+      count: 4403
+      total: 4090009
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 2244
+      total: 4090009
+      percent: 0.05
+    Metal ore mining:
+      count: 1510
+      total: 4090009
+      percent: 0.04
+    Oil & Gas:
+      count: 649
+      total: 4090009
+      percent: 0.02
+    Wind:
+      count: 16
+      total: 4090009
+      percent: 0
+    Renewables:
+      count: 16
+      total: 4090009
+      percent: 0
+  '2015':
+    Extractives:
+      count: 4180
+      total: 4161641
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2256
+      total: 4161641
+      percent: 0.05
+    Metal ore mining:
+      count: 1360
+      total: 4161641
+      percent: 0.03
+    Oil & Gas:
+      count: 564
+      total: 4161641
+      percent: 0.01
+MN:
+  '2006':
+    Extractives:
+      count: 5110
+      total: 2670222
+      percent: 0.19
+    Metal ore mining:
+      count: 3490
+      total: 2670222
+      percent: 0.13
+    Iron:
+      count: 3490
+      total: 2670222
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 1620
+      total: 2670222
+      percent: 0.06
+  '2007':
+    Extractives:
+      count: 5157
+      total: 2687482
+      percent: 0.19
+    Metal ore mining:
+      count: 3599
+      total: 2687482
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 1551
+      total: 2687482
+      percent: 0.06
+    Oil & Gas:
+      count: 7
+      total: 2687482
+      percent: 0
+  '2008':
+    Extractives:
+      count: 3774
+      total: 2679527
+      percent: 0.14
+    Metal ore mining:
+      count: 3765
+      total: 2679527
+      percent: 0.14
+    Oil & Gas:
+      count: 9
+      total: 2679527
+      percent: 0
+  '2009':
+    Metal ore mining:
+      count: 2957
+      total: 2569651
+      percent: 0.12
+    Extractives:
+      count: 2957
+      total: 2569651
+      percent: 0.12
+  '2010':
+    Metal ore mining:
+      count: 3724
+      total: 2558310
+      percent: 0.15
+    Extractives:
+      count: 3724
+      total: 2558310
+      percent: 0.15
+  '2011':
+    Extractives:
+      count: 5621
+      total: 2602988
+      percent: 0.22
+    Metal ore mining:
+      count: 4115
+      total: 2602988
+      percent: 0.16
+    Iron:
+      count: 4067
+      total: 2602988
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 1482
+      total: 2602988
+      percent: 0.06
+    Wind:
+      count: 174
+      total: 2602988
+      percent: 0.01
+    Renewables:
+      count: 174
+      total: 2602988
+      percent: 0.01
+    Copper:
+      count: 48
+      total: 2602988
+      percent: 0
+    Oil & Gas:
+      count: 24
+      total: 2602988
+      percent: 0
+  '2012':
+    Extractives:
+      count: 6026
+      total: 2644408
+      percent: 0.23
+    Metal ore mining:
+      count: 4405
+      total: 2644408
+      percent: 0.17
+    Iron:
+      count: 4341
+      total: 2644408
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 1588
+      total: 2644408
+      percent: 0.06
+    Wind:
+      count: 180
+      total: 2644408
+      percent: 0.01
+    Renewables:
+      count: 180
+      total: 2644408
+      percent: 0.01
+    Copper:
+      count: 64
+      total: 2644408
+      percent: 0
+    Oil & Gas:
+      count: 33
+      total: 2644408
+      percent: 0
+  '2013':
+    Extractives:
+      count: 6026
+      total: 2691832
+      percent: 0.22
+    Metal ore mining:
+      count: 4383
+      total: 2691832
+      percent: 0.16
+    Iron:
+      count: 4307
+      total: 2691832
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 1609
+      total: 2691832
+      percent: 0.06
+    Wind:
+      count: 189
+      total: 2691832
+      percent: 0.01
+    Renewables:
+      count: 189
+      total: 2691832
+      percent: 0.01
+    Copper:
+      count: 76
+      total: 2691832
+      percent: 0
+    Oil & Gas:
+      count: 34
+      total: 2691832
+      percent: 0
+  '2014':
+    Extractives:
+      count: 6217
+      total: 2730301
+      percent: 0.23
+    Metal ore mining:
+      count: 4500
+      total: 2730301
+      percent: 0.16
+    Iron:
+      count: 4432
+      total: 2730301
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 1675
+      total: 2730301
+      percent: 0.06
+    Wind:
+      count: 164
+      total: 2730301
+      percent: 0.01
+    Renewables:
+      count: 164
+      total: 2730301
+      percent: 0.01
+    Oil & Gas:
+      count: 42
+      total: 2730301
+      percent: 0
+  '2015':
+    Extractives:
+      count: 6047
+      total: 2776684
+      percent: 0.22
+    Metal ore mining:
+      count: 4260
+      total: 2776684
+      percent: 0.15
+    Iron:
+      count: 4205
+      total: 2776684
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 1741
+      total: 2776684
+      percent: 0.06
+    Wind:
+      count: 165
+      total: 2776684
+      percent: 0.01
+    Renewables:
+      count: 165
+      total: 2776684
+      percent: 0.01
+    Oil & Gas:
+      count: 46
+      total: 2776684
+      percent: 0
+MO:
+  '2006':
+    Extractives:
+      count: 3585
+      total: 2699860
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 3572
+      total: 2699860
+      percent: 0.13
+    Oil & Gas:
+      count: 13
+      total: 2699860
+      percent: 0
+  '2007':
+    Extractives:
+      count: 3415
+      total: 2719380
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 3398
+      total: 2719380
+      percent: 0.12
+    Oil & Gas:
+      count: 17
+      total: 2719380
+      percent: 0
+  '2008':
+    Extractives:
+      count: 3223
+      total: 2715183
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 3197
+      total: 2715183
+      percent: 0.12
+    Oil & Gas:
+      count: 26
+      total: 2715183
+      percent: 0
+  '2009':
+    Extractives:
+      count: 3005
+      total: 2607595
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 2983
+      total: 2607595
+      percent: 0.11
+    Oil & Gas:
+      count: 22
+      total: 2607595
+      percent: 0
+  '2010':
+    Extractives:
+      count: 2868
+      total: 2573703
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 2838
+      total: 2573703
+      percent: 0.11
+    Oil & Gas:
+      count: 30
+      total: 2573703
+      percent: 0
+  '2011':
+    Extractives:
+      count: 2694
+      total: 2585009
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2664
+      total: 2585009
+      percent: 0.1
+    Oil & Gas:
+      count: 30
+      total: 2585009
+      percent: 0
+  '2012':
+    Extractives:
+      count: 2591
+      total: 2607420
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2569
+      total: 2607420
+      percent: 0.1
+    Oil & Gas:
+      count: 22
+      total: 2607420
+      percent: 0
+  '2013':
+    Extractives:
+      count: 2545
+      total: 2637273
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2522
+      total: 2637273
+      percent: 0.1
+    Oil & Gas:
+      count: 23
+      total: 2637273
+      percent: 0
+  '2014':
+    Extractives:
+      count: 2561
+      total: 2667996
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2536
+      total: 2667996
+      percent: 0.1
+    Oil & Gas:
+      count: 25
+      total: 2667996
+      percent: 0
+  '2015':
+    Extractives:
+      count: 2702
+      total: 2715579
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 2680
+      total: 2715579
+      percent: 0.1
+    Oil & Gas:
+      count: 22
+      total: 2715579
+      percent: 0
+MS:
+  '2006':
+    Oil & Gas:
+      count: 832
+      total: 1122474
+      percent: 0.07
+    Extractives:
+      count: 832
+      total: 1122474
+      percent: 0.07
+  '2007':
+    Oil & Gas:
+      count: 936
+      total: 1135336
+      percent: 0.08
+    Extractives:
+      count: 936
+      total: 1135336
+      percent: 0.08
+  '2008':
+    Oil & Gas:
+      count: 979
+      total: 1131096
+      percent: 0.09
+    Extractives:
+      count: 979
+      total: 1131096
+      percent: 0.09
+  '2009':
+    Oil & Gas:
+      count: 986
+      total: 1081138
+      percent: 0.09
+    Extractives:
+      count: 986
+      total: 1081138
+      percent: 0.09
+  '2010':
+    Oil & Gas:
+      count: 1005
+      total: 1074617
+      percent: 0.09
+    Extractives:
+      count: 1005
+      total: 1074617
+      percent: 0.09
+  '2011':
+    Oil & Gas:
+      count: 1025
+      total: 1076488
+      percent: 0.1
+    Extractives:
+      count: 1025
+      total: 1076488
+      percent: 0.1
+  '2012':
+    Extractives:
+      count: 1789
+      total: 1085748
+      percent: 0.16
+    Oil & Gas:
+      count: 1043
+      total: 1085748
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 493
+      total: 1085748
+      percent: 0.05
+    Coal:
+      count: 253
+      total: 1085748
+      percent: 0.02
+  '2013':
+    Extractives:
+      count: 1841
+      total: 1093581
+      percent: 0.17
+    Oil & Gas:
+      count: 999
+      total: 1093581
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 538
+      total: 1093581
+      percent: 0.05
+    Coal:
+      count: 304
+      total: 1093581
+      percent: 0.03
+  '2014':
+    Extractives:
+      count: 1824
+      total: 1102603
+      percent: 0.17
+    Oil & Gas:
+      count: 958
+      total: 1102603
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 535
+      total: 1102603
+      percent: 0.05
+    Coal:
+      count: 331
+      total: 1102603
+      percent: 0.03
+  '2015':
+    Extractives:
+      count: 1801
+      total: 1114379
+      percent: 0.16
+    Oil & Gas:
+      count: 928
+      total: 1114379
+      percent: 0.08
+    Nonmetallic mineral:
+      count: 546
+      total: 1114379
+      percent: 0.05
+    Coal:
+      count: 327
+      total: 1114379
+      percent: 0.03
+MT:
+  '2006':
+    Extractives:
+      count: 4759
+      total: 426182
+      percent: 1.12
+    Metal ore mining:
+      count: 2272
+      total: 426182
+      percent: 0.53
+    Nonmetallic mineral:
+      count: 1083
+      total: 426182
+      percent: 0.25
+    Coal:
+      count: 797
+      total: 426182
+      percent: 0.19
+    Oil & Gas:
+      count: 607
+      total: 426182
+      percent: 0.14
+  '2007':
+    Extractives:
+      count: 5129
+      total: 436656
+      percent: 1.17
+    Metal ore mining:
+      count: 2552
+      total: 436656
+      percent: 0.58
+    Nonmetallic mineral:
+      count: 1132
+      total: 436656
+      percent: 0.26
+    Coal:
+      count: 805
+      total: 436656
+      percent: 0.18
+    Oil & Gas:
+      count: 640
+      total: 436656
+      percent: 0.15
+  '2008':
+    Extractives:
+      count: 5116
+      total: 437591
+      percent: 1.17
+    Metal ore mining:
+      count: 2577
+      total: 437591
+      percent: 0.59
+    Nonmetallic mineral:
+      count: 1111
+      total: 437591
+      percent: 0.25
+    Coal:
+      count: 846
+      total: 437591
+      percent: 0.19
+    Oil & Gas:
+      count: 582
+      total: 437591
+      percent: 0.13
+  '2009':
+    Extractives:
+      count: 4645
+      total: 421566
+      percent: 1.1
+    Metal ore mining:
+      count: 2130
+      total: 421566
+      percent: 0.51
+    Nonmetallic mineral:
+      count: 1030
+      total: 421566
+      percent: 0.24
+    Coal:
+      count: 946
+      total: 421566
+      percent: 0.22
+    Oil & Gas:
+      count: 539
+      total: 421566
+      percent: 0.13
+  '2010':
+    Extractives:
+      count: 4885
+      total: 419231
+      percent: 1.17
+    Metal ore mining:
+      count: 2135
+      total: 419231
+      percent: 0.51
+    Nonmetallic mineral:
+      count: 1074
+      total: 419231
+      percent: 0.26
+    Coal:
+      count: 1026
+      total: 419231
+      percent: 0.24
+    Oil & Gas:
+      count: 650
+      total: 419231
+      percent: 0.16
+  '2011':
+    Extractives:
+      count: 5229
+      total: 422726
+      percent: 1.24
+    Metal ore mining:
+      count: 2394
+      total: 422726
+      percent: 0.57
+    Nonmetallic mineral:
+      count: 1108
+      total: 422726
+      percent: 0.26
+    Coal:
+      count: 1064
+      total: 422726
+      percent: 0.25
+    Oil & Gas:
+      count: 663
+      total: 422726
+      percent: 0.16
+  '2012':
+    Extractives:
+      count: 5638
+      total: 430315
+      percent: 1.31
+    Metal ore mining:
+      count: 2562
+      total: 430315
+      percent: 0.6
+    Coal:
+      count: 1153
+      total: 430315
+      percent: 0.27
+    Nonmetallic mineral:
+      count: 1135
+      total: 430315
+      percent: 0.26
+    Oil & Gas:
+      count: 788
+      total: 430315
+      percent: 0.18
+    Wind:
+      count: 12
+      total: 430315
+      percent: 0
+    Renewables:
+      count: 12
+      total: 430315
+      percent: 0
+  '2013':
+    Extractives:
+      count: 5600
+      total: 436867
+      percent: 1.28
+    Metal ore mining:
+      count: 2515
+      total: 436867
+      percent: 0.58
+    Nonmetallic mineral:
+      count: 1209
+      total: 436867
+      percent: 0.28
+    Coal:
+      count: 1116
+      total: 436867
+      percent: 0.26
+    Oil & Gas:
+      count: 760
+      total: 436867
+      percent: 0.17
+    Gold:
+      count: 349
+      total: 436867
+      percent: 0.08
+    Wind:
+      count: 16
+      total: 436867
+      percent: 0
+    Renewables:
+      count: 16
+      total: 436867
+      percent: 0
+  '2014':
+    Extractives:
+      count: 5464
+      total: 440198
+      percent: 1.24
+    Metal ore mining:
+      count: 2329
+      total: 440198
+      percent: 0.53
+    Nonmetallic mineral:
+      count: 1210
+      total: 440198
+      percent: 0.27
+    Coal:
+      count: 1126
+      total: 440198
+      percent: 0.26
+    Oil & Gas:
+      count: 799
+      total: 440198
+      percent: 0.18
+    Gold:
+      count: 249
+      total: 440198
+      percent: 0.06
+  '2015':
+    Extractives:
+      count: 5286
+      total: 448688
+      percent: 1.18
+    Metal ore mining:
+      count: 2114
+      total: 448688
+      percent: 0.47
+    Nonmetallic mineral:
+      count: 1229
+      total: 448688
+      percent: 0.27
+    Coal:
+      count: 1144
+      total: 448688
+      percent: 0.25
+    Oil & Gas:
+      count: 799
+      total: 448688
+      percent: 0.18
+NC:
+  '2008':
+    Nonmetallic mineral:
+      count: 3579
+      total: 4043486
+      percent: 0.09
+    Extractives:
+      count: 3579
+      total: 4043486
+      percent: 0.09
+  '2009':
+    Extractives:
+      count: 3237
+      total: 3823299
+      percent: 0.08
+    Nonmetallic mineral:
+      count: 3222
+      total: 3823299
+      percent: 0.08
+    Oil & Gas:
+      count: 15
+      total: 3823299
+      percent: 0
+  '2010':
+    Extractives:
+      count: 2489
+      total: 3788581
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 2466
+      total: 3788581
+      percent: 0.07
+    Oil & Gas:
+      count: 23
+      total: 3788581
+      percent: 0
+  '2011':
+    Extractives:
+      count: 2406
+      total: 3838300
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 2384
+      total: 3838300
+      percent: 0.06
+    Oil & Gas:
+      count: 22
+      total: 3838300
+      percent: 0
+  '2012':
+    Extractives:
+      count: 2348
+      total: 3907085
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 2311
+      total: 3907085
+      percent: 0.06
+    Oil & Gas:
+      count: 37
+      total: 3907085
+      percent: 0
+  '2013':
+    Extractives:
+      count: 2321
+      total: 3974937
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 2287
+      total: 3974937
+      percent: 0.06
+    Solar:
+      count: 39
+      total: 3974937
+      percent: 0
+    Renewables:
+      count: 39
+      total: 3974937
+      percent: 0
+    Oil & Gas:
+      count: 34
+      total: 3974937
+      percent: 0
+  '2014':
+    Extractives:
+      count: 2254
+      total: 4057439
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 2222
+      total: 4057439
+      percent: 0.05
+    Solar:
+      count: 40
+      total: 4057439
+      percent: 0
+    Renewables:
+      count: 40
+      total: 4057439
+      percent: 0
+    Oil & Gas:
+      count: 32
+      total: 4057439
+      percent: 0
+  '2015':
+    Extractives:
+      count: 2191
+      total: 4161654
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 2162
+      total: 4161654
+      percent: 0.05
+    Solar:
+      count: 51
+      total: 4161654
+      percent: 0
+    Renewables:
+      count: 51
+      total: 4161654
+      percent: 0
+    Oil & Gas:
+      count: 29
+      total: 4161654
+      percent: 0
+ND:
+  '2006':
+    Extractives:
+      count: 1981
+      total: 335718
+      percent: 0.59
+    Coal:
+      count: 943
+      total: 335718
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 611
+      total: 335718
+      percent: 0.18
+    Oil & Gas:
+      count: 427
+      total: 335718
+      percent: 0.13
+  '2007':
+    Extractives:
+      count: 1996
+      total: 341705
+      percent: 0.58
+    Coal:
+      count: 973
+      total: 341705
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 591
+      total: 341705
+      percent: 0.17
+    Oil & Gas:
+      count: 432
+      total: 341705
+      percent: 0.13
+  '2008':
+    Extractives:
+      count: 2143
+      total: 350440
+      percent: 0.61
+    Coal:
+      count: 995
+      total: 350440
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 604
+      total: 350440
+      percent: 0.17
+    Oil & Gas:
+      count: 544
+      total: 350440
+      percent: 0.16
+  '2009':
+    Extractives:
+      count: 2347
+      total: 349560
+      percent: 0.67
+    Coal:
+      count: 1033
+      total: 349560
+      percent: 0.3
+    Oil & Gas:
+      count: 704
+      total: 349560
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 610
+      total: 349560
+      percent: 0.17
+  '2010':
+    Extractives:
+      count: 2542
+      total: 358635
+      percent: 0.71
+    Coal:
+      count: 1068
+      total: 358635
+      percent: 0.3
+    Oil & Gas:
+      count: 844
+      total: 358635
+      percent: 0.24
+    Nonmetallic mineral:
+      count: 630
+      total: 358635
+      percent: 0.18
+  '2011':
+    Extractives:
+      count: 3027
+      total: 379432
+      percent: 0.8
+    Oil & Gas:
+      count: 1167
+      total: 379432
+      percent: 0.31
+    Coal:
+      count: 1094
+      total: 379432
+      percent: 0.29
+    Nonmetallic mineral:
+      count: 766
+      total: 379432
+      percent: 0.2
+  '2012':
+    Extractives:
+      count: 3749
+      total: 411709
+      percent: 0.91
+    Oil & Gas:
+      count: 1614
+      total: 411709
+      percent: 0.39
+    Coal:
+      count: 1152
+      total: 411709
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 983
+      total: 411709
+      percent: 0.24
+  '2013':
+    Extractives:
+      count: 4164
+      total: 427108
+      percent: 0.97
+    Oil & Gas:
+      count: 1980
+      total: 427108
+      percent: 0.46
+    Coal:
+      count: 1173
+      total: 427108
+      percent: 0.27
+    Nonmetallic mineral:
+      count: 1011
+      total: 427108
+      percent: 0.24
+  '2014':
+    Extractives:
+      count: 4758
+      total: 444652
+      percent: 1.07
+    Oil & Gas:
+      count: 2489
+      total: 444652
+      percent: 0.56
+    Coal:
+      count: 1219
+      total: 444652
+      percent: 0.27
+    Nonmetallic mineral:
+      count: 1050
+      total: 444652
+      percent: 0.24
+  '2015':
+    Extractives:
+      count: 5136
+      total: 437072
+      percent: 1.18
+    Oil & Gas:
+      count: 2906
+      total: 437072
+      percent: 0.66
+    Coal:
+      count: 1203
+      total: 437072
+      percent: 0.28
+    Nonmetallic mineral:
+      count: 1027
+      total: 437072
+      percent: 0.23
+NE:
+  '2006':
+    Oil & Gas:
+      count: 93
+      total: 902383
+      percent: 0.01
+    Extractives:
+      count: 93
+      total: 902383
+      percent: 0.01
+  '2007':
+    Oil & Gas:
+      count: 93
+      total: 916580
+      percent: 0.01
+    Extractives:
+      count: 93
+      total: 916580
+      percent: 0.01
+  '2008':
+    Oil & Gas:
+      count: 93
+      total: 922929
+      percent: 0.01
+    Extractives:
+      count: 93
+      total: 922929
+      percent: 0.01
+  '2009':
+    Oil & Gas:
+      count: 89
+      total: 901470
+      percent: 0.01
+    Extractives:
+      count: 89
+      total: 901470
+      percent: 0.01
+  '2010':
+    Oil & Gas:
+      count: 68
+      total: 896936
+      percent: 0.01
+    Extractives:
+      count: 68
+      total: 896936
+      percent: 0.01
+  '2011':
+    Oil & Gas:
+      count: 61
+      total: 901584
+      percent: 0.01
+    Extractives:
+      count: 61
+      total: 901584
+      percent: 0.01
+  '2012':
+    Oil & Gas:
+      count: 68
+      total: 920295
+      percent: 0.01
+    Extractives:
+      count: 68
+      total: 920295
+      percent: 0.01
+  '2013':
+    Oil & Gas:
+      count: 60
+      total: 932768
+      percent: 0.01
+    Extractives:
+      count: 60
+      total: 932768
+      percent: 0.01
+  '2014':
+    Oil & Gas:
+      count: 58
+      total: 946110
+      percent: 0.01
+    Extractives:
+      count: 58
+      total: 946110
+      percent: 0.01
+  '2015':
+    Oil & Gas:
+      count: 47
+      total: 959176
+      percent: 0
+    Extractives:
+      count: 47
+      total: 959176
+      percent: 0
+NH:
+  '2011':
+    Nonmetallic mineral:
+      count: 399
+      total: 605853
+      percent: 0.07
+    Extractives:
+      count: 399
+      total: 605853
+      percent: 0.07
+  '2012':
+    Nonmetallic mineral:
+      count: 412
+      total: 612419
+      percent: 0.07
+    Extractives:
+      count: 412
+      total: 612419
+      percent: 0.07
+  '2013':
+    Nonmetallic mineral:
+      count: 433
+      total: 618781
+      percent: 0.07
+    Extractives:
+      count: 433
+      total: 618781
+      percent: 0.07
+  '2014':
+    Nonmetallic mineral:
+      count: 447
+      total: 626566
+      percent: 0.07
+    Extractives:
+      count: 447
+      total: 626566
+      percent: 0.07
+  '2015':
+    Nonmetallic mineral:
+      count: 442
+      total: 636806
+      percent: 0.07
+    Extractives:
+      count: 442
+      total: 636806
+      percent: 0.07
+NJ:
+  '2006':
+    Extractives:
+      count: 1566
+      total: 3951210
+      percent: 0.04
+    Nonmetallic mineral:
+      count: 1549
+      total: 3951210
+      percent: 0.04
+    Oil & Gas:
+      count: 17
+      total: 3951210
+      percent: 0
+  '2007':
+    Nonmetallic mineral:
+      count: 1495
+      total: 3961341
+      percent: 0.04
+    Extractives:
+      count: 1495
+      total: 3961341
+      percent: 0.04
+  '2008':
+    Nonmetallic mineral:
+      count: 1452
+      total: 3934789
+      percent: 0.04
+    Extractives:
+      count: 1452
+      total: 3934789
+      percent: 0.04
+  '2009':
+    Oil & Gas:
+      count: 38
+      total: 3771296
+      percent: 0
+    Extractives:
+      count: 38
+      total: 3771296
+      percent: 0
+  '2010':
+    Extractives:
+      count: 1206
+      total: 3735703
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 1175
+      total: 3735703
+      percent: 0.03
+    Oil & Gas:
+      count: 31
+      total: 3735703
+      percent: 0
+  '2011':
+    Extractives:
+      count: 1067
+      total: 3734660
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 1033
+      total: 3734660
+      percent: 0.03
+    Oil & Gas:
+      count: 34
+      total: 3734660
+      percent: 0
+    Solar:
+      count: 17
+      total: 3734660
+      percent: 0
+    Renewables:
+      count: 17
+      total: 3734660
+      percent: 0
+  '2012':
+    Extractives:
+      count: 1019
+      total: 3768935
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 983
+      total: 3768935
+      percent: 0.03
+    Oil & Gas:
+      count: 36
+      total: 3768935
+      percent: 0
+  '2013':
+    Extractives:
+      count: 1097
+      total: 3812940
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 1062
+      total: 3812940
+      percent: 0.03
+    Oil & Gas:
+      count: 35
+      total: 3812940
+      percent: 0
+  '2014':
+    Extractives:
+      count: 1166
+      total: 3841854
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 1133
+      total: 3841854
+      percent: 0.03
+    Oil & Gas:
+      count: 33
+      total: 3841854
+      percent: 0
+    Solar:
+      count: 13
+      total: 3841854
+      percent: 0
+    Renewables:
+      count: 13
+      total: 3841854
+      percent: 0
+  '2015':
+    Extractives:
+      count: 1091
+      total: 3889975
+      percent: 0.03
+    Nonmetallic mineral:
+      count: 1057
+      total: 3889975
+      percent: 0.03
+    Solar:
+      count: 59
+      total: 3889975
+      percent: 0
+    Renewables:
+      count: 59
+      total: 3889975
+      percent: 0
+    Oil & Gas:
+      count: 34
+      total: 3889975
+      percent: 0
+NM:
+  '2006':
+    Extractives:
+      count: 7659
+      total: 807063
+      percent: 0.95
+    Oil & Gas:
+      count: 3579
+      total: 807063
+      percent: 0.44
+    Coal:
+      count: 1506
+      total: 807063
+      percent: 0.19
+    Nonmetallic mineral:
+      count: 1343
+      total: 807063
+      percent: 0.17
+    Metal ore mining:
+      count: 1231
+      total: 807063
+      percent: 0.15
+  '2007':
+    Extractives:
+      count: 7898
+      total: 821484
+      percent: 0.96
+    Oil & Gas:
+      count: 3864
+      total: 821484
+      percent: 0.47
+    Coal:
+      count: 1390
+      total: 821484
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 1355
+      total: 821484
+      percent: 0.16
+    Metal ore mining:
+      count: 1289
+      total: 821484
+      percent: 0.16
+  '2008':
+    Extractives:
+      count: 5828
+      total: 825736
+      percent: 0.71
+    Oil & Gas:
+      count: 4311
+      total: 825736
+      percent: 0.52
+    Nonmetallic mineral:
+      count: 1517
+      total: 825736
+      percent: 0.18
+    Copper:
+      count: 1443
+      total: 825736
+      percent: 0.17
+  '2009':
+    Extractives:
+      count: 5744
+      total: 791509
+      percent: 0.73
+    Oil & Gas:
+      count: 4181
+      total: 791509
+      percent: 0.53
+    Nonmetallic mineral:
+      count: 1563
+      total: 791509
+      percent: 0.2
+    Copper:
+      count: 724
+      total: 791509
+      percent: 0.09
+  '2010':
+    Extractives:
+      count: 6070
+      total: 781694
+      percent: 0.78
+    Oil & Gas:
+      count: 4503
+      total: 781694
+      percent: 0.58
+    Nonmetallic mineral:
+      count: 1567
+      total: 781694
+      percent: 0.2
+    Copper:
+      count: 782
+      total: 781694
+      percent: 0.1
+  '2011':
+    Oil & Gas:
+      count: 4795
+      total: 781226
+      percent: 0.61
+    Extractives:
+      count: 4795
+      total: 781226
+      percent: 0.61
+    Copper:
+      count: 1248
+      total: 781226
+      percent: 0.16
+    Wind:
+      count: 23
+      total: 781226
+      percent: 0
+    Renewables:
+      count: 23
+      total: 781226
+      percent: 0
+  '2012':
+    Extractives:
+      count: 6915
+      total: 785455
+      percent: 0.88
+    Oil & Gas:
+      count: 5036
+      total: 785455
+      percent: 0.64
+    Metal ore mining:
+      count: 1879
+      total: 785455
+      percent: 0.24
+    Copper:
+      count: 1562
+      total: 785455
+      percent: 0.2
+    Wind:
+      count: 19
+      total: 785455
+      percent: 0
+    Renewables:
+      count: 19
+      total: 785455
+      percent: 0
+  '2013':
+    Extractives:
+      count: 10487
+      total: 791804
+      percent: 1.32
+    Oil & Gas:
+      count: 5196
+      total: 791804
+      percent: 0.66
+    Metal ore mining:
+      count: 1979
+      total: 791804
+      percent: 0.25
+    Nonmetallic mineral:
+      count: 1828
+      total: 791804
+      percent: 0.23
+    Copper:
+      count: 1645
+      total: 791804
+      percent: 0.21
+    Coal:
+      count: 1484
+      total: 791804
+      percent: 0.19
+    Wind:
+      count: 9
+      total: 791804
+      percent: 0
+    Renewables:
+      count: 9
+      total: 791804
+      percent: 0
+  '2014':
+    Extractives:
+      count: 7277
+      total: 798912
+      percent: 0.91
+    Oil & Gas:
+      count: 5462
+      total: 798912
+      percent: 0.68
+    Metal ore mining:
+      count: 1815
+      total: 798912
+      percent: 0.23
+    Copper:
+      count: 1628
+      total: 798912
+      percent: 0.2
+    Wind:
+      count: 12
+      total: 798912
+      percent: 0
+    Renewables:
+      count: 12
+      total: 798912
+      percent: 0
+    Gold:
+      count: 7
+      total: 798912
+      percent: 0
+  '2015':
+    Extractives:
+      count: 7024
+      total: 806762
+      percent: 0.87
+    Oil & Gas:
+      count: 5342
+      total: 806762
+      percent: 0.66
+    Nonmetallic mineral:
+      count: 1682
+      total: 806762
+      percent: 0.21
+    Wind:
+      count: 17
+      total: 806762
+      percent: 0
+    Renewables:
+      count: 17
+      total: 806762
+      percent: 0
+NV:
+  '2006':
+    Extractives:
+      count: 8968
+      total: 1271634
+      percent: 0.71
+    Metal ore mining:
+      count: 8943
+      total: 1271634
+      percent: 0.7
+    Oil & Gas:
+      count: 25
+      total: 1271634
+      percent: 0
+  '2007':
+    Extractives:
+      count: 10893
+      total: 1284502
+      percent: 0.85
+    Metal ore mining:
+      count: 9331
+      total: 1284502
+      percent: 0.73
+    Nonmetallic mineral:
+      count: 1539
+      total: 1284502
+      percent: 0.12
+    Oil & Gas:
+      count: 23
+      total: 1284502
+      percent: 0
+  '2008':
+    Extractives:
+      count: 10887
+      total: 1252987
+      percent: 0.87
+    Metal ore mining:
+      count: 9502
+      total: 1252987
+      percent: 0.76
+    Nonmetallic mineral:
+      count: 1359
+      total: 1252987
+      percent: 0.11
+    Oil & Gas:
+      count: 26
+      total: 1252987
+      percent: 0
+  '2009':
+    Extractives:
+      count: 10500
+      total: 1138036
+      percent: 0.92
+    Metal ore mining:
+      count: 9367
+      total: 1138036
+      percent: 0.82
+    Nonmetallic mineral:
+      count: 1107
+      total: 1138036
+      percent: 0.1
+    Oil & Gas:
+      count: 26
+      total: 1138036
+      percent: 0
+  '2010':
+    Extractives:
+      count: 10734
+      total: 1108238
+      percent: 0.97
+    Metal ore mining:
+      count: 9649
+      total: 1108238
+      percent: 0.87
+    Gold:
+      count: 8943
+      total: 1108238
+      percent: 0.81
+    Nonmetallic mineral:
+      count: 1060
+      total: 1108238
+      percent: 0.1
+    Oil & Gas:
+      count: 25
+      total: 1108238
+      percent: 0
+  '2011':
+    Extractives:
+      count: 10736
+      total: 1115062
+      percent: 0.96
+    Metal ore mining:
+      count: 10711
+      total: 1115062
+      percent: 0.96
+    Oil & Gas:
+      count: 25
+      total: 1115062
+      percent: 0
+  '2012':
+    Extractives:
+      count: 11609
+      total: 1132140
+      percent: 1.03
+    Metal ore mining:
+      count: 11585
+      total: 1132140
+      percent: 1.02
+    Geothermal:
+      count: 169
+      total: 1132140
+      percent: 0.01
+    Renewables:
+      count: 169
+      total: 1132140
+      percent: 0.01
+    Oil & Gas:
+      count: 24
+      total: 1132140
+      percent: 0
+  '2013':
+    Extractives:
+      count: 13400
+      total: 1160115
+      percent: 1.16
+    Metal ore mining:
+      count: 11981
+      total: 1160115
+      percent: 1.03
+    Nonmetallic mineral:
+      count: 1396
+      total: 1160115
+      percent: 0.12
+    Geothermal:
+      count: 183
+      total: 1160115
+      percent: 0.02
+    Renewables:
+      count: 183
+      total: 1160115
+      percent: 0.02
+    Oil & Gas:
+      count: 23
+      total: 1160115
+      percent: 0
+  '2014':
+    Extractives:
+      count: 12771
+      total: 1202475
+      percent: 1.06
+    Metal ore mining:
+      count: 11270
+      total: 1202475
+      percent: 0.94
+    Nonmetallic mineral:
+      count: 1475
+      total: 1202475
+      percent: 0.12
+    Geothermal:
+      count: 185
+      total: 1202475
+      percent: 0.02
+    Renewables:
+      count: 185
+      total: 1202475
+      percent: 0.02
+    Oil & Gas:
+      count: 26
+      total: 1202475
+      percent: 0
+  '2015':
+    Extractives:
+      count: 12580
+      total: 1244635
+      percent: 1.01
+    Metal ore mining:
+      count: 11126
+      total: 1244635
+      percent: 0.89
+    Nonmetallic mineral:
+      count: 1431
+      total: 1244635
+      percent: 0.11
+    Geothermal:
+      count: 185
+      total: 1244635
+      percent: 0.01
+    Renewables:
+      count: 185
+      total: 1244635
+      percent: 0.01
+    Oil & Gas:
+      count: 23
+      total: 1244635
+      percent: 0
+NY:
+  '2006':
+    Oil & Gas:
+      count: 236
+      total: 8429519
+      percent: 0
+    Extractives:
+      count: 236
+      total: 8429519
+      percent: 0
+  '2007':
+    Extractives:
+      count: 4548
+      total: 8554012
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 4272
+      total: 8554012
+      percent: 0.05
+    Oil & Gas:
+      count: 276
+      total: 8554012
+      percent: 0
+  '2008':
+    Extractives:
+      count: 4398
+      total: 8608351
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 4059
+      total: 8608351
+      percent: 0.05
+    Oil & Gas:
+      count: 339
+      total: 8608351
+      percent: 0
+  '2009':
+    Oil & Gas:
+      count: 362
+      total: 8343862
+      percent: 0
+    Extractives:
+      count: 362
+      total: 8343862
+      percent: 0
+  '2010':
+    Extractives:
+      count: 3997
+      total: 8340732
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3530
+      total: 8340732
+      percent: 0.04
+    Oil & Gas:
+      count: 448
+      total: 8340732
+      percent: 0.01
+    Metal ore mining:
+      count: 19
+      total: 8340732
+      percent: 0
+  '2011':
+    Extractives:
+      count: 4065
+      total: 8444791
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3462
+      total: 8444791
+      percent: 0.04
+    Oil & Gas:
+      count: 579
+      total: 8444791
+      percent: 0.01
+    Wind:
+      count: 45
+      total: 8444791
+      percent: 0
+    Renewables:
+      count: 45
+      total: 8444791
+      percent: 0
+    Metal ore mining:
+      count: 24
+      total: 8444791
+      percent: 0
+  '2012':
+    Extractives:
+      count: 4142
+      total: 8563125
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3485
+      total: 8563125
+      percent: 0.04
+    Oil & Gas:
+      count: 634
+      total: 8563125
+      percent: 0.01
+    Renewables:
+      count: 72
+      total: 8563125
+      percent: 0
+    Wind:
+      count: 51
+      total: 8563125
+      percent: 0
+    Metal ore mining:
+      count: 23
+      total: 8563125
+      percent: 0
+    Solar:
+      count: 21
+      total: 8563125
+      percent: 0
+  '2013':
+    Extractives:
+      count: 3946
+      total: 8685758
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 3438
+      total: 8685758
+      percent: 0.04
+    Oil & Gas:
+      count: 487
+      total: 8685758
+      percent: 0.01
+    Wind:
+      count: 43
+      total: 8685758
+      percent: 0
+    Renewables:
+      count: 43
+      total: 8685758
+      percent: 0
+    Metal ore mining:
+      count: 21
+      total: 8685758
+      percent: 0
+  '2014':
+    Oil & Gas:
+      count: 503
+      total: 8846774
+      percent: 0.01
+    Extractives:
+      count: 503
+      total: 8846774
+      percent: 0.01
+    Wind:
+      count: 36
+      total: 8846774
+      percent: 0
+    Renewables:
+      count: 36
+      total: 8846774
+      percent: 0
+  '2015':
+    Oil & Gas:
+      count: 453
+      total: 9014385
+      percent: 0.01
+    Extractives:
+      count: 453
+      total: 9014385
+      percent: 0.01
+    Wind:
+      count: 30
+      total: 9014385
+      percent: 0
+    Renewables:
+      count: 30
+      total: 9014385
+      percent: 0
+OH:
+  '2006':
+    Extractives:
+      count: 8376
+      total: 5314572
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 3863
+      total: 5314572
+      percent: 0.07
+    Oil & Gas:
+      count: 2386
+      total: 5314572
+      percent: 0.04
+    Coal:
+      count: 2127
+      total: 5314572
+      percent: 0.04
+  '2007':
+    Extractives:
+      count: 8403
+      total: 5306812
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 3765
+      total: 5306812
+      percent: 0.07
+    Oil & Gas:
+      count: 2577
+      total: 5306812
+      percent: 0.05
+    Coal:
+      count: 2061
+      total: 5306812
+      percent: 0.04
+  '2008':
+    Extractives:
+      count: 8496
+      total: 5235972
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 3527
+      total: 5235972
+      percent: 0.07
+    Oil & Gas:
+      count: 2661
+      total: 5235972
+      percent: 0.05
+    Coal:
+      count: 2308
+      total: 5235972
+      percent: 0.04
+  '2009':
+    Extractives:
+      count: 8571
+      total: 4943970
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 3278
+      total: 4943970
+      percent: 0.07
+    Oil & Gas:
+      count: 2692
+      total: 4943970
+      percent: 0.05
+    Coal:
+      count: 2601
+      total: 4943970
+      percent: 0.05
+  '2010':
+    Extractives:
+      count: 8368
+      total: 4908571
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 3129
+      total: 4908571
+      percent: 0.06
+    Oil & Gas:
+      count: 2759
+      total: 4908571
+      percent: 0.06
+    Coal:
+      count: 2480
+      total: 4908571
+      percent: 0.05
+  '2011':
+    Extractives:
+      count: 8548
+      total: 4968724
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 3103
+      total: 4968724
+      percent: 0.06
+    Oil & Gas:
+      count: 2875
+      total: 4968724
+      percent: 0.06
+    Coal:
+      count: 2570
+      total: 4968724
+      percent: 0.05
+    Wind:
+      count: 18
+      total: 4968724
+      percent: 0
+    Renewables:
+      count: 18
+      total: 4968724
+      percent: 0
+  '2012':
+    Extractives:
+      count: 8851
+      total: 5048166
+      percent: 0.18
+    Nonmetallic mineral:
+      count: 3203
+      total: 5048166
+      percent: 0.06
+    Oil & Gas:
+      count: 3086
+      total: 5048166
+      percent: 0.06
+    Coal:
+      count: 2562
+      total: 5048166
+      percent: 0.05
+    Wind:
+      count: 25
+      total: 5048166
+      percent: 0
+    Renewables:
+      count: 25
+      total: 5048166
+      percent: 0
+  '2013':
+    Extractives:
+      count: 7582
+      total: 5110011
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 3211
+      total: 5110011
+      percent: 0.06
+    Coal:
+      count: 2369
+      total: 5110011
+      percent: 0.05
+    Oil & Gas:
+      count: 2002
+      total: 5110011
+      percent: 0.04
+    Wind:
+      count: 20
+      total: 5110011
+      percent: 0
+    Renewables:
+      count: 20
+      total: 5110011
+      percent: 0
+  '2014':
+    Extractives:
+      count: 5665
+      total: 5183462
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 3340
+      total: 5183462
+      percent: 0.06
+    Oil & Gas:
+      count: 2325
+      total: 5183462
+      percent: 0.04
+    Wind:
+      count: 28
+      total: 5183462
+      percent: 0
+    Renewables:
+      count: 28
+      total: 5183462
+      percent: 0
+  '2015':
+    Extractives:
+      count: 5448
+      total: 5257971
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 3427
+      total: 5257971
+      percent: 0.07
+    Oil & Gas:
+      count: 2021
+      total: 5257971
+      percent: 0.04
+    Wind:
+      count: 29
+      total: 5257971
+      percent: 0
+    Renewables:
+      count: 29
+      total: 5257971
+      percent: 0
+OK:
+  '2006':
+    Extractives:
+      count: 18448
+      total: 1507196
+      percent: 1.22
+    Oil & Gas:
+      count: 16192
+      total: 1507196
+      percent: 1.07
+    Nonmetallic mineral:
+      count: 2007
+      total: 1507196
+      percent: 0.13
+    Coal:
+      count: 192
+      total: 1507196
+      percent: 0.01
+    Metal ore mining:
+      count: 57
+      total: 1507196
+      percent: 0
+  '2007':
+    Extractives:
+      count: 20394
+      total: 1534802
+      percent: 1.33
+    Oil & Gas:
+      count: 17985
+      total: 1534802
+      percent: 1.17
+    Nonmetallic mineral:
+      count: 2141
+      total: 1534802
+      percent: 0.14
+    Coal:
+      count: 212
+      total: 1534802
+      percent: 0.01
+    Metal ore mining:
+      count: 56
+      total: 1534802
+      percent: 0
+  '2008':
+    Extractives:
+      count: 21900
+      total: 1550489
+      percent: 1.41
+    Oil & Gas:
+      count: 19808
+      total: 1550489
+      percent: 1.28
+    Nonmetallic mineral:
+      count: 2092
+      total: 1550489
+      percent: 0.13
+  '2009':
+    Extractives:
+      count: 21493
+      total: 1497855
+      percent: 1.43
+    Oil & Gas:
+      count: 19410
+      total: 1497855
+      percent: 1.3
+    Nonmetallic mineral:
+      count: 1871
+      total: 1497855
+      percent: 0.12
+    Coal:
+      count: 198
+      total: 1497855
+      percent: 0.01
+    Metal ore mining:
+      count: 14
+      total: 1497855
+      percent: 0
+  '2010':
+    Extractives:
+      count: 20635
+      total: 1485400
+      percent: 1.39
+    Oil & Gas:
+      count: 18677
+      total: 1485400
+      percent: 1.26
+    Nonmetallic mineral:
+      count: 1753
+      total: 1485400
+      percent: 0.12
+    Coal:
+      count: 202
+      total: 1485400
+      percent: 0.01
+    Metal ore mining:
+      count: 3
+      total: 1485400
+      percent: 0
+  '2011':
+    Extractives:
+      count: 22969
+      total: 1507558
+      percent: 1.52
+    Oil & Gas:
+      count: 21078
+      total: 1507558
+      percent: 1.4
+    Nonmetallic mineral:
+      count: 1677
+      total: 1507558
+      percent: 0.11
+    Coal:
+      count: 211
+      total: 1507558
+      percent: 0.01
+    Metal ore mining:
+      count: 3
+      total: 1507558
+      percent: 0
+  '2012':
+    Extractives:
+      count: 25883
+      total: 1540292
+      percent: 1.68
+    Oil & Gas:
+      count: 23986
+      total: 1540292
+      percent: 1.56
+    Nonmetallic mineral:
+      count: 1673
+      total: 1540292
+      percent: 0.11
+    Coal:
+      count: 221
+      total: 1540292
+      percent: 0.01
+    Wind:
+      count: 59
+      total: 1540292
+      percent: 0
+    Renewables:
+      count: 59
+      total: 1540292
+      percent: 0
+    Metal ore mining:
+      count: 3
+      total: 1540292
+      percent: 0
+  '2013':
+    Extractives:
+      count: 26101
+      total: 1560799
+      percent: 1.67
+    Oil & Gas:
+      count: 24328
+      total: 1560799
+      percent: 1.56
+    Nonmetallic mineral:
+      count: 1773
+      total: 1560799
+      percent: 0.11
+    Wind:
+      count: 88
+      total: 1560799
+      percent: 0.01
+    Renewables:
+      count: 88
+      total: 1560799
+      percent: 0.01
+  '2014':
+    Extractives:
+      count: 25950
+      total: 1582712
+      percent: 1.64
+    Oil & Gas:
+      count: 24140
+      total: 1582712
+      percent: 1.53
+    Nonmetallic mineral:
+      count: 1810
+      total: 1582712
+      percent: 0.11
+    Wind:
+      count: 110
+      total: 1582712
+      percent: 0.01
+    Renewables:
+      count: 110
+      total: 1582712
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 25643
+      total: 1594011
+      percent: 1.61
+    Oil & Gas:
+      count: 23868
+      total: 1594011
+      percent: 1.5
+    Nonmetallic mineral:
+      count: 1775
+      total: 1594011
+      percent: 0.11
+    Wind:
+      count: 154
+      total: 1594011
+      percent: 0.01
+    Renewables:
+      count: 154
+      total: 1594011
+      percent: 0.01
+OR:
+  '2006':
+    Oil & Gas:
+      count: 10
+      total: 1699932
+      percent: 0
+    Extractives:
+      count: 10
+      total: 1699932
+      percent: 0
+  '2007':
+    Oil & Gas:
+      count: 14
+      total: 1727886
+      percent: 0
+    Extractives:
+      count: 14
+      total: 1727886
+      percent: 0
+  '2008':
+    Extractives:
+      count: 1926
+      total: 1713764
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 1891
+      total: 1713764
+      percent: 0.11
+    Metal ore mining:
+      count: 26
+      total: 1713764
+      percent: 0
+    Gold:
+      count: 26
+      total: 1713764
+      percent: 0
+    Oil & Gas:
+      count: 9
+      total: 1713764
+      percent: 0
+  '2009':
+    Extractives:
+      count: 1588
+      total: 1607915
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 1579
+      total: 1607915
+      percent: 0.1
+    Metal ore mining:
+      count: 6
+      total: 1607915
+      percent: 0
+    Gold:
+      count: 6
+      total: 1607915
+      percent: 0
+    Oil & Gas:
+      count: 3
+      total: 1607915
+      percent: 0
+  '2010':
+    Extractives:
+      count: 1465
+      total: 1598173
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 1461
+      total: 1598173
+      percent: 0.09
+    Gold:
+      count: 6
+      total: 1598173
+      percent: 0
+    Oil & Gas:
+      count: 4
+      total: 1598173
+      percent: 0
+  '2011':
+    Extractives:
+      count: 1429
+      total: 1616634
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 1424
+      total: 1616634
+      percent: 0.09
+    Wind:
+      count: 48
+      total: 1616634
+      percent: 0
+    Renewables:
+      count: 48
+      total: 1616634
+      percent: 0
+    Oil & Gas:
+      count: 5
+      total: 1616634
+      percent: 0
+    Gold:
+      count: 3
+      total: 1616634
+      percent: 0
+  '2012':
+    Nonmetallic mineral:
+      count: 1409
+      total: 1642434
+      percent: 0.09
+    Extractives:
+      count: 1409
+      total: 1642434
+      percent: 0.09
+    Wind:
+      count: 124
+      total: 1642434
+      percent: 0.01
+    Renewables:
+      count: 124
+      total: 1642434
+      percent: 0.01
+    Gold:
+      count: 7
+      total: 1642434
+      percent: 0
+  '2013':
+    Extractives:
+      count: 1452
+      total: 1678726
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 1428
+      total: 1678726
+      percent: 0.09
+    Wind:
+      count: 144
+      total: 1678726
+      percent: 0.01
+    Renewables:
+      count: 144
+      total: 1678726
+      percent: 0.01
+    Metal ore mining:
+      count: 24
+      total: 1678726
+      percent: 0
+  '2015':
+    Extractives:
+      count: 1634
+      total: 1787398
+      percent: 0.09
+    Nonmetallic mineral:
+      count: 1624
+      total: 1787398
+      percent: 0.09
+    Metal ore mining:
+      count: 10
+      total: 1787398
+      percent: 0
+PA:
+  '2006':
+    Extractives:
+      count: 9589
+      total: 5607139
+      percent: 0.17
+    Coal:
+      count: 7592
+      total: 5607139
+      percent: 0.14
+    Oil & Gas:
+      count: 1997
+      total: 5607139
+      percent: 0.04
+  '2007':
+    Extractives:
+      count: 9722
+      total: 5652547
+      percent: 0.17
+    Coal:
+      count: 7420
+      total: 5652547
+      percent: 0.13
+    Oil & Gas:
+      count: 2302
+      total: 5652547
+      percent: 0.04
+  '2008':
+    Extractives:
+      count: 16281
+      total: 5658771
+      percent: 0.29
+    Coal:
+      count: 7872
+      total: 5658771
+      percent: 0.14
+    Nonmetallic mineral:
+      count: 5684
+      total: 5658771
+      percent: 0.1
+    Oil & Gas:
+      count: 2671
+      total: 5658771
+      percent: 0.05
+    Metal ore mining:
+      count: 54
+      total: 5658771
+      percent: 0
+  '2009':
+    Extractives:
+      count: 15607
+      total: 5468176
+      percent: 0.29
+    Coal:
+      count: 7685
+      total: 5468176
+      percent: 0.14
+    Nonmetallic mineral:
+      count: 5050
+      total: 5468176
+      percent: 0.09
+    Oil & Gas:
+      count: 2812
+      total: 5468176
+      percent: 0.05
+    Metal ore mining:
+      count: 60
+      total: 5468176
+      percent: 0
+  '2010':
+    Extractives:
+      count: 16638
+      total: 5472171
+      percent: 0.3
+    Coal:
+      count: 7772
+      total: 5472171
+      percent: 0.14
+    Nonmetallic mineral:
+      count: 5002
+      total: 5472171
+      percent: 0.09
+    Oil & Gas:
+      count: 3807
+      total: 5472171
+      percent: 0.07
+    Metal ore mining:
+      count: 57
+      total: 5472171
+      percent: 0
+  '2011':
+    Extractives:
+      count: 18176
+      total: 5535283
+      percent: 0.33
+    Coal:
+      count: 8454
+      total: 5535283
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 5158
+      total: 5535283
+      percent: 0.09
+    Oil & Gas:
+      count: 4517
+      total: 5535283
+      percent: 0.08
+    Metal ore mining:
+      count: 47
+      total: 5535283
+      percent: 0
+  '2012':
+    Extractives:
+      count: 14000
+      total: 5578414
+      percent: 0.25
+    Coal:
+      count: 8619
+      total: 5578414
+      percent: 0.15
+    Oil & Gas:
+      count: 5381
+      total: 5578414
+      percent: 0.1
+    Wind:
+      count: 33
+      total: 5578414
+      percent: 0
+    Renewables:
+      count: 33
+      total: 5578414
+      percent: 0
+  '2013':
+    Extractives:
+      count: 13987
+      total: 5596841
+      percent: 0.25
+    Coal:
+      count: 8002
+      total: 5596841
+      percent: 0.14
+    Oil & Gas:
+      count: 5985
+      total: 5596841
+      percent: 0.11
+    Wind:
+      count: 39
+      total: 5596841
+      percent: 0
+    Renewables:
+      count: 39
+      total: 5596841
+      percent: 0
+  '2014':
+    Extractives:
+      count: 13709
+      total: 5644443
+      percent: 0.24
+    Coal:
+      count: 7306
+      total: 5644443
+      percent: 0.13
+    Oil & Gas:
+      count: 6403
+      total: 5644443
+      percent: 0.11
+    Wind:
+      count: 40
+      total: 5644443
+      percent: 0
+    Renewables:
+      count: 40
+      total: 5644443
+      percent: 0
+  '2015':
+    Extractives:
+      count: 12751
+      total: 5691613
+      percent: 0.22
+    Coal:
+      count: 6427
+      total: 5691613
+      percent: 0.11
+    Oil & Gas:
+      count: 6324
+      total: 5691613
+      percent: 0.11
+    Wind:
+      count: 40
+      total: 5691613
+      percent: 0
+    Renewables:
+      count: 40
+      total: 5691613
+      percent: 0
+RI:
+  '2006':
+    Nonmetallic mineral:
+      count: 258
+      total: 480570
+      percent: 0.05
+    Extractives:
+      count: 258
+      total: 480570
+      percent: 0.05
+  '2007':
+    Nonmetallic mineral:
+      count: 253
+      total: 480132
+      percent: 0.05
+    Extractives:
+      count: 253
+      total: 480132
+      percent: 0.05
+  '2008':
+    Nonmetallic mineral:
+      count: 219
+      total: 469701
+      percent: 0.05
+    Extractives:
+      count: 219
+      total: 469701
+      percent: 0.05
+  '2010':
+    Nonmetallic mineral:
+      count: 172
+      total: 447408
+      percent: 0.04
+    Extractives:
+      count: 172
+      total: 447408
+      percent: 0.04
+  '2013':
+    Nonmetallic mineral:
+      count: 181
+      total: 456112
+      percent: 0.04
+    Extractives:
+      count: 181
+      total: 456112
+      percent: 0.04
+  '2014':
+    Nonmetallic mineral:
+      count: 202
+      total: 463303
+      percent: 0.04
+    Extractives:
+      count: 202
+      total: 463303
+      percent: 0.04
+  '2015':
+    Nonmetallic mineral:
+      count: 198
+      total: 469981
+      percent: 0.04
+    Extractives:
+      count: 198
+      total: 469981
+      percent: 0.04
+SC:
+  '2007':
+    Extractives:
+      count: 1401
+      total: 1891255
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1390
+      total: 1891255
+      percent: 0.07
+    Metal ore mining:
+      count: 8
+      total: 1891255
+      percent: 0
+    Oil & Gas:
+      count: 3
+      total: 1891255
+      percent: 0
+  '2008':
+    Nonmetallic mineral:
+      count: 1404
+      total: 1876081
+      percent: 0.07
+    Extractives:
+      count: 1404
+      total: 1876081
+      percent: 0.07
+  '2009':
+    Extractives:
+      count: 1284
+      total: 1765739
+      percent: 0.07
+    Nonmetallic mineral:
+      count: 1273
+      total: 1765739
+      percent: 0.07
+    Metal ore mining:
+      count: 11
+      total: 1765739
+      percent: 0
+  '2013':
+    Oil & Gas:
+      count: 5
+      total: 1846621
+      percent: 0
+    Extractives:
+      count: 5
+      total: 1846621
+      percent: 0
+  '2014':
+    Extractives:
+      count: 1097
+      total: 1895420
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 1092
+      total: 1895420
+      percent: 0.06
+    Oil & Gas:
+      count: 5
+      total: 1895420
+      percent: 0
+  '2015':
+    Extractives:
+      count: 1127
+      total: 1949881
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 1121
+      total: 1949881
+      percent: 0.06
+    Oil & Gas:
+      count: 6
+      total: 1949881
+      percent: 0
+SD:
+  '2006':
+    Oil & Gas:
+      count: 30
+      total: 383876
+      percent: 0.01
+    Extractives:
+      count: 30
+      total: 383876
+      percent: 0.01
+  '2007':
+    Extractives:
+      count: 803
+      total: 392060
+      percent: 0.2
+    Nonmetallic mineral:
+      count: 604
+      total: 392060
+      percent: 0.15
+    Metal ore mining:
+      count: 167
+      total: 392060
+      percent: 0.04
+    Oil & Gas:
+      count: 32
+      total: 392060
+      percent: 0.01
+  '2008':
+    Oil & Gas:
+      count: 31
+      total: 397108
+      percent: 0.01
+    Extractives:
+      count: 31
+      total: 397108
+      percent: 0.01
+  '2009':
+    Oil & Gas:
+      count: 31
+      total: 389360
+      percent: 0.01
+    Extractives:
+      count: 31
+      total: 389360
+      percent: 0.01
+  '2010':
+    Oil & Gas:
+      count: 32
+      total: 389198
+      percent: 0.01
+    Extractives:
+      count: 32
+      total: 389198
+      percent: 0.01
+  '2011':
+    Oil & Gas:
+      count: 33
+      total: 393744
+      percent: 0.01
+    Extractives:
+      count: 33
+      total: 393744
+      percent: 0.01
+  '2012':
+    Wind:
+      count: 66
+      total: 400475
+      percent: 0.02
+    Renewables:
+      count: 66
+      total: 400475
+      percent: 0.02
+    Oil & Gas:
+      count: 33
+      total: 400475
+      percent: 0.01
+    Extractives:
+      count: 33
+      total: 400475
+      percent: 0.01
+  '2013':
+    Wind:
+      count: 61
+      total: 404652
+      percent: 0.02
+    Renewables:
+      count: 61
+      total: 404652
+      percent: 0.02
+    Oil & Gas:
+      count: 31
+      total: 404652
+      percent: 0.01
+    Extractives:
+      count: 31
+      total: 404652
+      percent: 0.01
+  '2014':
+    Wind:
+      count: 57
+      total: 410929
+      percent: 0.01
+    Renewables:
+      count: 57
+      total: 410929
+      percent: 0.01
+    Oil & Gas:
+      count: 33
+      total: 410929
+      percent: 0.01
+    Extractives:
+      count: 33
+      total: 410929
+      percent: 0.01
+  '2015':
+    Wind:
+      count: 61
+      total: 416020
+      percent: 0.01
+    Renewables:
+      count: 61
+      total: 416020
+      percent: 0.01
+    Oil & Gas:
+      count: 34
+      total: 416020
+      percent: 0.01
+    Extractives:
+      count: 34
+      total: 416020
+      percent: 0.01
+TN:
+  '2006':
+    Extractives:
+      count: 2184
+      total: 2728694
+      percent: 0.08
+    Nonmetallic mineral:
+      count: 2136
+      total: 2728694
+      percent: 0.08
+    Oil & Gas:
+      count: 48
+      total: 2728694
+      percent: 0
+  '2007':
+    Extractives:
+      count: 3312
+      total: 2745099
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 2226
+      total: 2745099
+      percent: 0.08
+    Metal ore mining:
+      count: 741
+      total: 2745099
+      percent: 0.03
+    Coal:
+      count: 295
+      total: 2745099
+      percent: 0.01
+    Oil & Gas:
+      count: 50
+      total: 2745099
+      percent: 0
+  '2008':
+    Extractives:
+      count: 3236
+      total: 2721990
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 1985
+      total: 2721990
+      percent: 0.07
+    Metal ore mining:
+      count: 955
+      total: 2721990
+      percent: 0.04
+    Coal:
+      count: 238
+      total: 2721990
+      percent: 0.01
+    Oil & Gas:
+      count: 58
+      total: 2721990
+      percent: 0
+  '2009':
+    Extractives:
+      count: 2462
+      total: 2565288
+      percent: 0.1
+    Nonmetallic mineral:
+      count: 1830
+      total: 2565288
+      percent: 0.07
+    Metal ore mining:
+      count: 395
+      total: 2565288
+      percent: 0.02
+    Coal:
+      count: 188
+      total: 2565288
+      percent: 0.01
+    Oil & Gas:
+      count: 49
+      total: 2565288
+      percent: 0
+  '2010':
+    Extractives:
+      count: 2839
+      total: 2558438
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 1858
+      total: 2558438
+      percent: 0.07
+    Metal ore mining:
+      count: 778
+      total: 2558438
+      percent: 0.03
+    Coal:
+      count: 155
+      total: 2558438
+      percent: 0.01
+    Oil & Gas:
+      count: 48
+      total: 2558438
+      percent: 0
+  '2011':
+    Extractives:
+      count: 3078
+      total: 2602604
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 1789
+      total: 2602604
+      percent: 0.07
+    Metal ore mining:
+      count: 1017
+      total: 2602604
+      percent: 0.04
+    Coal:
+      count: 217
+      total: 2602604
+      percent: 0.01
+    Oil & Gas:
+      count: 55
+      total: 2602604
+      percent: 0
+  '2012':
+    Extractives:
+      count: 3079
+      total: 2653392
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 1710
+      total: 2653392
+      percent: 0.06
+    Metal ore mining:
+      count: 1100
+      total: 2653392
+      percent: 0.04
+    Coal:
+      count: 215
+      total: 2653392
+      percent: 0.01
+    Oil & Gas:
+      count: 54
+      total: 2653392
+      percent: 0
+  '2013':
+    Extractives:
+      count: 3101
+      total: 2694288
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 1663
+      total: 2694288
+      percent: 0.06
+    Metal ore mining:
+      count: 1171
+      total: 2694288
+      percent: 0.04
+    Coal:
+      count: 209
+      total: 2694288
+      percent: 0.01
+    Oil & Gas:
+      count: 58
+      total: 2694288
+      percent: 0
+  '2014':
+    Extractives:
+      count: 3082
+      total: 2750032
+      percent: 0.11
+    Nonmetallic mineral:
+      count: 1670
+      total: 2750032
+      percent: 0.06
+    Metal ore mining:
+      count: 1174
+      total: 2750032
+      percent: 0.04
+    Coal:
+      count: 188
+      total: 2750032
+      percent: 0.01
+    Oil & Gas:
+      count: 50
+      total: 2750032
+      percent: 0
+  '2015':
+    Extractives:
+      count: 1790
+      total: 2820198
+      percent: 0.06
+    Nonmetallic mineral:
+      count: 1750
+      total: 2820198
+      percent: 0.06
+    Oil & Gas:
+      count: 40
+      total: 2820198
+      percent: 0
+TX:
+  '2006':
+    Extractives:
+      count: 80465
+      total: 9922313
+      percent: 0.81
+    Oil & Gas:
+      count: 70665
+      total: 9922313
+      percent: 0.71
+    Nonmetallic mineral:
+      count: 7385
+      total: 9922313
+      percent: 0.07
+    Coal:
+      count: 2168
+      total: 9922313
+      percent: 0.02
+    Metal ore mining:
+      count: 247
+      total: 9922313
+      percent: 0
+    Iron:
+      count: 25
+      total: 9922313
+      percent: 0
+  '2007':
+    Extractives:
+      count: 86158
+      total: 10231906
+      percent: 0.84
+    Oil & Gas:
+      count: 75844
+      total: 10231906
+      percent: 0.74
+    Nonmetallic mineral:
+      count: 7711
+      total: 10231906
+      percent: 0.08
+    Coal:
+      count: 2241
+      total: 10231906
+      percent: 0.02
+    Metal ore mining:
+      count: 362
+      total: 10231906
+      percent: 0
+    Iron:
+      count: 55
+      total: 10231906
+      percent: 0
+  '2008':
+    Extractives:
+      count: 93623
+      total: 10452907
+      percent: 0.9
+    Oil & Gas:
+      count: 82636
+      total: 10452907
+      percent: 0.79
+    Nonmetallic mineral:
+      count: 8062
+      total: 10452907
+      percent: 0.08
+    Coal:
+      count: 2565
+      total: 10452907
+      percent: 0.02
+    Metal ore mining:
+      count: 360
+      total: 10452907
+      percent: 0
+    Iron:
+      count: 25
+      total: 10452907
+      percent: 0
+    Gold:
+      count: 3
+      total: 10452907
+      percent: 0
+  '2009':
+    Extractives:
+      count: 94667
+      total: 10149694
+      percent: 0.93
+    Oil & Gas:
+      count: 84833
+      total: 10149694
+      percent: 0.84
+    Nonmetallic mineral:
+      count: 6871
+      total: 10149694
+      percent: 0.07
+    Coal:
+      count: 2734
+      total: 10149694
+      percent: 0.03
+    Metal ore mining:
+      count: 229
+      total: 10149694
+      percent: 0
+  '2010':
+    Extractives:
+      count: 91245
+      total: 10182150
+      percent: 0.9
+    Oil & Gas:
+      count: 81762
+      total: 10182150
+      percent: 0.8
+    Nonmetallic mineral:
+      count: 6429
+      total: 10182150
+      percent: 0.06
+    Coal:
+      count: 2841
+      total: 10182150
+      percent: 0.03
+    Metal ore mining:
+      count: 213
+      total: 10182150
+      percent: 0
+  '2011':
+    Extractives:
+      count: 97483
+      total: 10422295
+      percent: 0.94
+    Oil & Gas:
+      count: 88097
+      total: 10422295
+      percent: 0.85
+    Nonmetallic mineral:
+      count: 6174
+      total: 10422295
+      percent: 0.06
+    Coal:
+      count: 2946
+      total: 10422295
+      percent: 0.03
+    Renewables:
+      count: 843
+      total: 10422295
+      percent: 0.01
+    Wind:
+      count: 836
+      total: 10422295
+      percent: 0.01
+    Metal ore mining:
+      count: 266
+      total: 10422295
+      percent: 0
+    Solar:
+      count: 7
+      total: 10422295
+      percent: 0
+  '2012':
+    Extractives:
+      count: 106765
+      total: 10727642
+      percent: 1
+    Oil & Gas:
+      count: 96645
+      total: 10727642
+      percent: 0.9
+    Nonmetallic mineral:
+      count: 6707
+      total: 10727642
+      percent: 0.06
+    Coal:
+      count: 3122
+      total: 10727642
+      percent: 0.03
+    Renewables:
+      count: 883
+      total: 10727642
+      percent: 0.01
+    Wind:
+      count: 867
+      total: 10727642
+      percent: 0.01
+    Metal ore mining:
+      count: 291
+      total: 10727642
+      percent: 0
+    Solar:
+      count: 16
+      total: 10727642
+      percent: 0
+  '2013':
+    Extractives:
+      count: 114024
+      total: 11031907
+      percent: 1.03
+    Oil & Gas:
+      count: 103838
+      total: 11031907
+      percent: 0.94
+    Nonmetallic mineral:
+      count: 6800
+      total: 11031907
+      percent: 0.06
+    Coal:
+      count: 3162
+      total: 11031907
+      percent: 0.03
+    Renewables:
+      count: 922
+      total: 11031907
+      percent: 0.01
+    Wind:
+      count: 859
+      total: 11031907
+      percent: 0.01
+    Metal ore mining:
+      count: 224
+      total: 11031907
+      percent: 0
+    Solar:
+      count: 63
+      total: 11031907
+      percent: 0
+    Gold:
+      count: 3
+      total: 11031907
+      percent: 0
+  '2014':
+    Extractives:
+      count: 112915
+      total: 11379184
+      percent: 0.99
+    Oil & Gas:
+      count: 101765
+      total: 11379184
+      percent: 0.89
+    Nonmetallic mineral:
+      count: 7522
+      total: 11379184
+      percent: 0.07
+    Coal:
+      count: 3478
+      total: 11379184
+      percent: 0.03
+    Renewables:
+      count: 1130
+      total: 11379184
+      percent: 0.01
+    Wind:
+      count: 995
+      total: 11379184
+      percent: 0.01
+    Metal ore mining:
+      count: 150
+      total: 11379184
+      percent: 0
+    Solar:
+      count: 135
+      total: 11379184
+      percent: 0
+  '2015':
+    Extractives:
+      count: 110682
+      total: 11655919
+      percent: 0.95
+    Oil & Gas:
+      count: 99353
+      total: 11655919
+      percent: 0.85
+    Nonmetallic mineral:
+      count: 7965
+      total: 11655919
+      percent: 0.07
+    Coal:
+      count: 3269
+      total: 11655919
+      percent: 0.03
+    Renewables:
+      count: 1744
+      total: 11655919
+      percent: 0.01
+    Wind:
+      count: 1603
+      total: 11655919
+      percent: 0.01
+    Solar:
+      count: 141
+      total: 11655919
+      percent: 0
+    Metal ore mining:
+      count: 95
+      total: 11655919
+      percent: 0
+UT:
+  '2006':
+    Extractives:
+      count: 3053
+      total: 1170587
+      percent: 0.26
+    Coal:
+      count: 1957
+      total: 1170587
+      percent: 0.17
+    Oil & Gas:
+      count: 1096
+      total: 1170587
+      percent: 0.09
+    Gold:
+      count: 19
+      total: 1170587
+      percent: 0
+  '2007':
+    Extractives:
+      count: 6085
+      total: 1219207
+      percent: 0.5
+    Coal:
+      count: 1886
+      total: 1219207
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 1674
+      total: 1219207
+      percent: 0.14
+    Oil & Gas:
+      count: 1278
+      total: 1219207
+      percent: 0.1
+    Metal ore mining:
+      count: 1247
+      total: 1219207
+      percent: 0.1
+    Gold:
+      count: 25
+      total: 1219207
+      percent: 0
+  '2008':
+    Extractives:
+      count: 6569
+      total: 1221052
+      percent: 0.54
+    Coal:
+      count: 2005
+      total: 1221052
+      percent: 0.16
+    Nonmetallic mineral:
+      count: 1755
+      total: 1221052
+      percent: 0.14
+    Metal ore mining:
+      count: 1411
+      total: 1221052
+      percent: 0.12
+    Oil & Gas:
+      count: 1398
+      total: 1221052
+      percent: 0.11
+    Gold:
+      count: 25
+      total: 1221052
+      percent: 0
+  '2009':
+    Extractives:
+      count: 6457
+      total: 1157704
+      percent: 0.56
+    Coal:
+      count: 1919
+      total: 1157704
+      percent: 0.17
+    Nonmetallic mineral:
+      count: 1687
+      total: 1157704
+      percent: 0.15
+    Metal ore mining:
+      count: 1490
+      total: 1157704
+      percent: 0.13
+    Oil & Gas:
+      count: 1361
+      total: 1157704
+      percent: 0.12
+  '2010':
+    Extractives:
+      count: 6155
+      total: 1150737
+      percent: 0.53
+    Coal:
+      count: 1727
+      total: 1150737
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 1521
+      total: 1150737
+      percent: 0.13
+    Metal ore mining:
+      count: 1501
+      total: 1150737
+      percent: 0.13
+    Oil & Gas:
+      count: 1406
+      total: 1150737
+      percent: 0.12
+  '2011':
+    Extractives:
+      count: 6609
+      total: 1176530
+      percent: 0.56
+    Coal:
+      count: 1748
+      total: 1176530
+      percent: 0.15
+    Metal ore mining:
+      count: 1676
+      total: 1176530
+      percent: 0.14
+    Nonmetallic mineral:
+      count: 1595
+      total: 1176530
+      percent: 0.14
+    Oil & Gas:
+      count: 1590
+      total: 1176530
+      percent: 0.14
+  '2012':
+    Extractives:
+      count: 6934
+      total: 1215983
+      percent: 0.57
+    Metal ore mining:
+      count: 1889
+      total: 1215983
+      percent: 0.16
+    Oil & Gas:
+      count: 1800
+      total: 1215983
+      percent: 0.15
+    Nonmetallic mineral:
+      count: 1628
+      total: 1215983
+      percent: 0.13
+    Coal:
+      count: 1617
+      total: 1215983
+      percent: 0.13
+  '2013':
+    Extractives:
+      count: 6650
+      total: 1254582
+      percent: 0.53
+    Oil & Gas:
+      count: 1842
+      total: 1254582
+      percent: 0.15
+    Metal ore mining:
+      count: 1801
+      total: 1254582
+      percent: 0.14
+    Copper:
+      count: 1614
+      total: 1254582
+      percent: 0.13
+    Nonmetallic mineral:
+      count: 1592
+      total: 1254582
+      percent: 0.13
+    Coal:
+      count: 1415
+      total: 1254582
+      percent: 0.11
+    Gold:
+      count: 18
+      total: 1254582
+      percent: 0
+  '2014':
+    Extractives:
+      count: 6670
+      total: 1291859
+      percent: 0.52
+    Oil & Gas:
+      count: 1933
+      total: 1291859
+      percent: 0.15
+    Metal ore mining:
+      count: 1764
+      total: 1291859
+      percent: 0.14
+    Nonmetallic mineral:
+      count: 1607
+      total: 1291859
+      percent: 0.12
+    Copper:
+      count: 1488
+      total: 1291859
+      percent: 0.12
+    Coal:
+      count: 1366
+      total: 1291859
+      percent: 0.11
+  '2015':
+    Extractives:
+      count: 6292
+      total: 1340591
+      percent: 0.47
+    Oil & Gas:
+      count: 1739
+      total: 1340591
+      percent: 0.13
+    Metal ore mining:
+      count: 1659
+      total: 1340591
+      percent: 0.12
+    Nonmetallic mineral:
+      count: 1606
+      total: 1340591
+      percent: 0.12
+    Copper:
+      count: 1450
+      total: 1340591
+      percent: 0.11
+    Coal:
+      count: 1288
+      total: 1340591
+      percent: 0.1
+VA:
+  '2006':
+    Extractives:
+      count: 4595
+      total: 3636417
+      percent: 0.13
+    Coal:
+      count: 4381
+      total: 3636417
+      percent: 0.12
+    Oil & Gas:
+      count: 214
+      total: 3636417
+      percent: 0.01
+  '2007':
+    Extractives:
+      count: 4419
+      total: 3672958
+      percent: 0.12
+    Coal:
+      count: 4168
+      total: 3672958
+      percent: 0.11
+    Oil & Gas:
+      count: 251
+      total: 3672958
+      percent: 0.01
+  '2008':
+    Extractives:
+      count: 4573
+      total: 3665654
+      percent: 0.12
+    Coal:
+      count: 4211
+      total: 3665654
+      percent: 0.11
+    Oil & Gas:
+      count: 362
+      total: 3665654
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 4490
+      total: 3545623
+      percent: 0.13
+    Coal:
+      count: 4072
+      total: 3545623
+      percent: 0.11
+    Oil & Gas:
+      count: 418
+      total: 3545623
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 4775
+      total: 3536676
+      percent: 0.14
+    Coal:
+      count: 4329
+      total: 3536676
+      percent: 0.12
+    Oil & Gas:
+      count: 446
+      total: 3536676
+      percent: 0.01
+  '2011':
+    Extractives:
+      count: 5117
+      total: 3578848
+      percent: 0.14
+    Coal:
+      count: 4672
+      total: 3578848
+      percent: 0.13
+    Oil & Gas:
+      count: 445
+      total: 3578848
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 5236
+      total: 3619176
+      percent: 0.14
+    Coal:
+      count: 4812
+      total: 3619176
+      percent: 0.13
+    Oil & Gas:
+      count: 424
+      total: 3619176
+      percent: 0.01
+    Wind:
+      count: 3
+      total: 3619176
+      percent: 0
+    Renewables:
+      count: 3
+      total: 3619176
+      percent: 0
+  '2013':
+    Extractives:
+      count: 4564
+      total: 3640209
+      percent: 0.13
+    Coal:
+      count: 4178
+      total: 3640209
+      percent: 0.11
+    Oil & Gas:
+      count: 386
+      total: 3640209
+      percent: 0.01
+  '2014':
+    Extractives:
+      count: 3872
+      total: 3654831
+      percent: 0.11
+    Coal:
+      count: 3494
+      total: 3654831
+      percent: 0.1
+    Oil & Gas:
+      count: 378
+      total: 3654831
+      percent: 0.01
+  '2015':
+    Extractives:
+      count: 3344
+      total: 3735713
+      percent: 0.09
+    Coal:
+      count: 2978
+      total: 3735713
+      percent: 0.08
+    Oil & Gas:
+      count: 366
+      total: 3735713
+      percent: 0.01
+VT:
+  '2008':
+    Nonmetallic mineral:
+      count: 731
+      total: 302627
+      percent: 0.24
+    Extractives:
+      count: 731
+      total: 302627
+      percent: 0.24
+  '2009':
+    Nonmetallic mineral:
+      count: 646
+      total: 292406
+      percent: 0.22
+    Extractives:
+      count: 646
+      total: 292406
+      percent: 0.22
+  '2010':
+    Nonmetallic mineral:
+      count: 593
+      total: 293058
+      percent: 0.2
+    Extractives:
+      count: 593
+      total: 293058
+      percent: 0.2
+  '2011':
+    Nonmetallic mineral:
+      count: 586
+      total: 295512
+      percent: 0.2
+    Extractives:
+      count: 586
+      total: 295512
+      percent: 0.2
+WA:
+  '2006':
+    Nonmetallic mineral:
+      count: 2295
+      total: 2850073
+      percent: 0.08
+    Extractives:
+      count: 2295
+      total: 2850073
+      percent: 0.08
+  '2007':
+    Nonmetallic mineral:
+      count: 2390
+      total: 2925908
+      percent: 0.08
+    Extractives:
+      count: 2390
+      total: 2925908
+      percent: 0.08
+  '2008':
+    Nonmetallic mineral:
+      count: 2166
+      total: 2950773
+      percent: 0.07
+    Extractives:
+      count: 2166
+      total: 2950773
+      percent: 0.07
+  '2009':
+    Nonmetallic mineral:
+      count: 1830
+      total: 2836283
+      percent: 0.06
+    Extractives:
+      count: 1830
+      total: 2836283
+      percent: 0.06
+  '2010':
+    Nonmetallic mineral:
+      count: 1657
+      total: 2808698
+      percent: 0.06
+    Extractives:
+      count: 1657
+      total: 2808698
+      percent: 0.06
+  '2011':
+    Nonmetallic mineral:
+      count: 1566
+      total: 2844622
+      percent: 0.06
+    Extractives:
+      count: 1566
+      total: 2844622
+      percent: 0.06
+    Wind:
+      count: 35
+      total: 2844622
+      percent: 0
+    Renewables:
+      count: 35
+      total: 2844622
+      percent: 0
+  '2012':
+    Nonmetallic mineral:
+      count: 1541
+      total: 2894703
+      percent: 0.05
+    Extractives:
+      count: 1541
+      total: 2894703
+      percent: 0.05
+    Wind:
+      count: 37
+      total: 2894703
+      percent: 0
+    Renewables:
+      count: 37
+      total: 2894703
+      percent: 0
+  '2013':
+    Extractives:
+      count: 1556
+      total: 2960123
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 1553
+      total: 2960123
+      percent: 0.05
+    Wind:
+      count: 40
+      total: 2960123
+      percent: 0
+    Renewables:
+      count: 40
+      total: 2960123
+      percent: 0
+    Oil & Gas:
+      count: 3
+      total: 2960123
+      percent: 0
+  '2014':
+    Extractives:
+      count: 1635
+      total: 3043562
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 1628
+      total: 3043562
+      percent: 0.05
+    Wind:
+      count: 43
+      total: 3043562
+      percent: 0
+    Renewables:
+      count: 43
+      total: 3043562
+      percent: 0
+    Oil & Gas:
+      count: 7
+      total: 3043562
+      percent: 0
+  '2015':
+    Extractives:
+      count: 1686
+      total: 3122749
+      percent: 0.05
+    Nonmetallic mineral:
+      count: 1662
+      total: 3122749
+      percent: 0.05
+    Wind:
+      count: 49
+      total: 3122749
+      percent: 0
+    Renewables:
+      count: 49
+      total: 3122749
+      percent: 0
+    Oil & Gas:
+      count: 24
+      total: 3122749
+      percent: 0
+WI:
+  '2006':
+    Nonmetallic mineral:
+      count: 2998
+      total: 2767141
+      percent: 0.11
+    Extractives:
+      count: 2998
+      total: 2767141
+      percent: 0.11
+  '2007':
+    Nonmetallic mineral:
+      count: 2808
+      total: 2780924
+      percent: 0.1
+    Extractives:
+      count: 2808
+      total: 2780924
+      percent: 0.1
+  '2008':
+    Nonmetallic mineral:
+      count: 2586
+      total: 2772889
+      percent: 0.09
+    Extractives:
+      count: 2586
+      total: 2772889
+      percent: 0.09
+  '2009':
+    Nonmetallic mineral:
+      count: 2279
+      total: 2644190
+      percent: 0.09
+    Extractives:
+      count: 2279
+      total: 2644190
+      percent: 0.09
+  '2010':
+    Nonmetallic mineral:
+      count: 2207
+      total: 2633572
+      percent: 0.08
+    Extractives:
+      count: 2207
+      total: 2633572
+      percent: 0.08
+  '2011':
+    Nonmetallic mineral:
+      count: 2265
+      total: 2664920
+      percent: 0.08
+    Extractives:
+      count: 2265
+      total: 2664920
+      percent: 0.08
+    Wind:
+      count: 12
+      total: 2664920
+      percent: 0
+    Renewables:
+      count: 12
+      total: 2664920
+      percent: 0
+WV:
+  '2006':
+    Extractives:
+      count: 21923
+      total: 705189
+      percent: 3.11
+    Coal:
+      count: 18738
+      total: 705189
+      percent: 2.66
+    Oil & Gas:
+      count: 2236
+      total: 705189
+      percent: 0.32
+    Nonmetallic mineral:
+      count: 898
+      total: 705189
+      percent: 0.13
+    Metal ore mining:
+      count: 51
+      total: 705189
+      percent: 0.01
+  '2007':
+    Extractives:
+      count: 21919
+      total: 706172
+      percent: 3.1
+    Coal:
+      count: 18518
+      total: 706172
+      percent: 2.62
+    Oil & Gas:
+      count: 2442
+      total: 706172
+      percent: 0.35
+    Nonmetallic mineral:
+      count: 914
+      total: 706172
+      percent: 0.13
+    Metal ore mining:
+      count: 45
+      total: 706172
+      percent: 0.01
+  '2008':
+    Extractives:
+      count: 24008
+      total: 709657
+      percent: 3.38
+    Coal:
+      count: 20459
+      total: 709657
+      percent: 2.88
+    Oil & Gas:
+      count: 2638
+      total: 709657
+      percent: 0.37
+    Nonmetallic mineral:
+      count: 873
+      total: 709657
+      percent: 0.12
+    Metal ore mining:
+      count: 38
+      total: 709657
+      percent: 0.01
+  '2009':
+    Extractives:
+      count: 23506
+      total: 691998
+      percent: 3.4
+    Coal:
+      count: 20201
+      total: 691998
+      percent: 2.92
+    Oil & Gas:
+      count: 2460
+      total: 691998
+      percent: 0.36
+    Nonmetallic mineral:
+      count: 806
+      total: 691998
+      percent: 0.12
+    Metal ore mining:
+      count: 39
+      total: 691998
+      percent: 0.01
+  '2010':
+    Extractives:
+      count: 23556
+      total: 692448
+      percent: 3.4
+    Coal:
+      count: 20461
+      total: 692448
+      percent: 2.95
+    Oil & Gas:
+      count: 2244
+      total: 692448
+      percent: 0.32
+    Nonmetallic mineral:
+      count: 813
+      total: 692448
+      percent: 0.12
+    Metal ore mining:
+      count: 38
+      total: 692448
+      percent: 0.01
+  '2011':
+    Extractives:
+      count: 26122
+      total: 701905
+      percent: 3.72
+    Coal:
+      count: 23095
+      total: 701905
+      percent: 3.29
+    Oil & Gas:
+      count: 2181
+      total: 701905
+      percent: 0.31
+    Nonmetallic mineral:
+      count: 807
+      total: 701905
+      percent: 0.11
+    Metal ore mining:
+      count: 39
+      total: 701905
+      percent: 0.01
+    Iron:
+      count: 39
+      total: 701905
+      percent: 0.01
+  '2012':
+    Extractives:
+      count: 24840
+      total: 710590
+      percent: 3.5
+    Coal:
+      count: 22566
+      total: 710590
+      percent: 3.18
+    Oil & Gas:
+      count: 2274
+      total: 710590
+      percent: 0.32
+  '2013':
+    Extractives:
+      count: 22419
+      total: 703916
+      percent: 3.18
+    Coal:
+      count: 19980
+      total: 703916
+      percent: 2.84
+    Oil & Gas:
+      count: 2439
+      total: 703916
+      percent: 0.35
+  '2014':
+    Extractives:
+      count: 20653
+      total: 700846
+      percent: 2.95
+    Coal:
+      count: 17852
+      total: 700846
+      percent: 2.55
+    Oil & Gas:
+      count: 2801
+      total: 700846
+      percent: 0.4
+  '2015':
+    Extractives:
+      count: 18186
+      total: 696195
+      percent: 2.61
+    Coal:
+      count: 15437
+      total: 696195
+      percent: 2.22
+    Oil & Gas:
+      count: 2749
+      total: 696195
+      percent: 0.39
+WY:
+  '2006':
+    Extractives:
+      count: 12835
+      total: 266894
+      percent: 4.81
+    Coal:
+      count: 5916
+      total: 266894
+      percent: 2.22
+    Oil & Gas:
+      count: 4115
+      total: 266894
+      percent: 1.54
+    Nonmetallic mineral:
+      count: 2656
+      total: 266894
+      percent: 1
+    Metal ore mining:
+      count: 148
+      total: 266894
+      percent: 0.06
+  '2007':
+    Extractives:
+      count: 13467
+      total: 277721
+      percent: 4.85
+    Coal:
+      count: 6334
+      total: 277721
+      percent: 2.28
+    Oil & Gas:
+      count: 4293
+      total: 277721
+      percent: 1.55
+    Nonmetallic mineral:
+      count: 2676
+      total: 277721
+      percent: 0.96
+    Metal ore mining:
+      count: 164
+      total: 277721
+      percent: 0.06
+  '2008':
+    Extractives:
+      count: 14420
+      total: 286333
+      percent: 5.04
+    Coal:
+      count: 6843
+      total: 286333
+      percent: 2.39
+    Oil & Gas:
+      count: 4673
+      total: 286333
+      percent: 1.63
+    Nonmetallic mineral:
+      count: 2733
+      total: 286333
+      percent: 0.95
+    Metal ore mining:
+      count: 171
+      total: 286333
+      percent: 0.06
+  '2009':
+    Extractives:
+      count: 13776
+      total: 274758
+      percent: 5.01
+    Coal:
+      count: 7054
+      total: 274758
+      percent: 2.57
+    Oil & Gas:
+      count: 4086
+      total: 274758
+      percent: 1.49
+    Nonmetallic mineral:
+      count: 2414
+      total: 274758
+      percent: 0.88
+    Metal ore mining:
+      count: 222
+      total: 274758
+      percent: 0.08
+  '2010':
+    Extractives:
+      count: 13835
+      total: 271151
+      percent: 5.1
+    Coal:
+      count: 6932
+      total: 271151
+      percent: 2.56
+    Oil & Gas:
+      count: 4197
+      total: 271151
+      percent: 1.55
+    Nonmetallic mineral:
+      count: 2451
+      total: 271151
+      percent: 0.9
+    Metal ore mining:
+      count: 255
+      total: 271151
+      percent: 0.09
+  '2011':
+    Extractives:
+      count: 14205
+      total: 274743
+      percent: 5.17
+    Coal:
+      count: 7004
+      total: 274743
+      percent: 2.55
+    Oil & Gas:
+      count: 4316
+      total: 274743
+      percent: 1.57
+    Nonmetallic mineral:
+      count: 2590
+      total: 274743
+      percent: 0.94
+    Metal ore mining:
+      count: 295
+      total: 274743
+      percent: 0.11
+  '2012':
+    Extractives:
+      count: 11529
+      total: 278595
+      percent: 4.14
+    Coal:
+      count: 7009
+      total: 278595
+      percent: 2.52
+    Oil & Gas:
+      count: 4520
+      total: 278595
+      percent: 1.62
+  '2013':
+    Extractives:
+      count: 11189
+      total: 279748
+      percent: 4
+    Coal:
+      count: 6648
+      total: 279748
+      percent: 2.38
+    Oil & Gas:
+      count: 4541
+      total: 279748
+      percent: 1.62
+  '2014':
+    Extractives:
+      count: 11083
+      total: 284394
+      percent: 3.9
+    Coal:
+      count: 6541
+      total: 284394
+      percent: 2.3
+    Oil & Gas:
+      count: 4542
+      total: 284394
+      percent: 1.6
+  '2015':
+    Extractives:
+      count: 13711
+      total: 282667
+      percent: 4.85
+    Coal:
+      count: 6600
+      total: 282667
+      percent: 2.33
+    Oil & Gas:
+      count: 4253
+      total: 282667
+      percent: 1.5
+    Nonmetallic mineral:
+      count: 2637
+      total: 282667
+      percent: 0.93
+    Metal ore mining:
+      count: 221
+      total: 282667
+      percent: 0.08

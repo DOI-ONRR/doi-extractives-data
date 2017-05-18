@@ -1,0 +1,6 @@
+'{state}':
+  '{year}':
+    '{commodity}':
+      count: '{jobs}'
+      total: '{total}'
+      percent: '{percent}'

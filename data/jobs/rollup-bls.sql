@@ -64,7 +64,7 @@ UPDATE bls_employment
 DROP TABLE IF EXISTS state_bls_employment;
 CREATE TABLE state_bls_employment AS
     SELECT
-        year, commodity, region_id, state, jobs,
+        year, commodity, naics, region_id, state, jobs,
         0 AS total,
         0.01 AS percent
     FROM bls_employment
@@ -101,7 +101,7 @@ UPDATE state_bls_employment
 DROP TABLE IF EXISTS national_bls_employment;
 CREATE TABLE national_bls_employment AS
     SELECT
-        year, commodity,
+        year, commodity, naics,
         'US' AS state,
         'US' AS region_id,
         SUM(jobs) AS jobs,

@@ -164,7 +164,7 @@ data/state_jobs_by_commodity.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region_id AS state, year, \
-			commodity, jobs, total, percent \
+			commodity, naics, jobs, total, percent \
 		FROM state_bls_employment \
 		WHERE \
 			commodity != 'All' \
@@ -183,6 +183,18 @@ data/national_jobs.yml:
 		ORDER BY year" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \
+			-o _$@
+
+data/national_jobs_by_commodity.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, commodity, naics, jobs, total, percent \
+		FROM national_bls_employment \
+		WHERE \
+			commodity != 'All' \
+		ORDER BY year, jobs DESC" \
+		| $(nestly) --if ndjson \
+			-c _meta/national_jobs_by_commodity.yml \
 			-o _$@
 
 data/county_jobs:

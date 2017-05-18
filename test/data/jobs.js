@@ -40,7 +40,7 @@ function getDirectories(srcpath) {
 }
 
 
-describe('self employment data', function() {
+describe('wage and salary jobs data (BLS)', function() {
 
   var dataSource = path.join(
     __dirname,

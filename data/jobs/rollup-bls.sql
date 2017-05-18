@@ -1,3 +1,4 @@
+BEGIN;
 UPDATE bls_employment SET region_id = NULL, total = NULL;
 
 DELETE FROM bls_employment
@@ -7,9 +8,8 @@ INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)
   SELECT
     year, state, county, fips, region_id,
-     AS naics,
-    'Renewables' AS commodity,
-    END AS category,
+    '22111X' AS naics,
+    'Renewables' AS category,
     SUM(jobs) AS jobs
   FROM bls_employment
   WHERE commodity IN ('Geothermal', 'Solar', 'Wind')
@@ -130,3 +130,5 @@ UPDATE national_bls_employment
       LIMIT 1
     )
   WHERE commodity != 'All';
+
+COMMIT;

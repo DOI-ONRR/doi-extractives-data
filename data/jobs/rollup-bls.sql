@@ -3,23 +3,23 @@ UPDATE bls_employment SET region_id = NULL;
 DELETE FROM bls_employment
   WHERE commodity IN ('Extractives', 'Renewables');
 
--- INSERT INTO bls_employment
---     (year, state, county, fips, region_id, naics, commodity, jobs)
---   SELECT
---     year, state, county, fips, region_id,
---     SUBSTR(CAST(naics AS string), 1, 2) AS naics,
---     CASE
---       WHEN SUBSTR(CAST(naics AS string), 1, 2) = '22'
---       THEN 'Renewables'
---       ELSE 'Extractives'
---     END AS commodity,
---     SUM(jobs) AS jobs
---   FROM bls_employment
---   WHERE
---     -- Iron, Gold, and Copper are counted under "Metal ore mining"
---     commodity NOT IN ('All', 'Iron', 'Gold', 'Copper')
---   GROUP BY
---     year, state, county, fips, region_id;
+INSERT INTO bls_employment
+    (year, state, county, fips, region_id, naics, commodity, jobs)
+  SELECT
+    year, state, county, fips, region_id,
+    SUBSTR(CAST(naics AS string), 1, 2) AS naics,
+    CASE
+      WHEN commodity IN ('Geothermal', 'Solar', 'Wind')
+      THEN 'Renewables'
+      ELSE 'Extractives'
+    END AS category,
+    SUM(jobs) AS jobs
+  FROM bls_employment
+  WHERE
+    -- Iron, Gold, and Copper are counted under "Metal ore mining"
+    commodity NOT IN ('All', 'Iron', 'Gold', 'Copper')
+  GROUP BY
+    year, state, county, fips, region_id, category;
 
 -- set the region_id to the 2-letter code of the corresponding state
 UPDATE bls_employment
@@ -41,10 +41,7 @@ UPDATE bls_employment
   SET
     percent = (
       SELECT
-        ROUND(
-          CAST(bls_employment.jobs AS float) / superset.jobs * 100,
-          2
-        )
+        ROUND(100.0 * bls_employment.jobs / superset.jobs, 2)
       FROM
         bls_employment AS superset
       WHERE
@@ -69,10 +66,7 @@ UPDATE state_bls_employment
   SET
     percent = (
       SELECT
-        ROUND(
-          CAST(state_bls_employment.jobs AS float) / superset.jobs * 100,
-          2
-        )
+        ROUND(100.0 * state_bls_employment.jobs / superset.jobs, 2)
       FROM
         state_bls_employment AS superset
       WHERE
@@ -101,10 +95,7 @@ UPDATE national_bls_employment
   SET
     percent = (
       SELECT
-        ROUND(
-          CAST(national_bls_employment.jobs AS float) / superset.jobs * 100,
-          2
-        )
+        ROUND(100.0 * national_bls_employment.jobs / superset.jobs, 2)
       FROM
         national_bls_employment AS superset
       WHERE

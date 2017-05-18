@@ -4,6 +4,7 @@
 # the sum of all other NAICS codes that begin with 211.
 naics:
   All:                  10
+  Extractives:          21
   'Oil & Gas':          211
   Coal:                 2121
   Metal ore mining:     2122

@@ -3232,6 +3232,1226 @@ year	naics	commodity	state	county	fips	jobs
 2007	10	All	Virgin Islands	St. Croix	78010	19989
 2007	10	All	Virgin Islands	St. John	78020	2450
 2007	10	All	Virgin Islands	St. Thomas	78030	23483
+2007	21	Extractives	Alabama		01000	8176
+2007	21	Extractives	Alabama	Autauga County	01001	43
+2007	21	Extractives	Alabama	Baldwin County	01003	42
+2007	21	Extractives	Alabama	Barbour County	01005	121
+2007	21	Extractives	Alabama	Choctaw County	01023	14
+2007	21	Extractives	Alabama	Colbert County	01033	104
+2007	21	Extractives	Alabama	Dallas County	01047	40
+2007	21	Extractives	Alabama	Elmore County	01051	64
+2007	21	Extractives	Alabama	Escambia County	01053	150
+2007	21	Extractives	Alabama	Fayette County	01057	77
+2007	21	Extractives	Alabama	Franklin County	01059	68
+2007	21	Extractives	Alabama	Jackson County	01071	75
+2007	21	Extractives	Alabama	Jefferson County	01073	1420
+2007	21	Extractives	Alabama	Lee County	01081	64
+2007	21	Extractives	Alabama	Macon County	01087	46
+2007	21	Extractives	Alabama	Madison County	01089	80
+2007	21	Extractives	Alabama	Mobile County	01097	425
+2007	21	Extractives	Alabama	Montgomery County	01101	71
+2007	21	Extractives	Alabama	Morgan County	01103	100
+2007	21	Extractives	Alabama	Shelby County	01117	483
+2007	21	Extractives	Alabama	Talladega County	01121	434
+2007	21	Extractives	Alabama	Tuscaloosa County	01125	2636
+2007	21	Extractives	Alabama	Walker County	01127	539
+2007	21	Extractives	Alaska		02000	13759
+2007	21	Extractives	Alaska	Anchorage Borough	02020	2545
+2007	21	Extractives	Alaska	Fairbanks North Star Borough	02090	1116
+2007	21	Extractives	Alaska	Juneau Borough	02110	424
+2007	21	Extractives	Alaska	Kenai Peninsula Borough	02122	995
+2007	21	Extractives	Alaska	Matanuska-Susitna Borough	02170	31
+2007	21	Extractives	Alaska	North Slope Borough	02185	7496
+2007	21	Extractives	Alaska	Valdez-Cordova Census Area	02261	31
+2007	21	Extractives	Arizona		04000	11449
+2007	21	Extractives	Arizona	Cochise County	04003	59
+2007	21	Extractives	Arizona	Coconino County	04005	91
+2007	21	Extractives	Arizona	Gila County	04007	751
+2007	21	Extractives	Arizona	Maricopa County	04013	1987
+2007	21	Extractives	Arizona	Mohave County	04015	153
+2007	21	Extractives	Arizona	Navajo County	04017	557
+2007	21	Extractives	Arizona	Pima County	04019	1802
+2007	21	Extractives	Arizona	Pinal County	04021	1245
+2007	21	Extractives	Arizona	Yavapai County	04025	1254
+2007	21	Extractives	Arkansas		05000	6837
+2007	21	Extractives	Arkansas	Carroll County	05015	17
+2007	21	Extractives	Arkansas	Cleburne County	05023	37
+2007	21	Extractives	Arkansas	Columbia County	05027	494
+2007	21	Extractives	Arkansas	Conway County	05029	76
+2007	21	Extractives	Arkansas	Craighead County	05031	26
+2007	21	Extractives	Arkansas	Crawford County	05033	418
+2007	21	Extractives	Arkansas	Faulkner County	05045	609
+2007	21	Extractives	Arkansas	Garland County	05051	198
+2007	21	Extractives	Arkansas	Grant County	05053	45
+2007	21	Extractives	Arkansas	Greene County	05055	13
+2007	21	Extractives	Arkansas	Hot Spring County	05059	75
+2007	21	Extractives	Arkansas	Independence County	05063	61
+2007	21	Extractives	Arkansas	Lafayette County	05073	80
+2007	21	Extractives	Arkansas	Lawrence County	05075	80
+2007	21	Extractives	Arkansas	Logan County	05083	138
+2007	21	Extractives	Arkansas	Ouachita County	05103	96
+2007	21	Extractives	Arkansas	Pope County	05115	44
+2007	21	Extractives	Arkansas	Pulaski County	05119	577
+2007	21	Extractives	Arkansas	Sebastian County	05131	1581
+2007	21	Extractives	Arkansas	Union County	05139	305
+2007	21	Extractives	Arkansas	Van Buren County	05141	28
+2007	21	Extractives	Arkansas	Washington County	05143	120
+2007	21	Extractives	Arkansas	White County	05145	317
+2007	21	Extractives	California		06000	24935
+2007	21	Extractives	California	Alameda County	06001	161
+2007	21	Extractives	California	Amador County	06005	150
+2007	21	Extractives	California	Butte County	06007	37
+2007	21	Extractives	California	Contra Costa County	06013	1049
+2007	21	Extractives	California	El Dorado County	06017	52
+2007	21	Extractives	California	Fresno County	06019	116
+2007	21	Extractives	California	Glenn County	06021	11
+2007	21	Extractives	California	Inyo County	06027	14
+2007	21	Extractives	California	Kern County	06029	9767
+2007	21	Extractives	California	Los Angeles County	06037	4437
+2007	21	Extractives	California	Mendocino County	06045	46
+2007	21	Extractives	California	Monterey County	06053	188
+2007	21	Extractives	California	Napa County	06055	63
+2007	21	Extractives	California	Nevada County	06057	85
+2007	21	Extractives	California	Orange County	06059	561
+2007	21	Extractives	California	Placer County	06061	51
+2007	21	Extractives	California	Riverside County	06065	675
+2007	21	Extractives	California	Sacramento County	06067	252
+2007	21	Extractives	California	San Bernardino County	06071	609
+2007	21	Extractives	California	San Diego County	06073	422
+2007	21	Extractives	California	San Francisco County	06075	33
+2007	21	Extractives	California	San Joaquin County	06077	226
+2007	21	Extractives	California	San Luis Obispo County	06079	113
+2007	21	Extractives	California	San Mateo County	06081	46
+2007	21	Extractives	California	Santa Barbara County	06083	1189
+2007	21	Extractives	California	Santa Clara County	06085	255
+2007	21	Extractives	California	Sierra County	06091	4
+2007	21	Extractives	California	Solano County	06095	280
+2007	21	Extractives	California	Sonoma County	06097	211
+2007	21	Extractives	California	Sutter County	06101	104
+2007	21	Extractives	California	Tulare County	06107	43
+2007	21	Extractives	California	Tuolumne County	06109	130
+2007	21	Extractives	California	Ventura County	06111	1058
+2007	21	Extractives	California	Yolo County	06113	249
+2007	21	Extractives	California	Yuba County	06115	152
+2007	21	Extractives	Colorado		08000	25019
+2007	21	Extractives	Colorado	Adams County	08001	238
+2007	21	Extractives	Colorado	Arapahoe County	08005	662
+2007	21	Extractives	Colorado	Archuleta County	08007	44
+2007	21	Extractives	Colorado	Baca County	08009	7
+2007	21	Extractives	Colorado	Boulder County	08013	892
+2007	21	Extractives	Colorado	Chaffee County	08015	18
+2007	21	Extractives	Colorado	Cheyenne County	08017	105
+2007	21	Extractives	Colorado	Conejos County	08021	33
+2007	21	Extractives	Colorado	Delta County	08029	472
+2007	21	Extractives	Colorado	Denver County	08031	5921
+2007	21	Extractives	Colorado	Douglas County	08035	279
+2007	21	Extractives	Colorado	Eagle County	08037	14
+2007	21	Extractives	Colorado	El Paso County	08041	135
+2007	21	Extractives	Colorado	Fremont County	08043	78
+2007	21	Extractives	Colorado	Garfield County	08045	2339
+2007	21	Extractives	Colorado	Jefferson County	08059	592
+2007	21	Extractives	Colorado	La Plata County	08067	630
+2007	21	Extractives	Colorado	Larimer County	08069	404
+2007	21	Extractives	Colorado	Las Animas County	08071	399
+2007	21	Extractives	Colorado	Logan County	08075	158
+2007	21	Extractives	Colorado	Mesa County	08077	3013
+2007	21	Extractives	Colorado	Moffat County	08081	639
+2007	21	Extractives	Colorado	Montezuma County	08083	88
+2007	21	Extractives	Colorado	Montrose County	08085	131
+2007	21	Extractives	Colorado	Morgan County	08087	298
+2007	21	Extractives	Colorado	Pueblo County	08101	65
+2007	21	Extractives	Colorado	Rio Blanco County	08103	868
+2007	21	Extractives	Colorado	Weld County	08123	2912
+2007	21	Extractives	Colorado	Yuma County	08125	364
+2007	21	Extractives	Connecticut		09000	715
+2007	21	Extractives	Connecticut	Hartford County	09003	94
+2007	21	Extractives	Connecticut	Litchfield County	09005	92
+2007	21	Extractives	Connecticut	New Haven County	09009	253
+2007	21	Extractives	Connecticut	New London County	09011	89
+2007	21	Extractives	Connecticut	Windham County	09015	81
+2007	21	Extractives	Delaware		10000	9
+2007	21	Extractives	Florida		12000	4711
+2007	21	Extractives	Florida	Bay County	12005	20
+2007	21	Extractives	Florida	Brevard County	12009	96
+2007	21	Extractives	Florida	Broward County	12011	126
+2007	21	Extractives	Florida	Charlotte County	12015	89
+2007	21	Extractives	Florida	Citrus County	12017	72
+2007	21	Extractives	Florida	Collier County	12021	43
+2007	21	Extractives	Florida	Duval County	12031	89
+2007	21	Extractives	Florida	Escambia County	12033	73
+2007	21	Extractives	Florida	Hernando County	12053	132
+2007	21	Extractives	Florida	Hillsborough County	12057	382
+2007	21	Extractives	Florida	Lake County	12069	189
+2007	21	Extractives	Florida	Lee County	12071	140
+2007	21	Extractives	Florida	Levy County	12075	42
+2007	21	Extractives	Florida	Marion County	12083	155
+2007	21	Extractives	Florida	Miami-Dade County	12086	552
+2007	21	Extractives	Florida	Okaloosa County	12091	9
+2007	21	Extractives	Florida	Okeechobee County	12093	36
+2007	21	Extractives	Florida	Orange County	12095	65
+2007	21	Extractives	Florida	Pasco County	12101	65
+2007	21	Extractives	Florida	Pinellas County	12103	5
+2007	21	Extractives	Florida	Polk County	12105	826
+2007	21	Extractives	Florida	St. Lucie County	12111	55
+2007	21	Extractives	Florida	Santa Rosa County	12113	85
+2007	21	Extractives	Florida	Sarasota County	12115	97
+2007	21	Extractives	Florida	Seminole County	12117	5
+2007	21	Extractives	Florida	Sumter County	12119	47
+2007	21	Extractives	Florida	Suwannee County	12121	31
+2007	21	Extractives	Florida	Taylor County	12123	67
+2007	21	Extractives	Florida	Volusia County	12127	18
+2007	21	Extractives	Georgia		13000	6861
+2007	21	Extractives	Georgia	Cherokee County	13057	59
+2007	21	Extractives	Georgia	Decatur County	13087	315
+2007	21	Extractives	Georgia	Forsyth County	13117	100
+2007	21	Extractives	Georgia	Fulton County	13121	678
+2007	21	Extractives	Georgia	Hall County	13139	63
+2007	21	Extractives	Georgia	Henry County	13151	84
+2007	21	Extractives	Georgia	Jefferson County	13163	371
+2007	21	Extractives	Georgia	Oglethorpe County	13221	91
+2007	21	Extractives	Georgia	Pickens County	13227	224
+2007	21	Extractives	Georgia	Thomas County	13275	326
+2007	21	Extractives	Georgia	Washington County	13303	431
+2007	21	Extractives	Georgia	Whitfield County	13313	120
+2007	21	Extractives	Georgia	Wilkinson County	13319	965
+2007	21	Extractives	Hawaii		15000	302
+2007	21	Extractives	Hawaii	Honolulu County	15003	261
+2007	21	Extractives	Idaho		16000	2653
+2007	21	Extractives	Idaho	Ada County	16001	109
+2007	21	Extractives	Idaho	Bannock County	16005	26
+2007	21	Extractives	Idaho	Benewah County	16009	65
+2007	21	Extractives	Idaho	Blaine County	16013	35
+2007	21	Extractives	Idaho	Boise County	16015	16
+2007	21	Extractives	Idaho	Bonner County	16017	154
+2007	21	Extractives	Idaho	Canyon County	16027	68
+2007	21	Extractives	Idaho	Caribou County	16029	358
+2007	21	Extractives	Idaho	Cassia County	16031	144
+2007	21	Extractives	Idaho	Idaho County	16049	85
+2007	21	Extractives	Idaho	Kootenai County	16055	144
+2007	21	Extractives	Idaho	Shoshone County	16079	569
+2007	21	Extractives	Idaho	Twin Falls County	16083	44
+2007	21	Extractives	Idaho	Valley County	16085	27
+2007	21	Extractives	Illinois		17000	9963
+2007	21	Extractives	Illinois	Adams County	17001	237
+2007	21	Extractives	Illinois	Clark County	17023	88
+2007	21	Extractives	Illinois	Clay County	17025	149
+2007	21	Extractives	Illinois	Clinton County	17027	19
+2007	21	Extractives	Illinois	Coles County	17029	26
+2007	21	Extractives	Illinois	Cook County	17031	772
+2007	21	Extractives	Illinois	Crawford County	17033	142
+2007	21	Extractives	Illinois	DeKalb County	17037	67
+2007	21	Extractives	Illinois	DuPage County	17043	145
+2007	21	Extractives	Illinois	Effingham County	17049	33
+2007	21	Extractives	Illinois	Fayette County	17051	110
+2007	21	Extractives	Illinois	Franklin County	17055	18
+2007	21	Extractives	Illinois	Grundy County	17063	66
+2007	21	Extractives	Illinois	Iroquois County	17075	19
+2007	21	Extractives	Illinois	Jackson County	17077	285
+2007	21	Extractives	Illinois	Jasper County	17079	29
+2007	21	Extractives	Illinois	Kane County	17089	128
+2007	21	Extractives	Illinois	Kendall County	17093	30
+2007	21	Extractives	Illinois	McHenry County	17111	75
+2007	21	Extractives	Illinois	Madison County	17119	125
+2007	21	Extractives	Illinois	Marion County	17121	159
+2007	21	Extractives	Illinois	Monroe County	17133	52
+2007	21	Extractives	Illinois	Montgomery County	17135	295
+2007	21	Extractives	Illinois	Ogle County	17141	43
+2007	21	Extractives	Illinois	Randolph County	17157	59
+2007	21	Extractives	Illinois	Richland County	17159	168
+2007	21	Extractives	Illinois	Rock Island County	17161	79
+2007	21	Extractives	Illinois	St. Clair County	17163	92
+2007	21	Extractives	Illinois	Tazewell County	17179	24
+2007	21	Extractives	Illinois	Wabash County	17185	312
+2007	21	Extractives	Illinois	Washington County	17189	13
+2007	21	Extractives	Illinois	Wayne County	17191	121
+2007	21	Extractives	Illinois	White County	17193	738
+2007	21	Extractives	Illinois	Whiteside County	17195	62
+2007	21	Extractives	Illinois	Will County	17197	297
+2007	21	Extractives	Indiana		18000	6652
+2007	21	Extractives	Indiana	Allen County	18003	144
+2007	21	Extractives	Indiana	Bartholomew County	18005	52
+2007	21	Extractives	Indiana	Clark County	18019	152
+2007	21	Extractives	Indiana	Daviess County	18027	526
+2007	21	Extractives	Indiana	Elkhart County	18039	50
+2007	21	Extractives	Indiana	Gibson County	18051	645
+2007	21	Extractives	Indiana	Hamilton County	18057	203
+2007	21	Extractives	Indiana	Harrison County	18061	143
+2007	21	Extractives	Indiana	Knox County	18083	47
+2007	21	Extractives	Indiana	Lake County	18089	279
+2007	21	Extractives	Indiana	LaPorte County	18091	35
+2007	21	Extractives	Indiana	Lawrence County	18093	168
+2007	21	Extractives	Indiana	Marion County	18097	198
+2007	21	Extractives	Indiana	Miami County	18103	93
+2007	21	Extractives	Indiana	Monroe County	18105	154
+2007	21	Extractives	Indiana	Montgomery County	18107	72
+2007	21	Extractives	Indiana	Morgan County	18109	78
+2007	21	Extractives	Indiana	Noble County	18113	23
+2007	21	Extractives	Indiana	Orange County	18117	62
+2007	21	Extractives	Indiana	Posey County	18129	23
+2007	21	Extractives	Indiana	Putnam County	18133	51
+2007	21	Extractives	Indiana	St. Joseph County	18141	12
+2007	21	Extractives	Indiana	Shelby County	18145	194
+2007	21	Extractives	Indiana	Steuben County	18151	15
+2007	21	Extractives	Indiana	Sullivan County	18153	20
+2007	21	Extractives	Indiana	Vanderburgh County	18163	508
+2007	21	Extractives	Indiana	Vigo County	18167	23
+2007	21	Extractives	Indiana	Wabash County	18169	8
+2007	21	Extractives	Indiana	Warrick County	18173	154
+2007	21	Extractives	Indiana	Wayne County	18177	27
+2007	21	Extractives	Iowa		19000	2112
+2007	21	Extractives	Iowa	Black Hawk County	19013	67
+2007	21	Extractives	Iowa	Cerro Gordo County	19033	23
+2007	21	Extractives	Iowa	Fayette County	19065	10
+2007	21	Extractives	Iowa	Hardin County	19083	136
+2007	21	Extractives	Iowa	Linn County	19113	114
+2007	21	Extractives	Iowa	Muscatine County	19139	59
+2007	21	Extractives	Iowa	Scott County	19163	14
+2007	21	Extractives	Iowa	Sioux County	19167	47
+2007	21	Extractives	Iowa	Winneshiek County	19191	134
+2007	21	Extractives	Kansas		20000	9259
+2007	21	Extractives	Kansas	Anderson County	20003	22
+2007	21	Extractives	Kansas	Atchison County	20005	26
+2007	21	Extractives	Kansas	Barber County	20007	134
+2007	21	Extractives	Kansas	Barton County	20009	758
+2007	21	Extractives	Kansas	Butler County	20015	101
+2007	21	Extractives	Kansas	Clark County	20025	8
+2007	21	Extractives	Kansas	Coffey County	20031	53
+2007	21	Extractives	Kansas	Comanche County	20033	8
+2007	21	Extractives	Kansas	Cowley County	20035	60
+2007	21	Extractives	Kansas	Crawford County	20037	38
+2007	21	Extractives	Kansas	Dickinson County	20041	16
+2007	21	Extractives	Kansas	Douglas County	20045	27
+2007	21	Extractives	Kansas	Ellis County	20051	628
+2007	21	Extractives	Kansas	Finney County	20055	291
+2007	21	Extractives	Kansas	Franklin County	20059	46
+2007	21	Extractives	Kansas	Gove County	20063	5
+2007	21	Extractives	Kansas	Graham County	20065	156
+2007	21	Extractives	Kansas	Grant County	20067	347
+2007	21	Extractives	Kansas	Greenwood County	20073	139
+2007	21	Extractives	Kansas	Harper County	20077	57
+2007	21	Extractives	Kansas	Harvey County	20079	42
+2007	21	Extractives	Kansas	Haskell County	20081	93
+2007	21	Extractives	Kansas	Johnson County	20091	331
+2007	21	Extractives	Kansas	Kearny County	20093	33
+2007	21	Extractives	Kansas	Kingman County	20095	95
+2007	21	Extractives	Kansas	Kiowa County	20097	45
+2007	21	Extractives	Kansas	Leavenworth County	20103	12
+2007	21	Extractives	Kansas	Lyon County	20111	33
+2007	21	Extractives	Kansas	Mcpherson County	20113	122
+2007	21	Extractives	Kansas	Marion County	20115	49
+2007	21	Extractives	Kansas	Meade County	20119	11
+2007	21	Extractives	Kansas	Miami County	20121	80
+2007	21	Extractives	Kansas	Montgomery County	20125	218
+2007	21	Extractives	Kansas	Morton County	20129	123
+2007	21	Extractives	Kansas	Neosho County	20133	458
+2007	21	Extractives	Kansas	Phillips County	20147	28
+2007	21	Extractives	Kansas	Pratt County	20151	461
+2007	21	Extractives	Kansas	Reno County	20155	110
+2007	21	Extractives	Kansas	Rice County	20159	70
+2007	21	Extractives	Kansas	Rooks County	20163	137
+2007	21	Extractives	Kansas	Russell County	20167	312
+2007	21	Extractives	Kansas	Sedgwick County	20173	718
+2007	21	Extractives	Kansas	Seward County	20175	795
+2007	21	Extractives	Kansas	Shawnee County	20177	69
+2007	21	Extractives	Kansas	Sherman County	20181	11
+2007	21	Extractives	Kansas	Stafford County	20185	25
+2007	21	Extractives	Kansas	Stevens County	20189	100
+2007	21	Extractives	Kansas	Sumner County	20191	35
+2007	21	Extractives	Kansas	Wilson County	20205	48
+2007	21	Extractives	Kentucky		21000	21783
+2007	21	Extractives	Kentucky	Barren County	21009	64
+2007	21	Extractives	Kentucky	Bell County	21013	960
+2007	21	Extractives	Kentucky	Boyd County	21019	160
+2007	21	Extractives	Kentucky	Boyle County	21021	21
+2007	21	Extractives	Kentucky	Breckinridge County	21027	25
+2007	21	Extractives	Kentucky	Caldwell County	21033	72
+2007	21	Extractives	Kentucky	Carter County	21043	59
+2007	21	Extractives	Kentucky	Christian County	21047	38
+2007	21	Extractives	Kentucky	Daviess County	21059	167
+2007	21	Extractives	Kentucky	Fayette County	21067	328
+2007	21	Extractives	Kentucky	Floyd County	21071	1536
+2007	21	Extractives	Kentucky	Graves County	21083	55
+2007	21	Extractives	Kentucky	Hardin County	21093	43
+2007	21	Extractives	Kentucky	Harlan County	21095	1377
+2007	21	Extractives	Kentucky	Henderson County	21101	314
+2007	21	Extractives	Kentucky	Hopkins County	21107	1191
+2007	21	Extractives	Kentucky	Jefferson County	21111	170
+2007	21	Extractives	Kentucky	Knox County	21121	168
+2007	21	Extractives	Kentucky	Laurel County	21125	360
+2007	21	Extractives	Kentucky	Lee County	21129	124
+2007	21	Extractives	Kentucky	Leslie County	21131	428
+2007	21	Extractives	Kentucky	Letcher County	21133	1232
+2007	21	Extractives	Kentucky	Livingston County	21139	374
+2007	21	Extractives	Kentucky	Meade County	21163	98
+2007	21	Extractives	Kentucky	Muhlenberg County	21177	778
+2007	21	Extractives	Kentucky	Ohio County	21183	25
+2007	21	Extractives	Kentucky	Perry County	21193	2036
+2007	21	Extractives	Kentucky	Pike County	21195	4355
+2007	21	Extractives	Kentucky	Union County	21225	610
+2007	21	Extractives	Kentucky	Warren County	21227	195
+2007	21	Extractives	Kentucky	Webster County	21233	247
+2007	21	Extractives	Kentucky	Whitley County	21235	66
+2007	21	Extractives	Louisiana		22000	48026
+2007	21	Extractives	Louisiana	Acadia Parish	22001	604
+2007	21	Extractives	Louisiana	Ascension Parish	22005	322
+2007	21	Extractives	Louisiana	Assumption Parish	22007	34
+2007	21	Extractives	Louisiana	Avoyelles Parish	22009	7
+2007	21	Extractives	Louisiana	Beauregard Parish	22011	36
+2007	21	Extractives	Louisiana	Bienville Parish	22013	129
+2007	21	Extractives	Louisiana	Bossier Parish	22015	1359
+2007	21	Extractives	Louisiana	Caddo Parish	22017	1880
+2007	21	Extractives	Louisiana	Calcasieu Parish	22019	1271
+2007	21	Extractives	Louisiana	Caldwell Parish	22021	34
+2007	21	Extractives	Louisiana	Cameron Parish	22023	200
+2007	21	Extractives	Louisiana	Catahoula Parish	22025	55
+2007	21	Extractives	Louisiana	Claiborne Parish	22027	460
+2007	21	Extractives	Louisiana	Concordia Parish	22029	243
+2007	21	Extractives	Louisiana	De Soto Parish	22031	447
+2007	21	Extractives	Louisiana	East Baton Rouge Parish	22033	898
+2007	21	Extractives	Louisiana	Evangeline Parish	22039	12
+2007	21	Extractives	Louisiana	Grant Parish	22043	4
+2007	21	Extractives	Louisiana	Iberia Parish	22045	3133
+2007	21	Extractives	Louisiana	Iberville Parish	22047	140
+2007	21	Extractives	Louisiana	Jefferson Parish	22051	2129
+2007	21	Extractives	Louisiana	Jefferson Davis Parish	22053	260
+2007	21	Extractives	Louisiana	Lafayette Parish	22055	15890
+2007	21	Extractives	Louisiana	Lafourche Parish	22057	899
+2007	21	Extractives	Louisiana	LaSalle Parish	22059	343
+2007	21	Extractives	Louisiana	Lincoln Parish	22061	121
+2007	21	Extractives	Louisiana	Livingston Parish	22063	133
+2007	21	Extractives	Louisiana	Orleans Parish	22071	3659
+2007	21	Extractives	Louisiana	Ouachita Parish	22073	150
+2007	21	Extractives	Louisiana	Plaquemines Parish	22075	1640
+2007	21	Extractives	Louisiana	Rapides Parish	22079	119
+2007	21	Extractives	Louisiana	Red River Parish	22081	52
+2007	21	Extractives	Louisiana	Richland Parish	22083	29
+2007	21	Extractives	Louisiana	Sabine Parish	22085	39
+2007	21	Extractives	Louisiana	St. John the Baptist Parish	22095	434
+2007	21	Extractives	Louisiana	St. Landry Parish	22097	422
+2007	21	Extractives	Louisiana	St. Mary Parish	22101	1193
+2007	21	Extractives	Louisiana	St. Tammany Parish	22103	289
+2007	21	Extractives	Louisiana	Tangipahoa Parish	22105	126
+2007	21	Extractives	Louisiana	Terrebonne Parish	22109	5924
+2007	21	Extractives	Louisiana	Vermilion Parish	22113	1035
+2007	21	Extractives	Louisiana	Washington Parish	22117	87
+2007	21	Extractives	Louisiana	Webster Parish	22119	528
+2007	21	Extractives	Louisiana	Winn Parish	22127	67
+2007	21	Extractives	Maine		23000	109
+2007	21	Extractives	Maine	Hancock County	23009	13
+2007	21	Extractives	Maine	Oxford County	23017	19
+2007	21	Extractives	Maine	York County	23031	26
+2007	21	Extractives	Maryland		24000	1652
+2007	21	Extractives	Maryland	Anne Arundel County	24003	66
+2007	21	Extractives	Maryland	Baltimore County	24005	95
+2007	21	Extractives	Maryland	Cecil County	24015	162
+2007	21	Extractives	Maryland	Garrett County	24023	369
+2007	21	Extractives	Maryland	Harford County	24025	32
+2007	21	Extractives	Maryland	Montgomery County	24031	348
+2007	21	Extractives	Maryland	"Prince George's County"	24033	168
+2007	21	Extractives	Maryland	Washington County	24043	68
+2007	21	Extractives	Maryland	Worcester County	24047	5
+2007	21	Extractives	Massachusetts		25000	1483
+2007	21	Extractives	Massachusetts	Berkshire County	25003	107
+2007	21	Extractives	Massachusetts	Bristol County	25005	81
+2007	21	Extractives	Massachusetts	Essex County	25009	69
+2007	21	Extractives	Massachusetts	Hampden County	25013	85
+2007	21	Extractives	Massachusetts	Hampshire County	25015	33
+2007	21	Extractives	Massachusetts	Middlesex County	25017	417
+2007	21	Extractives	Massachusetts	Norfolk County	25021	72
+2007	21	Extractives	Massachusetts	Plymouth County	25023	271
+2007	21	Extractives	Massachusetts	Worcester County	25027	234
+2007	21	Extractives	Michigan		26000	6219
+2007	21	Extractives	Michigan	Allegan County	26005	173
+2007	21	Extractives	Michigan	Alpena County	26007	37
+2007	21	Extractives	Michigan	Antrim County	26009	8
+2007	21	Extractives	Michigan	Arenac County	26011	33
+2007	21	Extractives	Michigan	Bay County	26017	16
+2007	21	Extractives	Michigan	Berrien County	26021	123
+2007	21	Extractives	Michigan	Clare County	26035	4
+2007	21	Extractives	Michigan	Crawford County	26039	17
+2007	21	Extractives	Michigan	Delta County	26041	11
+2007	21	Extractives	Michigan	Eaton County	26045	32
+2007	21	Extractives	Michigan	Genesee County	26049	14
+2007	21	Extractives	Michigan	Grand Traverse County	26055	316
+2007	21	Extractives	Michigan	Gratiot County	26057	9
+2007	21	Extractives	Michigan	Hillsdale County	26059	13
+2007	21	Extractives	Michigan	Ingham County	26065	216
+2007	21	Extractives	Michigan	Iosco County	26069	55
+2007	21	Extractives	Michigan	Isabella County	26073	343
+2007	21	Extractives	Michigan	Jackson County	26075	38
+2007	21	Extractives	Michigan	Kalamazoo County	26077	31
+2007	21	Extractives	Michigan	Kalkaska County	26079	350
+2007	21	Extractives	Michigan	Kent County	26081	129
+2007	21	Extractives	Michigan	Lapeer County	26087	76
+2007	21	Extractives	Michigan	Livingston County	26093	38
+2007	21	Extractives	Michigan	Manistee County	26101	32
+2007	21	Extractives	Michigan	Marquette County	26103	1396
+2007	21	Extractives	Michigan	Montcalm County	26117	11
+2007	21	Extractives	Michigan	Montmorency County	26119	28
+2007	21	Extractives	Michigan	Newaygo County	26123	7
+2007	21	Extractives	Michigan	Oakland County	26125	188
+2007	21	Extractives	Michigan	Ogemaw County	26129	27
+2007	21	Extractives	Michigan	Otsego County	26137	297
+2007	21	Extractives	Michigan	Ottawa County	26139	106
+2007	21	Extractives	Michigan	St. Clair County	26147	5
+2007	21	Extractives	Michigan	Sanilac County	26151	73
+2007	21	Extractives	Michigan	Schoolcraft County	26153	132
+2007	21	Extractives	Michigan	Shiawassee County	26155	55
+2007	21	Extractives	Michigan	Tuscola County	26157	31
+2007	21	Extractives	Michigan	Washtenaw County	26161	12
+2007	21	Extractives	Michigan	Wayne County	26163	487
+2007	21	Extractives	Michigan	Wexford County	26165	21
+2007	21	Extractives	Minnesota		27000	5225
+2007	21	Extractives	Minnesota	Carlton County	27017	10
+2007	21	Extractives	Minnesota	Dakota County	27037	149
+2007	21	Extractives	Minnesota	Freeborn County	27047	5
+2007	21	Extractives	Minnesota	Hennepin County	27053	51
+2007	21	Extractives	Minnesota	Kanabec County	27065	26
+2007	21	Extractives	Minnesota	Meeker County	27093	15
+2007	21	Extractives	Minnesota	Mille Lacs County	27095	14
+2007	21	Extractives	Minnesota	Morrison County	27097	13
+2007	21	Extractives	Minnesota	Murray County	27101	18
+2007	21	Extractives	Minnesota	Olmsted County	27109	11
+2007	21	Extractives	Minnesota	Otter Tail County	27111	25
+2007	21	Extractives	Minnesota	Polk County	27119	53
+2007	21	Extractives	Minnesota	Rice County	27131	38
+2007	21	Extractives	Minnesota	St. Louis County	27137	2840
+2007	21	Extractives	Minnesota	Scott County	27139	81
+2007	21	Extractives	Minnesota	Stearns County	27145	120
+2007	21	Extractives	Minnesota	Washington County	27163	53
+2007	21	Extractives	Mississippi		28000	6178
+2007	21	Extractives	Mississippi	Adams County	28001	483
+2007	21	Extractives	Mississippi	Clarke County	28023	142
+2007	21	Extractives	Mississippi	Copiah County	28029	107
+2007	21	Extractives	Mississippi	Covington County	28031	10
+2007	21	Extractives	Mississippi	DeSoto County	28033	24
+2007	21	Extractives	Mississippi	Forrest County	28035	37
+2007	21	Extractives	Mississippi	Greene County	28041	16
+2007	21	Extractives	Mississippi	Hinds County	28049	263
+2007	21	Extractives	Mississippi	Jackson County	28059	54
+2007	21	Extractives	Mississippi	Jasper County	28061	103
+2007	21	Extractives	Mississippi	Jefferson Davis County	28065	73
+2007	21	Extractives	Mississippi	Jones County	28067	1658
+2007	21	Extractives	Mississippi	Lamar County	28073	51
+2007	21	Extractives	Mississippi	Lawrence County	28077	8
+2007	21	Extractives	Mississippi	Lincoln County	28085	175
+2007	21	Extractives	Mississippi	Lowndes County	28087	50
+2007	21	Extractives	Mississippi	Madison County	28089	106
+2007	21	Extractives	Mississippi	Marion County	28091	138
+2007	21	Extractives	Mississippi	Monroe County	28095	115
+2007	21	Extractives	Mississippi	Panola County	28107	21
+2007	21	Extractives	Mississippi	Pike County	28113	39
+2007	21	Extractives	Mississippi	Rankin County	28121	191
+2007	21	Extractives	Mississippi	Smith County	28129	10
+2007	21	Extractives	Mississippi	Tippah County	28139	61
+2007	21	Extractives	Mississippi	Walthall County	28147	6
+2007	21	Extractives	Mississippi	Wayne County	28153	174
+2007	21	Extractives	Missouri		29000	5477
+2007	21	Extractives	Missouri	Barry County	29009	43
+2007	21	Extractives	Missouri	Bates County	29013	33
+2007	21	Extractives	Missouri	Boone County	29019	68
+2007	21	Extractives	Missouri	Callaway County	29027	100
+2007	21	Extractives	Missouri	Cape Girardeau County	29031	77
+2007	21	Extractives	Missouri	Cass County	29037	131
+2007	21	Extractives	Missouri	Clay County	29047	61
+2007	21	Extractives	Missouri	Franklin County	29071	63
+2007	21	Extractives	Missouri	Howell County	29091	38
+2007	21	Extractives	Missouri	Jackson County	29095	44
+2007	21	Extractives	Missouri	Jasper County	29097	107
+2007	21	Extractives	Missouri	Lincoln County	29113	82
+2007	21	Extractives	Missouri	Montgomery County	29139	10
+2007	21	Extractives	Missouri	Newton County	29145	20
+2007	21	Extractives	Missouri	Pettis County	29159	35
+2007	21	Extractives	Missouri	Phelps County	29161	46
+2007	21	Extractives	Missouri	Pike County	29163	55
+2007	21	Extractives	Missouri	Polk County	29167	18
+2007	21	Extractives	Missouri	St. Charles County	29183	86
+2007	21	Extractives	Missouri	Ste. Genevieve County	29186	296
+2007	21	Extractives	Missouri	St. Francois County	29187	104
+2007	21	Extractives	Missouri	St. Louis County	29189	492
+2007	21	Extractives	Missouri	Vernon County	29217	9
+2007	21	Extractives	Missouri	Wright County	29229	12
+2007	21	Extractives	Montana		30000	7474
+2007	21	Extractives	Montana	Big Horn County	30003	540
+2007	21	Extractives	Montana	Carbon County	30009	37
+2007	21	Extractives	Montana	Dawson County	30021	88
+2007	21	Extractives	Montana	Fergus County	30027	3
+2007	21	Extractives	Montana	Flathead County	30029	281
+2007	21	Extractives	Montana	Gallatin County	30031	248
+2007	21	Extractives	Montana	Glacier County	30035	144
+2007	21	Extractives	Montana	Hill County	30041	122
+2007	21	Extractives	Montana	Lake County	30047	15
+2007	21	Extractives	Montana	Lewis and Clark County	30049	51
+2007	21	Extractives	Montana	Lincoln County	30053	221
+2007	21	Extractives	Montana	Madison County	30057	70
+2007	21	Extractives	Montana	Missoula County	30063	36
+2007	21	Extractives	Montana	Musselshell County	30065	51
+2007	21	Extractives	Montana	Park County	30067	7
+2007	21	Extractives	Montana	Ravalli County	30081	6
+2007	21	Extractives	Montana	Richland County	30083	569
+2007	21	Extractives	Montana	Roosevelt County	30085	14
+2007	21	Extractives	Montana	Rosebud County	30087	529
+2007	21	Extractives	Montana	Sanders County	30089	83
+2007	21	Extractives	Montana	Silver Bow County	30093	406
+2007	21	Extractives	Montana	Valley County	30105	19
+2007	21	Extractives	Montana	Yellowstone County	30111	366
+2007	21	Extractives	Nebraska		31000	961
+2007	21	Extractives	Nebraska	Buffalo County	31019	46
+2007	21	Extractives	Nebraska	Cass County	31025	143
+2007	21	Extractives	Nebraska	Cedar County	31027	10
+2007	21	Extractives	Nebraska	Cheyenne County	31033	9
+2007	21	Extractives	Nebraska	Dodge County	31053	10
+2007	21	Extractives	Nebraska	Douglas County	31055	34
+2007	21	Extractives	Nebraska	Hall County	31079	23
+2007	21	Extractives	Nebraska	Hitchcock County	31087	35
+2007	21	Extractives	Nebraska	Holt County	31089	18
+2007	21	Extractives	Nebraska	Kimball County	31105	72
+2007	21	Extractives	Nebraska	Lancaster County	31109	12
+2007	21	Extractives	Nebraska	Red Willow County	31145	38
+2007	21	Extractives	Nebraska	Scotts Bluff County	31157	14
+2007	21	Extractives	Nevada		32000	12089
+2007	21	Extractives	Nevada	Clark County	32003	476
+2007	21	Extractives	Nevada	Elko County	32007	2114
+2007	21	Extractives	Nevada	Eureka County	32011	3907
+2007	21	Extractives	Nevada	Humboldt County	32013	1455
+2007	21	Extractives	Nevada	Lander County	32015	1157
+2007	21	Extractives	Nevada	Lincoln County	32017	16
+2007	21	Extractives	Nevada	Lyon County	32019	140
+2007	21	Extractives	Nevada	Nye County	32023	979
+2007	21	Extractives	Nevada	Pershing County	32027	420
+2007	21	Extractives	Nevada	Washoe County	32031	335
+2007	21	Extractives	New Hampshire		33000	682
+2007	21	Extractives	New Hampshire	Carroll County	33003	39
+2007	21	Extractives	New Hampshire	Grafton County	33009	56
+2007	21	Extractives	New Hampshire	Hillsborough County	33011	50
+2007	21	Extractives	New Hampshire	Merrimack County	33013	209
+2007	21	Extractives	New Hampshire	Rockingham County	33015	176
+2007	21	Extractives	New Hampshire	Strafford County	33017	24
+2007	21	Extractives	New Jersey		34000	1621
+2007	21	Extractives	New Jersey	Bergen County	34003	42
+2007	21	Extractives	New Jersey	Cape May County	34009	39
+2007	21	Extractives	New Jersey	Cumberland County	34011	169
+2007	21	Extractives	New Jersey	Gloucester County	34015	171
+2007	21	Extractives	New Jersey	Middlesex County	34023	76
+2007	21	Extractives	New Jersey	Monmouth County	34025	24
+2007	21	Extractives	New Jersey	Ocean County	34029	115
+2007	21	Extractives	New Jersey	Passaic County	34031	155
+2007	21	Extractives	New Jersey	Sussex County	34037	60
+2007	21	Extractives	New Jersey	Warren County	34041	157
+2007	21	Extractives	New Mexico		35000	19378
+2007	21	Extractives	New Mexico	Bernalillo County	35001	100
+2007	21	Extractives	New Mexico	Chaves County	35005	420
+2007	21	Extractives	New Mexico	Colfax County	35007	62
+2007	21	Extractives	New Mexico	Dona Ana County	35013	71
+2007	21	Extractives	New Mexico	Eddy County	35015	3359
+2007	21	Extractives	New Mexico	Lea County	35025	6683
+2007	21	Extractives	New Mexico	Lincoln County	35027	18
+2007	21	Extractives	New Mexico	Luna County	35029	11
+2007	21	Extractives	New Mexico	Mckinley County	35031	438
+2007	21	Extractives	New Mexico	Otero County	35035	8
+2007	21	Extractives	New Mexico	Rio Arriba County	35039	87
+2007	21	Extractives	New Mexico	Sandoval County	35043	32
+2007	21	Extractives	New Mexico	San Juan County	35045	5787
+2007	21	Extractives	New Mexico	San Miguel County	35047	18
+2007	21	Extractives	New Mexico	Santa Fe County	35049	155
+2007	21	Extractives	New Mexico	Taos County	35055	414
+2007	21	Extractives	New Mexico	Valencia County	35061	31
+2007	21	Extractives	New York		36000	5434
+2007	21	Extractives	New York	Albany County	36001	113
+2007	21	Extractives	New York	Allegany County	36003	128
+2007	21	Extractives	New York	Broome County	36007	47
+2007	21	Extractives	New York	Cattaraugus County	36009	148
+2007	21	Extractives	New York	Chautauqua County	36013	194
+2007	21	Extractives	New York	Chemung County	36015	180
+2007	21	Extractives	New York	Chenango County	36017	20
+2007	21	Extractives	New York	Clinton County	36019	5
+2007	21	Extractives	New York	Cortland County	36023	9
+2007	21	Extractives	New York	Delaware County	36025	96
+2007	21	Extractives	New York	Dutchess County	36027	146
+2007	21	Extractives	New York	Erie County	36029	229
+2007	21	Extractives	New York	Essex County	36031	145
+2007	21	Extractives	New York	Genesee County	36037	71
+2007	21	Extractives	New York	Herkimer County	36043	40
+2007	21	Extractives	New York	Jefferson County	36045	76
+2007	21	Extractives	New York	Kings County	36047	17
+2007	21	Extractives	New York	Monroe County	36055	141
+2007	21	Extractives	New York	Nassau County	36059	4
+2007	21	Extractives	New York	New York County	36061	25
+2007	21	Extractives	New York	Oneida County	36065	134
+2007	21	Extractives	New York	Onondaga County	36067	204
+2007	21	Extractives	New York	Ontario County	36069	82
+2007	21	Extractives	New York	Orange County	36071	58
+2007	21	Extractives	New York	Orleans County	36073	42
+2007	21	Extractives	New York	Otsego County	36077	38
+2007	21	Extractives	New York	Queens County	36081	15
+2007	21	Extractives	New York	Rensselaer County	36083	169
+2007	21	Extractives	New York	St. Lawrence County	36089	378
+2007	21	Extractives	New York	Schuyler County	36097	66
+2007	21	Extractives	New York	Steuben County	36101	93
+2007	21	Extractives	New York	Suffolk County	36103	212
+2007	21	Extractives	New York	Sullivan County	36105	142
+2007	21	Extractives	New York	Tioga County	36107	25
+2007	21	Extractives	New York	Tompkins County	36109	266
+2007	21	Extractives	New York	Ulster County	36111	138
+2007	21	Extractives	New York	Washington County	36115	85
+2007	21	Extractives	New York	Wyoming County	36121	11
+2007	21	Extractives	North Carolina		37000	3975
+2007	21	Extractives	North Carolina	Buncombe County	37021	94
+2007	21	Extractives	North Carolina	Caldwell County	37027	24
+2007	21	Extractives	North Carolina	Chatham County	37037	51
+2007	21	Extractives	North Carolina	Cleveland County	37045	101
+2007	21	Extractives	North Carolina	Craven County	37049	51
+2007	21	Extractives	North Carolina	Davidson County	37057	62
+2007	21	Extractives	North Carolina	Forsyth County	37067	55
+2007	21	Extractives	North Carolina	Guilford County	37081	175
+2007	21	Extractives	North Carolina	Johnston County	37101	80
+2007	21	Extractives	North Carolina	Lee County	37105	66
+2007	21	Extractives	North Carolina	Lincoln County	37109	49
+2007	21	Extractives	North Carolina	McDowell County	37111	81
+2007	21	Extractives	North Carolina	Mecklenburg County	37119	228
+2007	21	Extractives	North Carolina	Orange County	37135	49
+2007	21	Extractives	North Carolina	Richmond County	37153	143
+2007	21	Extractives	North Carolina	Rowan County	37159	288
+2007	21	Extractives	North Carolina	Wake County	37183	596
+2007	21	Extractives	North Carolina	Watauga County	37189	36
+2007	21	Extractives	North Dakota		38000	5099
+2007	21	Extractives	North Dakota	Bottineau County	38009	167
+2007	21	Extractives	North Dakota	Bowman County	38011	94
+2007	21	Extractives	North Dakota	Burke County	38013	48
+2007	21	Extractives	North Dakota	Burleigh County	38015	57
+2007	21	Extractives	North Dakota	McKenzie County	38053	281
+2007	21	Extractives	North Dakota	Morton County	38059	71
+2007	21	Extractives	North Dakota	Mountrail County	38061	38
+2007	21	Extractives	North Dakota	Stark County	38089	490
+2007	21	Extractives	North Dakota	Ward County	38101	372
+2007	21	Extractives	North Dakota	Williams County	38105	2045
+2007	21	Extractives	Ohio		39000	11318
+2007	21	Extractives	Ohio	Allen County	39003	55
+2007	21	Extractives	Ohio	Ashland County	39005	43
+2007	21	Extractives	Ohio	Ashtabula County	39007	101
+2007	21	Extractives	Ohio	Belmont County	39013	1152
+2007	21	Extractives	Ohio	Butler County	39017	211
+2007	21	Extractives	Ohio	Clark County	39023	49
+2007	21	Extractives	Ohio	Columbiana County	39029	230
+2007	21	Extractives	Ohio	Coshocton County	39031	145
+2007	21	Extractives	Ohio	Cuyahoga County	39035	327
+2007	21	Extractives	Ohio	Delaware County	39041	96
+2007	21	Extractives	Ohio	Fairfield County	39045	19
+2007	21	Extractives	Ohio	Franklin County	39049	239
+2007	21	Extractives	Ohio	Guernsey County	39059	132
+2007	21	Extractives	Ohio	Hamilton County	39061	238
+2007	21	Extractives	Ohio	Harrison County	39067	281
+2007	21	Extractives	Ohio	Highland County	39071	66
+2007	21	Extractives	Ohio	Hocking County	39073	217
+2007	21	Extractives	Ohio	Holmes County	39075	126
+2007	21	Extractives	Ohio	Jackson County	39079	180
+2007	21	Extractives	Ohio	Knox County	39083	137
+2007	21	Extractives	Ohio	Lake County	39085	242
+2007	21	Extractives	Ohio	Licking County	39089	112
+2007	21	Extractives	Ohio	Logan County	39091	33
+2007	21	Extractives	Ohio	Lucas County	39095	63
+2007	21	Extractives	Ohio	Meigs County	39105	142
+2007	21	Extractives	Ohio	Miami County	39109	51
+2007	21	Extractives	Ohio	Monroe County	39111	61
+2007	21	Extractives	Ohio	Morrow County	39117	35
+2007	21	Extractives	Ohio	Muskingum County	39119	361
+2007	21	Extractives	Ohio	Ottawa County	39123	148
+2007	21	Extractives	Ohio	Perry County	39127	258
+2007	21	Extractives	Ohio	Portage County	39133	368
+2007	21	Extractives	Ohio	Richland County	39139	24
+2007	21	Extractives	Ohio	Ross County	39141	29
+2007	21	Extractives	Ohio	Scioto County	39145	18
+2007	21	Extractives	Ohio	Seneca County	39147	113
+2007	21	Extractives	Ohio	Stark County	39151	309
+2007	21	Extractives	Ohio	Summit County	39153	89
+2007	21	Extractives	Ohio	Trumbull County	39155	36
+2007	21	Extractives	Ohio	Tuscarawas County	39157	458
+2007	21	Extractives	Ohio	Warren County	39165	23
+2007	21	Extractives	Ohio	Washington County	39167	422
+2007	21	Extractives	Ohio	Wayne County	39169	449
+2007	21	Extractives	Ohio	Williams County	39171	24
+2007	21	Extractives	Ohio	Wood County	39173	45
+2007	21	Extractives	Ohio	Wyandot County	39175	153
+2007	21	Extractives	Oklahoma		40000	46588
+2007	21	Extractives	Oklahoma	Beaver County	40007	248
+2007	21	Extractives	Oklahoma	Beckham County	40009	1593
+2007	21	Extractives	Oklahoma	Blaine County	40011	103
+2007	21	Extractives	Oklahoma	Caddo County	40015	162
+2007	21	Extractives	Oklahoma	Canadian County	40017	1164
+2007	21	Extractives	Oklahoma	Carter County	40019	968
+2007	21	Extractives	Oklahoma	Cleveland County	40027	446
+2007	21	Extractives	Oklahoma	Coal County	40029	30
+2007	21	Extractives	Oklahoma	Comanche County	40031	119
+2007	21	Extractives	Oklahoma	Creek County	40037	377
+2007	21	Extractives	Oklahoma	Custer County	40039	514
+2007	21	Extractives	Oklahoma	Ellis County	40045	50
+2007	21	Extractives	Oklahoma	Garfield County	40047	965
+2007	21	Extractives	Oklahoma	Garvin County	40049	1048
+2007	21	Extractives	Oklahoma	Grady County	40051	463
+2007	21	Extractives	Oklahoma	Grant County	40053	45
+2007	21	Extractives	Oklahoma	Harper County	40059	64
+2007	21	Extractives	Oklahoma	Haskell County	40061	343
+2007	21	Extractives	Oklahoma	Hughes County	40063	47
+2007	21	Extractives	Oklahoma	Jefferson County	40067	16
+2007	21	Extractives	Oklahoma	Johnston County	40069	227
+2007	21	Extractives	Oklahoma	Kay County	40071	1701
+2007	21	Extractives	Oklahoma	Kingfisher County	40073	812
+2007	21	Extractives	Oklahoma	Kiowa County	40075	156
+2007	21	Extractives	Oklahoma	Le Flore County	40079	844
+2007	21	Extractives	Oklahoma	Logan County	40083	116
+2007	21	Extractives	Oklahoma	McClain County	40087	324
+2007	21	Extractives	Oklahoma	McCurtain County	40089	13
+2007	21	Extractives	Oklahoma	McIntosh County	40091	40
+2007	21	Extractives	Oklahoma	Major County	40093	245
+2007	21	Extractives	Oklahoma	Mayes County	40097	75
+2007	21	Extractives	Oklahoma	Muskogee County	40101	50
+2007	21	Extractives	Oklahoma	Nowata County	40105	13
+2007	21	Extractives	Oklahoma	Okfuskee County	40107	71
+2007	21	Extractives	Oklahoma	Oklahoma County	40109	11781
+2007	21	Extractives	Oklahoma	Okmulgee County	40111	182
+2007	21	Extractives	Oklahoma	Osage County	40113	445
+2007	21	Extractives	Oklahoma	Ottawa County	40115	55
+2007	21	Extractives	Oklahoma	Payne County	40119	1190
+2007	21	Extractives	Oklahoma	Pittsburg County	40121	534
+2007	21	Extractives	Oklahoma	Pontotoc County	40123	263
+2007	21	Extractives	Oklahoma	Pottawatomie County	40125	194
+2007	21	Extractives	Oklahoma	Rogers County	40131	273
+2007	21	Extractives	Oklahoma	Seminole County	40133	706
+2007	21	Extractives	Oklahoma	Sequoyah County	40135	39
+2007	21	Extractives	Oklahoma	Stephens County	40137	1985
+2007	21	Extractives	Oklahoma	Texas County	40139	186
+2007	21	Extractives	Oklahoma	Tulsa County	40143	5218
+2007	21	Extractives	Oklahoma	Wagoner County	40145	14
+2007	21	Extractives	Oklahoma	Washington County	40147	3378
+2007	21	Extractives	Oklahoma	Washita County	40149	244
+2007	21	Extractives	Oklahoma	Woods County	40151	68
+2007	21	Extractives	Oklahoma	Woodward County	40153	2206
+2007	21	Extractives	Oregon		41000	2149
+2007	21	Extractives	Oregon	Clackamas County	41005	86
+2007	21	Extractives	Oregon	Columbia County	41009	81
+2007	21	Extractives	Oregon	Coos County	41011	63
+2007	21	Extractives	Oregon	Crook County	41013	30
+2007	21	Extractives	Oregon	Deschutes County	41017	131
+2007	21	Extractives	Oregon	Douglas County	41019	103
+2007	21	Extractives	Oregon	Jackson County	41029	175
+2007	21	Extractives	Oregon	Josephine County	41033	76
+2007	21	Extractives	Oregon	Klamath County	41035	16
+2007	21	Extractives	Oregon	Lane County	41039	324
+2007	21	Extractives	Oregon	Linn County	41043	21
+2007	21	Extractives	Oregon	Marion County	41047	235
+2007	21	Extractives	Oregon	Polk County	41053	56
+2007	21	Extractives	Oregon	Umatilla County	41059	18
+2007	21	Extractives	Oregon	Washington County	41067	313
+2007	21	Extractives	Oregon	Yamhill County	41071	81
+2007	21	Extractives	Pennsylvania		42000	20561
+2007	21	Extractives	Pennsylvania	Allegheny County	42003	878
+2007	21	Extractives	Pennsylvania	Armstrong County	42005	1161
+2007	21	Extractives	Pennsylvania	Beaver County	42007	117
+2007	21	Extractives	Pennsylvania	Berks County	42011	279
+2007	21	Extractives	Pennsylvania	Bradford County	42015	147
+2007	21	Extractives	Pennsylvania	Bucks County	42017	212
+2007	21	Extractives	Pennsylvania	Butler County	42019	604
+2007	21	Extractives	Pennsylvania	Cambria County	42021	188
+2007	21	Extractives	Pennsylvania	Carbon County	42025	34
+2007	21	Extractives	Pennsylvania	Centre County	42027	98
+2007	21	Extractives	Pennsylvania	Chester County	42029	214
+2007	21	Extractives	Pennsylvania	Clarion County	42031	298
+2007	21	Extractives	Pennsylvania	Clearfield County	42033	652
+2007	21	Extractives	Pennsylvania	Columbia County	42037	43
+2007	21	Extractives	Pennsylvania	Crawford County	42039	203
+2007	21	Extractives	Pennsylvania	Cumberland County	42041	94
+2007	21	Extractives	Pennsylvania	Dauphin County	42043	68
+2007	21	Extractives	Pennsylvania	Delaware County	42045	110
+2007	21	Extractives	Pennsylvania	Erie County	42049	184
+2007	21	Extractives	Pennsylvania	Fayette County	42051	503
+2007	21	Extractives	Pennsylvania	Greene County	42059	2908
+2007	21	Extractives	Pennsylvania	Indiana County	42063	1896
+2007	21	Extractives	Pennsylvania	Jefferson County	42065	711
+2007	21	Extractives	Pennsylvania	Lackawanna County	42069	104
+2007	21	Extractives	Pennsylvania	Lancaster County	42071	397
+2007	21	Extractives	Pennsylvania	Lawrence County	42073	83
+2007	21	Extractives	Pennsylvania	Luzerne County	42079	358
+2007	21	Extractives	Pennsylvania	Lycoming County	42081	126
+2007	21	Extractives	Pennsylvania	Mckean County	42083	887
+2007	21	Extractives	Pennsylvania	Mercer County	42085	233
+2007	21	Extractives	Pennsylvania	Monroe County	42089	78
+2007	21	Extractives	Pennsylvania	Montgomery County	42091	186
+2007	21	Extractives	Pennsylvania	Northampton County	42095	75
+2007	21	Extractives	Pennsylvania	Northumberland County	42097	233
+2007	21	Extractives	Pennsylvania	Pike County	42103	30
+2007	21	Extractives	Pennsylvania	Potter County	42105	14
+2007	21	Extractives	Pennsylvania	Schuylkill County	42107	466
+2007	21	Extractives	Pennsylvania	Somerset County	42111	895
+2007	21	Extractives	Pennsylvania	Susquehanna County	42115	423
+2007	21	Extractives	Pennsylvania	Venango County	42121	91
+2007	21	Extractives	Pennsylvania	Warren County	42123	209
+2007	21	Extractives	Pennsylvania	Washington County	42125	1167
+2007	21	Extractives	Pennsylvania	Wayne County	42127	124
+2007	21	Extractives	Pennsylvania	Westmoreland County	42129	365
+2007	21	Extractives	Pennsylvania	Wyoming County	42131	43
+2007	21	Extractives	Pennsylvania	York County	42133	466
+2007	21	Extractives	Rhode Island		44000	255
+2007	21	Extractives	Rhode Island	Newport County	44005	38
+2007	21	Extractives	Rhode Island	Providence County	44007	80
+2007	21	Extractives	Rhode Island	Washington County	44009	123
+2007	21	Extractives	South Carolina		45000	1449
+2007	21	Extractives	South Carolina	Aiken County	45003	114
+2007	21	Extractives	South Carolina	Anderson County	45007	69
+2007	21	Extractives	South Carolina	Charleston County	45019	5
+2007	21	Extractives	South Carolina	Chesterfield County	45025	107
+2007	21	Extractives	South Carolina	Colleton County	45029	21
+2007	21	Extractives	South Carolina	Dorchester County	45035	41
+2007	21	Extractives	South Carolina	Greenville County	45045	88
+2007	21	Extractives	South Carolina	Horry County	45051	68
+2007	21	Extractives	South Carolina	Kershaw County	45055	35
+2007	21	Extractives	South Carolina	Lexington County	45063	134
+2007	21	Extractives	South Carolina	Spartanburg County	45083	161
+2007	21	Extractives	South Carolina	York County	45091	49
+2007	21	Extractives	South Dakota		46000	848
+2007	21	Extractives	South Dakota	Codington County	46029	12
+2007	21	Extractives	South Dakota	Custer County	46033	41
+2007	21	Extractives	South Dakota	Fall River County	46047	14
+2007	21	Extractives	South Dakota	Harding County	46063	36
+2007	21	Extractives	South Dakota	Lawrence County	46081	172
+2007	21	Extractives	South Dakota	Pennington County	46103	43
+2007	21	Extractives	Tennessee		47000	3876
+2007	21	Extractives	Tennessee	Anderson County	47001	55
+2007	21	Extractives	Tennessee	Campbell County	47013	105
+2007	21	Extractives	Tennessee	Claiborne County	47025	267
+2007	21	Extractives	Tennessee	Cumberland County	47035	164
+2007	21	Extractives	Tennessee	Davidson County	47037	211
+2007	21	Extractives	Tennessee	Franklin County	47051	70
+2007	21	Extractives	Tennessee	Hamilton County	47065	76
+2007	21	Extractives	Tennessee	Hardin County	47071	54
+2007	21	Extractives	Tennessee	Knox County	47093	462
+2007	21	Extractives	Tennessee	Overton County	47133	51
+2007	21	Extractives	Tennessee	Putnam County	47141	56
+2007	21	Extractives	Tennessee	Rhea County	47143	36
+2007	21	Extractives	Tennessee	Scott County	47151	44
+2007	21	Extractives	Tennessee	Shelby County	47157	47
+2007	21	Extractives	Tennessee	Sullivan County	47163	80
+2007	21	Extractives	Tennessee	Weakley County	47183	148
+2007	21	Extractives	Tennessee	Williamson County	47187	46
+2007	21	Extractives	Tennessee	Wilson County	47189	51
+2007	21	Extractives	Texas		48000	205472
+2007	21	Extractives	Texas	Anderson County	48001	782
+2007	21	Extractives	Texas	Andrews County	48003	1167
+2007	21	Extractives	Texas	Angelina County	48005	154
+2007	21	Extractives	Texas	Aransas County	48007	234
+2007	21	Extractives	Texas	Archer County	48009	340
+2007	21	Extractives	Texas	Atascosa County	48013	699
+2007	21	Extractives	Texas	Austin County	48015	60
+2007	21	Extractives	Texas	Bastrop County	48021	39
+2007	21	Extractives	Texas	Bee County	48025	404
+2007	21	Extractives	Texas	Bell County	48027	154
+2007	21	Extractives	Texas	Bexar County	48029	2212
+2007	21	Extractives	Texas	Bosque County	48035	19
+2007	21	Extractives	Texas	Bowie County	48037	66
+2007	21	Extractives	Texas	Brazoria County	48039	864
+2007	21	Extractives	Texas	Brazos County	48041	1441
+2007	21	Extractives	Texas	Brooks County	48047	156
+2007	21	Extractives	Texas	Brown County	48049	80
+2007	21	Extractives	Texas	Burleson County	48051	389
+2007	21	Extractives	Texas	Burnet County	48053	84
+2007	21	Extractives	Texas	Caldwell County	48055	303
+2007	21	Extractives	Texas	Calhoun County	48057	249
+2007	21	Extractives	Texas	Callahan County	48059	71
+2007	21	Extractives	Texas	Cameron County	48061	55
+2007	21	Extractives	Texas	Camp County	48063	13
+2007	21	Extractives	Texas	Carson County	48065	54
+2007	21	Extractives	Texas	Cass County	48067	45
+2007	21	Extractives	Texas	Chambers County	48071	461
+2007	21	Extractives	Texas	Cherokee County	48073	33
+2007	21	Extractives	Texas	Clay County	48077	19
+2007	21	Extractives	Texas	Cochran County	48079	32
+2007	21	Extractives	Texas	Coke County	48081	19
+2007	21	Extractives	Texas	Coleman County	48083	16
+2007	21	Extractives	Texas	Collin County	48085	973
+2007	21	Extractives	Texas	Colorado County	48089	201
+2007	21	Extractives	Texas	Comal County	48091	278
+2007	21	Extractives	Texas	Comanche County	48093	14
+2007	21	Extractives	Texas	Concho County	48095	36
+2007	21	Extractives	Texas	Cooke County	48097	1673
+2007	21	Extractives	Texas	Crane County	48103	553
+2007	21	Extractives	Texas	Crockett County	48105	240
+2007	21	Extractives	Texas	Culberson County	48109	101
+2007	21	Extractives	Texas	Dallas County	48113	6565
+2007	21	Extractives	Texas	Dawson County	48115	173
+2007	21	Extractives	Texas	Denton County	48121	674
+2007	21	Extractives	Texas	DeWitt County	48123	153
+2007	21	Extractives	Texas	Dimmit County	48127	178
+2007	21	Extractives	Texas	Duval County	48131	763
+2007	21	Extractives	Texas	Eastland County	48133	469
+2007	21	Extractives	Texas	Ector County	48135	5807
+2007	21	Extractives	Texas	Ellis County	48139	45
+2007	21	Extractives	Texas	El Paso County	48141	115
+2007	21	Extractives	Texas	Erath County	48143	70
+2007	21	Extractives	Texas	Fannin County	48147	25
+2007	21	Extractives	Texas	Fayette County	48149	400
+2007	21	Extractives	Texas	Fort Bend County	48157	2513
+2007	21	Extractives	Texas	Freestone County	48161	574
+2007	21	Extractives	Texas	Frio County	48163	234
+2007	21	Extractives	Texas	Gaines County	48165	504
+2007	21	Extractives	Texas	Galveston County	48167	567
+2007	21	Extractives	Texas	Garza County	48169	144
+2007	21	Extractives	Texas	Gillespie County	48171	33
+2007	21	Extractives	Texas	Gonzales County	48177	206
+2007	21	Extractives	Texas	Gray County	48179	1072
+2007	21	Extractives	Texas	Grayson County	48181	115
+2007	21	Extractives	Texas	Gregg County	48183	4084
+2007	21	Extractives	Texas	Grimes County	48185	12
+2007	21	Extractives	Texas	Guadalupe County	48187	64
+2007	21	Extractives	Texas	Hale County	48189	19
+2007	21	Extractives	Texas	Hansford County	48195	114
+2007	21	Extractives	Texas	Hardeman County	48197	12
+2007	21	Extractives	Texas	Harris County	48201	76676
+2007	21	Extractives	Texas	Harrison County	48203	1786
+2007	21	Extractives	Texas	Haskell County	48207	27
+2007	21	Extractives	Texas	Hays County	48209	183
+2007	21	Extractives	Texas	Hemphill County	48211	389
+2007	21	Extractives	Texas	Henderson County	48213	107
+2007	21	Extractives	Texas	Hidalgo County	48215	2158
+2007	21	Extractives	Texas	Hill County	48217	153
+2007	21	Extractives	Texas	Hockley County	48219	1496
+2007	21	Extractives	Texas	Hood County	48221	526
+2007	21	Extractives	Texas	Hopkins County	48223	140
+2007	21	Extractives	Texas	Houston County	48225	114
+2007	21	Extractives	Texas	Howard County	48227	729
+2007	21	Extractives	Texas	Hutchinson County	48233	939
+2007	21	Extractives	Texas	Irion County	48235	198
+2007	21	Extractives	Texas	Jack County	48237	810
+2007	21	Extractives	Texas	Jackson County	48239	160
+2007	21	Extractives	Texas	Jasper County	48241	211
+2007	21	Extractives	Texas	Jefferson County	48245	624
+2007	21	Extractives	Texas	Jim Hogg County	48247	76
+2007	21	Extractives	Texas	Jim Wells County	48249	3575
+2007	21	Extractives	Texas	Johnson County	48251	1466
+2007	21	Extractives	Texas	Jones County	48253	200
+2007	21	Extractives	Texas	Karnes County	48255	129
+2007	21	Extractives	Texas	Kaufman County	48257	66
+2007	21	Extractives	Texas	Kendall County	48259	12
+2007	21	Extractives	Texas	Kleberg County	48273	296
+2007	21	Extractives	Texas	Knox County	48275	167
+2007	21	Extractives	Texas	La Salle County	48283	353
+2007	21	Extractives	Texas	Lavaca County	48285	143
+2007	21	Extractives	Texas	Lee County	48287	446
+2007	21	Extractives	Texas	Leon County	48289	516
+2007	21	Extractives	Texas	Liberty County	48291	541
+2007	21	Extractives	Texas	Limestone County	48293	210
+2007	21	Extractives	Texas	Lipscomb County	48295	278
+2007	21	Extractives	Texas	Live Oak County	48297	274
+2007	21	Extractives	Texas	Lubbock County	48303	173
+2007	21	Extractives	Texas	McLennan County	48309	182
+2007	21	Extractives	Texas	Martin County	48317	14
+2007	21	Extractives	Texas	Matagorda County	48321	155
+2007	21	Extractives	Texas	Maverick County	48323	22
+2007	21	Extractives	Texas	Medina County	48325	106
+2007	21	Extractives	Texas	Midland County	48329	11325
+2007	21	Extractives	Texas	Milam County	48331	74
+2007	21	Extractives	Texas	Mitchell County	48335	69
+2007	21	Extractives	Texas	Montague County	48337	358
+2007	21	Extractives	Texas	Montgomery County	48339	2781
+2007	21	Extractives	Texas	Moore County	48341	244
+2007	21	Extractives	Texas	Morris County	48343	76
+2007	21	Extractives	Texas	Nacogdoches County	48347	51
+2007	21	Extractives	Texas	Navarro County	48349	136
+2007	21	Extractives	Texas	Nolan County	48353	269
+2007	21	Extractives	Texas	Nueces County	48355	3816
+2007	21	Extractives	Texas	Ochiltree County	48357	1134
+2007	21	Extractives	Texas	Orange County	48361	261
+2007	21	Extractives	Texas	Palo Pinto County	48363	360
+2007	21	Extractives	Texas	Panola County	48365	734
+2007	21	Extractives	Texas	Parker County	48367	816
+2007	21	Extractives	Texas	Pecos County	48371	340
+2007	21	Extractives	Texas	Polk County	48373	34
+2007	21	Extractives	Texas	Potter County	48375	1929
+2007	21	Extractives	Texas	Randall County	48381	56
+2007	21	Extractives	Texas	Reagan County	48383	458
+2007	21	Extractives	Texas	Reeves County	48389	333
+2007	21	Extractives	Texas	Refugio County	48391	231
+2007	21	Extractives	Texas	Roberts County	48393	20
+2007	21	Extractives	Texas	Robertson County	48395	117
+2007	21	Extractives	Texas	Rockwall County	48397	16
+2007	21	Extractives	Texas	Rusk County	48401	1626
+2007	21	Extractives	Texas	Sabine County	48403	105
+2007	21	Extractives	Texas	San Patricio County	48409	393
+2007	21	Extractives	Texas	San Saba County	48411	45
+2007	21	Extractives	Texas	Schleicher County	48413	82
+2007	21	Extractives	Texas	Scurry County	48415	1134
+2007	21	Extractives	Texas	Shackelford County	48417	307
+2007	21	Extractives	Texas	Shelby County	48419	62
+2007	21	Extractives	Texas	Smith County	48423	1974
+2007	21	Extractives	Texas	Somervell County	48425	54
+2007	21	Extractives	Texas	Starr County	48427	87
+2007	21	Extractives	Texas	Stephens County	48429	324
+2007	21	Extractives	Texas	Sterling County	48431	126
+2007	21	Extractives	Texas	Stonewall County	48433	64
+2007	21	Extractives	Texas	Sutton County	48435	707
+2007	21	Extractives	Texas	Tarrant County	48439	5672
+2007	21	Extractives	Texas	Taylor County	48441	1535
+2007	21	Extractives	Texas	Terry County	48445	350
+2007	21	Extractives	Texas	Throckmorton County	48447	51
+2007	21	Extractives	Texas	Titus County	48449	355
+2007	21	Extractives	Texas	Tom Green County	48451	1043
+2007	21	Extractives	Texas	Travis County	48453	1639
+2007	21	Extractives	Texas	Upshur County	48459	80
+2007	21	Extractives	Texas	Upton County	48461	383
+2007	21	Extractives	Texas	Uvalde County	48463	139
+2007	21	Extractives	Texas	Van Zandt County	48467	291
+2007	21	Extractives	Texas	Victoria County	48469	2811
+2007	21	Extractives	Texas	Walker County	48471	17
+2007	21	Extractives	Texas	Waller County	48473	171
+2007	21	Extractives	Texas	Ward County	48475	874
+2007	21	Extractives	Texas	Washington County	48477	161
+2007	21	Extractives	Texas	Webb County	48479	1471
+2007	21	Extractives	Texas	Wharton County	48481	618
+2007	21	Extractives	Texas	Wheeler County	48483	241
+2007	21	Extractives	Texas	Wichita County	48485	1217
+2007	21	Extractives	Texas	Wilbarger County	48487	44
+2007	21	Extractives	Texas	Williamson County	48491	831
+2007	21	Extractives	Texas	Wise County	48497	3211
+2007	21	Extractives	Texas	Yoakum County	48501	841
+2007	21	Extractives	Texas	Young County	48503	948
+2007	21	Extractives	Texas	Zapata County	48505	768
+2007	21	Extractives	Texas	Zavala County	48507	34
+2007	21	Extractives	Utah		49000	11034
+2007	21	Extractives	Utah	Beaver County	49001	65
+2007	21	Extractives	Utah	Box Elder County	49003	23
+2007	21	Extractives	Utah	Cache County	49005	9
+2007	21	Extractives	Utah	Davis County	49011	121
+2007	21	Extractives	Utah	Duchesne County	49013	1252
+2007	21	Extractives	Utah	Juab County	49023	100
+2007	21	Extractives	Utah	Salt Lake County	49035	2450
+2007	21	Extractives	Utah	San Juan County	49037	205
+2007	21	Extractives	Utah	Sevier County	49041	508
+2007	21	Extractives	Utah	Summit County	49043	106
+2007	21	Extractives	Utah	Uintah County	49047	3525
+2007	21	Extractives	Utah	Utah County	49049	55
+2007	21	Extractives	Utah	Wasatch County	49051	71
+2007	21	Extractives	Utah	Washington County	49053	307
+2007	21	Extractives	Vermont		50000	723
+2007	21	Extractives	Vermont	Addison County	50001	19
+2007	21	Extractives	Vermont	Caledonia County	50005	16
+2007	21	Extractives	Vermont	Chittenden County	50007	41
+2007	21	Extractives	Vermont	Lamoille County	50015	9
+2007	21	Extractives	Vermont	Orange County	50017	10
+2007	21	Extractives	Vermont	Rutland County	50021	396
+2007	21	Extractives	Vermont	Washington County	50023	144
+2007	21	Extractives	Virginia		51000	9042
+2007	21	Extractives	Virginia	Albemarle County	51003	54
+2007	21	Extractives	Virginia	Augusta County	51015	45
+2007	21	Extractives	Virginia	Buchanan County	51027	1878
+2007	21	Extractives	Virginia	Charles City County	51036	32
+2007	21	Extractives	Virginia	Culpeper County	51047	93
+2007	21	Extractives	Virginia	Dickenson County	51051	776
+2007	21	Extractives	Virginia	Fairfax County	51059	63
+2007	21	Extractives	Virginia	Fauquier County	51061	66
+2007	21	Extractives	Virginia	Hanover County	51085	107
+2007	21	Extractives	Virginia	Lee County	51105	272
+2007	21	Extractives	Virginia	Rockingham County	51165	81
+2007	21	Extractives	Virginia	Russell County	51167	404
+2007	21	Extractives	Virginia	Tazewell County	51185	655
+2007	21	Extractives	Virginia	Washington County	51191	60
+2007	21	Extractives	Virginia	Wise County	51195	1898
+2007	21	Extractives	Virginia	Wythe County	51197	136
+2007	21	Extractives	Virginia	Bristol City	51520	73
+2007	21	Extractives	Virginia	Chesapeake City	51550	39
+2007	21	Extractives	Washington		53000	3036
+2007	21	Extractives	Washington	Clallam County	53009	14
+2007	21	Extractives	Washington	Clark County	53011	282
+2007	21	Extractives	Washington	Cowlitz County	53015	159
+2007	21	Extractives	Washington	Grays Harbor County	53027	69
+2007	21	Extractives	Washington	Jefferson County	53031	49
+2007	21	Extractives	Washington	King County	53033	531
+2007	21	Extractives	Washington	Kitsap County	53035	68
+2007	21	Extractives	Washington	Kittitas County	53037	13
+2007	21	Extractives	Washington	Lewis County	53041	248
+2007	21	Extractives	Washington	Okanogan County	53047	68
+2007	21	Extractives	Washington	Pacific County	53049	45
+2007	21	Extractives	Washington	Pend Oreille County	53051	241
+2007	21	Extractives	Washington	Pierce County	53053	249
+2007	21	Extractives	Washington	Skagit County	53057	55
+2007	21	Extractives	Washington	Snohomish County	53061	176
+2007	21	Extractives	Washington	Spokane County	53063	177
+2007	21	Extractives	Washington	Stevens County	53065	78
+2007	21	Extractives	Washington	Thurston County	53067	70
+2007	21	Extractives	Washington	Whatcom County	53073	154
+2007	21	Extractives	Washington	Yakima County	53077	14
+2007	21	Extractives	West Virginia		54000	27468
+2007	21	Extractives	West Virginia	Barbour County	54001	237
+2007	21	Extractives	West Virginia	Braxton County	54007	112
+2007	21	Extractives	West Virginia	Cabell County	54011	46
+2007	21	Extractives	West Virginia	Clay County	54015	450
+2007	21	Extractives	West Virginia	Doddridge County	54017	44
+2007	21	Extractives	West Virginia	Fayette County	54019	619
+2007	21	Extractives	West Virginia	Grant County	54023	263
+2007	21	Extractives	West Virginia	Greenbrier County	54025	120
+2007	21	Extractives	West Virginia	Harrison County	54033	736
+2007	21	Extractives	West Virginia	Kanawha County	54039	2991
+2007	21	Extractives	West Virginia	Lewis County	54041	535
+2007	21	Extractives	West Virginia	Lincoln County	54043	398
+2007	21	Extractives	West Virginia	Mercer County	54055	169
+2007	21	Extractives	West Virginia	Mingo County	54059	2490
+2007	21	Extractives	West Virginia	Monongalia County	54061	552
+2007	21	Extractives	West Virginia	Nicholas County	54067	849
+2007	21	Extractives	West Virginia	Putnam County	54079	74
+2007	21	Extractives	West Virginia	Raleigh County	54081	1610
+2007	21	Extractives	West Virginia	Ritchie County	54085	382
+2007	21	Extractives	West Virginia	Roane County	54087	294
+2007	21	Extractives	West Virginia	Upshur County	54097	908
+2007	21	Extractives	West Virginia	Wetzel County	54103	24
+2007	21	Extractives	West Virginia	Wood County	54107	102
+2007	21	Extractives	West Virginia	Wyoming County	54109	1161
+2007	21	Extractives	Wisconsin		55000	2839
+2007	21	Extractives	Wisconsin	Brown County	55009	115
+2007	21	Extractives	Wisconsin	Columbia County	55021	49
+2007	21	Extractives	Wisconsin	Dane County	55025	208
+2007	21	Extractives	Wisconsin	Fond Du Lac County	55039	251
+2007	21	Extractives	Wisconsin	Green Lake County	55047	56
+2007	21	Extractives	Wisconsin	Kewaunee County	55061	6
+2007	21	Extractives	Wisconsin	Manitowoc County	55071	50
+2007	21	Extractives	Wisconsin	Marathon County	55073	84
+2007	21	Extractives	Wisconsin	Milwaukee County	55079	50
+2007	21	Extractives	Wisconsin	Oconto County	55083	23
+2007	21	Extractives	Wisconsin	Polk County	55095	24
+2007	21	Extractives	Wisconsin	Racine County	55101	41
+2007	21	Extractives	Wisconsin	Rock County	55105	117
+2007	21	Extractives	Wisconsin	St. Croix County	55109	29
+2007	21	Extractives	Wisconsin	Washington County	55131	79
+2007	21	Extractives	Wisconsin	Waukesha County	55133	323
+2007	21	Extractives	Wisconsin	Waushara County	55137	8
+2007	21	Extractives	Wyoming		56000	27346
+2007	21	Extractives	Wyoming	Albany County	56001	17
+2007	21	Extractives	Wyoming	Big Horn County	56003	669
+2007	21	Extractives	Wyoming	Campbell County	56005	7726
+2007	21	Extractives	Wyoming	Carbon County	56007	250
+2007	21	Extractives	Wyoming	Converse County	56009	796
+2007	21	Extractives	Wyoming	Crook County	56011	307
+2007	21	Extractives	Wyoming	Fremont County	56013	761
+2007	21	Extractives	Wyoming	Hot Springs County	56017	168
+2007	21	Extractives	Wyoming	Johnson County	56019	321
+2007	21	Extractives	Wyoming	Laramie County	56021	87
+2007	21	Extractives	Wyoming	Lincoln County	56023	679
+2007	21	Extractives	Wyoming	Natrona County	56025	3653
+2007	21	Extractives	Wyoming	Park County	56029	505
+2007	21	Extractives	Wyoming	Sheridan County	56033	530
+2007	21	Extractives	Wyoming	Sublette County	56035	1570
+2007	21	Extractives	Wyoming	Sweetwater County	56037	5583
+2007	21	Extractives	Wyoming	Uinta County	56041	924
+2007	21	Extractives	Wyoming	Washakie County	56043	238
+2007	21	Extractives	Wyoming	Weston County	56045	259
+2007	21	Extractives	Puerto Rico		72000	1219
+2007	21	Extractives	Puerto Rico	Arecibo Municipio	72013	47
+2007	21	Extractives	Puerto Rico	Cabo Rojo Municipio	72023	30
+2007	21	Extractives	Puerto Rico	Caguas Municipio	72025	37
+2007	21	Extractives	Puerto Rico	Guaynabo Municipio	72061	135
+2007	21	Extractives	Puerto Rico	lsabela Municipio	72071	57
+2007	21	Extractives	Puerto Rico	Juana Diaz Municipio	72075	128
+2007	21	Extractives	Puerto Rico	Manati Municipio	72091	23
+2007	21	Extractives	Puerto Rico	Ponce Municipio	72113	36
+2007	21	Extractives	Puerto Rico	San German Municipio	72125	37
+2007	21	Extractives	Puerto Rico	San Lorenzo Municipio	72129	37
+2007	21	Extractives	Puerto Rico	Yabucoa Municipio	72151	65
 2007	211	Oil & Gas	Alabama		01000	769
 2007	211	Oil & Gas	Alabama	Tuscaloosa County	01125	116
 2007	211	Oil & Gas	Alaska		02000	3245

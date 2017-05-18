@@ -25,12 +25,6 @@
     '2013':
       count: 19
       percent: 0.13
-    '2014':
-      count: 34
-      percent: 0.23
-    '2015':
-      count: 34
-      percent: 0.23
 '50005':
   name: Caledonia County
   employment:
@@ -175,39 +169,6 @@
     '2015':
       count: 351
       percent: 1.28
-'50023':
-  name: Washington County
-  employment:
-    '2006':
-      count: 143
-      percent: 0.44
-    '2007':
-      count: 144
-      percent: 0.44
-    '2008':
-      count: 73
-      percent: 0.22
-    '2009':
-      count: 67
-      percent: 0.21
-    '2010':
-      count: 71
-      percent: 0.22
-    '2011':
-      count: 91
-      percent: 0.29
-    '2012':
-      count: 103
-      percent: 0.32
-    '2013':
-      count: 91
-      percent: 0.28
-    '2014':
-      count: 77
-      percent: 0.24
-    '2015':
-      count: 77
-      percent: 0.23
 '50027':
   name: Windsor County
   employment:
@@ -230,5 +191,5 @@
       count: 32
       percent: 0.14
     '2015':
-      count: 36
+      count: 37
       percent: 0.16

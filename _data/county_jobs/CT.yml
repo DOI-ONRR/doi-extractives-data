@@ -1,59 +1,23 @@
 09001:
   name: Fairfield County
   employment:
-    '2009':
+    '2008':
       count: 38
       percent: 0.01
-    '2010':
-      count: 46
-      percent: 0.01
-    '2011':
-      count: 40
-      percent: 0.01
-    '2012':
-      count: 36
-      percent: 0.01
-    '2013':
-      count: 39
-      percent: 0.01
-    '2014':
-      count: 40
-      percent: 0.01
-    '2015':
-      count: 40
-      percent: 0.01
-09003:
-  name: Hartford County
-  employment:
-    '2006':
-      count: 108
-      percent: 0.02
-    '2007':
-      count: 94
-      percent: 0.02
-    '2008':
-      count: 88
-      percent: 0.02
     '2009':
-      count: 83
-      percent: 0.02
-    '2010':
-      count: 91
-      percent: 0.02
-    '2011':
-      count: 86
-      percent: 0.02
-    '2012':
-      count: 97
-      percent: 0.02
-    '2013':
-      count: 76
-      percent: 0.02
-    '2014':
-      count: 70
+      count: 29
       percent: 0.01
-    '2015':
-      count: 67
+    '2010':
+      count: 37
+      percent: 0.01
+    '2012':
+      count: 26
+      percent: 0.01
+    '2013':
+      count: 30
+      percent: 0.01
+    '2014':
+      count: 32
       percent: 0.01
 09005:
   name: Litchfield County
@@ -121,12 +85,6 @@
     '2008':
       count: 90
       percent: 0.07
-    '2009':
-      count: 76
-      percent: 0.06
-    '2010':
-      count: 63
-      percent: 0.05
     '2011':
       count: 55
       percent: 0.04

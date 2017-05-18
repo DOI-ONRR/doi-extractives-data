@@ -7,12 +7,6 @@
     '2009':
       count: 56
       percent: 0.22
-    '2014':
-      count: 53
-      percent: 0.21
-    '2015':
-      count: 58
-      percent: 0.23
 '33003':
   name: Carroll County
   employment:
@@ -54,15 +48,6 @@
       percent: 0.1
     '2009':
       count: 50
-      percent: 0.1
-    '2010':
-      count: 53
-      percent: 0.1
-    '2011':
-      count: 52
-      percent: 0.1
-    '2012':
-      count: 53
       percent: 0.1
     '2013':
       count: 46
@@ -106,72 +91,24 @@
     '2015':
       count: 43
       percent: 0.02
-'33013':
-  name: Merrimack County
-  employment:
-    '2006':
-      count: 226
-      percent: 0.31
-    '2007':
-      count: 209
-      percent: 0.28
-    '2008':
-      count: 184
-      percent: 0.25
-    '2009':
-      count: 164
-      percent: 0.23
-    '2010':
-      count: 150
-      percent: 0.21
-    '2011':
-      count: 142
-      percent: 0.2
-    '2012':
-      count: 138
-      percent: 0.19
-    '2013':
-      count: 145
-      percent: 0.2
-    '2014':
-      count: 145
-      percent: 0.19
-    '2015':
-      count: 151
-      percent: 0.2
 '33015':
   name: Rockingham County
   employment:
     '2006':
       count: 65
       percent: 0.05
-    '2007':
-      count: 176
-      percent: 0.13
-    '2008':
-      count: 154
-      percent: 0.11
-    '2009':
-      count: 106
-      percent: 0.08
-    '2010':
-      count: 104
-      percent: 0.08
     '2011':
-      count: 113
-      percent: 0.08
-    '2012':
-      count: 102
-      percent: 0.08
+      count: 25
+      percent: 0.02
     '2013':
-      count: 112
-      percent: 0.08
+      count: 27
+      percent: 0.02
     '2014':
-      count: 105
-      percent: 0.08
+      count: 28
+      percent: 0.02
     '2015':
-      count: 122
-      percent: 0.08
+      count: 42
+      percent: 0.03
 '33017':
   name: Strafford County
   employment:
@@ -193,6 +130,3 @@
     '2012':
       count: 28
       percent: 0.06
-    '2014':
-      count: 25
-      percent: 0.05

@@ -1,114 +1,33 @@
-'24001':
-  name: Allegany County
-  employment:
-    '2006':
-      count: 128
-      percent: 0.43
-    '2008':
-      count: 110
-      percent: 0.37
-    '2009':
-      count: 84
-      percent: 0.29
-    '2010':
-      count: 98
-      percent: 0.33
-    '2011':
-      count: 127
-      percent: 0.43
-    '2014':
-      count: 108
-      percent: 0.37
-    '2015':
-      count: 84
-      percent: 0.29
 '24003':
   name: Anne Arundel County
   employment:
     '2006':
-      count: 82
-      percent: 0.04
-    '2007':
-      count: 66
+      count: 69
       percent: 0.03
-    '2008':
-      count: 53
-      percent: 0.02
-    '2009':
-      count: 79
-      percent: 0.03
-    '2010':
-      count: 80
-      percent: 0.04
-    '2011':
-      count: 47
-      percent: 0.02
-    '2012':
-      count: 54
-      percent: 0.02
-    '2013':
-      count: 63
-      percent: 0.03
-    '2014':
-      count: 44
-      percent: 0.02
-    '2015':
-      count: 53
-      percent: 0.02
 '24005':
   name: Baltimore County
   employment:
-    '2006':
-      count: 83
-      percent: 0.02
-    '2007':
-      count: 95
-      percent: 0.03
     '2008':
-      count: 100
-      percent: 0.03
-    '2009':
-      count: 97
-      percent: 0.03
-    '2010':
-      count: 94
-      percent: 0.03
-    '2011':
-      count: 83
+      count: 80
       percent: 0.02
     '2012':
-      count: 78
+      count: 63
       percent: 0.02
     '2013':
-      count: 79
+      count: 63
       percent: 0.02
     '2014':
-      count: 92
-      percent: 0.03
-    '2015':
-      count: 91
+      count: 66
       percent: 0.02
-'24013':
-  name: Carroll County
-  employment:
-    '2012':
-      count: 60
-      percent: 0.11
-    '2013':
-      count: 58
-      percent: 0.1
+    '2015':
+      count: 65
+      percent: 0.02
 '24015':
   name: Cecil County
   employment:
     '2006':
       count: 204
       percent: 0.68
-    '2007':
-      count: 162
-      percent: 0.53
-    '2008':
-      count: 144
-      percent: 0.47
     '2009':
       count: 121
       percent: 0.4
@@ -124,189 +43,27 @@
     '2015':
       count: 91
       percent: 0.3
-'24019':
-  name: Dorchester County
-  employment:
-    '2011':
-      count: 75
-      percent: 0.68
-    '2012':
-      count: 109
-      percent: 1.01
-    '2013':
-      count: 135
-      percent: 1.24
-    '2014':
-      count: 193
-      percent: 1.74
-'24021':
-  name: Frederick County
-  employment:
-    '2009':
-      count: 43
-      percent: 0.05
-    '2010':
-      count: 46
-      percent: 0.05
-    '2011':
-      count: 73
-      percent: 0.08
-    '2012':
-      count: 66
-      percent: 0.07
-    '2013':
-      count: 73
-      percent: 0.08
-    '2014':
-      count: 33
-      percent: 0.03
-'24023':
-  name: Garrett County
-  employment:
-    '2006':
-      count: 453
-      percent: 3.85
-    '2007':
-      count: 369
-      percent: 3.11
-    '2008':
-      count: 371
-      percent: 3.15
-    '2009':
-      count: 364
-      percent: 3.2
-    '2010':
-      count: 361
-      percent: 3.16
-    '2011':
-      count: 384
-      percent: 3.39
-    '2012':
-      count: 396
-      percent: 3.47
-    '2013':
-      count: 316
-      percent: 2.71
-    '2014':
-      count: 259
-      percent: 2.23
-    '2015':
-      count: 389
-      percent: 3.3
-'24025':
-  name: Harford County
-  employment:
-    '2006':
-      count: 9
-      percent: 0.01
-    '2007':
-      count: 32
-      percent: 0.04
-    '2008':
-      count: 30
-      percent: 0.04
-    '2009':
-      count: 27
-      percent: 0.03
-    '2011':
-      count: 91
-      percent: 0.11
-    '2012':
-      count: 101
-      percent: 0.12
-    '2013':
-      count: 108
-      percent: 0.12
-    '2014':
-      count: 102
-      percent: 0.12
-    '2015':
-      count: 105
-      percent: 0.12
 '24027':
   name: Howard County
   employment:
-    '2010':
-      count: 61
-      percent: 0.04
-    '2011':
-      count: 60
-      percent: 0.04
     '2012':
       count: 58
       percent: 0.04
 '24031':
   name: Montgomery County
   employment:
-    '2006':
-      count: 323
+    '2008':
+      count: 359
+      percent: 0.08
+    '2009':
+      count: 332
       percent: 0.07
-    '2007':
-      count: 348
-      percent: 0.08
-    '2008':
-      count: 375
-      percent: 0.08
-    '2009':
-      count: 348
-      percent: 0.08
     '2010':
-      count: 365
+      count: 342
       percent: 0.08
     '2011':
-      count: 165
-      percent: 0.04
-    '2012':
-      count: 144
+      count: 138
       percent: 0.03
-    '2013':
-      count: 63
-      percent: 0.01
-    '2014':
-      count: 56
-      percent: 0.01
-    '2015':
-      count: 53
-      percent: 0.01
-'24033':
-  name: Prince George's County
-  employment:
-    '2006':
-      count: 173
-      percent: 0.06
-    '2007':
-      count: 168
-      percent: 0.05
-    '2008':
-      count: 151
-      percent: 0.05
-    '2009':
-      count: 122
-      percent: 0.04
-    '2010':
-      count: 62
-      percent: 0.02
-    '2011':
-      count: 76
-      percent: 0.03
-    '2012':
-      count: 90
-      percent: 0.03
-    '2013':
-      count: 88
-      percent: 0.03
-'24035':
-  name: Queen Anne's County
-  employment:
-    '2006':
-      count: 17
-      percent: 0.13
-'24041':
-  name: Talbot County
-  employment:
-    '2011':
-      count: 8
-      percent: 0.04
 '24043':
   name: Washington County
   employment:
@@ -325,27 +82,3 @@
     '2010':
       count: 60
       percent: 0.09
-    '2011':
-      count: 47
-      percent: 0.07
-    '2013':
-      count: 29
-      percent: 0.04
-    '2014':
-      count: 37
-      percent: 0.06
-'24047':
-  name: Worcester County
-  employment:
-    '2006':
-      count: 8
-      percent: 0.03
-    '2007':
-      count: 5
-      percent: 0.02
-    '2008':
-      count: 6
-      percent: 0.02
-    '2009':
-      count: 3
-      percent: 0.01

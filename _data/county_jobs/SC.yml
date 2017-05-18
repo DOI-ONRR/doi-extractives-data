@@ -1,33 +1,9 @@
 '45003':
   name: Aiken County
   employment:
-    '2006':
-      count: 153
-      percent: 0.28
-    '2007':
-      count: 114
-      percent: 0.2
-    '2008':
-      count: 135
-      percent: 0.24
-    '2009':
-      count: 108
-      percent: 0.2
-    '2010':
-      count: 106
-      percent: 0.19
     '2011':
       count: 111
       percent: 0.19
-    '2012':
-      count: 117
-      percent: 0.21
-    '2013':
-      count: 108
-      percent: 0.2
-    '2014':
-      count: 113
-      percent: 0.2
 '45007':
   name: Anderson County
   employment:
@@ -37,63 +13,6 @@
     '2007':
       count: 69
       percent: 0.11
-    '2008':
-      count: 82
-      percent: 0.14
-    '2009':
-      count: 106
-      percent: 0.19
-    '2010':
-      count: 62
-      percent: 0.11
-    '2011':
-      count: 58
-      percent: 0.1
-    '2012':
-      count: 55
-      percent: 0.1
-    '2013':
-      count: 49
-      percent: 0.08
-    '2014':
-      count: 68
-      percent: 0.11
-    '2015':
-      count: 77
-      percent: 0.12
-'45019':
-  name: Charleston County
-  employment:
-    '2006':
-      count: 3
-      percent: 0
-    '2007':
-      count: 5
-      percent: 0
-    '2008':
-      count: 13
-      percent: 0.01
-    '2009':
-      count: 20
-      percent: 0.01
-    '2010':
-      count: 21
-      percent: 0.01
-    '2011':
-      count: 18
-      percent: 0.01
-    '2012':
-      count: 18
-      percent: 0.01
-    '2013':
-      count: 14
-      percent: 0.01
-    '2014':
-      count: 25
-      percent: 0.01
-    '2015':
-      count: 31
-      percent: 0.01
 '45025':
   name: Chesterfield County
   employment:
@@ -142,87 +61,27 @@
     '2009':
       count: 20
       percent: 0.07
-'45041':
-  name: Florence County
-  employment:
-    '2010':
-      count: 16
-      percent: 0.03
-    '2011':
-      count: 15
-      percent: 0.03
-    '2012':
-      count: 17
-      percent: 0.03
 '45043':
   name: Georgetown County
   employment:
     '2006':
       count: 47
       percent: 0.2
-    '2009':
-      count: 47
-      percent: 0.2
-    '2010':
-      count: 47
-      percent: 0.21
-    '2011':
-      count: 48
-      percent: 0.22
-    '2012':
-      count: 44
-      percent: 0.2
-    '2013':
-      count: 45
-      percent: 0.21
-    '2014':
-      count: 19
-      percent: 0.08
-    '2015':
-      count: 18
-      percent: 0.08
 '45045':
   name: Greenville County
   employment:
     '2006':
-      count: 86
-      percent: 0.04
+      count: 76
+      percent: 0.03
     '2007':
-      count: 88
-      percent: 0.04
-    '2008':
-      count: 81
+      count: 77
       percent: 0.03
-    '2009':
-      count: 69
-      percent: 0.03
-    '2010':
-      count: 64
-      percent: 0.03
-    '2011':
-      count: 25
-      percent: 0.01
-    '2012':
-      count: 28
-      percent: 0.01
-    '2013':
-      count: 29
-      percent: 0.01
-    '2014':
-      count: 43
-      percent: 0.02
     '2015':
       count: 23
       percent: 0.01
 '45051':
   name: Horry County
   employment:
-    '2006':
-      count: 103
-      percent: 0.09
-    '2007':
-      count: 68
-      percent: 0.06
     '2008':
       count: 59
       percent: 0.05
@@ -232,21 +91,9 @@
     '2010':
       count: 42
       percent: 0.04
-    '2011':
-      count: 39
-      percent: 0.04
-    '2012':
-      count: 38
-      percent: 0.03
     '2013':
       count: 38
       percent: 0.03
-    '2014':
-      count: 38
-      percent: 0.03
-    '2015':
-      count: 55
-      percent: 0.05
 '45055':
   name: Kershaw County
   employment:
@@ -259,56 +106,26 @@
     '2009':
       count: 48
       percent: 0.3
-    '2010':
-      count: 78
-      percent: 0.5
-    '2011':
-      count: 146
-      percent: 0.93
-    '2012':
-      count: 153
-      percent: 0.97
-    '2013':
-      count: 134
-      percent: 0.86
-    '2014':
-      count: 130
-      percent: 0.75
-    '2015':
-      count: 164
-      percent: 0.91
 '45063':
   name: Lexington County
   employment:
     '2006':
       count: 135
       percent: 0.15
-    '2007':
-      count: 134
-      percent: 0.14
     '2008':
-      count: 140
-      percent: 0.14
+      count: 130
+      percent: 0.13
     '2009':
-      count: 121
+      count: 117
       percent: 0.13
     '2010':
-      count: 108
-      percent: 0.12
-    '2011':
-      count: 112
-      percent: 0.12
-    '2012':
-      count: 110
+      count: 101
       percent: 0.11
     '2013':
-      count: 113
-      percent: 0.11
-    '2014':
-      count: 115
+      count: 109
       percent: 0.11
     '2015':
-      count: 114
+      count: 110
       percent: 0.1
 '45067':
   name: Marion County
@@ -323,80 +140,17 @@
   name: Richland County
   employment:
     '2008':
-      count: 111
-      percent: 0.05
-    '2009':
-      count: 103
-      percent: 0.05
-    '2010':
-      count: 107
-      percent: 0.05
-    '2011':
-      count: 93
+      count: 108
       percent: 0.05
 '45083':
   name: Spartanburg County
   employment:
-    '2006':
-      count: 150
-      percent: 0.13
     '2007':
       count: 161
       percent: 0.14
-    '2008':
-      count: 160
-      percent: 0.13
-    '2009':
-      count: 162
-      percent: 0.15
     '2010':
       count: 159
       percent: 0.14
     '2011':
       count: 144
       percent: 0.13
-    '2012':
-      count: 124
-      percent: 0.11
-    '2013':
-      count: 125
-      percent: 0.1
-    '2014':
-      count: 130
-      percent: 0.11
-    '2015':
-      count: 133
-      percent: 0.1
-'45091':
-  name: York County
-  employment:
-    '2006':
-      count: 53
-      percent: 0.08
-    '2007':
-      count: 49
-      percent: 0.07
-    '2008':
-      count: 55
-      percent: 0.07
-    '2009':
-      count: 43
-      percent: 0.06
-    '2010':
-      count: 37
-      percent: 0.05
-    '2011':
-      count: 48
-      percent: 0.06
-    '2012':
-      count: 41
-      percent: 0.05
-    '2013':
-      count: 30
-      percent: 0.04
-    '2014':
-      count: 31
-      percent: 0.04
-    '2015':
-      count: 32
-      percent: 0.04

@@ -1,27 +1,6 @@
-'25001':
-  name: Barnstable County
-  employment:
-    '2008':
-      count: 66
-      percent: 0.07
-    '2011':
-      count: 65
-      percent: 0.07
-    '2012':
-      count: 65
-      percent: 0.07
-    '2014':
-      count: 75
-      percent: 0.08
-    '2015':
-      count: 78
-      percent: 0.08
 '25003':
   name: Berkshire County
   employment:
-    '2006':
-      count: 122
-      percent: 0.19
     '2007':
       count: 107
       percent: 0.17
@@ -46,93 +25,15 @@
     '2014':
       count: 59
       percent: 0.1
-    '2015':
-      count: 67
-      percent: 0.11
-'25005':
-  name: Bristol County
-  employment:
-    '2006':
-      count: 82
-      percent: 0.04
-    '2007':
-      count: 81
-      percent: 0.04
-    '2008':
-      count: 70
-      percent: 0.03
-    '2009':
-      count: 65
-      percent: 0.03
-    '2010':
-      count: 17
-      percent: 0.01
-    '2011':
-      count: 22
-      percent: 0.01
-    '2012':
-      count: 22
-      percent: 0.01
-    '2013':
-      count: 24
-      percent: 0.01
-    '2014':
-      count: 17
-      percent: 0.01
-    '2015':
-      count: 15
-      percent: 0.01
 '25009':
   name: Essex County
   employment:
-    '2006':
-      count: 84
-      percent: 0.03
-    '2007':
-      count: 69
-      percent: 0.02
-    '2008':
-      count: 54
-      percent: 0.02
-    '2009':
-      count: 51
-      percent: 0.02
-    '2010':
-      count: 46
-      percent: 0.02
-    '2011':
-      count: 45
-      percent: 0.02
-    '2012':
-      count: 45
-      percent: 0.01
     '2013':
       count: 46
       percent: 0.01
 '25013':
   name: Hampden County
   employment:
-    '2006':
-      count: 92
-      percent: 0.05
-    '2007':
-      count: 85
-      percent: 0.04
-    '2008':
-      count: 80
-      percent: 0.04
-    '2009':
-      count: 75
-      percent: 0.04
-    '2010':
-      count: 68
-      percent: 0.04
-    '2011':
-      count: 68
-      percent: 0.03
-    '2012':
-      count: 71
-      percent: 0.04
     '2013':
       count: 72
       percent: 0.04
@@ -172,15 +73,9 @@
     '2014':
       count: 38
       percent: 0.06
-    '2015':
-      count: 38
-      percent: 0.06
 '25017':
   name: Middlesex County
   employment:
-    '2006':
-      count: 443
-      percent: 0.06
     '2007':
       count: 417
       percent: 0.05
@@ -199,111 +94,75 @@
     '2012':
       count: 185
       percent: 0.02
-    '2013':
-      count: 179
-      percent: 0.02
     '2014':
-      count: 203
+      count: 198
       percent: 0.02
     '2015':
-      count: 215
+      count: 211
       percent: 0.02
 '25021':
   name: Norfolk County
   employment:
-    '2006':
-      count: 71
-      percent: 0.02
-    '2007':
-      count: 72
-      percent: 0.02
-    '2008':
-      count: 64
-      percent: 0.02
     '2009':
-      count: 74
+      count: 56
       percent: 0.02
     '2010':
-      count: 83
-      percent: 0.03
-    '2011':
-      count: 82
-      percent: 0.03
-    '2012':
-      count: 70
+      count: 47
       percent: 0.02
-    '2013':
-      count: 80
-      percent: 0.02
-    '2014':
-      count: 91
-      percent: 0.03
     '2015':
-      count: 81
-      percent: 0.02
+      count: 40
+      percent: 0.01
 '25023':
   name: Plymouth County
   employment:
-    '2006':
-      count: 373
-      percent: 0.21
     '2007':
-      count: 271
+      count: 258
       percent: 0.15
     '2008':
-      count: 185
-      percent: 0.1
+      count: 167
+      percent: 0.09
     '2009':
-      count: 171
+      count: 164
       percent: 0.1
     '2010':
-      count: 109
+      count: 100
       percent: 0.06
     '2011':
-      count: 80
-      percent: 0.05
-    '2012':
-      count: 80
-      percent: 0.05
-    '2013':
-      count: 89
-      percent: 0.05
-    '2014':
-      count: 84
-      percent: 0.05
-    '2015':
-      count: 82
+      count: 74
       percent: 0.04
+    '2012':
+      count: 74
+      percent: 0.04
+    '2013':
+      count: 72
+      percent: 0.04
+    '2014':
+      count: 68
+      percent: 0.04
+    '2015':
+      count: 64
+      percent: 0.03
 '25027':
   name: Worcester County
   employment:
-    '2006':
-      count: 283
-      percent: 0.09
-    '2007':
-      count: 234
-      percent: 0.07
-    '2008':
-      count: 199
-      percent: 0.06
     '2009':
-      count: 203
-      percent: 0.07
+      count: 181
+      percent: 0.06
     '2010':
-      count: 206
-      percent: 0.07
+      count: 185
+      percent: 0.06
     '2011':
-      count: 204
-      percent: 0.07
+      count: 188
+      percent: 0.06
     '2012':
-      count: 202
+      count: 182
       percent: 0.06
     '2013':
-      count: 206
-      percent: 0.06
+      count: 161
+      percent: 0.05
     '2014':
-      count: 219
-      percent: 0.07
+      count: 177
+      percent: 0.05
     '2015':
-      count: 251
-      percent: 0.08
+      count: 191
+      percent: 0.06

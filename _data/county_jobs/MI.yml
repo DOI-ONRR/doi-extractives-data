@@ -1,189 +1,54 @@
 '26005':
   name: Allegan County
   employment:
-    '2006':
-      count: 180
-      percent: 0.52
-    '2007':
-      count: 173
-      percent: 0.5
-    '2009':
-      count: 100
-      percent: 0.32
-    '2010':
-      count: 59
-      percent: 0.19
-    '2011':
-      count: 38
-      percent: 0.11
-    '2012':
-      count: 22
-      percent: 0.06
-    '2013':
-      count: 32
-      percent: 0.09
-    '2014':
-      count: 29
-      percent: 0.08
     '2015':
-      count: 30
-      percent: 0.08
+      count: 17
+      percent: 0.05
 '26007':
   name: Alpena County
   employment:
     '2006':
       count: 36
       percent: 0.3
-    '2007':
-      count: 37
-      percent: 0.32
-    '2008':
-      count: 39
-      percent: 0.33
     '2009':
-      count: 38
-      percent: 0.34
+      count: 28
+      percent: 0.25
     '2010':
-      count: 56
-      percent: 0.51
+      count: 45
+      percent: 0.41
     '2011':
-      count: 58
-      percent: 0.54
-    '2012':
-      count: 105
-      percent: 0.93
-    '2013':
-      count: 100
-      percent: 0.92
-    '2014':
-      count: 101
-      percent: 0.92
-    '2015':
-      count: 100
-      percent: 0.88
-'26009':
-  name: Antrim County
-  employment:
-    '2006':
-      count: 8
-      percent: 0.13
-    '2007':
-      count: 8
-      percent: 0.13
+      count: 40
+      percent: 0.37
 '26011':
   name: Arenac County
   employment:
     '2006':
-      count: 35
-      percent: 0.67
+      count: 10
+      percent: 0.19
     '2007':
-      count: 33
-      percent: 0.64
-    '2008':
-      count: 28
-      percent: 0.53
-    '2009':
-      count: 28
-      percent: 0.59
-    '2010':
-      count: 27
-      percent: 0.62
-    '2011':
-      count: 20
-      percent: 0.46
-    '2012':
-      count: 11
-      percent: 0.25
-'26013':
-  name: Baraga County
-  employment:
-    '2008':
-      count: 6
-      percent: 0.16
-'26015':
-  name: Barry County
-  employment:
-    '2013':
-      count: 9
-      percent: 0.08
-    '2014':
-      count: 6
-      percent: 0.05
-    '2015':
-      count: 7
-      percent: 0.06
+      count: 10
+      percent: 0.19
 '26017':
   name: Bay County
   employment:
-    '2006':
-      count: 13
-      percent: 0.04
-    '2007':
-      count: 16
-      percent: 0.04
-    '2008':
-      count: 16
-      percent: 0.04
-    '2009':
-      count: 17
-      percent: 0.05
-    '2010':
-      count: 20
-      percent: 0.06
     '2011':
       count: 12
       percent: 0.03
     '2012':
       count: 10
       percent: 0.03
-    '2013':
-      count: 14
-      percent: 0.04
-    '2014':
-      count: 14
-      percent: 0.04
-    '2015':
-      count: 13
-      percent: 0.04
 '26021':
   name: Berrien County
   employment:
-    '2006':
-      count: 123
-      percent: 0.2
-    '2007':
-      count: 123
-      percent: 0.2
-    '2008':
-      count: 116
-      percent: 0.19
-    '2009':
-      count: 120
-      percent: 0.21
-    '2010':
-      count: 120
-      percent: 0.21
-    '2011':
-      count: 122
-      percent: 0.21
-    '2012':
-      count: 112
-      percent: 0.19
     '2013':
-      count: 100
-      percent: 0.17
-    '2014':
-      count: 84
-      percent: 0.14
-    '2015':
       count: 88
-      percent: 0.14
-'26025':
-  name: Calhoun County
-  employment:
-    '2006':
-      count: 43
-      percent: 0.07
+      percent: 0.15
+    '2014':
+      count: 74
+      percent: 0.12
+    '2015':
+      count: 76
+      percent: 0.12
 '26033':
   name: Chippewa County
   employment:
@@ -208,51 +73,18 @@
     '2015':
       count: 28
       percent: 0.22
-'26035':
-  name: Clare County
-  employment:
-    '2006':
-      count: 4
-      percent: 0.06
-    '2007':
-      count: 4
-      percent: 0.06
-    '2013':
-      count: 4
-      percent: 0.06
 '26037':
   name: Clinton County
   employment:
-    '2009':
-      count: 50
-      percent: 0.36
-    '2010':
-      count: 51
-      percent: 0.36
-    '2011':
-      count: 56
-      percent: 0.39
     '2012':
-      count: 57
-      percent: 0.4
+      count: 53
+      percent: 0.37
     '2013':
-      count: 60
-      percent: 0.39
+      count: 58
+      percent: 0.38
     '2014':
-      count: 62
-      percent: 0.4
-    '2015':
-      count: 64
-      percent: 0.4
-'26039':
-  name: Crawford County
-  employment:
-    '2006':
-      count: 13
-      percent: 0.31
-    '2007':
-      count: 17
-      percent: 0.41
+      count: 61
+      percent: 0.39
 '26041':
   name: Delta County
   employment:
@@ -271,195 +103,78 @@
 '26045':
   name: Eaton County
   employment:
-    '2006':
-      count: 34
-      percent: 0.11
-    '2007':
-      count: 32
-      percent: 0.1
-    '2008':
-      count: 34
-      percent: 0.11
-    '2009':
-      count: 33
-      percent: 0.11
-    '2010':
-      count: 34
-      percent: 0.11
-    '2011':
-      count: 34
-      percent: 0.11
-    '2012':
-      count: 33
-      percent: 0.11
-    '2013':
+    '2014':
       count: 35
       percent: 0.1
-    '2014':
-      count: 38
-      percent: 0.11
     '2015':
-      count: 38
+      count: 36
       percent: 0.09
-'26047':
-  name: Emmet County
-  employment:
-    '2006':
-      count: 5
-      percent: 0.03
 '26049':
   name: Genesee County
   employment:
-    '2006':
-      count: 11
-      percent: 0.01
-    '2007':
-      count: 14
-      percent: 0.01
-    '2008':
-      count: 13
-      percent: 0.01
     '2009':
-      count: 13
+      count: 9
       percent: 0.01
     '2010':
-      count: 12
+      count: 10
       percent: 0.01
     '2011':
-      count: 16
+      count: 14
       percent: 0.01
     '2012':
-      count: 19
+      count: 18
       percent: 0.01
     '2013':
-      count: 41
-      percent: 0.03
+      count: 16
+      percent: 0.01
     '2014':
-      count: 41
-      percent: 0.03
+      count: 11
+      percent: 0.01
     '2015':
-      count: 45
-      percent: 0.03
-'26051':
-  name: Gladwin County
-  employment:
-    '2012':
-      count: 8
-      percent: 0.2
+      count: 14
+      percent: 0.01
 '26055':
   name: Grand Traverse County
   employment:
     '2006':
-      count: 331
-      percent: 0.7
+      count: 108
+      percent: 0.23
     '2007':
-      count: 316
-      percent: 0.67
+      count: 109
+      percent: 0.23
     '2008':
-      count: 384
-      percent: 0.83
+      count: 97
+      percent: 0.21
     '2009':
-      count: 298
-      percent: 0.69
+      count: 74
+      percent: 0.17
     '2010':
-      count: 252
-      percent: 0.58
+      count: 72
+      percent: 0.17
     '2011':
-      count: 256
-      percent: 0.58
+      count: 77
+      percent: 0.17
     '2012':
-      count: 302
-      percent: 0.67
+      count: 113
+      percent: 0.25
     '2013':
-      count: 278
-      percent: 0.61
+      count: 144
+      percent: 0.31
     '2014':
-      count: 268
-      percent: 0.57
+      count: 117
+      percent: 0.25
     '2015':
-      count: 207
-      percent: 0.43
-'26057':
-  name: Gratiot County
-  employment:
-    '2006':
-      count: 11
-      percent: 0.08
-    '2007':
-      count: 9
-      percent: 0.07
-    '2008':
-      count: 9
-      percent: 0.07
-    '2009':
-      count: 9
-      percent: 0.07
-    '2010':
-      count: 8
-      percent: 0.06
-    '2011':
-      count: 9
-      percent: 0.07
-    '2012':
-      count: 9
-      percent: 0.07
-    '2013':
-      count: 8
-      percent: 0.06
-    '2014':
-      count: 7
-      percent: 0.05
-'26059':
-  name: Hillsdale County
-  employment:
-    '2006':
-      count: 18
-      percent: 0.13
-    '2007':
-      count: 13
-      percent: 0.1
+      count: 96
+      percent: 0.2
 '26065':
   name: Ingham County
   employment:
     '2006':
-      count: 225
-      percent: 0.14
-    '2007':
-      count: 216
-      percent: 0.13
-    '2008':
-      count: 209
-      percent: 0.13
-    '2009':
-      count: 200
-      percent: 0.13
-    '2010':
-      count: 195
-      percent: 0.13
-    '2011':
-      count: 203
-      percent: 0.13
-    '2012':
-      count: 206
-      percent: 0.13
-    '2013':
-      count: 213
-      percent: 0.14
-    '2014':
-      count: 228
-      percent: 0.15
-    '2015':
-      count: 209
-      percent: 0.14
+      count: 24
+      percent: 0.01
 '26069':
   name: Iosco County
   employment:
-    '2006':
-      count: 58
-      percent: 0.73
-    '2007':
-      count: 55
-      percent: 0.72
     '2008':
       count: 36
       percent: 0.49
@@ -475,222 +190,60 @@
     '2015':
       count: 22
       percent: 0.3
-'26073':
-  name: Isabella County
-  employment:
-    '2006':
-      count: 334
-      percent: 1.13
-    '2007':
-      count: 343
-      percent: 1.12
-    '2008':
-      count: 363
-      percent: 1.2
-    '2009':
-      count: 311
-      percent: 1.1
-    '2010':
-      count: 319
-      percent: 1.16
-    '2011':
-      count: 323
-      percent: 1.15
-    '2012':
-      count: 403
-      percent: 1.41
-    '2013':
-      count: 408
-      percent: 1.42
-    '2014':
-      count: 393
-      percent: 1.35
-    '2015':
-      count: 306
-      percent: 1.05
 '26075':
   name: Jackson County
   employment:
-    '2006':
-      count: 42
-      percent: 0.07
-    '2007':
-      count: 38
-      percent: 0.07
-    '2008':
-      count: 38
-      percent: 0.07
-    '2009':
-      count: 40
-      percent: 0.08
     '2010':
-      count: 53
+      count: 49
       percent: 0.1
     '2011':
-      count: 72
+      count: 69
       percent: 0.13
     '2012':
-      count: 81
-      percent: 0.15
+      count: 78
+      percent: 0.14
     '2013':
-      count: 88
-      percent: 0.16
-    '2014':
-      count: 87
+      count: 85
       percent: 0.15
-    '2015':
-      count: 87
-      percent: 0.15
-'26077':
-  name: Kalamazoo County
-  employment:
-    '2006':
-      count: 43
-      percent: 0.04
-    '2007':
-      count: 31
-      percent: 0.03
-    '2008':
-      count: 32
-      percent: 0.03
-    '2009':
-      count: 30
-      percent: 0.03
-    '2010':
-      count: 31
-      percent: 0.03
-    '2011':
-      count: 31
-      percent: 0.03
-    '2012':
-      count: 74
-      percent: 0.07
-    '2013':
-      count: 39
-      percent: 0.04
-    '2014':
-      count: 41
-      percent: 0.04
-    '2015':
-      count: 36
-      percent: 0.03
-'26079':
-  name: Kalkaska County
-  employment:
-    '2006':
-      count: 246
-      percent: 6.42
-    '2007':
-      count: 350
-      percent: 9.15
-    '2008':
-      count: 392
-      percent: 10.16
-    '2009':
-      count: 354
-      percent: 10.02
-    '2010':
-      count: 441
-      percent: 12.04
-    '2011':
-      count: 443
-      percent: 11.88
-    '2012':
-      count: 471
-      percent: 12.39
-    '2013':
-      count: 533
-      percent: 14.89
-    '2014':
-      count: 485
-      percent: 12.42
-    '2015':
-      count: 332
-      percent: 8.68
 '26081':
   name: Kent County
   employment:
     '2006':
-      count: 123
-      percent: 0.04
+      count: 42
+      percent: 0.01
     '2007':
-      count: 129
-      percent: 0.04
+      count: 46
+      percent: 0.01
     '2008':
-      count: 132
-      percent: 0.04
+      count: 56
+      percent: 0.02
     '2009':
-      count: 101
-      percent: 0.03
+      count: 41
+      percent: 0.01
     '2010':
-      count: 128
-      percent: 0.04
+      count: 47
+      percent: 0.02
     '2011':
-      count: 118
-      percent: 0.04
-    '2012':
-      count: 119
-      percent: 0.04
-    '2013':
-      count: 134
-      percent: 0.04
-    '2014':
-      count: 115
-      percent: 0.03
-    '2015':
-      count: 92
+      count: 52
       percent: 0.02
 '26087':
   name: Lapeer County
   employment:
-    '2006':
-      count: 76
-      percent: 0.36
     '2007':
-      count: 76
-      percent: 0.36
+      count: 68
+      percent: 0.33
     '2008':
-      count: 82
-      percent: 0.41
-    '2009':
-      count: 74
-      percent: 0.4
-    '2010':
-      count: 79
-      percent: 0.41
-    '2011':
-      count: 77
-      percent: 0.39
-    '2012':
-      count: 76
-      percent: 0.36
-    '2013':
-      count: 73
+      count: 71
       percent: 0.35
+    '2009':
+      count: 69
+      percent: 0.38
     '2014':
       count: 72
       percent: 0.35
     '2015':
       count: 84
       percent: 0.4
-'26089':
-  name: Leelanau County
-  employment:
-    '2009':
-      count: 12
-      percent: 0.2
-    '2010':
-      count: 32
-      percent: 0.55
-    '2011':
-      count: 19
-      percent: 0.33
-    '2012':
-      count: 12
-      percent: 0.21
-    '2013':
-      count: 11
-      percent: 0.18
 '26091':
   name: Lenawee County
   employment:
@@ -700,380 +253,92 @@
 '26093':
   name: Livingston County
   employment:
-    '2006':
-      count: 47
-      percent: 0.1
-    '2007':
-      count: 38
-      percent: 0.08
-    '2008':
-      count: 33
-      percent: 0.07
-    '2009':
-      count: 31
-      percent: 0.07
-    '2010':
-      count: 29
-      percent: 0.07
-    '2011':
-      count: 28
-      percent: 0.06
-    '2012':
-      count: 30
-      percent: 0.06
-    '2013':
-      count: 35
-      percent: 0.07
-    '2014':
-      count: 39
-      percent: 0.07
     '2015':
-      count: 43
-      percent: 0.08
-'26097':
-  name: Mackinac County
-  employment:
-    '2014':
-      count: 71
-      percent: 1.61
-'26101':
-  name: Manistee County
-  employment:
-    '2006':
-      count: 37
-      percent: 0.47
-    '2007':
-      count: 32
-      percent: 0.41
-    '2008':
-      count: 35
-      percent: 0.46
-    '2009':
-      count: 30
-      percent: 0.42
-    '2010':
-      count: 29
-      percent: 0.41
-    '2011':
-      count: 29
-      percent: 0.42
-    '2012':
-      count: 28
-      percent: 0.41
-    '2013':
-      count: 28
-      percent: 0.41
-    '2014':
-      count: 29
-      percent: 0.43
-    '2015':
-      count: 33
-      percent: 0.48
+      count: 26
+      percent: 0.05
 '26103':
   name: Marquette County
   employment:
-    '2006':
-      count: 1325
-      percent: 4.7
-    '2007':
-      count: 1396
-      percent: 4.96
-    '2008':
-      count: 1555
-      percent: 5.52
-    '2009':
-      count: 1353
-      percent: 5.01
-    '2010':
-      count: 1474
-      percent: 5.49
-    '2011':
-      count: 1623
-      percent: 6.09
-    '2012':
-      count: 1580
-      percent: 5.81
-    '2013':
-      count: 1517
-      percent: 5.51
-    '2014':
-      count: 1539
-      percent: 5.72
     '2015':
-      count: 1384
-      percent: 5.18
-'26107':
-  name: Mecosta County
-  employment:
-    '2006':
-      count: 3
-      percent: 0.03
-    '2013':
-      count: 16
-      percent: 0.13
-'26109':
-  name: Menominee County
-  employment:
-    '2012':
-      count: 16
-      percent: 0.21
-    '2013':
-      count: 7
-      percent: 0.1
-    '2015':
-      count: 5
-      percent: 0.07
-'26113':
-  name: Missaukee County
-  employment:
-    '2010':
-      count: 13
-      percent: 0.49
-    '2012':
-      count: 24
-      percent: 0.84
-    '2013':
-      count: 21
-      percent: 0.7
-    '2014':
-      count: 21
-      percent: 0.67
-    '2015':
-      count: 16
-      percent: 0.49
-'26117':
-  name: Montcalm County
-  employment:
-    '2006':
-      count: 18
-      percent: 0.11
-    '2007':
-      count: 11
-      percent: 0.07
-'26119':
-  name: Montmorency County
-  employment:
-    '2006':
-      count: 25
-      percent: 1.09
-    '2007':
-      count: 28
-      percent: 1.29
-    '2008':
-      count: 33
-      percent: 1.58
-    '2009':
-      count: 30
-      percent: 1.58
-    '2010':
-      count: 24
-      percent: 1.25
-'26123':
-  name: Newaygo County
-  employment:
-    '2007':
-      count: 7
-      percent: 0.06
+      count: 1357
+      percent: 5.07
 '26125':
   name: Oakland County
   employment:
     '2006':
-      count: 240
+      count: 218
       percent: 0.03
     '2007':
-      count: 188
-      percent: 0.03
+      count: 173
+      percent: 0.02
     '2008':
-      count: 179
+      count: 170
       percent: 0.03
     '2009':
-      count: 145
+      count: 136
       percent: 0.02
     '2010':
-      count: 144
+      count: 138
       percent: 0.02
     '2011':
-      count: 134
+      count: 129
       percent: 0.02
     '2012':
-      count: 134
+      count: 125
       percent: 0.02
     '2013':
-      count: 126
+      count: 120
       percent: 0.02
-    '2014':
-      count: 134
-      percent: 0.02
-    '2015':
-      count: 141
-      percent: 0.02
-'26127':
-  name: Oceana County
-  employment:
-    '2012':
-      count: 29
-      percent: 0.43
-    '2013':
-      count: 26
-      percent: 0.37
-    '2014':
-      count: 35
-      percent: 0.49
-    '2015':
-      count: 35
-      percent: 0.51
 '26129':
   name: Ogemaw County
   employment:
     '2006':
-      count: 29
-      percent: 0.45
+      count: 24
+      percent: 0.37
     '2007':
-      count: 27
-      percent: 0.42
-    '2008':
-      count: 34
-      percent: 0.54
-    '2009':
-      count: 32
-      percent: 0.53
-    '2010':
-      count: 31
-      percent: 0.51
-    '2011':
-      count: 33
-      percent: 0.56
-    '2012':
-      count: 34
-      percent: 0.57
-    '2013':
-      count: 37
-      percent: 0.61
-    '2014':
-      count: 35
-      percent: 0.58
-    '2015':
-      count: 28
-      percent: 0.48
-'26133':
-  name: Osceola County
-  employment:
-    '2006':
-      count: 216
-      percent: 3.31
-    '2013':
-      count: 98
-      percent: 1.88
-    '2014':
-      count: 123
-      percent: 2.16
+      count: 23
+      percent: 0.36
 '26137':
   name: Otsego County
   employment:
-    '2006':
-      count: 277
-      percent: 2.51
-    '2007':
-      count: 297
-      percent: 2.74
-    '2008':
-      count: 302
-      percent: 2.87
-    '2009':
-      count: 296
-      percent: 2.97
-    '2010':
-      count: 283
-      percent: 2.93
-    '2011':
-      count: 254
-      percent: 2.67
-    '2012':
-      count: 243
-      percent: 2.58
-    '2013':
-      count: 240
-      percent: 2.52
-    '2014':
-      count: 283
-      percent: 2.96
     '2015':
-      count: 269
-      percent: 2.73
+      count: 61
+      percent: 0.62
 '26139':
   name: Ottawa County
   employment:
     '2006':
-      count: 86
-      percent: 0.08
+      count: 24
+      percent: 0.02
     '2007':
-      count: 106
-      percent: 0.1
+      count: 29
+      percent: 0.03
     '2008':
-      count: 121
-      percent: 0.11
+      count: 34
+      percent: 0.03
     '2009':
-      count: 67
-      percent: 0.07
-    '2010':
-      count: 33
-      percent: 0.03
-    '2011':
-      count: 25
-      percent: 0.02
-    '2012':
       count: 26
-      percent: 0.02
-    '2013':
-      count: 28
       percent: 0.03
-    '2014':
-      count: 25
+    '2010':
+      count: 16
       percent: 0.02
-    '2015':
-      count: 27
-      percent: 0.02
-'26143':
-  name: Roscommon County
-  employment:
-    '2014':
-      count: 39
-      percent: 0.74
-'26145':
-  name: Saginaw County
-  employment:
     '2011':
-      count: 48
-      percent: 0.06
+      count: 16
+      percent: 0.02
     '2012':
-      count: 54
-      percent: 0.07
+      count: 18
+      percent: 0.02
     '2013':
-      count: 82
-      percent: 0.1
-    '2014':
-      count: 85
-      percent: 0.1
-    '2015':
-      count: 92
-      percent: 0.11
+      count: 22
+      percent: 0.02
 '26147':
   name: St. Clair County
   employment:
     '2006':
-      count: 6
-      percent: 0.01
-    '2007':
       count: 5
       percent: 0.01
-    '2008':
+    '2007':
       count: 4
-      percent: 0.01
-    '2009':
-      count: 4
-      percent: 0.01
-    '2015':
-      count: 3
       percent: 0.01
 '26151':
   name: Sanilac County
@@ -1108,84 +373,30 @@
     '2015':
       count: 68
       percent: 0.62
-'26153':
-  name: Schoolcraft County
-  employment:
-    '2006':
-      count: 147
-      percent: 5.35
-    '2007':
-      count: 132
-      percent: 4.79
-    '2008':
-      count: 144
-      percent: 5.09
-    '2009':
-      count: 128
-      percent: 4.61
-    '2010':
-      count: 122
-      percent: 4.3
-    '2011':
-      count: 122
-      percent: 4.4
-    '2012':
-      count: 119
-      percent: 4.4
-    '2013':
-      count: 122
-      percent: 4.5
-    '2014':
-      count: 121
-      percent: 4.51
-    '2015':
-      count: 135
-      percent: 5.16
 '26155':
   name: Shiawassee County
   employment:
     '2006':
-      count: 69
-      percent: 0.41
+      count: 68
+      percent: 0.4
     '2007':
-      count: 55
-      percent: 0.33
+      count: 53
+      percent: 0.32
     '2008':
-      count: 54
-      percent: 0.33
-    '2009':
-      count: 22
-      percent: 0.14
+      count: 52
+      percent: 0.32
     '2010':
-      count: 29
-      percent: 0.18
-    '2011':
-      count: 26
-      percent: 0.16
-    '2012':
       count: 27
       percent: 0.17
-    '2013':
-      count: 31
-      percent: 0.2
-    '2014':
-      count: 33
-      percent: 0.2
 '26157':
   name: Tuscola County
   employment:
-    '2006':
-      count: 22
-      percent: 0.18
     '2007':
-      count: 31
-      percent: 0.26
+      count: 16
+      percent: 0.13
     '2008':
-      count: 23
-      percent: 0.2
-    '2009':
-      count: 17
-      percent: 0.15
+      count: 13
+      percent: 0.11
 '26161':
   name: Washtenaw County
   employment:
@@ -1204,81 +415,36 @@
     '2010':
       count: 10
       percent: 0.01
-    '2012':
-      count: 12
-      percent: 0.01
-    '2013':
-      count: 8
-      percent: 0
-    '2014':
-      count: 10
-      percent: 0.01
-    '2015':
-      count: 37
-      percent: 0.02
 '26163':
   name: Wayne County
   employment:
     '2006':
-      count: 642
+      count: 637
       percent: 0.08
     '2007':
-      count: 487
-      percent: 0.07
+      count: 483
+      percent: 0.06
     '2008':
-      count: 427
+      count: 423
       percent: 0.06
     '2009':
-      count: 417
+      count: 413
       percent: 0.06
     '2010':
-      count: 398
+      count: 393
       percent: 0.06
     '2011':
-      count: 415
+      count: 406
       percent: 0.06
     '2012':
-      count: 453
+      count: 435
+      percent: 0.06
+    '2013':
+      count: 506
       percent: 0.07
-    '2013':
-      count: 530
-      percent: 0.08
     '2014':
-      count: 598
-      percent: 0.09
-    '2015':
-      count: 579
+      count: 546
       percent: 0.08
-'26165':
-  name: Wexford County
-  employment:
-    '2006':
-      count: 25
-      percent: 0.17
-    '2007':
-      count: 21
-      percent: 0.15
-    '2008':
-      count: 24
-      percent: 0.17
-    '2009':
-      count: 25
-      percent: 0.2
-    '2010':
-      count: 30
-      percent: 0.24
-    '2011':
-      count: 43
-      percent: 0.34
-    '2012':
-      count: 44
-      percent: 0.35
-    '2013':
-      count: 40
-      percent: 0.31
-    '2014':
-      count: 42
-      percent: 0.32
     '2015':
-      count: 37
-      percent: 0.29
+      count: 547
+      percent: 0.08

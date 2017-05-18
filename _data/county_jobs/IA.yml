@@ -31,15 +31,6 @@
     '2010':
       count: 56
       percent: 0.08
-'19033':
-  name: Cerro Gordo County
-  employment:
-    '2007':
-      count: 23
-      percent: 0.09
-    '2008':
-      count: 25
-      percent: 0.1
 '19049':
   name: Dallas County
   employment:
@@ -70,21 +61,6 @@
     '2007':
       count: 136
       percent: 1.82
-    '2008':
-      count: 152
-      percent: 1.98
-    '2009':
-      count: 153
-      percent: 2.04
-    '2010':
-      count: 147
-      percent: 2.04
-'19103':
-  name: Johnson County
-  employment:
-    '2015':
-      count: 89
-      percent: 0.11
 '19111':
   name: Lee County
   employment:
@@ -131,7 +107,7 @@
       count: 92
       percent: 0.07
     '2015':
-      count: 105
+      count: 106
       percent: 0.08
 '19121':
   name: Madison County
@@ -178,62 +154,11 @@
     '2012':
       count: 47
       percent: 0.22
-    '2013':
-      count: 45
-      percent: 0.2
-    '2014':
-      count: 52
-      percent: 0.23
-    '2015':
-      count: 51
-      percent: 0.22
-'19153':
-  name: Polk County
-  employment:
-    '2015':
-      count: 136
-      percent: 0.05
-'19155':
-  name: Pottawattamie County
-  employment:
-    '2012':
-      count: 50
-      percent: 0.13
-    '2013':
-      count: 61
-      percent: 0.16
-    '2014':
-      count: 66
-      percent: 0.17
 '19163':
   name: Scott County
   employment:
     '2007':
       count: 14
-      percent: 0.02
-    '2008':
-      count: 14
-      percent: 0.02
-    '2009':
-      count: 14
-      percent: 0.02
-    '2010':
-      count: 15
-      percent: 0.02
-    '2011':
-      count: 15
-      percent: 0.02
-    '2012':
-      count: 16
-      percent: 0.02
-    '2013':
-      count: 17
-      percent: 0.02
-    '2014':
-      count: 17
-      percent: 0.02
-    '2015':
-      count: 19
       percent: 0.02
 '19167':
   name: Sioux County
@@ -280,33 +205,6 @@
     '2012':
       count: 19
       percent: 0.23
-'19187':
-  name: Webster County
-  employment:
-    '2011':
-      count: 50
-      percent: 0.28
-    '2012':
-      count: 57
-      percent: 0.32
-    '2013':
-      count: 57
-      percent: 0.31
-    '2014':
-      count: 54
-      percent: 0.3
-'19191':
-  name: Winneshiek County
-  employment:
-    '2006':
-      count: 131
-      percent: 1.24
-    '2007':
-      count: 134
-      percent: 1.28
-    '2008':
-      count: 144
-      percent: 1.39
 '19195':
   name: Worth County
   employment:

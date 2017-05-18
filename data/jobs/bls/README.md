@@ -29,17 +29,17 @@ To update this data:
 1. Update the list of years in the [Makefile](Makefile#L1).
 1. Run:
 
-  ```
-  make years join
-  ```
+    ```
+    make years
+    ```
 
-Then, update the database and generate new site data:
+1. Update the database and generate new site data:
 
-```sh
-# cd back to the project root directory
-cd ../../..
-make tables/jobs data/jobs
-```
+    ```sh
+    # cd back to the project root directory
+    cd ../../..
+    make tables/jobs data/jobs
+    ```
 
 When this is done, you should see a diff in `_data/*_jobs.yml` and
 `data/county_jobs/*.yml`.

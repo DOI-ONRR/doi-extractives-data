@@ -15,7 +15,7 @@ years: $(years)
 	mv    $@_/$@.annual.by_industry/*.csv $@_
 	rmdir $@_/$@.annual.by_industry
 	./load.js --config commodities.yml --in $@_ --year $@ --out $@
-	rm -r $@_
+	# rm -r $@_
 
 clean:
 	rm -f *.csv

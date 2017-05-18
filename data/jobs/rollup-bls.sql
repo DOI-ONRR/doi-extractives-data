@@ -1,4 +1,4 @@
-UPDATE bls_employment SET region_id = NULL;
+UPDATE bls_employment SET region_id = NULL, total = NULL;
 
 DELETE FROM bls_employment
   WHERE commodity IN ('Extractives', 'Renewables');
@@ -49,14 +49,24 @@ UPDATE bls_employment
         superset.fips = bls_employment.fips AND
         superset.year = bls_employment.year
       LIMIT 1
+    ),
+    total = (
+      SELECT superset.jobs
+      FROM bls_employment AS superset
+      WHERE
+        superset.commodity = 'All' AND
+        superset.fips = bls_employment.fips AND
+        superset.year = bls_employment.year
+      LIMIT 1
     )
   WHERE commodity != 'All';
 
 DROP TABLE IF EXISTS state_bls_employment;
 CREATE TABLE state_bls_employment AS
     SELECT
-        year, commodity, region_id, state,
-        jobs, 0.01 AS percent
+        year, commodity, region_id, state, jobs,
+        0 AS total,
+        0.01 AS percent
     FROM bls_employment
     WHERE
         county IS NULL;
@@ -74,6 +84,15 @@ UPDATE state_bls_employment
         superset.region_id = state_bls_employment.region_id AND
         superset.year = state_bls_employment.year
       LIMIT 1
+    ),
+    total = (
+      SELECT superset.jobs
+      FROM state_bls_employment AS superset
+      WHERE
+        superset.commodity = 'All' AND
+        superset.region_id = state_bls_employment.region_id AND
+        superset.year = state_bls_employment.year
+      LIMIT 1
     )
   WHERE commodity != 'All';
 
@@ -85,7 +104,9 @@ CREATE TABLE national_bls_employment AS
         year, commodity,
         'US' AS state,
         'US' AS region_id,
-        SUM(jobs) AS jobs, 0.01 AS percent
+        SUM(jobs) AS jobs,
+        0 AS total,
+        0.01 AS percent
     FROM state_bls_employment
     GROUP BY
         year, commodity;
@@ -98,6 +119,15 @@ UPDATE national_bls_employment
         ROUND(100.0 * national_bls_employment.jobs / superset.jobs, 2)
       FROM
         national_bls_employment AS superset
+      WHERE
+        superset.commodity = 'All' AND
+        superset.region_id = national_bls_employment.region_id AND
+        superset.year = national_bls_employment.year
+      LIMIT 1
+    ),
+    total = (
+      SELECT superset.jobs
+      FROM national_bls_employment AS superset
       WHERE
         superset.commodity = 'All' AND
         superset.region_id = national_bls_employment.region_id AND

@@ -1,7 +1,6 @@
-US:
-  '{commodity}':
-    '{year}':
-      # naics: '{naics}'
-      count: '{jobs}'
-      total: '{total}'
-      percent: '{percent}'
+'{commodity}':
+  '{year}':
+    # naics: '{naics}'
+    count: '{jobs}'
+    total: '{total}'
+    percent: '{percent}'

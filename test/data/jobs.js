@@ -94,7 +94,7 @@ describe('wage and salary jobs data (BLS)', function() {
 
     describe(year, function() {
 
-      it('state rollups', function(done) {
+      xit('state rollups', function(done) {
         load(pivotSource[year], 'tsv', function(error, rows) {
 
           var actual = {};
@@ -138,7 +138,7 @@ describe('wage and salary jobs data (BLS)', function() {
         });
       });
 
-      it('county data', function(done) {
+      xit('county data', function(done) {
 
         load(pivotSource[year], 'tsv', function(error, rows) {
 
@@ -218,7 +218,7 @@ describe('wage and salary jobs data (BLS)', function() {
         "data doesn't contain values that aren't in the pivot table"
       );
 
-      it(test, function(done) {
+      xit(test, function(done) {
         var actualCount;
         var actualPercent;
         var found;

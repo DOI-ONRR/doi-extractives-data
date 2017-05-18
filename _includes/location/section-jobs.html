@@ -1,4 +1,6 @@
 {% assign jobs = site.data.state_jobs[state_id] %}
+{% assign jobs_by_commodity = site.data.state_jobs_by_commodity[state_id] %}
+{% assign skip_commodities = 'Extractives|Renewables' | split: '|' %}
 {% assign county_jobs = site.data.county_jobs[state_id] %}
 {% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
 {% assign jobs_count = jobs[year].count | default: 0 %}
@@ -39,7 +41,10 @@
 
         <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
           <p>
-            Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.
+            Wage and salary data, from the Bureau of Labor Statistics,
+            describes the number of people employed in natural resource
+            extraction and renewable energy that receive wages or salaries
+            from companies.
             <br>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -53,8 +58,7 @@
 
         <div class="chart-container">
 
-          {% assign _metrics = 'count' | split: ' ' %}
-          {% for _metric in _metrics %}
+          {% assign _metric = 'count' %}
           <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
 
           <figure class="chart">
@@ -83,8 +87,6 @@
               </span>
             </figcaption>
           </figure><!-- /.chart -->
-
-          {% endfor %}
 
         </div><!-- /.chart-container -->
 
@@ -132,7 +134,61 @@
       </div><!-- /.row-container -->
       {% endif %}<!-- if jobs -->
 
+
     </section><!-- /.chart-list -->
+
+    {% if jobs_by_commodity %}
+    <section class="chart-list">
+      <p class="chart-description">
+        Below are charts showing annual average employment levels by
+        industry or commodity.
+      </p>
+
+      {% for _commodity in jobs_by_commodity %}
+        {% assign commodity = _commodity[0] %}
+        {% if skip_commodities contains commodity %}
+          {% continue %}
+        {% endif %}
+        {% assign _slug = commodity | slugify %}
+        {% assign _figures = _commodity[1][year] %}
+      <div class="chart-item">
+        {%
+          include chart_title.html
+          chart_name=commodity
+        %}
+
+        <figure class="chart">
+          <eiti-bar-chart
+            aria-controls="jobs-figures-{{ _slug }}"
+            data='{{ _commodity[1] | map_hash: 'count' | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="jobs">
+          </eiti-bar-chart>
+          <figcaption id="jobs-figures-{{ _slug }}">
+            <span class="caption-data">
+              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+              there were
+              <span class="eiti-bar-chart-y-value"
+                data-format=",">{{ _figures.count | intcomma }}</span>
+              <b>{{ commodity }}</b> jobs in
+              {{ state_name }}, and they accounted for
+              <year-value year="{{ year }}" data-year-values='{{ _commodity[1] | map_hash: 'percent' | jsonify }}'
+                empty="--">{{ _figures.percent | percent }}</year-value>%
+              of statewide employment.
+            </span>
+            <span class="caption-no-data" aria-hidden="true">
+              There is no data about <b>{{ commodity }}</b>
+              wage and salary jobs in {{ state_name }} in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+            </span>
+          </figcaption>
+        </figure><!-- /.chart -->
+      </div><!-- /.chart-item -->
+      {% endfor %}
+
+    </section>
+    {% endif %}<!-- if jobs_by_commodity -->
 
   </section><!-- /is="year-switcher-section" -->
 

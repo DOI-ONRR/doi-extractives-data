@@ -1,6 +1,10 @@
 '12005':
   name: Bay County
   employment:
+    '2006':
+      count: 21
+      total: 73066
+      percent: 0.03
     '2007':
       count: 20
       total: 73134
@@ -13,55 +17,107 @@
       count: 17
       total: 69823
       percent: 0.02
+    '2010':
+      count: 15
+      total: 69201
+      percent: 0.02
+    '2011':
+      count: 11
+      total: 70166
+      percent: 0.02
+    '2012':
+      count: 4
+      total: 70713
+      percent: 0.01
+    '2013':
+      count: 10
+      total: 71761
+      percent: 0.01
 '12009':
   name: Brevard County
   employment:
+    '2006':
+      count: 80
+      total: 207810
+      percent: 0.04
     '2007':
-      count: 56
+      count: 96
       total: 203607
-      percent: 0.03
+      percent: 0.05
     '2008':
-      count: 28
+      count: 61
       total: 199902
-      percent: 0.01
+      percent: 0.03
     '2009':
-      count: 19
+      count: 22
       total: 189957
       percent: 0.01
     '2010':
-      count: 13
+      count: 17
       total: 188093
       percent: 0.01
     '2011':
-      count: 8
+      count: 13
       total: 187114
+      percent: 0.01
+    '2012':
+      count: 9
+      total: 187556
+      percent: 0
+    '2013':
+      count: 6
+      total: 187497
       percent: 0
 '12011':
   name: Broward County
   employment:
+    '2006':
+      count: 119
+      total: 747163
+      percent: 0.02
+    '2007':
+      count: 126
+      total: 751629
+      percent: 0.02
+    '2008':
+      count: 139
+      total: 736490
+      percent: 0.02
     '2009':
-      count: 64
+      count: 95
       total: 686146
       percent: 0.01
     '2010':
-      count: 70
+      count: 96
       total: 677659
       percent: 0.01
     '2011':
-      count: 77
+      count: 102
       total: 685170
       percent: 0.01
     '2012':
-      count: 59
+      count: 92
       total: 701424
+      percent: 0.01
+    '2013':
+      count: 97
+      total: 718840
       percent: 0.01
 '12015':
   name: Charlotte County
   employment:
+    '2007':
+      count: 89
+      total: 42416
+      percent: 0.21
     '2008':
       count: 54
       total: 41752
       percent: 0.13
+    '2009':
+      count: 39
+      total: 39612
+      percent: 0.1
     '2011':
       count: 45
       total: 40624
@@ -70,6 +126,10 @@
       count: 28
       total: 41362
       percent: 0.07
+    '2013':
+      count: 26
+      total: 42438
+      percent: 0.06
 '12017':
   name: Citrus County
   employment:
@@ -85,73 +145,168 @@
       count: 59
       total: 33448
       percent: 0.18
+    '2009':
+      count: 58
+      total: 32092
+      percent: 0.18
+    '2010':
+      count: 80
+      total: 32262
+      percent: 0.25
+    '2011':
+      count: 74
+      total: 31307
+      percent: 0.24
+    '2012':
+      count: 68
+      total: 31434
+      percent: 0.22
+    '2013':
+      count: 64
+      total: 31149
+      percent: 0.21
 '12019':
   name: Clay County
   employment:
     '2009':
-      count: 9
+      count: 34
       total: 43426
+      percent: 0.08
+    '2010':
+      count: 11
+      total: 42921
+      percent: 0.03
+    '2011':
+      count: 9
+      total: 41904
       percent: 0.02
+    '2012':
+      count: 10
+      total: 42530
+      percent: 0.02
+    '2013':
+      count: 12
+      total: 45306
+      percent: 0.03
 '12021':
   name: Collier County
   employment:
     '2006':
-      count: 26
+      count: 51
       total: 134962
-      percent: 0.02
+      percent: 0.04
     '2007':
-      count: 22
+      count: 43
       total: 131937
-      percent: 0.02
+      percent: 0.03
     '2008':
-      count: 9
+      count: 13
       total: 124562
       percent: 0.01
+    '2009':
+      count: 22
+      total: 113137
+      percent: 0.02
+    '2010':
+      count: 10
+      total: 111721
+      percent: 0.01
     '2011':
-      count: 7
+      count: 22
       total: 115453
+      percent: 0.02
+    '2012':
+      count: 17
+      total: 118493
       percent: 0.01
     '2013':
-      count: 7
+      count: 25
       total: 122871
-      percent: 0.01
+      percent: 0.02
 '12031':
   name: Duval County
   employment:
+    '2006':
+      count: 23
+      total: 461667
+      percent: 0
+    '2007':
+      count: 89
+      total: 465731
+      percent: 0.02
     '2008':
-      count: 76
+      count: 88
       total: 461131
       percent: 0.02
+    '2009':
+      count: 74
+      total: 436884
+      percent: 0.02
+    '2010':
+      count: 86
+      total: 431969
+      percent: 0.02
     '2011':
-      count: 16
+      count: 53
       total: 436766
-      percent: 0
+      percent: 0.01
+    '2012':
+      count: 50
+      total: 441661
+      percent: 0.01
     '2013':
-      count: 73
+      count: 112
       total: 448976
       percent: 0.02
 '12033':
   name: Escambia County
   employment:
     '2006':
-      count: 67
+      count: 86
       total: 129643
-      percent: 0.05
+      percent: 0.07
+    '2007':
+      count: 73
+      total: 130245
+      percent: 0.06
     '2008':
-      count: 49
+      count: 71
       total: 126069
-      percent: 0.04
+      percent: 0.06
     '2009':
-      count: 53
+      count: 69
       total: 118968
-      percent: 0.04
+      percent: 0.06
     '2010':
-      count: 46
+      count: 87
       total: 119369
+      percent: 0.07
+    '2011':
+      count: 92
+      total: 119680
+      percent: 0.08
+    '2012':
+      count: 60
+      total: 118979
+      percent: 0.05
+    '2013':
+      count: 52
+      total: 121611
       percent: 0.04
+'12035':
+  name: Flagler County
+  employment:
+    '2006':
+      count: 29
+      total: 18786
+      percent: 0.15
 '12039':
   name: Gadsden County
   employment:
+    '2006':
+      count: 159
+      total: 14949
+      percent: 1.06
     '2009':
       count: 160
       total: 13662
@@ -172,59 +327,75 @@
       count: 145
       total: 12693
       percent: 1.14
-    '2014':
-      count: 142
-      total: 12722
-      percent: 1.12
-'12049':
-  name: Hardee County
-  employment:
-    '2014':
-      count: 219
-      total: 7348
-      percent: 2.98
 '12053':
   name: Hernando County
   employment:
+    '2006':
+      count: 139
+      total: 40008
+      percent: 0.35
+    '2007':
+      count: 132
+      total: 39113
+      percent: 0.34
+    '2008':
+      count: 116
+      total: 37503
+      percent: 0.31
     '2011':
       count: 69
       total: 36456
       percent: 0.19
     '2012':
-      count: 56
+      count: 69
       total: 36791
-      percent: 0.15
+      percent: 0.19
+    '2013':
+      count: 61
+      total: 37372
+      percent: 0.16
 '12057':
   name: Hillsborough County
   employment:
     '2006':
-      count: 454
+      count: 493
       total: 639555
-      percent: 0.07
+      percent: 0.08
+    '2007':
+      count: 382
+      total: 646102
+      percent: 0.06
+    '2008':
+      count: 386
+      total: 612852
+      percent: 0.06
     '2009':
-      count: 318
+      count: 341
       total: 572175
       percent: 0.06
     '2010':
-      count: 261
+      count: 282
       total: 563292
       percent: 0.05
     '2011':
-      count: 243
+      count: 259
       total: 571752
-      percent: 0.04
+      percent: 0.05
     '2012':
-      count: 251
+      count: 290
       total: 586000
-      percent: 0.04
+      percent: 0.05
     '2013':
-      count: 242
+      count: 299
       total: 603691
-      percent: 0.04
-    '2014':
-      count: 217
-      total: 620402
-      percent: 0.03
+      percent: 0.05
+'12059':
+  name: Holmes County
+  employment:
+    '2009':
+      count: 3
+      total: 3426
+      percent: 0.09
 '12061':
   name: Indian River County
   employment:
@@ -236,24 +407,44 @@
       count: 19
       total: 46579
       percent: 0.04
-    '2014':
-      count: 15
-      total: 47785
-      percent: 0.03
 '12063':
   name: Jackson County
   employment:
-    '2014':
-      count: 75
-      total: 13989
-      percent: 0.54
-    '2015':
-      count: 78
-      total: 14085
-      percent: 0.55
+    '2008':
+      count: 70
+      total: 14907
+      percent: 0.47
+    '2009':
+      count: 53
+      total: 14432
+      percent: 0.37
+    '2010':
+      count: 52
+      total: 14414
+      percent: 0.36
+    '2011':
+      count: 57
+      total: 14254
+      percent: 0.4
+    '2012':
+      count: 63
+      total: 14197
+      percent: 0.44
+    '2013':
+      count: 68
+      total: 14078
+      percent: 0.48
 '12069':
   name: Lake County
   employment:
+    '2006':
+      count: 188
+      total: 83872
+      percent: 0.22
+    '2007':
+      count: 189
+      total: 82827
+      percent: 0.23
     '2008':
       count: 127
       total: 84342
@@ -274,64 +465,60 @@
       count: 87
       total: 81257
       percent: 0.11
+    '2013':
+      count: 92
+      total: 82870
+      percent: 0.11
 '12071':
   name: Lee County
   employment:
     '2006':
-      count: 145
+      count: 175
       total: 224261
-      percent: 0.06
+      percent: 0.08
     '2007':
-      count: 115
+      count: 140
       total: 221916
-      percent: 0.05
+      percent: 0.06
     '2008':
-      count: 137
+      count: 153
       total: 208544
       percent: 0.07
     '2009':
-      count: 90
+      count: 101
       total: 194073
       percent: 0.05
     '2010':
-      count: 87
+      count: 101
       total: 192515
       percent: 0.05
     '2011':
-      count: 112
+      count: 125
       total: 196861
       percent: 0.06
     '2012':
-      count: 134
+      count: 149
       total: 203404
       percent: 0.07
     '2013':
-      count: 144
+      count: 157
       total: 212775
       percent: 0.07
-    '2014':
-      count: 191
-      total: 226047
-      percent: 0.08
-    '2015':
-      count: 213
-      total: 240175
-      percent: 0.09
 '12075':
   name: Levy County
   employment:
+    '2006':
+      count: 42
+      total: 9039
+      percent: 0.46
+    '2007':
+      count: 42
+      total: 9122
+      percent: 0.46
     '2013':
       count: 21
       total: 8001
       percent: 0.26
-    '2014':
-      count: 28
-      total: 8168
-      percent: 0.34
-    '2015':
-      count: 31
-      total: 8546
-      percent: 0.36
 '12081':
   name: Manatee County
   employment:
@@ -343,225 +530,476 @@
       count: 23
       total: 101224
       percent: 0.02
-    '2014':
-      count: 3
-      total: 109945
+    '2011':
+      count: 7
+      total: 101891
+      percent: 0.01
+    '2012':
+      count: 4
+      total: 104369
+      percent: 0
+    '2013':
+      count: 5
+      total: 106981
       percent: 0
 '12083':
   name: Marion County
   employment:
     '2006':
-      count: 126
+      count: 167
       total: 103257
-      percent: 0.12
+      percent: 0.16
     '2007':
-      count: 112
+      count: 155
       total: 103410
-      percent: 0.11
+      percent: 0.15
     '2008':
-      count: 102
+      count: 145
       total: 101297
-      percent: 0.1
+      percent: 0.14
+    '2009':
+      count: 110
+      total: 91809
+      percent: 0.12
     '2010':
-      count: 71
+      count: 104
       total: 89132
-      percent: 0.08
+      percent: 0.12
     '2011':
-      count: 73
+      count: 108
       total: 89099
-      percent: 0.08
+      percent: 0.12
     '2012':
-      count: 52
+      count: 84
       total: 90547
-      percent: 0.06
+      percent: 0.09
     '2013':
-      count: 57
+      count: 79
       total: 91800
-      percent: 0.06
-    '2014':
-      count: 60
-      total: 94510
-      percent: 0.06
-    '2015':
-      count: 66
-      total: 96719
-      percent: 0.07
+      percent: 0.09
+'12085':
+  name: Martin County
+  employment:
+    '2010':
+      count: 12
+      total: 55434
+      percent: 0.02
 '12086':
   name: Miami-Dade County
   employment:
     '2006':
-      count: 318
+      count: 350
       total: 1007587
       percent: 0.03
     '2007':
-      count: 542
+      count: 552
       total: 1014998
       percent: 0.05
     '2008':
-      count: 443
+      count: 468
       total: 1006416
-      percent: 0.04
+      percent: 0.05
     '2009':
-      count: 278
+      count: 305
       total: 950977
       percent: 0.03
     '2010':
-      count: 262
+      count: 296
       total: 947091
       percent: 0.03
     '2011':
-      count: 316
+      count: 346
       total: 970129
-      percent: 0.03
-    '2014':
-      count: 373
-      total: 1046237
       percent: 0.04
-    '2015':
+    '2012':
+      count: 354
+      total: 992676
+      percent: 0.04
+    '2013':
+      count: 359
+      total: 1017400
+      percent: 0.04
+'12087':
+  name: Monroe County
+  employment:
+    '2013':
+      count: 20
+      total: 37397
+      percent: 0.05
+'12091':
+  name: Okaloosa County
+  employment:
+    '2007':
+      count: 9
+      total: 81702
+      percent: 0.01
+    '2008':
+      count: 20
+      total: 78807
+      percent: 0.03
+    '2009':
+      count: 12
+      total: 76683
+      percent: 0.02
+    '2011':
+      count: 5
+      total: 76085
+      percent: 0.01
+    '2012':
       count: 6
-      total: 1079316
-      percent: 0
+      total: 75922
+      percent: 0.01
+    '2013':
+      count: 9
+      total: 77102
+      percent: 0.01
+'12093':
+  name: Okeechobee County
+  employment:
+    '2007':
+      count: 36
+      total: 10809
+      percent: 0.33
+    '2009':
+      count: 22
+      total: 10360
+      percent: 0.21
+    '2010':
+      count: 30
+      total: 10259
+      percent: 0.29
+    '2012':
+      count: 22
+      total: 10584
+      percent: 0.21
+    '2013':
+      count: 29
+      total: 10559
+      percent: 0.27
 '12095':
   name: Orange County
   employment:
+    '2006':
+      count: 53
+      total: 679095
+      percent: 0.01
     '2007':
-      count: 57
+      count: 65
       total: 691914
       percent: 0.01
     '2008':
-      count: 54
+      count: 78
       total: 688773
       percent: 0.01
     '2009':
-      count: 39
+      count: 60
       total: 648338
       percent: 0.01
     '2010':
-      count: 12
+      count: 50
       total: 646067
-      percent: 0
+      percent: 0.01
     '2011':
-      count: 11
+      count: 45
       total: 658370
-      percent: 0
+      percent: 0.01
     '2012':
-      count: 12
+      count: 51
       total: 680501
-      percent: 0
+      percent: 0.01
     '2013':
-      count: 65
+      count: 127
       total: 705664
-      percent: 0.01
-    '2014':
-      count: 82
-      total: 732630
-      percent: 0.01
-    '2015':
-      count: 83
-      total: 762674
+      percent: 0.02
+'12097':
+  name: Osceola County
+  employment:
+    '2013':
+      count: 6
+      total: 75876
       percent: 0.01
 '12101':
   name: Pasco County
   employment:
+    '2006':
+      count: 57
+      total: 99459
+      percent: 0.06
+    '2007':
+      count: 65
+      total: 99478
+      percent: 0.07
+    '2008':
+      count: 96
+      total: 100366
+      percent: 0.1
+    '2009':
+      count: 82
+      total: 95424
+      percent: 0.09
+    '2010':
+      count: 64
+      total: 94976
+      percent: 0.07
+    '2011':
+      count: 63
+      total: 97077
+      percent: 0.06
     '2012':
-      count: 51
+      count: 74
       total: 98668
-      percent: 0.05
+      percent: 0.07
     '2013':
-      count: 51
+      count: 77
       total: 99978
-      percent: 0.05
-    '2015':
-      count: 51
-      total: 108451
-      percent: 0.05
+      percent: 0.08
+'12103':
+  name: Pinellas County
+  employment:
+    '2006':
+      count: 9
+      total: 444848
+      percent: 0
+    '2007':
+      count: 5
+      total: 436985
+      percent: 0
+    '2008':
+      count: 18
+      total: 420103
+      percent: 0
+    '2009':
+      count: 14
+      total: 391203
+      percent: 0
+    '2010':
+      count: 19
+      total: 380583
+      percent: 0
+    '2011':
+      count: 23
+      total: 376455
+      percent: 0.01
+    '2012':
+      count: 34
+      total: 382489
+      percent: 0.01
+    '2013':
+      count: 11
+      total: 390308
+      percent: 0
 '12105':
   name: Polk County
   employment:
+    '2006':
+      count: 807
+      total: 207911
+      percent: 0.39
     '2007':
-      count: 820
+      count: 826
       total: 205860
       percent: 0.4
     '2008':
-      count: 888
+      count: 954
       total: 201830
-      percent: 0.44
+      percent: 0.47
     '2009':
-      count: 940
+      count: 1002
       total: 192087
-      percent: 0.49
+      percent: 0.52
     '2010':
-      count: 906
+      count: 969
       total: 189581
-      percent: 0.48
+      percent: 0.51
+    '2011':
+      count: 935
+      total: 188763
+      percent: 0.5
+    '2012':
+      count: 989
+      total: 190448
+      percent: 0.52
+    '2013':
+      count: 984
+      total: 195017
+      percent: 0.5
+'12107':
+  name: Putnam County
+  employment:
+    '2009':
+      count: 22
+      total: 17596
+      percent: 0.13
+    '2011':
+      count: 51
+      total: 17187
+      percent: 0.3
+    '2012':
+      count: 25
+      total: 16371
+      percent: 0.15
+    '2013':
+      count: 59
+      total: 16263
+      percent: 0.36
+'12109':
+  name: St. Johns County
+  employment:
+    '2008':
+      count: 10
+      total: 56672
+      percent: 0.02
 '12111':
   name: St. Lucie County
   employment:
     '2006':
-      count: 52
+      count: 56
       total: 70280
-      percent: 0.07
+      percent: 0.08
     '2007':
-      count: 50
+      count: 55
       total: 71225
-      percent: 0.07
+      percent: 0.08
     '2008':
-      count: 37
+      count: 43
       total: 69934
+      percent: 0.06
+    '2009':
+      count: 33
+      total: 64604
       percent: 0.05
     '2010':
-      count: 32
+      count: 33
       total: 63494
       percent: 0.05
     '2011':
-      count: 35
-      total: 63867
-      percent: 0.05
-    '2012':
-      count: 34
-      total: 64909
-      percent: 0.05
-    '2013':
       count: 36
+      total: 63867
+      percent: 0.06
+    '2012':
+      count: 39
+      total: 64909
+      percent: 0.06
+    '2013':
+      count: 38
       total: 66769
-      percent: 0.05
-    '2015':
-      count: 23
-      total: 70409
-      percent: 0.03
+      percent: 0.06
 '12113':
   name: Santa Rosa County
   employment:
+    '2006':
+      count: 88
+      total: 32622
+      percent: 0.27
     '2007':
-      count: 62
+      count: 85
       total: 32281
-      percent: 0.19
+      percent: 0.26
     '2008':
-      count: 59
+      count: 84
       total: 31633
-      percent: 0.19
+      percent: 0.27
+    '2009':
+      count: 64
+      total: 31074
+      percent: 0.21
+    '2010':
+      count: 64
+      total: 30744
+      percent: 0.21
     '2011':
-      count: 45
+      count: 65
       total: 32185
-      percent: 0.14
+      percent: 0.2
+    '2012':
+      count: 85
+      total: 32937
+      percent: 0.26
+    '2013':
+      count: 88
+      total: 32777
+      percent: 0.27
 '12115':
   name: Sarasota County
   employment:
     '2006':
-      count: 74
+      count: 89
       total: 159101
-      percent: 0.05
+      percent: 0.06
     '2007':
-      count: 66
+      count: 97
       total: 155159
+      percent: 0.06
+    '2008':
+      count: 65
+      total: 147975
       percent: 0.04
+    '2009':
+      count: 52
+      total: 134583
+      percent: 0.04
+    '2010':
+      count: 44
+      total: 132470
+      percent: 0.03
     '2011':
-      count: 34
+      count: 41
       total: 133658
       percent: 0.03
+    '2012':
+      count: 73
+      total: 137786
+      percent: 0.05
+    '2013':
+      count: 68
+      total: 143716
+      percent: 0.05
+'12117':
+  name: Seminole County
+  employment:
+    '2006':
+      count: 8
+      total: 177610
+      percent: 0
+    '2007':
+      count: 5
+      total: 177756
+      percent: 0
+    '2008':
+      count: 25
+      total: 173418
+      percent: 0.01
+    '2009':
+      count: 28
+      total: 158760
+      percent: 0.02
+    '2010':
+      count: 26
+      total: 155399
+      percent: 0.02
+    '2011':
+      count: 23
+      total: 154011
+      percent: 0.01
+    '2012':
+      count: 4
+      total: 158557
+      percent: 0
+    '2013':
+      count: 5
+      total: 161521
+      percent: 0
 '12119':
   name: Sumter County
   employment:
+    '2007':
+      count: 47
+      total: 20245
+      percent: 0.23
+    '2009':
+      count: 45
+      total: 18263
+      percent: 0.25
     '2010':
       count: 42
       total: 19830
@@ -597,14 +1035,6 @@
       count: 29
       total: 9911
       percent: 0.29
-    '2014':
-      count: 22
-      total: 11013
-      percent: 0.2
-    '2015':
-      count: 23
-      total: 11181
-      percent: 0.21
 '12123':
   name: Taylor County
   employment:
@@ -620,6 +1050,37 @@
       count: 51
       total: 6751
       percent: 0.76
+'12127':
+  name: Volusia County
+  employment:
+    '2006':
+      count: 18
+      total: 167170
+      percent: 0.01
+    '2007':
+      count: 18
+      total: 166260
+      percent: 0.01
+    '2008':
+      count: 16
+      total: 161675
+      percent: 0.01
+    '2009':
+      count: 14
+      total: 151397
+      percent: 0.01
+    '2011':
+      count: 19
+      total: 149140
+      percent: 0.01
+    '2012':
+      count: 17
+      total: 149954
+      percent: 0.01
+    '2013':
+      count: 15
+      total: 152230
+      percent: 0.01
 '12131':
   name: Walton County
   employment:

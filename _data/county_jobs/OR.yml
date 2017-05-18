@@ -1,3 +1,14 @@
+'41001':
+  name: Baker County
+  employment:
+    '2008':
+      count: 18
+      total: 5445
+      percent: 0.33
+    '2009':
+      count: 16
+      total: 5282
+      percent: 0.3
 '41003':
   name: Benton County
   employment:
@@ -25,32 +36,40 @@
       count: 21
       total: 34295
       percent: 0.06
-    '2014':
-      count: 26
-      total: 35057
-      percent: 0.07
-    '2015':
-      count: 24
-      total: 36163
-      percent: 0.07
 '41005':
   name: Clackamas County
   employment:
     '2006':
-      count: 74
+      count: 77
       total: 146889
       percent: 0.05
     '2007':
-      count: 82
+      count: 86
       total: 150183
-      percent: 0.05
+      percent: 0.06
     '2008':
-      count: 74
+      count: 78
       total: 149731
       percent: 0.05
+    '2009':
+      count: 66
+      total: 139351
+      percent: 0.05
+    '2010':
+      count: 67
+      total: 136732
+      percent: 0.05
     '2011':
-      count: 43
+      count: 72
       total: 137325
+      percent: 0.05
+    '2012':
+      count: 27
+      total: 139548
+      percent: 0.02
+    '2013':
+      count: 47
+      total: 143056
       percent: 0.03
 '41009':
   name: Columbia County
@@ -79,17 +98,29 @@
       count: 55
       total: 9583
       percent: 0.57
-    '2014':
-      count: 58
-      total: 9928
-      percent: 0.58
+    '2012':
+      count: 54
+      total: 9644
+      percent: 0.56
+    '2013':
+      count: 53
+      total: 9789
+      percent: 0.54
 '41011':
   name: Coos County
   employment:
     '2006':
-      count: 56
+      count: 72
       total: 23667
-      percent: 0.24
+      percent: 0.3
+    '2007':
+      count: 63
+      total: 23324
+      percent: 0.27
+    '2008':
+      count: 53
+      total: 22723
+      percent: 0.23
     '2009':
       count: 43
       total: 21430
@@ -98,6 +129,18 @@
       count: 46
       total: 21291
       percent: 0.22
+    '2011':
+      count: 81
+      total: 21462
+      percent: 0.38
+    '2012':
+      count: 104
+      total: 21306
+      percent: 0.49
+    '2013':
+      count: 34
+      total: 21581
+      percent: 0.16
 '41013':
   name: Crook County
   employment:
@@ -109,6 +152,18 @@
       count: 30
       total: 7035
       percent: 0.43
+    '2008':
+      count: 26
+      total: 6694
+      percent: 0.39
+    '2009':
+      count: 16
+      total: 5186
+      percent: 0.31
+    '2010':
+      count: 15
+      total: 5545
+      percent: 0.27
     '2011':
       count: 16
       total: 5545
@@ -117,6 +172,10 @@
       count: 13
       total: 5586
       percent: 0.23
+    '2013':
+      count: 11
+      total: 5824
+      percent: 0.19
 '41015':
   name: Curry County
   employment:
@@ -127,6 +186,26 @@
 '41017':
   name: Deschutes County
   employment:
+    '2006':
+      count: 139
+      total: 67668
+      percent: 0.21
+    '2007':
+      count: 131
+      total: 69314
+      percent: 0.19
+    '2008':
+      count: 93
+      total: 66345
+      percent: 0.14
+    '2009':
+      count: 59
+      total: 60527
+      percent: 0.1
+    '2010':
+      count: 78
+      total: 58781
+      percent: 0.13
     '2011':
       count: 56
       total: 59219
@@ -139,6 +218,41 @@
       count: 55
       total: 63284
       percent: 0.09
+'41019':
+  name: Douglas County
+  employment:
+    '2006':
+      count: 109
+      total: 39609
+      percent: 0.28
+    '2007':
+      count: 103
+      total: 38869
+      percent: 0.26
+    '2008':
+      count: 93
+      total: 37300
+      percent: 0.25
+    '2009':
+      count: 114
+      total: 34756
+      percent: 0.33
+    '2010':
+      count: 122
+      total: 34327
+      percent: 0.36
+    '2011':
+      count: 124
+      total: 34171
+      percent: 0.36
+    '2012':
+      count: 148
+      total: 34026
+      percent: 0.43
+    '2013':
+      count: 149
+      total: 34631
+      percent: 0.43
 '41029':
   name: Jackson County
   employment:
@@ -158,6 +272,41 @@
       count: 129
       total: 76049
       percent: 0.17
+    '2010':
+      count: 78
+      total: 75396
+      percent: 0.1
+    '2011':
+      count: 74
+      total: 74872
+      percent: 0.1
+    '2012':
+      count: 71
+      total: 76012
+      percent: 0.09
+    '2013':
+      count: 104
+      total: 78138
+      percent: 0.13
+'41033':
+  name: Josephine County
+  employment:
+    '2006':
+      count: 69
+      total: 25440
+      percent: 0.27
+    '2007':
+      count: 76
+      total: 25098
+      percent: 0.3
+    '2008':
+      count: 48
+      total: 24364
+      percent: 0.2
+    '2009':
+      count: 20
+      total: 22611
+      percent: 0.09
 '41035':
   name: Klamath County
   employment:
@@ -181,17 +330,33 @@
       total: 148756
       percent: 0.15
     '2007':
-      count: 322
+      count: 324
       total: 151024
       percent: 0.21
+    '2008':
+      count: 304
+      total: 147675
+      percent: 0.21
     '2009':
-      count: 237
+      count: 240
       total: 135606
-      percent: 0.17
+      percent: 0.18
     '2010':
-      count: 181
+      count: 186
       total: 134545
-      percent: 0.13
+      percent: 0.14
+    '2011':
+      count: 194
+      total: 135532
+      percent: 0.14
+    '2012':
+      count: 209
+      total: 136790
+      percent: 0.15
+    '2013':
+      count: 211
+      total: 138633
+      percent: 0.15
 '41043':
   name: Linn County
   employment:
@@ -199,10 +364,41 @@
       count: 21
       total: 43411
       percent: 0.05
-    '2015':
-      count: 9
-      total: 43518
-      percent: 0.02
+'41047':
+  name: Marion County
+  employment:
+    '2006':
+      count: 276
+      total: 137769
+      percent: 0.2
+    '2007':
+      count: 235
+      total: 140221
+      percent: 0.17
+    '2008':
+      count: 232
+      total: 140722
+      percent: 0.16
+    '2009':
+      count: 215
+      total: 133926
+      percent: 0.16
+    '2010':
+      count: 233
+      total: 132520
+      percent: 0.18
+    '2011':
+      count: 248
+      total: 130856
+      percent: 0.19
+    '2012':
+      count: 240
+      total: 131397
+      percent: 0.18
+    '2013':
+      count: 223
+      total: 134904
+      percent: 0.17
 '41049':
   name: Morrow County
   employment:
@@ -210,6 +406,13 @@
       count: 7
       total: 4746
       percent: 0.15
+'41051':
+  name: Multnomah County
+  employment:
+    '2008':
+      count: 56
+      total: 449358
+      percent: 0.01
 '41053':
   name: Polk County
   employment:
@@ -248,6 +451,14 @@
       count: 20
       total: 28875
       percent: 0.07
+    '2010':
+      count: 33
+      total: 28852
+      percent: 0.11
+    '2011':
+      count: 55
+      total: 29268
+      percent: 0.19
     '2012':
       count: 50
       total: 29678
@@ -256,33 +467,41 @@
       count: 32
       total: 29261
       percent: 0.11
-    '2014':
-      count: 28
-      total: 29237
-      percent: 0.1
-    '2015':
-      count: 16
-      total: 29548
-      percent: 0.05
 '41067':
   name: Washington County
   employment:
+    '2006':
+      count: 246
+      total: 245946
+      percent: 0.1
+    '2007':
+      count: 313
+      total: 250580
+      percent: 0.12
+    '2008':
+      count: 293
+      total: 247666
+      percent: 0.12
+    '2009':
+      count: 285
+      total: 231870
+      percent: 0.12
+    '2010':
+      count: 249
+      total: 234706
+      percent: 0.11
+    '2011':
+      count: 226
+      total: 243016
+      percent: 0.09
     '2012':
-      count: 195
+      count: 230
       total: 249733
-      percent: 0.08
+      percent: 0.09
     '2013':
-      count: 203
+      count: 207
       total: 256546
       percent: 0.08
-    '2014':
-      count: 221
-      total: 264805
-      percent: 0.08
-    '2015':
-      count: 238
-      total: 274868
-      percent: 0.09
 '41071':
   name: Yamhill County
   employment:
@@ -314,11 +533,3 @@
       count: 45
       total: 31207
       percent: 0.14
-    '2014':
-      count: 63
-      total: 33056
-      percent: 0.19
-    '2015':
-      count: 81
-      total: 34564
-      percent: 0.23

@@ -1,30 +1,61 @@
 09001:
   name: Fairfield County
   employment:
-    '2008':
-      count: 38
-      total: 419353
-      percent: 0.01
     '2009':
-      count: 29
+      count: 38
       total: 400017
       percent: 0.01
     '2010':
-      count: 37
+      count: 46
       total: 397733
       percent: 0.01
+    '2011':
+      count: 40
+      total: 403276
+      percent: 0.01
     '2012':
-      count: 26
+      count: 36
       total: 407923
       percent: 0.01
     '2013':
-      count: 30
+      count: 39
       total: 413613
       percent: 0.01
-    '2014':
-      count: 32
-      total: 418829
-      percent: 0.01
+09003:
+  name: Hartford County
+  employment:
+    '2006':
+      count: 108
+      total: 497849
+      percent: 0.02
+    '2007':
+      count: 94
+      total: 502736
+      percent: 0.02
+    '2008':
+      count: 88
+      total: 504731
+      percent: 0.02
+    '2009':
+      count: 83
+      total: 486187
+      percent: 0.02
+    '2010':
+      count: 91
+      total: 481905
+      percent: 0.02
+    '2011':
+      count: 86
+      total: 487196
+      percent: 0.02
+    '2012':
+      count: 97
+      total: 490846
+      percent: 0.02
+    '2013':
+      count: 76
+      total: 494994
+      percent: 0.02
 09005:
   name: Litchfield County
   employment:
@@ -60,14 +91,6 @@
       count: 82
       total: 60588
       percent: 0.14
-    '2014':
-      count: 85
-      total: 61313
-      percent: 0.14
-    '2015':
-      count: 84
-      total: 61450
-      percent: 0.14
 09009:
   name: New Haven County
   employment:
@@ -87,14 +110,6 @@
       count: 168
       total: 356885
       percent: 0.05
-    '2014':
-      count: 181
-      total: 359107
-      percent: 0.05
-    '2015':
-      count: 188
-      total: 359962
-      percent: 0.05
 09011:
   name: New London County
   employment:
@@ -110,6 +125,14 @@
       count: 90
       total: 130849
       percent: 0.07
+    '2009':
+      count: 76
+      total: 126080
+      percent: 0.06
+    '2010':
+      count: 63
+      total: 124000
+      percent: 0.05
     '2011':
       count: 55
       total: 123692
@@ -121,14 +144,6 @@
     '2013':
       count: 63
       total: 122158
-      percent: 0.05
-    '2014':
-      count: 64
-      total: 121317
-      percent: 0.05
-    '2015':
-      count: 62
-      total: 121226
       percent: 0.05
 09015:
   name: Windham County

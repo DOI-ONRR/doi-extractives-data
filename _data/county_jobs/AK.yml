@@ -2,157 +2,214 @@
   name: Anchorage Borough
   employment:
     '2006':
-      count: 1176
+      count: 2241
       total: 144931
-      percent: 0.81
+      percent: 1.55
     '2007':
-      count: 1312
+      count: 2545
       total: 145892
-      percent: 0.9
+      percent: 1.74
     '2008':
-      count: 1346
+      count: 2911
       total: 147933
-      percent: 0.91
+      percent: 1.97
     '2009':
-      count: 1415
+      count: 2776
       total: 147171
-      percent: 0.96
+      percent: 1.89
     '2010':
-      count: 1492
+      count: 2709
       total: 148252
-      percent: 1.01
+      percent: 1.83
     '2011':
-      count: 1647
+      count: 2897
       total: 150741
-      percent: 1.09
+      percent: 1.92
     '2012':
-      count: 1815
+      count: 3261
       total: 153363
-      percent: 1.18
+      percent: 2.13
     '2013':
-      count: 1845
+      count: 3336
       total: 153467
-      percent: 1.2
-    '2014':
-      count: 1731
-      total: 152814
-      percent: 1.13
-    '2015':
-      count: 1892
-      total: 153811
-      percent: 1.23
+      percent: 2.17
+'02050':
+  name: Bethel Census Area
+  employment:
+    '2011':
+      count: 29
+      total: 6714
+      percent: 0.43
 02090:
   name: Fairbanks North Star Borough
   employment:
     '2006':
-      count: 17
+      count: 1300
       total: 36644
-      percent: 0.05
+      percent: 3.55
+    '2007':
+      count: 1116
+      total: 36809
+      percent: 3.03
     '2008':
-      count: 20
+      count: 1058
       total: 36868
-      percent: 0.05
+      percent: 2.87
     '2009':
-      count: 12
+      count: 1068
       total: 36369
-      percent: 0.03
+      percent: 2.94
     '2010':
-      count: 14
+      count: 1118
       total: 37132
-      percent: 0.04
+      percent: 3.01
+    '2011':
+      count: 1282
+      total: 37485
+      percent: 3.42
+    '2012':
+      count: 1468
+      total: 37813
+      percent: 3.88
     '2013':
-      count: 730
+      count: 1441
       total: 37320
-      percent: 1.96
-    '2014':
-      count: 18
-      total: 36905
-      percent: 0.05
-    '2015':
-      count: 18
-      total: 37024
-      percent: 0.05
+      percent: 3.86
+'02110':
+  name: Juneau Borough
+  employment:
+    '2006':
+      count: 388
+      total: 17500
+      percent: 2.22
+    '2007':
+      count: 424
+      total: 17488
+      percent: 2.42
 '02122':
   name: Kenai Peninsula Borough
   employment:
     '2006':
-      count: 250
+      count: 1017
       total: 17923
-      percent: 1.39
+      percent: 5.67
     '2007':
-      count: 253
+      count: 995
       total: 18045
-      percent: 1.4
+      percent: 5.51
     '2008':
-      count: 331
+      count: 1173
       total: 18249
-      percent: 1.81
+      percent: 6.43
     '2009':
-      count: 327
+      count: 1122
       total: 18248
-      percent: 1.79
+      percent: 6.15
     '2010':
-      count: 287
+      count: 1087
       total: 18704
-      percent: 1.53
+      percent: 5.81
     '2011':
-      count: 282
+      count: 1067
       total: 19019
-      percent: 1.48
+      percent: 5.61
     '2012':
-      count: 141
+      count: 1132
       total: 19602
-      percent: 0.72
+      percent: 5.77
     '2013':
-      count: 384
+      count: 1493
       total: 20288
-      percent: 1.89
-    '2014':
-      count: 381
-      total: 20344
-      percent: 1.87
-    '2015':
-      count: 329
-      total: 20008
-      percent: 1.64
+      percent: 7.36
+'02130':
+  name: Ketchikan Gateway Borough
+  employment:
+    '2010':
+      count: 15
+      total: 7039
+      percent: 0.21
+    '2011':
+      count: 15
+      total: 7149
+      percent: 0.21
+    '2012':
+      count: 3
+      total: 7238
+      percent: 0.04
+    '2013':
+      count: 4
+      total: 7322
+      percent: 0.05
 '02170':
   name: Matanuska-Susitna Borough
   employment:
     '2006':
-      count: 33
-      total: 17513
-      percent: 0.19
-    '2007':
-      count: 29
-      total: 17758
-      percent: 0.16
-    '2008':
-      count: 29
-      total: 18429
-      percent: 0.16
-    '2009':
-      count: 42
-      total: 19038
-      percent: 0.22
-    '2010':
       count: 38
-      total: 19551
-      percent: 0.19
-    '2011':
-      count: 43
-      total: 19995
+      total: 17513
       percent: 0.22
-    '2015':
-      count: 55
-      total: 22542
+    '2007':
+      count: 31
+      total: 17758
+      percent: 0.17
+    '2008':
+      count: 46
+      total: 18429
+      percent: 0.25
+    '2009':
+      count: 46
+      total: 19038
       percent: 0.24
+    '2010':
+      count: 71
+      total: 19551
+      percent: 0.36
+    '2011':
+      count: 84
+      total: 19995
+      percent: 0.42
+    '2012':
+      count: 74
+      total: 20524
+      percent: 0.36
+    '2013':
+      count: 73
+      total: 21102
+      percent: 0.35
 02185:
   name: North Slope Borough
   employment:
+    '2006':
+      count: 6295
+      total: 10395
+      percent: 60.56
+    '2007':
+      count: 7496
+      total: 11894
+      percent: 63.02
+    '2008':
+      count: 8314
+      total: 13174
+      percent: 63.11
+    '2009':
+      count: 8429
+      total: 13538
+      percent: 62.26
+    '2010':
+      count: 8445
+      total: 13661
+      percent: 61.82
+    '2011':
+      count: 8384
+      total: 13780
+      percent: 60.84
+    '2012':
+      count: 8432
+      total: 14059
+      percent: 59.98
     '2013':
-      count: 1768
+      count: 8406
       total: 14199
-      percent: 12.45
+      percent: 59.2
 '02201':
   name: Prince of Wales-Outer Ketchikan Census Area
   employment:
@@ -160,10 +217,61 @@
       count: 3
       total: 1795
       percent: 0.17
+'02261':
+  name: Valdez-Cordova Census Area
+  employment:
+    '2006':
+      count: 25
+      total: 4624
+      percent: 0.54
+    '2007':
+      count: 31
+      total: 4650
+      percent: 0.67
+    '2008':
+      count: 23
+      total: 4664
+      percent: 0.49
+    '2009':
+      count: 15
+      total: 4723
+      percent: 0.32
+    '2010':
+      count: 20
+      total: 4608
+      percent: 0.43
+    '2011':
+      count: 16
+      total: 4646
+      percent: 0.34
+    '2012':
+      count: 22
+      total: 4683
+      percent: 0.47
+    '2013':
+      count: 24
+      total: 4741
+      percent: 0.51
 02290:
   name: Yukon-Koyukuk Census Area
   employment:
+    '2006':
+      count: 29
+      total: 2077
+      percent: 1.4
+    '2008':
+      count: 20
+      total: 2030
+      percent: 0.99
     '2009':
-      count: 12
+      count: 15
       total: 2097
-      percent: 0.57
+      percent: 0.72
+    '2010':
+      count: 43
+      total: 2181
+      percent: 1.97
+    '2013':
+      count: 77
+      total: 2336
+      percent: 3.3

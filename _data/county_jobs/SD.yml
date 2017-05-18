@@ -33,10 +33,6 @@
       count: 12
       total: 15964
       percent: 0.08
-    '2014':
-      count: 11
-      total: 15942
-      percent: 0.07
 '46033':
   name: Custer County
   employment:
@@ -56,6 +52,57 @@
       count: 43
       total: 2624
       percent: 1.64
+    '2010':
+      count: 54
+      total: 2524
+      percent: 2.14
+    '2011':
+      count: 68
+      total: 2499
+      percent: 2.72
+    '2012':
+      count: 37
+      total: 2488
+      percent: 1.49
+    '2013':
+      count: 36
+      total: 2431
+      percent: 1.48
+'46047':
+  name: Fall River County
+  employment:
+    '2006':
+      count: 13
+      total: 2509
+      percent: 0.52
+    '2007':
+      count: 14
+      total: 2500
+      percent: 0.56
+    '2008':
+      count: 19
+      total: 2489
+      percent: 0.76
+    '2009':
+      count: 20
+      total: 2446
+      percent: 0.82
+    '2010':
+      count: 12
+      total: 2496
+      percent: 0.48
+    '2011':
+      count: 10
+      total: 2474
+      percent: 0.4
+    '2012':
+      count: 22
+      total: 2448
+      percent: 0.9
+    '2013':
+      count: 18
+      total: 2403
+      percent: 0.75
 '46051':
   name: Grant County
   employment:
@@ -75,33 +122,56 @@
       count: 31
       total: 3793
       percent: 0.82
-    '2014':
-      count: 28
-      total: 3901
-      percent: 0.72
-    '2015':
-      count: 27
-      total: 3997
-      percent: 0.68
+'46063':
+  name: Harding County
+  employment:
+    '2007':
+      count: 36
+      total: 376
+      percent: 9.57
 '46081':
   name: Lawrence County
   employment:
     '2007':
-      count: 167
+      count: 172
       total: 11493
-      percent: 1.45
+      percent: 1.5
+    '2009':
+      count: 179
+      total: 11514
+      percent: 1.55
 '46103':
   name: Pennington County
   employment:
-    '2012':
-      count: 32
-      total: 53678
+    '2006':
+      count: 37
+      total: 51658
+      percent: 0.07
+    '2007':
+      count: 43
+      total: 52496
+      percent: 0.08
+    '2008':
+      count: 30
+      total: 53464
       percent: 0.06
-    '2014':
-      count: 22
-      total: 55435
-      percent: 0.04
-    '2015':
-      count: 18
-      total: 55556
-      percent: 0.03
+    '2009':
+      count: 29
+      total: 52393
+      percent: 0.06
+    '2010':
+      count: 33
+      total: 51877
+      percent: 0.06
+    '2011':
+      count: 33
+      total: 52761
+      percent: 0.06
+    '2012':
+      count: 42
+      total: 53678
+      percent: 0.08
+    '2013':
+      count: 33
+      total: 54658
+      percent: 0.06

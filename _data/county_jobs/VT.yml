@@ -87,14 +87,6 @@
       count: 42
       total: 98359
       percent: 0.04
-    '2014':
-      count: 43
-      total: 99734
-      percent: 0.04
-    '2015':
-      count: 45
-      total: 101257
-      percent: 0.04
 '50011':
   name: Franklin County
   employment:
@@ -106,14 +98,6 @@
       count: 25
       total: 16757
       percent: 0.15
-    '2014':
-      count: 24
-      total: 17075
-      percent: 0.14
-    '2015':
-      count: 27
-      total: 17401
-      percent: 0.16
 '50015':
   name: Lamoille County
   employment:
@@ -129,10 +113,6 @@
       count: 7
       total: 10521
       percent: 0.07
-    '2014':
-      count: 9
-      total: 11676
-      percent: 0.08
 '50017':
   name: Orange County
   employment:
@@ -167,14 +147,6 @@
     '2013':
       count: 11
       total: 7686
-      percent: 0.14
-    '2014':
-      count: 12
-      total: 7645
-      percent: 0.16
-    '2015':
-      count: 11
-      total: 7743
       percent: 0.14
 '50021':
   name: Rutland County
@@ -211,14 +183,41 @@
       count: 363
       total: 27569
       percent: 1.32
-    '2014':
-      count: 350
-      total: 27473
-      percent: 1.27
-    '2015':
-      count: 351
-      total: 27492
-      percent: 1.28
+'50023':
+  name: Washington County
+  employment:
+    '2006':
+      count: 143
+      total: 32744
+      percent: 0.44
+    '2007':
+      count: 144
+      total: 32555
+      percent: 0.44
+    '2008':
+      count: 73
+      total: 32817
+      percent: 0.22
+    '2009':
+      count: 67
+      total: 31885
+      percent: 0.21
+    '2010':
+      count: 71
+      total: 31748
+      percent: 0.22
+    '2011':
+      count: 91
+      total: 31756
+      percent: 0.29
+    '2012':
+      count: 103
+      total: 32270
+      percent: 0.32
+    '2013':
+      count: 91
+      total: 32580
+      percent: 0.28
 '50027':
   name: Windsor County
   employment:
@@ -242,11 +241,3 @@
       count: 40
       total: 22670
       percent: 0.18
-    '2014':
-      count: 32
-      total: 22973
-      percent: 0.14
-    '2015':
-      count: 37
-      total: 22976
-      percent: 0.16

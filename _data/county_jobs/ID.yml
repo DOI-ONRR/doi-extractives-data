@@ -1,68 +1,198 @@
 '16001':
   name: Ada County
   employment:
+    '2006':
+      count: 143
+      total: 208091
+      percent: 0.07
+    '2007':
+      count: 109
+      total: 212220
+      percent: 0.05
     '2008':
-      count: 78
+      count: 112
       total: 209207
+      percent: 0.05
+    '2009':
+      count: 77
+      total: 194177
+      percent: 0.04
+    '2010':
+      count: 86
+      total: 192165
       percent: 0.04
     '2011':
-      count: 48
+      count: 84
       total: 194701
-      percent: 0.02
+      percent: 0.04
     '2012':
-      count: 39
+      count: 87
       total: 198957
-      percent: 0.02
+      percent: 0.04
     '2013':
-      count: 58
+      count: 119
       total: 205433
-      percent: 0.03
+      percent: 0.06
+'16005':
+  name: Bannock County
+  employment:
+    '2006':
+      count: 25
+      total: 34463
+      percent: 0.07
+    '2007':
+      count: 26
+      total: 35160
+      percent: 0.07
+'16009':
+  name: Benewah County
+  employment:
+    '2007':
+      count: 65
+      total: 3640
+      percent: 1.79
+'16013':
+  name: Blaine County
+  employment:
+    '2006':
+      count: 39
+      total: 13889
+      percent: 0.28
+    '2007':
+      count: 35
+      total: 13924
+      percent: 0.25
+    '2008':
+      count: 31
+      total: 13925
+      percent: 0.22
+    '2009':
+      count: 28
+      total: 12350
+      percent: 0.23
+    '2010':
+      count: 21
+      total: 11698
+      percent: 0.18
+    '2011':
+      count: 26
+      total: 11686
+      percent: 0.22
+    '2012':
+      count: 21
+      total: 11658
+      percent: 0.18
+'16015':
+  name: Boise County
+  employment:
+    '2007':
+      count: 16
+      total: 1706
+      percent: 0.94
 '16017':
   name: Bonner County
   employment:
+    '2006':
+      count: 131
+      total: 14349
+      percent: 0.91
+    '2007':
+      count: 154
+      total: 14717
+      percent: 1.05
     '2008':
-      count: 101
+      count: 139
       total: 14120
-      percent: 0.72
+      percent: 0.98
     '2009':
-      count: 106
+      count: 151
       total: 13355
-      percent: 0.79
+      percent: 1.13
     '2010':
-      count: 102
+      count: 148
       total: 12888
-      percent: 0.79
+      percent: 1.15
+    '2011':
+      count: 182
+      total: 12552
+      percent: 1.45
+    '2012':
+      count: 163
+      total: 12494
+      percent: 1.3
+    '2013':
+      count: 128
+      total: 12794
+      percent: 1
+'16019':
+  name: Bonneville County
+  employment:
+    '2009':
+      count: 38
+      total: 43334
+      percent: 0.09
 '16027':
   name: Canyon County
   employment:
     '2006':
-      count: 56
+      count: 69
       total: 55121
-      percent: 0.1
+      percent: 0.13
     '2007':
-      count: 57
+      count: 68
       total: 57120
+      percent: 0.12
+    '2008':
+      count: 57
+      total: 54916
       percent: 0.1
     '2009':
       count: 35
       total: 51145
       percent: 0.07
     '2010':
-      count: 21
+      count: 22
       total: 51023
       percent: 0.04
     '2011':
-      count: 20
+      count: 22
       total: 50860
       percent: 0.04
     '2012':
-      count: 19
+      count: 21
       total: 52257
       percent: 0.04
     '2013':
-      count: 22
+      count: 24
       total: 54319
       percent: 0.04
+'16029':
+  name: Caribou County
+  employment:
+    '2006':
+      count: 347
+      total: 3167
+      percent: 10.96
+    '2007':
+      count: 358
+      total: 3216
+      percent: 11.13
+    '2008':
+      count: 348
+      total: 3303
+      percent: 10.54
+    '2009':
+      count: 317
+      total: 3207
+      percent: 9.88
+    '2010':
+      count: 333
+      total: 3031
+      percent: 10.99
+    '2011':
+      count: 361
+      total: 3094
+      percent: 11.67
 '16031':
   name: Cassia County
   employment:
@@ -86,22 +216,18 @@
       count: 92
       total: 9806
       percent: 0.94
+    '2011':
+      count: 92
+      total: 9898
+      percent: 0.93
     '2012':
-      count: 99
+      count: 102
       total: 9949
-      percent: 1
+      percent: 1.03
     '2013':
-      count: 113
+      count: 119
       total: 10391
-      percent: 1.09
-    '2014':
-      count: 124
-      total: 10532
-      percent: 1.18
-    '2015':
-      count: 134
-      total: 10664
-      percent: 1.26
+      percent: 1.15
 '16041':
   name: Franklin County
   employment:
@@ -116,79 +242,197 @@
 '16049':
   name: Idaho County
   employment:
+    '2006':
+      count: 79
+      total: 4483
+      percent: 1.76
+    '2007':
+      count: 85
+      total: 4580
+      percent: 1.86
     '2008':
-      count: 81
+      count: 84
       total: 4524
-      percent: 1.79
+      percent: 1.86
     '2009':
-      count: 63
+      count: 67
       total: 4237
-      percent: 1.49
+      percent: 1.58
+    '2010':
+      count: 74
+      total: 4250
+      percent: 1.74
+    '2011':
+      count: 78
+      total: 4191
+      percent: 1.86
     '2012':
-      count: 56
+      count: 77
       total: 4185
-      percent: 1.34
+      percent: 1.84
     '2013':
-      count: 58
+      count: 67
       total: 4217
-      percent: 1.38
-    '2014':
-      count: 57
-      total: 4295
-      percent: 1.33
+      percent: 1.59
 '16055':
   name: Kootenai County
   employment:
     '2006':
-      count: 43
+      count: 149
       total: 54553
-      percent: 0.08
+      percent: 0.27
+    '2007':
+      count: 144
+      total: 56436
+      percent: 0.26
+    '2008':
+      count: 158
+      total: 56194
+      percent: 0.28
+    '2009':
+      count: 102
+      total: 52238
+      percent: 0.2
+    '2010':
+      count: 92
+      total: 51513
+      percent: 0.18
+    '2011':
+      count: 97
+      total: 51592
+      percent: 0.19
+    '2012':
+      count: 85
+      total: 51002
+      percent: 0.17
+    '2013':
+      count: 120
+      total: 53106
+      percent: 0.23
+'16069':
+  name: Nez Perce County
+  employment:
+    '2006':
+      count: 105
+      total: 20774
+      percent: 0.51
+    '2010':
+      count: 75
+      total: 20002
+      percent: 0.37
+    '2011':
+      count: 77
+      total: 19995
+      percent: 0.39
+'16073':
+  name: Owyhee County
+  employment:
+    '2011':
+      count: 34
+      total: 2870
+      percent: 1.18
+    '2012':
+      count: 38
+      total: 3005
+      percent: 1.26
+    '2013':
+      count: 29
+      total: 3026
+      percent: 0.96
 '16079':
   name: Shoshone County
   employment:
     '2006':
-      count: 389
+      count: 412
       total: 4462
-      percent: 8.72
+      percent: 9.23
     '2007':
-      count: 541
+      count: 569
       total: 4769
-      percent: 11.34
+      percent: 11.93
+    '2008':
+      count: 711
+      total: 4941
+      percent: 14.39
+    '2009':
+      count: 506
+      total: 4577
+      percent: 11.06
+    '2010':
+      count: 539
+      total: 4428
+      percent: 12.17
     '2011':
-      count: 602
+      count: 657
       total: 4502
-      percent: 13.37
+      percent: 14.59
     '2013':
-      count: 683
+      count: 844
       total: 4654
-      percent: 14.68
-    '2014':
-      count: 624
-      total: 4507
-      percent: 13.85
-    '2015':
-      count: 615
-      total: 4590
-      percent: 13.4
+      percent: 18.13
 '16083':
   name: Twin Falls County
   employment:
+    '2006':
+      count: 31
+      total: 33733
+      percent: 0.09
     '2007':
-      count: 39
+      count: 44
       total: 34480
-      percent: 0.11
+      percent: 0.13
     '2008':
-      count: 41
+      count: 62
       total: 34730
-      percent: 0.12
+      percent: 0.18
     '2009':
-      count: 16
+      count: 34
       total: 33134
+      percent: 0.1
+    '2010':
+      count: 24
+      total: 32547
+      percent: 0.07
+    '2011':
+      count: 19
+      total: 33140
+      percent: 0.06
+    '2012':
+      count: 18
+      total: 33650
       percent: 0.05
+    '2013':
+      count: 9
+      total: 35225
+      percent: 0.03
 '16085':
   name: Valley County
   employment:
     '2006':
-      count: 9
+      count: 28
       total: 4745
-      percent: 0.19
+      percent: 0.59
+    '2007':
+      count: 27
+      total: 4760
+      percent: 0.57
+    '2008':
+      count: 13
+      total: 4340
+      percent: 0.3
+    '2009':
+      count: 11
+      total: 3789
+      percent: 0.29
+    '2010':
+      count: 18
+      total: 3614
+      percent: 0.5
+    '2011':
+      count: 17
+      total: 3681
+      percent: 0.46
+    '2012':
+      count: 39
+      total: 3869
+      percent: 1.01

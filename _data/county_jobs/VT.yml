@@ -3,193 +3,250 @@
   employment:
     '2006':
       count: 19
+      total: 14701
       percent: 0.13
     '2007':
       count: 19
+      total: 14676
       percent: 0.13
     '2008':
       count: 18
+      total: 14469
       percent: 0.12
     '2009':
       count: 16
+      total: 13734
       percent: 0.12
     '2010':
       count: 15
+      total: 13585
       percent: 0.11
     '2011':
       count: 16
+      total: 13802
       percent: 0.12
     '2012':
       count: 18
+      total: 13900
       percent: 0.13
     '2013':
       count: 19
+      total: 14122
       percent: 0.13
 '50005':
   name: Caledonia County
   employment:
     '2006':
       count: 16
+      total: 11754
       percent: 0.14
     '2007':
       count: 16
+      total: 11773
       percent: 0.14
     '2012':
       count: 17
+      total: 10862
       percent: 0.16
     '2013':
       count: 16
+      total: 10972
       percent: 0.15
 '50007':
   name: Chittenden County
   employment:
     '2006':
       count: 40
+      total: 94827
       percent: 0.04
     '2007':
       count: 41
+      total: 95104
       percent: 0.04
     '2008':
       count: 42
+      total: 94741
       percent: 0.04
     '2009':
       count: 40
+      total: 92102
       percent: 0.04
     '2010':
       count: 39
+      total: 93243
       percent: 0.04
     '2011':
       count: 41
+      total: 95593
       percent: 0.04
     '2012':
       count: 42
+      total: 97707
       percent: 0.04
     '2013':
       count: 42
+      total: 98359
       percent: 0.04
     '2014':
       count: 43
+      total: 99734
       percent: 0.04
     '2015':
       count: 45
+      total: 101257
       percent: 0.04
 '50011':
   name: Franklin County
   employment:
     '2012':
       count: 25
+      total: 16211
       percent: 0.15
     '2013':
       count: 25
+      total: 16757
       percent: 0.15
     '2014':
       count: 24
+      total: 17075
       percent: 0.14
     '2015':
       count: 27
+      total: 17401
       percent: 0.16
 '50015':
   name: Lamoille County
   employment:
     '2006':
       count: 10
+      total: 11146
       percent: 0.09
     '2007':
       count: 9
+      total: 11110
       percent: 0.08
     '2009':
       count: 7
+      total: 10521
       percent: 0.07
     '2014':
       count: 9
+      total: 11676
       percent: 0.08
 '50017':
   name: Orange County
   employment:
     '2006':
       count: 11
+      total: 8050
       percent: 0.14
     '2007':
       count: 10
+      total: 7984
       percent: 0.13
     '2008':
       count: 7
+      total: 7747
       percent: 0.09
     '2009':
       count: 9
+      total: 7542
       percent: 0.12
     '2010':
       count: 11
+      total: 7506
       percent: 0.15
     '2011':
       count: 14
+      total: 7467
       percent: 0.19
     '2012':
       count: 13
+      total: 7542
       percent: 0.17
     '2013':
       count: 11
+      total: 7686
       percent: 0.14
     '2014':
       count: 12
+      total: 7645
       percent: 0.16
     '2015':
       count: 11
+      total: 7743
       percent: 0.14
 '50021':
   name: Rutland County
   employment:
     '2006':
       count: 394
+      total: 29706
       percent: 1.33
     '2007':
       count: 396
+      total: 29567
       percent: 1.34
     '2008':
       count: 491
+      total: 29129
       percent: 1.69
     '2009':
       count: 423
+      total: 27570
       percent: 1.53
     '2010':
       count: 363
+      total: 27439
       percent: 1.32
     '2011':
       count: 350
+      total: 27254
       percent: 1.28
     '2012':
       count: 366
+      total: 27457
       percent: 1.33
     '2013':
       count: 363
+      total: 27569
       percent: 1.32
     '2014':
       count: 350
+      total: 27473
       percent: 1.27
     '2015':
       count: 351
+      total: 27492
       percent: 1.28
 '50027':
   name: Windsor County
   employment:
     '2006':
       count: 60
+      total: 24108
       percent: 0.25
     '2010':
       count: 45
+      total: 22611
       percent: 0.2
     '2011':
       count: 50
+      total: 22611
       percent: 0.22
     '2012':
       count: 48
+      total: 22615
       percent: 0.21
     '2013':
       count: 40
+      total: 22670
       percent: 0.18
     '2014':
       count: 32
+      total: 22973
       percent: 0.14
     '2015':
       count: 37
+      total: 22976
       percent: 0.16

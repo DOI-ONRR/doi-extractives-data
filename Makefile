@@ -150,7 +150,7 @@ data/jobs: \
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, year, jobs, percent \
+			region_id AS state, year, jobs, total, percent \
 		FROM state_bls_employment \
 		WHERE \
 			region_id IS NOT NULL \
@@ -163,7 +163,7 @@ data/state_jobs.yml:
 data/national_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			year, jobs, percent \
+			year, jobs, total, percent \
 		FROM national_bls_employment \
 		WHERE \
 			commodity = 'Extractives' \
@@ -177,7 +177,7 @@ data/county_jobs:
 		SELECT \
 			region_id AS state, \
 			SUBSTR('0' || fips, -5, 5) AS fips, \
-			county, year, jobs, percent \
+			county, year, jobs, total, percent \
 		FROM bls_employment \
 		WHERE \
 			county IS NOT NULL \
@@ -187,13 +187,11 @@ data/county_jobs:
 			-c _meta/county_jobs.yml \
 			-o '_$@/{state}.yml'
 
-
 data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region AS state, year, \
-			jobs, \
-			ROUND(share, 2) AS percent \
+			jobs, ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
 			region IS NOT NULL AND \

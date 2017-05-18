@@ -3,130 +3,166 @@
   employment:
     '2006':
       count: 57
+      total: 27238
       percent: 0.21
     '2009':
       count: 56
+      total: 25631
       percent: 0.22
 '33003':
   name: Carroll County
   employment:
     '2006':
       count: 43
+      total: 20295
       percent: 0.21
     '2007':
       count: 39
+      total: 20403
       percent: 0.19
     '2008':
       count: 30
+      total: 20575
       percent: 0.15
 '33005':
   name: Cheshire County
   employment:
     '2015':
       count: 6
+      total: 32069
       percent: 0.02
 '33007':
   name: Coos County
   employment:
     '2006':
       count: 27
+      total: 13901
       percent: 0.19
     '2014':
       count: 16
+      total: 12064
       percent: 0.13
 '33009':
   name: Grafton County
   employment:
     '2006':
       count: 56
+      total: 52266
       percent: 0.11
     '2007':
       count: 56
+      total: 52732
       percent: 0.11
     '2008':
       count: 53
+      total: 52903
       percent: 0.1
     '2009':
       count: 50
+      total: 51398
       percent: 0.1
     '2013':
       count: 46
+      total: 52166
       percent: 0.09
     '2014':
       count: 46
+      total: 52228
       percent: 0.09
     '2015':
       count: 46
+      total: 52655
       percent: 0.09
 '33011':
   name: Hillsborough County
   employment:
     '2006':
       count: 54
+      total: 196529
       percent: 0.03
     '2007':
       count: 50
+      total: 197225
       percent: 0.03
     '2008':
       count: 49
+      total: 195995
       percent: 0.03
     '2009':
       count: 37
+      total: 187273
       percent: 0.02
     '2010':
       count: 32
+      total: 183879
       percent: 0.02
     '2011':
       count: 38
+      total: 186423
       percent: 0.02
     '2012':
       count: 45
+      total: 188408
       percent: 0.02
     '2013':
       count: 57
+      total: 190607
       percent: 0.03
     '2014':
       count: 73
+      total: 193564
       percent: 0.04
     '2015':
       count: 43
+      total: 196841
       percent: 0.02
 '33015':
   name: Rockingham County
   employment:
     '2006':
       count: 65
+      total: 138103
       percent: 0.05
     '2011':
       count: 25
+      total: 133394
       percent: 0.02
     '2013':
       count: 27
+      total: 137500
       percent: 0.02
     '2014':
       count: 28
+      total: 139969
       percent: 0.02
     '2015':
       count: 42
+      total: 143651
       percent: 0.03
 '33017':
   name: Strafford County
   employment:
     '2006':
       count: 24
+      total: 44561
       percent: 0.05
     '2007':
       count: 24
+      total: 45576
       percent: 0.05
     '2008':
       count: 23
+      total: 46534
       percent: 0.05
     '2009':
       count: 19
+      total: 44375
       percent: 0.04
     '2010':
       count: 24
+      total: 44182
       percent: 0.05
     '2012':
       count: 28
+      total: 45008
       percent: 0.06

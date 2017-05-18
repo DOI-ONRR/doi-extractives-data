@@ -3,169 +3,216 @@
   employment:
     '2012':
       count: 23
+      total: 3732
       percent: 0.62
     '2013':
       count: 22
+      total: 3742
       percent: 0.59
     '2014':
       count: 25
+      total: 3804
       percent: 0.66
     '2015':
       count: 26
+      total: 3969
       percent: 0.66
 '47035':
   name: Cumberland County
   employment:
     '2006':
       count: 149
+      total: 16611
       percent: 0.9
     '2011':
       count: 117
+      total: 15878
       percent: 0.74
     '2012':
       count: 112
+      total: 16424
       percent: 0.68
     '2013':
       count: 108
+      total: 16581
       percent: 0.65
 '47037':
   name: Davidson County
   employment:
     '2006':
       count: 180
+      total: 446712
       percent: 0.04
     '2007':
       count: 209
+      total: 444351
       percent: 0.05
     '2008':
       count: 195
+      total: 437097
       percent: 0.04
     '2009':
       count: 187
+      total: 416619
       percent: 0.04
     '2010':
       count: 180
+      total: 416404
       percent: 0.04
     '2011':
       count: 172
+      total: 421359
       percent: 0.04
 '47051':
   name: Franklin County
   employment:
     '2006':
       count: 69
+      total: 9525
       percent: 0.72
     '2007':
       count: 70
+      total: 9713
       percent: 0.72
     '2008':
       count: 67
+      total: 9622
       percent: 0.7
     '2009':
       count: 65
+      total: 9052
       percent: 0.72
     '2010':
       count: 66
+      total: 9057
       percent: 0.73
     '2011':
       count: 68
+      total: 8973
       percent: 0.76
     '2012':
       count: 78
+      total: 9345
       percent: 0.83
     '2013':
       count: 76
+      total: 10089
       percent: 0.75
     '2014':
       count: 73
+      total: 11418
       percent: 0.64
     '2015':
       count: 69
+      total: 11752
       percent: 0.59
 '47071':
   name: Hardin County
   employment:
     '2006':
       count: 45
+      total: 7751
       percent: 0.58
     '2007':
       count: 54
+      total: 7791
       percent: 0.69
     '2008':
       count: 45
+      total: 7807
       percent: 0.58
     '2009':
       count: 31
+      total: 7375
       percent: 0.42
     '2012':
       count: 23
+      total: 7675
       percent: 0.3
 '47141':
   name: Putnam County
   employment:
     '2006':
       count: 52
+      total: 31783
       percent: 0.16
     '2010':
       count: 44
+      total: 30877
       percent: 0.14
     '2011':
       count: 43
+      total: 31270
       percent: 0.14
     '2012':
       count: 40
+      total: 31403
       percent: 0.13
     '2013':
       count: 39
+      total: 32263
       percent: 0.12
     '2014':
       count: 37
+      total: 32709
       percent: 0.11
     '2015':
       count: 52
+      total: 34463
       percent: 0.15
 '47147':
   name: Robertson County
   employment:
     '2009':
       count: 45
+      total: 16430
       percent: 0.27
     '2010':
       count: 42
+      total: 16775
       percent: 0.25
 '47151':
   name: Scott County
   employment:
     '2008':
       count: 17
+      total: 5950
       percent: 0.29
     '2009':
       count: 18
+      total: 5415
       percent: 0.33
 '47183':
   name: Weakley County
   employment:
     '2006':
       count: 154
+      total: 10317
       percent: 1.49
     '2007':
       count: 148
+      total: 10256
       percent: 1.44
     '2008':
       count: 148
+      total: 10231
       percent: 1.45
     '2013':
       count: 149
+      total: 9999
       percent: 1.49
     '2014':
       count: 149
+      total: 10379
       percent: 1.44
     '2015':
       count: 149
+      total: 10686
       percent: 1.39
 '47189':
   name: Wilson County
   employment:
     '2015':
       count: 41
+      total: 37865
       percent: 0.11

@@ -3,154 +3,193 @@
   employment:
     '2011':
       count: 111
+      total: 57022
       percent: 0.19
 '45007':
   name: Anderson County
   employment:
     '2006':
       count: 70
+      total: 59727
       percent: 0.12
     '2007':
       count: 69
+      total: 60439
       percent: 0.11
 '45025':
   name: Chesterfield County
   employment:
     '2007':
       count: 107
+      total: 14349
       percent: 0.75
     '2008':
       count: 130
+      total: 14185
       percent: 0.92
     '2009':
       count: 124
+      total: 12951
       percent: 0.96
     '2010':
       count: 112
+      total: 12979
       percent: 0.86
     '2011':
       count: 95
+      total: 13070
       percent: 0.73
     '2012':
       count: 79
+      total: 13188
       percent: 0.6
     '2013':
       count: 78
+      total: 13553
       percent: 0.58
 '45029':
   name: Colleton County
   employment:
     '2007':
       count: 21
+      total: 10675
       percent: 0.2
     '2008':
       count: 16
+      total: 10711
       percent: 0.15
 '45035':
   name: Dorchester County
   employment:
     '2006':
       count: 69
+      total: 30301
       percent: 0.23
     '2007':
       count: 41
+      total: 30756
       percent: 0.13
     '2008':
       count: 25
+      total: 30604
       percent: 0.08
     '2009':
       count: 20
+      total: 28410
       percent: 0.07
 '45043':
   name: Georgetown County
   employment:
     '2006':
       count: 47
+      total: 23690
       percent: 0.2
 '45045':
   name: Greenville County
   employment:
     '2006':
       count: 76
+      total: 231817
       percent: 0.03
     '2007':
       count: 77
+      total: 237996
       percent: 0.03
     '2015':
       count: 23
+      total: 256799
       percent: 0.01
 '45051':
   name: Horry County
   employment:
     '2008':
       count: 59
+      total: 115662
       percent: 0.05
     '2009':
       count: 50
+      total: 107220
       percent: 0.05
     '2010':
       count: 42
+      total: 105678
       percent: 0.04
     '2013':
       count: 38
+      total: 111820
       percent: 0.03
 '45055':
   name: Kershaw County
   employment:
     '2007':
       count: 35
+      total: 18070
       percent: 0.19
     '2008':
       count: 39
+      total: 17156
       percent: 0.23
     '2009':
       count: 48
+      total: 15827
       percent: 0.3
 '45063':
   name: Lexington County
   employment:
     '2006':
       count: 135
+      total: 91893
       percent: 0.15
     '2008':
       count: 130
+      total: 98210
       percent: 0.13
     '2009':
       count: 117
+      total: 92789
       percent: 0.13
     '2010':
       count: 101
+      total: 92978
       percent: 0.11
     '2013':
       count: 109
+      total: 102544
       percent: 0.11
     '2015':
       count: 110
+      total: 113091
       percent: 0.1
 '45067':
   name: Marion County
   employment:
     '2008':
       count: 37
+      total: 8322
       percent: 0.44
     '2009':
       count: 30
+      total: 7483
       percent: 0.4
 '45079':
   name: Richland County
   employment:
     '2008':
       count: 108
+      total: 216026
       percent: 0.05
 '45083':
   name: Spartanburg County
   employment:
     '2007':
       count: 161
+      total: 119036
       percent: 0.14
     '2010':
       count: 159
+      total: 109848
       percent: 0.14
     '2011':
       count: 144
+      total: 111288
       percent: 0.13

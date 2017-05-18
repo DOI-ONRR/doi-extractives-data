@@ -3,82 +3,104 @@
   employment:
     '2006':
       count: 69
+      total: 225680
       percent: 0.03
 '24005':
   name: Baltimore County
   employment:
     '2008':
       count: 80
+      total: 375321
       percent: 0.02
     '2012':
       count: 63
+      total: 362713
       percent: 0.02
     '2013':
       count: 63
+      total: 360566
       percent: 0.02
     '2014':
       count: 66
+      total: 364651
       percent: 0.02
     '2015':
       count: 65
+      total: 370670
       percent: 0.02
 '24015':
   name: Cecil County
   employment:
     '2006':
       count: 204
+      total: 30012
       percent: 0.68
     '2009':
       count: 121
+      total: 30204
       percent: 0.4
     '2010':
       count: 94
+      total: 27822
       percent: 0.34
     '2013':
       count: 82
+      total: 30246
       percent: 0.27
     '2014':
       count: 85
+      total: 30643
       percent: 0.28
     '2015':
       count: 91
+      total: 30692
       percent: 0.3
 '24027':
   name: Howard County
   employment:
     '2012':
       count: 58
+      total: 158932
       percent: 0.04
 '24031':
   name: Montgomery County
   employment:
     '2008':
       count: 359
+      total: 457736
       percent: 0.08
     '2009':
       count: 332
+      total: 443185
       percent: 0.07
     '2010':
       count: 342
+      total: 441887
       percent: 0.08
     '2011':
       count: 138
+      total: 447238
       percent: 0.03
 '24043':
   name: Washington County
   employment:
     '2006':
       count: 65
+      total: 66827
       percent: 0.1
     '2007':
       count: 68
+      total: 66780
       percent: 0.1
     '2008':
       count: 57
+      total: 66106
       percent: 0.09
     '2009':
       count: 56
+      total: 63587
       percent: 0.09
     '2010':
       count: 60
+      total: 63537
       percent: 0.09

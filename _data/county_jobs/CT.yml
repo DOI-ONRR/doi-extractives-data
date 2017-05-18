@@ -3,109 +3,141 @@
   employment:
     '2008':
       count: 38
+      total: 419353
       percent: 0.01
     '2009':
       count: 29
+      total: 400017
       percent: 0.01
     '2010':
       count: 37
+      total: 397733
       percent: 0.01
     '2012':
       count: 26
+      total: 407923
       percent: 0.01
     '2013':
       count: 30
+      total: 413613
       percent: 0.01
     '2014':
       count: 32
+      total: 418829
       percent: 0.01
 09005:
   name: Litchfield County
   employment:
     '2006':
       count: 100
+      total: 62896
       percent: 0.16
     '2007':
       count: 92
+      total: 62864
       percent: 0.15
     '2008':
       count: 98
+      total: 63207
       percent: 0.16
     '2009':
       count: 89
+      total: 59312
       percent: 0.15
     '2010':
       count: 74
+      total: 58852
       percent: 0.13
     '2011':
       count: 71
+      total: 59575
       percent: 0.12
     '2012':
       count: 81
+      total: 60564
       percent: 0.13
     '2013':
       count: 82
+      total: 60588
       percent: 0.14
     '2014':
       count: 85
+      total: 61313
       percent: 0.14
     '2015':
       count: 84
+      total: 61450
       percent: 0.14
 09009:
   name: New Haven County
   employment:
     '2007':
       count: 253
+      total: 366825
       percent: 0.07
     '2011':
       count: 173
+      total: 348852
       percent: 0.05
     '2012':
       count: 162
+      total: 354070
       percent: 0.05
     '2013':
       count: 168
+      total: 356885
       percent: 0.05
     '2014':
       count: 181
+      total: 359107
       percent: 0.05
     '2015':
       count: 188
+      total: 359962
       percent: 0.05
 09011:
   name: New London County
   employment:
     '2006':
       count: 89
+      total: 129339
       percent: 0.07
     '2007':
       count: 89
+      total: 129691
       percent: 0.07
     '2008':
       count: 90
+      total: 130849
       percent: 0.07
     '2011':
       count: 55
+      total: 123692
       percent: 0.04
     '2012':
       count: 60
+      total: 122828
       percent: 0.05
     '2013':
       count: 63
+      total: 122158
       percent: 0.05
     '2014':
       count: 64
+      total: 121317
       percent: 0.05
     '2015':
       count: 62
+      total: 121226
       percent: 0.05
 09015:
   name: Windham County
   employment:
     '2006':
       count: 65
+      total: 39135
       percent: 0.17
     '2007':
       count: 81
+      total: 39290
       percent: 0.21

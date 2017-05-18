@@ -3,214 +3,272 @@
   employment:
     '2010':
       count: 97
+      total: 110143
       percent: 0.09
     '2011':
       count: 99
+      total: 111113
       percent: 0.09
     '2012':
       count: 95
+      total: 113592
       percent: 0.08
     '2013':
       count: 87
+      total: 116448
       percent: 0.07
     '2014':
       count: 88
+      total: 119125
       percent: 0.07
     '2015':
       count: 88
+      total: 123874
       percent: 0.07
 '37027':
   name: Caldwell County
   employment:
     '2006':
       count: 23
+      total: 28114
       percent: 0.08
     '2007':
       count: 24
+      total: 27206
       percent: 0.09
     '2008':
       count: 21
+      total: 26646
       percent: 0.08
     '2009':
       count: 11
+      total: 24759
       percent: 0.04
     '2010':
       count: 7
+      total: 24481
       percent: 0.03
 '37037':
   name: Chatham County
   employment:
     '2006':
       count: 51
+      total: 17253
       percent: 0.3
 '37045':
   name: Cleveland County
   employment:
     '2008':
       count: 99
+      total: 33528
       percent: 0.3
     '2010':
       count: 70
+      total: 30715
       percent: 0.23
     '2011':
       count: 66
+      total: 31938
       percent: 0.21
 '37049':
   name: Craven County
   employment:
     '2006':
       count: 57
+      total: 41464
       percent: 0.14
     '2007':
       count: 51
+      total: 41985
       percent: 0.12
     '2011':
       count: 53
+      total: 37434
       percent: 0.14
     '2012':
       count: 52
+      total: 38004
       percent: 0.14
     '2015':
       count: 45
+      total: 38735
       percent: 0.12
 '37057':
   name: Davidson County
   employment:
     '2009':
       count: 60
+      total: 39214
       percent: 0.15
     '2010':
       count: 49
+      total: 38782
       percent: 0.13
 '37081':
   name: Guilford County
   employment:
     '2009':
       count: 156
+      total: 259866
       percent: 0.06
 '37101':
   name: Johnston County
   employment:
     '2007':
       count: 51
+      total: 44503
       percent: 0.11
     '2010':
       count: 50
+      total: 41242
       percent: 0.12
     '2011':
       count: 43
+      total: 41670
       percent: 0.1
     '2012':
       count: 43
+      total: 42888
       percent: 0.1
     '2013':
       count: 41
+      total: 42591
       percent: 0.1
 '37105':
   name: Lee County
   employment:
     '2006':
       count: 63
+      total: 27817
       percent: 0.23
     '2007':
       count: 66
+      total: 27468
       percent: 0.24
     '2008':
       count: 64
+      total: 26531
       percent: 0.24
     '2009':
       count: 59
+      total: 24432
       percent: 0.24
     '2010':
       count: 56
+      total: 24814
       percent: 0.23
     '2011':
       count: 55
+      total: 25003
       percent: 0.22
     '2012':
       count: 57
+      total: 25034
       percent: 0.23
     '2013':
       count: 59
+      total: 24257
       percent: 0.24
     '2014':
       count: 59
+      total: 23714
       percent: 0.25
     '2015':
       count: 54
+      total: 25141
       percent: 0.21
 '37111':
   name: McDowell County
   employment:
     '2006':
       count: 43
+      total: 16341
       percent: 0.26
     '2007':
       count: 81
+      total: 16633
       percent: 0.49
     '2008':
       count: 78
+      total: 15967
       percent: 0.49
     '2009':
       count: 56
+      total: 14363
       percent: 0.39
     '2010':
       count: 60
+      total: 14439
       percent: 0.42
     '2011':
       count: 63
+      total: 14608
       percent: 0.43
     '2012':
       count: 68
+      total: 14931
       percent: 0.46
     '2015':
       count: 95
+      total: 16346
       percent: 0.58
 '37135':
   name: Orange County
   employment:
     '2006':
       count: 38
+      total: 59663
       percent: 0.06
 '37153':
   name: Richmond County
   employment:
     '2006':
       count: 135
+      total: 15044
       percent: 0.9
     '2007':
       count: 143
+      total: 15294
       percent: 0.94
     '2008':
       count: 140
+      total: 14969
       percent: 0.94
     '2009':
       count: 123
+      total: 13992
       percent: 0.88
 '37159':
   name: Rowan County
   employment:
     '2012':
       count: 180
+      total: 45261
       percent: 0.4
     '2013':
       count: 207
+      total: 44047
       percent: 0.47
     '2014':
       count: 177
+      total: 44697
       percent: 0.4
     '2015':
       count: 185
+      total: 46841
       percent: 0.39
 '37183':
   name: Wake County
   employment:
     '2007':
       count: 582
+      total: 448826
       percent: 0.13
     '2011':
       count: 251
+      total: 441817
       percent: 0.06
     '2012':
       count: 232
+      total: 456044
       percent: 0.05

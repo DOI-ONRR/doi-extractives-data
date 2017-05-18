@@ -3,82 +3,106 @@
   employment:
     '2006':
       count: 12
+      total: 22839
       percent: 0.05
     '2007':
       count: 13
+      total: 22776
       percent: 0.06
     '2008':
       count: 11
+      total: 22860
       percent: 0.05
     '2009':
       count: 10
+      total: 21992
       percent: 0.05
     '2010':
       count: 8
+      total: 21898
       percent: 0.04
     '2011':
       count: 6
+      total: 21987
       percent: 0.03
 '23017':
   name: Oxford County
   employment:
     '2006':
       count: 21
+      total: 17835
       percent: 0.12
     '2007':
       count: 19
+      total: 17859
       percent: 0.11
     '2008':
       count: 19
+      total: 17409
       percent: 0.11
     '2009':
       count: 18
+      total: 16480
       percent: 0.11
     '2010':
       count: 15
+      total: 16368
       percent: 0.09
     '2014':
       count: 11
+      total: 16775
       percent: 0.07
     '2015':
       count: 11
+      total: 16710
       percent: 0.07
 '23029':
   name: Washington County
   employment:
     '2009':
       count: 8
+      total: 10482
       percent: 0.08
 '23031':
   name: York County
   employment:
     '2006':
       count: 41
+      total: 67729
       percent: 0.06
     '2007':
       count: 26
+      total: 68232
       percent: 0.04
     '2008':
       count: 26
+      total: 68208
       percent: 0.04
     '2009':
       count: 21
+      total: 65911
       percent: 0.03
     '2010':
       count: 38
+      total: 65673
       percent: 0.06
     '2011':
       count: 63
+      total: 66184
       percent: 0.1
     '2012':
       count: 68
+      total: 66901
       percent: 0.1
     '2013':
       count: 66
+      total: 67017
       percent: 0.1
     '2014':
       count: 70
+      total: 67437
       percent: 0.1
     '2015':
       count: 76
+      total: 68905
       percent: 0.11

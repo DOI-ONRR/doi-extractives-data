@@ -3,130 +3,167 @@
   employment:
     '2006':
       count: 1176
+      total: 144931
       percent: 0.81
     '2007':
       count: 1312
+      total: 145892
       percent: 0.9
     '2008':
       count: 1346
+      total: 147933
       percent: 0.91
     '2009':
       count: 1415
+      total: 147171
       percent: 0.96
     '2010':
       count: 1492
+      total: 148252
       percent: 1.01
     '2011':
       count: 1647
+      total: 150741
       percent: 1.09
     '2012':
       count: 1815
+      total: 153363
       percent: 1.18
     '2013':
       count: 1845
+      total: 153467
       percent: 1.2
     '2014':
       count: 1731
+      total: 152814
       percent: 1.13
     '2015':
       count: 1892
+      total: 153811
       percent: 1.23
 02090:
   name: Fairbanks North Star Borough
   employment:
     '2006':
       count: 17
+      total: 36644
       percent: 0.05
     '2008':
       count: 20
+      total: 36868
       percent: 0.05
     '2009':
       count: 12
+      total: 36369
       percent: 0.03
     '2010':
       count: 14
+      total: 37132
       percent: 0.04
     '2013':
       count: 730
+      total: 37320
       percent: 1.96
     '2014':
       count: 18
+      total: 36905
       percent: 0.05
     '2015':
       count: 18
+      total: 37024
       percent: 0.05
 '02122':
   name: Kenai Peninsula Borough
   employment:
     '2006':
       count: 250
+      total: 17923
       percent: 1.39
     '2007':
       count: 253
+      total: 18045
       percent: 1.4
     '2008':
       count: 331
+      total: 18249
       percent: 1.81
     '2009':
       count: 327
+      total: 18248
       percent: 1.79
     '2010':
       count: 287
+      total: 18704
       percent: 1.53
     '2011':
       count: 282
+      total: 19019
       percent: 1.48
     '2012':
       count: 141
+      total: 19602
       percent: 0.72
     '2013':
       count: 384
+      total: 20288
       percent: 1.89
     '2014':
       count: 381
+      total: 20344
       percent: 1.87
     '2015':
       count: 329
+      total: 20008
       percent: 1.64
 '02170':
   name: Matanuska-Susitna Borough
   employment:
     '2006':
       count: 33
+      total: 17513
       percent: 0.19
     '2007':
       count: 29
+      total: 17758
       percent: 0.16
     '2008':
       count: 29
+      total: 18429
       percent: 0.16
     '2009':
       count: 42
+      total: 19038
       percent: 0.22
     '2010':
       count: 38
+      total: 19551
       percent: 0.19
     '2011':
       count: 43
+      total: 19995
       percent: 0.22
     '2015':
       count: 55
+      total: 22542
       percent: 0.24
 02185:
   name: North Slope Borough
   employment:
     '2013':
       count: 1768
+      total: 14199
       percent: 12.45
 '02201':
   name: Prince of Wales-Outer Ketchikan Census Area
   employment:
     '2006':
       count: 3
+      total: 1795
       percent: 0.17
 02290:
   name: Yukon-Koyukuk Census Area
   employment:
     '2009':
       count: 12
+      total: 2097
       percent: 0.57

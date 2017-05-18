@@ -3,640 +3,824 @@
   employment:
     '2006':
       count: 170
+      total: 152738
       percent: 0.11
     '2007':
       count: 36
+      total: 154072
       percent: 0.02
     '2008':
       count: 40
+      total: 155118
       percent: 0.03
     '2009':
       count: 37
+      total: 150163
       percent: 0.02
     '2010':
       count: 35
+      total: 147987
       percent: 0.02
     '2011':
       count: 30
+      total: 154794
       percent: 0.02
     '2013':
       count: 89
+      total: 172824
       percent: 0.05
     '2014':
       count: 97
+      total: 182840
       percent: 0.05
     '2015':
       count: 101
+      total: 191869
       percent: 0.05
 08005:
   name: Arapahoe County
   employment:
     '2006':
       count: 284
+      total: 276092
       percent: 0.1
     '2007':
       count: 291
+      total: 281876
       percent: 0.1
     '2008':
       count: 318
+      total: 282659
       percent: 0.11
     '2010':
       count: 304
+      total: 270339
       percent: 0.11
     '2011':
       count: 329
+      total: 277705
       percent: 0.12
     '2012':
       count: 335
+      total: 285604
       percent: 0.12
     '2013':
       count: 309
+      total: 296009
       percent: 0.1
     '2014':
       count: 408
+      total: 305590
       percent: 0.13
     '2015':
       count: 391
+      total: 316514
       percent: 0.12
 08007:
   name: Archuleta County
   employment:
     '2007':
       count: 32
+      total: 3778
       percent: 0.85
     '2008':
       count: 28
+      total: 3688
       percent: 0.76
     '2010':
       count: 17
+      total: 3241
       percent: 0.52
     '2011':
       count: 20
+      total: 3271
       percent: 0.61
     '2014':
       count: 7
+      total: 3535
       percent: 0.2
     '2015':
       count: 8
+      total: 3874
       percent: 0.21
 08013:
   name: Boulder County
   employment:
     '2008':
       count: 225
+      total: 162252
       percent: 0.14
     '2009':
       count: 210
+      total: 152906
       percent: 0.14
     '2010':
       count: 171
+      total: 152118
       percent: 0.11
     '2011':
       count: 167
+      total: 156134
       percent: 0.11
     '2012':
       count: 191
+      total: 160710
       percent: 0.12
     '2013':
       count: 23
+      total: 164576
       percent: 0.01
     '2014':
       count: 36
+      total: 169023
       percent: 0.02
     '2015':
       count: 224
+      total: 172735
       percent: 0.13
 08015:
   name: Chaffee County
   employment:
     '2006':
       count: 19
+      total: 6561
       percent: 0.29
 08021:
   name: Conejos County
   employment:
     '2006':
       count: 48
+      total: 1320
       percent: 3.64
     '2007':
       count: 33
+      total: 1331
       percent: 2.48
     '2008':
       count: 29
+      total: 1270
       percent: 2.28
     '2009':
       count: 25
+      total: 1236
       percent: 2.02
     '2015':
       count: 28
+      total: 1428
       percent: 1.96
 08031:
   name: Denver County
   employment:
     '2006':
       count: 3441
+      total: 432461
       percent: 0.8
     '2007':
       count: 4398
+      total: 442739
       percent: 0.99
     '2008':
       count: 4997
+      total: 449264
       percent: 1.11
     '2009':
       count: 5071
+      total: 423334
       percent: 1.2
     '2010':
       count: 4992
+      total: 420505
       percent: 1.19
     '2011':
       count: 5295
+      total: 422768
       percent: 1.25
     '2012':
       count: 5785
+      total: 434090
       percent: 1.33
     '2013':
       count: 6027
+      total: 441426
       percent: 1.37
     '2014':
       count: 6626
+      total: 460715
       percent: 1.44
     '2015':
       count: 6398
+      total: 478275
       percent: 1.34
 08035:
   name: Douglas County
   employment:
     '2006':
       count: 45
+      total: 87416
       percent: 0.05
     '2007':
       count: 25
+      total: 90851
       percent: 0.03
     '2008':
       count: 33
+      total: 93704
       percent: 0.04
     '2009':
       count: 31
+      total: 90073
       percent: 0.03
     '2010':
       count: 43
+      total: 89826
       percent: 0.05
     '2011':
       count: 42
+      total: 91193
       percent: 0.05
 08041:
   name: El Paso County
   employment:
     '2006':
       count: 53
+      total: 245228
       percent: 0.02
     '2007':
       count: 45
+      total: 247158
       percent: 0.02
     '2008':
       count: 48
+      total: 244903
       percent: 0.02
     '2009':
       count: 54
+      total: 234396
       percent: 0.02
     '2010':
       count: 69
+      total: 232225
       percent: 0.03
     '2011':
       count: 93
+      total: 235257
       percent: 0.04
     '2012':
       count: 95
+      total: 237705
       percent: 0.04
     '2013':
       count: 93
+      total: 243301
       percent: 0.04
 08043:
   name: Fremont County
   employment:
     '2006':
       count: 35
+      total: 13549
       percent: 0.26
     '2008':
       count: 31
+      total: 13661
       percent: 0.23
     '2009':
       count: 28
+      total: 13095
       percent: 0.21
     '2010':
       count: 29
+      total: 13051
       percent: 0.22
     '2011':
       count: 25
+      total: 13158
       percent: 0.19
     '2013':
       count: 45
+      total: 12827
       percent: 0.35
     '2014':
       count: 49
+      total: 12757
       percent: 0.38
     '2015':
       count: 55
+      total: 13249
       percent: 0.42
 08045:
   name: Garfield County
   employment:
     '2006':
       count: 285
+      total: 25473
       percent: 1.12
     '2007':
       count: 376
+      total: 27210
       percent: 1.38
     '2008':
       count: 467
+      total: 28660
       percent: 1.63
     '2009':
       count: 523
+      total: 25092
       percent: 2.08
     '2010':
       count: 537
+      total: 23095
       percent: 2.33
     '2011':
       count: 591
+      total: 23761
       percent: 2.49
     '2012':
       count: 647
+      total: 24184
       percent: 2.68
     '2013':
       count: 669
+      total: 24493
       percent: 2.73
     '2014':
       count: 680
+      total: 25024
       percent: 2.72
     '2015':
       count: 642
+      total: 25626
       percent: 2.51
 08049:
   name: Grand County
   employment:
     '2008':
       count: 31
+      total: 7444
       percent: 0.42
     '2009':
       count: 23
+      total: 6797
       percent: 0.34
     '2012':
       count: 22
+      total: 6544
       percent: 0.34
     '2013':
       count: 21
+      total: 6808
       percent: 0.31
 08051:
   name: Gunnison County
   employment:
     '2006':
       count: 16
+      total: 8388
       percent: 0.19
     '2010':
       count: 744
+      total: 7628
       percent: 9.75
 08059:
   name: Jefferson County
   employment:
     '2006':
       count: 251
+      total: 207159
       percent: 0.12
     '2007':
       count: 316
+      total: 211091
       percent: 0.15
     '2008':
       count: 310
+      total: 211502
       percent: 0.15
     '2009':
       count: 258
+      total: 203855
       percent: 0.13
     '2010':
       count: 231
+      total: 202557
       percent: 0.11
     '2011':
       count: 190
+      total: 204999
       percent: 0.09
     '2012':
       count: 204
+      total: 211876
       percent: 0.1
     '2013':
       count: 170
+      total: 216072
       percent: 0.08
     '2014':
       count: 196
+      total: 222051
       percent: 0.09
     '2015':
       count: 208
+      total: 228335
       percent: 0.09
 08067:
   name: La Plata County
   employment:
     '2006':
       count: 234
+      total: 24826
       percent: 0.94
     '2007':
       count: 291
+      total: 25541
       percent: 1.14
     '2008':
       count: 315
+      total: 25789
       percent: 1.22
     '2009':
       count: 314
+      total: 24252
       percent: 1.29
     '2010':
       count: 296
+      total: 23519
       percent: 1.26
     '2011':
       count: 324
+      total: 23340
       percent: 1.39
     '2012':
       count: 319
+      total: 23717
       percent: 1.35
     '2013':
       count: 319
+      total: 24489
       percent: 1.3
     '2014':
       count: 317
+      total: 25046
       percent: 1.27
     '2015':
       count: 301
+      total: 25501
       percent: 1.18
 08069:
   name: Larimer County
   employment:
     '2006':
       count: 336
+      total: 127335
       percent: 0.26
     '2007':
       count: 341
+      total: 130265
       percent: 0.26
     '2008':
       count: 326
+      total: 131244
       percent: 0.25
     '2009':
       count: 269
+      total: 126436
       percent: 0.21
     '2010':
       count: 269
+      total: 126653
       percent: 0.21
     '2011':
       count: 274
+      total: 128806
       percent: 0.21
     '2012':
       count: 274
+      total: 132614
       percent: 0.21
     '2013':
       count: 284
+      total: 137151
       percent: 0.21
     '2014':
       count: 275
+      total: 141746
       percent: 0.19
     '2015':
       count: 277
+      total: 147455
       percent: 0.19
 08071:
   name: Las Animas County
   employment:
     '2013':
       count: 313
+      total: 5032
       percent: 6.22
 08075:
   name: Logan County
   employment:
     '2010':
       count: 18
+      total: 8033
       percent: 0.22
     '2011':
       count: 17
+      total: 7975
       percent: 0.21
     '2012':
       count: 24
+      total: 8070
       percent: 0.3
 08077:
   name: Mesa County
   employment:
     '2006':
       count: 37
+      total: 57970
       percent: 0.06
     '2007':
       count: 69
+      total: 61540
       percent: 0.11
     '2008':
       count: 117
+      total: 64504
       percent: 0.18
     '2009':
       count: 109
+      total: 60264
       percent: 0.18
     '2010':
       count: 76
+      total: 57329
       percent: 0.13
     '2011':
       count: 74
+      total: 57701
       percent: 0.13
     '2012':
       count: 131
+      total: 58329
       percent: 0.22
     '2013':
       count: 118
+      total: 58407
       percent: 0.2
     '2014':
       count: 109
+      total: 59948
       percent: 0.18
     '2015':
       count: 110
+      total: 59801
       percent: 0.18
 08081:
   name: Moffat County
   employment:
     '2006':
       count: 495
+      total: 5175
       percent: 9.57
     '2007':
       count: 539
+      total: 5256
       percent: 10.25
     '2008':
       count: 545
+      total: 5486
       percent: 9.93
     '2009':
       count: 541
+      total: 5489
       percent: 9.86
     '2011':
       count: 511
+      total: 4968
       percent: 10.29
     '2012':
       count: 23
+      total: 4956
       percent: 0.46
     '2013':
       count: 28
+      total: 4957
       percent: 0.56
     '2014':
       count: 28
+      total: 4792
       percent: 0.58
     '2015':
       count: 24
+      total: 4749
       percent: 0.51
 08083:
   name: Montezuma County
   employment:
     '2007':
       count: 64
+      total: 9374
       percent: 0.68
     '2008':
       count: 70
+      total: 9086
       percent: 0.77
     '2009':
       count: 64
+      total: 8809
       percent: 0.73
     '2012':
       count: 13
+      total: 8812
       percent: 0.15
 08085:
   name: Montrose County
   employment:
     '2006':
       count: 15
+      total: 14904
       percent: 0.1
     '2007':
       count: 20
+      total: 15284
       percent: 0.13
     '2008':
       count: 26
+      total: 15155
       percent: 0.17
     '2010':
       count: 6
+      total: 13658
       percent: 0.04
 08091:
   name: Ouray County
   employment:
     '2013':
       count: 7
+      total: 1612
       percent: 0.43
 08097:
   name: Pitkin County
   employment:
     '2010':
       count: 11
+      total: 15003
       percent: 0.07
 08101:
   name: Pueblo County
   employment:
     '2006':
       count: 84
+      total: 55153
       percent: 0.15
     '2007':
       count: 61
+      total: 56803
       percent: 0.11
     '2008':
       count: 61
+      total: 57248
       percent: 0.11
     '2009':
       count: 47
+      total: 55680
       percent: 0.08
     '2010':
       count: 48
+      total: 55701
       percent: 0.09
     '2011':
       count: 27
+      total: 56550
       percent: 0.05
     '2012':
       count: 27
+      total: 56513
       percent: 0.05
     '2013':
       count: 23
+      total: 56610
       percent: 0.04
 08103:
   name: Rio Blanco County
   employment:
     '2006':
       count: 200
+      total: 3628
       percent: 5.51
     '2007':
       count: 20
+      total: 4131
       percent: 0.48
 08107:
   name: Routt County
   employment:
     '2006':
       count: 8
+      total: 14593
       percent: 0.05
     '2007':
       count: 9
+      total: 15403
       percent: 0.06
     '2008':
       count: 8
+      total: 15242
       percent: 0.05
 08121:
   name: Washington County
   employment:
     '2010':
       count: 16
+      total: 1082
       percent: 1.48
     '2011':
       count: 22
+      total: 1098
       percent: 2
 08123:
   name: Weld County
   employment:
     '2006':
       count: 683
+      total: 80405
       percent: 0.85
     '2007':
       count: 794
+      total: 82909
       percent: 0.96
     '2008':
       count: 760
+      total: 83491
       percent: 0.91
     '2009':
       count: 761
+      total: 79302
       percent: 0.96
     '2010':
       count: 756
+      total: 78658
       percent: 0.96
     '2011':
       count: 842
+      total: 82114
       percent: 1.03
     '2012':
       count: 923
+      total: 85411
       percent: 1.08
     '2013':
       count: 1013
+      total: 90403
       percent: 1.12
     '2014':
       count: 1179
+      total: 98530
       percent: 1.2
     '2015':
       count: 1251
+      total: 101497
       percent: 1.23
 08125:
   name: Yuma County
   employment:
     '2006':
       count: 179
+      total: 3795
       percent: 4.72
     '2007':
       count: 239
+      total: 3980
       percent: 6.01
     '2008':
       count: 254
+      total: 4103
       percent: 6.19
     '2009':
       count: 196
+      total: 3909
       percent: 5.01
     '2010':
       count: 159
+      total: 3811
       percent: 4.17
     '2011':
       count: 175
+      total: 3861
       percent: 4.53
     '2012':
       count: 153
+      total: 3877
       percent: 3.95
     '2013':
       count: 163
+      total: 3922
       percent: 4.16
     '2014':
       count: 203
+      total: 3998
       percent: 5.08
     '2015':
       count: 148
+      total: 3954
       percent: 3.74

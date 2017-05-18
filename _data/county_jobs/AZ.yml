@@ -3,169 +3,216 @@
   employment:
     '2011':
       count: 83
+      total: 18815
       percent: 0.44
 '04003':
   name: Cochise County
   employment:
     '2009':
       count: 22
+      total: 37850
       percent: 0.06
     '2010':
       count: 28
+      total: 37401
       percent: 0.07
     '2011':
       count: 32
+      total: 36864
       percent: 0.09
     '2012':
       count: 33
+      total: 35855
       percent: 0.09
     '2013':
       count: 22
+      total: 35490
       percent: 0.06
     '2014':
       count: 18
+      total: 34824
       percent: 0.05
     '2015':
       count: 19
+      total: 34572
       percent: 0.05
 '04005':
   name: Coconino County
   employment:
     '2006':
       count: 124
+      total: 58134
       percent: 0.21
     '2008':
       count: 51
+      total: 58927
       percent: 0.09
     '2013':
       count: 9
+      total: 58341
       percent: 0.02
 '04007':
   name: Gila County
   employment:
     '2006':
       count: 75
+      total: 14385
       percent: 0.52
     '2012':
       count: 51
+      total: 14344
       percent: 0.36
     '2014':
       count: 1135
+      total: 14952
       percent: 7.59
     '2015':
       count: 1082
+      total: 14777
       percent: 7.32
 '04013':
   name: Maricopa County
   employment:
     '2008':
       count: 8
+      total: 1769308
       percent: 0
     '2010':
       count: 15
+      total: 1602744
       percent: 0
     '2011':
       count: 25
+      total: 1626646
       percent: 0
     '2012':
       count: 25
+      total: 1666812
       percent: 0
     '2013':
       count: 28
+      total: 1713992
       percent: 0
     '2014':
       count: 34
+      total: 1755209
       percent: 0
     '2015':
       count: 30
+      total: 1817078
       percent: 0
 '04015':
   name: Mohave County
   employment:
     '2006':
       count: 46
+      total: 54758
       percent: 0.08
     '2007':
       count: 50
+      total: 53104
       percent: 0.09
     '2009':
       count: 53
+      total: 45934
       percent: 0.12
     '2015':
       count: 79
+      total: 46839
       percent: 0.17
 '04017':
   name: Navajo County
   employment:
     '2006':
       count: 121
+      total: 28339
       percent: 0.43
     '2007':
       count: 126
+      total: 28742
       percent: 0.44
     '2012':
       count: 108
+      total: 26309
       percent: 0.41
     '2013':
       count: 96
+      total: 26370
       percent: 0.36
     '2014':
       count: 92
+      total: 26740
       percent: 0.34
     '2015':
       count: 65
+      total: 26722
       percent: 0.24
 04019:
   name: Pima County
   employment:
     '2006':
       count: 131
+      total: 367667
       percent: 0.04
     '2007':
       count: 143
+      total: 373728
       percent: 0.04
     '2008':
       count: 138
+      total: 369485
       percent: 0.04
 '04021':
   name: Pinal County
   employment:
     '2006':
       count: 949
+      total: 48523
       percent: 1.96
     '2007':
       count: 1144
+      total: 53283
       percent: 2.15
     '2008':
       count: 1405
+      total: 54947
       percent: 2.56
     '2009':
       count: 1201
+      total: 52104
       percent: 2.31
     '2010':
       count: 1093
+      total: 52171
       percent: 2.1
     '2011':
       count: 1197
+      total: 52854
       percent: 2.26
     '2013':
       count: 1690
+      total: 56850
       percent: 2.97
     '2014':
       count: 1156
+      total: 57421
       percent: 2.01
     '2015':
       count: 1067
+      total: 57552
       percent: 1.85
 '04025':
   name: Yavapai County
   employment:
     '2012':
       count: 104
+      total: 54200
       percent: 0.19
     '2014':
       count: 84
+      total: 57593
       percent: 0.15
     '2015':
       count: 85
+      total: 59769
       percent: 0.14

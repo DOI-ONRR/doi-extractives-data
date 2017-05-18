@@ -3,313 +3,401 @@
   employment:
     '2013':
       count: 17
+      total: 4366
       percent: 0.39
     '2014':
       count: 10
+      total: 4532
       percent: 0.22
 '30025':
   name: Fallon County
   employment:
     '2006':
       count: 118
+      total: 1304
       percent: 9.05
     '2008':
       count: 116
+      total: 1352
       percent: 8.58
     '2010':
       count: 98
+      total: 1459
       percent: 6.72
 '30029':
   name: Flathead County
   employment:
     '2006':
       count: 249
+      total: 39633
       percent: 0.63
     '2007':
       count: 271
+      total: 41411
       percent: 0.65
     '2008':
       count: 268
+      total: 41228
       percent: 0.65
     '2009':
       count: 187
+      total: 37395
       percent: 0.5
     '2010':
       count: 259
+      total: 37035
       percent: 0.7
     '2011':
       count: 254
+      total: 37433
       percent: 0.68
     '2012':
       count: 245
+      total: 37832
       percent: 0.65
     '2013':
       count: 5
+      total: 38928
       percent: 0.01
     '2014':
       count: 7
+      total: 39157
       percent: 0.02
     '2015':
       count: 7
+      total: 40689
       percent: 0.02
 '30031':
   name: Gallatin County
   employment:
     '2006':
       count: 190
+      total: 44248
       percent: 0.43
     '2007':
       count: 214
+      total: 45732
       percent: 0.47
     '2008':
       count: 190
+      total: 45837
       percent: 0.41
     '2009':
       count: 135
+      total: 42697
       percent: 0.32
     '2010':
       count: 139
+      total: 42482
       percent: 0.33
     '2011':
       count: 150
+      total: 43663
       percent: 0.34
     '2014':
       count: 175
+      total: 49364
       percent: 0.35
     '2015':
       count: 174
+      total: 52059
       percent: 0.33
 '30035':
   name: Glacier County
   employment:
     '2006':
       count: 66
+      total: 4607
       percent: 1.43
     '2007':
       count: 89
+      total: 4437
       percent: 2.01
     '2008':
       count: 90
+      total: 4415
       percent: 2.04
     '2009':
       count: 84
+      total: 4378
       percent: 1.92
     '2010':
       count: 82
+      total: 4463
       percent: 1.84
     '2011':
       count: 84
+      total: 4215
       percent: 1.99
     '2012':
       count: 82
+      total: 4535
       percent: 1.81
     '2013':
       count: 82
+      total: 4535
       percent: 1.81
     '2014':
       count: 70
+      total: 4151
       percent: 1.69
     '2015':
       count: 58
+      total: 4166
       percent: 1.39
 '30041':
   name: Hill County
   employment:
     '2008':
       count: 69
+      total: 6805
       percent: 1.01
 '30049':
   name: Lewis and Clark County
   employment:
     '2008':
       count: 41
+      total: 34687
       percent: 0.12
 '30053':
   name: Lincoln County
   employment:
     '2010':
       count: 16
+      total: 5285
       percent: 0.3
     '2011':
       count: 17
+      total: 5155
       percent: 0.33
 '30057':
   name: Madison County
   employment:
     '2012':
       count: 18
+      total: 3384
       percent: 0.53
     '2013':
       count: 84
+      total: 3540
       percent: 2.37
     '2014':
       count: 82
+      total: 3631
       percent: 2.26
 '30063':
   name: Missoula County
   employment:
     '2007':
       count: 11
+      total: 55497
       percent: 0.02
     '2013':
       count: 13
+      total: 55664
       percent: 0.02
 '30067':
   name: Park County
   employment:
     '2006':
       count: 7
+      total: 5941
       percent: 0.12
     '2007':
       count: 7
+      total: 5848
       percent: 0.12
 '30073':
   name: Pondera County
   employment:
     '2007':
       count: 12
+      total: 1913
       percent: 0.63
     '2009':
       count: 13
+      total: 1721
       percent: 0.76
     '2011':
       count: 12
+      total: 1707
       percent: 0.7
     '2012':
       count: 13
+      total: 1750
       percent: 0.74
     '2013':
       count: 13
+      total: 1742
       percent: 0.75
     '2014':
       count: 14
+      total: 1688
       percent: 0.83
 '30083':
   name: Richland County
   employment:
     '2010':
       count: 80
+      total: 5291
       percent: 1.51
     '2011':
       count: 100
+      total: 5760
       percent: 1.74
     '2012':
       count: 122
+      total: 6321
       percent: 1.93
     '2013':
       count: 196
+      total: 6704
       percent: 2.92
     '2014':
       count: 317
+      total: 6914
       percent: 4.58
     '2015':
       count: 338
+      total: 6329
       percent: 5.34
 '30089':
   name: Sanders County
   employment:
     '2006':
       count: 46
+      total: 3259
       percent: 1.41
     '2007':
       count: 55
+      total: 3250
       percent: 1.69
     '2008':
       count: 47
+      total: 3115
       percent: 1.51
     '2009':
       count: 24
+      total: 2818
       percent: 0.85
     '2010':
       count: 36
+      total: 2747
       percent: 1.31
     '2011':
       count: 41
+      total: 2655
       percent: 1.54
     '2012':
       count: 44
+      total: 2643
       percent: 1.66
     '2013':
       count: 38
+      total: 2648
       percent: 1.44
 '30095':
   name: Stillwater County
   employment:
     '2010':
       count: 10
+      total: 2999
       percent: 0.33
     '2011':
       count: 18
+      total: 3105
       percent: 0.58
     '2012':
       count: 17
+      total: 3239
       percent: 0.52
     '2013':
       count: 14
+      total: 3371
       percent: 0.42
 '30101':
   name: Toole County
   employment:
     '2006':
       count: 97
+      total: 2058
       percent: 4.71
     '2007':
       count: 96
+      total: 2047
       percent: 4.69
     '2008':
       count: 103
+      total: 2154
       percent: 4.78
     '2009':
       count: 107
+      total: 2086
       percent: 5.13
     '2010':
       count: 114
+      total: 2053
       percent: 5.55
     '2011':
       count: 115
+      total: 2032
       percent: 5.66
     '2012':
       count: 108
+      total: 2160
       percent: 5
     '2013':
       count: 108
+      total: 2070
       percent: 5.22
     '2014':
       count: 100
+      total: 2031
       percent: 4.92
     '2015':
       count: 88
+      total: 1979
       percent: 4.45
 '30111':
   name: Yellowstone County
   employment:
     '2006':
       count: 117
+      total: 73951
       percent: 0.16
     '2007':
       count: 138
+      total: 76707
       percent: 0.18
     '2008':
       count: 54
+      total: 77796
       percent: 0.07
     '2009':
       count: 60
+      total: 76125
       percent: 0.08
     '2010':
       count: 71
+      total: 75456
       percent: 0.09
     '2011':
       count: 116
+      total: 76504
       percent: 0.15
     '2012':
       count: 143
+      total: 77744
       percent: 0.18
     '2013':
       count: 173
+      total: 77808
       percent: 0.22
     '2014':
       count: 184
+      total: 78530
       percent: 0.23
     '2015':
       count: 231
+      total: 80568
       percent: 0.29

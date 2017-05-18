@@ -3,139 +3,177 @@
   employment:
     '2007':
       count: 145
+      total: 12203
       percent: 1.19
     '2009':
       count: 121
+      total: 11471
       percent: 1.05
     '2010':
       count: 122
+      total: 11041
       percent: 1.1
     '2011':
       count: 126
+      total: 11015
       percent: 1.14
     '2012':
       count: 130
+      total: 10784
       percent: 1.21
     '2013':
       count: 119
+      total: 10776
       percent: 1.1
 '28029':
   name: Copiah County
   employment:
     '2007':
       count: 106
+      total: 7776
       percent: 1.36
     '2013':
       count: 67
+      total: 7070
       percent: 0.95
     '2014':
       count: 66
+      total: 7076
       percent: 0.93
     '2015':
       count: 66
+      total: 7031
       percent: 0.94
 '28033':
   name: DeSoto County
   employment:
     '2010':
       count: 21
+      total: 44427
       percent: 0.05
     '2011':
       count: 22
+      total: 45326
       percent: 0.05
     '2012':
       count: 26
+      total: 47417
       percent: 0.05
     '2013':
       count: 35
+      total: 48563
       percent: 0.07
     '2014':
       count: 29
+      total: 51514
       percent: 0.06
 '28035':
   name: Forrest County
   employment:
     '2007':
       count: 18
+      total: 37132
       percent: 0.05
 '28049':
   name: Hinds County
   employment:
     '2006':
       count: 62
+      total: 128160
       percent: 0.05
     '2015':
       count: 40
+      total: 120435
       percent: 0.03
 '28089':
   name: Madison County
   employment:
     '2006':
       count: 80
+      total: 42551
       percent: 0.19
     '2007':
       count: 91
+      total: 42597
       percent: 0.21
     '2008':
       count: 85
+      total: 42185
       percent: 0.2
     '2009':
       count: 92
+      total: 40740
       percent: 0.23
     '2010':
       count: 118
+      total: 42404
       percent: 0.28
     '2011':
       count: 116
+      total: 44376
       percent: 0.26
     '2012':
       count: 122
+      total: 46635
       percent: 0.26
     '2013':
       count: 121
+      total: 48644
       percent: 0.25
     '2014':
       count: 141
+      total: 50204
       percent: 0.28
     '2015':
       count: 143
+      total: 52401
       percent: 0.27
 '28121':
   name: Rankin County
   employment:
     '2006':
       count: 62
+      total: 54827
       percent: 0.11
     '2007':
       count: 64
+      total: 56492
       percent: 0.11
     '2011':
       count: 62
+      total: 54455
       percent: 0.11
     '2012':
       count: 60
+      total: 55848
       percent: 0.11
     '2013':
       count: 58
+      total: 56765
       percent: 0.1
 '28139':
   name: Tippah County
   employment:
     '2006':
       count: 164
+      total: 7221
       percent: 2.27
     '2007':
       count: 61
+      total: 7102
       percent: 0.86
     '2008':
       count: 54
+      total: 6340
       percent: 0.85
 '28153':
   name: Wayne County
   employment:
     '2014':
       count: 3
+      total: 4941
       percent: 0.06
     '2015':
       count: 3
+      total: 4866
       percent: 0.06

@@ -3,352 +3,449 @@
   employment:
     '2015':
       count: 191
+      total: 21616
       percent: 0.88
 '55009':
   name: Brown County
   employment:
     '2006':
       count: 126
+      total: 147922
       percent: 0.09
     '2007':
       count: 115
+      total: 149779
       percent: 0.08
     '2008':
       count: 104
+      total: 148409
       percent: 0.07
     '2009':
       count: 98
+      total: 143386
       percent: 0.07
     '2010':
       count: 83
+      total: 143456
       percent: 0.06
     '2011':
       count: 84
+      total: 144973
       percent: 0.06
     '2012':
       count: 85
+      total: 146976
       percent: 0.06
     '2013':
       count: 77
+      total: 147903
       percent: 0.05
     '2014':
       count: 80
+      total: 148779
       percent: 0.05
     '2015':
       count: 66
+      total: 151715
       percent: 0.04
 '55015':
   name: Calumet County
   employment:
     '2015':
       count: 165
+      total: 13477
       percent: 1.22
 '55017':
   name: Chippewa County
   employment:
     '2014':
       count: 273
+      total: 23514
       percent: 1.16
     '2015':
       count: 294
+      total: 24080
       percent: 1.22
 '55025':
   name: Dane County
   employment:
     '2006':
       count: 232
+      total: 298545
       percent: 0.08
     '2007':
       count: 208
+      total: 303686
       percent: 0.07
     '2008':
       count: 181
+      total: 303992
       percent: 0.06
     '2009':
       count: 183
+      total: 294252
       percent: 0.06
     '2010':
       count: 159
+      total: 295075
       percent: 0.05
     '2011':
       count: 160
+      total: 299527
       percent: 0.05
     '2012':
       count: 160
+      total: 305382
       percent: 0.05
 '55039':
   name: Fond Du Lac County
   employment:
     '2006':
       count: 270
+      total: 45687
       percent: 0.59
     '2007':
       count: 251
+      total: 45992
       percent: 0.55
     '2008':
       count: 344
+      total: 45928
       percent: 0.75
     '2009':
       count: 297
+      total: 42939
       percent: 0.69
     '2010':
       count: 255
+      total: 42941
       percent: 0.59
     '2011':
       count: 263
+      total: 43520
       percent: 0.6
     '2012':
       count: 261
+      total: 44073
       percent: 0.59
     '2013':
       count: 245
+      total: 45295
       percent: 0.54
     '2014':
       count: 269
+      total: 45738
       percent: 0.59
     '2015':
       count: 152
+      total: 46042
       percent: 0.33
 '55045':
   name: Green County
   employment:
     '2006':
       count: 12
+      total: 15115
       percent: 0.08
 '55047':
   name: Green Lake County
   employment:
     '2006':
       count: 64
+      total: 7014
       percent: 0.91
     '2007':
       count: 56
+      total: 7081
       percent: 0.79
     '2008':
       count: 54
+      total: 6895
       percent: 0.78
     '2009':
       count: 46
+      total: 6429
       percent: 0.72
     '2010':
       count: 44
+      total: 6392
       percent: 0.69
 '55053':
   name: Jackson County
   employment:
     '2015':
       count: 192
+      total: 8676
       percent: 2.21
 '55061':
   name: Kewaunee County
   employment:
     '2007':
       count: 6
+      total: 7279
       percent: 0.08
 '55071':
   name: Manitowoc County
   employment:
     '2006':
       count: 86
+      total: 34915
       percent: 0.25
     '2007':
       count: 50
+      total: 35126
       percent: 0.14
     '2008':
       count: 48
+      total: 35922
       percent: 0.13
     '2009':
       count: 49
+      total: 34027
       percent: 0.14
     '2010':
       count: 53
+      total: 33371
       percent: 0.16
     '2011':
       count: 49
+      total: 33781
       percent: 0.15
 '55073':
   name: Marathon County
   employment:
     '2006':
       count: 83
+      total: 70652
       percent: 0.12
     '2007':
       count: 84
+      total: 71108
       percent: 0.12
     '2008':
       count: 78
+      total: 70045
       percent: 0.11
     '2009':
       count: 46
+      total: 65917
       percent: 0.07
     '2010':
       count: 29
+      total: 64645
       percent: 0.04
     '2011':
       count: 25
+      total: 64940
       percent: 0.04
     '2012':
       count: 29
+      total: 65125
       percent: 0.04
     '2013':
       count: 78
+      total: 66116
       percent: 0.12
     '2014':
       count: 98
+      total: 68863
       percent: 0.14
     '2015':
       count: 93
+      total: 70120
       percent: 0.13
 '55079':
   name: Milwaukee County
   employment:
     '2012':
       count: 31
+      total: 469596
       percent: 0.01
     '2013':
       count: 28
+      total: 474858
       percent: 0.01
     '2014':
       count: 25
+      total: 476971
       percent: 0.01
     '2015':
       count: 36
+      total: 482043
       percent: 0.01
 '55083':
   name: Oconto County
   employment:
     '2007':
       count: 23
+      total: 9163
       percent: 0.25
     '2008':
       count: 19
+      total: 9243
       percent: 0.21
     '2009':
       count: 17
+      total: 8626
       percent: 0.2
     '2010':
       count: 11
+      total: 8619
       percent: 0.13
     '2011':
       count: 12
+      total: 8423
       percent: 0.14
     '2013':
       count: 9
+      total: 8611
       percent: 0.1
 '55095':
   name: Polk County
   employment:
     '2014':
       count: 60
+      total: 15631
       percent: 0.38
     '2015':
       count: 72
+      total: 15970
       percent: 0.45
 '55101':
   name: Racine County
   employment:
     '2006':
       count: 44
+      total: 76095
       percent: 0.06
     '2007':
       count: 41
+      total: 75902
       percent: 0.05
     '2008':
       count: 31
+      total: 75492
       percent: 0.04
     '2010':
       count: 32
+      total: 71081
       percent: 0.05
     '2011':
       count: 35
+      total: 72338
       percent: 0.05
     '2012':
       count: 34
+      total: 73473
       percent: 0.05
     '2013':
       count: 27
+      total: 72412
       percent: 0.04
     '2014':
       count: 25
+      total: 73358
       percent: 0.03
     '2015':
       count: 26
+      total: 73727
       percent: 0.04
 '55105':
   name: Rock County
   employment:
     '2006':
       count: 114
+      total: 68144
       percent: 0.17
     '2007':
       count: 117
+      total: 67643
       percent: 0.17
     '2008':
       count: 109
+      total: 65402
       percent: 0.17
     '2009':
       count: 105
+      total: 58968
       percent: 0.18
 '55109':
   name: St. Croix County
   employment:
     '2012':
       count: 11
+      total: 30116
       percent: 0.04
     '2013':
       count: 6
+      total: 31305
       percent: 0.02
     '2014':
       count: 3
+      total: 32088
       percent: 0.01
 '55131':
   name: Washington County
   employment:
     '2006':
       count: 84
+      total: 52373
       percent: 0.16
     '2007':
       count: 79
+      total: 53101
       percent: 0.15
     '2008':
       count: 60
+      total: 52308
       percent: 0.11
     '2009':
       count: 57
+      total: 49226
       percent: 0.12
 '55133':
   name: Waukesha County
   employment:
     '2010':
       count: 225
+      total: 218776
       percent: 0.1
     '2011':
       count: 219
+      total: 223494
       percent: 0.1
     '2012':
       count: 241
+      total: 226993
       percent: 0.11
     '2013':
       count: 247
+      total: 229375
       percent: 0.11
     '2014':
       count: 254
+      total: 231283
       percent: 0.11
     '2015':
       count: 280
+      total: 235655
       percent: 0.12
 '55135':
   name: Waupaca County
   employment:
     '2009':
       count: 9
+      total: 19586
       percent: 0.05
     '2010':
       count: 6
+      total: 19739
       percent: 0.03
     '2011':
       count: 5
+      total: 19876
       percent: 0.03
     '2012':
       count: 5
+      total: 19883
       percent: 0.03

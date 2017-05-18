@@ -3,82 +3,105 @@
   employment:
     '2006':
       count: 12
+      total: 15390
       percent: 0.08
     '2007':
       count: 12
+      total: 15925
       percent: 0.08
     '2008':
       count: 12
+      total: 15738
       percent: 0.08
     '2009':
       count: 13
+      total: 14919
       percent: 0.09
     '2010':
       count: 13
+      total: 14916
       percent: 0.09
     '2011':
       count: 14
+      total: 15524
       percent: 0.09
     '2012':
       count: 14
+      total: 15969
       percent: 0.09
     '2013':
       count: 12
+      total: 15964
       percent: 0.08
     '2014':
       count: 11
+      total: 15942
       percent: 0.07
 '46033':
   name: Custer County
   employment:
     '2006':
       count: 43
+      total: 2505
       percent: 1.72
     '2007':
       count: 41
+      total: 2437
       percent: 1.68
     '2008':
       count: 53
+      total: 2573
       percent: 2.06
     '2009':
       count: 43
+      total: 2624
       percent: 1.64
 '46051':
   name: Grant County
   employment:
     '2010':
       count: 40
+      total: 3777
       percent: 1.06
     '2011':
       count: 40
+      total: 3662
       percent: 1.09
     '2012':
       count: 38
+      total: 3612
       percent: 1.05
     '2013':
       count: 31
+      total: 3793
       percent: 0.82
     '2014':
       count: 28
+      total: 3901
       percent: 0.72
     '2015':
       count: 27
+      total: 3997
       percent: 0.68
 '46081':
   name: Lawrence County
   employment:
     '2007':
       count: 167
+      total: 11493
       percent: 1.45
 '46103':
   name: Pennington County
   employment:
     '2012':
       count: 32
+      total: 53678
       percent: 0.06
     '2014':
       count: 22
+      total: 55435
       percent: 0.04
     '2015':
       count: 18
+      total: 55556
       percent: 0.03

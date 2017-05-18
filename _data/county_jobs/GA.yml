@@ -3,319 +3,405 @@
   employment:
     '2008':
       count: 145
+      total: 84610
       percent: 0.17
     '2010':
       count: 163
+      total: 78924
       percent: 0.21
 '13067':
   name: Cobb County
   employment:
     '2009':
       count: 64
+      total: 297910
       percent: 0.02
 '13087':
   name: Decatur County
   employment:
     '2006':
       count: 320
+      total: 10237
       percent: 3.13
     '2007':
       count: 315
+      total: 9878
       percent: 3.19
     '2008':
       count: 168
+      total: 9965
       percent: 1.69
 '13089':
   name: DeKalb County
   employment:
     '2007':
       count: 154
+      total: 297698
       percent: 0.05
     '2011':
       count: 89
+      total: 275281
       percent: 0.03
     '2012':
       count: 81
+      total: 276278
       percent: 0.03
     '2013':
       count: 63
+      total: 275237
       percent: 0.02
 '13105':
   name: Elbert County
   employment:
     '2006':
       count: 189
+      total: 6967
       percent: 2.71
     '2009':
       count: 161
+      total: 6527
       percent: 2.47
     '2010':
       count: 153
+      total: 5987
       percent: 2.56
     '2011':
       count: 145
+      total: 5726
       percent: 2.53
     '2012':
       count: 178
+      total: 5738
       percent: 3.1
     '2013':
       count: 179
+      total: 5787
       percent: 3.09
     '2014':
       count: 180
+      total: 5796
       percent: 3.11
     '2015':
       count: 191
+      total: 5624
       percent: 3.4
 '13117':
   name: Forsyth County
   employment:
     '2006':
       count: 63
+      total: 49128
       percent: 0.13
     '2007':
       count: 100
+      total: 56462
       percent: 0.18
     '2008':
       count: 79
+      total: 58331
       percent: 0.14
     '2010':
       count: 49
+      total: 52925
       percent: 0.09
     '2011':
       count: 52
+      total: 55392
       percent: 0.09
     '2012':
       count: 37
+      total: 58181
       percent: 0.06
     '2013':
       count: 44
+      total: 63667
       percent: 0.07
     '2014':
       count: 77
+      total: 66030
       percent: 0.12
     '2015':
       count: 80
+      total: 69173
       percent: 0.12
 '13133':
   name: Greene County
   employment:
     '2008':
       count: 26
+      total: 5655
       percent: 0.46
     '2013':
       count: 17
+      total: 5223
       percent: 0.33
     '2014':
       count: 15
+      total: 5524
       percent: 0.27
     '2015':
       count: 14
+      total: 5707
       percent: 0.25
 '13139':
   name: Hall County
   employment:
     '2006':
       count: 59
+      total: 70695
       percent: 0.08
     '2007':
       count: 63
+      total: 73940
       percent: 0.09
     '2008':
       count: 56
+      total: 74256
       percent: 0.08
     '2009':
       count: 49
+      total: 68564
       percent: 0.07
     '2010':
       count: 46
+      total: 68532
       percent: 0.07
     '2011':
       count: 52
+      total: 70722
       percent: 0.07
     '2012':
       count: 39
+      total: 71283
       percent: 0.05
 '13151':
   name: Henry County
   employment:
     '2006':
       count: 77
+      total: 45422
       percent: 0.17
 '13163':
   name: Jefferson County
   employment:
     '2007':
       count: 371
+      total: 5450
       percent: 6.81
     '2008':
       count: 386
+      total: 5303
       percent: 7.28
     '2009':
       count: 372
+      total: 4936
       percent: 7.54
     '2010':
       count: 338
+      total: 4749
       percent: 7.12
 '13187':
   name: Lumpkin County
   employment:
     '2006':
       count: 20
+      total: 6470
       percent: 0.31
 '13189':
   name: McDuffie County
   employment:
     '2015':
       count: 13
+      total: 6733
       percent: 0.19
 '13215':
   name: Muscogee County
   employment:
     '2006':
       count: 82
+      total: 98098
       percent: 0.08
     '2010':
       count: 77
+      total: 91721
       percent: 0.08
     '2011':
       count: 79
+      total: 93581
       percent: 0.08
     '2012':
       count: 70
+      total: 93855
       percent: 0.07
 '13221':
   name: Oglethorpe County
   employment:
     '2006':
       count: 94
+      total: 1764
       percent: 5.33
     '2007':
       count: 91
+      total: 1764
       percent: 5.16
     '2011':
       count: 111
+      total: 1800
       percent: 6.17
     '2012':
       count: 99
+      total: 1736
       percent: 5.7
     '2013':
       count: 97
+      total: 1798
       percent: 5.39
     '2014':
       count: 91
+      total: 1761
       percent: 5.17
     '2015':
       count: 88
+      total: 1605
       percent: 5.48
 '13227':
   name: Pickens County
   employment:
     '2006':
       count: 233
+      total: 7010
       percent: 3.32
     '2007':
       count: 224
+      total: 7767
       percent: 2.88
     '2008':
       count: 196
+      total: 7861
       percent: 2.49
     '2009':
       count: 187
+      total: 7023
       percent: 2.66
     '2010':
       count: 177
+      total: 6884
       percent: 2.57
     '2011':
       count: 179
+      total: 6969
       percent: 2.57
     '2012':
       count: 152
+      total: 7002
       percent: 2.17
     '2013':
       count: 149
+      total: 6995
       percent: 2.13
     '2014':
       count: 175
+      total: 7220
       percent: 2.42
 '13245':
   name: Richmond County
   employment:
     '2006':
       count: 126
+      total: 103938
       percent: 0.12
     '2013':
       count: 91
+      total: 99596
       percent: 0.09
 '13263':
   name: Talbot County
   employment:
     '2011':
       count: 106
+      total: 822
       percent: 12.9
     '2012':
       count: 104
+      total: 814
       percent: 12.78
     '2013':
       count: 90
+      total: 785
       percent: 11.46
     '2014':
       count: 85
+      total: 773
       percent: 11
     '2015':
       count: 83
+      total: 703
       percent: 11.81
 '13275':
   name: Thomas County
   employment:
     '2006':
       count: 311
+      total: 23822
       percent: 1.31
     '2007':
       count: 326
+      total: 23089
       percent: 1.41
     '2008':
       count: 322
+      total: 21536
       percent: 1.5
 '13301':
   name: Warren County
   employment:
     '2012':
       count: 45
+      total: 1099
       percent: 4.09
 '13313':
   name: Whitfield County
   employment:
     '2006':
       count: 120
+      total: 64113
       percent: 0.19
     '2007':
       count: 120
+      total: 62761
       percent: 0.19
     '2009':
       count: 73
+      total: 53037
       percent: 0.14
     '2010':
       count: 70
+      total: 52842
       percent: 0.13
     '2011':
       count: 69
+      total: 53309
       percent: 0.13
     '2012':
       count: 65
+      total: 51747
       percent: 0.13
     '2013':
       count: 72
+      total: 52282
       percent: 0.14
     '2014':
       count: 67
+      total: 54093
       percent: 0.12
     '2015':
       count: 55
+      total: 55003
       percent: 0.1
 '13319':
   name: Wilkinson County
   employment:
     '2011':
       count: 982
+      total: 2893
       percent: 33.94

@@ -3,151 +3,192 @@
   employment:
     '2008':
       count: 78
+      total: 209207
       percent: 0.04
     '2011':
       count: 48
+      total: 194701
       percent: 0.02
     '2012':
       count: 39
+      total: 198957
       percent: 0.02
     '2013':
       count: 58
+      total: 205433
       percent: 0.03
 '16017':
   name: Bonner County
   employment:
     '2008':
       count: 101
+      total: 14120
       percent: 0.72
     '2009':
       count: 106
+      total: 13355
       percent: 0.79
     '2010':
       count: 102
+      total: 12888
       percent: 0.79
 '16027':
   name: Canyon County
   employment:
     '2006':
       count: 56
+      total: 55121
       percent: 0.1
     '2007':
       count: 57
+      total: 57120
       percent: 0.1
     '2009':
       count: 35
+      total: 51145
       percent: 0.07
     '2010':
       count: 21
+      total: 51023
       percent: 0.04
     '2011':
       count: 20
+      total: 50860
       percent: 0.04
     '2012':
       count: 19
+      total: 52257
       percent: 0.04
     '2013':
       count: 22
+      total: 54319
       percent: 0.04
 '16031':
   name: Cassia County
   employment:
     '2006':
       count: 176
+      total: 9208
       percent: 1.91
     '2007':
       count: 144
+      total: 9547
       percent: 1.51
     '2008':
       count: 138
+      total: 9757
       percent: 1.41
     '2009':
       count: 99
+      total: 9691
       percent: 1.02
     '2010':
       count: 92
+      total: 9806
       percent: 0.94
     '2012':
       count: 99
+      total: 9949
       percent: 1
     '2013':
       count: 113
+      total: 10391
       percent: 1.09
     '2014':
       count: 124
+      total: 10532
       percent: 1.18
     '2015':
       count: 134
+      total: 10664
       percent: 1.26
 '16041':
   name: Franklin County
   employment:
     '2009':
       count: 44
+      total: 3065
       percent: 1.44
     '2010':
       count: 45
+      total: 3023
       percent: 1.49
 '16049':
   name: Idaho County
   employment:
     '2008':
       count: 81
+      total: 4524
       percent: 1.79
     '2009':
       count: 63
+      total: 4237
       percent: 1.49
     '2012':
       count: 56
+      total: 4185
       percent: 1.34
     '2013':
       count: 58
+      total: 4217
       percent: 1.38
     '2014':
       count: 57
+      total: 4295
       percent: 1.33
 '16055':
   name: Kootenai County
   employment:
     '2006':
       count: 43
+      total: 54553
       percent: 0.08
 '16079':
   name: Shoshone County
   employment:
     '2006':
       count: 389
+      total: 4462
       percent: 8.72
     '2007':
       count: 541
+      total: 4769
       percent: 11.34
     '2011':
       count: 602
+      total: 4502
       percent: 13.37
     '2013':
       count: 683
+      total: 4654
       percent: 14.68
     '2014':
       count: 624
+      total: 4507
       percent: 13.85
     '2015':
       count: 615
+      total: 4590
       percent: 13.4
 '16083':
   name: Twin Falls County
   employment:
     '2007':
       count: 39
+      total: 34480
       percent: 0.11
     '2008':
       count: 41
+      total: 34730
       percent: 0.12
     '2009':
       count: 16
+      total: 33134
       percent: 0.05
 '16085':
   name: Valley County
   employment:
     '2006':
       count: 9
+      total: 4745
       percent: 0.19

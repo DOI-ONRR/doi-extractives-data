@@ -3,277 +3,353 @@
   employment:
     '2011':
       count: 38
+      total: 49729
       percent: 0.08
 '51007':
   name: Amelia County
   employment:
     '2006':
       count: 21
+      total: 2982
       percent: 0.7
 '51015':
   name: Augusta County
   employment:
     '2006':
       count: 47
+      total: 25966
       percent: 0.18
     '2007':
       count: 45
+      total: 25772
       percent: 0.17
     '2008':
       count: 45
+      total: 25780
       percent: 0.17
     '2009':
       count: 47
+      total: 24980
       percent: 0.19
     '2010':
       count: 48
+      total: 24592
       percent: 0.2
     '2012':
       count: 35
+      total: 24770
       percent: 0.14
     '2013':
       count: 29
+      total: 25351
       percent: 0.11
     '2014':
       count: 29
+      total: 25753
       percent: 0.11
     '2015':
       count: 28
+      total: 26267
       percent: 0.11
 '51027':
   name: Buchanan County
   employment:
     '2006':
       count: 1298
+      total: 7526
       percent: 17.25
     '2007':
       count: 1236
+      total: 7886
       percent: 15.67
     '2008':
       count: 1401
+      total: 8071
       percent: 17.36
     '2009':
       count: 1372
+      total: 7743
       percent: 17.72
     '2010':
       count: 1597
+      total: 7977
       percent: 20.02
     '2011':
       count: 1690
+      total: 8270
       percent: 20.44
     '2012':
       count: 1727
+      total: 8392
       percent: 20.58
     '2013':
       count: 1420
+      total: 7689
       percent: 18.47
     '2014':
       count: 1271
+      total: 7344
       percent: 17.31
     '2015':
       count: 1012
+      total: 6872
       percent: 14.73
 '51036':
   name: Charles City County
   employment:
     '2006':
       count: 28
+      total: 1659
       percent: 1.69
     '2007':
       count: 32
+      total: 1635
       percent: 1.96
     '2012':
       count: 16
+      total: 1506
       percent: 1.06
     '2013':
       count: 21
+      total: 1513
       percent: 1.39
 '51047':
   name: Culpeper County
   employment:
     '2006':
       count: 94
+      total: 15011
       percent: 0.63
     '2007':
       count: 93
+      total: 15184
       percent: 0.61
     '2008':
       count: 79
+      total: 15399
       percent: 0.51
     '2009':
       count: 63
+      total: 14704
       percent: 0.43
     '2010':
       count: 64
+      total: 14499
       percent: 0.44
     '2011':
       count: 61
+      total: 14546
       percent: 0.42
     '2012':
       count: 58
+      total: 15006
       percent: 0.39
     '2013':
       count: 64
+      total: 15446
       percent: 0.41
     '2014':
       count: 56
+      total: 15337
       percent: 0.37
     '2015':
       count: 66
+      total: 15575
       percent: 0.42
 '51051':
   name: Dickenson County
   employment:
     '2009':
       count: 785
+      total: 3669
       percent: 21.4
     '2010':
       count: 804
+      total: 3813
       percent: 21.09
     '2011':
       count: 780
+      total: 3715
       percent: 21
 '51059':
   name: Fairfax County
   employment:
     '2008':
       count: 57
+      total: 585727
       percent: 0.01
 '51075':
   name: Goochland County
   employment:
     '2008':
       count: 69
+      total: 10783
       percent: 0.64
 '51085':
   name: Hanover County
   employment:
     '2010':
       count: 97
+      total: 44335
       percent: 0.22
 '51101':
   name: King William County
   employment:
     '2013':
       count: 49
+      total: 3414
       percent: 1.44
     '2014':
       count: 53
+      total: 3479
       percent: 1.52
     '2015':
       count: 59
+      total: 3677
       percent: 1.6
 '51105':
   name: Lee County
   employment:
     '2006':
       count: 236
+      total: 5323
       percent: 4.43
     '2009':
       count: 231
+      total: 5399
       percent: 4.28
     '2010':
       count: 227
+      total: 5304
       percent: 4.28
     '2011':
       count: 285
+      total: 5306
       percent: 5.37
 '51167':
   name: Russell County
   employment:
     '2006':
       count: 415
+      total: 7883
       percent: 5.26
 '51185':
   name: Tazewell County
   employment:
     '2006':
       count: 201
+      total: 17295
       percent: 1.16
     '2007':
       count: 295
+      total: 17648
       percent: 1.67
     '2008':
       count: 107
+      total: 17779
       percent: 0.6
     '2009':
       count: 114
+      total: 17151
       percent: 0.66
     '2010':
       count: 121
+      total: 16699
       percent: 0.72
     '2011':
       count: 287
+      total: 16533
       percent: 1.74
     '2012':
       count: 472
+      total: 16300
       percent: 2.9
     '2013':
       count: 539
+      total: 15886
       percent: 3.39
     '2014':
       count: 500
+      total: 15565
       percent: 3.21
     '2015':
       count: 92
+      total: 15355
       percent: 0.6
 '51191':
   name: Washington County
   employment:
     '2006':
       count: 31
+      total: 20199
       percent: 0.15
     '2007':
       count: 46
+      total: 20149
       percent: 0.23
     '2008':
       count: 64
+      total: 20294
       percent: 0.32
     '2010':
       count: 80
+      total: 19417
       percent: 0.41
     '2011':
       count: 90
+      total: 19821
       percent: 0.45
     '2012':
       count: 90
+      total: 20063
       percent: 0.45
     '2013':
       count: 88
+      total: 20559
       percent: 0.43
     '2014':
       count: 90
+      total: 20390
       percent: 0.44
     '2015':
       count: 88
+      total: 20431
       percent: 0.43
 '51195':
   name: Wise County
   employment:
     '2008':
       count: 1251
+      total: 14493
       percent: 8.63
     '2009':
       count: 1213
+      total: 15060
       percent: 8.05
     '2010':
       count: 1255
+      total: 15444
       percent: 8.13
     '2011':
       count: 1418
+      total: 15893
       percent: 8.92
     '2012':
       count: 1294
+      total: 14288
       percent: 9.06
     '2013':
       count: 938
+      total: 13117
       percent: 7.15
     '2014':
       count: 690
+      total: 12449
       percent: 5.54
 '51800':
   name: Suffolk City
   employment:
     '2012':
       count: 11
+      total: 26673
       percent: 0.04

@@ -3,673 +3,865 @@
   employment:
     '2006':
       count: 241
+      total: 33700
       percent: 0.72
     '2007':
       count: 237
+      total: 33397
       percent: 0.71
     '2008':
       count: 228
+      total: 33865
       percent: 0.67
     '2012':
       count: 172
+      total: 32906
       percent: 0.52
     '2013':
       count: 190
+      total: 32667
       percent: 0.58
     '2014':
       count: 203
+      total: 32711
       percent: 0.62
     '2015':
       count: 220
+      total: 32569
       percent: 0.68
 '17011':
   name: Bureau County
   employment:
     '2012':
       count: 32
+      total: 11961
       percent: 0.27
     '2013':
       count: 34
+      total: 11945
       percent: 0.28
     '2014':
       count: 43
+      total: 11848
       percent: 0.36
     '2015':
       count: 26
+      total: 11393
       percent: 0.23
 '17023':
   name: Clark County
   employment:
     '2006':
       count: 62
+      total: 5033
       percent: 1.23
     '2007':
       count: 61
+      total: 4944
       percent: 1.23
     '2008':
       count: 59
+      total: 4752
       percent: 1.24
     '2009':
       count: 44
+      total: 4192
       percent: 1.05
     '2012':
       count: 18
+      total: 4318
       percent: 0.42
     '2013':
       count: 57
+      total: 4487
       percent: 1.27
     '2014':
       count: 62
+      total: 4621
       percent: 1.34
     '2015':
       count: 63
+      total: 4773
       percent: 1.32
 '17025':
   name: Clay County
   employment:
     '2006':
       count: 96
+      total: 5576
       percent: 1.72
     '2007':
       count: 102
+      total: 5489
       percent: 1.86
     '2008':
       count: 108
+      total: 5368
       percent: 2.01
     '2009':
       count: 91
+      total: 4837
       percent: 1.88
     '2010':
       count: 63
+      total: 4846
       percent: 1.3
     '2011':
       count: 40
+      total: 4876
       percent: 0.82
     '2012':
       count: 42
+      total: 4948
       percent: 0.85
     '2013':
       count: 39
+      total: 4896
       percent: 0.8
     '2014':
       count: 38
+      total: 5084
       percent: 0.75
     '2015':
       count: 35
+      total: 5235
       percent: 0.67
 '17029':
   name: Coles County
   employment:
     '2006':
       count: 28
+      total: 26078
       percent: 0.11
     '2007':
       count: 25
+      total: 25842
       percent: 0.1
     '2013':
       count: 4
+      total: 22772
       percent: 0.02
     '2014':
       count: 4
+      total: 23581
       percent: 0.02
 '17031':
   name: Cook County
   employment:
     '2011':
       count: 6
+      total: 2377242
       percent: 0
     '2012':
       count: 8
+      total: 2405633
       percent: 0
     '2013':
       count: 13
+      total: 2426450
       percent: 0
     '2014':
       count: 12
+      total: 2468453
       percent: 0
     '2015':
       count: 14
+      total: 2531066
       percent: 0
 '17037':
   name: DeKalb County
   employment:
     '2006':
       count: 86
+      total: 36217
       percent: 0.24
     '2007':
       count: 67
+      total: 36953
       percent: 0.18
     '2008':
       count: 49
+      total: 37783
       percent: 0.13
     '2009':
       count: 35
+      total: 35261
       percent: 0.1
     '2010':
       count: 27
+      total: 34973
       percent: 0.08
 '17043':
   name: DuPage County
   employment:
     '2006':
       count: 43
+      total: 592977
       percent: 0.01
 '17051':
   name: Fayette County
   employment:
     '2006':
       count: 80
+      total: 6191
       percent: 1.29
     '2007':
       count: 83
+      total: 6128
       percent: 1.35
     '2008':
       count: 93
+      total: 6129
       percent: 1.52
     '2009':
       count: 111
+      total: 5951
       percent: 1.87
     '2010':
       count: 145
+      total: 5947
       percent: 2.44
     '2011':
       count: 170
+      total: 6061
       percent: 2.8
     '2012':
       count: 197
+      total: 5923
       percent: 3.33
 '17055':
   name: Franklin County
   employment:
     '2008':
       count: 9
+      total: 9239
       percent: 0.1
     '2009':
       count: 8
+      total: 8824
       percent: 0.09
     '2010':
       count: 19
+      total: 8986
       percent: 0.21
     '2011':
       count: 17
+      total: 8954
       percent: 0.19
     '2012':
       count: 19
+      total: 8896
       percent: 0.21
     '2015':
       count: 14
+      total: 8193
       percent: 0.17
 '17069':
   name: Hardin County
   employment:
     '2009':
       count: 88
+      total: 911
       percent: 9.66
     '2010':
       count: 94
+      total: 914
       percent: 10.28
     '2011':
       count: 104
+      total: 899
       percent: 11.57
 '17079':
   name: Jasper County
   employment:
     '2014':
       count: 17
+      total: 2039
       percent: 0.83
     '2015':
       count: 14
+      total: 2020
       percent: 0.69
 '17081':
   name: Jefferson County
   employment:
     '2006':
       count: 72
+      total: 19000
       percent: 0.38
     '2007':
       count: 72
+      total: 19492
       percent: 0.37
     '2008':
       count: 80
+      total: 19339
       percent: 0.41
     '2009':
       count: 78
+      total: 18406
       percent: 0.42
     '2010':
       count: 83
+      total: 18292
       percent: 0.45
     '2011':
       count: 105
+      total: 18563
       percent: 0.57
     '2012':
       count: 106
+      total: 18681
       percent: 0.57
     '2013':
       count: 78
+      total: 19011
       percent: 0.41
     '2014':
       count: 72
+      total: 19209
       percent: 0.37
     '2015':
       count: 59
+      total: 19059
       percent: 0.31
 '17089':
   name: Kane County
   employment:
     '2006':
       count: 94
+      total: 208153
       percent: 0.05
     '2008':
       count: 118
+      total: 207321
       percent: 0.06
     '2009':
       count: 124
+      total: 193691
       percent: 0.06
     '2010':
       count: 105
+      total: 190039
       percent: 0.06
     '2011':
       count: 106
+      total: 190240
       percent: 0.06
     '2012':
       count: 93
+      total: 195658
       percent: 0.05
     '2013':
       count: 104
+      total: 201309
       percent: 0.05
     '2014':
       count: 114
+      total: 204257
       percent: 0.06
 '17093':
   name: Kendall County
   employment:
     '2006':
       count: 37
+      total: 20811
       percent: 0.18
     '2007':
       count: 30
+      total: 23098
       percent: 0.13
     '2008':
       count: 25
+      total: 24226
       percent: 0.1
     '2009':
       count: 21
+      total: 23093
       percent: 0.09
     '2010':
       count: 19
+      total: 23613
       percent: 0.08
     '2011':
       count: 17
+      total: 24632
       percent: 0.07
     '2012':
       count: 15
+      total: 25296
       percent: 0.06
     '2013':
       count: 14
+      total: 25416
       percent: 0.06
 '17101':
   name: Lawrence County
   employment:
     '2006':
       count: 80
+      total: 4722
       percent: 1.69
     '2007':
       count: 81
+      total: 4561
       percent: 1.78
     '2008':
       count: 93
+      total: 4549
       percent: 2.04
     '2009':
       count: 81
+      total: 4514
       percent: 1.79
     '2010':
       count: 77
+      total: 4427
       percent: 1.74
     '2011':
       count: 94
+      total: 4322
       percent: 2.17
     '2012':
       count: 107
+      total: 4363
       percent: 2.45
     '2013':
       count: 267
+      total: 4305
       percent: 6.2
     '2014':
       count: 290
+      total: 4469
       percent: 6.49
     '2015':
       count: 247
+      total: 4521
       percent: 5.46
 '17103':
   name: Lee County
   employment:
     '2006':
       count: 20
+      total: 13493
       percent: 0.15
 '17111':
   name: McHenry County
   employment:
     '2012':
       count: 46
+      total: 93523
       percent: 0.05
     '2013':
       count: 39
+      total: 93689
       percent: 0.04
     '2014':
       count: 43
+      total: 95798
       percent: 0.04
     '2015':
       count: 40
+      total: 96063
       percent: 0.04
 '17119':
   name: Madison County
   employment:
     '2006':
       count: 86
+      total: 94371
       percent: 0.09
     '2007':
       count: 92
+      total: 95677
       percent: 0.1
     '2008':
       count: 90
+      total: 95930
       percent: 0.09
     '2009':
       count: 93
+      total: 91342
       percent: 0.1
     '2012':
       count: 91
+      total: 94116
       percent: 0.1
     '2013':
       count: 72
+      total: 94646
       percent: 0.08
     '2014':
       count: 75
+      total: 96789
       percent: 0.08
     '2015':
       count: 93
+      total: 97426
       percent: 0.1
 '17121':
   name: Marion County
   employment:
     '2010':
       count: 48
+      total: 12993
       percent: 0.37
     '2011':
       count: 45
+      total: 13099
       percent: 0.34
     '2012':
       count: 44
+      total: 13119
       percent: 0.34
     '2013':
       count: 45
+      total: 12736
       percent: 0.35
     '2014':
       count: 44
+      total: 12887
       percent: 0.34
     '2015':
       count: 35
+      total: 12993
       percent: 0.27
 '17123':
   name: Marshall County
   employment:
     '2009':
       count: 18
+      total: 3169
       percent: 0.57
     '2010':
       count: 21
+      total: 3131
       percent: 0.67
     '2011':
       count: 20
+      total: 3120
       percent: 0.64
     '2012':
       count: 20
+      total: 3134
       percent: 0.64
     '2013':
       count: 16
+      total: 3006
       percent: 0.53
     '2014':
       count: 19
+      total: 3061
       percent: 0.62
     '2015':
       count: 20
+      total: 2919
       percent: 0.69
 '17133':
   name: Monroe County
   employment:
     '2011':
       count: 30
+      total: 8267
       percent: 0.36
     '2012':
       count: 21
+      total: 8352
       percent: 0.25
     '2013':
       count: 17
+      total: 8230
       percent: 0.21
     '2014':
       count: 19
+      total: 8105
       percent: 0.23
 '17135':
   name: Montgomery County
   employment:
     '2009':
       count: 355
+      total: 9297
       percent: 3.82
     '2010':
       count: 391
+      total: 9308
       percent: 4.2
     '2012':
       count: 329
+      total: 9039
       percent: 3.64
     '2013':
       count: 373
+      total: 8914
       percent: 4.18
     '2014':
       count: 276
+      total: 8575
       percent: 3.22
 '17141':
   name: Ogle County
   employment:
     '2007':
       count: 43
+      total: 17161
       percent: 0.25
     '2009':
       count: 39
+      total: 16120
       percent: 0.24
     '2010':
       count: 37
+      total: 16069
       percent: 0.23
 '17143':
   name: Peoria County
   employment:
     '2009':
       count: 59
+      total: 99085
       percent: 0.06
     '2012':
       count: 56
+      total: 102943
       percent: 0.05
     '2013':
       count: 49
+      total: 101441
       percent: 0.05
     '2014':
       count: 44
+      total: 100367
       percent: 0.04
     '2015':
       count: 43
+      total: 101328
       percent: 0.04
 '17159':
   name: Richland County
   employment:
     '2006':
       count: 67
+      total: 6568
       percent: 1.02
     '2007':
       count: 80
+      total: 6647
       percent: 1.2
     '2008':
       count: 82
+      total: 6461
       percent: 1.27
     '2009':
       count: 72
+      total: 6268
       percent: 1.15
     '2010':
       count: 55
+      total: 6223
       percent: 0.88
     '2011':
       count: 63
+      total: 6208
       percent: 1.01
     '2012':
       count: 73
+      total: 6056
       percent: 1.21
     '2013':
       count: 84
+      total: 6111
       percent: 1.37
     '2014':
       count: 77
+      total: 5993
       percent: 1.28
     '2015':
       count: 52
+      total: 6021
       percent: 0.86
 '17161':
   name: Rock Island County
   employment:
     '2006':
       count: 72
+      total: 77914
       percent: 0.09
     '2007':
       count: 79
+      total: 78858
       percent: 0.1
     '2008':
       count: 77
+      total: 79456
       percent: 0.1
     '2009':
       count: 71
+      total: 75038
       percent: 0.09
     '2010':
       count: 70
+      total: 74100
       percent: 0.09
     '2011':
       count: 70
+      total: 74623
       percent: 0.09
     '2012':
       count: 74
+      total: 74859
       percent: 0.1
     '2013':
       count: 73
+      total: 74169
       percent: 0.1
     '2014':
       count: 62
+      total: 73685
       percent: 0.08
     '2015':
       count: 68
+      total: 72359
       percent: 0.09
 '17165':
   name: Saline County
   employment:
     '2012':
       count: 1684
+      total: 9352
       percent: 18.01
 '17167':
   name: Sangamon County
   employment:
     '2006':
       count: 52
+      total: 130260
       percent: 0.04
     '2007':
       count: 27
+      total: 129851
       percent: 0.02
 '17179':
   name: Tazewell County
   employment:
     '2010':
       count: 12
+      total: 58058
       percent: 0.02
     '2011':
       count: 10
+      total: 59065
       percent: 0.02
     '2012':
       count: 12
+      total: 60953
       percent: 0.02
     '2013':
       count: 12
+      total: 57631
       percent: 0.02
     '2014':
       count: 12
+      total: 57836
       percent: 0.02
     '2015':
       count: 12
+      total: 56483
       percent: 0.02
 '17191':
   name: Wayne County
   employment:
     '2006':
       count: 56
+      total: 4602
       percent: 1.22
     '2007':
       count: 44
+      total: 4653
       percent: 0.95
     '2008':
       count: 47
+      total: 4647
       percent: 1.01
     '2009':
       count: 44
+      total: 4489
       percent: 0.98
     '2010':
       count: 41
+      total: 4422
       percent: 0.93
     '2011':
       count: 46
+      total: 4405
       percent: 1.04
     '2012':
       count: 51
+      total: 4346
       percent: 1.17
     '2013':
       count: 85
+      total: 4269
       percent: 1.99
     '2014':
       count: 87
+      total: 4141
       percent: 2.1
     '2015':
       count: 80
+      total: 4126
       percent: 1.94
 '17195':
   name: Whiteside County
   employment:
     '2006':
       count: 57
+      total: 20988
       percent: 0.27
     '2007':
       count: 62
+      total: 21186
       percent: 0.29
 '17197':
   name: Will County
   employment:
     '2006':
       count: 270
+      total: 179626
       percent: 0.15
     '2007':
       count: 281
+      total: 191044
       percent: 0.15
     '2008':
       count: 246
+      total: 196008
       percent: 0.13
     '2009':
       count: 219
+      total: 189011
       percent: 0.12
     '2010':
       count: 202
+      total: 193323
       percent: 0.1
     '2011':
       count: 194
+      total: 198531
       percent: 0.1
     '2012':
       count: 177
+      total: 202485
       percent: 0.09
     '2013':
       count: 167
+      total: 211079
       percent: 0.08
     '2014':
       count: 174
+      total: 215179
       percent: 0.08
     '2015':
       count: 190
+      total: 220753
       percent: 0.09

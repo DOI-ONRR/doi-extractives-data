@@ -3,196 +3,251 @@
   employment:
     '2006':
       count: 381
+      total: 912129
       percent: 0.04
     '2007':
       count: 473
+      total: 922461
       percent: 0.05
     '2008':
       count: 372
+      total: 905267
       percent: 0.04
     '2009':
       count: 272
+      total: 819949
       percent: 0.03
     '2010':
       count: 227
+      total: 797062
       percent: 0.03
     '2011':
       count: 205
+      total: 801123
       percent: 0.03
     '2012':
       count: 232
+      total: 816563
       percent: 0.03
     '2013':
       count: 256
+      total: 838669
       percent: 0.03
 '32007':
   name: Elko County
   employment:
     '2006':
       count: 1318
+      total: 20498
       percent: 6.43
     '2007':
       count: 1282
+      total: 21211
       percent: 6.04
     '2008':
       count: 1360
+      total: 21374
       percent: 6.36
     '2009':
       count: 1016
+      total: 20230
       percent: 5.02
     '2010':
       count: 1128
+      total: 20908
       percent: 5.4
     '2011':
       count: 1398
+      total: 22193
       percent: 6.3
     '2012':
       count: 1821
+      total: 22734
       percent: 8.01
     '2013':
       count: 1836
+      total: 22564
       percent: 8.14
     '2014':
       count: 1268
+      total: 22264
       percent: 5.7
     '2015':
       count: 1098
+      total: 21474
       percent: 5.11
 '32011':
   name: Eureka County
   employment:
     '2007':
       count: 3902
+      total: 5025
       percent: 77.65
 '32013':
   name: Humboldt County
   employment:
     '2006':
       count: 1757
+      total: 7789
       percent: 22.56
     '2007':
       count: 1328
+      total: 7555
       percent: 17.58
     '2008':
       count: 1264
+      total: 7601
       percent: 16.63
     '2009':
       count: 1355
+      total: 7374
       percent: 18.38
     '2010':
       count: 1480
+      total: 7747
       percent: 19.1
     '2011':
       count: 1582
+      total: 8023
       percent: 19.72
     '2012':
       count: 1761
+      total: 8406
       percent: 20.95
     '2013':
       count: 1859
+      total: 8445
       percent: 22.01
     '2014':
       count: 1792
+      total: 8052
       percent: 22.26
 '32019':
   name: Lyon County
   employment:
     '2008':
       count: 97
+      total: 12815
       percent: 0.76
     '2009':
       count: 72
+      total: 11337
       percent: 0.64
     '2010':
       count: 72
+      total: 11059
       percent: 0.65
     '2011':
       count: 115
+      total: 11161
       percent: 1.03
     '2012':
       count: 191
+      total: 11162
       percent: 1.71
     '2013':
       count: 262
+      total: 11500
       percent: 2.28
     '2014':
       count: 288
+      total: 12175
       percent: 2.37
     '2015':
       count: 266
+      total: 11413
       percent: 2.33
 '32021':
   name: Mineral County
   employment:
     '2007':
       count: 24
+      total: 1746
       percent: 1.37
 '32023':
   name: Nye County
   employment:
     '2006':
       count: 17
+      total: 12810
       percent: 0.13
 '32027':
   name: Pershing County
   employment:
     '2008':
       count: 276
+      total: 1820
       percent: 15.16
     '2009':
       count: 216
+      total: 1638
       percent: 13.19
     '2010':
       count: 216
+      total: 1617
       percent: 13.36
     '2011':
       count: 369
+      total: 1722
       percent: 21.43
     '2012':
       count: 438
+      total: 1814
       percent: 24.15
 '32029':
   name: Storey County
   employment:
     '2007':
       count: 76
+      total: 2929
       percent: 2.59
 '32031':
   name: Washoe County
   employment:
     '2006':
       count: 263
+      total: 218159
       percent: 0.12
     '2007':
       count: 281
+      total: 218131
       percent: 0.13
     '2008':
       count: 203
+      total: 208318
       percent: 0.1
     '2009':
       count: 161
+      total: 188790
       percent: 0.09
     '2010':
       count: 163
+      total: 183892
       percent: 0.09
     '2011':
       count: 159
+      total: 183827
       percent: 0.09
     '2012':
       count: 140
+      total: 183908
       percent: 0.08
     '2013':
       count: 116
+      total: 188325
       percent: 0.06
     '2014':
       count: 115
+      total: 194123
       percent: 0.06
     '2015':
       count: 98
+      total: 201573
       percent: 0.05
 '32033':
   name: White Pine County
   employment:
     '2011':
       count: 1142
+      total: 4343
       percent: 26.3

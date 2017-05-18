@@ -1,23 +1,18 @@
 UPDATE bls_employment SET region_id = NULL, total = NULL;
 
 DELETE FROM bls_employment
-  WHERE commodity IN ('Extractives', 'Renewables');
+  WHERE commodity IN ('Renewables');
 
 INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)
   SELECT
     year, state, county, fips, region_id,
-    SUBSTR(CAST(naics AS string), 1, 2) AS naics,
-    CASE
-      WHEN commodity IN ('Geothermal', 'Solar', 'Wind')
-      THEN 'Renewables'
-      ELSE 'Extractives'
+     AS naics,
+    'Renewables' AS commodity,
     END AS category,
     SUM(jobs) AS jobs
   FROM bls_employment
-  WHERE
-    -- Iron, Gold, and Copper are counted under "Metal ore mining"
-    commodity NOT IN ('All', 'Iron', 'Gold', 'Copper')
+  WHERE commodity IN ('Geothermal', 'Solar', 'Wind')
   GROUP BY
     year, state, county, fips, region_id, category;
 

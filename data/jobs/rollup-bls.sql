@@ -1,5 +1,8 @@
 BEGIN;
-UPDATE bls_employment SET region_id = NULL;
+-- reset region_id, and strip leading XX from FIPS codes
+UPDATE bls_employment SET
+  region_id = NULL,
+  fips = REPLACE(fips, 'FIPS', '');
 
 -- set the region_id to the 2-letter code of the corresponding state
 UPDATE bls_employment
@@ -11,9 +14,25 @@ UPDATE bls_employment
       LIMIT 1
     );
 
+-- nix territories and DC
 DELETE FROM bls_employment
-  WHERE commodity IN ('Renewables');
+  WHERE
+    SUBSTR(fips, 1, 2) IN ('DC', 'GU', 'PR', 'VI');
 
+DELETE FROM bls_employment WHERE commodity = 'Nonenergy minerals';
+INSERT INTO bls_employment
+    (year, state, county, fips, region_id, naics, commodity, jobs)
+  SELECT
+    year, state, county, fips, region_id, '212X' AS _naics,
+    'Nonenergy minerals' AS commodity,
+    SUM(jobs) AS jobs
+  FROM bls_employment
+  WHERE
+    naics IN (2122, 2123)
+  GROUP BY
+    year, state, county, fips, region_id, _naics;
+
+DELETE FROM bls_employment WHERE commodity = 'Renewables';
 INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)
   SELECT
@@ -22,14 +41,23 @@ INSERT INTO bls_employment
     'Renewables' AS category,
     SUM(jobs) AS jobs
   FROM bls_employment
-  WHERE commodity IN ('Geothermal', 'Solar', 'Wind')
+  WHERE commodity IN ('Solar', 'Wind', 'Geothermal')
   GROUP BY
     year, state, county, fips, region_id, category;
 
--- all of the remaining rows are for DC US territories
-DELETE
+-- sum up mining and renewables into _actual_ extractives
+DELETE FROM bls_employment WHERE commodity = 'Extractives';
+INSERT INTO bls_employment
+    (year, state, county, fips, region_id, naics, commodity, jobs)
+  SELECT
+    year, state, county, fips, region_id, '2X' AS _naics,
+    'Extractives' AS commodity,
+    SUM(jobs) AS jobs
   FROM bls_employment
-  WHERE region_id IS NULL;
+  WHERE
+    commodity IN ('Mining', 'Renewables')
+  GROUP BY
+    year, state, county, fips, region_id, _naics;
 
 -- Previously, this was done with an UPDATE w/subquery for each row, which
 -- was *super* slow. The self-join is super fast, and clearer, I think.
@@ -51,24 +79,26 @@ ALTER TABLE _bls_employment RENAME TO bls_employment;
 
 DROP TABLE IF EXISTS state_bls_employment;
 CREATE TABLE state_bls_employment AS
-    SELECT *
-    FROM bls_employment
-    WHERE county IS NULL;
+  SELECT *
+  FROM bls_employment
+  WHERE county IS NULL;
 
 -- then create national employment data as an aggregate view
 -- on regional bls_employment
 DROP TABLE IF EXISTS national_bls_employment;
 CREATE TABLE national_bls_employment AS
-    SELECT
-        year, commodity, naics,
-        'US' AS state,
-        'US' AS region_id,
-        SUM(jobs) AS jobs,
-        0 AS total,
-        0.01 AS percent
-    FROM state_bls_employment
-    GROUP BY
-        year, commodity, naics, region_id;
+  SELECT
+    year, commodity, naics,
+    'US' AS state,
+    'US' AS region_id,
+    jobs,
+    0 AS total,
+    0.01 AS percent
+  FROM bls_employment
+  WHERE
+    fips = 'US000'
+  GROUP BY
+      year, commodity, naics;
 
 UPDATE national_bls_employment SET percent = NULL;
 UPDATE national_bls_employment

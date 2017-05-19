@@ -100,16 +100,16 @@
                 <span class="caption-data">
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                  {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
+                  {{ long_units | term: term_units }} of {{ product_name | downcase | suffix: units_suffix }} were
                   produced on federal land in {{ state_name }} in
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-no-data" aria-hidden="true">
-                  There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in {{ state_name }} in
+                  There is no data about production of {{ product_name | downcase | suffix: units_suffix }} on federal land in {{ state_name }} in
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>
                 <span class="caption-withheld" aria-hidden="true">
-                  Data about how much {{ product_name | downcase | suffix:units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
+                  Data about how much {{ product_name | downcase | suffix: units_suffix }} was produced on federal land in {{ state_name }} in <span class="eiti-bar-chart-x-value">{{ year }}</span> is {{ "withheld" | term_end }}.
                 </span>
               </figcaption>
             </figure>
@@ -130,7 +130,7 @@
               {% capture years_key %}products.{{ product[0] }}.volume{% endcapture %}
               {% assign _width ='inherit' %}
 
-              {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix:units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
+              {% capture caption %}{{ locality_name }} production of {{ product_name | downcase | suffix: units_suffix }} in <span data-year="{{ year }}">{{ year }}</span>{% if units %} <span class="legend-units">({{ short_units | default:units }})</span>{% endif %}{% endcapture %}
 
 
               <eiti-data-map color-scheme="Blues" steps="{{ steps }}" units="{{ units }}">

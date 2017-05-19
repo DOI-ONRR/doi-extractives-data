@@ -76,6 +76,10 @@
       count: 68
       total: 61144
       percent: 0.11
+    '2015':
+      count: 77
+      total: 63175
+      percent: 0.12
 '45019':
   name: Charleston County
   employment:
@@ -114,6 +118,10 @@
     '2014':
       count: 25
       total: 228699
+      percent: 0.01
+    '2015':
+      count: 31
+      total: 235308
       percent: 0.01
 '45025':
   name: Chesterfield County
@@ -222,6 +230,10 @@
       count: 19
       total: 22590
       percent: 0.08
+    '2015':
+      count: 18
+      total: 22994
+      percent: 0.08
 '45045':
   name: Greenville County
   employment:
@@ -261,6 +273,10 @@
       count: 43
       total: 248095
       percent: 0.02
+    '2015':
+      count: 23
+      total: 256799
+      percent: 0.01
 '45051':
   name: Horry County
   employment:
@@ -300,6 +316,10 @@
       count: 38
       total: 115476
       percent: 0.03
+    '2015':
+      count: 55
+      total: 118291
+      percent: 0.05
 '45055':
   name: Kershaw County
   employment:
@@ -335,6 +355,10 @@
       count: 130
       total: 17276
       percent: 0.75
+    '2015':
+      count: 164
+      total: 18056
+      percent: 0.91
 '45063':
   name: Lexington County
   employment:
@@ -374,6 +398,10 @@
       count: 115
       total: 108309
       percent: 0.11
+    '2015':
+      count: 114
+      total: 113091
+      percent: 0.1
 '45067':
   name: Marion County
   employment:
@@ -443,6 +471,10 @@
       count: 130
       total: 123466
       percent: 0.11
+    '2015':
+      count: 133
+      total: 127009
+      percent: 0.1
 '45091':
   name: York County
   employment:
@@ -481,4 +513,8 @@
     '2014':
       count: 31
       total: 81311
+      percent: 0.04
+    '2015':
+      count: 32
+      total: 84859
       percent: 0.04

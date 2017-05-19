@@ -1,3 +1,10 @@
+'53005':
+  name: Benton County
+  employment:
+    '2015':
+      count: 5
+      total: 82253
+      percent: 0.01
 '53007':
   name: Chelan County
   employment:
@@ -47,6 +54,10 @@
     '2014':
       count: 9
       total: 22041
+      percent: 0.04
+    '2015':
+      count: 9
+      total: 22221
       percent: 0.04
 '53011':
   name: Clark County
@@ -110,6 +121,10 @@
       count: 153
       total: 36843
       percent: 0.42
+    '2015':
+      count: 177
+      total: 37342
+      percent: 0.47
 '53021':
   name: Franklin County
   employment:
@@ -224,6 +239,10 @@
       count: 376
       total: 1237586
       percent: 0.03
+    '2015':
+      count: 443
+      total: 1274203
+      percent: 0.03
 '53035':
   name: Kitsap County
   employment:
@@ -259,6 +278,10 @@
       count: 45
       total: 82416
       percent: 0.05
+    '2015':
+      count: 48
+      total: 84687
+      percent: 0.06
 '53037':
   name: Kittitas County
   employment:
@@ -305,6 +328,10 @@
       count: 137
       total: 23573
       percent: 0.58
+    '2015':
+      count: 149
+      total: 23935
+      percent: 0.62
 '53047':
   name: Okanogan County
   employment:
@@ -344,6 +371,10 @@
       count: 183
       total: 18359
       percent: 1
+    '2015':
+      count: 163
+      total: 18404
+      percent: 0.89
 '53049':
   name: Pacific County
   employment:
@@ -371,6 +402,10 @@
       count: 37
       total: 6205
       percent: 0.6
+    '2015':
+      count: 35
+      total: 6171
+      percent: 0.57
 '53051':
   name: Pend Oreille County
   employment:
@@ -445,6 +480,10 @@
       count: 160
       total: 277890
       percent: 0.06
+    '2015':
+      count: 161
+      total: 285399
+      percent: 0.06
 '53057':
   name: Skagit County
   employment:
@@ -484,6 +523,10 @@
       count: 47
       total: 48300
       percent: 0.1
+    '2015':
+      count: 26
+      total: 48582
+      percent: 0.05
 '53061':
   name: Snohomish County
   employment:
@@ -522,6 +565,10 @@
     '2014':
       count: 134
       total: 267792
+      percent: 0.05
+    '2015':
+      count: 136
+      total: 275565
       percent: 0.05
 '53063':
   name: Spokane County
@@ -562,6 +609,10 @@
       count: 118
       total: 205671
       percent: 0.06
+    '2015':
+      count: 91
+      total: 209396
+      percent: 0.04
 '53065':
   name: Stevens County
   employment:
@@ -597,6 +648,10 @@
       count: 60
       total: 9522
       percent: 0.63
+    '2015':
+      count: 61
+      total: 9912
+      percent: 0.62
 '53067':
   name: Thurston County
   employment:
@@ -635,6 +690,10 @@
     '2014':
       count: 31
       total: 103078
+      percent: 0.03
+    '2015':
+      count: 35
+      total: 106176
       percent: 0.03
 '53073':
   name: Whatcom County
@@ -713,4 +772,8 @@
     '2014':
       count: 56
       total: 106590
+      percent: 0.05
+    '2015':
+      count: 52
+      total: 108686
       percent: 0.05

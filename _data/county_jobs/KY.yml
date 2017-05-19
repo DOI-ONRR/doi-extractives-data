@@ -17,6 +17,10 @@
       count: 19
       total: 4618
       percent: 0.41
+    '2015':
+      count: 20
+      total: 4628
+      percent: 0.43
 '21009':
   name: Barren County
   employment:
@@ -55,6 +59,10 @@
     '2014':
       count: 8
       total: 16316
+      percent: 0.05
+    '2015':
+      count: 9
+      total: 16419
       percent: 0.05
 '21013':
   name: Bell County
@@ -95,6 +103,10 @@
       count: 645
       total: 8631
       percent: 7.47
+    '2015':
+      count: 466
+      total: 8465
+      percent: 5.51
 '21015':
   name: Boone County
   employment:
@@ -102,6 +114,10 @@
       count: 25
       total: 74627
       percent: 0.03
+    '2015':
+      count: 19
+      total: 81514
+      percent: 0.02
 '21019':
   name: Boyd County
   employment:
@@ -117,6 +133,10 @@
       count: 192
       total: 28173
       percent: 0.68
+    '2015':
+      count: 134
+      total: 25002
+      percent: 0.54
 '21021':
   name: Boyle County
   employment:
@@ -177,6 +197,10 @@
     '2014':
       count: 24
       total: 3455
+      percent: 0.69
+    '2015':
+      count: 24
+      total: 3467
       percent: 0.69
 '21033':
   name: Caldwell County
@@ -248,6 +272,10 @@
       count: 76
       total: 5595
       percent: 1.36
+    '2015':
+      count: 72
+      total: 5627
+      percent: 1.28
 '21047':
   name: Christian County
   employment:
@@ -351,6 +379,10 @@
       count: 142
       total: 44390
       percent: 0.32
+    '2015':
+      count: 147
+      total: 44871
+      percent: 0.33
 '21065':
   name: Estill County
   employment:
@@ -358,6 +390,10 @@
       count: 33
       total: 2348
       percent: 1.41
+    '2015':
+      count: 23
+      total: 2341
+      percent: 0.98
 '21067':
   name: Fayette County
   employment:
@@ -397,6 +433,10 @@
       count: 346
       total: 184389
       percent: 0.19
+    '2015':
+      count: 340
+      total: 189801
+      percent: 0.18
 '21071':
   name: Floyd County
   employment:
@@ -520,6 +560,10 @@
       count: 909
       total: 6750
       percent: 13.47
+    '2015':
+      count: 618
+      total: 6227
+      percent: 9.92
 '21101':
   name: Henderson County
   employment:
@@ -559,6 +603,10 @@
       count: 40
       total: 19841
       percent: 0.2
+    '2015':
+      count: 32
+      total: 19829
+      percent: 0.16
 '21107':
   name: Hopkins County
   employment:
@@ -598,6 +646,10 @@
       count: 1149
       total: 17746
       percent: 6.47
+    '2015':
+      count: 1062
+      total: 17512
+      percent: 6.06
 '21111':
   name: Jefferson County
   employment:
@@ -637,6 +689,10 @@
       count: 183
       total: 440249
       percent: 0.04
+    '2015':
+      count: 193
+      total: 450132
+      percent: 0.04
 '21121':
   name: Knox County
   employment:
@@ -644,6 +700,10 @@
       count: 168
       total: 9210
       percent: 1.82
+    '2015':
+      count: 60
+      total: 7637
+      percent: 0.79
 '21125':
   name: Laurel County
   employment:
@@ -683,6 +743,10 @@
       count: 365
       total: 24493
       percent: 1.49
+    '2015':
+      count: 295
+      total: 25648
+      percent: 1.15
 '21127':
   name: Lawrence County
   employment:
@@ -737,6 +801,10 @@
       count: 74
       total: 1709
       percent: 4.33
+    '2015':
+      count: 68
+      total: 1597
+      percent: 4.26
 '21131':
   name: Leslie County
   employment:
@@ -791,6 +859,10 @@
       count: 1389
       total: 5937
       percent: 23.4
+    '2015':
+      count: 300
+      total: 4470
+      percent: 6.71
 '21139':
   name: Livingston County
   employment:
@@ -870,6 +942,10 @@
       count: 407
       total: 2704
       percent: 15.05
+    '2015':
+      count: 351
+      total: 2569
+      percent: 13.66
 '21163':
   name: Meade County
   employment:
@@ -897,6 +973,10 @@
       count: 106
       total: 4181
       percent: 2.54
+    '2015':
+      count: 112
+      total: 4141
+      percent: 2.7
 '21177':
   name: Muhlenberg County
   employment:
@@ -997,6 +1077,10 @@
       count: 2732
       total: 21874
       percent: 12.49
+    '2015':
+      count: 2248
+      total: 21488
+      percent: 10.46
 '21225':
   name: Union County
   employment:
@@ -1036,6 +1120,10 @@
       count: 1366
       total: 5732
       percent: 23.83
+    '2015':
+      count: 731
+      total: 5046
+      percent: 14.49
 '21227':
   name: Warren County
   employment:
@@ -1075,6 +1163,10 @@
       count: 96
       total: 60044
       percent: 0.16
+    '2015':
+      count: 82
+      total: 60924
+      percent: 0.13
 '21233':
   name: Webster County
   employment:

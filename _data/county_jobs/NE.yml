@@ -37,6 +37,10 @@
       count: 44
       total: 26816
       percent: 0.16
+    '2015':
+      count: 43
+      total: 26839
+      percent: 0.16
 '31025':
   name: Cass County
   employment:
@@ -72,6 +76,10 @@
       count: 167
       total: 5500
       percent: 3.04
+    '2015':
+      count: 162
+      total: 5471
+      percent: 2.96
 '31027':
   name: Cedar County
   employment:
@@ -138,6 +146,10 @@
       count: 4
       total: 5751
       percent: 0.07
+    '2015':
+      count: 3
+      total: 5849
+      percent: 0.05
 '31053':
   name: Dodge County
   employment:
@@ -172,6 +184,10 @@
     '2014':
       count: 10
       total: 16832
+      percent: 0.06
+    '2015':
+      count: 10
+      total: 16964
       percent: 0.06
 '31055':
   name: Douglas County
@@ -227,6 +243,10 @@
       count: 18
       total: 35227
       percent: 0.05
+    '2015':
+      count: 20
+      total: 34560
+      percent: 0.06
 '31087':
   name: Hitchcock County
   employment:
@@ -266,6 +286,10 @@
       count: 46
       total: 697
       percent: 6.6
+    '2015':
+      count: 50
+      total: 692
+      percent: 7.23
 '31089':
   name: Holt County
   employment:
@@ -305,6 +329,10 @@
       count: 15
       total: 4548
       percent: 0.33
+    '2015':
+      count: 18
+      total: 4581
+      percent: 0.39
 '31093':
   name: Howard County
   employment:
@@ -359,6 +387,10 @@
       count: 11
       total: 3304
       percent: 0.33
+    '2015':
+      count: 12
+      total: 3343
+      percent: 0.36
 '31105':
   name: Kimball County
   employment:
@@ -398,6 +430,10 @@
       count: 69
       total: 1586
       percent: 4.35
+    '2015':
+      count: 56
+      total: 1432
+      percent: 3.91
 '31109':
   name: Lancaster County
   employment:
@@ -459,6 +495,10 @@
       count: 56
       total: 5375
       percent: 1.04
+    '2015':
+      count: 47
+      total: 5242
+      percent: 0.9
 '31147':
   name: Richardson County
   employment:
@@ -481,6 +521,10 @@
     '2014':
       count: 5
       total: 2440
+      percent: 0.2
+    '2015':
+      count: 5
+      total: 2529
       percent: 0.2
 '31153':
   name: Sarpy County
@@ -509,6 +553,10 @@
       count: 23
       total: 65154
       percent: 0.04
+    '2015':
+      count: 19
+      total: 67853
+      percent: 0.03
 '31155':
   name: Saunders County
   employment:

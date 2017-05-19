@@ -37,6 +37,10 @@
       count: 16
       total: 74006
       percent: 0.02
+    '2015':
+      count: 18
+      total: 76180
+      percent: 0.02
 '12009':
   name: Brevard County
   employment:
@@ -75,6 +79,10 @@
     '2014':
       count: 15
       total: 189748
+      percent: 0.01
+    '2015':
+      count: 17
+      total: 194456
       percent: 0.01
 '12011':
   name: Broward County
@@ -115,6 +123,10 @@
       count: 88
       total: 740103
       percent: 0.01
+    '2015':
+      count: 95
+      total: 761402
+      percent: 0.01
 '12015':
   name: Charlotte County
   employment:
@@ -146,6 +158,10 @@
       count: 27
       total: 43257
       percent: 0.06
+    '2015':
+      count: 47
+      total: 44757
+      percent: 0.11
 '12017':
   name: Citrus County
   employment:
@@ -185,6 +201,10 @@
       count: 53
       total: 31267
       percent: 0.17
+    '2015':
+      count: 56
+      total: 31799
+      percent: 0.18
 '12019':
   name: Clay County
   employment:
@@ -247,6 +267,10 @@
       count: 25
       total: 128883
       percent: 0.02
+    '2015':
+      count: 41
+      total: 134444
+      percent: 0.03
 '12031':
   name: Duval County
   employment:
@@ -285,6 +309,10 @@
     '2014':
       count: 123
       total: 456264
+      percent: 0.03
+    '2015':
+      count: 126
+      total: 472862
       percent: 0.03
 '12033':
   name: Escambia County
@@ -325,6 +353,10 @@
       count: 60
       total: 124053
       percent: 0.05
+    '2015':
+      count: 66
+      total: 126023
+      percent: 0.05
 '12035':
   name: Flagler County
   employment:
@@ -363,6 +395,10 @@
       count: 142
       total: 12722
       percent: 1.12
+    '2015':
+      count: 147
+      total: 12717
+      percent: 1.16
 '12049':
   name: Hardee County
   employment:
@@ -401,6 +437,10 @@
       count: 36
       total: 38118
       percent: 0.09
+    '2015':
+      count: 41
+      total: 39829
+      percent: 0.1
 '12057':
   name: Hillsborough County
   employment:
@@ -440,6 +480,10 @@
       count: 244
       total: 620402
       percent: 0.04
+    '2015':
+      count: 157
+      total: 643517
+      percent: 0.02
 '12059':
   name: Holmes County
   employment:
@@ -447,6 +491,10 @@
       count: 3
       total: 3426
       percent: 0.09
+    '2015':
+      count: 20
+      total: 3194
+      percent: 0.63
 '12061':
   name: Indian River County
   employment:
@@ -493,6 +541,10 @@
       count: 78
       total: 13989
       percent: 0.56
+    '2015':
+      count: 81
+      total: 14085
+      percent: 0.58
 '12069':
   name: Lake County
   employment:
@@ -531,6 +583,10 @@
     '2014':
       count: 114
       total: 85667
+      percent: 0.13
+    '2015':
+      count: 120
+      total: 89592
       percent: 0.13
 '12071':
   name: Lee County
@@ -571,6 +627,17 @@
       count: 206
       total: 226047
       percent: 0.09
+    '2015':
+      count: 242
+      total: 240175
+      percent: 0.1
+'12073':
+  name: Leon County
+  employment:
+    '2015':
+      count: 11
+      total: 142692
+      percent: 0.01
 '12075':
   name: Levy County
   employment:
@@ -590,6 +657,10 @@
       count: 28
       total: 8168
       percent: 0.34
+    '2015':
+      count: 31
+      total: 8546
+      percent: 0.36
 '12081':
   name: Manatee County
   employment:
@@ -617,6 +688,10 @@
       count: 4
       total: 109945
       percent: 0
+    '2015':
+      count: 6
+      total: 115192
+      percent: 0.01
 '12083':
   name: Marion County
   employment:
@@ -656,6 +731,10 @@
       count: 77
       total: 94510
       percent: 0.08
+    '2015':
+      count: 83
+      total: 96719
+      percent: 0.09
 '12085':
   name: Martin County
   employment:
@@ -702,6 +781,10 @@
       count: 387
       total: 1046237
       percent: 0.04
+    '2015':
+      count: 416
+      total: 1079316
+      percent: 0.04
 '12087':
   name: Monroe County
   employment:
@@ -713,6 +796,10 @@
       count: 27
       total: 38794
       percent: 0.07
+    '2015':
+      count: 25
+      total: 40763
+      percent: 0.06
 '12091':
   name: Okaloosa County
   employment:
@@ -743,6 +830,10 @@
     '2014':
       count: 14
       total: 77835
+      percent: 0.02
+    '2015':
+      count: 16
+      total: 79775
       percent: 0.02
 '12093':
   name: Okeechobee County
@@ -806,6 +897,10 @@
       count: 153
       total: 732630
       percent: 0.02
+    '2015':
+      count: 122
+      total: 762674
+      percent: 0.02
 '12097':
   name: Osceola County
   employment:
@@ -816,6 +911,10 @@
     '2014':
       count: 6
       total: 80664
+      percent: 0.01
+    '2015':
+      count: 11
+      total: 84340
       percent: 0.01
 '12101':
   name: Pasco County
@@ -856,6 +955,10 @@
       count: 69
       total: 104021
       percent: 0.07
+    '2015':
+      count: 75
+      total: 108451
+      percent: 0.07
 '12103':
   name: Pinellas County
   employment:
@@ -895,6 +998,10 @@
       count: 43
       total: 396809
       percent: 0.01
+    '2015':
+      count: 10
+      total: 408382
+      percent: 0
 '12105':
   name: Polk County
   employment:
@@ -934,6 +1041,10 @@
       count: 980
       total: 197921
       percent: 0.5
+    '2015':
+      count: 921
+      total: 203802
+      percent: 0.45
 '12107':
   name: Putnam County
   employment:
@@ -957,6 +1068,10 @@
       count: 61
       total: 16262
       percent: 0.38
+    '2015':
+      count: 71
+      total: 16202
+      percent: 0.44
 '12109':
   name: St. Johns County
   employment:
@@ -964,6 +1079,10 @@
       count: 10
       total: 56672
       percent: 0.02
+    '2015':
+      count: 8
+      total: 66461
+      percent: 0.01
 '12111':
   name: St. Lucie County
   employment:
@@ -1003,6 +1122,10 @@
       count: 25
       total: 68542
       percent: 0.04
+    '2015':
+      count: 23
+      total: 70409
+      percent: 0.03
 '12113':
   name: Santa Rosa County
   employment:
@@ -1042,6 +1165,10 @@
       count: 89
       total: 33465
       percent: 0.27
+    '2015':
+      count: 92
+      total: 34791
+      percent: 0.26
 '12115':
   name: Sarasota County
   employment:
@@ -1080,6 +1207,10 @@
     '2014':
       count: 80
       total: 152582
+      percent: 0.05
+    '2015':
+      count: 74
+      total: 159072
       percent: 0.05
 '12117':
   name: Seminole County
@@ -1151,6 +1282,10 @@
       count: 29
       total: 25252
       percent: 0.11
+    '2015':
+      count: 31
+      total: 26134
+      percent: 0.12
 '12121':
   name: Suwannee County
   employment:
@@ -1174,6 +1309,10 @@
       count: 22
       total: 11013
       percent: 0.2
+    '2015':
+      count: 23
+      total: 11181
+      percent: 0.21
 '12123':
   name: Taylor County
   employment:
@@ -1224,6 +1363,10 @@
       count: 15
       total: 155707
       percent: 0.01
+    '2015':
+      count: 8
+      total: 160541
+      percent: 0
 '12131':
   name: Walton County
   employment:
@@ -1234,4 +1377,8 @@
     '2014':
       count: 10
       total: 22251
+      percent: 0.04
+    '2015':
+      count: 10
+      total: 23281
       percent: 0.04

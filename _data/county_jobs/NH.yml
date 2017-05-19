@@ -13,6 +13,10 @@
       count: 53
       total: 25491
       percent: 0.21
+    '2015':
+      count: 58
+      total: 25586
+      percent: 0.23
 '33003':
   name: Carroll County
   employment:
@@ -28,6 +32,13 @@
       count: 30
       total: 20575
       percent: 0.15
+'33005':
+  name: Cheshire County
+  employment:
+    '2015':
+      count: 6
+      total: 32069
+      percent: 0.02
 '33007':
   name: Coos County
   employment:
@@ -78,6 +89,10 @@
       count: 46
       total: 52228
       percent: 0.09
+    '2015':
+      count: 46
+      total: 52655
+      percent: 0.09
 '33011':
   name: Hillsborough County
   employment:
@@ -117,6 +132,10 @@
       count: 73
       total: 193564
       percent: 0.04
+    '2015':
+      count: 43
+      total: 196841
+      percent: 0.02
 '33013':
   name: Merrimack County
   employment:
@@ -156,6 +175,10 @@
       count: 145
       total: 74883
       percent: 0.19
+    '2015':
+      count: 151
+      total: 75672
+      percent: 0.2
 '33015':
   name: Rockingham County
   employment:
@@ -194,6 +217,10 @@
     '2014':
       count: 105
       total: 139969
+      percent: 0.08
+    '2015':
+      count: 122
+      total: 143651
       percent: 0.08
 '33017':
   name: Strafford County

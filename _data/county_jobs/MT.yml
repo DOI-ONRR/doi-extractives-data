@@ -37,6 +37,10 @@
       count: 628
       total: 4532
       percent: 13.86
+    '2015':
+      count: 620
+      total: 4681
+      percent: 13.25
 '30005':
   name: Blaine County
   employment:
@@ -56,6 +60,10 @@
       count: 10
       total: 1464
       percent: 0.68
+    '2015':
+      count: 9
+      total: 1466
+      percent: 0.61
 '30007':
   name: Broadwater County
   employment:
@@ -110,6 +118,10 @@
       count: 36
       total: 2559
       percent: 1.41
+    '2015':
+      count: 42
+      total: 2606
+      percent: 1.61
 '30013':
   name: Cascade County
   employment:
@@ -133,6 +145,10 @@
       count: 24
       total: 35253
       percent: 0.07
+    '2015':
+      count: 12
+      total: 34915
+      percent: 0.03
 '30021':
   name: Dawson County
   employment:
@@ -160,6 +176,10 @@
       count: 171
       total: 3809
       percent: 4.49
+    '2015':
+      count: 166
+      total: 3739
+      percent: 4.44
 '30025':
   name: Fallon County
   employment:
@@ -195,6 +215,10 @@
       count: 397
       total: 1672
       percent: 23.74
+    '2015':
+      count: 306
+      total: 1550
+      percent: 19.74
 '30027':
   name: Fergus County
   employment:
@@ -261,6 +285,10 @@
       count: 259
       total: 39157
       percent: 0.66
+    '2015':
+      count: 270
+      total: 40689
+      percent: 0.66
 '30031':
   name: Gallatin County
   employment:
@@ -300,6 +328,10 @@
       count: 237
       total: 49364
       percent: 0.48
+    '2015':
+      count: 197
+      total: 52059
+      percent: 0.38
 '30035':
   name: Glacier County
   employment:
@@ -339,6 +371,10 @@
       count: 190
       total: 4151
       percent: 4.58
+    '2015':
+      count: 154
+      total: 4166
+      percent: 3.7
 '30039':
   name: Granite County
   employment:
@@ -358,6 +394,10 @@
       count: 21
       total: 784
       percent: 2.68
+    '2015':
+      count: 6
+      total: 829
+      percent: 0.72
 '30041':
   name: Hill County
   employment:
@@ -397,6 +437,10 @@
       count: 16
       total: 6772
       percent: 0.24
+    '2015':
+      count: 4
+      total: 6882
+      percent: 0.06
 '30043':
   name: Jefferson County
   employment:
@@ -404,6 +448,10 @@
       count: 210
       total: 2434
       percent: 8.63
+    '2015':
+      count: 217
+      total: 2547
+      percent: 8.52
 '30047':
   name: Lake County
   employment:
@@ -443,6 +491,10 @@
       count: 25
       total: 8266
       percent: 0.3
+    '2015':
+      count: 28
+      total: 8511
+      percent: 0.33
 '30049':
   name: Lewis and Clark County
   employment:
@@ -482,6 +534,10 @@
       count: 185
       total: 35598
       percent: 0.52
+    '2015':
+      count: 176
+      total: 35429
+      percent: 0.5
 '30053':
   name: Lincoln County
   employment:
@@ -517,6 +573,10 @@
       count: 76
       total: 5105
       percent: 1.49
+    '2015':
+      count: 27
+      total: 5135
+      percent: 0.53
 '30057':
   name: Madison County
   employment:
@@ -556,6 +616,10 @@
       count: 95
       total: 3631
       percent: 2.62
+    '2015':
+      count: 91
+      total: 3801
+      percent: 2.39
 '30063':
   name: Missoula County
   employment:
@@ -595,6 +659,10 @@
       count: 26
       total: 56346
       percent: 0.05
+    '2015':
+      count: 16
+      total: 57337
+      percent: 0.03
 '30065':
   name: Musselshell County
   employment:
@@ -634,6 +702,10 @@
       count: 368
       total: 1279
       percent: 28.77
+    '2015':
+      count: 356
+      total: 1330
+      percent: 26.77
 '30067':
   name: Park County
   employment:
@@ -669,6 +741,10 @@
       count: 9
       total: 5414
       percent: 0.17
+    '2015':
+      count: 9
+      total: 5693
+      percent: 0.16
 '30073':
   name: Pondera County
   employment:
@@ -700,6 +776,10 @@
       count: 29
       total: 1688
       percent: 1.72
+    '2015':
+      count: 21
+      total: 1746
+      percent: 1.2
 '30081':
   name: Ravalli County
   employment:
@@ -715,6 +795,10 @@
       count: 5
       total: 10675
       percent: 0.05
+    '2015':
+      count: 4
+      total: 11238
+      percent: 0.04
 '30083':
   name: Richland County
   employment:
@@ -754,6 +838,10 @@
       count: 1004
       total: 6914
       percent: 14.52
+    '2015':
+      count: 849
+      total: 6329
+      percent: 13.41
 '30085':
   name: Roosevelt County
   employment:
@@ -793,6 +881,10 @@
       count: 86
       total: 3832
       percent: 2.24
+    '2015':
+      count: 62
+      total: 3695
+      percent: 1.68
 '30087':
   name: Rosebud County
   employment:
@@ -832,6 +924,10 @@
       count: 485
       total: 4103
       percent: 11.82
+    '2015':
+      count: 497
+      total: 4125
+      percent: 12.05
 '30089':
   name: Sanders County
   employment:
@@ -871,6 +967,10 @@
       count: 72
       total: 2618
       percent: 2.75
+    '2015':
+      count: 82
+      total: 2727
+      percent: 3.01
 '30091':
   name: Sheridan County
   employment:
@@ -894,6 +994,10 @@
       count: 122
       total: 1564
       percent: 7.8
+    '2015':
+      count: 90
+      total: 1522
+      percent: 5.91
 '30093':
   name: Silver Bow County
   employment:
@@ -925,6 +1029,10 @@
       count: 444
       total: 15671
       percent: 2.83
+    '2015':
+      count: 418
+      total: 15732
+      percent: 2.66
 '30101':
   name: Toole County
   employment:
@@ -944,6 +1052,10 @@
       count: 149
       total: 2031
       percent: 7.34
+    '2015':
+      count: 132
+      total: 1979
+      percent: 6.67
 '30105':
   name: Valley County
   employment:
@@ -994,3 +1106,7 @@
       count: 449
       total: 78530
       percent: 0.57
+    '2015':
+      count: 504
+      total: 80568
+      percent: 0.63

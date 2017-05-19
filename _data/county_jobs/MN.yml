@@ -1,3 +1,10 @@
+'27001':
+  name: Aitkin County
+  employment:
+    '2015':
+      count: 23
+      total: 3770
+      percent: 0.61
 '27005':
   name: Becker County
   employment:
@@ -13,6 +20,10 @@
       count: 45
       total: 13857
       percent: 0.32
+    '2015':
+      count: 52
+      total: 14138
+      percent: 0.37
 '27017':
   name: Carlton County
   employment:
@@ -74,6 +85,10 @@
       count: 198
       total: 180335
       percent: 0.11
+    '2015':
+      count: 210
+      total: 183943
+      percent: 0.11
 '27047':
   name: Freeborn County
   employment:
@@ -132,6 +147,10 @@
       count: 285
       total: 866709
       percent: 0.03
+    '2015':
+      count: 280
+      total: 883020
+      percent: 0.03
 '27057':
   name: Hubbard County
   employment:
@@ -158,6 +177,10 @@
       count: 638
       total: 15971
       percent: 3.99
+    '2015':
+      count: 741
+      total: 16381
+      percent: 4.52
 '27065':
   name: Kanabec County
   employment:
@@ -197,6 +220,10 @@
       count: 18
       total: 3736
       percent: 0.48
+    '2015':
+      count: 20
+      total: 3744
+      percent: 0.53
 '27089':
   name: Marshall County
   employment:
@@ -243,6 +270,10 @@
       count: 12
       total: 6987
       percent: 0.17
+    '2015':
+      count: 13
+      total: 7272
+      percent: 0.18
 '27095':
   name: Mille Lacs County
   employment:
@@ -277,6 +308,10 @@
       count: 21
       total: 10569
       percent: 0.2
+    '2015':
+      count: 23
+      total: 10759
+      percent: 0.21
 '27101':
   name: Murray County
   employment:
@@ -316,6 +351,10 @@
       count: 21
       total: 2958
       percent: 0.71
+    '2015':
+      count: 24
+      total: 3008
+      percent: 0.8
 '27109':
   name: Olmsted County
   employment:
@@ -350,6 +389,10 @@
     '2014':
       count: 16
       total: 92376
+      percent: 0.02
+    '2015':
+      count: 18
+      total: 93874
       percent: 0.02
 '27111':
   name: Otter Tail County
@@ -386,6 +429,10 @@
       count: 18
       total: 22307
       percent: 0.08
+    '2015':
+      count: 20
+      total: 22262
+      percent: 0.09
 '27117':
   name: Pipestone County
   employment:
@@ -436,6 +483,17 @@
       count: 24
       total: 12235
       percent: 0.2
+    '2015':
+      count: 24
+      total: 12292
+      percent: 0.2
+'27123':
+  name: Ramsey County
+  employment:
+    '2015':
+      count: 35
+      total: 327146
+      percent: 0.01
 '27131':
   name: Rice County
   employment:
@@ -475,6 +533,10 @@
       count: 39
       total: 23313
       percent: 0.17
+    '2015':
+      count: 36
+      total: 23693
+      percent: 0.15
 '27137':
   name: St. Louis County
   employment:
@@ -514,6 +576,10 @@
       count: 3381
       total: 96316
       percent: 3.51
+    '2015':
+      count: 3069
+      total: 97163
+      percent: 3.16
 '27139':
   name: Scott County
   employment:
@@ -553,6 +619,10 @@
       count: 82
       total: 43230
       percent: 0.19
+    '2015':
+      count: 74
+      total: 45184
+      percent: 0.16
 '27145':
   name: Stearns County
   employment:
@@ -630,4 +700,8 @@
     '2014':
       count: 71
       total: 76717
+      percent: 0.09
+    '2015':
+      count: 69
+      total: 79210
       percent: 0.09

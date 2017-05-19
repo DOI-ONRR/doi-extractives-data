@@ -76,6 +76,10 @@
       count: 37
       total: 2409
       percent: 1.54
+    '2015':
+      count: 32
+      total: 2414
+      percent: 1.33
 '46047':
   name: Fall River County
   employment:
@@ -115,6 +119,10 @@
       count: 15
       total: 2391
       percent: 0.63
+    '2015':
+      count: 15
+      total: 2404
+      percent: 0.62
 '46051':
   name: Grant County
   employment:
@@ -138,6 +146,10 @@
       count: 28
       total: 3901
       percent: 0.72
+    '2015':
+      count: 27
+      total: 3997
+      percent: 0.68
 '46063':
   name: Harding County
   employment:
@@ -195,3 +207,7 @@
       count: 28
       total: 55435
       percent: 0.05
+    '2015':
+      count: 23
+      total: 55556
+      percent: 0.04

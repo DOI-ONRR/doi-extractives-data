@@ -37,6 +37,10 @@
       count: 454
       total: 10895
       percent: 4.17
+    '2015':
+      count: 345
+      total: 10695
+      percent: 3.23
 '28005':
   name: Amite County
   employment:
@@ -48,6 +52,10 @@
       count: 14
       total: 1624
       percent: 0.86
+    '2015':
+      count: 20
+      total: 1750
+      percent: 1.14
 '28007':
   name: Attala County
   employment:
@@ -71,6 +79,10 @@
       count: 9
       total: 4529
       percent: 0.2
+    '2015':
+      count: 10
+      total: 4479
+      percent: 0.22
 '28023':
   name: Clarke County
   employment:
@@ -110,6 +122,10 @@
       count: 193
       total: 2962
       percent: 6.52
+    '2015':
+      count: 160
+      total: 2965
+      percent: 5.4
 '28029':
   name: Copiah County
   employment:
@@ -149,6 +165,10 @@
       count: 71
       total: 7076
       percent: 1
+    '2015':
+      count: 71
+      total: 7031
+      percent: 1.01
 '28031':
   name: Covington County
   employment:
@@ -179,6 +199,10 @@
     '2014':
       count: 6
       total: 5046
+      percent: 0.12
+    '2015':
+      count: 6
+      total: 5113
       percent: 0.12
 '28033':
   name: DeSoto County
@@ -219,6 +243,10 @@
       count: 30
       total: 51514
       percent: 0.06
+    '2015':
+      count: 32
+      total: 54053
+      percent: 0.06
 '28035':
   name: Forrest County
   employment:
@@ -258,6 +286,10 @@
       count: 119
       total: 37715
       percent: 0.32
+    '2015':
+      count: 101
+      total: 38150
+      percent: 0.26
 '28041':
   name: Greene County
   employment:
@@ -297,6 +329,10 @@
       count: 12
       total: 1989
       percent: 0.6
+    '2015':
+      count: 7
+      total: 1960
+      percent: 0.36
 '28045':
   name: Hancock County
   employment:
@@ -320,6 +356,10 @@
       count: 57
       total: 13204
       percent: 0.43
+    '2015':
+      count: 94
+      total: 13142
+      percent: 0.72
 '28049':
   name: Hinds County
   employment:
@@ -358,6 +398,10 @@
     '2014':
       count: 175
       total: 119322
+      percent: 0.15
+    '2015':
+      count: 175
+      total: 120435
       percent: 0.15
 '28059':
   name: Jackson County
@@ -398,6 +442,10 @@
       count: 48
       total: 49242
       percent: 0.1
+    '2015':
+      count: 50
+      total: 49442
+      percent: 0.1
 '28061':
   name: Jasper County
   employment:
@@ -437,6 +485,10 @@
       count: 99
       total: 3930
       percent: 2.52
+    '2015':
+      count: 77
+      total: 3850
+      percent: 2
 '28065':
   name: Jefferson Davis County
   employment:
@@ -499,6 +551,10 @@
       count: 1855
       total: 28369
       percent: 6.54
+    '2015':
+      count: 1394
+      total: 28263
+      percent: 4.93
 '28073':
   name: Lamar County
   employment:
@@ -538,6 +594,10 @@
       count: 94
       total: 17931
       percent: 0.52
+    '2015':
+      count: 61
+      total: 18473
+      percent: 0.33
 '28077':
   name: Lawrence County
   employment:
@@ -573,6 +633,10 @@
       count: 4
       total: 2410
       percent: 0.17
+    '2015':
+      count: 12
+      total: 2572
+      percent: 0.47
 '28079':
   name: Leake County
   employment:
@@ -588,6 +652,10 @@
       count: 8
       total: 5007
       percent: 0.16
+    '2015':
+      count: 9
+      total: 5027
+      percent: 0.18
 '28085':
   name: Lincoln County
   employment:
@@ -627,6 +695,10 @@
       count: 104
       total: 11235
       percent: 0.93
+    '2015':
+      count: 73
+      total: 11654
+      percent: 0.63
 '28087':
   name: Lowndes County
   employment:
@@ -666,6 +738,10 @@
       count: 61
       total: 24542
       percent: 0.25
+    '2015':
+      count: 40
+      total: 24612
+      percent: 0.16
 '28089':
   name: Madison County
   employment:
@@ -705,6 +781,10 @@
       count: 162
       total: 50204
       percent: 0.32
+    '2015':
+      count: 161
+      total: 52401
+      percent: 0.31
 '28091':
   name: Marion County
   employment:
@@ -744,6 +824,10 @@
       count: 250
       total: 7611
       percent: 3.28
+    '2015':
+      count: 228
+      total: 7718
+      percent: 2.95
 '28095':
   name: Monroe County
   employment:
@@ -783,6 +867,10 @@
       count: 60
       total: 9534
       percent: 0.63
+    '2015':
+      count: 51
+      total: 9696
+      percent: 0.53
 '28101':
   name: Newton County
   employment:
@@ -829,6 +917,10 @@
       count: 18
       total: 10741
       percent: 0.17
+    '2015':
+      count: 19
+      total: 10825
+      percent: 0.18
 '28109':
   name: Pearl River County
   employment:
@@ -852,6 +944,10 @@
       count: 22
       total: 9816
       percent: 0.22
+    '2015':
+      count: 15
+      total: 10050
+      percent: 0.15
 '28111':
   name: Perry County
   employment:
@@ -867,6 +963,10 @@
       count: 15
       total: 2009
       percent: 0.75
+    '2015':
+      count: 14
+      total: 2045
+      percent: 0.68
 '28113':
   name: Pike County
   employment:
@@ -906,6 +1006,10 @@
       count: 37
       total: 14645
       percent: 0.25
+    '2015':
+      count: 42
+      total: 14789
+      percent: 0.28
 '28121':
   name: Rankin County
   employment:
@@ -945,6 +1049,10 @@
       count: 169
       total: 58809
       percent: 0.29
+    '2015':
+      count: 721
+      total: 61322
+      percent: 1.18
 '28127':
   name: Simpson County
   employment:
@@ -972,6 +1080,10 @@
       count: 16
       total: 7267
       percent: 0.22
+    '2015':
+      count: 9
+      total: 6900
+      percent: 0.13
 '28129':
   name: Smith County
   employment:
@@ -1037,6 +1149,10 @@
       count: 15
       total: 2522
       percent: 0.59
+    '2015':
+      count: 17
+      total: 2523
+      percent: 0.67
 '28149':
   name: Warren County
   employment:
@@ -1103,3 +1219,7 @@
       count: 163
       total: 4941
       percent: 3.3
+    '2015':
+      count: 119
+      total: 4866
+      percent: 2.45

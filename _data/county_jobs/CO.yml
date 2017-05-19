@@ -37,6 +37,10 @@
       count: 693
       total: 182840
       percent: 0.38
+    '2015':
+      count: 592
+      total: 191869
+      percent: 0.31
 08005:
   name: Arapahoe County
   employment:
@@ -76,6 +80,10 @@
       count: 941
       total: 305590
       percent: 0.31
+    '2015':
+      count: 925
+      total: 316514
+      percent: 0.29
 08007:
   name: Archuleta County
   employment:
@@ -115,6 +123,10 @@
       count: 29
       total: 3535
       percent: 0.82
+    '2015':
+      count: 26
+      total: 3874
+      percent: 0.67
 08009:
   name: Baca County
   employment:
@@ -146,6 +158,10 @@
       count: 6
       total: 1105
       percent: 0.54
+    '2015':
+      count: 5
+      total: 1089
+      percent: 0.46
 08013:
   name: Boulder County
   employment:
@@ -184,6 +200,10 @@
     '2014':
       count: 276
       total: 169023
+      percent: 0.16
+    '2015':
+      count: 282
+      total: 172735
       percent: 0.16
 08014:
   name: Broomfield County
@@ -274,6 +294,10 @@
       count: 103
       total: 707
       percent: 14.57
+    '2015':
+      count: 68
+      total: 694
+      percent: 9.8
 08019:
   name: Clear Creek County
   employment:
@@ -300,6 +324,10 @@
       count: 25
       total: 1236
       percent: 2.02
+    '2015':
+      count: 28
+      total: 1428
+      percent: 1.96
 08029:
   name: Delta County
   employment:
@@ -335,6 +363,10 @@
       count: 586
       total: 8320
       percent: 7.04
+    '2015':
+      count: 362
+      total: 8226
+      percent: 4.4
 08031:
   name: Denver County
   employment:
@@ -374,6 +406,10 @@
       count: 9112
       total: 460715
       percent: 1.98
+    '2015':
+      count: 8724
+      total: 478275
+      percent: 1.82
 08035:
   name: Douglas County
   employment:
@@ -413,6 +449,10 @@
       count: 583
       total: 107529
       percent: 0.54
+    '2015':
+      count: 567
+      total: 112868
+      percent: 0.5
 08037:
   name: Eagle County
   employment:
@@ -452,6 +492,10 @@
       count: 16
       total: 29743
       percent: 0.05
+    '2015':
+      count: 20
+      total: 30993
+      percent: 0.06
 08041:
   name: El Paso County
   employment:
@@ -490,6 +534,10 @@
     '2014':
       count: 96
       total: 248671
+      percent: 0.04
+    '2015':
+      count: 92
+      total: 256706
       percent: 0.04
 08043:
   name: Fremont County
@@ -530,6 +578,10 @@
       count: 80
       total: 12757
       percent: 0.63
+    '2015':
+      count: 81
+      total: 13249
+      percent: 0.61
 08045:
   name: Garfield County
   employment:
@@ -569,6 +621,10 @@
       count: 2006
       total: 25024
       percent: 8.02
+    '2015':
+      count: 1468
+      total: 25626
+      percent: 5.73
 08049:
   name: Grand County
   employment:
@@ -600,6 +656,10 @@
       count: 20
       total: 7060
       percent: 0.28
+    '2015':
+      count: 18
+      total: 7305
+      percent: 0.25
 08051:
   name: Gunnison County
   employment:
@@ -669,6 +729,10 @@
       count: 382
       total: 222051
       percent: 0.17
+    '2015':
+      count: 384
+      total: 228335
+      percent: 0.17
 08061:
   name: Kiowa County
   employment:
@@ -715,6 +779,10 @@
       count: 611
       total: 25046
       percent: 2.44
+    '2015':
+      count: 596
+      total: 25501
+      percent: 2.34
 08069:
   name: Larimer County
   employment:
@@ -754,6 +822,10 @@
       count: 562
       total: 141746
       percent: 0.4
+    '2015':
+      count: 543
+      total: 147455
+      percent: 0.37
 08071:
   name: Las Animas County
   employment:
@@ -793,6 +865,10 @@
       count: 434
       total: 4937
       percent: 8.79
+    '2015':
+      count: 351
+      total: 4803
+      percent: 7.31
 08075:
   name: Logan County
   employment:
@@ -832,6 +908,10 @@
       count: 220
       total: 8323
       percent: 2.64
+    '2015':
+      count: 226
+      total: 8358
+      percent: 2.7
 08077:
   name: Mesa County
   employment:
@@ -871,6 +951,10 @@
       count: 3116
       total: 59948
       percent: 5.2
+    '2015':
+      count: 2404
+      total: 59801
+      percent: 4.02
 08081:
   name: Moffat County
   employment:
@@ -910,6 +994,10 @@
       count: 495
       total: 4792
       percent: 10.33
+    '2015':
+      count: 476
+      total: 4749
+      percent: 10.02
 08083:
   name: Montezuma County
   employment:
@@ -949,6 +1037,10 @@
       count: 225
       total: 9005
       percent: 2.5
+    '2015':
+      count: 208
+      total: 8877
+      percent: 2.34
 08085:
   name: Montrose County
   employment:
@@ -988,6 +1080,10 @@
       count: 78
       total: 13696
       percent: 0.57
+    '2015':
+      count: 72
+      total: 14066
+      percent: 0.51
 08087:
   name: Morgan County
   employment:
@@ -1027,6 +1123,10 @@
       count: 415
       total: 12191
       percent: 3.4
+    '2015':
+      count: 351
+      total: 11981
+      percent: 2.93
 08091:
   name: Ouray County
   employment:
@@ -1099,6 +1199,10 @@
       count: 24
       total: 57560
       percent: 0.04
+    '2015':
+      count: 19
+      total: 58592
+      percent: 0.03
 08103:
   name: Rio Blanco County
   employment:
@@ -1138,6 +1242,10 @@
       count: 644
       total: 3071
       percent: 20.97
+    '2015':
+      count: 591
+      total: 2925
+      percent: 20.21
 08107:
   name: Routt County
   employment:
@@ -1165,6 +1273,10 @@
       count: 428
       total: 13960
       percent: 3.07
+    '2015':
+      count: 387
+      total: 14093
+      percent: 2.75
 08119:
   name: Teller County
   employment:
@@ -1226,6 +1338,10 @@
       count: 8420
       total: 98530
       percent: 8.55
+    '2015':
+      count: 7617
+      total: 101497
+      percent: 7.5
 08125:
   name: Yuma County
   employment:
@@ -1265,3 +1381,7 @@
       count: 245
       total: 3998
       percent: 6.13
+    '2015':
+      count: 181
+      total: 3954
+      percent: 4.58

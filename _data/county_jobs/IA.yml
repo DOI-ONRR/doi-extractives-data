@@ -13,6 +13,10 @@
       count: 12
       total: 5203
       percent: 0.23
+    '2015':
+      count: 11
+      total: 5151
+      percent: 0.21
 '19013':
   name: Black Hawk County
   employment:
@@ -95,6 +99,13 @@
       count: 147
       total: 7222
       percent: 2.04
+'19103':
+  name: Johnson County
+  employment:
+    '2015':
+      count: 89
+      total: 81551
+      percent: 0.11
 '19111':
   name: Lee County
   employment:
@@ -153,6 +164,10 @@
       count: 92
       total: 127927
       percent: 0.07
+    '2015':
+      count: 106
+      total: 129160
+      percent: 0.08
 '19121':
   name: Madison County
   employment:
@@ -176,6 +191,10 @@
       count: 69
       total: 3631
       percent: 1.9
+    '2015':
+      count: 41
+      total: 3788
+      percent: 1.08
 '19139':
   name: Muscatine County
   employment:
@@ -215,6 +234,17 @@
       count: 52
       total: 22844
       percent: 0.23
+    '2015':
+      count: 51
+      total: 23136
+      percent: 0.22
+'19153':
+  name: Polk County
+  employment:
+    '2015':
+      count: 138
+      total: 288727
+      percent: 0.05
 '19155':
   name: Pottawattamie County
   employment:
@@ -265,6 +295,10 @@
       count: 17
       total: 89869
       percent: 0.02
+    '2015':
+      count: 19
+      total: 90943
+      percent: 0.02
 '19167':
   name: Sioux County
   employment:
@@ -304,6 +338,10 @@
       count: 46
       total: 20027
       percent: 0.23
+    '2015':
+      count: 49
+      total: 20466
+      percent: 0.24
 '19179':
   name: Wapello County
   employment:
@@ -367,3 +405,7 @@
       count: 20
       total: 2329
       percent: 0.86
+    '2015':
+      count: 20
+      total: 2305
+      percent: 0.87

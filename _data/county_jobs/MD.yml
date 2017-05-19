@@ -25,6 +25,10 @@
       count: 108
       total: 29147
       percent: 0.37
+    '2015':
+      count: 84
+      total: 28969
+      percent: 0.29
 '24003':
   name: Anne Arundel County
   employment:
@@ -63,6 +67,10 @@
     '2014':
       count: 44
       total: 255373
+      percent: 0.02
+    '2015':
+      count: 53
+      total: 260398
       percent: 0.02
 '24005':
   name: Baltimore County
@@ -103,6 +111,10 @@
       count: 92
       total: 364651
       percent: 0.03
+    '2015':
+      count: 91
+      total: 370670
+      percent: 0.02
 '24013':
   name: Carroll County
   employment:
@@ -145,6 +157,10 @@
       count: 85
       total: 30643
       percent: 0.28
+    '2015':
+      count: 91
+      total: 30692
+      percent: 0.3
 '24019':
   name: Dorchester County
   employment:
@@ -230,6 +246,10 @@
       count: 259
       total: 11621
       percent: 2.23
+    '2015':
+      count: 389
+      total: 11789
+      percent: 3.3
 '24025':
   name: Harford County
   employment:
@@ -264,6 +284,10 @@
     '2014':
       count: 102
       total: 88149
+      percent: 0.12
+    '2015':
+      count: 105
+      total: 89974
       percent: 0.12
 '24027':
   name: Howard County
@@ -318,6 +342,10 @@
     '2014':
       count: 56
       total: 455820
+      percent: 0.01
+    '2015':
+      count: 53
+      total: 459667
       percent: 0.01
 '24033':
   name: Prince George's County

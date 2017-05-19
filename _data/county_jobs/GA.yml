@@ -21,6 +21,10 @@
       count: 100
       total: 32602
       percent: 0.31
+    '2015':
+      count: 98
+      total: 34328
+      percent: 0.29
 '13021':
   name: Bibb County
   employment:
@@ -71,6 +75,10 @@
       count: 36
       total: 49914
       percent: 0.07
+    '2015':
+      count: 47
+      total: 53283
+      percent: 0.09
 '13067':
   name: Cobb County
   employment:
@@ -101,6 +109,10 @@
     '2014':
       count: 71
       total: 325446
+      percent: 0.02
+    '2015':
+      count: 82
+      total: 332786
       percent: 0.02
 '13087':
   name: Decatur County
@@ -174,6 +186,10 @@
       count: 180
       total: 5796
       percent: 3.11
+    '2015':
+      count: 191
+      total: 5624
+      percent: 3.4
 '13117':
   name: Forsyth County
   employment:
@@ -209,6 +225,10 @@
       count: 77
       total: 66030
       percent: 0.12
+    '2015':
+      count: 80
+      total: 69173
+      percent: 0.12
 '13121':
   name: Fulton County
   employment:
@@ -240,6 +260,10 @@
       count: 88
       total: 766233
       percent: 0.01
+    '2015':
+      count: 135
+      total: 791562
+      percent: 0.02
 '13133':
   name: Greene County
   employment:
@@ -255,6 +279,10 @@
       count: 15
       total: 5524
       percent: 0.27
+    '2015':
+      count: 14
+      total: 5707
+      percent: 0.25
 '13135':
   name: Gwinnett County
   employment:
@@ -328,6 +356,10 @@
       count: 87
       total: 51920
       percent: 0.17
+    '2015':
+      count: 91
+      total: 54084
+      percent: 0.17
 '13163':
   name: Jefferson County
   employment:
@@ -369,6 +401,10 @@
       count: 12
       total: 7193
       percent: 0.17
+    '2015':
+      count: 13
+      total: 6733
+      percent: 0.19
 '13195':
   name: Madison County
   employment:
@@ -380,6 +416,10 @@
       count: 32
       total: 3022
       percent: 1.06
+    '2015':
+      count: 25
+      total: 3025
+      percent: 0.83
 '13215':
   name: Muscogee County
   employment:
@@ -438,6 +478,10 @@
       count: 91
       total: 1761
       percent: 5.17
+    '2015':
+      count: 88
+      total: 1605
+      percent: 5.48
 '13227':
   name: Pickens County
   employment:
@@ -507,6 +551,10 @@
       count: 85
       total: 773
       percent: 11
+    '2015':
+      count: 83
+      total: 703
+      percent: 11.81
 '13275':
   name: Thomas County
   employment:
@@ -533,6 +581,10 @@
       count: 9
       total: 19451
       percent: 0.05
+    '2015':
+      count: 9
+      total: 20381
+      percent: 0.04
 '13301':
   name: Warren County
   employment:
@@ -579,6 +631,10 @@
       count: 211
       total: 6668
       percent: 3.16
+    '2015':
+      count: 210
+      total: 6674
+      percent: 3.15
 '13313':
   name: Whitfield County
   employment:
@@ -614,6 +670,10 @@
       count: 67
       total: 54093
       percent: 0.12
+    '2015':
+      count: 55
+      total: 55003
+      percent: 0.1
 '13319':
   name: Wilkinson County
   employment:
@@ -653,3 +713,7 @@
       count: 1103
       total: 3089
       percent: 35.71
+    '2015':
+      count: 1088
+      total: 3162
+      percent: 34.41

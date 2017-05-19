@@ -33,6 +33,10 @@
       count: 29
       total: 36626
       percent: 0.08
+    '2015':
+      count: 30
+      total: 37676
+      percent: 0.08
 '26007':
   name: Alpena County
   employment:
@@ -72,6 +76,10 @@
       count: 101
       total: 11009
       percent: 0.92
+    '2015':
+      count: 100
+      total: 11322
+      percent: 0.88
 '26009':
   name: Antrim County
   employment:
@@ -132,6 +140,10 @@
       count: 6
       total: 11449
       percent: 0.05
+    '2015':
+      count: 7
+      total: 11916
+      percent: 0.06
 '26017':
   name: Bay County
   employment:
@@ -170,6 +182,10 @@
     '2014':
       count: 14
       total: 35528
+      percent: 0.04
+    '2015':
+      count: 13
+      total: 34817
       percent: 0.04
 '26021':
   name: Berrien County
@@ -210,6 +226,10 @@
       count: 84
       total: 60312
       percent: 0.14
+    '2015':
+      count: 88
+      total: 61064
+      percent: 0.14
 '26025':
   name: Calhoun County
   employment:
@@ -244,6 +264,10 @@
       count: 26
       total: 12701
       percent: 0.2
+    '2015':
+      count: 28
+      total: 12724
+      percent: 0.22
 '26035':
   name: Clare County
   employment:
@@ -285,6 +309,10 @@
     '2014':
       count: 62
       total: 15540
+      percent: 0.4
+    '2015':
+      count: 64
+      total: 16040
       percent: 0.4
 '26039':
   name: Crawford County
@@ -355,6 +383,10 @@
       count: 38
       total: 35976
       percent: 0.11
+    '2015':
+      count: 38
+      total: 40700
+      percent: 0.09
 '26047':
   name: Emmet County
   employment:
@@ -400,6 +432,10 @@
     '2014':
       count: 41
       total: 132773
+      percent: 0.03
+    '2015':
+      count: 45
+      total: 132470
       percent: 0.03
 '26051':
   name: Gladwin County
@@ -447,6 +483,10 @@
       count: 268
       total: 47248
       percent: 0.57
+    '2015':
+      count: 207
+      total: 48330
+      percent: 0.43
 '26057':
   name: Gratiot County
   employment:
@@ -536,6 +576,10 @@
       count: 228
       total: 149788
       percent: 0.15
+    '2015':
+      count: 209
+      total: 146479
+      percent: 0.14
 '26069':
   name: Iosco County
   employment:
@@ -563,6 +607,10 @@
       count: 26
       total: 7628
       percent: 0.34
+    '2015':
+      count: 22
+      total: 7447
+      percent: 0.3
 '26073':
   name: Isabella County
   employment:
@@ -602,6 +650,10 @@
       count: 393
       total: 29129
       percent: 1.35
+    '2015':
+      count: 306
+      total: 29232
+      percent: 1.05
 '26075':
   name: Jackson County
   employment:
@@ -640,6 +692,10 @@
     '2014':
       count: 87
       total: 56188
+      percent: 0.15
+    '2015':
+      count: 87
+      total: 56469
       percent: 0.15
 '26077':
   name: Kalamazoo County
@@ -680,6 +736,10 @@
       count: 41
       total: 112686
       percent: 0.04
+    '2015':
+      count: 36
+      total: 114587
+      percent: 0.03
 '26079':
   name: Kalkaska County
   employment:
@@ -719,6 +779,10 @@
       count: 485
       total: 3904
       percent: 12.42
+    '2015':
+      count: 332
+      total: 3827
+      percent: 8.68
 '26081':
   name: Kent County
   employment:
@@ -758,6 +822,10 @@
       count: 115
       total: 356367
       percent: 0.03
+    '2015':
+      count: 92
+      total: 369361
+      percent: 0.02
 '26087':
   name: Lapeer County
   employment:
@@ -797,6 +865,10 @@
       count: 72
       total: 20785
       percent: 0.35
+    '2015':
+      count: 84
+      total: 21022
+      percent: 0.4
 '26089':
   name: Leelanau County
   employment:
@@ -866,6 +938,10 @@
       count: 39
       total: 54164
       percent: 0.07
+    '2015':
+      count: 43
+      total: 56100
+      percent: 0.08
 '26097':
   name: Mackinac County
   employment:
@@ -912,6 +988,10 @@
       count: 29
       total: 6797
       percent: 0.43
+    '2015':
+      count: 33
+      total: 6945
+      percent: 0.48
 '26103':
   name: Marquette County
   employment:
@@ -951,6 +1031,10 @@
       count: 1539
       total: 26906
       percent: 5.72
+    '2015':
+      count: 1405
+      total: 26762
+      percent: 5.25
 '26107':
   name: Mecosta County
   employment:
@@ -973,6 +1057,10 @@
       count: 7
       total: 7280
       percent: 0.1
+    '2015':
+      count: 5
+      total: 7399
+      percent: 0.07
 '26113':
   name: Missaukee County
   employment:
@@ -992,6 +1080,10 @@
       count: 21
       total: 3150
       percent: 0.67
+    '2015':
+      count: 16
+      total: 3280
+      percent: 0.49
 '26117':
   name: Montcalm County
   employment:
@@ -1072,6 +1164,10 @@
       count: 134
       total: 691373
       percent: 0.02
+    '2015':
+      count: 141
+      total: 706170
+      percent: 0.02
 '26127':
   name: Oceana County
   employment:
@@ -1087,6 +1183,10 @@
       count: 35
       total: 7079
       percent: 0.49
+    '2015':
+      count: 35
+      total: 6788
+      percent: 0.52
 '26129':
   name: Ogemaw County
   employment:
@@ -1126,6 +1226,10 @@
       count: 35
       total: 6005
       percent: 0.58
+    '2015':
+      count: 28
+      total: 5893
+      percent: 0.48
 '26133':
   name: Osceola County
   employment:
@@ -1180,6 +1284,10 @@
       count: 283
       total: 9554
       percent: 2.96
+    '2015':
+      count: 269
+      total: 9845
+      percent: 2.73
 '26139':
   name: Ottawa County
   employment:
@@ -1219,6 +1327,10 @@
       count: 25
       total: 115679
       percent: 0.02
+    '2015':
+      count: 27
+      total: 119793
+      percent: 0.02
 '26143':
   name: Roscommon County
   employment:
@@ -1245,6 +1357,10 @@
       count: 85
       total: 83081
       percent: 0.1
+    '2015':
+      count: 92
+      total: 83576
+      percent: 0.11
 '26147':
   name: St. Clair County
   employment:
@@ -1263,6 +1379,10 @@
     '2009':
       count: 4
       total: 43312
+      percent: 0.01
+    '2015':
+      count: 3
+      total: 44225
       percent: 0.01
 '26151':
   name: Sanilac County
@@ -1303,6 +1423,10 @@
       count: 66
       total: 10861
       percent: 0.61
+    '2015':
+      count: 68
+      total: 10898
+      percent: 0.62
 '26153':
   name: Schoolcraft County
   employment:
@@ -1342,6 +1466,10 @@
       count: 121
       total: 2685
       percent: 4.51
+    '2015':
+      count: 135
+      total: 2615
+      percent: 5.16
 '26155':
   name: Shiawassee County
   employment:
@@ -1435,6 +1563,10 @@
       count: 10
       total: 198661
       percent: 0.01
+    '2015':
+      count: 37
+      total: 202447
+      percent: 0.02
 '26163':
   name: Wayne County
   employment:
@@ -1474,6 +1606,10 @@
       count: 598
       total: 690608
       percent: 0.09
+    '2015':
+      count: 579
+      total: 699215
+      percent: 0.08
 '26165':
   name: Wexford County
   employment:
@@ -1513,3 +1649,7 @@
       count: 42
       total: 13007
       percent: 0.32
+    '2015':
+      count: 37
+      total: 12920
+      percent: 0.29

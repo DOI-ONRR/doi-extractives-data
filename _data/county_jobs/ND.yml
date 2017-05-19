@@ -55,6 +55,10 @@
       count: 397
       total: 2724
       percent: 14.57
+    '2015':
+      count: 319
+      total: 2625
+      percent: 12.15
 '38011':
   name: Bowman County
   employment:
@@ -94,6 +98,10 @@
       count: 136
       total: 1799
       percent: 7.56
+    '2015':
+      count: 123
+      total: 1734
+      percent: 7.09
 '38013':
   name: Burke County
   employment:
@@ -164,6 +172,10 @@
       count: 122
       total: 57348
       percent: 0.21
+    '2015':
+      count: 146
+      total: 58461
+      percent: 0.25
 '38017':
   name: Cass County
   employment:
@@ -197,6 +209,10 @@
       count: 1057
       total: 3220
       percent: 32.83
+    '2015':
+      count: 639
+      total: 2816
+      percent: 22.69
 '38027':
   name: Eddy County
   employment:
@@ -208,6 +224,10 @@
       count: 21
       total: 764
       percent: 2.75
+    '2015':
+      count: 17
+      total: 743
+      percent: 2.29
 '38033':
   name: Golden Valley County
   employment:
@@ -219,6 +239,10 @@
       count: 18
       total: 718
       percent: 2.51
+    '2015':
+      count: 11
+      total: 709
+      percent: 1.55
 '38035':
   name: Grand Forks County
   employment:
@@ -230,6 +254,17 @@
       count: 190
       total: 40750
       percent: 0.47
+    '2015':
+      count: 184
+      total: 40946
+      percent: 0.45
+'38049':
+  name: McHenry County
+  employment:
+    '2015':
+      count: 8
+      total: 1266
+      percent: 0.63
 '38053':
   name: McKenzie County
   employment:
@@ -269,6 +304,10 @@
       count: 2075
       total: 11409
       percent: 18.19
+    '2015':
+      count: 1856
+      total: 10827
+      percent: 17.14
 '38059':
   name: Morton County
   employment:
@@ -288,6 +327,10 @@
       count: 190
       total: 10977
       percent: 1.73
+    '2015':
+      count: 131
+      total: 11188
+      percent: 1.17
 '38061':
   name: Mountrail County
   employment:
@@ -319,6 +362,10 @@
       count: 1689
       total: 8261
       percent: 20.45
+    '2015':
+      count: 1429
+      total: 7066
+      percent: 20.22
 '38067':
   name: Pembina County
   employment:
@@ -329,6 +376,10 @@
     '2014':
       count: 6
       total: 3742
+      percent: 0.16
+    '2015':
+      count: 6
+      total: 3693
       percent: 0.16
 '38075':
   name: Renville County
@@ -361,6 +412,10 @@
       count: 167
       total: 904
       percent: 18.47
+    '2015':
+      count: 77
+      total: 782
+      percent: 9.85
 '38089':
   name: Stark County
   employment:
@@ -400,6 +455,10 @@
       count: 5056
       total: 24212
       percent: 20.88
+    '2015':
+      count: 3888
+      total: 22168
+      percent: 17.54
 '38101':
   name: Ward County
   employment:
@@ -439,6 +498,10 @@
       count: 2052
       total: 36030
       percent: 5.7
+    '2015':
+      count: 1653
+      total: 34995
+      percent: 4.72
 '38105':
   name: Williams County
   employment:
@@ -478,3 +541,7 @@
       count: 14744
       total: 41573
       percent: 35.47
+    '2015':
+      count: 11103
+      total: 36079
+      percent: 30.77

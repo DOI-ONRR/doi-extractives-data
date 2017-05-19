@@ -37,6 +37,10 @@
       count: 36
       total: 435399
       percent: 0.01
+    '2015':
+      count: 25
+      total: 441172
+      percent: 0.01
 '34005':
   name: Burlington County
   employment:
@@ -94,6 +98,10 @@
       count: 43
       total: 40286
       percent: 0.11
+    '2015':
+      count: 34
+      total: 40873
+      percent: 0.08
 '34011':
   name: Cumberland County
   employment:
@@ -133,12 +141,20 @@
       count: 134
       total: 57726
       percent: 0.23
+    '2015':
+      count: 133
+      total: 58405
+      percent: 0.23
 '34013':
   name: Essex County
   employment:
     '2009':
       count: 18
       total: 342466
+      percent: 0.01
+    '2015':
+      count: 20
+      total: 333483
       percent: 0.01
 '34015':
   name: Gloucester County
@@ -179,6 +195,10 @@
       count: 83
       total: 99146
       percent: 0.08
+    '2015':
+      count: 61
+      total: 101957
+      percent: 0.06
 '34017':
   name: Hudson County
   employment:
@@ -201,6 +221,10 @@
       count: 40
       total: 47119
       percent: 0.08
+    '2015':
+      count: 56
+      total: 46398
+      percent: 0.12
 '34021':
   name: Mercer County
   employment:
@@ -224,6 +248,10 @@
       count: 12
       total: 231400
       percent: 0.01
+    '2015':
+      count: 11
+      total: 238109
+      percent: 0
 '34023':
   name: Middlesex County
   employment:
@@ -262,6 +290,10 @@
     '2014':
       count: 52
       total: 391130
+      percent: 0.01
+    '2015':
+      count: 23
+      total: 401810
       percent: 0.01
 '34025':
   name: Monmouth County
@@ -348,6 +380,10 @@
       count: 118
       total: 156608
       percent: 0.08
+    '2015':
+      count: 106
+      total: 159215
+      percent: 0.07
 '34031':
   name: Passaic County
   employment:
@@ -387,6 +423,10 @@
       count: 126
       total: 164793
       percent: 0.08
+    '2015':
+      count: 139
+      total: 164046
+      percent: 0.08
 '34035':
   name: Somerset County
   employment:
@@ -406,6 +446,10 @@
       count: 352
       total: 178761
       percent: 0.2
+    '2015':
+      count: 339
+      total: 181055
+      percent: 0.19
 '34037':
   name: Sussex County
   employment:
@@ -445,6 +489,10 @@
       count: 65
       total: 38109
       percent: 0.17
+    '2015':
+      count: 115
+      total: 38490
+      percent: 0.3
 '34039':
   name: Union County
   employment:

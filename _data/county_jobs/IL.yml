@@ -25,6 +25,10 @@
       count: 203
       total: 32711
       percent: 0.62
+    '2015':
+      count: 220
+      total: 32569
+      percent: 0.68
 '17007':
   name: Boone County
   employment:
@@ -62,6 +66,10 @@
       count: 43
       total: 11848
       percent: 0.36
+    '2015':
+      count: 26
+      total: 11393
+      percent: 0.23
 '17019':
   name: Champaign County
   employment:
@@ -96,6 +104,10 @@
       count: 30
       total: 10706
       percent: 0.28
+    '2015':
+      count: 30
+      total: 10516
+      percent: 0.29
 '17023':
   name: Clark County
   employment:
@@ -135,6 +147,10 @@
       count: 77
       total: 4621
       percent: 1.67
+    '2015':
+      count: 75
+      total: 4773
+      percent: 1.57
 '17025':
   name: Clay County
   employment:
@@ -174,6 +190,10 @@
       count: 138
       total: 5084
       percent: 2.71
+    '2015':
+      count: 129
+      total: 5235
+      percent: 2.46
 '17027':
   name: Clinton County
   employment:
@@ -228,6 +248,10 @@
       count: 27
       total: 23581
       percent: 0.11
+    '2015':
+      count: 27
+      total: 23369
+      percent: 0.12
 '17031':
   name: Cook County
   employment:
@@ -266,6 +290,10 @@
     '2014':
       count: 427
       total: 2468453
+      percent: 0.02
+    '2015':
+      count: 461
+      total: 2531066
       percent: 0.02
 '17033':
   name: Crawford County
@@ -306,6 +334,10 @@
       count: 182
       total: 7879
       percent: 2.31
+    '2015':
+      count: 139
+      total: 7752
+      percent: 1.79
 '17037':
   name: DeKalb County
   employment:
@@ -368,6 +400,10 @@
       count: 286
       total: 600818
       percent: 0.05
+    '2015':
+      count: 283
+      total: 603939
+      percent: 0.05
 '17047':
   name: Edwards County
   employment:
@@ -378,6 +414,10 @@
     '2014':
       count: 21
       total: 2262
+      percent: 0.93
+    '2015':
+      count: 22
+      total: 2375
       percent: 0.93
 '17049':
   name: Effingham County
@@ -414,6 +454,10 @@
       count: 27
       total: 20079
       percent: 0.13
+    '2015':
+      count: 19
+      total: 20285
+      percent: 0.09
 '17051':
   name: Fayette County
   employment:
@@ -453,6 +497,10 @@
       count: 74
       total: 5419
       percent: 1.37
+    '2015':
+      count: 64
+      total: 5359
+      percent: 1.19
 '17055':
   name: Franklin County
   employment:
@@ -492,6 +540,10 @@
       count: 29
       total: 8221
       percent: 0.35
+    '2015':
+      count: 28
+      total: 8193
+      percent: 0.34
 '17059':
   name: Gallatin County
   employment:
@@ -627,6 +679,10 @@
       count: 10
       total: 8069
       percent: 0.12
+    '2015':
+      count: 10
+      total: 8056
+      percent: 0.12
 '17077':
   name: Jackson County
   employment:
@@ -693,6 +749,10 @@
       count: 36
       total: 2039
       percent: 1.77
+    '2015':
+      count: 24
+      total: 2020
+      percent: 1.19
 '17081':
   name: Jefferson County
   employment:
@@ -700,6 +760,10 @@
       count: 96
       total: 19209
       percent: 0.5
+    '2015':
+      count: 71
+      total: 19059
+      percent: 0.37
 '17089':
   name: Kane County
   employment:
@@ -739,6 +803,10 @@
       count: 131
       total: 204257
       percent: 0.06
+    '2015':
+      count: 146
+      total: 206432
+      percent: 0.07
 '17093':
   name: Kendall County
   employment:
@@ -800,6 +868,10 @@
       count: 352
       total: 4469
       percent: 7.88
+    '2015':
+      count: 316
+      total: 4521
+      percent: 6.99
 '17103':
   name: Lee County
   employment:
@@ -815,6 +887,10 @@
       count: 54
       total: 13047
       percent: 0.41
+    '2015':
+      count: 58
+      total: 12975
+      percent: 0.45
 '17111':
   name: McHenry County
   employment:
@@ -854,6 +930,17 @@
       count: 47
       total: 95798
       percent: 0.05
+    '2015':
+      count: 46
+      total: 96063
+      percent: 0.05
+'17113':
+  name: McLean County
+  employment:
+    '2015':
+      count: 23
+      total: 84576
+      percent: 0.03
 '17115':
   name: Macon County
   employment:
@@ -881,6 +968,10 @@
       count: 8
       total: 48975
       percent: 0.02
+    '2015':
+      count: 4
+      total: 49293
+      percent: 0.01
 '17117':
   name: Macoupin County
   employment:
@@ -927,6 +1018,10 @@
       count: 151
       total: 96789
       percent: 0.16
+    '2015':
+      count: 163
+      total: 97426
+      percent: 0.17
 '17121':
   name: Marion County
   employment:
@@ -966,6 +1061,10 @@
       count: 166
       total: 12887
       percent: 1.29
+    '2015':
+      count: 129
+      total: 12993
+      percent: 0.99
 '17123':
   name: Marshall County
   employment:
@@ -993,6 +1092,10 @@
       count: 19
       total: 3061
       percent: 0.62
+    '2015':
+      count: 20
+      total: 2919
+      percent: 0.69
 '17133':
   name: Monroe County
   employment:
@@ -1067,6 +1170,10 @@
       count: 314
       total: 8575
       percent: 3.66
+    '2015':
+      count: 199
+      total: 8622
+      percent: 2.31
 '17141':
   name: Ogle County
   employment:
@@ -1113,6 +1220,10 @@
       count: 44
       total: 100367
       percent: 0.04
+    '2015':
+      count: 43
+      total: 101328
+      percent: 0.04
 '17157':
   name: Randolph County
   employment:
@@ -1144,6 +1255,10 @@
       count: 8
       total: 12128
       percent: 0.07
+    '2015':
+      count: 186
+      total: 12429
+      percent: 1.5
 '17159':
   name: Richland County
   employment:
@@ -1183,6 +1298,10 @@
       count: 157
       total: 5993
       percent: 2.62
+    '2015':
+      count: 116
+      total: 6021
+      percent: 1.93
 '17161':
   name: Rock Island County
   employment:
@@ -1222,6 +1341,10 @@
       count: 62
       total: 73685
       percent: 0.08
+    '2015':
+      count: 68
+      total: 72359
+      percent: 0.09
 '17163':
   name: St. Clair County
   employment:
@@ -1260,6 +1383,10 @@
     '2014':
       count: 77
       total: 92011
+      percent: 0.08
+    '2015':
+      count: 77
+      total: 92863
       percent: 0.08
 '17165':
   name: Saline County
@@ -1338,6 +1465,10 @@
       count: 12
       total: 57836
       percent: 0.02
+    '2015':
+      count: 12
+      total: 56483
+      percent: 0.02
 '17185':
   name: Wabash County
   employment:
@@ -1377,6 +1508,10 @@
       count: 225
       total: 3180
       percent: 7.08
+    '2015':
+      count: 214
+      total: 3149
+      percent: 6.8
 '17189':
   name: Washington County
   employment:
@@ -1408,6 +1543,10 @@
       count: 17
       total: 5629
       percent: 0.3
+    '2015':
+      count: 11
+      total: 5967
+      percent: 0.18
 '17191':
   name: Wayne County
   employment:
@@ -1447,6 +1586,10 @@
       count: 177
       total: 4141
       percent: 4.27
+    '2015':
+      count: 148
+      total: 4126
+      percent: 3.59
 '17193':
   name: White County
   employment:
@@ -1486,6 +1629,10 @@
       count: 778
       total: 4477
       percent: 17.38
+    '2015':
+      count: 651
+      total: 4388
+      percent: 14.84
 '17195':
   name: Whiteside County
   employment:
@@ -1536,6 +1683,10 @@
       count: 210
       total: 215179
       percent: 0.1
+    '2015':
+      count: 232
+      total: 220753
+      percent: 0.11
 '17201':
   name: Winnebago County
   employment:
@@ -1559,3 +1710,7 @@
       count: 5
       total: 126130
       percent: 0
+    '2015':
+      count: 12
+      total: 127388
+      percent: 0.01

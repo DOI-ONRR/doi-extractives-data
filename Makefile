@@ -152,7 +152,8 @@ data/bls: \
 	data/state_jobs.yml \
 	data/state_jobs_by_commodity.yml \
 	data/national_jobs.yml \
-	data/national_jobs_by_commodity.yml
+	data/national_jobs_by_commodity.yml \
+	data/county_jobs
 
 data/state_jobs.yml:
 	$(query) --format ndjson " \

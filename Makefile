@@ -3,7 +3,7 @@ db_url ?= sqlite://$(db)
 
 node_bin ?= ./node_modules/.bin/
 
-tables ?= $(node_bin)tables -d $(db_url)
+tables ?= $(node_bin)tables -d $(db_url) -b 500
 tito ?= $(node_bin)tito
 nestly ?= $(node_bin)nestly
 sqlite ?= sqlite3 -bail $(db)
@@ -11,8 +11,7 @@ sqlite ?= sqlite3 -bail $(db)
 query ?= ./data/bin/query.js --db $(db_url)
 
 load-table = $(tables) -i $(1) -n $(2)
-load-model = $(call load-table,$(1),$(2)) --config data/db/models/$(2).js
-load-sql = echo "-- loading SQL: $(1) --"; cat $(1) | $(sqlite)
+load-sql = echo "-- loading SQL: $(1) --"; $(sqlite) < $(1)
 drop-table = echo "-- dropping: $(1) --"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
 
 all: db
@@ -737,11 +736,12 @@ tables/jobs: tables/bls tables/self_employment
 tables/bls: data/jobs/bls
 	@$(call drop-table,bls_employment)
 	tmp=$^/all.ndjson; \
+	rm -f $$tmp; \
 	for jobs_filename in $^/????/joined.tsv; do \
 		$(tito) -r tsv --map ./data/jobs/transform.js \
 			$$jobs_filename >> $$tmp; \
 	done; \
-	$(tables) -i $$tmp -t ndjson -n bls_employment && \
+	$(tables) -i $$tmp -t ndjson -n bls_employment; \
 	rm $$tmp
 	@$(call load-sql,data/jobs/rollup-bls.sql)
 

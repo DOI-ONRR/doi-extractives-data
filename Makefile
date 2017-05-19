@@ -143,9 +143,16 @@ data/jobs: \
 	data/state_jobs.yml \
 	data/state_jobs_by_commodity.yml \
 	data/national_jobs.yml \
+	data/national_jobs_by_commodity.yml \
 	data/county_jobs \
 	data/state_self_employment.yml \
 	data/national_self_employment.yml
+
+data/bls: \
+	data/state_jobs.yml \
+	data/state_jobs_by_commodity.yml \
+	data/national_jobs.yml \
+	data/national_jobs_by_commodity.yml
 
 data/state_jobs.yml:
 	$(query) --format ndjson " \
@@ -154,7 +161,6 @@ data/state_jobs.yml:
 		FROM state_bls_employment \
 		WHERE \
 			commodity = 'Extractives' \
-			AND jobs > 0 \
 		ORDER BY state, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
@@ -168,7 +174,6 @@ data/state_jobs_by_commodity.yml:
 		FROM state_bls_employment \
 		WHERE \
 			commodity != 'All' \
-			AND jobs > 0 \
 		ORDER BY state, year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs_by_commodity.yml \
@@ -181,7 +186,6 @@ data/national_jobs.yml:
 		FROM national_bls_employment \
 		WHERE \
 			commodity = 'Extractives' \
-			AND jobs > 0 \
 		ORDER BY year" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \

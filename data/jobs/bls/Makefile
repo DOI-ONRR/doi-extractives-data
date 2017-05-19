@@ -11,7 +11,7 @@ years: $(years)
 
 %: %.zip
 	mkdir -p $@/commodity
-	unzip $< -d $@_ $(csv_pattern)
+	unzip -q $< -d $@_ $(csv_pattern)
 	mv    $@_/$@.annual.by_industry/*.csv $@_
 	rmdir $@_/$@.annual.by_industry
 	./load.js --config commodities.yml --in $@_ --year $@ --out $@

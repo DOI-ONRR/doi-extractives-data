@@ -37,7 +37,8 @@ var validRow = (d, type) => {
     return false;
   }
   var fips = d[fields.fips];
-  return utils.validFips(fips);
+  // include entire country rollups
+  return fips === 'US000' || utils.validFips(fips);
 };
 
 var mapRow = (d, task) => {

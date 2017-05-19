@@ -4477,292 +4477,292 @@ year	naics	commodity	state	county	fips	jobs
 2012	21	Mining	Virgin Islands	St. Croix	78010	22
 2012	21	Mining		U.S. TOTAL	US000	312
 2012	21	Mining		U.S. TOTAL	US000	798132
-2012	211	Oil & Gas	Alabama		01000	756
-2012	211	Oil & Gas	Alabama	Mobile County	01097	363
-2012	211	Oil & Gas	Alabama	Tuscaloosa County	01125	143
-2012	211	Oil & Gas	Alaska		02000	3890
-2012	211	Oil & Gas	Alaska	Anchorage Borough	02020	1742
-2012	211	Oil & Gas	Alaska	Kenai Peninsula Borough	02122	121
-2012	211	Oil & Gas	Arizona		04000	122
-2012	211	Oil & Gas	Arizona	Maricopa County	04013	25
-2012	211	Oil & Gas	Arkansas		05000	1640
-2012	211	Oil & Gas	Arkansas	Columbia County	05027	46
-2012	211	Oil & Gas	Arkansas	Ouachita County	05103	21
-2012	211	Oil & Gas	Arkansas	Union County	05139	138
-2012	211	Oil & Gas	Arkansas	White County	05145	281
-2012	211	Oil & Gas	California		06000	9748
-2012	211	Oil & Gas	California	Fresno County	06019	91
-2012	211	Oil & Gas	California	Kern County	06029	3280
-2012	211	Oil & Gas	California	Los Angeles County	06037	2227
-2012	211	Oil & Gas	California	Orange County	06059	89
-2012	211	Oil & Gas	California	Santa Barbara County	06083	202
-2012	211	Oil & Gas	California	Ventura County	06111	541
-2012	211	Oil & Gas	Colorado		08000	9152
-2012	211	Oil & Gas	Colorado	Arapahoe County	08005	335
-2012	211	Oil & Gas	Colorado	Boulder County	08013	11
-2012	211	Oil & Gas	Colorado	Denver County	08031	5734
-2012	211	Oil & Gas	Colorado	El Paso County	08041	95
-2012	211	Oil & Gas	Colorado	Garfield County	08045	601
-2012	211	Oil & Gas	Colorado	Jefferson County	08059	122
-2012	211	Oil & Gas	Colorado	La Plata County	08067	319
-2012	211	Oil & Gas	Colorado	Larimer County	08069	37
-2012	211	Oil & Gas	Colorado	Logan County	08075	24
-2012	211	Oil & Gas	Colorado	Mesa County	08077	131
-2012	211	Oil & Gas	Colorado	Moffat County	08081	23
-2012	211	Oil & Gas	Colorado	Weld County	08123	811
-2012	211	Oil & Gas	Colorado	Yuma County	08125	153
-2012	211	Oil & Gas	Florida		12000	97
-2012	211	Oil & Gas	Idaho		16000	39
-2012	211	Oil & Gas	Illinois		17000	974
-2012	211	Oil & Gas	Illinois	Clark County	17023	18
-2012	211	Oil & Gas	Illinois	Clay County	17025	42
-2012	211	Oil & Gas	Illinois	Cook County	17031	8
-2012	211	Oil & Gas	Illinois	Fayette County	17051	197
-2012	211	Oil & Gas	Illinois	Jefferson County	17081	106
-2012	211	Oil & Gas	Illinois	Lawrence County	17101	107
-2012	211	Oil & Gas	Illinois	Marion County	17121	44
-2012	211	Oil & Gas	Illinois	Richland County	17159	73
-2012	211	Oil & Gas	Illinois	Wayne County	17191	51
-2012	211	Oil & Gas	Indiana		18000	221
-2012	211	Oil & Gas	Indiana	Gibson County	18051	19
-2012	211	Oil & Gas	Indiana	Posey County	18129	19
-2012	211	Oil & Gas	Indiana	Vanderburgh County	18163	90
-2012	211	Oil & Gas	Kansas		20000	2611
-2012	211	Oil & Gas	Kansas	Allen County	20001	64
-2012	211	Oil & Gas	Kansas	Anderson County	20003	31
-2012	211	Oil & Gas	Kansas	Barber County	20007	49
-2012	211	Oil & Gas	Kansas	Chautauqua County	20019	56
-2012	211	Oil & Gas	Kansas	Finney County	20055	129
-2012	211	Oil & Gas	Kansas	Franklin County	20059	43
-2012	211	Oil & Gas	Kansas	Grant County	20067	203
-2012	211	Oil & Gas	Kansas	Harper County	20077	66
-2012	211	Oil & Gas	Kansas	Johnson County	20091	101
-2012	211	Oil & Gas	Kansas	Miami County	20121	41
-2012	211	Oil & Gas	Kansas	Montgomery County	20125	66
-2012	211	Oil & Gas	Kansas	Morton County	20129	58
-2012	211	Oil & Gas	Kansas	Pratt County	20151	30
-2012	211	Oil & Gas	Kansas	Rooks County	20163	19
-2012	211	Oil & Gas	Kansas	Russell County	20167	58
-2012	211	Oil & Gas	Kansas	Sedgwick County	20173	367
-2012	211	Oil & Gas	Kansas	Seward County	20175	64
-2012	211	Oil & Gas	Kansas	Sumner County	20191	15
-2012	211	Oil & Gas	Kansas	Wilson County	20205	46
-2012	211	Oil & Gas	Kansas	Woodson County	20207	70
-2012	211	Oil & Gas	Kentucky		21000	784
-2012	211	Oil & Gas	Kentucky	Daviess County	21059	18
-2012	211	Oil & Gas	Kentucky	Fayette County	21067	40
-2012	211	Oil & Gas	Kentucky	Lee County	21129	49
-2012	211	Oil & Gas	Kentucky	Muhlenberg County	21177	8
-2012	211	Oil & Gas	Kentucky	Pike County	21195	182
-2012	211	Oil & Gas	Kentucky	Warren County	21227	73
-2012	211	Oil & Gas	Louisiana		22000	9802
-2012	211	Oil & Gas	Louisiana	Acadia Parish	22001	17
-2012	211	Oil & Gas	Louisiana	Assumption Parish	22007	23
-2012	211	Oil & Gas	Louisiana	Calcasieu Parish	22019	79
-2012	211	Oil & Gas	Louisiana	Cameron Parish	22023	73
-2012	211	Oil & Gas	Louisiana	Claiborne Parish	22027	52
-2012	211	Oil & Gas	Louisiana	East Baton Rouge Parish	22033	55
-2012	211	Oil & Gas	Louisiana	Jefferson Davis Parish	22053	100
-2012	211	Oil & Gas	Louisiana	Lafourche Parish	22057	584
-2012	211	Oil & Gas	Louisiana	Lincoln Parish	22061	54
-2012	211	Oil & Gas	Louisiana	Orleans Parish	22071	1390
-2012	211	Oil & Gas	Louisiana	Plaquemines Parish	22075	765
-2012	211	Oil & Gas	Louisiana	Sabine Parish	22085	6
-2012	211	Oil & Gas	Massachusetts		25000	11
-2012	211	Oil & Gas	Michigan		26000	590
-2012	211	Oil & Gas	Michigan	Bay County	26017	10
-2012	211	Oil & Gas	Michigan	Grand Traverse County	26055	113
-2012	211	Oil & Gas	Minnesota		27000	33
-2012	211	Oil & Gas	Mississippi		28000	1043
-2012	211	Oil & Gas	Mississippi	Adams County	28001	130
-2012	211	Oil & Gas	Mississippi	Madison County	28089	122
-2012	211	Oil & Gas	Mississippi	Rankin County	28121	60
-2012	211	Oil & Gas	Missouri		29000	22
-2012	211	Oil & Gas	Montana		30000	788
-2012	211	Oil & Gas	Montana	Glacier County	30035	82
-2012	211	Oil & Gas	Montana	Pondera County	30073	13
-2012	211	Oil & Gas	Montana	Richland County	30083	122
-2012	211	Oil & Gas	Montana	Toole County	30101	108
-2012	211	Oil & Gas	Montana	Yellowstone County	30111	95
-2012	211	Oil & Gas	Nebraska		31000	68
-2012	211	Oil & Gas	Nebraska	Red Willow County	31145	31
-2012	211	Oil & Gas	Nevada		32000	24
-2012	211	Oil & Gas	New Jersey		34000	36
-2012	211	Oil & Gas	New Mexico		35000	5036
-2012	211	Oil & Gas	New Mexico	Bernalillo County	35001	40
-2012	211	Oil & Gas	New Mexico	Santa Fe County	35049	45
-2012	211	Oil & Gas	New York		36000	634
-2012	211	Oil & Gas	New York	Allegany County	36003	9
-2012	211	Oil & Gas	New York	Cattaraugus County	36009	45
-2012	211	Oil & Gas	New York	Chemung County	36015	503
-2012	211	Oil & Gas	North Carolina		37000	37
-2012	211	Oil & Gas	North Dakota		38000	1614
-2012	211	Oil & Gas	North Dakota	McKenzie County	38053	284
-2012	211	Oil & Gas	North Dakota	Mountrail County	38061	164
-2012	211	Oil & Gas	North Dakota	Ward County	38101	169
-2012	211	Oil & Gas	North Dakota	Williams County	38105	548
-2012	211	Oil & Gas	Ohio		39000	3086
-2012	211	Oil & Gas	Ohio	Fairfield County	39045	15
-2012	211	Oil & Gas	Ohio	Guernsey County	39059	83
-2012	211	Oil & Gas	Ohio	Holmes County	39075	28
-2012	211	Oil & Gas	Ohio	Knox County	39083	24
-2012	211	Oil & Gas	Ohio	Licking County	39089	89
-2012	211	Oil & Gas	Ohio	Muskingum County	39119	95
-2012	211	Oil & Gas	Ohio	Portage County	39133	65
-2012	211	Oil & Gas	Ohio	Stark County	39151	203
-2012	211	Oil & Gas	Ohio	Summit County	39153	31
-2012	211	Oil & Gas	Ohio	Trumbull County	39155	19
-2012	211	Oil & Gas	Ohio	Tuscarawas County	39157	67
-2012	211	Oil & Gas	Ohio	Washington County	39167	129
-2012	211	Oil & Gas	Ohio	Wayne County	39169	114
-2012	211	Oil & Gas	Oklahoma		40000	23986
-2012	211	Oil & Gas	Oklahoma	Canadian County	40017	235
-2012	211	Oil & Gas	Oklahoma	Cleveland County	40027	83
-2012	211	Oil & Gas	Oklahoma	Custer County	40039	284
-2012	211	Oil & Gas	Oklahoma	Dewey County	40043	22
-2012	211	Oil & Gas	Oklahoma	Garvin County	40049	210
-2012	211	Oil & Gas	Oklahoma	Grady County	40051	157
-2012	211	Oil & Gas	Oklahoma	Haskell County	40061	23
-2012	211	Oil & Gas	Oklahoma	Kay County	40071	70
-2012	211	Oil & Gas	Oklahoma	Latimer County	40077	183
-2012	211	Oil & Gas	Oklahoma	Noble County	40103	8
-2012	211	Oil & Gas	Oklahoma	Oklahoma County	40109	9005
-2012	211	Oil & Gas	Oklahoma	Okmulgee County	40111	66
-2012	211	Oil & Gas	Oklahoma	Osage County	40113	376
-2012	211	Oil & Gas	Oklahoma	Payne County	40119	210
-2012	211	Oil & Gas	Oklahoma	Seminole County	40133	71
-2012	211	Oil & Gas	Oklahoma	Texas County	40139	110
-2012	211	Oil & Gas	Oklahoma	Tulsa County	40143	3935
-2012	211	Oil & Gas	Oklahoma	Washington County	40147	3858
-2012	211	Oil & Gas	Oklahoma	Woods County	40151	442
-2012	211	Oil & Gas	Pennsylvania		42000	5381
-2012	211	Oil & Gas	Pennsylvania	Allegheny County	42003	1095
-2012	211	Oil & Gas	Pennsylvania	Armstrong County	42005	237
-2012	211	Oil & Gas	Pennsylvania	Butler County	42019	21
-2012	211	Oil & Gas	Pennsylvania	Clarion County	42031	112
-2012	211	Oil & Gas	Pennsylvania	Crawford County	42039	34
-2012	211	Oil & Gas	Pennsylvania	Forest County	42053	113
-2012	211	Oil & Gas	Pennsylvania	Indiana County	42063	500
-2012	211	Oil & Gas	Pennsylvania	Jefferson County	42065	160
-2012	211	Oil & Gas	Pennsylvania	Lycoming County	42081	124
-2012	211	Oil & Gas	Pennsylvania	Mckean County	42083	511
-2012	211	Oil & Gas	Pennsylvania	Warren County	42123	126
-2012	211	Oil & Gas	South Dakota		46000	33
-2012	211	Oil & Gas	Tennessee		47000	54
-2012	211	Oil & Gas	Texas		48000	96645
-2012	211	Oil & Gas	Texas	Angelina County	48005	22
-2012	211	Oil & Gas	Texas	Archer County	48009	35
-2012	211	Oil & Gas	Texas	Bexar County	48029	1645
-2012	211	Oil & Gas	Texas	Brazoria County	48039	970
-2012	211	Oil & Gas	Texas	Cochran County	48079	31
-2012	211	Oil & Gas	Texas	Coleman County	48083	3
-2012	211	Oil & Gas	Texas	Collin County	48085	599
-2012	211	Oil & Gas	Texas	Comal County	48091	20
-2012	211	Oil & Gas	Texas	Crane County	48103	119
-2012	211	Oil & Gas	Texas	Crockett County	48105	148
-2012	211	Oil & Gas	Texas	Crosby County	48107	18
-2012	211	Oil & Gas	Texas	Dallas County	48113	6911
-2012	211	Oil & Gas	Texas	Dawson County	48115	62
-2012	211	Oil & Gas	Texas	Denton County	48121	210
-2012	211	Oil & Gas	Texas	Dimmit County	48127	119
-2012	211	Oil & Gas	Texas	Duval County	48131	130
-2012	211	Oil & Gas	Texas	El Paso County	48141	10
-2012	211	Oil & Gas	Texas	Fayette County	48149	58
-2012	211	Oil & Gas	Texas	Fort Bend County	48157	514
-2012	211	Oil & Gas	Texas	Garza County	48169	89
-2012	211	Oil & Gas	Texas	Gray County	48179	379
-2012	211	Oil & Gas	Texas	Gregg County	48183	448
-2012	211	Oil & Gas	Texas	Guadalupe County	48187	36
-2012	211	Oil & Gas	Texas	Harris County	48201	50061
-2012	211	Oil & Gas	Texas	Hays County	48209	18
-2012	211	Oil & Gas	Texas	Hemphill County	48211	119
-2012	211	Oil & Gas	Texas	Henderson County	48213	31
-2012	211	Oil & Gas	Texas	Hidalgo County	48215	288
-2012	211	Oil & Gas	Texas	Hockley County	48219	469
-2012	211	Oil & Gas	Texas	Hood County	48221	91
-2012	211	Oil & Gas	Texas	Hutchinson County	48233	1210
-2012	211	Oil & Gas	Texas	Jackson County	48239	133
-2012	211	Oil & Gas	Texas	Jim Wells County	48249	79
-2012	211	Oil & Gas	Texas	Johnson County	48251	144
-2012	211	Oil & Gas	Texas	Jones County	48253	15
-2012	211	Oil & Gas	Texas	Kendall County	48259	19
-2012	211	Oil & Gas	Texas	Kerr County	48265	7
-2012	211	Oil & Gas	Texas	Knox County	48275	27
-2012	211	Oil & Gas	Texas	Liberty County	48291	51
-2012	211	Oil & Gas	Texas	Limestone County	48293	26
-2012	211	Oil & Gas	Texas	Lipscomb County	48295	49
-2012	211	Oil & Gas	Texas	Live Oak County	48297	116
-2012	211	Oil & Gas	Texas	Lubbock County	48303	91
-2012	211	Oil & Gas	Texas	Matagorda County	48321	22
-2012	211	Oil & Gas	Texas	Milam County	48331	19
-2012	211	Oil & Gas	Texas	Montague County	48337	25
-2012	211	Oil & Gas	Texas	Montgomery County	48339	1389
-2012	211	Oil & Gas	Texas	Moore County	48341	147
-2012	211	Oil & Gas	Texas	Nacogdoches County	48347	27
-2012	211	Oil & Gas	Texas	Navarro County	48349	74
-2012	211	Oil & Gas	Texas	Nueces County	48355	788
-2012	211	Oil & Gas	Texas	Ochiltree County	48357	267
-2012	211	Oil & Gas	Texas	Panola County	48365	195
-2012	211	Oil & Gas	Texas	Parker County	48367	288
-2012	211	Oil & Gas	Texas	Polk County	48373	6
-2012	211	Oil & Gas	Texas	Potter County	48375	206
-2012	211	Oil & Gas	Texas	Reagan County	48383	64
-2012	211	Oil & Gas	Texas	Refugio County	48391	62
-2012	211	Oil & Gas	Texas	Rockwall County	48397	15
-2012	211	Oil & Gas	Texas	San Jacinto County	48407	9
-2012	211	Oil & Gas	Texas	Scurry County	48415	284
-2012	211	Oil & Gas	Texas	Shackelford County	48417	235
-2012	211	Oil & Gas	Texas	Shelby County	48419	174
-2012	211	Oil & Gas	Texas	Smith County	48423	671
-2012	211	Oil & Gas	Texas	Stephens County	48429	244
-2012	211	Oil & Gas	Texas	Tarrant County	48439	5290
-2012	211	Oil & Gas	Texas	Terry County	48445	39
-2012	211	Oil & Gas	Texas	Travis County	48453	936
-2012	211	Oil & Gas	Texas	Upshur County	48459	206
-2012	211	Oil & Gas	Texas	Upton County	48461	318
-2012	211	Oil & Gas	Texas	Walker County	48471	13
-2012	211	Oil & Gas	Texas	Waller County	48473	46
-2012	211	Oil & Gas	Texas	Washington County	48477	31
-2012	211	Oil & Gas	Texas	Wichita County	48485	722
-2012	211	Oil & Gas	Texas	Wilbarger County	48487	27
-2012	211	Oil & Gas	Texas	Wise County	48497	320
-2012	211	Oil & Gas	Texas	Yoakum County	48501	409
-2012	211	Oil & Gas	Texas	Young County	48503	261
-2012	211	Oil & Gas	Utah		49000	1800
-2012	211	Oil & Gas	Utah	Carbon County	49007	47
-2012	211	Oil & Gas	Utah	Duchesne County	49013	914
-2012	211	Oil & Gas	Utah	Salt Lake County	49035	211
-2012	211	Oil & Gas	Utah	San Juan County	49037	53
-2012	211	Oil & Gas	Utah	Uintah County	49047	514
-2012	211	Oil & Gas	Virginia		51000	424
-2012	211	Oil & Gas	Virginia	Tazewell County	51185	121
-2012	211	Oil & Gas	Virginia	Washington County	51191	90
-2012	211	Oil & Gas	West Virginia		54000	2274
-2012	211	Oil & Gas	West Virginia	Cabell County	54011	21
-2012	211	Oil & Gas	West Virginia	Calhoun County	54013	62
-2012	211	Oil & Gas	West Virginia	Doddridge County	54017	24
-2012	211	Oil & Gas	West Virginia	Gilmer County	54021	156
-2012	211	Oil & Gas	West Virginia	Harrison County	54033	206
-2012	211	Oil & Gas	West Virginia	Kanawha County	54039	399
-2012	211	Oil & Gas	West Virginia	Lewis County	54041	317
-2012	211	Oil & Gas	West Virginia	Mingo County	54059	27
-2012	211	Oil & Gas	West Virginia	Pleasants County	54073	33
-2012	211	Oil & Gas	West Virginia	Wood County	54107	21
-2012	211	Oil & Gas	West Virginia	Wyoming County	54109	94
-2012	211	Oil & Gas	Wyoming		56000	4520
-2012	211	Oil & Gas	Wyoming	Big Horn County	56003	44
-2012	211	Oil & Gas	Wyoming	Campbell County	56005	725
-2012	211	Oil & Gas	Wyoming	Carbon County	56007	130
-2012	211	Oil & Gas	Wyoming	Fremont County	56013	311
-2012	211	Oil & Gas	Wyoming	Hot Springs County	56017	77
-2012	211	Oil & Gas	Wyoming	Johnson County	56019	15
-2012	211	Oil & Gas	Wyoming	Lincoln County	56023	283
-2012	211	Oil & Gas	Wyoming	Natrona County	56025	851
-2012	211	Oil & Gas	Wyoming	Niobrara County	56027	11
-2012	211	Oil & Gas	Wyoming	Sheridan County	56033	167
-2012	211	Oil & Gas	Wyoming	Sweetwater County	56037	784
-2012	211	Oil & Gas	Wyoming	Uinta County	56041	228
-2012	211	Oil & Gas		U.S. TOTAL	US000	188003
+2012	211	Oil and gas	Alabama		01000	756
+2012	211	Oil and gas	Alabama	Mobile County	01097	363
+2012	211	Oil and gas	Alabama	Tuscaloosa County	01125	143
+2012	211	Oil and gas	Alaska		02000	3890
+2012	211	Oil and gas	Alaska	Anchorage Borough	02020	1742
+2012	211	Oil and gas	Alaska	Kenai Peninsula Borough	02122	121
+2012	211	Oil and gas	Arizona		04000	122
+2012	211	Oil and gas	Arizona	Maricopa County	04013	25
+2012	211	Oil and gas	Arkansas		05000	1640
+2012	211	Oil and gas	Arkansas	Columbia County	05027	46
+2012	211	Oil and gas	Arkansas	Ouachita County	05103	21
+2012	211	Oil and gas	Arkansas	Union County	05139	138
+2012	211	Oil and gas	Arkansas	White County	05145	281
+2012	211	Oil and gas	California		06000	9748
+2012	211	Oil and gas	California	Fresno County	06019	91
+2012	211	Oil and gas	California	Kern County	06029	3280
+2012	211	Oil and gas	California	Los Angeles County	06037	2227
+2012	211	Oil and gas	California	Orange County	06059	89
+2012	211	Oil and gas	California	Santa Barbara County	06083	202
+2012	211	Oil and gas	California	Ventura County	06111	541
+2012	211	Oil and gas	Colorado		08000	9152
+2012	211	Oil and gas	Colorado	Arapahoe County	08005	335
+2012	211	Oil and gas	Colorado	Boulder County	08013	11
+2012	211	Oil and gas	Colorado	Denver County	08031	5734
+2012	211	Oil and gas	Colorado	El Paso County	08041	95
+2012	211	Oil and gas	Colorado	Garfield County	08045	601
+2012	211	Oil and gas	Colorado	Jefferson County	08059	122
+2012	211	Oil and gas	Colorado	La Plata County	08067	319
+2012	211	Oil and gas	Colorado	Larimer County	08069	37
+2012	211	Oil and gas	Colorado	Logan County	08075	24
+2012	211	Oil and gas	Colorado	Mesa County	08077	131
+2012	211	Oil and gas	Colorado	Moffat County	08081	23
+2012	211	Oil and gas	Colorado	Weld County	08123	811
+2012	211	Oil and gas	Colorado	Yuma County	08125	153
+2012	211	Oil and gas	Florida		12000	97
+2012	211	Oil and gas	Idaho		16000	39
+2012	211	Oil and gas	Illinois		17000	974
+2012	211	Oil and gas	Illinois	Clark County	17023	18
+2012	211	Oil and gas	Illinois	Clay County	17025	42
+2012	211	Oil and gas	Illinois	Cook County	17031	8
+2012	211	Oil and gas	Illinois	Fayette County	17051	197
+2012	211	Oil and gas	Illinois	Jefferson County	17081	106
+2012	211	Oil and gas	Illinois	Lawrence County	17101	107
+2012	211	Oil and gas	Illinois	Marion County	17121	44
+2012	211	Oil and gas	Illinois	Richland County	17159	73
+2012	211	Oil and gas	Illinois	Wayne County	17191	51
+2012	211	Oil and gas	Indiana		18000	221
+2012	211	Oil and gas	Indiana	Gibson County	18051	19
+2012	211	Oil and gas	Indiana	Posey County	18129	19
+2012	211	Oil and gas	Indiana	Vanderburgh County	18163	90
+2012	211	Oil and gas	Kansas		20000	2611
+2012	211	Oil and gas	Kansas	Allen County	20001	64
+2012	211	Oil and gas	Kansas	Anderson County	20003	31
+2012	211	Oil and gas	Kansas	Barber County	20007	49
+2012	211	Oil and gas	Kansas	Chautauqua County	20019	56
+2012	211	Oil and gas	Kansas	Finney County	20055	129
+2012	211	Oil and gas	Kansas	Franklin County	20059	43
+2012	211	Oil and gas	Kansas	Grant County	20067	203
+2012	211	Oil and gas	Kansas	Harper County	20077	66
+2012	211	Oil and gas	Kansas	Johnson County	20091	101
+2012	211	Oil and gas	Kansas	Miami County	20121	41
+2012	211	Oil and gas	Kansas	Montgomery County	20125	66
+2012	211	Oil and gas	Kansas	Morton County	20129	58
+2012	211	Oil and gas	Kansas	Pratt County	20151	30
+2012	211	Oil and gas	Kansas	Rooks County	20163	19
+2012	211	Oil and gas	Kansas	Russell County	20167	58
+2012	211	Oil and gas	Kansas	Sedgwick County	20173	367
+2012	211	Oil and gas	Kansas	Seward County	20175	64
+2012	211	Oil and gas	Kansas	Sumner County	20191	15
+2012	211	Oil and gas	Kansas	Wilson County	20205	46
+2012	211	Oil and gas	Kansas	Woodson County	20207	70
+2012	211	Oil and gas	Kentucky		21000	784
+2012	211	Oil and gas	Kentucky	Daviess County	21059	18
+2012	211	Oil and gas	Kentucky	Fayette County	21067	40
+2012	211	Oil and gas	Kentucky	Lee County	21129	49
+2012	211	Oil and gas	Kentucky	Muhlenberg County	21177	8
+2012	211	Oil and gas	Kentucky	Pike County	21195	182
+2012	211	Oil and gas	Kentucky	Warren County	21227	73
+2012	211	Oil and gas	Louisiana		22000	9802
+2012	211	Oil and gas	Louisiana	Acadia Parish	22001	17
+2012	211	Oil and gas	Louisiana	Assumption Parish	22007	23
+2012	211	Oil and gas	Louisiana	Calcasieu Parish	22019	79
+2012	211	Oil and gas	Louisiana	Cameron Parish	22023	73
+2012	211	Oil and gas	Louisiana	Claiborne Parish	22027	52
+2012	211	Oil and gas	Louisiana	East Baton Rouge Parish	22033	55
+2012	211	Oil and gas	Louisiana	Jefferson Davis Parish	22053	100
+2012	211	Oil and gas	Louisiana	Lafourche Parish	22057	584
+2012	211	Oil and gas	Louisiana	Lincoln Parish	22061	54
+2012	211	Oil and gas	Louisiana	Orleans Parish	22071	1390
+2012	211	Oil and gas	Louisiana	Plaquemines Parish	22075	765
+2012	211	Oil and gas	Louisiana	Sabine Parish	22085	6
+2012	211	Oil and gas	Massachusetts		25000	11
+2012	211	Oil and gas	Michigan		26000	590
+2012	211	Oil and gas	Michigan	Bay County	26017	10
+2012	211	Oil and gas	Michigan	Grand Traverse County	26055	113
+2012	211	Oil and gas	Minnesota		27000	33
+2012	211	Oil and gas	Mississippi		28000	1043
+2012	211	Oil and gas	Mississippi	Adams County	28001	130
+2012	211	Oil and gas	Mississippi	Madison County	28089	122
+2012	211	Oil and gas	Mississippi	Rankin County	28121	60
+2012	211	Oil and gas	Missouri		29000	22
+2012	211	Oil and gas	Montana		30000	788
+2012	211	Oil and gas	Montana	Glacier County	30035	82
+2012	211	Oil and gas	Montana	Pondera County	30073	13
+2012	211	Oil and gas	Montana	Richland County	30083	122
+2012	211	Oil and gas	Montana	Toole County	30101	108
+2012	211	Oil and gas	Montana	Yellowstone County	30111	95
+2012	211	Oil and gas	Nebraska		31000	68
+2012	211	Oil and gas	Nebraska	Red Willow County	31145	31
+2012	211	Oil and gas	Nevada		32000	24
+2012	211	Oil and gas	New Jersey		34000	36
+2012	211	Oil and gas	New Mexico		35000	5036
+2012	211	Oil and gas	New Mexico	Bernalillo County	35001	40
+2012	211	Oil and gas	New Mexico	Santa Fe County	35049	45
+2012	211	Oil and gas	New York		36000	634
+2012	211	Oil and gas	New York	Allegany County	36003	9
+2012	211	Oil and gas	New York	Cattaraugus County	36009	45
+2012	211	Oil and gas	New York	Chemung County	36015	503
+2012	211	Oil and gas	North Carolina		37000	37
+2012	211	Oil and gas	North Dakota		38000	1614
+2012	211	Oil and gas	North Dakota	McKenzie County	38053	284
+2012	211	Oil and gas	North Dakota	Mountrail County	38061	164
+2012	211	Oil and gas	North Dakota	Ward County	38101	169
+2012	211	Oil and gas	North Dakota	Williams County	38105	548
+2012	211	Oil and gas	Ohio		39000	3086
+2012	211	Oil and gas	Ohio	Fairfield County	39045	15
+2012	211	Oil and gas	Ohio	Guernsey County	39059	83
+2012	211	Oil and gas	Ohio	Holmes County	39075	28
+2012	211	Oil and gas	Ohio	Knox County	39083	24
+2012	211	Oil and gas	Ohio	Licking County	39089	89
+2012	211	Oil and gas	Ohio	Muskingum County	39119	95
+2012	211	Oil and gas	Ohio	Portage County	39133	65
+2012	211	Oil and gas	Ohio	Stark County	39151	203
+2012	211	Oil and gas	Ohio	Summit County	39153	31
+2012	211	Oil and gas	Ohio	Trumbull County	39155	19
+2012	211	Oil and gas	Ohio	Tuscarawas County	39157	67
+2012	211	Oil and gas	Ohio	Washington County	39167	129
+2012	211	Oil and gas	Ohio	Wayne County	39169	114
+2012	211	Oil and gas	Oklahoma		40000	23986
+2012	211	Oil and gas	Oklahoma	Canadian County	40017	235
+2012	211	Oil and gas	Oklahoma	Cleveland County	40027	83
+2012	211	Oil and gas	Oklahoma	Custer County	40039	284
+2012	211	Oil and gas	Oklahoma	Dewey County	40043	22
+2012	211	Oil and gas	Oklahoma	Garvin County	40049	210
+2012	211	Oil and gas	Oklahoma	Grady County	40051	157
+2012	211	Oil and gas	Oklahoma	Haskell County	40061	23
+2012	211	Oil and gas	Oklahoma	Kay County	40071	70
+2012	211	Oil and gas	Oklahoma	Latimer County	40077	183
+2012	211	Oil and gas	Oklahoma	Noble County	40103	8
+2012	211	Oil and gas	Oklahoma	Oklahoma County	40109	9005
+2012	211	Oil and gas	Oklahoma	Okmulgee County	40111	66
+2012	211	Oil and gas	Oklahoma	Osage County	40113	376
+2012	211	Oil and gas	Oklahoma	Payne County	40119	210
+2012	211	Oil and gas	Oklahoma	Seminole County	40133	71
+2012	211	Oil and gas	Oklahoma	Texas County	40139	110
+2012	211	Oil and gas	Oklahoma	Tulsa County	40143	3935
+2012	211	Oil and gas	Oklahoma	Washington County	40147	3858
+2012	211	Oil and gas	Oklahoma	Woods County	40151	442
+2012	211	Oil and gas	Pennsylvania		42000	5381
+2012	211	Oil and gas	Pennsylvania	Allegheny County	42003	1095
+2012	211	Oil and gas	Pennsylvania	Armstrong County	42005	237
+2012	211	Oil and gas	Pennsylvania	Butler County	42019	21
+2012	211	Oil and gas	Pennsylvania	Clarion County	42031	112
+2012	211	Oil and gas	Pennsylvania	Crawford County	42039	34
+2012	211	Oil and gas	Pennsylvania	Forest County	42053	113
+2012	211	Oil and gas	Pennsylvania	Indiana County	42063	500
+2012	211	Oil and gas	Pennsylvania	Jefferson County	42065	160
+2012	211	Oil and gas	Pennsylvania	Lycoming County	42081	124
+2012	211	Oil and gas	Pennsylvania	Mckean County	42083	511
+2012	211	Oil and gas	Pennsylvania	Warren County	42123	126
+2012	211	Oil and gas	South Dakota		46000	33
+2012	211	Oil and gas	Tennessee		47000	54
+2012	211	Oil and gas	Texas		48000	96645
+2012	211	Oil and gas	Texas	Angelina County	48005	22
+2012	211	Oil and gas	Texas	Archer County	48009	35
+2012	211	Oil and gas	Texas	Bexar County	48029	1645
+2012	211	Oil and gas	Texas	Brazoria County	48039	970
+2012	211	Oil and gas	Texas	Cochran County	48079	31
+2012	211	Oil and gas	Texas	Coleman County	48083	3
+2012	211	Oil and gas	Texas	Collin County	48085	599
+2012	211	Oil and gas	Texas	Comal County	48091	20
+2012	211	Oil and gas	Texas	Crane County	48103	119
+2012	211	Oil and gas	Texas	Crockett County	48105	148
+2012	211	Oil and gas	Texas	Crosby County	48107	18
+2012	211	Oil and gas	Texas	Dallas County	48113	6911
+2012	211	Oil and gas	Texas	Dawson County	48115	62
+2012	211	Oil and gas	Texas	Denton County	48121	210
+2012	211	Oil and gas	Texas	Dimmit County	48127	119
+2012	211	Oil and gas	Texas	Duval County	48131	130
+2012	211	Oil and gas	Texas	El Paso County	48141	10
+2012	211	Oil and gas	Texas	Fayette County	48149	58
+2012	211	Oil and gas	Texas	Fort Bend County	48157	514
+2012	211	Oil and gas	Texas	Garza County	48169	89
+2012	211	Oil and gas	Texas	Gray County	48179	379
+2012	211	Oil and gas	Texas	Gregg County	48183	448
+2012	211	Oil and gas	Texas	Guadalupe County	48187	36
+2012	211	Oil and gas	Texas	Harris County	48201	50061
+2012	211	Oil and gas	Texas	Hays County	48209	18
+2012	211	Oil and gas	Texas	Hemphill County	48211	119
+2012	211	Oil and gas	Texas	Henderson County	48213	31
+2012	211	Oil and gas	Texas	Hidalgo County	48215	288
+2012	211	Oil and gas	Texas	Hockley County	48219	469
+2012	211	Oil and gas	Texas	Hood County	48221	91
+2012	211	Oil and gas	Texas	Hutchinson County	48233	1210
+2012	211	Oil and gas	Texas	Jackson County	48239	133
+2012	211	Oil and gas	Texas	Jim Wells County	48249	79
+2012	211	Oil and gas	Texas	Johnson County	48251	144
+2012	211	Oil and gas	Texas	Jones County	48253	15
+2012	211	Oil and gas	Texas	Kendall County	48259	19
+2012	211	Oil and gas	Texas	Kerr County	48265	7
+2012	211	Oil and gas	Texas	Knox County	48275	27
+2012	211	Oil and gas	Texas	Liberty County	48291	51
+2012	211	Oil and gas	Texas	Limestone County	48293	26
+2012	211	Oil and gas	Texas	Lipscomb County	48295	49
+2012	211	Oil and gas	Texas	Live Oak County	48297	116
+2012	211	Oil and gas	Texas	Lubbock County	48303	91
+2012	211	Oil and gas	Texas	Matagorda County	48321	22
+2012	211	Oil and gas	Texas	Milam County	48331	19
+2012	211	Oil and gas	Texas	Montague County	48337	25
+2012	211	Oil and gas	Texas	Montgomery County	48339	1389
+2012	211	Oil and gas	Texas	Moore County	48341	147
+2012	211	Oil and gas	Texas	Nacogdoches County	48347	27
+2012	211	Oil and gas	Texas	Navarro County	48349	74
+2012	211	Oil and gas	Texas	Nueces County	48355	788
+2012	211	Oil and gas	Texas	Ochiltree County	48357	267
+2012	211	Oil and gas	Texas	Panola County	48365	195
+2012	211	Oil and gas	Texas	Parker County	48367	288
+2012	211	Oil and gas	Texas	Polk County	48373	6
+2012	211	Oil and gas	Texas	Potter County	48375	206
+2012	211	Oil and gas	Texas	Reagan County	48383	64
+2012	211	Oil and gas	Texas	Refugio County	48391	62
+2012	211	Oil and gas	Texas	Rockwall County	48397	15
+2012	211	Oil and gas	Texas	San Jacinto County	48407	9
+2012	211	Oil and gas	Texas	Scurry County	48415	284
+2012	211	Oil and gas	Texas	Shackelford County	48417	235
+2012	211	Oil and gas	Texas	Shelby County	48419	174
+2012	211	Oil and gas	Texas	Smith County	48423	671
+2012	211	Oil and gas	Texas	Stephens County	48429	244
+2012	211	Oil and gas	Texas	Tarrant County	48439	5290
+2012	211	Oil and gas	Texas	Terry County	48445	39
+2012	211	Oil and gas	Texas	Travis County	48453	936
+2012	211	Oil and gas	Texas	Upshur County	48459	206
+2012	211	Oil and gas	Texas	Upton County	48461	318
+2012	211	Oil and gas	Texas	Walker County	48471	13
+2012	211	Oil and gas	Texas	Waller County	48473	46
+2012	211	Oil and gas	Texas	Washington County	48477	31
+2012	211	Oil and gas	Texas	Wichita County	48485	722
+2012	211	Oil and gas	Texas	Wilbarger County	48487	27
+2012	211	Oil and gas	Texas	Wise County	48497	320
+2012	211	Oil and gas	Texas	Yoakum County	48501	409
+2012	211	Oil and gas	Texas	Young County	48503	261
+2012	211	Oil and gas	Utah		49000	1800
+2012	211	Oil and gas	Utah	Carbon County	49007	47
+2012	211	Oil and gas	Utah	Duchesne County	49013	914
+2012	211	Oil and gas	Utah	Salt Lake County	49035	211
+2012	211	Oil and gas	Utah	San Juan County	49037	53
+2012	211	Oil and gas	Utah	Uintah County	49047	514
+2012	211	Oil and gas	Virginia		51000	424
+2012	211	Oil and gas	Virginia	Tazewell County	51185	121
+2012	211	Oil and gas	Virginia	Washington County	51191	90
+2012	211	Oil and gas	West Virginia		54000	2274
+2012	211	Oil and gas	West Virginia	Cabell County	54011	21
+2012	211	Oil and gas	West Virginia	Calhoun County	54013	62
+2012	211	Oil and gas	West Virginia	Doddridge County	54017	24
+2012	211	Oil and gas	West Virginia	Gilmer County	54021	156
+2012	211	Oil and gas	West Virginia	Harrison County	54033	206
+2012	211	Oil and gas	West Virginia	Kanawha County	54039	399
+2012	211	Oil and gas	West Virginia	Lewis County	54041	317
+2012	211	Oil and gas	West Virginia	Mingo County	54059	27
+2012	211	Oil and gas	West Virginia	Pleasants County	54073	33
+2012	211	Oil and gas	West Virginia	Wood County	54107	21
+2012	211	Oil and gas	West Virginia	Wyoming County	54109	94
+2012	211	Oil and gas	Wyoming		56000	4520
+2012	211	Oil and gas	Wyoming	Big Horn County	56003	44
+2012	211	Oil and gas	Wyoming	Campbell County	56005	725
+2012	211	Oil and gas	Wyoming	Carbon County	56007	130
+2012	211	Oil and gas	Wyoming	Fremont County	56013	311
+2012	211	Oil and gas	Wyoming	Hot Springs County	56017	77
+2012	211	Oil and gas	Wyoming	Johnson County	56019	15
+2012	211	Oil and gas	Wyoming	Lincoln County	56023	283
+2012	211	Oil and gas	Wyoming	Natrona County	56025	851
+2012	211	Oil and gas	Wyoming	Niobrara County	56027	11
+2012	211	Oil and gas	Wyoming	Sheridan County	56033	167
+2012	211	Oil and gas	Wyoming	Sweetwater County	56037	784
+2012	211	Oil and gas	Wyoming	Uinta County	56041	228
+2012	211	Oil and gas		U.S. TOTAL	US000	188003
 2012	2121	Coal	Alabama		01000	4901
 2012	2121	Coal	Alabama	Jefferson County	01073	1666
 2012	2121	Coal	Colorado		08000	2299
@@ -5228,542 +5228,542 @@ year	naics	commodity	state	county	fips	jobs
 2012	2123	Nonmetallic minerals	Puerto Rico	Ponce Municipio	72113	42
 2012	2123	Nonmetallic minerals		U.S. TOTAL	US000	289
 2012	2123	Nonmetallic minerals		U.S. TOTAL	US000	87718
-2012	213	Mining activities	Alabama		01000	996
-2012	213	Mining activities	Alabama	Baldwin County	01003	24
-2012	213	Mining activities	Alabama	Escambia County	01053	149
-2012	213	Mining activities	Alabama	Fayette County	01057	36
-2012	213	Mining activities	Alabama	Mobile County	01097	102
-2012	213	Mining activities	Alabama	Tuscaloosa County	01125	306
-2012	213	Mining activities	Alaska		02000	9957
-2012	213	Mining activities	Alaska	Anchorage Borough	02020	1409
-2012	213	Mining activities	Alaska	Juneau Borough	02110	120
-2012	213	Mining activities	Alaska	Kenai Peninsula Borough	02122	991
-2012	213	Mining activities	Alaska	Matanuska-Susitna Borough	02170	26
-2012	213	Mining activities	Arizona		04000	522
-2012	213	Mining activities	Arizona	Maricopa County	04013	140
-2012	213	Mining activities	Arizona	Mohave County	04015	17
-2012	213	Mining activities	Arizona	Pima County	04019	77
-2012	213	Mining activities	Arizona	Pinal County	04021	229
-2012	213	Mining activities	Arkansas		05000	4972
-2012	213	Mining activities	Arkansas	Cleburne County	05023	148
-2012	213	Mining activities	Arkansas	Columbia County	05027	295
-2012	213	Mining activities	Arkansas	Conway County	05029	130
-2012	213	Mining activities	Arkansas	Faulkner County	05045	1028
-2012	213	Mining activities	Arkansas	Logan County	05083	98
-2012	213	Mining activities	Arkansas	Ouachita County	05103	38
-2012	213	Mining activities	Arkansas	Pope County	05115	49
-2012	213	Mining activities	Arkansas	Sebastian County	05131	1178
-2012	213	Mining activities	Arkansas	Union County	05139	262
-2012	213	Mining activities	Arkansas	Van Buren County	05141	37
-2012	213	Mining activities	Arkansas	White County	05145	1004
-2012	213	Mining activities	California		06000	13072
-2012	213	Mining activities	California	El Dorado County	06017	31
-2012	213	Mining activities	California	Kern County	06029	8435
-2012	213	Mining activities	California	Los Angeles County	06037	1726
-2012	213	Mining activities	California	Nevada County	06057	32
-2012	213	Mining activities	California	Orange County	06059	261
-2012	213	Mining activities	California	Placer County	06061	16
-2012	213	Mining activities	California	Sacramento County	06067	49
-2012	213	Mining activities	California	San Bernardino County	06071	30
-2012	213	Mining activities	California	Santa Barbara County	06083	688
-2012	213	Mining activities	California	Sutter County	06101	80
-2012	213	Mining activities	California	Ventura County	06111	552
-2012	213	Mining activities	California	Yolo County	06113	80
-2012	213	Mining activities	Colorado		08000	15670
-2012	213	Mining activities	Colorado	Adams County	08001	235
-2012	213	Mining activities	Colorado	Arapahoe County	08005	964
-2012	213	Mining activities	Colorado	Boulder County	08013	60
-2012	213	Mining activities	Colorado	Denver County	08031	1931
-2012	213	Mining activities	Colorado	Douglas County	08035	361
-2012	213	Mining activities	Colorado	Garfield County	08045	1616
-2012	213	Mining activities	Colorado	Jefferson County	08059	223
-2012	213	Mining activities	Colorado	Larimer County	08069	86
-2012	213	Mining activities	Colorado	Las Animas County	08071	169
-2012	213	Mining activities	Colorado	Logan County	08075	170
-2012	213	Mining activities	Colorado	Mesa County	08077	3349
-2012	213	Mining activities	Colorado	Moffat County	08081	42
-2012	213	Mining activities	Colorado	Montezuma County	08083	119
-2012	213	Mining activities	Colorado	Montrose County	08085	162
-2012	213	Mining activities	Colorado	Morgan County	08087	203
-2012	213	Mining activities	Colorado	Rio Blanco County	08103	410
-2012	213	Mining activities	Colorado	Routt County	08107	43
-2012	213	Mining activities	Colorado	Weld County	08123	4178
-2012	213	Mining activities	Colorado	Yuma County	08125	96
-2012	213	Mining activities	Connecticut		09000	39
-2012	213	Mining activities	Connecticut	Fairfield County	09001	10
-2012	213	Mining activities	Florida		12000	581
-2012	213	Mining activities	Florida	Broward County	12011	33
-2012	213	Mining activities	Florida	Marion County	12083	32
-2012	213	Mining activities	Florida	Orange County	12095	40
-2012	213	Mining activities	Florida	Pasco County	12101	23
-2012	213	Mining activities	Florida	Santa Rosa County	12113	18
-2012	213	Mining activities	Florida	Sarasota County	12115	40
-2012	213	Mining activities	Idaho		16000	381
-2012	213	Mining activities	Illinois		17000	2227
-2012	213	Mining activities	Illinois	Christian County	17021	10
-2012	213	Mining activities	Illinois	Clay County	17025	66
-2012	213	Mining activities	Illinois	Cook County	17031	40
-2012	213	Mining activities	Illinois	Crawford County	17033	109
-2012	213	Mining activities	Illinois	DuPage County	17043	14
-2012	213	Mining activities	Illinois	Edwards County	17047	16
-2012	213	Mining activities	Illinois	Lawrence County	17101	258
-2012	213	Mining activities	Illinois	Marion County	17121	106
-2012	213	Mining activities	Illinois	Richland County	17159	84
-2012	213	Mining activities	Illinois	Wabash County	17185	162
-2012	213	Mining activities	Illinois	Wayne County	17191	81
-2012	213	Mining activities	Illinois	White County	17193	386
-2012	213	Mining activities	Illinois	Will County	17197	40
-2012	213	Mining activities	Indiana		18000	434
-2012	213	Mining activities	Indiana	Gibson County	18051	4
-2012	213	Mining activities	Indiana	Pike County	18125	24
-2012	213	Mining activities	Iowa		19000	24
-2012	213	Mining activities	Kansas		20000	6096
-2012	213	Mining activities	Kansas	Allen County	20001	58
-2012	213	Mining activities	Kansas	Anderson County	20003	9
-2012	213	Mining activities	Kansas	Barber County	20007	158
-2012	213	Mining activities	Kansas	Barton County	20009	785
-2012	213	Mining activities	Kansas	Butler County	20015	99
-2012	213	Mining activities	Kansas	Comanche County	20033	18
-2012	213	Mining activities	Kansas	Cowley County	20035	28
-2012	213	Mining activities	Kansas	Crawford County	20037	5
-2012	213	Mining activities	Kansas	Decatur County	20039	15
-2012	213	Mining activities	Kansas	Douglas County	20045	16
-2012	213	Mining activities	Kansas	Ellis County	20051	499
-2012	213	Mining activities	Kansas	Finney County	20055	233
-2012	213	Mining activities	Kansas	Grant County	20067	141
-2012	213	Mining activities	Kansas	Greenwood County	20073	113
-2012	213	Mining activities	Kansas	Harper County	20077	143
-2012	213	Mining activities	Kansas	Kingman County	20095	60
-2012	213	Mining activities	Kansas	Linn County	20107	35
-2012	213	Mining activities	Kansas	Mcpherson County	20113	75
-2012	213	Mining activities	Kansas	Miami County	20121	45
-2012	213	Mining activities	Kansas	Montgomery County	20125	38
-2012	213	Mining activities	Kansas	Morton County	20129	31
-2012	213	Mining activities	Kansas	Neosho County	20133	346
-2012	213	Mining activities	Kansas	Ness County	20135	246
-2012	213	Mining activities	Kansas	Pratt County	20151	407
-2012	213	Mining activities	Kansas	Reno County	20155	40
-2012	213	Mining activities	Kansas	Rice County	20159	74
-2012	213	Mining activities	Kansas	Rooks County	20163	115
-2012	213	Mining activities	Kansas	Russell County	20167	309
-2012	213	Mining activities	Kansas	Sedgwick County	20173	466
-2012	213	Mining activities	Kansas	Seward County	20175	590
-2012	213	Mining activities	Kansas	Woodson County	20207	20
-2012	213	Mining activities	Kentucky		21000	2932
-2012	213	Mining activities	Kentucky	Barren County	21009	10
-2012	213	Mining activities	Kentucky	Boyd County	21019	24
-2012	213	Mining activities	Kentucky	Clinton County	21053	23
-2012	213	Mining activities	Kentucky	Floyd County	21071	156
-2012	213	Mining activities	Kentucky	Henderson County	21101	28
-2012	213	Mining activities	Kentucky	Knott County	21119	57
-2012	213	Mining activities	Kentucky	Lawrence County	21127	12
-2012	213	Mining activities	Kentucky	Perry County	21193	70
-2012	213	Mining activities	Kentucky	Pike County	21195	376
-2012	213	Mining activities	Kentucky	Webster County	21233	36
-2012	213	Mining activities	Louisiana		22000	41058
-2012	213	Mining activities	Louisiana	Acadia Parish	22001	303
-2012	213	Mining activities	Louisiana	Assumption Parish	22007	26
-2012	213	Mining activities	Louisiana	Beauregard Parish	22011	33
-2012	213	Mining activities	Louisiana	Bienville Parish	22013	85
-2012	213	Mining activities	Louisiana	Bossier Parish	22015	2144
-2012	213	Mining activities	Louisiana	Caddo Parish	22017	1920
-2012	213	Mining activities	Louisiana	Calcasieu Parish	22019	540
-2012	213	Mining activities	Louisiana	Cameron Parish	22023	290
-2012	213	Mining activities	Louisiana	Catahoula Parish	22025	30
-2012	213	Mining activities	Louisiana	Claiborne Parish	22027	713
-2012	213	Mining activities	Louisiana	De Soto Parish	22031	460
-2012	213	Mining activities	Louisiana	East Baton Rouge Parish	22033	541
-2012	213	Mining activities	Louisiana	Iberia Parish	22045	3314
-2012	213	Mining activities	Louisiana	Iberville Parish	22047	341
-2012	213	Mining activities	Louisiana	Jefferson Parish	22051	1369
-2012	213	Mining activities	Louisiana	Jefferson Davis Parish	22053	229
-2012	213	Mining activities	Louisiana	Lafayette Parish	22055	14069
-2012	213	Mining activities	Louisiana	Lafourche Parish	22057	701
-2012	213	Mining activities	Louisiana	LaSalle Parish	22059	259
-2012	213	Mining activities	Louisiana	Lincoln Parish	22061	60
-2012	213	Mining activities	Louisiana	Livingston Parish	22063	20
-2012	213	Mining activities	Louisiana	Ouachita Parish	22073	76
-2012	213	Mining activities	Louisiana	Plaquemines Parish	22075	936
-2012	213	Mining activities	Louisiana	Rapides Parish	22079	177
-2012	213	Mining activities	Louisiana	Richland Parish	22083	40
-2012	213	Mining activities	Louisiana	Sabine Parish	22085	46
-2012	213	Mining activities	Louisiana	St. Charles Parish	22089	77
-2012	213	Mining activities	Louisiana	St. John the Baptist Parish	22095	447
-2012	213	Mining activities	Louisiana	St. Landry Parish	22097	412
-2012	213	Mining activities	Louisiana	St. Mary Parish	22101	2290
-2012	213	Mining activities	Louisiana	St. Tammany Parish	22103	599
-2012	213	Mining activities	Louisiana	Tangipahoa Parish	22105	78
-2012	213	Mining activities	Louisiana	Terrebonne Parish	22109	3974
-2012	213	Mining activities	Louisiana	Vermilion Parish	22113	796
-2012	213	Mining activities	Louisiana	Washington Parish	22117	12
-2012	213	Mining activities	Louisiana	Webster Parish	22119	711
-2012	213	Mining activities	Louisiana	Winn Parish	22127	32
-2012	213	Mining activities	Maryland	Baltimore County	24005	15
-2012	213	Mining activities	Maryland	Garrett County	24023	284
-2012	213	Mining activities	Massachusetts		25000	76
-2012	213	Mining activities	Massachusetts	Norfolk County	25021	42
-2012	213	Mining activities	Michigan		26000	2117
-2012	213	Mining activities	Michigan	Grand Traverse County	26055	189
-2012	213	Mining activities	Michigan	Isabella County	26073	282
-2012	213	Mining activities	Michigan	Otsego County	26137	194
-2012	213	Mining activities	Michigan	Wexford County	26165	20
-2012	213	Mining activities	Minnesota		27000	217
-2012	213	Mining activities	Mississippi		28000	4586
-2012	213	Mining activities	Mississippi	Adams County	28001	328
-2012	213	Mining activities	Mississippi	Amite County	28005	3
-2012	213	Mining activities	Mississippi	Attala County	28007	7
-2012	213	Mining activities	Mississippi	Clarke County	28023	161
-2012	213	Mining activities	Mississippi	Forrest County	28035	113
-2012	213	Mining activities	Mississippi	Hinds County	28049	61
-2012	213	Mining activities	Mississippi	Jackson County	28059	24
-2012	213	Mining activities	Mississippi	Jasper County	28061	99
-2012	213	Mining activities	Mississippi	Jones County	28067	1579
-2012	213	Mining activities	Mississippi	Lamar County	28073	108
-2012	213	Mining activities	Mississippi	Lawrence County	28077	5
-2012	213	Mining activities	Mississippi	Leake County	28079	6
-2012	213	Mining activities	Mississippi	Lincoln County	28085	118
-2012	213	Mining activities	Mississippi	Marion County	28091	315
-2012	213	Mining activities	Mississippi	Monroe County	28095	52
-2012	213	Mining activities	Mississippi	Perry County	28111	4
-2012	213	Mining activities	Mississippi	Pike County	28113	32
-2012	213	Mining activities	Mississippi	Rankin County	28121	47
-2012	213	Mining activities	Missouri		29000	282
-2012	213	Mining activities	Missouri	St. Francois County	29187	8
-2012	213	Mining activities	Montana		30000	3107
-2012	213	Mining activities	Montana	Dawson County	30021	65
-2012	213	Mining activities	Montana	Fallon County	30025	400
-2012	213	Mining activities	Montana	Hill County	30041	8
-2012	213	Mining activities	Montana	Missoula County	30063	36
-2012	213	Mining activities	Montana	Musselshell County	30065	32
-2012	213	Mining activities	Montana	Richland County	30083	644
-2012	213	Mining activities	Montana	Roosevelt County	30085	71
-2012	213	Mining activities	Montana	Sheridan County	30091	46
-2012	213	Mining activities	Montana	Silver Bow County	30093	58
-2012	213	Mining activities	Montana	Toole County	30101	38
-2012	213	Mining activities	Montana	Yellowstone County	30111	232
-2012	213	Mining activities	Nebraska		31000	217
-2012	213	Mining activities	Nebraska	Hitchcock County	31087	33
-2012	213	Mining activities	Nebraska	Kimball County	31105	42
-2012	213	Mining activities	Nevada		32000	2397
-2012	213	Mining activities	Nevada	Eureka County	32011	120
-2012	213	Mining activities	Nevada	Humboldt County	32013	311
-2012	213	Mining activities	Nevada	Lander County	32015	122
-2012	213	Mining activities	Nevada	Lyon County	32019	31
-2012	213	Mining activities	New Hampshire		33000	88
-2012	213	Mining activities	New Jersey		34000	228
-2012	213	Mining activities	New Jersey	Bergen County	34003	11
-2012	213	Mining activities	New Jersey	Middlesex County	34023	23
-2012	213	Mining activities	New Mexico		35000	13843
-2012	213	Mining activities	New Mexico	Bernalillo County	35001	40
-2012	213	Mining activities	New Mexico	Chaves County	35005	277
-2012	213	Mining activities	New Mexico	Dona Ana County	35013	10
-2012	213	Mining activities	New Mexico	Eddy County	35015	3040
-2012	213	Mining activities	New Mexico	Lea County	35025	6392
-2012	213	Mining activities	New Mexico	Mckinley County	35031	61
-2012	213	Mining activities	New Mexico	Rio Arriba County	35039	58
-2012	213	Mining activities	New Mexico	San Juan County	35045	3202
-2012	213	Mining activities	New Mexico	Santa Fe County	35049	10
-2012	213	Mining activities	New Mexico	Valencia County	35061	15
-2012	213	Mining activities	New York		36000	515
-2012	213	Mining activities	New York	Cattaraugus County	36009	23
-2012	213	Mining activities	New York	Chautauqua County	36013	82
-2012	213	Mining activities	New York	Chemung County	36015	14
-2012	213	Mining activities	North Carolina		37000	283
-2012	213	Mining activities	North Carolina	Guilford County	37081	22
-2012	213	Mining activities	North Carolina	Johnston County	37101	10
-2012	213	Mining activities	North Carolina	Wake County	37183	8
-2012	213	Mining activities	North Dakota		38000	20627
-2012	213	Mining activities	North Dakota	Bottineau County	38009	189
-2012	213	Mining activities	North Dakota	Bowman County	38011	188
-2012	213	Mining activities	North Dakota	Burke County	38013	105
-2012	213	Mining activities	North Dakota	Burleigh County	38015	109
-2012	213	Mining activities	North Dakota	Divide County	38023	31
-2012	213	Mining activities	North Dakota	McKenzie County	38053	1108
-2012	213	Mining activities	North Dakota	McLean County	38055	29
-2012	213	Mining activities	North Dakota	Mountrail County	38061	788
-2012	213	Mining activities	North Dakota	Stark County	38089	3468
-2012	213	Mining activities	North Dakota	Ward County	38101	1280
-2012	213	Mining activities	North Dakota	Williams County	38105	12058
-2012	213	Mining activities	Ohio		39000	3389
-2012	213	Mining activities	Ohio	Ashtabula County	39007	30
-2012	213	Mining activities	Ohio	Clark County	39023	18
-2012	213	Mining activities	Ohio	Guernsey County	39059	47
-2012	213	Mining activities	Ohio	Holmes County	39075	47
-2012	213	Mining activities	Ohio	Knox County	39083	13
-2012	213	Mining activities	Ohio	Monroe County	39111	67
-2012	213	Mining activities	Ohio	Muskingum County	39119	168
-2012	213	Mining activities	Ohio	Noble County	39121	85
-2012	213	Mining activities	Ohio	Perry County	39127	39
-2012	213	Mining activities	Ohio	Portage County	39133	59
-2012	213	Mining activities	Ohio	Stark County	39151	175
-2012	213	Mining activities	Ohio	Trumbull County	39155	32
-2012	213	Mining activities	Ohio	Tuscarawas County	39157	63
-2012	213	Mining activities	Ohio	Washington County	39167	223
-2012	213	Mining activities	Ohio	Wayne County	39169	222
-2012	213	Mining activities	Oklahoma		40000	32177
-2012	213	Mining activities	Oklahoma	Alfalfa County	40003	54
-2012	213	Mining activities	Oklahoma	Atoka County	40005	118
-2012	213	Mining activities	Oklahoma	Beaver County	40007	291
-2012	213	Mining activities	Oklahoma	Beckham County	40009	1896
-2012	213	Mining activities	Oklahoma	Blaine County	40011	114
-2012	213	Mining activities	Oklahoma	Caddo County	40015	143
-2012	213	Mining activities	Oklahoma	Canadian County	40017	1850
-2012	213	Mining activities	Oklahoma	Carter County	40019	810
-2012	213	Mining activities	Oklahoma	Cleveland County	40027	485
-2012	213	Mining activities	Oklahoma	Comanche County	40031	24
-2012	213	Mining activities	Oklahoma	Creek County	40037	237
-2012	213	Mining activities	Oklahoma	Custer County	40039	1058
-2012	213	Mining activities	Oklahoma	Dewey County	40043	140
-2012	213	Mining activities	Oklahoma	Garfield County	40047	815
-2012	213	Mining activities	Oklahoma	Garvin County	40049	872
-2012	213	Mining activities	Oklahoma	Grady County	40051	568
-2012	213	Mining activities	Oklahoma	Haskell County	40061	184
-2012	213	Mining activities	Oklahoma	Hughes County	40063	166
-2012	213	Mining activities	Oklahoma	Jackson County	40065	5
-2012	213	Mining activities	Oklahoma	Johnston County	40069	5
-2012	213	Mining activities	Oklahoma	Kay County	40071	375
-2012	213	Mining activities	Oklahoma	Kingfisher County	40073	690
-2012	213	Mining activities	Oklahoma	Latimer County	40077	453
-2012	213	Mining activities	Oklahoma	Le Flore County	40079	405
-2012	213	Mining activities	Oklahoma	Lincoln County	40081	218
-2012	213	Mining activities	Oklahoma	Logan County	40083	179
-2012	213	Mining activities	Oklahoma	McClain County	40087	239
-2012	213	Mining activities	Oklahoma	McIntosh County	40091	13
-2012	213	Mining activities	Oklahoma	Muskogee County	40101	34
-2012	213	Mining activities	Oklahoma	Noble County	40103	21
-2012	213	Mining activities	Oklahoma	Oklahoma County	40109	6287
-2012	213	Mining activities	Oklahoma	Okmulgee County	40111	57
-2012	213	Mining activities	Oklahoma	Osage County	40113	233
-2012	213	Mining activities	Oklahoma	Pawnee County	40117	101
-2012	213	Mining activities	Oklahoma	Payne County	40119	1050
-2012	213	Mining activities	Oklahoma	Pittsburg County	40121	1026
-2012	213	Mining activities	Oklahoma	Pontotoc County	40123	161
-2012	213	Mining activities	Oklahoma	Pottawatomie County	40125	322
-2012	213	Mining activities	Oklahoma	Rogers County	40131	246
-2012	213	Mining activities	Oklahoma	Seminole County	40133	627
-2012	213	Mining activities	Oklahoma	Stephens County	40137	1857
-2012	213	Mining activities	Oklahoma	Texas County	40139	128
-2012	213	Mining activities	Oklahoma	Tulsa County	40143	1927
-2012	213	Mining activities	Oklahoma	Washington County	40147	421
-2012	213	Mining activities	Oklahoma	Washita County	40149	261
-2012	213	Mining activities	Oklahoma	Woodward County	40153	1829
-2012	213	Mining activities	Pennsylvania		42000	16764
-2012	213	Mining activities	Pennsylvania	Allegheny County	42003	702
-2012	213	Mining activities	Pennsylvania	Armstrong County	42005	334
-2012	213	Mining activities	Pennsylvania	Beaver County	42007	201
-2012	213	Mining activities	Pennsylvania	Bradford County	42015	984
-2012	213	Mining activities	Pennsylvania	Butler County	42019	100
-2012	213	Mining activities	Pennsylvania	Cambria County	42021	9
-2012	213	Mining activities	Pennsylvania	Centre County	42027	259
-2012	213	Mining activities	Pennsylvania	Clarion County	42031	197
-2012	213	Mining activities	Pennsylvania	Crawford County	42039	218
-2012	213	Mining activities	Pennsylvania	Elk County	42047	128
-2012	213	Mining activities	Pennsylvania	Erie County	42049	67
-2012	213	Mining activities	Pennsylvania	Fayette County	42051	342
-2012	213	Mining activities	Pennsylvania	Greene County	42059	1057
-2012	213	Mining activities	Pennsylvania	Indiana County	42063	2004
-2012	213	Mining activities	Pennsylvania	Jefferson County	42065	458
-2012	213	Mining activities	Pennsylvania	Lancaster County	42071	38
-2012	213	Mining activities	Pennsylvania	Lycoming County	42081	1678
-2012	213	Mining activities	Pennsylvania	Mckean County	42083	928
-2012	213	Mining activities	Pennsylvania	Mercer County	42085	71
-2012	213	Mining activities	Pennsylvania	Schuylkill County	42107	55
-2012	213	Mining activities	Pennsylvania	Tioga County	42117	264
-2012	213	Mining activities	Pennsylvania	Venango County	42121	100
-2012	213	Mining activities	Pennsylvania	Washington County	42125	1544
-2012	213	Mining activities	Pennsylvania	Westmoreland County	42129	497
-2012	213	Mining activities	Pennsylvania	Wyoming County	42131	187
-2012	213	Mining activities	South Dakota		46000	42
-2012	213	Mining activities	South Dakota	Lawrence County	46081	4
-2012	213	Mining activities	Tennessee		47000	347
-2012	213	Mining activities	Tennessee	Anderson County	47001	136
-2012	213	Mining activities	Tennessee	Knox County	47093	20
-2012	213	Mining activities	Texas		48000	163268
-2012	213	Mining activities	Texas	Anderson County	48001	688
-2012	213	Mining activities	Texas	Andrews County	48003	1587
-2012	213	Mining activities	Texas	Angelina County	48005	122
-2012	213	Mining activities	Texas	Aransas County	48007	262
-2012	213	Mining activities	Texas	Archer County	48009	193
-2012	213	Mining activities	Texas	Atascosa County	48013	581
-2012	213	Mining activities	Texas	Austin County	48015	62
-2012	213	Mining activities	Texas	Bee County	48025	427
-2012	213	Mining activities	Texas	Bexar County	48029	502
-2012	213	Mining activities	Texas	Brazoria County	48039	768
-2012	213	Mining activities	Texas	Brazos County	48041	1322
-2012	213	Mining activities	Texas	Brooks County	48047	195
-2012	213	Mining activities	Texas	Brown County	48049	33
-2012	213	Mining activities	Texas	Burleson County	48051	820
-2012	213	Mining activities	Texas	Caldwell County	48055	196
-2012	213	Mining activities	Texas	Callahan County	48059	54
-2012	213	Mining activities	Texas	Cameron County	48061	42
-2012	213	Mining activities	Texas	Cass County	48067	25
-2012	213	Mining activities	Texas	Chambers County	48071	496
-2012	213	Mining activities	Texas	Cherokee County	48073	15
-2012	213	Mining activities	Texas	Coleman County	48083	11
-2012	213	Mining activities	Texas	Collin County	48085	963
-2012	213	Mining activities	Texas	Comal County	48091	25
-2012	213	Mining activities	Texas	Cooke County	48097	1970
-2012	213	Mining activities	Texas	Crane County	48103	396
-2012	213	Mining activities	Texas	Crockett County	48105	118
-2012	213	Mining activities	Texas	Dallas County	48113	1598
-2012	213	Mining activities	Texas	Dawson County	48115	188
-2012	213	Mining activities	Texas	Denton County	48121	1267
-2012	213	Mining activities	Texas	DeWitt County	48123	438
-2012	213	Mining activities	Texas	Dimmit County	48127	1097
-2012	213	Mining activities	Texas	Duval County	48131	554
-2012	213	Mining activities	Texas	Eastland County	48133	461
-2012	213	Mining activities	Texas	Ector County	48135	8875
-2012	213	Mining activities	Texas	Ellis County	48139	80
-2012	213	Mining activities	Texas	El Paso County	48141	54
-2012	213	Mining activities	Texas	Fayette County	48149	329
-2012	213	Mining activities	Texas	Fort Bend County	48157	2562
-2012	213	Mining activities	Texas	Freestone County	48161	358
-2012	213	Mining activities	Texas	Frio County	48163	616
-2012	213	Mining activities	Texas	Gaines County	48165	441
-2012	213	Mining activities	Texas	Galveston County	48167	420
-2012	213	Mining activities	Texas	Garza County	48169	132
-2012	213	Mining activities	Texas	Gonzales County	48177	165
-2012	213	Mining activities	Texas	Gray County	48179	959
-2012	213	Mining activities	Texas	Grayson County	48181	117
-2012	213	Mining activities	Texas	Gregg County	48183	4371
-2012	213	Mining activities	Texas	Grimes County	48185	41
-2012	213	Mining activities	Texas	Guadalupe County	48187	32
-2012	213	Mining activities	Texas	Harris County	48201	35979
-2012	213	Mining activities	Texas	Harrison County	48203	1850
-2012	213	Mining activities	Texas	Haskell County	48207	24
-2012	213	Mining activities	Texas	Hemphill County	48211	422
-2012	213	Mining activities	Texas	Henderson County	48213	28
-2012	213	Mining activities	Texas	Hidalgo County	48215	2144
-2012	213	Mining activities	Texas	Hockley County	48219	1635
-2012	213	Mining activities	Texas	Hood County	48221	1364
-2012	213	Mining activities	Texas	Houston County	48225	71
-2012	213	Mining activities	Texas	Howard County	48227	624
-2012	213	Mining activities	Texas	Jack County	48237	677
-2012	213	Mining activities	Texas	Jackson County	48239	148
-2012	213	Mining activities	Texas	Jefferson County	48245	348
-2012	213	Mining activities	Texas	Jim Hogg County	48247	29
-2012	213	Mining activities	Texas	Jim Wells County	48249	4920
-2012	213	Mining activities	Texas	Johnson County	48251	1963
-2012	213	Mining activities	Texas	Jones County	48253	443
-2012	213	Mining activities	Texas	Kerr County	48265	31
-2012	213	Mining activities	Texas	Kleberg County	48273	255
-2012	213	Mining activities	Texas	Knox County	48275	140
-2012	213	Mining activities	Texas	Lavaca County	48285	188
-2012	213	Mining activities	Texas	Lee County	48287	423
-2012	213	Mining activities	Texas	Leon County	48289	157
-2012	213	Mining activities	Texas	Liberty County	48291	612
-2012	213	Mining activities	Texas	Limestone County	48293	82
-2012	213	Mining activities	Texas	Lipscomb County	48295	58
-2012	213	Mining activities	Texas	Live Oak County	48297	1070
-2012	213	Mining activities	Texas	Lubbock County	48303	99
-2012	213	Mining activities	Texas	Madison County	48313	49
-2012	213	Mining activities	Texas	Martin County	48317	18
-2012	213	Mining activities	Texas	Matagorda County	48321	252
-2012	213	Mining activities	Texas	Medina County	48325	338
-2012	213	Mining activities	Texas	Midland County	48329	10534
-2012	213	Mining activities	Texas	Montague County	48337	746
-2012	213	Mining activities	Texas	Montgomery County	48339	2822
-2012	213	Mining activities	Texas	Moore County	48341	132
-2012	213	Mining activities	Texas	Nacogdoches County	48347	8
-2012	213	Mining activities	Texas	Nolan County	48353	247
-2012	213	Mining activities	Texas	Nueces County	48355	4488
-2012	213	Mining activities	Texas	Ochiltree County	48357	1229
-2012	213	Mining activities	Texas	Palo Pinto County	48363	844
-2012	213	Mining activities	Texas	Panola County	48365	1061
-2012	213	Mining activities	Texas	Parker County	48367	1637
-2012	213	Mining activities	Texas	Pecos County	48371	1043
-2012	213	Mining activities	Texas	Polk County	48373	68
-2012	213	Mining activities	Texas	Reagan County	48383	536
-2012	213	Mining activities	Texas	Red River County	48387	62
-2012	213	Mining activities	Texas	Reeves County	48389	264
-2012	213	Mining activities	Texas	Refugio County	48391	394
-2012	213	Mining activities	Texas	Robertson County	48395	117
-2012	213	Mining activities	Texas	Rusk County	48401	887
-2012	213	Mining activities	Texas	Sabine County	48403	53
-2012	213	Mining activities	Texas	San Patricio County	48409	931
-2012	213	Mining activities	Texas	Scurry County	48415	2000
-2012	213	Mining activities	Texas	Shackelford County	48417	431
-2012	213	Mining activities	Texas	Shelby County	48419	186
-2012	213	Mining activities	Texas	Smith County	48423	1408
-2012	213	Mining activities	Texas	Stephens County	48429	161
-2012	213	Mining activities	Texas	Stonewall County	48433	83
-2012	213	Mining activities	Texas	Tarrant County	48439	3189
-2012	213	Mining activities	Texas	Taylor County	48441	1081
-2012	213	Mining activities	Texas	Terry County	48445	485
-2012	213	Mining activities	Texas	Titus County	48449	76
-2012	213	Mining activities	Texas	Tom Green County	48451	920
-2012	213	Mining activities	Texas	Travis County	48453	627
-2012	213	Mining activities	Texas	Upshur County	48459	50
-2012	213	Mining activities	Texas	Upton County	48461	181
-2012	213	Mining activities	Texas	Van Zandt County	48467	62
-2012	213	Mining activities	Texas	Victoria County	48469	2872
-2012	213	Mining activities	Texas	Walker County	48471	19
-2012	213	Mining activities	Texas	Waller County	48473	317
-2012	213	Mining activities	Texas	Ward County	48475	1104
-2012	213	Mining activities	Texas	Washington County	48477	162
-2012	213	Mining activities	Texas	Webb County	48479	2186
-2012	213	Mining activities	Texas	Wharton County	48481	701
-2012	213	Mining activities	Texas	Wheeler County	48483	116
-2012	213	Mining activities	Texas	Wilbarger County	48487	15
-2012	213	Mining activities	Texas	Winkler County	48495	575
-2012	213	Mining activities	Texas	Wise County	48497	2967
-2012	213	Mining activities	Texas	Yoakum County	48501	677
-2012	213	Mining activities	Texas	Young County	48503	597
-2012	213	Mining activities	Texas	Zapata County	48505	1128
-2012	213	Mining activities	Utah		49000	5619
-2012	213	Mining activities	Utah	Davis County	49011	150
-2012	213	Mining activities	Utah	Duchesne County	49013	1260
-2012	213	Mining activities	Utah	Emery County	49015	21
-2012	213	Mining activities	Utah	Grand County	49019	16
-2012	213	Mining activities	Utah	Salt Lake County	49035	1468
-2012	213	Mining activities	Utah	San Juan County	49037	112
-2012	213	Mining activities	Utah	Uintah County	49047	2358
-2012	213	Mining activities	Utah	Utah County	49049	76
-2012	213	Mining activities	Virginia		51000	1326
-2012	213	Mining activities	Virginia	Fairfax County	51059	17
-2012	213	Mining activities	Virginia	Tazewell County	51185	142
-2012	213	Mining activities	Virginia	Richmond City	51760	3
-2012	213	Mining activities	Washington	Spokane County	53063	78
-2012	213	Mining activities	Washington	Yakima County	53077	12
-2012	213	Mining activities	West Virginia		54000	6929
-2012	213	Mining activities	West Virginia	Cabell County	54011	41
-2012	213	Mining activities	West Virginia	Fayette County	54019	59
-2012	213	Mining activities	West Virginia	Harrison County	54033	658
-2012	213	Mining activities	West Virginia	Jackson County	54035	27
-2012	213	Mining activities	West Virginia	Kanawha County	54039	309
-2012	213	Mining activities	West Virginia	Lewis County	54041	1247
-2012	213	Mining activities	West Virginia	Lincoln County	54043	459
-2012	213	Mining activities	West Virginia	Logan County	54045	188
-2012	213	Mining activities	West Virginia	Marion County	54049	95
-2012	213	Mining activities	West Virginia	Mingo County	54059	118
-2012	213	Mining activities	West Virginia	Nicholas County	54067	186
-2012	213	Mining activities	West Virginia	Putnam County	54079	25
-2012	213	Mining activities	West Virginia	Raleigh County	54081	132
-2012	213	Mining activities	West Virginia	Ritchie County	54085	327
-2012	213	Mining activities	West Virginia	Roane County	54087	164
-2012	213	Mining activities	West Virginia	Upshur County	54097	377
-2012	213	Mining activities	West Virginia	Wood County	54107	42
-2012	213	Mining activities	West Virginia	Wyoming County	54109	17
-2012	213	Mining activities	Wyoming		56000	13196
-2012	213	Mining activities	Wyoming	Albany County	56001	31
-2012	213	Mining activities	Wyoming	Big Horn County	56003	28
-2012	213	Mining activities	Wyoming	Campbell County	56005	1941
-2012	213	Mining activities	Wyoming	Carbon County	56007	97
-2012	213	Mining activities	Wyoming	Converse County	56009	529
-2012	213	Mining activities	Wyoming	Crook County	56011	190
-2012	213	Mining activities	Wyoming	Fremont County	56013	614
-2012	213	Mining activities	Wyoming	Hot Springs County	56017	149
-2012	213	Mining activities	Wyoming	Johnson County	56019	118
-2012	213	Mining activities	Wyoming	Laramie County	56021	173
-2012	213	Mining activities	Wyoming	Natrona County	56025	2984
-2012	213	Mining activities	Wyoming	Niobrara County	56027	17
-2012	213	Mining activities	Wyoming	Park County	56029	436
-2012	213	Mining activities	Wyoming	Sublette County	56035	1140
-2012	213	Mining activities	Wyoming	Sweetwater County	56037	3119
-2012	213	Mining activities	Wyoming	Uinta County	56041	365
-2012	213	Mining activities	Wyoming	Washakie County	56043	133
-2012	213	Mining activities	Wyoming	Weston County	56045	77
-2012	213	Mining activities		U.S. TOTAL	US000	392069
+2012	213	Mining support	Alabama		01000	996
+2012	213	Mining support	Alabama	Baldwin County	01003	24
+2012	213	Mining support	Alabama	Escambia County	01053	149
+2012	213	Mining support	Alabama	Fayette County	01057	36
+2012	213	Mining support	Alabama	Mobile County	01097	102
+2012	213	Mining support	Alabama	Tuscaloosa County	01125	306
+2012	213	Mining support	Alaska		02000	9957
+2012	213	Mining support	Alaska	Anchorage Borough	02020	1409
+2012	213	Mining support	Alaska	Juneau Borough	02110	120
+2012	213	Mining support	Alaska	Kenai Peninsula Borough	02122	991
+2012	213	Mining support	Alaska	Matanuska-Susitna Borough	02170	26
+2012	213	Mining support	Arizona		04000	522
+2012	213	Mining support	Arizona	Maricopa County	04013	140
+2012	213	Mining support	Arizona	Mohave County	04015	17
+2012	213	Mining support	Arizona	Pima County	04019	77
+2012	213	Mining support	Arizona	Pinal County	04021	229
+2012	213	Mining support	Arkansas		05000	4972
+2012	213	Mining support	Arkansas	Cleburne County	05023	148
+2012	213	Mining support	Arkansas	Columbia County	05027	295
+2012	213	Mining support	Arkansas	Conway County	05029	130
+2012	213	Mining support	Arkansas	Faulkner County	05045	1028
+2012	213	Mining support	Arkansas	Logan County	05083	98
+2012	213	Mining support	Arkansas	Ouachita County	05103	38
+2012	213	Mining support	Arkansas	Pope County	05115	49
+2012	213	Mining support	Arkansas	Sebastian County	05131	1178
+2012	213	Mining support	Arkansas	Union County	05139	262
+2012	213	Mining support	Arkansas	Van Buren County	05141	37
+2012	213	Mining support	Arkansas	White County	05145	1004
+2012	213	Mining support	California		06000	13072
+2012	213	Mining support	California	El Dorado County	06017	31
+2012	213	Mining support	California	Kern County	06029	8435
+2012	213	Mining support	California	Los Angeles County	06037	1726
+2012	213	Mining support	California	Nevada County	06057	32
+2012	213	Mining support	California	Orange County	06059	261
+2012	213	Mining support	California	Placer County	06061	16
+2012	213	Mining support	California	Sacramento County	06067	49
+2012	213	Mining support	California	San Bernardino County	06071	30
+2012	213	Mining support	California	Santa Barbara County	06083	688
+2012	213	Mining support	California	Sutter County	06101	80
+2012	213	Mining support	California	Ventura County	06111	552
+2012	213	Mining support	California	Yolo County	06113	80
+2012	213	Mining support	Colorado		08000	15670
+2012	213	Mining support	Colorado	Adams County	08001	235
+2012	213	Mining support	Colorado	Arapahoe County	08005	964
+2012	213	Mining support	Colorado	Boulder County	08013	60
+2012	213	Mining support	Colorado	Denver County	08031	1931
+2012	213	Mining support	Colorado	Douglas County	08035	361
+2012	213	Mining support	Colorado	Garfield County	08045	1616
+2012	213	Mining support	Colorado	Jefferson County	08059	223
+2012	213	Mining support	Colorado	Larimer County	08069	86
+2012	213	Mining support	Colorado	Las Animas County	08071	169
+2012	213	Mining support	Colorado	Logan County	08075	170
+2012	213	Mining support	Colorado	Mesa County	08077	3349
+2012	213	Mining support	Colorado	Moffat County	08081	42
+2012	213	Mining support	Colorado	Montezuma County	08083	119
+2012	213	Mining support	Colorado	Montrose County	08085	162
+2012	213	Mining support	Colorado	Morgan County	08087	203
+2012	213	Mining support	Colorado	Rio Blanco County	08103	410
+2012	213	Mining support	Colorado	Routt County	08107	43
+2012	213	Mining support	Colorado	Weld County	08123	4178
+2012	213	Mining support	Colorado	Yuma County	08125	96
+2012	213	Mining support	Connecticut		09000	39
+2012	213	Mining support	Connecticut	Fairfield County	09001	10
+2012	213	Mining support	Florida		12000	581
+2012	213	Mining support	Florida	Broward County	12011	33
+2012	213	Mining support	Florida	Marion County	12083	32
+2012	213	Mining support	Florida	Orange County	12095	40
+2012	213	Mining support	Florida	Pasco County	12101	23
+2012	213	Mining support	Florida	Santa Rosa County	12113	18
+2012	213	Mining support	Florida	Sarasota County	12115	40
+2012	213	Mining support	Idaho		16000	381
+2012	213	Mining support	Illinois		17000	2227
+2012	213	Mining support	Illinois	Christian County	17021	10
+2012	213	Mining support	Illinois	Clay County	17025	66
+2012	213	Mining support	Illinois	Cook County	17031	40
+2012	213	Mining support	Illinois	Crawford County	17033	109
+2012	213	Mining support	Illinois	DuPage County	17043	14
+2012	213	Mining support	Illinois	Edwards County	17047	16
+2012	213	Mining support	Illinois	Lawrence County	17101	258
+2012	213	Mining support	Illinois	Marion County	17121	106
+2012	213	Mining support	Illinois	Richland County	17159	84
+2012	213	Mining support	Illinois	Wabash County	17185	162
+2012	213	Mining support	Illinois	Wayne County	17191	81
+2012	213	Mining support	Illinois	White County	17193	386
+2012	213	Mining support	Illinois	Will County	17197	40
+2012	213	Mining support	Indiana		18000	434
+2012	213	Mining support	Indiana	Gibson County	18051	4
+2012	213	Mining support	Indiana	Pike County	18125	24
+2012	213	Mining support	Iowa		19000	24
+2012	213	Mining support	Kansas		20000	6096
+2012	213	Mining support	Kansas	Allen County	20001	58
+2012	213	Mining support	Kansas	Anderson County	20003	9
+2012	213	Mining support	Kansas	Barber County	20007	158
+2012	213	Mining support	Kansas	Barton County	20009	785
+2012	213	Mining support	Kansas	Butler County	20015	99
+2012	213	Mining support	Kansas	Comanche County	20033	18
+2012	213	Mining support	Kansas	Cowley County	20035	28
+2012	213	Mining support	Kansas	Crawford County	20037	5
+2012	213	Mining support	Kansas	Decatur County	20039	15
+2012	213	Mining support	Kansas	Douglas County	20045	16
+2012	213	Mining support	Kansas	Ellis County	20051	499
+2012	213	Mining support	Kansas	Finney County	20055	233
+2012	213	Mining support	Kansas	Grant County	20067	141
+2012	213	Mining support	Kansas	Greenwood County	20073	113
+2012	213	Mining support	Kansas	Harper County	20077	143
+2012	213	Mining support	Kansas	Kingman County	20095	60
+2012	213	Mining support	Kansas	Linn County	20107	35
+2012	213	Mining support	Kansas	Mcpherson County	20113	75
+2012	213	Mining support	Kansas	Miami County	20121	45
+2012	213	Mining support	Kansas	Montgomery County	20125	38
+2012	213	Mining support	Kansas	Morton County	20129	31
+2012	213	Mining support	Kansas	Neosho County	20133	346
+2012	213	Mining support	Kansas	Ness County	20135	246
+2012	213	Mining support	Kansas	Pratt County	20151	407
+2012	213	Mining support	Kansas	Reno County	20155	40
+2012	213	Mining support	Kansas	Rice County	20159	74
+2012	213	Mining support	Kansas	Rooks County	20163	115
+2012	213	Mining support	Kansas	Russell County	20167	309
+2012	213	Mining support	Kansas	Sedgwick County	20173	466
+2012	213	Mining support	Kansas	Seward County	20175	590
+2012	213	Mining support	Kansas	Woodson County	20207	20
+2012	213	Mining support	Kentucky		21000	2932
+2012	213	Mining support	Kentucky	Barren County	21009	10
+2012	213	Mining support	Kentucky	Boyd County	21019	24
+2012	213	Mining support	Kentucky	Clinton County	21053	23
+2012	213	Mining support	Kentucky	Floyd County	21071	156
+2012	213	Mining support	Kentucky	Henderson County	21101	28
+2012	213	Mining support	Kentucky	Knott County	21119	57
+2012	213	Mining support	Kentucky	Lawrence County	21127	12
+2012	213	Mining support	Kentucky	Perry County	21193	70
+2012	213	Mining support	Kentucky	Pike County	21195	376
+2012	213	Mining support	Kentucky	Webster County	21233	36
+2012	213	Mining support	Louisiana		22000	41058
+2012	213	Mining support	Louisiana	Acadia Parish	22001	303
+2012	213	Mining support	Louisiana	Assumption Parish	22007	26
+2012	213	Mining support	Louisiana	Beauregard Parish	22011	33
+2012	213	Mining support	Louisiana	Bienville Parish	22013	85
+2012	213	Mining support	Louisiana	Bossier Parish	22015	2144
+2012	213	Mining support	Louisiana	Caddo Parish	22017	1920
+2012	213	Mining support	Louisiana	Calcasieu Parish	22019	540
+2012	213	Mining support	Louisiana	Cameron Parish	22023	290
+2012	213	Mining support	Louisiana	Catahoula Parish	22025	30
+2012	213	Mining support	Louisiana	Claiborne Parish	22027	713
+2012	213	Mining support	Louisiana	De Soto Parish	22031	460
+2012	213	Mining support	Louisiana	East Baton Rouge Parish	22033	541
+2012	213	Mining support	Louisiana	Iberia Parish	22045	3314
+2012	213	Mining support	Louisiana	Iberville Parish	22047	341
+2012	213	Mining support	Louisiana	Jefferson Parish	22051	1369
+2012	213	Mining support	Louisiana	Jefferson Davis Parish	22053	229
+2012	213	Mining support	Louisiana	Lafayette Parish	22055	14069
+2012	213	Mining support	Louisiana	Lafourche Parish	22057	701
+2012	213	Mining support	Louisiana	LaSalle Parish	22059	259
+2012	213	Mining support	Louisiana	Lincoln Parish	22061	60
+2012	213	Mining support	Louisiana	Livingston Parish	22063	20
+2012	213	Mining support	Louisiana	Ouachita Parish	22073	76
+2012	213	Mining support	Louisiana	Plaquemines Parish	22075	936
+2012	213	Mining support	Louisiana	Rapides Parish	22079	177
+2012	213	Mining support	Louisiana	Richland Parish	22083	40
+2012	213	Mining support	Louisiana	Sabine Parish	22085	46
+2012	213	Mining support	Louisiana	St. Charles Parish	22089	77
+2012	213	Mining support	Louisiana	St. John the Baptist Parish	22095	447
+2012	213	Mining support	Louisiana	St. Landry Parish	22097	412
+2012	213	Mining support	Louisiana	St. Mary Parish	22101	2290
+2012	213	Mining support	Louisiana	St. Tammany Parish	22103	599
+2012	213	Mining support	Louisiana	Tangipahoa Parish	22105	78
+2012	213	Mining support	Louisiana	Terrebonne Parish	22109	3974
+2012	213	Mining support	Louisiana	Vermilion Parish	22113	796
+2012	213	Mining support	Louisiana	Washington Parish	22117	12
+2012	213	Mining support	Louisiana	Webster Parish	22119	711
+2012	213	Mining support	Louisiana	Winn Parish	22127	32
+2012	213	Mining support	Maryland	Baltimore County	24005	15
+2012	213	Mining support	Maryland	Garrett County	24023	284
+2012	213	Mining support	Massachusetts		25000	76
+2012	213	Mining support	Massachusetts	Norfolk County	25021	42
+2012	213	Mining support	Michigan		26000	2117
+2012	213	Mining support	Michigan	Grand Traverse County	26055	189
+2012	213	Mining support	Michigan	Isabella County	26073	282
+2012	213	Mining support	Michigan	Otsego County	26137	194
+2012	213	Mining support	Michigan	Wexford County	26165	20
+2012	213	Mining support	Minnesota		27000	217
+2012	213	Mining support	Mississippi		28000	4586
+2012	213	Mining support	Mississippi	Adams County	28001	328
+2012	213	Mining support	Mississippi	Amite County	28005	3
+2012	213	Mining support	Mississippi	Attala County	28007	7
+2012	213	Mining support	Mississippi	Clarke County	28023	161
+2012	213	Mining support	Mississippi	Forrest County	28035	113
+2012	213	Mining support	Mississippi	Hinds County	28049	61
+2012	213	Mining support	Mississippi	Jackson County	28059	24
+2012	213	Mining support	Mississippi	Jasper County	28061	99
+2012	213	Mining support	Mississippi	Jones County	28067	1579
+2012	213	Mining support	Mississippi	Lamar County	28073	108
+2012	213	Mining support	Mississippi	Lawrence County	28077	5
+2012	213	Mining support	Mississippi	Leake County	28079	6
+2012	213	Mining support	Mississippi	Lincoln County	28085	118
+2012	213	Mining support	Mississippi	Marion County	28091	315
+2012	213	Mining support	Mississippi	Monroe County	28095	52
+2012	213	Mining support	Mississippi	Perry County	28111	4
+2012	213	Mining support	Mississippi	Pike County	28113	32
+2012	213	Mining support	Mississippi	Rankin County	28121	47
+2012	213	Mining support	Missouri		29000	282
+2012	213	Mining support	Missouri	St. Francois County	29187	8
+2012	213	Mining support	Montana		30000	3107
+2012	213	Mining support	Montana	Dawson County	30021	65
+2012	213	Mining support	Montana	Fallon County	30025	400
+2012	213	Mining support	Montana	Hill County	30041	8
+2012	213	Mining support	Montana	Missoula County	30063	36
+2012	213	Mining support	Montana	Musselshell County	30065	32
+2012	213	Mining support	Montana	Richland County	30083	644
+2012	213	Mining support	Montana	Roosevelt County	30085	71
+2012	213	Mining support	Montana	Sheridan County	30091	46
+2012	213	Mining support	Montana	Silver Bow County	30093	58
+2012	213	Mining support	Montana	Toole County	30101	38
+2012	213	Mining support	Montana	Yellowstone County	30111	232
+2012	213	Mining support	Nebraska		31000	217
+2012	213	Mining support	Nebraska	Hitchcock County	31087	33
+2012	213	Mining support	Nebraska	Kimball County	31105	42
+2012	213	Mining support	Nevada		32000	2397
+2012	213	Mining support	Nevada	Eureka County	32011	120
+2012	213	Mining support	Nevada	Humboldt County	32013	311
+2012	213	Mining support	Nevada	Lander County	32015	122
+2012	213	Mining support	Nevada	Lyon County	32019	31
+2012	213	Mining support	New Hampshire		33000	88
+2012	213	Mining support	New Jersey		34000	228
+2012	213	Mining support	New Jersey	Bergen County	34003	11
+2012	213	Mining support	New Jersey	Middlesex County	34023	23
+2012	213	Mining support	New Mexico		35000	13843
+2012	213	Mining support	New Mexico	Bernalillo County	35001	40
+2012	213	Mining support	New Mexico	Chaves County	35005	277
+2012	213	Mining support	New Mexico	Dona Ana County	35013	10
+2012	213	Mining support	New Mexico	Eddy County	35015	3040
+2012	213	Mining support	New Mexico	Lea County	35025	6392
+2012	213	Mining support	New Mexico	Mckinley County	35031	61
+2012	213	Mining support	New Mexico	Rio Arriba County	35039	58
+2012	213	Mining support	New Mexico	San Juan County	35045	3202
+2012	213	Mining support	New Mexico	Santa Fe County	35049	10
+2012	213	Mining support	New Mexico	Valencia County	35061	15
+2012	213	Mining support	New York		36000	515
+2012	213	Mining support	New York	Cattaraugus County	36009	23
+2012	213	Mining support	New York	Chautauqua County	36013	82
+2012	213	Mining support	New York	Chemung County	36015	14
+2012	213	Mining support	North Carolina		37000	283
+2012	213	Mining support	North Carolina	Guilford County	37081	22
+2012	213	Mining support	North Carolina	Johnston County	37101	10
+2012	213	Mining support	North Carolina	Wake County	37183	8
+2012	213	Mining support	North Dakota		38000	20627
+2012	213	Mining support	North Dakota	Bottineau County	38009	189
+2012	213	Mining support	North Dakota	Bowman County	38011	188
+2012	213	Mining support	North Dakota	Burke County	38013	105
+2012	213	Mining support	North Dakota	Burleigh County	38015	109
+2012	213	Mining support	North Dakota	Divide County	38023	31
+2012	213	Mining support	North Dakota	McKenzie County	38053	1108
+2012	213	Mining support	North Dakota	McLean County	38055	29
+2012	213	Mining support	North Dakota	Mountrail County	38061	788
+2012	213	Mining support	North Dakota	Stark County	38089	3468
+2012	213	Mining support	North Dakota	Ward County	38101	1280
+2012	213	Mining support	North Dakota	Williams County	38105	12058
+2012	213	Mining support	Ohio		39000	3389
+2012	213	Mining support	Ohio	Ashtabula County	39007	30
+2012	213	Mining support	Ohio	Clark County	39023	18
+2012	213	Mining support	Ohio	Guernsey County	39059	47
+2012	213	Mining support	Ohio	Holmes County	39075	47
+2012	213	Mining support	Ohio	Knox County	39083	13
+2012	213	Mining support	Ohio	Monroe County	39111	67
+2012	213	Mining support	Ohio	Muskingum County	39119	168
+2012	213	Mining support	Ohio	Noble County	39121	85
+2012	213	Mining support	Ohio	Perry County	39127	39
+2012	213	Mining support	Ohio	Portage County	39133	59
+2012	213	Mining support	Ohio	Stark County	39151	175
+2012	213	Mining support	Ohio	Trumbull County	39155	32
+2012	213	Mining support	Ohio	Tuscarawas County	39157	63
+2012	213	Mining support	Ohio	Washington County	39167	223
+2012	213	Mining support	Ohio	Wayne County	39169	222
+2012	213	Mining support	Oklahoma		40000	32177
+2012	213	Mining support	Oklahoma	Alfalfa County	40003	54
+2012	213	Mining support	Oklahoma	Atoka County	40005	118
+2012	213	Mining support	Oklahoma	Beaver County	40007	291
+2012	213	Mining support	Oklahoma	Beckham County	40009	1896
+2012	213	Mining support	Oklahoma	Blaine County	40011	114
+2012	213	Mining support	Oklahoma	Caddo County	40015	143
+2012	213	Mining support	Oklahoma	Canadian County	40017	1850
+2012	213	Mining support	Oklahoma	Carter County	40019	810
+2012	213	Mining support	Oklahoma	Cleveland County	40027	485
+2012	213	Mining support	Oklahoma	Comanche County	40031	24
+2012	213	Mining support	Oklahoma	Creek County	40037	237
+2012	213	Mining support	Oklahoma	Custer County	40039	1058
+2012	213	Mining support	Oklahoma	Dewey County	40043	140
+2012	213	Mining support	Oklahoma	Garfield County	40047	815
+2012	213	Mining support	Oklahoma	Garvin County	40049	872
+2012	213	Mining support	Oklahoma	Grady County	40051	568
+2012	213	Mining support	Oklahoma	Haskell County	40061	184
+2012	213	Mining support	Oklahoma	Hughes County	40063	166
+2012	213	Mining support	Oklahoma	Jackson County	40065	5
+2012	213	Mining support	Oklahoma	Johnston County	40069	5
+2012	213	Mining support	Oklahoma	Kay County	40071	375
+2012	213	Mining support	Oklahoma	Kingfisher County	40073	690
+2012	213	Mining support	Oklahoma	Latimer County	40077	453
+2012	213	Mining support	Oklahoma	Le Flore County	40079	405
+2012	213	Mining support	Oklahoma	Lincoln County	40081	218
+2012	213	Mining support	Oklahoma	Logan County	40083	179
+2012	213	Mining support	Oklahoma	McClain County	40087	239
+2012	213	Mining support	Oklahoma	McIntosh County	40091	13
+2012	213	Mining support	Oklahoma	Muskogee County	40101	34
+2012	213	Mining support	Oklahoma	Noble County	40103	21
+2012	213	Mining support	Oklahoma	Oklahoma County	40109	6287
+2012	213	Mining support	Oklahoma	Okmulgee County	40111	57
+2012	213	Mining support	Oklahoma	Osage County	40113	233
+2012	213	Mining support	Oklahoma	Pawnee County	40117	101
+2012	213	Mining support	Oklahoma	Payne County	40119	1050
+2012	213	Mining support	Oklahoma	Pittsburg County	40121	1026
+2012	213	Mining support	Oklahoma	Pontotoc County	40123	161
+2012	213	Mining support	Oklahoma	Pottawatomie County	40125	322
+2012	213	Mining support	Oklahoma	Rogers County	40131	246
+2012	213	Mining support	Oklahoma	Seminole County	40133	627
+2012	213	Mining support	Oklahoma	Stephens County	40137	1857
+2012	213	Mining support	Oklahoma	Texas County	40139	128
+2012	213	Mining support	Oklahoma	Tulsa County	40143	1927
+2012	213	Mining support	Oklahoma	Washington County	40147	421
+2012	213	Mining support	Oklahoma	Washita County	40149	261
+2012	213	Mining support	Oklahoma	Woodward County	40153	1829
+2012	213	Mining support	Pennsylvania		42000	16764
+2012	213	Mining support	Pennsylvania	Allegheny County	42003	702
+2012	213	Mining support	Pennsylvania	Armstrong County	42005	334
+2012	213	Mining support	Pennsylvania	Beaver County	42007	201
+2012	213	Mining support	Pennsylvania	Bradford County	42015	984
+2012	213	Mining support	Pennsylvania	Butler County	42019	100
+2012	213	Mining support	Pennsylvania	Cambria County	42021	9
+2012	213	Mining support	Pennsylvania	Centre County	42027	259
+2012	213	Mining support	Pennsylvania	Clarion County	42031	197
+2012	213	Mining support	Pennsylvania	Crawford County	42039	218
+2012	213	Mining support	Pennsylvania	Elk County	42047	128
+2012	213	Mining support	Pennsylvania	Erie County	42049	67
+2012	213	Mining support	Pennsylvania	Fayette County	42051	342
+2012	213	Mining support	Pennsylvania	Greene County	42059	1057
+2012	213	Mining support	Pennsylvania	Indiana County	42063	2004
+2012	213	Mining support	Pennsylvania	Jefferson County	42065	458
+2012	213	Mining support	Pennsylvania	Lancaster County	42071	38
+2012	213	Mining support	Pennsylvania	Lycoming County	42081	1678
+2012	213	Mining support	Pennsylvania	Mckean County	42083	928
+2012	213	Mining support	Pennsylvania	Mercer County	42085	71
+2012	213	Mining support	Pennsylvania	Schuylkill County	42107	55
+2012	213	Mining support	Pennsylvania	Tioga County	42117	264
+2012	213	Mining support	Pennsylvania	Venango County	42121	100
+2012	213	Mining support	Pennsylvania	Washington County	42125	1544
+2012	213	Mining support	Pennsylvania	Westmoreland County	42129	497
+2012	213	Mining support	Pennsylvania	Wyoming County	42131	187
+2012	213	Mining support	South Dakota		46000	42
+2012	213	Mining support	South Dakota	Lawrence County	46081	4
+2012	213	Mining support	Tennessee		47000	347
+2012	213	Mining support	Tennessee	Anderson County	47001	136
+2012	213	Mining support	Tennessee	Knox County	47093	20
+2012	213	Mining support	Texas		48000	163268
+2012	213	Mining support	Texas	Anderson County	48001	688
+2012	213	Mining support	Texas	Andrews County	48003	1587
+2012	213	Mining support	Texas	Angelina County	48005	122
+2012	213	Mining support	Texas	Aransas County	48007	262
+2012	213	Mining support	Texas	Archer County	48009	193
+2012	213	Mining support	Texas	Atascosa County	48013	581
+2012	213	Mining support	Texas	Austin County	48015	62
+2012	213	Mining support	Texas	Bee County	48025	427
+2012	213	Mining support	Texas	Bexar County	48029	502
+2012	213	Mining support	Texas	Brazoria County	48039	768
+2012	213	Mining support	Texas	Brazos County	48041	1322
+2012	213	Mining support	Texas	Brooks County	48047	195
+2012	213	Mining support	Texas	Brown County	48049	33
+2012	213	Mining support	Texas	Burleson County	48051	820
+2012	213	Mining support	Texas	Caldwell County	48055	196
+2012	213	Mining support	Texas	Callahan County	48059	54
+2012	213	Mining support	Texas	Cameron County	48061	42
+2012	213	Mining support	Texas	Cass County	48067	25
+2012	213	Mining support	Texas	Chambers County	48071	496
+2012	213	Mining support	Texas	Cherokee County	48073	15
+2012	213	Mining support	Texas	Coleman County	48083	11
+2012	213	Mining support	Texas	Collin County	48085	963
+2012	213	Mining support	Texas	Comal County	48091	25
+2012	213	Mining support	Texas	Cooke County	48097	1970
+2012	213	Mining support	Texas	Crane County	48103	396
+2012	213	Mining support	Texas	Crockett County	48105	118
+2012	213	Mining support	Texas	Dallas County	48113	1598
+2012	213	Mining support	Texas	Dawson County	48115	188
+2012	213	Mining support	Texas	Denton County	48121	1267
+2012	213	Mining support	Texas	DeWitt County	48123	438
+2012	213	Mining support	Texas	Dimmit County	48127	1097
+2012	213	Mining support	Texas	Duval County	48131	554
+2012	213	Mining support	Texas	Eastland County	48133	461
+2012	213	Mining support	Texas	Ector County	48135	8875
+2012	213	Mining support	Texas	Ellis County	48139	80
+2012	213	Mining support	Texas	El Paso County	48141	54
+2012	213	Mining support	Texas	Fayette County	48149	329
+2012	213	Mining support	Texas	Fort Bend County	48157	2562
+2012	213	Mining support	Texas	Freestone County	48161	358
+2012	213	Mining support	Texas	Frio County	48163	616
+2012	213	Mining support	Texas	Gaines County	48165	441
+2012	213	Mining support	Texas	Galveston County	48167	420
+2012	213	Mining support	Texas	Garza County	48169	132
+2012	213	Mining support	Texas	Gonzales County	48177	165
+2012	213	Mining support	Texas	Gray County	48179	959
+2012	213	Mining support	Texas	Grayson County	48181	117
+2012	213	Mining support	Texas	Gregg County	48183	4371
+2012	213	Mining support	Texas	Grimes County	48185	41
+2012	213	Mining support	Texas	Guadalupe County	48187	32
+2012	213	Mining support	Texas	Harris County	48201	35979
+2012	213	Mining support	Texas	Harrison County	48203	1850
+2012	213	Mining support	Texas	Haskell County	48207	24
+2012	213	Mining support	Texas	Hemphill County	48211	422
+2012	213	Mining support	Texas	Henderson County	48213	28
+2012	213	Mining support	Texas	Hidalgo County	48215	2144
+2012	213	Mining support	Texas	Hockley County	48219	1635
+2012	213	Mining support	Texas	Hood County	48221	1364
+2012	213	Mining support	Texas	Houston County	48225	71
+2012	213	Mining support	Texas	Howard County	48227	624
+2012	213	Mining support	Texas	Jack County	48237	677
+2012	213	Mining support	Texas	Jackson County	48239	148
+2012	213	Mining support	Texas	Jefferson County	48245	348
+2012	213	Mining support	Texas	Jim Hogg County	48247	29
+2012	213	Mining support	Texas	Jim Wells County	48249	4920
+2012	213	Mining support	Texas	Johnson County	48251	1963
+2012	213	Mining support	Texas	Jones County	48253	443
+2012	213	Mining support	Texas	Kerr County	48265	31
+2012	213	Mining support	Texas	Kleberg County	48273	255
+2012	213	Mining support	Texas	Knox County	48275	140
+2012	213	Mining support	Texas	Lavaca County	48285	188
+2012	213	Mining support	Texas	Lee County	48287	423
+2012	213	Mining support	Texas	Leon County	48289	157
+2012	213	Mining support	Texas	Liberty County	48291	612
+2012	213	Mining support	Texas	Limestone County	48293	82
+2012	213	Mining support	Texas	Lipscomb County	48295	58
+2012	213	Mining support	Texas	Live Oak County	48297	1070
+2012	213	Mining support	Texas	Lubbock County	48303	99
+2012	213	Mining support	Texas	Madison County	48313	49
+2012	213	Mining support	Texas	Martin County	48317	18
+2012	213	Mining support	Texas	Matagorda County	48321	252
+2012	213	Mining support	Texas	Medina County	48325	338
+2012	213	Mining support	Texas	Midland County	48329	10534
+2012	213	Mining support	Texas	Montague County	48337	746
+2012	213	Mining support	Texas	Montgomery County	48339	2822
+2012	213	Mining support	Texas	Moore County	48341	132
+2012	213	Mining support	Texas	Nacogdoches County	48347	8
+2012	213	Mining support	Texas	Nolan County	48353	247
+2012	213	Mining support	Texas	Nueces County	48355	4488
+2012	213	Mining support	Texas	Ochiltree County	48357	1229
+2012	213	Mining support	Texas	Palo Pinto County	48363	844
+2012	213	Mining support	Texas	Panola County	48365	1061
+2012	213	Mining support	Texas	Parker County	48367	1637
+2012	213	Mining support	Texas	Pecos County	48371	1043
+2012	213	Mining support	Texas	Polk County	48373	68
+2012	213	Mining support	Texas	Reagan County	48383	536
+2012	213	Mining support	Texas	Red River County	48387	62
+2012	213	Mining support	Texas	Reeves County	48389	264
+2012	213	Mining support	Texas	Refugio County	48391	394
+2012	213	Mining support	Texas	Robertson County	48395	117
+2012	213	Mining support	Texas	Rusk County	48401	887
+2012	213	Mining support	Texas	Sabine County	48403	53
+2012	213	Mining support	Texas	San Patricio County	48409	931
+2012	213	Mining support	Texas	Scurry County	48415	2000
+2012	213	Mining support	Texas	Shackelford County	48417	431
+2012	213	Mining support	Texas	Shelby County	48419	186
+2012	213	Mining support	Texas	Smith County	48423	1408
+2012	213	Mining support	Texas	Stephens County	48429	161
+2012	213	Mining support	Texas	Stonewall County	48433	83
+2012	213	Mining support	Texas	Tarrant County	48439	3189
+2012	213	Mining support	Texas	Taylor County	48441	1081
+2012	213	Mining support	Texas	Terry County	48445	485
+2012	213	Mining support	Texas	Titus County	48449	76
+2012	213	Mining support	Texas	Tom Green County	48451	920
+2012	213	Mining support	Texas	Travis County	48453	627
+2012	213	Mining support	Texas	Upshur County	48459	50
+2012	213	Mining support	Texas	Upton County	48461	181
+2012	213	Mining support	Texas	Van Zandt County	48467	62
+2012	213	Mining support	Texas	Victoria County	48469	2872
+2012	213	Mining support	Texas	Walker County	48471	19
+2012	213	Mining support	Texas	Waller County	48473	317
+2012	213	Mining support	Texas	Ward County	48475	1104
+2012	213	Mining support	Texas	Washington County	48477	162
+2012	213	Mining support	Texas	Webb County	48479	2186
+2012	213	Mining support	Texas	Wharton County	48481	701
+2012	213	Mining support	Texas	Wheeler County	48483	116
+2012	213	Mining support	Texas	Wilbarger County	48487	15
+2012	213	Mining support	Texas	Winkler County	48495	575
+2012	213	Mining support	Texas	Wise County	48497	2967
+2012	213	Mining support	Texas	Yoakum County	48501	677
+2012	213	Mining support	Texas	Young County	48503	597
+2012	213	Mining support	Texas	Zapata County	48505	1128
+2012	213	Mining support	Utah		49000	5619
+2012	213	Mining support	Utah	Davis County	49011	150
+2012	213	Mining support	Utah	Duchesne County	49013	1260
+2012	213	Mining support	Utah	Emery County	49015	21
+2012	213	Mining support	Utah	Grand County	49019	16
+2012	213	Mining support	Utah	Salt Lake County	49035	1468
+2012	213	Mining support	Utah	San Juan County	49037	112
+2012	213	Mining support	Utah	Uintah County	49047	2358
+2012	213	Mining support	Utah	Utah County	49049	76
+2012	213	Mining support	Virginia		51000	1326
+2012	213	Mining support	Virginia	Fairfax County	51059	17
+2012	213	Mining support	Virginia	Tazewell County	51185	142
+2012	213	Mining support	Virginia	Richmond City	51760	3
+2012	213	Mining support	Washington	Spokane County	53063	78
+2012	213	Mining support	Washington	Yakima County	53077	12
+2012	213	Mining support	West Virginia		54000	6929
+2012	213	Mining support	West Virginia	Cabell County	54011	41
+2012	213	Mining support	West Virginia	Fayette County	54019	59
+2012	213	Mining support	West Virginia	Harrison County	54033	658
+2012	213	Mining support	West Virginia	Jackson County	54035	27
+2012	213	Mining support	West Virginia	Kanawha County	54039	309
+2012	213	Mining support	West Virginia	Lewis County	54041	1247
+2012	213	Mining support	West Virginia	Lincoln County	54043	459
+2012	213	Mining support	West Virginia	Logan County	54045	188
+2012	213	Mining support	West Virginia	Marion County	54049	95
+2012	213	Mining support	West Virginia	Mingo County	54059	118
+2012	213	Mining support	West Virginia	Nicholas County	54067	186
+2012	213	Mining support	West Virginia	Putnam County	54079	25
+2012	213	Mining support	West Virginia	Raleigh County	54081	132
+2012	213	Mining support	West Virginia	Ritchie County	54085	327
+2012	213	Mining support	West Virginia	Roane County	54087	164
+2012	213	Mining support	West Virginia	Upshur County	54097	377
+2012	213	Mining support	West Virginia	Wood County	54107	42
+2012	213	Mining support	West Virginia	Wyoming County	54109	17
+2012	213	Mining support	Wyoming		56000	13196
+2012	213	Mining support	Wyoming	Albany County	56001	31
+2012	213	Mining support	Wyoming	Big Horn County	56003	28
+2012	213	Mining support	Wyoming	Campbell County	56005	1941
+2012	213	Mining support	Wyoming	Carbon County	56007	97
+2012	213	Mining support	Wyoming	Converse County	56009	529
+2012	213	Mining support	Wyoming	Crook County	56011	190
+2012	213	Mining support	Wyoming	Fremont County	56013	614
+2012	213	Mining support	Wyoming	Hot Springs County	56017	149
+2012	213	Mining support	Wyoming	Johnson County	56019	118
+2012	213	Mining support	Wyoming	Laramie County	56021	173
+2012	213	Mining support	Wyoming	Natrona County	56025	2984
+2012	213	Mining support	Wyoming	Niobrara County	56027	17
+2012	213	Mining support	Wyoming	Park County	56029	436
+2012	213	Mining support	Wyoming	Sublette County	56035	1140
+2012	213	Mining support	Wyoming	Sweetwater County	56037	3119
+2012	213	Mining support	Wyoming	Uinta County	56041	365
+2012	213	Mining support	Wyoming	Washakie County	56043	133
+2012	213	Mining support	Wyoming	Weston County	56045	77
+2012	213	Mining support		U.S. TOTAL	US000	392069
 2012	221114	Solar	Arizona		04000	101
 2012	221114	Solar	Arizona	Maricopa County	04013	35
 2012	221114	Solar	California		06000	338

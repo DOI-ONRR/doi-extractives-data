@@ -3,16 +3,20 @@
 # structured: for instance, Oil & Gas is 211, which means that it represents
 # the sum of all other NAICS codes that begin with 211.
 naics:
+  # The total number of jobs at each geographic level, which we divide by
+  # to get the percentage:
   All:                  10
+  # All mining and what we normally think of as "extractives":
   Mining:               21
-  'Oil & Gas':          211
+  # The big ones:
+  Oil and gas:          211
   Coal:                 2121
   # Nonenergy minerals:
   Hardrock minerals:    2122
   Nonmetallic minerals: 2123
-  # other related jobs
-  Mining activities:    213
-  # Renewables
+  # Support activities:
+  Mining support:       213
+  # Renewables:
   Solar:                221114
   Wind:                 221115
   Geothermal:           221116

@@ -1,5 +1,6 @@
 {% assign jobs = site.data.national_jobs[state_id] %}
 {% assign jobs_by_commodity = site.data.national_jobs_by_commodity %}
+{% assign show_commodities = site.data.commodities.jobs.show %}
 {% assign self_employment_jobs = site.data.national_self_employment[state_id] %}
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
@@ -78,9 +79,9 @@
 
       {% for _commodity in jobs_by_commodity %}
         {% assign commodity = _commodity[0] %}
-        {% if skip_commodities contains commodity %}
+        {% unless show_commodities contains commodity %}
           {% continue %}
-        {% endif %}
+        {% endunless %}
         {% assign _slug = commodity | slugify %}
         {% assign _figures = _commodity[1][year] %}
       <div class="chart-item">

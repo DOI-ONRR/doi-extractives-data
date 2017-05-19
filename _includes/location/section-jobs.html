@@ -1,6 +1,6 @@
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign jobs_by_commodity = site.data.state_jobs_by_commodity[state_id] %}
-{% assign skip_commodities = 'Extractives|Renewables' | split: '|' %}
+{% assign show_commodities = site.data.commodities.jobs.show %}
 {% assign county_jobs = site.data.county_jobs[state_id] %}
 {% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
 {% assign jobs_count = jobs[year].count | default: 0 %}
@@ -146,9 +146,9 @@
 
       {% for _commodity in jobs_by_commodity %}
         {% assign commodity = _commodity[0] %}
-        {% if skip_commodities contains commodity %}
+        {% unless show_commodities contains commodity %}
           {% continue %}
-        {% endif %}
+        {% endunless %}
         {% assign _slug = commodity | slugify %}
         {% assign _figures = _commodity[1][year] %}
       <div class="chart-item">

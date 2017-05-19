@@ -140,11 +140,7 @@ data/national_gdp.yml:
 			-o _$@
 
 data/jobs: \
-	data/state_jobs.yml \
-	data/state_jobs_by_commodity.yml \
-	data/national_jobs.yml \
-	data/national_jobs_by_commodity.yml \
-	data/county_jobs \
+	data/bls \
 	data/state_self_employment.yml \
 	data/national_self_employment.yml
 

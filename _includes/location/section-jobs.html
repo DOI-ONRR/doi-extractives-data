@@ -16,7 +16,7 @@
   <section is="year-switcher-section">
     {%
       include sticky-header.html
-      header_text='Wage and salary jobs'
+      header_text='Extractive industry jobs'
       year_range=year_range
       selector=true
     %}
@@ -95,7 +95,7 @@
         <div class="map-container">
 
           <h4 class="chart-title">
-            {{ locality_name }} wage and salary jobs
+            Extractive industry jobs by county
           </h4>
 
           <figure is="eiti-data-map-table" class="container">
@@ -138,11 +138,8 @@
     </section><!-- /.chart-list -->
 
     {% if jobs_by_commodity %}
+    <h4>Jobs by industry sector</h4>
     <section class="chart-list">
-      <p class="chart-description">
-        Below are charts showing annual average employment levels by
-        industry or commodity.
-      </p>
 
       {% for _commodity in jobs_by_commodity %}
         {% assign commodity = _commodity[0] %}

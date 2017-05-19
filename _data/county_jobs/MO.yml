@@ -33,6 +33,10 @@
       count: 26
       total: 13636
       percent: 0.19
+    '2014':
+      count: 21
+      total: 13487
+      percent: 0.16
 '29013':
   name: Bates County
   employment:
@@ -87,6 +91,10 @@
       count: 43
       total: 88727
       percent: 0.05
+    '2014':
+      count: 42
+      total: 89802
+      percent: 0.05
 '29027':
   name: Callaway County
   employment:
@@ -122,6 +130,10 @@
       count: 63
       total: 14144
       percent: 0.45
+    '2014':
+      count: 68
+      total: 14106
+      percent: 0.48
 '29031':
   name: Cape Girardeau County
   employment:
@@ -157,6 +169,10 @@
       count: 74
       total: 40507
       percent: 0.18
+    '2014':
+      count: 32
+      total: 39988
+      percent: 0.08
 '29037':
   name: Cass County
   employment:
@@ -192,6 +208,10 @@
       count: 48
       total: 23258
       percent: 0.21
+    '2014':
+      count: 50
+      total: 24076
+      percent: 0.21
 '29047':
   name: Clay County
   employment:
@@ -219,6 +239,10 @@
       count: 61
       total: 88870
       percent: 0.07
+    '2014':
+      count: 58
+      total: 93151
+      percent: 0.06
 '29051':
   name: Cole County
   employment:
@@ -241,6 +265,10 @@
     '2013':
       count: 56
       total: 51219
+      percent: 0.11
+    '2014':
+      count: 57
+      total: 51297
       percent: 0.11
 '29071':
   name: Franklin County
@@ -277,6 +305,10 @@
       count: 59
       total: 35953
       percent: 0.16
+    '2014':
+      count: 61
+      total: 36761
+      percent: 0.17
 '29077':
   name: Greene County
   employment:
@@ -334,6 +366,10 @@
       count: 30
       total: 14989
       percent: 0.2
+    '2014':
+      count: 31
+      total: 14899
+      percent: 0.21
 '29095':
   name: Jackson County
   employment:
@@ -368,6 +404,10 @@
     '2013':
       count: 49
       total: 348047
+      percent: 0.01
+    '2014':
+      count: 51
+      total: 350321
       percent: 0.01
 '29097':
   name: Jasper County
@@ -404,6 +444,10 @@
       count: 76
       total: 59164
       percent: 0.13
+    '2014':
+      count: 99
+      total: 58855
+      percent: 0.17
 '29109':
   name: Lawrence County
   employment:
@@ -454,6 +498,10 @@
       count: 86
       total: 9999
       percent: 0.86
+    '2014':
+      count: 89
+      total: 10695
+      percent: 0.83
 '29119':
   name: McDonald County
   employment:
@@ -499,6 +547,10 @@
       count: 13
       total: 2826
       percent: 0.46
+    '2014':
+      count: 16
+      total: 2818
+      percent: 0.57
 '29145':
   name: Newton County
   employment:
@@ -552,6 +604,10 @@
       count: 18
       total: 3296
       percent: 0.55
+    '2014':
+      count: 17
+      total: 3526
+      percent: 0.48
 '29159':
   name: Pettis County
   employment:
@@ -602,6 +658,10 @@
       count: 24
       total: 16743
       percent: 0.14
+    '2014':
+      count: 16
+      total: 17350
+      percent: 0.09
 '29163':
   name: Pike County
   employment:
@@ -659,6 +719,10 @@
     '2013':
       count: 12
       total: 7767
+      percent: 0.15
+    '2014':
+      count: 12
+      total: 7788
       percent: 0.15
 '29183':
   name: St. Charles County
@@ -726,6 +790,10 @@
       count: 246
       total: 5381
       percent: 4.57
+    '2014':
+      count: 237
+      total: 5407
+      percent: 4.38
 '29187':
   name: St. Francois County
   employment:
@@ -761,6 +829,10 @@
       count: 71
       total: 22371
       percent: 0.32
+    '2014':
+      count: 87
+      total: 22444
+      percent: 0.39
 '29189':
   name: St. Louis County
   employment:
@@ -796,6 +868,10 @@
       count: 426
       total: 571808
       percent: 0.07
+    '2014':
+      count: 412
+      total: 581407
+      percent: 0.07
 '29207':
   name: Stoddard County
   employment:
@@ -803,6 +879,10 @@
       count: 29
       total: 9980
       percent: 0.29
+    '2014':
+      count: 30
+      total: 9975
+      percent: 0.3
 '29213':
   name: Taney County
   employment:
@@ -822,6 +902,10 @@
       count: 52
       total: 28170
       percent: 0.18
+    '2014':
+      count: 53
+      total: 28035
+      percent: 0.19
 '29215':
   name: Texas County
   employment:
@@ -876,6 +960,10 @@
       count: 33
       total: 7005
       percent: 0.47
+    '2014':
+      count: 30
+      total: 7046
+      percent: 0.43
 '29225':
   name: Webster County
   employment:
@@ -899,6 +987,10 @@
       count: 21
       total: 6271
       percent: 0.33
+    '2014':
+      count: 21
+      total: 6487
+      percent: 0.32
 '29229':
   name: Wright County
   employment:

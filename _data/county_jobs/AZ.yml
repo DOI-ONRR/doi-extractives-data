@@ -17,6 +17,10 @@
       count: 137
       total: 17992
       percent: 0.76
+    '2014':
+      count: 135
+      total: 17754
+      percent: 0.76
 '04003':
   name: Cochise County
   employment:
@@ -52,6 +56,10 @@
       count: 77
       total: 35490
       percent: 0.22
+    '2014':
+      count: 71
+      total: 34824
+      percent: 0.2
 '04005':
   name: Coconino County
   employment:
@@ -83,6 +91,10 @@
       count: 85
       total: 56756
       percent: 0.15
+    '2014':
+      count: 108
+      total: 59242
+      percent: 0.18
 '04007':
   name: Gila County
   employment:
@@ -110,6 +122,10 @@
       count: 992
       total: 13997
       percent: 7.09
+    '2014':
+      count: 1173
+      total: 14952
+      percent: 7.85
 '04012':
   name: La Paz County
   employment:
@@ -117,6 +133,10 @@
       count: 22
       total: 5208
       percent: 0.42
+    '2014':
+      count: 17
+      total: 5422
+      percent: 0.31
 '04013':
   name: Maricopa County
   employment:
@@ -152,6 +172,10 @@
       count: 2204
       total: 1713992
       percent: 0.13
+    '2014':
+      count: 2067
+      total: 1755209
+      percent: 0.12
 '04015':
   name: Mohave County
   employment:
@@ -187,6 +211,10 @@
       count: 505
       total: 44762
       percent: 1.13
+    '2014':
+      count: 528
+      total: 45707
+      percent: 1.16
 '04017':
   name: Navajo County
   employment:
@@ -222,6 +250,10 @@
       count: 543
       total: 26370
       percent: 2.06
+    '2014':
+      count: 542
+      total: 26740
+      percent: 2.03
 04019:
   name: Pima County
   employment:
@@ -257,6 +289,10 @@
       count: 2255
       total: 349900
       percent: 0.64
+    '2014':
+      count: 2299
+      total: 351963
+      percent: 0.65
 '04021':
   name: Pinal County
   employment:
@@ -292,12 +328,20 @@
       count: 1840
       total: 56850
       percent: 3.24
+    '2014':
+      count: 1305
+      total: 57421
+      percent: 2.27
 '04023':
   name: Santa Cruz County
   employment:
     '2013':
       count: 8
       total: 13090
+      percent: 0.06
+    '2014':
+      count: 8
+      total: 13501
       percent: 0.06
 '04025':
   name: Yavapai County
@@ -361,3 +405,7 @@
       count: 22
       total: 63156
       percent: 0.03
+    '2014':
+      count: 24
+      total: 63993
+      percent: 0.04

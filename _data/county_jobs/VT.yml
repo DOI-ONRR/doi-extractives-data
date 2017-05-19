@@ -33,6 +33,10 @@
       count: 19
       total: 14122
       percent: 0.13
+    '2014':
+      count: 34
+      total: 14496
+      percent: 0.23
 '50005':
   name: Caledonia County
   employment:
@@ -87,6 +91,10 @@
       count: 42
       total: 98359
       percent: 0.04
+    '2014':
+      count: 43
+      total: 99734
+      percent: 0.04
 '50011':
   name: Franklin County
   employment:
@@ -98,6 +106,10 @@
       count: 25
       total: 16757
       percent: 0.15
+    '2014':
+      count: 24
+      total: 17075
+      percent: 0.14
 '50015':
   name: Lamoille County
   employment:
@@ -113,6 +125,10 @@
       count: 7
       total: 10521
       percent: 0.07
+    '2014':
+      count: 9
+      total: 11676
+      percent: 0.08
 '50017':
   name: Orange County
   employment:
@@ -148,6 +164,10 @@
       count: 11
       total: 7686
       percent: 0.14
+    '2014':
+      count: 12
+      total: 7645
+      percent: 0.16
 '50021':
   name: Rutland County
   employment:
@@ -183,6 +203,10 @@
       count: 363
       total: 27569
       percent: 1.32
+    '2014':
+      count: 350
+      total: 27473
+      percent: 1.27
 '50023':
   name: Washington County
   employment:
@@ -218,6 +242,10 @@
       count: 91
       total: 32580
       percent: 0.28
+    '2014':
+      count: 77
+      total: 32423
+      percent: 0.24
 '50027':
   name: Windsor County
   employment:
@@ -241,3 +269,7 @@
       count: 40
       total: 22670
       percent: 0.18
+    '2014':
+      count: 32
+      total: 22973
+      percent: 0.14

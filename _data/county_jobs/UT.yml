@@ -29,6 +29,10 @@
       count: 193
       total: 2723
       percent: 7.09
+    '2014':
+      count: 193
+      total: 2667
+      percent: 7.24
 '49003':
   name: Box Elder County
   employment:
@@ -56,6 +60,10 @@
       count: 24
       total: 17205
       percent: 0.14
+    '2014':
+      count: 28
+      total: 17769
+      percent: 0.16
 '49005':
   name: Cache County
   employment:
@@ -86,6 +94,10 @@
     '2013':
       count: 14
       total: 48688
+      percent: 0.03
+    '2014':
+      count: 14
+      total: 50290
       percent: 0.03
 '49007':
   name: Carbon County
@@ -133,6 +145,10 @@
       count: 174
       total: 110281
       percent: 0.16
+    '2014':
+      count: 196
+      total: 113935
+      percent: 0.17
 '49013':
   name: Duchesne County
   employment:
@@ -168,6 +184,10 @@
       count: 2269
       total: 9243
       percent: 24.55
+    '2014':
+      count: 2541
+      total: 9659
+      percent: 26.31
 '49021':
   name: Iron County
   employment:
@@ -191,6 +211,10 @@
       count: 100
       total: 14720
       percent: 0.68
+    '2014':
+      count: 192
+      total: 15363
+      percent: 1.25
 '49023':
   name: Juab County
   employment:
@@ -222,6 +246,10 @@
       count: 62
       total: 3267
       percent: 1.9
+    '2014':
+      count: 60
+      total: 3267
+      percent: 1.84
 '49027':
   name: Millard County
   employment:
@@ -249,6 +277,17 @@
       count: 98
       total: 4425
       percent: 2.21
+    '2014':
+      count: 104
+      total: 4493
+      percent: 2.31
+'49029':
+  name: Morgan County
+  employment:
+    '2014':
+      count: 22
+      total: 1968
+      percent: 1.12
 '49033':
   name: Rich County
   employment:
@@ -291,6 +330,10 @@
       count: 3399
       total: 608778
       percent: 0.56
+    '2014':
+      count: 2948
+      total: 623528
+      percent: 0.47
 '49037':
   name: San Juan County
   employment:
@@ -322,6 +365,10 @@
       count: 377
       total: 4047
       percent: 9.32
+    '2014':
+      count: 336
+      total: 4016
+      percent: 8.37
 '49039':
   name: Sanpete County
   employment:
@@ -349,6 +396,10 @@
       count: 54
       total: 6716
       percent: 0.8
+    '2014':
+      count: 30
+      total: 6813
+      percent: 0.44
 '49041':
   name: Sevier County
   employment:
@@ -384,6 +435,10 @@
       count: 558
       total: 7963
       percent: 7.01
+    '2014':
+      count: 599
+      total: 8067
+      percent: 7.43
 '49043':
   name: Summit County
   employment:
@@ -419,6 +474,10 @@
       count: 78
       total: 23419
       percent: 0.33
+    '2014':
+      count: 79
+      total: 24402
+      percent: 0.32
 '49045':
   name: Tooele County
   employment:
@@ -442,6 +501,10 @@
       count: 79
       total: 15392
       percent: 0.51
+    '2014':
+      count: 87
+      total: 14917
+      percent: 0.58
 '49047':
   name: Uintah County
   employment:
@@ -477,6 +540,10 @@
       count: 3056
       total: 14556
       percent: 20.99
+    '2014':
+      count: 3209
+      total: 15031
+      percent: 21.35
 '49049':
   name: Utah County
   employment:
@@ -511,6 +578,10 @@
     '2013':
       count: 103
       total: 186495
+      percent: 0.06
+    '2014':
+      count: 111
+      total: 195152
       percent: 0.06
 '49051':
   name: Wasatch County
@@ -578,3 +649,14 @@
       count: 151
       total: 50751
       percent: 0.3
+    '2014':
+      count: 166
+      total: 53720
+      percent: 0.31
+'49057':
+  name: Weber County
+  employment:
+    '2014':
+      count: 32
+      total: 95135
+      percent: 0.03

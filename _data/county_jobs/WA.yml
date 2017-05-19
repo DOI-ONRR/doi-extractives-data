@@ -44,6 +44,10 @@
       count: 8
       total: 21975
       percent: 0.04
+    '2014':
+      count: 9
+      total: 22041
+      percent: 0.04
 '53011':
   name: Clark County
   employment:
@@ -102,6 +106,10 @@
       count: 169
       total: 35453
       percent: 0.48
+    '2014':
+      count: 153
+      total: 36843
+      percent: 0.42
 '53021':
   name: Franklin County
   employment:
@@ -212,6 +220,10 @@
       count: 379
       total: 1198816
       percent: 0.03
+    '2014':
+      count: 376
+      total: 1237586
+      percent: 0.03
 '53035':
   name: Kitsap County
   employment:
@@ -242,6 +254,10 @@
     '2013':
       count: 42
       total: 80401
+      percent: 0.05
+    '2014':
+      count: 45
+      total: 82416
       percent: 0.05
 '53037':
   name: Kittitas County
@@ -285,6 +301,10 @@
       count: 137
       total: 23584
       percent: 0.58
+    '2014':
+      count: 137
+      total: 23573
+      percent: 0.58
 '53047':
   name: Okanogan County
   employment:
@@ -320,6 +340,10 @@
       count: 195
       total: 17511
       percent: 1.11
+    '2014':
+      count: 183
+      total: 18359
+      percent: 1
 '53049':
   name: Pacific County
   employment:
@@ -343,6 +367,10 @@
       count: 37
       total: 5911
       percent: 0.63
+    '2014':
+      count: 37
+      total: 6205
+      percent: 0.6
 '53051':
   name: Pend Oreille County
   employment:
@@ -413,6 +441,10 @@
       count: 162
       total: 269883
       percent: 0.06
+    '2014':
+      count: 160
+      total: 277890
+      percent: 0.06
 '53057':
   name: Skagit County
   employment:
@@ -448,6 +480,10 @@
       count: 29
       total: 47272
       percent: 0.06
+    '2014':
+      count: 47
+      total: 48300
+      percent: 0.1
 '53061':
   name: Snohomish County
   employment:
@@ -483,6 +519,10 @@
       count: 150
       total: 263543
       percent: 0.06
+    '2014':
+      count: 134
+      total: 267792
+      percent: 0.05
 '53063':
   name: Spokane County
   employment:
@@ -517,6 +557,10 @@
     '2013':
       count: 114
       total: 202137
+      percent: 0.06
+    '2014':
+      count: 118
+      total: 205671
       percent: 0.06
 '53065':
   name: Stevens County
@@ -588,6 +632,10 @@
       count: 16
       total: 99901
       percent: 0.02
+    '2014':
+      count: 31
+      total: 103078
+      percent: 0.03
 '53073':
   name: Whatcom County
   employment:
@@ -622,6 +670,10 @@
     '2013':
       count: 110
       total: 82316
+      percent: 0.13
+    '2014':
+      count: 112
+      total: 83696
       percent: 0.13
 '53077':
   name: Yakima County
@@ -658,3 +710,7 @@
       count: 62
       total: 103591
       percent: 0.06
+    '2014':
+      count: 56
+      total: 106590
+      percent: 0.05

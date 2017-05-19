@@ -29,6 +29,10 @@
       count: 39
       total: 15429
       percent: 0.25
+    '2014':
+      count: 61
+      total: 15433
+      percent: 0.4
 '56003':
   name: Big Horn County
   employment:
@@ -64,6 +68,10 @@
       count: 625
       total: 4259
       percent: 14.67
+    '2014':
+      count: 635
+      total: 4352
+      percent: 14.59
 '56005':
   name: Campbell County
   employment:
@@ -99,6 +107,10 @@
       count: 7862
       total: 27334
       percent: 28.76
+    '2014':
+      count: 8096
+      total: 28502
+      percent: 28.41
 '56007':
   name: Carbon County
   employment:
@@ -134,6 +146,10 @@
       count: 229
       total: 7155
       percent: 3.2
+    '2014':
+      count: 206
+      total: 7330
+      percent: 2.81
 '56009':
   name: Converse County
   employment:
@@ -169,6 +185,10 @@
       count: 1331
       total: 6107
       percent: 21.79
+    '2014':
+      count: 1424
+      total: 6488
+      percent: 21.95
 '56011':
   name: Crook County
   employment:
@@ -204,6 +224,10 @@
       count: 307
       total: 2302
       percent: 13.34
+    '2014':
+      count: 316
+      total: 2352
+      percent: 13.44
 '56013':
   name: Fremont County
   employment:
@@ -239,6 +263,10 @@
       count: 987
       total: 16722
       percent: 5.9
+    '2014':
+      count: 939
+      total: 16536
+      percent: 5.68
 '56017':
   name: Hot Springs County
   employment:
@@ -285,6 +313,10 @@
       count: 219
       total: 3372
       percent: 6.49
+    '2014':
+      count: 184
+      total: 3433
+      percent: 5.36
 '56021':
   name: Laramie County
   employment:
@@ -320,6 +352,10 @@
       count: 245
       total: 45027
       percent: 0.54
+    '2014':
+      count: 458
+      total: 45884
+      percent: 1
 '56023':
   name: Lincoln County
   employment:
@@ -355,6 +391,10 @@
       count: 646
       total: 5649
       percent: 11.44
+    '2014':
+      count: 631
+      total: 5749
+      percent: 10.98
 '56025':
   name: Natrona County
   employment:
@@ -390,6 +430,10 @@
       count: 4075
       total: 41747
       percent: 9.76
+    '2014':
+      count: 4371
+      total: 42605
+      percent: 10.26
 '56027':
   name: Niobrara County
   employment:
@@ -413,6 +457,10 @@
       count: 60
       total: 950
       percent: 6.32
+    '2014':
+      count: 62
+      total: 946
+      percent: 6.55
 '56029':
   name: Park County
   employment:
@@ -448,6 +496,10 @@
       count: 663
       total: 13711
       percent: 4.84
+    '2014':
+      count: 581
+      total: 13830
+      percent: 4.2
 '56031':
   name: Platte County
   employment:
@@ -498,6 +550,10 @@
       count: 236
       total: 12921
       percent: 1.83
+    '2014':
+      count: 237
+      total: 13280
+      percent: 1.78
 '56035':
   name: Sublette County
   employment:
@@ -533,6 +589,10 @@
       count: 1249
       total: 5040
       percent: 24.78
+    '2014':
+      count: 1233
+      total: 4866
+      percent: 25.34
 '56037':
   name: Sweetwater County
   employment:
@@ -568,6 +628,10 @@
       count: 5800
       total: 24630
       percent: 23.55
+    '2014':
+      count: 5642
+      total: 24269
+      percent: 23.25
 '56039':
   name: Teton County
   employment:
@@ -626,6 +690,10 @@
       count: 582
       total: 8850
       percent: 6.58
+    '2014':
+      count: 532
+      total: 8899
+      percent: 5.98
 '56043':
   name: Washakie County
   employment:
@@ -661,6 +729,10 @@
       count: 172
       total: 3810
       percent: 4.51
+    '2014':
+      count: 169
+      total: 3782
+      percent: 4.47
 '56045':
   name: Weston County
   employment:
@@ -696,3 +768,7 @@
       count: 139
       total: 2309
       percent: 6.02
+    '2014':
+      count: 136
+      total: 2331
+      percent: 5.83

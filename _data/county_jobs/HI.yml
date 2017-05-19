@@ -5,6 +5,10 @@
       count: 30
       total: 64760
       percent: 0.05
+    '2014':
+      count: 30
+      total: 65575
+      percent: 0.05
 '15003':
   name: Honolulu County
   employment:
@@ -39,4 +43,8 @@
     '2013':
       count: 193
       total: 451864
+      percent: 0.04
+    '2014':
+      count: 188
+      total: 457191
       percent: 0.04

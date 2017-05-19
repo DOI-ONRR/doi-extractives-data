@@ -21,6 +21,10 @@
       count: 127
       total: 29242
       percent: 0.43
+    '2014':
+      count: 108
+      total: 29147
+      percent: 0.37
 '24003':
   name: Anne Arundel County
   employment:
@@ -56,6 +60,10 @@
       count: 63
       total: 251976
       percent: 0.03
+    '2014':
+      count: 44
+      total: 255373
+      percent: 0.02
 '24005':
   name: Baltimore County
   employment:
@@ -91,6 +99,10 @@
       count: 79
       total: 360566
       percent: 0.02
+    '2014':
+      count: 92
+      total: 364651
+      percent: 0.03
 '24013':
   name: Carroll County
   employment:
@@ -129,6 +141,10 @@
       count: 82
       total: 30246
       percent: 0.27
+    '2014':
+      count: 85
+      total: 30643
+      percent: 0.28
 '24019':
   name: Dorchester County
   employment:
@@ -144,6 +160,10 @@
       count: 135
       total: 10878
       percent: 1.24
+    '2014':
+      count: 193
+      total: 11064
+      percent: 1.74
 '24021':
   name: Frederick County
   employment:
@@ -167,6 +187,10 @@
       count: 73
       total: 94789
       percent: 0.08
+    '2014':
+      count: 33
+      total: 95257
+      percent: 0.03
 '24023':
   name: Garrett County
   employment:
@@ -202,6 +226,10 @@
       count: 316
       total: 11640
       percent: 2.71
+    '2014':
+      count: 259
+      total: 11621
+      percent: 2.23
 '24025':
   name: Harford County
   employment:
@@ -232,6 +260,10 @@
     '2013':
       count: 108
       total: 87803
+      percent: 0.12
+    '2014':
+      count: 102
+      total: 88149
       percent: 0.12
 '24027':
   name: Howard County
@@ -282,6 +314,10 @@
     '2013':
       count: 63
       total: 451869
+      percent: 0.01
+    '2014':
+      count: 56
+      total: 455820
       percent: 0.01
 '24033':
   name: Prince George's County
@@ -363,6 +399,10 @@
       count: 29
       total: 66709
       percent: 0.04
+    '2014':
+      count: 37
+      total: 66772
+      percent: 0.06
 '24047':
   name: Worcester County
   employment:

@@ -33,6 +33,10 @@
       count: 22
       total: 431342
       percent: 0.01
+    '2014':
+      count: 36
+      total: 435399
+      percent: 0.01
 '34005':
   name: Burlington County
   employment:
@@ -86,6 +90,10 @@
       count: 22
       total: 39788
       percent: 0.06
+    '2014':
+      count: 43
+      total: 40286
+      percent: 0.11
 '34011':
   name: Cumberland County
   employment:
@@ -121,6 +129,10 @@
       count: 130
       total: 57781
       percent: 0.22
+    '2014':
+      count: 134
+      total: 57726
+      percent: 0.23
 '34013':
   name: Essex County
   employment:
@@ -163,6 +175,10 @@
       count: 71
       total: 97447
       percent: 0.07
+    '2014':
+      count: 83
+      total: 99146
+      percent: 0.08
 '34017':
   name: Hudson County
   employment:
@@ -243,6 +259,10 @@
       count: 69
       total: 387150
       percent: 0.02
+    '2014':
+      count: 52
+      total: 391130
+      percent: 0.01
 '34025':
   name: Monmouth County
   employment:
@@ -273,6 +293,10 @@
     '2012':
       count: 11
       total: 240555
+      percent: 0
+    '2014':
+      count: 5
+      total: 246296
       percent: 0
 '34027':
   name: Morris County
@@ -320,6 +344,10 @@
       count: 98
       total: 152585
       percent: 0.06
+    '2014':
+      count: 118
+      total: 156608
+      percent: 0.08
 '34031':
   name: Passaic County
   employment:
@@ -355,6 +383,10 @@
       count: 128
       total: 167501
       percent: 0.08
+    '2014':
+      count: 126
+      total: 164793
+      percent: 0.08
 '34035':
   name: Somerset County
   employment:
@@ -370,6 +402,10 @@
       count: 337
       total: 175667
       percent: 0.19
+    '2014':
+      count: 352
+      total: 178761
+      percent: 0.2
 '34037':
   name: Sussex County
   employment:
@@ -405,6 +441,10 @@
       count: 57
       total: 37995
       percent: 0.15
+    '2014':
+      count: 65
+      total: 38109
+      percent: 0.17
 '34039':
   name: Union County
   employment:
@@ -443,3 +483,7 @@
       count: 60
       total: 34793
       percent: 0.17
+    '2014':
+      count: 67
+      total: 33651
+      percent: 0.2

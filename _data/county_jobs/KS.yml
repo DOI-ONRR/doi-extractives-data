@@ -33,6 +33,10 @@
       count: 65
       total: 2040
       percent: 3.19
+    '2014':
+      count: 57
+      total: 2024
+      percent: 2.82
 '20005':
   name: Atchison County
   employment:
@@ -95,6 +99,10 @@
       count: 212
       total: 1833
       percent: 11.57
+    '2014':
+      count: 260
+      total: 1821
+      percent: 14.28
 '20009':
   name: Barton County
   employment:
@@ -130,6 +138,17 @@
       count: 936
       total: 13078
       percent: 7.16
+    '2014':
+      count: 881
+      total: 13566
+      percent: 6.49
+'20011':
+  name: Bourbon County
+  employment:
+    '2014':
+      count: 38
+      total: 6238
+      percent: 0.61
 '20015':
   name: Butler County
   employment:
@@ -165,6 +184,10 @@
       count: 144
       total: 18386
       percent: 0.78
+    '2014':
+      count: 157
+      total: 18627
+      percent: 0.84
 '20017':
   name: Chase County
   employment:
@@ -172,6 +195,10 @@
       count: 93
       total: 691
       percent: 13.46
+    '2014':
+      count: 103
+      total: 688
+      percent: 14.97
 '20023':
   name: Cheyenne County
   employment:
@@ -241,6 +268,10 @@
       count: 61
       total: 4473
       percent: 1.36
+    '2014':
+      count: 64
+      total: 4443
+      percent: 1.44
 '20033':
   name: Comanche County
   employment:
@@ -276,6 +307,10 @@
       count: 25
       total: 719
       percent: 3.48
+    '2014':
+      count: 22
+      total: 677
+      percent: 3.25
 '20035':
   name: Cowley County
   employment:
@@ -311,6 +346,10 @@
       count: 62
       total: 13884
       percent: 0.45
+    '2014':
+      count: 74
+      total: 14229
+      percent: 0.52
 '20037':
   name: Crawford County
   employment:
@@ -342,6 +381,10 @@
       count: 38
       total: 16908
       percent: 0.22
+    '2014':
+      count: 40
+      total: 16890
+      percent: 0.24
 '20039':
   name: Decatur County
   employment:
@@ -357,6 +400,10 @@
       count: 18
       total: 951
       percent: 1.89
+    '2014':
+      count: 19
+      total: 964
+      percent: 1.97
 '20041':
   name: Dickinson County
   employment:
@@ -415,6 +462,10 @@
       count: 34
       total: 46391
       percent: 0.07
+    '2014':
+      count: 33
+      total: 47570
+      percent: 0.07
 '20049':
   name: Elk County
   employment:
@@ -430,6 +481,10 @@
       count: 26
       total: 659
       percent: 3.95
+    '2014':
+      count: 23
+      total: 656
+      percent: 3.51
 '20051':
   name: Ellis County
   employment:
@@ -465,6 +520,10 @@
       count: 684
       total: 15830
       percent: 4.32
+    '2014':
+      count: 711
+      total: 15820
+      percent: 4.49
 '20053':
   name: Ellsworth County
   employment:
@@ -507,6 +566,17 @@
       count: 322
       total: 18122
       percent: 1.78
+    '2014':
+      count: 325
+      total: 18568
+      percent: 1.75
+'20057':
+  name: Ford County
+  employment:
+    '2014':
+      count: 10
+      total: 17521
+      percent: 0.06
 '20059':
   name: Franklin County
   employment:
@@ -542,6 +612,10 @@
       count: 94
       total: 9004
       percent: 1.04
+    '2014':
+      count: 84
+      total: 9176
+      percent: 0.92
 '20063':
   name: Gove County
   employment:
@@ -577,6 +651,10 @@
       count: 12
       total: 1209
       percent: 0.99
+    '2014':
+      count: 17
+      total: 1231
+      percent: 1.38
 '20065':
   name: Graham County
   employment:
@@ -627,6 +705,10 @@
       count: 384
       total: 3403
       percent: 11.28
+    '2014':
+      count: 383
+      total: 3388
+      percent: 11.3
 '20073':
   name: Greenwood County
   employment:
@@ -662,6 +744,10 @@
       count: 184
       total: 1718
       percent: 10.71
+    '2014':
+      count: 195
+      total: 1722
+      percent: 11.32
 '20075':
   name: Hamilton County
   employment:
@@ -704,6 +790,10 @@
       count: 216
       total: 2543
       percent: 8.49
+    '2014':
+      count: 108
+      total: 2436
+      percent: 4.43
 '20079':
   name: Harvey County
   employment:
@@ -739,6 +829,10 @@
       count: 23
       total: 13746
       percent: 0.17
+    '2014':
+      count: 25
+      total: 14001
+      percent: 0.18
 '20081':
   name: Haskell County
   employment:
@@ -770,6 +864,10 @@
       count: 63
       total: 1798
       percent: 3.5
+    '2014':
+      count: 60
+      total: 1865
+      percent: 3.22
 '20091':
   name: Johnson County
   employment:
@@ -805,6 +903,10 @@
       count: 225
       total: 319958
       percent: 0.07
+    '2014':
+      count: 252
+      total: 328048
+      percent: 0.08
 '20093':
   name: Kearny County
   employment:
@@ -847,6 +949,10 @@
       count: 102
       total: 2608
       percent: 3.91
+    '2014':
+      count: 95
+      total: 2515
+      percent: 3.78
 '20097':
   name: Kiowa County
   employment:
@@ -882,6 +988,10 @@
       count: 43
       total: 1216
       percent: 3.54
+    '2014':
+      count: 17
+      total: 1155
+      percent: 1.47
 '20103':
   name: Leavenworth County
   employment:
@@ -904,6 +1014,10 @@
     '2013':
       count: 7
       total: 20731
+      percent: 0.03
+    '2014':
+      count: 6
+      total: 20415
       percent: 0.03
 '20107':
   name: Linn County
@@ -932,6 +1046,10 @@
       count: 78
       total: 2043
       percent: 3.82
+    '2014':
+      count: 93
+      total: 2098
+      percent: 4.43
 '20111':
   name: Lyon County
   employment:
@@ -967,6 +1085,10 @@
       count: 39
       total: 14008
       percent: 0.28
+    '2014':
+      count: 36
+      total: 14488
+      percent: 0.25
 '20113':
   name: Mcpherson County
   employment:
@@ -1002,6 +1124,10 @@
       count: 144
       total: 14277
       percent: 1.01
+    '2014':
+      count: 148
+      total: 14715
+      percent: 1.01
 '20115':
   name: Marion County
   employment:
@@ -1025,6 +1151,10 @@
       count: 30
       total: 3579
       percent: 0.84
+    '2014':
+      count: 31
+      total: 3551
+      percent: 0.87
 '20119':
   name: Meade County
   employment:
@@ -1060,6 +1190,10 @@
       count: 12
       total: 1622
       percent: 0.74
+    '2014':
+      count: 13
+      total: 1601
+      percent: 0.81
 '20121':
   name: Miami County
   employment:
@@ -1095,6 +1229,10 @@
       count: 92
       total: 7674
       percent: 1.2
+    '2014':
+      count: 91
+      total: 8022
+      percent: 1.13
 '20125':
   name: Montgomery County
   employment:
@@ -1130,6 +1268,10 @@
       count: 145
       total: 16823
       percent: 0.86
+    '2014':
+      count: 122
+      total: 16573
+      percent: 0.74
 '20127':
   name: Morris County
   employment:
@@ -1172,6 +1314,10 @@
       count: 52
       total: 1134
       percent: 4.59
+    '2014':
+      count: 36
+      total: 1050
+      percent: 3.43
 '20133':
   name: Neosho County
   employment:
@@ -1199,6 +1345,10 @@
       count: 345
       total: 6543
       percent: 5.27
+    '2014':
+      count: 319
+      total: 6267
+      percent: 5.09
 '20135':
   name: Ness County
   employment:
@@ -1206,6 +1356,10 @@
       count: 259
       total: 1318
       percent: 19.65
+    '2014':
+      count: 265
+      total: 1338
+      percent: 19.81
 '20137':
   name: Norton County
   employment:
@@ -1217,6 +1371,10 @@
       count: 35
       total: 2623
       percent: 1.33
+    '2014':
+      count: 49
+      total: 2607
+      percent: 1.88
 '20141':
   name: Osborne County
   employment:
@@ -1224,6 +1382,10 @@
       count: 17
       total: 1442
       percent: 1.18
+    '2014':
+      count: 16
+      total: 1382
+      percent: 1.16
 '20147':
   name: Phillips County
   employment:
@@ -1259,6 +1421,10 @@
       count: 37
       total: 2478
       percent: 1.49
+    '2014':
+      count: 32
+      total: 2457
+      percent: 1.3
 '20151':
   name: Pratt County
   employment:
@@ -1294,6 +1460,10 @@
       count: 454
       total: 4834
       percent: 9.39
+    '2014':
+      count: 478
+      total: 4951
+      percent: 9.65
 '20155':
   name: Reno County
   employment:
@@ -1329,6 +1499,10 @@
       count: 79
       total: 27352
       percent: 0.29
+    '2014':
+      count: 93
+      total: 27327
+      percent: 0.34
 '20159':
   name: Rice County
   employment:
@@ -1364,6 +1538,17 @@
       count: 163
       total: 3851
       percent: 4.23
+    '2014':
+      count: 184
+      total: 3903
+      percent: 4.71
+'20161':
+  name: Riley County
+  employment:
+    '2014':
+      count: 59
+      total: 28829
+      percent: 0.2
 '20163':
   name: Rooks County
   employment:
@@ -1399,6 +1584,10 @@
       count: 172
       total: 1951
       percent: 8.82
+    '2014':
+      count: 200
+      total: 2045
+      percent: 9.78
 '20167':
   name: Russell County
   employment:
@@ -1434,6 +1623,10 @@
       count: 398
       total: 2877
       percent: 13.83
+    '2014':
+      count: 395
+      total: 2895
+      percent: 13.64
 '20173':
   name: Sedgwick County
   employment:
@@ -1469,6 +1662,10 @@
       count: 829
       total: 241990
       percent: 0.34
+    '2014':
+      count: 922
+      total: 245011
+      percent: 0.38
 '20175':
   name: Seward County
   employment:
@@ -1504,6 +1701,10 @@
       count: 877
       total: 12070
       percent: 7.27
+    '2014':
+      count: 783
+      total: 12265
+      percent: 6.38
 '20177':
   name: Shawnee County
   employment:
@@ -1535,6 +1736,17 @@
       count: 135
       total: 95491
       percent: 0.14
+    '2014':
+      count: 182
+      total: 97000
+      percent: 0.19
+'20179':
+  name: Sheridan County
+  employment:
+    '2014':
+      count: 17
+      total: 960
+      percent: 1.77
 '20181':
   name: Sherman County
   employment:
@@ -1643,6 +1855,10 @@
       count: 72
       total: 7188
       percent: 1
+    '2014':
+      count: 86
+      total: 7104
+      percent: 1.21
 '20205':
   name: Wilson County
   employment:
@@ -1678,6 +1894,10 @@
       count: 50
       total: 3372
       percent: 1.48
+    '2014':
+      count: 39
+      total: 3594
+      percent: 1.09
 '20207':
   name: Woodson County
   employment:
@@ -1689,3 +1909,14 @@
       count: 75
       total: 670
       percent: 11.19
+    '2014':
+      count: 72
+      total: 691
+      percent: 10.42
+'20209':
+  name: Wyandotte County
+  employment:
+    '2014':
+      count: 43
+      total: 86398
+      percent: 0.05

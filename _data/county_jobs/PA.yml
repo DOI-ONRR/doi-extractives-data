@@ -44,6 +44,10 @@
       count: 2349
       total: 684281
       percent: 0.34
+    '2014':
+      count: 2359
+      total: 683149
+      percent: 0.35
 '42005':
   name: Armstrong County
   employment:
@@ -75,6 +79,10 @@
       count: 1307
       total: 17751
       percent: 7.36
+    '2014':
+      count: 1218
+      total: 17562
+      percent: 6.94
 '42007':
   name: Beaver County
   employment:
@@ -110,6 +118,10 @@
       count: 247
       total: 53825
       percent: 0.46
+    '2014':
+      count: 215
+      total: 52820
+      percent: 0.41
 '42011':
   name: Berks County
   employment:
@@ -145,6 +157,17 @@
       count: 239
       total: 164494
       percent: 0.15
+    '2014':
+      count: 221
+      total: 166811
+      percent: 0.13
+'42013':
+  name: Blair County
+  employment:
+    '2014':
+      count: 220
+      total: 58222
+      percent: 0.38
 '42015':
   name: Bradford County
   employment:
@@ -180,6 +203,10 @@
       count: 1222
       total: 24090
       percent: 5.07
+    '2014':
+      count: 1520
+      total: 24570
+      percent: 6.19
 '42017':
   name: Bucks County
   employment:
@@ -215,6 +242,10 @@
       count: 186
       total: 247791
       percent: 0.08
+    '2014':
+      count: 186
+      total: 250909
+      percent: 0.07
 '42019':
   name: Butler County
   employment:
@@ -250,6 +281,10 @@
       count: 618
       total: 84181
       percent: 0.73
+    '2014':
+      count: 656
+      total: 84427
+      percent: 0.78
 '42021':
   name: Cambria County
   employment:
@@ -285,6 +320,10 @@
       count: 418
       total: 54683
       percent: 0.76
+    '2014':
+      count: 358
+      total: 53919
+      percent: 0.66
 '42025':
   name: Carbon County
   employment:
@@ -320,6 +359,10 @@
       count: 26
       total: 16768
       percent: 0.16
+    '2014':
+      count: 24
+      total: 16978
+      percent: 0.14
 '42027':
   name: Centre County
   employment:
@@ -355,6 +398,10 @@
       count: 229
       total: 66705
       percent: 0.34
+    '2014':
+      count: 223
+      total: 67128
+      percent: 0.33
 '42029':
   name: Chester County
   employment:
@@ -389,6 +436,10 @@
     '2013':
       count: 121
       total: 238695
+      percent: 0.05
+    '2014':
+      count: 112
+      total: 240501
       percent: 0.05
 '42031':
   name: Clarion County
@@ -425,6 +476,10 @@
       count: 430
       total: 13481
       percent: 3.19
+    '2014':
+      count: 420
+      total: 13587
+      percent: 3.09
 '42033':
   name: Clearfield County
   employment:
@@ -460,6 +515,10 @@
       count: 677
       total: 30462
       percent: 2.22
+    '2014':
+      count: 557
+      total: 29928
+      percent: 1.86
 '42035':
   name: Clinton County
   employment:
@@ -533,6 +592,10 @@
       count: 278
       total: 30975
       percent: 0.9
+    '2014':
+      count: 310
+      total: 31109
+      percent: 1
 '42041':
   name: Cumberland County
   employment:
@@ -567,6 +630,10 @@
     '2013':
       count: 83
       total: 124740
+      percent: 0.07
+    '2014':
+      count: 83
+      total: 126947
       percent: 0.07
 '42043':
   name: Dauphin County
@@ -603,6 +670,10 @@
       count: 175
       total: 176220
       percent: 0.1
+    '2014':
+      count: 47
+      total: 176005
+      percent: 0.03
 '42045':
   name: Delaware County
   employment:
@@ -638,6 +709,10 @@
       count: 98
       total: 212880
       percent: 0.05
+    '2014':
+      count: 112
+      total: 216279
+      percent: 0.05
 '42047':
   name: Elk County
   employment:
@@ -657,6 +732,10 @@
       count: 110
       total: 14839
       percent: 0.74
+    '2014':
+      count: 102
+      total: 14984
+      percent: 0.68
 '42049':
   name: Erie County
   employment:
@@ -692,6 +771,10 @@
       count: 120
       total: 123982
       percent: 0.1
+    '2014':
+      count: 106
+      total: 124110
+      percent: 0.09
 '42051':
   name: Fayette County
   employment:
@@ -727,6 +810,10 @@
       count: 984
       total: 40072
       percent: 2.46
+    '2014':
+      count: 1064
+      total: 39992
+      percent: 2.66
 '42053':
   name: Forest County
   employment:
@@ -742,6 +829,10 @@
       count: 118
       total: 2060
       percent: 5.73
+    '2014':
+      count: 117
+      total: 2052
+      percent: 5.7
 '42055':
   name: Franklin County
   employment:
@@ -753,6 +844,10 @@
       count: 73
       total: 56097
       percent: 0.13
+    '2014':
+      count: 82
+      total: 56680
+      percent: 0.14
 '42059':
   name: Greene County
   employment:
@@ -772,6 +867,13 @@
       count: 3089
       total: 13602
       percent: 22.71
+'42061':
+  name: Huntingdon County
+  employment:
+    '2014':
+      count: 93
+      total: 12342
+      percent: 0.75
 '42063':
   name: Indiana County
   employment:
@@ -807,6 +909,10 @@
       count: 2983
       total: 32732
       percent: 9.11
+    '2014':
+      count: 3218
+      total: 32641
+      percent: 9.86
 '42065':
   name: Jefferson County
   employment:
@@ -842,6 +948,10 @@
       count: 652
       total: 15239
       percent: 4.28
+    '2014':
+      count: 754
+      total: 15431
+      percent: 4.89
 '42069':
   name: Lackawanna County
   employment:
@@ -877,6 +987,10 @@
       count: 107
       total: 96679
       percent: 0.11
+    '2014':
+      count: 81
+      total: 97226
+      percent: 0.08
 '42071':
   name: Lancaster County
   employment:
@@ -912,6 +1026,10 @@
       count: 373
       total: 221104
       percent: 0.17
+    '2014':
+      count: 369
+      total: 225725
+      percent: 0.16
 '42073':
   name: Lawrence County
   employment:
@@ -947,6 +1065,10 @@
       count: 103
       total: 28996
       percent: 0.36
+    '2014':
+      count: 131
+      total: 29502
+      percent: 0.44
 '42079':
   name: Luzerne County
   employment:
@@ -981,6 +1103,10 @@
     '2013':
       count: 448
       total: 139015
+      percent: 0.32
+    '2014':
+      count: 444
+      total: 140883
       percent: 0.32
 '42081':
   name: Lycoming County
@@ -1017,6 +1143,10 @@
       count: 1998
       total: 52878
       percent: 3.78
+    '2014':
+      count: 2019
+      total: 53231
+      percent: 3.79
 '42083':
   name: Mckean County
   employment:
@@ -1052,6 +1182,10 @@
       count: 1078
       total: 15829
       percent: 6.81
+    '2014':
+      count: 1047
+      total: 15765
+      percent: 6.64
 '42085':
   name: Mercer County
   employment:
@@ -1087,6 +1221,10 @@
       count: 354
       total: 47648
       percent: 0.74
+    '2014':
+      count: 250
+      total: 48030
+      percent: 0.52
 '42089':
   name: Monroe County
   employment:
@@ -1121,6 +1259,10 @@
     '2013':
       count: 60
       total: 53816
+      percent: 0.11
+    '2014':
+      count: 59
+      total: 52928
       percent: 0.11
 '42091':
   name: Montgomery County
@@ -1157,6 +1299,10 @@
       count: 167
       total: 468668
       percent: 0.04
+    '2014':
+      count: 181
+      total: 472655
+      percent: 0.04
 '42095':
   name: Northampton County
   employment:
@@ -1188,6 +1334,10 @@
       count: 47
       total: 104499
       percent: 0.04
+    '2014':
+      count: 49
+      total: 105866
+      percent: 0.05
 '42097':
   name: Northumberland County
   employment:
@@ -1223,6 +1373,10 @@
       count: 159
       total: 27725
       percent: 0.57
+    '2014':
+      count: 152
+      total: 27981
+      percent: 0.54
 '42103':
   name: Pike County
   employment:
@@ -1254,6 +1408,10 @@
       count: 50
       total: 10467
       percent: 0.48
+    '2014':
+      count: 53
+      total: 10748
+      percent: 0.49
 '42105':
   name: Potter County
   employment:
@@ -1281,6 +1439,10 @@
       count: 10
       total: 5236
       percent: 0.19
+    '2014':
+      count: 16
+      total: 5292
+      percent: 0.3
 '42107':
   name: Schuylkill County
   employment:
@@ -1316,6 +1478,10 @@
       count: 579
       total: 49811
       percent: 1.16
+    '2014':
+      count: 492
+      total: 50039
+      percent: 0.98
 '42111':
   name: Somerset County
   employment:
@@ -1351,6 +1517,10 @@
       count: 879
       total: 24341
       percent: 3.61
+    '2014':
+      count: 847
+      total: 24396
+      percent: 3.47
 '42113':
   name: Sullivan County
   employment:
@@ -1393,6 +1563,10 @@
       count: 789
       total: 9622
       percent: 8.2
+    '2014':
+      count: 780
+      total: 9282
+      percent: 8.4
 '42117':
   name: Tioga County
   employment:
@@ -1416,6 +1590,10 @@
       count: 522
       total: 13389
       percent: 3.9
+    '2014':
+      count: 444
+      total: 12978
+      percent: 3.42
 '42121':
   name: Venango County
   employment:
@@ -1451,6 +1629,10 @@
       count: 164
       total: 19359
       percent: 0.85
+    '2014':
+      count: 159
+      total: 19255
+      percent: 0.83
 '42123':
   name: Warren County
   employment:
@@ -1486,6 +1668,10 @@
       count: 243
       total: 15137
       percent: 1.61
+    '2014':
+      count: 238
+      total: 15029
+      percent: 1.58
 '42125':
   name: Washington County
   employment:
@@ -1521,6 +1707,10 @@
       count: 3410
       total: 85816
       percent: 3.97
+    '2014':
+      count: 4232
+      total: 86993
+      percent: 4.86
 '42127':
   name: Wayne County
   employment:
@@ -1556,6 +1746,10 @@
       count: 89
       total: 14690
       percent: 0.61
+    '2014':
+      count: 96
+      total: 14646
+      percent: 0.66
 '42129':
   name: Westmoreland County
   employment:
@@ -1591,6 +1785,10 @@
       count: 782
       total: 132095
       percent: 0.59
+    '2014':
+      count: 954
+      total: 132300
+      percent: 0.72
 '42131':
   name: Wyoming County
   employment:
@@ -1626,6 +1824,10 @@
       count: 424
       total: 9911
       percent: 4.28
+    '2014':
+      count: 612
+      total: 10180
+      percent: 6.01
 '42133':
   name: York County
   employment:
@@ -1661,3 +1863,7 @@
       count: 339
       total: 170907
       percent: 0.2
+    '2014':
+      count: 332
+      total: 172182
+      percent: 0.19

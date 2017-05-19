@@ -33,6 +33,10 @@
       count: 568
       total: 172824
       percent: 0.33
+    '2014':
+      count: 693
+      total: 182840
+      percent: 0.38
 08005:
   name: Arapahoe County
   employment:
@@ -68,6 +72,10 @@
       count: 873
       total: 296009
       percent: 0.29
+    '2014':
+      count: 941
+      total: 305590
+      percent: 0.31
 08007:
   name: Archuleta County
   employment:
@@ -103,6 +111,10 @@
       count: 22
       total: 3418
       percent: 0.64
+    '2014':
+      count: 29
+      total: 3535
+      percent: 0.82
 08009:
   name: Baca County
   employment:
@@ -130,6 +142,10 @@
       count: 8
       total: 1110
       percent: 0.72
+    '2014':
+      count: 6
+      total: 1105
+      percent: 0.54
 08013:
   name: Boulder County
   employment:
@@ -165,6 +181,10 @@
       count: 212
       total: 164576
       percent: 0.13
+    '2014':
+      count: 276
+      total: 169023
+      percent: 0.16
 08014:
   name: Broomfield County
   employment:
@@ -211,6 +231,10 @@
       count: 19
       total: 6798
       percent: 0.28
+    '2014':
+      count: 17
+      total: 6998
+      percent: 0.24
 08017:
   name: Cheyenne County
   employment:
@@ -246,6 +270,10 @@
       count: 105
       total: 714
       percent: 14.71
+    '2014':
+      count: 103
+      total: 707
+      percent: 14.57
 08019:
   name: Clear Creek County
   employment:
@@ -303,6 +331,10 @@
       count: 678
       total: 8434
       percent: 8.04
+    '2014':
+      count: 586
+      total: 8320
+      percent: 7.04
 08031:
   name: Denver County
   employment:
@@ -338,6 +370,10 @@
       count: 8219
       total: 441426
       percent: 1.86
+    '2014':
+      count: 9112
+      total: 460715
+      percent: 1.98
 08035:
   name: Douglas County
   employment:
@@ -373,6 +409,10 @@
       count: 456
       total: 102993
       percent: 0.44
+    '2014':
+      count: 583
+      total: 107529
+      percent: 0.54
 08037:
   name: Eagle County
   employment:
@@ -408,6 +448,10 @@
       count: 9
       total: 28785
       percent: 0.03
+    '2014':
+      count: 16
+      total: 29743
+      percent: 0.05
 08041:
   name: El Paso County
   employment:
@@ -443,6 +487,10 @@
       count: 149
       total: 243301
       percent: 0.06
+    '2014':
+      count: 96
+      total: 248671
+      percent: 0.04
 08043:
   name: Fremont County
   employment:
@@ -478,6 +526,10 @@
       count: 76
       total: 12827
       percent: 0.59
+    '2014':
+      count: 80
+      total: 12757
+      percent: 0.63
 08045:
   name: Garfield County
   employment:
@@ -513,6 +565,10 @@
       count: 2058
       total: 24493
       percent: 8.4
+    '2014':
+      count: 2006
+      total: 25024
+      percent: 8.02
 08049:
   name: Grand County
   employment:
@@ -540,6 +596,10 @@
       count: 24
       total: 6808
       percent: 0.35
+    '2014':
+      count: 20
+      total: 7060
+      percent: 0.28
 08051:
   name: Gunnison County
   employment:
@@ -555,6 +615,10 @@
       count: 657
       total: 7574
       percent: 8.67
+    '2014':
+      count: 389
+      total: 7673
+      percent: 5.07
 08055:
   name: Huerfano County
   employment:
@@ -601,6 +665,10 @@
       count: 424
       total: 216072
       percent: 0.2
+    '2014':
+      count: 382
+      total: 222051
+      percent: 0.17
 08061:
   name: Kiowa County
   employment:
@@ -643,6 +711,10 @@
       count: 598
       total: 24489
       percent: 2.44
+    '2014':
+      count: 611
+      total: 25046
+      percent: 2.44
 08069:
   name: Larimer County
   employment:
@@ -678,6 +750,10 @@
       count: 437
       total: 137151
       percent: 0.32
+    '2014':
+      count: 562
+      total: 141746
+      percent: 0.4
 08071:
   name: Las Animas County
   employment:
@@ -713,6 +789,10 @@
       count: 481
       total: 5032
       percent: 9.56
+    '2014':
+      count: 434
+      total: 4937
+      percent: 8.79
 08075:
   name: Logan County
   employment:
@@ -748,6 +828,10 @@
       count: 212
       total: 8150
       percent: 2.6
+    '2014':
+      count: 220
+      total: 8323
+      percent: 2.64
 08077:
   name: Mesa County
   employment:
@@ -783,6 +867,10 @@
       count: 2707
       total: 58407
       percent: 4.63
+    '2014':
+      count: 3116
+      total: 59948
+      percent: 5.2
 08081:
   name: Moffat County
   employment:
@@ -818,6 +906,10 @@
       count: 529
       total: 4957
       percent: 10.67
+    '2014':
+      count: 495
+      total: 4792
+      percent: 10.33
 08083:
   name: Montezuma County
   employment:
@@ -853,6 +945,10 @@
       count: 213
       total: 8955
       percent: 2.38
+    '2014':
+      count: 225
+      total: 9005
+      percent: 2.5
 08085:
   name: Montrose County
   employment:
@@ -888,6 +984,10 @@
       count: 89
       total: 13442
       percent: 0.66
+    '2014':
+      count: 78
+      total: 13696
+      percent: 0.57
 08087:
   name: Morgan County
   employment:
@@ -923,6 +1023,10 @@
       count: 486
       total: 12009
       percent: 4.05
+    '2014':
+      count: 415
+      total: 12191
+      percent: 3.4
 08091:
   name: Ouray County
   employment:
@@ -938,6 +1042,10 @@
       count: 43
       total: 1479
       percent: 2.91
+    '2014':
+      count: 105
+      total: 1637
+      percent: 6.41
 08093:
   name: Park County
   employment:
@@ -987,6 +1095,10 @@
       count: 28
       total: 56610
       percent: 0.05
+    '2014':
+      count: 24
+      total: 57560
+      percent: 0.04
 08103:
   name: Rio Blanco County
   employment:
@@ -1022,6 +1134,10 @@
       count: 715
       total: 3194
       percent: 22.39
+    '2014':
+      count: 644
+      total: 3071
+      percent: 20.97
 08107:
   name: Routt County
   employment:
@@ -1045,6 +1161,10 @@
       count: 513
       total: 13922
       percent: 3.68
+    '2014':
+      count: 428
+      total: 13960
+      percent: 3.07
 08119:
   name: Teller County
   employment:
@@ -1102,6 +1222,10 @@
       count: 6052
       total: 90403
       percent: 6.69
+    '2014':
+      count: 8420
+      total: 98530
+      percent: 8.55
 08125:
   name: Yuma County
   employment:
@@ -1137,3 +1261,7 @@
       count: 228
       total: 3922
       percent: 5.81
+    '2014':
+      count: 245
+      total: 3998
+      percent: 6.13

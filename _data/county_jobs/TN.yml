@@ -44,6 +44,10 @@
       count: 79
       total: 9347
       percent: 0.85
+    '2014':
+      count: 29
+      total: 9053
+      percent: 0.32
 '47025':
   name: Claiborne County
   employment:
@@ -79,6 +83,10 @@
       count: 249
       total: 8208
       percent: 3.03
+    '2014':
+      count: 238
+      total: 8402
+      percent: 2.83
 '47035':
   name: Cumberland County
   employment:
@@ -114,6 +122,10 @@
       count: 108
       total: 16581
       percent: 0.65
+    '2014':
+      count: 96
+      total: 16855
+      percent: 0.57
 '47037':
   name: Davidson County
   employment:
@@ -149,6 +161,10 @@
       count: 154
       total: 438699
       percent: 0.04
+    '2014':
+      count: 146
+      total: 454831
+      percent: 0.03
 '47051':
   name: Franklin County
   employment:
@@ -184,6 +200,10 @@
       count: 76
       total: 10089
       percent: 0.75
+    '2014':
+      count: 73
+      total: 11418
+      percent: 0.64
 '47065':
   name: Hamilton County
   employment:
@@ -264,6 +284,10 @@
       count: 99
       total: 219977
       percent: 0.05
+    '2014':
+      count: 89
+      total: 224433
+      percent: 0.04
 '47125':
   name: Montgomery County
   employment:
@@ -286,6 +310,10 @@
       count: 59
       total: 4459
       percent: 1.32
+    '2014':
+      count: 58
+      total: 4366
+      percent: 1.33
 '47135':
   name: Perry County
   employment:
@@ -328,6 +356,10 @@
       count: 39
       total: 32263
       percent: 0.12
+    '2014':
+      count: 37
+      total: 32709
+      percent: 0.11
 '47143':
   name: Rhea County
   employment:
@@ -405,6 +437,10 @@
       count: 51
       total: 5136
       percent: 0.99
+    '2014':
+      count: 52
+      total: 5228
+      percent: 0.99
 '47153':
   name: Sequatchie County
   employment:
@@ -416,6 +452,10 @@
       count: 71
       total: 2496
       percent: 2.84
+    '2014':
+      count: 75
+      total: 2606
+      percent: 2.88
 '47157':
   name: Shelby County
   employment:
@@ -450,6 +490,10 @@
     '2013':
       count: 28
       total: 472804
+      percent: 0.01
+    '2014':
+      count: 27
+      total: 476351
       percent: 0.01
 '47163':
   name: Sullivan County
@@ -524,6 +568,10 @@
       count: 149
       total: 9999
       percent: 1.49
+    '2014':
+      count: 149
+      total: 10379
+      percent: 1.44
 '47187':
   name: Williamson County
   employment:
@@ -558,3 +606,7 @@
       count: 51
       total: 34763
       percent: 0.15
+    '2014':
+      count: 58
+      total: 35735
+      percent: 0.16

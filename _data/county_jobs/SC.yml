@@ -33,6 +33,10 @@
       count: 108
       total: 55329
       percent: 0.2
+    '2014':
+      count: 113
+      total: 56362
+      percent: 0.2
 '45007':
   name: Anderson County
   employment:
@@ -68,6 +72,10 @@
       count: 49
       total: 60294
       percent: 0.08
+    '2014':
+      count: 68
+      total: 61144
+      percent: 0.11
 '45019':
   name: Charleston County
   employment:
@@ -102,6 +110,10 @@
     '2013':
       count: 14
       total: 218319
+      percent: 0.01
+    '2014':
+      count: 25
+      total: 228699
       percent: 0.01
 '45025':
   name: Chesterfield County
@@ -206,6 +218,10 @@
       count: 45
       total: 21711
       percent: 0.21
+    '2014':
+      count: 19
+      total: 22590
+      percent: 0.08
 '45045':
   name: Greenville County
   employment:
@@ -241,6 +257,10 @@
       count: 29
       total: 237429
       percent: 0.01
+    '2014':
+      count: 43
+      total: 248095
+      percent: 0.02
 '45051':
   name: Horry County
   employment:
@@ -276,6 +296,10 @@
       count: 38
       total: 111820
       percent: 0.03
+    '2014':
+      count: 38
+      total: 115476
+      percent: 0.03
 '45055':
   name: Kershaw County
   employment:
@@ -307,6 +331,10 @@
       count: 134
       total: 15604
       percent: 0.86
+    '2014':
+      count: 130
+      total: 17276
+      percent: 0.75
 '45063':
   name: Lexington County
   employment:
@@ -341,6 +369,10 @@
     '2013':
       count: 113
       total: 102544
+      percent: 0.11
+    '2014':
+      count: 115
+      total: 108309
       percent: 0.11
 '45067':
   name: Marion County
@@ -407,6 +439,10 @@
       count: 125
       total: 119385
       percent: 0.1
+    '2014':
+      count: 130
+      total: 123466
+      percent: 0.11
 '45091':
   name: York County
   employment:
@@ -441,4 +477,8 @@
     '2013':
       count: 30
       total: 77357
+      percent: 0.04
+    '2014':
+      count: 31
+      total: 81311
       percent: 0.04

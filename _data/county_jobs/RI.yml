@@ -44,6 +44,10 @@
       count: 91
       total: 270745
       percent: 0.03
+    '2014':
+      count: 102
+      total: 277158
+      percent: 0.04
 '44009':
   name: Washington County
   employment:
@@ -79,3 +83,7 @@
       count: 88
       total: 50021
       percent: 0.18
+    '2014':
+      count: 99
+      total: 51140
+      percent: 0.19

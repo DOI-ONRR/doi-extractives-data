@@ -13,6 +13,10 @@
       count: 65
       total: 90522
       percent: 0.07
+    '2014':
+      count: 75
+      total: 93599
+      percent: 0.08
 '25003':
   name: Berkshire County
   employment:
@@ -48,6 +52,10 @@
       count: 54
       total: 60827
       percent: 0.09
+    '2014':
+      count: 59
+      total: 61017
+      percent: 0.1
 '25005':
   name: Bristol County
   employment:
@@ -82,6 +90,10 @@
     '2013':
       count: 24
       total: 213590
+      percent: 0.01
+    '2014':
+      count: 17
+      total: 218672
       percent: 0.01
 '25009':
   name: Essex County
@@ -153,6 +165,10 @@
       count: 72
       total: 198402
       percent: 0.04
+    '2014':
+      count: 73
+      total: 200460
+      percent: 0.04
 '25015':
   name: Hampshire County
   employment:
@@ -187,6 +203,10 @@
     '2013':
       count: 38
       total: 61043
+      percent: 0.06
+    '2014':
+      count: 38
+      total: 61337
       percent: 0.06
 '25017':
   name: Middlesex County
@@ -223,6 +243,10 @@
       count: 179
       total: 837178
       percent: 0.02
+    '2014':
+      count: 203
+      total: 854203
+      percent: 0.02
 '25021':
   name: Norfolk County
   employment:
@@ -258,6 +282,10 @@
       count: 80
       total: 330249
       percent: 0.02
+    '2014':
+      count: 91
+      total: 336770
+      percent: 0.03
 '25023':
   name: Plymouth County
   employment:
@@ -292,6 +320,10 @@
     '2013':
       count: 89
       total: 179176
+      percent: 0.05
+    '2014':
+      count: 84
+      total: 182095
       percent: 0.05
 '25027':
   name: Worcester County
@@ -328,3 +360,7 @@
       count: 206
       total: 322389
       percent: 0.06
+    '2014':
+      count: 219
+      total: 328389
+      percent: 0.07

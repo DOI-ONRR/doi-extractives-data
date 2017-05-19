@@ -9,6 +9,10 @@
       count: 39
       total: 5927
       percent: 0.66
+    '2014':
+      count: 48
+      total: 5570
+      percent: 0.86
 '39003':
   name: Allen County
   employment:
@@ -24,6 +28,10 @@
       count: 33
       total: 50178
       percent: 0.07
+    '2014':
+      count: 29
+      total: 49814
+      percent: 0.06
 '39005':
   name: Ashland County
   employment:
@@ -59,6 +67,10 @@
       count: 37
       total: 17520
       percent: 0.21
+    '2014':
+      count: 35
+      total: 17958
+      percent: 0.19
 '39007':
   name: Ashtabula County
   employment:
@@ -94,6 +106,10 @@
       count: 195
       total: 30177
       percent: 0.65
+    '2014':
+      count: 249
+      total: 30015
+      percent: 0.83
 '39013':
   name: Belmont County
   employment:
@@ -129,6 +145,10 @@
       count: 1879
       total: 22833
       percent: 8.23
+    '2014':
+      count: 2218
+      total: 23682
+      percent: 9.37
 '39017':
   name: Butler County
   employment:
@@ -164,6 +184,10 @@
       count: 119
       total: 138994
       percent: 0.09
+    '2014':
+      count: 116
+      total: 142924
+      percent: 0.08
 '39019':
   name: Carroll County
   employment:
@@ -187,6 +211,10 @@
       count: 178
       total: 6674
       percent: 2.67
+    '2014':
+      count: 226
+      total: 6766
+      percent: 3.34
 '39023':
   name: Clark County
   employment:
@@ -222,6 +250,10 @@
       count: 46
       total: 48531
       percent: 0.09
+    '2014':
+      count: 62
+      total: 48930
+      percent: 0.13
 '39025':
   name: Clermont County
   employment:
@@ -275,6 +307,10 @@
       count: 152
       total: 30494
       percent: 0.5
+    '2014':
+      count: 251
+      total: 30840
+      percent: 0.81
 '39031':
   name: Coshocton County
   employment:
@@ -310,6 +346,10 @@
       count: 59
       total: 10762
       percent: 0.55
+    '2014':
+      count: 93
+      total: 10595
+      percent: 0.88
 '39035':
   name: Cuyahoga County
   employment:
@@ -345,6 +385,10 @@
       count: 329
       total: 707731
       percent: 0.05
+    '2014':
+      count: 301
+      total: 708513
+      percent: 0.04
 '39041':
   name: Delaware County
   employment:
@@ -399,6 +443,10 @@
       count: 31
       total: 41003
       percent: 0.08
+    '2014':
+      count: 46
+      total: 41230
+      percent: 0.11
 '39049':
   name: Franklin County
   employment:
@@ -433,6 +481,10 @@
     '2013':
       count: 313
       total: 689994
+      percent: 0.05
+    '2014':
+      count: 324
+      total: 705790
       percent: 0.05
 '39053':
   name: Gallia County
@@ -471,6 +523,10 @@
       count: 306
       total: 14517
       percent: 2.11
+    '2014':
+      count: 600
+      total: 15340
+      percent: 3.91
 '39061':
   name: Hamilton County
   employment:
@@ -506,6 +562,10 @@
       count: 120
       total: 493751
       percent: 0.02
+    '2014':
+      count: 142
+      total: 499116
+      percent: 0.03
 '39067':
   name: Harrison County
   employment:
@@ -541,6 +601,10 @@
       count: 456
       total: 3911
       percent: 11.66
+    '2014':
+      count: 571
+      total: 4068
+      percent: 14.04
 '39071':
   name: Highland County
   employment:
@@ -576,6 +640,10 @@
       count: 39
       total: 10284
       percent: 0.38
+    '2014':
+      count: 38
+      total: 10444
+      percent: 0.36
 '39073':
   name: Hocking County
   employment:
@@ -642,6 +710,10 @@
       count: 89
       total: 18122
       percent: 0.49
+    '2014':
+      count: 91
+      total: 18063
+      percent: 0.5
 '39079':
   name: Jackson County
   employment:
@@ -677,6 +749,10 @@
       count: 159
       total: 10562
       percent: 1.51
+    '2014':
+      count: 117
+      total: 10342
+      percent: 1.13
 '39083':
   name: Knox County
   employment:
@@ -712,6 +788,10 @@
       count: 82
       total: 19422
       percent: 0.42
+    '2014':
+      count: 87
+      total: 20127
+      percent: 0.43
 '39085':
   name: Lake County
   employment:
@@ -747,6 +827,10 @@
       count: 183
       total: 93518
       percent: 0.2
+    '2014':
+      count: 268
+      total: 94313
+      percent: 0.28
 '39089':
   name: Licking County
   employment:
@@ -782,6 +866,10 @@
       count: 115
       total: 51088
       percent: 0.23
+    '2014':
+      count: 110
+      total: 51992
+      percent: 0.21
 '39091':
   name: Logan County
   employment:
@@ -817,6 +905,10 @@
       count: 28
       total: 18884
       percent: 0.15
+    '2014':
+      count: 32
+      total: 19317
+      percent: 0.17
 '39093':
   name: Lorain County
   employment:
@@ -844,6 +936,10 @@
       count: 12
       total: 94718
       percent: 0.01
+    '2014':
+      count: 33
+      total: 95795
+      percent: 0.03
 '39095':
   name: Lucas County
   employment:
@@ -875,6 +971,10 @@
       count: 123
       total: 202137
       percent: 0.06
+    '2014':
+      count: 108
+      total: 204692
+      percent: 0.05
 '39103':
   name: Medina County
   employment:
@@ -905,6 +1005,10 @@
     '2013':
       count: 25
       total: 58066
+      percent: 0.04
+    '2014':
+      count: 21
+      total: 58785
       percent: 0.04
 '39105':
   name: Meigs County
@@ -941,6 +1045,10 @@
       count: 150
       total: 3541
       percent: 4.24
+    '2014':
+      count: 144
+      total: 3547
+      percent: 4.06
 '39109':
   name: Miami County
   employment:
@@ -1014,6 +1122,10 @@
       count: 28
       total: 242220
       percent: 0.01
+    '2014':
+      count: 27
+      total: 245950
+      percent: 0.01
 '39115':
   name: Morgan County
   employment:
@@ -1052,6 +1164,10 @@
       count: 12
       total: 4859
       percent: 0.25
+    '2014':
+      count: 13
+      total: 4886
+      percent: 0.27
 '39119':
   name: Muskingum County
   employment:
@@ -1087,6 +1203,17 @@
       count: 424
       total: 32112
       percent: 1.32
+    '2014':
+      count: 480
+      total: 31972
+      percent: 1.5
+'39121':
+  name: Noble County
+  employment:
+    '2014':
+      count: 332
+      total: 3261
+      percent: 10.18
 '39123':
   name: Ottawa County
   employment:
@@ -1113,6 +1240,10 @@
       count: 14
       total: 4595
       percent: 0.3
+    '2014':
+      count: 15
+      total: 4768
+      percent: 0.31
 '39127':
   name: Perry County
   employment:
@@ -1144,6 +1275,10 @@
       count: 175
       total: 5790
       percent: 3.02
+    '2014':
+      count: 178
+      total: 5869
+      percent: 3.03
 '39133':
   name: Portage County
   employment:
@@ -1179,6 +1314,10 @@
       count: 192
       total: 52064
       percent: 0.37
+    '2014':
+      count: 192
+      total: 53676
+      percent: 0.36
 '39135':
   name: Preble County
   employment:
@@ -1233,6 +1372,10 @@
       count: 16
       total: 50273
       percent: 0.03
+    '2014':
+      count: 13
+      total: 50881
+      percent: 0.03
 '39141':
   name: Ross County
   employment:
@@ -1268,6 +1411,10 @@
       count: 21
       total: 26391
       percent: 0.08
+    '2014':
+      count: 26
+      total: 27196
+      percent: 0.1
 '39143':
   name: Sandusky County
   employment:
@@ -1341,6 +1488,10 @@
       count: 130
       total: 18306
       percent: 0.71
+    '2014':
+      count: 134
+      total: 18486
+      percent: 0.72
 '39151':
   name: Stark County
   employment:
@@ -1376,6 +1527,10 @@
       count: 605
       total: 155930
       percent: 0.39
+    '2014':
+      count: 852
+      total: 158336
+      percent: 0.54
 '39153':
   name: Summit County
   employment:
@@ -1411,6 +1566,10 @@
       count: 77
       total: 256668
       percent: 0.03
+    '2014':
+      count: 118
+      total: 260173
+      percent: 0.05
 '39155':
   name: Trumbull County
   employment:
@@ -1446,6 +1605,10 @@
       count: 73
       total: 69395
       percent: 0.11
+    '2014':
+      count: 116
+      total: 69322
+      percent: 0.17
 '39157':
   name: Tuscarawas County
   employment:
@@ -1481,6 +1644,10 @@
       count: 593
       total: 35278
       percent: 1.68
+    '2014':
+      count: 784
+      total: 36075
+      percent: 2.17
 '39165':
   name: Warren County
   employment:
@@ -1515,6 +1682,10 @@
     '2013':
       count: 19
       total: 80806
+      percent: 0.02
+    '2014':
+      count: 19
+      total: 83134
       percent: 0.02
 '39167':
   name: Washington County
@@ -1551,6 +1722,10 @@
       count: 455
       total: 24044
       percent: 1.89
+    '2014':
+      count: 540
+      total: 24687
+      percent: 2.19
 '39169':
   name: Wayne County
   employment:
@@ -1586,6 +1761,10 @@
       count: 463
       total: 43684
       percent: 1.06
+    '2014':
+      count: 621
+      total: 44557
+      percent: 1.39
 '39171':
   name: Williams County
   employment:
@@ -1648,6 +1827,10 @@
       count: 31
       total: 59756
       percent: 0.05
+    '2014':
+      count: 43
+      total: 61219
+      percent: 0.07
 '39175':
   name: Wyandot County
   employment:
@@ -1683,3 +1866,7 @@
       count: 131
       total: 8607
       percent: 1.52
+    '2014':
+      count: 136
+      total: 8815
+      percent: 1.54

@@ -33,6 +33,10 @@
       count: 119
       total: 205433
       percent: 0.06
+    '2014':
+      count: 178
+      total: 210121
+      percent: 0.08
 '16005':
   name: Bannock County
   employment:
@@ -124,6 +128,10 @@
       count: 128
       total: 12794
       percent: 1
+    '2014':
+      count: 131
+      total: 12843
+      percent: 1.02
 '16019':
   name: Bonneville County
   employment:
@@ -131,6 +139,10 @@
       count: 38
       total: 43334
       percent: 0.09
+    '2014':
+      count: 4
+      total: 45631
+      percent: 0.01
 '16027':
   name: Canyon County
   employment:
@@ -166,6 +178,10 @@
       count: 24
       total: 54319
       percent: 0.04
+    '2014':
+      count: 26
+      total: 56240
+      percent: 0.05
 '16029':
   name: Caribou County
   employment:
@@ -228,6 +244,10 @@
       count: 119
       total: 10391
       percent: 1.15
+    '2014':
+      count: 132
+      total: 10532
+      percent: 1.25
 '16041':
   name: Franklin County
   employment:
@@ -239,6 +259,13 @@
       count: 45
       total: 3023
       percent: 1.49
+'16047':
+  name: Gooding County
+  employment:
+    '2014':
+      count: 6
+      total: 5907
+      percent: 0.1
 '16049':
   name: Idaho County
   employment:
@@ -274,6 +301,10 @@
       count: 67
       total: 4217
       percent: 1.59
+    '2014':
+      count: 60
+      total: 4295
+      percent: 1.4
 '16055':
   name: Kootenai County
   employment:
@@ -309,6 +340,10 @@
       count: 120
       total: 53106
       percent: 0.23
+    '2014':
+      count: 111
+      total: 54757
+      percent: 0.2
 '16069':
   name: Nez Perce County
   employment:
@@ -339,6 +374,10 @@
       count: 29
       total: 3026
       percent: 0.96
+    '2014':
+      count: 23
+      total: 2961
+      percent: 0.78
 '16079':
   name: Shoshone County
   employment:
@@ -370,6 +409,10 @@
       count: 844
       total: 4654
       percent: 18.13
+    '2014':
+      count: 781
+      total: 4507
+      percent: 17.33
 '16083':
   name: Twin Falls County
   employment:

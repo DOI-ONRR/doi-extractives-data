@@ -33,6 +33,10 @@
       count: 12
       total: 15964
       percent: 0.08
+    '2014':
+      count: 11
+      total: 15942
+      percent: 0.07
 '46033':
   name: Custer County
   employment:
@@ -68,6 +72,10 @@
       count: 36
       total: 2431
       percent: 1.48
+    '2014':
+      count: 37
+      total: 2409
+      percent: 1.54
 '46047':
   name: Fall River County
   employment:
@@ -103,6 +111,10 @@
       count: 18
       total: 2403
       percent: 0.75
+    '2014':
+      count: 15
+      total: 2391
+      percent: 0.63
 '46051':
   name: Grant County
   employment:
@@ -122,6 +134,10 @@
       count: 31
       total: 3793
       percent: 0.82
+    '2014':
+      count: 28
+      total: 3901
+      percent: 0.72
 '46063':
   name: Harding County
   employment:
@@ -175,3 +191,7 @@
       count: 33
       total: 54658
       percent: 0.06
+    '2014':
+      count: 28
+      total: 55435
+      percent: 0.05

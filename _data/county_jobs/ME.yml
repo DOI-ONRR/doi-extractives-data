@@ -43,6 +43,10 @@
       count: 17
       total: 58537
       percent: 0.03
+    '2014':
+      count: 22
+      total: 59083
+      percent: 0.04
 '23017':
   name: Oxford County
   employment:
@@ -77,6 +81,10 @@
     '2013':
       count: 11
       total: 16625
+      percent: 0.07
+    '2014':
+      count: 11
+      total: 16775
       percent: 0.07
 '23019':
   name: Penobscot County
@@ -130,4 +138,8 @@
     '2013':
       count: 66
       total: 67017
+      percent: 0.1
+    '2014':
+      count: 70
+      total: 67437
       percent: 0.1

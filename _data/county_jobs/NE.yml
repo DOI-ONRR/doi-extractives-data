@@ -33,6 +33,10 @@
       count: 40
       total: 26369
       percent: 0.15
+    '2014':
+      count: 44
+      total: 26816
+      percent: 0.16
 '31025':
   name: Cass County
   employment:
@@ -63,6 +67,10 @@
     '2013':
       count: 157
       total: 5163
+      percent: 3.04
+    '2014':
+      count: 167
+      total: 5500
       percent: 3.04
 '31027':
   name: Cedar County
@@ -161,6 +169,10 @@
       count: 10
       total: 16613
       percent: 0.06
+    '2014':
+      count: 10
+      total: 16832
+      percent: 0.06
 '31055':
   name: Douglas County
   employment:
@@ -211,6 +223,10 @@
       count: 17
       total: 35298
       percent: 0.05
+    '2014':
+      count: 18
+      total: 35227
+      percent: 0.05
 '31087':
   name: Hitchcock County
   employment:
@@ -246,6 +262,10 @@
       count: 52
       total: 701
       percent: 7.42
+    '2014':
+      count: 46
+      total: 697
+      percent: 6.6
 '31089':
   name: Holt County
   employment:
@@ -281,6 +301,10 @@
       count: 13
       total: 4548
       percent: 0.29
+    '2014':
+      count: 15
+      total: 4548
+      percent: 0.33
 '31093':
   name: Howard County
   employment:
@@ -308,6 +332,10 @@
       count: 12
       total: 1500
       percent: 0.8
+    '2014':
+      count: 14
+      total: 1555
+      percent: 0.9
 '31095':
   name: Jefferson County
   employment:
@@ -327,6 +355,10 @@
       count: 11
       total: 3270
       percent: 0.34
+    '2014':
+      count: 11
+      total: 3304
+      percent: 0.33
 '31105':
   name: Kimball County
   employment:
@@ -362,6 +394,10 @@
       count: 62
       total: 1514
       percent: 4.1
+    '2014':
+      count: 69
+      total: 1586
+      percent: 4.35
 '31109':
   name: Lancaster County
   employment:
@@ -380,6 +416,10 @@
       count: 12
       total: 1999
       percent: 0.6
+    '2014':
+      count: 14
+      total: 2042
+      percent: 0.69
 '31145':
   name: Red Willow County
   employment:
@@ -415,6 +455,10 @@
       count: 53
       total: 5402
       percent: 0.98
+    '2014':
+      count: 56
+      total: 5375
+      percent: 1.04
 '31147':
   name: Richardson County
   employment:
@@ -434,6 +478,10 @@
       count: 5
       total: 2435
       percent: 0.21
+    '2014':
+      count: 5
+      total: 2440
+      percent: 0.2
 '31153':
   name: Sarpy County
   employment:
@@ -457,6 +505,10 @@
       count: 21
       total: 63564
       percent: 0.03
+    '2014':
+      count: 23
+      total: 65154
+      percent: 0.04
 '31155':
   name: Saunders County
   employment:

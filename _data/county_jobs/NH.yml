@@ -9,6 +9,10 @@
       count: 56
       total: 25631
       percent: 0.22
+    '2014':
+      count: 53
+      total: 25491
+      percent: 0.21
 '33003':
   name: Carroll County
   employment:
@@ -31,6 +35,10 @@
       count: 27
       total: 13901
       percent: 0.19
+    '2014':
+      count: 16
+      total: 12064
+      percent: 0.13
 '33009':
   name: Grafton County
   employment:
@@ -65,6 +73,10 @@
     '2013':
       count: 46
       total: 52166
+      percent: 0.09
+    '2014':
+      count: 46
+      total: 52228
       percent: 0.09
 '33011':
   name: Hillsborough County
@@ -101,6 +113,10 @@
       count: 57
       total: 190607
       percent: 0.03
+    '2014':
+      count: 73
+      total: 193564
+      percent: 0.04
 '33013':
   name: Merrimack County
   employment:
@@ -136,6 +152,10 @@
       count: 145
       total: 73498
       percent: 0.2
+    '2014':
+      count: 145
+      total: 74883
+      percent: 0.19
 '33015':
   name: Rockingham County
   employment:
@@ -171,6 +191,10 @@
       count: 112
       total: 137500
       percent: 0.08
+    '2014':
+      count: 105
+      total: 139969
+      percent: 0.08
 '33017':
   name: Strafford County
   employment:
@@ -198,3 +222,7 @@
       count: 28
       total: 45008
       percent: 0.06
+    '2014':
+      count: 25
+      total: 46249
+      percent: 0.05

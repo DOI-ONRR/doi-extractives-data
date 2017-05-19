@@ -2885,25 +2885,25 @@
       total: 1987097
       percent: 3.67
     '2011':
-      count: 79700
+      count: 80084
       total: 2036642
-      percent: 3.91
+      percent: 3.93
     '2012':
-      count: 86680
+      count: 87048
       total: 2112531
-      percent: 4.1
+      percent: 4.12
     '2013':
-      count: 93452
+      count: 93802
       total: 2182126
-      percent: 4.28
+      percent: 4.3
     '2014':
-      count: 92361
+      count: 92707
       total: 2257442
-      percent: 4.09
+      percent: 4.11
     '2015':
-      count: 85233
+      count: 85754
       total: 2290932
-      percent: 3.72
+      percent: 3.74
 '48203':
   name: Harrison County
   employment:
@@ -6795,7 +6795,7 @@
       total: 628224
       percent: 0.3
     '2014':
-      count: 2238
+      count: 2242
       total: 655305
       percent: 0.34
     '2015':

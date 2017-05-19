@@ -6,17 +6,17 @@
       total: 7632
       percent: 0.14
     '2013':
-      count: 17
+      count: 84
       total: 7716
-      percent: 0.22
+      percent: 1.09
     '2014':
-      count: 24
+      count: 85
       total: 7680
-      percent: 0.31
+      percent: 1.11
     '2015':
-      count: 18
+      count: 79
       total: 7684
-      percent: 0.23
+      percent: 1.03
 '32003':
   name: Clark County
   employment:

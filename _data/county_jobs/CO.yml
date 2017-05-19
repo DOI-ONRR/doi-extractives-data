@@ -893,25 +893,25 @@
       total: 8033
       percent: 2.12
     '2011':
-      count: 183
+      count: 244
       total: 7975
-      percent: 2.29
+      percent: 3.06
     '2012':
-      count: 193
+      count: 270
       total: 8070
-      percent: 2.39
+      percent: 3.35
     '2013':
-      count: 212
+      count: 298
       total: 8150
-      percent: 2.6
+      percent: 3.66
     '2014':
-      count: 220
+      count: 320
       total: 8323
-      percent: 2.64
+      percent: 3.84
     '2015':
-      count: 226
+      count: 354
       total: 8358
-      percent: 2.7
+      percent: 4.24
 08077:
   name: Mesa County
   employment:

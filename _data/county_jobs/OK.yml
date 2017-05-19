@@ -1671,7 +1671,7 @@
       total: 419834
       percent: 3.24
     '2012':
-      count: 15373
+      count: 15385
       total: 429358
       percent: 3.58
     '2013':
@@ -2018,13 +2018,17 @@
       total: 1082
       percent: 8.87
     '2013':
-      count: 97
+      count: 113
       total: 910
-      percent: 10.66
+      percent: 12.42
     '2014':
-      count: 64
+      count: 80
       total: 808
-      percent: 7.92
+      percent: 9.9
+    '2015':
+      count: 17
+      total: 768
+      percent: 2.21
 '40131':
   name: Rogers County
   employment:

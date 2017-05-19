@@ -328,25 +328,25 @@
       total: 268335
       percent: 3.55
     '2011':
-      count: 11512
+      count: 11767
       total: 279129
-      percent: 4.12
+      percent: 4.22
     '2012':
-      count: 12697
+      count: 12943
       total: 294426
-      percent: 4.31
+      percent: 4.4
     '2013':
-      count: 12295
+      count: 12547
       total: 304479
-      percent: 4.04
+      percent: 4.12
     '2014':
-      count: 12517
+      count: 12748
       total: 311992
-      percent: 4.01
+      percent: 4.09
     '2015':
-      count: 11168
+      count: 11259
       total: 312020
-      percent: 3.58
+      percent: 3.61
 '06033':
   name: Lake County
   employment:
@@ -402,15 +402,15 @@
       total: 3883063
       percent: 0.1
     '2012':
-      count: 4312
+      count: 4319
       total: 3977297
       percent: 0.11
     '2013':
-      count: 4602
+      count: 4615
       total: 4073405
       percent: 0.11
     '2014':
-      count: 4646
+      count: 4668
       total: 4154640
       percent: 0.11
     '2015':
@@ -709,25 +709,25 @@
       total: 552459
       percent: 0.08
     '2011':
-      count: 412
+      count: 558
       total: 557963
-      percent: 0.07
+      percent: 0.1
     '2012':
-      count: 406
+      count: 552
       total: 572351
-      percent: 0.07
+      percent: 0.1
     '2013':
-      count: 339
+      count: 468
       total: 595809
-      percent: 0.06
+      percent: 0.08
     '2014':
-      count: 302
+      count: 387
       total: 625942
-      percent: 0.05
+      percent: 0.06
     '2015':
-      count: 296
+      count: 389
       total: 658318
-      percent: 0.04
+      percent: 0.06
 '06067':
   name: Sacramento County
   employment:
@@ -807,13 +807,13 @@
       total: 630694
       percent: 0.13
     '2014':
-      count: 957
+      count: 1090
       total: 659116
-      percent: 0.15
+      percent: 0.17
     '2015':
-      count: 964
+      count: 1057
       total: 689427
-      percent: 0.14
+      percent: 0.15
 '06073':
   name: San Diego County
   employment:
@@ -842,19 +842,19 @@
       total: 1245259
       percent: 0.03
     '2012':
-      count: 416
+      count: 442
       total: 1275170
       percent: 0.03
     '2013':
-      count: 402
+      count: 444
       total: 1304320
       percent: 0.03
     '2014':
-      count: 436
+      count: 455
       total: 1332960
       percent: 0.03
     '2015':
-      count: 388
+      count: 399
       total: 1370672
       percent: 0.03
 '06075':
@@ -893,13 +893,13 @@
       total: 611717
       percent: 0
     '2014':
-      count: 27
+      count: 168
       total: 640378
-      percent: 0
+      percent: 0.03
     '2015':
-      count: 23
+      count: 249
       total: 674646
-      percent: 0
+      percent: 0.04
 '06077':
   name: San Joaquin County
   employment:

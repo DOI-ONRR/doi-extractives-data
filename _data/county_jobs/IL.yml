@@ -276,25 +276,25 @@
       total: 2345507
       percent: 0.02
     '2011':
-      count: 522
+      count: 823
       total: 2377242
-      percent: 0.02
+      percent: 0.03
     '2012':
-      count: 459
+      count: 745
       total: 2405633
-      percent: 0.02
+      percent: 0.03
     '2013':
-      count: 435
+      count: 734
       total: 2426450
-      percent: 0.02
+      percent: 0.03
     '2014':
-      count: 427
+      count: 749
       total: 2468453
-      percent: 0.02
+      percent: 0.03
     '2015':
-      count: 461
+      count: 813
       total: 2531066
-      percent: 0.02
+      percent: 0.03
 '17033':
   name: Crawford County
   employment:

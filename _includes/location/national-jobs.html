@@ -103,11 +103,11 @@
               there were
               <span class="eiti-bar-chart-y-value"
                 data-format=",">{{ _figures.count | intcomma }}</span>
-              <b>{{ commodity }}</b> jobs in
-              {{ state_name }}, and they accounted for
+              <b>{{ commodity | downcase }}</b> jobs in the U.S.,
+              and they accounted for
               <year-value year="{{ year }}" data-year-values='{{ _commodity[1] | map_hash: 'percent' | jsonify }}'
                 empty="--">{{ _figures.percent | percent }}</year-value>%
-              of statewide employment.
+              of nationwide employment.
             </span>
             <span class="caption-no-data" aria-hidden="true">
               There is no data about <b>{{ commodity }}</b>

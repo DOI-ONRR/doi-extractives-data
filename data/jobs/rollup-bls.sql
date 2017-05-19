@@ -14,11 +14,7 @@ UPDATE bls_employment
       LIMIT 1
     );
 
--- nix territories and DC
-DELETE FROM bls_employment
-  WHERE
-    SUBSTR(fips, 1, 2) IN ('DC', 'GU', 'PR', 'VI');
-
+-- sum up "hardrock" and "nonmetallic" minerals into "nonenergy"
 DELETE FROM bls_employment WHERE commodity = 'Nonenergy minerals';
 INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)
@@ -32,6 +28,7 @@ INSERT INTO bls_employment
   GROUP BY
     year, state, county, fips, region_id, _naics;
 
+-- sum up solar, wind, and geothermal numbers into renewables totals
 DELETE FROM bls_employment WHERE commodity = 'Renewables';
 INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)

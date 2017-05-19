@@ -80,7 +80,7 @@ Mining:
     count: 751911
     total: 139491699
     percent: 0.54
-Mining activities:
+Mining support:
   '2006':
     count: 262498
     total: 133833834
@@ -121,6 +121,47 @@ Mining activities:
     count: 361804
     total: 139491699
     percent: 0.26
+Oil and gas:
+  '2006':
+    count: 134858
+    total: 133833834
+    percent: 0.1
+  '2007':
+    count: 146081
+    total: 135366106
+    percent: 0.11
+  '2008':
+    count: 160081
+    total: 134805659
+    percent: 0.12
+  '2009':
+    count: 160688
+    total: 128607842
+    percent: 0.12
+  '2010':
+    count: 158423
+    total: 127820442
+    percent: 0.12
+  '2011':
+    count: 170735
+    total: 129411095
+    percent: 0.13
+  '2012':
+    count: 188003
+    total: 131696378
+    percent: 0.14
+  '2013':
+    count: 196732
+    total: 133968434
+    percent: 0.15
+  '2014':
+    count: 196704
+    total: 136613609
+    percent: 0.14
+  '2015':
+    count: 192537
+    total: 139491699
+    percent: 0.14
 Nonenergy minerals:
   '2006':
     count: 141043
@@ -162,47 +203,6 @@ Nonenergy minerals:
     count: 133436
     total: 139491699
     percent: 0.1
-Oil & Gas:
-  '2006':
-    count: 134858
-    total: 133833834
-    percent: 0.1
-  '2007':
-    count: 146081
-    total: 135366106
-    percent: 0.11
-  '2008':
-    count: 160081
-    total: 134805659
-    percent: 0.12
-  '2009':
-    count: 160688
-    total: 128607842
-    percent: 0.12
-  '2010':
-    count: 158423
-    total: 127820442
-    percent: 0.12
-  '2011':
-    count: 170735
-    total: 129411095
-    percent: 0.13
-  '2012':
-    count: 188003
-    total: 131696378
-    percent: 0.14
-  '2013':
-    count: 196732
-    total: 133968434
-    percent: 0.15
-  '2014':
-    count: 196704
-    total: 136613609
-    percent: 0.14
-  '2015':
-    count: 192537
-    total: 139491699
-    percent: 0.14
 Nonmetallic minerals:
   '2006':
     count: 108712
@@ -368,27 +368,6 @@ Wind:
     count: 4245
     total: 139491699
     percent: 0
-Geothermal:
-  '2011':
-    count: 1049
-    total: 129411095
-    percent: 0
-  '2012':
-    count: 1067
-    total: 131696378
-    percent: 0
-  '2013':
-    count: 1094
-    total: 133968434
-    percent: 0
-  '2014':
-    count: 1126
-    total: 136613609
-    percent: 0
-  '2015':
-    count: 1093
-    total: 139491699
-    percent: 0
 Solar:
   '2011':
     count: 533
@@ -408,5 +387,26 @@ Solar:
     percent: 0
   '2015':
     count: 2067
+    total: 139491699
+    percent: 0
+Geothermal:
+  '2011':
+    count: 1049
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 1067
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 1094
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 1126
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 1093
     total: 139491699
     percent: 0

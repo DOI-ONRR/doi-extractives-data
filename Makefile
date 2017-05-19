@@ -158,7 +158,7 @@ data/state_jobs.yml:
 		FROM state_bls_employment \
 		WHERE \
 			commodity = 'Extractives' \
-		ORDER BY state, year" \
+		ORDER BY state, year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
 			-o _$@
@@ -171,7 +171,7 @@ data/state_jobs_by_commodity.yml:
 		FROM state_bls_employment \
 		WHERE \
 			commodity != 'All' \
-		ORDER BY state, year, jobs DESC" \
+		ORDER BY state, jobs DESC, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs_by_commodity.yml \
 			-o _$@
@@ -183,7 +183,7 @@ data/national_jobs.yml:
 		FROM national_bls_employment \
 		WHERE \
 			commodity = 'Extractives' \
-		ORDER BY year" \
+		ORDER BY year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \
 			-o _$@
@@ -195,7 +195,7 @@ data/national_jobs_by_commodity.yml:
 		FROM national_bls_employment \
 		WHERE \
 			commodity != 'All' \
-		ORDER BY year, jobs DESC" \
+		ORDER BY jobs DESC, year" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs_by_commodity.yml \
 			-o _$@
@@ -203,15 +203,14 @@ data/national_jobs_by_commodity.yml:
 data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, \
-			SUBSTR('0' || fips, -5, 5) AS fips, \
-			county, year, jobs, total, percent \
+			region_id AS state, fips, county, \
+			year, jobs, total, percent \
 		FROM bls_employment \
 		WHERE \
-			state IS NOT NULL \
+			region_id IS NOT NULL \
 			AND county IS NOT NULL \
 			AND commodity = 'Extractives' \
-		ORDER BY state, fips, year" \
+		ORDER BY state, fips, year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_jobs.yml \
 			-o '_$@/{state}.yml'

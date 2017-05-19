@@ -208,7 +208,8 @@ data/county_jobs:
 			county, year, jobs, total, percent \
 		FROM bls_employment \
 		WHERE \
-			county IS NOT NULL \
+			state IS NOT NULL \
+			AND county IS NOT NULL \
 			AND commodity = 'Extractives' \
 		ORDER BY state, fips, year" \
 		| $(nestly) --if ndjson \

@@ -1,8 +1,9 @@
-{% assign jobs = site.data.state_jobs[state_id] %}
-{% assign jobs_by_commodity = site.data.state_jobs_by_commodity[state_id] %}
-{% assign show_commodities = site.data.commodities.jobs.show %}
-{% assign county_jobs = site.data.county_jobs[state_id] %}
-{% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
+{% assign jobs =                  site.data.state_jobs[state_id] %}
+{% assign jobs_by_commodity =     site.data.state_jobs_by_commodity[state_id] %}
+{% assign show_commodities =      site.data.commodities.jobs.show %}
+{% assign commodity_alias =       site.data.commodities.jobs.alias %}
+{% assign county_jobs =           site.data.county_jobs[state_id] %}
+{% assign self_employment_jobs =  site.data.state_self_employment[state_id] %}
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
@@ -143,6 +144,7 @@
 
       {% for _commodity in jobs_by_commodity %}
         {% assign commodity = _commodity[0] %}
+        {% assign commodity_name = commodity | lookup: commodity_alias | downcase %}
         {% unless show_commodities contains commodity %}
           {% continue %}
         {% endunless %}
@@ -168,14 +170,14 @@
               there were
               <span class="eiti-bar-chart-y-value"
                 data-format=",">{{ _figures.count | intcomma }}</span>
-              <b>{{ commodity | downcase }}</b> jobs in
-              {{ state_name }}, and they accounted for
+              <b>{{ commodity_name }}</b> jobs in
+              {{ state_name }}.{% comment %}, and they accounted for
               <year-value year="{{ year }}" data-year-values='{{ _commodity[1] | map_hash: 'percent' | jsonify }}'
                 empty="--">{{ _figures.percent | percent }}</year-value>%
-              of statewide employment.
+              of statewide employment. {% endcomment %}
             </span>
             <span class="caption-no-data" aria-hidden="true">
-              There is no data about <b>{{ commodity | downcase }}</b>
+              There is no data about <b>{{ commodity_name }}</b>
               wage and salary jobs in {{ state_name }} in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>

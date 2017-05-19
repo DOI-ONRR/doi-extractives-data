@@ -4,14 +4,15 @@
 # the sum of all other NAICS codes that begin with 211.
 naics:
   All:                  10
-  Extractives:          21
+  Mining:               21
   'Oil & Gas':          211
   Coal:                 2121
-  Metal ore mining:     2122
-  Iron:                 21221
-  Gold:                 212221
-  Copper:               212234
-  Nonmetallic mineral:  2123
+  # Nonenergy minerals:
+  Hardrock minerals:    2122
+  Nonmetallic minerals: 2123
+  # other related jobs
+  Mining activities:    213
+  # Renewables
   Solar:                221114
   Wind:                 221115
   Geothermal:           221116

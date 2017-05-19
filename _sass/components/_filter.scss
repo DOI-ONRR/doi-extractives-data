@@ -32,6 +32,12 @@
   display: none !important;
 }
 
+.drawer {
+  h3,
+  h4 {
+    color: $white !important;
+  }
+}
 
 // Filter mode area
 
@@ -54,5 +60,3 @@ body.filter-mode {
     }
   }
 }
-
-

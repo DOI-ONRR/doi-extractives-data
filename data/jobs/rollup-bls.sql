@@ -1,5 +1,15 @@
 BEGIN;
-UPDATE bls_employment SET region_id = NULL, total = NULL;
+UPDATE bls_employment SET region_id = NULL;
+
+-- set the region_id to the 2-letter code of the corresponding state
+UPDATE bls_employment
+  SET
+    region_id = (
+      SELECT abbr
+      FROM states
+      WHERE states.name = bls_employment.state
+      LIMIT 1
+    );
 
 DELETE FROM bls_employment
   WHERE commodity IN ('Renewables');
@@ -16,80 +26,34 @@ INSERT INTO bls_employment
   GROUP BY
     year, state, county, fips, region_id, category;
 
--- set the region_id to the 2-letter code of the corresponding state
-UPDATE bls_employment
-  SET
-    region_id = (
-      SELECT abbr
-      FROM states
-      WHERE states.name = bls_employment.state
-      LIMIT 1
-    );
-
 -- all of the remaining rows are for DC US territories
 DELETE
   FROM bls_employment
   WHERE region_id IS NULL;
 
-UPDATE bls_employment SET percent = NULL;
-UPDATE bls_employment
-  SET
-    percent = (
-      SELECT
-        ROUND(100.0 * bls_employment.jobs / superset.jobs, 2)
-      FROM
-        bls_employment AS superset
-      WHERE
-        superset.commodity = 'All' AND
-        superset.fips = bls_employment.fips AND
-        superset.year = bls_employment.year
-      LIMIT 1
-    ),
-    total = (
-      SELECT superset.jobs
-      FROM bls_employment AS superset
-      WHERE
-        superset.commodity = 'All' AND
-        superset.fips = bls_employment.fips AND
-        superset.year = bls_employment.year
-      LIMIT 1
-    )
-  WHERE commodity != 'All';
+-- Previously, this was done with an UPDATE w/subquery for each row, which
+-- was *super* slow. The self-join is super fast, and clearer, I think.
+CREATE TABLE _bls_employment AS
+  SELECT
+    subset.*,
+    superset.jobs AS total,
+    ROUND(100.0 * subset.jobs / superset.jobs, 2) AS percent
+  FROM
+    bls_employment AS subset
+  LEFT JOIN
+    bls_employment AS superset
+  ON
+    superset.commodity = 'All' AND
+    superset.fips = subset.fips AND
+    superset.year = subset.year;
+DROP TABLE bls_employment;
+ALTER TABLE _bls_employment RENAME TO bls_employment;
 
 DROP TABLE IF EXISTS state_bls_employment;
 CREATE TABLE state_bls_employment AS
-    SELECT
-        year, commodity, naics, region_id, state, jobs,
-        0 AS total,
-        0.01 AS percent
+    SELECT *
     FROM bls_employment
-    WHERE
-        county IS NULL;
-
-UPDATE state_bls_employment SET percent = NULL;
-UPDATE state_bls_employment
-  SET
-    percent = (
-      SELECT
-        ROUND(100.0 * state_bls_employment.jobs / superset.jobs, 2)
-      FROM
-        state_bls_employment AS superset
-      WHERE
-        superset.commodity = 'All' AND
-        superset.region_id = state_bls_employment.region_id AND
-        superset.year = state_bls_employment.year
-      LIMIT 1
-    ),
-    total = (
-      SELECT superset.jobs
-      FROM state_bls_employment AS superset
-      WHERE
-        superset.commodity = 'All' AND
-        superset.region_id = state_bls_employment.region_id AND
-        superset.year = state_bls_employment.year
-      LIMIT 1
-    )
-  WHERE commodity != 'All';
+    WHERE county IS NULL;
 
 -- then create national employment data as an aggregate view
 -- on regional bls_employment
@@ -104,7 +68,7 @@ CREATE TABLE national_bls_employment AS
         0.01 AS percent
     FROM state_bls_employment
     GROUP BY
-        year, commodity;
+        year, commodity, naics, region_id;
 
 UPDATE national_bls_employment SET percent = NULL;
 UPDATE national_bls_employment

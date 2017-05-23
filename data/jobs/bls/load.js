@@ -24,11 +24,12 @@ if (!YEAR) {
 }
 
 var fields = {
-  code:     'own_code',
-  fips:     'area_fips',
   aggLevel: 'agglvl_code',
   area:     'area_title',
-  jobs:     'annual_avg_emplvl'
+  code:     'own_code',
+  fips:     'area_fips',
+  jobs:     'annual_avg_emplvl',
+  pay:      'avg_annual_pay',
 };
 
 var validRow = (d, type) => {
@@ -61,6 +62,7 @@ var mapRow = (d, task) => {
     county: county,
     fips:   d[fields.fips],
     jobs:   +d[fields.jobs],
+    pay:    +d[fields.pay],
   };
 };
 

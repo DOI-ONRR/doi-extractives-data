@@ -16,7 +16,7 @@
   <section is="year-switcher-section">
     {%
       include sticky-header.html
-      header_text='Extractive industry jobs'
+      header_text='Wage and salary jobs'
       year_range=year_range
       selector=true
     %}
@@ -40,7 +40,7 @@
       {% assign _metrics = 'count' | split: ' ' %}
       {% for _metric in _metrics %}
       <section class="chart-item">
-        <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
+        <h3 class="chart-title"><span>Extractive industry jobs</span></h3>
 
         <figure class="chart">
           <eiti-bar-chart
@@ -72,7 +72,7 @@
     </section><!-- /.chart-list -->
 
     {% if jobs_by_commodity %}
-    <h4>Jobs by industry sector</h4>
+    <h4>Wage and salary jobs by commodity</h4>
     <section class="chart-list">
 
       {% for _commodity in jobs_by_commodity %}
@@ -86,7 +86,7 @@
       <div class="chart-item">
         {%
           include chart_title.html
-          chart_name=commodity
+          chart_name=commodity_name
         %}
 
         <figure class="chart">
@@ -111,7 +111,7 @@
             </span>
             <span class="caption-no-data" aria-hidden="true">
               There is no data about <b>{{ commodity_name }}</b>
-              wage and salary jobs in {{ state_name }} in
+              jobs in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>
           </figcaption>

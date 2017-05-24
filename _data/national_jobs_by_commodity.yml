@@ -80,6 +80,47 @@ Mining:
     count: 751911
     total: 139491699
     percent: 0.54
+Oil and gas:
+  '2006':
+    count: 385803
+    total: 133833834
+    percent: 0.29
+  '2007':
+    count: 427706
+    total: 135366106
+    percent: 0.32
+  '2008':
+    count: 476356
+    total: 134805659
+    percent: 0.35
+  '2009':
+    count: 422033
+    total: 128607842
+    percent: 0.33
+  '2010':
+    count: 434599
+    total: 127820442
+    percent: 0.34
+  '2011':
+    count: 499507
+    total: 129411095
+    percent: 0.39
+  '2012':
+    count: 562790
+    total: 131696378
+    percent: 0.43
+  '2013':
+    count: 586884
+    total: 133968434
+    percent: 0.44
+  '2014':
+    count: 621265
+    total: 136613609
+    percent: 0.45
+  '2015':
+    count: 540943
+    total: 139491699
+    percent: 0.39
 Mining support:
   '2006':
     count: 262498
@@ -121,7 +162,48 @@ Mining support:
     count: 361804
     total: 139491699
     percent: 0.26
-Oil and gas:
+Support Activities for Oil and Gas Operations:
+  '2006':
+    count: 171127
+    total: 133833834
+    percent: 0.13
+  '2007':
+    count: 197100
+    total: 135366106
+    percent: 0.15
+  '2008':
+    count: 223635
+    total: 134805659
+    percent: 0.17
+  '2009':
+    count: 193589
+    total: 128607842
+    percent: 0.15
+  '2010':
+    count: 201685
+    total: 127820442
+    percent: 0.16
+  '2011':
+    count: 241490
+    total: 129411095
+    percent: 0.19
+  '2012':
+    count: 282447
+    total: 131696378
+    percent: 0.21
+  '2013':
+    count: 296891
+    total: 133968434
+    percent: 0.22
+  '2014':
+    count: 326353
+    total: 136613609
+    percent: 0.24
+  '2015':
+    count: 278444
+    total: 139491699
+    percent: 0.2
+Oil and gas (only):
   '2006':
     count: 134858
     total: 133833834
@@ -164,43 +246,43 @@ Oil and gas:
     percent: 0.14
 Nonenergy minerals:
   '2006':
-    count: 141043
+    count: 145513
     total: 133833834
     percent: 0.11
   '2007':
-    count: 143329
+    count: 148441
     total: 135366106
     percent: 0.11
   '2008':
-    count: 142055
+    count: 147840
     total: 134805659
     percent: 0.11
   '2009':
-    count: 125118
+    count: 129720
     total: 128607842
     percent: 0.1
   '2010':
-    count: 122640
+    count: 128048
     total: 127820442
     percent: 0.1
   '2011':
-    count: 127634
+    count: 134598
     total: 129411095
     percent: 0.1
   '2012':
-    count: 132425
+    count: 140541
     total: 131696378
-    percent: 0.1
+    percent: 0.11
   '2013':
-    count: 133291
+    count: 140660
     total: 133968434
     percent: 0.1
   '2014':
-    count: 133815
+    count: 140033
     total: 136613609
     percent: 0.1
   '2015':
-    count: 133436
+    count: 139563
     total: 139491699
     percent: 0.1
 Nonmetallic minerals:
@@ -244,7 +326,89 @@ Nonmetallic minerals:
     count: 91295
     total: 139491699
     percent: 0.07
+Drilling Oil and Gas Wells:
+  '2006':
+    count: 79818
+    total: 133833834
+    percent: 0.06
+  '2007':
+    count: 84525
+    total: 135366106
+    percent: 0.06
+  '2008':
+    count: 92640
+    total: 134805659
+    percent: 0.07
+  '2009':
+    count: 67756
+    total: 128607842
+    percent: 0.05
+  '2010':
+    count: 74491
+    total: 127820442
+    percent: 0.06
+  '2011':
+    count: 87282
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 92340
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 93261
+    total: 133968434
+    percent: 0.07
+  '2014':
+    count: 98208
+    total: 136613609
+    percent: 0.07
+  '2015':
+    count: 69944
+    total: 139491699
+    percent: 0.05
 Coal:
+  '2006':
+    count: 85731
+    total: 133833834
+    percent: 0.06
+  '2007':
+    count: 84131
+    total: 135366106
+    percent: 0.06
+  '2008':
+    count: 89204
+    total: 134805659
+    percent: 0.07
+  '2009':
+    count: 89963
+    total: 128607842
+    percent: 0.07
+  '2010':
+    count: 89252
+    total: 127820442
+    percent: 0.07
+  '2011':
+    count: 96214
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 95093
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 85889
+    total: 133968434
+    percent: 0.06
+  '2014':
+    count: 80772
+    total: 136613609
+    percent: 0.06
+  '2015':
+    count: 71425
+    total: 139491699
+    percent: 0.05
+Coal (only):
   '2006':
     count: 78648
     total: 133833834
@@ -326,6 +490,47 @@ Hardrock minerals:
     count: 42141
     total: 139491699
     percent: 0.03
+Support Activities for Coal Mining:
+  '2006':
+    count: 7083
+    total: 133833834
+    percent: 0.01
+  '2007':
+    count: 7527
+    total: 135366106
+    percent: 0.01
+  '2008':
+    count: 8109
+    total: 134805659
+    percent: 0.01
+  '2009':
+    count: 7963
+    total: 128607842
+    percent: 0.01
+  '2010':
+    count: 8126
+    total: 127820442
+    percent: 0.01
+  '2011':
+    count: 9305
+    total: 129411095
+    percent: 0.01
+  '2012':
+    count: 9168
+    total: 131696378
+    percent: 0.01
+  '2013':
+    count: 8496
+    total: 133968434
+    percent: 0.01
+  '2014':
+    count: 8600
+    total: 136613609
+    percent: 0.01
+  '2015':
+    count: 7290
+    total: 139491699
+    percent: 0.01
 Renewables:
   '2011':
     count: 4554
@@ -347,6 +552,47 @@ Renewables:
     count: 7405
     total: 139491699
     percent: 0.01
+Support Activities for Metal Mining:
+  '2006':
+    count: 2582
+    total: 133833834
+    percent: 0
+  '2007':
+    count: 2896
+    total: 135366106
+    percent: 0
+  '2008':
+    count: 3357
+    total: 134805659
+    percent: 0
+  '2009':
+    count: 2538
+    total: 128607842
+    percent: 0
+  '2010':
+    count: 3118
+    total: 127820442
+    percent: 0
+  '2011':
+    count: 4277
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 5032
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 4239
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 3632
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 3516
+    total: 139491699
+    percent: 0
 Wind:
   '2011':
     count: 2972
@@ -366,6 +612,47 @@ Wind:
     percent: 0
   '2015':
     count: 4245
+    total: 139491699
+    percent: 0
+Support Activities for Nonmetallic Minerals (except Fuels) Mining:
+  '2006':
+    count: 1888
+    total: 133833834
+    percent: 0
+  '2007':
+    count: 2216
+    total: 135366106
+    percent: 0
+  '2008':
+    count: 2428
+    total: 134805659
+    percent: 0
+  '2009':
+    count: 2064
+    total: 128607842
+    percent: 0
+  '2010':
+    count: 2290
+    total: 127820442
+    percent: 0
+  '2011':
+    count: 2687
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 3084
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 3130
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 2586
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 2611
     total: 139491699
     percent: 0
 Solar:

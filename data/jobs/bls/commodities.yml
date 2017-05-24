@@ -22,6 +22,7 @@ naics:
   Support Activities for Metal Mining: 213114
   Support Activities for Nonmetallic Minerals (except Fuels) Mining: 213115
   # Renewables:
+  Hydroelectric:        221111
   Solar:                221114
   Wind:                 221115
   Geothermal:           221116

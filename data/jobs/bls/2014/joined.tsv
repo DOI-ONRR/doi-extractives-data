@@ -6333,6 +6333,107 @@ year	naics	commodity	state	county	fips	jobs	pay
 2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wisconsin		55000	6	48092
 2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wyoming		56000	87	67097
 2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining		U.S. TOTAL	US000	2586	65132
+2014	221111	Hydroelectric	Alabama		01000	28	97546
+2014	221111	Hydroelectric	Alabama	Colbert County	01033	7	141377
+2014	221111	Hydroelectric	Alabama	Marshall County	01095	22	83838
+2014	221111	Hydroelectric	Alaska		02000	237	76112
+2014	221111	Hydroelectric	California		06000	1379	86379
+2014	221111	Hydroelectric	California		06000	391	120157
+2014	221111	Hydroelectric	California	Fresno County	06019	60	70974
+2014	221111	Hydroelectric	California	Imperial County	06025	198	76369
+2014	221111	Hydroelectric	Connecticut		09000	13	42702
+2014	221111	Hydroelectric	Georgia		13000	57	95220
+2014	221111	Hydroelectric	Idaho		16000	133	87680
+2014	221111	Hydroelectric	Idaho	Twin Falls County	16083	9	74980
+2014	221111	Hydroelectric	Illinois		17000	534	162225
+2014	221111	Hydroelectric	Illinois	Cook County	17031	30	94760
+2014	221111	Hydroelectric	Maine		23000	174	91745
+2014	221111	Hydroelectric	Maine	Kennebec County	23011	41	94611
+2014	221111	Hydroelectric	Massachusetts		25000	120	81017
+2014	221111	Hydroelectric	Michigan		26000	361	88717
+2014	221111	Hydroelectric	Minnesota		27000	434	73148
+2014	221111	Hydroelectric	Montana		30000	102	90310
+2014	221111	Hydroelectric	Montana		30000	129	100304
+2014	221111	Hydroelectric	Montana	Flathead County	30029	18	99066
+2014	221111	Hydroelectric	Montana	Lincoln County	30053	52	84922
+2014	221111	Hydroelectric	Montana	Missoula County	30063	1	108236
+2014	221111	Hydroelectric	Montana	Powell County	30077	8	99273
+2014	221111	Hydroelectric	Montana	Sanders County	30089	23	91778
+2014	221111	Hydroelectric	New Hampshire		33000	100	83314
+2014	221111	Hydroelectric	New Hampshire	Coos County	33007	26	101737
+2014	221111	Hydroelectric	New Jersey		34000	21	121705
+2014	221111	Hydroelectric	New York		36000	350	85270
+2014	221111	Hydroelectric	New York	Lewis County	36049	30	56843
+2014	221111	Hydroelectric	New York	St. Lawrence County	36089	68	81982
+2014	221111	Hydroelectric	New York	Saratoga County	36091	27	89328
+2014	221111	Hydroelectric	North Carolina		37000	28	94417
+2014	221111	Hydroelectric	North Carolina		37000	55	78307
+2014	221111	Hydroelectric	North Carolina	Chatham County	37037	2	53583
+2014	221111	Hydroelectric	North Carolina	Cherokee County	37039	19	98563
+2014	221111	Hydroelectric	North Carolina	Graham County	37075	6	96305
+2014	221111	Hydroelectric	North Carolina	Swain County	37173	1	53012
+2014	221111	Hydroelectric	Oregon		41000	1276	92861
+2014	221111	Hydroelectric	Oregon		41000	208	83166
+2014	221111	Hydroelectric	Oregon	Clackamas County	41005	2	147541
+2014	221111	Hydroelectric	Oregon	Coos County	41011	17	103927
+2014	221111	Hydroelectric	Oregon	Deschutes County	41017	35	89200
+2014	221111	Hydroelectric	Oregon	Klamath County	41035	11	100120
+2014	221111	Hydroelectric	Oregon	Lane County	41039	39	93505
+2014	221111	Hydroelectric	Oregon	Linn County	41043	1	84464
+2014	221111	Hydroelectric	Oregon	Marion County	41047	38	96860
+2014	221111	Hydroelectric	Oregon	Multnomah County	41051	1056	91925
+2014	221111	Hydroelectric	Oregon	Umatilla County	41059	17	86426
+2014	221111	Hydroelectric	Oregon	Wasco County	41065	59	104053
+2014	221111	Hydroelectric	Oregon	Washington County	41067	2	115285
+2014	221111	Hydroelectric	Pennsylvania		42000	159	128517
+2014	221111	Hydroelectric	South Carolina		45000	190	79167
+2014	221111	Hydroelectric	Tennessee		47000	5468	122851
+2014	221111	Hydroelectric	Tennessee	Bedford County	47003	4	79897
+2014	221111	Hydroelectric	Tennessee	Blount County	47009	8	131420
+2014	221111	Hydroelectric	Tennessee	Bradley County	47011	30	108795
+2014	221111	Hydroelectric	Tennessee	Carter County	47019	10	92926
+2014	221111	Hydroelectric	Tennessee	Cumberland County	47035	9	123237
+2014	221111	Hydroelectric	Tennessee	Davidson County	47037	201	118389
+2014	221111	Hydroelectric	Tennessee	Gibson County	47053	1	73262
+2014	221111	Hydroelectric	Tennessee	Grainger County	47057	8	116009
+2014	221111	Hydroelectric	Tennessee	Hamblen County	47063	15	74242
+2014	221111	Hydroelectric	Tennessee	Hamilton County	47065	3020	122300
+2014	221111	Hydroelectric	Tennessee	Hardin County	47071	17	88054
+2014	221111	Hydroelectric	Tennessee	Hawkins County	47073	56	121774
+2014	221111	Hydroelectric	Tennessee	Haywood County	47075	56	123176
+2014	221111	Hydroelectric	Tennessee	Henry County	47079	12	95580
+2014	221111	Hydroelectric	Tennessee	Humphreys County	47085	193	115118
+2014	221111	Hydroelectric	Tennessee	Jefferson County	47089	5	57529
+2014	221111	Hydroelectric	Tennessee	Knox County	47093	2	134927
+2014	221111	Hydroelectric	Tennessee	Loudon County	47105	36	88186
+2014	221111	Hydroelectric	Tennessee	Madison County	47113	47	116088
+2014	221111	Hydroelectric	Tennessee	Marion County	47115	13	82276
+2014	221111	Hydroelectric	Tennessee	Maury County	47119	32	95694
+2014	221111	Hydroelectric	Tennessee	Montgomery County	47125	6	102520
+2014	221111	Hydroelectric	Tennessee	Polk County	47139	15	90274
+2014	221111	Hydroelectric	Tennessee	Putnam County	47141	2	72373
+2014	221111	Hydroelectric	Tennessee	Rhea County	47143	1060	139487
+2014	221111	Hydroelectric	Tennessee	Roane County	47145	300	109889
+2014	221111	Hydroelectric	Tennessee	Rutherford County	47149	37	107408
+2014	221111	Hydroelectric	Tennessee	Shelby County	47157	199	116727
+2014	221111	Hydroelectric	Tennessee	Sullivan County	47163	16	96583
+2014	221111	Hydroelectric	Tennessee	Warren County	47177	3	98603
+2014	221111	Hydroelectric	Tennessee	Washington County	47179	44	108810
+2014	221111	Hydroelectric	Tennessee	Weakley County	47183	9	101432
+2014	221111	Hydroelectric	Tennessee	Wilson County	47189	4	107067
+2014	221111	Hydroelectric	Texas		48000	197	66535
+2014	221111	Hydroelectric	Texas		48000	1005	167251
+2014	221111	Hydroelectric	Utah		49000	24	42385
+2014	221111	Hydroelectric	Utah		49000	11	45809
+2014	221111	Hydroelectric	Vermont		50000	73	81952
+2014	221111	Hydroelectric	Virginia		51000	89	83786
+2014	221111	Hydroelectric	Washington		53000	1569	89277
+2014	221111	Hydroelectric	Washington		53000	78	108183
+2014	221111	Hydroelectric	Wisconsin		55000	118	53483
+2014	221111	Hydroelectric		U.S. TOTAL	US000	6903	116606
+2014	221111	Hydroelectric		U.S. TOTAL	US000	782	90621
+2014	221111	Hydroelectric		U.S. TOTAL	US000	4084	86117
+2014	221111	Hydroelectric		U.S. TOTAL	US000	5821	110006
 2014	221114	Solar	Arizona		04000	90	123134
 2014	221114	Solar	California		06000	786	134611
 2014	221114	Solar	California	Los Angeles County	06037	22	111989

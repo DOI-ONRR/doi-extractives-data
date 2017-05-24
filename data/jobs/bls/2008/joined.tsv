@@ -6274,3 +6274,108 @@ year	naics	commodity	state	county	fips	jobs	pay
 2008	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wisconsin		55000	6	42189
 2008	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wyoming		56000	18	42473
 2008	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining		U.S. TOTAL	US000	2428	54326
+2008	221111	Hydroelectric	Alabama		01000	31	62577
+2008	221111	Hydroelectric	Alabama	Marshall County	01095	31	62577
+2008	221111	Hydroelectric	Alaska		02000	93	60560
+2008	221111	Hydroelectric	California		06000	1822	74356
+2008	221111	Hydroelectric	California		06000	273	79291
+2008	221111	Hydroelectric	California	Fresno County	06019	61	60143
+2008	221111	Hydroelectric	California	Shasta County	06089	10	36902
+2008	221111	Hydroelectric	Colorado		08000	47	70288
+2008	221111	Hydroelectric	Connecticut	Fairfield County	09001	130	180403
+2008	221111	Hydroelectric	Georgia		13000	73	93472
+2008	221111	Hydroelectric	Idaho		16000	104	76016
+2008	221111	Hydroelectric	Illinois		17000	7023	131184
+2008	221111	Hydroelectric	Illinois	Will County	17197	537	99310
+2008	221111	Hydroelectric	Louisiana		22000	56	82352
+2008	221111	Hydroelectric	Maine		23000	354	71585
+2008	221111	Hydroelectric	Michigan		26000	1083	87018
+2008	221111	Hydroelectric	Minnesota		27000	168	58020
+2008	221111	Hydroelectric	Minnesota		27000	5179	89101
+2008	221111	Hydroelectric	Montana		30000	97	85398
+2008	221111	Hydroelectric	Montana	Flathead County	30029	16	93306
+2008	221111	Hydroelectric	Montana	Lincoln County	30053	50	83415
+2008	221111	Hydroelectric	Montana	Missoula County	30063	1	113482
+2008	221111	Hydroelectric	Montana	Powell County	30077	9	90852
+2008	221111	Hydroelectric	Montana	Sanders County	30089	22	80598
+2008	221111	Hydroelectric	Nebraska		31000	59	68236
+2008	221111	Hydroelectric	New Hampshire		33000	73	72202
+2008	221111	Hydroelectric	New York		36000	861	87416
+2008	221111	Hydroelectric	New York		36000	511	82242
+2008	221111	Hydroelectric	New York	Franklin County	36033	5	68186
+2008	221111	Hydroelectric	New York	Jefferson County	36045	89	86197
+2008	221111	Hydroelectric	New York	Lewis County	36049	17	40568
+2008	221111	Hydroelectric	New York	Saratoga County	36091	5	68110
+2008	221111	Hydroelectric	North Carolina		37000	53	62850
+2008	221111	Hydroelectric	North Carolina		37000	304	72379
+2008	221111	Hydroelectric	North Carolina	Buncombe County	37021	1	80398
+2008	221111	Hydroelectric	North Carolina	Chatham County	37037	2	54440
+2008	221111	Hydroelectric	North Carolina	Cherokee County	37039	41	64024
+2008	221111	Hydroelectric	North Carolina	Graham County	37075	8	59501
+2008	221111	Hydroelectric	North Carolina	Swain County	37173	1	41954
+2008	221111	Hydroelectric	Oklahoma	Cherokee County	40021	87	33494
+2008	221111	Hydroelectric	Oregon		41000	1338	96961
+2008	221111	Hydroelectric	Oregon		41000	48	53119
+2008	221111	Hydroelectric	Oregon		41000	167	72121
+2008	221111	Hydroelectric	Oregon	Clackamas County	41005	2	92416
+2008	221111	Hydroelectric	Oregon	Coos County	41011	19	98171
+2008	221111	Hydroelectric	Oregon	Deschutes County	41017	36	99006
+2008	221111	Hydroelectric	Oregon	Klamath County	41035	13	100581
+2008	221111	Hydroelectric	Oregon	Lane County	41039	42	98673
+2008	221111	Hydroelectric	Oregon	Marion County	41047	42	104163
+2008	221111	Hydroelectric	Oregon	Multnomah County	41051	1104	96267
+2008	221111	Hydroelectric	Oregon	Umatilla County	41059	14	91190
+2008	221111	Hydroelectric	Oregon	Wasco County	41065	65	101576
+2008	221111	Hydroelectric	Pennsylvania		42000	174	83489
+2008	221111	Hydroelectric	Pennsylvania	Lancaster County	42071	99	91932
+2008	221111	Hydroelectric	South Carolina		45000	155	64197
+2008	221111	Hydroelectric	Tennessee		47000	5175	77979
+2008	221111	Hydroelectric	Tennessee	Bedford County	47003	2	43355
+2008	221111	Hydroelectric	Tennessee	Blount County	47009	11	76605
+2008	221111	Hydroelectric	Tennessee	Bradley County	47011	32	81497
+2008	221111	Hydroelectric	Tennessee	Carter County	47019	7	20834
+2008	221111	Hydroelectric	Tennessee	Cumberland County	47035	5	70860
+2008	221111	Hydroelectric	Tennessee	Davidson County	47037	198	79719
+2008	221111	Hydroelectric	Tennessee	Gibson County	47053	1	54413
+2008	221111	Hydroelectric	Tennessee	Grainger County	47057	9	74405
+2008	221111	Hydroelectric	Tennessee	Hamblen County	47063	27	42143
+2008	221111	Hydroelectric	Tennessee	Hamilton County	47065	2780	78205
+2008	221111	Hydroelectric	Tennessee	Hardin County	47071	24	56630
+2008	221111	Hydroelectric	Tennessee	Hawkins County	47073	189	69590
+2008	221111	Hydroelectric	Tennessee	Haywood County	47075	14	79105
+2008	221111	Hydroelectric	Tennessee	Henry County	47079	14	67070
+2008	221111	Hydroelectric	Tennessee	Humphreys County	47085	322	76034
+2008	221111	Hydroelectric	Tennessee	Jefferson County	47089	9	45185
+2008	221111	Hydroelectric	Tennessee	Knox County	47093	5	72379
+2008	221111	Hydroelectric	Tennessee	Loudon County	47105	64	62629
+2008	221111	Hydroelectric	Tennessee	Madison County	47113	37	76503
+2008	221111	Hydroelectric	Tennessee	Marion County	47115	19	56879
+2008	221111	Hydroelectric	Tennessee	Maury County	47119	31	68643
+2008	221111	Hydroelectric	Tennessee	Montgomery County	47125	9	76033
+2008	221111	Hydroelectric	Tennessee	Polk County	47139	16	73950
+2008	221111	Hydroelectric	Tennessee	Putnam County	47141	3	65736
+2008	221111	Hydroelectric	Tennessee	Rhea County	47143	713	89485
+2008	221111	Hydroelectric	Tennessee	Roane County	47145	297	73142
+2008	221111	Hydroelectric	Tennessee	Rutherford County	47149	28	78288
+2008	221111	Hydroelectric	Tennessee	Shelby County	47157	214	76556
+2008	221111	Hydroelectric	Tennessee	Sullivan County	47163	23	67098
+2008	221111	Hydroelectric	Tennessee	Warren County	47177	6	67834
+2008	221111	Hydroelectric	Tennessee	Washington County	47179	54	67625
+2008	221111	Hydroelectric	Tennessee	Weakley County	47183	11	66529
+2008	221111	Hydroelectric	Tennessee	Wilson County	47189	2	75581
+2008	221111	Hydroelectric	Texas		48000	5772	64004
+2008	221111	Hydroelectric	Texas		48000	15506	89228
+2008	221111	Hydroelectric	Texas	Dallas County	48113	2761	117965
+2008	221111	Hydroelectric	Texas	Grimes County	48185	71	92583
+2008	221111	Hydroelectric	Texas	Harris County	48201	4277	95156
+2008	221111	Hydroelectric	Texas	Travis County	48453	92	93389
+2008	221111	Hydroelectric	Vermont		50000	31	44144
+2008	221111	Hydroelectric	Virginia		51000	124	67852
+2008	221111	Hydroelectric	Washington		53000	1593	77145
+2008	221111	Hydroelectric	Washington		53000	259	89107
+2008	221111	Hydroelectric	Washington	King County	53033	12	137497
+2008	221111	Hydroelectric	Wisconsin		55000	89	38393
+2008	221111	Hydroelectric	Puerto Rico		72000	9346	51469
+2008	221111	Hydroelectric		U.S. TOTAL	US000	6694	81688
+2008	221111	Hydroelectric		U.S. TOTAL	US000	9811	67163
+2008	221111	Hydroelectric		U.S. TOTAL	US000	38649	95213

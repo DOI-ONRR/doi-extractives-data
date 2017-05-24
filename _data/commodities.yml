@@ -61,12 +61,13 @@ jobs:
   # national and state wage and salary (BLS) employment sections. Tables for
   # each of these commodities will be shown only if there is data for each.
   show:
-    - Oil and gas
     - Coal
+    - Geothermal
+    - Hydroelectric
     - Nonenergy minerals
+    - Oil and gas
     - Solar
     - Wind
-    - Geothermal
 
   # These are values that we should use in the template for specific
   # commodity/sector values, such as renewables:

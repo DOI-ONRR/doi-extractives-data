@@ -16,6 +16,11 @@ naics:
   Nonmetallic minerals: 2123
   # Support activities:
   Mining support:       213
+  Drilling Oil and Gas Wells:  213111
+  Support Activities for Oil and Gas Operations: 213112
+  Support Activities for Coal Mining: 213113
+  Support Activities for Metal Mining: 213114
+  Support Activities for Nonmetallic Minerals (except Fuels) Mining: 213115
   # Renewables:
   Solar:                221114
   Wind:                 221115

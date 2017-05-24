@@ -5764,6 +5764,575 @@ year	naics	commodity	state	county	fips	jobs	pay
 2014	213	Mining support	Wyoming	Uinta County	56041	305	85301
 2014	213	Mining support	Wyoming	Washakie County	56043	115	76514
 2014	213	Mining support		U.S. TOTAL	US000	439379	88530
+2014	213111	Drilling Oil and Gas Wells	Alabama		01000	151	70752
+2014	213111	Drilling Oil and Gas Wells	Alabama	Tuscaloosa County	01125	24	62924
+2014	213111	Drilling Oil and Gas Wells	Alaska		02000	1001	111276
+2014	213111	Drilling Oil and Gas Wells	Alaska	Anchorage Borough	02020	147	109772
+2014	213111	Drilling Oil and Gas Wells	Arizona		04000	172	80586
+2014	213111	Drilling Oil and Gas Wells	Arizona	Maricopa County	04013	85	84276
+2014	213111	Drilling Oil and Gas Wells	Arkansas		05000	822	86421
+2014	213111	Drilling Oil and Gas Wells	Arkansas	Faulkner County	05045	272	108757
+2014	213111	Drilling Oil and Gas Wells	Arkansas	Sebastian County	05131	204	87658
+2014	213111	Drilling Oil and Gas Wells	California		06000	3712	91546
+2014	213111	Drilling Oil and Gas Wells	California	Kern County	06029	1863	80222
+2014	213111	Drilling Oil and Gas Wells	California	Orange County	06059	91	68993
+2014	213111	Drilling Oil and Gas Wells	California	San Diego County	06073	18	44620
+2014	213111	Drilling Oil and Gas Wells	California	Santa Clara County	06085	29	94357
+2014	213111	Drilling Oil and Gas Wells	California	Tulare County	06107	22	36578
+2014	213111	Drilling Oil and Gas Wells	Colorado		08000	2721	94284
+2014	213111	Drilling Oil and Gas Wells	Colorado	Adams County	08001	7	183376
+2014	213111	Drilling Oil and Gas Wells	Colorado	Denver County	08031	708	104695
+2014	213111	Drilling Oil and Gas Wells	Colorado	Garfield County	08045	630	89613
+2014	213111	Drilling Oil and Gas Wells	Colorado	Larimer County	08069	9	82205
+2014	213111	Drilling Oil and Gas Wells	Florida		12000	143	53637
+2014	213111	Drilling Oil and Gas Wells	Florida	Lee County	12071	15	42798
+2014	213111	Drilling Oil and Gas Wells	Florida	Marion County	12083	4	29632
+2014	213111	Drilling Oil and Gas Wells	Georgia		13000	119	59168
+2014	213111	Drilling Oil and Gas Wells	Idaho	Ada County	16001	5	35664
+2014	213111	Drilling Oil and Gas Wells	Illinois		17000	482	52590
+2014	213111	Drilling Oil and Gas Wells	Illinois	Clay County	17025	26	32673
+2014	213111	Drilling Oil and Gas Wells	Illinois	Fayette County	17051	6	17052
+2014	213111	Drilling Oil and Gas Wells	Illinois	Wabash County	17185	49	42171
+2014	213111	Drilling Oil and Gas Wells	Illinois	White County	17193	251	55357
+2014	213111	Drilling Oil and Gas Wells	Indiana		18000	289	64868
+2014	213111	Drilling Oil and Gas Wells	Iowa		19000	6	26118
+2014	213111	Drilling Oil and Gas Wells	Kansas		20000	2232	54947
+2014	213111	Drilling Oil and Gas Wells	Kansas	Barton County	20009	417	52400
+2014	213111	Drilling Oil and Gas Wells	Kansas	Finney County	20055	108	63452
+2014	213111	Drilling Oil and Gas Wells	Kansas	Miami County	20121	20	54997
+2014	213111	Drilling Oil and Gas Wells	Kansas	Pratt County	20151	117	56363
+2014	213111	Drilling Oil and Gas Wells	Kansas	Russell County	20167	93	52719
+2014	213111	Drilling Oil and Gas Wells	Kansas	Sedgwick County	20173	355	54181
+2014	213111	Drilling Oil and Gas Wells	Kansas	Seward County	20175	25	52707
+2014	213111	Drilling Oil and Gas Wells	Kentucky		21000	290	49259
+2014	213111	Drilling Oil and Gas Wells	Kentucky	Floyd County	21071	86	52267
+2014	213111	Drilling Oil and Gas Wells	Louisiana		22000	6596	87378
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Bossier Parish	22015	36	72145
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Caddo Parish	22017	96	43950
+2014	213111	Drilling Oil and Gas Wells	Louisiana	De Soto Parish	22031	145	82538
+2014	213111	Drilling Oil and Gas Wells	Louisiana	East Baton Rouge Parish	22033	30	41128
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Iberia Parish	22045	1864	88864
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Jefferson Parish	22051	332	140034
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Ouachita Parish	22073	16	44820
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Sabine Parish	22085	26	66415
+2014	213111	Drilling Oil and Gas Wells	Louisiana	St. Tammany Parish	22103	226	121110
+2014	213111	Drilling Oil and Gas Wells	Louisiana	Terrebonne Parish	22109	739	107632
+2014	213111	Drilling Oil and Gas Wells	Maryland		24000	200	56225
+2014	213111	Drilling Oil and Gas Wells	Massachusetts		25000	81	64805
+2014	213111	Drilling Oil and Gas Wells	Massachusetts	Worcester County	25027	33	62394
+2014	213111	Drilling Oil and Gas Wells	Michigan		26000	468	66683
+2014	213111	Drilling Oil and Gas Wells	Michigan	Grand Traverse County	26055	49	113573
+2014	213111	Drilling Oil and Gas Wells	Michigan	Isabella County	26073	143	52646
+2014	213111	Drilling Oil and Gas Wells	Mississippi	Adams County	28001	251	55651
+2014	213111	Drilling Oil and Gas Wells	Mississippi	Rankin County	28121	109	45427
+2014	213111	Drilling Oil and Gas Wells	Missouri		29000	42	65175
+2014	213111	Drilling Oil and Gas Wells	Montana		30000	423	82626
+2014	213111	Drilling Oil and Gas Wells	Montana	Richland County	30083	25	110969
+2014	213111	Drilling Oil and Gas Wells	Montana	Yellowstone County	30111	12	67463
+2014	213111	Drilling Oil and Gas Wells	Nebraska	Red Willow County	31145	4	26284
+2014	213111	Drilling Oil and Gas Wells	Nevada		32000	46	85162
+2014	213111	Drilling Oil and Gas Wells	New Hampshire		33000	10	42779
+2014	213111	Drilling Oil and Gas Wells	New Jersey		34000	45	62115
+2014	213111	Drilling Oil and Gas Wells	New Mexico		35000	2620	73408
+2014	213111	Drilling Oil and Gas Wells	New Mexico	Lea County	35025	820	68542
+2014	213111	Drilling Oil and Gas Wells	New York		36000	134	49442
+2014	213111	Drilling Oil and Gas Wells	New York	Chautauqua County	36013	27	34572
+2014	213111	Drilling Oil and Gas Wells	New York	Erie County	36029	4	25844
+2014	213111	Drilling Oil and Gas Wells	North Carolina		37000	106	53193
+2014	213111	Drilling Oil and Gas Wells	North Dakota		38000	6670	117457
+2014	213111	Drilling Oil and Gas Wells	North Dakota	McKenzie County	38053	496	116050
+2014	213111	Drilling Oil and Gas Wells	North Dakota	Stark County	38089	1677	141829
+2014	213111	Drilling Oil and Gas Wells	North Dakota	Ward County	38101	7	103318
+2014	213111	Drilling Oil and Gas Wells	North Dakota	Williams County	38105	3820	107702
+2014	213111	Drilling Oil and Gas Wells	Ohio		39000	1709	71734
+2014	213111	Drilling Oil and Gas Wells	Ohio	Ashtabula County	39007	4	27198
+2014	213111	Drilling Oil and Gas Wells	Ohio	Belmont County	39013	406	75702
+2014	213111	Drilling Oil and Gas Wells	Ohio	Washington County	39167	206	88776
+2014	213111	Drilling Oil and Gas Wells	Oklahoma		40000	7648	86865
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Beckham County	40009	10	73286
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Carter County	40019	25	51157
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Cleveland County	40027	46	59120
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Garfield County	40047	202	65158
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Le Flore County	40079	831	75679
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Oklahoma County	40109	3595	92541
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Pawnee County	40117	13	36324
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Pittsburg County	40121	14	73016
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Rogers County	40131	16	57207
+2014	213111	Drilling Oil and Gas Wells	Oklahoma	Woodward County	40153	512	74945
+2014	213111	Drilling Oil and Gas Wells	Pennsylvania		42000	3535	90016
+2014	213111	Drilling Oil and Gas Wells	Pennsylvania	Indiana County	42063	496	68058
+2014	213111	Drilling Oil and Gas Wells	Pennsylvania	Mckean County	42083	113	61491
+2014	213111	Drilling Oil and Gas Wells	Pennsylvania	Venango County	42121	18	39215
+2014	213111	Drilling Oil and Gas Wells	Pennsylvania	Washington County	42125	188	92276
+2014	213111	Drilling Oil and Gas Wells	South Carolina		45000	30	34295
+2014	213111	Drilling Oil and Gas Wells	South Dakota		46000	11	45607
+2014	213111	Drilling Oil and Gas Wells	Tennessee		47000	69	45348
+2014	213111	Drilling Oil and Gas Wells	Texas		48000	48791	109236
+2014	213111	Drilling Oil and Gas Wells	Texas	Andrews County	48003	84	65972
+2014	213111	Drilling Oil and Gas Wells	Texas	Archer County	48009	235	70266
+2014	213111	Drilling Oil and Gas Wells	Texas	Bexar County	48029	167	66997
+2014	213111	Drilling Oil and Gas Wells	Texas	Caldwell County	48055	109	39732
+2014	213111	Drilling Oil and Gas Wells	Texas	Cooke County	48097	61	48771
+2014	213111	Drilling Oil and Gas Wells	Texas	Denton County	48121	118	54549
+2014	213111	Drilling Oil and Gas Wells	Texas	Eastland County	48133	11	35482
+2014	213111	Drilling Oil and Gas Wells	Texas	Fort Bend County	48157	1234	170062
+2014	213111	Drilling Oil and Gas Wells	Texas	Frio County	48163	917	101358
+2014	213111	Drilling Oil and Gas Wells	Texas	Harris County	48201	15150	139536
+2014	213111	Drilling Oil and Gas Wells	Texas	Harrison County	48203	215	61881
+2014	213111	Drilling Oil and Gas Wells	Texas	Hockley County	48219	519	75908
+2014	213111	Drilling Oil and Gas Wells	Texas	Johnson County	48251	48	56382
+2014	213111	Drilling Oil and Gas Wells	Texas	Lubbock County	48303	22	84109
+2014	213111	Drilling Oil and Gas Wells	Texas	Montgomery County	48339	1658	121329
+2014	213111	Drilling Oil and Gas Wells	Texas	Ochiltree County	48357	25	58649
+2014	213111	Drilling Oil and Gas Wells	Texas	Panola County	48365	41	58015
+2014	213111	Drilling Oil and Gas Wells	Texas	San Patricio County	48409	116	49722
+2014	213111	Drilling Oil and Gas Wells	Texas	Shelby County	48419	83	51286
+2014	213111	Drilling Oil and Gas Wells	Texas	Smith County	48423	914	85299
+2014	213111	Drilling Oil and Gas Wells	Texas	Tarrant County	48439	551	100252
+2014	213111	Drilling Oil and Gas Wells	Texas	Taylor County	48441	434	64641
+2014	213111	Drilling Oil and Gas Wells	Texas	Travis County	48453	52	81528
+2014	213111	Drilling Oil and Gas Wells	Texas	Wichita County	48485	148	62504
+2014	213111	Drilling Oil and Gas Wells	Texas	Winkler County	48495	76	48255
+2014	213111	Drilling Oil and Gas Wells	Texas	Wise County	48497	925	76354
+2014	213111	Drilling Oil and Gas Wells	Utah		49000	707	88656
+2014	213111	Drilling Oil and Gas Wells	Virginia		51000	257	52623
+2014	213111	Drilling Oil and Gas Wells	Washington		53000	48	68998
+2014	213111	Drilling Oil and Gas Wells	Washington	Yakima County	53077	19	48100
+2014	213111	Drilling Oil and Gas Wells	Wisconsin		55000	17	50993
+2014	213111	Drilling Oil and Gas Wells	Wyoming		56000	2712	94957
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Albany County	56001	5	82039
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Campbell County	56005	385	90702
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Johnson County	56019	24	37759
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Natrona County	56025	962	112184
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Sheridan County	56033	16	47460
+2014	213111	Drilling Oil and Gas Wells	Wyoming	Sweetwater County	56037	16	81590
+2014	213111	Drilling Oil and Gas Wells		U.S. TOTAL	US000	98208	98601
+2014	213112	Support Activities for Oil and Gas Operations	Alabama		01000	653	59148
+2014	213112	Support Activities for Oil and Gas Operations	Alabama	Baldwin County	01003	24	79776
+2014	213112	Support Activities for Oil and Gas Operations	Alabama	Escambia County	01053	166	49140
+2014	213112	Support Activities for Oil and Gas Operations	Alabama	Tuscaloosa County	01125	201	52187
+2014	213112	Support Activities for Oil and Gas Operations	Alaska		02000	9561	105062
+2014	213112	Support Activities for Oil and Gas Operations	Alaska	Anchorage Borough	02020	1618	135262
+2014	213112	Support Activities for Oil and Gas Operations	Alaska	Matanuska-Susitna Borough	02170	18	81640
+2014	213112	Support Activities for Oil and Gas Operations	Arizona		04000	135	62542
+2014	213112	Support Activities for Oil and Gas Operations	Arizona	Maricopa County	04013	7	85119
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas		05000	2763	69235
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Cleburne County	05023	81	47464
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Conway County	05029	35	56606
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Faulkner County	05045	526	61965
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Franklin County	05047	81	44062
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Logan County	05083	16	53651
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Ouachita County	05103	31	37371
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Pulaski County	05119	20	49796
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Sebastian County	05131	481	99442
+2014	213112	Support Activities for Oil and Gas Operations	Arkansas	Union County	05139	169	52703
+2014	213112	Support Activities for Oil and Gas Operations	California		06000	9505	81966
+2014	213112	Support Activities for Oil and Gas Operations	California	Kern County	06029	6458	77983
+2014	213112	Support Activities for Oil and Gas Operations	California	Los Angeles County	06037	1466	89958
+2014	213112	Support Activities for Oil and Gas Operations	California	Nevada County	06057	6	32797
+2014	213112	Support Activities for Oil and Gas Operations	California	Orange County	06059	147	91740
+2014	213112	Support Activities for Oil and Gas Operations	California	Placer County	06061	17	49497
+2014	213112	Support Activities for Oil and Gas Operations	California	San Diego County	06073	94	66778
+2014	213112	Support Activities for Oil and Gas Operations	California	Santa Clara County	06085	125	58733
+2014	213112	Support Activities for Oil and Gas Operations	Colorado		08000	15188	88508
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Adams County	08001	576	96852
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Arapahoe County	08005	416	135397
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Denver County	08031	1689	173308
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Douglas County	08035	312	110154
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	El Paso County	08041	13	69934
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Garfield County	08045	696	65966
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Jefferson County	08059	147	122139
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	La Plata County	08067	146	80412
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Larimer County	08069	278	77319
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Las Animas County	08071	123	77349
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Logan County	08075	145	58175
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Mesa County	08077	2420	75717
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Montezuma County	08083	112	67249
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Rio Blanco County	08103	248	66896
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Routt County	08107	22	47193
+2014	213112	Support Activities for Oil and Gas Operations	Colorado	Weld County	08123	7011	73901
+2014	213112	Support Activities for Oil and Gas Operations	Florida		12000	230	79637
+2014	213112	Support Activities for Oil and Gas Operations	Florida	Broward County	12011	6	74822
+2014	213112	Support Activities for Oil and Gas Operations	Florida	Hillsborough County	12057	13	55278
+2014	213112	Support Activities for Oil and Gas Operations	Florida	Monroe County	12087	17	53504
+2014	213112	Support Activities for Oil and Gas Operations	Florida	Santa Rosa County	12113	13	43565
+2014	213112	Support Activities for Oil and Gas Operations	Florida	Seminole County	12117	4	97237
+2014	213112	Support Activities for Oil and Gas Operations	Idaho		16000	46	95430
+2014	213112	Support Activities for Oil and Gas Operations	Illinois		17000	942	52895
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	Christian County	17021	12	28939
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	Clay County	17025	74	38621
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	DuPage County	17043	4	91604
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	Edwards County	17047	17	54895
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	Marion County	17121	60	60597
+2014	213112	Support Activities for Oil and Gas Operations	Illinois	White County	17193	127	49337
+2014	213112	Support Activities for Oil and Gas Operations	Indiana		18000	97	45417
+2014	213112	Support Activities for Oil and Gas Operations	Indiana	Gibson County	18051	4	28351
+2014	213112	Support Activities for Oil and Gas Operations	Indiana	Hamilton County	18057	5	79677
+2014	213112	Support Activities for Oil and Gas Operations	Kansas		20000	4324	57191
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Barton County	20009	337	54004
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Comanche County	20033	8	57436
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Decatur County	20039	19	41614
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Elk County	20049	8	34143
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Finney County	20055	99	61527
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Miami County	20121	28	53445
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Montgomery County	20125	20	28110
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Neosho County	20133	291	54398
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Pratt County	20151	336	67514
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Russell County	20167	231	65113
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Sedgwick County	20173	111	54983
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Seward County	20175	682	61785
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Sheridan County	20179	17	54881
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Sumner County	20191	72	43513
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Thomas County	20193	6	33314
+2014	213112	Support Activities for Oil and Gas Operations	Kansas	Trego County	20195	9	29980
+2014	213112	Support Activities for Oil and Gas Operations	Kentucky		21000	518	56672
+2014	213112	Support Activities for Oil and Gas Operations	Kentucky	Henderson County	21101	21	50231
+2014	213112	Support Activities for Oil and Gas Operations	Kentucky	Union County	21225	31	34071
+2014	213112	Support Activities for Oil and Gas Operations	Kentucky	Warren County	21227	19	93946
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana		22000	33825	85032
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Beauregard Parish	22011	13	72438
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Bossier Parish	22015	1196	78767
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Caddo Parish	22017	1272	70605
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Catahoula Parish	22025	38	31894
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Concordia Parish	22029	74	45135
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	De Soto Parish	22031	401	71324
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	East Baton Rouge Parish	22033	177	78418
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Jackson Parish	22049	24	65044
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Jefferson Parish	22051	634	88928
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Lafayette Parish	22055	13546	88781
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Lafourche Parish	22057	1099	83223
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Lincoln Parish	22061	157	75167
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Livingston Parish	22063	9	35736
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Natchitoches Parish	22069	15	22297
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Orleans Parish	22071	922	108042
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Ouachita Parish	22073	45	57220
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Plaquemines Parish	22075	719	80378
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Pointe Coupee Parish	22077	128	62548
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Richland Parish	22083	42	41101
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	St. Charles Parish	22089	69	88291
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	St. Tammany Parish	22103	525	90182
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Tangipahoa Parish	22105	42	104954
+2014	213112	Support Activities for Oil and Gas Operations	Louisiana	Terrebonne Parish	22109	3877	88367
+2014	213112	Support Activities for Oil and Gas Operations	Maryland		24000	40	52414
+2014	213112	Support Activities for Oil and Gas Operations	Michigan		26000	1527	67181
+2014	213112	Support Activities for Oil and Gas Operations	Michigan	Grand Traverse County	26055	103	63726
+2014	213112	Support Activities for Oil and Gas Operations	Michigan	Kalkaska County	26079	362	74046
+2014	213112	Support Activities for Oil and Gas Operations	Michigan	Wayne County	26163	22	70322
+2014	213112	Support Activities for Oil and Gas Operations	Minnesota		27000	22	102253
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi		28000	2999	68664
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Adams County	28001	86	45042
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Amite County	28005	10	57313
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Attala County	28007	9	95833
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Greene County	28041	12	41100
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Jackson County	28059	9	69493
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Lamar County	28073	37	50014
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Lawrence County	28077	4	47891
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Leake County	28079	8	63876
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Marion County	28091	235	77456
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Monroe County	28095	49	53009
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Pearl River County	28109	6	100848
+2014	213112	Support Activities for Oil and Gas Operations	Mississippi	Pike County	28113	34	49486
+2014	213112	Support Activities for Oil and Gas Operations	Missouri		29000	22	55191
+2014	213112	Support Activities for Oil and Gas Operations	Montana		30000	2377	95137
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Carbon County	30009	6	217358
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Gallatin County	30031	56	44836
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Pondera County	30073	6	28448
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Richland County	30083	642	88445
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Sheridan County	30091	115	116111
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Valley County	30105	33	52559
+2014	213112	Support Activities for Oil and Gas Operations	Montana	Yellowstone County	30111	250	180480
+2014	213112	Support Activities for Oil and Gas Operations	Nebraska		31000	132	58663
+2014	213112	Support Activities for Oil and Gas Operations	Nebraska	Red Willow County	31145	30	66834
+2014	213112	Support Activities for Oil and Gas Operations	Nevada		32000	84	72962
+2014	213112	Support Activities for Oil and Gas Operations	Nevada	Clark County	32003	8	69433
+2014	213112	Support Activities for Oil and Gas Operations	Nevada	Washoe County	32031	8	94846
+2014	213112	Support Activities for Oil and Gas Operations	New Hampshire		33000	4	46131
+2014	213112	Support Activities for Oil and Gas Operations	New Jersey		34000	99	73361
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico		35000	14564	70080
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico	Bernalillo County	35001	22	69002
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico	Eddy County	35015	3771	69346
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico	Lea County	35025	6784	71723
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico	Mckinley County	35031	13	48791
+2014	213112	Support Activities for Oil and Gas Operations	New Mexico	San Juan County	35045	3160	66816
+2014	213112	Support Activities for Oil and Gas Operations	New York		36000	304	70569
+2014	213112	Support Activities for Oil and Gas Operations	New York	Chautauqua County	36013	21	56441
+2014	213112	Support Activities for Oil and Gas Operations	North Carolina		37000	100	65543
+2014	213112	Support Activities for Oil and Gas Operations	North Carolina	Iredell County	37097	4	28064
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota		38000	18414	100573
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	McKenzie County	38053	1323	90888
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Morton County	38059	149	85585
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Renville County	38075	63	59791
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Slope County	38087	88	100078
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Stark County	38089	2920	103976
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Ward County	38101	1597	95766
+2014	213112	Support Activities for Oil and Gas Operations	North Dakota	Williams County	38105	9815	105626
+2014	213112	Support Activities for Oil and Gas Operations	Ohio		39000	3771	71836
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Ashtabula County	39007	46	48524
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Columbiana County	39029	9	101385
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Cuyahoga County	39035	5	146667
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Harrison County	39067	52	63195
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Licking County	39089	11	27088
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Stark County	39151	424	68615
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Summit County	39153	24	72732
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Trumbull County	39155	43	44593
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Tuscarawas County	39157	180	57476
+2014	213112	Support Activities for Oil and Gas Operations	Ohio	Washington County	39167	151	66040
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma		40000	27277	74078
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Alfalfa County	40003	30	52232
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Beaver County	40007	276	51062
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Beckham County	40009	2202	72631
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Caddo County	40015	171	65875
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Carter County	40019	1043	53936
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Cleveland County	40027	648	75406
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Dewey County	40043	180	72410
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Garfield County	40047	1053	70151
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Haskell County	40061	55	41596
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Hughes County	40063	226	60420
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Kingfisher County	40073	980	77353
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Lincoln County	40081	202	55065
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Oklahoma County	40109	3501	92378
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Okmulgee County	40111	42	31489
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Pawnee County	40117	84	45628
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Pittsburg County	40121	1086	72272
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Rogers County	40131	61	40669
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Tulsa County	40143	1500	85274
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Washington County	40147	410	60905
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Washita County	40149	267	68251
+2014	213112	Support Activities for Oil and Gas Operations	Oklahoma	Woodward County	40153	1478	71732
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania		42000	13587	80599
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Allegheny County	42003	461	100809
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Armstrong County	42005	162	70641
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Butler County	42019	183	81574
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Clearfield County	42033	150	79449
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Elk County	42047	27	60778
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Fayette County	42051	507	66107
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Greene County	42059	660	95693
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Indiana County	42063	1505	65573
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Jefferson County	42065	378	90290
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Mckean County	42083	466	82083
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Venango County	42121	93	61540
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Warren County	42123	55	45791
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Washington County	42125	2023	83329
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Westmoreland County	42129	452	104078
+2014	213112	Support Activities for Oil and Gas Operations	Pennsylvania	Wyoming County	42131	45	90412
+2014	213112	Support Activities for Oil and Gas Operations	South Carolina		45000	25	112355
+2014	213112	Support Activities for Oil and Gas Operations	South Dakota		46000	20	60769
+2014	213112	Support Activities for Oil and Gas Operations	Tennessee		47000	147	53240
+2014	213112	Support Activities for Oil and Gas Operations	Texas		48000	143979	91558
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Andrews County	48003	1468	70023
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Angelina County	48005	258	109548
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Aransas County	48007	338	71761
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Archer County	48009	68	44761
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Austin County	48015	80	77004
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Bee County	48025	445	73527
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Bexar County	48029	2562	87320
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Brazos County	48041	1463	75526
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Caldwell County	48055	89	53096
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Carson County	48065	7	54828
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Cass County	48067	19	47429
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Chambers County	48071	205	60114
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Cherokee County	48073	40	41066
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Coleman County	48083	15	46428
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Collin County	48085	319	178673
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Colorado County	48089	33	43417
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Cooke County	48097	2013	80098
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Dallas County	48113	1095	103170
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Denton County	48121	272	75959
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Dimmit County	48127	1052	67719
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Eastland County	48133	662	77430
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Ector County	48135	8491	85227
+2014	213112	Support Activities for Oil and Gas Operations	Texas	El Paso County	48141	60	93159
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Erath County	48143	36	72518
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Fort Bend County	48157	2144	131939
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Frio County	48163	688	69120
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Goliad County	48175	67	52796
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Gonzales County	48177	430	73554
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Gregg County	48183	4575	84567
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Harris County	48201	26380	129967
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Harrison County	48203	1618	72965
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Hays County	48209	46	65564
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Henderson County	48213	20	59312
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Hockley County	48219	1207	74801
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Howard County	48227	435	61337
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Hutchinson County	48233	238	50376
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Irion County	48235	216	101545
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Jasper County	48241	125	65191
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Jim Hogg County	48247	40	72495
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Jim Wells County	48249	3409	87371
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Johnson County	48251	1703	74168
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Kendall County	48259	6	72584
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Kerr County	48265	19	88439
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Liberty County	48291	627	72566
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Limestone County	48293	88	52170
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Live Oak County	48297	1292	44422
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Lubbock County	48303	133	67061
+2014	213112	Support Activities for Oil and Gas Operations	Texas	McLennan County	48309	20	67433
+2014	213112	Support Activities for Oil and Gas Operations	Texas	McMullen County	48311	231	61160
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Medina County	48325	383	65241
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Midland County	48329	11149	92446
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Mitchell County	48335	186	52020
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Montague County	48337	874	79032
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Montgomery County	48339	2272	111375
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Nueces County	48355	4175	98524
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Ochiltree County	48357	1442	72290
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Panola County	48365	1047	69710
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Polk County	48373	79	76589
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Refugio County	48391	476	66713
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Robertson County	48395	26	75540
+2014	213112	Support Activities for Oil and Gas Operations	Texas	San Patricio County	48409	732	70718
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Shackelford County	48417	486	92124
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Shelby County	48419	425	78763
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Stonewall County	48433	78	35150
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Tarrant County	48439	3337	84357
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Taylor County	48441	523	70085
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Throckmorton County	48447	44	59832
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Travis County	48453	1005	122907
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Upton County	48461	126	77469
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Van Zandt County	48467	14	52774
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Walker County	48471	13	46537
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Waller County	48473	413	91552
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Washington County	48477	225	118905
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Wharton County	48481	853	71573
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Wichita County	48485	475	51038
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Winkler County	48495	552	73153
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Wise County	48497	2224	83715
+2014	213112	Support Activities for Oil and Gas Operations	Texas	Yoakum County	48501	655	74669
+2014	213112	Support Activities for Oil and Gas Operations	Utah		49000	3952	67093
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Carbon County	49007	22	48498
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Duchesne County	49013	1431	65693
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Emery County	49015	7	17817
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Salt Lake County	49035	269	74199
+2014	213112	Support Activities for Oil and Gas Operations	Utah	San Juan County	49037	70	37226
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Uintah County	49047	1875	69735
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Utah County	49049	25	60430
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Washington County	49053	5	67580
+2014	213112	Support Activities for Oil and Gas Operations	Utah	Weber County	49057	26	71657
+2014	213112	Support Activities for Oil and Gas Operations	Virginia		51000	385	56685
+2014	213112	Support Activities for Oil and Gas Operations	Virginia	Buchanan County	51027	88	49601
+2014	213112	Support Activities for Oil and Gas Operations	Washington		53000	39	77104
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia		54000	4592	73905
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Braxton County	54007	19	73113
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Calhoun County	54013	48	52698
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Gilmer County	54021	97	38758
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Harrison County	54033	504	81020
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Kanawha County	54039	134	70218
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Monongalia County	54061	201	59190
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Nicholas County	54067	40	49091
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Upshur County	54097	172	51089
+2014	213112	Support Activities for Oil and Gas Operations	West Virginia	Wood County	54107	34	51894
+2014	213112	Support Activities for Oil and Gas Operations	Wisconsin		55000	29	73176
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming		56000	10001	81167
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Albany County	56001	56	73884
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Campbell County	56005	1710	71644
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Converse County	56009	586	70202
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Crook County	56011	163	53507
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Fremont County	56013	511	73019
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Johnson County	56019	79	59801
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Laramie County	56021	395	81794
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Lincoln County	56023	33	73999
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Natrona County	56025	2349	95211
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Park County	56029	410	69438
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Sheridan County	56033	80	56025
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Sweetwater County	56037	2461	88188
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Washakie County	56043	115	76514
+2014	213112	Support Activities for Oil and Gas Operations	Wyoming	Weston County	56045	54	49795
+2014	213112	Support Activities for Oil and Gas Operations		U.S. TOTAL	US000	326353	86112
+2014	213113	Support Activities for Coal Mining	Alabama		01000	159	87153
+2014	213113	Support Activities for Coal Mining	Alabama	Jefferson County	01073	116	110579
+2014	213113	Support Activities for Coal Mining	Colorado		08000	253	62132
+2014	213113	Support Activities for Coal Mining	Colorado	Delta County	08029	202	55198
+2014	213113	Support Activities for Coal Mining	Colorado	Mesa County	08077	9	91639
+2014	213113	Support Activities for Coal Mining	Florida		12000	16	46910
+2014	213113	Support Activities for Coal Mining	Illinois		17000	492	79943
+2014	213113	Support Activities for Coal Mining	Indiana		18000	146	43779
+2014	213113	Support Activities for Coal Mining	Kentucky		21000	2181	65453
+2014	213113	Support Activities for Coal Mining	Kentucky	Harlan County	21095	52	53520
+2014	213113	Support Activities for Coal Mining	Kentucky	Hopkins County	21107	197	60060
+2014	213113	Support Activities for Coal Mining	Kentucky	Laurel County	21125	126	75033
+2014	213113	Support Activities for Coal Mining	Kentucky	Pike County	21195	274	66123
+2014	213113	Support Activities for Coal Mining	Maryland		24000	317	66010
+2014	213113	Support Activities for Coal Mining	Maryland	Garrett County	24023	159	63678
+2014	213113	Support Activities for Coal Mining	North Carolina		37000	5	98801
+2014	213113	Support Activities for Coal Mining	North Dakota		38000	27	77805
+2014	213113	Support Activities for Coal Mining	Ohio		39000	911	84468
+2014	213113	Support Activities for Coal Mining	Pennsylvania		42000	936	59098
+2014	213113	Support Activities for Coal Mining	Pennsylvania	Clearfield County	42033	24	41059
+2014	213113	Support Activities for Coal Mining	Pennsylvania	Indiana County	42063	105	38009
+2014	213113	Support Activities for Coal Mining	Pennsylvania	Schuylkill County	42107	50	41228
+2014	213113	Support Activities for Coal Mining	Pennsylvania	Somerset County	42111	63	50578
+2014	213113	Support Activities for Coal Mining	Tennessee		47000	105	60517
+2014	213113	Support Activities for Coal Mining	Tennessee	Claiborne County	47025	53	59797
+2014	213113	Support Activities for Coal Mining	Texas		48000	192	73323
+2014	213113	Support Activities for Coal Mining	Utah		49000	241	138038
+2014	213113	Support Activities for Coal Mining	Utah	Emery County	49015	16	46089
+2014	213113	Support Activities for Coal Mining	Utah	Salt Lake County	49035	208	151587
+2014	213113	Support Activities for Coal Mining	Virginia		51000	351	61129
+2014	213113	Support Activities for Coal Mining	Virginia	Buchanan County	51027	150	65311
+2014	213113	Support Activities for Coal Mining	Virginia	Washington County	51191	22	47144
+2014	213113	Support Activities for Coal Mining	Virginia	Wise County	51195	141	62579
+2014	213113	Support Activities for Coal Mining	West Virginia		54000	1505	67929
+2014	213113	Support Activities for Coal Mining	West Virginia	Boone County	54005	167	71787
+2014	213113	Support Activities for Coal Mining	West Virginia	Logan County	54045	38	55986
+2014	213113	Support Activities for Coal Mining	West Virginia	McDowell County	54047	116	72446
+2014	213113	Support Activities for Coal Mining	West Virginia	Mingo County	54059	152	67122
+2014	213113	Support Activities for Coal Mining	West Virginia	Nicholas County	54067	217	49858
+2014	213113	Support Activities for Coal Mining	West Virginia	Raleigh County	54081	19	121086
+2014	213113	Support Activities for Coal Mining	Wyoming		56000	351	57973
+2014	213113	Support Activities for Coal Mining		U.S. TOTAL	US000	8600	70160
+2014	213114	Support Activities for Metal Mining	Arizona	Maricopa County	04013	49	106668
+2014	213114	Support Activities for Metal Mining	Arizona	Pima County	04019	29	48177
+2014	213114	Support Activities for Metal Mining	Colorado		08000	219	126214
+2014	213114	Support Activities for Metal Mining	Colorado	Arapahoe County	08005	15	411587
+2014	213114	Support Activities for Metal Mining	Colorado	Denver County	08031	55	127806
+2014	213114	Support Activities for Metal Mining	Colorado	Jefferson County	08059	33	100755
+2014	213114	Support Activities for Metal Mining	Florida		12000	15	75045
+2014	213114	Support Activities for Metal Mining	Idaho		16000	238	104858
+2014	213114	Support Activities for Metal Mining	Idaho	Ada County	16001	25	71905
+2014	213114	Support Activities for Metal Mining	Idaho	Kootenai County	16055	32	123185
+2014	213114	Support Activities for Metal Mining	Illinois		17000	9	34538
+2014	213114	Support Activities for Metal Mining	Michigan		26000	178	82877
+2014	213114	Support Activities for Metal Mining	Minnesota		27000	92	70880
+2014	213114	Support Activities for Metal Mining	Missouri		29000	189	81792
+2014	213114	Support Activities for Metal Mining	Montana		30000	69	60271
+2014	213114	Support Activities for Metal Mining	Montana	Missoula County	30063	17	71380
+2014	213114	Support Activities for Metal Mining	Nevada		32000	1497	91225
+2014	213114	Support Activities for Metal Mining	Nevada	Churchill County	32001	12	51177
+2014	213114	Support Activities for Metal Mining	Nevada	Eureka County	32011	45	75343
+2014	213114	Support Activities for Metal Mining	Nevada	Humboldt County	32013	190	80058
+2014	213114	Support Activities for Metal Mining	Nevada	Washoe County	32031	38	111158
+2014	213114	Support Activities for Metal Mining	Nevada	White Pine County	32033	85	63341
+2014	213114	Support Activities for Metal Mining	Ohio		39000	10	75803
+2014	213114	Support Activities for Metal Mining	South Dakota		46000	4	94714
+2014	213114	Support Activities for Metal Mining	Utah		49000	495	118459
+2014	213114	Support Activities for Metal Mining	Utah	Salt Lake County	49035	473	119550
+2014	213114	Support Activities for Metal Mining	Washington		53000	80	86093
+2014	213114	Support Activities for Metal Mining	Washington	Spokane County	53063	60	82639
+2014	213114	Support Activities for Metal Mining	Wyoming		56000	195	76333
+2014	213114	Support Activities for Metal Mining		U.S. TOTAL	US000	3632	93650
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Alaska		02000	56	76733
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Alaska	Anchorage Borough	02020	36	78790
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Arizona		04000	105	102486
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	California		06000	143	89934
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Colorado		08000	20	67039
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Florida		12000	156	38549
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Georgia		13000	241	43903
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Idaho		16000	48	78768
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Illinois		17000	106	67413
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Massachusetts		25000	31	70299
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Minnesota		27000	13	51949
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Nevada		32000	18	97490
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	New Jersey		34000	98	64423
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	New Mexico		35000	166	40788
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	North Carolina		37000	46	44204
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Ohio		39000	73	100517
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Oregon		41000	50	59301
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Pennsylvania		42000	189	46790
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Tennessee		47000	37	47145
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Texas	Bexar County	48029	8	120121
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Utah		49000	95	83263
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wisconsin		55000	6	48092
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining	Wyoming		56000	87	67097
+2014	213115	Support Activities for Nonmetallic Minerals (except Fuels) Mining		U.S. TOTAL	US000	2586	65132
 2014	221114	Solar	Arizona		04000	90	123134
 2014	221114	Solar	California		06000	786	134611
 2014	221114	Solar	California	Los Angeles County	06037	22	111989

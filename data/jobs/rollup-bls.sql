@@ -14,17 +14,54 @@ UPDATE bls_employment
       LIMIT 1
     );
 
--- sum up "hardrock" and "nonmetallic" minerals into "nonenergy"
-DELETE FROM bls_employment WHERE commodity = 'Nonenergy minerals';
+
+-- sum support activities for oil and gas
+UPDATE bls_employment
+  SET commodity = 'Oil and gas (only)'
+  WHERE naics = 211;
+DELETE FROM bls_employment WHERE naics = '211+S';
 INSERT INTO bls_employment
     (year, state, county, fips, region_id, naics, commodity, jobs)
   SELECT
-    year, state, county, fips, region_id, '212X' AS _naics,
+    year, state, county, fips, region_id, '211+S' AS _naics,
+    'Oil and gas' AS commodity,
+    SUM(jobs) AS jobs
+  FROM bls_employment
+  WHERE
+    naics IN (211, 213111, 213112)
+  GROUP BY
+    year, state, county, fips, region_id, _naics;
+
+-- add support activities to coal
+UPDATE bls_employment
+  SET commodity = 'Coal (only)'
+  WHERE naics = 2121;
+DELETE FROM bls_employment WHERE naics = '2121+S';
+INSERT INTO bls_employment
+    (year, state, county, fips, region_id, naics, commodity, jobs)
+  SELECT
+    year, state, county, fips, region_id, '2121+S' AS _naics,
+    'Coal' AS commodity,
+    SUM(jobs) AS jobs
+  FROM bls_employment
+  WHERE
+    naics IN (2121, 213113)
+  GROUP BY
+    year, state, county, fips, region_id, _naics;
+
+-- sum up "hardrock" and "nonmetallic" minerals, "support activities for
+-- metal mining", and "support activities for nonmetallic minerals" into
+-- "nonenergy mierals"
+DELETE FROM bls_employment WHERE naics = '212X+S';
+INSERT INTO bls_employment
+    (year, state, county, fips, region_id, naics, commodity, jobs)
+  SELECT
+    year, state, county, fips, region_id, '212X+S' AS _naics,
     'Nonenergy minerals' AS commodity,
     SUM(jobs) AS jobs
   FROM bls_employment
   WHERE
-    naics IN (2122, 2123)
+    naics IN (2122, 2123, 213114, 213115)
   GROUP BY
     year, state, county, fips, region_id, _naics;
 

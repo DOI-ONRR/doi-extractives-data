@@ -75,7 +75,7 @@ INSERT INTO bls_employment
     'Renewables' AS category,
     SUM(jobs) AS jobs
   FROM bls_employment
-  WHERE commodity IN ('Solar', 'Wind', 'Geothermal')
+  WHERE naics IN (221111, 221114, 221115, 221116)
   GROUP BY
     year, state, county, fips, region_id, category;
 

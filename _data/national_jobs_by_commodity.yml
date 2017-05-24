@@ -1,44 +1,44 @@
 Extractives:
   '2006':
-    count: 617048
+    count: 672616
     total: 133833834
-    percent: 0.46
-  '2007':
-    count: 660276
-    total: 135366106
-    percent: 0.49
-  '2008':
-    count: 713734
-    total: 134805659
-    percent: 0.53
-  '2009':
-    count: 641737
-    total: 128607842
     percent: 0.5
-  '2010':
-    count: 651918
-    total: 127820442
-    percent: 0.51
-  '2011':
-    count: 734895
-    total: 129411095
+  '2007':
+    count: 715238
+    total: 135366106
+    percent: 0.53
+  '2008':
+    count: 768888
+    total: 134805659
     percent: 0.57
-  '2012':
-    count: 803436
-    total: 131696378
-    percent: 0.61
-  '2013':
-    count: 818956
-    total: 133968434
-    percent: 0.61
-  '2014':
-    count: 848263
-    total: 136613609
-    percent: 0.62
-  '2015':
-    count: 759546
-    total: 139491699
+  '2009':
+    count: 696304
+    total: 128607842
     percent: 0.54
+  '2010':
+    count: 672984
+    total: 127820442
+    percent: 0.53
+  '2011':
+    count: 754729
+    total: 129411095
+    percent: 0.58
+  '2012':
+    count: 821897
+    total: 131696378
+    percent: 0.62
+  '2013':
+    count: 837317
+    total: 133968434
+    percent: 0.63
+  '2014':
+    count: 865853
+    total: 136613609
+    percent: 0.63
+  '2015':
+    count: 776368
+    total: 139491699
+    percent: 0.56
 Mining:
   '2006':
     count: 616598
@@ -449,6 +449,47 @@ Coal (only):
     count: 64135
     total: 139491699
     percent: 0.05
+Renewables:
+  '2006':
+    count: 55568
+    total: 133833834
+    percent: 0.04
+  '2007':
+    count: 54962
+    total: 135366106
+    percent: 0.04
+  '2008':
+    count: 55154
+    total: 134805659
+    percent: 0.04
+  '2009':
+    count: 54567
+    total: 128607842
+    percent: 0.04
+  '2010':
+    count: 21066
+    total: 127820442
+    percent: 0.02
+  '2011':
+    count: 24388
+    total: 129411095
+    percent: 0.02
+  '2012':
+    count: 23453
+    total: 131696378
+    percent: 0.02
+  '2013':
+    count: 23862
+    total: 133968434
+    percent: 0.02
+  '2014':
+    count: 23758
+    total: 136613609
+    percent: 0.02
+  '2015':
+    count: 24227
+    total: 139491699
+    percent: 0.02
 Hardrock minerals:
   '2006':
     count: 31883
@@ -490,6 +531,47 @@ Hardrock minerals:
     count: 42141
     total: 139491699
     percent: 0.03
+Hydroelectric:
+  '2006':
+    count: 39432
+    total: 133833834
+    percent: 0.03
+  '2007':
+    count: 38203
+    total: 135366106
+    percent: 0.03
+  '2008':
+    count: 38649
+    total: 134805659
+    percent: 0.03
+  '2009':
+    count: 37890
+    total: 128607842
+    percent: 0.03
+  '2010':
+    count: 7045
+    total: 127820442
+    percent: 0.01
+  '2011':
+    count: 5832
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 5937
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 6006
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 5821
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 5483
+    total: 139491699
+    percent: 0
 Support Activities for Coal Mining:
   '2006':
     count: 7083
@@ -529,27 +611,6 @@ Support Activities for Coal Mining:
     percent: 0.01
   '2015':
     count: 7290
-    total: 139491699
-    percent: 0.01
-Renewables:
-  '2011':
-    count: 4554
-    total: 129411095
-    percent: 0
-  '2012':
-    count: 4992
-    total: 131696378
-    percent: 0
-  '2013':
-    count: 5501
-    total: 133968434
-    percent: 0
-  '2014':
-    count: 6168
-    total: 136613609
-    percent: 0
-  '2015':
-    count: 7405
     total: 139491699
     percent: 0.01
 Support Activities for Metal Mining:

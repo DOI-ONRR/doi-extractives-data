@@ -74,8 +74,10 @@ jobs:
   # "There were {{ count }} {{ commodity | lookup: alias }} jobs in..."
   #
   alias:
+    # add "energy" to renewables
+    Geothermal: Geothermal energy
+    Hydroelectric: Hydroelectric energy
     Solar: Solar energy
     Wind: Wind energy
-    Geothermal: Geothermal energy
     # singularize
     Nonenergy minerals: Nonenergy mineral

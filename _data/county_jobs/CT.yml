@@ -1,10 +1,18 @@
 09001:
   name: Fairfield County
   employment:
+    '2007':
+      count: 131
+      total: 422312
+      percent: 0.03
+    '2008':
+      count: 130
+      total: 419353
+      percent: 0.03
     '2009':
-      count: 38
+      count: 153
       total: 400017
-      percent: 0.01
+      percent: 0.04
     '2010':
       count: 46
       total: 397733

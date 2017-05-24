@@ -460,9 +460,9 @@
   name: Graves County
   employment:
     '2006':
-      count: 63
+      count: 86
       total: 10617
-      percent: 0.59
+      percent: 0.81
     '2007':
       count: 55
       total: 11062
@@ -867,9 +867,9 @@
   name: Livingston County
   employment:
     '2006':
-      count: 374
+      count: 402
       total: 2494
-      percent: 15
+      percent: 16.12
     '2007':
       count: 374
       total: 2622
@@ -901,6 +901,13 @@
       count: 16
       total: 8045
       percent: 0.2
+'21145':
+  name: McCracken County
+  employment:
+    '2006':
+      count: 2
+      total: 38732
+      percent: 0.01
 '21149':
   name: McLean County
   employment:
@@ -919,6 +926,13 @@
       count: 62
       total: 2014
       percent: 3.08
+'21157':
+  name: Marshall County
+  employment:
+    '2006':
+      count: 1
+      total: 10789
+      percent: 0.01
 '21159':
   name: Martin County
   employment:

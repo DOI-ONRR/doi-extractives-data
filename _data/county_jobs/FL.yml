@@ -746,13 +746,13 @@
   name: Miami-Dade County
   employment:
     '2006':
-      count: 350
+      count: 362
       total: 1007587
-      percent: 0.03
+      percent: 0.04
     '2007':
-      count: 552
+      count: 560
       total: 1014998
-      percent: 0.05
+      percent: 0.06
     '2008':
       count: 468
       total: 1006416

@@ -427,7 +427,7 @@
       total: 446793
       percent: 0.06
     '2010':
-      count: 298
+      count: 325
       total: 447037
       percent: 0.07
     '2011':
@@ -478,9 +478,9 @@
       total: 14179
       percent: 0.92
     '2012':
-      count: 135
+      count: 140
       total: 14227
-      percent: 0.95
+      percent: 0.98
     '2013':
       count: 138
       total: 14462
@@ -493,6 +493,21 @@
       count: 131
       total: 14442
       percent: 0.91
+'36033':
+  name: Franklin County
+  employment:
+    '2006':
+      count: 7
+      total: 18462
+      percent: 0.04
+    '2007':
+      count: 7
+      total: 18818
+      percent: 0.04
+    '2008':
+      count: 5
+      total: 18870
+      percent: 0.03
 '36037':
   name: Genesee County
   employment:
@@ -583,21 +598,21 @@
   name: Jefferson County
   employment:
     '2006':
-      count: 75
+      count: 222
       total: 41293
-      percent: 0.18
+      percent: 0.54
     '2007':
-      count: 76
+      count: 197
       total: 41658
-      percent: 0.18
+      percent: 0.47
     '2008':
-      count: 75
+      count: 164
       total: 41969
-      percent: 0.18
+      percent: 0.39
     '2009':
-      count: 70
+      count: 162
       total: 41520
-      percent: 0.17
+      percent: 0.39
     '2010':
       count: 62
       total: 42215
@@ -645,6 +660,49 @@
       count: 14
       total: 492125
       percent: 0
+'36049':
+  name: Lewis County
+  employment:
+    '2006':
+      count: 18
+      total: 6774
+      percent: 0.27
+    '2007':
+      count: 17
+      total: 6612
+      percent: 0.26
+    '2008':
+      count: 17
+      total: 6584
+      percent: 0.26
+    '2009':
+      count: 18
+      total: 6577
+      percent: 0.27
+    '2010':
+      count: 19
+      total: 6616
+      percent: 0.29
+    '2011':
+      count: 20
+      total: 6496
+      percent: 0.31
+    '2012':
+      count: 19
+      total: 6474
+      percent: 0.29
+    '2013':
+      count: 28
+      total: 6418
+      percent: 0.44
+    '2014':
+      count: 30
+      total: 6501
+      percent: 0.46
+    '2015':
+      count: 23
+      total: 6409
+      percent: 0.36
 '36053':
   name: Madison County
   employment:
@@ -863,13 +921,13 @@
       total: 243223
       percent: 0.07
     '2010':
-      count: 180
+      count: 214
       total: 239623
-      percent: 0.08
+      percent: 0.09
     '2011':
-      count: 122
+      count: 144
       total: 240074
-      percent: 0.05
+      percent: 0.06
     '2012':
       count: 122
       total: 240086
@@ -1139,48 +1197,64 @@
       total: 37066
       percent: 0.96
     '2009':
-      count: 88
+      count: 156
       total: 35579
-      percent: 0.25
+      percent: 0.44
     '2010':
-      count: 70
+      count: 133
       total: 34980
-      percent: 0.2
+      percent: 0.38
     '2011':
-      count: 52
+      count: 117
       total: 34754
-      percent: 0.15
+      percent: 0.34
     '2012':
-      count: 50
+      count: 115
       total: 34402
-      percent: 0.15
+      percent: 0.33
     '2013':
-      count: 54
+      count: 121
       total: 34458
-      percent: 0.16
+      percent: 0.35
     '2014':
-      count: 43
+      count: 111
       total: 34802
-      percent: 0.12
+      percent: 0.32
     '2015':
-      count: 44
+      count: 112
       total: 34896
-      percent: 0.13
+      percent: 0.32
 '36091':
   name: Saratoga County
   employment:
+    '2007':
+      count: 6
+      total: 76328
+      percent: 0.01
+    '2008':
+      count: 5
+      total: 76525
+      percent: 0.01
     '2011':
       count: 142
       total: 75163
       percent: 0.19
     '2012':
-      count: 146
+      count: 154
       total: 77639
-      percent: 0.19
+      percent: 0.2
+    '2013':
+      count: 24
+      total: 79392
+      percent: 0.03
     '2014':
-      count: 141
+      count: 168
       total: 80629
-      percent: 0.17
+      percent: 0.21
+    '2015':
+      count: 29
+      total: 83158
+      percent: 0.03
 '36093':
   name: Schenectady County
   employment:

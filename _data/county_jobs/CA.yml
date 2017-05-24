@@ -205,45 +205,45 @@
   name: Fresno County
   employment:
     '2006':
-      count: 156
+      count: 223
       total: 350356
-      percent: 0.04
+      percent: 0.06
     '2007':
-      count: 116
+      count: 184
       total: 355221
-      percent: 0.03
+      percent: 0.05
     '2008':
-      count: 130
+      count: 191
       total: 354548
-      percent: 0.04
+      percent: 0.05
     '2009':
-      count: 177
+      count: 226
       total: 334586
-      percent: 0.05
-    '2010':
-      count: 174
-      total: 329941
-      percent: 0.05
-    '2011':
-      count: 187
-      total: 332339
-      percent: 0.06
-    '2012':
-      count: 208
-      total: 338684
-      percent: 0.06
-    '2013':
-      count: 232
-      total: 349193
       percent: 0.07
+    '2010':
+      count: 226
+      total: 329941
+      percent: 0.07
+    '2011':
+      count: 250
+      total: 332339
+      percent: 0.08
+    '2012':
+      count: 272
+      total: 338684
+      percent: 0.08
+    '2013':
+      count: 295
+      total: 349193
+      percent: 0.08
     '2014':
-      count: 283
+      count: 343
       total: 354646
-      percent: 0.08
+      percent: 0.1
     '2015':
-      count: 292
+      count: 345
       total: 364788
-      percent: 0.08
+      percent: 0.09
 '06021':
   name: Glenn County
   employment:
@@ -261,10 +261,30 @@
 '06025':
   name: Imperial County
   employment:
+    '2010':
+      count: 192
+      total: 57426
+      percent: 0.33
+    '2011':
+      count: 198
+      total: 56496
+      percent: 0.35
+    '2012':
+      count: 193
+      total: 59010
+      percent: 0.33
+    '2013':
+      count: 194
+      total: 60350
+      percent: 0.32
+    '2014':
+      count: 198
+      total: 62959
+      percent: 0.31
     '2015':
-      count: 378
+      count: 579
       total: 63939
-      percent: 0.59
+      percent: 0.91
 '06027':
   name: Inyo County
   employment:
@@ -1115,9 +1135,21 @@
   name: Shasta County
   employment:
     '2006':
-      count: 152
+      count: 162
       total: 67766
-      percent: 0.22
+      percent: 0.24
+    '2007':
+      count: 9
+      total: 68514
+      percent: 0.01
+    '2008':
+      count: 10
+      total: 65488
+      percent: 0.02
+    '2009':
+      count: 10
+      total: 61351
+      percent: 0.02
 06091:
   name: Sierra County
   employment:

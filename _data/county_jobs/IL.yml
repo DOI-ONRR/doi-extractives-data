@@ -256,9 +256,9 @@
   name: Cook County
   employment:
     '2006':
-      count: 913
+      count: 1851
       total: 2533204
-      percent: 0.04
+      percent: 0.07
     '2007':
       count: 772
       total: 2529579
@@ -272,27 +272,27 @@
       total: 2375779
       percent: 0.03
     '2010':
-      count: 552
+      count: 576
       total: 2345507
       percent: 0.02
     '2011':
-      count: 823
+      count: 848
       total: 2377242
-      percent: 0.03
+      percent: 0.04
     '2012':
-      count: 745
+      count: 769
       total: 2405633
       percent: 0.03
     '2013':
-      count: 734
+      count: 762
       total: 2426450
       percent: 0.03
     '2014':
-      count: 749
+      count: 779
       total: 2468453
       percent: 0.03
     '2015':
-      count: 813
+      count: 844
       total: 2531066
       percent: 0.03
 '17033':
@@ -983,9 +983,9 @@
   name: Madison County
   employment:
     '2006':
-      count: 129
+      count: 198
       total: 94371
-      percent: 0.14
+      percent: 0.21
     '2007':
       count: 125
       total: 95677
@@ -1151,9 +1151,9 @@
       total: 9297
       percent: 4.13
     '2010':
-      count: 416
+      count: 424
       total: 9308
-      percent: 4.47
+      percent: 4.56
     '2011':
       count: 416
       total: 9273
@@ -1196,6 +1196,10 @@
 '17143':
   name: Peoria County
   employment:
+    '2006':
+      count: 475
+      total: 102326
+      percent: 0.46
     '2009':
       count: 59
       total: 99085
@@ -1361,9 +1365,9 @@
       total: 96937
       percent: 0.09
     '2009':
-      count: 77
+      count: 156
       total: 93994
-      percent: 0.08
+      percent: 0.17
     '2010':
       count: 68
       total: 93164
@@ -1426,6 +1430,10 @@
       count: 311
       total: 130260
       percent: 0.24
+    '2010':
+      count: 13
+      total: 126750
+      percent: 0.01
 '17179':
   name: Tazewell County
   employment:
@@ -1648,21 +1656,21 @@
   name: Will County
   employment:
     '2006':
-      count: 291
+      count: 805
       total: 179626
-      percent: 0.16
+      percent: 0.45
     '2007':
-      count: 297
+      count: 816
       total: 191044
-      percent: 0.16
+      percent: 0.43
     '2008':
-      count: 273
+      count: 810
       total: 196008
-      percent: 0.14
+      percent: 0.41
     '2009':
-      count: 279
+      count: 819
       total: 189011
-      percent: 0.15
+      percent: 0.43
     '2010':
       count: 242
       total: 193323

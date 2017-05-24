@@ -1,6 +1,10 @@
 '23005':
   name: Cumberland County
   employment:
+    '2006':
+      count: 200
+      total: 171510
+      percent: 0.12
     '2008':
       count: 18
       total: 173888
@@ -40,13 +44,13 @@
   name: Kennebec County
   employment:
     '2013':
-      count: 17
+      count: 93
       total: 58537
-      percent: 0.03
+      percent: 0.16
     '2014':
-      count: 22
+      count: 63
       total: 59083
-      percent: 0.04
+      percent: 0.11
 '23017':
   name: Oxford County
   employment:
@@ -93,14 +97,26 @@
 '23019':
   name: Penobscot County
   employment:
+    '2009':
+      count: 137
+      total: 69610
+      percent: 0.2
     '2010':
-      count: 7
+      count: 59
       total: 68251
-      percent: 0.01
+      percent: 0.09
     '2011':
-      count: 10
+      count: 63
       total: 68250
-      percent: 0.01
+      percent: 0.09
+    '2012':
+      count: 56
+      total: 68860
+      percent: 0.08
+    '2013':
+      count: 55
+      total: 69223
+      percent: 0.08
 '23029':
   name: Washington County
   employment:
@@ -140,9 +156,9 @@
       total: 66901
       percent: 0.1
     '2013':
-      count: 66
+      count: 81
       total: 67017
-      percent: 0.1
+      percent: 0.12
     '2014':
       count: 70
       total: 67437

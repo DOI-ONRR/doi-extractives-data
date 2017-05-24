@@ -316,14 +316,22 @@
 '40021':
   name: Cherokee County
   employment:
+    '2006':
+      count: 82
+      total: 14680
+      percent: 0.56
+    '2007':
+      count: 84
+      total: 15574
+      percent: 0.54
     '2008':
-      count: 52
+      count: 139
       total: 15195
-      percent: 0.34
+      percent: 0.91
     '2009':
-      count: 43
+      count: 128
       total: 15815
-      percent: 0.27
+      percent: 0.81
     '2010':
       count: 40
       total: 15882

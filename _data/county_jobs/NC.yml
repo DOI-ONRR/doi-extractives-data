@@ -28,12 +28,16 @@
 '37021':
   name: Buncombe County
   employment:
+    '2006':
+      count: 1
+      total: 111988
+      percent: 0
     '2007':
-      count: 94
+      count: 95
       total: 116030
       percent: 0.08
     '2008':
-      count: 87
+      count: 88
       total: 115491
       percent: 0.08
     '2009':
@@ -106,17 +110,84 @@
   name: Chatham County
   employment:
     '2006':
-      count: 51
+      count: 53
       total: 17253
-      percent: 0.3
+      percent: 0.31
     '2007':
-      count: 51
+      count: 53
       total: 16936
-      percent: 0.3
+      percent: 0.31
     '2008':
-      count: 39
+      count: 41
       total: 16477
+      percent: 0.25
+    '2009':
+      count: 3
+      total: 15021
+      percent: 0.02
+    '2010':
+      count: 3
+      total: 14642
+      percent: 0.02
+    '2011':
+      count: 2
+      total: 14114
+      percent: 0.01
+    '2012':
+      count: 3
+      total: 13855
+      percent: 0.02
+    '2013':
+      count: 4
+      total: 14095
+      percent: 0.03
+    '2014':
+      count: 2
+      total: 14267
+      percent: 0.01
+'37039':
+  name: Cherokee County
+  employment:
+    '2006':
+      count: 45
+      total: 8981
+      percent: 0.5
+    '2007':
+      count: 46
+      total: 8405
+      percent: 0.55
+    '2008':
+      count: 41
+      total: 8188
+      percent: 0.5
+    '2009':
+      count: 37
+      total: 7582
+      percent: 0.49
+    '2010':
+      count: 35
+      total: 7697
+      percent: 0.45
+    '2011':
+      count: 28
+      total: 7747
+      percent: 0.36
+    '2012':
+      count: 22
+      total: 7682
+      percent: 0.29
+    '2013':
+      count: 19
+      total: 7717
+      percent: 0.25
+    '2014':
+      count: 19
+      total: 7802
       percent: 0.24
+    '2015':
+      count: 25
+      total: 7892
+      percent: 0.32
 '37045':
   name: Cleveland County
   employment:
@@ -280,6 +351,49 @@
       count: 118
       total: 180365
       percent: 0.07
+'37075':
+  name: Graham County
+  employment:
+    '2006':
+      count: 7
+      total: 2583
+      percent: 0.27
+    '2007':
+      count: 7
+      total: 2940
+      percent: 0.24
+    '2008':
+      count: 8
+      total: 2707
+      percent: 0.3
+    '2009':
+      count: 8
+      total: 2064
+      percent: 0.39
+    '2010':
+      count: 7
+      total: 2256
+      percent: 0.31
+    '2011':
+      count: 7
+      total: 2162
+      percent: 0.32
+    '2012':
+      count: 7
+      total: 2138
+      percent: 0.33
+    '2013':
+      count: 8
+      total: 2146
+      percent: 0.37
+    '2014':
+      count: 6
+      total: 2034
+      percent: 0.29
+    '2015':
+      count: 7
+      total: 1945
+      percent: 0.36
 '37081':
   name: Guilford County
   employment:
@@ -763,6 +877,45 @@
       count: 46
       total: 28233
       percent: 0.16
+'37173':
+  name: Swain County
+  employment:
+    '2006':
+      count: 1
+      total: 8209
+      percent: 0.01
+    '2007':
+      count: 1
+      total: 7929
+      percent: 0.01
+    '2008':
+      count: 1
+      total: 7923
+      percent: 0.01
+    '2009':
+      count: 1
+      total: 7851
+      percent: 0.01
+    '2010':
+      count: 1
+      total: 7977
+      percent: 0.01
+    '2011':
+      count: 1
+      total: 8226
+      percent: 0.01
+    '2012':
+      count: 2
+      total: 8354
+      percent: 0.02
+    '2013':
+      count: 2
+      total: 8721
+      percent: 0.02
+    '2014':
+      count: 1
+      total: 8921
+      percent: 0.01
 '37175':
   name: Transylvania County
   employment:

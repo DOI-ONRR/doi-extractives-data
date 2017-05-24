@@ -531,13 +531,13 @@
   name: Brazoria County
   employment:
     '2006':
-      count: 817
+      count: 936
       total: 82686
-      percent: 0.99
+      percent: 1.13
     '2007':
-      count: 864
+      count: 928
       total: 86015
-      percent: 1
+      percent: 1.08
     '2008':
       count: 877
       total: 87018
@@ -1624,21 +1624,21 @@
   name: Dallas County
   employment:
     '2006':
-      count: 6737
+      count: 9318
       total: 1456811
-      percent: 0.46
+      percent: 0.64
     '2007':
-      count: 6565
+      count: 9254
       total: 1480465
-      percent: 0.44
+      percent: 0.63
     '2008':
-      count: 7563
+      count: 10324
       total: 1489792
-      percent: 0.51
+      percent: 0.69
     '2009':
-      count: 7721
+      count: 10708
       total: 1416002
-      percent: 0.55
+      percent: 0.76
     '2010':
       count: 7624
       total: 1408829
@@ -2474,6 +2474,10 @@
 '48175':
   name: Goliad County
   employment:
+    '2006':
+      count: 84
+      total: 1420
+      percent: 5.92
     '2008':
       count: 36
       total: 1472
@@ -2674,13 +2678,13 @@
       total: 6735
       percent: 0.18
     '2008':
-      count: 17
+      count: 88
       total: 6977
-      percent: 0.24
+      percent: 1.26
     '2009':
-      count: 29
+      count: 100
       total: 7005
-      percent: 0.41
+      percent: 1.43
     '2010':
       count: 47
       total: 7255
@@ -2865,29 +2869,29 @@
   name: Harris County
   employment:
     '2006':
-      count: 70784
+      count: 74752
       total: 1938388
-      percent: 3.65
+      percent: 3.86
     '2007':
-      count: 76676
+      count: 80859
       total: 2013043
-      percent: 3.81
+      percent: 4.02
     '2008':
-      count: 81976
+      count: 86253
       total: 2059034
-      percent: 3.98
+      percent: 4.19
     '2009':
-      count: 79637
+      count: 84020
       total: 2003064
-      percent: 3.98
+      percent: 4.19
     '2010':
-      count: 72898
+      count: 72957
       total: 1987097
       percent: 3.67
     '2011':
-      count: 80084
+      count: 80347
       total: 2036642
-      percent: 3.93
+      percent: 3.95
     '2012':
       count: 87048
       total: 2112531
@@ -5446,13 +5450,13 @@
   name: Pecos County
   employment:
     '2006':
-      count: 308
+      count: 333
       total: 4598
-      percent: 6.7
+      percent: 7.24
     '2007':
-      count: 340
+      count: 361
       total: 4592
-      percent: 7.4
+      percent: 7.86
     '2008':
       count: 358
       total: 4659
@@ -6763,21 +6767,21 @@
   name: Travis County
   employment:
     '2006':
-      count: 1616
+      count: 1657
       total: 547137
       percent: 0.3
     '2007':
-      count: 1639
+      count: 1689
       total: 569200
-      percent: 0.29
+      percent: 0.3
     '2008':
-      count: 1557
+      count: 1649
       total: 578961
-      percent: 0.27
+      percent: 0.28
     '2009':
-      count: 1446
+      count: 1524
       total: 559751
-      percent: 0.26
+      percent: 0.27
     '2010':
       count: 1428
       total: 567693

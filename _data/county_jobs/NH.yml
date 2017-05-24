@@ -46,10 +46,26 @@
       count: 27
       total: 13901
       percent: 0.19
+    '2010':
+      count: 21
+      total: 12815
+      percent: 0.16
+    '2011':
+      count: 21
+      total: 12557
+      percent: 0.17
+    '2012':
+      count: 23
+      total: 12369
+      percent: 0.19
+    '2013':
+      count: 24
+      total: 12513
+      percent: 0.19
     '2014':
-      count: 16
+      count: 42
       total: 12064
-      percent: 0.13
+      percent: 0.35
 '33009':
   name: Grafton County
   employment:
@@ -133,16 +149,16 @@
       total: 193564
       percent: 0.04
     '2015':
-      count: 43
+      count: 65
       total: 196841
-      percent: 0.02
+      percent: 0.03
 '33013':
   name: Merrimack County
   employment:
     '2006':
-      count: 226
+      count: 244
       total: 74078
-      percent: 0.31
+      percent: 0.33
     '2007':
       count: 209
       total: 74063

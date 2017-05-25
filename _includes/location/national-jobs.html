@@ -1,4 +1,4 @@
-{% assign jobs =                  site.data.national_jobs[state_id] %}
+{% assign jobs = site.data.national_jobs[state_id] %}
 {% assign jobs_by_commodity =     site.data.national_jobs_by_commodity %}
 {% assign show_commodities =      site.data.commodities.jobs.show %}
 {% assign commodity_alias =       site.data.commodities.jobs.alias %}
@@ -73,6 +73,9 @@
 
     {% if jobs_by_commodity %}
     <h4>Wage and salary jobs by commodity</h4>
+
+    <p>The Quarterly Census of Employment and Wages categorizes jobs according to the North American Industry Classification System. To learn more about how we grouped those categories, see <a href="{{ site.baseurl }}/downloads/#jobs">data and documentation</a>.</p>
+
     <section class="chart-list">
 
       {% for _commodity in jobs_by_commodity %}

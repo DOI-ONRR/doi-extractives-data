@@ -1,4 +1,4 @@
-{% assign jobs =                  site.data.state_jobs[state_id] %}
+{% assign jobs = site.data.state_jobs[state_id] %}
 {% assign jobs_by_commodity =     site.data.state_jobs_by_commodity[state_id] %}
 {% assign show_commodities =      site.data.commodities.jobs.show %}
 {% assign commodity_alias =       site.data.commodities.jobs.alias %}
@@ -42,10 +42,7 @@
 
         <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
           <p>
-            Wage and salary data, from the Bureau of Labor Statistics,
-            describes the number of people employed in natural resource
-            extraction and renewable energy that receive wages or salaries
-            from companies.
+            Employment data from the Bureau of Labor Statistics describes the number of people employed in natural resource extraction and renewable energy that receive wages or salaries from companies.
             <br>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -140,6 +137,9 @@
 
     {% if jobs_by_commodity %}
     <h4>Wage and salary jobs by commodity</h4>
+
+     <p>The Quarterly Census of Employment and Wages categorizes jobs according to the North American Industry Classification System. To learn more about how we grouped those categories, see <a href="{{ site.baseurl }}/downloads/#jobs">data and documentation</a>.</p>
+
     <section class="chart-list">
 
       {% for _commodity in jobs_by_commodity %}

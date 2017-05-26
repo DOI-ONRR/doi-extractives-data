@@ -768,8 +768,9 @@ tables/disbursements_historic_preservation: data/disbursements/historic-preserva
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
 		--map ./data/disbursements/transform-hpf.js \
-		 $^ \
-		| $(tables) -t ndjson -n disbursements_historic_preservation
+		 $^ > $^.ndjson
+	$(tables) -i $^.ndjson -t ndjson -n disbursements_historic_preservation
+	rm $^.ndjson
 
 tables/land_stats: data/land-stats/land-stats.tsv
 	@$(call drop-table,land_stats)

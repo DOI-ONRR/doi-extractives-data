@@ -220,6 +220,22 @@ nav_items:
       <nav>
         {% include case-studies/_nav-list.html %}
       </nav>
+      <div class="filters-wrapper" data-toggler="filters" aria-expanded="false">
+        <button class="toggle-filters" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+        <form id="filters" aria-hidden="true" class="filters">
+            <h5>Filter commodities</h5>
+          <div class="container-right-2" style="margin-right: 0;">
+            <div id="type-filter" class="filter">
+              <select id="unit-filter" name="unit">
+                <option value="">Coal + such</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
     </div>
   </section>
 

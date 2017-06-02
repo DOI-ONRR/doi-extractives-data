@@ -143,7 +143,45 @@ tag:
 
   <li class="downloads-download_links">
     <a href="http://www.bls.gov/cew/datatoc.htm" class="link-no_under"><h3 id="jobs">Jobs</h3></a>
-    <p>We use two types of jobs data on this site. One is <em>wage and salary</em> data, which describes the number of people (full-time and part-time) employed in natural resource extraction that receive wages or salaries from companies. This data is from the <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>, specifically the Quarterly Census of Employment and Wages. The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
+    <p>We use two types of jobs data on this site. One is <em>wage and salary</em> data, which describes the number of people (full-time and part-time) employed in natural resource extraction that receive wages or salaries from companies. This data is from the <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>, specifically the Quarterly Census of Employment and Wages.</p>
+    <p>We've grouped this data according to the following <a href="https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart_code=21&search=2016%20NAICS%20Search">North American Industry Classification System</a> (NAICS) codes:</p>
+    <table class="article_table">
+      <tbody>
+        <tr>
+          <th>Jobs by commodity grouping</th>
+          <th>NAICS codes included</th>
+        </tr>
+        <tr>
+          <td>Oil and gas</td>
+          <td>211 - Oil and Gas Extraction<br>213111 - Drilling Oil and Gas Wells<br>213112 - Support Activities for Oil and Gas Operations</td>
+        </tr>
+        <tr>
+          <td>Nonenergy mineral</td>
+          <td>2122 - Metal Ore Mining<br>2123 - Nonmetallic Mineral Mining and Quarrying<br>213114 - Support Activities for Metal Mining<br>213115 - Support Activities for Nonmetallic Minerals (except Fuels) Mining</td>
+        </tr>
+        <tr>
+          <td>Coal</td>
+          <td>2121 - Coal Mining<br>213113 - Support Activities for Coal Mining</td>
+        </tr>
+        <tr>
+          <td>Hydroelectric energy</td>
+          <td>221111 - Hydroelectric Power Generation</td>
+        </tr>
+        <tr>
+          <td>Wind energy</td>
+          <td>221115 - Wind Electric Power Generation</td>
+        </tr>
+        <tr>
+          <td>Solar energy</td>
+          <td>221114 - Solar Electric Power Generation</td>
+        </tr>
+        <tr>
+          <td>Geothermal energy</td>
+          <td>221116 - Geothermal Electric Power Generation</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
     <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
     </a>
 

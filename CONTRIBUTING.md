@@ -23,8 +23,14 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 1. Get [Jekyll] and the necessary dependencies: `bundle install`
 1. Install all node dependencies: `npm install`
 1. Package js files with webpack: `webpack --watch`
-1. Run the web server: `npm run start` (or `jekyll serve` if you have Jekyll installed globally)
-1. Visit the local site at [http://localhost:4000](http://localhost:4000)
+1. Run the web server: `./serve`. **Note:** If you are working on a core layout page, you can speed up this process by running `./serve-fast`. This runs an incomplete version of the site that might be ideal for certain tasks.
+1. Visit the local site at [http://localhost:4000/site/](http://localhost:4000/site/)
+
+## Troubleshooting
+
+Sometimes the site doesn't build properly. Likely this is an issue with the built version of the site (`_site`). To attempt to fix this, consider running one of the following commands:
+- `./re-serve`: removes `_site` and runs `./serve`
+- `./re-serve-fast`: removes `_site` and runs `./serve-fast`
 
 ### Data and database
 The [data catalog](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.

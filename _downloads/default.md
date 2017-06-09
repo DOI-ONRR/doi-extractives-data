@@ -30,7 +30,7 @@ nav_items:
     title: Economic Impact
     subnav_items:
       - name: gdp
-        title: Gross domestic product (gdp)
+        title: Gross domestic product (GDP)
       - name: exports
         title: Exports
       - name: jobs
@@ -153,31 +153,31 @@ tag:
         </tr>
         <tr>
           <td>Oil and gas</td>
-          <td>211 - Oil and Gas Extraction<br>213111 - Drilling Oil and Gas Wells<br>213112 - Support Activities for Oil and Gas Operations</td>
+          <td><strong>211</strong> - Oil and Gas Extraction<br><strong>213111</strong> - Drilling Oil and Gas Wells<br><strong>213112</strong> - Support Activities for Oil and Gas Operations</td>
         </tr>
         <tr>
           <td>Nonenergy mineral</td>
-          <td>2122 - Metal Ore Mining<br>2123 - Nonmetallic Mineral Mining and Quarrying<br>213114 - Support Activities for Metal Mining<br>213115 - Support Activities for Nonmetallic Minerals (except Fuels) Mining</td>
+          <td><strong>2122</strong> - Metal Ore Mining<br><strong>2123</strong> - Nonmetallic Mineral Mining and Quarrying<br><strong>213114</strong> - Support Activities for Metal Mining<br><strong>213115</strong> - Support Activities for Nonmetallic Minerals (except Fuels) Mining</td>
         </tr>
         <tr>
           <td>Coal</td>
-          <td>2121 - Coal Mining<br>213113 - Support Activities for Coal Mining</td>
+          <td><strong>2121</strong> - Coal Mining<br><strong>213113</strong> - Support Activities for Coal Mining</td>
         </tr>
         <tr>
           <td>Hydroelectric energy</td>
-          <td>221111 - Hydroelectric Power Generation</td>
+          <td><strong>221111</strong> - Hydroelectric Power Generation</td>
         </tr>
         <tr>
           <td>Wind energy</td>
-          <td>221115 - Wind Electric Power Generation</td>
+          <td><strong>221115</strong> - Wind Electric Power Generation</td>
         </tr>
         <tr>
           <td>Solar energy</td>
-          <td>221114 - Solar Electric Power Generation</td>
+          <td><strong>221114</strong> - Solar Electric Power Generation</td>
         </tr>
         <tr>
           <td>Geothermal energy</td>
-          <td>221116 - Geothermal Electric Power Generation</td>
+          <td><strong>221116</strong> - Geothermal Electric Power Generation</td>
         </tr>
       </tbody>
     </table>

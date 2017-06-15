@@ -14,6 +14,8 @@ UPDATE bls_employment
       LIMIT 1
     );
 
+DELETE FROM bls_employment where state = 'Puerto Rico';
+DELETE FROM bls_employment where state = 'Virgin Islands';
 
 -- sum support activities for oil and gas
 UPDATE bls_employment

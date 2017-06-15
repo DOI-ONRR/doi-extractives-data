@@ -219,7 +219,8 @@ data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region AS state, year, \
-			jobs, ROUND(share, 2) AS percent \
+			jobs, ROUND(jobs / share) AS total, \
+			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
 			region IS NOT NULL AND \
@@ -233,7 +234,7 @@ data/national_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region AS state, year, \
-			jobs, \
+			jobs, ROUND(jobs / share) AS total, \
 			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \

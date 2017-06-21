@@ -17,6 +17,10 @@
       count: 11
       total: 5151
       percent: 0.21
+    '2016':
+      count: 17
+      total: 5126
+      percent: 0.33
 '19013':
   name: Black Hawk County
   employment:
@@ -51,6 +55,10 @@
       count: 25
       total: 25670
       percent: 0.1
+    '2016':
+      count: 21
+      total: 24367
+      percent: 0.09
 '19049':
   name: Dallas County
   employment:
@@ -125,6 +133,10 @@
       count: 9
       total: 16555
       percent: 0.05
+    '2016':
+      count: 9
+      total: 16594
+      percent: 0.05
 '19113':
   name: Linn County
   employment:
@@ -168,6 +180,10 @@
       count: 106
       total: 129160
       percent: 0.08
+    '2016':
+      count: 101
+      total: 129558
+      percent: 0.08
 '19121':
   name: Madison County
   employment:
@@ -195,6 +211,10 @@
       count: 41
       total: 3788
       percent: 1.08
+    '2016':
+      count: 68
+      total: 3842
+      percent: 1.77
 '19139':
   name: Muscatine County
   employment:
@@ -238,6 +258,10 @@
       count: 51
       total: 23136
       percent: 0.22
+    '2016':
+      count: 45
+      total: 23940
+      percent: 0.19
 '19153':
   name: Polk County
   employment:
@@ -245,6 +269,10 @@
       count: 138
       total: 288727
       percent: 0.05
+    '2016':
+      count: 97
+      total: 294891
+      percent: 0.03
 '19155':
   name: Pottawattamie County
   employment:
@@ -259,6 +287,10 @@
     '2014':
       count: 66
       total: 38817
+      percent: 0.17
+    '2016':
+      count: 66
+      total: 38374
       percent: 0.17
 '19163':
   name: Scott County
@@ -298,6 +330,10 @@
     '2015':
       count: 19
       total: 90943
+      percent: 0.02
+    '2016':
+      count: 18
+      total: 90653
       percent: 0.02
 '19167':
   name: Sioux County
@@ -341,6 +377,10 @@
     '2015':
       count: 49
       total: 20466
+      percent: 0.24
+    '2016':
+      count: 49
+      total: 20450
       percent: 0.24
 '19179':
   name: Wapello County
@@ -409,3 +449,7 @@
       count: 20
       total: 2305
       percent: 0.87
+    '2016':
+      count: 21
+      total: 2357
+      percent: 0.89

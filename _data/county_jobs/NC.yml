@@ -25,6 +25,10 @@
       count: 40
       total: 58102
       percent: 0.07
+    '2016':
+      count: 47
+      total: 59708
+      percent: 0.08
 '37021':
   name: Buncombe County
   employment:
@@ -68,6 +72,10 @@
       count: 110
       total: 123874
       percent: 0.09
+    '2016':
+      count: 87
+      total: 127319
+      percent: 0.07
 '37023':
   name: Burke County
   employment:
@@ -188,6 +196,10 @@
       count: 25
       total: 7892
       percent: 0.32
+    '2016':
+      count: 28
+      total: 7966
+      percent: 0.35
 '37045':
   name: Cleveland County
   employment:
@@ -234,6 +246,10 @@
       count: 45
       total: 38735
       percent: 0.12
+    '2016':
+      count: 45
+      total: 39438
+      percent: 0.11
 '37057':
   name: Davidson County
   employment:
@@ -277,6 +293,10 @@
       count: 21
       total: 41837
       percent: 0.05
+    '2016':
+      count: 21
+      total: 43106
+      percent: 0.05
 '37059':
   name: Davie County
   employment:
@@ -312,6 +332,17 @@
       count: 21
       total: 11770
       percent: 0.18
+    '2016':
+      count: 25
+      total: 12316
+      percent: 0.2
+'37065':
+  name: Edgecombe County
+  employment:
+    '2016':
+      count: 11
+      total: 16855
+      percent: 0.07
 '37067':
   name: Forsyth County
   employment:
@@ -351,6 +382,17 @@
       count: 118
       total: 180365
       percent: 0.07
+    '2016':
+      count: 138
+      total: 182452
+      percent: 0.08
+'37069':
+  name: Franklin County
+  employment:
+    '2016':
+      count: 20
+      total: 11519
+      percent: 0.17
 '37075':
   name: Graham County
   employment:
@@ -393,6 +435,10 @@
     '2015':
       count: 7
       total: 1945
+      percent: 0.36
+    '2016':
+      count: 7
+      total: 1932
       percent: 0.36
 '37081':
   name: Guilford County
@@ -437,6 +483,10 @@
       count: 93
       total: 275496
       percent: 0.03
+    '2016':
+      count: 83
+      total: 278181
+      percent: 0.03
 '37089':
   name: Henderson County
   employment:
@@ -466,6 +516,10 @@
     '2015':
       count: 27
       total: 69564
+      percent: 0.04
+    '2016':
+      count: 28
+      total: 71680
       percent: 0.04
 '37101':
   name: Johnston County
@@ -510,6 +564,10 @@
       count: 48
       total: 45765
       percent: 0.1
+    '2016':
+      count: 47
+      total: 46374
+      percent: 0.1
 '37105':
   name: Lee County
   employment:
@@ -553,6 +611,10 @@
       count: 54
       total: 25141
       percent: 0.21
+    '2016':
+      count: 57
+      total: 25617
+      percent: 0.22
 '37109':
   name: Lincoln County
   employment:
@@ -603,6 +665,10 @@
       count: 95
       total: 16346
       percent: 0.58
+    '2016':
+      count: 103
+      total: 16121
+      percent: 0.64
 '37113':
   name: Macon County
   employment:
@@ -634,6 +700,10 @@
       count: 8
       total: 10851
       percent: 0.07
+    '2016':
+      count: 12
+      total: 10984
+      percent: 0.11
 '37119':
   name: Mecklenburg County
   employment:
@@ -677,6 +747,10 @@
       count: 212
       total: 637156
       percent: 0.03
+    '2016':
+      count: 232
+      total: 661969
+      percent: 0.04
 '37123':
   name: Montgomery County
   employment:
@@ -730,6 +804,10 @@
       count: 21
       total: 66993
       percent: 0.03
+    '2016':
+      count: 21
+      total: 70239
+      percent: 0.03
 '37141':
   name: Pender County
   employment:
@@ -753,6 +831,13 @@
       count: 20
       total: 10009
       percent: 0.2
+'37147':
+  name: Pitt County
+  employment:
+    '2016':
+      count: 18
+      total: 74956
+      percent: 0.02
 '37151':
   name: Randolph County
   employment:
@@ -772,6 +857,10 @@
       count: 30
       total: 44398
       percent: 0.07
+    '2016':
+      count: 28
+      total: 44812
+      percent: 0.06
 '37153':
   name: Richmond County
   employment:
@@ -854,6 +943,10 @@
       count: 185
       total: 46841
       percent: 0.39
+    '2016':
+      count: 182
+      total: 47076
+      percent: 0.39
 '37171':
   name: Surry County
   employment:
@@ -923,6 +1016,10 @@
       count: 8
       total: 8496
       percent: 0.09
+    '2016':
+      count: 4
+      total: 8819
+      percent: 0.05
 '37183':
   name: Wake County
   employment:
@@ -966,6 +1063,10 @@
       count: 215
       total: 511453
       percent: 0.04
+    '2016':
+      count: 231
+      total: 530534
+      percent: 0.04
 '37189':
   name: Watauga County
   employment:
@@ -1005,6 +1106,10 @@
       count: 29
       total: 22285
       percent: 0.13
+    '2016':
+      count: 33
+      total: 22738
+      percent: 0.15
 '37195':
   name: Wilson County
   employment:
@@ -1020,3 +1125,7 @@
       count: 23
       total: 36923
       percent: 0.06
+    '2016':
+      count: 26
+      total: 37176
+      percent: 0.07

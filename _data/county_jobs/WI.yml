@@ -13,6 +13,10 @@
       count: 191
       total: 21616
       percent: 0.88
+    '2016':
+      count: 153
+      total: 21468
+      percent: 0.71
 '55009':
   name: Brown County
   employment:
@@ -56,6 +60,10 @@
       count: 66
       total: 151715
       percent: 0.04
+    '2016':
+      count: 69
+      total: 153881
+      percent: 0.04
 '55015':
   name: Calumet County
   employment:
@@ -86,6 +94,10 @@
       count: 294
       total: 24080
       percent: 1.22
+    '2016':
+      count: 160
+      total: 24322
+      percent: 0.66
 '55021':
   name: Columbia County
   employment:
@@ -148,6 +160,10 @@
       count: 157
       total: 322184
       percent: 0.05
+    '2016':
+      count: 149
+      total: 329690
+      percent: 0.05
 '55033':
   name: Dunn County
   employment:
@@ -198,6 +214,10 @@
       count: 152
       total: 46042
       percent: 0.33
+    '2016':
+      count: 187
+      total: 46146
+      percent: 0.41
 '55045':
   name: Green County
   employment:
@@ -248,6 +268,10 @@
       count: 53
       total: 6324
       percent: 0.84
+    '2016':
+      count: 52
+      total: 6120
+      percent: 0.85
 '55053':
   name: Jackson County
   employment:
@@ -255,6 +279,10 @@
       count: 192
       total: 8676
       percent: 2.21
+    '2016':
+      count: 199
+      total: 8625
+      percent: 2.31
 '55061':
   name: Kewaunee County
   employment:
@@ -305,6 +333,10 @@
       count: 66
       total: 33351
       percent: 0.2
+    '2016':
+      count: 59
+      total: 33426
+      percent: 0.18
 '55073':
   name: Marathon County
   employment:
@@ -348,6 +380,10 @@
       count: 93
       total: 70120
       percent: 0.13
+    '2016':
+      count: 106
+      total: 70337
+      percent: 0.15
 '55079':
   name: Milwaukee County
   employment:
@@ -391,6 +427,10 @@
       count: 42
       total: 482043
       percent: 0.01
+    '2016':
+      count: 40
+      total: 484460
+      percent: 0.01
 '55081':
   name: Monroe County
   employment:
@@ -410,6 +450,10 @@
       count: 349
       total: 19989
       percent: 1.75
+    '2016':
+      count: 255
+      total: 20198
+      percent: 1.26
 '55083':
   name: Oconto County
   employment:
@@ -452,6 +496,10 @@
       count: 81
       total: 105121
       percent: 0.08
+    '2016':
+      count: 77
+      total: 106959
+      percent: 0.07
 '55095':
   name: Polk County
   employment:
@@ -522,6 +570,10 @@
       count: 26
       total: 73727
       percent: 0.04
+    '2016':
+      count: 27
+      total: 74166
+      percent: 0.04
 '55105':
   name: Rock County
   employment:
@@ -565,6 +617,10 @@
       count: 116
       total: 64054
       percent: 0.18
+    '2016':
+      count: 130
+      total: 65048
+      percent: 0.2
 '55109':
   name: St. Croix County
   employment:
@@ -647,6 +703,10 @@
       count: 78
       total: 53624
       percent: 0.15
+    '2016':
+      count: 77
+      total: 54350
+      percent: 0.14
 '55133':
   name: Waukesha County
   employment:
@@ -685,6 +745,10 @@
     '2015':
       count: 280
       total: 235655
+      percent: 0.12
+    '2016':
+      count: 285
+      total: 238771
       percent: 0.12
 '55135':
   name: Waupaca County

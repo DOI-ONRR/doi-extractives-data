@@ -9,6 +9,10 @@
       count: 16
       total: 5282
       percent: 0.3
+    '2016':
+      count: 21
+      total: 5375
+      percent: 0.39
 '41003':
   name: Benton County
   employment:
@@ -44,6 +48,10 @@
       count: 24
       total: 36163
       percent: 0.07
+    '2016':
+      count: 23
+      total: 36677
+      percent: 0.06
 '41005':
   name: Clackamas County
   employment:
@@ -86,6 +94,10 @@
     '2015':
       count: 65
       total: 151173
+      percent: 0.04
+    '2016':
+      count: 68
+      total: 157769
       percent: 0.04
 '41009':
   name: Columbia County
@@ -130,6 +142,10 @@
       count: 71
       total: 10580
       percent: 0.67
+    '2016':
+      count: 78
+      total: 10915
+      percent: 0.71
 '41011':
   name: Coos County
   employment:
@@ -173,6 +189,10 @@
       count: 45
       total: 22147
       percent: 0.2
+    '2016':
+      count: 42
+      total: 22448
+      percent: 0.19
 '41013':
   name: Crook County
   employment:
@@ -266,6 +286,10 @@
       count: 98
       total: 72423
       percent: 0.14
+    '2016':
+      count: 93
+      total: 76658
+      percent: 0.12
 '41019':
   name: Douglas County
   employment:
@@ -309,6 +333,10 @@
       count: 149
       total: 36234
       percent: 0.41
+    '2016':
+      count: 147
+      total: 37362
+      percent: 0.39
 '41029':
   name: Jackson County
   employment:
@@ -351,6 +379,10 @@
     '2015':
       count: 109
       total: 82441
+      percent: 0.13
+    '2016':
+      count: 113
+      total: 85163
       percent: 0.13
 '41033':
   name: Josephine County
@@ -414,6 +446,10 @@
       count: 33
       total: 22138
       percent: 0.15
+    '2016':
+      count: 12
+      total: 22643
+      percent: 0.05
 '41039':
   name: Lane County
   employment:
@@ -457,6 +493,10 @@
       count: 258
       total: 146776
       percent: 0.18
+    '2016':
+      count: 262
+      total: 151454
+      percent: 0.17
 '41043':
   name: Linn County
   employment:
@@ -472,6 +512,10 @@
       count: 10
       total: 43518
       percent: 0.02
+    '2016':
+      count: 1
+      total: 44996
+      percent: 0
 '41047':
   name: Marion County
   employment:
@@ -514,6 +558,10 @@
     '2015':
       count: 282
       total: 145159
+      percent: 0.19
+    '2016':
+      count: 279
+      total: 149262
       percent: 0.19
 '41049':
   name: Morrow County
@@ -565,6 +613,10 @@
       count: 994
       total: 480109
       percent: 0.21
+    '2016':
+      count: 1103
+      total: 492052
+      percent: 0.22
 '41053':
   name: Polk County
   employment:
@@ -627,6 +679,10 @@
       count: 34
       total: 29548
       percent: 0.12
+    '2016':
+      count: 39
+      total: 30449
+      percent: 0.13
 '41065':
   name: Wasco County
   employment:
@@ -670,6 +726,10 @@
       count: 56
       total: 11299
       percent: 0.5
+    '2016':
+      count: 61
+      total: 11911
+      percent: 0.51
 '41067':
   name: Washington County
   employment:
@@ -713,6 +773,10 @@
       count: 245
       total: 274868
       percent: 0.09
+    '2016':
+      count: 249
+      total: 283098
+      percent: 0.09
 '41071':
   name: Yamhill County
   employment:
@@ -752,3 +816,7 @@
       count: 81
       total: 34564
       percent: 0.23
+    '2016':
+      count: 77
+      total: 34498
+      percent: 0.22

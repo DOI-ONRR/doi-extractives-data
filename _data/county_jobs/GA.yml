@@ -25,6 +25,10 @@
       count: 98
       total: 34328
       percent: 0.29
+    '2016':
+      count: 99
+      total: 35360
+      percent: 0.28
 '13021':
   name: Bibb County
   employment:
@@ -79,6 +83,10 @@
       count: 47
       total: 53283
       percent: 0.09
+    '2016':
+      count: 42
+      total: 55988
+      percent: 0.08
 '13067':
   name: Cobb County
   employment:
@@ -113,6 +121,10 @@
     '2015':
       count: 82
       total: 332786
+      percent: 0.02
+    '2016':
+      count: 84
+      total: 345583
       percent: 0.02
 '13087':
   name: Decatur County
@@ -190,6 +202,10 @@
       count: 191
       total: 5624
       percent: 3.4
+    '2016':
+      count: 197
+      total: 5711
+      percent: 3.45
 '13117':
   name: Forsyth County
   employment:
@@ -229,6 +245,10 @@
       count: 80
       total: 69173
       percent: 0.12
+    '2016':
+      count: 84
+      total: 71259
+      percent: 0.12
 '13121':
   name: Fulton County
   employment:
@@ -264,6 +284,10 @@
       count: 135
       total: 791562
       percent: 0.02
+    '2016':
+      count: 345
+      total: 823924
+      percent: 0.04
 '13133':
   name: Greene County
   employment:
@@ -283,6 +307,10 @@
       count: 14
       total: 5707
       percent: 0.25
+    '2016':
+      count: 8
+      total: 5784
+      percent: 0.14
 '13135':
   name: Gwinnett County
   employment:
@@ -360,6 +388,10 @@
       count: 91
       total: 54084
       percent: 0.17
+    '2016':
+      count: 100
+      total: 56784
+      percent: 0.18
 '13163':
   name: Jefferson County
   employment:
@@ -383,6 +415,10 @@
       count: 338
       total: 4749
       percent: 7.12
+    '2016':
+      count: 322
+      total: 4775
+      percent: 6.74
 '13187':
   name: Lumpkin County
   employment:
@@ -482,6 +518,10 @@
       count: 88
       total: 1605
       percent: 5.48
+    '2016':
+      count: 86
+      total: 1645
+      percent: 5.23
 '13227':
   name: Pickens County
   employment:
@@ -555,6 +595,10 @@
       count: 83
       total: 703
       percent: 11.81
+    '2016':
+      count: 86
+      total: 751
+      percent: 11.45
 '13275':
   name: Thomas County
   employment:
@@ -585,6 +629,10 @@
       count: 9
       total: 20381
       percent: 0.04
+    '2016':
+      count: 13
+      total: 21844
+      percent: 0.06
 '13301':
   name: Warren County
   employment:
@@ -635,6 +683,10 @@
       count: 210
       total: 6674
       percent: 3.15
+    '2016':
+      count: 203
+      total: 6647
+      percent: 3.05
 '13313':
   name: Whitfield County
   employment:
@@ -717,3 +769,7 @@
       count: 1088
       total: 3162
       percent: 34.41
+    '2016':
+      count: 1084
+      total: 3236
+      percent: 33.5

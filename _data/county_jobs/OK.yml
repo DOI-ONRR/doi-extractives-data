@@ -13,6 +13,10 @@
       count: 306
       total: 1623
       percent: 18.85
+    '2016':
+      count: 97
+      total: 1491
+      percent: 6.51
 '40005':
   name: Atoka County
   employment:
@@ -32,6 +36,10 @@
       count: 95
       total: 3233
       percent: 2.94
+    '2016':
+      count: 101
+      total: 3323
+      percent: 3.04
 '40007':
   name: Beaver County
   employment:
@@ -75,6 +83,10 @@
       count: 248
       total: 1648
       percent: 15.05
+    '2016':
+      count: 208
+      total: 1524
+      percent: 13.65
 '40009':
   name: Beckham County
   employment:
@@ -118,6 +130,10 @@
       count: 1969
       total: 10930
       percent: 18.01
+    '2016':
+      count: 1529
+      total: 9464
+      percent: 16.16
 '40011':
   name: Blaine County
   employment:
@@ -161,6 +177,10 @@
       count: 97
       total: 2998
       percent: 3.24
+    '2016':
+      count: 85
+      total: 2949
+      percent: 2.88
 '40013':
   name: Bryan County
   employment:
@@ -227,6 +247,10 @@
       count: 231
       total: 7250
       percent: 3.19
+    '2016':
+      count: 215
+      total: 7253
+      percent: 2.96
 '40017':
   name: Canadian County
   employment:
@@ -270,6 +294,10 @@
       count: 1661
       total: 31609
       percent: 5.25
+    '2016':
+      count: 1871
+      total: 31617
+      percent: 5.92
 '40019':
   name: Carter County
   employment:
@@ -313,6 +341,10 @@
       count: 1546
       total: 24228
       percent: 6.38
+    '2016':
+      count: 1275
+      total: 24010
+      percent: 5.31
 '40021':
   name: Cherokee County
   employment:
@@ -356,6 +388,10 @@
       count: 43
       total: 15886
       percent: 0.27
+    '2016':
+      count: 49
+      total: 15820
+      percent: 0.31
 '40023':
   name: Choctaw County
   employment:
@@ -406,6 +442,10 @@
       count: 628
       total: 80915
       percent: 0.78
+    '2016':
+      count: 449
+      total: 79665
+      percent: 0.56
 '40029':
   name: Coal County
   employment:
@@ -445,6 +485,10 @@
       count: 80
       total: 1153
       percent: 6.94
+    '2016':
+      count: 69
+      total: 1142
+      percent: 6.04
 '40031':
   name: Comanche County
   employment:
@@ -491,6 +535,10 @@
       count: 11
       total: 1498
       percent: 0.73
+    '2016':
+      count: 6
+      total: 1449
+      percent: 0.41
 '40037':
   name: Creek County
   employment:
@@ -530,6 +578,10 @@
       count: 553
       total: 18710
       percent: 2.96
+    '2016':
+      count: 470
+      total: 18171
+      percent: 2.59
 '40039':
   name: Custer County
   employment:
@@ -573,6 +625,10 @@
       count: 782
       total: 12721
       percent: 6.15
+    '2016':
+      count: 640
+      total: 12127
+      percent: 5.28
 '40041':
   name: Delaware County
   employment:
@@ -611,6 +667,10 @@
       count: 197
       total: 1491
       percent: 13.21
+    '2016':
+      count: 157
+      total: 1616
+      percent: 9.72
 '40045':
   name: Ellis County
   employment:
@@ -654,6 +714,10 @@
       count: 29
       total: 1275
       percent: 2.27
+    '2016':
+      count: 17
+      total: 1205
+      percent: 1.41
 '40047':
   name: Garfield County
   employment:
@@ -697,6 +761,10 @@
       count: 1844
       total: 26694
       percent: 6.91
+    '2016':
+      count: 1751
+      total: 26528
+      percent: 6.6
 '40049':
   name: Garvin County
   employment:
@@ -740,6 +808,10 @@
       count: 996
       total: 9936
       percent: 10.02
+    '2016':
+      count: 737
+      total: 9627
+      percent: 7.66
 '40051':
   name: Grady County
   employment:
@@ -783,6 +855,10 @@
       count: 656
       total: 12656
       percent: 5.18
+    '2016':
+      count: 507
+      total: 12368
+      percent: 4.1
 '40053':
   name: Grant County
   employment:
@@ -826,6 +902,10 @@
       count: 503
       total: 1752
       percent: 28.71
+    '2016':
+      count: 345
+      total: 1504
+      percent: 22.94
 '40059':
   name: Harper County
   employment:
@@ -869,6 +949,10 @@
       count: 63
       total: 1234
       percent: 5.11
+    '2016':
+      count: 52
+      total: 1166
+      percent: 4.46
 '40061':
   name: Haskell County
   employment:
@@ -912,6 +996,10 @@
       count: 199
       total: 3527
       percent: 5.64
+    '2016':
+      count: 178
+      total: 3493
+      percent: 5.1
 '40063':
   name: Hughes County
   employment:
@@ -955,6 +1043,10 @@
       count: 208
       total: 3196
       percent: 6.51
+    '2016':
+      count: 125
+      total: 3023
+      percent: 4.13
 '40065':
   name: Jackson County
   employment:
@@ -1017,6 +1109,10 @@
       count: 19
       total: 1121
       percent: 1.69
+    '2016':
+      count: 22
+      total: 1142
+      percent: 1.93
 '40069':
   name: Johnston County
   employment:
@@ -1060,6 +1156,10 @@
       count: 193
       total: 2966
       percent: 6.51
+    '2016':
+      count: 200
+      total: 3262
+      percent: 6.13
 '40071':
   name: Kay County
   employment:
@@ -1103,6 +1203,10 @@
       count: 433
       total: 18148
       percent: 2.39
+    '2016':
+      count: 289
+      total: 17603
+      percent: 1.64
 '40073':
   name: Kingfisher County
   employment:
@@ -1146,6 +1250,10 @@
       count: 1016
       total: 6059
       percent: 16.77
+    '2016':
+      count: 859
+      total: 6188
+      percent: 13.88
 '40075':
   name: Kiowa County
   employment:
@@ -1189,6 +1297,10 @@
       count: 170
       total: 2241
       percent: 7.59
+    '2016':
+      count: 170
+      total: 2172
+      percent: 7.83
 '40077':
   name: Latimer County
   employment:
@@ -1204,6 +1316,10 @@
       count: 257
       total: 3286
       percent: 7.82
+    '2016':
+      count: 182
+      total: 2884
+      percent: 6.31
 '40079':
   name: Le Flore County
   employment:
@@ -1247,6 +1363,10 @@
       count: 792
       total: 13088
       percent: 6.05
+    '2016':
+      count: 569
+      total: 12717
+      percent: 4.47
 '40083':
   name: Logan County
   employment:
@@ -1290,6 +1410,10 @@
       count: 217
       total: 7276
       percent: 2.98
+    '2016':
+      count: 194
+      total: 7302
+      percent: 2.66
 '40085':
   name: Love County
   employment:
@@ -1301,6 +1425,10 @@
       count: 30
       total: 5464
       percent: 0.55
+    '2016':
+      count: 31
+      total: 6249
+      percent: 0.5
 '40087':
   name: McClain County
   employment:
@@ -1344,6 +1472,10 @@
       count: 439
       total: 8825
       percent: 4.97
+    '2016':
+      count: 344
+      total: 8829
+      percent: 3.9
 '40089':
   name: McCurtain County
   employment:
@@ -1445,6 +1577,10 @@
       count: 525
       total: 2717
       percent: 19.32
+    '2016':
+      count: 399
+      total: 2411
+      percent: 16.55
 '40095':
   name: Marshall County
   employment:
@@ -1468,6 +1604,10 @@
       count: 19
       total: 4206
       percent: 0.45
+    '2016':
+      count: 18
+      total: 4050
+      percent: 0.44
 '40097':
   name: Mayes County
   employment:
@@ -1491,6 +1631,10 @@
       count: 363
       total: 12737
       percent: 2.85
+    '2016':
+      count: 284
+      total: 12536
+      percent: 2.27
 '40101':
   name: Muskogee County
   employment:
@@ -1534,6 +1678,10 @@
       count: 43
       total: 29936
       percent: 0.14
+    '2016':
+      count: 41
+      total: 29616
+      percent: 0.14
 '40103':
   name: Noble County
   employment:
@@ -1569,6 +1717,10 @@
       count: 28
       total: 4587
       percent: 0.61
+    '2016':
+      count: 29
+      total: 4687
+      percent: 0.62
 '40105':
   name: Nowata County
   employment:
@@ -1608,6 +1760,10 @@
       count: 46
       total: 1744
       percent: 2.64
+    '2016':
+      count: 28
+      total: 1664
+      percent: 1.68
 '40107':
   name: Okfuskee County
   employment:
@@ -1651,6 +1807,10 @@
       count: 50
       total: 2388
       percent: 2.09
+    '2016':
+      count: 37
+      total: 2375
+      percent: 1.56
 '40109':
   name: Oklahoma County
   employment:
@@ -1694,6 +1854,10 @@
       count: 15305
       total: 450460
       percent: 3.4
+    '2016':
+      count: 12302
+      total: 447442
+      percent: 2.75
 '40111':
   name: Okmulgee County
   employment:
@@ -1737,6 +1901,10 @@
       count: 66
       total: 9777
       percent: 0.68
+    '2016':
+      count: 57
+      total: 9751
+      percent: 0.58
 '40113':
   name: Osage County
   employment:
@@ -1780,6 +1948,10 @@
       count: 447
       total: 6754
       percent: 6.62
+    '2016':
+      count: 309
+      total: 6665
+      percent: 4.64
 '40115':
   name: Ottawa County
   employment:
@@ -1823,6 +1995,10 @@
       count: 43
       total: 12107
       percent: 0.36
+    '2016':
+      count: 44
+      total: 12029
+      percent: 0.37
 '40117':
   name: Pawnee County
   employment:
@@ -1877,6 +2053,10 @@
       count: 890
       total: 33538
       percent: 2.65
+    '2016':
+      count: 631
+      total: 34109
+      percent: 1.85
 '40121':
   name: Pittsburg County
   employment:
@@ -1920,6 +2100,10 @@
       count: 1085
       total: 16198
       percent: 6.7
+    '2016':
+      count: 978
+      total: 16185
+      percent: 6.04
 '40123':
   name: Pontotoc County
   employment:
@@ -1963,6 +2147,10 @@
       count: 271
       total: 18145
       percent: 1.49
+    '2016':
+      count: 225
+      total: 18190
+      percent: 1.24
 '40125':
   name: Pottawatomie County
   employment:
@@ -2006,6 +2194,10 @@
       count: 374
       total: 22922
       percent: 1.63
+    '2016':
+      count: 231
+      total: 22901
+      percent: 1.01
 '40129':
   name: Roger Mills County
   employment:
@@ -2037,6 +2229,10 @@
       count: 17
       total: 768
       percent: 2.21
+    '2016':
+      count: 55
+      total: 787
+      percent: 6.99
 '40131':
   name: Rogers County
   employment:
@@ -2080,6 +2276,10 @@
       count: 142
       total: 27927
       percent: 0.51
+    '2016':
+      count: 111
+      total: 26336
+      percent: 0.42
 '40133':
   name: Seminole County
   employment:
@@ -2099,6 +2299,10 @@
       count: 484
       total: 7299
       percent: 6.63
+    '2016':
+      count: 410
+      total: 7057
+      percent: 5.81
 '40135':
   name: Sequoyah County
   employment:
@@ -2134,6 +2338,10 @@
       count: 75
       total: 9071
       percent: 0.83
+    '2016':
+      count: 66
+      total: 8853
+      percent: 0.75
 '40137':
   name: Stephens County
   employment:
@@ -2204,6 +2412,10 @@
       count: 211
       total: 9902
       percent: 2.13
+    '2016':
+      count: 168
+      total: 9632
+      percent: 1.74
 '40141':
   name: Tillman County
   employment:
@@ -2239,6 +2451,10 @@
       count: 13
       total: 1957
       percent: 0.66
+    '2016':
+      count: 12
+      total: 1898
+      percent: 0.63
 '40143':
   name: Tulsa County
   employment:
@@ -2282,6 +2498,10 @@
       count: 5560
       total: 349408
       percent: 1.59
+    '2016':
+      count: 4645
+      total: 349401
+      percent: 1.33
 '40145':
   name: Wagoner County
   employment:
@@ -2325,6 +2545,10 @@
       count: 30
       total: 9014
       percent: 0.33
+    '2016':
+      count: 23
+      total: 8802
+      percent: 0.26
 '40147':
   name: Washington County
   employment:
@@ -2368,6 +2592,10 @@
       count: 4330
       total: 21204
       percent: 20.42
+    '2016':
+      count: 3884
+      total: 20309
+      percent: 19.12
 '40149':
   name: Washita County
   employment:
@@ -2411,6 +2639,10 @@
       count: 191
       total: 2042
       percent: 9.35
+    '2016':
+      count: 130
+      total: 1887
+      percent: 6.89
 '40151':
   name: Woods County
   employment:
@@ -2454,6 +2686,10 @@
       count: 734
       total: 3987
       percent: 18.41
+    '2016':
+      count: 589
+      total: 3809
+      percent: 15.46
 '40153':
   name: Woodward County
   employment:
@@ -2497,3 +2733,7 @@
       count: 1762
       total: 9679
       percent: 18.2
+    '2016':
+      count: 1335
+      total: 8664
+      percent: 15.41

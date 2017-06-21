@@ -41,6 +41,10 @@
       count: 99
       total: 318952
       percent: 0.03
+    '2016':
+      count: 115
+      total: 324515
+      percent: 0.04
 '35003':
   name: Catron County
   employment:
@@ -99,6 +103,10 @@
       count: 547
       total: 21628
       percent: 2.53
+    '2016':
+      count: 416
+      total: 21665
+      percent: 1.92
 '35007':
   name: Colfax County
   employment:
@@ -130,6 +138,10 @@
       count: 55
       total: 5017
       percent: 1.1
+    '2016':
+      count: 52
+      total: 4806
+      percent: 1.08
 '35009':
   name: Curry County
   employment:
@@ -180,6 +192,10 @@
       count: 17
       total: 70746
       percent: 0.02
+    '2016':
+      count: 25
+      total: 71671
+      percent: 0.03
 '35015':
   name: Eddy County
   employment:
@@ -223,6 +239,10 @@
       count: 7088
       total: 28351
       percent: 25
+    '2016':
+      count: 5562
+      total: 26471
+      percent: 21.01
 '35017':
   name: Grant County
   employment:
@@ -297,6 +317,10 @@
       count: 7770
       total: 31441
       percent: 24.71
+    '2016':
+      count: 5401
+      total: 27576
+      percent: 19.59
 '35027':
   name: Lincoln County
   employment:
@@ -339,6 +363,10 @@
       count: 17
       total: 7823
       percent: 0.22
+    '2016':
+      count: 21
+      total: 7908
+      percent: 0.27
 '35031':
   name: Mckinley County
   employment:
@@ -401,6 +429,10 @@
       count: 68
       total: 17550
       percent: 0.39
+    '2016':
+      count: 61
+      total: 17788
+      percent: 0.34
 '35039':
   name: Rio Arriba County
   employment:
@@ -444,6 +476,10 @@
       count: 26
       total: 9786
       percent: 0.27
+    '2016':
+      count: 21
+      total: 9805
+      percent: 0.21
 '35041':
   name: Roosevelt County
   employment:
@@ -498,6 +534,10 @@
       count: 103
       total: 29159
       percent: 0.35
+    '2016':
+      count: 102
+      total: 29215
+      percent: 0.35
 '35045':
   name: San Juan County
   employment:
@@ -541,6 +581,10 @@
       count: 6048
       total: 50108
       percent: 12.07
+    '2016':
+      count: 5065
+      total: 47810
+      percent: 10.59
 '35047':
   name: San Miguel County
   employment:
@@ -568,6 +612,10 @@
       count: 8
       total: 8315
       percent: 0.1
+    '2016':
+      count: 18
+      total: 8203
+      percent: 0.22
 '35049':
   name: Santa Fe County
   employment:
@@ -611,6 +659,10 @@
       count: 146
       total: 61229
       percent: 0.24
+    '2016':
+      count: 141
+      total: 60987
+      percent: 0.23
 '35051':
   name: Sierra County
   employment:
@@ -661,6 +713,10 @@
       count: 55
       total: 10447
       percent: 0.53
+    '2016':
+      count: 50
+      total: 10547
+      percent: 0.47
 '35059':
   name: Union County
   employment:
@@ -668,6 +724,10 @@
       count: 14
       total: 1343
       percent: 1.04
+    '2016':
+      count: 18
+      total: 1384
+      percent: 1.3
 '35061':
   name: Valencia County
   employment:
@@ -707,3 +767,7 @@
       count: 33
       total: 13437
       percent: 0.25
+    '2016':
+      count: 28
+      total: 13618
+      percent: 0.21

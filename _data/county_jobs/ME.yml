@@ -1,3 +1,10 @@
+'23001':
+  name: Androscoggin County
+  employment:
+    '2016':
+      count: 25
+      total: 49306
+      percent: 0.05
 '23005':
   name: Cumberland County
   employment:
@@ -94,6 +101,10 @@
       count: 11
       total: 16710
       percent: 0.07
+    '2016':
+      count: 10
+      total: 16674
+      percent: 0.06
 '23019':
   name: Penobscot County
   employment:
@@ -166,4 +177,8 @@
     '2015':
       count: 76
       total: 68905
+      percent: 0.11
+    '2016':
+      count: 77
+      total: 70570
       percent: 0.11

@@ -75,6 +75,10 @@
       count: 29
       total: 18349
       percent: 0.16
+    '2016':
+      count: 23
+      total: 18371
+      percent: 0.13
 '39007':
   name: Ashtabula County
   employment:
@@ -118,6 +122,10 @@
       count: 71
       total: 30161
       percent: 0.24
+    '2016':
+      count: 43
+      total: 30138
+      percent: 0.14
 '39013':
   name: Belmont County
   employment:
@@ -161,6 +169,10 @@
       count: 2030
       total: 23615
       percent: 8.6
+    '2016':
+      count: 1516
+      total: 23065
+      percent: 6.57
 '39017':
   name: Butler County
   employment:
@@ -204,6 +216,10 @@
       count: 121
       total: 145219
       percent: 0.08
+    '2016':
+      count: 126
+      total: 150456
+      percent: 0.08
 '39019':
   name: Carroll County
   employment:
@@ -235,6 +251,10 @@
       count: 166
       total: 6823
       percent: 2.43
+    '2016':
+      count: 96
+      total: 6652
+      percent: 1.44
 '39023':
   name: Clark County
   employment:
@@ -278,6 +298,10 @@
       count: 77
       total: 48609
       percent: 0.16
+    '2016':
+      count: 101
+      total: 47912
+      percent: 0.21
 '39025':
   name: Clermont County
   employment:
@@ -339,6 +363,10 @@
       count: 272
       total: 30659
       percent: 0.89
+    '2016':
+      count: 206
+      total: 29625
+      percent: 0.7
 '39031':
   name: Coshocton County
   employment:
@@ -382,6 +410,10 @@
       count: 100
       total: 10998
       percent: 0.91
+    '2016':
+      count: 73
+      total: 10285
+      percent: 0.71
 '39035':
   name: Cuyahoga County
   employment:
@@ -425,6 +457,10 @@
       count: 322
       total: 714116
       percent: 0.05
+    '2016':
+      count: 323
+      total: 719430
+      percent: 0.04
 '39041':
   name: Delaware County
   employment:
@@ -487,6 +523,10 @@
       count: 94
       total: 42154
       percent: 0.22
+    '2016':
+      count: 36
+      total: 42577
+      percent: 0.08
 '39049':
   name: Franklin County
   employment:
@@ -530,6 +570,10 @@
       count: 306
       total: 721581
       percent: 0.04
+    '2016':
+      count: 298
+      total: 738678
+      percent: 0.04
 '39053':
   name: Gallia County
   employment:
@@ -571,6 +615,10 @@
       count: 600
       total: 15340
       percent: 3.91
+    '2016':
+      count: 392
+      total: 15096
+      percent: 2.6
 '39061':
   name: Hamilton County
   employment:
@@ -613,6 +661,10 @@
     '2015':
       count: 158
       total: 505396
+      percent: 0.03
+    '2016':
+      count: 159
+      total: 509087
       percent: 0.03
 '39067':
   name: Harrison County
@@ -700,6 +752,10 @@
       count: 37
       total: 10240
       percent: 0.36
+    '2016':
+      count: 32
+      total: 10259
+      percent: 0.31
 '39073':
   name: Hocking County
   employment:
@@ -774,6 +830,10 @@
       count: 79
       total: 19152
       percent: 0.41
+    '2016':
+      count: 79
+      total: 19508
+      percent: 0.4
 '39079':
   name: Jackson County
   employment:
@@ -817,6 +877,17 @@
       count: 72
       total: 10323
       percent: 0.7
+    '2016':
+      count: 54
+      total: 10101
+      percent: 0.53
+'39081':
+  name: Jefferson County
+  employment:
+    '2016':
+      count: 56
+      total: 20556
+      percent: 0.27
 '39083':
   name: Knox County
   employment:
@@ -860,6 +931,10 @@
       count: 78
       total: 20424
       percent: 0.38
+    '2016':
+      count: 79
+      total: 20301
+      percent: 0.39
 '39085':
   name: Lake County
   employment:
@@ -903,6 +978,10 @@
       count: 241
       total: 94774
       percent: 0.25
+    '2016':
+      count: 208
+      total: 94642
+      percent: 0.22
 '39089':
   name: Licking County
   employment:
@@ -946,6 +1025,10 @@
       count: 111
       total: 53101
       percent: 0.21
+    '2016':
+      count: 92
+      total: 53466
+      percent: 0.17
 '39091':
   name: Logan County
   employment:
@@ -989,6 +1072,10 @@
       count: 34
       total: 19292
       percent: 0.18
+    '2016':
+      count: 35
+      total: 19748
+      percent: 0.18
 '39093':
   name: Lorain County
   employment:
@@ -1024,6 +1111,10 @@
       count: 27
       total: 96774
       percent: 0.03
+    '2016':
+      count: 19
+      total: 97165
+      percent: 0.02
 '39095':
   name: Lucas County
   employment:
@@ -1063,6 +1154,10 @@
       count: 109
       total: 207836
       percent: 0.05
+    '2016':
+      count: 111
+      total: 209885
+      percent: 0.05
 '39101':
   name: Marion County
   employment:
@@ -1070,6 +1165,10 @@
       count: 14
       total: 24022
       percent: 0.06
+    '2016':
+      count: 9
+      total: 24169
+      percent: 0.04
 '39103':
   name: Medina County
   employment:
@@ -1109,6 +1208,10 @@
       count: 14
       total: 58962
       percent: 0.02
+    '2016':
+      count: 15
+      total: 59980
+      percent: 0.03
 '39105':
   name: Meigs County
   employment:
@@ -1152,6 +1255,10 @@
       count: 86
       total: 3557
       percent: 2.42
+    '2016':
+      count: 59
+      total: 3481
+      percent: 1.69
 '39109':
   name: Miami County
   employment:
@@ -1233,6 +1340,10 @@
       count: 32
       total: 249350
       percent: 0.01
+    '2016':
+      count: 31
+      total: 252718
+      percent: 0.01
 '39115':
   name: Morgan County
   employment:
@@ -1279,6 +1390,10 @@
       count: 13
       total: 5487
       percent: 0.24
+    '2016':
+      count: 13
+      total: 5706
+      percent: 0.23
 '39119':
   name: Muskingum County
   employment:
@@ -1322,6 +1437,10 @@
       count: 542
       total: 32130
       percent: 1.69
+    '2016':
+      count: 361
+      total: 33456
+      percent: 1.08
 '39121':
   name: Noble County
   employment:
@@ -1333,6 +1452,10 @@
       count: 243
       total: 3161
       percent: 7.69
+    '2016':
+      count: 195
+      total: 3077
+      percent: 6.34
 '39123':
   name: Ottawa County
   employment:
@@ -1367,6 +1490,10 @@
       count: 14
       total: 4832
       percent: 0.29
+    '2016':
+      count: 17
+      total: 4894
+      percent: 0.35
 '39127':
   name: Perry County
   employment:
@@ -1406,6 +1533,10 @@
       count: 154
       total: 5548
       percent: 2.78
+    '2016':
+      count: 133
+      total: 5703
+      percent: 2.33
 '39133':
   name: Portage County
   employment:
@@ -1449,6 +1580,10 @@
       count: 335
       total: 54328
       percent: 0.62
+    '2016':
+      count: 303
+      total: 54490
+      percent: 0.56
 '39135':
   name: Preble County
   employment:
@@ -1550,6 +1685,10 @@
       count: 27
       total: 27742
       percent: 0.1
+    '2016':
+      count: 28
+      total: 27776
+      percent: 0.1
 '39143':
   name: Sandusky County
   employment:
@@ -1588,6 +1727,10 @@
       count: 4
       total: 23233
       percent: 0.02
+    '2016':
+      count: 7
+      total: 23806
+      percent: 0.03
 '39147':
   name: Seneca County
   employment:
@@ -1631,6 +1774,10 @@
       count: 136
       total: 19025
       percent: 0.71
+    '2016':
+      count: 141
+      total: 19254
+      percent: 0.73
 '39151':
   name: Stark County
   employment:
@@ -1674,6 +1821,10 @@
       count: 845
       total: 158017
       percent: 0.53
+    '2016':
+      count: 408
+      total: 158180
+      percent: 0.26
 '39153':
   name: Summit County
   employment:
@@ -1716,6 +1867,10 @@
     '2015':
       count: 78
       total: 264051
+      percent: 0.03
+    '2016':
+      count: 79
+      total: 266332
       percent: 0.03
 '39155':
   name: Trumbull County
@@ -1760,6 +1915,10 @@
       count: 121
       total: 69800
       percent: 0.17
+    '2016':
+      count: 98
+      total: 69187
+      percent: 0.14
 '39157':
   name: Tuscarawas County
   employment:
@@ -1803,6 +1962,17 @@
       count: 1155
       total: 36608
       percent: 3.16
+    '2016':
+      count: 987
+      total: 36325
+      percent: 2.72
+'39159':
+  name: Union County
+  employment:
+    '2016':
+      count: 95
+      total: 31499
+      percent: 0.3
 '39165':
   name: Warren County
   employment:
@@ -1846,6 +2016,10 @@
       count: 21
       total: 87537
       percent: 0.02
+    '2016':
+      count: 36
+      total: 90950
+      percent: 0.04
 '39167':
   name: Washington County
   employment:
@@ -1889,6 +2063,10 @@
       count: 480
       total: 25154
       percent: 1.91
+    '2016':
+      count: 385
+      total: 25031
+      percent: 1.54
 '39169':
   name: Wayne County
   employment:
@@ -1932,6 +2110,10 @@
       count: 609
       total: 45900
       percent: 1.33
+    '2016':
+      count: 678
+      total: 47371
+      percent: 1.43
 '39171':
   name: Williams County
   employment:
@@ -2002,6 +2184,10 @@
       count: 47
       total: 63202
       percent: 0.07
+    '2016':
+      count: 52
+      total: 65647
+      percent: 0.08
 '39175':
   name: Wyandot County
   employment:
@@ -2045,3 +2231,7 @@
       count: 140
       total: 8916
       percent: 1.57
+    '2016':
+      count: 145
+      total: 9274
+      percent: 1.56

@@ -41,6 +41,10 @@
       count: 345
       total: 10695
       percent: 3.23
+    '2016':
+      count: 246
+      total: 10444
+      percent: 2.36
 '28005':
   name: Amite County
   employment:
@@ -83,6 +87,10 @@
       count: 10
       total: 4479
       percent: 0.22
+    '2016':
+      count: 7
+      total: 4563
+      percent: 0.15
 '28023':
   name: Clarke County
   employment:
@@ -126,6 +134,10 @@
       count: 160
       total: 2965
       percent: 5.4
+    '2016':
+      count: 141
+      total: 2929
+      percent: 4.81
 '28029':
   name: Copiah County
   employment:
@@ -169,6 +181,10 @@
       count: 71
       total: 7031
       percent: 1.01
+    '2016':
+      count: 78
+      total: 7212
+      percent: 1.08
 '28031':
   name: Covington County
   employment:
@@ -204,6 +220,10 @@
       count: 6
       total: 5113
       percent: 0.12
+    '2016':
+      count: 3
+      total: 5277
+      percent: 0.06
 '28033':
   name: DeSoto County
   employment:
@@ -247,6 +267,10 @@
       count: 32
       total: 54053
       percent: 0.06
+    '2016':
+      count: 30
+      total: 58395
+      percent: 0.05
 '28035':
   name: Forrest County
   employment:
@@ -290,6 +314,10 @@
       count: 101
       total: 38150
       percent: 0.26
+    '2016':
+      count: 40
+      total: 38910
+      percent: 0.1
 '28041':
   name: Greene County
   employment:
@@ -333,6 +361,10 @@
       count: 7
       total: 1960
       percent: 0.36
+    '2016':
+      count: 3
+      total: 1919
+      percent: 0.16
 '28045':
   name: Hancock County
   employment:
@@ -360,6 +392,10 @@
       count: 94
       total: 13142
       percent: 0.72
+    '2016':
+      count: 10
+      total: 13046
+      percent: 0.08
 '28049':
   name: Hinds County
   employment:
@@ -403,6 +439,10 @@
       count: 175
       total: 120435
       percent: 0.15
+    '2016':
+      count: 169
+      total: 120999
+      percent: 0.14
 '28059':
   name: Jackson County
   employment:
@@ -446,6 +486,10 @@
       count: 50
       total: 49442
       percent: 0.1
+    '2016':
+      count: 38
+      total: 49522
+      percent: 0.08
 '28061':
   name: Jasper County
   employment:
@@ -489,6 +533,10 @@
       count: 77
       total: 3850
       percent: 2
+    '2016':
+      count: 72
+      total: 3813
+      percent: 1.89
 '28065':
   name: Jefferson Davis County
   employment:
@@ -555,6 +603,10 @@
       count: 1394
       total: 28263
       percent: 4.93
+    '2016':
+      count: 944
+      total: 27196
+      percent: 3.47
 '28073':
   name: Lamar County
   employment:
@@ -598,6 +650,17 @@
       count: 61
       total: 18473
       percent: 0.33
+    '2016':
+      count: 32
+      total: 18921
+      percent: 0.17
+'28075':
+  name: Lauderdale County
+  employment:
+    '2016':
+      count: 7
+      total: 33596
+      percent: 0.02
 '28077':
   name: Lawrence County
   employment:
@@ -656,6 +719,10 @@
       count: 9
       total: 5027
       percent: 0.18
+    '2016':
+      count: 4
+      total: 4832
+      percent: 0.08
 '28085':
   name: Lincoln County
   employment:
@@ -699,6 +766,10 @@
       count: 73
       total: 11654
       percent: 0.63
+    '2016':
+      count: 48
+      total: 11848
+      percent: 0.41
 '28087':
   name: Lowndes County
   employment:
@@ -742,6 +813,10 @@
       count: 40
       total: 24612
       percent: 0.16
+    '2016':
+      count: 14
+      total: 25169
+      percent: 0.06
 '28089':
   name: Madison County
   employment:
@@ -785,6 +860,10 @@
       count: 161
       total: 52401
       percent: 0.31
+    '2016':
+      count: 155
+      total: 54868
+      percent: 0.28
 '28091':
   name: Marion County
   employment:
@@ -828,6 +907,10 @@
       count: 228
       total: 7718
       percent: 2.95
+    '2016':
+      count: 170
+      total: 8020
+      percent: 2.12
 '28095':
   name: Monroe County
   employment:
@@ -871,6 +954,10 @@
       count: 51
       total: 9696
       percent: 0.53
+    '2016':
+      count: 37
+      total: 9802
+      percent: 0.38
 '28101':
   name: Newton County
   employment:
@@ -921,6 +1008,10 @@
       count: 19
       total: 10825
       percent: 0.18
+    '2016':
+      count: 21
+      total: 10608
+      percent: 0.2
 '28109':
   name: Pearl River County
   employment:
@@ -967,6 +1058,10 @@
       count: 14
       total: 2045
       percent: 0.68
+    '2016':
+      count: 13
+      total: 2069
+      percent: 0.63
 '28113':
   name: Pike County
   employment:
@@ -1010,6 +1105,17 @@
       count: 42
       total: 14789
       percent: 0.28
+    '2016':
+      count: 32
+      total: 14776
+      percent: 0.22
+'28119':
+  name: Quitman County
+  employment:
+    '2016':
+      count: 24
+      total: 1089
+      percent: 2.2
 '28121':
   name: Rankin County
   employment:
@@ -1084,6 +1190,10 @@
       count: 9
       total: 6900
       percent: 0.13
+    '2016':
+      count: 10
+      total: 6860
+      percent: 0.15
 '28129':
   name: Smith County
   employment:
@@ -1180,6 +1290,10 @@
       count: 10
       total: 20403
       percent: 0.05
+    '2016':
+      count: 32
+      total: 20200
+      percent: 0.16
 '28153':
   name: Wayne County
   employment:
@@ -1223,3 +1337,7 @@
       count: 119
       total: 4866
       percent: 2.45
+    '2016':
+      count: 70
+      total: 4880
+      percent: 1.43

@@ -64,6 +64,10 @@
       count: 66
       total: 61745
       percent: 0.11
+    '2016':
+      count: 68
+      total: 61566
+      percent: 0.11
 '25005':
   name: Bristol County
   employment:
@@ -107,6 +111,10 @@
       count: 15
       total: 219764
       percent: 0.01
+    '2016':
+      count: 18
+      total: 223333
+      percent: 0.01
 '25009':
   name: Essex County
   employment:
@@ -141,6 +149,10 @@
     '2013':
       count: 46
       total: 309382
+      percent: 0.01
+    '2016':
+      count: 42
+      total: 322408
       percent: 0.01
 '25013':
   name: Hampden County
@@ -185,6 +197,10 @@
       count: 80
       total: 203057
       percent: 0.04
+    '2016':
+      count: 78
+      total: 206994
+      percent: 0.04
 '25015':
   name: Hampshire County
   employment:
@@ -227,6 +243,10 @@
     '2015':
       count: 38
       total: 63100
+      percent: 0.06
+    '2016':
+      count: 37
+      total: 63970
       percent: 0.06
 '25017':
   name: Middlesex County
@@ -271,6 +291,10 @@
       count: 215
       total: 873601
       percent: 0.02
+    '2016':
+      count: 233
+      total: 886724
+      percent: 0.03
 '25021':
   name: Norfolk County
   employment:
@@ -313,6 +337,10 @@
     '2015':
       count: 81
       total: 342427
+      percent: 0.02
+    '2016':
+      count: 83
+      total: 349527
       percent: 0.02
 '25023':
   name: Plymouth County
@@ -357,6 +385,10 @@
       count: 82
       total: 186273
       percent: 0.04
+    '2016':
+      count: 80
+      total: 189003
+      percent: 0.04
 '25027':
   name: Worcester County
   employment:
@@ -399,4 +431,8 @@
     '2015':
       count: 251
       total: 334303
+      percent: 0.08
+    '2016':
+      count: 258
+      total: 339960
       percent: 0.08

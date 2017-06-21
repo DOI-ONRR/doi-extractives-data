@@ -39,6 +39,10 @@ Extractives:
     count: 776368
     total: 139491699
     percent: 0.56
+  '2016':
+    count: 640126
+    total: 141866449
+    percent: 0.45
 Mining:
   '2006':
     count: 616598
@@ -80,6 +84,10 @@ Mining:
     count: 751911
     total: 139491699
     percent: 0.54
+  '2016':
+    count: 613356
+    total: 141866449
+    percent: 0.43
 Oil and gas:
   '2006':
     count: 385803
@@ -121,6 +129,10 @@ Oil and gas:
     count: 540943
     total: 139491699
     percent: 0.39
+  '2016':
+    count: 422694
+    total: 141866449
+    percent: 0.3
 Mining support:
   '2006':
     count: 262498
@@ -162,6 +174,10 @@ Mining support:
     count: 361804
     total: 139491699
     percent: 0.26
+  '2016':
+    count: 258615
+    total: 141866449
+    percent: 0.18
 Support Activities for Oil and Gas Operations:
   '2006':
     count: 171127
@@ -203,6 +219,10 @@ Support Activities for Oil and Gas Operations:
     count: 278444
     total: 139491699
     percent: 0.2
+  '2016':
+    count: 202272
+    total: 141866449
+    percent: 0.14
 Oil and gas (only):
   '2006':
     count: 134858
@@ -244,6 +264,10 @@ Oil and gas (only):
     count: 192537
     total: 139491699
     percent: 0.14
+  '2016':
+    count: 174961
+    total: 141866449
+    percent: 0.12
 Nonenergy minerals:
   '2006':
     count: 145513
@@ -284,6 +308,10 @@ Nonenergy minerals:
   '2015':
     count: 139563
     total: 139491699
+    percent: 0.1
+  '2016':
+    count: 135871
+    total: 141866449
     percent: 0.1
 Nonmetallic minerals:
   '2006':
@@ -326,6 +354,10 @@ Nonmetallic minerals:
     count: 91295
     total: 139491699
     percent: 0.07
+  '2016':
+    count: 91151
+    total: 141866449
+    percent: 0.06
 Drilling Oil and Gas Wells:
   '2006':
     count: 79818
@@ -367,6 +399,10 @@ Drilling Oil and Gas Wells:
     count: 69944
     total: 139491699
     percent: 0.05
+  '2016':
+    count: 45446
+    total: 141866449
+    percent: 0.03
 Coal:
   '2006':
     count: 85731
@@ -408,6 +444,10 @@ Coal:
     count: 71425
     total: 139491699
     percent: 0.05
+  '2016':
+    count: 54805
+    total: 141866449
+    percent: 0.04
 Coal (only):
   '2006':
     count: 78648
@@ -449,6 +489,10 @@ Coal (only):
     count: 64135
     total: 139491699
     percent: 0.05
+  '2016':
+    count: 49648
+    total: 141866449
+    percent: 0.03
 Renewables:
   '2006':
     count: 55568
@@ -489,6 +533,10 @@ Renewables:
   '2015':
     count: 24227
     total: 139491699
+    percent: 0.02
+  '2016':
+    count: 26527
+    total: 141866449
     percent: 0.02
 Hardrock minerals:
   '2006':
@@ -531,6 +579,10 @@ Hardrock minerals:
     count: 42141
     total: 139491699
     percent: 0.03
+  '2016':
+    count: 38980
+    total: 141866449
+    percent: 0.03
 Hydroelectric:
   '2006':
     count: 39432
@@ -571,6 +623,10 @@ Hydroelectric:
   '2015':
     count: 5483
     total: 139491699
+    percent: 0
+  '2016':
+    count: 6489
+    total: 141866449
     percent: 0
 Support Activities for Coal Mining:
   '2006':
@@ -613,6 +669,10 @@ Support Activities for Coal Mining:
     count: 7290
     total: 139491699
     percent: 0.01
+  '2016':
+    count: 5157
+    total: 141866449
+    percent: 0
 Support Activities for Metal Mining:
   '2006':
     count: 2582
@@ -654,6 +714,10 @@ Support Activities for Metal Mining:
     count: 3516
     total: 139491699
     percent: 0
+  '2016':
+    count: 3126
+    total: 141866449
+    percent: 0
 Wind:
   '2011':
     count: 2972
@@ -674,6 +738,10 @@ Wind:
   '2015':
     count: 4245
     total: 139491699
+    percent: 0
+  '2016':
+    count: 4878
+    total: 141866449
     percent: 0
 Support Activities for Nonmetallic Minerals (except Fuels) Mining:
   '2006':
@@ -716,6 +784,10 @@ Support Activities for Nonmetallic Minerals (except Fuels) Mining:
     count: 2611
     total: 139491699
     percent: 0
+  '2016':
+    count: 2614
+    total: 141866449
+    percent: 0
 Solar:
   '2011':
     count: 533
@@ -737,6 +809,10 @@ Solar:
     count: 2067
     total: 139491699
     percent: 0
+  '2016':
+    count: 2766
+    total: 141866449
+    percent: 0
 Geothermal:
   '2011':
     count: 1049
@@ -757,4 +833,8 @@ Geothermal:
   '2015':
     count: 1093
     total: 139491699
+    percent: 0
+  '2016':
+    count: 1127
+    total: 141866449
     percent: 0

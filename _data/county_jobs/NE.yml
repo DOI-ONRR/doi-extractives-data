@@ -41,6 +41,10 @@
       count: 43
       total: 26839
       percent: 0.16
+    '2016':
+      count: 44
+      total: 27074
+      percent: 0.16
 '31025':
   name: Cass County
   employment:
@@ -189,6 +193,10 @@
       count: 10
       total: 16964
       percent: 0.06
+    '2016':
+      count: 9
+      total: 17102
+      percent: 0.05
 '31055':
   name: Douglas County
   employment:
@@ -246,6 +254,10 @@
     '2015':
       count: 20
       total: 34560
+      percent: 0.06
+    '2016':
+      count: 21
+      total: 34737
       percent: 0.06
 '31087':
   name: Hitchcock County
@@ -333,6 +345,10 @@
       count: 18
       total: 4581
       percent: 0.39
+    '2016':
+      count: 19
+      total: 4594
+      percent: 0.41
 '31093':
   name: Howard County
   employment:
@@ -434,6 +450,10 @@
       count: 56
       total: 1432
       percent: 3.91
+    '2016':
+      count: 42
+      total: 1352
+      percent: 3.11
 '31109':
   name: Lancaster County
   employment:
@@ -456,6 +476,10 @@
       count: 14
       total: 2042
       percent: 0.69
+    '2016':
+      count: 17
+      total: 2012
+      percent: 0.84
 '31145':
   name: Red Willow County
   employment:
@@ -499,6 +523,10 @@
       count: 47
       total: 5242
       percent: 0.9
+    '2016':
+      count: 37
+      total: 5177
+      percent: 0.71
 '31147':
   name: Richardson County
   employment:
@@ -557,6 +585,10 @@
       count: 19
       total: 67853
       percent: 0.03
+    '2016':
+      count: 19
+      total: 69088
+      percent: 0.03
 '31155':
   name: Saunders County
   employment:
@@ -582,6 +614,10 @@
     '2012':
       count: 8
       total: 17013
+      percent: 0.05
+    '2016':
+      count: 8
+      total: 17208
       percent: 0.05
 '31177':
   name: Washington County

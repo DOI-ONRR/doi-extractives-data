@@ -41,6 +41,10 @@
       count: 95
       total: 181796
       percent: 0.05
+    '2016':
+      count: 101
+      total: 183107
+      percent: 0.06
 '18005':
   name: Bartholomew County
   employment:
@@ -111,6 +115,10 @@
       count: 82
       total: 52834
       percent: 0.16
+    '2016':
+      count: 94
+      total: 54314
+      percent: 0.17
 '18021':
   name: Clay County
   employment:
@@ -184,6 +192,10 @@
       count: 55
       total: 21208
       percent: 0.26
+    '2016':
+      count: 56
+      total: 21517
+      percent: 0.26
 '18035':
   name: Delaware County
   employment:
@@ -255,6 +267,10 @@
       count: 16
       total: 4611
       percent: 0.35
+    '2016':
+      count: 17
+      total: 4470
+      percent: 0.38
 '18051':
   name: Gibson County
   employment:
@@ -298,6 +314,10 @@
       count: 1287
       total: 20023
       percent: 6.43
+    '2016':
+      count: 975
+      total: 20351
+      percent: 4.79
 '18053':
   name: Grant County
   employment:
@@ -344,6 +364,10 @@
       count: 51
       total: 6449
       percent: 0.79
+    '2016':
+      count: 38
+      total: 6298
+      percent: 0.6
 '18057':
   name: Hamilton County
   employment:
@@ -387,6 +411,10 @@
       count: 190
       total: 132509
       percent: 0.14
+    '2016':
+      count: 210
+      total: 136890
+      percent: 0.15
 '18061':
   name: Harrison County
   employment:
@@ -430,6 +458,10 @@
       count: 104
       total: 10072
       percent: 1.03
+    '2016':
+      count: 108
+      total: 10208
+      percent: 1.06
 '18071':
   name: Jackson County
   employment:
@@ -491,6 +523,10 @@
       count: 960
       total: 17612
       percent: 5.45
+    '2016':
+      count: 889
+      total: 17520
+      percent: 5.07
 '18085':
   name: Kosciusko County
   employment:
@@ -552,6 +588,10 @@
     '2015':
       count: 86
       total: 185844
+      percent: 0.05
+    '2016':
+      count: 86
+      total: 186855
       percent: 0.05
 '18091':
   name: LaPorte County
@@ -623,12 +663,20 @@
       count: 191
       total: 12828
       percent: 1.49
+    '2016':
+      count: 208
+      total: 13096
+      percent: 1.59
 '18095':
   name: Madison County
   employment:
     '2015':
       count: 31
       total: 38540
+      percent: 0.08
+    '2016':
+      count: 32
+      total: 39233
       percent: 0.08
 '18097':
   name: Marion County
@@ -673,6 +721,10 @@
       count: 159
       total: 582830
       percent: 0.03
+    '2016':
+      count: 173
+      total: 591257
+      percent: 0.03
 '18103':
   name: Miami County
   employment:
@@ -716,6 +768,10 @@
       count: 47
       total: 9327
       percent: 0.5
+    '2016':
+      count: 52
+      total: 9473
+      percent: 0.55
 '18105':
   name: Monroe County
   employment:
@@ -759,6 +815,10 @@
       count: 205
       total: 61791
       percent: 0.33
+    '2016':
+      count: 220
+      total: 61957
+      percent: 0.36
 '18107':
   name: Montgomery County
   employment:
@@ -809,6 +869,10 @@
       count: 50
       total: 15154
       percent: 0.33
+    '2016':
+      count: 56
+      total: 16122
+      percent: 0.35
 '18113':
   name: Noble County
   employment:
@@ -850,6 +914,10 @@
       count: 18
       total: 6479
       percent: 0.28
+    '2016':
+      count: 19
+      total: 6570
+      percent: 0.29
 '18125':
   name: Pike County
   employment:
@@ -877,6 +945,10 @@
       count: 132
       total: 2944
       percent: 4.48
+    '2016':
+      count: 125
+      total: 2969
+      percent: 4.21
 '18127':
   name: Porter County
   employment:
@@ -888,6 +960,10 @@
       count: 20
       total: 53854
       percent: 0.04
+    '2016':
+      count: 28
+      total: 59304
+      percent: 0.05
 '18129':
   name: Posey County
   employment:
@@ -931,6 +1007,10 @@
       count: 34
       total: 8182
       percent: 0.42
+    '2016':
+      count: 23
+      total: 8328
+      percent: 0.28
 '18133':
   name: Putnam County
   employment:
@@ -974,6 +1054,10 @@
       count: 66
       total: 12583
       percent: 0.52
+    '2016':
+      count: 77
+      total: 13276
+      percent: 0.58
 '18137':
   name: Ripley County
   employment:
@@ -1005,6 +1089,10 @@
       count: 30
       total: 11798
       percent: 0.25
+    '2016':
+      count: 30
+      total: 12246
+      percent: 0.24
 '18141':
   name: St. Joseph County
   employment:
@@ -1048,6 +1136,10 @@
       count: 8
       total: 120075
       percent: 0.01
+    '2016':
+      count: 5
+      total: 122581
+      percent: 0
 '18143':
   name: Scott County
   employment:
@@ -1098,6 +1190,10 @@
       count: 66
       total: 17911
       percent: 0.37
+    '2016':
+      count: 68
+      total: 18121
+      percent: 0.38
 '18147':
   name: Spencer County
   employment:
@@ -1117,6 +1213,10 @@
       count: 8
       total: 6994
       percent: 0.11
+    '2016':
+      count: 7
+      total: 6828
+      percent: 0.1
 '18151':
   name: Steuben County
   employment:
@@ -1160,6 +1260,10 @@
       count: 8
       total: 15674
       percent: 0.05
+    '2016':
+      count: 12
+      total: 15639
+      percent: 0.08
 '18153':
   name: Sullivan County
   employment:
@@ -1226,6 +1330,10 @@
       count: 129
       total: 106446
       percent: 0.12
+    '2016':
+      count: 94
+      total: 106940
+      percent: 0.09
 '18167':
   name: Vigo County
   employment:
@@ -1269,6 +1377,10 @@
       count: 80
       total: 48480
       percent: 0.17
+    '2016':
+      count: 54
+      total: 48650
+      percent: 0.11
 '18169':
   name: Wabash County
   employment:
@@ -1331,6 +1443,10 @@
       count: 360
       total: 15711
       percent: 2.29
+    '2016':
+      count: 275
+      total: 15735
+      percent: 1.75
 '18177':
   name: Wayne County
   employment:
@@ -1373,6 +1489,10 @@
     '2015':
       count: 22
       total: 29751
+      percent: 0.07
+    '2016':
+      count: 22
+      total: 29946
       percent: 0.07
 '18181':
   name: White County

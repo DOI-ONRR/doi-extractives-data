@@ -33,6 +33,10 @@
       count: 71
       total: 10587
       percent: 0.67
+    '2016':
+      count: 78
+      total: 10737
+      percent: 0.73
 '01003':
   name: Baldwin County
   employment:
@@ -76,6 +80,10 @@
       count: 59
       total: 67585
       percent: 0.09
+    '2016':
+      count: 87
+      total: 70142
+      percent: 0.12
 '01005':
   name: Barbour County
   employment:
@@ -119,6 +127,10 @@
       count: 183
       total: 8202
       percent: 2.23
+    '2016':
+      count: 161
+      total: 7933
+      percent: 2.03
 01009:
   name: Blount County
   employment:
@@ -169,6 +181,10 @@
       count: 9
       total: 3363
       percent: 0.27
+    '2016':
+      count: 6
+      total: 3323
+      percent: 0.18
 '01025':
   name: Clarke County
   employment:
@@ -184,6 +200,10 @@
       count: 65
       total: 8147
       percent: 0.8
+    '2016':
+      count: 45
+      total: 8151
+      percent: 0.55
 '01033':
   name: Colbert County
   employment:
@@ -226,6 +246,10 @@
     '2015':
       count: 143
       total: 23680
+      percent: 0.6
+    '2016':
+      count: 143
+      total: 23907
       percent: 0.6
 01039:
   name: Covington County
@@ -330,6 +354,10 @@
       count: 256
       total: 12772
       percent: 2
+    '2016':
+      count: 206
+      total: 12824
+      percent: 1.61
 '01055':
   name: Etowah County
   employment:
@@ -361,6 +389,10 @@
       count: 39
       total: 35494
       percent: 0.11
+    '2016':
+      count: 38
+      total: 36221
+      percent: 0.1
 '01057':
   name: Fayette County
   employment:
@@ -404,6 +436,10 @@
       count: 38
       total: 3916
       percent: 0.97
+    '2016':
+      count: 32
+      total: 4053
+      percent: 0.79
 01059:
   name: Franklin County
   employment:
@@ -439,6 +475,10 @@
       count: 92
       total: 10248
       percent: 0.9
+    '2016':
+      count: 88
+      total: 10336
+      percent: 0.85
 '01071':
   name: Jackson County
   employment:
@@ -513,6 +553,10 @@
       count: 1580
       total: 338154
       percent: 0.47
+    '2016':
+      count: 1282
+      total: 340385
+      percent: 0.38
 01081:
   name: Lee County
   employment:
@@ -556,6 +600,10 @@
       count: 58
       total: 54943
       percent: 0.11
+    '2016':
+      count: 57
+      total: 56729
+      percent: 0.1
 01087:
   name: Macon County
   employment:
@@ -656,6 +704,10 @@
       count: 22
       total: 34824
       percent: 0.06
+    '2016':
+      count: 23
+      total: 35821
+      percent: 0.06
 01097:
   name: Mobile County
   employment:
@@ -699,6 +751,10 @@
       count: 284
       total: 167366
       percent: 0.17
+    '2016':
+      count: 256
+      total: 169058
+      percent: 0.15
 '01101':
   name: Montgomery County
   employment:
@@ -741,6 +797,10 @@
     '2015':
       count: 24
       total: 128963
+      percent: 0.02
+    '2016':
+      count: 27
+      total: 131174
       percent: 0.02
 '01103':
   name: Morgan County
@@ -785,6 +845,10 @@
       count: 58
       total: 46564
       percent: 0.12
+    '2016':
+      count: 54
+      total: 46693
+      percent: 0.12
 '01113':
   name: Russell County
   employment:
@@ -812,6 +876,10 @@
       count: 24
       total: 13397
       percent: 0.18
+    '2016':
+      count: 28
+      total: 13725
+      percent: 0.2
 '01117':
   name: Shelby County
   employment:
@@ -855,6 +923,10 @@
       count: 420
       total: 83420
       percent: 0.5
+    '2016':
+      count: 374
+      total: 84020
+      percent: 0.45
 '01121':
   name: Talladega County
   employment:
@@ -917,6 +989,10 @@
       count: 2049
       total: 91535
       percent: 2.24
+    '2016':
+      count: 1137
+      total: 91695
+      percent: 1.24
 '01127':
   name: Walker County
   employment:
@@ -960,6 +1036,10 @@
       count: 389
       total: 18293
       percent: 2.13
+    '2016':
+      count: 256
+      total: 17987
+      percent: 1.42
 01129:
   name: Washington County
   employment:

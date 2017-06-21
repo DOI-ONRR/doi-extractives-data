@@ -41,6 +41,10 @@
       count: 140
       total: 216678
       percent: 0.06
+    '2016':
+      count: 100
+      total: 226204
+      percent: 0.04
 '16005':
   name: Bannock County
   employment:
@@ -140,6 +144,10 @@
       count: 125
       total: 13052
       percent: 0.96
+    '2016':
+      count: 114
+      total: 13470
+      percent: 0.85
 '16019':
   name: Bonneville County
   employment:
@@ -193,6 +201,10 @@
     '2015':
       count: 28
       total: 58616
+      percent: 0.05
+    '2016':
+      count: 29
+      total: 61131
       percent: 0.05
 '16029':
   name: Caribou County
@@ -264,6 +276,10 @@
       count: 142
       total: 10664
       percent: 1.33
+    '2016':
+      count: 156
+      total: 10996
+      percent: 1.42
 '16037':
   name: Custer County
   employment:
@@ -289,6 +305,10 @@
       count: 6
       total: 5907
       percent: 0.1
+    '2016':
+      count: 5
+      total: 6094
+      percent: 0.08
 '16049':
   name: Idaho County
   employment:
@@ -331,6 +351,10 @@
     '2015':
       count: 64
       total: 4217
+      percent: 1.52
+    '2016':
+      count: 64
+      total: 4214
       percent: 1.52
 '16055':
   name: Kootenai County
@@ -375,6 +399,10 @@
       count: 110
       total: 56061
       percent: 0.2
+    '2016':
+      count: 105
+      total: 58058
+      percent: 0.18
 '16069':
   name: Nez Perce County
   employment:
@@ -448,6 +476,10 @@
       count: 777
       total: 4590
       percent: 16.93
+    '2016':
+      count: 712
+      total: 4582
+      percent: 15.54
 '16083':
   name: Twin Falls County
   employment:
@@ -490,6 +522,10 @@
     '2015':
       count: 12
       total: 36442
+      percent: 0.03
+    '2016':
+      count: 12
+      total: 37442
       percent: 0.03
 '16085':
   name: Valley County

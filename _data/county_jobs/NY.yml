@@ -68,6 +68,10 @@
       count: 28
       total: 13681
       percent: 0.2
+    '2016':
+      count: 27
+      total: 13535
+      percent: 0.2
 '36007':
   name: Broome County
   employment:
@@ -111,6 +115,10 @@
       count: 44
       total: 86310
       percent: 0.05
+    '2016':
+      count: 35
+      total: 86484
+      percent: 0.04
 '36009':
   name: Cattaraugus County
   employment:
@@ -154,6 +162,10 @@
       count: 137
       total: 29368
       percent: 0.47
+    '2016':
+      count: 123
+      total: 29559
+      percent: 0.42
 '36013':
   name: Chautauqua County
   employment:
@@ -197,6 +209,10 @@
       count: 109
       total: 49941
       percent: 0.22
+    '2016':
+      count: 79
+      total: 49063
+      percent: 0.16
 '36015':
   name: Chemung County
   employment:
@@ -240,6 +256,10 @@
       count: 327
       total: 36509
       percent: 0.9
+    '2016':
+      count: 231
+      total: 35509
+      percent: 0.65
 '36017':
   name: Chenango County
   employment:
@@ -258,6 +278,10 @@
     '2015':
       count: 8
       total: 17515
+      percent: 0.05
+    '2016':
+      count: 8
+      total: 17507
       percent: 0.05
 '36019':
   name: Clinton County
@@ -321,6 +345,10 @@
       count: 8
       total: 18254
       percent: 0.04
+    '2016':
+      count: 7
+      total: 18058
+      percent: 0.04
 '36025':
   name: Delaware County
   employment:
@@ -364,6 +392,10 @@
       count: 125
       total: 14612
       percent: 0.86
+    '2016':
+      count: 128
+      total: 14599
+      percent: 0.88
 '36027':
   name: Dutchess County
   employment:
@@ -407,6 +439,10 @@
       count: 201
       total: 110005
       percent: 0.18
+    '2016':
+      count: 209
+      total: 110282
+      percent: 0.19
 '36029':
   name: Erie County
   employment:
@@ -450,6 +486,10 @@
       count: 249
       total: 461760
       percent: 0.05
+    '2016':
+      count: 184
+      total: 466277
+      percent: 0.04
 '36031':
   name: Essex County
   employment:
@@ -493,6 +533,10 @@
       count: 131
       total: 14442
       percent: 0.91
+    '2016':
+      count: 118
+      total: 14681
+      percent: 0.8
 '36033':
   name: Franklin County
   employment:
@@ -551,6 +595,10 @@
       count: 66
       total: 23357
       percent: 0.28
+    '2016':
+      count: 72
+      total: 23367
+      percent: 0.31
 '36043':
   name: Herkimer County
   employment:
@@ -594,6 +642,10 @@
       count: 35
       total: 16488
       percent: 0.21
+    '2016':
+      count: 34
+      total: 16618
+      percent: 0.2
 '36045':
   name: Jefferson County
   employment:
@@ -637,6 +689,10 @@
       count: 44
       total: 41442
       percent: 0.11
+    '2016':
+      count: 39
+      total: 41302
+      percent: 0.09
 '36047':
   name: Kings County
   employment:
@@ -703,6 +759,10 @@
       count: 23
       total: 6409
       percent: 0.36
+    '2016':
+      count: 22
+      total: 6452
+      percent: 0.34
 '36053':
   name: Madison County
   employment:
@@ -753,6 +813,10 @@
       count: 95
       total: 378510
       percent: 0.03
+    '2016':
+      count: 91
+      total: 384089
+      percent: 0.02
 '36057':
   name: Montgomery County
   employment:
@@ -784,6 +848,10 @@
       count: 57
       total: 18448
       percent: 0.31
+    '2016':
+      count: 45
+      total: 18984
+      percent: 0.24
 '36059':
   name: Nassau County
   employment:
@@ -814,6 +882,10 @@
     '2015':
       count: 5
       total: 613044
+      percent: 0
+    '2016':
+      count: 12
+      total: 622171
       percent: 0
 '36061':
   name: New York County
@@ -858,6 +930,10 @@
       count: 30
       total: 2374864
       percent: 0
+    '2016':
+      count: 26
+      total: 2415334
+      percent: 0
 '36065':
   name: Oneida County
   employment:
@@ -901,6 +977,10 @@
       count: 139
       total: 103104
       percent: 0.13
+    '2016':
+      count: 122
+      total: 104090
+      percent: 0.12
 '36067':
   name: Onondaga County
   employment:
@@ -944,6 +1024,10 @@
       count: 135
       total: 241791
       percent: 0.06
+    '2016':
+      count: 117
+      total: 243720
+      percent: 0.05
 '36069':
   name: Ontario County
   employment:
@@ -986,6 +1070,10 @@
     '2015':
       count: 50
       total: 52710
+      percent: 0.09
+    '2016':
+      count: 45
+      total: 52619
       percent: 0.09
 '36071':
   name: Orange County
@@ -1030,6 +1118,10 @@
       count: 62
       total: 138922
       percent: 0.04
+    '2016':
+      count: 75
+      total: 140460
+      percent: 0.05
 '36073':
   name: Orleans County
   employment:
@@ -1073,6 +1165,10 @@
       count: 42
       total: 12912
       percent: 0.33
+    '2016':
+      count: 43
+      total: 12658
+      percent: 0.34
 '36075':
   name: Oswego County
   employment:
@@ -1108,6 +1204,10 @@
       count: 62
       total: 33417
       percent: 0.19
+    '2016':
+      count: 51
+      total: 33958
+      percent: 0.15
 '36077':
   name: Otsego County
   employment:
@@ -1181,6 +1281,10 @@
       count: 125
       total: 51007
       percent: 0.25
+    '2016':
+      count: 120
+      total: 52035
+      percent: 0.23
 '36089':
   name: St. Lawrence County
   employment:
@@ -1224,6 +1328,10 @@
       count: 112
       total: 34896
       percent: 0.32
+    '2016':
+      count: 111
+      total: 34975
+      percent: 0.32
 '36091':
   name: Saratoga County
   employment:
@@ -1254,6 +1362,10 @@
     '2015':
       count: 29
       total: 83158
+      percent: 0.03
+    '2016':
+      count: 28
+      total: 84188
       percent: 0.03
 '36093':
   name: Schenectady County
@@ -1340,6 +1452,10 @@
       count: 70
       total: 36859
       percent: 0.19
+    '2016':
+      count: 65
+      total: 36896
+      percent: 0.18
 '36103':
   name: Suffolk County
   employment:
@@ -1382,6 +1498,10 @@
     '2015':
       count: 183
       total: 642048
+      percent: 0.03
+    '2016':
+      count: 181
+      total: 650699
       percent: 0.03
 '36105':
   name: Sullivan County
@@ -1426,6 +1546,10 @@
       count: 98
       total: 25423
       percent: 0.39
+    '2016':
+      count: 104
+      total: 26232
+      percent: 0.4
 '36107':
   name: Tioga County
   employment:
@@ -1465,6 +1589,10 @@
       count: 31
       total: 12780
       percent: 0.24
+    '2016':
+      count: 32
+      total: 13002
+      percent: 0.25
 '36109':
   name: Tompkins County
   employment:
@@ -1508,6 +1636,10 @@
       count: 279
       total: 50119
       percent: 0.56
+    '2016':
+      count: 279
+      total: 50381
+      percent: 0.55
 '36111':
   name: Ulster County
   employment:
@@ -1551,6 +1683,10 @@
       count: 93
       total: 59107
       percent: 0.16
+    '2016':
+      count: 80
+      total: 59987
+      percent: 0.13
 '36113':
   name: Warren County
   employment:
@@ -1566,6 +1702,10 @@
       count: 113
       total: 38616
       percent: 0.29
+    '2016':
+      count: 100
+      total: 38532
+      percent: 0.26
 '36115':
   name: Washington County
   employment:
@@ -1601,6 +1741,10 @@
       count: 114
       total: 15396
       percent: 0.74
+    '2016':
+      count: 127
+      total: 15258
+      percent: 0.83
 '36117':
   name: Wayne County
   employment:
@@ -1619,6 +1763,10 @@
     '2015':
       count: 89
       total: 29009
+      percent: 0.31
+    '2016':
+      count: 88
+      total: 28740
       percent: 0.31
 '36119':
   name: Westchester County

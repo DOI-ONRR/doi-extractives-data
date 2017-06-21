@@ -52,6 +52,10 @@
       count: 107
       total: 281440
       percent: 0.04
+    '2016':
+      count: 111
+      total: 283332
+      percent: 0.04
 '44009':
   name: Washington County
   employment:
@@ -95,3 +99,7 @@
       count: 87
       total: 52005
       percent: 0.17
+    '2016':
+      count: 82
+      total: 52096
+      percent: 0.16

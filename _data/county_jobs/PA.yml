@@ -9,6 +9,10 @@
       count: 85
       total: 32243
       percent: 0.26
+    '2016':
+      count: 239
+      total: 34548
+      percent: 0.69
 '42003':
   name: Allegheny County
   employment:
@@ -52,6 +56,10 @@
       count: 2193
       total: 685508
       percent: 0.32
+    '2016':
+      count: 1895
+      total: 688549
+      percent: 0.28
 '42005':
   name: Armstrong County
   employment:
@@ -91,6 +99,10 @@
       count: 1078
       total: 17132
       percent: 6.29
+    '2016':
+      count: 643
+      total: 16375
+      percent: 3.93
 '42007':
   name: Beaver County
   employment:
@@ -134,6 +146,10 @@
       count: 162
       total: 52103
       percent: 0.31
+    '2016':
+      count: 130
+      total: 51218
+      percent: 0.25
 '42011':
   name: Berks County
   employment:
@@ -177,6 +193,10 @@
       count: 222
       total: 169418
       percent: 0.13
+    '2016':
+      count: 234
+      total: 170573
+      percent: 0.14
 '42013':
   name: Blair County
   employment:
@@ -184,6 +204,10 @@
       count: 220
       total: 58222
       percent: 0.38
+    '2016':
+      count: 167
+      total: 58540
+      percent: 0.29
 '42015':
   name: Bradford County
   employment:
@@ -227,6 +251,10 @@
       count: 1209
       total: 24275
       percent: 4.98
+    '2016':
+      count: 841
+      total: 23264
+      percent: 3.62
 '42017':
   name: Bucks County
   employment:
@@ -270,6 +298,10 @@
       count: 183
       total: 255010
       percent: 0.07
+    '2016':
+      count: 165
+      total: 259708
+      percent: 0.06
 '42019':
   name: Butler County
   employment:
@@ -313,6 +345,10 @@
       count: 643
       total: 85050
       percent: 0.76
+    '2016':
+      count: 513
+      total: 84965
+      percent: 0.6
 '42021':
   name: Cambria County
   employment:
@@ -356,6 +392,10 @@
       count: 189
       total: 53349
       percent: 0.35
+    '2016':
+      count: 137
+      total: 52426
+      percent: 0.26
 '42025':
   name: Carbon County
   employment:
@@ -399,6 +439,10 @@
       count: 25
       total: 16937
       percent: 0.15
+    '2016':
+      count: 16
+      total: 17038
+      percent: 0.09
 '42027':
   name: Centre County
   employment:
@@ -442,6 +486,10 @@
       count: 196
       total: 67563
       percent: 0.29
+    '2016':
+      count: 125
+      total: 68690
+      percent: 0.18
 '42029':
   name: Chester County
   employment:
@@ -484,6 +532,10 @@
     '2015':
       count: 112
       total: 243852
+      percent: 0.05
+    '2016':
+      count: 113
+      total: 247918
       percent: 0.05
 '42031':
   name: Clarion County
@@ -528,6 +580,10 @@
       count: 332
       total: 13523
       percent: 2.46
+    '2016':
+      count: 152
+      total: 13391
+      percent: 1.14
 '42033':
   name: Clearfield County
   employment:
@@ -571,6 +627,10 @@
       count: 476
       total: 29709
       percent: 1.6
+    '2016':
+      count: 372
+      total: 29474
+      percent: 1.26
 '42035':
   name: Clinton County
   employment:
@@ -656,6 +716,10 @@
       count: 259
       total: 31073
       percent: 0.83
+    '2016':
+      count: 255
+      total: 30755
+      percent: 0.83
 '42041':
   name: Cumberland County
   employment:
@@ -698,6 +762,10 @@
     '2015':
       count: 88
       total: 130712
+      percent: 0.07
+    '2016':
+      count: 87
+      total: 132019
       percent: 0.07
 '42043':
   name: Dauphin County
@@ -742,6 +810,10 @@
       count: 52
       total: 177601
       percent: 0.03
+    '2016':
+      count: 49
+      total: 179961
+      percent: 0.03
 '42045':
   name: Delaware County
   employment:
@@ -785,6 +857,10 @@
       count: 124
       total: 217071
       percent: 0.06
+    '2016':
+      count: 83
+      total: 219198
+      percent: 0.04
 '42047':
   name: Elk County
   employment:
@@ -812,6 +888,10 @@
       count: 65
       total: 14968
       percent: 0.43
+    '2016':
+      count: 55
+      total: 14906
+      percent: 0.37
 '42049':
   name: Erie County
   employment:
@@ -855,6 +935,10 @@
       count: 98
       total: 124658
       percent: 0.08
+    '2016':
+      count: 67
+      total: 122578
+      percent: 0.05
 '42051':
   name: Fayette County
   employment:
@@ -898,6 +982,10 @@
       count: 964
       total: 40040
       percent: 2.41
+    '2016':
+      count: 914
+      total: 39264
+      percent: 2.33
 '42053':
   name: Forest County
   employment:
@@ -921,6 +1009,10 @@
       count: 113
       total: 1989
       percent: 5.68
+    '2016':
+      count: 104
+      total: 2021
+      percent: 5.15
 '42055':
   name: Franklin County
   employment:
@@ -939,6 +1031,10 @@
     '2015':
       count: 81
       total: 57998
+      percent: 0.14
+    '2016':
+      count: 83
+      total: 57932
       percent: 0.14
 '42059':
   name: Greene County
@@ -970,6 +1066,10 @@
       count: 91
       total: 12318
       percent: 0.74
+    '2016':
+      count: 80
+      total: 12348
+      percent: 0.65
 '42063':
   name: Indiana County
   employment:
@@ -1013,6 +1113,10 @@
       count: 2489
       total: 31453
       percent: 7.91
+    '2016':
+      count: 1398
+      total: 29862
+      percent: 4.68
 '42065':
   name: Jefferson County
   employment:
@@ -1056,6 +1160,10 @@
       count: 763
       total: 15637
       percent: 4.88
+    '2016':
+      count: 515
+      total: 15238
+      percent: 3.38
 '42069':
   name: Lackawanna County
   employment:
@@ -1099,6 +1207,10 @@
       count: 64
       total: 96882
       percent: 0.07
+    '2016':
+      count: 42
+      total: 97349
+      percent: 0.04
 '42071':
   name: Lancaster County
   employment:
@@ -1141,6 +1253,10 @@
     '2015':
       count: 355
       total: 229383
+      percent: 0.15
+    '2016':
+      count: 354
+      total: 234122
       percent: 0.15
 '42073':
   name: Lawrence County
@@ -1185,6 +1301,10 @@
       count: 133
       total: 28754
       percent: 0.46
+    '2016':
+      count: 99
+      total: 28146
+      percent: 0.35
 '42079':
   name: Luzerne County
   employment:
@@ -1228,6 +1348,10 @@
       count: 472
       total: 142346
       percent: 0.33
+    '2016':
+      count: 391
+      total: 143563
+      percent: 0.27
 '42081':
   name: Lycoming County
   employment:
@@ -1271,6 +1395,10 @@
       count: 1878
       total: 53016
       percent: 3.54
+    '2016':
+      count: 798
+      total: 51106
+      percent: 1.56
 '42083':
   name: Mckean County
   employment:
@@ -1314,6 +1442,10 @@
       count: 955
       total: 15648
       percent: 6.1
+    '2016':
+      count: 582
+      total: 15223
+      percent: 3.82
 '42085':
   name: Mercer County
   employment:
@@ -1357,6 +1489,10 @@
       count: 277
       total: 47941
       percent: 0.58
+    '2016':
+      count: 202
+      total: 47047
+      percent: 0.43
 '42089':
   name: Monroe County
   employment:
@@ -1400,6 +1536,10 @@
       count: 62
       total: 54209
       percent: 0.11
+    '2016':
+      count: 73
+      total: 55349
+      percent: 0.13
 '42091':
   name: Montgomery County
   employment:
@@ -1443,6 +1583,10 @@
       count: 187
       total: 477813
       percent: 0.04
+    '2016':
+      count: 186
+      total: 484319
+      percent: 0.04
 '42095':
   name: Northampton County
   employment:
@@ -1482,6 +1626,10 @@
       count: 55
       total: 108146
       percent: 0.05
+    '2016':
+      count: 37
+      total: 111797
+      percent: 0.03
 '42097':
   name: Northumberland County
   employment:
@@ -1525,6 +1673,10 @@
       count: 154
       total: 27487
       percent: 0.56
+    '2016':
+      count: 142
+      total: 27715
+      percent: 0.51
 '42103':
   name: Pike County
   employment:
@@ -1560,6 +1712,10 @@
       count: 53
       total: 10748
       percent: 0.49
+    '2016':
+      count: 64
+      total: 11226
+      percent: 0.57
 '42105':
   name: Potter County
   employment:
@@ -1595,6 +1751,10 @@
       count: 20
       total: 5240
       percent: 0.38
+    '2016':
+      count: 17
+      total: 5272
+      percent: 0.32
 '42107':
   name: Schuylkill County
   employment:
@@ -1638,6 +1798,10 @@
       count: 514
       total: 49880
       percent: 1.03
+    '2016':
+      count: 490
+      total: 49789
+      percent: 0.98
 '42111':
   name: Somerset County
   employment:
@@ -1681,6 +1845,10 @@
       count: 673
       total: 23991
       percent: 2.81
+    '2016':
+      count: 476
+      total: 23773
+      percent: 2
 '42113':
   name: Sullivan County
   employment:
@@ -1731,6 +1899,10 @@
       count: 814
       total: 9388
       percent: 8.67
+    '2016':
+      count: 756
+      total: 9075
+      percent: 8.33
 '42117':
   name: Tioga County
   employment:
@@ -1762,6 +1934,10 @@
       count: 405
       total: 13045
       percent: 3.1
+    '2016':
+      count: 296
+      total: 12670
+      percent: 2.34
 '42121':
   name: Venango County
   employment:
@@ -1805,6 +1981,10 @@
       count: 162
       total: 18921
       percent: 0.86
+    '2016':
+      count: 135
+      total: 18169
+      percent: 0.74
 '42123':
   name: Warren County
   employment:
@@ -1848,6 +2028,10 @@
       count: 205
       total: 14931
       percent: 1.37
+    '2016':
+      count: 161
+      total: 14670
+      percent: 1.1
 '42125':
   name: Washington County
   employment:
@@ -1891,6 +2075,10 @@
       count: 4348
       total: 87189
       percent: 4.99
+    '2016':
+      count: 3365
+      total: 85458
+      percent: 3.94
 '42127':
   name: Wayne County
   employment:
@@ -1934,6 +2122,10 @@
       count: 48
       total: 14591
       percent: 0.33
+    '2016':
+      count: 46
+      total: 14747
+      percent: 0.31
 '42129':
   name: Westmoreland County
   employment:
@@ -1977,6 +2169,10 @@
       count: 837
       total: 133042
       percent: 0.63
+    '2016':
+      count: 771
+      total: 132982
+      percent: 0.58
 '42131':
   name: Wyoming County
   employment:
@@ -2020,6 +2216,10 @@
       count: 546
       total: 10018
       percent: 5.45
+    '2016':
+      count: 352
+      total: 9705
+      percent: 3.63
 '42133':
   name: York County
   employment:
@@ -2063,3 +2263,7 @@
       count: 324
       total: 173792
       percent: 0.19
+    '2016':
+      count: 251
+      total: 176375
+      percent: 0.14

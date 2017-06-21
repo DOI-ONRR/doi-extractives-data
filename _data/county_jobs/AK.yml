@@ -41,6 +41,10 @@
       count: 3818
       total: 153811
       percent: 2.48
+    '2016':
+      count: 2968
+      total: 151021
+      percent: 1.97
 '02050':
   name: Bethel Census Area
   employment:
@@ -91,6 +95,10 @@
       count: 775
       total: 37024
       percent: 2.09
+    '2016':
+      count: 788
+      total: 36565
+      percent: 2.16
 '02110':
   name: Juneau Borough
   employment:
@@ -145,6 +153,10 @@
       count: 1017
       total: 20008
       percent: 5.08
+    '2016':
+      count: 853
+      total: 19692
+      percent: 4.33
 '02130':
   name: Ketchikan Gateway Borough
   employment:
@@ -207,6 +219,10 @@
       count: 89
       total: 22542
       percent: 0.39
+    '2016':
+      count: 67
+      total: 22946
+      percent: 0.29
 02185:
   name: North Slope Borough
   employment:
@@ -250,6 +266,10 @@
       count: 9290
       total: 15882
       percent: 58.49
+    '2016':
+      count: 7419
+      total: 13870
+      percent: 53.49
 '02201':
   name: Prince of Wales-Outer Ketchikan Census Area
   employment:
@@ -323,3 +343,7 @@
       count: 16
       total: 2053
       percent: 0.78
+    '2016':
+      count: 23
+      total: 2080
+      percent: 1.11

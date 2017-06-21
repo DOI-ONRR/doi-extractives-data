@@ -17,6 +17,10 @@
       count: 79
       total: 7684
       percent: 1.03
+    '2016':
+      count: 87
+      total: 7785
+      percent: 1.12
 '32003':
   name: Clark County
   employment:
@@ -59,6 +63,10 @@
     '2015':
       count: 350
       total: 908107
+      percent: 0.04
+    '2016':
+      count: 373
+      total: 936559
       percent: 0.04
 '32007':
   name: Elko County
@@ -103,6 +111,10 @@
       count: 1878
       total: 21474
       percent: 8.75
+    '2016':
+      count: 1948
+      total: 21798
+      percent: 8.94
 '32011':
   name: Eureka County
   employment:
@@ -173,6 +185,10 @@
       count: 1927
       total: 7853
       percent: 24.54
+    '2016':
+      count: 1781
+      total: 7556
+      percent: 23.57
 '32015':
   name: Lander County
   employment:
@@ -216,6 +232,10 @@
       count: 2058
       total: 3454
       percent: 59.58
+    '2016':
+      count: 1972
+      total: 3331
+      percent: 59.2
 '32017':
   name: Lincoln County
   employment:
@@ -247,6 +267,10 @@
       count: 13
       total: 1205
       percent: 1.08
+    '2016':
+      count: 17
+      total: 1236
+      percent: 1.38
 '32019':
   name: Lyon County
   employment:
@@ -290,6 +314,10 @@
       count: 359
       total: 11413
       percent: 3.15
+    '2016':
+      count: 208
+      total: 11462
+      percent: 1.81
 '32021':
   name: Mineral County
   employment:
@@ -321,6 +349,10 @@
       count: 99
       total: 1203
       percent: 8.23
+    '2016':
+      count: 80
+      total: 1595
+      percent: 5.02
 '32023':
   name: Nye County
   employment:
@@ -364,6 +396,10 @@
       count: 1117
       total: 11027
       percent: 10.13
+    '2016':
+      count: 1064
+      total: 11274
+      percent: 9.44
 '32027':
   name: Pershing County
   employment:
@@ -407,6 +443,10 @@
       count: 567
       total: 1826
       percent: 31.05
+    '2016':
+      count: 543
+      total: 1828
+      percent: 29.7
 '32029':
   name: Storey County
   employment:
@@ -457,6 +497,10 @@
       count: 145
       total: 201573
       percent: 0.07
+    '2016':
+      count: 139
+      total: 210307
+      percent: 0.07
 '32033':
   name: White Pine County
   employment:
@@ -484,3 +528,7 @@
       count: 1186
       total: 4232
       percent: 28.02
+    '2016':
+      count: 1092
+      total: 4023
+      percent: 27.14

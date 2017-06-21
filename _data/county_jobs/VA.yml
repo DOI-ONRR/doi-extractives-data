@@ -41,6 +41,10 @@
       count: 57
       total: 52026
       percent: 0.11
+    '2016':
+      count: 57
+      total: 53595
+      percent: 0.11
 '51007':
   name: Amelia County
   employment:
@@ -95,6 +99,10 @@
       count: 28
       total: 26267
       percent: 0.11
+    '2016':
+      count: 26
+      total: 27099
+      percent: 0.1
 '51023':
   name: Botetourt County
   employment:
@@ -149,6 +157,10 @@
       count: 1329
       total: 6872
       percent: 19.34
+    '2016':
+      count: 1072
+      total: 6486
+      percent: 16.53
 '51036':
   name: Charles City County
   employment:
@@ -211,6 +223,10 @@
       count: 66
       total: 15575
       percent: 0.42
+    '2016':
+      count: 68
+      total: 15547
+      percent: 0.44
 '51051':
   name: Dickenson County
   employment:
@@ -254,6 +270,10 @@
       count: 892
       total: 3610
       percent: 24.71
+    '2016':
+      count: 699
+      total: 3322
+      percent: 21.04
 '51059':
   name: Fairfax County
   employment:
@@ -297,6 +317,10 @@
       count: 183
       total: 586870
       percent: 0.03
+    '2016':
+      count: 200
+      total: 595256
+      percent: 0.03
 '51061':
   name: Fauquier County
   employment:
@@ -328,6 +352,10 @@
       count: 56
       total: 21549
       percent: 0.26
+    '2016':
+      count: 64
+      total: 22050
+      percent: 0.29
 '51075':
   name: Goochland County
   employment:
@@ -335,6 +363,10 @@
       count: 69
       total: 10783
       percent: 0.64
+    '2016':
+      count: 84
+      total: 15394
+      percent: 0.55
 '51085':
   name: Hanover County
   employment:
@@ -378,6 +410,10 @@
       count: 93
       total: 49596
       percent: 0.19
+    '2016':
+      count: 60
+      total: 50300
+      percent: 0.12
 '51087':
   name: Henrico County
   employment:
@@ -393,6 +429,10 @@
       count: 7
       total: 187015
       percent: 0
+    '2016':
+      count: 10
+      total: 189415
+      percent: 0.01
 '51101':
   name: King William County
   employment:
@@ -451,6 +491,10 @@
       count: 183
       total: 4467
       percent: 4.1
+    '2016':
+      count: 131
+      total: 4474
+      percent: 2.93
 '51107':
   name: Loudoun County
   employment:
@@ -485,6 +529,10 @@
       count: 72
       total: 41394
       percent: 0.17
+    '2016':
+      count: 71
+      total: 41879
+      percent: 0.17
 '51153':
   name: Prince William County
   employment:
@@ -508,6 +556,10 @@
       count: 91
       total: 122607
       percent: 0.07
+    '2016':
+      count: 96
+      total: 126296
+      percent: 0.08
 '51161':
   name: Roanoke County
   employment:
@@ -589,6 +641,10 @@
       count: 305
       total: 7023
       percent: 4.34
+    '2016':
+      count: 284
+      total: 6993
+      percent: 4.06
 '51185':
   name: Tazewell County
   employment:
@@ -632,6 +688,10 @@
       count: 715
       total: 15355
       percent: 4.66
+    '2016':
+      count: 585
+      total: 14679
+      percent: 3.99
 '51191':
   name: Washington County
   employment:
@@ -671,6 +731,10 @@
       count: 162
       total: 20431
       percent: 0.79
+    '2016':
+      count: 97
+      total: 20643
+      percent: 0.47
 '51195':
   name: Wise County
   employment:
@@ -749,6 +813,10 @@
       count: 104
       total: 11588
       percent: 0.9
+    '2016':
+      count: 101
+      total: 11701
+      percent: 0.86
 '51520':
   name: Bristol City
   employment:
@@ -799,6 +867,10 @@
       count: 49
       total: 97422
       percent: 0.05
+    '2016':
+      count: 65
+      total: 98470
+      percent: 0.07
 '51720':
   name: Norton City
   employment:
@@ -837,6 +909,10 @@
       count: 12
       total: 28482
       percent: 0.04
+    '2016':
+      count: 14
+      total: 29848
+      percent: 0.05
 '51810':
   name: Virginia Beach City
   employment:

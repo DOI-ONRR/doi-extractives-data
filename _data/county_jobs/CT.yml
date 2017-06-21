@@ -37,6 +37,10 @@
       count: 40
       total: 422674
       percent: 0.01
+    '2016':
+      count: 39
+      total: 423729
+      percent: 0.01
 09003:
   name: Hartford County
   employment:
@@ -79,6 +83,10 @@
     '2015':
       count: 67
       total: 504849
+      percent: 0.01
+    '2016':
+      count: 66
+      total: 505532
       percent: 0.01
 09005:
   name: Litchfield County
@@ -123,6 +131,10 @@
       count: 84
       total: 61450
       percent: 0.14
+    '2016':
+      count: 83
+      total: 60861
+      percent: 0.14
 09009:
   name: New Haven County
   employment:
@@ -149,6 +161,10 @@
     '2015':
       count: 188
       total: 359962
+      percent: 0.05
+    '2016':
+      count: 190
+      total: 362118
       percent: 0.05
 09011:
   name: New London County
@@ -192,6 +208,10 @@
     '2015':
       count: 62
       total: 121226
+      percent: 0.05
+    '2016':
+      count: 63
+      total: 122156
       percent: 0.05
 09015:
   name: Windham County

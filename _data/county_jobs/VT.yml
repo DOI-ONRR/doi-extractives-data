@@ -41,6 +41,10 @@
       count: 34
       total: 14539
       percent: 0.23
+    '2016':
+      count: 38
+      total: 14903
+      percent: 0.25
 '50005':
   name: Caledonia County
   employment:
@@ -103,6 +107,10 @@
       count: 45
       total: 101257
       percent: 0.04
+    '2016':
+      count: 44
+      total: 101606
+      percent: 0.04
 '50011':
   name: Franklin County
   employment:
@@ -121,6 +129,10 @@
     '2015':
       count: 27
       total: 17401
+      percent: 0.16
+    '2016':
+      count: 28
+      total: 17889
       percent: 0.16
 '50015':
   name: Lamoille County
@@ -184,6 +196,10 @@
       count: 11
       total: 7743
       percent: 0.14
+    '2016':
+      count: 11
+      total: 7662
+      percent: 0.14
 '50021':
   name: Rutland County
   employment:
@@ -227,6 +243,10 @@
       count: 351
       total: 27492
       percent: 1.28
+    '2016':
+      count: 340
+      total: 27167
+      percent: 1.25
 '50023':
   name: Washington County
   employment:
@@ -270,6 +290,10 @@
       count: 77
       total: 32911
       percent: 0.23
+    '2016':
+      count: 70
+      total: 32919
+      percent: 0.21
 '50027':
   name: Windsor County
   employment:
@@ -301,3 +325,7 @@
       count: 37
       total: 22976
       percent: 0.16
+    '2016':
+      count: 39
+      total: 23231
+      percent: 0.17

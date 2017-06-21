@@ -41,6 +41,10 @@
       count: 267
       total: 14562
       percent: 1.83
+    '2016':
+      count: 263
+      total: 14256
+      percent: 1.84
 '22005':
   name: Ascension Parish
   employment:
@@ -83,6 +87,10 @@
     '2015':
       count: 48
       total: 45071
+      percent: 0.11
+    '2016':
+      count: 47
+      total: 44423
       percent: 0.11
 '22007':
   name: Assumption Parish
@@ -127,6 +135,10 @@
       count: 78
       total: 4216
       percent: 1.85
+    '2016':
+      count: 80
+      total: 3854
+      percent: 2.08
 '22009':
   name: Avoyelles Parish
   employment:
@@ -197,6 +209,10 @@
       count: 18
       total: 8775
       percent: 0.21
+    '2016':
+      count: 17
+      total: 8588
+      percent: 0.2
 '22013':
   name: Bienville Parish
   employment:
@@ -240,6 +256,10 @@
       count: 122
       total: 4283
       percent: 2.85
+    '2016':
+      count: 139
+      total: 4249
+      percent: 3.27
 '22015':
   name: Bossier Parish
   employment:
@@ -283,6 +303,10 @@
       count: 1275
       total: 43952
       percent: 2.9
+    '2016':
+      count: 997
+      total: 43528
+      percent: 2.29
 '22017':
   name: Caddo Parish
   employment:
@@ -326,6 +350,10 @@
       count: 2025
       total: 115651
       percent: 1.75
+    '2016':
+      count: 1613
+      total: 114205
+      percent: 1.41
 '22019':
   name: Calcasieu Parish
   employment:
@@ -369,6 +397,10 @@
       count: 302
       total: 91808
       percent: 0.33
+    '2016':
+      count: 271
+      total: 94139
+      percent: 0.29
 '22021':
   name: Caldwell Parish
   employment:
@@ -404,6 +436,10 @@
       count: 23
       total: 2387
       percent: 0.96
+    '2016':
+      count: 17
+      total: 2388
+      percent: 0.71
 '22023':
   name: Cameron Parish
   employment:
@@ -447,6 +483,10 @@
       count: 162
       total: 7194
       percent: 2.25
+    '2016':
+      count: 213
+      total: 11229
+      percent: 1.9
 '22025':
   name: Catahoula Parish
   employment:
@@ -533,6 +573,10 @@
       count: 408
       total: 3509
       percent: 11.63
+    '2016':
+      count: 328
+      total: 3389
+      percent: 9.68
 '22029':
   name: Concordia Parish
   employment:
@@ -576,6 +620,10 @@
       count: 131
       total: 5650
       percent: 2.32
+    '2016':
+      count: 96
+      total: 5460
+      percent: 1.76
 '22031':
   name: De Soto Parish
   employment:
@@ -619,6 +667,10 @@
       count: 886
       total: 6676
       percent: 13.27
+    '2016':
+      count: 836
+      total: 6494
+      percent: 12.87
 '22033':
   name: East Baton Rouge Parish
   employment:
@@ -662,6 +714,10 @@
       count: 225
       total: 269042
       percent: 0.08
+    '2016':
+      count: 259
+      total: 268058
+      percent: 0.1
 '22037':
   name: East Feliciana Parish
   employment:
@@ -680,6 +736,10 @@
     '2015':
       count: 41
       total: 4870
+      percent: 0.84
+    '2016':
+      count: 41
+      total: 4877
       percent: 0.84
 '22039':
   name: Evangeline Parish
@@ -724,6 +784,10 @@
       count: 16
       total: 8118
       percent: 0.2
+    '2016':
+      count: 11
+      total: 7995
+      percent: 0.14
 '22041':
   name: Franklin Parish
   employment:
@@ -809,6 +873,10 @@
       count: 3416
       total: 30545
       percent: 11.18
+    '2016':
+      count: 2863
+      total: 27392
+      percent: 10.45
 '22047':
   name: Iberville Parish
   employment:
@@ -852,6 +920,10 @@
       count: 235
       total: 15424
       percent: 1.52
+    '2016':
+      count: 298
+      total: 15499
+      percent: 1.92
 '22049':
   name: Jackson Parish
   employment:
@@ -859,6 +931,10 @@
       count: 40
       total: 3632
       percent: 1.1
+    '2016':
+      count: 34
+      total: 3596
+      percent: 0.95
 '22051':
   name: Jefferson Parish
   employment:
@@ -902,6 +978,10 @@
       count: 1059
       total: 194624
       percent: 0.54
+    '2016':
+      count: 794
+      total: 193751
+      percent: 0.41
 '22053':
   name: Jefferson Davis Parish
   employment:
@@ -945,6 +1025,10 @@
       count: 306
       total: 8627
       percent: 3.55
+    '2016':
+      count: 192
+      total: 8485
+      percent: 2.26
 '22055':
   name: Lafayette Parish
   employment:
@@ -988,6 +1072,10 @@
       count: 13425
       total: 137588
       percent: 9.76
+    '2016':
+      count: 10304
+      total: 130147
+      percent: 7.92
 '22057':
   name: Lafourche Parish
   employment:
@@ -1031,6 +1119,10 @@
       count: 1549
       total: 37263
       percent: 4.16
+    '2016':
+      count: 1245
+      total: 34690
+      percent: 3.59
 '22059':
   name: LaSalle Parish
   employment:
@@ -1074,6 +1166,10 @@
       count: 346
       total: 4508
       percent: 7.68
+    '2016':
+      count: 224
+      total: 4286
+      percent: 5.23
 '22061':
   name: Lincoln Parish
   employment:
@@ -1117,6 +1213,10 @@
       count: 146
       total: 18060
       percent: 0.81
+    '2016':
+      count: 156
+      total: 18684
+      percent: 0.83
 '22063':
   name: Livingston Parish
   employment:
@@ -1160,6 +1260,10 @@
       count: 111
       total: 25723
       percent: 0.43
+    '2016':
+      count: 104
+      total: 26448
+      percent: 0.39
 '22069':
   name: Natchitoches Parish
   employment:
@@ -1179,6 +1283,10 @@
       count: 10
       total: 12870
       percent: 0.08
+    '2016':
+      count: 24
+      total: 13291
+      percent: 0.18
 '22071':
   name: Orleans Parish
   employment:
@@ -1222,6 +1330,10 @@
       count: 2246
       total: 192201
       percent: 1.17
+    '2016':
+      count: 1575
+      total: 193481
+      percent: 0.81
 '22073':
   name: Ouachita Parish
   employment:
@@ -1265,6 +1377,10 @@
       count: 122
       total: 70820
       percent: 0.17
+    '2016':
+      count: 100
+      total: 71388
+      percent: 0.14
 '22075':
   name: Plaquemines Parish
   employment:
@@ -1308,6 +1424,10 @@
       count: 1517
       total: 14378
       percent: 10.55
+    '2016':
+      count: 1222
+      total: 13525
+      percent: 9.04
 '22077':
   name: Pointe Coupee Parish
   employment:
@@ -1343,6 +1463,10 @@
       count: 128
       total: 5132
       percent: 2.49
+    '2016':
+      count: 113
+      total: 5004
+      percent: 2.26
 '22079':
   name: Rapides Parish
   employment:
@@ -1386,6 +1510,10 @@
       count: 65
       total: 58486
       percent: 0.11
+    '2016':
+      count: 99
+      total: 58347
+      percent: 0.17
 '22081':
   name: Red River Parish
   employment:
@@ -1417,6 +1545,10 @@
       count: 78
       total: 2471
       percent: 3.16
+    '2016':
+      count: 60
+      total: 2498
+      percent: 2.4
 '22083':
   name: Richland Parish
   employment:
@@ -1491,6 +1623,10 @@
       count: 38
       total: 5409
       percent: 0.7
+    '2016':
+      count: 28
+      total: 5244
+      percent: 0.53
 '22089':
   name: St. Charles Parish
   employment:
@@ -1603,6 +1739,10 @@
       count: 374
       total: 24122
       percent: 1.55
+    '2016':
+      count: 252
+      total: 23833
+      percent: 1.06
 '22101':
   name: St. Mary Parish
   employment:
@@ -1646,6 +1786,10 @@
       count: 2185
       total: 25478
       percent: 8.58
+    '2016':
+      count: 2039
+      total: 22537
+      percent: 9.05
 '22103':
   name: St. Tammany Parish
   employment:
@@ -1689,6 +1833,10 @@
       count: 1638
       total: 85839
       percent: 1.91
+    '2016':
+      count: 1446
+      total: 87895
+      percent: 1.65
 '22105':
   name: Tangipahoa Parish
   employment:
@@ -1732,6 +1880,10 @@
       count: 118
       total: 41745
       percent: 0.28
+    '2016':
+      count: 73
+      total: 42394
+      percent: 0.17
 '22109':
   name: Terrebonne Parish
   employment:
@@ -1775,6 +1927,10 @@
       count: 6069
       total: 56645
       percent: 10.71
+    '2016':
+      count: 4550
+      total: 51640
+      percent: 8.81
 '22111':
   name: Union Parish
   employment:
@@ -1786,6 +1942,10 @@
       count: 13
       total: 4862
       percent: 0.27
+    '2016':
+      count: 8
+      total: 4829
+      percent: 0.17
 '22113':
   name: Vermilion Parish
   employment:
@@ -1829,6 +1989,10 @@
       count: 1258
       total: 13582
       percent: 9.26
+    '2016':
+      count: 928
+      total: 12770
+      percent: 7.27
 '22115':
   name: Vernon Parish
   employment:
@@ -1856,6 +2020,10 @@
       count: 18
       total: 13560
       percent: 0.13
+    '2016':
+      count: 8
+      total: 13305
+      percent: 0.06
 '22117':
   name: Washington Parish
   employment:
@@ -1899,6 +2067,10 @@
       count: 63
       total: 10280
       percent: 0.61
+    '2016':
+      count: 57
+      total: 10475
+      percent: 0.54
 '22119':
   name: Webster Parish
   employment:
@@ -1942,6 +2114,10 @@
       count: 410
       total: 12070
       percent: 3.4
+    '2016':
+      count: 269
+      total: 11628
+      percent: 2.31
 '22121':
   name: West Baton Rouge Parish
   employment:
@@ -1992,3 +2168,7 @@
       count: 82
       total: 4804
       percent: 1.71
+    '2016':
+      count: 68
+      total: 4717
+      percent: 1.44

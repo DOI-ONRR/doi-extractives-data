@@ -41,6 +41,10 @@
       count: 178
       total: 728995
       percent: 0.02
+    '2016':
+      count: 235
+      total: 751737
+      percent: 0.03
 '06005':
   name: Amador County
   employment:
@@ -127,6 +131,10 @@
       count: 50
       total: 78370
       percent: 0.06
+    '2016':
+      count: 31
+      total: 80761
+      percent: 0.04
 '06013':
   name: Contra Costa County
   employment:
@@ -158,6 +166,10 @@
       count: 700
       total: 346862
       percent: 0.2
+    '2016':
+      count: 618
+      total: 359427
+      percent: 0.17
 '06017':
   name: El Dorado County
   employment:
@@ -201,6 +213,10 @@
       count: 63
       total: 51560
       percent: 0.12
+    '2016':
+      count: 57
+      total: 53922
+      percent: 0.11
 06019:
   name: Fresno County
   employment:
@@ -244,6 +260,10 @@
       count: 345
       total: 364788
       percent: 0.09
+    '2016':
+      count: 359
+      total: 374935
+      percent: 0.1
 '06021':
   name: Glenn County
   employment:
@@ -251,12 +271,20 @@
       count: 11
       total: 8062
       percent: 0.14
+    '2016':
+      count: 14
+      total: 8953
+      percent: 0.16
 '06023':
   name: Humboldt County
   employment:
     '2015':
       count: 12
       total: 46746
+      percent: 0.03
+    '2016':
+      count: 13
+      total: 48272
       percent: 0.03
 '06025':
   name: Imperial County
@@ -285,6 +313,10 @@
       count: 579
       total: 63939
       percent: 0.91
+    '2016':
+      count: 581
+      total: 62892
+      percent: 0.92
 '06027':
   name: Inyo County
   employment:
@@ -367,6 +399,10 @@
       count: 11259
       total: 312020
       percent: 3.61
+    '2016':
+      count: 8806
+      total: 314232
+      percent: 2.8
 '06033':
   name: Lake County
   employment:
@@ -394,6 +430,10 @@
       count: 57
       total: 15536
       percent: 0.37
+    '2016':
+      count: 54
+      total: 16109
+      percent: 0.34
 '06037':
   name: Los Angeles County
   employment:
@@ -437,6 +477,10 @@
       count: 3833
       total: 4244646
       percent: 0.09
+    '2016':
+      count: 3633
+      total: 4344647
+      percent: 0.08
 '06041':
   name: Marin County
   employment:
@@ -491,6 +535,10 @@
       count: 44
       total: 31549
       percent: 0.14
+    '2016':
+      count: 44
+      total: 31927
+      percent: 0.14
 '06053':
   name: Monterey County
   employment:
@@ -534,6 +582,10 @@
       count: 261
       total: 184815
       percent: 0.14
+    '2016':
+      count: 248
+      total: 188457
+      percent: 0.13
 '06055':
   name: Napa County
   employment:
@@ -608,6 +660,10 @@
       count: 32
       total: 29882
       percent: 0.11
+    '2016':
+      count: 27
+      total: 30601
+      percent: 0.09
 06059:
   name: Orange County
   employment:
@@ -650,6 +706,10 @@
     '2015':
       count: 630
       total: 1519107
+      percent: 0.04
+    '2016':
+      count: 571
+      total: 1560393
       percent: 0.04
 '06061':
   name: Placer County
@@ -694,6 +754,10 @@
       count: 61
       total: 148506
       percent: 0.04
+    '2016':
+      count: 92
+      total: 156272
+      percent: 0.06
 '06063':
   name: Plumas County
   employment:
@@ -748,6 +812,10 @@
       count: 389
       total: 658318
       percent: 0.06
+    '2016':
+      count: 428
+      total: 689503
+      percent: 0.06
 '06067':
   name: Sacramento County
   employment:
@@ -791,6 +859,17 @@
       count: 174
       total: 626506
       percent: 0.03
+    '2016':
+      count: 186
+      total: 638501
+      percent: 0.03
+06069:
+  name: San Benito County
+  employment:
+    '2016':
+      count: 23
+      total: 17032
+      percent: 0.14
 '06071':
   name: San Bernardino County
   employment:
@@ -834,6 +913,10 @@
       count: 1057
       total: 689427
       percent: 0.15
+    '2016':
+      count: 584
+      total: 705795
+      percent: 0.08
 '06073':
   name: San Diego County
   employment:
@@ -877,6 +960,10 @@
       count: 399
       total: 1370672
       percent: 0.03
+    '2016':
+      count: 299
+      total: 1405779
+      percent: 0.02
 '06075':
   name: San Francisco County
   employment:
@@ -919,6 +1006,10 @@
     '2015':
       count: 249
       total: 674646
+      percent: 0.04
+    '2016':
+      count: 295
+      total: 703194
       percent: 0.04
 '06077':
   name: San Joaquin County
@@ -963,6 +1054,10 @@
       count: 86
       total: 231714
       percent: 0.04
+    '2016':
+      count: 91
+      total: 239060
+      percent: 0.04
 06079:
   name: San Luis Obispo County
   employment:
@@ -1006,6 +1101,10 @@
       count: 132
       total: 114194
       percent: 0.12
+    '2016':
+      count: 108
+      total: 114256
+      percent: 0.09
 06081:
   name: San Mateo County
   employment:
@@ -1045,6 +1144,10 @@
       count: 52
       total: 383668
       percent: 0.01
+    '2016':
+      count: 63
+      total: 391532
+      percent: 0.02
 06083:
   name: Santa Barbara County
   employment:
@@ -1088,6 +1191,10 @@
       count: 1117
       total: 193754
       percent: 0.58
+    '2016':
+      count: 866
+      total: 195180
+      percent: 0.44
 06085:
   name: Santa Clara County
   employment:
@@ -1130,6 +1237,10 @@
     '2015':
       count: 232
       total: 1017071
+      percent: 0.02
+    '2016':
+      count: 241
+      total: 1045915
       percent: 0.02
 06089:
   name: Shasta County
@@ -1204,6 +1315,10 @@
       count: 252
       total: 130980
       percent: 0.19
+    '2016':
+      count: 243
+      total: 135843
+      percent: 0.18
 06097:
   name: Sonoma County
   employment:
@@ -1247,6 +1362,10 @@
       count: 166
       total: 197218
       percent: 0.08
+    '2016':
+      count: 130
+      total: 201946
+      percent: 0.06
 '06101':
   name: Sutter County
   employment:
@@ -1290,6 +1409,10 @@
       count: 86
       total: 29024
       percent: 0.3
+    '2016':
+      count: 110
+      total: 30093
+      percent: 0.37
 '06107':
   name: Tulare County
   employment:
@@ -1332,6 +1455,10 @@
     '2015':
       count: 66
       total: 156050
+      percent: 0.04
+    '2016':
+      count: 69
+      total: 161021
       percent: 0.04
 06109:
   name: Tuolumne County
@@ -1376,6 +1503,10 @@
       count: 72
       total: 17023
       percent: 0.42
+    '2016':
+      count: 75
+      total: 17472
+      percent: 0.43
 '06111':
   name: Ventura County
   employment:
@@ -1419,6 +1550,10 @@
       count: 1022
       total: 315806
       percent: 0.32
+    '2016':
+      count: 850
+      total: 319017
+      percent: 0.27
 '06113':
   name: Yolo County
   employment:
@@ -1462,6 +1597,10 @@
       count: 185
       total: 97648
       percent: 0.19
+    '2016':
+      count: 71
+      total: 100252
+      percent: 0.07
 '06115':
   name: Yuba County
   employment:
@@ -1505,3 +1644,7 @@
       count: 60
       total: 16178
       percent: 0.37
+    '2016':
+      count: 63
+      total: 16684
+      percent: 0.38

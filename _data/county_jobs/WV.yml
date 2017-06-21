@@ -83,6 +83,10 @@
       count: 62
       total: 3825
       percent: 1.62
+    '2016':
+      count: 51
+      total: 3922
+      percent: 1.3
 '54011':
   name: Cabell County
   employment:
@@ -122,6 +126,10 @@
       count: 28
       total: 51605
       percent: 0.05
+    '2016':
+      count: 23
+      total: 51537
+      percent: 0.04
 '54013':
   name: Calhoun County
   employment:
@@ -156,6 +164,10 @@
       count: 422
       total: 1860
       percent: 22.69
+    '2016':
+      count: 75
+      total: 1422
+      percent: 5.27
 '54017':
   name: Doddridge County
   employment:
@@ -230,6 +242,10 @@
       count: 479
       total: 10886
       percent: 4.4
+    '2016':
+      count: 336
+      total: 10667
+      percent: 3.15
 '54023':
   name: Grant County
   employment:
@@ -304,6 +320,10 @@
       count: 332
       total: 13226
       percent: 2.51
+    '2016':
+      count: 207
+      total: 13088
+      percent: 1.58
 '54029':
   name: Hancock County
   employment:
@@ -354,6 +374,10 @@
       count: 940
       total: 35103
       percent: 2.68
+    '2016':
+      count: 894
+      total: 35217
+      percent: 2.54
 '54035':
   name: Jackson County
   employment:
@@ -369,6 +393,10 @@
       count: 51
       total: 7764
       percent: 0.66
+    '2016':
+      count: 36
+      total: 7782
+      percent: 0.46
 '54039':
   name: Kanawha County
   employment:
@@ -412,6 +440,10 @@
       count: 2084
       total: 102811
       percent: 2.03
+    '2016':
+      count: 2009
+      total: 101264
+      percent: 1.98
 '54041':
   name: Lewis County
   employment:
@@ -455,6 +487,10 @@
       count: 1044
       total: 6650
       percent: 15.7
+    '2016':
+      count: 692
+      total: 6201
+      percent: 11.16
 '54043':
   name: Lincoln County
   employment:
@@ -477,6 +513,10 @@
       count: 1231
       total: 10227
       percent: 12.04
+    '2016':
+      count: 956
+      total: 9780
+      percent: 9.78
 '54047':
   name: McDowell County
   employment:
@@ -496,6 +536,10 @@
       count: 820
       total: 4797
       percent: 17.09
+    '2016':
+      count: 608
+      total: 4324
+      percent: 14.06
 '54051':
   name: Marshall County
   employment:
@@ -523,6 +567,10 @@
       count: 1924
       total: 10601
       percent: 18.15
+    '2016':
+      count: 1563
+      total: 10211
+      percent: 15.31
 '54053':
   name: Mason County
   employment:
@@ -534,6 +582,10 @@
       count: 25
       total: 5621
       percent: 0.44
+    '2016':
+      count: 25
+      total: 5528
+      percent: 0.45
 '54055':
   name: Mercer County
   employment:
@@ -577,6 +629,10 @@
       count: 133
       total: 19793
       percent: 0.67
+    '2016':
+      count: 113
+      total: 19511
+      percent: 0.58
 '54057':
   name: Mineral County
   employment:
@@ -655,6 +711,10 @@
       count: 1331
       total: 5563
       percent: 23.93
+    '2016':
+      count: 963
+      total: 4734
+      percent: 20.34
 '54061':
   name: Monongalia County
   employment:
@@ -698,6 +758,10 @@
       count: 625
       total: 55109
       percent: 1.13
+    '2016':
+      count: 496
+      total: 55300
+      percent: 0.9
 '54067':
   name: Nicholas County
   employment:
@@ -741,6 +805,10 @@
       count: 412
       total: 7785
       percent: 5.29
+    '2016':
+      count: 269
+      total: 7243
+      percent: 3.71
 '54073':
   name: Pleasants County
   employment:
@@ -787,6 +855,10 @@
       count: 49
       total: 7294
       percent: 0.67
+    '2016':
+      count: 60
+      total: 7273
+      percent: 0.82
 '54079':
   name: Putnam County
   employment:
@@ -830,6 +902,10 @@
       count: 39
       total: 20272
       percent: 0.19
+    '2016':
+      count: 26
+      total: 20495
+      percent: 0.13
 '54081':
   name: Raleigh County
   employment:
@@ -873,6 +949,10 @@
       count: 1848
       total: 32291
       percent: 5.72
+    '2016':
+      count: 1337
+      total: 31025
+      percent: 4.31
 '54083':
   name: Randolph County
   employment:
@@ -900,6 +980,10 @@
       count: 275
       total: 11448
       percent: 2.4
+    '2016':
+      count: 222
+      total: 11597
+      percent: 1.91
 '54085':
   name: Ritchie County
   employment:
@@ -935,6 +1019,10 @@
       count: 704
       total: 3309
       percent: 21.28
+    '2016':
+      count: 668
+      total: 3336
+      percent: 20.02
 '54087':
   name: Roane County
   employment:
@@ -958,6 +1046,10 @@
       count: 276
       total: 2968
       percent: 9.3
+    '2016':
+      count: 246
+      total: 2926
+      percent: 8.41
 '54095':
   name: Tyler County
   employment:
@@ -1032,6 +1124,10 @@
       count: 290
       total: 7609
       percent: 3.81
+    '2016':
+      count: 189
+      total: 7387
+      percent: 2.56
 '54103':
   name: Wetzel County
   employment:
@@ -1090,6 +1186,10 @@
       count: 26
       total: 559
       percent: 4.65
+    '2016':
+      count: 19
+      total: 555
+      percent: 3.42
 '54107':
   name: Wood County
   employment:
@@ -1133,6 +1233,10 @@
       count: 103
       total: 37459
       percent: 0.27
+    '2016':
+      count: 92
+      total: 36586
+      percent: 0.25
 '54109':
   name: Wyoming County
   employment:
@@ -1176,3 +1280,7 @@
       count: 1131
       total: 4735
       percent: 23.89
+    '2016':
+      count: 898
+      total: 4285
+      percent: 20.96

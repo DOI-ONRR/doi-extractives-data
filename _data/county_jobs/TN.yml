@@ -72,6 +72,10 @@
       count: 4
       total: 18374
       percent: 0.02
+    '2016':
+      count: 5
+      total: 18412
+      percent: 0.03
 '47009':
   name: Blount County
   employment:
@@ -114,6 +118,10 @@
     '2015':
       count: 7
       total: 46532
+      percent: 0.02
+    '2016':
+      count: 9
+      total: 47158
       percent: 0.02
 '47011':
   name: Bradley County
@@ -158,6 +166,10 @@
       count: 32
       total: 42117
       percent: 0.08
+    '2016':
+      count: 37
+      total: 41731
+      percent: 0.09
 '47013':
   name: Campbell County
   employment:
@@ -181,6 +193,10 @@
       count: 23
       total: 9013
       percent: 0.26
+    '2016':
+      count: 26
+      total: 9171
+      percent: 0.28
 '47019':
   name: Carter County
   employment:
@@ -224,6 +240,10 @@
       count: 9
       total: 10581
       percent: 0.09
+    '2016':
+      count: 9
+      total: 10913
+      percent: 0.08
 '47025':
   name: Claiborne County
   employment:
@@ -267,6 +287,10 @@
       count: 246
       total: 8584
       percent: 2.87
+    '2016':
+      count: 185
+      total: 8752
+      percent: 2.11
 '47035':
   name: Cumberland County
   employment:
@@ -309,6 +333,10 @@
     '2015':
       count: 124
       total: 17253
+      percent: 0.72
+    '2016':
+      count: 129
+      total: 17848
       percent: 0.72
 '47037':
   name: Davidson County
@@ -353,6 +381,10 @@
       count: 355
       total: 454563
       percent: 0.08
+    '2016':
+      count: 354
+      total: 470600
+      percent: 0.08
 '47051':
   name: Franklin County
   employment:
@@ -396,6 +428,10 @@
       count: 69
       total: 11752
       percent: 0.59
+    '2016':
+      count: 66
+      total: 11875
+      percent: 0.56
 '47053':
   name: Gibson County
   employment:
@@ -439,6 +475,10 @@
       count: 2
       total: 13565
       percent: 0.01
+    '2016':
+      count: 3
+      total: 13861
+      percent: 0.02
 '47057':
   name: Grainger County
   employment:
@@ -482,6 +522,10 @@
       count: 6
       total: 3608
       percent: 0.17
+    '2016':
+      count: 7
+      total: 3825
+      percent: 0.18
 '47063':
   name: Hamblen County
   employment:
@@ -524,6 +568,10 @@
     '2015':
       count: 11
       total: 30021
+      percent: 0.04
+    '2016':
+      count: 12
+      total: 30664
       percent: 0.04
 '47065':
   name: Hamilton County
@@ -568,6 +616,10 @@
       count: 2695
       total: 192464
       percent: 1.4
+    '2016':
+      count: 2689
+      total: 196872
+      percent: 1.37
 '47071':
   name: Hardin County
   employment:
@@ -610,6 +662,10 @@
     '2015':
       count: 17
       total: 7867
+      percent: 0.22
+    '2016':
+      count: 17
+      total: 7865
       percent: 0.22
 '47073':
   name: Hawkins County
@@ -654,6 +710,10 @@
       count: 49
       total: 12113
       percent: 0.4
+    '2016':
+      count: 49
+      total: 12620
+      percent: 0.39
 '47075':
   name: Haywood County
   employment:
@@ -697,6 +757,10 @@
       count: 53
       total: 4826
       percent: 1.1
+    '2016':
+      count: 53
+      total: 4960
+      percent: 1.07
 '47079':
   name: Henry County
   employment:
@@ -739,6 +803,10 @@
     '2015':
       count: 12
       total: 11225
+      percent: 0.11
+    '2016':
+      count: 13
+      total: 11314
       percent: 0.11
 '47085':
   name: Humphreys County
@@ -783,6 +851,10 @@
       count: 178
       total: 5711
       percent: 3.12
+    '2016':
+      count: 162
+      total: 5779
+      percent: 2.8
 '47089':
   name: Jefferson County
   employment:
@@ -825,6 +897,10 @@
     '2015':
       count: 5
       total: 12829
+      percent: 0.04
+    '2016':
+      count: 5
+      total: 13004
       percent: 0.04
 '47093':
   name: Knox County
@@ -869,6 +945,10 @@
       count: 97
       total: 231153
       percent: 0.04
+    '2016':
+      count: 106
+      total: 235661
+      percent: 0.04
 '47105':
   name: Loudon County
   employment:
@@ -912,6 +992,10 @@
       count: 36
       total: 14200
       percent: 0.25
+    '2016':
+      count: 32
+      total: 15155
+      percent: 0.21
 '47113':
   name: Madison County
   employment:
@@ -955,6 +1039,10 @@
       count: 47
       total: 56604
       percent: 0.08
+    '2016':
+      count: 50
+      total: 58197
+      percent: 0.09
 '47115':
   name: Marion County
   employment:
@@ -998,6 +1086,10 @@
       count: 14
       total: 7157
       percent: 0.2
+    '2016':
+      count: 18
+      total: 7445
+      percent: 0.24
 '47119':
   name: Maury County
   employment:
@@ -1041,6 +1133,10 @@
       count: 27
       total: 30440
       percent: 0.09
+    '2016':
+      count: 27
+      total: 32310
+      percent: 0.08
 '47125':
   name: Montgomery County
   employment:
@@ -1084,6 +1180,10 @@
       count: 5
       total: 50103
       percent: 0.01
+    '2016':
+      count: 295
+      total: 51698
+      percent: 0.57
 '47133':
   name: Overton County
   employment:
@@ -1107,6 +1207,10 @@
       count: 55
       total: 4436
       percent: 1.24
+    '2016':
+      count: 56
+      total: 4616
+      percent: 1.21
 '47135':
   name: Perry County
   employment:
@@ -1157,6 +1261,10 @@
       count: 16
       total: 2365
       percent: 0.68
+    '2016':
+      count: 16
+      total: 2365
+      percent: 0.68
 '47141':
   name: Putnam County
   employment:
@@ -1200,6 +1308,10 @@
       count: 52
       total: 34463
       percent: 0.15
+    '2016':
+      count: 45
+      total: 35331
+      percent: 0.13
 '47143':
   name: Rhea County
   employment:
@@ -1243,6 +1355,10 @@
       count: 1076
       total: 10565
       percent: 10.18
+    '2016':
+      count: 1042
+      total: 11115
+      percent: 9.37
 '47145':
   name: Roane County
   employment:
@@ -1286,6 +1402,10 @@
       count: 276
       total: 17819
       percent: 1.55
+    '2016':
+      count: 269
+      total: 18163
+      percent: 1.48
 '47147':
   name: Robertson County
   employment:
@@ -1340,6 +1460,10 @@
       count: 35
       total: 115733
       percent: 0.03
+    '2016':
+      count: 86
+      total: 118676
+      percent: 0.07
 '47151':
   name: Scott County
   employment:
@@ -1383,6 +1507,10 @@
       count: 35
       total: 5326
       percent: 0.66
+    '2016':
+      count: 8
+      total: 5363
+      percent: 0.15
 '47153':
   name: Sequatchie County
   employment:
@@ -1402,6 +1530,10 @@
       count: 75
       total: 2798
       percent: 2.68
+    '2016':
+      count: 72
+      total: 2960
+      percent: 2.43
 '47157':
   name: Shelby County
   employment:
@@ -1445,6 +1577,10 @@
       count: 213
       total: 483869
       percent: 0.04
+    '2016':
+      count: 167
+      total: 491047
+      percent: 0.03
 '47163':
   name: Sullivan County
   employment:
@@ -1488,6 +1624,10 @@
       count: 14
       total: 67748
       percent: 0.02
+    '2016':
+      count: 54
+      total: 68227
+      percent: 0.08
 '47177':
   name: Warren County
   employment:
@@ -1530,6 +1670,10 @@
     '2015':
       count: 5
       total: 13729
+      percent: 0.04
+    '2016':
+      count: 5
+      total: 13780
       percent: 0.04
 '47179':
   name: Washington County
@@ -1574,6 +1718,10 @@
       count: 45
       total: 60342
       percent: 0.07
+    '2016':
+      count: 45
+      total: 60870
+      percent: 0.07
 '47183':
   name: Weakley County
   employment:
@@ -1616,6 +1764,10 @@
     '2015':
       count: 156
       total: 10686
+      percent: 1.46
+    '2016':
+      count: 158
+      total: 10843
       percent: 1.46
 '47187':
   name: Williamson County
@@ -1683,3 +1835,7 @@
       count: 70
       total: 37865
       percent: 0.18
+    '2016':
+      count: 9
+      total: 40225
+      percent: 0.02

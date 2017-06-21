@@ -37,6 +37,10 @@
       count: 11
       total: 15942
       percent: 0.07
+    '2016':
+      count: 12
+      total: 15872
+      percent: 0.08
 '46033':
   name: Custer County
   employment:
@@ -80,6 +84,10 @@
       count: 32
       total: 2414
       percent: 1.33
+    '2016':
+      count: 28
+      total: 2331
+      percent: 1.2
 '46047':
   name: Fall River County
   employment:
@@ -123,6 +131,10 @@
       count: 15
       total: 2404
       percent: 0.62
+    '2016':
+      count: 16
+      total: 2450
+      percent: 0.65
 '46051':
   name: Grant County
   employment:
@@ -211,3 +223,7 @@
       count: 23
       total: 55556
       percent: 0.04
+    '2016':
+      count: 46
+      total: 56351
+      percent: 0.08

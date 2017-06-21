@@ -28,6 +28,10 @@
       count: 51
       total: 109474
       percent: 0.05
+    '2016':
+      count: 45
+      total: 114612
+      percent: 0.04
 '05013':
   name: Calhoun County
   employment:
@@ -97,6 +101,10 @@
       count: 197
       total: 6644
       percent: 2.97
+    '2016':
+      count: 139
+      total: 6541
+      percent: 2.13
 '05027':
   name: Columbia County
   employment:
@@ -140,6 +148,10 @@
       count: 352
       total: 8288
       percent: 4.25
+    '2016':
+      count: 283
+      total: 8059
+      percent: 3.51
 05029:
   name: Conway County
   employment:
@@ -183,6 +195,10 @@
       count: 117
       total: 6973
       percent: 1.68
+    '2016':
+      count: 71
+      total: 6632
+      percent: 1.07
 '05031':
   name: Craighead County
   employment:
@@ -213,6 +229,10 @@
     '2015':
       count: 16
       total: 47039
+      percent: 0.03
+    '2016':
+      count: 14
+      total: 48643
       percent: 0.03
 '05033':
   name: Crawford County
@@ -257,6 +277,10 @@
       count: 138
       total: 19136
       percent: 0.72
+    '2016':
+      count: 90
+      total: 19466
+      percent: 0.46
 '05045':
   name: Faulkner County
   employment:
@@ -300,6 +324,10 @@
       count: 889
       total: 40493
       percent: 2.2
+    '2016':
+      count: 404
+      total: 40265
+      percent: 1
 '05047':
   name: Franklin County
   employment:
@@ -327,6 +355,10 @@
       count: 200
       total: 4459
       percent: 4.49
+    '2016':
+      count: 150
+      total: 4472
+      percent: 3.35
 '05051':
   name: Garland County
   employment:
@@ -370,6 +402,10 @@
       count: 158
       total: 35964
       percent: 0.44
+    '2016':
+      count: 112
+      total: 36323
+      percent: 0.31
 '05053':
   name: Grant County
   employment:
@@ -470,6 +506,10 @@
       count: 81
       total: 14848
       percent: 0.55
+    '2016':
+      count: 35
+      total: 15399
+      percent: 0.23
 '05071':
   name: Johnson County
   employment:
@@ -528,6 +568,10 @@
       count: 68
       total: 1205
       percent: 5.64
+    '2016':
+      count: 58
+      total: 1209
+      percent: 4.8
 '05075':
   name: Lawrence County
   employment:
@@ -571,6 +615,10 @@
       count: 36
       total: 4086
       percent: 0.88
+    '2016':
+      count: 38
+      total: 4037
+      percent: 0.94
 05083:
   name: Logan County
   employment:
@@ -614,6 +662,10 @@
       count: 111
       total: 5520
       percent: 2.01
+    '2016':
+      count: 91
+      total: 5542
+      percent: 1.64
 05085:
   name: Lonoke County
   employment:
@@ -664,6 +716,10 @@
       count: 40
       total: 13246
       percent: 0.3
+    '2016':
+      count: 54
+      total: 12957
+      percent: 0.42
 '05103':
   name: Ouachita County
   employment:
@@ -707,6 +763,10 @@
       count: 69
       total: 7094
       percent: 0.97
+    '2016':
+      count: 67
+      total: 7074
+      percent: 0.95
 05109:
   name: Pike County
   employment:
@@ -725,6 +785,10 @@
       count: 38
       total: 6045
       percent: 0.63
+    '2016':
+      count: 34
+      total: 5840
+      percent: 0.58
 '05115':
   name: Pope County
   employment:
@@ -764,6 +828,10 @@
       count: 162
       total: 26821
       percent: 0.6
+    '2016':
+      count: 137
+      total: 26161
+      percent: 0.52
 05119:
   name: Pulaski County
   employment:
@@ -807,6 +875,10 @@
       count: 511
       total: 245055
       percent: 0.21
+    '2016':
+      count: 466
+      total: 247443
+      percent: 0.19
 '05125':
   name: Saline County
   employment:
@@ -818,6 +890,10 @@
       count: 14
       total: 22835
       percent: 0.06
+    '2016':
+      count: 16
+      total: 23504
+      percent: 0.07
 '05131':
   name: Sebastian County
   employment:
@@ -861,6 +937,10 @@
       count: 700
       total: 65381
       percent: 1.07
+    '2016':
+      count: 452
+      total: 66366
+      percent: 0.68
 05139:
   name: Union County
   employment:
@@ -904,6 +984,10 @@
       count: 370
       total: 18432
       percent: 2.01
+    '2016':
+      count: 254
+      total: 17779
+      percent: 1.43
 '05141':
   name: Van Buren County
   employment:
@@ -939,6 +1023,10 @@
       count: 303
       total: 3928
       percent: 7.71
+    '2016':
+      count: 175
+      total: 3577
+      percent: 4.89
 '05143':
   name: Washington County
   employment:
@@ -981,6 +1069,10 @@
     '2015':
       count: 24
       total: 99649
+      percent: 0.02
+    '2016':
+      count: 18
+      total: 103096
       percent: 0.02
 '05145':
   name: White County
@@ -1025,3 +1117,7 @@
       count: 518
       total: 24408
       percent: 2.12
+    '2016':
+      count: 245
+      total: 23993
+      percent: 1.02

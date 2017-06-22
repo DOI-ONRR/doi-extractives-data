@@ -8,14 +8,16 @@
         {{ include.chart_name }}
         {% if include.chart_units_title %} ({{ include.chart_units_title }}){% endif %}
       </span>
-      <eiti-bar-chart
-        data='{{ include.chart_values | jsonify }}'
-        x-range="{{ include.year_range | default: year_range }}"
-        x-value="{{ include.year | default: year }}"
-        data-units="{{ include.units }}"
-        {% if include.is_icon %}is-icon="true"{% endif %}
-        class="bar-chart-icon">
-      </eiti-bar-chart>
+      {% if include.chart_values %}
+        <eiti-bar-chart
+          data='{{ include.chart_values | jsonify }}'
+          x-range="{{ include.year_range | default: year_range }}"
+          x-value="{{ include.year | default: year }}"
+          data-units="{{ include.units }}"
+          {% if include.is_icon %}is-icon="true"{% endif %}
+          class="bar-chart-icon">
+        </eiti-bar-chart>
+      {% endif %}
     </span>
     <span class="show-expanded chart-title-small">
       <span>

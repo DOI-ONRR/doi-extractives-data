@@ -47,6 +47,8 @@
     "pty.js": "github:chjj/pty.js",
     "stickyfill-web-module": "^1.1.11",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",
+    "svgeo": "^0.3.5",
+    "topojson": "github:mbostock/topojson#oversize",
     "webpack": "*"
   },
   "devDependencies": {
@@ -68,12 +70,10 @@
     "sequelize": "^3.20.0",
     "sqlite3": "^3.1.2",
     "stream-array": "^1.0.1",
-    "svgeo": "^0.3.5",
     "svgo": "^0.6.6",
     "tables": "^0.0.4",
     "through2": "^0.6.5",
     "tito": "^0.6.1",
-    "topojson": "github:mbostock/topojson#oversize",
     "to-jekyll-collection": "^0.1.1",
     "yargs": "^3.7.1"
   }

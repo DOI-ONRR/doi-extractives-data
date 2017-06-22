@@ -151,16 +151,22 @@
         {% endunless %}
         {% assign _slug = commodity | slugify %}
         {% assign _figures = _commodity[1][year] %}
+        {% assign __values = _commodity[1] | map_hash: 'count' %}
       <div class="chart-item">
+        {% assign chart_toggle = 'jobs-figures-chart-{{ _slug }}' | liquify %}
         {%
           include chart_title.html
           chart_name=commodity_name
+          chart_toggle=chart_toggle
+          chart_values=__values
+          units="jobs"
+          is_icon=true
         %}
 
-        <figure class="chart">
+        <figure class="chart" id="{{ chart_toggle }}">
           <eiti-bar-chart
             aria-controls="jobs-figures-{{ _slug }}"
-            data='{{ _commodity[1] | map_hash: 'count' | jsonify }}'
+            data='{{ __values | jsonify }}'
             x-range="{{ year_range }}"
             x-value="{{ year }}"
             data-units="jobs">

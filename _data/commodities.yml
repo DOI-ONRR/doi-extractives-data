@@ -1,3 +1,5 @@
+# These values are used to group revenue figures for certain commodity
+# categories in "type tables"
 groups:
   oilgas:
     name: Oil & Gas
@@ -48,9 +50,35 @@ groups:
     - "CO2"
     - "Helium"
 
-
   renewables:
     name: Renewables
     commodities:
     - "Geothermal"
     - "Wind"
+
+jobs:
+  # This is the list of commodities (or "sectors") that we whitelist on
+  # national and state wage and salary (BLS) employment sections. Tables for
+  # each of these commodities will be shown only if there is data for each.
+  show:
+    - Coal
+    - Geothermal
+    - Hydroelectric
+    - Nonenergy minerals
+    - Oil and gas
+    - Solar
+    - Wind
+
+  # These are values that we should use in the template for specific
+  # commodity/sector values, such as renewables:
+  #
+  # "There were {{ count }} {{ commodity | lookup: alias }} jobs in..."
+  #
+  alias:
+    # add "energy" to renewables
+    Geothermal: Geothermal energy
+    Hydroelectric: Hydroelectric energy
+    Solar: Solar energy
+    Wind: Wind energy
+    # singularize
+    Nonenergy minerals: Nonenergy mineral

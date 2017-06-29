@@ -1,31 +1,45 @@
 US:
   '2006':
-    count: 617038
-    percent: 0.46
+    count: 672616
+    total: 133833834
+    percent: 0.5
   '2007':
-    count: 660281
-    percent: 0.49
+    count: 715238
+    total: 135366106
+    percent: 0.53
   '2008':
-    count: 713284
-    percent: 0.54
-  '2009':
-    count: 641611
-    percent: 0.51
-  '2010':
-    count: 651721
-    percent: 0.52
-  '2011':
-    count: 730140
+    count: 768888
+    total: 134805659
     percent: 0.57
+  '2009':
+    count: 696304
+    total: 128607842
+    percent: 0.54
+  '2010':
+    count: 672984
+    total: 127820442
+    percent: 0.53
+  '2011':
+    count: 754729
+    total: 129411095
+    percent: 0.58
   '2012':
-    count: 797939
-    percent: 0.61
-  '2013':
-    count: 813040
-    percent: 0.61
-  '2014':
-    count: 841636
+    count: 821897
+    total: 131696378
     percent: 0.62
+  '2013':
+    count: 837317
+    total: 133968434
+    percent: 0.63
+  '2014':
+    count: 865853
+    total: 136613609
+    percent: 0.63
   '2015':
-    count: 751631
-    percent: 0.55
+    count: 776368
+    total: 139491699
+    percent: 0.56
+  '2016':
+    count: 640126
+    total: 141866449
+    percent: 0.45

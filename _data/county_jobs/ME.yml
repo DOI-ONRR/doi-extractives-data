@@ -1,120 +1,184 @@
+'23001':
+  name: Androscoggin County
+  employment:
+    '2016':
+      count: 25
+      total: 49306
+      percent: 0.05
 '23005':
   name: Cumberland County
   employment:
+    '2006':
+      count: 200
+      total: 171510
+      percent: 0.12
     '2008':
       count: 18
+      total: 173888
       percent: 0.01
     '2009':
       count: 9
+      total: 167938
       percent: 0.01
 '23009':
   name: Hancock County
   employment:
     '2006':
       count: 12
+      total: 22839
       percent: 0.05
     '2007':
       count: 13
+      total: 22776
       percent: 0.06
     '2008':
       count: 11
+      total: 22860
       percent: 0.05
     '2009':
       count: 10
+      total: 21992
       percent: 0.05
     '2010':
       count: 8
+      total: 21898
       percent: 0.04
     '2011':
       count: 6
+      total: 21987
       percent: 0.03
 '23011':
   name: Kennebec County
   employment:
     '2013':
-      count: 17
-      percent: 0.03
+      count: 93
+      total: 58537
+      percent: 0.16
     '2014':
-      count: 22
-      percent: 0.04
+      count: 63
+      total: 59083
+      percent: 0.11
 '23017':
   name: Oxford County
   employment:
     '2006':
       count: 21
+      total: 17835
       percent: 0.12
     '2007':
       count: 19
+      total: 17859
       percent: 0.11
     '2008':
       count: 19
+      total: 17409
       percent: 0.11
     '2009':
       count: 18
+      total: 16480
       percent: 0.11
     '2010':
       count: 15
+      total: 16368
       percent: 0.09
     '2011':
       count: 12
+      total: 16224
       percent: 0.07
     '2012':
       count: 12
+      total: 16468
       percent: 0.07
     '2013':
       count: 11
+      total: 16625
       percent: 0.07
     '2014':
       count: 11
+      total: 16775
       percent: 0.07
     '2015':
       count: 11
+      total: 16710
       percent: 0.07
+    '2016':
+      count: 10
+      total: 16674
+      percent: 0.06
 '23019':
   name: Penobscot County
   employment:
+    '2009':
+      count: 137
+      total: 69610
+      percent: 0.2
     '2010':
-      count: 7
-      percent: 0.01
+      count: 59
+      total: 68251
+      percent: 0.09
     '2011':
-      count: 10
-      percent: 0.01
+      count: 63
+      total: 68250
+      percent: 0.09
+    '2012':
+      count: 56
+      total: 68860
+      percent: 0.08
+    '2013':
+      count: 55
+      total: 69223
+      percent: 0.08
 '23029':
   name: Washington County
   employment:
     '2009':
       count: 8
+      total: 10482
       percent: 0.08
 '23031':
   name: York County
   employment:
     '2006':
       count: 41
+      total: 67729
       percent: 0.06
     '2007':
       count: 26
+      total: 68232
       percent: 0.04
     '2008':
       count: 26
+      total: 68208
       percent: 0.04
     '2009':
       count: 21
+      total: 65911
       percent: 0.03
     '2010':
       count: 38
+      total: 65673
       percent: 0.06
     '2011':
       count: 63
+      total: 66184
       percent: 0.1
     '2012':
       count: 68
+      total: 66901
       percent: 0.1
     '2013':
-      count: 66
-      percent: 0.1
+      count: 81
+      total: 67017
+      percent: 0.12
     '2014':
       count: 70
+      total: 67437
       percent: 0.1
     '2015':
       count: 76
+      total: 68905
+      percent: 0.11
+    '2016':
+      count: 77
+      total: 70570
       percent: 0.11

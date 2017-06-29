@@ -1,0 +1,28 @@
+# These are NAICS codes for each of the individual commodities or commodity
+# groups that we want to collect figures for. Note that NAICS codes are
+# structured: for instance, Oil & Gas is 211, which means that it represents
+# the sum of all other NAICS codes that begin with 211.
+naics:
+  # The total number of jobs at each geographic level, which we divide by
+  # to get the percentage:
+  All:                  10
+  # All mining and what we normally think of as "extractives":
+  Mining:               21
+  # The big ones:
+  Oil and gas:          211
+  Coal:                 2121
+  # Nonenergy minerals:
+  Hardrock minerals:    2122
+  Nonmetallic minerals: 2123
+  # Support activities:
+  Mining support:       213
+  Drilling Oil and Gas Wells:  213111
+  Support Activities for Oil and Gas Operations: 213112
+  Support Activities for Coal Mining: 213113
+  Support Activities for Metal Mining: 213114
+  Support Activities for Nonmetallic Minerals (except Fuels) Mining: 213115
+  # Renewables:
+  Hydroelectric:        221111
+  Solar:                221114
+  Wind:                 221115
+  Geothermal:           221116

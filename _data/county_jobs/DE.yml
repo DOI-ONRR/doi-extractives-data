@@ -1,6 +1,99 @@
+'10001':
+  name: Kent County
+  employment:
+    '2006':
+      count: 62146
+      percent: null
+    '2007':
+      count: 63154
+      percent: null
+    '2008':
+      count: 62659
+      percent: null
+    '2009':
+      count: 60221
+      percent: null
+    '2010':
+      count: 60027
+      percent: null
+    '2011':
+      count: 60815
+      percent: null
+    '2012':
+      count: 60912
+      percent: null
+    '2013':
+      count: 63926
+      percent: null
+    '2014':
+      count: 64319
+      percent: null
+    '2015':
+      count: 65052
+      percent: null
 '10003':
   name: New Castle County
   employment:
-    '2005':
-      count: 40
-      percent: 0.01
+    '2006':
+      count: 282884
+      percent: null
+    '2007':
+      count: 283231
+      percent: null
+    '2008':
+      count: 281652
+      percent: null
+    '2009':
+      count: 266258
+      percent: null
+    '2010':
+      count: 261981
+      percent: null
+    '2011':
+      count: 265700
+      percent: null
+    '2012':
+      count: 266937
+      percent: null
+    '2013':
+      count: 270918
+      percent: null
+    '2014':
+      count: 278216
+      percent: null
+    '2015':
+      count: 285300
+      percent: null
+'10005':
+  name: Sussex County
+  employment:
+    '2006':
+      count: 71440
+      percent: null
+    '2007':
+      count: 70766
+      percent: null
+    '2008':
+      count: 70625
+      percent: null
+    '2009':
+      count: 68572
+      percent: null
+    '2010':
+      count: 69131
+      percent: null
+    '2011':
+      count: 68066
+      percent: null
+    '2012':
+      count: 68717
+      percent: null
+    '2013':
+      count: 68962
+      percent: null
+    '2014':
+      count: 71541
+      percent: null
+    '2015':
+      count: 73903
+      percent: null

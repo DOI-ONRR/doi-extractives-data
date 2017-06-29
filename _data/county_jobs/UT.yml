@@ -3,571 +3,811 @@
   employment:
     '2006':
       count: 54
+      total: 2252
       percent: 2.4
     '2007':
       count: 65
+      total: 2398
       percent: 2.71
     '2008':
       count: 89
+      total: 2516
       percent: 3.54
     '2009':
       count: 124
+      total: 2575
       percent: 4.82
     '2010':
       count: 42
+      total: 2387
       percent: 1.76
     '2011':
       count: 30
+      total: 2477
       percent: 1.21
     '2013':
       count: 193
+      total: 2723
       percent: 7.09
     '2014':
       count: 193
+      total: 2667
       percent: 7.24
 '49003':
   name: Box Elder County
   employment:
     '2007':
       count: 23
+      total: 20506
       percent: 0.11
     '2009':
       count: 19
+      total: 18584
       percent: 0.1
     '2010':
       count: 31
+      total: 17322
       percent: 0.18
     '2011':
       count: 25
+      total: 16611
       percent: 0.15
     '2012':
       count: 16
+      total: 16493
       percent: 0.1
     '2013':
       count: 24
+      total: 17205
       percent: 0.14
     '2014':
       count: 28
+      total: 17769
       percent: 0.16
     '2015':
       count: 18
+      total: 18757
       percent: 0.1
+    '2016':
+      count: 24
+      total: 19989
+      percent: 0.12
 '49005':
   name: Cache County
   employment:
     '2007':
       count: 9
+      total: 46721
       percent: 0.02
     '2008':
       count: 7
+      total: 47459
       percent: 0.01
     '2009':
       count: 6
+      total: 45886
       percent: 0.01
     '2010':
       count: 7
+      total: 46486
       percent: 0.02
     '2011':
       count: 9
+      total: 47235
       percent: 0.02
     '2012':
       count: 13
+      total: 47868
       percent: 0.03
     '2013':
       count: 14
+      total: 48688
       percent: 0.03
     '2014':
       count: 14
+      total: 50290
       percent: 0.03
     '2015':
       count: 11
+      total: 51794
       percent: 0.02
+    '2016':
+      count: 15
+      total: 52928
+      percent: 0.03
 '49007':
   name: Carbon County
   employment:
     '2010':
       count: 1084
+      total: 9165
       percent: 11.83
     '2011':
       count: 970
+      total: 9011
       percent: 10.76
+    '2016':
+      count: 571
+      total: 8047
+      percent: 7.1
 '49011':
   name: Davis County
   employment:
     '2006':
       count: 145
+      total: 100349
       percent: 0.14
     '2007':
       count: 121
+      total: 103280
       percent: 0.12
     '2008':
       count: 139
+      total: 102955
       percent: 0.14
     '2009':
       count: 163
+      total: 99563
       percent: 0.16
     '2010':
       count: 136
+      total: 100022
       percent: 0.14
     '2011':
       count: 158
+      total: 104738
       percent: 0.15
     '2012':
       count: 179
+      total: 107623
       percent: 0.17
     '2013':
       count: 174
+      total: 110281
       percent: 0.16
     '2014':
       count: 196
+      total: 113935
       percent: 0.17
     '2015':
       count: 157
+      total: 118284
       percent: 0.13
+    '2016':
+      count: 134
+      total: 120785
+      percent: 0.11
 '49013':
   name: Duchesne County
   employment:
     '2006':
       count: 981
+      total: 6557
       percent: 14.96
     '2007':
       count: 1252
+      total: 7341
       percent: 17.05
     '2008':
       count: 1623
+      total: 8406
       percent: 19.31
     '2009':
       count: 1465
+      total: 7756
       percent: 18.89
     '2010':
       count: 1510
+      total: 7332
       percent: 20.59
     '2011':
       count: 1766
+      total: 8018
       percent: 22.03
     '2012':
       count: 2194
+      total: 9048
       percent: 24.25
     '2013':
       count: 2269
+      total: 9243
       percent: 24.55
     '2014':
       count: 2541
+      total: 9659
       percent: 26.31
     '2015':
       count: 1950
+      total: 8428
       percent: 23.14
+    '2016':
+      count: 1489
+      total: 7615
+      percent: 19.55
 '49015':
   name: Emery County
   employment:
     '2015':
       count: 294
+      total: 3151
       percent: 9.33
 '49021':
   name: Iron County
   employment:
     '2006':
       count: 58
+      total: 16149
       percent: 0.36
     '2010':
       count: 75
+      total: 14522
       percent: 0.52
     '2011':
       count: 100
+      total: 14563
       percent: 0.69
     '2012':
       count: 101
+      total: 14584
       percent: 0.69
     '2013':
       count: 100
+      total: 14720
       percent: 0.68
     '2014':
       count: 192
+      total: 15363
       percent: 1.25
     '2015':
       count: 124
+      total: 15810
       percent: 0.78
+    '2016':
+      count: 95
+      total: 16688
+      percent: 0.57
 '49023':
   name: Juab County
   employment:
     '2006':
       count: 80
+      total: 3514
       percent: 2.28
     '2007':
       count: 100
+      total: 3647
       percent: 2.74
     '2008':
       count: 80
+      total: 3333
       percent: 2.4
     '2009':
       count: 60
+      total: 3277
       percent: 1.83
     '2011':
       count: 83
+      total: 3027
       percent: 2.74
     '2012':
       count: 59
+      total: 3082
       percent: 1.91
     '2013':
       count: 62
+      total: 3267
       percent: 1.9
     '2014':
       count: 60
+      total: 3267
       percent: 1.84
     '2015':
       count: 79
+      total: 3512
       percent: 2.25
+    '2016':
+      count: 73
+      total: 3593
+      percent: 2.03
 '49027':
   name: Millard County
   employment:
     '2006':
       count: 82
+      total: 4296
       percent: 1.91
     '2008':
       count: 92
+      total: 4411
       percent: 2.09
     '2010':
       count: 83
+      total: 4358
       percent: 1.9
     '2011':
       count: 96
+      total: 4402
       percent: 2.18
     '2012':
       count: 92
+      total: 4364
       percent: 2.11
     '2013':
       count: 98
+      total: 4425
       percent: 2.21
     '2014':
       count: 104
+      total: 4493
       percent: 2.31
     '2015':
       count: 109
+      total: 4563
       percent: 2.39
+    '2016':
+      count: 105
+      total: 4549
+      percent: 2.31
 '49029':
   name: Morgan County
   employment:
     '2014':
       count: 22
+      total: 1968
       percent: 1.12
     '2015':
       count: 22
+      total: 2066
       percent: 1.06
 '49033':
   name: Rich County
   employment:
     '2008':
       count: 19
+      total: 765
       percent: 2.48
 '49035':
   name: Salt Lake County
   employment:
     '2006':
       count: 2203
+      total: 564610
       percent: 0.39
     '2007':
       count: 2450
+      total: 586393
       percent: 0.42
     '2008':
       count: 2908
+      total: 588688
       percent: 0.49
     '2009':
       count: 2527
+      total: 559385
       percent: 0.45
     '2010':
       count: 2628
+      total: 557372
       percent: 0.47
     '2011':
       count: 3220
+      total: 568472
       percent: 0.57
     '2012':
       count: 3652
+      total: 589390
       percent: 0.62
     '2013':
       count: 3399
+      total: 608778
       percent: 0.56
     '2014':
       count: 2948
+      total: 623528
       percent: 0.47
     '2015':
-      count: 2696
+      count: 2694
+      total: 645265
       percent: 0.42
+    '2016':
+      count: 2435
+      total: 668686
+      percent: 0.36
 '49037':
   name: San Juan County
   employment:
     '2007':
       count: 205
+      total: 4202
       percent: 4.88
     '2008':
       count: 288
+      total: 4201
       percent: 6.86
     '2009':
       count: 323
+      total: 4084
       percent: 7.91
     '2010':
       count: 387
+      total: 4148
       percent: 9.33
     '2011':
       count: 424
+      total: 4153
       percent: 10.21
     '2012':
       count: 432
+      total: 4025
       percent: 10.73
     '2013':
       count: 377
+      total: 4047
       percent: 9.32
     '2014':
       count: 336
+      total: 4016
       percent: 8.37
     '2015':
       count: 380
+      total: 4095
       percent: 9.28
+    '2016':
+      count: 312
+      total: 4084
+      percent: 7.64
 '49039':
   name: Sanpete County
   employment:
     '2008':
       count: 104
+      total: 7305
       percent: 1.42
     '2009':
       count: 75
+      total: 6840
       percent: 1.1
     '2010':
       count: 43
+      total: 6485
       percent: 0.66
     '2011':
       count: 52
+      total: 6488
       percent: 0.8
     '2012':
       count: 58
+      total: 6791
       percent: 0.85
     '2013':
       count: 54
+      total: 6716
       percent: 0.8
     '2014':
       count: 30
+      total: 6813
       percent: 0.44
     '2015':
       count: 29
+      total: 7100
       percent: 0.41
+    '2016':
+      count: 29
+      total: 7383
+      percent: 0.39
 '49041':
   name: Sevier County
   employment:
     '2006':
       count: 489
+      total: 7801
       percent: 6.27
     '2007':
       count: 508
+      total: 8026
       percent: 6.33
     '2008':
       count: 547
+      total: 8118
       percent: 6.74
     '2009':
       count: 570
+      total: 7794
       percent: 7.31
     '2010':
       count: 570
+      total: 7831
       percent: 7.28
     '2011':
       count: 599
+      total: 7882
       percent: 7.6
     '2012':
       count: 593
+      total: 8020
       percent: 7.39
     '2013':
       count: 558
+      total: 7963
       percent: 7.01
     '2014':
       count: 599
+      total: 8067
       percent: 7.43
     '2015':
       count: 611
+      total: 8312
       percent: 7.35
+    '2016':
+      count: 629
+      total: 8392
+      percent: 7.5
 '49043':
   name: Summit County
   employment:
     '2006':
       count: 79
+      total: 20631
       percent: 0.38
     '2007':
       count: 106
+      total: 21922
       percent: 0.48
     '2008':
       count: 90
+      total: 22674
       percent: 0.4
     '2009':
       count: 86
+      total: 20819
       percent: 0.41
     '2010':
       count: 69
+      total: 20739
       percent: 0.33
     '2011':
       count: 53
+      total: 21941
       percent: 0.24
     '2012':
       count: 83
+      total: 22742
       percent: 0.36
     '2013':
       count: 78
+      total: 23419
       percent: 0.33
     '2014':
       count: 79
+      total: 24402
       percent: 0.32
     '2015':
       count: 74
+      total: 25447
       percent: 0.29
 '49045':
   name: Tooele County
   employment:
     '2009':
       count: 69
+      total: 15444
       percent: 0.45
     '2010':
       count: 77
+      total: 15628
       percent: 0.49
     '2011':
       count: 80
+      total: 15980
       percent: 0.5
     '2012':
       count: 74
+      total: 15814
       percent: 0.47
     '2013':
       count: 79
+      total: 15392
       percent: 0.51
     '2014':
       count: 87
+      total: 14917
       percent: 0.58
     '2015':
       count: 92
+      total: 14996
       percent: 0.61
+    '2016':
+      count: 90
+      total: 15803
+      percent: 0.57
 '49047':
   name: Uintah County
   employment:
     '2006':
       count: 3246
+      total: 13288
       percent: 24.43
     '2007':
       count: 3525
+      total: 14260
       percent: 24.72
     '2008':
       count: 3731
+      total: 15281
       percent: 24.42
     '2009':
       count: 2637
+      total: 13317
       percent: 19.8
     '2010':
       count: 2626
+      total: 13280
       percent: 19.77
     '2011':
       count: 3089
+      total: 14186
       percent: 21.77
     '2012':
       count: 3190
+      total: 14931
       percent: 21.36
     '2013':
       count: 3056
+      total: 14556
       percent: 20.99
     '2014':
       count: 3209
+      total: 15031
       percent: 21.35
     '2015':
       count: 2425
+      total: 13880
       percent: 17.47
+    '2016':
+      count: 1658
+      total: 12403
+      percent: 13.37
 '49049':
   name: Utah County
   employment:
     '2006':
       count: 48
+      total: 165652
       percent: 0.03
     '2007':
       count: 55
+      total: 175072
       percent: 0.03
     '2008':
       count: 53
+      total: 173760
       percent: 0.03
     '2009':
       count: 59
+      total: 164168
       percent: 0.04
     '2010':
       count: 56
+      total: 163367
       percent: 0.03
     '2011':
       count: 76
+      total: 169171
       percent: 0.04
     '2012':
       count: 126
+      total: 177554
       percent: 0.07
     '2013':
       count: 103
+      total: 186495
       percent: 0.06
     '2014':
       count: 111
+      total: 195152
       percent: 0.06
     '2015':
       count: 88
+      total: 208002
       percent: 0.04
+    '2016':
+      count: 71
+      total: 219876
+      percent: 0.03
 '49051':
   name: Wasatch County
   employment:
     '2006':
       count: 80
+      total: 6430
       percent: 1.24
     '2007':
       count: 71
+      total: 7069
       percent: 1
     '2008':
       count: 58
+      total: 6539
       percent: 0.89
     '2009':
       count: 53
+      total: 5875
       percent: 0.9
     '2010':
       count: 59
+      total: 5838
       percent: 1.01
     '2011':
       count: 56
+      total: 5956
       percent: 0.94
     '2012':
       count: 10
+      total: 6242
       percent: 0.16
+    '2016':
+      count: 6
+      total: 8155
+      percent: 0.07
 '49053':
   name: Washington County
   employment:
     '2006':
       count: 246
+      total: 50842
       percent: 0.48
     '2007':
       count: 307
+      total: 52848
       percent: 0.58
     '2008':
       count: 261
+      total: 50843
       percent: 0.51
     '2009':
       count: 213
+      total: 46377
       percent: 0.46
     '2010':
       count: 133
+      total: 45171
       percent: 0.29
     '2011':
       count: 142
+      total: 45903
       percent: 0.31
     '2012':
       count: 152
+      total: 48279
       percent: 0.31
     '2013':
       count: 151
+      total: 50751
       percent: 0.3
     '2014':
       count: 166
+      total: 53720
       percent: 0.31
     '2015':
       count: 166
+      total: 56348
       percent: 0.29
+    '2016':
+      count: 181
+      total: 60216
+      percent: 0.3
 '49057':
   name: Weber County
   employment:
     '2014':
       count: 32
+      total: 95135
       percent: 0.03
     '2015':
       count: 42
+      total: 98729
       percent: 0.04
+    '2016':
+      count: 56
+      total: 101986
+      percent: 0.05

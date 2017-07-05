@@ -1,11 +1,13 @@
 *.css.map
+*.db
+*.db-journal
 *.log
 .*.sw?
 .DS_Store
 .env
-.sass-cache
 .jekyll-metadata
+.sass-cache
 _site
-*.db
 node_modules
 tmp
+yarn*

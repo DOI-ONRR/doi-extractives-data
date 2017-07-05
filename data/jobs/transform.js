@@ -1,12 +1,8 @@
-module.exports = {
-  year:       'Year',
-  state:      'State',
-  county:     'County',
-  fips:       'FIPS',
-  region_id:  function() { return null; },
-  extractive_jobs: 'Jobs',
-  total_jobs: 'Total',
-  percent: function(d) {
-    return Number(d.Share) * 100;
-  }
+module.exports = d => {
+  // pass through the other fields, and create columns for the following
+  // ones with types that match these values:
+  d.region_id = 'XX';
+  // this is a trick to coerce the FIPS codes to strings;
+  d.fips = 'FIPS' + d.fips;
+  return d;
 };

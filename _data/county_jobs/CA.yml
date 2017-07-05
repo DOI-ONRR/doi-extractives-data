@@ -3,1135 +3,1648 @@
   employment:
     '2006':
       count: 195
+      total: 683616
       percent: 0.03
     '2007':
       count: 161
+      total: 686655
       percent: 0.02
     '2008':
       count: 119
+      total: 683099
       percent: 0.02
     '2009':
       count: 132
+      total: 640949
       percent: 0.02
     '2010':
       count: 126
+      total: 630343
       percent: 0.02
     '2011':
       count: 157
+      total: 634983
       percent: 0.02
     '2012':
       count: 135
+      total: 658708
       percent: 0.02
     '2013':
       count: 147
+      total: 677978
       percent: 0.02
     '2014':
       count: 186
+      total: 698536
       percent: 0.03
     '2015':
       count: 178
+      total: 728995
       percent: 0.02
+    '2016':
+      count: 235
+      total: 751737
+      percent: 0.03
 '06005':
   name: Amador County
   employment:
     '2006':
       count: 160
+      total: 12666
       percent: 1.26
     '2007':
       count: 150
+      total: 13026
       percent: 1.15
     '2008':
       count: 139
+      total: 12797
       percent: 1.09
     '2009':
       count: 125
+      total: 12511
       percent: 1
     '2010':
       count: 122
+      total: 11995
       percent: 1.02
     '2011':
       count: 123
+      total: 11581
       percent: 1.06
     '2012':
       count: 129
+      total: 11395
       percent: 1.13
     '2013':
       count: 121
+      total: 11195
       percent: 1.08
     '2014':
       count: 71
+      total: 11335
       percent: 0.63
     '2015':
       count: 64
+      total: 11623
       percent: 0.55
 '06007':
   name: Butte County
   employment:
     '2006':
       count: 40
+      total: 76107
       percent: 0.05
     '2007':
       count: 37
+      total: 76336
       percent: 0.05
     '2008':
       count: 42
+      total: 75845
       percent: 0.06
     '2009':
       count: 30
+      total: 71621
       percent: 0.04
     '2010':
       count: 27
+      total: 71120
       percent: 0.04
     '2011':
       count: 28
+      total: 69485
       percent: 0.04
     '2012':
       count: 24
+      total: 71311
       percent: 0.03
     '2013':
       count: 29
+      total: 74186
       percent: 0.04
     '2014':
       count: 54
+      total: 76135
       percent: 0.07
     '2015':
       count: 50
+      total: 78370
       percent: 0.06
+    '2016':
+      count: 31
+      total: 80761
+      percent: 0.04
 '06013':
   name: Contra Costa County
   employment:
     '2006':
       count: 979
+      total: 345649
       percent: 0.28
     '2007':
       count: 1049
+      total: 344954
       percent: 0.3
     '2011':
       count: 1024
+      total: 315064
       percent: 0.33
     '2012':
       count: 1073
+      total: 323484
       percent: 0.33
     '2013':
       count: 1018
+      total: 332623
       percent: 0.31
     '2014':
       count: 579
+      total: 339281
       percent: 0.17
     '2015':
       count: 700
+      total: 346862
       percent: 0.2
+    '2016':
+      count: 618
+      total: 359427
+      percent: 0.17
 '06017':
   name: El Dorado County
   employment:
     '2006':
       count: 30
+      total: 52289
       percent: 0.06
     '2007':
       count: 52
+      total: 52741
       percent: 0.1
     '2008':
       count: 51
+      total: 51761
       percent: 0.1
     '2009':
       count: 56
+      total: 48364
       percent: 0.12
     '2010':
       count: 50
+      total: 47026
       percent: 0.11
     '2011':
       count: 44
+      total: 46913
       percent: 0.09
     '2012':
       count: 52
+      total: 47301
       percent: 0.11
     '2013':
       count: 41
+      total: 48777
       percent: 0.08
     '2014':
       count: 56
+      total: 49782
       percent: 0.11
     '2015':
-      count: 64
+      count: 63
+      total: 51560
       percent: 0.12
+    '2016':
+      count: 57
+      total: 53922
+      percent: 0.11
 06019:
   name: Fresno County
   employment:
     '2006':
-      count: 156
-      percent: 0.04
+      count: 223
+      total: 350356
+      percent: 0.06
     '2007':
-      count: 116
-      percent: 0.03
+      count: 184
+      total: 355221
+      percent: 0.05
     '2008':
-      count: 130
-      percent: 0.04
+      count: 191
+      total: 354548
+      percent: 0.05
     '2009':
-      count: 177
-      percent: 0.05
-    '2010':
-      count: 174
-      percent: 0.05
-    '2011':
-      count: 187
-      percent: 0.06
-    '2012':
-      count: 208
-      percent: 0.06
-    '2013':
-      count: 232
+      count: 226
+      total: 334586
       percent: 0.07
+    '2010':
+      count: 226
+      total: 329941
+      percent: 0.07
+    '2011':
+      count: 250
+      total: 332339
+      percent: 0.08
+    '2012':
+      count: 272
+      total: 338684
+      percent: 0.08
+    '2013':
+      count: 295
+      total: 349193
+      percent: 0.08
     '2014':
-      count: 283
-      percent: 0.08
+      count: 343
+      total: 354646
+      percent: 0.1
     '2015':
-      count: 290
-      percent: 0.08
+      count: 345
+      total: 364788
+      percent: 0.09
+    '2016':
+      count: 359
+      total: 374935
+      percent: 0.1
 '06021':
   name: Glenn County
   employment:
     '2007':
       count: 11
+      total: 8062
       percent: 0.14
+    '2016':
+      count: 14
+      total: 8953
+      percent: 0.16
 '06023':
   name: Humboldt County
   employment:
     '2015':
       count: 12
+      total: 46746
+      percent: 0.03
+    '2016':
+      count: 13
+      total: 48272
       percent: 0.03
 '06025':
   name: Imperial County
   employment:
+    '2010':
+      count: 192
+      total: 57426
+      percent: 0.33
+    '2011':
+      count: 198
+      total: 56496
+      percent: 0.35
+    '2012':
+      count: 193
+      total: 59010
+      percent: 0.33
+    '2013':
+      count: 194
+      total: 60350
+      percent: 0.32
+    '2014':
+      count: 198
+      total: 62959
+      percent: 0.31
     '2015':
-      count: 378
-      percent: 0.59
+      count: 579
+      total: 63939
+      percent: 0.91
+    '2016':
+      count: 581
+      total: 62892
+      percent: 0.92
 '06027':
   name: Inyo County
   employment:
     '2006':
       count: 14
+      total: 7780
       percent: 0.18
     '2007':
       count: 14
+      total: 7660
       percent: 0.18
     '2008':
       count: 23
+      total: 7612
       percent: 0.3
     '2009':
       count: 19
+      total: 7511
       percent: 0.25
     '2010':
       count: 45
+      total: 7538
       percent: 0.6
     '2011':
       count: 48
+      total: 7433
       percent: 0.65
     '2012':
       count: 48
+      total: 7409
       percent: 0.65
     '2013':
       count: 44
+      total: 7393
       percent: 0.6
     '2014':
       count: 43
+      total: 7358
       percent: 0.58
 06029:
   name: Kern County
   employment:
     '2006':
       count: 9320
+      total: 276017
       percent: 3.38
     '2007':
       count: 9767
+      total: 280884
       percent: 3.48
     '2008':
       count: 10707
+      total: 284966
       percent: 3.76
     '2009':
       count: 9196
+      total: 268087
       percent: 3.43
     '2010':
       count: 9528
+      total: 268335
       percent: 3.55
     '2011':
-      count: 11512
-      percent: 4.12
+      count: 11767
+      total: 279129
+      percent: 4.22
     '2012':
-      count: 12697
-      percent: 4.31
+      count: 12943
+      total: 294426
+      percent: 4.4
     '2013':
-      count: 12295
-      percent: 4.04
+      count: 12547
+      total: 304479
+      percent: 4.12
     '2014':
-      count: 12517
-      percent: 4.01
+      count: 12748
+      total: 311992
+      percent: 4.09
     '2015':
-      count: 11163
-      percent: 3.58
+      count: 11259
+      total: 312020
+      percent: 3.61
+    '2016':
+      count: 8806
+      total: 314232
+      percent: 2.8
 '06033':
   name: Lake County
   employment:
     '2008':
       count: 45
+      total: 15285
       percent: 0.29
     '2009':
       count: 38
+      total: 14611
       percent: 0.26
     '2010':
       count: 40
+      total: 13987
       percent: 0.29
     '2012':
       count: 45
+      total: 14244
       percent: 0.32
     '2014':
       count: 53
+      total: 15325
       percent: 0.35
     '2015':
       count: 57
+      total: 15536
       percent: 0.37
+    '2016':
+      count: 54
+      total: 16109
+      percent: 0.34
 '06037':
   name: Los Angeles County
   employment:
     '2006':
       count: 3976
+      total: 4161761
       percent: 0.1
     '2007':
       count: 4437
+      total: 4200998
       percent: 0.11
     '2008':
       count: 4363
+      total: 4168699
       percent: 0.1
     '2009':
       count: 4098
+      total: 3930689
       percent: 0.1
     '2010':
       count: 4204
+      total: 3856789
       percent: 0.11
     '2011':
       count: 4036
+      total: 3883063
       percent: 0.1
     '2012':
-      count: 4312
+      count: 4319
+      total: 3977297
       percent: 0.11
     '2013':
-      count: 4602
+      count: 4615
+      total: 4073405
       percent: 0.11
     '2014':
-      count: 4646
+      count: 4668
+      total: 4154640
       percent: 0.11
     '2015':
       count: 3833
+      total: 4244646
       percent: 0.09
+    '2016':
+      count: 3633
+      total: 4344647
+      percent: 0.08
 '06041':
   name: Marin County
   employment:
     '2011':
       count: 38
+      total: 102656
       percent: 0.04
     '2012':
       count: 7
+      total: 106021
       percent: 0.01
     '2013':
       count: 7
+      total: 108850
       percent: 0.01
 '06045':
   name: Mendocino County
   employment:
     '2006':
       count: 39
+      total: 32486
       percent: 0.12
     '2007':
       count: 46
+      total: 32760
       percent: 0.14
     '2008':
       count: 39
+      total: 32074
       percent: 0.12
     '2009':
       count: 32
+      total: 29940
       percent: 0.11
     '2010':
       count: 27
+      total: 29514
       percent: 0.09
     '2011':
       count: 28
+      total: 29119
       percent: 0.1
     '2012':
       count: 28
+      total: 29766
       percent: 0.09
     '2014':
       count: 43
+      total: 31281
       percent: 0.14
     '2015':
       count: 44
+      total: 31549
+      percent: 0.14
+    '2016':
+      count: 44
+      total: 31927
       percent: 0.14
 '06053':
   name: Monterey County
   employment:
     '2006':
       count: 194
+      total: 168013
       percent: 0.12
     '2007':
       count: 188
+      total: 170471
       percent: 0.11
     '2008':
       count: 205
+      total: 172450
       percent: 0.12
     '2009':
       count: 201
+      total: 165014
       percent: 0.12
     '2010':
       count: 193
+      total: 166467
       percent: 0.12
     '2011':
       count: 204
+      total: 167569
       percent: 0.12
     '2012':
       count: 203
+      total: 171225
       percent: 0.12
     '2013':
       count: 217
+      total: 174519
       percent: 0.12
     '2014':
       count: 229
+      total: 180247
       percent: 0.13
     '2015':
       count: 261
+      total: 184815
       percent: 0.14
+    '2016':
+      count: 248
+      total: 188457
+      percent: 0.13
 '06055':
   name: Napa County
   employment:
     '2006':
       count: 55
+      total: 66029
       percent: 0.08
     '2007':
       count: 63
+      total: 67961
       percent: 0.09
     '2008':
       count: 63
+      total: 68850
       percent: 0.09
     '2009':
       count: 66
+      total: 65012
       percent: 0.1
     '2010':
       count: 58
+      total: 64073
       percent: 0.09
     '2011':
       count: 49
+      total: 65086
       percent: 0.08
     '2012':
       count: 40
+      total: 67461
       percent: 0.06
 '06057':
   name: Nevada County
   employment:
     '2006':
       count: 80
+      total: 30314
       percent: 0.26
     '2007':
       count: 85
+      total: 30708
       percent: 0.28
     '2008':
       count: 76
+      total: 30152
       percent: 0.25
     '2009':
       count: 61
+      total: 28039
       percent: 0.22
     '2010':
       count: 51
+      total: 27786
       percent: 0.18
     '2011':
       count: 50
+      total: 27910
       percent: 0.18
     '2012':
       count: 56
+      total: 28015
       percent: 0.2
     '2013':
       count: 55
+      total: 28443
       percent: 0.19
     '2014':
       count: 56
+      total: 28861
       percent: 0.19
     '2015':
       count: 32
+      total: 29882
       percent: 0.11
+    '2016':
+      count: 27
+      total: 30601
+      percent: 0.09
 06059:
   name: Orange County
   employment:
     '2006':
       count: 609
+      total: 1514873
       percent: 0.04
     '2007':
       count: 561
+      total: 1509528
       percent: 0.04
     '2008':
       count: 634
+      total: 1482773
       percent: 0.04
     '2009':
       count: 531
+      total: 1373084
       percent: 0.04
     '2010':
       count: 475
+      total: 1356018
       percent: 0.04
     '2011':
       count: 496
+      total: 1371588
       percent: 0.04
     '2012':
       count: 467
+      total: 1403606
       percent: 0.03
     '2013':
       count: 498
+      total: 1440967
       percent: 0.03
     '2014':
       count: 712
+      total: 1472171
       percent: 0.05
     '2015':
-      count: 628
+      count: 630
+      total: 1519107
+      percent: 0.04
+    '2016':
+      count: 571
+      total: 1560393
       percent: 0.04
 '06061':
   name: Placer County
   employment:
     '2006':
       count: 94
+      total: 136972
       percent: 0.07
     '2007':
       count: 51
+      total: 138602
       percent: 0.04
     '2008':
       count: 42
+      total: 135701
       percent: 0.03
     '2009':
       count: 16
+      total: 125916
       percent: 0.01
     '2010':
       count: 16
+      total: 125051
       percent: 0.01
     '2011':
       count: 15
+      total: 126388
       percent: 0.01
     '2012':
       count: 22
+      total: 130573
       percent: 0.02
     '2013':
       count: 33
+      total: 137344
       percent: 0.02
     '2014':
       count: 54
+      total: 142126
       percent: 0.04
     '2015':
       count: 61
+      total: 148506
       percent: 0.04
+    '2016':
+      count: 92
+      total: 156272
+      percent: 0.06
 '06063':
   name: Plumas County
   employment:
     '2009':
       count: 12
+      total: 6163
       percent: 0.19
     '2015':
       count: 7
+      total: 6015
       percent: 0.12
 '06065':
   name: Riverside County
   employment:
     '2006':
       count: 666
+      total: 633940
       percent: 0.11
     '2007':
       count: 675
+      total: 635440
       percent: 0.11
     '2008':
       count: 544
+      total: 610377
       percent: 0.09
     '2009':
       count: 507
+      total: 565109
       percent: 0.09
     '2010':
       count: 429
+      total: 552459
       percent: 0.08
     '2011':
-      count: 412
-      percent: 0.07
+      count: 558
+      total: 557963
+      percent: 0.1
     '2012':
-      count: 406
-      percent: 0.07
+      count: 552
+      total: 572351
+      percent: 0.1
     '2013':
-      count: 339
-      percent: 0.06
+      count: 468
+      total: 595809
+      percent: 0.08
     '2014':
-      count: 302
-      percent: 0.05
+      count: 387
+      total: 625942
+      percent: 0.06
     '2015':
-      count: 296
-      percent: 0.04
+      count: 389
+      total: 658318
+      percent: 0.06
+    '2016':
+      count: 428
+      total: 689503
+      percent: 0.06
 '06067':
   name: Sacramento County
   employment:
     '2006':
       count: 233
+      total: 636988
       percent: 0.04
     '2007':
       count: 252
+      total: 639439
       percent: 0.04
     '2008':
       count: 177
+      total: 627491
       percent: 0.03
     '2009':
       count: 151
+      total: 599247
       percent: 0.03
     '2010':
       count: 140
+      total: 581465
       percent: 0.02
     '2011':
       count: 124
+      total: 576160
       percent: 0.02
     '2012':
       count: 132
+      total: 589646
       percent: 0.02
     '2013':
       count: 160
+      total: 601465
       percent: 0.03
     '2014':
       count: 174
+      total: 612685
       percent: 0.03
     '2015':
       count: 174
+      total: 626506
       percent: 0.03
+    '2016':
+      count: 186
+      total: 638501
+      percent: 0.03
+06069:
+  name: San Benito County
+  employment:
+    '2016':
+      count: 23
+      total: 17032
+      percent: 0.14
 '06071':
   name: San Bernardino County
   employment:
     '2006':
       count: 671
+      total: 654679
       percent: 0.1
     '2007':
       count: 609
+      total: 663618
       percent: 0.09
     '2008':
       count: 614
+      total: 649531
       percent: 0.09
     '2009':
       count: 594
+      total: 608124
       percent: 0.1
     '2010':
       count: 588
+      total: 592690
       percent: 0.1
     '2011':
       count: 605
+      total: 597095
       percent: 0.1
     '2012':
       count: 795
+      total: 612986
       percent: 0.13
     '2013':
       count: 848
+      total: 630694
       percent: 0.13
     '2014':
-      count: 957
-      percent: 0.15
+      count: 1090
+      total: 659116
+      percent: 0.17
     '2015':
-      count: 964
-      percent: 0.14
+      count: 1057
+      total: 689427
+      percent: 0.15
+    '2016':
+      count: 584
+      total: 705795
+      percent: 0.08
 '06073':
   name: San Diego County
   employment:
     '2006':
       count: 447
+      total: 1313949
       percent: 0.03
     '2007':
       count: 422
+      total: 1321214
       percent: 0.03
     '2008':
       count: 342
+      total: 1317274
       percent: 0.03
     '2009':
       count: 363
+      total: 1247861
       percent: 0.03
     '2010':
       count: 440
+      total: 1230694
       percent: 0.04
     '2011':
       count: 425
+      total: 1245259
       percent: 0.03
     '2012':
-      count: 416
+      count: 442
+      total: 1275170
       percent: 0.03
     '2013':
-      count: 402
+      count: 444
+      total: 1304320
       percent: 0.03
     '2014':
-      count: 436
+      count: 455
+      total: 1332960
       percent: 0.03
     '2015':
-      count: 388
+      count: 399
+      total: 1370672
       percent: 0.03
+    '2016':
+      count: 299
+      total: 1405779
+      percent: 0.02
 '06075':
   name: San Francisco County
   employment:
     '2006':
       count: 29
+      total: 536304
       percent: 0.01
     '2007':
       count: 33
+      total: 556401
       percent: 0.01
     '2008':
       count: 43
+      total: 573011
       percent: 0.01
     '2009':
       count: 71
+      total: 549716
       percent: 0.01
     '2010':
       count: 84
+      total: 545721
       percent: 0.02
     '2011':
       count: 105
+      total: 558990
       percent: 0.02
     '2012':
       count: 55
+      total: 586538
       percent: 0.01
     '2013':
       count: 21
+      total: 611717
       percent: 0
     '2014':
-      count: 27
-      percent: 0
+      count: 168
+      total: 640378
+      percent: 0.03
     '2015':
-      count: 23
-      percent: 0
+      count: 249
+      total: 674646
+      percent: 0.04
+    '2016':
+      count: 295
+      total: 703194
+      percent: 0.04
 '06077':
   name: San Joaquin County
   employment:
     '2006':
       count: 233
+      total: 221739
       percent: 0.11
     '2007':
       count: 226
+      total: 224765
       percent: 0.1
     '2008':
       count: 187
+      total: 220827
       percent: 0.08
     '2009':
       count: 112
+      total: 208889
       percent: 0.05
     '2010':
       count: 100
+      total: 201835
       percent: 0.05
     '2011':
       count: 77
+      total: 201575
       percent: 0.04
     '2012':
       count: 88
+      total: 206249
       percent: 0.04
     '2013':
       count: 88
+      total: 211786
       percent: 0.04
     '2014':
       count: 80
+      total: 217755
       percent: 0.04
     '2015':
       count: 86
+      total: 231714
+      percent: 0.04
+    '2016':
+      count: 91
+      total: 239060
       percent: 0.04
 06079:
   name: San Luis Obispo County
   employment:
     '2006':
       count: 118
+      total: 105317
       percent: 0.11
     '2007':
       count: 113
+      total: 106425
       percent: 0.11
     '2008':
       count: 388
+      total: 104929
       percent: 0.37
     '2009':
       count: 90
+      total: 99636
       percent: 0.09
     '2010':
       count: 286
+      total: 99925
       percent: 0.29
     '2011':
       count: 78
+      total: 101339
       percent: 0.08
     '2012':
       count: 66
+      total: 105068
       percent: 0.06
     '2013':
       count: 96
+      total: 107189
       percent: 0.09
     '2014':
       count: 132
+      total: 110345
       percent: 0.12
     '2015':
       count: 132
+      total: 114194
       percent: 0.12
+    '2016':
+      count: 108
+      total: 114256
+      percent: 0.09
 06081:
   name: San Mateo County
   employment:
     '2006':
       count: 55
+      total: 334910
       percent: 0.02
     '2007':
       count: 46
+      total: 340640
       percent: 0.01
     '2008':
       count: 41
+      total: 342361
       percent: 0.01
     '2009':
       count: 33
+      total: 323195
       percent: 0.01
     '2010':
       count: 33
+      total: 317576
       percent: 0.01
     '2011':
       count: 30
+      total: 326055
       percent: 0.01
     '2012':
       count: 31
+      total: 340075
       percent: 0.01
     '2014':
       count: 49
+      total: 372192
       percent: 0.01
     '2015':
       count: 52
+      total: 383668
       percent: 0.01
+    '2016':
+      count: 63
+      total: 391532
+      percent: 0.02
 06083:
   name: Santa Barbara County
   employment:
     '2006':
       count: 1099
+      total: 184981
       percent: 0.59
     '2007':
       count: 1189
+      total: 187462
       percent: 0.63
     '2008':
       count: 1110
+      total: 188434
       percent: 0.59
     '2009':
       count: 899
+      total: 179282
       percent: 0.5
     '2010':
       count: 955
+      total: 176576
       percent: 0.54
     '2011':
       count: 1140
+      total: 179231
       percent: 0.64
     '2012':
       count: 1224
+      total: 183920
       percent: 0.67
     '2013':
       count: 1094
+      total: 185617
       percent: 0.59
     '2014':
       count: 1078
+      total: 190544
       percent: 0.57
     '2015':
-      count: 1116
+      count: 1117
+      total: 193754
       percent: 0.58
+    '2016':
+      count: 866
+      total: 195180
+      percent: 0.44
 06085:
   name: Santa Clara County
   employment:
     '2006':
       count: 251
+      total: 877710
       percent: 0.03
     '2007':
       count: 255
+      total: 896685
       percent: 0.03
     '2008':
       count: 239
+      total: 906502
       percent: 0.03
     '2009':
       count: 186
+      total: 848938
       percent: 0.02
     '2010':
       count: 166
+      total: 842581
       percent: 0.02
     '2011':
       count: 185
+      total: 866541
       percent: 0.02
     '2012':
       count: 212
+      total: 903053
       percent: 0.02
     '2013':
       count: 242
+      total: 938114
       percent: 0.03
     '2014':
       count: 266
+      total: 973668
       percent: 0.03
     '2015':
       count: 232
+      total: 1017071
+      percent: 0.02
+    '2016':
+      count: 241
+      total: 1045915
       percent: 0.02
 06089:
   name: Shasta County
   employment:
     '2006':
-      count: 152
-      percent: 0.22
+      count: 162
+      total: 67766
+      percent: 0.24
+    '2007':
+      count: 9
+      total: 68514
+      percent: 0.01
+    '2008':
+      count: 10
+      total: 65488
+      percent: 0.02
+    '2009':
+      count: 10
+      total: 61351
+      percent: 0.02
 06091:
   name: Sierra County
   employment:
     '2006':
       count: 5
+      total: 717
       percent: 0.7
     '2007':
       count: 4
+      total: 728
       percent: 0.55
 06095:
   name: Solano County
   employment:
     '2006':
       count: 316
+      total: 130804
       percent: 0.24
     '2007':
       count: 280
+      total: 128081
       percent: 0.22
     '2008':
       count: 299
+      total: 126324
       percent: 0.24
     '2009':
       count: 284
+      total: 121581
       percent: 0.23
     '2010':
       count: 225
+      total: 122105
       percent: 0.18
     '2011':
       count: 270
+      total: 119442
       percent: 0.23
     '2012':
       count: 246
+      total: 121461
       percent: 0.2
     '2013':
       count: 247
+      total: 124953
       percent: 0.2
     '2014':
       count: 270
+      total: 127175
       percent: 0.21
     '2015':
-      count: 249
+      count: 252
+      total: 130980
       percent: 0.19
+    '2016':
+      count: 243
+      total: 135843
+      percent: 0.18
 06097:
   name: Sonoma County
   employment:
     '2006':
       count: 167
+      total: 191555
       percent: 0.09
     '2007':
       count: 211
+      total: 193598
       percent: 0.11
     '2008':
       count: 178
+      total: 190574
       percent: 0.09
     '2009':
       count: 104
+      total: 176992
       percent: 0.06
     '2010':
       count: 110
+      total: 175508
       percent: 0.06
     '2011':
       count: 119
+      total: 177157
       percent: 0.07
     '2012':
       count: 114
+      total: 177222
       percent: 0.06
     '2013':
       count: 195
+      total: 184245
       percent: 0.11
     '2014':
       count: 199
+      total: 191686
       percent: 0.1
     '2015':
       count: 166
+      total: 197218
       percent: 0.08
+    '2016':
+      count: 130
+      total: 201946
+      percent: 0.06
 '06101':
   name: Sutter County
   employment:
     '2006':
       count: 78
+      total: 28092
       percent: 0.28
     '2007':
       count: 104
+      total: 28846
       percent: 0.36
     '2008':
       count: 163
+      total: 27976
       percent: 0.58
     '2009':
       count: 176
+      total: 27001
       percent: 0.65
     '2010':
       count: 174
+      total: 26572
       percent: 0.65
     '2011':
       count: 159
+      total: 26412
       percent: 0.6
     '2012':
       count: 139
+      total: 26824
       percent: 0.52
     '2013':
       count: 77
+      total: 27298
       percent: 0.28
     '2014':
       count: 95
+      total: 27781
       percent: 0.34
     '2015':
       count: 86
+      total: 29024
       percent: 0.3
+    '2016':
+      count: 110
+      total: 30093
+      percent: 0.37
 '06107':
   name: Tulare County
   employment:
     '2006':
       count: 62
+      total: 146806
       percent: 0.04
     '2007':
       count: 43
+      total: 149797
       percent: 0.03
     '2008':
       count: 39
+      total: 150584
       percent: 0.03
     '2009':
       count: 37
+      total: 144480
       percent: 0.03
     '2010':
       count: 55
+      total: 144146
       percent: 0.04
     '2011':
       count: 52
+      total: 143868
       percent: 0.04
     '2012':
       count: 40
+      total: 142658
       percent: 0.03
     '2013':
       count: 39
+      total: 147849
       percent: 0.03
     '2014':
       count: 57
+      total: 148560
       percent: 0.04
     '2015':
       count: 66
+      total: 156050
+      percent: 0.04
+    '2016':
+      count: 69
+      total: 161021
       percent: 0.04
 06109:
   name: Tuolumne County
   employment:
     '2006':
       count: 135
+      total: 18185
       percent: 0.74
     '2007':
       count: 130
+      total: 18131
       percent: 0.72
     '2008':
       count: 119
+      total: 17823
       percent: 0.67
     '2009':
       count: 103
+      total: 16377
       percent: 0.63
     '2010':
       count: 83
+      total: 15961
       percent: 0.52
     '2011':
       count: 105
+      total: 16150
       percent: 0.65
     '2012':
       count: 66
+      total: 16164
       percent: 0.41
     '2013':
       count: 73
+      total: 16097
       percent: 0.45
     '2014':
       count: 68
+      total: 16751
       percent: 0.41
     '2015':
       count: 72
+      total: 17023
       percent: 0.42
+    '2016':
+      count: 75
+      total: 17472
+      percent: 0.43
 '06111':
   name: Ventura County
   employment:
     '2006':
       count: 1008
+      total: 317030
       percent: 0.32
     '2007':
       count: 1058
+      total: 318098
       percent: 0.33
     '2008':
       count: 1166
+      total: 314394
       percent: 0.37
     '2009':
       count: 1218
+      total: 299319
       percent: 0.41
     '2010':
       count: 1182
+      total: 297190
       percent: 0.4
     '2011':
       count: 1239
+      total: 298459
       percent: 0.42
     '2012':
       count: 1257
+      total: 305271
       percent: 0.41
     '2013':
       count: 1202
+      total: 309935
       percent: 0.39
     '2014':
       count: 1301
+      total: 313766
       percent: 0.41
     '2015':
       count: 1022
+      total: 315806
       percent: 0.32
+    '2016':
+      count: 850
+      total: 319017
+      percent: 0.27
 '06113':
   name: Yolo County
   employment:
     '2006':
       count: 250
+      total: 99368
       percent: 0.25
     '2007':
       count: 249
+      total: 102581
       percent: 0.24
     '2008':
       count: 251
+      total: 101456
       percent: 0.25
     '2009':
       count: 184
+      total: 97468
       percent: 0.19
     '2010':
       count: 173
+      total: 90171
       percent: 0.19
     '2011':
       count: 172
+      total: 90113
       percent: 0.19
     '2012':
       count: 119
+      total: 91620
       percent: 0.13
     '2013':
       count: 148
+      total: 92896
       percent: 0.16
     '2014':
       count: 166
+      total: 94257
       percent: 0.18
     '2015':
-      count: 187
+      count: 185
+      total: 97648
       percent: 0.19
+    '2016':
+      count: 71
+      total: 100252
+      percent: 0.07
 '06115':
   name: Yuba County
   employment:
     '2006':
       count: 97
+      total: 17278
       percent: 0.56
     '2007':
       count: 152
+      total: 17564
       percent: 0.87
     '2008':
       count: 173
+      total: 17124
       percent: 1.01
     '2009':
       count: 134
+      total: 16053
       percent: 0.83
     '2010':
       count: 141
+      total: 15780
       percent: 0.89
     '2011':
       count: 80
+      total: 15855
       percent: 0.5
     '2012':
       count: 67
+      total: 15990
       percent: 0.42
     '2013':
       count: 81
+      total: 16231
       percent: 0.5
     '2014':
       count: 71
+      total: 16308
       percent: 0.44
     '2015':
       count: 60
+      total: 16178
       percent: 0.37
+    '2016':
+      count: 63
+      total: 16684
+      percent: 0.38

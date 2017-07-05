@@ -145,6 +145,10 @@ svg.map {
 }
 
 svg.ownership {
+  @include respond-to(medium-down) {
+    pointer-events: none;
+  }
+
   &.no-outlines {
     @include svg-use('.states.mesh') {
       stroke: $pale-blue;

@@ -29,6 +29,7 @@ breadcrumb:
     permalink: /how-it-works/
 title_display: State Laws and Regulations
 selector: list
+redirect_from: /how-it-works/state-legal-fiscal-info/
 ---
 
 > States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.
@@ -53,14 +54,34 @@ While all 50 states have some natural resource extraction activity, the 2015 USE
   </svg>
 </eiti-map>
 
-See [State Legal and Fiscal Information]({{site.baseurl}}/how-it-works/state-legal-fiscal-info/) for more details about the individual states’ laws and statutes.
+See each state profile for more details about individual states’ laws and statutes:
+
+<div class="list-columns" markdown="1">
+- [Alaska]({{ site.baseurl }}/explore/AK/#state-governance)
+- [Arizona]({{ site.baseurl }}/explore/AZ/#state-governance)
+- [California]({{ site.baseurl }}/explore/CA/#state-governance)
+- [Colorado]({{ site.baseurl }}/explore/CO/#state-governance)
+- [Illinois]({{ site.baseurl }}/explore/IL/#state-governance)
+- [Kentucky]({{ site.baseurl }}/explore/KY/#state-governance)
+- [Louisiana]({{ site.baseurl }}/explore/LA/#state-governance)
+- [Minnesota]({{ site.baseurl }}/explore/MN/#state-governance)
+- [Montana]({{ site.baseurl }}/explore/MT/#state-governance)
+- [Nevada]({{ site.baseurl }}/explore/NV/#state-governance)
+- [New Mexico]({{ site.baseurl }}/explore/NM/#state-governance)
+- [North Dakota]({{ site.baseurl }}/explore/ND/#state-governance)
+- [Oklahoma]({{ site.baseurl }}/explore/OK/#state-governance)
+- [Pennsylvania]({{ site.baseurl }}/explore/PA/#state-governance)
+- [Texas]({{ site.baseurl }}/explore/TX/#state-governance)
+- [Utah]({{ site.baseurl }}/explore/UT/#state-governance)
+- [West Virginia]({{ site.baseurl }}/explore/WV/#state-governance)
+- [Wyoming]({{ site.baseurl }}/explore/WY/#state-governance)
+</div>
 
 ## Role of state government agencies
 
 State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Specifically, state government agencies manage state-owned land and natural resources, including leasing natural resources for extraction; enforce regulations and rules related to natural resource extraction; and collect, manage, and disburse revenue from natural resource extraction.
 
 Each state has unique agencies that fulfill these functions. For example:
-
 
 * _Manage state-owned land and natural resources:_ In Louisiana, the Department of Natural Resources oversees natural resource extraction on state-owned lands. In Arizona, the State Land Department fulfills this function. Both agencies administer natural resource leasing programs that transfer rights to natural resources on state-owned lands to companies for extraction.
 * _Enforce regulations and rules:_ States with surface mining operations have agencies devoted to mitigating the environmental impact of such activities and ensuring that companies restore surface mine lands after mining operations are complete: for example, the West Virginia Department of Environmental Protection’s Division of Mining and Reclamation. DOI’s OSMRE oversees this office, as well as others like it.
@@ -75,7 +96,6 @@ State ownership of land constitutes [almost 9% of total land area](http://www.nr
 ## State extractive industries revenue
 
 The revenue a state receives from extractive activities varies by the local legal and fiscal framework, and by the types of resources and land owners involved. At a high level, many states receive the following revenue:
-
 
 * Bonuses, rents, and royalties for natural resources produced from state lands
 * Severance taxes, sometimes called gross production taxes or royalties, on the amount or value of natural resources produced in a state whether on federal, state, or privately owned lands

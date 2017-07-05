@@ -3,7 +3,7 @@ db_url ?= sqlite://$(db)
 
 node_bin ?= ./node_modules/.bin/
 
-tables ?= $(node_bin)tables -d $(db_url)
+tables ?= $(node_bin)tables -d $(db_url) -b 500
 tito ?= $(node_bin)tito
 nestly ?= $(node_bin)nestly
 sqlite ?= sqlite3 -bail $(db)
@@ -11,8 +11,7 @@ sqlite ?= sqlite3 -bail $(db)
 query ?= ./data/bin/query.js --db $(db_url)
 
 load-table = $(tables) -i $(1) -n $(2)
-load-model = $(call load-table,$(1),$(2)) --config data/db/models/$(2).js
-load-sql = echo "-- loading SQL: $(1) --"; cat $(1) | $(sqlite)
+load-sql = echo "-- loading SQL: $(1) --"; $(sqlite) < $(1)
 drop-table = echo "-- dropping: $(1) --"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
 
 all: db
@@ -141,64 +140,86 @@ data/national_gdp.yml:
 			-o _$@
 
 data/jobs: \
-	data/state_jobs.yml \
-	data/national_jobs.yml \
-	data/county_jobs \
+	data/bls \
 	data/state_self_employment.yml \
 	data/national_self_employment.yml
+
+data/bls: \
+	data/state_jobs.yml \
+	data/state_jobs_by_commodity.yml \
+	data/national_jobs.yml \
+	data/national_jobs_by_commodity.yml \
+	data/county_jobs
 
 data/state_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			region_id AS state, year, jobs, total, percent \
 		FROM state_bls_employment \
 		WHERE \
-			region_id IS NOT NULL \
-		ORDER BY state, year" \
+			commodity = 'Extractives' \
+		ORDER BY state, year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/state_jobs.yml \
+			-o _$@
+
+data/state_jobs_by_commodity.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			region_id AS state, year, \
+			commodity, naics, jobs, total, percent \
+		FROM state_bls_employment \
+		WHERE \
+			commodity != 'All' \
+		ORDER BY state, jobs DESC, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/state_jobs_by_commodity.yml \
 			-o _$@
 
 data/national_jobs.yml:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			year, jobs, total, percent \
 		FROM national_bls_employment \
 		WHERE \
-			region_id IS NOT NULL \
-		ORDER BY state, year" \
+			commodity = 'Extractives' \
+		ORDER BY year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/national_jobs.yml \
+			-o _$@
+
+data/national_jobs_by_commodity.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			year, commodity, naics, jobs, total, percent \
+		FROM national_bls_employment \
+		WHERE \
+			commodity != 'All' \
+		ORDER BY jobs DESC, year" \
+		| $(nestly) --if ndjson \
+			-c _meta/national_jobs_by_commodity.yml \
 			-o _$@
 
 data/county_jobs:
 	$(query) --format ndjson " \
 		SELECT \
-			region_id AS state, \
-			SUBSTR('0' || fips, -5, 5) AS fips, \
-			county, \
-			year, \
-			extractive_jobs AS jobs, \
-			ROUND(percent, 2) AS percent \
+			region_id AS state, fips, county, \
+			year, jobs, total, percent \
 		FROM bls_employment \
 		WHERE \
-			region_id IS NOT NULL AND \
-			county IS NOT NULL \
-		ORDER BY state, fips, year" \
+			region_id IS NOT NULL \
+			AND county IS NOT NULL \
+			AND commodity = 'Extractives' \
+		ORDER BY state, fips, year, jobs DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/county_jobs.yml \
 			-o '_$@/{state}.yml'
-
 
 data/state_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region AS state, year, \
-			jobs, \
+			jobs, ROUND(jobs / share) AS total, \
 			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
@@ -213,7 +234,7 @@ data/national_self_employment.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			region AS state, year, \
-			jobs, \
+			jobs, ROUND(jobs / share) AS total, \
 			ROUND(share, 2) AS percent \
 		FROM self_employment \
 		WHERE \
@@ -383,7 +404,6 @@ data/federal_county_production:
 			-c _meta/county_production.yml \
 			-o '_$@/{state}.yml'
 
-
 data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -440,27 +460,14 @@ data/national_revenues_by_type.yml:
 			-c _meta/national_revenues_by_type.yml \
 			-o _$@
 
-data/national_revenues_by_type.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			commodity, revenue_type, year, \
-			ROUND(revenue) AS revenue \
-		FROM national_revenue_type \
-		WHERE revenue IS NOT NULL \
-		ORDER BY \
-			revenue DESC, commodity, year" \
-		| $(nestly) --if ndjson \
-			-c _meta/national_revenues_by_type.yml \
-			-o _$@
-
 data/national_revenues_other_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Other Revenues' AND \
-				commodity == 'None' \
+			revenue_type = 'Other Revenues' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \
@@ -470,11 +477,11 @@ data/national_revenues_other_revenues.yml:
 data/national_revenues_civil_penalties.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Civil Penalties' AND \
-				commodity == 'None' \
+			revenue_type = 'Civil Penalties' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \
@@ -484,11 +491,11 @@ data/national_revenues_civil_penalties.yml:
 data/national_revenues_inspection_fees.yml:
 	$(query) --format ndjson " \
 		SELECT \
-				year, ROUND(SUM(revenue)) AS revenue \
+			year, ROUND(SUM(revenue)) AS revenue \
 		FROM national_revenue_type \
 		WHERE \
-				revenue_type = 'Inspection Fees' AND \
-				commodity == 'None' \
+			revenue_type = 'Inspection Fees' AND \
+			commodity == 'None' \
 		GROUP BY \
 				year, revenue" \
 		| $(nestly) --if ndjson \
@@ -731,11 +738,12 @@ tables/jobs: tables/bls tables/self_employment
 tables/bls: data/jobs/bls
 	@$(call drop-table,bls_employment)
 	tmp=$^/all.ndjson; \
+	rm -f $$tmp; \
 	for jobs_filename in $^/????/joined.tsv; do \
 		$(tito) -r tsv --map ./data/jobs/transform.js \
 			$$jobs_filename >> $$tmp; \
 	done; \
-	$(tables) -i $$tmp -t ndjson -n bls_employment && \
+	$(tables) -i $$tmp -t ndjson -n bls_employment; \
 	rm $$tmp
 	@$(call load-sql,data/jobs/rollup-bls.sql)
 
@@ -768,8 +776,9 @@ tables/disbursements_historic_preservation: data/disbursements/historic-preserva
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
 		--map ./data/disbursements/transform-hpf.js \
-		 $^ \
-		| $(tables) -t ndjson -n disbursements_historic_preservation
+		 $^ > $^.ndjson
+	$(tables) -i $^.ndjson -t ndjson -n disbursements_historic_preservation
+	rm $^.ndjson
 
 tables/land_stats: data/land-stats/land-stats.tsv
 	@$(call drop-table,land_stats)

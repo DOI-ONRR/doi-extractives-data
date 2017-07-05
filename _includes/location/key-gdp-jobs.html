@@ -11,10 +11,10 @@
 {% if gdp_dollars > 0 %}
   In {{ state_name }}, extractive industries accounted for
   <a href="#gdp">{{ gdp[include.year].percent | percent }}%
-  of gross domestic product</a> (GDP) in {{ include.year }}{% if jobs_percent > 2 %}, and jobs in the extractive industries made up 
+  of gross domestic product</a> (GDP) in {{ include.year }}{% if jobs_percent > 2 %}, and jobs in the extractive industries made up
 	<a href="#employment">{{ jobs_percent | percent }}%
 	of statewide employment</a>{% endif %}.
 {% else %}
-  The extractives industry did not have any effect on gross domestic product (GDP) in
+  Extractive industries did not have any effect on gross domestic product (GDP) in
   {{ include.location_name }} in {{ include.year }}.
 {% endif %}

@@ -1,6 +1,9 @@
 {% assign jobs = site.data.state_jobs[state_id] %}
-{% assign county_jobs = site.data.county_jobs[state_id] %}
-{% assign self_employment_jobs = site.data.state_self_employment[state_id] %}
+{% assign jobs_by_commodity =     site.data.state_jobs_by_commodity[state_id] %}
+{% assign show_commodities =      site.data.commodities.jobs.show %}
+{% assign commodity_alias =       site.data.commodities.jobs.alias %}
+{% assign county_jobs =           site.data.county_jobs[state_id] %}
+{% assign self_employment_jobs =  site.data.state_self_employment[state_id] %}
 {% assign jobs_count = jobs[year].count | default: 0 %}
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
@@ -39,7 +42,7 @@
 
         <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
           <p>
-            Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.
+            Employment data from the Bureau of Labor Statistics describes the number of people who receive wages or salaries from companies.
             <br>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
@@ -53,9 +56,8 @@
 
         <div class="chart-container">
 
-          {% assign _metrics = 'count' | split: ' ' %}
-          {% for _metric in _metrics %}
-          <h3 class="chart-title"><span>Wage and salary jobs</span></h3>
+          {% assign _metric = 'count' %}
+          <h3 class="chart-title"><span>Extractive industry jobs</span></h3>
 
           <figure class="chart">
             <eiti-bar-chart
@@ -84,8 +86,6 @@
             </figcaption>
           </figure><!-- /.chart -->
 
-          {% endfor %}
-
         </div><!-- /.chart-container -->
 
         {% capture toggle %}county-level-employment–{{ state_id }}{% endcapture %}
@@ -93,7 +93,7 @@
         <div class="map-container">
 
           <h4 class="chart-title">
-            {{ locality_name }} wage and salary jobs
+            Extractive industry jobs by county
           </h4>
 
           <figure is="eiti-data-map-table" class="container">
@@ -132,7 +132,69 @@
       </div><!-- /.row-container -->
       {% endif %}<!-- if jobs -->
 
+
     </section><!-- /.chart-list -->
+
+    {% if jobs_by_commodity %}
+    <h4>Wage and salary jobs by commodity</h4>
+
+     <p>Jobs are categorized according to the North American Industry Classification System (NAICS). To learn more about how we grouped those categories, see <a href="{{ site.baseurl }}/downloads/#jobs">data and documentation</a>.</p>
+     <p>Geothermal, hydroelectric, solar, and wind energy categories are limited to jobs directly related to electrical energy generation. To learn more about all energy-related employment, see the <a href="https://www.energy.gov/downloads/2017-us-energy-and-employment-report">2017 U.S. Energy and Employment Report</a> from the Department of Energy.</p>
+
+    <section class="chart-list">
+
+      {% for _commodity in jobs_by_commodity %}
+        {% assign commodity = _commodity[0] %}
+        {% assign commodity_name = commodity | lookup: commodity_alias | downcase %}
+        {% unless show_commodities contains commodity %}
+          {% continue %}
+        {% endunless %}
+        {% assign _slug = commodity | slugify %}
+        {% assign _figures = _commodity[1][year] %}
+        {% assign __values = _commodity[1] | map_hash: 'count' %}
+      <div class="chart-item">
+        {% assign chart_toggle = 'jobs-figures-chart-{{ _slug }}' | liquify %}
+        {%
+          include chart_title.html
+          chart_name=commodity_name
+          chart_toggle=chart_toggle
+          chart_values=__values
+          units="jobs"
+          is_icon=true
+        %}
+
+        <figure class="chart" id="{{ chart_toggle }}">
+          <eiti-bar-chart
+            aria-controls="jobs-figures-{{ _slug }}"
+            data='{{ __values | jsonify }}'
+            x-range="{{ year_range }}"
+            x-value="{{ year }}"
+            data-units="jobs">
+          </eiti-bar-chart>
+          <figcaption id="jobs-figures-{{ _slug }}">
+            <span class="caption-data">
+              In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
+              there were
+              <span class="eiti-bar-chart-y-value"
+                data-format=",">{{ _figures.count | intcomma }}</span>
+              <b>{{ commodity_name }}</b> jobs in
+              {{ state_name }}.{% comment %}, and they accounted for
+              <year-value year="{{ year }}" data-year-values='{{ _commodity[1] | map_hash: 'percent' | jsonify }}'
+                empty="--">{{ _figures.percent | percent }}</year-value>%
+              of statewide employment. {% endcomment %}
+            </span>
+            <span class="caption-no-data" aria-hidden="true">
+              There is no data about <b>{{ commodity_name }}</b>
+              jobs in {{ state_name }} in
+              <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+            </span>
+          </figcaption>
+        </figure><!-- /.chart -->
+      </div><!-- /.chart-item -->
+      {% endfor %}
+
+    </section><!-- /.chart-list -->
+    {% endif %}<!-- if jobs_by_commodity -->
 
   </section><!-- /is="year-switcher-section" -->
 

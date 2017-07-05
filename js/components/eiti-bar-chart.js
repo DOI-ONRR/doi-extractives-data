@@ -35,6 +35,7 @@
   var barHeight = bottom - top;
 
   var extentPercent = 0.05; // 5%
+  var extentMarginOfError = 0.10; // 10%. Read as +/- the value created by extentPercent
   extentMargin = barHeight * extentPercent;
   top += extentMargin;
   var extentTop = top - extentMargin;
@@ -93,14 +94,16 @@
       sigFig,
       eiti.format.siValue
     )(ceilMax);
-    var isLessThan = sigFigCeil <= +ymax;
-    return !isLessThan ? sigFig : '';
+    var ceilIsLargerThanValue = sigFigCeil > +ymax;
+    var ceilIsntTooBig = ( sigFigCeil / +ymax ) <= (1 + extentMarginOfError + extentPercent);
+    var justRight = ceilIsLargerThanValue && ceilIsntTooBig;
+    return justRight ? sigFig : '';
   };
 
   var setSigFigs = function(ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
-    while (sigFigs.length < 1) {
+    while (sigFigs.length < 3) {
       SF++;
       sigFigs = crawlCeil(ymax, ceilMax, SF);
     }

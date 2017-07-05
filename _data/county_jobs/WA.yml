@@ -3,601 +3,837 @@
   employment:
     '2015':
       count: 5
+      total: 82253
       percent: 0.01
 '53007':
   name: Chelan County
   employment:
     '2012':
       count: 18
+      total: 39581
       percent: 0.05
     '2013':
       count: 18
+      total: 39618
       percent: 0.05
+    '2016':
+      count: 10
+      total: 43284
+      percent: 0.02
 '53009':
   name: Clallam County
   employment:
     '2006':
       count: 33
+      total: 23045
       percent: 0.14
     '2007':
       count: 14
+      total: 23083
       percent: 0.06
     '2008':
       count: 11
+      total: 22683
       percent: 0.05
     '2009':
       count: 10
+      total: 22033
       percent: 0.05
     '2010':
       count: 10
+      total: 21884
       percent: 0.05
     '2011':
       count: 9
+      total: 21687
       percent: 0.04
     '2012':
       count: 8
+      total: 21619
       percent: 0.04
     '2013':
       count: 8
+      total: 21975
       percent: 0.04
     '2014':
       count: 9
+      total: 22041
       percent: 0.04
     '2015':
       count: 9
+      total: 22221
+      percent: 0.04
+    '2016':
+      count: 10
+      total: 22770
       percent: 0.04
 '53011':
   name: Clark County
   employment:
     '2006':
       count: 300
+      total: 129758
       percent: 0.23
     '2007':
       count: 282
+      total: 132548
       percent: 0.21
     '2009':
       count: 159
+      total: 127442
       percent: 0.12
     '2010':
       count: 59
+      total: 126733
       percent: 0.05
     '2011':
       count: 57
+      total: 127646
       percent: 0.04
     '2012':
       count: 16
+      total: 129865
       percent: 0.01
 '53015':
   name: Cowlitz County
   employment:
     '2007':
       count: 159
+      total: 37637
       percent: 0.42
     '2008':
       count: 131
+      total: 37065
       percent: 0.35
     '2009':
       count: 116
+      total: 35354
       percent: 0.33
     '2010':
       count: 140
+      total: 35424
       percent: 0.4
     '2011':
       count: 139
+      total: 35272
       percent: 0.39
     '2012':
       count: 161
+      total: 35597
       percent: 0.45
     '2013':
       count: 169
+      total: 35453
       percent: 0.48
     '2014':
       count: 153
+      total: 36843
       percent: 0.42
     '2015':
       count: 177
+      total: 37342
       percent: 0.47
+    '2016':
+      count: 209
+      total: 37977
+      percent: 0.55
 '53021':
   name: Franklin County
   employment:
     '2010':
       count: 34
+      total: 28934
       percent: 0.12
+    '2016':
+      count: 70
+      total: 33772
+      percent: 0.21
 '53025':
   name: Grant County
   employment:
     '2008':
       count: 77
+      total: 35041
       percent: 0.22
     '2009':
       count: 68
+      total: 34755
       percent: 0.2
 '53027':
   name: Grays Harbor County
   employment:
     '2007':
       count: 69
+      total: 24762
       percent: 0.28
     '2008':
       count: 63
+      total: 24826
       percent: 0.25
     '2009':
       count: 52
+      total: 22920
       percent: 0.23
     '2010':
       count: 51
+      total: 22528
       percent: 0.23
     '2011':
       count: 48
+      total: 22366
       percent: 0.21
 '53029':
   name: Island County
   employment:
     '2013':
       count: 12
+      total: 14895
       percent: 0.08
 '53031':
   name: Jefferson County
   employment:
     '2006':
       count: 52
+      total: 9131
       percent: 0.57
     '2007':
       count: 49
+      total: 9081
       percent: 0.54
     '2008':
       count: 50
+      total: 9011
       percent: 0.55
     '2009':
       count: 30
+      total: 8221
       percent: 0.36
     '2010':
       count: 23
+      total: 8003
       percent: 0.29
     '2011':
       count: 21
+      total: 7822
       percent: 0.27
 '53033':
   name: King County
   employment:
     '2006':
-      count: 504
+      count: 516
+      total: 1149862
       percent: 0.04
     '2007':
-      count: 531
+      count: 543
+      total: 1173346
       percent: 0.05
     '2008':
-      count: 456
+      count: 468
+      total: 1189512
       percent: 0.04
     '2009':
-      count: 405
+      count: 415
+      total: 1130629
       percent: 0.04
     '2010':
       count: 376
+      total: 1116634
       percent: 0.03
     '2011':
-      count: 371
+      count: 379
+      total: 1137421
       percent: 0.03
     '2012':
-      count: 385
+      count: 394
+      total: 1163222
       percent: 0.03
     '2013':
-      count: 379
+      count: 387
+      total: 1198816
       percent: 0.03
     '2014':
       count: 376
+      total: 1237586
       percent: 0.03
     '2015':
       count: 443
+      total: 1274203
+      percent: 0.03
+    '2016':
+      count: 398
+      total: 1315864
       percent: 0.03
 '53035':
   name: Kitsap County
   employment:
     '2006':
       count: 67
+      total: 84430
       percent: 0.08
     '2007':
       count: 68
+      total: 83914
       percent: 0.08
     '2008':
       count: 47
+      total: 83795
       percent: 0.06
     '2009':
       count: 56
+      total: 81893
       percent: 0.07
     '2011':
       count: 37
+      total: 80937
       percent: 0.05
     '2012':
       count: 40
+      total: 80369
       percent: 0.05
     '2013':
       count: 42
+      total: 80401
       percent: 0.05
     '2014':
       count: 45
+      total: 82416
       percent: 0.05
     '2015':
       count: 48
+      total: 84687
       percent: 0.06
 '53037':
   name: Kittitas County
   employment:
     '2007':
       count: 13
+      total: 13825
       percent: 0.09
 '53041':
   name: Lewis County
   employment:
     '2006':
       count: 760
+      total: 25881
       percent: 2.94
     '2007':
       count: 248
+      total: 25639
       percent: 0.97
     '2008':
       count: 203
+      total: 25177
       percent: 0.81
     '2009':
       count: 180
+      total: 23745
       percent: 0.76
     '2010':
       count: 181
+      total: 23396
       percent: 0.77
     '2011':
       count: 167
+      total: 23188
       percent: 0.72
     '2012':
       count: 127
+      total: 23289
       percent: 0.55
     '2013':
       count: 137
+      total: 23584
       percent: 0.58
     '2014':
       count: 137
+      total: 23573
       percent: 0.58
     '2015':
-      count: 148
+      count: 149
+      total: 23935
       percent: 0.62
+    '2016':
+      count: 138
+      total: 24685
+      percent: 0.56
 '53047':
   name: Okanogan County
   employment:
     '2006':
       count: 49
+      total: 17396
       percent: 0.28
     '2007':
       count: 68
+      total: 17427
       percent: 0.39
     '2008':
       count: 113
+      total: 17708
       percent: 0.64
     '2009':
       count: 151
+      total: 17659
       percent: 0.86
     '2010':
       count: 180
+      total: 17311
       percent: 1.04
     '2011':
       count: 181
+      total: 17180
       percent: 1.05
     '2012':
       count: 190
+      total: 17280
       percent: 1.1
     '2013':
       count: 195
+      total: 17511
       percent: 1.11
     '2014':
       count: 183
+      total: 18359
       percent: 1
     '2015':
       count: 163
+      total: 18404
       percent: 0.89
+    '2016':
+      count: 147
+      total: 18528
+      percent: 0.79
 '53049':
   name: Pacific County
   employment:
     '2006':
       count: 41
+      total: 6454
       percent: 0.64
     '2007':
       count: 45
+      total: 6467
       percent: 0.7
     '2008':
       count: 40
+      total: 6308
       percent: 0.63
     '2009':
       count: 36
+      total: 5942
       percent: 0.61
     '2010':
       count: 37
+      total: 5911
       percent: 0.63
     '2014':
       count: 37
+      total: 6205
       percent: 0.6
     '2015':
       count: 35
+      total: 6171
       percent: 0.57
+    '2016':
+      count: 37
+      total: 6420
+      percent: 0.58
 '53051':
   name: Pend Oreille County
   employment:
     '2006':
       count: 210
+      total: 3042
       percent: 6.9
     '2007':
       count: 241
+      total: 3135
       percent: 7.69
     '2008':
       count: 251
+      total: 3216
       percent: 7.8
     '2009':
       count: 93
+      total: 2988
       percent: 3.11
     '2010':
       count: 66
+      total: 2973
       percent: 2.22
     '2011':
       count: 83
+      total: 2966
       percent: 2.8
     '2012':
       count: 97
+      total: 2955
       percent: 3.28
     '2013':
       count: 104
+      total: 2838
       percent: 3.66
 '53053':
   name: Pierce County
   employment:
     '2006':
       count: 230
+      total: 265674
       percent: 0.09
     '2007':
       count: 249
+      total: 274779
       percent: 0.09
     '2008':
       count: 231
+      total: 273864
       percent: 0.08
     '2009':
       count: 201
+      total: 263484
       percent: 0.08
     '2010':
       count: 177
+      total: 260961
       percent: 0.07
     '2011':
       count: 166
+      total: 260251
       percent: 0.06
     '2012':
       count: 158
+      total: 263503
       percent: 0.06
     '2013':
       count: 162
+      total: 269883
       percent: 0.06
     '2014':
       count: 160
+      total: 277890
       percent: 0.06
     '2015':
       count: 161
+      total: 285399
+      percent: 0.06
+    '2016':
+      count: 170
+      total: 295387
       percent: 0.06
 '53057':
   name: Skagit County
   employment:
     '2006':
       count: 47
+      total: 47851
       percent: 0.1
     '2007':
       count: 55
+      total: 48964
       percent: 0.11
     '2008':
       count: 54
+      total: 48695
       percent: 0.11
     '2009':
       count: 40
+      total: 45908
       percent: 0.09
     '2010':
       count: 38
+      total: 45502
       percent: 0.08
     '2011':
       count: 37
+      total: 45395
       percent: 0.08
     '2012':
       count: 29
+      total: 45803
       percent: 0.06
     '2013':
       count: 29
+      total: 47272
       percent: 0.06
     '2014':
       count: 47
+      total: 48300
       percent: 0.1
     '2015':
       count: 26
+      total: 48582
       percent: 0.05
+    '2016':
+      count: 29
+      total: 49585
+      percent: 0.06
 '53061':
   name: Snohomish County
   employment:
     '2006':
       count: 187
+      total: 233248
       percent: 0.08
     '2007':
       count: 176
+      total: 252743
       percent: 0.07
     '2008':
       count: 166
+      total: 253491
       percent: 0.07
     '2009':
       count: 142
+      total: 241782
       percent: 0.06
     '2010':
       count: 149
+      total: 239005
       percent: 0.06
     '2011':
       count: 140
+      total: 246831
       percent: 0.06
     '2012':
       count: 157
+      total: 257099
       percent: 0.06
     '2013':
       count: 150
+      total: 263543
       percent: 0.06
     '2014':
       count: 134
+      total: 267792
       percent: 0.05
     '2015':
       count: 136
+      total: 275565
+      percent: 0.05
+    '2016':
+      count: 152
+      total: 283243
       percent: 0.05
 '53063':
   name: Spokane County
   employment:
     '2006':
       count: 103
+      total: 204235
       percent: 0.05
     '2007':
       count: 177
+      total: 208858
       percent: 0.08
     '2008':
       count: 193
+      total: 210036
       percent: 0.09
     '2009':
       count: 128
+      total: 201123
       percent: 0.06
     '2010':
       count: 130
+      total: 196947
       percent: 0.07
     '2011':
       count: 162
+      total: 197176
       percent: 0.08
     '2012':
       count: 128
+      total: 198635
       percent: 0.06
     '2013':
       count: 114
+      total: 202137
       percent: 0.06
     '2014':
       count: 118
+      total: 205671
       percent: 0.06
     '2015':
       count: 91
+      total: 209396
       percent: 0.04
+    '2016':
+      count: 103
+      total: 214993
+      percent: 0.05
 '53065':
   name: Stevens County
   employment:
     '2006':
       count: 68
+      total: 10257
       percent: 0.66
     '2007':
       count: 78
+      total: 10417
       percent: 0.75
     '2008':
       count: 70
+      total: 10488
       percent: 0.67
     '2009':
       count: 69
+      total: 9822
       percent: 0.7
     '2010':
       count: 60
+      total: 9747
       percent: 0.62
     '2011':
       count: 62
+      total: 9701
       percent: 0.64
     '2012':
       count: 61
+      total: 9526
       percent: 0.64
     '2013':
       count: 60
+      total: 9522
       percent: 0.63
     '2015':
       count: 61
+      total: 9912
       percent: 0.62
+    '2016':
+      count: 62
+      total: 10347
+      percent: 0.6
 '53067':
   name: Thurston County
   employment:
     '2006':
       count: 66
+      total: 96589
       percent: 0.07
     '2007':
       count: 70
+      total: 99560
       percent: 0.07
     '2008':
       count: 54
+      total: 101168
       percent: 0.05
     '2009':
       count: 40
+      total: 97971
       percent: 0.04
     '2010':
       count: 35
+      total: 96749
       percent: 0.04
     '2011':
       count: 30
+      total: 96415
       percent: 0.03
     '2012':
       count: 21
+      total: 96835
       percent: 0.02
     '2013':
       count: 16
+      total: 99901
       percent: 0.02
     '2014':
       count: 31
+      total: 103078
       percent: 0.03
     '2015':
       count: 35
+      total: 106176
+      percent: 0.03
+    '2016':
+      count: 31
+      total: 110283
       percent: 0.03
 '53073':
   name: Whatcom County
   employment:
     '2006':
       count: 149
+      total: 80144
       percent: 0.19
     '2007':
       count: 154
+      total: 82538
       percent: 0.19
     '2008':
       count: 143
+      total: 83184
       percent: 0.17
     '2009':
       count: 132
+      total: 79174
       percent: 0.17
     '2010':
       count: 135
+      total: 77810
       percent: 0.17
     '2011':
       count: 135
+      total: 79286
       percent: 0.17
     '2012':
       count: 134
+      total: 80419
       percent: 0.17
     '2013':
       count: 110
+      total: 82316
       percent: 0.13
     '2014':
       count: 112
+      total: 83696
       percent: 0.13
 '53077':
   name: Yakima County
   employment:
     '2006':
       count: 8
+      total: 98241
       percent: 0.01
     '2007':
       count: 14
+      total: 99136
       percent: 0.01
     '2008':
       count: 39
+      total: 101103
       percent: 0.04
     '2009':
       count: 40
+      total: 100903
       percent: 0.04
     '2010':
       count: 51
+      total: 99960
       percent: 0.05
     '2011':
       count: 54
+      total: 101250
       percent: 0.05
     '2012':
       count: 58
+      total: 102733
       percent: 0.06
     '2013':
       count: 62
+      total: 103591
       percent: 0.06
     '2014':
       count: 56
+      total: 106590
       percent: 0.05
     '2015':
       count: 52
+      total: 108686
       percent: 0.05
+    '2016':
+      count: 47
+      total: 111538
+      percent: 0.04

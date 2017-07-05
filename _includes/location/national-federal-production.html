@@ -85,16 +85,16 @@
           <figcaption id="national-federal-production-figures-{{ product_slug }}">
             <span class="caption-data">
               <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                {{ long_units | term: term_units }} of {{ product_name | downcase | suffix:units_suffix }} were
+                {{ long_units | term: term_units }} of {{ product_name | downcase | suffix: units_suffix }} were
                 produced on federal land in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>
             <span class="caption-no-data" aria-hidden="true">
-              There is no data about production of {{ product_name | downcase | suffix:units_suffix }} on federal land in
+              There is no data about production of {{ product_name | downcase | suffix: units_suffix }} on federal land in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>.
             </span>
             <span class="caption-withheld" aria-hidden="true">
-              Data about {{ product_name | downcase | suffix:units_suffix }} production on federal land in
+              Data about {{ product_name | downcase | suffix: units_suffix }} production on federal land in
               <span class="eiti-bar-chart-x-value">{{ year }}</span>
               is withheld.
             </span>

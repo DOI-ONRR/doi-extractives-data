@@ -31,7 +31,7 @@
   }
 }
 
-.case_studies-maps {
+.case_studies-map-container {
   display: block;
   margin: 0 auto;
   width: 25vh;
@@ -43,4 +43,12 @@
   @include respond-to(medium-up) {
     float: right;
   }
+}
+
+.case_studies-map-wide {
+  max-width: 400px;
+}
+
+.case_studies-map-tall {
+  max-width: 250px;
 }

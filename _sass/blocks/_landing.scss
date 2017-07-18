@@ -69,15 +69,16 @@
 }
 
 .landing-section.landing-section-with-graphics {
-  .landing-heading  {
+  .landing-heading {
     position: relative;
   }
+
   svg {
     bottom: 0;
-    position: absolute;
-    right: 0;
     margin-right: 15px;
     max-height: 100%;
+    position: absolute;
+    right: 0;
     width: 55px;
 
     path {
@@ -88,7 +89,7 @@
   .landing-minerals {
     svg {
       margin-top: 46px;
-        top: -36px;
+      top: -36px;
     }
   }
 
@@ -103,12 +104,10 @@
   p {
     width: auto;
   }
-  
   @include respond-to(medium-up) {
     .landing-minerals {
       svg {
-        margin-top: 46px;
-          top: 50px;
+        top: 50px;
       }
     }
     .landing-coal {
@@ -120,14 +119,17 @@
     div {
       position: relative;
     }
+
     .landing-heading {
       position: initial;
     }
+
     svg {
+      height: auto;
       top: 50px;
       width: auto;
-      height: auto;
     }
+
     p {
       padding-right: 150px;
     }

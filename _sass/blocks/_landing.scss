@@ -68,40 +68,74 @@
   }
 }
 
-.landing-section + .h3-bar {
-  padding-top: 4rem;
-}
-
-.landing-oil_gas,
-.landing-coal,
-.landing-minerals,
-.landing-renewables {
+.landing-section.landing-section-with-graphics {
+  .landing-heading  {
+    position: relative;
+  }
   svg {
-    float: right;
-    margin-right: 20px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    max-height: 100%;
+    width: 55px;
 
     path {
       fill: $neutral-gray;
     }
   }
 
+  .landing-minerals {
+    svg {
+      margin-top: 46px;
+        top: -36px;
+    }
+  }
+
+  .landing-coal {
+    svg {
+      margin-right: 15px;
+      margin-top: 30px;
+      top: -20px;
+    }
+  }
+
   p {
-    float: left;
-    width: 57%;
+    width: auto;
+  }
+  
+  @include respond-to(medium-up) {
+    .landing-minerals {
+      svg {
+        margin-top: 46px;
+          top: 50px;
+      }
+    }
+    .landing-coal {
+      svg {
+        margin-top: 30px;
+        top: 50px;
+      }
+    }
+    div {
+      position: relative;
+    }
+    .landing-heading {
+      position: initial;
+    }
+    svg {
+      top: 50px;
+      width: auto;
+      height: auto;
+    }
+    p {
+      padding-right: 150px;
+    }
   }
 }
 
-.landing-minerals {
-  svg {
-    margin-top: 46px;
-  }
-}
-
-.landing-coal {
-  svg {
-    margin-right: 0;
-    margin-top: 30px;
-  }
+.landing-section + .h3-bar {
+  padding-top: 4rem;
 }
 
 .landing-intro_link {

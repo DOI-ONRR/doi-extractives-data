@@ -75,11 +75,9 @@
 
   svg {
     bottom: 0;
-    margin-right: 15px;
+    float: right;
+    margin: 20px;
     max-height: 100%;
-    position: absolute;
-    right: 0;
-    width: 55px;
 
     path {
       fill: $neutral-gray;
@@ -88,32 +86,37 @@
 
   .landing-minerals {
     svg {
-      margin-top: 46px;
       top: -36px;
     }
   }
 
   .landing-coal {
     svg {
-      margin-right: 15px;
-      margin-top: 30px;
+      margin-right: 10px;
       top: -20px;
+    }
+  }
+
+  .landing-renewables {
+    svg {
+      margin-right: 30px;
+      top: 30px;
     }
   }
 
   p {
     width: auto;
   }
+
   @include respond-to(medium-up) {
     .landing-minerals {
       svg {
-        top: 50px;
+        top: 40px;
       }
     }
 
     .landing-coal {
       svg {
-        margin-top: 30px;
         top: 50px;
       }
     }

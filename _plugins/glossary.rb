@@ -24,9 +24,7 @@ module EITI
       #   <icon class="icon-book"></icon>
       # </span>
       if !term
-        return "<span class='term' data-term='#{str}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
+        return str
       else
         return "<span class='term' data-term='#{term}' \
           title='Click to define' tabindex='0'>#{str}<icon \
@@ -56,9 +54,7 @@ module EITI
       #   <icon class="icon-book"></icon>
       # </span>
       if !term
-        return "<span class='term term-end' data-term='#{str}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
+        return str
       else
         return "<span class='term term-end' data-term='#{term}' \
           title='Click to define' tabindex='0'>#{str}<icon \

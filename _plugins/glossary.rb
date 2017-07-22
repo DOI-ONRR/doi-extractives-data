@@ -8,7 +8,7 @@ module EITI
 
     def term_str(str, term, terms = nil, term_class = nil)
       if terms
-        terms_available = terms.map { |term| term[0].downcase }
+        terms_available = terms.map { |t| t[0].downcase }
         if terms_available.include? term
           term_html(str, term, term_class)
         else
@@ -42,7 +42,7 @@ module EITI
       #   word
       #   <icon class="icon-book"></icon>
       # </span>
-      term = term || str
+      term ||= str
       term_str(str, term, terms, term_class)
     end
 

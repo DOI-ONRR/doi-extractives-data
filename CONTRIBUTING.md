@@ -164,7 +164,7 @@ When you open an issue, fill out all relevant fields in the issue template and i
 - Use `cc @username` to notify a specific team member to review a pull request.
 - While working, submit `[WIP]` [pull requests](CONTRIBUTING.md#pull-requests) liberally.
 - Anyone may informally review a pull request and make comments or suggestions.
-* Don’t merge your own pull request. Ask a colleague to review your code and merge. This helps ensure that at least two people have verified the quality of the code and/or content.
+* Don’t merge your own pull request. Ask a colleague to review your code and merge. This helps ensure that at least two people have verified the quality of the code and content.
 
 ## Public domain
 By submitting a pull request, you agree to comply with the policies on our [LICENSE](LICENSE.md) page:

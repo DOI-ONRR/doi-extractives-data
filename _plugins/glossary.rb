@@ -1,6 +1,25 @@
 module EITI
   module Glossary
-    def term(str, term = nil)
+    def term_html(str, term, term_class = nil)
+      "<span class='term #{term_class}' data-term='#{term}' \
+                title='Click to define' tabindex='0'>#{str}<icon \
+                class='icon-book'></icon></span>"
+    end
+
+    def term_str(str, term, terms = nil, term_class = nil)
+      if terms
+        terms_available = terms.map { |t| t[0].downcase }
+        if terms_available.include? term
+          term_html(str, term, term_class)
+        else
+          str
+        end
+      else
+        term_html(str, term, term_class)
+      end
+    end
+
+    def term(str, term = nil, terms = nil, term_class = nil)
       ##
       # Converts a string to a glossary link with book icon.
       #
@@ -23,47 +42,12 @@ module EITI
       #   word
       #   <icon class="icon-book"></icon>
       # </span>
-      if !term
-        return "<span class='term' data-term='#{str}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
-      else
-        return "<span class='term' data-term='#{term}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
-      end
+      term ||= str
+      term_str(str, term, terms, term_class)
     end
 
-    def term_end(str, term = nil)
-      ##
-      # Same as term, but eliminates margin to the right of the book icon
-      #
-      # Usage:
-      # {{ "word" | term }} >>>
-      # <span class="term"
-      #       data-term="word"
-      #       title="Click to define"
-      #       tabindex="0">
-      #   word
-      #   <icon class="icon-book"></icon>
-      # </span>
-      # {{ "word" | term:"alternative def" }} >>>
-      # <span class="term"
-      #       data-term="alternative def"
-      #       title="Click to define"
-      #       tabindex="0" >
-      #   word
-      #   <icon class="icon-book"></icon>
-      # </span>
-      if !term
-        return "<span class='term term-end' data-term='#{str}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
-      else
-        return "<span class='term term-end' data-term='#{term}' \
-          title='Click to define' tabindex='0'>#{str}<icon \
-          class='icon-book'></icon></span>"
-      end
+    def term_end(str, term = nil, terms = nil)
+      term(str, term, terms, 'term-end')
     end
   end
 end

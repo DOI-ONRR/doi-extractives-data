@@ -1,23 +1,4 @@
 federal_production:
-  '2006':
-    - product: Copper Concentrate (tons)
-      name: Copper Concentrate
-      units: tons
-      value: 19521
-      rank: 1
-      percent: 100
-    - product: Zinc Concentrate (tons)
-      name: Zinc Concentrate
-      units: tons
-      value: 54880
-      rank: 1
-      percent: 99.91
-    - product: Lead Concentrate (tons)
-      name: Lead Concentrate
-      units: tons
-      value: 223123
-      rank: 1
-      percent: 99.45
   '2007':
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
@@ -129,9 +110,9 @@ federal_production:
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 22304
+      value: 21425
       rank: 1
-      percent: 97.25
+      percent: 93.42
   '2013':
     - product: Zinc Concentrate (tons)
       name: Zinc Concentrate
@@ -186,9 +167,28 @@ federal_production:
     - product: Copper Concentrate (tons)
       name: Copper Concentrate
       units: tons
-      value: 24504
+      value: 24502
       rank: 1
-      percent: 94.32
+      percent: 94.31
+  '2016':
+    - product: Zinc Concentrate (tons)
+      name: Zinc Concentrate
+      units: tons
+      value: 25178
+      rank: 1
+      percent: 99.3
+    - product: Lead Concentrate (tons)
+      name: Lead Concentrate
+      units: tons
+      value: 113917
+      rank: 1
+      percent: 98.03
+    - product: Copper Concentrate (tons)
+      name: Copper Concentrate
+      units: tons
+      value: 23863
+      rank: 1
+      percent: 95.46
 revenue:
   '2006':
     - product: Hardrock

@@ -147,11 +147,11 @@ AL:
       units: mcf
       volume:
         '2007':
-          volume: 22393740
+          volume: 22393741
           percent: 0.34
           rank: 9
         '2008':
-          volume: 22960757
+          volume: 22960756
           percent: 0.36
           rank: 9
         '2009':
@@ -163,23 +163,23 @@ AL:
           percent: 0.3
           rank: 9
         '2011':
-          volume: 16790164
+          volume: 16790163
           percent: 0.29
           rank: 8
         '2012':
-          volume: 18001473
+          volume: 18001472
           percent: 0.33
           rank: 9
         '2013':
-          volume: 12236340
+          volume: 12236339
           percent: 0.25
           rank: 12
         '2014':
-          volume: 15179723
+          volume: 15179722
           percent: 0.31
           rank: 9
         '2015':
-          volume: 13902506
+          volume: 13902505
           percent: 0.29
           rank: 11
         '2016':
@@ -195,11 +195,11 @@ AL:
           percent: 0.01
           rank: 17
         '2008':
-          volume: 44461
+          volume: 44460
           percent: 0.01
           rank: 18
         '2009':
-          volume: 32908
+          volume: 32909
           percent: 0
           rank: 18
         '2010':
@@ -211,23 +211,23 @@ AL:
           percent: 0.01
           rank: 17
         '2012':
-          volume: 30469
+          volume: 30470
           percent: 0
           rank: 17
         '2013':
-          volume: 26696
+          volume: 26695
           percent: 0
           rank: 18
         '2014':
-          volume: 24844
+          volume: 24842
           percent: 0
           rank: 18
         '2015':
-          volume: 40385
+          volume: 40384
           percent: 0.01
           rank: 16
         '2016':
-          volume: 49221
+          volume: 49222
           percent: 0.01
           rank: 16
 AR:
@@ -241,15 +241,15 @@ AR:
           percent: 0.15
           rank: 13
         '2008':
-          volume: 12113472
+          volume: 12113471
           percent: 0.19
           rank: 12
         '2009':
-          volume: 17979759
+          volume: 17979758
           percent: 0.28
           rank: 10
         '2010':
-          volume: 18850902
+          volume: 18850899
           percent: 0.3
           rank: 8
         '2011':
@@ -257,19 +257,19 @@ AR:
           percent: 0.28
           rank: 9
         '2012':
-          volume: 14511179
+          volume: 14511180
           percent: 0.27
           rank: 12
         '2013':
-          volume: 13149149
+          volume: 13149150
           percent: 0.27
           rank: 11
         '2014':
-          volume: 14540113
+          volume: 14540111
           percent: 0.3
           rank: 10
         '2015':
-          volume: 13769212
+          volume: 13769213
           percent: 0.28
           rank: 12
         '2016':
@@ -401,15 +401,15 @@ CA:
           percent: 0.24
           rank: 10
         '2008':
-          volume: 13696929
+          volume: 13696928
           percent: 0.22
           rank: 11
         '2009':
-          volume: 10901080
+          volume: 10901081
           percent: 0.17
           rank: 12
         '2010':
-          volume: 11220855
+          volume: 11220854
           percent: 0.18
           rank: 12
         '2011':
@@ -417,11 +417,11 @@ CA:
           percent: 0.27
           rank: 10
         '2012':
-          volume: 14559675
+          volume: 14559674
           percent: 0.27
           rank: 11
         '2013':
-          volume: 11464762
+          volume: 11464763
           percent: 0.23
           rank: 13
         '2014':
@@ -433,7 +433,7 @@ CA:
           percent: 0.26
           rank: 13
         '2016':
-          volume: 12065743
+          volume: 12065742
           percent: 0.27
           rank: 10
     'Geothermal - Direct Utilization, Millions of BTUs':
@@ -501,19 +501,19 @@ CA:
           percent: 49.79
           rank: 2
         '2011':
-          volume: 980959058
+          volume: 980959057
           percent: 48.93
           rank: 2
         '2012':
-          volume: 918939267
+          volume: 918939268
           percent: 43.09
           rank: 2
         '2013':
-          volume: 918278008
+          volume: 918278007
           percent: 38.71
           rank: 2
         '2014':
-          volume: 896841860
+          volume: 896841861
           percent: 34.78
           rank: 2
         '2015':
@@ -573,7 +573,7 @@ CA:
           percent: 1.98
           rank: 2
         '2009':
-          volume: 48517753
+          volume: 48517752
           percent: 1.67
           rank: 2
         '2010':
@@ -585,7 +585,7 @@ CA:
           percent: 1.87
           rank: 2
         '2012':
-          volume: 48207755
+          volume: 48207756
           percent: 1.93
           rank: 2
         '2013':
@@ -593,7 +593,7 @@ CA:
           percent: 1.95
           rank: 2
         '2014':
-          volume: 45564160
+          volume: 45564161
           percent: 1.82
           rank: 2
         '2015':
@@ -649,11 +649,11 @@ CA:
           percent: 2.45
           rank: 3
         '2009':
-          volume: 14034377
+          volume: 14034375
           percent: 2.01
           rank: 3
         '2010':
-          volume: 13947461
+          volume: 13947460
           percent: 2
           rank: 3
         '2011':
@@ -665,19 +665,19 @@ CA:
           percent: 2.48
           rank: 4
         '2013':
-          volume: 15259842
+          volume: 15259841
           percent: 2.45
           rank: 4
         '2014':
-          volume: 14651872
+          volume: 14651871
           percent: 2.1
           rank: 4
         '2015':
-          volume: 13325740
+          volume: 13325739
           percent: 1.76
           rank: 4
         '2016':
-          volume: 10973825
+          volume: 10973824
           percent: 1.44
           rank: 4
     Salt (tons):
@@ -863,27 +863,27 @@ CO:
       units: mcf
       volume:
         '2007':
-          volume: 538451706
+          volume: 538451705
           percent: 8.25
           rank: 3
         '2008':
-          volume: 622683200
+          volume: 622683199
           percent: 9.84
           rank: 3
         '2009':
-          volume: 669674628
+          volume: 669674629
           percent: 10.26
           rank: 3
         '2010':
-          volume: 684570738
+          volume: 684570737
           percent: 10.94
           rank: 3
         '2011':
-          volume: 724568061
+          volume: 724568060
           percent: 12.58
           rank: 3
         '2012':
-          volume: 733943888
+          volume: 733943887
           percent: 13.63
           rank: 3
         '2013':
@@ -891,15 +891,15 @@ CO:
           percent: 14.64
           rank: 3
         '2014':
-          volume: 742072461
+          volume: 742072460
           percent: 15.26
           rank: 3
         '2015':
-          volume: 663793217
+          volume: 663793216
           percent: 13.72
           rank: 3
         '2016':
-          volume: 641696464
+          volume: 641696460
           percent: 14.23
           rank: 3
     Oil (bbl):
@@ -907,15 +907,15 @@ CO:
       units: bbl
       volume:
         '2007':
-          volume: 4107172
+          volume: 4107170
           percent: 0.69
           rank: 7
         '2008':
-          volume: 4157310
+          volume: 4157309
           percent: 0.76
           rank: 7
         '2009':
-          volume: 3931735
+          volume: 3931736
           percent: 0.56
           rank: 6
         '2010':
@@ -923,15 +923,15 @@ CO:
           percent: 0.54
           rank: 6
         '2011':
-          volume: 4140410
+          volume: 4140409
           percent: 0.67
           rank: 6
         '2012':
-          volume: 4434650
+          volume: 4434651
           percent: 0.72
           rank: 6
         '2013':
-          volume: 4381027
+          volume: 4381028
           percent: 0.7
           rank: 6
         '2014':
@@ -939,11 +939,11 @@ CO:
           percent: 0.78
           rank: 6
         '2015':
-          volume: 5011886
+          volume: 5011890
           percent: 0.66
           rank: 6
         '2016':
-          volume: 4863315
+          volume: 4863316
           percent: 0.64
           rank: 6
     Sodium Bi-Carbonate (tons):
@@ -1141,7 +1141,7 @@ IL:
       units: bbl
       volume:
         '2007':
-          volume: 38954
+          volume: 38953
           percent: 0.01
           rank: 19
         '2008':
@@ -1195,11 +1195,11 @@ KS:
           percent: 0.12
           rank: 14
         '2009':
-          volume: 7369920
+          volume: 7369922
           percent: 0.11
           rank: 14
         '2010':
-          volume: 7119667
+          volume: 7119666
           percent: 0.11
           rank: 14
         '2011':
@@ -1211,19 +1211,19 @@ KS:
           percent: 0.11
           rank: 14
         '2013':
-          volume: 5161965
+          volume: 5161963
           percent: 0.1
           rank: 14
         '2014':
-          volume: 4712862
+          volume: 4712861
           percent: 0.1
           rank: 14
         '2015':
-          volume: 4390941
+          volume: 4390942
           percent: 0.09
           rank: 14
         '2016':
-          volume: 4106859
+          volume: 4106860
           percent: 0.09
           rank: 14
     Oil (bbl):
@@ -1235,7 +1235,7 @@ KS:
           percent: 0.05
           rank: 11
         '2008':
-          volume: 279466
+          volume: 279467
           percent: 0.05
           rank: 11
         '2009':
@@ -1243,7 +1243,7 @@ KS:
           percent: 0.03
           rank: 12
         '2010':
-          volume: 220061
+          volume: 220062
           percent: 0.03
           rank: 13
         '2011':
@@ -1251,15 +1251,15 @@ KS:
           percent: 0.04
           rank: 14
         '2012':
-          volume: 225589
+          volume: 225590
           percent: 0.04
           rank: 14
         '2013':
-          volume: 199643
+          volume: 199642
           percent: 0.03
           rank: 14
         '2014':
-          volume: 169816
+          volume: 169815
           percent: 0.02
           rank: 15
         '2015':
@@ -1267,7 +1267,7 @@ KS:
           percent: 0.02
           rank: 15
         '2016':
-          volume: 138301
+          volume: 138302
           percent: 0.02
           rank: 14
 KY:
@@ -1317,7 +1317,7 @@ KY:
       units: mcf
       volume:
         '2007':
-          volume: 207550
+          volume: 207549
           percent: 0
           rank: 21
         '2008':
@@ -1325,7 +1325,7 @@ KY:
           percent: 0
           rank: 21
         '2009':
-          volume: 189884
+          volume: 189885
           percent: 0
           rank: 21
         '2010':
@@ -1333,7 +1333,7 @@ KY:
           percent: 0
           rank: 20
         '2011':
-          volume: 173873
+          volume: 173874
           percent: 0
           rank: 21
         '2012':
@@ -1353,7 +1353,7 @@ KY:
           percent: 0
           rank: 20
         '2016':
-          volume: 154562
+          volume: 154563
           percent: 0
           rank: 20
     Oil (bbl):
@@ -1365,7 +1365,7 @@ KY:
           percent: 0
           rank: 21
         '2008':
-          volume: 13179
+          volume: 13178
           percent: 0
           rank: 21
         '2009':
@@ -1373,11 +1373,11 @@ KY:
           percent: 0
           rank: 21
         '2010':
-          volume: 13048
+          volume: 13047
           percent: 0
           rank: 21
         '2011':
-          volume: 12407
+          volume: 12408
           percent: 0
           rank: 21
         '2012':
@@ -1385,7 +1385,7 @@ KY:
           percent: 0
           rank: 21
         '2013':
-          volume: 11748
+          volume: 11749
           percent: 0
           rank: 21
         '2014':
@@ -1407,7 +1407,7 @@ LA:
       units: mcf
       volume:
         '2007':
-          volume: 30613870
+          volume: 30613869
           percent: 0.47
           rank: 7
         '2008':
@@ -1415,15 +1415,15 @@ LA:
           percent: 0.47
           rank: 7
         '2009':
-          volume: 20532317
+          volume: 20532316
           percent: 0.31
           rank: 9
         '2010':
-          volume: 16634180
+          volume: 16634179
           percent: 0.27
           rank: 10
         '2011':
-          volume: 20759075
+          volume: 20759076
           percent: 0.36
           rank: 7
         '2012':
@@ -1431,19 +1431,19 @@ LA:
           percent: 0.39
           rank: 6
         '2013':
-          volume: 17570166
+          volume: 17570168
           percent: 0.35
           rank: 7
         '2014':
-          volume: 13391605
+          volume: 13391603
           percent: 0.28
           rank: 12
         '2015':
-          volume: 16644259
+          volume: 16644260
           percent: 0.34
           rank: 8
         '2016':
-          volume: 11052150
+          volume: 11052147
           percent: 0.25
           rank: 13
     Oil (bbl):
@@ -1451,19 +1451,19 @@ LA:
       units: bbl
       volume:
         '2007':
-          volume: 436247
+          volume: 436246
           percent: 0.07
           rank: 8
         '2008':
-          volume: 379902
+          volume: 379901
           percent: 0.07
           rank: 9
         '2009':
-          volume: 346579
+          volume: 346581
           percent: 0.05
           rank: 9
         '2010':
-          volume: 337193
+          volume: 337194
           percent: 0.05
           rank: 9
         '2011':
@@ -1475,7 +1475,7 @@ LA:
           percent: 0.06
           rank: 9
         '2013':
-          volume: 329562
+          volume: 329561
           percent: 0.05
           rank: 12
         '2014':
@@ -1483,11 +1483,11 @@ LA:
           percent: 0.05
           rank: 11
         '2015':
-          volume: 355505
+          volume: 355502
           percent: 0.05
           rank: 11
         '2016':
-          volume: 297862
+          volume: 297861
           percent: 0.04
           rank: 11
 MI:
@@ -1497,19 +1497,19 @@ MI:
       units: mcf
       volume:
         '2007':
-          volume: 2985936
+          volume: 2985937
           percent: 0.05
           rank: 15
         '2008':
-          volume: 2771038
+          volume: 2771039
           percent: 0.04
           rank: 15
         '2009':
-          volume: 2566868
+          volume: 2566867
           percent: 0.04
           rank: 15
         '2010':
-          volume: 2361537
+          volume: 2361535
           percent: 0.04
           rank: 15
         '2011':
@@ -1521,19 +1521,19 @@ MI:
           percent: 0.04
           rank: 16
         '2013':
-          volume: 1771068
+          volume: 1771067
           percent: 0.04
           rank: 16
         '2014':
-          volume: 1570024
+          volume: 1570023
           percent: 0.03
           rank: 16
         '2015':
-          volume: 1457506
+          volume: 1457505
           percent: 0.03
           rank: 16
         '2016':
-          volume: 1328857
+          volume: 1328859
           percent: 0.03
           rank: 16
     Oil (bbl):
@@ -1545,23 +1545,23 @@ MI:
           percent: 0.01
           rank: 18
         '2008':
-          volume: 50081
+          volume: 50080
           percent: 0.01
           rank: 17
         '2009':
-          volume: 27993
+          volume: 27992
           percent: 0
           rank: 19
         '2010':
-          volume: 33233
+          volume: 33231
           percent: 0
           rank: 18
         '2011':
-          volume: 39475
+          volume: 39476
           percent: 0.01
           rank: 16
         '2012':
-          volume: 44907
+          volume: 44906
           percent: 0.01
           rank: 16
         '2013':
@@ -1573,11 +1573,11 @@ MI:
           percent: 0
           rank: 16
         '2015':
-          volume: 26901
+          volume: 26900
           percent: 0
           rank: 17
         '2016':
-          volume: 19768
+          volume: 19766
           percent: 0
           rank: 18
 MO:
@@ -1587,27 +1587,27 @@ MO:
       units: tons
       volume:
         '2007':
-          volume: 10959
+          volume: 10960
           percent: 86.56
           rank: 1
         '2008':
-          volume: 11910
+          volume: 11909
           percent: 98.17
           rank: 1
         '2009':
-          volume: 8727
+          volume: 8726
           percent: 89.93
           rank: 1
         '2010':
-          volume: 8973
+          volume: 8974
           percent: 88.41
           rank: 1
         '2011':
-          volume: 8387
+          volume: 8386
           percent: 92
           rank: 1
         '2012':
-          volume: 21425
+          volume: 21424
           percent: 93.42
           rank: 1
         '2013':
@@ -1615,11 +1615,11 @@ MO:
           percent: 99.17
           rank: 1
         '2014':
-          volume: 20283
+          volume: 20282
           percent: 98.65
           rank: 1
         '2015':
-          volume: 24502
+          volume: 24501
           percent: 94.31
           rank: 1
         '2016':
@@ -1635,11 +1635,11 @@ MO:
           percent: 99.27
           rank: 1
         '2008':
-          volume: 203432
+          volume: 203433
           percent: 99.52
           rank: 1
         '2009':
-          volume: 194151
+          volume: 194150
           percent: 98.95
           rank: 1
         '2010':
@@ -1647,11 +1647,11 @@ MO:
           percent: 99.72
           rank: 1
         '2011':
-          volume: 176581
+          volume: 176582
           percent: 99.12
           rank: 1
         '2012':
-          volume: 155034
+          volume: 155035
           percent: 98.43
           rank: 1
         '2013':
@@ -1659,7 +1659,7 @@ MO:
           percent: 99.44
           rank: 1
         '2014':
-          volume: 143271
+          volume: 143272
           percent: 99.32
           rank: 1
         '2015':
@@ -1667,7 +1667,7 @@ MO:
           percent: 97.87
           rank: 1
         '2016':
-          volume: 113917
+          volume: 113916
           percent: 98.03
           rank: 1
     Zinc Concentrate (tons):
@@ -1679,7 +1679,7 @@ MO:
           percent: 99.77
           rank: 1
         '2008':
-          volume: 45451
+          volume: 45452
           percent: 99.84
           rank: 1
         '2009':
@@ -1687,11 +1687,11 @@ MO:
           percent: 99.86
           rank: 1
         '2010':
-          volume: 43523
+          volume: 43522
           percent: 100
           rank: 1
         '2011':
-          volume: 43764
+          volume: 43763
           percent: 99.83
           rank: 1
         '2012':
@@ -1708,7 +1708,7 @@ MO:
           rank: 1
         '2015':
           volume: 37113
-          percent: 99.78
+          percent: 99.79
           rank: 1
         '2016':
           volume: 25178
@@ -1721,7 +1721,7 @@ MS:
       units: mcf
       volume:
         '2007':
-          volume: 651141
+          volume: 651142
           percent: 0.01
           rank: 17
         '2008':
@@ -1737,7 +1737,7 @@ MS:
           percent: 0.01
           rank: 17
         '2011':
-          volume: 774816
+          volume: 774814
           percent: 0.01
           rank: 17
         '2012':
@@ -1745,11 +1745,11 @@ MS:
           percent: 0.01
           rank: 17
         '2013':
-          volume: 433936
+          volume: 433935
           percent: 0.01
           rank: 18
         '2014':
-          volume: 385562
+          volume: 385563
           percent: 0.01
           rank: 18
         '2015':
@@ -1757,7 +1757,7 @@ MS:
           percent: 0.01
           rank: 17
         '2016':
-          volume: 366293
+          volume: 366294
           percent: 0.01
           rank: 18
     Oil (bbl):
@@ -1765,7 +1765,7 @@ MS:
       units: bbl
       volume:
         '2007':
-          volume: 292829
+          volume: 292828
           percent: 0.05
           rank: 12
         '2008':
@@ -1773,15 +1773,15 @@ MS:
           percent: 0.04
           rank: 12
         '2009':
-          volume: 235697
+          volume: 235696
           percent: 0.03
           rank: 11
         '2010':
-          volume: 239547
+          volume: 239546
           percent: 0.03
           rank: 11
         '2011':
-          volume: 267676
+          volume: 267677
           percent: 0.04
           rank: 12
         '2012':
@@ -1789,11 +1789,11 @@ MS:
           percent: 0.05
           rank: 11
         '2013':
-          volume: 424328
+          volume: 424327
           percent: 0.07
           rank: 10
         '2014':
-          volume: 399153
+          volume: 399154
           percent: 0.06
           rank: 10
         '2015':
@@ -1801,7 +1801,7 @@ MS:
           percent: 0.05
           rank: 10
         '2016':
-          volume: 450750
+          volume: 450752
           percent: 0.06
           rank: 10
 MT:
@@ -1855,7 +1855,7 @@ MT:
       units: mcf
       volume:
         '2007':
-          volume: 38698250
+          volume: 38698249
           percent: 0.59
           rank: 5
         '2008':
@@ -1863,7 +1863,7 @@ MT:
           percent: 0.62
           rank: 5
         '2009':
-          volume: 36895310
+          volume: 36895309
           percent: 0.57
           rank: 5
         '2010':
@@ -1871,23 +1871,23 @@ MT:
           percent: 0.5
           rank: 5
         '2011':
-          volume: 25049085
+          volume: 25049086
           percent: 0.43
           rank: 6
         '2012':
-          volume: 18175534
+          volume: 18175533
           percent: 0.34
           rank: 7
         '2013':
-          volume: 15643115
+          volume: 15643113
           percent: 0.32
           rank: 8
         '2014':
-          volume: 14450257
+          volume: 14450255
           percent: 0.3
           rank: 11
         '2015':
-          volume: 14905810
+          volume: 14905808
           percent: 0.31
           rank: 10
         '2016':
@@ -1899,11 +1899,11 @@ MT:
       units: bbl
       volume:
         '2007':
-          volume: 4648739
+          volume: 4648735
           percent: 0.78
           rank: 6
         '2008':
-          volume: 4212358
+          volume: 4212360
           percent: 0.77
           rank: 6
         '2009':
@@ -1911,31 +1911,31 @@ MT:
           percent: 0.54
           rank: 7
         '2010':
-          volume: 3519894
+          volume: 3519895
           percent: 0.5
           rank: 7
         '2011':
-          volume: 3253203
+          volume: 3253204
           percent: 0.53
           rank: 7
         '2012':
-          volume: 3296873
+          volume: 3296874
           percent: 0.54
           rank: 7
         '2013':
-          volume: 3365220
+          volume: 3365221
           percent: 0.54
           rank: 7
         '2014':
-          volume: 3405804
+          volume: 3405802
           percent: 0.49
           rank: 7
         '2015':
-          volume: 3244163
+          volume: 3244165
           percent: 0.43
           rank: 7
         '2016':
-          volume: 3063543
+          volume: 3063544
           percent: 0.4
           rank: 7
 ND:
@@ -1989,15 +1989,15 @@ ND:
       units: mcf
       volume:
         '2007':
-          volume: 10086782
+          volume: 10086781
           percent: 0.15
           rank: 12
         '2008':
-          volume: 10883833
+          volume: 10883831
           percent: 0.17
           rank: 13
         '2009':
-          volume: 10005082
+          volume: 10005081
           percent: 0.15
           rank: 13
         '2010':
@@ -2005,7 +2005,7 @@ ND:
           percent: 0.18
           rank: 13
         '2011':
-          volume: 13893554
+          volume: 13893555
           percent: 0.24
           rank: 12
         '2012':
@@ -2013,7 +2013,7 @@ ND:
           percent: 0.34
           rank: 8
         '2013':
-          volume: 22438340
+          volume: 22438339
           percent: 0.45
           rank: 6
         '2014':
@@ -2021,7 +2021,7 @@ ND:
           percent: 0.56
           rank: 6
         '2015':
-          volume: 42744166
+          volume: 42744165
           percent: 0.88
           rank: 5
         '2016':
@@ -2033,11 +2033,11 @@ ND:
       units: bbl
       volume:
         '2007':
-          volume: 7120480
+          volume: 7120481
           percent: 1.2
           rank: 5
         '2008':
-          volume: 7376825
+          volume: 7376824
           percent: 1.34
           rank: 5
         '2009':
@@ -2045,7 +2045,7 @@ ND:
           percent: 1.08
           rank: 5
         '2010':
-          volume: 9733899
+          volume: 9733898
           percent: 1.4
           rank: 5
         '2011':
@@ -2057,7 +2057,7 @@ ND:
           percent: 2.64
           rank: 3
         '2013':
-          volume: 18392161
+          volume: 18392159
           percent: 2.95
           rank: 3
         '2014':
@@ -2069,7 +2069,7 @@ ND:
           percent: 3.62
           rank: 3
         '2016':
-          volume: 27828324
+          volume: 27828322
           percent: 3.65
           rank: 3
 NE:
@@ -2123,7 +2123,7 @@ NE:
       units: bbl
       volume:
         '2007':
-          volume: 67711
+          volume: 67712
           percent: 0.01
           rank: 16
         '2008':
@@ -2131,7 +2131,7 @@ NE:
           percent: 0.01
           rank: 16
         '2009':
-          volume: 40913
+          volume: 40912
           percent: 0.01
           rank: 16
         '2010':
@@ -2151,11 +2151,11 @@ NE:
           percent: 0
           rank: 17
         '2014':
-          volume: 27271
+          volume: 27270
           percent: 0
           rank: 17
         '2015':
-          volume: 24860
+          volume: 24859
           percent: 0
           rank: 18
         '2016':
@@ -2217,15 +2217,15 @@ NM:
           percent: 14.95
           rank: 2
         '2008':
-          volume: 927113251
+          volume: 927113249
           percent: 14.64
           rank: 2
         '2009':
-          volume: 895629959
+          volume: 895629958
           percent: 13.72
           rank: 2
         '2010':
-          volume: 840719889
+          volume: 840719888
           percent: 13.44
           rank: 2
         '2011':
@@ -2233,11 +2233,11 @@ NM:
           percent: 14.22
           rank: 2
         '2012':
-          volume: 803253894
+          volume: 803253893
           percent: 14.92
           rank: 2
         '2013':
-          volume: 779815554
+          volume: 779815555
           percent: 15.75
           rank: 2
         '2014':
@@ -2249,7 +2249,7 @@ NM:
           percent: 16.59
           rank: 2
         '2016':
-          volume: 782531352
+          volume: 782531351
           percent: 17.35
           rank: 2
     'Geothermal - Direct Use, Millions of Gallons':
@@ -2437,7 +2437,7 @@ NM:
       units: bbl
       volume:
         '2007':
-          volume: 25275434
+          volume: 25275433
           percent: 4.26
           rank: 2
         '2008':
@@ -2445,7 +2445,7 @@ NM:
           percent: 4.67
           rank: 2
         '2009':
-          volume: 28495662
+          volume: 28495663
           percent: 4.09
           rank: 2
         '2010':
@@ -2461,11 +2461,11 @@ NM:
           percent: 7.25
           rank: 1
         '2013':
-          volume: 52669695
+          volume: 52669696
           percent: 8.46
           rank: 1
         '2014':
-          volume: 67134457
+          volume: 67134456
           percent: 9.61
           rank: 1
         '2015':
@@ -2473,7 +2473,7 @@ NM:
           percent: 10.78
           rank: 1
         '2016':
-          volume: 77491485
+          volume: 77491483
           percent: 10.17
           rank: 1
     Potash (tons):
@@ -2663,7 +2663,7 @@ NV:
           percent: 34.91
           rank: 2
         '2008':
-          volume: 569422744
+          volume: 569422745
           percent: 34.72
           rank: 2
         '2009':
@@ -2679,7 +2679,7 @@ NV:
           percent: 51.07
           rank: 1
         '2012':
-          volume: 1213710003
+          volume: 1213710002
           percent: 56.91
           rank: 1
         '2013':
@@ -2757,11 +2757,11 @@ NY:
       units: mcf
       volume:
         '2007':
-          volume: 12690
+          volume: 12691
           percent: 0
           rank: 23
         '2008':
-          volume: 11162
+          volume: 11163
           percent: 0
           rank: 23
         '2009':
@@ -2777,7 +2777,7 @@ NY:
           percent: 0
           rank: 22
         '2012':
-          volume: 43904
+          volume: 43903
           percent: 0
           rank: 22
         '2013':
@@ -2811,7 +2811,7 @@ OH:
       units: mcf
       volume:
         '2007':
-          volume: 546642
+          volume: 546641
           percent: 0.01
           rank: 18
         '2008':
@@ -2819,7 +2819,7 @@ OH:
           percent: 0.01
           rank: 19
         '2009':
-          volume: 456257
+          volume: 456258
           percent: 0.01
           rank: 19
         '2010':
@@ -2827,7 +2827,7 @@ OH:
           percent: 0.01
           rank: 18
         '2011':
-          volume: 445437
+          volume: 445436
           percent: 0.01
           rank: 18
         '2012':
@@ -2835,11 +2835,11 @@ OH:
           percent: 0.01
           rank: 18
         '2013':
-          volume: 397582
+          volume: 397583
           percent: 0.01
           rank: 19
         '2014':
-          volume: 365645
+          volume: 365644
           percent: 0.01
           rank: 19
         '2015':
@@ -2855,7 +2855,7 @@ OH:
       units: bbl
       volume:
         '2007':
-          volume: 19606
+          volume: 19607
           percent: 0
           rank: 20
         '2008':
@@ -2863,19 +2863,19 @@ OH:
           percent: 0
           rank: 20
         '2009':
-          volume: 18827
+          volume: 18826
           percent: 0
           rank: 20
         '2010':
-          volume: 17731
+          volume: 17730
           percent: 0
           rank: 20
         '2011':
-          volume: 17287
+          volume: 17286
           percent: 0
           rank: 20
         '2012':
-          volume: 16357
+          volume: 16358
           percent: 0
           rank: 20
         '2013':
@@ -2883,7 +2883,7 @@ OH:
           percent: 0
           rank: 20
         '2014':
-          volume: 14518
+          volume: 14519
           percent: 0
           rank: 20
         '2015':
@@ -2945,7 +2945,7 @@ OK:
       units: mcf
       volume:
         '2007':
-          volume: 14145256
+          volume: 14145258
           percent: 0.22
           rank: 11
         '2008':
@@ -2953,7 +2953,7 @@ OK:
           percent: 0.24
           rank: 10
         '2009':
-          volume: 15877678
+          volume: 15877677
           percent: 0.24
           rank: 11
         '2010':
@@ -2961,27 +2961,27 @@ OK:
           percent: 0.25
           rank: 11
         '2011':
-          volume: 13466251
+          volume: 13466250
           percent: 0.23
           rank: 13
         '2012':
-          volume: 16380444
+          volume: 16380446
           percent: 0.3
           rank: 10
         '2013':
-          volume: 15012706
+          volume: 15012708
           percent: 0.3
           rank: 9
         '2014':
-          volume: 15877154
+          volume: 15877157
           percent: 0.33
           rank: 7
         '2015':
-          volume: 19375562
+          volume: 19375564
           percent: 0.4
           rank: 7
         '2016':
-          volume: 15969500
+          volume: 15969502
           percent: 0.35
           rank: 7
     Oil (bbl):
@@ -2989,11 +2989,11 @@ OK:
       units: bbl
       volume:
         '2007':
-          volume: 176964
+          volume: 176963
           percent: 0.03
           rank: 15
         '2008':
-          volume: 184370
+          volume: 184371
           percent: 0.03
           rank: 14
         '2009':
@@ -3005,15 +3005,15 @@ OK:
           percent: 0.03
           rank: 14
         '2011':
-          volume: 355425
+          volume: 355424
           percent: 0.06
           rank: 9
         '2012':
-          volume: 571525
+          volume: 571522
           percent: 0.09
           rank: 8
         '2013':
-          volume: 566281
+          volume: 566280
           percent: 0.09
           rank: 9
         '2014':
@@ -3021,11 +3021,11 @@ OK:
           percent: 0.11
           rank: 9
         '2015':
-          volume: 1018150
+          volume: 1018149
           percent: 0.13
           rank: 8
         '2016':
-          volume: 656233
+          volume: 656232
           percent: 0.09
           rank: 9
 PA:
@@ -3035,7 +3035,7 @@ PA:
       units: mcf
       volume:
         '2007':
-          volume: 19913
+          volume: 19912
           percent: 0
           rank: 22
         '2008':
@@ -3071,7 +3071,7 @@ PA:
           percent: 0
           rank: 24
         '2016':
-          volume: 11388
+          volume: 11389
           percent: 0
           rank: 23
     Oil (bbl):
@@ -3211,15 +3211,15 @@ TX:
           percent: 0.42
           rank: 8
         '2008':
-          volume: 25135527
+          volume: 25135528
           percent: 0.4
           rank: 8
         '2009':
-          volume: 23364386
+          volume: 23364387
           percent: 0.36
           rank: 7
         '2010':
-          volume: 21684733
+          volume: 21684731
           percent: 0.35
           rank: 7
         '2011':
@@ -3227,7 +3227,7 @@ TX:
           percent: 0.62
           rank: 5
         '2012':
-          volume: 56572518
+          volume: 56572519
           percent: 1.05
           rank: 5
         '2013':
@@ -3239,11 +3239,11 @@ TX:
           percent: 0.77
           rank: 5
         '2015':
-          volume: 32254848
+          volume: 32254849
           percent: 0.67
           rank: 6
         '2016':
-          volume: 36551933
+          volume: 36551932
           percent: 0.81
           rank: 6
     Oil (bbl):
@@ -3251,11 +3251,11 @@ TX:
       units: bbl
       volume:
         '2007':
-          volume: 320496
+          volume: 320498
           percent: 0.05
           rank: 10
         '2008':
-          volume: 308390
+          volume: 308389
           percent: 0.06
           rank: 10
         '2009':
@@ -3263,19 +3263,19 @@ TX:
           percent: 0.05
           rank: 10
         '2010':
-          volume: 279933
+          volume: 279932
           percent: 0.04
           rank: 10
         '2011':
-          volume: 327973
+          volume: 327971
           percent: 0.05
           rank: 11
         '2012':
-          volume: 319149
+          volume: 319148
           percent: 0.05
           rank: 12
         '2013':
-          volume: 239053
+          volume: 239055
           percent: 0.04
           rank: 13
         '2014':
@@ -3283,11 +3283,11 @@ TX:
           percent: 0.03
           rank: 13
         '2015':
-          volume: 219186
+          volume: 219187
           percent: 0.03
           rank: 13
         '2016':
-          volume: 161622
+          volume: 161621
           percent: 0.02
           rank: 13
 UT:
@@ -3341,7 +3341,7 @@ UT:
       units: tons
       volume:
         '2007':
-          volume: 6674551
+          volume: 6674550
           percent: 1.47
           rank: 4
         '2008':
@@ -3385,11 +3385,11 @@ UT:
       units: mcf
       volume:
         '2007':
-          volume: 243641058
+          volume: 243641057
           percent: 3.73
           rank: 4
         '2008':
-          volume: 296843527
+          volume: 296843525
           percent: 4.69
           rank: 4
         '2009':
@@ -3397,11 +3397,11 @@ UT:
           percent: 4.67
           rank: 4
         '2010':
-          volume: 288778959
+          volume: 288778958
           percent: 4.62
           rank: 4
         '2011':
-          volume: 300919616
+          volume: 300919617
           percent: 5.22
           rank: 4
         '2012':
@@ -3417,7 +3417,7 @@ UT:
           percent: 5.76
           rank: 4
         '2015':
-          volume: 263304372
+          volume: 263304373
           percent: 5.44
           rank: 4
         '2016':
@@ -3541,11 +3541,11 @@ UT:
           percent: 1.41
           rank: 4
         '2008':
-          volume: 10157739
+          volume: 10157738
           percent: 1.85
           rank: 4
         '2009':
-          volume: 10971932
+          volume: 10971931
           percent: 1.57
           rank: 4
         '2010':
@@ -3553,19 +3553,19 @@ UT:
           percent: 1.55
           rank: 4
         '2011':
-          volume: 10669039
+          volume: 10669038
           percent: 1.72
           rank: 5
         '2012':
-          volume: 11214460
+          volume: 11214459
           percent: 1.83
           rank: 5
         '2013':
-          volume: 12042237
+          volume: 12042238
           percent: 1.93
           rank: 5
         '2014':
-          volume: 13238316
+          volume: 13238317
           percent: 1.9
           rank: 5
         '2015':
@@ -3573,7 +3573,7 @@ UT:
           percent: 1.51
           rank: 5
         '2016':
-          volume: 9137776
+          volume: 9137777
           percent: 1.2
           rank: 5
     Potash (tons):
@@ -3671,11 +3671,11 @@ VA:
       units: mcf
       volume:
         '2007':
-          volume: 208358
+          volume: 208357
           percent: 0
           rank: 20
         '2008':
-          volume: 211002
+          volume: 211001
           percent: 0
           rank: 20
         '2009':
@@ -3703,7 +3703,7 @@ VA:
           percent: 0
           rank: 21
         '2015':
-          volume: 138710
+          volume: 138711
           percent: 0
           rank: 21
         '2016':
@@ -3739,11 +3739,11 @@ WV:
           percent: 0.01
           rank: 19
         '2008':
-          volume: 596923
+          volume: 596922
           percent: 0.01
           rank: 18
         '2009':
-          volume: 467668
+          volume: 467669
           percent: 0.01
           rank: 18
         '2010':
@@ -3759,7 +3759,7 @@ WV:
           percent: 0
           rank: 19
         '2013':
-          volume: 209083
+          volume: 209082
           percent: 0
           rank: 20
         '2014':
@@ -3841,11 +3841,11 @@ WY:
       units: mcf
       volume:
         '2007':
-          volume: 1664057947
+          volume: 1664057948
           percent: 25.49
           rank: 1
         '2008':
-          volume: 1856666588
+          volume: 1856666590
           percent: 29.33
           rank: 1
         '2009':
@@ -3853,11 +3853,11 @@ WY:
           percent: 29.68
           rank: 1
         '2010':
-          volume: 1938244261
+          volume: 1938244260
           percent: 30.98
           rank: 1
         '2011':
-          volume: 1836050861
+          volume: 1836050862
           percent: 31.87
           rank: 1
         '2012':
@@ -3865,11 +3865,11 @@ WY:
           percent: 32.13
           rank: 1
         '2013':
-          volume: 1586266227
+          volume: 1586266229
           percent: 32.03
           rank: 1
         '2014':
-          volume: 1540222145
+          volume: 1540222143
           percent: 31.68
           rank: 1
         '2015':
@@ -3877,7 +3877,7 @@ WY:
           percent: 32.24
           rank: 1
         '2016':
-          volume: 1420211725
+          volume: 1420211722
           percent: 31.49
           rank: 1
     Oil (bbl):
@@ -3893,23 +3893,23 @@ WY:
           percent: 5.93
           rank: 1
         '2009':
-          volume: 31961647
+          volume: 31961645
           percent: 4.58
           rank: 1
         '2010':
-          volume: 32460257
+          volume: 32460258
           percent: 4.65
           rank: 1
         '2011':
-          volume: 32375424
+          volume: 32375423
           percent: 5.23
           rank: 2
         '2012':
-          volume: 32894429
+          volume: 32894428
           percent: 5.36
           rank: 2
         '2013':
-          volume: 34945970
+          volume: 34945971
           percent: 5.61
           rank: 2
         '2014':
@@ -3917,11 +3917,11 @@ WY:
           percent: 5.76
           rank: 2
         '2015':
-          volume: 45339084
+          volume: 45339086
           percent: 6
           rank: 2
         '2016':
-          volume: 36756540
+          volume: 36756541
           percent: 4.82
           rank: 2
     Purge Liquor (tons - equivalent):

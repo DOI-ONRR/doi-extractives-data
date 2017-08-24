@@ -477,236 +477,236 @@ federal_production:
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 217500
+      value: 217499.73
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 207155
+      value: 207155.08
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1092826809
+      value: 1092826808.81
       rank: 1
       percent: 65.09
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 50375440
+      value: 50375439.62
       rank: 2
       percent: 2.4
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13429378
+      value: 13429378.35
       rank: 3
       percent: 2.26
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 219089
+      value: 219089.01
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 237416
+      value: 237415.56
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1070470822
+      value: 1070470821.71
       rank: 1
       percent: 65.28
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 49867136
+      value: 49867136.34
       rank: 2
       percent: 1.98
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13470159
+      value: 13470158.6
       rank: 3
       percent: 2.45
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 179171
+      value: 179170.56
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 233954
+      value: 233953.69
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1088756553
+      value: 1088756553.23
       rank: 1
       percent: 59.97
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 48517753
+      value: 48517752.31
       rank: 2
       percent: 1.67
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14034377
+      value: 14034374.7
       rank: 3
       percent: 2.01
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 224486
+      value: 224486.3
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 223938
+      value: 223938.12
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 4670
+      value: 4669.79
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 1003412405
+      value: 1003412405.4
       rank: 2
       percent: 49.79
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 48523237
+      value: 48523236.7
       rank: 2
       percent: 1.79
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13947461
+      value: 13947459.81
       rank: 3
       percent: 2
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 228011
+      value: 228010.63
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 19883
+      value: 19883.37
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 3470
+      value: 3469.89
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 980959058
+      value: 980959056.94
       rank: 2
       percent: 48.93
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 48685683
+      value: 48685683.06
       rank: 2
       percent: 1.87
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14922854
+      value: 14922853.6
       rank: 3
       percent: 2.41
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 271470
+      value: 271469.64
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2598
+      value: 2598.09
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 918939267
+      value: 918939267.66
       rank: 2
       percent: 43.09
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 48207755
+      value: 48207755.95
       rank: 2
       percent: 1.93
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 15201189
+      value: 15201189.38
       rank: 4
       percent: 2.48
   '2013':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 276337
+      value: 276337.16
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2448
+      value: 2448.04
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 918278008
+      value: 918278007.25
       rank: 2
       percent: 38.71
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 46144622
+      value: 46144621.79
       rank: 2
       percent: 1.95
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 15259842
+      value: 15259840.75
       rank: 4
       percent: 2.45
   '2014':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 243504
+      value: 243504.1
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
@@ -718,99 +718,99 @@ federal_production:
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2090
+      value: 2089.89
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 896841860
+      value: 896841860.67
       rank: 2
       percent: 34.78
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 45564160
+      value: 45564160.54
       rank: 2
       percent: 1.82
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14651872
+      value: 14651871.37
       rank: 4
       percent: 2.1
   '2015':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 170924
+      value: 170924.18
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 666434
+      value: 666433.98
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2401
+      value: 2400.82
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 796408314
+      value: 796408314.22
       rank: 2
       percent: 28.41
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 42671633
+      value: 42671632.74
       rank: 2
       percent: 1.96
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13325740
+      value: 13325739.46
       rank: 4
       percent: 1.76
   '2016':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
-      value: 136144
+      value: 136144.09
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
       name: Geothermal
       units: 'Electrical Generation, Other'
-      value: 533990
+      value: 533989.65
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
       name: Geothermal
       units: sulfur
-      value: 2329
+      value: 2329.05
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
-      value: 751228983
+      value: 751228982.66
       rank: 2
       percent: 25.01
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
-      value: 41235812
+      value: 41235812.11
       rank: 2
       percent: 1.85
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 10973825
+      value: 10973824.1
       rank: 4
       percent: 1.44
 revenue:

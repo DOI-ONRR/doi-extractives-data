@@ -152,13 +152,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1664057947
+      value: 1664057948.43
       rank: 1
       percent: 25.49
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 33068487
+      value: 33068487.14
       rank: 1
       percent: 5.57
   '2008':
@@ -183,13 +183,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1856666588
+      value: 1856666589.95
       rank: 1
       percent: 29.33
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32633186
+      value: 32633186.5
       rank: 1
       percent: 5.93
   '2009':
@@ -220,13 +220,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1938275696
+      value: 1938275696.19
       rank: 1
       percent: 29.68
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 31961647
+      value: 31961645.08
       rank: 1
       percent: 4.58
   '2010':
@@ -251,7 +251,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1938244261
+      value: 1938244259.71
       rank: 1
       percent: 30.98
     - product: Sodium Bi-Carbonate (tons)
@@ -263,7 +263,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32460257
+      value: 32460258.13
       rank: 1
       percent: 4.65
   '2011':
@@ -288,7 +288,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1836050861
+      value: 1836050862.17
       rank: 1
       percent: 31.87
     - product: Sodium Bi-Carbonate (tons)
@@ -300,7 +300,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32375424
+      value: 32375422.54
       rank: 2
       percent: 5.23
   '2012':
@@ -325,7 +325,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1729935423
+      value: 1729935422.69
       rank: 1
       percent: 32.13
     - product: Sodium Bi-Carbonate (tons)
@@ -337,7 +337,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32894429
+      value: 32894428.08
       rank: 2
       percent: 5.36
   '2013':
@@ -368,7 +368,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1586266227
+      value: 1586266228.68
       rank: 1
       percent: 32.03
     - product: Sodium Bi-Carbonate (tons)
@@ -380,7 +380,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 34945970
+      value: 34945971.24
       rank: 2
       percent: 5.61
   '2014':
@@ -411,13 +411,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1540222145
+      value: 1540222142.96
       rank: 1
       percent: 31.68
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 40191708
+      value: 40191707.58
       rank: 2
       percent: 5.76
   '2015':
@@ -442,7 +442,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1559564301
+      value: 1559564300.92
       rank: 1
       percent: 32.24
     - product: Sodium Bi-Carbonate (tons)
@@ -454,7 +454,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 45339084
+      value: 45339085.75
       rank: 2
       percent: 6
   '2016':
@@ -479,7 +479,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1420211725
+      value: 1420211722.44
       rank: 1
       percent: 31.49
     - product: Sodium Bi-Carbonate (tons)
@@ -491,7 +491,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 36756540
+      value: 36756540.68
       rank: 2
       percent: 4.82
 revenue:

@@ -45,7 +45,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 538451706
+      value: 538451704.72
       rank: 3
       percent: 8.25
   '2008':
@@ -64,14 +64,14 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 622683200
+      value: 622683199.31
       rank: 3
       percent: 9.84
   '2009':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 669674628
+      value: 669674628.56
       rank: 3
       percent: 10.26
     - product: Coal (tons)
@@ -84,7 +84,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 684570738
+      value: 684570737.37
       rank: 3
       percent: 10.94
     - product: Coal (tons)
@@ -103,7 +103,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 724568061
+      value: 724568060.16
       rank: 3
       percent: 12.58
   '2012':
@@ -116,14 +116,14 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 733943888
+      value: 733943887.2
       rank: 3
       percent: 13.63
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 725030994
+      value: 725030994.15
       rank: 3
       percent: 14.64
     - product: Coal (tons)
@@ -136,7 +136,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 742072461
+      value: 742072460.28
       rank: 3
       percent: 15.26
     - product: Coal (tons)
@@ -149,7 +149,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 663793217
+      value: 663793215.54
       rank: 3
       percent: 13.72
     - product: Coal (tons)
@@ -162,7 +162,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 641696464
+      value: 641696460.42
       rank: 3
       percent: 14.23
     - product: Coal (tons)

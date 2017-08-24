@@ -84,7 +84,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 38698250
+      value: 38698248.54
       rank: 5
       percent: 0.59
   '2008':
@@ -97,7 +97,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 39416168
+      value: 39416168.36
       rank: 5
       percent: 0.62
   '2009':
@@ -110,7 +110,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 36895310
+      value: 36895308.97
       rank: 5
       percent: 0.57
   '2010':
@@ -123,7 +123,7 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 31045679
+      value: 31045678.63
       rank: 5
       percent: 0.5
   '2011':

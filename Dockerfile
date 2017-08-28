@@ -4,7 +4,7 @@ FROM ruby:2.2.3
 
 RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
-    apt-get install -y nodejs zip
+    apt-get install -y nodejs sqlite3
 
 WORKDIR /
 

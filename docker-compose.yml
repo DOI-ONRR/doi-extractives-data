@@ -1,0 +1,19 @@
+version: '2'
+services:
+  app:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: jekyll serve --force_polling --watch --incremental --host 0.0.0.0 --port 4000 --trace
+    ports:
+      - 4000:4000
+  webpack:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: webpack --watch --watch-poll
+    stop_signal: SIGKILL
+volumes:
+  node-modules:
+  root:
+  bundle:

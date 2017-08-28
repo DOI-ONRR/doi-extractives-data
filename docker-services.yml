@@ -1,0 +1,14 @@
+version: '2'
+services:
+  base_app:
+    build: .
+    volumes:
+      - .:/doi
+      - node-modules:/doi/node_modules/
+      - root:/root/
+      - bundle:/usr/local/bundle/
+    environment:
+      - LANG=C.UTF-8
+      - LANGUAGE=C.UTF-8
+      - LC_ALL=C.UTF-8
+    working_dir: /doi

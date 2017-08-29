@@ -15,5 +15,6 @@ services:
     stop_signal: SIGKILL
 volumes:
   node-modules:
+  styleguide-template-node-modules:
   root:
   bundle:

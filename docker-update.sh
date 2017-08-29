@@ -8,3 +8,6 @@ fi
 
 yarn
 bundle install
+
+cd styleguide-template
+yarn

@@ -2,12 +2,5 @@
 
 set -e
 
-if [ ! -f /usr/local/bundle/bin/bundler ]; then
-  gem install bundler
-fi
-
-yarn
-bundle install
-
-cd styleguide-template
-yarn
+docker-compose build
+docker-compose run --rm app bash update.sh

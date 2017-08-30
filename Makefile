@@ -14,6 +14,12 @@ load-table = $(tables) -i $(1) -n $(2)
 load-sql = echo "-- loading SQL: $(1) --"; $(sqlite) < $(1)
 drop-table = echo "-- dropping: $(1) --"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
 
+# This can be used in place of ">> $$tmp". For some reason, on some systems
+# that command has the effect of running as "> $$tmp" (i.e., truncating
+# rather than appending), so we'll just work around the issue using
+# the 'tee' command.
+append_to_tmp = | tee -a $$tmp > /dev/null
+
 all: db
 
 clean:
@@ -686,7 +692,7 @@ tables/reconciliation: data/reconciliation/output
 	tmp=$^/all.ndjson; \
 	for revenue_filename in $^/????.tsv; do \
 		$(tito) -r tsv --map ./data/reconciliation/transform.js \
-			$$revenue_filename >> $$tmp; \
+			$$revenue_filename $(append_to_tmp); \
 	done; \
 	$(tables) -i $$tmp -t ndjson -n reconciliation && \
 	rm $$tmp
@@ -715,7 +721,7 @@ tables/all_production: data/all-production/product
 	@$(call drop-table,all_production)
 	tmp=$^/all.ndjson; \
 	for tsv in $^/*.tsv; do \
-		$(tito) -r tsv $$tsv >> $$tmp; \
+		$(tito) -r tsv $$tsv $(append_to_tmp); \
 	done; \
 	$(tables) -t ndjson -n all_production -i $$tmp && \
 	rm $$tmp
@@ -728,7 +734,7 @@ tables/company_revenue: data/company-revenue/output
 		filename="$${company_filename##*/}"; \
 		COMPANY_YEAR="$${filename%%.*}"; \
 		$(tito) -r tsv --map ./data/company-revenue/transform.js \
-			$$company_filename >> $$tmp; \
+			$$company_filename $(append_to_tmp); \
 	done; \
 	$(tables) -i $$tmp -t ndjson -n company_revenue && \
 	rm $$tmp
@@ -741,7 +747,7 @@ tables/bls: data/jobs/bls
 	rm -f $$tmp; \
 	for jobs_filename in $^/????/joined.tsv; do \
 		$(tito) -r tsv --map ./data/jobs/transform.js \
-			$$jobs_filename >> $$tmp; \
+			$$jobs_filename $(append_to_tmp); \
 	done; \
 	$(tables) -i $$tmp -t ndjson -n bls_employment; \
 	rm $$tmp

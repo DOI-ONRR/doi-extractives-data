@@ -6,6 +6,8 @@ We love all friendly contributions, and we welcome your ideas about how to make 
 To ensure a welcoming environment for our projects, our staff follows the [18F Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md); contributors should do the same. Please also check out the [18F Open Source Policy]( https://github.com/18f/open-source-policy).
 
 * [Running and testing the site](#running-and-testing-the-site)
+    - [Using Docker (optional)](#using-docker-optional)
+    - [Troubleshooting](#troubleshooting)
     - [Data and database](#data-and-database)
     - [Deployment](#deployment)
     - [Styleguide](#styleguide)
@@ -26,7 +28,53 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 1. Run the web server: `./serve`. **Note:** If you are working on a core layout page, you can speed up this process by running `./serve-fast`. This runs an incomplete version of the site that might be ideal for certain tasks.
 1. Visit the local site at [http://localhost:4000/site/](http://localhost:4000/site/)
 
-## Troubleshooting
+### Using Docker (optional)
+
+Instead of installing dependencies yourself and running different commands
+in separate terminal sessions, you may want to use Docker, which
+only requires installing [Docker Community Edition][docker]
+and running one command in one terminal window.
+
+If you are on Windows, you will also need `bash`, which you can probably
+get most easily by installing [git for Windows][].
+
+To get up and running with Docker, run:
+
+```
+bash docker-update.sh
+docker-compose up
+```
+
+Then visit http://localhost:4000/ in your browser.
+
+Whenever you make changes to any files, the proper static assets
+will be rebuilt, and your changes will show up on the site.
+
+#### Running commands via Docker
+
+If you want to run commands like `npm`, `make`, or `sqlite3`, the easiest
+way to do this is by running a shell inside the main container:
+
+```
+docker-compose run app bash
+```
+
+Once you do this, you'll be in an interactive shell within the main
+container, and can run any commands you need.
+
+#### Updating the Docker container
+
+Whenever you update the repository using e.g. `git pull`, run
+`bash docker-update.sh` again to rebuild the Docker container and
+fetch any new dependencies.
+
+#### Uninstalling or resetting the Docker container
+
+If you decide that Docker isn't for you, or if your Docker setup somehow
+becomes broken and you're not sure how to fix it, run
+`docker-compose down -v`.
+
+### Troubleshooting
 
 Sometimes the site doesn't build properly. Likely this is an issue with the built version of the site (`_site`). To attempt to fix this, consider running one of the following commands:
 - `./re-serve`: removes `_site` and runs `./serve`
@@ -172,3 +220,6 @@ By submitting a pull request, you agree to comply with the policies on our [LICE
 > This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 >
 > All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
+
+[docker]: https://www.docker.com/community-edition
+[git for Windows]: https://git-for-windows.github.io/

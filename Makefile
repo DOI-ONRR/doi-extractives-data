@@ -641,6 +641,7 @@ $(db): \
 	tables/federal_production \
 	tables/all_production \
 	tables/company_revenue \
+	tables/tribal_revenue \
 	tables/jobs \
 	tables/gdp \
 	tables/exports \

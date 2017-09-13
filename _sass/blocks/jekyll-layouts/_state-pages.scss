@@ -121,7 +121,7 @@
   }
 
   .data-downloads {
-    @include heading(para-sm);
+    @include heading(para-med);
 
     color: $blue;
     text-decoration: none;

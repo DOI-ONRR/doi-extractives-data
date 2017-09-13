@@ -83,20 +83,22 @@
             {% endunless %}
           {% endfor %}
 
-          {% include year-selector.html year_range=year_range empty_years=empty_years %}
         {% endif %}
 
         {% if revenue_commodities %}
-          <p class="chart-description">
-            Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource.
-            <br>
-            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
-          </p>
-        {% else %}
-          <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
-            In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ region_title }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
-          </p>
-        {% endif %}
+          <div class="chart-description">
+            <p>
+              Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource.
+            </p>
+            <p>
+              <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
+            </p>
+          {% else %}
+            <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+              In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ region_title }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">Data and documentation <icon class="fa fa-file-text-o u-padding-right"></icon></a>
+            </p>
+          {% endif %}
+        </div>
       </div>
 
       {% if revenue_commodities %}

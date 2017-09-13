@@ -22,15 +22,17 @@
           {% assign empty_years = empty_years | push:s_y %}
         {% endunless %}
       {% endfor %}
-      {% include year-selector.html year_range=year_range empty_years=empty_years %}
     {% endif %}
-    <p class="chart-description{% unless gdp %} no-selector{% endunless %}">
-      Data about each state’s {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} comes from the Bureau of Economic Analysis.
-      <br>
-      <a href="{{site.baseurl}}/downloads/#gdp">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-      </a>
-    </p>
+    <div class="chart-description{% unless gdp %} no-selector{% endunless %}">
+      <p>
+        Data about each state’s {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} comes from the Bureau of Economic Analysis.
+      </p>
+      <p>
+        <a href="{{site.baseurl}}/downloads/#gdp">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
   </div><!-- /.chart-selector-wrapper -->
 
   {% if gdp %}

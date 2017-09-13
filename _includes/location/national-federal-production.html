@@ -20,15 +20,16 @@
 
     <div class="chart-selector-wrapper">
 
-      {% include year-selector.html year_range=year_range %}
-
-      <p class="chart-description">
-        The Office of Natural Resources Revenue collects detailed data about natural resource {{ "production" | term }} on federal lands and waters.
-        <br>
-        <a href="{{site.baseurl}}/downloads/federal-production/">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-        </a>
-      </p>
+      <div class="chart-description">
+          <p>
+          The Office of Natural Resources Revenue collects detailed data about natural resource {{ "production" | term }} on federal lands and waters.
+          </p>
+        <p>
+          <a href="{{site.baseurl}}/downloads/federal-production/">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
+        </p>
+      </div>
     </div>
 
     <div class="chart-list">

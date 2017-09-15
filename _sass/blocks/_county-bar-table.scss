@@ -36,10 +36,10 @@
   }
 
   tbody > tr.selected {
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
 
     td[data-sentence] {
-      font-weight: $weight-regular;
+      font-weight: $weight-medium;
     }
 
     &[data-year-values] {

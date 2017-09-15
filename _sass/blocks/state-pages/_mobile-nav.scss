@@ -96,7 +96,7 @@
   .mobile-nav-sublist-item {
     @include heading('para-md');
 
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     margin: 0;
     padding-left: 2 * $base-padding;
   }

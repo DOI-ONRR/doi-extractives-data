@@ -49,7 +49,7 @@
 
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
     border-bottom: 1px solid $neutral-gray;
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     padding-top: 2.5rem;
 
     &.stuck {
@@ -114,7 +114,7 @@
     label {
       @include heading('para-md');
 
-      font-weight: $weight-regular;
+      font-weight: $weight-medium;
       margin-bottom: 0;
       padding-bottom: $base-padding-lite;
     }

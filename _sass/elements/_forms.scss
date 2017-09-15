@@ -61,7 +61,7 @@ select[multiple=multiple] {
 
   @include placeholder {
     color: $dark-gray;
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     opacity: 1;
   }
 
@@ -110,7 +110,7 @@ select {
   border: 0;
   border-radius: $form-border-radius;
   color: $dark-gray;
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
   height: 40px;
   margin-bottom: 1em;
   overflow: hidden;

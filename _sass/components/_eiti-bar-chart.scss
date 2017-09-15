@@ -6,7 +6,7 @@ eiti-bar-chart {
   svg {
     display: block;
     font-size: inherit;
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     height: auto;
     opacity: 1;
     transition: opacity 0.5s;
@@ -48,7 +48,7 @@ eiti-bar-chart {
     text {
       @include font-size(1);
       fill: $gray-darkest;
-      font-weight: $weight-regular;
+      font-weight: $weight-medium;
 
       @include respond-to(small-down) {
         @include font-size(0.8);
@@ -76,7 +76,7 @@ eiti-bar-chart {
   }
 
   .tick-hover text {
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
   }
 
   &.bar-chart-icon {

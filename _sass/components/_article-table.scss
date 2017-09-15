@@ -15,7 +15,7 @@
 @mixin column-book($column) {
   th:nth-child(#{$column}),
   td:nth-child(#{$column}) {
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
   }
 }
 
@@ -29,7 +29,7 @@ $max-columns: 10;
 
   th {
     border-bottom: 4px solid $light-green;
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: 1.2;
     padding: $base-padding-small;
     text-align: left;
@@ -52,7 +52,7 @@ $max-columns: 10;
   }
 
   span {
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: 2;
   }
 
@@ -99,7 +99,7 @@ $max-columns: 10;
 .article_table-head,
 .article_table-head td,
 .article_table-head th {
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
 }
 
 .article_table-bold,

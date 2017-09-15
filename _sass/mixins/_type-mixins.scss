@@ -51,21 +51,21 @@
 
   @if $level == 'para-xl' {
     font-size: 1.375rem; // 22px
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: 2.125rem; // 34px
     margin-bottom: 0.75rem; // 12px
   }
 
   @if $level == 'para-lg' {
     font-size: 1.125rem; // 18px
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: 1.6875rem; // 27px
     margin-bottom: 0.75rem; // 12px
   }
 
   @if $level == 'large-caps' {
     font-size: 0.8125rem; // 13px
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     letter-spacing: 1px;
     line-height: 1rem;
     margin-bottom: $base-padding-lite;
@@ -75,14 +75,14 @@
 
   @if $level == 'para-md' {
     font-size: $base-font-size; //16px
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: $base-line-height; // 22px
     margin-bottom: 0.625rem; // 10px
   }
 
   @if $level == 'para-sm' {
     font-size: 0.8125rem; // 13px
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
     line-height: 1.1875rem; // 29px
     margin-bottom: 0.625rem; // 10px
   }

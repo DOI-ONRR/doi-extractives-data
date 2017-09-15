@@ -50,7 +50,7 @@ $ab-border-thick: 4px;
       padding-left: $ab-padding;
 
       span {
-        font-weight: $weight-regular;
+        font-weight: $weight-medium;
       }
     }
 
@@ -58,7 +58,7 @@ $ab-border-thick: 4px;
       padding-left: $ab-padding;
 
       span {
-        font-weight: $weight-regular;
+        font-weight: $weight-medium;
       }
     }
 
@@ -73,7 +73,7 @@ $ab-border-thick: 4px;
 
       &:nth-child(4),
       &:nth-of-type(8) {
-        font-weight: $weight-regular;
+        font-weight: $weight-medium;
       }
     }
   }

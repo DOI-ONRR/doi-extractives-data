@@ -14,7 +14,7 @@
 .region-header-category {
   @include heading(para-md);
   border-bottom: 1px solid $neutral-gray;
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
   margin-bottom: $base-padding-lite;
   margin-top: $base-padding-extra;
   padding-left: $base-padding;
@@ -29,7 +29,7 @@
 
 .subregion-name {
   @include heading(para-md);
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
   margin: 0;
   width: 86%;
 
@@ -76,7 +76,7 @@
 
   .value.subtotal,
   .subtotal-label {
-    font-weight: $weight-regular;
+    font-weight: $weight-medium;
   }
 
   thead {
@@ -267,7 +267,7 @@
 .region-subtitle {
   @include font-size(1);
 
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
   margin-bottom: $base-padding;
 }
 

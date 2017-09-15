@@ -122,7 +122,7 @@ footer,
 
 .footer-list_item_heading {
   @include heading(para-sm);
-  font-weight: $weight-book;
+  font-weight: $weight-regular;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -133,7 +133,7 @@ footer,
 
 .footer-downloads {
   border-top: 1px $dark-gray solid;
-  font-weight: $weight-book;
+  font-weight: $weight-regular;
   margin-top: 33px;
   padding-top: 29px;
 

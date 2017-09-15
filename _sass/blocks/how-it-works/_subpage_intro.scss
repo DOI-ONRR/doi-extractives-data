@@ -29,7 +29,7 @@
 
 .revenues_subpage-breadcrumb {
   color: $dark-gray;
-  font-weight: $weight-light;
+  font-weight: $weight-regular;
 }
 
 .revenues_subpage-intro_text {
@@ -39,7 +39,7 @@
 .revenues_subpage-download {
   @include heading('para-sm');
   color: $blue;
-  font-weight: $weight-book;
+  font-weight: $weight-regular;
 
   i {
     @include heading('para-lg');

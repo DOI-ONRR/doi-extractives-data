@@ -84,7 +84,7 @@ selector: list
       <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
       <div class="container landing-section">
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h4>
           <div class="landing-oil_gas">
             <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. In 2014, the U.S. produced more petroleum and natural gas than any other country.</p>
             {% include svg/how-main-icon-oil.svg %}
@@ -92,7 +92,7 @@ selector: list
           </div>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
           <div class="landing-coal">
             <p>Miners extract coal through surface and subsurface mining. In 2014, the U.S. was the world’s second largest coal producer after China.</p>
             {% include svg/how-main-icon-coal.svg %}
@@ -100,7 +100,7 @@ selector: list
           </div>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h4>
             <div class="landing-minerals">
             <p>Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
             {% include svg/how-main-icon-hardrock.svg %}
@@ -108,7 +108,7 @@ selector: list
           </div>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h4>
           <div class="landing-renewables">
             <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2015.</p>
             {% include svg/how-main-icon-wind.svg %}
@@ -121,22 +121,22 @@ selector: list
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       <div class="container landing-section">
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">Federal revenue by company</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">Federal revenue by company</a></h4>
           <p>See federal non-tax revenues from natural resource extraction on federal land in 2016 by commodity, revenue type, and company.</p>
           <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">See revenue by company</a></p>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
           <p>Corporations pay income taxes to the IRS, but the IRS cannot release confidental data about the amounts of individual payments.</p>
           <p><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about tax revenue</a></p>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
           <p>This program uses fees from present-day coal mining companies to reclaim coal mines abandoned before 1977.</p>
           <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about the AML Reclamation Program</a></p>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
+          <h4 class="h5 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
           <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
           <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
         </div>

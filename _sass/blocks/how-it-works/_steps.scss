@@ -16,14 +16,14 @@
 
     @include heading(h5);
 
-    font-weight: $weight-light;
+    font-weight: $weight-regular;
   }
 
   @include heading(h1);
 
   color: $red;
   display: inline;
-  font-weight: $weight-light;
+  font-weight: $weight-regular;
   padding-right: 8px;
 }
 
@@ -34,21 +34,15 @@
     padding-left: 14px;
   }
 
-  @include respond-to(medium-down) {
+  @include respond-to(small-up) {
     @include font-size(1.5);
-    padding-right: 15px;
+    background-color: $white;
+    border-radius: 50%;
+    color: $dark-gray;
+    display: inline-block;
+    height: 43px;
+    width: 43px;
   }
-
-  @include font-size(1.8);
-
-  background-color: $white;
-  border-radius: 50%;
-  color: $dark-gray;
-  display: inline-block;
-  height: 43px;
-  padding-right: 13px;
-  padding-top: 10px;
-  width: 43px;
 }
 
 .revenues_steps-group {
@@ -57,7 +51,7 @@
 }
 
 .revenues_steps-group_item {
-  font-weight: $weight-light;
+  font-weight: $weight-regular;
   padding-top: $base-padding;
 }
 

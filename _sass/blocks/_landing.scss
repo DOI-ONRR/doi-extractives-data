@@ -15,14 +15,14 @@
     padding-top: $standard-padding-separation;
   }
 
-  h3,
-  h4 {
-    font-size: 1rem;
-    font-weight: $weight-bold;
-    line-height: 1.375rem;
-    margin-bottom: 0.25rem;
-  }
-
+  // h3,
+  // h4 {
+  //   font-size: 1rem;
+  //   font-weight: $weight-bold;
+  //   line-height: 1.375rem;
+  //   margin-bottom: 0.25rem;
+  // }
+  //
   h4,
   .h3 {
     padding-top: $standard-padding-large;
@@ -39,10 +39,10 @@
       padding-top: 3rem;
     }
   }
-
-  .h3-bar {
-    @include heading('h5');
-  }
+  //
+  // .h3-bar {
+  //   @include heading('h5');
+  // }
 }
 
 .landing-section > div {

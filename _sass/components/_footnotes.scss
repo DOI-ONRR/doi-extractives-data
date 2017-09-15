@@ -31,7 +31,7 @@ body {
   ol {
     @include heading('para-sm');
 
-    font-weight: $weight-book;
+    font-weight: $weight-regular;
     list-style-type: decimal;
     padding-left: $base-padding;
 
@@ -55,7 +55,7 @@ body {
   @include font-size(0.75);
 
   color: $blue;
-  font-weight: $weight-book;
+  font-weight: $weight-regular;
   line-height: $base-font-size;
   vertical-align: super; // 2
 }

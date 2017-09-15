@@ -11,66 +11,61 @@
   font-size: $base-font-size;
 
   @if $level == h1 {
-    // bold 38/48
     color: $black;
-    font-size: 2.375rem; // 38px
+    font-size: 2.25rem; // 36px
     font-weight: $weight-bold;
     line-height: 3rem; // 48px
   }
 
   @if $level == h2 {
-    // light 30/38.4
     color: $gray-darkest;
-    font-size: 1.625rem; // 30px
+    font-size: 1.875rem; // 30px
     font-weight: $weight-bold;
-    line-height: 2rem; // 38.4px
+    line-height: 2.5rem; // 40px
     margin-top: 1.5rem;
   }
 
   @if $level == h3 {
-    // bold 21/29
     color: $black;
-    font-size: 1.3125rem; // 21px
+    font-size: 1.375rem; // 22px
     font-weight: $weight-bold;
-    line-height: 1.8125rem; // 29px
+    line-height: 1.875rem; // 30px
     margin-bottom: 0.5rem;
   }
 
   @if $level == h4 {
-    // light 22/32
     color: $black;
-    font-size: 1.375rem; // 22px
-    font-weight: $weight-light;
-    line-height: 2rem; // 32px
+    font-size: 1.1875rem; // 22px
+    font-weight: $weight-bold;
+    line-height: 1.6875rem; // 27px
+    margin-bottom: 0.5rem;
   }
 
   @if $level == h5 {
-    // bold 18/27
     color: $gray-darkest;
     font-size: 1.125rem; // 18px
     font-weight: $weight-bold;
     line-height: 1.625rem; // 27px
+    margin-bottom: 0.5rem;
   }
 
   @if $level == 'para-xl' {
-    // light 22/34 (12px bottom margin)
     font-size: 1.375rem; // 22px
-    font-weight: $weight-light;
+    font-weight: $weight-regular;
     line-height: 2.125rem; // 34px
     margin-bottom: 0.75rem; // 12px
   }
 
   @if $level == 'para-lg' {
-    // light 18/27 (12px bottom margin)
     font-size: 1.125rem; // 18px
-    font-weight: $weight-light;
+    font-weight: $weight-regular;
     line-height: 1.6875rem; // 27px
     margin-bottom: 0.75rem; // 12px
   }
 
   @if $level == 'large-caps' {
     font-size: 0.8125rem; // 13px
-    font-weight: $weight-book;
+    font-weight: $weight-regular;
     letter-spacing: 1px;
     line-height: 1rem;
     margin-bottom: $base-padding-lite;
@@ -79,16 +74,15 @@
   }
 
   @if $level == 'para-md' {
-    // light 16/22 (10px bottom margin)
-    font-weight: $weight-light;
+    font-size: $base-font-size; //16px
+    font-weight: $weight-regular;
     line-height: $base-line-height; // 22px
     margin-bottom: 0.625rem; // 10px
   }
 
   @if $level == 'para-sm' {
-    // light 13/19 (10px bottom margin)
     font-size: 0.8125rem; // 13px
-    font-weight: $weight-light;
+    font-weight: $weight-regular;
     line-height: 1.1875rem; // 29px
     margin-bottom: 0.625rem; // 10px
   }

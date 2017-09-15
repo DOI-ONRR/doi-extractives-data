@@ -41,6 +41,16 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'),
+    local('Roboto-Light'),
+    url('fonts/roboto/roboto-db869262e0ab09e44ec342ea616fead63f8be054.woff') format('woff'),
+    url('fonts/roboto/roboto-91a7b4228cbed8474b5834c2e2c1d1fc50925037.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   /* IE6-8 compat */
   src: url('fonts/roboto/roboto-6503440c5fa86b98f9012e0755fe2a67f2e2b4b2.eot');

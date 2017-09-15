@@ -64,7 +64,7 @@ data-map {
 
   .cell {
     @include font-size(0.7);
-    font-weight: $weight-book;
+    font-weight: $weight-regular;
     line-height: 0.9rem;
     padding: 0;
     padding-bottom: $base-padding;

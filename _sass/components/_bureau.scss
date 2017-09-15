@@ -22,11 +22,11 @@
   @include span-columns(12);
 
   padding-top: $base-padding;
-
-  h4 {
-    @include heading('para-lg');
-    font-weight: $weight-book;
-  }
+  //
+  // h4 {
+  //   @include heading('para-lg');
+  //   font-weight: $weight-regular;
+  // }
 }
 
 .bureau-left {
@@ -49,5 +49,4 @@
 
 .bureau-image {
   max-width: 100px;
-  padding-top: $base-padding;
 }

@@ -55,7 +55,7 @@
 
   span {
     @include heading(h1);
-    font-weight: $weight-light;
+    font-weight: $weight-regular;
     line-height: 1.2;
   }
 }

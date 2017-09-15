@@ -54,6 +54,7 @@ selector: list
     </section>
     <section class="container">
       <h2 id="ownership" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
+      <p class="landing-intro_link">The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Fossil fuels</a></h3>
@@ -62,8 +63,8 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Nonenergy minerals</a></h3>
-          <p>The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
-          <p><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Learn about mining for nonenergy minerals</a></p>
+          <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, amongst others.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Learn about nonenergy minerals</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/renewables/">Renewables</a></h3>

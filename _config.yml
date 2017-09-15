@@ -71,6 +71,9 @@ exclude:
   - data/land-stats
   - maps/data
   - maps/land/*.json
+  # Docker stuff
+  - Dockerfile
+  - 'docker-*.yml'
 
 include:
   - /build.log

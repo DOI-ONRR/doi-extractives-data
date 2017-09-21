@@ -37,13 +37,13 @@
           {% endfor %}
 
           {% assign empty_years = empty_years | join:',' %}
-          {% include year-selector.html year_range=year_range empty_years=empty_years %}
         {% endif %}
 
         <div class="chart-description{% unless jobs %} no-selector{% endunless %}">
           <p>
             Employment data from the Bureau of Labor Statistics describes the number of people who receive wages or salaries from companies.
-            <br>
+          </p>
+          <p>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
             </a>
@@ -227,13 +227,13 @@
 
           {% assign empty_years = empty_years | join:',' %}
 
-          {% include year-selector.html year_range=year_range empty_years=empty_years %}
         {% endif %}
 
         <div class="chart-description {% unless self_employment_jobs %} no-selector{% endunless %}">
           <p>
             Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don’t receive wages or salaries because they own their own companies.
-            <br>
+          </p>
+          <p>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
             </a>

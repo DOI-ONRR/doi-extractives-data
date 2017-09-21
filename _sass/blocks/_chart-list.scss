@@ -247,20 +247,16 @@
 
   .chart-selector {
     @include chart-selector(left);
+    visibility: hidden;
   }
 
   .chart-description {
-    border-left: 1px solid $mid-gray;
-    float: left;
-    margin-bottom: 0;
-    padding-left: 1.25rem;
-    width: 75%;
 
     &.no-selector {
       border: none;
       float: none;
       padding-left: 0;
-      width: 100%;
+      width: 75%;
     }
 
     a {
@@ -277,10 +273,6 @@
   }
 
   @include respond-to(small-down) {
-    .chart-selector {
-      display: none;
-    }
-
     .chart-description {
       border: 0;
       padding-left: 0;

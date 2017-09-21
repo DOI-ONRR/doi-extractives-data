@@ -30,7 +30,8 @@
     <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
     <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in {{ year}} for production or potential production of natural resources on federal land, broken down by phase of production.
-      <br>
+    </p>
+    <p>
       <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
       </a>
@@ -74,15 +75,16 @@
 
     <div class="chart-selector-wrapper">
 
-      {% include year-selector.html year_range=year_range %}
-
-      <p class="chart-description">
-        Non-tax revenue collected by {{ "ONRR" | term }} often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
-        <br>
-        <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-        </a>
-      </p>
+      <div class="chart-description">
+        <p>
+          Non-tax revenue collected by {{ "ONRR" | term }} often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
+        </p>
+        <p>
+          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
+        </p>
+      </div>
     </div>
     <section class="chart-list">
 

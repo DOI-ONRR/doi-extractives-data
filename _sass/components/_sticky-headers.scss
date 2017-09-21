@@ -34,7 +34,7 @@
     @include chart-selector(right);
 
     margin: 0;
-    visibility: hidden;
+    visibility: visible;
 
     @include respond-to(small-down) {
       visibility: visible;

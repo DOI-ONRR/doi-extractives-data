@@ -25,7 +25,8 @@
 
     <p>
       Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Most USEITI data is about non-tax revenue from extractive industry activities on federal land.
-      <br>
+    </p>
+    <p>
       <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
         <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
       </a>
@@ -88,15 +89,16 @@
           {% endunless %}
         {% endfor %}
 
-        {% include year-selector.html year_range=year_range empty_years=empty_years %}
-
-        <p class="chart-description">
-          Most non-tax revenue collected by ONRR comes from counties with significant natural resources on federal land.
-          <br>
-          <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-          </a>
-        </p>
+        <div class="chart-description">
+          <p>
+            Most non-tax revenue collected by ONRR comes from counties with significant natural resources on federal land.
+          </p>
+          <p>
+            <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
+              <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+            </a>
+          </p>
+        </div>
       </div>
 
       <section class="county-map-table">
@@ -113,9 +115,9 @@
 
 {% else %}
 
-        <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
+        <div class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
           No natural resources were produced on federal land in {{ state_name }} in {{ year }}, so ONRR did not collect any non-tax revenues.
-        </p>
+        </div>
 
 {% endif %}
 

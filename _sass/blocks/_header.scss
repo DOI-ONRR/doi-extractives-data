@@ -134,13 +134,13 @@ header,
 }
 
 .header-nav_item.active {
-  font-weight: $weight-book;
+  font-weight: $weight-bold;
 }
 
 .header-nav_item_link {
   @include font-size(0.75);
-  color: $dark-gray;
-  letter-spacing: 1.1px;
+  color: $gray-darker;
+  letter-spacing: 0.75px;
   text-decoration: none;
   text-transform: uppercase;
 

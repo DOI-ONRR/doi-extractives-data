@@ -118,7 +118,7 @@ header,
 .header-nav_item,
 .header-nav_item_top {
   display: inline-block;
-  font-weight: $weight-light;
+  font-weight: $weight-book;
   padding-bottom: $base-padding-lite;
   padding-right: $base-padding;
   padding-top: 0;
@@ -155,7 +155,7 @@ header,
 }
 
 .header-nav_item_top {
-  font-weight: $weight-light;
+  font-weight: $weight-book;
   padding-right: $base-padding-lite;
 
   &:nth-child(2),

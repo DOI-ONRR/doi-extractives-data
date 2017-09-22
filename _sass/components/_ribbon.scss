@@ -209,7 +209,7 @@ svg {
 
 .ribbon-hero-description-light {
   @include font-size(1.375);
-  font-weight: $weight-light;
+  font-weight: $weight-book;
 }
 
 @include respond-to(tiny-up) {

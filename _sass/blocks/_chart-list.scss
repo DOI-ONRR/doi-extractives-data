@@ -28,10 +28,11 @@
   .chart-title-small {
     @include heading(large-caps);
     align-items: flex-end;
-    border-bottom: 1px solid $gray-dark;
+    border-bottom: 2px solid $black-light;
     color: $black-light;
     display: flex;
     flex: 1 0 auto;
+    font-weight: bold;
     margin-bottom: $base-padding-base;
     min-height: 40px;
 
@@ -205,7 +206,7 @@
     padding: $base-padding-lite;
     padding-left: 0;
     padding-right: 0;
-    padding-top: $base-padding-lite;
+    padding-top: 0;
 
     @include respond-to(small-up) {
       min-height: 85px;

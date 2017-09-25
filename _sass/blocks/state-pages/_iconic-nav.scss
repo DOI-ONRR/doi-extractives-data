@@ -2,8 +2,9 @@
 .state-page-nav-title {
   @include heading(large-caps);
   align-items: center;
-  border-bottom: 1px solid $mid-gray;
+  border-bottom: 2px solid $mid-gray;
   display: flex;
+  font-weight: bold;
   justify-content: flex-start;
   margin: 0;
   position: relative;

@@ -20,7 +20,7 @@
 
   @if $level == h2 {
     // light 30/38.4
-    color: $green-darkest;
+    color: $green-darker;
     font-size: 1.625rem; // 30px
     font-weight: $weight-bold;
     line-height: 2rem; // 38.4px
@@ -29,7 +29,7 @@
 
   @if $level == h3 {
     // bold 21/32
-    color: $green-darkest;
+    color: $green-darker;
     font-size: 1.3125rem; // 21px
     font-weight: $weight-bold;
     line-height: 2rem; // 32px

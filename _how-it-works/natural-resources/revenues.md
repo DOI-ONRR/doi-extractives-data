@@ -55,10 +55,10 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 
 Corporations operating in the extractive industries pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:
 
-* C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS
-* S-corporations with 100 shareholders or less who own the company; shareholders pay personal income taxes to the IRS
-* Partnerships where two or more members own the business; members individually pay income taxes to the IRS
-* Sole proprietorships with one individual owner; the individual owner pays personal income tax to the IRS
+* C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS.
+* S-corporations with 100 shareholders or less who own the company; shareholders pay personal income taxes to the IRS.
+* Partnerships where two or more members own the business; members individually pay income taxes to the IRS.
+* Sole proprietorships with one individual owner; the individual owner pays personal income tax to the IRS.
 
 Only income taxes from C-corporations are included in the 2015 USEITI Report.
 
@@ -110,4 +110,3 @@ For more details about U.S. and international revenue standards, visit:
 * IRS, [Revenue Classification and Case Building System](http://www.irs.gov/irm/part4/irm_04-001-005.html)
 * International Monetary Fund, [Government Finance Statistics Manual 2014](http://www.imf.org/external/np/sta/gfsm/)
 * International Monetary Fund, [Code of Good Practices on Fiscal Transparency](https://www.imf.org/external/np/fad/trans/code.htm)
-

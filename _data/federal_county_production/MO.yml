@@ -5,7 +5,6 @@
       name: Copper Concentrate
       units: tons
       volume:
-        '2006': 382
         '2007': null
         '2008': 604
         '2009': null
@@ -15,11 +14,11 @@
         '2013': 107
         '2014': null
         '2015': 328
+        '2016': null
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons
       volume:
-        '2006': 134
         '2007': null
         '2008': 194
         '2009': null
@@ -40,6 +39,7 @@
         '2011': 62
         '2012': 68
         '2014': null
+        '2016': null
 '29065':
   name: Dent County
   products:
@@ -47,21 +47,20 @@
       name: Copper Concentrate
       units: tons
       volume:
-        '2006': 519
         '2007': 1416
         '2008': 1160
         '2009': 773
         '2010': 339
         '2011': 880
-        '2012': 879
+        '2012': null
         '2013': 212
         '2014': 335
-        '2015': 2
+        '2015': null
+        '2016': null
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons
       volume:
-        '2006': 27986
         '2007': 28473
         '2008': 23395
         '2009': 19703
@@ -71,11 +70,11 @@
         '2013': 13385
         '2014': 10509
         '2015': null
+        '2016': null
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons
       volume:
-        '2006': 4751
         '2007': 4591
         '2008': 5215
         '2009': 5414
@@ -85,6 +84,7 @@
         '2013': 5180
         '2014': 2882
         '2015': null
+        '2016': null
 '29093':
   name: Iron County
   products:
@@ -92,7 +92,6 @@
       name: Copper Concentrate
       units: tons
       volume:
-        '2006': 11567
         '2007': 5660
         '2008': 5515
         '2009': 5325
@@ -102,11 +101,11 @@
         '2013': 5515
         '2014': 4363
         '2015': 7159
+        '2016': 9506
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons
       volume:
-        '2006': 55978
         '2007': 52719
         '2008': 46910
         '2009': 37796
@@ -116,11 +115,11 @@
         '2013': 40904
         '2014': 51865
         '2015': 50213
+        '2016': 44182
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons
       volume:
-        '2006': 8341
         '2007': 10555
         '2008': 9264
         '2009': 7859
@@ -130,6 +129,7 @@
         '2013': 10800
         '2014': 10571
         '2015': 9479
+        '2016': 5548
 '29179':
   name: Reynolds County
   products:
@@ -137,7 +137,6 @@
       name: Copper Concentrate
       units: tons
       volume:
-        '2006': 6462
         '2007': 3883
         '2008': 3696
         '2009': 2629
@@ -147,11 +146,11 @@
         '2013': 9448
         '2014': 15585
         '2015': 16906
+        '2016': 14357
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons
       volume:
-        '2006': 138817
         '2007': 140006
         '2008': 132632
         '2009': 136652
@@ -161,11 +160,11 @@
         '2013': 91694
         '2014': 80897
         '2015': 99465
+        '2016': 69735
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons
       volume:
-        '2006': 41788
         '2007': 40822
         '2008': 30955
         '2009': 37003
@@ -175,34 +174,10 @@
         '2013': 24438
         '2014': 31198
         '2015': 27634
+        '2016': 19630
 '29203':
   name: Shannon County
   products:
-    Lead Concentrate (tons):
-      name: Lead Concentrate
-      units: tons
-      volume:
-        '2006': null
-        '2007': null
-        '2008': null
-        '2009': null
-        '2010': null
-        '2011': null
-        '2012': null
-        '2013': null
-        '2014': null
-        '2015': null
-    Zinc Concentrate (tons):
-      name: Zinc Concentrate
-      units: tons
-      volume:
-        '2006': null
-        '2007': null
-        '2008': null
-        '2009': null
-        '2011': null
-        '2014': null
-        '2015': null
     Copper Concentrate (tons):
       name: Copper Concentrate
       units: tons
@@ -216,6 +191,32 @@
         '2013': null
         '2014': null
         '2015': null
+        '2016': null
+    Lead Concentrate (tons):
+      name: Lead Concentrate
+      units: tons
+      volume:
+        '2007': null
+        '2008': null
+        '2009': null
+        '2010': null
+        '2011': null
+        '2012': null
+        '2013': null
+        '2014': null
+        '2015': null
+        '2016': null
+    Zinc Concentrate (tons):
+      name: Zinc Concentrate
+      units: tons
+      volume:
+        '2007': null
+        '2008': null
+        '2009': null
+        '2011': null
+        '2014': null
+        '2015': null
+        '2016': null
 '29221':
   name: Washington County
   products:
@@ -223,7 +224,6 @@
       name: Copper Concentrate
       units: tons
       volume:
-        '2006': 591
         '2007': null
         '2008': 935
         '2009': null
@@ -237,7 +237,6 @@
       name: Lead Concentrate
       units: tons
       volume:
-        '2006': 208
         '2007': null
         '2008': 301
         '2009': null

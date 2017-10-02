@@ -23,7 +23,7 @@ selector: list
 
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
-<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2016-08-17.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
 
 ## Resources
 
@@ -58,4 +58,3 @@ The U.S. government is subject to numerous laws governing data publication, incl
 - The [Federal Financial Management Improvement Act of 1996](https://obamawhitehouse.archives.gov/omb/financial_ffs_ffmia) ensures federal financial managements systems provide accurate, reliable, and timely information to government managers.
 - [26 U.S. Code § 6103](https://www.law.cornell.edu/uscode/text/26/6103) requires confidentiality of tax returns and return information.
 - [18 U.S. Code § 1905](https://www.law.cornell.edu/uscode/text/18/1905) punishes disclosure of proprietary information by a government employee.
-- The [Indian Trusts Act of 1882 (PDF)](http://www.bu.edu/bucflp/files/2012/01/Indian-Trusts-Act-No.-2.pdf) establishes rules for private and public trusts.

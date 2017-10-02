@@ -142,14 +142,6 @@ all_production:
       value: 179170000
       rank: 4
       percent: 5.52
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 39875346
-      rank: 5
-      percent: 0.62
 revenue:
   '2007':
     - product: Oil & Gas (Non-Royalty)

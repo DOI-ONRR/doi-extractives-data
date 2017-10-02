@@ -8,6 +8,7 @@
         '2012': null
         '2013': null
         '2015': null
+        '2016': null
 '12105':
   name: Polk County
   products:
@@ -18,11 +19,3 @@
         '2010': null
         '2011': null
         '2012': null
-'12113':
-  name: Santa Rosa County
-  products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2006': 77

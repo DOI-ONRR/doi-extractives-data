@@ -49,49 +49,6 @@ all_production:
       rank: 5
       percent: 2.91
 federal_production:
-  '2006':
-    - product: Brine Barrels (bbl)
-      name: Brine Barrels
-      units: bbl
-      value: 66862
-      rank: 1
-      percent: 100
-    - product: Langbeinite (tons)
-      name: Langbeinite
-      units: tons
-      value: 734349
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Granular (tons)
-      name: Muriate Of Potash-Granular
-      units: tons
-      value: 327424
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Standard (tons)
-      name: Muriate Of Potash-Standard
-      units: tons
-      value: 469892
-      rank: 1
-      percent: 100
-    - product: Potash (tons)
-      name: Potash
-      units: tons
-      value: 492294
-      rank: 1
-      percent: 97.06
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1022198660
-      rank: 2
-      percent: 15.79
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 24501839
-      rank: 2
-      percent: 4.1
   '2007':
     - product: Langbeinite (tons)
       name: Langbeinite
@@ -114,13 +71,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 976014100
+      value: 976099879.41
       rank: 2
       percent: 14.95
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 25272356
+      value: 25275433.39
       rank: 2
       percent: 4.26
   '2008':
@@ -151,13 +108,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 926908300
+      value: 927113248.92
       rank: 2
       percent: 14.64
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 25727508
+      value: 25731934.37
       rank: 2
       percent: 4.67
   '2009':
@@ -184,19 +141,19 @@ federal_production:
       units: tons
       value: 372956
       rank: 1
-      percent: 58.12
+      percent: 58.1
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 895492823
+      value: 895629957.61
       rank: 2
-      percent: 13.71
+      percent: 13.72
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 28477995
+      value: 28495662.72
       rank: 2
-      percent: 4.08
+      percent: 4.09
   '2010':
     - product: Langbeinite (tons)
       name: Langbeinite
@@ -221,17 +178,17 @@ federal_production:
       units: tons
       value: 434018
       rank: 1
-      percent: 54.39
+      percent: 54.23
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 841402133
+      value: 840719887.82
       rank: 2
       percent: 13.44
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 31516466
+      value: 31523646.78
       rank: 2
       percent: 4.52
   '2011':
@@ -264,19 +221,19 @@ federal_production:
       units: tons
       value: 439367
       rank: 1
-      percent: 50.82
+      percent: 50
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 35546880
+      value: 35592682.93
       rank: 1
       percent: 5.75
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 819775527
+      value: 819362901.48
       rank: 2
-      percent: 14.25
+      percent: 14.22
   '2012':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
@@ -307,24 +264,24 @@ federal_production:
       units: tons
       value: 409345
       rank: 1
-      percent: 54.57
+      percent: 54.13
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 44454474
+      value: 44441621.53
       rank: 1
-      percent: 7.24
+      percent: 7.25
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 804093588
+      value: 803253892.6
       rank: 2
-      percent: 14.98
+      percent: 14.92
   '2013':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
       units: 'Direct Use, Millions of Gallons'
-      value: 69920725
+      value: 69920724.5
       rank: 1
       percent: 100
     - product: Langbeinite (tons)
@@ -350,19 +307,19 @@ federal_production:
       units: tons
       value: 425125
       rank: 1
-      percent: 47.55
+      percent: 47.35
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 52528416
+      value: 52669695.86
       rank: 1
-      percent: 8.43
+      percent: 8.46
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 779128683
+      value: 779815555.25
       rank: 2
-      percent: 15.77
+      percent: 15.75
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -399,19 +356,19 @@ federal_production:
       units: tons
       value: 457797
       rank: 1
-      percent: 50.97
+      percent: 50.57
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 67113782
+      value: 67134456.07
       rank: 1
-      percent: 9.59
+      percent: 9.61
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 785477514
+      value: 785834339.38
       rank: 2
-      percent: 16.18
+      percent: 16.16
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -448,25 +405,74 @@ federal_production:
       units: tons
       value: 377585
       rank: 1
-      percent: 49.37
+      percent: 45.24
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 80572911
+      value: 81444624.11
       rank: 1
-      percent: 10.67
+      percent: 10.78
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 796308478
+      value: 802524444.8
       rank: 2
-      percent: 16.65
+      percent: 16.59
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
       value: 10449799
       rank: 4
       percent: 0.37
+  '2016':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 126844073
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 221543
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 78056.77
+      rank: 1
+      percent: 99.99
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 566535.32
+      rank: 1
+      percent: 99.91
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 329242
+      rank: 1
+      percent: 42.74
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 77491483.45
+      rank: 1
+      percent: 10.17
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 782531350.86
+      rank: 2
+      percent: 17.35
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 14251979.99
+      rank: 4
+      percent: 0.47
 revenue:
   '2006':
     - product: All

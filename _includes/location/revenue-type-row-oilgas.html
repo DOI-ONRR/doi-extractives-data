@@ -46,7 +46,7 @@
 
     {% if revenue_types.Oil.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-first">Oil<br></strong>
+      <strong class="text-header text-header-first">Oil</strong>
       {{
         revenue_types.Oil.Royalties[year]
         | default: 0
@@ -56,13 +56,13 @@
 
     {% if revenue_types.Gas.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-second">Gas<br></strong>
+      <strong class="text-header text-header-second">Gas</strong>
       {{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma_dollar }}</span>
     {% endif %}
 
     {% if revenue_types.NGL.Royalties[year] %}
       <span class="text table-arrow_box-subheader-value">
-      <strong class="text-header text-header-third">NGL<br></strong>
+      <strong class="text-header text-header-third">NGL</strong>
       {{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma_dollar }}</span>
     {% endif %}
   </td>

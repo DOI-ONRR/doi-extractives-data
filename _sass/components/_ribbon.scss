@@ -207,12 +207,6 @@ svg {
   @include heading('para-lg');
 }
 
-.ribbon-hero-description-light {
-  @include font-size(1.375);
-  color: $black;
-  font-weight: $weight-book;
-}
-
 @include respond-to(tiny-up) {
 
   .ribbon {

@@ -29,13 +29,14 @@
     {% else %}
       <div class="chart-selector-wrapper">
 
-        {% include year-selector.html year_range=year_range %}
-
-        <p class="chart-description">
-          ONRR collects detailed data about natural resources produced in the {{ region_title }}.
-          <br>
-          <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
-        </p>
+        <div class="chart-description">
+          <p>
+            ONRR collects detailed data about natural resources produced in the {{ region_title }}.
+          </p>
+          <p>
+            <a href="{{site.baseurl}}/downloads/federal-production/"><icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
+          </p>
+        </div>
       </div>
     {% endif %}
 
@@ -49,6 +50,7 @@
       {% assign units = product[1].units | downcase | default: 'units' %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
+      {% assign term_units = units_map[units].term %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
       {% assign units_title = units_map[units].title %}
 
@@ -82,7 +84,7 @@
                 <span class="caption-data">
                   <span class="eiti-bar-chart-y-value"
                         data-format=",">{{ volume | default: 0 | intcomma }}</span>
-                  {{ long_units | term }} of {{ product_name | downcase | suffix: units_suffix }} were
+                  {{ long_units | term: term_units, site.data.terms }} of {{ product_name | downcase | suffix: units_suffix }} were
                   produced in the {{ region_title }} in
                   <span class="eiti-bar-chart-x-value">{{ year }}</span>.
                 </span>

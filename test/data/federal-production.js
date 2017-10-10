@@ -41,29 +41,23 @@ describe('federal production (ONRR) sentinels', function() {
         {
           product: 'Salt (tons)',
           year: 2015,
-          value: 764801
+          value: 834645
         },
-        {
-          product: 'Salt (tons)',
-          year: 2006,
-          value: 512832
-        },
-        // actual: 623103681
         {
           product: 'Oil (bbl)',
           year: 2013,
-          value: 623103687.09
+          value: 622678698
         },
-        // actual: 755158065
         {
           product: 'Oil (bbl)',
           year: 2015,
-          value: 755158058.14
+          value: 755859023
         },
+        // actual: 4952368580
         {
           product: 'Gas (mcf)',
           year: 2013,
-          value: 4941408110
+          value: 4952368582
         }
       ];
 

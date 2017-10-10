@@ -17,15 +17,16 @@
 
   <div class="chart-selector-wrapper">
 
-    {% include year-selector.html year_range=year_range %}
-
-    <p class="chart-description">
-      The Energy Information Administration collects data about energy-related natural resources produced on federal, state, and privately owned lands and waters. This data does not include information about nonenergy minerals.
-      <br>
-      <a href="{{site.baseurl}}/downloads/#all-lands-and-waters">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-      </a>
-    </p>
+    <div class="chart-description">
+      <p>
+        The Energy Information Administration collects data about energy-related natural resources produced on federal, state, and privately owned lands and waters. This data does not include information about nonenergy minerals.
+      </p>
+      <p>
+        <a href="{{site.baseurl}}/downloads/#all-lands-and-waters">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
   </div>
 
   {% if all_products %}
@@ -39,7 +40,7 @@
       {% assign units = product[1].units | downcase %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
-      {% assign term_units = units_map[units].term | default: long_units %}
+      {% assign term_units = units_map[units].term %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
 
 
@@ -67,7 +68,7 @@
         <figcaption id="all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-            {{ long_units | term: term_units }} of
+            {{ long_units | term: term_units, site.data.terms }} of
             {{ product_name | downcase | suffix: units_suffix }} were produced in
             <span class="eiti-bar-chart-x-value">{{ year }}</span>.
           </span>

@@ -21,17 +21,16 @@
 
   <div class="chart-selector-wrapper">
 
-    {% if all_products %}
-      {% include year-selector.html year_range=year_range %}
-    {% endif %}
-
-    <p class="chart-description{% unless all_products %} no-selector{% endunless %}">
-      The Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned land.
-      <br>
-      <a href="{{site.baseurl}}/downloads/#all-lands-and-waters">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-      </a>
-    </p>
+    <div class="chart-description{% unless all_products %} no-selector{% endunless %}">
+      <p>
+        The Energy Information Administration collects data about all energy-related natural resources produced on federal, state, and privately owned land.
+      </p>
+      <p>
+        <a href="{{site.baseurl}}/downloads/#all-lands-and-waters">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
   </div>
 
   {% if all_products %}
@@ -45,7 +44,7 @@
       {% assign units = product[1].units | downcase | default: 'units' %}
       {% assign short_units = units_map[units].short | default: units %}
       {% assign long_units = units_map[units].long | default: units %}
-      {% assign term_units = units_map[units].term | default: long_units %}
+      {% assign term_units = units_map[units].term %}
       {% assign units_suffix = units_map[units].suffix | default: '' %}
 
     <section id="state-all-production-{{ product_slug }}" class="chart-item">
@@ -73,7 +72,7 @@
         <figcaption id="state-all-production-figures-{{ product_slug }}">
           <span class="caption-data">
             <span class="eiti-bar-chart-y-value" data-format=",">{{ volume | default: 0 | intcomma }}</span>
-            {{ long_units | term: term_units }} of
+            {{ long_units | term: term_units, site.data.terms }} of
             {{ product_name | downcase | suffix: units_suffix }}
             were produced in
             {{ state_name }} in

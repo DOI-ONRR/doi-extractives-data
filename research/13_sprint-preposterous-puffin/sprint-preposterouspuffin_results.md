@@ -20,7 +20,7 @@ The word “resources” doesn’t mean enough on its own:
 
 
 ## Option B: "Energy and minerals data explorer"
-[image of option B]
+*[image of option B]*
 
 Several participants were distracted by calling the site an “explorer.”
 
@@ -34,6 +34,7 @@ However, many participants confirmed that “explore” works well as a call to 
 The phrase “energy & minerals” in the heading made it difficult for folks to conceptualize what the site was about.  
 
 > “Hrm. I didn’t think about minerals. I wouldn’t think of oil, coal, and then... minerals? I am not as sure what this is about now.”
+
 > “Is sunlight a type of energy we extract? Can I find out about solar here?”
 
 

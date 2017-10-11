@@ -56,7 +56,7 @@ The graphic we introduced on all three homepage options of the oil rig with a do
 
 Based on these findings, we’re making the following design decisions for the first iteration of the new homepage:
 
-- **We will be going with “Natural Resources Revenue Data”** as the title/heading for our first iteration of the new language, given that most of our research participants found this heading clearest and most direct. We'll continue testing slight variations of this wording to further refine the language in future sprints.
+- **We will test “Natural Resources Revenue Data”** and minor variations as the title/heading for our first iteration of the new language, given that most of our research participants found this heading clearest and most direct. We'll continue testing slight variations of this wording to further refine the language in future sprints.
 - Despite causing some strong reactions, **we plan to keep the oil rig graphic** given its effectiveness in communicating what the site is about for most participants.
 - **We plan to keep “lands and waters” somewhere in the subheadings or other explanatory text** to help users conceptualize that much fo the extraction is happening offshore. 
 - **We also plan to incorporate the word “energy”** since this may improve the site’s Search Engine Optimization and findability, given that “energy” is a more common search term than “extractive.”

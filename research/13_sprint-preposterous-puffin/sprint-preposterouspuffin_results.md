@@ -4,7 +4,7 @@ The future of the United States’ participation in the EITI is currently in flu
 
 # Participants
 
-We tested 3 different versions of the home screen with different combinations of words/phrases with ***[??? will update tomorrow morning when we get final numbers]*** participants over the course of one week.
+We tested 3 different versions of the home screen with different combinations of words/phrases with 15 participants over the course of one week.
 
 # Findings
 

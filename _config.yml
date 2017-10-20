@@ -1,12 +1,10 @@
 title: USEITI
 
 description: >
-    USEITI is part of an international effort to promote open and accountable
-    management of natural resources. This site provides data about how the U.S.
-    manages extractive industries.
+    Discover open data about natural resource management on federal land in the United States, including oil, gas, coal, and other extractive industries
 
 # permanent url, for use in meta references
-url: https://useiti.doi.gov
+url: https://tbd.doi.gov
 
 # app version number
 version: v2.2.1

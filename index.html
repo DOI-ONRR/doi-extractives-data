@@ -6,14 +6,12 @@ selector: location
 <section class="slab-delta">
   <div class="container-page-wrapper ribbon">
     <div class="container-left-8 ribbon-hero ribbon-hero-home ribbon-card-home">
-      <h1>The United States Extractive Industries Transparency Initiative</h1>
-      <h3>
-        USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about {{ "extractive industries" | term:"extractive industry" }} across the United States.
-      </h3>
-      <a href="{{ site.baseurl }}/about/">Learn more about the initiative</a>
+        <div class="para-xl">
+          Discover open data about natural resource management on federal land in the United States, including oil, gas, coal, and other {{ "extractive industries" | term:"extractive industry" }}
+        </div>
+      <a href="{{ site.baseurl }}/explore/" class="button-primary">Explore the data</a>
     </div>
     <div class="container-right-4 ribbon-card ribbon-card-home">
-      <a href="{{ site.baseurl }}/explore/" class="ribbon-card-button button-primary">Explore the data</a>
       {% include svg/icon-ribbon-oil-rig.svg svg_title='small' vb_height=150 %}
       {% include svg/icon-ribbon-oil-rig.svg %}
     </div>

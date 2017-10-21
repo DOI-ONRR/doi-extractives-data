@@ -27,9 +27,9 @@ Over the course of several weeks, we’d like to speak with at least 2-3 individ
 
 In order to recruit research participants from our target user groups (both for this research sprint as well as to begin developing a recruitment pipeline for future research sprints), we’re currently planning to pursue three avenues:
 
-**1) Contacting members of the Royalty Policy Committee** to ask for their help putting us in touch with members of their organizations who use natural resource revenue data in their day to day work.
-**2) Reaching out to various related interest groups whom Ryan has identified.**
-**3) Setting up a recruiting screener on the site itself,** as well as other related sites that ONRR owns as appropriate/possible.
+1. **Contacting members of the Royalty Policy Committee** to ask for their help putting us in touch with members of their organizations who use natural resource revenue data in their day to day work.
+2. **Reaching out to various related interest groups whom Ryan has identified.**
+3. **Setting up a recruiting screener on the site itself,** as well as other related sites that ONRR owns as appropriate/possible.
 
 
 # Discussion guide

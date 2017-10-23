@@ -100,6 +100,10 @@ header,
 
 .header-nav_item.active {
   font-weight: $weight-bold;
+
+  .header-nav_item_link {
+    color: $black;
+  }
 }
 
 .header-nav_item_link {

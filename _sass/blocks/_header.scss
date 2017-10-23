@@ -12,13 +12,8 @@ header,
 }
 
 .header-image {
-  margin-top: $base-padding / 2;
-  // max-width: 316px;
+  margin-top: $base-padding-large;
   width: $nrrd-logo-width;
-  //
-  // @include respond-to(huge-plus-up) {
-  //   width: 100%;
-  // }
 }
 
 .header-left {
@@ -77,16 +72,11 @@ header,
     padding-right: 0;
   }
 }
-//
-// .header-nav_bottom {
-//   margin-bottom: $base-padding-base;
-// }
 
 .header-nav_top {
-  margin-bottom: 0;
 
   @include respond-to(huge-plus-up) {
-    margin-bottom: $base-padding-large;
+    margin-bottom: $base-padding-jumbo;
   }
 }
 
@@ -114,12 +104,8 @@ header,
 
 .header-nav_item_link {
   @include font-size(0.9375);
-  color: $gray-darkest;
+  color: $black-light;
   text-decoration: none;
-  //
-  // @include respond-to(huge-plus-up) {
-  //   @include font-size(0.875);
-  // }
 
   &:hover,
   &:active {
@@ -129,6 +115,7 @@ header,
 
 .header-nav_item_top {
   font-weight: $weight-book;
+  margin-top: 0;
   padding-right: $base-padding-lite;
 
   &:nth-child(2),

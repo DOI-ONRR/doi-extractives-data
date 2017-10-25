@@ -5,6 +5,7 @@ module EITI
 
   module Data
     module_function
+
     # access a nested property of the (assumed) Hash data:
     #
     # >> EITI::Data.get({'a' => 1000}, 'a')
@@ -86,7 +87,7 @@ module EITI
     # >> EITI::Data.to_f(['1.5', '2.3'])
     # => [1.5, 2.3]
     def to_f(x)
-      x.is_a?(Array) ? x.map(&:to_f) : x.to_f
+      (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
     # convert (or map) a value to integers

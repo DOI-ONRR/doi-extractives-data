@@ -28,7 +28,7 @@
         <a href="{{ location_permalink | prepend:site.baseurl }}"
            xlink:href="{{ location_permalink | prepend:site.baseurl }}">
           {% if location_id == 'boone_logan_mingo' %}
-            <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width | times:1.25 }}" height="{{ caption_height  | times:1.25 }}"></rect>
+            <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width * 1.25 }}" height="{{ caption_height * 1.25 }}"></rect>
           {% else %}
             <rect x="{{ x_offset }}" y="{{ y_offset }}" width="{{ caption_width }}" height="{{ caption_height }}"></rect>
           {% endif %}

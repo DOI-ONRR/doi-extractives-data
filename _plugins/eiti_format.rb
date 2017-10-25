@@ -3,6 +3,7 @@ require 'liquid'
 module EITI
   module Format
     module_function
+
     # returns the singular suffix of a value if the value is 1,
     # otherwise the singular form
     #

@@ -2,7 +2,8 @@ require 'liquid'
 
 module EITI
   module Format
-    # module_function
+    module_function
+
     # returns the singular suffix of a value if the value is 1,
     # otherwise the singular form
     #
@@ -65,6 +66,12 @@ module EITI
       "’#{year.to_s.slice(-2, 2)}"
     end
 
+    # >> EITI::Format.year_range([2007])
+    # =>  '’07'
+    # >> EITI::Format.year_range([2007, 2008])
+    # =>  '’07&ndash;’08'
+    # >> EITI::Format.year_range([2007, 2008, 2009, 2010])
+    # =>  '’07&ndash;’10'
     def year_range(years)
       years = years.map(&:to_i)
       if years.size == 1

@@ -4,7 +4,8 @@ require 'json'
 module EITI
 
   module Data
-    # module_function
+    module_function
+
     # access a nested property of the (assumed) Hash data:
     #
     # >> EITI::Data.get({'a' => 1000}, 'a')
@@ -18,16 +19,18 @@ module EITI
     # >> EITI::Data.get(nil, 'a')
     # => nil
     def get(data, *keys)
-      # bail if there's no data
-      return nil if data.nil?
+      # bail if there"s no data
+      return nil if data == nil
 
       # coerce all of the keys to strings,
       # and filter out any empty ones
       keys = keys.map(&:to_s).select { |k| !k.empty? }
-      keys.each do |key|
-        key.split('.').each do |k|
+      for key in keys
+        key.split(".").each do |k|
           data = data[k]
-          return nil unless data
+          if not data
+            return nil
+          end
         end
       end
       data
@@ -52,7 +55,11 @@ module EITI
     # => '100'
     def pad_left(str, len, pad = ' ')
       pad_by = len - str.size
-      pad_by > 0 ? pad * pad_by + str : str
+      if pad_by > 0
+        return pad * pad_by + str
+      end
+      str
+
     end
 
     # attempt to look up a term in a hash, and return the value if that
@@ -63,7 +70,7 @@ module EITI
     # >> EITI::Data.lookup('yo', {'hi' => 'hello'})
     # => 'yo'
     def lookup(term, hash)
-      hash.key?(term) ? hash[term] : term
+      (dict.key? term) ? dict[term] : term
     end
 
     # create an integer range array from either a start and end number,
@@ -74,9 +81,10 @@ module EITI
     # >> EITI::Data.range([1, 4])
     # => [1, 2, 3, 4]
     def range(start, finish = nil)
-      (start, finish) = start if start.is_a?(Array)
-
-      (start..finish).step(1).to_a
+      if start.is_a? Array
+        (start, finish) = start
+      end
+      (start..finish).to_a
     end
 
     # convert (or map) a value to floats
@@ -86,7 +94,7 @@ module EITI
     # >> EITI::Data.to_f(['1.5', '2.3'])
     # => [1.5, 2.3]
     def to_f(x)
-      x.is_a?(Array) ? x.map(&:to_f) : x.to_f
+      (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
     # convert (or map) a value to integers
@@ -96,7 +104,7 @@ module EITI
     # >> EITI::Data.to_i(['1', '2'])
     # => [1, 2]
     def to_i(x)
-      x.is_a?(Array) ? x.map(&:to_i) : x.to_i
+      (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
     # convert (or map) a value to strings
@@ -106,7 +114,7 @@ module EITI
     # >> EITI::Data.to_s([2, 3])
     # => ['2', '3']
     def to_s(x)
-      x.is_a?(Array) ? x.map(&:to_s) : x.to_s
+      (x.is_a? Array) ? x.map(&:to_s) : x.to_s
     end
 
     # takes a range and returns a list of numbers within that range
@@ -118,8 +126,14 @@ module EITI
     # >> EITI::Data.create_list('[0,5]')
     # => '[0,5]'
     def create_list(range)
-      if range.is_a?(Array)
-        (range[0]..range[1]).step(1).to_a
+      if range.is_a? Array
+        arr = []
+        min = range[0]
+        max = range[1]
+        (min..max).step(1) do |i|
+          arr.push(i)
+        end
+        arr
       else
         range
       end
@@ -141,10 +155,10 @@ module EITI
     # >> EITI::Data.to_list(5)
     # => 5
     def to_list(range)
-      if range.is_a?(Array)
+      if range.is_a? Array
         create_list(range)
-      elsif range.is_a?(String)
-        range = json_parse(range)
+      elsif range.is_a? String
+        range = JSON.parse(range)
         create_list(range)
       else
         range
@@ -161,18 +175,17 @@ module EITI
     # >> EITI::Data.format_url('foo/%/baz', 'x')
     # => 'foo/x/baz'
     def format_url(format, data)
-      placeholder = '%'
+      placeholder = "%"
       pattern = /:\w+/
-      if data.is_a?(Hash)
-        if !format.match(pattern) && format.include?(placeholder)
-          return format.gsub(placeholder, data['id'])
+      if data.is_a? Hash
+        if !format.match(pattern) and format.include? placeholder
+          return format.gsub(placeholder, data["id"])
         else
           return format.gsub(pattern) { |k| data[k[1..k.size]] }
         end
-      elsif data.is_a?(String)
-        unless format.include?(placeholder)
-          puts "format_url('#{format}', '#{data}':String): " \
-            "no placeholder '#{placeholder}'"
+      elsif data.is_a? String
+        if !format.include? placeholder
+          puts "EITI::Data::format_url('#{format}', '#{data}':String): no such placeholder '#{placeholder}'"
         end
         return format.gsub(placeholder, data)
       else

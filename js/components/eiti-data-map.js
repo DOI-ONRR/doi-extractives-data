@@ -39,6 +39,11 @@
           this.cropMap();
         }},
 
+        getYear: {value: function() {
+          var el = this.querySelector('figcaption [data-year]');
+          return el && el.getAttribute('data-year');
+        }},
+
         setYear: {value: function(year) {
           this.marks.datum(function() {
               var data = JSON.parse(
@@ -308,7 +313,9 @@
 
 
           if (init) {
-            this.setYear('2015');
+            // If a year has already been included in the HTML delivered
+            // the browser, use that; otherwise, enforce a default year.
+            this.setYear(this.getYear() || '2015');
           }
         }}
       }

@@ -22,4 +22,3 @@ test:
     # - npm run test-html
     # - npm run test-ruby
     - npm run test
-    - bash test-makefile.sh

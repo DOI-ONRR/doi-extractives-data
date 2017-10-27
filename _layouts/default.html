@@ -59,7 +59,7 @@
 
     {% include layout/footer.html %}
 
-    {% assign ga_id = site.google_analytics[site.branch]|default:site.google_analytics.default %}
+    {% assign ga_id = 'UA-48605964-8' %}
     {% if ga_id %}{% include google_analytics.html id=ga_id %}{% endif %}
 
   </body>

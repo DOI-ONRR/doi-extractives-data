@@ -38,7 +38,7 @@ header,
 
 .header-image {
   margin-top: $base-padding / 2;
-  max-width: 280px;
+  max-width: 316px;
   width: $eiti-logo-width;
 
   @include respond-to(huge-plus-up) {
@@ -141,9 +141,8 @@ header,
 .header-nav_item_link {
   @include font-size(0.75);
   color: $dark-gray;
-  letter-spacing: 1.1px;
+  font-weight: $font-weight-book;
   text-decoration: none;
-  text-transform: uppercase;
 
   @include respond-to(huge-plus-up) {
     @include font-size(0.875);

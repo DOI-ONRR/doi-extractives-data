@@ -39,7 +39,7 @@
 .revenues_subpage-download {
   @include heading('para-sm');
   color: $blue;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
 
   i {
     @include heading('para-lg');

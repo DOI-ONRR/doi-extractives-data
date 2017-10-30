@@ -1,28 +1,3 @@
-// Header
-//
-// This is on the top of every page. Find in _includes/layout/header.html
-//
-// Markup:
-// <header class="header">
-//   <div>
-//     <a class="header-image_link" href="/">
-//       <img class="header-image" src="https://eiti-dev.18f.gov/img/USEITI_Logotype.png" alt="USEITI logo">
-//     </a>
-//   </div>
-//   <nav class="header-nav">
-//     <ul class="header-nav_inner">
-//       <li class="header-nav_item">
-//         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
-//       </li>
-//       <li class="header-nav_item">
-//         <a class="header-nav_item_link" href="{{ site.baseurl }}/about">About USEITI</a>
-//       </li>
-//     </ul>
-//   </nav>
-// </header>
-//
-// Styleguide blocks.header
-
 header,
 .header {
   margin-top: $base-padding-base;
@@ -37,13 +12,8 @@ header,
 }
 
 .header-image {
-  margin-top: $base-padding / 2;
-  max-width: 280px;
-  width: $eiti-logo-width;
-
-  @include respond-to(huge-plus-up) {
-    width: 100%;
-  }
+  margin-top: $base-padding-large;
+  width: $nrrd-logo-width;
 }
 
 .header-left {
@@ -103,15 +73,10 @@ header,
   }
 }
 
-.header-nav_bottom {
-  margin-bottom: $base-padding-base;
-}
-
 .header-nav_top {
-  margin-bottom: 0;
 
   @include respond-to(huge-plus-up) {
-    margin-bottom: $base-padding-large;
+    margin-bottom: $base-padding-jumbo;
   }
 }
 
@@ -134,19 +99,17 @@ header,
 }
 
 .header-nav_item.active {
-  font-weight: $weight-book;
+  font-weight: $weight-semibold;
+
+  .header-nav_item_link {
+    color: $black;
+  }
 }
 
 .header-nav_item_link {
-  @include font-size(0.75);
-  color: $dark-gray;
-  letter-spacing: 1.1px;
+  @include font-size(0.9375);
+  color: $black-light;
   text-decoration: none;
-  text-transform: uppercase;
-
-  @include respond-to(huge-plus-up) {
-    @include font-size(0.875);
-  }
 
   &:hover,
   &:active {
@@ -156,6 +119,7 @@ header,
 
 .header-nav_item_top {
   font-weight: $weight-light;
+  margin-top: 0;
   padding-right: $base-padding-lite;
 
   &:nth-child(2),
@@ -212,12 +176,12 @@ header,
   @extend .header-nav_item_link;
   @include font-size(0.75);
 
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 
   &.active {
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 }
 

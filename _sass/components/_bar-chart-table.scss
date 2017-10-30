@@ -37,7 +37,7 @@
   }
 
   [data-sentence] {
-    font-weight: $weight-book;
+    font-weight: $weight-light;
     padding-left: calc(#{$standard-padding-lite} + 5px + 0.75rem);
     padding-top: 0;
   }
@@ -66,7 +66,7 @@
 
     .text-header {
       @include heading('para-sm');
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
 
       &.text-header-first {
         color: $green-dark;

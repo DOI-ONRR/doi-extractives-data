@@ -63,7 +63,7 @@ $ab-border-thick: 4px;
     }
 
     span {
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
       line-height: 2.3;
       white-space: pre;
 
@@ -93,7 +93,7 @@ $ab-border-thick: 4px;
   }
 
   .table-arrow_box-subheader {
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
   }
 
   .table-arrow_box-subheader-value:not(.text) {
@@ -104,8 +104,9 @@ $ab-border-thick: 4px;
 
   .table-arrow_box-category {
     border-top: $ab-border-thin solid $ab-color-primary;
-    color: $gray-darker;
-    font-weight: $weight-bold;
+    color: $black-light;
+    font-size: .8125rem;
+    font-weight: $weight-semibold;
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -118,8 +119,8 @@ $ab-border-thick: 4px;
     }
 
     icon {
-      color: $gray-dark;
-      font-weight: $weight-bold;
+      color: $black-light;
+      font-weight: $weight-semibold;
       font-size: 20px;
     }
   }

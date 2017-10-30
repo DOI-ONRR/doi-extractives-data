@@ -70,7 +70,7 @@
   a text {
     @include font-size(1.1);
 
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     text-decoration: underline;
   }
 }

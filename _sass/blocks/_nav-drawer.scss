@@ -38,7 +38,7 @@ $nav-drawer-height: 593px;
 .nav_drawer-nav_item {
   @include heading('para-md');
 
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   letter-spacing: 2px;
   padding-bottom: 1.6em;
   text-transform: uppercase;

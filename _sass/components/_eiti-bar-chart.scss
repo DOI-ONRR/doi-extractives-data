@@ -72,11 +72,11 @@ eiti-bar-chart {
   }
 
   .tick-selected text {
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
   }
 
   .tick-hover text {
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 
   &.bar-chart-icon {
@@ -88,7 +88,7 @@ eiti-bar-chart {
 .eiti-bar-chart-x-value,
 .eiti-bar-chart-y-value {
   color: $green-darker;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
 }
 
 .x-axis-label {

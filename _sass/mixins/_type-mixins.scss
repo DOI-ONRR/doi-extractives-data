@@ -14,7 +14,7 @@
     // bold 38/48
     color: $black;
     font-size: 2.375rem; // 38px
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     line-height: 3rem; // 48px
   }
 
@@ -22,17 +22,17 @@
     // light 30/38.4
     color: $gray-darkest;
     font-size: 1.625rem; // 30px
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     line-height: 2rem; // 38.4px
     margin-top: 1.5rem;
   }
 
   @if $level == h3 {
-    // bold 21/29
-    color: $black;
+    // bold 21/32
+    color: $gray-darkest;
     font-size: 1.3125rem; // 21px
-    font-weight: $weight-bold;
-    line-height: 1.8125rem; // 29px
+    font-weight: $weight-semibold;
+    line-height: 2rem; // 32px
     margin-bottom: 0.5rem;
   }
 
@@ -46,9 +46,9 @@
 
   @if $level == h5 {
     // bold 18/27
-    color: $gray-darkest;
+    color: $green-darker;
     font-size: 1.125rem; // 18px
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     line-height: 1.625rem; // 27px
   }
 
@@ -56,7 +56,7 @@
     // light 22/34 (12px bottom margin)
     font-size: 1.375rem; // 22px
     font-weight: $weight-light;
-    line-height: 2.125rem; // 34px
+    line-height: 2.25rem; // 34px
     margin-bottom: 0.75rem; // 12px
   }
 
@@ -70,7 +70,7 @@
 
   @if $level == 'large-caps' {
     font-size: 0.8125rem; // 13px
-    font-weight: $weight-book;
+    font-weight: $weight-light;
     letter-spacing: 1px;
     line-height: 1rem;
     margin-bottom: $base-padding-lite;

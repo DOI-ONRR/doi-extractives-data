@@ -39,7 +39,7 @@ footer,
 
 .footer-para_callout {
   color: $white;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   margin-bottom: 0;
 }
 
@@ -71,7 +71,7 @@ footer,
 .footer-image {
   margin-bottom: $base-padding-extra;
   max-width: 225px;
-  width: $eiti-logo-width;
+  width: $nrrd-logo-width;
 
   @include respond-to(huge-plus-up) {
     width: 100%;
@@ -122,7 +122,7 @@ footer,
 
 .footer-list_item_heading {
   @include heading(para-sm);
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -133,7 +133,7 @@ footer,
 
 .footer-downloads {
   border-top: 1px $dark-gray solid;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-top: 33px;
   padding-top: 29px;
 

@@ -59,6 +59,7 @@
 
   .title-land-ownership:not(.chart-title):not(.state-page-nav-title) {
     border-bottom: none;
+    color: $black-light;
     font-size: 1rem;
     margin-bottom: 0;
   }
@@ -114,7 +115,7 @@
     label {
       @include heading('para-md');
 
-      font-weight: $weight-book;
+      font-weight: $weight-light;
       margin-bottom: 0;
       padding-bottom: $base-padding-lite;
     }

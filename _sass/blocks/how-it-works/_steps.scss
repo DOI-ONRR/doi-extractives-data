@@ -16,14 +16,14 @@
 
     @include heading(h5);
 
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 
   @include heading(h1);
 
   color: $red;
   display: inline;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   padding-right: 8px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .revenues_steps-group_item {
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   padding-top: $base-padding;
 }
 

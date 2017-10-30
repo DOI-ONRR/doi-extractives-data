@@ -19,11 +19,11 @@ $tab-color-selected: $mid-light-gray;
     border: 2px solid $tab-color-selected;
     color: $base-font-color;
     padding: ($base-padding-lite * 2) $base-padding .93em;
-    font-weight: $weight-book;
+    font-weight: $weight-light;
 
     &[aria-selected="true"] {
       @include active-tab('info');
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
     }
   }
 

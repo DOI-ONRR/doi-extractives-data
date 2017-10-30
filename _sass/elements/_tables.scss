@@ -7,7 +7,7 @@ table {
   border-collapse: collapse;
   border-spacing: 2px;
   color: $dark-gray;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-bottom: $base-padding;
 
   .numeric {
@@ -18,7 +18,7 @@ table {
 
 thead {
   border-bottom: 2px solid $mid-gray;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   text-align: center;
 }
 

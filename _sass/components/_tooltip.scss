@@ -16,7 +16,7 @@
 
     p {
       color: $base-font-color;
-      font-weight: $weight-book;
+      font-weight: $weight-light;
     }
   }
 
@@ -24,7 +24,7 @@
     @include heading('para-sm');
 
     color: $greenest-land;
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     margin: 0;
   }
 }

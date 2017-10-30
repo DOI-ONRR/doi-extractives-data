@@ -1,7 +1,7 @@
 .region-header {
   border-bottom: 1px solid $mid-gray;
   border-top: none;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -14,7 +14,7 @@
 .region-header-category {
   @include heading(para-md);
   border-bottom: 1px solid $neutral-gray;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-bottom: $base-padding-lite;
   margin-top: $base-padding-extra;
   padding-left: $base-padding;
@@ -29,7 +29,7 @@
 
 .subregion-name {
   @include heading(para-md);
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin: 0;
   width: 86%;
 
@@ -76,7 +76,7 @@
 
   .value.subtotal,
   .subtotal-label {
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 
   thead {
@@ -90,7 +90,7 @@
 
     .subregion-name {
       @include heading(para-lg);
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
       min-width: 150px;
       padding: 0;
       padding-left: ($base-padding * 0.9);
@@ -211,7 +211,7 @@
 }
 
 .bold {
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
 }
 
 .material-variance {
@@ -220,7 +220,7 @@
 
 .threshold {
   display: inline-block;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   margin-left: $base-padding-lite;
 }
 
@@ -267,7 +267,7 @@
 .region-subtitle {
   @include font-size(1);
 
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-bottom: $base-padding;
 }
 

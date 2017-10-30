@@ -201,7 +201,7 @@
   figcaption {
     @include font-size(7 / 8); // 14px
 
-    font-weight: $weight-book;
+    font-weight: $weight-light;
     line-height: 20px;
     padding: $base-padding-lite;
     padding-left: 0;
@@ -225,7 +225,7 @@
   eiti-data-map figcaption {
     @include heading('para-sm');
 
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     margin: 0;
     min-height: inherit;
   }
@@ -392,5 +392,5 @@
 }
 
 .legend-units {
-  font-weight: $weight-book;
+  font-weight: $weight-light;
 }

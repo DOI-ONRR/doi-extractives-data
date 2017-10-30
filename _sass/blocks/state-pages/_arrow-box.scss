@@ -50,7 +50,7 @@ $ab-border-thick: 4px;
       padding-left: $ab-padding;
 
       span {
-        font-weight: $weight-book;
+        font-weight: $weight-light;
       }
     }
 
@@ -58,12 +58,12 @@ $ab-border-thick: 4px;
       padding-left: $ab-padding;
 
       span {
-        font-weight: $weight-book;
+        font-weight: $weight-light;
       }
     }
 
     span {
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
       line-height: 2.3;
       white-space: pre;
 
@@ -73,7 +73,7 @@ $ab-border-thick: 4px;
 
       &:nth-child(4),
       &:nth-of-type(8) {
-        font-weight: $weight-book;
+        font-weight: $weight-light;
       }
     }
   }
@@ -93,7 +93,7 @@ $ab-border-thick: 4px;
   }
 
   .table-arrow_box-subheader {
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
   }
 
   .table-arrow_box-subheader-value:not(.text) {
@@ -106,7 +106,7 @@ $ab-border-thick: 4px;
     border-top: $ab-border-thin solid $ab-color-primary;
     color: $black-light;
     font-size: .8125rem;
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -120,7 +120,7 @@ $ab-border-thick: 4px;
 
     icon {
       color: $black-light;
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
       font-size: 20px;
     }
   }

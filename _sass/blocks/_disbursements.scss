@@ -6,10 +6,10 @@
 
   figcaption {
     @include heading(h5);
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
 
     span {
-      font-weight: $weight-book;
+      font-weight: $weight-light;
     }
   }
 }

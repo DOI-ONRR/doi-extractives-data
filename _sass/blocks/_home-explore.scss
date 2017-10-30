@@ -3,7 +3,7 @@
 // Styleguide blocks.explore-home
 .explore_home-heading {
   color: $black;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   line-height: 1.3;
   padding-right: $base-padding-lite;
 }
@@ -14,7 +14,7 @@
 
 .explore_home-subhead {
   @include heading(para-md);
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-bottom: 0;
   padding-bottom: 0;
 
@@ -124,14 +124,14 @@
 .explore_home-main_link {
   @include heading(para-lg);
   color: $blue;
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
 }
 
 .explore_home-links {
   a {
     @include heading(para-sm);
     color: $blue;
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
     text-decoration: none;
 
     &:hover,

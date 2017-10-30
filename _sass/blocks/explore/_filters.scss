@@ -63,7 +63,7 @@
   p {
     @include heading(para-md);
     color: $blue-alt;
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 }
 
@@ -73,7 +73,7 @@
   label {
     @include heading(para-sm);
     color: $blue-alt;
-    font-weight: $weight-book;
+    font-weight: $weight-light;
     letter-spacing: 0.7px;
     margin-bottom: 3px;
     text-transform: uppercase;
@@ -142,7 +142,7 @@
     border-bottom-right-radius: 0;
     border-right: 1px solid $blue;
     border-top-right-radius: 0;
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
 
     &:checked + label {
       background: $blue;
@@ -155,7 +155,7 @@
     @include omega();
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    font-weight: $weight-bold;
+    font-weight: $weight-semibold;
 
     &:checked + label {
       background: $blue;
@@ -171,7 +171,7 @@
 
 .filter-description {
   display: none;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   float: left;
   letter-spacing: -0.5px;
 
@@ -192,7 +192,7 @@
 
   .filter-part {
     color: inherit;
-    font-weight: $weight-book;
+    font-weight: $weight-light;
     text-decoration: none;
   }
 }

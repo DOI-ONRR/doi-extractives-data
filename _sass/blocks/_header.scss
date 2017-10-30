@@ -83,7 +83,7 @@ header,
 .header-nav_item,
 .header-nav_item_top {
   display: inline-block;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   padding-bottom: $base-padding-lite;
   padding-right: $base-padding;
   padding-top: 0;
@@ -99,7 +99,7 @@ header,
 }
 
 .header-nav_item.active {
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
 
   .header-nav_item_link {
     color: $black;
@@ -118,7 +118,7 @@ header,
 }
 
 .header-nav_item_top {
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   margin-top: 0;
   padding-right: $base-padding-lite;
 
@@ -176,12 +176,12 @@ header,
   @extend .header-nav_item_link;
   @include font-size(0.75);
 
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 
   &.active {
-    font-weight: $weight-book;
+    font-weight: $weight-light;
   }
 }
 

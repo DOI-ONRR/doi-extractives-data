@@ -4,12 +4,12 @@
 $nrrd-logo-width: 280px;
 
 // Typography
-$weight-light: 200; // use
-$weight-book: 400; // use
-$weight-bold: 800; // use (Heavy weight is substituted here, for better contrast)
+$weight-light: 300; // (Lato Light) use
+$weight-book: 400; // (Lato Regular) use
+$weight-bold: 600; // (Lato Semibold) use
 $line-height-caps: 1.2;
 
-$sans-serif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+$sans-serif: Lato, Helvetica, arial, sans-serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-size: 1rem;

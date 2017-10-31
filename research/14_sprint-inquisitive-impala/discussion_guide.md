@@ -15,7 +15,6 @@ Do you have any questions before we get started?
 # General interview questions [~20 mins]
 
 We found your contact information because we saw that you followed DOI’s USEITI Twitter account, so my first question is, what prompted you to follow USEITI on Twitter?
-- How did you hear about USEITI? 
 
 What interests you about energy & mineral extraction?
 - _If their work comes up in this answer, but they haven’t told us exactly what they do:_ What exactly do you do for work?
@@ -34,7 +33,7 @@ _If the participant ends up screensharing and mentions they’ve visited useiti.
 
 _OR_
 
-_If the participant does not indicate that they’ve visited useiti.doi.gov before, go to **[New site name test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#new-site-name-test).**_
+_If not, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
 # General usability test [~15 mins]
 
@@ -56,23 +55,6 @@ Imagine a new team is taking over this website, and their manager is a good frie
 
 Do you have any other feedback about this site before you stop sharing your screen?
 
-_When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
-
-# New site name test [~10 mins]
-
-_Introduce next exercise:_ Now we’re going to focus on the front page of the website we’re renovating. We're still working on the site, so what I’m about to show you is more like a Powerpoint online than a real website. Not all of it is interactive but you can explore a bit if you like. I'll then ask you to answer some questions.
-
-_Send the participant the new homepage design. Either ask them to share their screen, or confirm they've reached the page._
-
-Imagine somebody sent you a link to this page and this is what popped up in front of you when you clicked on the link. I'd like you to take a minute to get to know this page. Please think out loud as you explore the page, and talk me through what you're seeing and thinking. This will help us understand how to improve things later. After that, I’ll ask you some more specific questions about your impressions. _[probe on any of the following questions (most important ones in bold)]:_
-- **What do you think this site is about?**
-- **What information might you find in this website?**
-- What questions does this page leave you with?
-- Tell me your first impression.
-- How do you interpret that?
-- Anything else you associate with these words?
-
-_When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
 # Wrap up [~5 mins]
 Great, thanks so much! I have a few final questions for you, and then we’re all done.

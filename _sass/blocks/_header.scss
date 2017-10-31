@@ -145,7 +145,7 @@ header,
   text-decoration: none;
 
   @include respond-to(huge-plus-up) {
-    @include font-size(0.875);
+    @include font-size(0.9375);
   }
 
   &:hover,

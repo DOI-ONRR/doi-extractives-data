@@ -30,11 +30,11 @@ Could you talk me through the last time you sought out information related to en
 - What was challenging about this experience?
 - What would have made it easier for you?
 
-_If the participant ends up screensharing and mentions they’ve visited useiti.doi.gov before, go to **General usability test**_
+_If the participant ends up screensharing and mentions they’ve visited useiti.doi.gov before, go to **[General usability test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#general-usability-test)**_
 
 _OR_
 
-_If the participant does not indicate that they’ve visited useiti.doi.gov before, go to **New site name test.**_
+_If the participant does not indicate that they’ve visited useiti.doi.gov before, go to **[New site name test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#new-site-name-test).**_
 
 # General usability test
 
@@ -56,7 +56,7 @@ Imagine a new team is taking over this website, and their manager is a good frie
 
 Do you have any other feedback about this site before you stop sharing your screen?
 
-_When finished, go to **Wrap up.**_
+_When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
 # New site name test
 
@@ -72,7 +72,7 @@ Imagine somebody sent you a link to this page and this is what popped up in fron
 - How do you interpret that?
 - Anything else you associate with these words?
 
-_When finished, go to **Wrap up.**_
+_When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
 # Wrap up
 Great, thanks so much! I have a few final questions for you, and then we’re all done.

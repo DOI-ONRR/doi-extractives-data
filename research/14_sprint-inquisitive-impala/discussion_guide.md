@@ -23,7 +23,7 @@ What interests you about energy & mineral extraction?
 
 Could you talk me through the last time you sought out information related to energy & mineral extraction? _[if you are on a video call and they mention any tasks that they did on the computer or websites they visited (especially useiti.doi.gov!), ask if they’d be willing to share their screen and walk you through the process]_
 - What were you trying to accomplish? 
-- What info did you need?
+- What info did you need? _[probe around what formats they need]_
 - Where did you go to find this info? 
 - What did you do with this info once you found it?
 - What was challenging about this experience?

@@ -29,7 +29,7 @@ Could you talk me through the last time you sought out information related to en
 - What was challenging about this experience?
 - What would have made it easier for you?
 
-_If the participant ends up screensharing and mentions they’ve visited useiti.doi.gov before, go to **[General usability test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#general-usability-test)**_
+_If the participant ends up screensharing and mentions they’ve visited any of the sites ONRR manages, go to **[General usability test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#general-usability-test)**_
 
 _OR_
 
@@ -37,7 +37,7 @@ _If not, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/rese
 
 # General usability test [~15 mins]
 
-Before you stop screensharing, I’m curious if you’ve used useiti.doi.gov for anything other than what you walked me through before?
+Before you stop screensharing, I’m curious if you’ve used _[insert ONRR website they mentioned before here]_ for anything other than what you walked me through before?
 - _[if so]:_ could you walk me through that process?
 
 _Potential probing questions:_

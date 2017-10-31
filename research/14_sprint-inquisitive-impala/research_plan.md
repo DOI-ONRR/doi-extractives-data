@@ -9,7 +9,7 @@ Given that the purpose and content of the Natural Resources Revenue Data site is
 | | What do they use it for? |
 | | How do they get this info currently? |
 | | How would they they prefer to get this info it in the future? |
-| Test the effectiveness of the new site name. | What do our target users think they can get from the site based on the name & homepage content? |
+
 
 # Methods and desired participants
 
@@ -32,4 +32,4 @@ In order to recruit research participants from our target user groups (both for 
 [Linked here](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md).
 
 # Test assets
-_[the homepage with new name & non-EITI content, either in a branch or as a static mock; will update with file/link when we know which]_
+None

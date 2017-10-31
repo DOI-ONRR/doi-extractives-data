@@ -1,4 +1,4 @@
-# Intro
+# Intro [~5 mins]
 
 _Brief introduction – share your name and a description of your general duties on the team._
 
@@ -12,7 +12,7 @@ _Informed consent:_ With your permission, we’d like to take written notes toda
 
 Do you have any questions before we get started?
 
-# General interview questions
+# General interview questions [~20 mins]
 
 We found your contact information because we saw that you followed DOI’s USEITI Twitter account, so my first question is, what prompted you to follow USEITI on Twitter?
 - How did you hear about USEITI? 
@@ -36,7 +36,7 @@ _OR_
 
 _If the participant does not indicate that they’ve visited useiti.doi.gov before, go to **[New site name test](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#new-site-name-test).**_
 
-# General usability test
+# General usability test [~15 mins]
 
 Before you stop screensharing, I’m curious if you’ve used useiti.doi.gov for anything other than what you walked me through before?
 - _[if so]:_ could you walk me through that process?
@@ -58,7 +58,7 @@ Do you have any other feedback about this site before you stop sharing your scre
 
 _When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
-# New site name test
+# New site name test [~10 mins]
 
 _Introduce next exercise:_ Now we’re going to focus on the front page of the website we’re renovating. We're still working on the site, so what I’m about to show you is more like a Powerpoint online than a real website. Not all of it is interactive but you can explore a bit if you like. I'll then ask you to answer some questions.
 
@@ -74,7 +74,7 @@ Imagine somebody sent you a link to this page and this is what popped up in fron
 
 _When finished, go to **[Wrap up](https://github.com/18F/doi-extractives-data/blob/research/research/14_sprint-inquisitive-impala/discussion_guide.md#wrap-up).**_
 
-# Wrap up
+# Wrap up [~5 mins]
 Great, thanks so much! I have a few final questions for you, and then we’re all done.
 
 - Is there anything else you’d like to share with us?

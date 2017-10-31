@@ -213,8 +213,6 @@ header,
   @include font-size(0.75);
 
   font-weight: $weight-book;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
 
   &.active {
     font-weight: $weight-book;

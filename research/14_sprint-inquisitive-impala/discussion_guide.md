@@ -1,10 +1,12 @@
 # Intro [~5 mins]
 
-_Brief introduction – share your name and a description of your general duties on the team._
+Thanks for taking the time to speak with us today!
 
-_Very brief discussion of the purpose of today's session:_ My goal today is to learn a bit about how you currently find and use information about energy & mineral extraction in your work, and get your feedback on a website we are working on to make this information easier to find. I really appreciate you taking the time to talk today – your feedback will help us make this site more accessible and easier to use.
+_Brief introduction – share your name and a description of your general duties on the team, and introduce any others who may be on the call with you._
 
-_Interview details:_ During this interview, there are no right or wrong or desirable or undesirable answers - please feel free to tell us what you really think and how you really feel, since your honest perspective is what will help us improve the way the Department of the Interior shares information with the public. 
+_Very brief discussion of the purpose of today's session:_ My goal today is to learn a bit about how you currently find and use information about energy & mineral extraction in your work, to help us identify opportunities to make this information easier to find and use. 
+
+_Interview details:_ During this interview, we’ll ask you some basic questions about your work and interests related to energy & mineral extraction. There are no right or wrong or desirable or undesirable answers - please feel free to tell us what you really think and how you really feel, since your honest perspective is what will help us improve the way the Department of the Interior shares information with the public. 
 
 We expect the interview should take about 45 minutes. Does that still work for you? If you need a break or have questions at any point, please don’t hesitate to ask.
 

@@ -103,24 +103,6 @@ footer,
   }
 }
 
-// .footer-nav {
-//   @include span-columns(12);
-//   padding-bottom: $base-padding;
-//
-//   @include respond-to(medium-up) {
-//     @include span-columns(2 of 8);
-//     @include omega(4n);
-//     padding-bottom: 0;
-//   }
-//
-//   a {
-//     &:hover,
-//     &:focus {
-//       text-decoration: underline;
-//     }
-//   }
-// }
-
 .footer-list_item_heading {
   @include heading(para-sm);
   font-weight: $weight-book;
@@ -178,35 +160,3 @@ footer,
     @include omega();
   }
 }
-
-// .footer-social {
-//   display: inline-block;
-//   margin-left: 0.25em;
-// }
-//
-// // .footer-link_social {
-// //   display: block;
-//   padding-bottom: $base-padding-lite;
-//
-//   i {
-//     color: $dark-gray;
-//   }
-//
-//   &:hover,
-//   &:focus {
-//     text-decoration: none;
-//
-//     p,
-//     .fa-circle {
-//       color: $white;
-//     }
-//
-//     p {
-//       text-decoration: underline;
-//     }
-//   }
-// }
-//
-// .footer-social_callout {
-//   margin-bottom: $base-padding;
-// }

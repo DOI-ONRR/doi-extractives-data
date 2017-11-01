@@ -109,10 +109,10 @@ header,
 }
 
 .header-nav_top {
-  margin-bottom: 5.25em;
+  margin-bottom: 1em;
 
   @include respond-to(huge-plus-up) {
-    margin-bottom: $base-padding-large;
+    margin-bottom: 4.875em;
   }
 }
 

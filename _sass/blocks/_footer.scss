@@ -70,8 +70,9 @@ footer,
 
 .footer-image {
   margin-bottom: $base-padding-extra;
+  margin-left: 50%;
   max-width: 225px;
-  width: $eiti-logo-width;
+  width: 40%;
 
   @include respond-to(huge-plus-up) {
     width: 100%;

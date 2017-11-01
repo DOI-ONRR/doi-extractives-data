@@ -25,7 +25,7 @@
 
 header,
 .header {
-  margin-top: $base-padding-base;
+  margin-top: $base-padding-large;
 }
 
 .header-image_link {
@@ -135,7 +135,9 @@ header,
 }
 
 .header-nav_item.active {
-  font-weight: $weight-book;
+  .header-nav_item_link {
+    font-weight: $weight-bold;
+  }
 }
 
 .header-nav_item_link {

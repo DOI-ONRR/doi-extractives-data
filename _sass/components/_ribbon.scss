@@ -210,7 +210,7 @@ svg {
 .ribbon-hero-description-light {
   @include font-size(1.375);
   font-weight: $weight-light;
-  margin-bottom: $standard-padding-base;
+  margin-bottom: $base-padding;
   padding-right: $standard-padding-extra;
 }
 

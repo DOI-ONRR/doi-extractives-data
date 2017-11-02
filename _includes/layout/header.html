@@ -2,7 +2,11 @@
 
   <div class="header-left">
     <a class="header-image_link" href="{{ site.baseurl }}/">
-      <img class="header-image" src="{{ site.baseurl }}/img/logo-USEITI-color.svg" alt="USEITI logo">
+      <h1 class="sr-only">
+        US Department of the Interior Natural Resources Revenue Data
+      </h1>
+      <img class="header-image" src="{{ site.baseurl }}/img/NRRD-logo.svg"
+        alt="Logo">
     </a>
   </div>
 
@@ -30,7 +34,7 @@
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
       <li class="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
+        <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About</a>
       </li>
       <li class="header-nav_item {% if page.permalink contains '/how-it-works/' or layout.nav_name == 'how-it-works' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>

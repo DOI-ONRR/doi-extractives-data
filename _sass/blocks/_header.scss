@@ -109,7 +109,7 @@ header,
 }
 
 .header-nav_top {
-  margin-bottom: 1em;
+  margin-bottom: 2.865em;
 
   @include respond-to(huge-plus-up) {
     margin-bottom: 4.875em;
@@ -218,7 +218,7 @@ header,
 
   &.active {
     font-weight: $weight-book;
-    color: black;
+    color: $black;
   }
 }
 

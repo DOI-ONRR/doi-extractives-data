@@ -1,8 +1,8 @@
 [![CircleCI](https://circleci.com/gh/18F/doi-extractives-data/tree/dev.svg?style=svg)](https://circleci.com/gh/18F/doi-extractives-data/tree/dev)
 
-# U.S. Extractive Industries Data and Information
+# U.S. Department of the Interior Natural Resource Revenue Data
 
-This is the repository for active development work on [useiti.doi.gov](https://useiti.doi.gov). See [releases](https://github.com/18F/doi-extractives-data/releases) for information about the current version of the site.
+This is the repository for active development work on [revenuedata.doi.gov](https://revenuedata.doi.gov). See [releases](https://github.com/18F/doi-extractives-data/releases) for information about the current version of the site.
 
 **For more detailed process, development, and data information, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).**
 
@@ -10,13 +10,9 @@ This is the repository for active development work on [useiti.doi.gov](https://u
 
 The U.S. earns revenue on natural resources (such as oil, gas, coal and geothermals) extracted from federal lands and waters. This is a major source of revenue for both the federal government, state governments, and local municipalities.
 
-This repository contains the code for useiti.doi.gov, which is a website that includes both curated content and raw data to better inform the national and international conversation around extractive industries revenue. It will provide a data visualizations and information that’s  understandable to members of the public and can be re-used through other media and applications.
+This repository contains the code for revenuedata.doi.gov, which is a website that includes both curated content and raw data to better inform the national and international conversation around extractive industries revenue. It will provide data visualizations and information that’s  understandable to members of the public and can be re-used through other media and applications.
 
-## Why
-
-This effort was announced as part of President Obama’s [Open Government Partnership National Action Plan](https://obamawhitehouse.archives.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan), which commits the U.S. to ensuring taxpayers are receiving every dollar due for extraction of the U.S.’s natural resources.
-
-In December of 2013, the U.S. applied to become part of an international standard called the [Extractive Industries Transparency Initiative (EITI)](http://www.eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the U.S. process of implementing the EITI standard, see [about USEITI](https://useiti.doi.gov/about/).
+For more information about the history of the site, see [about this site](https://revenuedata.doi.gov/about/).
 
 ## Contributing
 Content and feature suggestions are welcome via [GitHub Issues](https://github.com/18F/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site. Take a look at the issues we've tagged [help wanted](https://github.com/18F/doi-extractives-data/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!

@@ -163,4 +163,4 @@ Alaska has two [local government structures (PDF)](https://www.commerce.alaska.g
 
 In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. Development and activity related to the extractive industries are concentrated on Alaska's northern coast, so attention to costs is concentrated in that part of the state.
 
-The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs: transportation, water, emergency services, and reclamation. For a holistic look at how the North Slope Borough has met these needs, see [the North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/#costs).
+For a holistic look at how the North Slope Borough has met the transportation, water, emergency services, and reclamation needs of extractive industries, see [the North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/#costs).

@@ -25,7 +25,7 @@
 
 header,
 .header {
-  margin-top: $base-padding-large;
+  margin-top: $base-padding-base;
 }
 
 .header-image_link {
@@ -37,11 +37,10 @@ header,
 }
 
 .header-image {
-  margin-top: $base-padding / 2;
   max-width: 316px;
   width: $eiti-logo-width;
 
-  @include respond-to(huge-plus-up) {
+  @include respond-to(medium-up) {
     width: auto;
   }
 }
@@ -99,7 +98,7 @@ header,
   display: inline-block;
   float: right;
 
-  @include respond-to(huge-plus-up) {
+  @include respond-to(medium-up) {
     padding-right: 0;
   }
 }
@@ -141,12 +140,12 @@ header,
 }
 
 .header-nav_item_link {
-  @include font-size(0.75);
+  @include font-size(0.8375);
   color: $dark-gray;
-  font-weight: $weight-book;
+  font-weight: $weight-light;
   text-decoration: none;
 
-  @include respond-to(huge-plus-up) {
+  @include respond-to(large-up) {
     @include font-size(0.9375);
   }
 

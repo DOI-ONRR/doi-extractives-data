@@ -34,8 +34,7 @@ selector: list
 
 ## Revenue sustainability
 
-Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
-
+Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Revenue sustainability is a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
 
 1. The sustainability of revenue over time, given that revenue fluctuates with commodity prices, and fossil fuels and hardrock mineral deposits are finite or may not be economically extractable based on current technology.
 2. The net sustainability of revenue given the fiscal benefits of increased revenue from extractive activities and the fiscal costs of increased government expenditures necessary to support extractive activities.
@@ -68,7 +67,7 @@ We used a range of information publicly available online to compile the case stu
 
 County and state budget documents and state agency websites were the primary data sources. Federal agency websites and reports also provided critical information on employment in extractive industries, {{ "proved reserves" | term }} of various natural resources, and production estimates.
 
-This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose and status of USEITI, verify content, and lay the foundation for future collaboration.
+This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose of these case studies, verify content, and lay the foundation for future collaboration.
 
 To learn more about the interactions between governments and extractive industries in your community, consider researching:
 

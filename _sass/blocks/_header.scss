@@ -25,7 +25,7 @@
 
 header,
 .header {
-  margin-top: $base-padding-base;
+  margin-top: $base-padding;
 }
 
 .header-image_link {
@@ -38,7 +38,7 @@ header,
 
 .header-image {
   max-width: 316px;
-  width: $eiti-logo-width;
+  width: $nrrd-logo-width;
 
   @include respond-to(medium-up) {
     width: auto;
@@ -47,7 +47,7 @@ header,
 
 .header-left {
    @include span-columns(6);
-   margin-bottom: $base-padding;
+   margin-bottom: $base-padding-base;
 
    @include respond-to(medium-up) {
       @include span-columns(3);

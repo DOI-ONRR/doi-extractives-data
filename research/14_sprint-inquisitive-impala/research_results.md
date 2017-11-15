@@ -67,6 +67,6 @@ Because this was a very open-ended round of research, and we were unable to recr
 - How can we better clarify the new scope of the site to help users orient to its contents better post-EITI?
 - What kinds of labels and contextual descriptions do the best job of orienting users to the content they are looking for?
 - How can we get people to what’s interesting to them, faster?
-- How does the new site name and framing effect users’ understanding and navigation of the site?
+- How does the new site name and framing affect users’ understanding and navigation of the site?
 
 

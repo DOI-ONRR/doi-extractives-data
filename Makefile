@@ -20,6 +20,12 @@ drop-table = echo "-- dropping: $(1) --"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
 # the 'tee' command.
 append_to_tmp = | tee -a $$tmp > /dev/null
 
+guard-%:
+	@ if [ "${${*}}" = "" ]; then \
+		echo "Environment variable $* not set"; \
+		exit 1; \
+	fi
+
 all: db
 
 clean:
@@ -50,6 +56,9 @@ site-data: \
 	data/exports \
 	data/top_state_products \
 	data/offshore_federal_production
+
+eip-data: guard-EIA_API_KEY
+	node /doi/data/all-production/update.js
 
 data/all_production: tables/all_production \
 	data/national_all_production.yml \

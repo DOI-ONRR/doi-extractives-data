@@ -57,6 +57,7 @@ site-data: \
 	data/top_state_products \
 	data/offshore_federal_production
 
+# Update data from EIP dataset, see data/all-production/README for more info
 eip-data: guard-EIA_API_KEY
 	node /doi/data/all-production/update.js
 

@@ -4,9 +4,11 @@ Given that the purpose and content of the Natural Resources Revenue Data site is
 
 # Methods and participants
 
-For this quick round of research, we conducted remote, 45-minute one-on-one interviews with four participants, where participants talked us through how they currently access and use natural resource revenue information. In some cases, participants shared their screens with us to show us their workflow, and in these cases we also asked them to navigate through the latest version of useiti.doi.gov to share their impressions.
+For this quick round of research, we conducted remote, 45-minute one-on-one interviews with four participants, where participants talked us through how they currently access and use natural resource revenue information. In some cases, participants shared their screens with us to show us their workflow, and in these cases we also asked them to navigate through the latest version of the site to share their impressions.
 
-While not actual users of the site, these four participants all follow @useiti_doi on Twitter, and spanned several of our target user groups: one journalist, one academic, one academic/advocate, and one tribal government/industry representative. 
+While not actual users of the site, these four participants all follow [@useiti_doi](https://twitter.com/useiti_doi) on Twitter, and spanned several of our target user groups: one journalist, one academic, one academic/advocate, and one tribal government/industry representative. 
+
+It's also worth mentioning that the official site name change from USEITI to Natural Resources Revenue Data and URL change from useiti.doi.gov to [revenuedata.doi.gov](revenuedata.doi.gov) occured halfway through this research sprint.
 
 # Findings
 
@@ -21,13 +23,13 @@ While not actual users of the site, these four participants all follow @useiti_d
 
 
 ## Participants found the structure of some of the information to be cumbersome and unmanageable.
-- “This takes a lot of scrolling...”
-- In reference to the “How it works” page: “It’s a little long; there’s a lot of detail about government regulations. I’d have to be really interested to wade through all of that detail.”
+- In reference to the [“Onshore Renewables" dive-in](https://revenuedata.doi.gov/how-it-works/onshore-renewables/) of the "How it works” page: “It’s a little long; there’s a lot of detail about government regulations. I’d have to be really interested to wade through all of that detail.”
+- In reference to the "[Explore Data](https://revenuedata.doi.gov/explore/)" page, one participant mentioned, “this takes a lot of scrolling...”
 
 ## However, users need help navigating and interpreting the data, and the explanations definitely help. 
 
-- In walking us through another site they use in their research, one participant said, “EPA’s site is much worse, you really have to know what you’re doing… Very little explanation for the categories where those numbers come from. Monthly frequency is adequate, [but] the overall schedule isn’t explained, though.”
-- When a participant navigated to a state page on the NRRD site for the first time: “[this] seems like a very useful presentation of data on mining, production… useful summaries, guided tours of the data.”
+- In walking us through another site they use in their research, one participant said, “[EPA’s site](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/public-data-renewable-fuel-standard) is much worse, you really have to know what you’re doing… Very little explanation for the categories where those numbers come from. Monthly frequency is adequate, [but] the overall schedule isn’t explained, though.”
+- When a participant navigated to a state page on our site for the first time: “[this] seems like a very useful presentation of data on mining, production… useful summaries, guided tours of the data.”
 
 
 ## Ultimately, users need help orienting to how they can dive deeper into the data they care most about. 
@@ -41,7 +43,9 @@ While not actual users of the site, these four participants all follow @useiti_d
 
 **It’s hard to find the raw data.**
 
-- When asked what they thought the “Download” link on the site would do, one participant said, “I would say that’s a deficiency on the website. You have a lot of options, but it’s not clear how you would get the data.”
+- When asked where they would go to find raw data on the site, one participant said, “I would say that’s a deficiency on the website. You have a lot of options, but it’s not clear how you would get the data.”
+  - When we asked that same participant what they thought the “Download” link on the site would do, they replied, "Ah, getting closer," and then directed us to another site they use, the [USDA Quick Stats site](https://quickstats.nass.usda.gov/), as a comparison. 
+  - In describing USDA's Quick Stats site, this participant said, "it’s a database query, so you start at the highest level and filter down. This is unique, and gets huge use in ag[riculture] world... I use it all the time. It’s so easy to use, I don’t even store data on my desktop anymore."
 
 **Users need a clear next step when they can’t find what they need on the site.**
 - The journalist we spoke with mentioned that when consulting data sources for their stories, they usually need to talk to a person at least once to ensure they are interpreting the data properly and understand the context around it. 
@@ -49,7 +53,7 @@ While not actual users of the site, these four participants all follow @useiti_d
 
 
 ## Participants wanted to be able to compare the figures they were seeing with relatable anchor points so they could understand the numbers in context (eg, comparing local figures to a national average or to total national figures, etc.).
-- When exploring “Revenue details by phase,” a participant mentioned, “ah, these bars are helpful, since I can compare visually… it helps me see our overall share of the energy production.”
+- When exploring “[Revenue details by phase](https://revenuedata.doi.gov/explore/#federal-revenue)” on the "Explore Data" page, a participant mentioned, “ah, these bars are helpful, since I can compare visually… it helps me see our overall share of the energy production.”
 
 
 # Open questions and next steps

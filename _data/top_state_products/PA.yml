@@ -166,3 +166,9 @@ all_production:
       value: 1922443.67
       rank: 3
       percent: 8.71
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 45719786
+      rank: 3
+      percent: 6.28

@@ -130,6 +130,12 @@ all_production:
       rank: 5
       percent: 6.06
   '2016':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 297218132
+      rank: 1
+      percent: 40.81
     - product: Natural Gas
       name: Natural Gas
       units: Mcf

@@ -43,6 +43,10 @@ AK:
           volume: 1177390
           percent: 0.13
           rank: 20
+        '2016':
+          volume: 932122
+          percent: 0.13
+          rank: 20
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -354,6 +358,10 @@ AL:
           volume: 13190832
           percent: 1.47
           rank: 15
+        '2016':
+          volume: 9642974
+          percent: 1.32
+          rank: 15
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -641,6 +649,10 @@ AR:
           volume: 91462
           percent: 0.01
           rank: 25
+        '2016':
+          volume: 49415
+          percent: 0.01
+          rank: 24
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -931,6 +943,10 @@ AZ:
         '2015':
           volume: 6804555
           percent: 0.76
+          rank: 16
+        '2016':
+          volume: 5422850
+          percent: 0.74
           rank: 16
     Conventional Hydroelectric:
       units: Mwh
@@ -1668,6 +1684,10 @@ CO:
           volume: 18878915
           percent: 2.1
           rank: 11
+        '2016':
+          volume: 12634136
+          percent: 1.73
+          rank: 13
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3399,6 +3419,10 @@ IL:
           volume: 56101030
           percent: 6.25
           rank: 4
+        '2016':
+          volume: 43422136
+          percent: 5.96
+          rank: 4
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -3753,6 +3777,10 @@ IN:
           volume: 34295444
           percent: 3.82
           rank: 8
+        '2016':
+          volume: 28766705
+          percent: 3.95
+          rank: 8
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -4044,6 +4072,10 @@ KS:
           volume: 199199
           percent: 0.02
           rank: 23
+        '2016':
+          volume: 26788
+          percent: 0
+          rank: 25
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -4315,6 +4347,10 @@ KY:
           volume: 61424961
           percent: 6.85
           rank: 3
+        '2016':
+          volume: 42867898
+          percent: 5.89
+          rank: 5
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -4602,6 +4638,10 @@ LA:
           volume: 3438728
           percent: 0.38
           rank: 17
+        '2016':
+          volume: 2797656
+          percent: 0.38
+          rank: 18
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -5102,6 +5142,10 @@ MD:
         '2015':
           volume: 1921869
           percent: 0.21
+          rank: 19
+        '2016':
+          volume: 1615746
+          percent: 0.22
           rank: 19
     Conventional Hydroelectric:
       units: Mwh
@@ -6045,6 +6089,10 @@ MO:
           volume: 138206
           percent: 0.02
           rank: 24
+        '2016':
+          volume: 233898
+          percent: 0.03
+          rank: 23
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -6359,6 +6407,10 @@ MS:
           volume: 3143392
           percent: 0.35
           rank: 18
+        '2016':
+          volume: 2869740
+          percent: 0.39
+          rank: 17
     Crude Oil:
       units: bbl
       volume:
@@ -6592,6 +6644,10 @@ MT:
           volume: 41864004
           percent: 4.67
           rank: 6
+        '2016':
+          volume: 32335656
+          percent: 4.44
+          rank: 7
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -7052,6 +7108,10 @@ ND:
         '2015':
           volume: 28801826
           percent: 3.21
+          rank: 9
+        '2016':
+          volume: 28120859
+          percent: 3.86
           rank: 9
     Conventional Hydroelectric:
       units: Mwh
@@ -7930,6 +7990,10 @@ NM:
           volume: 19678796
           percent: 2.19
           rank: 10
+        '2016':
+          volume: 13341089
+          percent: 1.83
+          rank: 11
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -8877,6 +8941,10 @@ OH:
           volume: 17040975
           percent: 1.9
           rank: 12
+        '2016':
+          volume: 12564129
+          percent: 1.72
+          rank: 14
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -9235,6 +9303,10 @@ OK:
           volume: 780199
           percent: 0.09
           rank: 22
+        '2016':
+          volume: 654220
+          percent: 0.09
+          rank: 21
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -9860,6 +9932,10 @@ PA:
           volume: 50030833
           percent: 5.58
           rank: 5
+        '2016':
+          volume: 45719786
+          percent: 6.28
+          rank: 3
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -10759,6 +10835,10 @@ TN:
           volume: 897484
           percent: 0.1
           rank: 21
+        '2016':
+          volume: 643981
+          percent: 0.09
+          rank: 22
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -11109,6 +11189,10 @@ TX:
           volume: 35917966
           percent: 4
           rank: 7
+        '2016':
+          volume: 39000584
+          percent: 5.35
+          rank: 6
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -11467,6 +11551,10 @@ UT:
           volume: 14419078
           percent: 1.61
           rank: 13
+        '2016':
+          volume: 13966122
+          percent: 1.92
+          rank: 10
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -11809,6 +11897,10 @@ VA:
           volume: 13914269
           percent: 1.55
           rank: 14
+        '2016':
+          volume: 12909687
+          percent: 1.77
+          rank: 12
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -12742,6 +12834,10 @@ WV:
           volume: 95632900
           percent: 10.66
           rank: 2
+        '2016':
+          volume: 79757315
+          percent: 10.95
+          rank: 2
     Conventional Hydroelectric:
       units: Mwh
       volume:
@@ -13052,6 +13148,10 @@ WY:
         '2015':
           volume: 375772504
           percent: 41.89
+          rank: 1
+        '2016':
+          volume: 297218132
+          percent: 40.81
           rank: 1
     Conventional Hydroelectric:
       units: Mwh

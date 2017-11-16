@@ -27,6 +27,7 @@ exclude:
   # KSS (style guide) config and template
   - kss-config.json
   - styleguide-template
+  - nrrd-design-system
   # just ignore the whole JS lib directory
   - lib
   # Node depenencies

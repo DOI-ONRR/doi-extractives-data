@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "rm -rf _site; bundle exec jekyll build",
-    "federalist": "webpack &> build.log",
+    "federalist": "webpack &> build.log && npm release-styleguide",
     "start": "bundle exec jekyll serve --incremental",
     "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
     "restart": "rm -rf _site && npm run start",
@@ -24,8 +24,9 @@
     "js-dev-start": "rm -rf js/lib && npm run watch-webpack",
     "js-dev-end": "npm run update-webpack",
     "watch-webpack": "webpack --watch",
-    "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
-    "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
+    "build-styleguide": "cd nrrd-design-system && fractal build && cd ..",
+    "release-styleguide": "npm run build-styleguide && cp -R ./nrrd-design-system/build styleguide",
+    "watch-styleguide": "cd nrrd-design-system && fractal start --sync && cd ..",
     "init-styleguide": "kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "eslint --ignore-path .eslintignore js",
@@ -34,6 +35,7 @@
     "sqlite3": "^3.1.9"
   },
   "dependencies": {
+    "@frctl/fractal": "^1.1.7",
     "async": "^0.9.0",
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",

@@ -19,15 +19,19 @@ selector: list
 
 Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods. In The U.S., forests cover 766 million acres of land. The greatest concentrations of forests are in the South and Northeast, but Alaska has the largest total forest area of any state.
 
-## Ownership
+## Ownership and governance
 
-In the U.S., ownership of forests can be private or public. 58% of forests are privately owned by individuals or organizations, such as corporations and non-profits. The remaining 42% are publicly owned by federal, state, and local governments.
+Like all land, forests can be publicly or privately owned. Private individuals or organizations, such as corporations, non-profits, and tribes. The remaining 42% are publicly owned by federal, state, and local governments.
 
-## Governance
+## U.S. Forest Service
 
-The U.S. Forest Service manages 191 million acres of national forests across the country. Most of the land is protected as wilderness, set aside for other purposes, or cannot be harvested because of environmental conditions. However, timber can be harvested on some of the land and companies harvest about 0.5% of trees a year. Visit the [U.S. Forest Service](https://www.fs.fed.us/) to learn more about national forests.
+The [U.S. Forest Service](https://www.fs.fed.us/) manages 191 million acres of national forests across the country. Most of the land is protected as wilderness, set aside for other purposes, or cannot be harvested because of environmental conditions. However, timber can be harvested on some of the land and companies harvest about 0.5% of trees a year.
 
-The Bureau of Land Management (BLM) manages 65 million acres of forests and woodlands across 12 western states and Alaska. Woodlands are forests in drier regions, such as pinyon-juniper woodlands in the Southwest. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road (CBWR) lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
+## Bureau of Land Management
+
+The Bureau of Land Management (BLM) manages 65 million acres of forests and woodlands across 12 western states and Alaska. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road (CBWR) lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
+
+## Tribal governance
 
 Tribal lands include 18.2 million acres of trust forest acres. The Bureau of Indian Affairs (BIA), tribes themselves, or a combination of both manage forests on tribal lands. To learn more about extraction on tribal lands and the trust responsibility of the federal government, read about tribal ownership.
 
@@ -35,10 +39,12 @@ Tribal lands include 18.2 million acres of trust forest acres. The Bureau of Ind
 
 Lands that can sustainably produce 20 cubic feet per acre of commercial wood products are called timberlands. 68% of forests in the U.S. are timberlands. The rest are classified as low-productivity or legally protected forests.
 
-Timber production is defined and measured in a few ways: shape (roundwood), intended purpose (industrial or fuelwood), or type of tree (softwood or hardwood). Roundwood is one of the most general measures of production and refers to the length of cut tree with a round cross-section, like a log. The U.S. has led in global industrial roundwood production since the 1960s. 
+A number of factors increase demand for timber including: new housing construction, total industrial production, private nonresidential construction, and durable consumer goods production.
 
-Most timber production occurs on private forests. More than 90% of wood and paper products produced in the U.S. comes from private forests. The majority of federal timber production occurs in the national forests and is managed by the Forest Service. A number of factors increase demand for timber including: new housing construction, total industrial production, private nonresidential construction, and durable consumer goods production.
+Timber production is defined and measured in a few ways: shape (roundwood), intended purpose (industrial or fuelwood), or type of tree (softwood or hardwood). Roundwood is one of the most general measures of production and refers to the length of cut tree with a round cross-section, like a log. The U.S. has led in global industrial roundwood production since the 1960s.
 
-Forests also produce non-timber products. According to the Forest Service, there are four categories: edible and culinary (mushrooms and berries), speciality wood products (furniture), floral and decorative (dried flowers), and dietary supplements (ginseng).
+Most timber production occurs on private forests. More than 90% of wood and paper products produced in the U.S. comes from private forests. The majority of federal timber production occurs in the national forests and is managed by the Forest Service.
+
+Forests also produce non-timber products. According to the Forest Service, there are four categories: edible (mushrooms and berries), speciality wood products (furniture), floral and decorative (dried flowers), and dietary supplements (ginseng).
 
 ## Revenue?

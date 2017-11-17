@@ -12,8 +12,8 @@ nav_items:
     title: Solar energy
   - name: wind-power
     title: Wind power
-  - name: water power
-    title: Water power
+  - name: hydroelectric-energy
+    title: Hydroelectric energy
   - name: biomass
     title: Biomass     
 description: The United States is home to many different natural resources, including fossil fuel, renewable energy", and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
@@ -32,14 +32,9 @@ title_display: Renewables
 selector: list
 ---
 
-> The United States is home to many different natural resources, including {{ "fossil fuel" | term_end }}, {{ "renewable energy" | term_end }}, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time. [Explore production data.]({{ site.baseurl }}/explore/#production)
+> Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All constitute growing sources of environmentally sustainable energy to meet the country’s electricity needs. [Explore production data.]({{ site.baseurl }}/explore/#production)
 
 {% include selector.html %}
-
-
-## Renewable energy
-
-Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All constitute growing sources of environmentally sustainable energy to meet the country’s electricity needs. The U.S. Energy Information Administration has the [latest data and trends on renewable energy and alternative fuels](https://www.eia.gov/renewable/).
 
 ### Geothermal energy
 
@@ -65,11 +60,11 @@ No offshore wind projects have been completed to date. [The National Renewable E
 
 See a map of [current wind power capacity](http://apps2.eere.energy.gov/wind/windexchange/wind_installed_capacity.asp), [potential onshore power](http://apps2.eere.energy.gov/wind/windexchange/wind_maps.asp), and [potential offshore power](http://apps2.eere.energy.gov/wind/windexchange/windmaps/offshore.asp).
 
-### Water power
+### Hydroelectric energy
 
-Water power is the country’s oldest and largest source of renewable energy, [supplying 10% of U.S. electricity generation from 1950-2015](https://energy.gov/sites/prod/files/2016/10/f33/Hydropower-Vision-10262016_0.pdf).
+Hydroelectric energy is the country’s oldest and largest source of renewable energy, [supplying 10% of U.S. electricity generation from 1950-2015](https://energy.gov/sites/prod/files/2016/10/f33/Hydropower-Vision-10262016_0.pdf).
 
-Water power technologies capture the power of flowing water and turn it into electricity. The most common type of hydroelectric power plants are impoundment facilities, which use dams to store water in reservoirs. Water released from the reservoir spins a turbine, which in turn activates a generator to produce electricity.
+Hydroelectric technologies capture the power of flowing water and turn it into electricity. The most common type of hydroelectric power plants are dams that store water in reservoirs. Water released from the reservoir spins a turbine, which in turn activates a generator to produce electricity.
 
 ### Biomass
 

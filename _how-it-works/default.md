@@ -63,7 +63,7 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Nonenergy minerals</a></h3>
-          <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, amongst others.</p>
+          <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others.</p>
           <p><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Learn about nonenergy minerals</a></p>
         </div>
         <div>

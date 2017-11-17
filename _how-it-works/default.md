@@ -68,8 +68,8 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/renewables/">Renewables</a></h3>
-          <p>The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
-          <p><a href="{{site.baseurl}}/how-it-works/renewables/">Learn about solar, wind, and geothermal power</a></p>
+          <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/renewables/">Learn about renewable energy</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/forestry/">Forestry</a></h3>

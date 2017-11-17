@@ -38,7 +38,7 @@ selector: list
 
 ### Geothermal energy
 
-Geothermal energy comes from the earth’s heat, which is captured as steam or hot water and converted into energy. Most geothermal resources are found along the boundaries of tectonic plates and manifest themselves as volcanoes, hot springs, or geysers. The U.S. is the largest producer of geothermal energy and California produces more than any other state.
+Geothermal energy comes from the earth’s heat, which is captured as steam or hot water and converted into energy. Most geothermal resources are found along the boundaries of tectonic plates and manifest themselves as volcanoes, hot springs, or geysers. The U.S. is the largest producer of geothermal energy and [California](({{site.baseurl}}/explore/CA/#production)) produces more than any other state.
 
 Many sites for potential geothermal development are on federal land. The Bureau of Land Management (BLM) has the authority to [manage geothermal leasing on 240 million acres of public land](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy). Advances in extraction methods and technology could result in new sources of geothermal energy.
 
@@ -48,13 +48,13 @@ See where [geothermal energy production happens](http://www.nrel.gov/gis/geother
 
 Solar energy can be generated in two ways: by converting solar radiation into heat and electricity via photovoltaic panels or by using the sun’s radiation to heat a fluid and produce steam for a power generator. California leads the country in producing solar energy, producing [56% of the nation's solar energy in 2015]({{site.baseurl}}/explore/CA/#production), followed by [Arizona, which produced 13%]({{site.baseurl}}/explore/AZ/#production). As of 2014, California is the first state to receive [5% or more of its electricity from solar energy sources](http://www.eia.gov/todayinenergy/detail.cfm?id=20492).
 
-The solar industry has experienced rapid growth in the past decade due to government programs such as tax credits and state renewable portfolio standards, increased public awareness of its environmental benefits, and decreasing technology costs. Manufacturing costs for solar panels have decreased, and private industry has created better batteries to store solar energy. In southwestern states, solar radiation levels are some of the best in the world for solar energy production. Currently, there are [70 pending applications to develop solar energy projects](http://www.blm.gov/wo/st/en/prog/energy/solar_energy.html) on federal lands.
+The solar industry has experienced rapid growth in the past decade due to government programs such as tax credits and state renewable portfolio standards, increased public awareness of its environmental benefits, and decreasing technology costs. Manufacturing costs for solar panels have decreased, and private industry has created better batteries to store solar energy. In southwestern states, solar radiation levels are some of the best in the world for solar energy production.
 
 See [areas of the U.S. with solar energy potential](http://energy.gov/maps/solar-energy-potential).
 
 ### Wind power
 
-Wind power takes advantage of daily wind cycles to rotate wind turbines, which can be clustered together on wind farms. In 2013, wind power accounted for [2% of total U.S. energy production](http://www.eia.gov/totalenergy/data/monthly/pdf/mer.pdf). Texas (44.9 GW hours), Iowa (17.9 GW hours), Oklahoma (14 GW hours), and California (12.3 GW hours) are leading producers.
+Wind power takes advantage of daily wind cycles to rotate wind turbines, which can be clustered together on wind farms. In 2013, wind power accounted for [2% of total U.S. energy production](http://www.eia.gov/totalenergy/data/monthly/pdf/mer.pdf). [Texas]({{site.baseurl}}/explore/CA/#production)    (44.9 GW hours), [Iowa]({{site.baseurl}}/explore/IA/#production) (17.9 GW hours), [Oklahoma]({{site.baseurl}}/explore/OK/#production) (14 GW hours), and [California]({{site.baseurl}}/explore/CA/#production) (12.3 GW hours) are leading producers.
 
 No offshore wind projects have been completed to date. [The National Renewable Energy Laboratory](http://www.nrel.gov/) estimated in 2012 that there is enough wind energy potential offshore to generate [four times the electricity held by the U.S. power grid](http://www.boem.gov/renewable-energy-program/renewable-energy-guide/offshore-wind-energy.aspx). While wind speeds off the Atlantic Coast and in the Gulf of Mexico are lower than in the Pacific, the presence of shallower waters in the Atlantic makes developing wind projects there more affordable in the short term. To date, the Bureau of Ocean Energy Management (BOEM) has issued nine commercial wind energy leases on the Atlantic Outer Continental Shelf, including those offshore of [Delaware, Maryland, Massachusetts, Rhode Island, and Virginia](http://www.boem.gov/Lease-and-Grant-Information/). BOEM expects to hold lease sales for areas offshore of [New Jersey](http://www.boem.gov/State-Activities-New-Jersey/) and [North Carolina](http://www.boem.gov/state-activities-north-carolina/) in the near future and is considering a number of other commercial wind energy planning areas.
 
@@ -65,6 +65,10 @@ See a map of [current wind power capacity](http://apps2.eere.energy.gov/wind/win
 Hydroelectric energy is the country’s oldest and largest source of renewable energy, [supplying 10% of U.S. electricity generation from 1950-2015](https://energy.gov/sites/prod/files/2016/10/f33/Hydropower-Vision-10262016_0.pdf).
 
 Hydroelectric technologies capture the power of flowing water and turn it into electricity. The most common type of hydroelectric power plants are dams that store water in reservoirs. Water released from the reservoir spins a turbine, which in turn activates a generator to produce electricity.
+
+Washington leads in hydroelectric energy, producing [29% of the nation's hydroelectric energy in 2015]({{site.baseurl}}/explore/WA/#production).
+
+The [Bureau of Reclamation](https://www.usbr.gov/), responsible for managing, developing, and protecting waster sources is the second largest producer of hydroelectric power. The Bureau's 53 powerplants bring water to more than 31 million people. Today, it's the largest wholesaler of water in the country.
 
 ### Biomass
 

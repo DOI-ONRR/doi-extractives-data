@@ -58,7 +58,7 @@ selector: list
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Fossil fuels</a></h3>
-          <p>The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
+          <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes.</p>
           <p><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Learn about oil, gas, and coal</a></p>
         </div>
         <div>
@@ -73,7 +73,7 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/forestry/">Forestry</a></h3>
-          <p>The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
+          <p>Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods.</p>
           <p><a href="{{site.baseurl}}/how-it-works/forestry/">Learn about trees</a></p>
         </div>
       </div>

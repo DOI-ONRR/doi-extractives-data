@@ -17,7 +17,7 @@ title_display: Forestry
 selector: list
 ---
 
-Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods. In The U.S., forests cover 766 million acres of land. The greatest concentrations of forests are in the South and Northeast, but Alaska has the largest total forest area of any state.
+Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods. In the U.S., forests cover 766 million acres of land. The greatest concentrations of forests are in the South and Northeast, but Alaska has the largest total forest area of any state.
 
 ## Ownership and governance
 
@@ -25,19 +25,19 @@ Like all land, forests can be publicly or privately owned. Private individuals o
 
 Forests on federal land are governed by the U.S. Service and the Bureau of Land Management (BLM). Forests on tribal lands are governed by the Bureau of Indian Affairs (BIA), tribes themselves, or a combination of both.
 
-## U.S. Forest Service
+### U.S. Forest Service
 
 The [U.S. Forest Service](https://www.fs.fed.us/), part of the Department of Agriculture, manages 191 million acres of national forests across the country. Congress or the Executive Branch has designated 65% of that land for non-timber use because it is protected as wilderness, set aside for other purposes, or cannot be harvested because of environmental conditions. Timber is harvested on some land and companies harvest about 0.5% of trees a year. [The Forest Service has a map of all national forests](https://www.fs.fed.us/ivm/). Today, the Forest Service uses the [Land and Water Conservation Fund (LWCF)](https://www.fs.fed.us/land/staff/LWCF/) to add to national forest lands by purchasing land, water, and wetlands for public benefit.
 
 Extensive planning goes into managing the national forests. [The Forest Service's Citizen's Guide to National Forest Planning details the planning process and its major phases (PDF)](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd520670.pdf).
 
-## Bureau of Land Management (BLM)
+### Bureau of Land Management (BLM)
 
 BLM manages 65 million acres of forests and woodlands across 12 western states and Alaska. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road (CBWR) lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
 
 BLM also manages {{ "public domain lands" | term_end }} that produce timber. BLM manages these lands under Federal Land Management and Policy Act (FLPMA), which includes sustainable forest production.
 
-## Tribal governance
+### Tribal governance
 
 Tribal lands include 18.2 million acres of trust forest acres. [The Forest Service's Tribal Relations site provides information on their work with tribes](https://www.fs.fed.us/spf/tribalrelations/) and an [interactive map of tribal trust lands and tribal lands ceded as part of a treaty](https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=fe311f69cb1d43558227d73bc34f3a32). To learn more about extraction on tribal lands and the trust responsibility of the federal government, read about tribal ownership.
 

@@ -1,5 +1,5 @@
 .filters-wrapper {
-  background-color: $mid-blue;
+  background-color: $blue-cthru;
   margin-left: 0;
   padding: $base-padding;
   width: 100%;
@@ -29,7 +29,7 @@
 }
 
 .filters-wrapper[aria-expanded=true] {
-  background-color: $mid-blue-opaque !important;
+  background-color: $blue-cthru !important;
   height: 100%;
   overflow-y: auto;
   padding-left: $base-padding;
@@ -62,7 +62,7 @@
 
   p {
     @include heading(para-md);
-    color: $blue-alt;
+    color: $blue-dark;
     font-weight: $weight-book;
   }
 }
@@ -72,7 +72,7 @@
 
   label {
     @include heading(para-sm);
-    color: $blue-alt;
+    color: $blue-dark;
     font-weight: $weight-book;
     letter-spacing: 0.7px;
     margin-bottom: 3px;
@@ -165,7 +165,7 @@
 
   &:hover,
   &:focus {
-    background: $light-blue;
+    background: $blue-light;
   }
 }
 

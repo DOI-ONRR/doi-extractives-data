@@ -9,8 +9,8 @@
 // .slab-beta - full width slab of $light-gray
 // .slab-charlie - full width slab of $mid-gray
 // .slab-delta - full width slab of $gray-pale
-// .slab-echo - full width slab of $pale-blue
-// .slab-foxtrot - full width slab of $mid-blue
+// .slab-echo - full width slab of $blue-pale //deprecated
+// .slab-foxtrot - full width slab of $mid-blue //deprecated
 //
 // Markup:
 // <section class="slab {{modifier_class}}">
@@ -47,13 +47,6 @@
   background-color: $gray-pale;
 }
 
-.slab-echo {
-  background-color: $pale-blue;
-}
-
-.slab-foxtrot {
-  background-color: $mid-blue;
-}
 
 .explore_home-img {
   &:hover,

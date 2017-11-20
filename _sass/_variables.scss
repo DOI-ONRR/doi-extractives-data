@@ -44,10 +44,10 @@ $gray-lighter: #ebf3f7;
 $gray-light: #d3dfe6;
 $gray: #a7bcc7;
 $gray-dark: #768d99;
-$gray-darker: #5c7380;
+$gray-darker: #5C737F;
 $gray-darkest: #435159;
 $black-light: #323c42;
-$black: #1d2326;
+$black: #1c2326;
 
 // map to deprecated values
 $light-gray-light: $gray-pale;
@@ -63,16 +63,14 @@ $black: $black;
 $blackest-black: $black;
 
 // v3
-$green: #9fa63b;
 $blue: #1478a6;
+$blue-dark: #086996; //darker link color for use over $blue-cthru, for accessibility
 $blue-contrast: #096fa0;
-$light-green: #d2e2cb;
-$blue-alt: darken($blue, 5%); //for constrast, darker
-$light-blue: #e3f8ff;
-$pale-blue: #f0fcff;
-$mid-blue: #c9eeff;
-$mid-blue-opaque: rgba(198, 233, 255, 0.93);
+$blue-light: #dcf4fd;
+$blue-lighter: #f2fdff;
+$blue-cthru: rgba(198, 233, 255, 0.93);
 $dark-blue: #4b9bbf;
+$light-green: #d2e2cb;
 
 // State pages
 $green-land: #69995a;
@@ -94,7 +92,6 @@ $cobalt: #1075a5;
 
 // Font Colors
 $base-font-color: $black-light;
-$base-accent-color: $mid-blue;
 
 // Padding
 $base-padding: 1.25em; //20px

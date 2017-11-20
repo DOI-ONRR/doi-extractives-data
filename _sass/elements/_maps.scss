@@ -151,7 +151,7 @@ svg.ownership {
 
   &.no-outlines {
     @include svg-use('.states.mesh') {
-      stroke: $pale-blue;
+      stroke: $gray-pale;
       stroke-width: 1.5px;
     }
 
@@ -185,7 +185,7 @@ svg.case_studies {
 
   &.no-outlines {
     @include svg-use('.states.mesh') {
-      stroke: $pale-blue;
+      stroke: $gray-pale;
       stroke-width: 1.5px;
     }
 

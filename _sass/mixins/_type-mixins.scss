@@ -11,16 +11,14 @@
   font-size: $base-font-size;
 
   @if $level == h1 {
-    // bold 38/48
     color: $black;
-    font-size: 2.375rem; // 38px
+    font-size: 2.125rem; // 34px
     font-weight: $weight-bold;
-    line-height: 3rem; // 48px
+    line-height: 2.875rem; // 46px
   }
 
   @if $level == h2 {
-    // light 30/38.4
-    color: $gray-darkest;
+    color: $gray-darker;
     font-size: 1.625rem; // 30px
     font-weight: $weight-bold;
     line-height: 2rem; // 38.4px
@@ -28,7 +26,6 @@
   }
 
   @if $level == h3 {
-    // bold 21/29
     color: $black;
     font-size: 1.3125rem; // 21px
     font-weight: $weight-bold;
@@ -37,7 +34,6 @@
   }
 
   @if $level == h4 {
-    // light 22/32
     color: $black;
     font-size: 1.375rem; // 22px
     font-weight: $weight-light;

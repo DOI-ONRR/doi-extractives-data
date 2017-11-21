@@ -31,7 +31,7 @@
   margin-top: $base-padding-lite;
 
   ul li {
-    font-weight: 200;
+    font-weight: $weight-light;
     margin-bottom: 40px;
 
     .headline {
@@ -42,7 +42,7 @@
     .subtitle {
       @include font-size(0.9);
       color: $dark-gray;
-      font-weight: 200;
+      font-weight: $weight-light;
       line-height: 1;
 
       // &::before {
@@ -54,7 +54,7 @@
 
   h4 {
     color: $dark-gray;
-    font-weight: 200;
+    font-weight: $weight-light;
   }
 }
 

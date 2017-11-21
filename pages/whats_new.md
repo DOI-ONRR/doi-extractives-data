@@ -11,6 +11,8 @@ This site launched in December 2015 with the full data and contextual informatio
 
 This version of the site includes new content, new state-level datasets, and completely new ways of exploring all data.
 
+Test for github training!
+
 ## State and national profile pages
 
 In our research, users looked for information about their state and expressed interest in seeing data about their area across multiple datasets. New regional profile pages provide a more complete picture of extractive industries at the national and subnational levels. To see how this works, explore:

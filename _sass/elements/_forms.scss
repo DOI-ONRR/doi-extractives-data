@@ -102,7 +102,7 @@ input[type='file'] {
 select {
   @include appearance(none);
 
-  background-color: $blue-lighter;
+  background-color: $gray-pale;
   background-image: url('../img/icons/chevron-down-sprite.svg');
   background-position: 95% 8%;
   background-repeat: no-repeat;

@@ -140,13 +140,13 @@ header,
 }
 
 .header-nav_item_link {
-  @include font-size(0.8375);
+  @include font-size(.875);
   color: $dark-gray;
   font-weight: $weight-light;
   text-decoration: none;
 
   @include respond-to(large-up) {
-    @include font-size(0.9375);
+    @include font-size(1);
   }
 
   &:hover,

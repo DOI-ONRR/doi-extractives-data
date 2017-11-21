@@ -4,6 +4,8 @@ layout: content
 permalink: /how-it-works/fossil-fuels/
 nav_description: Jump to a section
 nav_items:
+  - name: introduction
+    title: Top
   - name: fossil-fuels
     title: Fossil fuels
   - name: oil

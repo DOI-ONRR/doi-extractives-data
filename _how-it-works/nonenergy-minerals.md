@@ -4,6 +4,8 @@ layout: content
 permalink: /how-it-works/nonenergy-minerals/
 nav_description: Jump to a section
 nav_items:
+  - name: introduction
+    title: Top
   - name: nonenergy-minerals
     title: Nonenergy minerals
   - name: gold

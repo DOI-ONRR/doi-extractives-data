@@ -4,6 +4,8 @@ layout: content
 permalink: /how-it-works/renewables/
 nav_description: Jump to a section
 nav_items:
+  - name: introduction
+    title: Top
   - name: renewable-energy
     title: Renewable energy
   - name: geothermal-energy

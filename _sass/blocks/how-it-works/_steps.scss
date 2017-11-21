@@ -8,47 +8,27 @@
 
   @include respond-to(medium-down) {
 
-    @include heading(h4);
+    @include heading(h3);
 
   }
 
-  @include respond-to(tiny-down) {
+  @include heading(h2);
 
-    @include heading(h5);
-
-    font-weight: $weight-light;
-  }
-
-  @include heading(h1);
-
-  color: $red;
   display: inline;
-  font-weight: $weight-light;
   padding-right: 8px;
 }
 
 .revenues_steps-number {
 
-  @include respond-to(tiny-down) {
-    @include font-size(1.125);
-    padding-left: 14px;
-  }
-
-  @include respond-to(medium-down) {
-    @include font-size(1.5);
-    padding-right: 15px;
-  }
-
-  @include font-size(1.8);
+  @include heading(h3);
 
   background-color: $white;
   border-radius: 50%;
-  color: $dark-gray;
   display: inline-block;
-  height: 43px;
-  padding-right: 13px;
-  padding-top: 10px;
-  width: 43px;
+  height: 38px;
+  padding-right: 10px;
+  padding-top: 2px;
+  width: 38px;
 }
 
 .revenues_steps-group {

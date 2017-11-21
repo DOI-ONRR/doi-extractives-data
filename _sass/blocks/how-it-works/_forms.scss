@@ -8,16 +8,10 @@
   padding-bottom: ($base-padding-extra * 1.5);
   padding-top: ($base-padding-extra * 1.5);
 
-  h1 {
-    color: $light-black;
-  }
-
   h2 {
     border-bottom: 5px solid darken($mid-gray, 20%);
-    font-size: 36px;
-    font-size: 2.25rem;
-    margin-bottom: $base-padding-lite;
-    padding-bottom: $base-padding-lite;
+    margin-bottom: $standard-padding-standard;
+    padding-bottom: $standard-padding-lite;
   }
 
   @include respond-to(small-up) {
@@ -54,9 +48,8 @@
 .revenues_page-forms_numbers_last {
 
   span {
-    @include heading(h1);
-    font-weight: $weight-light;
-    line-height: 1.2;
+    @include heading(h5);
+    line-height: 1.375rem;
   }
 }
 

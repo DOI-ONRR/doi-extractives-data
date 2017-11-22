@@ -27,7 +27,7 @@ Forests are an important part of our ecosystems. They provide timber, store carb
 
 ## Ownership and governance
 
-Like all land, forests can be publicly or privately owned. Private individuals or organizations, such as corporations, non-profits, and tribes. The remaining 42% are publicly owned by federal, state, and local governments.
+Like all land, forests can be publicly or privately owned. Private individuals or organizations, such as corporations, non-profits, and tribes own 58% of forests. The remaining 42% are publicly owned by federal, state, and local governments.
 
 Forests on federal land are governed by the U.S. Service and the Bureau of Land Management (BLM). Forests on tribal lands are governed by the Bureau of Indian Affairs (BIA), tribes themselves, or a combination of both.
 

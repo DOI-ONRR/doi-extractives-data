@@ -6,8 +6,8 @@
 // By default is a neutral background.
 //
 // .slab-alpha - full width slab of $white
-// .slab-beta - full width slab of $light-gray
-// .slab-charlie - full width slab of $mid-gray
+// .slab-beta - full width slab of $gray-pale
+// .slab-charlie - full width slab of $gray-light
 // .slab-delta - full width slab of $gray-pale
 // .slab-echo - full width slab of $blue-pale //deprecated
 // .slab-foxtrot - full width slab of $mid-blue //deprecated
@@ -24,15 +24,15 @@
 }
 
 .slab-beta {
-  background-color: $light-gray;
+  background-color: $gray-pale;
 }
 
 .slab-beta-light {
-  background-color: $light-gray-light; //slightly lighter, for contrast
+  background-color: $gray-pale; //slightly lighter, for contrast
 }
 
 .slab-beta-mid {
-  background-color: $light-gray-dark; //slightly darker, for contrast
+  background-color: $gray-lighter; //slightly darker, for contrast
 }
 
 .slab-beta-dark {
@@ -40,7 +40,7 @@
 }
 
 .slab-charlie {
-  background-color: $mid-gray;
+  background-color: $gray-light;
 }
 
 .slab-delta {

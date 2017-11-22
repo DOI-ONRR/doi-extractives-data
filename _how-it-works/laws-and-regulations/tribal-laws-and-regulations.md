@@ -36,13 +36,6 @@ revenue_types:
 
 {% include selector.html %}
 
-The federal government formally recognizes 566 Indian tribes and 325 Indian reservations that cover [56 million acres of land](http://www.blm.gov/public_land_statistics/pls13/pls2013.pdf). This land is held in trust by DOI and has [significant natural resource extraction potential](http://www.resourcegovernance.org/sites/default/files/RWI_Native_American_Lands_2011.pdf), containing up to 30% of U.S. coal reserves west of the Mississippi, 50% of potential uranium reserves, and 20% of known oil and gas reserves. Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.
-
-## Federal obligations
-
-The basis of the regulatory relationship between Indian tribes and the federal government was established in the Commerce Clause of the U.S. Constitution (Article 1, Section 8, Clause 3). This relationship, as it pertains to land use and ownership, was clarified in the 1830s. In a series of Supreme Court decisions known as the Marshall Trilogy, former Supreme Court Justice John Marshall established several important principles of Indian law.
-
-One was the federal Indian trust responsibility, whereby the government charged itself with “[moral obligations of the highest responsibility and trust](http://www.bia.gov/FAQs/index.htm)” toward Indian tribes. In this capacity, the U.S. Government maintains fiduciary responsibility to protect tribal assets and resources and serves as a trustee for Indian lands. Another was the principle that tribes are sovereign, which is inherent to them as the original governing bodies of what is now the United States, and that sovereignty can only be diminished by Congress.
 
 ## Leasing process
 

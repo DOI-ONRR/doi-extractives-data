@@ -31,10 +31,10 @@
   }
 
   &.active {
-    border-color: $dark-blue;
+    border-color: $blue;
 
     a {
-      color: $dark-blue;
+      color: $blue;
       font-weight: $weight-bold;
     }
   }
@@ -46,4 +46,3 @@
     text-align: left;
   }
 }
-

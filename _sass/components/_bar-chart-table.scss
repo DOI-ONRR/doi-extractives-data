@@ -69,11 +69,11 @@
       font-weight: $weight-bold;
 
       &.text-header-first {
-        color: $green-dark;
+        color: $green;
       }
 
       &.text-header-second {
-        color: $green-darkest;
+        color: $green-dark;
       }
 
       &.text-header-third {
@@ -90,11 +90,11 @@
         }
 
         .bar:nth-child(1) {
-          background-color: $green-darker;
+          background-color: $green;
         }
 
         .bar:nth-child(2) {
-          background-color: $green-darkest;
+          background-color: $green-dark;
         }
 
         .bar:nth-child(3) {
@@ -109,7 +109,7 @@
       height: 1em;
 
       .bar {
-        background-color: $green-darker;
+        background-color: $green;
       }
     }
 

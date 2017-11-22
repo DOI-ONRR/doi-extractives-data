@@ -29,7 +29,7 @@ h2,
 }
 
 @mixin h2-bar {
-  border-bottom: 10px solid $light-green;
+  border-bottom: 10px solid $green-light;
   padding-bottom: $standard-padding-small;
 }
 
@@ -43,7 +43,7 @@ h3,
 }
 
 @mixin h3-bar {
-  border-bottom: 2px solid $light-green;
+  border-bottom: 2px solid $green-light;
   margin-bottom: $base-padding-base;
   padding-bottom: $standard-padding-lite;
 }

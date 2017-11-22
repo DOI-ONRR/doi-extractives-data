@@ -68,15 +68,13 @@
 }
 
 .filters {
-  color: $dark-blue;
+  color: $blue-dark;
 
   label {
-    @include heading(para-sm);
+    @include heading(para-md);
     color: $blue-dark;
-    font-weight: $weight-book;
-    letter-spacing: 0.7px;
-    margin-bottom: 3px;
-    text-transform: uppercase;
+    font-weight: $weight-bold;
+    margin-bottom: 6px;
   }
 }
 

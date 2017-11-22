@@ -1,5 +1,5 @@
 .region-header {
-  border-bottom: 1px solid $mid-gray;
+  border-bottom: 1px solid $gray-light;
   border-top: none;
   font-weight: $weight-bold;
   margin-bottom: 0;
@@ -13,7 +13,7 @@
 
 .region-header-category {
   @include heading(para-md);
-  border-bottom: 1px solid $neutral-gray;
+  border-bottom: 1px solid $gray-light;
   font-weight: $weight-book;
   margin-bottom: $base-padding-lite;
   margin-top: $base-padding-extra;
@@ -54,7 +54,7 @@
 
   td,
   th {
-    border-top: 1px solid $neutral-gray;
+    border-top: 1px solid $gray-light;
     padding-left: $base-padding-lite;
     padding-right: $base-padding-lite;
     text-align: left;
@@ -164,7 +164,7 @@
     padding-right: 0;
 
     eiti-bar .eiti-bar-bar {
-      background: $mid-gray;
+      background: $gray-light;
     }
   }
 
@@ -215,7 +215,7 @@
 }
 
 .material-variance {
-  border-right: 2px solid $neutral-gray;
+  border-right: 2px solid $gray-light;
 }
 
 .threshold {
@@ -231,7 +231,7 @@
   }
 
   tr:first-of-type {
-    border-top: 1px solid $neutral-gray;
+    border-top: 1px solid $gray-light;
   }
 }
 

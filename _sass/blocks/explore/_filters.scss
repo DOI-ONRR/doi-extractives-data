@@ -22,7 +22,7 @@
 
 @include respond-to(medium-up) {
   .filters-wrapper[aria-expanded=false] {
-    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom: 2px solid lighten($gray-light, 5%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -210,7 +210,7 @@
 }
 
 .filter-search {
-  border-color: $dark-gray;
+  border-color: $gray-darkest;
   padding-left: $base-padding-lite;
   padding-right: $base-padding-lite;
 

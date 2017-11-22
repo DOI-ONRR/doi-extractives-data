@@ -42,7 +42,7 @@ select {
 }
 
 label {
-  color: $dark-gray;
+  color: $gray-darkest;
   margin-bottom: $base-line-height / 4;
 
   &.required:after {
@@ -60,7 +60,7 @@ select[multiple=multiple] {
   font-size: $base-font-size;
 
   @include placeholder {
-    color: $dark-gray;
+    color: $gray-darkest;
     font-weight: $weight-book;
     opacity: 1;
   }
@@ -109,7 +109,7 @@ select {
   background-size: 1.5rem;
   border: 0;
   border-radius: $form-border-radius;
-  color: $dark-gray;
+  color: $gray-darkest;
   font-weight: $weight-light;
   height: 40px;
   margin-bottom: 1em;

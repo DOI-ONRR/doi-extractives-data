@@ -12,24 +12,24 @@ footer,
 .footer-para_callout,
 .footer-social {
   @include heading(para-md);
-  color: $mid-gray;
+  color: $gray-light;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 footer,
 .footer {
-  background-color: $light-black;
+  background-color: $black-light;
   margin-bottom: 0;
   padding-bottom: ($base-padding-extra * 1.5);
   padding-top: ($base-padding-extra * 1.5);
 
   // .fa-circle {
-  //   color: $neutral-gray;
+  //   color: $gray-light;
   // }
   //
   // .fa-inverse {
-  //   color: $light-black;
+  //   color: $black-light;
   // }
 }
 
@@ -115,21 +115,21 @@ footer,
 }
 
 .footer-downloads {
-  border-top: 1px $dark-gray solid;
+  border-top: 1px $gray-darkest solid;
   font-weight: $weight-book;
   margin-top: 33px;
   padding-top: 29px;
 
   icon {
     @include heading(para-lg);
-    color: $mid-gray;
+    color: $gray-light;
   }
 }
 
 .footer-bottom {
   @include span-columns(12);
   @include heading(para-md);
-  border-top: 1px $dark-gray solid;
+  border-top: 1px $gray-darkest solid;
   margin-top: $base-padding;
   padding-top: $base-padding;
 

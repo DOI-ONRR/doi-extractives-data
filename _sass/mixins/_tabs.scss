@@ -2,11 +2,11 @@
   text-decoration: none;
 
   @if $color == 'info' {
-    background-color: $mid-light-gray;
-    border: 2px solid $mid-light-gray;
+    background-color: $gray-light;
+    border: 2px solid $gray-light;
   } @else {
     background-color: $white;
-    border: 1px solid $neutral-gray;
+    border: 1px solid $gray-light;
     border-bottom: 1px solid $white;
     color: $base-font-color;
   }

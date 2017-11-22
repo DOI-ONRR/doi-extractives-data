@@ -60,7 +60,7 @@
   }
 
   &[data-active=true] {
-    color: $dark-gray;
+    color: $gray-darkest;
     font-weight: $weight-book;
 
     + ul {
@@ -74,7 +74,7 @@
 }
 
 .sticky_nav-nav_item-sub {
-  border-left: 3px solid $neutral-gray;
+  border-left: 3px solid $gray-light;
   font-size: 0.8125rem;
   padding-left: 0.5em;
 

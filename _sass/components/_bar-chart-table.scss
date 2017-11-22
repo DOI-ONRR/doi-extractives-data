@@ -12,7 +12,7 @@
   }
 
   .bar {
-    background: $light-gray;
+    background: $gray-pale;
   }
 
   .numberless[data-value] {
@@ -43,7 +43,7 @@
   }
 
   .swatch {
-    background: $neutral-gray;
+    background: $gray-light;
     display: inline-block;
     height: 0.75rem;
     margin-right: $standard-padding-lite;
@@ -86,7 +86,7 @@
         display: flex;
 
         .bar {
-          border-right: 1px solid $neutral-gray;
+          border-right: 1px solid $gray-light;
         }
 
         .bar:nth-child(1) {

@@ -116,7 +116,7 @@
   @include heading('para-md');
 
   background-color: $gray-light;
-  color: $dark-gray;
+  color: $gray-darkest;
   font-weight: $weight-book;
   margin-bottom: 0;
   padding-bottom: $base-padding;
@@ -126,7 +126,7 @@
   text-align: center;
 
   a {
-    color: $dark-gray;
+    color: $gray-darkest;
   }
 
   label {

@@ -55,7 +55,7 @@
 
   p {
     @include heading('para-md');
-    color: $light-black;
+    color: $black-light;
     margin-bottom: 0;
 
     + p {
@@ -80,7 +80,7 @@
     max-height: 100%;
 
     path {
-      fill: $neutral-gray;
+      fill: $gray-light;
     }
   }
 

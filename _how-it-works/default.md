@@ -74,7 +74,7 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/forestry/">Forestry</a></h3>
           <p>Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/forestry/">Learn about trees</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/forestry/">Learn about forests</a></p>
         </div>
       </div>
     </section>

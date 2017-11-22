@@ -77,4 +77,4 @@ The state portion of national forest receipts constitutes the largest dedicated 
 
 BLM also collects revenues from the sale of timber. Most BLM timber sales come from Oregon and California lands. BLM deposits timber sale receipts into either the Timber Sale Pipeline Restoration Fund (TSPRF) or the Forest Ecosystem Health and Recovery Fund (FEHRF). Both of these funds are revolving accounts where receipts are used to prepare timber sales that meet legislative objectives.
 
-BLM revenue distributions vary depending on whether or not they come from public domain lands, Oregon and California lands, or CBWR lands and what funding source was used to prepare the timber sale. BLM produces an annual statistics report that documents distributions.
+BLM revenue distributions vary depending on whether or not they come from public domain lands, Oregon and California lands, or CBWR lands and what funding source was used to prepare the timber sale. [BLM publishes annual statistics reports that documents distributions in greater detail](https://www.blm.gov/public_land_statistics/).

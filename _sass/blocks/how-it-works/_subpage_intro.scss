@@ -9,7 +9,7 @@
 
   &.renewables {
 
-    background: $putty;
+    background: $gray-pale;
 
     @include respond-to(medium-up) {
       background: url('../img/how-it-works/renewables-bg-gradient.png') top left repeat-x;

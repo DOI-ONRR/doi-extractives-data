@@ -39,7 +39,7 @@ Extensive planning goes into managing the national forests. [The Forest Service'
 
 ### Bureau of Land Management (BLM)
 
-BLM manages 65 million acres of forests and woodlands across 12 western states and Alaska. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road (CBWR) lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
+BLM manages 65 million acres of forests and woodlands across 12 western states and Alaska. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
 
 BLM also manages {{ "public domain lands" | term_end }} that produce timber. BLM manages these lands under Federal Land Management and Policy Act (FLPMA), which includes sustainable forest production.
 
@@ -77,4 +77,6 @@ The state portion of national forest receipts constitutes the largest dedicated 
 
 BLM also collects revenues from the sale of timber. Most BLM timber sales come from Oregon and California lands. BLM deposits timber sale receipts into either the Timber Sale Pipeline Restoration Fund (TSPRF) or the Forest Ecosystem Health and Recovery Fund (FEHRF). Both of these funds are revolving accounts where receipts are used to prepare timber sales that meet legislative objectives.
 
-BLM revenue distributions vary depending on whether or not they come from public domain lands, Oregon and California lands, or CBWR lands and what funding source was used to prepare the timber sale. [BLM publishes annual statistics reports that documents distributions in greater detail](https://www.blm.gov/public_land_statistics/).
+BLM revenue distributions vary depending on whether or not they come from public domain lands, Oregon and California lands, or Coos Bay Wagon Road lands and what funding source was used to prepare the timber sale. [BLM publishes annual statistics reports that documents distributions in greater detail](https://www.blm.gov/public_land_statistics/).
+
+Both BLM and the Forest Service distribute funds under the Secure Rural Schools and Community Self-Determination Act (SRSA) to reduce the impact from a reduction in timber sale receipts. Counties can elect to receive a payment calculated under a different formula and eligible to be spent public schools, special projects within the national forests, and projects related to minimizing wildfire risk. To read more about these payments, [BLM provides information on distribution under SRSA to Oregon and California lands](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands). 

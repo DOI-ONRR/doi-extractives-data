@@ -18,7 +18,7 @@
   {% assign _height = _viewbox_list[3] %}
   {% assign breakpoint_height = _viewbox_list[3] | times: 2.5 %}
   {% capture is_wide %}
-    {% if breakpoint_width > breakpoint_height %}wide{% endif %}
+    wide
   {% endcapture %}
   {% assign is_wide = is_wide | strip %}
 {% endif %}

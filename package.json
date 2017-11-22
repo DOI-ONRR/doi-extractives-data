@@ -18,7 +18,7 @@
     "restart": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
-    "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
+    "test-ruby": "bundle exec rubydoctest _plugins/data.rb",
     "webpack": "webpack",
     "update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
     "js-dev-start": "rm -rf js/lib && npm run watch-webpack",

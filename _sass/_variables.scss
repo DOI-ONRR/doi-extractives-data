@@ -49,19 +49,6 @@ $gray-darkest: #435159;
 $black-light: #323c42;
 $black: #1c2326;
 
-// map to deprecated values
-$light-gray-light: $gray-pale;
-$light-gray: $gray-pale;
-$light-gray-dark: $gray-lighter;
-$mid-gray: $gray-light;
-$mid-light-gray: $gray-light;
-$neutral-gray: $gray-light;
-$another-gray: $gray-dark;
-$dark-gray: $gray-darkest;
-$light-black: $black-light;
-$black: $black;
-$blackest-black: $black;
-
 // Blues
 $blue-lighter: #f2fdff; //not currently in use, sb applied to blue-filter selectors
 $blue-light: #dcf4fd;
@@ -113,7 +100,7 @@ $standard-padding-separation: 6rem;
 $page-padding: 5vw;
 
 // Link Colors
-$base-link-color: $dark-gray;
+$base-link-color: $gray-darkest;
 
 // Buttons
 $primary-button-bg-color: $blue;
@@ -122,17 +109,17 @@ $primary-button-color: $white;
 $primary-hover-button-color: $white;
 $secondary-button-bg-color: $white;
 $secondary-hover-button-bg-color: $white;
-$secondary-button-color: $dark-gray;
-$secondary-hover-button-color: $dark-gray;
-$secondary-button-border-color: $mid-gray;
-$tertiary-button-bg-color: $mid-gray;
+$secondary-button-color: $gray-darkest;
+$secondary-hover-button-color: $gray-darkest;
+$secondary-button-border-color: $gray-light;
+$tertiary-button-bg-color: $gray-light;
 
 // Radius
 $base-border-radius: 5px;
 $small-border-radius: 3px;
 
 // Border
-$base-border-color: $light-black;
+$base-border-color: $black-light;
 $thin-border-size: 1px;
 $regular-border-size: 3px;
 $thick-border-size: 8px;

@@ -9,7 +9,7 @@
   padding-top: ($base-padding-extra * 1.5);
 
   h2 {
-    border-bottom: 5px solid darken($gray-light, 20%);
+    border-bottom: 5px solid $gray;
     margin-bottom: $standard-padding-standard;
     padding-bottom: $standard-padding-lite;
   }

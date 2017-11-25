@@ -9,6 +9,8 @@ nav_items:
     title: Natural resource ownership
   - name: laws
     title: Laws and regulations
+  - name: tribal-overview
+    title: Tribal overview
   - name: process
     title: Resources to revenue
     subnav_items:
@@ -54,7 +56,6 @@ selector: list
     </section>
     <section class="container">
       <h2 id="ownership" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
-      <p class="landing-intro_link">The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron).</p>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Fossil fuels</a></h3>
@@ -104,10 +105,33 @@ selector: list
       </div>
     </section>
     <section class="container">
+      <h2 id="tribal-overview" class="h2-bar">How are natural resources on tribal land governed?</h2>
+      <div class="container landing-section">
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-ownership-and-governance/">Ownership and governance</a></h3>
+          <p>Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-ownership-and-governance/">Learn about governance on tribal land</a></p>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-production/">Production</a></h3>
+          <p>Extracting natural resources on tribal land involves unique processes and multiple stakeholders.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-production/">Learn about production on tribal land</a></p>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and OST disbursed $560.4 million to tribes and allottees.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
+        </div>
+        <div>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-economic-impact/">Economic impact</a></h3>
+          <p>Extraction affects tribal economies in a number of ways, though effects vary widely depending on the level of extraction on and details of lease agreements.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-economic-impact/">Learn about economic impact</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
       <h3 id="production" class="h3-bar">Production</h3>
-      <p class="landing-intro_link">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
-      <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
       <div class="container landing-section landing-section-with-graphics">
         <div class="landing-oil_gas">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a>{% include svg/how-main-icon-oil.svg %}</h4>

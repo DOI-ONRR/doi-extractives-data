@@ -37,21 +37,9 @@ revenue_types:
 {% include selector.html %}
 
 
-## Leasing process
-
-Today, there are [two major types of Indian-owned land](http://teeic.indianaffairs.gov/triballand/):
-
-* Trust land, in which the federal government holds legal title, but the beneficial interest remains with individual or tribe. Trust lands held on behalf of individuals are known as allotments.
-* Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority
-
-These lands yield natural resources through a process governed primarily by the tribes themselves and four agencies within DOI. When a tribe initiates the leasing process, BIA or the tribe itself negotiates the lease sale, sets royalty rates and rental amounts, and issues the lease. If the tribe negotiates the lease, the BIA will approve the final negotiated deal. For an allotment owned by an individual, the BIA holds a bidding process to ensure the best return for the allottee. Once a contract is signed, BLM inspects the lease and helps prepare production and mining plans.
-
-ONRR collects royalties from extractive companies and reviews monthly revenue and production reports to ensure accuracy. ONRR also performs lease audits to ensure royalties are correctly paid.
-
-The Office of the Special Trustee for American Indians (OST) receives the payments and information from ONRR and [disburses 100% of the funds to the owner of the land (PDF)](http://www.onrr.gov/IndianServices/pdfdocs/FrequentlyAskedQuestion.pdf), whether that is an individual or a tribe.
-
-
 ## Revenue from natural resources on Indian land
+
+Natural resources are increasingly a key source of income for many American Indian tribes. **In FY 2016, ONRR and {{ "OST" | term }} disbursed [$560.4 million to American Indian tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx).** 
 
 Much like [federal revenue]({{ site.baseurl }}/explore/#revenue), revenue from natural resource extraction on tribal land is collected in each phase of the production process (for instance, companies pay bonuses to secure rights, rents during exploration, and royalties once production begins).
 

@@ -4,6 +4,8 @@ layout: content
 permalink: /how-it-works/tribal-ownership-governance/
 nav_description: Jump to a section
 nav_items:
+  - name: introduction
+    title: Top
   - name: land-ownership
     title: Land ownership
   - name: natural-resource-ownership
@@ -34,7 +36,12 @@ selector: list
 
 ## Land ownership
 
-Ownership of {{ "Indian lands" | term }} involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Indian lands and distributing the associated revenue necessitates the use of unique processes involving multiple stakeholders.
+Ownership of {{ "Indian lands" | term }} involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.
+
+Today, there are [two major types of Indian land](http://teeic.indianaffairs.gov/triballand/):
+
+* {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with individual or tribe. Trust lands held on behalf of individuals are known as allotments.
+* Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority.
 
 In general, most Indian lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land (PDF)](http://www.blm.gov/public_land_statistics/pls13/pls2013.pdf) are held in trust by the United States for various Indian tribes and individuals.
 
@@ -60,7 +67,7 @@ For an overview of the foundational laws, regulations, and court cases governing
 
 ### General Allotment Act of 1887 (The Dawes Act)
 
-To understand current land ownership of tribal and individual Indian land, one must begin with the history of allotment on Indian Reservations. During the Allotment Era of the late 1800s and early 1900s, the federal government parceled out millions of acres of tribal lands to individual Indians in an effort to break up Indian reservations.
+To understand current ownership of {{ "Indian lands" | term_end }}, one must begin with the history of allotment on Indian Reservations. During the Allotment Era of the late 1800s and early 1900s, the federal government parceled out millions of acres of tribal lands to individual Indians in an effort to break up Indian reservations.
 
 While the practice of allotting tribal land to individual Indians began in the 18th century, it was not in widespread use until the late 19th century when passage of the General Allotment Act of 1887, also known as the Dawes Act, greatly expanded the practice. This expansion would have devastating consequences for Indians.
 
@@ -68,9 +75,9 @@ Under the Dawes Act and other tribe-specific allotment acts, the federal governm
 
 Once out of trust, however, the land became subject to state and local taxation, the costs of which led thousands of acres of Indian land to pass out of Indian hands once the trust status was lifted. Furthermore, non-allotted lands were often declared “surplus land” by the federal government, which opened them to homesteaders, thereby accelerating the loss of Indian land to non-Indians.
 
-The policy of allotment dramatically reduced the amount of land owned by tribes. In 1887, tribes held 138 million acres. Just forty-seven years later, in 1934, they owned 48 million acres. To stop the loss of Indian land, the federal government ended the allotment policy in 1934 and extended the trust period indefinitely. Today, allotments are still held in trust by the federal government for the beneficial Indian owner. 
+The policy of allotment dramatically reduced the amount of land owned by tribes. In 1887, tribes held 138 million acres. Just forty-seven years later, in 1934, they owned 48 million acres. To stop the loss of Indian land, sthe federal government ended the allotment policy in 1934 and extended the trust period indefinitely. Today, allotments are still held in trust by the federal government for the beneficial Indian owner. 
 
-In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native-Americans. As the original recipients of allotments died their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as {{ "fractionation" | term_end }}.
+In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native Americans. As the original recipients of allotments died their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as {{ "fractionation" | term_end }}.
 
 In many cases, ownership of allotted lands continued to divide over multiple generations so that today, individual parcels sometimes have more than 100 co-owners. Fractionation [limits economic development on reservations](https://aspe.hhs.gov/report/overcoming-challenges-business-and-economic-development-indian-country/impact-historical-events-tribal-bded), including resource extraction, and can divide lease income among co-owners so that individuals receive just a few cents based on their share.
 

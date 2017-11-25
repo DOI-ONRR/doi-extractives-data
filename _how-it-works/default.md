@@ -186,6 +186,16 @@ selector: list
           <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
           <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
         </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Leasing process: offshore oil, gas, and sulphur</a></h4>
+          <p>Understand the details of the leasing process for offshore liquid minerals.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Learn about offshore leases</a></p>
+        </div>
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Leasing process: onshore oil and gas</a></h4>
+          <p>Understand the details of the leasing process for onshore liquid minerals.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Learn about onshore leases</a></p>
+        </div>
       </div>
     </section>
     <section class="container">

@@ -70,7 +70,7 @@ Hydroelectric technologies capture the power of flowing water and turn it into e
 
 Washington leads in hydroelectric energy, producing [29% of the nation's hydroelectric energy in 2015]({{site.baseurl}}/explore/WA/#production).
 
-The [Bureau of Reclamation](https://www.usbr.gov/), responsible for managing, developing, and protecting waster sources is the second largest producer of hydroelectric power. The Bureau's 53 powerplants bring water to more than 31 million people. Today, it's the largest wholesaler of water in the country.
+The [Bureau of Reclamation](https://www.usbr.gov/), responsible for managing, developing, and protecting water sources is the second largest producer of hydroelectric power. The Bureau's 53 powerplants bring water to more than 31 million people. Today, it's the largest wholesaler of water in the country.
 
 ### Biomass
 

@@ -59,7 +59,7 @@ Timber production is defined and measured in a few ways: shape (roundwood), inte
 
 Most timber production occurs on private forests. More than 90% of wood and paper products produced in the U.S. comes from private forests. The majority of federal timber production occurs in the national forests and is managed by the Forest Service. National forests provide less than 2% of wood and paper products.
 
-Forests also produce non-timber products. According to the Forest Service, there are four categories: edible (mushrooms and berries), speciality wood products (furniture), floral and decorative (dried flowers), and dietary supplements (ginseng).
+Forests also produce non-timber products. According to the Forest Service, there are four categories: edible (mushrooms and berries), specialty wood products (furniture), floral and decorative (dried flowers), and dietary supplements (ginseng).
 
 ## Revenue
 
@@ -79,4 +79,4 @@ BLM also collects revenues from the sale of timber. Most BLM timber sales come f
 
 BLM revenue distributions vary depending on whether or not they come from public domain lands, Oregon and California lands, or Coos Bay Wagon Road lands and what funding source was used to prepare the timber sale. [BLM publishes annual statistics reports that documents distributions in greater detail](https://www.blm.gov/public_land_statistics/).
 
-Both BLM and the Forest Service distribute funds under the Secure Rural Schools and Community Self-Determination Act (SRSA) to reduce the impact from a reduction in timber sale receipts. Counties can elect to receive a payment calculated under a different formula and eligible to be spent public schools, special projects within the national forests, and projects related to minimizing wildfire risk. To read more about these payments, [BLM provides information on distribution under SRSA to Oregon and California lands](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands). 
+Both BLM and the Forest Service distribute funds under the Secure Rural Schools and Community Self-Determination Act (SRSA) to reduce the impact from a reduction in timber sale receipts. Counties can elect to receive a payment calculated under a different formula and eligible to be spent public schools, special projects within the national forests, and projects related to minimizing wildfire risk. To read more about these payments, [BLM provides information on distribution under SRSA to Oregon and California lands](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).

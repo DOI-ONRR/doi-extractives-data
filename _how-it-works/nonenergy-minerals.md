@@ -76,4 +76,4 @@ Silver is a metal that has been used for thousands of years. It has the highest 
 
 ### Molybdenum
 
-Molybdenum is extraordinarily resistant to heat and wear. It is typically used as an mixing agent in steel, cast iron, and superalloys to enhance hardenability, strength, toughness, and corrosion resistance. It plays a versatile and significant role in industrial technology and is also used in chemical applications such as catalysts, lubricants, and pigments. [Read more about molybdenum from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/molybdenum/).
+Molybdenum is extraordinarily resistant to heat and wear. It is typically used as a mixing agent in steel, cast iron, and superalloys to enhance hardenability, strength, toughness, and corrosion resistance. It plays a versatile and significant role in industrial technology and is also used in chemical applications such as catalysts, lubricants, and pigments. [Read more about molybdenum from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/molybdenum/).

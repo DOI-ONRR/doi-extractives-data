@@ -12,7 +12,7 @@ nav_items:
     title: Production
   - name: revenue
     title: Revenue
-description: The United States is home to many different natural resources, including fossil fuel, renewable energy", and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+description: The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
 tag:
 - how it works
 - production

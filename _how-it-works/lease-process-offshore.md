@@ -1,6 +1,6 @@
 ---
 title: 'Offshore Oil, Gas, and Sulphur | Life of a Lease'
-title_display: The leasing process for offshore oil, gas, and sulphur
+title_display: The leasing process for offshore oil, gas, and sulfur
 layout: content
 nav_description: Jump to a section
 nav_items:
@@ -33,7 +33,7 @@ selector: list
 
 {% include selector.html %}
 
-Leasing is one part of the larger process of planning, leasing, exploring developing, and decommissioning [offshore oil and gas projects]({{ site.baseurl }}/how-it-works/offshore-oil-gas/).
+Leasing is one part of the larger process of planning, leasing, exploring, developing, and decommissioning [offshore oil and gas projects]({{ site.baseurl }}/how-it-works/offshore-oil-gas/).
 
 ## Before a lease
 
@@ -46,7 +46,7 @@ In accordance with the 1978 Outer Continental Shelf Lands Act (OCSLA) amendment,
 
 **BOEM must:**
 
-* Disqualify companies from lease consideration if they have unacceptable operating history.
+* Disqualify companies from lease consideration if they have an unacceptable operating history.
 
 ## Lease sale
 
@@ -68,7 +68,7 @@ BOEM offers leases through a competitive process that anyone can participate in 
 
 ## Under a lease
 
-Primary lease  terms are usually five years unless BOEM determines the lease is located in unusually deep water or adverse conditions.
+Primary lease terms are usually five years unless BOEM determines the lease is located in unusually deep water or adverse conditions.
 
 **The lease holder must:**
 

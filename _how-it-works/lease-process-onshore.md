@@ -1,5 +1,5 @@
 ---
-title: 'Onshore Oil, Gas, and Sulphur | Life of a Lease'
+title: 'Onshore Oil and Gas | Life of a Lease'
 title_display: The leasing process for onshore oil and gas
 layout: content
 nav_description: Jump to a section
@@ -44,7 +44,7 @@ BLM also accepts noncompetitive presale offers. Noncompetitive offers require a 
 
 * Perform an initial review of nominated lands to determine if the lands are available.
 * Create an initial list of parcels, consolidating requests into lease units.
-* Send parcel lists to BLM field offices or to the surface managing agency (SMA), as appropriate. SMAs must approve the lease and provide stipulations.
+* Send parcel lists to BLM field offices or to the surface management agency (SMA), as appropriate. SMAs must approve the lease and provide stipulations.
 
 ## Lease sale
 
@@ -72,7 +72,7 @@ BLM awards oil and gas leases for a term of 10 years and beyond, as long as prod
 
 * File a permit application and exploration plan with the BLM field office.
 * Get BLM approval and submit a bond of at least $10,000 before starting any surface-disturbing activities.
-* Submit a [Transfer of Operating Rights](https://www.blm.gov/sites/blm.gov/files/uploads/Services_National-Operations-Center_Eforms_Fluid-and-Solid-Minerals_3000-003a.pdf) form to BLM when when subleasing.
+* Submit a [Transfer of Operating Rights](https://www.blm.gov/sites/blm.gov/files/uploads/Services_National-Operations-Center_Eforms_Fluid-and-Solid-Minerals_3000-003a.pdf) form to BLM when subleasing.
 
 **BLM field office must:**
 

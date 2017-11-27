@@ -356,10 +356,6 @@ svg {
 }
 
 @include respond-to(huge-up) {
-  .ribbon-card-top {
-    border-bottom: 4px solid $white;
-  }
-
   .ribbon.ribbon-column {
     flex-direction: row;
     margin-left: $page-padding;

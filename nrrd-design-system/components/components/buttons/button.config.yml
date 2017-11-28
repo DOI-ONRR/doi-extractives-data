@@ -1,0 +1,14 @@
+title: Buttons
+default: primary
+collated: true
+context:
+  text: Button
+variants:
+  - name: primary
+    context:
+      className: primary
+      text: Primary
+  - name: secondary
+    context:
+      className: secondary
+      text: Secondary

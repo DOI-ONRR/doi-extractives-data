@@ -1,0 +1,14 @@
+title:
+default:
+collated: true
+context:
+  text:
+variants:
+  - name:
+    context:
+      className:
+      text:
+  - name:
+    context:
+      className:
+      text: 

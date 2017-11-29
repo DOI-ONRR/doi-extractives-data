@@ -1,23 +1,11 @@
-require 'liquid'
-require 'json'
-
 module EITI
 
   module Data
-    module_function
 
     # access a nested property of the (assumed) Hash data:
     #
-    # >> EITI::Data.get({'a' => 1000}, 'a')
-    # => 1000
-    # >> EITI::Data.get({'2001' => 5}, 2001)
-    # => 5
-    # >> EITI::Data.get({'x' => {'y' => 'z'}}, 'x.y')
-    # => 'z'
-    # >> EITI::Data.get({'x' => {'y' => 'z'}}, 'x.0')
-    # => nil
-    # >> EITI::Data.get(nil, 'a')
-    # => nil
+    # get({"a" => 1000}, "a") == 1000
+    # get({"2001" => 5}, 2001) === 5
     def get(data, *keys)
       # bail if there"s no data
       return nil if data == nil
@@ -38,21 +26,14 @@ module EITI
 
     # "unwrap" values in a 2-level hash:
     #
-    # >> EITI::Data.map_hash({'2011' => {'volume' => 100}}, 'volume')
-    # => {'2011' => 100}
+    # map_hash({'2011' => {'volume' => 100}}, 'volume')
+    # > {'2011' => 100}
     def map_hash(data, key)
       data.to_h.map { |k, v| [k, get(v, key)] }.to_h
     end
 
     # pad the provided string with the provided padding character (or a
     # space, by default) if its length is less than a given length
-    #
-    # >> EITI::Data.pad_left('100', 4)
-    # => ' 100'
-    # >> EITI::Data.pad_left('100', 4, '0')
-    # => '0100'
-    # >> EITI::Data.pad_left('100', 3)
-    # => '100'
     def pad_left(str, len, pad = " ")
       pad_by = len - str.size
       if pad_by > 0
@@ -63,22 +44,12 @@ module EITI
 
     # attempt to look up a term in a hash, and return the value if that
     # key exists; otherwise, return the key
-    #
-    # >> EITI::Data.lookup('hi', {'hi' => 'hello'})
-    # => 'hello'
-    # >> EITI::Data.lookup('yo', {'hi' => 'hello'})
-    # => 'yo'
     def lookup(term, dict)
       (dict.key? term) ? dict[term] : term
     end
 
     # create an integer range array from either a start and end number,
     # or a 2-element array
-    #
-    # >> EITI::Data.range(1, 4)
-    # => [1, 2, 3, 4]
-    # >> EITI::Data.range([1, 4])
-    # => [1, 2, 3, 4]
     def range(start, finish = nil)
       if start.is_a? Array
         (start, finish) = start
@@ -87,31 +58,16 @@ module EITI
     end
 
     # convert (or map) a value to floats
-    #
-    # >> EITI::Data.to_f('1.5')
-    # => 1.5
-    # >> EITI::Data.to_f(['1.5', '2.3'])
-    # => [1.5, 2.3]
     def to_f(x)
       (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
     # convert (or map) a value to integers
-    #
-    # >> EITI::Data.to_i('5')
-    # => 5
-    # >> EITI::Data.to_i(['1', '2'])
-    # => [1, 2]
     def to_i(x)
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
     # convert (or map) a value to strings
-    #
-    # >> EITI::Data.to_s(1)
-    # => '1'
-    # >> EITI::Data.to_s([2, 3])
-    # => ['2', '3']
     def to_s(x)
       (x.is_a? Array) ? x.map(&:to_s) : x.to_s
     end
@@ -126,12 +82,6 @@ module EITI
 
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
-    #
-    # Only accepts an Array. Otherwise returns the range
-    # >> EITI::Data.create_list([0, 5])
-    # => [0,1,2,3,4,5]
-    # >> EITI::Data.create_list('[0,5]')
-    # => '[0,5]'
     def create_list(range)
       if range.is_a? Array
         arr = []
@@ -146,21 +96,8 @@ module EITI
       end
     end
 
-    # >> EITI::Data.json_parse('[1,2]')
-    # => [1, 2]
-    def json_parse(str)
-      str.is_a?(String) ? JSON.parse(str) : nil
-    end
-
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
-    #
-    # >> EITI::Data.to_list('[0,5]')
-    # =>[0,1,2,3,4,5]
-    # >> EITI::Data.to_list([0,5])
-    # => [0,1,2,3,4,5]
-    # >> EITI::Data.to_list(5)
-    # => 5
     def to_list(range)
       if range.is_a? Array
         create_list(range)
@@ -174,13 +111,6 @@ module EITI
 
     # formats a URL-like string with either a data Hash or a
     # placeholder string:
-    #
-    # >> EITI::Data.format_url('foo/:bar/baz', {'bar' => 'x'})
-    # => 'foo/x/baz'
-    # >> EITI::Data.format_url('foo/%/baz', {'id' => 'x'})
-    # => 'foo/x/baz'
-    # >> EITI::Data.format_url('foo/%/baz', 'x')
-    # => 'foo/x/baz'
     def format_url(format, data)
       placeholder = "%"
       pattern = /:\w+/
@@ -199,68 +129,6 @@ module EITI
         return format
       end
     end
-
-    # returns the singular suffix of a value if the value is 1,
-    # otherwise the singular form
-    #
-    # >> EITI::Data.plural(100)
-    # => 's'
-    # >> EITI::Data.plural(1)
-    # => ''
-    # >> EITI::Data.plural(1, 'ies', 'y')
-    # => 'y'
-    # >> EITI::Data.plural(2, 'ies', 'y')
-    # => 'ies'
-    def plural(num, plural = 's', singular = '')
-      num.to_i == 1 ? singular : plural
-    end
-
-    # format a number as a percentage with fixed precision, with an
-    # additionally configurable "small" placeholder to indicate values
-    # less than 1.
-    #
-    # >> EITI::Data.percent(10.5)
-    # => 10.5
-    # >> EITI::Data.percent(10.5, 0)
-    # => 11
-    # >> EITI::Data.percent(0.5)
-    # => '&lt;1'
-    # >> EITI::Data.percent(0.5, 0, '?')
-    # => '?'
-    def percent(num, precision = 1, small = '&lt;1')
-      if num.is_a? String
-        num = num.to_f
-      end
-      if num.nil?
-        # XXX: what should we represent null % as?
-        return '--'
-      # zero is zero
-      elsif num.zero?
-        return '0'
-      # if it's less than 1, return the "small" representation
-      elsif num < 1.0
-        return small
-      # if it has decimal precision, format it
-      elsif num % 1 > 0
-        return num.round(precision)
-      end
-
-      # puts "percent(#{num}, #{precision}, "#{small}")"
-      num.to_i
-    end
-
-    # >> EITI::Data.suffix('foo', 'bar')
-    # => 'foo bar'
-    # >> EITI::Data.suffix('foo')
-    # => 'foo'
-    def suffix(text, suffix = '')
-      suffix.empty? ? text : "#{text} #{suffix}"
-    end
-
-    def abbr_year(year)
-      "’#{year.to_s.slice(-2, 2)}"
-    end
-
   end
 end
 

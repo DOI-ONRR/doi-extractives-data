@@ -110,7 +110,7 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-ownership-governance/">Ownership and governance</a></h3>
           <p>Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-ownership-and-governance/">Learn about governance on tribal land</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/tribal-ownership-governance/">Learn about governance on tribal land</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-production/">Production</a></h3>

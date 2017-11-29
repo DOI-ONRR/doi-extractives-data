@@ -1,14 +1,4 @@
-title: Typograhpy
-default: primary
-collated: true
+title: Example component
+status: draft
 context:
-  text: Button
-variants:
-  - name: primary
-    context:
-      className: primary
-      text: Primary
-  - name: secondary
-    context:
-      className: secondary
-      text: Secondary
+    text: This is an example component!

@@ -72,7 +72,6 @@ A number of state-level resources shed light on Elko and Eureka counties’ tran
 
 <ul>
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>
-	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation: Reclamation Cost Estimator</a></li>
 </ul>
 
 ## Data availability

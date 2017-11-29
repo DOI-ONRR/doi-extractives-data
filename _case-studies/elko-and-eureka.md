@@ -154,4 +154,4 @@ This case study is current as of June 2017. Many data sources are updated regula
 
 [^19]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/15-16%20Eureka%20County%20Financial%20Statement.pdf), June 30, 2016, p.8
 
-[^20]: 20.	Ibid., p. 50, 62
+[^20]: Ibid., p. 50, 62

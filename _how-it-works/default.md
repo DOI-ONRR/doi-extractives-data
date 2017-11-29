@@ -208,7 +208,7 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/reconciliation/">Reconciliation</a></h3>
-          <p>During the USEITI reconciliation process, company reports of payments are compared to government records of revenue received.</p>
+          <p>During the reconciliation process, company reports of payments are compared to government records of revenue received.</p>
           <p><a href="{{site.baseurl}}/how-it-works/reconciliation/">Learn about reconciliation</a></p>
         </div>
       </div>

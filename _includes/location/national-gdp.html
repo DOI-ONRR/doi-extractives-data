@@ -15,15 +15,16 @@
 
   <div class="chart-selector-wrapper">
 
-    {% include year-selector.html year_range=year_range %}
-
-    <p class="chart-description">
-      Data about {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} comes from the Bureau of Economic Analysis.
-      <br>
-      <a href="{{ site.baseurl }}/downloads/#gdp">
-        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-      </a>
-    </p>
+    <div class="chart-description">
+      <p>
+        Data about {{ "gross domestic product" | term:"Gross domestic product (GDP)" }} comes from the Bureau of Economic Analysis.
+      </p>
+      <p>
+        <a href="{{ site.baseurl }}/downloads/#gdp">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+        </a>
+      </p>
+    </div>
   </div><!-- .chart-selector-wrapper -->
 
   <div class="chart-list">

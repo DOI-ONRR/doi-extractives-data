@@ -126,41 +126,23 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 1983731000
+      value: 1995920000
       rank: 5
-      percent: 6.03
-federal_production:
-  '2006':
-    - product: Purge Liquor (tons - equivalent)
-      name: Purge Liquor
-      units: tons - equivalent
-      value: 69814
-      rank: 1
-      percent: 100
-    - product: Soda Ash (tons)
-      name: Soda Ash
-      units: tons
-      value: 4755332
-      rank: 1
-      percent: 85.33
-    - product: Coal (tons)
+      percent: 6.06
+  '2016':
+    - product: Coal
       name: Coal
-      units: tons
-      value: 369856067
+      units: short tons
+      value: 297218132
       rank: 1
-      percent: 83.08
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 1491455789
-      rank: 1
-      percent: 23.03
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 31880050
-      rank: 1
-      percent: 5.33
+      percent: 40.81
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1848145000
+      rank: 5
+      percent: 5.66
+federal_production:
   '2007':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -183,13 +165,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1664001549
+      value: 1664057948.43
       rank: 1
       percent: 25.49
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 33075284
+      value: 33068487.14
       rank: 1
       percent: 5.57
   '2008':
@@ -214,13 +196,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1856646024
+      value: 1856666589.95
       rank: 1
       percent: 29.33
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32637686
+      value: 32633186.5
       rank: 1
       percent: 5.93
   '2009':
@@ -251,13 +233,13 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1938315493
+      value: 1938275696.19
       rank: 1
       percent: 29.68
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 31965449
+      value: 31961645.08
       rank: 1
       percent: 4.58
   '2010':
@@ -282,9 +264,9 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1938304036
+      value: 1938244259.71
       rank: 1
-      percent: 30.97
+      percent: 30.98
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
@@ -294,7 +276,7 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32469020
+      value: 32460258.13
       rank: 1
       percent: 4.65
   '2011':
@@ -319,9 +301,9 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1837740875
+      value: 1836050862.17
       rank: 1
-      percent: 31.94
+      percent: 31.87
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
@@ -331,9 +313,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32442250
+      value: 32375422.54
       rank: 2
-      percent: 5.24
+      percent: 5.23
   '2012':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -350,15 +332,15 @@ federal_production:
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 353311864
+      value: 353306417
       rank: 1
       percent: 83.62
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1731887115
+      value: 1729935422.69
       rank: 1
-      percent: 32.26
+      percent: 32.13
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
@@ -368,9 +350,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 33144675
+      value: 32894428.08
       rank: 2
-      percent: 5.4
+      percent: 5.36
   '2013':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -399,9 +381,9 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1590795825
+      value: 1586266228.68
       rank: 1
-      percent: 32.19
+      percent: 32.03
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
@@ -411,9 +393,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 35618778
+      value: 34945971.24
       rank: 2
-      percent: 5.72
+      percent: 5.61
   '2014':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -438,19 +420,19 @@ federal_production:
       units: tons
       value: 107022
       rank: 1
-      percent: 34.64
+      percent: 34.7
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1547112987
+      value: 1540222142.96
       rank: 1
-      percent: 31.87
+      percent: 31.68
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 41495220
+      value: 40191707.58
       rank: 2
-      percent: 5.93
+      percent: 5.76
   '2015':
     - product: Purge Liquor (tons - equivalent)
       name: Purge Liquor
@@ -473,21 +455,58 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 1551815444
+      value: 1559564300.92
       rank: 1
-      percent: 32.45
+      percent: 32.24
     - product: Sodium Bi-Carbonate (tons)
       name: Sodium Bi-Carbonate
       units: tons
       value: 70079
       rank: 1
-      percent: 23.97
+      percent: 24.02
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 48018542
+      value: 45339085.75
       rank: 2
-      percent: 6.36
+      percent: 6
+  '2016':
+    - product: Purge Liquor (tons - equivalent)
+      name: Purge Liquor
+      units: tons - equivalent
+      value: 51726
+      rank: 1
+      percent: 100
+    - product: Coal (tons)
+      name: Coal
+      units: tons
+      value: 244197310
+      rank: 1
+      percent: 83.61
+    - product: Soda Ash (tons)
+      name: Soda Ash
+      units: tons
+      value: 3676387
+      rank: 1
+      percent: 81.01
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1420211722.44
+      rank: 1
+      percent: 31.49
+    - product: Sodium Bi-Carbonate (tons)
+      name: Sodium Bi-Carbonate
+      units: tons
+      value: 74957
+      rank: 1
+      percent: 22.93
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 36756540.68
+      rank: 2
+      percent: 4.82
 revenue:
   '2006':
     - product: All

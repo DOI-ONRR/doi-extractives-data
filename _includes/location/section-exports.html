@@ -32,7 +32,6 @@
 
     <div class="chart-selector-wrapper">
     {% if export_commodities %}
-      {% include year-selector.html year_range=year_range empty_years=empty_years %}
     {% endif %}
 
     {% if empty_years.size == year_range.size %}
@@ -41,21 +40,24 @@
       {% assign has_exports = false %}
     {% endif %}
 
-      <p class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
-        The U.S. Census Bureau collects information about the top 25 exports in each state.
+      <div class="chart-description{% if export_commodities.size > 1 %}{% else %} no-selector{% endif %}">
+        <p>
+          The U.S. Census Bureau collects information about the top 25 exports in each state.
 
-        {% if exports_total > 0 %}
-          In {{ year }}, one or more natural resources
-          ranked among the top 25 exports from {{ state_name }}.
-        {% else %}
-          In {{ year }}, extractive industries products did not rank
-          among the top 25 exports from {{ state_name }}.
-        {% endif %}
-        <br>
-        <a href="{{site.baseurl}}/downloads/#exports">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
-        </a>
-      </p>
+          {% if exports_total > 0 %}
+            In {{ year }}, one or more natural resources
+            ranked among the top 25 exports from {{ state_name }}.
+          {% else %}
+            In {{ year }}, extractive industries products did not rank
+            among the top 25 exports from {{ state_name }}.
+          {% endif %}
+        </p>
+        <p>
+          <a href="{{site.baseurl}}/downloads/#exports">
+            <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+          </a>
+        </p>
+      </div>
     </div>
 
     {% assign _format = '$,' %}

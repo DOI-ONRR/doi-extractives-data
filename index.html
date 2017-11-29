@@ -6,14 +6,12 @@ selector: location
 <section class="slab-delta">
   <div class="container-page-wrapper ribbon">
     <div class="container-left-8 ribbon-hero ribbon-hero-home ribbon-card-home">
-      <h1>The United States Extractive Industries Transparency Initiative</h1>
       <h3 class="ribbon-hero-description-light">
-        USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about {{ "extractive industries" | term:"extractive industry" }} across the United States.
+        This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other {{ "extractive industries" | term_end:"extractive industry" }}.
       </h3>
-      <a href="{{ site.baseurl }}/about/">Learn more about the initiative</a>
+      <a href="{{ site.baseurl }}/explore/" class="button-primary">Explore the data</a>
     </div>
     <div class="container-right-4 ribbon-card ribbon-card-home">
-      <a href="{{ site.baseurl }}/explore/" class="ribbon-card-button button-primary">Explore the data</a>
       {% include svg/icon-ribbon-oil-rig.svg svg_title='small' vb_height=150 %}
       {% include svg/icon-ribbon-oil-rig.svg %}
     </div>
@@ -25,7 +23,7 @@ selector: location
     <div class="container-left-4 explore_home-map-intro">
       <h2 class="h3 explore_home-heading">Learn about extractive industries in each state</h2>
       <p>
-        Explore production, revenue, and economic impact data for each state, as well as additional contextual information and data about three states that chose to participate in deeper USEITI reporting: <a href="{{ site.baseurl }}/explore/AK/">Alaska</a>, <a href="{{ site.baseurl }}/explore/MT/">Montana</a>, and <a href="{{ site.baseurl }}/explore/WY/">Wyoming</a>.
+        Explore production, revenue, and economic impact data for each state, as well as additional contextual information and data about three states that chose to participate in deeper reporting: <a href="{{ site.baseurl }}/explore/AK/">Alaska</a>, <a href="{{ site.baseurl }}/explore/MT/">Montana</a>, and <a href="{{ site.baseurl }}/explore/WY/">Wyoming</a>.
       </p>
       <figcaption class="state_pages-select">
         <label for="location-selector">Explore data:</label>
@@ -144,15 +142,15 @@ selector: location
 
       <article class="card" class="card">
 
-        <a class="card-image_link" href="{{ site.baseurl }}/about/report/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-download.svg" alt="USEITI Executive Summary"></a>
+        <a class="card-image_link" href="{{ site.baseurl }}/about/report/"><img class="card-image" src="{{ site.baseurl }}/img/home-card-download.svg" alt="Executive Summary"></a>
 
         <div class="card-content">
 
           <p class="card-content-subhead">About</p>
 
-          <a href="{{ site.baseurl }}/about/report/"><h3 class="card-title">Download the USEITI 2016 Executive Summary</h3></a>
+          <a href="{{ site.baseurl }}/about/report/"><h3 class="card-title">Download the 2016 Executive Summary</h3></a>
 
-          <p>This document includes an overview of contextual information and an account of the EITI Standard in the U.S.</p>
+          <p>This document includes an overview of contextual information and 2016 updates to this site.</p>
 
         </div>
 

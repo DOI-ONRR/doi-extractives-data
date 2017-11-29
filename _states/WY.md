@@ -111,18 +111,16 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The USEITI case study on [Campbell County]({{ site.baseurl }}/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The [Campbell County]({{ site.baseurl }}/case-studies/campbell/) case study provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
-The USEITI {{ "Multi-Stakeholder Group" | term:"Multi-Stakeholder Group (MSG)" }} prioritized four types of fiscal costs:
-
-#### Transportation
+#### Transportation costs
 
 In the [2010 Campbell County Coal Belt Transportation Study (PDF)](https://www.ccgov.net/DocumentCenter/Home/View/1910), Campbell County and the Wyoming Department of Transportation estimated that **county roads would require $43.9 million in investment** between 2010 and 2015 to support coal extraction.
 
 Traffic increased 86% in Sublette County and its municipalities from 2000 to 2007, largely due to natural resource extraction. In 2009, they estimated that **projected road improvement projects would total $87.5 million** from 2009 to 2012 and beyond. The self-contained nature of large coal mining operations in Sublette County contributes to higher transportation costs compared to Campbell County.
 
-#### Water
+#### Water costs
 
 In Sublette County, natural resource extraction has led to population growth, which has increased demands on existing water systems. The town of Marbleton also drilled an additional water well to provide domestic and commercial water due to increased demand.
 
@@ -134,7 +132,7 @@ Population growth due to increased natural resource extraction can increase dem
 
 Prior to 2001, the Sublette County Rural Health Care District had two all-volunteer Emergency Medical Services (EMS) units. By 2006, the district had hired 25 full-time emergency medical technicians. From 2001 to 2007, EMS runs increased 116% for the Pinedale facility and 94.47% for the Marbleton-Big Piney facility. To serve the Jonah gas field and the South Anticline, the district built a new EMS facility in 2007 at Sand Draw. Local industry paid for $900,000 of the cost of the facility, with the county paying $500,000.
 
-#### Reclamation
+#### Reclamation costs
 
 Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/).
 

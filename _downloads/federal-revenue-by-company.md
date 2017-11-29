@@ -6,12 +6,11 @@ title_display: Federal Revenue by Company
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset provides natural resource revenues data by company for calendar years 2013-2015. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
+description: This dataset provides natural resource revenues data by company for calendar years 2013-2015. This new dataset represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
 tag:
 - Data
 - Downloads
 - Documentation
-- USEITI data
 - Federal
 - Revenue
 - Company
@@ -19,7 +18,7 @@ tag:
 ---
 
 
-> This dataset provides natural resource revenues data by company for calendar years 2013-2016. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
+> This dataset provides natural resource revenues data by company for calendar years 2013-2016. This new dataset represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
@@ -36,7 +35,7 @@ This dataset includes revenues for U.S. federal lands and offshore areas. It doe
 
 ### Why is there a line in the data called 'companies below threshold'?
 
-The USEITI Multi-Stakeholder Group agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are small companies, individuals, and family trusts. Payments made by entities that reported less than $100,000 are aggregated (rolled-up) into this category.
+Many of the companies that fall below the $100,000 threshold are small companies, individuals, and family trusts. These aggregated payments also make up less than one quarter of one percent of total payments. Payments made by entities that reported less than $100,000 are aggregated (rolled-up) into this category.
 
 ### Why is there a line in the data called 'one mine one product'?
 

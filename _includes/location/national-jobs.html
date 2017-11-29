@@ -24,12 +24,11 @@
 
       <div class="chart-selector-wrapper">
 
-        {% include year-selector.html year_range=year_range %}
-
         <div class="chart-description">
           <p>
             Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.
-            <br>
+          </p>
+          <p>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
             </a>
@@ -155,15 +154,16 @@
 
       <div class="chart-selector-wrapper">
 
-        {% include year-selector.html year_range=year_range %}
-
-        <p class="chart-description">
+        <div class="chart-description">
+          <p>
             Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.
-            <br>
+          </p>
+          <p>
             <a href="{{site.baseurl}}/downloads/#jobs">
               <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
             </a>
-        </p>
+          </p>
+        </div>
       </div><!-- .chart-selector-wrapper -->
 
       {% assign _metrics = 'count' | split: ' ' %}

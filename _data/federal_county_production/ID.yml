@@ -5,16 +5,16 @@
       name: Phosphate Raw Ore
       units: tons
       volume:
-        '2006': 2381392
         '2007': 2324385
         '2008': 2424258
         '2009': 3423741
         '2010': 3523585
         '2011': 4690032
-        '2012': 4467766
-        '2013': 4960123
+        '2012': 4637357
+        '2013': 5150819
         '2014': 5777094
         '2015': 4903855
+        '2016': 5291359
 '16035':
   name: Clearwater County
   products:
@@ -22,7 +22,6 @@
       name: Gold
       units: oz
       volume:
-        '2006': null
         '2007': null
         '2008': null
         '2009': null
@@ -32,3 +31,18 @@
       units: oz
       volume:
         '2013': null
+'16075':
+  name: Payette County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2015': 1551
+        '2016': 588703
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2015': 259
+        '2016': 12271

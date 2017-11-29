@@ -29,9 +29,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 249874000
+      value: 249893000
       rank: 2
-      percent: 13.65
+      percent: 13.66
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -48,9 +48,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 235491000
+      value: 235510000
       rank: 2
-      percent: 12.05
+      percent: 12.06
   '2010':
     - product: Natural Gas
       name: Natural Gas
@@ -87,9 +87,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 192368000
+      value: 192401000
       rank: 4
-      percent: 8.1
+      percent: 8.09
   '2013':
     - product: Natural Gas
       name: Natural Gas
@@ -100,7 +100,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 187954000
+      value: 187923000
       rank: 4
       percent: 6.9
   '2014':
@@ -113,9 +113,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 181175000
+      value: 181130000
       rank: 4
-      percent: 5.66
+      percent: 5.67
   '2015':
     - product: Natural Gas
       name: Natural Gas
@@ -126,30 +126,22 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 176241000
+      value: 176235000
       rank: 4
       percent: 5.13
   '2016':
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 3229946000
+      value: 3229968000
       rank: 3
-      percent: 9.89
+      percent: 9.9
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 179170000
+      value: 179169000
       rank: 4
-      percent: 5.52
-federal_production:
-  '2006':
-    - product: Gas (mcf)
-      name: Gas
-      units: mcf
-      value: 39875346
-      rank: 5
-      percent: 0.62
+      percent: 5.53
 revenue:
   '2007':
     - product: Oil & Gas (Non-Royalty)

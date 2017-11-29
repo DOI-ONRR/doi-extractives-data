@@ -36,17 +36,14 @@ nav_items:
       - name: jobs
         title: Jobs
 selector: list
-description: We use many government datasets on this site to power our interactive visualizations. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.
+description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
 tag:
 - Data
 - Downloads
 - Documentation
-- USEITI data
 ---
 
-> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.
-
-> The {{ "Independent Administrator" | term }} also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. [Download the Executive Summary.]({{site.baseurl}}/about/report/)
+> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
 
 {% include selector.html %}
 
@@ -74,7 +71,7 @@ tag:
 
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3>Reconciliation</h3></a>
-    <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country’s natural resources. Companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is at the link below.</p>
+    <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
     <a href="{{site.baseurl}}/downloads/reconciliation/">
       <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
     </a>
@@ -113,7 +110,7 @@ tag:
 
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
-    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2006 to 2015 by state and county.</p>
+    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2007 to 2016 by state and county.</p>
     <a href="{{site.baseurl}}/downloads/federal-production/">
       <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
     </a>

@@ -48,13 +48,6 @@ all_production:
       rank: 5
       percent: 0.48
 federal_production:
-  '2006':
-    - product: Phosphate Raw Ore (tons)
-      name: Phosphate Raw Ore
-      units: tons
-      value: 2381392
-      rank: 1
-      percent: 100
   '2007':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
@@ -94,16 +87,16 @@ federal_production:
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4467766
+      value: 4637357
       rank: 1
-      percent: 85.76
+      percent: 86.21
   '2013':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
       units: tons
-      value: 4960123
+      value: 5150819
       rank: 1
-      percent: 97.77
+      percent: 97.85
   '2014':
     - product: Phosphate Raw Ore (tons)
       name: Phosphate Raw Ore
@@ -118,6 +111,13 @@ federal_production:
       value: 4903855
       rank: 1
       percent: 99.06
+  '2016':
+    - product: Phosphate Raw Ore (tons)
+      name: Phosphate Raw Ore
+      units: tons
+      value: 5291359
+      rank: 1
+      percent: 90.24
 revenue:
   '2006':
     - product: Phosphate

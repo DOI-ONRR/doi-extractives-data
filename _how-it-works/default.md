@@ -108,7 +108,7 @@ selector: list
       <h2 id="tribal-overview" class="h2-bar">How are natural resources on tribal land governed?</h2>
       <div class="container landing-section">
         <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-ownership-and-governance/">Ownership and governance</a></h3>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-ownership-governance/">Ownership and governance</a></h3>
           <p>Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-ownership-and-governance/">Learn about governance on tribal land</a></p>
         </div>

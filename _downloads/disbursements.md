@@ -20,7 +20,8 @@ tag:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2012-2016_2017-02-08.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds data by state and county (xlsx, 36 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2014-2017.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds data by state and county (xlsx, 32 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/downloads/Disbursements_FY2003-2017_by_type.xls"><icon class="icon-cloud icon-padded"></icon>Funds data by type (xlsx, 75 KB)</a></li>
   <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_FY2011-2015_2016-09-15.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 870 KB)</a></li>
   <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_FY2011-2016_2017-05-26.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 19 KB)</a></li>
 </ul>

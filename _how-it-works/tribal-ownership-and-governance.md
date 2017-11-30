@@ -32,8 +32,6 @@ selector: list
 
 {% include selector.html %}
 
-<!-- content below still needs editing, footnotes, and de-duplication -->
-
 ## Land ownership
 
 Ownership of {{ "Indian lands" | term }} involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.

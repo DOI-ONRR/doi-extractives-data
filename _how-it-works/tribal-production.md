@@ -64,8 +64,6 @@ Key documents and resources:
   + [Oil and Gas Outlook in Indian Country (PDF)](https://bia.gov/cs/groups/xieed/documents/document/idc1-024535.pdf)
   + [Information on tribes actively seeking mineral development on their reservations](https://bia.gov/WhoWeAre/AS-IA/IEED/DEMD/IMO/index.htm)
 
-<!-- content below still needs editing, footnotes, and de-duplication -->
-
 ### Oil and gas
 
 **Plan**
@@ -82,11 +80,9 @@ If the lease occurs as a part of a minerals development agreement between the op
 
 **Explore**
 
-Exploration begins after BIA issues the oil and gas lease, and can be accomplished on a lease basis, under a formal federal exploratory agreement, or under an Indian Mineral Development Agreement. For lease basis development, this would occur similar to an application for permit to drill (APD).
+Exploration begins after BIA issues the oil and gas lease, and can be accomplished on a lease basis, under a formal federal exploratory agreement, or under an [Indian Mineral Development Agreement]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/#indian-mineral-development-act-of-1982). For lease basis development, this would occur similar to an application for permit to drill (APD).
 
-<!-- FIX/replace with relevant links -->
-
-Read on for more about APDs or see the onshore or offshore tabs of this page. To read more about Indian Mineral Development Agreements, see the Tribal Laws and Regulations page of the data portal (link to be added.)
+For more about APDs, [learn more about the process of developing oil and gas on federal land]({{ site.baseurl }}/how-it-works/onshore-oil-gas/).
 
 **Develop, decommission, and reclaim**
 
@@ -96,15 +92,13 @@ BLM holds responsibility for inspections and operations-related enforcement as w
 
 When production does occur, BLM notifies BIA and ONRR. ONRR begins to collect and monitor production data and provide that data to BLM and begin to collect payments from the operator and, if applicable, co-lease holders. As production continues, ONRR collects, accounts for, and deposits royalties and rentals from the operator. ONRR distributes revenues accordingly.
 
-<!-- fix links -->
-
-You can read more about revenue collection and distribution here (link to be added when addition is complete). You can also [learn about how productions and revenues are verified here]({{ site.baseurl }}/how-it-works/audits-and-assurances/).
+Read more about [revenue collection and distribution]({{ site.baseurl }}/how-it-works/tribal-revenue/).
 
 Any changes to the lease or operations are shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond. 
 
 When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM. 
 
-A mineral trust owner may wish to assume the operation or ownership of a well. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, BIA notifies ONRR of new fractional interests (link TK to be added to laws and regulations page on the data portal when addition is complete) or other changes.
+A mineral trust owner may wish to assume the operation or ownership of a well. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, [BIA notifies ONRR of new fractional interests or other changes]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/).
 
 <!-- content still needs de-duplicating -->
 
@@ -132,13 +126,13 @@ BLM regulates the development and reclamation of mines. Prior to mining, the lea
 
 BLM holds responsibility for inspections and operations-related enforcement, including the disposal of mine waste. 
 
-When production does occur, BLM notifies BIA and ONRR. ONRR begins to collect and monitor production data, provide that data to BLM, and collect payments from the operator. As production continues, BIA collects, accounts for, and deposits royalties and rentals from the operator. ONRR will distribute revenues accordingly. You can read more about revenue collection and distribution here (link TK to be added when addition is complete). You can also [learn about how production and revenues are verified here](https://useiti.doi.gov/how-it-works/audits-and-assurances/).
+When production does occur, BLM notifies BIA and ONRR. ONRR begins to collect and monitor production data, provide that data to BLM, and collect payments from the operator. As production continues, BIA collects, accounts for, and deposits royalties and rentals from the operator. ONRR will distribute revenues accordingly. You can read more about [revenue collection and distribution here]({{ site.baseurl }}/how-it-works/tribal-revenue/).
 
 Any changes to the lease or operations is shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond. 
 
 When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM. 
 
-A mineral trust owner may wish to assume the operation or ownership of a mine. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, BIA notifies ONRR of new fractional interests (link TK to be added to laws and regulations page when addition is complete) or other changes. 
+A mineral trust owner may wish to assume the operation or ownership of a mine. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, [BIA notifies ONRR of new fractional interests or other changes]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/). 
 
 ### Coal
 

@@ -33,6 +33,13 @@ all_production:
       value: 56101030
       rank: 4
       percent: 6.25
+  '2016':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 43422136
+      rank: 4
+      percent: 5.96
 revenue:
   '2011':
     - product: Hardrock

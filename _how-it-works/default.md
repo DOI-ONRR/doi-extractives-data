@@ -131,7 +131,7 @@ selector: list
     </section>
     <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-      <h3 id="production" class="h3-bar">Production</h3>
+      <h3 id="production" class="h3-bar">The production process</h3>
       <div class="container landing-section landing-section-with-graphics">
         <div class="landing-oil_gas">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a>{% include svg/how-main-icon-oil.svg %}</h4>
@@ -162,7 +162,7 @@ selector: list
           </div>
         </div>
       </div>
-      <h3 id="revenues" class="h3-bar">Revenues</h3>
+      <h3 id="revenues" class="h3-bar">Understanding federal revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       <div class="container landing-section">

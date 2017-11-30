@@ -1,5 +1,5 @@
 ---
-title: How It Works
+title: How it works
 layout: default
 permalink: /how-it-works/
 nav_items:

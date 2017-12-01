@@ -1,0 +1,9 @@
+title: Text input fields
+status: draft
+collated: true
+default: default
+variants:
+  - name: default
+    context:
+      className: NOTSURE
+      text: Text input field

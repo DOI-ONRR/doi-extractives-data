@@ -1,4 +1,17 @@
-title: Example component
+title: Maps
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: ownership
+variants:
+  - name: ownership
+    context:
+      className: TBD
+      text: Ownership map
+  - name: solid-fill
+    context:
+      className: TBD
+      text: Map with solid-color fill
+  - name: others? (county, etc.)
+    context:
+      className: TBD
+      text: More? County? Small?

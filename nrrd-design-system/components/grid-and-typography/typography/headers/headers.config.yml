@@ -1,0 +1,25 @@
+title: Headers
+status: draft
+collated: true
+default: h1
+variants:
+  - name: h1
+    context:
+      className: h1
+      text: h1 header
+  - name: h2
+    context:
+      className: h2
+      text: h2 header
+  - name: h3
+    context:
+      className: h3
+      text: h3 header
+  - name: h4
+    context:
+      className: h4
+      text: h4 header
+  - name: h5
+    context:
+      className: h5
+      text: h5 header

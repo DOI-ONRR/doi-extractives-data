@@ -1,0 +1,25 @@
+title: Text
+status: draft
+collated: true
+default: para-xl
+variants:
+  - name: para-xl
+    context:
+      className: para-xl
+      text: This is extra-large text, useful for ...
+  - name: para-lg
+    context:
+      className: para-lg
+      text: This is large text, the default size for the site.
+  - name: para-md
+    context:
+      className: para-md
+      text: This is medium-sized text.
+  - name: para-sm
+    context:
+      className: para-sm
+      text: This is small text, obvi. The type gets even smaller in spots, if you can believe it. Long story.
+  - name: more
+    context:
+      className: p
+      text: and .....?

@@ -3,6 +3,16 @@
 const path = require('path');
 
 const fractal = module.exports = require('@frctl/fractal').create();
+const mandelbrot = require('@frctl/mandelbrot');
+
+const customTheme = mandelbrot({
+  skin: 'blue',
+  panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
+  styles: [
+    'default',
+    '/css/styleguide.css',
+  ]
+});
 
 fractal.set('project.title', 'NRRD Design System');
 
@@ -51,3 +61,5 @@ fractal.docs.set('statuses', {
 
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.web.set('builder.dest', __dirname + '/build');
+
+fractal.web.theme(customTheme);

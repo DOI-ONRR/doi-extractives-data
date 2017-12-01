@@ -1,0 +1,21 @@
+title: Color palette
+status: draft
+collated: true
+default: black
+variants:
+  - name: black
+    context:
+      className: color-black
+      text: #1c2326
+  - name: black-light
+    context:
+      className: color-black-light
+      text: #323c42
+  - name: gray-darkest
+    context:
+      className: color-gray-darkest
+      text: #43519
+  - name: gray-darker
+    context:
+      className: color-gray-darker
+      text: #5c7e7f

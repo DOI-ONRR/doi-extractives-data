@@ -1,4 +1,13 @@
-title: Example component
+title: Breadcrumbs
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: Breadcrumb
+variants:
+  - name: Breadcrumb
+    context:
+      className: breadcrumb
+      text: Breadcrumb link /
+  - name: Breadcrumb-iconic
+    context:
+      className: case-studies-content-icon
+      text: Breadcrumb link with icon

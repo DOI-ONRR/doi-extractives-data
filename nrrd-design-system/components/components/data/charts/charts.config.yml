@@ -1,4 +1,13 @@
-title: Example component
+title: Charts
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: Charts
+variants:
+  - name: Charts
+    context:
+      className: h3.cart-title
+      text: Bar charts
+  - name: Mobile-sparkbars
+    context:
+      className: hide-expanded.chart-title-small
+      text: Mobile sparkbar accordions!

@@ -1,4 +1,9 @@
-title: Example component
+title: Callout card
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: Card
+variants:
+  - name: Card
+    context:
+      className: card
+      text: Callout card, as used on the home page

@@ -1,4 +1,9 @@
-title: Example component
+title: Tables
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: TBD
+variants:
+  - name: TBD
+    context:
+      className: ?
+      text:

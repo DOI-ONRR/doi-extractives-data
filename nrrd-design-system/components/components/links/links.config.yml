@@ -1,4 +1,17 @@
-title: Example component
+title: Links
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: isolated
+variants:
+  - name: isolated
+    context:
+      className: link-charlie
+      text: Isolated text link
+  - name: sentence-bound
+    context:
+      className: link-alpha
+      text: Links mixed in with unlinked text should be underlined by default.
+  - name: icon-text-links
+    context:
+      className: link-charlie #not final class
+      text: Links with icons

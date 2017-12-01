@@ -1,4 +1,17 @@
-title: Example component
+title: Accordions
 status: draft
-context:
-    text: This is an example component!
+collated: true
+default: Hide-expanded
+variants:
+  - name: Hide-expanded
+    context:
+      className: aria-toggle-icon
+      text: Small toggle with icon
+  - name: Mobile-sticky-nav
+    context:
+      className: mobile_nav_header
+      text: Mobile sticky-header nav
+  - name: Mobile-accordion-panel
+    context:
+      className: revenues_subpage-steps_group_item
+      text: Mobile panel, as seen in Production process

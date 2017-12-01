@@ -1,0 +1,25 @@
+title: Glossary
+status: draft
+collated: true
+default: links
+variants:
+  - name: links
+    context:
+      className: term
+      text: Glossary term on page
+  - name: links-with-punctuation
+    context:
+      className: term-end
+      text: Glossary term to be followed by punctuation
+  - name: Glossary-accordion
+    context:
+      className: glossary-item
+      text: Term accordion in panel
+  - name: drawer-search
+    context:
+      className: drawer-search
+      text: Glossary search tool
+  - name: drawer
+    context:
+      className: drawer
+      text: Glossary drawer

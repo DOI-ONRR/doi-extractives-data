@@ -64,6 +64,36 @@ Thanks for taking the time to speak with us today!
 
 We expect the interview should take about 45 minutes. Does that still work for you? If you need a break or have questions at any point, please don’t hesitate to ask.
 
-*Informed consent:* With your permission, we’d like to take written notes today, but we will not include your name in our notes, or share the raw notes with anyone outside of our research team. Your participation in this interview is totally voluntary, and if at any time you want us to pause our note taking, or end the session early, please let us know. Do we have your consent to take anonymous notes? [wait for verbal consent]
+*Informed consent:* With your permission, we’d like to take written notes today, but we will not include your name in our notes, or share the raw notes with anyone outside of our research team. Your participation in this interview is totally voluntary, and if at any time you want us to pause our note taking, or end the session early, please let us know. 
+###### Do we have your consent to take anonymous notes? [wait for verbal consent]
 
 Do you have any questions before we get started?
+
+### General interview questions [~20 mins]
+We receive your contact information from the ONRR data services team, so my first question is, what prompted you to contact the data services team?
+
+* If their work comes up in this answer, but they haven’t told us exactly what they do: What exactly do you do for work?
+* What are the different roles involved in your work and how do the work together?
+* Who do ONRR and BLM work together?
+
+Could you talk me through the last time you sought out data from ONRR? [if you are on a video call and they mention any tasks that they did on the computer or websites they visited (especially statistics.onrr.gov!), ask if they’d be willing to share their screen and walk you through the process]
+* What were you trying to accomplish?
+* What info did you need? [probe on what formats they need]
+* Where did you go to find this info?
+* What did you do with this info once you found it?
+* What was challenging about this experience?
+* How would you expect the site to function?
+* What would have made it easier for you?
+* How often do you need to do similar tasks?
+
+Are there other sites/tools you frequently use in completing similar tasks?
+
+### Wrap up [~5 mins]
+Great, thanks so much! I have a few final questions for you, and then we’re all done.
+
+* Is there anything else you’d like to share with us?
+* Do you have any advice for us?
+* Do you know anyone else whom you think we should talk to, or who you think would be interested in giving feedback? *[if so, ask for their contact info or for an intro]*
+
+That’s it! Thank you so much for taking the time to chat with me today! If you have any follow-up questions, or if you want to be involved in future interviews or feedback sessions, please feel free to email me [provide contact info]. Have a great day!
+

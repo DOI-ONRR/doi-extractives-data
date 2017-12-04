@@ -43,5 +43,27 @@ Primary characteristics of study participants
 * TBD
 * TBD
 
+### Interviewee Info
+##### User type:
+##### Follow up OK:
+##### Interview lead:
+##### Note taker:
+##### Observer(s):
+##### Things to follow up on:
+##### Others to talk to:
 
+## Discussion guide
+### Intro [~5 mins]
+Thanks for taking the time to speak with us today!
 
+*Brief introduction – share your name and a description of your general duties on the team, and introduce any others who may be on the call with you.*
+
+*Very brief discussion of the purpose of today's session:* My goal today is to learn a bit about the work you do in relation to ONRR revenue data, to help us identify opportunities to make this information easier to find and use.
+
+*Interview details:* During this interview, we’ll ask you some basic questions about your work related to revenue data. There are no right or wrong or desirable or undesirable answers - please feel free to tell us what you really think and how you really feel, since your honest perspective is what will help us improve the way the Department of the Interior shares information internally and with the public.
+
+We expect the interview should take about 45 minutes. Does that still work for you? If you need a break or have questions at any point, please don’t hesitate to ask.
+
+*Informed consent:* With your permission, we’d like to take written notes today, but we will not include your name in our notes, or share the raw notes with anyone outside of our research team. Your participation in this interview is totally voluntary, and if at any time you want us to pause our note taking, or end the session early, please let us know. Do we have your consent to take anonymous notes? [wait for verbal consent]
+
+Do you have any questions before we get started?

@@ -8,9 +8,10 @@ breadcrumb:
 ---
 
 > Explore this site for [maps and charts]({{ site.baseurl }}/explore/) of extractive industries data, [12 case studies]({{ site.baseurl }}/case-studies/) about how extractive industries have affected specific counties, or [download data]({{ site.baseurl }}/downloads/).
+
 <!--Commenting out 2017 version until final is ready to publish-->
-<!--
-## 2017 Executive Summary
+
+<!--## 2017 Executive Summary
 
 This report outlines progress made by the Department of the Interior and the Office of Natural Resource Revenue (ONRR) in 2017 on continuing to build upon the efforts of the Extractive Industries Transparency Initiative (EITI). In 2017, the U.S. withdrew from EITI as an Implementing Country, but will remain fully committed to institutionalizing the EITI principles of transparency and accountability.
 

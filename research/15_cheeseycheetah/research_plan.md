@@ -21,13 +21,14 @@ A user interview will be held remotely with 5-10 participants. Each participant 
 
 ### Participants
 Primary characteristics of study participants
-Internal to Department of Interior
-Requires ONRR data to perform work
-Requests data from data services
-Aware of the statistics.doi.gov website
-Schedule
+⋅⋅* Internal to Department of Interior
+⋅⋅* Requires ONRR data to perform work
+⋅⋅* Requests data from data services
+⋅⋅* Aware of the statistics.doi.gov website
+
+### Schedule
 Recruiting: Begins week of 11/20/17
 Study: First interview 11/28/17 (ongoing)
-Findings
-Script 
-TBD
+Findings: TBD
+
+### Script 

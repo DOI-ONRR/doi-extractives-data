@@ -175,4 +175,6 @@ This case study is current as of July 2017. Many data sources are updated regula
 
 [^31]: Railroad Commission of Texas, [Oil and Gas Regulation and Cleanup Program, Annual Report — Fiscal Year 2016 (PDF)](http://www.rrc.texas.gov/media/37219/ogrc-annual-report-2016.pdf), Table 5
 
-[^32]: Ibid.; specific fiscal costs to municipalities not specified.
+[^32]: Ibid.
+
+[^33]: Ibid.; specific fiscal costs to municipalities not specified.

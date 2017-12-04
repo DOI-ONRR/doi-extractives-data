@@ -29,9 +29,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 249893000
+      value: 249874000
       rank: 2
-      percent: 13.66
+      percent: 13.65
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -48,9 +48,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 235510000
+      value: 235491000
       rank: 2
-      percent: 12.06
+      percent: 12.05
   '2010':
     - product: Natural Gas
       name: Natural Gas
@@ -87,9 +87,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 192401000
+      value: 192368000
       rank: 4
-      percent: 8.09
+      percent: 8.1
   '2013':
     - product: Natural Gas
       name: Natural Gas
@@ -100,7 +100,7 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 187923000
+      value: 187954000
       rank: 4
       percent: 6.9
   '2014':
@@ -113,9 +113,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 181130000
+      value: 181175000
       rank: 4
-      percent: 5.67
+      percent: 5.66
   '2015':
     - product: Natural Gas
       name: Natural Gas
@@ -126,22 +126,22 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 176235000
+      value: 176241000
       rank: 4
       percent: 5.13
   '2016':
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 3229968000
+      value: 3229946000
       rank: 3
-      percent: 9.9
+      percent: 9.89
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 179169000
+      value: 179170000
       rank: 4
-      percent: 5.53
+      percent: 5.52
 revenue:
   '2007':
     - product: Oil & Gas (Non-Royalty)

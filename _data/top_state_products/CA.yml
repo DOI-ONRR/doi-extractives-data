@@ -72,7 +72,7 @@ all_production:
       units: bbl
       value: 218518000
       rank: 3
-      percent: 11.8
+      percent: 11.79
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
@@ -121,7 +121,7 @@ all_production:
       units: bbl
       value: 214533000
       rank: 3
-      percent: 11.73
+      percent: 11.72
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
@@ -158,7 +158,7 @@ all_production:
       units: bbl
       value: 207262000
       rank: 3
-      percent: 10.62
+      percent: 10.61
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
@@ -293,7 +293,7 @@ all_production:
       units: bbl
       value: 197346000
       rank: 3
-      percent: 8.3
+      percent: 8.31
     - product: Wind
       name: Wind
       units: Mwh
@@ -379,7 +379,7 @@ all_production:
       units: bbl
       value: 204699000
       rank: 3
-      percent: 6.41
+      percent: 6.4
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
@@ -463,15 +463,15 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 186079000
+      value: 187565000
       rank: 3
-      percent: 5.74
+      percent: 5.77
     - product: Wind
       name: Wind
       units: Mwh
       value: 13698108.27
       rank: 5
-      percent: 6.04
+      percent: 6.05
 federal_production:
   '2007':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'

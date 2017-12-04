@@ -10,51 +10,51 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 112530000
+      value: 112532000
       rank: 4
       percent: 5.63
   '2011':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 152398000
+      value: 152399000
       rank: 4
       percent: 7.4
   '2012':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 242330000
+      value: 242319000
       rank: 2
-      percent: 10.19
+      percent: 10.21
   '2013':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 312350000
+      value: 312164000
       rank: 2
-      percent: 11.46
+      percent: 11.45
   '2014':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 394655000
+      value: 394468000
       rank: 2
-      percent: 12.35
+      percent: 12.33
   '2015':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 429497000
+      value: 429447000
       rank: 2
-      percent: 12.51
+      percent: 12.5
   '2016':
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 377968000
+      value: 378439000
       rank: 2
-      percent: 11.66
+      percent: 11.65
 federal_production:
   '2007':
     - product: Oil (bbl)

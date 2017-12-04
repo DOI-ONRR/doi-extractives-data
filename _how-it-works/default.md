@@ -1,5 +1,5 @@
 ---
-title: How it works
+title: How It Works
 layout: default
 permalink: /how-it-works/
 nav_items:
@@ -9,8 +9,6 @@ nav_items:
     title: Natural resource ownership
   - name: laws
     title: Laws and regulations
-  - name: tribal-overview
-    title: Tribal overview
   - name: process
     title: Resources to revenue
     subnav_items:
@@ -55,31 +53,6 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="ownership" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
-      <div class="container landing-section">
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Fossil fuels</a></h3>
-          <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Learn about oil, gas, and coal</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Nonenergy minerals</a></h3>
-          <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/nonenergy-minerals/">Learn about nonenergy minerals</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/renewables/">Renewables</a></h3>
-          <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/renewables/">Learn about renewable energy</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/forestry/">Forestry</a></h3>
-          <p>Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/forestry/">Learn about forests</a></p>
-        </div>
-      </div>
-    </section>
-    <section class="container">
       <h2 id="laws" class="h2-bar">What laws and regulations govern natural resource extraction in the U.S.?</h2>
       <div class="container landing-section">
         <div>
@@ -105,33 +78,10 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="tribal-overview" class="h2-bar">How are natural resources on tribal land governed?</h2>
-      <div class="container landing-section">
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-ownership-governance/">Ownership and governance</a></h3>
-          <p>Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-ownership-governance/">Learn about governance on tribal land</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-production/">Production</a></h3>
-          <p>Extracting natural resources on tribal land involves unique processes and multiple stakeholders.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-production/">Learn about production on tribal land</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and OST disbursed $560.4 million to tribes and allottees.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-economic-impact/">Economic impact</a></h3>
-          <p>Extraction affects tribal economies in a number of ways, though effects vary widely depending on the level of extraction on and details of lease agreements.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-economic-impact/">Learn about economic impact</a></p>
-        </div>
-      </div>
-    </section>
-    <section class="container">
       <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-      <h3 id="production" class="h3-bar">The production process</h3>
+      <h3 id="production" class="h3-bar">Production</h3>
+      <p class="landing-intro_link">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
+      <p><a href="{{site.baseurl}}/how-it-works/production/">Learn about production</a></p>
       <div class="container landing-section landing-section-with-graphics">
         <div class="landing-oil_gas">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a>{% include svg/how-main-icon-oil.svg %}</h4>
@@ -162,7 +112,7 @@ selector: list
           </div>
         </div>
       </div>
-      <h3 id="revenues" class="h3-bar">Understanding federal revenues</h3>
+      <h3 id="revenues" class="h3-bar">Revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       <div class="container landing-section">
@@ -185,16 +135,6 @@ selector: list
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
           <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
           <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
-        </div>
-        <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Leasing process: offshore oil, gas, and sulphur</a></h4>
-          <p>Understand the details of the leasing process for offshore liquid minerals.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Learn about offshore leases</a></p>
-        </div>
-        <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Leasing process: onshore oil and gas</a></h4>
-          <p>Understand the details of the leasing process for onshore liquid minerals.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Learn about onshore leases</a></p>
         </div>
       </div>
     </section>

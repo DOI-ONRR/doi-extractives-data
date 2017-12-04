@@ -140,7 +140,7 @@ all_production:
       units: Mcf
       value: 4812983000
       rank: 2
-      percent: 14.62
+      percent: 14.63
     - product: Other biomass
       name: Other biomass
       units: Mwh
@@ -157,18 +157,12 @@ all_production:
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
-      value: 5313258000
+      value: 5263973000
       rank: 2
-      percent: 16.28
+      percent: 16.12
     - product: Other biomass
       name: Other biomass
       units: Mwh
       value: 1922443.67
       rank: 3
       percent: 8.71
-    - product: Coal
-      name: Coal
-      units: short tons
-      value: 45719786
-      rank: 3
-      percent: 6.28

@@ -18,7 +18,7 @@ all_production:
       units: bbl
       value: 76978000
       rank: 4
-      percent: 4.16
+      percent: 4.15
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
@@ -29,9 +29,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 72347000
+      value: 72349000
       rank: 4
-      percent: 3.96
+      percent: 3.95
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
@@ -54,9 +54,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 68823000
+      value: 68825000
       rank: 5
-      percent: 3.53
+      percent: 3.52
   '2010':
     - product: Natural Gas
       name: Natural Gas
@@ -109,6 +109,13 @@ all_production:
       value: 2704256
       rank: 5
       percent: 6.76
+  '2016':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 1869601000
+      rank: 5
+      percent: 5.73
 revenue:
   '2006':
     - product: Gas

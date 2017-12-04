@@ -42,14 +42,14 @@ module EITI
       str
     end
 
-    # attempt to look up a term in a hash, and return the value if that
-    # key exists; otherwise, return the key
+    # attempt to look up a term in a dictionary (hash),
+    # and return the value if that key exists; otherwise, return the key
     def lookup(term, dict)
       (dict.key? term) ? dict[term] : term
     end
 
-    # create an integer range array from either a start and end number,
-    # or a 2-element array
+    # create an integer range array from either a start and end number, or
+    # a 2-element array
     def range(start, finish = nil)
       if start.is_a? Array
         (start, finish) = start
@@ -79,9 +79,11 @@ module EITI
         (str.include? term) ? true : nil
       end
     end
-
     # takes a range and returns a list of numbers within that range
-    # incremented by 1:
+    # incrimented by 1
+    # Only accepts an Array. Otherwise returns the range
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # e.g '[0,5]' => '[0,5]'
     def create_list(range)
       if range.is_a? Array
         arr = []
@@ -97,7 +99,11 @@ module EITI
     end
 
     # takes a range and returns a list of numbers within that range
-    # incremented by 1:
+    # incrimented by 1
+    # e.g '[0,5]' => [0,1,2,3,4,5]
+    # e.g [0,5] => [0,1,2,3,4,5]
+    # If the input is not a string, it returns the input value
+    # e.g 5 => 5
     def to_list(range)
       if range.is_a? Array
         create_list(range)
@@ -111,6 +117,10 @@ module EITI
 
     # formats a URL-like string with either a data Hash or a
     # placeholder string:
+    #
+    # format_url("foo/:bar/baz", {"bar" => "x"}) == "foo/x/baz"
+    # format_url("foo/%/baz", {"id" => "x"}) == "foo/x/baz"
+    # format_url("foo/%/baz", "x") == "foo/x/baz"
     def format_url(format, data)
       placeholder = "%"
       pattern = /:\w+/
@@ -129,6 +139,7 @@ module EITI
         return format
       end
     end
+
   end
 end
 

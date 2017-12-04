@@ -19,7 +19,7 @@ all_production:
       units: Mwh
       value: 14113110.6
       rank: 4
-      percent: 6.22
+      percent: 6.23
 revenue:
   '2006':
     - product: Helium

@@ -107,7 +107,7 @@ This case study is current as of July 2017. Many data sources are updated regula
     <tr>
       <td>Geology and History</td>
       <td>Population figures for 2016 are from the U.S. Census Bureau. The North Slope Borough published information on oil reserves for 2013 in its <a href="http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf">Oil and Gas Technical Report</a>.</td>
-      <td>The North Slope Borough did not publish updated Oil and Gas Technical Reports for 2014, 2015, or 2016. </td>
+      <td>The North Slope Borough did not publish updated Oil and Gas Technical Reports for 2014, 2015, or 2016.</td>
     </tr>
     <tr>
       <td>Production</td>

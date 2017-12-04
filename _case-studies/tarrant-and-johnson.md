@@ -49,7 +49,7 @@ In 2016, Tarrant and Johnson counties produced a combined 765.5 million cubic fe
 
 ## Employment
 
-The boom in natural gas production in the Barnett Shale over the past decade increased employment in this sector. Based on data from the U.S. Census Bureau, the number of residents employed in the oil and gas industries has increased by more than 18% in the past decade.[^12] In 2016, the oil and gas industry (including extraction, drilling, and support services) employed 7,303 residents, down from 9,471 in 2015. This represents 0.93% of the two counties’ total employment of 783,299 and less than 0.05% of their total population of 2.2 million.[^13]
+The boom in natural gas production in the Barnett Shale over the past decade increased employment in this sector. Based on data from the U.S. Census Bureau, the number of residents employed in the oil and gas industries has increased by more than 18% in the past decade.[^12] In 2016, the oil and gas industry (including extraction, drilling, and support services) employed 7,303 residents, down from 9,471 in 2015. This represents 0.93% of the two counties’ total employment of 783,299 and less than 0.5% of their total population of 2.2 million.[^13]
 
 ### Wage and salary employment in the oil and gas industry[^14]
 

@@ -27,6 +27,15 @@ county-level, historic preservation and lwcf data to be used by the site:
 * `tranform-*.js` all transform parts of the information, such as column names.
    They do not need to be edited for data updates.
 
+### To update data:
+
+1. Update `county-level.tsv`, `historic-preservation.tsv` and/or `lwcf` data
+   with updated tsv data from ONNR.
+2. Ensure the column headers stay the same.
+3. Run `make data/disbursements`
+4. Ensure the `_data/federal_disbursements.yml` file changed after the make
+command runs.
+
 [HPF]: http://ncshpo.org/issues/historic-preservation-fund/
 [DOI]: https://www.doi.gov/
 [ONRR]: https://www.onrr.gov/

@@ -1,0 +1,12 @@
+title: Official banner
+status: draft
+variants:
+  - name: banner
+    context:
+      className: banner
+      text: Official U.S. website banner
+
+
+# This is the banner that lives at the top of every page.
+# It links people to our github issues so that we can get
+# input from the American people.

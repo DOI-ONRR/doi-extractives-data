@@ -15,3 +15,7 @@ variants:
     context:
       className: button-tertiary
       text: Tertiary button
+  - name: toggle-filter
+    context:
+      className: toggle-filter
+      text: Filter toggle

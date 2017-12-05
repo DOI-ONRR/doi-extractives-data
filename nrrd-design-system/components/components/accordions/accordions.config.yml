@@ -9,9 +9,17 @@ variants:
       text: Small toggle with icon
   - name: Mobile-sticky-nav
     context:
-      className: mobile_nav_header
+      className: Mobile_nav_header
       text: Mobile sticky-header nav
   - name: Mobile-accordion-panel
     context:
       className: revenues_subpage-steps_group_item
       text: Mobile panel, as seen in Production process
+  - name: Expandable-panel
+    context:
+      className: expandable-panel
+      text:
+  - name: Glossary-entry
+    context:
+      className: a
+      text: View glossary accordion style

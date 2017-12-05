@@ -4,7 +4,7 @@ This directory contains data concerning federal revenue disbursements
 to various federal and state entities such as parks and conservation funds.
 This data was provided to 18F by the [Department of the Interior][DOI].
 
-* `county-level.tsv` details all federal disbursements from 2012 to 2016,
+* `county-level.tsv` details all federal disbursements from 2012 to 2017,
   by state or fund, county within states, and includes [Historic
   Preservation Fund][HPF] disbursements.
 * `historic-preservation.tsv` more specifically details disbursements to

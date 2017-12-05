@@ -26,7 +26,7 @@ const API_BASE_PARAMS = {
 };
 
 // where to write product-specific files
-const OUTPUT_FILENAME_TEMPLATE = 'product/{product}.tsv';
+const OUTPUT_FILENAME_TEMPLATE = __dirname + '/product/{product}.tsv';
 
 var config;
 

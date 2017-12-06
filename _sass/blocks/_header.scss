@@ -140,7 +140,7 @@ header,
 }
 
 .header-nav_item_link {
-  @include font-size(.875);
+  @include font-size(0.875);
   color: $gray-darkest;
   font-weight: $weight-light;
   text-decoration: none;

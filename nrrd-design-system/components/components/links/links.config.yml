@@ -13,5 +13,13 @@ variants:
       text: Links mixed in with unlinked text should be underlined by default.
   - name: icon-text-links
     context:
-      className: link-charlie #not final class
-      text: Links with icons
+      className: link-icon-doc #new
+      text: Link with document icon
+  - name: term
+    context:
+      className: term
+      text: Glossary-term link
+  - name: term term-end
+    context:
+      className: term-end #requires .term
+      text: Glossary-term link followed by punctuation

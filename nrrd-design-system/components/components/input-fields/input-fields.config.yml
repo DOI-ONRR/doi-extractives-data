@@ -1,9 +1,9 @@
 title: Text input fields
 status: draft
 collated: true
-default: default
+default: filter-search
 variants:
-  - name: default
+  - name: filter-search
     context:
-      className: NOTSURE
+      className: filter-search #from fed rev by co, needs attention
       text: Text input field

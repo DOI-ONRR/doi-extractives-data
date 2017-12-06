@@ -11,10 +11,6 @@ variants:
     context:
       className:
       text:
-  - name: Image-hero-text-sidebar
-    context:
-      className:
-      text:
   - name: Map-hero-text-sidebar
     context:
       className:

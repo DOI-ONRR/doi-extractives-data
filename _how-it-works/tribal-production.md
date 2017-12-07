@@ -70,13 +70,13 @@ Key documents and resources:
 
 BIA, with the concurrence of the Indian trust beneficiary, develops and maintains a list of leasable tracts that have mineral potential as evidenced by company tract nominations, mineral potential assessment findings (if applicable), lease history, and other factors. {{ "BLM" | term }} conducts mineral potential assessments if requested by either BIA or IEED. DEMD provides [atlases of oil and gas plays](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/oilgas/index.htm) on multiple reservations. The [Energy and Mineral Development Program](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm) funds energy and mineral pre-development studies for tribes.
 
-BLM assesses a fair market value recommendation for the mineral and provides that to BIA, who will ultimately manage any lease sale. This includes a royalty rate, rental rate, and minimum bonus. If there is to be a lease sale, BIA then drafts the lease terms with BLM and ONRR providing comments. BIA, with BLM as a technical advisor, is responsible for any NEPA documents necessary to support leasing. 
+BLM assesses a fair market value recommendation for the mineral and provides that to BIA, who will ultimately manage any lease sale. This includes a royalty rate, rental rate, and minimum bonus. If there is to be a lease sale, BIA then drafts the lease terms with BLM and ONRR providing comments. BIA, with BLM as a technical advisor, is responsible for any NEPA documents necessary to support leasing.
 
 **Lease**
 
-BIA manages the sale of a lease. It will provide notice of an upcoming sale to the public, negotiate and accept the lease bid (including the bonus), and approve or disapprove the lease, once the prospective lessee has obtained the required consents of the Indian mineral owners. BIA is responsible for granting rights-of-way across trust properties and, generally, it also approves surface-use agreements necessary for the execution of the lease. During this process, BIA will provide relevant information to BLM and ONRR and may request information from both agencies on the lessee and their bid. BIA, with advice from BLM, will also determine the bond the company must provide as security for the lease.  Prior to approving the lease to the operator, BIA may ask BLM and ONRR to report whether or not the operator’s other operations are compliant and their payments are up-to-date. 
+BIA manages the sale of a lease. It will provide notice of an upcoming sale to the public, negotiate and accept the lease bid (including the bonus), and approve or disapprove the lease, once the prospective lessee has obtained the required consents of the Indian mineral owners. BIA is responsible for granting rights-of-way across trust properties and, generally, it also approves surface-use agreements necessary for the execution of the lease. During this process, BIA will provide relevant information to BLM and ONRR and may request information from both agencies on the lessee and their bid. BIA, with advice from BLM, will also determine the bond the company must provide as security for the lease.  Prior to approving the lease to the operator, BIA may ask BLM and ONRR to report whether or not the operator’s other operations are compliant and their payments are up-to-date.
 
-If the lease occurs as a part of a minerals development agreement between the operator and the tribe, then IEED, upon request of the tribe, takes the lead in reviewing the agreement with support from BIA, BLM, and ONRR. The Secretary then determines, based on their review, if the agreement is in the “best interest” of the Indian mineral owner(s). The agreement is then approved or disapproved. 
+If the lease occurs as a part of a minerals development agreement between the operator and the tribe, then IEED, upon request of the tribe, takes the lead in reviewing the agreement with support from BIA, BLM, and ONRR. The Secretary then determines, based on their review, if the agreement is in the “best interest” of the Indian mineral owner(s). The agreement is then approved or disapproved.
 
 **Explore**
 
@@ -88,15 +88,15 @@ For more about APDs, [learn more about the process of developing oil and gas on 
 
 BLM regulates the development, decommission, and reclamation of wells. Prior to drilling, the lease holder must submit an {{ "APD" | term }} to BLM. BLM approves or denies these permits, and is responsible for the administration and acceptance of reclamation of the lease. BLM and BIA determine together their roles and responsibilities to ensure that the APD meets NEPA requirements.
 
-BLM holds responsibility for inspections and operations-related enforcement as well as authorizations related to the development and operation of drilling. Those authorizations might include approving the disposal of wastewater, venting or flaring, or well-deepening. It might also include determining if avoidable loss of production has occurred or if drilling will drain oil from underneath neighboring lands. BLM and ONRR advise BIA on gas storage agreements as necessary. 
+BLM holds responsibility for inspections and operations-related enforcement as well as authorizations related to the development and operation of drilling. Those authorizations might include approving the disposal of wastewater, venting or flaring, or well-deepening. It might also include determining if avoidable loss of production has occurred or if drilling will drain oil from underneath neighboring lands. BLM and ONRR advise BIA on gas storage agreements as necessary.
 
 When production does occur, BLM notifies BIA and ONRR. ONRR begins to collect and monitor production data and provide that data to BLM and begin to collect payments from the operator and, if applicable, co-lease holders. As production continues, ONRR collects, accounts for, and deposits royalties and rentals from the operator. ONRR distributes revenues accordingly.
 
 Read more about [revenue collection and distribution]({{ site.baseurl }}/how-it-works/tribal-revenue/).
 
-Any changes to the lease or operations are shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond. 
+Any changes to the lease or operations are shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond.
 
-When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM. 
+When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM.
 
 A mineral trust owner may wish to assume the operation or ownership of a well. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, [BIA notifies ONRR of new fractional interests or other changes]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/).
 
@@ -118,37 +118,37 @@ If the lease occurs as a part of a minerals development agreement between the op
 
 **Explore**
 
-BLM approves all exploration plans for trust lands. If the contract requires consultation, BLM consults with BIA and the tribal mineral owner prior to approval of the exploration plan. For allotted lands, BLM consults with BIA. As the responsible agency, BLM must ensure that the exploration plan process complies with all facets of NEPA. 
+BLM approves all exploration plans for trust lands. If the contract requires consultation, BLM consults with BIA and the tribal mineral owner prior to approval of the exploration plan. For allotted lands, BLM consults with BIA. As the responsible agency, BLM must ensure that the exploration plan process complies with all facets of NEPA.
 
 **Develop, decommission, and reclaim**
 
-BLM regulates the development and reclamation of mines. Prior to mining, the lease holder must submit a mine plan to BLM. BIA conducts an on-site inspection and BLM then approves or denies these plans. BLM is therefore also responsible for the administration and acceptance of reclamation of the lease. BLM and BIA determine together their roles and responsibilities to ensure that the plan meets NEPA requirements. If the contract requires consultation with the tribe, BLM consults with BIA and the tribal mineral owner prior to approving a mine plan. For allotted lands, BLM consults with BIA. 
+BLM regulates the development and reclamation of mines. Prior to mining, the lease holder must submit a mine plan to BLM. BIA conducts an on-site inspection and BLM then approves or denies these plans. BLM is therefore also responsible for the administration and acceptance of reclamation of the lease. BLM and BIA determine together their roles and responsibilities to ensure that the plan meets NEPA requirements. If the contract requires consultation with the tribe, BLM consults with BIA and the tribal mineral owner prior to approving a mine plan. For allotted lands, BLM consults with BIA.
 
-BLM holds responsibility for inspections and operations-related enforcement, including the disposal of mine waste. 
+BLM holds responsibility for inspections and operations-related enforcement, including the disposal of mine waste.
 
 When production does occur, BLM notifies BIA and ONRR. ONRR begins to collect and monitor production data, provide that data to BLM, and collect payments from the operator. As production continues, BIA collects, accounts for, and deposits royalties and rentals from the operator. ONRR will distribute revenues accordingly. You can read more about [revenue collection and distribution here]({{ site.baseurl }}/how-it-works/tribal-revenue/).
 
-Any changes to the lease or operations is shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond. 
+Any changes to the lease or operations is shared amongst the three organizations. An order to cease production can be initiated by BLM or requested by BIA or ONRR. A lease may be cancelled by BIA, coordinating with BLM and ONRR. ONRR can also request that a lease be cancelled.  BLM (for operations) or ONRR (for royalty or bankruptcy) notifies BIA if it is necessary to call an operator’s lease bond.
 
-When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM. 
+When decommissioning and reclamation occurs, BLM monitors the lease holder’s actions for reclamation plan compliance. Before final acceptance of the reclamation, BIA can jointly inspect the area with BLM.
 
-A mineral trust owner may wish to assume the operation or ownership of a mine. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, [BIA notifies ONRR of new fractional interests or other changes]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/). 
+A mineral trust owner may wish to assume the operation or ownership of a mine. If they do, BLM provides a recommendation and advice on the condition of the well, estimated remaining production, the final cost of abandonment and reclamation, and a final value to the trust owner. ONRR provides BIA with the current account of the operator’s payments. Additionally, should there be a change in trust status, [BIA notifies ONRR of new fractional interests or other changes]({{ site.baseurl }}/how-it-works/tribal-ownership-governance/).
 
 ### Coal
 
 **Plan**
 
-Planning begins with either BIA or IEED requesting an evaluation of mineral potential of specific trust lands by BLM. If mineral potential exists, BLM analyses tracts available for lease. BIA then identifies which unleased tracts can be leased. The [Energy and Mineral Development Program funds energy and mineral pre-development studies for tribes](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm).     
+Planning begins with either BIA or IEED requesting an evaluation of mineral potential of specific trust lands by BLM. If mineral potential exists, BLM analyses tracts available for lease. BIA then identifies which unleased tracts can be leased. The [Energy and Mineral Development Program funds energy and mineral pre-development studies for tribes](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm).
 
 BLM assesses a fair market value recommendation for the mineral and provides that to BIA, who will ultimately manage any lease sale. This includes a royalty rate, rental rate, and minimum bonus. If there is to be a lease sale, BIA then drafts the lease terms with BLM and ONRR providing comments. BIA, with BLM as a technical advisor, is responsible for any NEPA documents necessary to support leasing.
 
 **Explore**
 
-Exploration begins with a prospecting permit application to BIA or a request to BIA for assistance from the Indian mineral owner(s). BIA approves or denies this permit and establishes a performance bond for the permit. BLM approves or denies the actual exploration plan. BIA then monitors compliance with the prospecting permit while BLM does so for the exploration plan. Additional exploration can occur after the issuance of a lease and under subsequent exploration plans. 
+Exploration begins with a prospecting permit application to BIA or a request to BIA for assistance from the Indian mineral owner(s). BIA approves or denies this permit and establishes a performance bond for the permit. BLM approves or denies the actual exploration plan. BIA then monitors compliance with the prospecting permit while BLM does so for the exploration plan. Additional exploration can occur after the issuance of a lease and under subsequent exploration plans.
 
 **Lease**
 
-The Indian mineral owner and the applicant then enter into a minerals agreement or a lease. If the mining will occur as a part of a minerals agreement under the Indian Mineral Development Act, BIA, BLM, and {{ "OSMRE" | term }} provide technical assistance during negotiation. BIA, BLM, and OSMRE then review the agreement so the Secretary of the Interior can approve or deny the agreement. 
+The Indian mineral owner and the applicant then enter into a minerals agreement or a lease. If the mining will occur as a part of a minerals agreement under the Indian Mineral Development Act, BIA, BLM, and {{ "OSMRE" | term }} provide technical assistance during negotiation. BIA, BLM, and OSMRE then review the agreement so the Secretary of the Interior can approve or deny the agreement.
 
 BLM provides appraisal and bond recommendations to BIA. BIA makes sure that the leasing process complies with NEPA.
 
@@ -156,7 +156,7 @@ BLM provides appraisal and bond recommendations to BIA. BIA makes sure that the 
 
 To begin mining, the operator submits a permit application to the tribal regulatory authority or OSMRE. This occurs under laws and regulations established by the [Surface Mining Control and Reclamation Act (SMCRA) of 1977](https://www.osmre.gov/lrg.shtm). BIA, BLM, the tribe, and other federal agencies review the application once it has been determined to be complete. It will have to comply with NEPA. BLM takes the lead on issues related to coal mining, while the tribal regulatory authority or OSMRE lead on issues of reclamation and post-mining land uses.
 
-The federal agencies and the tribe split enforcement depending on the activity: 
+The federal agencies and the tribe split enforcement depending on the activity:
 
 - The tribal regulatory authority or OSMRE monitors, inspects, and enforces SMCRA permit requirements related to surface effects and reclamation of the area mined
 - BLM monitors, inspects, and enforces the mining plan requirements for coal development, production, and resource recovery
@@ -188,13 +188,13 @@ Key documents and resources:
   + [Building Green Economies on Tribal Lands (PDF)](https://www.bia.gov/cs/groups/xieed/documents/text/idc010168.pdf)
   + [Information on tribes actively seeking wind development companies and investors](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm)
 
-BIA reviews and approves the development of renewable energy projects related to sun, wind, and biomass since these projects only involve surface land use. BLM and ONRR, while kept informed, do not have statutory authority to review or approve. OST may be involved in the accounting for and distribution of revenues from any leases or right-of-way agreements. 
+BIA reviews and approves the development of renewable energy projects related to sun, wind, and biomass since these projects only involve surface land use. BLM and ONRR, while kept informed, do not have statutory authority to review or approve. OST may be involved in the accounting for and distribution of revenues from any leases or right-of-way agreements.
 
-Geothermal energy resources constitute the one exception. Leases or agreements covering geothermal energy resources are treated as fluid minerals, much like [oil and gas](#oil-and-gas). The information in this section covers wind and solar leases. 
+Geothermal energy resources constitute the one exception. Leases or agreements covering geothermal energy resources are treated as fluid minerals, much like [oil and gas](#oil-and-gas). The information in this section covers wind and solar leases.
 
 **Plan**
 
-DEMD works with tribes and individuals to evaluate and confirm renewable energy resources, conduct feasibility studies, and identify business development opportunities. DEMD provides [more information on renewable energy opportunities](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm) and the [Energy and Mineral Development Program funding for energy and mineral pre-development studies](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm). 
+DEMD works with tribes and individuals to evaluate and confirm renewable energy resources, conduct feasibility studies, and identify business development opportunities. DEMD provides [more information on renewable energy opportunities](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm) and the [Energy and Mineral Development Program funding for energy and mineral pre-development studies](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm).
 
 DEMD provides a [broad overview of the process for developing renewable energy projects (PDF)](https://www.bia.gov/cs/groups/xbia/documents/document/idc1-031905.pdf). DEMD works with the tribe to create an opportunity assessment and study the feasibility of energy development on tribal land.
 
@@ -202,7 +202,7 @@ During the planning phase, the tribe decides the path it will take to developing
 
 **Explore**
 
-In addition to the opportunity assessment and feasibility studies conducted by DEMD, a more detailed evaluation of the energy potential of a project may be necessary, particularly for wind. If a developer other than the tribe will be conducting a wind energy evaluation, then a separate wind energy evaluation lease (WEEL) must be obtained. These short-term leases authorize possession of Indian land for the purpose of installing, operating, and maintaining instrumentation and associated infrastructure to evaluate wind resources for electricity generation. These leases have an initial term of no more than three years and must be approved by BIA. Among other requirements, these applications must include compensation for the tribe or individual landowner, tribal authorization (if on tribal land), acknowledgement that the lease complies with applicable tribal law, site assessments, and environmental, and archaeological reports. The lease must stipulate the equipment installation plan and a restoration and reclamation plan. WEELs do not require a performance bond. Importantly, the tribe or individual owns the energy resource information created by the project. 
+In addition to the opportunity assessment and feasibility studies conducted by DEMD, a more detailed evaluation of the energy potential of a project may be necessary, particularly for wind. If a developer other than the tribe will be conducting a wind energy evaluation, then a separate wind energy evaluation lease (WEEL) must be obtained. These short-term leases authorize possession of Indian land for the purpose of installing, operating, and maintaining instrumentation and associated infrastructure to evaluate wind resources for electricity generation. These leases have an initial term of no more than three years and must be approved by BIA. Among other requirements, these applications must include compensation for the tribe or individual landowner, tribal authorization (if on tribal land), acknowledgement that the lease complies with applicable tribal law, site assessments, and environmental, and archaeological reports. The lease must stipulate the equipment installation plan and a restoration and reclamation plan. WEELs do not require a performance bond. Importantly, the tribe or individual owns the energy resource information created by the project.
 
 **Lease**
 
@@ -212,7 +212,7 @@ BIA must approve a WSR lease, unless the tribe has previously been approved to n
 
 Generally, a WSR may not exceed fifty years (a 25-year base term with a 25-year option), though exceptions exist. BIA defers to a tribe’s determination of the lease term. The payments under a WSR must be satisfactory to the tribe. If the project will be built on tribal land and a tribe so desires, it may request a valuation to determine the fair market rental. If the project will be developed on individual trust land a valuation is usually required. An economic analysis from IEED may substitute for a valuation. The payments made under a WSR may go directly to Indian landowners or through BIA. The tribe or individual may have the option of receiving in-kind payments.
 
-For BIA to approve a WSR, the application must include a tribal authorization for the project (if on tribal land), any valuation, proof of insurance, a performance bond, a statement that the project is in conformance with applicable tribal law, environmental and archaeological reports, a resource development plan, a restoration and reclamation plan, proof of technical capability (unless the developer is owned by the tribe), among other items. The review of the application occurs before or during the NEPA review and any valuation if requested by the Indian landowners. 
+For BIA to approve a WSR, the application must include a tribal authorization for the project (if on tribal land), any valuation, proof of insurance, a performance bond, a statement that the project is in conformance with applicable tribal law, environmental and archaeological reports, a resource development plan, a restoration and reclamation plan, proof of technical capability (unless the developer is owned by the tribe), among other items. The review of the application occurs before or during the NEPA review and any valuation if requested by the Indian landowners.
 
 **Develop, decommission, and reclaim**
 

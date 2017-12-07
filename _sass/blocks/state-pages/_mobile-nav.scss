@@ -26,7 +26,7 @@
 
   button {
     background-color: $white;
-    border-bottom: 2px solid $light-green;
+    border-bottom: 2px solid $green-light;
     border-radius: 0;
     float: right;
     margin-bottom: initial;
@@ -46,7 +46,7 @@
   }
 
   .mobile-nav-list-items {
-    border-top: 2px solid $light-green;
+    border-top: 2px solid $green-light;
     display: block;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;

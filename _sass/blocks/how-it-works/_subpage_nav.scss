@@ -16,7 +16,7 @@
   }
 
   a {
-    color: $dark-gray;
+    color: $gray-darkest;
   }
 }
 
@@ -37,10 +37,10 @@
   padding: 8px 10px;
 
   &.active {
-    background-color: $light-gray;
-    border-left: 1px solid $neutral-gray;
-    border-right: 1px solid $neutral-gray;
-    border-top: 1px solid $neutral-gray;
+    background-color: $gray-pale;
+    border-left: 1px solid $gray-light;
+    border-right: 1px solid $gray-light;
+    border-top: 1px solid $gray-light;
     font-weight: $weight-book;
   }
 

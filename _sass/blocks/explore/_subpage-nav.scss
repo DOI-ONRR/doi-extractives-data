@@ -7,6 +7,7 @@
   ul {
     display: block;
     list-style: none;
+    padding-left: 0;
 
     @include respond-to(medium-up) {
       margin-bottom: 0;
@@ -22,7 +23,7 @@
   padding: 2px 8px;
 
   a {
-    color: $dark-gray;
+    color: $gray-darkest;
     text-decoration: none;
   }
 
@@ -31,10 +32,10 @@
   }
 
   &.active {
-    border-color: $dark-blue;
+    border-color: $blue;
 
     a {
-      color: $dark-blue;
+      color: $blue;
       font-weight: $weight-bold;
     }
   }
@@ -46,4 +47,3 @@
     text-align: left;
   }
 }
-

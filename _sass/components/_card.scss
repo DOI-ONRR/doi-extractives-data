@@ -73,7 +73,7 @@
 }
 
 .card-splash {
-  background-color: $light-black;
+  background-color: $black-light;
   border-radius: 10px 10px 0 0;
   color: $white;
   height: 170px;
@@ -92,7 +92,7 @@
 }
 
 img.card-image {
-  border-bottom: 4px solid $light-gray;
+  border-bottom: 4px solid $gray-pale;
   border-radius: 10px 10px 0 0;
   width: 100%;
 
@@ -116,12 +116,12 @@ img.card-image {
 
   p {
     @include heading(para-md);
-    color: $dark-gray;
+    color: $gray-darkest;
     line-height: 1.6;
   }
 
   .card-content-subhead {
-    color: $dark-gray;
+    color: $gray-darkest;
     font-weight: $weight-bold;
     margin-bottom: ($base-padding-lite / 2);
   }

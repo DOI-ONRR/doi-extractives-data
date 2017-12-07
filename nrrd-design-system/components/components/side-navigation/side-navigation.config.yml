@@ -15,3 +15,9 @@ variants:
     context:
       className: TBD
       text: Text
+
+
+
+#display:
+#  max-width: 400px
+#  min-width: 250px

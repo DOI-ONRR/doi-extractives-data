@@ -29,6 +29,9 @@ AK:
   '2015':
     dollars: 10322000000
     percent: 19.36
+  '2016':
+    dollars: 7578000000
+    percent: 15.03
 AL:
   '2006':
     dollars: 2908000000
@@ -60,6 +63,9 @@ AL:
   '2015':
     dollars: 3094000000
     percent: 1.54
+  '2016':
+    dollars: 2878000000
+    percent: 1.4
 AR:
   '2006':
     dollars: 1099000000
@@ -91,6 +97,9 @@ AR:
   '2015':
     dollars: 2535000000
     percent: 2.12
+  '2016':
+    dollars: 1738000000
+    percent: 1.43
 AZ:
   '2006':
     dollars: 4399000000
@@ -122,6 +131,9 @@ AZ:
   '2015':
     dollars: 4613000000
     percent: 1.57
+  '2016':
+    dollars: 3944000000
+    percent: 1.29
 CA:
   '2006':
     dollars: 17631000000
@@ -153,6 +165,9 @@ CA:
   '2015':
     dollars: 11735000000
     percent: 0.47
+  '2016':
+    dollars: 8319000000
+    percent: 0.32
 CO:
   '2006':
     dollars: 10969000000
@@ -184,6 +199,9 @@ CO:
   '2015':
     dollars: 13416000000
     percent: 4.26
+  '2016':
+    dollars: 10321000000
+    percent: 3.2
 CT:
   '2006':
     dollars: 147000000
@@ -215,6 +233,9 @@ CT:
   '2015':
     dollars: 290000000
     percent: 0.11
+  '2016':
+    dollars: 343000000
+    percent: 0.13
 DE:
   '2006':
     dollars: 1000000
@@ -268,6 +289,9 @@ FL:
   '2015':
     dollars: 1536000000
     percent: 0.17
+  '2016':
+    dollars: 1351000000
+    percent: 0.15
 GA:
   '2006':
     dollars: 1425000000
@@ -299,6 +323,9 @@ GA:
   '2015':
     dollars: 1205000000
     percent: 0.24
+  '2016':
+    dollars: 1056000000
+    percent: 0.2
 HI:
   '2006':
     dollars: 64000000
@@ -330,6 +357,9 @@ HI:
   '2015':
     dollars: 88000000
     percent: 0.11
+  '2016':
+    dollars: 77000000
+    percent: 0.09
 IA:
   '2006':
     dollars: 330000000
@@ -361,6 +391,9 @@ IA:
   '2015':
     dollars: 307000000
     percent: 0.17
+  '2016':
+    dollars: 269000000
+    percent: 0.15
 ID:
   '2006':
     dollars: 544000000
@@ -392,6 +425,9 @@ ID:
   '2015':
     dollars: 1056000000
     percent: 1.6
+  '2016':
+    dollars: 571000000
+    percent: 0.84
 IL:
   '2006':
     dollars: 1896000000
@@ -423,6 +459,9 @@ IL:
   '2015':
     dollars: 2015000000
     percent: 0.26
+  '2016':
+    dollars: 2595000000
+    percent: 0.33
 IN:
   '2006':
     dollars: 1058000000
@@ -454,6 +493,9 @@ IN:
   '2015':
     dollars: 1707000000
     percent: 0.51
+  '2016':
+    dollars: 1743000000
+    percent: 0.5
 KS:
   '2006':
     dollars: 1912000000
@@ -485,6 +527,9 @@ KS:
   '2015':
     dollars: 1487000000
     percent: 0.98
+  '2016':
+    dollars: 984000000
+    percent: 0.65
 KY:
   '2006':
     dollars: 4481000000
@@ -516,6 +561,9 @@ KY:
   '2015':
     dollars: 3074000000
     percent: 1.6
+  '2016':
+    dollars: 3191000000
+    percent: 1.62
 LA:
   '2006':
     dollars: 20452000000
@@ -547,6 +595,9 @@ LA:
   '2015':
     dollars: 11483000000
     percent: 4.77
+  '2016':
+    dollars: 9170000000
+    percent: 3.87
 MA:
   '2006':
     dollars: 161000000
@@ -578,6 +629,9 @@ MA:
   '2015':
     dollars: 300000000
     percent: 0.06
+  '2016':
+    dollars: 331000000
+    percent: 0.07
 MD:
   '2006':
     dollars: 364000000
@@ -609,6 +663,9 @@ MD:
   '2015':
     dollars: 325000000
     percent: 0.09
+  '2016':
+    dollars: 297000000
+    percent: 0.08
 ME:
   '2006':
     dollars: 10000000
@@ -639,6 +696,9 @@ ME:
     percent: 0.05
   '2015':
     dollars: 30000000
+    percent: 0.05
+  '2016':
+    dollars: 27000000
     percent: 0.05
 MI:
   '2006':
@@ -671,6 +731,9 @@ MI:
   '2015':
     dollars: 2377000000
     percent: 0.5
+  '2016':
+    dollars: 2004000000
+    percent: 0.41
 MN:
   '2006':
     dollars: 1242000000
@@ -702,6 +765,9 @@ MN:
   '2015':
     dollars: 2661000000
     percent: 0.81
+  '2016':
+    dollars: 2319000000
+    percent: 0.68
 MO:
   '2006':
     dollars: 969000000
@@ -733,6 +799,9 @@ MO:
   '2015':
     dollars: 913000000
     percent: 0.31
+  '2016':
+    dollars: 800000000
+    percent: 0.27
 MS:
   '2006':
     dollars: 1304000000
@@ -764,6 +833,9 @@ MS:
   '2015':
     dollars: 1090000000
     percent: 1.03
+  '2016':
+    dollars: 707000000
+    percent: 0.65
 MT:
   '2006':
     dollars: 1809000000
@@ -795,6 +867,9 @@ MT:
   '2015':
     dollars: 2012000000
     percent: 4.39
+  '2016':
+    dollars: 1342000000
+    percent: 2.9
 NC:
   '2006':
     dollars: 896000000
@@ -826,6 +901,9 @@ NC:
   '2015':
     dollars: 565000000
     percent: 0.11
+  '2016':
+    dollars: 493000000
+    percent: 0.09
 ND:
   '2006':
     dollars: 934000000
@@ -857,6 +935,9 @@ ND:
   '2015':
     dollars: 7021000000
     percent: 12.44
+  '2016':
+    dollars: 4957000000
+    percent: 9.27
 NE:
   '2006':
     dollars: 132000000
@@ -888,6 +969,9 @@ NE:
   '2015':
     dollars: 239000000
     percent: 0.21
+  '2016':
+    dollars: 164000000
+    percent: 0.14
 NH:
   '2006':
     dollars: 85000000
@@ -919,6 +1003,9 @@ NH:
   '2015':
     dollars: 56000000
     percent: 0.07
+  '2016':
+    dollars: 49000000
+    percent: 0.06
 NJ:
   '2006':
     dollars: 289000000
@@ -950,6 +1037,9 @@ NJ:
   '2015':
     dollars: 327000000
     percent: 0.06
+  '2016':
+    dollars: 288000000
+    percent: 0.05
 NM:
   '2006':
     dollars: 7931000000
@@ -981,6 +1071,9 @@ NM:
   '2015':
     dollars: 9231000000
     percent: 9.92
+  '2016':
+    dollars: 7314000000
+    percent: 7.81
 NV:
   '2006':
     dollars: 3293000000
@@ -1012,6 +1105,9 @@ NV:
   '2015':
     dollars: 3917000000
     percent: 2.77
+  '2016':
+    dollars: 3395000000
+    percent: 2.32
 NY:
   '2006':
     dollars: 871000000
@@ -1043,6 +1139,9 @@ NY:
   '2015':
     dollars: 1017000000
     percent: 0.07
+  '2016':
+    dollars: 850000000
+    percent: 0.06
 OH:
   '2006':
     dollars: 2705000000
@@ -1074,6 +1173,9 @@ OH:
   '2015':
     dollars: 8229000000
     percent: 1.34
+  '2016':
+    dollars: 9419000000
+    percent: 1.5
 OK:
   '2006':
     dollars: 18621000000
@@ -1105,6 +1207,9 @@ OK:
   '2015':
     dollars: 26313000000
     percent: 13.84
+  '2016':
+    dollars: 18511000000
+    percent: 10.21
 OR:
   '2006':
     dollars: 319000000
@@ -1135,6 +1240,9 @@ OR:
     percent: 0.11
   '2015':
     dollars: 266000000
+    percent: 0.12
+  '2016':
+    dollars: 269000000
     percent: 0.12
 PA:
   '2006':
@@ -1167,6 +1275,9 @@ PA:
   '2015':
     dollars: 15777000000
     percent: 2.23
+  '2016':
+    dollars: 16011000000
+    percent: 2.22
 RI:
   '2006':
     dollars: 28000000
@@ -1229,6 +1340,9 @@ SC:
   '2015':
     dollars: 346000000
     percent: 0.17
+  '2016':
+    dollars: 370000000
+    percent: 0.18
 SD:
   '2006':
     dollars: 100000000
@@ -1260,6 +1374,9 @@ SD:
   '2015':
     dollars: 166000000
     percent: 0.35
+  '2016':
+    dollars: 136000000
+    percent: 0.28
 TN:
   '2006':
     dollars: 991000000
@@ -1291,6 +1408,9 @@ TN:
   '2015':
     dollars: 852000000
     percent: 0.27
+  '2016':
+    dollars: 758000000
+    percent: 0.23
 TX:
   '2006':
     dollars: 116123000000
@@ -1322,6 +1442,9 @@ TX:
   '2015':
     dollars: 149701000000
     percent: 9.31
+  '2016':
+    dollars: 111546000000
+    percent: 6.97
 UT:
   '2006':
     dollars: 3120000000
@@ -1353,6 +1476,9 @@ UT:
   '2015':
     dollars: 2992000000
     percent: 2.01
+  '2016':
+    dollars: 2227000000
+    percent: 1.41
 VA:
   '2006':
     dollars: 2326000000
@@ -1384,6 +1510,9 @@ VA:
   '2015':
     dollars: 1626000000
     percent: 0.34
+  '2016':
+    dollars: 1838000000
+    percent: 0.37
 VT:
   '2006':
     dollars: 148000000
@@ -1415,6 +1544,9 @@ VT:
   '2015':
     dollars: 282000000
     percent: 0.93
+  '2016':
+    dollars: 247000000
+    percent: 0.79
 WA:
   '2006':
     dollars: 815000000
@@ -1446,6 +1578,9 @@ WA:
   '2015':
     dollars: 516000000
     percent: 0.11
+  '2016':
+    dollars: 454000000
+    percent: 0.1
 WI:
   '2006':
     dollars: 502000000
@@ -1477,6 +1612,9 @@ WI:
   '2015':
     dollars: 1284000000
     percent: 0.42
+  '2016':
+    dollars: 1127000000
+    percent: 0.36
 WV:
   '2006':
     dollars: 5696000000
@@ -1508,6 +1646,9 @@ WV:
   '2015':
     dollars: 8725000000
     percent: 11.94
+  '2016':
+    dollars: 8392000000
+    percent: 11.52
 WY:
   '2006':
     dollars: 11444000000
@@ -1539,3 +1680,6 @@ WY:
   '2015':
     dollars: 8457000000
     percent: 21.53
+  '2016':
+    dollars: 7778000000
+    percent: 20.29

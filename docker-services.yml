@@ -9,6 +9,7 @@ services:
       - root:/root/
       - bundle:/usr/local/bundle/
     environment:
+      - EIA_API_KEY
       - LANG=C.UTF-8
       - LANGUAGE=C.UTF-8
       - LC_ALL=C.UTF-8

@@ -5,11 +5,11 @@
 // Styleguide blocks.how-it-works.intro
 
 .revenues_subpage-intro_wrapper {
-  border-top: 1px solid $neutral-gray;
+  border-top: 1px solid $gray-light;
 
   &.renewables {
 
-    background: $putty;
+    background: $gray-pale;
 
     @include respond-to(medium-up) {
       background: url('../img/how-it-works/renewables-bg-gradient.png') top left repeat-x;
@@ -28,7 +28,7 @@
 }
 
 .revenues_subpage-breadcrumb {
-  color: $dark-gray;
+  color: $gray-darkest;
   font-weight: $weight-light;
 }
 
@@ -99,7 +99,7 @@
   position: relative;
 
   a {
-    color: $dark-gray;
+    color: $gray-darkest;
   }
 }
 

@@ -25,7 +25,7 @@ eiti-map {
   }
 
   a:hover path.feature {
-    stroke: $neutral-gray;
+    stroke: $gray-light;
     stroke-width: 2;
   }
 
@@ -37,7 +37,7 @@ eiti-map {
   }
 
   path.feature.zoomed {
-    stroke: $neutral-gray;
+    stroke: $gray-light;
     stroke-width: 3;
   }
 

@@ -48,7 +48,7 @@
   }
 
   h4:not(.chart-title):not(.state-page-nav-title):not(.details-container) {
-    border-bottom: 1px solid $neutral-gray;
+    border-bottom: 1px solid $gray-light;
     font-weight: $weight-light;
     padding-top: 2.5rem;
 
@@ -64,7 +64,7 @@
   }
 
   hr {
-    border-top: 1px solid $neutral-gray;
+    border-top: 1px solid $gray-light;
     margin-bottom: $standard-padding;
     margin-top: $standard-padding;
   }

@@ -96,9 +96,8 @@
 .ribbon-card-top-text-header {
   @include heading(para-lg);
   font-weight: $weight-bold;
-  line-height: 1.3;
   margin-bottom: 0;
-  padding-bottom: $base-padding-lite;
+  padding-bottom: $base-padding-small;
   text-align: left;
 }
 
@@ -114,22 +113,20 @@
 }
 
 .ribbon-card-bottom {
-  @include heading('para-sm');
-
-  @include respond-to(medium-down) {
-    @include heading('para-md');
-    margin-bottom: 0;
-  }
+  @include heading('para-md');
 
   background-color: $gray-light;
-  color: $dark-gray;
+  color: $gray-darkest;
   font-weight: $weight-book;
   margin-bottom: 0;
-  padding: $base-padding;
+  padding-bottom: $base-padding;
+  padding-left: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-top: $base-padding;
   text-align: center;
 
   a {
-    color: $dark-gray;
+    color: $gray-darkest;
   }
 
   label {
@@ -359,10 +356,6 @@ svg {
 }
 
 @include respond-to(huge-up) {
-  .ribbon-card-top {
-    border-bottom: 4px solid $white;
-  }
-
   .ribbon.ribbon-column {
     flex-direction: row;
     margin-left: $page-padding;

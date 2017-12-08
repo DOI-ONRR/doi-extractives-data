@@ -59,7 +59,7 @@ fractal.docs.set('statuses', {
   }
 });
 
-fractal.web.set('static.path', path.join(__dirname, 'public'));
+fractal.web.set('static.path', path.join(__dirname, '../_site'));
 fractal.web.set('builder.dest', __dirname + '/build');
 
 fractal.web.theme(customTheme);

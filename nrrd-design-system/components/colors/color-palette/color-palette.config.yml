@@ -1,21 +1,25 @@
 title: Color palette
 status: draft
 collated: true
-default: blue
+default: black
 variants:
   - name: blue
     context:
       className: bg-blue
-      text: #asdf
+      text: #1478a6
+  - name: black
+    context:
+      className: bg-black
+      text: #1c2326
   - name: black-light
     context:
-      className: color-black-light
+      className: bg-black-light
       text: #323c42
   - name: gray-darkest
     context:
-      className: color-gray-darkest
+      className: bg-gray-darkest
       text: #43519
   - name: gray-darker
     context:
-      className: color-gray-darker
+      className: bg-gray-darker
       text: #5c7e7f

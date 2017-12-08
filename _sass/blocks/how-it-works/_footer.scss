@@ -1,23 +1,22 @@
-.revenues_page-footer {
-  padding-bottom: $base-padding-large;
-  padding-top: $base-padding-large;
+.pre-footer {
+  background-color: $gray-pale;
+  margin: 0;
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
 
-  h2 {
-    @include font-size(1.2);
-    color: $light-black;
-    font-weight: normal;
-    padding-top: 0;
+  ul {
+    padding-left: 0;
   }
 
   li {
-    @include font-size(1.2);
     display: inline-block;
-    font-weight: 200;
+    font-weight: $weight-book;
     margin-right: $base-padding;
 
-    img {
-      height: 18px;
-      padding-right: 8px;
+    &:last-of-type {
+      display: block;
+      font-weight: $weight-light;
+      padding-top: $base-padding;
     }
   }
 
@@ -25,5 +24,13 @@
     color: $blue;
   }
 
-}
+  a {
+    text-decoration: none;
 
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+}

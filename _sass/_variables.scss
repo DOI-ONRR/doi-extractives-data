@@ -37,64 +37,41 @@ $z-negative: -1;
 //
 // Styleguide colors
 
-// v4
+// Grayscale
 $white: #ffffff;
 $gray-pale: #f0f6fa;
 $gray-lighter: #ebf3f7;
 $gray-light: #d3dfe6;
 $gray: #a7bcc7;
 $gray-dark: #768d99;
-$gray-darker: #5c7380;
+$gray-darker: #5c737f;
 $gray-darkest: #435159;
 $black-light: #323c42;
-$black: #1d2326;
+$black: #1c2326;
 
-// map to deprecated values
-$light-gray-light: $gray-pale;
-$light-gray: $gray-pale;
-$light-gray-dark: $gray-lighter;
-$mid-gray: $gray-light;
-$mid-light-gray: $gray-light;
-$neutral-gray: $gray-light;
-$another-gray: $gray-dark;
-$dark-gray: $gray-darkest;
-$light-black: $black-light;
-$black: $black;
-$blackest-black: $black;
-
-// v3
-$green: #9fa63b;
+// Blues
+$blue-lighter: #f2fdff; //not currently in use, sb applied to blue-filter selectors
+$blue-light: #dcf4fd;
+$blue-cthru: rgba(198, 233, 255, 0.93);
+$blue-mid: #79bbda;
+$blue-mid-dark: #3d95bd;
 $blue: #1478a6;
-$blue-contrast: #096fa0;
-$light-green: #d2e2cb;
-$blue-alt: darken($blue, 5%); //for constrast, darker
-$light-blue: #e3f8ff;
-$pale-blue: #f0fcff;
-$mid-blue: #c9eeff;
-$mid-blue-opaque: rgba(198, 233, 255, 0.93);
-$dark-blue: #4b9bbf;
+$blue-dark: #086996; //darker link color for use over $blue-cthru, for accessibility
+$blue-darker: #005078;
+$blue-deep: #00354f;
 
-// State pages
+// Greens
+$green-light: #cde3c3;
+$green-mid: #9dbd92;
 $green-land: #69995a;
-$green-mint: #cde3c3;
-$green-sea: #b1d39c;
-$green-dark: #657c60;
-$chart-green: #a5d78a;
-$green-darkest: #2f4d26;
-$green-darker: #587f4c;
-$green-darker-mid: lighten($green-darker, 20%);
+$green: #587f4c;
+$green-dark: #2f4d26;
 
 // v2 - deprecate
-$putty: #f4f4f4;
-$dark-putty: #838383;
-$purple: #965bcd;
 $red: #c5403c;
-$cobalt: #1075a5;
-
 
 // Font Colors
 $base-font-color: $black-light;
-$base-accent-color: $mid-blue;
 
 // Padding
 $base-padding: 1.25em; //20px
@@ -123,7 +100,7 @@ $standard-padding-separation: 6rem;
 $page-padding: 5vw;
 
 // Link Colors
-$base-link-color: $dark-gray;
+$base-link-color: $gray-darkest;
 
 // Buttons
 $primary-button-bg-color: $blue;
@@ -132,17 +109,17 @@ $primary-button-color: $white;
 $primary-hover-button-color: $white;
 $secondary-button-bg-color: $white;
 $secondary-hover-button-bg-color: $white;
-$secondary-button-color: $dark-gray;
-$secondary-hover-button-color: $dark-gray;
-$secondary-button-border-color: $mid-gray;
-$tertiary-button-bg-color: $mid-gray;
+$secondary-button-color: $gray-darkest;
+$secondary-hover-button-color: $gray-darkest;
+$secondary-button-border-color: $gray-light;
+$tertiary-button-bg-color: $gray-light;
 
 // Radius
 $base-border-radius: 5px;
 $small-border-radius: 3px;
 
 // Border
-$base-border-color: $light-black;
+$base-border-color: $black-light;
 $thin-border-size: 1px;
 $regular-border-size: 3px;
 $thick-border-size: 8px;

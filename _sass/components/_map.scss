@@ -4,7 +4,7 @@
 //============================================
 
 .map {
-  background-color: $mid-gray;
+  background-color: $gray-light;
   padding-bottom: $base-padding-extra;
   padding-top: $base-padding-large;
 }
@@ -31,7 +31,7 @@
   margin-top: $base-padding-lite;
 
   ul li {
-    font-weight: 200;
+    font-weight: $weight-light;
     margin-bottom: 40px;
 
     .headline {
@@ -41,8 +41,8 @@
 
     .subtitle {
       @include font-size(0.9);
-      color: $dark-gray;
-      font-weight: 200;
+      color: $gray-darkest;
+      font-weight: $weight-light;
       line-height: 1;
 
       // &::before {
@@ -53,8 +53,8 @@
   }
 
   h4 {
-    color: $dark-gray;
-    font-weight: 200;
+    color: $gray-darkest;
+    font-weight: $weight-light;
   }
 }
 
@@ -72,9 +72,9 @@
 
   ul li {
     @include font-size(0.8);
-    border: $thin-border-size solid $mid-gray;
+    border: $thin-border-size solid $gray-light;
     border-radius: $base-border-radius;
-    color: $dark-gray;
+    color: $gray-darkest;
     display: inline-block;
     height: 55px;
     margin-left: 10px;
@@ -117,14 +117,14 @@
     }
 
     &.active {
-      border: $thin-border-size solid $mid-gray;
-      color: $light-black;
+      border: $thin-border-size solid $gray-light;
+      color: $black-light;
       font-weight: 600;
     }
 
     &:hover,
     &:focus {
-      border: $thin-border-size solid $mid-gray;
+      border: $thin-border-size solid $gray-light;
     }
   }
 }
@@ -160,7 +160,7 @@
 
     &:hover,
     &:focus {
-      background-color: $mid-gray;
+      background-color: $gray-light;
     }
   }
 }
@@ -172,6 +172,6 @@
 }
 
 .map-notes {
-  border-top: $thin-border-size solid $mid-gray;
+  border-top: $thin-border-size solid $gray-light;
   padding-bottom: $base-padding-large;
 }

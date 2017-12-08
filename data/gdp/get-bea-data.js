@@ -12,7 +12,7 @@ var options = require('../../lib/args')({
   },
   years: {
     desc: 'years for which to get data',
-    default: '2006-2015'
+    default: '2006-2016'
   },
   industry: {
     desc: 'industries to list',

@@ -1,5 +1,5 @@
 .filter-search {
-  border-color: $dark-gray;
+  border-color: $gray-darkest;
 
   @include respond-to(medium-up) {
     width: 50%;

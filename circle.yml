@@ -14,6 +14,7 @@ dependencies:
     - npm run update-webpack
   post:
     - bundle exec jekyll build
+    - npm run release-styleguide
 
 ## Customize test commands
 test:

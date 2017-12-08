@@ -1,0 +1,30 @@
+title: Greens
+status: draft
+collated: true
+default: green-dark
+variants:
+  - name: green-dark
+    context:
+      className: bg-green-dark
+      colorName: green-dark
+      colorCode: '#2f4d26'
+  - name: green
+    context:
+      className: bg-green
+      colorName: green
+      colorCode: '#587f4c'
+  - name: green-land
+    context:
+      className: bg-green-land
+      colorName: green-land
+      colorCode: '#69995a'
+  - name: green-mid
+    context:
+      className: bg-green-mid
+      colorName: green-mid
+      colorCode: '#9dbd92'
+  - name: green-light
+    context:
+      className: bg-green-light
+      colorName: green-light
+      colorCode: '#cde3c3'

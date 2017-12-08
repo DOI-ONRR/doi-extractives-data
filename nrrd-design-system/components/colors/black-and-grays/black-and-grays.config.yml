@@ -1,0 +1,55 @@
+title: Black and grays
+status: draft
+collated: true
+default: black
+variants:
+  - name: black
+    context:
+      className: bg-black
+      colorName: black
+      colorCode: '#1c2326'
+  - name: black-light
+    context:
+      className: bg-black-light
+      colorName: black-light
+      colorCode: '#323c42'
+  - name: gray-darkest
+    context:
+      className: bg-gray-darkest
+      colorName: gray-darkest
+      colorCode: '#435159'
+  - name: gray-darker
+    context:
+      className: bg-gray-darker
+      colorName: gray-darker
+      colorCode: '#5c737f'
+  - name: gray-dark
+    context:
+      className: bg-gray-dark
+      colorName: gray-dark
+      colorCode: '#768d99'
+  - name: gray
+    context:
+      className: bg-gray
+      colorName: gray
+      colorCode: '#a7bcc7'
+  - name: gray-light
+    context:
+      className: bg-gray-light
+      colorName: gray-light
+      colorCode: '#d3dfe6'
+  - name: gray-lighter
+    context:
+      className: bg-gray-lighter
+      colorName: gray-lighter
+      colorCode: '#ebf3f7'
+  - name: gray-pale
+    context:
+      className: bg-gray-pale
+      colorName: gray-pale
+      colorCode: '#f0f6fa'
+  - name: white
+    context:
+      className: bg-white
+      colorName: white
+      colorCode: '#ffffff'

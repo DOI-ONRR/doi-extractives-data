@@ -50,7 +50,7 @@ In 2014, the U.S. Energy Information Administration estimated that there were 16
 
 ## Employment
 
-Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 271 people, about 1% of DeSoto’s 27,000 residents, work in activities supporting oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries — which includes oil and gas extraction, but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2005 and 2014.[^13]
+Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 271 people, about 1% of DeSoto’s 27,000 residents, work in activities that support oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries — which includes oil and gas extraction, but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2005 and 2014.[^13]
 
 ### Wage and salary employment in DeSoto Parish: Extractive industries vs. all other industries[^14]
 

@@ -60,9 +60,9 @@ In these two counties, gold-mining operations employed approximately 4% of the t
 
 ## Revenue
 
-Gold mining is a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
+Gold mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
 
-The tax rate applied to net proceeds is on a sliding scale from 2% to 5%.  Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^14] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^15]
+The tax rate applied to net proceeds is on a sliding scale from 2% to 5%. Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^14] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^15]
 
 In 2015, Elko County received $2.5 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.2 million (88%) came from gold mines.[^16] In the same period, Eureka County received $10.6 million in Royalties and Net Proceeds of Minerals tax, of which $10.5 million (99%) came from gold mines.[^17]
 
@@ -149,4 +149,3 @@ This case study is current as of August 2016. Many data sources are updated regu
 [^16]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](http://tax.nv.gov/LocalGovt/PolicyPub/ArchiveFiles/NetProceedsBulletins/2014-15_Net_Proceeds_Bulletin_-_Final/), 2014-15
 
 [^17]: Ibid.
-

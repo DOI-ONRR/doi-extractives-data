@@ -1,9 +1,9 @@
-title: Callout card
+title: Callout cards
 status: draft
-collated: true
-default: Card
-variants:
-  - name: Card
-    context:
-      className: card
-      text: Callout card, as used on the home page
+# collated: true
+# default: Card
+# variants:
+#   - name: Card
+#     context:
+#       className: card
+#       text: Callout card, as used on the home page

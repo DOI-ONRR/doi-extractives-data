@@ -1,11 +1,11 @@
 title: Official banner
 status: draft
-collated: true
-variants:
-  - name: banner
-    context:
-      className: banner
-      text:
+# collated: true
+# variants:
+#   - name: banner
+#     context:
+#       className: banner
+#       text:
 
 # This is the banner that lives at the top of every page.
 # It links people to our github issues so that we can get

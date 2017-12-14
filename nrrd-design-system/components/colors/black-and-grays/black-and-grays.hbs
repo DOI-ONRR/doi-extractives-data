@@ -1,5 +1,12 @@
-<div class="swatch">
-  <div class="swatch-color {{ className }}"></div>
-  <div class="label-primary">${{ colorName }}</div>
-  <div class="label-secondary">{{ colorCode }}</div>
+<div class="">
+  <div class="swatch">
+    <div class="swatch-color {{ className }}"></div>
+    <div class="label-primary">${{ colorName }}</div>
+    <div class="label-secondary">{{ colorCode }}</div>
+  </div>
+  {{#if accessible }}
+    <span>Is accessible</span>
+  {{else}}
+    <span>Is not accessible</span>
+  {{/if}}
 </div>

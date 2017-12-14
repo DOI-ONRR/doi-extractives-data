@@ -1,25 +1,25 @@
 title: Links
 status: draft
-collated: true
-default: isolated
-variants:
-  - name: isolated
-    context:
-      className: link-charlie
-      text: Isolated text link
-  - name: sentence-bound
-    context:
-      className: link-alpha
-      text: Links mixed in with unlinked text should be underlined by default.
-  - name: icon-text-links
-    context:
-      className: link-icon-doc #new
-      text: Link with document icon
-  - name: term
-    context:
-      className: term
-      text: Glossary-term link
-  - name: term term-end
-    context:
-      className: term-end #requires .term
-      text: Glossary-term link followed by punctuation
+# collated: true
+# default: isolated
+# variants:
+#   - name: isolated
+#     context:
+#       className: link-charlie
+#       text: Isolated text link
+#   - name: sentence-bound
+#     context:
+#       className: link-alpha
+#       text: Links mixed in with unlinked text should be underlined by default.
+#   - name: icon-text-links
+#     context:
+#       className: link-icon-doc #new
+#       text: Link with document icon
+#   - name: term
+#     context:
+#       className: term
+#       text: Glossary-term link
+#   - name: term term-end
+#     context:
+#       className: term-end #requires .term
+#       text: Glossary-term link followed by punctuation

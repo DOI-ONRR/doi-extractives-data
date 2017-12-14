@@ -17,86 +17,88 @@
    </li>
 </ul> -->
 
-<!-- aria-toggle-icon -->
-<button is="aria-toggle" aria-controls="foo" aria-expanded="false" type="button">
-        <span class="hide-expanded">
-          <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
-          Show table
-        </span>
-        <span class="show-expanded">
-          <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
-          Hide table
-        </span>
+<div class="preview">
+
+  <!-- aria-toggle-icon -->
+  <button is="aria-toggle" aria-controls="foo" aria-expanded="false" type="button">
+          <span class="hide-expanded">
+            <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+            Show table
+          </span>
+          <span class="show-expanded">
+            <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+            Hide table
+          </span>
+      </button>
+
+  <!-- new: mobile_nav_header -->
+  <div is="mobile-nav" class="mobile-nav sticky stuck">
+    <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
+        <div class="flex-row">
+          <h3 class="mobile-nav-header flex-row-flex">Nebraska</h3>
+          <span class="hide-expanded flex-row-icon">
+            <icon class="icon icon-chevron-sm-down"></icon>
+          </span>
+          <span class="show-expanded flex-row-icon">
+            <icon class="icon icon-chevron-sm-up"></icon>
+          </span>
+        </div>
     </button>
-
-<!-- new: mobile_nav_header -->
-<div is="mobile-nav" class="mobile-nav sticky stuck">
-  <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
-      <div class="flex-row">
-        <h3 class="mobile-nav-header flex-row-flex">Nebraska</h3>
-        <span class="hide-expanded flex-row-icon">
-          <icon class="icon icon-chevron-sm-down"></icon>
-        </span>
-        <span class="show-expanded flex-row-icon">
-          <icon class="icon icon-chevron-sm-up"></icon>
-        </span>
-      </div>
-  </button>
-  <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 668px;">
-    <ul>
-      <a href="#" class="mobile-nav-list-item">Top</a>
-      <a href="#menu-item-a" class="mobile-nav-list-item">Menu option a</a>
-      <a href="#menu-item-b" class="mobile-nav-list-item">Submenu option b</a>
+    <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 668px;">
       <ul>
-          <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-a" href="#submenu-item-a">Submenu item a</a>
-          <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-b" href="#submenu-item-b">Submenu option b</a>
+        <a href="#" class="mobile-nav-list-item">Top</a>
+        <a href="#menu-item-a" class="mobile-nav-list-item">Menu option a</a>
+        <a href="#menu-item-b" class="mobile-nav-list-item">Submenu option b</a>
+        <ul>
+            <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-a" href="#submenu-item-a">Submenu item a</a>
+            <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-b" href="#submenu-item-b">Submenu option b</a>
+        </ul>
       </ul>
-    </ul>
+    </div>
   </div>
-</div>
 
-<!-- genericize: revenues_subpage-steps_group_item -->
-<section class="container-outer">
-  <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
-    <li class="revenues_subpage-steps_group_item" aria-expanded="true" accordion-item="true">
-      <div class="revenues_subpage-steps_number">1</div>
-      <h3 class="revenues_subpage-steps_heading">Numbered item</h3>
-      <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--0"><label class="sr-only">Numbered item</label></button>
-      <div accordion-content="" id="offshore-oilgas-steps--content--0" role="content" aria-hidden="false">
-        <p>Content</p>
-      </div>
-    </li>
-  </ul>
-  <div class="container">
+  <!-- genericize: revenues_subpage-steps_group_item -->
+  <section class="container-outer">
     <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
-      <li class="revenues_subpage-steps_group_item" accordion-item="true" aria-expanded="false">
-        <div class="revenues_subpage-steps_number">2</div>
+      <li class="revenues_subpage-steps_group_item" aria-expanded="true" accordion-item="true">
+        <div class="revenues_subpage-steps_number">1</div>
         <h3 class="revenues_subpage-steps_heading">Numbered item</h3>
-        <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--1"><label class="sr-only">Numbered item</label></button>
-        <div accordion-content="" id="offshore-oilgas-steps--content--1" role="content" aria-hidden="true">
+        <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--0"><label class="sr-only">Numbered item</label></button>
+        <div accordion-content="" id="offshore-oilgas-steps--content--0" role="content" aria-hidden="false">
           <p>Content</p>
         </div>
       </li>
     </ul>
-  </div>
-</section>
-
-  <!-- new: expandable-panel -->
-  <div accordion="offshore-oilgas-dyk" accordion-item="" class="revenues_subpage-dyk" aria-expanded="false">
-    <h2 class="revenues_subpage-dyk_heading">Expandable panel</h2>
-
-    <div class="revenues_subpage-dyk_text">
-      <p>Summary content.</p>
-
-      <div accordion-content="" id="offshore-oilgas-dyk--content--0" role="content" aria-hidden="true">
-        <p>Expanded content</p>
-      </div>
+    <div class="container">
+      <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
+        <li class="revenues_subpage-steps_group_item" accordion-item="true" aria-expanded="false">
+          <div class="revenues_subpage-steps_number">2</div>
+          <h3 class="revenues_subpage-steps_heading">Numbered item</h3>
+          <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--1"><label class="sr-only">Numbered item</label></button>
+          <div accordion-content="" id="offshore-oilgas-steps--content--1" role="content" aria-hidden="true">
+            <p>Content</p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <button class="revenues_subpage_dyk-link" accordion-text="" accordion-button="" role="button" aria-controls="offshore-oilgas-dyk--content--0">
-      <span class="accordion-more">more</span>
-      <span class="accordion-less">less</span>
-    </button>
+  </section>
 
-  </div>
+    <!-- new: expandable-panel -->
+    <div accordion="offshore-oilgas-dyk" accordion-item="" class="revenues_subpage-dyk" aria-expanded="false">
+      <h2 class="revenues_subpage-dyk_heading">Expandable panel</h2>
 
-<!-- link to source page on style guide: glossary -->
+      <div class="revenues_subpage-dyk_text">
+        <p>Summary content.</p>
+
+        <div accordion-content="" id="offshore-oilgas-dyk--content--0" role="content" aria-hidden="true">
+          <p>Expanded content</p>
+        </div>
+      </div>
+      <button class="revenues_subpage_dyk-link" accordion-text="" accordion-button="" role="button" aria-controls="offshore-oilgas-dyk--content--0">
+        <span class="accordion-more">more</span>
+        <span class="accordion-less">less</span>
+      </button>
+
+    </div>
+
+</div>

@@ -37,13 +37,13 @@ Download calendar year data:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Offshore dataset (xlsx, 481 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-16_2017-04-21.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (xlsx, 1.3 MB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-16_2017-04-07.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
   </a></li>
 </ul>
@@ -126,4 +126,3 @@ _Geothermal._ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geoth
 _Wind._ Wind.
 
 _Other Commodities._ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
-

@@ -15,7 +15,7 @@ This report outlines progress made by the Department of the Interior and the Off
 
 This website (Natural Resources Revenue Data) will continue to provide data and information related to extractive industry production, revenue, and disbursements in the U.S.
 
-<a href="{{site.baseurl}}/downloads/NRRD_executive-summary-2017.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download 2017 Executive Summary (pdf, 1.6 MB)</a>
+<a href="{{site.baseurl}}/downloads/NRRD_executive-summary_2017.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download 2017 Executive Summary (pdf, 1.6 MB)</a>
 
 ## 2016 Executive Summary
 

@@ -55,7 +55,7 @@ A number of agencies within the Department of the Interior play a role in the pr
 Key documents and resources:
 
 - [National Environmental Policy Act](https://www.epa.gov/laws-regulations/summary-national-environmental-policy-act) (NEPA)
-- [Sample minerals development agreement (PDF)](https://www.bia.gov/cs/groups/xieed/documents/text/idc010987.pdf)
+- [Sample minerals development agreement (PDF)](https://www.bia.gov/sites/bia.gov/files/assets/as-ia/ieed/ieed/pdf/idc010987.pdf)
 - [Sample aggregate minerals lease (PDF)](https://bia.gov/cs/groups/xieed/documents/text/idc010163.pdf)
 - DEMD resources:
   + [Sample mineral leases](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/WIL/index.htm)
@@ -185,7 +185,7 @@ Key documents and resources:
 - [Developing Clean Energy on Tribal Lands report (PDF)](http://www.nrel.gov/docs/fy13osti/57748.pdf)
 - DEMD resources:
   + [Renewable Energy Opportunities](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm)
-  + [Building Green Economies on Tribal Lands (PDF)](https://www.bia.gov/cs/groups/xieed/documents/text/idc010168.pdf)
+  + [Building Green Economies on Tribal Lands (PDF)](https://www.bia.gov/sites/bia.gov/files/assets/as-ia/ieed/ieed/pdf/idc010168.pdf)
   + [Information on tribes actively seeking wind development companies and investors](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm)
 
 BIA reviews and approves the development of renewable energy projects related to sun, wind, and biomass since these projects only involve surface land use. BLM and ONRR, while kept informed, do not have statutory authority to review or approve. OST may be involved in the accounting for and distribution of revenues from any leases or right-of-way agreements.
@@ -196,7 +196,7 @@ Geothermal energy resources constitute the one exception. Leases or agreements c
 
 DEMD works with tribes and individuals to evaluate and confirm renewable energy resources, conduct feasibility studies, and identify business development opportunities. DEMD provides [more information on renewable energy opportunities](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/RO/index.htm) and the [Energy and Mineral Development Program funding for energy and mineral pre-development studies](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/TT/TF/index.htm).
 
-DEMD provides a [broad overview of the process for developing renewable energy projects (PDF)](https://www.bia.gov/cs/groups/xbia/documents/document/idc1-031905.pdf). DEMD works with the tribe to create an opportunity assessment and study the feasibility of energy development on tribal land.
+DEMD provides a [broad overview of the process for developing renewable energy projects (PDF)](https://www.bia.gov/sites/bia.gov/files/assets/as-ia/ieed/bia/pdf/idc1-031905.pdf). DEMD works with the tribe to create an opportunity assessment and study the feasibility of energy development on tribal land.
 
 During the planning phase, the tribe decides the path it will take to developing the renewable energy project. The tribe decides if it wants to develop and own the project themselves, if it wants to bring on a developer to own the project and simply make payments to the tribe, or if it wants to partially own the project with a developer. If a tribe or individual chooses to engage a developer, then the lease process is governed under [25 CFR Part 162, Subpart E – Wind and Solar Resource Leases](https://www.ecfr.gov/cgi-bin/text-idx?SID=6ed5b1f8ed199e697388d20386609164&mc=true&tpl=/ecfrbrowse/Title25/25cfr162_main_02.tpl). Other laws can govern the development as well. If the project is a part of another lease (such as an agricultural, residential, or business lease), it is included in that lease review under another subpart of [25 CFR Part 162](https://www.ecfr.gov/cgi-bin/text-idx?SID=6ed5b1f8ed199e697388d20386609164&mc=true&tpl=/ecfrbrowse/Title25/25cfr162_main_02.tpl). If the tribe is developing the project on tribal land, other federal laws, such as environmental laws, may still apply even though the tribe does not need BIA approval.
 

@@ -56,7 +56,7 @@ Key documents and resources:
 
 - [National Environmental Policy Act](https://www.epa.gov/laws-regulations/summary-national-environmental-policy-act) (NEPA)
 - [Sample minerals development agreement (PDF)](https://www.bia.gov/sites/bia.gov/files/assets/as-ia/ieed/ieed/pdf/idc010987.pdf)
-- [Sample aggregate minerals lease (PDF)](https://bia.gov/cs/groups/xieed/documents/text/idc010163.pdf)
+- [Sample aggregate minerals lease (PDF)](https://bia.gov/sites/bia.gov/files/assets/as-ia/ieed/ieed/pdf/idc010163.pdf)
 - DEMD resources:
   + [Sample mineral leases](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/WIL/index.htm)
   + [Oil and Gas](https://bia.gov/WhoWeAre/AS-IA/IEED/DEMD/oilgas/index.htm)

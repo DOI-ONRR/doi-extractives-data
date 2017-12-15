@@ -2,7 +2,7 @@
 title: Federal Revenue by Location | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-location/
-title_display: Federal revenue by location
+title_display: Federal Revenue by Location
 breadcrumb:
   - title: Downloads
     permalink: /downloads/

@@ -1,4 +1,4 @@
-$table-border: 1px solid $mid-gray;
+$table-border: 1px solid $gray-light;
 
 table {
   @include font-size(0.9);
@@ -6,7 +6,7 @@ table {
   border: $table-border;
   border-collapse: collapse;
   border-spacing: 2px;
-  color: $dark-gray;
+  color: $gray-darkest;
   font-weight: $weight-light;
   margin-bottom: $base-padding;
 
@@ -17,7 +17,7 @@ table {
 }
 
 thead {
-  border-bottom: 2px solid $mid-gray;
+  border-bottom: 2px solid $gray-light;
   font-weight: $weight-book;
   text-align: center;
 }
@@ -68,7 +68,7 @@ td {
     line-height: $line-height-caps;
 
     tr {
-      border-bottom: 2px solid $mid-gray;
+      border-bottom: 2px solid $gray-light;
     }
   }
 

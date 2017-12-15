@@ -5,13 +5,13 @@
 @import 'variables';
 
 .feature {
-  fill: $light-gray !important;
+  fill: $gray-pale !important;
   stroke: none !important;
 }
 
 .mesh {
   fill: none !important;
-  stroke: $another-gray !important;
+  stroke: $gray-dark !important;
   stroke-width: 1 !important;
 }
 

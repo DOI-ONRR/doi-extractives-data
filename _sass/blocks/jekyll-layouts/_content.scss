@@ -10,11 +10,6 @@
     }
   }
 
-  h3 {
-    font-size: 1rem;
-    margin-bottom: 0;
-  }
-
   p + h2 {
     margin-top: $base-padding-large - 0.75em;
   }
@@ -33,7 +28,7 @@ h2 + hr,
 h1 + hr,
 h3 + hr,
 h4 + hr {
-  border: 1px solid $neutral-gray;
+  border: 1px solid $gray-light;
   margin-bottom: $base-padding-extra;
 }
 

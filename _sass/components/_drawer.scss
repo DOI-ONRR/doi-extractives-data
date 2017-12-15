@@ -86,7 +86,7 @@
   margin-top: 0;
 
   @include placeholder() {
-    color: $neutral-gray;
+    color: $gray-light;
     font-style: italic;
   }
 }

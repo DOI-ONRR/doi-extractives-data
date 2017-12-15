@@ -10,7 +10,6 @@ machine:
 dependencies:
   pre:
     - npm install
-    - gem install jekyll -v '3.0.5'
     - bundle install
     - npm run update-webpack
   post:

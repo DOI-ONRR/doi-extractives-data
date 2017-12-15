@@ -3,10 +3,12 @@
     <div class="swatch-color {{ className }}"></div>
     <div class="label-primary">${{ colorName }}</div>
     <div class="label-secondary">{{ colorCode }}</div>
+    {{#if accessible }}
+      <div class="icon-ok"></div>
+      <div class="label-secondary">Accessible</div>
+    {{else}}
+      <div class="icon-no"></div>
+      <div class="label-secondary">Not accessible</div>
+    {{/if}}
   </div>
-  {{#if accessible }}
-    <span>Is accessible</span>
-  {{else}}
-    <span>Is not accessible</span>
-  {{/if}}
 </div>

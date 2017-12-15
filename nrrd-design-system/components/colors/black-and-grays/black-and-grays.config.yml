@@ -1,6 +1,7 @@
 title: Black and grays
-status: draft
+status: blocked
 collated: true
+notes: '"Accessible" colors can be used as text fills over white backgrounds, since the contrast ratio between the color and white is at least 4.5:1.'
 default: black
 variants:
   - name: black
@@ -32,13 +33,13 @@ variants:
       className: bg-gray-dark
       colorName: gray-dark
       colorCode: '#768d99'
-      accessible: true
+      accessible: false
   - name: gray
     context:
       className: bg-gray
       colorName: gray
       colorCode: '#a7bcc7'
-      accessible: true
+      accessible: false
   - name: gray-light
     context:
       className: bg-gray-light

@@ -19,7 +19,7 @@ fractal.set('project.title', 'NRRD Design System');
 fractal.components.set('path', path.join(__dirname, 'components'));
 fractal.components.set('statuses', {
   blocked: {
-    label: "Blocked",
+    label: "Tech help required",
     description: "Blocked.",
     color: "#be4900"
   },

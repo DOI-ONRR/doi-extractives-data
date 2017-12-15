@@ -1,1 +1,162 @@
-<thing class="item-{{ className }}">{{ text }}</thing>
+<body>
+  <section class="banner slab-beta-light">
+    <span class="banner-centered"><img class="banner-image" src="/img/us-flag-small.png" alt="U.S. flag signifying that this is a United States Federal Government website"> An official website of the U.S. government</span>
+  </section>
+
+  <header class="header container-page-wrapper">
+
+    <div class="header-left">
+      <a class="header-image_link" href="/">
+        <h1 class="sr-only">
+          US Department of the Interior Natural Resources Revenue Data
+        </h1>
+        <img class="header-image" src="/img/NRRD-logo.svg" alt="Logo">
+      </a>
+    </div>
+
+    <nav class="header-nav header-right">
+      <ul class="header-nav_top">
+        <li class="header-nav_item_top">
+          <a href="javascript:void(0)" class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+        </li>
+        <span class="header-nav_item_link_spacer"> | </span>
+        <li class="header-nav_item_top">
+          <a class="header-nav_item_link_top " href="/downloads/">Downloads</a>
+        </li>
+
+        <li class="header-nav_item_top">
+          <form action="/search-results/">
+            <label class="sr-only" for="q">Search</label>
+            <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search">
+            <button type="submit" class="header-nav_search_icon icon-search" title="search"><label class="sr-only">Search</label></button>
+          </form>
+        </li>
+
+      </ul>
+      <ul class="header-nav_bottom">
+        <li class="header-nav_item ">
+          <a class="header-nav_item_link" href="/">Home</a>
+        </li>
+        <li class="header-nav_item ">
+          <a class="header-nav_item_link" href="/about/">About</a>
+        </li>
+        <li class="header-nav_item active">
+          <a class="header-nav_item_link" href="/#/">Current site section</a>
+        </li>
+        <li class="header-nav_item ">
+          <a class="header-nav_item_link" href="/explore/">Explore Data</a>
+        </li>
+        <li class="header-nav_item ">
+          <a class="header-nav_item_link" href="/case-studies/">Case Studies</a>
+        </li>
+      </ul>
+    </nav>
+    <button data-toggler="nav-drawer" is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" title="Global navigation toggle" aria-labelledby="menu-button"><icon class="icon-bars"></icon></button>
+
+  </header>
+
+  <section class="layout-content container-page-wrapper container-margin">
+    <article class="container-left-9">
+      <a href="#" class="breadcrumb">Optional breadcrumb link</a>
+      <h1 id="intro">Example text page</h1>
+      <blockquote>
+        <p>This opening paragraph is a "blockquote," which has the "para-xl" type style built in. The page itself uses a grid of nine columns on the left ("container-left-9") and three on the right. The right-side block can hold a sticky nav unit, or be left empty. For readability, text on the web should hover at about 66 characters per line, so please don't let content stretch across the whole with of a page. The smaller text below occupies a narrower swath of the page, to control line lengths.</p>
+      </blockquote>
+
+      <h2 id="section-1">Page section one</h2>
+
+      <p>I see that our enticingly large intro paragraph has done its job and lead you here to the meat of the page. We think you'll be glad that you stuck around to see the content we have to offer!</p>
+
+      <h2 id="section-2">Footnote examples</h2>
+
+      <p>This is what a footnote reference looks like.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> You can drop them into the middle of a sentence<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a> without too much visual disruption.</p>
+
+      <h2 id="section-3">Section with a table</h2>
+
+      <p>Here's a table integrated with the text of a page. Tables come in various shapes and sizes, as you can see in the <a class="Tree-entityLink" href="../../components/detail/tables">tables section</a> of the style guide.</p>
+
+      <table class="article_table">
+        <thead>
+          <tr>
+            <th>Header</th>
+            <th>Second header</th>
+            <th>Third column header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tabular content</td>
+            <td>Content such as a phrase or sentence</td>
+            <td>Content such as a phrase or sentence</td>
+          </tr>
+          <tr>
+            <td>Tabular content</td>
+            <td>Content such as a phrase or sentence</td>
+            <td>Content such as a phrase or sentence</td>
+          </tr>
+          <tr>
+            <td>Tabular content</td>
+            <td>Content such as a phrase or sentence</td>
+            <td>Content such as a phrase or sentence</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="notes">Notes</h2>
+        <div class="footnotes">
+          <ol>
+            <li id="fn:1">
+              <p>Footnotes generally include links to <a href="#">cited content</a>, and should always end with the "reversefootnote" class, which generates a return link, as seen here. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+            </li>
+            <li id="fn:2">
+              <p>Here's a second footnote example, again with a <a href="#">link to the cited content</a>.<a href="#fnref:2" class="reversefootnote">↩</a></p>
+            </li>
+          </ol>
+        </div>
+
+      </article>
+
+  <!-- sticky side nav with anchor links -->
+      <div class="pre-sticky pre-sticky-small"></div>
+      <nav class="sticky sticky-float sticky_nav">
+        <ul>
+          <a href="#" class="sticky_nav-nav_item" data-nav-item="intro" data-active="true">Top</a>
+          <a href="#section-1" class="sticky_nav-nav_item" data-nav-item="page-section-one" data-active="false">Page section one</a>
+          <a href="#section-2" class="sticky_nav-nav_item" data-nav-item="footnote-examples" data-active="false">Footnote examples</a>
+          <a href="#section-3" class="sticky_nav-nav_item" data-nav-item="section-with-table" data-active="false">Section with a table</a>
+        </ul>
+      </nav>
+  </section>
+
+  <footer class="footer">
+    <div class="container-page-wrapper">
+      <div class="footer-col_left">
+        <a href="https://doi.gov"><img class="footer-image" src="/img/DOI-2x.png" alt="Department of the Interior logo"></a>
+      </div>
+
+      <div class="footer-col_right">
+
+        <div class="footer-bottom-left">
+  	      <p class="footer-para_callout footer-para_callout-bigger">Built in the open</p>
+  	      <p class="footer-para">This site (<a href="https://github.com/18F/doi-extractives-data/releases/v3.1.0" class="link-active-beta">v3.1.0</a>) is powered by open <a class="link-active-beta" href="/downloads">data</a> and <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/">source code</a>. We welcome contributions and comments on <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/issues/new">GitHub</a>.</p>
+
+          <p class="footer-para-small footer-para_last"><a href="https://www.doi.gov/" class="link-beta">Department of the Interior</a> | <a href="https://www.doi.gov/privacy" class="link-beta">Privacy Policy</a> | <a href="https://www.doi.gov/foia" class="link-beta">FOIA</a> | <a href="https://www.usa.gov/" class="link-beta">USA.gov</a></p>
+
+        </div>
+
+        <div class="footer-bottom-right">
+          <p class="footer-para_callout">
+            <a class="link-beta" href="/downloads/">Downloads<icon class="icon-cloud icon-padded_after"></icon></a>
+          </p>
+        </div>
+
+        <div class="footer-bottom footer-bottom-right">
+          <p class="footer-para footer-para-small">
+            Mail: Office of Natural Resources Revenue, Information and Data Management<br>
+            1849 C Street NW MS 5134, Washington, D.C. 20240
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

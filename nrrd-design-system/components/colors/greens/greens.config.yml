@@ -1,7 +1,7 @@
 title: Greens
 status: draft
 collated: true
-notes: '"Accessible" colors can be used as text fills over white backgrounds, since the contrast ratio between the color and white is at least 4.5:1.'
+notes: '"Accessible" colors can be used as text fills over white backgrounds, since the contrast ratio between the color and white is at least 4.5:1. (Include explanation of map ownership colors. Green dark = federal, green-state-hex represents $green-land + 20% black overlay)'
 default: green-dark
 variants:
   - name: green-dark
@@ -9,6 +9,12 @@ variants:
       className: bg-green-dark
       colorName: green-dark
       colorCode: '#2f4d26'
+      accessible: true
+  - name: green-state
+    context:
+      className: bg-green-state-hex
+      colorName: green-state-hex
+      colorCode: '#46653c'
       accessible: true
   - name: green
     context:

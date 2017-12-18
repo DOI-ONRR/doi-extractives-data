@@ -135,6 +135,7 @@ $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
 // Map legend
 $opacity-federal: 0.45;
 $opacity-state: 0.25;
+$green-state-hex: #46653c;
 $legend-row-height: 1em;
 
 $greener-land-lightness-bump: lightness($green-land) * $opacity-state;

@@ -83,7 +83,7 @@ The offshore dataset is organized by offshore planning areas. There are more off
 
 ### Fields and definitions
 
-_Revenue Type._ Revenues from U.S. natural resources fall into one of several types:
+_Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
 * _Royalties_ A natural resource lease owner pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.

@@ -37,13 +37,13 @@ selector: list
 
 ## Geology and history
 
-Coal has driven economic development across Boone, Logan, and Mingo counties for many decades. In 1742, Explorer John Peter Salley first discovered bituminous coal in what would later become Boone County. Although forest extraction was the first major industry in the region, large-scale coal mining began in Boone County in the 1880s. The arrival of the Norfolk & Western Railroad in the 1890s and the Chesapeake & Ohio Railroad soon thereafter launched a coal extraction boom in all three counties. The early decades of the twentieth century marked a period of frenzied development in these counties. In the decades that followed, coal continued to drive the counties’ economies, but population numbers declined as mechanization and a shift to greater surface mining reduced the need for labor.[^3]
+Coal has driven economic development across Boone, Logan, and Mingo counties for many decades. In 1742, Explorer John Peter Salley first discovered bituminous coal in what would later become Boone County. Although forest extraction was the first major industry in the region, large-scale coal mining began in Boone County in the 1880s. The arrival of the Norfolk and Western Railroad in the 1890s and the Chesapeake and Ohio Railroad soon thereafter launched a coal extraction boom in all three counties. The early decades of the twentieth century marked a period of frenzied development in these counties. In the decades that followed, coal continued to drive the counties’ economies, but population numbers declined as mechanization and a shift to greater surface mining reduced the need for labor.[^3]
 
 ## Production
 
 In 2014, 29 underground mines and 29 surface mines were operating across the three counties in West Virginia — a decrease from the prior year.[^4] In all three counties, the top ten landowners own at least 50% of private land.[^5] Notable operations include Boone County’s Twilight Mountaintop Removal Surface Mine (1.46 million tons in 2014) and Hobet 21 Surface Mine (2.8 million tons in 2014).[^6] Twilight Mountaintop production fell by over one million tons (2.5 million tons in 2013 to 1.46 million tons in 2014) while Hobet 21 increased production from 2.3 million to 2.8 million tons in 2014.[^7] Hours worked at Twilight Mountaintop fell by 35% from 2013 to 2014, while employment likewise fell by 35%.[^8]
 
-Cumulatively, mines in Boone, Logan, and Mingo counties produce about 27% of West Virginia’s annual output.[^9] Coal production in these counties reached a high of 62.3 million tons in 2008 before dropping 31.5 million tons (a 50% decrease) to their 2014 output level of 30.7 million tons.[^10] Logan is the only one of the three counties whose production total in 2014 was greater than it had been ten years prior, while while Boone and Mingo production fell 55.7% and 65% respectively.[^11]
+Cumulatively, mines in Boone, Logan, and Mingo counties produce about 27% of West Virginia’s annual output.[^9] Coal production in these counties reached a high of 62.3 million tons in 2008 before dropping 31.5 million tons (a 50% decrease) to their 2014 output level of 30.7 million tons.[^10] Logan is the only one of the three counties whose production total in 2014 was greater than it had been ten years prior, while Boone and Mingo production fell 55.7% and 65% respectively.[^11]
 
 ### Coal production for Boone, Logan, and Mingo counties[^12]
 
@@ -118,7 +118,7 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 [^4]: U.S. Energy Information Administration, [Annual Coal Report](http://www.eia.gov/coal/annual/), 2014, table 2
 
-[^5]: West Virginia Center on Budget & Policy, [Who Owns West Virginia in the 21st Century: Executive Summary (PDF)](http://www.wvpolicy.org/wp-content/uploads/2013/12/Land-Study-Executive-Summary.pdf), 2013
+[^5]: West Virginia Center on Budget and Policy, [Who Owns West Virginia in the 21st Century: Executive Summary (PDF)](http://www.wvpolicy.org/wp-content/uploads/2013/12/Land-Study-Executive-Summary.pdf), 2013
 
 [^6]: U.S. Energy Information Administration, [Coal Data Browser, Mine Level Data](http://www.eia.gov/beta/coal/data/browser/#/topic/38?agg=0,2,1&rank=g&mntp=g&geo=00000000g&freq=A&datecode=2013&rtype=s&pin=&rse=0&maptype=0&ltype=pin&ctype=map&end=2013&start=2001)
 

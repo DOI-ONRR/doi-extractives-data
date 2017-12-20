@@ -1,7 +1,7 @@
 ---
 title: Campbell County, Wyoming | Case Studies
 title_display: Campbell County, Wyoming
-description: Most of the coal consumed in the U.S. fuels the country’s electricity needs, and coal constitutes 39% of all electricity generated in the U.S. Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output. More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with nine of the nation’s ten largest mines located in the state. Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
+description: Most of the coal consumed in the U.S. fuels electricity needs. Coal makes up 39% of all electricity generated across the country. Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output. More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with nine of the nation’s ten largest mines located there. Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
 tag:
 - Local
 - Case study
@@ -29,7 +29,7 @@ nav_items:
 selector: list
 ---
 
-> Most of the coal consumed in the U.S. fuels the country’s electricity needs, and coal constitutes 39% of all electricity generated in the U.S.[^1] Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with nine of the nation’s ten largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
+> Most of the coal consumed in the U.S. fuels electricity needs. Coal makes up 39% of all electricity generated across the country.[^1] Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with nine of the nation’s ten largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
 
 ## Geology and history
 
@@ -39,9 +39,9 @@ Most Campbell County coal is sub-bituminous, meaning it contains 35% to 45% carb
 
 ## Production
 
-In 2014, Campbell County produced 348 million tons of coal, accounting for 89% of the state’s total production.[^8] Wyoming coal mines operate largely on federal lands managed by the Bureau of Land Management under the U.S. Department of the Interior.[^9] In fact, Wyoming is the site of more coal mining on federal and Indian lands than any other state in the country, constituting 80% of the total coal production on federal and Indian lands in the fiscal year ending in 2014.[^10] [^11]
+In 2014, Campbell County produced 348 million tons of coal, accounting for 89% of the state’s total production.[^8] Wyoming coal mines operate largely on federal lands managed by the Bureau of Land Management under the U.S. Department of the Interior.[^9] In fact, Wyoming is the site of more coal mining on federal and Indian lands than any other state in the country, constituting 80% of the total coal production on these lands in the fiscal year ending in 2014.[^10] [^11]
 
-Production levels fluctuated little between 2005 and 2014. For instance, 2014’s levels were 4% below 2005 production, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^12] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the U.S.
+Production levels fluctuated little between 2005 and 2014. For instance, 2014’s levels were 4% below 2005 production, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^12] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the country.
 
 ### Coal production in Campbell County[^13]
 
@@ -59,9 +59,9 @@ The coal mining industry provides employment for 7,398 workers in Campbell Count
 
 ## Revenue
 
-With $125 million in total government revenue for 2015, Campbell County is the most revenue-rich county in Wyoming.[^17] [^18] [^19] Its wealth is largely due to revenue brought in from coal extraction. More than 50% of the county’s revenue comes from property tax ($62.8 million). In 2015, Campbell County valued its own coal production at $3.3 billion.[^20]
+With $125 million in total government revenue for 2015, Campbell County is the most revenue-rich county in Wyoming.[^17] [^18] [^19] Its wealth is largely due to revenue from coal extraction. More than 50% of the county’s revenue comes from property tax ($62.8 million). In 2015, Campbell County valued its own coal production at $3.3 billion.[^20]
 
-Campbell County further generates coal-related revenue through a gross products tax, which is an ad valorem property tax based on the taxable value of the coal produced the previous year. Campbell County bills and collects this tax directly, based on the applicable tax district {{ "mill levy" | term }}, and uses the revenue to fund local schools, infrastructure, and public services.[^21] In 2015, Campbell County collected $62.8 million from this and other property taxes, accounting for 64% of total tax revenue.[^22] 84% of property taxes for the fiscal year ending in 2013 came from natural-resource production taxes.[^23]
+Campbell County further generates coal-related revenue through a gross products tax, which is an ad valorem property tax based on the taxable value of the coal produced the previous year. Campbell County bills and collects this tax directly, based on the applicable tax district {{ "mill levy" | term }}, and uses the revenue to fund local schools, infrastructure, and public services.[^21] In 2015, Campbell County collected $62.8 million from this and other property taxes, accounting for 64% of total tax revenue.[^22] 84% of property taxes for the fiscal year ending in 2013 came from natural resource production taxes.[^23]
 
 The State of Wyoming applies a 7% severance tax on the value of extracted surface coal.[^24] Between 2011 and 2012, Wyoming collected $587 million in severance tax revenue from coal production.[^25] More than 90% of severance tax revenue goes to the state’s Severance Tax Distribution Account, which allocates 62% of its funding to the General Fund, 9% to cities and towns, 4% to counties, and the rest to various infrastructure development accounts, such as the Water Development Program.[^26] [^27] The state Mineral Revenue Report does not specify what percentage of this revenue was directed to Campbell County. In 2015, Campbell County received $445,154 in severance tax.[^28]
 

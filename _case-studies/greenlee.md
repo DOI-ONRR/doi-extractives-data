@@ -58,7 +58,7 @@ In 2014, Greenlee County received $5,537,109 in transaction privilege and severa
 
 ## Costs
 
-Copper mining activity is a key consideration in Greenlee County road planning.[^19] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
+Copper mining activity is a key consideration in Greenlee County road planning.[^19] No additional publicly available government sources specifying fiscal costs of copper mining in Greenlee County were found.
 
 ## Data availability
 

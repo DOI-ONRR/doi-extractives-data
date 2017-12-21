@@ -23,6 +23,11 @@ fractal.components.set('statuses', {
     description: "Blocked.",
     color: "#be4900"
   },
+  jscomponent: {
+    label: "JS web component",
+    description: "JS web component required to render this.",
+    color: "#851482"
+  },
   review: {
     label: "Ready for review",
     description: "Ready for another team member to review.",

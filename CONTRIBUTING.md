@@ -213,7 +213,7 @@ When you open an issue, fill out all relevant fields in the issue template and i
 - While working, submit `[WIP]` [pull requests](CONTRIBUTING.md#pull-requests) liberally.
 - Anyone may informally review a pull request and make comments or suggestions.
 * Don’t merge your own pull request. Ask a colleague to review your code and merge. This helps ensure that at least two people have verified the quality of the code and content.
-* For more about how to responsibly review pull requests, see [How to review a PR](wiki/How-to-review-a-pull-request)
+* For more about how to responsibly review pull requests, see [How to review a PR](https://github.com/18F/doi-extractives-data/wiki/How-to-review-a-pull-request)
 
 ## Public domain
 By submitting a pull request, you agree to comply with the policies on our [LICENSE](LICENSE.md) page:

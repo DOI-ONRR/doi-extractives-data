@@ -1,5 +1,11 @@
 /*Global*/
 
+.label-hero {
+  font-family: monospace;
+  font-size: 2rem;
+  color: $black-light;
+}
+
 .label-primary {
   font-family: monospace;
   font-weight: bold;
@@ -49,4 +55,14 @@
   margin-right: 0.4rem;
   margin-top: 0.4rem;
   vertical-align: bottom;
+}
+
+
+/*Grid*/
+
+.column {
+  background-color: #a7bcc7;
+  margin-bottom: 24px;
+  position: relative;
+  padding: 1rem;
 }

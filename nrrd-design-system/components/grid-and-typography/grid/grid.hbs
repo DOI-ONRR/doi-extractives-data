@@ -1,1 +1,187 @@
-<thing class="item-{{ className }}">{{ text }}</thing>
+<body>
+  <div class="container">
+    <section class="layout-content">
+      <div class="label-primary">12-column system, 960 max width:</div>
+      <div class="column label-secondary">12 cols</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Data pages, other content requiring a wide layout:</div>
+      <div class="column container-left-9 label-secondary">9 columns</div>
+      <div class="column container-right-3 label-secondary">3 columns</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Gray "hero ribbon content regions":</div>
+      <div class="column container-left-8 label-secondary">8 columns</div>
+      <div class="column container-right-4 label-secondary">4 columns</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Most content pages:</div>
+      <div class="column container-left-7 label-secondary">7 columns</div>
+      <div class="column container-right-5 label-secondary">5 columns</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Special cases (e.g. How it works/Federal revenue):</div>
+      <div class="column container-left-4 label-secondary">4 columns</div>
+      <div class="column container-right-8 label-secondary">8 columns</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Home-page callout cards:</div>
+      <div class="column container-left-3 label-secondary">3 columns</div>
+      <div class="column container-left-3 label-secondary">3 columns</div>
+      <div class="column container-left-3 label-secondary">3 columns</div>
+      <div class="column container-left-3 label-secondary">3 columns</div>
+    </section>
+    <section class="layout-content">
+      <div class="label-primary">Footer:</div>
+      <div class="column container-left-4 label-secondary">4 columns</div>
+      <div class="column container-left-6 label-secondary">6 columns</div>
+      <div class="column container-left-2 label-secondary">2 columns</div>
+    </section>
+  </div>
+</body>
+
+
+<!-- use .column class for fills -->
+
+<!-- .container-left-7 (ie .container-left?)
+.container-left-8
+.container-left-9
+.container-left-6
+.container-left-4
+.container-left-3
+
+.container-right-4
+.container-right-5 (ie .container-right?)
+.container-right-6
+.container-right-3
+.container-right-7
+.container-right-8
+.container-right-9
+.container-half -->
+
+
+<!-- Help notes ...
+.container-outer - should be placed on an outer div for appropriate padding
+.container-left - 7/12 width container that floats left
+.container-right - 5/12 width container that floats left
+.container-left-8 - 8/12 width container that floats left
+.container-right-4 - 4/12 width container that floats left
+.container-half - 6/12 width container that floats left
+.container-padded - full width container with padding -->
+
+<!--
+.container-outer {
+  @extend .container;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(huge-plus) {
+    margin-left: $base-padding;
+    margin-right: $base-padding;
+  }
+
+  @include respond-to(huge-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container-page-wrapper {
+  @extend .container;
+  margin-left: $base-padding;
+  margin-right: $base-padding;
+
+
+  @include respond-to(small-to-huge) {
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+  }
+
+  @include respond-to(huge-plus) {
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+    max-width: $max-width;
+  }
+
+  @include respond-to(huge-plus-up) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+} -->
+
+
+<!-- wtf with the percent sign? ...
+%container-side {
+
+  @include span-columns(12);
+
+  padding-bottom: $base-padding;
+
+  @include respond-to(huge-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+} -->
+
+
+
+<!-- To effectively remove colums? ...
+
+.container-shift-1 {
+  @include respond-to(medium-up) {
+    @include shift(1);
+  }
+}
+
+.container-shift-reverse-1 {
+  @include respond-to(medium-up) {
+    @include shift-reverse(1);
+  }
+}
+
+.container-shift-reverse-2 {
+  @include respond-to(medium-up) {
+    @include shift-reverse(2);
+  }
+} -->
+
+
+<!-- Flexbox ...
+
+.container-flex {
+  display: flex;
+
+  @include respond-to(medium-up) {
+    flex-direction: column
+  }
+}
+
+.container-flex-9 {
+  width: 75%;
+}
+
+.container-flex-6 {
+  width: 50%;
+}
+
+.container-flex-3 {
+  width: 25%;
+} -->
+
+
+<!-- To add space above and below ...
+
+.container-padded {
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
+}
+
+.container-margin {
+  margin-bottom: $base-padding-extra;
+  margin-top: $base-padding-extra;
+}
+
+.container-margin-separation {
+  margin-bottom: $standard-padding-separation;
+  margin-top: $standard-padding-separation;
+} -->

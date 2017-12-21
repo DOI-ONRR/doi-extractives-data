@@ -11,6 +11,10 @@ variants:
     context:
       className: TBD
       text: Map with solid-color fill
+  - name: iconic
+    context:
+      className: TBD
+      text: Iconic (used in side nav)
   - name: others? (county, etc.)
     context:
       className: TBD

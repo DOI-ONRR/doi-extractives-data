@@ -47,6 +47,11 @@ fractal.components.set('statuses', {
     label: "Deprecated",
     description: "Component exists only for backwards compatibility.",
     color: "#8e8e8e"
+  },
+  enhancement: {
+    label: "Potential enhancement",
+    description: "This feature might prove useful.",
+    color: "#1168a6"
   }
 });
 

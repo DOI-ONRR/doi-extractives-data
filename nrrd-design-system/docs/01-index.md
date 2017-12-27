@@ -3,7 +3,14 @@ title: Nrrd Design System
 ---
 
 ## Purpose
-[Why did we create this guide?]
+This guide assumes knowledge of html, css, and the underlying technologies used to build this website such as jekyll, TK, TK. 
+
+This is a decription of our unique approach to various components. How we apply. 
+
+## Goals
+- Document style decisions
+- Make it easier to maintain and add new content
+- Ensure consistency 
 
 ## Principles
 

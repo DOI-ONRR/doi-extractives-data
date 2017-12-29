@@ -1,11 +1,11 @@
 ---
-title: Humbolt and Lander Counties, Nevada | Case Studies
-title_display: Humbolt and Lander Counties, Nevada
-description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth largest producer of gold, extracting 200 tons valued at $7.6 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world. The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.
+title: Humboldt and Lander Counties, Nevada | Case Studies
+title_display: Humboldt and Lander Counties, Nevada
+description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2016, the U.S. was the fourth largest producer of gold, extracting 209 tons valued at $8.5 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fourth largest in the world. The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.
 tag:
 - Local
 - Case study
-- Humbolt county
+- Humboldt county
 - Lander county
 - Nevada
 - Gold
@@ -30,7 +30,7 @@ nav_items:
 selector: list
 ---
 
-> Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth largest producer of gold, extracting 200 tons valued at $7.6 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world.[^2] The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.[^3]
+> Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses such as memory chip conductors and reflective satellite coverings. In 2016, the U.S. was the fourth largest producer of gold, extracting 209 tons valued at $8.5 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fourth largest in the world.[^2] The Great Basin, located primarily in Nevada, accounts for 74% of total U.S. gold production.[^3]
 
 ## Geology and history
 
@@ -42,7 +42,7 @@ The major gold mines in Humboldt and Lander counties represent more recent produ
 
 Nevada is currently experiencing the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands.[^6] This surge in production is largely the result of discovering deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
-The two major gold-mining companies behind this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate open pit mining operations.[^8] Gold production in Humboldt and Lander counties totaled 2,203,219 ounces in 2014, accounting for 45% of the state’s total gold production that year.[^9]
+The two major gold-mining companies behind this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate open pit mining operations.[^8] Gold production in Humboldt and Lander counties totaled 2,372,856 ounces in 2015, accounting for 44% of the state’s total gold production that year.[^9]
 
 ### Gold production in Humboldt and Lander counties[^10]
 
@@ -50,7 +50,7 @@ The two major gold-mining companies behind this development are Newmont Mining C
 
 ## Employment
 
-In 2014, gold mining provided jobs for 5,110 workers, which represented 26% of the two counties' population of 23,261.[^11] [^12] 2,320 employees and contractors were employed in Humboldt County and 2,790 were employed in Lander County.[^13]
+In 2015, gold mining provided jobs for 4,649 workers, which represented 20.2% of the two counties' population of 23,013.[^11] [^12] 1,979 employees and contractors were employed in Humboldt County and 2,670 were employed in Lander County.[^13]
 
 ### Wage and salary employment in the gold mining industry[^14]
 
@@ -58,24 +58,23 @@ In 2014, gold mining provided jobs for 5,110 workers, which represented 26% of t
 
 ## Revenue
 
-Gold-mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In fiscal year 2014, Nevada counties received a total of $103 million in state and county Net Proceeds of Minerals Taxes. $52.5 million went to the state and $50.5 million went directly to counties.[^15]
+Gold-mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2015, Nevada counties received a total of $102 million in state and county Net Proceeds of Minerals Taxes. $50.5 million went to the state and $51.1 million went directly to counties.[^15]
 
-In 2014, Humboldt and Lander counties accounted for a total of 53% of the state’s Net Proceeds of Minerals (19.54% and 33.36% respectively).[^16] In fiscal year 2014, Humboldt County received $7.9 million in Net Proceeds of Minerals taxes and royalties; Lander County received $21.5 million.[^17]
+In 2015, Humboldt and Lander counties accounted for a total of 42.48% of the state’s Net Proceeds of Minerals (18.75% and 23.73% respectively).[^16] In FY 2015, Humboldt County received $8.06 million in Net Proceeds of Minerals taxes and royalties; Lander County received $20.7 million, 96% of which came from gold.[^17]
 
 ## Costs
 
-A number of state-level resources, which are listed below, shed light on Humboldt and Lander County transportation systems, {{ "reclamation" | term }} procedures, and emergency services. While these government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Humboldt and Lander county governments.
+State-level resources, listed below, shed light on Humboldt and Lander County transportation systems, {{ "reclamation" | term }} procedures, and emergency services. While government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Humboldt and Lander county governments.
 
 <ul>
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>
-	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation & Reclamation Cost Estimator</a></li>
 </ul>
 
 ## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 
-This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
+This case study is current as of June 2017. Many data sources are updated regularly, and may show more recent figures than are included here.
 
 <table class="article_table">
   <thead>
@@ -93,8 +92,8 @@ This case study is current as of August 2016. Many data sources are updated regu
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Nevada Department of Taxation published Humboldt and Lander county gold-mining industry employment totals from 2004-2014.</td>
-      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment-trend data for the mining industry at the Humboldt or Lander county level for 2004–2013. There are several years and subindustries without data.</td>
+      <td>The Nevada Department of Taxation published Humboldt and Lander county gold-mining industry employment totals from 2005-2015.</td>
+      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment-trend data for the mining industry at the Humboldt or Lander county level for 2005–2015. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>
@@ -111,7 +110,7 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 ## Notes
 
-[^1]: U.S. Geological Survey, [Gold Commodity Summary (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/gold/mcs-2016-gold.pdf), 2016
+[^1]: U.S. Geological Survey, [Gold Commodity Summary (PDF)](https://minerals.usgs.gov/minerals/pubs/commodity/gold/mcs-2017-gold.pdf), 2017
 
 [^2]: Ibid.
 
@@ -125,7 +124,7 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 [^7]: Ibid.
 
-[^8]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2014 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/Forms_Publications/mm2014_MajorMines2014_9Oct15.pdf)
+[^8]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2015 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/MiningForms/mm2015_jph_1Nov16_NDOM_web.pdf)
 
 [^9]: Ibid.
 
@@ -133,14 +132,14 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 [^11]: Ibid.
 
-[^12]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See NAICS Codes 212 and 213, 2005–2014
+[^12]: US Census, [QuickFacts: Nevada](https://factfinder.census.gov/faces/nav/jsf/pages/community_facts.xhtml)
 
-[^13]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2014 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/Forms_Publications/mm2014_MajorMines2014_9Oct15.pdf)
+[^13]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2015 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/MiningForms/mm2015_jph_1Nov16_NDOM_web.pdf)
 
-[^14]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables): See NAICS Codes 212 and 213, 2005–2014
+[^14]: Ibid.
 
-[^15]: Nevada Department of Taxation, [2014-2015 Net Proceeds of Minerals Bulletin (PDF)](http://tax.nv.gov/LocalGovt/PolicyPub/ArchiveFiles/NetProceedsBulletins/2014-15_Net_Proceeds_Bulletin_-_Final/)
+[^15]: Nevada Department of Taxation, [2015-2016 Net Proceeds of Minerals Bulletin (PDF)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjHrLbgkOPUAhUKET4KHWaHDSgQFgguMAE&url=https%3A%2F%2Ftax.nv.gov%2FLocalGovt%2FPolicyPub%2FArchiveFiles%2FNetProceedsBulletins%2F2015-2016_Net_Proceeds_Bulletin_-_Final%2F&usg=AFQjCNHb_Sq4I5frJfpBXWZNA_nA93kFWA), pg. 9
 
-[^16]: Ibid.
+[^16]: Ibid., pg. 3
 
-[^17]: Ibid.
+[^17]: Ibid., pg. 39, 40

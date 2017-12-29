@@ -50,11 +50,7 @@ In 2015, the North Slope Borough produced 169.6 million bbl of oil on both state
 
 ## Employment
 
-<<<<<<< HEAD
-The oil industry is a key driver of jobs throughout the borough. In 2015, mining, quarrying, and oil and gas extraction provided 9,290 jobs on the North Slope, accounting for 67 percent of total employment (13,945).[^13] [^14] The North Slope Borough's population is less than 10,000, so many private jobs are filled by nonresidents. The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
-=======
-The oil industry is a key driver of jobs throughout the borough. In 2014, mining, quarrying, and oil and gas extraction provided 9,003 jobs on the North Slope, accounting for 65% of total employment (13,686).[^13] [^14] The North Slope Borough's population is less than 10,000, so many private jobs are filled by nonresidents. The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
->>>>>>> proof-case-studeies
+The oil industry is a key driver of jobs throughout the borough. In 2015, mining, quarrying, and oil and gas extraction provided 9,290 jobs on the North Slope, accounting for 67% of total employment (13,945).[^13] [^14] The North Slope Borough's population is less than 10,000, so many private jobs are filled by nonresidents. The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
 
 ### Employment in the extractive industries in North Slope Borough[^16]
 
@@ -63,7 +59,6 @@ The oil industry is a key driver of jobs throughout the borough. In 2014, mining
 
 ## Revenue
 
-<<<<<<< HEAD
 Given the North Slope's relative geographic isolation, oil revenue is critical for supporting local schools, health centers, fire stations, water and sanitation facilities, and infrastructure. In FY 2015, the North Slope government received $492.3 million in revenue. [^17] Of that revenue, the borough received $354.2 million from local property taxes.[^18] The vast majority of property tax revenue (98% in 2014) comes from oil and gas properties.[^19]
 
 Statewide, the Alaska government collects oil-related revenue for the benefit of the public through four mechanisms:[^20]
@@ -72,21 +67,10 @@ Statewide, the Alaska government collects oil-related revenue for the benefit of
 - Oil and gas property taxes are placed on the value of taxable exploration, production, and pipeline transportation property set at 20 {{ "mills" | term:"mill rate" }} or 2% of the assessed value. This revenue is also deposited in the state's General Fund, with payments received after a tax settlement is deposited in the Constitutional Budget Reserve Fund. In FY 2015, oil and gas property tax accounted for $125 million (10.31%) of Alaska's tax revenue.[^23]
 - Royalties are assessed on state-owned land leased for oil production. In FY 2015, $1.7 billion was paid to the General Fund, $111.3 million was deposited in the Alaska Permanent Fund and School Fund, and an additional $149 million went to the Constitutional Budget Reserve Fund from tax and royalty settlements.[^24]
 - Oil and gas corporate net income tax is set at a maximum of 9.4% on Alaskan income more than $90,000. In FY 2015, $108.7 million was collected in oil and gas corporate income tax, down from $571 million in 2012.[^25]
-=======
-Given the North Slope's relative geographic isolation, oil revenue is critical for supporting local schools, health centers, fire stations, water and sanitation facilities, and infrastructure. In fiscal year 2014, the North Slope government received $528.6 million in revenue. [^17] Of that revenue, the borough received $347 million from local property taxes.[^18] The vast majority of property tax revenue (98%) comes from oil and gas properties.[^19]
-
-Statewide, the Alaska government collects oil-related revenue for the benefit of the public through four mechanisms:[^20]
-
-- A 35% oil- and gas-production tax is placed on the net value of extracted oil and gas, offset with credits tied to production and the price of oil. Revenue is deposited in the state's General Fund, with payments received after a tax settlement is deposited in the Constitutional Budget Reserve Fund. Oil and gas production tax revenue has been falling steadily since 2012. In fiscal year 2014, the state received $2.7 billion, down from $4.1 billion in fiscal year 2013.[^21] Because the state charges tax based on net value of the oil and gas rather than volume, it has been particularly hard hit. According to the Energy Information Administration, after operating and capital expenses, net income in Alaska's oil and gas industry was near zero, resulting in the sharp decline in tax revenues.[^22]
-- Oil and gas property taxes are placed on the value of taxable exploration, production, and pipeline transportation property set at 20 {{ "mills" | term:"mill rate" }} or 2% of the assessed value. This revenue is also deposited in the state's General Fund, with payments received after a tax settlement is deposited in the Constitutional Budget Reserve Fund. In fiscal year 2014, oil and gas property tax accounted for $128 million (3.5%) of Alaska's tax revenue.[^23]
-- Royalties are assessed on state-owned land leased for oil production. In fiscal year 2014, $1.6 billion was paid to the General Fund, $786 million was deposited in the Alaska Permanent Fund and School Fund, and an additional $141 million went to the Constitutional Budget Reserve Fund from royalty settlements.[^24]
-- Oil and gas corporate net income tax is set at a maximum of 9.4% on Alaskan income more than $90,000. In fiscal year 2014, $336 million was collected in oil and gas corporate income tax, down from $571 million in 2012.[^25]
->>>>>>> proof-case-studeies
 
 ### Alaska total petroleum based revenue[^26]
 
 <img src="{{ site.baseurl }}/img/counties/ak-tax.svg" alt="Chart shows quarterly severance tax payments in Alaska from 2011 through 2015. The y-axis represents millions of dollars. The peaks in the last 5 years are in Q2 of 2011 and 2012, both of which exceeded 1,700. 2015 amounts are under 100 for each quarter." class="case_studies_content-graph">
-
 
 Alaska residents also receive annual dividend payments from the state's Permanent Fund, based on a five-year average of the fund's performance. The state established the Permanent Fund in 1976, as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2016, each Alaska resident received $1,022 as a result of this payout, down from $2,072 in 2015 and just below the ten-year average of $1,424.[^27]
 
@@ -98,15 +82,9 @@ In terms of transportation infrastructure in the borough, Dalton Highway is the 
 
 Unlike many Alaska municipalities, the North Slope Borough is responsible for its own airports, which serve the local population as well as a range of commercial and recreational visitors.[^31] Annual costs for airport maintenance across the North Slope are about $1.4 million per year, including spending on airports and landing strips that are labeled as "unrestricted," or permissible for oil and gas industry use.[^32] It is unclear what percentage of the annual airport maintenance budget is spent specifically on support activities for the oil and gas industry.
 
-<<<<<<< HEAD
 Due to increased demand for services and the overall growth of oil and gas development in Prudhoe Bay, the Borough committed to building new water and waste water treatment facilities. The plant was completed in 2015. All required project work for the plant is expected to be completed by fall of 2015, when it is expected to be placed into service. The FY 2014 budget estimated the overall investment of this infrastructure is to be approximately $75 million.[^33]
 
 The Alaska state government also invests a significant amount of tax dollars to prevent and respond to oil and hazardous substance emergencies, for example, {{ "reclamation" | term }} services, such as managing contaminated drilling sites. The Oil and Hazardous Substance Release Prevention and Response Fund imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response.[^34] The Division of Spill Prevention and Response (SPAR) had a total operating budget of $14.4 million in FY 2016.[^35] $8.3 million went to the Contaminated Sites Program in FY 2014.[^35]
-=======
-Due to increased demand for services and the overall growth of oil and gas development in Prudhoe Bay, the Borough committed to building new water and wastewater treatment facilities. The plant was completed in 2015. All required project work for the plant is expected to be completed by fall of 2015, when it is expected to be placed into service. The fiscal year 2014 budget estimated the overall investment of this infrastructure is to be approximately $75 million.[^32]
-
-The Alaska state government also invests a significant amount of tax dollars to prevent and respond to oil and hazardous substance emergencies, for example, {{ "reclamation" | term }} services, such as managing contaminated drilling sites. The Oil and Hazardous Substance Release Prevention and Response Fund imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response.[^33] The Division of Spill Prevention and Response (SPAR) had a total operating budget of $25.9 million in fiscal year 2014.[^34] $8.3 million went to the Contaminated Sites Program in fiscal year 2014.[^35]
->>>>>>> proof-case-studeies
 
 Furthermore, the North Slope Borough often responds to, and pays for, emergency services on oilfield roads, such as Kuparuk Oilfield roads.[^36] No detailed data exists to attribute the proportion of cost of such services to oil and gas.
 

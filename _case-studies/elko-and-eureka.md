@@ -1,7 +1,7 @@
 ---
 title: Elko and Eureka Counties, Nevada | Case Studies
 title_display: Elko and Eureka Counties, Nevada
-description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth-largest producer of gold, extracting 200 tons valued at $7.6 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world. Nevada accounts for 74% of total U.S. gold production.
+description: Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2016, the U.S. was the fourth-largest producer of gold, extracting 209 tons valued at $8.5 billion. The U.S. gold reserves, with an estimated size of 3,000 tons, are the fourth largest in the world. Nevada accounts for 74% of total U.S. gold production.
 tag:
 - Local
 - Case study
@@ -30,19 +30,19 @@ nav_items:
 selector: list
 ---
 
-> Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2015, the U.S. was the fourth-largest producer of gold, extracting 200 tons valued at $7.6 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world.[^2] Nevada accounts for 74% of total U.S. gold production.[^3]
+> Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2016, the U.S. was the fourth-largest producer of gold, extracting 209 tons valued at $8.5 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fourth largest in the world.[^2] Nevada accounts for 74% of total U.S. gold production.[^3]
 
 ## Geology and history
 
 Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 {{ "metric tons" | term:"metric ton"}} (100,000,000 ounces) of gold.[^5]
 
-In 1962, Newmont Mining Corporation discovered large deposits of gold ore along the Carlin Trend, a mineral-rich belt stretching 40 miles across Elko and Eureka counties that soon became one of the largest gold-producing regions in the world. This discovery marked the beginning of a robust gold-mining industry in the region: As of 2012, 87% of Nevada’s total historical gold output had been generated since the Carlin Trend discovery.[^6]
+In 1962, Newmont Mining Corporation discovered large deposits of gold ore along the Carlin Trend, a mineral-rich belt stretching 40 miles across Elko and Eureka counties that soon became one of the largest gold-producing regions in the world. This discovery marked the beginning of a robust gold-mining industry in the region: As of 2014, 89% of Nevada’s total historical gold output had been generated since the Carlin Trend discovery.[^6]
 
 ## Production
 
 Nevada is in the midst of the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands. This surge in production is largely the result of discovering sediment-hosted deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
-The two major gold-mining companies driving this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate both open-pit and underground mining operations.[^8] In 2014, gold production in Elko and Eureka counties totaled 2,027,973 ounces.[^9] In Eureka County, the top-producing mine was the Eastern Nevada Operations (Newmont), while the Meikle Mine (Goldstrike – Barrick Corporation) led production in Elko County.
+The two major gold-mining companies driving this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate both open-pit and underground mining operations.[^8] In 2015, gold production in Elko and Eureka counties totaled 2,145,932 ounces.[^9] In Eureka County, the top-producing mine was the Eastern Nevada Operations (Newmont), while the Meikle Mine (Goldstrike – Barrick Corporation) led production in Elko County.
 
 ### Gold production in Elko and Eureka counties[^10]
 
@@ -51,20 +51,20 @@ The two major gold-mining companies driving this development are Newmont Mining 
 
 ## Employment
 
-In these two counties, gold-mining operations employed approximately 4% of the total population in 2014, or 4,581 workers and 3,269 contractors within a two-county population of 54,784.[^11] Gold-mining employment represented 14.3% of total employment in Elko and Eureka counties in 2014.[^12]
+In these two counties, gold-mining operations employed approximately 9.5% of the total population in 2015, or 4,388 workers and 676 contractors within a two-county population of 53,231.[^11] [^12] Gold-mining employment represented 22.9% of total employment in Elko and Eureka counties in 2015.[^13]
 
-### Mining industry employment in Elko and Eureka counties[^13]
+### Mining industry employment in Elko and Eureka counties[^14]
 
 <img src="{{ site.baseurl }}/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2005 to 2014. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties has risen from just over 4,000 in 2005 to nearly 8,000 in 2014." class="case_studies_content-graph">
 
 
 ## Revenue
 
-Gold mining is a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
+Gold mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. Elko and Eureka counties accounted for a total of 33.35% of the state’s Net Proceeds of Minerals (5.58% and 27.77% respectively) in 2015. That year, Nevada counties received a total of $102 million in state and county Net Proceeds of Minerals Taxes. $50.5 million went to the state and $51.1 million went directly to counties.[^15]
 
-The tax rate applied to net proceeds is on a sliding scale from 2% to 5%.  Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^14] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^15]
+In FY 2016, Elko County received $2.7 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.7 million (91%) came from gold mines, which accounts for 5% of the county's total revenue ($50.6 million)[^16] [^17] In the same period, Eureka County received $9.3 million in Royalties and Net Proceeds of Minerals tax, of which 99% came from gold mines.[^18] Net proceeds from gold accounted for 51% of Eureka County’s total revenue ($18 million).[^19]
 
-In 2015, Elko County received $2.5 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.2 million (88%) came from gold mines.[^16] In the same period, Eureka County received $10.6 million in Royalties and Net Proceeds of Minerals tax, of which $10.5 million (99%) came from gold mines.[^17]
+Eureka County distributed that money to multiple funds. Eureka County’s general fund received $1.2 million in Net Proceeds of Minerals tax in 2016, down from $3.9 million in 2015, and the Eureka County Road Fund received $252,509, down from $817,282. The Regional Transportation Fund and the Future Reserve Fund, on the other hand, received $68,866 and $22,956, respectively, after having received no mineral tax revenue the previous year.[^20]
 
 ## Costs
 
@@ -72,14 +72,13 @@ A number of state-level resources shed light on Elko and Eureka counties’ tran
 
 <ul>
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>
-	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation: Reclamation Cost Estimator</a></li>
 </ul>
 
 ## Data availability
 
 The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 
-This case study is current as of August 2016. Many data sources are updated regularly, and may show more recent figures than are included here.
+This case study is current as of June 2017. Many data sources are updated regularly, and may show more recent figures than are included here.
 
 <table class="article_table">
   <thead>
@@ -92,18 +91,18 @@ This case study is current as of August 2016. Many data sources are updated regu
   <tbody>
     <tr>
       <td>Production</td>
-      <td>The U.S. Geological Survey published gold extraction data at the county level for 2008–2012.</td>
+      <td>The U.S. Geological Survey published gold extraction data at the county level for 2008–2017.</td>
       <td></td>
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics has county-wide employment figures for {{ "NAICS" | term }} codes 212 and 213.</td>
-      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment trend data for the mining industry at the Elko or Eureka County level for 2004–2013. There are several years and subindustries without data.</td>
+      <td>The Nevada Bureau of Mines and Geology published Elko and Eureka county gold-mining industry employment totals from 2005-2015.</td>
+      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment trend data for the mining industry at the Elko or Eureka County level for 2006–2015.</td>
     </tr>
     <tr>
       <td>Revenue</td>
       <td>The Nevada Department of Taxation publishes revenue information.<br>
-      In addition, Elko County Fiscal Affairs publishes an <a href="http://www.elkocountynv.net/departments/fiscal_affairs/Elko%20County%206%2030%2015%20Audit.pdf">Annual County Audit (PDF)</a>, and the Eureka County Comptroller publishes a <a href="http://www.co.eureka.nv.us/audit/Eureka%20FS%202014.pdf">Comprehensive Annual Financial Report (PDF)</a>. Both are based on fiscal years that run from July 1 to June 30.</td>
+      In addition, Elko County Fiscal Affairs publishes an <a href="http://www.elkocountynv.net/departments/fiscal_affairs/2016%20Elko%20County%20Audit.pdf">Annual County Audit (PDF)</a>, and the Eureka County Comptroller publishes a <a href="http://www.co.eureka.nv.us/audit/15-16%20Eureka%20County%20Financial%20Statement.pdf">Comprehensive Annual Financial Report (PDF)</a>. Both are based on fiscal years that run from July 1 to June 30.</td>
       <td>Information on production taxes or sales and use taxes related to the extractive industries was not found.</td>
     </tr>
     <tr>
@@ -116,37 +115,42 @@ This case study is current as of August 2016. Many data sources are updated regu
 
 ## Notes
 
-[^1]: U.S. Geological Survey, [Gold Commodity Summary (PDF)](http://minerals.usgs.gov/minerals/pubs/commodity/gold/mcs-2016-gold.pdf), 2016
+[^1]: U.S. Geological Survey, [Gold Commodity Summary (PDF)](https://minerals.usgs.gov/minerals/pubs/commodity/gold/mcs-2017-gold.pdf), 2017
 
 [^2]: Ibid.
 
 [^3]: U.S. Geological Survey, [Western Region Gold Deposits](http://minerals.usgs.gov/west/projects/nngd.htm)
 
-[^4]: Nevada Bureau of Mines and Geology, [The Nevada Mineral Industry 2011](http://pubs.nbmg.unr.edu/The-NV-mineral-industry-2011-p/mi2011.htm), p. 5
+[^4]: Nevada Bureau of Mines and Geology, [The Nevada Mineral Industry 2014](http://epubs.nsla.nv.gov/statepubs/epubs/210988-2014.pdf), p. 5
 
 [^5]: Ibid.
 
-[^6]: Ibid.
+[^6]: Ibid., p. 3
 
 [^7]: Ibid.
 
 [^8]: Ibid.
 
-[^9]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2014 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/Forms_Publications/mm2014_MajorMines2014_9Oct15.pdf)
+[^9]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2015 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/MiningForms/mm2015_jph_1Nov16_NDOM_web.pdf)
 
 [^10]: Ibid.
 
-[^11]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables), 2015
+[^11]: Ibid.
 
-[^12]: Ibid.
+[^12]: US Census, [QuickFacts: Elko and Eureka County, Nevada](https://factfinder.census.gov/faces/nav/jsf/pages/community_facts.xhtml)
 
-[^13]: Ibid.
+[^13]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages](http://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables), 2005–2015
 
-[^14]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/Eureka%20FS%202015.pdf), June 30, 2015, p. 50, 62
+[^14]: Nevada Bureau of Mines and Geology, [Major Mines of Nevada 2015 (PDF)](http://minerals.nv.gov/uploadedFiles/mineralsnvgov/content/Programs/Mining/MiningForms/mm2015_jph_1Nov16_NDOM_web.pdf)
 
-[^15]: Ibid.
+[^15]: Nevada Department of Taxation, [2015-2016 Net Proceeds of Minerals Bulletin (PDF)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjHrLbgkOPUAhUKET4KHWaHDSgQFgguMAE&url=https%3A%2F%2Ftax.nv.gov%2FLocalGovt%2FPolicyPub%2FArchiveFiles%2FNetProceedsBulletins%2F2015-2016_Net_Proceeds_Bulletin_-_Final%2F&usg=AFQjCNHb_Sq4I5frJfpBXWZNA_nA93kFWA), pg. 9
 
-[^16]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](http://tax.nv.gov/LocalGovt/PolicyPub/ArchiveFiles/NetProceedsBulletins/2014-15_Net_Proceeds_Bulletin_-_Final/), 2014-15
+[^16]: Ibid.
 
-[^17]: Ibid.
+[^17]: [Elko County Financial Statements (PDF)](http://www.elkocountynv.net/departments/fiscal_affairs/2016%20Elko%20County%20Audit.pdf), June 30, 2016, p. 3d
 
+[^18]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjV0Lyj8-DUAhUJyj4KHQGPC8UQFggkMAA&url=https%3A%2F%2Ftax.nv.gov%2FLocalGovt%2FPolicyPub%2FArchiveFiles%2FNetProceedsBulletins%2F2015-2016_Net_Proceeds_Bulletin_-_Final%2F&usg=AFQjCNHb_Sq4I5frJfpBXWZNA_nA93kFWA), 2015-16
+
+[^19]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/15-16%20Eureka%20County%20Financial%20Statement.pdf), June 30, 2016, p.8
+
+[^20]: Ibid., p. 50, 62

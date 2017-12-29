@@ -6,8 +6,10 @@ var env = process.env.NODE_ENV
 
 var cssConfig = {
   entry: {
+    components: './css/components.css',
     main: './css/main.scss',
     print: './css/print.scss',
+    styleguide: './css/styleguide.scss',
   },
   output: {
     path: path.join(__dirname, '/public/css'),
@@ -17,7 +19,7 @@ var cssConfig = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.scss|\.css$/,
         use: ExtractTextPlugin.extract({
           use: [
             {

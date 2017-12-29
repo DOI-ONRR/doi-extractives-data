@@ -35,13 +35,19 @@ selector: list
 
 Companies began extracting oil at a commercial level in California in the 1850s, inspired by the oil rush in Pennsylvania and a growing market for oil-fueled lighting. In the 1860s, production began in Kern County, where extractors dug holes into oil seeps to remove the fuel. Near the turn of the century, extraction in the county shifted toward commercial drilling, in part because of the 1890 discovery of the Midway-Sunset field, which is still the largest-producing oil field in California today.[^1]
 
-During the beginning of the twentieth century, many other large oil discoveries occurred in Kern County, and continued at a lesser pace through the 1970s. As discoveries of new fields ended in the 1970s, refined steam-injection techniques helped producers extract the substantial heavy oil — a more difficult and costly type of oil to extract and transport — from known Kern County fields.[^2]
+During the beginning of the twentieth century, many other large oil discoveries occurred in Kern County, and continued at a lesser pace through the 1970s. As discoveries of new fields ended in the 1970s, refined steam-injection techniques helped producers extract substantial heavy oil — a more difficult and costly type of oil to extract and transport — from known Kern County fields.[^2]
 
 ## Production
 
+<<<<<<< HEAD
 In terms of oil production, Kern County has long been a leader both nationally and within California. California is one of the top oil producing states in the U.S., producing more than 6% of total production in 2015.[^3] The largest-producing region in California is the San Joaquin basin, which contains Kern County.[^4] Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend. However, production has rebounded slightly over the past several years, falling from 141 million {{ "oil barrels" | term:"barrel" }} (bbls) in 2013 to 134 million bbls in 2016.[^5]
 
 In 2013, the largest field in California in terms of proven reserves was Belridge South Field in Kern County, with estimated 2013 production of 23.7 million bbls.[^6] In 2016, production in Belridge South Field decreased slightly to 22.6 million bbls.[^7] Belridge South ranked ninth among the top 100 oil fields in the country, and four of the five largest oil fields in California are found in Kern County: Belridge South, Midway-Sunset, Kern River, and Elk Hills.[^8]
+=======
+In terms of oil production, Kern County has long been a leader both nationally and within California. California is one of the top oil producing states in the U.S., producing more than 6% of total production in 2014.[^3] The largest-producing region in California is the San Joaquin basin, which includes Kern County.[^4] Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend. However, production has rebounded slightly over the past several years, increasing from 141 million {{ "oil barrels" | term:"barrel" }} (bbls) in 2013 to 144 million bbls in 2015.[^5]
+
+In 2013, the largest field in California in terms of proven reserves was Belridge South Field in Kern County, with an estimated production of 23.7 million bbls.[^6] Belridge South ranked ninth among the top 100 oil fields in the country.[^7] Four of the five largest oil fields in California are found in Kern County: Belridge South, Midway-Sunset, Kern River, and Elk Hills.[^8]
+>>>>>>> proof-case-studeies
 
 ### Oil production in Kern County[^9]
 
@@ -68,9 +74,15 @@ Like other counties in the state, Kern County collects property taxes for oil an
 <img src="{{ site.baseurl }}/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2005 to 2014. Total property valuation goes up from under $60 billion in 2005 to just under $100 billion in 2014. Total valuations pleateau or slightly decline between 2008 and 2011. Oil and gas property valuation goes up every year from 2005 to 2012 (from under $20 billion to over $30 billion), then is steady from 2012 to 2014." class="case_studies_content-graph">
 
 
+<<<<<<< HEAD
 Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in FY 2009-2010 to $628,381 in FY 2013-2014, but then decreased to $309,546 in FY 2014-2015.[^19] [^20]
 
 According to the Kern County Treasurer-Tax Collector, the top two payers of property taxes in the county in FY 2016–2017 were Chevron USA Inc. and Occidental of Elk Hills Inc.[^21] The companies received bills for over 8.61% of the total property taxes due to the county. All of the top ten property tax payers were associated with either the extractive or energy sectors, and received combined bills for over $161 million, or 18.45% of total property taxes due to the county.[^22]
+=======
+Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in fiscal year 2009-2010 to $628,381 in fiscal year 2013-2014.[^19] [^20]
+
+According to the Kern County Treasurer-Tax Collector, the top two payers of property taxes in the county in fiscal year 2015–2016 were Chevron Corporation and California Resources Elk Hills LLC.[^21] The companies received bills for over 10.8% of the total property taxes due to the county. All of the top ten property tax payers were associated with either the extractive or energy sectors, and received combined bills for over $209 million, or 23.28% of total property taxes due to the county.[^22]
+>>>>>>> proof-case-studeies
 
 ## Costs
 

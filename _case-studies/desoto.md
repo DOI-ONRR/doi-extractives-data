@@ -50,7 +50,11 @@ In 2015, the U.S. Energy Information Administration estimated that there were 12
 
 ## Employment
 
+<<<<<<< HEAD
 Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 304 people, about 1% of DeSoto’s 26,965 residents, work in support activities for oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries — which includes oil and gas extraction, but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2006 and 2015.[^13]
+=======
+Employment data for the complete oil and gas industry in DeSoto Parish is unavailable.[^11] The data that does exist shows that 271 people, about 1% of DeSoto’s 27,000 residents, work in activities that support oil and gas extraction.[^12] That figure does not include those working directly in oil and gas extraction itself. Data also exists for employment in the broader extractive industries — which includes oil and gas extraction, but also mining and quarrying. The chart below shows the increase in employment in the broader extractive industries in DeSoto Parish between 2005 and 2014.[^13]
+>>>>>>> proof-case-studeies
 
 ### Wage and salary employment in DeSoto Parish: Extractive industries vs. all other industries[^14]
 
@@ -63,9 +67,15 @@ The Haynesville Shale natural gas boom has increased revenue for the State of Lo
 
 The state of Louisiana levies a severance tax on natural gas owners at a rate of $0.111 per {{ "Mcf" | term }} produced.[^15] In 2015, Louisiana received $190 million from gas severance taxes across the state, up from $148 million in 2014.[^16] Through the end of November 2016, however, the state had only received $119 million.[^16] It also received $61.8 million from gas royalties for production on state-owned lands and water bottoms in 2016, down from $85.6 million in 2015 and $166.8 million in 2014.[^18] The state distributes some of this revenue to the parishes where extraction took place. For severance taxes, one-fifth of taxes return to the parish, as long as the total does not exceed $750,000.[^19] For royalties, 10% return to the parish.[^20] Royalties are bid on for each lease, and by law they cannot be less than 1/8 of the value of production.[^21] In 2014, for example, DeSoto Parish received $624,592 in royalties, rents, and bonuses — which accounted for 2% of DeSoto Parish’s total revenue. (Taxes made up 69% of parish revenue.)[^22] Louisiana also collects 1% of gross receipts from the operation of natural gas franchises or charters in the state.[^23]
 
+<<<<<<< HEAD
 In addition to the state, DeSoto Parish also collects revenue from natural gas production, most notably in the form of property taxes. Revenue from property taxes increases with the assessed value of the property, and is the largest source of revenue for DeSoto Parish.  According to the parish school board, the discovery of shale gas increased property values in Desoto Parish starting in 2008. From FY 2009 to FY 2015, the taxable value of property within the parish increased by 160%, or from $292 million to $750 million.[^24] [^25] [^26] However, information from the DeSoto Parish Tax Assessor shows parishwide taxable property values decreased in FY 2016 to approximately $687 million, [^27] In 2016, property taxes exceeded $40 million.[^28] Property tax revenues are used for numerous purposes, including to pay off long-term debt which was sold to build new schools.[^29]
 
 Sales and use taxes are the second largest source of revenue for DeSoto Parish. Natural gas exploration and development spurred greater revenue from sales and use taxes, which increased from $8 million in FY 2005 to $73 million in FY 2011. This trend has since reversed, and sales and use tax accounted for $18 million in revenue in FY 2015.[^30]
+=======
+In addition to the state, DeSoto Parish also collects revenue from natural gas production, most notably in the form of property taxes. Revenue from property taxes increases with the assessed value of the property, and is the largest source of revenue for DeSoto Parish.  According to the parish school board, the discovery of shale gas increased property values in Desoto Parish starting in 2008. From fiscal year 2009 to 2015, the taxable value of property within the parish increased by 160%, or from $292 million to $750 million.[^23] [^24] [^25] In 2015, property taxes exceeded $43 million.[^26] Property tax revenues are used for numerous purposes, including to pay off long-term debt which was sold to build new schools.[^27]
+
+Sales and use taxes are the second largest source of revenue for DeSoto Parish. Natural gas exploration and development spurred greater revenue from sales and use taxes, which increased from $8 million in fiscal year 2005 to $73 million in 2011. This trend has since reversed, and sales and use tax accounted for $23 million in revenue in fiscal year 2014.[^28]
+>>>>>>> proof-case-studeies
 
 Sales and use taxes are deposited into the General Fund, School Lunch Fund, Debt Service Fund, and Capital Projects Fund.[^29] While sales and use taxes are not solely attributable to the natural gas industry, there is a noticeable decline in this revenue stream when the industry faces slowdowns. For example, sales and use taxes declined by $27 million (40%) in 2013 compared to the prior fiscal year, as exploration for oil and natural gas moved to other parts of the country.[^30]
 
@@ -198,6 +208,10 @@ This case study is current as of July 2017. Many data sources are updated regula
 
 [^37]: [Louisiana Statewide Transportation Plan, Chapter 7: Transportation Plan Development (PDF)](http://wwwsp.dotd.la.gov/Inside_LaDOTD/Divisions/Multimodal/Transportation_Plan/2003%20Statewide%20Transportation%20Plan/10%20Chapter%207%20-%20Transportation%20Plan%20Development.pdf), 2003, p. 7-50
 
+<<<<<<< HEAD
 [^38]: Louisiana Department of Natural Resources, [Louisiana Hydraulic Fracturing State Review (PDF)](http://dnr.louisiana.gov/assets/OC/haynesville_shale/071311_stronger_review.pdf), 2011, p. 16
+=======
+[^36]: Louisiana Department of Natural Resources, [Louisiana Hydraulic Fracturing State Review (PDF)](http://www.dnr.louisiana.gov/assets/OC/haynesville_shale/071311_stronger_review.pdf), 2011, p. 16
+>>>>>>> proof-case-studeies
 
 [^39]: DeSoto Parish EMS, [Our History](http://www.desotoparishems.com/#!our-history/c17ox)

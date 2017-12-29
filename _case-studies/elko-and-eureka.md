@@ -60,9 +60,15 @@ In these two counties, gold-mining operations employed approximately 9.5% of the
 
 ## Revenue
 
+<<<<<<< HEAD
 Gold mining is a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. Elko and Eureka counties accounted for a total of 33.35% of the state’s Net Proceeds of Minerals (5.58% and 27.77% respectively) in 2015. That year, Nevada counties received a total of $102 million in state and county Net Proceeds of Minerals Taxes. $50.5 million went to the state and $51.1 million went directly to counties.[^15]
 
 In Fiscal Year 2016, Elko County received $2.7 million in Royalties and Net Proceeds of Minerals Tax. Of that, $2.7 million (91%) came from gold mines, which accounts for 5% of the county's total revenue ($50.6 million)[^16] [^17] In the same period, Eureka County received $9.3 million in Royalties and Net Proceeds of Minerals tax, of which 99% came from gold mines.[^18] Net proceeds from gold accounted for 51% of Eureka County’s total revenue ($18 million).[^19]
+=======
+Gold mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax.
+
+The tax rate applied to net proceeds is on a sliding scale from 2% to 5%. Eureka County’s general fund received $3.9 million in Net Proceeds of Minerals tax in 2015, up from $1.2 million in 2014. The Eureka County Road Fund received $817,282.[^14] This is a decrease from 2013, when Eureka County received $8.5 million into its general fund and $1.8 million into the Road Fund.[^15]
+>>>>>>> proof-case-studeies
 
 Eureka County distributed that money to multiple funds. Eureka County’s general fund received $1.2 million in Net Proceeds of Minerals tax in 2016, down from $3.9 million in 2015, and the Eureka County Road Fund received $252,509, down from $817,282. The Regional Transportation Fund and the Future Reserve Fund, on the other hand, received $68,866 and $22,956, respectively, after having received no mineral tax revenue the previous year.[^20]
 
@@ -147,6 +153,7 @@ This case study is current as of June 2017. Many data sources are updated regula
 
 [^16]: Ibid.
 
+<<<<<<< HEAD
 [^17]: [Elko County Financial Statements (PDF)](http://www.elkocountynv.net/departments/fiscal_affairs/2016%20Elko%20County%20Audit.pdf), June 30, 2016, p. 3d
 
 [^18]: Nevada Department of Taxation, Division of Local Government Services, [Net Proceeds of Minerals Bulletin (PDF)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjV0Lyj8-DUAhUJyj4KHQGPC8UQFggkMAA&url=https%3A%2F%2Ftax.nv.gov%2FLocalGovt%2FPolicyPub%2FArchiveFiles%2FNetProceedsBulletins%2F2015-2016_Net_Proceeds_Bulletin_-_Final%2F&usg=AFQjCNHb_Sq4I5frJfpBXWZNA_nA93kFWA), 2015-16
@@ -154,3 +161,6 @@ This case study is current as of June 2017. Many data sources are updated regula
 [^19]: [Eureka County Financial Statements (PDF)](http://www.co.eureka.nv.us/audit/15-16%20Eureka%20County%20Financial%20Statement.pdf), June 30, 2016, p.8
 
 [^20]: Ibid., p. 50, 62
+=======
+[^17]: Ibid.
+>>>>>>> proof-case-studeies

@@ -34,7 +34,7 @@ selector: list
 
 ## Geology and history
 
-Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total {{ "resource potential" | term:"mineral resource potential" }} that exceeds 3,200 {{ "metric tons" | term:"metric ton" }} (100,000,000 ounces) of gold.[^5]
+Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] The Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total {{ "resource potential" | term:"mineral resource potential" }} that exceeds 3,200 {{ "metric tons" | term:"metric ton" }} (100,000,000 ounces) of gold.[^5]
 
 The major gold mines in Humboldt and Lander counties represent more recent production operations. The counties’ two largest mines, the Twin Creeks Mine in Humboldt and the Pipeline/Cortez Hills Mine in Lander, did not start producing gold until the early 1990s. These mines are now two of the largest gold producers in the state.
 
@@ -58,9 +58,15 @@ In 2015, gold mining provided jobs for 4,649 workers, which represented 20.2% of
 
 ## Revenue
 
+<<<<<<< HEAD
 Gold-mining serves as a key driver of funding for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In FY 2015, Nevada counties received a total of $102 million in state and county Net Proceeds of Minerals Taxes. $50.5 million went to the state and $51.1 million went directly to counties.[^15]
 
 In 2015, Humboldt and Lander counties accounted for a total of 42.48% of the state’s Net Proceeds of Minerals (18.75% and 23.73% respectively).[^16] In FY 2015, Humboldt County received $8.06 million in Net Proceeds of Minerals taxes and royalties; Lander County received $20.7 million, 96% of which came from gold.[^17]
+=======
+Gold-mining is a key funding source for local governments across the state. In addition to various property and sales taxes, counties receive annual revenue from the gold industry, largely from the state’s Net Proceeds of Minerals Tax. This tax is considered to be an ad valorem property tax assessed on minerals produced in the state, applied at a rate of 5% on royalties and all other net proceeds exceeding $4 million. In fiscal year 2014, Nevada counties received a total of $103 million in state and county Net Proceeds of Minerals Taxes. $52.5 million went to the state and $50.5 million went directly to counties.[^15]
+
+In 2014, Humboldt and Lander counties accounted for a total of 53% of the state’s Net Proceeds of Minerals (19.54% and 33.36% respectively).[^16] In fiscal year 2014, Humboldt County received $7.9 million in Net Proceeds of Minerals taxes and royalties; Lander County received $21.5 million.[^17]
+>>>>>>> proof-case-studeies
 
 ## Costs
 
@@ -116,7 +122,7 @@ This case study is current as of June 2017. Many data sources are updated regula
 
 [^3]: U.S. Geological Survey, [Western Region Gold Deposits](http://minerals.usgs.gov/west/projects/nngd.htm)
 
-[^4]: [History of Virginia City, Nevada and the Comstock Lode](http://www.vcnevada.com/history.htm)
+[^4]: [History of Virginia City, Nevada and the Comstock Lode](http://www.visitvirginiacitynv.com/about-virginia-city/history.html)
 
 [^5]: U.S. Geological Survey, [Western Region Gold Deposits](http://minerals.usgs.gov/west/projects/nngd.htm)
 

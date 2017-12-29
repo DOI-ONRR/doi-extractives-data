@@ -236,4 +236,4 @@ selector: list
   </div>
 </section>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/public/js/narrative.min.js" charset="utf-8"></script>

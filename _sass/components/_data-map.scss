@@ -2,7 +2,7 @@ data-map {
   display: block;
 
   svg {
-    border: 1px solid $mid-light-gray;
+    border: 1px solid $gray-light;
 
     [data-value] {
       cursor: pointer;
@@ -140,11 +140,11 @@ eiti-data-map {
     }
 
     &.mouseover use {
-      stroke: $green-darker-mid;
+      stroke: $green-mid;
     }
 
     &.selected use {
-      stroke: $green-darker;
+      stroke: $green;
     }
   }
 

@@ -17,18 +17,18 @@ eiti-bar {
   }
 
   .eiti-bar-bar {
-    background: $dark-gray;
+    background: $gray-darkest;
     display: block;
     height: 100%;
     left: 0;
     position: absolute;
 
     &.eiti-bar-bar_negative {
-      background: $mid-gray;
+      background: $gray-light;
     }
   }
 
   &.extent {
-    background: $mid-gray;
+    background: $gray-light;
   }
 }

@@ -41,7 +41,7 @@ Most Campbell County coal is sub-bituminous, meaning it contains 35% to 45% carb
 
 In 2015, Campbell County produced 328 million tons of coal, accounting for 87% of the state’s total production.[^9] Wyoming coal mines operate largely on federal lands managed by the Bureau of Land Management under the U.S. Department of the Interior.[^10] In fact, Wyoming is the site of more coal mining on federal and Indian lands than any other state in the country, constituting 83% of the total coal production on federal and Indian lands in the fiscal year ending in 2015.[^11] [^12]
 
-Production levels fluctuated little between 2005 and 2015. For instance, 2015’s levels were 9% below 2005 production, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^13] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the U.S.
+Production levels fluctuated little between 2005 and 2015. For instance, 2015’s levels were 9% below 2005 production, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^13] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the country.
 
 ### Coal production in Campbell County[^14]
 

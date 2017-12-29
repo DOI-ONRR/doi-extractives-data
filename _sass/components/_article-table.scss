@@ -28,7 +28,7 @@ $max-columns: 10;
   width: 100%;
 
   th {
-    border-bottom: 4px solid $light-green;
+    border-bottom: 4px solid $green-light;
     font-weight: $weight-book;
     line-height: 1.2;
     padding: $base-padding-small;
@@ -36,7 +36,7 @@ $max-columns: 10;
     vertical-align: bottom;
 
     &.article_table-thin {
-      border-bottom: 1px solid $light-green;
+      border-bottom: 1px solid $green-light;
     }
   }
 

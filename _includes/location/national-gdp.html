@@ -53,8 +53,9 @@
           <span class="caption-data">
             In <span class="eiti-bar-chart-x-value">{{ year }}</span>,
             extractive industries accounted for
-            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">{{ gdp[year].dollars | intcomma_dollar }}</span>, or
-            {{ gdp[year].percent | percent }}%
+            <span class="eiti-bar-chart-y-value" data-format="{{ _format }}">{{ gdp[year].dollars | intcomma_dollar }}</span> or
+            <year-value year="{{ year }}" data-year-values='{{ gdp | map_hash: "percent" | jsonify }}'
+              empty="--">{{ gdp[year].percent | percent }}</year-value>%
             of GDP.
           </span>
           <span class="caption-no-data" aria-hidden="true">

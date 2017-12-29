@@ -1,5 +1,5 @@
 <div class="case_studies_intro-select {{include.screen}}">
-  <select {% if page.permalink == '/case-studies/' %}class="select-dark-gray" {% endif %}id="case_studies-selector" onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
+  <select class="select-dark-gray"{% if page.permalink == '/case-studies/' %} {% endif %}id="case_studies-selector" onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
     <option
     {% if page.permalink == '/case-studies/' %}selected{% endif %}
     value="#">Choose a case study</option>

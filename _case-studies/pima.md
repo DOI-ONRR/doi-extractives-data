@@ -45,7 +45,7 @@ In 2014, the combined copper production from Pima County's three major mines tot
 
 ## Employment
 
-Copper mining makes up a relatively small portion of Pima County's overall employment, largely as a result of the Tucson metropolitan area's more diversified economy and workforce. In 2015, copper mining and related activities accounted for less than 1% (2,230 workers) of Pima County's total private-sector employment of 282,653.[^9] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2005 through 2015.[^10]
+Copper mining makes up a relatively small portion of Pima County's overall employment, largely as a result of the Tucson metropolitan area's more diversified economy and workforce. In 2015, copper mining and related activities accounted for less than 1% (2,230 workers) of Pima County's total private-sector employment of 285,383.[^9] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2005 through 2015.[^10]
 
 ### Wage and salary employment in Pima County:<br>Mining industry vs. all other industries[^11]
 

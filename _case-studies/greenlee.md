@@ -54,7 +54,7 @@ State revenue from copper extraction is directed back to Greenlee County primari
 
 Arizona also collects a Transaction Privilege Tax for the right to do business in the state, at a rate of 3.125% on the total gross receipts of taxable business.[^16] However, this tax does not apply to copper mining.
 
-In 2015-16 fiscal year, Greenlee County received $5,254,315 in transaction privilege and severance tax disbursements.[^17] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $3,768,467 in local property taxes levied for general purposes, public health services, and flood control (out of a total $20.2 million in county revenue) in its 2015 Fiscal Year.[^18] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
+In 2015-16 fiscal year, Greenlee County received $5,254,315 in transaction privilege and severance tax disbursements.[^17] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $3,768,467 in local property taxes levied for general purposes, public health services, and flood control (out of a total $20.2 million in county revenue) in its 2015 fiscal year.[^18] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
 
 ## Costs
 

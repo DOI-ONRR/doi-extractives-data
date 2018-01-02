@@ -11,7 +11,7 @@ breadcrumb:
 
 ## 2017 Executive Summary
 
-This report outlines progress made by the Department of the Interior and the Office of Natural Resource Revenue (ONRR) in 2017 on continuing to build upon the efforts of the Extractive Industries Transparency Initiative (EITI). In 2017, the U.S. withdrew from EITI as an Implementing Country, but will remain fully committed to institutionalizing the EITI principles of transparency and accountability.
+This report outlines progress made by the Department of the Interior and the Office of Natural Resources Revenue (ONRR) in 2017 on continuing to build upon the efforts of the Extractive Industries Transparency Initiative (EITI). In 2017, the U.S. withdrew from EITI as an Implementing Country, but will remain fully committed to institutionalizing the EITI principles of transparency and accountability.
 
 This website (Natural Resources Revenue Data) will continue to provide data and information related to extractive industry production, revenue, and disbursements in the U.S.
 

@@ -70,6 +70,9 @@ Statewide, the Alaska government collects oil-related revenue for the benefit of
 
 ### Alaska total petroleum based revenue[^26]
 
+(here's the new, "total revenue," chart ...)
+<img src="{{ site.baseurl }}/img/counties/ak-revenue.svg">
+
 <img src="{{ site.baseurl }}/img/counties/ak-tax.svg" alt="Chart shows quarterly severance tax payments in Alaska from 2011 through 2015. The y-axis represents millions of dollars. The peaks in the last 5 years are in Q2 of 2011 and 2012, both of which exceeded 1,700. 2015 amounts are under 100 for each quarter." class="case_studies_content-graph">
 
 Alaska residents also receive annual dividend payments from the state's Permanent Fund, based on a five-year average of the fund's performance. The state established the Permanent Fund in 1976, as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2016, each Alaska resident received $1,022 as a result of this payout, down from $2,072 in 2015 and just below the ten-year average of $1,424.[^27]

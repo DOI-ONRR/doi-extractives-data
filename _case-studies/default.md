@@ -1,7 +1,7 @@
 ---
 title: Case Studies
 layout: case-studies-landing
-description: While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP. At the county level, certain communities may be even more economically dependent on extractive industries.
+description: Extractive industries have a larger impact on some states' economies than others. By examining specific states and counties, we can get a better idea of how extractive industries influence local communities.
 tag:
 - Local
 - Case studies
@@ -30,11 +30,16 @@ resource: default
 selector: list
 ---
 
-> While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities may be even more economically dependent on extractive industries.
+<!-- Assigns variables to be used in the opening paragraph to keep the data up to date -->
+
+{% assign year_range = site.data.years.gdp | default: site.data.years.default %}
+{% assign year = year_range | last | to_s | default: default_year %}
+
+> While extractive industries made up {{ site.data.national_gdp.US[year].percent | percent }}% of the U.S. GDP in {{ year }}, they play a much larger role in some local communities. For example, extractive industries made up {{ site.data.state_gdp.WY[year].percent | percent }}% of Wyoming’s GDP in {{ year }}. At the county level, certain communities may be even more economically dependent on extractive industries.
 
 ## Revenue sustainability
 
-Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Revenue sustainability is a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
+Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Revenue sustainability is a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^1] However, when it comes to managing this critical factor, there are two challenges localities need to address:
 
 1. The sustainability of revenue over time, given that revenue fluctuates with commodity prices, and fossil fuels and hardrock mineral deposits are finite or may not be economically extractable based on current technology.
 2. The net sustainability of revenue given the fiscal benefits of increased revenue from extractive activities and the fiscal costs of increased government expenditures necessary to support extractive activities.
@@ -52,7 +57,7 @@ At the county level, revenue received from extractive activities takes many form
 
 ## Costs
 
-Local governments often make financial investments in their communities to support extractive industries. Costs vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted. In some circumstances, these costs are outweighed by the influx of revenue, while in other cases costs can result in net negative fiscal effects on local governments.[^3] Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:
+Local governments often make financial investments in their communities to support extractive industries. Costs vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted. In some circumstances, these costs are outweighed by the influx of revenue, while in other cases costs can result in net negative fiscal effects on local governments.[^2] Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:
 
 * **Transportation:** The cost of constructing new transportation infrastructure (such as roads or trains) or repairing current infrastructure due to heavy industry use.
 * **Water:** The cost of constructing new water or sewer infrastructure (such as water pipelines or treatment plants) to meet the needs of extractive industries, upgrading current infrastructure, or treating additional wastewater from extractive activities in the public wastewater treatment system.
@@ -67,21 +72,20 @@ We used a range of information publicly available online to compile the case stu
 
 County and state budget documents and state agency websites were the primary data sources. Federal agency websites and reports also provided critical information on employment in extractive industries, {{ "proved reserves" | term }} of various natural resources, and production estimates.
 
-This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose of these case studies, verify content, and lay the foundation for future collaboration.
+The goal of these case studies is to bring information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose of these case studies, verify content, and lay the foundation for future collaboration.
 
 To learn more about the interactions between governments and extractive industries in your community, consider researching:
 
 * Nongovernmental websites and publications
 * Industry reports and public tax filings
-* Energy think tank memos
+* Energy think-tank memos
 * Industry association reports
 * University publications
 * Environment impact statements
 
-You can also request government data that isn’t online or otherwise available through a <a href="http://www.foia.gov/how-to.html">Freedom of Information Act</a> request.
+You can also request government data that isn’t online or otherwise available through a [Freedom of Information Act request](http://www.foia.gov/how-to.html).
 
 ## Notes
 
-[^1]: U.S. Bureau of Economic Analysis, [Wyoming Department of Administration &amp; Information Economic Analysis Division](http://eadiv.state.wy.us/i&e/WyoGDP97_13.htm), 2013
-[^2]: EITI International Secretariat, [The EITI Standard (PDF)](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015, p. 9
-[^3]: Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014
+[^1]: EITI International Secretariat, [The EITI Standard (PDF)](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015, p. 9
+[^2]: Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014

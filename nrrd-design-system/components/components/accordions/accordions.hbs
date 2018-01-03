@@ -35,7 +35,7 @@
   <div is="mobile-nav" class="mobile-nav sticky stuck">
     <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
         <div class="flex-row">
-          <h3 class="mobile-nav-header flex-row-flex">Nebraska</h3>
+          <h3 class="mobile-nav-header flex-row-flex">Mobile nav header</h3>
           <span class="hide-expanded flex-row-icon">
             <icon class="icon icon-chevron-sm-down"></icon>
           </span>
@@ -56,6 +56,45 @@
       </ul>
     </div>
   </div>
+
+<!-- in-table accordion -->
+<table is="bar-chart-table" class="table-basic">
+  <tbody id="revenue-disbursement-stream-state-royalties-in-scope-commodities" class="table-accordion-group">
+    <tr>
+      <td>
+          Category
+      </td>
+      <td data-value="222220146" data-year-values="{&quot;2015&quot;:222220146}"><div class="bar"><div class="bar" style="width: 7.01156%;"></div></div><span class="text">
+        $222,220,146
+      </span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
+    <tr>
+      <td>
+        <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
+          Expandable category
+        </button>
+      </td>
+      <td data-value="996807296" data-year-values="{&quot;2015&quot;:996807296}"><div class="bar"><div class="bar" style="width: 31.4516%;"></div></div><span class="text">
+        $996,807,296
+      </span>
+      </td>
+    </tr>
+    <tr id="stream-ad-valorem-taxes" aria-hidden="true">
+      <td colspan="2">Content which appears when accordion is expanded.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- javascript for accordion functionality -->
+<script src="/js/lib/state-pages.min.js"></script>
+
+
+  <p class="label-primary">
+    The classes below need work, and may not merit a place in this guide. Let's discuss.
+  </p>
 
   <!-- genericize: revenues_subpage-steps_group_item -->
   <section class="container-outer">

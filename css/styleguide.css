@@ -66,3 +66,11 @@
   position: relative;
   padding: 1rem;
 }
+
+
+/*Imagery*/
+
+.icon {
+  height: 9rem;
+  width: 9rem;
+}

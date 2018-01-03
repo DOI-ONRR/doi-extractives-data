@@ -1,11 +1,133 @@
 title: Icons
 status: draft
-default: primary
 collated: true
-context:
-  text: The NRRD icon font
+default: hardrock
 variants:
-  - name: primary
+  - name: hardrock
     context:
-      className: theClass
-      text: Primary
+      className: icon-hardrock
+      text: .icon-hardrock
+  - name: search
+    context:
+      className: icon-search
+      text: .icon-search
+  - name: bars
+    context:
+      className: icon-bars
+      text: .icon-bars
+  - name: iron
+    context:
+      className: icon-iron
+      text: .icon-iron
+  - name: gold
+    context:
+      className: icon-gold
+      text: .icon-gold
+  - name: close
+    context:
+      className: icon-close-x
+      text: .icon-close-x
+  - name: renewables
+    context:
+      className: icon-renewables
+      text: .icon-renewables
+  - name: book
+    context:
+      className: icon-book
+      text: .icon-book
+  - name: geo
+    context:
+      className: icon-geo
+      text: .icon-geo
+  - name: chevron-sm
+    context:
+      className: icon-chevron-sm
+      text: .icon-chevron-sm
+  - name: copper
+    context:
+      className: icon-copper
+      text: .icon-copper
+  - name: map
+    context:
+      className: icon-map
+      text: .icon-map
+  - name: dash-lg
+    context:
+      className: icon-dash-lg
+      text: .icon-dash-lg
+  - name: dash-sm
+    context:
+      className: icon-dash-sm
+      text: .icon-dash-sm
+  - name: cloud
+    context:
+      className: icon-cloud
+      text: .icon-cloud
+  - name: plus-lg
+    context:
+      className: icon-plus-lg
+      text: .icon-plus-lg
+  - name: minerals
+    context:
+      className: icon-minerals
+      text: .icon-minerals
+  - name: oil
+    context:
+      className: icon-oil
+      text: .icon-oil
+  - name: wind
+    context:
+      className: icon-wind
+      text: .icon-wind
+  - name: coal
+    context:
+      className: icon-coal
+      text: .icon-coal
+  - name: plus-sm
+    context:
+      className: icon-plus-sm
+      text: .icon-plus-sm
+  - name: gas
+    context:
+      className: icon-gas
+      text: .icon-gas
+  - name: chevron-lg
+    context:
+      className: icon-chevron-lg
+      text: .icon-chevron-lg
+  - name: search
+    context:
+      className: icon-search
+      text: .icon-search
+  - name: bars
+    context:
+      className: icon-bars
+      text: .icon-bars
+  - name: iron
+    context:
+      className: icon-iron
+      text: .icon-iron
+  - name: chevron-sm-left
+    context:
+      className: icon-chevron-sm-left
+      text: .icon-chevron-sm-left
+  - name: chevron-lg-left
+    context:
+      className: icon-chevron-lg-left
+      text: .icon-chevron-lg-left
+  - name: chevron-sm-down
+    context:
+      className: icon-chevron-sm-down
+      text: .icon-chevron-sm-down
+  - name: chevron-lg-down
+    context:
+      className: icon-chevron-lg-down
+      text: .icon-chevron-lg-down
+  - name: chevron-sm-up
+    context:
+      className: icon-chevron-sm-up
+      text: .icon-chevron-sm-up
+  - name: chevron-lg-up
+    context:
+      className: icon-chevron-lg-up
+      text: .icon-chevron-lg-up

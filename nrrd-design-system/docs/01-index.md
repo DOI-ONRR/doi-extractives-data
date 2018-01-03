@@ -2,35 +2,31 @@
 title: Nrrd Design System
 ---
 
-## Purpose
-This guide assumes knowledge of html, css, and the underlying technologies used to build this website such as jekyll, TK, TK. 
+[Brief intro, perhaps very briefly describing (and linking to) Revenuedata.doi.gov .] This guide assumes knowledge of html, css, and the underlying technologies used to build this website such as jekyll, TK, TK.
 
-This is a decription of our unique approach to various components. How we apply. 
+This is a description of our unique approach to various components. How we apply. [We may not need to explicitly state ^this^. It's a good rule of thumb for us to follow as we go, tho.]
 
 ## Goals
-- Document style decisions
+- Give insight into the Why behind our style decisions
+- Promote consistency
 - Make it easier to maintain and add new content
-- Ensure consistency 
+- Show how some types of content can be laid out
 
 ## Principles
 
-### Be simple
-Revenuedata.doi.gov is designed to let data to speak for itself. Its straightforward graphs, for example, are free from embellishment and decorative "chart junk." Illustrations help make the site more friendly — and an infographic here and there can serve to "visually explain" some concepts and systems — but most of the site's visuals should be in the form of data-driven charts.
+Let the data speak for itself. Keep graphs free from unnecessary embellishment and decorative "chart junk." Use tasteful, minimal illustrations where appropriate. They help make the site more friendly, and an infographic here and there can serve to "visually explain" some concepts and systems. Most of the site's visuals should be in the form of data-driven charts, though.
 
-### Surface what's interesting
-Big numbers and dramatic trends often lead to meaningful stories, so choose scannable chart designs that highlight such things without making users poke around to find them.
+## Offer depth
+Provide complete documentation and intuitive access to full data sets, but don't show the "kitchen sink" by default. [we can expound further on the charts page]
 
-### Offer depth
-Add interactivity to give access to richer data that might overwhelm users if it was displayed by default. The side-by-side bar charts 
+## Surface what's interesting
+[People want to see the latest info; show the most recent data by default]. Also, big numbers and dramatic trends often lead to meaningful stories, so choose scannable chart designs that highlight such things without making users poke around to root them out [restate positively?].
 
-### Cater to experts and novices
-Experts want all the data; citizens may need background info
+## Cater to both experts and novices
+[wide range of users, ranging from experts who know the industry well to interested citizens who are brand new to the concept. Experts want all the data, fast. give them easy access to downloads, and look to build powerful tools that let them customize the information. Less-experienced visitors need more guidance and background information. Work to meet their needs without dumbing down the site, or impacting the experience for those who rely on this information as part of their job.]
 
-### Make it work on their device
-Everyone uses a smartphone, so everything should be mobile friendly.
+## Make it work on their device
+[Everyone uses a smartphone, so everything should be responsive. This is a challenge, given the content of our site. ...]
 
-### Make it accessible
-We also do our best to stick to accessibility guidelines laid down in Section 508, so those with impaired vision can get information from the site. Many of these people use screen readers,
-
-## Pointers
-Here's a few pointers to help maintain consistency as you use the elements in this guide to new features you create.
+## Make it accessible
+[We also adhere to accessibility guidelines laid down in Section 508, so those with impaired vision can get information from the site. Possibly mention that many of these people use screen readers, so we should be careful to use meta tags etc?]

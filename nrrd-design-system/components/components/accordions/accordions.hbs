@@ -19,17 +19,52 @@
 
 <div class="preview">
 
-  <!-- aria-toggle-icon -->
-  <button is="aria-toggle" aria-controls="foo" aria-expanded="false" type="button">
-          <span class="hide-expanded">
-            <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
-            Show table
-          </span>
-          <span class="show-expanded">
-            <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
-            Hide table
-          </span>
-      </button>
+  <!-- plus-button accordion -->
+
+  <section id="federal-production-coal-tons" class="product full-width">
+    <div class="row-container">
+      <div class="map-container">
+        <h4 class="chart-title">
+          <h4 class="details-container" aria-hidden="false">
+            <button is="aria-toggle" aria-controls="federal-production-coal-tons-counties" aria-expanded="true" type="button">
+            <span class="hide-expanded">
+              <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+              Show
+            </span>
+            <span class="show-expanded">
+              <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+              Hide
+            </span>
+        </button>
+      </h4>
+      </eiti-data-map>
+        <div class="eiti-data-map-table" id="federal-production-coal-tons-counties" aria-hidden="false">
+          <table is="bar-chart-table" data-percent-max="100" class="county-table" year="2016">
+            <thead>
+              <tr>
+                <th>Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="inner-table-row">
+                <td colspan="3" class="inner-table-cell">
+                  <div class="inner-table-wrapper">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Expanded content</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- new: mobile_nav_header -->
   <div is="mobile-nav" class="mobile-nav sticky stuck">
@@ -90,8 +125,6 @@
 
 <!-- javascript for accordion functionality -->
 <script src="/js/lib/state-pages.min.js"></script>
-
-
   <p class="label-primary">
     The classes below need work, and may not merit a place in this guide. Let's discuss.
   </p>

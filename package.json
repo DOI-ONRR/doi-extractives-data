@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "rm -rf _site; bundle exec jekyll build",
-    "federalist": "webpack &> build.log && npm run release-styleguide",
+    "federalist": "webpack &&> build.log && npm run release-styleguide",
     "start": "bundle exec jekyll serve --incremental",
     "start-states":
       "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",

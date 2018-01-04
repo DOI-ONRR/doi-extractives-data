@@ -19,8 +19,7 @@
 
 <div class="preview">
 
-  <!-- plus-button accordion -->
-
+  <!-- plus-button accordion, genericize this -->
   <section id="federal-production-coal-tons" class="product full-width">
     <div class="row-container">
       <div class="map-container">
@@ -29,11 +28,11 @@
             <button is="aria-toggle" aria-controls="federal-production-coal-tons-counties" aria-expanded="true" type="button">
             <span class="hide-expanded">
               <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
-              Show
+              Floating expandable item
             </span>
             <span class="show-expanded">
               <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
-              Hide
+              Hide expanded content
             </span>
         </button>
       </h4>
@@ -66,70 +65,94 @@
     </div>
   </section>
 
-  <!-- new: mobile_nav_header -->
-  <div is="mobile-nav" class="mobile-nav sticky stuck">
-    <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
-        <div class="flex-row">
-          <h3 class="mobile-nav-header flex-row-flex">Mobile nav header</h3>
-          <span class="hide-expanded flex-row-icon">
-            <icon class="icon icon-chevron-sm-down"></icon>
-          </span>
-          <span class="show-expanded flex-row-icon">
-            <icon class="icon icon-chevron-sm-up"></icon>
-          </span>
-        </div>
-    </button>
-    <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 668px;">
-      <ul>
-        <a href="#" class="mobile-nav-list-item">Top</a>
-        <a href="#menu-item-a" class="mobile-nav-list-item">Menu option a</a>
-        <a href="#menu-item-b" class="mobile-nav-list-item">Submenu option b</a>
+<!-- in-table accordion, genericize this -->
+  <table is="bar-chart-table" class="table-basic">
+    <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
+      <tr>
+        <td>
+          <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
+            In-table expandable category
+          </button>
+        </td>
+      </tr>
+      <tr id="stream-ad-valorem-taxes" aria-hidden="true">
+        <td colspan="2">Expanded content</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- javascript for accordion functionality, genericize this -->
+  <script src="/js/lib/state-pages.min.js"></script>
+
+  <!-- mobile nav header -->
+  <main id="foo" class="container-page-wrapper layout-state-pages">
+    <div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
+    <div is="mobile-nav" class="mobile-nav sticky stuck">
+      <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
+          <div class="flex-row">
+            <h3 class="mobile-nav-header flex-row-flex">Mobile menu</h3>
+            <span class="hide-expanded flex-row-icon">
+              <icon class="icon icon-chevron-sm-down"></icon>
+            </span>
+            <span class="show-expanded flex-row-icon">
+              <icon class="icon icon-chevron-sm-up"></icon>
+            </span>
+          </div>
+      </button>
+
+      <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 326px;">
         <ul>
-            <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-a" href="#submenu-item-a">Submenu item a</a>
-            <a class="mobile-nav-sublist-item" mobile-nav-item="submenu-option-b" href="#submenu-item-b">Submenu option b</a>
+          <a href="#" class="mobile-nav-list-item">Category</a>
+          <a href="#production" class="mobile-nav-list-item">Category</a>
+          <ul>
+            <a class="mobile-nav-sublist-item" mobile-nav-item="all-production" href="#all-production">Subcategory</a>
+            <a class="mobile-nav-sublist-item" mobile-nav-item="federal-production" href="#federal-production">Subcategory</a>
+          </ul>
+          <a href="#revenue" class="mobile-nav-list-item">Category</a>
         </ul>
-      </ul>
+      </div>
     </div>
-  </div>
 
-<!-- in-table accordion -->
-<table is="bar-chart-table" class="table-basic">
-  <tbody id="revenue-disbursement-stream-state-royalties-in-scope-commodities" class="table-accordion-group">
-    <tr>
-      <td>
-          Category
-      </td>
-      <td data-value="222220146" data-year-values="{&quot;2015&quot;:222220146}"><div class="bar"><div class="bar" style="width: 7.01156%;"></div></div><span class="text">
-        $222,220,146
-      </span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
-    <tr>
-      <td>
-        <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
-          Expandable category
-        </button>
-      </td>
-      <td data-value="996807296" data-year-values="{&quot;2015&quot;:996807296}"><div class="bar"><div class="bar" style="width: 31.4516%;"></div></div><span class="text">
-        $996,807,296
-      </span>
-      </td>
-    </tr>
-    <tr id="stream-ad-valorem-taxes" aria-hidden="true">
-      <td colspan="2">Content which appears when accordion is expanded.</td>
-    </tr>
-  </tbody>
-</table>
+    <!-- mobile-collapsong category, genericize this -->
+    <section id="all-production" is="year-switcher-section" class="all-lands production">
+      <div class="chart-list">
+        <section id="state-all-production-coal" class="chart-item">
+          <h3 class="chart-title">
+            <button is="aria-toggle" aria-expanded="false" aria-controls="state-all-production-figures-chart-coal" class="chart-title-button" type="button">
+              <span class="hide-expanded chart-title-small">
+                <span>
+                  Mobile-collapsing item
+                </span>
+                <span class="hide-expanded">
+                  <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+                </span>
+              </span>
+              <span class="show-expanded chart-title-small">
+                <span>
+                  Mobile-collapsing item
+                </span>
+                <img class="chart-title-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+              </span>
+            </button>
+            <span class="chart-title-large">Mobile-collapsing item</span>
+          </h3>
+            <figure class="chart" id="state-all-production-figures-chart-coal" aria-hidden="true">
+              <figcaption id="state-all-production-figures-coal">
+                Full content
+              </figcaption>
+            </figure>
+        </section>
+      </div>
+    </section>
+  </main>
 
-<!-- javascript for accordion functionality -->
-<script src="/js/lib/state-pages.min.js"></script>
+  <script src="/js/lib/state-pages.min.js"></script>
+
   <p class="label-primary">
-    The classes below need work, and may not merit a place in this guide. Let's discuss.
+    The classes below need work, and may not merit a place in this guide. Let's discuss!
   </p>
 
-  <!-- genericize: revenues_subpage-steps_group_item -->
+  <!-- revenues_subpage-steps_group_item, genericize this -->
   <section class="container-outer">
     <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
       <li class="revenues_subpage-steps_group_item" aria-expanded="true" accordion-item="true">

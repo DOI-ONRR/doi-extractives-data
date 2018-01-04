@@ -1,5 +1,9 @@
 /*Global*/
 
+.container-margin {
+  margin: 1rem 0rem;
+}
+
 .label-hero {
   font-family: monospace;
   font-size: 2rem;
@@ -70,7 +74,7 @@
 
 /*Icons*/
 
-.icon-wrapper {
+.wrapper-padded-float {
   float: left;
   padding: 1rem;
 }

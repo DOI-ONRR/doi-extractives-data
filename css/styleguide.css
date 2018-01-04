@@ -70,7 +70,12 @@
 
 /*Imagery*/
 
+.icon-wrapper {
+  float: left;
+  padding: 1rem;
+}
+
 .icon {
-  height: 9rem;
-  width: 9rem;
+  text-align: center;
+  font-size: 3rem;
 }

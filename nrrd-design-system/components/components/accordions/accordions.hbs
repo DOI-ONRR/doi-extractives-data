@@ -20,96 +20,101 @@
 <div class="preview">
 
   <!-- plus-button accordion, genericize this -->
-  <section id="federal-production-coal-tons" class="product full-width">
-    <div class="row-container">
-      <div class="map-container">
-        <h4 class="chart-title">
-          <h4 class="details-container" aria-hidden="false">
-            <button is="aria-toggle" aria-controls="federal-production-coal-tons-counties" aria-expanded="true" type="button">
-            <span class="hide-expanded">
-              <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
-              Floating expandable item
-            </span>
-            <span class="show-expanded">
-              <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
-              Hide expanded content
-            </span>
-        </button>
-      </h4>
-      </eiti-data-map>
-        <div class="eiti-data-map-table" id="federal-production-coal-tons-counties" aria-hidden="false">
-          <table is="bar-chart-table" data-percent-max="100" class="county-table" year="2016">
-            <thead>
-              <tr>
-                <th>Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="inner-table-row">
-                <td colspan="3" class="inner-table-cell">
-                  <div class="inner-table-wrapper">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>Expanded content</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+  <div class="container-margin">
+    <section id="federal-production-coal-tons" class="product full-width">
+      <div class="row-container">
+        <div class="map-container">
+            <h4 class="details-container" aria-hidden="false">
+              <button is="aria-toggle" aria-controls="federal-production-coal-tons-counties" aria-expanded="true" type="button">
+              <span class="hide-expanded">
+                <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+                Show expanded content
+              </span>
+              <span class="show-expanded">
+                <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+                Hide expanded content
+              </span>
+          </button>
+        </h4>
+        </eiti-data-map>
+          <div class="eiti-data-map-table" id="federal-production-coal-tons-counties" aria-hidden="false">
+            <table is="bar-chart-table" data-percent-max="100" class="county-table" year="2016">
+              <thead>
+                <tr>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="inner-table-row">
+                  <td colspan="3" class="inner-table-cell">
+                    <div class="inner-table-wrapper">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>Expanded content</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
 <!-- in-table accordion, genericize this -->
-  <table is="bar-chart-table" class="table-basic">
-    <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
-      <tr>
-        <td>
-          <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
-            In-table expandable category
-          </button>
-        </td>
-      </tr>
-      <tr id="stream-ad-valorem-taxes" aria-hidden="true">
-        <td colspan="2">Expanded content</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container-margin">
+    <table is="bar-chart-table" class="table-basic">
+      <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
+        <tr>
+          <td>
+            <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
+              In-table expandable category
+            </button>
+          </td>
+        </tr>
+        <tr id="stream-ad-valorem-taxes" aria-hidden="true">
+          <td colspan="2">Expanded content</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <!-- javascript for accordion functionality, genericize this -->
   <script src="/js/lib/state-pages.min.js"></script>
 
   <!-- mobile nav header -->
-  <main id="foo" class="container-page-wrapper layout-state-pages">
-    <div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
-    <div is="mobile-nav" class="mobile-nav sticky stuck">
-      <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
-          <div class="flex-row">
-            <h3 class="mobile-nav-header flex-row-flex">Mobile menu</h3>
-            <span class="hide-expanded flex-row-icon">
-              <icon class="icon icon-chevron-sm-down"></icon>
-            </span>
-            <span class="show-expanded flex-row-icon">
-              <icon class="icon icon-chevron-sm-up"></icon>
-            </span>
-          </div>
-      </button>
+  <div class="container-margin">
+    <main id="foo" class="container-page-wrapper layout-state-pages">
+      <div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
+      <div is="mobile-nav" class="mobile-nav sticky stuck">
+        <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
+            <div class="flex-row">
+              <h3 class="mobile-nav-header flex-row-flex">Mobile menu</h3>
+              <span class="hide-expanded flex-row-icon">
+                <icon class="icon icon-chevron-sm-down"></icon>
+              </span>
+              <span class="show-expanded flex-row-icon">
+                <icon class="icon icon-chevron-sm-up"></icon>
+              </span>
+            </div>
+        </button>
 
-      <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 326px;">
-        <ul>
-          <a href="#" class="mobile-nav-list-item">Category</a>
-          <a href="#production" class="mobile-nav-list-item">Category</a>
+        <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 326px;">
           <ul>
-            <a class="mobile-nav-sublist-item" mobile-nav-item="all-production" href="#all-production">Subcategory</a>
-            <a class="mobile-nav-sublist-item" mobile-nav-item="federal-production" href="#federal-production">Subcategory</a>
+            <a href="#" class="mobile-nav-list-item">Category</a>
+            <a href="#production" class="mobile-nav-list-item">Category</a>
+            <ul>
+              <a class="mobile-nav-sublist-item" mobile-nav-item="all-production" href="#all-production">Subcategory</a>
+              <a class="mobile-nav-sublist-item" mobile-nav-item="federal-production" href="#federal-production">Subcategory</a>
+            </ul>
+            <a href="#revenue" class="mobile-nav-list-item">Category</a>
           </ul>
-          <a href="#revenue" class="mobile-nav-list-item">Category</a>
-        </ul>
+        </div>
       </div>
     </div>
 

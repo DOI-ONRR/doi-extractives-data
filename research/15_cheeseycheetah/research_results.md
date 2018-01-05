@@ -9,19 +9,19 @@ We sourced participants for this research sprint from a list of folks who had re
 
 # Findings and next steps
 
-## For some internal DOI users, we discovered user needs that the NRRD site will ultimately not be able to serve, given its current scope and constraints.
+## For some internal DOI users, we discovered user needs that the NRRD site will not be able to serve, given its current scope and constraints.
 
-Employees in other bureaus (i.e. BSEE) often need lease-level or form-level data to manipulate in order to answer specific questions. They may also need detailed data in order to slice the data by different geographies, such as basin, region, or tribal area.
+Employees in other bureaus (i.e. BSEE) often need lease-level or highly detailed data to manipulate in order to answer specific questions. They may also need detailed data in order to slice the data by different geographies, such as basin, region, or tribal area.
 
 While these users would _prefer_ to access or receive exactly the data they need, they’re already used to and capable of manually aggregating & disaggregating raw data themselves.
 
-Based on ONRR’s current policies and practices around potentially proprietary and tribal data, we’re unlikely to be able to offer the detailed, parsable data they seek on the public NRRD site itself.
-
 ### What this means for us: 
+Based on ONRR’s current policies and practices around potentially proprietary or tribal data, we’re unlikely to be able to offer the detailed, parsable data they seek on the public NRRD site itself.
+
 While we can’t offer exactly the data these users seek on the NRRD site itself, **we should explore how we can make it easier for these users to identify a clear path for requesting the data they need from ONRR ([#2533](https://github.com/18F/doi-extractives-data/issues/2533)).** 
 
 
-## We heard from several folks that they didn’t know where to turn for the data they need.
+## We heard from several people that they didn’t know where to turn for the data they need.
 
 In general, many folks don’t know what data is available where, and often turn to their own personal contacts within ONRR to get the info they need.
 
@@ -33,17 +33,17 @@ It would be worth the NRRD team investing time in **making sure everyone at ONRR
 This would likely entail some targeted demos, and potentially even developing some training materials or scripts that various ONRR staff can use to help direct data requestors either to relevant pages on the NRRD site or to the Data Services team for custom requests.
 
 
-## Many of the information requests we learned about originate from inquiries to the Public Affairs office.
+## Many information requests we learned about started as inquiries to Public Affairs offices.
 
-We learned that when various DOI Public Affairs offices receive inquiries about natural resources revenue (often from environmental groups and industry seeking data to better inform their advocacy work), they often route those questions to others in their Bureau (such as economists or policy analysts) to track down the data needed to answer the question.
+When DOI Public Affairs offices receive inquiries about natural resources revenue (often from environmental groups and industry seeking data to better inform their advocacy work), they often route those questions to others in their Bureau (such as economists or policy analysts) to track down the data needed to answer the question.
 
 ### What this means for us:
-To help us identify how we could make it easier for these Public Affairs folks to get the info they need, **the NRRD team should conduct more focused research with folks from various DOI Public Affairs offices,** to better understand the kinds of questions they receive, and how they go about getting that information now ([#2578](https://github.com/18F/doi-extractives-data/issues/2578)).
+To help us identify how we could make it easier for Public Affairs staff to get the info they need, **the NRRD team should conduct more focused research with staff of various DOI Public Affairs offices,** to better understand the kinds of questions they receive, and how they go about getting that information now ([#2578](https://github.com/18F/doi-extractives-data/issues/2578)).
 
 It’s possible some targeted outreach and education—similar to what we suggested for folks fielding info requests at ONRR—may be useful eventually for other DOI Bureaus’ Public Affairs staff.
 
 ## Other next steps 
 
-We heard from several users in this research round (as well as over the past few months via ONRR’s Data Services team) that making _sales year_ data available on NRRD would be particularly useful. Given that this data is not proprietary and would save the Data Services team significant amounts of time currently spent fulfilling custom request for this data, **the NRRD team should consider how they might add sales year data to NRRD in the coming months.**
+We heard from several users in this research round (as well as over the past few months via ONRR’s Data Services team) that making _sales year_ data available on NRRD would be particularly useful. If this could save the Data Services team significant time currently spent fulfilling custom request for this data, **the NRRD team should consider how they might add sales year data to NRRD in the coming months.**
 
 We also learned a lot about different use cases for the NRRD site in general during this research round, so **we’ll spend some time in the next few sprints incorporating what we’ve learned about our users and their needs into the product vision for NRRD moving forward ([#2548](https://github.com/18F/doi-extractives-data/issues/2548)).**

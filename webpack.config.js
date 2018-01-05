@@ -1,6 +1,7 @@
 // jshint node: true
 var path = require('path')
 var webpack = require('webpack')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var env = process.env.NODE_ENV
 
@@ -42,6 +43,32 @@ var cssConfig = {
   plugins: [new ExtractTextPlugin('[name].css')],
 }
 
+var imgConfig = {
+  // this results in a non-fatal error but also does
+  // not generate any extra files
+  entry: './img',
+  output: {
+    path: path.join(__dirname, '/public'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [{ loader: 'file-loader' }],
+      },
+    ],
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'img',
+        to: 'img',
+      },
+    ]),
+  ],
+}
+
 var jsConfig = {
   entry: {
     'main.min': './js/src/main.js',
@@ -53,13 +80,11 @@ var jsConfig = {
     'reconciliation.min': './js/src/reconciliation.js',
     'search.min': './js/src/search.js',
   },
-
   output: {
     path: __dirname + '/public/js',
     filename: '[name].js',
     chunkFilename: '[id].js',
   },
-
   plugins: [],
 }
 
@@ -69,4 +94,4 @@ if (env === 'production') {
   jsConfig.devtool = 'source-map'
 }
 
-module.exports = [jsConfig, cssConfig]
+module.exports = [jsConfig, imgConfig, cssConfig]

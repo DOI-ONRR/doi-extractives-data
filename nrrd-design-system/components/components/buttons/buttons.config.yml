@@ -19,7 +19,3 @@ variants:
     context:
       className: button-disabled
       text: Disabled button
-  - name: toggle-filter
-    context:
-      className: toggle-filter
-      text: Filter toggle

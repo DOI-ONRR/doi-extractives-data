@@ -40,7 +40,7 @@ State and tribal AML programs rate abandoned mine areas on a priority scale of 1
 
 To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).[^2]
 
-**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. To see data by completed, funded, and unfunded sites, click on 'Summary.'** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
+**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. To see data by completed, funded, and unfunded sites, click on 'Summary.'** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 
 ### Reclaimed AML areas
@@ -66,7 +66,7 @@ For more information:
 
 ### AML funding and spending[^7]
 
-<img src="{{ site.baseurl }}/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
 
 The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)).
 
@@ -86,7 +86,7 @@ Since 1978, the coal industry has contributed $9.2 billion to the AML fund, whic
 
 **Annual AML fee collection**[^10]
 
-<img src="{{ site.baseurl }}/img/AML-annual-fees.svg" alt="Chart shows annual AML fee collection since 1978." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML-annual-fees.svg" alt="Chart shows annual AML fee collection since 1978." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Distribution to states
 
@@ -102,7 +102,7 @@ The statute requires the government to distribute AML Reclamation Program funds 
 
 The states that received the largest grants from OSMRE in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^15]
 
-<img src="{{ site.baseurl }}/img/AML_state-grants.svg" alt="Chart shows the states that received the largest grants from the AML fund in FY 2016. Wyoming received $59.2 million, Pennsylvania received $43.0 million, West Virginia received $29.7 million, Kentucky received $17.1 million, and Illinois received $15.7 million." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML_state-grants.svg" alt="Chart shows the states that received the largest grants from the AML fund in FY 2016. Wyoming received $59.2 million, Pennsylvania received $43.0 million, West Virginia received $29.7 million, Kentucky received $17.1 million, and Illinois received $15.7 million." class="article_img-100 u-margin-top u-margin-bottom">
 
 For more information about grants, see [OSMRE grant distribution reports](http://www.osmre.gov/resources/grants.shtm).
 
@@ -124,7 +124,7 @@ Prior to 2006, companies often paid more money into the [AML fund](http://www.os
 
 **Growth of the AML fund's unappropriated balance**[^17]
 
-<img src="{{ site.baseurl }}/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2015. It grew from around $0.5 to nearly $2.5 billion dollars." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2015. It grew from around $0.5 to nearly $2.5 billion dollars." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Interest on the fund
 
@@ -144,7 +144,7 @@ As of November 2015, the fund's balance stood at $2.5 billion.[^21] The reauthor
 
 **Allocation of unappropriated balance**[^22]
 
-<img src="{{ site.baseurl }}/img/AML-unapprop-alloc.svg" alt="Chart shows the division of allocations in the unappropriated part of the AML reclamation fund. 60.4% is meant for historic coal grants. 16.9% is meant for federal expenses, which are subject to congressional appropriation. 4.7% is meant for a reserve for UMWA health care plans and retirement funds. 18% is meant for states and tribes." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML-unapprop-alloc.svg" alt="Chart shows the division of allocations in the unappropriated part of the AML reclamation fund. 60.4% is meant for historic coal grants. 16.9% is meant for federal expenses, which are subject to congressional appropriation. 4.7% is meant for a reserve for UMWA health care plans and retirement funds. 18% is meant for states and tribes." class="article_img-100 u-margin-top u-margin-bottom">
 
 Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
 

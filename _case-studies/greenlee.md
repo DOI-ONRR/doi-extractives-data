@@ -41,7 +41,7 @@ The largest-producing copper mine in North America is the privately owned Morenc
 
 ### Morenci mine copper production and average copper price[^11]
 
-<img src="{{ site.baseurl }}/img/counties/az-production.svg" alt="Chart shows annual copper production from Morenci mine from 2007 to 2015, with annual average copper price overlaid as a line graph. The y-axis represents millions of recoverable pounds of copper and cents per pound, respectively. Each year, copper production is between 400 and 900 million recoverable pounds; the price each year is between $2 and $4.50 per pound. The highest price shown was in 2011, at over $4 per pound. The year in this period with the most production is 2015, with about 900 million recoverable pounds." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/az-production.svg" alt="Chart shows annual copper production from Morenci mine from 2007 to 2015, with annual average copper price overlaid as a line graph. The y-axis represents millions of recoverable pounds of copper and cents per pound, respectively. Each year, copper production is between 400 and 900 million recoverable pounds; the price each year is between $2 and $4.50 per pound. The highest price shown was in 2011, at over $4 per pound. The year in this period with the most production is 2015, with about 900 million recoverable pounds." class="case_studies_content-graph">
 
 
 ## Employment

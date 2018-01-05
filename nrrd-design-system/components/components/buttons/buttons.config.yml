@@ -15,6 +15,10 @@ variants:
     context:
       className: button-tertiary
       text: Tertiary button
+  - name: disabled
+    context:
+      className: button-disabled
+      text: Disabled button
   - name: toggle-filter
     context:
       className: toggle-filter

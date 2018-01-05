@@ -42,8 +42,19 @@ To help us identify how we could make it easier for Public Affairs staff to get 
 
 It’s possible some targeted outreach and education—similar to what we suggested for folks fielding info requests at ONRR—may be useful eventually for other DOI Bureaus’ Public Affairs staff.
 
+## Several people we talked to expressed a need for more historical data to accurately analyze trends over longer periods of time.
+
+We heard a desire from several of the people we talked to for "historic" data in order to observe trends that are only discernible by looking further back. We did not get as much detail as we would have liked about the nature of these long-term analyses, however, so we're unsure how many more years of historical data it would require to satisfy this need. 
+  
+
+### What this means for us:
+We don't know enough about the trend analyses users are conducting to know for sure how much data would be useful, so it could be worth **doing more targeted research to learn more about this particular use case** in order to determine how much historical data would be worth the effort to incorporate into NRRD ([#2581](https://github.com/18F/doi-extractives-data/issues/2581)). 
+
+We do know that data is available going back to 1982 on the [statistics site](https://statistics.onrr.gov/Information.aspx), which could be a helpful reference point for any future research into this user need. 
+
+
 ## Other next steps 
 
-We heard from several users in this research round (as well as over the past few months via ONRR’s Data Services team) that making _sales year_ data available on NRRD would be particularly useful. If this could save the Data Services team significant time currently spent fulfilling custom request for this data, **the NRRD team should consider how they might add sales year data to NRRD in the coming months.**
+We heard from several users in this research round (as well as over the past few months via ONRR’s Data Services team) that making _sales year_ data available on NRRD would be particularly useful. If this could save the Data Services team significant time currently spent fulfilling custom request for this data, **the NRRD team should consider how they might add sales year data to NRRD in the coming months ([#2580](https://github.com/18F/doi-extractives-data/issues/2580)).**
 
 We also learned a lot about different use cases for the NRRD site in general during this research round, so **we’ll spend some time in the next few sprints incorporating what we’ve learned about our users and their needs into the product vision for NRRD moving forward ([#2548](https://github.com/18F/doi-extractives-data/issues/2548)).**

@@ -11,7 +11,7 @@ We sourced participants for this research sprint from a list of folks who had re
 
 ## For some internal DOI users, we discovered user needs that the NRRD site will not be able to serve, given its current scope and constraints.
 
-Employees in other bureaus (i.e. BSEE) often need lease-level or highly detailed data to manipulate in order to answer specific questions. They may also need detailed data in order to slice the data by different geographies, such as basin, region, or tribal area.
+Employees in other bureaus (e.g. BSEE) often need lease-level or highly detailed data to manipulate in order to answer specific questions. They may also need detailed data in order to slice the data by different geographies, such as basin, region, or tribal area.
 
 While these users would _prefer_ to access or receive exactly the data they need, they’re already used to and capable of manually aggregating & disaggregating raw data themselves.
 

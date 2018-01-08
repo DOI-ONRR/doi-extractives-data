@@ -52,7 +52,7 @@ state_saving_spending: |
 state_impact: |
     The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, annual wages from extractive industries made up about 18% (or $1.64 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Wyoming in 2016 was $84,451, or almost twice the statewide average wage of $43,813.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2016, annual wages from extractive industries made up about 18% (or $1.6 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Wyoming in 2016 was $84,451, or almost twice the statewide average wage of $43,813.
 ---
 
 <!-- State governance -->

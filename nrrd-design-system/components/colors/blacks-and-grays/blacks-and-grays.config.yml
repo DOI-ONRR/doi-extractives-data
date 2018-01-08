@@ -1,7 +1,6 @@
 title: Black and grays
 status: draft
 collated: true
-notes: '"Accessible" colors can be used as text fills over white backgrounds, since the contrast ratio between the color and white is at least 4.5:1.'
 default: black
 variants:
   - name: black

@@ -39,8 +39,4 @@ variants:
   - name: para-sm
     context:
       className: para-sm
-      text: This is small text, obvi. The type gets even smaller in spots, if you can believe it. Long story.
-  - name: more
-    context:
-      className: p
-      text: and .....?
+      text: This is small text.

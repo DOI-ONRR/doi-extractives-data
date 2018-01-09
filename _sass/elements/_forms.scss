@@ -15,7 +15,6 @@
 //
 // Styleguide elements.forms
 
-
 form {
   text-align: left;
 }
@@ -38,7 +37,6 @@ label,
 select {
   display: block;
   font-size: $base-font-size;
-
 }
 
 label {
@@ -55,8 +53,7 @@ label {
 }
 
 textarea,
-#{$all-text-inputs},
-select[multiple=multiple] {
+select[multiple='multiple'] {
   font-size: $base-font-size;
 
   @include placeholder {
@@ -129,12 +126,12 @@ select {
   }
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }

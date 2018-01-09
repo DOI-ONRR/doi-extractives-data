@@ -43,11 +43,11 @@ After the independent administrator compared company payments to government reve
 
 Several companies also allowed for corporate income tax reconciliation. Of the companies invited to participate, only C-corporations are eligible to report taxes.
 
-<img src="{{ site.baseurl }}/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
 ## Scope
 

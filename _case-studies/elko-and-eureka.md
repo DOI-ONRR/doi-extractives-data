@@ -46,7 +46,7 @@ The two major gold-mining companies driving this development are Newmont Mining 
 
 ### Gold production in Elko and Eureka counties[^10]
 
-<img src="{{ site.baseurl }}/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2014. The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka = County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2014. The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka = County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
 
 
 ## Employment
@@ -55,7 +55,7 @@ In these two counties, gold-mining operations employed approximately 9.5% of the
 
 ### Mining industry employment in Elko and Eureka counties[^14]
 
-<img src="{{ site.baseurl }}/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2005 to 2014. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties has risen from just over 4,000 in 2005 to nearly 8,000 in 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2005 to 2014. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties has risen from just over 4,000 in 2005 to nearly 8,000 in 2014." class="case_studies_content-graph">
 
 
 ## Revenue

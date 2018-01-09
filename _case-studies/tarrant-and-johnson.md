@@ -44,7 +44,7 @@ In 2016, Tarrant and Johnson counties produced a combined 765.5 million cubic fe
 
 ### Natural gas production on state-owned land in Tarrant and Johnson counties[^11]
 
-<img src="{{ site.baseurl }}/img/counties/tx-production.svg" alt="Chart shows natural gas production on state-owned land in Tarrant and Johnson counties from 2004 to 2014 as a line graph. The y-axis represents cubic feet of natural gas, and tops out at 1.4 trillion. Annual production on state-owned land, which was between 100 billion and 1.3 trillion cubic feet each year, went up from 2004-2011 then declined to its 2014 level of about 1 trillion cubic feet." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/tx-production.svg" alt="Chart shows natural gas production on state-owned land in Tarrant and Johnson counties from 2004 to 2014 as a line graph. The y-axis represents cubic feet of natural gas, and tops out at 1.4 trillion. Annual production on state-owned land, which was between 100 billion and 1.3 trillion cubic feet each year, went up from 2004-2011 then declined to its 2014 level of about 1 trillion cubic feet." class="case_studies_content-graph">
 
 
 ## Employment
@@ -53,7 +53,7 @@ The boom in natural gas production in the Barnett Shale over the past decade inc
 
 ### Wage and salary employment in the oil and gas industry[^14]
 
-<img src="{{ site.baseurl }}/img/counties/tx-employment.svg" alt="Chart shows the number of jobs in the oil and gas industry in Tarrant and Johnson counties from 2005 to 2014. The y-axis represents the number of jobs in the oil and gas industries in both counties, and goes up to 12,000. From 2004 to 2007, the number of jobs in these industries rose from under 4,000 to just over 6,000. From 2008 through 2011, there were between 2,000 and 4,000 jobs in this industry in the region. In 2012, the number of jobs rose to over 10,000, dipped slightly in 2013, then grew to about 11,000 in 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/tx-employment.svg" alt="Chart shows the number of jobs in the oil and gas industry in Tarrant and Johnson counties from 2005 to 2014. The y-axis represents the number of jobs in the oil and gas industries in both counties, and goes up to 12,000. From 2004 to 2007, the number of jobs in these industries rose from under 4,000 to just over 6,000. From 2008 through 2011, there were between 2,000 and 4,000 jobs in this industry in the region. In 2012, the number of jobs rose to over 10,000, dipped slightly in 2013, then grew to about 11,000 in 2014." class="case_studies_content-graph">
 
 
 ## Revenue

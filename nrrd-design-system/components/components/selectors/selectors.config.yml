@@ -1,0 +1,17 @@
+title: Selectors
+status: blocked
+# collated: true
+# default: default
+# variants:
+#   - name: default
+#     context:
+#       className: select
+#       text: Light gray
+#   - name: chart-selector
+#     context:
+#       className: chart-selector #not working
+#       text: Chart green
+#   - name: select-dark-gray
+#     context:
+#       className: select-dark-gray
+#       text: Dark gray

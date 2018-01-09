@@ -44,9 +44,7 @@ var cssConfig = {
 }
 
 var imgConfig = {
-  // this results in a non-fatal error but also does
-  // not generate any extra files
-  entry: './img',
+  entry: './img/img.js',
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js',

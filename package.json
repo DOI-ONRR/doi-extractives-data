@@ -8,12 +8,11 @@
     "url": "https://github.com/18F/doi-extractives-data/issues"
   },
   "engines": {
-    "node": ">=5.12"
+    "node": ">=8"
   },
   "scripts": {
     "build": "rm -rf _site; bundle exec jekyll build",
-    "federalist":
-      "webpack &> build.log && bundle exec jekyll build && npm run release-styleguide",
+    "federalist": "webpack && npm run release-styleguide",
     "start": "bundle exec jekyll serve --incremental",
     "start-states":
       "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
@@ -27,8 +26,7 @@
     "js-dev-end": "npm run update-webpack",
     "watch-webpack": "webpack --watch",
     "build-styleguide": "cd nrrd-design-system && fractal build && cd ..",
-    "release-styleguide":
-      "npm run build-styleguide && cp -R ./nrrd-design-system/build styleguide",
+    "release-styleguide": "npm run build-styleguide",
     "watch-styleguide":
       "cd nrrd-design-system && fractal start --sync && cd ..",
     "init-styleguide": "kss-node --config kss-config.json",
@@ -43,17 +41,23 @@
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "async": "^0.9.0",
+    "css-loader": "^0.28.7",
+    "copy-webpack-plugin": "^4.3.1",
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",
     "d3-queue": "^1.0.7",
     "d3-svg-legend": "^1.10.0",
     "document-register-element": "^0.5.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "immutable": "^3.7.6",
     "jquery": "^1.11.3",
     "list.js": "^1.1.1",
     "lunr": "^0.7.2",
+    "node-sass": "^4.7.2",
     "object-assign": "^4.1.0",
     "pty.js": "github:chjj/pty.js",
+    "sass-loader": "^6.0.6",
     "stickyfill-web-module": "^1.1.11",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",
     "svgeo": "^0.3.5",

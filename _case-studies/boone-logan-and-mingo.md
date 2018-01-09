@@ -47,7 +47,7 @@ Cumulatively, mines in Boone, Logan, and Mingo counties produce about 27% of Wes
 
 ### Coal production for Boone, Logan, and Mingo counties[^12]
 
-<img src="{{ site.baseurl }}/img/counties/wv-production.svg" alt="Chart of coal production in the three counties from 2005 to 2014. The y-axis represents thousands of tons of coal and the maximum value is 70,000. Coal production rose from under 60,000 in 2005 to over 60,000 in 2008, then declined to just over 30,000 in 2014. Of the three counties, Logan County produced the most coal, and Boone produced the least in most of the years shown." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wv-production.svg" alt="Chart of coal production in the three counties from 2005 to 2014. The y-axis represents thousands of tons of coal and the maximum value is 70,000. Coal production rose from under 60,000 in 2005 to over 60,000 in 2008, then declined to just over 30,000 in 2014. Of the three counties, Logan County produced the most coal, and Boone produced the least in most of the years shown." class="case_studies_content-graph">
 
 ## Employment
 
@@ -55,7 +55,7 @@ Coal extraction has provided employment in these communities for the past centur
 
 ### Wage and salary employment in Boone, Logan, and Mingo counties: Mining industry vs. all other industries[^20]
 
-<img src="{{ site.baseurl }}/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2005 to 2014. The y-axis goes up to 35,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 17,500 and under 30,000, and the percentage of jobs in the mining industry is between 25%, in 2014, and 27%, in 2008." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2005 to 2014. The y-axis goes up to 35,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 17,500 and under 30,000, and the percentage of jobs in the mining industry is between 25%, in 2014, and 27%, in 2008." class="case_studies_content-graph">
 
 
 ## Revenue

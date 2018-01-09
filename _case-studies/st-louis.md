@@ -43,7 +43,7 @@ In Minnesota, the state government is the largest owner of mineral rights. It ow
 
 ### Iron ore production in St. Louis County vs. nationwide production[^10]
 
-<img src="{{ site.baseurl }}/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/mn-production.svg" alt="Chart shows iron ore production in St. Louis County from 2004 to 2013 compared to the entire U.S. The y-axis represents thousands of metric tons of ore produced, and tops out at 60 million metric tons. Annual national iron ore production was between 25 and 55 million metric tons for each year in this range, and iron ore production in St. Louis County was between 19 and 41 million each year. Both reached their lowest points in 2009 (under 30 million and 20 million respectively) and their highest points in 2004 and 2011 (over 54 million and 40 million respectively)." class="case_studies_content-graph">
 
 
 ## Employment

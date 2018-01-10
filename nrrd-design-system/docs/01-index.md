@@ -17,7 +17,7 @@ This is a description of our unique approach to various components. How we apply
 Let the data speak for itself. Keep graphs free from unnecessary embellishment and decorative "chart junk." Use tasteful, minimal illustrations where appropriate. They help make the site more friendly, and an infographic here and there can serve to "visually explain" some concepts and systems. Most of the site's visuals should be in the form of data-driven charts, though.
 
 ## Offer depth
-Provide complete documentation and intuitive access to full data sets, but don't show the "kitchen sink" by default. [we can expound further on the charts page]
+Provide complete documentation and intuitive access to full data sets, but don't show the "kitchen sink" by default.
 
 ## Surface what's interesting
 [People want to see the latest info; show the most recent data by default]. Also, big numbers and dramatic trends often lead to meaningful stories, so choose scannable chart designs that highlight such things without making users poke around to root them out [restate positively?].

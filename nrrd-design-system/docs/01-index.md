@@ -2,9 +2,7 @@
 title: Nrrd Design System
 ---
 
-[Brief intro, perhaps very briefly describing (and linking to) Revenuedata.doi.gov .] This guide assumes knowledge of html, css, and the underlying technologies used to build this website such as jekyll, TK, TK.
-
-This is a description of our unique approach to various components. How we apply. [We may not need to explicitly state ^this^. It's a good rule of thumb for us to follow as we go, tho.]
+[welcome!] This guide assumes knowledge of html, css, and other technologies used to build this website.
 
 ## Goals
 - Give insight into the Why behind our style decisions
@@ -17,7 +15,7 @@ This is a description of our unique approach to various components. How we apply
 Let the data speak for itself. Keep graphs free from unnecessary embellishment and decorative "chart junk." Use tasteful, minimal illustrations where appropriate. They help make the site more friendly, and an infographic here and there can serve to "visually explain" some concepts and systems. Most of the site's visuals should be in the form of data-driven charts, though.
 
 ## Offer depth
-Provide complete documentation and intuitive access to full data sets, but don't show the "kitchen sink" by default.
+Provide complete documentation and intuitive access to full data sets, but don't show the "kitchen sink" by default.docker
 
 ## Surface what's interesting
 [People want to see the latest info; show the most recent data by default]. Also, big numbers and dramatic trends often lead to meaningful stories, so choose scannable chart designs that highlight such things without making users poke around to root them out [restate positively?].

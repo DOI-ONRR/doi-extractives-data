@@ -4,7 +4,7 @@ services:
     extends:
       file: docker-services.yml
       service: base_app
-    command: jekyll serve --force_polling --watch --incremental --port 2222 --trace
+    command: jekyll build --force_polling --watch --incremental --trace
   webpack:
     extends:
       file: docker-services.yml

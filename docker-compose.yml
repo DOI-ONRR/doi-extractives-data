@@ -10,22 +10,22 @@ services:
   #     file: docker-services.yml
   #     service: base_app
   #   command: jekyll build --force_polling --watch --incremental --trace
-  # webpack:
-  #   extends:
-  #     file: docker-services.yml
-  #     service: base_app
-  #   command: webpack --watch --watch-poll
-  #   stop_signal: SIGKILL
-  # express:
-  #   extends:
-  #     file: docker-services.yml
-  #     service: base_app
-  #   command: node dev-server.js
-  #   depends_on:
-  #     - jekyll
-  #     - webpack
-  #   ports:
-  #     - 4000:4000
+  webpack:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: webpack --watch --watch-poll
+    stop_signal: SIGKILL
+  express:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: node dev-server.js
+    depends_on:
+      - jekyll
+      - webpack
+    ports:
+      - 4000:4000
 volumes:
   node-modules:
   styleguide-template-node-modules:

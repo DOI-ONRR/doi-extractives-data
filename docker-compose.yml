@@ -22,7 +22,7 @@ services:
       service: base_app
     command: node dev-server.js
     depends_on:
-      - jekyll
+      - chokidar
       - webpack
     ports:
       - 4000:4000

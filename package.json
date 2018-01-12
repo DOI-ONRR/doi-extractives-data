@@ -61,6 +61,7 @@
     "webpack": "*"
   },
   "devDependencies": {
+    "chokidar": "^2.0.0",
     "colors": "^1.1.0",
     "data-expression": "^0.3.2",
     "epipebomb": "^0.1.1",

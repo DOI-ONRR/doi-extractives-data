@@ -2,111 +2,161 @@ streams:
   All:
     Total:
       '2015': 3169341371
+      '2016': 2126209645
     Cities/Towns/Counties:
       '2015': 1038379517
+      '2016': 706592752
     Legislative Royalty Impact Assistance Account / Budget Reserve:
       '2015': 534613030
+      '2016': 299085414
     Permanent Mineral Trust Fund:
       '2015': 308438273
+      '2016': 168906202
     School Foundation:
       '2015': 251827747
+      '2016': 182837225
     School District Capital Construction:
       '2015': 228955844
+      '2016': 215827963
     General Fund:
       '2015': 215654798
+      '2016': 188978371
     Permanent Land Funds (largely benefitting Common Schools):
       '2015': 196753056
+      '2016': 151509283
     WY Highway Fund:
       '2015': 68729000
+      '2016': 68729000
     Abandoned Mine Land Funds Reserve Account:
       '2015': 49916169
+      '2016': 52913417
     WY Water Development Account I:
       '2015': 19297500
+      '2016': 19297500
     Capital Construction Account:
       '2015': 16661500
+      '2016': 16661500
     Permanent Land Income Funds (largely benefitting Common Schools):
       '2015': 15668838
     University of Wyoming:
       '2015': 13365000
+      '2016': 13365000
     State Aid County Roads:
       '2015': 4495000
+      '2016': 4495000
     Highway Fund County Roads:
       '2015': 4455000
+      '2016': 4455000
     WY Water Development Account 2:
       '2015': 3255000
+      '2016': 3255000
     Community Colleges:
       '2015': 1600000
+      '2016': 1600000
     DEQ Leaking Underground Storage Tanks:
       '2015': 1080943
+      '2016': 9865813
     WY Water Development Account 3:
       '2015': 775000
+      '2016': 775000
   Ad Valorem Taxes:
     Total:
       '2015': 996807296
+      '2016': 665425933
     Cities/Towns/Counties:
       '2015': 996807296
+      '2016': 665425933
   Severance Tax:
     Total:
       '2015': 981984161
+      '2016': 533620938
     Permanent Mineral Trust Fund:
       '2015': 308438273
+      '2016': 168906202
     General Fund:
       '2015': 210084399
+      '2016': 185476491
     Legislative Royalty Impact Assistance Account / Budget Reserve:
       '2015': 208463390
+      '2016': 110875432
     Cities/Towns/Counties:
       '2015': 20351500
+      '2016': 20351500
     WY Water Development Account I:
       '2015': 19297500
+      '2016': 19297500
     WY Highway Fund:
       '2015': 6711500
+      '2016': 6711500
     State Aid County Roads:
       '2015': 4495000
+      '2016': 4495000
     Capital Construction Account:
       '2015': 3611500
+      '2016': 3611500
     WY Water Development Account 2:
       '2015': 3255000
+      '2016': 3255000
     DEQ Leaking Underground Storage Tanks:
       '2015': 1080943
+      '2016': 9865813
     WY Water Development Account 3:
       '2015': 775000
+      '2016': 775000
   Federal Mineral Royalties:
     Total:
       '2015': 689273387
+      '2016': 482343207
     Legislative Royalty Impact Assistance Account / Budget Reserve:
       '2015': 326149640
+      '2016': 188209982
     School Foundation:
       '2015': 251827747
+      '2016': 182837225
     WY Highway Fund:
       '2015': 60142500
+      '2016': 60142500
     Cities/Towns/Counties:
       '2015': 18562500
+      '2016': 18562500
     University of Wyoming:
       '2015': 13365000
+      '2016': 13365000
     Capital Construction Account:
       '2015': 7425000
+      '2016': 7425000
     School District Capital Construction:
       '2015': 5346000
+      '2016': 5346000
     Highway Fund County Roads:
       '2015': 4455000
+      '2016': 4455000
     General Fund:
       '2015': 2000000
+      '2016': 2000000
   Federal Coal Lease Bonuses:
     Total:
       '2015': 224709844
+      '2016': 219581963
     School District Capital Construction:
       '2015': 215609844
+      '2016': 210481963
     Capital Construction Account:
       '2015': 5625000
+      '2016': 5625000
     WY Highway Fund:
       '2015': 1875000
+      '2016': 1875000
     Community Colleges:
       '2015': 1600000
+      '2016': 1600000
   State Royalties (In-Scope Commodities):
     Total:
       '2015': 222220146
+      '2016': 164815844
     Permanent Land Funds (largely benefitting Common Schools):
       '2015': 196753056
+      '2016': 147755639
     Permanent Land Income Funds (largely benefitting Common Schools):
       '2015': 15668838
     School District Capital Construction:
@@ -116,114 +166,169 @@ streams:
   AML Fees:
     Total:
       '2015': 49916169
+      '2016': 52913417
     Abandoned Mine Land Funds Reserve Account:
       '2015': 49916169
+      '2016': 52913417
   Wind Generation Tax:
     Total:
       '2015': 4430368
+      '2016': 3754699
     Cities/Towns/Counties:
       '2015': 2658221
+      '2016': 2252819
     General Fund:
       '2015': 1772147
+      '2016': 1501880
+  Special Use Lease & Wind Energy Lease:
+    Total:
+      '2016': 3753644
+    Permanent Land Funds (largely benefitting Common Schools):
+      '2016': 3753644
 funds:
   Total:
     All:
       '2015': 3169341371
+      '2016': 2126209645
     Ad Valorem Taxes:
       '2015': 996807296
+      '2016': 665425933
     Severance Tax:
       '2015': 981984161
+      '2016': 533620938
     Federal Mineral Royalties:
       '2015': 689273387
+      '2016': 482343207
     Federal Coal Lease Bonuses:
       '2015': 224709844
+      '2016': 219581963
     State Royalties (In-Scope Commodities):
       '2015': 222220146
+      '2016': 164815844
     AML Fees:
       '2015': 49916169
+      '2016': 52913417
     Wind Generation Tax:
       '2015': 4430368
+      '2016': 3754699
+    Special Use Lease & Wind Energy Lease:
+      '2016': 3753644
   Cities/Towns/Counties:
     All:
       '2015': 1038379517
+      '2016': 706592752
     Ad Valorem Taxes:
       '2015': 996807296
+      '2016': 665425933
     Severance Tax:
       '2015': 20351500
+      '2016': 20351500
     Federal Mineral Royalties:
       '2015': 18562500
+      '2016': 18562500
     Wind Generation Tax:
       '2015': 2658221
+      '2016': 2252819
   Legislative Royalty Impact Assistance Account / Budget Reserve:
     All:
       '2015': 534613030
+      '2016': 299085414
     Federal Mineral Royalties:
       '2015': 326149640
+      '2016': 188209982
     Severance Tax:
       '2015': 208463390
+      '2016': 110875432
   Permanent Mineral Trust Fund:
     Severance Tax:
       '2015': 308438273
+      '2016': 168906202
     All:
       '2015': 308438273
+      '2016': 168906202
   School Foundation:
     Federal Mineral Royalties:
       '2015': 251827747
+      '2016': 182837225
     All:
       '2015': 251827747
+      '2016': 182837225
   School District Capital Construction:
     All:
       '2015': 228955844
+      '2016': 215827963
     Federal Coal Lease Bonuses:
       '2015': 215609844
+      '2016': 210481963
     State Royalties (In-Scope Commodities):
       '2015': 8000000
     Federal Mineral Royalties:
       '2015': 5346000
+      '2016': 5346000
   General Fund:
     All:
       '2015': 215654798
+      '2016': 188978371
     Severance Tax:
       '2015': 210084399
+      '2016': 185476491
     Federal Mineral Royalties:
       '2015': 2000000
+      '2016': 2000000
     State Royalties (In-Scope Commodities):
       '2015': 1798252
     Wind Generation Tax:
       '2015': 1772147
+      '2016': 1501880
   Permanent Land Funds (largely benefitting Common Schools):
     State Royalties (In-Scope Commodities):
       '2015': 196753056
+      '2016': 147755639
     All:
       '2015': 196753056
+      '2016': 151509283
+    Special Use Lease & Wind Energy Lease:
+      '2016': 3753644
   WY Highway Fund:
     All:
       '2015': 68729000
+      '2016': 68729000
     Federal Mineral Royalties:
       '2015': 60142500
+      '2016': 60142500
     Severance Tax:
       '2015': 6711500
+      '2016': 6711500
     Federal Coal Lease Bonuses:
       '2015': 1875000
+      '2016': 1875000
   Abandoned Mine Land Funds Reserve Account:
     AML Fees:
       '2015': 49916169
+      '2016': 52913417
     All:
       '2015': 49916169
+      '2016': 52913417
   WY Water Development Account I:
     Severance Tax:
       '2015': 19297500
+      '2016': 19297500
     All:
       '2015': 19297500
+      '2016': 19297500
   Capital Construction Account:
     All:
       '2015': 16661500
+      '2016': 16661500
     Federal Mineral Royalties:
       '2015': 7425000
+      '2016': 7425000
     Federal Coal Lease Bonuses:
       '2015': 5625000
+      '2016': 5625000
     Severance Tax:
       '2015': 3611500
+      '2016': 3611500
   Permanent Land Income Funds (largely benefitting Common Schools):
     State Royalties (In-Scope Commodities):
       '2015': 15668838
@@ -232,35 +337,49 @@ funds:
   University of Wyoming:
     Federal Mineral Royalties:
       '2015': 13365000
+      '2016': 13365000
     All:
       '2015': 13365000
+      '2016': 13365000
   State Aid County Roads:
     Severance Tax:
       '2015': 4495000
+      '2016': 4495000
     All:
       '2015': 4495000
+      '2016': 4495000
   Highway Fund County Roads:
     Federal Mineral Royalties:
       '2015': 4455000
+      '2016': 4455000
     All:
       '2015': 4455000
+      '2016': 4455000
   WY Water Development Account 2:
     Severance Tax:
       '2015': 3255000
+      '2016': 3255000
     All:
       '2015': 3255000
+      '2016': 3255000
   Community Colleges:
     Federal Coal Lease Bonuses:
       '2015': 1600000
+      '2016': 1600000
     All:
       '2015': 1600000
+      '2016': 1600000
   DEQ Leaking Underground Storage Tanks:
     Severance Tax:
       '2015': 1080943
+      '2016': 9865813
     All:
       '2015': 1080943
+      '2016': 9865813
   WY Water Development Account 3:
     Severance Tax:
       '2015': 775000
+      '2016': 775000
     All:
       '2015': 775000
+      '2016': 775000

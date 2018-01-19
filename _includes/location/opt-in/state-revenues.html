@@ -57,7 +57,7 @@
           {{ stream_name }}
         {% endif %}
       </td>
-      <td data-value="{{ stream_dollars }}"
+      <td class="numeric" data-value="{{ stream_dollars }}"
         data-year-values='{{ stream_sources.Total | jsonify }}'>
         {{ stream_dollars | default: 0 | intcomma_dollar }}
       </td>

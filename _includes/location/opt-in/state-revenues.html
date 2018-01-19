@@ -10,12 +10,7 @@
   {{ page.state_revenue | liquify | markdownify }}
 {% endif %}
 
-<!-- This link only works if the file is named correctly. -->
-<p>
-  <a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf">
-    <icon class="fa fa-file-text-o u-padding-right"></icon>Download: {{ state_name }} revenue streams (PDF)
-  </a>
-</p>
+<h4>{{ state_name }} revenue streams ({{ revenue_year }})</h4>
 
 <p>
   In {{ revenue_year }}, the state of
@@ -25,11 +20,18 @@
   (this includes both tax and non-tax revenue). Counties also collect and distribute their own revenue from natural resource extraction.
 </p>
 
+<!-- This link only works if the file is named correctly. -->
+<p>
+  <a href="{{site.baseurl}}/downloads/USEITI_{{ state_name }}_revenue_streams.pdf">
+    <icon class="fa fa-file-text-o u-padding-right"></icon>Download: {{ state_name }} revenue streams (PDF)
+  </a>
+</p>
+
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
-      <th><strong>State revenue stream</strong></th>
+      <th><strong>Revenue stream</strong></th>
       <th class="num"><strong>Amount collected</strong></th>
     </tr>
   </thead>

@@ -45,7 +45,7 @@ Major corporate landowners own a significant portion of the land used for natura
 
 ### Iron production in Marquette County:<br>Crude iron vs. usable iron[^7]
 
-<img src="{{ site.baseurl }}/img/counties/mi-production.svg" alt="Chart shows iron production in Marquette County from 2004 to 2013 as two line graphs. The y-axis represents thousands of metric tons of iron produced, and tops out at 45,000. Annual crude iron production was between 19 and 41 million metric tons for each year in this range, and annual usable iron production was between 7 and 13 million each year. Both reached their lowest points in 2009 (under 20 million and 8 million respectively) and their highest points in 2011 (over 40 million and 12 million respectively)." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/mi-production.svg" alt="Chart shows iron production in Marquette County from 2004 to 2013 as two line graphs. The y-axis represents thousands of metric tons of iron produced, and tops out at 45,000. Annual crude iron production was between 19 and 41 million metric tons for each year in this range, and annual usable iron production was between 7 and 13 million each year. Both reached their lowest points in 2009 (under 20 million and 8 million respectively) and their highest points in 2011 (over 40 million and 12 million respectively)." class="case_studies_content-graph">
 
 
 ## Employment

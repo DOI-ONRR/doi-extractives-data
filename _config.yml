@@ -28,6 +28,7 @@ exclude:
   # KSS (style guide) config and template
   - kss-config.json
   - styleguide-template
+  - nrrd-design-system
   # just ignore the whole JS lib directory
   - lib
   # Node depenencies
@@ -37,8 +38,10 @@ exclude:
   - test
   # webpack configuration
   - webpack.config.js
+  - css
+  - img
   # all of the source (unbuilt) JS files
-  - js/src
+  - js
   # shell and other scripts
   - '*.sh'
   - data/**/*.md
@@ -48,7 +51,6 @@ exclude:
   - data/geo/input
   - data/gdp
   - data/jobs
-  - lib
   - maps/lib
   # Makefiles
   - Makefile
@@ -76,6 +78,7 @@ exclude:
 
 include:
   - /build.log
+  - public
 
 gems:
   - jekyll-sitemap

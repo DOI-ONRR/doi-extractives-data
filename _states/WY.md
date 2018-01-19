@@ -5,7 +5,7 @@ FIPS: '56'
 
 opt_in: true
 
-state_revenue_year: 2015
+state_revenue_year: 2016
 
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates
@@ -18,11 +18,11 @@ state_production: |
 
     Northeastern Wyoming holds the Powder River Basin, which contains eight of the ten largest coal mines in the country. Wyoming's natural gas production is centered in the Green River Basin in southwestern Wyoming. Crude oil production takes place in the Niobrara Shale (in southeastern Wyoming), the Powder River Basin, and the Green River oil shale.
 
-    Wyoming produces about 70% of the uranium mined in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/).
+    Wyoming is one of the centers of uranium production in the U.S. To learn more about uranium mining nationwide, see the EIA’s [annual domestic uranium production report](http://www.eia.gov/uranium/production/annual/).
 
-    In 2014, Wyoming produced 2.4% of U.S. wind energy. Particularly in the southeast part of the state, there's significant potential for increased wind energy production and several large-scale wind energy projects are in development.
+    In 2016, Wyoming produced 1.9% of U.S. wind energy. Particularly in the southeast part of the state, there's significant potential for increased wind energy production and several large-scale wind energy projects are in development.
 
-    **Nonenergy minerals:** In 2011, Wyoming's nonenergy mineral production was valued at over $2.14 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
+    **Nonenergy minerals:** In 2013, Wyoming's nonenergy mineral production was valued at over $2.26 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
     The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million {{ "mineral acres" | term_end }}. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
@@ -32,11 +32,11 @@ state_land_production: |
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a primary source of income for the state of Wyoming.
 
-    In production year 2014, all 23 of Wyoming’s counties had taxable mineral production, though over 60% percent of revenue from mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
+    In production year 2016, all 23 of Wyoming’s counties had taxable mineral production, though over 70% percent of the taxable value of mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
 state_revenue_sustainability: |
-    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2014. Total revenue rose from just under $800 billion in 2005 to over $1,200 billion in 2008, then fell to about $1,000 billion in 2009 and 2010 before rising to about $1,300 billion by 2014. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.]({{ site.baseurl }}/img/WY_revenue_sustainability.svg)
+    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2014. Total revenue rose from just under $800 billion in 2005 to over $1,200 billion in 2008, then fell to about $1,000 billion in 2009 and 2010 before rising to about $1,300 billion by 2014. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.]({{ site.baseurl }}/public/img/WY_revenue_sustainability.svg)
 
-    In 2014, natural resource revenue streams contributed almost half of the state’s total general fund revenues. Over the last decade, Wyoming’s general fund revenues from extractive industries have doubled from $315 million to $640 million, and the percentage of total general fund revenues from extraction has increased 8%, fluctuating between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and account for up to a quarter of general fund revenues.
+    In 2016, natural resource revenue streams contributed 34% of the state’s total general fund revenues. Wyoming’s general fund revenues from extractive industries have fluctuated from $315 million in 2005 to $640 million in 2014 and back down to $337 million in 2016. The percentage of total general fund revenues from extraction has also fluctuated between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and have accounted for between 13% and 20% of general fund revenues in the last decade.
 
     To read more about the impact of revenue from extractive industries on Wyoming’s general fund, including future projections, see reports produced by Wyoming's [Consensus Revenue Estimating Group](http://eadiv.state.wy.us/creg/creg.html).
 state_tax_expenditures: |
@@ -48,11 +48,11 @@ state_disbursements: |
 
     At the local level, county tax collectors collect all property taxes on production and distribute them within their own jurisdictions.
 state_saving_spending: |
-    The state of Wyoming saves about 68% of severance tax revenue and 39% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
+    In 2016, the state of Wyoming saved about 52% of severance tax revenue and 27% of federal mineral royalty revenues. These two revenue streams are Wyoming's two largest sources of revenue from natural resource extraction. Wyoming saves revenue by contributing to the Budget Reserve Account and the Permanent Wyoming Mineral Trust Fund. Interest from the Permanent Wyoming Mineral Trust Fund goes to the General Fund.
 state_impact: |
     The extractive industries play an important role in Wyoming’s economy — particularly in Campbell County's Powder River Basin and in Sublette County. For more information about employment in Wyoming, the [Department of Workforce Services](http://www.wyomingworkforce.org/) has published [long-term industry and occupational projections for 2014 to 2024](http://doe.state.wy.us/lmi/projections/2016/projections_2014-2024.htm).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, annual wages from extractive industries made up about 18% (or $2.4 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Wyoming in 2014 was $88,198, or almost twice the statewide average wage of $46,492.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2016, annual wages from extractive industries made up about 18% (or $1.6 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Wyoming in 2016 was $84,451, or almost twice the statewide average wage of $43,813.
 ---
 
 <!-- State governance -->
@@ -61,7 +61,7 @@ state_impact: |
 
 The state of Wyoming regulates extraction and interacts with extractive industry companies in Montana, particularly when they're operating on state or private land.
 
-The [Wyoming Department of Revenue](http://revenue.wyo.gov/) assesses, collects, manages, and distributes revenue from companies engaged in extraction of oil, natural gas, coal, and other natural resources in Wyoming. At the local level, gounty governments directly collect ad valorem taxes related to extraction. The Department of Revenue publishes:
+The [Wyoming Department of Revenue](http://revenue.wyo.gov/) assesses, collects, manages, and distributes revenue from companies engaged in extraction of oil, natural gas, coal, and other natural resources in Wyoming. At the local level, county governments directly collect ad valorem taxes related to extraction. The Department of Revenue publishes:
 
 * [Annual reports](http://revenue.wyo.gov/dor-annual-reports)
 * [Rules and regulations](http://revenue.wyo.gov/home/rules-and-regulations-by-chapter)
@@ -85,14 +85,14 @@ The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) (DEQ)
 * The [Air Quality Division](http://deq.wyoming.gov/aqd/) issues air quality permits, particularly in the Upper Green River Basin.
 * The [Water Quality Division](http://deq.wyoming.gov/wqd/) works to ensure the proper disposal of wastewater, and monitors water quality. It also permits underground injections of wastewater, reclaims discharge impoundments related to coal bed methane production, and works with the Oil and Gas Conservation Commission and Land Quality Division to regulate underground wastewater injection through the [Underground Injection Control Program](http://deq.wyoming.gov/wqd/underground-injection-control/). The Water Quality Division also maintains its own list of [rules and regulations](http://deq.wyoming.gov/wqd/resources/rules-regs/).
 * The [Solid and Hazardous Waste Division](http://deq.wyoming.gov/shwd/) inspects hazardous waste storage and disposal.
-* The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes an [annual report (PDF)](http://deq.wyoming.gov/media/uploads/admin/annual_report_2014.pdf) that includes bond amounts.
+* The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes an [annual report (PDF)](http://deq.wyoming.gov/media/uploads/admin/2016-annual-report.pdf) that includes bond amounts.
 * The [Abandoned Mine Land Division](http://deq.wyoming.gov/aml/) administers the federal AML program for coal and select hardrock reclamation projects.
 
 The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources.
 
 ### State laws and regulations
 
-Wyoming’s constitution includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2016%20Wyoming%20Statutes/2016%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu).
+Wyoming’s constitution includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2016%20Wyoming%20Statutes/2016%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu), Article 9, which created the Office of the Inspector of Mines and a school of mines, directs the legislature to provide for the development and operation of mines, and secures the right of action for injuries.
 
 The [Wyoming Statutes Annotated](http://www.lexisnexis.com/hottopics/wystatutes/) have several sections that govern natural resource extraction, including:
 
@@ -134,6 +134,6 @@ Prior to 2001, the Sublette County Rural Health Care District had two all-volunt
 
 #### Reclamation costs
 
-Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $52 million in unreclaimed coal AML sites and $686,000 in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/).
+Wyoming has been “certified” by the federal Abandoned Mine Land (AML) Reclamation program, meaning it has reclaimed its identified high-priority abandoned coal mine areas. It also means AML funds, which are sourced from fees paid by coal mine operators, can be used for a wider range of purposes beyond reclamation, including abandoned hardrock mine sites. The program currently estimates that Wyoming has $77 million in unreclaimed coal AML sites and $18 million in unreclaimed non-coal AML sites (such as uranium mining sites). To learn more about recently completed projects and projects underway, search for Wyoming Annual Evaluation Reports in the [OSMRE Oversight Document Database](http://odocs.osmre.gov/).
 
 See [state agencies](#state-agencies) for additional statewide reclamation activities.

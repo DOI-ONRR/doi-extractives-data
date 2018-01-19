@@ -77,6 +77,11 @@ input[type='submit'] {
   background-color: $tertiary-button-bg-color;
 }
 
+.button-disabled {
+  background-color: $tertiary-button-bg-color;
+  color: $gray-dark;
+}
+
 .button-big {
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;

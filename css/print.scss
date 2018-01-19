@@ -1,7 +1,3 @@
----
-# Jekyll only builds Sass files with front matter
----
-
 // include reset
 @import 'reset';
 
@@ -13,4 +9,14 @@
 @import 'base';
 
 // include print stylesheet overrides
-@import 'print';
+@media print {
+  @import 'print/layout';
+  @import 'print/home';
+  @import 'print/about';
+  @import 'print/landing';
+  @import 'print/how-it-works';
+  @import 'print/content';
+  @import 'print/state-page';
+  @import 'print/page-breaks';
+  @import 'print/ribbon-card';
+}

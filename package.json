@@ -14,8 +14,7 @@
     "build": "rm -rf _site; bundle exec jekyll build",
     "federalist": "webpack && npm run release-styleguide",
     "start": "bundle exec jekyll serve --incremental",
-    "start-states":
-      "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
+    "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
     "restart": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
@@ -27,15 +26,12 @@
     "watch-webpack": "webpack --watch",
     "build-styleguide": "cd nrrd-design-system && fractal build && cd ..",
     "release-styleguide": "npm run build-styleguide",
-    "watch-styleguide":
-      "cd nrrd-design-system && fractal start --sync && cd ..",
+    "watch-styleguide": "cd nrrd-design-system && fractal start --sync && cd ..",
     "init-styleguide": "kss-node --config kss-config.json",
-    "lint":
-      "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
+    "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
     "lint-js": "eslint --ignore-path .eslintignore js",
     "lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/eiti_*.rb",
-    "lint-scss":
-      "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'",
+    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'",
     "sqlite3": "^3.1.9"
   },
   "dependencies": {

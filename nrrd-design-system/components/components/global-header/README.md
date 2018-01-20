@@ -1,3 +1,3 @@
 # Global header
 
-This runs at the bottom of every page, without exception.
+This runs at the bottom of every page.

@@ -18,33 +18,33 @@ state_production: |
 
     Montana has 25 hydroelectric dams and several utility-scale wind farms. The Montana Department of Environmental Quality maintains information about [wind power in Montana](http://deq.mt.gov/Energy/EnergizeMT/Renewable/windweb).
 
-    **Nonenergy minerals:** In 2011, Montana's nonenergy mineral production was valued at over $1.4 billion. For details about what minerals are extracted, see the [USGS Minerals Yearbook for Montana](http://minerals.usgs.gov/minerals/pubs/state/mt.html).
+    **Nonenergy minerals:** In 2013, Montana's nonenergy mineral production was valued at over $1.3 billion. For details about what minerals are extracted, see the [USGS Minerals Yearbook for Montana](https://minerals.usgs.gov/minerals/pubs/state/mt.html).
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
 state_land_production: |
-    In FY 2014, resources extracted on state land in Montana included:
+    In fiscal year 2016, resources extracted on state land in Montana included:
 
-    * 1,505,356 barrels of crude oil
-    * 3,561 million cubic feet of natural gas
-    * 4,465,582 short tons of coal
+    * 1,349,558 barrels of crude oil
+    * 2,859,424 thousand cubic feet of natural gas
+    * 4,748,656 short tons of coal
 
-    For details about natural resource extraction on state-owned land, see annual reports produced by the [Mineral Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management).
+    For details about natural resource extraction on state-owned land, see annual reports produced by the [Minerals Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management).
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
 state_revenue_sustainability: |
     ![Bar graph comparing Montana natural resources revenues to total general fund revenue from 2011-2014. Over that period, total general fund revenue rose from just above $2 billion in 2011 to over $2.5 billion in 2014. Revenue from natural resources stayed relatively flat at a little more than $0.25 billion each year.]({{ site.baseurl }}/public/img/MT_revenue_sustainability.svg)
 
-    In 2014, natural resource revenue streams accounted for 17.4% of revenue collected by the Montana Department of Revenue. Over the last four years, Montana’s overall revenue has increased while revenue from natural resources has stayed relatively flat; the percentage of revenue from natural resources has decreased from 13.5% of total revenue that went to the state general fund in 2010 to 11.3% in 2014.
+    In 2016, natural resource revenue streams accounted for 9.7% of revenue collected by the Montana Department of Revenue. Montana's revenue from natural resources has decreased by over 40% in the last three years, and the percentage of revenue from natural resources has decreased from 11.1% of total revenue that went to the state general fund in 2014 to 6.4% in 2016.
 state_tax_expenditures: |
-    In FY 2014, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $60.5 million. Of that total, a tax holiday on new oil production cost Montana $55.9 million in unrealized tax revenue and tax holiday on new natural gas production holiday cost the state $2 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
+    In fiscal year 2016, Montana had four programs related to the extractive industries, which reduced state or local revenue by a total of $11.4 million. Of that total, a tax holiday on new oil production cost Montana $9.1 million in unrealized tax revenue and tax exemption on stripper well  production holiday cost the state $1.5 million. The Montana Department of Revenue outlines tax expenditures in its [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 state_disbursements: |
     [State agencies](#state-agencies) distribute revenue according to the [Montana State Code](http://leg.mt.gov/bills/mca_toc/), which is defined by the legislature. In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes.
 state_saving_spending: |
-    In Montana, the coal trust fund is the primary way that revenue from extractive industries is saved for future use. The fund was established by the Montana State Constitution, which also requires that 50% of coal severance tax revenues go to the trust fund. The coal trust fund had an estimated balance of $963 million at the end of FY 2014. Interest from the fund goes to economic development, water, and infrastructure projects. For more information, see the Montana Department of Revenue's [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
+    In Montana, the coal trust fund is the primary way that revenue from extractive industries is saved for future use. The fund was established by the Montana State Constitution, which also requires that 50% of coal severance tax revenues go to the trust fund. The coal trust fund had an estimated balance of $988 million at the end of fiscal year 2016. Interest from the fund goes to economic development, water, and infrastructure projects. For more information, see the Montana Department of Revenue's [biennial reports](https://revenue.mt.gov/home/publications/biennial_reports).
 state_impact: |
-    The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR-15.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
+    The extractive industries play an important role in Montana’s economy — particularly in eastern Montana, where economic activity in the Bakken oil fields has a strong impact on local economies. To read more about the impact of extractive industries on Montana’s economy, see the [Labor Day Report (PDF)](http://lmi.mt.gov/Portals/135/Publications/LMI-Pubs/Labor%20Market%20Publications/LDR16.pdf) from the [Montana Department of Labor and Industry](http://dli.mt.gov/).
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2014, personal income from extractive industries made up about 4.8% (or $1.2 billion) of all personal income in the state. The average annual wage in Montana in 2014 was $86,496, which represented 4.9% growth from 2013.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2016, personal income from extractive industries made up about 4% (or $564 million) of all personal income in the state. The average annual wage for the extractive industries in Montana in 2016 was $88,220.
 ---
 
 <!-- State governance -->
@@ -59,7 +59,7 @@ The [Montana Department of Natural Resources and Conservation](http://dnrc.mt.go
 
 - The [Montana Board of Oil and Gas Conservation](http://bogc.dnrc.mt.gov/BoardSummaries.asp) is involved in all stages of oil and gas extraction. It permits all oil and gas wells, regulates the underground injecting program, and assists in remediation efforts. It also inspects all oil and gas wells and operations to ensure they comply with all state environmental laws. The board is governed by [rules and regulations](http://bogc.dnrc.mt.gov/rulesregs.asp), maintains a [data portal](http://bogc.dnrc.mt.gov/WebApps/DataMiner/), and publishes [annual reviews](http://bogc.dnrc.mt.gov/annualreviews.asp).
 - The [Reclamation and Development Grant Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) funds some abandoned mine projects.
-- The [Mineral Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management) (within the [Trust Land Management Division](http://dnrc.mt.gov/divisions/trust)) permits, regulates, and collects revenue for extraction on state trust lands. Their work complements the work of the Board of Oil and Gas Conservation and Department of Environmental Quality, both of which retain regulatory authority over mines on state lands. State land leasing is governed by state [statutes and rules](http://www.mtrules.org/gateway/chapterhome.asp?chapter=36.25).
+- The [Minerals Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management) (within the [Trust Land Management Division](http://dnrc.mt.gov/divisions/trust)) permits, regulates, and collects revenue for extraction on state trust lands. Their work complements the work of the Board of Oil and Gas Conservation and Department of Environmental Quality, both of which retain regulatory authority over mines on state lands. State land leasing is governed by state [statutes and rules](http://www.mtrules.org/gateway/chapterhome.asp?chapter=36.25).
 
 The [Montana Department of Environmental Quality](http://deq.mt.gov/) leads Montana's planning, permitting, compliance, enforcement, and remediation efforts for projects and incidents related to air, water, land, and energy.
 
@@ -122,5 +122,4 @@ To learn more, find Annual Evaluation Reports for Montana in the [Office of Surf
 
 The Conservation and Resource Development Division of the Department of Natural Resources and Conservation runs the [Reclamation and Development Grants Program](http://dnrc.mt.gov/divisions/cardd/resource-development/reclamation-and-development-grants-program) to fund projects that “compensate Montana citizens for the effects of exploration and mining on Montana lands.”
 
-The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $121 million.
-
+The [Montana Department of Justice Natural Resources Damage Program](https://dojmt.gov/lands/) administers grants for the restoration of the Upper Clark Fork River Basin’s natural resources “due to mining and mineral processing operations.” Between 2000 and 2011, the governor approved 121 projects totaling $122.5 million.

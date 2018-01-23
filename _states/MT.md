@@ -25,7 +25,7 @@ state_land_production: |
     In fiscal year 2016, resources extracted on state land in Montana included:
 
     * 1,349,558 barrels of crude oil
-    * 2,859,424 million cubic feet of natural gas
+    * 2,859,424 thousand cubic feet of natural gas
     * 4,748,656 short tons of coal
 
     For details about natural resource extraction on state-owned land, see annual reports produced by the [Minerals Management Bureau](http://dnrc.mt.gov/index/divisions/trust/minerals-management).

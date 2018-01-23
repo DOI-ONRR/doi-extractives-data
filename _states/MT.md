@@ -18,7 +18,7 @@ state_production: |
 
     Montana has 25 hydroelectric dams and several utility-scale wind farms. The Montana Department of Environmental Quality maintains information about [wind power in Montana](http://deq.mt.gov/Energy/EnergizeMT/Renewable/windweb).
 
-    **Nonenergy minerals:** In 2013, Montana's nonenergy mineral production was valued at over $1.3 billion. For details about what minerals are extracted, see the [USGS Minerals Yearbook for Montana](https://minerals.usgs.gov/minerals/pubs/state/2012_13/myb2-2012_13-mt.pdf).
+    **Nonenergy minerals:** In 2013, Montana's nonenergy mineral production was valued at over $1.3 billion. For details about what minerals are extracted, see the [USGS Minerals Yearbook for Montana](https://minerals.usgs.gov/minerals/pubs/state/mt.html).
 state_land: |
     The state government of Montana administers 5.2 million surface acres of land (about 5.6% of the state) and 6.2 million mineral acres. For detailed information about land ownership in each county, the Montana State Library maintains [public and private land ownership maps](https://mslservices.mt.gov/Geographic_Information/Maps/Land_Ownership/Default).
 state_land_production: |

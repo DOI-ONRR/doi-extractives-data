@@ -27,10 +27,10 @@ To create a pivot table in Microsoft Excel, start by clicking on the "Insert" ta
 
 <img src="../img/data/pivot-subtitles.png" alt="" width="400" />
 
-**Save the document as an `.csv` by going to "File", slecting "Save as" and choosing the `.csv` document type. Once you have saved the `.csv`, you can use a ruby script `csv_tsv.rb` in the root directory of this project to tranform the data from `.csv` to `.tsv`.**
+**Save the document as an `.csv` by going to "File", slecting "Save as" and choosing the `.csv` document type. Once you have saved the `.csv`, you can use a ruby script `scripts/csv_tsv.rb` in the root directory of this project to tranform the data from `.csv` to `.tsv`.**
 
 ```
-ruby csv_tsv.rb path/to/csv.csv path/to/tsv.tsv
+ruby scripts/csv_tsv.rb path/to/csv.csv path/to/tsv.tsv
 ```
 
 Now you are ready to run `npm test`!

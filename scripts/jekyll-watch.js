@@ -34,12 +34,12 @@ process.on('SIGTERM', () => {
   process.exit(0);
 });
 
-// One-liner for current directory, ignores .dotfiles
 var opts =  {
-  ignored: /(^|[\/\\])\../,
+  ignored: /(^|[\/\\])\..|_site|node_modules|sass|css|img|js|nrrd-design-system|styleguide|test/,
   usePolling: true
 }
-var watcher = chokidar.watch('_layouts', opts)
+
+var watcher = chokidar.watch('/doi', opts)
 
 runJekyll().catch(e => console.error(e))
 watcher.on('change', (path, event) => {

@@ -1,15 +1,10 @@
 version: '2'
 services:
-  chokidar:
+  jekyll:
     extends:
       file: docker-services.yml
       service: base_app
-    command: node watch.js
-  # jekyll:
-  #   extends:
-  #     file: docker-services.yml
-  #     service: base_app
-  #   command: jekyll build --force_polling --watch --incremental --trace
+    command: node scripts/jekyll-watch.js
   webpack:
     extends:
       file: docker-services.yml
@@ -20,9 +15,9 @@ services:
     extends:
       file: docker-services.yml
       service: base_app
-    command: node dev-server.js
+    command: node scripts/dev-server.js
     depends_on:
-      - chokidar
+      - jekyll
       - webpack
     ports:
       - 4000:4000

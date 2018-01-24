@@ -10,10 +10,6 @@ url: https://revenuedata.doi.gov
 
 version: v3.1.0
 
-sass:
-  style: compressed
-  sass_dir: _sass
-
 exclude:
   # top-level log
   - '*.log'
@@ -29,13 +25,12 @@ exclude:
   - kss-config.json
   - styleguide-template
   - nrrd-design-system
-  # just ignore the whole JS lib directory
-  - lib
   # Node depenencies
   - node_modules
   - package.json
   # unit tests
   - test
+  - circle.yml
   # webpack configuration
   - webpack.config.js
   - css
@@ -44,6 +39,7 @@ exclude:
   - js
   # shell and other scripts
   - '*.sh'
+  - '*.rb'
   - data/**/*.md
   - data/**/*.yml
   - data/all-production/*/*.?sv
@@ -52,9 +48,6 @@ exclude:
   - data/gdp
   - data/jobs
   - maps/lib
-  # Makefiles
-  - Makefile
-  - '**/Makefile'
   # data tools and SQLite databases
   - '*.db*'
   - .env
@@ -70,15 +63,20 @@ exclude:
   - data/geo/input
   - data/jobs/bls
   - data/land-stats
-  - maps/data
-  - maps/land/*.json
   # Docker stuff
   - Dockerfile
   - 'docker-*.yml'
+  # Makefiles
+  - Makefile
+  - '**/Makefile'
+  - maps/data
+  - maps/land/*.json
+  - serve*
+  - re-serve*
+  - public
 
 include:
   - /build.log
-  - public
 
 gems:
   - jekyll-sitemap

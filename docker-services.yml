@@ -8,6 +8,7 @@ services:
       - styleguide-template-node-modules:/doi/styleguide-template/node_modules/
       - root:/root/
       - bundle:/usr/local/bundle/
+      - public:/doi/public
     environment:
       - EIA_API_KEY
       - LANG=C.UTF-8

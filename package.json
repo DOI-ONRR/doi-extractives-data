@@ -61,10 +61,12 @@
     "webpack": "*"
   },
   "devDependencies": {
+    "chokidar": "^2.0.0",
     "colors": "^1.1.0",
     "data-expression": "^0.3.2",
     "epipebomb": "^0.1.1",
     "eslint": "^3.5.0",
+    "express": "^4.16.2",
     "extend": "^2.0.0",
     "glob": "^7.1.1",
     "js-yaml": "^3.3.1",

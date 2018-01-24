@@ -3,6 +3,36 @@ title: Federal Production | Documentation
 title_display: Federal Production by Location
 layout: content
 permalink: /downloads/federal-production/
+nav_items:
+  - name: introduction
+    title: Top
+  - name: scope
+    title: Scope
+  - name: data-publication
+    title: Data publication
+    subnav_items:
+      - name: why-was-some-solids-data-withheld
+        title: Withheld data
+      - name: why-arent-national-totals-equal-to-the-sum-of-all-state-totals
+        title: National and state totals
+      - name: why-is-geothermal-energy-listed-so-many-times
+        title: Geothermal data
+      - name: a-note-about-mixed-exploratory-versus-federal-categories-of-production
+        title: Mixed exploratory and federal categories
+  - name: data-dictionary
+    title: Data dictionary
+    subnav_items:
+      - name: fips-code
+        title: FIPS code
+      - name: region
+        title: region
+      - name: planning-area
+        title: Planning areas
+      - name: product-groupings
+        title: Product groupings
+  - name: contact-us
+    title: Contact us
+selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
@@ -41,7 +71,7 @@ If you are looking for additional information on Federal production data please 
 
 This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
-## Data Publication
+## Data publication
 
 The Federal production datasets are updated annually in July for the
 most recent completed fiscal and calendar year.
@@ -76,7 +106,7 @@ For the purposes of the visualizations on our site, we've aggregated production 
 
 The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-### FIPS Code
+### FIPS code
 
 Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
 
@@ -84,11 +114,11 @@ Federal Information Processing Standard (FIPS) code is a five-digit code which u
 
 BOEM separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-### Planning Area
+### Planning area
 
 Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-### Product Groupings
+### Product groupings
 
 * Borate Products include: Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate and Boric Acid
 * Brine Products include: Brine Barrels (converted to ton equivalent) and Magnesium Chloride Brine
@@ -99,3 +129,6 @@ Offshore regions are broken out into planning areas. For more information on off
 * Other Potassium Products include: Manure Salts and Sylvite-Raw Ore
 * Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore
 
+## Contact us
+
+Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at [{{ site.data.contact.data_retrieval.email }}](mailto:{{ site.data.contact.data_retrieval.email }}) or {{ site.data.contact.data_retrieval.phone }}.

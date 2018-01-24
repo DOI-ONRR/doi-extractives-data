@@ -3,6 +3,23 @@ title: Disbursements | Documentation
 title_display: Disbursements
 layout: content
 permalink: /downloads/disbursements/
+nav_items:
+  - name: introduction
+    title: Top
+  - name: scope
+    title: Scope
+  - name: data-publication
+    title: Data publication
+  - name: data-dictionary
+    title: Data dictionary
+    subnav_items:
+      - name: onshore
+        title: Onshore
+      - name: offshore
+        title: Offshore
+  - name: contact-us
+    title: Contact us
+selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
@@ -34,11 +51,11 @@ We also have [notes on this data](https://github.com/18F/doi-extractives-data/wi
 
 This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2015. Disbursements of revenue due to extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
-## Data Publication
+## Data publication
 
 The disbursement dataset is updated in December after the end of the federal government fiscal year.
 
-## Data Dictionary
+## Data dictionary
 
 Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.
 
@@ -70,3 +87,6 @@ _States._ States receive federal Outer Continental Shelf revenue in two ways:
 
 _Other._ Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover the agencies’ operational costs.
 
+## Contact us
+
+Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at [{{ site.data.contact.data_retrieval.email }}](mailto:{{ site.data.contact.data_retrieval.email }}) or {{ site.data.contact.data_retrieval.phone }}.

@@ -3,6 +3,32 @@ title: Federal Revenue by Company | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-company/
 title_display: Federal Revenue by Company
+nav_items:
+  - name: introduction
+    title: Top
+  - name: scope
+    title: Scope
+    subnav_items:
+      - name: why-is-there-a-line-in-the-data-called-companies-below-threshold
+        title: Companies below threshold
+      - name: why-is-there-a-line-in-the-data-called-one-mine-one-product
+        title: One mine, one product
+      - name: why-are-some-values-negative
+        title: Negative values
+      - name: why-is-there-a-gas-value-an-oil-value-and-an-oil--gas-value
+        title: Oil and gas values
+      - name: why-is-the-calendar-year-revenue-by-location-national-total-slightly-different-than-the-revenue-by-company-total
+        title: Revenue by location and by company
+  - name: data-dictionary
+    title: Data dictionary
+    subnav_items:
+      - name: fields-and-definitions
+        title: Fields and definitions
+      - name: advanced-information
+        title: Advanced information
+  - name: contact-us
+    title: Contact us
+selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
@@ -18,7 +44,7 @@ tag:
 ---
 
 
-> This dataset provides natural resource revenues data by company for calendar years 2013-2016. This new dataset represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
+> This dataset provides natural resource revenues data by company for calendar years 2013-2016. This new dataset adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
@@ -51,7 +77,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Why is the calendar year revenue by location national total slightly different than the revenue by company total?
 
-Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. [This one]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals on these datasets are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals on these datasets are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 
 ## Data dictionary
 
@@ -94,3 +120,7 @@ _Locatable Minerals._  The federal law governing locatable minerals is the Gen
 _Mineral Materials._  The BLM makes mineral materials located on public lands, such as sand, gravel, crushed stone, decorative stone, clay, and pumice available for sale under the authority of the Materials Act of 1947.  This law authorizes the BLM to sell these mineral materials at fair market value and to grant free-use permits to Government agencies and nonprofit organizations, so long as public land resources, the environment and the public are protected.  Mineral materials are among our most basic natural resources.  In particular, sand, gravel, and crushed stone, also known as construction aggregate, extracted on BLM administered public lands are necessary for making ready-mixed concrete, asphalt, and many other building materials.  By making locally available aggregate supplies available on public lands, BLM can help reduce consumer costs (fuel and energy costs), and reduce environmental impacts (air quality emissions and greenhouse gases). 
 
 _Other Commodities._ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
+
+## Contact us
+
+Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at [{{ site.data.contact.data_retrieval.email }}](mailto:{{ site.data.contact.data_retrieval.email }}) or {{ site.data.contact.data_retrieval.phone }}.

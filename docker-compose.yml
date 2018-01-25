@@ -23,7 +23,6 @@ services:
       - 4000:4000
 volumes:
   node-modules:
-  styleguide-template-node-modules:
   root:
   bundle:
   public:

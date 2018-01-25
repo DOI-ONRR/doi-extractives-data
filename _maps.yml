@@ -4,7 +4,6 @@ exclude:
   - package.json
   - show
   - test
-  - styleguide-template
   - 'Gemfile*'
   - pages
   - img

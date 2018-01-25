@@ -25,7 +25,7 @@ function run(cwd, command, args) {
 }
 
 function runJekyll() {
-  return run('/doi', 'jekyll', ['build', '--incremental'])
+  return run('/doi', 'jekyll', ['build', '--incremental', '--config', '_config.yml,_config-dev.yml'])
 }
 
 // Make it easy for Docker to terminate us.

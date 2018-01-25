@@ -1,0 +1,64 @@
+exclude:
+  # top-level log
+  - '*.log'
+  # markdown files
+  - CONTRIBUTING.md
+  - ISSUE_TEMPLATE.md
+  - LICENSE.md
+  - PULL_REQUEST_TEMPLATE.md
+  - README.md
+  # ruby dependency files
+  - Gemfile*
+  # KSS (style guide) config and template
+  - kss-config.json
+  - styleguide-template
+  - nrrd-design-system
+  # Node depenencies
+  - node_modules
+  - package.json
+  # unit tests
+  - test
+  - circle.yml
+  # webpack configuration
+  - webpack.config.js
+  - css
+  - img
+  # all of the source (unbuilt) JS files
+  - js
+  # shell and other scripts
+  - '*.sh'
+  - '*.rb'
+  - data/**/*.md
+  - data/**/*.yml
+  - data/all-production/*/*.?sv
+  - data/bin
+  - data/geo/input
+  - data/gdp
+  - data/jobs
+  - maps/lib
+  # data tools and SQLite databases
+  - '*.db*'
+  - .env
+  - data/**/*.csv
+  - data/**/*.js
+  - data/**/*.md
+  - data/**/*.ndjson
+  - data/**/*.sql
+  - data/**/*.svg
+  - data/env.example
+  - data/README.md
+  - data/company-revenue/input
+  - data/geo/input
+  - data/jobs/bls
+  - data/land-stats
+  # Docker stuff
+  - Dockerfile
+  - 'docker-*.yml'
+  # Makefiles
+  - Makefile
+  - '**/Makefile'
+  - maps/data
+  - maps/land/*.json
+  - serve*
+  - re-serve*
+  - public

@@ -89,4 +89,4 @@ _Other._ Certain offshore funds are directed back to the federal agencies that a
 
 ## Contact us
 
-Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at [{{ site.data.contact.data_retrieval.email }}](mailto:{{ site.data.contact.data_retrieval.email }}) or {{ site.data.contact.data_retrieval.phone }}.
+{% include contact.html %}

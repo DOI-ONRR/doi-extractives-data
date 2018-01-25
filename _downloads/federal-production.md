@@ -25,7 +25,7 @@ nav_items:
       - name: fips-code
         title: FIPS code
       - name: region
-        title: region
+        title: Region
       - name: planning-area
         title: Planning areas
       - name: product-groupings

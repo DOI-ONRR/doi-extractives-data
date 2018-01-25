@@ -2,7 +2,36 @@
 title: Federal Revenue by Location | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-location/
-title_display: Federal Revenue by Location
+title_display: 'Federal Revenue by Location'
+nav_items:
+  - name: introduction
+    title: Top
+  - name: scope
+    title: Scope
+    subnav_items:
+      - name: why-are-some-values-negative
+        title: Negative values
+      - name: why-is-there-a-gas-value-an-oil-value-and-an-oil--gas-value
+        title: Oil and gas values
+      - name: why-is-the-calendar-year-revenue-by-location-national-total-slightly-different-than-the-revenue-by-company-total
+        title: Revenue by location and by company
+      - name: note-geothermal-rate-details
+        title: Geothermal rate details
+  - name: offshore-data-dictionary
+    title: Offshore data dictionary
+    subnav_items:
+      - name: fields-and-definitions
+        title: Fields and definitions
+  - name: onshore-data-dictionary
+    title: Onshore data dictionary
+    subnav_items:
+      - name: fields-and-definitions-1
+        title: Fields and definitions
+  - name: advanced-offshore-and-onshore-information
+    title: Advanced offshore and onshore information
+  - name: contact-us
+    title: Contact us
+selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
@@ -126,3 +155,7 @@ _Geothermal_ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothe
 _Wind_ Wind.
 
 _Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
+
+## Contact us
+
+{% include contact.html %}

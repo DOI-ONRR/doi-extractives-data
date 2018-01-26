@@ -6,20 +6,19 @@ We love all friendly contributions, and we welcome your ideas about how to make 
 
 To ensure a welcoming environment for our projects, our staff follows the [18F Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md); contributors should do the same. Please also check out the [18F Open Source Policy](https://github.com/18f/open-source-policy).
 
-* [Running and testing the site](#running-and-testing-the-site)
-  * [Using Docker (optional)](#using-docker-optional)
-  * [Troubleshooting](#troubleshooting)
-  * [Data and database](#data-and-database)
-  * [Deployment](#deployment)
-  * [Styleguide](#styleguide)
-  * [Tests](#tests)
-  * [Code style](#code-style)
+* [Running and testing the site with Docker](#running-and-testing-the-site-with-Docker)
+    - [Troubleshooting](#troubleshooting)
+    - [Data and database](#data-and-database)
+    - [Deployment](#deployment)
+    - [Styleguide](#styleguide)
+    - [Tests](#tests)
+    - [Code style](#code-style)
 * [Process and workflow](#process-and-workflow)
   * [Issues](#issues)
   * [Pull requests](#pull-requests)
 * [Public domain](#public-domain)
 
-## Running and testing the site
+<!-- ## Running and testing the site
 
 ### Using Docker
 
@@ -28,7 +27,9 @@ in separate terminal sessions, you should use Docker, which
 only requires installing [Docker Community Edition][docker]
 and running one command in one terminal window.
 
-If you are on Windows, you will also need `bash`, which you can probably
+Start by installing [Docker Community Edition][docker].
+
+If you are on Windows, you'll also need `bash`, which you can probably
 get most easily by installing [git for Windows][].
 
 To get up and running with Docker, run:

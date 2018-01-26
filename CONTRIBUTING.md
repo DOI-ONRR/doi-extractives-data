@@ -104,7 +104,7 @@ If deploying the site to a production environment, make sure to minify the JS fi
 ### Styleguide
 
 ```sh
-docker-compose run webpack npm run build-styleguide
+docker-compose run webpack npm run watch-styleguide
 ```
 
 ### Tests

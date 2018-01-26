@@ -18,7 +18,7 @@ To ensure a welcoming environment for our projects, our staff follows the [18F C
   * [Pull requests](#pull-requests)
 * [Public domain](#public-domain)
 
-<!-- ## Running and testing the site
+## Running and testing the site
 
 ### Using Docker
 

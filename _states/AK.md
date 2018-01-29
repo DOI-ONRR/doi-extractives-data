@@ -14,7 +14,7 @@ is_cropped: true
 
 opt_in: true
 
-state_revenue_year: 2015
+state_revenue_year: 2016
 
 locality_name: 'Borough or census area'
 

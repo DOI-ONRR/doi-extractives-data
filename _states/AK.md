@@ -73,7 +73,7 @@ state_saving_spending: |
 
     For 2016, in response to budget conditions, the Governor of Alaska exercised his line-item veto power to [cut the total dividend payout](http://gov.alaska.gov/newsroom/2016/06/governor-walker-vetoes-1-29-billion-to-preserve-state-savings/) to $696 million, which reduced individual checks to $1,000 per person. The Alaska state legislature is also considering two senate bills proposing changes to the APF: [SB114](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20114&session=29) and [SB128](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20128&session=29).
 
-    To learn more, see the APF Dividend Division's [annual reports](https://pfd.alaska.gov/Division-Info/Annual-Reports) or [financial history and projections (PDF)](http://www.apfc.org/_amiReportsArchive/FIN%20201604.pdf).
+    To learn more, see the APF Dividend Division's [annual reports](https://pfd.alaska.gov/Division-Info/Annual-Reports) or [financial history and projections (PDF)](https://apfc.org/report-archive/#41-history-and-projections).
 
     **The [Public School Trust Fund](http://treasury.dor.alaska.gov/Investments/Public-School-Trust-Funds.aspx)** is worth $641 million (as of July 31, 2017), and funded by 0.5% of state receipts from the management of all state lands. The public school system has access to $8 million from the fund, while the fund retains the principal and some net income.
 
@@ -109,7 +109,7 @@ These private, for-profit corporations belong to and benefit Alaska Natives in t
 
 Alaska Native corporations have generated substantial revenues from resource development, though this exposes them to the same revenue sustainability questions that affect [state revenues](#revenue-sustainability). ANCSA provides for natural revenue sharing among all ANCs, so ANCs may mutually support each other to help smooth revenue volatility: For example, the [Red Dog zinc mine](http://www.nana.com/regional/resources/red-dog-mine/) has generated $1.3 billion in net proceeds for NANA Regional Corporation since mining began. It has retained about $480 million and shared about $820 million with other ANCs. Of the $480 million retained, about $221 million has been paid out to individual shareholders as dividends.
 
-Separately from the Alaska Native corporations, there are [229 federally recognized tribal entities](https://www.federalregister.gov/documents/2016/01/29/2016-01769/indian-entities-recognized-and-eligible-to-receive-services-from-the-united-states-bureau-of-indian#h-7) in Alaska. Until recently, they were viewed as landless (with the exception of one reservation, the Metlakatla Indian Community’s Annette Island Reserve). The Bureau of Indian Affairs recently changed this by establishing [Rule 25 CFR Part 151](https://www.bia.gov/cs/groups/xraca/documents/text/idc1-028731.pdf), which allows Alaska tribes to apply to put land into trust.
+Separately from the Alaska Native corporations, there are [229 federally recognized tribal entities](https://www.federalregister.gov/documents/2016/01/29/2016-01769/indian-entities-recognized-and-eligible-to-receive-services-from-the-united-states-bureau-of-indian#h-7) in Alaska. Until recently, they were viewed as landless (with the exception of one reservation, the Metlakatla Indian Community’s Annette Island Reserve). The Bureau of Indian Affairs recently changed this by establishing [Rule 25 CFR Part 151](https://www.gpo.gov/fdsys/pkg/CFR-2012-title25-vol1/pdf/CFR-2012-title25-vol1-part151.pdf), which allows Alaska tribes to apply to put land into trust.
 
 ### State agencies
 
@@ -131,7 +131,7 @@ The [Division of Oil and Gas](http://dog.dnr.alaska.gov/) is responsible for lea
 * Identifying prospective lease areas; evaluating oil and gas resources; and performing geologic, economic, environmental, and social analyses
 * Fielding and issuing exploration permits, developing leasing schedules, and conducting public review of proposed sales
 * Conducting oil and gas lease sales, negotiating contracts, and conducting royalty audits
-* Decommissioning and restoration activities, including [Decommissioning, Removal, and Restoration Regulatory Review (PDF)](http://dog.dnr.alaska.gov/publications/Documents/OtherReports/DRR-ArcadisReport-20141128.pdf), which details conservation efforts related to drilling infrastructure
+* Decommissioning, removal, and restoration regulatory review
 - Publishing statutes and regulations governing [oil and gas, and geothermal](http://dog.dnr.alaska.gov/About/Regulations)
 - Publishing data about [oil and gas funds received and distributed](http://dog.dnr.alaska.gov/Information/Data)
 

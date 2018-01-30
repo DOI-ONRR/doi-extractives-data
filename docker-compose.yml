@@ -21,6 +21,15 @@ services:
       - webpack
     ports:
       - 4000:4000
+  styleguide:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: npm run watch-styleguide
+    depends_on:
+      - webpack
+    ports:
+      - 3000:3000
 volumes:
   node-modules:
   styleguide-template-node-modules:

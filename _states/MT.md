@@ -5,7 +5,7 @@ FIPS: '30'
 
 opt_in: true
 
-state_revenue_year: 2014
+state_revenue_year: 2016
 
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates

@@ -14,8 +14,3 @@ services:
       - LANGUAGE=C.UTF-8
       - LC_ALL=C.UTF-8
       - CHOKIDAR_USEPOLLING=true
-#     For some reason using yarn mis-symlinks the tito binary to
-#     nestly's really old version of tito, instead of the immediate
-#     dependency in node_modules, so we'll use npm instead.
-#      - NPM_CMD=yarn
-    working_dir: /doi

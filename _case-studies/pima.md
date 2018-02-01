@@ -49,7 +49,7 @@ Copper mining makes up a relatively small portion of Pima County's overall emplo
 
 ### Wage and salary employment in Pima County:<br>Mining industry vs. all other industries[^11]
 
-<img src="{{ site.baseurl }}/public/img/counties/az-wage.svg" alt="Chart shows the number of jobs in the copper mining industry in Pima County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 350,000. The total number of jobs in Pima County each year ranges from about 260,000 to just over 300,000. The percentage of jobs in the mining industry ranges from 0.45 to 0.9%." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/az-wage.svg" alt="Chart shows the number of jobs in the copper mining industry in Pima County from 2005 to 2015. The y-axis, which represents the number of wage and salary employees, tops out at 350,000. The total number of jobs in Pima County each year ranges from about 260,000 to just over 300,000. The percentage of jobs in the mining industry ranges from 0.45 to 0.9%." class="case_studies_content-graph">
 
 ## Revenue
 

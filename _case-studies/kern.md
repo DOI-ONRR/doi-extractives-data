@@ -45,7 +45,7 @@ In 2013, the largest field in California in terms of proven reserves was Belridg
 
 ### Oil production in Kern County[^9]
 
-<img src="{{ site.baseurl }}/public/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2016 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200 million. Annual oil production, which was between about 140 and 180 million  barrels for all years except 2016, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. Production fell to under 140 million barrels in 2016." class="case_studies_content-graph">
 
 
 ## Employment
@@ -65,7 +65,7 @@ Like other counties in the state, Kern County collects property taxes for oil an
 
 ### Assessed property valuation in Kern County[^18]
 
-<img src="{{ site.baseurl }}/public/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2005 to 2014. Total property valuation goes up from under $60 billion in 2005 to just under $100 billion in 2014. Total valuations pleateau or slightly decline between 2008 and 2011. Oil and gas property valuation goes up every year from 2005 to 2012 (from under $20 billion to over $30 billion), then is steady from 2012 to 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/ca-valuation.svg" alt="Chart shows the valuation of oil and gas properties, non oil and gas properties, and total property valuation from 2007 to 2016. Total property valuation goes up from around $80 billion in 2007 to just under $100 billion in 2014 before falling to under $90 billion in 2016. Oil and gas property valuation trends upward from 2005 to 2012 (from under $20 billion to over $30 billion) before steadying and falling back to around $20 billion in 2016." class="case_studies_content-graph">
 
 Kern County also collects oil and gas royalties. Compared to property tax revenue, however, oil and gas royalties comprise a small portion of county funds. Oil and gas royalty revenues have increased steadily from $123,211 in FY 2009-2010 to $628,381 in FY 2013-2014, but then decreased to $309,546 in FY 2014-2015.[^19] [^20]
 

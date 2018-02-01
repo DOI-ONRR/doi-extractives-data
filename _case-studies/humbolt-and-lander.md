@@ -54,7 +54,7 @@ In 2015, gold mining provided jobs for 4,649 workers, which represented 20.2% of
 
 ### Wage and salary employment in the gold mining industry[^14]
 
-<img src="{{ site.baseurl }}/public/img/counties/nv-humboldt-wage.svg" alt="Chart shows the number of jobs in the gold mining industry in Humboldt and Lander counties from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000. The total number of jobs in the mining industry each year ranges from about 1,900 in 2005 to about 6,000 in 2011 and 2012, and rose each year between those points. For 2014, the number of jobs in gold mining is about 5,100." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/nv-humboldt-wage.svg" alt="Chart shows the number of jobs in the gold mining industry in Humboldt and Lander counties from 2006 to 2015. The y-axis, which represents the number of wage and salary employees, tops out at 7,000. The total number of jobs in the mining industry each year ranges from about 2,300 in 2006 to about 6,000 in 2011 and 2012, and rose each year between those points. For 2015, the number of jobs in gold mining is about 4,700." class="case_studies_content-graph">
 
 ## Revenue
 

@@ -45,7 +45,7 @@ Major corporate landowners own a significant portion of the land used for natura
 
 ### Iron production in Marquette County:<br>Crude iron vs. usable iron[^7]
 
-<img src="{{ site.baseurl }}/public/img/counties/mi-production.svg" alt="Chart shows iron production in Marquette County from 2004 to 2013 as two line graphs. The y-axis represents thousands of metric tons of iron produced, and tops out at 45,000. Annual crude iron production was between 19 and 41 million metric tons for each year in this range, and annual usable iron production was between 7 and 13 million each year. Both reached their lowest points in 2009 (under 20 million and 8 million respectively) and their highest points in 2011 (over 40 million and 12 million respectively)." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/mi-production.svg" alt="Chart shows iron production in Marquette County from 2004 to 2014 as two line graphs. The y-axis represents thousands of metric tons of iron produced, and tops out at 45,000. Annual crude iron production was between 20 and 40 million metric tons for each year in this range, and annual usable iron production was between 8 and 13 million each year. Both reached their lowest points in 2009 (under 20 million and 8 million respectively) and their highest points in 2011 (over 40 million and 12 million respectively). After a downward trend from 2011 to 2013, production increased in 2014 to just over 35 million for crude iron and around 12 million for usable iron." class="case_studies_content-graph">
 
 
 ## Employment
@@ -130,4 +130,4 @@ This case study is current as of June 2017. Many data sources are updated regula
 
 [^15]: Ibid.
 
-[^16]: [Marquette County Administrator’s 2015 Budget Summary (PDF)](http://www.co.marquette.mi.us/departments/administrator/docs/Budget2015/2015_administrative_summary_final.pdf), p. 3 
+[^16]: [Marquette County Administrator’s 2015 Budget Summary (PDF)](http://www.co.marquette.mi.us/departments/administrator/docs/Budget2015/2015_administrative_summary_final.pdf), p. 3

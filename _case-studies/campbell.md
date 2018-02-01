@@ -45,7 +45,7 @@ Production levels fluctuated little between 2005 and 2015. For instance, 2015’
 
 ### Coal production in Campbell County[^14]
 
-<img src="{{ site.baseurl }}/public/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2005 to 2014 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2005-2008 then declined most years until 2013, with slight upticks or plateaus in 2010 and 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2006 to 2015 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2006 to 2008 then trended downward to just under 350 million tons in 2015." class="case_studies_content-graph">
 
 
 ## Employment
@@ -54,7 +54,7 @@ The coal mining industry provides employment for 5,227 workers in Campbell Count
 
 ### Wage and salary employment in Campbell County:<br>Mining industry vs. all other industries[^18]
 
-<img src="{{ site.baseurl }}/public/img/counties/wy-wage.svg" alt="Chart shows the number of jobs in Campbell County from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 35,000, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. The total number of jobs each year ranges from about 23,000 in 2005 to a little under 30,000 in 2008. After 2008, the total number of jobs hovers between 27,500 and 29,000 until 2014, when it drops to under 25,000. The percentage of jobs in the mining industry is between 25% and 27% for all years except 2014, when it rises to 31% (the number of mining industry jobs is steady between 2013 and 2014, but the number of jobs in other industries declines)." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wy-wage.svg" alt="Chart shows the number of jobs in Campbell County from 2006 to 2015. The y-axis, which represents the number of wage and salary employees, tops out at 35,000, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. The total number of jobs each year ranges from about 25,000 in 2006 to a little under 30,000 in 2008. After 2008, the total number of jobs hovers between 27,500 and 29,000 until 2015, when it drops to under 25,000. The percentage of jobs in the mining industry is between 25% and 27% for all years except 2015, when it rises to 30%." class="case_studies_content-graph">
 
 
 ## Revenue

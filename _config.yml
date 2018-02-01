@@ -21,9 +21,6 @@ exclude:
   - README.md
   # ruby dependency files
   - Gemfile*
-  # KSS (style guide) config and template
-  - kss-config.json
-  - styleguide-template
   - nrrd-design-system
   # Node depenencies
   - node_modules

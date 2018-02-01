@@ -9,10 +9,9 @@ exclude:
   - README.md
   # ruby dependency files
   - Gemfile*
-  # KSS (style guide) config and template
-  - kss-config.json
-  - styleguide-template
   - nrrd-design-system
+  # just ignore the whole JS lib directory
+  - lib
   # Node depenencies
   - node_modules
   - package.json

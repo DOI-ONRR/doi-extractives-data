@@ -45,7 +45,7 @@ In 2013, the largest field in California in terms of proven reserves was Belridg
 
 ### Oil production in Kern County[^9]
 
-<img src="{{ site.baseurl }}/public/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2015 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200,000. Annual oil production, which was between about 140,000 and 180,000 thousand barrels for all years, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. 2015 oil production was very similar to 2014 production, and both were about 145,000 thousand barrels." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/ca-production.svg" alt="Chart shows oil production in Kern County from 2006 to 2016 as a line graph. The y-axis represents thousands of barrels of oil produced, and tops out at 200 million. Annual oil production, which was between about 140 and 180 million  barrels for all years except 2016, went down from 2005-2007, up in 2008, then slowly declined until 2012, when it plateaued and then rose slightly in 2014. Production fell to under 140 million barrels in 2016." class="case_studies_content-graph">
 
 
 ## Employment

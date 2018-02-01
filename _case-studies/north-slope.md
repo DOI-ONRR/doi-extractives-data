@@ -45,7 +45,7 @@ In 2015, the North Slope Borough produced 169.6 million bbl of oil on both state
 
 ### Oil production in North Slope Borough[^12]
 
-<img src="{{ site.baseurl }}/public/img/counties/ak-production.svg" alt="Chart shows oil production in North Slope Borough from 2004 to 2014 as a line graph, and compares that to oil production in all of Alaska. The y-axis represents thousands of barrels of oil produced, and tops out at 350 million. Annual oil production in North Slope Borough was about 324 million barrels in 2004, and has declined each year to its 2014 level of about 175 million. North Slope represents the bulk of oil production in Alaska, and the two lines are very close or overlapping for all years shown." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/ak-production.svg" alt="Chart shows oil production in North Slope Borough from 2007 to 2015 as a line graph, and compares that to oil production in all of Alaska. The y-axis represents thousands of barrels of oil produced, and tops out at just over 250 million. Annual oil production in North Slope Borough was about 250 million barrels in 2007 and has declined each year to its 2015 level of about 175 million. North Slope represents the bulk of oil production in Alaska, and the two lines are very close or overlapping for all years shown, but begin to diverge slightly in 2015." class="case_studies_content-graph">
 
 
 ## Employment
@@ -54,7 +54,7 @@ The oil industry is a key driver of jobs throughout the borough. In 2015, mining
 
 ### Employment in the extractive industries in North Slope Borough[^16]
 
-<img src="{{ site.baseurl }}/public/img/counties/ak-wage.svg" alt="Chart shows the number of jobs in North Slope Borough from 2005 to 2014. The y-axis, which represents the number of wage and salary employees in the extractive industries, tops out at 16,000. Each year, the number of jobs in these industries is between 8,000 and 15,000." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/ak-wage.svg" alt="Chart shows the number of jobs in North Slope Borough from 2005 to 2015. The y-axis, which represents the number of wage and salary employees in the extractive industries, tops out at 16,000. Each year, the number of jobs in these industries is between 8,000 and 15,000, with around 14,000 between 2010 and 2012. The number of employees fell to between 9,000 and 10,000 in 2014 and 2015." class="case_studies_content-graph">
 
 
 ## Revenue
@@ -70,7 +70,7 @@ Statewide, the Alaska government collects oil-related revenue for the benefit of
 
 ### Alaska total petroleum based revenue[^26]
 
-<img src="{{ site.baseurl }}/public/img/counties/ak-revenue.svg">
+<img src="{{ site.baseurl }}/public/img/counties/ak-revenue.svg" alt="Chart shows Alaska state revenue from 2006 to 2016. State revenue was just over $4 billion in 2006 and then spikes to over $11 billion in 2008 before falling to just over $6 billion in 2009 and 2010. Revenue rises again to $12 billion in 2012 before falling significantly over the next several years to under $2 billion in 2016.">
 
 Alaska residents also receive annual dividend payments from the state's Permanent Fund, based on a five-year average of the fund's performance. The state established the Permanent Fund in 1976, as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2016, each Alaska resident received $1,022 as a result of this payout, down from $2,072 in 2015 and just below the ten-year average of $1,424.[^27]
 

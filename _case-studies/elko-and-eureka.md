@@ -55,7 +55,7 @@ In these two counties, gold-mining operations employed approximately 9.5% of the
 
 ### Mining industry employment in Elko and Eureka counties[^14]
 
-<img src="{{ site.baseurl }}/public/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2005 to 2014. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties has risen from just over 4,000 in 2005 to nearly 8,000 in 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/nv-employment.svg" alt="Chart shows employment in the gold mining industry in Elko and Eureka counties from 2006 to 2015. The y-axis represents numbers of jobs, and tops out at 9,000. The total number of jobs in gold mining in these two counties rose steadily from around 4,500 in 2006 to nearly 8,000 in 2014 before falling to just over 5,000 in 2015." class="case_studies_content-graph">
 
 
 ## Revenue

@@ -55,7 +55,7 @@ Coal extraction has provided employment in these communities for the past centur
 
 ### Wage and salary employment in Boone, Logan, and Mingo counties: Mining industry vs. all other industries[^20]
 
-<img src="{{ site.baseurl }}/public/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2005 to 2014. The y-axis goes up to 35,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 17,500 and under 30,000, and the percentage of jobs in the mining industry is between 25%, in 2014, and 27%, in 2008." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wv-wage.svg" alt="Chart shows the number of jobs in these three counties from 2006 to 2015. The y-axis goes up to 35,000 jobs, and each bar compares the number of mining-industry jobs to the total number of jobs for that year. Each bar also identifies the percentage of jobs in the mining industry. For all years, total number of jobs is over 15,000 and under 30,000, and the percentage of jobs in the mining industry is between 22% in 2015 and 27% in 2008 and 2011." class="case_studies_content-graph">
 
 
 ## Revenue

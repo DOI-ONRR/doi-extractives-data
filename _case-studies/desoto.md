@@ -54,7 +54,7 @@ Employment data for the complete oil and gas industry in DeSoto Parish is unavai
 
 ### Wage and salary employment in DeSoto Parish: Extractive industries vs. all other industries[^14]
 
-<img src="{{ site.baseurl }}/public/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2005 to 2014. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 4% (in 2005) and 21% (in 2012). In both 2013 and 2014, there were about 1,000 jobs in the extractive industries, which represented 18% of DeSoto Parish jobs." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/la-wage.svg" alt="Chart shows the number of jobs in DeSoto Parish from 2007 to 2016. The y-axis, which represents the number of wage and salary employees, tops out at 7,000, and each bar compares the number of extractive industry jobs to the total number of jobs that year. Each bar also identifies the percentage of jobs in the extractive industries. The total number of jobs each year ranges from about 4,100 to a little under 6,000. The percentage of jobs in the extractive industries is between 8% (in 2007 and 2008) and 21% (in 2012). Since 2013, mining, quarrying, and oil and gas jobs have represented between 17% and 18% of DeSoto Parish jobs." class="case_studies_content-graph">
 
 
 ## Revenue

@@ -45,7 +45,7 @@ Production levels fluctuated little between 2005 and 2015. For instance, 2015’
 
 ### Coal production in Campbell County[^14]
 
-<img src="{{ site.baseurl }}/public/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2005 to 2014 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2005-2008 then declined most years until 2013, with slight upticks or plateaus in 2010 and 2014." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wy-production.svg" alt="Chart shows coal production in Campbell County from 2006 to 2015 as a line graph. The y-axis represents millions of tons of coal produced, and tops out at 450. Annual coal production, which was between 325 and 425 million tons for all years, went up from 2006 to 2008 then trended downward to just under 350 million tons in 2015." class="case_studies_content-graph">
 
 
 ## Employment

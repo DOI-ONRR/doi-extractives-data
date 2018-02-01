@@ -47,7 +47,7 @@ Cumulatively, mines in Boone, Logan, and Mingo counties produce about 23% of Wes
 
 ### Coal production for Boone, Logan, and Mingo counties[^12]
 
-<img src="{{ site.baseurl }}/public/img/counties/wv-production.svg" alt="Chart of coal production in the three counties from 2005 to 2014. The y-axis represents thousands of tons of coal and the maximum value is 70,000. Coal production rose from under 60,000 in 2005 to over 60,000 in 2008, then declined to just over 30,000 in 2014. Of the three counties, Logan County produced the most coal, and Boone produced the least in most of the years shown." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/wv-production.svg" alt="Chart of coal production in the three counties from 2006 to 2015. The y-axis represents thousands of tons of coal and the maximum value is 70,000. Coal production topped out at over 60,000 in 2008, then declined annually to just over 20,000 in 2015. Of the three counties, Logan County averaged the highest production of coal over the time span, with Boone County leading production in 2006 and Mingo leading production in 2015." class="case_studies_content-graph">
 
 ## Employment
 

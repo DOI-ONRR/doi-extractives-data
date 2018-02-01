@@ -46,7 +46,7 @@ The two major gold-mining companies driving this development are Newmont Mining 
 
 ### Gold production in Elko and Eureka counties[^10]
 
-<img src="{{ site.baseurl }}/public/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2014. The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka = County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
+<img src="{{ site.baseurl }}/public/img/counties/nv-production.svg" alt="Chart shows gold production in Elko and Eureka counties from 2008 to 2015. The y-axis represents ounces of gold produced, and tops out at 3.5 million. Annual gold production was just under 3.5 million ounces in 2008, then declined annually to its 2014 level of just over 2 million ounces before rebounding slightly in 2015. Gold production in Elko County was between 500,000 and 800,000 ounces each year, and production in Eureka County was between 1.4 and 2.8 million ounces each year." class="case_studies_content-graph">
 
 
 ## Employment

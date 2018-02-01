@@ -35,11 +35,11 @@ get most easily by installing [git for Windows][].
 To get up and running with Docker, run:
 
 ```
-bash docker-update.sh
+docker-compose build jekyll
 docker-compose up
 ```
 
-Then visit http://localhost:4000/ in your browser.
+Then visit http://localhost:4000/ in your browser. On Windows machines the URL is generally http://192.168.99.100:4000/.
 
 Whenever you make changes to any files, the proper static assets
 will be rebuilt, and your changes will show up on the site.
@@ -65,8 +65,8 @@ container, and can run any commands you need.
 #### Updating the Docker container
 
 Whenever you update the repository using e.g. `git pull`, run
-`bash docker-update.sh` again to rebuild the Docker container and
-fetch any new dependencies.
+`docker-compose build jekyll` again to rebuild the Docker container and
+fetch any new dependencies. Building a single `-compose.yml` service at first caches all of the build steps and makes it faster to build the remaining services.
 
 #### Uninstalling or resetting the Docker container
 

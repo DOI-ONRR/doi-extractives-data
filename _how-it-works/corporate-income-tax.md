@@ -10,6 +10,7 @@ tag:
 - Tax receipts
 - Corporate filings
 permalink: /how-it-works/corporate-income-tax/
+redirect_from: /explore/corporate-income-tax/
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

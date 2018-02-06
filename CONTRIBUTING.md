@@ -32,10 +32,10 @@ Start by installing [Docker Community Edition][docker].
 If you are on Windows, you'll also need `bash`, which you can probably
 get most easily by installing [git for Windows][].
 
-To get up and running with Docker, run:
+To get up and running with Docker, run the following in the project directory.
 
 ```
-docker-compose build jekyll
+docker-compose build
 docker-compose up
 ```
 
@@ -43,6 +43,40 @@ Then visit http://localhost:4000/ in your browser. On Windows machines the URL i
 
 Whenever you make changes to any files, the proper static assets
 will be rebuilt, and your changes will show up on the site.
+
+##### Errors when starting up
+
+We sometimes observe a behavior where `docker-compose up` will result in an error the first time it is run, but will work the second time.
+
+<details>
+  <summary>The error usually looks like this (expand to see): </summary>
+
+```
+jekyll_1      | module.js:540
+jekyll_1      |     throw err;
+jekyll_1      |     ^
+jekyll_1      |
+jekyll_1      | Error: Cannot find module 'to-regex'
+jekyll_1      |     at Function.Module._resolveFilename (module.js:538:15)
+jekyll_1      |     at Function.Module._load (module.js:468:25)
+jekyll_1      |     at Module.require (module.js:587:17)
+jekyll_1      |     at require (internal/module.js:11:18)
+jekyll_1      |     at Object.<anonymous> (/doi/node_modules/chokidar/node_modules/braces/index.js:7:15)
+jekyll_1      |     at Module._compile (module.js:643:30)
+jekyll_1      |     at Object.Module._extensions..js (module.js:654:10)
+jekyll_1      |     at Module.load (module.js:556:32)
+jekyll_1      |     at tryModuleLoad (module.js:499:12)
+jekyll_1      |     at Function.Module._load (module.js:491:3)
+doiextractivesdata_jekyll_1 exited with code 1
+```
+
+</details>
+
+If you run into this error, then you should:
+
+1. Use `Control-C` to bring down the docker containers
+1. Make sure everything is turned off with `docker-compose down`
+1. Use `docker-compose up` again
 
 #### What Docker is doing
 

@@ -12,8 +12,10 @@ dependencies:
     - npm install
     - bundle install
     - npm run update-webpack
+    - npm i -g @frctl/fractal
   post:
     - bundle exec jekyll build
+    - npm run release-styleguide
 
 ## Customize test commands
 test:

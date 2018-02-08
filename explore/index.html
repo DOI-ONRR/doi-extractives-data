@@ -1,6 +1,14 @@
 ---
 layout: default
 permalink: /explore/
+redirect_from:
+  - /explore/exports/
+  - /explore/gdp/
+  - /explore/jobs/
+  - /explore/all-lands-production/
+  - /explore/federal-production/
+  - /explore/disbursements/
+  - /explore/federal-revenue-by-location/
 id: US
 title: Explore data
 national_page: true
@@ -25,6 +33,9 @@ nav_items:
         title: Federal tax revenue
   - name: federal-disbursements
     title: Disbursements
+    subnav_items:
+      - name: by-fund
+        title: Disbursements by fund
   - name: economic-impact
     title: Economic impact
     subnav_items:
@@ -153,4 +164,4 @@ nav_items:
 
 </main>
 
-<script src="{{ site.baseurl }}/js/lib/state-pages.min.js"></script>
+<script src="{{ site.baseurl }}/public/js/state-pages.min.js"></script>

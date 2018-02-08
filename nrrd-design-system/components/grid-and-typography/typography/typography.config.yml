@@ -1,0 +1,53 @@
+title: Typography
+status: blocked
+collated: true
+default: h1
+variants:
+  - name: h1
+    context:
+      className: h1
+      text: h1 header
+  - name: h2
+    context:
+      className: h2
+      text: h2 header
+  - name: h3
+    context:
+      className: h3
+      text: h3 header
+  - name: h4
+    context:
+      className: h4
+      text: h4 header
+  - name: h5
+    context:
+      className: h5
+      text: h5 header
+  - name: para-xl
+    context:
+      className: para-xl
+      text: Para-xl is used for large introductory text, to make a page more inviting.
+  - name: para-lg
+    context:
+      className: para-lg
+      text: Para-lg is the default type size.
+  - name: para-md
+    context:
+      className: para-md
+      text: Para-md is medium-sized text.
+  - name: para-sm
+    context:
+      className: para-sm
+      text: Para-sm is small.
+  - name: h2-bar
+    context:
+      className: h2-bar
+      text: h2-bar
+  - name: h3-bar
+    context:
+      className: h3-bar
+      text: h3-bar
+  - name: chart-title-large
+    context:
+      className: chart-title-large
+      text: chart-title-large

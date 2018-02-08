@@ -1,0 +1,12 @@
+title: Global header
+status: draft
+collated: true
+default: header
+variants:
+  - name: header
+    context:
+      className: header
+      text:
+
+
+# This is on the top of every page. Find in _includes/layout/header.html

@@ -1,0 +1,9 @@
+title: Text filter
+status: draft
+# collated: true
+# default: filter-search
+# variants:
+#   - name: filter-search
+#     context:
+#       className: filter-search #from fed rev by co, needs attention
+#       text: Text input field

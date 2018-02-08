@@ -1,20 +1,38 @@
 version: '2'
 services:
-  app:
+  jekyll:
     extends:
       file: docker-services.yml
       service: base_app
-    command: jekyll serve --force_polling --watch --incremental --host 0.0.0.0 --port 4000 --trace
-    ports:
-      - 4000:4000
+    command: node scripts/jekyll-watch.js
   webpack:
     extends:
       file: docker-services.yml
       service: base_app
     command: webpack --watch --watch-poll
     stop_signal: SIGKILL
+  express:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: node scripts/dev-server.js
+    depends_on:
+      - jekyll
+      - webpack
+    ports:
+      - 4000:4000
+  styleguide:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    command: npm run watch-styleguide
+    depends_on:
+      - webpack
+    ports:
+      - 3000:3000
 volumes:
   node-modules:
-  styleguide-template-node-modules:
   root:
   bundle:
+  public:
+  styleguide:

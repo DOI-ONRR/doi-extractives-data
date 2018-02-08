@@ -1,0 +1,191 @@
+<!-- <div class="{{ className }}">{{ text }}</div> -->
+
+<div class="preview">
+
+  <!-- plus-button accordion, genericize this -->
+  <div class="container-margin">
+    <p class="label-primary">Floating accordion unit, used with county maps on Explore state pages:</p>
+    <section id="federal-production-coal-tons" class="product full-width">
+      <div class="row-container">
+        <div class="map-container">
+            <h4 class="details-container" aria-hidden="false">
+              <button is="aria-toggle" aria-controls="federal-production-coal-tons-counties" aria-expanded="false" type="button">
+              <span class="hide-expanded">
+                <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+                Show expanded content
+              </span>
+              <span class="show-expanded">
+                <img class="aria-toggle-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+                Hide expanded content
+              </span>
+          </button>
+        </h4>
+        </eiti-data-map>
+          <div class="eiti-data-map-table" id="federal-production-coal-tons-counties" aria-hidden="false">
+            <table is="bar-chart-table" data-percent-max="100" class="county-table" year="2016">
+              <thead>
+                <tr>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="inner-table-row">
+                  <td colspan="3" class="inner-table-cell">
+                    <div class="inner-table-wrapper">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>Expanded content</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- in-table accordion, genericize this -->
+  <div class="container-margin">
+    <p class="label-primary">In-table expandable content:</p>
+    <table is="bar-chart-table" class="table-basic">
+      <tbody id="revenue-disbursement-stream-ad-valorem-taxes" class="table-accordion-group">
+        <tr>
+          <td>
+            <button is="aria-toggle" aria-controls="stream-ad-valorem-taxes" aria-expanded="false" class="not-button-like" type="button">
+              Expandable content
+            </button>
+          </td>
+        </tr>
+        <tr id="stream-ad-valorem-taxes" aria-hidden="true">
+          <td colspan="2">Expanded content</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- javascript for accordion functionality, genericize this -->
+  <script src="/js/lib/state-pages.min.js"></script>
+
+  <!-- mobile nav header -->
+  <div class="container-margin">
+    <p class="label-primary">Mobile navigation (reduce this window width to view):</p>
+    <main id="foo" class="container-page-wrapper layout-state-pages">
+      <div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
+      <div is="mobile-nav" class="mobile-nav sticky stuck">
+        <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
+            <div class="flex-row">
+              <h3 class="mobile-nav-header flex-row-flex">Mobile menu</h3>
+              <span class="hide-expanded flex-row-icon">
+                <icon class="icon icon-chevron-sm-down"></icon>
+              </span>
+              <span class="show-expanded flex-row-icon">
+                <icon class="icon icon-chevron-sm-up"></icon>
+              </span>
+            </div>
+        </button>
+
+        <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true" style="height: 326px;">
+          <ul>
+            <a href="#" class="mobile-nav-list-item">Category</a>
+            <a href="#production" class="mobile-nav-list-item">Category</a>
+            <ul>
+              <a class="mobile-nav-sublist-item" mobile-nav-item="all-production" href="#all-production">Subcategory</a>
+              <a class="mobile-nav-sublist-item" mobile-nav-item="federal-production" href="#federal-production">Subcategory</a>
+            </ul>
+            <a href="#revenue" class="mobile-nav-list-item">Category</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile-collapsong category, genericize this -->
+    <section id="all-production" is="year-switcher-section" class="all-lands production">
+      <p class="label-primary">Content which collapses into an accordion on mobile viewports (reduce this window width to view):</p>
+      <div class="chart-list">
+        <section id="state-all-production-coal" class="chart-item">
+          <h3 class="chart-title">
+            <button is="aria-toggle" aria-expanded="false" aria-controls="state-all-production-figures-chart-coal" class="chart-title-button" type="button">
+              <span class="hide-expanded chart-title-small">
+                <span>
+                  Mobile-collapsing item
+                </span>
+                <span class="hide-expanded">
+                  <img class="aria-toggle-icon" alt="icon with a plus sign" src="/img/icons/icon-circled-plus.svg">
+                </span>
+              </span>
+              <span class="show-expanded chart-title-small">
+                <span>
+                  Mobile-collapsing item
+                </span>
+                <img class="chart-title-icon" alt="icon with a minus sign" src="/img/icons/icon-circled-minus.svg">
+              </span>
+            </button>
+            <span class="chart-title-large">Mobile-collapsing item</span>
+          </h3>
+            <figure class="chart" id="state-all-production-figures-chart-coal" aria-hidden="true">
+              <figcaption id="state-all-production-figures-coal">
+                Full content
+              </figcaption>
+            </figure>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/lib/state-pages.min.js"></script>
+
+  <!-- <p class="label-primary">
+    The following classes need work, and may not merit a place in this guide. Let's discuss!
+  </p> -->
+
+  <!-- revenues_subpage-steps_group_item, genericize this -->
+  <!-- <section class="container-outer">
+    <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
+      <li class="revenues_subpage-steps_group_item" aria-expanded="true" accordion-item="true">
+        <div class="revenues_subpage-steps_number">1</div>
+        <h3 class="revenues_subpage-steps_heading">Numbered item</h3>
+        <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--0"><label class="sr-only">Numbered item</label></button>
+        <div accordion-content="" id="offshore-oilgas-steps--content--0" role="content" aria-hidden="false">
+          <p>Content</p>
+        </div>
+      </li>
+    </ul>
+    <div class="container">
+      <ul accordion="offshore-oilgas-steps" accordion-desktop="false" class="revenues_subpage-steps_group list-unstyled">
+        <li class="revenues_subpage-steps_group_item" accordion-item="true" aria-expanded="false">
+          <div class="revenues_subpage-steps_number">2</div>
+          <h3 class="revenues_subpage-steps_heading">Numbered item</h3>
+          <button accordion-button="" role="button" aria-controls="offshore-oilgas-steps--content--1"><label class="sr-only">Numbered item</label></button>
+          <div accordion-content="" id="offshore-oilgas-steps--content--1" role="content" aria-hidden="true">
+            <p>Content</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+    <!-- new: expandable-panel -->
+    <!-- <div accordion="offshore-oilgas-dyk" accordion-item="" class="revenues_subpage-dyk" aria-expanded="false">
+      <h2 class="revenues_subpage-dyk_heading">Expandable panel</h2>
+
+      <div class="revenues_subpage-dyk_text">
+        <p>Summary content.</p>
+
+        <div accordion-content="" id="offshore-oilgas-dyk--content--0" role="content" aria-hidden="true">
+          <p>Expanded content</p>
+        </div>
+      </div>
+      <button class="revenues_subpage_dyk-link" accordion-text="" accordion-button="" role="button" aria-controls="offshore-oilgas-dyk--content--0">
+        <span class="accordion-more">more</span>
+        <span class="accordion-less">less</span>
+      </button>
+
+    </div> -->
+
+</div>

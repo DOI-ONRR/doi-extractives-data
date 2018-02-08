@@ -1,0 +1,17 @@
+title: Hero ribbons
+status: draft
+# collated: true
+# default: Text-hero-text-sidebar
+# variants:
+#   - name: Text-hero-bullet-sidebar
+#     context:
+#       className:
+#       text:
+#   - name: Text-hero-image-sidebar
+#     context:
+#       className:
+#       text:
+#   - name: Map-hero-text-sidebar
+#     context:
+#       className:
+#       text:

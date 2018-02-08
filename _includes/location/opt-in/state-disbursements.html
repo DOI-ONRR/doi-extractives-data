@@ -10,6 +10,15 @@
   {{ page.state_disbursements | liquify | markdownify }}
 {% endif %}
 
+<h4>Distribution of {{ state_name }} state revenues ({{ revenue_year }})</h4>
+
+<p>
+  In {{ revenue_year }}, the state of
+  {{ state_name }} distributed
+  <strong>{{ revenue_total | default: 0 | intcomma_dollar }}
+  in state revenue from natural resource extraction</strong> to state and local funds.
+</p>
+
 <table is="bar-chart-table" class="table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
@@ -39,7 +48,7 @@
           {{ fund_name }}
         {% endif %}
       </td>
-      <td data-value="{{ fund_dollars }}"
+      <td class="numeric" data-value="{{ fund_dollars }}"
         data-year-values='{{ fund_sources.All | jsonify }}'>
         {{ fund_dollars | default: 0 | intcomma_dollar }}
       </td>

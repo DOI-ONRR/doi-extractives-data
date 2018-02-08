@@ -187,7 +187,7 @@ selector: list
           <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Leasing process: offshore oil, gas, and sulphur</a></h4>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Leasing process: offshore oil, gas, and sulfur</a></h4>
           <p>Understand the details of the leasing process for offshore liquid minerals.</p>
           <p><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Learn about offshore leases</a></p>
         </div>
@@ -236,4 +236,4 @@ selector: list
   </div>
 </section>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/public/js/narrative.min.js" charset="utf-8"></script>

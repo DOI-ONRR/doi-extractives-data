@@ -16,9 +16,9 @@ make site-data
 ## Handling CSVs and TSVs
 Much of the data that we encounter is made available to us as a Microsoft Excel document. If this is the case, the most reliable way to convert this data to a functional .tsv is as follows:
 1. "Save as" a .csv file
-2. Convert that file to a .tsv using the `csv_tsv.rb` ruby script:
+2. Convert that file to a .tsv using the `scripts/csv_tsv.rb` ruby script:
 ```
-ruby csv_tsv.rb path/to/csv.csv /path/to/new/tsv.tsv
+ruby scripts/csv_tsv.rb path/to/csv.csv /path/to/new/tsv.tsv
 ```
 
 **Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.

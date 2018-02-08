@@ -1,0 +1,21 @@
+title: Button
+status: blocked
+collated: true
+default: primary
+variants:
+  - name: primary
+    context:
+      className: button-primary
+      text: Primary button
+  - name: secondary
+    context:
+      className: button-secondary
+      text: Secondary button
+  - name: tertiary
+    context:
+      className: button-tertiary
+      text: Tertiary button
+  - name: disabled
+    context:
+      className: button-disabled
+      text: Disabled button

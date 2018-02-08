@@ -1,0 +1,81 @@
+/*Global*/
+
+@import 'variables';
+
+.label-hero {
+  font-family: monospace;
+  font-size: 2rem;
+  color: #323c42;
+}
+
+.label-primary {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5c737f;
+}
+
+.label-secondary {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #5c737f;
+}
+
+.preview {
+  margin: 1rem;
+}
+
+/*Colors*/
+
+.swatch {
+  float: left;
+  margin: 8px 8px 32px;
+}
+
+.swatch-color {
+  height: 9rem;
+  width: 9rem;
+  margin-bottom: 6px;
+}
+
+.icon-ok {
+  content: url('../img/icons/icon-check.svg');
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  vertical-align: bottom;
+}
+
+.icon-no {
+  content: url('../img/icons/icon-no.svg');
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  vertical-align: bottom;
+}
+
+/*Grid*/
+
+.column {
+  background-color: #a7bcc7;
+  margin-bottom: 24px;
+  position: relative;
+  padding: 1rem;
+}
+
+
+/*Icons*/
+
+.wrapper-padded-float {
+  float: left;
+  padding: 1rem;
+}
+
+.icon {
+  text-align: center;
+  font-size: 3rem;
+}

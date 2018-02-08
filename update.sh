@@ -10,6 +10,3 @@ fi
 
 ${NPM_CMD} install
 bundle install
-
-cd styleguide-template
-${NPM_CMD} install

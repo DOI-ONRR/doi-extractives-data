@@ -1,5 +1,5 @@
 ---
-title: 'Offshore Oil, Gas, and Sulphur | Life of a Lease'
+title: 'Offshore Oil, Gas, and Sulfur | Life of a Lease'
 title_display: The leasing process for offshore oil, gas, and sulfur
 layout: content
 nav_description: Jump to a section

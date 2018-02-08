@@ -35,6 +35,8 @@ nav_items:
         title: Exports
       - name: jobs
         title: Jobs
+  - name: contact-us
+    title: Contact us
 selector: list
 description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
 tag:
@@ -47,10 +49,8 @@ tag:
 
 {% include selector.html %}
 
-# Revenue
-
+## Revenue
 --------------------------------------------------------------------------------
-
 <ul class="list-sections list-unstyled">
     <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="link-no_under"><h3 id="federal-revenue-by-location">
@@ -95,7 +95,7 @@ tag:
 
 </ul>
 
-# Production
+## Production
 
 --------------------------------------------------------------------------------
 
@@ -118,7 +118,7 @@ tag:
 
 </ul>
 
-# Economic impact
+## Economic impact
 
 --------------------------------------------------------------------------------
 
@@ -178,7 +178,7 @@ tag:
         </tr>
       </tbody>
     </table>
-    <p>The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
+    <p>The best way to get this data is from the <a href="http://www.bls.gov/cew/datatoc.htm">Quarterly Census of Employment and Wages</a>. You can download CSVs as single files and select "annual averages" (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
     <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
     </a>
 
@@ -188,3 +188,9 @@ tag:
     </a>
   </li>
 </ul>
+
+## Contact us
+
+--------------------------------------------------------------------------------
+
+{% include contact.html %}

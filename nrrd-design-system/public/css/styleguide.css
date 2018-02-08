@@ -1,0 +1,23 @@
+.swatch {
+  float: left;
+  margin: 8px 8px 32px;
+}
+
+.swatch-color {
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 6px;
+}
+
+.label-primary {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: $black-light;
+}
+
+.label-secondary {
+  font-family: monospace;
+  font-size: 1rem;
+  color: $gray-dark;
+}

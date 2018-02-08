@@ -1,0 +1,57 @@
+<!-- <div class="{{ className }}">{{ text }}</div> -->
+
+<div class="container-left-4 container-margin">
+  <div>
+    <label>Selector call to action:</label>
+    <select>
+      <option>Choose one</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+</div>
+
+  <div class="container-margin">
+    <section class="year-switcher-section">
+    <div class="pre-sticky"></div><h3 class="h3-bar sticky sticky-header-wrapper flex-row stuck">
+     <span class="flex-row-flex">Production on federal land nationwide</span>
+    <select class="chart-selector flex-row-icon">
+     <option value="2016" selected="">2016</option>
+     <option value="2015">2015</option>
+     <option value="2014">2014</option>
+     <option value="2013">2013</option>
+     <option value="2012">2012</option>
+     <option value="2011">2011</option>
+     <option value="2010">2010</option>
+     <option value="2009">2009</option>
+     <option value="2008">2008</option>
+     <option value="2007">2007</option>
+    </select>
+  </div>
+
+  <div class="container-left-4 container-margin">
+    <label>State selector call to action:</label>
+    <select
+      id="location-selector"
+      class="select-dark-gray"
+      onchange="window.location = '{{ site.baseurl }}' + this.value">
+
+      {% if include.default %}
+        <option value="" disabled selected>{{ include.default }}</option>
+      {% endif %}
+      {% if include.nationwide %}
+        <option value="{{ include.nationwide_url }}">{{ include.nationwide_title }}</option>
+      {% endif %}
+      <optgroup label="States">
+        {% for state in site.states %}
+        <option value="{{ state.url }}">{{ state.title }}</option>
+        {% endfor %}
+      </optgroup>
+      <optgroup label="Offshore Regions">
+        {% for region in site.offshore_regions %}
+        <option value="{{ region.url }}">{{ region.title }}</option>
+        {% endfor %}
+      </optgroup>
+    </select>
+  </div>
+</div>

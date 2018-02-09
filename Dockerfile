@@ -1,4 +1,4 @@
-FROM ruby:2.2.3
+FROM ruby:2.5.0
 
 # https://nodejs.org/en/download/package-manager/
 

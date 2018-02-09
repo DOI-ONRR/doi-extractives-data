@@ -74,7 +74,7 @@ exclude:
 include:
   - /build.log
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 

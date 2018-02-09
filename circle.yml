@@ -1,5 +1,8 @@
 ## Customize the test machine
 machine:
+  pre:
+    - sudo rm -rf /home/travis
+    - sudo ln -s /home/ubuntu /home/travis
   node:
     version: 5.12.0
   ruby:

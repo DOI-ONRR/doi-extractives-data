@@ -38,14 +38,14 @@ nav_items:
   - name: contact-us
     title: Contact us
 selector: list
-description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
+description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 tag:
 - Data
 - Downloads
 - Documentation
 ---
 
-> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
+> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 
 {% include selector.html %}
 

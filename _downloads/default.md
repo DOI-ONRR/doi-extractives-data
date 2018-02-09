@@ -133,7 +133,7 @@ tag:
 
   <li class="downloads-download_links">
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" class="link-no_under"><h3 id="exports">Exports</h3></a>
-    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state from 2011-2014 by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
+    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">Go to U.S. Census exports data page &#8594;
     </a>
   </li>

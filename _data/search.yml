@@ -4066,12 +4066,12 @@ with respect to projected revenues, resources, accrued equities, and expenditure
 #   - Management
 #   - Improvement
 
-# - title: The Office of Management and Budget, OMB Circular 123
-#   url: https://obamawhitehouse.archives.gov/omb/circulars_a123_rev
-#   description: "OMB Circular No. A-123 defines management's responsibility for internal control in Federal agencies. A re-examination of the existing internal control requirements for Federal agencies was initiated in light of the new internal control requirements for publicly-traded companies contained in the Sarbanes-Oxley Act of 2002. Circular A-123 and the statute it implements, the Federal Managers’ Financial Integrity Act of 1982, are at the center of the existing Federal requirements to improve internal control"
-#   tag:
-#   - OMB
-#   - A-123
+- title: The Office of Management and Budget, OMB Circular 123
+  url: https://obamawhitehouse.archives.gov/omb/circulars_a123_rev
+  description: "OMB Circular No. A-123 defines management's responsibility for internal control in Federal agencies. A re-examination of the existing internal control requirements for Federal agencies was initiated in light of the new internal control requirements for publicly-traded companies contained in the Sarbanes-Oxley Act of 2002. Circular A-123 and the statute it implements, the Federal Managers’ Financial Integrity Act of 1982, are at the center of the existing Federal requirements to improve internal control"
+  tag:
+  - OMB
+  - A-123
 
 - title: SEC Form 10-K
   url: http://www.sec.gov/answers/form10k.htm

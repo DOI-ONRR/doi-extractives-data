@@ -57,7 +57,8 @@ tag:
     Federal revenue by location</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by calendar year (CY) and fiscal year (FY).</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right">Data and documentation
+      </object>
     </a>
   </li>
 

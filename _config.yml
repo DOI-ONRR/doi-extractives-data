@@ -70,6 +70,7 @@ exclude:
   - maps/land/*.json
   - serve*
   - re-serve*
+  - vendor
 
 include:
   - /build.log

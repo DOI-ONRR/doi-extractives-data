@@ -115,7 +115,8 @@ tag:
     <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
     <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2007 to 2016 by state and county.</p>
     <a href="{{site.baseurl}}/downloads/federal-production/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
+      </object>Data and documentation
     </a>
   </li>
 

@@ -2,6 +2,7 @@
 title: How it works
 layout: default
 permalink: /how-it-works/
+redirect_from: /how-it-works/production/
 nav_items:
   - name: introduction
     title: Top

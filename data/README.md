@@ -1,4 +1,4 @@
-# EITI Data
+# NRRD data
 This directory contains all of the input data, scripts for parsing and
 transforming them, and the resulting ["output" files in the _data directory](_data/). These tools also use
 [Node](https://nodejs.org/), and the dependencies are managed with

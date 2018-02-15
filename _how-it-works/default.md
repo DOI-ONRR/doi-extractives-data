@@ -7,7 +7,9 @@ nav_items:
   - name: introduction
     title: Top
   - name: ownership
-    title: Natural resource ownership
+    title: Land ownership
+  - name: resources
+    title: Natural resources
   - name: laws
     title: Laws and regulations
   - name: tribal-overview
@@ -56,7 +58,7 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="ownership" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
+      <h2 id="resources" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/fossil-fuels/">Fossil fuels</a></h3>

@@ -11,11 +11,10 @@
     "node": ">=8"
   },
   "scripts": {
+    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
     "build": "rm -rf _site; bundle exec jekyll build",
     "federalist": "webpack && npm run release-styleguide",
-    "start": "bundle exec jekyll serve --incremental",
     "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
-    "restart": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",

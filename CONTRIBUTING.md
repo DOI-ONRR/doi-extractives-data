@@ -36,6 +36,7 @@ To get up and running with Docker, run the following in the project directory.
 
 ```
 docker-compose build
+docker-compose run --rm jekyll bash scripts/update-deps.sh
 docker-compose up
 ```
 

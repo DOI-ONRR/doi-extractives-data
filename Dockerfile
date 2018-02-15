@@ -5,12 +5,8 @@ FROM circleci/ruby:2.2-node
 USER root
 
 WORKDIR /doi
-COPY package*.json /doi/
-COPY Gemfile* /doi/
 
 RUN apt-get update && \
-    apt-get install -y sqlite3 && \
-    bundle install && \
-    npm install
+    apt-get install -y sqlite3
 
 ENV PATH "$PATH:./node_modules/.bin"

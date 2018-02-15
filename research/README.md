@@ -76,7 +76,7 @@ Resource: [My Best Advice for Conducting User Interviews](https://whitneyhess.co
 
 ### Set up supporting documents
 
-- Spreadsheet of participants, with codenames and columns to track whether they’ve been contacted, interviewed, thanked, etc. Remember, **this is Personally Identifiable Information** (or PII): make sure this data is store someplace appropriate (NOT GitHub), and only the core research team has access.
+- Spreadsheet of participants, with codenames and columns to track whether they’ve been contacted, interviewed, thanked, etc. Remember, **this is Personally Identifiable Information** (or PII): make sure this data is stored someplace appropriate (NOT GitHub), and only the core research team has access.
 - Folder for research notes, with blank/template notes documents
     - Never use real names in these documents
     - Make sure permissions are restricted to core research team
@@ -104,7 +104,7 @@ During research sessions, users are doing us a favor. Do whatever you can to ens
 
 - Schedule a little more time than you think you'll need — it can take a few minutes to get everyone on the line, or you may have an especially chatty participant. An extra 15 minutes can keep it from feeling rushed.
 - Make sure calendar invites are clear, both to users and your fellow researchers (for PII-protection and clarity, it sometimes makes sense to use separate team-facing and user-facing invites).
-- Send the correct docs to notetakers ahead of time, and make sure they know who they are.
+- Send the correct docs to notetakers ahead of time, and make sure they know their role.
 - Ask any research team members to show up 2-5 minutes early.
 - Test your call-in line, screen sharing tools, or video conference before your first session.
 - Confirm with participants that they’ll be able to use conferencing, video, or screen sharing tools, and come up with a backup plan if they can’t.
@@ -134,7 +134,7 @@ Resource: [User Interviews: Bias and How to Reduce It](https://www.juliemyoung.c
 After you’ve completed all sessions, it’s time to rigorously synthesize what you heard and learned. Synthesis can involve different activities, but often includes:
 
 - Time for all research participants to collaboratively gather insights from each session into a single document/space (For instance, this might mean pulling each key takeaway onto a sticky note on a Mural board.)
-- Some way to track either individual users (i.e. each user gets a different color sticky) or user groups (i.e. each major user group gets a color)
+- Some way to track either individual users (e.g. each user gets a different color sticky) or user groups (e.g. each major user group gets a color)
 - Grouping, sorting, and discussion:
     - You want the team to work through the big themes, notice which things were heard in multiple sessions, and identify any outliers.
     - This is important to do collaboratively for a few reasons: to make this work visible to the partner, to build consensus within the team, to harness the perspectives of different listeners, and to correct for biases that can arise (especially if not every research team member was in every interview).

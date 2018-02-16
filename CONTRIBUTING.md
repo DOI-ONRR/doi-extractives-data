@@ -22,6 +22,46 @@ To ensure a welcoming environment for our projects, our staff follows the [18F C
 
 ### Using Docker
 
+
+#### Setting up Docker Toolbox for Windows 7 - (Windows Only instructions)
+
+##### Prerequisites
+1. Have Docker Toolbox installed, which includes Oracle VM
+1. You will need admin rights to setup the docker environment. A registry key can disable the admin rights check. Ask IT to disable.
+1. Open Oracle Virtualbox and verify you only have 1 Host Only Adapter
+    1. In the Oracle Virtualbox, select Global Tools
+    2. Select Host Network Manager
+    3. You should be in the Properties view.
+    4. Verify only 1 or 0 adapters are listed.
+    5. if more than 1 disable extra adapters. You should only have 1 enabled to avoid potential errors later.
+1. Also install 'bash' by installing git for Windows.
+1. Clone the repo to a directory in C:\Users. This is automatically shared by Docker.
+
+##### Windows 7 specific steps
+1. Launch Docker Quick Start which should be a shortcut on the Desktop
+2. Once launched switch to your source code directory. "doi-extractives-data"
+3. Although Quick start creates a VM we are going to create our own.
+    * On windows the initial machine usually results in errors. Such as a certificate errors.
+    * Also the machine is not very powerful.
+    * Sometimes the docker terminal crashes. Just restart it if it does.
+4. Make sure you are in your source code directory and run the following commands
+
+```
+docker-machine rm default
+docker-machine ls   # lists all machines, verify default is not listed
+docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory 4046  default
+eval "$(docker-machine env default)"
+docker-machine ls   # Note your IP address
+```
+5. Your docker-machine should now be ready to setup the development environment
+
+ * If you get a certificate error run this command from your source code directory
+
+```
+docker-machine regenerate-certs default
+```
+
+##### Docker Development Environment Setup
 Instead of installing dependencies yourself and running different commands
 in separate terminal sessions, you should use Docker, which
 only requires installing [Docker Community Edition][docker]

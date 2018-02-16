@@ -1,4 +1,4 @@
-// scss-lint:disable NestingDepth SelectorDepth
+// scss-lint:disable  NestingDepth SelectorDepth
 [is=bar-chart-table] {
   $cell-padding: 5px;
   $border-radius: 3px;
@@ -52,7 +52,7 @@
   }
 
   th.numeric {
-    text-align: right;
+    text-align: left !important;
   }
 
   [data-value] {

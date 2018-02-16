@@ -4,10 +4,10 @@ services:
     build: .
     volumes:
       - .:/doi
-      - node-modules:/doi/node_modules/
       - root:/root/
-      - bundle:/usr/local/bundle/
       - public:/doi/public
+      - bundle:/usr/local/bundle/
+      - node-modules:/doi/node_modules
     environment:
       - EIA_API_KEY
       - LANG=C.UTF-8

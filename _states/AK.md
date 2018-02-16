@@ -75,7 +75,7 @@ state_saving_spending: |
 state_impact: |
     The extractive industries play an important role in Alaska’s economy. Pipeline transportation and construction also contribute significantly; in 2014, pipeline transportation contributed $4.1 billion to Alaska's GDP.
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2016, annual wages from extractive industries made up about 14% (or $1.8 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Alaska in 2016 was $128,912, or more than twice the statewide average wage of $52,343.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than other jobs. In 2016, annual wages from extractive industries made up about 14% (or $1.8 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Alaska in 2016 was $128,912, or more than twice the statewide average wage of $52,343.
 ---
 
 <!-- State governance -->

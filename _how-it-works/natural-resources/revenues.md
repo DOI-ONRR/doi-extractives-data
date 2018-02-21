@@ -47,7 +47,7 @@ In general, companies pay bonuses, rents, royalties, or fees and penalties (if i
 
 Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.
 
-<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
+<img src="{{site.baseurl}}/public/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
 
 <h2 id="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 
@@ -101,7 +101,7 @@ The federal budget also includes annual estimates of the net revenue effects of 
 
 Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can [explore disbursement data here]({{ site.baseurl }}/explore/#federal-disbursements).
 
-<img src="{{site.baseurl}}/img/federal-budget-process.png" alt="Federal budget process. First, statute (federal statutes determine the maximum amount of funds that can be appropriated). Second, appropriation (Congress determines the amount that a given entity or agency will receive). Third, grant (recipient entities determine how much the funding will be allocated for use in their budgets). Finally, disbursement (recipient entities disburse funds over the course of the fiscal year for budgeted purposes)." class="article_img-80 u-margin-top">
+<img src="{{site.baseurl}}/public/img/federal-budget-process.png" alt="Federal budget process. First, statute (federal statutes determine the maximum amount of funds that can be appropriated). Second, appropriation (Congress determines the amount that a given entity or agency will receive). Third, grant (recipient entities determine how much the funding will be allocated for use in their budgets). Finally, disbursement (recipient entities disburse funds over the course of the fiscal year for budgeted purposes)." class="article_img-80 u-margin-top">
 
 ## Learn more
 

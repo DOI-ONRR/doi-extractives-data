@@ -1,4 +1,4 @@
-# EITI Data
+# NRRD data
 This directory contains all of the input data, scripts for parsing and
 transforming them, and the resulting ["output" files in the _data directory](_data/). These tools also use
 [Node](https://nodejs.org/), and the dependencies are managed with
@@ -20,6 +20,8 @@ Much of the data that we encounter is made available to us as a Microsoft Excel 
 ```
 ruby scripts/csv_tsv.rb path/to/csv.csv /path/to/new/tsv.tsv
 ```
+
+**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.
 
 **Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.
 

@@ -14,7 +14,7 @@ nav_items:
       - name: federal-lands
         title: Federal lands
       - name: state-and-local-lands
-        title: State and Local Lands
+        title: State and local Lands
       - name: indian-lands
         title: Indian lands
   - name: natural-resource-ownership

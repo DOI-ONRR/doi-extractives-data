@@ -89,7 +89,7 @@ The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides ge
 
 ### State laws and regulations
 
-Wyoming’s constitution includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2016%20Wyoming%20Statutes/2016%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu), Article 9, which created the Office of the Inspector of Mines and a school of mines, directs the legislature to provide for the development and operation of mines, and secures the right of action for injuries.
+Wyoming’s [constitution](http://legisweb.state.wy.us/statutes/compress/title97.docx) includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2017%20Wyoming%20Statutes/2017%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu), Article 9, which created the Office of the Inspector of Mines and a school of mines, directs the legislature to provide for the development and operation of mines, and secures the right of action for injuries.
 
 The [Wyoming Statutes Annotated](http://www.lexisnexis.com/hottopics/wystatutes/) have several sections that govern natural resource extraction, including:
 

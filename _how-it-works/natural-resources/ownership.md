@@ -10,18 +10,18 @@ nav_items:
     title: Land ownership
     subnav_items:
       - name: private-lands
-        title: Private Lands
+        title: Private lands
       - name: federal-lands
-        title: Federal Lands
+        title: Federal lands
       - name: state-and-local-lands
         title: State and Local Lands
       - name: indian-lands
-        title: Indian Lands
+        title: Indian lands
   - name: natural-resource-ownership
     title: Natural resource ownership
     subnav_items:
       - name: split-ownership
-        title: Split Ownership
+        title: Split ownership
 description: Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
 tag:
 - how it works
@@ -85,6 +85,6 @@ Natural resource ownership has historical roots in the 19th century, when the fe
 
 ### Split ownership
 
-Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/split_estate.html). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.
+Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/split-estate). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.
 
 When it comes to the natural resources found off the coast, the federal government and state governments split ownership. In general, states have primary authority and natural resource ownership in the three-mile area extending outward from their coasts. The federal government owns oil, gas, and minerals located in the submerged lands on the Outer Continental Shelf, which extend from the states’ offshore boundaries out to at least 200 nautical miles from the shore.

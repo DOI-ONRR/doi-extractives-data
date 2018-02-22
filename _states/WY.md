@@ -75,10 +75,7 @@ The [Wyoming Oil and Gas Conservation Commission](http://wogcc.state.wy.us/) ens
 * Performing orphan well plugging
 * Holding reclamation bonds on mine operations
 
-The [Wyoming Office of State Lands and Investments](http://lands.wyo.gov/home) leases, controls, and collects royalties from mineral extraction on state trust land. Publications include:
-
-* An [annual report (PDF)](http://slf-web.state.wy.us/osli/Reports/BusinessPlanFY15.pdf)
-* Information on leasing procedures, rental policy, and royalties for [specific mineral resources](http://lands.wyo.gov/minerals)
+The [Wyoming Office of State Lands and Investments](http://lands.wyo.gov/home) leases, controls, and collects royalties from mineral extraction on state trust land.
 
 The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) (DEQ) leads activities to conserve the environment and support responsible stewardship of Wyoming’s resources. DEQ’s permitting process covers all activities associated with mining, from exploration to reclamation commitments.
 

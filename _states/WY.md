@@ -108,7 +108,7 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The [Campbell County]({{ site.baseurl }}/case-studies/campbell/) case study provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The [Campbell County case study]({{ site.baseurl }}/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 #### Transportation costs

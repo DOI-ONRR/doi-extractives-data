@@ -5,6 +5,10 @@ transforming them, and the resulting ["output" files in the _data directory](_da
 [npm](https://www.npmjs.com/) in the parent directory's
 [package.json](../package.json).
 
+If you have not run the data scripts before, you'll need to start by creating a local `sqlite` database:
+
+1. `make db`
+
 To update the data that powers the site:
 
 1. Replace a dataset's "input" .tsv file

@@ -1,18 +1,17 @@
 '2013':
-  Oil (bbl):
+  Oil:
     Reported Royalties: 684766073.25
-  Gas (mcf):
+  Gas:
     Reported Royalties: 130635347.94
-  Coal (ton):
-    Reported Royalties: 78219384.97
-  Oil & Gas:
-    Other Revenues: 24238464.09
-    Rents: 2652683.99
   Coal:
+    Reported Royalties: 78219384.97
     Other Revenues: 21965250.38
     Bonus: 10611353
     Rents: 106735.7
-  NGL (gal):
+  Oil & Gas:
+    Other Revenues: 24238464.09
+    Rents: 2652683.99
+  NGL:
     Reported Royalties: 12634562.58
   Other Products:
     Reported Royalties: 3009419.98
@@ -33,17 +32,16 @@
   Mining-Unspecified:
     Rents: 0
 '2014':
-  Oil (bbl):
+  Oil:
     Reported Royalties: 843652079.84
-  Gas (mcf):
+  Gas:
     Reported Royalties: 163372980.78
-  Coal (ton):
-    Reported Royalties: 69954977.22
   Coal:
+    Reported Royalties: 69954977.22
     Bonus: 19050000
     Other Revenues: 8516311.92
     Rents: 151501.42
-  NGL (gal):
+  NGL:
     Reported Royalties: 18002610.71
   Oil & Gas:
     Other Revenues: 8428763.36
@@ -67,13 +65,16 @@
   Mining-Unspecified:
     Rents: 0
 '2015':
-  Oil (bbl):
+  Oil:
     Reported Royalties: 601836549.94
-  Gas (mcf):
+  Gas:
     Reported Royalties: 135002710.26
-  Coal (ton):
+  Coal:
     Reported Royalties: 74385900.34
-  NGL (gal):
+    Bonus: 200000
+    Rents: 61149.42
+    Other Revenues: -9591654.26
+  NGL:
     Reported Royalties: 14974922.8
   Oil & Gas:
     Rents: 4063263.81
@@ -86,10 +87,6 @@
   Sand & Gravel:
     Other Revenues: 504584.25
     Rents: 528.4
-  Coal:
-    Bonus: 200000
-    Rents: 61149.42
-    Other Revenues: -9591654.26
   Hardrock:
     Other Revenues: 50000
   Phosphate:
@@ -101,13 +98,12 @@
   Mining-Unspecified:
     Rents: 0
 '2016':
-  Oil (bbl):
+  Oil:
     Reported Royalties: 379273890.75
-  Gas (mcf):
+  Gas:
     Reported Royalties: 96933336.93
-  Coal (ton):
-    Reported Royalties: 58492018.87
   Coal:
+    Reported Royalties: 58492018.87
     Bonus: 5500000
     Other Revenues: 5312783.22
     Rents: 210556.94
@@ -132,5 +128,5 @@
     Rents: 200
   Hardrock:
     Other Revenues: 0
-  NGL (gal):
+  NGL:
     Reported Royalties: -682964.66

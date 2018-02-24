@@ -75,24 +75,21 @@ The [Wyoming Oil and Gas Conservation Commission](http://wogcc.state.wy.us/) ens
 * Performing orphan well plugging
 * Holding reclamation bonds on mine operations
 
-The [Wyoming Office of State Lands and Investments](http://lands.wyo.gov/home) leases, controls, and collects royalties from mineral extraction on state trust land. Publications include:
-
-* An [annual report (PDF)](http://slf-web.state.wy.us/osli/Reports/BusinessPlanFY15.pdf)
-* Information on leasing procedures, rental policy, and royalties for [specific mineral resources](http://lands.wyo.gov/minerals)
+The [Wyoming Office of State Lands and Investments](http://lands.wyo.gov/home) leases, controls, and collects royalties from mineral extraction on state trust land.
 
 The [Wyoming Department of Environmental Quality](http://deq.wyoming.gov/) (DEQ) leads activities to conserve the environment and support responsible stewardship of Wyoming’s resources. DEQ’s permitting process covers all activities associated with mining, from exploration to reclamation commitments.
 
 * The [Air Quality Division](http://deq.wyoming.gov/aqd/) issues air quality permits, particularly in the Upper Green River Basin.
 * The [Water Quality Division](http://deq.wyoming.gov/wqd/) works to ensure the proper disposal of wastewater, and monitors water quality. It also permits underground injections of wastewater, reclaims discharge impoundments related to coal bed methane production, and works with the Oil and Gas Conservation Commission and Land Quality Division to regulate underground wastewater injection through the [Underground Injection Control Program](http://deq.wyoming.gov/wqd/underground-injection-control/). The Water Quality Division also maintains its own list of [rules and regulations](http://deq.wyoming.gov/wqd/resources/rules-regs/).
 * The [Solid and Hazardous Waste Division](http://deq.wyoming.gov/shwd/) inspects hazardous waste storage and disposal.
-* The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes an [annual report (PDF)](http://deq.wyoming.gov/media/uploads/admin/2016-annual-report.pdf) that includes bond amounts.
+* The [Land Quality Division](http://deq.wyoming.gov/lqd/) regulates surface mining operations and surface operations for underground mines, works to ensure reclamation following mining, establishes reclamation bond amounts, and holds reclamation bonds on mine operations. It publishes [annual reports](http://deq.wyoming.gov/admin/resources/annual-report-and-strategic-plan/) that include bond amounts.
 * The [Abandoned Mine Land Division](http://deq.wyoming.gov/aml/) administers the federal AML program for coal and select hardrock reclamation projects.
 
 The [Wyoming State Geological Survey](http://www.wsgs.wyo.gov/) also provides geological information about natural resources.
 
 ### State laws and regulations
 
-Wyoming’s constitution includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2016%20Wyoming%20Statutes/2016%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu), Article 9, which created the Office of the Inspector of Mines and a school of mines, directs the legislature to provide for the development and operation of mines, and secures the right of action for injuries.
+Wyoming’s [constitution](http://legisweb.state.wy.us/statutes/compress/title97.docx) includes an [article governing mining](http://legisweb.state.wy.us/NXT/gateway.dll/2017%20Wyoming%20Statutes/2017%20Constitution/1/10?f=templates&fn=default.htm&vid=Publish:10.1048/Enu), Article 9, which created the Office of the Inspector of Mines and a school of mines, directs the legislature to provide for the development and operation of mines, and secures the right of action for injuries.
 
 The [Wyoming Statutes Annotated](http://www.lexisnexis.com/hottopics/wystatutes/) have several sections that govern natural resource extraction, including:
 
@@ -111,7 +108,7 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The [Campbell County]({{ site.baseurl }}/case-studies/campbell/) case study provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The [Campbell County case study]({{ site.baseurl }}/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 #### Transportation costs

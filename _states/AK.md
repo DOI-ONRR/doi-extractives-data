@@ -28,7 +28,7 @@ state_optin_intro: |
 state_production: |
     Most of Alaska's crude oil production takes place in the [North Slope Borough]({{ site.baseurl }}/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
 
-    About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the [congressional report (PDF)](http://www.ferc.gov/legal/staff-reports/2016/angta-twenty-first.pdf).
+    About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the Federal Energy Regulatory Commission's [Alaska Natural Gas Transportation Projects](https://www.ferc.gov/industries/gas/indus-act/angtp.asp).
 
     **Nonenergy minerals:** For details about nonenergy mineral extraction, see the [USGS Minerals Yearbook for Alaska](http://minerals.usgs.gov/minerals/pubs/state/ak.html).
 
@@ -59,19 +59,13 @@ state_revenue_sustainability: |
 state_tax_expenditures: |
     Alaska had four tax expenditures claimed in 2016 that were directly related to oil and gas extraction and totaled at least $1 million each. Together, these four tax expenditures reduced state or local revenue by a total of $580 million. The expenditure credits and per taxable barrel credits each accounted for 95% of total expenditures, at $495 million and $56 million respectively. The Alaska Department of Revenue outlines tax expenditures in its [Revenue Sources Book (PDF)](http://tax.alaska.gov/programs/documentviewer/viewer.aspx?1321r).
 state_disbursements: |
-    [State agencies](#state-agencies) distribute revenues according to [Alaska law](http://www.legis.state.ak.us/basis/folio.asp), which is defined by the legislature. For more information about state disbursements, see the following:
-
-    * [Governor’s Budget Priorities (PDF)](https://www.omb.alaska.gov/ombfiles/15_budget/PDFs/15_Governor's_Budget_Priorities.pdf)
-    * [Department of Revenue Annual Report](http://www.tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2015)
-    * [Enacted 2015 Fiscal Summary](https://www.omb.alaska.gov/html/budget-report/fy-2015-budget/enacted.html)
+    [State agencies](#state-agencies) distribute revenues according to [Alaska law](http://www.legis.state.ak.us/basis/folio.asp), which is defined by the legislature. See Alaska's [Office of Management and Budget](https://www.omb.alaska.gov/) for budget priorities and details.
 state_saving_spending: |
     The state of Alaska saves about 37% of royalties and 27% of production taxes. (Royalties, production taxes, and property taxes are Alaska’s three largest sources of revenue from natural resource extraction.) Most of Alaska’s saved revenue goes to one of these funds:
 
     **The [Alaska Permanent Fund](http://www.apfc.org/home/Content/home/index.cfm) (APF)** is a permanent natural resource trust fund used to pay citizen dividends, manage inflation, and support the general fund. The Alaska constitution requires that 25% of mineral-related income and any additional legislative appropriations be placed in the APF. In August 2017, the fund’s market value was $60 billion.
 
     Alaska citizens receive annual dividends from the APF. In response to budget conditions, the Governor of Alaska exercised his line-item veto power to [cut the total dividend payout](http://gov.alaska.gov/newsroom/2016/06/governor-walker-vetoes-1-29-billion-to-preserve-state-savings/) to $650 million, which reduced individual checks to $1,022 for each of its 635,997 eligible residents in 2016. This is down from $2,072 in 2015, and also below the ten-year average payout of $1,424.
-
-    For 2016, in response to budget conditions, the Governor of Alaska exercised his line-item veto power to [cut the total dividend payout](http://gov.alaska.gov/newsroom/2016/06/governor-walker-vetoes-1-29-billion-to-preserve-state-savings/) to $696 million, which reduced individual checks to $1,000 per person. The Alaska state legislature is also considering two senate bills proposing changes to the APF: [SB114](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20114&session=29) and [SB128](http://www.legis.state.ak.us/basis/get_bill.asp?bill=SB%20128&session=29).
 
     To learn more, see the APF Dividend Division's [annual reports](https://pfd.alaska.gov/Division-Info/Annual-Reports) or [financial history and projections (PDF)](https://apfc.org/report-archive/#41-history-and-projections).
 
@@ -81,7 +75,7 @@ state_saving_spending: |
 state_impact: |
     The extractive industries play an important role in Alaska’s economy. Pipeline transportation and construction also contribute significantly; in 2014, pipeline transportation contributed $4.1 billion to Alaska's GDP.
 
-    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than jobs. In 2016, annual wages from extractive industries made up about 14% (or $1.8 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Alaska in 2016 was $128,912, or more than twice the statewide average wage of $52,343.
+    Because of relatively high annual wages (compared to other industries), extractive industries contribute a greater percentage of personal income than other jobs. In 2016, annual wages from extractive industries made up about 14% (or $1.8 billion) of total annual wages in the state. The average annual wage for extractive-industry jobs in Alaska in 2016 was $128,912, or more than twice the statewide average wage of $52,343.
 ---
 
 <!-- State governance -->

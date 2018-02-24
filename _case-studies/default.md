@@ -39,7 +39,7 @@ selector: list
 
 ## Revenue sustainability
 
-Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Revenue sustainability is a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^1] However, when it comes to managing this critical factor, there are two challenges localities need to address:
+Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of revenues local governments receive due to natural resource extraction. Revenue sustainability is a critical factor in making natural resource wealth &ldquo;[an engine for sustainable economic growth.](https://eiti.org/document/eiti-principles)&rdquo; However, when it comes to managing this critical factor, there are two challenges localities need to address:
 
 1. The sustainability of revenue over time, given that revenue fluctuates with commodity prices, and fossil fuels and hardrock mineral deposits are finite or may not be economically extractable based on current technology.
 2. The net sustainability of revenue given the fiscal benefits of increased revenue from extractive activities and the fiscal costs of increased government expenditures necessary to support extractive activities.
@@ -53,15 +53,15 @@ At the county level, revenue received from extractive activities takes many form
 * **Property taxes:** Taxes paid by owners of oil and gas or mineral properties to the county government based on the value of the property.
 * **Sales and use taxes:** Though not a direct result of natural resource extraction, revenue from sales and use taxes can rise dramatically during resource extraction booms when population and economic activity increase.
 * **State transfer payments:** Revenue transferred to the county by the state, from sources such as **severance taxes** (paid by extractive industries to the state based on the volume or value of the resources extracted) and **lease payments** (such as bonuses, rents, and royalties, paid by extractive industries to a public land and mineral owner, which might be the federal government or the state).
-* **County production taxes:** Severance taxes or other payments paid by extractive industries to the county based on the volume or value of resources extracted, or per lease terms if the county is the landowner.
+* **County production taxes:** Severance taxes or other payments paid by extractive industries to the county based on the volume or value of resources extracted, or per-lease terms if the county is the landowner.
 
 ## Costs
 
-Local governments often make financial investments in their communities to support extractive industries. Costs vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted. In some circumstances, these costs are outweighed by the influx of revenue, while in other cases costs can result in net negative fiscal effects on local governments.[^2] Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:
+Local governments often make financial investments in their communities to support extractive industries. Costs vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted. In some circumstances, [these costs are outweighed by the influx of revenue, while in other cases costs can result in net negative fiscal effects on local governments](http://dukespace.lib.duke.edu/dspace/handle/10161/9216). Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:
 
 * **Transportation:** The cost of constructing new transportation infrastructure (such as roads or trains) or repairing current infrastructure due to heavy industry use.
 * **Water:** The cost of constructing new water or sewer infrastructure (such as water pipelines or treatment plants) to meet the needs of extractive industries, upgrading current infrastructure, or treating additional wastewater from extractive activities in the public wastewater treatment system.
-* **Reclamation:** The cost of returning mines or oil and gas lands to their state prior to disturbance, including physical site stability, ecosystem functions, and long-term site monitoring. (Today’s companies are legally responsible for current reclamation costs and pay Surface Mining Control and Reclamation Act fees towards historic abandoned mines.)
+* **Reclamation:** The cost of returning mines or oil and gas lands to their state prior to disturbance, including physical site stability, ecosystem functions, and long-term site monitoring. (Today’s companies are legally responsible for current reclamation costs and pay Surface Mining Control and Reclamation Act fees toward historic abandoned mines.)
 * **Emergency services:** The cost of new emergency services (such as firehouses, ambulances, or chemical spill equipment) needed to support extractive industries and protect the public from possible health and safety hazards.
 
 There are additional fiscal benefits and burdens associated with extractive activities beyond those addressed here. For example, a local government may receive in-kind revenue from extractive industries, such as payment for a new public road that company employees will use to access work sites. Another fiscal cost might be additional government staff for managing public services that support extractive activities. While all are worthy of careful consideration by local communities and governments, these case studies focus on the revenue and costs defined above.
@@ -84,8 +84,3 @@ To learn more about the interactions between governments and extractive industri
 * Environment impact statements
 
 You can also request government data that isn’t online or otherwise available through a [Freedom of Information Act request](http://www.foia.gov/how-to.html).
-
-## Notes
-
-[^1]: EITI International Secretariat, [The EITI Standard (PDF)](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015, p. 9
-[^2]: Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014

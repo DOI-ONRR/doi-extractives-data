@@ -90,7 +90,7 @@ If you want to run commands like `npm`, `make`, or `sqlite3`, the easiest
 way to do this is by running a shell inside the main container:
 
 ```
-docker-compose run app bash
+docker-compose run jekyll bash
 ```
 
 Once you do this, you'll be in an interactive shell within the main

@@ -1,14 +1,15 @@
 {% assign _svg_path = include.svg | prepend: site.baseurl %}
+<text>{{ _svg_path }}</text>
 {% for region in site.offshore_regions %}
-    <a xlink:href="{{ site.baseurl }}{{ region.permalink }}"
+  <a xlink:href="{{ site.baseurl }}{{ region.permalink }}"
     href="{{ site.baseurl }}{{ region.permalink }}">
     <g class="state offshore-area feature" fill>
       <!--- FIXME: nix fill attribute -->
       <title>{{ region.title }}</title>
-      <use xlink:href="{{ _svg_path }}#{{ region.id }}"  aria-label="{{ region.title }}"></use>
+      <use xlink:href="{{ _svg_path }}#{{ region.slug }}"  aria-label="{{ region.title }}"></use>
     </g>
     </a>
   <g class="states mesh">
-    <use xlink:href="{{ _svg_path }}#{{ region.id }}-mesh"></use>
+    <use xlink:href="{{ _svg_path }}#{{ region.slug }}-mesh"></use>
   </g>
 {% endfor %}

@@ -72,7 +72,7 @@ While royalty rates can reach as high as 18.75%, and the federal corporate incom
 
 #### Royalty relief
 
-To incentivize companies to produce additional oil and gas on certain leases on the Outer Continental Shelf where extraction is anticipated to be unprofitable, the federal government may grant some lease holders royalty relief. Royalty relief means that these lease holders do not have to pay royalties on some amount of production, or they pay a smaller percentage of royalties, for the oil and gas they extract. There are four situations in which a lease holder may gain royalty relief:
+To create incentives for companies to produce additional oil and gas on certain leases on the Outer Continental Shelf where extraction is anticipated to be unprofitable, the federal government may grant some lease holders royalty relief. Royalty relief means that these lease holders do not have to pay royalties on some amount of production, or they pay a smaller percentage of royalties, for the oil and gas they extract. There are four situations in which a lease holder may gain royalty relief:
 
 * Leases in deep waters with depths greater than 200 meters in the Gulf of Mexico. (This type of relief has not been offered for several years, though existing leases do include it currently.)
 * Leases in shallow waters with depths under 400 meters for deep gas production
@@ -83,15 +83,9 @@ In some situations, if oil and gas prices rise above certain thresholds, lease h
 
 ### Tax expenditures
 
-Tax expenditures are [defined in the law](https://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2017-Revised.pdf) as “revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.” These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.
+Tax expenditures are defined in the law as “revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.” These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.
 
-The Treasury estimates the total dollar amount of each tax expenditure in a given year, and publishes a [report of these estimates](https://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2015.pdf):
-
-* **Fossil fuels:** For FY 2013, expensing of exploration and development costs for fuels, totaling $550 million, was the largest of five expenditures. See analysis and estimates of [fossil fuel tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#fossil-fuels)
-* **Renewable energy:** For FY 2013, the energy investment credit, totaling $2 billion, was the largest of four expenditures. The energy production credit was the second largest, totaling $1.7 billion. See analysis and estimates of [renewable energy tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#renewables)
-* **Nonenergy materials:** For FY 2013, the excess of percentage-over-cost depletion for nonenergy minerals, totaling $580 million, was the largest of two expenditures. See analysis and estimates of [nonenergy mineral tax expenditures.]({{ site.baseurl }}/how-it-works/revenues/tax-expenditures/#nonenergy)
-
-The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in [United States – Progress Report on Fossil Fuel Subsidies](https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf). When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, [Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government](https://obamawhitehouse.archives.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf). The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.
+The Treasury estimates the total dollar amount of each tax expenditure in a given year and publishes a [report of these estimates](https://www.treasury.gov/resource-center/tax-policy/Pages/Tax-Expenditures.aspx).
 
 ## After a payment, what happens to the revenue?
 
@@ -100,11 +94,3 @@ The federal budget also includes annual estimates of the net revenue effects of 
 Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can [explore disbursement data here]({{ site.baseurl }}/explore/#federal-disbursements).
 
 <img src="{{site.baseurl}}/img/federal-budget-process.png" alt="Federal budget process. First, statute (federal statutes determine the maximum amount of funds that can be appropriated). Second, appropriation (Congress determines the amount that a given entity or agency will receive). Third, grant (recipient entities determine how much the funding will be allocated for use in their budgets). Finally, disbursement (recipient entities disburse funds over the course of the fiscal year for budgeted purposes)." class="article_img-80 u-margin-top">
-
-## Learn more
-
-For more details about U.S. and international revenue standards, visit:
-
-* IRS, [Revenue Classification and Case Building System](http://www.irs.gov/irm/part4/irm_04-001-005.html)
-* International Monetary Fund, [Government Finance Statistics Manual 2014](http://www.imf.org/external/np/sta/gfsm/)
-* International Monetary Fund, [Code of Good Practices on Fiscal Transparency](https://www.imf.org/external/np/fad/trans/code.htm)

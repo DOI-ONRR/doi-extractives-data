@@ -32,7 +32,7 @@ tag:
 - Disbursements
 ---
 
-> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the [Office of Natural Resources Revenue](http://www.onrr.gov/), which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: [Land and Water Conservation Fund](https://www.doi.gov/lwcf) (LWCF) and [National Historic Preservation Act](http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm) (NHPA).
+> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the [Office of Natural Resources Revenue](http://www.onrr.gov/), which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: [Land and Water Conservation Fund](https://www.doi.gov/lwcf) (LWCF) and [National Historic Preservation Act](https://www.nps.gov/subjects/historicpreservation/national-historic-preservation-act.htm) (NHPA).
 
 Download fiscal year data:
 
@@ -49,7 +49,7 @@ We also have [notes on this data](https://github.com/18F/doi-extractives-data/wi
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian lands. It does not include privately-owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2014-2017. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2014-2017. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data publication
 
@@ -61,31 +61,31 @@ Laws treat revenues from offshore natural resources and onshore natural resource
 
 ### Onshore
 
-_U.S. Treasury._ Funds disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the US military, national parks, and schools.
+_U.S. Treasury_ Funds disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
 
-_States._ Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
+_States_ Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
 
-_Reclamation._ Established by Congress in 1902 to pay for Bureau of Reclamation projects, this fund supports the establishment of critical infrastructure projects like dams and power plants.
+_Reclamation_ Established by Congress in 1902 to pay for Bureau of Reclamation projects, this fund supports the establishment of critical infrastructure projects like dams and power plants.
 
-_American Indian Tribes._ ONRR disburses 100% of revenue collected from resource extraction on American Indian lands back to the Indian tribes and individual Indian landowners.
+_American Indian Tribes_ ONRR disburses 100% of revenue collected from resource extraction on American Indian lands back to the Indian tribes and individual Indian landowners.
 
-_Other._ Certain onshore funds are directed back to the federal agencies that administer these lands (e.g., BLM, US Fish and Wildlife Service, and US Forest Service) to help cover the agencies’ operational costs. The Ultra-Deepwater Research Program and the Mescal Settlement Agreement also receive $50 million each.
+_Other_ Certain onshore funds are directed back to the federal agencies that administer these lands (e.g., BLM, U.S. Fish and Wildlife Service, and U.S. Forest Service) to help cover the agencies’ operational costs. The Ultra-Deepwater Research Program and the Mescal Settlement Agreement also receive $50 million each.
 
 ### Offshore
 
-_U.S. Treasury._ The majority of offshore revenue is disbursed to the Treasury, which enters it into the General Fund, the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the US military, national parks, and schools.
+_U.S. Treasury_ The majority of offshore revenue is disbursed to the Treasury, which enters it into the General Fund, the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
 
-_Land and Water Conservation Fund._ This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.
+_Land and Water Conservation Fund_ This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.
 
-_Historic Preservation Fund._ This fund helps preserve US historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.
+_Historic Preservation Fund_ This fund helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.
 
-_States._ States receive federal Outer Continental Shelf revenue in two ways:
+_States_ States receive federal Outer Continental Shelf revenue in two ways:
 
 
-1. 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states; and
+1. 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states.
 2. 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.
 
-_Other._ Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover the agencies’ operational costs.
+_Other_ Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover the agencies’ operational costs.
 
 ## Contact us
 

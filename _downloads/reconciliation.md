@@ -6,7 +6,7 @@ title_display: Reconciliation
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
+description: As a part of USEITI, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 tag:
 - Data
 - Downloads
@@ -15,7 +15,7 @@ tag:
 - Reconciliation
 ---
 
-> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
+> As a part of the U.S. implementation of the {{ "EITI Standard" | term }}, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reported what it received. These figures were compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 
 Download calendar year data:
 
@@ -43,11 +43,11 @@ After the independent administrator compared company payments to government reve
 
 Several companies also allowed for corporate income tax reconciliation. Of the companies invited to participate, only C-corporations are eligible to report taxes.
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+<img src="{{ site.baseurl }}/public/img/reconciliation-taxes.png" alt="Chart of 2013 federal corporate income taxes reported: Thousands of companies large and small, $11.8 billion in corporate tax receipts, 41 applicable companies maximum, 12 companies reported net $190 million, comes from 2013 IRS statistics from Petroleum and coal products manufacturing and mining industries" class="article_img-60 u-margin-top">
 
 ## Scope
 
@@ -108,7 +108,7 @@ The MSG publishes meeting minutes and materials for all subcommittee and full MS
 
 The MSG identified that ONRR collects a majority of DOI’s extractive industries-related revenue. The MSG decided to use ONRR’s reported revenue as a proxy for DOI revenue to establish materiality thresholds for reporting. The MSG agreed on these thresholds because they would allow at least 80% of ONRR’s revenue to be in-scope for the reconciliation:
 
-- The MSG decided on a materiality threshold for the 2015 USEITI Report of $50 million total annual revenue reported to ONRR by a parent company, including its subsidiaries, which was presented and approved as part of the [USEITI candidacy application (PDF)](http://www.cbuilding.org/sites/default/files/USEITI_Candidacy_Application_Approved_0.pdf). A more detailed analysis of ONRR revenue data revealed that this $50 million threshold resulted in 84% of ONRR revenue being in-scope for the reconciliation.
+- The MSG decided on a materiality threshold for the 2015 USEITI Report of $50 million total annual revenue reported to ONRR by a parent company, including its subsidiaries, which was presented and approved. A more detailed analysis of ONRR revenue data revealed that this $50 million threshold resulted in 84% of ONRR revenue being in-scope for the reconciliation.
 - For the 2016 USEITI report, the MSG decided on a materiality threshold of ~$37.5 million total annual revenues reported to ONRR by a parent company, including its subsidiaries.
 
 DOI’s unilateral disclosure covers 100% of revenue from all companies operating within the U.S.
@@ -251,7 +251,7 @@ Three anticipated reasons for variance were:
 Based upon the type, magnitude, and likelihood of variances for in-scope revenue streams, a variance percentage threshold and a variance floor threshold were assigned to each revenue stream.
 
 
-* _Variance percentage threshold:_ If the variance amount when divided by the amount reported by the government was greater than the variance percentage for that revenue stream, the IA considered the variance to exceed the threshold, and then assessed whether the variance floor threshold applied.
+* _Variance percentage threshold:_ If the variance amount when divided by the amount reported by the government was greater than the variance percentage for that revenue stream, the IA considered the variance to exceed the threshold and then assessed whether the variance floor threshold applied.
 * _Variance floor threshold:_ This was the minimum dollar threshold for a variance and only applied if a variance exceeded the variance percentage threshold. If the variance exceeded the variance percentage threshold and exceeded the variance floor threshold, the IA performed further evaluation of the variance.
 
 The table below outlines the Margin of Variance thresholds applied by the IA, which were approved by the MSG.
@@ -331,4 +331,3 @@ Where variances were greater than margin of variance thresholds, the IA requeste
 After reviewing the data provided by both the government entity and the reporting company, if the IA was able to identify the potential source of the variance, the IA provided an explanation. If the IA was not able to identify the potential source of the variance, the IA provided an explanation that the source of the variance could not be resolved.
 
 Both reporting companies and government entities were given the opportunity to revise their reported amounts when the reconciliation process identified the explanation for a variance, but restatement was not required. If a reporting company or government entity resubmitted revised numbers for a revenue stream, only the final submitted numbers are shown in the reconciliation results. In many cases, neither the government nor company chose to resubmit the numbers because the variance resulted from different business systems rather than a mistake.
-

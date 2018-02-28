@@ -53,10 +53,10 @@ nav_items:
 ---
 
 {% assign state_name = page.title %}
-{% assign state_id = page.id %}
+{% assign state_id = page.slug %}
 {% assign locality_name = page.locality_name | default:'County' %}
 
-{% assign state_ref = page.id | upcase %}
+{% assign state_ref = page.slug | upcase %}
 {% assign year = site.data.years.now | to_s %}
 {% assign default_year = year %}
 

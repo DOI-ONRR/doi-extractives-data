@@ -21,6 +21,8 @@ natural resource extraction. For **wage and salary data**, see the
    2015 data (which was still not released as of November, 2016),
    you should change both of the value to `2006-2015`.
 
+1. Also make sure to update [`years.yml`](_data/years.yml). In the above example you would set the value to `[2006, 2015]`. This isn't required for the make step but is required for generating the site.
+
 1. Next, run:
 
   ```sh

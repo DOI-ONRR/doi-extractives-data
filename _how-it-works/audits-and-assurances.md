@@ -19,7 +19,7 @@ selector: list
 
 > Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
 
-## Tracking and verifying company payments to government agencies in the U.S. extractive industries
+## Tracking and verifying payments
 
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
@@ -39,19 +39,18 @@ Companies and government agencies are each legally responsible for reporting acc
 - [OMB Circular No. A-123](https://obamawhitehouse.archives.gov/omb/circulars_a123_rev) prescribes responsibilities for establishing and maintaining effective internal controls and financial management systems.
 - The roles and responsibilities of each agency are governed by the [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf).
 - The [Government Accountability Office](http://www.gao.gov/) (GAO) publishes _Standards for Internal Control in the Federal Government_, also known as the [Green Book](http://www.gao.gov/greenbook/overview).
-- Audits are supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, also known as the [Yellow Book](http://www.gao.gov/yellowbook/overview).[^6]
+- Audits are supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, also known as the [Yellow Book](http://www.gao.gov/yellowbook/overview).
 - The [U.S. Standard General Ledger](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/ussgl_home.htm) provides a uniform chart of accounts and technical guidance for standardizing federal agency accounting to OMB and the U.S. Treasury.
-- Government audit results, like the [Independent Auditors' Report on the U.S. Department of the Interior Financial Statements for Fiscal Years 2015 and 2014](https://www.doioig.gov/reports/independent-auditors-report-us-department-interior-financial-statements-fiscal-years-2015) and [GAO Financial Audit: U.S. Government's Fiscal Years 2015 and 2014 Consolidated Financial Statements](http://www.gao.gov/products/GAO-16-357R), are publicly disclosed on an annual basis.
+- Department of the Interior audit results are publicly disclosed on an annual basis by the [Office of Inspector General](https://www.doioig.gov/reports).
 
 ### Federal revenue reporting
 
 Many federal agencies make their reports on payments received from U.S. extractive industries available publicly online:
 
-- [IRS publications online](https://www.irs.gov/publications/)
+- [IRS publications](https://www.irs.gov/publications/)
 - [Treasury: Combined statement of receipts, outlays, and balances](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm)
-- [Bureau of Land Management (BLM) publications](http://www.blm.gov/wo/st/en/info/blm-library/publications/blm_publications.html)
+- [Bureau of Land Management (BLM) publications](https://www.blm.gov/learn/blm-library/agency-publications)
 - [Office of Surface Mining Reclamation and Enforcement (OSMRE) resources](http://www.osmre.gov/resources/InformationFor.shtm)
-- [ONRR statistical information site](http://statistics.onrr.gov/)
 
 The U.S. government is subject to numerous laws governing data publication, including:
 

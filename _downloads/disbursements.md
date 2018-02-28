@@ -28,7 +28,6 @@ tag:
 - Data
 - Downloads
 - Documentation
-- USEITI data
 - Disbursements
 ---
 

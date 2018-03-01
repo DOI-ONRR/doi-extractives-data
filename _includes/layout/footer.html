@@ -22,11 +22,16 @@
 
       <div class="footer-bottom footer-bottom-right">
         <p class="footer-para footer-para-small">
-          Mail: Office of Natural Resources Revenue, Information and Data Management<br>
-          1849 C Street NW MS 5134, Washington, D.C. 20240
+          Office of Natural Resources Revenue, {{ site.data.contact.information_data_management.name }}<br>
+          {{ site.data.contact.information_data_management.street }}<br>
+          {{ site.data.contact.information_data_management.city }} {{ site.data.contact.information_data_management.zip }}<br>
+          <a href="mailto:{{ site.data.contact.information_data_management.email }}">{{ site.data.contact.information_data_management.email }}</a>
         </p>
       </div>
 
     </div>
   </div>
 </footer>
+
+
+<!--<p>Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at <a href="mailto:{{ site.data.contact.data_retrieval.email }}">{{ site.data.contact.data_retrieval.email }}</a>.</p>-->

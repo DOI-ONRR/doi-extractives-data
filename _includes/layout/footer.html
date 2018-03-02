@@ -8,7 +8,7 @@
 
       <div class="footer-bottom-left">
 	      <p class="footer-para_callout footer-para_callout-bigger">Built in the open</p>
-	      <p class="footer-para">This site (<a href="https://github.com/18F/doi-extractives-data/releases/{{ site.version }}" class="link-active-beta">{{ site.version }}</a>) is powered by open <a class="link-active-beta" href="{{ site.baseurl }}/downloads">data</a> and <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/">source code</a>. We welcome contributions and comments on <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/issues/new">GitHub</a>.</p>
+	      <p class="footer-para">This site (<a href="https://github.com/18F/doi-extractives-data/releases/{{ site.version }}" class="link-active-beta">{{ site.version }}</a>) is powered by <a class="link-active-beta" href="{{ site.baseurl }}/downloads">open data</a> and <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/">source code</a>. We welcome contributions and comments on <a class="link-active-beta" href="https://github.com/18F/doi-extractives-data/issues/new">GitHub</a>.</p>
 
         <p class="footer-para-small footer-para_last"><a href="https://www.doi.gov/" class="link-beta">Department of the Interior</a> | <a href="https://www.doi.gov/privacy" class="link-beta">Privacy Policy</a> | <a href="https://www.doi.gov/foia" class="link-beta">FOIA</a> | <a href="https://www.usa.gov/" class="link-beta">USA.gov</a></p>
 
@@ -25,13 +25,10 @@
           Office of Natural Resources Revenue, {{ site.data.contact.information_data_management.name }}<br>
           {{ site.data.contact.information_data_management.street }}<br>
           {{ site.data.contact.information_data_management.city }} {{ site.data.contact.information_data_management.zip }}<br>
-          <a href="mailto:{{ site.data.contact.information_data_management.email }}">{{ site.data.contact.information_data_management.email }}</a>
+          <a class="link-active-beta" href="mailto:{{ site.data.contact.information_data_management.email }}">{{ site.data.contact.information_data_management.email }}</a>
         </p>
       </div>
 
     </div>
   </div>
 </footer>
-
-
-<!--<p>Do you need {{ "ONRR" | term }} data that isn't here? Contact our {{ site.data.contact.data_retrieval.name }} team at <a href="mailto:{{ site.data.contact.data_retrieval.email }}">{{ site.data.contact.data_retrieval.email }}</a>.</p>-->

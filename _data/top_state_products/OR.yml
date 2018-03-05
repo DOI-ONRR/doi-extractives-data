@@ -178,3 +178,10 @@ revenue:
       value: 184162.15
       rank: 4
       percent: 1.4
+  '2017':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 134306
+      rank: 5
+      percent: 1

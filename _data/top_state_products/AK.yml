@@ -191,3 +191,10 @@ revenue:
       value: 4203296.31
       rank: 4
       percent: 1.1
+  '2017':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 23926326.04
+      rank: 3
+      percent: 2.5

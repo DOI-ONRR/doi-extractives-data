@@ -230,3 +230,10 @@ revenue:
       value: 563.95
       rank: 1
       percent: 100
+  '2017':
+    - product: Asphalt
+      name: null
+      units: null
+      value: 12556.2
+      rank: 1
+      percent: 100

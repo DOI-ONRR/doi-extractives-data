@@ -429,3 +429,16 @@ revenue:
       value: 11661.83
       rank: 3
       percent: 0.1
+  '2017':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 5052611.27
+      rank: 2
+      percent: 36
+    - product: Potassium
+      name: null
+      units: null
+      value: 5845.17
+      rank: 3
+      percent: 0.1

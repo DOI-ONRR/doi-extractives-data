@@ -166,3 +166,10 @@ revenue:
       value: 1078656.37
       rank: 2
       percent: 10
+  '2017':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 424095.72
+      rank: 2
+      percent: 4.1

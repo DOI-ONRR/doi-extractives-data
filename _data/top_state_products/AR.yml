@@ -63,3 +63,10 @@ revenue:
       value: 1514
       rank: 4
       percent: 0
+  '2017':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1574
+      rank: 4
+      percent: 0

@@ -1,5 +1,5 @@
 ---
-id: AL
+unique_id: AL
 title: Alabama
 FIPS: '01'
 

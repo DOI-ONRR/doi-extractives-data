@@ -1,5 +1,5 @@
 ---
-id: IL
+unique_id: IL
 title: Illinois
 FIPS: '17'
 

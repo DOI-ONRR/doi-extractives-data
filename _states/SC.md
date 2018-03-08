@@ -1,5 +1,5 @@
 ---
-id: SC
+unique_id: SC
 title: South Carolina
 FIPS: '45'
 

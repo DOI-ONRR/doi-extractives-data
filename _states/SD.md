@@ -1,5 +1,5 @@
 ---
-id: SD
+unique_id: SD
 title: South Dakota
 FIPS: '46'
 

@@ -13,20 +13,20 @@
 
     {% for _region in site.offshore_regions %}
       <g class="offshore states features">
-        <use xlink:href="{{ _offshore_svg }}#{{ _region.id }}"></use>
+        <use xlink:href="{{ _offshore_svg }}#{{ _region.unique_id }}"></use>
       </g>
 
-      {% if location_id == _region.id %}
+      {% if location_id == _region.unique_id %}
         <g class="offshore-area state feature">
-          <use xlink:href="{{ _offshore_svg }}#{{ _region.id }}"></use>
+          <use xlink:href="{{ _offshore_svg }}#{{ _region.unique_id }}"></use>
         </g>
       {% endif %}
     {% endfor %}
 
     {% for _state in site.states %}
-      {% if location_id == _state.id %}
+      {% if location_id == _state.unique_id %}
         <g class="state feature">
-          <use xlink:href="{{ _states_svg }}#state-{{ _state.id }}"></use>
+          <use xlink:href="{{ _states_svg }}#state-{{ _state.unique_id }}"></use>
         </g>
         {% break %}
       {% endif %}

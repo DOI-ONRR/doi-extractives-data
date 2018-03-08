@@ -1,5 +1,5 @@
 ---
-id: TX
+unique_id: TX
 title: Texas
 FIPS: '48'
 

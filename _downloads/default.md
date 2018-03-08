@@ -92,7 +92,6 @@ tag:
     <a href="{{site.baseurl}}/downloads/disbursements/">
       <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
     </a>
-    </a>
   </li>
 
 </ul>

@@ -687,3 +687,52 @@ revenue:
       value: 60.89
       rank: 2
       percent: 8.4
+  '2017':
+    - product: All
+      name: null
+      units: null
+      value: 204009740.02
+      rank: 3
+      percent: 2.9
+    - product: Gas
+      name: null
+      units: null
+      value: 66158190.22
+      rank: 3
+      percent: 6.7
+    - product: CO2
+      name: null
+      units: null
+      value: 47020213.1
+      rank: 1
+      percent: 96.4
+    - product: Coal
+      name: null
+      units: null
+      value: 33405552.17
+      rank: 3
+      percent: 6
+    - product: NGL
+      name: null
+      units: null
+      value: 23295018.75
+      rank: 3
+      percent: 10.2
+    - product: Sodium
+      name: null
+      units: null
+      value: 2140274.27
+      rank: 3
+      percent: 4.7
+    - product: Oil Shale
+      name: null
+      units: null
+      value: 320
+      rank: 1
+      percent: 50
+    - product: Helium
+      name: null
+      units: null
+      value: 33.68
+      rank: 1
+      percent: null

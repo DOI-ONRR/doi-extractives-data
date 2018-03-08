@@ -267,3 +267,10 @@ revenue:
       value: 7707788.21
       rank: 1
       percent: 99.6
+  '2017':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 9547156.91
+      rank: 1
+      percent: 99.7

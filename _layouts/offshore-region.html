@@ -16,9 +16,9 @@ nav_items:
         title: By offshore area
 ---
 
-{% assign region_name = page.id | capitalize %}
+{% assign region_name = page.slug | capitalize %}
 {% assign region_title = page.title %}
-{% assign region_id = page.id %}
+{% assign region_id = page.slug %}
 {% assign locality_name = 'Region' %}
 
 {% assign commodity_names = site.data.commodity_names %}

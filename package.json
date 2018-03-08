@@ -11,11 +11,10 @@
     "node": ">=8"
   },
   "scripts": {
+    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
     "build": "rm -rf _site; bundle exec jekyll build",
     "federalist": "webpack && npm run release-styleguide",
-    "start": "bundle exec jekyll serve --incremental",
     "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
-    "restart": "rm -rf _site && npm run start",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
@@ -36,7 +35,8 @@
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "async": "^0.9.0",
-    "copy-webpack-plugin": "^4.3.1",
+    "chokidar": "^2.0.0",
+    "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^0.28.7",
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",
@@ -46,7 +46,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "immutable": "^3.7.6",
-    "jquery": "^1.11.3",
+    "jquery": "^3.3.1",
     "list.js": "^1.1.1",
     "lunr": "^0.7.2",
     "node-sass": "^4.7.2",
@@ -60,7 +60,6 @@
     "webpack": "*"
   },
   "devDependencies": {
-    "chokidar": "^2.0.0",
     "colors": "^1.1.0",
     "data-expression": "^0.3.2",
     "epipebomb": "^0.1.1",

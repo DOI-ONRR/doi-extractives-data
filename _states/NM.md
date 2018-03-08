@@ -1,5 +1,5 @@
 ---
-id: NM
+unique_id: NM
 title: New Mexico
 FIPS: '35'
 

@@ -1,5 +1,5 @@
 ---
-id: VT
+unique_id: VT
 title: Vermont
 FIPS: '50'
 

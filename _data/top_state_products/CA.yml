@@ -1107,3 +1107,34 @@ revenue:
       value: 113.09
       rank: 4
       percent: 0.1
+  '2017':
+    - product: Oil
+      name: null
+      units: null
+      value: 53117745.86
+      rank: 4
+      percent: 1.3
+    - product: Sodium
+      name: null
+      units: null
+      value: 9800353.14
+      rank: 2
+      percent: 21.4
+    - product: Geothermal
+      name: null
+      units: null
+      value: 7850204.99
+      rank: 1
+      percent: 56
+    - product: Sulfur
+      name: null
+      units: null
+      value: 122.17
+      rank: 4
+      percent: 0.2
+    - product: Hot Springs
+      name: null
+      units: null
+      value: -5
+      rank: 1
+      percent: null

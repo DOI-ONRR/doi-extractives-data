@@ -1,5 +1,5 @@
 ---
-id: CT
+unique_id: CT
 title: Connecticut
 FIPS: 09
 

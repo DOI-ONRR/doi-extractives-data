@@ -318,3 +318,16 @@ revenue:
       value: 1314.73
       rank: 5
       percent: 0
+  '2017':
+    - product: NGL
+      name: null
+      units: null
+      value: 11977465.78
+      rank: 4
+      percent: 5.3
+    - product: CO2
+      name: null
+      units: null
+      value: 5496.35
+      rank: 5
+      percent: 0

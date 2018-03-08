@@ -286,3 +286,28 @@ revenue:
       value: 240
       rank: 1
       percent: 100
+  '2017':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 9797042.92
+      rank: 1
+      percent: 95.6
+    - product: Geothermal
+      name: null
+      units: null
+      value: 139398
+      rank: 4
+      percent: 1
+    - product: Gemstones
+      name: null
+      units: null
+      value: 240
+      rank: 1
+      percent: 100
+    - product: Hardrock
+      name: null
+      units: null
+      value: 126
+      rank: 5
+      percent: 0

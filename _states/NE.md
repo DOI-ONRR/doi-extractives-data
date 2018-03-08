@@ -1,5 +1,5 @@
 ---
-id: NE
+unique_id: NE
 title: Nebraska
 FIPS: '31'
 

@@ -1,5 +1,5 @@
 ---
-id: CA
+unique_id: CA
 title: California
 FIPS: '06'
 

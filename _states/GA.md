@@ -1,5 +1,5 @@
 ---
-id: GA
+unique_id: GA
 title: Georgia
 FIPS: '13'
 

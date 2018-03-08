@@ -1,5 +1,5 @@
 ---
-id: OR
+unique_id: OR
 title: Oregon
 FIPS: '41'
 

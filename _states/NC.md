@@ -1,5 +1,5 @@
 ---
-id: NC
+unique_id: NC
 title: North Carolina
 FIPS: '37'
 

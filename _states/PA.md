@@ -1,5 +1,5 @@
 ---
-id: PA
+unique_id: PA
 title: Pennsylvania
 FIPS: '42'
 

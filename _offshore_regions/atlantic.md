@@ -1,5 +1,5 @@
 ---
-id: atlantic
+unique_id: atlantic
 title: Atlantic Ocean
 permalink: /explore/offshore-atlantic/
 

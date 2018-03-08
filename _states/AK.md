@@ -1,5 +1,5 @@
 ---
-id: AK
+unique_id: AK
 title: Alaska
 FIPS: '02'
 

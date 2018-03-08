@@ -1,5 +1,5 @@
 ---
-id: WY
+unique_id: WY
 title: Wyoming
 FIPS: '56'
 

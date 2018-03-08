@@ -1,5 +1,5 @@
 ---
-id: CO
+unique_id: CO
 title: Colorado
 FIPS: 08
 

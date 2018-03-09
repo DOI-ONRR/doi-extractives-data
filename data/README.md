@@ -1,9 +1,13 @@
-# EITI Data
+# NRRD data
 This directory contains all of the input data, scripts for parsing and
 transforming them, and the resulting ["output" files in the _data directory](_data/). These tools also use
 [Node](https://nodejs.org/), and the dependencies are managed with
 [npm](https://www.npmjs.com/) in the parent directory's
 [package.json](../package.json).
+
+If you have not run the data scripts before, you'll need to start by creating a local `sqlite` database:
+
+1. `make db`
 
 To update the data that powers the site:
 

@@ -1,12 +1,4 @@
 US:
-  '2005':
-    count: 275600
-    total: 1722500
-    percent: 0.16
-  '2006':
-    count: 314200
-    total: 1745556
-    percent: 0.18
   '2007':
     count: 354300
     total: 1771500
@@ -40,6 +32,10 @@ US:
     total: 1845122
     percent: 0.41
   '2015':
-    count: 756600
-    total: 1891500
-    percent: 0.4
+    count: 802300
+    total: 1910238
+    percent: 0.42
+  '2016':
+    count: 805500
+    total: 1917857
+    percent: 0.42

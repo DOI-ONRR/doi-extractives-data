@@ -1,5 +1,5 @@
 ---
-id: AZ
+unique_id: AZ
 title: Arizona
 FIPS: '04'
 

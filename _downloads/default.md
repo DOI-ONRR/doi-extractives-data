@@ -38,14 +38,14 @@ nav_items:
   - name: contact-us
     title: Contact us
 selector: list
-description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
+description: We use many government datasets on this site to power our interactive visualizations. Some are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 tag:
 - Data
 - Downloads
 - Documentation
 ---
 
-> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links direct to the source so you can find fresh data whenever you need it.
+> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 
 {% include selector.html %}
 
@@ -57,7 +57,8 @@ tag:
     Federal revenue by location</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by calendar year (CY) and fiscal year (FY).</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
+      </object>Data and documentation
     </a>
   </li>
 
@@ -65,7 +66,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" class="link-no_under"><h3 id="federal-revenue-by-company">Federal revenue by company</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is available for calendar years 2013-2016.</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
     </a>
   </li>
 
@@ -73,7 +74,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3>Reconciliation</h3></a>
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
     <a href="{{site.baseurl}}/downloads/reconciliation/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
     </a>
   </li>
 
@@ -89,7 +90,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/disbursements/" class="link-no_under"><h3 id="disbursements">Disbursements</h3></a>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
     <a href="{{site.baseurl}}/downloads/disbursements/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
     </a>
   </li>
 
@@ -112,7 +113,8 @@ tag:
     <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
     <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2007 to 2016 by state and county.</p>
     <a href="{{site.baseurl}}/downloads/federal-production/">
-      <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
+      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
+      </object>Data and documentation
     </a>
   </li>
 
@@ -133,7 +135,7 @@ tag:
 
   <li class="downloads-download_links">
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" class="link-no_under"><h3 id="exports">Exports</h3></a>
-    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state from 2011-2014 by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
+    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">Go to U.S. Census exports data page &#8594;
     </a>
   </li>

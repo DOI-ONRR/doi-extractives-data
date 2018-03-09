@@ -1,5 +1,5 @@
 ---
-id: NY
+unique_id: NY
 title: New York
 FIPS: '36'
 

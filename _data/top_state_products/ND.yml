@@ -402,3 +402,28 @@ revenue:
       value: 8387222.41
       rank: 5
       percent: 1.1
+  '2017':
+    - product: All
+      name: null
+      units: null
+      value: 178598355.1
+      rank: 4
+      percent: 2.6
+    - product: Oil
+      name: null
+      units: null
+      value: 150116723.75
+      rank: 3
+      percent: 3.8
+    - product: Gas
+      name: null
+      units: null
+      value: 14500447.71
+      rank: 5
+      percent: 1.5
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 7020492.63
+      rank: 4
+      percent: 0.7

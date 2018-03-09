@@ -40,7 +40,6 @@ tag:
 - Data
 - Downloads
 - Documentation
-- USEITI data
 - Federal
 - Revenue
 - Location
@@ -52,13 +51,13 @@ tag:
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-16_2017-05-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
    Offshore dataset (xlsx, 484 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-16_2017-05-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Onshore dataset (xlsx, 2.4 MB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-16_2017-05-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
     Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
   </a></li>
 </ul>
@@ -81,7 +80,7 @@ Download fiscal year data:
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
 
 ### Why are some values negative?
 
@@ -93,7 +92,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
 
-Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 
 ### Note: Geothermal rate details
 
@@ -101,31 +100,31 @@ The fees and rates for revenue from geothermal resources on federal land depend 
 
 Also, different fee rates apply to pre-2005 leases and to direct use facilities:
 
-* For leases signed before the Energy Policy Act of 2005, the lessee’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
-* For {{ "direct use" | term_end }}, the lessee pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lessee at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
+* For leases signed before the Energy Policy Act of 2005, the lease holder’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
+* For {{ "direct use" | term_end }}, the lease holder pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lease holder at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
 
-The Bureau of Land Management has [more information about geothermal energy on federal lands](http://www.blm.gov/wo/st/en/prog/energy/geothermal.html).
+The Bureau of Land Management has [more information about geothermal energy on federal lands](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy).
 
 ## Offshore data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
-* _Royalties_ A natural resource lease owner pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
+* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
 
 
-_Commodity Type_ The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
+_Commodity Type_ The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
 
 
-_Region_ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_Region_ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-_Planning Area_ Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_Planning Area_ Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 _Revenue_ Total revenue.
 

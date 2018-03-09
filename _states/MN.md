@@ -1,5 +1,5 @@
 ---
-id: MN
+unique_id: MN
 title: Minnesota
 FIPS: '27'
 

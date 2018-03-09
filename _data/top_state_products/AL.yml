@@ -196,3 +196,10 @@ revenue:
       value: 1350.48
       rank: 2
       percent: 0.6
+  '2017':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 806.82
+      rank: 2
+      percent: 1.5

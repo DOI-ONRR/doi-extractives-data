@@ -1,5 +1,5 @@
 ---
-id: DE
+unique_id: DE
 title: Delaware
 FIPS: '10'
 

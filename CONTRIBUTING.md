@@ -22,6 +22,46 @@ To ensure a welcoming environment for our projects, our staff follows the [18F C
 
 ### Using Docker
 
+
+#### Setting up Docker Toolbox for Windows 7 - (Windows Only instructions)
+
+##### Prerequisites
+1. Have Docker Toolbox installed, which includes Oracle VM
+1. You will need admin rights to setup the docker environment. A registry key can disable the admin rights check. Ask IT to disable.
+1. Open Oracle Virtualbox and verify you only have 1 Host Only Adapter
+    1. In the Oracle Virtualbox, select Global Tools
+    2. Select Host Network Manager
+    3. You should be in the Properties view.
+    4. Verify only 1 or 0 adapters are listed.
+    5. if more than 1 disable extra adapters. You should only have 1 enabled to avoid potential errors later.
+1. Also install 'bash' by installing git for Windows.
+1. Clone the repo to a directory in C:\Users. This is automatically shared by Docker.
+
+##### Windows 7 specific steps
+1. Launch Docker Quick Start which should be a shortcut on the Desktop
+2. Once launched switch to your source code directory. "doi-extractives-data"
+3. Although Quick start creates a VM we are going to create our own.
+    * On windows the initial machine usually results in errors. Such as a certificate errors.
+    * Also the machine is not very powerful.
+    * Sometimes the docker terminal crashes. Just restart it if it does.
+4. Make sure you are in your source code directory and run the following commands
+
+```
+docker-machine rm default
+docker-machine ls   # lists all machines, verify default is not listed
+docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory 4046  default
+eval "$(docker-machine env default)"
+docker-machine ls   # Note your IP address
+```
+5. Your docker-machine should now be ready to setup the development environment
+
+ * If you get a certificate error run this command from your source code directory
+
+```
+docker-machine regenerate-certs default
+```
+
+##### Docker Development Environment Setup
 Instead of installing dependencies yourself and running different commands
 in separate terminal sessions, you should use Docker, which
 only requires installing [Docker Community Edition][docker]
@@ -32,17 +72,52 @@ Start by installing [Docker Community Edition][docker].
 If you are on Windows, you'll also need `bash`, which you can probably
 get most easily by installing [git for Windows][].
 
-To get up and running with Docker, run:
+To get up and running with Docker, run the following in the project directory.
 
 ```
-bash docker-update.sh
+docker-compose build
+docker-compose run --rm jekyll bash scripts/update-deps.sh
 docker-compose up
 ```
 
-Then visit http://localhost:4000/ in your browser.
+Then visit http://localhost:4000/ in your browser. On Windows machines the URL is generally http://192.168.99.100:4000/.
 
 Whenever you make changes to any files, the proper static assets
 will be rebuilt, and your changes will show up on the site.
+
+##### Errors when starting up
+
+We sometimes observe a behavior where `docker-compose up` will result in an error the first time it is run, but will work the second time.
+
+<details>
+  <summary>The error usually looks like this (expand to see): </summary>
+
+```
+jekyll_1      | module.js:540
+jekyll_1      |     throw err;
+jekyll_1      |     ^
+jekyll_1      |
+jekyll_1      | Error: Cannot find module 'to-regex'
+jekyll_1      |     at Function.Module._resolveFilename (module.js:538:15)
+jekyll_1      |     at Function.Module._load (module.js:468:25)
+jekyll_1      |     at Module.require (module.js:587:17)
+jekyll_1      |     at require (internal/module.js:11:18)
+jekyll_1      |     at Object.<anonymous> (/doi/node_modules/chokidar/node_modules/braces/index.js:7:15)
+jekyll_1      |     at Module._compile (module.js:643:30)
+jekyll_1      |     at Object.Module._extensions..js (module.js:654:10)
+jekyll_1      |     at Module.load (module.js:556:32)
+jekyll_1      |     at tryModuleLoad (module.js:499:12)
+jekyll_1      |     at Function.Module._load (module.js:491:3)
+doiextractivesdata_jekyll_1 exited with code 1
+```
+
+</details>
+
+If you run into this error, then you should:
+
+1. Use `Control-C` to bring down the docker containers
+1. Make sure everything is turned off with `docker-compose down`
+1. Use `docker-compose up` again
 
 #### What Docker is doing
 
@@ -56,7 +131,7 @@ If you want to run commands like `npm`, `make`, or `sqlite3`, the easiest
 way to do this is by running a shell inside the main container:
 
 ```
-docker-compose run app bash
+docker-compose run jekyll bash
 ```
 
 Once you do this, you'll be in an interactive shell within the main
@@ -65,8 +140,8 @@ container, and can run any commands you need.
 #### Updating the Docker container
 
 Whenever you update the repository using e.g. `git pull`, run
-`bash docker-update.sh` again to rebuild the Docker container and
-fetch any new dependencies.
+`docker-compose build jekyll` again to rebuild the Docker container and
+fetch any new dependencies. Building a single `-compose.yml` service at first caches all of the build steps and makes it faster to build the remaining services.
 
 #### Uninstalling or resetting the Docker container
 

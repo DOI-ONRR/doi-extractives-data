@@ -1,5 +1,5 @@
 ---
-id: KS
+unique_id: KS
 title: Kansas
 FIPS: '20'
 

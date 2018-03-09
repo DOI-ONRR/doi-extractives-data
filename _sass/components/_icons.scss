@@ -1,0 +1,30 @@
+
+
+.icon-small {
+  width: 1.5rem;
+}
+
+.icons-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2em;
+}
+
+.icons-stack-1x,
+.icons-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.icons-stack-1x {
+  line-height: inherit;
+}
+
+.icons-stack-2x {
+  font-size: 2em;
+}

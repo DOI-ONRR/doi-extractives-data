@@ -29,7 +29,7 @@ Forests are an important part of our ecosystems. They provide timber, store carb
 
 Like all land, forests can be publicly or privately owned. Private individuals or organizations, such as corporations, non-profits, and tribes own 58% of forests. The remaining 42% are publicly owned by federal, state, and local governments.
 
-Forests on federal land are governed by the U.S. Service and the Bureau of Land Management (BLM). Forests on tribal lands are governed by the Bureau of Indian Affairs (BIA), tribes themselves, or a combination of both.
+Forests on federal land are governed by the U.S. Forest Service and the Bureau of Land Management (BLM). Forests on tribal lands are governed by the Bureau of Indian Affairs (BIA), tribes themselves, or a combination of both.
 
 ### U.S. Forest Service
 
@@ -41,11 +41,11 @@ Extensive planning goes into managing the national forests. [The Forest Service'
 
 BLM manages 65 million acres of forests and woodlands across 12 western states and Alaska. The majority of timber production on BLM land occurs on the 2.4 million acres of [Oregon and California and Coos Bay Wagon Road lands in Oregon](https://www.blm.gov/programs/natural-resources/forests-and-woodlands/oc-lands).
 
-BLM also manages {{ "public domain lands" | term_end }} that produce timber. BLM manages these lands under Federal Land Management and Policy Act (FLPMA), which includes sustainable forest production.
+BLM also manages {{ "public domain lands" | term_end }} that produce timber. BLM manages these lands under Federal Land Policy and Management Act (FLPMA), which includes sustainable forest production.
 
 ### Tribal governance
 
-Tribal lands include 18.2 million acres of trust forest acres. [The Forest Service's Tribal Relations site provides information on their work with tribes](https://www.fs.fed.us/spf/tribalrelations/) and an [interactive map of tribal trust lands and tribal lands ceded as part of a treaty](https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=fe311f69cb1d43558227d73bc34f3a32). To learn more about extraction on tribal lands and the trust responsibility of the federal government, read about tribal ownership.
+Tribal lands include 18.2 million acres of trust forest acres. [The Forest Service's Tribal Relations site](https://www.fs.fed.us/spf/tribalrelations/) provides information on their work with tribes and an [interactive map of tribal trust lands and tribal lands ceded as part of a treaty](https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=fe311f69cb1d43558227d73bc34f3a32). To learn more about extraction on tribal lands and the trust responsibility of the federal government, read about tribal ownership.
 
 [BIA's Division of Forestry and Wildland Fire Management manages trust forest resources](https://www.bia.gov/bia/ots/dfwfm/content). The Division is a cooperative effort between the Department of the Interior (DOI), BIA, and the Office of the Deputy Director of Trust Services.  
 

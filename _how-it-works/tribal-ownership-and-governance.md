@@ -12,6 +12,19 @@ nav_items:
     title: Natural resource ownership
   - name: laws-and-regulations
     title: Laws and regulations
+    subnav_items:
+      - name: history-of-federal-obligations
+        title: History of federal obligations
+      - name: general-allotment-act-of-1887-the-dawes-act
+        title: General Allotment Act of 1887 (The Dawes Act)
+      - name: indian-reorganization-act-of-1934
+        title: Indian Reorganization Act of 1934
+      - name: indian-mineral-leasing-act-of-1938
+        title: Indian Mineral Leasing Act of 1938
+      - name: indian-mineral-development-act-of-1982
+        title: Indian Mineral Development Act of 1982
+      - name: tribal-energy-development--self-determination-act-of-2005
+        title: Tribal Energy Development & Self-Determination Act of 2005
 description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Indian lands and distributing the associated revenue necessitates the use of unique processes involving multiple stakeholders.
 tag:
 - how it works
@@ -69,13 +82,13 @@ To understand current ownership of {{ "Indian lands" | term_end }}, one must beg
 
 While the practice of allotting tribal land to individual Indians began in the 18th century, it was not in widespread use until the late 19th century when passage of the General Allotment Act of 1887, also known as the Dawes Act, greatly expanded the practice. This expansion would have devastating consequences for Indians.
 
-Under the Dawes Act and other tribe-specific allotment acts, the federal government allotted a specified amount of land, usually 80 or 160 acres, to each tribal member. These allotments were to be held in trust by the United States for the beneficial Native American owner for a specified period of time, usually 25 years, after which the federal government would remove the trust status and issue the allottee fee simple title to the land. 
+Under the Dawes Act and other tribe-specific allotment acts, the federal government allotted a specified amount of land, usually 80 or 160 acres, to each tribal member. These allotments were to be held in trust by the United States for the beneficial Native American owner for a specified period of time, usually 25 years, after which the federal government would remove the trust status and issue the allottee fee simple title to the land.
 
 Once out of trust, however, the land became subject to state and local taxation, the costs of which led thousands of acres of Indian land to pass out of Indian hands once the trust status was lifted. Furthermore, non-allotted lands were often declared “surplus land” by the federal government, which opened them to homesteaders, thereby accelerating the loss of Indian land to non-Indians.
 
-The policy of allotment dramatically reduced the amount of land owned by tribes. In 1887, tribes held 138 million acres. Just forty-seven years later, in 1934, they owned 48 million acres. To stop the loss of Indian land, sthe federal government ended the allotment policy in 1934 and extended the trust period indefinitely. Today, allotments are still held in trust by the federal government for the beneficial Indian owner. 
+The policy of allotment dramatically reduced the amount of land owned by tribes. In 1887, tribes held 138 million acres. Just forty-seven years later, in 1934, they owned 48 million acres. To stop the loss of Indian land, the federal government ended the allotment policy in 1934 and extended the trust period indefinitely. Today, allotments are still held in trust by the federal government for the beneficial Indian owner.
 
-In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native Americans. As the original recipients of allotments died their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as {{ "fractionation" | term_end }}.
+In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native Americans. As the original recipients of allotments died, their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as {{ "fractionation" | term_end }}.
 
 In many cases, ownership of allotted lands continued to divide over multiple generations so that today, individual parcels sometimes have more than 100 co-owners. Fractionation [limits economic development on reservations](https://aspe.hhs.gov/report/overcoming-challenges-business-and-economic-development-indian-country/impact-historical-events-tribal-bded), including resource extraction, and can divide lease income among co-owners so that individuals receive just a few cents based on their share.
 
@@ -83,11 +96,11 @@ You can learn more about government and tribal efforts to mitigate the effects o
 
 ### Indian Reorganization Act of 1934
 
-The Allotment Era ended with the Indian Reorganization Act of 1934 (IRA). This act ended the policy of allotment and authorized the Secretary of the Interior to restore remaining (unallotted) surplus lands to tribal ownership. It also incentivized tribes to adopt U.S.-style governments and constitutions. Most federally recognized tribes are organized under the IRA. While the impact of the IRA varied by tribe, it marked a shift towards the promotion of tribal self-government. This change undergirds the modern extractive industries policy for tribes in the United States. 
+The Allotment Era ended with the Indian Reorganization Act of 1934 (IRA). This act ended the policy of allotment and authorized the Secretary of the Interior to restore remaining (unallotted) surplus lands to tribal ownership. It also incentivized tribes to adopt U.S.-style governments and constitutions. Most federally recognized tribes are organized under the IRA. While the impact of the IRA varied by tribe, it marked a shift towards the promotion of tribal self-government. This change undergirds the modern extractive industries policy for tribes in the United States.
 
 ### Indian Mineral Leasing Act of 1938
 
-The Indian Mineral Leasing Act of 1938 (IMLA) increased the amount of control tribes have over extraction on their land. Under IMLA, leases for extraction on tribal lands required tribal consent—a fact that remains true today. It also requires the approval of the Secretary of the Interior. However, under IMLA tribes could not negotiate leases, influence operations once they commenced, cancel leases, or set rates for leases.
+The Indian Mineral Leasing Act of 1938 (IMLA) increased the amount of control tribes have over extraction on their land. Under IMLA, leases for extraction on tribal lands required tribal consent—a fact that remains true today. It also requires the approval of the Secretary of the Interior. However, under IMLA, tribes could not negotiate leases, influence operations once they commenced, cancel leases, or set rates for leases.
 
 ### Indian Mineral Development Act of 1982
 

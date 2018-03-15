@@ -80,35 +80,6 @@ module EITI
       end
     end
 
-    # takes a range and returns a list of numbers within that range
-    # incremented by 1:
-    def create_list(range)
-      if range.is_a? Array
-        arr = []
-        min = range[0]
-        max = range[1]
-        (min..max).step(1) do |i|
-          arr.push(i)
-        end
-        arr
-      else
-        range
-      end
-    end
-
-    # takes a range and returns a list of numbers within that range
-    # incremented by 1:
-    def to_list(range)
-      if range.is_a? Array
-        create_list(range)
-      elsif range.is_a? String
-        range = JSON.parse(range)
-        create_list(range)
-      else
-        range
-      end
-    end
-
     # formats a URL-like string with either a data Hash or a
     # placeholder string:
     def format_url(format, data)

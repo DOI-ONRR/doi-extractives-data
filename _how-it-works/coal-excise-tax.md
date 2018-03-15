@@ -1,6 +1,6 @@
 ---
-title: 'Coal Excise Tax | How it Works'
-title_display: Coal Excise Tax
+title: 'Coal excise tax | How it Works'
+title_display: Coal excise tax
 layout: content
 description: In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used. The tax does not apply to lignite or to coal mined in the U.S. for export.
 tag:
@@ -12,6 +12,9 @@ nav_items:
     title: Top
   - name: coal-excise-tax-rates
     title: Coal excise
+    subnav_items:
+      - name: coal-excise-tax-rates
+        title: Coal excise tax rates
 permalink: /how-it-works/coal-excise-tax/
 breadcrumb:
   - title: How it works
@@ -27,7 +30,7 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
 
 **Coal excise tax revenue**[^4]
 
-<img src="{{site.baseurl}}/img/chart-coal-excise-tax.svg" alt="Bar chart showing Coal Excise tax revenue. The chart compares Mined Underground and Surface mined.">
+<img src="{{site.baseurl}}/public/img/chart-coal-excise-tax.svg" alt="Bar chart showing Coal Excise tax revenue. The chart compares Mined Underground and Surface mined.">
 
 ## Coal excise tax rates
 

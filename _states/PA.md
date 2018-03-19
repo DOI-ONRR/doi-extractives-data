@@ -10,11 +10,11 @@ priority: true
 is_cropped: true
 ---
 * The [Pennsylvania Department of Environmental Protection](http://www.dep.pa.gov/Pages/default.aspx) manages programs that ensure the safe and responsible exploration, development, and recovery of extractive resources. These programs include permitting and inspection, regulatory oversight, and training.
-  * [Office of Oil and Gas Management](http://www.portal.state.pa.us/portal/server.pt/community/office_of_oil_and_gas_management/20291)
-    - [Oil and gas surface regulations](http://www.portal.state.pa.us/portal/server.pt/community/public_resources/20303/oil_and_gas_surface_regulations/1587188)
-    - [Oil and gas production data](https://www.paoilandgasreporting.state.pa.us/publicreports/Modules/Welcome/Welcome.aspx)
-  * [Office of Active and Abandoned Mine Operations](http://www.portal.state.pa.us/portal/server.pt/community/mining/6002)
-    - [Coal regulations](http://www.portal.state.pa.us/portal/server.pt/community/bureau_of_mining_programs/20865/regulations/1150023)
+  * [Office of Oil and Gas Management](http://www.dep.pa.gov/business/energy/oilandgasprograms/oilandgasmgmt/Pages/default.aspx)
+    - [Oil and gas surface regulations](http://www.dep.pa.gov/Business/Energy/OilandGasPrograms/OilandGasMgmt/Public-Resources/Pages/Oil-and-Gas-Surface-Regulations.aspx)
+    - [Oil and gas production data](https://www.paoilandgasreporting.state.pa.us/publicreports/Modules/Welcome/Agreement.aspx)
+  * [Office of Active and Abandoned Mine Operations](http://www.dep.pa.gov/Business/Land/Mining/Pages/default.aspx)
+    - [Coal regulations](http://www.dep.pa.gov/BUSINESS/LAND/MINING/BUREAUOFMINESAFETY/SERVICES/MINEINSPECTION/MININGLAWS/Pages/default.aspx)
 * [State Bureau of Topographic and Geologic Survey](http://dcnr.state.pa.us/topogeo/index.aspx)
   - [Oil and gas resources](http://dcnr.state.pa.us/topogeo/econresource/oilandgas/index.htm)
   - [Mineral resources](http://dcnr.state.pa.us/topogeo/econresource/mineral_industries/index.htm)

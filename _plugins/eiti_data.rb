@@ -109,6 +109,14 @@ module EITI
       x.is_a?(Array) ? x.map(&:to_s) : x.to_s
     end
 
+    # attempts to find a substring
+    # returns the value true if the key exists; otherwise, return nil
+    def is_in(term, str)
+      if str
+        (str.include? term) ? true : nil
+      end
+    end
+
     # takes a range and returns a list of numbers within that range
     # incremented by 1:
     #

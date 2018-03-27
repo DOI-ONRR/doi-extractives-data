@@ -122,7 +122,7 @@ selector: list
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and OST disbursed $560.4 million to tribes and allottees.</p>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In 2017, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed $675.7 million to tribes and allottees.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
         </div>
         <div>

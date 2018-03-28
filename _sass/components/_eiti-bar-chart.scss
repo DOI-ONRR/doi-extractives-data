@@ -58,6 +58,10 @@ eiti-bar-chart {
       &.dataless {
         fill: $gray;
       }
+      
+      &.data-negative{
+        fill: $red
+      }
     }
   }
 

@@ -146,7 +146,7 @@ selector: list
         <div class="landing-coal">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a>{% include svg/how-main-icon-coal.svg %}</h4>
           <div>
-            <p>Miners extract coal through surface and subsurface mining. Most of the coal produced on federal land the U.S. is mined in the Powder River Basin of Wyoming.</p>
+            <p>Miners extract coal through surface and subsurface mining. Most of the coal produced on federal land in the U.S. is mined in the Powder River Basin of Wyoming.</p>
             <p><a href="{{site.baseurl}}/how-it-works/coal/">Learn about coal</a></p>
           </div>
         </div>

@@ -35,7 +35,7 @@ revenue_types:
   Other Revenues: Other Revenue
 ---
 
-> Natural resources are increasingly a key source of income for many Native American tribes. In 2017, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed $675.7 million to tribes and allottees.
+> Natural resources are increasingly a key source of income for many Native American tribes. In 2017, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed $675.8 million to tribes and allottees.
 
 {% include selector.html %}
 

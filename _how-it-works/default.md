@@ -101,9 +101,9 @@ selector: list
           <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
         </div>
         <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#tribal-overview">Tribal laws and regulations</a></h3>
           <p>Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/#tribal-overview">Learn about tribal laws</a></p>
         </div>
       </div>
     </section>

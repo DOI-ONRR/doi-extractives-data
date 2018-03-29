@@ -89,6 +89,8 @@
   };
 
   var crawlCeil = function(ymax, ceilMax, i) {
+    var extentMarginOfError = +ymax < 10 ? 4.25 : 0.1;
+    extentPercent = ymax < 10 ? 2 : extentPercent;
     var sigFig = '.' + i + 's';
     var sigFigCeil = +eiti.format.transform(
       sigFig,
@@ -100,6 +102,14 @@
     return justRight ? sigFig : '';
   };
 
+  /**
+   * This function formats a number as the number of significant digits
+   * with its amount (e.g. M for million, K for thousand, etc) abbreviation
+   * For example:
+   * 1,000,000 formats to 1M
+   * @param {Number} ymax
+   * @param {Number} ceilMax ymax + extent of the data set
+   */
   var setSigFigs = function(ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
@@ -245,8 +255,6 @@
       }, true);
     }
 
-
-
     var axis = d3.svg.axis()
       .orient('bottom')
       .scale(x)
@@ -274,6 +282,7 @@
       var dataUnits = this.getAttribute('data-units');
       var dataFormat = this.getAttribute('data-format') || '';
 
+      extentPercent = ymax < 10 ? 2.5 : extentPercent;
       var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
       var sigFigs = setSigFigs(ymax, ceilMax);
 

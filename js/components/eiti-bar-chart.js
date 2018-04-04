@@ -182,7 +182,7 @@
       return xdomain.indexOf(d.x) > -1;
     });
 
-    extent = d3.extent(data, function(d) {
+    var extent = d3.extent(data, function(d) {
       return d.y;
     });
 

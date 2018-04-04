@@ -101,9 +101,9 @@ selector: list
           <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
         </div>
         <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
+          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#tribal-overview">Tribal laws and regulations</a></h3>
           <p>Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/#tribal-overview">Learn about tribal laws</a></p>
         </div>
       </div>
     </section>
@@ -144,28 +144,28 @@ selector: list
         <div class="landing-oil_gas">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a>{% include svg/how-main-icon-oil.svg %}</h4>
           <div>
-            <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. In 2014, the U.S. produced more petroleum and natural gas than any other country.</p>
+            <p>Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. The U.S. is among the world's top producers of oil and gas.</p>
             <p><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Learn about oil and gas</a></p>
           </div>
         </div>
         <div class="landing-coal">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a>{% include svg/how-main-icon-coal.svg %}</h4>
           <div>
-            <p>Miners extract coal through surface and subsurface mining. In 2014, the U.S. was the world’s second largest coal producer after China.</p>
+            <p>Miners extract coal through surface and subsurface mining. Most of the coal produced on federal land in the U.S. is mined in the Powder River Basin of Wyoming.</p>
             <p><a href="{{site.baseurl}}/how-it-works/coal/">Learn about coal</a></p>
           </div>
         </div>
         <div class="landing-minerals">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a>{% include svg/how-main-icon-hardrock.svg %}</h4>
             <div>
-            <p>Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
+            <p>Gold, copper, and iron are the main sources of nonenergy mineral revenues. The Mining Law of 1872 is the major federal law governing locatable minerals.</p>
             <p><a href="{{site.baseurl}}/how-it-works/minerals/">Learn about nonenergy minerals</a></p>
           </div>
         </div>
         <div class="landing-renewables">
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a>{% include svg/how-main-icon-wind.svg %}</h4>
           <div>
-            <p>Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2015.</p>
+            <p>Renewable energy resources include geothermal, solar, wind, biomass, and hydrokinetic energy.</p>
             <p><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Learn about renewable energy</a></p>
           </div>
         </div>

@@ -39,7 +39,6 @@
   extentMargin = barHeight * extentPercent;
   top += extentMargin;
   var extentTop = top - extentMargin;
-
   var fullHeight = height + textMargin + extentMargin
     + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
@@ -89,8 +88,10 @@
   };
 
   var crawlCeil = function(ymax, ceilMax, i) {
-    var extentMarginOfError = +ymax < 10 ? 4.25 : 0.1;
-    extentPercent = ymax < 10 ? 2 : extentPercent;
+    // When ymax is a value less than 10, the ratio of ceilMax and ymax will never
+    // be less than (1 + extentMarginOfError + extentPercent), and the function will continue
+    // be called in its parent function's while loop.
+
     var sigFig = '.' + i + 's';
     var sigFigCeil = +eiti.format.transform(
       sigFig,
@@ -181,10 +182,21 @@
       return xdomain.indexOf(d.x) > -1;
     });
 
-    var extent = d3.extent(data, function(d) {
+    extent = d3.extent(data, function(d) {
       return d.y;
     });
-    var ymax = extent[1] < 0 ? 0 : extent[1];
+
+    var ymax;
+
+    if (extent[1] && extent[1] < 10) {
+      // If the max size of the dataset is under 10,
+      // increase the size of the ymax so the bar doesnt
+      // scale up to the height of the extent line
+      ymax = 10;
+    } else {
+      ymax = Math.max(0, extent[1]);
+    }
+
     var ymin = 0;
 
     data.sort(function(a, b) {
@@ -229,6 +241,7 @@
         d.height = height(d.y) > baseHeight
           ? height(d.y)
           : baseHeight;
+
         return d.height;
       })
       .attr('y', function(d) {
@@ -240,8 +253,6 @@
       // extend all the way to the bottom of the screen
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
-
-    // selection.call(updateSelected, this.x);
 
     // if bars are simply an icon, don't handle mouse events
     // as the bars will be too small!
@@ -282,8 +293,7 @@
       var dataUnits = this.getAttribute('data-units');
       var dataFormat = this.getAttribute('data-format') || '';
 
-      extentPercent = ymax < 10 ? 2.5 : extentPercent;
-      var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
+      var ceilMax = Math.ceil(ymax * (1 + extentPercent));
       var sigFigs = setSigFigs(ymax, ceilMax);
 
       if (dataUnits.indexOf('$') > -1) {

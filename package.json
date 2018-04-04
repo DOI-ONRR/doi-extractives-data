@@ -13,8 +13,9 @@
   "scripts": {
     "prestart": "if [ ! -d node_modules ]; then npm install; fi",
     "build": "rm -rf _site; bundle exec jekyll build",
+    "build-win": "rd -r '_site'; bundle exec jekyll build",
     "federalist": "webpack && npm run release-styleguide",
-    "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
+    "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_config-dev.yml",
     "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
@@ -51,7 +52,6 @@
     "lunr": "^0.7.2",
     "node-sass": "^4.7.2",
     "object-assign": "^4.1.0",
-    "pty.js": "github:chjj/pty.js",
     "sass-loader": "^6.0.6",
     "stickyfill-web-module": "^1.1.11",
     "svg4everybody": "github:18f/svg4everybody#non-symbol",

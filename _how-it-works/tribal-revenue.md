@@ -35,7 +35,10 @@ revenue_types:
   Other Revenues: Other Revenue
 ---
 
-> Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and {{ "OST" | term }} disbursed [$560.4 million to tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx).
+{% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
+{% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %}
+
+> Natural resources are increasingly a key source of income for many Native American tribes. In FY {{ disbursement_year }}, ONRR and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.
 
 {% include selector.html %}
 

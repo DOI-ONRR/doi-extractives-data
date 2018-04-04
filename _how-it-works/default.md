@@ -120,11 +120,16 @@ selector: list
           <p>Extracting natural resources on tribal land involves unique processes and multiple stakeholders.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-production/">Learn about production on tribal land</a></p>
         </div>
+
+{% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
+{% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %}
+
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and OST disbursed $560.4 million to tribes and allottees.</p>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In FY {{ disbursement_year }}, ONRR and OST disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
         </div>
+
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-economic-impact/">Economic impact</a></h3>
           <p>Extraction affects tribal economies in a number of ways, though effects vary widely depending on the level of extraction on and details of lease agreements.</p>

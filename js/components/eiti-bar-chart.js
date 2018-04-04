@@ -120,7 +120,8 @@
     }
 
     var data = this.data;
-    var values = data;
+    var values = data;    
+    
     if (Array.isArray(data)) {
       values = d3.nest()
         .key(function(d) {
@@ -173,8 +174,8 @@
     var extent = d3.extent(data, function(d) {
       return d.y;
     });
-    var ymax = extent[1];
-    var ymin = Math.min(0, extent[0]);
+    var ymax = extent[1] < 0 ? 0 : extent[1];
+    var ymin = 0;
 
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);
@@ -211,7 +212,8 @@
         var isUndefined = d.y === undefined;
         var isZero = d.y === 0;
         var isWithheld = d.y === null;
-        var baseHeight = isUndefined || isZero || isWithheld
+        var isNegative = d.y < 0;
+        var baseHeight = isUndefined || isZero || isWithheld || isNegative
           ? 0
           : 2;
         d.height = height(d.y) > baseHeight
@@ -316,14 +318,26 @@
         return vals[year];
       }
     }
+    
+    function isNegative(year, vals) {
+      vals = vals || values;
+      if (vals[year] !== undefined) {
+        return vals[year].y < 0;
+      } else {
+        return vals[year];
+      }
+    }
 
     xAxis.selectAll('text')
       .attr('class', function(d) {
         if (!isInSet(d)) {
           return 'dataless';
         }
+        if (isNegative(d)) {
+          return 'data-negative';
+        }
       });
-
+    
     xAxis.selectAll('path, line')
         .attr('fill', 'none');
 

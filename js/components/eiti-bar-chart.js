@@ -357,13 +357,15 @@
     return text;
   };
 
-  var hideCaption = function(selection, data, noData, withheld) {
+  var hideCaption = function(selection, data, noData, withheld, negative) {
     selection.select('.caption-data')
       .attr('aria-hidden', data);
     selection.select('.caption-no-data')
       .attr('aria-hidden', noData);
     selection.select('.caption-withheld')
     .attr('aria-hidden', withheld);
+    selection.select('.caption-negative-data')
+    .attr('aria-hidden', negative);
   };
 
   var updateSelected = function(selection, x, hover) {
@@ -415,12 +417,17 @@
       var units = y.attr('data-units');
 
       if (value.y === null) {
-        hideCaption(output, true, true, false);
+        hideCaption(output, true, true, false, true);
       } else {
         if (value.y === undefined) {
-          hideCaption(output, true, false, true);
+          hideCaption(output, true, false, true, true);
         } else {
-          hideCaption(output, false, true, true);
+          if(value.y < 0) {
+            hideCaption(output, true, true, true, false);
+          }
+          else {
+            hideCaption(output, false, true, true, true);
+          }
           y.text(formatUnits(format(value.y), units));
         }
       }

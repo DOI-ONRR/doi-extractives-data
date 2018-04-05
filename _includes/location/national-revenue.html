@@ -121,13 +121,16 @@
               <span class="caption-data">
               {% if commodity_name == 'Non-commodity revenue' %}
                 Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> in inspection fees, civil penalties, and other revenues in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
-              {% else %}
+              {% else %}                                   
                 Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               {% endif %}
               </span>
               <span class="caption-no-data" aria-hidden="true">
                 There is no data about revenue from production of {{ commodity_name | downcase }} on federal land in
                 <span class="eiti-bar-chart-x-value">{{ year }}</span>.
+              </span>
+              <span class="caption-negative-data" aria-hidden="true">
+                Production of {{ commodity_name | downcase }} yielded <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> in <span class="eiti-bar-chart-x-value">{{ year }}</span> revenue, probably due to  previous overpayment.
               </span>
             </figcaption>
           </figure>

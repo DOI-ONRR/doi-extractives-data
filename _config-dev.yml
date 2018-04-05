@@ -15,6 +15,7 @@ exclude:
   # Node depenencies
   - node_modules
   - package.json
+  - package-lock.json
   # unit tests
   - test
   - circle.yml
@@ -60,4 +61,3 @@ exclude:
   - maps/land/*.json
   - serve*
   - re-serve*
-  - public

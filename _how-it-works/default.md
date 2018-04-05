@@ -126,7 +126,7 @@ selector: list
 
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.</p>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | divided_by: 1000000 | round | intcomma_dollar }} million to tribes and allottees.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
         </div>
 

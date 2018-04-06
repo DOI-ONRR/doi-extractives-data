@@ -138,9 +138,8 @@ module Jekyll
         large_number = 10 ** exponent
 
         if value < large_number * 1000
-          return "%#{value}.1f #{text}" % (value / large_number.to_f)
+          return "%.1f #{text}" % (value / large_number.to_f)
         end
-
       end
 
       return value

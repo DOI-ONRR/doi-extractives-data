@@ -1,6 +1,6 @@
 # Background/problem statement:
 Disbursements data is either missing, incomplete or not presented in a manner that is effective in making the data easily understood which is causing confusion among users. By identifying and implementing a more effective way to present the disbursements data we can reduce the number of email requests for disbursements data. 
-# Goals and questions
+# Goals and questions:
 
 | Goals | Questions |
 | :----- | :--------- |
@@ -45,7 +45,7 @@ We hypothesize that they want disbursements data:
 We hypothesize that the DOI communications teams wants disbursements data:
 * to satisfy journalists requests
 
-# Recruitment strategy
+# Recruitment strategy:
 
 In order to recruit research participants from our target user groups (both for this research sprint as well as to begin developing a recruitment pipeline for future research sprints), we’re currently planning to pursue the following avenues:
 * Journalists & Researchers who cite ONRR content: 

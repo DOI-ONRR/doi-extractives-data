@@ -40,7 +40,7 @@ We hypothesize that they want disbursements data:
 * that shows downstream disbursements to the local level mapped by 
 * by political district
 * by state and tribal area
-#### (2-3)Congressional Staffers
+#### (2-3) Congressional Staffers
 #### DOI employees (1 from each team {Budget, Secretary, Commuication, Data Retrieval, GoMESA)
 We hypothesize that the DOI communications teams wants disbursements data:
 * to satisfy journalists requests

@@ -1,0 +1,195 @@
+streams:
+  All:
+    Total:
+      '2016': 494669537
+    Cities/Towns/Counties:
+      '2016': 212715820
+    Permanent School Trust:
+      '2016': 56016168
+    School Trust:
+      '2016': 51586211
+    State Public School Fund:
+      '2016': 37745734
+    Local Government Mineral Impact Fund:
+      '2016': 32587932
+    Local Government Severance Tax Fund:
+      '2016': 31289615
+    General Fund:
+      '2016': 20000000
+    Severance Tax Perpetual Base Fund:
+      '2016': 15644807
+    Severance Tax Perpetual Operational Fund:
+      '2016': 15644807
+    Colorado Water Conservation Board:
+      '2016': 7814852
+    Oil and Gas Conservation and Environmental Response Fund:
+      '2016': 5700000
+    Local Government Permanent Fund:
+      '2016': 2873423
+    Higher Education Maintenance and Reserve Fund:
+      '2016': 2873423
+    Innovative Energy Fund:
+      '2016': 1500000
+    CSU Trust:
+      '2016': 665391
+    Public Buildings Trust:
+      '2016': 8226
+    Internal Improvements (Colorado Parks and Wildlife):
+      '2016': 3126
+  Ad Valorem Taxes:
+    Total:
+      '2016': 212707846
+    Cities/Towns/Counties:
+      '2016': 212707846
+  State Royalties (In-Scope Commodities):
+    Total:
+      '2016': 108279122
+    Permanent School Trust:
+      '2016': 56016168
+    School Trust:
+      '2016': 51586211
+    CSU Trust:
+      '2016': 665391
+    Public Buildings Trust:
+      '2016': 8226
+    Internal Improvements (Colorado Parks and Wildlife):
+      '2016': 3126
+  Severance Tax:
+    Total:
+      '2016': 84079230
+    Local Government Severance Tax Fund:
+      '2016': 31289615
+    General Fund:
+      '2016': 20000000
+    Severance Tax Perpetual Base Fund:
+      '2016': 15644807
+    Severance Tax Perpetual Operational Fund:
+      '2016': 15644807
+    Innovative Energy Fund:
+      '2016': 1500000
+  Federal Mineral Royalties and Rentals:
+    Total:
+      '2016': 78156492
+    State Public School Fund:
+      '2016': 37745734
+    Local Government Mineral Impact Fund:
+      '2016': 32587932
+    Colorado Water Conservation Board:
+      '2016': 7814852
+    Cities/Towns/Counties:
+      '2016': 7974
+  Federal Coal Lease Bonuses:
+    Total:
+      '2016': 5746847
+    Local Government Permanent Fund:
+      '2016': 2873423
+    Higher Education Maintenance and Reserve Fund:
+      '2016': 2873423
+  COGCC Levy:
+    Total:
+      '2016': 5700000
+    Oil and Gas Conservation and Environmental Response Fund:
+      '2016': 5700000
+funds:
+  Total:
+    All:
+      '2016': 494669537
+    Ad Valorem Taxes:
+      '2016': 212707846
+    State Royalties (In-Scope Commodities):
+      '2016': 108279122
+    Severance Tax:
+      '2016': 84079230
+    Federal Mineral Royalties and Rentals:
+      '2016': 78156492
+    Federal Coal Lease Bonuses:
+      '2016': 5746847
+    COGCC Levy:
+      '2016': 5700000
+  Cities/Towns/Counties:
+    All:
+      '2016': 212715820
+    Ad Valorem Taxes:
+      '2016': 212707846
+    Federal Mineral Royalties and Rentals:
+      '2016': 7974
+  Permanent School Trust:
+    State Royalties (In-Scope Commodities):
+      '2016': 56016168
+    All:
+      '2016': 56016168
+  School Trust:
+    State Royalties (In-Scope Commodities):
+      '2016': 51586211
+    All:
+      '2016': 51586211
+  State Public School Fund:
+    Federal Mineral Royalties and Rentals:
+      '2016': 37745734
+    All:
+      '2016': 37745734
+  Local Government Mineral Impact Fund:
+    Federal Mineral Royalties and Rentals:
+      '2016': 32587932
+    All:
+      '2016': 32587932
+  Local Government Severance Tax Fund:
+    Severance Tax:
+      '2016': 31289615
+    All:
+      '2016': 31289615
+  General Fund:
+    Severance Tax:
+      '2016': 20000000
+    All:
+      '2016': 20000000
+  Severance Tax Perpetual Base Fund:
+    Severance Tax:
+      '2016': 15644807
+    All:
+      '2016': 15644807
+  Severance Tax Perpetual Operational Fund:
+    Severance Tax:
+      '2016': 15644807
+    All:
+      '2016': 15644807
+  Colorado Water Conservation Board:
+    Federal Mineral Royalties and Rentals:
+      '2016': 7814852
+    All:
+      '2016': 7814852
+  Oil and Gas Conservation and Environmental Response Fund:
+    COGCC Levy:
+      '2016': 5700000
+    All:
+      '2016': 5700000
+  Local Government Permanent Fund:
+    Federal Coal Lease Bonuses:
+      '2016': 2873423
+    All:
+      '2016': 2873423
+  Higher Education Maintenance and Reserve Fund:
+    Federal Coal Lease Bonuses:
+      '2016': 2873423
+    All:
+      '2016': 2873423
+  Innovative Energy Fund:
+    Severance Tax:
+      '2016': 1500000
+    All:
+      '2016': 1500000
+  CSU Trust:
+    State Royalties (In-Scope Commodities):
+      '2016': 665391
+    All:
+      '2016': 665391
+  Public Buildings Trust:
+    State Royalties (In-Scope Commodities):
+      '2016': 8226
+    All:
+      '2016': 8226
+  Internal Improvements (Colorado Parks and Wildlife):
+    State Royalties (In-Scope Commodities):
+      '2016': 3126
+    All:
+      '2016': 3126

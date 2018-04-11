@@ -123,10 +123,9 @@ selector: list
 
 {% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
 {% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %}
-
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Tribal revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | divided_by: 1000000 | round | intcomma_dollar }} million to tribes and allottees.</p>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | intword | intcomma_dollar }} to tribes and allottees.</p>
           <p><a href="{{site.baseurl}}/how-it-works/tribal-revenue/">Learn about tribal revenues</a></p>
         </div>
 

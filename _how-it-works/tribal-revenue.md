@@ -35,7 +35,10 @@ revenue_types:
   Other Revenues: Other Revenue
 ---
 
-> Natural resources are increasingly a key source of income for many Native American tribes. In FY 2016, ONRR and {{ "OST" | term }} disbursed [$560.4 million to tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx).
+{% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
+{% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %}
+
+> Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.
 
 {% include selector.html %}
 
@@ -79,7 +82,7 @@ In the case of an {{ "IMDA" | term }} agreement, the tribe collects taxes and no
 
 When the federal government collects payments, they're generally deposited into trust accounts managed by the Office of the Special Trustee for American Indians (OST). When deposits are made into an OST-owned lockbox, OST deposits the funds into a trust account. When deposits are made into a tribal-owned lockbox, the tribe receives the funds directly.
 
-ONRR provides a financial distribution report called an Explanation of Payment report (EOP) to tribes. For allottees, ONRR provides the collection information to BIA to create the EOP which outlines the distribution for each mineral owner. OST then transfers funds from the OST treasury account to either the mineral owner’s individual account or make a payment via check or automated clearing house payment to the mineral estate owner. 
+ONRR provides a financial distribution report called an Explanation of Payment report (EOP) to tribes. For allottees, ONRR provides the collection information to BIA to create the EOP which outlines the distribution for each mineral owner. OST then transfers funds from the OST treasury account to either the mineral owner’s individual account or make a payment via check or automated clearing house payment to the mineral estate owner.
 
 ## Revenue data
 
@@ -119,8 +122,6 @@ In the tables below, revenue may be grouped differently depending on the stage o
 
 Tribal revenue data, like federal revenue data, is subject to standards, audits, and assurances. These include:
 
-- The [Onshore Energy and Mineral Lease Management Interagency Standard Operating Procedures (PDF)](https://www.blm.gov/style/medialib/blm/wo/MINERALS__REALTY__AND_RESOURCE_PROTECTION_/energy/oil_and_gas.Par.5734.File.dat/Interagency_SOP.pdf) outlines the procedures that BLM, ONRR, and BIA follow to verify and enforce compliance for production and revenue collection from Indian lands
-- The [Indian Self-Determination and Education Act (Public Law 93-638)](https://www.doi.gov/ost/tribal_beneficiaries/contracting) and Section 202 of the [Federal Oil & Gas Royalty Management Act of 1982 (PDF)](https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf) (FOGRMA) outline how DOI may contract with a tribe to perform compliance activities 
-- The Office of the Special Trustee for American Indians (OST) [Annual Report of the Tribal and Other Trust Funds and Individual Indian Monies Trust Funds Managed by the U.S. Department of the Interior OST](https://www.doi.gov/ost) includes the annual auditor’s report for tribal and other trust funds under the [American Indian Trust Fund Management Reform Act of 1994 (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/ost/trust_documents/upload/American-IndianTrustFundManagementReformActof1994.pdf). [Archived audits are available here](https://www.doi.gov/ost/trust_documents/Annual-Audits). 
-
-
+- The [Onshore Energy and Mineral Lease Management Interagency Standard Operating Procedures (PDF)](https://www.onrr.gov/about/pdfdocs/FINAL%20Interagency%20SOP%20-%2009-23-13.pdf) outlines the procedures that BLM, ONRR, and BIA follow to verify and enforce compliance for production and revenue collection from Indian lands
+- The [Indian Self-Determination and Education Act (Public Law 93-638)](https://www.doi.gov/ost/tribal_beneficiaries/contracting) and Section 202 of the [Federal Oil & Gas Royalty Management Act of 1982 (PDF)](https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf) (FOGRMA) outline how DOI may contract with a tribe to perform compliance activities
+- The Office of the Special Trustee for American Indians (OST) [Annual Report of the Tribal and Other Trust Funds and Individual Indian Monies Trust Funds Managed by the U.S. Department of the Interior OST](https://www.doi.gov/ost) includes the annual auditor’s report for tribal and other trust funds under the [American Indian Trust Fund Management Reform Act of 1994 (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/ost/trust_documents/upload/American-IndianTrustFundManagementReformActof1994.pdf). [Archived audits are available here](https://www.doi.gov/ost/trust_documents/Annual-Audits).

@@ -40,7 +40,7 @@ selector: list
 
 ### Geothermal energy
 
-Geothermal energy comes from the earth’s heat, which is captured as steam or hot water and converted into energy. Most geothermal resources are found along the boundaries of tectonic plates and manifest themselves as volcanoes, hot springs, or geysers. The U.S. is the largest producer of geothermal energy and [California](({{site.baseurl}}/explore/CA/#production)) produces more than any other state.
+Geothermal energy comes from the earth’s heat, which is captured as steam or hot water and converted into energy. Most geothermal resources are found along the boundaries of tectonic plates and manifest themselves as volcanoes, hot springs, or geysers. The U.S. is the largest producer of geothermal energy and [California]({{site.baseurl}}/explore/CA/#production) produces more than any other state.
 
 Many sites for potential geothermal development are on federal land. The Bureau of Land Management (BLM) has the authority to [manage geothermal leasing on 240 million acres of public land](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy). Advances in extraction methods and technology could result in new sources of geothermal energy.
 

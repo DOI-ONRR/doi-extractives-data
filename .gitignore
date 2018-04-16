@@ -13,3 +13,6 @@ node_modules
 tmp
 yarn*
 styleguide
+.brackets.json
+.clasp.json
+.npmrc

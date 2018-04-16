@@ -211,15 +211,15 @@ There are other laws governing natural resources and extractive companies’ ope
 
 ## Other laws
 
-There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:
+There are many other laws with which extractive industries companies must comply. The Department of the Interior (DOI), Environmental Protection Agency (EPA), the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:
 
 
-* [DOI BOEM](http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx)
+* [DOI Bureau of Ocean Energy Management](http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx) (BOEM)
 * [DOI Bureau of Safety and Environmental Enforcement](http://www.bsee.gov/Regulations-and-Guidance/BSEE-Governing-Statutes/) (BSEE)
-* [DOI BLM](http://www.blm.gov/wo/st/en/info/regulations.html)
-* [EPA](http://www2.epa.gov/laws-regulations/laws-and-executive-orders#majorlaws)
-* [OSMRE](http://www.osmre.gov/lrg.shtm)
-* [NOAA](http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html)
+* [DOI Bureau of Land Management](http://www.blm.gov/wo/st/en/info/regulations.html) (BLM)
+* [Environmental Protection Agency](http://www2.epa.gov/laws-regulations/laws-and-executive-orders#majorlaws) (EPA)
+* [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/lrg.shtm) (OSMRE)
+* [National Oceanic and Atmospheric Administration](http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html) (NOAA)
 
 
 ## Regulations

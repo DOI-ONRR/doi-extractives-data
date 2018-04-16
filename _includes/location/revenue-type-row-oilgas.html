@@ -9,15 +9,18 @@
     | plus: revenue_types.Oil.All[year]
     | plus: revenue_types.Gas.All[year]
     | plus: revenue_types.NGL.All[year]
+    | plus: revenue_types['Oil Shale'].All[year]
   %}
   <th scope="row" rowspan="2" data-value="{{ total }}" name="#revenue-{{ commodity_name | slugify }}" class="table-arrow_box-subheader">
     <strong>Oil &amp; Gas </strong><br>
     <strong class="table-arrow_box-subheader-value">{{ total | intcomma_dollar }}</strong>
   </th>
+  
   {% assign oilgas_bonus_total = values.Bonus[year] | default: 0
     | plus: revenue_types.Oil.Bonus[year]
     | plus: revenue_types.Gas.Bonus[year]
     | plus: revenue_types.NGL.Bonus[year]
+    | plus: revenue_types['Oil Shale'].Bonus[year]
   %}
   <td rowspan="2" data-value="{{
     oilgas_bonus_total | default: 0
@@ -28,6 +31,7 @@
     | plus: revenue_types.Oil.Rents[year]
     | plus: revenue_types.Gas.Rents[year]
     | plus: revenue_types.NGL.Rents[year]
+    | plus: revenue_types['Oil Shale'].Rents[year]
   %}
   <td rowspan="2" data-value="{{
     oilgas_rents_total | default: 0
@@ -42,6 +46,9 @@
   }}"></span>
     <span data-value="{{
     revenue_types.NGL.Royalties[year] | default: 0
+  }}"></span>
+    <span data-value="{{
+    revenue_types['Oil Shale'].Royalties[year] | default: 0
   }}"></span>
 
     {% if revenue_types.Oil.Royalties[year] %}
@@ -65,12 +72,19 @@
       <strong class="text-header text-header-third">NGL</strong>
       {{ revenue_types.NGL.Royalties[year] | default: 0 | intcomma_dollar }}</span>
     {% endif %}
+
+    {% if revenue_types['Oil Shale'].Royalties[year] %}
+      <span class="text table-arrow_box-subheader-value">
+      <strong class="text-header text-header-third">Oil Shale</strong>
+      {{ revenue_types['Oil Shale'].Royalties[year] | default: 0 | intcomma_dollar }}</span>
+    {% endif %}
   </td>
 
   {% assign oilgas_other_total = values['Other Revenues'][year] | default: 0
     | plus: revenue_types.Oil['Other Revenues'][year]
     | plus: revenue_types.Gas['Other Revenues'][year]
     | plus: revenue_types.NGL['Other Revenues'][year]
+    | plus: revenue_types['Oil Shale']['Other Revenues'][year]
   %}
   <td rowspan="2" data-value="{{ oilgas_other_total }}" class="table-arrow_box-value"><span class="text table-arrow_box-subheader-value">{{ oilgas_other_total | intcomma_dollar }}</span></td>
 </tr>

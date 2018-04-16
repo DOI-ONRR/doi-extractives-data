@@ -145,6 +145,22 @@
     <section class="chart-list">
 
       {% for _commodity in jobs_by_commodity %}
+
+        {% assign commodity_has_data = false %}
+      
+        {% for _commodity_year in _commodity[1] %}
+      
+          {% if year_range contains _commodity_year[0] %}
+            {% assign commodity_has_data = true %}
+            {% break %}
+          {% endif %}
+          
+        {% endfor %}
+      
+        {% if commodity_has_data == false %}
+          {% continue %}
+        {% endif %}
+      
         {% assign commodity = _commodity[0] %}
         {% assign commodity_name = commodity | lookup: commodity_alias | downcase %}
         {% unless show_commodities contains commodity %}

@@ -154,7 +154,7 @@
           return d;
         })
         .text(function(d) {
-          return formatText(this, d);
+          return (d === 0)? 'Withheld' : formatText(this, d);
         });
 
       var that = this;

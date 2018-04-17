@@ -58,7 +58,7 @@ The current tax rate is $1.10 per ton for coal from underground mines and $0.55 
   </tbody>
 </table>
 
-The coal excise tax rates are scheduled to decline to $0.50 per ton for underground mines and $0.25 per ton for surface mines (both limited to two percent of the coal’s selling price). This change will occur either on January 1, 2019 or the first January 1st when there are no more repayable advances from the General Fund to the Trust Fund and no unpaid interest on previous such advances.
+The coal excise tax rates are scheduled to decline to $0.50 per ton for underground mines and $0.25 per ton for surface mines (both limited to two percent of the coal’s selling price). This change will occur either on January 1, 2019, or the first January 1 when there are no more repayable advances from the General Fund to the Trust Fund and no unpaid interest on previous such advances.
 
 ## Notes
 

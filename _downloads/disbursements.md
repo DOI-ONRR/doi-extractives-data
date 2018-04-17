@@ -89,7 +89,7 @@ _Other_ Certain offshore funds are directed back to the federal agencies that ad
 
 ## Archive
 
-In the past, this site has offered detailed data for disbursements distributed from other funds. For example, the data below
+In the past, this site has offered detailed data for disbursements distributed from other funds. For example, the data below details disbursements to sub-funds of the Land and Water Conservation Fund and the Historic Preservation Fund.
 
 ### Land and Water Conservation Fund
 

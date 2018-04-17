@@ -5,6 +5,8 @@ FIPS: 08
 
 opt_in: true
 
+state_revenue_year: 2016
+
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates
 is_cropped: true
@@ -20,7 +22,7 @@ state_revenue_sustainability: |
 state_tax_expenditures: |
   In FY2015, Colorado had 15 tax expenditures directly related to the extractive industries which reduced state and local revenue. Data on the exact revenue impact for all expenditures is largely unavailable due to confidentiality requirements or inability to collect that information, however, the Oil and Gas Ad Valorem Credit had an impact of $134,915,000. The Colorado Department of Revenue outlines tax expenditures in its annual [Tax Profile and Expenditure Report (PDF)](https://www.colorado.gov/pacific/sites/default/files/2016%20Tax%20Profile%20and%20Expenditure%20Report.pdf).
 state_disbursements: |
-  State agencies distribute revenue according to the [Colorado State Code](https://www.sos.state.co.us/CCR/Welcome.do). In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes, chiefly property taxes. Weld County, for example, produces the most oil and gas in the state, and generates a signification portion of its property tax revenue from oil and gas. It then disburses this revenue to help fund local schools, fire departments, libraries, towns, and water districts, among other items. For more details on how Weld County disburses property tax revenue see the county’s [distribution statements and treasurer reports](https://www.weldgov.com/cms/One.aspx?portalId=169&pageId=2451).
+  State agencies distribute revenue according to the [Colorado State Code](https://www.sos.state.co.us/CCR/Welcome.do). In addition to receiving distributions from the state, counties also collect and distribute revenue from local taxes, chiefly property taxes. Weld County, for example, produces the most oil and gas in the state, and generates a significant portion of its property tax revenue from oil and gas. It then disburses this revenue to help fund local schools, fire departments, libraries, towns, and water districts, among other items. For more details on how Weld County disburses property tax revenue see the county’s [distribution statements and treasurer reports](https://www.weldgov.com/cms/One.aspx?portalId=169&pageId=2451).
 state_saving_spending: |
   Many states choose to establish permanent mineral trust funds, which can help governments smooth revenue and investments across boom and bust cycles. In FY2016, Colorado saved 28.05% of total state revenue from extractive activities. In a given year, most of Colorado’s saved extractive revenues goes to one of these funds:
 
@@ -97,4 +99,3 @@ Colorado has not been “certified” by the federal [Abandoned Mine Land (AML) 
 Colorado currently has $75.3 million in unfunded abandoned mine land areas in need of reclamation. Priority 1 abandoned mine land (AML) areas, the highest priority, account for $41.5 million (or 55.2%) of those unfunded costs. Priority 1 AML areas are those that are necessary to reclaim in order to protect public health, safety, and property from extreme danger of adverse effects of coal mining practices pre-1977. This can include restoration of land, water, and/or the environment.
 
 As of June 2017, $4.2 million in reclamation work was underway and $63.2 million had been completed across the three priority types.
-

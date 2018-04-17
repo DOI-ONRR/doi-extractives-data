@@ -39,7 +39,6 @@
   extentMargin = barHeight * extentPercent;
   top += extentMargin;
   var extentTop = top - extentMargin;
-
   var fullHeight = height + textMargin + extentMargin
     + tickPadding - (2 * baseMargin);
   var extentlessHeight = fullHeight - extentMargin;
@@ -89,6 +88,10 @@
   };
 
   var crawlCeil = function(ymax, ceilMax, i) {
+    // When ymax is a value less than 10, the ratio of ceilMax and ymax will never
+    // be less than (1 + extentMarginOfError + extentPercent), and the function will continue
+    // be called in its parent function's while loop.
+
     var sigFig = '.' + i + 's';
     var sigFigCeil = +eiti.format.transform(
       sigFig,
@@ -100,6 +103,14 @@
     return justRight ? sigFig : '';
   };
 
+  /**
+   * This function formats a number as the number of significant digits
+   * with its amount (e.g. M for million, K for thousand, etc) abbreviation
+   * For example:
+   * 1,000,000 formats to 1M
+   * @param {Number} ymax
+   * @param {Number} ceilMax ymax + extent of the data set
+   */
   var setSigFigs = function(ymax, ceilMax) {
     var sigFigs = '';
     var SF = 0;
@@ -120,7 +131,8 @@
     }
 
     var data = this.data;
-    var values = data;
+    var values = data;    
+    
     if (Array.isArray(data)) {
       values = d3.nest()
         .key(function(d) {
@@ -173,8 +185,19 @@
     var extent = d3.extent(data, function(d) {
       return d.y;
     });
-    var ymax = extent[1];
-    var ymin = Math.min(0, extent[0]);
+
+    var ymax;
+
+    if (extent[1] && extent[1] < 10) {
+      // If the max size of the dataset is under 10,
+      // increase the size of the ymax so the bar doesnt
+      // scale up to the height of the extent line
+      ymax = 10;
+    } else {
+      ymax = Math.max(0, extent[1]);
+    }
+
+    var ymin = 0;
 
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);
@@ -211,12 +234,14 @@
         var isUndefined = d.y === undefined;
         var isZero = d.y === 0;
         var isWithheld = d.y === null;
-        var baseHeight = isUndefined || isZero || isWithheld
+        var isNegative = d.y < 0;
+        var baseHeight = isUndefined || isZero || isWithheld || isNegative
           ? 0
           : 2;
         d.height = height(d.y) > baseHeight
           ? height(d.y)
           : baseHeight;
+
         return d.height;
       })
       .attr('y', function(d) {
@@ -229,8 +254,6 @@
       .attr('height', barHeight + textMargin + tickPadding)
       .attr('width', barWidth);
 
-    // selection.call(updateSelected, this.x);
-
     // if bars are simply an icon, don't handle mouse events
     // as the bars will be too small!
     if (!isIcon) {
@@ -242,8 +265,6 @@
         selection.call(updateSelected, self.x);
       }, true);
     }
-
-
 
     var axis = d3.svg.axis()
       .orient('bottom')
@@ -272,7 +293,7 @@
       var dataUnits = this.getAttribute('data-units');
       var dataFormat = this.getAttribute('data-format') || '';
 
-      var ceilMax = Math.ceil(+ymax * (1 + extentPercent));
+      var ceilMax = Math.ceil(ymax * (1 + extentPercent));
       var sigFigs = setSigFigs(ymax, ceilMax);
 
       if (dataUnits.indexOf('$') > -1) {
@@ -316,14 +337,26 @@
         return vals[year];
       }
     }
+    
+    function isNegative(year, vals) {
+      vals = vals || values;
+      if (vals[year] !== undefined) {
+        return vals[year].y < 0;
+      } else {
+        return vals[year];
+      }
+    }
 
     xAxis.selectAll('text')
       .attr('class', function(d) {
         if (!isInSet(d)) {
           return 'dataless';
         }
+        if (isNegative(d)) {
+          return 'data-negative';
+        }
       });
-
+    
     xAxis.selectAll('path, line')
         .attr('fill', 'none');
 
@@ -343,13 +376,15 @@
     return text;
   };
 
-  var hideCaption = function(selection, data, noData, withheld) {
+  var hideCaption = function(selection, data, noData, withheld, negative) {
     selection.select('.caption-data')
       .attr('aria-hidden', data);
     selection.select('.caption-no-data')
       .attr('aria-hidden', noData);
     selection.select('.caption-withheld')
     .attr('aria-hidden', withheld);
+    selection.select('.caption-negative-data')
+    .attr('aria-hidden', negative);
   };
 
   var updateSelected = function(selection, x, hover) {
@@ -401,12 +436,17 @@
       var units = y.attr('data-units');
 
       if (value.y === null) {
-        hideCaption(output, true, true, false);
+        hideCaption(output, true, true, false, true);
       } else {
         if (value.y === undefined) {
-          hideCaption(output, true, false, true);
+          hideCaption(output, true, false, true, true);
         } else {
-          hideCaption(output, false, true, true);
+          if(value.y < 0) {
+            hideCaption(output, true, true, true, false);
+          }
+          else {
+            hideCaption(output, false, true, true, true);
+          }
           y.text(formatUnits(format(value.y), units));
         }
       }

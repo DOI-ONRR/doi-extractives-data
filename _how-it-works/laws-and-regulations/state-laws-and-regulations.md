@@ -1,5 +1,5 @@
 ---
-title: State Laws and Regulations | How It Works
+title: State laws and regulations | How It Works
 layout: content
 permalink: /how-it-works/state-laws-and-regulations/
 nav_description: Jump to a section
@@ -27,7 +27,7 @@ tag:
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
-title_display: State Laws and Regulations
+title_display: State laws and regulations
 selector: list
 redirect_from: /how-it-works/state-legal-fiscal-info/
 ---

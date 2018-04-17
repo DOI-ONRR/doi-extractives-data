@@ -154,7 +154,7 @@
           return d;
         })
         .text(function(d) {
-          return formatText(this, d);
+          return (d === 0)? 'Withheld' : formatText(this, d);
         });
 
       var that = this;
@@ -370,6 +370,11 @@
 
         if (childCells.length) {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+          
+          if(Math.abs(size) === 0) {
+             bar.style.setProperty('display', 'none');
+          }
+          
           [].forEach.call(childCells, function(childSpan) {
             var childBar = document.createElement('div');
             childBar.className = 'bar';
@@ -377,9 +382,16 @@
             var childValue = +childSpan.dataset.value;
             size = width(childValue);
             newBar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+            if(Math.abs(size) === 0) {
+               newBar.style.setProperty('display', 'none');
+            }
           });
         } else {
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
+          
+          if(Math.abs(size) === 0) {
+             bar.style.setProperty('display', 'none');
+          }
         }
       });
 

@@ -1,6 +1,6 @@
 ---
-title: Corporate Income Tax | How it works
-title_display: Corporate Income Tax
+title: Corporate income tax | How it works
+title_display: Corporate income tax
 layout: content
 description: "Due to U.S. law, information about companies’ individual income tax payments is confidential. However, there are two key sources of publicly available information about federal income taxes for the extractive industries: the government and the filings of companies that are publicly listed."
 tag:
@@ -38,7 +38,7 @@ As mandated by the [Revenue Act of 1916](http://legisworks.org/sal/39/stats/STAT
 
 SOI publishes data on [tax statistics](https://www.irs.gov/uac/Tax-Stats-2) and [corporation tax statistics](https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics).  SOI aggregates tax data separately for [S-corporations](https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics).
 
-SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by {{ "NAICS" | term }} industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.
+SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by {{ "NAICS" | term:"north american industry classification system (naics)" }} industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.
 
 ### Corporate income tax receipts
 
@@ -138,4 +138,3 @@ In 2010, the United States enacted the [Dodd-Frank Act]({{ site.baseurl }}/how-i
 [^1]: Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry.
 [^2]: Internal Revenue Service, [Tax Returns of Active Corporations](https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1). All figures are estimates based on samples.
 [^3]: Petroleum and coal products manufacturing encompasses an additional industry subcategory, **Asphalt paving, roofing, other petroleum and coal products**, which as exluded because it is outside the scope of EITI.
-

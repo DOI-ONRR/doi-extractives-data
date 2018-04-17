@@ -61,3 +61,4 @@ exclude:
   - maps/land/*.json
   - serve*
   - re-serve*
+  - public

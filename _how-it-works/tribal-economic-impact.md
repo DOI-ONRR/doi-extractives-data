@@ -36,7 +36,7 @@ Little data exists to measure the economic impact of extraction on tribal econom
 
 ## Gross domestic product and jobs
 
-The Bureau of Economic Analysis, Bureau of Labor Statistics, and the U.S. Census Bureau do not collect tribal-specific information related to the extractive industries. The closest indicator for the extractive industries’ effect on tribal economies comes from the Department of the Interior’s [Economic Report for Fiscal Year 2015 (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/fy2015_doi_econ_report_2016-06-17.pdf). See page 22 of this annual report for estimates of the direct economic contribution, total economic contribution, and total value added by DOI’s activities, as well as the total number of domestic jobs supported by those activities.
+The Bureau of Economic Analysis, Bureau of Labor Statistics, and the U.S. Census Bureau do not collect tribal-specific information related to the extractive industries. The closest indicator for the extractive industries’ effect on tribal economies comes from the [Department of the Interior’s Economic Report (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/fy_2016_doi_economic_report_2017-09-25.pdf). See page 10 of this annual report for estimates of the direct economic contribution, total economic contribution, and total value added by DOI’s activities, as well as the total number of domestic jobs supported by those activities.
 
 ## Costs
 

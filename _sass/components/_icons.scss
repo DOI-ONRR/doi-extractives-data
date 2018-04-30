@@ -4,6 +4,10 @@
   width: 1.5rem;
 }
 
+.icon-medium {
+  width: 3rem;
+}
+
 .icons-stack {
   display: inline-block;
   height: 2em;
@@ -27,4 +31,10 @@
 
 .icons-stack-2x {
   font-size: 2em;
+}
+
+/* Makes SVG icons in object elements clickable */
+
+a > object {
+  pointer-events: none;
 }

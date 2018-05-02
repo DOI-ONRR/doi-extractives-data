@@ -177,7 +177,7 @@
         .attr('data-year', year)
         .text(year)
 
-      sentences.select('[data-year]')
+      sentences.selectAll('[data-year]')
         .attr('data-year', year)
         .text(year)
 
@@ -372,10 +372,14 @@
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
           
           if(Math.abs(size) === 0) {
-             bar.style.setProperty('display', 'none');
+            bar.style.setProperty('display', 'none');
+          }
+          else {
+            bar.style.removeProperty('display')
           }
           
           [].forEach.call(childCells, function(childSpan) {
+            
             var childBar = document.createElement('div');
             childBar.className = 'bar';
             var newBar = barExtent.appendChild(childBar);
@@ -383,14 +387,21 @@
             size = width(childValue);
             newBar.style.setProperty(sizeProperty, Math.abs(size) + '%');
             if(Math.abs(size) === 0) {
-               newBar.style.setProperty('display', 'none');
+              newBar.style.setProperty('display', 'none');
+            }
+            else {
+              newBar.style.removeProperty('display')
             }
           });
         } else {
+          
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
           
           if(Math.abs(size) === 0) {
-             bar.style.setProperty('display', 'none');
+            bar.style.setProperty('display', 'none');
+          }
+          else {
+            bar.style.removeProperty('display')
           }
         }
       });

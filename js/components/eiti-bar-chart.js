@@ -257,11 +257,11 @@
     // if bars are simply an icon, don't handle mouse events
     // as the bars will be too small!
     if (!isIcon) {
-      bars.on('mouseover', function(d) {
+      bars.on('mouseenter', function(d) {
         selection.call(updateSelected, d.x, true);
       }, true);
 
-      svg.on('mouseout', function() {
+      svg.on('mouseleave', function() {
         selection.call(updateSelected, self.x);
       }, true);
     }

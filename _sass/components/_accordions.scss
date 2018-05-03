@@ -69,7 +69,7 @@
 
     [accordion-text] {
       &::after {
-        content: $icon-plus-sm;
+        content: url(../public/img/icons/icon-plus.svg);
       }
 
       .accordion-more {

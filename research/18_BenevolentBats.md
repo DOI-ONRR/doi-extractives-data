@@ -1,29 +1,14 @@
 # Goals
 
-1. Determine whether we have addressed issues identified during last round of research
-* Can users get to the specific data they want using any of the designs?
-1. Determine the best approach to presenting disbursements data
-* Are tables useful?
-* Are filters useful?
-* Are charts useful?
-* Is commodity data useful?
-* What do users like/don’t like about a specific piece of a design?
-* Do users want any of the other functions like download, email, and save?
-
-# Goals and questions:
-
 | Goals | Questions |
 | :----- | :--------- |
-| Learn what data is available to us. | What data is currently available to us? |
-| | Could more data be made avaialable? |
-| | What data do we want that we don't have?|
-| Learn who controls the conditions for access to the disbursements data.| Who controls the disbursements data? |
-| | How often does the data come? |
-| | Is it possible to get the data on a more frequent or regular basis?|
-| Gain an understanding of the format users prefer to see the disbursements data presented. | How would the user like the data presented? |
-| | What does the user want to do with the data? |
-| | What do they want to know about revenue once it has been disbursed? |
-| | Which of these sites present their data in the most preferable manner? |
+| Determine whether we have addressed issues identified during last round of research. | Can users get to the specific data they want using any of the designs? |
+| Determine the best approach to presenting disbursements data.| Are tables useful?|
+| | Are filters useful? |
+| | Are charts useful?|
+| | Is commodity data useful?|
+| | What do users like/don’t like about a specific piece of a design?|
+| | Do users want any of the other functions like download, email, and save?|
 
 
 

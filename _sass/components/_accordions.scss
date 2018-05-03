@@ -69,7 +69,14 @@
 
     [accordion-text] {
       &::after {
-        content: url(../public/img/icons/icon-plus.svg);
+        background-image: url("../../public/img/icons/icon-plus.svg");
+        background-size: 0.7rem 0.7rem;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 0.7rem;
+        height: 0.7rem;
+        margin: 0 0 0.3rem 0.3rem;
+        content:"";
       }
 
       .accordion-more {

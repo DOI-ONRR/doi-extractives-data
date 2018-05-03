@@ -1,14 +1,14 @@
 # Goals
 
-* Determine whether we have addressed issues identified during last round of research
-** Can users get to the specific data they want using any of the designs?
-* Determine the best approach to presenting disbursements data
-** Are tables useful?
-** Are filters useful?
-** Are charts useful?
-** Is commodity data useful?
-** What do users like/don’t like about a specific piece of a design?
-** Do users want any of the other functions like download, email, and save?
+1. Determine whether we have addressed issues identified during last round of research
+* Can users get to the specific data they want using any of the designs?
+1. Determine the best approach to presenting disbursements data
+* Are tables useful?
+* Are filters useful?
+* Are charts useful?
+* Is commodity data useful?
+* What do users like/don’t like about a specific piece of a design?
+* Do users want any of the other functions like download, email, and save?
 
 # Goals and questions:
 

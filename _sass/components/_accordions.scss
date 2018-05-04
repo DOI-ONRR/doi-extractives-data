@@ -31,7 +31,6 @@ display: inline-block;
 width: 0.8rem;
 height: 0.8rem;
 margin: 0 0 0.3rem 0.2rem;
-fill: $blue;
 content:"";
 }
 
@@ -50,7 +49,7 @@ content:"";
 
     [accordion-text] {
       &::after {
-        background-image: url("../../public/img/icons/icon-min.svg");
+        background-image: $icon-min;
         @extend .background-icon;
       }
 
@@ -82,7 +81,7 @@ content:"";
 
     [accordion-text] {
       &::after {
-        background-image: url("../../public/img/icons/icon-plus.svg");
+        background-image: $icon-plus;
         @extend .background-icon;
       }
 

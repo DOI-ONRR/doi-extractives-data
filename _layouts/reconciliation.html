@@ -60,8 +60,7 @@ layout: default
         <p>{{ page.introduction }} To learn more, review the <a href="{{ site.baseurl }}/downloads/reconciliation/#scope">scope</a> of the reconciliation process or the list of <a href="{{ site.baseurl }}/downloads/reconciliation/#in-scope-companies">companies</a> included.</p>
 
         <a href="{{ site.baseurl }}/downloads/reconciliation/">
-          <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-          </object>Data and documentation
+          {% include data_and_docs.html %}
         </a>
       </div>
     </div><!-- /.container-left-4 -->

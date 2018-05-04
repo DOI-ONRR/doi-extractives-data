@@ -92,15 +92,13 @@
             </p>
             <p>
               <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-                <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-                </object>Data and documentation
+                {% include data_and_docs.html %}
               </a>
             </p>
           {% else %}
             <p class="chart-description{% unless revenue_commodities %} no-selector{% endunless %}">
               In {{ year }}, the federal government didn't receive any payment for extraction of natural resources on federal land (or lease federal land for that purpose) in {{ region_title }}. <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-                <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-                </object>Data and documentation
+                {% include data_and_docs.html %}
               </a>
             </p>
           {% endif %}

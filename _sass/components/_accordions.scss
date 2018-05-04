@@ -23,6 +23,18 @@
 //
 // Styleguide components.accordions
 
+//Accordion icon sizing and placement//
+.background-icon {
+background-size: 0.8rem 0.8rem;
+background-repeat: no-repeat;
+display: inline-block;
+width: 0.8rem;
+height: 0.8rem;
+margin: 0 0 0.3rem 0.2rem;
+fill: $blue;
+content:"";
+}
+
 [accordion-item] {
   position: relative;
 
@@ -38,7 +50,8 @@
 
     [accordion-text] {
       &::after {
-        content: $icon-dash-sm;
+        background-image: url("../../public/img/icons/icon-min.svg");
+        @extend .background-icon;
       }
 
 
@@ -70,13 +83,7 @@
     [accordion-text] {
       &::after {
         background-image: url("../../public/img/icons/icon-plus.svg");
-        background-size: 0.8rem 0.8rem;
-        background-repeat: no-repeat;
-        display: inline-block;
-        width: 0.8rem;
-        height: 0.8rem;
-        margin: 0 0 0.3rem 0.2rem;
-        content:"";
+        @extend .background-icon;
       }
 
       .accordion-more {

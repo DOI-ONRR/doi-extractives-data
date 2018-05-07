@@ -147,7 +147,7 @@
         .datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
-          return cellData(data, year, property);
+          return cellData(data, year, property) || 0;
         })
         .attr('data-value-text', function(d) {
           return d;

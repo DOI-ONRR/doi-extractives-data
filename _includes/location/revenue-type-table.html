@@ -211,19 +211,19 @@
             <tr class="table-arrow_box-category"><td colspan="5">
               All commodities
               {% if oilgas_exists == true %}
-                <icon class="icon-oil"></icon>
+                {% include svg/icon-oil.svg %}
               {% endif %}
 
               {% if coal_exists == true %}
-                <icon class="icon-coal"></icon>
+                {% include svg/icon-coal.svg %}
               {% endif %}
 
               {% if geothermal_exists == true %}
-                <icon class="icon-geo"></icon>
+                {% include svg/icon-geothermal.svg %}
               {% endif %}
 
               {% if wind_exists == true %}
-                <icon class="icon-wind"></icon>
+                {% include svg/icon-renewables.svg %}
               {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}

@@ -1,4 +1,8 @@
-
+//Fills SVG with color based on instance
+.icon {
+  fill: currentColor;
+  margin-left: 0.1rem;
+}
 
 .icon-small {
   width: 1.5rem;
@@ -31,10 +35,4 @@
 
 .icons-stack-2x {
   font-size: 2em;
-}
-
-//Fills SVG with color based on instance
-svg.icon {
-  fill: currentColor;
-  margin-left: 0.1rem;
 }

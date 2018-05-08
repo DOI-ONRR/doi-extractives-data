@@ -34,7 +34,7 @@
   var bottom = height - margin.bottom;
   var barHeight = bottom - top;
 
-  var extentPercent = 0.05; // 5%
+  var extentPercent = 0.07; // 7%
   var extentMarginOfError = 0.10; // 10%. Read as +/- the value created by extentPercent
   extentMargin = barHeight * extentPercent;
   top += extentMargin;
@@ -186,16 +186,7 @@
       return d.y;
     });
 
-    var ymax;
-
-    if (extent[1] && extent[1] < 10) {
-      // If the max size of the dataset is under 10,
-      // increase the size of the ymax so the bar doesnt
-      // scale up to the height of the extent line
-      ymax = 10;
-    } else {
-      ymax = Math.max(0, extent[1]);
-    }
+    var ymax = Math.max(0, extent[1]);
 
     var ymin = 0;
 

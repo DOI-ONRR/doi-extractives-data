@@ -34,7 +34,7 @@
   var bottom = height - margin.bottom;
   var barHeight = bottom - top;
 
-  var extentPercent = 0.07; // 7%
+  var extentPercent = 0.05; // 5%
   var extentMarginOfError = 0.10; // 10%. Read as +/- the value created by extentPercent
   extentMargin = barHeight * extentPercent;
   top += extentMargin;
@@ -99,6 +99,9 @@
     )(ceilMax);
     var ceilIsLargerThanValue = sigFigCeil > +ymax;
     var ceilIsntTooBig = ( sigFigCeil / +ymax ) <= (1 + extentMarginOfError + extentPercent);
+    if(!ceilIsntTooBig){
+      ceilIsntTooBig = ((sigFigCeil - ymax) < 10); // Accomodate for small numbers if the difference is smal then this should be acceptable
+    }
     var justRight = ceilIsLargerThanValue && ceilIsntTooBig;
     return justRight ? sigFig : '';
   };

@@ -33,7 +33,8 @@
   font-size: 2em;
 }
 
-.revenue svg {
+//Fills SVG with color based on instance
+svg.icon {
   fill: currentColor;
   margin-left: 0.1rem;
 }

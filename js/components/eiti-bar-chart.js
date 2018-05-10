@@ -99,6 +99,9 @@
     )(ceilMax);
     var ceilIsLargerThanValue = sigFigCeil > +ymax;
     var ceilIsntTooBig = ( sigFigCeil / +ymax ) <= (1 + extentMarginOfError + extentPercent);
+    if(!ceilIsntTooBig){
+      ceilIsntTooBig = ((sigFigCeil - ymax) < 10); // Accomodate for small numbers if the difference is smal then this should be acceptable
+    }
     var justRight = ceilIsLargerThanValue && ceilIsntTooBig;
     return justRight ? sigFig : '';
   };
@@ -186,16 +189,7 @@
       return d.y;
     });
 
-    var ymax;
-
-    if (extent[1] && extent[1] < 10) {
-      // If the max size of the dataset is under 10,
-      // increase the size of the ymax so the bar doesnt
-      // scale up to the height of the extent line
-      ymax = 10;
-    } else {
-      ymax = Math.max(0, extent[1]);
-    }
+    var ymax = Math.max(0, extent[1]);
 
     var ymin = 0;
 

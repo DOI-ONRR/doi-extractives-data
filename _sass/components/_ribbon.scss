@@ -138,11 +138,6 @@
   padding: $base-padding;
 }
 
-.ribbon-card-button {
-  margin-bottom: $base-padding-large;
-  padding: 1em;
-}
-
 .ribbon {
   svg {
     width: 100%;
@@ -248,16 +243,6 @@ svg {
     }
   }
 
-  .ribbon-card:not(.ribbon-card-column) {
-    .ribbon-card-button {
-      bottom: 60%;
-      float: left;
-      left: 12.5%;
-      margin: 0;
-      position: absolute;
-    }
-  }
-
   .ribbon-card {
     &.ribbon-card-column {
       .ribbon-card-top {
@@ -284,11 +269,6 @@ svg {
 
     &:not(.ribbon-card-column) {
       border-top: 0;
-
-      .ribbon-card-button {
-        float: none;
-        position: static;
-      }
     }
   }
 

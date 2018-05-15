@@ -2,6 +2,15 @@
 // classes. -- @shawnbot
 // scss-lint:disable SelectorDepth
 eiti-bar-chart {
+  display: block;
+
+  // IE10+ CSS styles go here
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 0;
+    padding-top: 65%;
+    position: relative;
+    width: 100%;
+  }
 
   svg {
     display: block;
@@ -11,6 +20,14 @@ eiti-bar-chart {
     opacity: 1;
     transition: opacity 0.5s;
     width: 100%;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
 
   .bar {

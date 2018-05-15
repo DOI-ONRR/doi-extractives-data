@@ -41,7 +41,7 @@
       };
 
       var coerceNumber = function(num) {
-        return num === null || num === 'undefined'
+        return num === null || num === 'undefined' 
           ? WITHHELD_FLAG
           : num;
       };
@@ -54,7 +54,7 @@
             return NO_DATA_FLAG;
           }
         } else if (data && !property) {
-          return data[year] || coerceNumber(coerce);
+          return data[year] || coerceNumber(data[year]);
         } else {
           return coerceNumber(coerce);
         }
@@ -109,10 +109,9 @@
       var sentencesData = sentences.datum(function() {
           var data = parseYearVals(this);
           var property = this.getAttribute('data-years-property');
-
           return cellData(data, year, property);
         }).attr('data-sentence', function(d) {
-          return d;
+          return d || WITHHELD_FLAG;
         })
         .attr('data-withheld', function(d) {
           return d === WITHHELD_FLAG
@@ -386,7 +385,8 @@
             var childValue = +childSpan.dataset.value;
             size = width(childValue);
             newBar.style.setProperty(sizeProperty, Math.abs(size) + '%');
-            if(Math.abs(size) === 0) {
+
+            if(isNaN(size) || Math.abs(size) === 0) {
               newBar.style.setProperty('display', 'none');
             }
             else {
@@ -396,8 +396,8 @@
         } else {
           
           bar.style.setProperty(sizeProperty, Math.abs(size) + '%');
-          
-          if(Math.abs(size) === 0) {
+
+          if(isNaN(size) || Math.abs(size) === 0) {
             bar.style.setProperty('display', 'none');
           }
           else {

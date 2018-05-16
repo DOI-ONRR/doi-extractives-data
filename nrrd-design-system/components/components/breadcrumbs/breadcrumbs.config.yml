@@ -7,7 +7,3 @@ status: draft
 #     context:
 #       className: breadcrumb
 #       text: Breadcrumb link /
-#   - name: Breadcrumb-iconic
-#     context:
-#       className: case-studies-content-icon
-#       text: Breadcrumb link with icon

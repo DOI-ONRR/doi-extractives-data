@@ -45,6 +45,10 @@ $max-columns: 10;
     border-top: 1px solid $gray-light;
     line-height: 1.3;
     padding: $base-padding-small;
+
+    &.article_table-note {
+      border-top: 0;
+    }
   }
 
   td p {

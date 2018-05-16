@@ -46,9 +46,9 @@
         <tr data-fips='{{ fips }}'>
           <td colspan='3'
               data-year-values='{{ years_values | jsonify }}'
-              data-sentence='{{ product_volume }}'
+              data-sentence='{{product_volume}}'
               aria-hidden='true'
-              data-witheld="false">
+              data-withheld="false">
               <span class="withheld" aria-hidden="true">
                 Data about {{ product_name | downcase }} extraction on federal land in {{ county[1].name }} in <span data-year='{{ year }}'>{{ year }}</span> is withheld.
               </span>

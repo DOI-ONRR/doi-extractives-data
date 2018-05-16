@@ -21,16 +21,14 @@
   content: '';
 }
 
-//Fills SVG with color based on instance
-
+//currentColor fills SVG with inherited color based on instance
 .icon {
   fill: currentColor;
   margin: 0 0.1rem;
 }
 
-.downloads-download_links .icon {
-  margin-right: 0.4rem;
-  vertical-align: middle;
+.icon-leading {
+  margin-right: 0.4em;
 }
 
 .icon-middle {

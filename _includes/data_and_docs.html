@@ -1,1 +1,2 @@
-<img src="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"/>Data and documentation
+{% assign content = include.content | default:'Data and documentation' %}
+{% include svg/icon-data-docs.svg %}{{ content }}

@@ -74,7 +74,8 @@ Consider splitting out the Explore Data page into separate pages.  Will decide w
 
 ## Tables
 
-### Participants had different preferences for interacting with data.   
+### Preferences for Interacting
+Participants had different preferences for interacting with data.   
 Most common were seeing all data in one table, filtering with drop-downs on top, selecting multiple options for a filter, and drilling within tables.  
 
 | Behavior | Total Users | 
@@ -98,5 +99,88 @@ Selecting how to view the data before viewing it | 1 |
  Prototype with data agreed on and look at these with that to determine what makes sense.
  
  ## Filtering
- ### Filtering by geography/location is the most important way to filter.
+ ### Geography/Location
+ Filtering by geography/location is the most important way to filter.
+
+| Behavior | Total Users | 
+| :------------ | :----------- | 
+All participants would filter by geography/location and many would filter by that first. | 6 |  
+Noted that the location picker in Option B is overwhelming and might be difficult to use. | 4 |  
+Wanted a map view to pick location. | 2 |  
+
+#### Plan
+Focus next round of changes on the state pages.
+
+### Source
+Most participants wanted to filter by source, but had different definitions of what a source is.
+
+| Behavior | Total Users | 
+| :------------ | :----------- | 
+ Filters by source. | 4 |  
+Notes that need totals for Onshore and Offshore in Source. | 2 |  
+Doesn't think Source is the right word. | 1 |  
+Didn’t know what 8g is. | 1 |  
+Considers tribal/federal as a source. | 1 |  
+
+#### Plan
+Test out different names for the source filter.  The Data Display team reviewed the data and decided that the filter should be Onshore and Offshore with breakouts for Offshore for GOMESA, 8(g), and Other.  Geothermal can move to Commodity and Tribal is its own Recipient/Fund.
+
+
+## Charts
+### Charts
+While we only showed one type of chart, they brought mixed reviews.
+
+| Behavior | Total Users | 
+| :------------ | :----------- | 
+ Doesn't think the charts would be useful. | 3 |  
+Thinks the data has too small of breakouts for the charts to be useful. | 2 |  
+Said they liked charts, but as a secondary way to view the data. | 2 |  
+Really likes charts. | 1 |  
+Thinks congressional staffers would prefer pictures/maps over tables. | 1 |  
+
+#### Plan
+Decide whether we can effectively display the data with charts, explore different types of charts, and work with user types that like charts to determine their needs.  This is a lower priority than nailing down tables and filters.
+
+## Other Functions
+
+### Downloading
+Participants liked the ability to download both filtered and unfiltered data.
+
+| Behavior | Total Users | 
+| :------------ | :----------- | 
+ Wants to download the data | 6 |  
+Wants to download filtered data. | 6 |  
+Liked Download All Data option in Option D. | 4 |  
+
+#### Plan
+Ensure the final design has a way to download both all the data and filtered data.
+
+### Share by Email
+Many participants liked the option to email the data, but had mixed expectations about what would be emailed.
+
+| Behavior | Total Users | 
+| :------------ | :----------- | 
+ Would use email function to send a filtered data set to external users. | 4 |  
+Expects the Email function to email a file. | 3 |  
+Expect Email function to email a link. | 1 |  
+Expects the Email function to email an image of a snapshot. | 1 |  
+Thought the Email function would be to send an email to ONRR. | 1 |  
+
+#### Plan
+This is a lower priority than other items.  It may be difficult to implement and may comes with some usability issues.  However, we could  use this function to promote the site if internal users use it to send data to external users.  We will table it for future discussion.
+
+### Saved Filters
+Nobody wanted the ability to save filters because they usually don't need to answer the same question twice.
+
+#### Plan
+Drop this feature idea.
+
+## For Future Consideration
+A couple of participants brought up ideas we should consider for the future:
+* Wants easy contact information if he can't find what he's looking for.
+* Notes that congressional users print the screen to save the number they found.
+
+
+
+
 

@@ -5,17 +5,17 @@
   color: $blue;
 
   &::before {
-    background-image: $icon-plus-white;
     @extend .large-background-icon;
+    background-image: $icon-plus-white;
 
     @include respond-to(medium-down) {
-       background-image: $icon-plus;
+      background-image: $icon-plus;
     }
   }
 
   &[aria-expanded=true]:before {
-    background-image: $icon-min-white;
     @extend .large-background-icon;
+    background-image: $icon-min-white;
 
     @include respond-to(medium-down) {
        background-image: $icon-min;

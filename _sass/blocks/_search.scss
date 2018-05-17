@@ -57,6 +57,17 @@
   }
 }
 
+.icon-search:before {
+  background-image: $icon-search;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  padding-bottom: 0.1rem;
+  content: '';
+}
+
 .search-results-container {
   @include span-columns(8 of 8);
 }

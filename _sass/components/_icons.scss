@@ -1,24 +1,24 @@
 
 //Background icon sizing and placement for small icons//
 .background-icon {
-  background-size: 0.8rem 0.8rem;
   background-repeat: no-repeat;
+  background-size: 0.8rem 0.8rem;
+  content: '';
   display: inline-block;
-  width: 0.8rem;
   height: 0.8rem;
   margin: 0 0 0.3rem 0.2rem;
-  content: '';
+  width: 0.8rem;
 }
 
 //Background icon sizing and placement for large icons//
 .large-background-icon {
-  background-size: 1rem 1rem;
   background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  content: '';
   display: inline-block;
+  height: 1rem;
   margin: 0 0.4rem -0.1rem 0;
   width: 1rem;
-  height: 1rem;
-  content: '';
 }
 
 //currentColor fills SVG with inherited color based on instance

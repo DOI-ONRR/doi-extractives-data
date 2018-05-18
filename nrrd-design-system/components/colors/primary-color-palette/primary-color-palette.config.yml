@@ -1,0 +1,54 @@
+title: Primary color palette
+status: draft
+collated: true
+default: black-light
+variants:
+  - name: black-light
+    context:
+      className: bg-black-light
+      colorName: black-light
+      colorCode: '#323c42'
+      accessible: true
+  - name: green
+    context:
+      className: bg-green
+      colorName: green
+      colorCode: '#587f4c'
+      accessible: true
+  - name: blue
+    context:
+      className: bg-blue
+      colorName: blue
+      colorCode: '#1478a6'
+      accessible: true
+  - name: gray-pale
+    context:
+      className: bg-gray-pale
+      colorName: gray-pale
+      colorCode: '#f0f6fa'
+      accessible: false
+  - name: white
+    context:
+      className: bg-white
+      colorName: white
+      colorCode: '#ffffff'
+      accessible: false
+  - name: gray-darker
+    context:
+      className: bg-gray-darker
+      colorName: gray-darker
+      colorCode: '#5c737f'
+      accessible: true
+  - name: green-light
+    context:
+      className: bg-green-light
+      colorName: green-light
+      colorCode: '#cde3c3'
+      accessible: false
+  - name: gray-light
+    context:
+      className: bg-gray-light
+      colorName: gray-light
+      colorCode: '#d3dfe6'
+      accessible: false
+  

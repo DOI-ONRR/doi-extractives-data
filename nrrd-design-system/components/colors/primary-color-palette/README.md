@@ -1,0 +1,3 @@
+*"Accessible” colors can be used in combination with white text or backgrounds, since the contrast ratio between the color and white is at least 4.5:1*
+
+The primary color palette collects the set of colors that are most recognized and closely associated with the visual identity of the NRRD website. The palette draws direct inspiration from the natural environment and different forms of natural resources that the site reports about. Large areas of color always use unsaturated colors. The highly saturated green and blue are primarily used as accents in small spaces, which keeps the overall tone feeling light and associated with transparency.

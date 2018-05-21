@@ -1,4 +1,4 @@
-*"Accessible” colors can be used in combination with white text or backgrounds, since the contrast ratio between the color and white is at least 4.5:1*
+*"Accessible” colors can be used in combination with white text or backgrounds, since the contrast ratio between the color and white is at least 4.5:1, the [WCAG 2.0 level AA](https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast) compliance ratio for color contrast.*
 
 The supporting color palette is composed of lightest and darkest variations of the primary color palette. A broad supporting color palette adds nuance and depth to illustrations, data visualizations, and complex components.
 

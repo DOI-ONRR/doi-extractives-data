@@ -15,14 +15,14 @@ Cool grays are used widely in the site, predominantly for large background fills
 ### Greens
 Green represents land-ownership in maps, and data in charts. It also serves to add a bit of color to the site here and there, and helps make hierarchy more distinct when used as a rule with some headers.
 - `$green-dark`: complex bar charts
-- `$green-state-hex`: only for maps
-- `$green-land`: only for maps
-- `$green-mid`: only for maps
+- `$green-state-hex`: for maps only
+- `$green-land`: for maps only
+- `$green-mid`: for maps only
 
 ### Blues
 Blues do not feature heavily in the site design. They're mainly reserved for links, buttons, and the county-level maps on state Explore pages.
 - `$blue-dark`: the text color over the `$blue-cthru` background color (on the filter panel for [Federal Revenue by Company](https://revenuedata.doi.gov/how-it-works/federal-revenue-by-company/2016/)), to achieve sufficient color contrast
-- `$blue-mid-dark`: only for maps
-- `$blue-mid`: only for maps
+- `$blue-mid-dark`: for maps only
+- `$blue-mid`: for maps only
 - `$blue-cthru` is semi-transparent, and used as the background color for filter panel overlays
-- `$blue-light`: only for maps
+- `$blue-light`: for maps only

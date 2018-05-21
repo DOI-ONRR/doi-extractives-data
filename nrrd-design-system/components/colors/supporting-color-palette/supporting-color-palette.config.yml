@@ -90,7 +90,7 @@ variants:
   - name: blue-cthru
     context:
       className: bg-blue-cthru
-      colorName: blue-cthru (filter bg)
+      colorName: blue-cthru
       colorCode: 'rgba(198, 233, 255, 0.93)'
       map: false
       accessible: false

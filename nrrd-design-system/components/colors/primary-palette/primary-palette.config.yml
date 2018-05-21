@@ -1,4 +1,4 @@
-title: Primary color palette
+title: Primary palette
 status: draft
 collated: true
 default: black-light
@@ -51,4 +51,3 @@ variants:
       colorName: gray-light
       colorCode: '#d3dfe6'
       accessible: false
-  

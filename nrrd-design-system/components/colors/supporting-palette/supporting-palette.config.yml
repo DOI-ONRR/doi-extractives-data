@@ -50,21 +50,21 @@ variants:
       className: bg-green-state-hex
       colorName: green-state-hex
       colorCode: '#46653c'
-      map: false
+      map: true
       accessible: true
   - name: green-land
     context:
       className: bg-green-land
       colorName: green-land
       colorCode: '#69995a'
-      map: false
+      map: true
       accessible: false
   - name: green-mid
     context:
       className: bg-green-mid
       colorName: green-mid
       colorCode: '#9dbd92'
-      map: false
+      map: true
       accessible: false
   - name: blue-dark
     context:

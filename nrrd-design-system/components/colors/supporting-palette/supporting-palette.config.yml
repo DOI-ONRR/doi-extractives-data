@@ -1,0 +1,89 @@
+title: Supporting palette
+status: draft
+collated: true
+default: black
+variants:
+  - name: black
+    context:
+      className: bg-black
+      colorName: black
+      colorCode: '#1c2326'
+      accessible: true
+  - name: gray-darkest
+    context:
+      className: bg-gray-darkest
+      colorName: gray-darkest
+      colorCode: '#435159'
+      accessible: true
+  - name: gray-dark
+    context:
+      className: bg-gray-dark
+      colorName: gray-dark
+      colorCode: '#768d99'
+      accessible: false
+  - name: gray
+    context:
+      className: bg-gray
+      colorName: gray
+      colorCode: '#a7bcc7'
+      accessible: false
+  - name: gray-lighter
+    context:
+      className: bg-gray-lighter
+      colorName: gray-lighter
+      colorCode: '#ebf3f7'
+      accessible: false
+  - name: green-dark
+    context:
+      className: bg-green-dark
+      colorName: green-dark
+      colorCode: '#2f4d26'
+      accessible: true
+  - name: green-state
+    context:
+      className: bg-green-state-hex
+      colorName: green-state-hex
+      colorCode: '#46653c'
+      accessible: true
+  - name: green-land
+    context:
+      className: bg-green-land
+      colorName: green-land
+      colorCode: '#69995a'
+      accessible: false
+  - name: green-mid
+    context:
+      className: bg-green-mid
+      colorName: green-mid
+      colorCode: '#9dbd92'
+      accessible: false
+  - name: blue-dark
+    context:
+      className: bg-blue-dark
+      colorName: blue-dark
+      colorCode: '#086996'
+      accessible: true
+  - name: blue-mid-dark
+    context:
+      className: bg-blue-mid-dark
+      colorName: blue-mid-dark
+      colorCode: '#3d95bd'
+      accessible: false
+  - name: blue-mid
+    context:
+      className: bg-blue-mid
+      colorName: blue-mid
+      colorCode: '#79bbda'
+      accessible: false
+  - name: blue-cthru
+    context:
+      className: bg-blue-cthru
+      colorName: blue-cthru
+      colorCode: 'rgba(198, 233, 255, 0.93)'
+      accessible: false
+  - name: blue-light
+    context:
+      className: bg-blue-light
+      colorName: blue-light
+      colorCode: '#dcf4fd'
+      accessible: false

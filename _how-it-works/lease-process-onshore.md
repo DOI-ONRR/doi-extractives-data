@@ -28,7 +28,7 @@ breadcrumb:
 selector: list
 ---
 
-> Bureau of Land Management (BLM) field offices award leases on designated lands for oil and gas resources. Leases are auctioned live and open to the public. Before the live auction, the BLM field office estimates the fair market value for the natural resources in question.
+> {{ page.description }}
 
 {% include selector.html %}
 

@@ -12,7 +12,7 @@ nav_items:
     title: Production
   - name: revenue
     title: Revenue
-description: The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+description: Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods. In the U.S., forests cover 766 million acres of land. The greatest concentrations of forests are in the South and Northeast, but Alaska has the largest total forest area of any state.
 tag:
 - how it works
 - production
@@ -23,7 +23,7 @@ title_display: Forestry
 selector: list
 ---
 
-Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods. In the U.S., forests cover 766 million acres of land. The greatest concentrations of forests are in the South and Northeast, but Alaska has the largest total forest area of any state.
+> {{ page.description }}
 
 ## Ownership and governance
 

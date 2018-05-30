@@ -280,15 +280,26 @@ When you open an issue, fill out all relevant fields in the issue template and i
 
 ### Pull requests
 
+#### Open-source contributions
+
+We welcome contributions from the open source community! If you would like to contribute, please direct your pull requests to the [`contribution`](https://github.com/18F/doi-extractives-data/tree/contribution) branch (instead of the default `dev` branch). This enables us to create a preview link for your contribution.
+
+#### Creating a pull request
+
 * Create pull requests for all commits, even typo fixes. This helps us track work and increase visibility into current work going on.
 * When you open a pull request, complete the template to make sure reviewers have all the information they need.
 
 - Assign reviewers to notify specific team members who should review a pull request.
 - While working, submit `[WIP]` [pull requests](CONTRIBUTING.md#pull-requests) liberally.
+
+#### Reviewing a pull request
+
 - Anyone may informally review a pull request and make comments or suggestions.
+- For more about how to responsibly review pull requests, see [How to review a PR](https://github.com/18F/doi-extractives-data/wiki/How-to-review-a-pull-request)
+
+#### Merging a pull request
 
 * Don’t merge your own pull request. Ask a colleague to review your code and merge. This helps ensure that at least two people have verified the quality of the code and content.
-* For more about how to responsibly review pull requests, see [How to review a PR](https://github.com/18F/doi-extractives-data/wiki/How-to-review-a-pull-request)
 
 ## Public domain
 

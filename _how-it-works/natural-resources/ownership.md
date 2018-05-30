@@ -22,7 +22,7 @@ nav_items:
     subnav_items:
       - name: split-ownership
         title: Split ownership
-description: Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
+description: Natural resource ownership in the United States is closely tied to land ownership.
 tag:
 - how it works
 - land ownership
@@ -39,7 +39,7 @@ title_display: Ownership
 selector: list
 ---
 
-> Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
+> {{ page.description }}
 
 {% include selector.html %}
 

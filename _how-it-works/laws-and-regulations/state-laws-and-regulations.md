@@ -16,7 +16,7 @@ nav_items:
     title: Revenue disbursements
   - name: natural-resource-trust-funds
     title: Natural resource trust funds
-description: States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.
+description: States maintain ownership of some lands and natural resources and develop their own taxation and royalty systems for oil, gas, nonenergy minerals, and renewable energy. States collect extractive revenue directly. Each state has a unique revenue system.
 tag:
 - How it works
 - State laws and regulations
@@ -32,7 +32,7 @@ selector: list
 redirect_from: /how-it-works/state-legal-fiscal-info/
 ---
 
-> States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.
+> {{ page.description }}
 
 {% include selector.html %}
 

@@ -57,8 +57,7 @@ tag:
     Federal revenue by location</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by {{ "calendar year (CY)" | term }} and {{ "fiscal year (FY)" | term_end }}.</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-      </object>Data and documentation
+      {% include data_and_docs.html %}
     </a>
   </li>
 
@@ -66,7 +65,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" class="link-no_under"><h3 id="federal-revenue-by-company">Federal revenue by company</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is available for calendar years 2013-2016.</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
-      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
+      {% include data_and_docs.html %}
     </a>
   </li>
 
@@ -74,7 +73,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3>Reconciliation</h3></a>
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
     <a href="{{site.baseurl}}/downloads/reconciliation/">
-      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
+      {% include data_and_docs.html %}
     </a>
   </li>
 
@@ -90,7 +89,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/disbursements/" class="link-no_under"><h3 id="disbursements">Disbursements</h3></a>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
     <a href="{{site.baseurl}}/downloads/disbursements/">
-      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small"></object>Data and documentation
+      {% include data_and_docs.html %}
     </a>
   </li>
 
@@ -113,8 +112,7 @@ tag:
     <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
     <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2007 to 2016 by state and county.</p>
     <a href="{{site.baseurl}}/downloads/federal-production/">
-      <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-      </object>Data and documentation
+      {% include data_and_docs.html %}
     </a>
   </li>
 

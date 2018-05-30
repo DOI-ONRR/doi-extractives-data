@@ -50,14 +50,14 @@ tag:
 
 
 <p class="downloads-download_links-intro">Download calendar year data:
-  <ul class="downloads-download_links">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_CY07-16.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 391 KB)</a></li>
+  <ul class="downloads-download_links list-unstyled">
+    <li><a href="{{site.baseurl}}/downloads/federal_production_CY07-16.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
   </ul>
 </p>
 
 <p class="downloads-download_links-intro">Download fiscal year data:
-  <ul class="downloads-download_links">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_FY07-16.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 388 KB)</a></li>
+  <ul class="downloads-download_links list-unstyled">
+    <li><a href="{{site.baseurl}}/downloads/federal_production_FY07-16.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 388 KB)</a></li>
   </ul>
 </p>
 

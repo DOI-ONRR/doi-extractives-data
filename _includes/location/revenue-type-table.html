@@ -116,7 +116,7 @@
     {% if oilgas_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Oil and Gas
-        <icon class="icon-padded icon-oil"></icon>
+        {% include svg/icon-oil.svg %}
       </td></tr>
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
@@ -136,7 +136,7 @@
     {% if coal_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Coal
-        <icon class="icon-padded icon-coal"></icon>
+        {% include svg/icon-coal.svg %}
       </td></tr>
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
@@ -153,7 +153,7 @@
     {% if geothermal_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Geothermal
-        <icon class="icon-padded icon-geo"></icon>
+        {% include svg/icon-geothermal.svg %}
       </td></tr>
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
@@ -170,7 +170,7 @@
     {% if wind_exists == true %}
       <tr class="table-arrow_box-category"><td colspan="5">
         Offshore renewable energy
-        <icon class="icon-padded icon-wind"></icon>
+          {% include svg/icon-renewables.svg %}
       </td></tr>
       {% for commodity in revenue_types %}
         {% assign commodity_name = commodity[0] %}
@@ -211,19 +211,19 @@
             <tr class="table-arrow_box-category"><td colspan="5">
               All commodities
               {% if oilgas_exists == true %}
-                <icon class="icon-oil"></icon>
+                {% include svg/icon-oil.svg %}
               {% endif %}
 
               {% if coal_exists == true %}
-                <icon class="icon-coal"></icon>
+                {% include svg/icon-coal.svg %}
               {% endif %}
 
               {% if geothermal_exists == true %}
-                <icon class="icon-geo"></icon>
+                {% include svg/icon-geothermal.svg %}
               {% endif %}
 
               {% if wind_exists == true %}
-                <icon class="icon-wind"></icon>
+                {% include svg/icon-renewables.svg %}
               {% endif %}
             </td></tr>
             {% include location/revenue-type-row.html %}

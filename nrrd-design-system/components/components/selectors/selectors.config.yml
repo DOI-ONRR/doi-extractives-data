@@ -1,5 +1,21 @@
 title: Selectors
-status: blocked
+status: draft
+context:
+  include:
+    default: A default value
+    nationwide: true
+    nationwide_url: nationwide.gov
+    nationwide_title: nationwide
+  site:
+    states:
+      - url: ak.gov
+        title: AK
+      - url: oh.gov
+        title: OH
+      - url: pa.gov
+        type: PA
+      - url: ca.gov
+        type: CA
 # collated: true
 # default: default
 # variants:

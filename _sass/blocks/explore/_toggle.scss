@@ -5,18 +5,21 @@
   color: $blue;
 
   &::before {
-    content: $icon-plus-sm;
-    font-family: eiti;
-    font-style: normal;
-    font-weight: normal;
-    line-height: $base-line-height;
-    padding-right: $base-padding-lite;
-    text-decoration: inherit;
-    vertical-align: text-top;
+    @extend .large-background-icon;
+    background-image: $icon-plus-white;
+
+    @include respond-to(medium-down) {
+      background-image: $icon-plus;
+    }
   }
 
   &[aria-expanded=true]:before {
-    content: $icon-dash-sm;
+    @extend .large-background-icon;
+    background-image: $icon-min-white;
+
+    @include respond-to(medium-down) {
+       background-image: $icon-min;
+    }
   }
 }
 

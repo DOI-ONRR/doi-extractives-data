@@ -38,7 +38,8 @@
 
     [accordion-text] {
       &::after {
-        content: $icon-dash-sm;
+        @extend .background-icon;
+        background-image: $icon-min;
       }
 
 
@@ -69,7 +70,8 @@
 
     [accordion-text] {
       &::after {
-        content: $icon-plus-sm;
+        @extend .background-icon;
+        background-image: $icon-plus;
       }
 
       .accordion-more {

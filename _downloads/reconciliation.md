@@ -20,9 +20,9 @@ tag:
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx">{% include svg/icon-download.svg %}
   Full dataset, 2015 USEITI Report (xlsx, 39 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/reconciliation_2016-11-03.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{site.baseurl}}/downloads/reconciliation_2016-11-03.xlsx">{% include svg/icon-download.svg %}
   Full dataset, 2016 USEITI Report (xlsx, 37 KB)</a></li>
 </ul>
 

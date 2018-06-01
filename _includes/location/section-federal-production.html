@@ -25,8 +25,7 @@
     </p>
     <p>
       <a href="{{ site.baseurl }}/downloads/federal-production/" class="data-downloads">
-        <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-        </object>Data and documentation
+        {% include data_and_docs.html %}
       </a>
     </p>
     {% else %}
@@ -37,8 +36,7 @@
         </p>
         <p>
           <a href="{{ site.baseurl }}/downloads/federal-production/">
-            <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-            </object>Data and documentation
+            {% include data_and_docs.html %}
           </a>
         </p>
       </div>

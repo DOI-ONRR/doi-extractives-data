@@ -33,8 +33,7 @@
     </p>
     <p>
       <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-        <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-        </object>Data and documentation
+        {% include data_and_docs.html %}
       </a>
     </p>
 
@@ -82,8 +81,7 @@
         </p>
         <p>
           <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="data-downloads">
-            <object type="image/svg+xml" data="{{site.baseurl}}/public/img/icons/file-text-o.svg" class="u-padding-right icon-small">
-            </object>Data and documentation
+            {% include data_and_docs.html %}
           </a>
         </p>
       </div>
@@ -121,7 +119,7 @@
               <span class="caption-data">
               {% if commodity_name == 'Non-commodity revenue' %}
                 Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> in inspection fees, civil penalties, and other revenues in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
-              {% else %}                                   
+              {% else %}
                 Companies paid <span class="eiti-bar-chart-y-value" data-format="$,">{{ annual_revenue[year] | default: 0 | intcomma_dollar }}</span> to produce {{ commodity_name | downcase }} on federal land in <span class="eiti-bar-chart-x-value">{{ year }}</span>.
               {% endif %}
               </span>

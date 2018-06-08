@@ -139,6 +139,13 @@
 }
 
 .ribbon {
+  .svg-wrapper {
+    svg {
+      float: none;
+      width: initial;
+    }
+  }
+
   svg {
     width: 100%;
 

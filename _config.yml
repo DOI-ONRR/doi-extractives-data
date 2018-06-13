@@ -71,6 +71,8 @@ exclude:
   - serve*
   - re-serve*
   - vendor
+  # Gatsby Dev
+  - gatsby-site
 
 include:
   - /build.log

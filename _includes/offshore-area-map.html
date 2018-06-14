@@ -111,13 +111,13 @@
           aria-controls="{{ include.toggle }}"
           aria-expanded="false">
             <span class="hide-expanded">
-              <i class="icon icon-plus-sm"></i>
+                <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/public/img/icons/icon-circled-plus.svg"/>
               {% if include.toggle_text %}
                 {{ include.toggle_text_hidden }}
               {% else %}Show table{% endif %}
             </span>
             <span class="show-expanded">
-              <i class="icon icon-dash-sm"></i>
+              <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/public/img/icons/icon-circled-minus.svg"/>
               {% if include.toggle_text %}
                 {{ include.toggle_text_visible }}
               {% else %}Hide table{% endif %}
@@ -152,13 +152,13 @@
       aria-controls="{{ include.toggle }}"
       aria-expanded="false">
         <span class="hide-expanded">
-          <i class="icon icon-plus-sm"></i>
+          <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ site.baseurl }}/public/img/icons/icon-circled-plus.svg"/>
           {% if include.toggle_text %}
             {{ include.toggle_text_hidden }}
           {% else %}Show table{% endif %}
         </span>
         <span class="show-expanded">
-          <i class="icon icon-dash-sm"></i>
+          <img class="aria-toggle-icon" alt="icon with a minus sign" src="{{ site.baseurl }}/public/img/icons/icon-circled-minus.svg"/>
           {% if include.toggle_text %}
             {{ include.toggle_text_visible }}
           {% else %}Hide table{% endif %}

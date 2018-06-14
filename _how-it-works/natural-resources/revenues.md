@@ -18,7 +18,7 @@ nav_items:
     title: Tax expenditures
   - name: federal-budget-process
     title: Federal budget process
-description: Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on what the ownership of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
+description: Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on the ownership of the resources. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
 tag:
 - how it works
 - revenues
@@ -35,7 +35,7 @@ title_display: Revenues
 selector: list
 ---
 
-> Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the [ownership]({{ site.baseurl }}/how-it-works/ownership/) of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
+> {{ page.description }}
 
 {% include selector.html %}
 

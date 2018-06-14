@@ -28,7 +28,7 @@ title_display: Federal laws and regulations
 selector: list
 ---
 
-> The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
+> {{ page.description }}
 
 
 {% include selector.html %}

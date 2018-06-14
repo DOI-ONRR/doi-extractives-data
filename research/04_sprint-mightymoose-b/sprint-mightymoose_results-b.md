@@ -17,7 +17,7 @@
 
 ## Let's talk about that global navigation
 
-This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [initial results](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_results.md) from that, we adjusted the global navigation slightly in a way we hoped would reduce confusion and improve clarity. The focus of this test was, as before, still the global navigation, and by proxy, the information architecture of the site. We tested a navigation with five options: home, how it works, explore data, local impact, and downloads.
+This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [initial results](https://github.com/18F/doi-extractives-data/blob/research/research/03_%20sprint-mightymoose/sprint-mightymoose_results.md) from that, we adjusted the global navigation slightly in a way we hoped would reduce confusion and improve clarity. The focus of this test was, as before, still the global navigation, and by proxy, the information architecture of the site. We tested a navigation with five options: home, how it works, explore data, local impact, and downloads.
 
 ### How it works
 

@@ -16,9 +16,9 @@ Evaluate prototype state pages | Do people find state pages interesting?
 Over the past few sprints, we've created state profile pages, which hopefully address some of the big issues raised by earlier research, including...
 
 * [Confusion about revenues](https://github.com/18F/doi-extractives-data/issues/1260)
-* [Desire for more local stories/data](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-journalists-decide-if-something-is-interesting-and-worth-writing-about)
-* [Preferences for consolidated information about single states](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-people-want-to-use-our-data-what-were-they-trying-to-do-and-what-did-they-expect)
-* [The general need for data and context to be pulled together across the site](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#linking-related-information-and-data-across-the-site)
+* [Desire for more local stories/data](https://github.com/18F/doi-extractives-data/blob/research/research/08_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-journalists-decide-if-something-is-interesting-and-worth-writing-about)
+* [Preferences for consolidated information about single states](https://github.com/18F/doi-extractives-data/blob/research/research/08_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-people-want-to-use-our-data-what-were-they-trying-to-do-and-what-did-they-expect)
+* [The general need for data and context to be pulled together across the site](https://github.com/18F/doi-extractives-data/blob/research/research/08_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#linking-related-information-and-data-across-the-site)
 
 These pages are still in prototype form, but it's time to evaluate whether they make sense to users and begin to address some of our earlier issues.
 
@@ -31,7 +31,7 @@ These pages are still in prototype form, but it's time to evaluate whether they 
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/10_sprint-elegantechidna/sprint-elegantechidna_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/10_sprint-elegantechidna/sprint-elegantechidna_research-script.md).
 
 
 ## Test asset(s)

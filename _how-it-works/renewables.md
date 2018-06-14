@@ -18,7 +18,7 @@ nav_items:
     title: Hydroelectric energy
   - name: biomass
     title: Biomass     
-description: The United States is home to many different natural resources, including fossil fuel, renewable energy", and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+description: Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All constitute growing sources of environmentally sustainable energy to meet the country’s electricity needs.
 tag:
 - how it works
 - production
@@ -34,7 +34,7 @@ title_display: Renewables
 selector: list
 ---
 
-> Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All constitute growing sources of environmentally sustainable energy to meet the country’s electricity needs. [Explore production data.]({{ site.baseurl }}/explore/#production)
+> {{ page.description }} [Explore production data.]({{ site.baseurl }}/explore/#production)
 
 {% include selector.html %}
 

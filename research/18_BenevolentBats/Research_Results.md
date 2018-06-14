@@ -39,6 +39,10 @@ After looking at the findings, it became clear that we need to start segmenting 
 | Big Picture Understander | 1 | As a big picture understander, I want to understand how all of the pieces of the revenue data puzzle work together so that I know how the system works and how well it is currently functioning at a high level. |  
 | Data Aggregator | 1 | As a data aggregator, I want to download all the data you have so that I can work with it myself and combine it with data I have from other sources. |  
 
+## User Types
+After this round of research, we conducted a workshop to better define out user types.  We went back and mapped these participants to the new user types.  We talked with 3 Question Answerers, 1 Domain Learner, 1 Agenda Supporter, and 1 hybrid of a Question Answerer and Storyteller.
+![User Type Diagram](https://github.com/18F/doi-extractives-data/blob/research/assets/img/Round1UserTypes.PNG)
+
 # Findings
 
 ## Getting to Specific Data

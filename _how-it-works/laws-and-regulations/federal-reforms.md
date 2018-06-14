@@ -17,8 +17,8 @@ nav_items:
     subnav_items:
       - name: section-1504
         title: Section 1504
-      - name: section-1504-repeal
-        title: Section 1504 repeal
+      - name: section-1504-resolution
+        title: Section 1504 resolution
   - name: deepwater-horizon-oil-spill
     title: Deepwater Horizon oil spill
 description: The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms are recommended by oversight organizations, such as the Inspector General or the Government Accountability Office.
@@ -66,9 +66,11 @@ In 2010, the U.S. enacted the [Dodd-Frank Wall Street Reform and Consumer Protec
 
 Section 1504 mandated disclosure of “the type and total amount of (such) payments made for each project of the resource extraction issuer relating to the commercial development of oil, natural gas, or minerals,” including “taxes, royalties, fees (including license fees), production entitlements, bonuses, and other material benefits, that the Commission, consistent with the guidelines of the Extractive Industries Transparency Initiative (to the extent practicable), determines are part of the commonly recognized revenue stream for the commercial development of oil, natural gas, or minerals.”
 
-#### Section 1504 repeal
+#### Section 1504 resolution
 
-In early 2017, [Congress voted to roll back Section 1504 of the Dodd-Frank Act](https://www.congress.gov/bill/115th-congress/house-joint-resolution/41/). President Trump signed the resolution on February 14, 2017, nullifying Section 1504 and its disclosure requirements.
+In early 2017, [Congress voted to disapprove Section 1504 of the Dodd-Frank Act](https://www.congress.gov/bill/115th-congress/house-joint-resolution/41/). President Trump signed the resolution on February 14, 2017. This resolution prevents the Securities and Exchange Commission from enforcing Section 1504 of Dodd-Frank.
+
+In December 2017, Rep. Bill Huizenga of Michigan introduced [a bill to formally repeal Section 1504](https://www.congress.gov/bill/115th-congress/house-bill/4519/) and its disclosure requirements.
 
 <h2 id="deepwater-horizon-oil-spill">Deepwater Horizon oil spill reforms</h2>
 

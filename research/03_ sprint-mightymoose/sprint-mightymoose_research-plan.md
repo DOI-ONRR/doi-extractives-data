@@ -31,7 +31,7 @@ More information on the proposed information architecture is [here](https://gith
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/03_%20sprint-mightymoose/sprint-mightymoose_interview-script.md).
 
 
 ## Test asset(s)

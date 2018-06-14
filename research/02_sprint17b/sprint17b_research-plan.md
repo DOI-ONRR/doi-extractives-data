@@ -32,7 +32,7 @@ We have made adjustments to the layout and content that attempt to address these
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint17b/sprint17b_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/02_sprint17b/sprint17b_interview-script.md).
 
 
 ## Test asset(s)

@@ -17,7 +17,7 @@
 
 ## Let's talk about that global navigation
 
-This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [initial results](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_results.md) and [further testing](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose-b/sprint-mightymoose_results-b.md), we adjusted the global navigation in a way we hoped would reduce confusion and improve clarity. The navigation now has two 'levels', with 'utility' links (Downloads, Glossary, and Search) in a less-prominent spot. The 'main' global nav has these options: home, about useiti, how it works, explore data, and case studies. In addition, we tested a new implementation of in-text glossary links.
+This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [initial results](https://github.com/18F/doi-extractives-data/blob/research/research/03_%20sprint-mightymoose/sprint-mightymoose_results.md) and [further testing](https://github.com/18F/doi-extractives-data/blob/research/research/04_sprint-mightymoose-b/sprint-mightymoose_results-b.md), we adjusted the global navigation in a way we hoped would reduce confusion and improve clarity. The navigation now has two 'levels', with 'utility' links (Downloads, Glossary, and Search) in a less-prominent spot. The 'main' global nav has these options: home, about useiti, how it works, explore data, and case studies. In addition, we tested a new implementation of in-text glossary links.
 
 ## About USEITI
 

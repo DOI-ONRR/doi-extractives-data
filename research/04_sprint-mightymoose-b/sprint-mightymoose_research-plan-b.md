@@ -14,7 +14,7 @@ Prioritize what to fix | What problems are most severe?
 
 After a development pause to wait for multi-stakeholder group decisions on content and available datasets, the team is back in full-time business to continue site work. With this additional information about content and data, we have re-thought the site information architecture and have proposed changes to test.
 
-In the first part of this sprint, we ran tests on a first iteration of our global nav. In this second part of the sprint, we've adjusted our test slightly based on the [results](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_results.md) of that first half.
+In the first part of this sprint, we ran tests on a first iteration of our global nav. In this second part of the sprint, we've adjusted our test slightly based on the [results](https://github.com/18F/doi-extractives-data/blob/research/research/03_%20sprint-mightymoose/sprint-mightymoose_results.md) of that first half.
 
 More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622).
 
@@ -33,7 +33,7 @@ More information on the proposed information architecture is [here](https://gith
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/04_sprint-mightymoose-b/sprint-mightymoose_interview-script-b.md).
 
 
 ## Test asset(s)

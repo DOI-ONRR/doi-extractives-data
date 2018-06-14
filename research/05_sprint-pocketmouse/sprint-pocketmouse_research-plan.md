@@ -40,7 +40,7 @@ More information on the proposed information architecture writ large is [here](h
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-pocketmouse/sprint-pocketmouse_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/05_sprint-pocketmouse/sprint-pocketmouse_interview-script.md).
 
 
 ## Test asset(s)

@@ -52,7 +52,7 @@ Today, there are two major types of Indian land:
 * {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with individual or tribe. Trust lands held on behalf of individuals are known as allotments.
 * Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority.
 
-In general, most Indian lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land (PDF)](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Indian tribes and individuals.
+In general, most Indian lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Indian tribes and individuals.
 
 ## Natural resource ownership
 

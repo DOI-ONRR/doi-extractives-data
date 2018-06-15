@@ -36,7 +36,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2007-2016.
+description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2007-2016 and for fiscal years 2008-2017.
 tag:
 - Data
 - Downloads
@@ -46,7 +46,7 @@ tag:
 ---
 
 
-> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2007-2016.
+> {{ page.description }}
 
 
 <p class="downloads-download_links-intro">Download calendar year data:
@@ -57,7 +57,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download fiscal year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_FY07-16.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 388 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/federal_production_FY2008-2017_2018-06-15.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 387 KB)</a></li>
   </ul>
 </p>
 

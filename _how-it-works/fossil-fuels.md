@@ -14,7 +14,7 @@ nav_items:
     title: Gas
   - name: coal
     title: Coal
-description: The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+description: Fossil fuels are our main source of electricity and the primary fuel for powering motor vehicles and heating homes. Fossil fuels are used to make many products. Through natural processes over hundreds of millions of years, plant and animal matter becomes energy resources in the form of oil, gas, and coal. While fossil fuels are abundant, they are not renewable.
 tag:
 - how it works
 - production
@@ -29,7 +29,7 @@ title_display: Fossil fuels
 selector: list
 ---
 
-> Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes. Fossil fuels are used to make many products. Through natural processes over hundreds of millions of years, plant and animal matter becomes energy resources in the form of oil, gas, and coal. While fossil fuels are abundant, they are not renewable. [Explore production data.]({{ site.baseurl }}/explore/#production)
+> {{ page.description }} [Explore production data.]({{ site.baseurl }}/explore/#production)
 
 {% include selector.html %}
 

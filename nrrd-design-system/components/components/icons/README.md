@@ -1,1 +1,0 @@
-Icons are embedded in a custom "eiti.eot" webfont, and render at 1 rem by default. Down the road, it may better to convert all of the site icons to svg files, for improved performance and flexibility. This [github issue](https://github.com/18F/doi-extractives-data/issues/2284) tracks progress toward that goal.

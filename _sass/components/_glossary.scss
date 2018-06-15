@@ -87,6 +87,13 @@ $term-width-max: 220px;
     text-decoration: none;
   }
 
+  svg {
+    margin-bottom: 4px;
+    margin-left: 0;
+    vertical-align: bottom;
+    width: 14px;
+  }
+
   icon {
     font-size: 0.75em;
 
@@ -101,5 +108,5 @@ $term-width-max: 220px;
   @extend .term;
 
   box-shadow: none;
-  margin-right: 0.15rem;
+  margin-right: -.15rem;
 }

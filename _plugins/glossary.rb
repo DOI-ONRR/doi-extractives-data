@@ -6,8 +6,8 @@ module EITI
     def term_html(str, term, term_class = nil)
       "<span class='term #{term_class}' data-term='#{term}' \
           title='Click to define' tabindex='0'> \
-          <span class='svg-wrapper'>#{@@glossary_icon}</span> \
           #{str} \
+          <span class='svg-wrapper'>#{@@glossary_icon}</span> \
       </span>"
     end
 

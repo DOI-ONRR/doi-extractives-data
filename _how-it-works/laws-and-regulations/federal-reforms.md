@@ -68,7 +68,7 @@ Section 1504 mandated disclosure of “the type and total amount of (such) payme
 
 #### Section 1504 resolution
 
-In early 2017, [Congress voted to disapprove Section 1504 of the Dodd-Frank Act](https://www.congress.gov/bill/115th-congress/house-joint-resolution/41/). President Trump signed the resolution on February 14, 2017. This resolution prevents the Securities and Exchange Commission from enforcing Section 1504 of Dodd-Frank.
+In early 2017, [Congress voted to disapprove an SEC rule implementing Section 1504 of the Dodd-Frank Act](https://www.congress.gov/bill/115th-congress/house-joint-resolution/41/). President Trump signed the resolution on February 14, 2017. This resolution prevents the SEC from enforcing Section 1504 of Dodd-Frank until a new rule is published.
 
 In December 2017, Rep. Bill Huizenga of Michigan introduced [a bill to formally repeal Section 1504](https://www.congress.gov/bill/115th-congress/house-bill/4519/) and its disclosure requirements.
 

@@ -8,7 +8,7 @@ This directory contains data for federal revenue collected by the
   The columns are:
   * `Land Category`: always "Federal Offshore"
   * `CY`: i.e. "Calendar Year"
-  * `Offshore Region`: see [this map](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#offshore-areas)
+  * `Offshore Region`: see [this map](https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#offshore-areas)
   * `Offshore Planning Area`: the sub-area of the offshore region
   * `BOEM Block Name`: ?
   * `BOEM Protraction`: the lowest level of geographic detail. See [BOEM's protraction diagrams](https://www.boem.gov/Official-Protraction-Diagrams/) for more info.

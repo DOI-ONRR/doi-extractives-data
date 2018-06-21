@@ -76,7 +76,7 @@ Download fiscal year data:
   </a></li>
 </ul>
 
-<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
+<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
 
 ## Scope
 

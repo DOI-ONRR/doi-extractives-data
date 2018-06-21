@@ -25,9 +25,9 @@ Much of the data that we encounter is made available to us as a Microsoft Excel 
 ruby scripts/csv_tsv.rb path/to/csv.csv /path/to/new/tsv.tsv
 ```
 
-**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.
+**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/ONRR/doi-extractives-data/tree/master/data/company-revenue) instead.
 
-**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/18F/doi-extractives-data/tree/master/data/company-revenue) instead.
+**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/ONRR/doi-extractives-data/tree/master/data/company-revenue) instead.
 
 Check out the [Makefile](Makefile) and the [bin directory](bin/) if you want to
 see how the sausage is made.
@@ -49,7 +49,7 @@ npm test
 
 **Note**: If the tests fail, it is likely that you will need to update the pivot table (generally a file prefixed with `pivot-`) for that data. Read instructions on [creating a pivot table](Create-pivot-table.md).
 
-See [this issue](https://github.com/18F/doi-extractives-data/issues/493) for
+See [this issue](https://github.com/ONRR/doi-extractives-data/issues/493) for
 some background on what we're aiming to do here. Progress on importing all of
 the data we need is tracked in
-[this issue](https://github.com/18F/doi-extractives-data/issues/496).
+[this issue](https://github.com/ONRR/doi-extractives-data/issues/496).

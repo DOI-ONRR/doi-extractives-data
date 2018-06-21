@@ -102,7 +102,7 @@ tag:
 <ul class="list-sections list-unstyled">
     <li class="downloads-download_links">
     <a href="http://www.eia.gov/" class="link-no_under"><h3 id="all-lands-and-waters">All lands and waters</h3></a>
-    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Administration</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
+    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Administration</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
     <a href="http://www.eia.gov/">
       Go to EIA &#8594;
     </a>
@@ -126,14 +126,14 @@ tag:
     <li class="downloads-download_links">
     <a href="http://www.bea.gov/API/signup/index.cfm" class="link-no_under"><h3 id="gdp">Gross domestic product (GDP)</h3></a>
     <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a> (BEA), which measures GDP by adding up the “real value added” for each industry that contributes to the U.S. economy. According to the BEA, real value added includes “compensation of employees; taxes on production and imports, less subsidies; and gross operating surplus.”</p>
-    <p>The data we use for the interactions on this site is a subset of the data available on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
+    <p>The data we use for the interactions on this site is a subset of the data available on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
     <a href="http://www.bea.gov/API/signup/index.cfm">Go to BEA API docs &#8594;
     </a>
   </li>
 
   <li class="downloads-download_links">
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" class="link-no_under"><h3 id="exports">Exports</h3></a>
-    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
+    <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
     <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">Go to U.S. Census exports data page &#8594;
     </a>
   </li>
@@ -178,12 +178,12 @@ tag:
         </tr>
       </tbody>
     </table>
-    <p>The best way to get this data is from the <a href="http://www.bls.gov/cew/datatoc.htm">Quarterly Census of Employment and Wages</a>. You can download CSVs as single files and select "annual averages" (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
+    <p>The best way to get this data is from the <a href="http://www.bls.gov/cew/datatoc.htm">Quarterly Census of Employment and Wages</a>. You can download CSVs as single files and select "annual averages" (you will need to load titles). We also have <a href="https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
     <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
     </a>
 
     <p class="u-margin-top">The other type of jobs data we use is <em>self-employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data includes some double counting because people may appear on multiple tax forms.</p>
-    <p>Self-employment data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by {{ "NAICS" | term:"north american industry classification system (naics)" }} Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
+    <p>Self-employment data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by {{ "NAICS" | term:"north american industry classification system (naics)" }} Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
     <a href="http://www.bea.gov/">Go to BEA &#8594;
     </a>
   </li>

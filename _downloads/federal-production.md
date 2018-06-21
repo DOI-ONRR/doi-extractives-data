@@ -63,7 +63,7 @@ tag:
 
 This dataset also includes county-level data about coal production on federal land.
 
-We have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
+We have [notes on this data](https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 
 ## Scope
 

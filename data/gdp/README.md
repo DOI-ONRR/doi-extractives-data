@@ -12,8 +12,8 @@ This directory contains data and tools for updating it from the [BEA] [API].
   export BEA_API_KEY="your-key-here"
   ```
 
-1. Ensure the year range is set properly in the API [script to get data](https://github.com/ONRR/doi-extractives-data/blob/842b9c54646bd7c3b891a65b8a30bc0d57c85b4e/data/gdp/get-bea-data.js#L15)
-   and the [script to get regional data](https://github.com/ONRR/doi-extractives-data/blob/842b9c54646bd7c3b891a65b8a30bc0d57c85b4e/data/gdp/get-bea-regional.js#L8).
+1. Ensure the year range is set properly in the API [script to get data](https://github.com/onrr/doi-extractives-data/blob/842b9c54646bd7c3b891a65b8a30bc0d57c85b4e/data/gdp/get-bea-data.js#L15)
+   and the [script to get regional data](https://github.com/onrr/doi-extractives-data/blob/842b9c54646bd7c3b891a65b8a30bc0d57c85b4e/data/gdp/get-bea-regional.js#L8).
    For instance, if you are adding 2017 data, you should change both of these values to `2008-2017`.
 
 2. Next, run:

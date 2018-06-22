@@ -149,7 +149,7 @@ becomes broken and you're not sure how to fix it, run
 
 ### Data and database
 
-The [data catalog](https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
+The [data catalog](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog) explains what most of the data is and where it came from. See the [data](data/) directory for more detailed info and instructions on updating the data.
 
 Data for the site is populated via data files in the `_data` directory. These are primarily `yml` files that are generated from commands in the [`Makefile`](Makefile).
 
@@ -280,7 +280,7 @@ When you open an issue, fill out all relevant fields in the issue template and i
 
 #### Open-source contributions
 
-We welcome contributions from the open source community! If you would like to contribute, please direct your pull requests to the [`contribution`](https://github.com/ONRR/doi-extractives-data/tree/contribution) branch (instead of the default `dev` branch). This enables us to create a preview link for your contribution.
+We welcome contributions from the open source community! If you would like to contribute, please direct your pull requests to the [`contribution`](https://github.com/onrr/doi-extractives-data/tree/contribution) branch (instead of the default `dev` branch). This enables us to create a preview link for your contribution.
 
 #### Creating a pull request
 
@@ -293,7 +293,7 @@ We welcome contributions from the open source community! If you would like to co
 #### Reviewing a pull request
 
 - Anyone may informally review a pull request and make comments or suggestions.
-- For more about how to responsibly review pull requests, see [How to review a PR](https://github.com/ONRR/doi-extractives-data/wiki/How-to-review-a-pull-request)
+- For more about how to responsibly review pull requests, see [How to review a PR](https://github.com/onrr/doi-extractives-data/wiki/How-to-review-a-pull-request)
 
 #### Merging a pull request
 

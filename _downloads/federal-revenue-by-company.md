@@ -53,7 +53,7 @@ tag:
   </ul>
 </p>
 
-We also have [notes on this data](https://github.com/ONRR/doi-extractives-data/wiki/Data-Catalog#company-revenue) from the web development team as they built the interactions on this site.
+We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#company-revenue) from the web development team as they built the interactions on this site.
 
 ## Scope
 

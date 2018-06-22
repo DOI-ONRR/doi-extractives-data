@@ -23,7 +23,7 @@ county-level, historic preservation and lwcf data to be used by the site:
    data updates.
 * `federal-pivot.tsv` is a generated file that pulls in different values for
    the total disbursements added up. This only needs to be updated if data
-   tests fail. See [Create pivotal table](https://github.com/ONRR/doi-extractives-data/blob/dev/data/Create-pivot-table.md) for more information.
+   tests fail. See [Create pivotal table](https://github.com/onrr/doi-extractives-data/blob/dev/data/Create-pivot-table.md) for more information.
 * `tranform-*.js` all transform parts of the information, such as column names.
    They do not need to be edited for data updates.
 

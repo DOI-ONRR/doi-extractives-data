@@ -5,7 +5,7 @@ module Jekyll
       # Federalist preview URL for this branch.
       branch = ENV['BRANCH']
       if branch && branch != 'master'
-        site.config['url'] = "https://federalist.fr.cloud.gov/preview/ONRR/doi-extractives-data/#{branch}"
+        site.config['url'] = "https://federalist.fr.cloud.gov/preview/onrr/doi-extractives-data/#{branch}"
         puts "*** Federalist URL: <#{site.config['url']}> ***"
       end
     end

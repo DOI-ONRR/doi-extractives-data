@@ -3,9 +3,9 @@
 	"homepage": "https://revenuedata.doi.gov/",
 	"author": "ONRR",
 	"license": "CC0-1.0",
-	"repository": "github:ONRR/doi-extractives-data",
+	"repository": "github:onrr/doi-extractives-data",
 	"bugs": {
-		"url": "https://github.com/ONRR/doi-extractives-data/issues"
+		"url": "https://github.com/onrr/doi-extractives-data/issues"
 	},
 	"engines": {
 		"node": ">=8"

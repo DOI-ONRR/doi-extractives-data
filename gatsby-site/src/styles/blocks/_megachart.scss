@@ -1,0 +1,13 @@
+// Styles specific to the revenue-by-type megachart
+
+[is=bar-chart-table].revenue {
+  [data-value] {
+    .bar {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.layout-state-pages .eiti-tab-panel {
+  overflow-x: auto;
+}

@@ -1,0 +1,15 @@
+// Styleguide blocks.disbursements
+
+.disbursment-figure {
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
+
+  figcaption {
+    @include heading(h5);
+    font-weight: $weight-bold;
+
+    span {
+      font-weight: $weight-light;
+    }
+  }
+}

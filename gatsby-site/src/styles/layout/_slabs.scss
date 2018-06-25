@@ -1,0 +1,56 @@
+// Slabs
+//
+// Slabs are full-width blocks of color.
+// Slabs should contain containers to center content.
+// Slabs can can have background color styles applied.
+// By default is a neutral background.
+//
+// .slab-alpha - full width slab of $white
+// .slab-beta - full width slab of $gray-pale
+// .slab-charlie - full width slab of $gray-light
+// .slab-delta - full width slab of $gray-pale
+// .slab-echo - full width slab of $blue-pale //deprecated
+// .slab-foxtrot - full width slab of $mid-blue //deprecated
+//
+// Markup:
+// <section class="slab {{modifier_class}}">
+//	<h1>{{modifier_class}}</h1>
+// </section>
+//
+// Styleguide layout.slabs
+
+.slab-alpha {
+  background-color: $white;
+}
+
+.slab-beta {
+  background-color: $gray-pale;
+}
+
+.slab-beta-light {
+  background-color: $gray-pale; //slightly lighter, for contrast
+}
+
+.slab-beta-mid {
+  background-color: $gray-lighter; //slightly darker, for contrast
+}
+
+.slab-beta-dark {
+  background-color: $gray-darker; //a lot darker
+}
+
+.slab-charlie {
+  background-color: $gray-light;
+}
+
+.slab-delta {
+  background-color: $gray-pale;
+}
+
+
+.explore_home-img {
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+}

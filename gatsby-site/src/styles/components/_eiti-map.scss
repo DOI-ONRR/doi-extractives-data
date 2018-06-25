@@ -1,0 +1,44 @@
+eiti-map {
+  display: block;
+  position: relative;
+
+  svg {
+    display: block;
+    margin: 0;
+  }
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
+  path {
+    fill: transparent;
+    stroke: $gray-light;
+  }
+
+  &.clickable path.feature {
+    cursor: pointer;
+  }
+
+  path.feature.zoomed {
+    // fill: #bbb;
+  }
+
+  a:hover path.feature {
+    stroke: $gray-light;
+    stroke-width: 2;
+  }
+
+  path.mesh {
+    fill: none;
+    pointer-events: none;
+    stroke: lighten($gray, 15%);
+    stroke-width: 1;
+  }
+
+  path.feature.zoomed {
+    stroke: $gray-light;
+    stroke-width: 3;
+  }
+
+}

@@ -1,0 +1,92 @@
+// scss-lint:disable QualifyingElement, SelectorDepth
+.state-page-nav-title {
+  @include heading(large-caps);
+  align-items: center;
+  border-bottom: 1px solid $gray-light;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  position: relative;
+
+  svg.map {
+    @include svg-use(
+      '.state.feature',
+      '.offshore-area.feature'
+    ) {
+      fill-opacity: 1;
+    }
+
+    @include svg-use('.states.features') {
+      @include transition(all, 0.2s);
+
+      fill: $gray;
+      fill-opacity: 1;
+      stroke: $gray;
+    }
+
+    @include svg-use('.offshore.features') {
+      @include transition(all, 0.2s);
+
+      fill: $gray-light;
+      fill-opacity: 1;
+      stroke: $gray-light;
+    }
+  }
+
+  figure {
+    align-self: flex-end;
+    margin: 0;
+    width: 33%;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      + .nav-prompt {
+        visibility: visible;
+      }
+
+      svg.map {
+        @include svg-use(
+          '.states.features',
+          '.state.feature'
+        ) {
+          fill: $black-light;
+          fill-opacity: 1;
+          stroke: $black-light;
+        }
+
+        @include svg-use(
+          '.offshore.features',
+          '.offshore-area.feature'
+        ) {
+          fill: $gray-darker;
+          fill-opacity: 1;
+          stroke: $gray-darker;
+        }
+      }
+    }
+
+    svg.map {
+      padding: 0;
+    }
+  }
+
+  .nav-title {
+    align-self: center;
+    width: 67%;
+  }
+
+  .nav-prompt {
+    @include font-size(0.8);
+    @include transition(visibility, 0.3s);
+
+    color: $gray-darker;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    text-transform: capitalize;
+    top: -20px;
+    visibility: hidden;
+  }
+}

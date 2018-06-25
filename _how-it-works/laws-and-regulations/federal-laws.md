@@ -57,7 +57,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Not specified</td>
   </tr>
   <tr>
-    <td><a href="http://www.blm.gov/pgdata/etc/medialib/blm/wo/Communications_Directorate/legislation.Par.23212.File.dat/mla_1920_amendments1.pdf">Mineral Leasing Act of 1920 as Amended</a> (30 USC 181 et seq.)</td>
+    <td><a href="https://www.blm.gov/or/regulations/files/mla_1920_amendments1.pdf">Mineral Leasing Act of 1920 as Amended</a> (30 USC 181 et seq.)</td>
     <td>Creates a system of leasing mineral resources on federal lands for extraction and grants BLM authority to administer mineral leasing.</td>
     <td>Federal onshore (public domain)</td>
   <td>Coal, oil, gas, oil or gas shale, sodium, potassium, phosphate, sulfur, and gilsonite</td>
@@ -69,7 +69,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Not specified</td>
   </tr>
   <tr>
-    <td><a href="http://www.blm.gov/pgdata/etc/medialib/blm/wo/Communications_Directorate/legislation.Par.23212.File.dat/mla_1920_amendments1.pdf#page=56">Mineral Leasing Act for Acquired Lands of 1947</a> (30 USC § 351 et seq. and 43 CFR 3420)</td>
+    <td><a href="https://www.blm.gov/or/regulations/files/mla_1920_amendments1.pdf#page=56">Mineral Leasing Act for Acquired Lands of 1947</a> (30 USC § 351 et seq. and 43 CFR 3420)</td>
     <td>Extends the Mineral Leasing Act of 1920 and authority of the Secretary of the Interior to govern mineral leasing on federal acquired lands.</td>
     <td>Federal onshore (acquired)</td>
   <td>Coal, oil, gas, oil or gas shale, sodium, potassium, phosphate, sulfur, and gilsonite</td>
@@ -117,7 +117,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Coal</td>
   </tr>
   <tr>
-    <td><a href="http://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%2520og%2520royalty%2520mgmt.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
+    <td><a href="https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
     <td>Grants the Secretary of the Interior authority for managing and collecting oil and gas royalties from leases on federal and Indian lands.</td>
     <td>Federal onshore, Indian, and Outer Continental Shelf</td>
   <td>Oil and gas</td>
@@ -166,7 +166,7 @@ There are other laws governing natural resources and extractive companies’ ope
   <th>Relevant natural resources</th>
   </tr>
   <tr>
-    <td><a href="http://www.blm.gov/flpma/FLPMA.pdf">Federal Land Policy and Management Act (FLPMA) of 1976 as Amended</a> (43 USC § 1701 et seq.)</td>
+    <td><a href="https://www.blm.gov/or/regulations/files/FLPMA.pdf">Federal Land Policy and Management Act (FLPMA) of 1976 as Amended</a> (43 USC § 1701 et seq.)</td>
     <td>Requires BLM to administer federal lands using a land use planning framework that includes no unnecessary or undue degradation; multiple-use, sustained yield considerations for present and future generations; and public planning. Requires receipt of fair market value for use of federal lands and resources.</td>
     <td>Federal onshore and Indian</td>
   <td>All natural resources</td>
@@ -190,7 +190,7 @@ There are other laws governing natural resources and extractive companies’ ope
   <td>All natural resources, except when oil and gas are exempted</td>
   </tr>
   <tr>
-    <td><a href="http://www.epw.senate.gov/sdwa.pdf">Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA) of 1980</a> (42 USC §§ 9601–9675 et seq.)</td>
+    <td><a href="https://www.epa.gov/laws-regulations/summary-comprehensive-environmental-response-compensation-and-liability-act">Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA) of 1980</a> (42 USC §§ 9601–9675 et seq.)</td>
     <td>Provides a federal ‘superfund’ to clean up uncontrolled or abandoned hazardous-waste sites, as well as accidents, spills, and other emergency releases of pollutants and contaminants into the environment, and gives EPA the power to seek out those parties responsible for any release and assure their cooperation in the cleanup.</td>
     <td>All lands</td>
   <td>All natural resources, except when oil and gas are exempted</td>
@@ -214,9 +214,9 @@ There are other laws governing natural resources and extractive companies’ ope
 There are many other laws with which extractive industries companies must comply. The Department of the Interior (DOI), Environmental Protection Agency (EPA), the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:
 
 
-* [DOI Bureau of Ocean Energy Management](http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx) (BOEM)
-* [DOI Bureau of Safety and Environmental Enforcement](http://www.bsee.gov/Regulations-and-Guidance/BSEE-Governing-Statutes/) (BSEE)
-* [DOI Bureau of Land Management](http://www.blm.gov/wo/st/en/info/regulations.html) (BLM)
+* [Bureau of Ocean Energy Management](http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx) (BOEM)
+* [Bureau of Safety and Environmental Enforcement](http://www.bsee.gov/Regulations-and-Guidance/BSEE-Governing-Statutes/) (BSEE)
+* [Bureau of Land Management](https://www.blm.gov/about/laws-and-regulations) (BLM)
 * [Environmental Protection Agency](http://www2.epa.gov/laws-regulations/laws-and-executive-orders#majorlaws) (EPA)
 * [Office of Surface Mining Reclamation and Enforcement](http://www.osmre.gov/lrg.shtm) (OSMRE)
 * [National Oceanic and Atmospheric Administration](http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html) (NOAA)

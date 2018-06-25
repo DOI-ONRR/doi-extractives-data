@@ -17,7 +17,7 @@ breadcrumb:
 selector: list
 ---
 
-> Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
+> {{ page.description }}
 
 ## Tracking and verifying payments
 

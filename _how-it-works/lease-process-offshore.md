@@ -29,7 +29,7 @@ breadcrumb:
 selector: list
 ---
 
-> The Bureau of Ocean Energy Management (BOEM) manages leases for offshore energy production. BOEM manages approximately 1.7 billion acres containing about 8,000 active leases. These leases generally account for about 7% of America’s domestic natural gas production and about 24% of America’s domestic oil production.
+> {{ page.description }}
 
 {% include selector.html %}
 

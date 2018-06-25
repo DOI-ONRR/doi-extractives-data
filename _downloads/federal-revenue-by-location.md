@@ -51,13 +51,13 @@ tag:
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
-   Offshore dataset (xlsx, 484 KB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
+    Offshore dataset (xlsx, 484 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
     Onshore dataset (xlsx, 2.4 MB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-17_2018_03_02.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
     Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
   </a></li>
 </ul>
@@ -65,13 +65,13 @@ Download calendar year data:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
     Offshore dataset (xlsx, 532 KB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
     Onshore dataset (xlsx, 1.5 MB)
   </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-17_2017-11-30.xlsx"><icon class="icon-cloud icon-padded"></icon>
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
     Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
   </a></li>
 </ul>

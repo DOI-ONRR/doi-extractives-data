@@ -3,7 +3,17 @@
 
 # TEAM
 
-    A project of 18F -- @18F
+    Nathan Brannberg -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Ryan Johnson -- Content Strategist -- Department of the Interior, Office of Natural Resources Revenue
+    Jeff Keene -- Developer -- Department of the Interior, Office of Natural Resources Revenue
+    Jennifer Malcolm -- Product Manager -- Department of the Interior, Office of Natural Resources Revenue
+    Shannon McHarg -- UX Designer -- Department of the Interior, Office of Natural Resources Revenue
+    Chris Mentasti -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Judy Wilson -- Product Owner -- Department of the Interior, Office of Natural Resources Revenue
+
+# PAST TEAM MEMBERS
+
+    Jamie Albrecht -- Content Designer --18F
     Shawn Allen -- Designer Developer -- 18F
     Isabelle Brantley -- Content -- Independent Administrator/Deloitte
     Nicole Fenton -- Content Designer -- 18F
@@ -11,15 +21,24 @@
     Michelle Hertzfeld --  Product Manager and UX -- 18F
     Robert Kronebusch -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
     Corey Mahoney -- Content Designer -- 18F
-    Chris Mentasti -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Alex Pandel -- UX Designer and Researcher -- 18F
     Eric Ronne -- Visual Designer -- 18F
     Jon Swedin -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
-    Judy Wilson -- Product Owner -- Department of the Interior, Office of Natural Resources Revenue
 
     Beta site (team emeritus)
     Nick Bristow -- Developer -- 18F
     Chris Cairns -- Product Manager -- 18F
 
+# CONTRIBUTORS
+
+    Qituwra Anderson -- UX Researcher -- 18F
+    Adam Biagianti -- Developer -- 18F
+    Jeremiah Kimelman -- Developer -- 18F
+    Shawnique Muller -- 18F
+    Ben Peterson -- UX Researcher -- 18F
+    Marco Segreto -- Developer -- 18F
+    Jennifer Thibault -- Visual Designer -- 18F
+    Atul Varma -- Developer -- 18F
 
 # CREDITS
 
@@ -53,14 +72,15 @@
 
 # THANKS
 
-    Many helpful instructions and blog posts on teh interwebz!
+    Many helpful instructions and blog posts on the interwebz!
+    The 18F team who helped pioneer user-centered design and development in government
     Based on work done by the 18F NotAlone.gov team: https://github.com/18F/notalone
 
 # TECHNOLOGY COLOPHON
 
     Standards: HTML5, CSS3
     Components:
-        Bourbon, a simple and lightwieght mixin library for Sass:
+        Bourbon, a simple and lightweight mixin library for Sass:
             bourbon.io
         Neat, a lightweight semantic grid framework for Sass and Bourbon:
             neat.bourbon.io

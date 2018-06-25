@@ -28,7 +28,7 @@ title_display: Impact of natural resource extraction on tribal land
 selector: list
 ---
 
-> Extraction affects tribal economies in a number of ways, though the effects can vary widely depending on the level of extraction on a given reservation and the details of the lease agreement.
+> {{ page.description }}
 
 {% include selector.html %}
 

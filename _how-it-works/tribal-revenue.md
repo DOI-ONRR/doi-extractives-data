@@ -38,7 +38,7 @@ revenue_types:
 {% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
 {% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %}
 
-> Natural resources are increasingly a key source of income for many Native American tribes. In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.
+> {{ page.description }} In {{ disbursement_year }}, {{ "ONRR" | term }} and {{ "OST" | term }} disbursed {{ disbursements[disbursement_year] | round | intcomma_dollar }} to tribes and allottees.
 
 {% include selector.html %}
 

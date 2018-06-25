@@ -28,7 +28,7 @@
      <option value="2007">2007</option>
     </select>
   </div>
-
+  {{site.baseurl}}
   <div class="container-left-4 container-margin">
     <label>State selector call to action:</label>
     <select
@@ -37,20 +37,15 @@
       onchange="window.location = '{{ site.baseurl }}' + this.value">
 
       {% if include.default %}
-        <option value="" disabled selected>{{ include.default }}</option>
+        <option value="" disabled="disabled" selected="selected">{{ include.default }}</option>
       {% endif %}
       {% if include.nationwide %}
         <option value="{{ include.nationwide_url }}">{{ include.nationwide_title }}</option>
       {% endif %}
       <optgroup label="States">
         {% for state in site.states %}
-        <option value="{{ state.url }}">{{ state.title }}</option>
-        {% endfor %}
-      </optgroup>
-      <optgroup label="Offshore Regions">
-        {% for region in site.offshore_regions %}
-        <option value="{{ region.url }}">{{ region.title }}</option>
-        {% endfor %}
+          <option value="{{ state.url }}">{{ state.title }}</option>
+        {% for %}
       </optgroup>
     </select>
   </div>

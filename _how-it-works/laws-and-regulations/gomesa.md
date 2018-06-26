@@ -42,7 +42,7 @@ selector: list
 {% include selector.html %}
 
 ## Revenue sharing
-The [Gulf of Mexico Energy Security Act of 2006 (GOMESA)](https://www.boem.gov/GOMESA/) created revenue-sharing provisions for four states and their {{ "coastal political subdivisions" | term_end:"coastal political subdivision" }}:
+The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOMESA/)(GOMESA) created revenue-sharing provisions for four states and their {{ "coastal political subdivisions" | term_end:"coastal political subdivision" }}:
 
 * [Alabama]({{ site.baseurl }}/explore/AL/)
 * [Louisiana]({{ site.baseurl }}/explore/LA/)
@@ -59,10 +59,10 @@ There are two phases of GOMESA revenue sharing:
 
 **Phase I**: Since 2007, 37.5% of all qualified gulf revenues are shared among the four states and their coastal political subdivisions. Revenues are generated from leases in specific planning areas defined in the act. Additionally, 12.5% of revenues are disbursed to the Land and Water Conservation Fund.
 
-**Phase II**: The second phase of GOMESA revenue sharing started in fiscal year 2017. It expands the definition of qualified revenues. It also imposes a revenue-sharing cap of $500 million through 2055, although the $500 million cap does not apply to qualified revenues generated in those areas associated with Phase I of the GOMESA program.
+**Phase II**: The second phase of GOMESA revenue sharing started in fiscal year 2017. It expands the [areas that qualify for revenue-sharing (PDF)](https://www.boem.gov/GOMESA-Map/) under GOMESA. It also imposes a revenue-sharing cap of $500 million through 2055, although the $500 million cap does not apply to qualified revenues generated in those areas associated with Phase I of the GOMESA program.
 
 ## Expanded leasing area
 The act stipulated 8.3 million acres be offered for oil and gas leasing shortly after the enactment of the statute. This acreage is included in the Central Gulf Planning Area and the Eastern Gulf Planning Area.
 
 ## Extended moratorium
-The [GOMESA Moratorium](https://www.boem.gov/Areas-Under-Moratoria/) covers a portion of the Central Gulf of Mexico Planning Area and — until 2022 — most of the Eastern Gulf of Mexico Planning Area. Review the [GOMESA map (PDF)](https://www.boem.gov/GOMESA-Map/).
+The [GOMESA Moratorium](https://www.boem.gov/Areas-Under-Moratoria/) covers a portion of the Central Gulf of Mexico Planning Area and — until 2022 — most of the Eastern Gulf of Mexico Planning Area.

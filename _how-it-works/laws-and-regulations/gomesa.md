@@ -42,7 +42,7 @@ selector: list
 {% include selector.html %}
 
 ## Revenue sharing
-The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOMESA/)(GOMESA) created revenue-sharing provisions for four states and their {{ "coastal political subdivisions" | term_end:"coastal political subdivision" }}:
+The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOMESA/) (GOMESA) created revenue-sharing provisions for four states and their {{ "coastal political subdivisions" | term_end:"coastal political subdivision" }}:
 
 * [Alabama]({{ site.baseurl }}/explore/AL/)
 * [Louisiana]({{ site.baseurl }}/explore/LA/)

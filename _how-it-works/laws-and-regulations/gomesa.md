@@ -26,6 +26,7 @@ tag:
 - GOMESA
 - Land and Water Conservation Fund
 - Revenue
+- Disbursements
 - Alabama
 - Louisiana
 - Mississippi
@@ -44,10 +45,10 @@ selector: list
 ## Revenue sharing
 The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOMESA/) (GOMESA) created revenue-sharing provisions for four states and their {{ "coastal political subdivisions" | term_end:"coastal political subdivision" }}:
 
-* [Alabama]({{ site.baseurl }}/explore/AL/)
-* [Louisiana]({{ site.baseurl }}/explore/LA/)
-* [Mississippi]({{ site.baseurl }}/explore/MS/)
-* [Texas]({{ site.baseurl }}/explore/TX/)
+* [Alabama]({{ site.baseurl }}/explore/AL/#disbursements)
+* [Louisiana]({{ site.baseurl }}/explore/LA/#disbursements)
+* [Mississippi]({{ site.baseurl }}/explore/MS/#disbursements)
+* [Texas]({{ site.baseurl }}/explore/TX/#disbursements)
 
 The act also directs a portion of gulf revenue to the {{ "Land and Water Conservation Fund" | term_end }} and bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.
 

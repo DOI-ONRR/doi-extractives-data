@@ -50,7 +50,7 @@ The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOME
 * [Mississippi]({{ site.baseurl }}/explore/MS/#disbursements)
 * [Texas]({{ site.baseurl }}/explore/TX/#disbursements)
 
-The act also directs a portion of gulf revenue to the {{ "Land and Water Conservation Fund" | term_end }} and bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.
+The act also directs a portion of gulf revenue to the {{ "Land and Water Conservation Fund" | term }} and bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.
 
 ### Purpose of funds
 GOMESA funds are to be used for coastal conservation, restoration, and hurricane protection.
@@ -58,11 +58,11 @@ GOMESA funds are to be used for coastal conservation, restoration, and hurricane
 ## Phases
 There are two phases of GOMESA revenue sharing:
 
-**Phase I**: Since 2007, 37.5% of all qualified gulf revenues are shared among the four states and their coastal political subdivisions. Revenues are generated from leases in specific planning areas defined in the act. Additionally, 12.5% of revenues are disbursed to the Land and Water Conservation Fund.
+**Phase I**: Since 2007, 37.5% of all qualified gulf revenues are shared among the four states and their coastal political subdivisions. Revenues are generated from leases in specific geographic areas defined in the act. Additionally, 12.5% of revenues are disbursed to the Land and Water Conservation Fund.
 
 **Phase II**: The second phase of GOMESA revenue sharing started in fiscal year 2017. It expands the [areas that qualify for revenue-sharing (PDF)]({{ site.baseurl }}/downloads/gomesa-map.pdf) under GOMESA.
 
-Phase II also imposes revenue-sharing caps:
+Phase II also imposes revenue-sharing caps on states and the Land and Water Conservation Fund. Overall state revenue-sharing caps are:
 
 - $375 million for fiscal years 2017–2019
 - $487.5 million for fiscal years 2020 and 2021

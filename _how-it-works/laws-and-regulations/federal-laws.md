@@ -147,7 +147,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Oil, gas, coal, wind, solar, hydropower, and geothermal</td>
   </tr>
   <tr>
-    <td><a href="http://www.boem.gov/Oil-and-Gas-Energy-Program/Energy-Economics/econ/GOMESA-pdf.aspx">Gulf of Mexico Energy Security Act (GOMESA) of 2006 (120 Stat. 2922)</a></td>
+    <td><a href="{{ site.baseurl }}/how-it-works/gomesa">Gulf of Mexico Energy Security Act (GOMESA) of 2006 (120 Stat. 2922)</a></td>
     <td>Opens 8.3 million acres in the Gulf of Mexico for oil and gas leasing, shares leasing revenue with gulf producing states and the Land and Water Conservation Fund, and bans oil and gas leasing within 125 miles off the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.</td>
     <td>Outer Continental Shelf</td>
   <td>Oil and gas</td>

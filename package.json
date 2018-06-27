@@ -55,9 +55,9 @@
 		"object-assign": "^4.1.0",
 		"sass-loader": "^6.0.6",
 		"stickyfill-web-module": "^1.1.11",
-		"svg4everybody": "github:18F/svg4everybody#non-symbol",
+		"svg4everybody": "^2.1.9",
 		"svgeo": "^0.3.5",
-		"topojson": "github:mbostock/topojson#oversize",
+		"topojson": "^3.0.2",
 		"webpack": "*"
 	},
 	"devDependencies": {

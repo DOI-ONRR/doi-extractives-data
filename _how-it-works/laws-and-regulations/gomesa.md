@@ -60,7 +60,15 @@ There are two phases of GOMESA revenue sharing:
 
 **Phase I**: Since 2007, 37.5% of all qualified gulf revenues are shared among the four states and their coastal political subdivisions. Revenues are generated from leases in specific planning areas defined in the act. Additionally, 12.5% of revenues are disbursed to the Land and Water Conservation Fund.
 
-**Phase II**: The second phase of GOMESA revenue sharing started in fiscal year 2017. It expands the [areas that qualify for revenue-sharing (PDF)](https://www.boem.gov/GOMESA-Map/) under GOMESA. It also imposes a revenue-sharing cap of $500 million through 2055, although the $500 million cap does not apply to qualified revenues generated in those areas associated with Phase I of the GOMESA program.
+**Phase II**: The second phase of GOMESA revenue sharing started in fiscal year 2017. It expands the [areas that qualify for revenue-sharing (PDF)]({{ site.baseurl }}/downloads/gomesa-map.pdf) under GOMESA.
+
+Phase II also imposes revenue-sharing caps:
+
+- up to $375 million for fiscal years 2017–2019
+- up to $487.5 million for fiscal years 2020 and 2021
+- up to $375 million for fiscal years 2022–2055
+
+The cap is lifted beginning in fiscal year 2056.
 
 ## Expanded leasing area
 The act stipulated 8.3 million acres be offered for oil and gas leasing shortly after the enactment of the statute. This acreage is included in the Central Gulf Planning Area and the Eastern Gulf Planning Area.

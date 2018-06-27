@@ -64,9 +64,9 @@ There are two phases of GOMESA revenue sharing:
 
 Phase II also imposes revenue-sharing caps:
 
-- up to $375 million for fiscal years 2017–2019
-- up to $487.5 million for fiscal years 2020 and 2021
-- up to $375 million for fiscal years 2022–2055
+- $375 million for fiscal years 2017–2019
+- $487.5 million for fiscal years 2020 and 2021
+- $375 million for fiscal years 2022–2055
 
 The cap is lifted beginning in fiscal year 2056.
 

@@ -46,7 +46,7 @@ Download fiscal year data:
 
 The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.
 
-We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
+We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
 
 ## Scope
 

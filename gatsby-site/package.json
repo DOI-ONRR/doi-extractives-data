@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-starter-design-redux",
+  "description": "Gatsby starter using redux",
+  "version": "0.0.1",
+  "author": "Carl-Johan Kihl <carljohan.kihl@gmail.com>",
+  "dependencies": {
+    "emotion": "^9.0.0",
+    "emotion-server": "^9.0.0",
+    "emotion-theming": "^9.0.0",
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-typography": "^1.7.13",
+    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-remark": "^1.7.42",
+    "react-emotion": "^9.0.0",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1",
+    "typography-theme-bootstrap": "^0.16.7"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma all --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-emotion": "^9.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-plugin-flowtype": "^2.41.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.10.2"
+  }
+}

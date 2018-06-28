@@ -4,106 +4,104 @@ Alaska:
       name: Gas
       units: mcf
       volume:
-        '2007':
-          volume: 26817788
         '2008':
-          volume: 32926351
+          volume: 31880242
         '2009':
-          volume: 30708137
+          volume: 28626714
         '2010':
-          volume: 30771397
+          volume: 28448724
         '2011':
-          volume: 32935318
+          volume: 31050820
         '2012':
-          volume: 22777895
+          volume: 21309140
         '2013':
-          volume: 30392157
+          volume: 27879494
         '2014':
-          volume: 32433687
+          volume: 29819850
         '2015':
-          volume: 33446582
+          volume: 30581501
         '2016':
-          volume: 32883087
+          volume: 29823266
+        '2017':
+          volume: 27764105
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007':
-          volume: 2475709
         '2008':
-          volume: 2985742
+          volume: 3894846
         '2009':
-          volume: 1872793
+          volume: 2213764
         '2010':
-          volume: 1376070
+          volume: 1566078
         '2011':
-          volume: 1088083
+          volume: 1246262
         '2012':
-          volume: 643719
+          volume: 761462
         '2013':
-          volume: 687623
+          volume: 784074
         '2014':
-          volume: 643194
+          volume: 714375
         '2015':
-          volume: 629603
+          volume: 582039
         '2016':
-          volume: 563708
+          volume: 512053
+        '2017':
+          volume: 485547
 Gulf:
   products:
     Gas (mcf):
       name: Gas
       units: mcf
       volume:
-        '2007':
-          volume: 2813193096
         '2008':
-          volume: 2330333629
+          volume: 3749701872
         '2009':
-          volume: 2451144639
+          volume: 3921984562
         '2010':
-          volume: 2250588216
+          volume: 3566386545
         '2011':
-          volume: 1826661481
+          volume: 2861757068
         '2012':
-          volume: 1535414292
+          volume: 2373348728
         '2013':
-          volume: 1327797855
+          volume: 2023561400
         '2014':
-          volume: 1276869799
+          volume: 1889560526
         '2015':
-          volume: 1307163078
+          volume: 1896015249
         '2016':
-          volume: 1217608574
+          volume: 1753199408
+        '2017':
+          volume: 1509198773
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007':
-          volume: 467914463
         '2008':
-          volume: 423338317
+          volume: 554249734
         '2009':
-          volume: 570225026
+          volume: 691538836
         '2010':
-          volume: 566587106
+          volume: 700054793
         '2011':
-          volume: 481693940
+          volume: 604337981
         '2012':
-          volume: 464561590
+          volume: 574983897
         '2013':
-          volume: 459030789
+          volume: 570308013
         '2014':
-          volume: 510476712
+          volume: 632750813
         '2015':
-          volume: 552983443
+          volume: 679675629
         '2016':
-          volume: 582391345
+          volume: 707355362
+        '2017':
+          volume: 708982802
     Salt (tons):
       name: Salt
       units: tons
       volume:
-        '2007':
-          volume: null
         '2008':
           volume: null
         '2009':
@@ -128,47 +126,47 @@ Pacific:
       name: Gas
       units: mcf
       volume:
-        '2007':
-          volume: 45563257
         '2008':
-          volume: 46922654
+          volume: 46734496
         '2009':
-          volume: 41282846
+          volume: 42405055
         '2010':
-          volume: 41257762
+          volume: 41929152
         '2011':
-          volume: 36591564
+          volume: 38252836
         '2012':
-          volume: 27267157
+          volume: 29866633
         '2013':
-          volume: 27502417
+          volume: 28594671
         '2014':
-          volume: 28313384
+          volume: 28863198
         '2015':
-          volume: 14808085
+          volume: 17320425
         '2016':
-          volume: 4501303
+          volume: 6963769
+        '2017':
+          volume: 6023233
     Oil (bbl):
       name: Oil
       units: bbl
       volume:
-        '2007':
-          volume: 24624089
         '2008':
-          volume: 24031880
+          volume: 24835376
         '2009':
-          volume: 22306733
+          volume: 23509099
         '2010':
-          volume: 21710975
+          volume: 22438259
         '2011':
-          volume: 19820270
+          volume: 21022619
         '2012':
-          volume: 17684997
+          volume: 19397570
         '2013':
-          volume: 18571785
+          volume: 19145551
         '2014':
-          volume: 18506540
+          volume: 18876615
         '2015':
-          volume: 11465873
+          volume: 12579095
         '2016':
-          volume: 6142614
+          volume: 7302894
+        '2017':
+          volume: 6918367

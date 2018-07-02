@@ -14,16 +14,20 @@ const Footer = ({ contactInfo, siteMetadata }) => (
     <div className="footer-col_right">
 
       <div className="footer-bottom-left">
-	      <p className="footer-para_callout footer-para_callout-bigger">Built in the open</p>
-	      <p className="footer-para">This site (<a href={"https://github.com/18F/doi-extractives-data/releases/"+siteMetadata.version } className="link-active-beta">{ siteMetadata.version }</a>) is powered by <a className="link-active-beta" href={ siteMetadata.url+"/downloads"}>open data</a> and <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/">source code</a>. We welcome contributions and comments on <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/issues/new">GitHub</a>.</p>
+        <p className="footer-para_callout footer-para_callout-bigger">Built in the open</p>
+        <p className="footer-para">This site (<a href={"https://github.com/onrr/doi-extractives-data/releases/"+siteMetadata.version } className="link-active-beta">{ siteMetadata.version }</a>)
+        is powered by <a className="link-active-beta" href="/downloads">open data</a> and <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/">source code</a>. 
+        We welcome contributions and comments on <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/issues/new">GitHub</a>.</p>
 
-        <p className="footer-para-small footer-para_last"><a href="https://www.doi.gov/" className="link-beta">Department of the Interior</a> | <a href="https://www.doi.gov/privacy" className="link-beta">Privacy Policy</a> | <a href="https://www.doi.gov/foia" className="link-beta">FOIA</a> | <a href="https://www.usa.gov/" className="link-beta">USA.gov</a></p>
+        <p className="footer-para-small footer-para_last"><a href="https://www.doi.gov/" className="link-beta">Department of the Interior</a> | 
+        <a href="https://www.doi.gov/privacy" className="link-beta">Privacy Policy</a> | <a href="https://www.doi.gov/foia" className="link-beta">FOIA</a> | 
+        <a href="https://www.usa.gov/" className="link-beta">USA.gov</a></p>
 
       </div>
 
       <div className="footer-bottom-right">
         <p className="footer-para_callout">
-          <a className="link-beta" href="{{ site.baseurl }}/downloads/">Download data <DownloadIcon /></a>
+          <a className="link-beta" href="/downloads/">Download data <DownloadIcon /></a>
         </p>
       </div>
 

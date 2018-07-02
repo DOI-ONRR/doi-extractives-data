@@ -3,56 +3,83 @@ import Link from 'gatsby-link';
 
 import NRRDLogo from "../../img/NRRD-logo.svg";
 
-const Header = ({ siteMetadata }) => (
-  <header className="header container-page-wrapper">
-    <div className="header-left">
-      <a className="header-image_link" href={siteMetadata.url}>
-        <h1 className="sr-only">
-          US Department of the Interior Natural Resources Revenue Data
-        </h1>
-        <img className="header-image" src={NRRDLogo} alt="Logo" />
-      </a>
-    </div>
+
+const Header = ({ siteMetadata }) => {
   
-    <nav className="header-nav header-right">
-      <ul className="header-nav_top">
-        <li className="header-nav_item_top">
-          <a href="javascript:void(0)" className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
-        </li>
-        <span className="header-nav_item_link_spacer"> | </span>
-        <li className="header-nav_item_top">
-          <a className="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Download data</a>
-        </li>
+  let defaultNavClassNames = {'className': " header-nav_item "};
+  let homeClassNames = {'className': " header-nav_item "};
+  let aboutClassNames = {'className': " header-nav_item "};
 
-        <li className="header-nav_item_top">
-          <form action='{{ site.baseurl }}/search-results/'>
-            <label className='sr-only' for="q">Search</label>
-            <input type="search" className="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
-            <button type="submit" className="header-nav_search_icon icon-search" title="search"><label className="sr-only">Search</label></button>
-          </form>
-        </li>
+  if(typeof location !== 'undefined' && location) {
+    if(location.pathname === '/') {
+      homeClassNames.className += ' active ';
+    }
+    else if(location.pathname === '/about/') {
+      aboutClassNames.className += ' active '; 
+    }
+  }
 
-      </ul>
-      <ul className="header-nav_bottom">
-        <li className="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
-          <a className="header-nav_item_link" href={siteMetadata.url}>Home</a>
-        </li>
-        <li className="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
-          <a className="header-nav_item_link" href={siteMetadata.url+"/about/"}>About</a>
-        </li>
-        <li className="header-nav_item {% if page.permalink contains '/how-it-works/' or layout.nav_name == 'how-it-works' %}active{% endif %}">
-          <a className="header-nav_item_link" href={siteMetadata.url+"/how-it-works/"}>How it works</a>
-        </li>
-        <li className="header-nav_item {% if page.permalink contains '/explore/' or layout.nav_name == 'explore' %}active{% endif %}">
-          <a className="header-nav_item_link" href={siteMetadata.url+"/explore/"}>Explore data</a>
-        </li>
-        <li className="header-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
-          <a className="header-nav_item_link" href={siteMetadata.url+"/case-studies/"}>Case studies</a>
-        </li>
+  
+  return (
+    <header className="header container-page-wrapper">
+      <div className="header-left">
+        <Link className="header-image_link" to="/">
+          <h1 className="sr-only">
+            US Department of the Interior Natural Resources Revenue Data
+          </h1>
+          <img className="header-image" src={NRRDLogo} alt="Logo" />
+        </Link>
+      </div>
 
-      </ul>
-    </nav>
-  </header>
-);
+      <nav className="header-nav header-right">
+        <ul className="header-nav_top">
+          <li className="header-nav_item_top">
+            <a href="javascript:void(0)" className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+          </li>
+          <span className="header-nav_item_link_spacer"> | </span>
+          <li className="header-nav_item_top">
+            <a className="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Download data</a>
+          </li>
+
+          <li className="header-nav_item_top">
+            <form action='{{ site.baseurl }}/search-results/'>
+              <label className='sr-only' htmlFor="q">Search</label>
+              <input type="search" className="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
+              <button type="submit" className="header-nav_search_icon icon-search" title="search"><label className="sr-only">Search</label></button>
+            </form>
+          </li>
+
+        </ul>
+        <ul className="header-nav_bottom">
+          <li {...homeClassNames}>
+            <Link className="header-nav_item_link" to="/">Home</Link>
+          </li>
+          <li {...aboutClassNames}>
+            <Link className="header-nav_item_link" to="/about/">About</Link>
+          </li>
+          <li {...defaultNavClassNames}>
+            <Link className="header-nav_item_link" to="/how-it-works/">How it works</Link>
+          </li>
+          <li {...defaultNavClassNames}>
+            <Link className="header-nav_item_link" to="/explore/">Explore data</Link>
+          </li>
+          <li {...defaultNavClassNames}>
+            <Link className="header-nav_item_link" to="/case-studies/">Case studies</Link>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+  );
+}
 
 export default Header;
+   /* <Link
+      to="/another-page/"
+      activeStyle={{
+        color: 'red'
+      }}
+      innerRef={(el) => { this.myLink = el }}
+    >
+    Another page
+    </Link>*/

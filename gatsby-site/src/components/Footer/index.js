@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import DoiLogo from "../../img/DOI-2x.png";
+import logo from "../../img/DOI-2x.png";
 import DownloadIcon from '-!svg-react-loader!../../img/svg/icon-download-base.svg';
 
 const Footer = ({ contactInfo, siteMetadata }) => ( 
 <footer className="footer">
   <div className="container-page-wrapper">
     <div className="footer-col_left">
-      <a href="https://doi.gov"><img className="footer-image" src={DoiLogo} alt="Department of the Interior logo" /></a>
+      <a href="https://doi.gov"><img className="footer-image" src={logo} alt="Department of the Interior logo" /></a>
     </div>
 
     <div className="footer-col_right">

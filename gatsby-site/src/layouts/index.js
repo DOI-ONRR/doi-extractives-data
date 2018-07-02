@@ -7,8 +7,7 @@ import Footer from '../components/Footer';
 
 import "../styles/_main.scss";
 
-export default ({ data, children }) => {
-  console.log({data});
+export default ({ data, children}) => {
   return (
     <div>
       <Helmet
@@ -46,7 +45,6 @@ export const query = graphql`
       siteMetadata {
         title
         description
-        url
         version
       }
     }

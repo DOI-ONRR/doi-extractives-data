@@ -1,0 +1,25 @@
+.sticky {
+  background: $white;
+  max-height: 100vh;
+  padding-top: $standard-padding-lite;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: $z-roof;
+}
+
+.sticky::before,
+.sticky::after {
+  content: '';
+  display: table;
+}
+
+.sticky-float {
+  float: left;
+}
+
+.sticky-sibling {
+  margin-right: 0;
+  padding: 0;
+  padding-top: $standard-padding * 2;
+}

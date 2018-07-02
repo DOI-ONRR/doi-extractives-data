@@ -1,0 +1,36 @@
+.pre-footer {
+  background-color: $gray-pale;
+  margin: 0;
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    font-weight: $weight-book;
+    margin-right: $base-padding;
+
+    &:last-of-type {
+      display: block;
+      font-weight: $weight-light;
+      padding-top: $base-padding;
+    }
+  }
+
+  i {
+    color: $blue;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+}

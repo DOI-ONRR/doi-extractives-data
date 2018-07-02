@@ -1,0 +1,53 @@
+// Case Studies Content
+//
+// The Case Studies page main content
+//
+// Styleguide blocks.case-studies.content
+
+.case_studies-frame {
+  .ribbon-hero {
+    padding-bottom: 0.625rem;
+  }
+}
+
+.case_studies_content-icon {
+  @include heading('para-md');
+
+  i {
+    @include heading('para-xl');
+    padding-right: $base-padding-lite / 2;
+  }
+}
+
+.case_studies_content-graph {
+  width: 100%;
+}
+
+.case_studies_content-heading {
+  color: $gray-darkest;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.case_studies-map-container {
+  display: block;
+  margin: 0 auto;
+
+  eiti-map {
+    display: block;
+  }
+
+  @include respond-to(medium-up) {
+    float: right;
+  }
+}
+
+.case_studies-map-wide {
+  max-width: 400px;
+}
+
+.case_studies-map-tall {
+  max-width: 250px;
+}

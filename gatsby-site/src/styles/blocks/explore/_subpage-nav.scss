@@ -1,0 +1,49 @@
+// TODO: add to style guide
+.explore-subpage-nav {
+  text-align: center;
+}
+
+.explore-subpage-tabs {
+  ul {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+
+    @include respond-to(medium-up) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.explore-subpage-tab {
+  @include font-size(0.9);
+
+  border: 2px solid transparent;
+  display: inline-block;
+  padding: 2px 8px;
+
+  a {
+    color: $gray-darkest;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    border-color: $blue;
+
+    a {
+      color: $blue;
+      font-weight: $weight-bold;
+    }
+  }
+}
+
+@include respond-to(medium-up) {
+  .explore-subpage-nav {
+    @include shift(4);
+    text-align: left;
+  }
+}

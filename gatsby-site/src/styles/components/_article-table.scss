@@ -1,0 +1,130 @@
+@mixin column-numbers($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column}) {
+    text-align: right;
+  }
+}
+
+@mixin column-centered($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column}) {
+    text-align: center;
+  }
+}
+
+@mixin column-book($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column}) {
+    font-weight: $weight-book;
+  }
+}
+
+$max-columns: 10;
+
+.article_table {
+  border: none;
+  border-bottom: 1px solid $gray-light;
+  margin-bottom: $base-padding-extra;
+  width: 100%;
+
+  th {
+    border-bottom: 4px solid $green-light;
+    font-weight: $weight-book;
+    line-height: 1.2;
+    padding: $base-padding-small;
+    text-align: left;
+    vertical-align: bottom;
+
+    &.article_table-thin {
+      border-bottom: 1px solid $green-light;
+    }
+  }
+
+  td {
+    border: none;
+    border-top: 1px solid $gray-light;
+    line-height: 1.3;
+    padding: $base-padding-small;
+
+    &.article_table-note {
+      border-top: 0;
+    }
+  }
+
+  td p {
+    @include heading(para-md);
+  }
+
+  span {
+    font-weight: $weight-book;
+    line-height: 2;
+  }
+
+}
+
+.article_table-numbers th {
+  text-align: center;
+}
+
+.article_table-numbers .article_table-left {
+  text-align: left;
+}
+
+.article_table-numbers td {
+  text-align: right;
+}
+
+.article_table-last_right td:last-child {
+  text-align: right;
+}
+
+.article_table-numbers td:first-child {
+  text-align: left;
+}
+
+@for $i from 1 to $max-columns {
+  .article_table-numbers_#{$i} {
+    @include column-numbers($i);
+  }
+
+  .article_table-centered_#{$i} {
+    @include column-centered($i);
+  }
+
+  .article_table-book_#{$i} {
+    @include column-book($i);
+  }
+}
+
+.article_table-enlarge {
+  @include font-size(1.1);
+}
+
+.article_table-head,
+.article_table-head td,
+.article_table-head th {
+  font-weight: $weight-book;
+}
+
+.article_table-bold,
+.article_table-bold td,
+.article_table-bold th {
+  font-weight: $weight-bold !important; // ugly, but needed for now
+}
+
+.article_table-indented tr {
+  &.article_table-head,
+  &.article_table-bold {
+    td:first-child {
+      padding-left: $base-padding-lite;
+    }
+  }
+
+  th {
+    padding: $base-padding-lite;
+  }
+
+  td:first-child {
+    padding-left: $base-padding;
+  }
+}

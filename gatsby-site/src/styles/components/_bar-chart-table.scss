@@ -1,0 +1,226 @@
+// scss-lint:disable NestingDepth SelectorDepth
+[is=bar-chart-table] {
+  $cell-padding: 5px;
+  $border-radius: 3px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tbody tr:focus,
+  tbody tr:hover {
+    background: $white;
+  }
+
+  .bar {
+    background: $gray-pale;
+  }
+
+  .numberless[data-value] {
+    position: inherit;
+    vertical-align: middle;
+
+    .text {
+      display: none;
+    }
+
+    .bar {
+      background-color: transparent;
+    }
+
+    &[data-value^="-"] .bar {
+      border: 0px;
+    }
+  }
+
+  [data-year-values="null"] {
+    display: none;
+  }
+
+  [data-sentence] {
+    font-weight: $weight-book;
+    padding-left: calc(#{$standard-padding-lite} + 5px + 0.75rem);
+    padding-top: 0;
+  }
+
+  .swatch {
+    background: $gray-light;
+    display: inline-block;
+    height: 0.75rem;
+    margin-right: $standard-padding-lite;
+    vertical-align: baseline;
+    width: 0.75rem;
+  }
+
+  th.numeric {
+    text-align: right;
+  }
+
+  [data-value] {
+    min-width: 120px;
+    position: relative;
+
+    .text-header {
+      @include heading('para-sm');
+      font-weight: $weight-bold;
+
+      &.text-header-first {
+        color: $green;
+      }
+
+      &.text-header-second {
+        color: $green-dark;
+      }
+
+      &.text-header-third {
+        color: $gray-darker;
+      }
+    }
+
+    &.bars {
+      .bar {
+        display: flex;
+
+        .bar {
+          border-right: 1px solid $gray-light;
+        }
+
+        .bar:nth-child(1) {
+          background-color: $green;
+        }
+
+        .bar:nth-child(2) {
+          background-color: $green-dark;
+        }
+
+        .bar:nth-child(3) {
+          background-color: $gray-darker;
+        }
+      }
+    }
+
+    .bar {
+      background: $gray-pale;
+      display: block;
+      height: 1em;
+
+      .bar {
+        background-color: $green;
+      }
+    }
+
+    &:not([data-value="0"]) {
+      .bar {
+        min-width: 1px;
+      }
+    }
+  }
+
+  // negative values
+  [data-value^="-"] .bar {
+    background: transparent;
+    border: 1px solid $gray-light;
+
+    .bar {
+      display: none;
+    }
+  }
+
+  [data-value-text]:not(.numeric) {
+    text-align: right;
+  }
+
+  &[orient=vertical] {
+    display: block;
+    height: 6em;
+    position: relative;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: flex;
+      height: 100%;
+
+      td,
+      th {
+        border: 0;
+        display: none;
+        padding: 0;
+        width: auto;
+      }
+
+
+      tr {
+        border-radius: $border-radius;
+        display: flex;
+        height: 100%;
+        padding: 0 0 1.5em;
+        position: relative;
+        width: 100%;
+
+        + tr {
+          margin-left: 10px;
+        }
+      }
+
+      .label {
+        bottom: 0;
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+
+      [data-value] {
+        display: flex;
+        height: 100%;
+        margin: $border-radius;
+        margin-bottom: 0;
+        min-width: auto;
+        width: 100%;
+
+        .bar {
+          align-self: flex-end;
+          border-radius: $border-radius;
+          display: block;
+          position: relative;
+          width: 100%;
+        }
+
+        // hide text in vertical
+        .text {
+          display: none;
+        }
+
+        + [data-value] {
+          margin-left: 2px;
+        }
+      }
+
+      tr:hover,
+      tr:focus {
+        [aria-label]::after {
+          content: attr(aria-label);
+        }
+
+        [aria-label]::after,
+        [data-value] .text {
+          background: $black;
+          border-radius: $border-radius;
+          bottom: 100%;
+          color: $white;
+          display: block;
+          left: 0;
+          margin-bottom: $border-radius * 2;
+          position: absolute;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+    } // tbody
+
+  } // &[orient=vertical]
+
+} // table[is=bar-chart-table]

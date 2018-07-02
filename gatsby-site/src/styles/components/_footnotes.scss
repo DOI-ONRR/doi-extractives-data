@@ -1,0 +1,72 @@
+// Footnotes
+//
+// Technique from http://www.sitepoint.com/accessible-footnotes-css/
+// Initialiazing a `footnotes` counter on the wrapper
+//
+// Markup:
+// <p>This is an example foonote.<sup id="fnref:26">
+// 	<a href="#fn:26" class="footnote">26</a>
+// </sup>
+// </p>
+// <div class="footnotes">
+//   <ol>
+//     <li id="fn:26">
+//       <p>Barrels noted as “bbl” when used as a unit of measure <a href="#fnref:1" class="reversefootnote">↩</a></p>
+//     </li>
+//   </ol>
+// </div>
+//
+// Styleguide components.footnotes
+
+body {
+  counter-reset: footnotes;
+}
+
+.footnotes {
+
+  a {
+    @extend .link-active;
+  }
+
+  ol {
+    @include heading('para-sm');
+
+    font-weight: $weight-book;
+    list-style-type: decimal;
+    padding-left: $base-padding;
+
+    &:target {
+      background-color: $blue-cthru;
+    }
+  }
+
+  p {
+    @include heading('para-md');
+  }
+
+  li {
+    list-style-type: decimal;
+  }
+}
+
+.footnote {
+  @include heading('para-sm');
+  @extend .link-charlie;
+  @include font-size(0.75);
+
+  color: $blue;
+  font-weight: $weight-book;
+  line-height: $base-font-size;
+  vertical-align: super; // 2
+}
+
+table sup {
+  padding-left: $base-padding-lite / 2;
+  position: relative;
+  top: 0.2em;
+  vertical-align: baseline;
+}
+
+[id^="fn:"]:target p {
+  font-weight: bold;
+}

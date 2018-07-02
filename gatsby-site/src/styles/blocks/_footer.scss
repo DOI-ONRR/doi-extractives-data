@@ -1,0 +1,162 @@
+// Footer
+//
+// This is on the bottom of every page. Find in _includes/layout/footer.html
+//
+//
+// Styleguide blocks.footer
+
+footer,
+.footer,
+.footer-heading,
+.footer-para,
+.footer-para_callout,
+.footer-social {
+  @include heading(para-md);
+  color: $gray-light;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer,
+.footer {
+  background-color: $black-light;
+  margin-bottom: 0;
+  padding-bottom: ($base-padding-extra * 1.5);
+  padding-top: ($base-padding-extra * 1.5);
+
+  // .fa-circle {
+  //   color: $gray-light;
+  // }
+  //
+  // .fa-inverse {
+  //   color: $black-light;
+  // }
+}
+
+.footer-para {
+  font-size: 1.125rem;
+  margin-bottom: $base-padding-large;
+}
+
+.footer-para-small {
+  font-size: .875rem;
+}
+
+.footer-para_callout {
+  color: $white;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+}
+
+.footer-para_callout-smaller {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.footer-para_callout-bigger {
+  font-size: 1.375rem;
+}
+
+.footer-para_last {
+  .link-beta {
+    &:hover,
+    &:active {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  @include heading(para-sm);
+  color: $white;
+
+  @include respond-to(medium-up) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-image {
+  max-width: 110px;
+  width: 80%;
+}
+
+.footer-button {
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+}
+
+.footer-col_left {
+  @include span-columns(12);
+  margin-bottom: $base-padding-extra;
+
+  @include respond-to(medium-up) {
+    @include span-columns(2);
+  }
+}
+
+.footer-col_right {
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(10);
+  }
+}
+
+.footer-list_item_heading {
+  @include heading(para-sm);
+  font-weight: $weight-book;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-list_item {
+  @include heading(para-sm);
+}
+
+.footer-downloads {
+  border-top: 1px $gray-darkest solid;
+  font-weight: $weight-book;
+  margin-top: 33px;
+  padding-top: 29px;
+
+  icon {
+    @include heading(para-lg);
+    color: $gray-light;
+  }
+}
+
+.footer-bottom {
+  @include span-columns(12);
+  @include heading(para-md);
+  border-top: 1px $gray-darkest solid;
+  margin-top: $base-padding;
+  padding-top: $base-padding;
+
+  @include respond-to(medium-up) {
+    @include span-columns(10 of 10);
+    @include omega();
+
+    p {
+      padding-right: $base-padding-large;
+    }
+  }
+}
+
+.footer-bottom-left {
+  margin-bottom: $base-padding-large;
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(6 of 10);
+  }
+}
+
+.footer-bottom-right {
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(4 of 10);
+    @include omega();
+  }
+}

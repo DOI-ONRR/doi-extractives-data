@@ -1,0 +1,158 @@
+@import 'lib/font-awesome/font-awesome/variables';
+
+// Logos
+$nrrd-logo-width: 220px;
+
+// Typography
+$weight-light: 300; // (Lato Light) use
+$weight-book: 400; // (Lato Regular) use
+$weight-bold: 600; // (Lato Semibold) use
+$line-height-caps: 1.2;
+
+$sans-serif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+$base-font-family: $sans-serif;
+$base-font-weight: 400;
+$base-font-size: 1rem;
+$base-font-multiplier: 1;
+$base-line-height: 1.375rem;
+
+$z-sky: 10000;
+$z-roof: 9000;
+$z-mid: 500;
+$z-negative: -1;
+
+// Colors
+//
+// Markup:
+// <p><span class="styleguide-swatch with-outline" style="background-color: #ffffff;"></span>$white</p>
+// <p><span class="styleguide-swatch" style="background-color: #f0f6fa;"></span>$gray-pale</p>
+// <p><span class="styleguide-swatch" style="background-color: #ebf3f7;"></span>$gray-lighter</p>
+// <p><span class="styleguide-swatch" style="background-color: #d3dfe6;"></span>$gray-light</p>
+// <p><span class="styleguide-swatch" style="background-color: #a7bcc7;"></span>$gray</p>
+// <p><span class="styleguide-swatch" style="background-color: #768d99;"></span>$gray-dark</p>
+// <p><span class="styleguide-swatch" style="background-color: #5c7380;"></span>$gray-darker</p>
+// <p><span class="styleguide-swatch" style="background-color: #435159;"></span>$gray-darkest</p>
+// <p><span class="styleguide-swatch" style="background-color: #323c42;"></span>$black-light</p>
+// <p><span class="styleguide-swatch" style="background-color: #1d2326;"></span>$black</p>
+//
+// Styleguide colors
+
+// Grayscale
+$white: #ffffff;
+$gray-pale: #f0f6fa;
+$gray-lighter: #ebf3f7;
+$gray-light: #d3dfe6;
+$gray: #a7bcc7;
+$gray-dark: #768d99;
+$gray-darker: #5c737f;
+$gray-darkest: #435159;
+$black-light: #323c42;
+$black: #1c2326;
+
+// Blues
+$blue-lighter: #f2fdff;
+$blue-light: #dcf4fd;
+$blue-cthru: rgba(198, 233, 255, 0.93);
+$blue-mid: #79bbda;
+$blue-mid-dark: #3d95bd;
+$blue: #1478a6;
+$blue-dark: #086996; //darker link color for use over $blue-cthru, for accessibility
+$blue-darker: #005078;
+$blue-deep: #00354f;
+
+// Greens
+$green-light: #cde3c3;
+$green-mid: #9dbd92;
+$green-land: #69995a;
+$green: #587f4c;
+$green-dark: #2f4d26;
+
+// Red just in case
+$red: #c5403c;
+
+// Font Colors
+$base-font-color: $black-light;
+
+// Padding
+$base-padding: 1.25em; //20px
+$base-padding-lite: $base-padding / 3; //6.66px
+$base-padding-small: 0.7em; //11.2px Reduced from .9em
+$base-padding-base: 1em; //16px
+$base-padding-large: 1.875em; //30px
+$base-padding-extra: 3.125em; //50px
+$base-padding-jumbo: 3.8em; //60.8px
+
+// Padding on rem scale
+$standard-padding: 1.25rem;
+$standard-padding-standard: 1rem;
+$standard-padding-lite: $standard-padding / 3;
+$standard-padding-small: 0.7rem; //11.2px Reduced from .9em
+$standard-padding-large: 1.875rem; //30px
+$standard-padding-extra: 3.125rem; //50px
+$standard-padding-jumbo: 3.8rem;
+$standard-padding-fluffed: 5rem;
+$standard-padding-separation: 6rem;
+
+// Page padding
+// Use in contexts where the padding/margin
+// of an element would otherwise touch the edge
+// of the screen
+$page-padding: 5vw;
+
+// Link Colors
+$base-link-color: $gray-darkest;
+
+// Buttons
+$primary-button-bg-color: $blue;
+$primary-hover-button-bg-color: $blue;
+$primary-button-color: $white;
+$primary-hover-button-color: $white;
+$secondary-button-bg-color: $white;
+$secondary-hover-button-bg-color: $white;
+$secondary-button-color: $gray-darkest;
+$secondary-hover-button-color: $gray-darkest;
+$secondary-button-border-color: $gray-light;
+$tertiary-button-bg-color: $gray-light;
+
+// Icons
+$icon-min: url('../img/icons/icon-min.svg');
+$icon-plus: url('../img/icons/icon-plus.svg');
+$icon-min-white: url('../img/icons/icon-min-white.svg');
+$icon-plus-white: url('../img/icons/icon-plus-white.svg');
+$chevron-down-med-white: url('../img/icons/chevron-dn-med-white.svg');
+$chevron-small: url('../img/icons/chevron-down-sm.svg');
+$icon-data-docs: url('../img/icons/file-text-o.svg');
+$icon-search: url('../img/icons/icon-search.svg');
+
+// Radius
+$base-border-radius: 5px;
+$small-border-radius: 3px;
+
+// Border
+$base-border-color: $black-light;
+$thin-border-size: 1px;
+$regular-border-size: 3px;
+$thick-border-size: 8px;
+$base-border-size: $regular-border-size;
+
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-radius: $base-border-radius;
+$form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
+
+// Map legend
+$opacity-federal: 0.45;
+$opacity-state: 0.25;
+$green-state-hex: #46653c;
+$legend-row-height: 1em;
+
+$greener-land-lightness-bump: lightness($green-land) * $opacity-state;
+$greenest-land-lightness-bump: lightness($green-land) * $opacity-federal;
+$greener-land: darken($green-land, $greener-land-lightness-bump);
+$greenest-land: darken($green-land, $greenest-land-lightness-bump);
+
+
+// SVG
+$svg-map-padding: 3.6%;

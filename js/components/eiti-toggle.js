@@ -8,8 +8,8 @@
   };
 
   var innerMarkup = {
-    bars: '<img class="icon icon-bars" src="public/img/icons/icon-menu.svg" alt="Menu">',
-    x: '<img class="icon icon-close-x" src="public/img/icons/icon-close-x.svg" alt="Close menu">'
+    bars: '<img class="icon icon-bars" src="/public/img/icons/icon-menu.svg" alt="Menu">',
+    x: '<img class="icon icon-close-x" src="/public/img/icons/icon-close-x.svg" alt="Close menu">'
   };
 
   var EXPANDED = 'aria-expanded';

@@ -1,14 +1,14 @@
 <section class="banner slab-beta">
-  <span class="banner-left"><img class="banner-image" src="../../../public/img/us-flag-small.png" alt="US flag signifying that this is a United States Federal Government website">An official website of the U.S. Government</span>
+  <span class="banner-left"><img class="banner-image" src="{{ path '/img/us-flag-small.png' }}" alt="US flag signifying that this is a United States Federal Government website">An official website of the U.S. Government</span>
 </section>
 
 <header class="header container-page-wrapper">
   <div class="header-left">
-    <a class="header-image_link" href="/">
+    <a class="header-image_link" href="#">
       <h1 class="sr-only">
         U.S. Department of the Interior Natural Resources Revenue Data
       </h1>
-      <img class="header-image" src="../../../public/img/NRRD-logo.svg" alt="Logo">
+      <img class="header-image" src="{{ path '/img/NRRD-logo.svg' }}" alt="Logo">
     </a>
   </div>
 
@@ -19,11 +19,11 @@
       </li>
       <span class="header-nav_item_link_spacer"> | </span>
       <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top " href="/downloads/">Download data</a>
+        <a class="header-nav_item_link_top " href="#">Download data</a>
       </li>
 
       <li class="header-nav_item_top">
-        <form action="/search-results/">
+        <form action="#">
           <label class="sr-only" for="q">Search</label>
           <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search">
           <button type="submit" class="header-nav_search_icon icon-search" title="search"><label class="sr-only">Search</label></button>

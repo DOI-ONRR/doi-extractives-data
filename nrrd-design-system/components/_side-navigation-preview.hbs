@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link media="all" rel="stylesheet" href="{{ path '/css/main.css' }}">
+    <link media="all" rel="stylesheet" href="{{ path '/css/components.css' }}">
+    <link media="all" rel="stylesheet" href="{{ path '/css/styleguide.css' }}">
+    <script src="{{ path '/js/main.min.js' }}"></script>
+    <title>{{ _target.title }} | NRRD Design System</title>
+</head>
+<body>
+
+<div class="preview">
+
+  <div class="container">
+    <div class="container-left-8 container-shift-reverse-1">
+      <h1 id="title">Top of the page</h1>
+      <section class="container">
+        <h2 id="section-a">Section A</h2>
+        <p>{{> lorem }}</p>
+
+        <h3 id="sub-item-a">Sub-item A</h3>
+        <p>{{> lorem }}</p>
+
+        <h3 id="sub-item-b">Sub-item B</h3>
+        <p>{{> lorem }}</p>
+
+      </section>
+
+      <section class="container">
+        <h2 id="section-b">Section B</h2>
+        <div class="container">
+          <p>{{> lorem }}</p>
+          <p>{{> lorem }}</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 id="section-c">Section C</h2>
+        <div class="container">
+          <p>{{> lorem }}</p>
+          <p>{{> lorem }}</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 id="section-d">Section D</h2>
+        <div class="container">
+          <p>{{> lorem }}</p>
+          <p>{{> lorem }}</p>
+        </div>
+      </section>
+
+    </div>
+
+    {{{ yield }}}
+  </div>
+</div>
+<script src="{{ path '/js/state-pages.min.js' }}"></script>
+</body>
+</html>

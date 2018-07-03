@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Link from '../temp-link';
 
 import NRRDLogo from "../../img/NRRD-logo.svg";
 
@@ -9,6 +9,7 @@ const Header = ({ siteMetadata }) => {
   let defaultNavClassNames = {'className': " header-nav_item "};
   let homeClassNames = {'className': " header-nav_item "};
   let aboutClassNames = {'className': " header-nav_item "};
+  let downloadClassNames = {'className': " header-nav_item_link_top "};
 
   if(typeof location !== 'undefined' && location) {
     if(location.pathname === '/') {
@@ -16,6 +17,9 @@ const Header = ({ siteMetadata }) => {
     }
     else if(location.pathname === '/about/') {
       aboutClassNames.className += ' active '; 
+    }
+    else if(location.pathname === '/downloads/') {
+      downloadClassNames.className += ' active '; 
     }
   }
 
@@ -38,7 +42,7 @@ const Header = ({ siteMetadata }) => {
           </li>
           <span className="header-nav_item_link_spacer"> | </span>
           <li className="header-nav_item_top">
-            <a className="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Download data</a>
+            <a {...homeClassNames} href="{{ site.baseurl }}/downloads/">Download data</a>
           </li>
 
           <li className="header-nav_item_top">

@@ -1,9 +1,63 @@
 title: Callout cards
 status: draft
-# collated: true
-# default: Card
-# variants:
-#   - name: Card
-#     context:
-#       className: card
-#       text: Callout card, as used on the home page
+default: single
+context:
+  cards:
+  - card-image: /img/home-card-ownership.svg
+    card-alt: Card image alt text
+    section-title: Section title
+    card-title: Card title
+    card-content: |
+      Content for this card. Revenue from natural resources goes to state
+      governments, as well as several federal funds that support projects at the
+      local and national levels.
+variants:
+  - name: single
+  - name: many
+    context:
+      cards:
+        - card-image: /img/home-card-disbursements.svg
+          card-alt: Card image alt text
+          section-title: Explore data
+          card-title: Where does the money go?
+          card-content: |
+            Revenue from natural resources goes to state governments, as well
+            as several federal funds that support projects at the local and
+            national levels.
+        - card-image: /img/home-card-case-studies.svg
+          card-alt: Card image alt text
+          section-title: Case studies
+          card-title: How do extractive industries affect communities?
+          card-content: |
+            Learn about 12 communities that led the U.S. in production of iron,
+            copper, gold, coal, oil, and natural gas over the last decade.
+        - card-image: /img/home-card-what-resources.svg
+          card-alt: Card image alt text
+          section-title: How it works
+          card-title: What natural resources are extracted?
+          card-content: |
+            The U.S. is a top producer of oil, gas, and coal, as well as
+            nonenergy minerals like gold, iron, and copper.
+        - card-image: /img/home-card-res-to-revenue.svg
+          card-alt: Card image alt text
+          section-title: How it works
+          card-title: How does resource extraction result in federal revenue?
+          card-content: |
+            Companies that extract resources on federal land may pay bonuses,
+            rents, royalties, fees, taxes, or other revenues to the federal
+            government.
+        - card-image: /img/home-card-download.svg
+          card-alt: Card image alt text
+          section-title: About
+          card-title: Download the 2017 Executive Summary
+          card-content: |
+            This document includes an overview of contextual information and
+            updates to this site.
+        - card-image: /img/home-card-ownership.svg
+          card-alt: Card image alt text
+          section-title: Section title
+          card-title: Card title
+          card-content: |
+            Content for this card. Revenue from natural resources goes to state
+            governments, as well as several federal funds that support projects at the
+            local and national levels.

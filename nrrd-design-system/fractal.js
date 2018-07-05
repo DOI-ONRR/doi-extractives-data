@@ -13,6 +13,11 @@ const customTheme = mandelbrot({
 })
 
 const engine = handlebars({
+  helpers: {
+    jsonify: function (obj) {
+      return JSON.stringify(obj);
+    },
+  },
   partials: {
     lorem: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie

@@ -25,6 +25,21 @@ Use the `path` helper to map asset paths to their correct URL.
 
 These are some helpful utilities to build components within the styleguide.
 
+
+## Helpers
+
+These helpers can be used within the handlebar templates.
+
+**jsonify**
+
+Converts an object to a JSON string. This can be used to convert a data object
+into a string for use in a `data` attribute in HTML. e.g.
+
+```hbs
+<eiti-bar-chart data="\{{jsonify data}}"></eiti-bar-chart>
+```
+
+
 ### Context variables
 
 **container** (object)

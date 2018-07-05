@@ -25,7 +25,7 @@ nav_items:
         title: Indian Mineral Development Act of 1982
       - name: tribal-energy-development--self-determination-act-of-2005
         title: Tribal Energy Development & Self-Determination Act of 2005
-description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Indian lands and distributing the associated revenue necessitates the use of unique processes involving multiple stakeholders.
+description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Indian lands and distributing the associated revenue is a unique processes involving multiple stakeholders.
 tag:
 - how it works
 - production
@@ -41,20 +41,18 @@ title_display: Tribal ownership and governance of natural resources
 selector: list
 ---
 
-> The federal government formally recognizes 567 Indian Tribes and Alaska Native Villages. {{ "Indian lands" | term }} have [significant natural resource extraction potential (PDF)](http://www.resourcegovernance.org/sites/default/files/RWI_Native_American_Lands_2011.pdf), containing up to 30% of coal reserves west of the Mississippi, 50% of potential uranium reserves, and 20% of known oil and gas reserves.
+> {{ page.description }}
 
 {% include selector.html %}
 
 ## Land ownership
 
-Ownership of {{ "Indian lands" | term }} involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.
-
-Today, there are [two major types of Indian land](http://teeic.indianaffairs.gov/triballand/):
+Today, there are two major types of Indian land:
 
 * {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with individual or tribe. Trust lands held on behalf of individuals are known as allotments.
 * Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority.
 
-In general, most Indian lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land (PDF)](http://www.blm.gov/public_land_statistics/pls13/pls2013.pdf) are held in trust by the United States for various Indian tribes and individuals.
+In general, most Indian lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Indian tribes and individuals.
 
 ## Natural resource ownership
 

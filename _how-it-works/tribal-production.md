@@ -19,7 +19,7 @@ nav_items:
     title: Renewable energy
   - name: production-on-indian-land
     title: Production on Indian land
-description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Indian lands and distributing the associated revenue necessitates the use of unique processes involving multiple stakeholders.
+description: Extracting natural resources on Indian lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 tag:
 - how it works
 - production
@@ -35,7 +35,7 @@ title_display: Natural resource production on tribal land
 selector: list
 ---
 
-> Extracting natural resources on {{ "Indian lands" | term }} and distributing the associated revenue necessitates the use of unique processes involving multiple stakeholders.
+> {{ page.description }}
 
 {% include selector.html %}
 

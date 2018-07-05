@@ -22,7 +22,7 @@ nav_items:
     title: Silver
   - name: molybdenum
     title: Molybdenum
-description: The United States is home to many different natural resources, including fossil fuel, renewable energy", and nonenergy mineral resources (such as gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations over time.
+description: Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others. Gold, copper, iron, and zinc are the principal contributors to metal mine production.
 tag:
 - how it works
 - production
@@ -41,7 +41,7 @@ title_display: Nonenergy minerals
 selector: list
 ---
 
-> Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others. Gold, copper, iron, and zinc are the principal contributors to metal mine production. [Explore production data.]({{ site.baseurl }}/explore/#production)
+> {{ page.description }} [Explore production data.]({{ site.baseurl }}/explore/#production)
 
 {% include selector.html %}
 ### Gold

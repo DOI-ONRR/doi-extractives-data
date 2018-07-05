@@ -77,15 +77,15 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 850675605
+      value: 927113925
       rank: 2
-      percent: 11.48
+      percent: 14.64
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 23342228
+      value: 25732798
       rank: 2
-      percent: 3.46
+      percent: 4.67
   '2009':
     - product: Langbeinite (tons)
       name: Langbeinite
@@ -114,15 +114,15 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 824550180
+      value: 895534668
       rank: 2
-      percent: 10.76
+      percent: 13.71
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 25949213
+      value: 28417413
       rank: 2
-      percent: 3.2
+      percent: 4.08
   '2010':
     - product: Langbeinite (tons)
       name: Langbeinite
@@ -151,15 +151,15 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 769704535
+      value: 841173228
       rank: 2
-      percent: 10.63
+      percent: 13.44
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 28646479
+      value: 31438373
       rank: 2
-      percent: 3.48
+      percent: 4.51
   '2011':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
@@ -194,15 +194,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 32250059
+      value: 35531678
       rank: 1
-      percent: 4.4
+      percent: 5.75
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 752481297
+      value: 820107212
       rank: 2
-      percent: 11.64
+      percent: 14.23
   '2012':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
@@ -237,15 +237,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 40088777
+      value: 44360779
       rank: 1
-      percent: 5.62
+      percent: 7.23
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 741077422
+      value: 806231410
       rank: 2
-      percent: 12.52
+      percent: 14.96
   '2013':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       name: Geothermal
@@ -280,15 +280,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 47674627
+      value: 52374697
       rank: 1
-      percent: 6.61
+      percent: 8.42
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 719491041
+      value: 782658935
       rank: 2
-      percent: 13.44
+      percent: 15.79
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -329,15 +329,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 59605900
+      value: 66027017
       rank: 1
-      percent: 7.42
+      percent: 9.49
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 718733417
+      value: 785701756
       rank: 2
-      percent: 13.89
+      percent: 16.16
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -378,15 +378,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 74385976
+      value: 80098826
       rank: 1
-      percent: 8.58
+      percent: 10.63
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 739966354
+      value: 803246983
       rank: 2
-      percent: 14.42
+      percent: 16.63
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -427,15 +427,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 70181757
+      value: 77028247
       rank: 1
-      percent: 8.03
+      percent: 10.06
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 722681729
+      value: 788946307
       rank: 2
-      percent: 15.06
+      percent: 17.37
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -464,15 +464,15 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 79801787
+      value: 89048294
       rank: 1
-      percent: 8.96
+      percent: 10.97
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 725557682
+      value: 801389460
       rank: 2
-      percent: 16.22
+      percent: 18.52
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'

@@ -225,30 +225,30 @@ federal_production:
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 30962168
+      value: 34403018
       rank: 5
-      percent: 0.48
+      percent: 0.6
   '2012':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 52806569
+      value: 57069501
       rank: 5
-      percent: 0.89
+      percent: 1.06
   '2013':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 42504601
+      value: 45905487
       rank: 5
-      percent: 0.79
+      percent: 0.93
   '2014':
     - product: Gas (mcf)
       name: Gas
       units: mcf
-      value: 35578257
+      value: 38764827
       rank: 5
-      percent: 0.69
+      percent: 0.8
 revenue:
   '2009':
     - product: Oil & Gas (Non-Royalty)

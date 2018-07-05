@@ -501,9 +501,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 12318079
+      value: 13470159
       rank: 3
-      percent: 1.83
+      percent: 2.45
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -538,9 +538,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 12838108
+      value: 14034377
       rank: 3
-      percent: 1.58
+      percent: 2.01
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -581,9 +581,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 12764265
+      value: 13947461
       rank: 3
-      percent: 1.55
+      percent: 2
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -624,9 +624,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13636510
+      value: 14926446
       rank: 3
-      percent: 1.86
+      percent: 2.41
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -661,9 +661,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13942319
+      value: 15197685
       rank: 4
-      percent: 1.95
+      percent: 2.48
   '2013':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -698,9 +698,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 14014042
+      value: 15294801
       rank: 4
-      percent: 1.94
+      percent: 2.46
   '2014':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -741,9 +741,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 13468824
+      value: 14684312
       rank: 4
-      percent: 1.68
+      percent: 2.11
   '2015':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -784,9 +784,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 12353915
+      value: 13409558
       rank: 4
-      percent: 1.43
+      percent: 1.78
   '2016':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -827,9 +827,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 10133450
+      value: 11017061
       rank: 4
-      percent: 1.16
+      percent: 1.44
   '2017':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
       name: Geothermal
@@ -870,9 +870,9 @@ federal_production:
     - product: Oil (bbl)
       name: Oil
       units: bbl
-      value: 8570771
+      value: 9255753
       rank: 4
-      percent: 0.96
+      percent: 1.14
 revenue:
   '2006':
     - product: All

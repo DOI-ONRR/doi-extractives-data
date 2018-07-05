@@ -24,6 +24,9 @@ jobs:
           paths:
             - node_modules
       - run:
+          name: Build webpack
+          command: npm run webpack
+      - run:
           name: Build jekyll
           command: bundle exec jekyll build
       - run:

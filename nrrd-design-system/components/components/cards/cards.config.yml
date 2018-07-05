@@ -2,6 +2,9 @@ title: Callout cards
 status: draft
 default: single
 context:
+  container:
+    classes: container
+    slab: beta-mid
   cards:
   - card-image: /img/home-card-ownership.svg
     card-alt: Card image alt text

@@ -1,25 +1,21 @@
-<div class="container-margin">
+<div class="tab-interface">
+  <!-- Tab links -->
+  <ul class="eiti-tabs info-tabs" role="tablist">
+    <li role="presentation"><a href="#first" tabindex="0" role="tab" aria-controls="first" aria-selected="true">Tab 1</a></li>
+    <li role="presentation"><a href="#second" tabindex="-1" role="tab" aria-controls="second" class="link-charlie">Tab 2</a></li>
+    <li role="presentation"><a href="#third" tabindex="-2" role="tab" aria-controls="third" class="link-charlie">Tab 3</a></li>
+  </ul>
 
-<!-- Tab links -->
-  <div class="tab-interface">
-    <ul class="eiti-tabs info-tabs" role="tablist">
-      <li role="presentation"><a href="#first" tabindex="0" role="tab" aria-controls="first" aria-selected="true">Tab 1</a></li>
-      <li role="presentation"><a href="#second" tabindex="-1" role="tab" aria-controls="second" class="link-charlie">Tab 2</a></li>
-      <li role="presentation"><a href="#third" tabindex="-2" role="tab" aria-controls="third" class="link-charlie">Tab 3</a></li>
-    </ul>
+  <!-- Tab content -->
+  <div class="eiti-tab-panel" id="first" role="tabpanel">
+    <h2>Content in first tab</h2>
   </div>
 
-<!-- Tab content -->
-    <div class="eiti-tab-panel" id="first" role="tabpanel">
-      <h2>Content in first tab</h2>
-    </div>
+  <div class="eiti-tab-panel" id="second" role="tabpanel" aria-hidden="true">
+    <h2>Content in second tab</h2>
+  </div>
 
-    <div class="eiti-tab-panel" id="second" role="tabpanel" aria-hidden="true">
-      <h2>Content in second tab</h2>
-    </div>
-
-    <div class="eiti-tab-panel" id="third" role="tabpanel" aria-hidden="true">
-      <h2>Content in third tab</h2>
-    </div>
-
+  <div class="eiti-tab-panel" id="third" role="tabpanel" aria-hidden="true">
+    <h2>Content in third tab</h2>
+  </div>
 </div>

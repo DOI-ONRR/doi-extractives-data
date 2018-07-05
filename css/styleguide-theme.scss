@@ -1,0 +1,30 @@
+/* styleguide-theme.scss
+ * 
+ * This contains styles to override the styleguide theme itself, header,
+ * panels, documentation etc.
+ */
+
+@import 'variables';
+@import 'mixins/type-mixins';
+
+.Header {
+  background-color: $gray-darker;
+}
+
+.Frame-panel--sidebar {
+  background-color: $gray-pale;
+}
+
+a {
+  border: none;
+  color: $blue;
+  cursor: pointer;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+

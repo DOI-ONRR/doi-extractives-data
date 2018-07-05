@@ -172,14 +172,14 @@ federal_production:
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 566793.39
+      value: 566793
       rank: 5
       percent: 0.13
   '2010':
     - product: Coal (tons)
       name: Coal
       units: tons
-      value: 516449.88
+      value: 516450
       rank: 5
       percent: 0.11
 revenue:

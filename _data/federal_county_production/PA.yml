@@ -1,3 +1,15 @@
+'42015':
+  name: Bradford County
+  products:
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2013': 20195
+        '2014': 18221
+        '2015': 12408
+        '2016': 9950
+        '2017': 47532
 '42053':
   name: Forest County
   products:
@@ -32,16 +44,16 @@
       name: Gas
       units: mcf
       volume:
-        '2007': 6778
         '2008': 6391
         '2009': 5593
-        '2010': 4955
+        '2010': 4954
         '2011': 5426
         '2012': 3953
         '2013': 5121
         '2014': 3379
         '2015': 2209
         '2016': 1961
+        '2017': 2271
 '42129':
   name: Westmoreland County
   products:
@@ -49,7 +61,6 @@
       name: Gas
       units: mcf
       volume:
-        '2007': 13135
         '2008': 10753
         '2009': 10251
         '2010': 7251

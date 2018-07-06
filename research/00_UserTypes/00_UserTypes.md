@@ -1,6 +1,6 @@
 # User Types
 ## Who we've interviewed
-These are the types of users we've interviewed over the course of 3 disbursements studies. (6 question answerers, 2 agenda supporters, 5 storytellers, 2 domain learners, 1 question answerer/storyteller)
+These are the types of users we've interviewed over the course of 3 disbursements studies. (6 question answerers, 2 agenda supporters, 5 storytellers, 2 domain learners, 2 question answerer/storytellers)
 ![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
@@ -25,7 +25,7 @@ We've interviewed 6 question answerers. And one user who was a question answerer
 * Joe is an **external liaison for ONRR**.  He frequently fields questions from the public and congress for questions that could be answered on the site.  He looks in his databases for the answer to question first, but uses the site to verify the answer or for things he knows he can find more quickly on the site.
 
 ## User Type 2: Agenda Supporter
-We've interviewed 2 agenda supporters.
+We've interviewed 3 agenda supporters.
 ![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
 ### Goals 
 * Find supporting data for his or her agenda.
@@ -53,7 +53,7 @@ We've interviewed 2 agenda supporters.
 * Laura works for an **NGO**. She’s concerned about increasing volumes of oil being transported by train through her state following a recent derailment. She wants to determine if oil production on federal lands has recently increased to help her interpret transportation-related risks to her state. She can easily find data that she trusts for oil production on federal lands. She can use that along with state production and export volumes, from other sources, to complete her analysis.
 
 ## User Type 3: Storyteller
-We've interviewed 5 storytellers. And one user who was a question answerer for how he finds data, but a storyteller for how he uses it.
+We've interviewed 5 storytellers. And 3 users who are storytellers for how he use the data, but find the data as question answerers or domain learners.
 ![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
 ### Goals 
 * Understand what is happening with natural resources.
@@ -81,7 +81,7 @@ We've interviewed 5 storytellers. And one user who was a question answerer for h
 * A **journalist** at a major regional news outlet is writing a story about policy claims about energy production on public land. They’re able to find data about production trends both at the national and regional/state level, which helps them back up their story with accurate numbers that haven’t been influenced by personal or political objectives.
 
 ## User Type 4: Domain Learner
-We've interviewed 2 domain learners.
+We've interviewed 4 domain learners and 1 who finds data as a domain learner, but uses the data like a storyteller.
 ![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
 ### Goals 
 * Understand how the revenue collection and disbursement process works.

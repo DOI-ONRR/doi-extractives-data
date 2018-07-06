@@ -5,11 +5,16 @@ Data-driven displays are core to revenue.doi.gov, and most are in the form of co
 Details for the most current year are always shown by default.
 
 
-## When to use
-
-
 ## How to use
 
-This component is made up of several components, the Chart Title and the Chart
-itself. On mobile, the chart title shows the chart inline in the heading and is
+This component is made up of several components, the chart title, the chart
+itself, and the caption.
+
+Charts usually appear together and should be contained in a `.chart-list`
+element.
+
+
+## Responsive behavior
+
+On small screens, the chart title shows the chart inline in the heading and is
 expandable to show the full chart.

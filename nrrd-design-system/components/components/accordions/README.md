@@ -8,25 +8,17 @@ With so much data, hiding some is essential. This is especially true for mobile
 where some content shown by default in the desktop view becomes hidden.
 
 
-## When to use
-
-- Users only need a few specific pieces of content within a page.
-- Information needs to be displayed in a small space.
-
-
-### When to consider something else
-
-- If visitors need to see most or all of the information on a page. Use
-  well-formatted text instead.
-- If there is not enough content to warrant condensing. Accordions increase
-  cognitive load and interaction cost, as users have to make decisions about what
-  headers to click on.
-
-Additional guidance is available from the [U.S. Web Design
-System](https://designsystem.digital.gov/components/accordions/).
-
-
 ## How to use
+
+The toggle behavior is triggered by the `aria-` attributes. `.hide-expanded` is
+the label used when in the collapsed state. `.show-expanded` is the label to
+show in the expanded state. `aria-controls` on the toggle should be set to the
+`id` of the expandable content container.
+
+
+## Responsive behavior
+
+See individual variants for responsive behavior.
 
 
 ## Variants
@@ -51,4 +43,4 @@ default.
 ### Mobile-menu
 
 This is a special case of the accordion used on small screens to provide a
-toggleable menu.
+toggleable menu. It is hidden on larger screens.

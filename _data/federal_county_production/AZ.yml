@@ -5,7 +5,6 @@
       name: Salt
       units: tons
       volume:
-        '2007': null
         '2008': null
         '2009': null
         '2010': null
@@ -13,3 +12,4 @@
         '2012': null
         '2013': null
         '2014': null
+        '2017': null

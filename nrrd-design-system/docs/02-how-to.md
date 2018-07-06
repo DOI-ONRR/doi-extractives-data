@@ -12,16 +12,12 @@ The component documentation should include:
 
 * Details on what the purpose of the component is and what problem does it solve
 * Implementation details on how to use this component
-* When not to use this component, or similar components to consider instead
-* Mobile behavior
+* Responsive behavior
+* Where to use this component
+* Variants and when to use them
 
-Include a `How to use` section that covers any technical implementation details,
-like how to structure the HTML elements, `aria` attributes, or any "gotchas"
-about using. This should also contain any implementation details around Jekyll
-includes or layouts and any front matter that should be configured to use the
-component. If there is anything special about how the interactive JavaScript is
-triggered for the component, like class names or id attributes, please note that
-as well.
+Use the component documentation template `_00-template/README.md` when you
+create a new component.
 
 
 ## Templates

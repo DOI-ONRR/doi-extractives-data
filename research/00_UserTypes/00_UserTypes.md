@@ -1,11 +1,11 @@
 # User Types
 ## Who we've interviewed
 These are the types of users we've interviewed over the course of 3 disbursements studies. (6 question answerers, 2 agenda supporters, 5 storytellers, 2 domain learners, 1 question answerer/storyteller)
-![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/19_gratefulgopher/AllDisbursementsUsers.PNG)
+![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
 We've interviewed 6 question answerers. And one user who was a question answerer for how he finds data, but a storyteller for how he uses it.
-![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/19_gratefulgopher/QuestionAnswerer.PNG)
+![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
 ### Goals 
 * Inform people about natural resource revenue data that they know is available.
 * Be a source of knowledge about natural resources revenue.
@@ -26,7 +26,7 @@ We've interviewed 6 question answerers. And one user who was a question answerer
 
 ## User Type 2: Agenda Supporter
 We've interviewed 2 agenda supporters.
-![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/19_gratefulgopher/AgendaSupporter.PNG)
+![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
 ### Goals 
 * Find supporting data for his or her agenda.
 * Work with the data and use it to inform people about how natural resource revenue data supports their agenda.
@@ -54,7 +54,7 @@ We've interviewed 2 agenda supporters.
 
 ## User Type 3: Storyteller
 We've interviewed 5 storytellers. And one user who was a question answerer for how he finds data, but a storyteller for how he uses it.
-![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/19_gratefulgopher/Storyteller.PNG)
+![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
 ### Goals 
 * Understand what is happening with natural resources.
 * Learn from the data whether there’s a story to tell and uncover any stories found.
@@ -82,11 +82,12 @@ We've interviewed 5 storytellers. And one user who was a question answerer for h
 
 ## User Type 4: Domain Learner
 We've interviewed 2 domain learners.
-![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/19_gratefulgopher/DomainLearner.PNG)
+![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
 ### Goals 
 * Understand how the revenue collection and disbursement process works.
 * Keep tabs on how well the process is working for the domain or locality he/she is interested in.
 * Make decisions based on what he/she sees in the data.
+* Answer questions pertaining to his or her domain.
 
 ### Pain Points
 * Knowing the site exists

@@ -1,0 +1,12 @@
+.ribbon-card-top,
+.ribbon-card-bottom {
+  text-align: left;
+}
+
+.ribbon svg {
+  max-width: 300px;
+
+  &.states.map {
+    max-width: initial;
+  }
+}

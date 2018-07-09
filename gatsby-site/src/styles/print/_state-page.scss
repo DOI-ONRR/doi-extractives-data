@@ -1,0 +1,64 @@
+.layout-state-pages figure {
+  min-height: 300px;
+}
+
+.chart-list {
+  width: 100%;
+}
+
+button[aria-controls="mobile-nav-content"],
+.details-container {
+  display: none !important;
+}
+
+.chart-title-button {
+  eiti-bar-chart,
+  img {
+    display: none !important;
+  }
+}
+
+.chart {
+  display: block !important;
+  width: 50% !important;
+}
+
+.chart-item {
+  display: inline-block;
+  float: none;
+  page-break-before: always;
+  page-break-inside: avoid;
+}
+
+.expandable[aria-expanded] {
+  max-height: initial;
+  overflow-y: initial;
+}
+
+figure[is="ownership-map"] .svg-container {
+  padding-bottom: 67% !important;
+
+  &.wide {
+    padding-bottom: 75% !important;
+  }
+}
+
+.eiti-data-map-table[aria-hidden] {
+  display: inline-block;
+}
+
+.inner-table-wrapper {
+  max-height: initial !important;
+}
+
+.row-container > .map-container .svg-container {
+  padding-bottom: 67% !important;
+
+  &.wide {
+    padding-bottom: 75% !important;
+  }
+}
+
+.legend-ownership-svg .cells {
+  justify-content: flex-start;
+}

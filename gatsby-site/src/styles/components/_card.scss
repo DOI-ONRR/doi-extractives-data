@@ -1,0 +1,149 @@
+// Card
+//
+// Styleguide components.card
+
+// Card – Primary
+//
+// Primary style version
+//
+//
+// Markup:
+// <div class="container">
+// <article class="card">
+//   <img class="card-image" src="https://eiti-dev.18f.gov/img/sectors.png" alt="U.S. natural resource sectors">
+//   <div class="card-content">
+//     <h1 class="card-title">What are natural resources?</h1>
+//     <p>[This is where we say what natural resources are]</p>
+//     <a href="#" class="card-link">Find out more <i class="icon-chevron-sm"></i></a>
+//   </div>
+// </article>
+// </div>
+//
+// Styleguide components.card.primary
+
+// Card – Secondary
+//
+// Secondary style version
+//
+// Markup:
+// <div class="container">
+// <article class="card card-secondary">
+//   <a href="#"><div class="card-splash">
+//     <h3 class="card-splash_title">Coal <i class="icon-chevron-sm"></i></h3>
+//     <div class="card-splash_image">
+//       <img class="" src="../img/icons/coal.svg" alt="coal">
+//     </div>
+//   </div></a>
+//   <div class="card-content">
+//     <p>Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
+//     <a class="card-link" href="#">Visit this page <span class="shrink-fa"><icon class="fa fa-chevron-right"></icon></span></a>
+//   </div>
+// </article>
+// </div>
+//
+// Styleguide components.card.secondary
+
+.card {
+  @include span-columns(12);
+
+  background-color: $white;
+  border-radius: 10px;
+  height: 370px;
+  margin-bottom: $base-padding;
+  position: relative;
+
+  @include respond-to(small-to-large) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include respond-to(medium-up) {
+    height: 320px;
+  }
+
+  @include respond-to(large-up) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.card-secondary {
+  height: 450px;
+  @include span-columns(3);
+}
+
+.card-splash {
+  background-color: $black-light;
+  border-radius: 10px 10px 0 0;
+  color: $white;
+  height: 170px;
+  padding: $base-padding;
+  position: relative;
+}
+
+.card-splash_title {
+  color: $white;
+}
+
+.card-splash_image {
+  bottom: $base-padding;
+  position: absolute;
+  right: $base-padding;
+}
+
+img.card-image {
+  border-bottom: 4px solid $gray-pale;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    border-bottom: 4px solid $blue;
+  }
+}
+
+.card-image_link {
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+  }
+}
+
+.card-content {
+  padding: $base-padding;
+
+  p {
+    @include heading(para-md);
+    color: $gray-darkest;
+    line-height: 1.6;
+  }
+
+  .card-content-subhead {
+    color: $gray-darkest;
+    font-weight: $weight-bold;
+    margin-bottom: ($base-padding-lite / 2);
+  }
+
+  @include respond-to(medium-up) {
+    p {
+      @include heading(para-sm);
+    }
+  }
+}
+
+
+
+.card-title {
+  @include heading(para-md);
+  color: $blue;
+  font-weight: $weight-bold;
+  line-height: 1.3;
+  margin-bottom: $base-padding-lite;
+}
+
+.card-link {
+  bottom: $base-padding;
+  position: absolute;
+}

@@ -36,7 +36,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2007-2016 and for fiscal years 2008-2017.
+description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2008-2017.
 tag:
 - Data
 - Downloads
@@ -51,7 +51,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_CY07-16.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/federal_production_CY08-17.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
   </ul>
 </p>
 
@@ -63,7 +63,7 @@ tag:
 
 This dataset also includes county-level data about coal production on federal land.
 
-We have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
+We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 
 ## Scope
 

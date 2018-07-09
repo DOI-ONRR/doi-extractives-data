@@ -1,0 +1,22 @@
+.case_studies-map {
+  display: block;
+  fill: transparent;
+  margin: auto;
+  stroke: $gray-light;
+  stroke-width: 0.5px;
+  width: 100%;
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
+  g {
+    &:first-child {
+      stroke-width: 2px;
+    }
+
+    &:last-child {
+      stroke-width: 0.5px;
+    }
+  }
+}

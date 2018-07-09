@@ -1,16 +1,16 @@
 federal_production:
-  '2007':
-    - product: Quartz Crystal (tickets/pounds)
-      name: Quartz Crystal
-      units: tickets/pounds
-      value: 2400
-      rank: 1
-      percent: 100
   '2015':
     - product: Quartz Crystal (tickets/pounds)
       name: Quartz Crystal
       units: tickets/pounds
       value: 4701
+      rank: 1
+      percent: 100
+  '2017':
+    - product: Quartz Crystal (tickets/pounds)
+      name: Quartz Crystal
+      units: tickets/pounds
+      value: 12281
       rank: 1
       percent: 100
 revenue:

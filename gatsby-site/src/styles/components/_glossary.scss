@@ -1,0 +1,105 @@
+// // Glossary
+// //
+// // The site glossary
+// //
+// // Styleguide components.glossary
+
+$drawer-width: 300px;
+$term-width: 185px;
+$term-width-max: 220px;
+
+#glossary {
+  width: 100%;
+  z-index: $z-sky;
+  -webkit-font-smoothing: antialiased;
+
+  @include respond-to(tiny-up) {
+    width: $drawer-width;
+  }
+}
+
+.glossary-item {
+  border-bottom: 2px solid $black-light;
+  padding-top: $standard-padding-small;
+  padding-bottom: $standard-padding-small;
+
+  &:first-child {
+    border-top: 2px solid $black-light;
+  }
+
+  [accordion-button] {
+    color: $white;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: -2px;
+  }
+}
+
+.glossary-term {
+  @include heading('para-md');
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  max-width: $term-width-max;
+  width: 100%;
+
+  @include respond-to(tiny-up) {
+    width: $term-width;
+  }
+}
+
+.glossary-definition {
+  margin-bottom: $base-padding-lite;
+
+  @include heading('para-md');
+    color: $gray-light;
+    font-weight: 400;
+}
+
+// Term classes
+//
+// Wrap glossary terms with these classes
+//
+// .term          - Standard class -- adds the book icon
+// .term-end      - Used when directly followed by punctuation
+//
+// Markup:
+// <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
+//     extractive industries
+//     <icon class="icon-book"></icon>
+// </span>, Brian asked inquisitively</p>
+//
+// Styleguide components.drawer.term
+
+.term {
+  @include transition(background-color, 0.2s, box-shadow, 0.2s, color, 0.2s);
+
+  border-bottom: 1px dotted $base-font-color;
+  box-shadow: 0 0 0 4px transparent;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $base-font-color;
+    text-decoration: none;
+  }
+
+  icon {
+    font-size: 0.75em;
+
+    &:before {
+      padding-left: $base-padding-lite * 0.75;
+    }
+
+  }
+}
+
+.term-end {
+  @extend .term;
+
+  box-shadow: none;
+  margin-right: 0.15rem;
+}

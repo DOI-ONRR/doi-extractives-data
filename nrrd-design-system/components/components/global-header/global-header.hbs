@@ -1,36 +1,14 @@
-<!-- <div class="{{ className }}">{{ text }}</div> -->
-
-<!-- </header>
-<header class="header">
-  <div>
-    <a class="header-image_link" href="/">
-      <img class="header-image" src="https://eiti-dev.18f.gov/img/NRRD-logo.svg" alt="NRRD logo">
-    </a>
-  </div>
-  <nav class="header-nav">
-    <ul class="header-nav_inner">
-      <li class="header-nav_item">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
-      </li>
-      <li class="header-nav_item">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/about">About</a>
-      </li>
-    </ul>
-  </nav>
-</header> -->
-
-
 <section class="banner slab-beta">
-  <span class="banner-left"><img class="banner-image" src="../../../public/img/us-flag-small.png" alt="US flag signifying that this is a United States Federal Government website">An official website of the U.S. Government</span>
+  <span class="banner-left"><img class="banner-image" src="{{ path '/img/us-flag-small.png' }}" alt="US flag signifying that this is a United States Federal Government website">An official website of the U.S. Government</span>
 </section>
 
 <header class="header container-page-wrapper">
   <div class="header-left">
-    <a class="header-image_link" href="/">
+    <a class="header-image_link" href="#">
       <h1 class="sr-only">
         U.S. Department of the Interior Natural Resources Revenue Data
       </h1>
-      <img class="header-image" src="../../../public/img/NRRD-logo.svg" alt="Logo">
+      <img class="header-image" src="{{ path '/img/NRRD-logo.svg' }}" alt="Logo">
     </a>
   </div>
 
@@ -41,11 +19,11 @@
       </li>
       <span class="header-nav_item_link_spacer"> | </span>
       <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top " href="/downloads/">Download data</a>
+        <a class="header-nav_item_link_top " href="#">Download data</a>
       </li>
 
       <li class="header-nav_item_top">
-        <form action="/search-results/">
+        <form action="#">
           <label class="sr-only" for="q">Search</label>
           <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search">
           <button type="submit" class="header-nav_search_icon icon-search" title="search"><label class="sr-only">Search</label></button>
@@ -55,22 +33,61 @@
     </ul>
     <ul class="header-nav_bottom">
       <li class="header-nav_item active">
-        <a class="header-nav_item_link" href="/">Home</a>
+        <a class="header-nav_item_link" href="#">Home</a>
       </li>
       <li class="header-nav_item ">
-        <a class="header-nav_item_link" href="/about/">About</a>
+        <a class="header-nav_item_link" href="#">About</a>
       </li>
       <li class="header-nav_item ">
-        <a class="header-nav_item_link" href="/how-it-works/">How it works</a>
+        <a class="header-nav_item_link" href="#">How it works</a>
       </li>
       <li class="header-nav_item ">
-        <a class="header-nav_item_link" href="/explore/">Explore data</a>
+        <a class="header-nav_item_link" href="#">Explore data</a>
       </li>
       <li class="header-nav_item ">
-        <a class="header-nav_item_link" href="/case-studies/">Case studies</a>
+        <a class="header-nav_item_link" href="#">Case studies</a>
       </li>
 
     </ul>
   </nav>
   <button data-toggler="nav-drawer" is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" title="Global navigation toggle" aria-labelledby="menu-button"><icon class="icon-bars"></icon></button>
 </header>
+
+<div id="nav-drawer" class="drawer" aria-hidden="true">
+
+  <div class="container">
+    <button data-toggler="nav-drawer" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer" class="header-right" title="Global navigation close" data-inner-markup="x"></button>
+  </div>
+
+  <label for="drawer-search" class="label">Search</label>
+
+  <form action='#' class="drawer-search_form">
+    <label for='q' class='sr-only'>Search</label>
+    <input class="q glossary__search drawer-search_field" type="search" name="q">
+    <button type="submit" class="drawer-search_button icon-search" title="search"></button>
+  </form>
+
+  <ul class="nav_drawer-nav">
+      <li class="nav_drawer-nav_item active">
+        <a class="nav_drawer-nav_item_link" href="#">Home</a>
+      </li>
+      <li class="nav_drawer-nav_item">
+        <a class="nav_drawer-nav_item_link" href="#">About</a>
+      </li>
+      <li class="nav_drawer-nav_item">
+        <a class="nav_drawer-nav_item_link" href="#">How It Works</a>
+      </li>
+      <li class="nav_drawer-nav_item">
+        <a class="nav_drawer-nav_item_link" href="#">Explore Data</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-break">
+        <a class="nav_drawer-nav_item_link" href="#">Case Studies</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom">
+        <a class="nav_drawer-nav_item_link" href="#">Download data</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom" title="Open glossary">
+        <a href="#" class="nav_drawer-nav_item_link js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+      </li>
+  </ul>
+</div>

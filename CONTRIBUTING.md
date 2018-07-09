@@ -176,9 +176,15 @@ If deploying the site to a production environment, make sure to minify the JS fi
 
 ### Styleguide
 
+Setup the docker environment with the steps from above. Then run the styleguide
+container to start the styleguide server.
+
 ```sh
-docker-compose run webpack npm run watch-styleguide
+docker-compose up styleguide
 ```
+
+Open your web browser to [localhost:3000](http://localhost:3000).
+
 
 ### Tests
 

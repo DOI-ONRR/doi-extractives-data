@@ -42,7 +42,7 @@ const Header = ({ siteMetadata }) => {
           </li>
           <span className="header-nav_item_link_spacer"> | </span>
           <li className="header-nav_item_top">
-            <a {...homeClassNames} href="{{ site.baseurl }}/downloads/">Download data</a>
+            <Link {...downloadClassNames} to="/downloads/">Download data</Link>
           </li>
 
           <li className="header-nav_item_top">

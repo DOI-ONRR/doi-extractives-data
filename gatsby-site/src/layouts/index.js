@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 //import { connect } from 'react-redux';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import Glossary from '../components/Glossary';
 import Footer from '../components/Footer';
 
 import "../styles/_main.scss";
@@ -19,9 +20,14 @@ export default ({ data, children}) => {
       />
       <Banner />
       <Header siteMetadata={data.site.siteMetadata} />
-      {children()}
+    
+      <main>
+        <Glossary />
+
+        {children()}
+      </main>
+
       <Footer contactInfo={data.dataYaml} siteMetadata={data.site.siteMetadata} />
-      
     </div>
   );
 }

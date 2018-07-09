@@ -8,7 +8,7 @@ const mandelbrot = require('@frctl/mandelbrot')
 const customTheme = mandelbrot({
   skin: 'blue',
   panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
-  styles: ['default', '/css/styleguide.css'],
+  styles: ['default', '/css/styleguide-theme.css'],
 })
 
 fractal.set('project.title', 'NRRD Design System')

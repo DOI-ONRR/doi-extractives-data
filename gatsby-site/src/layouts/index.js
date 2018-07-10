@@ -22,7 +22,7 @@ export default ({ data, children}) => {
       <Header siteMetadata={data.site.siteMetadata} />
     
       <main>
-        <Glossary />
+        <Glossary terms={data.allTermsYaml.edges} />
 
         {children()}
       </main>
@@ -45,6 +45,14 @@ export const query = graphql`
         city
         zip
         email
+      }
+    }
+    allTermsYaml {
+      edges {
+        node {
+          name
+          definition
+        }
       }
     }
     site {

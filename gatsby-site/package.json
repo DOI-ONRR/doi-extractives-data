@@ -11,6 +11,7 @@
     "gatsby-source-filesystem": "^1.5.38",
     "gatsby-transformer-remark": "^1.7.42",
     "gatsby-transformer-yaml": "^1.5.18",
+    "lazy.js": "^0.5.1",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
@@ -37,7 +38,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
-    "lazyjs": "0.0.1",
     "prettier": "^1.10.2",
     "sass-loader": "^7.0.3",
     "svg-react-loader": "^0.4.5"

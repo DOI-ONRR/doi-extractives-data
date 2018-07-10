@@ -1,10 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Link from '../temp-link';
 
 import NRRDLogo from "../../img/NRRD-logo.svg";
 
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/app';
 
-const Header = ({ siteMetadata }) => {
+
+const Header = (props) => {
   
   let defaultNavClassNames = {'className': " header-nav_item "};
   let homeClassNames = {'className': " header-nav_item "};
@@ -38,7 +41,7 @@ const Header = ({ siteMetadata }) => {
       <nav className="header-nav header-right">
         <ul className="header-nav_top">
           <li className="header-nav_item_top">
-            <a href="javascript:void(0)" className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+            <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
           </li>
           <span className="header-nav_item_link_spacer"> | </span>
           <li className="header-nav_item_top">
@@ -76,8 +79,10 @@ const Header = ({ siteMetadata }) => {
     </header>
   );
 }
-
-export default Header;
+export default connect(
+  state => ({ glossaryOpen: state.app.glossaryOpen }),
+  dispatch => ({ glossaryTermSelected: (term, doOpen) => dispatch(glossaryTermSelectedAction(term, doOpen)) }),
+)(Header);
    /* <Link
       to="/another-page/"
       activeStyle={{

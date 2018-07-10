@@ -1,6 +1,6 @@
 # gatsby-starter-default
 
-Minimalistic starter template for Gatsby with Redux and Emotion to get you started.
+Minimalistic starter template for Gatsby with Redux to get you started.
 
 ## Demo
 

@@ -5,15 +5,15 @@ const Glossary = () => (
         aria-describedby="glossary-result" aria-hidden="true">
     <div className="container">
       <button id="glossary-toggle" className="button button--close toggle">
-        <label for="glossary-toggle" className="sr-only">Close glossary</label><icon className="icon-close-x"></icon>
+        <label htmlFor="glossary-toggle" className="sr-only">Close glossary</label><icon className="icon-close-x"></icon>
       </button>
     </div>
 
     <h1 className="h2 drawer-header"><icon className="icon-book"></icon> Glossary </h1>
-    <label for="drawer-search-bar" className="label">Filter glossary terms</label>
+    <label htmlFor="drawer-search-bar" className="label">Filter glossary terms</label>
     <input id="drawer-search-bar" className="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel" />
     <div id="glossary-result">
-      <ul className="js-glossary-list list-unstyled" accordion="glossary-accordion">
+      <ul className="js-glossary-list list-unstyled" data-accordion="glossary-accordion">
         <li className="glossary-item">
           <h2 className="glossary-term">term</h2>
           <button><span className="sr-only">Toggle for term</span></button>

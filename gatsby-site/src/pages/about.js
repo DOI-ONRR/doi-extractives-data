@@ -19,7 +19,7 @@ const AboutPage = () => {
         <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
           <div className="container-left-8 ribbon-hero ribbon-hero-column">
             <h1 id="introduction">About this site</h1>
-            <p className="ribbon-hero-description">The United States is a major developer of natural resources. The Department of the Interior (DOI) collects billions of dollars in annual revenue from companies that lease <GlossaryTerm dataTerm="federal land">federal lands and waters</GlossaryTerm> in order to develop oil, gas, or mineral resources. These revenues are <a href="/explore/#federal-disbursements">disbursed</a> to the U.S. Treasury, other federal agencies, states, American Indian tribes, and individual Indian mineral owners.</p>
+            <p className="ribbon-hero-description">The United States is a major developer of natural resources. The Department of the Interior (DOI) collects billions of dollars in annual revenue from companies that lease <GlossaryTerm termKey="federal land">federal lands and waters</GlossaryTerm> in order to develop oil, gas, or mineral resources. These revenues are <a href="/explore/#federal-disbursements">disbursed</a> to the U.S. Treasury, other federal agencies, states, American Indian tribes, and individual Indian mineral owners.</p>
 
             <p className="ribbon-hero-description">This site provides data and contextual information about how natural resources and their revenues are managed in the U.S.</p>
           </div>
@@ -161,18 +161,16 @@ const AboutPage = () => {
           <div className="container-left-7">
             <h3 id="timeline" className="h4">Timeline</h3>
 
-            <p>
-              <ul className="list-bullet">
-                <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>
-                <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
-                <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data.</li>
-                <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data (available throughout this site).</li>
-                <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <GlossaryTerm dataTerm="Independent Administrator (IA)">Independent Administrator</GlossaryTerm> for USEITI.</li>
-                <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
-                <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
-                <li><strong>December 2012:</strong> The Secretary of the Interior formed a <a href="https://www.doi.gov/eiti/faca">multi-stakeholder group (MSG)</a>, which included representatives from government, industry, and <GlossaryTerm>civil society</GlossaryTerm>.</li>
-              </ul>
-            </p>
+            <ul className="list-bullet">
+              <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>
+              <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
+              <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data.</li>
+              <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="{{ site.baseurl }}/about/report/">Executive Summary</a> and interactive data (available throughout this site).</li>
+              <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <GlossaryTerm termKey="Independent Administrator (IA)">Independent Administrator</GlossaryTerm> for USEITI.</li>
+              <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
+              <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
+              <li><strong>December 2012:</strong> The Secretary of the Interior formed a <a href="https://www.doi.gov/eiti/faca">multi-stakeholder group (MSG)</a>, which included representatives from government, industry, and <GlossaryTerm>civil society</GlossaryTerm>.</li>
+            </ul>
           </div>
 
         </section>

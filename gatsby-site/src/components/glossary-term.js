@@ -1,10 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../state/app';
 
-const GlossaryTerm = (props) => (
-  <span className="term term-end" data-term={props.dataTerm ? props.dataTerm : props.children} title="Click to define" tabindex="0">
-    {props.children}
+const GlossaryTerm = ({termKey, children, glossaryTermSelected}) => (
+  <span className="term term-end" title="Click to define" tabIndex="0" 
+    onClick={() => glossaryTermSelected((termKey ? termKey : children))}>
+    {children}
     <icon className="icon-book"></icon>
   </span>
 );
 
-export default GlossaryTerm;
+export default connect(
+  state => ({ glossaryTerm: state.app.glossaryTerm }),
+  dispatch => ({ glossaryTermSelected: term => dispatch(glossaryTermSelectedAction(term)) }),
+)(GlossaryTerm);

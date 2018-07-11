@@ -2,7 +2,7 @@
 title: 'AML Reclamation Program | How it Works'
 title_display: Abandoned Mine Land Reclamation Program
 layout: content
-description: The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
+description: The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program. The program sets standards for today's coal companies as they reclaim past mining areas while they mine others and to post bonds to cover the cost if unable to reclaim current coal mines.
 tag:
 - How it works
 - AML
@@ -10,6 +10,7 @@ tag:
 - AML fund
 - Reclamation
 - Coal
+- Mining
 permalink: /how-it-works/aml-reclamation-program/
 nav_items:
   - name: intro
@@ -26,38 +27,45 @@ breadcrumb:
 selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program to use company fees to reclaim coal mines abandoned before 1977, to set standards for today's coal companies as they reclaim areas contemporaneously with their mining, and to post bonds to cover the cost if companies are unable to reclaim current coal mines.
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program. The program sets standards for today's coal companies as they reclaim past mining areas while they mine others and to post bonds to cover the cost if unable to reclaim current coal mines.
 
 ## Abandoned mine land areas
 
 Abandoned mines pose risks to people and the environment. They can contaminate ground water, emit toxic waste, and cause injury when unsteady infrastructures collapse.
 
-State and tribal AML programs rate abandoned mine areas on a priority scale of 1 to 3, as defined by federal law. Mines rated 1 and 2 are high priority and should be addressed first, with a few exceptions.[^1]
+### Priorities
 
-- **Priority 1**: Protection of public health safety, and property from extreme danger of adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
+State and tribal AML programs rate abandoned mine areas on a priority scale of 1 to 3, as defined by federal law. Mines rated 1 and 2 are high priority and are addressed first, with [a few exceptions](https://www.law.cornell.edu/uscode/text/30/1233).
+
+- **Priority 1**: Protection of public health, safety, and property from extreme danger of adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 2**: Protection of public health and safety from adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 3**: Restoration of land and water resources and the environment previously degraded by adverse effects of coal mining practices pre-1977
 
-To date, coal mine companies have paid $9.2 billion in AML fees to reclaim coal-related AML areas. Those fees have earned $1.5 billion in interest, which has paid for a portion of the costs for health care plans for the United Mine Workers of America (UMWA).[^2]
+### Map of sites
 
-**To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. To see data by completed, funded, and unfunded sites, click on 'Summary.'** <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
+To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. 
+
+To see data by completed, funded, and unfunded sites, click on 'Summary.' <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 
-### Reclaimed AML areas
+### Certification
 
-Since 1977, $3.9 billion has been spent on the construction of completed reclamation projects.[^3]
+When a state or tribe has reclaimed high priority coal sites, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
 
-When a state or tribe has reclaimed identified high priority coal sites, they may be eligible for "certification."[^4] The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds sourced from AML fees, they receive funds sourced from the General Fund of the U.S. Treasury. These funds can be used for a wider range of purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
+You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
 
-Five states and three tribes are considered certified: Wyoming, Montana, Texas, Louisiana, Mississippi, the Crow Tribe, the Hopi Tribe, and the Navajo Nation.[^5]
-
-### AML areas undergoing or requiring reclamation
+### Areas undergoing or requiring reclamation
 
 The federal AML Reclamation Program distributes funds for reclamation to the state and tribal AML programs with remaining Priority 1 and 2 sites.
 
 State and tribal AML programs use funds to prepare for reclamation projects, including permitting processes, environmental assessments, site surveys, and the development of reclamation plans. After completing project preparation, funds are used for construction to reclaim the site.
 
-**Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.**[^6]
+
+
+
+Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.
+
+OSMRE is required to report measurable goals to Congress. One of their key measures is the number of abandoned mine land acres reclaimed. 
 
 For more information:
 
@@ -69,6 +77,8 @@ For more information:
 <img src="{{ site.baseurl }}/public/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
 
 The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)).
+
+Interest from AML fees pays for a portion of the costs for [health care plans for the United Mine Workers of America (UMWA)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf).
 
 ## AML revenue and disbursements
 
@@ -149,8 +159,6 @@ As of November 2015, the fund's balance stood at $2.5 billion.[^21] The reauthor
 Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
 
 ## Notes
-
-[^1]: Legal Information Institute, [30 U.S.C. §1233(a)](https://www.law.cornell.edu/uscode/text/30/1233)
 
 [^2]: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf), 2016
 

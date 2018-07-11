@@ -4,9 +4,9 @@ module.exports = {
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
   // This prefix is appended to load all our related images and code.
   // PREVIEW
-  // pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-dev/gatsby-public`,
+  pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-dev/gatsby-public`,
   // PROD/LOCAL JEKYLL
-  //pathPrefix: `/gatsby-public`,
+  // pathPrefix: `/gatsby-public`,
   
   siteMetadata: {
     title: 'Natural Resources Revenue Data',

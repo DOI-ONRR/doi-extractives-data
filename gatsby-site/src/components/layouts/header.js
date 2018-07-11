@@ -80,12 +80,3 @@ export default connect(
   state => ({ glossaryOpen: state.app.glossaryOpen }),
   dispatch => ({ glossaryTermSelected: (term, doOpen) => dispatch(glossaryTermSelectedAction(term, doOpen)) }),
 )(Header);
-   /* <Link
-      to="/another-page/"
-      activeStyle={{
-        color: 'red'
-      }}
-      innerRef={(el) => { this.myLink = el }}
-    >
-    Another page
-    </Link>*/

@@ -25,4 +25,17 @@ gatsby new your-project-name https://github.com/caki0915/gatsby-starter-redux
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/caki0915/gatsby-starter-redux)
+Steps:
+1. Update gatsby-config.js to include the appropriate path-prefix
+2. Run gatsby build --prefix-paths
+3. Update the generated pages with the related frontmatter.
+  # About Page Frontmatter
+  
+---
+title: About
+layout: none
+permalink: /about/
+redirect_from: /about/whats-new/
+---
+
+4. Copy contents in the gatsby-site/public to gatsby-public

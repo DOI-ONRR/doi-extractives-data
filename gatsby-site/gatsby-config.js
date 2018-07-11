@@ -15,7 +15,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-sass',
     `gatsby-transformer-yaml`,
     'gatsby-transformer-remark',
     // You can have multiple instances of this plugin

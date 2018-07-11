@@ -1,12 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-//import { connect } from 'react-redux';
-import Banner from '../components/Banner';
-import Header from '../components/Header';
-import Glossary from '../components/Glossary';
-import Footer from '../components/Footer';
+import Banner from 'components/layouts/Banner';
+import Header from 'components/layouts/Header';
+import Footer from 'components/layouts/Footer';
+import Glossary from 'components/utils/Glossary';
 
-import "../styles/_main.scss";
+import "styles/_main.scss";
 
 export default ({ data, children}) => {
   return (

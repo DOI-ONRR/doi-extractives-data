@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Lazy from 'lazy.js';
-import { glossaryTermSelected as glossaryTermSelectedAction } from '../state/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from 'state/app';
 
 class GlossaryItem extends React.Component {
 

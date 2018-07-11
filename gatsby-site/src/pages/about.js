@@ -1,16 +1,16 @@
 import React from 'react';
-import Link from '../components/temp-link';
 
-import GlossaryTerm from '../components/glossary-term.js';
+import Link from 'components/utils/temp-link';
+import GlossaryTerm from 'components/utils/glossary-term.js';
 
-import DOImark from "../img/logos/DOI-mark.png";
-import BLMmark from "../img/logos/BLM-mark.png";
-import OSMREmark from "../img/logos/OSMRE-mark.png";
-import BOEMmark from "../img/logos/BOEM-mark.png";
-import BSEEmark from "../img/logos/BSEE-mark.png";
-import ONRRmark from "../img/logos/ONRR-mark.svg";
-import DoTmark from "../img/logos/DoT-mark.png";
-import IRSmark from "../img/logos/IRS-mark.svg";
+import DOImark from "img/logos/DOI-mark.png";
+import BLMmark from "img/logos/BLM-mark.png";
+import OSMREmark from "img/logos/OSMRE-mark.png";
+import BOEMmark from "img/logos/BOEM-mark.png";
+import BSEEmark from "img/logos/BSEE-mark.png";
+import ONRRmark from "img/logos/ONRR-mark.svg";
+import DoTmark from "img/logos/DoT-mark.png";
+import IRSmark from "img/logos/IRS-mark.svg";
 
 const AboutPage = () => {
   return (

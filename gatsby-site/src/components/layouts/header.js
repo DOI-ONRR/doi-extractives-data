@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Link from '../temp-link';
+import Link from 'components/utils/temp-link';
+import Search from 'components/utils/search';
 
-import NRRDLogo from "../../img/NRRD-logo.svg";
+import NRRDLogo from "img/NRRD-logo.svg";
 
-import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from 'state/app';
 
 
 const Header = (props) => {
@@ -49,11 +50,7 @@ const Header = (props) => {
           </li>
 
           <li className="header-nav_item_top">
-            <form action='{{ site.baseurl }}/search-results/'>
-              <label className='sr-only' htmlFor="q">Search</label>
-              <input type="search" className="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
-              <button type="submit" className="header-nav_search_icon icon-search" title="search"><label className="sr-only">Search</label></button>
-            </form>
+            <Search />
           </li>
 
         </ul>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import logo from "../../img/DOI-2x.png";
-import DownloadIcon from '-!svg-react-loader!../../img/svg/icon-download-base.svg';
+import logo from "img/DOI-2x.png";
+import DownloadIcon from '-!svg-react-loader!img/svg/icon-download-base.svg';
 
 const Footer = ({ contactInfo, siteMetadata }) => ( 
 <footer className="footer">

@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
-import logo from "../../img/us-flag-small.png";
+import logo from "img/us-flag-small.png";
 
 const Banner = () => (
   <section className="banner slab-beta-light">

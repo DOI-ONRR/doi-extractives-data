@@ -1,0 +1,154 @@
+.landing-wrapper {
+  margin-bottom: ($base-padding-extra * 1.4);
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  section + section,
+  section:first-of-type {
+    padding-top: $standard-padding-jumbo;
+  }
+
+  h3,
+  h4 {
+    font-size: 1rem;
+    font-weight: $weight-bold;
+    line-height: 1.375rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h4,
+  .h3 {
+    padding-top: $standard-padding-large;
+  }
+
+  .h2-bar {
+    margin-bottom: 0;
+
+    + .landing-section {
+      padding-top: 1rem;
+    }
+
+    + .h3-bar {
+      padding-top: 3rem;
+    }
+  }
+
+  .h3-bar {
+    @include heading('h5');
+  }
+}
+
+.landing-section > div {
+  @include span-columns(12);
+
+  @include respond-to(huge-up) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  p {
+    @include heading('para-md');
+    color: $black-light;
+    margin-bottom: 0;
+
+    + p {
+      margin-top: 0.3em;
+    }
+  }
+
+  svg + p {
+    margin-top: 0.3em;
+  }
+}
+
+.landing-section.landing-section-with-graphics {
+  .landing-heading {
+    position: relative;
+  }
+
+  svg {
+    bottom: 0;
+    float: right;
+    margin: 20px;
+    max-height: 100%;
+
+    path {
+      fill: $gray-light;
+    }
+  }
+
+  .landing-minerals {
+    svg {
+      top: -36px;
+    }
+  }
+
+  .landing-coal {
+    svg {
+      margin-right: 10px;
+      top: -20px;
+    }
+  }
+
+  .landing-renewables {
+    svg {
+      margin-right: 30px;
+      top: 30px;
+    }
+  }
+
+  p {
+    width: auto;
+  }
+
+  @include respond-to(medium-up) {
+    .landing-minerals {
+      svg {
+        top: 40px;
+      }
+    }
+
+    .landing-coal {
+      svg {
+        top: 50px;
+      }
+    }
+
+    div {
+      position: relative;
+    }
+
+    .landing-heading {
+      position: initial;
+    }
+
+    svg {
+      height: auto;
+      top: 50px;
+      width: auto;
+    }
+
+    p {
+      padding-right: 150px;
+    }
+  }
+}
+
+.landing-section + .h3-bar {
+  padding-top: 4rem;
+}
+
+.landing-intro_link {
+  margin-bottom: 0.36rem;
+
+  + p {
+    font-size: 1em;
+  }
+}

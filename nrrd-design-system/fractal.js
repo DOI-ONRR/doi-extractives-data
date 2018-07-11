@@ -4,15 +4,30 @@ const path = require('path')
 
 const fractal = (module.exports = require('@frctl/fractal').create())
 const mandelbrot = require('@frctl/mandelbrot')
+const handlebars = require('@frctl/handlebars')
 
 const customTheme = mandelbrot({
   skin: 'blue',
   panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
-  styles: ['default', '/css/styleguide.css'],
+  styles: ['default', '/css/styleguide-theme.css'],
+})
+
+const engine = handlebars({
+  partials: {
+    lorem: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie
+      suscipit facilisis. Nulla tempus non metus ut porttitor. Suspendisse
+      luctus lacus vel tortor pellentesque ullamcorper. Donec libero nunc,
+      sodales vel sollicitudin et, porta aliquet eros. Aenean vel euismod
+      leo. In a dignissim lectus. Vivamus congue lobortis massa sit amet
+      efficitur.
+      `
+  }
 })
 
 fractal.set('project.title', 'NRRD Design System')
 
+fractal.components.set('engine', engine)
 fractal.components.set('path', path.join(__dirname, 'components'))
 fractal.components.set('statuses', {
   blocked: {

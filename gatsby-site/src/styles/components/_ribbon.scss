@@ -1,0 +1,375 @@
+// Ribbon
+//
+// A ribbon with two columns of content
+//
+// Markup:
+// <section class="slab-delta">
+//   <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
+//     <div class="container-left-8 ribbon-hero ribbon-hero-column">
+//       <h1>{{ page.title }}</h1>
+//       <p class="ribbon-hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
+//       <p class="ribbon-hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
+//     </div>
+//     <div class="container-right-4 ribbon-card-column ribbon-card">
+//       <figure class="ribbon-card-top">
+//         <a href="{{site.baseurl}}/explore/#revenue/">
+//           <img class="ribbon-card-image" src="{{ site.baseurl }}/public/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+//         </a>
+//       </figure>
+//       <figcaption class="ribbon-card-bottom">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
+//     </div>
+//   </div>
+// </section>
+//
+// Styleguide components.ribbon
+
+.ribbon-card {
+  background-color: $gray-pale;
+  border: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+
+  &.ribbon-card-column {
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      border-bottom: 4px solid $white;
+    }
+  }
+}
+
+.ribbon-card,
+.ribbon-card-column {
+  border-top: 4px solid $white;
+}
+
+.ribbon-card-top {
+  background-color: $gray-pale;
+  border-bottom: 0;
+  flex: 1 0 auto;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  padding-top: 0;
+  text-align: left;
+
+  &.ribbon-card-top-text {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(small-to-huge) {
+      flex-direction: row;
+      justify-content: space-around;
+
+      > *:not(a) {
+        align-self: flex-start;
+        text-align: left;
+        width: 50%;
+      }
+
+      a {
+        text-align: center;
+      }
+
+      h2 {
+        @include heading('para-lg');
+        font-weight: $weight-bold;
+      }
+    }
+
+    > * {
+      align-self: center;
+      margin-bottom: $base-padding;
+      text-align: center;
+    }
+
+    h2 {
+      align-self: flex-start;
+      text-align: left;
+    }
+  }
+}
+
+.ribbon-card-top-text-header {
+  @include heading(para-lg);
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding-bottom: $base-padding-small;
+  text-align: left;
+}
+
+.ribbon-card-top-text-header-sub {
+  @include heading('para-lg');
+}
+
+.ribbon-card-top-list {
+  @include heading('para-md');
+  margin-bottom: 1.25rem;
+  padding-bottom: $base-padding-lite;
+  text-align: left;
+}
+
+.ribbon-card-bottom {
+  @include heading('para-md');
+
+  background-color: $gray-light;
+  color: $gray-darkest;
+  font-weight: $weight-book;
+  margin-bottom: 0;
+  padding-bottom: $base-padding;
+  padding-left: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-top: $base-padding;
+  text-align: center;
+
+  a {
+    color: $gray-darkest;
+  }
+
+  label {
+    text-align: left;
+  }
+}
+
+.ribbon-card-top {
+  padding: $base-padding;
+}
+
+.ribbon {
+  svg {
+    width: 100%;
+
+    @include respond-to(large-up) {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  .ribbon-card {
+    position: relative;
+
+    &.ribbon-card-home {
+      padding-top: $base-padding-extra;
+
+      @include respond-to(tiny-to-medium) {
+        &:last-of-type {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  .ribbon-hero {
+    padding-bottom: $base-padding-large;
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+    padding-top: $base-padding-extra;
+
+    &.ribbon-hero-home {
+      padding-bottom: $base-padding-jumbo;
+    }
+
+    &.ribbon-hero-column {
+      align-self: flex-start;
+    }
+  }
+
+  &.ribbon-column {
+    flex-direction: column;
+  }
+}
+
+.container-page-wrapper.ribbon {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+svg {
+  display: inline-block;
+
+  &.small {
+    display: none;
+  }
+}
+
+.ribbon-hero-description {
+  @include heading('para-lg');
+}
+
+.ribbon-hero-description-light {
+  @include font-size(1.375);
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+  padding-right: $standard-padding-extra;
+}
+
+@include respond-to(tiny-up) {
+
+  .ribbon {
+
+    .ribbon-hero {
+      padding-left: $base-padding;
+      padding-right: $base-padding;
+    }
+
+    .ribbon-card {
+      position: relative;
+    }
+
+    .svg-oil-rig {
+      display: none;
+      float: left;
+      width: 100%;
+
+      .rig-dollars {
+        display: inline-block;
+        transform: scale(0.6) translate(300px, 87px);
+      }
+
+      .symbols {
+        transform: translateY(-24px);
+      }
+
+      rect {
+        height: 43px;
+      }
+
+      &.small {
+        display: inline-block;
+      }
+    }
+  }
+
+  .ribbon-card {
+    &.ribbon-card-column {
+      .ribbon-card-top {
+        padding-top: $base-padding-large;
+      }
+    }
+  }
+}
+
+@include respond-to(small-to-huge) {
+  .ribbon .ribbon-hero,
+  .ribbon-card-top,
+  .ribbon-card-bottom {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
+}
+
+@include respond-to(medium-up) {
+
+  .ribbon-card {
+    border-left: 4px solid $white;
+    border-right: 4px solid $white;
+
+    &:not(.ribbon-card-column) {
+      border-top: 0;
+    }
+  }
+
+  .ribbon {
+    align-items: flex-end;
+    display: flex;
+
+    .ribbon-card {
+      align-self: stretch;
+      position: relative;
+    }
+
+    .ribbon-hero:not(.ribbon-hero-column) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .svg-oil-rig {
+      bottom: 0;
+      display: inline-block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+
+      .rig-dollars {
+        transform: scale(1) translate(48px);
+      }
+
+      .symbols {
+        transform: inherit;
+      }
+
+      rect {
+        height: 72px;
+      }
+
+      &.small {
+        display: none;
+      }
+    }
+  }
+}
+
+@include respond-to(medium-to-huge) {
+
+  .ribbon {
+    &.container-page-wrapper:not(.ribbon-column) {
+      margin-left: $page-padding;
+      margin-right: $page-padding;
+    }
+  }
+}
+
+@include respond-to(medium-to-huge-plus) {
+
+  .ribbon-card-column.container-right-4 {
+    @include span-columns(12);
+  }
+
+  .ribbon-hero-column.container-left-8 {
+    @include span-columns(12);
+    margin-right: 0;
+  }
+}
+
+@include respond-to(huge-up) {
+  .ribbon.ribbon-column {
+    flex-direction: row;
+    margin-left: $page-padding;
+    margin-right: $page-padding;
+
+    .ribbon-hero {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .ribbon .ribbon-card {
+    padding-top: $base-padding-large;
+  }
+
+  .ribbon-card {
+
+    &.ribbon-card-column {
+      border-left: 4px solid $white;
+      border-right: 4px solid $white;
+      border-top: 0;
+
+
+      .ribbon-card-top {
+        padding-top: 0;
+      }
+    }
+
+  }
+}
+
+@include respond-to(huge-plus-up) {
+  .container-page-wrapper.ribbon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

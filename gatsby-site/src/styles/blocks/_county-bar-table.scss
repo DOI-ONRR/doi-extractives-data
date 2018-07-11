@@ -1,0 +1,69 @@
+.eiti-data-map-table {
+  label {
+    float: left;
+  }
+
+  tbody > tr {
+    cursor: pointer;
+  }
+
+  [is="bar-chart-table"] {
+    @extend .table-basic;
+
+    th {
+      line-height: 1.1;
+      vertical-align: bottom;
+    }
+  }
+}
+
+[is="bar-chart-table"].county-table {
+  @include heading('para-sm');
+
+  .bar .bar {
+    background-color: $gray-light;
+  }
+
+  tbody > tr:hover:not(.inner-table-row),
+  tbody > tr:focus:not(.inner-table-row),
+  tbody > tr.selected,
+  tbody > tr.mouseover {
+    background-color: $gray-pale;
+
+    .swatch {
+      border: 1px solid $gray-light;
+    }
+  }
+
+  tbody > tr.selected {
+    font-weight: $weight-book;
+
+    td[data-sentence] {
+      font-weight: $weight-light;
+    }
+
+    &[data-year-values] {
+      border-bottom: 0;
+    }
+
+    .bar .bar {
+      background-color: $green;
+    }
+  }
+
+  .inner-table-cell {
+    padding: 0;
+  }
+
+  .inner-table-wrapper {
+    margin: 0;
+    max-height: 12em;
+    overflow: auto;
+
+    table {
+      border: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+$table-border: 1px solid $gray-light;
+
+table {
+  @include font-size(0.9);
+
+  border: $table-border;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  color: $gray-darkest;
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+
+  .numeric {
+    text-align: right;
+  }
+
+}
+
+thead {
+  border-bottom: 2px solid $gray-light;
+  font-weight: $weight-book;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 5px;
+  vertical-align: top;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+td {
+  border: $table-border;
+}
+
+
+.table-basic {
+  border: 0;
+  font-size: 0.8rem;
+  width: 100%;
+
+  td,
+  th {
+    border: 0;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  th {
+    text-align: right;
+
+    &:first-of-type {
+      text-align: left;
+    }
+  }
+
+  tr {
+    border-bottom: $table-border;
+  }
+
+  thead {
+    background-color: transparent;
+    line-height: $line-height-caps;
+
+    tr {
+      border-bottom: 2px solid $gray-light;
+    }
+  }
+
+  .numeric {
+    text-align: right;
+  }
+}
+
+.disbursements-table {
+  td,
+  th {
+    padding-bottom: $base-padding-small;
+    padding-top: $base-padding-small;
+  }
+}
+
+// Accordion group!
+// <table>
+//   <tbody class="table-accordion-group">
+//     <tr>
+//       <td>
+//         <button is="aria-toggle"
+//           aria-controls="group1" aria-expanded="false">
+//           Group 1
+//         </button>
+//       </td>
+//     </tr>
+//     <tr id="group1">
+//       <td>Some info about group 1</td>
+//     </tr>
+//   </tbody>
+// </table>
+.table-accordion-group {
+  border-bottom: $table-border;
+
+  tr {
+    border-bottom: none;
+  }
+
+  [aria-hidden] td {
+    padding-top: 0;
+  }
+}

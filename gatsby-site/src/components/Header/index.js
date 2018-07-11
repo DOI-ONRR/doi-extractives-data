@@ -1,68 +1,58 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styled from 'react-emotion';
-import { connect } from 'react-redux';
-import Hamburger from './Hamburger';
-import { toggleDrawer as toggleDrawerAction } from '../../state/app';
 
-const MenuIcon = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 ${p => p.theme.size(1)};
-  align-self: stretch;
-  transition: right 0.3s ease-in-out;
-  left: ${p => (p.isDrawerOpen ? p.theme.size(1) : `-${p.theme.size(4)}`)};
-`;
+import NRRDLogo from "../../img/NRRD-logo.svg";
 
-const Navbar = styled.div`
-  height: ${p => p.theme.size(4)};
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  z-index: ${p => p.theme.zIndex.header};
-  top: 0;
-  left: 0;
-  padding-left: ${p => p.theme.size(0.5)};
-  background: ${p => p.theme.palette.primary.main};
-`;
+const Header = ({ siteMetadata }) => (
+  <header className="header container-page-wrapper">
+    <div className="header-left">
+      <a className="header-image_link" href={siteMetadata.url}>
+        <h1 className="sr-only">
+          US Department of the Interior Natural Resources Revenue Data
+        </h1>
+        <img className="header-image" src={NRRDLogo} alt="Logo" />
+      </a>
+    </div>
+  
+    <nav className="header-nav header-right">
+      <ul className="header-nav_top">
+        <li className="header-nav_item_top">
+          <a href="javascript:void(0)" className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+        </li>
+        <span className="header-nav_item_link_spacer"> | </span>
+        <li className="header-nav_item_top">
+          <a className="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Download data</a>
+        </li>
 
-const Top = styled.header`
-  display: flex;
-  align-items: center;
-  height: ${p => p.theme.size(4)};
-  width: 100vw;
-  position: fixed;
-  z-index: ${p => p.theme.zIndex.header + 25};
-  top: 0;
-  left: 0;
-`;
+        <li className="header-nav_item_top">
+          <form action='{{ site.baseurl }}/search-results/'>
+            <label className='sr-only' for="q">Search</label>
+            <input type="search" className="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
+            <button type="submit" className="header-nav_search_icon icon-search" title="search"><label className="sr-only">Search</label></button>
+          </form>
+        </li>
 
-const Title = styled(Link)`
-  color: ${p => p.theme.palette.primary.contrast};
-  padding-left: ${p => p.theme.size(1)};
-  text-decoration: none;
-  font-size: ${p => p.theme.size(2)};
-`;
+      </ul>
+      <ul className="header-nav_bottom">
+        <li className="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
+          <a className="header-nav_item_link" href={siteMetadata.url}>Home</a>
+        </li>
+        <li className="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
+          <a className="header-nav_item_link" href={siteMetadata.url+"/about/"}>About</a>
+        </li>
+        <li className="header-nav_item {% if page.permalink contains '/how-it-works/' or layout.nav_name == 'how-it-works' %}active{% endif %}">
+          <a className="header-nav_item_link" href={siteMetadata.url+"/how-it-works/"}>How it works</a>
+        </li>
+        <li className="header-nav_item {% if page.permalink contains '/explore/' or layout.nav_name == 'explore' %}active{% endif %}">
+          <a className="header-nav_item_link" href={siteMetadata.url+"/explore/"}>Explore data</a>
+        </li>
+        <li className="header-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
+          <a className="header-nav_item_link" href={siteMetadata.url+"/case-studies/"}>Case studies</a>
+        </li>
 
-const Header = ({ isDrawerOpen, toggleDrawer }) => (
-  <div>
-    <Top>
-      <MenuIcon
-        isDrawerOpen={isDrawerOpen}
-        href="#"
-        onClick={() => toggleDrawer(!isDrawerOpen)}
-      >
-        <Hamburger />
-      </MenuIcon>
-      <Title to="/">Gatsby</Title>
-    </Top>
-    <Navbar isDrawerOpen={isDrawerOpen} />
-  </div>
+      </ul>
+    </nav>
+  </header>
 );
 
-export default connect(
-  state => ({ isDrawerOpen: state.app.isDrawerOpen }),
-  dispatch => ({ toggleDrawer: open => dispatch(toggleDrawerAction(open)) }),
-)(Header);
+export default Header;

@@ -1,0 +1,9 @@
+@mixin padded-in-mobile() {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

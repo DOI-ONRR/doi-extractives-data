@@ -1,0 +1,43 @@
+.sticky-header-wrapper {
+  padding-bottom: $standard-padding-small !important;
+  padding-top: $standard-padding-small !important;
+  top: 41px;
+
+  @include respond-to(medium-up) {
+    top: 0;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: sub;
+
+    @include respond-to(tiny-down) {
+      width: 65%;
+    }
+
+    @include respond-to(tiny-to-small) {
+      width: 70%;
+    }
+
+    @include respond-to(small-to-medium) {
+      width: 80%;
+    }
+  }
+
+  &.stuck {
+    .chart-selector {
+      visibility: visible;
+    }
+  }
+
+  .chart-selector {
+    @include chart-selector(right);
+
+    margin: 0;
+    visibility: visible;
+
+    @include respond-to(small-down) {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.subpage-info-wrapper {
+  @include respond-to(medium-up) {
+    margin-right: $base-padding;
+  }
+}
+
+.info-heading {
+  padding: 0 $base-padding;
+
+  @include respond-to(medium-up) {
+    padding: 0;
+  }
+}
+
+[class^=slab] {
+  padding-bottom: $base-padding;
+  padding-top: $base-padding;
+}
+
+.regions .region {
+  display: none;
+
+  &.active {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.explore-exploration {
+  @include respond-to(medium-up) {
+    margin-top: $base-padding-large;
+  }
+}
+
+// "gov" and "co" labels
+.reportee {
+  color: $gray-darker;
+  font-weight: $weight-light;
+}
+
+.material-variance-explanation {
+  @include heading('para-sm');
+  color: $gray-darkest;
+}

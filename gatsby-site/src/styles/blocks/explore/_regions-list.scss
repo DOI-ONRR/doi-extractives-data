@@ -1,0 +1,276 @@
+.region-header {
+  border-bottom: 1px solid $gray-light;
+  border-top: none;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  .subregion-name {
+    margin: 0;
+  }
+}
+
+.region-header-category {
+  @include heading(para-md);
+  border-bottom: 1px solid $gray-light;
+  font-weight: $weight-book;
+  margin-bottom: $base-padding-lite;
+  margin-top: $base-padding-extra;
+  padding-left: $base-padding;
+}
+
+.subregion {
+  td {
+    padding-bottom: ($base-padding * 0.7);
+    padding-top: ($base-padding * 0.7);
+  }
+}
+
+.subregion-name {
+  @include heading(para-md);
+  font-weight: $weight-book;
+  margin: 0;
+  width: 86%;
+
+  .color-swatch {
+    display: inline-block;
+    height: 0.7em;
+    margin-right: $base-padding-lite;
+    width: 0.7em;
+  }
+}
+
+.subregions {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+
+  td,
+  th,
+  tr {
+    border: none;
+  }
+
+  td,
+  th {
+    border-top: 1px solid $gray-light;
+    padding-left: $base-padding-lite;
+    padding-right: $base-padding-lite;
+    text-align: left;
+  }
+
+  .bar_dollars {
+    padding-right: $base-padding;
+  }
+
+  &.exception thead .subregion-name {
+    min-width: initial;
+  }
+
+  td.value,
+  th.value {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .value.subtotal,
+  .subtotal-label {
+    font-weight: $weight-book;
+  }
+
+  thead {
+    background: none;
+    border: 0;
+
+    eiti-bar,
+    .color-swatch {
+      display: none;
+    }
+
+    .subregion-name {
+      @include heading(para-lg);
+      font-weight: $weight-bold;
+      min-width: 150px;
+      padding: 0;
+      padding-left: ($base-padding * 0.9);
+      padding-right: $base-padding;
+
+    }
+  }
+
+  .has-material-variance > * {
+    padding-bottom: 0;
+  }
+
+  .material-variance > * {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  tr {
+    > *:first-child {
+      padding-left: $base-padding;
+      width: 80%;
+
+      &.narrow {
+        vertical-align: top;
+        width: 35%;
+      }
+
+      &.no_padding {
+        padding-left: 0;
+      }
+    }
+
+    .variance,
+    .centered {
+      text-align: center;
+    }
+
+    .variance {
+      vertical-align: top;
+    }
+  }
+
+  td .reportee {
+    display: inline-block;
+    margin-left: 0.2em;
+    text-align: left;
+    width: 3em;
+  }
+
+  .bar { // specific to reconcilation
+    width: 100px;
+
+    @include respond-to(medium-up) {
+      width: 150px;
+    }
+
+    @include respond-to(large-up) {
+      width: 200px;
+    }
+
+    eiti-bar {
+      display: inline-block;
+    }
+  }
+
+  th.bar {
+    text-align: right;
+  }
+
+  .bar_negative {
+    padding-right: 0;
+
+    eiti-bar .eiti-bar-bar {
+      background: $gray-light;
+    }
+  }
+
+  .bar_positive {
+    padding-left: 0;
+  }
+
+  .subgroup .subregion-name {
+    // FIXME not sure if these numbers are right
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-top: 1em;
+
+    .hilite {
+      background: $blue-light;
+    }
+  }
+
+}
+
+.subregion {
+  clear: both;
+  padding: 0 $base-padding;
+  position: relative;
+}
+
+.region-name,
+.map-legend {
+  @include respond-to(large-down) {
+    width: 100px;
+  }
+}
+
+.region-title {
+  padding-top: 0;
+}
+
+.region-notes {
+  @include heading(para-md);
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.bold {
+  font-weight: $weight-bold;
+}
+
+.material-variance {
+  border-right: 2px solid $gray-light;
+}
+
+.threshold {
+  display: inline-block;
+  font-weight: $weight-bold;
+  margin-left: $base-padding-lite;
+}
+
+.revenue-type-list {
+  tr .variance {
+    text-align: right;
+    width: 40px;
+  }
+
+  tr:first-of-type {
+    border-top: 1px solid $gray-light;
+  }
+}
+
+.detached-header {
+  position: relative;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.detached-table_title {
+  float: left;
+  width: 50%;
+
+  @include respond-to(small-up) {
+    width: 60%;
+  }
+
+  @include respond-to(medium-up) {
+    width: 75%;
+  }
+
+  @include respond-to(large-up) {
+    width: 100%;
+  }
+}
+
+.region-subtitle {
+  @include font-size(1);
+
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+}
+
+.region-title_compact {
+  margin-bottom: 0;
+}

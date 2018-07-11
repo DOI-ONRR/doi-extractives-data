@@ -1,24 +1,20 @@
 {
-  "name": "gatsby-starter-design-redux",
-  "description": "Gatsby starter using redux",
+  "name": "NRRD",
+  "description": "Natural Resources Revenue Data",
   "version": "0.0.1",
-  "author": "Carl-Johan Kihl <carljohan.kihl@gmail.com>",
+  "author": "Jeff Keene <Jeff.Keene@onrr.gov>",
   "dependencies": {
-    "emotion": "^9.0.0",
-    "emotion-server": "^9.0.0",
-    "emotion-theming": "^9.0.0",
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-typography": "^1.7.13",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.38",
     "gatsby-transformer-remark": "^1.7.42",
-    "react-emotion": "^9.0.0",
+    "gatsby-transformer-yaml": "^1.5.18",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
-    "redux-devtools": "^3.4.1",
-    "typography-theme-bootstrap": "^0.16.7"
+    "redux-devtools": "^3.4.1"
   },
   "keywords": [
     "gatsby"
@@ -33,7 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "babel-plugin-emotion": "^9.0.0",
+    "css-loader": "^0.28.11",
     "eslint": "^4.16.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-import-resolver-webpack": "^0.8.4",
@@ -41,6 +37,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "sass-loader": "^7.0.3",
+    "svg-react-loader": "^0.4.5"
   }
 }

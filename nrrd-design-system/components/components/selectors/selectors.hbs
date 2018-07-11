@@ -1,5 +1,3 @@
-<!-- <div class="{{ className }}">{{ text }}</div> -->
-
 <div class="container-left-4 container-margin">
   <div>
     <label>Selector call to action:</label>
@@ -28,25 +26,21 @@
      <option value="2007">2007</option>
     </select>
   </div>
-  {{site.baseurl}}
+
   <div class="container-left-4 container-margin">
     <label>State selector call to action:</label>
     <select
       id="location-selector"
-      class="select-dark-gray"
-      onchange="window.location = '{{ site.baseurl }}' + this.value">
+      class="select-dark-gray">
 
-      {% if include.default %}
-        <option value="" disabled="disabled" selected="selected">{{ include.default }}</option>
-      {% endif %}
-      {% if include.nationwide %}
-        <option value="{{ include.nationwide_url }}">{{ include.nationwide_title }}</option>
-      {% endif %}
-      <optgroup label="States">
-        {% for state in site.states %}
-          <option value="{{ state.url }}">{{ state.title }}</option>
-        {% for %}
-      </optgroup>
+      <option value="">Choose item</option>
+      {{#each with-groups}}
+        <optgroup label="{{ name }}">
+          {{#each options}}
+            <option value="{{ name }}-{{@index}}">{{ this }}</option>
+          {{/each}}
+        </optgroup>
+      {{/each }}
     </select>
   </div>
 </div>

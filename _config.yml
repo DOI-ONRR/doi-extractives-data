@@ -8,7 +8,7 @@ url: https://revenuedata.doi.gov
 
 # app version number
 
-version: v3.1.10
+version: v3.2.0
 
 exclude:
   # top-level log

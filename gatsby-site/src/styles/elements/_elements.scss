@@ -1,0 +1,66 @@
+// All element specific rules.
+//
+// This file should have basic site settings,
+// such as background color.
+//
+// Global reset is provided separately by _reset.scss
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  a {
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: $weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a img {
+  border: 0;
+  outline: 0;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+// XXX: this might be the wrong thing to do
+[aria-hidden="true"] {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+pre,
+tt {
+  color: $blue;
+  font-family: Monaco, monospace;
+  font-size: 12px;
+  white-space: pre;
+}

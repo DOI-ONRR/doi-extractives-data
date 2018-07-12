@@ -1,23 +1,6 @@
 title: Sticky side navigation
 status: jscomponent
-# collated: true
-# default: simple
-# variants:
-#   - name: simple
-#     context:
-#       className: sticky_nav #not final
-#       text: Text
-#   - name: plus header
-#     context:
-#       className: TBD
-#       text: Text
-#   - name: plus header and icon
-#     context:
-#       className: TBD
-#       text: Text
-
-
-
-#display:
-#  max-width: 400px
-#  min-width: 250px
+preview: '@side-navigation-preview'
+display:
+  # This component does not display under 48em
+  min-width: 49em

@@ -1,0 +1,70 @@
+
+.toggle,
+.toggle-desktop {
+  background: transparent;
+  color: $blue;
+
+  &::before {
+    @extend .large-background-icon;
+    background-image: $icon-plus-white;
+
+    @include respond-to(medium-down) {
+      background-image: $icon-plus;
+    }
+  }
+
+  &[aria-expanded=true]:before {
+    @extend .large-background-icon;
+    background-image: $icon-min-white;
+
+    @include respond-to(medium-down) {
+       background-image: $icon-min;
+    }
+  }
+}
+
+.toggle {
+  display: block;
+  background-color: $blue;
+  color: $white;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: ($base-padding-lite * 1.5);
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  -webkit-font-smoothing: antialiased;
+
+  &[aria-expanded=true] {
+    margin-top: 1em;
+  }
+
+  @include respond-to(medium-up) {
+    display: none;
+    float: right;
+  }
+}
+
+.toggle-desktop {
+  display: none;
+  background-color: $blue;
+  color: $white;
+  float: right;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding: ($base-padding-lite * 1.5);
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  -webkit-font-smoothing: antialiased;
+
+  @include respond-to(medium-up){
+    display: inline-block;
+  }
+}
+
+.toggle-filters:not(.toggle-desktop) {
+  background: transparent;
+  color: $blue-dark;
+  float: right;
+}

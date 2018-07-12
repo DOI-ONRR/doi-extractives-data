@@ -1,0 +1,152 @@
+// Accordions
+//
+// Togglable accordion. Button is visible only in
+// screen sizes smaller than medium
+//
+// Markup:
+// <ul accordion="primary">
+//    <li>
+//        <h3>Heading</h3>
+//        <button accordion-button title="Title content"></button>
+//        <div>Accordion Content</div
+//    </li>
+// </ul>
+// <ul accordion="secondary">
+//    <li aria-expanded="false">
+//        <h3>Heading</h3>
+//        <button accordion-text>
+//          <span class='accordion-more'>more</span>
+//          <span class='accordion-less'>less</span>
+//        </button>
+//    </li>
+// </ul>
+//
+// Styleguide components.accordions
+
+[accordion-item] {
+  position: relative;
+
+  &[aria-expanded=true] {
+
+    [accordion-button]:not([accordion-text]) {
+      @include rotate(270deg, 3);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
+    }
+
+    [accordion-text] {
+      &::after {
+        @extend .background-icon;
+        background-image: $icon-min;
+      }
+
+
+      .accordion-more {
+        display: none;
+      }
+
+      .accordion-less {
+        display: inline-block;
+      }
+
+    }
+
+    [accordion-content] {
+      display: inline-block;
+    }
+
+  }
+
+  &[aria-expanded=false] {
+    [accordion-button]:not([accordion-text]) {
+      @include rotate(90deg, 1);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
+    }
+
+    [accordion-text] {
+      &::after {
+        @extend .background-icon;
+        background-image: $icon-plus;
+      }
+
+      .accordion-more {
+        display: inline-block;
+      }
+
+      .accordion-less {
+        display: none;
+      }
+    }
+
+    [accordion-content] {
+      display: none;
+    }
+  }
+}
+
+[accordion][accordion-desktop=false] {
+  @include respond-to(medium-up) {
+    [accordion-content] {
+      display: inline-block;
+    }
+
+    [accordion-button] {
+      display: none;
+    }
+  }
+}
+
+[accordion-button],
+[accordion-text] {
+  cursor: pointer;
+
+  &:after {
+    font-family: 'eiti';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+}
+
+[accordion-button] {
+  background-color: transparent;
+  background-size: 50%;
+  float: right;
+  height: 2rem;
+  margin: 0;
+  margin-top: 8px;
+  width: 2rem;
+}
+
+[accordion-text] {
+  color: $blue;
+  display: inline-block;
+  padding: 0;
+  width: initial;
+
+  &:hover &::after,
+  &:hover .accordion-less,
+  &:hover .accordion-more,
+  &:focus &::after,
+  &:focus .accordion-less,
+  &:hover .accordion-more {
+    text-decoration: underline;
+  }
+}
+
+
+.accordion-more,
+.accordion-less {
+  cursor: pointer;
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,76 @@
+.case-studies-circle-group {
+
+  &:hover,
+  &:focus,
+  &:active {
+    circle {
+      fill: $black-light;
+    }
+
+    .case-studies-caption {
+      visibility: visible;
+    }
+
+    svg path {
+      fill: $white;
+      stroke: $white;
+    }
+  }
+
+  $circle-radius: 21px;
+  $stroke-width: 2px;
+  $caption-width: 180px;
+  $caption-height: 87px;
+  $caption-offset-x: -($caption-width / 2) + $circle-radius;
+  $caption-offset-y: $circle-radius;
+
+  $wide-caption-width: 205px;
+  $wide-caption-offset-x: -($wide-caption-width / 2) + $circle-radius;
+
+
+  .case-studies-caption {
+    visibility: hidden;
+
+    $multiplier: 1.25;
+
+    &.long rect {
+      height: $caption-height * $multiplier;
+    }
+
+    &.wide rect {
+      transform: translate(#{$wide-caption-offset-x}, #{$caption-offset-y});
+      width: $wide-caption-width;
+    }
+  }
+
+  rect {
+    background: $white;
+    cursor: pointer;
+    fill: $white;
+    height: $caption-height;
+    stroke: $black-light;
+    stroke-width: $stroke-width;
+    transform: translate(#{$caption-offset-x}, #{$caption-offset-y});
+    width: $caption-width;
+  }
+
+  text {
+    @include font-size(1);
+
+    cursor: pointer;
+    fill: $black-light;
+    text-anchor: middle;
+    transform: translate(#{$circle-radius}, 61px);
+
+    tspan {
+      text-anchor: middle;
+    }
+  }
+
+  a text {
+    @include font-size(1.1);
+
+    font-weight: $weight-bold;
+    text-decoration: underline;
+  }
+}

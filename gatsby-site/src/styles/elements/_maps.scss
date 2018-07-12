@@ -1,0 +1,202 @@
+// scss-lint:disable QualifyingElement, SelectorDepth, DeclarationOrder
+svg.map {
+  background: none;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  padding: 1em;
+  width: 100%;
+
+
+  &.county {
+    background-color: $gray-light;
+  }
+
+  @include svg-use('.mesh') {
+    fill: none;
+    pointer-events: none;
+    stroke: $gray-light;
+    stroke-width: 0.5;
+  }
+
+  @include svg-use('.states.features') {
+    fill: $gray-pale;
+  }
+
+  @include svg-use('.regions.features') {
+    fill: $white;
+  }
+
+  @include svg-use('.feature.offshore-area') {
+    fill: $greenest-land;
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: darken($greenest-land, 5%);
+    }
+  }
+
+  @include svg-use('.feature:not([fill])') {
+    fill-opacity: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill-opacity: 0.25;
+    }
+  }
+
+  @include svg-use('.county.feature:not([fill])') {
+    cursor: default;
+  }
+
+  @include svg-use(
+    'feature[data-value]:not([fill]):not([data-value=null])'
+  ) {
+    cursor: pointer;
+    fill-opacity: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill-opacity: 0.3;
+    }
+  }
+
+  .county.feature.only-stroke {
+    fill: none;
+    pointer-events: none;
+  }
+
+  @include svg-use('.county.feature.only-stroke') {
+    fill-opacity: 0;
+  }
+
+  @include svg-use('.feature[fill]') {
+    fill-opacity: 1;
+  }
+
+  @include svg-use('.counties.features') {
+    fill: $white;
+  }
+
+  @include svg-use(
+    '.states.mesh',
+    '.regions.mesh'
+  ) {
+    stroke: $gray-dark;
+  }
+
+  @include svg-use('.counties.mesh') {
+    stroke-width: 1;
+  }
+
+  @include svg-use('.feature.overlay') {
+    fill: none;
+    pointer-events: none;
+    stroke: $gray-darkest;
+    stroke-width: 1;
+  }
+
+  .debug {
+    fill: none;
+    stroke: none;
+  }
+
+  &.thumbnail {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.5em;
+    padding: 1px;
+    vertical-align: baseline;
+    width: 1em;
+  }
+
+  .ownership {
+    opacity: 0.05;
+    pointer-events: none;
+
+    &.federal {
+      opacity: $opacity-state;
+    }
+  }
+
+  // To make land ownership more green!
+  &.ownership {
+    .ownership {
+      opacity: $opacity-state;
+    }
+
+    .federal.ownership {
+      opacity: $opacity-federal;
+    }
+
+    @include svg-use('.counties.features') {
+      fill: $green-land;
+    }
+  }
+
+  &.states.ownership {
+    @include svg-use('.states.features') {
+      fill: $green-land;
+    }
+  }
+}
+
+svg.ownership {
+  @include respond-to(medium-down) {
+    pointer-events: none;
+  }
+
+  &.no-outlines {
+    @include svg-use('.states.mesh') {
+      stroke: $gray-pale;
+      stroke-width: 1.5px;
+    }
+
+    &.state-page {
+      padding-top: 0;
+
+      @include svg-use('.states.features') {
+        fill: transparent;
+      }
+
+      @include svg-use('.states.mesh') {
+        stroke: transparent;
+      }
+    }
+  }
+}
+
+svg.case_studies {
+  @include svg-use(
+    '.feature.offshore-area',
+    '.feature.state'
+  ) {
+    fill: $gray;
+
+    &:active,
+    &:hover,
+    &:focus {
+      fill: $gray;
+    }
+  }
+
+  &.no-outlines {
+    @include svg-use('.states.mesh') {
+      stroke: $gray-pale;
+      stroke-width: 1.5px;
+    }
+
+    @include svg-use('.states.features') {
+      fill: $gray;
+    }
+  }
+}
+
+svg.icon {
+  @include svg-use('.feature.offshore-area') {
+    fill: inherit;
+  }
+}

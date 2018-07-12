@@ -1,0 +1,34 @@
+// Styleguide blocks.downloads
+
+.downloads-download_links {
+  a {
+    font-size: 1rem;
+    font-weight: $weight-book;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    margin-left: $base-padding-large;
+  }
+
+  p a {
+    @include heading(para-lg);
+    color: $blue;
+    font-weight: $weight-light;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  object {
+    vertical-align: text-bottom;
+  }
+}

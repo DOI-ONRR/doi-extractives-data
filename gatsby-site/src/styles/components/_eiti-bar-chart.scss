@@ -1,0 +1,144 @@
+// XXX reducing the selector depth here would require going overboard on the
+// classes. -- @shawnbot
+// scss-lint:disable SelectorDepth
+eiti-bar-chart {
+  display: block;
+
+  // IE10+ CSS styles go here
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 0;
+    padding-top: 65%;
+    position: relative;
+    width: 100%;
+  }
+
+  svg {
+    display: block;
+    font-size: inherit;
+    font-weight: $weight-light;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 100%;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .bar {
+    cursor: pointer;
+  }
+
+  .bar-value {
+    fill: $gray-light;
+    pointer-events: none;
+    transition: fill 0.1s;
+  }
+
+  .bar-mask {
+    fill: transparent;
+    stroke: $white;
+    stroke-width: 4;
+  }
+
+  .axis {
+    line,
+    path {
+      fill: none;
+      stroke: none;
+    }
+
+    .tick line {
+      stroke: $white;
+    }
+
+    .tick:first-child line,
+    .tick:last-child line {
+      stroke: none;
+    }
+
+    text {
+      @include font-size(1);
+      fill: $gray-darkest;
+      font-weight: $weight-light;
+
+      @include respond-to(small-down) {
+        @include font-size(0.8);
+        transform: translateY(-2px);
+      }
+
+      &.dataless {
+        fill: $gray;
+      }
+
+      &.data-negative {
+        fill: $red;
+      }
+    }
+  }
+
+  .bar-selected .bar-value,
+  .tick-selected text,
+  .tick-hover text {
+    fill: $green;
+
+    &.dataless {
+      fill: $green;
+    }
+  }
+
+  .tick-selected text {
+    font-weight: $weight-bold;
+  }
+
+  .tick-hover text {
+    font-weight: $weight-book;
+  }
+
+  &.bar-chart-icon {
+    margin-left: $base-padding-lite;
+    width: 60px;
+  }
+}
+
+.eiti-bar-chart-x-value,
+.eiti-bar-chart-y-value {
+  color: $green;
+  font-weight: $weight-bold;
+}
+
+.x-axis-label {
+  text-transform: uppercase;
+
+  text {
+    @include font-size(1);
+    text-anchor: middle;
+  }
+}
+
+.extent-line {
+  text {
+    @include font-size(0.75);
+
+    fill: $gray-dark;
+
+    @include respond-to(small-up) {
+      @include font-size(1);
+    }
+  }
+
+  line {
+    stroke: $gray;
+    stroke-dasharray: 5,5;
+    stroke-width: 1;
+  }
+}
+
+.x-axis-baseline line {
+  stroke: $gray;
+}

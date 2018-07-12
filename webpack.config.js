@@ -11,6 +11,7 @@ var cssConfig = {
     main: './css/main.scss',
     print: './css/print.scss',
     styleguide: './css/styleguide.scss',
+    'styleguide-theme': './css/styleguide-theme.scss',
   },
   output: {
     path: path.join(__dirname, '/public/css'),

@@ -1,66 +1,54 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
-import styled from 'react-emotion';
-import { ThemeProvider } from 'emotion-theming';
+import Banner from '../components/Banner';
 import Header from '../components/Header';
-import Drawer from '../components/Drawer';
-import theme from '../utils/theme';
-import { toggleDrawer as toggleDrawerAction } from '../state/app';
+import Footer from '../components/Footer';
 
-const Container = styled.main`
-  width: 100vw;
-  overflow-x: hidden;
-`;
+import "../styles/_main.scss";
 
-const Content = styled.section`
-  transition: transform 0.3s ease-in-out;
-  transform: perspective(200px)
-    ${p =>
-      p.isDrawerOpen
-        ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
-        : 'none'};
-  padding-top: ${p => p.theme.size(4)};
-  padding-left: ${p => p.theme.size(1)};
-`;
-
-const Overlay = styled.div`
-  position: fixed;
-  z-index: ${p => p.theme.zIndex.overlay};
-  top: 0;
-  left: 0;
-  background: black;
-  width: 100vw;
-  height: 100vh;
-  transition: opacity 0.3s ease-in-out;
-  opacity: ${p => (p.isDrawerOpen ? 0.5 : 0)};
-  pointer-events: ${p => (p.isDrawerOpen ? 'all' : 'none')};
-`;
-
-const TemplateWrapper = ({ children, isDrawerOpen, toggleDrawer }) => (
-  <ThemeProvider theme={theme}>
+export default ({ data, children }) => {
+  console.log({data});
+  return (
     <div>
       <Helmet
-        title="Gatsby Default Redux Starter"
+        title="Home | Natural Resources Revenue Data"
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
+          { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
         ]}
       />
-      <Container>
-        <Content isDrawerOpen={isDrawerOpen}>{children()}</Content>
-      </Container>
-      <Overlay
-        isDrawerOpen={isDrawerOpen}
-        onClick={() => toggleDrawer(false)}
-      />
-      <Drawer />
-      <Header />
+      <Banner />
+      <Header siteMetadata={data.site.siteMetadata} />
+      {children()}
+      <Footer contactInfo={data.dataYaml} siteMetadata={data.site.siteMetadata} />
+      
     </div>
-  </ThemeProvider>
-);
+  );
+}
 
-export default connect(
-  state => ({ isDrawerOpen: state.app.isDrawerOpen }),
-  dispatch => ({ toggleDrawer: open => dispatch(toggleDrawerAction(open)) }),
-)(TemplateWrapper);
+export const query = graphql`
+  query HomePageQuery{
+    dataYaml{
+      data_retrieval {
+        name
+        email
+      }
+      information_data_management {
+        name
+        street
+        city
+        zip
+        email
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        url
+        version
+      }
+    }
+  }
+`;

@@ -1,0 +1,17 @@
+.chart-item,
+.row-container,
+tr,
+figure,
+figcaption,
+eiti-data-map,
+eiti-bar-chart,
+img {
+  page-break-before: always;
+  page-break-inside: avoid;
+}
+
+h1:not(#title),
+h2,
+h3 {
+  page-break-after: avoid;
+}

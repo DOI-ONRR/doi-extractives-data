@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5-node
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-bundle-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Install ruby dependencies
+          command: bundle install --path vendor/bundle
+      - save_cache:
+          key: v1-bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - restore_cache:
+          key: v1-node-modules-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - save_cache:
+          key: v1-node-modules-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build webpack
+          command: npm run webpack
+      - run:
+          name: Build jekyll
+          command: bundle exec jekyll build
+      - run:
+          name: Build styleguide
+          command: npm run release-styleguide
+      - run:
+          name: Run tests
+          command: npm test
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build

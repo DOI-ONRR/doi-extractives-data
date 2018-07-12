@@ -25,9 +25,7 @@ Much of the data that we encounter is made available to us as a Microsoft Excel 
 ruby scripts/csv_tsv.rb path/to/csv.csv /path/to/new/tsv.tsv
 ```
 
-**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/onrr/doi-extractives-data/tree/master/data/company-revenue) instead.
-
-**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, follow the directions [here](https://github.com/onrr/doi-extractives-data/tree/master/data/company-revenue) instead.
+**Note**: One dataset, company revenue, is handled directly as a tsv. To update this dataset, [follow these directions](https://github.com/onrr/doi-extractives-data/tree/master/data/company-revenue) instead.
 
 Check out the [Makefile](Makefile) and the [bin directory](bin/) if you want to
 see how the sausage is made.

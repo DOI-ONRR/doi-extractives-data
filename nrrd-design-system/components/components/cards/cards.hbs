@@ -1,64 +1,10 @@
-<!-- <div class="{{ className }}">{{ text }}</div> -->
-
-<!-- Card -->
-<section class="slab-beta-mid container-padded">
-  <div class="container-page-wrapper">
-    <div class="container-left-9">
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-ownership.svg'}}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">Site section name</p>
-          <a href="/#/"><h3 class="card-title">Card title</h3></a>
-          <p>Card content</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-disbursements.svg' }}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">Explore data</p>
-          <a href="/#/"><h3 class="card-title">Where does the money go?</h3></a>
-          <p>Revenue from natural resources goes to state governments, as well as several federal funds that support projects at the local and national levels.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-case-studies.svg '}}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">Case studies</p>
-          <a href="/#/"><h3 class="card-title">How do extractive industries affect communities?</h3></a>
-          <p>Learn about 12 communities that led the U.S. in production of iron, copper, gold, coal, oil, and natural gas over the last decade.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-what-resources.svg' }}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">How it works</p>
-          <a href="/#/"><h3 class="card-title">What natural resources are extracted?</h3></a>
-          <p>The U.S. is a top producer of oil, gas, and coal, as well as nonenergy minerals like gold, iron, and copper.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-res-to-revenue.svg' }}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">How it works</p>
-          <a href="/#/"><h3 class="card-title">How does resource extraction result in federal revenue?</h3></a>
-          <p>Companies that extract resources on federal land may pay bonuses, rents, royalties, fees, taxes, or other revenues to the federal government.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <a href="/#/" class="card-image_link"><img class="card-image" src="{{ path '/img/home-card-download.svg' }}" alt="Header image"></a>
-        <div class="card-content">
-          <p class="card-content-subhead">About</p>
-          <a href="/#/"><h3 class="card-title">Download the 2017 Executive Summary</h3></a>
-          <p>This document includes an overview of contextual information and updates to this site.</p>
-        </div>
-      </article>
-
-    </div>
+{{#each cards}}
+<article class="card">
+  <a href="#" class="card-image_link"><img class="card-image" src="{{ path card-image }}" alt="{{ card-alt }}"></a>
+  <div class="card-content">
+    <p class="card-content-subhead">{{ section-title }}</p>
+    <a href="#"><h3 class="card-title">{{ card-title }}</h3></a>
+    <p>{{ card-content }}</p>
   </div>
-</section>
+</article>
+{{/each}}

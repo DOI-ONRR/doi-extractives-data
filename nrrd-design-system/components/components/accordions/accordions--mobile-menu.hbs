@@ -1,0 +1,24 @@
+<main id="foo" class="container-page-wrapper layout-state-pages">
+  <div id="top" aria-label="anchor for mobile navigation" class="mobile-nav-anchor"></div>
+  <div is="mobile-nav" class="mobile-nav sticky stuck">
+    <button is="aria-toggle" aria-controls="mobile-nav-content" aria-expanded="false" type="button">
+      <div class="flex-row">
+        <h3 class="mobile-nav-header flex-row-flex">{{ label }}</h3>
+        <span class="hide-expanded flex-row-icon">
+          <icon class="icon icon-chevron-sm-down"></icon>
+        </span>
+        <span class="show-expanded flex-row-icon">
+          <icon class="icon icon-chevron-sm-up"></icon>
+        </span>
+      </div>
+    </button>
+
+    <div id="mobile-nav-content" class="mobile-nav-list-items" aria-hidden="true">
+      <ul>
+        {{#each menu-items}}
+        <li><a href="#" class="mobile-nav-list-item">{{ this }}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</main>

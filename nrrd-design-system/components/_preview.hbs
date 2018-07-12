@@ -11,7 +11,19 @@
 <body>
 
 <div class="preview">
-  {{{ yield }}}
+  {{#if _target.context.container }}
+  <section class="container-padded{{#if _target.context.container.slab}} slab-{{_target.context.container.slab}}{{/if}}">
+    <div class="container-page-wrapper">
+      <div class="{{ _target.context.container.classes }}">
+  {{/if}}
+
+	{{{ yield }}}
+
+  {{#if _target.context.container }}
+      </div>
+    </div>
+  </section>
+  {{/if}}
 </div>
 <script src="{{ path '/js/state-pages.min.js' }}"></script>
 </body>

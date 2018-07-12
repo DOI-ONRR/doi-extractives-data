@@ -2,12 +2,21 @@ title: Charts
 status: jscomponent
 collated: true
 default: Charts
-variants:
-  - name: Charts
-    context:
-      className: h3.cart-title
-      text: Bar charts
-  - name: Mobile-sparkbars
-    context:
-      className: hide-expanded.chart-title-small
-      text: Mobile sparkbar accordions!
+context:
+  label: oil
+  x-range:
+    - 2007
+    - 2016
+  x-value: 2016
+  data-units: barrels
+  data:
+    2007: 593672237
+    2008: 550549223
+    2009: 697422354
+    2010: 697767298
+    2011: 618520506
+    2012: 613396465
+    2013: 622678698
+    2014: 698275506
+    2015: 755859023
+    2016: 762254430

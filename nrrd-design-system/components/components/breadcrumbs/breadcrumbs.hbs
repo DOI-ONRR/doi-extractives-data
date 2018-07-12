@@ -1,11 +1,6 @@
-<!-- <div class="{{ className }}">{{ text }}</div> -->
+<!-- breadcrumb -->
 
-<div class="preview">
-
-  <!-- breadcrumb -->
-  <div>
-    <a class="breadcrumb" href="{{ site.baseurl }}/#/">Breadcrumb link</a>/
-    <h1>How it works section uses this style</h1>
-  </div>
-
-</div>
+{{#each breadcrumbs }}
+<a class="breadcrumb" href="#">{{ this }}</a> /
+{{/each}}
+<h1>{{ page-title }}</h1>

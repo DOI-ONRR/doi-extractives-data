@@ -3,6 +3,15 @@ unique_id: AK
 title: Alaska
 FIPS: '02'
 
+description: Alaska ranks among the top U.S. states in crude oil production.
+tag:
+- oil
+- state
+- offshore
+- Alaska
+
+permalink: /explore/TX
+
 # this triggers whitelisting of nearby states to render in county maps
 # listing WA to ensure that neighbors is interpreted as a list
 neighbors:

@@ -48,43 +48,26 @@ To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/M
 To see data by completed, funded, and unfunded sites, click on 'Summary.' <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 
-### Certification
-
-When a state or tribe has reclaimed high priority coal sites, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
-
-You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
-
 ### Areas undergoing or requiring reclamation
 
 The federal AML Reclamation Program distributes funds for reclamation to the state and tribal AML programs with remaining Priority 1 and 2 sites.
 
-State and tribal AML programs use funds to prepare for reclamation projects, including permitting processes, environmental assessments, site surveys, and the development of reclamation plans. After completing project preparation, funds are used for construction to reclaim the site.
+State and tribal AML programs use funds to prepare for reclamation projects, including: 
 
+- permitting processes
+- environmental assessments
+- site surveys
+- development of reclamation plans 
 
-
-
-Currently, there are $488M funded but not completed projects, encompassing 118,901 GPRA acres with an estimated outstanding $9.8 billion required to reclaim remaining coal-related AML areas.
+After completing project preparation, funds are used for construction to reclaim the site.
 
 OSMRE is required to report measurable goals to Congress. One of their key measures is the number of abandoned mine land acres reclaimed. 
 
-For more information:
-
-- [GAO report: Agencies should take steps to improve information on usda's and interior's potentially contaminated sites](http://www.gao.gov/products/GAO-15-35)
-- [Contacts for state and tribal AML programs and OSMRE offices](http://www.osmre.gov/contacts/map.shtm)
-
-### AML funding and spending[^7]
-
-<img src="{{ site.baseurl }}/public/img/AML_disbursements.svg" alt="Chart shows the amount of total funds in the AML reclamation program in 2016, 10.7 billion. 8.2 billion of that total has been disbursed. 2.5 billion of that total has not been disbursed." class="article_img-100 u-margin-top u-margin-bottom">
-
-The AML database ([e-AMLIS](https://amlis.osmre.gov/Default.aspx)) only accounts for construction costs. It doesn't include other work on which a state or tribe may spend AML funds that are necessary for the reclamation of a site, such as the costs of identification, site assessments, and contracting, nor does it include other types of spending, such as set-asides and emergency projects ([30 U.S. Code § 1231 describes other types of spending](https://www.law.cornell.edu/uscode/text/30/1231)).
-
-Interest from AML fees pays for a portion of the costs for [health care plans for the United Mine Workers of America (UMWA)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf).
-
-## AML revenue and disbursements
+## Revenue and disbursements
 
 Fees paid by coal mine operators fund the AML Reclamation Program.
 
-Companies pay a per-ton fee to OSMRE:[^8]
+Companies pay a [per-ton fee to OSMRE](https://www.gpo.gov/fdsys/granule/USCODE-2011-title30/USCODE-2011-title30-chap25-subchapIV-sec1232):
 
 - $0.28/ton on surface mined coal
 - $0.12/ton on deep-mined coal (subsurface)
@@ -94,21 +77,20 @@ Congress set the current rates when the fee was extended in the Tax Relief and H
 
 Since 1978, the coal industry has contributed $9.2 billion to the AML fund, which has earned $1.5 billion in interest.[^9]
 
-**Annual AML fee collection**[^10]
+Interest from AML fees pays for a portion of the costs for [health care plans for the United Mine Workers of America (UMWA)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf).
 
-<img src="{{ site.baseurl }}/public/img/AML-annual-fees.svg" alt="Chart shows annual AML fee collection since 1978." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Distribution to states
 
 Since passage of the Tax Relief and Health Care Act of 2006, distribution of AML grants are mandatory. Prior to 2006, distribution was subject to Congress' annual appropriations process.
 
-The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous FY (e.g., FY 2014 fees fund FY 2015 grants).
+The amount states and tribes receive each year in annual payments varies depending on the fees collected during the previous fiscal year (i.e., this fiscal year's fees fund next fiscal year's grants).
 
-The statute requires the government to distribute AML Reclamation Program funds collected during the previous FY as follows:[^11]
+The statute requires the government to distribute AML Reclamation Program funds collected during the previous fiscal year as follows:
 
-- **State and tribal share grants:** Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.[^12]
-- **Historic coal grants:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.[^13]
-- **Federal expenditures** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.[^14]
+- **State and tribal share grants:** Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. Certified states receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.
+- **Historic coal grants:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.
+- **Federal expenditures** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.
 
 The states that received the largest grants from OSMRE in FY 2016 were Wyoming, Pennsylvania, West Virginia, Kentucky, and Illinois.[^15]
 
@@ -127,6 +109,12 @@ In addition to scheduled reclamation projects, states and tribes can use AML fun
 - Setting aside annual funds (up to 30%) for projects related to acid mine drainage
 
 OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE offices](http://www.osmre.gov/contacts/map.shtm).
+
+### Certification
+
+When a state or tribe has reclaimed high priority coal sites, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
+
+You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
 
 ## The AML fund
 
@@ -159,18 +147,6 @@ As of November 2015, the fund's balance stood at $2.5 billion.[^21] The reauthor
 Congress is currently considering multiple proposals that would reallocate money away from the AML fund toward economic revitalization in areas of significant need with a history of coal mining.
 
 ## Notes
-
-[^2]: Office of Surface Mining Reclamation and Enforcement, [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf), 2016
-
-[^3]: e-AMLIS generated report "Cost Summary National;" includes all priorities and problem types; generated February 10, 2016
-
-[^4]: Legal Information Institute, [30 U.S.C. §1240(a)](https://www.law.cornell.edu/uscode/text/30/1240)
-
-[^5]: Office of Surface Mining Reclamation and Enforcement, [FY 2016 AML Grant Distribution (PDF)](http://www.osmre.gov/resources/grants/docs/FY16GrantDist.pdf), 2016
-
-[^6]: Under the Government Performance and Results Act (GPRA) of 1993, OSMRE is required to report measurable goals to Congress. One of their key measures is the number of abandoned mine land acres reclaimed. However, many reclamation projects are reported in units other than acres, such as feet of highwalls. These non-acre measures are converted to GPRA acres to provide a standard unit with which to measure program performance. Sources: e-AMLIS generated report "Problem Type Unit & Cost (State) w/ GPRA," includes all priorities and problem types, generated February 10, 2016; e-AMLIS generated report “Cost Summary National,” includes all priorities and problem types, generated February 10, 2016; e-AMLIS generated report “Cost Summary National,” including only Priority 1 and Priority 2 and all problem types, generated February 10,2016.
-
-[^7]: **Source for total collected fees**: [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf); **Source for interest total**: [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf); **Source for funds disbursed — Construction of funded or completed reclamation projects**: $4.3 billion figure is the sum of total “funded cost” plus total “completed cost” in the e-AMLIS report, “Cost Summary National,” generated on February 10, 2016, including all priorities and problem types. **Source for other disbursements**: $2.5 billion figure equals (“cumulative appropriated balance” – sum of “transfers to UMWA health & retirement funds”) – (total “funded cost” + total “completed cost”). **Source for funds disbursed to UMWA health care plans**: [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf); **Source for funds and interest not yet disbursed**: [FY 2017 Budget Justifications and Performance Information (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/FY2017_OSM_Budget_Justification.pdf); unappropriated interest figure equals (sum of “interest earned” - sum of “transfers to UMWA health and retirement funds”).
 
 [^8]: Legal Information Institute, [30 U.S.C. §1232](https://www.law.cornell.edu/uscode/text/30/1232)
 

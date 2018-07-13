@@ -3,6 +3,16 @@ unique_id: LA
 title: Louisiana
 FIPS: '22'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 4.6% of all land in Louisiana. Louisiana also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy.
+tag:
+- oil
+- gas
+- state
+- offshore
+- Louisiana
+- GOMESA
+- Gulf of Mexico
+
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates
 is_cropped: true

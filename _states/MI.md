@@ -6,7 +6,6 @@ FIPS: '26'
 description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 10% of all land in Michigan.
 tag:
 - iron
-- state
 - Michigan
 
 # is_cropped forces the default county map view to use

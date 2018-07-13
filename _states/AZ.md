@@ -7,7 +7,6 @@ description: Much of the data on this site is limited to natural resource extrac
 tag:
 - solar
 - copper
-- state
 - Arizona
 
 priority: true

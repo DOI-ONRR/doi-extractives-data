@@ -9,7 +9,6 @@ tag:
 - geothermal
 - minerals
 - oil
-- state
 - New Mexico
 
 priority: true

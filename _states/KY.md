@@ -6,7 +6,6 @@ FIPS: '21'
 description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 4.3% of all land in Kentucky.
 tag:
 - coal
-- state
 - Kentucky
 
 # is_cropped forces the default county map view to use

@@ -5,7 +5,6 @@ FIPS: '16'
 
 description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 61.6% of all land in Idaho.
 tag:
-- state
 - Idaho
 
 # is_cropped forces the default county map view to use

@@ -8,7 +8,6 @@ tag:
 - oil
 - coal
 - gas
-- state
 - Colorado
 
 opt_in: true

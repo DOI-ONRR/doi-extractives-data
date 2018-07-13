@@ -11,7 +11,6 @@ tag:
 - solar
 - hydroelectric
 - wind
-- state
 - offshore
 - California
 

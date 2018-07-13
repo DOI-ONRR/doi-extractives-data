@@ -3,6 +3,13 @@ unique_id: NV
 title: Nevada
 FIPS: '32'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 84.9% of all land in Nevada.
+tag:
+- gold
+- geothermal
+- solar
+- Nevada
+
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates
 is_cropped: true

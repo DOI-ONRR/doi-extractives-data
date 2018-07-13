@@ -6,7 +6,6 @@ FIPS: '02'
 description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 61.2% of all land in Alaska. Alaska also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy.
 tag:
 - oil
-- state
 - offshore
 - Alaska
 

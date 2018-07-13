@@ -8,7 +8,6 @@ tag:
 - oil
 - gas
 - coal
-- state
 - North Dakota
 
 priority: true

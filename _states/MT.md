@@ -9,7 +9,6 @@ tag:
 - oil
 - coal
 - gas
-- state
 - Montana
 
 opt_in: true

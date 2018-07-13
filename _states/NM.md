@@ -3,6 +3,15 @@ unique_id: NM
 title: New Mexico
 FIPS: '35'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 34.7% of all land in New Mexico.
+tag:
+- gas
+- geothermal
+- minerals
+- oil
+- state
+- New Mexico
+
 priority: true
 
 # is_cropped forces the default county map view to use

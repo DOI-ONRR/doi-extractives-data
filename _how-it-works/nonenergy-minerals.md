@@ -26,7 +26,7 @@ description: Nonenergy minerals include base and precious metals, industrial met
 tag:
 - how it works
 - production
-- non-energy minerals
+- nonenergy minerals
 - gold
 - copper
 - iron

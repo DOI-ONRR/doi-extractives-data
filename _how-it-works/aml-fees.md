@@ -130,9 +130,9 @@ OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal
 
 ### The fund today
 
-As of November 2017, the fund's balance stood at $2.387 billion. The reauthorization for AML fees expires in FY 2021. The unappropriated balance has been divided into different allocations to be used starting in FY 2023, as follows:
+As of November 2017, the fund's balance stood at $2.387 billion. The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
 
-**Allocation of unappropriated balance**
+#### Allocation of unappropriated balance
 
 - Historic coal grants: 68.3%
 - Federal expenses (subject to congressional appropriation): 19.9%

@@ -3,6 +3,14 @@ unique_id: MT
 title: Montana
 FIPS: '30'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 29% of all land in Montana.
+tag:
+- hydroelectric
+- oil
+- coal
+- gas
+- Montana
+
 opt_in: true
 
 state_revenue_year: 2016

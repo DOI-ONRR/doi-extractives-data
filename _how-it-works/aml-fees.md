@@ -124,7 +124,7 @@ Prior to 2006, companies often paid more money into the [AML fund](http://www.os
 
 **Growth of the AML fund's unappropriated balance**[^17]
 
-<img src="{{ site.baseurl }}/public/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2015. It grew from around $0.5 to nearly $2.5 billion dollars." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="{{ site.baseurl }}/public/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2017. It grew from around $500 million to nearly $2.5 billion dollars in 2015, before falling slightly to $2.38 billion in 2017." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Interest on the fund
 

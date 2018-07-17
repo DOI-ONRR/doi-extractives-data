@@ -4,7 +4,9 @@ import Link from 'gatsby-link';
 import logo from "img/DOI-2x.png";
 import DownloadIcon from '-!svg-react-loader!img/svg/icon-download-base.svg';
 
-const Footer = ({ contactInfo, siteMetadata }) => ( 
+import CONTACT_INFO from 'data/contact.yml';
+
+const Footer = ({ siteMetadata }) => ( 
 <footer className="footer">
   <div className="container-page-wrapper">
     <div className="footer-col_left">
@@ -33,10 +35,10 @@ const Footer = ({ contactInfo, siteMetadata }) => (
 
       <div className="footer-bottom footer-bottom-right">
         <p className="footer-para footer-para-small">
-          Office of Natural Resources Revenue, { contactInfo.information_data_management.name }<br/>
-          { contactInfo.information_data_management.street }<br/>
-          { contactInfo.information_data_management.city } { contactInfo.information_data_management.zip }<br/>
-          <a className="link-active-beta" href={"mailto:"+contactInfo.information_data_management.email}>{ contactInfo.information_data_management.email }</a>
+          Office of Natural Resources Revenue, { CONTACT_INFO.information_data_management.name }<br/>
+          { CONTACT_INFO.information_data_management.street }<br/>
+          { CONTACT_INFO.information_data_management.city } { CONTACT_INFO.information_data_management.zip }<br/>
+          <a className="link-active-beta" href={"mailto:"+CONTACT_INFO.information_data_management.email}>{ CONTACT_INFO.information_data_management.email }</a>
         </p>
       </div>
 

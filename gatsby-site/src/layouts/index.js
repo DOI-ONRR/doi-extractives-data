@@ -11,7 +11,6 @@ import Glossary from 'components/utils/Glossary';
 
 import "styles/_main.scss";
 
-
 const store = createStore();
 
 export default ({ data, children}) => {
@@ -34,27 +33,14 @@ export default ({ data, children}) => {
           {children()}
         </main>
 
-        <Footer contactInfo={data.dataYaml} siteMetadata={data.site.siteMetadata} />
+        <Footer siteMetadata={data.site.siteMetadata} />
       </div>
     </Provider>
   );
 }
 
 export const query = graphql`
-  query HomePageQuery{
-    dataYaml{
-      data_retrieval {
-        name
-        email
-      }
-      information_data_management {
-        name
-        street
-        city
-        zip
-        email
-      }
-    }
+  query IndexLayoutQuery{
     allTermsYaml {
       edges {
         node {

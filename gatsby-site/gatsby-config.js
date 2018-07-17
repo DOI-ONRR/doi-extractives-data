@@ -4,7 +4,7 @@ module.exports = {
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
   // This prefix is appended to load all our related images and code.
   // PREVIEW
-  pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-dev/gatsby-public`,
+  // pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-dev/gatsby-public`,
   // PROD/LOCAL JEKYLL
   // pathPrefix: `/gatsby-public`,
   
@@ -19,6 +19,7 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-transformer-yaml`,
     'gatsby-transformer-remark',
+    `gatsby-transformer-excel`,
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.
@@ -38,6 +39,13 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown/`,
       },
     },
   ],

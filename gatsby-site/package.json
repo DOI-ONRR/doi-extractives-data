@@ -2,7 +2,6 @@
   "name": "NRRD",
   "description": "Natural Resources Revenue Data",
   "version": "0.0.1",
-  "author": "Jeff Keene <Jeff.Keene@onrr.gov>",
   "dependencies": {
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
@@ -10,13 +9,15 @@
     "gatsby-plugin-resolve-src": "^1.1.4",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-excel": "^1.0.9",
     "gatsby-transformer-remark": "^1.7.42",
     "gatsby-transformer-yaml": "^1.5.18",
     "lazy.js": "^0.5.1",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
-    "redux-devtools": "^3.4.1"
+    "redux-devtools": "^3.4.1",
+    "slugify": "^1.3.0"
   },
   "keywords": [
     "gatsby"

@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Lazy from 'lazy.js';
+import lazy from 'lazy.js';
 import { glossaryTermSelected as glossaryTermSelectedAction } from 'state/app';
+
+import GLOSSARY_TERMS from 'data/terms.yml';
 
 class GlossaryItem extends React.Component {
 
@@ -31,8 +33,8 @@ class GlossaryItem extends React.Component {
   }
 }
 
-class Glossary extends React.Component {
-  
+class Glossary extends React.Component {  
+
   state = {
     glossaryTerm: this.props.glossaryTerm || "",
     toggleHidden: true
@@ -50,8 +52,8 @@ class Glossary extends React.Component {
 
   filterTerms(){
     let self = this;
-    return (Lazy(self.props.terms)
-      .filter(function(term){ return Lazy(term.node.name.toLowerCase()).contains(self.state.glossaryTerm.toLowerCase());})
+    return (lazy(GLOSSARY_TERMS)
+      .filter(function(term){return lazy(term.name.toLowerCase()).contains(self.state.glossaryTerm.toLowerCase());})
       .toArray());
   }
 
@@ -65,7 +67,7 @@ class Glossary extends React.Component {
     let target = event.target;
     if(!this.state.toggleHidden && target.classList.value !== "") {
       
-      if (!Lazy(target.classList.value).contains('glossary-click')) {
+      if (!lazy(target.classList.value).contains('glossary-click')) {
         this.onCloseHandler();
       }
     }
@@ -102,7 +104,7 @@ class Glossary extends React.Component {
         <div id="glossary-click glossary-result">
           <ul className="glossary-click js-glossary-list list-unstyled" data-accordion="glossary-accordion">
             {(filteredTerms).map((term, index) => (
-              <GlossaryItem key={index} term={term.node} toggle={(filteredTerms.length === 1)}/>
+              <GlossaryItem key={index} term={term} toggle={(filteredTerms.length === 1)}/>
             ))}
           </ul>
         </div>

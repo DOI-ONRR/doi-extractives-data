@@ -13,6 +13,7 @@ const Header = (props) => {
   let defaultNavClassNames = {'className': " header-nav_item "};
   let homeClassNames = {'className': " header-nav_item "};
   let aboutClassNames = {'className': " header-nav_item "};
+  let exploreClassNames = {'className': " header-nav_item "};
   let downloadClassNames = {'className': " header-nav_item_link_top "};
 
   if(typeof location !== 'undefined' && location) {
@@ -24,6 +25,9 @@ const Header = (props) => {
     }
     else if(location.pathname === '/downloads/') {
       downloadClassNames.className += ' active '; 
+    }
+    else if(location.pathname === '/explore/') {
+      exploreClassNames.className += ' active '; 
     }
   }
 
@@ -64,7 +68,7 @@ const Header = (props) => {
           <li {...defaultNavClassNames}>
             <Link className="header-nav_item_link" to="/how-it-works/">How it works</Link>
           </li>
-          <li {...defaultNavClassNames}>
+          <li {...exploreClassNames}>
             <Link className="header-nav_item_link" to="/explore/">Explore data</Link>
           </li>
           <li {...defaultNavClassNames}>

@@ -1,0 +1,317 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: Components</title>
+    <script src="../lib/main.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+
+      section {
+        margin-bottom: 4em;
+      }
+
+      .container {
+        max-width: 40em;
+      }
+
+      eiti-slider {
+        margin: 3em 1.5em;
+      }
+
+      eiti-map {
+        border: 1px solid #ccc;
+        display: block;
+        height: auto;
+        margin: 1em 0;
+        width: 100%;
+      }
+
+      eiti-map svg {
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+
+      eiti-map.loading {
+        border: 1px dashed red;
+      }
+
+      path {
+        vector-effect: non-scaling-stroke;
+      }
+
+      path.feature {
+        fill: #eee !important;
+        stroke: none !important;
+      }
+
+      path.feature:hover {
+        fill: #ddd !important;
+      }
+
+      path.feature.zoomed {
+        fill: #ccc !important;
+      }
+
+      path.mesh {
+        fill: none !important;
+        stroke: #999 !important;
+      }
+
+      g[data-object="counties"] path.mesh {
+        stroke: #ccc;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        font-size: inherit;
+        width: 6em;
+      }
+
+      dt {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      dd {
+        padding-left: 0;
+        margin: .5em 0 .5em 1em;
+      }
+
+      kbd {
+        font-family: monospace;
+        background: #f9f9f9;
+        padding: .1em .3em;
+        border: 1px solid #ccc;
+        border-radius: .3em;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+      }
+
+      custom-element {
+        display: inline-block;
+        background: #ffc;
+        border: 1px solid #ddd;
+        padding: .5em;
+        border-radius: .5em;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body unresolved>
+    <header class="container">
+      <h1>Components!</h1>
+    </header>
+
+    <section id="custom-element" class="container">
+      <h2><tt>&lt;custom-element&gt;</tt></h2>
+      <p>This is really just a test of the custom element template. Click on it
+        and its text should change to a random number.</p>
+      <custom-element>123</custom-element>
+      <script>
+      (function() {
+        d3.select('custom-element')
+          .on('change', function() {
+            this.textContent = ~~(this.value * 1000);
+          });
+      })();
+      </script>
+    </section>
+
+    <section id="eiti-map" class="container">
+      <h2><tt>&lt;eiti-map&gt;</tt></h2>
+      <p>The <tt>&lt;eiti-map&gt;</tt>
+        <a href="http://www.w3.org/TR/custom-elements/#type-extension-semantics">type extension</a> renders an SVG geographic map by
+        loading one or more "data layers" defined
+        by <tt>&lt;g&gt;</tt> elements with
+        <tt>data-url</tt> attributes.</p>
+
+      <h3>Just render the states and their mesh</h3>
+      <eiti-map id="eiti-map1"
+        projection="albersCustom"
+        simplify=".01"
+        data-path="/data/geo/">
+        <svg>
+          <g data-url="us-states-simple.json" data-mesh="true"></g>
+        </svg>
+      </eiti-map>
+
+      <h3>Click on a state in this map to zoom</h3>
+      <eiti-map id="eiti-map2"
+        projection="albersCustom"
+        simplify=".01"
+        data-path="/data/geo/"
+        zoom-to="CA">
+        <svg class="clickable">
+          <g data-url="us-states-simple.json" data-mesh="true"></g>
+        </svg>
+      </eiti-map>
+
+      <h3>A more complex example with linked states and county mesh</h3>
+      <eiti-map id="eiti-map3"
+        projection="albersCustom"
+        data-path="/data/geo/"
+        zoom-to="MA">
+        <svg>
+          <g data-url="us-topology.json"
+            data-object="states"
+            data-href="'/locations/onshore/' + id"></g>
+          <g pointer-events="none"
+            data-url="us-topology.json"
+            data-object="counties"
+            data-mesh="true"></g>
+        </svg>
+      </eiti-map>
+
+      <script>
+      (function() {
+        var maps = d3.selectAll('eiti-map')
+          .classed('loading', true)
+          .on('load', function() {
+            this.classList.remove('loading');
+          });
+
+        d3.select('#eiti-map2')
+          .on('load.click', function() {
+            var map = this;
+            var paths = d3.select(this)
+              .selectAll('path.feature');
+            var selected;
+            paths.on('click', function(d) {
+              if (selected === d.id) {
+                selected = null;
+              } else {
+                selected = d.id;
+              }
+              map.zoomTo(selected, 500);
+            });
+          });
+      })();
+      </script>
+
+      <h3>Attributes</h3>
+      <dl>
+        <dt><tt>data-path="prefix"</tt></dt>
+        <dd>String: the common path to data files
+          of the contained layers. This is appended
+          as a prefix onto each layer's
+          <tt>data-url</tt> URI.</dd>
+
+        <dt><tt>projection="name"</tt></dt>
+        <dd>String: <a
+            href="https://github.com/mbostock/d3/wiki/Geo-Projections">D3 projection</a>
+          name. If not provided, the default is <tt>albersUsa</tt>.</dd>
+
+        <dt><tt>zoom-to="id"</tt></dt>
+        <dd>String: the ID of the feature to zoom to.</dd>
+
+      </dl>
+    </section>
+
+    <!--
+    <section id="region-map" class="container">
+      <h2><tt>&lt;region-map&gt;</tt></h2>
+      <p>The <tt>&lt;region-map&gt;</tt> element renders a region map with both
+        onshore and offshore areas. Coloring them is done in a
+        <tt>load</tt> event listener with D3.</p>
+      <dl>
+        <dt><tt>data-path=""</tt></dt>
+        <dd>String: the path to the state and offshore area TopoJSON
+          files (<tt>output/geo/us-states.json</tt> and
+          <tt>output/geo/offshore.json</tt>, respectively).</dd>
+      </dl>
+
+      <region-map data-path="../../">
+      </region-map>
+
+      <script>
+      (function() {
+        d3.select('region-map')
+          .on('load', function() {
+            console.log('region map loaded');
+
+            var region = d3.select(this).selectAll('g.region');
+            var color = d3.scale.linear()
+              .domain([0, d3.max(region.data(), length)])
+              .range(['#fff', '#033']);
+
+            region.attr('fill', function(d) {
+              return color(length(d));
+            });
+
+            function length(d) {
+              return (d.properties.name || d.id || '').length;
+            }
+          });
+      })();
+      </script>
+    </section>
+    -->
+
+    <section id="slider" class="container">
+      <h2><tt>&lt;eiti-slider&gt;</tt></h2>
+      <p>The <tt>&lt;eiti-slider&gt;</tt> element provides a horizontal slider
+        control with the following attributes and corresponding properties:</p>
+      <dl>
+        <dt><tt>value="0"</tt></dt>
+        <dd>Number: the value</dd>
+        <dt><tt>min="0"</tt></dt>
+        <dd>Number: the minimum value</dd>
+        <dt><tt>max="100"</tt></dt>
+        <dd>Number: the maximum value</dd>
+        <dt><tt>snap</tt></dt>
+        <dd>Boolean: whether to snap to round values</dd>
+      </dl>
+
+      <p>This text should indicate the value when changed:</p>
+      <p><b class="year"></b></p>
+
+      <form onsubmit="return false;">
+        <p>And this input should both reflect the current value and modify
+          the slider when changed. It should not be possible to set values
+          outside of the slider's min and max.</p>
+        <p><input id="year-input" type="number" step="1" size="4"></p>
+      </form>
+
+      <eiti-slider snap min="2004" max="2013" value="2008">
+      </eiti-slider>
+
+      <p>Click anywhere on the slider to change its value, or click and drag
+        to change it as the mouse (or touch cursor)
+        moves. You should also be able to focus the
+        slider handle with the <kbd>tab</kbd> key and using
+        the left and right arrows to move the slider.</p>
+
+      <script>
+      (function() {
+
+        var context = d3.select('#slider');
+
+        var slider = context.select('eiti-slider')
+          .on('change', function() {
+            // console.log('slider change', this.value);
+            year.text(this.value);
+            input.property('value', this.value);
+          });
+
+        var year = context.selectAll('.year')
+          .text(slider.property('value'));
+
+        var input = context.select('input')
+          .property('value', slider.property('value'))
+          .on('change', function() {
+            slider.property('value', this.value);
+          });
+
+      })();
+      </script>
+    </section>
+
+  </body>
+</html>

@@ -8,20 +8,9 @@ permalink: /search-results/
   <div class="container-left-8">
     <h1>{{page.title}}</h1>
 
-    <p class="search-intro">This is a curated search.<br/> Results are drawn from related websites across the U.S. government so  you can find extractive industries resources in one place.</p>
+    <p class="search-intro">Search results are drawn from across this site. If you're looking for the definition of a term, you can also <a href="javascript:void(0)" class="js-glossary-toggle" alt="this is the glossary drawer">check our glossary</a>.</p>
 
     <div class="search-results-container">
-
-      <div class="search-no-results" style="display:none;">
-        <p><strong>Sorry, no results were found for your search.</strong></p>
-      </div>
-
-      <div class="search-header">
-        <div class="search-wrapper">
-        <p>Search results for <strong class='search-string'></strong></p>
-        <p class="search-results-count"></p>
-        </div>
-      </div>
 
       <div class="search-container">
         <form action="{{ site.baseurl }}/search-results/" method="get">
@@ -31,13 +20,24 @@ permalink: /search-results/
         </form>
       </div>
 
+      <div class="search-header">
+        <div class="search-wrapper">
+        <p>Search results for <strong class='search-string'></strong></p><p>:&nbsp;</p>
+        <p class="search-results-count"></p>
+        </div>
+      </div>
+
+      <div class="search-no-results" style="display:none;">
+        <p><strong>Sorry, no results were found for your search.</strong></p>
+      </div>
+
       <div class="search-results-container"></div>
 
       <div class="search-no-results" style="display:none;">
-        <p>Try one of these popular searches
-          / <a href="../search-results/?q=energy" title="Search for energy">energy</a> /
+        <p>Try one of these popular searches:
+          <a href="../search-results/?q=energy" title="Search for energy">energy</a> /
           <a href="../search-results/?q=oil" title="Search for oil">oil</a> /
-          <a href="../search-results/?q=conservation" title="Search for conservation">conservation</a> /
+          <a href="../search-results/?q=gomesa" title="Search for gomesa">GOMESA</a> /
         </p>
       </div>
     </div>

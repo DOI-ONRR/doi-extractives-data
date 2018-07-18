@@ -11,6 +11,8 @@ import Glossary from 'components/utils/Glossary';
 
 import "styles/_main.scss";
 
+import { withPrefix } from 'components/utils/temp-link';
+
 const store = createStore();
 
 export default ({ data, children}) => {
@@ -23,7 +25,9 @@ export default ({ data, children}) => {
             { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
             { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
           ]}
-        />
+        >
+        <script src={withPrefix("/js/main.min.js")}></script>
+        </Helmet>
         <Banner />
         <Header siteMetadata={data.site.siteMetadata} />
 
@@ -34,6 +38,7 @@ export default ({ data, children}) => {
         </main>
 
         <Footer siteMetadata={data.site.siteMetadata} />
+
       </div>
     </Provider>
   );

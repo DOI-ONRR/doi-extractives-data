@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import StateMap from 'components/maps/StateMap';
 import FederalLandOwnershipLegend from 'components/maps/FederalLandOwnershipLegend';
@@ -6,13 +7,17 @@ import LocationSelector from 'components/selectors/LocationSelector';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import NationalAllProduction from 'components/locations/NationalAllProduction';
 
+import { withPrefix } from 'components/utils/temp-link';
+
 class ExplorePage extends React.Component {
 
   render () {
-    console.log(this.props.data)
     return (
-      <main id="national" className="layout-state-pages national-page">
 
+      <main id="national" className="layout-state-pages national-page">
+            <Helmet>
+      <script src={withPrefix("/js/state-pages.min.js")}></script>
+      </Helmet>
         <section  id="title" className="slab-delta">
           <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
             <div className="container-left-8 ribbon-hero ribbon-hero-column">

@@ -8,6 +8,9 @@ Maps on the site are dynamically generated svgs, and appear in various sizes and
 
  **Icon-sized** maps accompany the side navigation in Explore data, and highlight the state or region being viewed. They also function as buttons that link back to the Explore data landing page.
 
+For more information on how we build the maps, see the [Maps
+README](https://github.com/ONRR/doi-extractives-data/blob/dev/maps/README.md).
+
 
 ## How to use
 

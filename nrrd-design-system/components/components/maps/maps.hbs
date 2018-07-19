@@ -1,1 +1,32 @@
-<div class="{{ className }}">{{ text }}</div>
+<!-- define the clip path to the state outline -->
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="state-outline-{{ state }}">
+      <use xlink:href="{{ path '/maps/states/all.svg' }}#state-{{ state }}"></use>
+    </clipPath>
+  </defs>
+</svg>
+
+<figure is="ownership-map">
+  <div class="svg-container county map-container wide" style="padding-bottom: 244.236px;">
+    <svg class="county ownership map state-page" viewBox="{{ viewbox }}">
+      <g class="states features">
+        <use xlink:href="{{ path '/maps/states/all.svg' }}#states"></use>
+      </g>
+      <g class="states mesh">
+        <use xlink:href="{{ path '/maps/states/all.svg' }}#states-mesh"></use>
+      </g>
+      <g class="counties features">
+        <use xlink:href="{{ path '/maps/states/{{ state }}.svg' }}#counties"></use>
+      </g>
+      <image class="federal ownership" xlink:href="{{ path '/maps/land/federal.gif' }}" image-rendering="pixelated" clip-path="url(#state-outline-{{ state }})" width="960" height="670"></image>
+      <image class="tribal ownership" xlink:href="{{ path '/maps/land/tribal.gif' }}" image-rendering="pixelated" clip-path="url(#state-outline-{{ state }})" width="960" height="670"></image>
+      <g class="counties mesh">
+        <use xlink:href="{{ path '/maps/states/{{ state }}.svg' }}#counties-mesh"></use>
+      </g>
+      <g class="state feature overlay">
+        <use xlink:href="{{ path '/maps/states/all.svg' }}#state-{{ state }}"></use>
+      </g>
+    </svg>
+  </div>
+</figure>

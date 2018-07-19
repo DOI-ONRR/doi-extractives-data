@@ -1,21 +1,18 @@
 title: Maps
 status: jscomponent
-collated: true
-default: ownership
+default: Arizona
+context:
+  container:
+    class: container-left-3
 variants:
-  - name: ownership
+  - name: Arizona
+    label: AZ
     context:
-      className: TBD
-      text: Ownership map
-  - name: solid-fill
+      state: AZ
+      viewbox: 196 307 141 118
+
+  - name: Alaska
+    label: AK
     context:
-      className: TBD
-      text: Map with solid-color fill
-  - name: iconic
-    context:
-      className: TBD
-      text: Iconic (used in side nav)
-  - name: others? (county, etc.)
-    context:
-      className: TBD
-      text: More? County? Small?
+      state: AK
+      viewbox: 49 441 245 115

@@ -44,7 +44,6 @@ exclude:
   - data/geo/input
   - data/gdp
   - data/jobs
-  - maps/lib
   # data tools and SQLite databases
   - '*.db*'
   - .env
@@ -66,8 +65,7 @@ exclude:
   # Makefiles
   - Makefile
   - '**/Makefile'
-  - maps/data
-  - maps/land/*.json
+  - maps
   - serve*
   - re-serve*
   - vendor

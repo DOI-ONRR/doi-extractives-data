@@ -53,7 +53,7 @@ var assetsConfig = {
   module: {
     rules: [
       {
-        test: /\.(png|jp(e*)g|svg)$/,
+        test: /\.(gif|png|jpe?g|svg)$/,
         use: [{ loader: 'file-loader' }],
       },
     ],

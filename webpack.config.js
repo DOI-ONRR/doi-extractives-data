@@ -44,11 +44,11 @@ var cssConfig = {
   plugins: [new ExtractTextPlugin('[name].css')],
 }
 
-var imgConfig = {
+var assetsConfig = {
   entry: './img/img.js',
   output: {
     path: path.join(__dirname, '/public'),
-    filename: 'bundle.js',
+    filename: 'assets.dummy.js',
   },
   module: {
     rules: [
@@ -60,10 +60,10 @@ var imgConfig = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      {
-        from: 'img',
-        to: 'img',
-      },
+      { from: 'img', to: 'img' },
+      { from: 'maps/land', to: 'maps/land'},
+      { from: 'maps/states', to: 'maps/states'},
+      { from: 'maps/offshore', to: 'maps/offshore'},
     ]),
   ],
 }
@@ -93,4 +93,4 @@ if (env === 'production') {
   jsConfig.devtool = 'source-map'
 }
 
-module.exports = [jsConfig, imgConfig, cssConfig]
+module.exports = [jsConfig, assetsConfig, cssConfig]

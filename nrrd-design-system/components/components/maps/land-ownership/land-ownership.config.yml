@@ -1,17 +1,17 @@
 title: Maps
 status: jscomponent
-default: Arizona
+default: arizona
 context:
   container:
     class: container-left-3
 variants:
-  - name: Arizona
+  - name: arizona
     label: AZ
     context:
       state: AZ
       viewbox: 196 307 141 118
 
-  - name: Alaska
+  - name: alaska
     label: AK
     context:
       state: AK

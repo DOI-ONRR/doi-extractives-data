@@ -1,6 +1,6 @@
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes.all %}
-{% assign states_svg = '/maps/states/all.svg' %}
-{% assign offshore_svg = '/maps/offshore/all.svg' %}
+{% assign states_svg = '/public/maps/states/all.svg' %}
+{% assign offshore_svg = '/public/maps/offshore/all.svg' %}
 
 <div is="eiti-tooltip-wrapper" class="state svg-container map-container wide"{% if _viewbox %} style="padding-bottom: {{ _viewbox | svg_viewbox_padding }}%;"{% endif %}>
   <svg class="states map{% if include.case_studies %} case_studies {% endif %}{% if include.ownership %} ownership {% endif %}{% if include.no_outline %} no-outlines {% endif %}"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>

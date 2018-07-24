@@ -46,8 +46,8 @@
        class="svg-container county map-container {{ is_wide }}"{% if _viewbox %}
     style="padding-bottom: {{ padding_bottom }}%;"{% endif %} data-dimensions="{{ _height | divided_by: breakpoint_width }}">
     <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
-      {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-      {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
+      {% capture states_svg %}{{ site.baseurl }}/public/maps/states/all.svg{% endcapture %}
+      {% capture state_svg %}{{ site.baseurl }}/public/maps/states/{{ include.state }}.svg{% endcapture %}
       <g class="states features">
         {% if page.neighbors %}
           {% for neighbor in page.neighbors %}

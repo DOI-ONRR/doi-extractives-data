@@ -1,11 +1,11 @@
 <image class="federal ownership"
-  xlink:href="{{ site.baseurl }}/maps/land/federal.gif"
+  xlink:href="{{ site.baseurl }}/public/maps/land/federal.gif"
   image-rendering="pixelated"
   {% if include.clip %}clip-path="url({{ include.clip }})"{% endif %}
   {% if include.mask %}mask="url({{ include.mask }})"{% endif %}
   width="960" height="670"></image>
 <image class="tribal ownership"
-  xlink:href="{{ site.baseurl }}/maps/land/tribal.gif"
+  xlink:href="{{ site.baseurl }}/public/maps/land/tribal.gif"
   image-rendering="pixelated"
   {% if include.clip %}clip-path="url({{ include.clip }})"{% endif %}
   {% if include.mask %}mask="url({{ include.mask }})"{% endif %}

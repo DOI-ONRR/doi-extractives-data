@@ -72,6 +72,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     }
                     props {
                       name
+                      defaultValue {
+                        value
+                      }
                       type {
                         value
                         raw

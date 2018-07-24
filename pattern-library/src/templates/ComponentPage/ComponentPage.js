@@ -4,6 +4,10 @@ import GatsbyLink from "gatsby-link"
 
 import Example from "./components/Example"
 
+function yesno(bool) {
+  return !!bool ? 'yes' : 'no';
+}
+
 class ComponentPage extends React.Component {
   render() {
     const { displayName, props, html, description } = this.props.pathContext
@@ -20,15 +24,17 @@ class ComponentPage extends React.Component {
               <th>Description</th>
               <th>Type</th>
               <th>Required</th>
+              <th>Default</th>
             </tr>
           </thead>
           <tbody>
-            {props.map(({ name, description, type, required }, index) => (
+            {props.map(({ name, defaultValue, description, type, required }, index) => (
               <tr key={index}>
                 <td>{name}</td>
                 { description && <td>{description.text}</td> }
                 <td>{type.name}</td>
-                <td>{String(Boolean(required))}</td>
+                <td>{yesno(required)}</td>
+                <td>{defaultValue ? <pre>{defaultValue.value}</pre> : <em>N/A</em>}</td>
               </tr>
             ))}
           </tbody>

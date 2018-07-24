@@ -7,68 +7,105 @@ const componentPageTemplate = path.resolve(
 )
 const tableOfContentsTemplate = path.resolve(`src/templates/TOC/index.js`)
 
+// Add a pattern-library specific componentId to make it easier to match up
+// markdown README's with the docgen nodes from JS files.
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators;
+
+  if (node.internal.type === 'MarkdownRemark' ||
+     node.internal.type === 'ComponentMetadata') {
+
+    // Grab the parent node to determine filesystem information
+    const fileNode = getNode(node.parent);
+
+    if (fileNode.internal.type !== 'File') {
+      return;
+    }
+
+    // Ensure this node is coming from our components source
+    if (fileNode.sourceInstanceName !== 'components') {
+      return;
+    }
+
+    // Use the absolute path to the component's directory as the Id.
+    const componentId = fileNode.dir;
+
+    // Add `fields.componentId` to this node
+    createNodeField({
+      node,
+      name: 'componentId',
+      value: componentId,
+    });
+  }
+};
+
+
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    resolve(
-      Promise.all([
-        graphql(`
-          {
-            allComponentMetadata {
-              edges {
-                node {
-                  id
-                  displayName
-                  description {
-                    text
-                  }
-                  props {
-                    name
-                    type {
-                      value
-                      raw
-                      name
+    resolve(graphql(`
+            {
+              allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/README.md/" } }
+              ) {
+                edges {
+                  node {
+                    fields {
+                      componentId
                     }
+                    fileAbsolutePath
+                    html
+                  }
+                }
+              }
+              allComponentMetadata {
+                edges {
+                  node {
+                    fields {
+                      componentId
+                    }
+                    id
+                    displayName
                     description {
                       text
                     }
-                    required
+                    props {
+                      name
+                      type {
+                        value
+                        raw
+                        name
+                      }
+                      description {
+                        text
+                      }
+                      required
+                    }
                   }
                 }
               }
             }
-          }
-        `),
-        graphql(`
-          {
-            allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/README.md/" } }
-            ) {
-              edges {
-                node {
-                  fileAbsolutePath
-                  html
-                }
-              }
-            }
-          }
-        `),
-      ])
-        .then(([docgenResult, markdownResult]) => {
-          const errors = docgenResult.errors || markdownResult.errors
-          if (errors) {
-            reject(new Error(errors))
-            return
+      `)
+        .then((result) => {
+          if (result.errors) {
+            throw new Error(result.errors);
           }
 
-          const allComponents = docgenResult.data.allComponentMetadata.edges.map(
-            (edge, i) =>
-              Object.assign({}, edge.node, {
-                path: `/components/${edge.node.displayName.toLowerCase()}/`,
-                html: markdownResult.data.allMarkdownRemark.edges[i].node.html,
-              })
-          )
+          // Include only components that have a README.md (as specified in the graphql query)
+          const allComponents = result.data.allMarkdownRemark.edges.map((markdownEdge) => {
+            // Match the README.md node with the docgen node based on componentId
+            const componentId = markdownEdge.node.fields.componentId;
+            const componentMetadataNode =
+              result.data.allComponentMetadata.edges
+                .map(edge => edge.node)
+                .find(node => node.fields.componentId === componentId);
+
+            return Object.assign({}, componentMetadataNode, {
+              path: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
+              html: markdownEdge.node.html,
+            });
+          });
 
           const exportFileContents =
             allComponents
@@ -81,6 +118,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }, [])
               .join(`\n`) + `\n`
 
+          // Write components to cache for TOC
           fs.writeFileSync(
             path.join(appRootDir, `.cache/components.js`),
             exportFileContents

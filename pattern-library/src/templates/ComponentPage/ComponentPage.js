@@ -11,7 +11,7 @@ class ComponentPage extends React.Component {
     return (
       <div>
         <h1>{displayName}</h1>
-        <p>{description.text}</p>
+        { description && <p>{description.text}</p> }
         <h2>Props/Methods</h2>
         <table>
           <thead>
@@ -26,7 +26,7 @@ class ComponentPage extends React.Component {
             {props.map(({ name, description, type, required }, index) => (
               <tr key={index}>
                 <td>{name}</td>
-                <td>{description.text}</td>
+                { description && <td>{description.text}</td> }
                 <td>{type.name}</td>
                 <td>{String(Boolean(required))}</td>
               </tr>

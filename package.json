@@ -14,12 +14,17 @@
 		"prestart": "if [ ! -d node_modules ]; then npm install; fi",
 		"build": "rm -r _site; bundle exec jekyll build",
 		"build-win": "if exist _site (rd /s /q _site; && bundle exec jekyll build) else (bundle exec jekyll build)",
-		"federalist": "webpack && npm run release-styleguide",
+		"federalist": "webpack && npm run release-styleguide && npm run release-patterns",
 		"start-states": "bundle exec jekyll serve --incremental --config _config.yml,_config-dev.yml",
 		"start-jekyll": "bundle exec jekyll build --watch --incremental --config _config.yml,_config-dev.yml",
 		"test": "mocha test/*.js test/**/*.js",
 		"test-html": "bundle exec htmlproof --disable-external _site",
 		"test-ruby": "bundle exec rubydoctest _plugins/eiti_*.rb",
+		"patterns": "cd pattern-library && npm run develop",
+		"setup-patterns": "cd pattern-library && npm install",
+		"build-patterns": "cd pattern-library && npm run build",
+		"copy-patterns": "mkdir -p patterns && cp -R pattern-library/public/* patterns/",
+		"release-patterns": "npm run setup-patterns && npm run build-patterns && npm run copy-patterns",
 		"webpack": "webpack",
 		"update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
 		"js-dev-start": "rm -rf js/lib && npm run watch-webpack",
@@ -31,8 +36,7 @@
 		"lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
 		"lint-js": "eslint --ignore-path .eslintignore js",
 		"lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/eiti_*.rb",
-		"lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'",
-		"sqlite3": "^3.1.9"
+		"lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
 	},
 	"dependencies": {
 		"@frctl/fractal": "^1.1.7",

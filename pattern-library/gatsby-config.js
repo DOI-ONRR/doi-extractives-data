@@ -1,6 +1,7 @@
 const path = require(`path`)
 
 module.exports = {
+  pathPrefix: '/patterns',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

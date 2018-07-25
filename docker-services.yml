@@ -4,14 +4,17 @@ services:
     build: .
     volumes:
       - .:/doi
-      - root:/root/
-      - public:/doi/public
       - bundle:/usr/local/bundle/
+      - data-shp:/doi/data/shp
       - node-modules:/doi/node_modules
+      - patterns-cache:/doi/pattern-library/.cache
       - patterns:/doi/patterns
       - patterns-node-modules:/doi/pattern-library/node_modules
-      - patterns-cache:/doi/pattern-library/.cache
       - patterns-public:/doi/pattern-library/public
+      - public:/doi/public
+      - root:/root/
+      - site:/doi/_site
+      - styleguide:/doi/styleguide
     environment:
       - EIA_API_KEY
       - LANG=C.UTF-8

@@ -43,11 +43,14 @@ services:
     ports:
       - 8000:8000
 volumes:
-  root:
   bundle:
-  public:
+  data-shp:
   node-modules:
   patterns:
   patterns-cache:
   patterns-node-modules:
   patterns-public:
+  public:
+  root:
+  site:
+  styleguide:

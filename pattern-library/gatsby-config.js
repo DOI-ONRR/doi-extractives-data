@@ -1,7 +1,10 @@
 const path = require(`path`)
 
+// Federalist provides this env variable
+const baseurl = process.env.BASEURL || '';
+
 module.exports = {
-  pathPrefix: `${process.env.BASEURL}/patterns`,
+  pathPrefix: `${baseurl}/patterns`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

@@ -30,8 +30,24 @@ services:
       - webpack
     ports:
       - 3000:3000
+  patterns:
+    extends:
+      file: docker-services.yml
+      service: base_app
+    # Use --host because something about how Gatsby listens to the socket on
+    # localhost doesn't translate for docker-compose
+    command: npm run develop -- --host 0.0.0.0
+    working_dir: /doi/pattern-library
+    depends_on:
+      - webpack
+    ports:
+      - 8000:8000
 volumes:
   root:
   bundle:
   public:
   node-modules:
+  patterns:
+  patterns-cache:
+  patterns-node-modules:
+  patterns-public:

@@ -174,7 +174,14 @@ If deploying the site to a production environment, make sure to minify the JS fi
 1. Package js files with webpack: `webpack --watch`
 1. Re-run the web server: `bundle exec jekyll serve`
 
-### Styleguide
+
+### Styleguide and pattern library
+
+_We are currently moving our [Fractal](https://fractal.build/) styleguide to
+a [Gatsby-based](https://www.gatsbyjs.org/) pattern library._
+
+
+#### Fractal styleguide
 
 Setup the docker environment with the steps from above. Then run the styleguide
 container to start the styleguide server.
@@ -184,6 +191,38 @@ docker-compose up styleguide
 ```
 
 Open your web browser to [localhost:3000](http://localhost:3000).
+
+
+#### Gatsby pattern library
+
+Setup the docker environment with the steps from above. Then run the styleguide
+container to start the styleguide server.
+
+```sh
+docker-compose up patterns
+```
+
+Open your web browser to [localhost:8000](http://localhost:8000).
+
+
+##### Native development
+
+The pattern library lives in `/pattern-library`, but the project-level
+`package.json` contains npm scripts to run the pattern library.
+
+Install the dependencies and do an initial build.
+
+```sh
+npm run release-patterns
+```
+
+Now you can run the development server.
+
+```sh
+npm run patterns
+```
+
+And open your web browser to [localhost:8000](http://localhost:8000).
 
 
 ### Tests

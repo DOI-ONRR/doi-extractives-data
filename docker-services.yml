@@ -8,6 +8,10 @@ services:
       - public:/doi/public
       - bundle:/usr/local/bundle/
       - node-modules:/doi/node_modules
+      - patterns:/doi/patterns
+      - patterns-node-modules:/doi/pattern-library/node_modules
+      - patterns-cache:/doi/pattern-library/.cache
+      - patterns-public:/doi/pattern-library/public
     environment:
       - EIA_API_KEY
       - LANG=C.UTF-8

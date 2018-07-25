@@ -1,9 +1,6 @@
 title: Breadcrumbs
 status: draft
-# collated: true
-# default: Breadcrumb
-# variants:
-#   - name: Breadcrumb
-#     context:
-#       className: breadcrumb
-#       text: Breadcrumb link /
+context:
+  page-title: Page title
+  breadcrumbs:
+    - Breadcrumb link

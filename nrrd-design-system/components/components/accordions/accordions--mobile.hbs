@@ -1,0 +1,26 @@
+      <div class="chart-list">
+        <section id="state-all-production-coal" class="chart-item">
+          <h3 class="chart-title">
+            <button is="aria-toggle" aria-expanded="false" aria-controls="expandable-content" class="chart-title-button" type="button">
+              <span class="hide-expanded chart-title-small">
+                <span>
+                  {{ label }}
+                </span>
+                <span class="hide-expanded">
+                  <img class="aria-toggle-icon" alt="icon with a plus sign" src="{{ path '/img/icons/icon-circled-plus.svg' }}">
+                </span>
+              </span>
+              <span class="show-expanded chart-title-small">
+                <span>
+                  {{ label }}
+                </span>
+                <img class="chart-title-icon" alt="icon with a minus sign" src="{{ path '/img/icons/icon-circled-minus.svg' }}">
+              </span>
+            </button>
+            <span class="chart-title-large">{{ label }}</span>
+          </h3>
+          <div id="expandable-content" aria-hidden="true">
+            <p>{{ expandable-content }}</p>
+          </div>
+        </section>
+      </div>

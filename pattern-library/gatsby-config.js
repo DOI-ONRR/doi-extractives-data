@@ -1,7 +1,7 @@
 const path = require(`path`)
 
 module.exports = {
-  pathPrefix: '/patterns',
+  pathPrefix: `${process.env.BASEURL}/patterns`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

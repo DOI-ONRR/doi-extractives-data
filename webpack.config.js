@@ -41,7 +41,10 @@ var cssConfig = {
       },
     ],
   },
-  plugins: [new ExtractTextPlugin('[name].css')],
+  plugins: [
+    new ExtractTextPlugin('[name].css'),
+    new CopyWebpackPlugin([{ from: 'css/fonts', to: 'fonts' }]),
+  ],
 }
 
 var imgConfig = {

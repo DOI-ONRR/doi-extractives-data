@@ -105,7 +105,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 .find(node => node.fields.componentId === componentId);
 
             return Object.assign({}, componentMetadataNode, {
-              path: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
+              url: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
               html: markdownEdge.node.html,
             });
           });
@@ -128,12 +128,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           )
 
           allComponents.forEach(data => {
-            const { path } = data
+            const { url } = data
             const context = Object.assign({}, data, {
               allComponents,
             })
             createPage({
-              path,
+              path: url,
               component: componentPageTemplate,
               context,
             })

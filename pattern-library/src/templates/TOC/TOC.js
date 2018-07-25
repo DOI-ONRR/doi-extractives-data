@@ -11,9 +11,9 @@ class TOC extends React.Component {
       <Layout>
         <h1>Component styleguide</h1>
         <ul>
-          {allComponents.map(({ displayName, path }, index) => (
+          {allComponents.map(({ displayName, url }, index) => (
             <li key={index}>
-              <GatsbyLink to={path}>{displayName}</GatsbyLink>
+              <GatsbyLink to={url}>{displayName}</GatsbyLink>
             </li>
           ))}
         </ul>
@@ -27,7 +27,7 @@ TOC.propTypes = {
     allComponents: PropTypes.arrayOf(
       PropTypes.shape({
         displayName: PropTypes.string.isRequired,
-        path: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
       }).isRequired
     ).isRequired,
   }).isRequired,

@@ -11,6 +11,9 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sass`,
+    },
+    {
       resolve: `gatsby-transformer-react-docgen`,
     },
     {

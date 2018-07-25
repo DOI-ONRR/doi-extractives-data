@@ -2,11 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import GatsbyLink from "gatsby-link"
 
+import Layout from '../Layout';
+
 class TOC extends React.Component {
   render() {
     const { allComponents } = this.props.pathContext
     return (
-      <div>
+      <Layout>
         <h1>Component styleguide</h1>
         <ul>
           {allComponents.map(({ displayName, path }, index) => (
@@ -15,7 +17,7 @@ class TOC extends React.Component {
             </li>
           ))}
         </ul>
-      </div>
+      </Layout>
     )
   }
 }

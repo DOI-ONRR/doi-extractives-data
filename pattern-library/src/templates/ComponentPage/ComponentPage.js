@@ -1,8 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import GatsbyLink from "gatsby-link"
+import '../../../../public/css/main.css';
+import '../../sass/preview.scss';
 
-import Example from "./components/Example"
+import Example from './components/Example';
+import Layout from '../Layout';
 
 function yesno(bool) {
   return !!bool ? 'yes' : 'no';
@@ -13,7 +16,7 @@ class ComponentPage extends React.Component {
     const { displayName, props, html, description } = this.props.pathContext
 
     return (
-      <div>
+      <Layout>
         <h1>{displayName}</h1>
         { description && <p>{description.text}</p> }
         <h2>Props/Methods</h2>
@@ -43,7 +46,7 @@ class ComponentPage extends React.Component {
         <p>
           <GatsbyLink to="/components/">[index]</GatsbyLink>
         </p>
-      </div>
+      </Layout>
     )
   }
 }

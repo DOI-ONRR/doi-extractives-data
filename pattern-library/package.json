@@ -6,6 +6,7 @@
   "dependencies": {
     "app-root-dir": "^1.0.2",
     "gatsby": "^1.9.227",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-react-docgen": "^1.0.11",
     "gatsby-transformer-remark": "^1.7.25",

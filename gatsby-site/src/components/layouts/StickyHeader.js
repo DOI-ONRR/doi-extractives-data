@@ -5,8 +5,7 @@ const StickyHeader = (props) => {
     const spanClassNames = {'className': " flex-row-flex "}; 
 
     return (
-        <div>
-            {(() => {
+            (() => {
                 switch (props.headerSize) {
                     case "h2":   
                         return (
@@ -14,7 +13,7 @@ const StickyHeader = (props) => {
                                 <span {...spanClassNames}>{props.headerText}</span>
                                 {props.children}  
                             </h2>);
-                    case "h3": 
+                    case "h4": 
                         return (
                             <h4 id={props.headerId} {...headerClassNames}>
                                 <span {...spanClassNames}>{props.headerText}</span>
@@ -27,8 +26,7 @@ const StickyHeader = (props) => {
                                 {props.children}  
                             </h3>);
                 }
-            })()}
-        </div>
+            })()
     );
 
 };

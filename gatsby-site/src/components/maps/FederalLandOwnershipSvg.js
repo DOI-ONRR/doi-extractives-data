@@ -4,11 +4,11 @@ import { withPrefix } from 'components/utils/temp-link'
 const FederalLandOwnershipSvg = () => (
   <g id="FederalLandOwnershipSvg">
     <image className="federal ownership"
-      xlinkHref={withPrefix('/assets/maps/land/federal.gif')} imageRendering="pixelated"
+      xlinkHref={withPrefix('/maps/land/federal.gif')} imageRendering="pixelated"
       width="960" height="670">
     </image>
     <image className="tribal ownership"
-      xlinkHref={withPrefix('/assets/maps/land/tribal.gif')} 
+      xlinkHref={withPrefix('/maps/land/tribal.gif')} 
       imageRendering="pixelated"
       width="960" height="670">
     </image>

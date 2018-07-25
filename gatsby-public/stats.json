@@ -1,16 +1,24 @@
 {
   "assetsByChunkName": {
+    "component---src-pages-about-index-js": [
+      "component---src-pages-about-index-js-be4a0fe4195a52cab760.js",
+      "component---src-pages-about-index-js-be4a0fe4195a52cab760.js.map"
+    ],
+    "path---explore": [
+      "path---explore-9a33b190ce82de47bac8.js",
+      "path---explore-9a33b190ce82de47bac8.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-aa44fdbe682034af77ad.js",
-      "component---src-pages-index-js-aa44fdbe682034af77ad.js.map"
+      "component---src-pages-index-js-574293fa1593eab7bdaf.js",
+      "component---src-pages-index-js-574293fa1593eab7bdaf.js.map"
     ],
     "path---": [
-      "path----8e73bd07563e2ae6994b.js",
-      "path----8e73bd07563e2ae6994b.js.map"
+      "path----8b83b4de81ec995364f1.js",
+      "path----8b83b4de81ec995364f1.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-77298db41304e49f2335.js",
-      "component---src-layouts-index-js-77298db41304e49f2335.js.map"
+      "component---src-layouts-index-js-2c83403daf86be1d47ed.js",
+      "component---src-layouts-index-js-2c83403daf86be1d47ed.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -21,24 +29,24 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-18237a084a9a74dd8451.js",
-      "commons-18237a084a9a74dd8451.js.map"
+      "commons-922bd637923bf00f2c28.js",
+      "commons-922bd637923bf00f2c28.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-062c713b55f0238b9f70.js",
-      "app-062c713b55f0238b9f70.js.map"
+      "app-109b80716c45717469f7.js",
+      "app-109b80716c45717469f7.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-about-js": [
-      "component---src-pages-about-js-0e4857fbe2f22a270d27.js",
-      "component---src-pages-about-js-0e4857fbe2f22a270d27.js.map"
+    "component---src-pages-explore-index-js": [
+      "component---src-pages-explore-index-js-b21b476b5fe55120da88.js",
+      "component---src-pages-explore-index-js-b21b476b5fe55120da88.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

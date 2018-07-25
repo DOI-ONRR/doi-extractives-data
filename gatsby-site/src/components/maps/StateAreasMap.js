@@ -8,7 +8,7 @@ const StateAreasMap = (props) => {
     return (
         <g id="StateAreasMap">
             <g className="states features">
-                <use xlinkHref={withPrefix('/assets/maps/states/all.svg')+"#states"}></use>
+                <use xlinkHref={withPrefix('/maps/states/all.svg')+"#states"}></use>
             </g>
             {props.states.map((item, index) => (
                 <g key={index}>
@@ -16,7 +16,7 @@ const StateAreasMap = (props) => {
                     <a xlinkHref={withPrefix("/explore/"+item.state.frontmatter.unique_id)} href={withPrefix("/explore/"+item.state.frontmatter.unique_id)}>
                         <g className="state feature">
                             <title>{ item.state.frontmatter.title }</title>
-                            <use xlinkHref={withPrefix("/assets/maps/states/all.svg#state-"+item.state.frontmatter.unique_id)}  aria-label={ item.state.frontmatter.title }></use>
+                            <use xlinkHref={withPrefix("/maps/states/all.svg#state-"+item.state.frontmatter.unique_id)}  aria-label={ item.state.frontmatter.title }></use>
                         </g>
                     </a>
                 </g>
@@ -25,7 +25,7 @@ const StateAreasMap = (props) => {
             <FederalLandOwnershipSvg />
 
             <g className="states mesh">
-                <use xlinkHref={withPrefix("/assets/maps/states/all.svg#states-mesh")}></use>
+                <use xlinkHref={withPrefix("/maps/states/all.svg#states-mesh")}></use>
             </g>
         </g>
     );

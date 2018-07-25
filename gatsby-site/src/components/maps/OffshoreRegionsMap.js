@@ -11,11 +11,11 @@ const OffshoreRegionsMap = (props) => {
                     <a xlinkHref={ item.offshore_region.frontmatter.permalink } href={ item.offshore_region.frontmatter.permalink }>
                         <g className="state offshore-area feature" fill>
                             <title>{item.offshore_region.frontmatter.title }</title>
-                            <use xlinkHref={withPrefix("/assets/maps/offshore/all.svg#")+item.offshore_region.frontmatter.unique_id }  aria-label={ item.offshore_region.frontmatter.title }></use>
+                            <use xlinkHref={withPrefix("/maps/offshore/all.svg#")+item.offshore_region.frontmatter.unique_id }  aria-label={ item.offshore_region.frontmatter.title }></use>
                         </g>
                     </a>
                     <g className="states mesh">
-                        <use xlinkHref={withPrefix("/assets/maps/offshore/all.svg#")+item.offshore_region.frontmatter.unique_id+"-mesh"}></use>
+                        <use xlinkHref={withPrefix("/maps/offshore/all.svg#")+item.offshore_region.frontmatter.unique_id+"-mesh"}></use>
                     </g>
                 </g>
             ))}

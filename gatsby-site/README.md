@@ -37,5 +37,21 @@ layout: none
 permalink: /about/
 redirect_from: /about/whats-new/
 ---
+  # Explore Data Page Frontmatter
+  
+---
+title: Explore data
+layout: none
+permalink: /explore/
+redirect_from:
+  - /explore/exports/
+  - /explore/gdp/
+  - /explore/jobs/
+  - /explore/all-lands-production/
+  - /explore/federal-production/
+  - /explore/disbursements/
+  - /explore/federal-revenue-by-location/
+---
 
-4. Copy contents in the gatsby-site/public to gatsby-public
+4. Delete all contents of gatsby-public
+5. Copy contents in the gatsby-site/public to gatsby-public

@@ -12,7 +12,7 @@ const ChartTitle = (props) => {
                 <span className="hide-expanded chart-title-small">
                     <span>
                         { props.children }
-                        { props.chartUnitsTitle && props.chartUnitsTitle }
+                        { props.chartUnitsTitle && " ("+props.chartUnitsTitle+")" }
                     </span>
                     {props.chartValues &&
                         <eiti-bar-chart

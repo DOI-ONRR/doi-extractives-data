@@ -26,7 +26,6 @@ export default ({ data, children}) => {
             { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
           ]}
         >
-        <script src={withPrefix("/js/main.min.js")}></script>
         </Helmet>
         <Banner />
         <Header siteMetadata={data.site.siteMetadata} />

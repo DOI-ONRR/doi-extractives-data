@@ -7,15 +7,22 @@ import lazy from 'lazy.js';
 import StickyHeader from 'components/layouts/StickyHeader';
 import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
+import GlossaryTerm from 'components/utils/glossary-term.js';
+import {filterTerms} from 'components/utils/Glossary';
 
 import ChartTitle from 'components/charts/ChartTitle';
 
 import COMMODITY_NAMES from 'data/commodity_names.yml';
 
+import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
+
 // @todo: pass in years from data
 
+// @todo: use graphql to import data
+import ALL_PRODUCTION_DATA from '../../../static/data/national_all_production.yml';
+
 const NationalAllProduction = (props) => {
-     
+
     return (
         <section id="all-production" is="year-switcher-section" class="all-lands production">
             <StickyHeader headerText='Energy production nationwide'>
@@ -37,58 +44,63 @@ const NationalAllProduction = (props) => {
             </div>
             
 
-            {props.allProducts !== undefined &&
+            {ALL_PRODUCTION_DATA.US.products !== undefined &&
             
                 <div className="chart-list">
 
-                    {(props.allProducts).map((product, index) => {
-                        //console.log(product);
-                        let _year = '2016';
-                        let _productName = COMMODITY_NAMES[product.productName] || product.productName;
-                        let _productSlug = slugify(_productName, {lower:true});
-                        let _productVolumes = {};
-                        product.productData.map((data, index) => {
-                            let yearVolume = lazy(data.item).omit(["name","region","units"]).values().toArray();
-                            _productVolumes[yearVolume[0]] = yearVolume[1];
-                            _year = yearVolume[0]; // Gets the last year in the set
-                        });
-                        let _chartToggle = 'all-production-figures-chart-'+_productSlug;
-                        let _volume = _productVolumes
+                    {(lazy(ALL_PRODUCTION_DATA.US.products).toArray()).map((product, index) => {
+                        let year = '2016';
+                        let productName = COMMODITY_NAMES[product[0]] || product[0];
+                        let productSlug = slugify(productName, {lower:true});
+                        let productVolumes = product[1].volume;
+                        let units = product[1].units;
+                        // product.productData.map((data, _index) => {
+                        //     let yearVolume = lazy(data.item).omit(["name","region","units"]).values().toArray();
+                        //     productVolumes[yearVolume[0]] = yearVolume[1];
+                        //     year = yearVolume[0]; // Gets the last year in the set
+                        //     units = data.item.units.toLowerCase();
+                        // });
+ 
+                        let shortUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].short : units;
+                        let longUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].long : units;
+                        let termUnits = PRODUCTION_UNITS[units] && PRODUCTION_UNITS[units].term;
+                        let suffixUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].suffix : '';
+                        let glossaryTerm = (termUnits) ? filterTerms(termUnits)[0] : termUnits;
 
-                        //console.log("productName",_productName);
-                        //console.log("productSlug",_productSlug);
-                        //console.log("productVolumes",_productVolumes);
+                        let chartToggle = 'all-production-figures-chart-'+productSlug;
 
                         return (
-                            <section key={index} id={"all-production-" + _productSlug } className="chart-item">
+                            <section key={index} id={"all-production-" + productSlug } className="chart-item">
                                 <ChartTitle 
-                                    isIcon={true}
-                                    chartValues={_productVolumes}
-                                    chartToggle={_chartToggle} >{_productName}</ChartTitle>
+                                    isIcon={true}                                   
+                                    units={longUnits}
+                                    chartValues={productVolumes}
+                                    chartToggle={chartToggle} >{productName}</ChartTitle>
 
-
-                                <figure className="chart" id={_chartToggle}>
+                                <figure className="chart" id={chartToggle}>
                                     <eiti-bar-chart
-                                        aria-controls={"all-production-figures-"+_productSlug }
-                                        data={JSON.stringify(_productVolumes)}
+                                        aria-controls={"all-production-figures-"+productSlug }
+                                        data={JSON.stringify(productVolumes)}
                                         x-range="[2007, 2016]"
                                         x-value={2016}
-                                        data-units="long_units">
+                                        data-units={longUnits}>
                                     </eiti-bar-chart>
-                                    <figcaption id={"all-production-figures-"+_productSlug }>
+                                    <figcaption id={"all-production-figures-"+productSlug }>
                                         <span className="caption-data">
-                                            <span className="eiti-bar-chart-y-value" data-format=",">{(_productVolumes[_year]).toLocaleString() }</span>
-                                            long units of
-                                            were produced in
-                                            <span className="eiti-bar-chart-x-value">{ _year }</span>.
+                                            <span className="eiti-bar-chart-y-value" data-format=",">{(productVolumes[year]).toLocaleString() }{" "}</span>
+                                            {glossaryTerm ?
+                                                <GlossaryTerm termKey={termUnits}>{longUnits}</GlossaryTerm> :
+                                                longUnits
+                                            }{' '}of {productName.toLowerCase()} {suffixUnits}
+                                            were produced in {' '}
+                                            <span className="eiti-bar-chart-x-value">{ year }</span>.
                                         </span>
                                         <span className="caption-no-data" aria-hidden="true">
-                                            There is no data about production of  in
-                                            <span className="eiti-bar-chart-x-value">{ _year }</span>.
+                                            There is no data about production of {productName.toLowerCase()} {suffixUnits} in{' '}
+                                            <span className="eiti-bar-chart-x-value">{ year }</span>.
                                         </span>
                                     </figcaption>
                                 </figure>
-
 
                             </section>
                         );

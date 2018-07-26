@@ -27,7 +27,7 @@ gem install bundler
 bundle install
 
 # Append Federalist configuration to Jekyll config
-cat <EOF >> "$project_dir/_config.yml"
+cat <<EOF >> "$project_dir/_config.yml"
 baseurl: "$BASEURL"
 branch: "$BRANCH"
 EOF

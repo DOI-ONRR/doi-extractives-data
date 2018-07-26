@@ -1,7 +1,7 @@
 
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
-const baseurl = process.env.BASEURL || '';
+const baseurl = process.env.BASEURL || '/';
 
 module.exports = {
   // Note: it must *not* have a trailing slash.

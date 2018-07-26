@@ -11,8 +11,8 @@ nav_items:
     subnav_items:
       - name: oil-and-gas
         title: Oil and gas
-      - name: non-energy-minerals
-        title: Non-energy minerals
+      - name: nonenergy-minerals
+        title: Nonenergy minerals
       - name: coal
         title: Coal
   - name: renewable-energy
@@ -43,7 +43,7 @@ This overview is based on the [Onshore Energy and Mineral Lease Management Inter
 
 ## Leasing process for mineral resources
 
-A number of agencies within the Department of the Interior play a role in the process of developing oil, gas, coal, or non-energy minerals on tribal land:
+A number of agencies within the Department of the Interior play a role in the process of developing oil, gas, coal, or nonenergy minerals on tribal land:
 
 - The [Bureau of Indian Affairs](https://www.bia.gov/) (BIA)
 - The [Bureau of Land Management](https://www.blm.gov/) (BLM)
@@ -102,7 +102,7 @@ A mineral trust owner may wish to assume the operation or ownership of a well. I
 
 <!-- content still needs de-duplicating -->
 
-### Non-energy minerals
+### Nonenergy minerals
 
 #### Plan
 

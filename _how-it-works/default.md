@@ -75,11 +75,6 @@ selector: list
           <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
           <p><a href="{{site.baseurl}}/how-it-works/renewables/">Learn about renewable energy</a></p>
         </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/forestry/">Forestry</a></h3>
-          <p>Forests are an important part of our ecosystems. They provide timber, store carbon, clean water, purify air, and reduce the effects of drought and floods.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/forestry/">Learn about forests</a></p>
-        </div>
       </div>
     </section>
     <section class="container">
@@ -179,11 +174,6 @@ selector: list
           <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">See revenue by company</a></p>
         </div>
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Corporate income tax</a></h4>
-          <p>Corporations pay income taxes to the IRS, but the IRS cannot release confidental data about the amounts of individual payments.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/corporate-income-tax/">Learn about tax revenue</a></p>
-        </div>
-        <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
           <p>This program uses fees from present-day coal mining companies to reclaim coal mines abandoned before 1977.</p>
           <p><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Learn about the AML Reclamation Program</a></p>
@@ -193,20 +183,10 @@ selector: list
           <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
           <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a></p>
         </div>
-        <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Leasing process: offshore oil, gas, and sulfur</a></h4>
-          <p>Understand the details of the leasing process for offshore liquid minerals.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/lease-process-offshore/">Learn about offshore leases</a></p>
-        </div>
-        <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Leasing process: onshore oil and gas</a></h4>
-          <p>Understand the details of the leasing process for onshore liquid minerals.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/lease-process-onshore/">Learn about onshore leases</a></p>
-        </div>
       </div>
     </section>
     <section class="container">
-      <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenues?</h2>
+      <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenue?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/audits-and-assurances/">Audits and assurances</a></h3>
@@ -220,21 +200,6 @@ selector: list
         </div>
       </div>
     </section>
-    <!-- <section class="container">
-      <h2 id="state-tribal" class="h2-bar">How is natural resource extraction governed in U.S. states and on tribal lands?</h2>
-      <div class="container landing-section">
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h3>
-          <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws</a></p>
-        </div>
-        <div>
-          <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h3>
-          <p>Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws</a></p>
-        </div>
-      </div>
-    </section> -->
   </article>
   <div class="sticky sticky_nav container-right-3">
     <nav>

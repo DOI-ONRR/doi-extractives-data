@@ -34,6 +34,8 @@ tag:
 - wind
 - water power
 - biomass
+- tribal
+- Indian
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

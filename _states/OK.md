@@ -3,6 +3,13 @@ unique_id: OK
 title: Oklahoma
 FIPS: '40'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 1.6% of all land in Oklahoma.
+tag:
+- wind
+- gas
+- oil
+- Oklahoma
+
 priority: true
 
 # is_cropped forces the default county map view to use

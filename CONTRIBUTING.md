@@ -164,6 +164,31 @@ If you would like to query the local database instance:
 
 To update site data, run `make site-data`.
 
+
+### Gatsby gotchas
+
+[Gatsby](https://www.gatsbyjs.org/) is a JavaScript framework for building
+static websites. We're currently migrating from Jekyll to Gatsby. The migration
+is over a long time span, and there are some gotchas about making Jekyll and
+Gatsby work together.
+
+Our approach is to replace Jekyll pages with Gatsby pages in batches. Since
+Jekyll is happy to take static pages and assets and copy them over to the
+`_site` build directory, Gatsby can output compiled pages and then we just drop
+them in the right location in the Jekyll source. E.g. for the about page, after
+Gatsby builds it, we copy the about.html to the Jekyll source directory and then
+the Jekyll build will pick it up.
+
+Gatsby expects to own the entire website, so ...
+
+
+#### Path prefix
+
+Gatsby supports a [path prefix](https://www.gatsbyjs.org/docs/path-prefix/)
+which we use for the Federalist build previews. Gatsby expects to be the entire
+site.
+
+
 ### Deployment
 
 This site is deployed on [Federalist](https://federalist.fr.cloud.gov/) whenever a commit it pushed to GitHub. Changes are deployed automatically to the production site when commits are pushed to the `master` branch.

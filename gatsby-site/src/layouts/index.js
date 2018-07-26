@@ -4,9 +4,9 @@ import {Provider} from 'react-redux';
 
 import createStore from 'state/createStore';
 
-import Banner from 'components/layouts/Banner';
-import Header from 'components/layouts/Header';
-import Footer from 'components/layouts/Footer';
+import Banner from 'components/layouts/banner';
+import Header from 'components/layouts/header';
+import Footer from 'components/layouts/footer';
 import Glossary from 'components/utils/Glossary';
 
 import "styles/_main.scss";

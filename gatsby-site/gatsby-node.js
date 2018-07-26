@@ -40,6 +40,6 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Copying Files from public to gatsby-public...");
-	copydir.sync(__dirname+'/public', '../_site');
+	copydir.sync(__dirname+'/public', '../_stage');
 	console.log("Finished Copying Files to gatsby-public.");
 }

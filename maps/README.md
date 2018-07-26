@@ -46,11 +46,11 @@ each reference one "layer" in our stack:
 
 ```html
 <svg class="map" viewBox="0 0 960 670">
-  <use fill="#ccc" xlink:href="/maps/states/all.svg#states"/>
-  <use fill="#f00" xlink:href="/maps/states/all.svg#CA"/>
-  <use stroke="#fff" xlink:href="/maps/states/CA.svg#counties-mesh"/>
-  <use stroke="#999" xlink:href="/maps/states/all.svg#states-mesh"/>
-  <use stroke="0f00" xlink:href="/maps/states/all.svg#CA"/>
+  <use fill="#ccc" xlink:href="/public/maps/states/all.svg#states"/>
+  <use fill="#f00" xlink:href="/public/maps/states/all.svg#CA"/>
+  <use stroke="#fff" xlink:href="/public/maps/states/CA.svg#counties-mesh"/>
+  <use stroke="#999" xlink:href="/public/maps/states/all.svg#states-mesh"/>
+  <use stroke="0f00" xlink:href="/public/maps/states/all.svg#CA"/>
 </svg>
 ```
 

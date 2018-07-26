@@ -3,6 +3,15 @@ unique_id: TX
 title: Texas
 FIPS: '48'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 1.8% of all land in Texas. Texas also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy.
+tag:
+- oil
+- wind
+- gas
+- Texas
+- GOMESA
+- Gulf of Mexico
+
 # this triggers whitelisting of nearby states to render in county maps,
 # which solves the problem of Hawaii showing up on maps of Texas
 neighbors:

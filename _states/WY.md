@@ -3,6 +3,13 @@ unique_id: WY
 title: Wyoming
 FIPS: '56'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 48.1% of all land in Wyoming.
+tag:
+- coal
+- gas
+- oil
+- Wyoming
+
 opt_in: true
 
 state_revenue_year: 2016

@@ -13,7 +13,7 @@ module Jekyll
       collections.each do |collection|
         collection['docs'].each do |doc|
           url = doc.data['permalink'] || doc.url
-          if doc.data['title'] && doc.data['description'] && doc.data['tag'] && url
+          if doc.data['title'] && doc.data['description'] && doc.data['tag']
             new_obj = {
               title: doc.data['title'],
               description: doc.data['description'],

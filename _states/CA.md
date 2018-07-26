@@ -3,6 +3,17 @@ unique_id: CA
 title: California
 FIPS: '06'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 45.8% of all land in California. California also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy.
+tag:
+- oil
+- geothermal
+- biomass
+- solar
+- hydroelectric
+- wind
+- offshore
+- California
+
 priority: true
 
 nearby_offshore_region: 'the <a href="{{ site.baseurl }}/explore/offshore-pacific/">Pacific Ocean</a>'

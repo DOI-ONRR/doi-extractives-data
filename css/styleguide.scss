@@ -1,48 +1,45 @@
 /* styleguide.scss
  *
- * This contains additional styles needed for the styleguide to display our components properly.
+ * This contains additional styles needed for the styleguide to display our
+ * components properly. Classes are prefixed with pl- (pattern library) to
+ * avoid conflicts with site classes and styles.
+ *
  */
 
 @import 'variables';
 
-.label-hero {
-  font-family: monospace;
-  font-size: 2rem;
-  color: #323c42;
-}
-
-.label-primary {
+.pl-label-primary {
   font-family: monospace;
   font-weight: bold;
   font-size: 1.1rem;
   color: #5c737f;
 }
 
-.label-secondary {
+.pl-label-secondary {
   font-family: monospace;
   font-size: 1rem;
   color: #5c737f;
 }
 
-.preview {
+.pl-preview {
   margin: 1rem;
 }
 
 /*Colors*/
 
-.swatch {
+.pl-swatch {
   float: left;
   margin: 0.5rem 0.2rem;
   width: 10rem;
 }
 
-.swatch-color {
+.pl-swatch-color {
   height: 9rem;
   width: 9rem;
   margin-bottom: 0.2rem;
 }
 
-.icon-ok {
+.pl-icon-ok {
   content: url('../img/icons/icon-check.svg');
   float: left;
   width: 10px;
@@ -52,7 +49,7 @@
   vertical-align: bottom;
 }
 
-.icon-no {
+.pl-icon-no {
   content: url('../img/icons/icon-no.svg');
   float: left;
   width: 10px;
@@ -62,24 +59,15 @@
   vertical-align: bottom;
 }
 
-/*Grid*/
-
-.column {
-  background-color: #a7bcc7;
-  margin-bottom: 24px;
-  position: relative;
-  padding: 1rem;
-}
-
 
 /*Icons*/
 
-.wrapper-padded-float {
+.pl-wrapper-padded-float {
   float: left;
   padding: 1rem;
 }
 
-.icon {
+.pl-icon {
   text-align: center;
   font-size: 3rem;
 }

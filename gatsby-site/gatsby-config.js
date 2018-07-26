@@ -19,7 +19,7 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-transformer-yaml`,
     'gatsby-transformer-remark',
-    `gatsby-transformer-excel`,
+    'gatsby-transformer-excel',
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.
@@ -40,13 +40,13 @@ module.exports = {
         name: `data`,
         path: `${__dirname}/src/data/`,
       },
-    },
+    },  
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown/`,
       },
-    },
+    },                                                              
   ],
 };

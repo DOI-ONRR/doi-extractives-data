@@ -3,12 +3,8 @@ const fs = require(`fs`)
 const appRootDir = require(`app-root-dir`).get()
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const componentPageTemplate = path.resolve(
-  `src/templates/ComponentPage/index.js`
-)
-
-const docPageTemplate = path.resolve(`src/templates/Documentation/index.js`)
-const tableOfContentsTemplate = path.resolve(`src/templates/TOC/index.js`)
+const componentPageTemplate = path.resolve(`src/templates/ComponentPage/index.js`);
+const docPageTemplate = path.resolve(`src/templates/Documentation/index.js`);
 
 // Adds a slug for documentation pages
 function processDocNode({ node, getNode, boundActionCreators }) {
@@ -176,14 +172,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               context,
             })
           })
-
-          createPage({
-            path: `/components/`,
-            component: tableOfContentsTemplate,
-            context: {
-              allComponents,
-            },
-          })
         })
         // Setup the doc pages
         .then(() =>
@@ -217,7 +205,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             const { title, status } = edge.node.frontmatter;
             const { slug } = edge.node.fields;
 
-            const url = slug === 'index' ? `/docs/` : `/docs/${slug}/`;
+            // Index page serves from /, others under /docs
+            const url = slug === 'index' ? `/` : `/docs/${slug}/`;
             createPage({
               path: url,
               component: docPageTemplate,

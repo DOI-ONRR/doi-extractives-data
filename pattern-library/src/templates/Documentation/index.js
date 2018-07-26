@@ -3,17 +3,16 @@ import PropTypes from "prop-types"
 import GatsbyLink from "gatsby-link"
 import '../../../../public/css/main.css';
 
-import Layout from '../Layout';
 
 class DocumentationPage extends React.Component {
   render() {
     const { title, status, html } = this.props.pathContext;
     return (
-      <Layout>
+      <div>
         { title && <h1>{title}</h1> }
         { status && <div>{status}</div> }
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </Layout>
+      </div>
     )
   }
 }

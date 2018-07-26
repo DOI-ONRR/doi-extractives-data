@@ -5,16 +5,16 @@
 # need to run jekyll as part of the npm setup because gatsby has to be built
 # after the jekyll build
 
+project_dir=$(dirname $(dirname $0))
+
+# Setup RVM for ruby
+source /usr/local/rvm/scripts/rvm
+
+# Set these after rvm to avoid them applying to the rvm function
 set -o errexit
 set -o pipefail
 set -o nounset
 set -x
-
-
-project_dir=$(dirname "$0")
-
-# Setup RVM for ruby
-source /usr/local/rvm/scripts/rvm
 
 # Install the correct version of ruby
 read ruby_version < "$project_dir/.ruby-version"

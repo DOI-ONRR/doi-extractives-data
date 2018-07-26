@@ -11,6 +11,7 @@ import NationalFederalProduction from 'components/locations/NationalFederalProdu
 import NationalRevenue from 'components/locations/NationalRevenue';
 import NationalGDP from 'components/locations/NationalGDP';
 import NationalJobs from 'components/locations/NationalJobs';
+import NationalDisbursements from 'components/locations/NationalDisbursements';
 
 import { withPrefix } from 'components/utils/temp-link';
 
@@ -163,6 +164,8 @@ class ExplorePage extends React.Component {
                         stateId={PAGE_ID} 
                         stateName={PAGE_TITLE}
                         isNationalPage={NATIONAL_PAGE} />
+
+                    <NationalDisbursements />
 
                     <section id="economic-impact">
 

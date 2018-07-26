@@ -3,7 +3,7 @@ import React from 'react';
 import lazy from 'lazy.js';
 
 const NavList = (props) => (
-	<ul style={{ 'list-style-type': 'none'}}>
+	<ul style={{ 'listStyleType': 'none'}}>
 		{props.navItems &&
 
 			props.navItems.map((navItem, index) => {

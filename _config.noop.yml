@@ -1,0 +1,3 @@
+# A jekyll config that builds nothing
+source: noop
+destination: _noop

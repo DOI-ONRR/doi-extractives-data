@@ -1,5 +1,4 @@
 import React from 'react';
-import { withPrefix } from 'components/utils/temp-link'
 
 const FederalLandOwnershipLegend = (props) => (
     <div className="legend-ownership-svg">

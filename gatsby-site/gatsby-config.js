@@ -1,3 +1,8 @@
+
+// Federalist provides the BASEURL env variable for preview builds.
+// https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
+const baseurl = process.env.BASEURL || '';
+
 module.exports = {
   
   // Note: it must *not* have a trailing slash.
@@ -6,7 +11,7 @@ module.exports = {
   // PREVIEW
   // pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-dev/gatsby-public`,
   // PROD/LOCAL JEKYLL
-  // pathPrefix: `/gatsby-public`,
+  pathPrefix: `${baseurl}/gatsby-public`,
   
   siteMetadata: {
     title: 'Natural Resources Revenue Data',

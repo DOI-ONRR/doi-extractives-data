@@ -22,4 +22,9 @@ export function withPrefix(path) {
     newPrefix = __PATH_PREFIX__.slice(0, -14);
   }
   return (newPrefix+path);
+
+}
+export function withPrefixSVG(path) {
+
+  return (__PATH_PREFIX__+path);
 }

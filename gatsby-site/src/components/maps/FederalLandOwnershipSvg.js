@@ -1,5 +1,5 @@
 import React from 'react';
-import { withPrefix } from 'components/utils/temp-link'
+import {  withPrefixSVG as withPrefix  } from 'components/utils/temp-link'
 
 const FederalLandOwnershipSvg = () => (
   <g id="FederalLandOwnershipSvg">

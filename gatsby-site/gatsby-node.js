@@ -37,14 +37,9 @@ var explorePageFrontmatter = "---"+os.EOL+
 							"  - /explore/disbursements/"+os.EOL+
 							"  - /explore/federal-revenue-by-location/"+os.EOL+
 							"---"+os.EOL;
-							
-exports.onPostBuild = () => {
-	console.log("Prepending frontmatter to files...");
-	prependFile.sync(__dirname+'/public/About/index.html', aboutPageFrontmatter);
-	prependFile.sync(__dirname+'/public/Explore/index.html', explorePageFrontmatter);
-	console.log("Finished prepending frontmatter to files.");
 
+exports.onPostBuild = () => {
 	console.log("Copying Files from public to gatsby-public...");
-	copydir.sync(__dirname+'/public', '../gatsby-public');
+	copydir.sync(__dirname+'/public', '../_site');
 	console.log("Finished Copying Files to gatsby-public.");
 }

@@ -138,12 +138,21 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 .map(edge => edge.node)
                 .find(node => node.fields.componentId === componentId);
 
+            // TODO we shouldn't require the componentMetadataNode to exist,
+            // but that's the way this was orignally written. This should just
+            // be a warning, not an error.
+            if (!componentMetadataNode) {
+              throw new Error(`Could not find metadata for ${componentId}. You may have a syntax
+                               error in the JavaScript preventing parsing.`);
+            }
+
             return Object.assign({}, componentMetadataNode, {
               url: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
               html: markdownEdge.node.html,
             });
           });
 
+          // TODO the components should be queryable from graphql
           const exportFileContents =
             allComponents
               .reduce((accumulator, { id, displayName }) => {

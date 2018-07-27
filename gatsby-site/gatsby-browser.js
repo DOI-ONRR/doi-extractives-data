@@ -16,7 +16,7 @@ exports.replaceRouterComponent = ({ history }) => {
 
   return ConnectedRouterWrapper;
 };
-
+let inInitialRender = true;
 exports.onClientEntry = () => {
   // Patch the resource loader
   const loader = global.___loader;

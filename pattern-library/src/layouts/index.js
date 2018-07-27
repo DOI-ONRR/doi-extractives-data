@@ -55,6 +55,7 @@ export const query = graphql`
           path
           context {
             title
+            nav_title
             displayName
           }
         }

@@ -188,6 +188,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     html
                     frontmatter {
                       title
+                      nav_title
                       status
                     }
                   }
@@ -202,7 +203,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
           result.data.allMarkdownRemark.edges.forEach((edge) => {
             const { html } = edge.node;
-            const { title, status } = edge.node.frontmatter;
+            const { nav_title, title, status } = edge.node.frontmatter;
             const { slug } = edge.node.fields;
 
             // Index page serves from /, others under /docs
@@ -211,6 +212,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               path: url,
               component: docPageTemplate,
               context: {
+                nav_title,
                 title,
                 status,
                 html,

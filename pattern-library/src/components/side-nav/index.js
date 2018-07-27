@@ -14,7 +14,7 @@ class SideNav extends React.Component {
         <ul>
           {docs.map(doc => (
             <li key={doc.path}>
-              <Link to={doc.path}>{doc.context.title || doc.path}</Link>
+              <Link to={doc.path}>{doc.context.nav_title || doc.context.title || doc.path}</Link>
             </li>
           ))}
         </ul>
@@ -42,6 +42,7 @@ SideNav.propTypes = {
     path: PropTypes.string.isRequired,
     context: PropTypes.shape({
       title: PropTypes.string.isRequired,
+      nav_title: PropTypes.string,
     }).isRequired,
   })),
 }

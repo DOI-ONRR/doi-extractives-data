@@ -1,5 +1,6 @@
 ---
 title: NRRD Design System
+nav_title: Overview
 ---
 
 This styleguide contains design documentation and components for the Natural Resources Revenue Data website ([https://revenuedata.doi.gov/](https://revenuedata.doi.gov/)). Here you'll find the design building blocks of the site, from basics like typography and colors to more intricate components like javascript-generated charts and maps. This guide assumes knowledge of html, css, and other technologies used to build this website.

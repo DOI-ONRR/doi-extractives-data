@@ -21,6 +21,10 @@ exports.onClientEntry = () => {
   // Patch the resource loader
   const loader = global.___loader;
   if (!loader) return;
+  let pages = [
+  	{componentChunkName: "component---src-pages-about-index-js", layout: "layout---index", layoutComponentChunkName: "component---src-layouts-index-js", jsonName: "about.json", path: "/preview/onrr/doi-extractives-data/gatsby-federalist-1/about/"},
+	{componentChunkName: "component---src-pages-explore-index-js", layout: "layout---index", layoutComponentChunkName: "component---src-layouts-index-js", jsonName: "explore.json", path: "/preview/onrr/doi-extractives-data/gatsby-federalist-1/explore/"}
+  ];
 
-  loader.addPagesArray([]);
+  loader.addPagesArray(pages);
 }

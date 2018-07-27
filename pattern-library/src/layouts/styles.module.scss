@@ -1,0 +1,17 @@
+@import 'mixins';
+
+.defaultLayout {
+  margin: $spacing-base;
+
+  @include media($breakpoint--sm) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem;
+  }
+}
+
+.sidebar {
+  @include media($breakpoint--sm) {
+    margin-right: $spacing-base * 2;
+  }
+}

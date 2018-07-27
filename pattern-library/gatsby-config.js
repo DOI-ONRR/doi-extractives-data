@@ -22,6 +22,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [path.resolve(path.join(__dirname, 'src/sass'))],
+      }
     },
     {
       resolve: `gatsby-transformer-react-docgen`,

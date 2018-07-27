@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import GatsbyLink from "gatsby-link"
 import '../../../../public/css/main.css';
-import '../../sass/preview.scss';
 
 import Example from './components/Example';
 

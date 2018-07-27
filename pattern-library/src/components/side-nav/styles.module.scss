@@ -1,0 +1,22 @@
+@import 'variables';
+
+$font-size: 0.8rem;
+
+.sideNav {
+  font-size: $font-size;
+  width: 10rem;
+
+  ul {
+    margin: $spacing-base 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      font-size: $font-size;
+    }
+  }
+}
+
+.heading {
+  font-size: 1rem;
+}

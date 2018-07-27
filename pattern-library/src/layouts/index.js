@@ -1,12 +1,18 @@
 import React from "react"
 
+// Import NRRD styles
+// TODO these apply to the entire pattern library. Really we want the pattern
+// library to have it's own theme to avoid distracting from the components and
+// content. We're using css-modules to avoid class name collisions but still
+// inherit the base styles for elements. This is okay for now since we don't
+// want to spend time building a theme for the styleguide.
 import '../../../public/css/main.css';
-import '../sass/preview.scss';
 
-import SideNav from '../components/SideNav';
+import SideNav from '../components/side-nav';
+import styles from './styles.module.scss';
 
 
-class Layout extends React.Component {
+class DefaultLayout extends React.Component {
   constructor(props) {
     super(props);
     //TODO can this be done in graphql?
@@ -29,13 +35,13 @@ class Layout extends React.Component {
     const { components, docs } = this.state;
 
     return (
-      <div className="pl-layout">
-        <aside>
-          <SideNav components={components} docs={docs} />
-        </aside>
-        <div className="pl-layout__main">
+      <div className={styles.defaultLayout}>
+        <div className={styles.main}>
           {children()}
         </div>
+        <aside className={styles.sidebar}>
+          <SideNav components={components} docs={docs} />
+        </aside>
       </div>
     );
   }
@@ -58,4 +64,4 @@ export const query = graphql`
 `;
 
 
-export default Layout;
+export default DefaultLayout;

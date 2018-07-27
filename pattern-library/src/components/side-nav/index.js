@@ -2,13 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
 
+import styles from './styles.module.scss';
+
 
 class SideNav extends React.Component {
   render() {
     const { components, docs } = this.props;
     return (
-      <div>
-        <h2>Docs</h2>
+      <div className={styles.sideNav}>
+        <h2 className={styles.heading}>Docs</h2>
         <ul>
           {docs.map(doc => (
             <li key={doc.path}>
@@ -16,7 +18,7 @@ class SideNav extends React.Component {
             </li>
           ))}
         </ul>
-        <h2>Components</h2>
+        <h2 className={styles.heading}>Components</h2>
         <ul>
           {components.map(component => (
             <li key={component.path}>

@@ -18,5 +18,8 @@ exports.replaceRouterComponent = ({ history }) => {
 };
 
 exports.onClientEntry = () => {
-
-};
+  // Patch the resource loader
+  const loader = global.___loader
+  const { prefetcher } = loader
+  prefetcher.onPostLoadPageResources = (e) =>{}
+}

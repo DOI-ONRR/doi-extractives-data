@@ -16,8 +16,9 @@ class ComponentPage extends React.Component {
     return (
       <div>
         <h1>{displayName}</h1>
-        { description && <p>{description.text}</p> }
+        <Example html={html} />
         <h2>Props/Methods</h2>
+        { description && <p>{description.text}</p> }
         <table>
           <thead>
             <tr>
@@ -32,7 +33,7 @@ class ComponentPage extends React.Component {
             {props.map(({ name, defaultValue, description, type, required }, index) => (
               <tr key={index}>
                 <td>{name}</td>
-                { description && <td>{description.text}</td> }
+                <td>{description ? description.text : <em>N/A</em>}</td>
                 <td>{type.name}</td>
                 <td>{yesno(required)}</td>
                 <td>{defaultValue ? <pre>{defaultValue.value}</pre> : <em>N/A</em>}</td>
@@ -40,10 +41,6 @@ class ComponentPage extends React.Component {
             ))}
           </tbody>
         </table>
-        <Example html={html} />
-        <p>
-          <GatsbyLink to="/components/">[index]</GatsbyLink>
-        </p>
       </div>
     )
   }

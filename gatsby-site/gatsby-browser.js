@@ -18,13 +18,9 @@ exports.replaceRouterComponent = ({ history }) => {
 };
 
 exports.onClientEntry = () => {
-  const pathname = global.___pathname
-  if (!pathname) return
-
-  console.log(pathname);
-
-
   // Patch the resource loader
+  const loader = global.___loader;
+  if (!loader) return;
   const { getResourcesForPathname } = loader
 
   loader.getResourcesForPathname = (path, cb = () => {}) => {

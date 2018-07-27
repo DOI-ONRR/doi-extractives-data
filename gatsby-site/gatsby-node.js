@@ -39,7 +39,12 @@ var explorePageFrontmatter = "---"+os.EOL+
 							"---"+os.EOL;
 
 exports.onPostBuild = () => {
+	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/About/index.html', aboutPageFrontmatter);
+    prependFile.sync(__dirname+'/public/Explore/index.html', explorePageFrontmatter);
+    console.log("Finished prepending frontmatter to files.");
+
 	console.log("Copying Files from public to gatsby-public...");
-	copydir.sync(__dirname+'/public', '../_stage');
+	copydir.sync(__dirname+'/public', '../gatsby-public');
 	console.log("Finished Copying Files to gatsby-public.");
 }

@@ -146,4 +146,4 @@ shruggie:
   - cc20376993abd596768c9c60ff456ad9f4fe8e7c
   - 7f39b8e0a432747338ce075c50c19d2323da0e14
 
-destination: _stage
+destination: _site

@@ -21,9 +21,6 @@ exports.onClientEntry = () => {
   // Patch the resource loader
   const loader = global.___loader;
   if (!loader) return;
-  const { getResourcesForPathname } = loader
 
-  loader.getResourcesForPathname = (path, cb = () => {}) => {
-	    return cb()
-	}
+  loader.addPagesArray([]);
 }

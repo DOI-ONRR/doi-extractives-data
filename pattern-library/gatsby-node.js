@@ -198,7 +198,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     fields {
                       slug
                     }
-                    html
+                    htmlAst
                     frontmatter {
                       title
                       nav_title
@@ -215,7 +215,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
 
           result.data.allMarkdownRemark.edges.forEach((edge) => {
-            const { html } = edge.node;
+            const { htmlAst } = edge.node;
             const { nav_title, title, status } = edge.node.frontmatter;
             const { slug } = edge.node.fields;
 
@@ -228,7 +228,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 nav_title,
                 title,
                 status,
-                html,
+                htmlAst,
               },
             });
           });

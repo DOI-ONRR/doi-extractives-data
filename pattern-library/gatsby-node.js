@@ -101,11 +101,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     }
                     id
                     displayName
-                    description {
-                      text
+                    childComponentDescription {
+                      childMarkdownRemark {
+                        html
+                      }
                     }
                     props {
                       name
+                      required
                       defaultValue {
                         value
                       }
@@ -114,10 +117,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         raw
                         name
                       }
-                      description {
-                        text
+                      childComponentDescription {
+                        childMarkdownRemark {
+                          html
+                        }
                       }
-                      required
                     }
                   }
                 }

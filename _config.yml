@@ -25,6 +25,7 @@ exclude:
   # Node depenencies
   - node_modules
   - package.json
+  - pattern-library
   # unit tests
   - test
   - circle.yml

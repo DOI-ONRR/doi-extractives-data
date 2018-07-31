@@ -10,7 +10,7 @@ import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';
 
-import ChartTitle from 'components/charts/ChartTitle';
+import ChartTitle from 'components/molecules/ChartTitle';
 
 import COMMODITY_NAMES from 'data/commodity_names.yml';
 

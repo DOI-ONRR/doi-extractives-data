@@ -1,6 +1,5 @@
 import React from 'react';
 import icon from "img/icons/icon-circled-minus.svg";
-//import 'js/components/eiti-bar-chart';
 
 const ChartTitle = (props) => {
     return (

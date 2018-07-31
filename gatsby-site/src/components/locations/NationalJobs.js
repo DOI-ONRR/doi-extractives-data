@@ -10,7 +10,7 @@ import StickyHeader from 'components/layouts/StickyHeader';
 import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
-import ChartTitle from 'components/charts/ChartTitle';
+import ChartTitle from 'components/molecules/ChartTitle';
 
 import NATIONAL_JOBS from '../../../static/data/national_jobs.yml';
 import NATIONAL_JOBS_BY_COMMODITY from '../../../static/data/national_jobs_by_commodity.yml';

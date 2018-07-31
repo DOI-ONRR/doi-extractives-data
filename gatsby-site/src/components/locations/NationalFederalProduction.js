@@ -10,7 +10,7 @@ import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';
 
-import ChartTitle from 'components/charts/ChartTitle';
+import ChartTitle from 'components/molecules/ChartTitle';
 
 import iconCirclePlus from "img/icons/icon-circled-plus.svg";
 import iconCircleMinus from "img/icons/icon-circled-minus.svg";

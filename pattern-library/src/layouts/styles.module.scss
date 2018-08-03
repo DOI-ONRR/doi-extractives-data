@@ -1,12 +1,13 @@
 @import 'mixins';
 
 .defaultLayout {
-  margin: $spacing-base;
+  margin: $spacing-base auto;
+  max-width: 1200px;
+  padding: $spacing-base;
 
   @include media($breakpoint--sm) {
     display: flex;
     flex-direction: row-reverse;
-    margin: 2rem;
   }
 }
 

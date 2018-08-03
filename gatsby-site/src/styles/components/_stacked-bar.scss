@@ -1,0 +1,69 @@
+.stacked-bar {
+	width: 360px;
+}
+
+.stacked-bar-color-0 {
+	fill: $green-dark;
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: $green-dark;
+	}
+}
+.stacked-bar-color-1 {
+	fill: $green-land;
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: $green-land;
+	}
+}
+.stacked-bar-color-2 {
+	fill: $green-mid;
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: $green-mid;
+	}
+}
+.stacked-bar-color-3 {
+	fill: $green-light;
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: $green-light;
+	}
+}
+
+.stacked-bar-legend {
+	border: none;
+	td {
+		border: none;
+		vertical-align: middle;
+		padding: 0.1em;
+	}
+	td:nth-child(2) {
+		padding-left: 0.5em;
+		width: 150px;
+	}
+	td:nth-child(3) {
+		text-align: right;
+	}
+
+	tr:last-child{
+		font-weight: bold;
+		td{
+			padding-top: 0.3em;
+		}
+		td:nth-child(2) {
+			text-align: right;
+			padding-left: 0em;
+		}
+	}
+
+	span {
+		font-weight: 300;
+		line-height: 1.3;
+	}
+
+}

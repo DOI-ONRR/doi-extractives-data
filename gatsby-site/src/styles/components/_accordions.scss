@@ -7,7 +7,7 @@
 // <ul accordion="primary">
 //    <li>
 //        <h3>Heading</h3>
-//        <button data-accordion-button title="Title content"></button>
+//        <button accordion-button title="Title content"></button>
 //        <div>Accordion Content</div
 //    </li>
 // </ul>
@@ -23,12 +23,12 @@
 //
 // Styleguide components.accordions
 
-[data-accordion-item] {
+[accordion-item] {
   position: relative;
 
   &[aria-expanded=true] {
 
-    [data-accordion-button]:not([accordion-text]) {
+    [accordion-button]:not([accordion-text]) {
       @include rotate(270deg, 3);
 
       &:after {
@@ -53,14 +53,14 @@
 
     }
 
-    [data-accordion-content] {
+    [accordion-content] {
       display: inline-block;
     }
 
   }
 
   &[aria-expanded=false] {
-    [data-accordion-button]:not([accordion-text]) {
+    [accordion-button]:not([accordion-text]) {
       @include rotate(90deg, 1);
 
       &:after {
@@ -83,7 +83,7 @@
       }
     }
 
-    [data-accordion-content] {
+    [accordion-content] {
       display: none;
     }
   }
@@ -91,17 +91,17 @@
 
 [accordion][accordion-desktop=false] {
   @include respond-to(medium-up) {
-    [data-accordion-content] {
+    [accordion-content] {
       display: inline-block;
     }
 
-    [data-accordion-button] {
+    [accordion-button] {
       display: none;
     }
   }
 }
 
-[data-accordion-button],
+[accordion-button],
 [accordion-text] {
   cursor: pointer;
 
@@ -113,7 +113,7 @@
   }
 }
 
-[data-accordion-button] {
+[accordion-button] {
   background-color: transparent;
   background-size: 50%;
   float: right;

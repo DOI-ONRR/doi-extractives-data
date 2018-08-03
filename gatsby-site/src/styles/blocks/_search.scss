@@ -8,14 +8,6 @@
 .search-header {
   display: block;
   width: 100%;
-
-  p {
-    flex-grow: 1;
-
-    &:last-of-type {
-      text-align: right;
-    }
-  }
 }
 
 .search-wrapper {

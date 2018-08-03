@@ -102,6 +102,7 @@ class ExplorePage extends React.Component {
   }
 
   render () {
+    
     return (
 
         <main id="national" className="layout-state-pages national-page">
@@ -165,7 +166,7 @@ class ExplorePage extends React.Component {
                         stateName={PAGE_TITLE}
                         isNationalPage={NATIONAL_PAGE} />
 
-                    <NationalDisbursements />
+                    <NationalDisbursements allDisbursements={this.props.data.Federal_Disbursements.byYear}/>
 
                     <section id="economic-impact">
 
@@ -258,6 +259,19 @@ export const query = graphql`
           }
         }
       }
+    }
+    Federal_Disbursements:allFederalDisbursementsXlsxSheet1 {
+         byYear:group(field:Year){
+            Year:fieldValue
+                disbursements:edges {
+                    disbursement:node {
+                        Year
+                        Fund
+                        Source
+                        Disbursement
+                    }
+                }
+        }
     }
   }
 `;

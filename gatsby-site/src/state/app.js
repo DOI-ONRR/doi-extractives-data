@@ -12,8 +12,8 @@ export const glossaryTermSelected = (term, doOpen=true) => ({ type: GLOSSARY_TER
 // Define Reducers
 export default (state = initialState, action) => {
   const { type, payload } = action;
-  console.log("Action: "+ type);
-  console.log("Action state: ", action);
+  //console.log("Action: "+ type);
+  //console.log("Action state: ", action);
   switch (type) {
     case GLOSSARY_TERM_SELECTED:
       return {...state, glossaryTerm: payload, glossaryOpen: action.openGlossary}

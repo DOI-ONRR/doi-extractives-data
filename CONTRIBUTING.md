@@ -8,7 +8,7 @@ We welcome all friendly contributions, and we welcome your ideas about how to ma
     - [Troubleshooting](#troubleshooting)
     - [Data and database](#data-and-database)
     - [Deployment](#deployment)
-    - [Styleguide](#styleguide)
+    - [Styleguide and pattern library](#styleguide-and-pattern-library)
     - [Tests](#tests)
     - [Code style](#code-style)
 * [Process and workflow](#process-and-workflow)
@@ -175,10 +175,13 @@ If deploying the site to a production environment, make sure to minify the JS fi
 1. Re-run the web server: `bundle exec jekyll serve`
 
 
-### Styleguide and pattern library
+### Styleguide and Pattern Library
 
-_We are currently moving our [Fractal](https://fractal.build/) styleguide to
-a [Gatsby-based](https://www.gatsbyjs.org/) pattern library._
+_We are currently moving our [Fractal](https://fractal.build/) Styleguide to
+a [Gatsby-based](https://www.gatsbyjs.org/) Pattern Library._
+
+Any new components should be implemented in the Pattern Library. The Fractal
+Styleguide should be considered read-only and removed once content is migrated.
 
 
 #### Fractal styleguide

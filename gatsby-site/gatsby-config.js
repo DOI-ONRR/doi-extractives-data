@@ -9,15 +9,13 @@ module.exports = {
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
 
   // This prefix is prepended to load all our related images, code, and pages.
-  //pathPrefix: `/gatsby-public`,
-  pathPrefix: `gatsby-explore-data-page/gatsby-public`,
+  pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-explore-data-page/gatsby-public`,
 
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
     version: 'v3.1.9'
   },
-
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',

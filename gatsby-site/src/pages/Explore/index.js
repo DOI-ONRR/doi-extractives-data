@@ -11,7 +11,7 @@ import NationalFederalProduction from 'components/locations/NationalFederalProdu
 import NationalRevenue from 'components/locations/NationalRevenue';
 import NationalGDP from 'components/locations/NationalGDP';
 import NationalJobs from 'components/locations/NationalJobs';
-import NationalDisbursements from 'components/locations/NationalDisbursements';
+import NationalDisbursements from 'components/organisms/sections/NationalDisbursements';
 
 import { withPrefix } from 'components/utils/temp-link';
 
@@ -59,7 +59,7 @@ const NAV_ITEMS = [
         subNavItems: [
             {
                 name: "by-fund",
-                title: "Disbursements by fund"
+                title: "Disbursements by recipient"
             }
         ]
     },

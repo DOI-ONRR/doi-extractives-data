@@ -24,6 +24,28 @@ const utils = {
 	            }, limit);
 	        }
 	    }
+	},
+	groupBy(data, group) {
+		let groups = {};
+
+		data.map((item, index) => {
+			let itemGroup = this.resolveByStringPath(group, item);
+			let list = groups[itemGroup];
+
+			if(list) {
+				list.push(item);
+			}
+			else {
+				groups[itemGroup] = [item];
+			}
+		});
+
+		return groups;
+	},
+	resolveByStringPath(path, obj) {
+	    return path.split('.').reduce(function(prev, curr) {
+	        return prev ? prev[curr] : undefined
+	    }, obj || self)
 	}
 }
 

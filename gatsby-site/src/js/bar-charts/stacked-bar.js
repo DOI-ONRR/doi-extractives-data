@@ -5,63 +5,88 @@ import utils from 'js/utils';
  **/
 const stackedBar = {
 	create(el, props, state) {
+		let self = this;
 
-		//console.log(state);
-		//console.log(props.keys);
-		//console.log(props.keysClassNames);
+		let svg = d3.select(el).append('svg')
+					.attr('height', props.height)
+					.attr('width', el.clientWidth);
 
-		let width = el.clientWidth;
-		let height = props.height;
-
-		let xScale = d3.scaleLinear().rangeRound([0, width]);
-
-		var svg = d3.select(el).append('svg')
-					.attr('height', height)
-					.attr('width', width);
-
-		var stack = d3.stack()
-			.keys(props.keys)
+		let stack = d3.stack()
+			.keys(Object.keys(state[0]))
 			.offset(d3.stackOffsetNone);
 
 		var series = stack(state);
 
-		//console.log(props.chartDataMaxValue);
-		//console.log(d3.max(series[series.length - 1], function(d) { console.log(d); return d[1]; }));
+		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
 
-		if(props.chartDataMaxValue){
-			xScale.domain([0, props.chartDataMaxValue]).nice();
+		if(props.maxValue){
+			xScale.domain([0, props.maxValue]).nice();
 		}
 		else{
 			xScale.domain([0, d3.max(series[series.length - 1], function(d) { console.log(d); return d[1]; }) ]).nice();
 		}
 
-		
-
-		var layer = svg.selectAll(".layer")
+		svg.selectAll("g")
 			.data(series)
 			.enter().append("g")
-			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); });
-
-		layer.selectAll("rect")
-			.data(function(d) { return d; })
-			.enter().append("rect")
-			.attr("x", function(d) { return xScale(d[0]); })
-			.attr("height","50px")
-			.attr("width", function(d) { return xScale(d[1]) - xScale(d[0]) });
+			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.append("rect")
+			.attr("x", (d) => { return xScale(d[0][0]); })
+			.attr("height", props.height)
+			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
 		      
 		// Redraw based on the new size whenever the browser window is resized.
-      	window.addEventListener("resize", utils.throttle(this.update.bind(this), 200));
+      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
 	},
 
-	update(el, state){
-		//console.log("Stacked Bar Update");
-		//var layers = stack(state);
+	update(el, props, state){
 
-		//console.log(layers[layers.length - 1]);
+		var svg = d3.select(el).select("svg");
+
+		let stack = d3.stack()
+			.keys(Object.keys(state[0]))
+			.offset(d3.stackOffsetNone);
+
+		var series = stack(state);
+
+		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
+
+
+		if(props.maxValue){
+			xScale.domain([0, props.maxValue]).nice();
+		}
+		else{
+			xScale.domain([0, d3.max(series[series.length - 1], function(d) { console.log(d); return d[1]; }) ]).nice();
+		}
+
+		let bars = svg.selectAll("g")
+					.data(series);
+
+		// Remove Bars that we dont need
+		bars.exit()
+			.remove("g");
+
+		// Add new Bars 
+		bars.enter().append("g")
+			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.append("rect")
+			.attr("x", (d) => { return xScale(d[0][0]); })
+			.attr("height", props.height)
+			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
+
+		// Update existing Bars 
+		bars.transition()
+			.duration(500)
+			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.select("rect")
+			.attr("x", (d) => { return xScale(d[0][0]); })
+			.attr("height", props.height)
+			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
+
 	},
 
 	destroy(el){
-		window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
 	},
 }
 

@@ -7,18 +7,14 @@ class StackedBar extends React.Component {
 
 	componentDidMount() {
 		stackedBar.create(ReactDOM.findDOMNode(this), 
-			{	height: '15px', 
-				keys: this.props.chartKeys, 
-				keysClassNames: this.props.keysClassNames,
-				keysOrder: this.props.keysOrder,
-				chartDataMaxValue: this.props.chartDataMaxValue
-			}, 
+			{	height: '15px', ...this.props }, 
 			this.props.chartData);
 	}
 
 	componentDidUpdate() {
-		//console.log("Component Did Update");
-		stackedBar.update(ReactDOM.findDOMNode(this), this.props.chartData);
+		stackedBar.update(ReactDOM.findDOMNode(this), 
+			{	height: '15px', ...this.props },
+			this.props.chartData);
 	}
 
 	componentWillUnmount() {

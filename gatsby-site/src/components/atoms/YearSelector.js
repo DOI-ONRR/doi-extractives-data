@@ -1,13 +1,16 @@
 import React from 'react';
 import { withPrefix } from 'components/utils/temp-link'
 
+import { connect } from 'react-redux';
+import { yearSelected as yearSelectedAction } from 'state/app';
+
 const YearSelector = (props) => {
 
     const selectClassNames = {className:"chart-selector "+props.classNames}
    
     function onChangeHandler(e) {
         e.stopPropagation();
-        console.log("Year Selected: ",e.target.value);
+        props.yearSelected(parseInt(e.target.value), props.scope);
     }
 
     return (
@@ -20,4 +23,7 @@ const YearSelector = (props) => {
 
 };
 
-export default YearSelector;
+export default connect(
+  state => ({}),
+  dispatch => ({ yearSelected: (year, scope) => dispatch(yearSelectedAction(year, scope)) }),
+)(YearSelector);

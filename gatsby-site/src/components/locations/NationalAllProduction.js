@@ -5,7 +5,7 @@ import slugify from 'slugify';
 import lazy from 'lazy.js';
 
 import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/selectors/YearSelector';
+import YearSelector from 'components/atoms/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';

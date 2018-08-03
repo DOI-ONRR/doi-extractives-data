@@ -21,16 +21,29 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.resolve(path.join(__dirname, `src/data`)),
+        name: `data`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         includePaths: [path.resolve(path.join(__dirname, 'src/sass'))],
       }
     },
     {
+      resolve: `gatsby-plugin-react-helmet`,
+    },
+    {
       resolve: `gatsby-transformer-react-docgen`,
     },
     {
       resolve: `gatsby-transformer-remark`,
+    },
+    {
+      resolve: `gatsby-transformer-yaml`,
     },
   ],
 }

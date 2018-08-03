@@ -1,5 +1,5 @@
 ---
-title: Colors
+title: "Color Palette: Primary"
 ---
 
 <color-directory></color-directory>

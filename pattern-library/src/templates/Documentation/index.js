@@ -11,6 +11,7 @@ import '../../../../public/css/main.css';
 
 // Components to allow rendering in markdown documents
 const documentationComponents = {
+  'color-directory': require('../../components/color-directory'),
   'color-swatch': require('../../components/color-swatch'),
 };
 

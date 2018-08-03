@@ -81,6 +81,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(graphql(`
             {
               allMarkdownRemark(
+                sort: { fields: [fields___componentId] }
                 filter: { fileAbsolutePath: { regex: "/README.md/" } }
               ) {
                 edges {
@@ -90,6 +91,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     }
                     fileAbsolutePath
                     html
+                    frontmatter {
+                      name
+                    }
                   }
                 }
               }
@@ -191,6 +195,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           graphql(`
             {
               allMarkdownRemark(
+                sort: { fields: [fileAbsolutePath] }
                 filter: { fileAbsolutePath: { regex: "/\/docs\//" } }
               ) {
                 edges {

@@ -9,7 +9,7 @@ module.exports = {
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
 
   // This prefix is prepended to load all our related images, code, and pages.
-  pathPrefix: `/preview/onrr/doi-extractives-data/gatsby-explore-data-page/gatsby-public`,
+  pathPrefix: `${baseurl}/gatsby-public`,
   //pathPrefix: `/gatsby-public`,
 
   siteMetadata: {

@@ -27,7 +27,7 @@
 		"release-patterns": "npm run setup-patterns && npm run build-patterns && npm run copy-patterns",
 		"setup-gatsby": "cd gatsby-site && npm install",
 		"build-gatsby": "cd gatsby-site && npm run build",
-		"release-gatsby": "npm run setup-gastby && npm run build-gatsby",
+		"release-gatsby": "npm run setup-gatsby && npm run build-gatsby",
 		"webpack": "webpack",
 		"update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
 		"js-dev-start": "rm -rf js/lib && npm run watch-webpack",

@@ -50,10 +50,13 @@ https://1rn7bf.axshare.com/#g=1&p=option_2
 - Take a look at this page and tell me what this site is about.
 - What do you think of the information that’s presented?
 - Is this information useful?
+- What is the production trend line telling you? (in option 1 and the monthly view of option 2)
+- What are the Sankey diagrams conveying to you? (in option 1)
 - How does this compare to the first Home page you saw?
 - Poke around and see if you can learn more about the site. (This will bring them to the left nav version of Explore Data.  If they do, probe into whether they noticed and if it helps them understand better.)
 * Switch to other concept and ask same questions.
 - Which of the three Home pages do you like better?
+- Is there another way that you would expect or prefer to see this data that we haven’t shown you?
 * Start with Explore Data B or D (alternate between participants).
 https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_
 https://ug2su1.axshare.com/#g=1&p=option_d__traffic_cop_page_

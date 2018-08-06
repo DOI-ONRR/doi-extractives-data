@@ -23,15 +23,12 @@ exports.onClientEntry = () => {
   const loader = global.___loader;
   if (!loader) return;
 
-  let pages = [
-    {"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404.json","path":"/404/"},
-    {"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": "/about/"},
-    {"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path":"/explore/"},
-    {"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404-html.json","path":"/404.html"},
-    {componentChunkName: "component---src-pages-about-index-js", layout: "layout---index", layoutComponentChunkName: "component---src-layouts-index-js", jsonName: "about.json", path: "/preview/onrr/doi-extractives-data/gatsby-explore-data-page/about/"},
-    {componentChunkName: "component---src-pages-explore-index-js", layout: "layout---index", layoutComponentChunkName: "component---src-layouts-index-js", jsonName: "explore.json", path: "/preview/onrr/doi-extractives-data/gatsby-explore-data-page/explore/"}
+  let path = window.location.pathname;
 
-  ];
-
-  loader.addPagesArray(pages);
+  if(path.includes("explore")) {
+    loader.addPagesArray([{"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path": path}]);
+  }
+  else if(path.includes("about")){
+    loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
+  }
 }

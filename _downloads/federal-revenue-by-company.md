@@ -32,7 +32,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset provides natural resource revenue data by company for calendar years 2013-2016. It includes revenues by phase for those companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is not available at the state level.
+description: This dataset provides natural resource revenue data by company for calendar years 2013-2016. It includes revenues by phase and commodity for those companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
 tag:
 - Data
 - Downloads

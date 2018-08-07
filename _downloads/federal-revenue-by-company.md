@@ -32,7 +32,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset provides natural resource revenues data by company for calendar years 2013-2015. This new dataset represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This dataset will be updated in the first quarter of the calendar year.
+description: This dataset provides natural resource revenue data by company for calendar years 2013-2016. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
 tag:
 - Data
 - Downloads
@@ -44,7 +44,7 @@ tag:
 ---
 
 
-> This dataset provides natural resource revenues data by company for calendar years 2013-2016. This new dataset adds to the national dialogue on natural resource extraction. This dataset will be updated in the first quarter of the calendar year.
+> {{ page.description }}
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
@@ -57,7 +57,7 @@ We also have [notes on this data](https://github.com/onrr/doi-extractives-data/w
 
 ## Scope
 
-This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.
+This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.
 
 ### Why is there a line in the data called 'companies below threshold'?
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { withPrefix } from 'components/utils/temp-link'
 
 import { connect } from 'react-redux';
-import { yearSelected as yearSelectedAction } from 'state/app';
 
 const YearSelector = (props) => {
 
@@ -10,7 +9,7 @@ const YearSelector = (props) => {
    
     function onChangeHandler(e) {
         e.stopPropagation();
-        props.yearSelected(parseInt(e.target.value), props.scope);
+        props.selectYear(parseInt(e.target.value), props.selectYearAction);
     }
 
     return (
@@ -25,5 +24,5 @@ const YearSelector = (props) => {
 
 export default connect(
   state => ({}),
-  dispatch => ({ yearSelected: (year, scope) => dispatch(yearSelectedAction(year, scope)) }),
+  dispatch => ({ selectYear: (year, action) => dispatch(action(year)) }),
 )(YearSelector);

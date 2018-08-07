@@ -1,7 +1,10 @@
+'use strict';
+
 import React from 'react';
 import Link from 'components/utils/temp-link';
 
 import { connect } from 'react-redux';
+import { selectYear } from 'store/reducers/disbursements';
 
 import slugify from 'slugify';
 import lazy from 'lazy.js';
@@ -13,10 +16,6 @@ import StickyHeader from 'components/layouts/StickyHeader';
 import YearSelector from 'components/atoms/YearSelector';
 import StackedBarSingleChartTableRow from 'components/molecules/StackedBarSingleChartTableRow';
 
-import FUND_NAMES from '../../../../static/data/fund_names.yml';
-
-
-const KEYS_FOR_DISBURSEMENTS_ORDER = ['Onshore','GOMESA','Offshore','8(g)'];
 const KEYS_FOR_DISBURSEMENTS_CLASSNAMES = {'Onshore': 'stacked-bar-color-0',
 										'GOMESA': 'stacked-bar-color-1',
 										'Offshore': 'stacked-bar-color-3',
@@ -34,30 +33,21 @@ const YEAR_SELECTOR_SCOPE = "federal-disbursements";
 class NationalDisbursements extends React.Component{
 
 	state = {
-		year: this.props.defaultYear,
-		disbursementsByFundForSelectedYear: this.getDisbursementsByFundForYear(this.props.defaultYear)
+		year: this.props.year,
+		years: this.props.years,
+		disbursements: this.props.disbursements
 	}
 
 	componentWillReceiveProps(nextProps) {
-		if(nextProps.yearScope.scope === YEAR_SELECTOR_SCOPE && nextProps.yearScope.year !== this.state.year) {
-
-			this.setState({	year: nextProps.yearScope.year, 
-							disbursementsByFundForSelectedYear: this.getDisbursementsByFundForYear(nextProps.yearScope.year)
-						});
+		if(nextProps.year !== this.state.year) {
+			this.setState({	year: nextProps.year, 
+							years: nextProps.years,
+							disbursements: nextProps.disbursements});
 		}
 	}
 
-	getDisbursementsByFundForYear(year){
-		let disbursementsForSelectedYear = this.props.allDisbursements.find((disbursementsByYear) => parseInt(disbursementsByYear.Year) === year);
-		
-		let disbursementsByFund = utils.groupBy(disbursementsForSelectedYear.disbursements, "disbursement.Fund");
-
-		setYearAndFundTotals(disbursementsByFund);
-
-		return (disbursementsByFund);
-	}
-
 	render(){
+		let disbursementsForYear = this.state.disbursements[this.state.year];
 
 		return (
 			<section id="federal-disbursements">
@@ -65,9 +55,9 @@ class NationalDisbursements extends React.Component{
 
 				<p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
 					
-					{this.state.disbursementsByFundForSelectedYear && 
+					{((this.state.disbursements !== undefined) && (disbursementsForYear !== undefined)) &&
 						<strong>
-							{" "}In {this.state.year} , ONRR disbursed a total of {utils.formatToDollarInt(this.state.disbursementsByFundForSelectedYear.yearTotal)}
+							{" "}In {this.state.year} , ONRR disbursed a total of {utils.formatToDollarInt(disbursementsForYear.total)}
 						</strong>
 					}
 				</p>
@@ -78,7 +68,7 @@ class NationalDisbursements extends React.Component{
 				</p>
 
 	            <StickyHeader headerId="by-fund" headerText='Disbursements by recipient'>
-	                <YearSelector years={[2017,2016,2015,2014]} classNames="flex-row-icon" scope={YEAR_SELECTOR_SCOPE} />
+	                <YearSelector years={this.state.years} classNames="flex-row-icon" selectYearAction={selectYear} />
 	            </StickyHeader>
 
 	            <table className="article_table">
@@ -89,40 +79,24 @@ class NationalDisbursements extends React.Component{
 		            	</tr>
 	            	</thead>
 	            	<tbody>
-	            	{
-	            		lazy(this.state.disbursementsByFundForSelectedYear).toArray().map((fundDisbursements, index) => {
+	            	{disbursementsForYear &&
+	            		disbursementsForYear.disbursements.map((fundDisbursements, index ) => {
 
-	            			if(FUND_NAMES[fundDisbursements[0]]){
-		            			let fundName = FUND_NAMES[fundDisbursements[0]].name;
-		            			let fundDescription = FUND_NAMES[fundDisbursements[0]].description;
-
-		            			let fundLink;
-								
-								if(fundDisbursements[0]=== "Land & Water Conservation") {
-									fundLink = <Link to="/how-it-works/">How this fund works</Link>
-								}
-								else if(fundDisbursements[0] === "Historic Preservation") {
-									fundLink = <Link to="/how-it-works/">How this fund works</Link>
-								}
-
-								let fundData = {};
-
-								fundDisbursements[1].map((fundDisbursment, index) => {
-									fundData[fundDisbursment.disbursement.Source] = fundDisbursment.disbursement.Disbursement;
-								})
-
+	            			for(let fundKey in fundDisbursements) {
 			            		return (<StackedBarSingleChartTableRow 
-			            					key={index+fundName} 
-			            					name={fundName}
-			            					description={fundDescription} 
-			            					descriptionLink={fundLink}
+			            					key={index+fundKey} 
+			            					year={this.state.year}
+			            					name={fundDisbursements[fundKey].name}
+			            					description={fundDisbursements[fundKey].description} 
+			            					descriptionLink={fundDisbursements[fundKey].link}
 			            					keysClassNames={KEYS_FOR_DISBURSEMENTS_CLASSNAMES}
-			            					keysOrder={KEYS_FOR_DISBURSEMENTS_ORDER}
 			            					keysLegendDisplay = {KEYS_FOR_DISBURSEMENTS_LEGEND}
-			            					chartData={[fundData]}
-			            					maxValue={this.state.disbursementsByFundForSelectedYear.yearFundMaxTotal}/>);
+			            					chartData={fundDisbursements[fundKey].disbursements}
+			            					maxValue={disbursementsForYear.highestFundValue}/>);
 	            			}
+	
 	            		})
+
 
 	            	}
 		            </tbody>
@@ -136,26 +110,7 @@ class NationalDisbursements extends React.Component{
 }
 
 export default connect(
-  state => ({ defaultYear: state.app.defaultYear, yearScope: state.app.yearScope }),
-  dispatch => ({}),
+  state => ({ 	year: state.disbursements.year,
+  				years: state.disbursements.years,
+  				disbursements: state.disbursements.disbursements})
 )(NationalDisbursements);
-
-function setYearAndFundTotals(disbursements){
-	let yearTotal = 0;
-	let yearFundMaxTotal = 0;
-
-	for(let fundKey in disbursements) {
-		disbursements[fundKey].fundTotal = 0;
-
-		disbursements[fundKey].map((fundData, index) => {
-			fundData.disbursement.Disbursement = Math.round(fundData.disbursement.Disbursement);
-			disbursements[fundKey].fundTotal += fundData.disbursement.Disbursement;
-		});
-
-		yearTotal += disbursements[fundKey].fundTotal;
-		yearFundMaxTotal = (yearFundMaxTotal > disbursements[fundKey].fundTotal)? yearFundMaxTotal : disbursements[fundKey].fundTotal;
-	}
-
-	disbursements.yearTotal = yearTotal;
-	disbursements.yearFundMaxTotal = yearFundMaxTotal;
-}

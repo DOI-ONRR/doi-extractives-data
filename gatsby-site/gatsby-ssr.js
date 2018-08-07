@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { renderToString } from 'react-dom/server';
-import createStore from './src/state/createStore';
+import createStore from './src/store/create-store';
 
 exports.replaceRenderer = ({
   bodyComponent,
@@ -15,5 +15,5 @@ exports.replaceRenderer = ({
     <Provider store={store}>{bodyComponent}</Provider>
   );
 
-  //replaceBodyHTMLString(html);
+  replaceBodyHTMLString(html);
 };

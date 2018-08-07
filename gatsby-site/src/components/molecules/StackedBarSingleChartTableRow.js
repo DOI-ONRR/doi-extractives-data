@@ -9,18 +9,26 @@ import Link from 'components/utils/temp-link';
 class StackedBarSingleChartTableRow extends React.Component {
 
 	render() {
-
 		return(
 			<tr>
 				<td className="bureau">
 					<h4 className="chart-title" style={{'margin':'0px'}}>{this.props.name}</h4>
 					{this.props.description}<br/>
-					{this.props.descriptionLink}
+					{this.props.descriptionLink &&
+						<p><Link to={this.props.descriptionLink.to}>{this.props.descriptionLink.name}</Link></p>
+					}
+					
 				</td>
-				<td>
-					<StackedBar {...this.props} />
-					<ChartLegend {...this.props} className="stacked-bar-legend" />
-				</td>
+				{(this.props.chartData !== undefined && this.props.chartData.length > 0) ?
+					<td>
+						<StackedBar {...this.props} />
+						<ChartLegend {...this.props} className="stacked-bar-legend" />
+					</td>
+					:
+					<td>
+						There is no data about disbursements to {this.props.name} in {this.props.year}.
+					</td>
+				}
 			</tr>
 		);
 	}

@@ -10,7 +10,6 @@ module.exports = {
 
   // This prefix is prepended to load all our related images, code, and pages.
   pathPrefix: `${baseurl}/gatsby-public`,
-  //pathPrefix: `/gatsby-public`,
 
   siteMetadata: {
     title: 'Natural Resources Revenue Data',

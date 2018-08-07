@@ -40,7 +40,6 @@ const stackedBar = {
 	},
 
 	update(el, props, state){
-
 		var svg = d3.select(el).select("svg");
 
 		let stack = d3.stack()

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { connect } from 'react-redux';
+import { hydateDisbursements as hydateDisbursementsAction } from 'store/reducers/disbursements';
+
 import NavList from 'components/layouts/NavList';
 import MobileNav from 'components/layouts/MobileNav';
 import StateMap from 'components/maps/StateMap';
@@ -85,120 +88,133 @@ const NAV_ITEMS = [
 
 class ExplorePage extends React.Component {
 
-  componentDidMount() {
-    const script1 = document.createElement("script");
+    constructor(props) {
+        super(props);
 
-    script1.src = withPrefix("/public/js/main.min.js");
-    script1.async = false;
+        this.hydrate();
+    }
 
-    document.body.appendChild(script1);
+    hydrate(){
+        this.props.hydateDisbursements(this.props.data.Federal_Disbursements.byYear);
+    }
 
-    const script2 = document.createElement("script");
+    componentDidMount() {
+        const script1 = document.createElement("script");
 
-    script2.src = withPrefix("/public/js/state-pages.min.js");
-    script2.async = false;
+        script1.src = withPrefix("/public/js/main.min.js");
+        script1.async = false;
 
-    document.body.appendChild(script2);
-  }
+        document.body.appendChild(script1);
 
-  render () {
-    
-    return (
+        const script2 = document.createElement("script");
 
-        <main id="national" className="layout-state-pages national-page">
-            <section  id="title" className="slab-delta">
-                <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
-                    <div className="container-left-8 ribbon-hero ribbon-hero-column">
-                        <h1>Explore data</h1>
-                        <figure>
-                            <StateMap 
-                                ownership={true} 
-                                no_outline={true} 
-                                offshore_regions={this.props.data.offshore_data.offshore_regions} 
-                                states={this.props.data.states_data.states}/>
-                        </figure>
-                        <aside className="wide">
-                            <FederalLandOwnershipLegend land={true} />
-                        </aside>
+        script2.src = withPrefix("/public/js/state-pages.min.js");
+        script2.async = false;
+
+        document.body.appendChild(script2);
+    }
+
+    render () {
+        
+        return (
+
+            <main id="national" className="layout-state-pages national-page">
+                <section  id="title" className="slab-delta">
+                    <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
+                        <div className="container-left-8 ribbon-hero ribbon-hero-column">
+                            <h1>Explore data</h1>
+                            <figure>
+                                <StateMap 
+                                    ownership={true} 
+                                    no_outline={true} 
+                                    offshore_regions={this.props.data.offshore_data.offshore_regions} 
+                                    states={this.props.data.states_data.states}/>
+                            </figure>
+                            <aside className="wide">
+                                <FederalLandOwnershipLegend land={true} />
+                            </aside>
+                        </div>
+                        <div className="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
+                            <figure className="ribbon-card-top">
+                                <h2 className="ribbon-card-top-text-header">Land ownership</h2>
+                                <p>
+                                    Natural resource ownership, governance, and revenues are closely tied to land ownership. 
+                                    Federal land represents {this.props.data.land_stats_data.states[0].state_data.federal_percent}%
+                                    of all U.S. land, mostly concentrated in western states.
+                                </p>
+                                <p>
+                                    Data on this site covers production, revenue, and disbursements for <GlossaryTerm termKey="federal land">federal lands and waters
+                                    </GlossaryTerm>, as well as nationwide production and economic impact.
+                                </p>
+                            </figure>
+                            <figcaption className="ribbon-card-bottom state_pages-select">
+                                <label htmlFor="location-selector" className="ribbon-card-top-text-header">Explore state or offshore data:</label>
+                                <LocationSelector 
+                                    default='Choose location' 
+                                    states={this.props.data.states_data.states}
+                                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+                            </figcaption>
+                        </div>
                     </div>
-                    <div className="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
-                        <figure className="ribbon-card-top">
-                            <h2 className="ribbon-card-top-text-header">Land ownership</h2>
+                </section>
+                <section className="container-page-wrapper">
+                    <div className="container-left-9">
+
+                        <MobileNav navItems={NAV_ITEMS} navTitle={NAV_TITLE} />
+
+                        <section id="production">
+                            <h2 className="state-page-overview">Production</h2>
                             <p>
-                                Natural resource ownership, governance, and revenues are closely tied to land ownership. 
-                                Federal land represents {this.props.data.land_stats_data.states[0].state_data.federal_percent}%
-                                of all U.S. land, mostly concentrated in western states.
+                            The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production.
                             </p>
-                            <p>
-                                Data on this site covers production, revenue, and disbursements for <GlossaryTerm termKey="federal land">federal lands and waters
-                                </GlossaryTerm>, as well as nationwide production and economic impact.
-                            </p>
-                        </figure>
-                        <figcaption className="ribbon-card-bottom state_pages-select">
-                            <label htmlFor="location-selector" className="ribbon-card-top-text-header">Explore state or offshore data:</label>
-                            <LocationSelector 
-                                default='Choose location' 
-                                states={this.props.data.states_data.states}
-                                offshore_regions={this.props.data.offshore_data.offshore_regions}/>
-                        </figcaption>
+
+                            <NationalAllProduction allProducts={this.props.data.US_Production.byProduct} />
+
+                            <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
+
+                        </section>
+
+                        <NationalRevenue 
+                            stateId={PAGE_ID} 
+                            stateName={PAGE_TITLE}
+                            isNationalPage={NATIONAL_PAGE} />
+
+                        <NationalDisbursements />
+
+                        <section id="economic-impact">
+
+                            <h2>Economic impact</h2>
+
+                            <p>This data covers <GlossaryTerm termKey="Gross domestic product (GDP)">gross domestic product</GlossaryTerm> and two different types of jobs data.</p>
+
+                            <NationalGDP />
+
+                            <NationalJobs stateId={PAGE_ID} />
+
+                        </section>
+
                     </div>
-                </div>
-            </section>
-            <section className="container-page-wrapper">
-                <div className="container-left-9">
 
-                    <MobileNav navItems={NAV_ITEMS} navTitle={NAV_TITLE} />
-
-                    <section id="production">
-                        <h2 className="state-page-overview">Production</h2>
-                        <p>
-                        The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production.
-                        </p>
-
-                        <NationalAllProduction allProducts={this.props.data.US_Production.byProduct} />
-
-                        <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
-
-                    </section>
-
-                    <NationalRevenue 
-                        stateId={PAGE_ID} 
-                        stateName={PAGE_TITLE}
-                        isNationalPage={NATIONAL_PAGE} />
-
-                    <NationalDisbursements allDisbursements={this.props.data.Federal_Disbursements.byYear}/>
-
-                    <section id="economic-impact">
-
-                        <h2>Economic impact</h2>
-
-                        <p>This data covers <GlossaryTerm termKey="Gross domestic product (GDP)">gross domestic product</GlossaryTerm> and two different types of jobs data.</p>
-
-                        <NationalGDP />
-
-                        <NationalJobs stateId={PAGE_ID} />
-
-                    </section>
-
-                </div>
-
-                <div className="container-right-3 sticky sticky_nav sticky_nav-padded">
-                    <h3 className="state-page-nav-title container">
-                        <div className="nav-title">National data</div>
-                    </h3>
-                    <nav>
-                        <NavList navItems={NAV_ITEMS} />
-                    </nav>
-                </div>
+                    <div className="container-right-3 sticky sticky_nav sticky_nav-padded">
+                        <h3 className="state-page-nav-title container">
+                            <div className="nav-title">National data</div>
+                        </h3>
+                        <nav>
+                            <NavList navItems={NAV_ITEMS} />
+                        </nav>
+                    </div>
 
 
-            </section>
-        </main>
-    );
-  }
+                </section>
+            </main>
+        );
+    }
 }
 
-export default ExplorePage
+export default connect(
+  state => ({}),
+  dispatch => ({ hydateDisbursements: (disbursements) => dispatch(hydateDisbursementsAction(disbursements)) }),
+)(ExplorePage);
 
 export const query = graphql`
   query StateMapsQuery {

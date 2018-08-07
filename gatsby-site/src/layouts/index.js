@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {Provider} from 'react-redux';
 
-import createStore from 'state/createStore';
+import createStore from 'store/create-store';
 
 import Banner from 'components/layouts/banner';
 import Header from 'components/layouts/header';

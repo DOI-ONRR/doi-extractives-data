@@ -26,5 +26,5 @@ export function withPrefix(path) {
 }
 export function withPrefixSVG(path) {
 
-  return (__PATH_PREFIX__+path);
+  return (process.env.NODE_ENV === `production`)? __PATH_PREFIX__+path : withPrefix(path);
 }

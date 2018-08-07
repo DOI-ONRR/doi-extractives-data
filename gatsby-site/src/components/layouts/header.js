@@ -5,8 +5,7 @@ import Search from 'components/utils/search';
 
 import NRRDLogo from "img/NRRD-logo.svg";
 
-import { glossaryTermSelected as glossaryTermSelectedAction } from 'state/app';
-
+import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/app';
 
 const Header = (props) => {
   

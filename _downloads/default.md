@@ -6,6 +6,13 @@ title_display: 'Download Data & Documentation'
 nav_items:
   - name: introduction
     title: Top
+  - name: production
+    title: Production
+    subnav_items:
+      - name: all-lands-and-waters
+        title: All lands and waters
+      - name: federal-lands-and-waters
+        title: Federal lands and waters
   - name: revenue
     title: Revenue
     subnav_items:
@@ -17,15 +24,8 @@ nav_items:
         title: Reconciliation
       - name: corporate-income-tax
         title: Corporate income tax
-      - name: disbursements
-        title: Disbursements
-  - name: production
-    title: Production
-    subnav_items:
-      - name: all-lands-and-waters
-        title: All lands and waters
-      - name: federal-lands-and-waters
-        title: Federal lands and waters
+  - name: disbursements
+    title: Disbursements
   - name: economic-impact
     title: Economic Impact
     subnav_items:
@@ -48,6 +48,30 @@ tag:
 > We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 
 {% include selector.html %}
+
+
+## Production
+
+--------------------------------------------------------------------------------
+
+<ul class="list-sections list-unstyled">
+    <li class="downloads-download_links">
+    <a href="http://www.eia.gov/" class="link-no_under"><h3 id="all-lands-and-waters">All lands and waters</h3></a>
+    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Administration</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
+    <a href="http://www.eia.gov/">
+      Go to EIA &#8594;
+    </a>
+  </li>
+
+  <li class="downloads-download_links">
+    <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
+    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2008-2017.</p>
+    <a href="{{site.baseurl}}/downloads/federal-production/">
+      {% include data_and_docs.html %}
+    </a>
+  </li>
+
+</ul>
 
 ## Revenue
 --------------------------------------------------------------------------------
@@ -85,6 +109,13 @@ tag:
     </a>
   </li>
 
+</ul>
+
+## Disbursements
+
+--------------------------------------------------------------------------------
+
+<ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/disbursements/" class="link-no_under"><h3 id="disbursements">Disbursements</h3></a>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
@@ -92,30 +123,6 @@ tag:
       {% include data_and_docs.html %}
     </a>
   </li>
-
-</ul>
-
-## Production
-
---------------------------------------------------------------------------------
-
-<ul class="list-sections list-unstyled">
-    <li class="downloads-download_links">
-    <a href="http://www.eia.gov/" class="link-no_under"><h3 id="all-lands-and-waters">All lands and waters</h3></a>
-    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Administration</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
-    <a href="http://www.eia.gov/">
-      Go to EIA &#8594;
-    </a>
-  </li>
-
-  <li class="downloads-download_links">
-    <a href="{{site.baseurl}}/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
-    <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2008-2017.</p>
-    <a href="{{site.baseurl}}/downloads/federal-production/">
-      {% include data_and_docs.html %}
-    </a>
-  </li>
-
 </ul>
 
 ## Economic impact

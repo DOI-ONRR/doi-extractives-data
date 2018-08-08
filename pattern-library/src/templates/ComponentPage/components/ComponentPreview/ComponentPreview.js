@@ -4,6 +4,7 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live"
 
 import * as components from "../../../../../.cache/components"
 
+import styles from './styles.module.scss';
 import "./prism-theme.css"
 
 const editorStyles = {
@@ -22,7 +23,7 @@ class ComponentPreview extends React.Component {
       >
         <LiveEditor style={editorStyles} />
         <LiveError />
-        <LivePreview />
+        <LivePreview className={styles['react-live-preview']} />
       </LiveProvider>
     )
   }

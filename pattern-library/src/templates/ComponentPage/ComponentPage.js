@@ -2,10 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import GatsbyLink from "gatsby-link"
 import '../../../../public/css/main.css';
-import '../../sass/preview.scss';
 
+import styles from './styles.module.scss';
 import Example from './components/Example';
-import Layout from '../Layout';
 
 function yesno(bool) {
   return !!bool ? 'yes' : 'no';
@@ -13,13 +12,15 @@ function yesno(bool) {
 
 class ComponentPage extends React.Component {
   render() {
-    const { displayName, props, html, description } = this.props.pathContext
+    const { displayName, props, html, childComponentDescription } = this.props.pathContext
+    const description = childComponentDescription ? childComponentDescription.childMarkdownRemark.html : '';
 
     return (
-      <Layout>
+      <div className={styles.componentPage}>
         <h1>{displayName}</h1>
-        { description && <p>{description.text}</p> }
+        <Example html={html} />
         <h2>Props/Methods</h2>
+        <div dangerouslySetInnerHTML={{__html: description}} />
         <table>
           <thead>
             <tr>
@@ -31,22 +32,21 @@ class ComponentPage extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {props.map(({ name, defaultValue, description, type, required }, index) => (
-              <tr key={index}>
-                <td>{name}</td>
-                { description && <td>{description.text}</td> }
-                <td>{type.name}</td>
-                <td>{yesno(required)}</td>
-                <td>{defaultValue ? <pre>{defaultValue.value}</pre> : <em>N/A</em>}</td>
-              </tr>
-            ))}
+            {props.map(({ name, defaultValue, childComponentDescription, type, required }, index) => {
+              const description = childComponentDescription ? childComponentDescription.childMarkdownRemark.html : '';
+              return (
+                <tr key={index}>
+                  <td>{name}</td>
+                  <td dangerouslySetInnerHTML={{__html: description}} />
+                  <td>{type.name}</td>
+                  <td>{yesno(required)}</td>
+                  <td>{defaultValue ? <pre>{defaultValue.value}</pre> : <em>N/A</em>}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
-        <Example html={html} />
-        <p>
-          <GatsbyLink to="/components/">[index]</GatsbyLink>
-        </p>
-      </Layout>
+      </div>
     )
   }
 }
@@ -56,8 +56,10 @@ ComponentPage.propTypes = {
     displayName: PropTypes.string.isRequired,
     props: PropTypes.array.isRequired,
     html: PropTypes.string.isRequired,
-    description: PropTypes.shape({
-      text: PropTypes.string.isRequired,
+    childComponentDescription: PropTypes.shape({
+      childMarkdownRemark: PropTypes.shape({
+        html: PropTypes.string.isRequired,
+      }),
     }),
   }).isRequired,
 }

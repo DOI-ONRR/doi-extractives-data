@@ -1,0 +1,6 @@
+@import 'variables';
+
+// Third-party react-live overrides
+.react-live-preview {
+  margin: $spacing-base 0; // More space for breathing room
+}

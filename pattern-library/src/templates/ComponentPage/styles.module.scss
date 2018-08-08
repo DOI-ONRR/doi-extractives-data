@@ -1,0 +1,10 @@
+.componentPage {
+  // Markdown comments are created in a `p` tag. Override their styles when
+  // they occur in a table.
+  td p {
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+}

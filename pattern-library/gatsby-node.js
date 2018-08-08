@@ -1,42 +1,76 @@
 const path = require(`path`)
 const fs = require(`fs`)
 const appRootDir = require(`app-root-dir`).get()
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const componentPageTemplate = path.resolve(
-  `src/templates/ComponentPage/index.js`
-)
-const tableOfContentsTemplate = path.resolve(`src/templates/TOC/index.js`)
+const componentPageTemplate = path.resolve(`src/templates/ComponentPage/index.js`);
+const docPageTemplate = path.resolve(`src/templates/Documentation/index.js`);
+
+// Adds a slug for documentation pages
+function processDocNode({ node, getNode, boundActionCreators }) {
+  if (node.internal.type !== `MarkdownRemark`) {
+    return;
+  }
+
+  // Grab the parent node to determine filesystem information
+  const fileNode = getNode(node.parent);
+
+  if (fileNode.internal.type !== 'File') {
+    return;
+  }
+
+  // Ensure this node is coming from our docs source
+  if (fileNode.sourceInstanceName !== 'docs') {
+    return;
+  }
+
+  // Create a slug from the filename removing the ordering prefix
+  const slug = `${fileNode.name.replace(/^\d+-/,'')}`;
+
+  const { createNodeField } = boundActionCreators;
+  createNodeField({
+    node,
+    name: 'slug',
+    value: slug,
+  });
+}
 
 // Add a pattern-library specific componentId to make it easier to match up
 // markdown README's with the docgen nodes from JS files.
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+function processComponentNode({ node, getNode, boundActionCreators }) {
   const { createNodeField } = boundActionCreators;
 
-  if (node.internal.type === 'MarkdownRemark' ||
-     node.internal.type === 'ComponentMetadata') {
-
-    // Grab the parent node to determine filesystem information
-    const fileNode = getNode(node.parent);
-
-    if (fileNode.internal.type !== 'File') {
-      return;
-    }
-
-    // Ensure this node is coming from our components source
-    if (fileNode.sourceInstanceName !== 'components') {
-      return;
-    }
-
-    // Use the absolute path to the component's directory as the Id.
-    const componentId = fileNode.dir;
-
-    // Add `fields.componentId` to this node
-    createNodeField({
-      node,
-      name: 'componentId',
-      value: componentId,
-    });
+  if (node.internal.type !== 'MarkdownRemark' &&
+     node.internal.type !== 'ComponentMetadata') {
+    return;
   }
+
+  // Grab the parent node to determine filesystem information
+  const fileNode = getNode(node.parent);
+
+  if (fileNode.internal.type !== 'File') {
+    return;
+  }
+
+  // Ensure this node is coming from our components source
+  if (fileNode.sourceInstanceName !== 'components') {
+    return;
+  }
+
+  // Use the absolute path to the component's directory as the Id.
+  const componentId = fileNode.dir;
+
+  // Add `fields.componentId` to this node
+  createNodeField({
+    node,
+    name: 'componentId',
+    value: componentId,
+  });
+}
+
+exports.onCreateNode = (arg) => {
+  processDocNode(arg);
+  processComponentNode(arg);
 };
 
 
@@ -47,6 +81,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(graphql(`
             {
               allMarkdownRemark(
+                sort: { fields: [fields___componentId] }
                 filter: { fileAbsolutePath: { regex: "/README.md/" } }
               ) {
                 edges {
@@ -56,6 +91,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     }
                     fileAbsolutePath
                     html
+                    frontmatter {
+                      name
+                    }
                   }
                 }
               }
@@ -67,11 +105,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     }
                     id
                     displayName
-                    description {
-                      text
+                    childComponentDescription {
+                      childMarkdownRemark {
+                        html
+                      }
                     }
                     props {
                       name
+                      required
                       defaultValue {
                         value
                       }
@@ -80,10 +121,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         raw
                         name
                       }
-                      description {
-                        text
+                      childComponentDescription {
+                        childMarkdownRemark {
+                          html
+                        }
                       }
-                      required
                     }
                   }
                 }
@@ -104,12 +146,21 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 .map(edge => edge.node)
                 .find(node => node.fields.componentId === componentId);
 
+            // TODO we shouldn't require the componentMetadataNode to exist,
+            // but that's the way this was orignally written. This should just
+            // be a warning, not an error.
+            if (!componentMetadataNode) {
+              throw new Error(`Could not find metadata for ${componentId}. You may have a syntax
+                               error in the JavaScript preventing parsing.`);
+            }
+
             return Object.assign({}, componentMetadataNode, {
               url: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
               html: markdownEdge.node.html,
             });
           });
 
+          // TODO the components should be queryable from graphql
           const exportFileContents =
             allComponents
               .reduce((accumulator, { id, displayName }) => {
@@ -138,14 +189,54 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               context,
             })
           })
+        })
+        // Setup the doc pages
+        .then(() =>
+          graphql(`
+            {
+              allMarkdownRemark(
+                sort: { fields: [fileAbsolutePath] }
+                filter: { fileAbsolutePath: { regex: "/\/docs\//" } }
+              ) {
+                edges {
+                  node {
+                    fields {
+                      slug
+                    }
+                    htmlAst
+                    frontmatter {
+                      title
+                      nav_title
+                      status
+                    }
+                  }
+                }
+              }
+            }
+        `))
+        .then((result) => {
+          if (result.errors) {
+            throw new Error(result.errors);
+          }
 
-          createPage({
-            path: `/components/`,
-            component: tableOfContentsTemplate,
-            context: {
-              allComponents,
-            },
-          })
+          result.data.allMarkdownRemark.edges.forEach((edge) => {
+            const { htmlAst } = edge.node;
+            const { nav_title, title, status } = edge.node.frontmatter;
+            const { slug } = edge.node.fields;
+
+            // Index page serves from /, others under /docs
+            const url = slug === 'index' ? `/` : `/docs/${slug}/`;
+            createPage({
+              path: url,
+              component: docPageTemplate,
+              context: {
+                nav_title,
+                title,
+                status,
+                htmlAst,
+              },
+            });
+          });
         })
         .catch(err => {
           console.log(err)
@@ -153,4 +244,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
     )
   })
+
 }

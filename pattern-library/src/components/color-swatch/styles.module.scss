@@ -1,0 +1,44 @@
+.swatch {
+  float: left;
+  margin: 0.5rem 0.2rem;
+  width: 10rem;
+}
+
+.swatchColor {
+  height: 9rem;
+  width: 9rem;
+  margin-bottom: 0.2rem;
+}
+
+.iconOk {
+  content: url('../../../../public/img/icons/icon-check.svg');
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  vertical-align: bottom;
+}
+
+.iconNo {
+  content: url('../../../../public/img/icons/icon-no.svg');
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  vertical-align: bottom;
+}
+
+.labelPrimary {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5c737f;
+}
+
+.labelSecondary {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #5c737f;
+}

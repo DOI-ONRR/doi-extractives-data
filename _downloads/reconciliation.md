@@ -17,6 +17,8 @@ tag:
 
 > As a part of the U.S. implementation of the {{ "EITI Standard" | term }}, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reported what it received. These figures were compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 
+{% include archive-banner.html %}
+
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">

@@ -96,11 +96,11 @@ tag:
 <!-- USEITI archive -->
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3>Reconciliation</h3></a>
+    {% include archive-banner.html %}
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
     <a href="{{site.baseurl}}/downloads/reconciliation/">
       {% include data_and_docs.html %}
     </a>
-      {% include archive-banner.html %}
   </li>
 
   <li class="downloads-download_links">

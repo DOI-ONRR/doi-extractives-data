@@ -27,7 +27,10 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
+archive: yes
 ---
+
+{% include archive-banner.html %}
 
 > Kern County is situated in the southernmost region of the San Joaquin Valley, in California’s interior. While Kern County has significant deposits of many resources — including natural gas, geothermal steam, wind, gold, and other minerals — oil in particular has shaped Kern County’s local economy for over a century.
 

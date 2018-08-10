@@ -29,7 +29,10 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
+archive: yes
 ---
+
+{% include archive-banner.html %}
 
 > The U.S. possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades.[^1] However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
 >

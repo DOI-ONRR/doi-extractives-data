@@ -48,6 +48,13 @@ all_production:
       value: 515054.21
       rank: 5
       percent: 2.91
+  '2017':
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 171440000
+      rank: 5
+      percent: 5.01
 federal_production:
   '2008':
     - product: Langbeinite (tons)

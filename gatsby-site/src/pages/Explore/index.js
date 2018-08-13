@@ -1,6 +1,7 @@
 import React from 'react';
-
+import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
+
 import { hydateDisbursements as hydateDisbursementsAction } from 'store/reducers/disbursements';
 
 import NavList from 'components/layouts/NavList';
@@ -117,8 +118,17 @@ class ExplorePage extends React.Component {
     render () {
         
         return (
-
             <main id="national" className="layout-state-pages national-page">
+                <Helmet
+                    title="Explore data | Natural Resources Revenue Data"
+                    meta={[
+                        // title
+                        { name: "og:title", content: "Explore data | Natural Resources Revenue Data"},
+                        { name: "twitter:title", content: "Explore data | Natural Resources Revenue Data"},
+                    ]}
+
+                    />
+
                 <section  id="title" className="slab-delta">
                     <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
                         <div className="container-left-8 ribbon-hero ribbon-hero-column">

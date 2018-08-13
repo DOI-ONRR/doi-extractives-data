@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Link from 'components/utils/temp-link';
 import GlossaryTerm from 'components/utils/glossary-term.js';
@@ -15,6 +16,14 @@ import IRSmark from "img/logos/IRS-mark.svg";
 const AboutPage = () => {
   return (
     <div>
+      <Helmet
+        title="About | Natural Resources Revenue Data"
+        meta={[
+            // title
+            { name: "og:title", content: "About | Natural Resources Revenue Data"},
+            { name: "twitter:title", content: "About | Natural Resources Revenue Data"},
+        ]} />
+
       <section className="slab-delta">
         <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
           <div className="container-left-8 ribbon-hero ribbon-hero-column">

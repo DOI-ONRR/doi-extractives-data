@@ -29,7 +29,7 @@ const stackedBar = {
 		svg.selectAll("g")
 			.data(series)
 			.enter().append("g")
-			.attr("class", (d) =>{ console.log(self); return self.getKeyClassName(d.key); })
+			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
 			.append("rect")
 			.attr("x", (d) => { return xScale(d[0][0]); })
 			.attr("height", props.height)
@@ -41,7 +41,7 @@ const stackedBar = {
 
 	update(el, props, state){
 		let self = this;
-		
+
 		var svg = d3.select(el).select("svg");
 
 		let stack = d3.stack()

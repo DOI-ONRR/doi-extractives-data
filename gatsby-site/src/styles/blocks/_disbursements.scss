@@ -19,7 +19,13 @@ $offshore-color: $green-light;
 $eight-g-color: $green-light;
 $gomesa-color: $green-land;
 
+
 .disbursement-stacked-bar {
+	.bureau {
+		float: none;
+		display: table-cell;
+	}
+
 	.chart-legend-onshore {
 		background-color: $onshore-color;
 	}

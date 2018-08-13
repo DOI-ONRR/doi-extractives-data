@@ -23,7 +23,11 @@ class StackedBarSingleChartTableRow extends React.Component {
 				</td>
 				{(this.props.chartData !== undefined && this.props.chartData.length > 0) ?
 					<td>
-						<StackedBar height={this.props.barHeight} maxValue={this.props.maxValue} chartData={this.props.chartData} />
+						<StackedBar 
+							height={this.props.barHeight} 
+							maxValue={this.props.maxValue} 
+							chartData={this.props.chartData}
+							displayNames={this.props.legendNames} />
 						<ChartLegend
 							displayNames={this.props.legendNames} 
 							dataFormatFunc={this.props.legendDataFormatFunc}
@@ -57,6 +61,8 @@ StackedBarSingleChartTableRow.propTypes = {
 	maxValue: PropTypes.number,
 	/** Specify the height of the bar with units in a string format */
 	barHeight: PropTypes.string,
+	/** The display names for the data including sort order */
+	displayNames: PropTypes.object,
 	/** Specify a class name to be added to the outer element */
 	className: PropTypes.string
 }

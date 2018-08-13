@@ -37,6 +37,8 @@ StackedBar.propTypes = {
 	maxValue: PropTypes.number,
 	/** Specify the height of the bar with units in a string format */
 	height: PropTypes.string,
+	/** The display names for the data including sort order */
+	displayNames: PropTypes.object,
 	/** Specify a class name to be added to the outer element */
 	className: PropTypes.string
 }

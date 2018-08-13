@@ -252,8 +252,7 @@ const RevenueTypeTable = (props) => {
 				<tbody id={"revenue-types-"+Utils.formatToSlug('oil gas')}>
 					<tr className="table-arrow_box-category">
 						<td colSpan="5">
-							Oil and Gas
-							<OilGasIcon />
+							Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
 						</td>
 					</tr>
 					{oilGasRevenueTypeRowHtml}
@@ -264,8 +263,7 @@ const RevenueTypeTable = (props) => {
 				<tbody id={"revenue-types-"+Utils.formatToSlug('Coal')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
-					        Coal
-					        <CoalIcon />
+					        Coal <span className="icon-padded"><CoalIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Coal' commodityData={revenueTypes['Coal']} year={props.year} />
@@ -275,8 +273,7 @@ const RevenueTypeTable = (props) => {
 				<tbody id={"revenue-types-"+Utils.formatToSlug('Geothermal')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
-					        Geothermal
-					        <GeothermalIcon />
+					        Geothermal <span className="icon-padded"><GeothermalIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Geothermal' commodityData={revenueTypes['Geothermal']} year={props.year} />
@@ -286,8 +283,7 @@ const RevenueTypeTable = (props) => {
 				<tbody id={"revenue-types-"+Utils.formatToSlug('Wind')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
-					        Offshore renewable energy
-					        <RenewablesIcon />
+					        Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Wind' commodityData={revenueTypes['Wind']} year={props.year} />
@@ -316,10 +312,10 @@ const RevenueTypeTable = (props) => {
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        All commodities
-					        { oilGasExists &&  <OilGasIcon /> }
-					        { coalExists &&  <CoalIcon /> }
-					        { geothermalExists && <GeothermalIcon /> }
-					        { windExists && <RenewablesIcon /> }
+					        { oilGasExists &&  <span className="icon-padded"> <OilGasIcon /></span> }
+					        { coalExists &&  <span className="icon-padded"><CoalIcon /></span> }
+					        { geothermalExists && <span className="icon-padded"><GeothermalIcon /></span> }
+					        { windExists && <span className="icon-padded"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName='All' commodityData={revenueTypes['All']} year={props.year} />

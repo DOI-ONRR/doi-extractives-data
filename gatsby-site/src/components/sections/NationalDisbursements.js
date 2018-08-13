@@ -21,15 +21,32 @@ import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableR
 /** Define data display attributes */
 const DATA_KEYS = {
 	ONSHORE: 'Onshore',
-	OFFSHORE: 'Offshore',
+	GOMESA: 'GOMESA',
 	EIGHT_G: '8(g)',
-	GOMESA: 'GOMESA'
+	OFFSHORE: 'Offshore',
 };
+// Also sets the default order to display in the legend based on order below
 const LEGEND_NAMES = {
-	[DATA_KEYS.ONSHORE]: 'Onshore',
-	[DATA_KEYS.GOMESA]: () => (<span><GlossaryTerm>GOMESA</GlossaryTerm> offshore</span>),
-	[DATA_KEYS.OFFSHORE]: 'Other offshore',
-	[DATA_KEYS.EIGHT_G]: () => (<span><GlossaryTerm>8(g)</GlossaryTerm> offshore</span>)
+	[DATA_KEYS.ONSHORE]: 
+		{
+			displayName: 'Onshore',
+			sortOrderNum: 0
+		},
+	[DATA_KEYS.GOMESA]: 
+		{
+			displayName: () => (<span><GlossaryTerm>GOMESA</GlossaryTerm> offshore</span>),
+			sortOrderNum: 1
+		},
+	[DATA_KEYS.EIGHT_G]: 
+		{
+			displayName: () => (<span><GlossaryTerm>8(g)</GlossaryTerm> offshore</span>),
+			sortOrderNum: 2
+		},
+	[DATA_KEYS.OFFSHORE]: 
+		{
+			displayName: 'Other offshore',
+			sortOrderNum: 3
+		},
 };
 
 class NationalDisbursements extends React.Component{
@@ -51,9 +68,6 @@ class NationalDisbursements extends React.Component{
 
 	render(){
 		let disbursementsForYear = this.state.disbursements[this.state.year];
-		console.log(this.props);
-		console.log(this.state);
-		console.log(disbursementsForYear);
 
 		return (
 			<section id="federal-disbursements">
@@ -114,7 +128,7 @@ class NationalDisbursements extends React.Component{
 
 NationalDisbursements.propTypes = {
 	/** The current year selected in the drop down. CONNECTED BY STORE. */
-	year: PropTypes.string,
+	year: PropTypes.number,
 	/** All the years the data is available. CONNECTED BY STORE. */
 	years: PropTypes.array,
 	/** All the disbursements.  CONNECTED BY STORE. */

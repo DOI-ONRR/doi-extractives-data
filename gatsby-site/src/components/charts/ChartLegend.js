@@ -12,19 +12,19 @@ class ChartLegend extends React.Component {
 
 	getKeyDisplayName(key){
 		if(this.props.displayNames && this.props.displayNames[key]) {
-			if(typeof this.props.displayNames[key] === 'function') {
-				return this.props.displayNames[key]();
+			if(typeof this.props.displayNames[key].displayName === 'function') {
+				return this.props.displayNames[key].displayName();
 			}
 			else
 			{
-				return this.props.displayNames[key];
+				return this.props.displayNames[key].displayName;
 			}
 		}
 		return key;
 	}
 
 	render() {
-		let keys = Object.keys(this.props.chartData[0]);
+		let keys = (this.props.displayNames)? Object.keys(this.props.displayNames) : Object.keys(this.props.chartData[0]);
 		let total = 0;
 		return(
 			<table className={"chart-legend "+this.props.className}>

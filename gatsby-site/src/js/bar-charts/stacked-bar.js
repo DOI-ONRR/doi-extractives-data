@@ -12,7 +12,7 @@ const stackedBar = {
 					.attr('width', el.clientWidth);
 
 		let stack = d3.stack()
-			.keys(Object.keys(state[0]))
+			.keys(self.getOrderedKeys(props.displayNames, state))
 			.offset(d3.stackOffsetNone);
 
 		var series = stack(state);
@@ -45,7 +45,7 @@ const stackedBar = {
 		var svg = d3.select(el).select("svg");
 
 		let stack = d3.stack()
-			.keys(Object.keys(state[0]))
+			.keys(self.getOrderedKeys(props.displayNames, state))
 			.offset(d3.stackOffsetNone);
 
 		var series = stack(state);
@@ -93,6 +93,22 @@ const stackedBar = {
 	getKeyClassName(key) {
 		return ("stacked-bar-"+utils.formatToSlug(key));
 	},
+
+	getOrderedKeys(displayNames, state) {
+		let orderedKeys = [];
+		if(displayNames){
+			for(let key in displayNames){
+				if(state[0][key]){
+					orderedKeys.push(key);
+				}
+			}
+		}
+		else{
+			orderedKeys = Object.keys(state[0]);
+		}
+
+		return orderedKeys;
+	}
 }
 
 export default stackedBar;

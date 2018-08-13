@@ -22,12 +22,13 @@ archive: yes
 
 ## Tracking and verifying payments
 
-{% include archive-banner.html %}
-
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
-<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)
-</a>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf">{% include svg/icon-download.svg %}Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+    <p class="para-sm">{% include svg/icon-archive.svg %} This content was created as part of the {{ "USEITI" | term_end:"EITI Standard" }} and is no longer being updated.</p>
+  </li>
+</ul>
 
 ## Resources
 

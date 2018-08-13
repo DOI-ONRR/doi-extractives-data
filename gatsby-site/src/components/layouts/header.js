@@ -49,29 +49,23 @@ const Header = (props) => {
           </li>
           <span className="header-nav_item_link_spacer"> | </span>
           <li className="header-nav_item_top">
-            <Link {...downloadClassNames} to="/downloads/">Download data</Link>
-          </li>
-
-          <li className="header-nav_item_top">
+            <Link {...downloadClassNames} to="/downloads/">Download data </Link>
+          </li> <li className="header-nav_item_top">
             <Search />
           </li>
 
         </ul>
         <ul className="header-nav_bottom">
           <li {...homeClassNames}>
-            <Link className="header-nav_item_link" to="/">Home</Link>
-          </li>
-          <li {...aboutClassNames}>
-            <Link className="header-nav_item_link" to="/about/">About</Link>
-          </li>
-          <li {...defaultNavClassNames}>
-            <Link className="header-nav_item_link" to="/how-it-works/">How it works</Link>
-          </li>
-          <li {...exploreClassNames}>
-            <Link className="header-nav_item_link" to="/explore/">Explore data</Link>
-          </li>
-          <li {...defaultNavClassNames}>
-            <Link className="header-nav_item_link" to="/case-studies/">Case studies</Link>
+            <Link className="header-nav_item_link" to="/"> Home </Link>
+          </li> <li {...aboutClassNames}>
+            <Link className="header-nav_item_link" to="/about/"> About </Link>
+          </li> <li {...defaultNavClassNames}>
+            <Link className="header-nav_item_link" to="/how-it-works/"> How it works </Link>
+          </li> <li {...exploreClassNames}>
+            <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
+          </li> <li {...defaultNavClassNames}>
+            <Link className="header-nav_item_link" to="/case-studies/"> Case studies </Link>
           </li>
 
         </ul>

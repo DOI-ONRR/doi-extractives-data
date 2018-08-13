@@ -27,11 +27,14 @@ jobs:
           name: Build webpack
           command: npm run webpack
       - run:
-          name: Build jekyll
-          command: bundle exec jekyll build
-      - run:
           name: Build styleguide
           command: npm run release-styleguide
+      - run:
+          name: Build pattern library
+          command: npm run release-patterns
+      - run:
+          name: Build jekyll
+          command: bundle exec jekyll build
       - run:
           name: Run tests
           command: npm test

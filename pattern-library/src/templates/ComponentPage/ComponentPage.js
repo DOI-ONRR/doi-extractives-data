@@ -10,14 +10,16 @@ function yesno(bool) {
   return !!bool ? 'yes' : 'no';
 }
 
+// @todo: Build recursive function for props table
+
 class ComponentPage extends React.Component {
   render() {
-    const { displayName, props, html, childComponentDescription } = this.props.pathContext
+    const { title, props, html, childComponentDescription } = this.props.pathContext
     const description = childComponentDescription ? childComponentDescription.childMarkdownRemark.html : '';
-
+    console.log(this.props);
     return (
       <div className={styles.componentPage}>
-        <h1>{displayName}</h1>
+        <h1>{title}</h1>
         <Example html={html} />
         <h2>Props/Methods</h2>
         <div dangerouslySetInnerHTML={{__html: description}} />
@@ -33,6 +35,7 @@ class ComponentPage extends React.Component {
           </thead>
           <tbody>
             {props.map(({ name, defaultValue, childComponentDescription, type, required }, index) => {
+              console.log(childComponentDescription);
               const description = childComponentDescription ? childComponentDescription.childMarkdownRemark.html : '';
               return (
                 <tr key={index}>
@@ -53,7 +56,7 @@ class ComponentPage extends React.Component {
 
 ComponentPage.propTypes = {
   pathContext: PropTypes.shape({
-    displayName: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     props: PropTypes.array.isRequired,
     html: PropTypes.string.isRequired,
     childComponentDescription: PropTypes.shape({

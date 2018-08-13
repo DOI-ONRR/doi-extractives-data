@@ -1,5 +1,7 @@
 ---
-name: Accordions
+title: Accordions
+componentName: Accordion
+patternCategory: Accordions
 ---
 
 ```

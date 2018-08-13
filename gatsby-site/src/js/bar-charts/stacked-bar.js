@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import utils from 'js/utils';
+import utils from '../../js/utils';
 /**
  *  
  **/
@@ -23,13 +23,13 @@ const stackedBar = {
 			xScale.domain([0, props.maxValue]).nice();
 		}
 		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { console.log(d); return d[1]; }) ]).nice();
+			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]).nice();
 		}
 
 		svg.selectAll("g")
 			.data(series)
 			.enter().append("g")
-			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
 			.append("rect")
 			.attr("x", (d) => { return xScale(d[0][0]); })
 			.attr("height", props.height)
@@ -55,7 +55,7 @@ const stackedBar = {
 			xScale.domain([0, props.maxValue]).nice();
 		}
 		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { console.log(d); return d[1]; }) ]).nice();
+			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]).nice();
 		}
 
 		let bars = svg.selectAll("g")
@@ -67,7 +67,7 @@ const stackedBar = {
 
 		// Add new Bars 
 		bars.enter().append("g")
-			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
 			.append("rect")
 			.attr("x", (d) => { return xScale(d[0][0]); })
 			.attr("height", props.height)
@@ -76,7 +76,7 @@ const stackedBar = {
 		// Update existing Bars 
 		bars.transition()
 			.duration(500)
-			.attr("class", function(d, i){ return (props.keysClassNames[d.key] : ""); })
+			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
 			.select("rect")
 			.attr("x", (d) => { return xScale(d[0][0]); })
 			.attr("height", props.height)
@@ -86,6 +86,10 @@ const stackedBar = {
 
 	destroy(el){
 		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+	},
+	
+	getKeyClassName(key) {
+		return ("stacked-bar-"+utils.formatToSlug(key));
 	},
 }
 

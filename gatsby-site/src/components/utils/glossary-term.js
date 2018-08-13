@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../store/reducers/app';
 
 const GlossaryTerm = ({termKey, children, glossaryTermSelected, glossaryTerm}) => (
   <span className="term term-end" title="Click to define" tabIndex="0" 

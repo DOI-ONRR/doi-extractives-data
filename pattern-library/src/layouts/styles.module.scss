@@ -16,3 +16,8 @@
     margin-right: $spacing-base * 2;
   }
 }
+
+/* Hide the error overlay from react so we cna edit the code in dev mode in the page */
+iframe {
+  display: none;
+}

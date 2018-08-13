@@ -1,38 +1,17 @@
 .stacked-bar {
 	width: 360px;
 }
-
 .stacked-bar-color-0 {
 	fill: $green-dark;
-	div {
-		width: 10px;
-		height: 10px;
-		background-color: $green-dark;
-	}
 }
 .stacked-bar-color-1 {
 	fill: $green-land;
-	div {
-		width: 10px;
-		height: 10px;
-		background-color: $green-land;
-	}
 }
 .stacked-bar-color-2 {
 	fill: $green-mid;
-	div {
-		width: 10px;
-		height: 10px;
-		background-color: $green-mid;
-	}
 }
 .stacked-bar-color-3 {
 	fill: $green-light;
-	div {
-		width: 10px;
-		height: 10px;
-		background-color: $green-light;
-	}
 }
 
 .stacked-bar-legend {
@@ -66,4 +45,60 @@
 		line-height: 1.3;
 	}
 
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: blue;
+	}
+}
+
+/* Style for our pattern library example */
+.react-live-preview {
+
+	.stacked-bar-legend{
+		tr:first-child{
+			div{
+				background-color: $green-dark;			
+			}
+		}
+		tr:nth-child(2){
+			div{
+				background-color: $green-land;			
+			}
+		}
+		tr:nth-child(3){
+			div{
+				background-color: $green-mid;			
+			}
+		}
+		tr:nth-child(4){
+			div{
+				background-color: $green-light;			
+			}
+		}
+	}
+
+	.stacked-bar {
+
+		g:first-child{
+			rect{
+				fill: $green-dark;
+			}		
+		}	
+		g:nth-child(2){
+			rect{
+				fill: $green-land;
+			}		
+		}	
+		g:nth-child(3){
+			rect{
+				fill: $green-mid;
+			}		
+		}	
+		g:nth-child(4){
+			rect{
+				fill: $green-light;
+			}		
+		}		
+	}
 }

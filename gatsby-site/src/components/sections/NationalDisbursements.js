@@ -1,34 +1,36 @@
 'use strict';
 
 import React from 'react';
-import Link from 'components/utils/temp-link';
+import PropTypes from 'prop-types';
+import Link from '../utils/temp-link';
 
 import { connect } from 'react-redux';
-import { selectYear } from 'store/reducers/disbursements';
+import { selectYear } from '../../store/reducers/disbursements';
 
 import slugify from 'slugify';
 import lazy from 'lazy.js';
-import utils from 'js/utils';
+import utils from '../../js/utils';
 
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
-import StackedBarSingleChartTableRow from 'components/molecules/StackedBarSingleChartTableRow';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../atoms/YearSelector';
+import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
-const KEYS_FOR_DISBURSEMENTS_CLASSNAMES = {'Onshore': 'stacked-bar-color-0',
-										'GOMESA': 'stacked-bar-color-1',
-										'Offshore': 'stacked-bar-color-3',
-										'8(g)': 'stacked-bar-color-3'};
-const KEYS_FOR_DISBURSEMENTS_LEGEND = {
-	'Onshore': 'Onshore',
-	'Offshore' : 'Other offshore'
+
+/** Define data display attributes */
+const DATA_KEYS = {
+	ONSHORE: 'Onshore',
+	OFFSHORE: 'Offshore',
+	EIGHT_G: '8(g)',
+	GOMESA: 'GOMESA'
 };
-
-KEYS_FOR_DISBURSEMENTS_LEGEND['8(g)'] = () => (<span><GlossaryTerm>8(g)</GlossaryTerm> offshore</span>);
-KEYS_FOR_DISBURSEMENTS_LEGEND['GOMESA'] = () => (<span><GlossaryTerm>GOMESA</GlossaryTerm> offshore</span>);
-
-const YEAR_SELECTOR_SCOPE = "federal-disbursements";
+const LEGEND_NAMES = {
+	[DATA_KEYS.ONSHORE]: 'Onshore',
+	[DATA_KEYS.GOMESA]: () => (<span><GlossaryTerm>GOMESA</GlossaryTerm> offshore</span>),
+	[DATA_KEYS.OFFSHORE]: 'Other offshore',
+	[DATA_KEYS.EIGHT_G]: () => (<span><GlossaryTerm>8(g)</GlossaryTerm> offshore</span>)
+};
 
 class NationalDisbursements extends React.Component{
 
@@ -39,6 +41,7 @@ class NationalDisbursements extends React.Component{
 	}
 
 	componentWillReceiveProps(nextProps) {
+		console.log(nextProps);
 		if(nextProps.year !== this.state.year) {
 			this.setState({	year: nextProps.year, 
 							years: nextProps.years,
@@ -48,6 +51,9 @@ class NationalDisbursements extends React.Component{
 
 	render(){
 		let disbursementsForYear = this.state.disbursements[this.state.year];
+		console.log(this.props);
+		console.log(this.state);
+		console.log(disbursementsForYear);
 
 		return (
 			<section id="federal-disbursements">
@@ -78,7 +84,7 @@ class NationalDisbursements extends React.Component{
 		            		<th>Amount</th>
 		            	</tr>
 	            	</thead>
-	            	<tbody>
+	            	<tbody className="disbursement-stacked-bar">
 	            	{disbursementsForYear &&
 	            		disbursementsForYear.disbursements.map((fundDisbursements, index ) => {
 
@@ -89,25 +95,32 @@ class NationalDisbursements extends React.Component{
 			            					name={fundDisbursements[fundKey].name}
 			            					description={fundDisbursements[fundKey].description} 
 			            					descriptionLink={fundDisbursements[fundKey].link}
-			            					keysClassNames={KEYS_FOR_DISBURSEMENTS_CLASSNAMES}
-			            					keysLegendDisplay = {KEYS_FOR_DISBURSEMENTS_LEGEND}
+			            					legendNames = {LEGEND_NAMES}
+			            					legendDataFormatFunc = {utils.formatToDollarInt}
 			            					chartData={fundDisbursements[fundKey].disbursements}
-			            					maxValue={disbursementsForYear.highestFundValue}/>);
+			            					maxValue={disbursementsForYear.highestFundValue}
+			            					/>);
 	            			}
-	
 	            		})
-
-
 	            	}
 		            </tbody>
 		        </table>
-	            
 
 			</section>
 		);
 	}
 	
 }
+
+NationalDisbursements.propTypes = {
+	/** The current year selected in the drop down. CONNECTED BY STORE. */
+	year: PropTypes.string,
+	/** All the years the data is available. CONNECTED BY STORE. */
+	years: PropTypes.array,
+	/** All the disbursements.  CONNECTED BY STORE. */
+	disbursements:  PropTypes.object,
+}
+
 
 export default connect(
   state => ({ 	year: state.disbursements.year,

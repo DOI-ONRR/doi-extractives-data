@@ -2,7 +2,7 @@
 /* eslint no-underscore-dangle: 0 */
 
 import { createStore } from 'redux';
-import rootReducer from 'store/reducers/index';
+import rootReducer from './reducers/index';
 
 export default () => {  
   const devtools =

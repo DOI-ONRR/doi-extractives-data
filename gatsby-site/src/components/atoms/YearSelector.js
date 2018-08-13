@@ -1,5 +1,5 @@
 import React from 'react';
-import { withPrefix } from 'components/utils/temp-link'
+import { withPrefix } from '../utils/temp-link'
 
 import { connect } from 'react-redux';
 
@@ -9,7 +9,9 @@ const YearSelector = (props) => {
    
     function onChangeHandler(e) {
         e.stopPropagation();
-        props.selectYear(parseInt(e.target.value), props.selectYearAction);
+        if(props.selectYearAction) {
+            props.selectYear(parseInt(e.target.value), props.selectYearAction);
+        }
     }
 
     return (

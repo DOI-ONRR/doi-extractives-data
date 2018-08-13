@@ -1,13 +1,29 @@
 'use strict';
 
-import FUND_INFO from 'data/disbursements/fund_names.yml';
+import FUND_INFO from '../../data/disbursements/fund_names.yml';
 import utils from '../../js/utils';
 import lazy from 'lazy.js';
 
+// Initial state is used for the pattern library and seeding any additional data
 const initialState = {
     year: 2017,
     years: [2017],
-    disbursements: [],
+    disbursements: {
+        2017: {
+            year: "2017",
+            total: 10000,
+            highestFundValue: 10000,
+            disbursements: [{
+                States: {
+                    description: "Fund Description",
+                    name: "Fund Display Name",
+                    sortOrderIndex: 0,
+                    total: 10000,
+                    disbursements: [{Onshore: 5000, GOMESA: 3000, Offshore: 2000}]
+                }
+            }]
+        }
+    },
     fundInfo: FUND_INFO
 };
 

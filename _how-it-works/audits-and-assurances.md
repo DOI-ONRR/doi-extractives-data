@@ -15,15 +15,19 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 selector: list
+archive: yes
 ---
 
 > {{ page.description }}
 
 ## Tracking and verifying payments
 
+{% include archive-banner.html %}
+
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
-<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)
+</a>
 
 ## Resources
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Lazy from 'lazy.js';
 
-import Utils from 'js/utils';
+import utils from 'js/utils';
 
 import ALL_NATIONAL_REVENUES_BY_TYPE from '../../../static/data/national_revenues_by_type.yml';
 import ALL_STATE_REVENUES_BY_TYPE from '../../../static/data/state_revenues_by_type.yml';
@@ -38,9 +38,9 @@ const RevenueTypeTableRow = (props) => {
 
 	return (
 		<tr>
-		    <th scope="row" data-value={props.commodityData.All[props.year]} name={"#revenue-"+Utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
+		    <th scope="row" data-value={props.commodityData.All[props.year]} name={"#revenue-"+utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
 		      <strong>{ props.commodityName }</strong><br/>
-		      <strong className="table-arrow_box-subheader-value">{ Utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
+		      <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
 		    </th>
 		  	{ 
 		  		revenueTypeNames.map((revenueTypeName, index) => {
@@ -49,16 +49,16 @@ const RevenueTypeTableRow = (props) => {
 		  				return (
 		  					<td key={index} data-value={yearTotalValue} className="table-arrow_box-value  table-arrow_box-text">
 		  						<span className="text table-arrow_box-subheader-value">
-		  							{ Utils.formatToDollarInt(yearTotalValue)}
+		  							{ utils.formatToDollarInt(yearTotalValue)}
 		  						</span>
 		  						{ props.isNationalPage &&
 		  							<div>
 		  								<br/>
 			  							<span className="table-arrow_box-asterisk">
 			  								* Includes revenues not tied to specific commo&shy;dities 
-			  								({ Utils.formatToDollarInt(NATIONAL_REVENUES_INSPECTION_FEES[props.year]) } in inspection fees, 
-			  								{ Utils.formatToDollarInt(NATIONAL_REVENUES_CIVIL_PENALTIES[props.year]) } in civil penalties, 
-			  								and { Utils.formatToDollarInt(NATIONAL_REVENUES_OTHER_REVENUES[props.year]) } in other revenue).
+			  								({ utils.formatToDollarInt(NATIONAL_REVENUES_INSPECTION_FEES[props.year]) } in inspection fees, 
+			  								{ utils.formatToDollarInt(NATIONAL_REVENUES_CIVIL_PENALTIES[props.year]) } in civil penalties, 
+			  								and { utils.formatToDollarInt(NATIONAL_REVENUES_OTHER_REVENUES[props.year]) } in other revenue).
 			  							</span>
 		  							</div>
 		  						}
@@ -70,7 +70,7 @@ const RevenueTypeTableRow = (props) => {
 		  				return (
 		  					<td key={index} data-value={yearValue} className="table-arrow_box-value">
 		  						<span className="text table-arrow_box-subheader-value">
-		  							{ Utils.formatToDollarInt(yearValue)}
+		  							{ utils.formatToDollarInt(yearValue)}
 		  						</span>
 		  					</td>
 		  				);
@@ -128,7 +128,7 @@ const RevenueTypeTable = (props) => {
 			oilGasExists = commodityValueExistsForYear;
 			if(commodityName.toLowerCase() === "oil & gas" ||
 				commodityName.toLowerCase() === "oil & gas (non-royalty)"){
-				let commodityNameSlug = Utils.formatToSlug(commodityName);
+				let commodityNameSlug = utils.formatToSlug(commodityName);
 
 				oilGasRevenueTypeRowHtml = getOilAndGasRow(getValuesForOilAndGasCommoditiesByRevenueType(commodityValues, revenueTypes, 'All'), 
 															getValuesForOilAndGasCommoditiesByRevenueType(commodityValues, revenueTypes, 'Bonus'), 
@@ -166,13 +166,13 @@ const RevenueTypeTable = (props) => {
 			<tr>
 			  <th scope="row" rowSpan="2" data-value={ valuesAll.Sum} name={"#revenue-"+slug} className="table-arrow_box-subheader">
 			    <strong>Oil &amp; Gas </strong><br />
-			    <strong className="table-arrow_box-subheader-value">{ Utils.formatToDollarInt(valuesAll.Sum) }</strong>
+			    <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesAll.Sum) }</strong>
 			  </th>
 			  <td rowSpan="2" data-value={ valuesBonus.Sum } className="table-arrow_box-value">
-			    <span className="text table-arrow_box-subheader-value">{ Utils.formatToDollarInt(valuesBonus.Sum) }</span>
+			    <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesBonus.Sum) }</span>
 			  </td>
 			  <td rowSpan="2" data-value={ valuesRents.Sum } className="table-arrow_box-value">
-			    <span className="text table-arrow_box-subheader-value">{ Utils.formatToDollarInt(valuesRents.Sum) }</span>
+			    <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesRents.Sum) }</span>
 			  </td>
 			  <td className="bars table-arrow_box-value" data-value={ valuesRoyalties.Oil } >
 			  	<span data-value={ valuesRoyalties.Gas } />
@@ -180,36 +180,36 @@ const RevenueTypeTable = (props) => {
 			  	<span data-value={ valuesRoyalties.OilShale } />
 			  	{valuesRoyalties.Sum === 0 &&
 			  		<span className="text table-arrow_box-subheader-value">
-			  			{ Utils.formatToDollarInt(valuesRoyalties.Sum)}
+			  			{ utils.formatToDollarInt(valuesRoyalties.Sum)}
 			  		</span>
 			  	}
 			  	{ valuesRoyalties.Oil > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
 				  		<strong className="text-header text-header-first">Oil</strong>
-				  		{ Utils.formatToDollarInt(valuesRoyalties.Oil)}
+				  		{ utils.formatToDollarInt(valuesRoyalties.Oil)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.Gas > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
 				  		<strong className="text-header text-header-first">Gas</strong>
-				  		{ Utils.formatToDollarInt(valuesRoyalties.Gas)}
+				  		{ utils.formatToDollarInt(valuesRoyalties.Gas)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.NGL > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
 				  		<strong className="text-header text-header-first">NGL</strong>
-				  		{ Utils.formatToDollarInt(valuesRoyalties.NGL)}
+				  		{ utils.formatToDollarInt(valuesRoyalties.NGL)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.OilShale > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
 				  		<strong className="text-header text-header-first">OilShale</strong>
-				  		{ Utils.formatToDollarInt(valuesRoyalties.OilShale)}
+				  		{ utils.formatToDollarInt(valuesRoyalties.OilShale)}
 				  	</span>
 			  	}
 			  </td>
 			  <td rowSpan="2" data-value={valuesOtherRevenues.Sum} className="table-arrow_box-value">
-			  	<span className="text table-arrow_box-subheader-value">{ Utils.formatToDollarInt(valuesOtherRevenues.Sum) }</span>
+			  	<span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesOtherRevenues.Sum) }</span>
 			  </td>
 
 			</tr>
@@ -249,7 +249,7 @@ const RevenueTypeTable = (props) => {
 			</thead>
 
 			{oilGasExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('oil gas')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('oil gas')}>
 					<tr className="table-arrow_box-category">
 						<td colSpan="5">
 							Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
@@ -260,7 +260,7 @@ const RevenueTypeTable = (props) => {
 			}
 
 			{coalExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('Coal')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('Coal')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        Coal <span className="icon-padded"><CoalIcon /></span>
@@ -270,7 +270,7 @@ const RevenueTypeTable = (props) => {
 				</tbody>
 			}	
 			{geothermalExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('Geothermal')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('Geothermal')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        Geothermal <span className="icon-padded"><GeothermalIcon /></span>
@@ -280,7 +280,7 @@ const RevenueTypeTable = (props) => {
 				</tbody>
 			}	
 			{windExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('Wind')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('Wind')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
@@ -290,7 +290,7 @@ const RevenueTypeTable = (props) => {
 				</tbody>
 			}
 			{otherProductExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('Other Products')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('Other Products')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        Other products
@@ -298,9 +298,9 @@ const RevenueTypeTable = (props) => {
 				    </tr>
 				    {
 				    	Lazy(revenueTypes).toArray().map((commodity, index) => {
-				    		let commodityName = commodity[0];
+				    		let commodityName = utils.getDisplayName(commodity[0]);
 				    		let commodityValues = commodity[1];
-				    		if(Lazy(otherProductCommodities).contains(commodityName) && commodityValues.All[props.year]) {
+				    		if(Lazy(otherProductCommodities).contains(commodity[0]) && commodityValues.All[props.year]) {
 				    			return (<RevenueTypeTableRow key={index} commodityName={commodityName} commodityData={commodityValues} year={props.year} />);
 				    		}
 				    	})
@@ -308,7 +308,7 @@ const RevenueTypeTable = (props) => {
 				</tbody>
 			}
 			{allExists &&
-				<tbody id={"revenue-types-"+Utils.formatToSlug('all')}>
+				<tbody id={"revenue-types-"+utils.formatToSlug('all')}>
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        All commodities
@@ -318,7 +318,7 @@ const RevenueTypeTable = (props) => {
 					        { windExists && <span className="icon-padded"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName='All' commodityData={revenueTypes['All']} year={props.year} />
+				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName('All')} commodityData={revenueTypes['All']} year={props.year} />
 				</tbody>
 			}	
 

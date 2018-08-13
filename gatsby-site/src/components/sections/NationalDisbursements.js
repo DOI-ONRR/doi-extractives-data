@@ -17,6 +17,8 @@ import StickyHeader from '../layouts/StickyHeader';
 import YearSelector from '../atoms/YearSelector';
 import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
+import fundedByCongress from '../../data/funded_by_congress.yml';
+
 
 /** Define data display attributes */
 const DATA_KEYS = {
@@ -58,7 +60,6 @@ class NationalDisbursements extends React.Component{
 	}
 
 	componentWillReceiveProps(nextProps) {
-		console.log(nextProps);
 		if(nextProps.year !== this.state.year) {
 			this.setState({	year: nextProps.year, 
 							years: nextProps.years,
@@ -103,6 +104,16 @@ class NationalDisbursements extends React.Component{
 	            		disbursementsForYear.disbursements.map((fundDisbursements, index ) => {
 
 	            			for(let fundKey in fundDisbursements) {
+	            				let fundAdditionalData;
+	            				if(fundedByCongress[fundKey]) {
+	            					fundAdditionalData = [];
+	            					fundAdditionalData.push(
+	            						{
+	            							name: "Funded by Congress",
+	            							value: utils.formatToDollarInt(fundedByCongress[fundKey])
+	            						});
+	            				}
+
 			            		return (<StackedBarSingleChartTableRow 
 			            					key={index+fundKey} 
 			            					year={this.state.year}
@@ -113,6 +124,7 @@ class NationalDisbursements extends React.Component{
 			            					legendDataFormatFunc = {utils.formatToDollarInt}
 			            					chartData={fundDisbursements[fundKey].disbursements}
 			            					maxValue={disbursementsForYear.highestFundValue}
+			            					additionalData={fundAdditionalData}
 			            					/>);
 	            			}
 	            		})

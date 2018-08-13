@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import lazy from 'lazy.js';
 import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/app';
 
-import GLOSSARY_TERMS from 'data/terms.yml';
+import GLOSSARY_TERMS from '../../data-graphql/terms.yml';
 
 class GlossaryItem extends React.Component {
 

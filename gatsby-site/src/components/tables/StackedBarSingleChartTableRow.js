@@ -32,6 +32,7 @@ class StackedBarSingleChartTableRow extends React.Component {
 							displayNames={this.props.legendNames} 
 							dataFormatFunc={this.props.legendDataFormatFunc}
 							chartData={this.props.chartData}
+							additionalData={this.props.additionalData}
 							className="stacked-bar-legend" />
 					</td>
 					:
@@ -68,3 +69,5 @@ StackedBarSingleChartTableRow.propTypes = {
 }
 
 export default StackedBarSingleChartTableRow;
+
+//{data[index].name}: {data[index].value}

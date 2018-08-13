@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import logo from "img/DOI-2x.png";
 import DownloadIcon from '-!svg-react-loader!img/svg/icon-download-base.svg';
 
-import CONTACT_INFO from 'data/contact.yml';
+import CONTACT_INFO from '../../data-graphql/contact.yml';
 
 const Footer = ({ siteMetadata }) => ( 
 <footer className="footer">

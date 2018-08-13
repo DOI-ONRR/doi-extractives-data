@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'components/utils/temp-link';
 
 
-import Utils from 'js/utils';
+import utils from 'js/utils';
 import lazy from 'lazy.js';
 
 import StickyHeader from 'components/layouts/StickyHeader';
@@ -18,10 +18,7 @@ import ChartTitle from 'components/molecules/ChartTitle';
 import iconCirclePlus from "img/icons/icon-circled-plus.svg";
 import iconCircleMinus from "img/icons/icon-circled-minus.svg";
 
-import COMMODITY_NAMES from 'data/commodity_names.yml';
 import NATIONAL_REVENUES from '../../../static/data/national_revenues.yml';
-
-import GLOSSARY_TERMS from 'data/terms.yml';
 
 // @todo: pass in years from data
 const years = [2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007];
@@ -122,8 +119,8 @@ const NationalRevenue = (props) => {
                     {lazy(REVENUE_COMMODITIES).toArray().map((commodity, index) => {
                             let annualRevenue = commodity[1];
                             let revenue = annualRevenue[year] || 0;
-                            let commodityName = COMMODITY_NAMES[commodity[0]] || commodity[0];
-                            let commoditySlug = Utils.formatToSlug(commodity[0]);
+                            let commodityName = utils.getDisplayName(commodity[0]);
+                            let commoditySlug = utils.formatToSlug(commodity[0]);
                             let chartToggle = "revenue-figures-chart-"+commoditySlug;
 
                             return (
@@ -148,14 +145,14 @@ const NationalRevenue = (props) => {
                                             { commodityName === 'Non-commodity revenue' ?
                                                 <div>
                                                     Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                        {Utils.formatToDollarInt(revenue)}
+                                                        {utils.formatToDollarInt(revenue)}
                                                     </span> in inspection fees, civil penalties, and other revenues in
                                                     <span className="eiti-bar-chart-x-value">{ year }</span>.
                                                 </div>
                                                     :
                                                 <div>        
                                                     Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                        {Utils.formatToDollarInt(revenue)}
+                                                        {utils.formatToDollarInt(revenue)}
                                                     </span> to produce {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year}</span>.
                                                 </div>
                                             }
@@ -165,7 +162,7 @@ const NationalRevenue = (props) => {
                                         </span>
                                         <span className="caption-negative-data" aria-hidden="true">
                                             Production of {commodityName.toLowerCase()} yielded <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                { Utils.formatToDollarInt(revenue)}
+                                                { utils.formatToDollarInt(revenue)}
                                             </span> in <span className="eiti-bar-chart-x-value">{ year }</span> revenue, probably due to  previous overpayment.
                                         </span>
                                     </figcaption>

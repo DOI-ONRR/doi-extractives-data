@@ -4,6 +4,8 @@ import Link from 'components/utils/temp-link';
 import slugify from 'slugify';
 import lazy from 'lazy.js';
 
+import utils from '../../js/utils';
+
 import StickyHeader from 'components/layouts/StickyHeader';
 import YearSelector from 'components/atoms/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
@@ -14,10 +16,6 @@ import ChartTitle from 'components/molecules/ChartTitle';
 
 import iconCirclePlus from "img/icons/icon-circled-plus.svg";
 import iconCircleMinus from "img/icons/icon-circled-minus.svg";
-
-import COMMODITY_NAMES from 'data/commodity_names.yml';
-
-import GLOSSARY_TERMS from 'data/terms.yml';
 
 // @todo: pass in years from data
 const years = [2017,2016,2015,2014,2013,2012,2011,2010,2009,2008];

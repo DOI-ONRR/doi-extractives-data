@@ -53,7 +53,7 @@ class ChartLegend extends React.Component {
 							}
 						})
 					}
-					<tr>
+					<tr className="chart-legend-total-row">
 						<td>
 						</td>
 						<td>
@@ -67,6 +67,16 @@ class ChartLegend extends React.Component {
 							}
 						</td>
 					</tr>
+					{this.props.additionalData && 
+						this.props.additionalData.map((data, index) => {
+							return (
+								<tr key={index} className="chart-legend-additional-data-row">
+									<td />
+									<td>{data.name}:</td>
+									<td>{data.value}</td>
+								</tr>)
+						})
+					}
 				</tbody>
 			</table>
 		);
@@ -77,7 +87,7 @@ ChartLegend.propTypes = {
 	/** Array of key value pairs */
 	chartData: PropTypes.array.isRequired,
 	/** Defines the display name/info of the data keys in the chart. Keys should match the data keys */
-	displayNames: PropTypes.objectOf( PropTypes.oneOfType([ PropTypes.string, PropTypes.func]) ),
+	displayNames: PropTypes.object,
 	/** A function that will be applied on each data item of the chart data */
 	dataFormatFunc: PropTypes.func,
 	/** Specify a class name to be added to the outer element */

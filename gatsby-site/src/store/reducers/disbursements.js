@@ -1,6 +1,6 @@
 'use strict';
 
-import FUND_INFO from '../../data/disbursements/fund_names.yml';
+import FUND_INFO from '../../data/fund_names.yml';
 import utils from '../../js/utils';
 import lazy from 'lazy.js';
 

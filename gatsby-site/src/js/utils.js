@@ -1,7 +1,14 @@
 import slugify from 'slugify';
 import currencyFormatter from 'currency-formatter';
 
+// Import Display Name Yaml Files
+import commodityNames from '../data/commodity_names.yml';
+
 const utils = {
+	getDisplayName: (key) => {
+		return commodityNames[key] || key;
+	},
+
 	formatToSlug: (name) => {
 		return slugify(name, {lower:true, remove: /[$*_+~.()'"!\:@,]/g}).replace('-and-','-');
 	},

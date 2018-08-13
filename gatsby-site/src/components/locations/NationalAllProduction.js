@@ -4,6 +4,8 @@ import Link from 'components/utils/temp-link';
 import slugify from 'slugify';
 import lazy from 'lazy.js';
 
+import utils from '../../js/utils';
+
 import StickyHeader from 'components/layouts/StickyHeader';
 import YearSelector from 'components/atoms/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
@@ -11,8 +13,6 @@ import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';
 
 import ChartTitle from 'components/molecules/ChartTitle';
-
-import COMMODITY_NAMES from 'data/commodity_names.yml';
 
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
 
@@ -50,7 +50,7 @@ const NationalAllProduction = (props) => {
 
                     {(lazy(ALL_PRODUCTION_DATA.US.products).toArray()).map((product, index) => {
                         let year = '2016';
-                        let productName = COMMODITY_NAMES[product[0]] || product[0];
+                        let productName = utils.getDisplayName(product[0]);
                         let productSlug = slugify(productName, {lower:true});
                         let productVolumes = product[1].volume;
                         let units = product[1].units;

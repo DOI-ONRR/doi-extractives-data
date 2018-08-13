@@ -8,7 +8,7 @@ const NavList = (props) => (
 
 			props.navItems.map((navItem, index) => {
     			return (
-    				<li key={index} style={{ 'padding-bottom': '0px'}}>
+    				<li key={index} style={{ 'paddingBottom': '0px'}}>
     				 	{navItem.title === "Top" ?
     						<a key={index+"_navitem"} href='#' className='sticky_nav-nav_item' data-nav-item={navItem.name} data-active="true">{navItem.title}</a>
     						:

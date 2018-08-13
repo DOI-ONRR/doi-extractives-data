@@ -30,8 +30,6 @@ selector: list
 archive: yes
 ---
 
-{% include archive-banner.html %}
-
 > Iron ore is the primary mineral substance for the world’s iron and steel industries. Michigan is the second-largest producer of iron ore in the country behind Minnesota. All of Michigan’s iron-production operations are located in the northern reaches of the state, in Marquette County.
 
 ## Geology and history

@@ -141,7 +141,20 @@ all_production:
       units: bbl
       value: 179169000
       rank: 4
-      percent: 5.53
+      percent: 5.54
+  '2017':
+    - product: Natural Gas
+      name: Natural Gas
+      units: Mcf
+      value: 3250779000
+      rank: 3
+      percent: 9.8
+    - product: Crude Oil
+      name: Crude Oil
+      units: bbl
+      value: 180467000
+      rank: 3
+      percent: 5.28
 revenue:
   '2007':
     - product: Oil & Gas (Non-Royalty)

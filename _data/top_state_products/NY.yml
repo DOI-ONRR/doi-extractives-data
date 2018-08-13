@@ -133,12 +133,25 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 26603999.48
+      value: 26888234
       rank: 4
-      percent: 10.01
+      percent: 10.04
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 1634575
+      value: 1604649.55
       rank: 4
-      percent: 7.41
+      percent: 7.36
+  '2017':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: Mwh
+      value: 29065182.45
+      rank: 4
+      percent: 9.69
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1614926.01
+      rank: 4
+      percent: 7.77

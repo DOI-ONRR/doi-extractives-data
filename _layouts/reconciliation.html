@@ -42,7 +42,6 @@ layout: default
 {% endfor %}
 
 <section id="reconciliation" class="explore-subpage container">
-    {% include archive-banner.html %}
 
   {% include explore-subpage-tabs.html docs=site.reconciliation %}
 
@@ -54,7 +53,9 @@ layout: default
           <a class="breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
           /
         </div>
-
+        
+        {% include archive-banner.html %}
+        
         <h1>Reconciliation ({{ report_year }})</h1>
 
         <p>Every country that participates in EITI reconciles its data.</p>

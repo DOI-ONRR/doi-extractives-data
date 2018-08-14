@@ -1,5 +1,5 @@
 ---
-title: 'Audits and Assurances | How it Works'
+title: 'Audits and Assurances | How It Works'
 title_display: Revenue data standards, audits, and assurances
 layout: content
 description: Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.

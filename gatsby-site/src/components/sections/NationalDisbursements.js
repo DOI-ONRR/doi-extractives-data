@@ -69,6 +69,7 @@ class NationalDisbursements extends React.Component{
 
 	render(){
 		let disbursementsForYear = this.state.disbursements[this.state.year];
+		let fundedByCongressForYear = fundedByCongress[this.state.year];
 
 		return (
 			<section id="federal-disbursements">
@@ -105,12 +106,12 @@ class NationalDisbursements extends React.Component{
 
 	            			for(let fundKey in fundDisbursements) {
 	            				let fundAdditionalData;
-	            				if(fundedByCongress[fundKey]) {
+	            				if(fundedByCongressForYear && fundedByCongressForYear[fundKey]) {
 	            					fundAdditionalData = [];
 	            					fundAdditionalData.push(
 	            						{
 	            							name: "Funded by Congress",
-	            							value: utils.formatToDollarInt(fundedByCongress[fundKey])
+	            							value: utils.formatToDollarInt(fundedByCongressForYear[fundKey])
 	            						});
 	            				}
 

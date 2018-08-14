@@ -1,20 +1,26 @@
 
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
-const baseurl = process.env.BASEURL || '';
+const BASEURL = process.env.BASEURL || '';
 
+// Federalist provides the google_analytics env variable
+const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
+                (process.env.google_analytics[process.env.BRANCH] || process.env.google_analytics.default)
+                :
+                undefined;
 
 module.exports = {
   // Note: it must *not* have a trailing slash.
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
 
   // This prefix is prepended to load all our related images, code, and pages.
-  pathPrefix: `${baseurl}/gatsby-public`,
+  pathPrefix: `${BASEURL}/gatsby-public`,
 
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v3.1.9'
+    version: 'v3.1.9',
+    googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

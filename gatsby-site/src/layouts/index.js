@@ -12,12 +12,12 @@ import Glossary from 'components/utils/Glossary';
 import "styles/_main.scss";
 import "styles/print.scss";
 
-import { withPrefix } from 'components/utils/temp-link';
+import { withPrefixSVG } from 'components/utils/temp-link';
 
 const store = createStore();
 
 export default ({ data, children}) => {
-  let meta_image = withPrefix("/img/unfurl_image.png");
+  let meta_image = withPrefixSVG("/img/unfurl_image.png");
 
   return (
     <Provider store={store}>
@@ -47,9 +47,9 @@ export default ({ data, children}) => {
           ]}
         >
           <title>Home | Natural Resources Revenue Data</title>
-          <link rel="icon" type="image/x-icon" href={withPrefix("/img/favicon.ico")} />
-          <link rel="icon" type="image/x-icon" href={withPrefix("/img/favicon-16x16.png")} sizes="16x16" />
-          <link rel="icon" type="image/x-icon" href={withPrefix("/img/favicon-32x32.png")} sizes="32x32" />
+          <link rel="icon" type="image/x-icon" href={withPrefixSVG("/img/favicon.ico")} />
+          <link rel="icon" type="image/x-icon" href={withPrefixSVG("/img/favicon-16x16.png")} sizes="16x16" />
+          <link rel="icon" type="image/x-icon" href={withPrefixSVG("/img/favicon-32x32.png")} sizes="32x32" />
 
           {/* Digital Analytics Program roll-up, see the data at https://analytics.usa.gov */}
           <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>

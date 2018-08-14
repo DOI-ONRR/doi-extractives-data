@@ -18,7 +18,7 @@ const store = createStore();
 
 export default ({ data, children}) => {
   let meta_image = withPrefix("/img/unfurl_image.png");
-  console.log(data);
+
   return (
     <Provider store={store}>
       <div>

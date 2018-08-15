@@ -7,7 +7,8 @@ tag:
 - how it works
 - offshore
 - conservation
-- gulf of mexico
+- Gulf of Mexico
+- GOMESA
 - disbursements
 - recreation
 - National Park Service
@@ -61,7 +62,7 @@ During the annual budget process, these agencies can submit proposals to acquire
 ### State and local grant funding
 Administered by the National Park Service, the stateside program of the LWCF provides matching grants to states for planning, acquiring lands and waters, and developing facilities for outdoor recreation. LWCF funds are limited to 50% or less of a proposed project's total cost; the rest must come from other funds.
 
-A formula in the Land and Water Conservation Act determines how the funds are apportioned to states [(54 U.S.C. §200305(b))](https://www.gpo.gov/fdsys/granule/USCODE-2014-title54/USCODE-2014-title54-subtitleII-chap2003-sec200305). States must use the money for its intended purpose within three years.
+A formula in the Land and Water Conservation Act determines how the funds are apportioned to states (See [54 U.S.C. §200305(b))](https://www.gpo.gov/fdsys/granule/USCODE-2014-title54/USCODE-2014-title54-subtitleII-chap2003-sec200305). States must use the money for its intended purpose within three years.
 
 #### GOMESA grants
 The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million in funding. This portion of LWCF funds is not subject to congressional appropriation, and states can roll it over beyond the three-year limit of other LWCF state grants. 

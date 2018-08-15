@@ -27,6 +27,7 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
+archive: yes
 ---
 
 > Iron ore is the primary mineral substance for the world's iron and steel industries. The U.S. is estimated to possess iron ore reserves of 110 billion tons, which can produce approximately 27 billion tons of metallic iron. In 2015, the U.S. was the world's eighth-largest producer of iron ore, generating an output of 42.5 million {{ "metric tons" | term_end:"metric ton" }}. 98% of usable iron ore was produced in Michigan and Minnesota, with an estimated value of $3.8 billion.[^1] In 2013, more than three-fourths of that output came from iron mines located in a single area of Minnesota: St. Louis County.[^2]

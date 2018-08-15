@@ -28,12 +28,15 @@ nav_items:
     title: Data
 resource: default
 selector: list
+archive: yes
 ---
 
 <!-- Assigns variables to be used in the opening paragraph to keep the data up to date -->
 
 {% assign year_range = site.data.years.gdp | default: site.data.years.default %}
 {% assign year = year_range | last | to_s | default: default_year %}
+
+{% include archive-banner.html %}
 
 > While extractive industries made up {{ site.data.national_gdp.US[year].percent | percent }}% of the U.S. GDP in {{ year }}, they play a much larger role in some local communities. For example, extractive industries made up {{ site.data.state_gdp.WY[year].percent | percent }}% of Wyoming’s GDP in {{ year }}. At the county level, certain communities may be even more economically dependent on extractive industries.
 

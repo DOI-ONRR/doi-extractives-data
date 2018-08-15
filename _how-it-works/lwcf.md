@@ -39,20 +39,22 @@ The LWCF is authorized through September 30, 2018, at which time Congress must d
 
 The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. {{ "ONRR" | term }} disburses that revenue to the fund each year.
 
-The LWCF is authorized to receive and distribute $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund have met the authorized threshold only once (2001), while appropriations have been limited to between $255 million and $450 million since 2008.
+The LWCF is authorized to receive and distribute $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
 
 ## Distribution of funds
-Funds from the LWCF are distributed to support two general purposes:
+Most of the funds from the LWCF are distributed to support two general purposes:
 
-- [federal acquisition of land](https://www.nps.gov/subjects/lwcf/federalside.htm) for the benefit of the public
+- federal acquisition of land for the benefit of the public
 - grants to states for recreational planning, acquiring recreational lands, or developing outdoor recreational facilities 
+
+A portion of funds also supports the [American Battlefield Protection Program](https://www.nps.gov/abpp/grants/grants.htm), sponsoring the preservation of historic battlefields. 
 
 Every year during the budget process, Congress determines the total appropriation from the fund to support each of these purposes.
 
 ### Federal land acquisition
 Federal land management agencies include the Forest Service, National Park Service, Fish and Wildlife Service, and the Bureau of Land Management.
 
-During the annual budget process, these agencies can submit proposals to acquire lands or waters with LWCF funds. LWCF funds for land acquistion can be carried over from fiscal year to fiscal year until expended.
+During the annual budget process, these agencies can submit proposals to acquire lands or waters with LWCF funds. LWCF funds for land acquisition can be carried over from fiscal year to fiscal year until expended.
 
 [Review LWCF Land Acquisition Reports and Data](https://www.nps.gov/subjects/lwcf/land-acquisition-reports-and-data.htm)
 

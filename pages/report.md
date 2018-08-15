@@ -6,6 +6,7 @@ breadcrumb:
   - title: About
     permalink: /about/
 ---
+{% include archive-banner.html %}
 
 > Explore this site for [maps and charts]({{ site.baseurl }}/explore/) of extractive industries data, [12 case studies]({{ site.baseurl }}/case-studies/) about how extractive industries have affected specific counties, or [download data]({{ site.baseurl }}/downloads/).
 

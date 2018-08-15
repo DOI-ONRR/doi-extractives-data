@@ -22,7 +22,7 @@ selector: list
 
 {% include selector.html %}
 
-Administered by the [National Park Service](https://www.nps.gov/subjects/lwcf/index.htm), the LWCF provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural preservation.
+Administered by the National Park Service, the [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural preservation.
 
 ## Funding priorities
 The LWCF funds landscape conservation, outdoor recreation, and the needs of local communities, including:

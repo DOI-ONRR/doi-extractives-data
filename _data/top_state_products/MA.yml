@@ -55,3 +55,10 @@ all_production:
       value: 1060540.61
       rank: 5
       percent: 5.09
+  '2017':
+    - product: Other biomass
+      name: Other biomass
+      units: Mwh
+      value: 1055218.96
+      rank: 5
+      percent: 5.08

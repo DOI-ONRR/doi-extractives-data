@@ -27,6 +27,7 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
+archive: yes
 ---
 
 > Most of the coal consumed in the U.S. fuels the country’s electricity needs. Coal constitutes 30% of all electricity generated in the U.S.[^1] Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest coal-producing states combined, with eight of the nation’s ten largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.[^4]

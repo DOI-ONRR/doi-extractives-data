@@ -42,6 +42,7 @@ layout: default
 {% endfor %}
 
 <section id="reconciliation" class="explore-subpage container">
+
   {% include explore-subpage-tabs.html docs=site.reconciliation %}
 
   <section class="container-page-wrapper">
@@ -52,7 +53,7 @@ layout: default
           <a class="breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
           /
         </div>
-
+        
         <h1>Reconciliation ({{ report_year }})</h1>
 
         <p>Every country that participates in EITI reconciles its data.</p>
@@ -60,7 +61,7 @@ layout: default
         <p>{{ page.introduction }} To learn more, review the <a href="{{ site.baseurl }}/downloads/reconciliation/#scope">scope</a> of the reconciliation process or the list of <a href="{{ site.baseurl }}/downloads/reconciliation/#in-scope-companies">companies</a> included.</p>
 
         <a href="{{ site.baseurl }}/downloads/reconciliation/">
-          {% include data_and_docs.html %}
+          {% include docs_archive.html %}
         </a>
       </div>
     </div><!-- /.container-left-4 -->
@@ -70,7 +71,7 @@ layout: default
       <div class="explore-exploration slab-alpha" style="margin-top: 20px;">
 
         <div class="container flowchart">
-
+          {% include archive-banner.html %}
           <h2>Company participation, reporting, and reconciliation results</h2>
 
           <ul>

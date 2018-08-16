@@ -19,13 +19,31 @@ title_display: Historic Preservation Fund
 
 > {{ page.description }}
 
-## Funding priorities
+Congress created the fund with the passage of the [National Historic Preservation Act of 1966 (as amended)](http://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title54-subtitle3&saved=%7CKHRpdGxlOjU0IHNlY3Rpb246MzAwMTAxIGVkaXRpb246cHJlbGltKSBPUiAoZ3JhbnVsZWlkOlVTQy1wcmVsaW0tdGl0bGU1NC1zZWN0aW9uMzAwMTAxKQ%3D%3D%7CdHJlZXNvcnQ%3D%7C%7C0%7Cfalse%7Cprelim&edition=prelim). The National Parks Service administers the HPF. 
 
+## Funding priorities
+The fund provides grants to state and tribal historic preservation offices to support the conservation of cultural and historic sites. The fund supports the goals of the National Historic Preservation Act, which authorizes the Secretary of the Interior to:
+
+- maintain a National Register of Historic Places
+- issue regulations for State Historic Preservation Programs
+- award matching grants to states
+- award matching grants to the [National Trust for Historic Preservation](https://savingplaces.org/)
+
+In the act, Congress declared, "the preservation of this irreplaceable heritage is in the public interest so that its vital legacy of cultural, educational, aesthetic, inspirational, economic, and energy benefits will be maintained and enriched for future generations of Americans."
 
 ## Authorization and funding
-
+The Historic Preservation Fund is {{ "authorized" | term: "authorization" }} to receive $150 million each year through fiscal year 2023. Like the [Land and Water Conservation Fund]({{site.baseurl}}/how-it-works/land-and-water-conservation-fund), the HPF is subject to congressional appropriations during the annual budget process. Actual appropriations to the HPF have varied of the years, ranging from $54 million to $100 million between 2009 to 2017. Congress can choose to appropriate supplemental funding in the event of natural disasters – such as hurricanes – as they did in 2013 and 2018. 
 
 ## Distribution of funds
+The National Parks Service apportions HPF grants according to a formula specified in the National Historic Preservation Act. The formula establishes three tiers that determine the funding allocation based on the annual appropriated amount. 
 
+### Requirements
 
-### State and local grant funding
+Eligible grant applicants must be:
+
+- states operating approved State Historic Preservation Programs
+- Indian tribes and Native Hawaiian organizations
+- National Trust for Historic Preservation
+- certified local governments where there is no approved state program
+
+Review the [Historic Preservation Fund grants manual](https://www.nps.gov/preservation-grants/HPF_Manual.pdf), published by the National Park Service.

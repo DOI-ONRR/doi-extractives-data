@@ -55,7 +55,7 @@ Federal land management agencies include the Forest Service, National Park Servi
 
 During the annual budget process, these agencies can submit proposals to acquire lands or waters with LWCF funds. LWCF funds for land acquisition can be carried over from fiscal year to fiscal year until expended.
 
-[Review LWCF Land Acquisition Reports and Data](https://www.nps.gov/subjects/lwcf/land-acquisition-reports-and-data.htm)
+[Review LWCF Land Acquisition Reports and Data](https://www.nps.gov/subjects/lwcf/land-acquisition-reports-and-data.htm).
 
 ### State and local grant funding
 Administered by the National Park Service, the stateside program of the LWCF provides matching grants to states for planning, acquiring lands and waters, and developing facilities for outdoor recreation. LWCF funds are limited to 50% or less of a proposed project's total cost; the rest must come from other funds.
@@ -65,4 +65,4 @@ A formula in the Land and Water Conservation Act determines how the funds are ap
 #### GOMESA grants
 The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million in funding. This portion of LWCF funds is not subject to congressional appropriation, and states can roll it over beyond the three-year limit of other LWCF state grants. 
 
-[Review LWCF State and Local Grant Funding](https://www.nps.gov/subjects/lwcf/stateside.htm)
+[Review LWCF State and Local Grant Funding](https://www.nps.gov/subjects/lwcf/stateside.htm).

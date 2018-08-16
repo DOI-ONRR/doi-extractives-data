@@ -15,13 +15,9 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Historic Preservation Fund
-selector: list
 ---
 
 > {{ page.description }}
-
-{% include selector.html %}
-
 
 ## Funding priorities
 

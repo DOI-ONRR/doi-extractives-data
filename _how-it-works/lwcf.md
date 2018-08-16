@@ -17,7 +17,6 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Land and Water Conservation Fund
-selector: list
 ---
 
 > {{ page.description }}

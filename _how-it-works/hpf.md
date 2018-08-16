@@ -22,7 +22,7 @@ title_display: Historic Preservation Fund
 Congress created the fund with the passage of the National Historic Preservation Act of 1966 and began funding it in 1976. The National Parks Service administers the HPF. 
 
 ## Funding priorities
-The fund provides grants to state and tribal historic preservation offices to support the conservation of cultural and historic sites. The fund supports the goals of the National Historic Preservation Act, which authorizes the Secretary of the Interior to:
+The fund provides grants to state and tribal historic preservation offices to support the conservation of cultural and historic sites. The fund aligns with the goals of the National Historic Preservation Act, which authorizes the Secretary of the Interior to:
 
 - maintain a National Register of Historic Places
 - issue regulations for State Historic Preservation Programs

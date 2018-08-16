@@ -34,7 +34,7 @@ In the act, Congress declared, "the preservation of this irreplaceable heritage 
 ## Authorization and funding
 The Historic Preservation Fund is {{ "authorized" | term: "authorization" }} to receive $150 million each year through fiscal year 2023. Like the [Land and Water Conservation Fund]({{site.baseurl}}/how-it-works/land-and-water-conservation-fund), the HPF is subject to congressional appropriations during the annual budget process. Actual appropriations to the HPF have varied of the years, ranging from $54 million to $100 million between 2009 to 2017. Congress can choose to appropriate supplemental funding in the event of natural disasters – such as hurricanes – as they did in 2013 and 2018. 
 
-[Review the National Park Service annual budget justifications (the "Green Book")](https://www.nps.gov/aboutus/budget.htm) 
+The National Park Service publishes [annual budget justifications](https://www.nps.gov/aboutus/budget.htm) (the "Green Book") that detail appropriations and spending.
 
 ## Distribution of funds
 The National Parks Service apportions HPF grants according to a formula specified in the National Historic Preservation Act. The formula establishes three tiers that determine the funding allocation based on the annual appropriated amount. 

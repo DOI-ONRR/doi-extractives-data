@@ -39,7 +39,7 @@ The National Parks Service apportions HPF grants according to a formula specifie
 
 ### Requirements
 
-Eligible grant applicants must be:
+Eligible grant applicants must be one of the following:
 
 - states operating approved State Historic Preservation Programs
 - Indian tribes and Native Hawaiian organizations

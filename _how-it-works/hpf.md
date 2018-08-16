@@ -46,4 +46,4 @@ Eligible grant applicants must be one of the following:
 - National Trust for Historic Preservation
 - certified local governments where there is no approved state program
 
-Review the [Historic Preservation Fund grants manual](https://www.nps.gov/preservation-grants/HPF_Manual.pdf), published by the National Park Service.
+Review the National Park Service's [Historic Preservation Fund grants manual](https://www.nps.gov/preservation-grants/HPF_Manual.pdf) for more guidance on the grant application and approval process.

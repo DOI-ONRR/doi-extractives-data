@@ -17,3 +17,5 @@ styleguide
 .brackets.json
 .clasp.json
 .npmrc
+/.project
+gatsby-public

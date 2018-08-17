@@ -1,4 +1,7 @@
 import React from "react"
+import {Provider} from 'react-redux';
+
+import createStore from '../../../gatsby-site/src/store/create-store';
 
 // Import NRRD styles
 // TODO these apply to the entire pattern library. Really we want the pattern
@@ -6,11 +9,12 @@ import React from "react"
 // content. We're using css-modules to avoid class name collisions but still
 // inherit the base styles for elements. This is okay for now since we don't
 // want to spend time building a theme for the styleguide.
-import '../../../public/css/main.css';
+import '../../../gatsby-site/src/styles/_main.scss';
 
 import SideNav from '../components/side-nav';
 import styles from './styles.module.scss';
 
+const store = createStore();
 
 class DefaultLayout extends React.Component {
   constructor(props) {
@@ -29,20 +33,22 @@ class DefaultLayout extends React.Component {
         return memo
       }, { components: [], docs: [] });
   }
-
+  
   render() {
     const { children } = this.props;
     const { components, docs } = this.state;
 
     return (
-      <div className={styles.defaultLayout}>
-        <div className={styles.main}>
-          {children()}
+      <Provider store={store}>
+        <div className={styles.defaultLayout}>
+          <div className={styles.main}>
+            {children()}
+          </div>
+          <aside className={styles.sidebar}>
+            <SideNav components={components} docs={docs} />
+          </aside>
         </div>
-        <aside className={styles.sidebar}>
-          <SideNav components={components} docs={docs} />
-        </aside>
-      </div>
+      </Provider>
     );
   }
 }

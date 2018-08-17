@@ -52,11 +52,11 @@ class Accordion extends React.Component {
 };
 
 Accordion.propTypes = {
-  /* The Id for the element, used to ensure expandable containers have unique Ids. */
+  /** The Id for the element, used to ensure expandable containers have unique Ids. */
   id: PropTypes.string.isRequired,
-  /* The content to show when this accordion is expanded. */
+  /** The content to show when this accordion is expanded. */
   children: PropTypes.node.isRequired,
-  /* Initial state of the accordion */
+  /** Initial state of the accordion */
   expanded: PropTypes.bool,
 }
 

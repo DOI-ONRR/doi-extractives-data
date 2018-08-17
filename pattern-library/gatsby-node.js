@@ -80,10 +80,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     resolve(graphql(`
             {
-              allMarkdownRemark(
-                sort: { fields: [fields___componentId] }
-                filter: { fileAbsolutePath: { regex: "/README.md/" } }
-              ) {
+              allMarkdownRemark(sort: {fields: [fields___componentId]}, filter: {frontmatter: {componentName: {ne: null}}}) {
                 edges {
                   node {
                     fields {
@@ -92,7 +89,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     fileAbsolutePath
                     html
                     frontmatter {
-                      name
+                      title
+                      componentName
+                      patternCategory
                     }
                   }
                 }
@@ -141,10 +140,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           const allComponents = result.data.allMarkdownRemark.edges.map((markdownEdge) => {
             // Match the README.md node with the docgen node based on componentId
             const componentId = markdownEdge.node.fields.componentId;
+            const componentName = markdownEdge.node.frontmatter.componentName;
             const componentMetadataNode =
               result.data.allComponentMetadata.edges
                 .map(edge => edge.node)
-                .find(node => node.fields.componentId === componentId);
+                .find(node => node.displayName === componentName);
+
+            console.log(componentMetadataNode);
 
             // TODO we shouldn't require the componentMetadataNode to exist,
             // but that's the way this was orignally written. This should just
@@ -153,10 +155,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               throw new Error(`Could not find metadata for ${componentId}. You may have a syntax
                                error in the JavaScript preventing parsing.`);
             }
-
+            console.log(markdownEdge);
             return Object.assign({}, componentMetadataNode, {
               url: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
               html: markdownEdge.node.html,
+              title: markdownEdge.node.frontmatter.title
             });
           });
 

@@ -92,7 +92,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
 
-Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 
 ### Note: Geothermal rate details
 

@@ -1,17 +1,17 @@
 # XXX this must be a string to use it as an index into other data!
-now: 2018
+now: 2016
 
 default: [2007, 2016]
 
 exports: [2006, 2015]
 
-revenue: [2007, 2017]
+revenue: [2008, 2017]
 
 self_employment: [2007, 2016]
 
 disbursements: 2017
 
-all_production: [2007, 2017]
+all_production: [2008, 2017]
 
 federal_production: [2008, 2017]
 

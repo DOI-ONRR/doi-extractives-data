@@ -46,7 +46,11 @@ Most of the funds from the LWCF are distributed to support two general purposes:
 - federal acquisition of land for the benefit of the public
 - grants to states for recreational planning, acquiring recreational lands, or developing outdoor recreational facilities 
 
-A portion of funds also supports the [American Battlefield Protection Program](https://www.nps.gov/abpp/grants/grants.htm), sponsoring the preservation of historic battlefields. 
+A portion of funds also supports:
+
+- [American Battlefield Protection Program](https://www.nps.gov/abpp/grants/grants.htm), sponsoring the preservation of historic battlefields
+- [Forest Legacy Program](https://www.fs.fed.us/managing-land/private-land/forest-legacy), a Forest Service program to encourage the protection of privately owned forest lands
+- [Cooperative Endangered Species Conservation Fund](https://www.fws.gov/endangered/grants/), a Fish and Wildlife Service program that provides funding to states and territories for species and habitat conservation on non-federal lands
 
 Every year during the budget process, Congress determines the total appropriation from the fund to support each of these purposes.
 
@@ -61,6 +65,8 @@ During the annual budget process, these agencies can submit proposals to acquire
 Administered by the National Park Service, the stateside program of the LWCF provides matching grants to states for planning, acquiring lands and waters, and developing facilities for outdoor recreation. LWCF funds are limited to 50% or less of a proposed project's total cost; the rest must come from other funds.
 
 A formula in the Land and Water Conservation Act determines how the funds are apportioned to states (See [54 U.S.C. §200305(b)](https://www.gpo.gov/fdsys/granule/USCODE-2014-title54/USCODE-2014-title54-subtitleII-chap2003-sec200305)). States must use the money for its intended purpose within three years.
+
+[Review state and local grant funding](https://www.nps.gov/subjects/lwcf/statefundingstatus.htm).
 
 #### GOMESA grants
 The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million in funding. This portion of LWCF funds is not subject to congressional appropriation, and states can roll it over beyond the three-year limit of other LWCF state grants. 

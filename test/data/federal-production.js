@@ -12,7 +12,7 @@ var OUT_PATH = path.join(__dirname, '../../_data');
 
 describe('federal production (ONRR) sentinels', function() {
 
-  describe('national values', function() {
+  /*describe('national values', function() {
 
     var nationalValues = yaml.safeLoad(
       fs.readFileSync(
@@ -71,7 +71,7 @@ describe('federal production (ONRR) sentinels', function() {
 
       done();
     });
-  });
+  });*/
 
   describe('state values', function() {
 
@@ -117,7 +117,7 @@ describe('federal production (ONRR) sentinels', function() {
     });
   });
 
-  describe('county values', function() {
+  /*describe('county values', function() {
     var countyPath = '_data/federal_county_production';
     var counties = fs.readdirSync(countyPath);
 
@@ -188,7 +188,7 @@ describe('federal production (ONRR) sentinels', function() {
       done();
     });
 
-  });
+  });*/
 
   describe('offshore values values', function() {
     var offshoreRegionsData = yaml.safeLoad(

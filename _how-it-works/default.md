@@ -1,5 +1,5 @@
 ---
-title: How it works
+title: How It Works
 layout: default
 permalink: /how-it-works/
 redirect_from: /how-it-works/production/

@@ -93,7 +93,7 @@ In the past, this site has offered detailed data for disbursements distributed f
 
 ### Land and Water Conservation Fund
 
-{{ "ONRR" | term }} disburses revenue to the [Land and Water Conservation Fund (LWCF)](https://www.nps.gov/subjects/lwcf/index.htm) according to federal law. However, these funds are subject to congressional appropriations. Some of the money disbursed from ONRR to the fund is spent on LWCF projects, but some of it ultimately goes to other expenditures. The fund is authorized to receive and disburse $900 million each year, but congressional appropriations to LWCF projects have been limited to between $149 million and $573 million each year since 1999.
+{{ "ONRR" | term }} disburses revenue to the [Land and Water Conservation Fund (LWCF)](https://www.nps.gov/subjects/lwcf/index.htm) according to federal law. However, these funds are subject to congressional appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
 
 To see how much was disbursed to states, sub-funds, and other projects each year, see the following datasets.
 

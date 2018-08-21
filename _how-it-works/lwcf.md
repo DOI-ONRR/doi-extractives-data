@@ -38,6 +38,8 @@ selector: list
 
 > {{ page.description }}
 
+{% include selector.html %}
+
 The [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural preservation.
 
 ## Funding priorities

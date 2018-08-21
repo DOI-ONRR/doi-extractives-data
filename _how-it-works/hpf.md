@@ -32,6 +32,8 @@ selector: list
 
 > {{ page.description }}
 
+{% include selector.html %}
+
 Congress created the fund with the passage of the National Historic Preservation Act of 1966 and began funding it in 1976. The National Parks Service administers the HPF. 
 
 ## Funding priorities

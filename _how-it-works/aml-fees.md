@@ -16,7 +16,10 @@ nav_items:
   - name: intro
     title: Top
   - name: abandoned-mine-land-areas
-    title: AML areas
+    title: Areas
+        subnav_items:
+      - name: priority-reclamation-sites
+        title: Priority reclamation sites
   - name: aml-revenue-and-disbursements
     title: Revenue and disbursements
   - name: the-aml-fund
@@ -27,15 +30,15 @@ breadcrumb:
 selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program. The program sets standards for today's coal companies as they reclaim past mining areas while they mine others and to post bonds to cover the cost if unable to reclaim current coal mines.
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977, as amended, created this program. Provisions of the act set standards for today's coal companies as they reclaim past mining areas while they mine others and post bonds to cover the cost if unable to reclaim current coal mines.
 
 ## Abandoned mine land areas
 
 Abandoned mines pose risks to people and the environment. They can contaminate ground water, emit toxic waste, and cause injury when unsteady infrastructures collapse.
 
-### Priorities
+### Priority reclamation sites
 
-State and tribal AML programs rate abandoned mine areas on a priority scale of 1 to 3, as defined by federal law. Mines rated 1 and 2 are high priority and are addressed first, with [a few exceptions](https://www.law.cornell.edu/uscode/text/30/1233).
+State and tribal AML programs rank abandoned mine land problems on a priority scale of 1 to 3 as defined by federal law. Mine pollution problems ranked 1 and 2 are high priority and are addressed first, with [a few exceptions](https://www.law.cornell.edu/uscode/text/30/1233).
 
 - **Priority 1**: Protection of public health, safety, and property from extreme danger of adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
 - **Priority 2**: Protection of public health and safety from adverse effects of coal mining practices pre-1977, including restoration of land, water, and the environment
@@ -76,7 +79,7 @@ Congress set the current rates when the fee was extended in the Tax Relief and H
 
 Interest from AML fees pays for a portion of the costs for [health care plans for the United Mine Workers of America (UMWA)](#interest-on-the-fund).
 
-### Distribution to states
+### Fund distribution
 
 Since passage of the Tax Relief and Health Care Act of 2006, distribution of AML grants are mandatory. Prior to 2006, distribution was subject to Congress' annual appropriations process.
 
@@ -84,15 +87,23 @@ The amount states and tribes receive each year in annual payments varies dependi
 
 The statute requires the government to distribute AML Reclamation Program funds collected during the previous fiscal year as follows:
 
-- **State and tribal share grants:** Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. [Certified states](#certification) receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.
-- **Historic coal grants:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.
-- **Federal expenditures** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.
+- **State and tribal share:** Non-certified states receive 50% of the AML revenue originating from coal production in their states. This accounts for 50% of overall distribution of AML fees in a given year. [Certified states](#certification) receive amounts equal to their respective share grant totals sourced from the Treasury's General Fund.
+- **Historic coal share:** 30% of overall AML fees go toward Historic Coal Grants for non-certified states. OSMRE allocates Historic Coal grants based on each state's percentage of coal tonnage produced prior to 1977. Congress created Historic Coal grants so that states with large numbers of abandoned mines, but little current coal production, would not be left without funds to reclaim them.
+- **Federal expense share** (including minimum program make-up grants): 20% of AML fees goes toward federal expenditures. These funds must first be used to fund Minimum Program Make-Up grants to non-certified states. These ensure that non-certified states receive at least $3 million a year or the amount necessary to reclaim their remaining high priority AML areas, whichever is lower. OSMRE uses the remaining amount to fund operations, emergency projects, and other efforts.
 
 Review [OSMRE grant distribution reports](http://www.osmre.gov/resources/grants.shtm) to track annual state grants.
 
 ### State and tribal spending
 
 State and tribal AML programs use funds to prepare for reclamation through an extensive permitting process, environmental assessments, site surveys, and the development of reclamation plans. Generally, states and tribes must reclaim all Priority 1 and 2 coal sites before using AML funds on Priority 3 coal sites, but a number of exceptions exist.
+
+The states that received the largest grants from OSMRE in 2017 were:
+
+- Wyoming: $39.4 million
+- Pennsylvania: $33.6 million
+- West Virginia: $23.3 million
+- Kentucky: $12.6 million
+- Illinois: $12.3 million
 
 In addition to scheduled reclamation projects, [states and tribes can use AML funds for related efforts](https://www.gpo.gov/fdsys/pkg/USCODE-2010-title30/pdf/USCODE-2010-title30-chap25-subchapIV-sec1231.pdf), such as:
 
@@ -104,7 +115,7 @@ OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE of
 
 ### Certification
 
-When a state or tribe has reclaimed high priority coal sites, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
+When a state or tribe has reclaimed high priority coal AML areas, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
 
 You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
 
@@ -130,11 +141,11 @@ OSMRE paid states and tribes a collective total of $1.3 billion in roughly equal
 
 ### The fund today
 
-As of November 2017, the fund's balance stood at $2.387 billion. The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
+As of September 2017, the fund's balance stood at $2.4 billion. The reauthorization for AML fees expires in fiscal year 2021. The unappropriated balance has been divided into different allocations to be used starting in fiscal year 2023, as follows:
 
 #### Allocation of unappropriated balance
 
-- Historic coal grants: 68.3%
-- Federal expenses (subject to congressional appropriation): 19.9%
-- States and tribes: 10.7%
+- Historic coal share: 68.3%
+- Federal expense share (subject to congressional appropriation): 19.9%
+- State and tribal share: 10.7%
 - Reserve for United Mine Workers of America (UMWA) health care plans and retirement funds: 5.1%

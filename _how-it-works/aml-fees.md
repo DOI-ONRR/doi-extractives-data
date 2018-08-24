@@ -115,7 +115,7 @@ OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE of
 
 ### Certification
 
-When a state or tribe has reclaimed high priority coal AML areas, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) The source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving funds from AML fees, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
+When a state or tribe has reclaimed high priority coal AML areas, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) Once certified, the source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving AML grants, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
 
 You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
 

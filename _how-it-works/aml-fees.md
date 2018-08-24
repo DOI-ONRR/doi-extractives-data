@@ -17,13 +17,33 @@ nav_items:
     title: Top
   - name: abandoned-mine-land-areas
     title: Areas
-        subnav_items:
+    subnav_items:
       - name: priority-reclamation-sites
         title: Priority reclamation sites
-  - name: aml-revenue-and-disbursements
+      - name: map-of-sites
+        title: Map of sites
+      - name: areas-undergoing-or-requiring-reclamation
+        title: Areas undergoing or requiring reclamation  
+  - name: revenue-and-disbursements
     title: Revenue and disbursements
+    subnav_items:
+      - name: fund-distribution
+        title: Fund distribution
+      - name: state-and-tribal-spending
+        title: State and tribal spending
+      - name: certification
+        title: Certification    
   - name: the-aml-fund
     title: The AML fund
+    subnav_items:
+      - name: interest-on-the-fund
+        title: Interest on the fund
+      - name: grants-to-states-and-tribes
+        title: Grants to states and tribes
+      - name: the-fund-today
+        title: The fund today
+      - name: allocation-of-unappropriated-balance
+        title: Allocation of unappropriated balance
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/

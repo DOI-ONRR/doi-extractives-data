@@ -1,3 +1,77 @@
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
+
+/*exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+  if (node.internal.type === `MarkdownRemark`) {
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+};*/
+
+// Implement the Gatsby API “createPages”. This is called once the
+// data layer is bootstrapped to let plugins create pages from data.
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators;
+
+  //let createStatePagesPromise = createStatePages()
+
+  return Promise.all([createStatePages(createPage, graphql)]);
+};
+
+const createStatePages = (createPage, graphql) => {
+	const createStatePageSlug = (state) => {
+		return '/explore/'+state.frontmatter.unique_id+"/";
+	}
+
+	return new Promise((resolve, reject) => {
+	    const statePageTemplate = path.resolve(`src/templates/StatePage.js`);
+	    resolve(
+	      graphql(
+	        `
+	          {
+			    allMarkdownRemark (filter:{id: {regex: "/states/"}}) {
+			      us_states:edges {
+			        us_state:node {
+			          frontmatter {
+			            title
+			            unique_id
+			            is_cropped
+			          }
+			        }
+			      }
+			    }
+	          }
+	        `
+	      ).then(result => {
+	        if (result.errors) {
+	          reject(result.errors);
+	        }
+
+	        // Create pages for each markdown file.
+	        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
+	          const path = createStatePageSlug(us_state);
+	          console.log(path);
+	          createPage({
+	            path,
+	            component: statePageTemplate,
+	            // In your blog post template's graphql query, you can use path
+	            // as a GraphQL variable to query for data from the markdown file.
+	            context: {
+	              stateData: us_state,
+	            },
+	          });
+	        });
+	        resolve();
+	      })
+	    );
+	  });
+};
+
+
 exports.modifyBabelrc = ({ babelrc }) => {
   if (process.env.NODE_ENV !== `production`) {
     return {

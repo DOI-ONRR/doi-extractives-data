@@ -3,6 +3,13 @@ unique_id: PA
 title: Pennsylvania
 FIPS: '42'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 2.1% of all land in Pennsylvania.
+tag:
+- gas
+- biomass
+- coal
+- Pennsylvania
+
 priority: true
 
 # is_cropped forces the default county map view to use

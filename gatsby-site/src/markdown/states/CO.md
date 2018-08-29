@@ -3,6 +3,13 @@ unique_id: CO
 title: Colorado
 FIPS: 08
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 35.9% of all land in Colorado.
+tag:
+- oil
+- coal
+- gas
+- Colorado
+
 opt_in: true
 
 state_revenue_year: 2016

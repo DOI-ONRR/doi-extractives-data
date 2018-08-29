@@ -81,8 +81,8 @@ const NationalAllProduction = (props) => {
                                     <eiti-bar-chart
                                         aria-controls={"all-production-figures-"+productSlug }
                                         data={JSON.stringify(productVolumes)}
-                                        x-range="[2007, 2017]"
-                                        x-value={2016}
+                                        x-range="[2008, 2017]"
+                                        x-value={2017}
                                         data-units={longUnits}>
                                     </eiti-bar-chart>
                                     <figcaption id={"all-production-figures-"+productSlug }>

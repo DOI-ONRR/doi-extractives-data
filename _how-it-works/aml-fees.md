@@ -66,7 +66,7 @@ State and tribal AML programs rank abandoned mine land problems on a priority sc
 
 ### Map of sites
 
-To see AML data by location, visit OSMRE's [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. 
+To see AML data by location, visit the {{ "OSMRE" | term }} [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. 
 
 To see data by completed, funded, and unfunded sites, click on 'Summary.' <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
@@ -135,7 +135,7 @@ OSMRE also maintains a list of [contacts for states, Indian tribes, and OSMRE of
 
 ### Certification
 
-When a state or tribe has reclaimed high priority coal AML areas, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) Once certified, the source of their funds from the Department of the Interior's Office of Surface Mining Reclamation and Enforcement (OSMRE) changes; instead of receiving AML grants, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
+When a state or tribe has reclaimed high priority coal AML areas, [they may be eligible for "certification."](https://www.law.cornell.edu/uscode/text/30/1240) Once certified, the source of their funds from OSMRE changes; instead of receiving AML grants, they receive funds from the General Fund of the U.S. Treasury. These funds can be used for other purposes, including reclaiming abandoned hardrock mine sites. A certified state or tribe may still have abandoned coal mine areas to reclaim.
 
 You can track certified states and tribes by reviewing the [annual AML grant distributions](https://www.osmre.gov/resources/grants.shtm).
 

@@ -108,9 +108,11 @@
       var $terms = $(self.selectors.term);
       $terms.each(function() {
         var $term = $(this);
-        $term.attr('title', 'Click to define')
-          .attr('tabindex', 0)
-          .data('term', $term.data('term').toLowerCase());
+        if($term !== undefined){
+          $term.attr('title', 'Click to define')
+            .attr('tabindex', 0)
+            .data('term', ($term.data('term') === undefined)? "" : $term.data('term').toLowerCase());
+        }
       });
       $terms.on('click keypress', function(e) {
         if (e.which === 13 || e.type === 'click') {

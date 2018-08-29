@@ -2,7 +2,7 @@
 title: Land and Water Conservation Fund | How It Works
 layout: content
 permalink: /how-it-works/land-and-water-conservation-fund/
-description: The Land and Water Conservation Fund (LWCF) was enacted in 1965. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
+description: The Land and Water Conservation Fund (LWCF) was enacted in 1964. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
 tag:
 - how it works
 - offshore

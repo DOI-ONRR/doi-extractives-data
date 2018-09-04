@@ -26,7 +26,7 @@ const NationalAllProduction = (props) => {
     return (
         <section id="all-production" is="year-switcher-section" class="all-lands production">
             <StickyHeader headerText='Energy production nationwide'>
-                <YearSelector years={[2016,2015,2014,2013,2012,2011,2010,2009,2008,2007]} classNames="flex-row-icon" />
+                <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
             </StickyHeader>
 
             <div className="chart-selector-wrapper">
@@ -49,7 +49,7 @@ const NationalAllProduction = (props) => {
                 <div className="chart-list">
 
                     {(lazy(ALL_PRODUCTION_DATA.US.products).toArray()).map((product, index) => {
-                        let year = '2016';
+                        let year = '2017';
                         let productName = utils.getDisplayName(product[0]);
                         let productSlug = slugify(productName, {lower:true});
                         let productVolumes = product[1].volume;
@@ -81,13 +81,13 @@ const NationalAllProduction = (props) => {
                                     <eiti-bar-chart
                                         aria-controls={"all-production-figures-"+productSlug }
                                         data={JSON.stringify(productVolumes)}
-                                        x-range="[2007, 2016]"
-                                        x-value={2016}
+                                        x-range="[2008, 2017]"
+                                        x-value={2017}
                                         data-units={longUnits}>
                                     </eiti-bar-chart>
                                     <figcaption id={"all-production-figures-"+productSlug }>
                                         <span className="caption-data">
-                                            <span className="eiti-bar-chart-y-value" data-format=",">{(productVolumes[year]).toLocaleString() }{" "}</span>
+                                            <span className="eiti-bar-chart-y-value" data-format=",">{(productVolumes[year])? (productVolumes[year]).toLocaleString() : ("0").toLocaleString() }{" "}</span>
                                             {glossaryTerm ?
                                                 <GlossaryTerm termKey={termUnits}>{longUnits}</GlossaryTerm> :
                                                 longUnits

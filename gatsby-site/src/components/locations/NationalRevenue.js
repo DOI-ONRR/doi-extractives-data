@@ -21,9 +21,9 @@ import iconCircleMinus from "img/icons/icon-circled-minus.svg";
 import NATIONAL_REVENUES from '../../../static/data/national_revenues.yml';
 
 // @todo: pass in years from data
-const years = [2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007];
+const years = [2017,2016,2015,2014,2013,2012,2011,2010,2009,2008];
 const year = "2017";
-const YEAR_RANGE = "[2007, 2017]";
+const YEAR_RANGE = "[2008, 2017]";
 
 
 // @todo: use graphql to import data

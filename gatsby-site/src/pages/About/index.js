@@ -115,7 +115,7 @@ const AboutPage = () => {
               </div>
               <div className="bureau-right">
                 <h4>Bureau of Safety and Environmental Enforcement (BSEE)</h4>
-                <p><a href="http://www.bsee.gov/">BSEE</a> is responsible for safety oversight of ocean energy development and production, including permitting and inspections, regulatory programs, and oil spill response. BSEE also updates rules governing operations on the <GlossaryTerm>Outer Continental Shelf.</GlossaryTerm></p>
+                <p><a href="http://www.bsee.gov/">BSEE</a> is responsible for safety oversight of ocean energy development and production, including permitting and inspections, regulatory programs, and oil spill response. BSEE also updates rules governing operations on the <GlossaryTerm>Outer Continental Shelf</GlossaryTerm>.</p>
               </div>
             </article>
 

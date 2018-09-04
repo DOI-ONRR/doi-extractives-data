@@ -56,6 +56,11 @@ const utils = {
 	},
 	range(start, end) {
 		return Array(end - start + 1).fill().map((_, idx) => start + idx)
+	},
+	round(number, precision)
+	{
+	    precision = precision || 0;
+	    return parseFloat( parseFloat( number ).toFixed( precision ) );
 	}
 }
 

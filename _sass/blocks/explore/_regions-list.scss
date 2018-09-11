@@ -60,6 +60,10 @@
     text-align: left;
   }
 
+  .name td {
+    border-top: none;
+  }
+
   .bar_dollars {
     padding-right: $base-padding;
   }
@@ -140,6 +144,10 @@
     width: 3em;
   }
 
+  td, th .value.subtotal {
+    vertical-align: bottom;
+  }
+
   .bar { // specific to reconcilation
     width: 100px;
 
@@ -189,6 +197,12 @@
   clear: both;
   padding: 0 $base-padding;
   position: relative;
+}
+
+tbody:not(:first-child):before {
+  content: '';
+  display: block;
+  height: 2rem;
 }
 
 .region-name,

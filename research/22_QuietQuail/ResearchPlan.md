@@ -16,13 +16,13 @@ Over the course of a few weeks, we’d like to speak with 5-9 individuals from s
 In order to recruit research participants from our target user groups, we will contact people who have not used the site before.  We will be developing a strategy for recruiting participants via social media as part of the recruiting effort for this study.
 # Test assets
 We will be testing these 3 versions of the home page with users to understand which best helps new users understand the purpose of the site.
-[Home A](https://1rn7bf.axshare.com/#g=1&p=home_a)
-[Home B](https://1rn7bf.axshare.com/#g=1&p=home_b)
-[Home C](https://1rn7bf.axshare.com/#g=1&p=home_c)
+* [Home A](https://1rn7bf.axshare.com/#g=1&p=home_a)
+* [Home B](https://1rn7bf.axshare.com/#g=1&p=home_b)
+* [Home C](https://1rn7bf.axshare.com/#g=1&p=home_c)
 
 Interactive Key Facts (this will be incorporated into the Home page prototypes when finalized)
-[Interactive Key Facts](https://1rn7bf.axshare.com/#g=1&p=interactive_facts)
+* [Interactive Key Facts](https://1rn7bf.axshare.com/#g=1&p=interactive_facts)
 
 Explore Data
-[No paragraphs](https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_)
-[With paragraphs](https://ug2su1.axshare.com/#g=1&p=combined_option)
+* [No paragraphs](https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_)
+* [With paragraphs](https://ug2su1.axshare.com/#g=1&p=combined_option)

@@ -1,11 +1,10 @@
 # Background
-We have revised the home page prototypes from the last round of user research and created new designs for the Explore Data page.  We want to evaluate these designs with users.  A secondary goal is to flesh out our defined user types more by asking users about how they use the site.
+We have revised the home page and Explore Data prototypes from the last round of user research.  We want to evaluate these designs with users.  A secondary goal is to flesh out our defined user types more by asking users about how they use the site.
 # Goals
-* Determine the best approach for presenting key stats data on the home page.
-* Determine whether the home page content helps users understand the purpose of the site.
-* Determine whether any of the alternative home page designs work better than the current state.
-* Determine the whether the Explore Data page helps users understand the structure of the data that's available.
-* Determine whether any of the alternative designs for Explore Data work better than the current state.
+* Determine the best approach for presenting how it works content on the home page.
+* Determine whether the map should come before or after key stats.
+* Determine whether the design for interactivity in key stats works.
+* Determine the whether we need the intro paragraphs on Explore Data.
 * Determine how the users use the site as part of their overall task flows.
 # Methods and desired participants
 Over the course of a few weeks, we’d like to speak with 5-9 individuals from several of the following user groups for 1 hour remote 1:1 interviews.  We'll focus more on new users because of the goals of the study.
@@ -14,6 +13,16 @@ Over the course of a few weeks, we’d like to speak with 5-9 individuals from s
 * Storytellers: These are people like journalists and academics who want the data to tell them a story that they want to share with other people.
 * Domain Learners: These are people like state and county government reps and tribal leaders who want to monitor what’s going on within their domain and understand the whole system.
 # Recruitment strategy
-In order to recruit research participants from our target user groups, we will contact people who have not used the site before and people who signed up for user research in the new employee orientation.
+In order to recruit research participants from our target user groups, we will contact people who have not used the site before.  We will be developing a strategy for recruiting participants via social media as part of the recruiting effort for this study.
 # Test assets
-[Prototype](https://1rn7bf.axshare.com/start_1.html)
+We will be testing these 3 versions of the home page with users to understand which best helps new users understand the purpose of the site.
+[Home A](https://1rn7bf.axshare.com/#g=1&p=home_a)
+[Home B](https://1rn7bf.axshare.com/#g=1&p=home_b)
+[Home C](https://1rn7bf.axshare.com/#g=1&p=home_c)
+
+Interactive Key Facts (this will be incorporated into the Home page prototypes when finalized)
+[Interactive Key Facts](https://1rn7bf.axshare.com/#g=1&p=interactive_facts)
+
+Explore Data
+[No paragraphs](https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_)
+[With paragraphs](https://ug2su1.axshare.com/#g=1&p=combined_option)

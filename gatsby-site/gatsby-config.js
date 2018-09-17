@@ -27,7 +27,12 @@ module.exports = {
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-sass',
     `gatsby-transformer-yaml`,
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
     'gatsby-transformer-excel',
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your

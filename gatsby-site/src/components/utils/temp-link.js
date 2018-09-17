@@ -5,9 +5,9 @@ import React from 'react';
 
 class TempLink extends React.Component {
   render() {
-    const { to, ...rest } = this.props;
+    const { to, className, ...rest } = this.props;
     return (
-      <a {...rest} href={withPrefix(to)}>
+      <a {...rest} href={withPrefix(to)} className={className}>
         {this.props.children}
       </a>
     );

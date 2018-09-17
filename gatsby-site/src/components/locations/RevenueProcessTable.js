@@ -224,7 +224,12 @@ const RevenueProcessTable = (props) => {
 		revenueTypeValues.Oil = getYearValueForCommodityRevenueType(revenueTypes.Oil[type], props.year);
 		revenueTypeValues.Gas = getYearValueForCommodityRevenueType(revenueTypes.Gas[type], props.year);
 		revenueTypeValues.NGL = getYearValueForCommodityRevenueType(revenueTypes.NGL[type], props.year);
-		revenueTypeValues.OilShale = getYearValueForCommodityRevenueType(revenueTypes['Oil Shale'][type], props.year);
+		if(revenueTypes['Oil Shale'] !== undefined) {
+			revenueTypeValues.OilShale = getYearValueForCommodityRevenueType(revenueTypes['Oil Shale'][type], props.year);
+		}
+		else {
+			revenueTypeValues.OilShale = 0;
+		}
 
 		revenueTypeValues.Sum = revenueTypeValues.OilGas +
 							revenueTypeValues.Oil +
@@ -439,7 +444,7 @@ const RevenueProcessTable = (props) => {
 					        { windExists && <span className="icon-padded"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName('All')} commodityData={revenueTypes['All']} year={props.year} />
+				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName_CommodityName('All')} commodityData={revenueTypes['All']} year={props.year} />
 				</tbody>
 			}	
 			{ !props.isOffshorePage &&

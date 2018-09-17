@@ -1,26 +1,50 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-/*exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators
-  if (node.internal.type === `MarkdownRemark`) {
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-  }
-};*/
+const remark = require('remark');
+const remarkHTML = require('remark-html');
+
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+
+	const { createNodeField } = boundActionCreators
+
+	createHtmlStringFromFrontmatterField(createNodeField, node, `case_study_link`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_optin_intro`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_production`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_land`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_land_production`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_revenue`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_revenue_sustainability`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_tax_expenditures`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_disbursements`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_saving_spending`);
+	createHtmlStringFromFrontmatterField(createNodeField, node, `state_impact`);
+
+};
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  //let createStatePagesPromise = createStatePages()
-
   return Promise.all([createStatePages(createPage, graphql)]);
 };
+
+
+const createHtmlStringFromFrontmatterField = (createNodeField, node, field) => {
+	if (node.internal.type === `MarkdownRemark` &&
+		node.frontmatter[field] !== undefined) {
+		let html = remark()
+		    .use(remarkHTML)
+		    .processSync(node.frontmatter[field])
+		    .toString();
+		createNodeField({
+			node,
+			name: field,
+			value: html,
+			});
+	}
+}
 
 const createStatePages = (createPage, graphql) => {
 	const createStatePageSlug = (state) => {
@@ -40,7 +64,29 @@ const createStatePages = (createPage, graphql) => {
 			            title
 			            unique_id
 			            is_cropped
+			            nearby_offshore_region
+			            opt_in
+			            state_optin_intro
+			            case_study_link
+			            locality_name
+			            state_revenue_year
+			            priority
+			            neighbors
 			          }
+			          fields {
+			          	case_study_link
+			          	state_optin_intro
+			          	state_production
+			          	state_land
+			          	state_land_production
+			          	state_revenue
+			          	state_revenue_sustainability
+			          	state_tax_expenditures
+			          	state_disbursements
+			          	state_saving_spending
+			          	state_impact
+			          }
+			          html
 			        }
 			      }
 			    }
@@ -54,14 +100,14 @@ const createStatePages = (createPage, graphql) => {
 	        // Create pages for each markdown file.
 	        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
 	          const path = createStatePageSlug(us_state);
-	          console.log(path);
+
 	          createPage({
 	            path,
 	            component: statePageTemplate,
 	            // In your blog post template's graphql query, you can use path
 	            // as a GraphQL variable to query for data from the markdown file.
 	            context: {
-	              stateData: us_state,
+	              stateMarkdown: us_state
 	            },
 	          });
 	        });

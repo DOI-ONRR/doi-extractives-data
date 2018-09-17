@@ -50,7 +50,7 @@ const NationalAllProduction = (props) => {
 
                     {(lazy(ALL_PRODUCTION_DATA.US.products).toArray()).map((product, index) => {
                         let year = '2017';
-                        let productName = utils.getDisplayName(product[0]);
+                        let productName = utils.getDisplayName_CommodityName(product[0]);
                         let productSlug = slugify(productName, {lower:true});
                         let productVolumes = product[1].volume;
                         let units = product[1].units;

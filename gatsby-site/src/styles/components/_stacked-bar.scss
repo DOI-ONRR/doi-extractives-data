@@ -1,6 +1,13 @@
 .stacked-bar {
-	width: inherit;
+	width: 360px;
 }
+
+@media screen and (max-width: $small) {
+	.stacked-bar {
+		width: inherit;
+	}
+}
+
 .stacked-bar-color-0 {
 	fill: $green-dark;
 }

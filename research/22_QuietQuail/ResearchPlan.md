@@ -4,7 +4,7 @@ We have revised the home page and Explore Data prototypes from the last round of
 * Determine the best approach for presenting how it works content on the home page.
 * Determine whether the map should come before or after key stats.
 * Determine whether the design for interactivity in key stats works.
-* Determine the whether we need the intro paragraphs on Explore Data.
+* Determine whether we need the intro paragraphs on Explore Data.
 * Determine how the users use the site as part of their overall task flows.
 # Methods and desired participants
 Over the course of a few weeks, we’d like to speak with 5-9 individuals from several of the following user groups for 1 hour remote 1:1 interviews.  We'll focus more on new users because of the goals of the study.

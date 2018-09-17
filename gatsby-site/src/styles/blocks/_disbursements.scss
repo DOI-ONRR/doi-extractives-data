@@ -55,6 +55,15 @@ $gomesa-color: $green-land;
 	}
 }
 
+@media screen and (max-width: $medium) {
+	#federal-disbursements {
+
+		.article_table {
+			table-layout: fixed;
+		}
+	}
+}
+
 @media screen and (max-width: $small) {
 	.disbursement-stacked-bar {
 		.bureau {
@@ -64,6 +73,13 @@ $gomesa-color: $green-land;
 
 			display: block;
 			border-top: none;
+		}
+	}
+
+	#federal-disbursements {
+
+		.article_table th:nth-child(2) {
+			display: none;
 		}
 	}
 }

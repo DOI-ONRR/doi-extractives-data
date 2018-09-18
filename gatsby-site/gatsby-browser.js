@@ -1,5 +1,5 @@
 /* globals window */
-
+import 'core-js';
 import React from 'react';
 import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -25,10 +25,10 @@ exports.onClientEntry = () => {
 
   let path = window.location.pathname;
 
-  if(path.indexOf("/explore") > 0) {
+  if(path.includes("/explore")) {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path": path}]);
   }
-  else if(path.indexOf("/about") > 0){
+  else if(path.includes("/about")){
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
 }

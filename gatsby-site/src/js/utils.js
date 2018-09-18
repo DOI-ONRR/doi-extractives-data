@@ -5,6 +5,9 @@ import currencyFormatter from 'currency-formatter';
 import commodityNames from '../data/commodity_names.yml';
 
 const utils = {
+	includes: (search, value) => {
+		return(search.indexOf(value) > 0);
+	},
 	getDisplayName: (key) => {
 		return commodityNames[key] || key;
 	},

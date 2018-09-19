@@ -6,7 +6,7 @@ import utils from '../../js/utils';
 const stackedBar = {
 	create(el, props, state) {
 		let self = this;
-
+		
 		let svg = d3.select(el).append('svg')
 					.attr('height', props.height)
 					.attr('width', el.clientWidth);

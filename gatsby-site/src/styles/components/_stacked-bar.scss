@@ -1,6 +1,13 @@
 .stacked-bar {
 	width: 360px;
 }
+
+@media screen and (max-width: $small) {
+	.stacked-bar {
+		width: inherit;
+	}
+}
+
 .stacked-bar-color-0 {
 	fill: $green-dark;
 }
@@ -32,7 +39,6 @@
 
 .stacked-bar-legend {
 	border: none;
-	width: 100%;
 	td:first-child {
 		width: 10px;
 	}

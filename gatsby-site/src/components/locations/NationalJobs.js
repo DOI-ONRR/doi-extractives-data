@@ -120,14 +120,14 @@ const NationalJobs = (props) => {
 									let chartToggle = 'jobs-figures-chart-'+commoditySlug; 
 
 									return (
-											<div key={index} className="chart-item">
+											<section key={index} className="chart-item">
 			                                    <ChartTitle 
 			                                        isIcon={true}
 			                                        units="jobs"
 			                                        chartValues={commodityByYears_Count}
 			                                        chartToggle={chartToggle} >{commodityNameAlias}</ChartTitle>
 
-												<figure className="chart" id="{{ chart_toggle }}">
+												<figure className="chart" id={ chartToggle }>
 													<eiti-bar-chart
 														aria-controls={"jobs-figures-"+commoditySlug}
 														data={ JSON.stringify(commodityByYears_Count)}
@@ -146,7 +146,7 @@ const NationalJobs = (props) => {
 														</span>
 													</figcaption>
 												</figure>
-											</div>
+											</section>
 										);
 
 	            				})

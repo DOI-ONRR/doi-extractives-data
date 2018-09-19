@@ -21,6 +21,8 @@ $gomesa-color: $green-land;
 
 
 .disbursement-stacked-bar {
+
+
 	.bureau {
 		float: none;
 		display: table-cell;
@@ -50,6 +52,35 @@ $gomesa-color: $green-land;
 	}
 	.stacked-bar-offshore {
 		fill: $offshore-color;
+	}
+}
+
+@media screen and (max-width: $medium) {
+	#federal-disbursements {
+
+		.article_table {
+			table-layout: fixed;
+		}
+	}
+}
+
+@media screen and (max-width: $small) {
+	.disbursement-stacked-bar {
+		.bureau {
+			display: block;
+		}
+		td:nth-child(2) {
+
+			display: block;
+			border-top: none;
+		}
+	}
+
+	#federal-disbursements {
+
+		.article_table th:nth-child(2) {
+			display: none;
+		}
 	}
 }
 

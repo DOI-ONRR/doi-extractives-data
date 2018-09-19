@@ -3,6 +3,7 @@
   "description": "Natural Resources Revenue Data",
   "version": "0.0.1",
   "dependencies": {
+    "core-js": "^2.5.7",
     "currency-formatter": "^1.4.3",
     "d3": "^5.5.0",
     "gatsby": "^1.9.158",

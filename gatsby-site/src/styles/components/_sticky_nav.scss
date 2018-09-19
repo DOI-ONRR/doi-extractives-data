@@ -2,7 +2,7 @@
   padding-top: $standard-padding-large;
   top: 0;
 
-  @include respond-to(medium-down) {
+  @include respond-to(new-breakpoint(max-width em(767))) {
     display: none;
 
     &.sticky_nav-show_mobile {

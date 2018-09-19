@@ -139,33 +139,35 @@ const NationalRevenue = (props) => {
                                             x-value={year}
                                             data-units="$,">
                                         </eiti-bar-chart>
+
+                                        <figcaption id={"revenue-figures-"+commoditySlug}>
+                                            <span className="caption-data">
+                                                { commodityName === 'Non-commodity revenue' ?
+                                                    <div>
+                                                        Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
+                                                            {utils.formatToDollarInt(revenue)}
+                                                        </span> in inspection fees, civil penalties, and other revenues in
+                                                        <span className="eiti-bar-chart-x-value">{ year }</span>.
+                                                    </div>
+                                                        :
+                                                    <div>        
+                                                        Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
+                                                            {utils.formatToDollarInt(revenue)}
+                                                        </span> to produce {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year}</span>.
+                                                    </div>
+                                                }
+                                            </span>
+                                            <span className="caption-no-data" aria-hidden="true">
+                                                There is no data about revenue from production of {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year }</span>.
+                                            </span>
+                                            <span className="caption-negative-data" aria-hidden="true">
+                                                Production of {commodityName.toLowerCase()} yielded <span className="eiti-bar-chart-y-value" data-format="$,">
+                                                    { utils.formatToDollarInt(revenue)}
+                                                </span> in <span className="eiti-bar-chart-x-value">{ year }</span> revenue, probably due to  previous overpayment.
+                                            </span>
+                                        </figcaption>
                                     </figure>
-                                    <figcaption id={"revenue-figures-"+commoditySlug}>
-                                        <span className="caption-data">
-                                            { commodityName === 'Non-commodity revenue' ?
-                                                <div>
-                                                    Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                        {utils.formatToDollarInt(revenue)}
-                                                    </span> in inspection fees, civil penalties, and other revenues in
-                                                    <span className="eiti-bar-chart-x-value">{ year }</span>.
-                                                </div>
-                                                    :
-                                                <div>        
-                                                    Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                        {utils.formatToDollarInt(revenue)}
-                                                    </span> to produce {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year}</span>.
-                                                </div>
-                                            }
-                                        </span>
-                                        <span className="caption-no-data" aria-hidden="true">
-                                            There is no data about revenue from production of {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year }</span>.
-                                        </span>
-                                        <span className="caption-negative-data" aria-hidden="true">
-                                            Production of {commodityName.toLowerCase()} yielded <span className="eiti-bar-chart-y-value" data-format="$,">
-                                                { utils.formatToDollarInt(revenue)}
-                                            </span> in <span className="eiti-bar-chart-x-value">{ year }</span> revenue, probably due to  previous overpayment.
-                                        </span>
-                                    </figcaption>
+
 
                                 </section>
 

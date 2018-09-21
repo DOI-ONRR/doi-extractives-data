@@ -42,6 +42,7 @@ class Glossary extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    
     this.setState({glossaryTerm: nextProps.glossaryTerm, toggleHidden: !nextProps.glossaryOpen});
   }
 

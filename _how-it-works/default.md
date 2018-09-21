@@ -169,9 +169,9 @@ selector: list
       <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a></p>
       <div class="container landing-section">
         <div>
-          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">Federal revenue by company</a></h4>
-          <p>See federal non-tax revenues from natural resource extraction on federal land in 2016 by commodity, revenue type, and company.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/2016/">See revenue by company</a></p>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">Federal revenue by company</a></h4>
+          <p>See federal non-tax revenues from natural resource extraction on federal land in 2017 by commodity, revenue type, and company.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">See revenue by company</a></p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>

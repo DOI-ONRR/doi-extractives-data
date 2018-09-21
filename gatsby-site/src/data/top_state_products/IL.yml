@@ -1,0 +1,50 @@
+all_production:
+  '2012':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 48486048
+      rank: 5
+      percent: 4.77
+  '2013':
+    - product: Wind
+      name: Wind
+      units: Mwh
+      value: 9625229
+      rank: 5
+      percent: 5.73
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 52147193
+      rank: 5
+      percent: 5.29
+  '2014':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 57969300
+      rank: 5
+      percent: 5.8
+  '2015':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 56101030
+      rank: 4
+      percent: 6.25
+  '2016':
+    - product: Coal
+      name: Coal
+      units: short tons
+      value: 43422136
+      rank: 4
+      percent: 5.96
+revenue:
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 3454.87
+      rank: 5
+      percent: 0

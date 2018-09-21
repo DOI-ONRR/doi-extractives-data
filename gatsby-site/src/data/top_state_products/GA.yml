@@ -1,0 +1,91 @@
+all_production:
+  '2006':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3362210.03
+      rank: 4
+      percent: 8.67
+  '2007':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3362097.48
+      rank: 4
+      percent: 8.62
+  '2008':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2660284.7
+      rank: 4
+      percent: 7.13
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 2745569.16
+      rank: 4
+      percent: 7.62
+  '2010':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3053561.57
+      rank: 3
+      percent: 8.21
+  '2011':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3070256.66
+      rank: 3
+      percent: 8.2
+  '2012':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3107493.58
+      rank: 3
+      percent: 8.22
+  '2013':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3409442.3
+      rank: 3
+      percent: 8.52
+  '2014':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 3749885.71
+      rank: 2
+      percent: 8.86
+  '2015':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4392768.36
+      rank: 1
+      percent: 10.48
+  '2016':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4302528.55
+      rank: 1
+      percent: 10.51
+  '2017':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: Mwh
+      value: 4729902.84
+      rank: 1
+      percent: 10.93
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 2136601.97
+      rank: 5
+      percent: 4.03

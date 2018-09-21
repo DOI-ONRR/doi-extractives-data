@@ -1,0 +1,457 @@
+all_production:
+  '2006':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1343711
+      rank: 2
+      percent: 9.22
+  '2007':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1252691
+      rank: 2
+      percent: 8.56
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 43967
+      rank: 2
+      percent: 7.19
+  '2008':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 156013
+      rank: 2
+      percent: 18.05
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1382819.56
+      rank: 2
+      percent: 9.32
+  '2009':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 174309
+      rank: 2
+      percent: 19.56
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 1633213
+      rank: 2
+      percent: 10.88
+  '2010':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 216916.83
+      rank: 2
+      percent: 17.89
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2069730
+      rank: 2
+      percent: 13.6
+  '2011':
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 291224.51
+      rank: 2
+      percent: 16.02
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2146119
+      rank: 2
+      percent: 14.01
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2347464.82
+      rank: 2
+      percent: 15.08
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 473416.53
+      rank: 3
+      percent: 10.94
+  '2013':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2669953.08
+      rank: 2
+      percent: 16.93
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 745382
+      rank: 3
+      percent: 8.25
+  '2014':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 2728788
+      rank: 2
+      percent: 17.19
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 1013682
+      rank: 3
+      percent: 5.73
+  '2015':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 3110504
+      rank: 2
+      percent: 19.54
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 1657405
+      rank: 3
+      percent: 6.66
+  '2016':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 3353399
+      rank: 2
+      percent: 21.19
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3124060
+      rank: 4
+      percent: 8.66
+  '2017':
+    - product: Geothermal
+      name: Geothermal
+      units: Mwh
+      value: 3364690.89
+      rank: 2
+      percent: 21.06
+    - product: Solar
+      name: Solar
+      units: Mwh
+      value: 3834979.45
+      rank: 4
+      percent: 7.24
+federal_production:
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 123838519
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 569422744
+      rank: 2
+      percent: 34.72
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 198988743
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 726844239
+      rank: 2
+      percent: 40.03
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 163346106
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1011707412
+      rank: 2
+      percent: 47.02
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 131014604
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1023720775
+      rank: 2
+      percent: 47.77
+  '2012':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 123103803
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1213710003
+      rank: 1
+      percent: 56.91
+  '2013':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 57238368
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1440832542
+      rank: 1
+      percent: 60.74
+  '2014':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 46536535
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1551677028
+      rank: 1
+      percent: 59.94
+  '2015':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 19439305
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 1868257725
+      rank: 1
+      percent: 66.91
+  '2016':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 19032988
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 2110624246
+      rank: 1
+      percent: 69.97
+  '2017':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      name: Geothermal
+      units: 'Direct Utilization, Hundreds of Gallons'
+      value: 20165180
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      value: 2089417402
+      rank: 1
+      percent: 70.52
+revenue:
+  '2006':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 1752025.5
+      rank: 2
+      percent: 13
+    - product: Potassium
+      name: null
+      units: null
+      value: 11619.42
+      rank: 3
+      percent: 0.2
+    - product: Sand & Gravel
+      name: null
+      units: null
+      value: 2.4
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 14779736.51
+      rank: 2
+      percent: 38.7
+    - product: Potassium
+      name: null
+      units: null
+      value: 1899
+      rank: 4
+      percent: 0
+  '2008':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 31473048.08
+      rank: 1
+      percent: 70.9
+    - product: Potassium
+      name: null
+      units: null
+      value: 12626
+      rank: 3
+      percent: 0.1
+    - product: Sand & Gravel
+      name: null
+      units: null
+      value: 320.59
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 12701747.01
+      rank: 1
+      percent: 40.7
+    - product: Potassium
+      name: null
+      units: null
+      value: -46.5
+      rank: 4
+      percent: null
+  '2010':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 7805764.91
+      rank: 2
+      percent: 42.1
+    - product: Potassium
+      name: null
+      units: null
+      value: 18045
+      rank: 3
+      percent: 0.1
+  '2011':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 6536018.65
+      rank: 2
+      percent: 41.5
+  '2012':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4765715.29
+      rank: 2
+      percent: 31.6
+    - product: Potassium
+      name: null
+      units: null
+      value: 10004
+      rank: 3
+      percent: 0
+  '2013':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4359452.85
+      rank: 2
+      percent: 28.8
+    - product: Potassium
+      name: null
+      units: null
+      value: 10142.63
+      rank: 3
+      percent: 0
+  '2014':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4683007.88
+      rank: 2
+      percent: 27.3
+    - product: Potassium
+      name: null
+      units: null
+      value: -2301.95
+      rank: 5
+      percent: null
+  '2015':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4239099.84
+      rank: 2
+      percent: 30.2
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 2648521.15
+      rank: 4
+      percent: 0.3
+    - product: Potassium
+      name: null
+      units: null
+      value: 15006
+      rank: 3
+      percent: 0.1
+  '2016':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 4576034.8
+      rank: 2
+      percent: 34.3
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 1633895.52
+      rank: 5
+      percent: 0.4
+    - product: Potassium
+      name: null
+      units: null
+      value: 11661.83
+      rank: 3
+      percent: 0.1
+  '2017':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 5052611.27
+      rank: 2
+      percent: 36
+    - product: Potassium
+      name: null
+      units: null
+      value: 5845.17
+      rank: 3
+      percent: 0.1

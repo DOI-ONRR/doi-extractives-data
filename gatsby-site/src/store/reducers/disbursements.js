@@ -41,10 +41,8 @@ export default (state = initialState, action) => {
 
     switch (type) {
         case SELECT_YEAR:
-            console.log("Disbursements Action: ", action);
             return ({...state, 'year': payload});
         case HYDRATE_DISBURSEMENTS:
-            console.log("Disbursements Action: ", action);
             let newState = hydrateDisbursements(payload, state.year, state.fundInfo);
             return ({...state, ...newState});
         default:

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { glossaryTermSelected as glossaryTermSelectedAction } from '../../store/reducers/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../store/reducers/glossary';
 
 const GlossaryTerm = ({termKey, children, glossaryTermSelected, glossaryTerm}) => (
   <span className="term term-end" title="Click to define" tabIndex="0" 
@@ -11,6 +11,6 @@ const GlossaryTerm = ({termKey, children, glossaryTermSelected, glossaryTerm}) =
 );
 
 export default connect(
-  state => ({ glossaryTerm: state.app.glossaryTerm }),
+  state => ({ glossaryTerm: state.glossary.glossaryTerm }),
   dispatch => ({ glossaryTermSelected: term => dispatch(glossaryTermSelectedAction(term)) }),
 )(GlossaryTerm);

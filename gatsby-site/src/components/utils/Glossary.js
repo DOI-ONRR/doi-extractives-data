@@ -1,14 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import lazy from 'lazy.js';
-import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/glossary';
 
-import GLOSSARY_TERMS from '../../data-graphql/terms.yml';
+import utils from '../../js/utils';
+
+import GLOSSARY_TERMS from '../../data/terms.yml';
 
 class GlossaryItem extends React.Component {
 
   state = {
-      toggle: false
+      toggle: this.props.toggle || false,
+      show: this.props.show || true,
     };
 
   onClickHandler(e) {
@@ -17,14 +20,12 @@ class GlossaryItem extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.toggle !== this.state.toggle) {
-      this.setState({toggle: nextProps.toggle});
-    }
+    this.setState({toggle: nextProps.toggle, show: nextProps.term.show});
   }
   
   render() {
     return(
-      <li className="glossary-click glossary-item" data-accordion-item aria-expanded={this.state.toggle} onClick={this.onClickHandler.bind(this)}>
+      <li className="glossary-click glossary-item" aria-hidden={!this.state.show} data-accordion-item aria-expanded={this.state.toggle} onClick={this.onClickHandler.bind(this)}>
         <h2 className="glossary-click glossary-term">{this.props.term.name}</h2>
         <button className="glossary-click" data-accordion-button role="button" aria-controls="glossary-accordion--content--2" ><span className="glossary-click sr-only">Toggle for {this.props.term.name}</span></button>
         <p data-accordion-content className="glossary-click glossary-definition accordion-content" aria-hidden={!this.state.toggle}>{this.props.term.definition}</p>
@@ -41,9 +42,7 @@ class Glossary extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.glossaryTerm !== this.state.value) {
-      this.setState({glossaryTerm: nextProps.glossaryTerm, toggleHidden: !nextProps.glossaryOpen});
-    }
+    this.setState({glossaryTerm: nextProps.glossaryTerm, toggleHidden: !nextProps.glossaryOpen});
   }
 
   handleChange(event) {
@@ -81,7 +80,8 @@ class Glossary extends React.Component {
   }
 
   render() {    
-    let filteredTerms = filterTerms(this.state.glossaryTerm);
+
+    let filteredTerms = filterGlossaryTerms(this.state.glossaryTerm);
     return (
       <div id="glossary" className="drawer glossary-click" aria-describedby="glossary-result" aria-hidden={this.state.toggleHidden}>
         <div className="glossary-click container">
@@ -96,8 +96,8 @@ class Glossary extends React.Component {
           value={this.state.glossaryTerm} onChange={this.handleChange.bind(this)} />
         <div id="glossary-click glossary-result">
           <ul className="glossary-click js-glossary-list list-unstyled" data-accordion="glossary-accordion">
-            {(filteredTerms).map((term, index) => (
-              <GlossaryItem key={index} term={term} toggle={(filteredTerms.length === 1)}/>
+            {(filteredTerms.terms).map((term, index) => (
+              <GlossaryItem key={index} term={term} toggle={(filteredTerms.toggle)}/>
             ))}
           </ul>
         </div>
@@ -107,10 +107,29 @@ class Glossary extends React.Component {
   
 }
 
+function filterGlossaryTerms(glossaryTerm){
+  let numOfTermsToShow = 0;
+  if(glossaryTerm !== undefined && glossaryTerm !== '') {
+    GLOSSARY_TERMS.forEach((term) => { 
+      term.show = false;
+      if(term.name.toLowerCase().includes(glossaryTerm.toLowerCase())){
+        term.show = true;
+        numOfTermsToShow++;
+      }
+    });
+  }
+  else {
+    GLOSSARY_TERMS.forEach(term => term.show = true);
+  }
+  return {terms: GLOSSARY_TERMS, toggle: (numOfTermsToShow === 1)};
+}
+
 export function filterTerms(glossaryTerm){
   if(glossaryTerm !== undefined && glossaryTerm !== '') {
     return (lazy(GLOSSARY_TERMS)
-      .filter(function(term){return lazy(term.name.toLowerCase()).contains(glossaryTerm.toLowerCase());})
+      .filter(function(term){
+        return (term.name.toLowerCase() === glossaryTerm.toLowerCase());
+      })
       .toArray());
   }
   else {
@@ -119,6 +138,6 @@ export function filterTerms(glossaryTerm){
 }
 
 export default connect(
-  state => ({ glossaryTerm: state.app.glossaryTerm, glossaryOpen: state.app.glossaryOpen }),
+  state => ({ glossaryTerm: state.glossary.glossaryTerm, glossaryOpen: state.glossary.glossaryOpen }),
   dispatch => ({ glossaryTermSelected: (term, doOpen) => dispatch(glossaryTermSelectedAction(term, doOpen)) }),
 )(Glossary);

@@ -71,7 +71,7 @@ export default ({ data, children}) => {
         <Header siteMetadata={data.site.siteMetadata} />
 
         <main>
-          <Glossary terms={data.allTermsYaml.edges} />
+          <Glossary />
 
           {children()}
         </main>
@@ -85,14 +85,6 @@ export default ({ data, children}) => {
 
 export const query = graphql`
   query IndexLayoutQuery{
-    allTermsYaml {
-      edges {
-        node {
-          name
-          definition
-        }
-      }
-    }
     site {
       siteMetadata {
         title

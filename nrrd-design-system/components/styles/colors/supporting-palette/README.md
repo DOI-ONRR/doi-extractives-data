@@ -21,7 +21,7 @@ Green represents land-ownership in maps, and data in charts. It also serves to a
 
 ### Blues
 Blues do not feature heavily in the site design. They're mainly reserved for links, buttons, and the county-level maps on state Explore pages.
-- `$blue-dark`: the text color over the `$blue-cthru` background color (on the filter panel for [Federal Revenue by Company](https://revenuedata.doi.gov/how-it-works/federal-revenue-by-company/2017/)), to achieve sufficient color contrast
+- `$blue-dark`: the text color over the `$blue-cthru` background color (on the filter panel for [Federal Revenue by Company](https://revenuedata.doi.gov/how-it-works/federal-revenue-by-company/2016/)), to achieve sufficient color contrast
 - `$blue-mid-dark`: for maps only
 - `$blue-mid`: for maps only
 - `$blue-cthru` is semi-transparent, and used as the background color for filter panel overlays

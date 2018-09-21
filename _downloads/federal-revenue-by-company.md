@@ -32,7 +32,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset provides natural resource revenue data by company for calendar years 2013-2016. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
+description: This dataset provides natural resource revenue data by company for calendar years 2013-2017. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
 tag:
 - Data
 - Downloads
@@ -48,8 +48,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2016_2017-04-04.xlsx">{% include svg/icon-download.svg %}
-    Full dataset (xlsx, 382 KB)</a></li>
+    <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2017.xlsx">{% include svg/icon-download.svg %}
+    Full dataset (xlsx, 440 KB)</a></li>
   </ul>
 </p>
 
@@ -77,7 +77,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
 
-Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals on these datasets are slightly different (by about $90 million). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 
 ## Data dictionary
 

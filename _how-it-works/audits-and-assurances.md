@@ -1,5 +1,5 @@
 ---
-title: 'Audits and Assurances | How it Works'
+title: 'Audits and Assurances | How It Works'
 title_display: Revenue data standards, audits, and assurances
 layout: content
 description: Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
@@ -15,6 +15,7 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 selector: list
+archive: yes
 ---
 
 > {{ page.description }}
@@ -23,7 +24,11 @@ selector: list
 
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
-<a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf">{% include svg/icon-download.svg %}Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+    <p class="para-sm">{% include svg/icon-archive.svg %} This content was created as part of the {{ "USEITI" | term_end:"EITI Standard" }} and is no longer being updated.</p>
+  </li>
+</ul>
 
 ## Resources
 

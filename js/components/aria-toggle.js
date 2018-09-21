@@ -11,10 +11,12 @@
     var target = document.getElementById(button.getAttribute(CONTROLS));
     button.setAttribute(EXPANDED, expanded);
     var attr = button.getAttribute('aria-toggles') || HIDDEN;
-    target.setAttribute(
-      attr,
-      (attr === HIDDEN) ? !expanded : expanded
-    );
+    if(target !== null) {
+      target.setAttribute(
+        attr,
+        (attr === HIDDEN) ? !expanded : expanded
+      );    
+    }
     return expanded;
   };
 

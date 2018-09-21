@@ -13,3 +13,74 @@
     }
   }
 }
+
+$onshore-color: $green-dark;
+$offshore-color: $green-light;
+$eight-g-color: $green-light;
+$gomesa-color: $green-land;
+
+
+.disbursement-stacked-bar {
+
+
+	.bureau {
+		float: none;
+		display: table-cell;
+	}
+
+	.chart-legend-onshore {
+		background-color: $onshore-color;
+	}
+	.chart-legend-gomesa {
+		background-color: $gomesa-color;
+	}
+	.chart-legend-8g {
+		background-color: $eight-g-color;
+	}
+	.chart-legend-offshore {
+		background-color: $offshore-color;
+	}
+
+	.stacked-bar-onshore {
+		fill: $onshore-color;
+	}
+	.stacked-bar-gomesa {
+		fill: $gomesa-color;
+	}
+	.stacked-bar-8g {
+		fill: $eight-g-color;
+	}
+	.stacked-bar-offshore {
+		fill: $offshore-color;
+	}
+}
+
+@media screen and (max-width: $medium) {
+	#federal-disbursements {
+
+		.article_table {
+			table-layout: fixed;
+		}
+	}
+}
+
+@media screen and (max-width: $small) {
+	.disbursement-stacked-bar {
+		.bureau {
+			display: block;
+		}
+		td:nth-child(2) {
+
+			display: block;
+			border-top: none;
+		}
+	}
+
+	#federal-disbursements {
+
+		.article_table th:nth-child(2) {
+			display: none;
+		}
+	}
+}
+

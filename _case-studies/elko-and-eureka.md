@@ -28,6 +28,7 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
+archive: yes
 ---
 
 > Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2016, the U.S. was the fourth-largest producer of gold, extracting 209 tons valued at $8.5 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fourth largest in the world.[^2] Nevada accounts for 74% of total U.S. gold production.[^3]

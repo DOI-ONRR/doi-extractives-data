@@ -1,0 +1,101 @@
+federal_production:
+  '2006':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4651582
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 39765934
+      rank: 5
+      percent: 0
+  '2007':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4803734
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 43408222
+      rank: 5
+      percent: 0
+  '2008':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4671004
+      rank: 3
+      percent: 0
+  '2009':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4334382
+      rank: 3
+      percent: 0
+  '2010':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 3890640
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 45175598
+      rank: 5
+      percent: 0
+  '2011':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4109014
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 48874618
+      rank: 5
+      percent: 0
+  '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 5066516
+      rank: 3
+      percent: 0
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 65988156
+      rank: 5
+      percent: 0
+  '2013':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4825236
+      rank: 4
+      percent: 0
+  '2014':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4564066
+      rank: 4
+      percent: 0
+  '2015':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 4046900
+      rank: 4
+      percent: 0

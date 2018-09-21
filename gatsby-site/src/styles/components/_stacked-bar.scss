@@ -1,0 +1,142 @@
+.stacked-bar {
+	width: 360px;
+}
+
+@media screen and (max-width: $medium) {
+	.stacked-bar {
+		width: inherit;
+	}
+}
+
+.stacked-bar-color-0 {
+	fill: $green-dark;
+}
+.stacked-bar-color-1 {
+	fill: $green-land;
+}
+.stacked-bar-color-2 {
+	fill: $green-mid;
+}
+.stacked-bar-color-3 {
+	fill: $green-light;
+}
+
+.stacked-bar-additional-data {
+	border: none;
+	width: 100%;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: middle;
+	td {
+		border: none;
+		padding: 0.1em;
+	}
+	td:nth-child(2) {
+		padding-left: 0em;
+	}
+}
+
+
+.stacked-bar-legend {
+	border: none;
+	td:first-child {
+		width: 10px;
+	}
+	td {
+		border: none;
+		vertical-align: middle;
+		padding: 0.1em;
+	}
+	td:nth-child(2) {
+		padding-left: 0.5em;
+		width: 150px;
+	}
+	td:nth-child(3) {
+		text-align: right;
+
+	}
+
+	span {
+		font-weight: 300;
+		line-height: 1.3;
+	}
+
+	div {
+		width: 10px;
+		height: 10px;
+		background-color: blue;
+	}
+}
+
+.chart-legend-total-row{
+	font-weight: bold;
+	td{
+		padding-top: 0.3em;
+	}
+	td:nth-child(2) {
+		text-align: right;
+		padding-left: 0em;
+	}
+}
+
+.chart-legend-additional-data-row{
+	font-weight: bold;
+	td{
+		padding-top: 0.5em;
+	}
+	td:nth-child(2) {
+		text-align: right;
+		padding-left: 0em;
+	}
+}
+
+/* Style for our pattern library example */
+.react-live-preview {
+
+	.stacked-bar-legend{
+		tr:first-child{
+			div{
+				background-color: $green-dark;			
+			}
+		}
+		tr:nth-child(2){
+			div{
+				background-color: $green-land;			
+			}
+		}
+		tr:nth-child(3){
+			div{
+				background-color: $green-mid;			
+			}
+		}
+		tr:nth-child(4){
+			div{
+				background-color: $green-light;			
+			}
+		}
+	}
+
+	.stacked-bar {
+
+		g:first-child{
+			rect{
+				fill: $green-dark;
+			}		
+		}	
+		g:nth-child(2){
+			rect{
+				fill: $green-land;
+			}		
+		}	
+		g:nth-child(3){
+			rect{
+				fill: $green-mid;
+			}		
+		}	
+		g:nth-child(4){
+			rect{
+				fill: $green-light;
+			}		
+		}		
+	}
+}

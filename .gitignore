@@ -8,7 +8,7 @@
 .jekyll-metadata
 .sass-cache
 patterns
-public
+/public/
 _site
 node_modules
 tmp
@@ -17,3 +17,5 @@ styleguide
 .brackets.json
 .clasp.json
 .npmrc
+/.project
+gatsby-public

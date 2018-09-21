@@ -23,12 +23,12 @@
 //
 // Styleguide components.accordions
 
-[accordion-item] {
+[data-accordion-item] {
   position: relative;
 
   &[aria-expanded=true] {
 
-    [accordion-button]:not([accordion-text]) {
+    [data-accordion-button]:not([accordion-text]) {
       @include rotate(270deg, 3);
 
       &:after {
@@ -60,7 +60,7 @@
   }
 
   &[aria-expanded=false] {
-    [accordion-button]:not([accordion-text]) {
+    [data-accordion-button]:not([accordion-text]) {
       @include rotate(90deg, 1);
 
       &:after {
@@ -95,13 +95,13 @@
       display: inline-block;
     }
 
-    [accordion-button] {
+    [data-accordion-button] {
       display: none;
     }
   }
 }
 
-[accordion-button],
+[data-accordion-button],
 [accordion-text] {
   cursor: pointer;
 
@@ -113,7 +113,7 @@
   }
 }
 
-[accordion-button] {
+[data-accordion-button] {
   background-color: transparent;
   background-size: 50%;
   float: right;

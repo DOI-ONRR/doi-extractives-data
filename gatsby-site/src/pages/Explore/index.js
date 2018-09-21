@@ -17,7 +17,7 @@ import NationalGDP from 'components/locations/NationalGDP';
 import NationalJobs from 'components/locations/NationalJobs';
 import NationalDisbursements from 'components/sections/NationalDisbursements';
 
-import { withPrefix } from 'components/utils/temp-link';
+import { withPrefixSVG } from 'components/utils/temp-link';
 
 const PAGE_ID = 'US';
 const PAGE_TITLE = 'Explore data';
@@ -102,14 +102,14 @@ class ExplorePage extends React.Component {
     componentDidMount() {
         const script1 = document.createElement("script");
 
-        script1.src = withPrefix("/public/js/main.min.js");
+        script1.src = withPrefixSVG("/public/js/main.min.js");
         script1.async = false;
 
         document.body.appendChild(script1);
 
         const script2 = document.createElement("script");
 
-        script2.src = withPrefix("/public/js/state-pages.min.js");
+        script2.src = withPrefixSVG("/public/js/state-pages.min.js");
         script2.async = false;
 
         document.body.appendChild(script2);

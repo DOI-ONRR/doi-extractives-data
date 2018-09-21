@@ -27,7 +27,7 @@ $term-width-max: 220px;
     border-top: 2px solid $black-light;
   }
 
-  [accordion-button] {
+  [data-accordion-button] {
     color: $white;
     font-size: 0.8rem;
     margin: 0;

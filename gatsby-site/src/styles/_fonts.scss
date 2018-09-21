@@ -73,26 +73,6 @@
   padding-left: $base-padding-lite;
 }
 
-.icon {
-  display: inline-block;
-  font-family: 'eiti';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  // added by EITI developers
-  vertical-align: text-bottom;
-}
-.icon-padded {
-  padding-right: $base-padding-lite;
-}
-.icon-padded_after {
-  padding-left: $base-padding-lite;
-}
-
-
 $icon-gold: '\0041';
 $icon-close-x: '\0042';
 $icon-renewables: '\0043';

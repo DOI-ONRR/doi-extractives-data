@@ -5,7 +5,7 @@ import Search from 'components/utils/search';
 
 import NRRDLogo from "img/NRRD-logo.svg";
 
-import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/app';
+import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/glossary';
 
 const Header = (props) => {
   
@@ -74,6 +74,6 @@ const Header = (props) => {
   );
 }
 export default connect(
-  state => ({ glossaryOpen: state.app.glossaryOpen }),
+  state => ({ glossaryOpen: state.glossary.glossaryOpen }),
   dispatch => ({ glossaryTermSelected: (term, doOpen) => dispatch(glossaryTermSelectedAction(term, doOpen)) }),
 )(Header);

@@ -2,10 +2,10 @@
 
 import { combineReducers } from 'redux';
 
-import app from './app';
+import glossary from './glossary';
 import disbursements from './disbursements';
 
-export default combineReducers({ app, disbursements });
+export default combineReducers({ glossary, disbursements });
 
 export const createReducer = (initialState, handlers) => {
 	return function reducer(state = initialState, action) {

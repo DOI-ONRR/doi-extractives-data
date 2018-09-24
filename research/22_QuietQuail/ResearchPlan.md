@@ -5,6 +5,7 @@ We have revised the home page and Explore Data prototypes from the last round of
 * Determine whether the map should come before or after key stats.
 * Determine whether the design for interactivity in key stats works.
 * Determine whether we need the intro paragraphs on Explore Data.
+* Determine whether the reorganization of the Production page works.
 * Determine how the users use the site as part of their overall task flows.
 # Methods and desired participants
 Over the course of a few weeks, we’d like to speak with 5-9 individuals from several of the following user groups for 1 hour remote 1:1 interviews.  We'll focus more on new users because of the goals of the study.
@@ -26,3 +27,4 @@ Interactive Key Facts (this will be incorporated into the Home page prototypes w
 Explore Data
 * [No paragraphs](https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_)
 * [With paragraphs](https://ug2su1.axshare.com/#g=1&p=combined_option)
+* [Production section with images](https://federalist-proxy.app.cloud.gov/preview/onrr/doi-extractives-data/map-icons/explore/#all-production)

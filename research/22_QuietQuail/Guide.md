@@ -8,10 +8,7 @@ What we do on this team is talk with people about their tasks and observe them c
 I have a form for you to digitally sign giving us permission to conduct the study. It just states your rights as a participant and that we won't be capturing any personally identifiable information
 * Consent form: [Google form](https://docs.google.com/forms/d/e/1FAIpQLSenUo9tqJx7vCoM0egah927IkJO5WEQIEBckXgrOaGOxUjLqg/viewform)
 * What the consent for is about (if the participant has any questions): It outlines your rights as a participant and says we won’t misuse your personal information.
-## User Task Background (non site users) (10 min)
-* What do you do for a living?  What are your hobbies?
-- Probe into anything they might do that could be related to natural resources or data.
-## User Task Background (ONRR people or people we know use the site) (20 min)
+## User Task Background (20 min)
 * What is your role and how do you use natural resources data in that role?
 * Have you used the Natural Resources Revenue portal before?
 - Tell me a little bit about what you use the Portal for.
@@ -32,48 +29,42 @@ I have a form for you to digitally sign giving us permission to conduct the stud
 * I want to know what you really think and how you would actually use it.  You can’t hurt my feelings. We want honest feedback so we can make the designs better.
 
 ## Tasks & Questions (30 min)
-* Start at the Home page of the current site.
-https://revenuedata.doi.gov/
-- Take a look at this page and tell me what this site is about.
--  What do you think of the information that’s presented?
-- Is this information useful?
-- Poke around and see if you can learn more about the site.
-- What do you think will be presented when you click on Explore Data?
-* Have the user click on Explore Data.
-https://revenuedata.doi.gov/explore/
-- What do you think you can do on this page?
-- Was this what you expected?
-- Is this information useful?
-* Start with Home Option 1 or Option 2 (alternate between participants).
-https://1rn7bf.axshare.com/#g=1&p=option_1
-https://1rn7bf.axshare.com/#g=1&p=option_2
-- Take a look at this page and tell me what this site is about.
-- What do you think of the information that’s presented?
-- Is this information useful?
-- What is the production trend line telling you? (in option 1 and the monthly view of option 2)
-- What are the Sankey diagrams conveying to you? (in option 1)
-- How does this compare to the first Home page you saw?
-- Poke around and see if you can learn more about the site. (This will bring them to the left nav version of Explore Data.  If they do, probe into whether they noticed and if it helps them understand better.)
-* Switch to other concept and ask same questions.
-- Which of the three Home pages do you like better?
-- Is there another way that you would expect or prefer to see this data that we haven’t shown you?
-* Start with Explore Data B or D (alternate between participants).
-https://ug2su1.axshare.com/#g=1&p=option_b__shorten_page_
-https://ug2su1.axshare.com/#g=1&p=option_d__traffic_cop_page_
-- What do you think you can do on this page?
-- Was this what you expected?
-- Is this information useful?
-- How does this compare to the first Explore Data page you saw?
-* Switch to other concept and ask same questions.
-- Which of the three Explore Data pages do you like better?
-* If there’s time:
-- Show the Indian revenue options and get feedback on those.
-https://ug2su1.axshare.com/#g=1&p=indian_revenue_a
-https://ug2su1.axshare.com/#g=1&p=indian_revenue_b
-https://ug2su1.axshare.com/#g=1&p=indian_revenue_c
-- Show the revenue by company options and get feedback on those.
-https://ug2su1.axshare.com/#g=1&p=revenue_by_company
-https://ug2su1.axshare.com/#g=1&p=revenue_by_company_b
+Prototype menu: https://1rn7bf.axshare.com/#g=1&p=start_1
+
+Prototype order:
+P1: A, B, C
+P2: B, A, C
+P3: C, B, A
+P4: A, C, B
+P5: B, C, A
+P6: C, A, B
+P7: A, B, C
+P8: B, A, C
+P9: C, B, A
+* Start at the Home page of one concept (rotate between participants). 
+  * Take a look at this page and tell me what this site is about.
+  * What do you think of the information that’s presented?
+  * Is this information useful?
+  * Poke around and see if you can learn more about the site.
+* Have the user click on Explore Data. 
+  * What do you think you can do on this page?
+  * Was this what you expected?
+  * Is this information useful?
+* If they don’t stumble on the Production page, take them there.
+  * Can you tell me what production data is available?
+  * What’s the difference between sections on this page?
+  * If they have issues, show the version with icons and get feedback on that. https://federalist-proxy.app.cloud.gov/preview/onrr/doi-extractives-data/map-icons/explore/#all-production
+* Show next home page concept and answer the same questions.
+* Show the third home page concept and answer the same questions.
+* After seeing all 3 concepts:
+  * Which concept best helped you understand the purpose of the site?
+  * Is there anything you would change?
+  * What do you think of the map?
+  * What do you think of the data highlights?
+  * Which of those is more useful to you?
+* Show the second Explore Data concept to get feedback on the descriptions.
+  * Do the descriptions of the sections help you understand the site?
+
 
 
 ## Close (2 min)

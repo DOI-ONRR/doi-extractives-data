@@ -8,7 +8,10 @@ What we do on this team is talk with people about their tasks and observe them c
 I have a form for you to digitally sign giving us permission to conduct the study. It just states your rights as a participant and that we won't be capturing any personally identifiable information
 * Consent form: [Google form](https://docs.google.com/forms/d/e/1FAIpQLSenUo9tqJx7vCoM0egah927IkJO5WEQIEBckXgrOaGOxUjLqg/viewform)
 * What the consent for is about (if the participant has any questions): It outlines your rights as a participant and says we won’t misuse your personal information.
-## User Task Background (20 min)
+## User Task Background (people who don't fit our user profiles) (5 min)
+* Tell us a little bit about your background, so we can get a sense for where your perspective is coming from.
+
+## User Task Background (people who fit our user profiles) (20 min)
 * What is your role and how do you use natural resources data in that role?
 * Have you used the Natural Resources Revenue portal before?
 - Tell me a little bit about what you use the Portal for.
@@ -61,7 +64,7 @@ P9: C, B, A
   * Is there anything you would change?
   * What do you think of the map?
   * What do you think of the data highlights?
-  * Which of those is more useful to you?
+  * Which of those is more useful to you? Should one come before the other on the page?
 * Show the second Explore Data concept to get feedback on the descriptions.
   * Do the descriptions of the sections help you understand the site?
 

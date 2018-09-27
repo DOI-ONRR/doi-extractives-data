@@ -15,6 +15,8 @@ Over the course of a few weeks, we’d like to speak with 5-9 individuals from s
 * Domain Learners: These are people like state and county government reps and tribal leaders who want to monitor what’s going on within their domain and understand the whole system.
 # Recruitment strategy
 In order to recruit research participants from our target user groups, we will contact people who have not used the site before.  We will be developing a strategy for recruiting participants via social media as part of the recruiting effort for this study.
+
+Because we had a really difficult time finding new participants in our defined user groups, we reached out to UX people who work in government to participate in this study.  We figured they'd be suitable to evaluate the ability of the homepage to explain the purpose of the site, since they're coming to the site with fresh eyes and know less about the domain than anyone internal to ONRR.
 # Test assets
 We will be testing these 3 versions of the home page with users to understand which best helps new users understand the purpose of the site.
 * [Home A](https://1rn7bf.axshare.com/#g=1&p=home_a)

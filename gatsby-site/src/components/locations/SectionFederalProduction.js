@@ -4,6 +4,7 @@ import Link from '../utils/temp-link';
 
 import ALL_US_STATES_FEDERAL_PRODUCTION from '../../data/state_federal_production.yml'; 
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
+import * as FEDERAL_COUNTY_PRODUCTION from '../../data/federal_county_production';
 
 import ChartTitle from 'components/molecules/ChartTitle';
 import StickyHeader from 'components/layouts/StickyHeader';
@@ -11,6 +12,7 @@ import YearSelector from 'components/atoms/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';
+import CountyMap from 'components/maps/CountyMap';
 
 import utils from '../../js/utils';
 import slugify from 'slugify';
@@ -21,6 +23,9 @@ let year = 2017;
 const SectionFederalProduction = (props) => {
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
+    const countyProductionForState = FEDERAL_COUNTY_PRODUCTION[usStateData.unique_id];
+
+    console.log(countyProductionForState);
 
     const usStateFederalProducts = ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id].products;
 
@@ -60,10 +65,9 @@ const SectionFederalProduction = (props) => {
 
                 <div className="chart-list">
                     {(lazy(usStateFederalProducts).toArray()).map((product, index) => {
-                        
 
                         let year = '2017';
-                        let productName = utils.getDisplayName_CommodityName(product[0]);
+                        let productName = product[1].name || product[0];
                         let productSlug = utils.formatToSlug(productName, {lower:true});
                         let productVolumes = {};
                         let units = product[1].units;
@@ -82,6 +86,8 @@ const SectionFederalProduction = (props) => {
 
                         /* Start County Map Variables */
                         let mapToggle = 'federal-production-'+ productSlug +'-counties';
+
+
 
                         return (
                             <section key={index} id={"federal-production-" + productSlug } className="product full-width">
@@ -128,7 +134,80 @@ const SectionFederalProduction = (props) => {
                                         </h4>
 
                                         <figure is="eiti-data-map-table">
+                                            <eiti-data-map color-scheme="Blues" steps="4" units={units}>
+                                                <CountyMap 
+                                                    usStateMarkdown={props.usStateMarkdown} 
+                                                    countyProductionData={countyProductionForState} 
+                                                    productKey={product[0]}
+                                                    year={year}
+                                                    isCaption={true}
+                                                    mapToggle={mapToggle}
+                                                    productName={productName}
+                                                    units={units}
+                                                    shortUnits={shortUnits}/>
 
+
+
+                                            </eiti-data-map>
+
+                                            <div className="eiti-data-map-table" id={mapToggle} aria-hidden="true"> 
+                                                <table is='bar-chart-table'
+                                                    data-percent-max='100'
+                                                    class='county-table'
+                                                    year={year}>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>{usStateData.locality_name}</th>
+                                                            <th colSpan='2' className='numeric' data-series='volume'>{ (longUnits.charAt(0).toUpperCase() + longUnits.slice(1))} of {productName.toLowerCase()}</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr className="inner-table-row">
+                                                            <td colSpan="3" className="inner-table-cell">
+                                                                <div className="inner-table-wrapper">
+                                                                    <table>
+                                                                            {(lazy(countyProductionForState).toArray()).map((countyData, index) => {
+                                                                                console.log(countyData);
+                                                                                let yearsValue = countyData[1].products[product[0]].volume;
+                                                                                let productVolume = countyData[1].products[product[0]].volume[year];
+                                                                                console.log(yearsValue);
+                                                                                return(
+                                                                                <tbody key={index}>
+                                                                                    <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
+                                                                                      <td><div className='swatch'
+                                                                                               data-value-swatch={productVolume}
+                                                                                               data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
+                                                                                      <td data-value-text={productVolume}
+                                                                                          data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                                                      <td className='numberless'
+                                                                                          data-series='volume'
+                                                                                          data-value={productVolume}
+                                                                                          data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                                                    </tr>
+                                                                                    <tr data-fips={countyData[0]}>
+                                                                                      <td colSpan='3'
+                                                                                          data-year-values={JSON.stringify(yearsValue)}
+                                                                                          data-sentence={productVolume}
+                                                                                          aria-hidden='true'
+                                                                                          data-withheld="false">
+                                                                                          <span className="withheld" aria-hidden="true">
+                                                                                            Data about { productName.toLowerCase() } extraction on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                                                          </span>
+                                                                                          <span className="has-data">
+                                                                                            <span data-value={productVolume}>{utils.formatToCommaInt(productVolume)}</span> {longUnits} of {productName.toLowerCase()} were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                                                          </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                );
+                                                                            })}
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
 
                                         </figure>
                                     </div>

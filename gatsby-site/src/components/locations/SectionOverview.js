@@ -11,8 +11,17 @@ import LAND_STATS from '../../data/land_stats.yml';
 
 import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend';
 import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg';
+import GlossaryTerm from 'components/utils/glossary-term.js';
 
 import utils from '../../js/utils';
+
+import rehypeReact from "rehype-react";
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "glossary-term": GlossaryTerm },
+
+}).Compiler; 
 
 let year;
 
@@ -43,8 +52,8 @@ const SectionOverview = (props) => {
                   <OptIn usStateData={usStateData} optInIntroHtml={usStateFields.state_optin_intro} />
                 }
 
-                {usStateFields.case_study_link && 
-                  <CaseStudyLink caseStudyHtml={usStateFields.case_study_link} />
+                {usStateFields.case_study_link_htmlAst && 
+                  <CaseStudyLink caseStudyHtml={usStateFields.case_study_link_htmlAst} />
                 }
 
             </section>
@@ -211,6 +220,7 @@ const FederalLandInfo = (props) => {
 
 /* Includes link to relevant offshore region, if there is one */
 const OffshoreRegion = (props) => {
+  console.log(props.usStateData.nearby_offshore_region);
   return (
     <p>
       {props.usStateData.title} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {props.usStateData.title}, see {ReactHtmlParser(props.usStateData.nearby_offshore_region)}.
@@ -236,12 +246,13 @@ const OptIn = (props) => {
 
 /* Includes case study link, if there is one */
 const CaseStudyLink = (props) => {
+  console.log(JSON.parse(props.caseStudyHtml));
   return (
     <div>
-      {ReactHtmlParser(props.caseStudyHtml)}
+      {renderAst(JSON.parse(props.caseStudyHtml))}
     </div>
-  ); 
-}
+  );
+}  
 
 
 

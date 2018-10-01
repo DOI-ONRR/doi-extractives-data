@@ -15,5 +15,5 @@ tag:
 # a custom set of viewbox coordinates
 is_cropped: true
 
-nearby_offshore_region: 'the <Link to="/explore/offshore-gulf/">Gulf of Mexico</Link>'
+nearby_offshore_region: 'the <a href="/explore/offshore-gulf/">Gulf of Mexico</a>'
 ---

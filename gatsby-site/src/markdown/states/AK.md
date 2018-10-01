@@ -24,15 +24,15 @@ state_revenue_year: 2016
 
 locality_name: 'Borough or census area'
 
-nearby_offshore_region: '<a href="/explore/offshore-alaska/">offshore Alaska</a>'
+nearby_offshore_region: '<Link to="/explore/offshore-alaska/">offshore Alaska</Link>'
 
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study](/case-studies/north-slope/).
+    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/).
 
 state_optin_intro: |
     To understand the extractive industries in Alaska, learn about Alaska's unique [land ownership](#understanding-land-ownership), [trust funds](#saving-and-spending), and [revenue sustainability considerations](#revenue-sustainability).
 state_production: |
-    Most of Alaska's crude oil production takes place in the [North Slope Borough](/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
+    Most of Alaska's crude oil production takes place in the [North Slope Borough]({{ site.baseurl }}/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
 
     About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the Federal Energy Regulatory Commission's [Alaska Natural Gas Transportation Projects](https://www.ferc.gov/industries/gas/indus-act/angtp.asp).
 
@@ -48,7 +48,7 @@ state_revenue: |
 
     Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on {{ "unorganized lands" | term:"unorganized land" }}. In 2016, unorganized territory petroleum property taxes totaled $60.4 million, or 54% of the total petroleum property taxes collected by the state.
 state_revenue_sustainability: |
-    ![Alaska revenues compared to Alaska revenues from oil and gas for 2010-2018. 2016-18 figures are projected. Total state revenues were highest in 2011, at nearly $20 billion, and ranged from $13.5 billion to $19.5 billion between 2012 and 2014 before dropping to just under $9 billion in 2015. The total petroleum based revenue amount rose from just over $6 billion in 2010 to $10 billion in 2012, then fell steadily to under $3 billion in 2015. For 2016-2018, revenues from petroleum based revenue is projected to drop to about $1.5 billion, then rise to just under $2 billion, while total revenues are expected to rise steadily to just under $11 billion. The average price of oil is listed under the chart for context. The price of oil was highest in 2011 and 2012, at $99 per barrel, and lowest in 2015, when it dropped to just $41.](/public/img/AK_revenue_sustainability.svg)
+    ![Alaska revenues compared to Alaska revenues from oil and gas for 2010-2018. 2016-18 figures are projected. Total state revenues were highest in 2011, at nearly $20 billion, and ranged from $13.5 billion to $19.5 billion between 2012 and 2014 before dropping to just under $9 billion in 2015. The total petroleum based revenue amount rose from just over $6 billion in 2010 to $10 billion in 2012, then fell steadily to under $3 billion in 2015. For 2016-2018, revenues from petroleum based revenue is projected to drop to about $1.5 billion, then rise to just under $2 billion, while total revenues are expected to rise steadily to just under $11 billion. The average price of oil is listed under the chart for context. The price of oil was highest in 2011 and 2012, at $99 per barrel, and lowest in 2015, when it dropped to just $41.]({{ site.baseurl }}/public/img/AK_revenue_sustainability.svg)
 
     In 2016, oil and gas revenue streams contributed $1.6 billion to Alaska general fund revenues and accounted for 28% of Alaska’s total revenue.
 
@@ -163,7 +163,7 @@ Alaska has two [local government structures (PDF)](https://www.commerce.alaska.g
 
 In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. Development and activity related to the extractive industries are concentrated on Alaska's northern coast, so attention to costs is concentrated in that part of the state.
 
-For a holistic look at how the North Slope Borough has met the transportation, water, emergency services, and reclamation needs of extractive industries, see [the North Slope Borough case study](/case-studies/north-slope/#costs).
+For a holistic look at how the North Slope Borough has met the transportation, water, emergency services, and reclamation needs of extractive industries, see [the North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/#costs).
 
 Multiple organizations in the Alaska state government work on the reclamation and remediation of sites related to extraction. The Alaska state government invests significant tax dollars to prevent and respond to oil and hazardous substance emergencies, including reclamation services such as managing contaminated drilling sites. The [Oil and Hazardous Substance Release Prevention and Response Fund](https://dec.alaska.gov/spar/rfa/history.htm) imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response. The [Division of Spill Prevention and Response (SPAR)](https://dec.alaska.gov/spar/) had a total operating budget of $19.9 million in fiscal year 2016. $12.3 million of that went to spill prevention and response in fiscal year 2016.
 

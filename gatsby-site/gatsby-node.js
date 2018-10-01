@@ -1,24 +1,30 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-const remark = require('remark');
+const Remark = require('remark');
 const remarkHTML = require('remark-html');
+const toHAST = require(`mdast-util-to-hast`);
+const stripPosition = require(`unist-util-remove-position`);
+const hastReparseRaw = require(`hast-util-raw`);
+const visit = require(`unist-util-visit`)
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+const remark = new Remark().data(`settings`, { commonmark: true, footnotes: true, pedantic: true, gfm: true });
+
+exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 
 	const { createNodeField } = boundActionCreators
 
-	createHtmlStringFromFrontmatterField(createNodeField, node, `case_study_link`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_optin_intro`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_production`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_land`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_land_production`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_revenue`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_revenue_sustainability`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_tax_expenditures`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_disbursements`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_saving_spending`);
-	createHtmlStringFromFrontmatterField(createNodeField, node, `state_impact`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `case_study_link`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_optin_intro`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_production`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_land`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_land_production`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_revenue`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_revenue_sustainability`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_tax_expenditures`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_disbursements`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_saving_spending`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_impact`);
 
 };
 
@@ -30,6 +36,47 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return Promise.all([createStatePages(createPage, graphql)]);
 };
 
+const withPathPrefix = (url, pathPrefix) => {
+	let newPrefix = pathPrefix.slice(0, -14); // remove gatsby_public
+
+  return ((newPrefix + url).replace(/\/\//, `/`));
+}
+
+
+const createHtmlAstFromFrontmatterField = (createNodeField, pathPrefix, node, field) => {
+	if (node.internal.type === `MarkdownRemark` &&
+		node.frontmatter[field] !== undefined) {
+
+		let html = remark.parse(node.frontmatter[field]);
+
+		let hast = toHAST(html, { allowDangerousHTML: true });
+
+    if (pathPrefix) {
+      // Ensure relative links include `pathPrefix`
+      visit(hast, `link`, node => {
+        if (
+          node.url &&
+          node.url.startsWith(`/`) &&
+          !node.url.startsWith(`//`)
+        ) {
+
+          node.url = withPathPrefix(node.url, pathPrefix)
+        }
+      })
+    }
+
+    const strippedAst = stripPosition(JSON.parse(JSON.stringify(hast)), true);
+
+    const reparseRaw = hastReparseRaw(strippedAst);
+
+		createNodeField({
+			node,
+			name: field+"_htmlAst",
+			value: JSON.stringify(reparseRaw),
+			});
+
+	}
+}
 
 const createHtmlStringFromFrontmatterField = (createNodeField, node, field) => {
 	if (node.internal.type === `MarkdownRemark` &&
@@ -57,61 +104,63 @@ const createStatePages = (createPage, graphql) => {
 	      graphql(
 	        `
 	          {
-			    allMarkdownRemark (filter:{id: {regex: "/states/"}}) {
-			      us_states:edges {
-			        us_state:node {
-			          frontmatter {
-			            title
-			            unique_id
-			            is_cropped
-			            nearby_offshore_region
-			            opt_in
-			            state_optin_intro
-			            case_study_link
-			            locality_name
-			            state_revenue_year
-			            priority
-			            neighbors
-			          }
-			          fields {
-			          	case_study_link
-			          	state_optin_intro
-			          	state_production
-			          	state_land
-			          	state_land_production
-			          	state_revenue
-			          	state_revenue_sustainability
-			          	state_tax_expenditures
-			          	state_disbursements
-			          	state_saving_spending
-			          	state_impact
-			          }
-			          html
-			        }
-			      }
-			    }
+					    allMarkdownRemark (filter:{id: {regex: "/states/"}}) {
+					      us_states:edges {
+					        us_state:node {
+					          frontmatter {
+					            title
+					            unique_id
+					            is_cropped
+					            nearby_offshore_region
+					            opt_in
+					            state_optin_intro
+					            case_study_link
+					            locality_name
+					            state_revenue_year
+					            priority
+					            neighbors
+					          }
+					          fields {
+					          	case_study_link_htmlAst
+					          	case_study_link_htmlAst
+					          	state_optin_intro_htmlAst
+					          	state_production_htmlAst
+					          	state_land_htmlAst
+					          	state_land_production_htmlAst
+					          	state_revenue_htmlAst
+					          	state_revenue_sustainability_htmlAst
+					          	state_tax_expenditures_htmlAst
+					          	state_disbursements_htmlAst
+					          	state_saving_spending_htmlAst
+					          	state_impact_htmlAst
+					          }
+					          html
+					        }
+					      }
+					    }
 	          }
 	        `
 	      ).then(result => {
 	        if (result.errors) {
 	          reject(result.errors);
 	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
+		          const path = createStatePageSlug(us_state);
 
-	        // Create pages for each markdown file.
-	        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
-	          const path = createStatePageSlug(us_state);
-
-	          createPage({
-	            path,
-	            component: statePageTemplate,
-	            // In your blog post template's graphql query, you can use path
-	            // as a GraphQL variable to query for data from the markdown file.
-	            context: {
-	              stateMarkdown: us_state
-	            },
-	          });
-	        });
-	        resolve();
+		          createPage({
+		            path,
+		            component: statePageTemplate,
+		            // In your blog post template's graphql query, you can use path
+		            // as a GraphQL variable to query for data from the markdown file.
+		            context: {
+		              stateMarkdown: us_state
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
 	      })
 	    );
 	  });

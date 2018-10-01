@@ -133,6 +133,8 @@ class StatePages extends React.Component {
         this.usStateMarkdown = props.pathContext.stateMarkdown;
         this.usStateData = this.usStateMarkdown.frontmatter;
     	this.usStateFields = this.usStateMarkdown.fields || {};
+
+
     }
 
     componentDidMount() {
@@ -152,6 +154,7 @@ class StatePages extends React.Component {
     }
 
     render () {
+
 	    return (
 			<main id={"state-"+this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
 	            <Helmet
@@ -242,7 +245,7 @@ class StatePages extends React.Component {
 
 								<SectionGDP usStateMarkdown={this.usStateMarkdown} />
 
-								<SectionJobs usStateMarkdown={this.usStateMarkdown} />
+
 
 								<SectionExports usStateMarkdown={this.usStateMarkdown} />
 								

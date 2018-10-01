@@ -40,7 +40,7 @@ state_land_production: |
 state_revenue: |
     Revenue from natural resource extraction on federal, state, and private land is a significant source of revenue for state and local governments in Montana.
 state_revenue_sustainability: |
-    ![Bar graph comparing Montana natural resources revenues to total general fund revenue from 2011-2014. Over that period, total general fund revenue rose from just above $2 billion in 2011 to over $2.5 billion in 2014. Revenue from natural resources stayed relatively flat at a little more than $0.25 billion each year.](/public/img/MT_revenue_sustainability.svg)
+    ![Bar graph comparing Montana natural resources revenues to total general fund revenue from 2011-2014. Over that period, total general fund revenue rose from just above $2 billion in 2011 to over $2.5 billion in 2014. Revenue from natural resources stayed relatively flat at a little more than $0.25 billion each year.]({{ site.baseurl }}/public/img/MT_revenue_sustainability.svg)
 
     In 2016, natural resource revenue streams accounted for 9.7% of revenue collected by the Montana Department of Revenue. Montana's revenue from natural resources has decreased by over 40% in the last three years, and the percentage of revenue from natural resources has decreased from 11.1% of total revenue that went to the state general fund in 2014 to 6.4% in 2016.
 state_tax_expenditures: |

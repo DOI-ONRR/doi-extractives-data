@@ -20,18 +20,22 @@ const SectionDisbursements = (props) => {
     const usStateFields = props.usStateMarkdown.fields || {};
     const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id];
 
+
     function getDisbursementsContent(){
     	let content;
+	    const onshoreDisbursements = (usStateDisbursements && usStateDisbursements.All.Onshore)? usStateDisbursements.All.Onshore[year] : 0;
+	    const offshoreDisbursements = (usStateDisbursements && usStateDisbursements.All.Offshore)? usStateDisbursements.All.Offshore[year] : 0;
+	    const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All)? usStateDisbursements.All.All[year] : 0;
 
-    	if(usStateDisbursements && usStateDisbursements.All.Offshore[year] > 0){
+    	if(usStateDisbursements && offshoreDisbursements > 0){
 			content = <div>
 						<p>
-							ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong>
+							ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(allDisbursements)} to {usStateData.title}.</strong>
 							This included revenues from both onshore and offshore extraction in or near {usStateData.title}:
 						</p>
 						<ul>
-							<li>{utils.formatToDollarInt(usStateDisbursements.All.Onshore[year])} was from onshore revenues</li>
-							<li>{utils.formatToDollarInt(usStateDisbursements.All.Offshore[year])} was from offshore revenues</li>
+							<li>{utils.formatToDollarInt(onshoreDisbursements)} was from onshore revenues</li>
+							<li>{utils.formatToDollarInt(offshoreDisbursements)} was from offshore revenues</li>
 						</ul>
 					</div>;
     	}

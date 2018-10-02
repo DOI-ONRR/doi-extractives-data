@@ -221,9 +221,9 @@ const RevenueProcessTable = (props) => {
 		let revenueTypeValues = {};
 
 		revenueTypeValues.OilGas = getYearValueForCommodityRevenueType(oilAndGasCommodityValues[type], props.year);
-		revenueTypeValues.Oil = getYearValueForCommodityRevenueType(revenueTypes.Oil[type], props.year);
-		revenueTypeValues.Gas = getYearValueForCommodityRevenueType(revenueTypes.Gas[type], props.year);
-		revenueTypeValues.NGL = getYearValueForCommodityRevenueType(revenueTypes.NGL[type], props.year);
+		revenueTypeValues.Oil = (revenueTypes.Oil) && getYearValueForCommodityRevenueType(revenueTypes.Oil[type], props.year);
+		revenueTypeValues.Gas = (revenueTypes.Gas) && getYearValueForCommodityRevenueType(revenueTypes.Gas[type], props.year);
+		revenueTypeValues.NGL = (revenueTypes.NGL) && getYearValueForCommodityRevenueType(revenueTypes.NGL[type], props.year);
 		if(revenueTypes['Oil Shale'] !== undefined) {
 			revenueTypeValues.OilShale = getYearValueForCommodityRevenueType(revenueTypes['Oil Shale'][type], props.year);
 		}

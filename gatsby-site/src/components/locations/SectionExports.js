@@ -23,7 +23,7 @@ const SectionExports = (props) => {
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
 
-	const usStateExports = ALL_US_STATES_EXPORTS[usStateData.unique_id].commodities;
+	const usStateExports = (ALL_US_STATES_EXPORTS[usStateData.unique_id]) ? ALL_US_STATES_EXPORTS[usStateData.unique_id].commodities : undefined;
 
 	return(
 		<section id="exports" is="year-switcher-section" class="economic exports">

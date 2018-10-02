@@ -17,7 +17,7 @@ const SectionRevenue = (props) => {
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
 
-	const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id].commodities;
+	const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities;
 
 	return (
 		<section id="revenue" is="year-switcher-section" className="federal revenue">

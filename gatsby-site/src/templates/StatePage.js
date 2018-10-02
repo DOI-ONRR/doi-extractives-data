@@ -288,7 +288,9 @@ export default connect(
 /* @TODO: replace hardcoded year value */
 const KeyAllProductionSummary = (props) => {
     const usStateProducts = ALL_US_STATES_PRODUCTION[props.usStateData.unique_id].products;
-    const usStateTopProducts = TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'][2016];
+    const usStateTopProducts = 
+        (TOP_STATE_PRODUCTS[props.usStateData.unique_id] && TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production']) ? 
+            TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'][2016] : undefined;
 
     let getProductListItems = () => {
         return (

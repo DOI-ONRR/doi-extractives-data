@@ -23,11 +23,10 @@ let year = 2017;
 const SectionFederalProduction = (props) => {
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
+
     const countyProductionForState = FEDERAL_COUNTY_PRODUCTION[usStateData.unique_id];
 
-    console.log(countyProductionForState);
-
-    const usStateFederalProducts = ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id].products;
+    const usStateFederalProducts = ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id] && ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id].products;
 
     return (
         <section id="federal-production" className="federal production">
@@ -167,39 +166,42 @@ const SectionFederalProduction = (props) => {
                                                                 <div className="inner-table-wrapper">
                                                                     <table>
                                                                             {(lazy(countyProductionForState).toArray()).map((countyData, index) => {
-                                                                                console.log(countyData);
-                                                                                let yearsValue = countyData[1].products[product[0]].volume;
-                                                                                let productVolume = countyData[1].products[product[0]].volume[year];
-                                                                                console.log(yearsValue);
-                                                                                return(
-                                                                                <tbody key={index}>
-                                                                                    <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
-                                                                                      <td><div className='swatch'
-                                                                                               data-value-swatch={productVolume}
-                                                                                               data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
-                                                                                      <td data-value-text={productVolume}
-                                                                                          data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
-                                                                                      <td className='numberless'
-                                                                                          data-series='volume'
-                                                                                          data-value={productVolume}
-                                                                                          data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
-                                                                                    </tr>
-                                                                                    <tr data-fips={countyData[0]}>
-                                                                                      <td colSpan='3'
-                                                                                          data-year-values={JSON.stringify(yearsValue)}
-                                                                                          data-sentence={productVolume}
-                                                                                          aria-hidden='true'
-                                                                                          data-withheld="false">
-                                                                                          <span className="withheld" aria-hidden="true">
-                                                                                            Data about { productName.toLowerCase() } extraction on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
-                                                                                          </span>
-                                                                                          <span className="has-data">
-                                                                                            <span data-value={productVolume}>{utils.formatToCommaInt(productVolume)}</span> {longUnits} of {productName.toLowerCase()} were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
-                                                                                          </span>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                                );
+
+                                                                                if(countyData[1].products[product[0]] && countyData[1].products[product[0]].volume[year] > 0){
+                                                                                    let yearsValue = countyData[1].products[product[0]].volume;
+                                                                                    let productVolume = countyData[1].products[product[0]].volume[year];
+
+                                                                                    return(
+                                                                                    <tbody key={index}>
+                                                                                        <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
+                                                                                          <td><div className='swatch'
+                                                                                                   data-value-swatch={productVolume}
+                                                                                                   data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
+                                                                                          <td data-value-text={productVolume}
+                                                                                              data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                                                          <td className='numberless'
+                                                                                              data-series='volume'
+                                                                                              data-value={productVolume}
+                                                                                              data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                                                        </tr>
+                                                                                        <tr data-fips={countyData[0]}>
+                                                                                          <td colSpan='3'
+                                                                                              data-year-values={JSON.stringify(yearsValue)}
+                                                                                              data-sentence={productVolume}
+                                                                                              aria-hidden='true'
+                                                                                              data-withheld="false">
+                                                                                              <span className="withheld" aria-hidden="true">
+                                                                                                Data about { productName.toLowerCase() } extraction on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                                                              </span>
+                                                                                              <span className="has-data">
+                                                                                                <span data-value={productVolume}>{utils.formatToCommaInt(productVolume)}</span> {longUnits} of {productName.toLowerCase()} were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                                                              </span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                    );
+
+                                                                                }
                                                                             })}
                                                                     </table>
                                                                 </div>

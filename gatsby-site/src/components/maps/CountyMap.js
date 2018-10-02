@@ -12,8 +12,11 @@ import iconPlus from '../../img/icons/icon-circled-plus.svg';
 import iconMinus from '../../img/icons/icon-circled-minus.svg';
 
 const CountyMap = (props) => {
+
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
+
+	let localityName = usStateData.locality_name || 'County';
 
     let legendUnits = props.shortUnits || props.units;
 
@@ -106,18 +109,20 @@ const CountyMap = (props) => {
 
 		            {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
+		                	if(countyData[1].products[props.productKey]){
+			                    return(
+			                        <g key={index} 
+			                            className="county feature" 
+			                            data-fips={countyData[0]}
+			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
+			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            >
+			                            <title>{ countyData[1].name }</title>
+			                            <use xlinkHref={usStateSVG+"#county-"+countyData[0]}></use>
+			                        </g>
+			                    );
 
-		                    return(
-		                        <g key={index} 
-		                            className="county feature" 
-		                            data-fips={countyData[0]}
-		                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-		                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
-		                            >
-		                            <title>{ countyData[1].name }</title>
-		                            <use xlinkHref={usStateSVG+"#county-"+countyData[0]}></use>
-		                        </g>
-		                    );
+		                	}
 		                })
 		            }
 
@@ -127,18 +132,19 @@ const CountyMap = (props) => {
 
                     {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
-
-		                    return(
-		                        <g key={index} 
-		                            className="county feature only-stroke" 
-		                            data-fips={countyData[0]}
-		                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-		                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
-		                            >
-		                            <title>{ countyData[1].name }</title>
-		                            <use xlinkHref={usStateSVG+"#county-"+countyData[0]}></use>
-		                        </g>
-		                    );
+		                	if(countyData[1].products[props.productKey]){
+			                    return(
+			                        <g key={index} 
+			                            className="county feature only-stroke" 
+			                            data-fips={countyData[0]}
+			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
+			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            >
+			                            <title>{ countyData[1].name }</title>
+			                            <use xlinkHref={usStateSVG+"#county-"+countyData[0]}></use>
+			                        </g>
+			                    );
+			                }
 		                })
                     }
 
@@ -152,7 +158,7 @@ const CountyMap = (props) => {
 				{props.isCaption &&
 					<div>
 						<figcaption className="legend-data">
-							{usStateData.locality_name} production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+							{localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
 								{legendUnits && 
 									<span className="legend-units"> ({legendUnits})</span>
 								}

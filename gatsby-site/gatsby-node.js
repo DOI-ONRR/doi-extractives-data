@@ -10,6 +10,8 @@ const visit = require(`unist-util-visit`)
 
 const remark = new Remark().data(`settings`, { commonmark: true, footnotes: true, pedantic: true, gfm: true });
 
+let allStateIds = [];
+
 exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 
 	const { createNodeField } = boundActionCreators
@@ -148,6 +150,7 @@ const createStatePages = (createPage, graphql) => {
 	        	// Create pages for each markdown file.
 		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
 		          const path = createStatePageSlug(us_state);
+		          allStateIds.push(us_state.frontmatter.unique_id);
 
 		          createPage({
 		            path,
@@ -211,6 +214,9 @@ exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/About/index.html', aboutPageFrontmatter);
     prependFile.sync(__dirname+'/public/Explore/index.html', explorePageFrontmatter);
+    allStateIds.map((stateId,index) => {
+    	prependFile.sync(__dirname+'/public/Explore/'+stateId+'/index.html',  "---"+os.EOL+"permalink: /explore/"+stateId+"/"+os.EOL+"---"+os.EOL);
+    });
     console.log("Finished prepending frontmatter to files.");
 
 	console.log("Copying Files from public to gatsby-public...");

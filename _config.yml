@@ -102,6 +102,9 @@ collections:
   offshore_regions:
     output: true
     permalink: /explore/:path/
+  states:
+    output: false
+    permalink: /explore/:path/
   reconciliation:
     output: true
     permalink: /how-it-works/reconciliation/:path/

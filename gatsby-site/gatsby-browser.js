@@ -56,7 +56,7 @@ const usStateIds =[
   "OH",
   "OK",
   "OR",
-  "PA".
+  "PA",
   "RI",
   "SC",
   "SD",

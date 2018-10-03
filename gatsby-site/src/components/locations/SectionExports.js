@@ -5,9 +5,9 @@ import lazy from 'lazy.js';
 
 import ALL_US_STATES_EXPORTS from '../../data/state_exports.yml'; 
 
-import ChartTitle from 'components/molecules/ChartTitle';
+import ChartTitle from 'components/charts/ChartTitle';
 import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
+import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import RevenueTypeTable from 'components/locations/RevenueTypeTable';

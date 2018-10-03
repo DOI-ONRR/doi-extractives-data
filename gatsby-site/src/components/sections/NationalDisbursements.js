@@ -14,7 +14,7 @@ import utils from '../../js/utils';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
 import StickyHeader from '../layouts/StickyHeader';
-import YearSelector from '../atoms/YearSelector';
+import YearSelector from '../selectors/YearSelector';
 import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
 import fundedByCongress from '../../data/funded_by_congress.yml';

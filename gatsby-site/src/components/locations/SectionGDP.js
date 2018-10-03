@@ -6,7 +6,7 @@ import lazy from 'lazy.js';
 import ALL_US_STATES_GDP from '../../data/state_gdp.yml'; 
 
 import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
+import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import RevenueTypeTable from 'components/locations/RevenueTypeTable';

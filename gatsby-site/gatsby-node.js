@@ -97,7 +97,7 @@ const createHtmlStringFromFrontmatterField = (createNodeField, node, field) => {
 
 const createStatePages = (createPage, graphql) => {
 	const createStatePageSlug = (state) => {
-		return '/explore/'+state.frontmatter.unique_id+"/";
+		return '/Explore/'+state.frontmatter.unique_id+"/";
 	}
 
 	return new Promise((resolve, reject) => {

@@ -6,9 +6,9 @@ import ALL_US_STATES_FEDERAL_PRODUCTION from '../../data/state_federal_productio
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
 import * as FEDERAL_COUNTY_PRODUCTION from '../../data/federal_county_production';
 
-import ChartTitle from 'components/molecules/ChartTitle';
+import ChartTitle from 'components/charts/ChartTitle';
 import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
+import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 import {filterTerms} from 'components/utils/Glossary';

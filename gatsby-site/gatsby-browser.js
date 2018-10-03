@@ -40,9 +40,8 @@ exports.onClientEntry = () => {
   }
   else if(path.includes("/explore") && usStateIds.includes(statePathId)) {
     console.log(statePathId);
-    loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore"+statePathId+".json","path": path}]);
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-ar.json","path":"/Explore/"+statePathId+"/"},{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);
   }
 
 
 }
-

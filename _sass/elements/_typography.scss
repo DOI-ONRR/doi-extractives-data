@@ -84,7 +84,9 @@ ul,
 
 .para-sm-status {
   @include heading('para-sm');
-  color: $blue-darker;
+  color: $white;
+  background-color: $gray-dark;
+  padding: 5px;
   font-weight: $weight-bold;
 }
 

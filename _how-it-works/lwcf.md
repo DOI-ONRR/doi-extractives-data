@@ -53,8 +53,8 @@ The LWCF funds landscape conservation, outdoor recreation, and the needs of loca
 - wildlife habitat
 
 ## Authorization and funding
-### Status
-<p class="para-sm-status">Updated 10/8/18</p>
+<span class="para-sm-status">Updated 10/8/18</span>
+
 The LWCF was {{ "authorized" | term: "authorization" }} through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the Land and Water Conservation Fund authorization expired on October 1, 2018. The LWCF is not eligible to receive disbursements unless Congress reauthorizes it.
 
 Lawmakers have [introduced bills in both the House and the Senate](https://www.congress.gov/search?q=%7B%22congress%22%3A%22115%22%2C%22source%22%3A%22legislation%22%2C%22search%22%3A%22%5C%22land%20and%20water%20conservation%20fund%5C%22%22%7D&searchResultViewType=expanded) to permanently authorize the fund.

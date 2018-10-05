@@ -53,7 +53,7 @@ The LWCF funds landscape conservation, outdoor recreation, and the needs of loca
 - wildlife habitat
 
 ## Authorization and funding
-The LWCF is {{ "authorized" | term: "authorization" }} through September 30, 2018, at which time Congress must decide whether to reauthorize the program.
+_The LWCF was {{ "authorized" | term: "authorization" }} through September 30, 2018. Congress failed to reauthorize the fund before the end of the 2018 fiscal year. As a result, the Land and Water Conservation Fund authorization expired on October 1, 2018. Lawmakers have introduced bills in both the House and the Senate to permanently authorize the fund._
 
 The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. {{ "ONRR" | term }} disburses that revenue to the fund each year.
 

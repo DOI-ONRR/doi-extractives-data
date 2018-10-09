@@ -82,6 +82,14 @@ ul,
   @include heading('para-sm');
 }
 
+.para-sm-status {
+  @include heading('para-sm');
+  color: $white;
+  background-color: $gray-dark;
+  padding: 5px;
+  font-weight: $weight-bold;
+}
+
 p + h2,
 p + .h2,
 p + h3,

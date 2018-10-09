@@ -119,7 +119,7 @@ const NationalRevenue = (props) => {
                     {lazy(REVENUE_COMMODITIES).toArray().map((commodity, index) => {
                             let annualRevenue = commodity[1];
                             let revenue = annualRevenue[year] || 0;
-                            let commodityName = utils.getDisplayName(commodity[0]);
+                            let commodityName = utils.getDisplayName_CommodityName(commodity[0]);
                             let commoditySlug = utils.formatToSlug(commodity[0]);
                             let chartToggle = "revenue-figures-chart-"+commoditySlug;
 

@@ -103,7 +103,7 @@ collections:
     output: true
     permalink: /explore/:path/
   states:
-    output: true
+    output: false
     permalink: /explore/:path/
   reconciliation:
     output: true
@@ -121,12 +121,6 @@ defaults:
       type: reconciliation
     values:
       layout: reconciliation
-
-  - scope:
-      path: ''
-      type: states
-    values:
-      layout: state-page
 
   - scope:
       path: ''

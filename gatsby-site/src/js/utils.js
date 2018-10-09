@@ -5,7 +5,7 @@ import currencyFormatter from 'currency-formatter';
 import commodityNames from '../data/commodity_names.yml';
 
 const utils = {
-	getDisplayName: (key) => {
+	getDisplayName_CommodityName: (key) => {
 		return commodityNames[key] || key;
 	},
 
@@ -56,6 +56,11 @@ const utils = {
 	},
 	range(start, end) {
 		return Array(end - start + 1).fill().map((_, idx) => start + idx)
+	},
+	round(number, precision)
+	{
+	    precision = precision || 0;
+	    return parseFloat( number ).toFixed( precision );
 	}
 }
 

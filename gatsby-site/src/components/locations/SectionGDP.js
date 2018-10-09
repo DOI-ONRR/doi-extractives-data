@@ -51,7 +51,7 @@ const SectionGDP = (props) => {
 			    </div>
 			</div>
 
-			{usStateGDP &&
+			{usStateGDP && usStateGDP[year] &&
 				
 				<div className="chart-list">
 					<section className="chart-item">

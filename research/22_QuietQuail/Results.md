@@ -38,3 +38,4 @@ Prototype: https://1rn7bf.axshare.com/start_1.html
 * Use the labeling we have in the production wireframe, but add a description to the top of the page.  The last participant saw this and it helped her understand.
 * Don't use the map icons for production.
 * Decide whether most of our users know what we manage to determine whether “All lands and waters” belongs at the top or bottom of production.  The descriptions at the top of the page will also help with this.
+* Revisit the use of links and buttons and icon usage.

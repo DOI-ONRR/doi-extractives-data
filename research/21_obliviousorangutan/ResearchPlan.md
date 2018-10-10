@@ -16,4 +16,4 @@ Over the course of a few weeks, we’d like to speak with 5-9 individuals from s
 # Recruitment strategy
 In order to recruit research participants from our target user groups, we will contact people who have not used the site before and people who signed up for user research in the new employee orientation.
 # Test assets
-[Prototype](https://1rn7bf.axshare.com/start_1.html)
+[Prototype](https://1rn7bf.axshare.com/start_2.html)

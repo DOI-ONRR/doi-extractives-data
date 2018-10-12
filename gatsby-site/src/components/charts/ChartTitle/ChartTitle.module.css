@@ -1,4 +1,4 @@
-@value colors: "../../css-global/colors.css";
+@value colors: "../../../css-global/colors.css";
 @value gray-dark, black-light from colors;
 
 .chartTitle {

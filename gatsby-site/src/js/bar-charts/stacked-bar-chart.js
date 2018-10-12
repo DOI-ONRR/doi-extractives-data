@@ -6,14 +6,13 @@ const stackedBarChart = {
 		console.log(props);
 		let self = this;
 
-		let barWidth = 18;
-		let barMargin = 22;
 		let height = 200;
 		let margin = 20;
-		let padding = 0;
-		let width = (state.length*barWidth)+((state.length-1)*barMargin)+(margin)+(padding*2);
+		let width = 300;
 
 		let keys = props.displayNames || self.getOrderedKeys(state);
+
+		console.log(d3.permute(['08','09','10'], [0,1,2]));
 
 		// Find the max value of the data sets by adding up the all the data items in the each set
 		let maxValue = d3.max(state, (d) => {
@@ -37,26 +36,26 @@ const stackedBarChart = {
 
 
 		let xScale = d3.scaleBand()
-		    .domain(state.map(d => {console.log(d); return Object.keys(d)[0];}))
+		    .domain(state.map(d => {return Object.keys(d)[0];}))
 		    .range([0, width])
-		    .padding(0);
+		    .paddingInner(0.3)
+		    .paddingOuter(0.1);
 
 		let svg = d3.select(el).append('svg')
 					.attr('height', height)
-					.attr('width', width+20);
+					.attr('width', width);
 
 		let stack = d3.stack()
 		 	.keys(keys)
 		 	.offset(d3.stackOffsetNone);
 
 		svg.append("g")
-			.attr("transform", "translate("+(0)+",0)")
 			.selectAll("g")
 			.data(state)
 			.enter().append("g")
 				.attr("height", (height-margin))
-				.attr("width", barWidth)
-				.attr("transform", (d,i) => { return "translate("+((i*xScale.bandwidth())+(barMargin/2))+",0)"; })
+				.attr("width", xScale.bandwidth())
+				.attr("transform", (d,i) => { return "translate("+xScale(Object.keys(d)[0])+",0)"; })
 				.attr("class", props.barClassNames)
 				.on("click", function(d){
 					d3.selectAll("g").classed(props.barSelectedClassNames, false ); 
@@ -69,11 +68,8 @@ const stackedBarChart = {
 					.append("rect")
 					.attr("y", (d) => { return yScale(d[0][1]); })
 					.attr("height", function(d) { return yScale(d[0][0]) - yScale(d[0][1]); })
-					.attr("width", xScale.bandwidth()-barMargin);
-		
-		    console.log(xScale.bandwidth());
+					.attr("width", xScale.bandwidth());
  
-
 		let xAxis = d3.axisBottom(xScale).tickSize(0);
 
 		svg.append("g")
@@ -82,7 +78,7 @@ const stackedBarChart = {
 		    .call(xAxis);
 
 		svg.selectAll("text")
-			.attr("y", 7);
+			.attr("y", 9);
 
 
 

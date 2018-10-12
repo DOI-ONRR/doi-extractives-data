@@ -15,9 +15,6 @@ const data = [
 	{"'13": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
 	{"'14": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
 	{"'15": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-	{"'16": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-	{"'17": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-	{"'18": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
 ];
 
 const classNamesMap = {

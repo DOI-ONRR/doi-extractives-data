@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { glossaryTermSelected as glossaryTermSelectedAction } from '../../store/reducers/glossary';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary';
 
 const GlossaryTerm = ({termKey, children, glossaryTermSelected, glossaryTerm}) => {
 

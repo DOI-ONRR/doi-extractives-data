@@ -5,12 +5,12 @@ import Link from '../utils/temp-link';
 import ALL_US_STATES_PRODUCTION from '../../data/state_all_production.yml'; 
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
 
-import ChartTitle from 'components/charts/ChartTitle';
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/selectors/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import {filterTerms} from 'components/utils/Glossary';
+import ChartTitle from '../charts/ChartTitleCollapsible';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import {filterTerms} from '../utils/Glossary';
 
 import utils from '../../js/utils';
 import slugify from 'slugify';

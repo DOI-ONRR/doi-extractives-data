@@ -1,0 +1,63 @@
+@value colors: "../../css-global/colors.css";
+@value green-dark, green-light, green-land, gray-dark, gray-light, gray from colors;
+@value variables: "../../css-global/variables.css";
+@value base-font-family from variables;
+
+
+.stackedBarChart text {
+	font-size: 14px;
+	font-family: base-font-family;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+.stackedBarChart path {
+	stroke: gray-light;
+}
+
+
+
+.stackedBarChart_bar:hover .stackedBarChart_onshore {
+	fill: green-dark;
+}
+
+.stackedBarChart_bar:hover .stackedBarChart_offshore {
+	fill: green-land;
+}
+.stackedBarChart_bar:hover .stackedBarChart_native_american {
+	fill: green-light;
+}
+
+.stackedBarChart_bar:active .stackedBarChart_onshore {
+	fill: green-dark;
+}
+
+.stackedBarChart_bar:active .stackedBarChart_offshore {
+	fill: green-land;
+}
+.stackedBarChart_bar:active .stackedBarChart_native_american{
+	fill: green-light;
+}
+
+.stackedBarChart_bar.selected .stackedBarChart_onshore {
+	fill: green-dark;
+}
+
+.stackedBarChart_bar.selected .stackedBarChart_offshore {
+	fill: green-land;
+}
+.stackedBarChart_bar.selected .stackedBarChart_native_american{
+	fill: green-light;
+}
+
+.stackedBarChart_onshore {
+	fill: gray-dark;
+}
+
+.stackedBarChart_offshore {
+	fill: gray;
+}
+
+.stackedBarChart_native_american {
+	fill: gray-light;
+}

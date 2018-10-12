@@ -1,22 +1,11 @@
 /* globals window */
-import 'core-js';
-import React from 'react';
-import { Router } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import createStore from './src/store/create-store';
+import 'core-js'; /* used for IE 11 compatibility */
 
-exports.replaceRouterComponent = ({ history }) => {
-  const store = createStore();
+import ReactDOM from 'react-dom';
 
-  const ConnectedRouterWrapper = ({ children }) => (
-    <Provider store={store}>
-      <Router history={history}>{children}</Router>
-    </Provider>
-  );
-
-  return ConnectedRouterWrapper;
-};
-
+/* Add Redux store provider */
+import wrapWithProvider from "./wrap-with-provider"
+export const replaceRouterComponent = wrapWithProvider;
 
 const usStateIds =[
   "AK",
@@ -67,7 +56,8 @@ const usStateIds =[
   "VT",
   "WA",
   "WI",
-  "WV"
+  "WV",
+  "WY"
 ];
 
 exports.onClientEntry = () => {
@@ -78,9 +68,6 @@ exports.onClientEntry = () => {
   let path = window.location.pathname;
   let statePathId = path.substring((path.length-3), (path.length-1));
 
-  console.log(statePathId);
-
-
   if(path.includes("/explore") && (path.endsWith("e/") || path.endsWith("e"))) {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path": path}]);
   }
@@ -88,8 +75,7 @@ exports.onClientEntry = () => {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
   else if(path.includes("/explore") && usStateIds.includes(statePathId)) {
-    console.log(statePathId);
-    loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-ar.json","path":"/Explore/"+statePathId+"/"},{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);
   }
 
 

@@ -5,14 +5,14 @@ import lazy from 'lazy.js';
 
 import ALL_US_STATES_EXPORTS from '../../data/state_exports.yml'; 
 
-import ChartTitle from 'components/charts/ChartTitle';
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/selectors/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import RevenueTypeTable from 'components/locations/RevenueTypeTable';
-import RevenueProcessTable from 'components/locations/RevenueProcessTable';
-import StateRevenue from 'components/locations/opt_in/StateRevenue';
+import ChartTitle from '../charts/ChartTitleCollapsible';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import RevenueTypeTable from '../locations/RevenueTypeTable';
+import RevenueProcessTable from '../locations/RevenueProcessTable';
+import StateRevenue from '../locations/opt_in/StateRevenue';
 
 import utils from '../../js/utils';
 

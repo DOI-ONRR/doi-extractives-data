@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import lazy from 'lazy.js';
-import { glossaryTermSelected as glossaryTermSelectedAction } from 'store/reducers/glossary';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary';
 
 import utils from '../../js/utils';
 

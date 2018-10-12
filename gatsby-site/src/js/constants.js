@@ -1,0 +1,1 @@
+export const SELECTED_YEAR = 'selected_year';

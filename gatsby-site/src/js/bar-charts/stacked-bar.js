@@ -15,6 +15,7 @@ const stackedBar = {
 			.keys(self.getOrderedKeys(props.displayNames, state))
 			.offset(d3.stackOffsetNone);
 
+		console.log(state);
 		var series = stack(state);
 
 		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
@@ -25,7 +26,7 @@ const stackedBar = {
 		else{
 			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]).nice();
 		}
-
+		console.log(series);
 		svg.selectAll("g")
 			.data(series)
 			.enter().append("g")

@@ -2,22 +2,22 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 
-import { hydateDisbursements as hydateDisbursementsAction } from 'store/reducers/disbursements';
+import { hydateDisbursements as hydateDisbursementsAction } from '../../state/reducers/disbursements';
 
-import NavList from 'components/layouts/NavList';
-import MobileNav from 'components/layouts/MobileNav';
-import StateMap from 'components/maps/StateMap';
-import FederalLandOwnershipLegend from 'components/maps/FederalLandOwnershipLegend';
-import LocationSelector from 'components/selectors/LocationSelector';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import NationalAllProduction from 'components/locations/NationalAllProduction';
-import NationalFederalProduction from 'components/locations/NationalFederalProduction';
-import NationalRevenue from 'components/locations/NationalRevenue';
-import NationalGDP from 'components/locations/NationalGDP';
-import NationalJobs from 'components/locations/NationalJobs';
-import NationalDisbursements from 'components/sections/NationalDisbursements';
+import NavList from '../../components/layouts/NavList';
+import MobileNav from '../../components/layouts/MobileNav';
+import StateMap from '../../components/maps/StateMap';
+import FederalLandOwnershipLegend from '../../components/maps/FederalLandOwnershipLegend';
+import LocationSelector from '../../components/selectors/LocationSelector';
+import GlossaryTerm from '../../components/utils/glossary-term.js';
+import NationalAllProduction from '../../components/locations/NationalAllProduction';
+import NationalFederalProduction from '../../components/locations/NationalFederalProduction';
+import NationalRevenue from '../../components/locations/NationalRevenue';
+import NationalGDP from '../../components/locations/NationalGDP';
+import NationalJobs from '../../components/locations/NationalJobs';
+import NationalDisbursements from '../../components/sections/NationalDisbursements';
 
-import { withPrefixSVG } from 'components/utils/temp-link';
+import { withPrefixSVG } from '../../components/utils/temp-link';
 
 const PAGE_ID = 'US';
 const PAGE_TITLE = 'Explore data';

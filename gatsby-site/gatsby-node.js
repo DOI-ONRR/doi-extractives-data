@@ -1,6 +1,10 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+// Custom Data Transformers
+const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
+const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
+
 const Remark = require('remark');
 const remarkHTML = require('remark-html');
 const toHAST = require(`mdast-util-to-hast`);
@@ -29,6 +33,14 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_impact`);
 
 };
+
+exports.onPreExtractQueries = ({ getNodes, boundActionCreators }) => {
+	console.log("onPreExtractQueries update");
+	const { createNode } = boundActionCreators
+
+	productionVolumesTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
+}
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
@@ -97,11 +109,11 @@ const createHtmlStringFromFrontmatterField = (createNodeField, node, field) => {
 
 const createStatePages = (createPage, graphql) => {
 	const createStatePageSlug = (state) => {
-		return '/Explore/'+state.frontmatter.unique_id+"/";
+		return '/explore/'+state.frontmatter.unique_id+"/";
 	}
 
 	return new Promise((resolve, reject) => {
-	    const statePageTemplate = path.resolve(`src/templates/StatePage.js`);
+	    const statePageTemplate = path.resolve(`src/templates/state-page.js`);
 	    resolve(
 	      graphql(
 	        `

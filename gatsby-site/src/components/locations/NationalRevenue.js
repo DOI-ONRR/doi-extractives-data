@@ -5,15 +5,15 @@ import Link from 'components/utils/temp-link';
 import utils from 'js/utils';
 import lazy from 'lazy.js';
 
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/selectors/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import {filterTerms} from 'components/utils/Glossary';
-import RevenueTypeTable from 'components/locations/RevenueTypeTable';
-import RevenueProcessTable from 'components/locations/RevenueProcessTable';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import {filterTerms} from '../utils/Glossary';
+import RevenueTypeTable from '../locations/RevenueTypeTable';
+import RevenueProcessTable from '../locations/RevenueProcessTable';
 
-import ChartTitle from 'components/charts/ChartTitle';
+import ChartTitle from '../charts/ChartTitleCollapsible';
 
 import iconCirclePlus from "img/icons/icon-circled-plus.svg";
 import iconCircleMinus from "img/icons/icon-circled-minus.svg";

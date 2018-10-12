@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Link from '../utils/temp-link';
 
 import { connect } from 'react-redux';
-import { selectYear } from '../../store/reducers/disbursements';
+import { selectYear } from '../../state/reducers/disbursements';
 
 import slugify from 'slugify';
 import lazy from 'lazy.js';

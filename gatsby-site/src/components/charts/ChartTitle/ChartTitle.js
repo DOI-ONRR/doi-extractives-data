@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from "./ChartTitle.module.css"
+import styles from "./ChartTitle.module.css";
 
 const ChartTitle = (props) => (
 	<div className={styles.chartTitle}>

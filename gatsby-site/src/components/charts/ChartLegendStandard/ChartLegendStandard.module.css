@@ -4,7 +4,7 @@
 .chartLegendStandard {
 	border: none;
 	font-size: 13px;
-	width: 350px;
+	width: 100%;
 }
 
 .chartLegendStandard thead {

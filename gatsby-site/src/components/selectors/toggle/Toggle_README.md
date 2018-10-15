@@ -5,7 +5,7 @@ patternCategory: Selectors
 ---
 
 ```
-<Toggle toggles={[{key:"year", name:"Yearly",default: true},
+<Toggle buttons={[{key:"year", name:"Yearly",default: true},
 				  {key:"month",name:"Monthly"}]}></Toggle>
 ```
 

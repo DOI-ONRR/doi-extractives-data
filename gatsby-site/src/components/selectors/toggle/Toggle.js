@@ -20,12 +20,12 @@ const Toggle = (props) => {
 
 	return (
 		<div className={styles.toggle}>
-			{props.toggles &&
-				props.toggles.map((toggleButton, index) => {
-					let classNames = (toggleButton.default)? styles.selected : "";
+			{props.buttons &&
+				props.buttons.map((button, index) => {
+					let classNames = (button.default)? styles.selected : "";
 					return (			
-						<div key={index} type="button" onClick={onClickHandler} className={classNames} data-value={toggleButton.key}>
-							{toggleButton.name}
+						<div key={index} type="button" onClick={onClickHandler} className={classNames} data-value={button.key}>
+							{button.name}
 						</div>
 					);
 				})
@@ -35,8 +35,8 @@ const Toggle = (props) => {
 }
 
 Toggle.propTypes = {
-	/** Array of objects for all the toggles. The default selected vlaue should be mark as default: true */
-	toggles: PropTypes.array,
+	/** Array of objects for all the buttons. The default selected vlaue should be mark as default: true */
+	buttons: PropTypes.array,
 	/** This action will be called when a toggle is clicked. */
 	toggleAction: PropTypes.func
 }

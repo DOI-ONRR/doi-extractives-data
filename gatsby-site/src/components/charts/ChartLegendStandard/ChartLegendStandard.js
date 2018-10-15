@@ -27,24 +27,23 @@ class ChartLegendStandard extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.chartHeader)
-		let keys = (this.props.displayNames)? Object.keys(this.props.displayNames) : Object.keys(this.props.chartData[0]);
+		let keys = (this.props.displayNames)? Object.keys(this.props.displayNames) : Object.keys(this.props.data[0]);
 		let total = 0;
 		return(
 			<table className={styles.chartLegendStandard}>
 				<thead>
-				{this.props.chartHeader &&
+				{this.props.header &&
             		<tr>
-	            		<th colSpan="2">{this.props.chartHeader[0]}</th>
-	            		<th>{this.props.chartHeader[1]}</th>
+	            		<th colSpan="2">{this.props.header[0]}</th>
+	            		<th>{this.props.header[1]}</th>
 	            	</tr>
 				}
             	</thead>
 				<tbody>
 					{
 						keys.map((key, index) => {
-							if(this.props.chartData[0][key]){
-								total += this.props.chartData[0][key];
+							if(this.props.data[0][key]){
+								total += this.props.data[0][key];
 								return(
 									<tr key={key}  >
 										<td>
@@ -55,9 +54,9 @@ class ChartLegendStandard extends React.Component {
 										</td>
 										<td>
 											{ this.props.dataFormatFunc ?
-												this.props.dataFormatFunc(this.props.chartData[0][key])
+												this.props.dataFormatFunc(this.props.data[0][key])
 												:
-												this.props.chartData[0][key]
+												this.props.data[0][key]
 											}
 										</td>
 									</tr>
@@ -95,9 +94,9 @@ class ChartLegendStandard extends React.Component {
 
 ChartLegendStandard.propTypes = {
 	/** Array 1 to 2 values */
-	chartHeader: PropTypes.array,
+	header: PropTypes.array,
 	/** Array of key value pairs */
-	chartData: PropTypes.array.isRequired,
+	data: PropTypes.array.isRequired,
 	/** Defines the display name/info of the data keys in the chart. Keys should match the data keys */
 	displayNames: PropTypes.object,
 	/** A function that will be applied on each data item of the chart data */

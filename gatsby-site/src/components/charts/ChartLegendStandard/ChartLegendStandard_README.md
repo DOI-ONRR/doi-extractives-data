@@ -5,7 +5,10 @@ patternCategory: Charts
 ---
 
 ```
-<ChartLegendStandard chartHeader={["Source", "2017 (bbl)"]} chartData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]} ></ChartLegendStandard>
+<ChartLegendStandard 
+	header={["Source", "2017 (bbl)"]} 
+	data={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]} >
+</ChartLegendStandard>
 ```
 
 This is the standard chart legend used on the site. 

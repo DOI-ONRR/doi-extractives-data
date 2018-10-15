@@ -1,0 +1,7 @@
+@value colors: "../../../css-global/colors.css";
+@value green-light, black-light from colors;
+
+.keyStatsSection  h2{
+	border-bottom: 10px solid green-light;
+	padding-bottom: 0.7rem;
+}

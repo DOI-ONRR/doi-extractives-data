@@ -2,7 +2,7 @@
 We have a few users who have expressed intereste in user research, so we're going to interview them about their processes and have them review the latest designs.
 # Goals
 * Determine how the users use the site as part of their overall task flows.
-* Probe into the follow, as is applicable to the user: lease level data, monthly data, printing, sales year data, long-term trend analysis, withheld data, production rankings
+* Probe into the following, as is applicable to the user: lease level data, monthly data, printing, sales year data, long-term trend analysis, withheld data, production rankings
 * Get feedback on the latest designs that are relevant to the user's work flows.  (latest prototype of home page and Explore Data pages, withheld design, probe into Revenue page descriptions and page order)
 
 

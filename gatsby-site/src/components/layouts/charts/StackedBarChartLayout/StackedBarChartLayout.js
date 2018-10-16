@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from "./StackedBarChartLayout.module.css";
 
 import {ChartTitle} from "../../../charts/ChartTitle";
-import StackedBarChart from "../../../charts/StackedBarChart";
+import {StackedBarChart} from "../../../charts/StackedBarChart";
 import {ChartLegendStandard} from "../../../charts/ChartLegendStandard";
 
 const StackedBarChartLayout = (props) => ( 

@@ -3,16 +3,18 @@ import utils from '../../js/utils';
 
 const stackedBarChart = {
 	create(el, props, state) {
-		console.log(props);
+
+		if(state === undefined) {
+			return;
+		}
+
 		let self = this;
 
-		let height = 200;
-		let margin = 20;
-		let width = 300;
+		let height = (el.clientHeight <= 0 )? 200 : el.clientHeight;
+		let margin = 25;
+		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
 
 		let keys = props.displayNames || self.getOrderedKeys(state);
-
-		console.log(d3.permute(['08','09','10'], [0,1,2]));
 
 		// Find the max value of the data sets by adding up the all the data items in the each set
 		let maxValue = d3.max(state, (d) => {
@@ -56,11 +58,11 @@ const stackedBarChart = {
 				.attr("height", (height-margin))
 				.attr("width", xScale.bandwidth())
 				.attr("transform", (d,i) => { return "translate("+xScale(Object.keys(d)[0])+",0)"; })
-				.attr("class", props.barClassNames)
-				.on("click", function(d){
-					d3.selectAll("g").classed(props.barSelectedClassNames, false ); 
-					d3.select(this).classed(props.barSelectedClassNames, true );
-					props.barSelectedCallback(d)})
+				.attr("class", d => 
+					(Object.keys(d)[0] === props.defaultSelected)? 
+						props.barClassNames+" "+props.barSelectedClassNames : props.barClassNames)
+				.attr("data-key", d => Object.keys(d)[0])
+				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedClassNames, props.barSelectedCallback);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
 				.enter().append("g")
@@ -109,6 +111,13 @@ const stackedBarChart = {
 	}
 	
 
+}
+
+const toggleSelectedBar = (element, data, classNames, callBack) => {
+  let allBars = element.parentNode.childNodes;
+
+  allBars.forEach(bar => bar.classList.remove(classNames))
+  element.classList.add(classNames);
 }
 
 export default stackedBarChart;

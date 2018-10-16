@@ -34,8 +34,22 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 
 };
 
+/**
+ *
+ * This function is called from the gatsby api after the initial node creation and  
+ * before the queries are run on the pages. This is where we add application ready nodes
+ * created from the raw graphql nodes that get created from our source data files.
+ * This is run during the build process and provides the application graphql nodes that
+ * are easily filtered, sorted and/or grouped. They also contain display ready names to be used
+ * on the site.
+ *
+ * The redux store object can also be used here if needed. Its another argument that can be added
+ * if we want to do anything with the store here. Currently we have the pages populate the redux store with 
+ * the data they query from graphql. This gives each page ownership over what data is actually needed for that
+ * page.
+ *
+ **/
 exports.onPreExtractQueries = ({ getNodes, boundActionCreators }) => {
-	console.log("onPreExtractQueries update");
 	const { createNode } = boundActionCreators
 
 	productionVolumesTransformer(createNode, 

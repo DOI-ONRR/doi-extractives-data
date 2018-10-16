@@ -1,5 +1,13 @@
 'use strict';
-/* Use ES5 in order to be compatible with version 1.x of gatsby */
+/**
+ *
+ * This takes the input of the production volume spreadsheet and transforms the data to 
+ * application friendly graphql node. This will allow the app to easily filter, sort and
+ * group the data using graphql queries and have it ready to be displayed on our site.
+ * 
+ **/
+
+/* Use ES5 require in order to be compatible with version 1.x of gatsby */
 const crypto = require('crypto');
 
 /* Define the column names found in the excel file */
@@ -33,7 +41,6 @@ const SOURCE_COLUMN_TO_PRODUCT_UNITS = {
 	[SOURCE_COLUMNS.CoalProductionVolume]: "tons",
 };
 
-/* Map the source column name to the units used for that product */
 const PRODUCT_UNITS_TO_LONG_UNITS = {
 	"bbl": "barrels",
 	"mcf": "mcf",
@@ -51,6 +58,7 @@ const LOCATION_CATEGORY_TO_DISPLAY_NAME ={
 	"IND - INDIAN": "Indian",
 	"Indian": "Indian",
 }
+
 const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 	"Federal": {
 		"Offshore": "Federal offshore",
@@ -62,21 +70,19 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 	},
 }
 
+/* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (createNode, sourceData) => {
 	sourceData.map((productVolumeData, index) => {
-			createProductVolumeNode(createNode, productVolumeData, index);
+			createProductVolumeNodeByProduct(createNode, productVolumeData, index);
 		}
 	);
 }
 
-const createProductVolumeNode = (createNode, productVolumeData, index) => {
-  const productVolumeNode = {
+const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) => {
+  let productVolumeNode = {
 	  LandCategory: LOCATION_CATEGORY_TO_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.LandCategory]],
 	  LocationType: LOCATION_TYPE_TO_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.OnshoreOffshore]],
 	  ProductionDate: productVolumeData[SOURCE_COLUMNS.ProductionDate],
-	  ProductVolumes: getProductVolumes(productVolumeData),
-	  
-	  id: index+"-product-volumes",
 	  parent: null,
 	  children: [],
 	  internal: {
@@ -87,30 +93,33 @@ const createProductVolumeNode = (createNode, productVolumeData, index) => {
   productVolumeNode.ProductionCategory = 
   	LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY[productVolumeNode.LandCategory][productVolumeNode.LocationType];
 
-  productVolumeNode.internal.contentDigest = crypto
-	      .createHash(`md5`)
-	      .update(JSON.stringify(productVolumeNode))
-	      .digest(`hex`)
-
-	createNode(productVolumeNode);
+	assignByProduct(productVolumeNode, productVolumeData, index).map(node => createNode(node));
 }
 
-const getProductVolumes = (productVolumeData) => {
-	let productVolumes = [];
+/**
+ * The current excel spreadsheet has multiple products per line so here we break them out to
+ * seperate nodes so we can filter and group by product using graphql.
+ **/
+const assignByProduct = (productVolumeNode, productVolumeData, index) => {
+	let nodes = [];
 
-	SOURCE_COLUMNS_PRODUCTS.map((productKey, index) => {
-		if(productVolumeData[productKey] !== undefined) {
-			productVolumes.push({
-				DisplayName : SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey],
-				Volume: productVolumeData[productKey],
-				Units: SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey],
-				LongUnits: PRODUCT_UNITS_TO_LONG_UNITS[SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey]],
-			});
-		}
-	});
+	SOURCE_COLUMNS_PRODUCTS.map((productKey) => {
+			if(productVolumeData[productKey] !== undefined) {
+				// make a deep copy of object
+				let node = JSON.parse(JSON.stringify(productVolumeNode));
 
+				node.id = index+"-product-volume",
+				node.ProductName = SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey],
+				node.Volume = productVolumeData[productKey],
+				node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey],
+				node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey]],
 
-	return productVolumes;
+				node.internal.contentDigest = crypto.createHash(`md5`)
+																      .update(JSON.stringify(node))
+																      .digest(`hex`);
+				nodes.push(node);
+			}
+		});
+
+	return nodes;
 }
-const getProductionCategory = (locationCategory, locationType) => {}
-

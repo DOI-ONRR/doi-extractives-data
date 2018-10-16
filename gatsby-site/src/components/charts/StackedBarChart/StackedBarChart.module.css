@@ -1,8 +1,12 @@
-@value colors: "../../css-global/colors.css";
+@value colors: "../../../css-global/colors.css";
 @value green-dark, green-light, green-land, gray-dark, gray-light, gray from colors;
-@value variables: "../../css-global/variables.css";
+@value variables: "../../../css-global/variables.css";
 @value base-font-family from variables;
 
+.stackedBarChart {
+	height: inherit;
+	width: inherit;
+}
 
 .stackedBarChart text {
 	font-size: 14px;

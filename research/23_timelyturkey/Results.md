@@ -1,6 +1,8 @@
 # User Types
 We talked with 2 agenda supporters and 1 question answerer.
 
+![All users interviewed on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/23_timelyturkey/OctInterviews_UserTypes.PNG)
+
 # Task Flows
 * One participant mostly deals with production data in his work, but found the revenue and disbursements on our site interesting. He usually uses data to respond to ad hoc requests for reports.
 * One participant writes about oil and coal both on and offshore focused on production and revenue.

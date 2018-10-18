@@ -1,0 +1,7 @@
+@value colors: "../../../css-global/colors.css";
+@value gray-pale from colors;
+
+.root {
+
+}
+

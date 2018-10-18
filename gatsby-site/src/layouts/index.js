@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 import {Banner} from '../components/layouts/Banner';
 import {Header} from '../components/layouts/Header';
-import Footer from '../components/layouts/Footer';
+import {Footer} from '../components/layouts/Footer';
 import Glossary from '../components/utils/Glossary';
 
 import "styles/_main.scss";

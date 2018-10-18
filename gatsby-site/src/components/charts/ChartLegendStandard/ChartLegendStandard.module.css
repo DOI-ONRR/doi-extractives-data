@@ -29,6 +29,7 @@
 
 .chartLegendStandard td:nth-child(1) {
 	width: 20px;
+	vertical-align: middle;
 }
 
 .chartLegendStandard td:nth-child(3) {

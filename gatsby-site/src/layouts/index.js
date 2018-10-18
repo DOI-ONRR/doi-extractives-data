@@ -70,7 +70,7 @@ export default ({ data, children}) => {
           {children()}
         </main>
 
-        <Footer siteMetadata={data.site.siteMetadata} />
+        <Footer version={data.site.siteMetadata.version} />
 
       </div>
   );

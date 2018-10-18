@@ -1,0 +1,7 @@
+.helpWanted {
+	color: white;
+	text-decoration: none;
+}
+.helpWanted:hover {
+	text-decoration: underline;
+}

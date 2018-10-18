@@ -16,3 +16,14 @@
 @value green-land: #69995a;
 @value green: #587f4c;
 @value green-dark: #2f4d26;
+
+/* Blues */
+@value blue-lighter: #f2fdff;
+@value blue-light: #dcf4fd;
+@value blue-cthru: rgba(198, 233, 255, 0.93);
+@value blue-mid: #79bbda;
+@value blue-mid-dark: #3d95bd;
+@value blue: #1478a6;
+@value blue-dark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
+@value blue-darker: #005078;
+@value blue-deep: #00354f;

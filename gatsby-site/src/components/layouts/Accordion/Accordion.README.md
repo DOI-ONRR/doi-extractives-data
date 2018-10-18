@@ -1,11 +1,11 @@
 ---
 title: Accordions
 componentName: Accordion
-patternCategory: Accordions
+patternCategory: Layouts
 ---
 
 ```
-<Accordion id="example-1">
+<Accordion id="example-1" text={["Show details", "Hide details"]}>
  <p>I'm expanded!</p>
 </Accordion>
 ```
@@ -20,9 +20,7 @@ where some content shown by default in the desktop view becomes hidden.
 
 ## How to use
 
-The toggle behavior is triggered by the `aria-` attributes. `.hide-expanded` is
-the label used when in the collapsed state. `.show-expanded` is the label to
-show in the expanded state. `aria-controls` on the toggle should be set to the
+The toggle behavior is triggered by the `aria-` attributes. `aria-controls` on the toggle should be set to the
 `id` of the expandable content container.
 
 

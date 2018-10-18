@@ -1,7 +1,87 @@
 @value colors: "../../../css-global/colors.css";
 @value green-light, black-light from colors;
 
-.keyStatsSection  h2{
+h2{
 	border-bottom: 10px solid green-light;
 	padding-bottom: 0.7rem;
+}
+
+.root .production {
+	width: 100%;
+}
+
+.production {
+	width: 100%;
+}
+
+.production [is="chart"]{
+	display: inline-block;
+	width: 30%;
+	max-width: 30%;
+	min-width: 250px;
+	margin-right: 5%;
+}
+
+.production [is="chart"]:last-child{
+	margin-right: 0%;
+}
+
+.bottomSection {
+	width: 100%;
+}
+
+.bottomSection section {
+	display: table-cell;
+  width: 50%;
+}
+
+.bottomSection section:first-child {
+  padding-right: 30px;
+}
+
+.bottomSection section:last-child {
+  padding-left: 30px;
+}
+
+.sectionTitle {
+	margin-bottom: 10px;
+}
+
+.sectionTitle div{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.production .sectionTitle div:last-child{
+	float: right;
+}
+
+.toggle div:first-child{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 601px) {
+	.production .sectionTitle div:last-child{
+		display: block;
+		float: none;
+	}
+	.bottomSection section {
+		display: block;
+	  width: 100%;
+	}
+	.bottomSection section:first-child {
+	  padding-right: 0px;
+	}
+
+	.bottomSection section:last-child {
+	  padding-left: 0px;
+	}
+
+	.production [is="chart"]{
+		display: block;
+		max-width: 100%;
+		min-width: 250px;
+		margin-right: 0px;
+	}
 }

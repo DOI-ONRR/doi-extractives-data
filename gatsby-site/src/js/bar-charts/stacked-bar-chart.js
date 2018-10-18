@@ -89,7 +89,7 @@ const stackedBarChart = {
 	},
 
 	update(el, props, state){
-
+		console.log(el.clientWidth);
 
 	},
 

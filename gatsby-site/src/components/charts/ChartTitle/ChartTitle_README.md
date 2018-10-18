@@ -5,7 +5,9 @@ patternCategory: Charts
 ---
 
 ```
-<ChartTitle>Oil (barrels)</ChartTitle>
+<div style={{width:"300px"}}>
+	<ChartTitle>Oil (barrels)</ChartTitle>
+</div>
 ```
 
 ## How to use

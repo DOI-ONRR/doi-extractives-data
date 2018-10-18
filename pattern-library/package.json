@@ -16,6 +16,7 @@
     "react-helmet": "^5.2.0",
     "react-live": "^1.7.1",
     "react-redux": "^5.0.7",
+    "react-responsive": "^5.0.0",
     "redux": "^4.0.0",
     "rehype-react": "^3.0.3",
     "svg-react-loader": "^0.4.6"

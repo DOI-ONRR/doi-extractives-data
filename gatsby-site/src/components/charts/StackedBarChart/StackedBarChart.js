@@ -31,9 +31,18 @@ class StackedBarChart extends React.Component {
 
 	componentDidUpdate() {
 
+		stackedBarChart.update(ReactDOM.findDOMNode(this), 
+			{ 	
+				barClassNames: barClassNames, 
+				barSelectedClassNames: barSelectedClassNames,
+				barSelectedCallback: this.props.barSelectedCallback,
+				classNamesMap: classNamesMap, 
+				...this.props }, 
+			this.props.data);
 	}
 
 	componentWillUnmount() {
+	
 	}
 
 	render() {
@@ -45,6 +54,10 @@ class StackedBarChart extends React.Component {
 }
 
 StackedBarChart.propTypes = {
+    /** The data to populate the chart */
+    data: PropTypes.array,
+    /** The data set to be selected on page load. */
+    defaultSelected: PropTypes.string,
 
 }
 

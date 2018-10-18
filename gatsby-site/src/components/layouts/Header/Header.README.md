@@ -8,5 +8,6 @@ patternCategory: Layouts
 <Header />
 ```
 
-This is the header that appears at the top of all our pages on the site. There are no properties to pass in it is a very simple component.
+This is the header that appears as the top navigation section on all our pages.
+
 

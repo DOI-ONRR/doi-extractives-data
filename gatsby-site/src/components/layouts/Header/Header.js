@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Link from '../../utils/temp-link';
-import Search from '../../utils/search';
+import {Search} from '../../utils/Search';
 
 import NRRDLogo from "../../../img/NRRD-logo.svg";
 

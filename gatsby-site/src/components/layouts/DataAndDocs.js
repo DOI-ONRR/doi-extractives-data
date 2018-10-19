@@ -1,5 +1,5 @@
 import React from 'react';
-import DataAndDocIcon from '-!svg-react-loader!../../img/svg/icon-data-docs.svg';
+import DataAndDocIcon from '-!svg-react-loader!../../img/svg/icon-data-and-docs-circle.svg';
 
 const DataAndDocs = (props) => ( 
     <span>

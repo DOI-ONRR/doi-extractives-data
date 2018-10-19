@@ -5,7 +5,7 @@ const DataAndDocs = (props) => (
     <span>
         <DataAndDocIcon />
         {props.children === undefined ?
-            'Data and documentation' :
+            'Downloads and documentation' :
             props.children}
     </span>
 );

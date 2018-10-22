@@ -12,7 +12,7 @@ nav_items:
       - name: private-lands
         title: Private lands
       - name: federal-lands
-        title: Federal lands
+        title: Federal lands test
       - name: state-and-local-lands
         title: State and local Lands
       - name: indian-lands

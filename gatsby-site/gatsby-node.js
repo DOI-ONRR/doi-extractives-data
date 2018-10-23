@@ -213,6 +213,7 @@ exports.modifyBabelrc = ({ babelrc }) => {
  **/
 var prependFile = require('prepend-file');
 var copydir = require('copy-dir');
+var copyfile = require('fs-copy-file-sync');
 var os = require('os');
 
 var aboutPageFrontmatter = "---"+os.EOL+
@@ -248,4 +249,10 @@ exports.onPostBuild = () => {
 	console.log("Copying Files from public to gatsby-public...");
 	copydir.sync(__dirname+'/public', '../gatsby-public');
 	console.log("Finished Copying Files to gatsby-public.");
+
+
+	// index.html will be created or overwritten by default.
+	console.log("Copying index.html to root...");
+	copyfile(__dirname+'/public/index.html', __dirname+'/../index.html');
+	console.log("Finished Copying index.html to root.");
 }

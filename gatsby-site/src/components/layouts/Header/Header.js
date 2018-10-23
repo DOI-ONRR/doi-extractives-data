@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Link from '../utils/temp-link';
-import Search from '../utils/search';
+import Link from '../../utils/temp-link';
+import {Search} from '../../utils/Search';
 
-import NRRDLogo from "img/NRRD-logo.svg";
+import NRRDLogo from "../../../img/NRRD-logo.svg";
 
-import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary';
+import { glossaryTermSelected as glossaryTermSelectedAction } from '../../../state/reducers/glossary';
 
 const Header = (props) => {
   

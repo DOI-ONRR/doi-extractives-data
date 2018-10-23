@@ -312,10 +312,10 @@ const RevenueTypeTable = (props) => {
 				    <tr className="table-arrow_box-category">
 				    	<td colSpan="5">
 					        All commodities
-					        { oilGasExists &&  <span className="icon-padded"> <OilGasIcon /></span> }
-					        { coalExists &&  <span className="icon-padded"><CoalIcon /></span> }
-					        { geothermalExists && <span className="icon-padded"><GeothermalIcon /></span> }
-					        { windExists && <span className="icon-padded"><RenewablesIcon /></span> }
+					        { oilGasExists &&  <span className="icon"> <OilGasIcon /></span> }
+					        { coalExists &&  <span className="icon"><CoalIcon /></span> }
+					        { geothermalExists && <span className="icon"><GeothermalIcon /></span> }
+					        { windExists && <span className="icon"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName('All')} commodityData={revenueTypes['All']} year={props.year} />

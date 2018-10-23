@@ -6,8 +6,8 @@ import lazy from 'lazy.js';
 
 // Initial state is used for the pattern library and seeding any additional data
 const initialState = {
-    year: 2017,
-    years: [2017],
+    year: 2018,
+    years: [2018],
     disbursements: {
         2017: {
             year: "2017",

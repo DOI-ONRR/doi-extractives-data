@@ -101,10 +101,10 @@ class KeyStatsSection extends React.Component{
 
 								chartData={[
 									{"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]},
-									{"Feb": [{"Federal onshore": 30, "Federal offshore": 30, "Native American":15}]},
+									{"Feb": [{"Federal onshore": 44, "Federal offshore": 30, "Native American":15}]},
 									{"Mar": [{"Federal onshore": 95, "Federal offshore": 75, "Native American":35}]},
-									{"Apr": [{"Federal onshore": 33, "Federal offshore": 50, "Native American":55}]},
-									{"May": [{"Federal onshore": 90, "Federal offshore": 20, "Native American":90}]},
+									{"Apr": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":55}]},
+									{"May": [{"Federal onshore": 56, "Federal offshore": 20, "Native American":90}]},
 									{"Jun": [{"Federal onshore": 55, "Federal offshore": 33, "Native American":23}]},
 									{"Jul": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":66}]},
 									{"Aug": [{"Federal onshore": 99, "Federal offshore": 66, "Native American":35}]},
@@ -113,6 +113,10 @@ class KeyStatsSection extends React.Component{
 									{"Nov": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":65}]},
 									{"Dec": [{"Federal onshore": 41, "Federal offshore": 50, "Native American":35}]},
 								]}
+
+								chartGroups={[
+									{name: "2016", members:5},
+									{name: "2017", members:7}]}
 
 								defaultSelected={"Dec"}
 
@@ -178,6 +182,8 @@ class KeyStatsSection extends React.Component{
 									{"Dec": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
 								]}
 
+
+
 								defaultSelected={"Dec"}
 
 								chartLegendHeader={["Source", "2017 (tons)"]}
@@ -229,7 +235,7 @@ class KeyStatsSection extends React.Component{
 							chartData={[
 								{"Jan": [{"Federal onshore": 66, "Federal offshore": 100, "Native American":75}]},
 								{"Feb": [{"Federal onshore": 66, "Federal offshore": 30, "Native American":15}]},
-								{"Mar": [{"Federal onshore": 85, "Federal offshore": 50, "Native American":35}]},
+								{"Mar": [{"Federal onshore": 74, "Federal offshore": 50, "Native American":35}]},
 								{"Apr": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":54}]},
 								{"May": [{"Federal onshore": 99, "Federal offshore": 33, "Native American":97}]},
 								{"Jun": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":35}]},
@@ -240,6 +246,10 @@ class KeyStatsSection extends React.Component{
 								{"Nov": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
 								{"Dec": [{"Federal onshore": 15, "Federal offshore": 50, "Native American":12}]},
 							]}
+
+							chartGroups={[
+								{name: "2016", members:3},
+								{name: "2017", members:9}]}
 
 							defaultSelected={"Dec"}
 

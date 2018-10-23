@@ -7,9 +7,7 @@ const DropDown = (props) => {
 
   const onChangeHandler = (e, key) => {
     e.stopPropagation();
-    console.log(e);
     if(props.action) {
-    	console.log(e.currentTarget.value);
         props.action(e.currentTarget.value);
     }
   }

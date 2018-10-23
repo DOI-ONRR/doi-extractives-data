@@ -11,7 +11,7 @@ const stackedBarChart = {
 		if(state === undefined) {
 			return;
 		}
-
+		
 		// Find the max value of the data sets by adding up the all the data items in the each set
 		let maxValue = d3.max(state, (d) => {
 			let sum = 0;
@@ -50,12 +50,13 @@ const stackedBarChart = {
 		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
 
 		let height = (el.clientHeight <= 0 )? 200 : el.clientHeight;
-		let margin = 27;
+		let marginTop = 25;
+		let marginBottom = 40;
 		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
 
 		let keys = props.displayNames || self.getOrderedKeys(state);
 
-		let yScale = d3.scaleLinear().rangeRound([margin,height-margin]);
+		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
 		// For vetical bars we want start rect at the bottom and go to the top
 		// SVG height goes down so this setting will reverse that
 		yScale.domain([maxValue, 0]);
@@ -105,14 +106,13 @@ const stackedBarChart = {
 			.selectAll("g")
 			.data(state)
 			.enter().append("g")
-				.attr("height", (height-margin))
+				.attr("height", (height-marginTop))
 				.attr("width", xScale.bandwidth())
 				.attr("transform", d => "translate("+(xScale(Object.keys(d)[0]))+",0)")
 				.attr("class", d => 
 					(Object.keys(d)[0] === props.defaultSelected)? 
 						props.barClassNames+" "+props.barSelectedClassNames : props.barClassNames)
 				.attr("data-key", d => Object.keys(d)[0])
-
 				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedClassNames, props.barSelectedCallback);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
@@ -129,10 +129,43 @@ const stackedBarChart = {
 
 		svg.append("g")
 		    .attr("class", "x axis")
-		    .attr("transform", "translate(0," + (height-margin) + ")")
+		    .attr("transform", "translate(0," + (height-marginBottom) + ")")
 		    .call(xAxis)
 		    .selectAll("text")
 					.attr("y", 9);
+
+		// Add Grouping Lines
+		if(props.groups){
+			let groupLines = svg.append("g");
+			let groupWidth = (width/12);
+			let padding = (xScale.bandwidth()*0.2);
+			let xPos = 0;
+
+			props.groups.map((group, index) => {
+					if(index !== -1) {
+
+						let width = xPos+(groupWidth*group.members)-padding;
+
+						groupLines.append("line")
+				      .attr('x1', xPos+padding)
+				      .attr('x2', width)
+				      .attr('stroke', '#a7bcc7')
+				      .attr('stroke-width', 1)
+				      .attr('transform', 'translate(' + [0, height-15] + ')');
+
+						groupLines.append("text")
+							.attr("x", ((xPos+padding)/2)+(width/2) )
+							.attr("y", height)
+							.attr("text-anchor", "middle")
+							.text(group.name);
+
+				    xPos = width+padding;
+					}
+
+				}
+			);
+		}
+
 
 		// Redraw based on the new size whenever the browser window is resized.
       	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));

@@ -15,7 +15,7 @@ const StackedBarChartLayout = (props) => (
   <div className={styles.root}>
     <ChartTitle>{props.chartTitle}</ChartTitle>
     <div className={styles.chart}>
-      <StackedBarChart units={props.units} data={props.chartData} defaultSelected={props.defaultSelected} ></StackedBarChart>
+      <StackedBarChart units={props.units} data={props.chartData} groups={props.chartGroups} defaultSelected={props.defaultSelected} ></StackedBarChart>
     </div>
     <MediaQuery maxWidth={768}>
       <Accordion id={utils.formatToSlug(props.chartTitle)} text={["Show details", "Hide details"]}>
@@ -39,6 +39,8 @@ StackedBarChartLayout.propTypes = {
     chartTitle: PropTypes.string,
     /** The data to populate the chart */
     chartData: PropTypes.array,
+    /** The array will draw a line under the x-axis labels by group */
+    chartGroups: PropTypes.array,
     /** The data set to be selected on page load. */
     defaultSelected: PropTypes.string,
     /** The title to appear on top of the legend */

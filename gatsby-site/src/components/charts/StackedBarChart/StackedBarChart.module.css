@@ -5,11 +5,12 @@
 
 .stackedBarChart {
 	height: inherit;
+	margin-top: 5px;
 	width: inherit;
 }
 
 .stackedBarChart text {
-	font-size: 14px;
+	font-size: 13px;
 	font-family: base-font-family;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;

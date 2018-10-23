@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 import styles from "./Toggle.module.css"
 
@@ -13,8 +12,8 @@ const Toggle = (props) => {
     allToggles.forEach(node => node.classList.remove(styles.selected))
     e.currentTarget.classList.add(styles.selected);
 
-    if(props.toggleAction) {
-        props.toggle(e.currentTarget.dataset.value, props.toggleAction);
+    if(props.action) {
+        props.action(e.currentTarget.dataset.value);
     }
   }
 
@@ -41,7 +40,4 @@ Toggle.propTypes = {
 	toggleAction: PropTypes.func
 }
 
-export default connect(
-  state => ({}),
-  dispatch => ({ toggle: (key, action) => dispatch(action(key)) }),
-)(Toggle);
+export default Toggle;

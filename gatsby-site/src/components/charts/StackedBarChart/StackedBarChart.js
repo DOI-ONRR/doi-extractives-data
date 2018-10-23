@@ -31,14 +31,6 @@ class StackedBarChart extends React.Component {
 
 	componentDidUpdate() {
 
-		stackedBarChart.update(ReactDOM.findDOMNode(this), 
-			{ 	
-				barClassNames: barClassNames, 
-				barSelectedClassNames: barSelectedClassNames,
-				barSelectedCallback: this.props.barSelectedCallback,
-				classNamesMap: classNamesMap, 
-				...this.props }, 
-			this.props.data);
 	}
 
 	componentWillUnmount() {

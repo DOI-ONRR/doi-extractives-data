@@ -15,7 +15,7 @@ const StackedBarChartLayout = (props) => (
   <div className={styles.root}>
     <ChartTitle>{props.chartTitle}</ChartTitle>
     <div className={styles.chart}>
-      <StackedBarChart data={props.chartData} defaultSelected={props.defaultSelected} ></StackedBarChart>
+      <StackedBarChart units={props.units} data={props.chartData} defaultSelected={props.defaultSelected} ></StackedBarChart>
     </div>
     <MediaQuery maxWidth={768}>
       <Accordion id={utils.formatToSlug(props.chartTitle)} text={["Show details", "Hide details"]}>

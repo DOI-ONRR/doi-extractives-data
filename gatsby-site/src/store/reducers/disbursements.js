@@ -10,7 +10,7 @@ const initialState = {
     years: [2018],    
     disbursements: {
         2017: {
-            year: "2017",
+            year: "2018",
             total: 10000,
             highestFundValue: 10000,
             disbursements: [{

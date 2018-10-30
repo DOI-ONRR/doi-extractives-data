@@ -8,8 +8,8 @@ class Tabordion extends React.Component {
     super(props);
 
     this.state = {
-    	tabId: this.props.children || this.props.children[0].props.id,
-      tabPanel: this.props.children || this.props.children[0].props.children,
+    	tabId: this.props.children && this.props.children[0].props.id,
+      tabPanel: this.props.children && this.props.children[0].props.children,
     };
   }
 

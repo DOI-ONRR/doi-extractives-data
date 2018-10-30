@@ -40,29 +40,29 @@ selector: list
 
 {% include selector.html %}
 
-The [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural preservation.
+The [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural resource preservation.
 
 ## Funding priorities
-The LWCF funds landscape conservation, outdoor recreation, and the needs of local communities, including:
+Depending on the agency or program, the LWCF supports:
 
-- access to outdoors
-- national trails
-- working lands (e.g. private working farms, forests, and ranches)
-- historic or cultural sites
-- urban parks
-- wildlife habitat
+- increased access to state and locally owned outdoor recreation opportunities
+- creation or expansion of national trails, parks, and forests
+- preservation of working lands (e.g. private farms, forests, and ranches)
+- preservation of historic or cultural sites
+- development or rehabilitation of urban parks
+- conservation of wildlife habitat
 
 ## Authorization and funding
 {% include update-flag.html date="10/9/18" %}
 
-The LWCF was {{ "authorized" | term: "authorization" }} through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the Land and Water Conservation Fund authorization expired on October 1, 2018. The LWCF is not eligible to receive disbursements unless Congress reauthorizes it.
+The LWCF was {{ "authorized" | term: "authorization" }} through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the requirement that a portion of offshore oil and gas revenues be deposited into the LWCF expired on October 1, 2018. The LWCF is not eligible to receive those disbursements unless Congress reauthorizes it. Congress may continue to appropriate revenues for LWCF-supported programs, if it so chooses.
 
 Lawmakers have [introduced bills in both the House and the Senate](https://www.congress.gov/search?q=%7B%22congress%22%3A%22115%22%2C%22source%22%3A%22legislation%22%2C%22search%22%3A%22%5C%22land%20and%20water%20conservation%20fund%5C%22%22%7D&searchResultViewType=expanded) to permanently authorize the fund.
 
 ### Annual funding
-The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. {{ "ONRR" | term }} disburses that revenue to the fund each year.
+The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. When authorized, {{ "ONRR" | term }} disburses that revenue to the fund each year.
 
-The LWCF is authorized to receive and distribute $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
+Until it expired, the LWCF was authorized to receive and distribute up to $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund met the authorized threshold only twice (1998, 2001), while annual appropriations have been limited to between $255 million and $450 million since 2008.
 
 ## Distribution of funds
 Most of the funds from the LWCF are distributed to support two general purposes:
@@ -86,11 +86,11 @@ During the annual budget process, these agencies can submit proposals to acquire
 [Review land acquisition reports and data](https://www.nps.gov/subjects/lwcf/land-acquisition-reports-and-data.htm).
 
 ### State and local grant funding
-Administered by the National Park Service, the stateside program of the LWCF provides matching grants to states for planning, acquiring lands and waters, and developing facilities for outdoor recreation. LWCF funds are limited to 50% or less of a proposed project's total cost; the rest must come from other funds.
+Administered by the National Park Service, the stateside program of the LWCF provides matching grants to states for planning, acquiring lands and waters, and developing facilities for outdoor recreation. LWCF funds are limited to 50% or less of a proposed project's total cost; the rest must come from other, non-federal funds.
 
 A formula in the Land and Water Conservation Act determines how the funds are apportioned to states (See [54 U.S.C. §200305(b)](https://www.gpo.gov/fdsys/granule/USCODE-2014-title54/USCODE-2014-title54-subtitleII-chap2003-sec200305)). States must use the money for its intended purpose within three years.
 
 [Review state and local grant funding status](https://www.nps.gov/subjects/lwcf/statefundingstatus.htm).
 
 #### GOMESA grants
-The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million in funding. This portion of LWCF funds is not subject to congressional appropriation, and states can roll it over beyond the three-year limit of other LWCF state grants. 
+The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies that 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million a year in funding. This portion of LWCF funds is not subject to the congressional appropriation process, but are otherwise treated similarly to regular LWCF funds. 

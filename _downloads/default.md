@@ -120,7 +120,7 @@ tag:
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/disbursements/" class="link-no_under"><h3 id="disbursements">Disbursements</h3></a>
-    <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
+    <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
     <a href="{{site.baseurl}}/downloads/disbursements/">
       {% include data_and_docs.html %}
     </a>

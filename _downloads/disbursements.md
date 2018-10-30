@@ -46,7 +46,7 @@ The documentation that follows is for the funds overview dataset. We also have [
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2014-2017. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2013-2018. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data publication
 

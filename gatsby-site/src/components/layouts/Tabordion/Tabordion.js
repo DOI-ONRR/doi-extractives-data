@@ -8,8 +8,8 @@ class Tabordion extends React.Component {
     super(props);
 
     this.state = {
-    	tabId: this.props.children[0].props.id,
-      tabPanel: this.props.children[0].props.children,
+    	tabId: this.props.children || this.props.children[0].props.id,
+      tabPanel: this.props.children || this.props.children[0].props.children,
     };
   }
 
@@ -26,7 +26,7 @@ class Tabordion extends React.Component {
 	        {this.props.children &&
 	        	React.Children.map(this.props.children, (child) => {
 	        		if(child.type.name === "Tab") {
-	        			return <Tab callBack={this.tabClicked.bind(this)} {...child.props} />;
+	        			return <Tab isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />;
 	        		}
 	        	})
 	        }
@@ -42,7 +42,7 @@ class Tabordion extends React.Component {
 
 export const Tab = (props) => {
 	return (
-	  <div id={props.id} className={styles.tab} onClick={() => props.callBack(props.id, props.children)}>
+	  <div id={props.id} className={props.isSelected ? styles.tabSelected : styles.tab} onClick={() => props.callBack(props.id, props.children)}>
 	  	{(props.name || "Tabsdss")}
 	  </div>
 	);

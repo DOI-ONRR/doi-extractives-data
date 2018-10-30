@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.css";
-@value gray-pale, gray-light from colors;
+@value gray-pale, gray-light, gray-darkest from colors;
 
 .root {
 
@@ -13,8 +13,26 @@
 }
 
 .tab {
+	background-color: white;
+	border: 1px solid gray-light;
+	color: gray-darkest;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.tab:hover{
+	text-decoration: underline;
+}
+
+.tabSelected {
 	background-color: gray-pale;
 	border: 1px solid gray-light;
+	border-bottom: none;
+	cursor: pointer;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 10px 0px;

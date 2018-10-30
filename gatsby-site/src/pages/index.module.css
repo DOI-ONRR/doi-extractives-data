@@ -1,0 +1,56 @@
+@value colors: "../css-global/colors.css";
+@value gray-pale, gray-light, gray-darkest from colors;
+
+.root {
+
+}
+
+.tabContentContainer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.tabContent {
+	flex-basis: 65%;
+	order: 0;
+}
+
+.tabContentAside{
+	order: 1;
+	padding: 0px 10px;
+}
+
+.tabContentAside svg{
+	width: 276px;
+	padding-top: 10px;
+}
+
+.tabContentBottomContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.tabContentBottomContainer div{
+	margin-bottom: 20px;
+}
+
+.tabContentBottomContainer div:first-child{
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 601px) {
+	.tabContentContainer {
+		flex-wrap: wrap;
+	}
+	.tabContent {
+		flex-basis: 100%;
+	}
+	.tabContentAside svg{
+		display: none;
+	}
+}

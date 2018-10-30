@@ -40,13 +40,9 @@ Download fiscal year data:
 <ul class="downloads-download_links list-unstyled">
   <li><a href="{{site.baseurl}}/downloads/disbursements_FY2003-2018_by_type.xlsx">{% include svg/icon-download.svg %}Funds data by state and county (xlsx, 32 KB)</a></li>
   <li><a href="{{site.baseurl}}/downloads/disbursements_FY2003-2017_by_type.xlsx">{% include svg/icon-download.svg %}Funds data by type (xlsx, 75 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_FY2011-2015_2016-09-15.xlsx">{% include svg/icon-download.svg %}LWCF dataset, includes docs (xlsx, 870 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_FY2011-2016_2017-05-26.xlsx">{% include svg/icon-download.svg %}NHPA dataset (xlsx, 19 KB)</a></li>
 </ul>
 
-The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.
-
-We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
+The documentation that follows is for the funds overview dataset. We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
 
 ## Scope
 
@@ -54,7 +50,7 @@ This dataset includes natural resource disbursements for U.S. federal lands, fed
 
 ## Data publication
 
-The disbursement dataset is updated in December after the end of the federal government fiscal year.
+The disbursement dataset is updated in November after the end of the federal government fiscal year.
 
 ## Data dictionary
 

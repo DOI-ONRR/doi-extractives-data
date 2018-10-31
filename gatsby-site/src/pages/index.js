@@ -117,7 +117,7 @@ class HomePage extends React.Component {
         </Tabordion>
 
         <section className={styles.mapSection}>
-          <div className={styles.mapSectionContainer}>
+          <div className={styles.mapSectionContainer+" container-page-wrapper"}>
             <div className={styles.mapSectionLeft}>
               <h3>Learn about extractive industries in each state</h3>
               <p>Explore production, revenue, and disbursements data for each state.</p>
@@ -144,7 +144,7 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <KeyStatsSection></KeyStatsSection>
+        <KeyStatsSection/>
 
         <WhatsNew />
       </main>

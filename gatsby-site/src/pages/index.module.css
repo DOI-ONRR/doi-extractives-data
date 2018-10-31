@@ -68,13 +68,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-	max-width: container-max-width;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .mapSectionLeft {
-	width: 27%;
+	max-width: 27%;
 }
 
 .mapSectionRight {
@@ -82,7 +79,25 @@
 }
 
 .mapSectionLocationSelector {
+	max-width: 250px;
+	width: 100%;
 	margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.mapSectionContainer {
+	  flex-wrap: wrap;
+	}
+	.mapSectionLeft {
+		max-width: 100%;
+	}
+	.mapSectionRight {
+		width: 100%;
+	}
+	.mapSectionLocationSelector {
+		
+		margin-top: 30px;
+	}
 }
 
 @media screen and (max-width: 601px) {

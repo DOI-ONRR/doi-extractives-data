@@ -1,5 +1,7 @@
 @value colors: "../css-global/colors.css";
+@value variables: "../css-global/variables.css";
 @value gray-pale, gray-light, gray-darkest, green-light from colors;
+@value container-max-width from variables;
 
 .root {
 
@@ -56,6 +58,31 @@
 	display: block;
 	margin: 7px 0px;
 	white-space: nowrap;
+}
+
+.mapSection {
+	margin: 80px 0px;
+}
+
+.mapSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+	max-width: container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mapSectionLeft {
+	width: 27%;
+}
+
+.mapSectionRight {
+	width: 70%;
+}
+
+.mapSectionLocationSelector {
+	margin-top: 30px;
 }
 
 @media screen and (max-width: 601px) {

@@ -7,6 +7,8 @@ import {KeyStatsSection} from '../components/sections/KeyStatsSection';
 import {WhatsNew} from '../components/sections/WhatsNew';
 import {Tabordion, Tab} from '../components/layouts/Tabordion';
 import StateMap from '../components/maps/StateMap';
+import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend';
+import LocationSelector from '../components/selectors/LocationSelector';
 import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg';
 import {ExploreDataButton} from '../components/layouts/buttons/ExploreDataButton';
 import {BlueButton} from '../components/layouts/buttons/BlueButton';
@@ -113,6 +115,34 @@ class HomePage extends React.Component {
             </div>
           </Tab>
         </Tabordion>
+
+        <section className={styles.mapSection}>
+          <div className={styles.mapSectionContainer}>
+            <div className={styles.mapSectionLeft}>
+              <h3>Learn about extractive industries in each state</h3>
+              <p>Explore production, revenue, and disbursements data for each state.</p>
+              <div className={styles.mapSectionLocationSelector}>
+                <label htmlFor="location-selector">State or offshore region:</label>
+                <LocationSelector 
+                default='Choose location' 
+                states={this.props.data.states_data.states}
+                offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+              </div>
+            </div>
+            <div className={styles.mapSectionRight}>
+              <figure>
+                <StateMap 
+                ownership={true} 
+                no_outline={true} 
+                offshore_regions={this.props.data.offshore_data.offshore_regions} 
+                states={this.props.data.states_data.states}/>
+              </figure>
+              <aside>
+                <FederalLandOwnershipLegend land={true} />
+              </aside>
+            </div>
+          </div>
+        </section>
 
         <KeyStatsSection></KeyStatsSection>
 

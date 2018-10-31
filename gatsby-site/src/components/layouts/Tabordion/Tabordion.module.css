@@ -19,7 +19,7 @@
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 200;
-	padding: 10px 0px;
+	padding: 10px 20px;
 	text-align: center;
 	width: 100%;
 }
@@ -30,17 +30,38 @@
 
 .tabSelected {
 	background-color: gray-pale;
-	border: 1px solid gray-light;
 	border-bottom: none;
-	cursor: pointer;
-	font-size: 16px;
 	font-weight: bold;
-	padding: 10px 0px;
-	text-align: center;
-	width: 100%;
 }
 
 .tabPanelContainer {
 	background-color: gray-pale;
 	border: 1px solid gray-light;
+  overflow: hidden;
+}
+
+.accordionPanelContainer {
+  animation: expand 0.25s;
+  transform-origin: top center;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 481px) {
+	.tabContainer {
+		flex-wrap: wrap;
+  	padding-right: 0;
+	}
+	.tab {
+		text-align: left;
+	}
 }

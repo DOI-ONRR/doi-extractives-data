@@ -20,10 +20,10 @@ const stackedBar = {
 		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
 
 		if(props.maxValue){
-			xScale.domain([0, props.maxValue]).nice();
+			xScale.domain([0, props.maxValue]);
 		}
 		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]).nice();
+			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]);
 		}
 
 		svg.selectAll("g")
@@ -54,10 +54,10 @@ const stackedBar = {
 
 
 		if(props.maxValue){
-			xScale.domain([0, props.maxValue]).nice();
+			xScale.domain([0, props.maxValue]);
 		}
 		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]).nice();
+			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]);
 		}
 
 		let bars = svg.selectAll("g")

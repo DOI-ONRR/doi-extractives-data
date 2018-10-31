@@ -25,9 +25,7 @@ class Tabordion extends React.Component {
         <div className={styles.tabContainer}>
 	        {this.props.children &&
 	        	React.Children.map(this.props.children, (child,index) => {
-	        		if(child.type.name === "Tab") {
-	        			return <Tab key={index} isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />;
-	        		}
+	        		return <Tab key={index} isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />;
 	        	})
 	        }
         </div>

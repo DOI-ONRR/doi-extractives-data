@@ -1,0 +1,27 @@
+@value colors: "../../../../css-global/colors.css";
+@value blue, white from colors;
+
+.root {
+	display: inline-block;
+	background-color: blue;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px;
+}
+
+.root svg{
+	background-color: white;
+	fill: blue;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.root div{
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.root:hover > div{
+	text-decoration: underline;
+}

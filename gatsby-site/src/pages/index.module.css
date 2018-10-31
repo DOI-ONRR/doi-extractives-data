@@ -1,5 +1,5 @@
 @value colors: "../css-global/colors.css";
-@value gray-pale, gray-light, gray-darkest from colors;
+@value gray-pale, gray-light, gray-darkest, green-light from colors;
 
 .root {
 
@@ -22,9 +22,13 @@
 	padding: 0px 10px;
 }
 
-.tabContentAside svg{
+.tabContentAside > svg{
 	width: 276px;
 	padding-top: 10px;
+}
+
+.tabContentAside > h5{
+	margin-bottom: 5px;
 }
 
 .tabContentBottomContainer {
@@ -35,12 +39,23 @@
 	padding-top: 20px;
 }
 
-.tabContentBottomContainer div{
+.tabContentBottomContainer > div{
 	margin-bottom: 20px;
 }
 
-.tabContentBottomContainer div:first-child{
+.tabContentBottomContainer > div:first-child{
 	margin-right: 20px;
+}
+
+.linkContainer {
+	border-top: 2px solid green-light;
+	padding-top: 7px;
+}
+
+.linkContainer > a {
+	display: block;
+	margin: 7px 0px;
+	white-space: nowrap;
 }
 
 @media screen and (max-width: 601px) {

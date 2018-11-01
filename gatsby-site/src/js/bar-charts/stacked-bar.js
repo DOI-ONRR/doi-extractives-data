@@ -77,7 +77,7 @@ const stackedBar = {
 
 		// Update existing Bars 
 		bars.transition()
-			.duration(500)
+			.duration(0)
 			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
 			.select("rect")
 			.attr("x", (d) => { return xScale(d[0][0]); })

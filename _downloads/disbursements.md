@@ -25,7 +25,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: "The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the Office of Natural Resources Revenue, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: Land and Water Conservation Fund (LWCF) and National Historic Preservation Act (NHPA)."
+description: "The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the Office of Natural Resources Revenue, which is part of the Department of the Interior."
 tag:
 - Data
 - Downloads
@@ -33,28 +33,23 @@ tag:
 - Disbursements
 ---
 
-> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the [Office of Natural Resources Revenue](http://www.onrr.gov/), which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: [Land and Water Conservation Fund](https://www.doi.gov/lwcf) (LWCF) and [National Historic Preservation Act](https://www.nps.gov/subjects/historicpreservation/national-historic-preservation-act.htm) (NHPA).
+> {{ page.description }}
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2014-2017.xlsx">{% include svg/icon-download.svg %}Funds data by state and county (xlsx, 32 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2003-2017_by_type.xlsx">{% include svg/icon-download.svg %}Funds data by type (xlsx, 75 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/LWCF_incl-documentation_FY2011-2015_2016-09-15.xlsx">{% include svg/icon-download.svg %}LWCF dataset, includes docs (xlsx, 870 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_FY2011-2016_2017-05-26.xlsx">{% include svg/icon-download.svg %}NHPA dataset (xlsx, 19 KB)</a></li>
+  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2003-2018_by_type.xlsx">{% include svg/icon-download.svg %}Disbursements data by state, county, and type (xlsx, 78.9 KB)</a></li>
 </ul>
 
-The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.
-
-We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
+The documentation that follows is for the funds overview dataset. We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2014-2017. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2003-2018. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data publication
 
-The disbursement dataset is updated in December after the end of the federal government fiscal year.
+The disbursement dataset is updated in November after the end of the federal government fiscal year.
 
 ## Data dictionary
 

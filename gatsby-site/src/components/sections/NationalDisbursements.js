@@ -79,7 +79,7 @@ class NationalDisbursements extends React.Component{
 					
 					{((this.state.disbursements !== undefined) && (disbursementsForYear !== undefined)) &&
 						<strong>
-							{" "}In {this.state.year}, ONRR disbursed a total of {utils.formatToDollarInt(disbursementsForYear.total)}
+							{" "}In {this.state.year}, ONRR disbursed a total of {utils.formatToDollarInt(disbursementsForYear.total)}.
 						</strong>
 					}
 				</p>

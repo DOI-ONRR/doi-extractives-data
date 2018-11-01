@@ -36,9 +36,15 @@ class StackedBarSingleChartTableRow extends React.Component {
 							className="stacked-bar-legend" />
 					</td>
 					:
-					<td>
-						There is no data about disbursements to {this.props.name} in {this.props.year}.
-					</td>
+					(this.props.noDataExplanation !== undefined) ?
+						<td>
+							{this.props.noDataExplanation}
+						</td>
+						:	
+						<td>
+							There is no data about disbursements to {this.props.name} in {this.props.year}.
+						</td>
+						
 				}
 			</tr>
 		);

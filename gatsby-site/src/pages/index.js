@@ -3,6 +3,10 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import Link from '../components/utils/temp-link';
 
+import { hydrate as hydateProductionVolumesAction } from '../state/reducers/production-volumes';
+
+import * as CONSTANTS from '../js/constants';
+
 import {KeyStatsSection} from '../components/sections/KeyStatsSection';
 import {WhatsNew} from '../components/sections/WhatsNew';
 import {Tabordion, Tab} from '../components/layouts/Tabordion';
@@ -19,9 +23,22 @@ import styles from "./index.module.css";
 
 class HomePage extends React.Component {
 
+  constructor(props){
+    super(props);
+
+    this.hydrateStore();
+  }
+
+  /**
+   * Add the data to the redux store to enable 
+   * the components to access filtered data using the 
+   * reducers
+   **/
+  hydrateStore(){
+    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCT_VOLUMES_OIL, this.props.data.OilVolumes.Volumes);
+  }
 
 	render() {
-
 		return (
       <main>
         <Helmet
@@ -154,6 +171,7 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
+  dispatch => ({ hydrateProductionVolumes: (data, key) => dispatch(hydateProductionVolumesAction(data, key)) }),
 )(HomePage);
 
 
@@ -180,6 +198,23 @@ export const query = graphql`
             is_cropped
           }
         }
+      }
+    }
+    OilVolumes:allProductVolumes (
+      filter:{ProductName:{eq: "Oil"}}
+      sort:{fields:[ProductionDate], order: ASC}
+    ) {
+      Volumes:edges {
+        Volume:node {
+          LandCategory
+          LocationType
+          ProductionDate
+          ProductionCategory
+          ProductName
+          Volume
+          Units
+          LongUnits
+        } 
       }
     }
   }

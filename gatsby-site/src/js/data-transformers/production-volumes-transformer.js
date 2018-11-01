@@ -108,7 +108,8 @@ const assignByProduct = (productVolumeNode, productVolumeData, index) => {
 				// make a deep copy of object
 				let node = JSON.parse(JSON.stringify(productVolumeNode));
 
-				node.id = index+"-product-volume",
+
+				node.id = index+"-"+SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey]+"-product-volume",
 				node.ProductName = SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey],
 				node.Volume = productVolumeData[productKey],
 				node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey],

@@ -1,6 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+
+import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
+
+import * as CONSTANTS from '../../../js/constants';
+
 import styles from "./KeyStatsSection.module.css";
 
 import {ExploreDataLink} from '../../layouts/icon-links/ExploreDataLink';
@@ -25,6 +30,7 @@ class KeyStatsSection extends React.Component{
 		productionPeriod: DROPDOWN_VALUES.Recent,
 		revenueToggle: TOGGLE_VALUES.Year,
 		revenuePeriod: DROPDOWN_VALUES.Recent,
+		[CONSTANTS.PRODUCT_VOLUMES_OIL]: this.props.productionVolumesByYear(CONSTANTS.PRODUCT_VOLUMES_OIL),
 	}
 
 	productionToggleClicked(value) {
@@ -53,7 +59,7 @@ class KeyStatsSection extends React.Component{
 
 	render(){
 		return(
-	    <section className="slab-alpha">
+	    <section className="slab-alpha ">
 	    	<div className="container-page-wrapper">
 					<section id="data-summary" className={styles.root}>
 						<h2>Data summary</h2>
@@ -308,5 +314,6 @@ class KeyStatsSection extends React.Component{
 }
 
 export default connect(
-  state => ({})
+  state => ({[CONSTANTS.PRODUCT_VOLUMES_OIL]: state.productionVolumes[CONSTANTS.PRODUCT_VOLUMES_OIL]}),
+  dispatch => ({ productionVolumesByYear: (filter, key) => dispatch(productionVolumesByYearAction(filter, key)) })
 )(KeyStatsSection);

@@ -29,6 +29,10 @@
   margin: 0 0.1rem;
 }
 
+a .icon-link:hover path {
+  fill: $gray-darkest;
+}
+
 .icon-leading {
   margin-right: 0.4em;
 }

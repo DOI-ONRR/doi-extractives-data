@@ -137,6 +137,7 @@ Studies: Disbursements Interviews Apr 2018, Key Facts/Explore Data Aug 2018, Inq
 
 ### Details
 The narrative gets in the way of finding data.
+
 | Solution | Github Issue(s) |
  | - | - |
  | Make links to download more prominent. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3287) <br> [Explore Data page](https://github.com/ONRR/doi-extractives-data/issues/3197) <br> [Table view](https://github.com/ONRR/doi-extractives-data/issues/3187) |
@@ -300,7 +301,95 @@ Users are confused about whether data is for the fiscal or calendar year.  Most 
 
 | Solution | Github Issue(s) |
  | - | - |
- | Consider whether we can use the same year type for all data and clearly label which we're using.. | None |
+ | Consider whether we can use the same year type for all data and clearly label which we're using. | None |
+ 
+ ## Explanations
+| Severity | Frequency |
+| - | - |
+| Medium | 8 participants |
+
+Studies: Key Facts/Explore Data Aug 2018, Key Facts June 2018, Disbursements Round 2 June 2018
+
+### Details
+Participants wanted to get explanations for why numbers were off or changed.
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider providing explanations when we can. | None |
+ 
+ ## Drill down
+ | Severity | Frequency |
+| - | - |
+| Medium | 7 participants |
+ 
+ ## Glossary: icon & links
+ | Severity | Frequency |
+| - | - |
+| Medium | 7+ participants |
+ 
+ ## Production sections order
+ | Severity | Frequency |
+| - | - |
+| Medium | 7 participants |
+ 
+ ## Data available
+ | Severity | Frequency |
+| - | - |
+| Low | 6 participants |
+ 
+ ## Lease level data
+ | Severity | Frequency |
+| - | - |
+| Medium | 6+ participants |
+ 
+ ## Chart coloring
+  | Severity | Frequency |
+| - | - |
+| Medium | 5 participants |
+ 
+ ## Comparison & context
+  | Severity | Frequency |
+| - | - |
+| Medium | 5+ participants |
+ 
+ ## Map coloring
+  | Severity | Frequency |
+| - | - |
+| Low | 5 participants |
+ 
+ ## Revenue by company
+  | Severity | Frequency |
+| - | - |
+| Low | 4 participants |
+ 
+ ## Withheld data
+  | Severity | Frequency |
+| - | - |
+| Low | 4 participants |
+ 
+ ## Sales year
+  | Severity | Frequency |
+| - | - |
+| Low | 4+ participants |
+ 
+ ## Production chart order
+  | Severity | Frequency |
+| - | - |
+| Low | 3 participants |
+ 
+ ## Production rankings
+  | Severity | Frequency |
+| - | - |
+| Low | 4 participants |
+
+Studies: Lease Level Interviews, October 2018 Interviews, Sarcastic Seacow (unknown #)
+ 
+ ## Printing
+  | Severity | Frequency |
+| - | - |
+| Low | 3+ participants |
+
+Studies: Lease Level Interviews, October 2018 Interviews, Disbursements Round 1 May 2018, Sarcastic Seacow (unknown #)
+
  
  # Tabled topics
  These are topics that are low frequency or we've decided not to address that we should watch for in the future in case they become higher frequency.

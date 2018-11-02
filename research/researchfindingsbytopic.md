@@ -273,6 +273,35 @@ Users have had trouble with the use of the word "source."
  | - | - |
  | Explore alternatives to the word "source." | None |
  
+ ## Revenue graphic
+  | Severity | Frequency |
+| - | - |
+| Medium | 9+ participants |
+
+Studies: October 2018 Interviews, Key Facts/Explore Data Aug 2018, Randy Roo (unknown #)
+
+### Details
+People are confused by the Revenue by Phase graphic.
+- They are confused about what's being added up to create the empty bars.
+
+ | Solution | Github Issue(s) |
+ | - | - |
+ | Consider different displays for federal revenue. | [Revenue graphic](https://github.com/ONRR/doi-extractives-data/issues/3176) |
+ 
+ ## Year types
+   | Severity | Frequency |
+| - | - |
+| Medium | 9 participants |
+
+Studies: Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018
+
+### Details
+Users are confused about whether data is for the fiscal or calendar year.  Most are okay with having one year type, but want it to be consistent and clearly labeled.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider whether we can use the same year type for all data and clearly label which we're using.. | None |
+ 
  # Tabled topics
  These are topics that are low frequency or we've decided not to address that we should watch for in the future in case they become higher frequency.
  

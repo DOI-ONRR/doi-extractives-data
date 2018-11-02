@@ -188,22 +188,22 @@ selector: list
       </div>
 
       <h3 id="disbursements" class="h3-bar">Understanding federal disbursements</h3>
-      <p class="landing-intro_link">The federal government collects revenue from companies extracting natural resources on federal lands and waters. It then distributes that money to different agencies, funds, and local governments. This process is called "disbursement".</p>
+      <p class="landing-intro_link">The federal government collects revenue from companies extracting natural resources on federal lands and waters. The government then distributes that money to different agencies, funds, and local governments. This process is called "disbursement".</p>
       <p><a href="#">Learn how disbursements work</a>.</p>
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</a></h4>
-          <p>About the LWCF</p>
+          <p>When {{ "authorized" | term: "authorization" }}, the Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue. The fund supports conservation, outdoor recreation, and the needs of local communities.</p>
           <p><a href="{{site.baseurl}}/how-it-works/land-and-water-conservation-fund/">Learn more about the Land and Water Conservation Fund</a>.</p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/historic-preservation-fund/">Historic Preservation Fund</a></h4>
-          <p>About the HPF</p>
+          <p>When {{ "authorized" | term: "authorization" }}, the Historic Preservation Fund receives disbursements from offshore oil and gas revenue. The fund provides grants to state and tribal historic preservation offices to support the conservation of cultural and historic sites.</p>
           <p><a href="{{site.baseurl}}/how-it-works/historic-preservation-fund/">Learn more about the Historic Preservation Fund</a>.</p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/gomesa/">Gulf of Mexico Energy Security Act (GOMESA)</a></h4>
-          <p>About GOMESA</p>
+          <p>The Gulf of Mexico Energy Security Act (GOMESA) created a revenue-sharing model for gulf states. Under the act, Alabama, Louisiana, Mississippi, and Texas receive a portion of the revenue generated from oil and gas production offshore in the Gulf of Mexico.</p>
           <p><a href="{{site.baseurl}}/how-it-works/gomesa/">Learn more about GOMESA</a>.</p>
         </div>
       </div>

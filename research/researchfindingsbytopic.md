@@ -394,6 +394,39 @@ Studies: Lease Level Interviews, October 2018 Interviews, Disbursements Round 1 
  # Tabled topics
  These are topics that are low frequency or we've decided not to address that we should watch for in the future in case they become higher frequency.
  
+| Topic |	Finding | Frequency |	Studies |
+| - |	- | - |	- |
+| Glossary: More Terms | Participants wanted more glossaries than we currently have. <br> - Missing terms: bonuses, AML fees, revenue, disbursements, GOMESA, 8(g)" | 5 participants | Key Facts/Explore Data Aug 2018 <br> Key Facts June 2018 <br> Disbursements Round 1 May 2018 |
+| Saving Data |	Nobody wanted the ability to save filters because they usually don't need to answer the same question twice. |	5	participants | Disbursements Round 1 May 2018 |
+| Email Data |	Many participants liked the option to email the data, but had mixed expectations about what would be emailed. |	4	participants | Disbursements Round 1 May 2018 |
+| Case Studies	| User like the case studies. <br> He’s interested in comparing against other counties and thought the case studies were an interesting way to do this. |	3	participants | Home Page Sept 2018 <br> Key Facts/Explore Data Aug 2018 <br> Key Facts June 2018 |
+| Create Charts	| Users want to be able to create their own charts from the data using the site.	| 3	participants | October 2018 Interviews <br> Key Facts June 2018 <br> Disbursements Interviews Apr 2018 |
+| Revenue & Disbursements | A couple participants noticed that revenue and disbursements didn't match up. <br> P4: Noticed that revenue and disbursements don’t match up. <br> P5: Disbursements: Ok, so I’m looking at all funds, doesn’t seem like it is quite the same number as revenues <br> Wants to see revenue and disbursements data tied together, so he can track funds across the process. |	3	participants | Key Facts/Explore Data Aug 2018 <br> Disbursements Round 2 June 2018 |
+| EITI	| Noted that we need to be clear about what we're keeping from EITI and what our mission is now.	| 2 participants |	Disbursements Round 2 June 2018 |
+| Chart interactivity	| Users want the summary graphics to be interactive.	| 2	participants | October 2018 Interviews <br> Key Facts/Explore Data Aug 2018 |
+| IE Bugs | Bugs in IE: Overlapping links on About page in Gatsby, broken map <br> She uses IE and the site is broken. | 2 participants | Home Page Sept 2018 <br> Disbursements Round 2 June 2018 |
+| Language: Extractive	| Thought the word “extractive” might be construed as political, but couldn’t come up with a better word. <br> I’m not exactly sure what “extractive industries” means, but I like the summary | 2 participants | Home Page Sept 2018 <br> Key Facts/Explore Data Aug 2018 |
+| Language: Federal (on state pages) | Am I still just on the State of TX? I guess so, but I’m confused when I see federal revenue <br> Possibly because the federal land percentage was the first thing visible, one user expressed confusion about whether the entire scope of the page would be limited to federal land. (on a state page) |	2 participants | Key Facts/Explore Data Aug 2018 <br> Randy Roo |
+| Number Formats	| Wasn’t sure if the GOMESA numbers were in thousands. <br> Thinks in terms of how budget formats for numbers (expected ,000s to be cut off) (P5) | 2 participants |	Key Facts June 2018 |
+| Bar Chart Interaction |	Users are confused by the interactivity on the vertical bar charts.	| 1 participant |	Key Facts/Explore Data Aug 2018 |
+| Community	| Wants a community of people who are interested in this, but hasn’t found one.	| 1 participant |	Disbursements Round 2 June 2018 |
+| Data Summary |	Users want to see numbers on the charts.	| 1 participant |	October 2018 Interviews |
+| Download	| Users don't know what the Download Data link in the header is for.	| 1	participant | Home Page Sept 2018 |
+| Economic Impact | Liked GDP and employment data. <br> People really gravitated to this section, and seemed to understand why this was an important measure. <br> One tester wanted to be able to sort this table by number or percentage. <br> Several testers had existing perceptions about extractives employment, and were looking at this section to validate those perceptions. <br> There’s huge concern about native rights, subsistence rights, access, scope, — what’s most important is often about the impact on the people, as much as about the ownership/money. Protected impacts, and scope; the stories tend to focus around that rather than revenue. | 1+ participant | Key Facts/Explore Data Aug 2018 <br> Randy Roo (unknown #) <br> Sarcastic Seacow (unknown #) |
+| EIA Data |	People don't think we should have EIA data on our site.	| 1 participant |	October 2018 Interviews |
+| External Links	| Wasn’t clear when a link was taking him to the EIA site that it was taking him out of our site.	| 1 participant | 	Key Facts/Explore Data Aug 2018 |
+| Home Cards |	Some users like the old cards.	| 1 participant |	Home Page Sept 2018 |
+| How It Works |	Said the How It Works page wasn’t what she expected, but couldn’t articulate what she expected. |	1 participant |	Key Facts/Explore Data Aug 2018 |
+| Language: Disbursements | Didn’t like the term Disbursements and thought the term general public wouldn’t know what it means. <br> Disbursements is an unfamiliar word, and people weren't sure what it meant. |	1+ participants | Key Facts/Explore Data Aug 2018 <br> Randy Roo (unknown #)|
+| Language: Explore Data |	Explore data - said the term felt too technical. Expected it to be digging into the numbers in tables. |	1	participant | Key Facts/Explore Data Aug 2018 |
+| Load Time |	Cares lot about load time.	| 1	participant | Home Page Sept 2018 |
+| Maps	| Wanted the maps to be able to zoom in. Expected to zoom to his county from the map on the state page. |	1 participant |	Key Facts/Explore Data Aug 2018 |
+| Revenue	| One participant wants to see revenue by commodity for each state. | 1 participant |	October 2018 Interviews |
+| Revenue Order |	Company most important	| 1	participant | October 2018 Interviews |
+| Sorting |	Wanted to be able to sort and reorganize everything.	| 1	participant | Key Facts/Explore Data Aug 2018 |
+| Update Frequency	| Users want our data updated more frequently.	| 1	participant | October 2018 Interviews |
+| What's New	| Would you want to know what’s new on the site? Not in this context since I don’t know the site. If the change were big enough, it might be helpful for people who come back to the site.	| 1	participant | Key Facts/Explore Data Aug 2018 |
+ 
  # Addressed
  Once we start implementing the planned updates, we'll move those topics down.
  

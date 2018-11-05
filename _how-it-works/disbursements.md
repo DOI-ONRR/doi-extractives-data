@@ -32,8 +32,8 @@ nav_items:
         title: Disbursements from offshore revenues
       - name: native-american-disbursements
         title: Native American disbursements
-  - name: matching-revenue-and-disbursement-totals
-    title: Matching revenue and disbursement totals    
+  - name: revenue-and-disbursement-totals
+    title: Revenue and disbursement totals    
 selector: list
 ---
 
@@ -81,7 +81,7 @@ Most offshore revenue comes from oil and gas production in the Gulf of Mexico. T
 
 ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land]({{site.baseurl}}/how-it-works/#tribal-overview).
 
-## Matching revenue and disbursement totals
+## Revenue and disbursement totals
 
 The timing and frequency of disbursement payments depend on the laws and regulations that govern the disbursement.
 

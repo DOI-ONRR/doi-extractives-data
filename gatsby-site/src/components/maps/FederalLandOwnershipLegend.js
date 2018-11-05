@@ -5,7 +5,7 @@ const FederalLandOwnershipLegend = (props) => (
     <ul className="cells">
         <li className="cell"><span className="swatch"></span>Federal{props.land && " lands and waters"}</li>
         <li className="cell"><span className="swatch"></span>Native American{props.land && " land"}</li>
-        <li className="cell"><span className="swatch"></span>Other land (state, local, or private{props.land && " land"})</li>
+        <li className="cell"><span className="swatch"></span>Other{props.land && " land"} (state, local, or private)</li>
     </ul>
     </div>
 );

@@ -312,6 +312,7 @@ Studies: Key Facts/Explore Data Aug 2018, Key Facts June 2018, Disbursements Rou
 
 ### Details
 Participants wanted to get explanations for why numbers were off or changed.
+
 | Solution | Github Issue(s) |
  | - | - |
  | Consider providing explanations when we can. | None |
@@ -330,7 +331,7 @@ Users want to be able to click on charts to drill into more details.
  | - | - |
  | Consider this for future chart designs.  We're piloting this with the Revenue by Company graphic. | https://github.com/ONRR/doi-extractives-data/issues/2805 |
  
- ## Glossary: icon & links
+ ## Glossary icon and links
  | Severity | Frequency |
 | - | - |
 | Medium | 7+ participants |

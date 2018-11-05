@@ -320,61 +320,197 @@ Participants wanted to get explanations for why numbers were off or changed.
  | Severity | Frequency |
 | - | - |
 | Medium | 7 participants |
+
+Studies: Key Facts/Explore Data Aug 2018
+
+### Details
+Users want to be able to click on charts to drill into more details.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider this for future chart designs.  We're piloting this with the Revenue by Company graphic. | https://github.com/ONRR/doi-extractives-data/issues/2805 |
  
  ## Glossary: icon & links
  | Severity | Frequency |
 | - | - |
 | Medium | 7+ participants |
+
+Studies: Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Home Page Sept 2018, Mighty Moose B (unknown #), Key Facts June 2018
+
+### Details
+The glossary icon isn't readily understood.
+- When it was initially put in the header without a label, participants didn't understand what it was.  They got it when the word "glossary" was added, but the word isn't there when it appears in contextual links.
+- A few people have had issues understanding the icon in contextual links and thought it was a filter when used in a table column header.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Test out different icons for the glossary. | None |
  
  ## Production sections order
  | Severity | Frequency |
 | - | - |
 | Medium | 7 participants |
+
+Studies: Home Page Sept 2018
+
+### Details
+Participants had mixed opinions about whether All should come first or last.  
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Keeping it with all first, for now, but will watch in future studies. | https://github.com/ONRR/doi-extractives-data/issues/3278 |
  
  ## Data available
  | Severity | Frequency |
 | - | - |
 | Low | 6 participants |
+
+Studies: Key Facts June 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018, Disbursements Interviews Apr 2018
+
+### Details
+Data that isn’t available is a pain point.
+- Prices and volume in the disbursements table.
+- Flaring & venting and royalty relief volume 
+- Further breakouts of where the money is going (U.S Treasury by agency, by program)
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider adding this type of data. | None |
  
  ## Lease level data
  | Severity | Frequency |
 | - | - |
 | Medium | 6+ participants |
+
+Studies:  October 2018 Interviews, Key Facts/Explore Data Aug 2018, Key Facts June 2018, Sarcastic Seacow (unknown #)
+
+### Details
+Users want lease, well (API number), and company/operator data.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Add lease and well level data to the site. | [Label with all issues on this topis](https://github.com/ONRR/doi-extractives-data/labels/Lease%20Level%20Research) |
  
  ## Chart coloring
   | Severity | Frequency |
 | - | - |
 | Medium | 5 participants |
+
+Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018
+
+### Details
+Users have had some issues with chart colors.
+- Not enough differentiation between shades.
+- Using the same colors to represent different things on charts on the same page.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | We need to update some of the older charts to more differentiated colors. | None |
  
  ## Comparison & context
   | Severity | Frequency |
 | - | - |
 | Medium | 5+ participants |
+
+Studies: Key Facts/Explore Data Aug 2018, Disbursements Round 1 May 2018, Inquisitive impala (unknown #), Sarcastic Seacow (unknown #)
+
+### Details
+Users want more functionality to facilitate comparing and getting context for numbers.
+- Different measurement units for production.
+- Not knowing how much production of a given commodity gets you. (i.e. it can power X number of lightbulbs or train cars)
+- Comparisons against other countries
+- Local to national comparison
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Provide more comparison data. | None |
  
  ## Map coloring
   | Severity | Frequency |
 | - | - |
 | Low | 5 participants |
+
+Studies: Home Page Sept 2018
+
+### Details
+The map coloring has caused issues for some users.
+- Offshore regions make the map less recognizable
+- People don't read the key
+- The colors are too close together to be able to easily distinguish
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Revisit the map design, since many users don't get that it's showing ownership and offshore may cause some confusion. | https://github.com/ONRR/doi-extractives-data/issues/3281 |
  
- ## Revenue by company
+ ## Revenue by company page
   | Severity | Frequency |
 | - | - |
 | Low | 4 participants |
+
+Studies: October 2018 Interviews, Key Facts/Explore Data Aug 2018
+
+### Details
+Participants had suggestions for improving the Revenue by Company page.
+- Drill into the companies to see what commodities they have
+- Filter by multiple commodities
+- Total should be on the bottom instead of top
+- It isn't clear what you've filtered by and the order of operations when applying multiple filters
+- Needs more color
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | TBD | None |
  
  ## Withheld data
   | Severity | Frequency |
 | - | - |
 | Low | 4 participants |
+
+Studies: October 2018 Interviews, Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018
+
+### Details
+People are confused by withheld data.
+- The one participant who saw the withheld data design didn't understand it.
+- Noted that withheld means it's not actually open data
+- She didn’t know everything that was proprietary, even as someone who works for ONRR, so we could dig into what’s proprietary.
+- Noted that he needs clarity around withheld numbers. (P1)
+- Wants withheld data rolled up at the higher levels (i.e. include withheld counties in the state total).
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | TBD | https://github.com/ONRR/doi-extractives-data/issues/2023 |
  
  ## Sales year
   | Severity | Frequency |
 | - | - |
 | Low | 4+ participants |
+
+Studies: October 2018 Interviews, Disbursements Interviews Apr 2018, Stats Page (unknown #)
+
+### Details
+Sales year data isn't as useful. When asked a few have said it might be useful, but couldn't provide a clear use case for when they would use it.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider putting sales year data on the site. | https://github.com/ONRR/doi-extractives-data/issues/2580 |
  
  ## Production chart order
   | Severity | Frequency |
 | - | - |
 | Low | 3 participants |
+
+Studies: Key Facts/Explore Data Aug 2018
+
+### Details
+A few participants mentioned that it would make more sense to organize production by volume.
+
+P5: It would be nice if you could reorganize based off the size of contribution to federal revenue
+P8: Didn’t like how production is sorted alphabetically.  Wanted highest volume products (oil, gas, coal) first.  Liked what we had for this on Explore B.
+P10: Wanted Coal, Gas, and Oil to be highlighted at the top of production because they are highest volume.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider organizing the bar charts by volume to make it clear which commodities have the largest impact. | https://github.com/ONRR/doi-extractives-data/issues/3181 |
  
  ## Production rankings
   | Severity | Frequency |
@@ -382,6 +518,15 @@ Participants wanted to get explanations for why numbers were off or changed.
 | Low | 4 participants |
 
 Studies: Lease Level Interviews, October 2018 Interviews, Sarcastic Seacow (unknown #)
+
+### Details
+Participants would use rankings to compare against other data. One said they expected them to be wrong because EIA updates their data more frequently. One would compare against data from the states and one wants to compare changes over time.
+
+In general, I literally spent like 10 minute on this, I wanted to know where the revenue comes in Coconino County. I’d be sweet if -- maybe I didn’t click the right spot -- I’d like to know what industry that revenue is coming from in my county. And how Coconino County compares to other counties. It sounded like the site ranked states, but could counties be ranked, too? And is there a way to follow that money to county coffers? Or is there a way to compare costs to counties to the revenue? What sort of impacts these counties have? Revenues coming in versus how much the county estimated they would spend. Because that’s where the interesting things are, right? Is the county getting a benefit for the spend.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Consider whether this would add value to the site. | https://github.com/ONRR/doi-extractives-data/issues/2310 |
  
  ## Printing
   | Severity | Frequency |
@@ -389,6 +534,22 @@ Studies: Lease Level Interviews, October 2018 Interviews, Sarcastic Seacow (unkn
 | Low | 3+ participants |
 
 Studies: Lease Level Interviews, October 2018 Interviews, Disbursements Round 1 May 2018, Sarcastic Seacow (unknown #)
+
+### Details
+One participant prints things out, so she can refer to them later. Also makes screenshots of data she wants to refer back to and drops them in a doc.
+
+Notes that congressional users print the screen. (P3)
+
+Also, the site didn’t print well. Lots of white space, not as impactful. I went to print this so I could send it to our board in the way that we usually send emails (attachments with more information). I would have liked the list of state rankings and amount of revenue per state. And the case study. Since it didn’t work, we provided the link, but I’m not sure anyone clicked on it. Our board members aren’t going to go surfing the internet. Data people, sure.
+
+Has seen other people printing.
+
+Could be using printouts to compare line items in an audit.
+
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Revisit printing functionality. | https://github.com/ONRR/doi-extractives-data/issues/2220 |
 
  
  # Tabled topics

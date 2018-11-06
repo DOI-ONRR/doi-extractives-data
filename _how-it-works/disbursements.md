@@ -65,9 +65,19 @@ We share [disbursements data for each fund by fiscal year]({{site.baseurl}}/expl
 
 ## Disbursements and location
 
-### Onshore and offshore
+The distribution of disbursements often depends on the geographic source of the revenue. The largest geographic categories that govern disbursements are _onshore_ and _offshore_. For example, state governments receive a portion of revenue from onshore extraction on federal land in their state, and 100% of disbursements to the Reclamation Fund come from onshore revenues.
 
-The distribution of disbursements often depends on where the revenue was generated. The largest geographic categories that govern disbursements are _onshore_ and _offshore_. For example, state governments receive a portion of revenue from onshore extraction on federal land in their state, and 100% of disbursements to the Reclamation Fund come from onshore revenues. 
+### Disbursements from onshore revenues
+
+Federal onshore revenue is generated from leases on federal land within a given state or on Native American land. 
+
+Except for Alaska, states receive 49% of extractive revenues paid to the federal government from leases on federal land in that state. Alaska receives 90%, dating back to the Alaska Statehood Act.
+
+ONRR disburses 40% of onshore revenues to the Reclamation Fund to be used for infrastructure projects, such as dams and power plants. Another 10% goes to the general fund of the U.S. Treasury, where Congress can appropriate it for programs and services. The remaining 1% of revenue is used for administrative purposes.
+
+#### Native American disbursements
+
+ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land]({{site.baseurl}}/how-it-works/#tribal-overview).
 
 ### Disbursements from offshore revenues
 
@@ -76,10 +86,6 @@ Most offshore areas are under the jurisdiction of the federal government, so off
 A portion of revenue generated from offshore leases within three miles of a given state's shoreline is shared with that state. This three-mile region is called the {{ "8(g)" | term }} zone.
 
 Most offshore revenue comes from oil and gas production in the Gulf of Mexico. The [Gulf of Mexico Energy Security Act (GOMESA)]({{site.baseurl}}/how-it-works/gomesa/) of 2006 requires a portion of that revenue be shared with four states that border the Gulf of Mexico: Alabama, Louisiana, Mississippi, and Texas. 
-
-### Native American disbursements
-
-ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land]({{site.baseurl}}/how-it-works/#tribal-overview).
 
 ## Revenue and disbursement totals
 

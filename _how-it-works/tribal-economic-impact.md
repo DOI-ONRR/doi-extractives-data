@@ -32,7 +32,7 @@ selector: list
 
 {% include selector.html %}
 
-Little data exists to measure the economic impact of extraction on Native American economies, both at the Native American and individual levels and at the aggregate national level.
+Little data exists to measure the economic impact of extraction on Native American economies, both at the tribal and individual levels and at the national level.
 
 ## Gross domestic product and jobs
 

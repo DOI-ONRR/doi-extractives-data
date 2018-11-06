@@ -166,7 +166,7 @@ When the operator decides to abandon mining, they must reclaim the mining area a
 
 ## Renewable energy
 
-The Department of Energy (DOE) estimates that tribal lands constitute 5% of all renewable energy resources even though they constitute only 2% of U.S. land. This includes 3.4% of the U.S. technical potential for wind resources and 5.1% for utility-scale rural solar resources.
+The Department of Energy (DOE) estimates that Native American lands constitute 5% of all renewable energy resources, even though they constitute only 2% of U.S. land. This includes 3.4% of the U.S. technical potential for wind resources and 5.1% for utility-scale rural solar resources.
 
 A number of agencies within the Department of the Interior play a role in the process of developing renewable energy on Native American land:
 

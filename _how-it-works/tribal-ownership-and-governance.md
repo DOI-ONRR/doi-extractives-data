@@ -25,7 +25,7 @@ nav_items:
         title: Indian Mineral Development Act of 1982
       - name: tribal-energy-development--self-determination-act-of-2005
         title: Tribal Energy Development & Self-Determination Act of 2005
-description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique processes involving multiple stakeholders.
+description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 tag:
 - how it works
 - production
@@ -52,7 +52,7 @@ selector: list
 
 Today, there are two major types of Native American land:
 
-* {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with individual or tribe. Trust lands held on behalf of individuals are known as allotments.
+* {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with the individual or tribe. Trust lands held on behalf of individuals are known as allotments.
 * Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority.
 
 In general, most Native American lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Native American tribes and individuals.

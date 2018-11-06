@@ -42,23 +42,8 @@ tag:
 - Company
 - By company
 ---
-  <section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="#">Revenue by company</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </section>
+
+{% include revenue-nav.html %}
 
 > {{ page.description }}
 

@@ -46,51 +46,14 @@ tag:
 - By location
 ---
 
-  <section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="#">Revenue by month</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </section>
+{% include revenue-nav.html %}
 
-> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all {{ "accounting year" | term }} data.
+> We offer federal revenue by month for January 2008 through the last month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 
-Download calendar year data:
+Download federal revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
-    Offshore dataset (xlsx, 484 KB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
-    Onshore dataset (xlsx, 2.4 MB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-17_2018_03_02.xlsx">{% include svg/icon-download.svg %}
-    Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
-  </a></li>
-</ul>
-
-Download fiscal year data:
-
-<ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Offshore dataset (xlsx, 532 KB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Onshore dataset (xlsx, 1.5 MB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_month_10-2018.xlsx">{% include svg/icon-download.svg %} Federal revenue by month, 1/2008–10/2018 (xlsx, 246 KB)
   </a></li>
 </ul>
 
@@ -98,11 +61,11 @@ Download fiscal year data:
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+
 
 ### Why are some values negative?
 
-Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in the Office of Natural Resources Revenue's revenue summaries.
+
 
 ### Why is there a Gas value, an Oil value and an Oil & Gas value?
 
@@ -110,22 +73,13 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
 
-Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 
 ### Note: Geothermal rate details
 
-The fees and rates for revenue from geothermal resources on federal land depend on whether the land is leased competitively or noncompetitively.
 
-Also, different fee rates apply to pre-2005 leases and to direct use facilities:
-
-* For leases signed before the Energy Policy Act of 2005, the lease holder’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
-* For {{ "direct use" | term_end }}, the lease holder pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lease holder at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
-
-The Bureau of Land Management has [more information about geothermal energy on federal lands](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy).
 
 ## Offshore data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 
@@ -157,7 +111,7 @@ _Row Labels_ This field contains either a state name, or a commodity name. The s
 
 _Sum of Royalty/Revenue_ This field provides the total royalty or revenue for the listed state (total) or commodity in that state.
 
-## Advanced offshore and onshore information
+## Commodities and products
 
 Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
 

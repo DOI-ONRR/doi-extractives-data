@@ -46,23 +46,7 @@ tag:
 - By location
 ---
 
-  <section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab active">
-            <a href="#">Revenue by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </section>
+{% include revenue-nav.html %}
 
 > There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all {{ "accounting year" | term }} data.
 

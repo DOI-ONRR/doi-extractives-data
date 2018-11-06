@@ -87,4 +87,4 @@ The timing and frequency of disbursement payments depend on the laws and regulat
 
 ONRR disburses some revenues the same month they are received, others at the end of the fiscal year, and some the following fiscal year. Because some disbursements are paid out the following fiscal year, the revenue and disbursement totals for a given fiscal year may not match up.
 
-Sometimes, companies send payments to ONRR before sending the reporting paperwork documenting the details of the payments. Without the reporting paperwork, ONRR cannot account for and disburse that revenue. The revenue may show up in one fiscal year, with the disbursement coming the next fiscal year when ONRR processes the reporting paperwork.
+Sometimes, companies send payments to ONRR before sending the report documenting the details of the payments. Without the report, ONRR cannot account for and disburse that revenue. The revenue may show up in one fiscal year, with the disbursement coming the next fiscal year when ONRR processes the report.

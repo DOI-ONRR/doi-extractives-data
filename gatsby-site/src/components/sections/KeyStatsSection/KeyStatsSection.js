@@ -1,10 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import utils from "../../../js/utils";
 
+import { byMonth as productionVolumesByMonthAction } from '../../../state/reducers/production-volumes';
 import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
 
-import * as CONSTANTS from '../../../js/constants';
+import CONSTANTS from '../../../js/constants';
+
 
 import styles from "./KeyStatsSection.module.css";
 
@@ -24,26 +27,74 @@ const DROPDOWN_VALUES ={
 	Calendar: "calendar"
 }
 
+const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE,CONSTANTS.NATIVE_AMERICAN];
+
+const CHART_STYLE_MAP = {
+	"bar": styles.chartBar,
+	[CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshore,
+	[CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshore,
+	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+};
+
 class KeyStatsSection extends React.Component{
+
+	constructor(props){
+		super(props);
+		//
+	}
+
+	componentWillMount() {
+		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
+	}
+
 	state = {
 		productionToggle: TOGGLE_VALUES.Year,
 		productionPeriod: DROPDOWN_VALUES.Recent,
 		revenueToggle: TOGGLE_VALUES.Year,
 		revenuePeriod: DROPDOWN_VALUES.Recent,
-		[CONSTANTS.PRODUCT_VOLUMES_OIL]: this.props.productionVolumesByYear(CONSTANTS.PRODUCT_VOLUMES_OIL),
+		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
+		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
 	}
+
+	componentWillReceiveProps(nextProps) {
+    this.setState({...nextProps});
+  }
 
 	productionToggleClicked(value) {
 		if(value !== this.state.productionToggle) {
-			this.setState({productionToggle: value});
+			this.setStateForProductionVolumes(value, this.state.productionPeriod);
 		}
 	}
 
 	productionPeriodSelected(value) {
 		if(value !== this.state.productionPeriod) {
-			this.setState({productionPeriod: value});
+			this.setStateForProductionVolumes(this.state.productionToggle, value);
 		}
 	}
+
+	setStateForProductionVolumes(toggleValue, dropDownValue) {
+		if(toggleValue === TOGGLE_VALUES.Year) {
+			this.setState({
+				productionToggle: toggleValue, 
+				productionPeriod: dropDownValue,
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 }),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 }),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 })
+			});
+		}
+		else {
+			this.setState({
+				productionToggle: toggleValue, 
+				productionPeriod: dropDownValue,
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
+
+			});
+		}
+	}
+
 
 	revenueToggleClicked(value) {
 		if(value !== this.state.revenueToggle) {
@@ -100,107 +151,73 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.productChartContainer}>
-								<div is="chart">
-									<StackedBarChartLayout 
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY] &&
+									<div is="chart">
+										<StackedBarChartLayout 
+											chartDisplayConfig = {{
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].DisplayNames,
+												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units+")",
+												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].LongUnits,
+												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units,
+												styleMap: CHART_STYLE_MAP,
+												sortOrder: CHART_SORT_ORDER,
+											}}
 
-										chartTitle="Oil (bbl)"
+											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data}
 
-										units="barrels"
+											chartLegendDataFormatFunc={utils.formatToCommaInt}
 
-										chartData={[
-											{"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]},
-											{"Feb": [{"Federal onshore": 63, "Federal offshore": 30, "Native American":15}]},
-											{"Mar": [{"Federal onshore": 22, "Federal offshore": 75, "Native American":35}]},
-											{"Apr": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":55}]},
-											{"May": [{"Federal onshore": 56, "Federal offshore": 20, "Native American":90}]},
-											{"Jun": [{"Federal onshore": 55, "Federal offshore": 33, "Native American":23}]},
-											{"Jul": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":66}]},
-											{"Aug": [{"Federal onshore": 99, "Federal offshore": 66, "Native American":35}]},
-											{"Sep": [{"Federal onshore": 30, "Federal offshore": 20, "Native American":35}]},
-											{"Oct": [{"Federal onshore": 42, "Federal offshore": 50, "Native American":35}]},
-											{"Nov": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":65}]},
-											{"Dec": [{"Federal onshore": 41, "Federal offshore": 50, "Native American":35}]},
-										]}
+											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].GroupNames}
 
-										chartGroups={[
-											{name: "2016", members:5},
-											{name: "2017", members:7}]}
+											>
+										</StackedBarChartLayout>
+									</div>
+								}
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY] &&
+									<div is="chart">
+										<StackedBarChartLayout 
+											chartDisplayConfig = {{
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].DisplayNames,
+												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units+")",
+												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].LongUnits,
+												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units,
+												styleMap: CHART_STYLE_MAP,
+												sortOrder: CHART_SORT_ORDER,
+											}}
 
-										defaultSelected={"Dec"}
+											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data}
 
-										chartLegendHeader={["Source", "2017 (bbl)"]}
+											chartLegendDataFormatFunc={utils.formatToCommaInt}
 
-										chartLegendData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]}
+											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].GroupNames}
 
-										>
-									</StackedBarChartLayout>
-								</div>
+											>
+										</StackedBarChartLayout>
+									</div>
+								}
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY] &&
+									<div is="chart">
+										<StackedBarChartLayout 
+											chartDisplayConfig = {{
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].DisplayNames,
+												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units+")",
+												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].LongUnits,
+												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units,
+												styleMap: CHART_STYLE_MAP,
+												sortOrder: CHART_SORT_ORDER,
+											}}
 
-								<div is="chart">
-									<StackedBarChartLayout 
+											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data}
 
-										chartTitle="Gas (mcf)"
+											chartLegendDataFormatFunc={utils.formatToCommaInt}
 
-										units="mcf"
+											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].GroupNames}
 
-										chartData={[
-											{"Jan": [{"Federal onshore": 56, "Federal offshore": 100, "Native American":75}]},
-											{"Feb": [{"Federal onshore": 20, "Federal offshore": 30, "Native American":15}]},
-											{"Mar": [{"Federal onshore": 55, "Federal offshore": 50, "Native American":35}]},
-											{"Apr": [{"Federal onshore": 55, "Federal offshore": 50, "Native American":35}]},
-											{"May": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":96}]},
-											{"Jun": [{"Federal onshore": 21, "Federal offshore": 33, "Native American":35}]},
-											{"Jul": [{"Federal onshore": 30, "Federal offshore": 89, "Native American":44}]},
-											{"Aug": [{"Federal onshore": 71, "Federal offshore": 50, "Native American":35}]},
-											{"Sep": [{"Federal onshore": 30, "Federal offshore": 80, "Native American":52}]},
-											{"Oct": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-											{"Nov": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":76}]},
-											{"Dec": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-										]}
+											>
+										</StackedBarChartLayout>
+									</div>
+								}
 
-										defaultSelected={"Dec"}
-
-										chartLegendHeader={["Source", "2017 (mcf)"]}
-
-										chartLegendData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]}
-
-										>
-									</StackedBarChartLayout>
-								</div>
-
-								<div is="chart">
-									<StackedBarChartLayout 
-
-										chartTitle="Coal (tons)"
-
-										units="tons"
-
-										chartData={[
-											{"Jan": [{"Federal onshore": 44, "Federal offshore": 100, "Native American":75}]},
-											{"Feb": [{"Federal onshore": 55, "Federal offshore": 33, "Native American":15}]},
-											{"Mar": [{"Federal onshore": 29, "Federal offshore": 50, "Native American":35}]},
-											{"Apr": [{"Federal onshore": 28, "Federal offshore": 50, "Native American":35}]},
-											{"May": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":35}]},
-											{"Jun": [{"Federal onshore": 30, "Federal offshore": 22, "Native American":44}]},
-											{"Jul": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":35}]},
-											{"Aug": [{"Federal onshore": 55, "Federal offshore": 50, "Native American":12}]},
-											{"Sep": [{"Federal onshore": 55, "Federal offshore": 50, "Native American":35}]},
-											{"Oct": [{"Federal onshore": 33, "Federal offshore": 22, "Native American":35}]},
-											{"Nov": [{"Federal onshore": 68, "Federal offshore": 50, "Native American":66}]},
-											{"Dec": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-										]}
-
-
-
-										defaultSelected={"Dec"}
-
-										chartLegendHeader={["Source", "2017 (tons)"]}
-
-										chartLegendData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]}
-
-										>
-									</StackedBarChartLayout>
-								</div>
 							</div>
 						</section>
 						<section className={styles.revenueDisbursementsSection} >
@@ -234,74 +251,14 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.itemChart}> 
-								<StackedBarChartLayout 
-
-									chartTitle="Revenue"
-
-									units="$"
-
-									chartData={[
-										{"Jan": [{"Federal onshore": 66, "Federal offshore": 100, "Native American":75}]},
-										{"Feb": [{"Federal onshore": 66, "Federal offshore": 30, "Native American":15}]},
-										{"Mar": [{"Federal onshore": 74, "Federal offshore": 50, "Native American":35}]},
-										{"Apr": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":54}]},
-										{"May": [{"Federal onshore": 99, "Federal offshore": 33, "Native American":97}]},
-										{"Jun": [{"Federal onshore": 66, "Federal offshore": 50, "Native American":35}]},
-										{"Jul": [{"Federal onshore": 30, "Federal offshore": 13, "Native American":77}]},
-										{"Aug": [{"Federal onshore": 55, "Federal offshore": 50, "Native American":35}]},
-										{"Sep": [{"Federal onshore": 22, "Federal offshore": 63, "Native American":29}]},
-										{"Oct": [{"Federal onshore": 69, "Federal offshore": 50, "Native American":35}]},
-										{"Nov": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-										{"Dec": [{"Federal onshore": 15, "Federal offshore": 50, "Native American":12}]},
-									]}
-
-									chartGroups={[
-										{name: "2016", members:3},
-										{name: "2017", members:9}]}
-
-									defaultSelected={"Dec"}
-
-									chartLegendHeader={["Source", "2017"]}
-
-									chartLegendData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]}
-
-									>
-								</StackedBarChartLayout>
+								
 							</div>
 
 							<div className={styles.itemTitle+" "+styles.itemDisbursements} ><h3>Disbursements</h3></div>
 							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds.</div>
 							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#production" >Explore all disbursements data</ExploreDataLink></div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
-								<StackedBarChartLayout 
-
-									chartTitle="Disbursements"
-
-									units="$"
-
-									chartData={[
-									{"Jan": [{"Federal onshore": 44, "Federal offshore": 100, "Native American":75}]},
-									{"Feb": [{"Federal onshore": 55, "Federal offshore": 33, "Native American":15}]},
-									{"Mar": [{"Federal onshore": 22, "Federal offshore": 50, "Native American":35}]},
-									{"Apr": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-									{"May": [{"Federal onshore": 24, "Federal offshore": 50, "Native American":65}]},
-									{"Jun": [{"Federal onshore": 55, "Federal offshore": 45, "Native American":35}]},
-									{"Jul": [{"Federal onshore": 88, "Federal offshore": 50, "Native American":71}]},
-									{"Aug": [{"Federal onshore": 30, "Federal offshore": 23, "Native American":35}]},
-									{"Sep": [{"Federal onshore": 22, "Federal offshore": 50, "Native American":35}]},
-									{"Oct": [{"Federal onshore": 30, "Federal offshore": 85, "Native American":35}]},
-									{"Nov": [{"Federal onshore": 89, "Federal offshore": 50, "Native American":35}]},
-									{"Dec": [{"Federal onshore": 30, "Federal offshore": 50, "Native American":35}]},
-									]}
-
-									defaultSelected={"Dec"}
-
-									chartLegendHeader={["Source", "2017"]}
-
-									chartLegendData={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]}
-
-									>
-								</StackedBarChartLayout>
+								
 							</div>
 						</section>
 
@@ -314,6 +271,9 @@ class KeyStatsSection extends React.Component{
 }
 
 export default connect(
-  state => ({[CONSTANTS.PRODUCT_VOLUMES_OIL]: state.productionVolumes[CONSTANTS.PRODUCT_VOLUMES_OIL]}),
-  dispatch => ({ productionVolumesByYear: (filter, key) => dispatch(productionVolumesByYearAction(filter, key)) })
+  state => ({	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+  						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
+  						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]}),
+  dispatch => ({	productionVolumesByYear: (key, filter) => dispatch(productionVolumesByYearAction(key, filter)),
+  								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter))})
 )(KeyStatsSection);

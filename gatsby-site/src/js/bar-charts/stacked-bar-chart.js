@@ -1,17 +1,20 @@
 import * as d3 from 'd3';
-import 'core-js'; /* used for IE 11 compatibility */
 import utils from '../../js/utils';
 
 const extentPercent = 0.05;
 const extentMarginOfError = 0.10;
+const MAX_EXTENT_LINE_Y = 20;
 
 const stackedBarChart = {
+
 	create(el, props, state) {
 
 		if(state === undefined) {
 			return;
 		}
-		
+
+		let self = this;
+
 		// Find the max value of the data sets by adding up the all the data items in the each set
 		let maxValue = d3.max(state, (d) => {
 			let sum = 0;
@@ -27,7 +30,7 @@ const stackedBarChart = {
 			return (sum);
 		});
 
-		// Find the max value of the data sets by adding up the all the data items in the each set
+		// Find the min value of the data sets by adding up the all the data items in the each set
 		let minValue = d3.min(state, (d) => {
 			let data = 0;
 			Object.entries(d).forEach(
@@ -42,19 +45,22 @@ const stackedBarChart = {
 			return (data);
 		});
 
-		let units = props.units || '';
+		let xAxisLabels = props.displayConfig && props.displayConfig.xAxisLabels;
+		let styleMap = props.displayConfig && props.displayConfig.styleMap;
+		let keys = (props.displayConfig && props.displayConfig.sortOrder) || self.getOrderedKeys(state);
+		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
+		// if default selected in not passed in as a prop then select the last item
+		let defaultSelected = props.defaultSelected || Object.keys(state[state.length-1])[0];
 		let maxExtentValue = this.calculateExtentValue(maxValue);
 
-		let self = this;
 
 		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
 
 		let height = (el.clientHeight <= 0 )? 200 : el.clientHeight;
 		let marginTop = 25;
-		let marginBottom = 40;
-		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
+		let marginBottom = (props.groups)? 55 : 40;
+		let width = (el.clientWidth <= 0 )? 300 : 300;
 
-		let keys = props.displayNames || self.getOrderedKeys(state);
 
 		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
 		// For vetical bars we want start rect at the bottom and go to the top
@@ -79,13 +85,12 @@ const stackedBarChart = {
 					.attr('width', width);
 
 		// Add Max Extent Number text
-		let maxExtentLineY = 20;
-		let maxExtentGroup = svg.append("g");
+		let maxExtentGroup = svg.append("g").attr("id", "maxExtent");
 
 		maxExtentGroup.append("text")
 			.attr("width", width)
 			.attr("x", width)
-			.attr("y", (maxExtentLineY-5))
+			.attr("y", (MAX_EXTENT_LINE_Y-5))
 			.attr("text-anchor", "end")
 			.text((units === '$')? [units,maxExtentValue].join('') : [maxExtentValue,units].join(' '));
 
@@ -95,7 +100,7 @@ const stackedBarChart = {
       .attr('stroke', '#a7bcc7')
       .attr('stroke-dasharray', [5,5])
       .attr('stroke-width', 1)
-      .attr('transform', 'translate(' + [0, maxExtentLineY] + ')');
+      .attr('transform', 'translate(' + [0, MAX_EXTENT_LINE_Y] + ')');
 
 		// Create chart
 		let stack = d3.stack()
@@ -103,65 +108,67 @@ const stackedBarChart = {
 		 	.offset(d3.stackOffsetNone);
 
 		svg.append("g")
+			.attr("id", "bars")
 			.selectAll("g")
 			.data(state)
 			.enter().append("g")
 				.attr("height", (height-marginTop))
 				.attr("width", xScale.bandwidth())
 				.attr("transform", d => "translate("+(xScale(Object.keys(d)[0]))+",0)")
-				.attr("class", d => 
-					(Object.keys(d)[0] === props.defaultSelected)? 
-						props.barClassNames+" "+props.barSelectedClassNames : props.barClassNames)
+				.attr("selected", d => {
+					if(Object.keys(d)[0] === defaultSelected){
+						if(props.barSelectedCallback) {
+							props.barSelectedCallback(d, this.findGroupNameByKey(props.groups, Object.keys(d)[0]) );
+						}
+						return true;
+					}
+				})
+				.attr("class", d => (styleMap && styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
-				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedClassNames, props.barSelectedCallback);})
+				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback, props.groups);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
 				.enter().append("g")
-					.attr("class", (d) =>{ return self.getKeyClassName(props.classNamesMap, d.key); })
+					.attr("class", (d) => styleMap && styleMap[d.key] )
 					.append("rect")
-					.attr("y", (d) => { return yScale(d[0][1]); })
-					.attr("height", function(d) { return yScale(d[0][0]) - yScale(d[0][1]); })
+					.attr("y", (d) => { return yScale(d[0][1]) || 0; })
+					.attr("height", function(d) { return (yScale(d[0][0]) - yScale(d[0][1])) || 0; })
 					.attr("width", barSize)
 					.attr("x", barOffsetX);
  
  		// Create/Add x-axis
-		let xAxis = d3.axisBottom(xScale).tickSize(0);
-
 		svg.append("g")
 		    .attr("class", "x axis")
 		    .attr("transform", "translate(0," + (height-marginBottom) + ")")
-		    .call(xAxis)
+		    .call(self.createXAxis(xScale, xAxisLabels))
 		    .selectAll("text")
 					.attr("y", 9);
 
 		// Add Grouping Lines
 		if(props.groups){
-			let groupLines = svg.append("g");
+			let groupLines = svg.append("g").attr("id", "groups");
 			let groupWidth = (width/12);
 			let padding = (xScale.bandwidth()*0.2);
 			let xPos = 0;
 
-			props.groups.map((group, index) => {
-					if(index !== -1) {
+			Object.keys(props.groups).map((name, index) => {
 
-						let width = xPos+(groupWidth*group.members)-padding;
+					let width = xPos+(groupWidth*props.groups[name].length)-padding;
 
-						groupLines.append("line")
-				      .attr('x1', xPos+padding)
-				      .attr('x2', width)
-				      .attr('stroke', '#a7bcc7')
-				      .attr('stroke-width', 1)
-				      .attr('transform', 'translate(' + [0, height-15] + ')');
+					groupLines.append("line")
+			      .attr('x1', xPos+padding)
+			      .attr('x2', width)
+			      .attr('stroke', '#a7bcc7')
+			      .attr('stroke-width', 1)
+			      .attr('transform', 'translate(' + [0, height-4-marginBottom/2] + ')');
 
-						groupLines.append("text")
-							.attr("x", ((xPos+padding)/2)+(width/2) )
-							.attr("y", height)
-							.attr("text-anchor", "middle")
-							.text(group.name);
+					groupLines.append("text")
+						.attr("x", ((xPos+padding)/2)+(width/2) )
+						.attr("y", height-16)
+						.attr("text-anchor", "middle")
+						.text(name);
 
-				    xPos = width+padding;
-					}
-
+			    xPos = width+padding;
 				}
 			);
 		}
@@ -172,21 +179,175 @@ const stackedBarChart = {
 	},
 
 	update(el, props, state){
-		console.log(el.clientWidth);
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+		var svg = d3.select(el).select("svg");
+
+		// Find the max value of the data sets by adding up the all the data items in the each set
+		let maxValue = d3.max(state, (d) => {
+			let sum = 0;
+			Object.entries(d).forEach(
+			    ([key, values]) => {
+		    		Object.entries(values[0]).forEach(
+			    		([key, value]) => {
+			    			sum += value;
+			    		}
+			    	)
+			    }
+			)
+			return (sum);
+		});
+
+		// Find the min value of the data sets by adding up the all the data items in the each set
+		let minValue = d3.min(state, (d) => {
+			let data = 0;
+			Object.entries(d).forEach(
+			    ([key, values]) => {
+		    		Object.entries(values[0]).forEach(
+			    		([key, value]) => {
+			    			data += value;
+			    		}
+			    	)
+			    }
+			)
+			return (data);
+		});
+
+		let xAxisLabels = props.displayConfig && props.displayConfig.xAxisLabels;
+		let styleMap = props.displayConfig && props.displayConfig.styleMap;
+		let keys = (props.displayConfig && props.displayConfig.sortOrder) || self.getOrderedKeys(state);
+		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
+		// if default selected in not passed in as a prop then select the last item
+		let defaultSelected = props.defaultSelected || Object.keys(state[state.length-1])[0];
+		
+
+
+		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
+
+		let height = (el.clientHeight <= 0 )? 215 : 215;
+		let marginTop = 25;
+		let marginBottom = (props.groups)? 55 : 40;
+		let width = (el.clientWidth <= 0 )? 300 : 300;
+
+
+		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
+		// For vetical bars we want start rect at the bottom and go to the top
+		// SVG height goes down so this setting will reverse that
+		yScale.domain([maxValue, 0]);
+
+		let xScale = d3.scaleBand()
+		    .domain(state.map(d => {return Object.keys(d)[0];}))
+		    .range([0, width])
+		    .paddingInner(0.3)
+		    .paddingOuter(0.1);
+
+		let barOffsetX = 0;
+
+		if(barSize) {
+			barOffsetX = (xScale.bandwidth() > barSize)? (xScale.bandwidth()-barSize)/2 : 0;
+			barSize = d3.min([xScale.bandwidth(), barSize]);
+		}
+
+		let maxExtentValue = this.calculateExtentValue(maxValue);
+		svg.select("#maxExtent")
+			.select("text")
+			.text((units === '$')? [units,maxExtentValue].join('') : [maxExtentValue,units].join(' '))
+			.attr("y", (MAX_EXTENT_LINE_Y -5));
+
+		// Create chart
+		let stack = d3.stack()
+		 	.keys(keys)
+		 	.offset(d3.stackOffsetNone);
+
+		svg.selectAll("#bars").remove();
+
+		svg.append("g")
+			.attr("id", "bars")
+			.selectAll("g")
+			.data(state)
+			.enter().append("g")
+				.attr("height", (height-marginTop))
+				.attr("width", xScale.bandwidth())
+				.attr("transform", d => "translate("+(xScale(Object.keys(d)[0]))+",0)")
+				.attr("selected", d => {
+					if(Object.keys(d)[0] === defaultSelected){
+						if(props.barSelectedCallback) {
+							props.barSelectedCallback(d, this.findGroupNameByKey(props.groups, Object.keys(d)[0]) );
+						}
+						return true;
+					}
+				})
+				.attr("class", d => (styleMap && styleMap.bar))
+				.attr("data-key", d => Object.keys(d)[0])
+				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback, props.groups);})
+				.selectAll("g")
+				.data((d) => { return stack(d[Object.keys(d)[0]]); })
+				.enter().append("g")
+					.attr("class", (d) => styleMap && styleMap[d.key] )
+					.append("rect")
+					.attr("y", (d) => { return yScale(d[0][1]) || 0; })
+					.attr("height", function(d) { return (yScale(d[0][0]) - yScale(d[0][1])) || 0; })
+					.attr("width", barSize)
+					.attr("x", barOffsetX);
+
+ 
+ 		// Create/Add x-axis
+ 		svg.selectAll("g.x.axis").remove();
+
+		svg.append("g")
+		    .attr("class", "x axis")
+		    .attr("transform", "translate(0," + (height-marginBottom) + ")")
+		    .call(self.createXAxis(xScale, xAxisLabels))
+		    .selectAll("text")
+					.attr("y", 9);
+
+
+		// Add Grouping Lines
+		svg.selectAll("#groups").remove();
+
+		if(props.groups){
+			let groupLines = svg.append("g").attr("id", "groups");
+			let groupWidth = (width/12);
+			let padding = (xScale.bandwidth()*0.2);
+			let xPos = 0;
+
+			Object.keys(props.groups).map((name, index) => {
+
+					let width = xPos+(groupWidth*props.groups[name].length)-padding;
+
+					groupLines.append("line")
+			      .attr('x1', xPos+padding)
+			      .attr('x2', width)
+			      .attr('stroke', '#a7bcc7')
+			      .attr('stroke-width', 1)
+			      .attr('transform', 'translate(' + [0, height-4-marginBottom/2] + ')');
+
+					groupLines.append("text")
+						.attr("x", ((xPos+padding)/2)+(width/2) )
+						.attr("y", height-16)
+						.attr("text-anchor", "middle")
+						.text(name);
+
+			    xPos = width+padding;
+				}
+			);
+		}
 
 	},
 
 	destroy(el){
 		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
 	},
-	
-	getKeyClassName(classNamesMap, key) {
-		if(classNamesMap) {
-			return classNamesMap[key]
-		}
-		else {
-			return utils.formatToSlug(key);
-		}
+
+	findGroupNameByKey(groups, key){
+		return (groups) ? Object.keys(groups).find(name => groups[name].includes(key) ) : undefined;
+	},
+
+	createXAxis(xScale, xAxisLabels){
+		return d3.axisBottom(xScale).tickSize(0).tickFormat((d) => (xAxisLabels)? xAxisLabels[d] : d);
 	},
 
 	getOrderedKeys(data) {
@@ -205,13 +366,27 @@ const stackedBarChart = {
   	let maxValueExtent = Math.ceil(maxValue * (1+extentPercent));
   	return this.getMetricLongUnit(d3.format(setSigFigs(maxValue, maxValueExtent))(maxValueExtent));
   }
+
+
 }
 
-const toggleSelectedBar = (element, data, classNames, callBack) => {
-  let allBars = element.parentNode.childNodes;
+const toggleSelectedBar = (element, data, callBack, groups) => {
+  let selectedElement = element.parentNode.querySelector("[selected=true]");
 
-  allBars.forEach(bar => bar.classList.remove(classNames))
-  element.classList.add(classNames);
+  if(selectedElement){
+  	selectedElement.removeAttribute("selected");
+  }
+
+  let groupName;
+  if(groups){
+  	groupName = Object.keys(groups).find(name => groups[name].includes(Object.keys(data)[0]) );
+  }
+
+  element.setAttribute("selected", true);
+
+  if(callBack){
+  	callBack(data, groupName);
+  }
 }
 
 

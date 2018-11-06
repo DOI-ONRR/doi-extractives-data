@@ -27,40 +27,60 @@ class ChartLegendStandard extends React.Component {
 	}
 
 	render() {
-		let keys = (this.props.displayNames)? Object.keys(this.props.displayNames) : Object.keys(this.props.data[0]);
+		let data = this.props.data;
+		let sortOrder = (this.props.displayConfig && this.props.displayConfig.sortOrder) ? this.props.displayConfig.sortOrder : Object.keys(data);
+		// reverse the order to show from bottom to top per requirements
+		sortOrder = sortOrder.slice().reverse();
+
+		let styleMap = this.props.displayConfig && this.props.displayConfig.styleMap;
+		let units = this.props.displayConfig && this.props.displayConfig.units;
+
 		let total = 0;
 		return(
 			<table className={styles.chartLegendStandard}>
 				<thead>
-				{this.props.header &&
-            		<tr>
-	            		<th colSpan="2">{this.props.header[0]}</th>
-	            		<th>{this.props.header[1]}</th>
-	            	</tr>
-				}
-            	</thead>
+      		<tr>
+        		<th colSpan="2">Source</th>
+        		<th>{this.props.dataKey+(units && " ("+units+")")}</th>
+        	</tr>
+      	</thead>
 				<tbody>
 					{
-						keys.map((key, index) => {
-							if(this.props.data[0][key]){
-								total += this.props.data[0][key];
+						sortOrder.map((key, index) => {
+							if(data[key]){
+								total += this.props.data[key];
 								return(
 									<tr key={key}  >
 										<td>
-											<div className={"chart-legend-"+index} />
+											<div className={(styleMap && styleMap[key])} />
 										</td>
 										<td>
 											{this.getKeyDisplayName(key)}:
 										</td>
 										<td>
 											{ this.props.dataFormatFunc ?
-												this.props.dataFormatFunc(this.props.data[0][key])
+												this.props.dataFormatFunc(this.props.data[key])
 												:
-												this.props.data[0][key]
+												data[key]
 											}
 										</td>
 									</tr>
 								);
+							}
+							else {
+								return(
+									<tr key={key}  >
+										<td>
+											<div className={(styleMap && styleMap[key])} />
+										</td>
+										<td>
+											{this.getKeyDisplayName(key)}:
+										</td>
+										<td>
+											-
+										</td>
+									</tr>
+								);							
 							}
 						})
 					}
@@ -76,16 +96,6 @@ class ChartLegendStandard extends React.Component {
 							}
 						</td>
 					</tr>
-					{this.props.additionalData && 
-						this.props.additionalData.map((data, index) => {
-							return (
-								<tr key={index} className="chart-legend-additional-data-row">
-									<td />
-									<td>{data.name}:</td>
-									<td>{data.value}</td>
-								</tr>)
-						})
-					}
 				</tbody>
 			</table>
 		);
@@ -93,10 +103,10 @@ class ChartLegendStandard extends React.Component {
 }
 
 ChartLegendStandard.propTypes = {
-	/** Array 1 to 2 values */
-	header: PropTypes.array,
+	/** Units label to display for the values */
+	units: PropTypes.string,
 	/** Array of key value pairs */
-	data: PropTypes.array.isRequired,
+	data: PropTypes.object.isRequired,
 	/** Defines the display name/info of the data keys in the chart. Keys should match the data keys */
 	displayNames: PropTypes.object,
 	/** A function that will be applied on each data item of the chart data */

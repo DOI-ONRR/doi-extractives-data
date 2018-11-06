@@ -36,6 +36,7 @@ const utils = {
 		let groups = {};
 
 		data.map((item, index) => {
+
 			let itemGroup = this.resolveByStringPath(group, item);
 			let list = groups[itemGroup];
 
@@ -46,6 +47,28 @@ const utils = {
 				groups[itemGroup] = [item];
 			}
 		});
+
+		return groups;
+	},
+	sumBy(data, group) {
+		let groups = {};
+
+		console.log(group);
+
+		data.map((item, index) => {
+
+			let itemGroup = this.resolveByStringPath(group, item);
+			let list = groups[itemGroup];
+
+			if(list) {
+				list.push(item);
+			}
+			else {
+				groups[itemGroup] = [item];
+			}
+		});
+
+		console.log(groups);
 
 		return groups;
 	},

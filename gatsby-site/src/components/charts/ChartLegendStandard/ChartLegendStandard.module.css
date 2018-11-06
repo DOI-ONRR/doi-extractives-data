@@ -37,15 +37,8 @@
 }
 
 .chartLegendStandard div {
-	background-color: green-dark;
 	width: 15px;
 	height: 15px;
-}
-.chartLegendStandard tr:nth-child(2n+0) div {
-	background-color: green-light;
-}
-.chartLegendStandard tr:nth-child(3n+0) div {
-	background-color: green-land;
 }
 
 .chartLegendStandard_TotalRow {

@@ -25,8 +25,10 @@
 }
 
 .tabContentAside > svg{
+	height: 100%;
+	position: relative;
+	top: 30px;
 	width: 276px;
-	padding-top: 10px;
 }
 
 .tabContentAside > h5{

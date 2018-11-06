@@ -1,7 +1,57 @@
 @value colors: "../../../css-global/colors.css";
-@value green-light, black-light from colors;
+@value gray-blue-dark, gray-blue-mid, gray-blue-mid-light, blue-mid-light, blue-dark, blue-mid, gray-light, green-light, black-light from colors;
+
+@value federalOffshoreColor: gray-blue-mid;
+@value federalOnshoreColor: gray-blue-dark;
+@value nativeAmericanColor: gray-blue-mid-light;
+@value federalOffshoreColor_selected: blue-mid;
+@value federalOnshoreColor_selected: blue-dark;
+@value nativeAmericanColor_selected: blue-mid-light;
 
 .root{}
+
+.chartBar {
+	cursor: pointer;
+}
+
+.federalOnshore {
+	background-color: federalOnshoreColor_selected;
+	fill: federalOnshoreColor;
+}
+
+.federalOffshore {
+	background-color: federalOffshoreColor_selected;
+	fill: federalOffshoreColor;
+}
+
+.nativeAmerican {
+	background-color: nativeAmericanColor_selected;
+	fill: nativeAmericanColor;
+}
+
+.chartBar[selected=true] .federalOnshore{
+	fill: federalOnshoreColor_selected;
+}
+.chartBar[selected=true] .federalOffshore{
+	fill: federalOffshoreColor_selected;
+}
+.chartBar[selected=true] .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+}
+
+.chartBar:hover .federalOnshore{
+	fill: federalOnshoreColor_selected;
+	opacity: 0.8;
+}
+.chartBar:hover .federalOffshore{
+	fill: federalOffshoreColor_selected;
+	opacity: 0.8;
+}
+.chartBar:hover .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
 
 .root h2 {
 	border-bottom: 10px solid green-light;

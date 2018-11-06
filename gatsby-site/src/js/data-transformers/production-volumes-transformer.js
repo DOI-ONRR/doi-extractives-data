@@ -10,6 +10,8 @@
 /* Use ES5 require in order to be compatible with version 1.x of gatsby */
 const crypto = require('crypto');
 
+const CONSTANTS = require('../../js/constants');
+
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
   ProductionDate: "Production Date",
@@ -61,12 +63,12 @@ const LOCATION_CATEGORY_TO_DISPLAY_NAME ={
 
 const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 	"Federal": {
-		"Offshore": "Federal offshore",
-		"Onshore": "Federal onshore",
+		"Offshore": CONSTANTS.FEDERAL_OFFSHORE,
+		"Onshore": CONSTANTS.FEDERAL_ONSHORE,
 	},
 	"Indian":  {
-		"Offshore": "Native American",
-		"Onshore": "Native American",
+		"Offshore": CONSTANTS.NATIVE_AMERICAN,
+		"Onshore": CONSTANTS.NATIVE_AMERICAN,
 	},
 }
 

@@ -11,36 +11,79 @@ import {Accordion} from "../../Accordion";
 
 import utils from "../../../../js/utils";
 
-const StackedBarChartLayout = (props) => ( 
-  <div className={styles.root}>
-    <ChartTitle>{props.chartTitle}</ChartTitle>
-    <div className={styles.chart}>
-      <StackedBarChart units={props.units} data={props.chartData} groups={props.chartGroups} defaultSelected={props.defaultSelected} ></StackedBarChart>
-    </div>
-    <MediaQuery maxWidth={768}>
-      <Accordion id={utils.formatToSlug(props.chartTitle)} text={["Show details", "Hide details"]}>
-        <ChartLegendStandard 
-          header={props.chartLegendHeader} 
-          data={props.chartLegendData} >
-        </ChartLegendStandard>
-      </Accordion>
-    </MediaQuery>
-    <MediaQuery minWidth={769}>
-      <ChartLegendStandard 
-        header={props.chartLegendHeader} 
-        data={props.chartLegendData} >
-      </ChartLegendStandard>
-    </MediaQuery>
-  </div>
-);
+class StackedBarChartLayout extends React.Component{
+
+  state ={ 
+    chartData: this.props.chartData,
+    chartLegendData: undefined,
+    chartDataKeySelected: this.props.defaultSelected,
+    chartDataGroupName: undefined
+  }
+
+  componentWillReceiveProps(nextProps) {
+    let {chartDataKeySelected, chartLegendData, chartData} = nextProps;
+    this.setState({chartData: chartData, chartLegendData: chartLegendData, chartDataKeySelected: chartDataKeySelected});
+  }
+
+  barChartDataSelected(data, groupName) {
+    let key = Object.keys(data)[0];
+    this.setState({chartLegendData: data[key], chartDataKeySelected: key, chartDataGroupName: groupName});
+  }
+
+  render() {
+    let props = this.props;
+    return ( 
+      <div className={styles.root}>
+        <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
+        {this.state.chartData &&
+          <div className={styles.chart}>
+            <StackedBarChart 
+              displayConfig={props.chartDisplayConfig}
+              data={this.state.chartData} 
+              groups={props.chartGroups} 
+              defaultSelected={this.state.chartDataKeySelected}
+              barSelectedCallback={this.barChartDataSelected.bind(this)} >
+            </StackedBarChart>
+          </div>
+        }
+        {this.state.chartLegendData &&
+          <MediaQuery maxWidth={768}>
+            <Accordion id={utils.formatToSlug(props.chartDisplayConfig.title)} text={["Show details", "Hide details"]}>
+              <ChartLegendStandard 
+                displayConfig={props.chartDisplayConfig}
+                header={props.chartLegendHeader} 
+                units={props.chartLegendUnits}
+                data={this.state.chartLegendData[0]}
+                dataKey={this.state.chartDataGroupName || this.state.chartDataKeySelected}
+                dataFormatFunc={props.chartLegendDataFormatFunc} >
+              </ChartLegendStandard>
+            </Accordion>
+          </MediaQuery>
+        }
+        {this.state.chartLegendData &&
+          <MediaQuery minWidth={769}>
+            <ChartLegendStandard 
+              displayConfig={props.chartDisplayConfig}
+              header={props.chartLegendHeader}  
+              units={props.chartLegendUnits}
+              data={this.state.chartLegendData[0]}
+              dataKey={this.state.chartDataGroupName || this.state.chartDataKeySelected}
+              dataFormatFunc={props.chartLegendDataFormatFunc} >
+            </ChartLegendStandard>
+          </MediaQuery>
+        }
+      </div>
+    );
+  }
+}
 
 StackedBarChartLayout.propTypes = {
-    /** The title to appear on top of the chart */
-    chartTitle: PropTypes.string,
+    /** The object that contains properties for display */
+    chartDisplayConfig: PropTypes.object,
     /** The data to populate the chart */
     chartData: PropTypes.array,
-    /** The array will draw a line under the x-axis labels by group */
-    chartGroups: PropTypes.array,
+    /** The object will draw a line under the x-axis labels by group */
+    chartGroups: PropTypes.object,
     /** The data set to be selected on page load. */
     defaultSelected: PropTypes.string,
     /** The title to appear on top of the legend */

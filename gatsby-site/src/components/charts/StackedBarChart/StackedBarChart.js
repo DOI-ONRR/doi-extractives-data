@@ -6,35 +6,33 @@ import styles from "./StackedBarChart.module.css"
 
 import stackedBarChart from '../../../js/bar-charts/stacked-bar-chart';
 
-const dataKeyToClassNameMap = {
-	'Federal onshore': styles.stackedBarChart_onshore,
-	'Federal offshore': styles.stackedBarChart_offshore,
-	'Native American': styles.stackedBarChart_native_american,
-};
-
 class StackedBarChart extends React.Component {
 
 	componentDidMount() {
-		let barClassNames = this.props.barClassNames || styles.stackedBarChart_bar;
-		let barSelectedClassNames = this.props.barSelectedClassNames || styles.selected;
-		let classNamesMap = this.props.classNamesMap || dataKeyToClassNameMap;
+		let {data} = this.props;
 
 		stackedBarChart.create(ReactDOM.findDOMNode(this), 
-			{ 	
-				barClassNames: barClassNames, 
-				barSelectedClassNames: barSelectedClassNames,
-				barSelectedCallback: this.props.barSelectedCallback,
-				classNamesMap: classNamesMap, 
-				...this.props }, 
-			this.props.data);
+			...this.props, 
+			data);
 	}
 
 	componentDidUpdate() {
+		let {data} = this.props;
 
+		stackedBarChart.update(ReactDOM.findDOMNode(this), 
+			...this.props, 
+			data);
 	}
 
 	componentWillUnmount() {
 	
+	}
+
+	shouldComponentUpdate(nextProps) {
+		// Do a basic check to see if data has changed
+		return !( (this.props.data.length === nextProps.data.length) &&
+			(JSON.stringify(nextProps.data[0]) === JSON.stringify(this.props.data[0])) &&
+			(JSON.stringify(nextProps.data[nextProps.data.length-1]) === JSON.stringify(this.props.data[this.props.data.length-1])) );
 	}
 
 	render() {
@@ -50,6 +48,10 @@ StackedBarChart.propTypes = {
     data: PropTypes.array,
     /** The data set to be selected on page load. */
     defaultSelected: PropTypes.string,
+    /** Display configuration options */
+    displayConfig: PropTypes.object,
+    /** Function to be called when a bar is selected */
+    barSelectedCallback: PropTypes.func
 
 }
 

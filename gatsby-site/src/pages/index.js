@@ -35,7 +35,10 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore(){
-    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCT_VOLUMES_OIL, this.props.data.OilVolumes.Volumes);
+    console.log(this.props.data);
+    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, this.props.data.OilVolumes.volumes);
+    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.props.data.GasVolumes.volumes);
+    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.props.data.CoalVolumes.volumes);
   }
 
 	render() {
@@ -202,13 +205,59 @@ export const query = graphql`
     }
     OilVolumes:allProductVolumes (
       filter:{ProductName:{eq: "Oil"}}
-      sort:{fields:[ProductionDate], order: ASC}
+      sort:{fields:[ProductionDate], order: DESC}
     ) {
-      Volumes:edges {
-        Volume:node {
+      volumes:edges {
+        data:node {
           LandCategory
           LocationType
           ProductionDate
+          ProductionMonth:ProductionDate(formatString: "MMMM")
+          ProductionYear:ProductionDate(formatString: "YYYY")
+          DisplayYear:ProductionDate(formatString: "'YY")
+          DisplayMonth:ProductionDate(formatString: "MMM")
+          ProductionCategory
+          ProductName
+          Volume
+          Units
+          LongUnits
+        } 
+      }
+    }
+    GasVolumes:allProductVolumes (
+      filter:{ProductName:{eq: "Gas"}}
+      sort:{fields:[ProductionDate], order: DESC}
+    ) {
+      volumes:edges {
+        data:node {
+          LandCategory
+          LocationType
+          ProductionDate
+          ProductionMonth:ProductionDate(formatString: "MMMM")
+          ProductionYear:ProductionDate(formatString: "YYYY")
+          DisplayYear:ProductionDate(formatString: "'YY")
+          DisplayMonth:ProductionDate(formatString: "MMM")
+          ProductionCategory
+          ProductName
+          Volume
+          Units
+          LongUnits
+        } 
+      }
+    }
+    CoalVolumes:allProductVolumes (
+      filter:{ProductName:{eq: "Coal"}}
+      sort:{fields:[ProductionDate], order: DESC}
+    ) {
+      volumes:edges {
+        data:node {
+          LandCategory
+          LocationType
+          ProductionDate
+          ProductionMonth:ProductionDate(formatString: "MMMM")
+          ProductionYear:ProductionDate(formatString: "YYYY")
+          DisplayYear:ProductionDate(formatString: "'YY")
+          DisplayMonth:ProductionDate(formatString: "MMM")
           ProductionCategory
           ProductName
           Volume

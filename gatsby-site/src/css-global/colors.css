@@ -9,6 +9,9 @@
 @value gray-darkest: #435159;
 @value black-light: #323c42;
 @value black: #1c2326;
+@value gray-blue-dark: #4e4e4e;
+@value gray-blue-mid: #a9a9a9;
+@value gray-blue-mid-light: #e0e0e0;
 
 /* Greens */
 @value green-light: #cde3c3;
@@ -20,6 +23,7 @@
 /* Blues */
 @value blue-lighter: #f2fdff;
 @value blue-light: #dcf4fd;
+@value blue-mid-light: #c6e9ff;
 @value blue-cthru: rgba(198, 233, 255, 0.93);
 @value blue-mid: #79bbda;
 @value blue-mid-dark: #3d95bd;

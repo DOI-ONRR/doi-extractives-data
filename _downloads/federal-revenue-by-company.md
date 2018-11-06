@@ -47,13 +47,13 @@ tag:
       <div class="explore-subpage-tabs">
         <ul>
           <li class="explore-subpage-tab">
-            <a href="#">Revenue by year</a>
+            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
           </li>
           <li class="explore-subpage-tab">
             <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
           </li>
           <li class="explore-subpage-tab active">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>
+            <a href="#">Revenue by company</a>
           </li>
         </ul>
       </div>

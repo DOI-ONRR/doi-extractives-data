@@ -2,7 +2,7 @@
 title: Revenue by Month | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-month/
-title_display: 'Revenue by month'
+title_display: 'Revenue by Month'
 nav_items:
   - name: introduction
     title: Top

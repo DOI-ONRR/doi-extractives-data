@@ -1,8 +1,8 @@
 ---
-title: Revenue by Year | Documentation
+title: Revenue by Month | Documentation
 layout: content
-permalink: /downloads/federal-revenue-by-location/
-title_display: 'Revenue by Year'
+permalink: /downloads/federal-revenue-by-month/
+title_display: 'Revenue by month'
 nav_items:
   - name: introduction
     title: Top
@@ -50,11 +50,11 @@ tag:
     <section>
       <div class="explore-subpage-tabs">
         <ul>
-          <li class="explore-subpage-tab active">
-            <a href="#">Revenue by year</a>
-          </li>
           <li class="explore-subpage-tab">
-            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
+            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="#">Revenue by month</a>
           </li>
           <li class="explore-subpage-tab">
             <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>

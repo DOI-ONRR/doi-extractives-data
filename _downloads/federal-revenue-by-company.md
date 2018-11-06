@@ -1,8 +1,8 @@
 ---
-title: Federal Revenue by Company | Documentation
+title: Revenue by Company | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-company/
-title_display: Federal Revenue by Company
+title_display: Revenue by Company
 nav_items:
   - name: introduction
     title: Top
@@ -42,7 +42,23 @@ tag:
 - Company
 - By company
 ---
-
+  <section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li class="explore-subpage-tab">
+            <a href="#">Revenue by year</a>
+          </li>
+          <li class="explore-subpage-tab">
+            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
 
 > {{ page.description }}
 

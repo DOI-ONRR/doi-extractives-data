@@ -48,31 +48,19 @@ tag:
 
 > {{ page.description }}
 
-<section class="download-data">
 
-  <ul>
-    <li class="explore-subpage-tab">
-      <a href="#production-year">Data by year</a>
-    </li>
-    <li class="explore-subpage-tab">  
-      <a href="#production-month">Data by month</a>
-    </li>  
+<p class="downloads-download_links-intro">Download calendar year data:
+  <ul class="downloads-download_links list-unstyled">
+    <li><a href="{{site.baseurl}}/downloads/federal_production_CY08-17.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
   </ul>
+</p>
 
-  <div id="production-year">
-  <p class="downloads-download_links-intro">Download calendar year data:
-    <ul class="downloads-download_links list-unstyled">
-      <li><a href="{{site.baseurl}}/downloads/federal_production_CY08-17.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
-    </ul>
-  </p>
+<p class="downloads-download_links-intro">Download fiscal year data:
+  <ul class="downloads-download_links list-unstyled">
+    <li><a href="{{site.baseurl}}/downloads/federal_production_FY2008-2017_2018-06-15.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 387 KB)</a></li>
+  </ul>
+</p>
 
-  <p class="downloads-download_links-intro">Download fiscal year data:
-    <ul class="downloads-download_links list-unstyled">
-      <li><a href="{{site.baseurl}}/downloads/federal_production_FY2008-2017_2018-06-15.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 387 KB)</a></li>
-    </ul>
-  </p>
-
-<div markdown="1">
 This dataset also includes county-level data about coal production on federal land.
 
 We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
@@ -146,13 +134,3 @@ Offshore regions are broken out into planning areas. For more information on off
 ## Contact us
 
 {% include contact.html %}
-</div>
-</div>
-
-<div id="production-month">
-<div markdown="1">
-Monthly data will go here.
-</div>
-</div>
-
-</section>

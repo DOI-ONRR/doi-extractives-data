@@ -50,10 +50,14 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
  *
  **/
 exports.onPreExtractQueries = ({ getNodes, boundActionCreators }) => {
-	const { createNode } = boundActionCreators
+	const { createNode } = boundActionCreators;
+
+	console.log('start onPreExtractQueries');
 
 	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
+
+	console.log('done onPreExtractQueries');
 }
 
 // Implement the Gatsby API “createPages”. This is called once the

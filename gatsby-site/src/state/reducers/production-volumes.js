@@ -120,8 +120,6 @@ const groupByYear = (source, filter) => {
 
 	}
 
-	console.log(results[0]);
-
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,

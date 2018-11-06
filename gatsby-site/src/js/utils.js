@@ -53,8 +53,6 @@ const utils = {
 	sumBy(data, group) {
 		let groups = {};
 
-		console.log(group);
-
 		data.map((item, index) => {
 
 			let itemGroup = this.resolveByStringPath(group, item);
@@ -67,8 +65,6 @@ const utils = {
 				groups[itemGroup] = [item];
 			}
 		});
-
-		console.log(groups);
 
 		return groups;
 	},

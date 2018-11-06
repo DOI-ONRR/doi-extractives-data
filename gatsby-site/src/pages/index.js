@@ -35,7 +35,6 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore(){
-    console.log(this.props.data);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, this.props.data.OilVolumes.volumes);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.props.data.GasVolumes.volumes);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.props.data.CoalVolumes.volumes);

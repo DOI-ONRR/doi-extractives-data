@@ -183,13 +183,13 @@ selector: list
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Coal Excise Tax</a></h4>
           <p>Coal producers pay a federal excise tax, which originated in 1977 with the Black Lung Revenue Act, when they mine coal in the U.S.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a>.</p>
+          <p><a href="{{ site.baseurl }}/how-it-works/coal-excise-tax/">Learn about excise tax revenue</a>.</p>
         </div>
       </div>
 
       <h3 id="disbursements" class="h3-bar">Understanding federal disbursements</h3>
       <p class="landing-intro_link">The federal government collects revenue from companies extracting natural resources on federal lands and waters. The government then distributes that money to different agencies, funds, and local governments. This process is called "disbursement".</p>
-      <p><a href="#">Learn how disbursements work</a>.</p>
+      <p><a href="{{ site.baseurl }}/how-it-works/disbursements/">Learn how disbursements work</a>.</p>
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</a></h4>

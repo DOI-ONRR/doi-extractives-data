@@ -32,11 +32,3 @@
     vertical-align: text-bottom;
   }
 }
-
-.download-data > div:not(:target) {
-  display: none;
-}
-
-.download-data > div:target {
-  display: block;
-}

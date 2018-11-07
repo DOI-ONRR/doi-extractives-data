@@ -168,12 +168,18 @@ selector: list
       </div>
       <h3 id="revenues" class="h3-bar">Understanding federal revenues</h3>
       <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
-      <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work</a>.</p>
       <div class="container landing-section">
+
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/revenues/">How revenue works</a></h4>
+          <p>Companies pay the federal government to extract natural resources on federal lands and waters. This revenue is collected by the Office of Natural Resources Revenue.</p>
+          <p><a href="{{site.baseurl}}/how-it-works/revenues/">Learn about how revenue works</a>.</p>
+        </div>
+      
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">Federal revenue by company</a></h4>
           <p>See federal non-tax revenues from natural resource extraction on federal land in 2017 by commodity, revenue type, and company.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">See revenue by company</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/federal-revenue-by-company/">See revenue by company</a>.</p>
         </div>
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/aml-reclamation-program/">Abandoned Mine Land Reclamation Program</a></h4>
@@ -189,8 +195,14 @@ selector: list
 
       <h3 id="disbursements" class="h3-bar">Understanding federal disbursements</h3>
       <p class="landing-intro_link">The federal government collects revenue from companies extracting natural resources on federal lands and waters. The government then distributes that money to different agencies, funds, and local governments. This process is called "disbursement".</p>
-      <p><a href="{{ site.baseurl }}/how-it-works/disbursements/">Learn how disbursements work</a>.</p>
       <div class="container landing-section">
+        
+        <div>
+          <h4 class="h3 landing-heading"><a href="{{ site.baseurl }}/how-it-works/disbursements/">How disbursements work</a></h4>
+          <p>The Office of Natural Resources Revenue collects revenue from natural resources extraction on federal lands and waters and distributes that revenue according to federal law. This process is called "disbursement."</p>
+          <p><a href="{{ site.baseurl }}/how-it-works/disbursements/">Learn about how disbursements work</a>.</p>
+        </div>
+        
         <div>
           <h4 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</a></h4>
           <p>When {{ "authorized" | term_end: "authorization" }}, the Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue to support conservation, outdoor recreation, and the needs of local communities.</p>

@@ -4,6 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 // Custom Data Transformers
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
+const revenuesTransformer = require('./src/js/data-transformers/revenues-transformer');
 
 const Remark = require('remark');
 const remarkHTML = require('remark-html');
@@ -57,6 +58,8 @@ exports.onPreExtractQueries = ({ getNodes, boundActionCreators }) => {
 	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
 
+	revenuesTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
 	console.log('done onPreExtractQueries');
 }
 

@@ -5,8 +5,9 @@ import { combineReducers } from 'redux';
 import glossary from './glossary';
 import disbursements from './disbursements';
 import productionVolumes from './production-volumes';
+import revenues from './revenues';
 
-export default combineReducers({ glossary, disbursements, productionVolumes });
+export default combineReducers({ glossary, disbursements, productionVolumes, revenues });
 
 export const createReducer = (initialState, handlers) => {
 	return function reducer(state = initialState, action) {

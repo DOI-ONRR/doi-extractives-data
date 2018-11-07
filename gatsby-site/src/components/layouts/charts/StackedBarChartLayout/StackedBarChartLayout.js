@@ -17,12 +17,14 @@ class StackedBarChartLayout extends React.Component{
     chartData: this.props.chartData,
     chartLegendData: undefined,
     chartDataKeySelected: this.props.defaultSelected,
-    chartDataGroupName: undefined
+    chartDataGroupName: undefined,
+    forceChartUpdate: false
   }
 
   componentWillReceiveProps(nextProps) {
     let {chartDataKeySelected, chartLegendData, chartData} = nextProps;
-    this.setState({chartData: chartData, chartLegendData: chartLegendData, chartDataKeySelected: chartDataKeySelected});
+    
+    this.setState({ ...this.state, ...nextProps, chartDataKeySelected: chartDataKeySelected});
   }
 
   barChartDataSelected(data, groupName) {
@@ -42,7 +44,8 @@ class StackedBarChartLayout extends React.Component{
               data={this.state.chartData} 
               groups={props.chartGroups} 
               defaultSelected={this.state.chartDataKeySelected}
-              barSelectedCallback={this.barChartDataSelected.bind(this)} >
+              barSelectedCallback={this.barChartDataSelected.bind(this)}
+              forceUpdate={this.state.forceChartUpdate} >
             </StackedBarChart>
           </div>
         }

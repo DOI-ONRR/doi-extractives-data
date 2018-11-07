@@ -3,32 +3,24 @@
 import CONSTANTS from '../../js/constants';
 import utils from '../../js/utils';
 
+
 const initialState = {
 	FiscalYear: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
+		[CONSTANTS.REVENUES_ALL_KEY]: undefined,
 	},
 	CalendarYear: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
+		[CONSTANTS.REVENUES_ALL_KEY]: undefined,
 	},
 	SourceData: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
+		[CONSTANTS.REVENUES_ALL_KEY]: undefined,
 	},
-	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-	[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-	[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
+	[CONSTANTS.REVENUES_ALL_KEY]: undefined,
 };
 
-
 // Define Action Types
-const HYDRATE = 'HYDRATE_PRODUCTION_VOLUMES';
-const BY_YEAR = 'BY_YEAR_PRODUCTION_VOLUMES';
-const BY_MONTH = 'BY_MONTH_PRODUCTION_VOLUMES';
+const HYDRATE = 'HYDRATE_REVENUES';
+const BY_YEAR = 'BY_YEAR_REVENUES';
+const BY_MONTH = 'BY_MONTH_REVENUES';
 
 // Define Action Creators 
 export const hydrate = (key, data) => ({ type: HYDRATE, payload: data,  key: key});
@@ -69,10 +61,10 @@ export default (state = initialState, action) => {
  **/
 
 const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
-	let fiscalYearItem = source.find(item => (item.data.ProductionMonth === "September"));
-	let calendarYearItem = source.find(item => (item.data.ProductionMonth === "December"));
-	fiscalYear[key] = (fiscalYearItem && parseInt(fiscalYearItem.data.ProductionYear));
-	calendarYear[key] = (calendarYearItem && parseInt(calendarYearItem.data.ProductionYear));
+	let fiscalYearItem = source.find(item => (item.data.RevenueMonth === "September"));
+	let calendarYearItem = source.find(item => (item.data.RevenueMonth === "December"));
+	fiscalYear[key] = (fiscalYearItem && parseInt(fiscalYearItem.data.RevenueYear));
+	calendarYear[key] = (calendarYearItem && parseInt(calendarYearItem.data.RevenueYear));
 	return {FiscalYear: fiscalYear, 
 					CalendarYear: calendarYear};
 }
@@ -83,9 +75,9 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  **/
 const groupByYear = (source, filter) => {
 	let displayNames;
-	let results = Object.entries(utils.groupBy(source, "data.ProductionYear")).map(e => ({[e[0]] : e[1] }) );
+	let results = Object.entries(utils.groupBy(source, "data.RevenueYear")).map(e => ({[e[0]] : e[1] }) );
 	
-	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.ProductionYear - b[Object.keys(b)[0]][0].data.ProductionYear));
+	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.RevenueYear - b[Object.keys(b)[0]][0].data.RevenueYear));
 
 	if(filter) {
 		
@@ -104,9 +96,9 @@ const groupByYear = (source, filter) => {
 				let sums = [yearData[year].reduce((total, item) => {
 					total[item.data[filter.sumBy]] = 
 						(total[item.data[filter.sumBy]] !== undefined) ?
-							total[item.data[filter.sumBy]]+item.data.Volume 
+							total[item.data[filter.sumBy]]+item.data.Revenue 
 							: 
-							item.data.Volume;
+							item.data.Revenue;
 
 					return total;},{})];
 
@@ -121,15 +113,12 @@ const groupByYear = (source, filter) => {
 	}
 
 	return {Data:results, 
-					ProductName: source[0].data.ProductName,
-					Units: source[0].data.Units,
-					LongUnits: source[0].data.LongUnits,
+					Units: "$",
+					LongUnits: "dollars",
 					DisplayNames: displayNames};
 }
 
 /** 
- * This data is sorted ascending by year already.
- * So an assumption is made on min and max numbers.
  * 
  * Example format:
  * {"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]}
@@ -140,31 +129,31 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 	let results = JSON.parse(JSON.stringify(source));
 
 	if(filter.period === "recent" && filter.limit > 0) {
-		let resultsGroupedByDate = Object.entries(utils.groupBy(source, "data.ProductionDate")).map(e => ({[e[0]] : e[1] }) );
+		let resultsGroupedByDate = Object.entries(utils.groupBy(source, "data.RevenueDate")).map(e => ({[e[0]] : e[1] }) );
 		let resultsLimited = resultsGroupedByDate.splice(0,12);
-		results = results.filter((monthData) => (Object.keys(resultsLimited[resultsLimited.length-1])[0] <= monthData.data.ProductionDate));
+		results = results.filter((monthData) => (Object.keys(resultsLimited[resultsLimited.length-1])[0] <= monthData.data.RevenueDate));
 	}
 	// Fiscal Year is Oct (Year-1) to Sept (Year)
 	else if(filter.period === "fiscal") {
 		let fiscalYearStart = results.find((item) => 
-			(item.data.ProductionMonth === "October" && parseInt(item.data.ProductionYear) === (fiscalYear-1)));
+			(item.data.RevenueMonth === "October" && parseInt(item.data.RevenueYear) === (fiscalYear-1)));
 
 		let fiscalYearEnd = results.find((item) => 
-			(item.data.ProductionMonth === "September" && parseInt(item.data.ProductionYear) === (fiscalYear)));
+			(item.data.RevenueMonth === "September" && parseInt(item.data.RevenueYear) === (fiscalYear)));
 		
-		results = results.filter((item) => (new Date(item.data.ProductionDate) >= new Date(fiscalYearStart.data.ProductionDate) && 
-					new Date(item.data.ProductionDate) <= new Date(fiscalYearEnd.data.ProductionDate) ) );
+		results = results.filter((item) => (new Date(item.data.RevenueDate) >= new Date(fiscalYearStart.data.RevenueDate) && 
+					new Date(item.data.RevenueDate) <= new Date(fiscalYearEnd.data.RevenueDate) ) );
 	}
 	else if(filter.period === "calendar") {
-		results = results.filter((item) => ( parseInt(item.data.ProductionYear) === calendarYear ) );
+		results = results.filter((item) => ( parseInt(item.data.RevenueYear) === calendarYear ) );
 	}
 
-	results = Object.entries(utils.groupBy(results, "data.ProductionMonth")).map(e => ({[e[0]] : e[1] }) );
+	results = Object.entries(utils.groupBy(results, "data.RevenueMonth")).map(e => ({[e[0]] : e[1] }) );
 
 	// Sort ascending by production date
 	results.sort((a,b) => { 
-			let aDate = new Date(a[Object.keys(a)[0]][0].data.ProductionDate);
-			let bDate = new Date(b[Object.keys(b)[0]][0].data.ProductionDate);
+			let aDate = new Date(a[Object.keys(a)[0]][0].data.RevenueDate);
+			let bDate = new Date(b[Object.keys(b)[0]][0].data.RevenueDate);
 			return (aDate < bDate)? -1 : (aDate == bDate)? 0 : 1;
 		});
 
@@ -201,9 +190,9 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 
 					total[item.data[filter.sumBy]] = 
 						(total[item.data[filter.sumBy]] !== undefined) ?
-							total[item.data[filter.sumBy]]+item.data.Volume 
+							total[item.data[filter.sumBy]]+item.data.Revenue 
 							: 
-							item.data.Volume;
+							item.data.Revenue;
 
 					return total;},{})];
 
@@ -214,9 +203,8 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 	}
 
 	return {Data:results, 
-					ProductName: source[0].data.ProductName,
-					Units: source[0].data.Units,
-					LongUnits: source[0].data.LongUnits,
+					Units: "$",
+					LongUnits: "dollars",
 					DisplayNames: displayNames,
 					GroupNames: groupNames};	
 }

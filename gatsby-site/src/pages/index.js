@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Link from '../components/utils/temp-link';
 
 import { hydrate as hydateProductionVolumesAction } from '../state/reducers/production-volumes';
+import { hydrate as hydateRevenuesAction } from '../state/reducers/revenues';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -38,6 +39,7 @@ class HomePage extends React.Component {
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, this.props.data.OilVolumes.volumes);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.props.data.GasVolumes.volumes);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.props.data.CoalVolumes.volumes);
+    this.props.hydrateRevenues(CONSTANTS.REVENUES_ALL_KEY, this.props.data.Revenues.revenues);
   }
 
 	render() {
@@ -173,7 +175,8 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
-  dispatch => ({ hydrateProductionVolumes: (data, key) => dispatch(hydateProductionVolumesAction(data, key)) }),
+  dispatch => ({  hydrateProductionVolumes: (data, key) => dispatch(hydateProductionVolumesAction(data, key)),
+                  hydrateRevenues: (data, key) => dispatch(hydateRevenuesAction(data, key)) }),
 )(HomePage);
 
 
@@ -263,6 +266,22 @@ export const query = graphql`
           Units
           LongUnits
         } 
+      }
+    }
+    Revenues:allRevenues (
+      filter:{RevenueCategory:{ne: null}}
+      sort:{fields:[RevenueDate], order: DESC}
+    ) {
+      revenues:edges {
+        data:node {
+          RevenueDate
+          RevenueMonth:RevenueDate(formatString: "MMMM")
+          RevenueYear:RevenueDate(formatString: "YYYY")
+          DisplayYear:RevenueDate(formatString: "'YY")
+          DisplayMonth:RevenueDate(formatString: "MMM")
+          Revenue
+          RevenueCategory
+        }
       }
     }
   }

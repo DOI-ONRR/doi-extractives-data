@@ -5,6 +5,8 @@ import utils from "../../../js/utils";
 
 import { byMonth as productionVolumesByMonthAction } from '../../../state/reducers/production-volumes';
 import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
+import { byMonth as revenuesByMonthAction } from '../../../state/reducers/revenues';
+import { byYear as revenuesByYearAction } from '../../../state/reducers/revenues';
 
 import CONSTANTS from '../../../js/constants';
 
@@ -40,11 +42,11 @@ class KeyStatsSection extends React.Component{
 
 	constructor(props){
 		super(props);
-		//
 	}
 
 	componentWillMount() {
 		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
+		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
 	}
 
 	state = {
@@ -55,6 +57,7 @@ class KeyStatsSection extends React.Component{
 		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
 		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
 		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
+		[CONSTANTS.REVENUES_ALL_KEY]: this.props[CONSTANTS.REVENUES_ALL_KEY],
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -95,16 +98,33 @@ class KeyStatsSection extends React.Component{
 		}
 	}
 
-
 	revenueToggleClicked(value) {
 		if(value !== this.state.revenueToggle) {
-			this.setState({revenueToggle: value});
+			this.setStateForRevenues(value, this.state.revenuePeriod);
 		}
 	}
 
 	revenuePeriodSelected(value) {
 		if(value !== this.state.revenuePeriod) {
-			this.setState({revenuePeriod: value});
+			this.setStateForRevenues(this.state.revenueToggle, value);
+		}
+	}
+
+	setStateForRevenues(toggleValue, dropDownValue) {
+		if(toggleValue === TOGGLE_VALUES.Year) {
+			this.setState({
+				revenueToggle: toggleValue, 
+				revenuePeriod: dropDownValue,
+				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByYear(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 10 }),
+			});
+		}
+		else {
+			this.setState({
+				revenueToggle: toggleValue, 
+				revenuePeriod: dropDownValue,
+				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByMonth(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"RevenueYear" }),
+
+			});
 		}
 	}
 
@@ -251,7 +271,28 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.itemChart}> 
-								
+								{this.state[CONSTANTS.REVENUES_ALL_KEY] &&
+									<div is="chart">
+										<StackedBarChartLayout 
+											chartDisplayConfig = {{
+												xAxisLabels: this.state[CONSTANTS.REVENUES_ALL_KEY].DisplayNames,
+												title: "Revenue",
+												longUnits: this.state[CONSTANTS.REVENUES_ALL_KEY].Units,
+												units: this.state[CONSTANTS.REVENUES_ALL_KEY].Units,
+												styleMap: CHART_STYLE_MAP,
+												sortOrder: CHART_SORT_ORDER,
+											}}
+
+											chartData={this.state[CONSTANTS.REVENUES_ALL_KEY].Data}
+
+											chartLegendDataFormatFunc={utils.formatToCommaInt}
+
+											chartGroups={this.state[CONSTANTS.REVENUES_ALL_KEY].GroupNames}
+
+											>
+										</StackedBarChartLayout>
+									</div>
+								}
 							</div>
 
 							<div className={styles.itemTitle+" "+styles.itemDisbursements} ><h3>Disbursements</h3></div>
@@ -271,9 +312,14 @@ class KeyStatsSection extends React.Component{
 }
 
 export default connect(
-  state => ({	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state.productionVolumes[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]}),
+  state => ({	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+  						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
+  						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
+  						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
+  					}),
   dispatch => ({	productionVolumesByYear: (key, filter) => dispatch(productionVolumesByYearAction(key, filter)),
-  								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter))})
+  								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter)),
+  								revenuesByMonth: (key, filter) => dispatch(revenuesByMonthAction(key, filter)),
+  								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter))
+  						})
 )(KeyStatsSection);

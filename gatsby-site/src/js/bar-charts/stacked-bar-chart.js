@@ -59,7 +59,7 @@ const stackedBarChart = {
 		let height = (el.clientHeight <= 0 )? 200 : el.clientHeight;
 		let marginTop = 25;
 		let marginBottom = (props.groups)? 55 : 40;
-		let width = (el.clientWidth <= 0 )? 300 : 300;
+		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
 
 
 		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
@@ -227,10 +227,10 @@ const stackedBarChart = {
 
 		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
 
-		let height = (el.clientHeight <= 0 )? 215 : 215;
+		let height = (el.clientHeight <= 0 )? 215 : el.clientHeight;
 		let marginTop = 25;
 		let marginBottom = (props.groups)? 55 : 40;
-		let width = (el.clientWidth <= 0 )? 300 : 300;
+		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
 
 
 		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);

@@ -13,22 +13,13 @@ nav_items:
         title: Negative values
       - name: why-is-there-a-gas-value-an-oil-value-and-an-oil--gas-value
         title: Oil and gas values
-      - name: why-is-the-calendar-year-revenue-by-location-national-total-slightly-different-than-the-revenue-by-company-total
-        title: Revenue by location and by company
-      - name: note-geothermal-rate-details
-        title: Geothermal rate details
-  - name: offshore-data-dictionary
-    title: Offshore data dictionary
+  - name: data-dictionary
+    title: Data dictionary
     subnav_items:
       - name: fields-and-definitions
         title: Fields and definitions
-  - name: onshore-data-dictionary
-    title: Onshore data dictionary
-    subnav_items:
-      - name: fields-and-definitions-1
-        title: Fields and definitions
-  - name: advanced-offshore-and-onshore-information
-    title: Advanced offshore and onshore information
+  - name: commodities-and-products
+    title: Commodities and products
   - name: contact-us
     title: Contact us
 selector: list
@@ -48,68 +39,51 @@ tag:
 
 {% include revenue-nav.html %}
 
-> We offer federal revenue by month for January 2008 through the last month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
+> We offer federal revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 
 Download federal revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_month_10-2018.xlsx">{% include svg/icon-download.svg %} Federal revenue by month, 1/2008–10/2018 (xlsx, 246 KB)
+  <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_10-2018.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–10/2018 (xlsx, 216 KB)
   </a></li>
 </ul>
 
-<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
+<!--<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>-->
 
 ## Scope
 
-
+This dataset includes natural resource revenue for U.S. federal lands and waters and Native American lands, including individual Native American mineral owners' revenues. It does not include privately owned lands or state lands. The dataset currently includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month. A given month's data is represented by the 1st day of the month (e.g., 10/1/2018 represents data for the month of October 2018).
 
 ### Why are some values negative?
 
-
+Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recover their overpayment. If the overpayment and recovered payment happen in different years, the recovered payment will appear as a negative amount in the data.
 
 ### Why is there a Gas value, an Oil value and an Oil & Gas value?
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
-
-
-### Note: Geothermal rate details
-
-
-
-## Offshore data dictionary
-
+## Data dictionary
 
 ### Fields and definitions
+
+_Date_ The first day of the month represents the data for that entire month. For example, 1/1/2008 represents the data for the month of January 2008.
+
+_Land Class_ This field distinguishes federal lands and waters from Native American lands. The latter is represented as "Indian" in the data.
+
+_Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
 * _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
-* _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
+* _Civic Penalties_ {{ "ONRR" | term }} issues civil penalties when companies fail to comply with, or knowingly or willfully violate, regulations or laws
+* _Inspection Fees_ The Department of the Interior inspects offshore oil and gas drilling rigs at least once a year. Inspection fees help recover some of the costs associated with these inspections.
+* _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 
+_Commodity_ The Department of the Interior collects revenue on over 60 different products. The majority of revenue come from Oil & Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
 
-_Commodity Type_ The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
-
-
-_Region_ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-
-_Planning Area_ Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-
-_Revenue_ Total revenue.
-
-
-## Onshore data dictionary
-
-The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in the data are not included.
-
-### Fields and definitions
-
-_Row Labels_ This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.
-
-_Sum of Royalty/Revenue_ This field provides the total royalty or revenue for the listed state (total) or commodity in that state.
+_Revenue_ Total revenue
 
 ## Commodities and products
 

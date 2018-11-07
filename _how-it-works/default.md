@@ -167,7 +167,7 @@ selector: list
         </div>
       </div>
       <h3 id="revenues" class="h3-bar">Understanding federal revenues</h3>
-      <p class="landing-intro_link">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
+      
       <div class="container landing-section">
 
         <div>
@@ -194,7 +194,7 @@ selector: list
       </div>
 
       <h3 id="disbursements" class="h3-bar">Understanding federal disbursements</h3>
-      <p class="landing-intro_link">The federal government collects revenue from companies extracting natural resources on federal lands and waters. The government then distributes that money to different agencies, funds, and local governments. This process is called "disbursement".</p>
+      
       <div class="container landing-section">
         
         <div>

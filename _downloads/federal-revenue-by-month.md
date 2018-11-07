@@ -26,7 +26,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all accounting year data.
+description: We offer federal revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 tag:
 - Data
 - Downloads
@@ -39,7 +39,7 @@ tag:
 
 {% include revenue-nav.html %}
 
-> We offer federal revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
+> {{ page.description }}
 
 Download federal revenue by month:
 
@@ -52,7 +52,7 @@ Download federal revenue by month:
 
 ## Scope
 
-This dataset includes natural resource revenue for U.S. federal lands and waters and Native American lands, including individual Native American mineral owners' revenues. It does not include privately owned lands or state lands. The dataset currently includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month. A given month's data is represented by the 1st day of the month (e.g., 10/1/2018 represents data for the month of October 2018).
+This dataset includes revenues paid by companies to extract natural resources on U.S. federal lands and waters. It also includes revenues generated on Native American tribal and individual lands. It does not include privately owned lands or state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month (we update the data every month). A given month's data is represented by the 1st day of the month (e.g., 10/1/2018 represents data for the month of October 2018).
 
 ### Why are some values negative?
 

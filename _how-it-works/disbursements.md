@@ -65,7 +65,7 @@ We share [disbursements data for each fund by fiscal year]({{site.baseurl}}/expl
 
 ## Disbursements and location
 
-The distribution of disbursements often depends on the geographic source of the revenue. The largest geographic categories that govern disbursements are _onshore_ and _offshore_. For example, state governments receive a portion of revenue from onshore extraction on federal land in their state, and 100% of disbursements to the Reclamation Fund come from onshore revenues.
+The distribution of disbursements often depends on the geographic source of the revenue. The largest geographic categories that govern disbursements are _onshore_ and _offshore_.
 
 ### Disbursements from onshore revenues
 

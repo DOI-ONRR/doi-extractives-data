@@ -1,8 +1,14 @@
-
+/**
+ * Constants that are used by the application
+ **/
 module.exports = Object.freeze({
 	// Redux Store keys for reducers
 	REVENUES_KEY: 'revenues',
 	PRODUCTION_VOLUMES_KEY: 'productionVolumes',
+  DISBURSEMENTS_KEY: 'federalDisbursements',
+
+  // Disbursements data keys for redux store
+  DISBURSEMENTS_ALL_KEY: 'disbursementsAll',
 
 	// Revenues data keys for redux store
 	REVENUES_ALL_KEY: 'revenuesAll',

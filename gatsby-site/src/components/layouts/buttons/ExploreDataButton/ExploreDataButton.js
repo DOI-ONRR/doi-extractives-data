@@ -20,6 +20,10 @@ const ExploreDataButton = (props) => (
 ExploreDataButton.propTypes = {
 	/** The url for the link */
 	to: PropTypes.string,
-}
+};
+
+ExploreDataButton.defaultProps = {
+  to: "/explore",
+};
 
 export default ExploreDataButton;

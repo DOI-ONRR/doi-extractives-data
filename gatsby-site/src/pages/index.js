@@ -5,6 +5,7 @@ import Link from '../components/utils/temp-link';
 
 import { hydrate as hydateProductionVolumesAction } from '../state/reducers/production-volumes';
 import { hydrate as hydateRevenuesAction } from '../state/reducers/revenues';
+import { hydrate as hydateDisbursementsAction } from '../state/reducers/federal-disbursements';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -40,6 +41,7 @@ class HomePage extends React.Component {
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.props.data.GasVolumes.volumes);
     this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.props.data.CoalVolumes.volumes);
     this.props.hydrateRevenues(CONSTANTS.REVENUES_ALL_KEY, this.props.data.Revenues.revenues);
+    this.props.hydrateDisbursements(CONSTANTS.DISBURSEMENTS_ALL_KEY, this.props.data.Disbursements.disbursements);
   }
 
 	render() {
@@ -176,7 +178,9 @@ class HomePage extends React.Component {
 export default connect(
   state => ({}),
   dispatch => ({  hydrateProductionVolumes: (data, key) => dispatch(hydateProductionVolumesAction(data, key)),
-                  hydrateRevenues: (data, key) => dispatch(hydateRevenuesAction(data, key)) }),
+                  hydrateRevenues: (data, key) => dispatch(hydateRevenuesAction(data, key)),
+                  hydrateDisbursements: (data, key) => dispatch(hydateDisbursementsAction(data, key))
+              }),
 )(HomePage);
 
 
@@ -281,6 +285,26 @@ export const query = graphql`
           DisplayMonth:RevenueDate(formatString: "MMM")
           Revenue
           RevenueCategory
+        }
+      }
+    }
+    Disbursements:allFederalDisbursements (
+      sort:{fields:[Year], order: DESC}
+    ){
+      disbursements:edges {
+        data:node {
+          id
+          Year
+          DisplayYear
+          Fund
+          Source
+          Disbursement
+          DisbursementCategory
+          internal {
+            type
+            contentDigest
+            owner
+          }
         }
       }
     }

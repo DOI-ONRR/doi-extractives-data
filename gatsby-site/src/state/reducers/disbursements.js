@@ -29,7 +29,7 @@ const initialState = {
 
 // Define Action Types
 const SELECT_YEAR = 'SELECT_YEAR';
-const HYDRATE_DISBURSEMENTS = 'HYDRATE_DISBURSEMENTS';
+const HYDRATE_DISBURSEMENTS = 'HYDRATE_DISBURSEMENTS_DEPRECATED';
 
 // Define Action Creators 
 export const selectYear = (year) => ({ type: SELECT_YEAR, payload: year});

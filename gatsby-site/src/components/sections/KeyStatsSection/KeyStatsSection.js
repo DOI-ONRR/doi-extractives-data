@@ -7,9 +7,9 @@ import { byMonth as productionVolumesByMonthAction } from '../../../state/reduce
 import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
 import { byMonth as revenuesByMonthAction } from '../../../state/reducers/revenues';
 import { byYear as revenuesByYearAction } from '../../../state/reducers/revenues';
+import { byYear as disbursementsByYearAction } from '../../../state/reducers/federal-disbursements';
 
 import CONSTANTS from '../../../js/constants';
-
 
 import styles from "./KeyStatsSection.module.css";
 
@@ -47,6 +47,7 @@ class KeyStatsSection extends React.Component{
 	componentWillMount() {
 		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
 		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
+		this.setStateForDisbursements();
 	}
 
 	state = {
@@ -58,6 +59,7 @@ class KeyStatsSection extends React.Component{
 		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
 		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
 		[CONSTANTS.REVENUES_ALL_KEY]: this.props[CONSTANTS.REVENUES_ALL_KEY],
+		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props[CONSTANTS.DISBURSEMENTS_ALL_KEY],
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -126,6 +128,12 @@ class KeyStatsSection extends React.Component{
 
 			});
 		}
+	}
+
+	setStateForDisbursements() {
+		this.setState({
+			[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props.disbursementsByYear(CONSTANTS.DISBURSEMENTS_ALL_KEY, {sumBy:"DisbursementCategory", displayName:true, limit: 10 }),
+		});
 	}
 
 	render(){
@@ -285,7 +293,7 @@ class KeyStatsSection extends React.Component{
 
 											chartData={this.state[CONSTANTS.REVENUES_ALL_KEY].Data}
 
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
+											chartLegendDataFormatFunc={utils.formatToDollarInt}
 
 											chartGroups={this.state[CONSTANTS.REVENUES_ALL_KEY].GroupNames}
 
@@ -299,7 +307,28 @@ class KeyStatsSection extends React.Component{
 							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds.</div>
 							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#production" >Explore all disbursements data</ExploreDataLink></div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
-								
+								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY] &&
+									<div is="chart">
+										<StackedBarChartLayout 
+											chartDisplayConfig = {{
+												xAxisLabels: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].DisplayNames,
+												title: "Disbursements",
+												longUnits: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Units,
+												units: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Units,
+												styleMap: CHART_STYLE_MAP,
+												sortOrder: CHART_SORT_ORDER,
+											}}
+
+											chartData={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data}
+
+											chartLegendDataFormatFunc={utils.formatToDollarInt}
+
+											chartGroups={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].GroupNames}
+
+											>
+										</StackedBarChartLayout>
+									</div>
+								}
 							</div>
 						</section>
 
@@ -316,10 +345,12 @@ export default connect(
   						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
   						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
   						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
+  						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
   					}),
   dispatch => ({	productionVolumesByYear: (key, filter) => dispatch(productionVolumesByYearAction(key, filter)),
   								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter)),
   								revenuesByMonth: (key, filter) => dispatch(revenuesByMonthAction(key, filter)),
-  								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter))
+  								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter)),
+  								disbursementsByYear: (key, filter) => dispatch(disbursementsByYearAction(key, filter)),
   						})
 )(KeyStatsSection);

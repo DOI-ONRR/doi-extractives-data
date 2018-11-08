@@ -45,7 +45,7 @@ function processComponentNode({ node, getNode, boundActionCreators }) {
     return;
   }
 
-  console.log(node.displayName)
+  //console.log(node.displayName)
 
 
   // Grab the parent node to determine filesystem information

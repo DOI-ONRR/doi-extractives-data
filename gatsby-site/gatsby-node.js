@@ -5,6 +5,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
 const revenuesTransformer = require('./src/js/data-transformers/revenues-transformer');
+const federalDisbursementsTransformer = require('./src/js/data-transformers/federal-disbursements-transformer');
 
 const Remark = require('remark');
 const remarkHTML = require('remark-html');
@@ -60,6 +61,10 @@ exports.onPreExtractQueries = ({ getNodes, boundActionCreators }) => {
 
 	revenuesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
+
+	federalDisbursementsTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
+	
 	console.log('done onPreExtractQueries');
 }
 

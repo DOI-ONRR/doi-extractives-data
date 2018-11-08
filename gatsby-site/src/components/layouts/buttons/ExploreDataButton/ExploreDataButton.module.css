@@ -9,13 +9,6 @@
 	padding: 10px 20px;
 }
 
-.root svg{
-	background-color: white;
-	fill: blue;
-	margin-right: 8px;
-	vertical-align: middle;
-}
-
 .root div{
 	display: inline-block;
 	font-weight: bold;

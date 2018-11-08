@@ -22,8 +22,8 @@
 
       <li class="header-nav_item_top">
         <form action='{{ site.baseurl }}/search-results/'>
-          <label class='sr-only' for="q">Search</label>
-          <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
+          <label id="search-label" class='sr-only' for="q">Search</label>
+          <input type="search" class="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search" aria-labelledby="search-label"/>
           <button type="submit" class="header-nav_search_icon icon-search" title="search"><label class="sr-only">Search</label></button>
         </form>
       </li>

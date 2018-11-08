@@ -18,7 +18,6 @@ class Tabordion extends React.Component {
 	tabClicked(id, content, element){
 		if(this.state.tabId !== id) {
 			this.setState({tabId: id, tabPanel: content});
-			//console.log(this.refs);
 		}
 	}
 

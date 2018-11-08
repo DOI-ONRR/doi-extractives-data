@@ -109,7 +109,13 @@
 	.tabContent {
 		flex-basis: 100%;
 	}
+	.tabContentAside{
+		margin-top: 10px;
+		width: 100%;
+		padding: 0px;
+	}
 	.tabContentAside svg{
 		display: none;
+		width: 100%;
 	}
 }

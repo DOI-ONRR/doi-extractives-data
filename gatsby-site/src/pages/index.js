@@ -67,7 +67,7 @@ class HomePage extends React.Component {
                     <ExploreDataButton />
                   </div>
                   <div>
-                    <Link>Learn how it works</Link>
+                    <Link to="/how-it-works">Learn how it works</Link>
                   </div>
                 </div>
               </div>
@@ -80,17 +80,17 @@ class HomePage extends React.Component {
                 <p>The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters and Native American lands and energy production for all owners.</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
-                    <BlueButton>How production works</BlueButton>
+                    <BlueButton to="/how-it-works/#production">How production works</BlueButton>
                   </div>
                 </div>
               </div>
               <div className={styles.tabContentAside}>
                 <h5>Explore production data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink>All lands and waters</ExploreDataLink>
-                  <ExploreDataLink>Federal lands and waters</ExploreDataLink>
-                  <ExploreDataLink>Native American lands</ExploreDataLink>
-                  <DownloadDataLink>Downloads and documentation</DownloadDataLink>
+                  <ExploreDataLink to="/explore/#all-production">All lands and waters</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#federal-production">Federal lands and waters</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/tribal-production/#production-on-indian-land">Native American lands</ExploreDataLink>
+                  <DownloadDataLink to="/downloads/#production">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
             </div>
@@ -101,17 +101,17 @@ class HomePage extends React.Component {
                 <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on the ownership of the resources. They are usually called "revenue" because they represent revenue to the American public.</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
-                    <BlueButton>How revenue works</BlueButton>
+                    <BlueButton to="/how-it-works/revenues">How revenue works</BlueButton>
                   </div>
                 </div>
               </div>
               <div className={styles.tabContentAside}>
                 <h5>Explore revenue data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink>By production phase</ExploreDataLink>
-                  <ExploreDataLink>By commodity</ExploreDataLink>
-                  <ExploreDataLink>By company</ExploreDataLink>
-                  <DownloadDataLink>Downloads and documentation</DownloadDataLink>
+                  <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#federal-revenue ">By commodity</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/federal-revenue-by-company/2017">By company</ExploreDataLink>
+                  <DownloadDataLink to="https://revenuedata.doi.gov/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
             </div>
@@ -122,17 +122,15 @@ class HomePage extends React.Component {
                 <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
-                    <BlueButton>How the budget process works</BlueButton>
+                    <BlueButton to="/how-it-works/revenues/#federal-budget-process">How the budget process works</BlueButton>
                   </div>
                 </div>
               </div>
               <div className={styles.tabContentAside}>
                 <h5>Explore disbursements data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink>By recipient</ExploreDataLink>
-                  <ExploreDataLink>By source</ExploreDataLink>
-                  <ExploreDataLink>By state</ExploreDataLink>
-                  <DownloadDataLink>Downloads and documentation</DownloadDataLink>
+                  <ExploreDataLink to="/explore/#federal-disbursements">By recipient</ExploreDataLink>
+                  <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
             </div>

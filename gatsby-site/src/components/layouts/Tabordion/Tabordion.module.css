@@ -10,6 +10,7 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   padding-right: 40%;
+  z-index: 10;
 }
 
 .tab {
@@ -22,6 +23,7 @@
 	padding: 10px 20px;
 	text-align: center;
 	width: 100%;
+  z-index: 10;
 }
 
 .tab:hover{
@@ -38,6 +40,9 @@
 	background-color: gray-pale;
 	border: 1px solid gray-light;
   overflow: hidden;
+  position: relative;
+  top: -1px;
+  z-index: 0;
 }
 
 .accordionPanelContainer {
@@ -63,5 +68,8 @@
 	}
 	.tab {
 		text-align: left;
+	}
+	.tabPanelContainer {
+	  top: 0px;
 	}
 }

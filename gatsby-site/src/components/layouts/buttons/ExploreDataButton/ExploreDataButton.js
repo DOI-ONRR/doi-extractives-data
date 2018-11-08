@@ -4,7 +4,7 @@ import Link from '../../../utils/temp-link';
 
 import styles from "./ExploreDataButton.module.css"
 
-import ExploreDataIcon from '-!svg-react-loader!../../../../img/icons/explore-data.svg';
+import ExploreDataIcon from '-!svg-react-loader!../../../../img/icons/explore-data-square.svg';
 
 const ExploreDataButton = (props) => ( 
     <Link to={props.to} className={styles.root}>

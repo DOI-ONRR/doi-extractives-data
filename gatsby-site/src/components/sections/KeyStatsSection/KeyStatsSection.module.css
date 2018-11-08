@@ -200,4 +200,7 @@
 	.itemChart.itemDisbursements {
 		grid-row: 10;
 	}
+	.dropdown {
+		margin-left: 0px;
+	}
 }

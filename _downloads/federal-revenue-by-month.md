@@ -26,7 +26,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: We offer federal revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
+description: We offer revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 tag:
 - Data
 - Downloads

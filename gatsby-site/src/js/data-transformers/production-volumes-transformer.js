@@ -74,6 +74,7 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (createNode, sourceData) => {
+	console.log('start creating production volumes nodes');
 	sourceData.map((productVolumeData, index) => {
 			createProductVolumeNodeByProduct(createNode, productVolumeData, index);
 		}

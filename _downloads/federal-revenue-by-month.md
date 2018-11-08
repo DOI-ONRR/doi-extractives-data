@@ -77,7 +77,7 @@ _Revenue Type_ Revenues from U.S. natural resources fall into one of several typ
 * _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
-* _Civic Penalties_ {{ "ONRR" | term }} issues civil penalties when companies fail to comply with, or knowingly or willfully violate, regulations or laws
+* _Civil Penalties_ {{ "ONRR" | term }} issues civil penalties when companies fail to comply with, or knowingly or willfully violate, regulations or laws
 * _Inspection Fees_ The Department of the Interior inspects offshore oil and gas drilling rigs at least once a year. Inspection fees help recover some of the costs associated with these inspections.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 

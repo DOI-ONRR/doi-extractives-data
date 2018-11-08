@@ -47,7 +47,6 @@ Download federal revenue by month:
   <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_10-2018.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–10/2018 (xlsx, 216 KB)
   </a></li>
 </ul>
-
 <!--<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>-->
 
 ## Scope

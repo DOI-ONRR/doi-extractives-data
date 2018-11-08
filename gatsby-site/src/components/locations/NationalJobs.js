@@ -6,11 +6,11 @@ import lazy from 'lazy.js';
 
 import utils from 'js/utils';
 
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import ChartTitle from 'components/molecules/ChartTitle';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import ChartTitle from '../charts/ChartTitleCollapsible';
 
 import NATIONAL_JOBS from '../../../static/data/national_jobs.yml';
 import NATIONAL_JOBS_BY_COMMODITY from '../../../static/data/national_jobs_by_commodity.yml';

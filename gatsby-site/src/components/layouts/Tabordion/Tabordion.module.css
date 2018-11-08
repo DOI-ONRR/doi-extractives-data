@@ -1,0 +1,75 @@
+@value colors: "../../../css-global/colors.css";
+@value gray-pale, gray-light, gray-darkest from colors;
+
+.root {
+
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-right: 40%;
+  z-index: 10;
+}
+
+.tab {
+	background-color: white;
+	border: 1px solid gray-light;
+	color: gray-darkest;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 10px 20px;
+	text-align: center;
+	width: 100%;
+  z-index: 10;
+}
+
+.tab:hover{
+	text-decoration: underline;
+}
+
+.tabSelected {
+	background-color: gray-pale;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+.tabPanelContainer {
+	background-color: gray-pale;
+	border: 1px solid gray-light;
+  overflow: hidden;
+  position: relative;
+  top: -1px;
+  z-index: 0;
+}
+
+.accordionPanelContainer {
+  animation: expand 0.25s;
+  transform-origin: top center;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 481px) {
+	.tabContainer {
+		flex-wrap: wrap;
+  	padding-right: 0;
+	}
+	.tab {
+		text-align: left;
+	}
+	.tabPanelContainer {
+	  top: 0px;
+	}
+}

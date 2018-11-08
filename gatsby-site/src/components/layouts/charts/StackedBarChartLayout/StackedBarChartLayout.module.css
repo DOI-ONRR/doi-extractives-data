@@ -1,0 +1,10 @@
+@value colors: "../../../../css-global/colors.css";
+@value gray-dark, black-light from colors;
+
+.root {
+	width: 100%;
+}
+
+.chart {
+	height: 215px;
+}

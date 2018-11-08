@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Link from '../utils/temp-link';
 
 import { connect } from 'react-redux';
-import { selectYear } from '../../store/reducers/disbursements';
+import { selectYear } from '../../state/reducers/disbursements';
 
 import slugify from 'slugify';
 import lazy from 'lazy.js';
@@ -14,7 +14,7 @@ import utils from '../../js/utils';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
 import StickyHeader from '../layouts/StickyHeader';
-import YearSelector from '../atoms/YearSelector';
+import YearSelector from '../selectors/YearSelector';
 import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
 import fundedByCongress from '../../data/funded_by_congress.yml';

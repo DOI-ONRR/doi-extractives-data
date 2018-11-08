@@ -1,0 +1,33 @@
+/* Grayscale */
+@value white: #ffffff;
+@value gray-pale: #f0f6fa;
+@value gray-lighter: #ebf3f7;
+@value gray-light: #d3dfe6;
+@value gray: #a7bcc7;
+@value gray-dark: #768d99;
+@value gray-darker: #5c737f;
+@value gray-darkest: #435159;
+@value black-light: #323c42;
+@value black: #1c2326;
+@value gray-blue-dark: #4e4e4e;
+@value gray-blue-mid: #a9a9a9;
+@value gray-blue-mid-light: #e0e0e0;
+
+/* Greens */
+@value green-light: #cde3c3;
+@value green-mid: #9dbd92;
+@value green-land: #69995a;
+@value green: #587f4c;
+@value green-dark: #2f4d26;
+
+/* Blues */
+@value blue-lighter: #f2fdff;
+@value blue-light: #dcf4fd;
+@value blue-mid-light: #c6e9ff;
+@value blue-cthru: rgba(198, 233, 255, 0.93);
+@value blue-mid: #79bbda;
+@value blue-mid-dark: #3d95bd;
+@value blue: #1478a6;
+@value blue-dark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
+@value blue-darker: #005078;
+@value blue-deep: #00354f;

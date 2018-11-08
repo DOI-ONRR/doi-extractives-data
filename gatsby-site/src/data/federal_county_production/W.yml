@@ -1,0 +1,51 @@
+'0':
+  name: W
+  products:
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 146943
+        '2009': 156530
+        '2013': 162731
+    Sulfide (tons):
+      name: Sulfide
+      units: tons
+      volume:
+        '2006': 7632
+        '2007': 3250
+        '2008': 9375
+        '2009': 46315
+        '2010': 21201
+        '2011': 330910
+        '2012': 387216
+        '2013': 826489
+        '2014': 222323
+        '2015': 379209
+    Sylvite-Raw Ore (tons):
+      name: Sylvite-Raw Ore
+      units: tons
+      volume:
+        '2006': 80
+    Gas (mcf):
+      name: Gas
+      units: mcf
+      volume:
+        '2007': 33106
+        '2009': 32736
+        '2012': 33520
+        '2014': 31284
+    'Geothermal - Electrical Generation, Kilowatt Hours':
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
+      volume:
+        '2008': 130833
+        '2015': 157392
+    Sodium Sesquicarbonate (tons):
+      name: Sodium Sesquicarbonate
+      units: tons
+      volume:
+        '2012': 161433
+        '2013': 55480
+        '2014': 29472084
+        '2015': 1477

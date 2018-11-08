@@ -5,7 +5,7 @@ import currencyFormatter from 'currency-formatter';
 import commodityNames from '../data/commodity_names.yml';
 
 const utils = {
-	getDisplayName: (key) => {
+	getDisplayName_CommodityName: (key) => {
 		return commodityNames[key] || key;
 	},
 
@@ -36,6 +36,25 @@ const utils = {
 		let groups = {};
 
 		data.map((item, index) => {
+
+			let itemGroup = this.resolveByStringPath(group, item);
+			let list = groups[itemGroup];
+
+			if(list) {
+				list.push(item);
+			}
+			else {
+				groups[itemGroup] = [item];
+			}
+		});
+
+		return groups;
+	},
+	sumBy(data, group) {
+		let groups = {};
+
+		data.map((item, index) => {
+
 			let itemGroup = this.resolveByStringPath(group, item);
 			let list = groups[itemGroup];
 
@@ -56,6 +75,11 @@ const utils = {
 	},
 	range(start, end) {
 		return Array(end - start + 1).fill().map((_, idx) => start + idx)
+	},
+	round(number, precision)
+	{
+	    precision = precision || 0;
+	    return parseFloat( number ).toFixed( precision );
 	}
 }
 

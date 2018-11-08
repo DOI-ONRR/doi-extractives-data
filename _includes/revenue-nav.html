@@ -1,0 +1,17 @@
+<section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li {% if page.url == '/downloads/federal-revenue-by-location/' %} class="explore-subpage-tab active" {% else %} class="explore-subpage-tab" {% endif %}>
+            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-location/">Revenue by year</a>
+          </li>
+          <li {% if page.url == '/downloads/federal-revenue-by-month/' %} class="explore-subpage-tab active" {% else %} class="explore-subpage-tab" {% endif %}>
+            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-month/">Revenue by month</a>
+          </li>
+          <li {% if page.url == '/downloads/federal-revenue-by-company/' %} class="explore-subpage-tab active" {% else %} class="explore-subpage-tab" {% endif %}>
+            <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">Revenue by company</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</section>

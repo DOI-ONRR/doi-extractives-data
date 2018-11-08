@@ -78,17 +78,9 @@ tag:
 <ul class="list-sections list-unstyled">
     <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="link-no_under"><h3 id="federal-revenue-by-location">
-    Federal revenue by location</h3></a>
-    <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by {{ "calendar year (CY)" | term }} and {{ "fiscal year (FY)" | term_end }}.</p>
+    Revenue</h3></a>
+    <p>Federal revenue from natural resources extracted from federal land and waters. We offer revenue data by year, by month, and by company. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-      {% include data_and_docs.html %}
-    </a>
-  </li>
-
-  <li class="downloads-download_links">
-    <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" class="link-no_under"><h3 id="federal-revenue-by-company">Federal revenue by company</h3></a>
-    <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is available for calendar years 2013-2016.</p>
-    <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
       {% include data_and_docs.html %}
     </a>
   </li>

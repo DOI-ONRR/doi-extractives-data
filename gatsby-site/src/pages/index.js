@@ -115,7 +115,7 @@ class HomePage extends React.Component {
                   <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
                   <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
                   <ExploreDataLink to="/how-it-works/federal-revenue-by-company/2017">By company</ExploreDataLink>
-                  <DownloadDataLink to="https://revenuedata.doi.gov/downloads/#revenue">Downloads and documentation</DownloadDataLink>
+                  <DownloadDataLink to="/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
             </div>
@@ -126,7 +126,7 @@ class HomePage extends React.Component {
                 <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
-                    <BlueButton to="/how-it-works/revenues/#federal-budget-process">How the budget process works</BlueButton>
+                    <BlueButton to="/understand-disbursements/how-it-works/#disbursements">How the budget process works</BlueButton>
                   </div>
                 </div>
               </div>

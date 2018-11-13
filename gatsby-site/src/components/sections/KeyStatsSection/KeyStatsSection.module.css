@@ -183,6 +183,7 @@
 
 	.itemTitle.itemDisbursements {
 		grid-row: 6;
+		margin-top: 4rem;
 	}
 
 	.itemDesc.itemDisbursements {

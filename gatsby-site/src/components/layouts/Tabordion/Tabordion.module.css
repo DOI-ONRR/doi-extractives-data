@@ -9,7 +9,6 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  padding-right: 40%;
   z-index: 10;
 }
 
@@ -20,9 +19,10 @@
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 200;
+	overflow: hidden;
 	padding: 10px 20px;
 	text-align: center;
-	width: 100%;
+	float: left;
   z-index: 10;
 }
 
@@ -65,9 +65,12 @@
 	.tabContainer {
 		flex-wrap: wrap;
   	padding-right: 0;
+		width: 100%;
 	}
 	.tab {
+		float: none;
 		text-align: left;
+		width: 100%;
 	}
 	.tabPanelContainer {
 	  top: 0px;

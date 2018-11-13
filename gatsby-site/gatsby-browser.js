@@ -1,4 +1,5 @@
 /* globals window */
+import 'es5-shim'; /* used for IE 11 compatibility */
 import 'core-js'; /* used for IE 11 compatibility */
 
 import ReactDOM from 'react-dom';

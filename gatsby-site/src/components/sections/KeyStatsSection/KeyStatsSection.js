@@ -147,7 +147,7 @@ class KeyStatsSection extends React.Component{
 						<section id="key-stats-production"  className={styles.production}>
 							<div className={styles.sectionTitle}>
 								<h3>Production</h3>
-								<div>Production data for major commodities.</div>
+								<div>Production data for major commodities</div>
 								<div><ExploreDataLink to="/explore/#production" >Explore all production data</ExploreDataLink></div>
 							</div>
 
@@ -250,7 +250,7 @@ class KeyStatsSection extends React.Component{
 						</section>
 						<section className={styles.revenueDisbursementsSection} >
 							<div className={styles.itemTitle}><h3>Revenue</h3></div>
-							<div className={styles.itemDesc}>Federal revenue from bonuses, rent, and royalties paid by companies to extract natural.</div>
+							<div className={styles.itemDesc}>Federal revenue from bonuses, rent, and royalties paid by companies to extract natural resources</div>
 							<div className={styles.itemLink}><ExploreDataLink to="/explore/#federal-revenue" >Explore all revenue data</ExploreDataLink></div>
 							
 							<div className={styles.itemToggle}>
@@ -304,7 +304,7 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.itemTitle+" "+styles.itemDisbursements} ><h3>Disbursements</h3></div>
-							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds.</div>
+							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds</div>
 							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink></div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
 								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY] &&

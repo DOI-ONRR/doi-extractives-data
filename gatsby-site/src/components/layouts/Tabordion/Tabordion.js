@@ -47,7 +47,7 @@ class Tabordion extends React.Component {
 
 			        		if(isSelected) {
 			        			return (
-			        				<div>
+			        				<div style={{width: "100%"}}>
 												<Tab key={index} isAccordion={true} isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />
 								      	<div className={styles.tabPanelContainer+" "+styles.accordionPanelContainer}>
 								      		{this.state.tabPanel}

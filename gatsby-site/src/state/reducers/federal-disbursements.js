@@ -75,17 +75,40 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  **/
 const groupByYear = (source, filter) => {
 	let displayNames;
+	let groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.Year")).map(e => ({[e[0]] : e[1] }) );
 	
+	// We assume if the data matches current year that we dont have the year of data, so we remove it
+	let currentYear = new Date().getFullYear();
+	results = results.filter((yearData) => parseInt(Object.keys(yearData)[0]) !== currentYear);
+
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.Year - b[Object.keys(b)[0]][0].data.Year));
 
 	if(filter) {
+		
+		if(filter.limit > 0) {
+			results.splice(0,(results.length-filter.limit));
+		}
 		
 		// Get display names before we filter the data.
 		if(filter.displayName) {
 			displayNames = {};
 			results.forEach((item) => {
 				displayNames[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+			});
+		}
+
+		// Set sub group name
+		if(filter.subGroupName) {
+			groupNames = {};
+			results.map((item) => {
+				let key = Object.keys(item)[0];
+				if(groupNames[filter.subGroupName]) {
+					groupNames[filter.subGroupName].push(key);
+				}
+				else{
+					groupNames[filter.subGroupName] = [key];
+				}
 			});
 		}
 
@@ -105,17 +128,14 @@ const groupByYear = (source, filter) => {
 				return {[year]: sums}
 			});
 		}
-		
-		if(filter.limit > 0) {
-			results.splice(0,(results.length-filter.limit));
-		}
 
 	}
 
 	return {Data:results, 
 					Units: "$",
 					LongUnits: "dollars",
-					DisplayNames: displayNames};
+					DisplayNames: displayNames,
+					GroupNames: groupNames};
 }
 
 /** 

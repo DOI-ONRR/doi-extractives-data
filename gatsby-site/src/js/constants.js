@@ -25,4 +25,7 @@ module.exports = Object.freeze({
   ONSHORE: 'Onshore',
   FEDERAL: 'Federal',
 
+  CALENDAR_YEAR: "Calendar year",
+  FISCAL_YEAR: "Fiscal year"
+
 });

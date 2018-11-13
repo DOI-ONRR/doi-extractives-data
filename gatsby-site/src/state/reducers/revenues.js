@@ -75,8 +75,13 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  **/
 const groupByYear = (source, filter) => {
 	let displayNames;
+	let groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.RevenueYear")).map(e => ({[e[0]] : e[1] }) );
 	
+	// We assume if the data matches current year that we dont have the year of data, so we remove it
+	let currentYear = new Date().getFullYear();
+	results = results.filter((yearData) => parseInt(Object.keys(yearData)[0]) !== currentYear);
+
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.RevenueYear - b[Object.keys(b)[0]][0].data.RevenueYear));
 
 	if(filter) {
@@ -89,6 +94,20 @@ const groupByYear = (source, filter) => {
 			});
 		}
 
+		// Set sub group name
+		if(filter.subGroupName) {
+			groupNames = {};
+			results.map((item) => {
+				let key = Object.keys(item)[0];
+				if(groupNames[filter.subGroupName]) {
+					groupNames[filter.subGroupName].push(key);
+				}
+				else{
+					groupNames[filter.subGroupName] = [key];
+				}
+			});
+		}
+		
 		// Sum volume by data key and assign year key to the result
 		if(filter.sumBy) {
 			results = results.map((yearData) => {
@@ -115,7 +134,8 @@ const groupByYear = (source, filter) => {
 	return {Data:results, 
 					Units: "$",
 					LongUnits: "dollars",
-					DisplayNames: displayNames};
+					DisplayNames: displayNames,
+					GroupNames: groupNames};
 }
 
 /** 

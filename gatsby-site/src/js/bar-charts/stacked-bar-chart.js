@@ -147,7 +147,7 @@ const stackedBarChart = {
 		// Add Grouping Lines
 		if(props.groups){
 			let groupLines = svg.append("g").attr("id", "groups");
-			let groupWidth = (width/12);
+			let groupWidth = (width/state.length);
 			let padding = (xScale.bandwidth()*0.2);
 			let xPos = 0;
 
@@ -309,13 +309,13 @@ const stackedBarChart = {
 		svg.selectAll("#groups").remove();
 
 		if(props.groups){
+
 			let groupLines = svg.append("g").attr("id", "groups");
-			let groupWidth = (width/12);
+			let groupWidth = (width/state.length);
 			let padding = (xScale.bandwidth()*0.2);
 			let xPos = 0;
 
 			Object.keys(props.groups).map((name, index) => {
-
 					let width = xPos+(groupWidth*props.groups[name].length)-padding;
 
 					groupLines.append("line")

@@ -83,9 +83,9 @@ class KeyStatsSection extends React.Component{
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 }),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 }),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10 })
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, })
 			});
 		}
 		else {
@@ -117,7 +117,7 @@ class KeyStatsSection extends React.Component{
 			this.setState({
 				revenueToggle: toggleValue, 
 				revenuePeriod: dropDownValue,
-				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByYear(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 10 }),
+				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByYear(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
 			});
 		}
 		else {
@@ -132,7 +132,7 @@ class KeyStatsSection extends React.Component{
 
 	setStateForDisbursements() {
 		this.setState({
-			[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props.disbursementsByYear(CONSTANTS.DISBURSEMENTS_ALL_KEY, {sumBy:"DisbursementCategory", displayName:true, limit: 10 }),
+			[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props.disbursementsByYear(CONSTANTS.DISBURSEMENTS_ALL_KEY, {sumBy:"DisbursementCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.FISCAL_YEAR, }),
 		});
 	}
 

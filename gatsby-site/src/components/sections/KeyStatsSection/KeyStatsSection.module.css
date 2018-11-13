@@ -155,7 +155,9 @@
 	}
 	.production [is="chart"]{
 		width: 47%;
+		min-width: 100px;
 	}
+	
 	.revenueDisbursementsSection {
 		-ms-grid-columns: 47% 6% 47%;
 		grid-gap: 0 6%;
@@ -165,6 +167,7 @@
 @media screen and (max-width: 601px) {
 	.production [is="chart"]{
 		width: 100%;
+		min-width: 100px;
 	}
 	.revenueDisbursementsSection {
 		display: flow-root;
@@ -202,5 +205,8 @@
 	}
 	.dropdown {
 		margin-left: 0px;
+	}
+	.dropdown div:first-child{
+		width: 212px;
 	}
 }

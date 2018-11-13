@@ -71,7 +71,11 @@ class HomePage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className={styles.tabContentAside}><OilRig preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 203" /></div>
+              <div className={styles.tabContentAside}>
+                <div className={styles.oilRig}>
+                  <OilRig preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 203" />
+                </div>
+              </div>
             </div>
           </Tab>
           <Tab id="tab-production" name="Production"> 
@@ -109,7 +113,7 @@ class HomePage extends React.Component {
                 <h5>Explore revenue data</h5>
                 <div className={styles.linkContainer}>
                   <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
-                  <ExploreDataLink to="/explore/#federal-revenue ">By commodity</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
                   <ExploreDataLink to="/how-it-works/federal-revenue-by-company/2017">By company</ExploreDataLink>
                   <DownloadDataLink to="https://revenuedata.doi.gov/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                 </div>

@@ -24,7 +24,7 @@
 	padding: 0px 10px;
 }
 
-.tabContentAside > svg{
+.oilRig > svg{
 	height: 100%;
 	position: relative;
 	top: 30px;
@@ -114,7 +114,7 @@
 		width: 100%;
 		padding: 0px;
 	}
-	.tabContentAside svg{
+	.oilRig > svg{
 		display: none;
 		width: 100%;
 	}

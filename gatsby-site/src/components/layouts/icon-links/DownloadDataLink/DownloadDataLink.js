@@ -4,11 +4,11 @@ import Link from '../../../utils/temp-link';
 
 import styles from "./DownloadDataLink.module.css"
 
-import ExploreDataIcon from '-!svg-react-loader!../../../../img/icons/explore-data.svg';
+import DownloadDataIcon from '-!svg-react-loader!../../../../img/svg/icon-download-buttonup.svg';
 
 const DownloadDataLink = (props) => ( 
     <Link to={props.to} className={styles.root}>
-        <ExploreDataIcon />
+        <DownloadDataIcon />
         <span>
         	{props.children === undefined ?
             'Download data' :

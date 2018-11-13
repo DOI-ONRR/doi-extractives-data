@@ -1,8 +1,8 @@
 ---
-title: Federal Revenue by Location | Documentation
+title: Revenue by Year | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-location/
-title_display: 'Federal Revenue by Location'
+title_display: 'Revenue by Year'
 nav_items:
   - name: introduction
     title: Top
@@ -45,6 +45,8 @@ tag:
 - Location
 - By location
 ---
+
+{% include revenue-nav.html %}
 
 > There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all {{ "accounting year" | term }} data.
 

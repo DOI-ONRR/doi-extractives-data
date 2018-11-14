@@ -15,25 +15,36 @@ class StackedBarChartLayout extends React.Component{
 
   state ={ 
     chartData: this.props.chartData,
-    chartLegendData: undefined,
-    chartDataKeySelected: this.props.defaultSelected,
-    chartDataGroupName: undefined,
+    chartLegendData: this.props.chartLegendData,
+    chartDataKeySelected: this.props.chartDataKeySelected,
+    chartLegendDataHovered: undefined,
+    chartDataKeyHovered: undefined,
     forceChartUpdate: false
   }
 
   componentWillReceiveProps(nextProps) {
-    let {chartDataKeySelected, chartLegendData, chartData} = nextProps;
-    
-    this.setState({ ...this.state, ...nextProps, chartDataKeySelected: chartDataKeySelected});
+    this.setState({...nextProps});
   }
 
-  barChartDataSelected(data, groupName) {
+  barChartDataSelected(data) {
     let key = Object.keys(data)[0];
-    this.setState({chartLegendData: data[key], chartDataKeySelected: key, chartDataGroupName: groupName});
+    
+    this.setState({chartLegendData: data[key], chartDataKeySelected: key});
+  }
+
+  barChartDataHovered(data, isHover) {
+    if(isHover) {
+      let key = Object.keys(data)[0];
+      this.setState({chartLegendDataHovered: data[key], chartDataKeyHovered: key});
+    }
+    else {
+      this.setState({chartLegendDataHovered: undefined, chartDataKeyHovered: undefined});
+    }
   }
 
   render() {
     let props = this.props;
+
     return ( 
       <div className={styles.root}>
         <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
@@ -45,7 +56,9 @@ class StackedBarChartLayout extends React.Component{
               groups={props.chartGroups} 
               defaultSelected={this.state.chartDataKeySelected}
               barSelectedCallback={this.barChartDataSelected.bind(this)}
-              forceUpdate={this.state.forceChartUpdate} >
+              barHoveredCallback={this.barChartDataHovered.bind(this)}
+              forceUpdate={this.state.forceChartUpdate}
+              maxBarSize={this.props.maxBarSize} >
             </StackedBarChart>
           </div>
         }
@@ -56,8 +69,8 @@ class StackedBarChartLayout extends React.Component{
                 displayConfig={props.chartDisplayConfig}
                 header={props.chartLegendHeader} 
                 units={props.chartLegendUnits}
-                data={this.state.chartLegendData[0]}
-                dataKey={this.state.chartDataGroupName || this.state.chartDataKeySelected}
+                data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
+                dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
                 dataFormatFunc={props.chartLegendDataFormatFunc} >
               </ChartLegendStandard>
             </Accordion>
@@ -69,8 +82,8 @@ class StackedBarChartLayout extends React.Component{
               displayConfig={props.chartDisplayConfig}
               header={props.chartLegendHeader}  
               units={props.chartLegendUnits}
-              data={this.state.chartLegendData[0]}
-              dataKey={this.state.chartDataGroupName || this.state.chartDataKeySelected}
+              data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
+              dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
               dataFormatFunc={props.chartLegendDataFormatFunc} >
             </ChartLegendStandard>
           </MediaQuery>

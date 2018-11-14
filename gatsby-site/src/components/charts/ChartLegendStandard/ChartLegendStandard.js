@@ -41,7 +41,7 @@ class ChartLegendStandard extends React.Component {
 				<thead>
       		<tr>
         		<th colSpan="2">Source</th>
-        		<th>{this.props.dataKey+(units === "$" ? "" : " ("+units+")")}</th>
+        		<th>{this.props.dataKey && this.props.dataKey+(units === "$" ? "" : " ("+units+")")}</th>
         	</tr>
       	</thead>
 				<tbody>

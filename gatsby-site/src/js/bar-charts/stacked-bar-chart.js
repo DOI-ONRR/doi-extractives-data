@@ -1,357 +1,60 @@
 import * as d3 from 'd3';
 import utils from '../../js/utils';
 
-const extentPercent = 0.05;
-const extentMarginOfError = 0.10;
+const DEFAULT_HEIGHT = 200;
+const MARGIN_BOTTOM = 40;
+const MARGIN_BOTTOM_GROUPS = 55;
+const MARGIN_TOP = 25;
 const MAX_EXTENT_LINE_Y = 20;
 
+const extentPercent = 0.05;
+const extentMarginOfError = 0.10;
+
 const stackedBarChart = {
-
-	create(el, props, state) {
-
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-
-		// Find the max value of the data sets by adding up the all the data items in the each set
-		let maxValue = d3.max(state, (d) => {
-			let sum = 0;
-			Object.entries(d).forEach(
-			    ([key, values]) => {
-		    		Object.entries(values[0]).forEach(
-			    		([key, value]) => {
-			    			sum += value;
-			    		}
-			    	)
-			    }
-			)
-			return (sum);
-		});
-
-		// Find the min value of the data sets by adding up the all the data items in the each set
-		let minValue = d3.min(state, (d) => {
-			let data = 0;
-			Object.entries(d).forEach(
-			    ([key, values]) => {
-		    		Object.entries(values[0]).forEach(
-			    		([key, value]) => {
-			    			data += value;
-			    		}
-			    	)
-			    }
-			)
-			return (data);
-		});
-
-		let xAxisLabels = props.displayConfig && props.displayConfig.xAxisLabels;
-		let styleMap = props.displayConfig && props.displayConfig.styleMap;
-		let keys = (props.displayConfig && props.displayConfig.sortOrder) || self.getOrderedKeys(state);
-		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
-		// if default selected in not passed in as a prop then select the last item
-		let defaultSelected = props.defaultSelected || Object.keys(state[state.length-1])[0];
-		let maxExtentValue = this.calculateExtentValue(maxValue);
-
-
-		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
-
-		let height = (el.clientHeight <= 0 )? 200 : el.clientHeight;
-		let marginTop = 25;
-		let marginBottom = (props.groups)? 55 : 40;
-		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
-
-
-		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
-		// For vetical bars we want start rect at the bottom and go to the top
-		// SVG height goes down so this setting will reverse that
-		yScale.domain([maxValue, 0]);
-
-		let xScale = d3.scaleBand()
-		    .domain(state.map(d => {return Object.keys(d)[0];}))
-		    .range([0, width])
-		    .paddingInner(0.3)
-		    .paddingOuter(0.1);
-
-		let barOffsetX = 0;
-
-		if(barSize) {
-			barOffsetX = (xScale.bandwidth() > barSize)? (xScale.bandwidth()-barSize)/2 : 0;
-			barSize = d3.min([xScale.bandwidth(), barSize]);
-		}
-
-		let svg = d3.select(el).append('svg')
-					.attr('height', height)
-					.attr('width', width);
-
-		// Add Max Extent Number text
-		let maxExtentGroup = svg.append("g").attr("id", "maxExtent");
-
-		maxExtentGroup.append("text")
-			.attr("width", width)
-			.attr("x", width)
-			.attr("y", (MAX_EXTENT_LINE_Y-5))
-			.attr("text-anchor", "end")
-			.text((units === '$')? [units,maxExtentValue].join('') : [maxExtentValue,units].join(' '));
-
-		maxExtentGroup.append("line")
-      .attr('x1', 0)
-      .attr('x2', width)
-      .attr('stroke', '#a7bcc7')
-      .attr('stroke-dasharray', [5,5])
-      .attr('stroke-width', 1)
-      .attr('transform', 'translate(' + [0, MAX_EXTENT_LINE_Y] + ')');
-
-		// Create chart
-		let stack = d3.stack()
-		 	.keys(keys)
-		 	.offset(d3.stackOffsetNone);
-
-		svg.append("g")
-			.attr("id", "bars")
-			.selectAll("g")
-			.data(state)
-			.enter().append("g")
-				.attr("height", (height-marginTop))
-				.attr("width", xScale.bandwidth())
-				.attr("transform", d => "translate("+(xScale(Object.keys(d)[0]))+",0)")
-				.attr("selected", d => {
-					if(Object.keys(d)[0] === defaultSelected){
-						if(props.barSelectedCallback) {
-							props.barSelectedCallback(d, this.findGroupNameByKey(props.groups, Object.keys(d)[0]) );
-						}
-						return true;
-					}
-				})
-				.attr("class", d => (styleMap && styleMap.bar))
-				.attr("data-key", d => Object.keys(d)[0])
-				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback, props.groups);})
-				.selectAll("g")
-				.data((d) => { return stack(d[Object.keys(d)[0]]); })
-				.enter().append("g")
-					.attr("class", (d) => styleMap && styleMap[d.key] )
-					.append("rect")
-					.attr("y", (d) => { return yScale(d[0][1]) || 0; })
-					.attr("height", function(d) { return (yScale(d[0][0]) - yScale(d[0][1])) || 0; })
-					.attr("width", barSize)
-					.attr("x", barOffsetX);
- 
- 		// Create/Add x-axis
-		svg.append("g")
-		    .attr("class", "x axis")
-		    .attr("transform", "translate(0," + (height-marginBottom) + ")")
-		    .call(self.createXAxis(xScale, xAxisLabels))
-		    .selectAll("text")
-					.attr("y", 9);
-
-		// Add Grouping Lines
-		if(props.groups){
-			let groupLines = svg.append("g").attr("id", "groups");
-			let groupWidth = (width/state.length);
-			let padding = (xScale.bandwidth()*0.2);
-			let xPos = 0;
-
-			Object.keys(props.groups).map((name, index) => {
-
-					let width = xPos+(groupWidth*props.groups[name].length)-padding;
-
-					groupLines.append("line")
-			      .attr('x1', xPos+padding)
-			      .attr('x2', width)
-			      .attr('stroke', '#a7bcc7')
-			      .attr('stroke-width', 1)
-			      .attr('transform', 'translate(' + [0, height-4-marginBottom/2] + ')');
-
-					groupLines.append("text")
-						.attr("x", ((xPos+padding)/2)+(width/2) )
-						.attr("y", height-16)
-						.attr("text-anchor", "middle")
-						.text(name);
-
-			    xPos = width+padding;
-				}
-			);
-		}
-
-
-		// Redraw based on the new size whenever the browser window is resized.
-      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
-	},
-
-	update(el, props, state){
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-		var svg = d3.select(el).select("svg");
-
-		// Find the max value of the data sets by adding up the all the data items in the each set
-		let maxValue = d3.max(state, (d) => {
-			let sum = 0;
-			Object.entries(d).forEach(
-			    ([key, values]) => {
-		    		Object.entries(values[0]).forEach(
-			    		([key, value]) => {
-			    			sum += value;
-			    		}
-			    	)
-			    }
-			)
-			return (sum);
-		});
-
-		// Find the min value of the data sets by adding up the all the data items in the each set
-		let minValue = d3.min(state, (d) => {
-			let data = 0;
-			Object.entries(d).forEach(
-			    ([key, values]) => {
-		    		Object.entries(values[0]).forEach(
-			    		([key, value]) => {
-			    			data += value;
-			    		}
-			    	)
-			    }
-			)
-			return (data);
-		});
-
-		let xAxisLabels = props.displayConfig && props.displayConfig.xAxisLabels;
-		let styleMap = props.displayConfig && props.displayConfig.styleMap;
-		let keys = (props.displayConfig && props.displayConfig.sortOrder) || self.getOrderedKeys(state);
-		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
-		// if default selected in not passed in as a prop then select the last item
-		let defaultSelected = props.defaultSelected || Object.keys(state[state.length-1])[0];
-		
-
-
-		let barSize = 15; // Key stats req to set bar width to 15, this should be a prop
-
-		let height = (el.clientHeight <= 0 )? 215 : el.clientHeight;
-		let marginTop = 25;
-		let marginBottom = (props.groups)? 55 : 40;
-		let width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
-
-
-		let yScale = d3.scaleLinear().rangeRound([marginTop,height-marginBottom]);
-		// For vetical bars we want start rect at the bottom and go to the top
-		// SVG height goes down so this setting will reverse that
-		yScale.domain([maxValue, 0]);
-
-		let xScale = d3.scaleBand()
-		    .domain(state.map(d => {return Object.keys(d)[0];}))
-		    .range([0, width])
-		    .paddingInner(0.3)
-		    .paddingOuter(0.1);
-
-		let barOffsetX = 0;
-
-		if(barSize) {
-			barOffsetX = (xScale.bandwidth() > barSize)? (xScale.bandwidth()-barSize)/2 : 0;
-			barSize = d3.min([xScale.bandwidth(), barSize]);
-		}
-
-		let maxExtentValue = this.calculateExtentValue(maxValue);
-		svg.select("#maxExtent")
-			.select("text")
-			.text((units === '$')? [units,maxExtentValue].join('') : [maxExtentValue,units].join(' '))
-			.attr("y", (MAX_EXTENT_LINE_Y -5));
-
-		// Create chart
-		let stack = d3.stack()
-		 	.keys(keys)
-		 	.offset(d3.stackOffsetNone);
-
-		svg.selectAll("#bars").remove();
-
-		svg.append("g")
-			.attr("id", "bars")
-			.selectAll("g")
-			.data(state)
-			.enter().append("g")
-				.attr("height", (height-marginTop))
-				.attr("width", xScale.bandwidth())
-				.attr("transform", d => "translate("+(xScale(Object.keys(d)[0]))+",0)")
-				.attr("selected", d => {
-					if(Object.keys(d)[0] === defaultSelected){
-						if(props.barSelectedCallback) {
-							props.barSelectedCallback(d, this.findGroupNameByKey(props.groups, Object.keys(d)[0]) );
-						}
-						return true;
-					}
-				})
-				.attr("class", d => (styleMap && styleMap.bar))
-				.attr("data-key", d => Object.keys(d)[0])
-				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback, props.groups);})
-				.selectAll("g")
-				.data((d) => { return stack(d[Object.keys(d)[0]]); })
-				.enter().append("g")
-					.attr("class", (d) => styleMap && styleMap[d.key] )
-					.append("rect")
-					.attr("y", (d) => { return yScale(d[0][1]) || 0; })
-					.attr("height", function(d) { return (yScale(d[0][0]) - yScale(d[0][1])) || 0; })
-					.attr("width", barSize)
-					.attr("x", barOffsetX);
-
- 
- 		// Create/Add x-axis
- 		svg.selectAll("g.x.axis").remove();
-
-		svg.append("g")
-		    .attr("class", "x axis")
-		    .attr("transform", "translate(0," + (height-marginBottom) + ")")
-		    .call(self.createXAxis(xScale, xAxisLabels))
-		    .selectAll("text")
-					.attr("y", 9);
-
-
-		// Add Grouping Lines
-		svg.selectAll("#groups").remove();
-
-		if(props.groups){
-
-			let groupLines = svg.append("g").attr("id", "groups");
-			let groupWidth = (width/state.length);
-			let padding = (xScale.bandwidth()*0.2);
-			let xPos = 0;
-
-			Object.keys(props.groups).map((name, index) => {
-					let width = xPos+(groupWidth*props.groups[name].length)-padding;
-
-					groupLines.append("line")
-			      .attr('x1', xPos+padding)
-			      .attr('x2', width)
-			      .attr('stroke', '#a7bcc7')
-			      .attr('stroke-width', 1)
-			      .attr('transform', 'translate(' + [0, height-4-marginBottom/2] + ')');
-
-					groupLines.append("text")
-						.attr("x", ((xPos+padding)/2)+(width/2) )
-						.attr("y", height-16)
-						.attr("text-anchor", "middle")
-						.text(name);
-
-			    xPos = width+padding;
-				}
-			);
-		}
-
-	},
-
-	destroy(el){
-		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
-	},
-
-	findGroupNameByKey(groups, key){
-		return (groups) ? Object.keys(groups).find(name => groups[name].includes(key) ) : undefined;
-	},
-
-	createXAxis(xScale, xAxisLabels){
-		return d3.axisBottom(xScale).tickSize(0).tickFormat((d) => (xAxisLabels)? xAxisLabels[d] : d);
-	},
+	barOffsetX: 0,
+	groups: undefined, 
+	height: DEFAULT_HEIGHT,
+	keys: undefined,
+	maxBarSize: undefined,
+	marginBottom: MARGIN_BOTTOM,
+	marginTop: MARGIN_TOP,
+	maxValue: undefined,
+	styleMap: undefined,
 
 	getOrderedKeys(data) {
 		return Object.keys((data[0][Object.keys(data[0])[0]])[0]);
+	},
+	// Find the max value of the data sets by adding up the all the data items in the each set
+	calcMaxValue(state) {
+		return d3.max(state, (d) => {
+				let sum = 0;
+				Object.entries(d).forEach(
+				    ([key, values]) => {
+			    		Object.entries(values[0]).forEach(
+				    		([key, value]) => {
+				    			sum += value;
+				    		}
+				    	)
+				    }
+				)
+				return (sum);
+			});
+	},
+	// Find the min value of the data sets by adding up the all the data items in the each set
+	calcMinValue(state) {
+		return d3.min(state, (d) => {
+				let data = 0;
+				Object.entries(d).forEach(
+				    ([key, values]) => {
+			    		Object.entries(values[0]).forEach(
+				    		([key, value]) => {
+				    			data += value;
+				    		}
+				    	)
+				    }
+				)
+				return (data);
+			});
 	},
 
 	getMetricLongUnit(str) {
@@ -365,27 +68,236 @@ const stackedBarChart = {
   calculateExtentValue(maxValue) {
   	let maxValueExtent = Math.ceil(maxValue * (1+extentPercent));
   	return this.getMetricLongUnit(d3.format(setSigFigs(maxValue, maxValueExtent))(maxValueExtent));
-  }
+  },
 
+	init(el, props, state) {
+		this.state = state;
+
+		this.defaultSelected = props.defaultSelected;
+		this.keys = (props.displayConfig && props.displayConfig.sortOrder) || this.getOrderedKeys(state);
+		this.groups = props.groups;
+		this.height = (el.clientHeight > 0 )? el.clientHeight : DEFAULT_HEIGHT;
+		// if we have grouping labels we need more room on the bottom
+		this.marginBottom = (props.groups)? MARGIN_BOTTOM_GROUPS : MARGIN_BOTTOM;
+		this.maxValue = this.calcMaxValue(this.state);
+
+		this.styleMap = props.displayConfig && props.displayConfig.styleMap;
+
+		this.units = (props.displayConfig && props.displayConfig.longUnits) || '';
+
+		this.width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
+
+		this.xScale = d3.scaleBand()
+		    .domain(this.state.map(d => {return Object.keys(d)[0];}))
+		    .range([0, this.width])
+		    .paddingInner(0.3)
+		    .paddingOuter(0.1);
+
+		this.yScale = d3.scaleLinear().rangeRound([this.marginTop, this.height-this.marginBottom]);
+		// For vetical bars we want start rect at the bottom and go to the top
+		// SVG height goes down so this setting will reverse that
+		this.yScale.domain([this.maxValue, 0]);
+
+		this.maxBarSize = props.maxBarSize;
+		if(this.maxBarSize) {
+			this.barOffsetX = (this.xScale.bandwidth() > this.maxBarSize)? (this.xScale.bandwidth()-this.maxBarSize)/2 : 0;
+			this.maxBarSize = d3.min([this.xScale.bandwidth(), this.maxBarSize]);
+		}
+		else{
+			this.maxBarSize = this.xScale.bandwidth();
+		}
+	},
+
+	addMaxExtent(props){
+		let self = this;
+		// Add Max Extent Number text
+		let maxExtentGroup = self.svg.append("g").attr("id", "maxExtent");
+		let maxExtentValue = this.calculateExtentValue(this.maxValue);
+		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
+
+		maxExtentGroup.append("text")
+			.attr("width", self.width)
+			.attr("x", self.width)
+			.attr("y", (MAX_EXTENT_LINE_Y-5))
+			.attr("text-anchor", "end")
+			.text((units === '$')? [units, maxExtentValue].join('') : [maxExtentValue, units].join(' '));
+
+		maxExtentGroup.append("line")
+      .attr('x1', 0)
+      .attr('x2', self.width)
+      .attr('stroke', '#a7bcc7')
+      .attr('stroke-dasharray', [5,5])
+      .attr('stroke-width', 1)
+      .attr('transform', 'translate(' + [0, MAX_EXTENT_LINE_Y] + ')');
+	},
+
+	addChart(props) {
+
+		let self = this;
+
+		// Create chart
+		let stack = d3.stack()
+		 	.keys(this.keys)
+		 	.offset(d3.stackOffsetNone);
+
+		this.svg.append("g")
+			.attr("id", "bars")
+			.selectAll("g")
+			.data(self.state)
+			.enter().append("g")
+				.attr("height", (self.height - self.marginTop))
+				.attr("width", self.xScale.bandwidth())
+				.attr("transform", d => "translate("+(self.xScale(Object.keys(d)[0]))+",0)")
+				.attr("selected", d => Object.keys(d)[0] === self.defaultSelected )
+				.attr("class", d => (self.styleMap && self.styleMap.bar))
+				.attr("data-key", d => Object.keys(d)[0])
+				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
+				.on("mouseover", function(d){toggleHoveredBar(d, props.barHoveredCallback, true);})
+				.on("mouseout", function(d){toggleHoveredBar(d, props.barHoveredCallback, false);})
+				.selectAll("g")
+				.data((d) => { return stack(d[Object.keys(d)[0]]); })
+				.enter().append("g")
+					.attr("class", (d) => self.styleMap && self.styleMap[d.key] )
+					.append("rect")
+					.attr("y", (d) => { return self.yScale(d[0][1]) || 0; })
+					.attr("height", function(d) { return (self.yScale(d[0][0]) - self.yScale(d[0][1])) || 0; })
+					.attr("width", self.maxBarSize)
+					.attr("x", self.barOffsetX);
+
+	},
+
+	addXAxis(props) {
+		let self = this;
+
+		let createXAxis = () => (d3.axisBottom(self.xScale).tickSize(0).tickFormat((d) => 
+				(props.displayConfig.xAxisLabels)? props.displayConfig.xAxisLabels[d] : d) );
+
+		self.svg.append("g")
+		    .attr("class", "x axis")
+		    .attr("transform", "translate(0," + (self.height-self.marginBottom) + ")")
+		    .call(createXAxis())
+		    .selectAll("text")
+					.attr("y", 9);
+	},
+
+	addGroupLines() {
+		if(this.groups){
+			let self = this;
+
+			let groupLines = this.svg.append("g").attr("id", "groups");
+			let groupItemWidth = (self.width/self.state.length);
+			let padding = (self.xScale.bandwidth()*0.2);
+			let xPos = 0;
+
+			Object.keys(self.groups).map((name, index) => {
+
+					let groupLineWidth = xPos+(groupItemWidth*self.groups[name].length)-padding;
+
+					groupLines.append("line")
+			      .attr('x1', xPos+padding)
+			      .attr('x2', groupLineWidth)
+			      .attr('stroke', '#a7bcc7')
+			      .attr('stroke-width', 1)
+			      .attr('transform', 'translate(' + [0, self.height-4-self.marginBottom/2] + ')');
+
+					groupLines.append("text")
+						.attr("x", ((xPos+padding)/2)+(groupLineWidth/2) )
+						.attr("y", self.height-16)
+						.attr("text-anchor", "middle")
+						.text(name);
+
+			    xPos = groupLineWidth+padding;
+				}
+			);
+		}
+	},
+
+	create(el, props, state) {
+
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		// Initialize all chart attributes
+		self.init(el, props, state);
+
+		self.svg = d3.select(el).append('svg')
+					.attr('height', self.height)
+					.attr('width', self.width);
+
+		self.addMaxExtent(props);
+
+		self.addChart(props);
+ 
+		self.addXAxis(props);
+
+		self.addGroupLines();
+
+		// Redraw based on the new size whenever the browser window is resized.
+      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
+	},
+
+	update(el, props, state){
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		this.svg = d3.select(el).select("svg");
+
+		// Initialize all chart attributes
+		this.init(el, props, state);
+
+		this.svg.selectAll("#maxExtent").remove();
+		this.addMaxExtent(props);
+
+		this.svg.selectAll("#bars").remove();
+		this.addChart(props);
+
+
+ 		this.svg.selectAll("g.x.axis").remove();
+		this.addXAxis(props);
+
+		// Add Grouping Lines
+		this.svg.selectAll("#groups").remove();
+		this.addGroupLines();
+
+	},
+
+	destroy(el){
+		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+	},
+
+	onMouseOverHandler() {
+		console.log("onMouseOverHandler");
+	},
+
+	onMouseOutHandler() {
+		console.log("onMouseOutHandler");
+	},
 
 }
 
-const toggleSelectedBar = (element, data, callBack, groups) => {
+const toggleSelectedBar = (element, data, callBack) => {
   let selectedElement = element.parentNode.querySelector("[selected=true]");
 
   if(selectedElement){
   	selectedElement.removeAttribute("selected");
   }
 
-  let groupName;
-  if(groups){
-  	groupName = Object.keys(groups).find(name => groups[name].includes(Object.keys(data)[0]) );
-  }
-
   element.setAttribute("selected", true);
 
   if(callBack){
-  	callBack(data, groupName);
+  	callBack(data);
+  }
+}
+
+const toggleHoveredBar = (data, callBack, isHover) => {
+  if(callBack){
+  	callBack(data, isHover);
   }
 }
 

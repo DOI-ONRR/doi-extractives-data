@@ -38,6 +38,8 @@ const CHART_STYLE_MAP = {
 	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
 };
 
+const MAX_CHART_BAR_SIZE = 15;
+
 class KeyStatsSection extends React.Component{
 
 	constructor(props){
@@ -179,7 +181,7 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.productChartContainer}>
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY] &&
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data &&
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
@@ -197,11 +199,14 @@ class KeyStatsSection extends React.Component{
 
 											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].GroupNames}
 
+											maxBarSize={MAX_CHART_BAR_SIZE}
+
+											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data)}
 											>
 										</StackedBarChartLayout>
 									</div>
 								}
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY] &&
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data &&
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
@@ -219,11 +224,14 @@ class KeyStatsSection extends React.Component{
 
 											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].GroupNames}
 
+											maxBarSize={MAX_CHART_BAR_SIZE}
+
+											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data)}
 											>
 										</StackedBarChartLayout>
 									</div>
 								}
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY] &&
+								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data &&
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
@@ -241,6 +249,9 @@ class KeyStatsSection extends React.Component{
 
 											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].GroupNames}
 
+											maxBarSize={MAX_CHART_BAR_SIZE}
+
+											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data)}
 											>
 										</StackedBarChartLayout>
 									</div>
@@ -279,7 +290,7 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.itemChart}> 
-								{this.state[CONSTANTS.REVENUES_ALL_KEY] &&
+								{this.state[CONSTANTS.REVENUES_ALL_KEY].Data &&
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
@@ -297,6 +308,9 @@ class KeyStatsSection extends React.Component{
 
 											chartGroups={this.state[CONSTANTS.REVENUES_ALL_KEY].GroupNames}
 
+											maxBarSize={MAX_CHART_BAR_SIZE}
+
+											{...getDefaultChartData(this.state[CONSTANTS.REVENUES_ALL_KEY].Data)}
 											>
 										</StackedBarChartLayout>
 									</div>
@@ -307,7 +321,7 @@ class KeyStatsSection extends React.Component{
 							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds</div>
 							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink></div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
-								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY] &&
+								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data &&
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
@@ -325,6 +339,9 @@ class KeyStatsSection extends React.Component{
 
 											chartGroups={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].GroupNames}
 
+											maxBarSize={MAX_CHART_BAR_SIZE}
+
+											{...getDefaultChartData(this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data)}
 											>
 										</StackedBarChartLayout>
 									</div>
@@ -334,6 +351,23 @@ class KeyStatsSection extends React.Component{
 
 					</section>
 				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
+					<defs> 
+						<pattern id="onshore-offshore-pattern-selected" patternUnits="userSpaceOnUse" width="4" height="4"> 
+							<rect y="0" fill={styles.federalOnshoreColor_selected}  width="4" height="4"/>
+							<path fill={styles.federalOffshoreColor_selected}  d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
+						</pattern>
+					</defs>
+				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
+					<defs> 
+						<pattern id="onshore-offshore-pattern" patternUnits="userSpaceOnUse" width="4" height="4"> 
+							<rect y="0" fill={styles.federalOnshoreColor} width="4" height="4"/>
+							<path fill={styles.federalOffshoreColor} d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
+						</pattern>
+					</defs>
+				</svg>
+
 			</section>
 		);
 	}
@@ -354,3 +388,9 @@ export default connect(
   								disbursementsByYear: (key, filter) => dispatch(disbursementsByYearAction(key, filter)),
   						})
 )(KeyStatsSection);
+
+const getDefaultChartData = (dataSet) => {
+	let key = Object.keys(dataSet[dataSet.length-1])[0];
+	let data = dataSet[dataSet.length-1][key];
+	return {chartLegendData: data, chartDataKeySelected: key }
+};

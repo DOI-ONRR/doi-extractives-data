@@ -77,10 +77,6 @@ const groupByYear = (source, filter) => {
 	let displayNames;
 	let groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.Year")).map(e => ({[e[0]] : e[1] }) );
-	
-	// We assume if the data matches current year that we dont have the year of data, so we remove it
-	let currentYear = new Date().getFullYear();
-	results = results.filter((yearData) => parseInt(Object.keys(yearData)[0]) !== currentYear);
 
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.Year - b[Object.keys(b)[0]][0].data.Year));
 

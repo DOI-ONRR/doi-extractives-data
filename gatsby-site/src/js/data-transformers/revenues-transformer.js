@@ -45,7 +45,6 @@ const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (createNode, sourceData) => {
-	console.log('start creating revenues nodes');
 	sourceData.map((revenueData, index) => {
 			createRevenueNode(createNode, revenueData, index);
 		}

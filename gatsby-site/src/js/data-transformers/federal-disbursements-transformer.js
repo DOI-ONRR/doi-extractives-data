@@ -34,7 +34,6 @@ const ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY ={
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (createNode, sourceData) => {
-	console.log('start creating disbursements nodes');
 	sourceData.map((disbursementsData, index) => {
 			createDisbursementsNode(createNode, disbursementsData, index);
 		}

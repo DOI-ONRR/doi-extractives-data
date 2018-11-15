@@ -8,7 +8,7 @@ patternCategory: Layouts
 <div style={{width: "300px"}}>
 	<StackedBarChartLayout 
 
-		chartTitle="Oil (bbl)"
+		chartDisplayConfig={{title:"Oil (bbl)"}}
 
 		chartData={[
 			{"Jan": [{"Federal onshore": 50, "Federal offshore": 100, "Native American":75}]},

@@ -8,7 +8,7 @@ patternCategory: Charts
 <div style={{width:"300px"}}>
 	<ChartLegendStandard 
 		header={["Source", "2017 (bbl)"]} 
-		data={[{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}]} >
+		data={{'Onshore':1257456, 'Offshore': 3454054, 'GOMESA':3256897}} >
 	</ChartLegendStandard>
 </div>
 ```

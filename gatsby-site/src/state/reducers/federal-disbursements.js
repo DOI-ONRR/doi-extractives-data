@@ -61,6 +61,8 @@ export default (state = initialState, action) => {
  * all data for that year
  **/
 const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
+	if(source === undefined) return {FiscalYear: undefined, CalendarYear: undefined};
+	
 	let fiscalYearItem = source.find(item => (item.data.RevenueMonth === "September"));
 	let calendarYearItem = source.find(item => (item.data.RevenueMonth === "December"));
 	fiscalYear[key] = (fiscalYearItem && parseInt(fiscalYearItem.data.RevenueYear));
@@ -74,6 +76,8 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  * @returns {Object}
  **/
 const groupByYear = (source, filter) => {
+	if(source === undefined) return source;
+
 	let displayNames;
 	let groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.Year")).map(e => ({[e[0]] : e[1] }) );
@@ -140,6 +144,8 @@ const groupByYear = (source, filter) => {
  * {"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]}
  **/
 const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
+	if(source === undefined) return source;
+
 	let displayNames;
 	let groupNames;
 	let results = JSON.parse(JSON.stringify(source));

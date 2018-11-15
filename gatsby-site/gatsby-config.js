@@ -46,7 +46,14 @@ module.exports = {
         name: `data-graphql`,
         path: `${__dirname}/src/data-graphql/`,
       },
-    }, 
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown/`,
+      },
+    },  
     `gatsby-transformer-yaml`,
     {
       resolve: 'gatsby-transformer-remark',

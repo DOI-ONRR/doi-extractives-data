@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styles from "./Toggle.module.css"
 
 const Toggle = (props) => {
 
   const onClickHandler = (e, key) => {
     e.stopPropagation();
-    let allToggles = e.currentTarget.parentNode.childNodes;
 
-    allToggles.forEach(node => node.classList.remove(styles.selected))
+    Array.from(e.currentTarget.parentNode.childNodes).forEach(node => node.classList.remove(styles.selected));
+    
     e.currentTarget.classList.add(styles.selected);
 
     if(props.action) {
@@ -41,3 +40,5 @@ Toggle.propTypes = {
 }
 
 export default Toggle;
+
+

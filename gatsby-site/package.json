@@ -6,7 +6,6 @@
     "core-js": "^2.5.7",
     "currency-formatter": "^1.4.3",
     "d3": "^5.5.0",
-    "es5-shim": "^4.5.12",
     "gatsby": "^1.9.158",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-react-next": "^1.0.11",

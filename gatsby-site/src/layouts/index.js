@@ -86,29 +86,6 @@ export const query = graphql`
         googleAnalyticsId
       }
     }
-    offshore_data:allMarkdownRemark (filter:{id: {regex: "/offshore_regions/"}}) {
-      offshore_regions:edges {
-        offshore_region:node {
-          frontmatter {
-            title
-            unique_id
-            permalink
-            is_cropped
-          }
-        }
-      }
-    }
-    states_data:allMarkdownRemark (filter:{id: {regex: "/states/"}}) {
-      states:edges {
-        state:node {
-          frontmatter {
-            title
-            unique_id
-            is_cropped
-          }
-        }
-      }
-    }
   }
 
 `;

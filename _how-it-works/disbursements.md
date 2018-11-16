@@ -59,7 +59,7 @@ ONRR disburses revenue to six main funds, recipients, or groups:
 
 - **Historic Preservation Fund**: Helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices. [How this fund works]({{site.baseurl}}/how-it-works/historic-preservation-fund/)
 
-A portion of funds goes back to federal land management agencies to help cover operational costs or special projects. These disbursements show up in the data as "Other funds". 
+- **Other funds**: A portion of funds goes back to federal land management agencies to help cover operational costs or special projects. "Other funds" also include disbursements to the Ultra-Deepwater Research Program and the Mescal Settlement Agreement.
 
 We share [disbursements data for each fund by fiscal year]({{site.baseurl}}/explore/#by-fund).
 

@@ -1,6 +1,6 @@
 ---
 title: Federal Production by Month | Documentation
-title_display: Federal Production by Location
+title_display: Federal Production by Month
 layout: content
 permalink: /downloads/federal-production-by-month/
 nav_items:

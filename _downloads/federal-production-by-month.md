@@ -53,15 +53,9 @@ tag:
 
 <!--Update monthly data and docs below - this is annual copied from federal production-->
 
-<p class="downloads-download_links-intro">Download calendar year data:
+<p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_CY08-17.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 391 KB)</a></li>
-  </ul>
-</p>
-
-<p class="downloads-download_links-intro">Download fiscal year data:
-  <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/federal_production_FY2008-2017_2018-06-15.xlsx">{% include svg/icon-download.svg %}Full dataset (xlsx, 387 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/monthly_production_11-2018.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–7/2018 (xlsx, 47 KB)</a></li>
   </ul>
 </p>
 

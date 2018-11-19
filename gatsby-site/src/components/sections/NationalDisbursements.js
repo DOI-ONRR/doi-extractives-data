@@ -18,6 +18,7 @@ import YearSelector from '../atoms/YearSelector';
 import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
 import fundedByCongress from '../../data/funded_by_congress.yml';
+import fundExplanation from '../../data/fund_explanation.yml';
 
 
 /** Define data display attributes */
@@ -70,6 +71,7 @@ class NationalDisbursements extends React.Component{
 	render(){
 		let disbursementsForYear = this.state.disbursements[this.state.year];
 		let fundedByCongressForYear = fundedByCongress[this.state.year];
+		let noDataExplanation = fundExplanation[this.state.year];
 
 		return (
 			<section id="federal-disbursements">
@@ -113,7 +115,12 @@ class NationalDisbursements extends React.Component{
 	            							name: "Funded by Congress",
 	            							value: utils.formatToDollarInt(fundedByCongressForYear[fundKey])
 	            						});
-	            				}
+								}
+								
+								let fundNoDataExplanation;
+								if(noDataExplanation && noDataExplanation.fund === fundKey) {
+									fundNoDataExplanation = noDataExplanation.explanation;
+								}
 
 			            		return (<StackedBarSingleChartTableRow 
 			            					key={index+fundKey} 
@@ -126,6 +133,7 @@ class NationalDisbursements extends React.Component{
 			            					chartData={fundDisbursements[fundKey].disbursements}
 			            					maxValue={disbursementsForYear.highestFundValue}
 			            					additionalData={fundAdditionalData}
+											noDataExplanation={fundNoDataExplanation}
 			            					/>);
 	            			}
 	            		})

@@ -250,9 +250,9 @@ exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);
     prependFile.sync(__dirname+'/public/explore/index.html', explorePageFrontmatter);
-    allStateIds.map((stateId,index) => {
+    /*allStateIds.map((stateId,index) => {
     	prependFile.sync(__dirname+'/public/explore/'+stateId+'/index.html',  "---"+os.EOL+"permalink: /explore/"+stateId+"/"+os.EOL+"---"+os.EOL);
-    });
+    });*/
     console.log("Finished prepending frontmatter to files.");
 
 	console.log("Copying Files from public to gatsby-public...");

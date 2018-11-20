@@ -17,9 +17,7 @@ nav_items:
     title: Revenue
     subnav_items:
       - name: federal-revenue-by-location
-        title: Federal revenue by location
-      - name: federal-revenue-by-company
-        title: Federal revenue by company
+        title: Revenue by location, month, and company
       - name: reconciliation
         title: Reconciliation
       - name: corporate-income-tax

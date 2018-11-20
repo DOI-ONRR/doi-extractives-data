@@ -71,6 +71,7 @@
 
 .production {
 	width: 100%;
+	margin-bottom: 3rem;
 }
 
 .productChartContainer {
@@ -96,6 +97,7 @@
 	grid-template-columns: repeat(2, [col-start] 1fr);
 	grid-gap: 0 3%;
 	width: 100%;
+	margin-bottom: 3rem;
 }
 
 /* added for ie 11 compatatibility */

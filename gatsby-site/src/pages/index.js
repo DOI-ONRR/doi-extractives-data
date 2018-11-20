@@ -114,7 +114,8 @@ class HomePage extends React.Component {
                 <div className={styles.linkContainer}>
                   <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
                   <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
-                  <ExploreDataLink to="/how-it-works/native-american-revenue/#revenue-data">By company</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/federal-revenue-by-company/">By company</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/native-american-revenue/">Native American revenue</ExploreDataLink>
                   <DownloadDataLink to="/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>

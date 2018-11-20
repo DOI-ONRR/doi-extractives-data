@@ -16,7 +16,7 @@ nav_items:
   - name: revenue
     title: Revenue
     subnav_items:
-      - name: federal-revenue-by-location
+      - name: all-revenue
         title: Revenue by location, month, and company
       - name: reconciliation
         title: Reconciliation
@@ -75,7 +75,7 @@ tag:
 --------------------------------------------------------------------------------
 <ul class="list-sections list-unstyled">
     <li class="downloads-download_links">
-    <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="link-no_under"><h3 id="federal-revenue-by-location">
+    <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" class="link-no_under"><h3 id="all-revenue">
     Revenue</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters. We offer revenue data by year, by month, and by company. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">

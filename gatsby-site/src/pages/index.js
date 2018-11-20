@@ -93,7 +93,7 @@ class HomePage extends React.Component {
                 <div className={styles.linkContainer}>
                   <ExploreDataLink to="/explore/#all-production">All lands and waters</ExploreDataLink>
                   <ExploreDataLink to="/explore/#federal-production">Federal lands and waters</ExploreDataLink>
-                  <ExploreDataLink to="/how-it-works/tribal-production/#production-on-indian-land">Native American lands</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land">Native American lands</ExploreDataLink>
                   <DownloadDataLink to="/downloads/#production">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
@@ -114,7 +114,7 @@ class HomePage extends React.Component {
                 <div className={styles.linkContainer}>
                   <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
                   <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
-                  <ExploreDataLink to="/how-it-works/federal-revenue-by-company/2017">By company</ExploreDataLink>
+                  <ExploreDataLink to="/how-it-works/native-american-revenue/#revenue-data">By company</ExploreDataLink>
                   <DownloadDataLink to="/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>

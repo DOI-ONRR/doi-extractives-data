@@ -50,7 +50,7 @@ tag:
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
     <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2017.xlsx">{% include svg/icon-download.svg %}
-    Full dataset (xlsx, 440 KB)</a></li>
+    Full dataset (xlsx, 501 KB)</a></li>
   </ul>
 </p>
 

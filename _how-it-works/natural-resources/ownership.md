@@ -15,8 +15,8 @@ nav_items:
         title: Federal lands
       - name: state-and-local-lands
         title: State and local Lands
-      - name: indian-lands
-        title: Indian lands
+      - name: native-american-lands
+        title: Native American lands
   - name: natural-resource-ownership
     title: Natural resource ownership
     subnav_items:
@@ -30,6 +30,7 @@ tag:
 - federal land
 - state and local land
 - indian land
+- native american
 - natural resources
 - split ownership
 breadcrumb:
@@ -45,7 +46,7 @@ selector: list
 
 ## Land ownership
 
-There are four main types of land owners: citizens and corporations; the federal government; state and local governments; and Indian tribes and individuals. There are two types of owners for submerged lands under the ocean: states and the federal government.
+There are four main types of land owners: citizens and corporations; the federal government; state and local governments; and Native American tribes and individuals. There are two types of owners for submerged lands under the ocean: states and the federal government.
 
 ### Private lands
 
@@ -69,12 +70,12 @@ State and local lands are owned by state or local governments, including:
 * [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico
 * Lands owned by a local government, such as a county
 
-### Indian lands
+### Native American lands
 
-Indian lands are owned by Native Americans, and include:
+Native American lands include:
 
 * Tribal lands held in trust by the federal government for a tribe’s use
-* Allotments held in trust by the federal government for individual Indians’ use
+* Allotments held in trust by the federal government for individual Native American use
 * [Alaska Native Corporation](http://www.gao.gov/assets/660/650857.pdf) lands in Alaska, held by 12 regional Alaska Native Corporations that received rights to some surface lands, as well as rights to natural resources below the surface. Along with these 12 regional Alaska Native Corporations, certain village-level Alaska Native Corporations hold additional surface land rights.
 
 ## Natural resource ownership
@@ -85,6 +86,6 @@ Natural resource ownership has historical roots in the 19th century, when the fe
 
 ### Split ownership
 
-Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/split-estate). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.
+Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/split-estate). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Native American tribes own the span of a single mine or field.
 
 When it comes to the natural resources found off the coast, the federal government and state governments split ownership. In general, states have primary authority and natural resource ownership in the three-mile area extending outward from their coasts. The federal government owns oil, gas, and minerals located in the submerged lands on the Outer Continental Shelf, which extend from the states’ offshore boundaries out to at least 200 nautical miles from the shore.

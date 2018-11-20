@@ -27,9 +27,9 @@ const FUND_TO_DISBURSEMENTS_CATEGORY ={
 }
 
 const ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY ={
-	"Onshore & Offshore": CONSTANTS.FEDERAL_ONSHORE,
-	"Offshore": CONSTANTS.FEDERAL_OFFSHORE,
-	"Onshore": CONSTANTS.FEDERAL_ONSHORE,
+	"onshore & offshore": CONSTANTS.FEDERAL_ONSHORE,
+	"offshore": CONSTANTS.FEDERAL_OFFSHORE,
+	"onshore": CONSTANTS.FEDERAL_ONSHORE,
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
@@ -57,7 +57,7 @@ const createDisbursementsNode = (createNode, disbursementsData, index) => {
   }
   //console.log(disbursementNode.OnshoreOffshore, ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY);
   //console.log(ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source]);
-  disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund] || ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source];
+  disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund] || ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()];
 
   disbursementNode.internal.contentDigest = crypto.createHash(`md5`)
 																      .update(JSON.stringify(disbursementNode))

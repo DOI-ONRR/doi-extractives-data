@@ -36,7 +36,7 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset contains monthly production volumunes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
+description: This dataset contains monthly production volumes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
 tag:
 - Data
 - Downloads
@@ -45,6 +45,9 @@ tag:
 - Indian
 - Federal
 - Production
+- coal
+- oil
+- gas
 ---
 
 {% include production-nav.html %}
@@ -63,36 +66,33 @@ This dataset includes natural resource production for U.S. federal lands and off
 
 ## Data publication
 
-We update this production dataset monthly, though data for the most recent month isn't available for 3-4 months. 
-
-<!-- continue here -->
+We update this production data every month, but final production numbers aren't available for 3-4 months. For example, the most recent production data for a file updated in November will be from July or August.
 
 ## Data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+Monthly production has the following fields:
 
-### FIPS code
+- Production Date
+- Land Category
+- Onshore/Offshore
+- Commodity
+- Volume
 
-Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
+### Fields and definitions
 
-### Region
+_Production Date_ The last day of the month represents the data for that entire month. For example, 1/31/2008 represents the data for the month of January 2008.
 
-BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_Land Category_ The ownership of the land or waters where the production came from. Ownership is either federal or Native American (shown as "Indian" in the data).
 
-### Planning area
+_Onshore/Offshore_ Shows whether the production was onshore (federal or Native American lands) or offshore (federal waters, such as the Gulf of Mexico).
 
-Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 
-### Product groupings
+- _Oil Prod Vol (bbl)_ Oil production is measured in barrels (bbl)
+- _Gas Prod Vol (Mcf)_ Gas (natural gas) is measured in thousand cubic feet (mcf)
+- _Coal Prod Vol (ton)_ Coal is measured in tons. A ton is 2000 pounds.
 
-* Borate Products include: Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate and Boric Acid
-* Brine Products include: Brine Barrels (converted to ton equivalent) and Magnesium Chloride Brine
-* Gold and Silver Products (oz) include: Gold, Gold Placer, and Silver
-* Hardrock Products include: Limestone and Wavelite
-* Other Coal Products include: Leonardite and Coal Waste (Sub-Econ)
-* Gold Products (tons) includes: Gold Ore
-* Other Potassium Products include: Manure Salts and Sylvite-Raw Ore
-* Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore
+_Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Commodity).
 
 ## Contact us
 

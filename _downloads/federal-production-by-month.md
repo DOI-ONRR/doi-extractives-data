@@ -1,6 +1,6 @@
 ---
-title: Federal Production by Month | Documentation
-title_display: Federal Production by Month
+title: Production by Month | Documentation
+title_display: Production by Month
 layout: content
 permalink: /downloads/federal-production-by-month/
 nav_items:
@@ -36,11 +36,13 @@ selector: list
 breadcrumb:
   - title: Downloads
     permalink: /downloads/
-description: This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2008-2017.
+description: This dataset contains monthly production volumunes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
 tag:
 - Data
 - Downloads
 - Documentation
+- Native American
+- Indian
 - Federal
 - Production
 ---
@@ -49,58 +51,21 @@ tag:
 
 > {{ page.description }}
 
-
-
-<!--Update monthly data and docs below - this is annual copied from federal production-->
-
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
     <li><a href="{{site.baseurl}}/downloads/monthly_production_11-2018.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–7/2018 (xlsx, 47 KB)</a></li>
   </ul>
 </p>
 
-This dataset also includes county-level data about coal production on federal land.
-
-We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
-
 ## Scope
 
-This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
+This dataset includes natural resource production for U.S. federal lands and offshore areas and Native American lands. It does not include privately owned lands or U.S. state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). Monthly production data is available for coal, oil, and gas. The production data for oil and gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
 ## Data publication
 
-The federal production datasets are updated annually in July for the most recent completed fiscal and calendar year.
+We update this production dataset monthly, though data for the most recent month isn't available for 3-4 months. 
 
-### Why was some solids data withheld?
-
-ONRR {{ "withheld" | term }} some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act.
-
-* "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level.
-* All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E).
-
-### Why aren’t national totals equal to the sum of all state totals?
-
-In some cases, national totals include amounts that are withheld at the state or county level.
-
-### Why is geothermal energy listed so many times?
-
-We can only compare production that is reported in the same unit. The standard unit of measurement for geothermal energy in the federal production dataset is kilowatt hours, but there are a few counties that report it differently. We have separate charts for each of these counties, because they report in nonstandard units:
-
-* Dona Ana County, NM reports direct use of geothermal resources in _million gallons_
-* Churchill County, NV reports direct use of geothermal resources in _hundred gallons_
-* Lassen County, CA reports direct use of geothermal resources in _million BTUs_
-* Lassen County, CA reports geothermal energy generation as _other_ (no unit)
-* Lake County, CA; Sonoma County, CA; and Beaver County, UT report geothermal energy generation in _thousand pounds_
-* Inyo County, CA reports sulfur from geothermal resources as _sulfur_ (no unit)
-
-### A note about “Mixed Exploratory” versus “Federal” categories of production
-
-To build our data visualizations, we've aggregated production from two types of jurisdictions: “federal” and “mixed exploratory.”
-
-* Federal production is production from federal lands and waters.
-* "Mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. BLM then creates a permanent unit with allocation schedules that may split that area between federal and other ownership. Payors then resubmit royalties based on the new unit  allocations. These royalties are retroactive to the first production.
-
-The federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.
+<!-- continue here -->
 
 ## Data dictionary
 

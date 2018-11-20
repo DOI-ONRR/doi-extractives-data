@@ -1,4 +1,5 @@
-*.css.map
+
+gatsby-public*.css.map
 *.db
 *.db-journal
 *.log
@@ -18,3 +19,4 @@ styleguide
 .clasp.json
 .npmrc
 /.project
+gatsby-public

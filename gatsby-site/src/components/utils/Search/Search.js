@@ -1,7 +1,9 @@
 import React from 'react';
 import { withPrefix } from '../../utils/temp-link';
 
-const Search = () => {
+import styles from "./Search.module.css";
+
+const Search = (props) => {
   
   let searchPath = "/search-results/";
 
@@ -12,12 +14,25 @@ const Search = () => {
     searchPath = withPrefix(searchPath);
   }
 
-  return(
-    <form action={searchPath}>
-      <label className='sr-only' htmlFor="q">Search</label>
-      <input type="search" className="search-box header-nav_search" placeholder="Search" id="search-input" name="q" role="search"/>
-      <button type="submit" className="header-nav_search_icon icon-search" title="search"><label className="sr-only">Search</label></button>
-    </form>
+  return (
+      <div>
+        { props.isMobile ?
+          <label className={styles.searchLabel} htmlFor="q">Search</label>
+        :
+          <label className={styles.srOnly} htmlFor="q">Search</label>
+        }
+        <form action={searchPath} className={styles.searchForm} >
+
+          <input type="search" 
+            className={props.isMobile ? styles.searchBoxMobile : styles.searchBox} 
+            placeholder={props.isMobile ? "" : "Search"}
+            id="search-input" name="q" role="search"/>
+          <button type="submit" 
+            className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
+            title="search">
+            <label className="sr-only">Search</label></button>
+        </form> 
+      </div>
   );
 }
 

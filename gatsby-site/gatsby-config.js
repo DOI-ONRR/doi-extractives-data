@@ -25,7 +25,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: [`${__dirname}/src/styles`],
+      },
+    },
+    
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.

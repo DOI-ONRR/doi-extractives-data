@@ -30,6 +30,8 @@
 	fill: nativeAmericanColor;
 }
 
+
+
 .chartBar[selected=true] .federalOnshore{
 	fill: federalOnshoreColor_selected;
 }
@@ -47,6 +49,7 @@
 	fill: federalOnshoreColor_selected;
 	opacity: 0.8;
 }
+
 .chartBar:hover .federalOffshore{
 	fill: federalOffshoreColor_selected;
 	opacity: 0.8;
@@ -156,6 +159,7 @@
 	margin-left: 0px;
 	margin-top: 10px;
 }
+
 
 @media screen and (max-width: 768px) {
 	.productChartContainer {

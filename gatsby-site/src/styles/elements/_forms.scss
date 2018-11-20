@@ -89,9 +89,6 @@ textarea {
   resize: vertical;
 }
 
-input[type='search'] {
-  @include appearance(none);
-}
 
 input[type='file'] {
   margin-bottom: $base-line-height / 2;

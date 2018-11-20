@@ -4,8 +4,6 @@ import MediaQuery from 'react-responsive';
 import { connect } from 'react-redux';
 import Link from '../../utils/temp-link';
 
-import Sticky from 'react-stickynode';
-
 import styles from "./Header.module.css";
 
 import {Search} from '../../utils/Search';

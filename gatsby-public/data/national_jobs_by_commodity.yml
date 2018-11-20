@@ -1,0 +1,840 @@
+Extractives:
+  '2006':
+    count: 672616
+    total: 133833834
+    percent: 0.5
+  '2007':
+    count: 715238
+    total: 135366106
+    percent: 0.53
+  '2008':
+    count: 768888
+    total: 134805659
+    percent: 0.57
+  '2009':
+    count: 696304
+    total: 128607842
+    percent: 0.54
+  '2010':
+    count: 672984
+    total: 127820442
+    percent: 0.53
+  '2011':
+    count: 754729
+    total: 129411095
+    percent: 0.58
+  '2012':
+    count: 821897
+    total: 131696378
+    percent: 0.62
+  '2013':
+    count: 837317
+    total: 133968434
+    percent: 0.63
+  '2014':
+    count: 865853
+    total: 136613609
+    percent: 0.63
+  '2015':
+    count: 776368
+    total: 139491699
+    percent: 0.56
+  '2016':
+    count: 640126
+    total: 141866449
+    percent: 0.45
+Mining:
+  '2006':
+    count: 616598
+    total: 133833834
+    percent: 0.46
+  '2007':
+    count: 660276
+    total: 135366106
+    percent: 0.49
+  '2008':
+    count: 713398
+    total: 134805659
+    percent: 0.53
+  '2009':
+    count: 641366
+    total: 128607842
+    percent: 0.5
+  '2010':
+    count: 651631
+    total: 127820442
+    percent: 0.51
+  '2011':
+    count: 730048
+    total: 129411095
+    percent: 0.56
+  '2012':
+    count: 798132
+    total: 131696378
+    percent: 0.61
+  '2013':
+    count: 813258
+    total: 133968434
+    percent: 0.61
+  '2014':
+    count: 841879
+    total: 136613609
+    percent: 0.62
+  '2015':
+    count: 751911
+    total: 139491699
+    percent: 0.54
+  '2016':
+    count: 613356
+    total: 141866449
+    percent: 0.43
+Oil and gas:
+  '2006':
+    count: 385803
+    total: 133833834
+    percent: 0.29
+  '2007':
+    count: 427706
+    total: 135366106
+    percent: 0.32
+  '2008':
+    count: 476356
+    total: 134805659
+    percent: 0.35
+  '2009':
+    count: 422033
+    total: 128607842
+    percent: 0.33
+  '2010':
+    count: 434599
+    total: 127820442
+    percent: 0.34
+  '2011':
+    count: 499507
+    total: 129411095
+    percent: 0.39
+  '2012':
+    count: 562790
+    total: 131696378
+    percent: 0.43
+  '2013':
+    count: 586884
+    total: 133968434
+    percent: 0.44
+  '2014':
+    count: 621265
+    total: 136613609
+    percent: 0.45
+  '2015':
+    count: 540943
+    total: 139491699
+    percent: 0.39
+  '2016':
+    count: 422694
+    total: 141866449
+    percent: 0.3
+Mining support:
+  '2006':
+    count: 262498
+    total: 133833834
+    percent: 0.2
+  '2007':
+    count: 294264
+    total: 135366106
+    percent: 0.22
+  '2008':
+    count: 330168
+    total: 134805659
+    percent: 0.24
+  '2009':
+    count: 273910
+    total: 128607842
+    percent: 0.21
+  '2010':
+    count: 289709
+    total: 127820442
+    percent: 0.23
+  '2011':
+    count: 345042
+    total: 129411095
+    percent: 0.27
+  '2012':
+    count: 392069
+    total: 131696378
+    percent: 0.3
+  '2013':
+    count: 406016
+    total: 133968434
+    percent: 0.3
+  '2014':
+    count: 439379
+    total: 136613609
+    percent: 0.32
+  '2015':
+    count: 361804
+    total: 139491699
+    percent: 0.26
+  '2016':
+    count: 258615
+    total: 141866449
+    percent: 0.18
+Support Activities for Oil and Gas Operations:
+  '2006':
+    count: 171127
+    total: 133833834
+    percent: 0.13
+  '2007':
+    count: 197100
+    total: 135366106
+    percent: 0.15
+  '2008':
+    count: 223635
+    total: 134805659
+    percent: 0.17
+  '2009':
+    count: 193589
+    total: 128607842
+    percent: 0.15
+  '2010':
+    count: 201685
+    total: 127820442
+    percent: 0.16
+  '2011':
+    count: 241490
+    total: 129411095
+    percent: 0.19
+  '2012':
+    count: 282447
+    total: 131696378
+    percent: 0.21
+  '2013':
+    count: 296891
+    total: 133968434
+    percent: 0.22
+  '2014':
+    count: 326353
+    total: 136613609
+    percent: 0.24
+  '2015':
+    count: 278444
+    total: 139491699
+    percent: 0.2
+  '2016':
+    count: 202272
+    total: 141866449
+    percent: 0.14
+Oil and gas (only):
+  '2006':
+    count: 134858
+    total: 133833834
+    percent: 0.1
+  '2007':
+    count: 146081
+    total: 135366106
+    percent: 0.11
+  '2008':
+    count: 160081
+    total: 134805659
+    percent: 0.12
+  '2009':
+    count: 160688
+    total: 128607842
+    percent: 0.12
+  '2010':
+    count: 158423
+    total: 127820442
+    percent: 0.12
+  '2011':
+    count: 170735
+    total: 129411095
+    percent: 0.13
+  '2012':
+    count: 188003
+    total: 131696378
+    percent: 0.14
+  '2013':
+    count: 196732
+    total: 133968434
+    percent: 0.15
+  '2014':
+    count: 196704
+    total: 136613609
+    percent: 0.14
+  '2015':
+    count: 192537
+    total: 139491699
+    percent: 0.14
+  '2016':
+    count: 174961
+    total: 141866449
+    percent: 0.12
+Nonenergy minerals:
+  '2006':
+    count: 145513
+    total: 133833834
+    percent: 0.11
+  '2007':
+    count: 148441
+    total: 135366106
+    percent: 0.11
+  '2008':
+    count: 147840
+    total: 134805659
+    percent: 0.11
+  '2009':
+    count: 129720
+    total: 128607842
+    percent: 0.1
+  '2010':
+    count: 128048
+    total: 127820442
+    percent: 0.1
+  '2011':
+    count: 134598
+    total: 129411095
+    percent: 0.1
+  '2012':
+    count: 140541
+    total: 131696378
+    percent: 0.11
+  '2013':
+    count: 140660
+    total: 133968434
+    percent: 0.1
+  '2014':
+    count: 140033
+    total: 136613609
+    percent: 0.1
+  '2015':
+    count: 139563
+    total: 139491699
+    percent: 0.1
+  '2016':
+    count: 135871
+    total: 141866449
+    percent: 0.1
+Nonmetallic minerals:
+  '2006':
+    count: 108712
+    total: 133833834
+    percent: 0.08
+  '2007':
+    count: 107428
+    total: 135366106
+    percent: 0.08
+  '2008':
+    count: 101899
+    total: 134805659
+    percent: 0.08
+  '2009':
+    count: 90669
+    total: 128607842
+    percent: 0.07
+  '2010':
+    count: 86419
+    total: 127820442
+    percent: 0.07
+  '2011':
+    count: 86557
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 87718
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 87708
+    total: 133968434
+    percent: 0.07
+  '2014':
+    count: 89589
+    total: 136613609
+    percent: 0.07
+  '2015':
+    count: 91295
+    total: 139491699
+    percent: 0.07
+  '2016':
+    count: 91151
+    total: 141866449
+    percent: 0.06
+Drilling Oil and Gas Wells:
+  '2006':
+    count: 79818
+    total: 133833834
+    percent: 0.06
+  '2007':
+    count: 84525
+    total: 135366106
+    percent: 0.06
+  '2008':
+    count: 92640
+    total: 134805659
+    percent: 0.07
+  '2009':
+    count: 67756
+    total: 128607842
+    percent: 0.05
+  '2010':
+    count: 74491
+    total: 127820442
+    percent: 0.06
+  '2011':
+    count: 87282
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 92340
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 93261
+    total: 133968434
+    percent: 0.07
+  '2014':
+    count: 98208
+    total: 136613609
+    percent: 0.07
+  '2015':
+    count: 69944
+    total: 139491699
+    percent: 0.05
+  '2016':
+    count: 45446
+    total: 141866449
+    percent: 0.03
+Coal:
+  '2006':
+    count: 85731
+    total: 133833834
+    percent: 0.06
+  '2007':
+    count: 84131
+    total: 135366106
+    percent: 0.06
+  '2008':
+    count: 89204
+    total: 134805659
+    percent: 0.07
+  '2009':
+    count: 89963
+    total: 128607842
+    percent: 0.07
+  '2010':
+    count: 89252
+    total: 127820442
+    percent: 0.07
+  '2011':
+    count: 96214
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 95093
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 85889
+    total: 133968434
+    percent: 0.06
+  '2014':
+    count: 80772
+    total: 136613609
+    percent: 0.06
+  '2015':
+    count: 71425
+    total: 139491699
+    percent: 0.05
+  '2016':
+    count: 54805
+    total: 141866449
+    percent: 0.04
+Coal (only):
+  '2006':
+    count: 78648
+    total: 133833834
+    percent: 0.06
+  '2007':
+    count: 76604
+    total: 135366106
+    percent: 0.06
+  '2008':
+    count: 81095
+    total: 134805659
+    percent: 0.06
+  '2009':
+    count: 82000
+    total: 128607842
+    percent: 0.06
+  '2010':
+    count: 81126
+    total: 127820442
+    percent: 0.06
+  '2011':
+    count: 86909
+    total: 129411095
+    percent: 0.07
+  '2012':
+    count: 85925
+    total: 131696378
+    percent: 0.07
+  '2013':
+    count: 77393
+    total: 133968434
+    percent: 0.06
+  '2014':
+    count: 72172
+    total: 136613609
+    percent: 0.05
+  '2015':
+    count: 64135
+    total: 139491699
+    percent: 0.05
+  '2016':
+    count: 49648
+    total: 141866449
+    percent: 0.03
+Renewables:
+  '2006':
+    count: 55568
+    total: 133833834
+    percent: 0.04
+  '2007':
+    count: 54962
+    total: 135366106
+    percent: 0.04
+  '2008':
+    count: 55154
+    total: 134805659
+    percent: 0.04
+  '2009':
+    count: 54567
+    total: 128607842
+    percent: 0.04
+  '2010':
+    count: 21066
+    total: 127820442
+    percent: 0.02
+  '2011':
+    count: 24388
+    total: 129411095
+    percent: 0.02
+  '2012':
+    count: 23453
+    total: 131696378
+    percent: 0.02
+  '2013':
+    count: 23862
+    total: 133968434
+    percent: 0.02
+  '2014':
+    count: 23758
+    total: 136613609
+    percent: 0.02
+  '2015':
+    count: 24227
+    total: 139491699
+    percent: 0.02
+  '2016':
+    count: 26527
+    total: 141866449
+    percent: 0.02
+Hardrock minerals:
+  '2006':
+    count: 31883
+    total: 133833834
+    percent: 0.02
+  '2007':
+    count: 35901
+    total: 135366106
+    percent: 0.03
+  '2008':
+    count: 40156
+    total: 134805659
+    percent: 0.03
+  '2009':
+    count: 34100
+    total: 128607842
+    percent: 0.03
+  '2010':
+    count: 35953
+    total: 127820442
+    percent: 0.03
+  '2011':
+    count: 40804
+    total: 129411095
+    percent: 0.03
+  '2012':
+    count: 44418
+    total: 131696378
+    percent: 0.03
+  '2013':
+    count: 45410
+    total: 133968434
+    percent: 0.03
+  '2014':
+    count: 44035
+    total: 136613609
+    percent: 0.03
+  '2015':
+    count: 42141
+    total: 139491699
+    percent: 0.03
+  '2016':
+    count: 38980
+    total: 141866449
+    percent: 0.03
+Hydroelectric:
+  '2006':
+    count: 39432
+    total: 133833834
+    percent: 0.03
+  '2007':
+    count: 38203
+    total: 135366106
+    percent: 0.03
+  '2008':
+    count: 38649
+    total: 134805659
+    percent: 0.03
+  '2009':
+    count: 37890
+    total: 128607842
+    percent: 0.03
+  '2010':
+    count: 7045
+    total: 127820442
+    percent: 0.01
+  '2011':
+    count: 5832
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 5937
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 6006
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 5821
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 5483
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 6489
+    total: 141866449
+    percent: 0
+Support Activities for Coal Mining:
+  '2006':
+    count: 7083
+    total: 133833834
+    percent: 0.01
+  '2007':
+    count: 7527
+    total: 135366106
+    percent: 0.01
+  '2008':
+    count: 8109
+    total: 134805659
+    percent: 0.01
+  '2009':
+    count: 7963
+    total: 128607842
+    percent: 0.01
+  '2010':
+    count: 8126
+    total: 127820442
+    percent: 0.01
+  '2011':
+    count: 9305
+    total: 129411095
+    percent: 0.01
+  '2012':
+    count: 9168
+    total: 131696378
+    percent: 0.01
+  '2013':
+    count: 8496
+    total: 133968434
+    percent: 0.01
+  '2014':
+    count: 8600
+    total: 136613609
+    percent: 0.01
+  '2015':
+    count: 7290
+    total: 139491699
+    percent: 0.01
+  '2016':
+    count: 5157
+    total: 141866449
+    percent: 0
+Support Activities for Metal Mining:
+  '2006':
+    count: 2582
+    total: 133833834
+    percent: 0
+  '2007':
+    count: 2896
+    total: 135366106
+    percent: 0
+  '2008':
+    count: 3357
+    total: 134805659
+    percent: 0
+  '2009':
+    count: 2538
+    total: 128607842
+    percent: 0
+  '2010':
+    count: 3118
+    total: 127820442
+    percent: 0
+  '2011':
+    count: 4277
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 5032
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 4239
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 3632
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 3516
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 3126
+    total: 141866449
+    percent: 0
+Wind:
+  '2011':
+    count: 2972
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 3190
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 3176
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 3411
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 4245
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 4878
+    total: 141866449
+    percent: 0
+Support Activities for Nonmetallic Minerals (except Fuels) Mining:
+  '2006':
+    count: 1888
+    total: 133833834
+    percent: 0
+  '2007':
+    count: 2216
+    total: 135366106
+    percent: 0
+  '2008':
+    count: 2428
+    total: 134805659
+    percent: 0
+  '2009':
+    count: 2064
+    total: 128607842
+    percent: 0
+  '2010':
+    count: 2290
+    total: 127820442
+    percent: 0
+  '2011':
+    count: 2687
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 3084
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 3130
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 2586
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 2611
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 2614
+    total: 141866449
+    percent: 0
+Solar:
+  '2011':
+    count: 533
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 735
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 1231
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 1631
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 2067
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 2766
+    total: 141866449
+    percent: 0
+Geothermal:
+  '2011':
+    count: 1049
+    total: 129411095
+    percent: 0
+  '2012':
+    count: 1067
+    total: 131696378
+    percent: 0
+  '2013':
+    count: 1094
+    total: 133968434
+    percent: 0
+  '2014':
+    count: 1126
+    total: 136613609
+    percent: 0
+  '2015':
+    count: 1093
+    total: 139491699
+    percent: 0
+  '2016':
+    count: 1127
+    total: 141866449
+    percent: 0

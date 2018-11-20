@@ -5,6 +5,7 @@
   "author": "scott.eckenthal@gmail.com",
   "dependencies": {
     "app-root-dir": "^1.0.2",
+    "currency-formatter": "^1.5.3",
     "gatsby": "^1.9.227",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",

@@ -126,7 +126,7 @@ class HomePage extends React.Component {
                 <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
-                    <BlueButton to="/understand-disbursements/how-it-works/#disbursements">How the budget process works</BlueButton>
+                    <BlueButton to="/how-it-works/#disbursements">How disbursements work</BlueButton>
                   </div>
                 </div>
               </div>

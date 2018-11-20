@@ -124,6 +124,12 @@ defaults:
 
   - scope:
       path: ''
+      type: states
+    values:
+      layout: state-page
+
+  - scope:
+      path: ''
       type: offshore_regions
     values:
       layout: offshore-region

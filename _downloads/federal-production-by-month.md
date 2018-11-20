@@ -10,26 +10,11 @@ nav_items:
     title: Scope
   - name: data-publication
     title: Data publication
-    subnav_items:
-      - name: why-was-some-solids-data-withheld
-        title: Withheld data
-      - name: why-arent-national-totals-equal-to-the-sum-of-all-state-totals
-        title: National and state totals
-      - name: why-is-geothermal-energy-listed-so-many-times
-        title: Geothermal data
-      - name: a-note-about-mixed-exploratory-versus-federal-categories-of-production
-        title: Mixed exploratory and federal categories
   - name: data-dictionary
     title: Data dictionary
     subnav_items:
-      - name: fips-code
-        title: FIPS code
-      - name: region
-        title: Region
-      - name: planning-area
-        title: Planning areas
-      - name: product-groupings
-        title: Product groupings
+      - name: fields-and-definitions
+        title: Fields and definitions
   - name: contact-us
     title: Contact us
 selector: list
@@ -69,14 +54,6 @@ This dataset includes natural resource production for U.S. federal lands and off
 We update this production data every month, but final production numbers aren't available for 3-4 months. For example, the most recent production data for a file updated in November will be from July or August.
 
 ## Data dictionary
-
-Monthly production has the following fields:
-
-- Production Date
-- Land Category
-- Onshore/Offshore
-- Commodity
-- Volume
 
 ### Fields and definitions
 

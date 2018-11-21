@@ -82,7 +82,7 @@ Download fiscal year data:
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
 
 ### Why are some values negative?
 

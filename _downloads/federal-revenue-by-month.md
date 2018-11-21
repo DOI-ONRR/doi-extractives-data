@@ -41,7 +41,7 @@ tag:
 
 > {{ page.description }}
 
-Download federal revenue by month:
+Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
   <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_10-2018.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–10/2018 (xlsx, 216 KB)

@@ -243,7 +243,7 @@ const RevenueTypeTable = (props) => {
 
     return (
 		<table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
-			<thead>
+			<thead id="revenue-phase">
 				<tr>
 					<th className="arrow_box"><span>Commodity</span></th>
 					<th className="arrow_box"><span>1. Securing rights</span></th>

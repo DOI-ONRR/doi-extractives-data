@@ -3,6 +3,13 @@ unique_id: ND
 title: North Dakota
 FIPS: '38'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 3.9% of all land in North Dakota.
+tag:
+- oil
+- gas
+- coal
+- North Dakota
+
 priority: true
 
 # is_cropped forces the default county map view to use

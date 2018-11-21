@@ -25,10 +25,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-sass',
-    `gatsby-transformer-yaml`,
-    'gatsby-transformer-remark',
-    'gatsby-transformer-excel',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: [`${__dirname}/src/styles`],
+      },
+    },
+    
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.
@@ -56,6 +59,14 @@ module.exports = {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown/`,
       },
-    },                                                              
+    },  
+    `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
+    'gatsby-transformer-excel',                                                            
   ],
 };

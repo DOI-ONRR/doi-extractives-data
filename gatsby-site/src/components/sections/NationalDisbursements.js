@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Link from '../utils/temp-link';
 
 import { connect } from 'react-redux';
-import { selectYear } from '../../store/reducers/disbursements';
+import { selectYear } from '../../state/reducers/disbursements';
 
 import slugify from 'slugify';
 import lazy from 'lazy.js';
@@ -14,7 +14,7 @@ import utils from '../../js/utils';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
 import StickyHeader from '../layouts/StickyHeader';
-import YearSelector from '../atoms/YearSelector';
+import YearSelector from '../selectors/YearSelector';
 import StackedBarSingleChartTableRow from '../tables/StackedBarSingleChartTableRow';
 
 import fundedByCongress from '../../data/funded_by_congress.yml';
@@ -74,8 +74,8 @@ class NationalDisbursements extends React.Component{
 		let noDataExplanation = fundExplanation[this.state.year];
 
 		return (
-			<section id="federal-disbursements">
-				<h2>Federal disbursements</h2>
+			<section>
+				<h2 id="federal-disbursements">Federal disbursements</h2>
 
 				<p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
 					
@@ -95,7 +95,7 @@ class NationalDisbursements extends React.Component{
 	                <YearSelector years={this.state.years} classNames="flex-row-icon" selectYearAction={selectYear} />
 	            </StickyHeader>
 
-	            <table className="article_table">
+	            <table headerId="recipients" className="article_table">
 	            	<thead>
 	            		<tr>
 		            		<th>Recipient</th>

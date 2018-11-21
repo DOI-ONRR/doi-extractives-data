@@ -1,4 +1,5 @@
-*.css.map
+
+gatsby-public*.css.map
 *.db
 *.db-journal
 *.log

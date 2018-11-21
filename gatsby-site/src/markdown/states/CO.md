@@ -3,6 +3,13 @@ unique_id: CO
 title: Colorado
 FIPS: 08
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 35.9% of all land in Colorado.
+tag:
+- oil
+- coal
+- gas
+- Colorado
+
 opt_in: true
 
 state_revenue_year: 2016
@@ -45,7 +52,7 @@ The [Colorado Department of Natural Resources](http://dnr.state.co.us/Pages/DNRD
 * The Colorado [Oil and Gas Conservation Commission](http://cogcc.state.co.us/#/home) ensures that oil and gas wells and operations comply with state law. It is involved in all stages of extraction—issuing exploration permits, auctioning leases, addressing incidents/complaints, enforcing rules and regulations, collecting levies, etc. The commission is governed by [rules and regulations](http://cogcc.state.co.us/#/overview), runs a [data portal](http://cogcc.state.co.us/data.html#/cogis), and publishes [reports](http://cogcc.state.co.us/library.html#/areareports).
 * The [Division of Reclamation, Mining, and Safety](http://mining.state.co.us/Pages/Home.aspx) works to protect the public, miners, and the environment during current mining operations. It holds responsibility for restoring abandoned mines and ensuring that all mined land is reclaimed to beneficial use. It works to achieve these goals through [four major programs](http://mining.state.co.us/PROGRAMS/Pages/default.aspx): coal regulatory program, minerals regulatory program, inactive mine reclamation program, and mine safety and training program. The commission is governed by [rules and regulations](http://mining.state.co.us/Rules/Pages/home.aspx) and publishes [data and reports](http://mining.state.co.us/Reports/Pages/default.aspx)
 
-The [Colorado Department of Public Health and Environment](https://www.colorado.gov/pacific/cdphe (CDPHE) plays a role in regulating oil and gas operations. CDPHE deals primarily with:
+The [Colorado Department of Public Health and Environment](https://www.colorado.gov/pacific/cdphe) (CDPHE) plays a role in regulating oil and gas operations. CDPHE deals primarily with:
 * [Air emission](https://www.colorado.gov/pacific/cdphe/emissions-requirements-oil-and-gas-industry) requirements for the oil and gas industry
 * [Water quality](https://www.colorado.gov/pacific/cdphe/categories/services-and-information/environment/water-quality) and stormwater discharge permits for oil and gas facilities
 * [Hazardous, radioactive, and solid waste](https://www.colorado.gov/pacific/cdphe/categories/services-and-information/environment/waste-management-and-recycling) requirements affecting oil and gas facilities

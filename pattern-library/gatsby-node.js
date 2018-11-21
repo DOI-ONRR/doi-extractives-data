@@ -45,6 +45,9 @@ function processComponentNode({ node, getNode, boundActionCreators }) {
     return;
   }
 
+  //console.log(node.displayName)
+
+
   // Grab the parent node to determine filesystem information
   const fileNode = getNode(node.parent);
 
@@ -56,6 +59,8 @@ function processComponentNode({ node, getNode, boundActionCreators }) {
   if (fileNode.sourceInstanceName !== 'components') {
     return;
   }
+
+
 
   // Use the absolute path to the component's directory as the Id.
   const componentId = fileNode.dir;
@@ -146,16 +151,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 .map(edge => edge.node)
                 .find(node => node.displayName === componentName);
 
-            console.log(componentMetadataNode);
+           
 
             // TODO we shouldn't require the componentMetadataNode to exist,
             // but that's the way this was orignally written. This should just
             // be a warning, not an error.
             if (!componentMetadataNode) {
-              throw new Error(`Could not find metadata for ${componentId}. You may have a syntax
+              //console.log(result.data.allComponentMetadata.edges);
+              throw new Error(`Could not find metadata for ${componentName}. You may have a syntax
                                error in the JavaScript preventing parsing.`);
             }
-            console.log(markdownEdge);
+
             return Object.assign({}, componentMetadataNode, {
               url: `/components/${componentMetadataNode.displayName.toLowerCase()}/`,
               html: markdownEdge.node.html,

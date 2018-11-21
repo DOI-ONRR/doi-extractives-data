@@ -5,14 +5,14 @@ import lazy from 'lazy.js';
 
 import ALL_US_STATES_EXPORTS from '../../data/state_exports.yml'; 
 
-import ChartTitle from 'components/molecules/ChartTitle';
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import RevenueTypeTable from 'components/locations/RevenueTypeTable';
-import RevenueProcessTable from 'components/locations/RevenueProcessTable';
-import StateRevenue from 'components/locations/opt_in/StateRevenue';
+import ChartTitle from '../charts/ChartTitleCollapsible';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import RevenueTypeTable from '../locations/RevenueTypeTable';
+import RevenueProcessTable from '../locations/RevenueProcessTable';
+import StateRevenue from '../locations/opt_in/StateRevenue';
 
 import utils from '../../js/utils';
 
@@ -23,7 +23,7 @@ const SectionExports = (props) => {
     const usStateData = props.usStateMarkdown.frontmatter;
     const usStateFields = props.usStateMarkdown.fields || {};
 
-	const usStateExports = ALL_US_STATES_EXPORTS[usStateData.unique_id].commodities;
+	const usStateExports = (ALL_US_STATES_EXPORTS[usStateData.unique_id]) ? ALL_US_STATES_EXPORTS[usStateData.unique_id].commodities : undefined;
 
 	return(
 		<section id="exports" is="year-switcher-section" class="economic exports">

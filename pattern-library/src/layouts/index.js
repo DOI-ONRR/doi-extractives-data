@@ -1,8 +1,6 @@
 import React from "react"
 import {Provider} from 'react-redux';
 
-import createStore from '../../../gatsby-site/src/store/create-store';
-
 // Import NRRD styles
 // TODO these apply to the entire pattern library. Really we want the pattern
 // library to have it's own theme to avoid distracting from the components and
@@ -14,7 +12,6 @@ import '../../../gatsby-site/src/styles/_main.scss';
 import SideNav from '../components/side-nav';
 import styles from './styles.module.scss';
 
-const store = createStore();
 
 class DefaultLayout extends React.Component {
   constructor(props) {
@@ -39,16 +36,14 @@ class DefaultLayout extends React.Component {
     const { components, docs } = this.state;
 
     return (
-      <Provider store={store}>
-        <div className={styles.defaultLayout}>
-          <div className={styles.main}>
-            {children()}
-          </div>
-          <aside className={styles.sidebar}>
-            <SideNav components={components} docs={docs} />
-          </aside>
+      <div className={styles.defaultLayout}>
+        <div className={styles.main}>
+          {children()}
         </div>
-      </Provider>
+        <aside className={styles.sidebar}>
+          <SideNav components={components} docs={docs} />
+        </aside>
+      </div>
     );
   }
 }

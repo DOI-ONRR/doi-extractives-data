@@ -220,10 +220,15 @@ const RevenueTypeTable = (props) => {
 		let revenueTypeValues = {};
 
 		revenueTypeValues.OilGas = getYearValueForCommodityRevenueType(oilAndGasCommodityValues[type], props.year);
-		revenueTypeValues.Oil = getYearValueForCommodityRevenueType(revenueTypes.Oil[type], props.year);
-		revenueTypeValues.Gas = getYearValueForCommodityRevenueType(revenueTypes.Gas[type], props.year);
-		revenueTypeValues.NGL = getYearValueForCommodityRevenueType(revenueTypes.NGL[type], props.year);
-		revenueTypeValues.OilShale = getYearValueForCommodityRevenueType(revenueTypes['Oil Shale'][type], props.year);
+		revenueTypeValues.Oil = (revenueTypes.Oil) && getYearValueForCommodityRevenueType(revenueTypes.Oil[type], props.year);
+		revenueTypeValues.Gas = (revenueTypes.Gas) && getYearValueForCommodityRevenueType(revenueTypes.Gas[type], props.year);
+		revenueTypeValues.NGL = (revenueTypes.NGL) && getYearValueForCommodityRevenueType(revenueTypes.NGL[type], props.year);
+		if(revenueTypes['Oil Shale'] !== undefined) {
+			revenueTypeValues.OilShale = getYearValueForCommodityRevenueType(revenueTypes['Oil Shale'][type], props.year);
+		}
+		else {
+			revenueTypeValues.OilShale = 0;
+		}
 
 		revenueTypeValues.Sum = revenueTypeValues.OilGas +
 							revenueTypeValues.Oil +
@@ -238,7 +243,7 @@ const RevenueTypeTable = (props) => {
 
     return (
 		<table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
-			<thead>
+			<thead id="revenue-phase">
 				<tr>
 					<th className="arrow_box"><span>Commodity</span></th>
 					<th className="arrow_box"><span>1. Securing rights</span></th>
@@ -298,7 +303,7 @@ const RevenueTypeTable = (props) => {
 				    </tr>
 				    {
 				    	Lazy(revenueTypes).toArray().map((commodity, index) => {
-				    		let commodityName = utils.getDisplayName(commodity[0]);
+				    		let commodityName = utils.getDisplayName_CommodityName(commodity[0]);
 				    		let commodityValues = commodity[1];
 				    		if(Lazy(otherProductCommodities).contains(commodity[0]) && commodityValues.All[props.year]) {
 				    			return (<RevenueTypeTableRow key={index} commodityName={commodityName} commodityData={commodityValues} year={props.year} />);
@@ -318,7 +323,7 @@ const RevenueTypeTable = (props) => {
 					        { windExists && <span className="icon"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName('All')} commodityData={revenueTypes['All']} year={props.year} />
+				    <RevenueTypeTableRow isNationalPage={props.isNationalPage} commodityName={utils.getDisplayName_CommodityName('All')} commodityData={revenueTypes['All']} year={props.year} />
 				</tbody>
 			}	
 

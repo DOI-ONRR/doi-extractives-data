@@ -5,15 +5,15 @@ import Link from 'components/utils/temp-link';
 import utils from 'js/utils';
 import lazy from 'lazy.js';
 
-import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
-import DataAndDocs from 'components/layouts/DataAndDocs';
-import GlossaryTerm from 'components/utils/glossary-term.js';
-import {filterTerms} from 'components/utils/Glossary';
-import RevenueTypeTable from 'components/locations/RevenueTypeTable';
-import RevenueProcessTable from 'components/locations/RevenueProcessTable';
+import StickyHeader from '../layouts/StickyHeader';
+import YearSelector from '../selectors/YearSelector';
+import DataAndDocs from '../layouts/DataAndDocs';
+import GlossaryTerm from '../utils/glossary-term.js';
+import {filterTerms} from '../utils/Glossary';
+import RevenueTypeTable from '../locations/RevenueTypeTable';
+import RevenueProcessTable from '../locations/RevenueProcessTable';
 
-import ChartTitle from 'components/molecules/ChartTitle';
+import ChartTitle from '../charts/ChartTitleCollapsible';
 
 import iconCirclePlus from "img/icons/icon-circled-plus.svg";
 import iconCircleMinus from "img/icons/icon-circled-minus.svg";
@@ -119,7 +119,7 @@ const NationalRevenue = (props) => {
                     {lazy(REVENUE_COMMODITIES).toArray().map((commodity, index) => {
                             let annualRevenue = commodity[1];
                             let revenue = annualRevenue[year] || 0;
-                            let commodityName = utils.getDisplayName(commodity[0]);
+                            let commodityName = utils.getDisplayName_CommodityName(commodity[0]);
                             let commoditySlug = utils.formatToSlug(commodity[0]);
                             let chartToggle = "revenue-figures-chart-"+commoditySlug;
 

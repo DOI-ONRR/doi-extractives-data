@@ -1,0 +1,50 @@
+@value colors: "../../../css-global/colors.css";
+@value gray-light, green-dark, green-light, green-land from colors;
+
+.chartLegendStandard {
+	border: none;
+	font-size: 13px;
+	width: 100%;
+}
+
+.chartLegendStandard thead {
+	border-bottom: 2px solid gray-light;
+}
+
+.chartLegendStandard th:nth-child(2) {
+	text-align: right;
+}
+
+.chartLegendStandard tr {
+	border-bottom: 1px solid gray-light;
+}
+
+.chartLegendStandard .chartLegendStandard_TotalRow {
+	border-bottom: none;
+}
+
+.chartLegendStandard td {
+	border: none;
+}
+
+.chartLegendStandard td:nth-child(1) {
+	width: 20px;
+	vertical-align: middle;
+}
+
+.chartLegendStandard td:nth-child(3) {
+	text-align: right;
+}
+
+.chartLegendStandard div {
+	width: 15px;
+	height: 15px;
+}
+
+.chartLegendStandard_TotalRow {
+	font-weight: 700;
+}
+
+.chartLegendStandard_TotalRow td:nth-child(2){
+	text-align: right;
+}

@@ -1,26 +1,20 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {Provider} from 'react-redux';
 
-import createStore from 'store/create-store';
-
-import Banner from 'components/layouts/banner';
-import Header from 'components/layouts/header';
-import Footer from 'components/layouts/footer';
-import Glossary from 'components/utils/Glossary';
+import {Banner} from '../components/layouts/Banner';
+import {Header} from '../components/layouts/Header';
+import {Footer} from '../components/layouts/Footer';
+import Glossary from '../components/utils/Glossary';
 
 import "styles/_main.scss";
 import "styles/print.scss";
 
 import { withPrefixSVG } from 'components/utils/temp-link';
 
-const store = createStore();
-
 export default ({ data, children}) => {
   let meta_image = withPrefixSVG("/img/unfurl_image.png");
 
   return (
-    <Provider store={store}>
       <div>
         <Helmet
           meta={[
@@ -76,10 +70,9 @@ export default ({ data, children}) => {
           {children()}
         </main>
 
-        <Footer siteMetadata={data.site.siteMetadata} />
+        <Footer version={data.site.siteMetadata.version} />
 
       </div>
-    </Provider>
   );
 }
 
@@ -94,5 +87,6 @@ export const query = graphql`
       }
     }
   }
+
 `;
 

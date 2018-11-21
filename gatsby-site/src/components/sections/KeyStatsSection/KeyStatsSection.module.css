@@ -1,0 +1,228 @@
+@value colors: "../../../css-global/colors.css";
+@value gray-blue-dark, gray-blue-mid, gray-blue-mid-light, blue-mid-light, blue-dark, blue-mid, gray-light, green-light, black-light from colors;
+
+@value federalOffshoreColor: gray-blue-mid;
+@value federalOnshoreColor: gray-blue-dark;
+@value nativeAmericanColor: gray-blue-mid-light;
+@value federalOffshoreColor_selected: blue-mid;
+@value federalOnshoreColor_selected: blue-dark;
+@value nativeAmericanColor_selected: blue-mid-light;
+
+.root{}
+
+.chartBar {
+	cursor: pointer;
+}
+
+.federalOnshore {
+	background-color: federalOnshoreColor_selected;
+	fill: federalOnshoreColor;
+}
+.federalOffshore {
+	background-color: federalOffshoreColor_selected;
+	fill: federalOffshoreColor;
+}
+.federalOnshoreOffshore {
+	fill: url("#onshore-offshore-pattern");
+}
+.nativeAmerican {
+	background-color: nativeAmericanColor_selected;
+	fill: nativeAmericanColor;
+}
+
+
+
+.chartBar[selected=true] .federalOnshore{
+	fill: federalOnshoreColor_selected;
+}
+.chartBar[selected=true] .federalOffshore{
+	fill: federalOffshoreColor_selected;
+}
+.chartBar[selected=true] .federalOnshoreOffshore{
+	fill: url("#onshore-offshore-pattern-selected");
+}
+.chartBar[selected=true] .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+}
+
+.chartBar:hover .federalOnshore{
+	fill: federalOnshoreColor_selected;
+	opacity: 0.8;
+}
+
+.chartBar:hover .federalOffshore{
+	fill: federalOffshoreColor_selected;
+	opacity: 0.8;
+}
+.chartBar:hover .federalOnshoreOffshore{
+	fill: url("#onshore-offshore-pattern-selected");
+	opacity: 0.8;
+}
+.chartBar:hover .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
+
+.root h2 {
+	border-bottom: 10px solid green-light;
+	padding-bottom: 0.7rem;
+}
+
+.production {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.productChartContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.production [is="chart"]{
+	display: inline-block;
+	width: 32%;
+	min-width: 300px;
+}
+
+
+.production .sectionTitle div:last-child{
+	float: right;
+}
+
+.revenueDisbursementsSection {
+	display: inline-grid;
+	-ms-grid-columns: 48.5% 3% 48.5%;
+	grid-template-columns: repeat(2, [col-start] 1fr);
+	grid-gap: 0 3%;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+/* added for ie 11 compatatibility */
+.itemDisbursements{
+	-ms-grid-column: 3;
+}
+
+.itemTitle {
+	grid-row: 1;
+}
+
+.itemDesc {
+	grid-row: 2;
+	margin-bottom: 0.7rem;
+}
+
+.itemLink {
+	grid-row: 3;
+	margin-bottom: 0.7rem;
+}
+
+.itemToggle {
+	grid-row: 4;
+	margin-bottom: 0.5rem;
+}
+
+.itemChart {
+	grid-row: 5;
+}
+
+.sectionTitle {
+	margin-bottom: 10px;
+}
+
+.sectionTitle div{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.toggle {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.toggle div:first-child{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.dropdown {
+	display: inline-block;
+	margin-left: 20px;
+}
+.dropdown div:first-child{
+	display: inline-block;
+	margin-left: 10px;
+	width: 260px;
+}
+
+.itemToggle .dropdown {
+	display: block;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.productChartContainer {
+	  flex-wrap: wrap;
+	}
+	.production [is="chart"]{
+		width: 47%;
+		min-width: 100px;
+	}
+	
+	.revenueDisbursementsSection {
+		-ms-grid-columns: 47% 6% 47%;
+		grid-gap: 0 6%;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	.production [is="chart"]{
+		width: 100%;
+		min-width: 100px;
+	}
+	.revenueDisbursementsSection {
+		display: flow-root;
+		-ms-grid-columns: 100%;
+		grid-template-columns: repeat(1, [col-start] 1fr);
+	}
+	.production .sectionTitle div:last-child{
+		display: block;
+		float: none;
+	}
+	.itemDisbursements{
+		-ms-grid-column: 1;
+	}
+
+	.itemTitle.itemDisbursements {
+		grid-row: 6;
+		margin-top: 4rem;
+	}
+
+	.itemDesc.itemDisbursements {
+		grid-row: 7;
+		margin-bottom: 0.7rem;
+	}
+
+	.itemLink.itemDisbursements {
+		grid-row: 8;
+		margin-bottom: 0.7rem;
+	}
+
+	.itemToggle.itemDisbursements {
+		grid-row: 9;
+		margin-bottom: 0.5rem;
+	}
+
+	.itemChart.itemDisbursements {
+		grid-row: 10;
+	}
+	.dropdown {
+		margin-left: 0px;
+	}
+	.dropdown div:first-child{
+		width: 212px;
+	}
+}

@@ -1,7 +1,7 @@
 ---
-title: Tribal Lands | Revenue
+title: Native American Lands | Revenue
 layout: content
-permalink: /how-it-works/tribal-revenue/
+permalink: /how-it-works/native-american-revenue/
 nav_description: Jump to a section
 nav_items:
   - name: introduction
@@ -14,7 +14,7 @@ nav_items:
     title: Revenue data
   - name: audits-and-assurances
     title: Audits and assurances
-description: Natural resources are increasingly a key source of income for many Native American tribes.
+description: Natural resources are increasingly a key source of income for many Native American tribes and individuals.
 tag:
 - how it works
 - production
@@ -23,10 +23,13 @@ tag:
 - wind
 - water power
 - biomass
+- Native American
+- Indian
+- tribal
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
-title_display: Revenue from natural resources on Indian land
+title_display: Revenue from natural resources on Native American land
 selector: list
 revenue_types:
   Bonus: Bonus
@@ -42,11 +45,11 @@ revenue_types:
 
 {% include selector.html %}
 
-Much like [federal revenue]({{ site.baseurl }}/explore/#revenue), revenue from natural resource extraction on tribal land is collected in each phase of the production process (for instance, companies pay bonuses to secure rights, rents during exploration, and royalties once production begins).
+Much like [federal revenue]({{ site.baseurl }}/explore/#revenue), revenue from natural resource extraction on Native American land is collected in each phase of the production process (for instance, companies pay bonuses to secure rights, rents during exploration, and royalties once production begins).
 
 ## Revenue collection
 
-Several organizations within the Department of the Interior have roles and responsibilities in collecting revenue from production on Indian land:
+Several organizations within the Department of the Interior have roles and responsibilities in collecting revenue from production on Native American land:
 
 <table class="article_table">
   <tbody>
@@ -69,7 +72,7 @@ Several organizations within the Department of the Interior have roles and respo
       <td>Solid minerals</td>
       <td>BIA bills, collects, and accounts for bonuses.</td>
       <td>BIA bills, collects, and accounts for rental prior to production.</td>
-      <td>BIA bills, collects, and accounts for rentals post-production. Companies submit royalty and production reports to ONRR, but ONRR may not collect royalty payments unless BIA requests it. Companies deposit payments into OST- or tribal-owned lockboxes or mail checks to individual allottees. BIA collects other collections, such as water payments or payments for surface damages.</td>
+      <td>BIA bills, collects, and accounts for rentals post-production. Companies submit royalty and production reports to ONRR, but ONRR may not collect royalty payments unless BIA requests it. Companies deposit payments into OST- or Native-American-owned lockboxes or mail checks to individual allottees. BIA collects other collections, such as water payments or payments for surface damages.</td>
     </tr>
   </tbody>
 </table>
@@ -86,13 +89,13 @@ ONRR provides a financial distribution report called an Explanation of Payment r
 
 ## Revenue data
 
-The federal government may only release information about natural resource extraction and revenue in aggregate across all Indian lands. This is because of confidentiality and proprietary constraints on tribal data. These constraints arise from treaties, laws, and regulations that the government consistently and uniformly applies.
+The federal government may only release information about natural resource extraction and revenue in aggregate across all Native American lands. This is because of confidentiality and proprietary constraints on Native American data. These constraints arise from treaties, laws, and regulations that the government consistently and uniformly applies.
 
 In the tables below, revenue may be grouped differently depending on the stage of production; see [documentation about the federal revenue dataset]({{ site.baseurl }}/downloads/federal-revenue-by-location/) for more detailed explanations.
 
 {% for year_revenue in site.data.tribal_revenue reversed %}
 
-### Revenue from natural resources on Indian land (FY {{ year_revenue[0] }})
+### Revenue from natural resources on Native American land (FY {{ year_revenue[0] }})
 
 <table class="table-basic u-margin-top u-margin-bottom">
   <thead>
@@ -120,8 +123,8 @@ In the tables below, revenue may be grouped differently depending on the stage o
 
 ## Audits and assurances
 
-Tribal revenue data, like federal revenue data, is subject to standards, audits, and assurances. These include:
+Native American revenue data, like federal revenue data, is subject to standards, audits, and assurances. These include:
 
-- The [Onshore Energy and Mineral Lease Management Interagency Standard Operating Procedures (PDF)](https://www.onrr.gov/about/pdfdocs/FINAL%20Interagency%20SOP%20-%2009-23-13.pdf) outlines the procedures that BLM, ONRR, and BIA follow to verify and enforce compliance for production and revenue collection from Indian lands
+- The [Onshore Energy and Mineral Lease Management Interagency Standard Operating Procedures (PDF)](https://www.onrr.gov/about/pdfdocs/FINAL%20Interagency%20SOP%20-%2009-23-13.pdf) outlines the procedures that BLM, ONRR, and BIA follow to verify and enforce compliance for production and revenue collection from Native American lands
 - The [Indian Self-Determination and Education Act (Public Law 93-638)](https://www.doi.gov/ost/tribal_beneficiaries/contracting) and Section 202 of the [Federal Oil & Gas Royalty Management Act of 1982 (PDF)](https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf) (FOGRMA) outline how DOI may contract with a tribe to perform compliance activities
 - The Office of the Special Trustee for American Indians (OST) [Annual Report of the Tribal and Other Trust Funds and Individual Indian Monies Trust Funds Managed by the U.S. Department of the Interior OST](https://www.doi.gov/ost) includes the annual auditor’s report for tribal and other trust funds under the [American Indian Trust Fund Management Reform Act of 1994 (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/ost/trust_documents/upload/American-IndianTrustFundManagementReformActof1994.pdf). [Archived audits are available here](https://www.doi.gov/ost/trust_documents/Annual-Audits).

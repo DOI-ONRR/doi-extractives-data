@@ -1,8 +1,8 @@
 ---
-title: Federal Revenue by Location | Documentation
+title: Revenue by Year | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-location/
-title_display: 'Federal Revenue by Location'
+title_display: 'Revenue by Year'
 nav_items:
   - name: introduction
     title: Top
@@ -46,6 +46,8 @@ tag:
 - By location
 ---
 
+{% include revenue-nav.html %}
+
 > There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all {{ "accounting year" | term }} data.
 
 Download calendar year data:
@@ -80,7 +82,7 @@ Download fiscal year data:
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
 
 ### Why are some values negative?
 

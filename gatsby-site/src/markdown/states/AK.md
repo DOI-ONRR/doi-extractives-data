@@ -3,6 +3,12 @@ unique_id: AK
 title: Alaska
 FIPS: '02'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 61.2% of all land in Alaska. Alaska also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy.
+tag:
+- oil
+- offshore
+- Alaska
+
 # this triggers whitelisting of nearby states to render in county maps
 # listing WA to ensure that neighbors is interpreted as a list
 neighbors:
@@ -18,7 +24,7 @@ state_revenue_year: 2016
 
 locality_name: 'Borough or census area'
 
-nearby_offshore_region: '<a href="{{ site.baseurl }}/explore/offshore-alaska/">offshore Alaska</a>'
+nearby_offshore_region: '<Link to="/explore/offshore-alaska/">offshore Alaska</Link>'
 
 case_study_link: |
     For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/).

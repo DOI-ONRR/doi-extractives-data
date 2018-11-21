@@ -7,7 +7,7 @@ import lazy from 'lazy.js';
 import utils from 'js/utils';
 
 import StickyHeader from 'components/layouts/StickyHeader';
-import YearSelector from 'components/atoms/YearSelector';
+import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
 

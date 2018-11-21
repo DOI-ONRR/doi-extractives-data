@@ -1,8 +1,8 @@
 ---
-title: Federal Revenue by Company | Documentation
+title: Revenue by Company | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-company/
-title_display: Federal Revenue by Company
+title_display: Revenue by Company
 nav_items:
   - name: introduction
     title: Top
@@ -43,13 +43,14 @@ tag:
 - By company
 ---
 
+{% include revenue-nav.html %}
 
 > {{ page.description }}
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
     <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2017.xlsx">{% include svg/icon-download.svg %}
-    Full dataset (xlsx, 440 KB)</a></li>
+    Full dataset (xlsx, 501 KB)</a></li>
   </ul>
 </p>
 

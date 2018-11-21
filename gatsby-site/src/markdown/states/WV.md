@@ -3,6 +3,11 @@ unique_id: WV
 title: West Virginia
 FIPS: '54'
 
+description: Much of the data on this site is limited to natural resource extraction on federal land, which represents 7.4% of all land in West Virginia.
+tag:
+- coal
+- West Virginia
+
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates
 is_cropped: true

@@ -14,7 +14,7 @@ const stackedBar = {
 		let stack = d3.stack()
 			.keys(self.getOrderedKeys(props.displayNames, state))
 			.offset(d3.stackOffsetNone);
-
+			
 		var series = stack(state);
 
 		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);

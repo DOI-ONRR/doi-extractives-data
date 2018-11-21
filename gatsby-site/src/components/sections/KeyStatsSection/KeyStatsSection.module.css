@@ -186,6 +186,7 @@
 	.revenueDisbursementsSection {
 		display: flow-root;
 		-ms-grid-columns: 100%;
+		grid-template-columns: repeat(1, [col-start] 1fr);
 	}
 	.production .sectionTitle div:last-child{
 		display: block;

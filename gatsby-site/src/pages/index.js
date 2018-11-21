@@ -81,7 +81,7 @@ class HomePage extends React.Component {
           <Tab id="tab-production" name="Production"> 
             <div className={styles.tabContentContainer} >
               <div className={styles.tabContent} >
-                <p>The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters and Native American lands and energy production for all owners.</p>
+                <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters, Native American lands, and nationwide production on all lands and waters.</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
                     <BlueButton to="/how-it-works/#production">How production works</BlueButton>
@@ -102,7 +102,7 @@ class HomePage extends React.Component {
           <Tab id="tab-revenue" name="Revenue"> 
             <div className={styles.tabContentContainer} >
               <div className={styles.tabContent} >
-                <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on the ownership of the resources. They are usually called "revenue" because they represent revenue to the American public.</p>
+                <p>Companies pay to extract natural resources on federal lands and waters. These payments include bonuses, rents, and royalties, resulting in revenue to the American public. The Office of Natural Resources Revenue (ONRR) collects and distributes this revenue.</p>
                 <div className={styles.tabContentBottomContainer}>
                   <div>
                     <BlueButton to="/how-it-works/revenues">How revenue works</BlueButton>
@@ -112,7 +112,7 @@ class HomePage extends React.Component {
               <div className={styles.tabContentAside}>
                 <h5>Explore revenue data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink to="/explore/#federal-revenue">By production phase</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#revenue-phase">By production phase</ExploreDataLink>
                   <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
                   <ExploreDataLink to="/how-it-works/federal-revenue-by-company/">By company</ExploreDataLink>
                   <ExploreDataLink to="/how-it-works/native-american-revenue/">Native American revenue</ExploreDataLink>
@@ -134,7 +134,7 @@ class HomePage extends React.Component {
               <div className={styles.tabContentAside}>
                 <h5>Explore disbursements data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink to="/explore/#federal-disbursements">By recipient</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#recipients">By recipient</ExploreDataLink>
                   <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>

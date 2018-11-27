@@ -55,7 +55,7 @@ class ChartLegendStandard extends React.Component {
 											<div className={(styleMap && styleMap[key])} />
 										</td>
 										<td>
-											{this.getKeyDisplayName(key)}:
+											{this.getKeyDisplayName(key)}
 										</td>
 										<td>
 											{ this.props.dataFormatFunc ?
@@ -74,7 +74,7 @@ class ChartLegendStandard extends React.Component {
 											<div className={(styleMap && styleMap[key])} />
 										</td>
 										<td>
-											{this.getKeyDisplayName(key)}:
+											{this.getKeyDisplayName(key)}
 										</td>
 										<td>
 											-
@@ -86,7 +86,7 @@ class ChartLegendStandard extends React.Component {
 					}
 					<tr className={styles.chartLegendStandard_TotalRow}>
 						<td colSpan="2">
-							Total:
+							Total
 						</td>
 						<td>
 							{ this.props.dataFormatFunc ?

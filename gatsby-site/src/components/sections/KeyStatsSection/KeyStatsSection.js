@@ -40,6 +40,11 @@ const CHART_STYLE_MAP = {
 
 const MAX_CHART_BAR_SIZE = 15;
 
+// Define filter and options for data
+const OPTIONS_PRODUCTION_VOLUMES_BY_YEAR = {
+	includeDisplayNames: true
+};
+
 class KeyStatsSection extends React.Component{
 
 	constructor(props){
@@ -82,12 +87,13 @@ class KeyStatsSection extends React.Component{
 
 	setStateForProductionVolumes(toggleValue, dropDownValue) {
 		if(toggleValue === TOGGLE_VALUES.Year) {
+
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, })
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR)
 			});
 		}
 		else {
@@ -185,7 +191,8 @@ class KeyStatsSection extends React.Component{
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].DisplayNames,
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].xAxisLabels,
+												legendLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].legendLabels,
 												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units+")",
 												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].LongUnits,
 												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units,
@@ -210,7 +217,7 @@ class KeyStatsSection extends React.Component{
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].DisplayNames,
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].xAxisLabels,
 												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units+")",
 												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].LongUnits,
 												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units,
@@ -235,7 +242,7 @@ class KeyStatsSection extends React.Component{
 									<div is="chart">
 										<StackedBarChartLayout 
 											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].DisplayNames,
+												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].xAxisLabels,
 												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units+")",
 												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].LongUnits,
 												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units,
@@ -381,7 +388,7 @@ export default connect(
   						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
   						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
   					}),
-  dispatch => ({	productionVolumesByYear: (key, filter) => dispatch(productionVolumesByYearAction(key, filter)),
+  dispatch => ({	productionVolumesByYear: (key, filter, options) => dispatch(productionVolumesByYearAction(key, filter, options)),
   								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter)),
   								revenuesByMonth: (key, filter) => dispatch(revenuesByMonthAction(key, filter)),
   								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter)),

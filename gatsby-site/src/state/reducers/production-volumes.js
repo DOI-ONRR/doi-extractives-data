@@ -32,7 +32,7 @@ const BY_MONTH = 'BY_MONTH_PRODUCTION_VOLUMES';
 
 // Define Action Creators 
 export const hydrate = (key, data) => ({ type: HYDRATE, payload: data,  key: key});
-export const byYear = (key, filter) => ({ type: BY_YEAR, payload: filter,  key: key});
+export const byYear = (key, filter, options) => ({ type: BY_YEAR, payload: {filter, options},  key: key});
 export const byMonth = (key, filter) => ({ type: BY_MONTH, payload: filter,  key: key});
 
 // Define Reducers
@@ -45,7 +45,7 @@ export default (state = initialState, action) => {
     	SourceData[key] = payload;
       return ({...state, ...getFiscalCalendarYear(key, payload, FiscalYear, CalendarYear), SourceData: SourceData});
     case BY_YEAR:
-      return ({...state, [key]:groupByYear(state.SourceData[key], payload) });
+      return ({...state, [key]:groupByYear(state.SourceData[key], payload.filter, payload.options) });
     case BY_MONTH:
       return ({...state, [key]:groupByMonth(state.SourceData[key], payload, state.FiscalYear[key], state.CalendarYear[key]) });
     default:
@@ -83,10 +83,11 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  * 
  * @returns {Object}
  **/
-const groupByYear = (source, filter) => {
+const groupByYear = (source, filter, options) => {
 	if(source === undefined) return source;
 
-	let displayNames;
+	let xAxisLabels;
+	let legendLabels;
 	let groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.ProductionYear")).map(e => ({[e[0]] : e[1] }) );
 
@@ -96,15 +97,19 @@ const groupByYear = (source, filter) => {
 
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.ProductionYear - b[Object.keys(b)[0]][0].data.ProductionYear));
 
-	if(filter) {
-		
+	if(options) {
 		// Get display names before we filter the data.
-		if(filter.displayName) {
-			displayNames = {};
+		if(options.includeDisplayNames) {
+			xAxisLabels = {};
+			legendLabels = {}
 			results.forEach((item) => {
-				displayNames[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+				legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
 			});
 		}
+	}
+
+	if(filter) {
 
 		// Set sub group name
 		if(filter.subGroupName) {
@@ -143,11 +148,13 @@ const groupByYear = (source, filter) => {
 
 	}
 
+
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					DisplayNames: displayNames,
+					xAxisLabels: xAxisLabels,
+					legendLabels: legendLabels,
 					GroupNames: groupNames};
 }
 
@@ -161,7 +168,7 @@ const groupByYear = (source, filter) => {
 const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 	if(source === undefined) return source;
 
-	let displayNames;
+	let xAxisLabels;
 	let groupNames;
 	let results = JSON.parse(JSON.stringify(source));
 
@@ -198,9 +205,9 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 		
 		// Get display names before we filter the data.
 		if(filter.displayName) {
-			displayNames = {};
+			xAxisLabels = {};
 			results.forEach((item) => {
-				displayNames[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
+				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
 			});
 		}
 
@@ -243,6 +250,6 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					DisplayNames: displayNames,
+					xAxisLabels: xAxisLabels,
 					GroupNames: groupNames};	
 }

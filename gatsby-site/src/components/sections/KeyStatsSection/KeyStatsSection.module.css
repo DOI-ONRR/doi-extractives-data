@@ -22,9 +22,6 @@
 	background-color: federalOffshoreColor_selected;
 	fill: federalOffshoreColor;
 }
-.federalOnshoreOffshore {
-	fill: url("#onshore-offshore-pattern");
-}
 .nativeAmerican {
 	background-color: nativeAmericanColor_selected;
 	fill: nativeAmericanColor;
@@ -37,9 +34,6 @@
 }
 .chartBar[selected=true] .federalOffshore{
 	fill: federalOffshoreColor_selected;
-}
-.chartBar[selected=true] .federalOnshoreOffshore{
-	fill: url("#onshore-offshore-pattern-selected");
 }
 .chartBar[selected=true] .nativeAmerican{
 	fill: nativeAmericanColor_selected;
@@ -54,15 +48,23 @@
 	fill: federalOffshoreColor_selected;
 	opacity: 0.8;
 }
-.chartBar:hover .federalOnshoreOffshore{
-	fill: url("#onshore-offshore-pattern-selected");
-	opacity: 0.8;
-}
 .chartBar:hover .nativeAmerican{
 	fill: nativeAmericanColor_selected;
 	opacity: 0.8;
 }
 
+.federalOnshoreHover {
+	background-color: federalOnshoreColor_selected;
+	opacity: 0.8;
+}
+.federalOffshoreHover {
+	background-color: federalOffshoreColor_selected;
+	opacity: 0.8;
+}
+.nativeAmericanHover {
+	background-color: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
 
 .root h2 {
 	border-bottom: 10px solid green-light;

@@ -147,7 +147,7 @@ const groupByYear = (source, filter, options) => {
 		}
 
 	}
-
+	
 
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,

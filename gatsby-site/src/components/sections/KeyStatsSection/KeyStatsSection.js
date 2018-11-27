@@ -151,6 +151,35 @@ class KeyStatsSection extends React.Component{
 		});
 	}
 
+	getStackedBarChartLayout(dataKey) {
+		return (
+			<StackedBarChartLayout 
+				chartDisplayConfig = {{
+					xAxisLabels: this.state[dataKey].xAxisLabels,
+					legendLabels: this.state[dataKey].legendLabels,
+					title: this.state[dataKey].ProductName+" ("+this.state[dataKey].Units+")",
+					longUnits: this.state[dataKey].LongUnits,
+					units: this.state[dataKey].Units,
+					styleMap: CHART_STYLE_MAP,
+					sortOrder: CHART_SORT_ORDER,
+				}}
+
+				chartLegendHeaderName={CHART_HEADER_NAME}
+
+				chartData={this.state[dataKey].Data}
+
+				chartLegendDataFormatFunc={utils.formatToCommaInt}
+
+				chartGroups={this.state[dataKey].GroupNames}
+
+				maxBarSize={MAX_CHART_BAR_SIZE}
+
+				{...getDefaultChartData(this.state[dataKey].Data)}
+				>
+			</StackedBarChartLayout>
+		);
+	}
+
 	render(){
 		return(
 	    <section className="slab-alpha ">
@@ -196,84 +225,17 @@ class KeyStatsSection extends React.Component{
 							<div className={styles.productChartContainer}>
 								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data &&
 									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].xAxisLabels,
-												legendLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].legendLabels,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartLegendHeaderName={CHART_HEADER_NAME}
-
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
+										{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY)}
 									</div>
 								}
 								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data &&
 									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].xAxisLabels,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartLegendHeaderName={CHART_HEADER_NAME}
-
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data)}
-											>
-										</StackedBarChartLayout>
+										{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY)}
 									</div>
 								}
 								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data &&
 									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].xAxisLabels,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartLegendHeaderName={CHART_HEADER_NAME}
-
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
+										{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY)}
 									</div>
 								}
 

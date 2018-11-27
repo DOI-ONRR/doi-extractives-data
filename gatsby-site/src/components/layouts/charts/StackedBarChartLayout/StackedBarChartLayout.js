@@ -49,12 +49,12 @@ class StackedBarChartLayout extends React.Component{
   }
 
   getChartLegend() {
-
+    let dataKey = this.state.chartDataKeyHovered || this.state.chartDataKeySelected;
     return (
       <ChartLegendStandard 
         headerName={this.props.chartLegendHeaderName} 
+        headerNameForValues={this.props.chartDisplayConfig.legendLabels && this.props.chartDisplayConfig.legendLabels[dataKey]}
         data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
-        dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
         dataFormatFunc={this.props.chartLegendDataFormatFunc}
         styleMap={this.getStyleMap()}
         sortOrder={this.props.chartDisplayConfig.sortOrder}

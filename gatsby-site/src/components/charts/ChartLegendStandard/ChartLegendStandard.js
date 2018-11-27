@@ -26,7 +26,7 @@ class ChartLegendStandard extends React.Component {
 	}
 
 	render() {
-		let {data, styleMap, units, sortOrder, headerName} = this.props;
+		let {data, dataFormatFunc, styleMap, units, sortOrder, headerName, headerNameForValues} = this.props;
 		// reverse the order to show from bottom to top per requirements
 		sortOrder = (sortOrder) ? sortOrder.slice().reverse() : Object.keys(data);
 
@@ -37,7 +37,7 @@ class ChartLegendStandard extends React.Component {
 				<thead>
       		<tr>
         		<th colSpan="2">{headerName || ""}</th>
-        		<th>{this.props.dataKey && this.props.dataKey+(units === "$" ? "" : " ("+units+")")}</th>
+        		<th>{headerNameForValues || ""}</th>
         	</tr>
       	</thead>
 				<tbody>
@@ -85,8 +85,8 @@ class ChartLegendStandard extends React.Component {
 							Total:
 						</td>
 						<td>
-							{ this.props.dataFormatFunc ?
-								this.props.dataFormatFunc(total)
+							{ dataFormatFunc ?
+								dataFormatFunc(total)
 								:
 								total
 							}
@@ -107,10 +107,12 @@ ChartLegendStandard.propTypes = {
 	displayNames: PropTypes.object,
 	/** Define the name of the header that display above the data keys **/
 	headerName: PropTypes.string,
+	/** Define the name of the header that display above the data values **/
+	headerNameForValues: PropTypes.string,
 	/** Specify the sort order of the data keys **/
 	sortOrder: PropTypes.array,
 	/** Map data keys to a style class **/
-	styleMap: PropTypes.styleMap,
+	styleMap: PropTypes.object,
 	/** Units label to display for the values */
 	units: PropTypes.string,
 }

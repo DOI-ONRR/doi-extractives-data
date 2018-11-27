@@ -39,7 +39,7 @@ class ChartLegend extends React.Component {
 											<div className={"chart-legend-"+utils.formatToSlug(key)} />
 										</td>
 										<td>
-											{this.getKeyDisplayName(key)}:
+											{this.getKeyDisplayName(key)}
 										</td>
 										<td>
 											{ this.props.dataFormatFunc ?
@@ -57,7 +57,7 @@ class ChartLegend extends React.Component {
 						<td>
 						</td>
 						<td>
-							Total:
+							Total
 						</td>
 						<td>
 							{ this.props.dataFormatFunc ?
@@ -72,7 +72,7 @@ class ChartLegend extends React.Component {
 							return (
 								<tr key={index} className="chart-legend-additional-data-row">
 									<td />
-									<td>{data.name}:</td>
+									<td>{data.name}</td>
 									<td>{data.value}</td>
 								</tr>)
 						})

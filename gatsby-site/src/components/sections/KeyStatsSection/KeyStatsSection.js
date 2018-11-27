@@ -29,6 +29,8 @@ const DROPDOWN_VALUES ={
 	Calendar: "calendar"
 }
 
+const CHART_HEADER_NAME = "Source";
+
 const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE,CONSTANTS.NATIVE_AMERICAN];
 
 const CHART_STYLE_MAP = {
@@ -36,6 +38,11 @@ const CHART_STYLE_MAP = {
 	[CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshore,
 	[CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshore,
 	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+	hover : {
+		[CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshoreHover,
+		[CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshoreHover,
+		[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
+	}
 };
 
 const MAX_CHART_BAR_SIZE = 15;
@@ -193,6 +200,8 @@ class KeyStatsSection extends React.Component{
 												sortOrder: CHART_SORT_ORDER,
 											}}
 
+											chartLegendHeaderName={CHART_HEADER_NAME}
+
 											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data}
 
 											chartLegendDataFormatFunc={utils.formatToCommaInt}
@@ -218,6 +227,8 @@ class KeyStatsSection extends React.Component{
 												sortOrder: CHART_SORT_ORDER,
 											}}
 
+											chartLegendHeaderName={CHART_HEADER_NAME}
+
 											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data}
 
 											chartLegendDataFormatFunc={utils.formatToCommaInt}
@@ -242,6 +253,8 @@ class KeyStatsSection extends React.Component{
 												styleMap: CHART_STYLE_MAP,
 												sortOrder: CHART_SORT_ORDER,
 											}}
+
+											chartLegendHeaderName={CHART_HEADER_NAME}
 
 											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data}
 
@@ -302,6 +315,8 @@ class KeyStatsSection extends React.Component{
 												sortOrder: CHART_SORT_ORDER,
 											}}
 
+											chartLegendHeaderName={CHART_HEADER_NAME}
+
 											chartData={this.state[CONSTANTS.REVENUES_ALL_KEY].Data}
 
 											chartLegendDataFormatFunc={utils.formatToDollarInt}
@@ -333,6 +348,8 @@ class KeyStatsSection extends React.Component{
 												sortOrder: CHART_SORT_ORDER,
 											}}
 
+											chartLegendHeaderName={CHART_HEADER_NAME}
+
 											chartData={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data}
 
 											chartLegendDataFormatFunc={utils.formatToDollarInt}
@@ -351,22 +368,6 @@ class KeyStatsSection extends React.Component{
 
 					</section>
 				</div>
-				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
-					<defs> 
-						<pattern id="onshore-offshore-pattern-selected" patternUnits="userSpaceOnUse" width="4" height="4"> 
-							<rect y="0" fill={styles.federalOnshoreColor_selected}  width="4" height="4"/>
-							<path fill={styles.federalOffshoreColor_selected}  d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
-						</pattern>
-					</defs>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
-					<defs> 
-						<pattern id="onshore-offshore-pattern" patternUnits="userSpaceOnUse" width="4" height="4"> 
-							<rect y="0" fill={styles.federalOnshoreColor} width="4" height="4"/>
-							<path fill={styles.federalOffshoreColor} d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
-						</pattern>
-					</defs>
-				</svg>
 
 			</section>
 		);

@@ -42,6 +42,27 @@ class StackedBarChartLayout extends React.Component{
     }
   }
 
+  getStyleMap(){
+    return (this.state.chartDataKeyHovered && 
+        (this.props.chartDisplayConfig.styleMap && this.props.chartDisplayConfig.styleMap.hover)) ? 
+        this.props.chartDisplayConfig.styleMap.hover : this.props.chartDisplayConfig.styleMap;
+  }
+
+  getChartLegend() {
+
+    return (
+      <ChartLegendStandard 
+        headerName={this.props.chartLegendHeaderName} 
+        data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
+        dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
+        dataFormatFunc={this.props.chartLegendDataFormatFunc}
+        styleMap={this.getStyleMap()}
+        sortOrder={this.props.chartDisplayConfig.sortOrder}
+        units={this.props.chartDisplayConfig.units} >
+      </ChartLegendStandard>
+    );
+  }
+
   render() {
     let props = this.props;
 
@@ -65,33 +86,21 @@ class StackedBarChartLayout extends React.Component{
         {this.state.chartLegendData &&
           <MediaQuery maxWidth={768}>
             <Accordion id={utils.formatToSlug(props.chartDisplayConfig.title)} text={["Show details", "Hide details"]}>
-              <ChartLegendStandard 
-                displayConfig={props.chartDisplayConfig}
-                header={props.chartLegendHeader} 
-                units={props.chartLegendUnits}
-                data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
-                dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
-                dataFormatFunc={props.chartLegendDataFormatFunc} >
-              </ChartLegendStandard>
+              {this.getChartLegend()}
             </Accordion>
           </MediaQuery>
         }
         {this.state.chartLegendData &&
           <MediaQuery minWidth={769}>
-            <ChartLegendStandard 
-              displayConfig={props.chartDisplayConfig}
-              header={props.chartLegendHeader}  
-              units={props.chartLegendUnits}
-              data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
-              dataKey={this.state.chartDataKeyHovered || this.state.chartDataKeySelected}
-              dataFormatFunc={props.chartLegendDataFormatFunc} >
-            </ChartLegendStandard>
+            {this.getChartLegend()}
           </MediaQuery>
         }
       </div>
     );
   }
 }
+
+
 
 StackedBarChartLayout.propTypes = {
     /** The object that contains properties for display */

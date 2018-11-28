@@ -49,8 +49,20 @@ const MAX_CHART_BAR_SIZE = 15;
 
 // Define filter and options for data
 const OPTIONS_PRODUCTION_VOLUMES_BY_YEAR = {
-	includeDisplayNames: true
+	includeDisplayNames: true,
+	subGroupName: CONSTANTS.CALENDAR_YEAR,
 };
+const FILTER_PRODUCTION_VOLUMES_BY_YEAR = {
+	sumBy:"ProductionCategory",
+	limit: 10,
+}
+const OPTIONS_PRODUCTION_VOLUMES_BY_MONTH = {
+	includeDisplayNames: true,
+};
+const FILTER_PRODUCTION_VOLUMES_BY_MONTH = {
+	sumBy:"ProductionCategory",
+	limit: 12,
+}
 
 class KeyStatsSection extends React.Component{
 
@@ -98,18 +110,24 @@ class KeyStatsSection extends React.Component{
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR)
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: 
+					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: 
+					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: 
+					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
 			});
 		}
 		else {
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
+				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: 
+					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
+				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: 
+					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
+				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: 
+					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
 
 			});
 		}
@@ -352,7 +370,7 @@ export default connect(
   						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
   					}),
   dispatch => ({	productionVolumesByYear: (key, filter, options) => dispatch(productionVolumesByYearAction(key, filter, options)),
-  								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter)),
+  								productionVolumesByMonth: (key, filter, options) => dispatch(productionVolumesByMonthAction(key, filter, options)),
   								revenuesByMonth: (key, filter) => dispatch(revenuesByMonthAction(key, filter)),
   								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter)),
   								disbursementsByYear: (key, filter) => dispatch(disbursementsByYearAction(key, filter)),

@@ -33,7 +33,7 @@ const BY_MONTH = 'BY_MONTH_PRODUCTION_VOLUMES';
 // Define Action Creators 
 export const hydrate = (key, data) => ({ type: HYDRATE, payload: data,  key: key});
 export const byYear = (key, filter, options) => ({ type: BY_YEAR, payload: {filter, options},  key: key});
-export const byMonth = (key, filter) => ({ type: BY_MONTH, payload: filter,  key: key});
+export const byMonth = (key, filter, options) => ({ type: BY_MONTH, payload: {filter, options},  key: key});
 
 // Define Reducers
 export default (state = initialState, action) => {
@@ -47,7 +47,7 @@ export default (state = initialState, action) => {
     case BY_YEAR:
       return ({...state, [key]:groupByYear(state.SourceData[key], payload.filter, payload.options) });
     case BY_MONTH:
-      return ({...state, [key]:groupByMonth(state.SourceData[key], payload, state.FiscalYear[key], state.CalendarYear[key]) });
+      return ({...state, [key]:groupByMonth(state.SourceData[key], payload.filter, payload.options, state.FiscalYear[key], state.CalendarYear[key]) });
     default:
       return state;
   }
@@ -147,7 +147,7 @@ const groupByYear = (source, filter, options) => {
 		}
 
 	}
-	
+
 
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,
@@ -165,10 +165,11 @@ const groupByYear = (source, filter, options) => {
  * Example format:
  * {"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]}
  **/
-const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
+const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 	if(source === undefined) return source;
 
 	let xAxisLabels;
+	let legendLabels;
 	let groupNames;
 	let results = JSON.parse(JSON.stringify(source));
 
@@ -201,15 +202,20 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 			return (aDate < bDate)? -1 : (aDate == bDate)? 0 : 1;
 		});
 
-	if(filter) {
-		
+
+	if(options) {
 		// Get display names before we filter the data.
-		if(filter.displayName) {
+		if(options.includeDisplayNames) {
 			xAxisLabels = {};
+			legendLabels = {}
 			results.forEach((item) => {
 				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
+				//legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
 			});
 		}
+	}
+
+	if(filter) {
 
 		// Get group names before we filter the data.
 		if(filter.subGroup) {

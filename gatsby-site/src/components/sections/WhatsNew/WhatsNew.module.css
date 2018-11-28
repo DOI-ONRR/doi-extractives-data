@@ -2,6 +2,6 @@
 @value gray-dark, black-light from colors;
 
 .root {
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-top: 1.25rem;
+	padding-bottom: 2.25rem;
 }

@@ -17,6 +17,8 @@ To update the data that powers the site:
 make site-data
 ```
 
+* _There is a conflict between node version 10+ and `sqlite3`. You may need to downgrade node in order to run `make db`._
+
 ## Handling CSVs and TSVs
 Much of the data that we encounter is made available to us as a Microsoft Excel document. If this is the case, the most reliable way to convert this data to a functional .tsv is as follows:
 1. "Save as" a .csv file

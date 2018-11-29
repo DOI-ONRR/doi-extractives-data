@@ -120,7 +120,7 @@ const stackedBarChart = {
 			.attr("x", self.width)
 			.attr("y", (MAX_EXTENT_LINE_Y-5))
 			.attr("text-anchor", "end")
-			.text((units === '$')? [units, maxExtentValue].join('') : [maxExtentValue, units].join(' '));
+			.text((units === 'dollars' || units === '$')? ["$", maxExtentValue].join('') : [maxExtentValue, units].join(' '));
 
 		maxExtentGroup.append("line")
       .attr('x1', 0)

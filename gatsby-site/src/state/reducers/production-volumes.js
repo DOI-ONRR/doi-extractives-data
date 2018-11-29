@@ -67,7 +67,6 @@ export default (state = initialState, action) => {
  * For Calendar Year it is assumed if we have Dec data we have 
  * all data for that year
  **/
-
 const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
 	if(source === undefined) return {FiscalYear: undefined, CalendarYear: undefined};
 	
@@ -86,9 +85,7 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
 const groupByYear = (source, filter, options) => {
 	if(source === undefined) return source;
 
-	let xAxisLabels;
-	let legendLabels;
-	let groupNames;
+	let xAxisLabels, legendLabels, groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.ProductionYear")).map(e => ({[e[0]] : e[1] }) );
 
 	// We assume if the data matches current year that we dont have the year of data, so we remove it
@@ -97,33 +94,17 @@ const groupByYear = (source, filter, options) => {
 
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.ProductionYear - b[Object.keys(b)[0]][0].data.ProductionYear));
 
-	if(options) {
-		// Get display names before we filter the data.
-		if(options.includeDisplayNames) {
-			xAxisLabels = {};
-			legendLabels = {}
-			results.forEach((item) => {
-				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
-				legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
-			});
-		}
+	// Get display names before we filter the data.
+	if(options && options.includeDisplayNames) {
+		xAxisLabels = {};
+		legendLabels = {}
+		results.forEach((item) => {
+			xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+			legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
+		});
 	}
 
 	if(filter) {
-
-		// Set sub group name
-		if(filter.subGroupName) {
-			groupNames = {};
-			results.map((item) => {
-				let key = Object.keys(item)[0];
-				if(groupNames[filter.subGroupName]) {
-					groupNames[filter.subGroupName].push(key);
-				}
-				else{
-					groupNames[filter.subGroupName] = [key];
-				}
-			});
-		}
 
 		// Sum volume by data key and assign year key to the result
 		if(filter.sumBy) {
@@ -148,13 +129,26 @@ const groupByYear = (source, filter, options) => {
 
 	}
 
+	// Set sub group name
+	if(options && options.subGroupName) {
+		groupNames = {};
+		results.map((item) => {
+			let key = Object.keys(item)[0];
+			if(groupNames[options.subGroupName]) {
+				groupNames[options.subGroupName].push(key);
+			}
+			else{
+				groupNames[options.subGroupName] = [key];
+			}
+		});
+	}
 
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					xAxisLabels: xAxisLabels,
-					legendLabels: legendLabels,
+					XAxisLabels: xAxisLabels,
+					LegendLabels: legendLabels,
 					GroupNames: groupNames};
 }
 
@@ -168,9 +162,7 @@ const groupByYear = (source, filter, options) => {
 const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 	if(source === undefined) return source;
 
-	let xAxisLabels;
-	let legendLabels;
-	let groupNames;
+	let xAxisLabels, legendLabels, groupNames;
 	let results = JSON.parse(JSON.stringify(source));
 
 	if(filter.period === "recent" && filter.limit > 0) {
@@ -204,25 +196,22 @@ const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 
 
 	if(options) {
-		// Get display names before we filter the data.
+
 		if(options.includeDisplayNames) {
 			xAxisLabels = {};
 			legendLabels = {}
 			results.forEach((item) => {
 				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
-				//legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
+				legendLabels[Object.keys(item)[0]] = 
+					item[Object.keys(item)[0]][0].data.DisplayMonth+'\xa0'+item[Object.keys(item)[0]][0].data.ProductionYear+' ('+item[Object.keys(item)[0]][0].data.Units+')';
 			});
 		}
-	}
 
-	if(filter) {
-
-		// Get group names before we filter the data.
-		if(filter.subGroup) {
+		if(options.subGroup) {
 			groupNames = {};
 			results.map((item) => {
 				let key = Object.keys(item)[0];
-				let name = item[key][0].data[filter.subGroup];
+				let name = item[key][0].data[options.subGroup];
 				if(groupNames[name]) {
 					groupNames[name].push(key);
 				}
@@ -231,6 +220,9 @@ const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 				}
 			});
 		}
+	}
+
+	if(filter) {
 
 		// Sum volume by data key and assign month key to the result
 		if(filter.sumBy) {
@@ -256,6 +248,7 @@ const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					xAxisLabels: xAxisLabels,
+					XAxisLabels: xAxisLabels,
+					LegendLabels: legendLabels,
 					GroupNames: groupNames};	
 }

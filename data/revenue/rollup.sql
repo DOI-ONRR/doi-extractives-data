@@ -236,14 +236,13 @@ CREATE TABLE offshore_area_revenue AS
         COALESCE(area.region, 'None') AS region_id,
         COALESCE(area.id, 'None') AS area_id,
         COALESCE(area.name, 'None') AS area_name,
-        revenue_type,
         SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
     LEFT JOIN offshore_planning_areas AS area
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, commodity, region_id, area_id, area_name, revenue_type;
+        year, commodity, region_id, area_id, area_name;
 
 -- create summary revenue type rows by state
 DROP TABLE IF EXISTS offshore_region_revenue_type;

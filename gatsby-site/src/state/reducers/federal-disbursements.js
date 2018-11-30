@@ -4,12 +4,6 @@ import CONSTANTS from '../../js/constants';
 import utils from '../../js/utils';
 
 const initialState = {
-	FiscalYear: {
-		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: undefined,
-	},
-	CalendarYear: {
-		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: undefined,
-	},
 	SourceData: {
 		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: undefined,
 	},
@@ -27,7 +21,7 @@ export const byYear = (key, filter, options) => ({ type: BY_YEAR, payload: {filt
 // Define Reducers
 export default (state = initialState, action) => {
   const { type, payload, key } = action;
-  //console.log(state);
+
   switch (type) {
     case HYDRATE:
     	let {SourceData} = state;
@@ -40,30 +34,6 @@ export default (state = initialState, action) => {
   }
 
 };
-
-/**
- * Set the most recent year available in our data
- * for Fiscal and Calendar year. Data is assumed to
- * be sorted descending by production date. If that changes
- * we should add a sort function.
- *
- * Fiscal Year is Oct (Year-1) to Sept (Year)
- * It is assumed if we have Sept data we have the fiscal year data
- * for that year.
- *
- * For Calendar Year it is assumed if we have Dec data we have 
- * all data for that year
- **/
-const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
-	if(source === undefined) return {FiscalYear: undefined, CalendarYear: undefined};
-	
-	let fiscalYearItem = source.find(item => (item.data.RevenueMonth === "September"));
-	let calendarYearItem = source.find(item => (item.data.RevenueMonth === "December"));
-	fiscalYear[key] = (fiscalYearItem && parseInt(fiscalYearItem.data.RevenueYear));
-	calendarYear[key] = (calendarYearItem && parseInt(calendarYearItem.data.RevenueYear));
-	return {FiscalYear: fiscalYear, 
-					CalendarYear: calendarYear};
-}
 
 /** 
  * 

@@ -30,7 +30,7 @@ export const byMonth = (key, filter, options) => ({ type: BY_MONTH, payload: {fi
 // Define Reducers
 export default (state = initialState, action) => {
   const { type, payload, key } = action;
-  //console.log(state);
+
   switch (type) {
     case HYDRATE:
     	let {SourceData, FiscalYear, CalendarYear} = state;

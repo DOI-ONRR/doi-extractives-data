@@ -4,26 +4,11 @@ import CONSTANTS from '../../js/constants';
 import utils from '../../js/utils';
 
 const initialState = {
-	FiscalYear: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
-	},
-	CalendarYear: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
-	},
-	SourceData: {
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
-	},
-	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
-	[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
-	[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
+	FiscalYear: {},
+	CalendarYear: {},
+	SourceData: {},
+	SelectedData: {},
 };
-
 
 // Define Action Types
 const HYDRATE = 'HYDRATE_PRODUCTION_VOLUMES';
@@ -38,14 +23,14 @@ export const byMonth = (key, filter, options) => ({ type: BY_MONTH, payload: {fi
 // Define Reducers
 export default (state = initialState, action) => {
   const { type, payload, key } = action;
-  //console.log(state);
+
   switch (type) {
     case HYDRATE:
     	let {SourceData, FiscalYear, CalendarYear} = state;
     	SourceData[key] = payload;
       return ({...state, ...getFiscalCalendarYear(key, payload, FiscalYear, CalendarYear), SourceData: SourceData});
     case BY_YEAR:
-      return ({...state, [key]:groupByYear(state.SourceData[key], payload.filter, payload.options) });
+      return ({...state, [key]:groupByYear(key, state.SourceData[key], payload.filter, payload.options) });
     case BY_MONTH:
       return ({...state, [key]:groupByMonth(state.SourceData[key], payload.filter, payload.options, state.FiscalYear[key], state.CalendarYear[key]) });
     default:
@@ -82,7 +67,7 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  * 
  * @returns {Object}
  **/
-const groupByYear = (source, filter, options) => {
+const groupByYear = (key, source, filter, options) => {
 	if(source === undefined) return source;
 
 	let xAxisLabels, legendLabels, groupNames;
@@ -143,13 +128,16 @@ const groupByYear = (source, filter, options) => {
 		});
 	}
 
-	return {Data:results, 
-					ProductName: source[0].data.ProductName,
-					Units: source[0].data.Units,
-					LongUnits: source[0].data.LongUnits,
-					XAxisLabels: xAxisLabels,
-					LegendLabels: legendLabels,
-					GroupNames: groupNames};
+	return {
+		Data: results, 
+		DataKey: key,
+		GroupNames: groupNames,
+		LegendLabels: legendLabels,
+		LongUnits: source[0].data.LongUnits,
+		ProductName: source[0].data.ProductName,
+		Units: source[0].data.Units,
+		XAxisLabels: xAxisLabels,
+	};
 }
 
 /** 
@@ -185,7 +173,7 @@ const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 		results = results.filter((item) => ( parseInt(item.data.ProductionYear) === calendarYear ) );
 	}
 
-	results = Object.entries(utils.groupBy(results, "data.ProductionMonth")).map(e => ({[e[0]] : e[1] }) );
+	results = Object.entries(utils.groupBy(results, ["data.ProductionMonth", "data.ProductionYear"])).map(e => ({[e[0]] : e[1] }) );
 
 	// Sort ascending by production date
 	results.sort((a,b) => { 

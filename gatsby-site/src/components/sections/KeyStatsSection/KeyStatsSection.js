@@ -99,12 +99,6 @@ class KeyStatsSection extends React.Component{
 		super(props);
 	}
 
-	componentWillMount() {
-		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForDisbursements();
-	}
-
 	state = {
 		productionToggle: TOGGLE_VALUES.Year,
 		productionPeriod: DROPDOWN_VALUES.Recent,
@@ -115,6 +109,12 @@ class KeyStatsSection extends React.Component{
 		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
 		[CONSTANTS.REVENUES_ALL_KEY]: this.props[CONSTANTS.REVENUES_ALL_KEY],
 		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props[CONSTANTS.DISBURSEMENTS_ALL_KEY],
+	}
+
+	componentWillMount() {
+		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
+		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
+		this.setStateForDisbursements();
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -146,8 +146,10 @@ class KeyStatsSection extends React.Component{
 				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: 
 					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
 			});
+
 		}
 		else {
+
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
@@ -159,6 +161,7 @@ class KeyStatsSection extends React.Component{
 					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {...FILTER_PRODUCTION_VOLUMES_BY_MONTH, period:dropDownValue }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
 
 			});
+
 		}
 	}
 
@@ -202,6 +205,8 @@ class KeyStatsSection extends React.Component{
 		return (
 			<div is="chart">
 				<StackedBarChartLayout 
+					data={this.state[dataKey]}
+
 					chartDisplayConfig = {{
 						xAxisLabels: this.state[dataKey].XAxisLabels,
 						legendLabels: this.state[dataKey].LegendLabels,

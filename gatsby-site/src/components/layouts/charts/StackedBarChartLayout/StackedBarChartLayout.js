@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 
@@ -13,7 +14,8 @@ import utils from "../../../../js/utils";
 
 class StackedBarChartLayout extends React.Component{
 
-  state ={ 
+  state = { 
+    data: this.props.data,
     chartData: this.props.chartData,
     chartLegendData: this.props.chartLegendData,
     chartDataKeySelected: this.props.chartDataKeySelected,
@@ -52,6 +54,7 @@ class StackedBarChartLayout extends React.Component{
     let dataKey = this.state.chartDataKeyHovered || this.state.chartDataKeySelected;
     return (
       <ChartLegendStandard 
+        dataTest={this.state.data}
         headerName={this.props.chartLegendHeaderName} 
         headerNameForValues={this.props.chartDisplayConfig.legendLabels && this.props.chartDisplayConfig.legendLabels[dataKey]}
         data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
@@ -117,4 +120,7 @@ StackedBarChartLayout.propTypes = {
     chartLegendData: PropTypes.array,
 }
 
-export default StackedBarChartLayout;
+export default connect(
+    state => ({}), 
+    dispatch => ({})
+  )(StackedBarChartLayout);

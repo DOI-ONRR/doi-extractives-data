@@ -72,6 +72,7 @@ exclude:
   - vendor
   # Gatsby Dev
   - gatsby-site
+  - blog-site
 
 include:
   - /build.log

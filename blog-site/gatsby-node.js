@@ -66,3 +66,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+var copydir = require('copy-dir');
+
+exports.onPostBuild = () => {
+
+  console.log("Copying Files from public to blog...");
+  copydir.sync(__dirname+'/public', '../blog');
+  console.log("Finished Copying Files to blog.");
+
+}

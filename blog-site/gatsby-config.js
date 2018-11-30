@@ -1,3 +1,8 @@
+// Federalist provides the BASEURL env variable for preview builds.
+// https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
+const BASEURL = process.env.BASEURL || '';
+
+
 module.exports = {
   siteMetadata: {
     title: 'Open data design at the Department of the Interior',
@@ -5,7 +10,7 @@ module.exports = {
     description: 'Our blog about data, design, and innovation at the Department of the Interior.',
     siteUrl: 'https://revenuedata.doi.gov/',
   },
-  pathPrefix: '/blog',
+  pathPrefix: `${BASEURL}/blog',
   mapping: {
     "MarkdownRemark.frontmatter.authors": `AuthorYaml`,
   },

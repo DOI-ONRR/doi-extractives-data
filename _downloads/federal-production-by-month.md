@@ -59,7 +59,7 @@ We update this production data every month, but final production numbers aren't 
 
 The sum of 12-month production totals for a given calendar or fiscal year may not add up to the annual total found in the [production by year data]({{site.baseurl}}//downloads/federal-production/). While the production volume (amount of a commodity coming out of the ground) doesn't change, the way it is accounted for might. There are a two main reasons why:
 
-- Operators may not report on time, meaning production for a past month might increase when the operator submits the report and the production data is updated
+- Operators may not report on time, meaning production for a past month might increase when the operator submits the report and ONRR updates the data.
 
 - The Bureau of Land Management may choose to change agreements and units after production. These changes may affect the allocation of the production volume, changing the data. <br><br>For example, changing an agreement retroactively may change the allocation of production among states, the federal government, and Native American tribes and individuals. As a result, the apportioned totals in the data would change.
 

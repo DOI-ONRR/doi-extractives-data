@@ -10,6 +10,8 @@ nav_items:
     title: Scope
   - name: data-publication
     title: Data publication
+  - name: monthly-totals-and-annual-totals
+    title: Monthly totals and annual totals  
   - name: data-dictionary
     title: Data dictionary
     subnav_items:

@@ -98,20 +98,6 @@ const groupByYear = (source, filter, options) => {
 	}
 
 	if(filter) {
-
-		// Set sub group name
-		if(filter.subGroupName) {
-			groupNames = {};
-			results.map((item) => {
-				let key = Object.keys(item)[0];
-				if(groupNames[filter.subGroupName]) {
-					groupNames[filter.subGroupName].push(key);
-				}
-				else{
-					groupNames[filter.subGroupName] = [key];
-				}
-			});
-		}
 		
 		// Sum volume by data key and assign year key to the result
 		if(filter.sumBy) {
@@ -136,6 +122,20 @@ const groupByYear = (source, filter, options) => {
 
 	}
 
+	// Set sub group name
+	if(options && options.subGroupName) {
+		groupNames = {};
+		results.map((item) => {
+			let key = Object.keys(item)[0];
+			if(groupNames[options.subGroupName]) {
+				groupNames[options.subGroupName].push(key);
+			}
+			else{
+				groupNames[options.subGroupName] = [key];
+			}
+		});
+	}
+	
 	return {Data:results, 
 					Units: "$",
 					LongUnits: "dollars",

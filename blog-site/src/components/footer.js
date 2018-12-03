@@ -78,19 +78,19 @@ const Footer = () => (
         <a href='https://github.com/ONRR/'>
           <img
             class='social-icon'
-            src='./img/github.png'
+            src='/img/github.png'
             alt={`GitHub logo`}
           /></a>
           <a href='https://twitter.com/DOIONRR'> 
           <img
             class='social-icon'
-            src='./img/twitter.png'
+            src='/img/twitter.png'
             alt={`Twitter logo`}
           /></a>
           <a href='https://www.facebook.com/DOIONRR/'>  
           <img
             class='social-icon'
-            src='./img/facebook.png'
+            src='/img/facebook.png'
             alt={`Facebook logo`}
           /></a>
       </div>

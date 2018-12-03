@@ -134,7 +134,7 @@ class HomePage extends React.Component {
               <div className={styles.tabContentAside}>
                 <h5>Explore disbursements data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink to="/explore/#recipients">By recipient</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
                   <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>

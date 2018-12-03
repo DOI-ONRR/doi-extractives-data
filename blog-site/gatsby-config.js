@@ -10,7 +10,7 @@ module.exports = {
     description: 'Our blog about data, design, and innovation at the Department of the Interior.',
     siteUrl: 'https://revenuedata.doi.gov/',
   },
-  pathPrefix: '${BASEURL}/blog',
+  pathPrefix: `${BASEURL}/blog`,
   mapping: {
     "MarkdownRemark.frontmatter.authors": `AuthorYaml`,
   },

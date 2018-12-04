@@ -14,7 +14,7 @@ tags:
 - data visualization
 - prototypes
 - product framing
-date: "2018-12-01"
+date: "2018-12-06"
 ---
 
 _This is part one of a two-part series about our homepage redesign._

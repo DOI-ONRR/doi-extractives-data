@@ -32,8 +32,8 @@ const BY_MONTH = 'BY_MONTH_PRODUCTION_VOLUMES';
 
 // Define Action Creators 
 export const hydrate = (key, data) => ({ type: HYDRATE, payload: data,  key: key});
-export const byYear = (key, filter) => ({ type: BY_YEAR, payload: filter,  key: key});
-export const byMonth = (key, filter) => ({ type: BY_MONTH, payload: filter,  key: key});
+export const byYear = (key, filter, options) => ({ type: BY_YEAR, payload: {filter, options},  key: key});
+export const byMonth = (key, filter, options) => ({ type: BY_MONTH, payload: {filter, options},  key: key});
 
 // Define Reducers
 export default (state = initialState, action) => {
@@ -45,9 +45,9 @@ export default (state = initialState, action) => {
     	SourceData[key] = payload;
       return ({...state, ...getFiscalCalendarYear(key, payload, FiscalYear, CalendarYear), SourceData: SourceData});
     case BY_YEAR:
-      return ({...state, [key]:groupByYear(state.SourceData[key], payload) });
+      return ({...state, [key]:groupByYear(state.SourceData[key], payload.filter, payload.options) });
     case BY_MONTH:
-      return ({...state, [key]:groupByMonth(state.SourceData[key], payload, state.FiscalYear[key], state.CalendarYear[key]) });
+      return ({...state, [key]:groupByMonth(state.SourceData[key], payload.filter, payload.options, state.FiscalYear[key], state.CalendarYear[key]) });
     default:
       return state;
   }
@@ -67,7 +67,6 @@ export default (state = initialState, action) => {
  * For Calendar Year it is assumed if we have Dec data we have 
  * all data for that year
  **/
-
 const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
 	if(source === undefined) return {[CONSTANTS.FISCAL_YEAR_KEY]: undefined, [CONSTANTS.CALENDAR_YEAR_KEY]: undefined};
 	
@@ -83,11 +82,10 @@ const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
  * 
  * @returns {Object}
  **/
-const groupByYear = (source, filter) => {
+const groupByYear = (source, filter, options) => {
 	if(source === undefined) return source;
 
-	let displayNames;
-	let groupNames;
+	let xAxisLabels, legendLabels, groupNames;
 	let results = Object.entries(utils.groupBy(source, "data.ProductionYear")).map(e => ({[e[0]] : e[1] }) );
 
 	// We assume if the data matches current year that we dont have the year of data, so we remove it
@@ -96,29 +94,17 @@ const groupByYear = (source, filter) => {
 
 	results.sort((a,b) => (a[Object.keys(a)[0]][0].data.ProductionYear - b[Object.keys(b)[0]][0].data.ProductionYear));
 
-	if(filter) {
-		
-		// Get display names before we filter the data.
-		if(filter.displayName) {
-			displayNames = {};
-			results.forEach((item) => {
-				displayNames[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
-			});
-		}
+	// Get display names before we filter the data.
+	if(options && options.includeDisplayNames) {
+		xAxisLabels = {};
+		legendLabels = {}
+		results.forEach((item) => {
+			xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+			legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.ProductionYear+" ("+item[Object.keys(item)[0]][0].data.Units+")";
+		});
+	}
 
-		// Set sub group name
-		if(filter.subGroupName) {
-			groupNames = {};
-			results.map((item) => {
-				let key = Object.keys(item)[0];
-				if(groupNames[filter.subGroupName]) {
-					groupNames[filter.subGroupName].push(key);
-				}
-				else{
-					groupNames[filter.subGroupName] = [key];
-				}
-			});
-		}
+	if(filter) {
 
 		// Sum volume by data key and assign year key to the result
 		if(filter.sumBy) {
@@ -143,11 +129,26 @@ const groupByYear = (source, filter) => {
 
 	}
 
+	// Set sub group name
+	if(options && options.subGroupName) {
+		groupNames = {};
+		results.map((item) => {
+			let key = Object.keys(item)[0];
+			if(groupNames[options.subGroupName]) {
+				groupNames[options.subGroupName].push(key);
+			}
+			else{
+				groupNames[options.subGroupName] = [key];
+			}
+		});
+	}
+
 	return {Data:results, 
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					DisplayNames: displayNames,
+					XAxisLabels: xAxisLabels,
+					LegendLabels: legendLabels,
 					GroupNames: groupNames};
 }
 
@@ -158,11 +159,10 @@ const groupByYear = (source, filter) => {
  * Example format:
  * {"Jan": [{"Federal onshore": 100, "Federal offshore": 100, "Native American":90}]}
  **/
-const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
+const groupByMonth = (source, filter, options, fiscalYear, calendarYear) => {
 	if(source === undefined) return source;
 
-	let displayNames;
-	let groupNames;
+	let xAxisLabels, legendLabels, groupNames;
 	let results = JSON.parse(JSON.stringify(source));
 
 	if(filter.period === "recent" && filter.limit > 0) {
@@ -194,22 +194,24 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 			return (aDate < bDate)? -1 : (aDate == bDate)? 0 : 1;
 		});
 
-	if(filter) {
-		
-		// Get display names before we filter the data.
-		if(filter.displayName) {
-			displayNames = {};
+
+	if(options) {
+
+		if(options.includeDisplayNames) {
+			xAxisLabels = {};
+			legendLabels = {}
 			results.forEach((item) => {
-				displayNames[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
+				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
+				legendLabels[Object.keys(item)[0]] = 
+					item[Object.keys(item)[0]][0].data.DisplayMonth+'\xa0'+item[Object.keys(item)[0]][0].data.ProductionYear+' ('+item[Object.keys(item)[0]][0].data.Units+')';
 			});
 		}
 
-		// Get group names before we filter the data.
-		if(filter.subGroup) {
+		if(options.subGroup) {
 			groupNames = {};
 			results.map((item) => {
 				let key = Object.keys(item)[0];
-				let name = item[key][0].data[filter.subGroup];
+				let name = item[key][0].data[options.subGroup];
 				if(groupNames[name]) {
 					groupNames[name].push(key);
 				}
@@ -218,6 +220,9 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 				}
 			});
 		}
+	}
+
+	if(filter) {
 
 		// Sum volume by data key and assign month key to the result
 		if(filter.sumBy) {
@@ -243,6 +248,7 @@ const groupByMonth = (source, filter, fiscalYear, calendarYear) => {
 					ProductName: source[0].data.ProductName,
 					Units: source[0].data.Units,
 					LongUnits: source[0].data.LongUnits,
-					DisplayNames: displayNames,
+					XAxisLabels: xAxisLabels,
+					LegendLabels: legendLabels,
 					GroupNames: groupNames};	
 }

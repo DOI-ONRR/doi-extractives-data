@@ -4,12 +4,12 @@ import CONSTANTS from '../../js/constants';
 import utils from '../../js/utils';
 
 const initialState = {
-	FiscalYear: {
+	[CONSTANTS.FISCAL_YEAR_KEY]: {
 		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
 		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
 		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
 	},
-	CalendarYear: {
+	[CONSTANTS.CALENDAR_YEAR_KEY]: {
 		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: undefined,
 		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: undefined,
 		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: undefined
@@ -69,14 +69,14 @@ export default (state = initialState, action) => {
  **/
 
 const getFiscalCalendarYear = (key, source,fiscalYear,calendarYear) => {
-	if(source === undefined) return {FiscalYear: undefined, CalendarYear: undefined};
+	if(source === undefined) return {[CONSTANTS.FISCAL_YEAR_KEY]: undefined, [CONSTANTS.CALENDAR_YEAR_KEY]: undefined};
 	
 	let fiscalYearItem = source.find(item => (item.data.ProductionMonth === "September"));
 	let calendarYearItem = source.find(item => (item.data.ProductionMonth === "December"));
 	fiscalYear[key] = (fiscalYearItem && parseInt(fiscalYearItem.data.ProductionYear));
 	calendarYear[key] = (calendarYearItem && parseInt(calendarYearItem.data.ProductionYear));
-	return {FiscalYear: fiscalYear, 
-					CalendarYear: calendarYear};
+	return {[CONSTANTS.FISCAL_YEAR_KEY]: fiscalYear, 
+					[CONSTANTS.CALENDAR_YEAR_KEY]: calendarYear};
 }
 
 /** 

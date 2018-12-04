@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
 import logo from './DOI-2x.png'
+import twitter from './twitter.png'
+import facebook from './facebook.png'
+import github from './github.png'
 
 const Footer = () => (
   <footer
@@ -78,19 +81,19 @@ const Footer = () => (
         <a href='https://github.com/ONRR/'>
           <img
             class='social-icon'
-            src='/img/github.png'
+            src={github}
             alt={`GitHub logo`}
           /></a>
           <a href='https://twitter.com/DOIONRR'> 
           <img
             class='social-icon'
-            src='/img/twitter.png'
+            src={twitter}
             alt={`Twitter logo`}
           /></a>
           <a href='https://www.facebook.com/DOIONRR/'>  
           <img
             class='social-icon'
-            src='/img/facebook.png'
+            src={facebook}
             alt={`Facebook logo`}
           /></a>
       </div>

@@ -21,6 +21,20 @@
 
 /* Headings */
 
+.masthead {
+  margin: 0 0 3.5rem 0;
+  display: block;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.post-mast {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
 p + h2 {
   margin-bottom: .7rem;
 }
@@ -129,5 +143,9 @@ a:hover {
   }
   .team, .social {
     text-align: left;
+  }
+  .masthead {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
   }
 }

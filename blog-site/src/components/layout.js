@@ -17,16 +17,7 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {  
       header = (
-        <h1
-          style={{
-            ...scale(1.2),
-            fontWeight: '800',
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-            display: 'block',
-            textAlign: 'center',
-          }}
-        >
+        <h1 className="masthead">
           <Link
             style={{
               boxShadow: 'none',
@@ -52,15 +43,7 @@ class Template extends React.Component {
       )
     } else {
       header = (
-        <h2
-          style={{
-            ...scale(.35),
-            fontWeight: '800',
-            marginTop: 0,
-            marginBottom: rhythm(3),
-            textAlign: 'center',
-          }}
-        >
+        <h2 class="post-mast">
           <Link
             style={{
               boxShadow: 'none',

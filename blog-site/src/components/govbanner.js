@@ -1,5 +1,5 @@
 import React from 'react';
-import flag from './us-flag-small.png'
+import flag from '../img/us-flag-small.png'
 
 const Banner = () => (
   <section className="banner">

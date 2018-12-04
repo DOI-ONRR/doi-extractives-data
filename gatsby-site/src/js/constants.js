@@ -6,6 +6,9 @@ module.exports = Object.freeze({
 	REVENUES_KEY: 'revenues',
 	PRODUCTION_VOLUMES_KEY: 'productionVolumes',
   DISBURSEMENTS_KEY: 'federalDisbursements',
+  FISCAL_YEAR_KEY: 'FiscalYear',
+  CALENDAR_YEAR_KEY: 'CalendarYear',
+
 
   // Disbursements data keys for redux store
   DISBURSEMENTS_ALL_KEY: 'disbursementsAll',

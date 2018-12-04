@@ -93,6 +93,12 @@ const FILTER_DISBURSEMENTS_BY_YEAR = {
 	limit: 10,
 }
 
+const PRODUCTION_VOLUMES_FISCAL_YEAR = "ProductionVolumesFiscalYear";
+const PRODUCTION_VOLUMES_CALENDAR_YEAR = "ProductionVolumesCalendarYear";
+const REVENUES_FISCAL_YEAR = "RevenuesFiscalYear";
+const REVENUES_CALENDAR_YEAR = "RevenuesCalendarYear";
+
+
 class KeyStatsSection extends React.Component{
 
 	constructor(props){
@@ -265,10 +271,10 @@ class KeyStatsSection extends React.Component{
 													name:"Most recent 12 months",
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Recent)},
 												{key:DROPDOWN_VALUES.Fiscal,
-													name:"Fiscal year 2017",
+													name:"Fiscal year "+this.state[PRODUCTION_VOLUMES_FISCAL_YEAR][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Fiscal)}, 
 												{key:DROPDOWN_VALUES.Calendar,
-													name:"Calendar year 2017",
+													name:"Calendar year "+this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar)}]}></DropDown>
 									</div>
 								}
@@ -308,10 +314,10 @@ class KeyStatsSection extends React.Component{
 													name:"Most recent 12 months",
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Recent)},
 												{key:DROPDOWN_VALUES.Fiscal,
-													name:"Fiscal year 2017",
+													name:"Fiscal year "+this.state[REVENUES_FISCAL_YEAR][CONSTANTS.REVENUES_ALL_KEY],
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Fiscal)}, 
 												{key:DROPDOWN_VALUES.Calendar,
-													name:"Calendar year 2017",
+													name:"Calendar year "+this.state[REVENUES_CALENDAR_YEAR][CONSTANTS.REVENUES_ALL_KEY],
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Calendar)}]}></DropDown>
 									</div>
 								}
@@ -346,6 +352,10 @@ export default connect(
   						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
   						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
   						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
+  						[PRODUCTION_VOLUMES_FISCAL_YEAR]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.FISCAL_YEAR_KEY],
+  						[PRODUCTION_VOLUMES_CALENDAR_YEAR]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.CALENDAR_YEAR_KEY],
+  						[REVENUES_FISCAL_YEAR]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.FISCAL_YEAR_KEY],
+  						[REVENUES_CALENDAR_YEAR]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.CALENDAR_YEAR_KEY],
   					}),
   dispatch => ({	productionVolumesByYear: (key, filter, options) => dispatch(productionVolumesByYearAction(key, filter, options)),
   								productionVolumesByMonth: (key, filter, options) => dispatch(productionVolumesByMonthAction(key, filter, options)),

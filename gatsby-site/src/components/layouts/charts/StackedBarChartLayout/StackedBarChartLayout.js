@@ -15,17 +15,15 @@ import utils from "../../../../js/utils";
 class StackedBarChartLayout extends React.Component{
 
   state = { 
-    data: this.props.data,
-    chartData: this.props.chartData,
-    chartLegendData: this.props.chartLegendData,
-    chartDataKeySelected: this.props.chartDataKeySelected,
-    chartLegendDataHovered: undefined,
-    chartDataKeyHovered: undefined,
-    forceChartUpdate: false
+    dataSet: this.props.dataSet
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({...nextProps});
+    this.setState({ dataSet: nextProps.dataSet });
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return (this.state.dataSet !== undefined && (JSON.stringify(this.state.dataSet.LastUpdated) !== JSON.stringify(nextProps.dataSet.LastUpdated)) );
   }
 
   barChartDataSelected(data) {
@@ -71,7 +69,27 @@ class StackedBarChartLayout extends React.Component{
 
     return ( 
       <div className={styles.root}>
-        <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
+
+      </div>
+    );
+  }
+}
+
+
+
+StackedBarChartLayout.propTypes = {
+    /** This object holds all the related information for the dataSet. 
+    It also provides a LastUpdated property to verify this component should update. */
+    dataSet: PropTypes.object,
+
+}
+
+export default StackedBarChartLayout;
+
+
+  /*
+
+          <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
         {this.state.chartData &&
           <div className={styles.chart}>
             <StackedBarChart 
@@ -98,29 +116,5 @@ class StackedBarChartLayout extends React.Component{
             {this.getChartLegend()}
           </MediaQuery>
         }
-      </div>
-    );
-  }
-}
 
-
-
-StackedBarChartLayout.propTypes = {
-    /** The object that contains properties for display */
-    chartDisplayConfig: PropTypes.object,
-    /** The data to populate the chart */
-    chartData: PropTypes.array,
-    /** The object will draw a line under the x-axis labels by group */
-    chartGroups: PropTypes.object,
-    /** The data set to be selected on page load. */
-    defaultSelected: PropTypes.string,
-    /** The title to appear on top of the legend */
-    chartLegendHeader: PropTypes.array,
-    /** Data that will appear in the legend. Array of key value pairs */
-    chartLegendData: PropTypes.array,
-}
-
-export default connect(
-    state => ({}), 
-    dispatch => ({})
-  )(StackedBarChartLayout);
+*/

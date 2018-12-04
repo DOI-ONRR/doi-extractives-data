@@ -21,6 +21,65 @@ const stackedBarChart = {
 	maxValue: undefined,
 	styleMap: undefined,
 
+	create(el, props, state) {
+
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		// Initialize all chart attributes
+		self.init(el, props, state);
+
+		self.svg = d3.select(el).append('svg')
+					.attr('height', self.height)
+					.attr('width', self.width);
+
+		self.addMaxExtent(props);
+
+		self.addChart(props);
+ 
+		self.addXAxis(props);
+
+		self.addGroupLines();
+
+		// Redraw based on the new size whenever the browser window is resized.
+      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
+	},
+
+	update(el, props, state){
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		this.svg = d3.select(el).select("svg");
+
+		// Initialize all chart attributes
+		this.init(el, props, state);
+
+		this.svg.selectAll("#maxExtent").remove();
+		this.addMaxExtent(props);
+
+		this.svg.selectAll("#bars").remove();
+		this.addChart(props);
+
+
+ 		this.svg.selectAll("g.x.axis").remove();
+		this.addXAxis(props);
+
+		// Add Grouping Lines
+		this.svg.selectAll("#groups").remove();
+		this.addGroupLines();
+
+	},
+
+	destroy(el){
+		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+	},
+
 	getOrderedKeys(data) {
 		return Object.keys((data[0][Object.keys(data[0])[0]])[0]);
 	},
@@ -212,64 +271,6 @@ const stackedBarChart = {
 		}
 	},
 
-	create(el, props, state) {
-
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-
-		// Initialize all chart attributes
-		self.init(el, props, state);
-
-		self.svg = d3.select(el).append('svg')
-					.attr('height', self.height)
-					.attr('width', self.width);
-
-		self.addMaxExtent(props);
-
-		self.addChart(props);
- 
-		self.addXAxis(props);
-
-		self.addGroupLines();
-
-		// Redraw based on the new size whenever the browser window is resized.
-      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
-	},
-
-	update(el, props, state){
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-
-		this.svg = d3.select(el).select("svg");
-
-		// Initialize all chart attributes
-		this.init(el, props, state);
-
-		this.svg.selectAll("#maxExtent").remove();
-		this.addMaxExtent(props);
-
-		this.svg.selectAll("#bars").remove();
-		this.addChart(props);
-
-
- 		this.svg.selectAll("g.x.axis").remove();
-		this.addXAxis(props);
-
-		// Add Grouping Lines
-		this.svg.selectAll("#groups").remove();
-		this.addGroupLines();
-
-	},
-
-	destroy(el){
-		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
-	},
 
 	onMouseOverHandler() {
 		console.log("onMouseOverHandler");
@@ -291,7 +292,7 @@ const toggleSelectedBar = (element, data, callBack) => {
   element.setAttribute("selected", true);
 
   if(callBack){
-  	callBack(data);
+  	callBack(Object.keys(data)[0], data);
   }
 }
 

@@ -3,11 +3,9 @@ import { connect } from 'react-redux';
 
 import utils from "../../../js/utils";
 
-import { byMonth as productionVolumesByMonthAction } from '../../../state/reducers/production-volumes';
-import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
-import { byMonth as revenuesByMonthAction } from '../../../state/reducers/revenues';
-import { byYear as revenuesByYearAction } from '../../../state/reducers/revenues';
-import { byYear as disbursementsByYearAction } from '../../../state/reducers/federal-disbursements';
+
+import { groupByMonth as groupDataSetsByMonthAction } from '../../../state/reducers/data-sets';
+import { groupByYear as groupDataSetsByYearAction } from '../../../state/reducers/data-sets';
 
 import CONSTANTS from '../../../js/constants';
 
@@ -29,7 +27,7 @@ const DROPDOWN_VALUES ={
 	Calendar: "calendar"
 }
 
-const CHART_HEADER_NAME = "Source";
+const CHART_LEGEND_TITLE = "Source";
 
 const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE,CONSTANTS.NATIVE_AMERICAN];
 
@@ -47,24 +45,31 @@ const CHART_STYLE_MAP = {
 
 const MAX_CHART_BAR_SIZE = 15;
 
-// Define filter and options for data
-const OPTIONS_PRODUCTION_VOLUMES_BY_YEAR = {
-	includeDisplayNames: true,
-	subGroupName: CONSTANTS.CALENDAR_YEAR,
+// Define configs for filtering the data sets
+const PRODUCTION_VOLUMES_BY_YEAR_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroupName: CONSTANTS.CALENDAR_YEAR,
+		syncId: "KeyStatsProdVolumes_Year",
+	},
+	filter: {
+		sumBy:"ProductionCategory",
+		limit: 10,
+	}
 };
-const FILTER_PRODUCTION_VOLUMES_BY_YEAR = {
-	sumBy:"ProductionCategory",
-	limit: 10,
-}
-const OPTIONS_PRODUCTION_VOLUMES_BY_MONTH = {
-	includeDisplayNames: true,
-	subGroup: "ProductionYear",
+const PRODUCTION_VOLUMES_BY_MONTH_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroup: "ProductionYear",
+		syncId: "KeyStatsProdVolumes_Month",
+	},
+	filter: {
+		sumBy:"ProductionCategory",
+		limit: 12,
+	}
 };
-const FILTER_PRODUCTION_VOLUMES_BY_MONTH = {
-	sumBy:"ProductionCategory",
-	limit: 12,
-}
-const REVENUES_BY_YEAR = {
+
+const REVENUES_BY_YEAR_CONFIG = {
 	options :{
 		includeDisplayNames: true,
 		subGroupName: CONSTANTS.CALENDAR_YEAR,
@@ -74,7 +79,7 @@ const REVENUES_BY_YEAR = {
 		limit: 10,
 	}
 };
-const REVENUES_BY_MONTH = {
+const REVENUES_BY_MONTH_CONFIG = {
 	options :{
 		includeDisplayNames: true,
 		subGroup: "RevenueYear",
@@ -84,19 +89,33 @@ const REVENUES_BY_MONTH = {
 		limit: 12,
 	}
 };
-const OPTIONS_DISBURSEMENTS_BY_YEAR = {
-	includeDisplayNames: true,
-	subGroupName: CONSTANTS.FISCAL_YEAR,
+
+const DISBURSEMENTS_BY_YEAR_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroupName: CONSTANTS.FISCAL_YEAR,
+	},
+	filter: {
+		sumBy:"DisbursementCategory",
+		limit: 10,
+	}
 };
-const FILTER_DISBURSEMENTS_BY_YEAR = {
-	sumBy:"DisbursementCategory",
-	limit: 10,
-}
+
 
 class KeyStatsSection extends React.Component{
 
 	constructor(props){
 		super(props);
+
+		// Filter Data Sets by Year initially
+		props.groupDataSetsByYear([
+			{key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+			{key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+			{key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+			{key: CONSTANTS.REVENUES_ALL_KEY, ...REVENUES_BY_YEAR_CONFIG},
+			{key: CONSTANTS.DISBURSEMENTS_ALL_KEY, ...DISBURSEMENTS_BY_YEAR_CONFIG},
+		]);
+
 	}
 
 	state = {
@@ -104,17 +123,6 @@ class KeyStatsSection extends React.Component{
 		productionPeriod: DROPDOWN_VALUES.Recent,
 		revenueToggle: TOGGLE_VALUES.Year,
 		revenuePeriod: DROPDOWN_VALUES.Recent,
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
-		[CONSTANTS.REVENUES_ALL_KEY]: this.props[CONSTANTS.REVENUES_ALL_KEY],
-		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props[CONSTANTS.DISBURSEMENTS_ALL_KEY],
-	}
-
-	componentWillMount() {
-		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForDisbursements();
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -135,31 +143,29 @@ class KeyStatsSection extends React.Component{
 
 	setStateForProductionVolumes(toggleValue, dropDownValue) {
 		if(toggleValue === TOGGLE_VALUES.Year) {
-
+			this.props.groupDataSetsByYear([
+				{key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+				{key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+				{key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+			]);
+				
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: 
-					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: 
-					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: 
-					this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, FILTER_PRODUCTION_VOLUMES_BY_YEAR, OPTIONS_PRODUCTION_VOLUMES_BY_YEAR),
 			});
 
 		}
 		else {
-
+			let filter = {...PRODUCTION_VOLUMES_BY_MONTH_CONFIG.filter, period: dropDownValue};
+			this.props.groupDataSetsByMonth([
+				{key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+				{key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+				{key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+			]);
+			
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: 
-					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {...FILTER_PRODUCTION_VOLUMES_BY_MONTH, period:dropDownValue }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: 
-					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {...FILTER_PRODUCTION_VOLUMES_BY_MONTH, period:dropDownValue }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: 
-					this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {...FILTER_PRODUCTION_VOLUMES_BY_MONTH, period:dropDownValue }, OPTIONS_PRODUCTION_VOLUMES_BY_MONTH),
-
 			});
 
 		}
@@ -179,66 +185,60 @@ class KeyStatsSection extends React.Component{
 
 	setStateForRevenues(toggleValue, dropDownValue) {
 		if(toggleValue === TOGGLE_VALUES.Year) {
+			this.props.groupDataSetsByYear([
+				{key: CONSTANTS.REVENUES_ALL_KEY, ...REVENUES_BY_YEAR_CONFIG},
+			]);
+
 			this.setState({
 				revenueToggle: toggleValue, 
 				revenuePeriod: dropDownValue,
-				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByYear(CONSTANTS.REVENUES_ALL_KEY, REVENUES_BY_YEAR.filter, REVENUES_BY_YEAR.options),
 			});
 		}
 		else {
+			this.props.groupDataSetsByMonth([
+				{key: CONSTANTS.REVENUES_ALL_KEY, filter: {...REVENUES_BY_MONTH_CONFIG.filter, period: dropDownValue}, options: REVENUES_BY_MONTH_CONFIG.options}
+			]);
+
 			this.setState({
 				revenueToggle: toggleValue, 
 				revenuePeriod: dropDownValue,
-				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByMonth(CONSTANTS.REVENUES_ALL_KEY, {...REVENUES_BY_MONTH.filter, period:dropDownValue,}, REVENUES_BY_MONTH.options),
-
 			});
 		}
 	}
 
-	setStateForDisbursements() {
-		this.setState({
-			[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props.disbursementsByYear(CONSTANTS.DISBURSEMENTS_ALL_KEY, FILTER_DISBURSEMENTS_BY_YEAR, OPTIONS_DISBURSEMENTS_BY_YEAR),
-		});
-	}
 
 	getStackedBarChartLayout(dataKey, title, dataFormatFunc) {
+
+		if(this.state[dataKey] === undefined) {
+			return;
+		}
+
 		return (
 			<div is="chart">
 				<StackedBarChartLayout 
-					data={this.state[dataKey]}
 
-					chartDisplayConfig = {{
-						xAxisLabels: this.state[dataKey].XAxisLabels,
-						legendLabels: this.state[dataKey].LegendLabels,
-						title: title,
-						longUnits: this.state[dataKey].LongUnits,
-						units: this.state[dataKey].Units,
-						styleMap: CHART_STYLE_MAP,
-						sortOrder: CHART_SORT_ORDER,
-					}}
+					dataSet = {this.state[dataKey]}
 
-					chartLegendHeaderName={CHART_HEADER_NAME}
+					chartTitle = {title}
 
-					chartData={this.state[dataKey].Data}
+					styleMap = {CHART_STYLE_MAP}
 
-					chartLegendDataFormatFunc={dataFormatFunc || utils.formatToCommaInt}
+					sortOrder = {CHART_SORT_ORDER}
 
-					chartGroups={this.state[dataKey].GroupNames}
+					chartLegendTitle = {CHART_LEGEND_TITLE}
 
-					maxBarSize={MAX_CHART_BAR_SIZE}
+					chartLegendDataFormatFunc = {dataFormatFunc || utils.formatToCommaInt}
 
-					{...getDefaultChartData(this.state[dataKey].Data)}
-					>
+					maxBarSize = {MAX_CHART_BAR_SIZE}
+
+				>
 				</StackedBarChartLayout>
 			</div>
 		);
 	}
 
-	getProductionVolumesChartTitle(dataKey) {
-		return(this.state[dataKey].ProductName+" ("+this.state[dataKey].Units+")");
-	}
-
 	render(){
+
 		return(
 	    <section className="slab-alpha ">
 	    	<div className="container-page-wrapper">
@@ -281,14 +281,11 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.productChartContainer}>
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data && 
-									this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, this.getProductionVolumesChartTitle(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY))}
+								{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, CONSTANTS.OIL )}
 
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data &&
-									this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.getProductionVolumesChartTitle(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY))}
+								{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, CONSTANTS.GAS )}
 
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data &&
-									this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.getProductionVolumesChartTitle(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY))}
+								{this.getStackedBarChartLayout(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, CONSTANTS.COAL )}
 							</div>
 
 						</section>
@@ -323,16 +320,20 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.itemChart}> 
-								{this.state[CONSTANTS.REVENUES_ALL_KEY].Data &&
-									this.getStackedBarChartLayout(CONSTANTS.REVENUES_ALL_KEY, CONSTANTS.REVENUE, utils.formatToDollarInt)}
+								{this.getStackedBarChartLayout(CONSTANTS.REVENUES_ALL_KEY, CONSTANTS.REVENUE, utils.formatToDollarInt)}
 							</div>
 
-							<div className={styles.itemTitle+" "+styles.itemDisbursements} ><h3>Disbursements</h3></div>
-							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds</div>
-							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink></div>
+							<div className={styles.itemTitle+" "+styles.itemDisbursements}>
+								<h3>Disbursements</h3>
+							</div>
+							<div className={styles.itemDesc+" "+styles.itemDisbursements}>
+								Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds
+							</div>
+							<div className={styles.itemLink+" "+styles.itemDisbursements}>
+								<ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink>
+							</div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
-								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data &&
-									this.getStackedBarChartLayout(CONSTANTS.DISBURSEMENTS_ALL_KEY, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
+								{this.getStackedBarChartLayout(CONSTANTS.DISBURSEMENTS_ALL_KEY, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
 							</div>
 						</section>
 
@@ -346,18 +347,13 @@ class KeyStatsSection extends React.Component{
 }
 
 export default connect(
-  state => ({	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
-  						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
-  						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
-  					}),
-  dispatch => ({	productionVolumesByYear: (key, filter, options) => dispatch(productionVolumesByYearAction(key, filter, options)),
-  								productionVolumesByMonth: (key, filter, options) => dispatch(productionVolumesByMonthAction(key, filter, options)),
-  								revenuesByMonth: (key, filter, options) => dispatch(revenuesByMonthAction(key, filter, options)),
-  								revenuesByYear: (key, filter, options) => dispatch(revenuesByYearAction(key, filter, options)),
-  								disbursementsByYear: (key, filter, options) => dispatch(disbursementsByYearAction(key, filter, options)),
-  						})
+  state => ({
+  	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]
+  }),
+  dispatch => ({	
+		groupDataSetsByMonth: (configs) => dispatch( groupDataSetsByMonthAction(configs) ),
+		groupDataSetsByYear: (configs) => dispatch( groupDataSetsByYearAction(configs) ),
+	})
 )(KeyStatsSection);
 
 const getDefaultChartData = (dataSet) => {

@@ -1,31 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'
 
 import styles from "./StackedBarChart.module.css"
+
+import { selectData as selectDataAction } from '../../../state/reducers/data-sets';
 
 import stackedBarChart from '../../../js/bar-charts/stacked-bar-chart';
 
 class StackedBarChart extends React.Component {
 
 	componentDidMount() {
-		let {data} = this.props;
+		let {data, barSelectedCallback, ...rest } = {...this.props};
 
 		stackedBarChart.create(ReactDOM.findDOMNode(this), 
-			...this.props, 
+			{...rest, barSelectedCallback: this.barSelected.bind(this)}, 
 			data);
 	}
 
 	componentDidUpdate() {
-		let {data} = this.props;
+		let {data, barSelectedCallback, ...rest } = {...this.props};
 
 		stackedBarChart.update(ReactDOM.findDOMNode(this), 
-			...this.props, 
+			{...rest, barSelectedCallback: this.barSelected.bind(this)}, 
 			data);
 	}
 
 	componentWillUnmount() {
 	
+	}
+
+	barSelected(key, data) {
+		console.log("barSelected");
+		this.props.dataSelected(key, data);
 	}
 
 	shouldComponentUpdate(nextProps) {
@@ -56,4 +64,9 @@ StackedBarChart.propTypes = {
 }
 
 
-export default StackedBarChart;
+export default connect(
+  state => ({}),
+  dispatch => ({
+  	dataSelected: (key, data) => dispatch(selectDataAction(key, data)),
+  })
+)(StackedBarChart);;

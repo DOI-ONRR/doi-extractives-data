@@ -1,0 +1,151 @@
+/* Banner */
+.banner {
+  padding: .5rem 0 .5rem 0;
+  background-color: #f0f6fa;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 300;
+}
+
+.banner-centered {
+  color: #435159;
+  text-align: center;
+  display: inline;
+}
+
+.banner-image {
+  padding-left: .7rem;;
+  margin-bottom: -1px;
+  margin-right: 3px;
+}
+
+/* Headings */
+
+.masthead {
+  margin: 0 0 3.5rem 0;
+  display: block;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.post-mast {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+p + h2 {
+  margin-bottom: .7rem;
+}
+
+h3, h4, h5 {
+  margin-bottom: .7rem;
+}
+
+/* Blockquote */
+
+blockquote {
+  color: #545454;
+  border-left: 2px solid #545454;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+
+/* List items */
+
+.other-posts li {
+  max-width: 15rem;
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+  color: #086996;
+}
+
+a:visited {
+  color: #1478a6;
+}
+
+a:hover {
+  color: #79bbda;
+}
+
+.other-posts a {
+  text-decoration: none;
+}
+
+.other-posts a:hover {
+  text-decoration: underline;
+}
+
+/* angle */
+
+.angle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  -webkit-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+  background-color: #fff;
+  z-index: 100000;
+}
+
+/* footer */
+
+.footer-content {
+  padding-top: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 34.8rem;
+}
+
+.footer-img {
+  float: left;
+  padding-right: 1.5rem;
+}
+
+.team {
+  text-align: center;
+}
+
+.social {
+  margin-top: .2rem;
+  text-align: center;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 2rem .5rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 442px) {
+  .footer-content {
+    margin-left: 1rem;
+  }
+  .footer-img {
+    float: none;
+    margin-bottom: 7px;
+    display: block;
+  }
+  .footer-contact {
+    text-align: center;
+    margin-left: 2.175rem;
+  }
+  .team, .social {
+    text-align: left;
+  }
+  .masthead {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+}

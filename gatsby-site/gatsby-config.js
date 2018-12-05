@@ -11,7 +11,7 @@ const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
 
 module.exports = {
   // Note: it must *not* have a trailing slash.
-  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages. 
+  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
 
   // This prefix is prepended to load all our related images, code, and pages.
   pathPrefix: `${BASEURL}/gatsby-public`,
@@ -19,7 +19,7 @@ module.exports = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v4.2.2',
+    version: 'v4.3.0',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [
@@ -31,7 +31,7 @@ module.exports = {
         includePaths: [`${__dirname}/src/styles`],
       },
     },
-    
+
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.
@@ -52,14 +52,14 @@ module.exports = {
         name: `data-graphql`,
         path: `${__dirname}/src/data-graphql/`,
       },
-    },  
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown/`,
       },
-    },  
+    },
     `gatsby-transformer-yaml`,
     {
       resolve: 'gatsby-transformer-remark',
@@ -67,6 +67,6 @@ module.exports = {
         plugins: [`gatsby-remark-autolink-headers`],
       },
     },
-    'gatsby-transformer-excel',                                                            
+    'gatsby-transformer-excel',
   ],
 };

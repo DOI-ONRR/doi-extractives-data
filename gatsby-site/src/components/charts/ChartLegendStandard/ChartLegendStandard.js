@@ -41,7 +41,7 @@ class ChartLegendStandard extends React.Component {
         	</tr>
       	</thead>
 				<tbody>
-					{
+					{data &&
 						sortOrder.map((key, index) => {
 							if(data[key]){
 								total += this.props.data[key];

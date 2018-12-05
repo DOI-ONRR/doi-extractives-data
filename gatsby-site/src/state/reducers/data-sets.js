@@ -14,7 +14,7 @@ const initialState = {
 	FiscalYear: {},
 	CalendarYear: {},
 	SourceData: {},
-	SelectedData: {},
+	SyncIds: {},
 };
 
 
@@ -22,14 +22,14 @@ const initialState = {
 const HYDRATE = 'HYDRATE_DATA_SETS';
 const GROUP_BY_YEAR = 'GROUP_DATA_SETS_BY_YEAR';
 const GROUP_BY_MONTH = 'GROUP_DATA_SETS_BY_MONTH';
-const SELECT_DATA = 'SELECT_DATA';
+const SET_DATA_SELECTED_BY_ID = 'SET_DATA_SELECTED_BY_ID';
 
 
 // Define Action Creators 
 export const hydrate = (dataSets) => ({ type: HYDRATE, payload: dataSets });
 export const groupByYear = (configs) => ({ type: GROUP_BY_YEAR, payload: configs });
 export const groupByMonth = (configs) => ({ type: GROUP_BY_MONTH, payload: configs });
-export const selectData = (key, data) => ({ type: SELECT_DATA, key: key, payload: data });
+export const setDataSelectedById = (configs) => ({ type: SET_DATA_SELECTED_BY_ID, payload: configs });
 
 
 // Define Action Handlers
@@ -49,8 +49,14 @@ const groupByYearHandler = (state, action) => {
 	const { payload } = action;
 
 	let results = {};
+	results.SyncIds = {...state.SyncIds};
+
 	payload.forEach((config) => {
-		results[config.key] = dataSetByYear(config.key, state.SourceData[config.key], config.filter, config.options);
+
+		results[config.id] = dataSetByYear(config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options);
+		
+		addDataSetSync(config.options.syncId, config.id, results);
+
 	});
 
 	return ({...state, ...results });
@@ -60,18 +66,46 @@ const groupByMonthHandler = (state, action) => {
 	const { payload } = action;
 	
 	let results = {};
+	results.SyncIds = {...state.SyncIds};
+
 	payload.forEach((config) => {
-		results[config.key] = 
-			dataSetByMonth(config.key, state.SourceData[config.key], config.filter, config.options, state.FiscalYear[config.key], state.CalendarYear[config.key]);
+		results[config.id] = 
+			dataSetByMonth(config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options, state.FiscalYear[config.sourceKey], state.CalendarYear[config.sourceKey]);
+
+		addDataSetSync(config.options.syncId, config.id, results);
+
 	});
 
 	return ({...state, ...results });
 }
 
-const selectDataHandler = (state, action) => {
+const setDataSelectedByIdHandler = (state, action) => {
+	const { payload } = action;
 
-	const { key, payload } = action;
-	return state;
+	let results = {};
+	payload.forEach((config) => {
+		results[config.id] = {...state[config.id], selectedDataKey: config.dataKey, lastUpdated: Date.now()};
+		// Synchronize datasets
+		if(state.SyncIds[config.syncId]) {
+			state.SyncIds[config.syncId].forEach((dataId) => {
+				results[dataId] = {...state[dataId], selectedDataKey: config.dataKey, lastUpdated: Date.now()};
+			})
+		}
+
+	});
+
+	return ({...state, ...results });
+}
+
+const addDataSetSync = (syncId, dataId, results) => {
+	if(syncId){
+		if(results.SyncIds[syncId]){
+			results.SyncIds[syncId].push(dataId);
+		}
+		else {
+			results.SyncIds[syncId] = [dataId];
+		}
+	}
 }
 
 
@@ -80,7 +114,7 @@ export default createReducer(initialState, {
 	[HYDRATE]: hydrateHandler,
 	[GROUP_BY_YEAR]: groupByYearHandler,
 	[GROUP_BY_MONTH]: groupByMonthHandler,
-	[SELECT_DATA]: selectDataHandler
+	[SET_DATA_SELECTED_BY_ID]: setDataSelectedByIdHandler
 });
 
 
@@ -158,7 +192,7 @@ const setFiscalCalendarYear = (key, source, fiscalYear, calendarYear) => {
 const dataSetByYear = (key, source, filter, options) => {
 	if(source === undefined) return source;
 
-	let xAxisLabels, legendLabels, groupNames, units, longUnits;
+	let xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey;
 
 	// We add this for now until we update our data to always include units and long units
 	units = source[0].data.Units || "$";
@@ -207,8 +241,8 @@ const dataSetByYear = (key, source, filter, options) => {
 			});
 		}
 		
-		if(filter.limit > 0) {
-			results.splice(0,(results.length-filter.limit));
+		if(filter.limit > 0 ) {
+			results = results.splice(0,  filter.limit );
 		}
 
 	}
@@ -227,15 +261,27 @@ const dataSetByYear = (key, source, filter, options) => {
 		});
 	}
 
+	if(options && options.selectedDataKeyIndex) {
+		switch(options.selectedDataKeyIndex) {
+			case 'last':
+				selectedDataKey = Object.keys(results[results.length-1])[0];
+				break;
+			default:
+				selectedDataKey = Object.keys(results[options.selectedDataKeyIndex])[0];
+		}
+	}
+
+
 	return {
-		Data: results, 
-		GroupNames: groupNames,
-		LastUpdated: Date.now(),
-		LegendLabels: legendLabels,
-		LongUnits: longUnits,
-		SyncId: options.syncId,
-		Units: units,
-		XAxisLabels: xAxisLabels,
+		data: results, 
+		groupNames: groupNames,
+		lastUpdated: Date.now(),
+		legendLabels: legendLabels,
+		longUnits: longUnits,
+		selectedDataKey: selectedDataKey,
+		syncId: options.syncId,
+		units: units,
+		xAxisLabels: xAxisLabels,
 	};
 }
 
@@ -245,7 +291,7 @@ const dataSetByYear = (key, source, filter, options) => {
 const dataSetByMonth = (key, source, filter, options, fiscalYear, calendarYear) => {
 	if(source === undefined) return source;
 
-	let xAxisLabels, legendLabels, groupNames, units, longUnits;
+	let xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey;
 
 	// We add this for now until we update our data to always include units and long units
 	units = source[0].data.Units || "$";
@@ -255,7 +301,7 @@ const dataSetByMonth = (key, source, filter, options, fiscalYear, calendarYear) 
 
 	if(filter.period === "recent" && filter.limit > 0) {
 		let resultsGroupedByDate = Object.entries( utils.groupBy( source, getDateKey(source[0].data) ) ).map(e => ({[e[0]] : e[1] }) );
-		let resultsLimited = resultsGroupedByDate.splice(0, 12);
+		let resultsLimited = resultsGroupedByDate.splice(0, filter.limit);
 		results = results.filter((monthData) => (Object.keys(resultsLimited[resultsLimited.length-1])[0] <= getDate(monthData.data) ));
 	}
 	// Fiscal Year is Oct (Year-1) to Sept (Year)
@@ -290,12 +336,12 @@ const dataSetByMonth = (key, source, filter, options, fiscalYear, calendarYear) 
 			xAxisLabels = {};
 			legendLabels = {}
 			results.forEach((item) => {
-				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear;
+				xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth;
 				if(units === "$"){
-					legendLabels[Object.keys(item)[0]] = getYear(item[Object.keys(item)[0]][0].data).toString();
+					legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth+"\xa0"+getYear(item[Object.keys(item)[0]][0].data).toString();
 				}
 				else {
-					legendLabels[Object.keys(item)[0]] = getYear(item[Object.keys(item)[0]][0].data)+" ("+units+")";
+					legendLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayMonth+"\xa0"+getYear(item[Object.keys(item)[0]][0].data)+" ("+units+")";
 				}
 				
 			});
@@ -338,12 +384,24 @@ const dataSetByMonth = (key, source, filter, options, fiscalYear, calendarYear) 
 
 	}
 
-	return {Data:results, 
-					GroupNames: groupNames,
-					LastUpdated: Date.now(),
-					LegendLabels: legendLabels,
-					LongUnits: longUnits,
-					SyncId: options.syncId,
-					Units: units,
-					XAxisLabels: xAxisLabels,};	
+
+	if(options && options.selectedDataKeyIndex) {
+		switch(options.selectedDataKeyIndex) {
+			case 'last':
+				selectedDataKey = Object.keys(results[results.length-1])[0];
+				break;
+			default:
+				selectedDataKey = Object.keys(results[options.selectedDataKeyIndex])[0];
+		}
+	}
+
+	return {data:results, 
+					groupNames: groupNames,
+					lastUpdated: Date.now(),
+					legendLabels: legendLabels,
+					longUnits: longUnits,
+					selectedDataKey: selectedDataKey,
+					syncId: options.syncId,
+					units: units,
+					xAxisLabels: xAxisLabels,};	
 }

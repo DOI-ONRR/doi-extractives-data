@@ -2,8 +2,13 @@
  * Constants that are used by the application
  **/
 module.exports = Object.freeze({
+
 	// Application State Keys
 	DATA_SETS_STATE_KEY: 'dataSets',
+
+  FISCAL_YEAR_KEY: 'FiscalYear',
+  CALENDAR_YEAR_KEY: 'CalendarYear',
+
 
   // Disbursements data keys for redux store
   DISBURSEMENTS_ALL_KEY: 'disbursementsAll',

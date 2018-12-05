@@ -14,7 +14,6 @@
 
 .tab {
 	background-color: white;
-	border: 1px solid gray-light;
 	color: gray-darkest;
 	cursor: pointer;
 	font-size: 16px;
@@ -38,7 +37,6 @@
 
 .tabPanelContainer {
 	background-color: gray-pale;
-	border: 1px solid gray-light;
   overflow: hidden;
   position: relative;
   top: -1px;
@@ -69,10 +67,12 @@
 	}
 	.tab {
 		float: none;
+		border: 1px solid gray-light;
 		text-align: left;
 		width: 100%;
 	}
 	.tabPanelContainer {
-	  top: 0px;
+		top: 0px;
+		border: 1px solid gray-light;
 	}
 }

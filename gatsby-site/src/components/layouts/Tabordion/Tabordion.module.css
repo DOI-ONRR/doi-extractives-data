@@ -15,9 +15,9 @@
 
 .tab {
 	background-color: white;
-	border-left: .75px solid gray-light;
-	border-top: .75px solid gray-light;
-	border-bottom: .75px solid gray-light;
+	border-top: 1px solid gray-light;
+	border-left: 1px solid gray-light;
+	border-bottom: 1px solid gray-light;
 	color: gray-darkest;
 	cursor: pointer;
 	font-size: 16px;
@@ -30,7 +30,7 @@
 }
 
 .tab:last-of-type {
-	border-right: .75px solid gray-light;
+	border-right: 1px solid gray-light;
 }
 
 .tab:hover{

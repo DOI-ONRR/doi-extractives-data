@@ -73,10 +73,10 @@ const stackedBarChart = {
 		self.init(el, props, state);
 
 		self.svg = d3.select(el).append('svg')
-					.on("mouseout", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
 					.attr('height', self.height)
 					.attr('width', self.width);
 
+		self.addBackgroundRect(props);
 
 		self.addMaxExtent(props);
 
@@ -85,6 +85,7 @@ const stackedBarChart = {
 		self.addXAxis(props);
 
 		self.addGroupLines();
+
 
 		// Redraw based on the new size whenever the browser window is resized.
       	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
@@ -102,6 +103,9 @@ const stackedBarChart = {
 		// Initialize all chart attributes
 		this.init(el, props, state);
 
+		this.svg.selectAll("#backgroundRect").remove();
+		this.addBackgroundRect(props);
+
 		this.svg.selectAll("#maxExtent").remove();
 		this.addMaxExtent(props);
 
@@ -115,6 +119,7 @@ const stackedBarChart = {
 		// Add Grouping Lines
 		this.svg.selectAll("#groups").remove();
 		this.addGroupLines();
+
 
 	},
 
@@ -195,6 +200,20 @@ const stackedBarChart = {
       .attr('transform', 'translate(' + [0, MAX_EXTENT_LINE_Y] + ')');
 	},
 
+	// Added this to help catch hover events. To make sure it got cleared when a bar is not hovered.
+	addBackgroundRect(props) {
+		let self = this;
+		this.svg.append("rect")
+			.on("mouseout", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.on("mouseover", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.attr("id", "backgroundRect")
+			.style('opacity', 0.0)
+			.attr("y", 0)
+			.attr("height", self.height)
+			.attr("width", self.width)
+			.attr("x", 0);
+	},
+
 	addChart(props) {
 
 		let self = this;
@@ -215,7 +234,7 @@ const stackedBarChart = {
 				.attr("selected", d => Object.keys(d)[0] === self.selectedDataKey )
 				.attr("class", d => (self.styleMap && self.styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
-				.on("mousedown", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
+				.on("mousedown", function(d){d3.event.preventDefault(); toggleSelectedBar(this, d, props.barSelectedCallback);})
 				.on("mouseover", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, true);})
 				.on("mouseout", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, false);})
 				.selectAll("g")

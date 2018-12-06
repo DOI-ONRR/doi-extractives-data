@@ -76,10 +76,15 @@
 	}
 	.tab {
 		float: none;
+		border-top: 1px solid gray-light;
+		border-right: 1px solid gray-light;
+		border-left: 1px solid gray-light;
 		text-align: left;
 		width: 100%;
 	}
+
 	.tabPanelContainer {
 		top: 0px;
 	}
+
 }

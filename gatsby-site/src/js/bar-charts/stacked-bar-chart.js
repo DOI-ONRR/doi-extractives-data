@@ -204,8 +204,8 @@ const stackedBarChart = {
 	addBackgroundRect(props) {
 		let self = this;
 		this.svg.append("rect")
-			.on("mouseout", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
-			.on("mouseover", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.on("mouseenter", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.on("mouseleave", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
 			.attr("id", "backgroundRect")
 			.style('opacity', 0.0)
 			.attr("y", 0)
@@ -235,8 +235,8 @@ const stackedBarChart = {
 				.attr("class", d => (self.styleMap && self.styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
 				.on("mousedown", function(d){d3.event.preventDefault(); toggleSelectedBar(this, d, props.barSelectedCallback);})
-				.on("mouseover", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, true);})
-				.on("mouseout", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, false);})
+				.on("mouseenter", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, true);})
+				.on("mouseleave", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, false);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
 				.enter().append("g")

@@ -83,6 +83,10 @@
 		width: 100%;
 	}
 
+	.tab + .tab {
+		border-top: none;
+	}
+
 	.tabPanelContainer {
 		top: 0px;
 	}

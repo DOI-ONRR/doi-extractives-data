@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 
 import utils from "../../../js/utils";
 
-import { byMonth as productionVolumesByMonthAction } from '../../../state/reducers/production-volumes';
-import { byYear as productionVolumesByYearAction } from '../../../state/reducers/production-volumes';
-import { byMonth as revenuesByMonthAction } from '../../../state/reducers/revenues';
-import { byYear as revenuesByYearAction } from '../../../state/reducers/revenues';
-import { byYear as disbursementsByYearAction } from '../../../state/reducers/federal-disbursements';
+
+import { groupByMonth as groupDataSetsByMonthAction } from '../../../state/reducers/data-sets';
+import { groupByYear as groupDataSetsByYearAction } from '../../../state/reducers/data-sets';
+import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets';
 
 import CONSTANTS from '../../../js/constants';
 
@@ -29,32 +28,114 @@ const DROPDOWN_VALUES ={
 	Calendar: "calendar"
 }
 
-const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE,CONSTANTS.NATIVE_AMERICAN];
+const CHART_LEGEND_TITLE = "Source";
+
+const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE, CONSTANTS.NATIVE_AMERICAN];
 
 const CHART_STYLE_MAP = {
 	"bar": styles.chartBar,
 	[CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshore,
 	[CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshore,
 	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+	hover : {
+		[CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshoreHover,
+		[CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshoreHover,
+		[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
+	}
 };
 
-const MAX_CHART_BAR_SIZE = 15;
+// Define configs for filtering the data sets
+const KEY_STATS_OIL_DATA_ID = "KEY_STATS_OIL_DATA_ID";
+const KEY_STATS_GAS_DATA_ID = "KEY_STATS_GAS_DATA_ID";
+const KEY_STATS_COAL_DATA_ID = "KEY_STATS_COAL_DATA_ID";
+
+const PRODUCTION_VOLUMES_BY_YEAR_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroupName: CONSTANTS.CALENDAR_YEAR,
+		syncId: "KEY_STATS_PROD_VOLUMES_YEAR",
+		selectedDataKeyIndex: "last", 
+	},
+	filter: {
+		sumBy:"ProductionCategory",
+		limit: 10,
+	}
+};
+
+const ALL_PRODUCTION_VOLUMES_BY_YEAR_CONFIGS = [
+	{id: KEY_STATS_OIL_DATA_ID, sourceKey:  CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+	{id: KEY_STATS_GAS_DATA_ID, sourceKey:  CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+	{id: KEY_STATS_COAL_DATA_ID, sourceKey:  CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG},
+];
+
+const PRODUCTION_VOLUMES_BY_MONTH_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroup: "ProductionYear",
+		syncId: "KeyStatsProdVolumes_Month",
+		selectedDataKeyIndex: "last",
+	},
+	filter: {
+		sumBy:"ProductionCategory",
+		limit: 12,
+	}
+};
+
+const KEY_STATS_REVENUES_DATA_ID = "KEY_STATS_REVENUES_DATA_ID";
+const REVENUES_BY_YEAR_CONFIG = {
+	options :{
+		includeDisplayNames: true,
+		subGroupName: CONSTANTS.CALENDAR_YEAR,
+		selectedDataKeyIndex: "last",
+	},
+	filter: {
+		sumBy:"RevenueCategory",
+		limit: 10,
+	}
+};
+const REVENUES_BY_MONTH_CONFIG = {
+	options :{
+		includeDisplayNames: true,
+		subGroup: "RevenueYear",
+		selectedDataKeyIndex: "last",
+	},
+	filter: {
+		sumBy:"RevenueCategory",
+		limit: 12,
+	}
+};
+
+const KEY_STATS_DISBURSEMENTS_DATA_ID = "KEY_STATS_DISBURSEMENTS_DATA_ID";
+const DISBURSEMENTS_BY_YEAR_CONFIG = {
+	options: {
+		includeDisplayNames: true,
+		subGroupName: CONSTANTS.FISCAL_YEAR,
+		selectedDataKeyIndex: "last",
+	},
+	filter: {
+		sumBy:"DisbursementCategory",
+		limit: 10,
+	}
+};
 
 const PRODUCTION_VOLUMES_FISCAL_YEAR = "ProductionVolumesFiscalYear";
 const PRODUCTION_VOLUMES_CALENDAR_YEAR = "ProductionVolumesCalendarYear";
 const REVENUES_FISCAL_YEAR = "RevenuesFiscalYear";
 const REVENUES_CALENDAR_YEAR = "RevenuesCalendarYear";
 
+
 class KeyStatsSection extends React.Component{
 
 	constructor(props){
 		super(props);
-	}
 
-	componentWillMount() {
-		this.setStateForProductionVolumes(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForRevenues(TOGGLE_VALUES.Year, DROPDOWN_VALUES.Recent);
-		this.setStateForDisbursements();
+		// Filter Data Sets by Year initially
+		props.groupDataSetsByYear([
+			...ALL_PRODUCTION_VOLUMES_BY_YEAR_CONFIGS,
+			{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: CONSTANTS.REVENUES_ALL_KEY, ...REVENUES_BY_YEAR_CONFIG},
+			{id: KEY_STATS_DISBURSEMENTS_DATA_ID, sourceKey: CONSTANTS.DISBURSEMENTS_ALL_KEY, ...DISBURSEMENTS_BY_YEAR_CONFIG},
+		]);
+
 	}
 
 	state = {
@@ -62,11 +143,6 @@ class KeyStatsSection extends React.Component{
 		productionPeriod: DROPDOWN_VALUES.Recent,
 		revenueToggle: TOGGLE_VALUES.Year,
 		revenuePeriod: DROPDOWN_VALUES.Recent,
-		[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
-		[CONSTANTS.REVENUES_ALL_KEY]: this.props[CONSTANTS.REVENUES_ALL_KEY],
-		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props[CONSTANTS.DISBURSEMENTS_ALL_KEY],
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -87,23 +163,27 @@ class KeyStatsSection extends React.Component{
 
 	setStateForProductionVolumes(toggleValue, dropDownValue) {
 		if(toggleValue === TOGGLE_VALUES.Year) {
+			this.props.groupDataSetsByYear([...ALL_PRODUCTION_VOLUMES_BY_YEAR_CONFIGS]);
+				
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByYear(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, })
 			});
+
 		}
 		else {
+			let filter = {...PRODUCTION_VOLUMES_BY_MONTH_CONFIG.filter, period: dropDownValue};
+			this.props.groupDataSetsByMonth([
+				{id: KEY_STATS_OIL_DATA_ID, sourceKey: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+				{id: KEY_STATS_GAS_DATA_ID, sourceKey: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+				{id: KEY_STATS_COAL_DATA_ID, sourceKey: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, filter: filter, options: PRODUCTION_VOLUMES_BY_MONTH_CONFIG.options},
+			]);
+			
 			this.setState({
 				productionToggle: toggleValue, 
 				productionPeriod: dropDownValue,
-				[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
-				[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
-				[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: this.props.productionVolumesByMonth(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, {sumBy:"ProductionCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"ProductionYear" }),
-
 			});
+
 		}
 	}
 
@@ -121,29 +201,65 @@ class KeyStatsSection extends React.Component{
 
 	setStateForRevenues(toggleValue, dropDownValue) {
 		if(toggleValue === TOGGLE_VALUES.Year) {
+			this.props.groupDataSetsByYear([
+				{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: CONSTANTS.REVENUES_ALL_KEY, ...REVENUES_BY_YEAR_CONFIG},
+			]);
+
 			this.setState({
 				revenueToggle: toggleValue, 
 				revenuePeriod: dropDownValue,
-				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByYear(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.CALENDAR_YEAR, }),
 			});
 		}
 		else {
+			this.props.groupDataSetsByMonth([
+				{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: CONSTANTS.REVENUES_ALL_KEY, filter: {...REVENUES_BY_MONTH_CONFIG.filter, period: dropDownValue}, options: REVENUES_BY_MONTH_CONFIG.options}
+			]);
+
 			this.setState({
 				revenueToggle: toggleValue, 
 				revenuePeriod: dropDownValue,
-				[CONSTANTS.REVENUES_ALL_KEY]: this.props.revenuesByMonth(CONSTANTS.REVENUES_ALL_KEY, {sumBy:"RevenueCategory", displayName:true, limit: 12, period:dropDownValue, subGroup:"RevenueYear" }),
-
 			});
 		}
 	}
 
-	setStateForDisbursements() {
-		this.setState({
-			[CONSTANTS.DISBURSEMENTS_ALL_KEY]: this.props.disbursementsByYear(CONSTANTS.DISBURSEMENTS_ALL_KEY, {sumBy:"DisbursementCategory", displayName:true, limit: 10, subGroupName: CONSTANTS.FISCAL_YEAR, }),
-		});
+
+	getStackedBarChartLayout(dataSetId, title, dataFormatFunc) {
+
+		if(this.state[dataSetId] === undefined) {
+			return;
+		}
+
+		return (
+			<div is="chart">
+				<StackedBarChartLayout 
+
+					dataSet= {this.state[dataSetId]}
+
+					title= {title}
+
+					styleMap= {CHART_STYLE_MAP}
+
+					sortOrder= {CHART_SORT_ORDER}
+
+					legendTitle= {CHART_LEGEND_TITLE}
+
+					legendDataFormatFunc= {dataFormatFunc || utils.formatToCommaInt}
+
+					barSelectedCallback= {this.dataKeySelectedHandler.bind(this, dataSetId, this.state[dataSetId].syncId)}
+
+				>
+				</StackedBarChartLayout>
+			</div>
+		);
+	}
+
+	// Callback for charts. Used to sync production volume charts 
+	dataKeySelectedHandler(dataSetId, syncId, data) {
+		this.props.setDataSelectedById([{id:dataSetId, dataKey: Object.keys(data)[0], syncId: syncId}])
 	}
 
 	render(){
+
 		return(
 	    <section className="slab-alpha ">
 	    	<div className="container-page-wrapper">
@@ -162,7 +278,7 @@ class KeyStatsSection extends React.Component{
 								<div className={styles.toggle}>
 									Show:
 									<Toggle action={this.productionToggleClicked.bind(this)} buttons={[{key:TOGGLE_VALUES.Year, name:"Yearly",default: true},
-								  {key:TOGGLE_VALUES.Month,name:"Monthly"}]}></Toggle>
+								  {key:TOGGLE_VALUES.Month, name:"Monthly"}]}></Toggle>
 								</div>
 
 								{(this.state.productionToggle === TOGGLE_VALUES.Month) &&
@@ -175,10 +291,10 @@ class KeyStatsSection extends React.Component{
 													name:"Most recent 12 months",
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Recent)},
 												{key:DROPDOWN_VALUES.Fiscal,
-													name:"Fiscal year "+this.state[PRODUCTION_VOLUMES_FISCAL_YEAR][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+													name:"Fiscal year "+this.state[PRODUCTION_VOLUMES_FISCAL_YEAR],
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Fiscal)}, 
 												{key:DROPDOWN_VALUES.Calendar,
-													name:"Calendar year "+this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+													name:"Calendar year "+this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
 													default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar)}]}></DropDown>
 									</div>
 								}
@@ -186,83 +302,13 @@ class KeyStatsSection extends React.Component{
 							</div>
 
 							<div className={styles.productChartContainer}>
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data &&
-									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].DisplayNames,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
+								{this.getStackedBarChartLayout(KEY_STATS_OIL_DATA_ID, CONSTANTS.OIL )}
 
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data}
+								{this.getStackedBarChartLayout(KEY_STATS_GAS_DATA_ID, CONSTANTS.GAS )}
 
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
-									</div>
-								}
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data &&
-									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].DisplayNames,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY].Data)}
-											>
-										</StackedBarChartLayout>
-									</div>
-								}
-								{this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data &&
-									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].DisplayNames,
-												title: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].ProductName+" ("+this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units+")",
-												longUnits: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].LongUnits,
-												units: this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartData={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToCommaInt}
-
-											chartGroups={this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
-									</div>
-								}
-
+								{this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL )}
 							</div>
+
 						</section>
 						<section className={styles.revenueDisbursementsSection} >
 							<div className={styles.itemTitle}><h3>Revenue</h3></div>
@@ -272,8 +318,8 @@ class KeyStatsSection extends React.Component{
 							<div className={styles.itemToggle}>
 								<div className={styles.toggle}>
 									Show:
-									<Toggle action={this.revenueToggleClicked.bind(this)} buttons={[{key:TOGGLE_VALUES.Year, name:"Yearly",default: true},
-								  {key:TOGGLE_VALUES.Month,name:"Monthly"}]}></Toggle>
+									<Toggle action={this.revenueToggleClicked.bind(this)} buttons={[{key:TOGGLE_VALUES.Year, name:CONSTANTS.YEARLY,default: true},
+								  {key:TOGGLE_VALUES.Month,name:CONSTANTS.MONTHLY}]}></Toggle>
 								</div>
 								{(this.state.revenueToggle === TOGGLE_VALUES.Month) &&
 									<div className={styles.dropdown}>
@@ -285,93 +331,35 @@ class KeyStatsSection extends React.Component{
 													name:"Most recent 12 months",
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Recent)},
 												{key:DROPDOWN_VALUES.Fiscal,
-													name:"Fiscal year "+this.state[REVENUES_FISCAL_YEAR][CONSTANTS.REVENUES_ALL_KEY],
+													name:"Fiscal year "+this.state[REVENUES_FISCAL_YEAR],
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Fiscal)}, 
 												{key:DROPDOWN_VALUES.Calendar,
-													name:"Calendar year "+this.state[REVENUES_CALENDAR_YEAR][CONSTANTS.REVENUES_ALL_KEY],
+													name:"Calendar year "+this.state[REVENUES_CALENDAR_YEAR],
 													default: (this.state.revenuePeriod === DROPDOWN_VALUES.Calendar)}]}></DropDown>
 									</div>
 								}
 							</div>
 
 							<div className={styles.itemChart}> 
-								{this.state[CONSTANTS.REVENUES_ALL_KEY].Data &&
-									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.REVENUES_ALL_KEY].DisplayNames,
-												title: "Revenue",
-												longUnits: this.state[CONSTANTS.REVENUES_ALL_KEY].Units,
-												units: this.state[CONSTANTS.REVENUES_ALL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartData={this.state[CONSTANTS.REVENUES_ALL_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToDollarInt}
-
-											chartGroups={this.state[CONSTANTS.REVENUES_ALL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.REVENUES_ALL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
-									</div>
-								}
+								{this.getStackedBarChartLayout(KEY_STATS_REVENUES_DATA_ID, CONSTANTS.REVENUE, utils.formatToDollarInt)}
 							</div>
 
-							<div className={styles.itemTitle+" "+styles.itemDisbursements} ><h3>Disbursements</h3></div>
-							<div className={styles.itemDesc+" "+styles.itemDisbursements}>Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds</div>
-							<div className={styles.itemLink+" "+styles.itemDisbursements}><ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink></div>
+							<div className={styles.itemTitle+" "+styles.itemDisbursements}>
+								<h3>Disbursements</h3>
+							</div>
+							<div className={styles.itemDesc+" "+styles.itemDisbursements}>
+								Distribution of federal revenue to local governments, the U.S. treasury, Native Americans, and designated funds
+							</div>
+							<div className={styles.itemLink+" "+styles.itemDisbursements}>
+								<ExploreDataLink to="/explore/#federal-disbursements" >Explore all disbursements data</ExploreDataLink>
+							</div>
 							<div className={styles.itemChart+" "+styles.itemDisbursements}>
-								{this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data &&
-									<div is="chart">
-										<StackedBarChartLayout 
-											chartDisplayConfig = {{
-												xAxisLabels: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].DisplayNames,
-												title: "Disbursements",
-												longUnits: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Units,
-												units: this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Units,
-												styleMap: CHART_STYLE_MAP,
-												sortOrder: CHART_SORT_ORDER,
-											}}
-
-											chartData={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data}
-
-											chartLegendDataFormatFunc={utils.formatToDollarInt}
-
-											chartGroups={this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].GroupNames}
-
-											maxBarSize={MAX_CHART_BAR_SIZE}
-
-											{...getDefaultChartData(this.state[CONSTANTS.DISBURSEMENTS_ALL_KEY].Data)}
-											>
-										</StackedBarChartLayout>
-									</div>
-								}
+								{this.getStackedBarChartLayout(KEY_STATS_DISBURSEMENTS_DATA_ID, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
 							</div>
 						</section>
 
 					</section>
 				</div>
-				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
-					<defs> 
-						<pattern id="onshore-offshore-pattern-selected" patternUnits="userSpaceOnUse" width="4" height="4"> 
-							<rect y="0" fill={styles.federalOnshoreColor_selected}  width="4" height="4"/>
-							<path fill={styles.federalOffshoreColor_selected}  d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
-						</pattern>
-					</defs>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
-					<defs> 
-						<pattern id="onshore-offshore-pattern" patternUnits="userSpaceOnUse" width="4" height="4"> 
-							<rect y="0" fill={styles.federalOnshoreColor} width="4" height="4"/>
-							<path fill={styles.federalOffshoreColor} d="M1,3h1v1H1V3z M3,1h1v1H3V1z"/>
-						</pattern>
-					</defs>
-				</svg>
 
 			</section>
 		);
@@ -380,22 +368,24 @@ class KeyStatsSection extends React.Component{
 }
 
 export default connect(
-  state => ({	[CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-  						[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
-  						[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.REVENUES_ALL_KEY],
-  						[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DISBURSEMENTS_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
-  						[PRODUCTION_VOLUMES_FISCAL_YEAR]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.FISCAL_YEAR_KEY],
-  						[PRODUCTION_VOLUMES_CALENDAR_YEAR]: state[CONSTANTS.PRODUCTION_VOLUMES_KEY][CONSTANTS.CALENDAR_YEAR_KEY],
-  						[REVENUES_FISCAL_YEAR]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.FISCAL_YEAR_KEY],
-  						[REVENUES_CALENDAR_YEAR]: state[CONSTANTS.REVENUES_KEY][CONSTANTS.CALENDAR_YEAR_KEY],
-  					}),
-  dispatch => ({	productionVolumesByYear: (key, filter) => dispatch(productionVolumesByYearAction(key, filter)),
-  								productionVolumesByMonth: (key, filter) => dispatch(productionVolumesByMonthAction(key, filter)),
-  								revenuesByMonth: (key, filter) => dispatch(revenuesByMonthAction(key, filter)),
-  								revenuesByYear: (key, filter) => dispatch(revenuesByYearAction(key, filter)),
-  								disbursementsByYear: (key, filter) => dispatch(disbursementsByYearAction(key, filter)),
-  						})
+  state => ({	
+		[KEY_STATS_OIL_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_OIL_DATA_ID],
+		[KEY_STATS_GAS_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_GAS_DATA_ID],
+		[KEY_STATS_COAL_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_COAL_DATA_ID],
+		[KEY_STATS_REVENUES_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_REVENUES_DATA_ID],
+		[KEY_STATS_DISBURSEMENTS_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_DISBURSEMENTS_DATA_ID],
+		[PRODUCTION_VOLUMES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.FISCAL_YEAR_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+		[PRODUCTION_VOLUMES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
+		[REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.FISCAL_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
+		[REVENUES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
+	}),
+  dispatch => ({			
+  	groupDataSetsByMonth: (configs) => dispatch( groupDataSetsByMonthAction(configs) ),
+		groupDataSetsByYear: (configs) => dispatch( groupDataSetsByYearAction(configs) ),
+		setDataSelectedById: (configs) => dispatch( setDataSelectedByIdAction(configs) ),
+
+  })
+
 )(KeyStatsSection);
 
 const getDefaultChartData = (dataSet) => {

@@ -2,10 +2,10 @@
  * Constants that are used by the application
  **/
 module.exports = Object.freeze({
-	// Redux Store keys for reducers
-	REVENUES_KEY: 'revenues',
-	PRODUCTION_VOLUMES_KEY: 'productionVolumes',
-  DISBURSEMENTS_KEY: 'federalDisbursements',
+
+	// Application State Keys
+	DATA_SETS_STATE_KEY: 'dataSets',
+
   FISCAL_YEAR_KEY: 'FiscalYear',
   CALENDAR_YEAR_KEY: 'CalendarYear',
 
@@ -29,6 +29,13 @@ module.exports = Object.freeze({
   FEDERAL: 'Federal',
 
   CALENDAR_YEAR: "Calendar year",
-  FISCAL_YEAR: "Fiscal year"
+  FISCAL_YEAR: "Fiscal year",
+  MONTHLY: "Monthly",
+  YEARLY: "Yearly",
+  REVENUE: "Revenue",
+  DISBURSEMENTS: "Disbursements",
+  OIL: "Oil",
+  GAS: "Gas",
+  COAL: "Coal",
 
 });

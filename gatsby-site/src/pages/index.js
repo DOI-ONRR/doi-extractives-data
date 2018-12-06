@@ -3,9 +3,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import Link from '../components/utils/temp-link';
 
-import { hydrate as hydateProductionVolumesAction } from '../state/reducers/production-volumes';
-import { hydrate as hydateRevenuesAction } from '../state/reducers/revenues';
-import { hydrate as hydateDisbursementsAction } from '../state/reducers/federal-disbursements';
+import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -37,11 +35,13 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore(){
-    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, this.props.data.OilVolumes.volumes);
-    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, this.props.data.GasVolumes.volumes);
-    this.props.hydrateProductionVolumes(CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, this.props.data.CoalVolumes.volumes);
-    this.props.hydrateRevenues(CONSTANTS.REVENUES_ALL_KEY, this.props.data.Revenues.revenues);
-    this.props.hydrateDisbursements(CONSTANTS.DISBURSEMENTS_ALL_KEY, this.props.data.Disbursements.disbursements);
+    this.props.hydateDataManager([
+      {key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes},
+      {key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes},
+      {key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes},
+      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.Revenues.revenues},
+      {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
+    ]);
   }
 
 	render() {
@@ -134,7 +134,7 @@ class HomePage extends React.Component {
               <div className={styles.tabContentAside}>
                 <h5>Explore disbursements data</h5>
                 <div className={styles.linkContainer}>
-                  <ExploreDataLink to="/explore/#recipients">By recipient</ExploreDataLink>
+                  <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
                   <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
                 </div>
               </div>
@@ -169,7 +169,7 @@ class HomePage extends React.Component {
             </div>
           </div>
         </section>
-
+      
         <KeyStatsSection/>
 
         <WhatsNew />
@@ -180,9 +180,7 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
-  dispatch => ({  hydrateProductionVolumes: (data, key) => dispatch(hydateProductionVolumesAction(data, key)),
-                  hydrateRevenues: (data, key) => dispatch(hydateRevenuesAction(data, key)),
-                  hydrateDisbursements: (data, key) => dispatch(hydateDisbursementsAction(data, key))
+  dispatch => ({  hydateDataManager: (dataSets) => dispatch(hydateDataManagerAction(dataSets)),
               }),
 )(HomePage);
 

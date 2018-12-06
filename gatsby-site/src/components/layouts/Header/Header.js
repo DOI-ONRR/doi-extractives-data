@@ -132,7 +132,7 @@ class MobileNav extends React.Component{
                 <Link className={styles.mobileNavDrawerLinkItem} to="/case-studies/"> Case studies </Link>
               </li>
               <li  className={styles.mobileNavDrawerLinkItem2}>
-                <Link className={styles.mobileNavDrawerLinkItem2} to="/dowloads/"> Download data </Link>
+                <Link className={styles.mobileNavDrawerLinkItem2} to="/downloads/"> Download data </Link>
               </li> 
               <li  className={styles.mobileNavDrawerLinkItem2}>
                 <a href="#" onClick={() => this.props.glossaryTermSelected('', true)} 

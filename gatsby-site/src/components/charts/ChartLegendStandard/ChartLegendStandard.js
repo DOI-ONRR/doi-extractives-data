@@ -6,10 +6,9 @@ import utils from '../../../js/utils';
 
 import styles from "./ChartLegendStandard.module.css"
 
-
 /**
  * Chart Legend Standard is used to display rows of data keys and values. Each data key can be 
- * associated with a format function, a color(using css) and a display name.
+ * associated with a format function, a css class and a display name.
  */
 class ChartLegendStandard extends React.Component {
 
@@ -27,25 +26,22 @@ class ChartLegendStandard extends React.Component {
 	}
 
 	render() {
-		let data = this.props.data;
-		let sortOrder = (this.props.displayConfig && this.props.displayConfig.sortOrder) ? this.props.displayConfig.sortOrder : Object.keys(data);
+		let {data, dataFormatFunc, styleMap, units, sortOrder, headerName, headerNameForValues} = this.props;
 		// reverse the order to show from bottom to top per requirements
-		sortOrder = sortOrder.slice().reverse();
-
-		let styleMap = this.props.displayConfig && this.props.displayConfig.styleMap;
-		let units = this.props.displayConfig && this.props.displayConfig.units;
+		sortOrder = (sortOrder) ? sortOrder.slice().reverse() : Object.keys(data);
 
 		let total = 0;
+
 		return(
 			<table className={styles.chartLegendStandard}>
 				<thead>
       		<tr>
-        		<th colSpan="2">Source</th>
-        		<th>{this.props.dataKey && this.props.dataKey+(units === "$" ? "" : " ("+units+")")}</th>
+        		<th colSpan="2">{headerName || ""}</th>
+        		<th>{headerNameForValues || ""}</th>
         	</tr>
       	</thead>
 				<tbody>
-					{
+					{data &&
 						sortOrder.map((key, index) => {
 							if(data[key]){
 								total += this.props.data[key];
@@ -55,7 +51,7 @@ class ChartLegendStandard extends React.Component {
 											<div className={(styleMap && styleMap[key])} />
 										</td>
 										<td>
-											{this.getKeyDisplayName(key)}:
+											{this.getKeyDisplayName(key)}
 										</td>
 										<td>
 											{ this.props.dataFormatFunc ?
@@ -74,7 +70,7 @@ class ChartLegendStandard extends React.Component {
 											<div className={(styleMap && styleMap[key])} />
 										</td>
 										<td>
-											{this.getKeyDisplayName(key)}:
+											{this.getKeyDisplayName(key)}
 										</td>
 										<td>
 											-
@@ -86,11 +82,11 @@ class ChartLegendStandard extends React.Component {
 					}
 					<tr className={styles.chartLegendStandard_TotalRow}>
 						<td colSpan="2">
-							Total:
+							Total
 						</td>
 						<td>
-							{ this.props.dataFormatFunc ?
-								this.props.dataFormatFunc(total)
+							{ dataFormatFunc ?
+								dataFormatFunc(total)
 								:
 								total
 							}
@@ -103,16 +99,22 @@ class ChartLegendStandard extends React.Component {
 }
 
 ChartLegendStandard.propTypes = {
-	/** Units label to display for the values */
-	units: PropTypes.string,
 	/** Array of key value pairs */
 	data: PropTypes.object.isRequired,
-	/** Defines the display name/info of the data keys in the chart. Keys should match the data keys */
-	displayNames: PropTypes.object,
 	/** A function that will be applied on each data item of the chart data */
 	dataFormatFunc: PropTypes.func,
-	/** Specify a class name to be added to the outer element */
-	className: PropTypes.string
+	/** Defines the display name/info of the data keys in the chart. Keys should match the data keys */
+	displayNames: PropTypes.object,
+	/** Define the name of the header that display above the data keys **/
+	headerName: PropTypes.string,
+	/** Define the name of the header that display above the data values **/
+	headerNameForValues: PropTypes.string,
+	/** Specify the sort order of the data keys **/
+	sortOrder: PropTypes.array,
+	/** Map data keys to a style class **/
+	styleMap: PropTypes.object,
+	/** Units label to display for the values */
+	units: PropTypes.string,
 }
 
 export default ChartLegendStandard;

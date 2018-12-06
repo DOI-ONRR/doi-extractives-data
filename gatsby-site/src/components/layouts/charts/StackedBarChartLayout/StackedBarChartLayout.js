@@ -22,18 +22,18 @@ class StackedBarChartLayout extends React.Component{
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ dataSet: nextProps.dataSet });
+    this.setState({ dataSet: nextProps.dataSet, barHovered: undefined });
   }
 
   shouldComponentUpdate(nextProps, nextState) {
     return (
       (this.state.dataSet !== undefined && (this.state.dataSet.lastUpdated !== nextProps.dataSet.lastUpdated)) ||
-      (this.state.barHovered !== nextState.barHovered)
+      (this.state.barHovered !== nextState.barHovered) ||
+      (this.state.dataSet.selectedDataKey !== nextProps.dataSet.selectedDataKey)
     );
   }
 
   barHoveredCallback(data, isHover) {
-
     if(isHover){
       this.setState({barHovered: data});
     }

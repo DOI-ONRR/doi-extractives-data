@@ -57,6 +57,8 @@ const stackedBarChart = {
 		else{
 			this.maxBarSize = this.xScale.bandwidth();
 		}
+
+
 	},
 
 	create(el, props, state) {
@@ -71,8 +73,10 @@ const stackedBarChart = {
 		self.init(el, props, state);
 
 		self.svg = d3.select(el).append('svg')
+					.on("mouseout", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
 					.attr('height', self.height)
 					.attr('width', self.width);
+
 
 		self.addMaxExtent(props);
 
@@ -211,9 +215,9 @@ const stackedBarChart = {
 				.attr("selected", d => Object.keys(d)[0] === self.selectedDataKey )
 				.attr("class", d => (self.styleMap && self.styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
-				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
-				.on("mouseover", function(d){toggleHoveredBar(d, props.barHoveredCallback, true);})
-				.on("mouseout", function(d){toggleHoveredBar(d, props.barHoveredCallback, false);})
+				.on("mousedown", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
+				.on("mouseover", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, true);})
+				.on("mouseout", function(d){d3.event.preventDefault(); toggleHoveredBar(d, props.barHoveredCallback, false);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
 				.enter().append("g")

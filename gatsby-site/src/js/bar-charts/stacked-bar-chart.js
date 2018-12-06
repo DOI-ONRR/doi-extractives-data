@@ -21,6 +21,112 @@ const stackedBarChart = {
 	maxValue: undefined,
 	styleMap: undefined,
 
+	init(el, props, state) {
+		this.state = state;
+
+		this.selectedDataKey = props.selectedDataKey;
+		this.keys = props.sortOrder || this.getOrderedKeys(state);
+		this.groups = props.groups;
+		this.height = (el.clientHeight > 0 )? el.clientHeight : DEFAULT_HEIGHT;
+		// if we have grouping labels we need more room on the bottom
+		this.marginBottom = (props.groups)? MARGIN_BOTTOM_GROUPS : MARGIN_BOTTOM;
+		this.maxValue = this.calcMaxValue(this.state);
+
+		this.styleMap = props.styleMap;
+
+		this.units = props.units || '';
+
+		this.width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
+
+		this.xScale = d3.scaleBand()
+		    .domain(this.state.map(d => {return Object.keys(d)[0];}))
+		    .range([0, this.width])
+		    .paddingInner(0.3)
+		    .paddingOuter(0.1);
+
+		this.yScale = d3.scaleLinear().rangeRound([this.marginTop, this.height-this.marginBottom]);
+		// For vetical bars we want start rect at the bottom and go to the top
+		// SVG height goes down so this setting will reverse that
+		this.yScale.domain([this.maxValue, 0]);
+
+		this.maxBarSize = props.maxBarSize;
+		if(this.maxBarSize) {
+			this.barOffsetX = (this.xScale.bandwidth() > this.maxBarSize)? (this.xScale.bandwidth()-this.maxBarSize)/2 : 0;
+			this.maxBarSize = d3.min([this.xScale.bandwidth(), this.maxBarSize]);
+		}
+		else{
+			this.maxBarSize = this.xScale.bandwidth();
+		}
+
+
+	},
+
+	create(el, props, state) {
+
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		// Initialize all chart attributes
+		self.init(el, props, state);
+
+		self.svg = d3.select(el).append('svg')
+					.attr('height', self.height)
+					.attr('width', self.width);
+
+		self.addBackgroundRect(props);
+
+		self.addMaxExtent(props);
+
+		self.addChart(props);
+ 
+		self.addXAxis(props);
+
+		self.addGroupLines();
+
+
+		// Redraw based on the new size whenever the browser window is resized.
+      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
+	},
+
+	update(el, props, state){
+		if(state === undefined) {
+			return;
+		}
+
+		let self = this;
+
+		this.svg = d3.select(el).select("svg");
+
+		// Initialize all chart attributes
+		this.init(el, props, state);
+
+		this.svg.selectAll("#backgroundRect").remove();
+		this.addBackgroundRect(props);
+
+		this.svg.selectAll("#maxExtent").remove();
+		this.addMaxExtent(props);
+
+		this.svg.selectAll("#bars").remove();
+		this.addChart(props);
+
+
+ 		this.svg.selectAll("g.x.axis").remove();
+		this.addXAxis(props);
+
+		// Add Grouping Lines
+		this.svg.selectAll("#groups").remove();
+		this.addGroupLines();
+
+
+	},
+
+	destroy(el){
+		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+	},
+
 	getOrderedKeys(data) {
 		return Object.keys((data[0][Object.keys(data[0])[0]])[0]);
 	},
@@ -70,50 +176,13 @@ const stackedBarChart = {
   	return this.getMetricLongUnit(d3.format(setSigFigs(maxValue, maxValueExtent))(maxValueExtent));
   },
 
-	init(el, props, state) {
-		this.state = state;
-
-		this.defaultSelected = props.defaultSelected;
-		this.keys = (props.displayConfig && props.displayConfig.sortOrder) || this.getOrderedKeys(state);
-		this.groups = props.groups;
-		this.height = (el.clientHeight > 0 )? el.clientHeight : DEFAULT_HEIGHT;
-		// if we have grouping labels we need more room on the bottom
-		this.marginBottom = (props.groups)? MARGIN_BOTTOM_GROUPS : MARGIN_BOTTOM;
-		this.maxValue = this.calcMaxValue(this.state);
-
-		this.styleMap = props.displayConfig && props.displayConfig.styleMap;
-
-		this.units = (props.displayConfig && props.displayConfig.longUnits) || '';
-
-		this.width = (el.clientWidth <= 0 )? 300 : el.clientWidth;
-
-		this.xScale = d3.scaleBand()
-		    .domain(this.state.map(d => {return Object.keys(d)[0];}))
-		    .range([0, this.width])
-		    .paddingInner(0.3)
-		    .paddingOuter(0.1);
-
-		this.yScale = d3.scaleLinear().rangeRound([this.marginTop, this.height-this.marginBottom]);
-		// For vetical bars we want start rect at the bottom and go to the top
-		// SVG height goes down so this setting will reverse that
-		this.yScale.domain([this.maxValue, 0]);
-
-		this.maxBarSize = props.maxBarSize;
-		if(this.maxBarSize) {
-			this.barOffsetX = (this.xScale.bandwidth() > this.maxBarSize)? (this.xScale.bandwidth()-this.maxBarSize)/2 : 0;
-			this.maxBarSize = d3.min([this.xScale.bandwidth(), this.maxBarSize]);
-		}
-		else{
-			this.maxBarSize = this.xScale.bandwidth();
-		}
-	},
 
 	addMaxExtent(props){
 		let self = this;
 		// Add Max Extent Number text
 		let maxExtentGroup = self.svg.append("g").attr("id", "maxExtent");
 		let maxExtentValue = this.calculateExtentValue(this.maxValue);
-		let units = (props.displayConfig && props.displayConfig.longUnits) || '';
+		let units = props.units || '';
 
 		maxExtentGroup.append("text")
 			.attr("width", self.width)
@@ -129,6 +198,20 @@ const stackedBarChart = {
       .attr('stroke-dasharray', [5,5])
       .attr('stroke-width', 1)
       .attr('transform', 'translate(' + [0, MAX_EXTENT_LINE_Y] + ')');
+	},
+
+	// Added this to help catch hover events. To make sure it got cleared when a bar is not hovered.
+	addBackgroundRect(props) {
+		let self = this;
+		this.svg.append("rect")
+			.on("mouseenter", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.on("mouseleave", function(){toggleHoveredBar(undefined, props.barHoveredCallback, false);})
+			.attr("id", "backgroundRect")
+			.style('opacity', 0.0)
+			.attr("y", 0)
+			.attr("height", self.height)
+			.attr("width", self.width)
+			.attr("x", 0);
 	},
 
 	addChart(props) {
@@ -148,12 +231,13 @@ const stackedBarChart = {
 				.attr("height", (self.height - self.marginTop))
 				.attr("width", self.xScale.bandwidth())
 				.attr("transform", d => "translate("+(self.xScale(Object.keys(d)[0]))+",0)")
-				.attr("selected", d => Object.keys(d)[0] === self.defaultSelected )
+				.attr("selected", d => Object.keys(d)[0] === self.selectedDataKey )
 				.attr("class", d => (self.styleMap && self.styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
 				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
-				.on("mouseover", function(d){toggleHoveredBar(d, props.barHoveredCallback, true);})
-				.on("mouseout", function(d){toggleHoveredBar(d, props.barHoveredCallback, false);})
+				.on("touchstart", function(d){d3.preventDefault(); toggleSelectedBar(this, d, props.barSelectedCallback);})
+				.on("mouseenter", function(d){toggleHoveredBar(d, props.barHoveredCallback, true);})
+				.on("mouseleave", function(d){toggleHoveredBar(d, props.barHoveredCallback, false);})
 				.selectAll("g")
 				.data((d) => { return stack(d[Object.keys(d)[0]]); })
 				.enter().append("g")
@@ -170,7 +254,7 @@ const stackedBarChart = {
 		let self = this;
 
 		let createXAxis = () => (d3.axisBottom(self.xScale).tickSize(0).tickFormat((d) => 
-				(props.displayConfig.xAxisLabels)? props.displayConfig.xAxisLabels[d] : d) );
+				(props.xAxisLabels)? props.xAxisLabels[d] : d) );
 
 		self.svg.append("g")
 		    .attr("class", "x axis")
@@ -210,73 +294,6 @@ const stackedBarChart = {
 				}
 			);
 		}
-	},
-
-	create(el, props, state) {
-
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-
-		// Initialize all chart attributes
-		self.init(el, props, state);
-
-		self.svg = d3.select(el).append('svg')
-					.attr('height', self.height)
-					.attr('width', self.width);
-
-		self.addMaxExtent(props);
-
-		self.addChart(props);
- 
-		self.addXAxis(props);
-
-		self.addGroupLines();
-
-		// Redraw based on the new size whenever the browser window is resized.
-      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
-	},
-
-	update(el, props, state){
-		if(state === undefined) {
-			return;
-		}
-
-		let self = this;
-
-		this.svg = d3.select(el).select("svg");
-
-		// Initialize all chart attributes
-		this.init(el, props, state);
-
-		this.svg.selectAll("#maxExtent").remove();
-		this.addMaxExtent(props);
-
-		this.svg.selectAll("#bars").remove();
-		this.addChart(props);
-
-
- 		this.svg.selectAll("g.x.axis").remove();
-		this.addXAxis(props);
-
-		// Add Grouping Lines
-		this.svg.selectAll("#groups").remove();
-		this.addGroupLines();
-
-	},
-
-	destroy(el){
-		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
-	},
-
-	onMouseOverHandler() {
-		console.log("onMouseOverHandler");
-	},
-
-	onMouseOutHandler() {
-		console.log("onMouseOutHandler");
 	},
 
 }

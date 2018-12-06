@@ -9,30 +9,19 @@ import stackedBarChart from '../../../js/bar-charts/stacked-bar-chart';
 class StackedBarChart extends React.Component {
 
 	componentDidMount() {
-		let {data} = this.props;
+		let {data, ...rest } = {...this.props};
 
-		stackedBarChart.create(ReactDOM.findDOMNode(this), 
-			...this.props, 
-			data);
+		stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data);
 	}
 
 	componentDidUpdate() {
-		let {data} = this.props;
+		let {data, ...rest } = {...this.props};
 
-		stackedBarChart.update(ReactDOM.findDOMNode(this), 
-			...this.props, 
-			data);
+		stackedBarChart.update(ReactDOM.findDOMNode(this), ...rest, data);
 	}
 
 	componentWillUnmount() {
 	
-	}
-
-	shouldComponentUpdate(nextProps) {
-		// Do a basic check to see if data has changed
-		return !( (this.props.data.length === nextProps.data.length) &&
-			(JSON.stringify(nextProps.data[0]) === JSON.stringify(this.props.data[0])) &&
-			(JSON.stringify(nextProps.data[nextProps.data.length-1]) === JSON.stringify(this.props.data[this.props.data.length-1])) );
 	}
 
 	render() {
@@ -44,16 +33,26 @@ class StackedBarChart extends React.Component {
 }
 
 StackedBarChart.propTypes = {
+    /** Function to be called when a bar is selected */
+    barSelectedCallback: PropTypes.func,
+    /** Function to be called when a bar is hovered */
+    barHoveredCallback: PropTypes.func,
+    /** This will define the name to be placed under columns */
+    groups: PropTypes.object,
     /** The data to populate the chart */
     data: PropTypes.array,
-    /** The data set to be selected on page load. */
-    defaultSelected: PropTypes.string,
-    /** Display configuration options */
-    displayConfig: PropTypes.object,
-    /** Function to be called when a bar is selected */
-    barSelectedCallback: PropTypes.func
-
+    /** The max width of the bar */
+    maxBarSize: PropTypes.number,
+    /** The chart bar to be set to selected */
+    selectedDataKey: PropTypes.string,
+    /** The order to display the stacked bar keys */
+    sortOrder: PropTypes.array,
+    /** The map of data keys to style classes */
+    styleMap: PropTypes.object,
+    /** The units to display on the max extent line */
+    units: PropTypes.string,
+    /** The labels to display in the xAxis */
+    xAxisLabels: PropTypes.object,
 }
-
 
 export default StackedBarChart;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 
@@ -11,35 +12,35 @@ import {Accordion} from "../../Accordion";
 
 import utils from "../../../../js/utils";
 
+const MAX_CHART_BAR_SIZE = 15;
+
 class StackedBarChartLayout extends React.Component{
 
-  state ={ 
-    chartData: this.props.chartData,
-    chartLegendData: this.props.chartLegendData,
-    chartDataKeySelected: this.props.chartDataKeySelected,
-    chartLegendDataHovered: undefined,
-    chartDataKeyHovered: undefined,
-    forceChartUpdate: false
+  state = { 
+    dataSet: this.props.dataSet,
+    barHovered: this.props.barHovered,
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({...nextProps});
+    this.setState({ dataSet: nextProps.dataSet, barHovered: undefined });
   }
 
-  barChartDataSelected(data) {
-    let key = Object.keys(data)[0];
-    
-    this.setState({chartLegendData: data[key], chartDataKeySelected: key});
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      (this.state.dataSet !== undefined && (this.state.dataSet.lastUpdated !== nextProps.dataSet.lastUpdated)) ||
+      (this.state.barHovered !== nextState.barHovered) ||
+      (this.state.dataSet.selectedDataKey !== nextProps.dataSet.selectedDataKey)
+    );
   }
 
-  barChartDataHovered(data, isHover) {
-    if(isHover) {
-      let key = Object.keys(data)[0];
-      this.setState({chartLegendDataHovered: data[key], chartDataKeyHovered: key});
+  barHoveredCallback(data, isHover) {
+    if(isHover){
+      this.setState({barHovered: data});
     }
     else {
-      this.setState({chartLegendDataHovered: undefined, chartDataKeyHovered: undefined});
+      this.setState({barHovered: undefined});
     }
+
   }
 
   getStyleMap(){
@@ -49,26 +50,96 @@ class StackedBarChartLayout extends React.Component{
   }
 
   getChartLegend() {
-    let dataKey = this.state.chartDataKeyHovered || this.state.chartDataKeySelected;
+
+    let {legendTitle, legendDataFormatFunc, sortOrder, styleMap} = this.props;
+    let {data, legendLabels, selectedDataKey, units} = this.state.dataSet;
+    let legendData;
+    if(this.state.barHovered){
+      selectedDataKey = Object.keys(this.state.barHovered)[0]
+      legendData = this.state.barHovered[selectedDataKey][0];
+      styleMap = styleMap.hover;
+    }
+    else {
+      let selectedData = data.find((dataItem) => Object.keys(dataItem)[0] ===  selectedDataKey );
+      legendData = selectedData && selectedData[selectedDataKey][0];
+    }
+
     return (
       <ChartLegendStandard 
-        headerName={this.props.chartLegendHeaderName} 
-        headerNameForValues={this.props.chartDisplayConfig.legendLabels && this.props.chartDisplayConfig.legendLabels[dataKey]}
-        data={(this.state.chartLegendDataHovered && this.state.chartLegendDataHovered[0]) || this.state.chartLegendData[0]}
-        dataFormatFunc={this.props.chartLegendDataFormatFunc}
-        styleMap={this.getStyleMap()}
-        sortOrder={this.props.chartDisplayConfig.sortOrder}
-        units={this.props.chartDisplayConfig.units} >
+        headerName={legendTitle} 
+        headerNameForValues={(legendLabels && legendLabels[selectedDataKey])}
+        data={legendData}
+        dataFormatFunc={legendDataFormatFunc}
+        styleMap={styleMap}
+        sortOrder={sortOrder}
+        units={units} >
       </ChartLegendStandard>
     );
   }
 
   render() {
-    let props = this.props;
+    let {title, sortOrder, styleMap, barSelectedCallback} = this.props;
+    let {data, selectedDataKey, groupNames, longUnits, xAxisLabels} = this.state.dataSet;
 
     return ( 
       <div className={styles.root}>
-        <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
+        <ChartTitle>{title}</ChartTitle>
+
+        {this.state.dataSet &&
+          <div>
+            <div className={styles.chart}>
+              <StackedBarChart 
+                data={data} 
+                selectedDataKey={selectedDataKey}
+                sortOrder={sortOrder}
+                groups={groupNames}
+                styleMap={styleMap}
+                units={longUnits}
+                maxBarSize={MAX_CHART_BAR_SIZE}
+                barSelectedCallback={barSelectedCallback}
+                barHoveredCallback={this.barHoveredCallback.bind(this)}
+                xAxisLabels={xAxisLabels}
+              />
+            </div>
+            <MediaQuery minWidth={769}>
+              {this.getChartLegend()}
+            </MediaQuery>
+            <MediaQuery maxWidth={768}>
+              <Accordion id={utils.formatToSlug(title)} text={["Show details", "Hide details"]}>
+                {this.getChartLegend()}
+              </Accordion>
+            </MediaQuery>
+          </div>
+        }
+
+      </div>
+    );
+  }
+}
+
+
+
+StackedBarChartLayout.propTypes = {
+    /** Title to display for the chart. Appears at the top. */
+    title: PropTypes.string,
+    /** Order to display the data keys */
+    sortOrder: PropTypes.array,
+    /** Styling for each data key */
+    styleMap: PropTypes.object,
+    /** This object holds all the related information for the dataSet. 
+    It also provides a LastUpdated property to verify this component should update. */
+    dataSet: PropTypes.object,
+
+}
+
+export default StackedBarChartLayout;
+
+
+  /*
+
+headerNameForValues={this.props.chartDisplayConfig.legendLabels && this.props.chartDisplayConfig.legendLabels[dataKey]}
+
+          <ChartTitle>{props.chartDisplayConfig.title}</ChartTitle>
         {this.state.chartData &&
           <div className={styles.chart}>
             <StackedBarChart 
@@ -95,26 +166,5 @@ class StackedBarChartLayout extends React.Component{
             {this.getChartLegend()}
           </MediaQuery>
         }
-      </div>
-    );
-  }
-}
 
-
-
-StackedBarChartLayout.propTypes = {
-    /** The object that contains properties for display */
-    chartDisplayConfig: PropTypes.object,
-    /** The data to populate the chart */
-    chartData: PropTypes.array,
-    /** The object will draw a line under the x-axis labels by group */
-    chartGroups: PropTypes.object,
-    /** The data set to be selected on page load. */
-    defaultSelected: PropTypes.string,
-    /** The title to appear on top of the legend */
-    chartLegendHeader: PropTypes.array,
-    /** Data that will appear in the legend. Array of key value pairs */
-    chartLegendData: PropTypes.array,
-}
-
-export default StackedBarChartLayout;
+*/

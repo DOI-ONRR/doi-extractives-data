@@ -27,7 +27,7 @@ const utils = {
 	            wait = false;               // Prevent future invocations
 	            setTimeout(function () {   	// After a period of time
 	                callback.call();        // Execute users function
-	                wait = true;			// And allow future invocations
+	                wait = true;						// And allow future invocations
 	            }, limit);
 	        }
 	    }
@@ -36,8 +36,19 @@ const utils = {
 		let groups = {};
 
 		data.map((item, index) => {
+			let itemGroup = '';
 
-			let itemGroup = this.resolveByStringPath(group, item);
+			if(Array.isArray(group)) {
+				group.forEach((entry, index) => {
+					itemGroup += this.resolveByStringPath(entry, item)+"_";
+					
+				});
+				itemGroup = itemGroup.slice(0, -1); 
+			}
+			else{
+				itemGroup = this.resolveByStringPath(group, item);
+			}
+			
 			let list = groups[itemGroup];
 
 			if(list) {

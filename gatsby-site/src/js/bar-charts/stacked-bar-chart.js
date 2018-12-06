@@ -235,7 +235,7 @@ const stackedBarChart = {
 				.attr("class", d => (self.styleMap && self.styleMap.bar))
 				.attr("data-key", d => Object.keys(d)[0])
 				.on("click", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
-				.on("touchstart", function(d){toggleSelectedBar(this, d, props.barSelectedCallback);})
+				.on("touchstart", function(d){d3.preventDefault(); toggleSelectedBar(this, d, props.barSelectedCallback);})
 				.on("mouseenter", function(d){toggleHoveredBar(d, props.barHoveredCallback, true);})
 				.on("mouseleave", function(d){toggleHoveredBar(d, props.barHoveredCallback, false);})
 				.selectAll("g")

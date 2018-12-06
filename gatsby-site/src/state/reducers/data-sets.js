@@ -241,8 +241,8 @@ const dataSetByYear = (key, source, filter, options) => {
 			});
 		}
 		
-		if(filter.limit > 0 ) {
-			results = results.splice(0,  filter.limit );
+		if(filter.limit > 0 && results.length > filter.limit) {
+			results.splice(0,  results.length - filter.limit );
 		}
 
 	}

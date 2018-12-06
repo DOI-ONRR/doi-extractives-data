@@ -44,8 +44,6 @@ const CHART_STYLE_MAP = {
 	}
 };
 
-
-
 // Define configs for filtering the data sets
 const KEY_STATS_OIL_DATA_ID = "KEY_STATS_OIL_DATA_ID";
 const KEY_STATS_GAS_DATA_ID = "KEY_STATS_GAS_DATA_ID";
@@ -119,7 +117,6 @@ const DISBURSEMENTS_BY_YEAR_CONFIG = {
 		limit: 10,
 	}
 };
-
 
 const PRODUCTION_VOLUMES_FISCAL_YEAR = "ProductionVolumesFiscalYear";
 const PRODUCTION_VOLUMES_CALENDAR_YEAR = "ProductionVolumesCalendarYear";
@@ -396,12 +393,3 @@ const getDefaultChartData = (dataSet) => {
 	let data = dataSet[dataSet.length-1][key];
 	return {chartLegendData: data, chartDataKeySelected: key }
 };
-
-
-/*
-
-		[CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY],
-		[CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY],
-		[CONSTANTS.REVENUES_ALL_KEY]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.REVENUES_ALL_KEY],
-		[CONSTANTS.DISBURSEMENTS_ALL_KEY]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.DISBURSEMENTS_ALL_KEY],
-		*/

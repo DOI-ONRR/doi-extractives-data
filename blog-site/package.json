@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "NRRD-blog",
+  "description": "Open data design at the Department of the Interior",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ryan Johnson <brent.johnson@onrr.gov>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/ONRR/doi-extractives-data/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.0",

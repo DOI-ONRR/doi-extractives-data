@@ -1,0 +1,2 @@
+webpackJsonp([0xc9305c9d1849],{940:function(n,l){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Rhode Island",unique_id:"RI",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
+//# sourceMappingURL=path---explore-ri-a48ae2d94cb89349c4d3.js.map

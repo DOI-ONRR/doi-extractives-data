@@ -1,0 +1,2 @@
+webpackJsonp([0xa783bc0f4dae],{926:function(e,l){e.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Mississippi",unique_id:"MS",is_cropped:!0,nearby_offshore_region:'the <a href="/explore/offshore-gulf/">Gulf of Mexico</a>',opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
+//# sourceMappingURL=path---explore-ms-478d840cb2ff6910c3df.js.map

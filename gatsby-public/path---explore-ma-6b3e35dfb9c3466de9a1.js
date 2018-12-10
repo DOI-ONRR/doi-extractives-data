@@ -1,0 +1,2 @@
+webpackJsonp([71234517265171],{920:function(n,t){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Massachusetts",unique_id:"MA",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
+//# sourceMappingURL=path---explore-ma-6b3e35dfb9c3466de9a1.js.map

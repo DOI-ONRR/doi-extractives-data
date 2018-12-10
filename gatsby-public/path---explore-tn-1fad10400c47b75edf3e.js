@@ -1,0 +1,2 @@
+webpackJsonp([0x633438e4a419],{943:function(n,e){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Tennessee",unique_id:"TN",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
+//# sourceMappingURL=path---explore-tn-1fad10400c47b75edf3e.js.map

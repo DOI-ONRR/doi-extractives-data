@@ -1,2 +1,0 @@
-webpackJsonp([0xf74aa62d7ee7],{942:function(n,t){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"South Dakota",unique_id:"SD",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-sd-76717972f7445a19ec41.js.map

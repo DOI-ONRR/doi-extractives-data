@@ -120,7 +120,6 @@ defaults:
     values:
       layout: reconciliation
 
-
   - scope:
       path: ''
       type: offshore_regions

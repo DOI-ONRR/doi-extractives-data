@@ -1,2 +1,0 @@
-webpackJsonp([0xc00a1162ce97],{916:function(n,l){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Indiana",unique_id:"IN",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-in-9d92a22681c56f989eda.js.map

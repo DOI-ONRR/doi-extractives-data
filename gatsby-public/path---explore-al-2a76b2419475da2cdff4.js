@@ -1,2 +1,0 @@
-webpackJsonp([0x87b0b44872f1],{902:function(e,l){e.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Alabama",unique_id:"AL",is_cropped:!0,nearby_offshore_region:'the <a href="/explore/offshore-gulf/">Gulf of Mexico</a>',opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-al-2a76b2419475da2cdff4.js.map

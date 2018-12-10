@@ -1,2 +1,0 @@
-webpackJsonp([0xd4bf9d36a4ee],{935:function(n,e){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"New York",unique_id:"NY",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-ny-6cea4f2786a4c32705b7.js.map

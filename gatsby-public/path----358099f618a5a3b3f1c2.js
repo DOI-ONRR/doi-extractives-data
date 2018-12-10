@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{266:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Natural Resources Revenue Data",description:"This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.",version:"v4.3.0",googleAnalyticsId:"UA-48605964-8"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----358099f618a5a3b3f1c2.js.map

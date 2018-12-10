@@ -1,2 +1,0 @@
-webpackJsonp([0xe0f6ac6b183e],{917:function(n,l){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Kansas",unique_id:"KS",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-ks-aceb8f91f551f41cee13.js.map

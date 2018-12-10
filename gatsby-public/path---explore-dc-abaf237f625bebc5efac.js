@@ -1,2 +1,0 @@
-webpackJsonp([69465263525547],{908:function(n,l){n.exports={pathContext:{stateMarkdown:{frontmatter:{title:"Washington, DC",unique_id:"DC",is_cropped:!0,nearby_offshore_region:null,opt_in:null,state_optin_intro:null,case_study_link:null,locality_name:null,state_revenue_year:null,priority:null,neighbors:null},fields:null,html:""}}}}});
-//# sourceMappingURL=path---explore-dc-abaf237f625bebc5efac.js.map

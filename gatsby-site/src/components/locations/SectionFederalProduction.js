@@ -32,7 +32,7 @@ const SectionFederalProduction = (props) => {
         <section id="federal-production" className="federal production">
 
             <section className="county-map-table" is="year-switcher-section">
-                <StickyHeader headerText={'Energy production in the entire state of '+usStateData.title}>
+                <StickyHeader headerText={'Production on federal land in '+usStateData.title}>
                     <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
                 </StickyHeader>
 

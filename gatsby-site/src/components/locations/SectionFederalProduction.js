@@ -114,7 +114,7 @@ const SectionFederalProduction = (props) => {
                                                         <GlossaryTerm termKey={termUnits}>{longUnits}</GlossaryTerm> :
                                                         longUnits
                                                     }{' '}of {productName.toLowerCase()} {suffixUnits}
-                                                    were produced in {' '}
+                                                    were produced on federal land in {' '+usStateData.title+' in '}
                                                     <span className="eiti-bar-chart-x-value">{ year }</span>.
                                                 </span>
                                                 <span className="caption-no-data" aria-hidden="true">

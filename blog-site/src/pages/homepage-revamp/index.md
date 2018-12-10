@@ -1,5 +1,5 @@
 ---
-title: "How we decided to rebuild our open-data homepage"
+title: "How we decided to rebuild our open-data homepage: part one"
 authors:
 - Shannon McHarg
 - Ryan Johnson

@@ -14,7 +14,7 @@ module.exports = {
   // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
 
   // This prefix is prepended to load all our related images, code, and pages.
-  pathPrefix: `${BASEURL}/gatsby-public`,
+  pathPrefix: `https://federalist-proxy.app.cloud.gov/preview/onrr/doi-extractives-data/3406-duplicate-sections-state-pages/gatsby-public`,
 
   siteMetadata: {
     title: 'Natural Resources Revenue Data',

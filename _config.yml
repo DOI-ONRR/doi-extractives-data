@@ -103,9 +103,6 @@ collections:
   offshore_regions:
     output: true
     permalink: /explore/:path/
-  states:
-    output: true
-    permalink: /explore/:path/
   reconciliation:
     output: true
     permalink: /how-it-works/reconciliation/:path/
@@ -123,11 +120,6 @@ defaults:
     values:
       layout: reconciliation
 
-  - scope:
-      path: ''
-      type: states
-    values:
-      layout: state-page
 
   - scope:
       path: ''

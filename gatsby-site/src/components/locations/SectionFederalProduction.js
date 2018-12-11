@@ -129,7 +129,7 @@ const SectionFederalProduction = (props) => {
                                     <div className="map-container">
 
                                         <h4 className="chart-title">
-                                            { usStateData.locality_name } production
+                                            { usStateData.locality_name || "County" } production
                                         </h4>
 
                                         <figure is="eiti-data-map-table">

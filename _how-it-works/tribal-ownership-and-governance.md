@@ -2,7 +2,7 @@
 title: Native American Lands | Ownership and Governance
 layout: content
 permalink: /how-it-works/native-american-ownership-governance/
-redirect_from: /how-it-works/tribal-ownership-governance/index.html
+redirect_from: /how-it-works/tribal-ownership-governance/
 nav_description: Jump to a section
 nav_items:
   - name: introduction

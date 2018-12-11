@@ -34,6 +34,7 @@ import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
 const NationalRevenue = (props) => {
 
     const REVENUE_COMMODITIES = NATIONAL_REVENUES[props.stateId].commodities;
+    let annual_revenue = NATIONAL_REVENUES[props.stateId].commodities.All[year];
 
     return (
         <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -57,8 +58,9 @@ const NationalRevenue = (props) => {
 
                 <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <Link to="/how-it-works/coal/">coal</Link>, <Link to="/how-it-works/onshore-oil-gas/">oil and gas</Link>, <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
 
-                <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> { year } for production or potential production of natural resources on federal land, broken down by phase of production.
+                <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> { year } for production or potential production of natural resources on federal land, broken down by phase of production. <strong>In { year }, ONRR collected a total of {utils.formatToDollarInt(annual_revenue)} in revenue.</strong>
                 </p>
+                
                 <p>
                     <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
                         <DataAndDocs />

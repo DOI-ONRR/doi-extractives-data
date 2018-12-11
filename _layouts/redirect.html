@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="refresh" content="0; url={{ page.redirect.to | prepend: site.baseurl }}" />
-    <link rel="canonical" href="{{ page.redirect.to | prepend: site.baseurl }}" />
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}" />
+    <link rel="canonical" href="{{ page.redirect.to }}" />
   </head>
   <h1>Redirecting...</h1>
   <p>If your browser doesn't redirect automatically, you can
-    <a href="{{ page.redirect.to | default: '/' | prepend: site.baseurl }}">do it manually</a>.</p>
+    <a href="{{ page.redirect.to | default: '/' }}">do it manually</a>.</p>
 </html>
 

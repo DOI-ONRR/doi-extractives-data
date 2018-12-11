@@ -32,7 +32,7 @@ const SectionFederalProduction = (props) => {
         <section id="federal-production" className="federal production">
 
             <section className="county-map-table" is="year-switcher-section">
-                <StickyHeader headerText={'Energy production in the entire state of '+usStateData.title}>
+                <StickyHeader headerText={'Production on federal land in '+usStateData.title}>
                     <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
                 </StickyHeader>
 
@@ -114,7 +114,7 @@ const SectionFederalProduction = (props) => {
                                                         <GlossaryTerm termKey={termUnits}>{longUnits}</GlossaryTerm> :
                                                         longUnits
                                                     }{' '}of {productName.toLowerCase()} {suffixUnits}
-                                                    were produced in {' '}
+                                                    were produced on federal land in {' '+usStateData.title+' in '}
                                                     <span className="eiti-bar-chart-x-value">{ year }</span>.
                                                 </span>
                                                 <span className="caption-no-data" aria-hidden="true">
@@ -129,7 +129,7 @@ const SectionFederalProduction = (props) => {
                                     <div className="map-container">
 
                                         <h4 className="chart-title">
-                                            { usStateData.locality_name } production
+                                            { usStateData.locality_name || "County" } production
                                         </h4>
 
                                         <figure is="eiti-data-map-table">
@@ -156,8 +156,8 @@ const SectionFederalProduction = (props) => {
                                                     year={year}>
                                                     <thead>
                                                         <tr>
-                                                            <th>{usStateData.locality_name}</th>
-                                                            <th colSpan='2' className='numeric' data-series='volume'>{ (longUnits.charAt(0).toUpperCase() + longUnits.slice(1))} of {productName.toLowerCase()}</th>
+                                                            <th>{usStateData.locality_name || "County"}</th>
+                                                            <th colSpan='2' className='numeric' data-series='volume'>{ longUnits.toLowerCase() } of {productName.toLowerCase()}</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>

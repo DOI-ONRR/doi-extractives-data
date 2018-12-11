@@ -156,7 +156,7 @@ const SectionFederalProduction = (props) => {
                                                     year={year}>
                                                     <thead>
                                                         <tr>
-                                                            <th>{usStateData.locality_name}</th>
+                                                            <th>{usStateData.locality_name || "County"}</th>
                                                             <th colSpan='2' className='numeric' data-series='volume'>{ (longUnits.charAt(0).toUpperCase() + longUnits.slice(1))} of {productName.toLowerCase()}</th>
                                                         </tr>
                                                     </thead>

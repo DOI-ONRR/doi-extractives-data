@@ -38,10 +38,11 @@ How we chose [GatsbyJS](https://www.gatsbyjs.org/) is the subject of a separate 
 
 ## A hybrid site
 
-We knew we'd have to segment our transition to GatsbyJS into our [agile workflow](https://en.wikipedia.org/wiki/Agile_software_development), which meant we would have a hybridized site for the duration of the transition. It would result in some redundancy, with duplicative effort for some updates. But it would allow us to continue to iterate on the site, while incrementally transitioning our codebase.
+We knew we'd have to segment our transition to GatsbyJS into our [agile workflow](https://en.wikipedia.org/wiki/Agile_software_development), which meant we would have a hybridized site for the duration of the transition: part Jekyll, part GatsbyJS. It would result in some redundancy, with duplicative effort for some updates. But it would allow us to continue to iterate on the site, while incrementally transitioning our codebase.
 
 We had transitioned some of our site already: we migrated our [explore data page](https://revenuedata.doi.gov/explore/), which was a heavy lift that proved we could support both workflows simultaneously (the page serves as the data-heavy fulcrum of the site).
 
 The homepage presented an exciting opportunity, as the redesign would feature monthly data for the first time on the site. Up until that point, we'd published only annual data. It meant we needed a way to quickly and easily update the data.
 
 ## Rebuilding our homepage in GatsbyJS
+

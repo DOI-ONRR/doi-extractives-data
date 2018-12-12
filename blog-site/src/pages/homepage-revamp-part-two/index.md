@@ -34,7 +34,7 @@ Of course, we could have refactored just the data-update script, but that would 
 - A developer had to update the data.
 - The codebase had a significant learning curve for new developers, due to the custom implementation of Jekyll.
 
-At the same time, we didn't want to lose momentum on our user-centered design and development process, which we inherited from the skilled team at 18F. We'd identified new features that would benefit our users, and we wanted to keep iterating on the site. One of those features was an updated homepage design, intended to meet user needs with high-demand, timely data presented directly on the homepage.
+At the same time, we didn't want to lose momentum on our user-centered design and development process, which we inherited from our colleagues at 18F. We'd identified new features that would benefit our users, and we wanted to keep iterating on the site. One of those features was an updated homepage design, intended to meet user needs with high-demand, timely data presented directly on the homepage.
 
 How we chose [GatsbyJS](https://www.gatsbyjs.org/) is the subject of a separate post, but our homepage proved to be an early proof of concept for fully transitioning our codebase.
 
@@ -70,12 +70,6 @@ Where before our data-update scripts would generate multiple `.yml` files – st
 
 We use the [`gatsby-transformer-excel` plugin](https://www.gatsbyjs.org/packages/gatsby-transformer-excel/) to parse our Excel data and convert it into `JSON` arrays accessible to both GraphQL and D3.js, our data visualization library.
 
-- We're using GraphQL to read into an Excel file
-- Into the schema that we then query
-- Gatsby Excel plugin
-- Will be the same files users can download
-- Our data experts can now update the data on their own
-
 Here's a sample GraphQL query from the homepage to fetch revenue data:
 
 ```graphql
@@ -96,7 +90,10 @@ Here's a sample GraphQL query from the homepage to fetch revenue data:
       }
     }
 ```
-normal text
+
+Every member of our team can now update the homepage data, using only Excel and GitHub on their Interior-issued laptops. Now that we're publishing data every month, with a team distributed across multiple time zones, that makes a _huge_ difference. GraphQL dramatically enhances our ability to correct mistakes, ship content updates, and iterate on our visualizations.
+
+[Homepage data visualizations showing Revenue and Disbursements](./homepage-revenue-disbursements.jpg)
 
 ### Modularity
 - React's component framework allows gives us modularity which makes the site more maintainable. 

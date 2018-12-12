@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 import './layout.css'
+import './prism-theme.css'
 import Footer from './footer.js'
 import mastImage from '../img/NRRD_blog_mast.png'
 import Banner from './govbanner.js'

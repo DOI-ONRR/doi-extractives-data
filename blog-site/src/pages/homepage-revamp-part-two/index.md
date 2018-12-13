@@ -71,7 +71,7 @@ We'll look at each of these in the context of our homepage redesign.
 
 ### Cross-platform ready
 
-As mentioned above, our most significant challenge transitioning the codebase from 18F to our team was operating system compatibility. We struggled to get approval from our IT group for everything we needed to support the site. It was a time consuming process that, even when granted administrative privileges, still left us with dependecy errors and a parallel data-update workflow using separate machines.
+As mentioned above, our most significant challenge transitioning the codebase from 18F to our team was operating system compatibility. We struggled to get approval from our IT group for everything we needed to support the site. It was a time consuming process that, even when we were granted administrative privileges, still left us with dependecy errors and a parallel data-update workflow using separate machines.
 
 Gatsby combines multiple front-end tools into one, and the packages are managed with npm or yarn, so the scope of requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using.
 
@@ -149,7 +149,7 @@ This component architecture also feeds our pattern library (not yet live), so wh
 
 #### CSS Modules
 
-With our homepage rebuild, we also started using [CSS Modules](https://github.com/css-modules/css-modules). CSS Modules are CSS files "in which all class names and animation names are scoped locally by default," and they're a great way to limit tech debt caused by the accumulation of unused styles and avoid selector name collisions.
+With our homepage rebuild, we also started using [CSS Modules](https://github.com/css-modules/css-modules). CSS Modules are CSS files "in which all class names and animation names are scoped locally by default," and they're a great way to avoid selector name collisions and limit the accumulation of unused styles.
 
 Scoping and storing each component's CSS locally makes it much easier to track down and edit a component's styling.
 

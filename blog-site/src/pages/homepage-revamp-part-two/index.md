@@ -187,4 +187,4 @@ Page routing has been among the more significant challenges, ironically due to a
 
 ## The work never ends
 
-We'll continue to share our experience migrating Natural Resources Revenue Data. [Email us](mailto:nrrd@onrr.gov) or [track us down in GitHub](https://github.com/ONRR/doi-extractives-data) if you have questions or comments about our homepage or our transition to Gatsby.
+We'll continue to share our experience migrating Natural Resources Revenue Data. [Email us](mailto:nrrd@onrr.gov) or [track us down on GitHub](https://github.com/ONRR/doi-extractives-data) if you have questions or comments about our homepage or our transition to Gatsby.

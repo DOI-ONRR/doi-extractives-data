@@ -9,12 +9,14 @@ tags:
 - natural resources revenue data
 - gatsby
 - graphql
+- jekyll
 - design
 - data visualization
 - excel
 - d3
 - react
 - development
+- transition
 date: "2018-12-20"
 ---
 
@@ -159,4 +161,30 @@ Nothing is future-proof in technology, but migrating to Gatsby gets us closer, w
 
 ## Challenges during rebuild
 
-While our experience refactoring the homepage was largely positive, we have faced some challenges migrating to Gatsby...
+While our experience refactoring the homepage was largely positive, we have faced some challenges migrating to Gatsby. Some of those challenges are inherent in refactoring, caused by maintaining two codebases and build processes simultaneously. Others are perhaps due to the relatively new emergence of Gatsby itself, which is actively being worked on and upgraded.
+
+Here are the main challenges we've faced.
+
+### Long build times
+
+The site has parallel builds right now, compiling both the Gatsby and remaining Jekyll parts of the site. Build times can reach 20 minutes, much of which time is consumed by resolving nodes and edges in GraphQL queries. This can slow down our design and development workflow, and occasionally even results in build time-outs on the otherwise excellent Federalist.
+
+We expect we can optimize our code to mitigate our long build times, and having only one build process will help. But we are asking a lot of GraphQL, and we understand the build time is associated with the complexity of our query schema.
+
+### Redundancies
+
+Refactoring the site over time means we often have to manage content in two places. For instance, if we update content in the Jekyll part of the site, but we also have a Gatsby version in the pipeline, we need to update that, too.
+
+In some cases, we've delayed content updates or restyling, acknowledging it makes more sense to do so after the migration of that page or asset.
+
+Thankfully, we have strong communication on our team, and we work in the open, which helps us avoid more extreme problems with redundancy.
+
+### Integrating with Jekyll
+
+Related to redundancy, providing a seamless user experience between the Gatsby and Jekyll portions of the site has been a challenge. 
+
+Page routing has been among the more significant challenges, ironically due to a beloved feature in Gatsby: [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/). Developers tout Gatsby's speed, and prefetching page assets is integral to Gatsby's performance advantages. But when we link to a Jekyll page, Gatsby can't prefetch the assets, and we have to use workarounds to stitch the separate parts of the site together.
+
+## The work never ends
+
+We'll continue to share our experience migrating Natural Resources Revenue Data. [Email us](mailto:nrrd@onrr.gov) or [track us down in GitHub](https://github.com/ONRR/doi-extractives-data) if you have questions or comments about our homepage or our transition to Gatsby.

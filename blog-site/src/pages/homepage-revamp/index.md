@@ -17,7 +17,7 @@ tags:
 date: "2018-12-06"
 ---
 
-_This is part one of a two-part series about our homepage redesign._
+_This is part one of a two-part series about our homepage redesign. [Read part two here](/homepage-revamp-part-two/)._
 
 Digital teams from [18F](https://18f.gsa.gov/) and the [Department of the Interior](https://www.doi.gov/) have been publishing government data about energy and mineral extraction on federal lands and waters since 2014. The [Natural Resources Revenue Data](https://revenuedata.doi.gov/) portal provides that open government data today.
 

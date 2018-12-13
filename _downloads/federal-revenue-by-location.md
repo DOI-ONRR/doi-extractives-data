@@ -48,7 +48,7 @@ tag:
 
 {% include revenue-nav.html %}
 
-> We offer revenue data files for both calendar year and fiscal year. Calendar year revenue data is split into three separate files (onshore, offshore, and revenues not associated with a lease). Calendar year data is available for calendar years 2006 through 2017. Fiscal year data is available in a single file, for fiscal years 2006–2018. They are all {{ "accounting year" | term }} data.
+> We offer revenue data files for both calendar year and fiscal year. Calendar year revenue data is split into three separate files (onshore, offshore, and revenues not associated with a lease). Calendar year data is available for calendar years 2006–2017. Fiscal year data is available in a single file, for fiscal years 2006–2018. They are all {{ "accounting year" | term }} data.
 
 Download calendar year data:
 

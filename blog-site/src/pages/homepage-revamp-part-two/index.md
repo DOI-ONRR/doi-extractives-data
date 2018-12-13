@@ -18,13 +18,13 @@ tags:
 date: "2018-12-20"
 ---
 
-_This is part two of a two-part series about our homepage redesign. [Read part one here](/homepage-revamp/)._
+_This is the second post in our two-part series about our homepage redesign. [Read part one here](/homepage-revamp/)._
 
 A few months ago, our small team at the Office of Natural Resources Revenue (ONRR) decided we needed to refactor our [open-data website](https://revenuedata.doi.gov/). We knew we were in for a massive undertaking, as the site was originally built largely with [Jekyll](https://jekyllrb.com/), with significant custom coding to furnish bespoke features, automate data updates, and compile and deploy the site with 18F's fantastic static-site hosting service, [Federalist](https://federalist.18f.gov/).
 
 ## An early obstacle
 
-When our team was hired to transition the site from [18F](https://18f.gsa.gov/) in late 2017, one issue emerged as an immediate concern. Our team was issued Windows 7 laptops, and we had a problem (thankfully, we've since received Windows 10 machines), but the site's codebase wasn't particularly cross-platform friendly. Jekyll is built on Ruby: the former isn't officially supported on Windows, and the latter doesn't ship with Windows (as it does with macOS). To complicate matters further, the script to perform the most routine content management on the site – update the production, revenue, and disbursements data – assumed macOS/Linux output paths (forward slashes); the script broke on Windows.
+When our team was hired to transition the site from [18F](https://18f.gsa.gov/) in late 2017, one issue emerged as an immediate concern. Our team was issued Windows 7 laptops (thankfully, we've since received Windows 10 machines), and we had a problem; the site's codebase wasn't particularly cross-platform friendly. Jekyll is built on Ruby: the former isn't officially supported on Windows, and the latter doesn't ship with Windows (as it does with macOS). To complicate matters further, the script to perform the most routine content management on the site – update the production, revenue, and disbursements data – assumed macOS/Linux output paths (forward slashes). The script broke on Windows.
 
 Of course, we could have refactored just the data-update script, but that would have prevented macOS/Linux users from easliy forking and modifying [our code from GitHub](https://github.com/ONRR/doi-extractives-data). We wanted to create a workflow that would solve some of our biggest issues:
 
@@ -110,13 +110,13 @@ We update the Excel file, and we get our updated charts on build.
 
 ![Homepage data visualizations showing Revenue and Disbursements](./homepage-revenue-disbursements.jpg)
 
-Our three "innovation specialists" (design and development team members) are limited to four years in each of our respective positions, so one of our biggest priorities over that time is to create a sustainable workflow for content management on the site. Transforming our data update process is significant step in that direction, but one of the other advantages of Gatsby is its ability to pull in data from virtually any source, including databases and content management systems. The site will always need some level of developer support, but Gatsby's flexible architecture means we can start to look toward content management workflows that are practical for more of our team members.
+Our three "innovation specialists" (design and development team members) are limited to four years in each of our respective positions, so one of our biggest priorities over that time is to create a sustainable workflow for content management on the site. Transforming our data-update workflow is a significant step in that direction, but one of the other advantages of Gatsby is its ability to pull in data from virtually any source, including databases and content management systems. The site will always need some level of developer support, but Gatsby's flexible architecture means we can start to look toward content management workflows that are practical for more of our team members.
 
 ### Modularity
 
 Perhaps React's rising popularity is due to its modularity in the form of React components. Our site features repeating instances of similar or identical patterns, so Gatsby's use of React was attractive to our team.
 
-For example, the `KeyStatsSection` references the `StackedBarChartLayout` component, passing it props:
+For example, the `KeyStatsSection` component references the `StackedBarChartLayout` component, passing it props:
 
 ```jsx
 		return (

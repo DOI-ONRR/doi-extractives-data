@@ -108,13 +108,13 @@ select {
   border-radius: $form-border-radius;
   color: $gray-darkest;
   font-weight: $weight-light;
-  width: 74px;
   height: 40px;
   margin-bottom: 1em;
   overflow: hidden;
   padding: 0.5em 14% 0.5em 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 
   &:focus {
     box-shadow: $form-box-shadow-focus;

@@ -185,6 +185,6 @@ Related to redundancy, providing a seamless user experience between the Gatsby a
 
 Page routing has been among the more significant challenges, ironically due to a beloved feature in Gatsby: [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/). Developers tout Gatsby's speed, and prefetching page assets is integral to Gatsby's performance advantages. But when we link to a Jekyll page, Gatsby can't prefetch the assets, and we have to use workarounds to stitch the separate parts of the site together.
 
-## The work never ends
+## The work continues
 
 We'll continue to share our experience migrating Natural Resources Revenue Data. [Email us](mailto:nrrd@onrr.gov) or [track us down on GitHub](https://github.com/ONRR/doi-extractives-data) if you have questions or comments about our homepage or our transition to Gatsby.

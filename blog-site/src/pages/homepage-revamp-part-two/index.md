@@ -38,7 +38,7 @@ Of course, we could have refactored just the data-update script, but that would 
 - A developer had to update the data, and we have only one developer on the team.
 - The codebase had a significant learning curve for new developers, due to the custom implementation of Jekyll.
 
-At the same time, we didn't want to lose momentum on our user-centered design and development process, which we inherited from our colleagues at 18F. A refactored homepage served as an early proof of concept for fully transitioning our codebase.
+At the same time, we didn't want to lose momentum on our user-centered design and development process, which we inherited from our colleagues at 18F. A refactored homepage served as an early proof of concept for fully transitioning our codebase, while allowing us to continue adding value for users.
 
 We landed on [GatsbyJS](https://www.gatsbyjs.org/) as our choice to refactor the site. The full scope of how and why we chose Gatsby is the subject of another post, but our work on the homepage reveals many of the reasons we decided to move to Gatsby.
 

@@ -30,7 +30,7 @@ As covered in our [first post in this series](/homepage-revamp/), we were simult
 
 When our team was hired to [transition the site from 18F](https://18f.gsa.gov/2018/05/01/lessons-from-an-18f-product-transition/) in late 2017, one issue emerged as an immediate concern. Our team was issued Windows 7 laptops (thankfully, we've since received Windows 10 machines), and we had a problem: the site's codebase wasn't particularly cross-platform friendly. Jekyll is built with Ruby; the former isn't officially supported on Windows, and the latter doesn't ship with Windows (as it does with macOS). To complicate matters further, the script to perform the most routine content management on the site – update the production, revenue, and disbursements data – assumed macOS/Linux output paths (forward slashes). The script broke on Windows.
 
-Of course, we could have refactored just the data-update script, but that would have prevented macOS/Linux users from easliy forking and modifying [our code from GitHub](https://github.com/ONRR/doi-extractives-data). We wanted to create a workflow that would solve some of our biggest content management problems:
+Of course, we could have refactored just the data-update script, but that would have prevented macOS/Linux users from easily forking and modifying [our code from GitHub](https://github.com/ONRR/doi-extractives-data). We wanted to create a workflow that would solve some of our biggest content management problems:
 
 - We had to use our personal Mac computers to update the data.
 - We didn't have one source of truth for the data: we had `.tsv` data files to update the site visualizations with, and we had Excel files for download, both of which had to be manually maintained.

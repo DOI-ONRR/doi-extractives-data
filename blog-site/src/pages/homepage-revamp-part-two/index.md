@@ -1,5 +1,5 @@
 ---
-title: "How we decided to rebuild our open-data homepage: part two"
+title: "How we rebuilt our open-data homepage"
 authors:
 - Ryan Johnson
 - Jeff Keene

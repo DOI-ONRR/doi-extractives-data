@@ -120,7 +120,7 @@ Our three "innovation specialists" (design and development team members) are lim
 
 Perhaps React's rising popularity is due to its modularity in the form of React components. Our site features repeating instances of similar or identical patterns, so Gatsby's use of React was attractive to our team.
 
-For example, the `KeyStatsSection` component references the `StackedBarChartLayout` component, passing it props:
+For example, the homepage's `KeyStatsSection` component references the `StackedBarChartLayout` component, passing it props:
 
 ```jsx
 		return (
@@ -169,7 +169,7 @@ Here are the main challenges we've faced.
 
 ### Long build times
 
-The site has parallel builds right now, compiling both the Gatsby and remaining Jekyll parts of the site. Build times can reach 20 minutes, much of which time is consumed by resolving nodes and edges in GraphQL queries. This can slow down our design and development workflow, and occasionally even results in build time-outs on the otherwise excellent Federalist.
+The site has parallel builds right now, compiling both the Gatsby and remaining Jekyll parts of the site. Build times can reach 20 minutes, much of which time is consumed by building the GraphQL schema. This can slow down our design and development workflow, and occasionally results in build time-outs on the otherwise excellent Federalist.
 
 We expect we can optimize our code to mitigate our long build times, and having only one build process will help. But we are asking a lot of GraphQL, and we understand the build time is associated with the complexity of our query schema.
 

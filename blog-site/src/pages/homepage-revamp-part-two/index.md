@@ -3,7 +3,7 @@ title: "How we decided to rebuild our open-data homepage: part two"
 authors:
 - Ryan Johnson
 - Jeff Keene
-excerpt: In our second post about our homepage rebuild, we share how we converted our homepage to GatsbyJS with React/Redux, GraphQL, and D3 to visualize data sourced from Excel files, as we refactor the entire site.
+excerpt: In our second post about our homepage rebuild, we share how we converted our homepage to GatsbyJS with React, GraphQL, and D3 to visualize data sourced from Excel files, as we refactor the entire site.
 tags:
 - open data
 - natural resources revenue data

@@ -48,7 +48,7 @@ We knew we'd have to segment our transition to Gatsby into our [Agile workflow](
 
 > Refactoring is lots of small changes, none of which change the observable part of the software, but all of which change its internal structure. Usually (you refactor) because you want to make some new feature, and the current internal structure doesn't fit very well for that new feature. So you change the structure to make the new feature easy to fit in, all the time refactoring and not breaking anything, and then you can put it in.
 
-We'd transitioned some of our site already: we migrated our [explore data page](https://revenuedata.doi.gov/explore/), which was a heavy lift that proved we could support both workflows simultaneously (the page serves as the data-heavy fulcrum of the site).
+We'd transitioned some of our site already: we migrated our [explore data page](https://revenuedata.doi.gov/explore/), which was a heavy lift that proved we could support both workflows simultaneously (the page serves as the data-heavy fulcrum of the site). But in that transition, we'd left the data-update process largely alone.
 
 The homepage presented an exciting opportunity, as the redesign would feature monthly data for the first time on the site. Up until that point, we'd published only annual data. It meant we needed a way to quickly and easily update the data.
 
@@ -58,7 +58,7 @@ The homepage presented an exciting opportunity, as the redesign would feature mo
 
 Thankfully, Gatsby is open source. Had it not been, we wouldn't have considered it. Our team [works in the open, with open data, and open source tools](https://github.com/ONRR/doi-extractives-data). We think that model is a good fit for government. 
 
-In addition to being open source, there are five main reasons we used Gatsby to refactor the site, tested during our homepage rebuild:
+In addition to being open source, there are five main reasons we used Gatsby to refactor the site:
 
 1. Gatsby is a cross-platform ecosystem out of the box. 
 
@@ -77,7 +77,7 @@ We'll look at each of these in the context of our homepage redesign.
 
 As mentioned above, our most significant challenge transitioning the codebase from 18F to ONRR was operating system compatibility. We struggled to get approval from our IT group for everything we needed to support the site. It was a time consuming process that, even when we were granted administrative privileges, still left us with dependency errors and a parallel data-update workflow using separate machines.
 
-Gatsby combines multiple front-end tools into one, and the packages are managed with [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/), so the scope of requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using. As we'll describe in the next section, we were able to build a data-update workflow that we could support using our government-issued computers.
+Gatsby combines multiple front-end tools into one, and the packages are managed with [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/), so the scope of out IT requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using. As we'll describe in the next section, we were able to build a data-update workflow that we could support using our government-issued computers.
 
 ### GraphQL
 

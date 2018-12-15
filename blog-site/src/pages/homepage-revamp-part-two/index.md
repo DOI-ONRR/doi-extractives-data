@@ -30,7 +30,7 @@ As covered in our [first post in this series](/homepage-revamp/), we were simult
 
 When our team was hired to [transition the site from 18F](https://18f.gsa.gov/2018/05/01/lessons-from-an-18f-product-transition/) in late 2017, one issue emerged as an immediate concern. Our team was issued Windows 7 laptops (thankfully, we've since received Windows 10 machines), and we had a problem: the site's codebase wasn't particularly cross-platform friendly. Jekyll is built with Ruby; the former isn't officially supported on Windows, and the latter doesn't ship with Windows (as it does with macOS). To complicate matters further, the script to perform the most routine content management on the site – update the production, revenue, and disbursements data – assumed macOS/Linux output paths (forward slashes). The script broke on Windows.
 
-Of course, we could have refactored just the data-update script, but that would have prevented macOS/Linux users from easily forking and modifying [our code from GitHub](https://github.com/ONRR/doi-extractives-data). We wanted to create a workflow that would solve some of our biggest content management problems:
+Of course, we could have refactored just the data-update script, but what we really needed was a way for multiple team members to update the data from their government-issued computers (with limited admin rights). We wanted to create a workflow that would solve some of our biggest content management problems:
 
 - We had to use our personal Mac computers to update the data.
 - We didn't have one source of truth for the data: we had `.tsv` data files to update the site visualizations with, and we had Excel files for download, both of which had to be manually maintained.
@@ -77,7 +77,7 @@ We'll look at each of these in the context of our homepage redesign.
 
 As mentioned above, our most significant challenge transitioning the codebase from 18F to ONRR was operating system compatibility. We struggled to get approval from our IT group for everything we needed to support the site. It was a time consuming process that, even when we were granted administrative privileges, still left us with dependency errors and a parallel data-update workflow using separate machines.
 
-Gatsby combines multiple front-end tools into one, and the packages are managed with [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/), so the scope of out IT requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using. As we'll describe in the next section, we were able to build a data-update workflow that we could support using our government-issued computers.
+Gatsby combines multiple front-end tools into one, and the packages are managed with [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/), so the scope of our IT requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using. As we'll describe in the next section, we were able to build a data-update workflow that we could support using our government-issued computers.
 
 ### GraphQL
 

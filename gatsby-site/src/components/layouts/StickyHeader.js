@@ -1,7 +1,7 @@
 import React from 'react';
 
 const StickyHeader = (props) => {
-    const headerClassNames = {'className': " sticky sticky-header-wrapper flex-row "}; 
+    const headerClassNames = {'className': " sticky-header-wrapper flex-row "}; 
     const spanClassNames = {'className': " flex-row-flex "}; 
 
     return (

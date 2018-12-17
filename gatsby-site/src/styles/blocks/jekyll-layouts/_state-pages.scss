@@ -33,8 +33,7 @@
     @include h3-bar;
   }
 
-  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.sticky),
-  .pre-sticky {
+  h3:not(.chart-title):not(.title-land-ownership):not(.state-page-nav-title):not(.pre-sticky):not(.sticky-header-wrapper):not(.sticky) {
     margin-top: 4rem;
   }
 
@@ -139,6 +138,7 @@
     margin-left: $base-padding;
     padding-bottom: 0;
   }
+
 }
 
 .national-page {

@@ -8,6 +8,7 @@ import * as FEDERAL_COUNTY_PRODUCTION from '../../data/federal_county_production
 
 import ChartTitle from '../charts/ChartTitleCollapsible';
 import StickyHeader from '../layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from '../selectors/YearSelector';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
@@ -32,9 +33,11 @@ const SectionFederalProduction = (props) => {
         <section id="federal-production" className="federal production">
 
             <section className="county-map-table" is="year-switcher-section">
-                <StickyHeader headerText={'Production on federal land in '+usStateData.title}>
-                    <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
-                </StickyHeader>
+                <StickyWrapper bottomBoundary="#federal-production" innerZ="10000">
+                    <StickyHeader headerText={'Production on federal land in '+usStateData.title}>
+                        <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
+                    </StickyHeader>
+                </StickyWrapper>
 
                 { usStateFederalProducts === undefined ?
                     <div>

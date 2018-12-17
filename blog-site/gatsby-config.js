@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: 'Open data design at the Department of the Interior',
     author: 'Ryan Johnson',
-    description: 'Our blog about data, design, and innovation at the Department of the Interior.',
+    description: 'Our blog about data, design, and innovation at the Department of the Interior',
     siteUrl: 'https://revenuedata.doi.gov/',
   },
   pathPrefix: `${BASEURL}/blog`,

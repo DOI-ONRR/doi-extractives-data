@@ -65,9 +65,9 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Fields and definitions
 
-_Month_ The month the revenue was collected by ONRR
+_Month_ The month the revenue was collected by ONRR.
 
-_Calendar Year_ The calendar year for the month the revenue was collected by ONRR
+_Calendar Year_ The calendar year for the month the revenue was collected by ONRR.
 
 _Land Class_ This field distinguishes federal lands and waters from Native American lands. The latter is represented as "Indian" in the data.
 

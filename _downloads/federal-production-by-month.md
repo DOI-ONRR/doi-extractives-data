@@ -67,6 +67,10 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 ### Fields and definitions
 
+_Month_ The month for which the production was reported.
+
+_Calendar Year_ The calendar year for the month in which the production was reported. 
+
 _Production Date_ The last day of the month represents the data for that entire month. For example, 1/31/2008 represents the data for the month of January 2008.
 
 _Land Category_ The ownership of the land or waters where the production came from. Ownership is either federal or Native American (shown as "Indian" in the data).

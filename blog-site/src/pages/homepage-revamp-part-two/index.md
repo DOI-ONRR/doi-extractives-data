@@ -108,7 +108,7 @@ Here's a sample GraphQL query from the homepage to fetch revenue data:
     }
 ```
 
-Every member of our team can now update the homepage data, using only Excel and GitHub on their government-issued laptops. Now that we're publishing data every month, with a team distributed across multiple time zones, that makes a _huge_ difference. GraphQL dramatically improves our ability to quickly correct mistakes, ship content updates, and iterate on our data visualizations.
+Every member of our team can now update the homepage data, using only Excel and GitHub on their government-issued laptops. Now that we're publishing data every month, with a team distributed across multiple time zones, that makes a _huge_ difference. GraphQL improves our team's ability to quickly correct mistakes, ship content updates, and iterate on our data visualizations.
 
 We update the Excel file, and we get our updated charts on build.
 

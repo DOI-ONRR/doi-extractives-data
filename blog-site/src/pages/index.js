@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
+import favicon from '../../static/img/favicon.ico'
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class BlogIndex extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
+          link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
         />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug

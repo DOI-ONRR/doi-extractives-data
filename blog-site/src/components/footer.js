@@ -13,10 +13,10 @@ const Footer = () => (
       marginBottom: '0',
     }}
   >
-    <div class='footer-content'
+    <div className='footer-content'
     >
         <div
-          class='footer-img'
+          className='footer-img'
         >
           <a href='https://doi.gov/'>
               <img
@@ -33,7 +33,7 @@ const Footer = () => (
           </a>
         </div>
       <div
-        class='footer-contact'
+        className='footer-contact'
         style={{
           display: 'block',
         }}  
@@ -65,7 +65,7 @@ const Footer = () => (
           }} 
           href="mailto:nrrd@onrr.gov">nrrd@onrr.gov</a>
       </p>
-      <div class='team'
+      <div className='team'
         style={{
           display: 'block',
         }}
@@ -77,22 +77,22 @@ const Footer = () => (
             }}
           >From the team that works on <a style={{color: 'white'}} href='https://revenuedata.doi.gov'>Natural Resources Revenue Data</a></em>
       </div>
-      <div class='social'>
+      <div className='social'>
         <a href='https://github.com/ONRR/'>
           <img
-            class='social-icon'
+            className='social-icon'
             src={github}
             alt={`GitHub logo`}
           /></a>
           <a href='https://twitter.com/DOIONRR'> 
           <img
-            class='social-icon'
+            className='social-icon'
             src={twitter}
             alt={`Twitter logo`}
           /></a>
           <a href='https://www.facebook.com/DOIONRR/'>  
           <img
-            class='social-icon'
+            className='social-icon'
             src={facebook}
             alt={`Facebook logo`}
           /></a>

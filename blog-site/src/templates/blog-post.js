@@ -73,7 +73,7 @@ class BlogPostTemplate extends React.Component {
           </div>
         ))
       }
-        <ul class='other-posts'
+        <ul className='other-posts'
           style={{
             marginTop: '2rem',
             display: 'flex',

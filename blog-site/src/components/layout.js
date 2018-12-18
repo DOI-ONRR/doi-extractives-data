@@ -44,7 +44,7 @@ class Template extends React.Component {
       )
     } else {
       header = (
-        <h2 class="post-mast">
+        <h2 className="post-mast">
           <Link
             style={{
               boxShadow: 'none',
@@ -71,7 +71,7 @@ class Template extends React.Component {
     return (
     <div>
       <Banner /> 
-      <main class="angle"
+      <main className="angle"
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',

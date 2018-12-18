@@ -85,7 +85,7 @@ GraphQL has been a game changer for us. Our open data is largely comprised of fl
 
 Where before our data-update scripts would generate multiple `.yml` files – structured for the specific context in which the data would appear – we can now query the data with GraphQL and reference it in whatever context we need. Importantly, we maintain just one canonical data file and structure our query to fetch what we need.
 
-We use the [`gatsby-transformer-excel` plugin](https://www.gatsbyjs.org/packages/gatsby-transformer-excel/) to parse our Excel data and convert it into `JSON` arrays accessible to both GraphQL and D3.js, our data visualization library.
+We use the [`gatsby-transformer-excel` plugin](https://www.gatsbyjs.org/packages/gatsby-transformer-excel/) to parse our Excel data and convert it into `JSON` arrays accessible to both GraphQL and [D3.js](https://d3js.org/), our data visualization library.
 
 Here's a sample GraphQL query from the homepage to fetch revenue data:
 

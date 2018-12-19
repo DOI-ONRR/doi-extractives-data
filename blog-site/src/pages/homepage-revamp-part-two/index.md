@@ -50,7 +50,7 @@ We knew we'd have to segment our transition to Gatsby into our [Agile workflow](
 
 We'd transitioned some of our site already: we migrated our [explore data page](https://revenuedata.doi.gov/explore/), which was a heavy lift that proved we could support both workflows simultaneously (the page serves as the data-heavy fulcrum of the site). But in that transition, we'd left the data-update process largely the same.
 
-The homepage presented an exciting opportunity, as the redesign would feature monthly data for the first time on the site. Up until that point, we'd published only annual data. It meant we needed a way to quickly and easily update the data.
+The homepage presented an exciting opportunity, as the redesign would feature monthly data for the first time on the site. Up until that point, we'd published only annual data. The addition of monthly data meant we needed a way to quickly and easily update the data. It became even more important that other team members – besides just our developer – could update the data.
 
 ![homepage design of natural resources revenue data, featuring a map of the U.S., and charts for natural resources production, revenue, and disbursments on federal lands and waters](./full-homepage.jpg)
 

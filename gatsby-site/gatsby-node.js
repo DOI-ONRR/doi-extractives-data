@@ -70,7 +70,7 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql)]);
+  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
 };
 
 const withPathPrefix = (url, pathPrefix) => {
@@ -204,6 +204,60 @@ const createStatePages = (createPage, graphql) => {
 	  });
 };
 
+const createHowItWorksPages = (createPage, graphql) => {
+	const howItWorksDefault_Template = path.resolve(`src/templates/how-it-works-default.js`);
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(
+	        `
+						{
+						  allMarkdownRemark(filter: {id: {regex: "/how-it-works/"}}) {
+						    pages: edges {
+						      page: node {
+						        frontmatter {
+						          title
+						          permalink
+						          layout
+						          redirect_from
+						          selector
+						          nav_items {
+						            name
+						            title
+						            subnav_items {
+						              name
+						              title
+						            }
+						          }
+						        }
+						        htmlAst
+						      }
+						    }
+						  }
+						}
+	        `
+	      ).then(result => {
+	        if (result.errors) {
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+
+		          createPage({
+		            path,
+		            component: howItWorksDefault_Template,
+		            context: {
+		              markdown: page
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
 
 exports.modifyBabelrc = ({ babelrc }) => {
   if (process.env.NODE_ENV !== `production`) {

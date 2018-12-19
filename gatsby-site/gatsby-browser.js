@@ -68,13 +68,15 @@ exports.onClientEntry = () => {
   let path = window.location.pathname;
   let statePathId = path.substring((path.length-3), (path.length-1));
 
+  let lastFourteen = id.substr(id.length - 14); 
+
   if(path.includes("/explore") && (path.endsWith("e/") || path.endsWith("e"))) {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path": path}]);
   }
   else if(path.includes("/about")){
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
-  else if(path.includes("/how-it-works")){
+  else if(path.includes("/how-it-works") && !lastFourteen.includes("default-page")){
     loader.addPagesArray([{"componentChunkName":"component---src-templates-how-it-works-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works.json","path":path}]);
   }
   else if(path.includes("/explore") && usStateIds.includes(statePathId)) {

@@ -68,7 +68,7 @@ exports.onClientEntry = () => {
   let path = window.location.pathname;
   let statePathId = path.substring((path.length-3), (path.length-1));
 
-  let lastFourteen = id.substr(id.length - 14); 
+  let lastFourteen = path.substr(path.length - 14); 
 
   if(path.includes("/explore") && (path.endsWith("e/") || path.endsWith("e"))) {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-explore-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore.json","path": path}]);

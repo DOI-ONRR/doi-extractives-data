@@ -183,11 +183,47 @@ Thankfully, we have strong communication on our team, and we work in the open, w
 
 ### Integrating with Jekyll
 
-Related to redundancy, providing a seamless user experience between the Gatsby and Jekyll portions of the site has been a challenge. 
+Related to redundancy, providing a seamless user experience between the Gatsby and Jekyll portions of the site has been a challenge. There were 3 issues to resolve:
+1. Page url issue
+2. Gatsby prefetch error
+3. Federalist preview url
 
-Page routing has been among the more significant challenges, ironically due to a beloved feature in Gatsby: [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/). Developers tout Gatsby's speed, and prefetching page assets is integral to Gatsby's performance advantages. But when we link to a Jekyll page, Gatsby can't prefetch the assets, and we have to use workarounds to stitch the separate parts of the site together.
+#### Page url issue
+When Gatsby builds it creates a public directory for all assets. We then copied all this directory to a "gatsby-public" folder for Jekyll to use when it builds the site. However we didnt want our urls to include "gatsby-public", so we needed to add the permalink frontmatter attribute to our pages. Fortunately Gatsby provides a hook into the entire lifecycle of its build process including a "onPostBuild" api. We leverage this hook to then prepend the frontmatter to our pages as well as copy the public directory to the gatsby-public directory.
 
-Basically, the Jekyll part of the site deploys to a directory that isn't known to Gatsby at build time. Consequently, Gatsby creates a `pages.json` object that contains the wrong location for files. To deal with this, we add front matter to the Gatsby-built pages _after_ they're compiled and resolve the paths.
+#### Gatsby prefetch error
+Developers tout Gatsby's speed, and [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/) page assets is integral to Gatsby's performance advantages. However Gatsby is not aware of our deployment structure which results in an error when the page loads in production.
+
+Basically, the Jekyll part of the site deploys to a directory that isn't known to Gatsby at build time. Consequently, Gatsby creates a `pages.json` object that contains the wrong location for files. To deal with this, we utilize another feature of gatsby's client api, "onClientEntry". Using the gastby-browser.js file we override the pages.json by passing the correct assets to the global loader that gatsby uses. This was based on an issue opened by others facing the same challenge. 
+
+```javascript
+exports.onClientEntry = () => {
+  // Patch the resource loader
+  const loader = global.___loader;
+  if (!loader) return;
+
+  let path = window.location.pathname;
+
+	if(path.includes("/explore") && usStateIds.includes(statePathId)) {
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);
+  }
+}
+```
+#### Federalist preview url
+This issue is specific to the Federalist preview url and adding the baseurl to realtive links and assets. Gastby solves this by using a pathPrefix variable in its gastby-config and a custom component named Link. The only issue left was to add the Federalist baseurl to the pathPrefix variable in gastby-config. This was accomplished by leveraging the baseurl environemnt variable provide by federalist at build time.
+
+```javascript
+// Federalist provides the BASEURL env variable for preview builds.
+// https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
+const BASEURL = process.env.BASEURL || '';
+
+module.exports = {
+  // Note: it must *not* have a trailing slash.
+  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
+  // This prefix is prepended to load all our related images, code, and pages.
+  pathPrefix: `${BASEURL}/gatsby-public`,
+}
+```
 
 ## The work continues
 

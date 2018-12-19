@@ -55,7 +55,7 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/ownership/">Ownership</a></h3>
           <p>Private individuals and corporations, as well as federal, state, local, and Native American governments, can own land and the oil, gas, coal, and other minerals found below the surface.</p>
-          <p><a href="/how-it-works/ownership/">Learn about land and resource ownership</a></p>
+          <p><a href="/how-it-works/ownership/">Learn about land and resource ownership</a>.</p>
         </div>
       </div>
     </section>
@@ -100,7 +100,7 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/#native-american-overview">Native American laws and regulations</a></h3>
           <p>Extracting natural resources on Native American land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><a href="/how-it-works/#native-american-revenue-overview">Learn about Native American laws</a></p>
+          <p><a href="/how-it-works/#native-american-revenue-overview">Learn about Native American laws</a>.</p>
         </div>
       </div>
     </section>
@@ -110,12 +110,12 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-ownership-governance/">Ownership and governance</a></h3>
           <p>Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations.</p>
-          <p><a href="/how-it-works/native-american-ownership-governance/">Learn about governance on Native American land</a></p>
+          <p><a href="/how-it-works/native-american-ownership-governance/">Learn about governance on Native American land</a>.</p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-production/">Production</a></h3>
           <p>Extracting natural resources on Native American land involves unique processes and multiple stakeholders.</p>
-          <p><a href="/how-it-works/native-american-production/">Learn about production on Native American land</a></p>
+          <p><a href="/how-it-works/native-american-production/">Learn about production on Native American land</a>.</p>
         </div>
 <!--
 {% assign disbursements = site.data.federal_disbursements.US["American Indian Tribes"].All %}
@@ -123,12 +123,12 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-revenue/">Revenue</a></h3>
           <p>Natural resources are increasingly a key source of income for many Native American tribes. In <!--{{ disbursement_year }}-->,<glossary-term>ONRR</glossary-term> and <glossary-term>OST</glossary-term> disbursed <!-- {{ disbursements[disbursement_year] | intword | intcomma_dollar }}--> to tribes and allottees.</p>
-          <p><a href="/how-it-works/native-american-revenue/">Learn about Native American revenues</a></p>
+          <p><a href="/how-it-works/native-american-revenue/">Learn about Native American revenues</a>.</p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-economic-impact/">Economic impact</a></h3>
           <p>Extraction affects Native American economies in a number of ways, though effects vary widely depending on the level of extraction on and details of lease agreements.</p>
-          <p><a href="/how-it-works/native-american-economic-impact/">Learn about economic impact</a></p>
+          <p><a href="/how-it-works/native-american-economic-impact/">Learn about economic impact</a>.</p>
         </div>
       </div>
     </section>

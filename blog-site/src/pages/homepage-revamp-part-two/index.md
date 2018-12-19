@@ -183,18 +183,20 @@ Thankfully, we have strong communication on our team, and we work in the open, w
 
 ### Integrating with Jekyll
 
-Related to redundancy, providing a seamless user experience between the Gatsby and Jekyll portions of the site has been a challenge. There were 3 issues to resolve:
-1. Page url issue
+Related to redundancy, providing a seamless user experience between the Gatsby and Jekyll portions of the site has been a challenge. There were three issues to resolve:
+1. Page URL issue
 2. Gatsby prefetch error
-3. Federalist preview url
+3. Federalist preview URL
 
-#### Page url issue
-When Gatsby builds it creates a public directory for all assets. We then copied all this directory to a "gatsby-public" folder for Jekyll to use when it builds the site. However we didnt want our urls to include "gatsby-public", so we needed to add the permalink frontmatter attribute to our pages. Fortunately Gatsby provides a hook into the entire lifecycle of its build process including a "onPostBuild" api. We leverage this hook to then prepend the frontmatter to our pages as well as copy the public directory to the gatsby-public directory.
+#### Page URL issue
+When Gatsby builds the site, it creates a `public` directory for all required site assets. We copied this directory to a `gatsby-public` folder for the Jekyll build to use. However, we didn't want our URLs to include `gatsby-public`, so we needed to add a permalink attribute to our pages' front matter to override the default path. 
+
+Fortunately, Gatsby provides a hook into the entire lifecycle of its build process, including an [`onPostBuild` API](https://www.gatsbyjs.org/docs/node-apis/#onPostBuild). We use this hook to add the front matter to our pages and copy the `public` directory to the `gatsby-public` directory.
 
 #### Gatsby prefetch error
-Developers tout Gatsby's speed, and [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/) page assets is integral to Gatsby's performance advantages. However Gatsby is not aware of our deployment structure which results in an error when the page loads in production.
+Developers tout Gatsby's speed, and [prefetching](https://www.gatsbyjs.org/docs/how-code-splitting-works/) page assets is integral to Gatsby's performance advantages. However, Gatsby isn't aware of our deployment structure, which results in an error when a page loads in the production environment.
 
-Basically, the Jekyll part of the site deploys to a directory that isn't known to Gatsby at build time. Consequently, Gatsby creates a `pages.json` object that contains the wrong location for files. To deal with this, we utilize another feature of gatsby's client api, "onClientEntry". Using the gastby-browser.js file we override the pages.json by passing the correct assets to the global loader that gatsby uses. This was based on an issue opened by others facing the same challenge. 
+Basically, the Jekyll part of the site deploys to a directory that isn't known to Gatsby at build time. Consequently, Gatsby creates a `pages.json` object that contains the wrong locations for files. To deal with this, we use another feature of Gatsby's client API, [`onClientEntry`](https://www.gatsbyjs.org/docs/browser-apis/#onClientEntry). Using `gastby-browser.js`, we override `pages.json` by passing the correct assets to Gatsby.
 
 ```javascript
 exports.onClientEntry = () => {
@@ -209,8 +211,12 @@ exports.onClientEntry = () => {
   }
 }
 ```
-#### Federalist preview url
-This issue is specific to the Federalist preview url and adding the baseurl to realtive links and assets. Gastby solves this by using a pathPrefix variable in its gastby-config and a custom component named Link. The only issue left was to add the Federalist baseurl to the pathPrefix variable in gastby-config. This was accomplished by leveraging the baseurl environemnt variable provide by federalist at build time.
+#### Federalist preview URL
+As mentioned above, we use [Federalist](https://federalist.18f.gov/) to build and deploy the site. Federalist builds out every branch in our GitHub repository, so we can preview the changes before we merge them.
+
+We encountered an issue with the Federalist preview URLs and relative links and assets. Gastby solves this by using a `pathPrefix` variable in `gastby-config.js` and a custom component named `Link`. 
+
+We set a `BASEURL` environment variable in `gatsby-config.js` that resolves the Federalist preview URL at build time.
 
 ```javascript
 // Federalist provides the BASEURL env variable for preview builds.

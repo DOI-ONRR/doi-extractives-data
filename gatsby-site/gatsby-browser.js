@@ -74,6 +74,9 @@ exports.onClientEntry = () => {
   else if(path.includes("/about")){
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
+  else if(path.includes("/how-it-works")){
+    loader.addPagesArray([{"componentChunkName":"component---src-pages-how-it-works-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works.json","path": path}]);
+  }
   else if(path.includes("/explore") && usStateIds.includes(statePathId)) {
     loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);
   }

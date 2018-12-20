@@ -22,7 +22,7 @@
   top: 0;
   right: 0;
   overflow: hidden;
-	position: fixed;
+	position: absolute;
 	width: 300px;
 	z-index: 5000;
 }

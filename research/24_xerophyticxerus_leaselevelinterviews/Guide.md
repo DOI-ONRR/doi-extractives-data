@@ -10,10 +10,8 @@ I have a form for you to digitally sign giving us permission to conduct the stud
 * What the consent for is about (if the participant has any questions): It outlines your rights as a participant and says we won’t misuse your personal information.
 
 
-## User Task Background (people who fit our user profiles) (20 min)
+## User Task Background  (20 min)
 * What is your role and how do you use natural resources data in that role?
-* Have you used the Natural Resources Revenue portal before?
- - Tell me a little bit about what you use the Portal for.
 * What is your overall process when you are using natural resource data?
   - What are your goals?
   - What do you want people to know?
@@ -21,7 +19,17 @@ I have a form for you to digitally sign giving us permission to conduct the stud
   - How do you know where to look?
   - How do you verify the data you are going to use?
   - What does your output look like?
-* What are the most important pieces of information to you?
+* How do you use lease and well production data in that role?
+  - Where do they fit in the process?
+  - Which specific pieces of information do you need?
+  - How do you currently access the production data you need to do your job?
+  - How can the portal help facilitate that process?
+  - Is there a geographic component to how you want to use that data?
+  - How timely does the data need to be?
+  - In what format would you like to see monthly production data?
+  - How would you like to search for the data (e.g. by lease or agreement number in a database, on a map)
+* What kind of questions do you get from external people about production, particularly at the lease level?
+* Show lease level data map and get their comments.
 * Probes, as applicable:
   - lease level data
   - monthly data
@@ -30,37 +38,6 @@ I have a form for you to digitally sign giving us permission to conduct the stud
   - long-term trend analysis
   - withheld data
   - production rankings
-
-
-## About Testing Prototypes
-* We’re going to be looking at some prototypes of designs we’re thinking about.
-* Not everything will be clickable.  
-* We’re testing the design we’re not testing you.
-* I’d like you to think out loud
-* I want to know what you really think and how you would actually use it.  You can’t hurt my feelings. We want honest feedback so we can make the designs better.
-
-## Tasks & Questions (10-30 min)
-Prototype menu: https://u7sqr1.axshare.com/start_1.html
-
-* What is a task you would typically complete using our site?
-  - Complete it using this prototype.
-* What do you think of the home page?
-  - Data summary
-  - How it works content at top
-  - Map
-* What do you think of Explore Data?
-  - Splitting up the page
-  - Section summaries
-  - Section descriptions
-* Go to Revenue
-  - What do you think of the description at the top of the page?  Is it useful?
-  - In what order would you put the sections on this page?
-* Go back to Start page and click on Continue (withheld design)
-  - What do you think this design is telling you?
-  - If they don’t bring up the W for withheld, ask about it.
-
-
-
 
 ## Close (2 min)
 * Is there anyone else you recommend we speak with to get more insight on disbursements data?

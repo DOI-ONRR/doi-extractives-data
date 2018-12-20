@@ -4,6 +4,7 @@ import Link from '../utils/temp-link';
 import FEDERAL_DISBURSEMENTS from '../../data/federal_disbursements.yml'; 
 
 import StickyHeader from 'components/layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
@@ -56,7 +57,9 @@ const SectionDisbursements = (props) => {
 
 	return(
 		<section id="federal-disbursements" className="disbursements">
-			<StickyHeader headerText={'Federal disbursements'} />
+			<StickyWrapper bottomBoundary="#federal-disbursements" innerZ="10000">
+				<StickyHeader headerText={'Federal disbursements'} />
+			</StickyWrapper>
 
 			<p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
 			<p>

@@ -7,6 +7,7 @@ import PRODUCTION_UNITS from '../../../static/data/production_units.yml';
 
 import ChartTitle from '../charts/ChartTitleCollapsible';
 import StickyHeader from '../layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from '../selectors/YearSelector';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
@@ -28,9 +29,11 @@ const SectionAllProduction = (props) => {
 
     return (
         <section id="all-production" is="year-switcher-section" className="all-lands production">
-            <StickyHeader headerText={'Energy production in the entire state of '+usStateData.title}>
-                <YearSelector years={[2016,2015,2014,2013,2012,2011,2010,2009,2008,2007]} classNames="flex-row-icon" />
-            </StickyHeader>
+            <StickyWrapper bottomBoundary="#all-production" innerZ="10000">
+                <StickyHeader headerText={'Energy production in the entire state of '+usStateData.title}>
+                    <YearSelector years={[2016,2015,2014,2013,2012,2011,2010,2009,2008,2007]} classNames="flex-row-icon" />
+                </StickyHeader>
+            </StickyWrapper>
 
 			<div className="chart-selector-wrapper">
 				<div className="chart-description">

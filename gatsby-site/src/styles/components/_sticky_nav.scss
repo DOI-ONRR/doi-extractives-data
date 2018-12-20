@@ -88,3 +88,8 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .sticky_nav {
+    display: none;
+  }
+}

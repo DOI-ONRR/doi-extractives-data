@@ -4,6 +4,7 @@ import Link from '../utils/temp-link';
 import ALL_US_STATES_REVENUES from '../../data/state_revenues.yml'; 
 
 import StickyHeader from 'components/layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
@@ -28,7 +29,9 @@ const SectionRevenue = (props) => {
 
 			<section id="federal-revenue">
 
-				<StickyHeader headerText={'Federal revenue'} />
+				<StickyWrapper bottomBoundary="#fee-summaries" innerZ="10000">
+					<StickyHeader headerText={'Federal revenue'} />
+				</StickyWrapper>
 
 				<p>
 					Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. Revenue data on this site primarily includes non-tax revenue from extractive industry activities on federal land.
@@ -79,9 +82,11 @@ const SectionRevenue = (props) => {
 
 		                </div>
 
-			            <StickyHeader headerSize="h4" headerText={'Revenue from production on federal land by county'}>
-			                <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
-			            </StickyHeader>
+		              <StickyWrapper bottomBoundary="#federal-revenue-county-table" innerZ="10000">
+				            <StickyHeader headerSize="h4" headerText={'Revenue from production on federal land by county'}>
+				                <YearSelector years={[2017,2016,2015,2014,2013,2012,2011,2010,2009,2008]} classNames="flex-row-icon" />
+				            </StickyHeader>
+				           </StickyWrapper>
 						
 						<section className="chart-list">
 
@@ -99,7 +104,7 @@ const SectionRevenue = (props) => {
 								</div>
 							</div>
 
-							<section className="county-map-table">
+							<section id="federal-revenue-county-table" className="county-map-table">
 
 							</section>
 						</section>
@@ -119,9 +124,10 @@ const SectionRevenue = (props) => {
 
 			</section>
 
-			<section className="state revenue">
-
-				<StickyHeader headerText={'State revenue'} />
+			<section id="state-revenue" className="state revenue">
+				<StickyWrapper bottomBoundary="#state-revenue" innerZ="10000">
+					<StickyHeader headerText={'State revenue'} />
+				</StickyWrapper>
 
 				{usStateData.opt_in ?
 

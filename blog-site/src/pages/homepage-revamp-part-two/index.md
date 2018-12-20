@@ -32,7 +32,7 @@ When our team was hired to [transition the site from 18F](https://18f.gsa.gov/20
 
 Of course, we could have refactored just the data-update script, but what we really needed was a way for multiple team members to update the data from their government-issued computers (with limited admin rights). We wanted to create a workflow that would solve some of our biggest content management problems:
 
-- We had to use our personal Mac computers to update the data.
+- We couldn't use our government-issued computers to update the data.
 - We didn't have one source of truth for the data: we had `.tsv` data files to update the site visualizations with, and we had Excel files for download, both of which had to be manually maintained.
 - Updating the data required specific software dependencies (Make, SQLite3, npm), which our data specialists and subject matter experts lacked. Which meant...
 - A developer had to update the data, and we have only one developer on the team.
@@ -75,7 +75,7 @@ We'll look at each of these in the context of our homepage redesign.
 
 ### Cross-platform ready
 
-As mentioned above, our most significant challenge transitioning the codebase from 18F to ONRR was operating system compatibility. We struggled to get approval from our IT group for everything we needed to support the site. It was a time consuming process that, even when we were granted administrative privileges, still left us with dependency errors and a parallel data-update workflow using separate machines.
+As mentioned above, our most significant challenge transitioning the codebase from 18F to ONRR was operating system compatibility. We were asking a lot of our IT group, who had to vet our tech stack to ensure compatibility with other systems. It was a time consuming process that, even when we were granted administrative privileges, still left us with dependency errors and a parallel data-update workflow using separate machines.
 
 Gatsby combines multiple front-end tools into one, and the packages are managed with [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/), so the scope of our IT requests is limited to widely used package managers. From what we can tell so far, running Gatsby is nearly identical regardless of the operating system you're using. As we'll describe in the next section, we were able to build a data-update workflow that we could support using our government-issued computers.
 

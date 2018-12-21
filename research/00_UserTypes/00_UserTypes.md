@@ -1,10 +1,10 @@
 # User Types
 ## Who we've interviewed
-These are the types of users we've interviewed over the course of all studies since April 2018. (8 question answerers, 7 agenda supporters, 4 storytellers, 9 domain learners, 2 question answerer/storytellers, 1 domain learner/storyteller)
+These are the types of users we've interviewed over the course of all studies since April 2018. (12 question answerers, 7 agenda supporters, 4 storytellers, 15 domain learners, 2 question answerer/storytellers, 1 domain learner/storyteller)
 ![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
-We've interviewed 8 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
+We've interviewed 12 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
 ![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
 ### Goals 
 * Inform people about natural resource revenue data that they know is available.
@@ -80,7 +80,7 @@ We've interviewed 4 storytellers. And 3 users who are storytellers for how they 
 * A **journalist** at a major regional news outlet is writing a story about policy claims about energy production on public land. They’re able to find data about production trends both at the national and regional/state level, which helps them back up their story with accurate numbers that haven’t been influenced by personal or political objectives.
 
 ## User Type 4: Domain Learner
-We've interviewed 9 domain learners and 1 who finds data as a domain learner, but uses the data like a storyteller.
+We've interviewed 15 domain learners and 1 who finds data as a domain learner, but uses the data like a storyteller.
 ![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
 ### Goals 
 * Understand how the revenue collection and disbursement process works.

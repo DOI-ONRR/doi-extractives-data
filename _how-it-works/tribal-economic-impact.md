@@ -2,6 +2,7 @@
 title: Native American Lands | Economic Impact
 layout: content
 permalink: /how-it-works/native-american-economic-impact/
+redirect_from: /how-it-works/tribal-economic-impact/
 nav_description: Jump to a section
 nav_items:
   - name: introduction

@@ -2,6 +2,7 @@
 title: Native American Lands | Natural Resource Production
 layout: content
 permalink: /how-it-works/native-american-production/
+redirect_from: /how-it-works/tribal-production/
 nav_description: Jump to a section
 nav_items:
   - name: introduction

@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 import './layout.css'
+import './prism-theme.css'
 import Footer from './footer.js'
 import mastImage from '../img/NRRD_blog_mast.png'
 import Banner from './govbanner.js'
@@ -43,7 +44,7 @@ class Template extends React.Component {
       )
     } else {
       header = (
-        <h2 class="post-mast">
+        <h2 className="post-mast">
           <Link
             style={{
               boxShadow: 'none',
@@ -70,7 +71,7 @@ class Template extends React.Component {
     return (
     <div>
       <Banner /> 
-      <main class="angle"
+      <main className="angle"
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',

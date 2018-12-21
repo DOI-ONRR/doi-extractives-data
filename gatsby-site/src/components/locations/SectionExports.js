@@ -7,6 +7,7 @@ import ALL_US_STATES_EXPORTS from '../../data/state_exports.yml';
 
 import ChartTitle from '../charts/ChartTitleCollapsible';
 import StickyHeader from '../layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from '../selectors/YearSelector';
 import DataAndDocs from '../layouts/DataAndDocs';
 import GlossaryTerm from '../utils/glossary-term.js';
@@ -27,9 +28,11 @@ const SectionExports = (props) => {
 
 	return(
 		<section id="exports" is="year-switcher-section" class="economic exports">
-			<StickyHeader headerText={'Exports'}>
-				<YearSelector years={yearRange} classNames="flex-row-icon" />
-			</StickyHeader>
+			<StickyWrapper bottomBoundary="#exports" innerZ="10000">
+				<StickyHeader headerText={'Exports'}>
+					<YearSelector years={yearRange} classNames="flex-row-icon" />
+				</StickyHeader>
+			</StickyWrapper>
 
 			<div className="chart-list">
 

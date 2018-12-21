@@ -2,12 +2,17 @@
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
 const BASEURL = process.env.BASEURL || '';
 
+// Federalist provides the google_analytics env variable
+const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
+                (process.env.google_analytics[process.env.BRANCH] || process.env.google_analytics.default)
+                :
+                "UA-48605964-8";
 
 module.exports = {
   siteMetadata: {
     title: 'Open data design at the Department of the Interior',
     author: 'Ryan Johnson',
-    description: 'Our blog about data, design, and innovation at the Department of the Interior.',
+    description: 'Our blog about data, design, and innovation at the Department of the Interior',
     siteUrl: 'https://revenuedata.doi.gov/',
   },
   pathPrefix: `${BASEURL}/blog`,
@@ -34,10 +39,11 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 650,
               quality: 80,
             },
           },
@@ -58,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: GOOGLE_ANALYTICS_ID,
       },
     },
     `gatsby-plugin-offline`,

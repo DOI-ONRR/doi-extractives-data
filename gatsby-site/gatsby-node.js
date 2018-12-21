@@ -22,7 +22,7 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 
 	const { createNodeField } = boundActionCreators
 
-	/*createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `case_study_link`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `case_study_link`);
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_optin_intro`);
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_production`);
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_land`);
@@ -32,7 +32,7 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_tax_expenditures`);
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_disbursements`);
 	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_saving_spending`);
-	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_impact`);*/
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_impact`);
 
 };
 
@@ -67,11 +67,11 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
-/*exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   return Promise.all([createStatePages(createPage, graphql)]);
-};*/
+};
 
 const withPathPrefix = (url, pathPrefix) => {
 	let newPrefix = pathPrefix.slice(0, -14); // remove gatsby_public
@@ -250,9 +250,9 @@ exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);
     prependFile.sync(__dirname+'/public/explore/index.html', explorePageFrontmatter);
-    /*allStateIds.map((stateId,index) => {
+    allStateIds.map((stateId,index) => {
     	prependFile.sync(__dirname+'/public/explore/'+stateId+'/index.html',  "---"+os.EOL+"permalink: /explore/"+stateId+"/"+os.EOL+"---"+os.EOL);
-    });*/
+    });
     console.log("Finished prepending frontmatter to files.");
 
 	console.log("Copying Files from public to gatsby-public...");

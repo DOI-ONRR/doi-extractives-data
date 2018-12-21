@@ -2,6 +2,7 @@
 title: Native American Lands | Revenue
 layout: content
 permalink: /how-it-works/native-american-revenue/
+redirect_from: /how-it-works/tribal-revenue/
 nav_description: Jump to a section
 nav_items:
   - name: introduction

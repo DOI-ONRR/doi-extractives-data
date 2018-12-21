@@ -21,6 +21,7 @@ const usStateIds =[
   "GA",
   "HI",
   "IA",
+  "ID",
   "IL",
   "IN",
   "KS",

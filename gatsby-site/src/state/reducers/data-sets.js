@@ -15,6 +15,7 @@ const initialState = {
 	CalendarYear: {},
 	SourceData: {},
 	SyncIds: {},
+	FilteredResults: {},
 };
 
 
@@ -23,6 +24,7 @@ const HYDRATE = 'HYDRATE_DATA_SETS';
 const GROUP_BY_YEAR = 'GROUP_DATA_SETS_BY_YEAR';
 const GROUP_BY_MONTH = 'GROUP_DATA_SETS_BY_MONTH';
 const SET_DATA_SELECTED_BY_ID = 'SET_DATA_SELECTED_BY_ID';
+const FILTER_DATA_SETS = 'FILTER_DATA_SETS';
 
 
 // Define Action Creators 
@@ -30,6 +32,7 @@ export const hydrate = (dataSets) => ({ type: HYDRATE, payload: dataSets });
 export const groupByYear = (configs) => ({ type: GROUP_BY_YEAR, payload: configs });
 export const groupByMonth = (configs) => ({ type: GROUP_BY_MONTH, payload: configs });
 export const setDataSelectedById = (configs) => ({ type: SET_DATA_SELECTED_BY_ID, payload: configs });
+export const filterDataSets = (configs) => ({ type: FILTER_DATA_SETS, payload: configs });
 
 
 // Define Action Handlers
@@ -97,6 +100,19 @@ const setDataSelectedByIdHandler = (state, action) => {
 	return ({...state, ...results });
 }
 
+const filterDataSetsHandler = (state, action) => {
+	const { payload } = action;
+
+	let results = {FilteredResults: {...state.FilteredResults}};
+
+	payload.forEach((config) => {
+		results["FilteredResults"][config.id] = filterSourceData(config.sourceKey, state, config.filter, config.options);
+
+	});
+
+	return ({...state, ...results });
+}
+
 const addDataSetSync = (syncId, dataId, results) => {
 	if(syncId){
 		if(results.SyncIds[syncId]){
@@ -114,7 +130,8 @@ export default createReducer(initialState, {
 	[HYDRATE]: hydrateHandler,
 	[GROUP_BY_YEAR]: groupByYearHandler,
 	[GROUP_BY_MONTH]: groupByMonthHandler,
-	[SET_DATA_SELECTED_BY_ID]: setDataSelectedByIdHandler
+	[SET_DATA_SELECTED_BY_ID]: setDataSelectedByIdHandler,
+	[FILTER_DATA_SETS]: filterDataSetsHandler
 });
 
 
@@ -180,9 +197,35 @@ const setFiscalCalendarYear = (key, source, fiscalYear, calendarYear) => {
 	let fiscalYearItem = source.find(item => (getMonth(item.data) === "September"));
 	let calendarYearItem = source.find(item => (getMonth(item.data) === "December"));
 
-	fiscalYear[key] = (fiscalYearItem && parseInt(getYear(fiscalYearItem.data)));
+	fiscalYear[key] = (fiscalYearItem) ? parseInt(getYear(fiscalYearItem.data)) : parseInt(getYear(source[0].data));
 	calendarYear[key] = (calendarYearItem) ? parseInt(getYear(calendarYearItem.data)) : parseInt(getYear(source[0].data));
 
+}
+
+const filterSourceData = (key, state, filter, options) => {
+	let filteredSource = JSON.parse(JSON.stringify(state.SourceData[key]));
+
+	if(filter.where) {
+		Object.keys(filter.where).forEach((property) => {
+			if(property === "FiscalYear"){
+				let year = (filter.where[property] === "latest")? parseInt(state.FiscalYear[key]) : filter.where[property];
+				filteredSource = filteredSource.filter((item) => {
+					return getYear(item.data) === year;
+				});
+			}
+			else{
+				filteredSource = filteredSource.filter((item) => {
+					return item.data[property] === filter.where[property];
+				});
+			}
+		});
+	}
+
+	if(filter.select) {
+		filteredSource = filteredSource[0] && filteredSource[0].data[filter.select];
+	}
+
+	return filteredSource;
 }
 
 /** 
@@ -192,17 +235,18 @@ const setFiscalCalendarYear = (key, source, fiscalYear, calendarYear) => {
 const dataSetByYear = (key, source, filter, options) => {
 	if(source === undefined) return source;
 
-	let xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey;
+	let results, xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey;
 
 	// We add this for now until we update our data to always include units and long units
 	units = source[0].data.Units || "$";
 	longUnits = source[0].data.Units || "dollars";
 
-	let results = Object.entries(utils.groupBy(source, getYearKey(source[0].data))).map(e => ({[e[0]] : e[1] }) );
-
+	results = Object.entries(utils.groupBy(source, getYearKey(source[0].data))).map(e => ({[e[0]] : e[1] }) );
+	
 	// We assume if the data matches current year that we dont have the year of data, so we remove it
 	let currentYear = new Date().getFullYear();
 	results = results.filter((yearData) => parseInt(Object.keys(yearData)[0]) !== currentYear);
+
 
 	results.sort((a,b) => ( getYear(a[Object.keys(a)[0]][0].data) - getYear(b[Object.keys(b)[0]][0].data) ));
 

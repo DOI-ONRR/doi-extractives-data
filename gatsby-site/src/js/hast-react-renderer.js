@@ -9,6 +9,7 @@ import HowMainIconWind from '-!svg-react-loader!../img/svg/how-main-icon-wind.sv
 
 import GlossaryTerm from '../components/utils/glossary-term.js';
 import NavList from '../components/layouts/NavList';
+import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -23,7 +24,8 @@ const hastReactRenderer = new rehypeReact({
   							"how-main-icon-oil": HowMainIconOil,
   							"how-main-icon-coal": HowMainIconCoal,
   							"how-main-icon-hardrock": HowMainIconHardrock,
-  							"how-main-icon-wind": HowMainIconWind, },
+  							"how-main-icon-wind": HowMainIconWind,
+  							"display-statistic":  DisplayStatistic},
 
 }).Compiler; 
 

@@ -1,6 +1,8 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
+
 // Custom Data Transformers
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
@@ -54,12 +56,13 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	const { createNode } = boundActionCreators;
 
-	productionVolumesTransformer(createNode, 
+/*	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
 
 	revenuesTransformer(createNode, 
-		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));*/
 
+	console.log("sourceNodes");
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
 
@@ -70,7 +73,7 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
+  return Promise.all([createHowItWorksPages(createPage, graphql)]);
 };
 
 const withPathPrefix = (url, pathPrefix) => {
@@ -206,36 +209,10 @@ const createStatePages = (createPage, graphql) => {
 
 const createHowItWorksPages = (createPage, graphql) => {
 	const howItWorksDefault_Template = path.resolve(`src/templates/how-it-works-default.js`);
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_HOWITWORKS+GRAPHQL_QUERIES.DISBURSEMENTS_SORT_BY_YEAR_DESC+"}";
 	return new Promise((resolve, reject) => {
 	    resolve(
-	      graphql(
-	        `
-						{
-						  allMarkdownRemark(filter: {id: {regex: "/how-it-works/"}}) {
-						    pages: edges {
-						      page: node {
-						        frontmatter {
-						          title
-						          permalink
-						          layout
-						          redirect_from
-						          selector
-						          nav_items {
-						            name
-						            title
-						            subnav_items {
-						              name
-						              title
-						            }
-						          }
-						        }
-						        htmlAst
-						      }
-						    }
-						  }
-						}
-	        `
-	      ).then(result => {
+	      graphql(graphQLQueryString).then(result => {
 	        if (result.errors) {
 	          reject(result.errors);
 	        }
@@ -248,7 +225,8 @@ const createHowItWorksPages = (createPage, graphql) => {
 		            path,
 		            component: howItWorksDefault_Template,
 		            context: {
-		              markdown: page
+		              markdown: page,
+		              disbursements: result.data.Disbursements.disbursements,
 		            },
 		          });
 		        });

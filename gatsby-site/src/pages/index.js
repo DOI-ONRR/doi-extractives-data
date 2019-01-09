@@ -26,6 +26,7 @@ class HomePage extends React.Component {
   constructor(props){
     super(props);
 
+
     this.hydrateStore();
   }
 
@@ -217,17 +218,17 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }
@@ -238,17 +239,17 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }
@@ -259,17 +260,16 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }

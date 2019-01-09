@@ -57,7 +57,7 @@ const PRODUCTION_VOLUMES_BY_YEAR_CONFIG = {
 		selectedDataKeyIndex: "last", 
 	},
 	filter: {
-		sumBy:"ProductionCategory",
+		sumBy:"LandCategory_OnshoreOffshore",
 		limit: 10,
 	}
 };
@@ -76,7 +76,7 @@ const PRODUCTION_VOLUMES_BY_MONTH_CONFIG = {
 		selectedDataKeyIndex: "last",
 	},
 	filter: {
-		sumBy:"ProductionCategory",
+		sumBy:"LandCategory_OnshoreOffshore",
 		limit: 12,
 	}
 };

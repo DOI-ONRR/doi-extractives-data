@@ -50,7 +50,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 ### Revenue streams and rates
 
 <!--Oil and gas-->
-<p style="margin: 1.5em 0 0 0;">{% include svg/icon-oil.svg %} <strong>Oil and gas</strong></p>
+<p style="margin: 2em 0 0 0;">{% include svg/icon-oil.svg %} <strong>Oil and gas</strong></p>
 
 <table class="article_table">
   <thead>
@@ -83,7 +83,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Coal-->
-<p style="margin: 1.5em 0 0 0;">{% include svg/icon-coal.svg %} <strong>Coal</strong></p>
+<p style="margin: 2em 0 0 0;">{% include svg/icon-coal.svg %} <strong>Coal</strong></p>
 
 <table class="article_table">
   <thead>
@@ -119,7 +119,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Hardrock minerals-->
-<p style="margin: 1.5em 0 0 0;">{% include svg/icon-hardrock.svg %} <strong>Hardrock minerals</strong></p>
+<p style="margin: 2em 0 0 0;">{% include svg/icon-hardrock.svg %} <strong>Hardrock minerals</strong></p>
 
 <table class="article_table">
   <thead>
@@ -156,7 +156,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Solar and wind energy-->
-<p style="margin: 1.5em 0 0 0;">{% include svg/icon-renewables.svg %} <strong>Solar and wind energy</strong></p>
+<p style="margin: 2em 0 0 0;">{% include svg/icon-renewables.svg %} <strong>Solar and wind energy</strong></p>
 
 <table class="article_table">
   <thead>

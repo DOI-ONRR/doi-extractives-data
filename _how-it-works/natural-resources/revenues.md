@@ -68,7 +68,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <tbody>
     <tr>
       <td>Onshore</td>
-      <td><strong>Bonus</strong><br><br>
+      <td><strong>Bonus</strong><br>
           Amount paid for the lease by the highest bidder</td>
       <td><strong>$1.50</strong> annual rent per acre for the first 5 years, <strong>$2</strong> annual rent per acre thereafter</td>
       <td><strong>12.5%</strong> of production value in royalties</td>
@@ -103,7 +103,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td>Surface</td>
       <td><strong>Bonus</strong></td>
       <td><strong>$3</strong> annual rent per acre</td>
-      <td><strong>12.5%</strong> of production value in royalties<br><br>
+      <td><strong>12.5%</strong> of production value in royalties<br>
       <strong>$0.28</strong> per ton Abandoned Mine Land Fee
       </td>
     </tr>
@@ -111,7 +111,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td>Sub-surface</td>
       <td><strong>Bonus</strong></td>
       <td><strong>$3</strong> annual rent per acre</td>
-      <td><strong>8%</strong> of production value in royalties<br><br>
+      <td><strong>8%</strong> of production value in royalties<br>
       <strong>$0.12</strong> per ton Abandoned Mine Land Fee
       </td>
     </tr>
@@ -137,8 +137,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <tbody>
     <tr>
       <td>Public domain lands</td>
-      <td><strong>$20</strong> processing fee <br><br>
-          <strong>$37</strong> location fee <br><br>
+      <td><strong>$20</strong> processing fee <br>
+          <strong>$37</strong> location fee <br>
           <strong>$115</strong> initial maintenance fee
       </td>
       <td><strong>$155</strong> annual maintenance fee per claim</td>
@@ -147,7 +147,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Acquired lands</td>
       <td><strong>$6,500</strong> prospecting permit fee</td>
-      <td><strong>$0.50</strong> annual prospecting fee per acre <br><br>
+      <td><strong>$0.50</strong> annual prospecting fee per acre <br>
           <strong>$1</strong> annual rent per acre</td>
       <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
       </td>
@@ -174,16 +174,16 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <tbody>
     <tr>
       <td>Onshore (solar and wind)</td>
-      <td><strong>Bonus</strong> (inside designated leasing areas)<br><br>
+      <td><strong>Bonus</strong> (inside designated leasing areas)<br>
           <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
       <td><strong>Rent</strong> determined by acreage and land value</td>
-      <td> <strong>$6.21</strong> megawat capacity fee per KW from wind<br><br>
+      <td> <strong>$6.21</strong> megawatt capacity fee per KW from wind<br>
            <strong>$3.55 - $5.32</strong> megawatt capacity fee per KW from solar</td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>
-      <td><strong>Bonus</strong> (competitive lease)<br><br>
+      <td><strong>Bonus</strong> (competitive lease)<br>
           <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
       <td><strong>$3</strong> annual rent per acre</td>
       <td><strong>2%</strong> of anticipated value of wind energy produced in operating fee, unless otherwise specified or waived

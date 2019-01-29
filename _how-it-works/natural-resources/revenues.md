@@ -179,7 +179,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       </td>
       <td><strong>Rent</strong> determined by acreage and land value</td>
       <td> <strong>$6.21</strong> megawatt capacity fee per KW from wind<br>
-           <strong>$3.55 - $5.32</strong> megawatt capacity fee per KW from solar</td>
+           <strong>$3.55–$5.32</strong> megawatt capacity fee per KW from solar</td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>

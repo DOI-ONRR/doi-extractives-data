@@ -139,7 +139,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td>Public domain lands</td>
       <td><strong>$20</strong> processing fee <br>
           <strong>$37</strong> location fee <br>
-          <strong>$115</strong> initial maintenance fee
+          <strong>$155</strong> initial maintenance fee
       </td>
       <td><strong>$155</strong> annual maintenance fee per claim</td>
       <td><strong>No royalties</strong> are required to be paid</td>
@@ -191,8 +191,6 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
   </tbody>
 </table>
-
-<img src="{{site.baseurl}}/public/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
 
 <h2 id="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 

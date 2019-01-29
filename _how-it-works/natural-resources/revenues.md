@@ -142,14 +142,14 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
           <strong>$155</strong> initial maintenance fee
       </td>
       <td><strong>$155</strong> annual maintenance fee per claim</td>
-      <td><strong>No royalties</strong> are required to be paid</td>
+      <td><strong>No royalties</strong> are required to be paid.</td>
     </tr>
     <tr>
       <td>Acquired lands</td>
       <td><strong>$6,500</strong> prospecting permit fee</td>
       <td><strong>$0.50</strong> annual prospecting fee per acre <br>
           <strong>$1</strong> annual rent per acre</td>
-      <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
+      <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers.
       </td>
     </tr>
   </tbody>

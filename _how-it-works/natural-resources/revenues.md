@@ -186,7 +186,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td><strong>Bonus</strong> (competitive lease)<br>
           <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
       <td><strong>$3</strong> annual rent per acre</td>
-      <td><strong>2%</strong> of anticipated value of wind energy produced in operating fee, unless otherwise specified or waived
+      <td><strong>2%</strong> (unless otherwise specified or waived) of anticipated value of wind energy produced in operating fee
       </td>
     </tr>
   </tbody>

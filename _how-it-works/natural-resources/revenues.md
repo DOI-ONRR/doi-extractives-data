@@ -56,7 +56,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <td colspan="3" style="border-top: none; border-bottom: 1px solid;">Phase</td>
+      <th colspan="3" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
@@ -89,7 +89,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <td colspan="3" style="border-top: none; border-bottom: 1px solid;">Phase</td>
+      <th colspan="3" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
@@ -125,7 +125,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <td colspan="3" style="border-top: none; border-bottom: 1px solid;">Phase</td>
+      <th colspan="3" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
@@ -162,7 +162,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <td colspan="3" style="border-top: none; border-bottom: 1px solid;">Phase</td>
+      <th colspan="3" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>

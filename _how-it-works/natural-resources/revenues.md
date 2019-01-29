@@ -47,7 +47,150 @@ In general, companies pay bonuses, rents, royalties, or fees and penalties (if i
 
 Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.
 
-<img src="{{site.baseurl}}/public/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
+### Revenue streams and rates
+
+<!--Oil and gas-->
+<p style="margin: 2em 0 0 0;">{% include svg/icon-oil.svg %} <strong>Oil and gas</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="3" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Securing a lease or claim</th>
+      <th>Before production</th>
+      <th>During production</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Onshore</td>
+      <td><strong>Bonus</strong><br>
+          Amount paid for the lease by the highest bidder</td>
+      <td><strong>$1.50</strong> annual rent per acre for the first 5 years, <strong>$2</strong> annual rent per acre thereafter</td>
+      <td><strong>12.5%</strong> of production value in royalties</td>
+    </tr>
+    <tr>
+      <td>Offshore</td>
+      <td><strong>Bonus</strong></td>
+      <td><strong>$7</strong> or <strong>$11</strong> annual rent per acre increasing over time up to <strong>$44</strong> per acre in some cases</td>
+      <td><strong>12.5%</strong>, <strong>16.67%</strong>, or <strong>18.75%</strong> of production value in royalties</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Coal-->
+<p style="margin: 2em 0 0 0;">{% include svg/icon-coal.svg %} <strong>Coal</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="3" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Securing a lease or claim</th>
+      <th>Before production</th>
+      <th>During production</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Surface</td>
+      <td><strong>Bonus</strong></td>
+      <td><strong>$3</strong> annual rent per acre</td>
+      <td><strong>12.5%</strong> of production value in royalties<br>
+      <strong>$0.28</strong> per ton Abandoned Mine Land Fee
+      </td>
+    </tr>
+    <tr>
+      <td>Sub-surface</td>
+      <td><strong>Bonus</strong></td>
+      <td><strong>$3</strong> annual rent per acre</td>
+      <td><strong>8%</strong> of production value in royalties<br>
+      <strong>$0.12</strong> per ton Abandoned Mine Land Fee
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Hardrock minerals-->
+<p style="margin: 2em 0 0 0;">{% include svg/icon-hardrock.svg %} <strong>Hardrock minerals</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="3" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Securing a lease or claim</th>
+      <th>Before production</th>
+      <th>During production</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public domain lands</td>
+      <td><strong>$20</strong> processing fee <br>
+          <strong>$37</strong> location fee <br>
+          <strong>$155</strong> initial maintenance fee
+      </td>
+      <td><strong>$155</strong> annual maintenance fee per claim</td>
+      <td><strong>No royalties</strong> are required to be paid.</td>
+    </tr>
+    <tr>
+      <td>Acquired lands</td>
+      <td><strong>$6,500</strong> prospecting permit fee</td>
+      <td><strong>$0.50</strong> annual prospecting fee per acre <br>
+          <strong>$1</strong> annual rent per acre</td>
+      <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Solar and wind energy-->
+<p style="margin: 2em 0 0 0;">{% include svg/icon-renewables.svg %} <strong>Solar and wind energy</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="3" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Securing a lease or claim</th>
+      <th>Before production</th>
+      <th>During production</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Onshore (solar and wind)</td>
+      <td><strong>Bonus</strong> (inside designated leasing areas)<br>
+          <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
+      </td>
+      <td><strong>Rent</strong> determined by acreage and land value</td>
+      <td> <strong>$6.21</strong> megawatt capacity fee per KW from wind<br>
+           <strong>$3.55–$5.32</strong> megawatt capacity fee per KW from solar</td>
+    </tr>
+    <tr>
+      <td>Offshore (wind)</td>
+      <td><strong>Bonus</strong> (competitive lease)<br>
+          <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
+      <td><strong>$3</strong> annual rent per acre</td>
+      <td><strong>2%</strong> (unless otherwise specified or waived) of anticipated value of wind energy produced in operating fee
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 

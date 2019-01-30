@@ -1,8 +1,17 @@
+.layout-state-pages {
+
+  @include respond-to(medium-down) {
+    .sticky-header-wrapper {
+      margin-top: 42px !important;
+    }
+  }
+}
+
 .layout-state-pages .mobile-nav {
   display: block;
-  margin-top: 4rem;
   padding: 0;
   z-index: 9001;
+  background-color: white;
 
   @include respond-to(medium-up) {
     display: none;

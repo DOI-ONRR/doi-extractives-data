@@ -6,6 +6,7 @@ import lazy from 'lazy.js';
 import ALL_US_STATES_GDP from '../../data/state_gdp.yml'; 
 
 import StickyHeader from 'components/layouts/StickyHeader';
+import {StickyWrapper} from '../utils/StickyWrapper';
 import YearSelector from 'components/selectors/YearSelector';
 import DataAndDocs from 'components/layouts/DataAndDocs';
 import GlossaryTerm from 'components/utils/glossary-term.js';
@@ -34,9 +35,11 @@ const SectionGDP = (props) => {
 
 	return (
 		<section id="gdp" is="year-switcher-section" class="economic gdp">
-			<StickyHeader headerText={'Gross domestic product (GDP)'}>
-				<YearSelector years={[2016,2015,2014,2013,2012,2011,2010,2009,2008,2007]} classNames="flex-row-icon" />
-			</StickyHeader>
+			<StickyWrapper bottomBoundary="#gdp" innerZ="10000">
+				<StickyHeader headerText={'Gross domestic product (GDP)'}>
+					<YearSelector years={[2016,2015,2014,2013,2012,2011,2010,2009,2008,2007]} classNames="flex-row-icon" />
+				</StickyHeader>
+			</StickyWrapper>
 
 			<div className="chart-selector-wrapper">
 			    <div className="chart-description">

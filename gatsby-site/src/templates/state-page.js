@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from '../components/utils/temp-link';
-import { withPrefix } from 'components/utils/temp-link';
-import { withPrefixSVG } from 'components/utils/temp-link';
+import { withPrefix } from '../components/utils/temp-link';
+import { withPrefixSVG } from '../components/utils/temp-link';
 
 import Helmet from 'react-helmet';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import { connect } from 'react-redux';
 
-import NavList from 'components/layouts/NavList';
-import StickyHeader from 'components/layouts/StickyHeader';
+import NavList from '../components/layouts/NavList';
+import StickyHeader from '../components/layouts/StickyHeader';
+import {StickyWrapper} from '../components/utils/StickyWrapper';
 import SectionOverview from  '../components/locations/SectionOverview';
 import SectionAllProduction from '../components/locations/SectionAllProduction';
 import SectionFederalProduction from '../components/locations/SectionFederalProduction';
@@ -19,8 +20,8 @@ import SectionGDP from '../components/locations/SectionGDP';
 import SectionJobs from '../components/locations/SectionJobs';
 import SectionExports from '../components/locations/SectionExports';
 import SectionStateGovernance from '../components/locations/SectionStateGovernance';
-import MobileNav from 'components/layouts/MobileNav';
-import GlossaryTerm from 'components/utils/glossary-term.js';
+import MobileNav from '../components/layouts/MobileNav';
+import GlossaryTerm from '../components/utils/glossary-term.js';
 
 import ALL_US_STATES_PRODUCTION from '../data/state_all_production.yml'; 
 import * as TOP_STATE_PRODUCTS from '../data/top_state_products';
@@ -202,8 +203,10 @@ class StatePages extends React.Component {
 							<SectionFederalProduction usStateMarkdown={this.usStateMarkdown} />
 
 							{this.usStateFields.state_land &&
-								<div>
-									<StickyHeader headerText={'Production on state land in '+this.usStateData.title} />
+								<div id="production-state-land">
+                                    <StickyWrapper bottomBoundary="#production-state-land" innerZ="10000">
+									   <StickyHeader headerText={'Production on state land in '+this.usStateData.title} />
+                                    </StickyWrapper>
 									{ ReactHtmlParser(this.usStateFields.state_land) }
 								</div>
 							}
@@ -217,8 +220,10 @@ class StatePages extends React.Component {
 
 								<SectionDisbursements usStateMarkdown={this.usStateMarkdown} />
 
-								<section className="disbursements">
-									<StickyHeader headerText='State disbursements' />
+								<section id="state-disbursements" className="disbursements">
+                                    <StickyWrapper bottomBoundary="#state-disbursements" innerZ="10000">
+									   <StickyHeader headerText='State disbursements' />
+                                    </StickyWrapper>
 									{this.usStateData.opt_in ?
 										<StateDisbursements usStateData={this.usStateData} usStateFields={this.usStateFields} />
 										:

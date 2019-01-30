@@ -1,0 +1,11 @@
+@value colors: "../../../css-global/colors.css";
+@value gray-pale, black-light from colors;
+
+@value radius: 8px;
+
+.root{
+}
+
+.option {
+
+}

@@ -122,7 +122,7 @@ selector: list
 {% assign disbursement_year = site.data.years.disbursements | to_s | default: default_year %} -->
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-revenue">Revenue</a></h3>
-          <p>Natural resources are increasingly a key source of income for many Native American tribes. In <display-statistic filter='{"sourceKey": "disbursementsAll", "dataAttribute": "FiscalYear"}'></display-statistic>, <glossary-term>ONRR</glossary-term> and <glossary-term>OST</glossary-term> disbursed <display-statistic options='{"format": "formatToDollarInt"}' filter='{"sourceKey": "disbursementsAll", "dataAttribute": "Disbursement", "sumBy": "Fund", "where": {"Fund": "American Indian Tribes", "FiscalYear": "latest"}}'></display-statistic> to tribes and allottees.</p>
+          <p>Natural resources are increasingly a key source of income for many Native American tribes. In <display-year type='fiscal'></display-year>, <glossary-term>ONRR</glossary-term> and <glossary-term>OST</glossary-term> disbursed <display-statistic options='{"format": "formatToDollarInt"}' filter='{"sourceKey": "disbursementsAll", "dataAttribute": "Disbursement", "sumBy": "Fund", "where": {"Fund": "American Indian Tribes", "FiscalYear": "latest"}}'></display-statistic> to tribes and allottees.</p>
           <p><a href="/how-it-works/native-american-revenue">Learn about Native American revenues</a></p>
         </div>
         <div>

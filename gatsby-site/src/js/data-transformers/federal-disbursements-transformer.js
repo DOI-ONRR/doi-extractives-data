@@ -41,7 +41,7 @@ module.exports = (createNode, sourceData) => {
 }
 const createDisbursementsNode = (createNode, disbursementsData, index) => {
   let disbursementNode = {
-  	id: index+"-"+disbursementsData[SOURCE_COLUMNS.Fund]+"-disbursements",
+  	id: index+"-disbursement",
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
 	  DisplayYear: "'"+disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2),
 	  Fund: disbursementsData[SOURCE_COLUMNS.Fund],

@@ -40,7 +40,7 @@ class HomePage extends React.Component {
       {key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes},
-      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.Revenues.revenues},
+      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues},
       {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
     ]);
   }
@@ -265,6 +265,7 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          DisplayYear
           ProductionDate
           Units
           LongUnits
@@ -273,7 +274,7 @@ export const query = graphql`
         } 
       }
     }
-    Revenues:allRevenues (
+    allRevenues (
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {

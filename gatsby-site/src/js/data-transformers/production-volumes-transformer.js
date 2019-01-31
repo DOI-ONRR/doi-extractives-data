@@ -79,7 +79,7 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
 	if(productVolumeData[SOURCE_COLUMNS.Commodity] === undefined) return;
 
   let node = {
-  	id: index+"-"+productVolumeData[SOURCE_COLUMNS.Commodity]+"-productvolume",
+  	id: index+"-productvolume",
 	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
 	  ProductionDate: productVolumeData[SOURCE_COLUMNS.ProductionDate],

@@ -11,6 +11,7 @@ import GlossaryTerm from '../components/utils/glossary-term.js';
 import NavList from '../components/layouts/NavList';
 import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
+import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -27,7 +28,8 @@ const hastReactRenderer = new rehypeReact({
   							"how-main-icon-hardrock": HowMainIconHardrock,
   							"how-main-icon-wind": HowMainIconWind,
   							"display-statistic":  DisplayStatistic,
-  							"display-year": DisplayYear},
+  							"display-year": DisplayYear,
+                'display-disbursement':DisplayDisbursement},
 
 }).Compiler; 
 

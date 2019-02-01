@@ -15,18 +15,29 @@ class DisplayYear extends React.Component{
 	}
 
 	render() {
-		console.log(this.state, this.props);
+		let years = (this.props['accounting-type'] === 'calendar')? this.state.CalendarYear : this.state.FiscalYear;
+		
+		let displayYearValue = '';
+
+		switch(this.props['data-set-key'].toLowerCase()) {
+			case 'disbursements':
+				displayYearValue = years.disbursementsAll;
+				break;
+		}
+
 		return (
-			<div className={styles.root}>
-				DisplayYear
-			</div>
+			<span className={styles.root}>
+				{displayYearValue}
+			</span>
 		);
 	}
 }
 
 DisplayYear.propTypes = {
 	/** fiscal year or calendar year */
-	type: PropTypes.oneOf(['fiscal', 'calendar']),
+	'accounting-type': PropTypes.oneOf(['fiscal', 'calendar']),
+	/** Data Set Key to find the year values */
+	'data-set-key': PropTypes.string.isRequired,
 }
 
 DisplayYear.defaultProps = {

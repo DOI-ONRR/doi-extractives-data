@@ -27,8 +27,6 @@ class HowItWorksDefault extends React.Component {
   }
 
 	render () {
-		console.log("HowItWorksDefault");
-		console.log(this.props);
 		return (
 			<div>{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}</div>
 		);

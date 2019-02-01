@@ -6,6 +6,7 @@ import Link from '../components/utils/temp-link';
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
 
 import * as CONSTANTS from '../js/constants';
+import utils from '../js/utils';
 
 import {KeyStatsSection} from '../components/sections/KeyStatsSection';
 import {WhatsNew} from '../components/sections/WhatsNew';
@@ -43,6 +44,10 @@ class HomePage extends React.Component {
       {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues},
       {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
     ]);
+  }
+
+  componentDidMount() {
+    utils.hashLinkScroll();
   }
 
 	render() {
@@ -274,7 +279,7 @@ export const query = graphql`
         } 
       }
     }
-    allRevenues (
+    allRevenues:allResourcesRevenues(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {

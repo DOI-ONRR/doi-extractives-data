@@ -17,10 +17,10 @@ const SOURCE_COLUMNS = {
 	Month: "Month",
 	CalendarYear: "Calendar Year",
   ProductionDate: "Production Date",
-  LandCategory: "Land Category",
-  OnshoreOffshore: "Onshore/Offshore",
+  LandCategory: "Land Class",
+  OnshoreOffshore: "Land Category",
   Commodity: "Commodity",
-  Volume: " Volume ",
+  Volume: "Volume",
 };
 
 /* List of all the products in the excel file and the corresponding column name */
@@ -82,7 +82,6 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
   	id: index+"-productvolume",
 	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
-	  ProductionDate: productVolumeData[SOURCE_COLUMNS.ProductionDate],
 	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
 	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]],
@@ -93,6 +92,9 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
 	    type: `ProductVolumes`,
 	  },
   }
+
+
+	node.ProductionDate = new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth));
 
 	node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productVolumeData[SOURCE_COLUMNS.Commodity]];
 	node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[node.Units];
@@ -107,3 +109,12 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
 
 	createNode(node);
 }
+
+function getMonthFromString(month){
+
+   var d = Date.parse(month + "1, 2012");
+   if(!isNaN(d)){
+      return new Date(d).getMonth() + 1;
+   }
+   return -1;
+ }

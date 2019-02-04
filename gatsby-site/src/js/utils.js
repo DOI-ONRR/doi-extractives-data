@@ -1,8 +1,12 @@
+import * as d3 from 'd3';
 import slugify from 'slugify';
 import currencyFormatter from 'currency-formatter';
 
 // Import Display Name Yaml Files
 import commodityNames from '../data/commodity_names.yml';
+
+const extentPercent = 0.05;
+const extentMarginOfError = 0.10;
 
 const utils = {
 	getDisplayName_CommodityName: (key) => {
@@ -15,6 +19,11 @@ const utils = {
 
 	formatToDollarInt: (value) => {
 		return currencyFormatter.format(value, { symbol:'$', precision: 0, format: {pos: '%s%v',neg: '(%s%v)', zero: '%s%v'}});
+	},
+
+
+	formatToDollarFloat: (value, precision) => {
+		return currencyFormatter.format(value, { symbol:'$', precision: precision, format: {pos: '%s%v',neg: '(%s%v)', zero: '%s%v'}});
 	},
 
 	formatToCommaInt: (value) => {
@@ -61,23 +70,17 @@ const utils = {
 
 		return groups;
 	},
-	sumBy(data, group) {
-		let groups = {};
+	sumBy(data, property) {
+		let value = 0;
 
 		data.map((item, index) => {
-
-			let itemGroup = this.resolveByStringPath(group, item);
-			let list = groups[itemGroup];
-
-			if(list) {
-				list.push(item);
-			}
-			else {
-				groups[itemGroup] = [item];
+			let propertyValue = this.resolveByStringPath(property, item);
+			if(!isNaN(propertyValue)) {
+				value += propertyValue;
 			}
 		});
 
-		return groups;
+		return value;
 	},
 	resolveByStringPath(path, obj) {
 	    return path.split('.').reduce(function(prev, curr) {
@@ -91,9 +94,88 @@ const utils = {
 	{
 	    precision = precision || 0;
 	    return parseFloat( number ).toFixed( precision );
-	}
+	},
+	formatToSigFig_Dollar(value, precision) {
+		let num = d3.format(setSigFigs(value, value))(value);
+		let suffix = num.substring((num.length-1));
+		let roundedNum = this.formatToDollarFloat(num, precision);
+
+		return this.getMetricLongUnit(roundedNum+suffix);
+	},
+	getMetricLongUnit(str) {
+    var suffix = {k: 'k', M: ' million', G: ' billion'};
+
+    return str.replace(/[kMG]/g, (match) => {
+    	return suffix[match] || match;
+    });
+  },
+
 }
 
 export default utils;
+
+/**
+ * This is a format transform that turns a value
+ * into its si equivalent
+ *
+ * @param {String} str the formatted string
+ * @return {String} the string with a specified number of significant figures
+ */
+var siValue = (function() {
+  var suffix = {k: 1000, M: 1000000, G: 1000000000 };
+  return function(str) {
+    var number;
+    str = str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
+      number = str.replace(s, '').toString() || str;
+      return (+number * suffix[s]);
+    }).replace(/\.0+$/, '');
+    if (number) {
+      return str.slice(number.length, str.length);
+    } else {
+      return str;
+    }
+  };
+})();
+
+var crawlCeil = function(ymax, ceilMax, i) {
+  // When ymax is a value less than 10, the ratio of ceilMax and ymax will never
+  // be less than (1 + extentMarginOfError + extentPercent), and the function will continue
+  // be called in its parent function's while loop.
+
+  var sigFig = '.' + i + 's';
+
+ /* var sigFigCeil = +eiti.format.transform(
+    sigFig,
+    eiti.format.siValue
+  )(ceilMax);*/
+
+  let sigFigCeil = siValue(d3.format(sigFig)(ceilMax));
+ 
+  var ceilIsLargerThanValue = sigFigCeil > +ymax;
+  var ceilIsntTooBig = ( sigFigCeil / +ymax ) <= (1 + extentMarginOfError + extentPercent);
+  if(!ceilIsntTooBig){
+    ceilIsntTooBig = ((sigFigCeil - ymax) < 10); // Accomodate for small numbers if the difference is smal then this should be acceptable
+  }
+  var justRight = ceilIsLargerThanValue && ceilIsntTooBig;
+  return justRight ? sigFig : '';
+};
+
+/**
+ * This function formats a number as the number of significant digits
+ * with its amount (e.g. M for million, K for thousand, etc) abbreviation
+ * For example:
+ * 1,000,000 formats to 1M
+ * @param {Number} ymax
+ * @param {Number} ceilMax ymax + extent of the data set
+ */
+var setSigFigs = function(ymax, ceilMax) {
+  var sigFigs = '';
+  var SF = 0;
+  while (sigFigs.length < 3) {
+    SF++;
+    sigFigs = crawlCeil(ymax, ceilMax, SF);
+  }
+  return sigFigs;
+};
 
 

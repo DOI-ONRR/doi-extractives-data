@@ -43,7 +43,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/monthly_production_12-2018.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–8/2018 (xlsx, 57 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/monthly_production_02-2019.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–10/2018 (xlsx, 51 KB)</a></li>
   </ul>
 </p>
 

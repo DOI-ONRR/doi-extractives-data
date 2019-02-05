@@ -44,14 +44,14 @@ tag:
 Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_10-2018.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–10/2018 (xlsx, 216 KB)
+  <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_01-2019.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–01/2019 (xlsx, 295 KB)
   </a></li>
 </ul>
 <!--<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>-->
 
 ## Scope
 
-This dataset includes revenues paid by companies to extract natural resources on U.S. federal lands and waters. It also includes revenues generated on Native American tribal and individual lands. It does not include privately owned lands or state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month (we update the data every month). A given month's data is represented by the 1st day of the month (e.g., 10/1/2018 represents data for the month of October 2018).
+This dataset includes revenues paid by companies to extract natural resources on U.S. federal lands and waters. It also includes revenues generated on Native American tribal and individual lands. It does not include privately owned lands or state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month (we update the data every month).
 
 ### Why are some values negative?
 
@@ -65,9 +65,11 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 ### Fields and definitions
 
-_Date_ The first day of the month represents the data for that entire month. For example, 1/1/2008 represents the data for the month of January 2008.
+_Month_ The month the revenue was collected by ONRR.
 
-_Land Class_ This field distinguishes federal lands and waters from Native American lands. The latter is represented as "Indian" in the data.
+_Calendar Year_ The calendar year for the month the revenue was collected by ONRR.
+
+_Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
 _Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
 

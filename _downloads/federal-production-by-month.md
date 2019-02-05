@@ -43,7 +43,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/monthly_production_11-2018.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–7/2018 (xlsx, 47 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/monthly_production_02-2019.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–10/2018 (xlsx, 51 KB)</a></li>
   </ul>
 </p>
 
@@ -67,11 +67,13 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 ### Fields and definitions
 
-_Production Date_ The last day of the month represents the data for that entire month. For example, 1/31/2008 represents the data for the month of January 2008.
+_Month_ The month for which the production was reported.
 
-_Land Category_ The ownership of the land or waters where the production came from. Ownership is either federal or Native American (shown as "Indian" in the data).
+_Calendar Year_ The calendar year for the month in which the production was reported. 
 
-_Onshore/Offshore_ Shows whether the production was onshore (federal or Native American lands) or offshore (federal waters, such as the Gulf of Mexico).
+_Land Class_ This field distinguishes federal lands and waters from Native American lands.
+
+_Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
 
 _Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 

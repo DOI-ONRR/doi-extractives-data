@@ -14,6 +14,8 @@ const CONSTANTS = require('../../js/constants');
 
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
+	Month: "Month",
+	CalendarYear: "Calendar Year",
   RevenueDate: "Date",
   LandCategory: "Land Category",
   LandClass: "Land Class",
@@ -53,9 +55,10 @@ module.exports = (createNode, sourceData) => {
 const createRevenueNode = (createNode, revenueData, index) => {
   let revenueNode = {
   	id: index+"-revenue",
+  	Month: revenueData[SOURCE_COLUMNS.Month],
+  	CalendarYear: revenueData[SOURCE_COLUMNS.CalendarYear],
 	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandCategory]],
 	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandClass]],
-	  RevenueDate: revenueData[SOURCE_COLUMNS.RevenueDate],
 	  RevenueType: revenueData[SOURCE_COLUMNS.RevenueType],
 	  Commodity: revenueData[SOURCE_COLUMNS.Commodity],
 	  Revenue: revenueData[SOURCE_COLUMNS.Revenue],
@@ -66,6 +69,8 @@ const createRevenueNode = (createNode, revenueData, index) => {
 	  },
   }
 
+  revenueNode.RevenueDate = new Date(revenueNode.CalendarYear, getMonthFromString(revenueNode.Month));
+
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
 
   revenueNode.internal.contentDigest = crypto.createHash(`md5`)
@@ -73,3 +78,12 @@ const createRevenueNode = (createNode, revenueData, index) => {
 																      .digest(`hex`);
 	createNode(revenueNode);
 }
+
+function getMonthFromString(month){
+
+   var d = Date.parse(month + "1, 2012");
+   if(!isNaN(d)){
+      return new Date(d).getMonth() + 1;
+   }
+   return -1;
+ }

@@ -14,33 +14,34 @@ const CONSTANTS = require('../../js/constants');
 
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
+	Month: "Month",
+	CalendarYear: "Calendar Year",
   ProductionDate: "Production Date",
-  LandCategory: "Land Category",
-  OnshoreOffshore: "Onshore/Offshore",
-  OilProductionVolume: " Oil Prod Vol (bbl) ",
-  GasProductionVolume: " Gas Prod Vol (Mcf) ",
-  CoalProductionVolume: " Coal Prod Vol (ton) ",
+  LandCategory: "Land Class",
+  OnshoreOffshore: "Land Category",
+  Commodity: "Commodity",
+  Volume: "Volume",
 };
 
 /* List of all the products in the excel file and the corresponding column name */
-const SOURCE_COLUMNS_PRODUCTS = [
-  SOURCE_COLUMNS.OilProductionVolume,
-  SOURCE_COLUMNS.GasProductionVolume,
-  SOURCE_COLUMNS.CoalProductionVolume,
-];
+const SOURCE_COMMODITIES = {
+  OilProductionVolume: "Oil Prod Vol (bbl)",
+  GasProductionVolume: "Gas Prod Vol (mcf)",
+  CoalProductionVolume: "Coal Prod Vol (ton)",
+};
 
 /* Map the source column name to the display name we want to use for that product */
 const SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME = {
-	[SOURCE_COLUMNS.OilProductionVolume]: "Oil",
-	[SOURCE_COLUMNS.GasProductionVolume]: "Gas",
-	[SOURCE_COLUMNS.CoalProductionVolume]: "Coal",
+	[SOURCE_COMMODITIES.OilProductionVolume]: "Oil",
+	[SOURCE_COMMODITIES.GasProductionVolume]: "Gas",
+	[SOURCE_COMMODITIES.CoalProductionVolume]: "Coal",
 };
 
 /* Map the source column name to the units used for that product */
 const SOURCE_COLUMN_TO_PRODUCT_UNITS = {
-	[SOURCE_COLUMNS.OilProductionVolume]: "bbl",
-	[SOURCE_COLUMNS.GasProductionVolume]: "mcf",
-	[SOURCE_COLUMNS.CoalProductionVolume]: "tons",
+	[SOURCE_COMMODITIES.OilProductionVolume]: "bbl",
+	[SOURCE_COMMODITIES.GasProductionVolume]: "mcf",
+	[SOURCE_COMMODITIES.CoalProductionVolume]: "tons",
 };
 
 const PRODUCT_UNITS_TO_LONG_UNITS = {
@@ -54,12 +55,6 @@ const LOCATION_TYPE_TO_DISPLAY_NAME ={
 	"ONSHORE": "Onshore",
 }
 
-const LOCATION_CATEGORY_TO_DISPLAY_NAME ={
-	"FED - FEDERAL": "Federal",
-	"Federal": "Federal",
-	"IND - INDIAN": "Indian",
-	"Indian": "Indian",
-}
 
 const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 	"Federal": {
@@ -81,10 +76,16 @@ module.exports = (createNode, sourceData) => {
 }
 
 const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) => {
-  let productVolumeNode = {
-	  LandCategory: LOCATION_CATEGORY_TO_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.LandCategory]],
-	  LocationType: LOCATION_TYPE_TO_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.OnshoreOffshore]],
-	  ProductionDate: productVolumeData[SOURCE_COLUMNS.ProductionDate],
+	if(productVolumeData[SOURCE_COLUMNS.Commodity] === undefined) return;
+
+  let node = {
+  	id: index+"-productvolume",
+	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
+	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
+	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
+	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
+	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]],
+	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],
 	  parent: null,
 	  children: [],
 	  internal: {
@@ -92,37 +93,28 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
 	  },
   }
 
-  productVolumeNode.ProductionCategory = 
-  	LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY[productVolumeNode.LandCategory][productVolumeNode.LocationType];
 
-	assignByProduct(productVolumeNode, productVolumeData, index).map(node => createNode(node));
-}
+	node.ProductionDate = new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth));
 
-/**
- * The current excel spreadsheet has multiple products per line so here we break them out to
- * seperate nodes so we can filter and group by product using graphql.
- **/
-const assignByProduct = (productVolumeNode, productVolumeData, index) => {
-	let nodes = [];
+	node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productVolumeData[SOURCE_COLUMNS.Commodity]];
+	node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[node.Units];
+	node.LandCategory_OnshoreOffshore = 
+		node.LandCategory+( (node.OnshoreOffshore && node.LandCategory !== "Native American" )? " "+node.OnshoreOffshore.toLowerCase() : "" ) ;
+	node.DisplayMonth = node.ProductionMonth && node.ProductionMonth.substring(0, 3);
+	node.DisplayYear = node.ProductionYear && ("'"+node.ProductionYear.toString().substring(2));
 
-	SOURCE_COLUMNS_PRODUCTS.map((productKey) => {
-			if(productVolumeData[productKey] !== undefined) {
-				// make a deep copy of object
-				let node = JSON.parse(JSON.stringify(productVolumeNode));
-
-
-				node.id = index+"-"+SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey]+"-product-volume",
-				node.ProductName = SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productKey],
-				node.Volume = productVolumeData[productKey],
-				node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey],
-				node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[SOURCE_COLUMN_TO_PRODUCT_UNITS[productKey]],
-
-				node.internal.contentDigest = crypto.createHash(`md5`)
+  node.internal.contentDigest = crypto.createHash(`md5`)
 																      .update(JSON.stringify(node))
 																      .digest(`hex`);
-				nodes.push(node);
-			}
-		});
 
-	return nodes;
+	createNode(node);
 }
+
+function getMonthFromString(month){
+
+   var d = Date.parse(month + "1, 2012");
+   if(!isNaN(d)){
+      return new Date(d).getMonth() + 1;
+   }
+   return -1;
+ }

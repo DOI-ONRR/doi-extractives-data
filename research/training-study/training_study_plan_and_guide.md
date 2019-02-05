@@ -1,7 +1,7 @@
 # Background
 We have created a production filterable table to be able to sort our annual and monthly production using various relevant filters. The annual table will list all the commodities, and the monthly table will only list the highest producing commodities. These will serve as a home for lease level data once it is available.  We want to evaluate these designs with users. 
 
-Link to Filterable Production Table Draft
+Link to Filterable Production Table Draft: https://4cawh1.axshare.com/#g=1&p=explore_data
 # Goals
 * Determine how the users would use this table as a part of their overall task
 * Determine the best approach for filterable production tables on the page.

@@ -100,7 +100,7 @@ selector: list
         <div>
           <h3 class="h3 landing-heading"><a href="{{site.baseurl}}/how-it-works/#native-american-overview">Native American laws and regulations</a></h3>
           <p>Extracting natural resources on Native American land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><a href="{{site.baseurl}}/how-it-works/#native-american-revenue-overview">Learn about Native American laws</a></p>
+          <p><a href="{{site.baseurl}}/how-it-works/#native-american-overview">Learn about Native American laws</a></p>
         </div>
       </div>
     </section>

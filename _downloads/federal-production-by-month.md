@@ -71,11 +71,9 @@ _Month_ The month for which the production was reported.
 
 _Calendar Year_ The calendar year for the month in which the production was reported. 
 
-_Production Date_ The last day of the month represents the data for that entire month. For example, 1/31/2008 represents the data for the month of January 2008.
+_Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
-_Land Category_ The ownership of the land or waters where the production came from. Ownership is either federal or Native American (shown as "Indian" in the data).
-
-_Onshore/Offshore_ Shows whether the production was onshore (federal or Native American lands) or offshore (federal waters, such as the Gulf of Mexico).
+_Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
 
 _Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 

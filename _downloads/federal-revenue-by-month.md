@@ -69,7 +69,7 @@ _Month_ The month the revenue was collected by ONRR.
 
 _Calendar Year_ The calendar year for the month the revenue was collected by ONRR.
 
-_Land Class_ This field distinguishes federal lands and waters from Native American lands. The latter is represented as "Indian" in the data.
+_Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
 _Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
 

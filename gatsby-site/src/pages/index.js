@@ -6,6 +6,7 @@ import Link from '../components/utils/temp-link';
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
 
 import * as CONSTANTS from '../js/constants';
+import utils from '../js/utils';
 
 import {KeyStatsSection} from '../components/sections/KeyStatsSection';
 import {WhatsNew} from '../components/sections/WhatsNew';
@@ -41,9 +42,13 @@ class HomePage extends React.Component {
       {key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes},
-      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.Revenues.revenues},
+      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues},
       {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
     ]);
+  }
+
+  componentDidMount() {
+    utils.hashLinkScroll();
   }
 
 	render() {
@@ -219,17 +224,17 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }
@@ -240,17 +245,17 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }
@@ -261,21 +266,21 @@ export const query = graphql`
       volumes:edges {
         data:node {
           LandCategory
-          LocationType
-          ProductionDate
-          ProductionMonth:ProductionDate(formatString: "MMMM")
-          ProductionYear:ProductionDate(formatString: "YYYY")
-          DisplayYear:ProductionDate(formatString: "'YY")
-          DisplayMonth:ProductionDate(formatString: "MMM")
-          ProductionCategory
-          ProductName
+          OnshoreOffshore
           Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
           Units
           LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
         } 
       }
     }
-    Revenues:allRevenues (
+    allRevenues:allResourcesRevenues(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {

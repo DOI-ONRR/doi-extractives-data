@@ -14,6 +14,7 @@ module.exports = {
     author: 'Ryan Johnson',
     description: 'Our blog about data, design, and innovation at the Department of the Interior',
     siteUrl: 'https://revenuedata.doi.gov/',
+    googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   pathPrefix: `${BASEURL}/blog`,
   mapping: {

@@ -52,7 +52,7 @@ module.exports = (createNode, sourceData) => {
 }
 const createRevenueNode = (createNode, revenueData, index) => {
   let revenueNode = {
-  	id: index+"-"+revenueData[SOURCE_COLUMNS.Commodity]+"-revenue",
+  	id: index+"-revenue",
 	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandCategory]],
 	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandClass]],
 	  RevenueDate: revenueData[SOURCE_COLUMNS.RevenueDate],
@@ -62,7 +62,7 @@ const createRevenueNode = (createNode, revenueData, index) => {
 	  parent: null,
 	  children: [],
 	  internal: {
-	    type: `Revenues`,
+	    type: 'ResourcesRevenues',
 	  },
   }
 
@@ -71,6 +71,5 @@ const createRevenueNode = (createNode, revenueData, index) => {
   revenueNode.internal.contentDigest = crypto.createHash(`md5`)
 																      .update(JSON.stringify(revenueNode))
 																      .digest(`hex`);
-  //console.log(revenueNode);
 	createNode(revenueNode);
 }

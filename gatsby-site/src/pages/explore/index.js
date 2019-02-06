@@ -2,6 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 
+import utils from '../../js/utils';
+
 import { hydateDisbursements as hydateDisbursementsAction } from '../../state/reducers/disbursements';
 
 import NavList from '../../components/layouts/NavList';
@@ -113,6 +115,8 @@ class ExplorePage extends React.Component {
         script2.async = false;
 
         document.body.appendChild(script2);
+        
+        utils.hashLinkScroll();
     }
 
     render () {

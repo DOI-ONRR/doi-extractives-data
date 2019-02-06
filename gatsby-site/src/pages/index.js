@@ -278,7 +278,7 @@ export const query = graphql`
         } 
       }
     }
-    Revenues:allRevenues(
+    Revenues:allResourceRevenue(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {

@@ -69,6 +69,8 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
+
+const DEFAULT_TEMPLATE = path.resolve(`src/templates/default.js`);
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
@@ -207,8 +209,11 @@ const createStatePages = (createPage, graphql) => {
 };
 
 const createHowItWorksPages = (createPage, graphql) => {
+
 	const howItWorksDefault_Template = path.resolve(`src/templates/how-it-works-default.js`);
+
 	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_HOWITWORKS+GRAPHQL_QUERIES.DISBURSEMENTS_SORT_BY_YEAR_DESC+"}";
+	
 	return new Promise((resolve, reject) => {
 	    resolve(
 	      graphql(graphQLQueryString).then(result => {
@@ -219,10 +224,11 @@ const createHowItWorksPages = (createPage, graphql) => {
 	        	// Create pages for each markdown file.
 		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
 		          const path = page.frontmatter.permalink;
+		          let template = (path === '/how-it-works/')? howItWorksDefault_Template : DEFAULT_TEMPLATE;
 
 		          createPage({
 		            path,
-		            component: howItWorksDefault_Template,
+		            component: template,
 		            context: {
 		              markdown: page,
 		              disbursements: result.data.Disbursements.disbursements,

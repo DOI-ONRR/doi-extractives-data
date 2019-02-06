@@ -25,7 +25,7 @@ Prior to our training, our UX designer documented her [usability testing process
 
 ## Planning
 
-Using the outlined process, the analysts each put together a [study plan](https://github.com/ONRR/doi-extractives-data/blob/research/research/training-study/training_study_plan_and_guide.md) to test a [prototype for a new design](https://4cawh1.axshare.com/#g=1&p=yearly) we hadn’t yet tested with users. They both presented their plans for feedback from the UX designer and then combined the best parts of both to create the version they used for the mock interviews.
+Using the outlined process, the analysts each put together a [study plan](https://github.com/ONRR/doi-extractives-data/blob/research/research/training-study/training_study_plan_and_guide.md) to test a [prototype for a new design](https://4cawh1.axshare.com/#p=yearly) we hadn’t yet tested with users. They both presented their plans for feedback from the UX designer and then combined the best parts of both to create the version they used for the mock interviews.
 
 After they had completed their plan, the analysts created a [study guide](https://github.com/ONRR/doi-extractives-data/blob/research/research/training-study/training_study_plan_and_guide.md) for the user interviews and first practiced interviewing each other. Our UX designer then recruited colleagues to serve as our users. We asked some of them to give us their own opinions and some to role play people who fit into our typical user types to give the analysts experience dealing with different users.
 

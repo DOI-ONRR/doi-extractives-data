@@ -20,7 +20,6 @@ import {BlueButton} from '../components/layouts/buttons/BlueButton';
 import {ExploreDataLink} from '../components/layouts/icon-links/ExploreDataLink';
 import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink';
 
-import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 
 import styles from "./index.module.css";
 
@@ -42,7 +41,7 @@ class HomePage extends React.Component {
       {key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes},
       {key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes},
-      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues},
+      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.Revenues.revenues},
       {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
     ]);
   }
@@ -63,7 +62,6 @@ class HomePage extends React.Component {
             ]}
 
             />
-        <DisplayStatistic />
         <Tabordion>
           <Tab id="tab-overview" name="Overview"> 
             <div className={styles.tabContentContainer} >
@@ -280,7 +278,7 @@ export const query = graphql`
         } 
       }
     }
-    allRevenues:allResourcesRevenues(
+    Revenues:allRevenues(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {

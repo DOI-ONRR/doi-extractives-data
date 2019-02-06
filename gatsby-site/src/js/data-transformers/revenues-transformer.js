@@ -62,7 +62,7 @@ const createRevenueNode = (createNode, revenueData, index) => {
 	  parent: null,
 	  children: [],
 	  internal: {
-	    type: 'ResourcesRevenues',
+	    type: 'Revenues',
 	  },
   }
 

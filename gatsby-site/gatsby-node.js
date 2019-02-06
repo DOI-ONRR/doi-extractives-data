@@ -60,8 +60,6 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
 
-
-
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
 

@@ -31,7 +31,7 @@ const LAND_CATEGORY_TO_DISPLAY_NAME ={
 
 const LAND_CLASS_TO_DISPLAY_NAME ={
 	"Federal": CONSTANTS.FEDERAL,
-	"Indian": CONSTANTS.NATIVE_AMERICAN,
+	"Native American": CONSTANTS.NATIVE_AMERICAN,
 }
 
 const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
@@ -65,7 +65,7 @@ const createRevenueNode = (createNode, revenueData, index) => {
 	  parent: null,
 	  children: [],
 	  internal: {
-	    type: 'ResourcesRevenues',
+	    type: 'ResourceRevenues',
 	  },
   }
 

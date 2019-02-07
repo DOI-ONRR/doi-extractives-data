@@ -12,7 +12,7 @@ const WhatsNew = (props) => (
         <li>Published a <Link to="/blog">third blog post about usability testing training</Link>. This post covers how we're expanding our capacity to perform usability testing.</li>
         <li>Updated <Link to="/downloads/federal-revenue-by-location/">fiscal year revenue data</Link> through 2018</li>
         <li>Updated monthly production and revenue data</li>
-        <li>Converted <Link to="/how-it-works/revenues/#federal-lands-and-waters">revenue streams and rates</Link> image to table for accessibility.</li>
+        <li>Converted <Link to="/how-it-works/revenues/#federal-lands-and-waters">revenue streams and rates</Link> image to table for accessibility</li>
       </ul>
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>
 		</div>

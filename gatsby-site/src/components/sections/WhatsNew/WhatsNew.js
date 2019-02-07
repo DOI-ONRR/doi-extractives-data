@@ -7,12 +7,12 @@ const WhatsNew = (props) => (
   <section className={styles.root+" slab-delta"}>
   	<div className="container-page-wrapper">
 			<h2>What's new</h2>
-			<p>In our latest release on December 20, 2018, we made the following changes:</p>
+			<p>In our latest release on January 7, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Published a <Link to="/blog">second blog post about rebuilding our homepage</Link>. This post covers how we're migrating to a new framework to build this site.</li>
-        <li>Added <Link to="/explore/#revenue">total annual revenue</Link> to our revenue summary</li>
-        <li>Updated monthly revenue data</li>
-        <li>Fixed redirect URL problems</li>
+        <li>Published a <Link to="/blog">third blog post about usability testing training</Link>. This post covers how we're expanding our capacity to perform usability testing.</li>
+        <li>Updated <Link to="/downloads/federal-revenue-by-location/">fiscal year revenue data</Link> through 2018</li>
+        <li>Updated monthly production and revenue data</li>
+        <li>Converted <Link to="/how-it-works/revenues/#federal-lands-and-waters">revenue streams and rates</Link> image to table for accessibility.</li>
       </ul>
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>
 		</div>

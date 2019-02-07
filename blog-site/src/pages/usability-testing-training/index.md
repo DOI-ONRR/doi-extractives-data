@@ -10,7 +10,7 @@ tags:
 - user experience
 - design
 - training
-date: "2019-02-14"
+date: "2019-02-07"
 ---
 
 We have a small team: a product manager, one developer, one designer, one content strategist, and 3 program analysts. Our analysts are subject matter experts who know the site’s data, but they split their time between working on our website and managing a committee. To stretch our team further and make all of us better, we’re always looking for cross training opportunities.

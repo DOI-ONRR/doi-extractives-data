@@ -13,7 +13,7 @@ tag:
 - Documentation
 - USEITI data
 - Reconciliation
-archive: yes
+archive: true
 ---
 
 {% include archive-banner.html %}

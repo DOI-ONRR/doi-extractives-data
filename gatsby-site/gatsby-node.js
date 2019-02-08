@@ -54,11 +54,11 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	const { createNode } = boundActionCreators;
 
-	productionVolumesTransformer(createNode, 
-		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
-
 	revenuesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
+
+	productionVolumesTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
 
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));

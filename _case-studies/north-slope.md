@@ -29,7 +29,7 @@ nav_items:
   - name: data-availability
     title: Data availability
 selector: list
-archive: yes
+archive: true
 ---
 
 > The U.S. has experienced rapid change in domestic oil production since 2008, when crude oil production reached a low of 3.98 million {{ "bbl" | term:"barrel" }} per day. Just five years later, the U.S. had nearly doubled its daily production output, with Texas and North Dakota driving much of the growth.[^1] [^2] Alaska did not experience the same production boom, with crude oil output steadily declining over the past decade.[^3] In spite of that downward trend, Alaska remained  the fourth largest state producer of crude oil in 2015, and the nation's largest oil-producing county is Alaska's North Slope Borough.[^4]

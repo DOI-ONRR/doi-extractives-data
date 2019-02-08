@@ -36,6 +36,7 @@ $max-columns: 10;
     vertical-align: bottom;
 
     &.article_table-thin {
+      text-align: center;
       border-bottom: 1px solid $green-light;
     }
   }

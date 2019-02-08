@@ -48,7 +48,7 @@ tag:
 
 {% include revenue-nav.html %}
 
-> There are three types of federal-revenue-by-location datasets available on this site. One includes offshore data, another includes onshore data, and the third has data on revenues that aren't associated with a specific location. We have versions of these datasets available for calendar and fiscal years 2006 through 2017. They are all {{ "accounting year" | term }} data.
+> We offer revenue data files for both calendar year and fiscal year. Calendar year revenue data is split into three separate files (onshore, offshore, and revenues not associated with a lease). Calendar year data is available for calendar years 2006–2017. Fiscal year data is available in a single file, for fiscal years 2006–2018. They are all {{ "accounting year" | term }} data.
 
 Download calendar year data:
 
@@ -67,14 +67,8 @@ Download calendar year data:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_offshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Offshore dataset (xlsx, 532 KB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_onshore_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Onshore dataset (xlsx, 1.5 MB)
-  </a></li>
-  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_FY06-17_2017-11-30.xlsx">{% include svg/icon-download.svg %}
-    Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
+  <li><a href="{{ site.baseurl }}/downloads/federal_revenue_acct-year_FY06-18_2018-12-13.xlsx">{% include svg/icon-download.svg %}
+    Onshore and offshore revenue dataset, FY 2006–2018 (xlsx, 2.0 MB)
   </a></li>
 </ul>
 

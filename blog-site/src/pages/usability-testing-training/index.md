@@ -51,5 +51,4 @@ Now that the program analysts are becoming more familiar with the user research 
 
 The next step is for the analysts to plan and conduct a study with real users. Increasing our capacity for user research will help us build bridges with other teams in our agency who are working on products that could benefit from user feedback. We hope to help introduce user-centered design practices to those teams.
 
-## Corrections
-This blog post originally stated that the [Paperwork Reduction Act](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/inforeg/PRAPrimer_04072010.pdf) prohibited us from recording user research sessions, but we have since learned that the Act doesn't actually prohibit us from doing that. (Yay! Something we can look into doing in the future.)
+*__Correction:__ This blog post originally stated that the [Paperwork Reduction Act](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/inforeg/PRAPrimer_04072010.pdf) prohibited us from recording user research sessions, but we have since learned that the Act doesn't actually prohibit us from doing that. (Yay! Something we can look into doing in the future.)*

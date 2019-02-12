@@ -1,0 +1,90 @@
+@value colors: "../../../css-global/colors.css";
+@value black-light, gray-light from colors;
+@value variables: "../../../css-global/variables.scss";
+@value base-padding-lite from variables;
+
+.root {
+	padding: 40px 0px 20px 0px;
+}
+
+.displayTitle {
+	border-bottom: 1px solid gray-light;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	padding-bottom: base-padding-lite;
+	text-transform: uppercase;
+}
+
+.toc {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.toc a {
+	color: black-light;
+	display: block;
+	font-size: 16px;
+	line-height: 19.2px;
+	padding: 8px 8px 8px 0px;
+	text-decoration: none;
+}
+
+
+.toc a:hover {
+	text-decoration: underline;
+}
+
+.tocSub {
+	list-style-type: none;
+	margin-top: base-padding-lite;
+	padding-left: 14px;
+}
+
+.tocSub a{
+	color: black-light;
+	font-size: 0.8125rem;
+	line-height: 1.2;
+	padding: 6.5px;
+	text-decoration: none;
+}
+
+.tocItem {
+	padding: 0px;
+}
+
+.tocItem ul {
+	display: none;
+}
+
+.tocItemActive {
+	font-weight: bold;
+}
+
+.tocItemActive ul {
+	display: block;
+}
+
+.tocSubItemActive {
+	font-weight: bold;
+}
+
+.tocSubItem {
+	border-left: 3px solid gray-light;
+  padding: 0 0.5em 0.5em 0.5em;
+
+  &:first-of-type {
+    margin-top: base-padding-lite;
+    padding-top: 0;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.tocSubItem a{
+  font-size: 0.8125rem;
+  padding: 0px;
+}
+

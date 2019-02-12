@@ -28,7 +28,9 @@ class HowItWorksDefault extends React.Component {
 
 	render () {
 		return (
-			<div>{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}</div>
+			<div>
+        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}  
+      </div>
 		);
 	}
 }

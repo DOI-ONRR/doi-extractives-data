@@ -7,15 +7,19 @@ import hastReactRenderer from '../js/hast-react-renderer';
 
 import utils from '../js/utils';
 
+import {PageToc} from '../components/navigation/PageToc'
+
 class DefaultTemplate extends React.Component {
 	render () {
-		console.log(this.props);
 		return (
 			<main>
 				<section className='layout-content container-page-wrapper container-margin'>
-					<article className="container-left-7 container-shift-reverse-2">
+					<article className="container-left-9">
 						{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
-					</article>
+					</article>	
+					<div className="container-right-3">			
+						<PageToc scrollOffset={-150}/>
+					</div>
 				</section>
 			</main>
 		);

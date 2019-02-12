@@ -12,6 +12,7 @@ import NavList from '../components/layouts/NavList';
 import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
+import {PageToc} from '../components/navigation/PageToc'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -29,7 +30,8 @@ const hastReactRenderer = new rehypeReact({
   							"how-main-icon-wind": HowMainIconWind,
   							"display-statistic":  DisplayStatistic,
   							"display-year": DisplayYear,
-                'display-disbursement':DisplayDisbursement},
+                'display-disbursement':DisplayDisbursement,
+                'page-toc': PageToc},
 
 }).Compiler; 
 

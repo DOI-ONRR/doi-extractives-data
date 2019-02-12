@@ -9,12 +9,35 @@ const extentPercent = 0.05;
 const extentMarginOfError = 0.10;
 
 const utils = {
+	scrollStop: (callback) => {
+		// Make sure a valid callback was provided
+		if (!callback || typeof callback !== 'function') return;
+
+		// Setup scrolling variable
+		let isScrolling;
+
+		// Listen for scroll events
+		window.addEventListener('scroll', function (event) {
+
+			// Clear our timeout throughout the scroll
+			window.clearTimeout(isScrolling);
+
+			// Set a timeout to run after scrolling ends
+			isScrolling = setTimeout(function() {
+
+				// Run the callback
+				callback();
+
+			}, 66);
+
+		}, false);
+	},
 	getDisplayName_CommodityName: (key) => {
 		return commodityNames[key] || key;
 	},
 
 	formatToSlug: (name) => {
-		return slugify(name, {lower:true, remove: /[$*_+~.()'"!\:@,]/g}).replace('-and-','-');
+		return slugify(name, {lower:true, remove: /[$*_+~.()'"!\:@,?]/g}).replace('-and-','-');
 	},
 
 	formatToDollarInt: (value) => {
@@ -38,6 +61,9 @@ const utils = {
 	                callback.call();        // Execute users function
 	                wait = true;						// And allow future invocations
 	            }, limit);
+	        }
+	        else {
+	        	console.log("HERE");
 	        }
 	    }
 	},

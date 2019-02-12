@@ -3,29 +3,6 @@ title: How It Works
 layout: default
 permalink: /how-it-works/
 redirect_from: /how-it-works/production/
-nav_items:
-  - name: introduction
-    title: Top
-  - name: ownership
-    title: Land ownership
-  - name: resources
-    title: Natural resources
-  - name: laws
-    title: Laws and regulations
-  - name: native-american-overview
-    title: Natural resources on Native American land
-  - name: process
-    title: Resources to revenue
-    subnav_items:
-      - name: production
-        title: Production
-      - name: revenues
-        title: Revenues
-      - name: disbursements
-        title: Disbursements  
-  - name: accounting
-    title: Accountability
-selector: list
 ---
 
 <section class="slab-delta">
@@ -47,10 +24,10 @@ selector: list
   </div>
 </section>
 
-<section class="container-page-wrapper landing-wrapper">
+<main class="container-page-wrapper landing-wrapper">
   <article class="container-left-8 container-shift-reverse-1">
     <section class="container">
-      <h2 id="ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
+      <h2 id="ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/ownership">Ownership</a></h3>
@@ -60,7 +37,7 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="resources" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
+      <h2 id="resources" alt="Natural resources" class="h2-bar">What natural resources are extracted in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/fossil-fuels">Fossil fuels</a></h3>
@@ -80,7 +57,7 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="laws" class="h2-bar">What laws and regulations govern natural resource extraction in the U.S.?</h2>
+      <h2 id="laws" alt="Laws and regulations" class="h2-bar">What laws and regulations govern natural resource extraction in the U.S.?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/federal-laws">Federal laws and regulations</a></h3>
@@ -105,7 +82,7 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="native-american-overview" class="h2-bar">How are natural resources on Native American land governed?</h2>
+      <h2 id="native-american-overview" alt="Natural resources on Native American land" class="h2-bar">How are natural resources on Native American land governed?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/native-american-ownership-governance">Ownership and governance</a></h3>
@@ -130,8 +107,8 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="process" class="h2-bar">How do natural resources result in federal revenue?</h2>
-      <h3 id="production" class="h3-bar">The production process</h3>
+      <h2 id="process" alt="Resources to revenue" class="h2-bar">How do natural resources result in federal revenue?</h2>
+      <h3 id="production" alt="Production" class="h3-bar">The production process</h3>
       <div class="container landing-section landing-section-with-graphics">
         <div class="landing-oil_gas">
           <h4 class="h3 landing-heading"><a href="/how-it-works/offshore-oil-gas">Oil and gas</a><how-main-icon-oil></how-main-icon-oil></h4>
@@ -162,7 +139,7 @@ selector: list
           </div>
         </div>
       </div>
-      <h3 id="revenues" class="h3-bar">Understanding federal revenues</h3>
+      <h3 id="revenues" alt="Revenues" class="h3-bar">Understanding federal revenues</h3>
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="/how-it-works/revenues">How revenue works</a></h4>
@@ -185,7 +162,7 @@ selector: list
           <p><a href="/how-it-works/coal-excise-tax">Learn about excise tax revenue</a>.</p>
         </div>
       </div>
-      <h3 id="disbursements" class="h3-bar">Understanding federal disbursements</h3>
+      <h3 id="disbursements" alt="Disbursements" class="h3-bar">Understanding federal disbursements</h3>
       <div class="container landing-section">
         <div>
           <h4 class="h3 landing-heading"><a href="/how-it-works/disbursements">How disbursements work</a></h4>
@@ -210,7 +187,7 @@ selector: list
       </div>
     </section>
     <section class="container">
-      <h2 id="accounting" class="h2-bar">How does the U.S. ensure accuracy and accountability in natural resource revenue?</h2>
+      <h2 id="accounting" alt="Accountability" class="h2-bar" data-toc-offset="300">How does the U.S. ensure accuracy and accountability in natural resource revenue?</h2>
       <div class="container landing-section">
         <div>
           <h3 class="h3 landing-heading"><a href="/how-it-works/audits-and-assurances">Audits and assurances</a></h3>
@@ -225,25 +202,7 @@ selector: list
       </div>
     </section>
   </article>
-  <div class="sticky sticky_nav container-right-3">
-    <h3 className="state-page-nav-title container">
-        <div className="nav-title"> </div>
-    </h3>
-    <nav>
-        <nav-list nav.items='[
-          {"name": "introduction","title": "Top" },
-          {"name": "ownership","title": "Land ownership" },
-          {"name": "resources","title": "Natural resources" },
-          {"name": "laws","title": "Laws and regulations" },
-          {"name": "native-american-overview","title": "Natural resources on Native American land" },
-          {"name": "process","title": "Resources to revenue",
-             "subNavItems":[
-                {"name": "production","title": "Production" },
-                {"name": "revenues","title": "Revenues" },
-                {"name": "disbursements","title": "Disbursements" }
-             ]},
-          {"name": "accounting","title": "Accountability" }
-        ]'></nav-list>
-    </nav>
+  <div class="container-right-3">     
+    <page-toc exclude.class.names='h3'></page-toc>
   </div>
-</section>
+</main>

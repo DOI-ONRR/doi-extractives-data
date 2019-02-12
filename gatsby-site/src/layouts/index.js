@@ -61,17 +61,16 @@ export default ({ data, children}) => {
             {'<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRF98R" height="0" width="0" style="display:none;visibility:hidden"></iframe>'}
           </noscript>
         </Helmet>
+        
         <Banner />
+        
         <Header siteMetadata={data && data.site.siteMetadata} />
-
-        <main>
-          <Glossary />
-
-          {children()}
-        </main>
-
+        
+        <Glossary />
+        
+        {children()}
+        
         <Footer version={data && data.site.siteMetadata.version} />
-
       </div>
   );
 }

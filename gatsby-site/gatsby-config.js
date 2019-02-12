@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        includePaths: [`${__dirname}/src/styles`],
+        includePaths: [`${__dirname}/src/styles`, `${__dirname}/src/css-global`, `${__dirname}/src/components`],
       },
     },
 
@@ -63,9 +63,6 @@ module.exports = {
     `gatsby-transformer-yaml`,
     {
       resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [`gatsby-remark-autolink-headers`],
-      },
     },
     'gatsby-transformer-excel',
   ],

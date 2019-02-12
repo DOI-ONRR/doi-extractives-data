@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from "./AlertBanner.module.css";
-/*import alert from "../../../img/icons/icon-alert.svg";*/
 import AlertIcon from '-!svg-react-loader!../../../img/svg/icon-alert.svg';
 
 const AlertBanner = () => (

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import MediaQuery from 'react-responsive';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -16,10 +17,17 @@ class DefaultTemplate extends React.Component {
 				<section className='layout-content container-page-wrapper container-margin'>
 					<article className="container-left-9">
 						{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
-					</article>	
-					<div className="container-right-3">			
-						<PageToc scrollOffset={-150}/>
-					</div>
+					</article>
+					<MediaQuery minWidth={481}>	
+						<div className="container-right-3">			
+							<PageToc scrollOffset={-10}/>
+						</div>
+					</MediaQuery>
+					<MediaQuery maxWidth={481}>	
+						<div style={{position:'absolute'}}>			
+							<PageToc scrollOffset={-10}/>
+						</div>
+					</MediaQuery>
 				</section>
 			</main>
 		);

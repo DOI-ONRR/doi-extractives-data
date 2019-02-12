@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import MediaQuery from 'react-responsive';
 
 import utils from '../../../js/utils';
 
@@ -31,6 +32,10 @@ class PageToc extends React.Component {
 	componentDidUpdate() {
 		let tocLinks = document.querySelectorAll("#page-toc-nav ul li a");
 
+		let topDiv = document.querySelector("#page-toc");
+
+		console.log(topDiv);
+
 		if(tocLinks) {
 			// Listen for scroll events
 			window.addEventListener('scroll', this.stopScrolling.bind(this, tocLinks), false);		
@@ -38,7 +43,7 @@ class PageToc extends React.Component {
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('scroll', this.stopScrolling.bind(this, tocLinks) );
+		window.removeEventListener('scroll', this.stopScrolling );
 	}
 
 	stopScrolling(tocLinks) {
@@ -111,12 +116,28 @@ class PageToc extends React.Component {
 	render() {
 
 		return (
-			<div>
-				<StickyWrapper bottomBoundary={this.props.bottomBoundary} >
-					<div className={styles.root}>
-						{this.state.displayTitle &&
-							<h3 className={styles.displayTitle}>{this.state.displayTitle}</h3>
-						}
+			<div className={styles.root}>
+				<StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="20000">
+					<div className={styles.tocContainer}>
+						<MediaQuery minWidth={styles['mobile-breakpoint']}>	
+							{this.state.displayTitle &&
+								<h3 className={styles.displayTitle}>{this.state.displayTitle}</h3>
+							}
+						</MediaQuery>
+						<MediaQuery maxWidth={styles['mobile-breakpoint']}>	
+							<button is="aria-toggle" aria-controls="page-toc-nav" aria-expanded="false" type="button">
+								<div className="flex-row">
+									<h3 className="mobile-nav-header flex-row-flex">Nationwide</h3>
+									<span className="hide-expanded flex-row-icon">
+										<icon className="icon icon-chevron-sm-down"></icon>
+									</span>
+									<span className="show-expanded flex-row-icon">
+										<icon className="icon icon-chevron-sm-up"></icon>
+									</span>
+								</div>
+							</button>
+						</MediaQuery>
+
 						{this.state.tocItems &&
 							<nav id="page-toc-nav">
 								<ul className={styles.toc}>

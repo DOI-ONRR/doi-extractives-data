@@ -1,9 +1,14 @@
 @value colors: "../../../css-global/colors.css";
-@value black-light, gray-light from colors;
+@value black-light, gray-light, gray-lighter from colors;
 @value variables: "../../../css-global/variables.scss";
-@value base-padding-lite from variables;
+@value base-padding-lite, mobile-breakpoint from variables;
 
 .root {
+	width: 100vw;
+	background-color: white;
+}
+
+.tocContainer {
 	padding: 40px 0px 20px 0px;
 }
 
@@ -88,3 +93,29 @@
   padding: 0px;
 }
 
+
+@media screen and (max-width: mobile-breakpoint) {
+	.tocContainer {
+		background-color: white;
+	}
+	.toc a {
+		font-weight: 600;
+		font-size: 1.125rem;
+		line-height: 1.625rem;
+		padding: 0.8333em 0.8333em 0.8333em 1.25em;
+	}
+	.tocItem ul {
+		display: block;
+	}
+	.tocItem a {
+		border-bottom: 1px solid gray-lighter;
+	}
+	.tocSubItem a{
+	  font-size: 1rem;
+	  font-weight: 400;
+	}
+	.tocSubItem {
+		border-left: none;
+	}
+
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import {Banner} from '../components/layouts/Banner';
+import {AlertBanner} from '../components/layouts/AlertBanner';
 import {Header} from '../components/layouts/Header';
 import {Footer} from '../components/layouts/Footer';
 import Glossary from '../components/utils/Glossary';
@@ -62,6 +63,7 @@ export default ({ data, children}) => {
           </noscript>
         </Helmet>
         <Banner />
+        <AlertBanner />
         <Header siteMetadata={data.site.siteMetadata} />
 
         <main>

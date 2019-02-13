@@ -74,7 +74,7 @@ const DEFAULT_TEMPLATE = path.resolve(`src/templates/default.js`);
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createHowItWorksPages(createPage, graphql)]);
+  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
 };
 
 const withPathPrefix = (url, pathPrefix) => {

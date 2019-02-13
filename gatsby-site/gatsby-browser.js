@@ -78,7 +78,13 @@ exports.onClientEntry = () => {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
   else if(path.includes("/how-it-works") && !lastFourteen.includes("default-page")){
-    loader.addPagesArray([{"componentChunkName":"component---src-templates-how-it-works-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works.json","path":path}]);
+
+    if(path.includes("/native-american-ownership-governance") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
+    }
+    else{
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-how-it-works-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works.json","path":path}]);
+    }
   }
   else if(path.includes("/explore") && usStateIds.includes(statePathId)) {
     loader.addPagesArray([{"componentChunkName":"component---src-templates-state-page-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"explore-"+statePathId.toLowerCase()+".json","path":path}]);

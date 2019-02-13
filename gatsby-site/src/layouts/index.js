@@ -63,7 +63,6 @@ export default ({ data, children}) => {
           </noscript>
         </Helmet>
         <Banner />
-        <AlertBanner />
         <Header siteMetadata={data.site.siteMetadata} />
 
         <main>

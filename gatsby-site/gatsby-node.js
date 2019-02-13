@@ -273,6 +273,7 @@ var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
 							"title: How It Works"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
 							"---"+os.EOL;
 
 var aboutPageFrontmatter = "---"+os.EOL+

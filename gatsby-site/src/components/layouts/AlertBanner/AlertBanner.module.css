@@ -5,14 +5,14 @@
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.1875rem;
-	margin-bottom: 0.625rem;
-	padding: 0.625em 1.875em;
+	margin-bottom: 0.8rem;
+	padding: 0.8em 1.875em;
 	text-align: center;
 }
 
 .alertImage {
 	width: 30px;
-	padding-left: 0.20833em;
-	margin-bottom: -1px;
+	height: 20px;
+	vertical-align: top;
 	margin-right: 3px;
 }

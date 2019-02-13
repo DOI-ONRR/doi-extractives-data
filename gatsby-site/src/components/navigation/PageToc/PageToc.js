@@ -19,7 +19,9 @@ const tocSubAttr = 'data-toc-sub';
 class PageToc extends React.Component {
 
 	state = {
-		displayTitle: this.props.displayTitle
+		displayTitle: this.props.displayTitle,
+		expanded: false,
+		
 	}
 
 	isScrolling
@@ -31,10 +33,6 @@ class PageToc extends React.Component {
 	/* Get the on scroll nav list after updating the component. */
 	componentDidUpdate() {
 		let tocLinks = document.querySelectorAll("#page-toc-nav ul li a");
-
-		let topDiv = document.querySelector("#page-toc");
-
-		console.log(topDiv);
 
 		if(tocLinks) {
 			// Listen for scroll events
@@ -64,6 +62,7 @@ class PageToc extends React.Component {
 
 	  tocLinks.forEach( (link, index)  => {
 	    let section = document.querySelector((link.hash || 'body'));
+
 	    // You can add an offset number to a element to have the toc menu item activate earlier/later
 	    let dataTocOffset = parseInt(section.getAttribute('data-toc-offset')) || 0;
 
@@ -110,14 +109,20 @@ class PageToc extends React.Component {
 
 		tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames);
 
-		this.setState({...tocState});
+		this.setState({...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(styles['mobile-breakpoint']))});
+	}
+
+	handleClick() {
+		if(this.state.mobileActive) {
+			this.setState({expanded: !this.state.expanded})
+		}
 	}
 
 	render() {
 
 		return (
 			<div className={styles.root}>
-				<StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="20000">
+				<StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="1000">
 					<div className={styles.tocContainer}>
 						<MediaQuery minWidth={styles['mobile-breakpoint']}>	
 							{this.state.displayTitle &&
@@ -125,13 +130,19 @@ class PageToc extends React.Component {
 							}
 						</MediaQuery>
 						<MediaQuery maxWidth={styles['mobile-breakpoint']}>	
-							<button is="aria-toggle" aria-controls="page-toc-nav" aria-expanded="false" type="button">
-								<div className="flex-row">
-									<h3 className="mobile-nav-header flex-row-flex">Nationwide</h3>
-									<span className="hide-expanded flex-row-icon">
+							<button id='page-toc-toggle' 
+											is="aria-toggle" 
+											aria-controls="page-toc-nav" 
+											aria-expanded={this.state.expanded} 
+											type="button" 
+											class={styles.tocButton} 
+											onClick={this.handleClick.bind(this)}>
+								<div className="">
+									<span className="">{this.state.displayTitle || 'Table of contents'}</span>
+									<span className={styles.tocButtonIcon+' '+styles.tocButtonIconDown}>
 										<icon className="icon icon-chevron-sm-down"></icon>
 									</span>
-									<span className="show-expanded flex-row-icon">
+									<span className={styles.tocButtonIcon+' '+styles.tocButtonIconUp}>
 										<icon className="icon icon-chevron-sm-up"></icon>
 									</span>
 								</div>
@@ -139,21 +150,25 @@ class PageToc extends React.Component {
 						</MediaQuery>
 
 						{this.state.tocItems &&
-							<nav id="page-toc-nav">
+							<nav id="page-toc-nav" aria-hidden={(!this.state.expanded && this.state.mobileActive)}>
 								<ul className={styles.toc}>
-									<li className={styles.tocItem}><a className={"test "+styles.tocItemActive} href="#">Top</a></li>
+									<li className={styles.tocItem}><a className={styles.tocItemActive} href="#">Top</a></li>
 									{ 
 										this.state.tocItems.map((tocItem, index) => {
 											return (
 												<li className={styles.tocItem} key={tocItem.id+"-toc-item"}>
-													<a href={"#"+tocItem.id}>{ (tocItem.getAttribute('alt') || tocItem.innerText) }</a>
+													<a href={"#"+tocItem.id} onClick={this.handleClick.bind(this)}>
+														{ (tocItem.getAttribute('alt') || tocItem.innerText) }
+													</a>
 													{tocItem[tocSubAttr] &&
 														<ul className={styles.tocSub}>
 															{
 																tocItem[tocSubAttr].map((tocSubItem, subIndex) => {
 																	return (
-																		<li className={styles.tocSubItem} key={tocSubItem.id+"-toc-sub-item"}>
-																			<a data-toc-type="sub" href={"#"+tocSubItem.id}>{ (tocSubItem.getAttribute('alt') || tocSubItem.innerText) }</a>
+																		<li className={styles.tocSubItem} key={subIndex+tocSubItem.id+"-toc-sub-item"}>
+																			<a data-toc-type="sub" href={"#"+tocSubItem.id} onClick={this.handleClick.bind(this)}>
+																				{ (tocSubItem.getAttribute('alt') || tocSubItem.innerText) }
+																			</a>
 																		</li>
 																	);
 																})
@@ -215,21 +230,29 @@ const elementArrayToTocArray = (elems, excludeClassNames) => {
 		});
 	}
 
-	let toc = filteredElems && [];
+	let toc;
 
-	let currentTocItem = filteredElems[0];
+	if(filteredElems !== undefined && filteredElems.length > 0) {
+		toc = [];
+		let currentTocItem = filteredElems && filteredElems[0];
 
-	filteredElems.map((elem) => {
-		if(parseInt(elem.tagName.slice(-1)) > parseInt(currentTocItem.tagName.slice(-1))){
-			addChild(elem, currentTocItem);
-		}
-		else {
-			createTocItem(elem);
-			currentTocItem = elem;
+		// Clear any previous info
+		filteredElems.forEach((elem) => {
+			elem[tocSubAttr] = undefined;
+		})
 
-			toc.push(elem);
-		}
-	});
+		filteredElems.map((elem) => {
+			if(parseInt(elem.tagName.slice(-1)) > parseInt(currentTocItem.tagName.slice(-1))){
+				addChild(elem, currentTocItem);
+			}
+			else {
+				createTocItem(elem);
+				currentTocItem = elem;
+
+				toc.push(elem);
+			}
+		});
+	}
 
 	return toc;
 }

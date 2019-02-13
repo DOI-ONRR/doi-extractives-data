@@ -202,7 +202,7 @@ redirect_from: /how-it-works/production/
       </div>
     </section>
   </article>
-  <div class="container-right-3">     
+  <div class="container-right-3 how-it-works-page-toc">     
     <page-toc exclude.class.names='h3'></page-toc>
   </div>
 </main>

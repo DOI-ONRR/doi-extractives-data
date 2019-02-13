@@ -1,15 +1,16 @@
 @value colors: "../../../css-global/colors.css";
-@value black-light, gray-light, gray-lighter from colors;
+@value black-light, gray-light, gray-lighter, green-light from colors;
 @value variables: "../../../css-global/variables.scss";
 @value base-padding-lite, mobile-breakpoint from variables;
 
 .root {
-	width: 100vw;
 	background-color: white;
+	width: 100%;
 }
 
 .tocContainer {
 	padding: 40px 0px 20px 0px;
+	width: 100%;
 }
 
 .displayTitle {
@@ -93,11 +94,33 @@
   padding: 0px;
 }
 
+.tocButton {
+	background-color: white;
+	border-bottom: 3px solid green-light;
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+	margin: 0px;
+	padding: 0.416678rem 0;
+	text-align: left;
+	width: 100%;
+}
+
+.tocButtonIcon {
+	float: right;
+}
+
+.tocButtonIconDown{
+
+}
+.tocButtonIconUp {
+	display: none;
+}
 
 @media screen and (max-width: mobile-breakpoint) {
 	.tocContainer {
 		background-color: white;
-	}
+		padding: 0px;
+	}	
 	.toc a {
 		font-weight: 600;
 		font-size: 1.125rem;

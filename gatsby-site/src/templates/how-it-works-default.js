@@ -6,6 +6,8 @@ import * as CONSTANTS from '../js/constants';
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
 
 import hastReactRenderer from '../js/hast-react-renderer';
+import {PageToc} from '../components/navigation/PageToc'
+
 
 class HowItWorksDefault extends React.Component {
 
@@ -29,7 +31,7 @@ class HowItWorksDefault extends React.Component {
 	render () {
 		return (
 			<div>
-        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}  
+        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
       </div>
 		);
 	}

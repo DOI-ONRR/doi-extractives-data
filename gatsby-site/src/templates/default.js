@@ -24,7 +24,7 @@ class DefaultTemplate extends React.Component {
 						</div>
 					</MediaQuery>
 					<MediaQuery maxWidth={481}>	
-						<div style={{position:'absolute'}}>			
+						<div style={{position:'absolute', width: '100%', top: '-45px'}}>			
 							<PageToc scrollOffset={-10}/>
 						</div>
 					</MediaQuery>

@@ -152,7 +152,7 @@ class PageToc extends React.Component {
 						{this.state.tocItems &&
 							<nav id="page-toc-nav" aria-hidden={(!this.state.expanded && this.state.mobileActive)}>
 								<ul className={styles.toc}>
-									<li className={styles.tocItem}><a className={styles.tocItemActive} href="#">Top</a></li>
+									<li className={styles.tocItem}><a className={styles.tocItemActive} href="#" onClick={this.handleClick.bind(this)}>Top</a></li>
 									{ 
 										this.state.tocItems.map((tocItem, index) => {
 											return (

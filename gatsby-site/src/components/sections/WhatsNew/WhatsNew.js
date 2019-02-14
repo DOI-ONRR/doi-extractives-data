@@ -11,7 +11,7 @@ const WhatsNew = (props) => (
         <ul className="list-bullet ribbon-card-top-list">
           <li>Updated the status of the <Link to="/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</Link></li>
         </ul>  
-      <p>In our release February 7, 2019, we made the following changes:</p>  
+      <p>In our release on February 7, 2019, we made the following changes:</p>  
         <ul className="list-bullet ribbon-card-top-list">
           <li>Published a <Link to="/blog">third blog post about usability testing training</Link>. This post covers how we're expanding our capacity to perform usability testing.</li>
           <li>Updated <Link to="/downloads/federal-revenue-by-location/">fiscal year revenue data</Link> through 2018</li>

@@ -77,7 +77,7 @@ redirect_from: /how-it-works/production/
         <div>
           <h3 class="h3 landing-heading"><custom-link to="/how-it-works/#native-american-overview">Native American laws and regulations</custom-link></h3>
           <p>Extracting natural resources on Native American land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-          <p><custom-link to="/how-it-works/#native-american-revenue-overview">Learn about Native American laws</custom-link>.</p>
+          <p><custom-link to="/how-it-works/#native-american-overview">Learn about Native American laws</custom-link>.</p>
         </div>
       </div>
     </section>

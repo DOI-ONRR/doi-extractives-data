@@ -33,7 +33,7 @@ const hastReactRenderer = new rehypeReact({
   							"display-year": DisplayYear,
                 'display-disbursement':DisplayDisbursement,
                 'page-toc': PageToc,
-                'link':Link,
+                'custom-link':Link,
               },
 
 }).Compiler; 

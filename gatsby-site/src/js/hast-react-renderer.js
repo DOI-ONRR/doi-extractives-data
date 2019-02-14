@@ -13,6 +13,7 @@ import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
+import Link from '../components/utils/temp-link';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -31,7 +32,9 @@ const hastReactRenderer = new rehypeReact({
   							"display-statistic":  DisplayStatistic,
   							"display-year": DisplayYear,
                 'display-disbursement':DisplayDisbursement,
-                'page-toc': PageToc},
+                'page-toc': PageToc,
+                'link':Link,
+              },
 
 }).Compiler; 
 

@@ -203,7 +203,7 @@ redirect_from: /how-it-works/production/
       </section>
     </article>
     <div class="container-right-3 how-it-works-page-toc">     
-      <page-toc exclude.class.names='h3'></page-toc>
+      <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>
   </main>
 </div>

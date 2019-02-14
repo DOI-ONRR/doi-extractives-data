@@ -21,7 +21,7 @@ class PageToc extends React.Component {
 	state = {
 		displayTitle: this.props.displayTitle,
 		expanded: false,
-		
+		scrollOffset: parseInt(this.props.scrollOffset) || 0,
 	}
 
 	isScrolling
@@ -59,6 +59,7 @@ class PageToc extends React.Component {
 
 	handleScroll(tocLinks) {
 	  let fromTop = window.scrollY;
+	  let activeItemDistance = 10000;
 
 	  tocLinks.forEach( (link, index)  => {
 	    let section = document.querySelector((link.hash || 'body'));
@@ -66,7 +67,11 @@ class PageToc extends React.Component {
 	    // You can add an offset number to a element to have the toc menu item activate earlier/later
 	    let dataTocOffset = parseInt(section.getAttribute('data-toc-offset')) || 0;
 
-	    if( (section.offsetTop-this.props.scrollOffset-dataTocOffset ) <= fromTop ) {
+	    let computedMarginTop = parseInt(window.getComputedStyle(section).marginTop) || 0;
+
+	    let itemCalcPos = (section.offsetTop-computedMarginTop) + this.state.scrollOffset - dataTocOffset;
+
+	    if( itemCalcPos <= fromTop ) {
 
 	    	if(link.getAttribute('data-toc-type') === 'sub') {
 	    		let oldCurrent = document.querySelector(("."+styles.tocSubItemActive));
@@ -197,7 +202,7 @@ PageToc.propTypes = {
 	/** This is the query string of the element for the toc to scroll within **/
 	bottomBoundary: PropTypes.string,
 	/** Adjust wehn the menu item becomes active when scrolling **/
-	scrollOffset: PropTypes.number,
+	scrollOffset: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
 	/** An array of all class names to not use in the toc **/
 	excludeClassNames:  PropTypes.oneOfType([PropTypes.string,PropTypes.array]),
 }
@@ -205,7 +210,6 @@ PageToc.propTypes = {
 PageToc.defaultProps = {
 	bottomBoundary: 'main',
 	shouldDisplayTitle: false,
-	scrollOffset: 100,
 }
 
 export default PageToc;

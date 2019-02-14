@@ -3,29 +3,6 @@ title: Native American Lands | Ownership and Governance
 layout: content
 permalink: /how-it-works/native-american-ownership-governance/
 redirect_from: /how-it-works/tribal-ownership-governance/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: land-ownership
-    title: Land ownership
-  - name: natural-resource-ownership
-    title: Natural resource ownership
-  - name: laws-and-regulations
-    title: Laws and regulations
-    subnav_items:
-      - name: history-of-federal-obligations
-        title: History of federal obligations
-      - name: general-allotment-act-of-1887-the-dawes-act
-        title: General Allotment Act of 1887 (The Dawes Act)
-      - name: indian-reorganization-act-of-1934
-        title: Indian Reorganization Act of 1934
-      - name: indian-mineral-leasing-act-of-1938
-        title: Indian Mineral Leasing Act of 1938
-      - name: indian-mineral-development-act-of-1982
-        title: Indian Mineral Development Act of 1982
-      - name: tribal-energy-development--self-determination-act-of-2005
-        title: Tribal Energy Development & Self-Determination Act of 2005
 tag:
 - how it works
 - production
@@ -37,12 +14,9 @@ tag:
 - tribal
 - native american
 - Indian
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-selector: list
 ---
 
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Native American ownership and governance of natural resources
 
 > Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.

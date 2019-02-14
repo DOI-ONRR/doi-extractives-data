@@ -218,6 +218,7 @@ const createHowItWorksPages = (createPage, graphql) => {
 	    resolve(
 	      graphql(graphQLQueryString).then(result => {
 	        if (result.errors) {
+	        	console.error(result.errors);
 	          reject(result.errors);
 	        }
 	        else{ 

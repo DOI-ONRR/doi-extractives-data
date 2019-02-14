@@ -53,9 +53,18 @@ Depending on the agency or program, the LWCF supports:
 - conservation of wildlife habitat
 
 ## Authorization and funding
+
+{% include update-flag.html date="2/14/19" %}
+
+The Senate on Tuesday, February 12, 2019, passed the [Natural Resources Management Act (PDF)](https://www.congress.gov/116/bills/s47/BILLS-116s47pcs.pdf), part of which permanently {{ "authorizes" | term: "authorization" }} the Land and Water Conservation Fund.
+
+Permanent authorization of the LWCF means the fund would be authorized to receive and distribute designated revenue from offshore oil and gas production indefinitely. The annual amount of funding would still be subject to the annual budget process.
+
+The bill will now go to the House of Representatives where, if passed, it will proceed to the President for signature.
+
 {% include update-flag.html date="10/9/18" %}
 
-The LWCF was {{ "authorized" | term: "authorization" }} through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the requirement that a portion of offshore oil and gas revenues be deposited into the LWCF expired on October 1, 2018. The LWCF is not eligible to receive those disbursements unless Congress reauthorizes it. Congress may continue to appropriate revenues for LWCF-supported programs, if it so chooses.
+The LWCF was authorized through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the requirement that a portion of offshore oil and gas revenues be deposited into the LWCF expired on October 1, 2018. The LWCF is not eligible to receive those disbursements unless Congress reauthorizes it. Congress may continue to appropriate revenues for LWCF-supported programs, if it so chooses.
 
 Lawmakers have [introduced bills in both the House and the Senate](https://www.congress.gov/search?q=%7B%22congress%22%3A%22115%22%2C%22source%22%3A%22legislation%22%2C%22search%22%3A%22%5C%22land%20and%20water%20conservation%20fund%5C%22%22%7D&searchResultViewType=expanded) to permanently authorize the fund.
 

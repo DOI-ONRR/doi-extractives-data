@@ -28,7 +28,7 @@ nav_items:
     title: Data
 resource: default
 selector: list
-archive: yes
+archive: true
 ---
 
 <!-- Assigns variables to be used in the opening paragraph to keep the data up to date -->

@@ -15,7 +15,7 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 selector: list
-archive: yes
+archive: true
 ---
 
 > {{ page.description }}

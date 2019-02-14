@@ -5,6 +5,7 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
+import favicon from '../../static/img/favicon.ico'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,6 +21,8 @@ class BlogPostTemplate extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
+          link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
+          
         >
           {/* Digital Analytics Program roll-up, see the data at https://analytics.usa.gov */}
           <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>

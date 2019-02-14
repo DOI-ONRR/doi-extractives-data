@@ -1,0 +1,18 @@
+
+.root {
+	background-color: #fff1d2;;
+	margin: 0 0 1rem 0;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.1875rem;
+	margin-bottom: 0.8rem;
+	padding: 0.8em 1.875em;
+	text-align: center;
+}
+
+.alertImage {
+	width: 30px;
+	height: 20px;
+	vertical-align: top;
+	margin-right: 3px;
+}

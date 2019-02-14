@@ -32,15 +32,6 @@ module.exports = Object.freeze({
 	          permalink
 	          layout
 	          redirect_from
-	          selector
-	          nav_items {
-	            name
-	            title
-	            subnav_items {
-	              name
-	              title
-	            }
-	          }
 	        }
 	        htmlAst
 	      }

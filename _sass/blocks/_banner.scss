@@ -55,3 +55,15 @@
     margin-bottom: 0;
   }
 }
+
+/* Alert/shutdown banner */
+
+.alert-banner {
+  @include clearfix();
+  @include heading('para-md');
+
+  font-weight: $weight-light;
+  background-color: #fff1d2;
+  padding: ($base-padding / 2) $base-padding-large;
+  text-align: center;
+}

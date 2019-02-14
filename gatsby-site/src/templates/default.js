@@ -40,12 +40,12 @@ class DefaultTemplate extends React.Component {
 					</article>
 					<MediaQuery minWidth={481}>	
 						<div className="container-right-3">			
-							<PageToc scrollOffset={-10}/>
+							<PageToc scrollOffset={190}/>
 						</div>
 					</MediaQuery>
 					<MediaQuery maxWidth={481}>	
 						<div style={{position:'absolute', width: '100%', top: '-45px'}}>			
-							<PageToc scrollOffset={-10}/>
+							<PageToc scrollOffset={190}/>
 						</div>
 					</MediaQuery>
 				</section>

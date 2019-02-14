@@ -9,7 +9,7 @@ const WhatsNew = (props) => (
 			<h2>What's new</h2>
 			<p>In our latest release on February 14, 2019, we made the following changes:</p>
         <ul className="list-bullet ribbon-card-top-list">
-          <li>Updated the status of the <Link to="/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</Link>.</li>
+          <li>Updated the status of the <Link to="/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</Link></li>
         </ul>  
       <p>In our release February 7, 2019, we made the following changes:</p>  
         <ul className="list-bullet ribbon-card-top-list">

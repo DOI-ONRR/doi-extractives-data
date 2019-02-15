@@ -16,11 +16,9 @@ tag:
 
 > Fossil fuels are our main source of electricity and the primary fuel for powering motor vehicles and heating homes. Fossil fuels are used to make many products. Through natural processes over hundreds of millions of years, plant and animal matter becomes energy resources in the form of oil, gas, and coal. While fossil fuels are abundant, they are not renewable. [Explore production data.](/explore/#production)
 
-{% include selector.html %}
-
 ### Oil
 
-Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (for example, jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and {{ "petroleum products" | term_end }}. In 2015, five states — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico [supplied more than 81%](http://www.eia.gov/petroleum/supply/annual/volume1/) of the {{ "crude oil" | term }} produced here.
+Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (for example, jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and <glossary-term>petroleum products</glossary-term>. In 2015, five states — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico [supplied more than 81%](http://www.eia.gov/petroleum/supply/annual/volume1/) of the <glossary-term>crude oil</glossary-term> produced here.
 
 ### Gas
 
@@ -34,7 +32,7 @@ Extraction methods for oil and gas changed significantly starting in the early 2
 
 In the past decade, these changing extraction methods and rising natural gas prices have made shale oil and gas increasingly attractive to extractive industries. Major oil and gas shale rock formations include the Permian, Haynesville, and Eagle Ford Regions mostly in Texas; the Marcellus Region in West Virginia, Pennsylvania, and New York; the Niobrara Region in Wyoming and Colorado; and the Bakken Region in North Dakota and Montana.
 
-In addition to these shale formations, the Green River Formation, which is located at the intersection of Colorado, Utah, and Wyoming, is estimated to hold [1.44 trillion barrels of oil (PDF)](http://pubs.usgs.gov/fs/2011/3063/pdf/FS11-3063.pdf). In shale gas, two Appalachian {{ "plays" | term_end:"play" }} have driven U.S. shale gas production, which accounts for [50% of total U.S. natural gas production](http://www.eia.gov/todayinenergy/detail.php?id=27612). These plays are the Marcellus Play (spanning nine states from New York to Tennessee) and the Utica Play (spanning Ohio, West Virginia, Pennsylvania, and New York).
+In addition to these shale formations, the Green River Formation, which is located at the intersection of Colorado, Utah, and Wyoming, is estimated to hold [1.44 trillion barrels of oil (PDF)](http://pubs.usgs.gov/fs/2011/3063/pdf/FS11-3063.pdf). In shale gas, two Appalachian <glossary-term term.key="play">plays</glossary-term> have driven U.S. shale gas production, which accounts for [50% of total U.S. natural gas production](http://www.eia.gov/todayinenergy/detail.php?id=27612). These plays are the Marcellus Play (spanning nine states from New York to Tennessee) and the Utica Play (spanning Ohio, West Virginia, Pennsylvania, and New York).
 
 To see where oil and gas resources exist and where exploration is taking place, visit the following:
 

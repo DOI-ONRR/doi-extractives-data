@@ -277,6 +277,12 @@ var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
 							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksFossilFuelsPageFrontmatter = "---"+os.EOL+
+							"title: Fossil Fuels | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/fossil-fuels/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -300,6 +306,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);

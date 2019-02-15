@@ -54,7 +54,7 @@ module.exports = (createNode, sourceData) => {
 }
 const createRevenueNode = (createNode, revenueData, index) => {
   let revenueNode = {
-  	id: index+"-revenue",
+  	id: index+"-resource-revenue",
   	Month: revenueData[SOURCE_COLUMNS.Month],
   	CalendarYear: revenueData[SOURCE_COLUMNS.CalendarYear],
 	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandCategory]],

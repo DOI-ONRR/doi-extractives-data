@@ -3,30 +3,6 @@ title: Native American Lands | Ownership and Governance
 layout: content
 permalink: /how-it-works/native-american-ownership-governance/
 redirect_from: /how-it-works/tribal-ownership-governance/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: land-ownership
-    title: Land ownership
-  - name: natural-resource-ownership
-    title: Natural resource ownership
-  - name: laws-and-regulations
-    title: Laws and regulations
-    subnav_items:
-      - name: history-of-federal-obligations
-        title: History of federal obligations
-      - name: general-allotment-act-of-1887-the-dawes-act
-        title: General Allotment Act of 1887 (The Dawes Act)
-      - name: indian-reorganization-act-of-1934
-        title: Indian Reorganization Act of 1934
-      - name: indian-mineral-leasing-act-of-1938
-        title: Indian Mineral Leasing Act of 1938
-      - name: indian-mineral-development-act-of-1982
-        title: Indian Mineral Development Act of 1982
-      - name: tribal-energy-development--self-determination-act-of-2005
-        title: Tribal Energy Development & Self-Determination Act of 2005
-description: Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 tag:
 - how it works
 - production
@@ -38,25 +14,21 @@ tag:
 - tribal
 - native american
 - Indian
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Native American ownership and governance of natural resources
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Native American ownership and governance of natural resources
 
-{% include selector.html %}
+> Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 
 ## Land ownership
 
 Today, there are two major types of Native American land:
 
-* {{ "Trust land" | term_end }}, in which the federal government holds legal title, but the beneficial interest remains with the individual or tribe. Trust lands held on behalf of individuals are known as allotments.
+* <glossary-term>Trust land</glossary-term>, in which the federal government holds legal title, but the beneficial interest remains with the individual or tribe. Trust lands held on behalf of individuals are known as allotments.
 * Fee land purchased by tribes, in which the tribe acquires legal title under specific statutory authority.
 
-In general, most Native American lands are {{ "trust land" | term_end }}. Approximately [56 million acres of land](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Native American tribes and individuals.
+In general, most Native American lands are <glossary-term>trust land</glossary-term>. Approximately [56 million acres of land](https://www.blm.gov/about/data/public-land-statistics) are held in trust by the United States for various Native American tribes and individuals.
 
 ## Natural resource ownership
 
@@ -90,7 +62,7 @@ Once out of trust, however, the land became subject to state and local taxation,
 
 The policy of allotment dramatically reduced the amount of land owned by tribes. In 1887, tribes held 138 million acres. Just forty-seven years later, in 1934, they owned 48 million acres. To stop the loss of Native American land, the federal government ended the allotment policy in 1934 and extended the trust period indefinitely. Today, allotments are still held in trust by the federal government for the beneficial Native American owner.
 
-In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native Americans. As the original recipients of allotments died, their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as {{ "fractionation" | term_end }}.
+In addition to diminishing the total acreage owned, the allotment policy also left behind a checkerboard of land ownership on many reservations, with individual parcels of land sometimes owned by a tribe or tribes, Native American individuals, and non-Native Americans. As the original recipients of allotments died, their land was divided among their descendants, with each receiving only a fractional share of the whole. This division among multiple heirs is known as <glossary-term>fractionation</glossary-term>.
 
 In many cases, ownership of allotted lands continued to divide over multiple generations so that today, individual parcels sometimes have more than 100 co-owners. Fractionation [limits economic development on reservations](https://aspe.hhs.gov/report/overcoming-challenges-business-and-economic-development-indian-country/impact-historical-events-tribal-bded), including resource extraction, and can divide lease income among co-owners so that individuals receive just a few cents based on their share.
 
@@ -110,4 +82,4 @@ The Indian Mineral Development Act of 1982 (IMDA) increased Native American self
 
 ### Indian Tribal Energy Development & Self-Determination Act of 2005
 
-The Tribal Energy Development & Self-Determination Act continued the move towards tribal self-determination regarding extraction. The Act enables tribes to enter “tribal energy resource agreements” (TERAs) with the Secretary of the Interior. Entering into this agreement with the Secretary of the Interior grants the tribe a much wider latitude of self-determination. Specifically it enables them to “enter into business agreements and leases for energy resource development and grant rights-of-way for pipelines or electric transmission or distribution lines on tribal land without the Secretary’s review and approval.” The Tribal Energy and Environmental Information Clearinghouse [provides further details on what goes into a TERA](https://teeic.indianaffairs.gov/abouttera/).
+The Tribal Energy Development & Self-Determination Act continued the move towards tribal self-determination regarding extraction. The Act enables tribes to enter “tribal energy resource agreements” (TERAs) with the Secretary of the Interior. Entering into this agreement with the Secretary of the Interior grants the tribe a much wider latitude of self-determination. Specifically it enables them to “enter into business agreements and leases for energy resource development and grant rights-of-way for pipelines or electric transmission or distribution lines on tribal land without the Secretary’s review and approval.”.

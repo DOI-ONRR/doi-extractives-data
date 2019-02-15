@@ -48,7 +48,7 @@ export default ({ data, children}) => {
 
           {/* Digital Analytics Program roll-up, see the data at https://analytics.usa.gov */}
           <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
-          {data.site.siteMetadata.googleAnalyticsId &&
+          {data && data.site.siteMetadata.googleAnalyticsId &&
             <script>
               {"(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', '"+data.site.siteMetadata.googleAnalyticsId+"', 'auto');ga('set', 'anonymizeIp', true);ga('set', 'forceSSL', true);ga('send', 'pageview');"}
             </script>
@@ -62,17 +62,16 @@ export default ({ data, children}) => {
             {'<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRF98R" height="0" width="0" style="display:none;visibility:hidden"></iframe>'}
           </noscript>
         </Helmet>
+        
         <Banner />
-        <Header siteMetadata={data.site.siteMetadata} />
-
-        <main>
-          <Glossary />
-
-          {children()}
-        </main>
-
-        <Footer version={data.site.siteMetadata.version} />
-
+        
+        <Header siteMetadata={data && data.site.siteMetadata} />
+        
+        <Glossary />
+        
+        {children()}
+        
+        <Footer version={data && data.site.siteMetadata.version} />
       </div>
   );
 }

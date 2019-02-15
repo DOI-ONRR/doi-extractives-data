@@ -1,6 +1,8 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
+
 // Custom Data Transformers
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
@@ -54,11 +56,11 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	const { createNode } = boundActionCreators;
 
-	revenuesTransformer(createNode, 
-		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
-
 	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
+
+	revenuesTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
 
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
@@ -67,10 +69,12 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
+
+const DEFAULT_TEMPLATE = path.resolve(`src/templates/default.js`);
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql)]);
+  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
 };
 
 const withPathPrefix = (url, pathPrefix) => {
@@ -204,6 +208,40 @@ const createStatePages = (createPage, graphql) => {
 	  });
 };
 
+const createHowItWorksPages = (createPage, graphql) => {
+
+	const howItWorksDefault_Template = path.resolve(`src/templates/how-it-works-default.js`);
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_HOWITWORKS+GRAPHQL_QUERIES.DISBURSEMENTS_SORT_BY_YEAR_DESC+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          let template = (path === '/how-it-works/')? howItWorksDefault_Template : DEFAULT_TEMPLATE;
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		              disbursements: result.data.Disbursements.disbursements,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
 
 exports.modifyBabelrc = ({ babelrc }) => {
   if (process.env.NODE_ENV !== `production`) {
@@ -224,6 +262,20 @@ var prependFile = require('prepend-file');
 var copydir = require('copy-dir');
 var copyfile = require('fs-copy-file-sync');
 var os = require('os');
+
+var howItWorksPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/"+os.EOL+
+							"redirect_from: /how-it-works/production/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
+							"---"+os.EOL;
 
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
@@ -248,6 +300,8 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);
     prependFile.sync(__dirname+'/public/explore/index.html', explorePageFrontmatter);
     allStateIds.map((stateId,index) => {

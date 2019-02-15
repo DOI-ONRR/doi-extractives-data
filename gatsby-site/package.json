@@ -11,7 +11,6 @@
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-resolve-src": "^1.1.4",
     "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-remark-autolink-headers": "^1.4.19",
     "gatsby-source-filesystem": "^1.5.38",
     "gatsby-transformer-excel": "^1.0.9",
     "gatsby-transformer-remark": "^1.7.42",

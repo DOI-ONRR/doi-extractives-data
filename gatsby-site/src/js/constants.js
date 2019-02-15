@@ -5,6 +5,7 @@ module.exports = Object.freeze({
 
 	// Application State Keys
 	DATA_SETS_STATE_KEY: 'dataSets',
+  SOURCE_DATA_STATE_KEY: 'SourceData',
 
   FISCAL_YEAR_KEY: 'FiscalYear',
   CALENDAR_YEAR_KEY: 'CalendarYear',

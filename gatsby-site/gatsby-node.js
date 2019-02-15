@@ -284,6 +284,12 @@ var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksOwnershipPageFrontmatter = "---"+os.EOL+
+							"title:  Ownership | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/ownership/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -307,6 +313,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/ownership/index.html', howItWorksOwnershipPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-production/index.html', howItWorksNativeProductionPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);

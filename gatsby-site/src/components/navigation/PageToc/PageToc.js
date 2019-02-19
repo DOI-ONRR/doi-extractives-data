@@ -61,6 +61,9 @@ class PageToc extends React.Component {
 	  let fromTop = window.scrollY;
 	  let activeItemDistance = 10000;
 
+	  //console.log(fromTop, (document.documentElement.scrollHeight - document.documentElement.clientHeight));
+	  //let lastTocActive = (fromTop+20 >= (document.documentElement.scrollHeight - document.documentElement.clientHeight));
+
 	  tocLinks.forEach( (link, index)  => {
 	    let section = document.querySelector((link.hash || 'body'));
 

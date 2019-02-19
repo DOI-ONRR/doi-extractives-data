@@ -34,6 +34,7 @@ const hastReactRenderer = new rehypeReact({
                 'display-disbursement':DisplayDisbursement,
                 'page-toc': PageToc,
                 'custom-link':Link,
+                'a': Link,
               },
 
 }).Compiler; 

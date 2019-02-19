@@ -61,9 +61,6 @@ class PageToc extends React.Component {
 	  let fromTop = window.scrollY;
 	  let activeItemDistance = 10000;
 
-	  //console.log(fromTop, (document.documentElement.scrollHeight - document.documentElement.clientHeight));
-	  //let lastTocActive = (fromTop+20 >= (document.documentElement.scrollHeight - document.documentElement.clientHeight));
-
 	  tocLinks.forEach( (link, index)  => {
 	    let section = document.querySelector((link.hash || 'body'));
 
@@ -115,7 +112,7 @@ class PageToc extends React.Component {
 
 		let excludeClassNames = ( typeof this.props.excludeClassNames === "string")? this.props.excludeClassNames.split(',') : this.props.excludeClassNames;
 
-		tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames);
+		tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames, this.state.scrollOffset);
 
 		this.setState({...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(styles['mobile-breakpoint']))});
 	}
@@ -217,7 +214,16 @@ PageToc.defaultProps = {
 
 export default PageToc;
 
-const elementArrayToTocArray = (elems, excludeClassNames) => {
+const elemCalcPos = (elem, offset) => {
+  // You can add an offset number to a element to have the toc menu item activate earlier/later
+  let dataTocOffset = parseInt(elem.getAttribute('data-toc-offset')) || 0;
+
+  let computedMarginTop = parseInt(window.getComputedStyle(elem).marginTop) || 0;
+
+  return ( (elem.offsetTop-computedMarginTop) + offset - dataTocOffset );
+};
+
+const elementArrayToTocArray = (elems, excludeClassNames, offset) => {
 
 	const createTocItem = (elem) => {
 		elem.id = elem.id || utils.formatToSlug(elem.innerText);
@@ -248,7 +254,7 @@ const elementArrayToTocArray = (elems, excludeClassNames) => {
 			elem[tocSubAttr] = undefined;
 		})
 
-		filteredElems.map((elem) => {
+		filteredElems.map((elem, index) => {
 			if(parseInt(elem.tagName.slice(-1)) > parseInt(currentTocItem.tagName.slice(-1))){
 				addChild(elem, currentTocItem);
 			}
@@ -257,6 +263,17 @@ const elementArrayToTocArray = (elems, excludeClassNames) => {
 				currentTocItem = elem;
 
 				toc.push(elem);
+			}
+
+			// make sure last element is able to be active, given the max scroll value vs pos of last element
+			if(filteredElems.length-1 === index) {
+				let scrollMaxY = (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+				let maxElemPos = elemCalcPos(elem, offset);
+
+				let elemOffset = maxElemPos - (scrollMaxY - 20);
+				if(elemOffset > 0 ) {
+					elem.setAttribute('data-toc-offset', elemOffset);
+				}
 			}
 		});
 	}

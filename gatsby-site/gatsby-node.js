@@ -283,6 +283,12 @@ var howItWorksFederalLawsPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/federal-laws/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksFederalReformsPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-reforms/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -306,6 +312,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/federal-reforms/index.html', howItWorksFederalReformsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);

@@ -82,6 +82,12 @@ exports.onClientEntry = () => {
     if(path.includes("/native-american-ownership-governance") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
     }
+    else if(path.includes("/native-american-production") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-production.json","path":path}]);
+    }
+    else if(path.includes("/ownership") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-ownership.json","path":path}]);
+    }
     else if(path.includes("/native-american-revenue") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-revenue.json","path":path}]);
     }

@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import MediaQuery from 'react-responsive';
 
+import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
+
 import * as CONSTANTS from '../js/constants';
 
 import hastReactRenderer from '../js/hast-react-renderer';
@@ -11,6 +13,24 @@ import utils from '../js/utils';
 import {PageToc} from '../components/navigation/PageToc'
 
 class DefaultTemplate extends React.Component {
+
+  constructor(props){
+    super(props);
+
+    this.hydrateStore();
+  }
+
+  /**
+   * Add the data to the redux store to enable 
+   * the components to access filtered data using the 
+   * reducers
+   **/
+  hydrateStore(){
+    this.props.hydateDataManager([
+      {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pathContext.disbursements},
+    ]);
+  }
+
 	render () {
 		return (
 			<main>
@@ -35,5 +55,6 @@ class DefaultTemplate extends React.Component {
 }
 export default connect(
   state => ({}),
-  dispatch => ({}),
+  dispatch => ({  hydateDataManager: (dataSets) => dispatch(hydateDataManagerAction(dataSets)),
+              }),
 )(DefaultTemplate);

@@ -3,17 +3,6 @@ title: Native American Lands | Economic Impact
 layout: content
 permalink: /how-it-works/native-american-economic-impact/
 redirect_from: /how-it-works/tribal-economic-impact/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: gross-domestic-product-and-jobs
-    title: GDP and jobs
-  - name: costs
-    title: Costs
-  - name: reclamation
-    title: Reclamation
-description: Extraction affects Native American economies in a number of ways, though the effects can vary widely depending on the level of extraction on a given reservation and the details of the lease agreement.
 tag:
 - how it works
 - production
@@ -22,16 +11,12 @@ tag:
 - wind
 - water power
 - biomass
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Impact of natural resource extraction on Native American land
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Impact of natural resource extraction on Native American land
 
-{% include selector.html %}
+> Extraction affects Native American economies in a number of ways, though the effects can vary widely depending on the level of extraction on a given reservation and the details of the lease agreement.
 
 Little data exists to measure the economic impact of extraction on Native American economies, both at the tribal and individual levels and at the national level.
 
@@ -45,7 +30,7 @@ In addition to generating revenue and creating jobs, extractives production also
 
 ## Reclamation
 
-The [Abandoned Mine Land]({{ site.baseurl }}/how-it-works/aml-reclamation-program/) (AML) program governs reclamation on Native American lands, as it does on all lands in the United States.
+The [Abandoned Mine Land](/how-it-works/aml-reclamation-program/) (AML) program governs reclamation on Native American lands, as it does on all lands in the United States.
 
 Reclamation activity has occurred or needs to occur on 17 reservations. Three tribes have had the most extensive reclamation activity in the past: the Crow, Hopi, and Navajo. These tribes also regulate their own AML programs. These three tribes are all certified, meaning they have reclaimed all of their Priority 1 and 2 AML sites and may now use AML funds for a wider range of activities.
 

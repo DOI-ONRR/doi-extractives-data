@@ -34,7 +34,7 @@ class DefaultTemplate extends React.Component {
 
 	render () {
 		let title = this.props.pathContext.markdown.frontmatter.title || "Natural Resources Revenue Data";
-		console.log(this.props.pathContext.markdown.frontmatter);
+
 		return (
 			<main>
         <Helmet

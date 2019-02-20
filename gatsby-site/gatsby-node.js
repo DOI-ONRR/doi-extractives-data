@@ -271,7 +271,7 @@ var howItWorksPageFrontmatter = "---"+os.EOL+
 							"---"+os.EOL;
 
 var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
-							"title: How It Works"+os.EOL+
+							"title:  Native American Lands | Ownership and Governance"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
@@ -282,6 +282,13 @@ var howItWorksNativeRevenuePageFrontmatter = "---"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/native-american-revenue/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-revenue/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeImpactPageFrontmatter = "---"+os.EOL+
+							"title: Native American Lands | Economic Impact"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-economic-impact/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-economic-impact/"+os.EOL+
 							"---"+os.EOL;
 
 var aboutPageFrontmatter = "---"+os.EOL+
@@ -307,6 +314,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-economic-impact/index.html', howItWorksNativeImpactPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-revenue/index.html', howItWorksNativeRevenuePageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);

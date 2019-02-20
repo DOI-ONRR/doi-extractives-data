@@ -319,6 +319,12 @@ var howItWorksFossilFuelsPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/fossil-fuels/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksNonenergyMineralsPageFrontmatter = "---"+os.EOL+
+							"title: Nonenergy Minerals | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/nonenergy-minerals/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -342,6 +348,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/nonenergy-minerals/index.html', howItWorksNonenergyMineralsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/ownership/index.html', howItWorksOwnershipPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-production/index.html', howItWorksNativeProductionPageFrontmatter);

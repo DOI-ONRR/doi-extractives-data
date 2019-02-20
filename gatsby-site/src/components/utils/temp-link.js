@@ -8,7 +8,13 @@ class TempLink extends React.Component {
     let { to, className, href, ...rest } = this.props;
     
     if(href) {
-      to = href.replace('/gatsby-public', '');
+      if(href.includes('gatsby-public')) {
+        to = href.replace('/gatsby-public', '');
+        to = withPrefix(to);
+      }
+      else {
+        to = href;
+      }
     }
     else {
       to = withPrefix(to);

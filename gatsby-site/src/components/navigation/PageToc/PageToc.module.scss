@@ -1,7 +1,7 @@
 @value colors: "../../../css-global/colors.css";
 @value black-light, gray-light, gray-lighter, green-light from colors;
 @value variables: "../../../css-global/variables.scss";
-@value base-padding-lite, mobile-breakpoint from variables;
+@value base-padding-lite, portrait-tablet-breakpoint from variables;
 
 .root {
 	background-color: white;
@@ -116,7 +116,7 @@
 	display: none;
 }
 
-@media screen and (max-width: mobile-breakpoint) {
+@media screen and (max-width: portrait-tablet-breakpoint) {
 	.tocContainer {
 		background-color: white;
 		padding: 0px;

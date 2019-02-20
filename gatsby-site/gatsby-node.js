@@ -271,10 +271,64 @@ var howItWorksPageFrontmatter = "---"+os.EOL+
 							"---"+os.EOL;
 
 var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
-							"title: How It Works"+os.EOL+
+							"title:  Native American Lands | Ownership and Governance"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
+							"---"+os.EOL;
+							
+var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Natural Resource Production"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-production/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Natural Resource Production"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-production/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
+							"---"+os.EOL;
+
+
+
+var howItWorksOwnershipPageFrontmatter = "---"+os.EOL+
+							"title:  Ownership | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/ownership/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeRevenuePageFrontmatter = "---"+os.EOL+
+							"title: Native American Lands | Revenue"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-revenue/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-revenue/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeImpactPageFrontmatter = "---"+os.EOL+
+							"title: Native American Lands | Economic Impact"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-economic-impact/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-economic-impact/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksFossilFuelsPageFrontmatter = "---"+os.EOL+
+							"title: Fossil Fuels | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/fossil-fuels/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNonenergyMineralsPageFrontmatter = "---"+os.EOL+
+							"title: Nonenergy Minerals | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/nonenergy-minerals/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksRenewablesFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/renewables/"+os.EOL+
 							"---"+os.EOL;
 
 var howItWorksFederalLawsPageFrontmatter = "---"+os.EOL+
@@ -307,6 +361,13 @@ var explorePageFrontmatter = "---"+os.EOL+
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/renewables/index.html', howItWorksRenewablesFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/nonenergy-minerals/index.html', howItWorksNonenergyMineralsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/ownership/index.html', howItWorksOwnershipPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-production/index.html', howItWorksNativeProductionPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-economic-impact/index.html', howItWorksNativeImpactPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-revenue/index.html', howItWorksNativeRevenuePageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);

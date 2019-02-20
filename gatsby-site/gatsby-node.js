@@ -276,6 +276,13 @@ var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
 							"---"+os.EOL;
+							
+var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Natural Resource Production"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-production/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
+							"---"+os.EOL;
 
 var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"title:  Native American Lands | Natural Resource Production"+os.EOL+

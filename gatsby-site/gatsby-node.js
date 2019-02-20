@@ -283,6 +283,13 @@ var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/native-american-production/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
 							"---"+os.EOL;
+							
+var howItWorksStateLawsPageFrontmatter = "---"+os.EOL+
+							"title:  State laws and regulations | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/state-laws-and-regulations/"+os.EOL+
+							"redirect_from: /how-it-works/state-legal-fiscal-info/"+os.EOL+
+							"---"+os.EOL;
 
 var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"title:  Native American Lands | Natural Resource Production"+os.EOL+
@@ -348,6 +355,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/state-laws-and-regulations/index.html', howItWorksStateLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/nonenergy-minerals/index.html', howItWorksNonenergyMineralsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/ownership/index.html', howItWorksOwnershipPageFrontmatter);

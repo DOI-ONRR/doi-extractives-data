@@ -13,7 +13,8 @@ import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
-import Link from '../components/utils/temp-link';
+import Link from '../components/utils/temp-link'
+import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -34,6 +35,7 @@ const hastReactRenderer = new rehypeReact({
                 'display-disbursement':DisplayDisbursement,
                 'page-toc': PageToc,
                 'custom-link':Link,
+                'msg-prioritzed-states-svg':MsgPrioritizedStatesSvg,
               },
 
 }).Compiler; 

@@ -9,6 +9,8 @@ import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
 import hastReactRenderer from '../js/hast-react-renderer';
 import {PageToc} from '../components/navigation/PageToc'
 
+import { withPrefixSVG } from '../components/utils/temp-link';
+
 
 class HowItWorksDefault extends React.Component {
 
@@ -27,6 +29,15 @@ class HowItWorksDefault extends React.Component {
     this.props.hydateDataManager([
       {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pathContext.disbursements},
     ]);
+  }
+
+  componentDidMount() {
+    const script1 = document.createElement("script");
+
+    script1.src = withPrefixSVG("/public/js/main.min.js");
+    script1.async = false;
+
+    document.body.appendChild(script1);
   }
 
 	render () {

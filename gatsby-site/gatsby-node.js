@@ -225,7 +225,7 @@ const createHowItWorksPages = (createPage, graphql) => {
 	        	// Create pages for each markdown file.
 		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
 		          const path = page.frontmatter.permalink;
-		          let template = (path === '/how-it-works/')? howItWorksDefault_Template : DEFAULT_TEMPLATE;
+		          let template = (path === '/how-it-works/' || path === '/how-it-works/coal/')? howItWorksDefault_Template : DEFAULT_TEMPLATE;
 
 		          createPage({
 		            path,

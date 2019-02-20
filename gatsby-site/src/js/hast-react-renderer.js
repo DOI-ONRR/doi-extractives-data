@@ -14,6 +14,7 @@ import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
 import Link from '../components/utils/temp-link';
+import {Accordion} from '../components/layouts/Accordion';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -35,6 +36,7 @@ const hastReactRenderer = new rehypeReact({
                 'page-toc': PageToc,
                 'custom-link':Link,
                 'a': Link,
+                'accordion-component': Accordion,
               },
 
 }).Compiler; 

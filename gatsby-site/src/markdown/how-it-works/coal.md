@@ -117,3 +117,118 @@ permalink: /how-it-works/coal/
 		</section>
   </div>
 </section>
+<div class="slab-beta revenues_page-forms">
+	<section class="container-outer">
+	  <h1>Revenue collected by the Department of the Interior</h1>
+	  <div class="revenues_page-forms_options">
+	    <div>
+	      <h2>Bonus</h2>
+	      <p>The amount the highest bidder paid for a natural resource lease.</p>
+	    </div>
+	    <div>
+	      <h2>Rent</h2>
+	      <p class="revenues_page-forms_numbers"><span>$3.00</span> per acre or a fraction thereof</p>
+	    </div>
+	    <div>
+	      <h2>Royalty</h2>
+	      <p class="revenues_page-forms_numbers_first">
+	        <span>12.5%</span>
+	        <br>surface
+	        <br><span>8%</span>
+	        <br>subsurface</p>
+	      <p>The rate depends on whether the coal was extracted by surface or subsurface mining.</p>
+	    </div>
+	    <div>
+	      <h2>Fees</h2>
+	      <p class="revenues_page-forms_numbers_first"><span>$0.28</span> per ton
+	      <br>surface mining
+	      <br><span>$0.12</span> per ton
+	      <br>subsurface mining</p>
+	      <p>This is the Abandoned Mine Land Fee.</p>
+	    </div>
+	  </div>
+	</section>
+</div>
+<div class="slab-alpha revenues_subpage-involved">
+    <section class="container-outer">
+      <div class="container-left-4">
+        <h1>Get involved</h1>
+        <h2 class="h4">Participate in the coal leasing process.</h2>
+      </div>
+      <div class="container-right-8">
+        <div class="revenues_subpage-involved_participate">
+          <div class="container-half container-half-space">
+            <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term term.key="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local RAC</a>.</p>
+            <p><strong>Volunteer.</strong> <a href="http://volunteer.gov/index.cfm">Find opportunities in your area</a> or <a href="https://www.blm.gov/get-involved/partnerships">create a BLM partnership</a>.</p>
+          </div>
+          <div class="container-half revenues_subpage-involved_video">
+            <iframe title="get involved video" src="https://www.youtube.com/embed/gdalYBS1lPE" frameborder="0" allowfullscreen></iframe>
+            <p><strong>Contact a local BLM office.</strong> BLM has 12 state and regional field offices, mostly in the western U.S. <a href="https://www.blm.gov/locations">Find your state office</a> for details about land-use policies in your area.</p>
+          </div>
+        </div>
+        <div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://www.facebook.com/BLMNational/">
+              <img src="/public/img/icons/facebook.svg" class="u-padding-right icon-medium"/>
+              <h3>Facebook</h3>
+            </a>
+            <p>Like a BLM Facebook page to get the latest from whale watching to mountain biking in your feed.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://twitter.com/BLMNational">
+              <img src="/public/img/icons/twitter.svg" class="u-padding-right icon-medium"/>
+              <h3>Twitter</h3>
+            </a>
+            <p>Follow BLM to keep up with the latest info.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://www.flickr.com/photos/mypubliclands/">
+              <img src="/public/img/icons/flickr.svg" class="u-padding-right icon-medium"/>
+              <h3>Flickr</h3>
+            </a>
+            <p>See breathtaking photos on BLM’s Flickr.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://www.youtube.com/user/BLMNational">
+              <img src="/public/img/icons/youtube-play.svg" class="u-padding-right icon-medium"/>
+              <h3>YouTube</h3>
+            </a>
+            <p>Watch wildlife and wilderness videos on BLM’s channel.</p>
+          </div>
+        </div>
+        <div class="revenues-section-involved-options">
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="http://mypubliclands.tumblr.com/">
+              <img src="/public/img/icons/tumblr.svg" class="u-padding-right icon-medium"/>
+              <h3>Tumblr</h3>
+            </a>
+            <p>Read blogs from BLM offices across the country.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://instagram.com/mypubliclands/">
+              <img src="/public/img/icons/instagram.svg" class="u-padding-right icon-medium"/>
+              <h3>Instagram</h3>
+            </a>
+            <p>Follow #seeBLM for snapshots of over 245 million acres of public land.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://www.pinterest.com/mypubliclands/">
+            <img src="/public/img/icons/pinterest.svg" class="u-padding-right icon-medium"/>
+              <h3>Pinterest</h3>
+            </a>
+            <p>Plan your next trip from BLM’s Pinterest.</p>
+          </div>
+          <div class="revenues_subpage-involved_option">
+            <a class="link-no_under" href="https://www.blm.gov/public-room">
+              <img src="/public/img/icons/info.svg" class="u-padding-right icon-medium"/>
+              <h3>Public room</h3>
+            </a>
+            <p>Get BLM news, maps, documents, and reports.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+<div class="pre-footer">
+footer
+</div>

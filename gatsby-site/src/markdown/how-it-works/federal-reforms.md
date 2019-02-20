@@ -2,27 +2,6 @@
 title: Federal Reforms | How It Works
 layout: content
 permalink: /how-it-works/federal-reforms/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: oig-reports
-    title: Office of Inspector General
-  - name: gao-reports
-    title: General Accountability Office
-  - name: proposed-rules
-    title: Proposed rules
-  - name: dodd-frank
-    title: The Dodd–Frank Act
-    subnav_items:
-      - name: section-1504
-        title: Section 1504
-      - name: section-1504-resolution
-        title: Section 1504 resolution
-  - name: deepwater-horizon-oil-spill
-    title: Deepwater Horizon oil spill
-
-description: The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms are recommended by oversight organizations, such as the Inspector General or the Government Accountability Office.
 tag:
 - How it works
 - Federal reforms
@@ -30,16 +9,12 @@ tag:
 - OIG reports
 - GAO reports
 - Dodd-Frank Act
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Federal reforms
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Federal reforms
 
-{% include selector.html %}
+> The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms are recommended by oversight organizations, such as the Inspector General or the Government Accountability Office.
 
 <h2 id="oig-reports">Office of Inspector General (OIG) reports</h2>
 
@@ -77,7 +52,7 @@ In December 2017, Rep. Bill Huizenga of Michigan introduced [a bill to formally 
 
 <h2 id="deepwater-horizon-oil-spill">Deepwater Horizon oil spill reforms</h2>
 
-In the aftermath of the [Deepwater Horizon oil spill](http://www.gpo.gov/fdsys/pkg/GPO-OILCOMMISSION/pdf/GPO-OILCOMMISSION.pdf) in the Gulf of Mexico in 2010, the federal government changed the oversight of the Department of the Interior's leasing, regulation, and collection of revenue for oil and gas extraction on the Outer Continental Shelf. The post-Deepwater Horizon reorganization separated and established [independent oversight for offshore leasing](http://www.boem.gov/Reforms-since-the-Deepwater-Horizon-Tragedy/) ({{ "BOEM" | term_end }}), offshore safety and environmental enforcement ({{ "BSEE" | term_end }}), and the collection and accountability of the revenue generated from natural resource development on federal and Indian lands through the creation of the Office of Natural Resources Revenue (ONRR).
+In the aftermath of the [Deepwater Horizon oil spill](http://www.gpo.gov/fdsys/pkg/GPO-OILCOMMISSION/pdf/GPO-OILCOMMISSION.pdf) in the Gulf of Mexico in 2010, the federal government changed the oversight of the Department of the Interior's leasing, regulation, and collection of revenue for oil and gas extraction on the Outer Continental Shelf. The post-Deepwater Horizon reorganization separated and established [independent oversight for offshore leasing](http://www.boem.gov/Reforms-since-the-Deepwater-Horizon-Tragedy/) (<glossary-term>BOEM</glossary-term>), offshore safety and environmental enforcement (<glossary-term>BSEE</glossary-term>), and the collection and accountability of the revenue generated from natural resource development on federal and Indian lands through the creation of the Office of Natural Resources Revenue (ONRR).
 
 When the Secretary of the Interior announced the creation of ONRR in May 2010 and the elimination of the former Minerals Management Service in June 2010, the goals were to:
 

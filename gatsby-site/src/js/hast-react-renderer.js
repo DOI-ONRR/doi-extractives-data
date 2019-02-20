@@ -36,6 +36,7 @@ const hastReactRenderer = new rehypeReact({
                 'page-toc': PageToc,
                 'custom-link':Link,
                 'msg-prioritzed-states-svg':MsgPrioritizedStatesSvg,
+                'a': Link,
               },
 
 }).Compiler; 

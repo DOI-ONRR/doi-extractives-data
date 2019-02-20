@@ -2,27 +2,7 @@
 title: Nonenergy Minerals | How It Works
 layout: content
 permalink: /how-it-works/nonenergy-minerals/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: nonenergy-minerals
-    title: Nonenergy minerals
-  - name: gold
-    title: Gold
-  - name: copper
-    title: Copper
-  - name: iron
-    title: Iron
-  - name: lead
-    title: Lead
-  - name: zinc
-    title: Zinc
-  - name: silver
-    title: Silver
-  - name: molybdenum
-    title: Molybdenum
-description: Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others. Gold, copper, iron, and zinc are the principal contributors to metal mine production.
+description: 
 tag:
 - how it works
 - production
@@ -34,33 +14,30 @@ tag:
 - zinc
 - silver
 - molybdenum
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Nonenergy minerals
-selector: list
 ---
 
-> {{ page.description }} [Explore production data.]({{ site.baseurl }}/explore/#production)
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Nonenergy minerals
 
-{% include selector.html %}
+> Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others. Gold, copper, iron, and zinc are the principal contributors to metal mine production. [Explore production data.](/explore/#production)
+
 ### Gold
 
 Gold can be found in both loose materials and hard rocks. Miners extract gold from placer mines using sluicing, dredging, jigging, and amalgamation devices that separate the gold from water, silt, rock, and other compounds. Lode mining, both open pit and underground, extracts gold embedded within rock walls. Once mined, gold is used to make jewelry, electronics, dental treatments, and other products.
 
- In the United States, recent exploration for gold resulted in discoveries along the Carlin and Battle Mountain-Eureka (Cortez) trends in [Eureka and Elko Counties]({{ site.baseurl }}/case-studies/elko-and-eureka/). [Read more about gold from the U.S. Geological Survey (USGS)](https://minerals.usgs.gov/minerals/pubs/commodity/gold/).
+ In the United States, recent exploration for gold resulted in discoveries along the Carlin and Battle Mountain-Eureka (Cortez) trends in [Eureka and Elko Counties](/case-studies/elko-and-eureka/). [Read more about gold from the U.S. Geological Survey (USGS)](https://minerals.usgs.gov/minerals/pubs/commodity/gold/).
 
 ### Copper
 
 Copper is found in hard rocks in the form of copper ore. Miners extract copper from open pit and underground mines through traditional quarrying to separate the copper from rock, or leaching which involves treating the ore with diluted sulfuric acid. Once produced, copper has a variety of uses, including as a building material, as an effective conductor of electricity, and within the health care sector.
 
-Arizona is one of the five major copper-producing states and [Greenlee County]({{ site.baseurl }}/case-studies/greenlee/) has a long history of copper mining dating back to the 1870s. [Read more about copper from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/copper/).
+Arizona is one of the five major copper-producing states and [Greenlee County](/case-studies/greenlee/) has a long history of copper mining dating back to the 1870s. [Read more about copper from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/copper/).
 
 ### Iron
 
 Iron is found in underground rocks. Miners extract iron by drilling holes in the ground in carefully engineered patterns and blasting out rocks with explosives. Next, miners crush the rocks and separate out the iron ore from other materials. Almost all iron is used to make steel, which in turn is used to make buildings, infrastructure, machines, and vehicles.
 
-Most iron ore in the U.S. is produced in [St. Louis County]({{ site.baseurl }}/case-studies/st-louis/), Minnesota. [Read more about iron from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/iron_&_steel/).
+Most iron ore in the U.S. is produced in [St. Louis County](/case-studies/st-louis/), Minnesota. [Read more about iron from USGS](https://minerals.usgs.gov/minerals/pubs/commodity/iron_&_steel/).
 
 ### Lead
 

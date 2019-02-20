@@ -331,6 +331,12 @@ var howItWorksRenewablesFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/renewables/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksFederalLawsPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-laws/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -354,6 +360,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/renewables/index.html', howItWorksRenewablesFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/nonenergy-minerals/index.html', howItWorksNonenergyMineralsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);

@@ -2,36 +2,18 @@
 title: Federal Laws | How It Works
 layout: content
 permalink: /how-it-works/federal-laws/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: fiscal-regime
-    title: Fiscal regime
-  - name: fees-and-fines
-    title: Fees and fines
-  - name: other-laws
-    title: Other laws
-  - name: regulations
-    title: Regulations
-description: The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
 tag:
 - How it works
 - Federal laws
 - Fiscal regime
 - Fees and fines
 - Regulations
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Federal laws and regulations
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Federal laws and regulations
 
-
-{% include selector.html %}
+> The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
 
 ## Fiscal regime
 
@@ -147,7 +129,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Oil, gas, coal, wind, solar, hydropower, and geothermal</td>
   </tr>
   <tr>
-    <td><a href="{{ site.baseurl }}/how-it-works/gomesa">Gulf of Mexico Energy Security Act (GOMESA) of 2006 (120 Stat. 2922)</a></td>
+    <td><a href="/how-it-works/gomesa">Gulf of Mexico Energy Security Act (GOMESA) of 2006 (120 Stat. 2922)</a></td>
     <td>Opens 8.3 million acres in the Gulf of Mexico for oil and gas leasing, shares leasing revenue with gulf producing states and the Land and Water Conservation Fund, and bans oil and gas leasing within 125 miles off the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.</td>
     <td>Outer Continental Shelf</td>
   <td>Oil and gas</td>
@@ -231,4 +213,4 @@ Federal agencies, such as DOI and relevant bureaus, implement these laws by deve
 * [Title 30](http://www.ecfr.gov/cgi-bin/text-idx?SID=784ea268c892a669424da1512740a933&mc=true&tpl=/ecfrbrowse/Title30/30tab_02.tpl) governs mineral resources. [Chapter II](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#0) deals with the BSEE; [Chapter V](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#500) deals with BOEM; [Chapter VII](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#0) deals with OSMRE; [Chapter XII](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#1200) deals with ONRR.
 * [Title 43](http://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title43/43tab_02.tpl) in the Code of Federal Regulations governs public lands. Subchapter C focuses on minerals management (Parts 3000–3870).
 
-Implementing laws includes complying with the [National Environmental Policy Act (NEPA) of 1969](http://www.gpo.gov/fdsys/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap55-sec4321.pdf) (42 USC § 4321 et seq.). NEPA is intended to ensure that decision makers and the public have information about the potential impacts to the environment of proposed federal actions and alternatives to those actions. When taking any major action, such as leasing natural resources on federal lands for extraction, federal agencies must prepare an Environmental Assessment and, if applicable, an {{ "Environmental Impact Statement" | term_end:"Environmental Impact Statement (EIS)" }}. The public has legally mandated opportunities to comment on these impact statements.
+Implementing laws includes complying with the [National Environmental Policy Act (NEPA) of 1969](http://www.gpo.gov/fdsys/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap55-sec4321.pdf) (42 USC § 4321 et seq.). NEPA is intended to ensure that decision makers and the public have information about the potential impacts to the environment of proposed federal actions and alternatives to those actions. When taking any major action, such as leasing natural resources on federal lands for extraction, federal agencies must prepare an Environmental Assessment and, if applicable, an <glossary-term term.key='Environmental Impact Statement (EIS)'>Environmental Impact Statement</glossary-term>. The public has legally mandated opportunities to comment on these impact statements.

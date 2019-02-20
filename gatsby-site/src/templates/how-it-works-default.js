@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -29,8 +30,18 @@ class HowItWorksDefault extends React.Component {
   }
 
 	render () {
+    let title = this.props.pathContext.markdown.frontmatter.title || "Natural Resources Revenue Data";
 		return (
 			<div>
+        <Helmet
+            title={title}
+            meta={[
+                // title
+                { name: "og:title", content: title},
+                { name: "twitter:title", content: title},
+            ]}
+
+            />
         {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
       </div>
 		);

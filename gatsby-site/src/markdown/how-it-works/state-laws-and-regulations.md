@@ -2,21 +2,7 @@
 title: State laws and regulations | How It Works
 layout: content
 permalink: /how-it-works/state-laws-and-regulations/
-nav_description: Jump to a section
-nav_items:
-  - name: introduction
-    title: Top
-  - name: role-of-state-government-agencies
-    title: Role of state government
-  - name: state-leasing-programs
-    title: State leasing programs
-  - name: state-extractive-industries-revenue
-    title: Extractive industries revenue
-  - name: state-revenue-disbursements
-    title: Revenue disbursements
-  - name: natural-resource-trust-funds
-    title: Natural resource trust funds
-description: States maintain ownership of some lands and natural resources and develop their own taxation and royalty systems for oil, gas, nonenergy minerals, and renewable energy. States collect extractive revenue directly. Each state has a unique revenue system.
+redirect_from: /how-it-works/state-legal-fiscal-info/
 tag:
 - How it works
 - State laws and regulations
@@ -24,57 +10,42 @@ tag:
 - State leasing programs
 - Extractive industries revenue
 - Natural resource trust funds
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: State laws and regulations
-selector: list
-redirect_from: /how-it-works/state-legal-fiscal-info/
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# State laws and regulations
 
-{% include selector.html %}
+> States maintain ownership of some lands and natural resources and develop their own taxation and royalty systems for oil, gas, nonenergy minerals, and renewable energy. States collect extractive revenue directly. Each state has a unique revenue system.
+
 
 While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests.
 
 ### Map of 18 MSG Prioritized States for the 2015 USEITI Report
-<eiti-map is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
-  simplify="1e-2"
-  projection="albersCustom"
-  preserveAspectRatio="xMidYMid meet">
-  <svg>
-    <g data-url="us-topology.json"
-      data-object="states"
-      data-mesh="true"></g>
-    <g data-url="us-topology.json"
-      data-object="states"
-      data-filter="properties.name.match(/Arizona|California|Nevada|Utah|Montana|Wyoming|Colorado|New Mexico|Texas|Oklahoma|Louisiana|North Dakota|Minnesota|Illinois|Kentucky|West Virginia|Pennsylvania|Alaska/)"
-      class="case_studies-selected_counties"></g>
-  </svg>
-</eiti-map>
+<msg-prioritzed-states-svg></msg-prioritzed-states-svg>
 
 See each state profile for more details about individual states’ laws and statutes:
 
-<div class="list-columns" markdown="1">
-- [Alaska]({{ site.baseurl }}/explore/AK/#state-governance)
-- [Arizona]({{ site.baseurl }}/explore/AZ/#state-governance)
-- [California]({{ site.baseurl }}/explore/CA/#state-governance)
-- [Colorado]({{ site.baseurl }}/explore/CO/#state-governance)
-- [Illinois]({{ site.baseurl }}/explore/IL/#state-governance)
-- [Kentucky]({{ site.baseurl }}/explore/KY/#state-governance)
-- [Louisiana]({{ site.baseurl }}/explore/LA/#state-governance)
-- [Minnesota]({{ site.baseurl }}/explore/MN/#state-governance)
-- [Montana]({{ site.baseurl }}/explore/MT/#state-governance)
-- [Nevada]({{ site.baseurl }}/explore/NV/#state-governance)
-- [New Mexico]({{ site.baseurl }}/explore/NM/#state-governance)
-- [North Dakota]({{ site.baseurl }}/explore/ND/#state-governance)
-- [Oklahoma]({{ site.baseurl }}/explore/OK/#state-governance)
-- [Pennsylvania]({{ site.baseurl }}/explore/PA/#state-governance)
-- [Texas]({{ site.baseurl }}/explore/TX/#state-governance)
-- [Utah]({{ site.baseurl }}/explore/UT/#state-governance)
-- [West Virginia]({{ site.baseurl }}/explore/WV/#state-governance)
-- [Wyoming]({{ site.baseurl }}/explore/WY/#state-governance)
+<div class="list-columns">
+  <ul>
+    <li><a href="/explore/AK/#state-governance">Alaska</a></li>
+    <li><a href="/explore/AZ/#state-governance">Arizona</a></li>
+    <li><a href="/explore/CA/#state-governance">California</a></li>
+    <li><a href="/explore/CO/#state-governance">Colorado</a></li>
+    <li><a href="/explore/IL/#state-governance">Illinois</a></li>
+    <li><a href="/explore/KY/#state-governance">Kentucky</a></li>
+    <li><a href="/explore/LA/#state-governance">Louisiana</a></li>
+    <li><a href="/explore/MN/#state-governance">Minnesota</a></li>
+    <li><a href="/explore/MT/#state-governance">Montana</a></li>
+    <li><a href="/explore/NV/#state-governance">Nevada</a></li>
+    <li><a href="/explore/NM/#state-governance">New Mexico</a></li>
+    <li><a href="/explore/ND/#state-governance">North Dakota</a></li>
+    <li><a href="/explore/OK/#state-governance">Oklahoma</a></li>
+    <li><a href="/explore/PA/#state-governance">Pennsylvania</a></li>
+    <li><a href="/explore/TX/#state-governance">Texas</a></li>
+    <li><a href="/explore/UT/#state-governance">Utah</a></li>
+    <li><a href="/explore/WV/#state-governance">West Virginia</a></li>
+    <li><a href="/explore/WY/#state-governance">Wyoming</a></li>
+  </ul>
 </div>
 
 ## Role of state government agencies

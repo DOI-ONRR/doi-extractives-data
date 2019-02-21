@@ -42,17 +42,17 @@ const NationalRevenue = (props) => {
             <h2>Revenue</h2>
 
             <p>
-                Companies pay a wide range of fees, rates, and taxes to extract natural resources in the United States. 
+                Companies pay a wide range of fees, rates, and taxes to extract natural resources in the United States.
                 The types and amounts of payments differ, depending on <Link to="/how-it-works/ownership/">who owns the natural resources</Link>.
             </p>
 
             <p>
-                Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue. 
+                Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue.
                 Revenue data on this site primarily includes non-tax revenue from extractive industry activities on federal land.
             </p>
 
             <section>
-                <StickyHeader headerId="federal-revenue" headerText='Revenue from extraction on federal land' />
+                <StickyHeader headerId="federal-revenue" headerText='Revenue from extraction on federal lands and waters' />
 
                 <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -60,7 +60,7 @@ const NationalRevenue = (props) => {
 
                 <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue ONRR collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> { year } for production or potential production of natural resources on federal land, broken down by phase of production. <strong>In { year }, ONRR collected a total of {utils.formatToDollarInt(annualTotalRevenue)} in revenue.</strong>
                 </p>
-                
+
                 <p>
                     <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
                         <DataAndDocs />
@@ -106,7 +106,7 @@ const NationalRevenue = (props) => {
                 <div className="chart-selector-wrapper">
                     <div className="chart-description">
                         <p>
-                        Non-tax revenue collected by <GlossaryTerm>ONRR</GlossaryTerm> often depends on what resources are available on federal land, as well as the laws and regulations about extraction of each resource.
+                        Non-tax revenue collected by <GlossaryTerm>ONRR</GlossaryTerm> often depends on what resources are available on federal lands and waters, as well as the laws and regulations about extraction of each resource.
                         </p>
                         <p>
                             <Link to="/downloads/federal-revenue-by-location/" className="data-downloads">
@@ -127,7 +127,7 @@ const NationalRevenue = (props) => {
 
                             return (
                                 <section key={index} id={"revenue-"+commoditySlug} className="chart-item">
-                                    <ChartTitle 
+                                    <ChartTitle
                                         isIcon={true}
                                         units="$,"
                                         chartValues={annualRevenue}
@@ -152,7 +152,7 @@ const NationalRevenue = (props) => {
                                                         <span className="eiti-bar-chart-x-value">{ year }</span>.
                                                     </div>
                                                         :
-                                                    <div>        
+                                                    <div>
                                                         Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
                                                             {utils.formatToDollarInt(revenue)}
                                                         </span> to produce {commodityName.toLowerCase()} on federal land in <span className="eiti-bar-chart-x-value">{year}</span>.
@@ -190,7 +190,7 @@ const NationalRevenue = (props) => {
                 </div>
             </section>
 
-        </section> 
+        </section>
     );
 
 }

@@ -27,7 +27,6 @@ export class ProcessStep extends React.Component {
 
 	state = {
 		expanded: false,
-		mobileActive: (document.documentElement.clientWidth <= parseInt(styles['portrait-tablet-breakpoint']))
 	}
 
 	componentDidMount() {
